@@ -10,11 +10,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CrossTenantAccessPolicy();
-$requestBody->setDisplayName('CrossTenantAccessPolicy');
+$requestBody->setAllowedCloudEndpoints(['microsoftonline.us', ]);
 
 
 
-$requestResult = $graphServiceClient->policies()->crossTenantAccessPolicy()->patch($requestBody);
+$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->patch($requestBody);
 
 
 ```

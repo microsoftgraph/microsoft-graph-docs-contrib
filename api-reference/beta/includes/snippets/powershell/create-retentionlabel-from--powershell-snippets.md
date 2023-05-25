@@ -8,21 +8,21 @@ Import-Module Microsoft.Graph.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionLabel"
-	DisplayName = "String"
-	BehaviorDuringRetentionPeriod = "String"
-	ActionAfterRetentionPeriod = "String"
-	RetentionTrigger = "String"
-	RetentionDuration = @{
+	displayName = "String"
+	behaviorDuringRetentionPeriod = "String"
+	actionAfterRetentionPeriod = "String"
+	retentionTrigger = "String"
+	retentionDuration = @{
 		"@odata.type" = "microsoft.graph.security.retentionDuration"
 	}
-	IsInUse = "Boolean"
-	DescriptionForAdmins = "String"
-	DescriptionForUsers = "String"
-	CreatedBy = @{
+	isInUse = "Boolean"
+	descriptionForAdmins = "String"
+	descriptionForUsers = "String"
+	createdBy = @{
 		"@odata.type" = "microsoft.graph.identitySet"
 	}
-	LabelToBeApplied = "String"
-	DefaultRecordBehavior = "String"
+	labelToBeApplied = "String"
+	defaultRecordBehavior = "String"
 }
 
 New-MgSecurityLabelRetentionLabel -BodyParameter $params

@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const crossTenantAccessPolicy = {
-  displayName: 'CrossTenantAccessPolicy',
+  allowedCloudEndpoints: ['microsoftonline.us']
 };
 
 await client.api('/policies/crossTenantAccessPolicy')

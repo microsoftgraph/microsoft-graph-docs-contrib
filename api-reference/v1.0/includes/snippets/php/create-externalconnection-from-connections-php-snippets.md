@@ -18,7 +18,7 @@ $requestBody->setDescription('Connection to index Contoso HR system');
 
 
 
-$requestResult = $graphServiceClient->external()->connections()->post($requestBody);
+$result = $graphServiceClient->external()->connections()->post($requestBody);
 
 
 ```

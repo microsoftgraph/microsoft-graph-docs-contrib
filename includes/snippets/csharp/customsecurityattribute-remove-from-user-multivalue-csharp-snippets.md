@@ -4,21 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var user = new User
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new User
 {
 	CustomSecurityAttributes = new CustomSecurityAttributeValue
 	{
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new Dictionary<string, object>
 		{
-			{"Engineering", "{\"@odata.type\":\"#Microsoft.DirectoryServices.CustomSecurityAttributeValue\",\"Project\":[]}"}
-		}
-	}
+			{
+				"Engineering" , new 
+				{
+					OdataType = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+					Project = new List<>
+					{
+					},
+				}
+			},
+		},
+	},
 };
+var result = await graphClient.Users["{user-id}"].PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"]
-	.Request()
-	.UpdateAsync(user);
 
 ```

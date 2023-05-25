@@ -137,3 +137,8 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+## See also
+
+- [Channel lifecycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/csharp)
+- [Channel lifecycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/nodejs)

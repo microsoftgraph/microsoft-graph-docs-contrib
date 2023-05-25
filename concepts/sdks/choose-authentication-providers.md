@@ -362,7 +362,7 @@ var clientId = "YOUR_CLIENT_ID";
 var clientSecret = "YOUR_CLIENT_SECRET";
 
 // using Azure.Identity;
-var options = new TokenCredentialOptions
+var options = new OnBehalfOfCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
@@ -370,26 +370,9 @@ var options = new TokenCredentialOptions
 // This is the incoming token to exchange using on-behalf-of flow
 var oboToken = "JWT_TOKEN_TO_EXCHANGE";
 
-var cca = ConfidentialClientApplicationBuilder
-    .Create(clientId)
-    .WithTenantId(tenantId)
-    .WithClientSecret(clientSecret)
-    .Build();
+var onBehalfOfCredential = new OnBehalfOfCredential(tenantId, clientId, clientSecret, oboToken, options);
 
-// DelegateAuthenticationProvider is a simple auth provider implementation
-// that allows you to define an async function to retrieve a token
-// Alternatively, you can create a class that implements IAuthenticationProvider
-// for more complex scenarios
-var authProvider = new DelegateAuthenticationProvider(async (request) => {
-    // Use Microsoft.Identity.Client to retrieve token
-    var assertion = new UserAssertion(oboToken);
-    var result = await cca.AcquireTokenOnBehalfOf(scopes, assertion).ExecuteAsync();
-
-    request.Headers.Authorization =
-        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", result.AccessToken);
-});
-
-var graphClient = new GraphServiceClient(authProvider);
+var graphClient = new GraphServiceClient(onBehalfOfCredential,scopes);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -578,8 +561,31 @@ The integrated Windows flow provides a way for Windows computers to silently acq
 The `Azure.Identity` package does not currently support Windows integrated authentication. Instead create a custom authentication provider using MSAL.
 
 ```csharp
-var scopes = new[] { "User.Read" };
+public class TokenProvider : IAccessTokenProvider
+{
+    private readonly IPublicClientApplication publicClientApplication;
+    public TokenProvider(string clientId, string tenantId)
+    {
+        publicClientApplication = PublicClientApplicationBuilder
+            .Create(clientId)
+            .WithTenantId(tenantId)
+            .Build();
+        AllowedHostsValidator = new AllowedHostsValidator();
+    }
+    public async Task<string> GetAuthorizationTokenAsync(Uri uri, Dictionary<string, object> additionalAuthenticationContext = default,
+        CancellationToken cancellationToken = default)
+    {
+        var scopes = new[] { "User.Read" };
+        var result = await publicClientApplication.AcquireTokenByIntegratedWindowsAuth(scopes).ExecuteAsync(); ;
+        // get the token and return it in your own way
+        return Task.FromResult(result.A);
+    }
 
+    public AllowedHostsValidator AllowedHostsValidator { get; }
+}
+```
+
+```csharp
 // Multi-tenant apps can use "common",
 // single-tenant apps must use the tenant ID from the Azure portal
 var tenantId = "common";
@@ -587,24 +593,8 @@ var tenantId = "common";
 // Value from app registration
 var clientId = "YOUR_CLIENT_ID";
 
-var pca = PublicClientApplicationBuilder
-    .Create(clientId)
-    .WithTenantId(tenantId)
-    .Build();
-
-// DelegateAuthenticationProvider is a simple auth provider implementation
-// that allows you to define an async function to retrieve a token
-// Alternatively, you can create a class that implements IAuthenticationProvider
-// for more complex scenarios
-var authProvider = new DelegateAuthenticationProvider(async (request) => {
-    // Use Microsoft.Identity.Client to retrieve token
-    var result = await pca.AcquireTokenByIntegratedWindowsAuth(scopes).ExecuteAsync();
-
-    request.Headers.Authorization =
-        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", result.AccessToken);
-});
-
-var graphClient = new GraphServiceClient(authProvider);
+var authenticationProvider = new BaseBearerTokenAuthenticationProvider(new TokenProvider(clientId,tenantId));
+var graphServiceClient = new GraphServiceClient(authenticationProvider);
 ```
 
 # [Javascript](#tab/Javascript)

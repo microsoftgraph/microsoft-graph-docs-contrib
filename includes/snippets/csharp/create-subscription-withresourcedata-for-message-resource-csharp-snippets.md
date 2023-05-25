@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var subscription = new Subscription
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Subscription
 {
 	ChangeType = "created",
 	NotificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient",
@@ -15,11 +17,9 @@ var subscription = new Subscription
 	ClientState = "secretClientValue",
 	IncludeResourceData = true,
 	EncryptionCertificate = "MIIDMzCCAhugAwIBAgIQE7D+++Dk1hKQBqWA==",
-	EncryptionCertificateId = "testCertificateId"
+	EncryptionCertificateId = "testCertificateId",
 };
+var result = await graphClient.Subscriptions.PostAsync(requestBody);
 
-await graphClient.Subscriptions
-	.Request()
-	.AddAsync(subscription);
 
 ```

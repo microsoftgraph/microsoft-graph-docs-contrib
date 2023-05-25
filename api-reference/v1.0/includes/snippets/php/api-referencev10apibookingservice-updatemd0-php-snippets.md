@@ -16,7 +16,7 @@ $requestBody->setDefaultDuration(new \DateInterval('PT30M'));
 
 
 
-$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->servicesById('bookingService-id')->patch($requestBody);
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->services()->byServiceId('bookingService-id')->patch($requestBody);
 
 
 ```

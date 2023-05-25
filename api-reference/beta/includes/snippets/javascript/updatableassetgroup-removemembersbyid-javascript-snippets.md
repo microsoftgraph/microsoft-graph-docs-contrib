@@ -19,7 +19,7 @@ const removeMembersById = {
   memberEntityType: '#microsoft.graph.windowsUpdates.azureADDevice'
 };
 
-await client.api('/admin/windows/updates/updatableAssets/{updatableAssetGroupId}/removeMembersById')
+await client.api('/admin/windows/updates/updatableAssets/5c55730b-730b-5c55-0b73-555c0b73555c/removeMembersById')
 	.version('beta')
 	.post(removeMembersById);
 

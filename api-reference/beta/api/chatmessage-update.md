@@ -11,14 +11,11 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Update a [chatMessage](../resources/chatMessage.md) object.
 
-Update a [chatMessage](../resources/chatMessage.md) object. 
+You can update all the properties of **chatMessage** in delegated permissions scenarios, except for the **policyViolation** property and read-only properties. The **policyViolation** property is the only property that can be updated in application permissions scenarios.
 
-All properties of a **chatMessage** can be updated in delegated permissions scenarios, 
-except for read-only properties and the **policyViolation** property.
-Only the **policyViolation** property of a **chatMessage** can be updated in application permissions scenarios.
-
-The update only works for chats where members are Microsoft Teams users. If one of the participants is using Skype, the operation will fail.
+Updating works only for chats where conversation members are Microsoft Teams users. If one of the members is using Skype, the operation fails.
 
 This method does not support federation. Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
@@ -29,15 +26,17 @@ This method does not support federation. Only the user in the tenant who sent th
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions for channel
+
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | ChannelMessage.ReadWrite, Group.ReadWrite.All** |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ChannelMessage.UpdatePolicyViolation.All, ChannelMessage.ReadWrite.All, Group.ReadWrite.All** |
+| Application                            | ChannelMessage.UpdatePolicyViolation.All, Group.ReadWrite.All** |
 
 > **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ### Permissions for chat
+
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Chat.ReadWrite |
@@ -45,10 +44,20 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Chat.UpdatePolicyViolation.All, Chat.ReadWrite.All |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+
+To update a **chatMessage** in a **channel**:
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
+```
+
+To update a **chatMessage** in a **chat**:
+<!-- { "blockType": "ignored" } -->
+```http
 PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
@@ -61,30 +70,41 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}?model=A
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}?model=A
 PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
 ```
-If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. 
+
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
-| Content-Type | application/json. Required. |
+| Name          | Description                 |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 For applications that use delegated permissions:
-In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, 
+
+In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object,
 specifying the properties that need to be changed.
 
 For applications that use application permissions:
-In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, 
+
+In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object,
 specifying only the **policyViolation** property.
 
-## Response body
+## Response
+
 For applications that use delegated permissions:
+
 If successful, this method returns a `204 No Content` response.
 
 For applications that use application permissions:
+
 If successful, this method returns a `200 OK` response.
+
+### Errors
+
+[!INCLUDE [teams-model-A-only-errors](../../includes/teams-model-A-only-errors.md)]
 
 ## Examples
 
@@ -93,7 +113,6 @@ If successful, this method returns a `200 OK` response.
 #### Request
 
 The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message by using application permissions.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -122,28 +141,27 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessagepatchpolicyviolationall-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/chatmessagepatchpolicyviolationall-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chatmessagepatchpolicyviolationall-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chatmessagepatchpolicyviolationall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/chatmessagepatchpolicyviolationall-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/chatmessagepatchpolicyviolationall-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chatmessagepatchpolicyviolationall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/chatmessagepatchpolicyviolationall-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chatmessagepatchpolicyviolationall-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -216,28 +234,27 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/patch-chatmessage-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-1-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/patch-chatmessage-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/patch-chatmessage-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/patch-chatmessage-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-1-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -329,28 +346,27 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/patch-chatmessage-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-2-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/patch-chatmessage-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/patch-chatmessage-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/patch-chatmessage-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-2-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -429,28 +445,27 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/patch-chatmessage-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-3-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/patch-chatmessage-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/patch-chatmessage-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/patch-chatmessage-3-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-3-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -764,28 +779,27 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/patch-chatmessage-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-4-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/patch-chatmessage-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/patch-chatmessage-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/patch-chatmessage-4-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-4-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-4-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-4-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

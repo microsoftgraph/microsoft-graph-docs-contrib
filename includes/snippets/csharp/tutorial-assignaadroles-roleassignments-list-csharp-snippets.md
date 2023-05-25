@@ -4,11 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var roleAssignments = await graphClient.RoleManagement.Directory.RoleAssignments
-	.Request()
-	.Filter("principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.RoleManagement.Directory.RoleAssignments.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'";
+});
+
 
 ```

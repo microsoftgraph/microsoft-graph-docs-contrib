@@ -7,43 +7,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
-	Subject = "Let's go for lunch"
-	Body = @{
-		ContentType = "HTML"
-		Content = "Does noon time work for you?"
+	subject = "Let's go for lunch"
+	body = @{
+		contentType = "HTML"
+		content = "Does noon time work for you?"
 	}
-	Start = @{
-		DateTime = "2017-09-04T12:00:00"
-		TimeZone = "Pacific Standard Time"
+	start = @{
+		dateTime = "2017-09-04T12:00:00"
+		timeZone = "Pacific Standard Time"
 	}
-	End = @{
-		DateTime = "2017-09-04T14:00:00"
-		TimeZone = "Pacific Standard Time"
+	end = @{
+		dateTime = "2017-09-04T14:00:00"
+		timeZone = "Pacific Standard Time"
 	}
-	Recurrence = @{
-		Pattern = @{
-			Type = "weekly"
-			Interval = 1
-			DaysOfWeek = @(
+	recurrence = @{
+		pattern = @{
+			type = "weekly"
+			interval = 1
+			daysOfWeek = @(
 				"Monday"
 			)
 		}
-		Range = @{
-			Type = "endDate"
-			StartDate = "2017-09-04"
-			EndDate = "2017-12-31"
+		range = @{
+			type = "endDate"
+			startDate = "2017-09-04"
+			endDate = "2017-12-31"
 		}
 	}
-	Location = @{
-		DisplayName = "Harry's Bar"
+	location = @{
+		displayName = "Harry's Bar"
 	}
-	Attendees = @(
+	attendees = @(
 		@{
-			EmailAddress = @{
-				Address = "AdeleV@contoso.onmicrosoft.com"
-				Name = "Adele Vance"
+			emailAddress = @{
+				address = "AdeleV@contoso.onmicrosoft.com"
+				name = "Adele Vance"
 			}
-			Type = "required"
+			type = "required"
 		}
 	)
 }

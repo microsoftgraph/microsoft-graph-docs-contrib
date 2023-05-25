@@ -32,8 +32,10 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|approvers|[user](../resources/user.md) collection|Collection of users that can approve the request. Approvers are currently only supported for `delete` type of request.|
 |assignedTo|[identity](../resources/identity.md)|Identity that the request is assigned to.|
 |closedDateTime|DateTimeOffset|The date and time when the request was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|collaborators|[user](../resources/user.md) collection|Collection of users that can collaborate on the request.|
 | contentQuery         | String | KQL based content query that should be used for search. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |createdBy|[identitySet](../resources/identityset.md)|Identity information for the entity that created the request.|
 |createdDateTime|DateTimeOffset|The date and time when the request was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
@@ -76,7 +78,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
     "@odata.type": "#microsoft.graph.subjectRightsRequest",
+    "approvers": [{
+        "@odata.type": "microsoft.graph.user"
+    }],
     "contentQuery": "String",
+    "collaborators": [{
+        "@odata.type": "microsoft.graph.user"
+    }],
     "closedDateTime": "String (timestamp)",
     "createdBy": {
         "@odata.type": "microsoft.graph.identitySet"

@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/groups/c0a74b4d-2694
 
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackagesById('accessPackage-id')->incompatibleGroups()->ref()->post($requestBody);
+$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->byAccessPackageId('accessPackage-id')->incompatibleGroups()->ref()->post($requestBody);
 
 
 ```

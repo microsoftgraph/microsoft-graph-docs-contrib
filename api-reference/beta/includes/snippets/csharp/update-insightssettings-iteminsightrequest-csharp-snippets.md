@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var insightsSettings = new InsightsSettings
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new InsightsSettings
 {
-	DisabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+	DisabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981",
 };
+var result = await graphClient.Organization["{organization-id}"].Settings.ItemInsights.PatchAsync(requestBody);
 
-await graphClient.Organization["{organization-id}"].Settings.ItemInsights
-	.Request()
-	.UpdateAsync(insightsSettings);
 
 ```

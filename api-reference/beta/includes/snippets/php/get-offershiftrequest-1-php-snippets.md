@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->offerShiftRequestsById('offerShiftRequest-id')->get();
+$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->offerShiftRequests()->byOfferShiftRequestId('offerShiftRequest-id')->get();
 
 
 ```

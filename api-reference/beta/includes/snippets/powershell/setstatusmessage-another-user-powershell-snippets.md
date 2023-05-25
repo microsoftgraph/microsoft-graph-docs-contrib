@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	StatusMessage = @{
-		Message = @{
-			Content = "Hey I am available now"
-			ContentType = "text"
+	statusMessage = @{
+		message = @{
+			content = "Hey I am available now"
+			contentType = "text"
 		}
 	}
 }

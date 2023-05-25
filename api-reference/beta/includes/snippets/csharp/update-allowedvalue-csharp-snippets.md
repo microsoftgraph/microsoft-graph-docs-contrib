@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var allowedValue = new AllowedValue
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new AllowedValue
 {
-	IsActive = false
+	IsActive = false,
 };
+var result = await graphClient.Directory.CustomSecurityAttributeDefinitions["{customSecurityAttributeDefinition-id}"].AllowedValues["{allowedValue-id}"].PatchAsync(requestBody);
 
-await graphClient.Directory.CustomSecurityAttributeDefinitions["{customSecurityAttributeDefinition-id}"].AllowedValues["{allowedValue-id}"]
-	.Request()
-	.UpdateAsync(allowedValue);
 
 ```

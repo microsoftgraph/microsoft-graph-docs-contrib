@@ -4,11 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var installedApps = await graphClient.Chats["{chat-id}"].InstalledApps
-	.Request()
-	.Expand("teamsAppDefinition($expand=bot)")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Chats["{chat-id}"].InstalledApps.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "teamsAppDefinition($expand=bot)" };
+});
+
 
 ```

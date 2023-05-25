@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var calendarPermission = new CalendarPermission
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new CalendarPermission
 {
 	EmailAddress = new EmailAddress
 	{
 		Name = "Samantha Booth",
-		Address = "samanthab@adatum.onmicrosoft.com"
+		Address = "samanthab@adatum.onmicrosoft.com",
 	},
 	IsInsideOrganization = true,
 	IsRemovable = true,
-	Role = CalendarRoleType.Read
+	Role = CalendarRoleType.Read,
 };
+var result = await graphClient.Users["{user-id}"].Calendar.CalendarPermissions.PostAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Calendar.CalendarPermissions
-	.Request()
-	.AddAsync(calendarPermission);
 
 ```

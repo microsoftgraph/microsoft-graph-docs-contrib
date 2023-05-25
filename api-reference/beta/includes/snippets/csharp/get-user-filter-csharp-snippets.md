@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var queryOptions = new List<QueryOption>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Users.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("ConsistencyLevel", "eventual"),
-	new QueryOption("$count", "true")
-};
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.QueryParameters.ConsistencyLevel = "eventual";
+	requestConfiguration.QueryParameters.Filter = "endsWith(mail,'@contoso.com')";
+});
 
-var users = await graphClient.Users
-	.Request( queryOptions )
-	.Filter("endsWith(mail,'@contoso.com')")
-	.GetAsync();
 
 ```

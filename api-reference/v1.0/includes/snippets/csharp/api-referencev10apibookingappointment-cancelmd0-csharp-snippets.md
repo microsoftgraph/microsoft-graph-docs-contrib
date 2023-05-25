@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var cancellationMessage = "Your appointment has been successfully cancelled. Please call us again.";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Appointments["{bookingAppointment-id}"]
-	.Cancel(cancellationMessage)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Solutions.BookingBusinesses.Item.Appointments.Item.Cancel.CancelPostRequestBody
+{
+	CancellationMessage = "Your appointment has been successfully cancelled. Please call us again.",
+};
+await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Appointments["{bookingAppointment-id}"].Cancel.PostAsync(requestBody);
+
 
 ```

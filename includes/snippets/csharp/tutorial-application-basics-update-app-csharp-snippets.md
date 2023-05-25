@@ -4,15 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var application = new Application
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Application
 {
-	Tags = new List<String>()
+	Tags = new List<string>
 	{
 		"HR",
 		"Payroll",
-		"HideApp"
+		"HideApp",
 	},
 	Info = new InformationalUrl
 	{
@@ -20,22 +22,20 @@ var application = new Application
 		MarketingUrl = "https://www.contoso.com/app/marketing",
 		PrivacyStatementUrl = "https://www.contoso.com/app/privacy",
 		SupportUrl = "https://www.contoso.com/app/support",
-		TermsOfServiceUrl = "https://www.contoso.com/app/termsofservice"
+		TermsOfServiceUrl = "https://www.contoso.com/app/termsofservice",
 	},
 	Web = new WebApplication
 	{
 		HomePageUrl = "https://www.contoso.com/",
 		LogoutUrl = "https://www.contoso.com/frontchannel_logout",
-		RedirectUris = new List<String>()
+		RedirectUris = new List<string>
 		{
-			"https://localhost"
-		}
+			"https://localhost",
+		},
 	},
-	ServiceManagementReference = "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;"
+	ServiceManagementReference = "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;",
 };
+var result = await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
-await graphClient.Applications["{application-id}"]
-	.Request()
-	.UpdateAsync(application);
 
 ```

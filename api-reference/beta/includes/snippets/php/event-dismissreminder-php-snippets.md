@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->eventsById('event-id')->dismissReminder()->post();
+$graphServiceClient->me()->events()->byEventId('event-id')->dismissReminder()->post();
 
 
 ```

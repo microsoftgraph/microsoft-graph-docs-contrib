@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var authenticationFlowsPolicy = new AuthenticationFlowsPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new AuthenticationFlowsPolicy
 {
 	SelfServiceSignUp = new SelfServiceSignUpAuthenticationFlowConfiguration
 	{
-		IsEnabled = true
-	}
+		IsEnabled = true,
+	},
 };
+var result = await graphClient.Policies.AuthenticationFlowsPolicy.PatchAsync(requestBody);
 
-await graphClient.Policies.AuthenticationFlowsPolicy
-	.Request()
-	.UpdateAsync(authenticationFlowsPolicy);
 
 ```

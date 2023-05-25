@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 LinkedList<SearchRequest> requestsList = new LinkedList<SearchRequest>();
 SearchRequest requests = new SearchRequest();
 LinkedList<EntityType> entityTypesList = new LinkedList<EntityType>();
-entityTypesList.add(EntityType.EVENT);
+entityTypesList.add(EntityType.CHAT_MESSAGE);
 requests.entityTypes = entityTypesList;
 SearchQuery query = new SearchQuery();
 query.queryString = "test";
