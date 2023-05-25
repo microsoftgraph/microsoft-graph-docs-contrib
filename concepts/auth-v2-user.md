@@ -7,14 +7,14 @@ ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
-ms.date: 02/22/2022
+ms.date: 05/25/2023
 ---
 
 # Get access on behalf of a user
 
 To call Microsoft Graph, an app must obtain an access token from the Microsoft identity platform. This access token includes information about whether the app is authorized to access Microsoft Graph on behalf of a signed-in user or with its own identity. This article provides guidance on how an app can [access Microsoft Graph on behalf of a user](./auth/auth-concepts.md#access-scenarios), also called *delegated access*.
 
-This article details the raw HTTP requests involved for an app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). A [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-library-msal) handles the authorization and token requests and helps you to get access tokens and call Microsoft Graph.
+This article details the raw HTTP requests involved for an app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). Alternatively, you can avoid writing raw HTTP requests and use a Microsoft-built or supported authentication library that handles many of these details for you and helps you to get access tokens and call Microsoft Graph. For more information, see [Use the Microsoft Authentication Library (MSAL)](#use-the-microsoft-authentication-library-msal).
 
 ## Prerequisites
 
@@ -28,10 +28,10 @@ Before proceeding with the steps in this article:
 For an app to get authorization and access to Microsoft Graph using the authorization code flow, you must follow these five steps:
 
 1. Register the app with Azure AD.
-2. Request an authorization code.
+2. Request authorization.
 3. Request an access token.
 4. Use the access token to call Microsoft Graph.
-5. Use the refresh token to renew an expired access token.
+5. [Optional] Use the refresh token to renew an expired access token.
 
 > [!TIP]
 > [![Try steps 2-5 in Postman](./images/auth-v2/runinpostman.png)](https://app.getpostman.com/run-collection/f77994d794bab767596d)<br/>
@@ -45,13 +45,13 @@ From the app registration, save the following values:
 
 - The application (client) ID assigned by the Microsoft identity platform
 - A redirect URI (or reply URL) for the app to receive responses from Azure AD.
-- A client (application) secret (password), a certificate, or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
+- A client secret (application password), a certificate, or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
 
-## 2. Request an authorization code
+## 2. Request authorization
 
 The first step in the authorization code flow is for the user to authorize the app to act on their behalf.
 
-In the flow, the app redirects the user to the Microsoft identity platform `/authorize` endpoint. Through this endpoint, Azure AD signs the user in and requests their consent for the permissions that the app requests. After consent is obtained, Azure AD will return an authorization **code** to the app that redeems at the Microsoft identity platform `/token` endpoint for an access token.
+In the flow, the app redirects the user to the Microsoft identity platform `/authorize` endpoint. Through this endpoint, Azure AD signs the user in and requests their consent for the permissions that the app requests. After consent is obtained, Azure AD will return an authorization **code** to the app. The app can then redeem this code at the Microsoft identity platform `/token` endpoint for an access token.
 
 ### Authorization request
 
@@ -97,7 +97,8 @@ curl --location -X POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/
 
 ### User consent experience
 
-After the app sends the authorization request, the user is asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint ensures that the user has consented to the permissions indicated in the `scope` query parameter. If the user hasn't consented to any of those permissions and if an administrator hasn't previously consented on behalf of all users in the organization, they're asked to consent to the required permissions. For more information about the Azure AD consent experience, see [Application consent experience](/azure/active-directory/develop/application-consent-experience).
+After the app sends the authorization request, the user is asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint ensures that the user has consented to the permissions indicated in the `scope` query parameter. If there is any permission that the user or administrator has not consented to, they're asked to consent to the required permissions. For more information about the Azure AD consent experience, see [Application consent experience](/azure/active-directory/develop/application-consent-experience) and [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview#consent).
+
 The following screenshot is an example of the consent dialog box presented for a Microsoft account user.
 
 :::image type="content" source="./images/auth-v2/v2-consumer-consent.png" alt-text="Consent dialog for Microsoft account." border="true":::
@@ -357,5 +358,10 @@ This article is part of the following series of articles on authentication and a
 
 Next, choose from code samples that are built and maintained by Microsoft to run custom apps that use supported authentication libraries, sign-in users, and call Microsoft Graph.
 
+[!div class="nextstepaction"]
+> [Microsoft identity platform code samples >](/graph/tutorials)
+
+<!--
 > [!div class="nextstepaction"]
 > [Microsoft identity platform code samples >](/azure/active-directory/develop/sample-v2-code)
+--
