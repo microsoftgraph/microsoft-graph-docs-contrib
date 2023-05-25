@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->drivesById('drive-id')->bundlesById('driveItem-id')->get();
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->bundles()->byBundleId('driveItem-id')->get();
 
 
 ```

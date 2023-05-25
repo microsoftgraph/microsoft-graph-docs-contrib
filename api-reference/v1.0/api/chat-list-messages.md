@@ -164,7 +164,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1615971548136",
@@ -199,7 +200,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1615943825123",
@@ -226,6 +228,7 @@ Content-type: application/json
             "attachments": [],
             "mentions": [],
             "reactions": [],
+            "messageHistory": [],
             "eventDetail": {
                 "@odata.type": "#microsoft.graph.chatRenamedEventMessageDetail",
                 "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
@@ -342,7 +345,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1615971548136",
@@ -377,7 +381,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1615943825123",
@@ -404,6 +409,7 @@ Content-type: application/json
             "attachments": [],
             "mentions": [],
             "reactions": [],
+            "messageHistory": [],
             "eventDetail": {
                 "@odata.type": "#microsoft.graph.chatRenamedEventMessageDetail",
                 "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
@@ -520,7 +526,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1615971548136",
@@ -556,7 +563,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         }
     ]
 }
@@ -660,7 +668,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1615971548136",
@@ -696,7 +705,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         }
     ]
 }

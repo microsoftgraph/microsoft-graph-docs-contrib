@@ -15,7 +15,7 @@ $queryParameters->top = 5;
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->reviewSetsById('ediscoveryReviewSet-id')->files()->get($requestConfiguration);
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->reviewSets()->byReviewSetId('ediscoveryReviewSet-id')->files()->get($requestConfiguration);
 
 
 ```

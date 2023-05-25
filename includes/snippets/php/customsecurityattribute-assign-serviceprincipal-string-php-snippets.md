@@ -28,7 +28,7 @@ $customSecurityAttributes->setAdditionalData($additionalData);
 $requestBody->setCustomSecurityAttributes($customSecurityAttributes);
 
 
-$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->patch($requestBody);
+$result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->patch($requestBody);
 
 
 ```

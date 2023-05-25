@@ -15,7 +15,7 @@ $queryParameters->select = ["id","displayName","capabilities"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->print()->sharesById('printerShare-id')->get($requestConfiguration);
+$result = $graphServiceClient->print()->shares()->byShareId('printerShare-id')->get($requestConfiguration);
 
 
 ```
