@@ -153,6 +153,24 @@
     {
       "ChangeList": [
         {
+          "Id": "afc883f0-3a47-4e02-bcb1-3c7be4a5cdf2",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantType",
+          "ChangeType": "Change",
+          "Description": "Added `CIAM` as a possible value for the **tenantType** property of the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource. A customer identity & access management (CIAM) tenant provides an integrated platform to serve consumers, partners, and citizen scenarios.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "afc883f0-3a47-4e02-bcb1-3c7be4a5cdf2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-24T00:00:00.3091941Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
           "ApiChange": "Relationship",
           "ChangedApiName": "roleManagement",
@@ -6882,7 +6900,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": ""
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "9765b92a-f3fb-41a2-930b-b4cc506ada62",
@@ -6898,7 +6916,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2023-05-17T00:00:00Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -7715,6 +7733,24 @@
       "CreatedDateTime": "2020-05-01T00:00:00",
       "WorkloadArea": "Identity and access",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "db8cde72-c86c-4a67-9c0f-65663c90d0df",
+          "ApiChange": "Property",
+          "ChangedApiName": "isMultiValued",
+          "ChangeType": "Addition",
+          "Description": "Added the `isMultiValued` property to the [extensionProperty](https://learn.microsoft.com/en-us/graph/api/resources/extensionProperty?view=graph-rest-beta) resource. You can now store a collection of values in a directory extension property.",
+          "Target": "extensionProperty"
+        }
+      ],
+      "Id": "db8cde72-c86c-4a67-9c0f-65663c90d0df",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-22T10:29:08.402042Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -9204,7 +9240,7 @@
       "WorkloadArea": "Users",
       "SubArea": ""
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "df105e58-8a6f-47f3-8307-c23aa8b6761a",
@@ -9520,7 +9556,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-04-05T19:59:11.0505166Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -9935,7 +9971,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Update,privilegedRoleSettings",
           "ChangeType": "Addition",
-          "Description": "Added **Update** for **privilegedRoleSettings**.",
+          "Description": "Added Update for **privilegedRoleSettings**.",
           "Target": "Update,privilegedRoleSettings"
         }
       ],

@@ -16,7 +16,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ## May 2023: New and generally available
 
 ### Identity and access | Directory management
-Intune sets properties on a [device](/graph/api/resources/device) registered in an organization used for multi-factor authentication in conditional access policies:  **deviceCategory**, **deviceOwnership**, **enrollmentProfileName**, and **registrationDateTime**.
+As part of managing corporate devices, Intune can now set additional properties on a [device](/graph/api/resources/device) used for multi-factor authentication in conditional access policies for an organization:  **deviceCategory**, **deviceOwnership**, **enrollmentProfileName**, and **registrationDateTime**.
 
 ### Identity and access | Identity and sign-in
 - Specify whether to exclude or include [guests or external users](/graph/api/resources/conditionalAccessGuestsOrExternalUsers) as part of the [condition set for conditional access](/graph/api/resources/conditionalaccessconditionset).
@@ -26,9 +26,9 @@ Intune sets properties on a [device](/graph/api/resources/device) registered in 
 
 ### Reports | Microsoft 365 usage reports
 - [Get a report of the number of teams](/graph/api/reportroot-getTeamsTeamCounts) of a particular type in an instance of Microsoft Teams.
-- [Get the number of team activities](/graph/api/reportroot-getTeamsTeamActivityCounts) across Microsoft Teams. Activities are related to meetings and messages.
-- [Get the number of team activities](/graph/api/reportroot-getTeamsTeamActivityDistributionCounts) across Microsoft Teams over a selected period.
-- [Get details about Microsoft Teams activity by team](/graph/api/reportroot-getTeamsTeamActivityDetail). The activities for both licensed and non-licensed users.
+- [Get a report of the number of team activities](/graph/api/reportroot-getTeamsTeamActivityCounts) across Microsoft Teams. Activities are related to meetings and messages.
+- [Get a report of the number of team activities](/graph/api/reportroot-getTeamsTeamActivityDistributionCounts) across Microsoft Teams over a selected period.
+- [Get a report of details about Microsoft Teams activity by team](/graph/api/reportroot-getTeamsTeamActivityDetail). The activities for both licensed and non-licensed users.
 
 ### Search | Index
 - Specify [settings](/graph/api/resources/externalconnectors-searchsettings) for the search experience of content in an [external connection](/graph/api/resources/externalconnectors-externalconnection). For example, a [display template](/graph/api/resources/externalconnectors-displaytemplate) for search results, and a [rule](/graph/api/resources/externalconnectors-propertyRule) to select the display template.
@@ -36,13 +36,14 @@ Intune sets properties on a [device](/graph/api/resources/device) registered in 
 - [Add](/graph/api/externalconnectors-externalitem-addactivities) instances of [external activity](/graph/api/resources/externalConnectors-externalActivity) on an [external item](/graph/api/resources/externalconnectors-externalitem). You can track the type of external activity (such as viewed, modified, created, commented), the [identity](/graph/api/resources/externalconnectors-identity) of the [user](/graph/api/resources/user), [group](/graph/api/resources/group), or external group who performed the activity, and the [result](/graph/api/resources/externalconnectors-externalactivityresult) of adding the activity.
 
 ### Sites and lists
-[Get](/graph/api/sharepointsettings-get) or [update](/graph/api/sharepointsettings-update) tenant-wide [settings](/graph/api/resources/sharepointsettings) for SharePoint and OneDrive, which include a number of settings such as the following:
-- The [idle session sign-out policy settings](/graph/api/resources/idlesessionsignout) for SharePoint.
-- Whether legacy authentication protocols are enabled for the tenant.
-- Whether guests must sign in using the same account to which sharing invitations are sent.
+- [Get](/graph/api/sharepointsettings-get) or [update](/graph/api/sharepointsettings-update) tenant-wide [settings](/graph/api/resources/sharepointsettings) for SharePoint and OneDrive, which include a number of settings such as the following:
+  - The [idle session sign-out policy settings](/graph/api/resources/idlesessionsignout) for SharePoint.
+  - Whether legacy authentication protocols are enabled for the tenant.
+  - Whether guests must sign in using the same account to which sharing invitations are sent.
+- [Get all the sites](/graph/api/site-getallsites) across georgraphies in an organization. 
 
 ### Teamwork and communications | Calls and online meetings
-- Identify the reasons for shared content or video from an [online meeting](/graph/api/resources/onlineMeeting) [participant](/graph/api/resources/meetingparticipants) being [restricted](/graph/api/resources/onlineMeetingRestricted).
+Identify the reasons for shared content or video from an [online meeting](/graph/api/resources/onlineMeeting) [participant](/graph/api/resources/meetingparticipants) being [restricted](/graph/api/resources/onlineMeetingRestricted).
 
 
 ## May 2023: New in preview only
@@ -67,13 +68,20 @@ Get or update from class level [assignment settings](/graph/api/resources/educat
 
 ### Identity and access | Identity and sign-in
 - Use a [custom authentication extension](/graph/api/resources/customauthenticationextension?view=graph-rest-beta&preserve-view=true) to manage the configuration and get data from a system external to Azure Active Directory, such as a database, so to customize the Azure AD authentication experience for users.
-- To customize the authentication process, use an [authentication event listener](/graph/api/resources/authenticationEventListener?view=graph-rest-beta&preserve-view=true) to manage listeners and handlers that trigger the execution of custom logic during the Azure AD authentication experience.
+- To customize an authentication process, use an [authentication event listener](/graph/api/resources/authenticationEventListener?view=graph-rest-beta&preserve-view=true) to manage listeners and handlers that trigger the execution of custom logic during the Azure AD authentication experience.
+- Use a [self-service sign-up user flow for external identities](/graph/api/resources/externalusersselfservicesignupeventsflow?view=graph-rest-beta&preserve-view=true) within an Azure AD workforce tenant or customer tenant, to let users sign up for an app and create a new guest account. A user flow is basically a [multi-event policy](/graph/api/resources/authenticationEventsFlow?view=graph-rest-beta&preserve-view=true) that defines a series of steps for the user, listing each supported [identity provider](/graph/api/resources/identityproviderbase?view=graph-rest-beta&preserve-view=true), and the [user attributes](/graph/api/resources/identityuserflowattribute?view=graph-rest-beta&preserve-view=true) to collect from the user such as given name, surname, city, postal code. For more information, see [Add a self-service sign-up user flow to an app](/azure/active-directory/external-identities/self-service-sign-up-user-flow).
+- Get or update the [permissions for the default user role](/graph/api/resources/defaultuserrolepermissions) in an [authorization policy](/graph/api/resources/authorizationpolicy) to allow creating tenants in an Azure Active Directory organization.
 
 ### Security | Attack simulation and training
 Get the following additional data from [attack simulation reports](/graph/api/resources/report-m365defender-reports-overview?view=graph-rest-beta&preserve-view=true): 
 - The number of days that an [attack simulation user](/graph/api/resources/attackSimulationUser?view=graph-rest-beta&preserve-view=true) is out of office during an attack simulation and training campaign.
 - The last activity in [a user's detailed online actions](/graph/api/resources/userSimulationDetails?view=graph-rest-beta&preserve-view=true) in an attack simulation and training campaign.
 
+### Tasks and plans
+Share a plan using a [shared-with container](/graph/api/resources/plannersharedwithcontainer?view=graph-rest-beta&preserve-view=true) that is separate from the original [container](/graph/api/resources/plannerplancontainer?view=graph-rest-beta&preserve-view=true) that the plan belongs to. Users can share a plan with multiple other containers, and specify the maximum access level allowed by each of these containers, such as read, readwrite, or full access.
+
+### Teamwork and communications | Calls and online meetings
+List each [message history item](/graph/api/resources/chatmessagehistoryitem) of a [chat message](/graph/api/resources/chatMessage) in a Teams chat or channel.
 
 ## April 2023: New and generally available
 
@@ -117,7 +125,7 @@ Intune [April updates](https://developer.microsoft.com/en-us/graph/changelog/?se
 - [Get](/graph/api/accesspackageassignmentpolicy-get?view=graph-rest-beta&preserve-view=true) the [settings for verifiable credentials](/graph/api/resources/verifiablecredentialsettings?view=graph-rest-beta&preserve-view=true) in an [access package assignment policy](/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-beta&preserve-view=true), that have been set up in the [Microsoft Entra Verified ID](/azure/active-directory/verifiable-credentials/decentralized-identifier-overview) verification solution. These settings represent the verifiable credentials that a requestor of an access package in this policy can present to be assigned the access package. The types of verifiable credentials that a requestor presents include the type of the credential issued, such as `BusinessCardCredential`, and list of accepted issuers.
 
 ### Identity and access | Identity and sign-in
-- Get or update the [permissions for the default user role](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true?view=graph-rest-beta&preserve-view=true) in an [authorization policy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) to allow creating tenants in an Azure Active Directory organization.
+- Get or update the [permissions for the default user role](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true) in an [authorization policy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) to allow creating tenants in an Azure Active Directory organization.
 - Get or update the settings in an [authentication methods policy](/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-beta&preserve-view=true) for selected users or groups to be included or excluded from being prompted with their [preferred multifactor authentication methods](/graph/api/resources/systemcredentialpreferences?view=graph-rest-beta&preserve-view=true) for their Azure Active Directory organization.
 - To support [Windows Local Administrator Password Solution (LAPS) in Azure AD](/azure/active-directory/devices/howto-manage-local-admin-passwords), administrators can [get](/graph/api/deviceregistrationpolicy-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/deviceregistrationpolicy-update?view=graph-rest-beta&preserve-view=true) [local admin password settings](/graph/api/resources/localAdminPasswordSettings?view=graph-rest-beta&preserve-view=true) in the [device registration policy](/graph/api/resources/deviceRegistrationPolicy?view=graph-rest-beta&preserve-view=true) for an organization.
 
