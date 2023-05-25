@@ -39,8 +39,8 @@ Before the app can use the Microsoft identity platform endpoint or call Microsof
 
 From the app registration, save the following values:
 
-- The application (client) ID assigned by the app registration portal.
-- A client (application) secret (password), a certificate, or a federated identity credential.
+- The application ID (object ID) assigned by the app registration portal.
+- A client secret (application password), a certificate, or a federated identity credential.
 - A redirect URI for the app to receive token responses from Azure AD.
 - A redirect URI for the service to receive admin consent responses if the app implements functionality to request administrator consent.
 
