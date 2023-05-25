@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Describes the authentication behaviors set in the context of an application. Authentication behaviors are boolean flags that provide applications flexibility in adopting breaking-change behaviors related to token issuance. These updated token issuance behaviors can be related to security mitigations, security improvements, or feature deprecations. 
 
-Applications can adopt new breaking changes by enabling a behavior (set the behavior to `true`), or continue using pre-existing behavior by disabling it (by setting the behavior to `false`). It should be noted that certain behaviors are not modifiable for an application in the interest of Microsoft maintaining a strong security posture. 
+Applications can adopt new breaking changes by enabling a behavior (set the behavior to `true`), or continue using pre-existing behavior by disabling it (by setting the behavior to `false`).
 
 
 ## Properties
