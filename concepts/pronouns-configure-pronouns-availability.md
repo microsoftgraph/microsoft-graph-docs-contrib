@@ -84,7 +84,7 @@ Alternatively, you can make pronouns unavailable for your organization using the
 
 ### Confirm your current settings
 
-Use the [get](/graph/api/peoplesettings-list-pronouns?view=graph-rest-beta&preserve-view=true) operation to return the current settings for pronouns in your organization.
+Use the [get](/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-beta&preserve-view=true) operation to return the current settings for pronouns in your organization.
 
 The following example gets the current display settings, which have pronouns disabled. 
 
