@@ -57,24 +57,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 For new tenants, a JIT provisioning error will cause a `401` error for first-party apps using Microsoft Graph advanced Azure AD query capabilities (Mezzo). First-party apps require the provisioning of a service principal on the target tenant when the first request arrives, but advanced query endpoints are read-only, so provisioning cannot happen (advanced query endpoints are defined by the `ConsistencyLevel=eventual header` + `$count` or `$search` query arguments). As a workaround, call Azure AD Graph or another Microsoft Graph endpoint (for example, `/users?$top=1`). This takes care of the provisioning. This is an issue with Azure AD and will occur once per tenant for a given app. The following example shows the pattern to use.
 
-<!-- {
-  "blockType": "ignored"
-}
-``` http
-{
-    try
-    {
-      $count
-    }
-    catch (unauthorized)
-    {
-        call /users?$top=1
-        wait a few minutes; // Provisioning is eventually consistent, so it might take a few minutes to propagate
-        retry $count
-    }
-}
-```
-
 ## Examples
 
 ### Example 1: Get list of members in team
