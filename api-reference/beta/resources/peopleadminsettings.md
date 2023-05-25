@@ -1,5 +1,5 @@
 ---
-title: "peopleSetting resource type"
+title: "peopleAdminSettings resource type"
 description: "Represents a setting to control the people related admin settings in the tenant"
 author: "aymen-ms"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "people"
 doc_type: resourcePageType
 ---
 
-# peopleSetting resource type
+# peopleAdminSettings resource type
 
 Namespace: microsoft.graph
 
@@ -38,14 +38,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.peopleSetting",
+  "@odata.type": "microsoft.graph.peopleAdminSettings",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.peopleSetting",
+  "@odata.type": "#microsoft.graph.peopleAdminSettings",
   "id": "String (identifier)"
 }
 ```
