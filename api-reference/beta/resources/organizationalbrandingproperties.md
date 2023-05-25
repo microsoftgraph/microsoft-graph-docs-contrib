@@ -93,6 +93,9 @@ The following is a JSON representation of the resource.
   "squareLogoDark": "Stream",
   "squareLogoDarkRelativeUrl": "String",
   "usernameHintText": "String",
+  "contentCustomization": {
+    "@odata.type": "microsoft.graph.contentCustomization"
+  },  
   "customAccountResetCredentialsUrl": "String",
   "customCannotAccessYourAccountText": "String",
   "customCannotAccessYourAccountUrl": "String",
