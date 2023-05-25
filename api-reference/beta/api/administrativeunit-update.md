@@ -76,7 +76,7 @@ PATCH https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c
 Content-type: application/json
 
 {
-    "displayName": "Executive Division"
+    "displayName": "Executive Division",
     "membershipType": "Dynamic",
     "membershipRule": "(user.country -eq \"United States\")",
     "membershipRuleProcessingState": "On"
