@@ -15,6 +15,13 @@ Namespace: microsoft.graph
 
 An object representing the application that will be triggered for an authenticationEventListener.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+|[List linked applications](../api/authenticationconditionsapplications-list-includeapplications.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|List listeners associated with an external identities self-service sign-up user flow.|
+|[Add linked application](../api/authenticationconditionsapplications-post-includeapplications.md)|None|List listeners associated with an external identities self-service sign-up user flow.|
+|[Remove linked application](../api/authenticationconditionapplication-delete.md)|None|List listeners associated with an external identities self-service sign-up user flow.|
 
 ## Properties
 |Property|Type|Description|
