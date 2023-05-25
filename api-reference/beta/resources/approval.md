@@ -17,9 +17,9 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), the app
 
 In [userConsentRequests](../resources/userconsentrequest.md), the approval object for decisions associated with a request.
 
-In [Role management](../resources/rolemanagement.md), the decisions to approve or deny role assignments.
+In [Role management](../resources/rolemanagement.md), the approval object for decisions to approve or deny role assignments.
 
-In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the decisions to approve or deny assignment schedule.
+In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval object for decisions to approve or deny assignment schedule (group membership or ownership activation).
 
 ## Methods
 

@@ -101,7 +101,7 @@ In addition, for delegated scenarios, the calling principal needs one of the fol
 
 `*` Permissions for group members and group owners are limited to the read or write operations they need to perform. For example, a group member can [cancel their assignmentScheduleRequest](../api/privilegedaccessgroupassignmentschedulerequest-cancel.md) but not any other principal's request.
 
-Calls to approval and approvalStep endpoints can be made only by approver of the request. Azure AD roles do not provide permissions and not required to call these endpoints.
+Calls to approval and approvalStep endpoints can be made only by approver of the request. Azure AD roles are not required to call these endpoints.
 
 
 ## See also

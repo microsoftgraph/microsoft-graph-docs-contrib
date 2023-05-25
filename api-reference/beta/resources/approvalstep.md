@@ -17,7 +17,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), the app
 
 In [userConsentRequests](../resources/userconsentrequest.md), the approval  decisions associated with a request.
 
-In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval  decisions associated with a assignment schedule request.
+In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval  decisions associated with a assignment schedule request (request to activate group membership or ownership).
 
 ## Methods
 
