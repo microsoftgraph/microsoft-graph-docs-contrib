@@ -105,11 +105,11 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 
 |Member|Description|
 |:---|:---|
-|running|The Cloud PC is in running status.|
-|poweredOff|The Cloud PC is in power off status.|
-|deallocated|The Cloud PC is in deallocated status.|
-|hibernated|The Cloud PC is in hibernated status.|
-|unknown|The Cloud PC is in unknown status.|
+|running|The Cloud PC status is running.|
+|poweredOff|The Cloud PC status is power off.|
+|deallocated|The Cloud PC status is deallocated.|
+|hibernated|The Cloud PCstatus is hibernated.|
+|unknown|The Cloud PC status is unknown.|
 
 ### shiftWorkCloudPcAccessState values
 The following table lists the members of an [evolvable enumeration](#shiftworkcloudpcaccessstate-values). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `hibernated`.
