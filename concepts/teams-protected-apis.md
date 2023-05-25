@@ -9,7 +9,7 @@ ms.prod: "microsoft-teams"
 # Protected APIs in Microsoft Teams
 
  > [!CAUTION] 
- >Starting May 18, 2023, the protected API approval process has been deprecated. You can now call APIs that were previously protected as long as [app registration](https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app) and [subscription association](/graph/metered-api-setup) requirements are met.
+ >Starting May 18, 2023, the protected API approval process has been deprecated. You can now call APIs that were previously protected as long as [app registration](/azure/active-directory/develop/quickstart-register-app) and [subscription association](/graph/metered-api-setup) requirements are met.
 
 Microsoft Teams APIs in Microsoft Graph that access sensitive data are considered protected APIs. These APIs require that you have additional validation beyond permissions and consent before you can use them.
 
