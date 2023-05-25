@@ -35,6 +35,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.contentCustomization",
-  "attributeCollection": "Collection(microsoft.graph.keyValue)"
+  "attributeCollection": [
+    {
+      "@odata.type": "microsoft.graph.keyValue"
+    }
+  ],
+  "attributeCollectionRelativeUrl": "String"
 }
 ```
