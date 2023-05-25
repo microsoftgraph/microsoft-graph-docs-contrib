@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Retrieve details of all role management policy assignments for Azure AD roles
+### Example 1: Retrieve details of all role management policy assignments for PIM for Azure AD roles
 
 ### Request
 
@@ -148,7 +148,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve details of all role management policy assignments for PIM for groups membership and ownership
+### Example 2: Retrieve details of all role management policy assignments for PIM for groups
 
 ### Request
 

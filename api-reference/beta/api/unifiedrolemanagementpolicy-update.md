@@ -63,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Update the details of a policy defined for a policy for Azure AD roles
+### Example 1: Update the details of a policy defined for a policy for PIM for Azure AD roles
 
 ### Request
 
@@ -189,7 +189,7 @@ The following is an example of the response
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update the details of a policy defined for PIM for groups membership and ownership
+### Example 2: Update the details of a policy defined for PIM for groups
 
 ### Request
 

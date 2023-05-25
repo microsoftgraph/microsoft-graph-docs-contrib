@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Retrieve rules of a policy for Azure AD roles
+### Example 1: Retrieve rules of a policy for PIM for Azure AD roles
 
 ### Request
 
@@ -428,7 +428,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve rules of a policy for PIM for groups membership and ownership
+### Example 2: Retrieve rules of a policy for PIM for groups
 
 ### Request
 
