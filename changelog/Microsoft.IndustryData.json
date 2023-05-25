@@ -1,0 +1,286 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "inboundDomain",
+          "ChangeType": "Addition",
+          "Description": "Added the **inboundDomain** enumeration type.",
+          "Target": "inboundDomain"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "industryDataActivityStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **industryDataActivityStatus** enumeration type.",
+          "Target": "industryDataActivityStatus"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "industryDataRunStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **industryDataRunStatus** enumeration type.",
+          "Target": "industryDataRunStatus"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "readinessStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **readinessStatus** enumeration type.",
+          "Target": "readinessStatus"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aggregatedInboundStatistics",
+          "ChangeType": "Addition",
+          "Description": "Added the [aggregatedInboundStatistics](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-aggregatedInboundStatistics?view=graph-rest-beta) resource type.",
+          "Target": "aggregatedInboundStatistics"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureDataLakeConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureDataLakeConnector](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-azureDataLakeConnector?view=graph-rest-beta) resource and supported methods.",
+          "Target": "azureDataLakeConnector"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileDataConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileDataConnector](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-fileDataConnector?view=graph-rest-beta) resource type.",
+          "Target": "fileDataConnector"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileUploadSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileUploadSession](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-fileUploadSession?view=graph-rest-beta) resource type.",
+          "Target": "fileUploadSession"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileValidateOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileValidateOperation](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-fileValidateOperation?view=graph-rest-beta) resource and supported methods.",
+          "Target": "fileValidateOperation"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identifierTypeReferenceValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [identifierTypeReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-identifierTypeReferenceValue?view=graph-rest-beta) resource type.",
+          "Target": "identifierTypeReferenceValue"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inboundActivityResults",
+          "ChangeType": "Addition",
+          "Description": "Added the [inboundActivityResults](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-inboundActivityResults?view=graph-rest-beta) resource type.",
+          "Target": "inboundActivityResults"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inboundFileFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [inboundFileFlow](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-inboundFileFlow?view=graph-rest-beta) resource and supported methods.",
+          "Target": "inboundFileFlow"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inboundFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [inboundFlow](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-inboundFlow?view=graph-rest-beta) resource and supported methods.",
+          "Target": "inboundFlow"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inboundFlowActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [inboundFlowActivity](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-inboundFlowActivity?view=graph-rest-beta) resource type.",
+          "Target": "inboundFlowActivity"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "industryDataActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [industryDataActivity](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataActivity?view=graph-rest-beta) resource type.",
+          "Target": "industryDataActivity"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "industryDataActivityStatistics",
+          "ChangeType": "Addition",
+          "Description": "Added the [industryDataActivityStatistics](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataActivityStatistics?view=graph-rest-beta) resource type.",
+          "Target": "industryDataActivityStatistics"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "industryDataConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [industryDataConnector](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataConnector?view=graph-rest-beta) resource and supported methods.",
+          "Target": "industryDataConnector"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "industryDataRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [industryDataRoot](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataRoot?view=graph-rest-beta) resource type.",
+          "Target": "industryDataRoot"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "industryDataRun",
+          "ChangeType": "Addition",
+          "Description": "Added the [industryDataRun](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataRun?view=graph-rest-beta) resource and supported methods.",
+          "Target": "industryDataRun"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "industryDataRunActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [industryDataRunActivity](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataRunActivity?view=graph-rest-beta) resource type.",
+          "Target": "industryDataRunActivity"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "industryDataRunEntityCountMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [industryDataRunEntityCountMetric](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataRunEntityCountMetric?view=graph-rest-beta) resource type.",
+          "Target": "industryDataRunEntityCountMetric"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "industryDataRunRoleCountMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [industryDataRunRoleCountMetric](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataRunRoleCountMetric?view=graph-rest-beta) resource type.",
+          "Target": "industryDataRunRoleCountMetric"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "industryDataRunStatistics",
+          "ChangeType": "Addition",
+          "Description": "Added the [industryDataRunStatistics](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-industryDataRunStatistics?view=graph-rest-beta) resource type.",
+          "Target": "industryDataRunStatistics"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "outboundFlowActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [outboundFlowActivity](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-outboundFlowActivity?view=graph-rest-beta) resource type.",
+          "Target": "outboundFlowActivity"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "referenceDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [referenceDefinition](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-referenceDefinition?view=graph-rest-beta) resource and supported methods.",
+          "Target": "referenceDefinition"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "referenceValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [referenceValue](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-referenceValue?view=graph-rest-beta) resource type.",
+          "Target": "referenceValue"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roleGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [roleGroup](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-roleGroup?view=graph-rest-beta) resource and supported methods.",
+          "Target": "roleGroup"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roleReferenceValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [roleReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-roleReferenceValue?view=graph-rest-beta) resource type.",
+          "Target": "roleReferenceValue"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sourceSystemDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [sourceSystemDefinition](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-sourceSystemDefinition?view=graph-rest-beta) resource and supported methods.",
+          "Target": "sourceSystemDefinition"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userMatchingSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [userMatchingSetting](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-userMatchingSetting?view=graph-rest-beta) resource type.",
+          "Target": "userMatchingSetting"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userMatchTargetReferenceValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [userMatchTargetReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-userMatchTargetReferenceValue?view=graph-rest-beta) resource type.",
+          "Target": "userMatchTargetReferenceValue"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "validateOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [validateOperation](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-validateOperation?view=graph-rest-beta) resource type.",
+          "Target": "validateOperation"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "yearReferenceValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [yearReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-yearReferenceValue?view=graph-rest-beta) resource type.",
+          "Target": "yearReferenceValue"
+        },
+        {
+          "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "yearTimePeriodDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [yearTimePeriodDefinition](https://learn.microsoft.com/en-us/graph/api/resources/industrydata-yearTimePeriodDefinition?view=graph-rest-beta) resource and supported methods.",
+          "Target": "yearTimePeriodDefinition"
+        }
+      ],
+      "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-13T21:45:45.2355566Z",
+      "WorkloadArea": "Industry data ETL",
+      "SubArea": ""
+    }
+  ]
+}

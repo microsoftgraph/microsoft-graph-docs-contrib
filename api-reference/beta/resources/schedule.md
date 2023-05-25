@@ -46,11 +46,11 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | timesOff                | [timeOff](timeoff.md) collection                                 | The instances of times off in the schedule.                                                                                           |
 | timeOffReasons          | [timeOffReason](timeoffreason.md) collection                     | The set of reasons for a time off in the schedule.                                                                                    |
 | schedulingGroups        | [schedulingGroup](schedulinggroup.md) collection                 | The logical grouping of users in the schedule (usually by role).                                                                      |
-| openshifts              | [openShift](openshift.md) collection                             | The set of open shifts in a scheduling group in the schedule.                                                                         |
+| openShifts              | [openShift](openshift.md) collection                             | The set of open shifts in a scheduling group in the schedule.                                                                         |
 | workforceintegrations   | [workforceIntegration](workforceintegration.md) collection       | An instance of a workforce integration per team with outbound data flow on synchronous change notifications (for supported entities). |
-| swapshiftchangerequests | [swapShiftsChangeRequest](swapshiftschangerequest.md) collection | The swap requests for shifts in the schedule.                                                                                         |
-| openshiftchangerequests | [openShiftChangeRequest](openshiftchangerequest.md) collection   | The open shift requests in the schedule.                                                                                              |
-| timeoffrequest          | [timeOffRequest](timeoffrequest.md) collection                   | The time off requests in the schedule.                                                                                                |
+| swapShiftsChangeRequests | [swapShiftsChangeRequest](swapshiftschangerequest.md) collection | The swap requests for shifts in the schedule.                                                                                         |
+| openShiftChangeRequests | [openShiftChangeRequest](openshiftchangerequest.md) collection   | The open shift requests in the schedule.                                                                                              |
+| timeOffRequests          | [timeOffRequest](timeoffrequest.md) collection                   | The time off requests in the schedule.                                                                                                |
 
 ## JSON representation
 

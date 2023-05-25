@@ -1,7 +1,7 @@
 ---
 title: "smsAuthenticationMethodTarget resource type"
 description: "A collection of groups enabled to use Text Message authentication methods policy."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

@@ -19,9 +19,9 @@ The following tasks are available for listItemVersion resources.
 
 |            Common task             |         HTTP method         |
 | :--------------------------------- | :-------------------------- |
-| [List versions][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
-| [Get version][version-get]         | `GET /sites/{site-id}/items/{item-id}/versions/{version-id}`     |
-| [Restore version][version-restore] | `POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restore` |
+| [List versions][version-list]      | `GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions`  |
+| [Get version][version-get]         | `GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}`     |
+| [Restore version][version-restore] | `POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restore` |
 
 [version-list]: ../api/listitem-list-versions.md
 [version-get]: ../api/listitemversion-get.md

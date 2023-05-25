@@ -11,14 +11,14 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new SectionGroupsPostRequestBody();
 $additionalData = [
-'displayName' => 'Section group name', 
+		'displayName' => 'Section group name', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$graphServiceClient->me()->onenote()->sectionGroupsById('sectionGroup-id')->sectionGroups()->post($requestBody);
+$graphServiceClient->me()->onenote()->sectionGroups()->bySectionGroupId('sectionGroup-id')->sectionGroups()->post($requestBody);
 
 
 ```

@@ -10,31 +10,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new UnifiedRoleEligibilityScheduleRequest();
-$requestBody->setAction('AdminRemove');
+$requestBody->setAction('adminRemove');
 
-$requestBody->setJustification('Assign User Admin eligibility to IT Helpdesk (User) group');
-
-$requestBody->setRoleDefinitionId('fdd7a751-b60b-444a-984c-02652fe8fa1c');
+$requestBody->setRoleDefinitionId('8424c6f0-a189-499e-bbd0-26c1753c96d4');
 
 $requestBody->setDirectoryScopeId('/');
 
-$requestBody->setPrincipalId('07706ff1-46c7-4847-ae33-3003830675a1');
-
-$scheduleInfo = new RequestSchedule();
-$scheduleInfo->setStartDateTime(new DateTime('2021-07-26T18:08:06.2081758Z'));
-
-$scheduleInfoExpiration = new ExpirationPattern();
-$scheduleInfoExpiration->setEndDateTime(new DateTime('2022-06-30T00:00:00Z'));
-
-$scheduleInfoExpiration->setType(new ExpirationPatternType('afterdatetime'));
+$requestBody->setPrincipalId('071cc716-8147-4397-a5ba-b2105951cc0b');
 
 
-$scheduleInfo->setExpiration($scheduleInfoExpiration);
 
-$requestBody->setScheduleInfo($scheduleInfo);
-
-
-$requestResult = $graphServiceClient->roleManagement()->directory()->roleEligibilityScheduleRequests()->post($requestBody);
+$result = $graphServiceClient->roleManagement()->directory()->roleEligibilityScheduleRequests()->post($requestBody);
 
 
 ```

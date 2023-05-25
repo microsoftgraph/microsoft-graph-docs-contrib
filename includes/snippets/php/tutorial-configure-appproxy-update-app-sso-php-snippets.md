@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Application();
 $additionalData = [
-'onPremisesPublishing' => $requestBody = new OnPremisesPublishing();
+		'onPremisesPublishing' => $requestBody = new OnPremisesPublishing();
 $singleSignOnSettings = new SingleSignOnSettings();
 $singleSignOnSettingsKerberosSignOnSettings = new KerberosSignOnSettings();
 $		singleSignOnSettingsKerberosSignOnSettings->setKerberosServicePrincipalName('HTTP/iwademo.contoso.com');
@@ -33,7 +33,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->applicationsById('application-id')->patch($requestBody);
+$graphServiceClient->applications()->byApplicationId('application-id')->patch($requestBody);
 
 
 ```

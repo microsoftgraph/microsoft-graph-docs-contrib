@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->security()->securityActions()->get();
+$result = $graphServiceClient->security()->securityActions()->get();
 
 
 ```

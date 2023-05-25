@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resetPassword",
           "ChangeType": "Deletion",
-          "Description": "Deleted the **requireChangeOnNextSignIn** property from the [authenticationMethod: resetPassword](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethod-resetpassword?view=graph-rest-1.0) method.",
+          "Description": "Deleted the **requireChangeOnNextSignIn** property from the [authenticationMethod: resetPassword](https://learn.microsoft.com/en-us/graph/api/authenticationmethod-resetpassword?view=graph-rest-1.0) method.",
           "Target": "resetPassword"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resetPassword",
           "ChangeType": "Deletion",
-          "Description": "Deleted the **requireChangeOnNextSignIn** property from the [authenticationMethod: resetPassword](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethod-resetpassword?view=graph-rest-beta) method.",
+          "Description": "Deleted the **requireChangeOnNextSignIn** property from the [authenticationMethod: resetPassword](https://learn.microsoft.com/en-us/graph/api/authenticationmethod-resetpassword?view=graph-rest-beta) method.",
           "Target": "resetPassword"
         }
       ],
@@ -83,6 +83,32 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-08-12T00:00:38.715986Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "73e9900f-f6a5-4810-be3d-5788c78fcd77",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "microsoftAuthenticatorAuthenticationMethodClientAppName",
+          "ChangeType": "Addition",
+          "Description": "Added the **microsoftAuthenticatorAuthenticationMethodClientAppName** enumeration type.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodClientAppName"
+        },
+        {
+          "Id": "73e9900f-f6a5-4810-be3d-5788c78fcd77",
+          "ApiChange": "Property",
+          "ChangedApiName": "clientAppName",
+          "ChangeType": "Addition",
+          "Description": "Added the `clientAppName` property to the [microsoftAuthenticatorAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethod?view=graph-rest-beta) resource.",
+          "Target": "microsoftAuthenticatorAuthenticationMethod"
+        }
+      ],
+      "Id": "73e9900f-f6a5-4810-be3d-5788c78fcd77",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-24T19:28:15.6913807Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

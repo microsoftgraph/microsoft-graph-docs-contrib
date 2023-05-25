@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	Body = @{
-		ContentType = "html"
-		Content = "Hello World"
+	body = @{
+		contentType = "html"
+		content = "Hello World"
 	}
 }
 

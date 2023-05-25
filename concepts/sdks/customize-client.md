@@ -17,7 +17,7 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 // https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
 var interactiveCredential = new InteractiveBrowserCredential(...);
 
-var authProvider = new AzureIdentityAuthenticationProvider(tokenCredential, scopes);
+var authProvider = new AzureIdentityAuthenticationProvider(tokenCredential, scopes: scopes);
 
 var handlers = GraphClientFactory.CreateDefaultHandlers();
 
@@ -252,7 +252,7 @@ var scopes = new[] { "https://graph.microsoft.com/.default" };
 // This example works with Microsoft.Graph 5+
 var httpClient = GraphClientFactory.Create(proxy: new WebProxy(new Uri(proxyAddress)));
 
-var graphClient = new GraphServiceClient(httpClient, new AzureIdentityAuthenticationProvider(credential, scopes));
+var graphClient = new GraphServiceClient(httpClient, new AzureIdentityAuthenticationProvider(credential, scopes: scopes));
 ```
 
 ## [TypeScript](#tab/typeScript)

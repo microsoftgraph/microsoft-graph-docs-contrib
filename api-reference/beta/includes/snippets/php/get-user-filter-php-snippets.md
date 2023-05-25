@@ -10,16 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UsersRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new UsersRequestBuilderGetQueryParameters();
+$queryParameters = UsersRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->count = true;
 $queryParameters->consistencyLevel = "eventual";
 $queryParameters->filter = "endsWith(mail,'@contoso.com')";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->users()->get($requestConfiguration);
+$result = $graphServiceClient->users()->get($requestConfiguration);
 
 
 ```

@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/DeploymentAudiences/Item/MicrosoftGraphWindowsUpdatesUpdateAudience"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewUpdateAudiencePostRequestBody()
 
@@ -20,7 +28,7 @@ addMembers := []graphmodels.Objectable {
 }
 requestBody.SetAddMembers(addMembers)
 
-graphClient.Admin().Windows().Updates().DeploymentAudiencesById("deploymentAudience-id").WindowsUpdatesUpdateAudience().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().DeploymentAudiences().ByDeploymentAudienceId("deploymentAudience-id").MicrosoftGraphWindowsUpdatesUpdateAudience().Post(context.Background(), requestBody, nil)
 
 
 ```

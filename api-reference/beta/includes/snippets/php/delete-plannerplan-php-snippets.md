@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new PlannerPlanRequestBuilderDeleteRequestConfiguration();
-
 $headers = [
-	'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
-];
-
+		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->planner()->plansById('plannerPlan-id')->delete($requestConfiguration);
+$graphServiceClient->planner()->plans()->byPlanId('plannerPlan-id')->delete($requestConfiguration);
 
 
 ```
