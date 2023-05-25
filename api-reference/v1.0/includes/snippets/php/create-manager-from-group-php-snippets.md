@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-
 
 
 
-$graphServiceClient->usersById('user-id')->manager()->ref()->put($requestBody);
+$graphServiceClient->users()->byUserId('user-id')->manager()->ref()->put($requestBody);
 
 
 ```

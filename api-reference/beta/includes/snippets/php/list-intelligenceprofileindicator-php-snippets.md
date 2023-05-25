@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->security()->threatIntelligence()->intelProfilesById('intelligenceProfile-id')->indicators()->get();
+$result = $graphServiceClient->security()->threatIntelligence()->intelProfiles()->byIntelProfileId('intelligenceProfile-id')->indicators()->get();
 
 
 ```

@@ -16,7 +16,7 @@ $requestBody->setThumbnailUrl('https://iabm.io/sdhdfhsdhshsd.jpg');
 
 
 
-$result = $graphServiceClient->usersById('user-id')->profile()->publicationsById('itemPublication-id')->patch($requestBody);
+$result = $graphServiceClient->users()->byUserId('user-id')->profile()->publications()->byPublicationId('itemPublication-id')->patch($requestBody);
 
 
 ```

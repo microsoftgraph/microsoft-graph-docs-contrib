@@ -15,7 +15,7 @@ $queryParameters->select = ["id","displayName","capabilities"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->print()->printersById('printer-id')->get($requestConfiguration);
+$result = $graphServiceClient->print()->printers()->byPrinterId('printer-id')->get($requestConfiguration);
 
 
 ```

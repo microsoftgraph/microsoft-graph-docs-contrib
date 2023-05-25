@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->security()->threatIntelligence()->hostCookiesById('hostCookie-id')->get();
+$result = $graphServiceClient->security()->threatIntelligence()->hostCookies()->byHostCookieId('hostCookie-id')->get();
 
 
 ```

@@ -281,6 +281,9 @@ items:
         href: /graph/toolkit/customize-components/localization?context=graph/api/beta
       - name: Right-to-left support
         href: /graph/toolkit/customize-components/right-to-left?context=graph/api/beta
+  - name: Configure Connected Services
+    displayName: Configure Connected Services in Visual Studio
+    href: office-365-connected-services.md
   - name: Resources
     items:
     - name: Best practices
@@ -327,6 +330,8 @@ items:
           href: api/user-validatepassword.md
         - name: Invalidate refresh tokens
           href: api/user-invalidateallrefreshtokens.md
+        - name: Retry service provisioning
+          href: api/user-retryserviceprovisioning.md
       - name: App role assignment
         href: resources/approleassignment.md
         items:
@@ -757,6 +762,8 @@ items:
           href: api/group-unsubscribebymail.md
         - name: Validate properties
           href: api/group-validateproperties.md
+        - name: Retry service provisioning
+          href: api/group-retryserviceprovisioning.md
       - name: App role assignment
         href: resources/approleassignment.md
         items:
@@ -10526,7 +10533,7 @@ items:
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
               href: api/intune-tem-telecomexpensemanagementpartner-update.md
-      - name: Cloud PCs (preview)
+      - name: Cloud PC (preview)
         items:
         - name: Overview
           href: resources/cloudpc-api-overview.md
@@ -11292,6 +11299,14 @@ items:
           href: api/educationassignment-delete-rubric.md
         - name: Get delta
           href: api/educationassignment-delta.md
+        - name: List grading categories
+          href: api/educationassignment-list-gradingcategory.md
+        - name: Add grading category
+          href: api/educationassignment-post-gradingcategory.md
+        - name: Update grading category
+          href: api/educationgradingcategory-update.md
+        - name: Remove grading category
+          href: api/educationassignment-delete-gradingcategory.md
         - name: Activate assignment
           href: api/educationassignment-activate.md
         - name: Deactivate assignment
@@ -11321,6 +11336,15 @@ items:
           href: api/educationcategory-delete.md
         - name: Get delta
           href: api/educationcategory-delta.md
+      - name: Grading category
+        href: resources/educationgradingcategory.md
+        items:
+        - name: Add grading category
+          href: api/educationassignment-post-gradingcategory.md
+        - name: Update grading category
+          href: api/educationgradingcategory-update.md
+        - name: Delete grading category
+          href: educationassignment-delete-gradingcategory
       - name: Rubric
         href: resources/educationrubric.md
         items:
@@ -12188,6 +12212,8 @@ items:
               href: api/directoryobject-getmemberobjects.md
             - name: Check member objects
               href: api/directoryobject-checkmemberobjects.md
+          - name: Retry service provisioning
+            href: api/orgcontact-retryserviceprovisioning.md
           - name: Groups
             href: resources/group.md
             items:
@@ -12634,7 +12660,7 @@ items:
             - name: List resource roles
               href: api/accesspackagecatalog-list-accesspackageresourceroles.md
           - name: Access package custom workflow extension
-            displayName: Custom authentication extensionsCustom authentication extensions
+            displayName: Custom authentication extensions
             items:
             - name: Assignment request workflow extension
               href: resources/accesspackageassignmentrequestworkflowextension.md
@@ -12873,7 +12899,7 @@ items:
           - name: PIM for Azure AD Roles
             href: resources/privilegedidentitymanagementv3-overview.md
             items:
-            - name: Role assignment schedule requests
+            - name: Assignment schedule requests
               href: resources/unifiedroleassignmentschedulerequest.md
               items:
               - name: List
@@ -12886,7 +12912,7 @@ items:
                 href: api/unifiedroleassignmentschedulerequest-cancel.md
               - name: Filter by current user
                 href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
-            - name: Role assignment schedules
+            - name: Assignment schedules
               href: resources/unifiedroleassignmentschedule.md
               items:
               - name: List
@@ -12895,7 +12921,7 @@ items:
                 href: api/unifiedroleassignmentschedule-get.md
               - name: Filter by current user
                 href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
-            - name: Role assignment schedule instances
+            - name: Assignment schedule instances
               href: resources/unifiedroleassignmentscheduleinstance.md
               items:
               - name: List
@@ -12904,7 +12930,7 @@ items:
                 href: api/unifiedroleassignmentscheduleinstance-get.md
               - name: Filter by current user
                 href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
-            - name: Role eligibility schedule requests
+            - name: Eligibility schedule requests
               href: resources/unifiedroleeligibilityschedulerequest.md
               items:
               - name: List
@@ -12917,7 +12943,7 @@ items:
                 href: api/unifiedroleeligibilityschedulerequest-cancel.md
               - name: Filter by current user
                 href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
-            - name: Role eligibility schedules
+            - name: Eligibility schedules
               href: resources/unifiedroleeligibilityschedule.md
               items:
               - name: List
@@ -12926,7 +12952,7 @@ items:
                 href: api/unifiedroleeligibilityschedule-get.md
               - name: Filter by current user
                 href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
-            - name: Role eligibility schedule instances
+            - name: Eligibility schedule instances
               href: resources/unifiedroleeligibilityscheduleinstance.md
               items:
               - name: List
@@ -12935,7 +12961,7 @@ items:
                 href: api/unifiedroleeligibilityscheduleinstance-get.md
               - name: Filter by current user
                 href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-            - name: Role management policies
+            - name: Policies
               items:
               - name: Policies and rules
                 href: resources/unifiedrolemanagementpolicy.md
@@ -12949,7 +12975,7 @@ items:
                 href: api/unifiedrolemanagementpolicyrule-get.md
               - name: Update rule
                 href: api/unifiedrolemanagementpolicyrule-update.md
-            - name: Role management policy assignments
+            - name: Policy assignments
               href: resources/unifiedrolemanagementpolicyassignment.md
               items:
               - name: List
@@ -13109,6 +13135,29 @@ items:
               href: api/agreement-list-files.md
       - name: Identity and sign-in
         items:
+        - name: Authentication event listeners (preview)
+          href: resources/authenticationeventlistener.md
+          items:
+          - name: On token issuance start
+            href: resources/ontokenissuancestartlistener.md
+          - name: On interactive authentication flow start
+            href: resources/oninteractiveauthflowstartlistener.md
+          - name: On authentication method load start
+            href: resources/onauthenticationmethodloadstartlistener.md
+          - name: On attribute collection
+            href: resources/onattributecollectionlistener.md
+          - name: On user create start
+            href: resources/onusercreatestartlistener.md
+          - name: List
+            href: api/identitycontainer-list-authenticationeventlisteners.md
+          - name: Create
+            href: api/identitycontainer-post-authenticationeventlisteners.md
+          - name: Get
+            href: api/authenticationeventlistener-get.md
+          - name: Update
+            href: api/authenticationeventlistener-update.md
+          - name: Delete
+            href: api/authenticationeventlistener-delete.md
         - name: Authentication methods
           items:
           - name: Overview
@@ -13426,7 +13475,22 @@ items:
             - name: List tenant references
               href: api/outboundshareduserprofile-list-tenants.md
             - name: Remove personal data
-              href: api/tenantreference-removepersonaldata.md 
+              href: api/tenantreference-removepersonaldata.md
+        - name: Custom authentication extensions (preview)
+          href: resources/customauthenticationextension.md
+          items:
+          - name: On token issuance start
+            href: resources/ontokenissuancestartcustomextension.md
+          - name: List
+            href: api/identitycontainer-list-customauthenticationextensions.md
+          - name: Create
+            href: api/identitycontainer-post-customauthenticationextensions.md
+          - name: Get
+            href: api/customauthenticationextension-get.md
+          - name: Update
+            href: api/customauthenticationextension-update.md
+          - name: Delete
+            href: api/customauthenticationextension-delete.md 
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -13955,7 +14019,7 @@ items:
             href: api/trustframework-put-trustframeworkpolicy.md
           - name: Delete
             href: api/trustframeworkpolicy-delete.md
-        - name: User flows
+        - name: User flows for Azure AD and Azure AD B2C
           items:
           - name: User flow (deprecated)
             items:
@@ -13969,7 +14033,7 @@ items:
               href: api/identityuserflow-get.md
             - name: Delete
               href: api/identityuserflow-delete.md
-          - name: B2C user flows (preview)
+          - name: User flows for Azure AD B2C (preview)
             items:
             - name: B2C user flow
               href: resources/b2cidentityuserflow.md
@@ -14007,7 +14071,7 @@ items:
               href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
             - name: Configure an API connector
               href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
-          - name: Self-service sign up user flows
+          - name: Self-service sign up user flows for Azure AD
             items:
             - name: Self-service sign up user flow
               href: resources/b2xidentityuserflow.md
@@ -14101,6 +14165,43 @@ items:
               href: api/identityapiconnector-uploadclientcertificate.md
             - name: Delete
               href: api/identityapiconnector-delete.md
+        - name: User flows for Azure AD for customers (preview)
+          items:
+          - name: Authentication events flow
+            href: resources/authenticationeventsflow.md
+          - name: Self-service sign up user flow
+            href: resources/externalusersselfservicesignupeventsflow.md
+          - name: List user flows
+            href: api/identitycontainer-list-authenticationeventsflows.md
+          - name: Create user flow
+            href: api/identitycontainer-post-authenticationeventsflows.md
+          - name: Get user flow
+            href: api/authenticationeventsflow-get.md
+          - name: Update user flow
+            href: api/authenticationeventsflow-update.md
+          - name: Delete user flow
+            href: api/authenticationeventsflow-delete.md            
+          - name: List identity providers
+            href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
+          - name: Add identity provider
+            href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
+          - name: Remove identity provider
+            href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
+          - name: List attributes
+            href: api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
+          - name: Add attributes
+            href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
+          - name: Remove attributes
+            href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
+          - name: Authentication condition applications
+            href: resources/authenticationconditionapplication.md
+            items:
+            - name: List applications
+              href: api/authenticationconditionsapplications-list-includeapplications.md
+            - name: Add applications
+              href: api/authenticationconditionsapplications-post-includeapplications.md
+            - name: Remove applications
+              href: api/authenticationconditionapplication-delete.md  
       - name: Partner customer administration
         items:
         - name: Granular delegated admin privileges
@@ -16272,6 +16373,8 @@ items:
           href: api/site-list-operations.md
         - name: Get site settings
           href: api/sitesettings-get.md
+        - name: List all root sites
+          href: api/site-getallsites.md
       - name: List
         items:
         - name: List
@@ -16440,15 +16543,15 @@ items:
         items:
         - name: Permission
           href: resources/permission.md
-        - name: List site permissions
+        - name: List
           href: api/site-list-permissions.md
-        - name: Create site permissions
+        - name: Create
           href: api/site-post-permissions.md
-        - name: Get site permission
+        - name: Get
           href: api/site-get-permission.md
-        - name: Update site permission
+        - name: Update
           href: api/site-update-permission.md
-        - name: Delete site permission
+        - name: Delete
           href: api/site-delete-permission.md
       - name: Taxonomy
         displayname: Taxonomy API
@@ -16508,12 +16611,12 @@ items:
             href: api/termStore-relation-post.md
       - name: Tenant settings
         items:
-          - name: Sharepoint settings
-            href: resources/sharepointSettings.md
+          - name: SharePoint settings
+            href: resources/sharepointsettings.md
           - name: Get
-            href: api/sharepointSettings-get.md
+            href: api/sharepointsettings-get.md
           - name: Update
-            href: api/sharepointSettings-update.md
+            href: api/sharepointsettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
@@ -17046,20 +17149,19 @@ items:
               href: api/onlinemeeting-delete.md
             - name: Create or get
               href: api/onlinemeeting-createorget.md
-          - name: Virtual appointment (preview)
+          - name: Virtual appointment
             items:
-            - name: Get Virtual appointment join link
+            - name: Get join link
               href: api/virtualappointment-getvirtualappointmentjoinweburl.md
-          - name: Virtual appointment (deprecated)
-            href: resources/virtualappointment.md
-            items:
-            - name: Create (deprecated)
+            - name: Virtual appointment (deprecated)
+              href: resources/virtualappointment.md
+            - name: Create virtual appointment (deprecated)
               href: api/virtualappointment-put.md
-            - name: Get (deprecated)
+            - name: Get virtual appointment (deprecated)
               href: api/virtualappointment-get.md
-            - name: Update (deprecated)
+            - name: Update virtual appointment (deprecated)
               href: api/virtualappointment-update.md
-            - name: Delete (deprecated)
+            - name: Delete virtual appointment (deprecated)
               href: api/virtualappointment-delete.md
         - name: Presence
           href: resources/presence.md
@@ -17146,8 +17248,9 @@ items:
           - name: Delete
             href: api/learningprovider-delete-learningcontents.md
         - name: Learning course activities (preview)
-          href: resources/learningcourseactivity.md
           items:
+          - name: Learning course activity
+            href: resources/learningcourseactivity.md
           - name: List
             href: api/learningcourseactivity-list.md
           - name: Create
