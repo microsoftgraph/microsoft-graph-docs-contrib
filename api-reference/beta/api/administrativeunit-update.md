@@ -63,14 +63,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Update a dynamic membership rule for an administrative unit
+The following example sets a dynamic membership rule on an existing administrative unit to include all users whose country is United States. It also updates the administrative unit display name.
 
-The following example sets a dynamic membership rule on an existing administrative unit to include all users whose country is United States.
+### Request
 
-#### Request
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_administrativeunit"
@@ -80,62 +76,14 @@ PATCH https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c
 Content-type: application/json
 
 {
+    "displayName": "Executive Division"
     "membershipType": "Dynamic",
     "membershipRule": "(user.country -eq \"United States\")",
     "membershipRuleProcessingState": "On"
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-administrativeunit-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-administrativeunit-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-administrativeunit-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-administrativeunit-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-administrativeunit-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
-
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 204 No Content
-```
-
-### Example 2: Update the display name of an administrative unit
-
-The following example updates the display name of an administrative unit.
-
-#### Request
-<!-- {
-  "blockType": "request",
-  "name": "update_administrativeunit_displayname"
-}-->
-```http
-PATCH https://graph.microsoft.com/beta/administrativeUnits/2sd35b05-ae71-48ab-9e7d-4r41a28te37d
-Content-type: application/json
-
-{
-    "displayName": "Executive Division"
-}
-```
-
-#### Response
+### Response
 
 <!-- {
   "blockType": "response"
