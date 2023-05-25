@@ -6397,7 +6397,9 @@
             ],
             "Id": "2ad1da60-6b6e-4582-a3d9-2358fcb158d6",
             "Cloud": "prd",
-            "version": "v1.0",
+            "Version": "v1.0",
+            "SubArea": "Calls and online meetings",
+            "WorkloadArea": "Teamwork and communications",
             "CreatedDateTime": "2023-01-26"
         },
         {
