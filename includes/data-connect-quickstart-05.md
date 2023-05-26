@@ -4,74 +4,87 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-This exercise describes how you register and approve an application with Microsoft Graph Data Connect (Data Connect). As a pre-requisite, Data Connect should be enabled in your tenant. We recommend to have an Azure Active Directory (Azure AD) application and storage destination resource created.
+A Microsoft 365 administrator has the ability to approve or deny consent requests. This can be done via the Microsoft 365 Admin Center or programmatically via PowerShell. When you run a pipeline and trigger a privileged access management (PAM) request, the request is attached to your user account that owns the service principal used by the pipeline. Even if the account is part of the approver group that you set up, you can't use it to approve the PAM request because self-approvals are not allowed. If you try, you'll get an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed." For development, you'll want to have a second account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange Online accounts.
 
-## Register your application with Microsoft Graph Data Connect
+## Approve consent requests
 
-These steps describe how you register your application with Data Connect. Developers are welcomed with a wizard divided into three tabs: **Registration Info**, **Datasets**, and **Review + create**.
+# [Microsoft 365 admin center](#tab/Microsoft365)
 
-### Provide details for the Registration Info tab
+1. Open a browser and go to your [Microsoft 365 admin center](https://admin.microsoft.com).
 
-1. Access [Microsoft Graph Data Connect in the Azure portal](https://aka.ms/mgdcinazure). Moving forward, the experience will be available through the search bar in the [Azure portal](https://portal.azure.com/).
+1. To approve or deny consent requests, go to [Privileged Access](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess).
 
-2. Choose the **Add** or **Add a new application** button.
+1. Select a pending **Data Access Request**.
 
-    ![A screenshot that shows the Azure portal Data Factory to create a new application.](../concepts/images/data-connect-register-app-1.png)
+1. In the **Data Access Request** call out, select the **Approve** button.
 
-3. Follow the **Add** wizard by specifying the project details for the registration. When you complete the following fields, choose **Next : Datasets >**
+    ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-approve.png)
+1. After a few moments, you should see the status page for the activity run update to show that it is now _extracting data_.
 
-    1. **Subscription:** Select a subscription in the tenant that will be used exclusively to filter the next four selections utilized to configure the data destination.
-        - **Resource Group:**  Select the resource group you created previously.
-        - **Destination Type:** Select Azure Storage Account as the destination type.
-        - **Storage Account:** Select the Storage Account you created previously.
-        - **Storage Account Uri:** Select the option including **.blob.core.windows.net**.
-    2. **Application ID:** Select from the Azure AD apps in the tenant or create a new one.
-    3. **Description:** Enter **My first MGDC app**.
-    4. **Publish Type:** Choose **Single-Tenant**.
+   <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
 
-    ![A screenshot that shows the project details on the wizard.](../concepts/images/data-connect-register-app-2.png)
+1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
-### Select dataset and details for the application
+# [PowerShell](#tab/PowerShell)
 
-Specify the datasets that the app registration needs to query. To learn more about datasets, see [Datasets, regions, and sinks supported by Microsoft Graph Data Connect](/graph/data-connect-datasets). Click the **Next : Datasets >** button in bottom of the page.
+1. Open Windows PowerShell.
+1. Ensure that your PowerShell session has enabled remotely signed scripts.
 
-4. From the **Dataset** dropdown, select **BasicDataSet_v0.Message_v1**, and in the **Columns** dropdown, choose **All**. In the new row, select **BasicDataSet_v1** from the **Dataset** dropdown, and in the **Columns** dropdown, choose **All**.
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    ```
 
-    ![A screenshot that shows the dataset catalog on the wizard.](../concepts/images/data-connect-register-app-3.png)
+1. Connect to Exchange Online.
 
-### Review and Create
+    1. Obtain a sign in credential by executing the following PowerShell. Sign in using a different user than one that created and started the Azure Data Factory pipeline, who has the **Global Administrator** role applied, who is a member of the group that has rights to approve requests to data in Microsoft 365, and has multi-factor authentication enabled.
 
-5. When completed, choose **Review + Create**, and then choose **Create**.
+        ```powershell
+        $UserCredential = Get-Credential
+        ```
 
-    ![A screenshot that shows the summary page for the Review + Create step.](../concepts/images/data-connect-register-app-4.png)
+    1. Create a new Exchange Online PowerShell session and load (import) it.
 
-6. If all required fields are provided, the app registration appears in the landing page.
+        ```powershell
+        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+        Import-PSSession $Session -DisableNameChecking
+        ```
 
-    ![A screenshot that shows the registered app on the landing page.](../concepts/images/data-connect-register-app-6.png)
+        > [!IMPORTANT]
+        > After you're finished with this session, be sure you disconnect from the session using the PowerShell command `Remove-PSSession $Session`. Exchange Online only allows for three open remote PowerShell sessions to protect against denial-of-service (DoS) attacks. If you simply close the PowerShell window, it will leave the connection open.
 
-## Approve your application for Microsoft Graph Data Connect
+1. Get a list of all pending data requests from Microsoft Graph Data Connect by executing the following PowerShell.
 
-1. Open a new browser window in private mode, go to your [Microsoft 365 admin center](https://admin.microsoft.com/), and sign in with your "admin" user.
+    ```powershell
+    Get-ElevatedAccessRequest | where {$_.RequestStatus -eq 'Pending'} | select RequestorUPN, Service, Identity, RequestedAccess | fl
+    ```
 
- > [!NOTE]
- > If you are not in your admin account, there will be an error with approval. You cannot self-approve your apps.
+    - Examine the list of data access requests returned. In the following image, you can notice two pending requests.
 
-2. On the left navigation pane, select **Settings > Org settings**. You might have to choose **Show all** before you can view **Settings**.
+        ![A screenshot showing a list of pending requests formatted as a list in a PowerShell console.](../concepts/images/data-connect-ps-pending-requests.png)
 
-3. Switch to the **Security & privacy** tab and select the **Microsoft Graph Data Connect applications**.
+1. Approve a data access returned in the previous step by copying the Identity GUID of a request by executing the following PowerShell.
 
-    ![A screenshot that shows the Security and privacy page in the Microsoft 365 admin center.](../concepts/images/data-connect-app-register-7.png)
+    > [!NOTE]
+    > Replace the GUID in the following code snippet with the GUID from the results of the previous step.
 
-4. In the Microsoft Graph Data Connect applications portal, you should see the application you registered previously with Data Connect in the application summary table with the status **Pre-consent**.
+    ```powershell
+    Approve-ElevatedAccessRequest -RequestId fa041379-0000-0000-0000-7cd5691484bd -Comment 'approval request granted'
+    ```
 
-    ![A screenshot that shows the pre-consented application in the landing page of the Microsoft Graph Data Connect applications portal.](../concepts/images/data-connect-app-register-8.png)
+1. After a few moments, you should see the status page for the activity run update to show that it is now _extracting data_.
 
-5. Choose your application to open the application details view. Proceed through the wizard by choosing **Next** twice to review the two datasets.
+   <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
 
-6. On the final step, choose **Approve** to consent to your registered application accessing the specified data.
+1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
-    ![A screenshot that shows the application details view with the Approve button highlighted.](../concepts/images/data-connect-app-register-9.png)
+---
 
-7. After you choose **Approve**, the application summary table reloads with your app listed with the status **Approved**.
+## Verify extracted data from Microsoft 365 to Azure Storage Blob
 
-    ![A screenshot that shows the approved application in the landing page of the Microsoft Graph Data Connect applications portal.](../concepts/images/data-connect-app-register-10.png)
+1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
+
+1. Sign in using an account with **Global Administrator** rights to your Azure and Microsoft 365 tenants.
+
+1. In the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
+
+1. On the sidebar navigation menu, select **Storage browser**, select **Blob containers**, and then select the **container** created previously in this tutorial that you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container now.
