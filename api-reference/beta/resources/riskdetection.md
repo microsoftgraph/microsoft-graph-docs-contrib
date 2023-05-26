@@ -74,6 +74,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 | investigationsThreatIntelligenceSigninLinked | Identifies activity that is unusual with known attack patterns based on threat intelligence |
 | maliciousIPAddressValidCredentialsBlockedIP | Indicates that sign-in was made with valid credentials from a malicious IP address. |
 | anomalousUserActivity | Indicates a suspicious pattern of behavior for a user that is anomalous to past behavioral patterns |
+| userReportedSuspiciousActivity | Indicates that a user reported a voice or phone app notification MFA prompt as suspicious, signalling that the user's credentials are potentially compromised. |
 
 
 ## JSON representation
