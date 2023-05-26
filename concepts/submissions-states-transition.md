@@ -9,20 +9,20 @@ doc_type: conceptualPageType
 
 # States, transitions, and limitations for submissions in Microsoft Graph
 
-Submissions are an important part in the interaction between teachers and students' actions. This article describes the changes in the submission states during the process flow and which education APIs in Microsoft Graph are involved.
+Submissions are an important part in the interaction between teachers' and students' actions. This article describes the changes in the submission states during the process flow and which education APIs in Microsoft Graph are involved.
 
 ## Submission states and transitions
 
-A submission represents the resources that an individual (or group) turns in for an assignment. Submissions are owned by an assignment and are automatically created when an assignment is published.
+A submission represents the resources that an individual or group turns in for an assignment. Submissions are owned by an assignment and are automatically created when an assignment is published.
 
-The status is a read-only property in the submission and changes based on the actions of students and teachers.
+The status is a read-only property in the submission.  Status changes based on the actions of students and teachers.
 
 | State | Description | REST API call |
 |:--|:--|:--|
 | Working |	Initial state after the submission is created. | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
-| Submitted	| It happens after the student turned in the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
-| Returned | After the teacher returned the assignment back to the student. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
-| Reassigned | After the teacher returned the assignment  to the student for revision. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
+| Submitted	| State after student turns in the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
+| Returned | State after the teacher has returned an assignment back to the student. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
+| Reassigned | State after the teacher has returned the assignment  to the student for revision. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
 
 The following diagram shows the state transition flow.
 
@@ -65,7 +65,7 @@ In this case, all the calls are asynchronous, which means that the operation sta
 
 The following limits apply to all API calls:
 
-* The maximum number of submissions resources are 10 for the student.
+* The maximum number of submission resources are 10 for the student.
 * The maximum size allowed for resources is 500 MB.
 * Throttling limits apply; for details, see [Microsoft Graph throttling guidance](/graph/throttling).
 
