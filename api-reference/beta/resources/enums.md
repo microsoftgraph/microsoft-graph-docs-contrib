@@ -317,6 +317,8 @@ Namespace: microsoft.graph
 |:---|
 |user|
 |group|
+|application|
+|unknownFutureValue|
 
 ### accessPackageFilterByCurrentUserOptions values
 
