@@ -108,6 +108,7 @@ Content-type: application/json
       "consumedUnits": 20,
       "prepaidUnits": {
         "enabled": 20,
+        "lockedOut": 0,
         "suspended": 0,
         "warning": 0
       },
