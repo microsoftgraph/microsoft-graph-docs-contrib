@@ -16,14 +16,14 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. Select a pending **Data Access Request**.
 
-1. In the **Data Access Request** call out, select the **Approve** button.
+1. In the **Data Access Request** dialog, select the **Approve** button.
 
     ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-approve.png)
-1. After a few moments, you should see the status page for the activity run update to show that it is now _extracting data_.
+1. After a moment, you should see the status page for the activity update showing that it is now _extracting data_.
 
    <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
 
-1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
+1. The process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
 # [PowerShell](#tab/PowerShell)
 
@@ -36,7 +36,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. Connect to Exchange Online.
 
-    1. Obtain a sign in credential by executing the following PowerShell. Sign in using a different user than one that created and started the Azure Data Factory pipeline, who has the **Global Administrator** role applied, who is a member of the group that has rights to approve requests to data in Microsoft 365, and has multi-factor authentication enabled.
+    1. Obtain a sign in credential by executing the following PowerShell. Sign in using a different user, other than the user that created and started the Azure Data Factory pipeline, who has the **Global Administrator** role applied, who is a member of the group that has rights to approve requests to data in Microsoft 365, and who has multi-factor authentication enabled.
 
         ```powershell
         $UserCredential = Get-Credential
@@ -50,7 +50,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
         ```
 
         > [!IMPORTANT]
-        > After you're finished with this session, be sure you disconnect from the session using the PowerShell command `Remove-PSSession $Session`. Exchange Online only allows for three open remote PowerShell sessions to protect against denial-of-service (DoS) attacks. If you simply close the PowerShell window, it will leave the connection open.
+        > After you're finished with this session, be sure you disconnect from the session using the PowerShell command `Remove-PSSession $Session`. Exchange Online only allows for three concurrent remote PowerShell sessions to protect against denial-of-service (DoS) attacks. If you simply close the PowerShell window, it will leave the connection open.
 
 1. Get a list of all pending data requests from Microsoft Graph Data Connect by executing the following PowerShell.
 
@@ -58,11 +58,11 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
     Get-ElevatedAccessRequest | where {$_.RequestStatus -eq 'Pending'} | select RequestorUPN, Service, Identity, RequestedAccess | fl
     ```
 
-    - Examine the list of data access requests returned. In the following image, you can notice two pending requests.
+    - Examine the list of data access requests returned. In the following image, you can see two pending requests.
 
         ![A screenshot showing a list of pending requests formatted as a list in a PowerShell console.](../concepts/images/data-connect-ps-pending-requests.png)
 
-1. Approve a data access returned in the previous step by copying the Identity GUID of a request by executing the following PowerShell.
+1. Approve a data access returned in the previous step by copying the Identity GUID of a request and executing the following PowerShell command.
 
     > [!NOTE]
     > Replace the GUID in the following code snippet with the GUID from the results of the previous step.
@@ -71,7 +71,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
     Approve-ElevatedAccessRequest -RequestId fa041379-0000-0000-0000-7cd5691484bd -Comment 'approval request granted'
     ```
 
-1. After a few moments, you should see the status page for the activity run update to show that it is now _extracting data_.
+1. After a moment, you should see the status page for the activity update to show that it is now _extracting data_.
 
    <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
 
@@ -87,4 +87,4 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. In the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
 
-1. On the sidebar navigation menu, select **Storage browser**, select **Blob containers**, and then select the **container** created previously in this tutorial that you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container now.
+1. On the sidebar navigation menu, select **Storage browser**, select **Blob containers**, and then select the **container** created in this tutorial by which you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container.
