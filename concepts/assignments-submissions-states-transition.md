@@ -1,6 +1,6 @@
 ---
 title: "Teacher and student actions for assignments and submissions"
-description: "Learn about on how to get the assignments and related submission for Teachers and Students with state transition rules"
+description: "Learn about on how to get the assignments and related submissions for Teachers and Students with state transition rules."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
 ms.prod: "education"
@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 This article describes student and teacher roles for the assignment and submission state transition and related transition rules.
 
-## Get all the assignments and their corresponding submission belonging to the student
+## Get all the assignments and their corresponding submissions belonging to the student
 
 Use the following call for the student action:
 
@@ -27,20 +27,20 @@ Code sample for student account with [Education assignment using Microsoft Graph
 Use the following call for the teacher action:
 
 `me/assignments` or `users/id/assignments` to get the assignments belonging to a teacher.
-Then, for each of the assignments use `classses/id/assignments/id/submissions` to get the submission status (one assignment will contain n number of submissions, where n is the number of students. It can be a single student, a group of students or the entire class).
+Then, for each of the assignments use `classses/id/assignments/id/submissions` to get submissions status (one assignment will contain n number of submissions, where n is the number of students. It can be a single student, a group of students or the entire class).
 
-Code sample for teacher account with [Education assignment using Microsoft Graph SDK](https://github.com/microsoft/edu-assignments-graph-sdk/blob/main/samples/csharp/MicrosoftEduGraphSamples/Workflows/AssignmentWorkflow.cs#L62)
+See the the code sample for a teacher account with [Education assignment using Microsoft Graph SDK](https://github.com/microsoft/edu-assignments-graph-sdk/blob/main/samples/csharp/MicrosoftEduGraphSamples/Workflows/AssignmentWorkflow.cs#L62).
 
-For Student, an assignment is actionable if the corresponding submission is in "Working", "Returned" or "Reassigned" state. For Teacher, an assignment is actionable if any of the submissions of that assignment are in "Submitted" state.
+For a student, an assignment is actionable if the corresponding submission is in *Working*, *Returned* or *Reassigned* state. For a teacher, an assignment is actionable if any of the submissions of that assignment are in *Submitted* state.
 
 ## State transition rules
 
-The following state transition rules are applicable for student and teacher:
+The following state transition rules are applicable for both student and teacher:
 
-* Student "turns in", and Teacher "returns" or "returns for revision".
-* Teacher returns submissions.
-* Student can "turn in" the assignment only when the submission is in "working" or "reassigned" state.
-* "Return for Revision" action makes the submission state as "reassigned".
+* A student *turns in*, and teacher *returns* or *returns for revision*.
+* A teacher returns submissions.
+* A student can *turn in* the assignment only when the submission is in *working* or *reassigned* state.
+* The *Return for Revision* action makes the submission state as *reassigned*.
 
 ## See also
 
