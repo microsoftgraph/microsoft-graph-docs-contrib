@@ -54,7 +54,6 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -95,6 +94,7 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
 ### Response
 
 The following response object shows a default cross-tenant policy inherited from Azure AD, as identified by **isServiceDefault** set to `true`.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -190,6 +190,29 @@ Content-Type: application/json
     }
   },
   "b2bDirectConnectInbound":
+  {
+    "usersAndGroups":
+    {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllUsers",
+          "targetType": "user"
+        }
+      ]
+    },
+    "applications":
+    {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllApplications",
+          "targetType": "application"
+        }
+      ]
+    }
+  },
+  "tenantRestrictions":
   {
     "usersAndGroups":
     {
