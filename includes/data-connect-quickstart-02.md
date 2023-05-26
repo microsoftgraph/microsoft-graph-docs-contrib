@@ -35,7 +35,7 @@ In this step, you will setup your Microsoft 365 tenant to enable usage of Micros
 
    - **Owners**: Select **Owners** in the left pane and add at least one owner for the group.
    - **Members**: Select **Members** and add the two users that you enabled the **Global administrator** role to this group.
-   - **Group email address**: Ender *consentrequestapprovers*.
+   - **Group email address**: Enter *consentrequestapprovers*.
 
     ![A screenshot showing a user creating the email address for the previously created group in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-cons-apprv-pref.png)
 
