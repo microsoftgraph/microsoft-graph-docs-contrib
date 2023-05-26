@@ -23,7 +23,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "crossTenantAccessPolicyTenantRestrictions",
               "ChangeType": "Addition",
-              "Description": "Added the [crossTenantAccessPolicyTenantRestrictions](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantAccessPolicyTenantRestrictions?view=graph-rest-beta) resource.",
+              "Description": "Added the **crossTenantAccessPolicyTenantRestrictions** resource.",
               "Target": "crossTenantAccessPolicyTenantRestrictions"
             },
             {
@@ -31,7 +31,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "devicesFilter",
               "ChangeType": "Addition",
-              "Description": "Added the [devicesFilter](https://learn.microsoft.com/en-us/graph/api/resources/devicesFilter?view=graph-rest-beta) resource.",
+              "Description": "Added the **devicesFilter** resource.",
               "Target": "devicesFilter"
             }
           ],
