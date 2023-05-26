@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [multiTen
 The following example creates a new multi-tenant organization.
 
 ### Request
-The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_multitenantorganization_from_"
@@ -82,8 +82,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
