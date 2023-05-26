@@ -117,7 +117,7 @@ Content-Type: application/json
 
 To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{team-id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
->**Note:** Change notifications for private & shared channels in delegated context are only supported in beta. This is not currently available for v1.0. In this case, a subscriber to this resource in delegated context will receive notifications only for standard channels under a particular team, not for private & shared channels.
+>**Note:** Change notifications for private and shared channels in delegated context are only supported in beta. This is not currently available in v1.0. When you call the v1.0 endpoint, a subscriber to this resource in delegated context will receive notifications only for standard channels under a particular team, not for private and shared channels.
 
 
 ### Permissions
