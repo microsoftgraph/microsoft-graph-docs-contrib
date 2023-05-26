@@ -1,7 +1,6 @@
 ---
 title: "amazonResourceEvidence resource type"
-description: "Represents an amazon resources that is reported as part of the security detection alert."
-ms.date: 05/16/2023
+description: "Represents an Amazon resource that is reported as part of the security detection alert."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,46 +11,45 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents an amazon resources that is reported as part of the security detection alert.
+Represents an Amazon resource that is reported as part of the security detection alert.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|amazonResourceId|String|The amazon resource identifier(ARN) for the cloud resource.|
-|amazonAccountId|String|The amazon account identifier.|
+|amazonAccountId|String|The unique identifier for the Amazon account.|
+|amazonResourceId|String|The Amazon resource identifier (ARN) for the cloud resource.|
 |resourceName|String|The name of the resource.|
 |resourceType|String|The type of the resource.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.AmazonResourceEvidence"
+  "@odata.type": "microsoft.graph.security.amazonResourceEvidence"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.AmazonResourceEvidence",
+  "@odata.type": "#microsoft.graph.security.amazonResourceEvidence",
+  "amazonAccountId": "String",
+  "amazonResourceId": "String",
   "createdDateTime": "String (timestamp)",
-  "verdict": "String",
   "remediationStatus": "String",
   "remediationStatusDetails": "String",
-  "roles": [
-    "String"
-  ],
-  "tags": [
-    "String"
-  ],
-  "type": "String",
-  "amazonResourceId": "String",
-  "amazonAccountId": "String",
-  "resourceType": "String",
+  "resourceId": "String",
   "resourceName": "String",
-  "resourceId": "String"
+  "resourceType": "String",
+  "roles": ["String"],
+  "tags": ["String"],
+  "type": "String",
+  "verdict": "String"
 }
 ```
