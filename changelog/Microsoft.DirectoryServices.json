@@ -2,6 +2,48 @@
   "changelog": [
     {
       "ChangeList": [
+            {
+              "Id": "f1a2366e-c693-4a6d-8783-370f38cd9660",
+              "ApiChange": "Property",
+              "ChangedApiName": "tenantRestrictions",
+              "ChangeType": "Addition",
+              "Description": "Added the **tenantRestrictions** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantAccessPolicyConfigurationDefault?view=graph-rest-beta) resource.",
+              "Target": "crossTenantAccessPolicyConfigurationDefault"
+            },
+            {
+              "Id": "f1a2366e-c693-4a6d-8783-370f38cd9660",
+              "ApiChange": "Property",
+              "ChangedApiName": "tenantRestrictions",
+              "ChangeType": "Addition",
+              "Description": "Added the **tenantRestrictions** property to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantAccessPolicyConfigurationPartner?view=graph-rest-beta) resource.",
+              "Target": "crossTenantAccessPolicyConfigurationPartner"
+            },
+            {
+              "Id": "f1a2366e-c693-4a6d-8783-370f38cd9660",
+              "ApiChange": "Resource",
+              "ChangedApiName": "crossTenantAccessPolicyTenantRestrictions",
+              "ChangeType": "Addition",
+              "Description": "Added the [crossTenantAccessPolicyTenantRestrictions](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantAccessPolicyTenantRestrictions?view=graph-rest-beta) resource.",
+              "Target": "crossTenantAccessPolicyTenantRestrictions"
+            },
+            {
+              "Id": "f1a2366e-c693-4a6d-8783-370f38cd9660",
+              "ApiChange": "Resource",
+              "ChangedApiName": "devicesFilter",
+              "ChangeType": "Addition",
+              "Description": "Added the [devicesFilter](https://learn.microsoft.com/en-us/graph/api/resources/devicesFilter?view=graph-rest-beta) resource.",
+              "Target": "devicesFilter"
+            }
+          ],
+          "Id": "f1a2366e-c693-4a6d-8783-370f38cd9660",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-05-25T00:00:00.0166075Z",
+          "WorkloadArea": "Identity and access",
+          "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "47c39c44-62a7-4e82-964d-6044de76f128",
           "ApiChange": "Enum type",

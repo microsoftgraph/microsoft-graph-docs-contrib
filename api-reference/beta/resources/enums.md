@@ -341,6 +341,7 @@ Namespace: microsoft.graph
 | user   |
 | group  |
 
+
 ### accessPackageFilterByCurrentUserOptions values
 
 | Member             |
