@@ -53,7 +53,7 @@ If successful, this method returns a `201 Created` response code and a Location 
 
 #### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -102,7 +102,7 @@ content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- 
 {
@@ -116,17 +116,17 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### Example 2: Adding a single member to a Microsoft Teams chat, sharing no chat history
+### Example 2: Add a single member to a Microsoft Teams chat, sharing no chat history
 
 #### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime",
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime_2",
   "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
 } -->
 ```msgraph-interactive
@@ -168,13 +168,13 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- 
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime"
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime_2"
 }
 -->
 ```http
@@ -182,17 +182,17 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### Example 3: Adding a single member to a Microsoft Teams chat, sharing the whole history of the chat
+### Example 3: Add a single member to a Microsoft Teams chat, sharing the whole history of the chat
 
 #### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime",
+  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime_3",
   "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
 } -->
 ```msgraph-interactive
@@ -235,13 +235,13 @@ content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- 
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime"
+  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime_3"
 }
 -->
 ```http
@@ -253,13 +253,13 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member_upn",
+  "name": "create_conversation_member_upn_5",
   "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
 } -->
 ```msgraph-interactive
@@ -302,13 +302,98 @@ content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- 
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_upn"
+  "name": "create_conversation_member_upn_5"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
+```
+
+### Example 5: Add an in-tenant guest user to a chat, sharing no chat history
+
+#### Request
+
+The following is an example of the request.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime_5",
+  "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
+} -->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g",
+    "roles": ["guest"]
+}
+```
+
+---
+
+#### Response
+
+The following is an example of the response.
+
+<!-- 
+{
+ "blockType": "response",
+  "truncated": true,
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime_5"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
+```
+
+### Example 6: Add a out-of-tenant external user to a chat, sharing no chat history
+
+#### Request
+
+The following is an example of the request.
+
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime_6",
+  "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
+} -->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/82af01c5-f7cc-4a2e-a728-3a5df21afd9d",
+    "roles": ["owner"],
+    "tenantId": "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1"
+}
+```
+
+---
+
+#### Response
+
+The following is an example of the response.
+
+<!-- 
+{
+ "blockType": "response",
+  "truncated": true,
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime_6"
 }
 -->
 ```http
