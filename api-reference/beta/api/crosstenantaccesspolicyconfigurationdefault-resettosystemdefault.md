@@ -54,7 +54,6 @@ If successful, this action returns a `204 No Content` response code. To confirm 
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
