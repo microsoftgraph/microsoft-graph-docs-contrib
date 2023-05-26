@@ -15177,6 +15177,13 @@ items:
             items:
             - name: List
               href: api/relyingpartydetailedsummary-list.md
+        - name: Application credential activity
+          href: resources/appcredentialsigninactivity.md
+          items:
+          - name: List
+            href: api/reportroot-list-appcredentialsigninactivities.md
+          - name: Get
+            href: api/appcredentialsigninactivity-get.md
         - name: Application sign-in
           items:
           - name: Sign-in summary
@@ -15232,6 +15239,13 @@ items:
               href: api/authenticationmethodsroot-list-userregistrationdetails.md
             - name: Get
               href: api/userregistrationdetails-get.md
+        - name: Service principal activity
+          href: resources/serviceprincipalsigninactivity.md
+          items:
+          - name: List
+            href: api/reportroot-list-serviceprincipalsigninactivities.md
+          - name: Get
+            href: api/serviceprincipalsigninactivity-get.md
       - name: Microsoft 365 usage reports
         items:
         - name: Overview
@@ -17693,6 +17707,8 @@ items:
         - name: Time off request
           href: resources/timeoffrequest.md
           items:
+          - name: List
+            href: api/timeoffrequest-list.md
           - name: Get
             href: api/timeoffrequest-get.md
           - name: Delete
