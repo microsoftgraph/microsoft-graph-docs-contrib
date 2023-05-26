@@ -53,13 +53,13 @@ The caller must use the [GET assignment](/graph/api/educationassignment-get) ope
 | Inactive | Activated | Assigned |
 
 > [!NOTE]
-> Any action and state transition not listed in the table is not allowed.
+> Only actions and state transitions listed in the table are allowed.
 
 ### Sync vs. async operations over assignments API calls
 
-The following table mentions the API calls that affect the assignment state and the operation type.
+The following table lists the API calls that affect the assignment state and operation type.
 
-Synchronous operations are performed one at a time and only when one operation is completed can the following operation start, and the result is returned until the last operation is completed. With asynchronous operations, the operation starts and another operation can run before the previous one finishes. The asynchronous operation performs some background activity, and the caller must be polling to get the result.
+Synchronous operations are performed one at a time, and only after one operation is completed can the following operation start. The result is not returned until the last operation is completed. With asynchronous operations, the operation starts and another operation can run before the previous one finishes. The asynchronous operation performs some background activity, and the caller must be polling to get the result.
 
 | API | Sync or async | Mechanism to get latest state |
 |:--|:--|:--|
@@ -74,7 +74,7 @@ Synchronous operations are performed one at a time and only when one operation i
 
 The following limits apply to all API calls:
 
-* The maximum number of assignments resources are 10 for the teacher.
+* The maximum number of assignment resources are 10 for the teacher.
 * The maximum size allowed for resources is 500 MB.
 * Throttling limits apply; for details, see [Microsoft Graph throttling guidance](/graph/throttling).
 
