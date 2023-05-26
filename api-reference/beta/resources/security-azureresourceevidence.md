@@ -1,7 +1,6 @@
 ---
 title: "azureResourceEvidence resource type"
-description: "Represents Azure Resource like VM, Storage, KeyVault etc."
-ms.date: 05/16/2023
+description: "Represents an Azure resource such as a VM, Storage, or KeyVault."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -14,43 +13,42 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Azure Resource like VM, Storage, KeyVault etc.
+Represents an Azure resource such as a VM, Storage, or KeyVault.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|resourceId|String|The azure resource id of the resource.|
+|resourceId|String|The unique identifier for the Azure resource.|
 |resourceName|String|The name of the resource.|
 |resourceType|String|The type of the resource.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.AzureResourceEvidence"
+  "@odata.type": "microsoft.graph.security.azureResourceEvidence"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.AzureResourceEvidence",
+  "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
   "createdDateTime": "String (timestamp)",
-  "verdict": "String",
   "remediationStatus": "String",
   "remediationStatusDetails": "String",
-  "roles": [
-    "String"
-  ],
-  "tags": [
-    "String"
-  ],
-  "type": "String",
-  "resourceType": "String",
+  "resourceId": "String",
   "resourceName": "String",
-  "resourceId": "String"
+  "resourceType": "String",
+  "roles": ["String"],
+  "tags": ["String"],
+  "type": "String",
+  "verdict": "String"
 }
 ```
