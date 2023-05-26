@@ -281,6 +281,9 @@ items:
           href: /graph/toolkit/customize-components/localization?context=graph/api/1.0
         - name: Right-to-left support
           href: /graph/toolkit/customize-components/right-to-left?context=graph/api/1.0
+  - name: Configure Connected Services
+    displayName: Configure Connected Services in Visual Studio
+    href: office-365-connected-services.md
   - name: Resources
     items:
     - name: Best practices
@@ -8402,6 +8405,8 @@ items:
         - name: Time off request
           href: resources/timeoffrequest.md
           items:
+          - name: List
+            href: api/timeoffrequest-list.md
           - name: Get
             href: api/timeoffrequest-get.md
           - name: Delete
