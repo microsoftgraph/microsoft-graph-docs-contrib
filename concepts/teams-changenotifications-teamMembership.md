@@ -106,9 +106,9 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to membership changes in all private & shared channels of a particular team
+## Subscribe to membership changes in all private and shared channels of a particular team
 
-To get change notifications for membership changes in all the private & shared channels in a particular team, subscribe to `/teams/{team-id}/channels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in all the private and shared channels in a particular team, subscribe to `/teams/{team-id}/channels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 >**Note:** This resource doesn't support delegated context in v1.0.
 
