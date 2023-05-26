@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [multiTenantOrganization](../resources/multitenantorganization.md) object.
+Create a new [multiTenantOrganization](../resources/multitenantorganization.md) object. By default, the creator tenant becomes an owner tenant upon successful creation. Only owner tenants can manage an multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ The signed-in user must also be assigned the following minimum [directory role](
 }
 -->
 ``` http
-PUT ** Collection URI for Microsoft.DirectoryServices.multiTenantOrganization not found
+PUT /tenantRelationships/multiTenantOrganization
 ```
 
 ## Request headers
@@ -48,13 +48,10 @@ In the request body, supply a JSON representation of the [multiTenantOrganizatio
 
 You can specify the following properties when creating a **multiTenantOrganization**.
 
-**TODO: Remove properties that don't apply**
-
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Optional.|
-|description|String|**TODO: Add Description** Optional.|
+|displayName|String|Display name of the multi-tenant organization. Required.|
+|description|String|Description of the multi-tenant organization. Optional.|
 
 
 
@@ -64,6 +61,8 @@ If successful, this method returns a `201 Created` response code and a [multiTen
 
 ## Examples
 
+The following example creates a new multi-tenant organization.
+
 ### Request
 The following is an example of a request.
 <!-- {
@@ -72,13 +71,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta** Collection URI for Microsoft.DirectoryServices.multiTenantOrganization not found
+PUT https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.multiTenantOrganization",
-  "displayName": "String",
-  "description": "String"
+  "displayName": "Contoso organization",
+  "description": "Multi-tenant organization between Contoso and Fabrikam"
 }
 ```
 
@@ -97,10 +95,11 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.multiTenantOrganization",
-  "createdDateTime": "String (timestamp)",
-  "displayName": "String",
-  "description": "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/$entity",
+    "id": "6d8b39e5-039a-4034-bf3a-e0b4f8cd60b6",
+    "createdDateTime": "2023-05-26T22:05:23Z",
+    "displayName": "Contoso organization",
+    "description": "Multi-tenant organization between Contoso and Fabrikam"
 }
 ```
 

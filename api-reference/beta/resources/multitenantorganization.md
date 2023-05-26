@@ -1,6 +1,6 @@
 ---
 title: "multiTenantOrganization resource type"
-description: "**TODO: Add Description**"
+description: "An object that represents an organization with more than one instance of Azure Active Directory (Azure AD)."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+An object that represents an organization with more than one instance of Azure Active Directory (Azure AD). A multi-tenant organization enables multiple tenants to collaborate as a single entity.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,7 +27,7 @@ Namespace: microsoft.graph
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Date when multi-tenant organization was created. Read-only.|
 |description|String|Description of the multi-tenant organization.|
-|displayName|String|Display name of the multi-tenant organization. Required.|
+|displayName|String|Display name of the multi-tenant organization.|
 
 ## Relationships
 |Relationship|Type|Description|

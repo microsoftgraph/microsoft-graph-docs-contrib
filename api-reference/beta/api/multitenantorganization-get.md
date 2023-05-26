@@ -41,7 +41,7 @@ GET /tenantRelationships/multiTenantOrganization
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -57,8 +57,10 @@ If successful, this method returns a `200 OK` response code and a [multiTenantOr
 
 ## Examples
 
+The following example gets multi-tenant organization information about the current tenant.
+
 ### Request
-The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_multitenantorganization"
@@ -70,8 +72,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,12 +84,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.multiTenantOrganization",
-    "createdDateTime": "String (timestamp)",
-    "displayName": "String",
-    "description": "String"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/$entity",
+    "id": "6d8b39e5-039a-4034-bf3a-e0b4f8cd60b6",
+    "createdDateTime": "2023-05-26T22:05:23Z",
+    "displayName": "Contoso organization",
+    "description": "Multi-tenant organization between Contoso and Fabrikam"
 }
 ```
 

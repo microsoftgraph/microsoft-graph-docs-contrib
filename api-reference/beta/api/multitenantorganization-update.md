@@ -47,13 +47,10 @@ PATCH /tenantRelationships/multiTenantOrganization
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
-
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Optional.|
-|description|String|**TODO: Add Description** Optional.|
+|displayName|String|Display name of the multi-tenant organization. Optional.|
+|description|String|Description of the multi-tenant organization. Optional.|
 
 
 
@@ -63,8 +60,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
+The following example updates the description and display name for a multi-tenant organization.
+
 ### Request
-The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_multitenantorganization"
@@ -75,16 +74,14 @@ PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganizati
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.multiTenantOrganization",
-  "displayName": "String",
-  "description": "String"
+  "displayName": "Contoso organization",
+  "description": "Multi-tenant organization between Contoso and Fabrikam"
 }
 ```
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
