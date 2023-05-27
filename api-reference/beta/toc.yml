@@ -13656,14 +13656,6 @@ items:
               href: api/multitenantorganization-get.md
             - name: Update
               href: api/multitenantorganization-update.md
-          - name: Join request
-            items:
-            - name: Join request
-              href: resources/multitenantorganizationjoinrequestrecord.md
-            - name: Get
-              href: api/multitenantorganizationjoinrequestrecord-get.md
-            - name: Update
-              href: api/multitenantorganizationjoinrequestrecord-update.md
           - name: Tenant
             items:
             - name: Tenant
@@ -13678,6 +13670,14 @@ items:
               href: api/multitenantorganizationmember-update.md
             - name: Delete
               href: api/multitenantorganization-delete-tenants.md
+          - name: Join request
+            items:
+            - name: Join request
+              href: resources/multitenantorganizationjoinrequestrecord.md
+            - name: Get
+              href: api/multitenantorganizationjoinrequestrecord-get.md
+            - name: Update
+              href: api/multitenantorganizationjoinrequestrecord-update.md
           - name: Partner configuration template
             items:
             - name: Partner configuration template
