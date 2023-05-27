@@ -28,6 +28,7 @@ An object that represents an organization with more than one instance of Azure A
 |createdDateTime|DateTimeOffset|Date when multi-tenant organization was created. Read-only.|
 |description|String|Description of the multi-tenant organization.|
 |displayName|String|Display name of the multi-tenant organization.|
+|id|String|ID of the multi-tenant organization. Automatically generated when multi-tenant organization is created. Read-only|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -47,6 +48,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.multiTenantOrganization",
+  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "description": "String"
