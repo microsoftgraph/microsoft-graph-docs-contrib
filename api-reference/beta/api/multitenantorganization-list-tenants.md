@@ -41,7 +41,7 @@ GET /tenantRelationships/multiTenantOrganization/tenants
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -57,8 +57,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+The following example lists the tenants and their properties in the multi-tenant organization.
+
 ### Request
-The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_multitenantorganizationmember"
@@ -70,8 +72,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,21 +84,39 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.multiTenantOrganizationMember",
-      "tenantId": "dd35cd3e-161e-5afd-d9d1-b2c106c16c3e",
-      "displayName": "String",
-      "addedDateTime": "String (timestamp)",
-      "joinedDateTime": "String (timestamp)",
-      "addedByTenantId": "String",
-      "role": "String",
-      "state": "String",
-      "transitionDetails": {
-        "@odata.type": "microsoft.graph.multiTenantOrganizationMemberTransitionDetails"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/tenants",
+    "value": [
+        {
+            "tenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
+            "displayName": "Contoso",
+            "addedDateTime": "2023-05-26T22:05:23Z",
+            "joinedDateTime": null,
+            "addedByTenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
+            "role": "owner",
+            "state": "active",
+            "transitionDetails": null
+        },
+        {
+            "tenantId": "4a12efe6-aa14-4d03-8dff-88fc89e2e2ad",
+            "displayName": "Fabrikam",
+            "addedDateTime": "2023-05-27T19:24:29Z",
+            "joinedDateTime": null,
+            "addedByTenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
+            "role": "member",
+            "state": "pending",
+            "transitionDetails": null
+        },
+        {
+            "tenantId": "5036a0a0-a7a4-4933-9086-5dd54535dd6e",
+            "displayName": "Woodgrove Bank",
+            "addedDateTime": "2023-05-27T20:41:56Z",
+            "joinedDateTime": null,
+            "addedByTenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
+            "role": "member",
+            "state": "pending",
+            "transitionDetails": null
+        }
+    ]
 }
 ```
 

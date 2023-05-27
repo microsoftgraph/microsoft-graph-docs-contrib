@@ -34,7 +34,7 @@ The signed-in user must also be assigned the following minimum [directory role](
 }
 -->
 ``` http
-PATCH /tenantRelationships/multiTenantOrganization/tenants/{id}
+PATCH /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 ```
 
 ## Request headers
@@ -47,19 +47,10 @@ PATCH /tenantRelationships/multiTenantOrganization/tenants/{id}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
-
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|String|**TODO: Add Description** Required.|
-|displayName|String|**TODO: Add Description** Optional.|
-|addedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|joinedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|addedByTenantId|String|**TODO: Add Description** Optional.|
-|role|multiTenantOrganizationMemberRole|**TODO: Add Description**. The possible values are: `owner`, `member`, `unknownFutureValue`. Optional.|
-|state|multiTenantOrganizationMemberState|**TODO: Add Description**. The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`. Optional.|
-|transitionDetails|[multiTenantOrganizationMemberTransitionDetails](../resources/multitenantorganizationmembertransitiondetails.md)|**TODO: Add Description** Optional.|
-
+|displayName|String|Display name of the tenant in the multi-tenant organization. Optional.|
+|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member`. Optional.|
 
 
 ## Response
@@ -68,36 +59,61 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
-The following is an example of a request.
+### Example 1: Update the display name of a tenant
+
+The following example updates the display name of a tenant in a multi-tenant organization.
+
+#### Request
+
 <!-- {
   "blockType": "request",
   "name": "update_multitenantorganizationmember"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenant/{id}
+PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenant/5036a0a0-a7a4-4933-9086-5dd54535dd6e
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.multiTenantOrganizationMember",
-  "tenantId": "dd35cd3e-161e-5afd-d9d1-b2c106c16c3e",
-  "displayName": "String",
-  "addedDateTime": "String (timestamp)",
-  "joinedDateTime": "String (timestamp)",
-  "addedByTenantId": "String",
-  "role": "String",
-  "state": "String",
-  "transitionDetails": {
-    "@odata.type": "microsoft.graph.multiTenantOrganizationMemberTransitionDetails"
-  }
+    "displayName": "Woodgrove Bank"
 }
 ```
 
 
-### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Change the role of a tenant
+
+The following example changes the role of a tenant in a multi-tenant organization from owner to member.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_multitenantorganizationmember_role"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenant/5036a0a0-a7a4-4933-9086-5dd54535dd6e
+Content-Type: application/json
+
+{
+    "role": "owner"
+}
+```
+
+
+#### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true

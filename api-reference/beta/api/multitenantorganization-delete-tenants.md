@@ -34,7 +34,7 @@ The signed-in user must also be assigned the following minimum [directory role](
 }
 -->
 ``` http
-DELETE /tenantRelationships/multiTenantOrganization/tenants/{id}
+DELETE /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 ```
 
 ## Request headers
@@ -51,21 +51,22 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
+The following example deletes a tenant from a multi-tenant organization.
+
 ### Request
-The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_multitenantorganizationmember"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenants/{id}
+DELETE https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenants/5036a0a0-a7a4-4933-9086-5dd54535dd6e
 ```
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,6 +1,6 @@
 ---
 title: "multiTenantOrganizationMember resource type"
-description: "**TODO: Add Description**"
+description: "An object that represents a tenant added to a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+An object that represents a tenant added to a multi-tenant organization.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,14 +27,14 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|addedByTenantId|String|Tenant ID of the tenant that added a tenant to the multi-tenant organization. Read-only.|
+|addedByTenantId|String|Tenant ID of the tenant that added the tenant to the multi-tenant organization. Read-only.|
 |addedDateTime|DateTimeOffset|Date and time when the tenant was added to the multi-tenant organization. Read-only.|
-|displayName|String|Display name of the multi-tenant organization. Read-only.|
+|displayName|String|Display name of the tenant added to the multi-tenant organization.|
 |joinedDateTime|DateTimeOffset|Date and time when the tenant joined the multi-tenant organization. Read-only.|
-|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member`, `unknownFutureValue`.|
-|state|multiTenantOrganizationMemberState|State of the tenant in the multi-tenant organization. The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`. Read-only.|
-|tenantId|String|Tenant ID of the tenant that is a member of the multi-tenant organization. Set at the time of creation of tenant. Required. Read-only.|
-|transitionDetails|[multiTenantOrganizationMemberTransitionDetails](../resources/multitenantorganizationmembertransitiondetails.md)|Complex type that provides the status of the pending updates to tenant state. Read-only.|
+|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member`.|
+|state|multiTenantOrganizationMemberState|State of the tenant in the multi-tenant organization. The possible values are: `pending`, `active`, `removed`. Read-only.|
+|tenantId|String|Tenant ID of the tenant added to the multi-tenant organization. Set at the time tenant is added.|
+|transitionDetails|[multiTenantOrganizationMemberTransitionDetails](../resources/multitenantorganizationmembertransitiondetails.md)|Object that provides the status of pending updates to the tenant state. Read-only.|
 
 ## Relationships
 None.

@@ -37,11 +37,11 @@ The signed-in user must also be assigned one of the following minimum [directory
 }
 -->
 ``` http
-GET /tenantRelationships/multiTenantOrganization/tenants/{id}
+GET /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -57,21 +57,22 @@ If successful, this method returns a `200 OK` response code and a [multiTenantOr
 
 ## Examples
 
+The following example gets a tenant and its properties in the multi-tenant organization.
+
 ### Request
-The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_multitenantorganizationmember"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenants/{id}
+GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenants/1fd6544e-e994-4de2-9f1b-787b51c7d325
 ```
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,19 +84,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.multiTenantOrganizationMember",
-    "tenantId": "dd35cd3e-161e-5afd-d9d1-b2c106c16c3e",
-    "displayName": "String",
-    "addedDateTime": "String (timestamp)",
-    "joinedDateTime": "String (timestamp)",
-    "addedByTenantId": "String",
-    "role": "String",
-    "state": "String",
-    "transitionDetails": {
-      "@odata.type": "microsoft.graph.multiTenantOrganizationMemberTransitionDetails"
-    }
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/tenants/$entity",
+    "tenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
+    "displayName": "Contoso",
+    "addedDateTime": "2023-05-26T22:05:23Z",
+    "joinedDateTime": null,
+    "addedByTenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
+    "role": "owner",
+    "state": "active",
+    "transitionDetails": null
 }
 ```
 
