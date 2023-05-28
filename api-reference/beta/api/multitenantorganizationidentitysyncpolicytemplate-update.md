@@ -1,6 +1,6 @@
 ---
 title: "Update multiTenantOrganizationIdentitySyncPolicyTemplate"
-description: "Update the properties of a multiTenantOrganizationIdentitySyncPolicyTemplate object."
+description: "Update the user synchronization policy settings of the multi-tenant organization template."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [multiTenantOrganizationIdentitySyncPolicyTemplate](../resources/multitenantorganizationidentitysyncpolicytemplate.md) object.
+Update the user synchronization policy settings of the multi-tenant organization template.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,11 +47,9 @@ PATCH /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentit
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
-
 |Property|Type|Description|
 |:---|:---|:---|
-|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|**TODO: Add Description** Optional.|
+|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines whether users can be synchronized from the partner tenant. `false` causes any current user synchronization from the source tenant to the target tenant to stop. This property has no impact on existing users who have already been synchronized.|
 
 
 
@@ -61,8 +59,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
+Update the user synchronization policy settings of the template. For more information, see [crossTenantIdentitySyncPolicyPartner resource type](crosstenantidentitysyncpolicypartner.md).
+
 ### Request
-The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_multitenantorganizationidentitysyncpolicytemplate"
@@ -73,17 +73,14 @@ PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/template
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.multiTenantOrganizationIdentitySyncPolicyTemplate",
-  "userSyncInbound": {
-    "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
-  }
+    "userSyncInbound": {
+        "isSyncAllowed": true
+    }
 }
 ```
 
-
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

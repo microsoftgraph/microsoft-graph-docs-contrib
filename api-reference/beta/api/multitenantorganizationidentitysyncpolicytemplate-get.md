@@ -1,6 +1,6 @@
 ---
 title: "Get multiTenantOrganizationIdentitySyncPolicyTemplate"
-description: "Read the properties and relationships of a multiTenantOrganizationIdentitySyncPolicyTemplate object."
+description: "Get the user synchronization policy settings of the multi-tenant organization template."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [multiTenantOrganizationIdentitySyncPolicyTemplate](../resources/multitenantorganizationidentitysyncpolicytemplate.md) object.
+Get the user synchronization policy settings of the multi-tenant organization template.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,8 +55,10 @@ If successful, this method returns a `200 OK` response code and a [multiTenantOr
 
 ## Examples
 
+The following example gets the user synchronization policy settings of the template.
+
 ### Request
-The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_multitenantorganizationidentitysyncpolicytemplate"
@@ -66,10 +68,11 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization
 ```
 
-
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
+The following example response shows the default user synchronization policy settings before it has been configured or after it has been reset.
+
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,12 +84,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.multiTenantOrganizationIdentitySyncPolicyTemplate",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization/$entity",
+    "id": "0e7aad84-cb46-4b8e-a881-522ef25939f1",
     "userSyncInbound": {
-      "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
+        "isSyncAllowed": null
     }
-  }
 }
 ```
 
+The following example response shows the user synchronization policy settings after they have been configured.
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization/$entity",
+    "id": "e1a11ff3-01f1-4c48-9784-b9d931571474",
+    "userSyncInbound": {
+        "isSyncAllowed": true
+    }
+}
+```
