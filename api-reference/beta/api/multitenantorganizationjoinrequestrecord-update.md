@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md) object.
+Update the properties of a [multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md) object. Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the tenant must join the multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,15 +47,9 @@ PATCH /tenantRelationships/multiTenantOrganization/joinRequest
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
-
 |Property|Type|Description|
 |:---|:---|:---|
-|addedByTenantId|String|**TODO: Add Description** Optional.|
-|memberState|multiTenantOrganizationMemberState|**TODO: Add Description**. The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`. Optional.|
-|role|multiTenantOrganizationMemberRole|**TODO: Add Description**. The possible values are: `owner`, `member`, `unknownFutureValue`. Optional.|
-|transitionDetails|[multiTenantOrganizationJoinRequestTransitionDetails](../resources/multitenantorganizationjoinrequesttransitiondetails.md)|**TODO: Add Description** Optional.|
-
+|addedByTenantId|String|Tenant ID of the tenant that added the current tenant to the multi-tenant organization. Required.|
 
 
 ## Response
@@ -64,8 +58,12 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
-The following is an example of a request.
+### Example 1: Request to join a multi-tenant organization
+
+The following example shows a request by the current tenant to join a multi-tenant organization. It can take a few minutes for the join to complete. If the join succeeds, the state of the tenant is changed to `active`.
+
+#### Request
+
 <!-- {
   "blockType": "request",
   "name": "update_multitenantorganizationjoinrequestrecord"
@@ -76,20 +74,45 @@ PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganizati
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.multiTenantOrganizationJoinRequestRecord",
-  "addedByTenantId": "String",
-  "memberState": "String",
-  "role": "String",
-  "transitionDetails": {
-    "@odata.type": "microsoft.graph.multiTenantOrganizationJoinRequestTransitionDetails"
-  }
+    "addedByTenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325"
 }
 ```
 
 
-### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Reset a failed join request
+
+The following example shows a request by the current tenant to reset a failed join request. To reset a failed join request, set `addedByTenantId` to `00000000-0000-0000-0000-000000000000`.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_multitenantorganizationjoinrequestrecord_joinfailed"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/joinRequest
+Content-Type: application/json
+
+{
+    "addedByTenantId": "00000000-0000-0000-0000-000000000000"
+}
+```
+
+
+#### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true

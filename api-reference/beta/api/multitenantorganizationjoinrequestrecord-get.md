@@ -55,8 +55,10 @@ If successful, this method returns a `200 OK` response code and a [multiTenantOr
 
 ## Examples
 
+The following example gets the status of the pending updates to tenant member state.
+
 ### Request
-The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_multitenantorganizationjoinrequestrecord"
@@ -68,8 +70,9 @@ GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
+The following example shows the response before an added tenant joins a multi-tenant organization.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,15 +84,67 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.multiTenantOrganizationJoinRequestRecord",
-    "addedByTenantId": "String",
-    "memberState": "String",
-    "role": "String",
-    "transitionDetails": {
-      "@odata.type": "microsoft.graph.multiTenantOrganizationJoinRequestTransitionDetails"
-    }
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/joinRequest/$entity",
+    "id": "7149c406-fac5-4be9-ad4b-f46fac7fe60c",
+    "addedByTenantId": "00000000-0000-0000-0000-000000000000",
+    "memberState": null,
+    "role": null,
+    "transitionDetails": null
 }
 ```
 
+The following example shows the response after an added tenant requests to join a multi-tenant organization and the state is still `pending`.
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/joinRequest/$entity",
+    "id": "3e536776-7489-43e9-9637-742d62ec3fc5",
+    "addedByTenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
+    "memberState": "pending",
+    "role": null,
+    "transitionDetails": {
+        "desiredMemberState": "active",
+        "status": "notStarted",
+        "details": ""
+    }
+}
+```
+
+The following example shows the response after an added tenant successfully joins a multi-tenant organization and the state is changed to `active`.
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/joinRequest/$entity",
+    "id": "3e536776-7489-43e9-9637-742d62ec3fc5",
+    "addedByTenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
+    "memberState": "active",
+    "role": member,
+    "transitionDetails": null
+}
+```
+
+The following example shows the response when an added tenant fails to join a multi-tenant organization. To reset a failed join request, see [Update multiTenantOrganizationJoinRequestRecord](multitenantorganizationjoinrequestrecord-update.md).
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/joinRequest/$entity",
+    "id": "3e536776-7489-43e9-9637-742d62ec3fc5",
+    "addedByTenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
+    "memberState": "pending",
+    "role": null,
+    "transitionDetails": {
+        "desiredMemberState": "active",
+        "status": "failed",
+        "details": "DirectoryService Exception"
+    }
+}
+```
