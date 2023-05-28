@@ -15,7 +15,7 @@ $queryParameters->select = ["ext55gb1l09_msLearnCourses"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->usersById('user-id')->get($requestConfiguration);
+$result = $graphServiceClient->users()->byUserId('user-id')->get($requestConfiguration);
 
 
 ```

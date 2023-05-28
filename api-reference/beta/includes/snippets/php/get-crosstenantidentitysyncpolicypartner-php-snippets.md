@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partnersById('crossTenantAccessPolicyConfigurationPartner-tenantId')->identitySynchronization()->get();
+$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byPartnerId('crossTenantAccessPolicyConfigurationPartner-tenantId')->identitySynchronization()->get();
 
 
 ```

@@ -123,7 +123,7 @@ Inside the **Application** folder are requests for various Microsoft Graph workl
 
 1. Expand the **Application** folder, and then expand the **User** folder.
 1. Double-click **Get Users** to open the request.
-1. On the top right, select **Send**.
+1. On the top right, select **Send**Access to OData is disabled.
 
 You have now successfully made a Microsoft Graph call using application authentication.
 
@@ -138,6 +138,10 @@ If you want to contribute your own requests, you need a Postman license. You can
 ### Authentication fails with "You can't get there from here"
 
 Certain [conditional access policies](/azure/active-directory/conditional-access/overview) configured by your organization's administrators can block the authentication flow from Postman. To explore alternatives, contact your administrators.
+
+### "Access to OData is disabled."
+
+See [403 Forbidden "Access to OData is disabled."](resolve-auth-errors.md#403-forbidden-access-to-odata-is-disabled).
 
 ## See also
 

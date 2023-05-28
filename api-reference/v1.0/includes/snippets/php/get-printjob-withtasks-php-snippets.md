@@ -15,7 +15,7 @@ $queryParameters->expand = ["tasks"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->print()->printersById('printer-id')->jobsById('printJob-id')->get($requestConfiguration);
+$result = $graphServiceClient->print()->printers()->byPrinterId('printer-id')->jobs()->byJobId('printJob-id')->get($requestConfiguration);
 
 
 ```

@@ -24,7 +24,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->policies()->crossTenantAccessPolicy()->partnersById('crossTenantAccessPolicyConfigurationPartner-tenantId')->identitySynchronization()->put($requestBody);
+$graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byPartnerId('crossTenantAccessPolicyConfigurationPartner-tenantId')->identitySynchronization()->put($requestBody);
 
 
 ```

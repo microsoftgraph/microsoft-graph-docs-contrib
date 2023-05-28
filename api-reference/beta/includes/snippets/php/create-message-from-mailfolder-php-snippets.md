@@ -29,7 +29,7 @@ $requestBody->setBodyPreview('bodyPreview-value');
 
 
 
-$result = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->messages()->post($requestBody);
+$result = $graphServiceClient->me()->mailFolders()->byMailFolderId('mailFolder-id')->messages()->post($requestBody);
 
 
 ```

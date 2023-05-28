@@ -18,7 +18,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->closeSession()->post($requestBody, $requestConfiguration);
+$graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->closeSession()->post($requestBody, $requestConfiguration);
 
 
 ```

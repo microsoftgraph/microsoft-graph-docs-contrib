@@ -16,7 +16,7 @@ $requestBody->setSendResponse(true);
 
 
 
-$graphServiceClient->me()->eventsById('event-id')->tentativelyAccept()->post($requestBody);
+$graphServiceClient->me()->events()->byEventId('event-id')->tentativelyAccept()->post($requestBody);
 
 
 ```

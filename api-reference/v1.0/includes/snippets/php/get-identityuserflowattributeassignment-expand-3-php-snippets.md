@@ -15,7 +15,7 @@ $queryParameters->expand = ["userAttribute"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identity()->b2xUserFlowsById('b2xIdentityUserFlow-id')->userAttributeAssignmentsById('identityUserFlowAttributeAssignment-id')->get($requestConfiguration);
+$result = $graphServiceClient->identity()->b2xUserFlows()->byB2xUserFlowId('b2xIdentityUserFlow-id')->userAttributeAssignments()->byUserAttributeAssignmentId('identityUserFlowAttributeAssignment-id')->get($requestConfiguration);
 
 
 ```
