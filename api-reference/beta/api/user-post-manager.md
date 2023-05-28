@@ -1,6 +1,6 @@
 ---
 title: "Assign a manager"
-description: "Assign a manager to a user."
+description: "Assign a user's manager."
 ms.localizationpriority: medium
 author: "yyuank"
 ms.prod: "users"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign a manager to a user.
+Assign a user's manager.
 
-> **Note:** You cannot assign direct reports. Use this API instead.
+> **Note:** You cannot assign direct reports; instead, use this API.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
