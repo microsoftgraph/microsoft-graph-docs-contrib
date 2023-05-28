@@ -1,6 +1,6 @@
 ---
 title: "multiTenantOrganizationJoinRequestRecord resource type"
-description: "An object that represents the status of the pending updates to tenant member state."
+description: "Defines the status of pending updates to tenant member state."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An object that represents the status of the pending updates to tenant member state. Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization the administrator of the tenant must join the multi-tenant organization.
+Defines the status of pending updates to tenant member state. Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization the administrator of the tenant must join the multi-tenant organization.
 
 ## Methods
 |Method|Return type|Description|

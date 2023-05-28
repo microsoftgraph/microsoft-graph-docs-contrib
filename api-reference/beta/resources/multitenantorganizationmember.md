@@ -1,6 +1,6 @@
 ---
 title: "multiTenantOrganizationMember resource type"
-description: "An object that represents a tenant added to a multi-tenant organization."
+description: "Defines a tenant added to a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An object that represents a tenant added to a multi-tenant organization.
+Defines a tenant added to a multi-tenant organization.
 
 ## Methods
 |Method|Return type|Description|
