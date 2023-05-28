@@ -69,7 +69,7 @@ The following is a JSON representation of the resource.
   "givenName": "String",
   "id": "String (identifier)",
   "imAddress": "String",
-  "isFavorite": Boolean,
+  "isFavorite": "Boolean",
   "jobTitle": "String",
   "officeLocation": "String",
   "personNotes": "String",
