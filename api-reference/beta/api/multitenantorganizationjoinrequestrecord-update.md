@@ -58,7 +58,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Request to join a multi-tenant organization
+### Example 1: Join a multi-tenant organization
 
 The following example shows a request by the current tenant to join a multi-tenant organization. It can take a few minutes for the join to complete. If the join succeeds, the state of the tenant is changed to `active`.
 
