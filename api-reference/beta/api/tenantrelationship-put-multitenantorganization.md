@@ -76,7 +76,7 @@ Content-Type: application/json
 
 {
   "displayName": "Contoso organization",
-  "description": "Multi-tenant organization between Contoso and Fabrikam"
+  "description": "Multi-tenant organization between Contoso, Fabrikam, and Woodgrove Bank"
 }
 ```
 
@@ -98,7 +98,7 @@ Content-Type: application/json
     "id": "6d8b39e5-039a-4034-bf3a-e0b4f8cd60b6",
     "createdDateTime": "2023-05-26T22:05:23Z",
     "displayName": "Contoso organization",
-    "description": "Multi-tenant organization between Contoso and Fabrikam"
+    "description": "Multi-tenant organization between Contoso, Fabrikam, and Woodgrove Bank"
 }
 ```
 

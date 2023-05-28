@@ -75,7 +75,7 @@ Content-Type: application/json
 
 {
   "displayName": "Contoso organization",
-  "description": "Multi-tenant organization between Contoso and Fabrikam"
+  "description": "Multi-tenant organization between Contoso, Fabrikam, and Woodgrove Bank"
 }
 ```
 
