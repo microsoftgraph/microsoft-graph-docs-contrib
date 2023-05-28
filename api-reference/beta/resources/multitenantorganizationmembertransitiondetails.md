@@ -1,6 +1,6 @@
 ---
 title: "multiTenantOrganizationMemberTransitionDetails resource type"
-description: "**TODO: Add Description**"
+description: "Details of the processing status for a tenant in a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Details of the processing status for a tenant in a multi-tenant organization.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|desiredRole|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member`, `unknownFutureValue`.|
-|desiredState|multiTenantOrganizationMemberState|State of the tenant in the multi-tenant organization currently being processed. The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`. Read-only.|
+|desiredRole|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member`.|
+|desiredState|multiTenantOrganizationMemberState|State of the tenant in the multi-tenant organization currently being processed. The possible values are: `pending`, `active`, `removed`. Read-only.|
 |details|String|Details that explain the processing status if any. Read-only.|
-|status|multiTenantOrganizationMemberProcessingStatus|Processing state of the asynchronous job. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. Read-only.|
+|status|multiTenantOrganizationMemberProcessingStatus|Processing state of the asynchronous job. The possible values are: `notStarted`, `running`, `succeeded`, `failed`. Read-only.|
 
 ## Relationships
 None.
