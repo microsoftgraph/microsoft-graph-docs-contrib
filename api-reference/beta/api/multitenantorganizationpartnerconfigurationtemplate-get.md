@@ -1,6 +1,6 @@
 ---
 title: "Get multiTenantOrganizationPartnerConfigurationTemplate"
-description: "Read the properties and relationships of a multiTenantOrganizationPartnerConfigurationTemplate object."
+description: "Get the inbound and outbound partner configuration settings of the multi-tenant organization template."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [multiTenantOrganizationPartnerConfigurationTemplate](../resources/multitenantorganizationpartnerconfigurationtemplate.md) object.
+Get the inbound and outbound partner configuration settings of the multi-tenant organization template.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,8 +55,10 @@ If successful, this method returns a `200 OK` response code and a [multiTenantOr
 
 ## Examples
 
+The following example gets the partner configuration settings of the template.
+
 ### Request
-The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_multitenantorganizationpartnerconfigurationtemplate"
@@ -68,8 +70,9 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
+The following example response shows the default partner configuration settings before they have been configured or after they have been reset.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,27 +84,42 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.multiTenantOrganizationPartnerConfigurationTemplate",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration/$entity",
+    "id": "75b1889b-6f42-4cc5-8e62-e774b8db243c",
+    "inboundTrust": null,
+    "b2bCollaborationOutbound": null,
+    "b2bCollaborationInbound": null,
+    "b2bDirectConnectOutbound": null,
+    "b2bDirectConnectInbound": null,
+    "automaticUserConsentSettings": {
+        "inboundAllowed": null,
+        "outboundAllowed": null
+    }
+}
+```
+
+The following example response shows the partner configuration settings for inbound trust and automatic redemption.
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration/$entity",
+    "id": "8d253b1b-1798-434a-8e77-bec3774d1512",
+    "b2bCollaborationOutbound": null,
+    "b2bCollaborationInbound": null,
+    "b2bDirectConnectOutbound": null,
+    "b2bDirectConnectInbound": null,
     "inboundTrust": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
-    },
-    "b2bCollaborationOutbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-    },
-    "b2bCollaborationInbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-    },
-    "b2bDirectConnectOutbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-    },
-    "b2bDirectConnectInbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
+        "isMfaAccepted": true,
+        "isCompliantDeviceAccepted": true,
+        "isHybridAzureADJoinedDeviceAccepted": true
     },
     "automaticUserConsentSettings": {
-      "@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"
+        "inboundAllowed": true,
+        "outboundAllowed": true
     }
-  }
 }
 ```
 
