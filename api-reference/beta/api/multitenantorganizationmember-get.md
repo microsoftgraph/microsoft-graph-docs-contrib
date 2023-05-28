@@ -96,3 +96,27 @@ Content-Type: application/json
 }
 ```
 
+If an update is in progress, `transitionDetails` lists information about the update. The following response indicates the role is being changed from member to owner.
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/tenants/$entity",
+    "tenantId": "5036a0a0-a7a4-4933-9086-5dd54535dd6e",
+    "displayName": "Woodgrove Bank",
+    "addedDateTime": "2023-05-27T21:52:40Z",
+    "joinedDateTime": null,
+    "addedByTenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
+    "role": "member",
+    "state": "pending",
+    "transitionDetails": {
+        "desiredState": "active",
+        "desiredRole": "owner",
+        "status": "notStarted",
+        "details": null
+    }
+}
+```
+

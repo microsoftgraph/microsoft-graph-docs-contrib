@@ -50,7 +50,7 @@ PATCH /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name of the tenant in the multi-tenant organization. Optional.|
-|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member`. Optional.|
+|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member` (default). Optional.|
 
 
 ## Response
@@ -91,9 +91,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Change the role of a tenant
+### Example 2: Update the role of a tenant
 
-The following example changes the role of a tenant in a multi-tenant organization from owner to member.
+The following example changes the role of a tenant in a multi-tenant organization from member to owner.
 
 #### Request
 
