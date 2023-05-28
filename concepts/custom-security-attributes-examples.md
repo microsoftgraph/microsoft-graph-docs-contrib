@@ -12,9 +12,6 @@ ms.date: 02/14/2023
 
 # Manage custom security attribute assignments
 
-> [!IMPORTANT]
-> The custom security attributes feature is currently in preview. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
-
 [Custom security attributes](/graph/api/resources/custom-security-attributes-overview) in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects. These attributes can be used to store information, categorize objects, or enforce fine-grained access control over specific Azure resources through Azure attribute-based access control (Azure ABAC).
 
 Custom security attributes are supported for users and service principals only. This article provides examples of how to assign, update, list, or remove different types of custom security attributes for users and applications using Microsoft Graph.
