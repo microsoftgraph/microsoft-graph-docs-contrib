@@ -46,7 +46,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -85,7 +85,7 @@ DELETE https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
 
 ---
 
-##### Response
+### Response
 
 The following is an example of the response.
 
