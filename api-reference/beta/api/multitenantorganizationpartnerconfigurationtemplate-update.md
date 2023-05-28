@@ -65,7 +65,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following example configures the inbound trust settings to accept MFA, compliant, and Hybrid Azure AD Joined devices from the partner tenant. It also configures automatic redemption on behalf of your users and accepting admin consent for the users of the partner. For more information, see [crossTenantAccessPolicyConfigurationPartner resource type](crosstenantaccesspolicyconfigurationpartner.md).
+The following example configures the inbound trust settings to accept MFA, compliant, and Hybrid Azure AD Joined devices from the partner tenant. It also configures automatic redemption on behalf of your users and accepting admin consent for the users of the partner. For more information, see [crossTenantAccessPolicyConfigurationPartner resource type](../resources/crosstenantaccesspolicyconfigurationpartner.md).
 
 ### Request
 

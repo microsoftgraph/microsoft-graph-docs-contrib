@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-Update the user synchronization policy settings of the template. For more information, see [crossTenantIdentitySyncPolicyPartner resource type](crosstenantidentitysyncpolicypartner.md).
+Update the user synchronization policy settings of the template. For more information, see [crossTenantIdentitySyncPolicyPartner resource type](../resources/crosstenantidentitysyncpolicypartner.md).
 
 ### Request
 
