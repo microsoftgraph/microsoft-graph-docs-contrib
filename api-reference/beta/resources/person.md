@@ -49,7 +49,7 @@ Represents an aggregation of information about a person from across mail and con
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
