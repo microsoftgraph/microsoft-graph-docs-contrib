@@ -56,7 +56,7 @@ The following is an example of the request.
   "name": "remove_manager"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
+DELETE https://graph.microsoft.com/v1.0/users/10f17b99-784c-4526-8747-aec8a3159d6a/manager/$ref
 ```
 
 # [C#](#tab/csharp)
