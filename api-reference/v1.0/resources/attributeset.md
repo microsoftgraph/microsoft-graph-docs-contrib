@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 Represents a group of related custom security attribute definitions.
 
-Up to 500 **attributeSet** objects can be defined in a tenant. You can't rename or delete this object.
+You can define up to 500 **attributeSet** objects in a tenant. The **attributeSet** object can't be renamed or deleted.
+
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
@@ -29,7 +31,7 @@ Up to 500 **attributeSet** objects can be defined in a tenant. You can't rename 
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description of the attribute set. Can be up to 128 characters long and include Unicode characters. Can be changed later.|
-|id|String|Identifier for the attribute set that is unique within a tenant. Can be up to 32 characters long and include Unicode characters. Cannot contain spaces or special characters. Cannot be changed later. Case insensitive.|
+|id|String|Identifier for the attribute set that is unique within a tenant. Can be up to 32 characters long and include Unicode characters. Cannot contain spaces or special characters. Cannot be changed later. Case insensitive. Inherited from [entity](../resources/entity.md).|
 |maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set. Default value is `null`. If not specified, the administrator can add up to the maximum of 500 active attributes per tenant. Can be changed later.|
 
 ## Relationships
