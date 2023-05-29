@@ -36,6 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |longLogoWebUrlForLightTheme|String|The long logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 |squareLogoWebUrlForDarkTheme|String|The square logo URL for the dark mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 |squareLogoWebUrlForLightTheme|String|The square logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
+|isCourseActivitySyncEnabled|Boolean|Indicates whether the course activities will be ingested for this provider or not. Default value is `false`. Course activities for a provider cannot be ingested if this value is false. This value needs to be updated to true when the provider wants to ingest courseactivities.|
 
 ## Relationships
 
@@ -63,6 +64,7 @@ The following is a JSON representation of the resource.
   "longLogoWebUrlForDarkTheme": "String",
   "longLogoWebUrlForLightTheme": "String",
   "squareLogoWebUrlForDarkTheme": "String",
-  "squareLogoWebUrlForLightTheme": "String"
+  "squareLogoWebUrlForLightTheme": "String",
+  "isCourseActivitySyncEnabled": "Boolean"
 }
 ```
