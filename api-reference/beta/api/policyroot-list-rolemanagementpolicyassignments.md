@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Retrieve details of all role management policy assignments for PIM for Azure AD roles
 
-### Request
+#### Request
 
 The following example retrieves details of all role management policy assignments that are scoped to the tenant and apply to directory roles.
 
@@ -112,11 +112,11 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$f
 
 ---
 
-### Response
+#### Response
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -150,7 +150,7 @@ Content-Type: application/json
 
 ### Example 2: Retrieve details of all role management policy assignments for PIM for groups
 
-### Request
+#### Request
 
 The following example retrieves details of all role management policy assignments that are scoped to the group and apply to PIM for groups membership and ownership.
 
@@ -163,11 +163,11 @@ The following example retrieves details of all role management policy assignment
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$filter=scopeId eq '60bba733-f09d-49b7-8445-32369aa066b3' and scopeType eq 'Group'
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Retrieve rules of a policy for PIM for Azure AD roles
 
-### Request
+#### Request
 
 The following is an example of the request.
 
@@ -111,11 +111,11 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRo
 
 ---
 
-### Response
+#### Response
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -430,7 +430,7 @@ Content-Type: application/json
 
 ### Example 2: Retrieve rules of a policy for PIM for groups
 
-### Request
+#### Request
 
 The following is an example of the request.
 
@@ -444,7 +444,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369/rules
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 

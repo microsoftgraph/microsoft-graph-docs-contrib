@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ### Example 1: Retrieve a rule defined for a policy for PIM for Azure AD roles
 
-### Request
+#### Request
 
 The following example retrieves a role management policy rule with ID `Expiration_Admin_Eligibility`.
 
@@ -107,11 +107,11 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRo
 
 ---
 
-### Response
+#### Response
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -142,7 +142,7 @@ Content-Type: application/json
 
 ### Example 2: Retrieve a rule defined for a policy for PIM for groups
 
-### Request
+#### Request
 
 The following example retrieves a role management policy rule with ID `Expiration_Admin_Eligibility`.
 
@@ -156,11 +156,11 @@ The following example retrieves a role management policy rule with ID `Expiratio
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369/rules/Expiration_Admin_Eligibility
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
