@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /employeeExperience/learningCourseActivities/{learningCourseActivityId}
+PATCH /employeeExperience/learningProviders/{registrationId}/learningCourseActivities/{learningCourseActivityId}
 ```
 
 ## Request headers
@@ -86,7 +86,7 @@ The following example shows the request.
 }-->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
+PATCH https://graph.microsoft.com/beta/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 Content-Type: application/json
 
 {
@@ -160,7 +160,7 @@ The following example shows the request.
 }-->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120004
+PATCH https://graph.microsoft.com/beta/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 Content-Type: application/json
 
 {

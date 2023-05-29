@@ -14,7 +14,7 @@ $requestBody->setDescription('This is an updated description.');
 
 
 
-$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->tagsById('tag-id')->patch($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->tags()->byTagId('tag-id')->patch($requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->sitesById('site-id')->listsById('list-id')->itemsById('listItem-id')->documentSetVersionsById('documentSetVersion-id')->restore()->post();
+$graphServiceClient->sites()->bySiteId('site-id')->lists()->byListId('list-id')->items()->byItemId('listItem-id')->documentSetVersions()->byDocumentSetVersionId('documentSetVersion-id')->restore()->post();
 
 
 ```

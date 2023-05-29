@@ -23,7 +23,7 @@ $requestBody->setVisible(true);
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->namesById('workbookNamedItem-id')->patch($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->names()->byNameId('workbookNamedItem-id')->patch($requestBody);
 
 
 ```

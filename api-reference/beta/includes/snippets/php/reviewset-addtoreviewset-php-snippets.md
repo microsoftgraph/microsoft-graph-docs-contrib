@@ -23,7 +23,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->compliance()->ediscovery()->casesById('case-id')->reviewSetsById('reviewSet-id')->microsoftGraphEdiscoveryAddToReviewSet()->post($requestBody);
+$graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->reviewSets()->byReviewSetId('reviewSet-id')->microsoftGraphEdiscoveryAddToReviewSet()->post($requestBody);
 
 
 ```

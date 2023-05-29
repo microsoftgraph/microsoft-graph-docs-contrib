@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->external()->industryData()->runsById('industryDataRun-id')->microsoftGraphIndustryDataGetStatistics()->get();
+$result = $graphServiceClient->external()->industryData()->runs()->byRunId('industryDataRun-id')->microsoftGraphIndustryDataGetStatistics()->get();
 
 
 ```
