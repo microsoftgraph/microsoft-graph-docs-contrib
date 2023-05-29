@@ -127,7 +127,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.reportSuspiciousActivitySettings",
         "state": "enabled",
         "includeTarget": {
-            "targetType": "group"
+            "targetType": "group",
             "id": "all_users",
         },
         "voiceReportingCode": 0,
