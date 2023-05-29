@@ -51,7 +51,7 @@ The following table lists scenarios for using PIM for groups APIs to manage elig
 | An administrator cancels an eligible membership or ownership request they created | [privilegedAccessGroupEligibilityScheduleRequest:cancel](../api/privilegedaccessgroupeligibilityschedulerequest-cancel.md) |
 | A principal queries their eligible membership or ownership request their details | [privilegedAccessGroupEligibilityScheduleRequest: filterByCurrentUser](../api/privilegedaccessgroupeligibilityschedulerequest-filterbycurrentuser.md) |
 
-## Policy settings and PIM for groups
+## Policy settings in PIM for groups
 
 PIM for groups defines settings or rules that govern how principals can be assigned membership or ownership of security and Microsoft 365 groups. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible membership or ownership for a group, or whether you can create permanent assignments or eligibilities for principals to the groups. The rules are defined in policies and a policy can be applied to a group.
 
