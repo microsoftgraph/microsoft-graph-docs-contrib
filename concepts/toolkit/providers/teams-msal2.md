@@ -46,12 +46,17 @@ npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal
 Next, import and use the provider.
 
 ```ts
-import {Providers} from '@microsoft/mgt-element';
-import {TeamsMsal2Provider} from '@microsoft/mgt-teams-msal2-provider';
-import * as MicrosoftTeams from "@microsoft/teams-js";
+import * as microsoftTeams from "@microsoft/teams-js";
+import {Providers, TeamsMsal2Provider, TeamsMsal2Config} from '@microsoft/mgt';
 
-TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
+const config: TeamsMsal2Config = {
+  baseURL: 'https://graph.microsoft.us', // change the base URL
+  clientId: '2dfea037-xxx-c05708a1b241',
+  ... // rest of the config
+}
+Providers.globalProvider = new TeamsMsal2Provider(config);
 
+TeamsMsal2Provider.microsoftTeamsLib = microsoftTeams;
 Providers.globalProvider = new TeamsMsal2Provider(config);
 ```
 
@@ -66,6 +71,7 @@ export interface TeamsMsal2Config {
   ssoUrl?: string; // ex: '/api/token',
   autoConsent?: boolean,
   httpMethod: HttpMethod; //ex HttpMethod.POST
+  baseURL?: GraphEndpoint
 }
 ```
 
@@ -82,9 +88,11 @@ export interface TeamsMsal2Config {
   scopes="user.read,people.read..."
   authority=""
   sso-url="/api/token"
-  http-method="POST">
+  base-url="https://graph.microsoft.us" <!-- change the base URL -->
+  http-method="POST"
 ></mgt-teams-msal2-provider>
 ```
+---
 
 | Attribute | Description |
 | --- | --- |
@@ -94,6 +102,7 @@ export interface TeamsMsal2Config {
 | authority    | Authority string. The default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | sso-url  | Absolute or relative path to the backend API that handles the OBO token exchange. Optional. |
 | http-method  | Type of HTTP method to use for calling the backend API. `POST` or `GET`. Default is `GET`. Optional |
+| base-url | The Microsoft Graph endpoint to be used for Microsoft Graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.    
 
 ---
 ### Create the popup page
@@ -110,6 +119,20 @@ TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
 TeamsMsal2Provider.handleAuth();
 ```
 
+When you use a different Microsoft 365 endpoint, you need to pass the `baseURL` to the `TeamsMsal2Provider.handleAuth()` static method.
+
+```ts
+...// rest of the setup code
+
+const config: TeamsConfig = {
+  baseURL: 'https://graph.microsoft.com', // change the base URL
+  clientId: '2dfea037-xxx-c05708a1b241',
+  ... // rest of the config
+}
+TeamsMsal2Provider.handleAuth(config.baseURL);
+```
+
+
 # [unpkg](#tab/html)
 
 ```html
@@ -118,6 +141,14 @@ TeamsMsal2Provider.handleAuth();
 
 <script>
   mgt.TeamsMsal2Provider.handleAuth();
+</script>
+```
+
+When you use a different Microsoft 365 endpoint, you need to pass the `baseURL` to the `TeamsMsal2Provider.handleAuth()` static method.
+```html
+... // rest of the setup code
+<script>
+  mgt.TeamsMsal2Provider.handleAuth('https://graph.microsoft.us')
 </script>
 ```
 ---

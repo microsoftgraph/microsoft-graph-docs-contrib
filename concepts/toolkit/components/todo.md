@@ -41,8 +41,12 @@ The following example shows only tasks from the folder with ID *12345* and does 
 
 The `mgt-todo` component defines the following CSS custom properties.
 
+```html
+<mgt-todo class="todo"></mgt-todo>
+```
+
 ````css
-mgt-todo {
+.todo {
   --tasks-background-color
   --tasks-header-padding
   --tasks-title-padding

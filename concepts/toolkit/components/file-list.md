@@ -135,8 +135,12 @@ document.getElementById("reload-btn").addEventListener("click", () => {
 
 The `mgt-file-list` component defines the following CSS custom properties.
 
+```html
+<mgt-file-list class="file-list" insight-type="shared"></mgt-file-list>
+```
+
 ```css
-mgt-file-list {
+.file-list {
   /** mgt-file-upload custom styling */
   --file-upload-background-color-drag: rgb(255, 0, 0, 0.5);
   --file-upload-border-drag: 2px groove black;
