@@ -54,7 +54,6 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -135,6 +134,29 @@ Content-Type: application/json
       "targets": [
         {
           "target": "Office365",
+          "targetType": "application"
+        }
+      ]
+    }
+  },
+  "tenantRestrictions":
+  {
+    "usersAndGroups":
+    {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllUsers",
+          "targetType": "user"
+        }
+      ]
+    },
+    "applications":
+    {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllApplications",
           "targetType": "application"
         }
       ]

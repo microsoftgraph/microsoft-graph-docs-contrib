@@ -120,6 +120,7 @@ Content-type: application/json
             "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
             "dataType": "String",
             "isSyncedFromOnPremises": false,
+            "isMultiValued": true,
             "targetObjects": [
                 "User"
             ]
@@ -131,6 +132,7 @@ Content-type: application/json
             "name": "extension_25883231668a43a780b25685c3f874bc_cpiminternal_useAccountEnabledForPhone",
             "dataType": "String",
             "isSyncedFromOnPremises": false,
+            "isMultiValued": true,
             "targetObjects": [
                 "User"
             ]
