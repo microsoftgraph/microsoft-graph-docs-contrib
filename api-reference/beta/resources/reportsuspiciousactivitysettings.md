@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the report suspicious activity settings for the tenant, whether it is enabled and which group of users is enabled for use.  Report suspicious activity enables users to report a suspicious voice or phone app notification multi-factor authentication prompt as suspicious.  These users will have their user risk set to high, and a risk event with risk detection (riskdetection.md) riskType of `userReportedSuspiciousActivity` is emitted.
+Defines the report suspicious activity settings for the tenant, whether it is enabled and which group of users is enabled for use. Report suspicious activity enables users to report a suspicious voice or phone app notification multi-factor authentication prompt as suspicious. These users will have their user risk set to `high`, and a [risk detection](riskdetection.md) **riskEventType** of `userReportedSuspiciousActivity` is emitted.
 
 ## Properties
 |Property|Type|Description|
