@@ -81,14 +81,14 @@ Content-Type: application/json
             }
         ]
     }
-  }
+  },
   "reportSuspiciousActivitySettings": {
       "state": "enabled",
       "includeTarget": {
           "targetType": "group",
           "id": "all_users",
       },
-      "voiceReportingCode": 0,
+      "voiceReportingCode": 0
   }
 }
 ```
@@ -158,7 +158,7 @@ Content-Type: application/json
           "targetType": "group",
           "id": "all_users",
       },
-      "voiceReportingCode": 0,
+      "voiceReportingCode": 0
   },
   "systemCredentialPreferences": {
     "@odata.type": "#microsoft.graph.systemCredentialPreferences",
