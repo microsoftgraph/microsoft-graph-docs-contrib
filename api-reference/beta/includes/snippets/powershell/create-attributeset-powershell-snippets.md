@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	Id = "Engineering"
-	Description = "Attributes for engineering team"
-	MaxAttributesPerSet = 25
+	id = "Engineering"
+	description = "Attributes for engineering team"
+	maxAttributesPerSet = 25
 }
 
 New-MgDirectoryAttributeSet -BodyParameter $params

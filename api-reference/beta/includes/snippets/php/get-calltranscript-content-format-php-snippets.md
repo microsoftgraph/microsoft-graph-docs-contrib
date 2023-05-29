@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ContentRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ContentRequestBuilderGetQueryParameters();
+$queryParameters = ContentRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->format = "text/vtt";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$graphServiceClient->usersById('user-id')->onlineMeetingsById('onlineMeeting-id')->transcriptsById('callTranscript-id')->content()->get($requestConfiguration);
+$graphServiceClient->users()->byUserId('user-id')->onlineMeetings()->byOnlineMeetingId('onlineMeeting-id')->transcripts()->byTranscriptId('callTranscript-id')->content()->get($requestConfiguration);
 
 
 ```

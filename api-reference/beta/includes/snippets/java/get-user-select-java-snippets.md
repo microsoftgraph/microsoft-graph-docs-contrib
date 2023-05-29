@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-User user = graphClient.users("87d349ed-44d7-43e1-9a83-5f2406dee5bd")
+User user = graphClient.users("{id | userPrincipalName}")
 	.buildRequest()
 	.select("displayName,givenName,postalCode,identities")
 	.get();

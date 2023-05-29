@@ -37,5 +37,5 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 
 ## See also
 
-- [Overview of Microsoft 365 groups in Microsoft Graph](office365-groups-concept-overview.md)
+- [Overview of Microsoft 365 groups in Microsoft Graph](microsoft365-groups-concept-overview.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)

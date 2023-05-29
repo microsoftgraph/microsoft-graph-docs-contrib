@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->delete();
+$graphServiceClient->solutions()->businessScenarios()->byBusinessScenarioId('businessScenario-id')->delete();
 
 
 ```

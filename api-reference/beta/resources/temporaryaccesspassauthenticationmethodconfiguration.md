@@ -4,7 +4,7 @@ description: "Represents a Temporary Access Pass authentication methods policy t
 author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
 # temporaryAccessPassAuthenticationMethodConfiguration resource type
