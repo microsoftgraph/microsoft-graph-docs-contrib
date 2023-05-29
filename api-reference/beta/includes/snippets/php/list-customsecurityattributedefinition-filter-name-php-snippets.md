@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new CustomSecurityAttributeDefinitionsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new CustomSecurityAttributeDefinitionsRequestBuilderGetQueryParameters();
+$queryParameters = CustomSecurityAttributeDefinitionsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "name eq 'Project' and status eq 'Available'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->directory()->customSecurityAttributeDefinitions()->get($requestConfiguration);
+$result = $graphServiceClient->directory()->customSecurityAttributeDefinitions()->get($requestConfiguration);
 
 
 ```

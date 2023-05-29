@@ -8,11 +8,11 @@ Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.businessScenarioTask"
-	Title = "Customer order #12010"
-	PercentComplete = 20
-	Priority = 1
-	BusinessScenarioProperties = @{
-		ExternalObjectVersion = "000003"
+	title = "Customer order #12010"
+	percentComplete = 20
+	priority = 1
+	businessScenarioProperties = @{
+		externalObjectVersion = "000003"
 	}
 }
 

@@ -22,7 +22,7 @@ $requestBody->setState(new AnswerState('published'));
 
 
 
-$requestResult = $graphServiceClient->search()->acronyms()->post($requestBody);
+$result = $graphServiceClient->search()->acronyms()->post($requestBody);
 
 
 ```

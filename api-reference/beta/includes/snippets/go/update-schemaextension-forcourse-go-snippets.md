@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -50,7 +50,7 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 }
 requestBody.SetProperties(properties)
 
-result, err := graphClient.SchemaExtensionsById("schemaExtension-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.SchemaExtensions().BySchemaExtensionId("schemaExtension-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

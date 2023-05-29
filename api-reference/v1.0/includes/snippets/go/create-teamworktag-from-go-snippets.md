@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -34,7 +34,7 @@ members := []graphmodels.TeamworkTagMemberable {
 }
 requestBody.SetMembers(members)
 
-result, err := graphClient.TeamsById("team-id").Tags().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Tags().Post(context.Background(), requestBody, nil)
 
 
 ```

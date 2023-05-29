@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -58,7 +58,7 @@ sourceLevels := []graphmodels.Objectable {
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Communications().CallsById("call-id").ParticipantsById("participant-id").Post(context.Background(), requestBody, nil)
+graphClient.Communications().Calls().ByCallId("call-id").Participants().ByParticipantId("participant-id").Post(context.Background(), requestBody, nil)
 
 
 ```

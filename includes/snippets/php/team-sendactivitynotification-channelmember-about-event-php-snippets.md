@@ -30,8 +30,8 @@ $recipient = new TeamworkNotificationRecipient();
 $recipient->set@odatatype('microsoft.graph.channelMembersNotificationRecipient');
 
 $additionalData = [
-'teamId' => '7155e3c8-175e-4311-97ef-572edc3aa3db', 
-'channelId' => '19:0ea5de04de4743bcb4cd20cb99235d99@thread.tacv2', 
+		'teamId' => '7155e3c8-175e-4311-97ef-572edc3aa3db', 
+		'channelId' => '19:0ea5de04de4743bcb4cd20cb99235d99@thread.tacv2', 
 ];
 $recipient->setAdditionalData($additionalData);
 
@@ -40,7 +40,7 @@ $recipient->setAdditionalData($additionalData);
 $requestBody->setRecipient($recipient);
 
 
-$graphServiceClient->teamsById('team-id')->sendActivityNotification()->post($requestBody);
+$graphServiceClient->teams()->byTeamId('team-id')->sendActivityNotification()->post($requestBody);
 
 
 ```

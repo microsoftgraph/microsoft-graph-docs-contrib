@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -32,7 +32,7 @@ requestBody.SetIsActive(&isActive)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TeamsById("team-id").Schedule().TimeOffReasonsById("timeOffReason-id").Put(context.Background(), requestBody, configuration)
+graphClient.Teams().ByTeamId("team-id").Schedule().TimeOffReasons().ByTimeOffReasonId("timeOffReason-id").Put(context.Background(), requestBody, configuration)
 
 
 ```

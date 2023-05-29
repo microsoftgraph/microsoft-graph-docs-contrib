@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewRejectPostRequestBody()
 reason := graphmodels.BUSY_REJECTREASON 
 requestBody.SetReason(&reason) 
 
-graphClient.Communications().CallsById("call-id").Reject().Post(context.Background(), requestBody, nil)
+graphClient.Communications().Calls().ByCallId("call-id").Reject().Post(context.Background(), requestBody, nil)
 
 
 ```

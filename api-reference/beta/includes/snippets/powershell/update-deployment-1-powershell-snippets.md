@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.WindowsUpdates
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
-	State = @{
+	state = @{
 		"@odata.type" = "microsoft.graph.windowsUpdates.deploymentState"
-		RequestedValue = "paused"
+		requestedValue = "paused"
 	}
 }
 

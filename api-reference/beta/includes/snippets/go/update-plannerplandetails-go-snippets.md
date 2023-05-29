@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -41,7 +41,7 @@ category3 := null
 categoryDescriptions.SetCategory3(&category3) 
 requestBody.SetCategoryDescriptions(categoryDescriptions)
 
-result, err := graphClient.Planner().PlansById("plannerPlan-id").Details().Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Planner().Plans().ByPlanId("plannerPlan-id").Details().Patch(context.Background(), requestBody, configuration)
 
 
 ```

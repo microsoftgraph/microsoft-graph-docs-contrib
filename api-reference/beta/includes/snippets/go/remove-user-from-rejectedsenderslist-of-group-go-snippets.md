@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -25,7 +25,7 @@ configuration := &graphconfig.GroupItemRejectedSenders$refRequestBuilderDeleteRe
 	QueryParameters: requestParameters,
 }
 
-graphClient.GroupsById("group-id").RejectedSenders().Ref().Delete(context.Background(), configuration)
+graphClient.Groups().ByGroupId("group-id").RejectedSenders().Ref().Delete(context.Background(), configuration)
 
 
 ```

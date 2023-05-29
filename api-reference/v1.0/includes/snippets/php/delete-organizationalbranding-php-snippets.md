@@ -11,14 +11,14 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new BrandingDeleteRequestBody();
 $additionalData = [
-'id' => '0', 
+		'id' => '0', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$graphServiceClient->organizationById('organization-id')->branding()->delete($requestBody);
+$graphServiceClient->organization()->byOrganization()Id('organization-id')->branding()->delete($requestBody);
 
 
 ```

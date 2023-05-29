@@ -1,5 +1,5 @@
 ---
-author: rahmit
+author: sangle7
 description: "Get the collection of sitePage objects from the site pages [list] in a site. All pages in the site are returned (with pagination)."
 ms.date: 03/15/2018
 title: List the pages in a site

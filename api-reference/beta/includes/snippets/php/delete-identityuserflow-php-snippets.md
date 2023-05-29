@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->identity()->userFlowsById('identityUserFlow-id')->delete();
+$graphServiceClient->identity()->userFlows()->byUserFlowId('identityUserFlow-id')->delete();
 
 
 ```

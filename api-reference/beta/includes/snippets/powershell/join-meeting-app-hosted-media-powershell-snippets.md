@@ -8,34 +8,34 @@ Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
-	Direction = "outgoing"
-	CallbackUri = "https://bot.contoso.com/callback"
-	RequestedModalities = @(
+	direction = "outgoing"
+	callbackUri = "https://bot.contoso.com/callback"
+	requestedModalities = @(
 		"audio"
 	)
-	MediaConfig = @{
+	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		Blob = "<Media Session Configuration>"
+		blob = "<Media Session Configuration>"
 	}
-	ChatInfo = @{
+	chatInfo = @{
 		"@odata.type" = "#microsoft.graph.chatInfo"
-		ThreadId = "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2"
-		MessageId = "0"
+		threadId = "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2"
+		messageId = "0"
 	}
-	MeetingInfo = @{
+	meetingInfo = @{
 		"@odata.type" = "#microsoft.graph.organizerMeetingInfo"
-		Organizer = @{
+		organizer = @{
 			"@odata.type" = "#microsoft.graph.identitySet"
-			User = @{
+			user = @{
 				"@odata.type" = "#microsoft.graph.identity"
-				Id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
-				TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
-				DisplayName = "Bob"
+				id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
+				tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+				displayName = "Bob"
 			}
 		}
-		AllowConversationWithoutHost = $true
+		allowConversationWithoutHost = $true
 	}
-	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgCommunicationCall -BodyParameter $params

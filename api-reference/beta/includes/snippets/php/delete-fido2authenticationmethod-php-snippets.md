@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->usersById('user-id')->authentication()->fido2MethodsById('fido2AuthenticationMethod-id')->delete();
+$graphServiceClient->users()->byUserId('user-id')->authentication()->fido2Methods()->byFido2MethodId('fido2AuthenticationMethod-id')->delete();
 
 
 ```

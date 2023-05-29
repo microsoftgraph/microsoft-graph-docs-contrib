@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionEventType"
-	DisplayName = "String"
-	Description = "String"
-	CreatedBy = @{
+	displayName = "String"
+	description = "String"
+	createdBy = @{
 		"@odata.type" = "microsoft.graph.identitySet"
 	}
 }
