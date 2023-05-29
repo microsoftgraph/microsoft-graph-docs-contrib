@@ -5,7 +5,7 @@ author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
-ms.date: 03/22/2023
+ms.date: 05/29/2023
 ---
 
 # Govern membership and ownership of groups using PIM for groups
@@ -53,21 +53,21 @@ The following table lists scenarios for using PIM for groups APIs to manage elig
 
 ## Policy settings and PIM for groups
 
-Both PIM for groups membership and ownership define settings or rules. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible membership or ownership to a group, or whether you can create permanent assignments or eligibilities for principals to the PIM for groups membership or ownership. These specific rules will determine the settings you can apply while creating or managing PIM for groups membership or ownership assignments and eligibilities.
+PIM for groups defines settings or rules that govern how principals can be assigned membership or ownership of security and Microsoft 365 groups. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible membership or ownership for a group, or whether you can create permanent assignments or eligibilities for principals to the groups. The rules are defined in policies and a policy can be applied to a group.
 
 In Microsoft Graph, these rules are managed through the [unifiedRoleManagementPolicy](unifiedrolemanagementpolicy.md) and the [unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassignment.md) resource types and their related methods.
 
-For example, assume that by default, a PIM for groups membership and ownership don't allow permanent active assignments and defines a maximum of 6 months for active assignments. Attempting to create a [privilegedAccessGroupAssignmentScheduleRequest](privilegedAccessGroupAssignmentScheduleRequest.md) object without expiry date will return a `400 Bad Request` response code for violation of the expiration rule.
+For example, assume that by default, PIM for groups doesn't allow permanent active membership and ownership assignments and defines a maximum of 6 months for active assignments. Attempting to create a [privilegedAccessGroupAssignmentScheduleRequest](privilegedAccessGroupAssignmentScheduleRequest.md) object without expiry date will return a `400 Bad Request` response code for violation of the expiration rule.
 
-PIM allows you to configure various rules including the following:
+PIM for groups allows you to configure various rules including the following:
 
-+ Whether principals can be assigned permanent eligible assignments
-+ The maximum duration allowed for a PIM for groups membership or ownership activation and whether justification or approval is required to activate eligible membership or ownership
-+ The users who are allowed to approve activation requests for a PIM for groups membership or ownership
-+ Whether MFA is required to both activate and enforce a PIM for groups membership or ownership assignment
-+ The principals who get notified of PIM for groups membership or ownership activations
+- Whether principals can be assigned permanent eligible assignments
+- The maximum duration allowed for a group membership or ownership activation and whether justification or approval is required to activate eligible membership or ownership
+- The users who are allowed to approve activation requests for a group membership or ownership
+- Whether MFA is required to both activate and enforce a group membership or ownership assignment
+- The principals who get notified of group membership or ownership activations
 
-The following table lists scenarios for using PIM to manage Azure AD rules and the APIs to call.
+The following table lists scenarios for using PIM for groups to manage rules and the APIs to call.
 
 | Scenarios                                                                                                                                 | API                                                                                                      |
 |--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -80,7 +80,7 @@ The following table lists scenarios for using PIM to manage Azure AD rules and t
 | Get the details of all PIM for groups policy assignments including the policies and rules or settings associated with the PIM for groups membership and ownership  | [List unifiedRoleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md) |
 | Get the details of a PIM for groups policy assignment including the policy and rules or settings associated with the PIM for groups membership or ownership       | [Get unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md)         |
 
-For more information about using Microsoft Graph to configure rules, see [Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview). For examples of updating rules, see [Use PIM APIs in Microsoft Graph to update Azure AD rules](/graph/how-to-pim-update-rules).
+For more information about using Microsoft Graph to configure rules, see [Overview of rules in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview). For examples of updating rules, see [Use PIM APIs in Microsoft Graph to update rules](/graph/how-to-pim-update-rules).
 
 ## PIM for groups and the group object
 
