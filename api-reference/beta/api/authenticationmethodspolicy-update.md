@@ -86,7 +86,7 @@ Content-Type: application/json
       "state": "enabled",
       "includeTarget": {
           "targetType": "group",
-          "id": "all_users",
+          "id": "all_users"
       },
       "voiceReportingCode": 0
   }
@@ -156,7 +156,7 @@ Content-Type: application/json
       "state": "enabled",
       "includeTarget": {
           "targetType": "group",
-          "id": "all_users",
+          "id": "all_users"
       },
       "voiceReportingCode": 0
   },
