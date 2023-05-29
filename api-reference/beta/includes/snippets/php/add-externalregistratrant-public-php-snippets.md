@@ -16,7 +16,7 @@ $requestBody->setId('9d96988d-a66a-46ce-aad7-0b245615b297');
 
 
 
-$result = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->registrants()->post($requestBody);
+$result = $graphServiceClient->me()->onlineMeetings()->byOnlineMeetingId('onlineMeeting-id')->registration()->registrants()->post($requestBody);
 
 
 ```

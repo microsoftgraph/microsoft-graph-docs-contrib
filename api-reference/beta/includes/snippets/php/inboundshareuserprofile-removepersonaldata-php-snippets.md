@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->directory()->inboundSharedUserProfilesById('inboundSharedUserProfile-userId')->removePersonalData()->post();
+$graphServiceClient->directory()->inboundSharedUserProfiles()->byInboundSharedUserProfileId('inboundSharedUserProfile-userId')->removePersonalData()->post();
 
 
 ```

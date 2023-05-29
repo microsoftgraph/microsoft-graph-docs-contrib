@@ -110,6 +110,11 @@ Content-type: application/json
     "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
     "type": "group"
   },
+  "sharedWithContainers": [
+    {
+      "@odata.type": "microsoft.graph.plannerSharedWithContainer"
+    }
+  ],
   "title": "title-value",
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

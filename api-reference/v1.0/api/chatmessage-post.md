@@ -180,7 +180,8 @@ Content-type: application/json
     },
     "attachments": [],
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -313,7 +314,8 @@ Content-type: application/json
             }
         }
     ],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -440,7 +442,8 @@ Content-type: application/json
         }
     ],
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -564,7 +567,8 @@ Content-type: application/json
         }
     ],
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -677,7 +681,8 @@ Content-type: application/json
     },
     "attachments": [],
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -816,7 +821,8 @@ Content-type: application/json
         }
     ],
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -953,7 +959,8 @@ Content-type: application/json
             }
         }
     ],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -993,7 +1000,8 @@ Content-type: application/json
             }
         }
     ],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -1091,7 +1099,8 @@ Content-type: application/json
             }
         }
     ],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -1223,7 +1232,8 @@ Content-type: application/json
     ],
     "onBehalfOf": null,
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -1364,7 +1374,8 @@ Content-type: application/json
         }
     ],
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 

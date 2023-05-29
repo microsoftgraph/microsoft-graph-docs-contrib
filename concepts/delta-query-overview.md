@@ -4,6 +4,7 @@ description: "Use delta query to enable applications to discover newly created, 
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: jumasure
+ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 08/12/2022
