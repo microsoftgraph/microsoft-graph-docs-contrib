@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Delete a [learningCourseActivity](../resources/learningcourseactivity.md) object by using the course activity ID of either an assignment or a self-initiated activity.
 
+**Note**: Learning course activities can be managed by a provider only when isCourseAcitvitySyncEnabled is true. Please use the [Update learningProvider API](../api/learningprovider-update.md) to update the same.
+
 ## Permissions
 
 One of the following permissions is required to call this API based on the type of learning course activity. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
