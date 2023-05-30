@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
+  "values": [
     {
       "createdDateTime": "2023-01-01T00:00:00Z",
       "id": "860697e3-b0aa-4196-a6c6-7ec361ed58f7",
@@ -91,10 +91,11 @@ Content-type: application/json
       "ocpSubscriptionId": "f9c1ea2d-2c6e-4717-8c3b-7130812d70ba",
       "serviceStatus": [
         {
+          "appliesTo": "User",
+          "provisioningStatus": "Success",
           "servicePlanId": "8b8269e5-f841-416c-ab3a-f5dfb9737986",
           "servicePlanName": "MyPlanName",
-          "provisioningStatus": "Success",
-          "appliesTo": "User"
+          "serviceType": "YammerEnterprise"
         }
       ],
       "skuId": "0816ccb9-3785-4d19-bf78-6c53e2106509",

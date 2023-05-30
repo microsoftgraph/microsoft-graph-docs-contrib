@@ -13390,6 +13390,22 @@
     {
       "ChangeList": [
         {
+          "Id": "c116e583-5405-435b-9773-ef5304ae7539",
+          "ApiChange": "Resource",
+          "ChangedApiName": "companySubscription",
+          "ChangeType": "Addition",
+          "Description": "Added the [companySubscription](https://learn.microsoft.com/en-us/graph/api/resources/companySubscription?view=graph-rest-beta) resource",
+          "Target": "companySubscription"
+        },
+        {
+          "Id": "c116e583-5405-435b-9773-ef5304ae7539",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subscriptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **subscriptions** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
           "Id": "7486594e-94b8-4472-9125-e21cab4bcee9",
           "ApiChange": "Property",
           "ChangedApiName": "accountId",
