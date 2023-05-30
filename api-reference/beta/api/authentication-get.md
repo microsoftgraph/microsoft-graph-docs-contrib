@@ -65,7 +65,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.strongAuthentication.authentication"
+  "@odata.type": "microsoft.graph.signInPreferences"
 }
 -->
 ``` http
