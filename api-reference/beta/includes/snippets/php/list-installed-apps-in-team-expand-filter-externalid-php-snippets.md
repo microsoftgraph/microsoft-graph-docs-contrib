@@ -16,7 +16,7 @@ $queryParameters->filter = "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->installedApps()->get($requestConfiguration);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->installedApps()->get($requestConfiguration);
 
 
 ```

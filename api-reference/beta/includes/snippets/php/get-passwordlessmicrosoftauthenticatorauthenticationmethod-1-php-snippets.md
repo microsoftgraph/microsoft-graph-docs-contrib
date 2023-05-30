@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->me()->authentication()->passwordlessMicrosoftAuthenticatorMethodsById('passwordlessMicrosoftAuthenticatorAuthenticationMethod-id')->get();
+$result = $graphServiceClient->me()->authentication()->passwordlessMicrosoftAuthenticatorMethods()->byPasswordlessMicrosoftAuthenticatorMethodId('passwordlessMicrosoftAuthenticatorAuthenticationMethod-id')->get();
 
 
 ```

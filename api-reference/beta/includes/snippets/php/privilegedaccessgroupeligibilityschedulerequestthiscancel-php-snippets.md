@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->identityGovernance()->privilegedAccess()->group()->eligibilityScheduleRequestsById('privilegedAccessGroupEligibilityScheduleRequest-id')->cancel()->post();
+$graphServiceClient->identityGovernance()->privilegedAccess()->group()->eligibilityScheduleRequests()->byEligibilityScheduleRequestId('privilegedAccessGroupEligibilityScheduleRequest-id')->cancel()->post();
 
 
 ```

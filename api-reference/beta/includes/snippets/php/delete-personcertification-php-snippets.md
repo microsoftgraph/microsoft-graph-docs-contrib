@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->usersById('user-id')->profile()->certificationsById('personCertification-id')->delete();
+$graphServiceClient->users()->byUserId('user-id')->profile()->certifications()->byCertificationId('personCertification-id')->delete();
 
 
 ```

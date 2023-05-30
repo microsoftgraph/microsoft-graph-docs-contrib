@@ -54,7 +54,6 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

@@ -21,7 +21,7 @@ $queryParameters->filter = "startswith(displayName,%20'a')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->groupsById('group-id')->members()->get($requestConfiguration);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->members()->get($requestConfiguration);
 
 
 ```
