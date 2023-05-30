@@ -1,6 +1,6 @@
 ---
 title: "Update multiTenantOrganization"
-description: "Update the properties of a multiTenantOrganization object."
+description: "Update the properties of a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [multiTenantOrganization](../resources/multitenantorganization.md) object.
+Update the properties of a multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

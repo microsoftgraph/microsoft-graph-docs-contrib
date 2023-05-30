@@ -1,6 +1,6 @@
 ---
 title: "Delete multiTenantOrganizationMember"
-description: "Delete a multiTenantOrganizationMember object."
+description: "Remove a tenant from a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.
+Remove a tenant from a multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following example deletes a tenant from a multi-tenant organization.
+The following example removes a tenant from a multi-tenant organization.
 
 ### Request
 

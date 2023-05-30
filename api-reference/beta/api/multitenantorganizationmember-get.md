@@ -1,6 +1,6 @@
 ---
 title: "Get multiTenantOrganizationMember"
-description: "Read the properties and relationships of a multiTenantOrganizationMember object."
+description: "Get a tenant and its properties in the multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.
+Get a tenant and its properties in the multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

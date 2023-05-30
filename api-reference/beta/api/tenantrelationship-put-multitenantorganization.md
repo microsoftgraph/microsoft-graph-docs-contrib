@@ -1,6 +1,6 @@
 ---
 title: "Create multiTenantOrganization"
-description: "Create a new multiTenantOrganization object."
+description: "Create a new multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [multiTenantOrganization](../resources/multitenantorganization.md) object. By default, the creator tenant becomes an owner tenant upon successful creation. Only owner tenants can manage an multi-tenant organization.
+Create a new multi-tenant organization. By default, the creator tenant becomes an owner tenant upon successful creation. Only owner tenants can manage an multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

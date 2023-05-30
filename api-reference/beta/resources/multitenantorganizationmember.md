@@ -18,11 +18,11 @@ Defines a tenant added to a multi-tenant organization.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List multiTenantOrganizationMembers](../api/multitenantorganization-list-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|Get a list of the [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) objects and their properties.|
-|[Create multiTenantOrganizationMember](../api/multitenantorganization-post-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Create a new [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.|
-|[Get multiTenantOrganizationMember](../api/multitenantorganizationmember-get.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Read the properties and relationships of a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.|
-|[Update multiTenantOrganizationMember](../api/multitenantorganizationmember-update.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Update the properties of a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.|
-|[Delete multiTenantOrganizationMember](../api/multitenantorganization-delete-tenants.md)|None|Delete a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.|
+|[List multiTenantOrganizationMembers](../api/multitenantorganization-list-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|List the tenants and their properties in the multi-tenant organization.|
+|[Create multiTenantOrganizationMember](../api/multitenantorganization-post-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Add a tenant to a multi-tenant organization.|
+|[Get multiTenantOrganizationMember](../api/multitenantorganizationmember-get.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Get a tenant and its properties in the multi-tenant organization.|
+|[Update multiTenantOrganizationMember](../api/multitenantorganizationmember-update.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Update the properties of a tenant in a multi-tenant organization.|
+|[Delete multiTenantOrganizationMember](../api/multitenantorganization-delete-tenants.md)|None|Remove a tenant from a multi-tenant organization.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +34,7 @@ Defines a tenant added to a multi-tenant organization.
 |role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member` (default). Tenants with the owner role can manage the multi-tenant organization. There can be multiple tenants with the owner role in a multi-tenant organization. Tenants with the member role can participate in a multi-tenant organization.|
 |state|multiTenantOrganizationMemberState|State of the tenant in the multi-tenant organization. The possible values are: `pending`, `active`, `removed`. Tenants in the pending state must join the multi-tenant organization by their administrator to participate in the multi-tenant organization. Tenants in the active state can participate in the multi-tenant organization. Tenants in the removed state are in the process of being removed from the multi-tenant organization. Read-only.|
 |tenantId|String|Tenant ID of the tenant added to the multi-tenant organization. Set at the time tenant is added.|
-|transitionDetails|[multiTenantOrganizationMemberTransitionDetails](../resources/multitenantorganizationmembertransitiondetails.md)|Object that provides the status of pending updates to the tenant role and member state. Read-only.|
+|transitionDetails|[multiTenantOrganizationMemberTransitionDetails](../resources/multitenantorganizationmembertransitiondetails.md)|Details of the processing status for a tenant in a multi-tenant organization. Read-only.|
 
 ## Relationships
 None.

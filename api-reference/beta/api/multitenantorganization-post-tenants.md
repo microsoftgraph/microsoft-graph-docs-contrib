@@ -1,6 +1,6 @@
 ---
 title: "Create multiTenantOrganizationMember"
-description: "Create a new multiTenantOrganizationMember object."
+description: "Add a tenant to a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object. Adds a tenant to a multi-tenant organization. The added tenant is in the pending state until the administrator of the added tenant joins the multi-tenant organization. Note that a tenant can be part of only one multi-tenant organization.
+Add a tenant to a multi-tenant organization. The added tenant is in the pending state until the administrator of the added tenant joins the multi-tenant organization. Note that a tenant can be part of only one multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

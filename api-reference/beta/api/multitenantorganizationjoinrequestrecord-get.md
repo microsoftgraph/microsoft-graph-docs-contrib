@@ -1,6 +1,6 @@
 ---
 title: "Get multiTenantOrganizationJoinRequestRecord"
-description: "Read the properties and relationships of a multiTenantOrganizationJoinRequestRecord object."
+description: "Get the status of a tenant joining a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md) object.
+Get the status of a tenant joining a multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [multiTenantOr
 
 ## Examples
 
-The following example gets the status of the pending updates to tenant member state.
+The following example gets the status of a tenant joining a multi-tenant organization.
 
 ### Request
 
