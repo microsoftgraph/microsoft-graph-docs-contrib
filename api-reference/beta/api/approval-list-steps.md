@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), lists the [approvalStep](../resources/approvalstep.md) objects associated with an [approval](../resources/approval.md) object.  This call can be made by an approver, providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
+List the [approvalStep](../resources/approvalstep.md) objects associated with an [approval](../resources/approval.md). This API request is made by an approver in the following scenarios:
 
-In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), lists the [approvalStep](../resources/approvalstep.md) objects associated with an [approval](../resources/approval.md) object.  This call can be made by an approver, providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
+- In [entitlement management](../resources/entitlementmanagement-overview.md), providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
+- In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
 
 ## Permissions
 
