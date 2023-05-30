@@ -38,7 +38,7 @@ var today = DateTime.Now.Date;
 // Use the request builder to generate a regular
 // request to /me/calendarview?startDateTime="start"&endDateTime="end"
 var eventsRequest = graphClient.Me.CalendarView
-    .ToGetRequestInformation(requestConfiguration => 
+    .ToGetRequestInformation(requestConfiguration =>
         {
             requestConfiguration.QueryParameters.StartDateTime = today.ToString("yyyy-MM-ddTHH:mm:ssK");
             requestConfiguration.QueryParameters.EndDateTime = today.AddDays(1).ToString("yyyy-MM-ddTHH:mm:ssK");
@@ -194,7 +194,7 @@ System.out.println(String.format("You have %d events on your calendar today", ev
 ```go
 import (
     msgraphgocore "github.com/microsoftgraph/msgraph-sdk-go-core"
-    "github.com/microsoftgraph/msgraph-sdk-go/me"
+    "github.com/microsoftgraph/msgraph-sdk-go/users"
     "github.com/microsoftgraph/msgraph-sdk-go/models"
 )
 
@@ -210,7 +210,7 @@ nowMidnight := time.Date(now.Year(), now.Month(), now.Day(),
 startDateTime := nowMidnight.UTC().Format(time.RFC3339)
 endDateTime := nowMidnight.AddDate(0, 0, 1).UTC().Format(time.RFC3339)
 
-query := me.CalendarViewRequestBuilderGetQueryParameters{
+query := users.ItemCalendarViewRequestBuilderGetQueryParameters{
     StartDateTime: &startDateTime,
     EndDateTime:   &endDateTime,
     Select:        []string{"subject", "id"},
@@ -221,7 +221,7 @@ query := me.CalendarViewRequestBuilderGetQueryParameters{
 eventsRequest, _ := client.Me().
     CalendarView().
     ToGetRequestInformation(context.Background(),
-        &me.CalendarViewRequestBuilderGetRequestConfiguration{
+        &users.ItemCalendarViewRequestBuilderGetRequestConfiguration{
             QueryParameters: &query,
         })
 
@@ -490,7 +490,7 @@ System.out.println(String.format("You have %d events on your calendar today", ev
 ```go
 import (
     msgraphgocore "github.com/microsoftgraph/msgraph-sdk-go-core"
-    "github.com/microsoftgraph/msgraph-sdk-go/me"
+    "github.com/microsoftgraph/msgraph-sdk-go/users"
     "github.com/microsoftgraph/msgraph-sdk-go/models"
     "github.com/thlib/go-timezone-local/tzlocal"
 )
@@ -528,7 +528,7 @@ addEventRequest, _ := client.Me().
 
 viewStart := nowMidnight.Format(time.RFC3339)
 viewEnd := nowMidnight.Add(time.Hour * 24).Format(time.RFC3339)
-query := me.CalendarViewRequestBuilderGetQueryParameters{
+query := users.ItemCalendarViewRequestBuilderGetQueryParameters{
     StartDateTime: &viewStart,
     EndDateTime:   &viewEnd,
     Select:        []string{"subject", "id"},
@@ -539,7 +539,7 @@ query := me.CalendarViewRequestBuilderGetQueryParameters{
 eventsRequest, _ := client.Me().
     CalendarView().
     ToGetRequestInformation(context.Background(),
-        &me.CalendarViewRequestBuilderGetRequestConfiguration{
+        &users.ItemCalendarViewRequestBuilderGetRequestConfiguration{
             QueryParameters: &query,
         })
 
