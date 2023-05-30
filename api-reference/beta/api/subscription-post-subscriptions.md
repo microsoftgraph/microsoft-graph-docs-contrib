@@ -39,6 +39,8 @@ Depending on the resource and the permission type (delegated or application) req
 |:-----|:-----|:-----|:-----|
 |[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[callRecord](../resources/callrecords-callrecord.md) | Not supported | Not supported | CallRecords.Read.All  |
+|[callTranscript](/graph/api/resources/calltranscript) <br /> communications/onlineMeetings/getAllTranscripts <br /> Any transcript becomes available in the tenant. | Not supported | Not supported | OnlineMeetingTranscript.Read.All |
+|[callTranscript](/graph/api/resources/calltranscript) <br /> communications/onlineMeetings/{onlineMeetingId}/transcripts <br /> Any transcript becomes available for a specific meeting. | OnlineMeetingTranscript.Read.All | Not supported | OnlineMeetingTranscript.Read.All |
 |[channel](../resources/channel.md) <br />/teams/getAllChannels <br /> All channels in an organization. | Not supported  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All |
 |[channel](../resources/channel.md) <br />/teams/{id}/channels <br /> All channels in a particular team in an organization.  | Channel.ReadBasic.All, ChannelSettings.Read.All  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) <br />/chats <br />All chats in an organization. | Not supported | Not supported | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
@@ -187,6 +189,7 @@ The following are valid values for the resource property.
 |:------ |:----- |
 |[baseTask](../resources/basetask.md) (deprecated) | `/me/tasks/lists/{Id}/tasks`
 |[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[callTranscript](/graph/api/resources/calltranscript) | `communications/onlineMeetings/getAllTranscripts`, <br> `communications/onlineMeetings/{onlineMeetingId}/transcripts`|
 |[Channels](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[Chat](../resources/chat.md)|`/chats`, `/chats/{id}`|
 |[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
@@ -206,6 +209,7 @@ The following are valid values for the resource property.
 |[Users](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
 |[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
+
 
 > **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 

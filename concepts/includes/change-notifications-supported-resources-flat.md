@@ -52,3 +52,4 @@ Currently, subscriptions are enabled for the following resources.
 [todoTask]: /graph/api/resources/todotask
 [online meeting]: /graph/api/resources/onlinemeeting
 [baseTask]: /graph/api/resources/basetask
+[CallTranscript]: /graph/api/resources/calltranscript

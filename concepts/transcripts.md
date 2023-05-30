@@ -1,0 +1,79 @@
+---
+title: "Get change notification for meeting transcripts using Microsoft Graph"
+description: "Learn how to get notifications for meeting transcripts using Microsoft Graph APIs."
+author: "v-sdhakshina"
+ms.localizationpriority: high
+ms.prod: "microsoft-teams"
+ms.custom: scenarios:getting-started
+---
+
+# Get change notification for meeting transcripts using Microsoft Graph
+
+Change notifications enable you to subscribe to changes (create) to transcripts. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) is available after an online meeting.
+
+Continue with this article about scenarios for the transcript resource. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
+
+## Subscribe to any transcripts being available at tenant level
+
+To get change notifications for any transcript being available for any online meeting for a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. The notification for a transcript will be sent only if subscription is made before transcription starts. This subscription is supported only for regular scheduled meetings.
+
+### Permissions
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported |
+|Delegated (personal Microsoft account) | Not supported   |
+|Application | OnlineMeetingTranscript.Read.All   |
+
+### Example
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+{
+  "changeType": "created",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "communications/onlineMeetings/getAllTranscripts",
+  "includeResourceData": false,
+  "expirationDateTime": "2023-03-20T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
+## Subscribe to any transcripts being available for a particular online meeting
+
+To get change notifications for any transcript being available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. The notification for a transcript will be sent only if subscription is made before transcription starts. This subscription is supported only for regular scheduled meetings.
+
+### Permissions
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | OnlineMeetingTranscript.Read.All |
+|Delegated (personal Microsoft account) | Not supported   |
+|Application | OnlineMeetingTranscript.Read.All   |
+
+### Example
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+{
+  "changeType": "created",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "communications/onlineMeetings/{onlineMeetingId}/transcripts",
+  "includeResourceData": false,
+  "expirationDateTime": "2023-03-20T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
+## See also
+
+* [Microsoft Graph change notifications](webhooks.md)
+* [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
+* [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
+* [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
+* [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
+* [Microsoft Teams API overview](teams-concept-overview.md)
+* [Change notifications team or channel C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification-team-channel/csharp)
+* [Change notifications team or channel Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-change-notification-team-channel/nodejs)

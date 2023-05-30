@@ -59,6 +59,8 @@ Available in only the beta endpoint:
 - New or changed messages in a user's mailFolder: `/users/{id}/mailFolders/{id}/messages`
 - Teams Meeting status information updates: `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{joinWebUrl}`
 - New or changed members in all channels across the entire tenant: `/teams/getAllChannels/getAllMembers`
+- New transcript being available for any online meeting for a tenant: `communications/onlineMeetings/getAllTranscripts`
+- New transcript being available for a particular online meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts`
 
 Change notifications that include **chatMessage**, **onlineMeeting**, or **presence** resource data consist of all the properties of the changed instance. They do not support returning only selected properties of the instance. 
 

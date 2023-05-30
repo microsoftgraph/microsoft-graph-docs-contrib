@@ -33,6 +33,7 @@ ms.localizationpriority: high
 | Print [printTaskDefinition][]                  | 4,230 minutes (under 3 days)   |
 | [todoTask][]                                   | 4,230 minutes (under 3 days) <br/><br/>Webhooks for this resource are only available in the global endpoint and not in the national clouds.  |
 | **baseTask** (deprecated)                      | 4,230 minutes (under 3 days)   |
+| Teams [CallTranscript][]                       | 60 minutes (1 hour)            |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
 
@@ -57,3 +58,4 @@ ms.localizationpriority: high
 [conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team
 [onlineMeeting]: /graph/api/resources/onlinemeeting
+[CallTranscript]: /graph/api/resources/calltranscript
