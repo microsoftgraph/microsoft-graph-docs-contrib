@@ -14,6 +14,7 @@ Currently, subscriptions are enabled for the following resources.
 - An [alert][] from the Microsoft Graph Security API.
 - A [baseTask][] (deprecated) of a user in Microsoft To-Do.*
 - A [callRecord][] produced after a call or meeting in Microsoft Teams.
+- A [CallTranscript][] for an online meeting in Teams.*
 - A [channel][] in Microsoft Teams.
 - A [chat][] in Microsoft Teams.
 - A [chatMessage][] sent via teams or channels in Microsoft Teams.
