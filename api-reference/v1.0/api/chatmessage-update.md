@@ -40,10 +40,20 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Chat.UpdatePolicyViolation.All, Chat.ReadWrite.All |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+
+To update a **chatMessage** in a **channel**:
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
+```
+
+To update a **chatMessage** in a **chat**:
+<!-- { "blockType": "ignored" } -->
+```http
 PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
@@ -117,24 +127,24 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessagepatchpolicyviolationall-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/chatmessagepatchpolicyviolationall-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chatmessagepatchpolicyviolationall-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chatmessagepatchpolicyviolationall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/chatmessagepatchpolicyviolationall-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/chatmessagepatchpolicyviolationall-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chatmessagepatchpolicyviolationall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/chatmessagepatchpolicyviolationall-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chatmessagepatchpolicyviolationall-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -203,32 +213,33 @@ Content-Type: application/json
   },
   "attachments": [],
   "mentions": [],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/patch-chatmessage-1-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/patch-chatmessage-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/patch-chatmessage-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-1-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/patch-chatmessage-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -314,32 +325,33 @@ Content-Type: application/json
       }
     }
   ],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/patch-chatmessage-2-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/patch-chatmessage-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/patch-chatmessage-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-2-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/patch-chatmessage-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -411,32 +423,33 @@ Content-Type: application/json
     }
   ],
   "mentions": [],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-3-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/patch-chatmessage-3-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/patch-chatmessage-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/patch-chatmessage-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-3-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/patch-chatmessage-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -615,32 +628,162 @@ Content-Type: application/json
         }
       }
     }
+  ],
+  "messageHistory": [
+    {
+      "modifiedDateTime": "2018-10-21T08:10:30.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "angry",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "f1b66449-b46d-49b0-9c3c-53c10a5c818e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:32.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "laugh",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T02:17:14.67Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "like",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "f1b66449-b46d-49b0-9c3c-53c10a5c818e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T02:34:40.3Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "like",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "4c9041b7-449a-40f7-8855-56da239b9fd1",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:25.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "like",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:31.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "heart",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:33.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "sad",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:34.489Z",
+      "actions": "surprised",
+      "reaction": {
+        "reactionType": "sad",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    }
   ]
 }
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-4-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/patch-chatmessage-4-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/patch-chatmessage-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/patch-chatmessage-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-4-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/patch-chatmessage-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-chatmessage-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-chatmessage-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

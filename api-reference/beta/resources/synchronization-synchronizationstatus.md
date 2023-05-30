@@ -19,14 +19,14 @@ Represents the current status of the [synchronizationJob](synchronization-synchr
 
 | Property                              | Type      | Description    |
 |:--------------------------------------|:----------|:---------------|
-|code|String|High-level status code of the synchronization job. Possible values are: `NotConfigured`, `NotRun`, `Active`, `Paused`, `Quarantine`.|
+|code|synchronizationStatusCode|High-level status code of the synchronization job. Possible values are: `NotConfigured`, `NotRun`, `Active`, `Paused`, `Quarantine`.|
 |countSuccessiveCompleteFailures|Int64|Number of consecutive times this job failed.|
 |escrowsPruned|Boolean|`true` if the job's escrows (object-level errors) were pruned during initial synchronization. Escrows can be pruned if during the initial synchronization, you reach the threshold of errors that would normally put the job in quarantine. Instead of going into quarantine, the synchronization process clears the job's errors and continues until the initial synchronization is completed. When the initial synchronization is completed, the job will pause and wait for the customer to clean up the errors.|
 |lastExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Details of the last execution of the job.|
 |lastSuccessfulExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Details of the last execution of this job, which didn't have any errors.|
 |lastSuccessfulExecutionWithExports|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Details of the last execution of the job, which exported objects into the target directory.|
 |progress|[synchronizationProgress](synchronization-synchronizationprogress.md) collection|Details of the progress of a job toward completion.|
-|quarantine|[synchronizationQuarantine](synchronization-quarantine.md)|If job is in quarantine, quarantine details.|
+|quarantine|[synchronizationQuarantine](synchronization-synchronizationquarantine.md)|If job is in quarantine, quarantine details.|
 |steadyStateFirstAchievedTime|DateTimeOffset|The time when steady state (no more changes to the process) was first achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |steadyStateLastAchievedTime|DateTimeOffset|The time when steady state (no more changes to the process) was last achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |synchronizedEntryCountByType|[stringKeyLongValuePair](synchronization-stringkeylongvaluepair.md) collection|Count of synchronized objects, listed by object type.|

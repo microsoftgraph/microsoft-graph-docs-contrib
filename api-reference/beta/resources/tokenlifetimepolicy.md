@@ -23,9 +23,9 @@ Inherits from [stsPolicy](stsPolicy.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [List tokenLifetimePolicies](../api/tokenlifetimepolicy-list.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Read properties and relationships of tokenLifetimePolicies objects. |
 | [Create tokenLifetimePolicy](../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Create a tokenLifetimePolicy object. |
 | [Get tokenLifetimePolicy](../api/tokenlifetimepolicy-get.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Read properties and relationships of a tokenLifetimePolicy object. |
-| [List tokenLifetimePolicies](../api/tokenlifetimepolicy-list.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Read properties and relationships of tokenLifetimePolicies objects. |
 | [Update tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | None | Update a tokenLifetimePolicy object. |
 | [Delete tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | None | Delete a tokenLifetimePolicy object. |
 | [List appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
@@ -38,13 +38,14 @@ Inherits from [stsPolicy](stsPolicy.md).
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String| Unique identifier for this policy. Read-only.|
-|definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. See below for more details about the JSON schema for this property. Required.|
+|definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. For more information about the JSON schema for this property, see [Properties of a token lifetime policy definition](#properties-of-a-token-lifetime-policy-definition). Required.|
 |description|String| Description for this policy.|
 |displayName|String| Display name for this policy. Required.|
 |isOrganizationDefault|Boolean|If set to `true`, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is `false`.|
 
 
 ### Properties of a token lifetime policy definition
+
 The properties below form the JSON object that represents a token lifetime policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the **definition** property. An example is shown below in JSON format:
 
 <!-- {

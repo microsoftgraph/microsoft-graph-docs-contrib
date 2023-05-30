@@ -14,7 +14,7 @@ $requestBody->setTargetServicePlanId('30d0e128-de93-41dc-89ec-33d84bb662a0');
 
 
 
-$graphServiceClient->deviceManagement()->managedDevicesById('managedDevice-id')->resizeCloudPc()->post($requestBody);
+$graphServiceClient->deviceManagement()->managedDevices()->byManagedDeviceId('managedDevice-id')->resizeCloudPc()->post($requestBody);
 
 
 ```

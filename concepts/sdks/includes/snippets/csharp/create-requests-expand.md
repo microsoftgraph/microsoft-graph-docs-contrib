@@ -5,5 +5,5 @@
 
 string messageId = "AQMkAGUy...";
 var message = await graphClient.Me.Messages[messageId]
-    .GetAsync( requestConfig => requestConfig.QueryParameters.Select = new string[] { "attachments" });
+    .GetAsync( requestConfig => requestConfig.QueryParameters.Expand = new string[] { "attachments" });
 ```

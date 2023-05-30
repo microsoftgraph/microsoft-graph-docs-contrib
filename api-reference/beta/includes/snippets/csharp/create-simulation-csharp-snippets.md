@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Simulation
 {
 	DisplayName = "Graph Simulation",
-	PayloadDeliveryPlatform = PayloadDeliveryPlatform.Email,
 	DurationInDays = 7,
 	AttackTechnique = SimulationAttackTechnique.CredentialHarvesting,
-	AttackType = SimulationAttackType.Social,
 	Status = SimulationStatus.Scheduled,
-	CompletionDateTime = DateTimeOffset.Parse("2022-09-16T06:13:08.4297612Z"),
-	LaunchDateTime = DateTimeOffset.Parse("2022-09-05T06:13:08.4297612Z"),
+	DurationInDays = 3,
 	IncludedAccountTarget = new AccountTargetContent
 	{
 		OdataType = "#microsoft.graph.addressBookAccountTargetContent",

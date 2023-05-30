@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	Categories = @(
+	categories = @(
 		"Professional"
 	)
-	Proficiency = "advancedProfessional"
+	proficiency = "advancedProfessional"
 }
 
 # A UPN can also be used as -UserId.

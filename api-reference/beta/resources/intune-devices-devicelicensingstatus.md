@@ -25,8 +25,8 @@ Indicates the device licensing status after Windows device based subscription ha
 |deviceIsNotAzureActiveDirectoryJoined|2|This status is set when the device is not joined to Azure Active Directory.|
 |verifyingMicrosoftDeviceIdentity|3|This status is set when the Microsoft device identity is being verified.|
 |deviceIdentityVerificationFailed|4|This status is set when the Microsoft device identity verification fails.|
-|verifyingMirosoftAccountIdentity|5|This status is set when the Microsoft account identity is being verified.|
-|mirosoftAccountVerificationFailed|6|This status is set when the Microsoft account identity verification fails.|
+|verifyingMicrosoftAccountIdentity|5|This status is set when the Microsoft account identity is being verified.|
+|microsoftAccountVerificationFailed|6|This status is set when the Microsoft account identity verification fails.|
 |acquiringDeviceLicense|7|This status is set when the device license is being acquired.|
 |refreshingDeviceLicense|8|This status is set when the device license is being refreshed.|
 |deviceLicenseRefreshSucceed|9|This status is set when the device license refresh succeeds.|

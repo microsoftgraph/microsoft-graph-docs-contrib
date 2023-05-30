@@ -11,14 +11,14 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Language();
 $additionalData = [
-'isEnabled' => false,
+		'isEnabled' => false,
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->languagesById('userFlowLanguageConfiguration-id')->put($requestBody);
+$graphServiceClient->identity()->b2cUserFlows()->byB2cUserFlowId('b2cIdentityUserFlow-id')->languages()->byLanguageId('userFlowLanguageConfiguration-id')->put($requestBody);
 
 
 ```

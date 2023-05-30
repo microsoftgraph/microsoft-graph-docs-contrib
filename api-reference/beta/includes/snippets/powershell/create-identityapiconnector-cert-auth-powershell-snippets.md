@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	DisplayName = "Test API"
-	TargetUrl = "https://someotherapi.com/api"
-	AuthenticationConfiguration = @{
+	displayName = "Test API"
+	targetUrl = "https://someotherapi.com/api"
+	authenticationConfiguration = @{
 		"@odata.type" = "#microsoft.graph.pkcs12Certificate"
-		Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
-		Password = "<password>"
+		pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
+		password = "<password>"
 	}
 }
 

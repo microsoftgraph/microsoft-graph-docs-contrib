@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.WindowsUpdates
 
 $params = @{
-	UpdateCategory = "feature"
-	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice"
-	Ids = @(
+	updateCategory = "feature"
+	memberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice"
+	ids = @(
 		"String"
 		"String"
 		"String"

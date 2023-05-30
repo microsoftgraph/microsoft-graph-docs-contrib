@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.WindowsUpdates
 
 $params = @{
-	MemberEntityType = "String"
-	AddMembers = @(
+	memberEntityType = "String"
+	addMembers = @(
 		"String"
 	)
-	RemoveMembers = @(
+	removeMembers = @(
 		"String"
 	)
-	AddExclusions = @(
+	addExclusions = @(
 		"String"
 	)
-	RemoveExclusions = @(
+	removeExclusions = @(
 		"String"
 	)
 }

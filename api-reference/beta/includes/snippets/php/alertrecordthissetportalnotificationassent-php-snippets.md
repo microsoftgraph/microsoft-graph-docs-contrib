@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->deviceManagement()->monitoring()->alertRecordsById('alertRecord-id')->deviceManagementSetPortalNotificationAsSent()->post();
+$graphServiceClient->deviceManagement()->monitoring()->alertRecords()->byAlertRecordId('alertRecord-id')->microsoftGraphDeviceManagementSetPortalNotificationAsSent()->post();
 
 
 ```

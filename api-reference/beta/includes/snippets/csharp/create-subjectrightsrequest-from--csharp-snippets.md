@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new SubjectRightsRequest
@@ -33,6 +35,13 @@ var requestBody = new SubjectRightsRequest
 	SiteLocations = new SubjectRightsRequestSiteLocation
 	{
 		OdataType = "microsoft.graph.subjectRightsRequestAllSiteLocation",
+	},
+	Approvers = new List<User>
+	{
+		new User
+		{
+			Id = "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+		},
 	},
 };
 var result = await graphClient.Privacy.SubjectRightsRequests.PostAsync(requestBody);

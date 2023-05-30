@@ -14,7 +14,7 @@ $requestBody->setGroupIds(['fee2c45b-915a-4a64-b130-f4eb9e75525e', '4fe90ae7-065
 
 
 
-$requestResult = $graphServiceClient->me()->checkMemberGroups()->post($requestBody);
+$result = $graphServiceClient->me()->checkMemberGroups()->post($requestBody);
 
 
 ```

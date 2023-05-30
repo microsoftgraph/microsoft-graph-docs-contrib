@@ -4,32 +4,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var unifiedRoleManagementPolicyRule = new UnifiedRoleManagementPolicyExpirationRule
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new UnifiedRoleManagementPolicyRule
 {
+	OdataType = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
 	Id = "Expiration_EndUser_Assignment",
-	IsExpirationRequired = true,
-	MaximumDuration = new Duration("PT1H45M"),
 	Target = new UnifiedRoleManagementPolicyRuleTarget
 	{
+		OdataType = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget",
 		Caller = "EndUser",
-		Operations = new List<String>()
+		Operations = new List<string>
 		{
-			"All"
+			"All",
 		},
 		Level = "Assignment",
-		InheritableSettings = new List<String>()
+		InheritableSettings = new List<String>
 		{
 		},
-		EnforcedSettings = new List<String>()
+		EnforcedSettings = new List<String>
 		{
-		}
-	}
+		},
+	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"isExpirationRequired" , true
+		},
+		{
+			"maximumDuration" , "PT1H45M"
+		},
+	},
 };
+var result = await graphClient.Policies.RoleManagementPolicies["{unifiedRoleManagementPolicy-id}"].Rules["{unifiedRoleManagementPolicyRule-id}"].PatchAsync(requestBody);
 
-await graphClient.Policies.RoleManagementPolicies["{unifiedRoleManagementPolicy-id}"].Rules["{unifiedRoleManagementPolicyRule-id}"]
-	.Request()
-	.UpdateAsync(unifiedRoleManagementPolicyRule);
 
 ```
