@@ -75,7 +75,7 @@ A Microsoft 365 administrator can approve or deny consent requests. This can be 
 
    <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
 
-1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
+1. The data extraction process can take some time, depending on the size of your Microsoft 365 tenant.
 
 ---
 
