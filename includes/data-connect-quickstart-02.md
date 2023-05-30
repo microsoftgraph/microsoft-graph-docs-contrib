@@ -22,31 +22,31 @@ Set up your Microsoft 365 tenant to enable the usage of Microsoft Graph Data Con
 
     ![A screenshot showing the active groups in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-act-grp.png)
 
-1. Select the **Add a group** option.
+1. Select **Add a group**.
 
 1. Use the following page to create the new **mail-enabled** security group.
-   - **Type**: Select Mail-enabled security
+   - **Type**: Select Mail-enabled security.
 
     ![A screenshot showing a user selecting the mail-enabled security for a new group in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-mail-sec.png)
 
-   - **Name**: Enter Consent Request Approvers
+   - **Name**: Enter consent request approvers.
 
     ![A screenshot showing a user is giving the group a name of "Consent Request Approvers" in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-cons-apprv.png)
 
    - **Owners**: Select **Owners** in the left pane and add at least one owner for the group.
-   - **Members**: Select **Members** and add the two users that you enabled the **Global administrator** role to this group.
+   - **Members**: Select **Members** and add the two users who have been given the **global administrator** role to this group.
    - **Group email address**: Enter *consentrequestapprovers*.
 
     ![A screenshot showing a user creating the email address for the previously created group in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-cons-apprv-pref.png)
 
-1. Finally click **Finish**. It can take up to an hour** before the newly created group shows up in the list. 
+1. Click **Finish**. It can take up to an hour before the newly created group shows up in the list. 
 
 
 ## Enable Microsoft Graph Data Connect in your Microsoft 365 tenant
 
-In this step, you will enable the Microsoft Graph Data Connect service on your Microsoft 365 tenant.
+Enable the Microsoft Graph Data Connect service on your Microsoft 365 tenant.
 
-1. While you are still signed in to the Microsoft 365 Admin Portal, select the **Settings > Org settings** menu item. You might have to click **Show all** before you are able to view **Settings**.
+1. While you are still signed in to the Microsoft 365 Admin Portal, select **Settings > Org settings**. You may have to click **Show all** before you are able to view **Settings**.
 
 1. Select the **Microsoft Graph Data Connect** service.
 
