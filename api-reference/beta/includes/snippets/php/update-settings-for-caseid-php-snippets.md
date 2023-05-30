@@ -41,7 +41,7 @@ $ocr->setMaxImageSize(12000);
 $requestBody->setOcr($ocr);
 
 
-$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->settings()->patch($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->settings()->patch($requestBody);
 
 
 ```

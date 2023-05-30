@@ -18,7 +18,7 @@ $requestBody->setCustomTags(['Demo', ]);
 
 
 
-$result = $graphServiceClient->security()->incidentsById('incident-id')->patch($requestBody);
+$result = $graphServiceClient->security()->incidents()->byIncidentId('incident-id')->patch($requestBody);
 
 
 ```

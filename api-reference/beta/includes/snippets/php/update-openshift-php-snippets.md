@@ -51,7 +51,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->teamsById('team-id')->schedule()->openShiftsById('openShift-id')->put($requestBody);
+$graphServiceClient->teams()->byTeamId('team-id')->schedule()->openShifts()->byOpenShiftId('openShift-id')->put($requestBody);
 
 
 ```

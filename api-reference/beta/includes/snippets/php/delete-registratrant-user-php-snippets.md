@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->usersById('user-id')->onlineMeetingsById('onlineMeeting-id')->registration()->registrantsById('meetingRegistrantBase-id')->delete();
+$graphServiceClient->users()->byUserId('user-id')->onlineMeetings()->byOnlineMeetingId('onlineMeeting-id')->registration()->registrants()->byRegistrantId('meetingRegistrantBase-id')->delete();
 
 
 ```
