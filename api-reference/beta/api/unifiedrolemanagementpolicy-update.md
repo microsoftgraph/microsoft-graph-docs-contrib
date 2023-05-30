@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To update the details of a role management policy for either Azure AD roles or PIM for groups membership and ownership:
+To update the details of a role management policy for either Azure AD roles or groups.
 <!-- {
   "blockType": "ignored"
 }
