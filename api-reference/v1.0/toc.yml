@@ -4734,9 +4734,9 @@ items:
     - name: Extensions
       items:
       - name: Overview
+        displayName: Directory extensions, Schema extensions, Open extensions, On-premises extensions
         href: /graph/extensibility-overview?context=graph/api/1.0&preserve-view=true
-      - name: Directory extension
-        displayname: Groups, Users, Applications, Organization, Devices
+      - name: Directory extensions
         items:
         - name: Extension property
           href: resources/extensionproperty.md
@@ -4750,8 +4750,7 @@ items:
           href: api/extensionproperty-delete.md
         - name: Get available extension properties
           href: api/directoryobject-getavailableextensionproperties.md
-      - name: Open extension
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+      - name: Open extensions
         items:
         - name: Open type extension
           href: resources/opentypeextension.md
@@ -4764,7 +4763,6 @@ items:
         - name: Delete
           href: api/opentypeextension-delete.md
       - name: Schema extension
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
         - name: Schema extension
           href: resources/schemaextension.md
