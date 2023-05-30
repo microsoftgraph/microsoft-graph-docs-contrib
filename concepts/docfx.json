@@ -9,6 +9,7 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+          "concepts/sdks/snippets/dotnet/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",

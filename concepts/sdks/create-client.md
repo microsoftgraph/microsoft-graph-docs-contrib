@@ -15,7 +15,7 @@ The following code examples show how to create an instance of a Microsoft Graph 
 
 # [C#](#tab/CS)
 
-:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClient.cs" id="DeviceCodeSnippet":::
+:::code language="csharp" source="snippets/dotnet/src/SdkSnippets/Snippets/CreateClient.cs" id="DeviceCodeSnippet":::
 
 # [Javascript](#tab/Javascript)
 
