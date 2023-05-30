@@ -22,7 +22,7 @@ Retrieve the properties of an [approval](../resources/approval.md) object. This 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Permissions required for calling this API for entitlement management
+### For entitlement management
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
