@@ -55,7 +55,7 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|rules|collection of [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) |The list of policy rules to be updated.|
+|rules|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) collection |The list of policy rules to be updated.|
 
 ## Response
 
