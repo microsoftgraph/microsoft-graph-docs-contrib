@@ -26,6 +26,7 @@ You can use several attributes to change the behavior of the component. The requ
 | resource | resource | The resource to get from Microsoft Graph (for example, `/me` or `/users`). |
 | placeholder | placeholder | The placeholder rendered in the picker (for example, `Select a user` or `Select a task list`). |
 | key-name | keyName | The key to be rendered in the picker (for example, `displayName`). |
+| selected-value | selectedValue | The value to be set as the currently selected option in the picker, must be present in the options provided from the graph query |
 | scopes | scopes | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component will use these scopes (with a supported provider) to ensure that the user has consented to the right permission. |
 | version | version | Optional API version to use when making the GET request. Default is `v1.0`.  |
 | max-pages | maxPages | Optional number of pages (for resources that support paging). Default is 3. Setting this value to 0 will get all pages.  |
