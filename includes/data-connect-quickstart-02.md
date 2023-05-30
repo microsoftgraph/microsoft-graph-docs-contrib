@@ -18,7 +18,7 @@ Set up your Microsoft 365 tenant to enable the usage of Microsoft Graph Data Con
 
 1. Open a browser and go to your [Microsoft 365 Admin Portal](https://admin.microsoft.com/).
 
-1. On the sidebar navigation, select **Active teams & Groups**.
+1. On the sidebar navigation, click **Active teams & Groups**.
 
     ![A screenshot showing the active groups in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-act-grp.png)
 
