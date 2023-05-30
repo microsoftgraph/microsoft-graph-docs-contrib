@@ -26,7 +26,7 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 ```csharp
 var messages = await graphClient.Me.Messages
-    .GetAsync(requestConfiguration => 
+    .GetAsync(requestConfiguration =>
     {
         requestConfiguration.QueryParameters.Top = 10;
         requestConfiguration.QueryParameters.Select = new string[] { "sender", "subject", "body" };
@@ -123,18 +123,18 @@ while(messagesPage != null) {
 import (
     abstractions "github.com/microsoft/kiota-abstractions-go"
     msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
-    "github.com/microsoftgraph/msgraph-sdk-go/me"
+    "github.com/microsoftgraph/msgraph-sdk-go/users"
     "github.com/microsoftgraph/msgraph-sdk-go/models"
 )
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.body-content-type=\"text\"")
 
-query := me.MessagesRequestBuilderGetQueryParameters{
+query := users.ItemMailFoldersItemMessagesRequestBuilderGetQueryParameters{
     Select: []string{"body", "sender", "subject"},
 }
 
-options := me.MessagesRequestBuilderGetRequestConfiguration{
+options := users.ItemMailFoldersItemMessagesRequestBuilderGetRequestConfiguration{
     Headers: headers,
     QueryParameters: &query,
 }
@@ -251,18 +251,18 @@ while (!pageIterator.isComplete()) {
 import (
     abstractions "github.com/microsoft/kiota-abstractions-go"
     msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
-    "github.com/microsoftgraph/msgraph-sdk-go/me"
+    "github.com/microsoftgraph/msgraph-sdk-go/users"
     "github.com/microsoftgraph/msgraph-sdk-go/models"
 )
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.body-content-type=\"text\"")
 
-query := me.MessagesRequestBuilderGetQueryParameters{
+query := users.ItemMailFoldersItemMessagesRequestBuilderGetQueryParameters{
     Select: []string{"body", "sender", "subject"},
 }
 
-options := me.MessagesRequestBuilderGetRequestConfiguration{
+options := users.ItemMailFoldersItemMessagesRequestBuilderGetRequestConfiguration{
     Headers: headers,
     QueryParameters: &query,
 }
