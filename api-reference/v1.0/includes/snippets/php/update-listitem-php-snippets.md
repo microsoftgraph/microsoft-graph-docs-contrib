@@ -19,7 +19,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->itemsById('listItem-id')->fields()->patch($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->lists()->byListId('list-id')->items()->byItemId('listItem-id')->fields()->patch($requestBody);
 
 
 ```

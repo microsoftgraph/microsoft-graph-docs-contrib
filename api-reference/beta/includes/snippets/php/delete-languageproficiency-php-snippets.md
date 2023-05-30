@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->profile()->languagesById('languageProficiency-id')->delete();
+$graphServiceClient->me()->profile()->languages()->byLanguageId('languageProficiency-id')->delete();
 
 
 ```

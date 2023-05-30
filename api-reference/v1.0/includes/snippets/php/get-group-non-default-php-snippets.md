@@ -15,7 +15,7 @@ $queryParameters->select = ["allowExternalSenders","autoSubscribeNewMembers","is
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->groupsById('group-id')->get($requestConfiguration);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->get($requestConfiguration);
 
 
 ```

@@ -24,7 +24,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->teamsById('team-id')->channels()->post($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->post($requestBody);
 
 
 ```

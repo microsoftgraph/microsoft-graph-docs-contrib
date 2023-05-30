@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->external()->connectionsById('externalConnection-id')->quota()->get();
+$result = $graphServiceClient->external()->connections()->byConnectionId('externalConnection-id')->quota()->get();
 
 
 ```

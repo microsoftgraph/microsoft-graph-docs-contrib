@@ -22,7 +22,7 @@ $queryParameters->filter = "startswith(displayName,%20'a')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->devicesById('device-id')->transitiveMemberOf()->graphGroup()->get($requestConfiguration);
+$result = $graphServiceClient->devices()->byDeviceId('device-id')->transitiveMemberOf()->graphGroup()->get($requestConfiguration);
 
 
 ```

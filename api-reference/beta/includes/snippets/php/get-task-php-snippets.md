@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->print()->taskDefinitionsById('printTaskDefinition-id')->tasksById('printTask-id')->get();
+$result = $graphServiceClient->print()->taskDefinitions()->byTaskDefinitionId('printTaskDefinition-id')->tasks()->byTaskId('printTask-id')->get();
 
 
 ```

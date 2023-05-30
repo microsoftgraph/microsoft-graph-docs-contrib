@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->privilegedAccessById('privilegedAccess-id')->roleAssignmentRequestsById('governanceRoleAssignmentRequest-id')->cancel()->post();
+$graphServiceClient->privilegedAccess()->byPrivilegedAccesId('privilegedAccess-id')->roleAssignmentRequests()->byRoleAssignmentRequestId('governanceRoleAssignmentRequest-id')->cancel()->post();
 
 
 ```
