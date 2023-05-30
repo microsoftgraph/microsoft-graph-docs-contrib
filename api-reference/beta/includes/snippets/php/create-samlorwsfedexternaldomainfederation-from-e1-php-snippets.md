@@ -34,7 +34,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->directory()->federationConfigurationsById('identityProviderBase-id')->post($requestBody);
+$graphServiceClient->directory()->federationConfigurations()->byFederationConfigurationId('identityProviderBase-id')->post($requestBody);
 
 
 ```

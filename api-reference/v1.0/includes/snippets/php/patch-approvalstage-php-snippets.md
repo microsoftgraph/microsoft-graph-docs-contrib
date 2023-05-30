@@ -16,7 +16,7 @@ $requestBody->setJustification('OK');
 
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentApprovalsById('approval-id')->stagesById('approvalStage-id')->patch($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentApprovals()->byAccessPackageAssignmentApprovalId('approval-id')->stages()->byStageId('approvalStage-id')->patch($requestBody);
 
 
 ```

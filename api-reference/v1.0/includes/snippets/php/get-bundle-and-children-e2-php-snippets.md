@@ -15,7 +15,7 @@ $queryParameters->expand = ["children"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->get($requestConfiguration);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->get($requestConfiguration);
 
 
 ```

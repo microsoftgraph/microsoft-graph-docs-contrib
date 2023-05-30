@@ -271,7 +271,7 @@ options := users.ItemMailFoldersItemMessagesRequestBuilderGetRequestConfiguratio
 result, err := client.Me().Messages().Get(context.Background(), &options)
 
 // Initialize iterator
-pageIterator, err := msgraphcore.NewPageIterator(
+pageIterator, err := msgraphcore.NewPageIterator<models.Messageable>(
     result, client.GetAdapter(), models.CreateMessageCollectionResponseFromDiscriminatorValue)
 
 // Any custom headers sent in original request should also be added
@@ -282,8 +282,7 @@ pageIterator.SetHeaders(headers)
 var count, pauseAfter = 0, 25
 
 // Iterate over all pages
-iterateErr := pageIterator.Iterate(context.Background(), func(pageItem interface{}) bool {
-    message := pageItem.(models.Messageable)
+iterateErr := pageIterator.Iterate(context.Background(), func(message models.Messageable) bool {
     count++
     fmt.Printf("%d: %s\n", count, *message.GetSubject())
     // Once count = 25, this returns false,
@@ -297,8 +296,7 @@ time.Sleep(5 * time.Second)
 fmt.Printf("Resuming iteration...\n")
 
 // Resume iteration
-iterateErr = pageIterator.Iterate(context.Background(), func(pageItem interface{}) bool {
-    message := pageItem.(models.Messageable)
+iterateErr = pageIterator.Iterate(context.Background(), func(message models.Messageable) bool {
     count++
     fmt.Printf("%d: %s\n", count, *message.GetSubject())
     // Return true to continue the iteration

@@ -15,7 +15,7 @@ $queryParameters->expand = ["customExtensionStageSettings($expand=customExtensio
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPoliciesById('accessPackageAssignmentPolicy-id')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->byAccessPackageAssignmentPolicieId('accessPackageAssignmentPolicy-id')->get($requestConfiguration);
 
 
 ```

@@ -32,7 +32,7 @@ $consentedPermissionSet->setResourceSpecificPermissions($resourceSpecificPermiss
 $requestBody->setConsentedPermissionSet($consentedPermissionSet);
 
 
-$graphServiceClient->chatsById('chat-id')->installedAppsById('teamsAppInstallation-id')->upgrade()->post($requestBody);
+$graphServiceClient->chats()->byChatId('chat-id')->installedApps()->byInstalledAppId('teamsAppInstallation-id')->upgrade()->post($requestBody);
 
 
 ```

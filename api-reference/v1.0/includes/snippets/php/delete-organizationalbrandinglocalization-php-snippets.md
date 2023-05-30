@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->organizationById('organization-id')->branding()->localizationsById('organizationalBrandingLocalization-id')->delete();
+$graphServiceClient->organization()->byOrganization()Id('organization-id')->branding()->localizations()->byLocalizationId('organizationalBrandingLocalization-id')->delete();
 
 
 ```
