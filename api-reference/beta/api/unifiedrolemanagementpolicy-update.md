@@ -189,7 +189,7 @@ The following is an example of the response
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update the details of a policy defined for PIM for groups
+### Example 2: Update the details of a policy defined in PIM for groups
 
 #### Request
 
