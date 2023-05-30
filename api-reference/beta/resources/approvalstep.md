@@ -43,7 +43,7 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|approval|[approval](../resources/approval.md) collection| The approval object for decisions associated with the `accessPackageAssignmentRequest`. In case of PIM for groups the approval object for decisions associated with the `assignmentScheduleRequest`.|
+|approval|[approval](../resources/approval.md) collection| The approval object for decisions associated with the `accessPackageAssignmentRequest` in entitlement management or the `assignmentScheduleRequest` in PIM for groups.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
