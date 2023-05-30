@@ -43,34 +43,7 @@ The authorization code flow enables native and web apps to securely obtain token
 
 # [C#](#tab/CS)
 
-```csharp
-var scopes = new[] { "User.Read" };
-
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
-
-// Values from app registration
-var clientId = "YOUR_CLIENT_ID";
-var clientSecret = "YOUR_CLIENT_SECRET";
-
-// For authorization code flow, the user signs into the Microsoft
-// identity platform, and the browser is redirected back to your app
-// with an authorization code in the query parameters
-var authorizationCode = "AUTH_CODE_FROM_REDIRECT";
-
-// using Azure.Identity;
-var options = new TokenCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
-
-// https://learn.microsoft.com/dotnet/api/azure.identity.authorizationcodecredential
-var authCodeCredential = new AuthorizationCodeCredential(
-    tenantId, clientId, clientSecret, authorizationCode, options);
-
-var graphClient = new GraphServiceClient(authCodeCredential, scopes);
-```
+:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="AuthorizationCodeSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -200,59 +173,11 @@ The client credential flow enables service applications to run without user inte
 
 ### Using a client secret
 
-```csharp
-// The client credentials flow requires that you request the
-// /.default scope, and preconfigure your permissions on the
-// app registration in Azure. An administrator must grant consent
-// to those permissions beforehand.
-var scopes = new[] { "https://graph.microsoft.com/.default" };
-
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
-
-// Values from app registration
-var clientId = "YOUR_CLIENT_ID";
-var clientSecret = "YOUR_CLIENT_SECRET";
-
-// using Azure.Identity;
-var options = new TokenCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
-
-// https://learn.microsoft.com/dotnet/api/azure.identity.clientsecretcredential
-var clientSecretCredential = new ClientSecretCredential(
-    tenantId, clientId, clientSecret, options);
-
-var graphClient = new GraphServiceClient(clientSecretCredential, scopes);
-```
+:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="ClientSecretSnippet":::
 
 ### Using a client certificate
 
-```csharp
-var scopes = new[] { "https://graph.microsoft.com/.default" };
-
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
-
-// Values from app registration
-var clientId = "YOUR_CLIENT_ID";
-var clientCertificate = new X509Certificate2("MyCertificate.pfx");
-
-// using Azure.Identity;
-var options = new TokenCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
-
-// https://learn.microsoft.com/dotnet/api/azure.identity.clientcertificatecredential
-var clientCertCredential = new ClientCertificateCredential(
-    tenantId, clientId, clientCertificate, options);
-
-var graphClient = new GraphServiceClient(clientCertCredential, scopes);
-```
+:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="ClientCertificateSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -348,32 +273,7 @@ The on-behalf-of flow is applicable when your application calls a service/web AP
 
 # [C#](#tab/CS)
 
-The `Azure.Identity` package does not support the on-behalf-of flow as of version 1.4.0. Instead create a custom authentication provider using MSAL.
-
-```csharp
-var scopes = new[] { "User.Read" };
-
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
-
-// Values from app registration
-var clientId = "YOUR_CLIENT_ID";
-var clientSecret = "YOUR_CLIENT_SECRET";
-
-// using Azure.Identity;
-var options = new OnBehalfOfCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
-
-// This is the incoming token to exchange using on-behalf-of flow
-var oboToken = "JWT_TOKEN_TO_EXCHANGE";
-
-var onBehalfOfCredential = new OnBehalfOfCredential(tenantId, clientId, clientSecret, oboToken, options);
-
-var graphClient = new GraphServiceClient(onBehalfOfCredential,scopes);
-```
+:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="OnBehalfOfSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -436,36 +336,7 @@ The device code flow enables sign in to devices by way of another device. For de
 
 # [C#](#tab/CS)
 
-```csharp
-var scopes = new[] { "User.Read" };
-
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
-
-// Value from app registration
-var clientId = "YOUR_CLIENT_ID";
-
-// using Azure.Identity;
-var options = new TokenCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
-
-// Callback function that receives the user prompt
-// Prompt contains the generated device code that use must
-// enter during the auth process in the browser
-Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) => {
-    Console.WriteLine(code.Message);
-    return Task.FromResult(0);
-};
-
-// https://learn.microsoft.com/dotnet/api/azure.identity.devicecodecredential
-var deviceCodeCredential = new DeviceCodeCredential(
-    callback, tenantId, clientId, options);
-
-var graphClient = new GraphServiceClient(deviceCodeCredential, scopes);
-```
+:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="DeviceCodeSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -558,44 +429,15 @@ The integrated Windows flow provides a way for Windows computers to silently acq
 
 # [C#](#tab/CS)
 
-The `Azure.Identity` package does not currently support Windows integrated authentication. Instead create a custom authentication provider using MSAL.
+The `Azure.Identity` package does not currently support Windows integrated authentication. Instead create a custom access token provider using MSAL.
 
-```csharp
-public class TokenProvider : IAccessTokenProvider
-{
-    private readonly IPublicClientApplication publicClientApplication;
-    public TokenProvider(string clientId, string tenantId)
-    {
-        publicClientApplication = PublicClientApplicationBuilder
-            .Create(clientId)
-            .WithTenantId(tenantId)
-            .Build();
-        AllowedHostsValidator = new AllowedHostsValidator();
-    }
-    public async Task<string> GetAuthorizationTokenAsync(Uri uri, Dictionary<string, object> additionalAuthenticationContext = default,
-        CancellationToken cancellationToken = default)
-    {
-        var scopes = new[] { "User.Read" };
-        var result = await publicClientApplication.AcquireTokenByIntegratedWindowsAuth(scopes).ExecuteAsync(); ;
-        // get the token and return it in your own way
-        return Task.FromResult(result.A);
-    }
+### Access token provider
 
-    public AllowedHostsValidator AllowedHostsValidator { get; }
-}
-```
+:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/IntegratedWindowsTokenProvider.cs" id="IntegratedWindowsTokenProviderSnippet":::
 
-```csharp
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
+### Create the client
 
-// Value from app registration
-var clientId = "YOUR_CLIENT_ID";
-
-var authenticationProvider = new BaseBearerTokenAuthenticationProvider(new TokenProvider(clientId,tenantId));
-var graphServiceClient = new GraphServiceClient(authenticationProvider);
-```
+:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="IntegratedWindowsSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -621,32 +463,7 @@ The interactive flow is used by mobile applications (Xamarin and UWP) and deskto
 
 # [C#](#tab/CS)
 
-```csharp
-var scopes = new[] { "User.Read" };
-
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
-
-// Value from app registration
-var clientId = "YOUR_CLIENT_ID";
-
-// using Azure.Identity;
-var options = new InteractiveBrowserCredentialOptions
-{
-    TenantId = tenantId,
-    ClientId = clientId,
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud,
-    // MUST be http://localhost or http://localhost:PORT
-    // See https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/System-Browser-on-.Net-Core
-    RedirectUri = new Uri("http://localhost"),
-};
-
-// https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
-var interactiveCredential = new InteractiveBrowserCredential(options);
-
-var graphClient = new GraphServiceClient(interactiveCredential, scopes);
-```
+:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="InteractiveSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -713,31 +530,7 @@ The username/password provider allows an application to sign in a user by using 
 
 # [C#](#tab/CS)
 
-```csharp
-var scopes = new[] { "User.Read" };
-
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
-
-// Value from app registration
-var clientId = "YOUR_CLIENT_ID";
-
-// using Azure.Identity;
-var options = new TokenCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
-
-var userName = "adelev@contoso.com";
-var password = "P@ssword1!";
-
-// https://learn.microsoft.com/dotnet/api/azure.identity.usernamepasswordcredential
-var userNamePasswordCredential = new UsernamePasswordCredential(
-    userName, password, tenantId, clientId, options);
-
-var graphClient = new GraphServiceClient(userNamePasswordCredential, scopes);
-```
+:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="UserNamePasswordSnippet":::
 
 # [Javascript](#tab/Javascript)
 
