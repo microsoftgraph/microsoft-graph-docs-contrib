@@ -24,7 +24,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |subject|[user](../resources/user.md)|The user that the `workflow` is executed for.|
-|task|[task](../resources/identitygovernance-task.md)|The task that references the custom extension making this callout.|
+|task|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|The task that references the custom extension making this callout.|
 |taskProcessingResult|[microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus](../resources/identitygovernance-taskprocessingresult.md)|The `taskProcessingResult` tracking the instance information of the executing `task`.|
 |workflow|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|The `workflow` associated with the task that references the custom extension that will be making the callout.|
 

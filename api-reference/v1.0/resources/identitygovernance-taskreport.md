@@ -43,7 +43,7 @@ Inherits from [entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |task|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-task.md)|The related lifecycle workflow task.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
-|taskDefinition|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md)|The taskDefinition associated with the related lifecycle workflow task.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
+|taskDefinition|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-taskdefinition.md)|The taskDefinition associated with the related lifecycle workflow task.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The related lifecycle workflow taskProcessingResults.|
 
 ## JSON representation
