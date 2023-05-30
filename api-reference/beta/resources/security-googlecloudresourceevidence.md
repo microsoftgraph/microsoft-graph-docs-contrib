@@ -22,13 +22,13 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |location|String|The zone or region where the resource is located.|
-|locationType|[microsoft.graph.security.googleCloudLocationType](#locationtype-values)|The type of location. Possible values are: `unknown`, `regional`, `zonal`, `global`, `unknownFutureValue`.|
+|locationType|[microsoft.graph.security.googleCloudLocationType](#googlecloudlocationtype-values)|The type of location. Possible values are: `unknown`, `regional`, `zonal`, `global`, `unknownFutureValue`.|
 |projectId|String|The Google project ID as defined by the user.|
 |projectNumber|Int64|The project number assigned by Google.|
 |resourceName|String|The name of the resource.|
 |resourceType|String|The type of the resource.|
 
-### locationType values
+### googleCloudLocationType values
 
 | Member                     | Description                                       |
 | :--------------------------| :------------------------------------------------ |
