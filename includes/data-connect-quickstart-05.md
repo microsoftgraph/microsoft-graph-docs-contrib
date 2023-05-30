@@ -16,10 +16,10 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. Select a pending **Data Access Request**.
 
-1. In the **Data Access Request** dialog, select the **Approve** button.
+1. In **Data Access Request**, click **Approve**.
 
     ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-approve.png)
-1. After a moment, you should see the status page for the activity update showing that it is now _extracting data_.
+1. After a moment,  you will be able to view the status page for the activity update, which will indicate that it is currently in the process of _extracting data_.
 
    <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
 
@@ -36,7 +36,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. Connect to Exchange Online.
 
-    1. Obtain a sign in credential by executing the following PowerShell. Sign in using a different user, other than the user that created and started the Azure Data Factory pipeline, who has the **Global Administrator** role applied, who is a member of the group that has rights to approve requests to data in Microsoft 365, and who has multi-factor authentication enabled.
+    1. To obtain a sign-in credential, run the following PowerShell command. Make sure to sign in using a user other than the one who created and started the Azure Data Factory pipeline. The user should have the **global administrator** role applied and be a group member with the right to approve data requests in Microsoft 365. It should also have multi-factor authentication enabled.
 
         ```powershell
         $UserCredential = Get-Credential
