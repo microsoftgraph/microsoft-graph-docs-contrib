@@ -19,7 +19,7 @@ In [userConsentRequests](../resources/userconsentrequest.md), the approval objec
 
 In [Role management](../resources/rolemanagement.md), the approval object for decisions to approve or deny role assignments.
 
-In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval object for decisions to approve or deny assignment schedule (group membership or ownership activation).
+In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval object for decisions to approve or deny requests to activate group membership or ownership.
 
 ## Methods
 
