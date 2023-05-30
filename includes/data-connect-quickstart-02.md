@@ -7,7 +7,7 @@ Before using Microsoft Graph Data Connect for the first time, you need to config
 
 ## Grant Azure AD users the global administrator role
 
-In this step, you will ensure that two users in your Microsoft 365 tenant have the **Global administrator** role enabled.
+In this step, you will ensure that two users in your Microsoft 365 tenant have the **global administrator** role enabled.
 
 - [Global Administrator built-in role](/azure/active-directory/roles/permissions-reference#global-administrator).
 - [Elevate access to gain the Global Administrator role](/azure/role-based-access-control/elevate-access-global-admin).
