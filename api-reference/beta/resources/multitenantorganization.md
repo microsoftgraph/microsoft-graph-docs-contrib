@@ -33,8 +33,8 @@ Defines an organization with more than one instance of Azure Active Directory (A
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|joinRequest|[multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md)|Details of a tenant's join request to the multi-tenant organization.|
-|tenants|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|Member tenants of the multi-tenant organization.|
+|joinRequest|[multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md)|Defines the status of a tenant joining a multi-tenant organization.|
+|tenants|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|Defines tenants added to a multi-tenant organization.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
