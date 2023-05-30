@@ -158,7 +158,7 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update a rule defined for a policy for PIM for groups
+### Example 2: Update a rule defined for a policy in PIM for groups
 
 #### Request
 
