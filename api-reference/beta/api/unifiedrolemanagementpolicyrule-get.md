@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
-### Example 1: Retrieve a rule defined for a policy for PIM for Azure AD roles
+### Example 1: Retrieve a rule defined for a policy in PIM for Azure AD roles
 
 #### Request
 
