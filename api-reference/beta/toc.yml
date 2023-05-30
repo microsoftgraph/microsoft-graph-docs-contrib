@@ -11438,7 +11438,7 @@ items:
       items:
       - name: Overview
         displayName: Directory extensions, Schema extensions, Open extensions, On-premises extensions
-        href: /graph/extensibility-overview?context=graph/api/beta&preserve-view=true
+        href: /graph/extensibility-overview?context=graph/api/beta&view=graph-rest-beta&preserve-view=true
       - name: Directory extensions
         items:
         - name: Extension property

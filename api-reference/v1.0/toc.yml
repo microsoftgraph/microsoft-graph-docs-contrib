@@ -81,7 +81,7 @@ items:
       href: /graph/delta-query-overview?context=graph/api/1.0
     - name: Add custom data
       displayName: directory extensions, schema extensions, open extensions, extension attributes
-      href: /graph/extensibility-overview?context=graph/api/1.0
+      href: /graph/extensibility-overview?context=graph/api/1.0&view=graph-rest-1.0&preserve-view=true
     - name: Enable metered APIs
       href: /graph/metered-api-setup?context=graph/api/1.0
       displayName: monetize, charge, cost, pricing
