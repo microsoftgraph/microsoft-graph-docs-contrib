@@ -84,7 +84,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Update a rule defined for a policy for PIM for Azure AD roles
+### Example 1: Update a rule defined for a policy in PIM for Azure AD roles
 
 #### Request
 
