@@ -43,7 +43,7 @@ The authorization code flow enables native and web apps to securely obtain token
 
 # [C#](#tab/CS)
 
-:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="AuthorizationCodeSnippet":::
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClient.cs" id="AuthorizationCodeSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -173,11 +173,11 @@ The client credential flow enables service applications to run without user inte
 
 ### Using a client secret
 
-:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="ClientSecretSnippet":::
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClient.cs" id="ClientSecretSnippet":::
 
 ### Using a client certificate
 
-:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="ClientCertificateSnippet":::
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClient.cs" id="ClientCertificateSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -273,7 +273,7 @@ The on-behalf-of flow is applicable when your application calls a service/web AP
 
 # [C#](#tab/CS)
 
-:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="OnBehalfOfSnippet":::
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClient.cs" id="OnBehalfOfSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -336,7 +336,7 @@ The device code flow enables sign in to devices by way of another device. For de
 
 # [C#](#tab/CS)
 
-:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="DeviceCodeSnippet":::
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClient.cs" id="DeviceCodeSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -433,11 +433,11 @@ The `Azure.Identity` package does not currently support Windows integrated authe
 
 ### Access token provider
 
-:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/IntegratedWindowsTokenProvider.cs" id="IntegratedWindowsTokenProviderSnippet":::
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/IntegratedWindowsTokenProvider.cs" id="IntegratedWindowsTokenProviderSnippet":::
 
 ### Create the client
 
-:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="IntegratedWindowsSnippet":::
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClient.cs" id="IntegratedWindowsSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -463,7 +463,7 @@ The interactive flow is used by mobile applications (Xamarin and UWP) and deskto
 
 # [C#](#tab/CS)
 
-:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="InteractiveSnippet":::
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClient.cs" id="InteractiveSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -530,7 +530,7 @@ The username/password provider allows an application to sign in a user by using 
 
 # [C#](#tab/CS)
 
-:::code language="csharp" source="./snippets/src/SdkSnippets/Snippets/CreateClient.cs" id="UserNamePasswordSnippet":::
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClient.cs" id="UserNamePasswordSnippet":::
 
 # [Javascript](#tab/Javascript)
 
