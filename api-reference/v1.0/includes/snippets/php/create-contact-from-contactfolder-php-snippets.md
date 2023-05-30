@@ -24,7 +24,7 @@ $requestBody->setInitials('initials-value');
 
 
 
-$result = $graphServiceClient->me()->contactFoldersById('contactFolder-id')->contacts()->post($requestBody);
+$result = $graphServiceClient->me()->contactFolders()->byContactFolderId('contactFolder-id')->contacts()->post($requestBody);
 
 
 ```

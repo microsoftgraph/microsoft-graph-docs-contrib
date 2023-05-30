@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->external()->industryData()->sourceSystemsById('sourceSystemDefinition-id')->delete();
+$graphServiceClient->external()->industryData()->sourceSystems()->bySourceSystemId('sourceSystemDefinition-id')->delete();
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->contentTypes()->getCompatibleHubContentTypes()->get();
+$result = $graphServiceClient->sites()->bySiteId('site-id')->lists()->byListId('list-id')->contentTypes()->getCompatibleHubContentTypes()->get();
 
 
 ```

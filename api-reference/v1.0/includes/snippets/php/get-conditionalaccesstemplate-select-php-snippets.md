@@ -15,7 +15,7 @@ $queryParameters->select = ["details"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identity()->conditionalAccess()->templatesById('conditionalAccessTemplate-id')->get($requestConfiguration);
+$result = $graphServiceClient->identity()->conditionalAccess()->templates()->byTemplateId('conditionalAccessTemplate-id')->get($requestConfiguration);
 
 
 ```

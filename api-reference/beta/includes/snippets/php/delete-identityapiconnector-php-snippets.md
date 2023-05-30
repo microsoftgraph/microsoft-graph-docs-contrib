@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->identity()->apiConnectorsById('identityApiConnector-id')->delete();
+$graphServiceClient->identity()->apiConnectors()->byApiConnectorId('identityApiConnector-id')->delete();
 
 
 ```

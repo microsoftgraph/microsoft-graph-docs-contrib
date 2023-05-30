@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/onPremisesPublishingProfi
 
 
 
-$graphServiceClient->applicationsById('application-id')->connectorGroup()->ref()->put($requestBody);
+$graphServiceClient->applications()->byApplicationId('application-id')->connectorGroup()->ref()->put($requestBody);
 
 
 ```

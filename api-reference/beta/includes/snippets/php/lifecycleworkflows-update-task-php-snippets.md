@@ -16,7 +16,7 @@ $requestBody->setDisplayName('Update marketing day 1 add users to Group set up')
 
 
 
-$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->tasksById('task-id')->patch($requestBody);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->byWorkflowId('workflow-id')->tasks()->byTaskId('task-id')->patch($requestBody);
 
 
 ```

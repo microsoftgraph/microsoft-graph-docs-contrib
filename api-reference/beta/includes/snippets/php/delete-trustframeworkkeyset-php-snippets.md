@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->trustFramework()->keySetsById('trustFrameworkKeySet-id')->delete();
+$graphServiceClient->trustFramework()->keySets()->byKeySetId('trustFrameworkKeySet-id')->delete();
 
 
 ```
