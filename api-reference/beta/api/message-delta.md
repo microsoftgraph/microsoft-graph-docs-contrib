@@ -42,12 +42,12 @@ GET /users/{id}/mailFolders/{id}/messages/delta
 To specifically get only created, updated, or deleted messages in the specified **mailFolder**:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailfolders/{id}/messages/delta?changeType=created
-GET /users/{id}/mailfolders/{id}/messages/delta?changeType=created
-GET /me/mailfolders/{id}/messages/delta?changeType=updated
-GET /users/{id}/mailfolders/{id}/messages/delta?changeType=updated
-GET /me/mailfolders/{id}/messages/delta?changeType=deleted
-GET /users/{id}/mailfolders/{id}/messages/delta?changeType=deleted
+GET /me/mailFolders/{id}/messages/delta?changeType=created
+GET /users/{id}/mailFolders/{id}/messages/delta?changeType=created
+GET /me/mailFolders/{id}/messages/delta?changeType=updated
+GET /users/{id}/mailFolders/{id}/messages/delta?changeType=updated
+GET /me/mailFolders/{id}/messages/delta?changeType=deleted
+GET /users/{id}/mailFolders/{id}/messages/delta?changeType=deleted
 ```
 
 ## Query parameters
@@ -108,16 +108,11 @@ GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
 Prefer: odata.maxpagesize=2
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/message-delta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 If the request is successful, the response would include a state token, which is either a _skipToken_  
@@ -139,7 +134,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders/{id}/messages/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "receivedDateTime": "datetime-value",

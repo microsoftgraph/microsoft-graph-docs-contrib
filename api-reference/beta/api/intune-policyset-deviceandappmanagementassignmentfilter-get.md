@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 774
+Content-Length: 821
 
 {
   "value": {
@@ -86,7 +86,8 @@ Content-Length: 774
         "groupId": "Group Id value",
         "assignmentFilterType": "include"
       }
-    ]
+    ],
+    "assignmentFilterManagementType": "apps"
   }
 }
 ```

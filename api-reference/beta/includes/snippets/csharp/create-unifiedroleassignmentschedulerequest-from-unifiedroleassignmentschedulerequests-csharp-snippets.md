@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequestObject
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new UnifiedRoleAssignmentScheduleRequest
 {
 	Action = "AdminAssign",
 	Justification = "Assign User Admin to IT Helpdesk (User) group",
@@ -18,13 +20,11 @@ var unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequ
 		StartDateTime = DateTimeOffset.Parse("2021-07-01T00:00:00Z"),
 		Expiration = new ExpirationPattern
 		{
-			Type = ExpirationPatternType.NoExpiration
-		}
-	}
+			Type = ExpirationPatternType.NoExpiration,
+		},
+	},
 };
+var result = await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests.PostAsync(requestBody);
 
-await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests
-	.Request()
-	.AddAsync(unifiedRoleAssignmentScheduleRequest);
 
 ```

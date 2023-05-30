@@ -109,7 +109,6 @@ Content-type: application/zip
 
 ---
 
-
 ### Response
 
 If successful, this method returns a `201 Created` response code and the key/value pair `publishingState`: `submitted` in the response body. *See* [teamsappdefinition](../resources/teamsappdefinition.md).

@@ -31,8 +31,8 @@ $allowedRequestorsUserSet1->set@odatatype('#microsoft.graph.singleUser');
 $allowedRequestorsUserSet1->setIsBackup(false);
 
 $additionalData = [
-'id' => '007d1c7e-7fa8-4e33-b678-5e437acdcddc', 
-'description' => 'Requestor1', 
+		'id' => '007d1c7e-7fa8-4e33-b678-5e437acdcddc', 
+		'description' => 'Requestor1', 
 ];
 $allowedRequestorsUserSet1->setAdditionalData($additionalData);
 
@@ -59,7 +59,7 @@ $requestApprovalSettings->setApprovalStages([]);
 $requestBody->setRequestApprovalSettings($requestApprovalSettings);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->post($requestBody);
 
 
 ```

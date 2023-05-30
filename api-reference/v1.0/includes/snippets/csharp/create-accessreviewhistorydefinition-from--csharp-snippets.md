@@ -4,40 +4,60 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var accessReviewHistoryDefinition = new AccessReviewHistoryDefinition
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new AccessReviewHistoryDefinition
 {
 	DisplayName = "Last quarter's group reviews April 2021",
-	Decisions = new List<AccessReviewHistoryDecisionFilter>()
+	Decisions = new List<AccessReviewHistoryDecisionFilter?>
 	{
 		AccessReviewHistoryDecisionFilter.Approve,
 		AccessReviewHistoryDecisionFilter.Deny,
 		AccessReviewHistoryDecisionFilter.DontKnow,
 		AccessReviewHistoryDecisionFilter.NotReviewed,
-		AccessReviewHistoryDecisionFilter.NotNotified
+		AccessReviewHistoryDecisionFilter.NotNotified,
 	},
 	ReviewHistoryPeriodStartDateTime = DateTimeOffset.Parse("2021-01-01T00:00:00Z"),
 	ReviewHistoryPeriodEndDateTime = DateTimeOffset.Parse("2021-04-30T23:59:59Z"),
-	Scopes = new List<AccessReviewScope>()
+	Scopes = new List<AccessReviewScope>
 	{
-		new AccessReviewQueryScope
+		new AccessReviewScope
 		{
-			QueryType = "MicrosoftGraph",
-			Query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
-			QueryRoot = null
+			OdataType = "#microsoft.graph.accessReviewQueryScope",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"queryType" , "MicrosoftGraph"
+				},
+				{
+					"query" , "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')"
+				},
+				{
+					"queryRoot" , null
+				},
+			},
 		},
-		new AccessReviewQueryScope
+		new AccessReviewScope
 		{
-			QueryType = "MicrosoftGraph",
-			Query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
-			QueryRoot = null
-		}
-	}
+			OdataType = "#microsoft.graph.accessReviewQueryScope",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"queryType" , "MicrosoftGraph"
+				},
+				{
+					"query" , "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')"
+				},
+				{
+					"queryRoot" , null
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.IdentityGovernance.AccessReviews.HistoryDefinitions.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.AccessReviews.HistoryDefinitions
-	.Request()
-	.AddAsync(accessReviewHistoryDefinition);
 
 ```

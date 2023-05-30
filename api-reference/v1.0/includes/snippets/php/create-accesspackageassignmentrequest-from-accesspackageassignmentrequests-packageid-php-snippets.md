@@ -14,7 +14,7 @@ $requestBody->setRequestType(new AccessPackageRequestType('useradd'));
 
 $assignment = new AccessPackageAssignment();
 $additionalData = [
-'accessPackageId' => 'd7be3253-b9c6-4fab-adef-30d30de8da2b', 
+		'accessPackageId' => 'd7be3253-b9c6-4fab-adef-30d30de8da2b', 
 ];
 $assignment->setAdditionalData($additionalData);
 
@@ -23,7 +23,7 @@ $assignment->setAdditionalData($additionalData);
 $requestBody->setAssignment($assignment);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentRequests()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentRequests()->post($requestBody);
 
 
 ```

@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var cloudPcExportJob = new CloudPcExportJob
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new CloudPcExportJob
 {
 	ReportName = CloudPcReportName.TotalAggregatedRemoteConnectionReports,
-	Select = new List<String>()
+	Select = new List<string>
 	{
 		"CloudPcId",
 		"ManagedDeviceName",
 		"UserPrincipalName",
 		"DaysSinceLastSignIn",
-		"TotalUsageInHour"
-	}
+		"TotalUsageInHour",
+	},
 };
+var result = await graphClient.DeviceManagement.VirtualEndpoint.Reports.ExportJobs.PostAsync(requestBody);
 
-await graphClient.DeviceManagement.VirtualEndpoint.Reports.ExportJobs
-	.Request()
-	.AddAsync(cloudPcExportJob);
 
 ```

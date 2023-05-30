@@ -4,25 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var @event = new Event
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Event
 {
 	Subject = "Let's go for lunch",
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "Does noon time work for you?"
+		Content = "Does noon time work for you?",
 	},
 	Start = new DateTimeTimeZone
 	{
 		DateTime = "2017-09-04T12:00:00",
-		TimeZone = "Pacific Standard Time"
+		TimeZone = "Pacific Standard Time",
 	},
 	End = new DateTimeTimeZone
 	{
 		DateTime = "2017-09-04T14:00:00",
-		TimeZone = "Pacific Standard Time"
+		TimeZone = "Pacific Standard Time",
 	},
 	Recurrence = new PatternedRecurrence
 	{
@@ -30,38 +32,36 @@ var @event = new Event
 		{
 			Type = RecurrencePatternType.Weekly,
 			Interval = 1,
-			DaysOfWeek = new List<DayOfWeek>()
+			DaysOfWeek = new List<DayOfWeekObject?>
 			{
-				DayOfWeek.Monday
-			}
+				DayOfWeekObject.Monday,
+			},
 		},
 		Range = new RecurrenceRange
 		{
 			Type = RecurrenceRangeType.EndDate,
-			StartDate = new Date(2017,9,4),
-			EndDate = new Date(2017,12,31)
-		}
+			StartDate = new Date(DateTime.Parse("2017-09-04")),
+			EndDate = new Date(DateTime.Parse("2017-12-31")),
+		},
 	},
 	Location = new Location
 	{
-		DisplayName = "Harry's Bar"
+		DisplayName = "Harry's Bar",
 	},
-	Attendees = new List<Attendee>()
+	Attendees = new List<Attendee>
 	{
 		new Attendee
 		{
 			EmailAddress = new EmailAddress
 			{
 				Address = "AdeleV@contoso.onmicrosoft.com",
-				Name = "Adele Vance"
+				Name = "Adele Vance",
 			},
-			Type = AttendeeType.Required
-		}
-	}
+			Type = AttendeeType.Required,
+		},
+	},
 };
+var result = await graphClient.Me.Events.PostAsync(requestBody);
 
-await graphClient.Me.Events
-	.Request()
-	.AddAsync(@event);
 
 ```

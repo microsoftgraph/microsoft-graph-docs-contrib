@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new ConditionalAccessPolicy();
-$requestBody->setDisplayName('Policy for risky sign-in block access');
+$requestBody->setDisplayName('Policy for risky sign-in');
 
 $requestBody->setState(new ConditionalAccessPolicyState('enabled'));
 
@@ -34,14 +34,14 @@ $requestBody->setConditions($conditions);
 $grantControls = new ConditionalAccessGrantControls();
 $grantControls->setOperator('OR');
 
-$grantControls->setBuiltInControls([$grantControls->setConditionalAccessGrantControl(new ConditionalAccessGrantControl('block'));
+$grantControls->setBuiltInControls([$grantControls->setConditionalAccessGrantControl(new ConditionalAccessGrantControl('mfa'));
 ]);
 
 
 $requestBody->setGrantControls($grantControls);
 
 
-$requestResult = $graphServiceClient->identity()->conditionalAccess()->policies()->post($requestBody);
+$result = $graphServiceClient->identity()->conditionalAccess()->policies()->post($requestBody);
 
 
 ```

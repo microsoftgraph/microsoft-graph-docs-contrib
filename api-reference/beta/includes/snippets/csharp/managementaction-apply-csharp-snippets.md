@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var tenantId = "String";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tenantGroupId = "String";
+var requestBody = new Microsoft.Graph.Beta.TenantRelationships.ManagedTenants.ManagementActions.Item.MicrosoftGraphManagedTenantsApply.ApplyPostRequestBody
+{
+	TenantId = "String",
+	TenantGroupId = "String",
+	ManagementTemplateId = "String",
+};
+var result = await graphClient.TenantRelationships.ManagedTenants.ManagementActions["{managementAction-id}"].MicrosoftGraphManagedTenantsApply.PostAsync(requestBody);
 
-var managementTemplateId = "String";
-
-await graphClient.TenantRelationships.ManagedTenants.ManagementActions["{managedTenants.managementAction-id}"]
-	.Apply(tenantId,tenantGroupId,managementTemplateId,null,null,null)
-	.Request()
-	.PostAsync();
 
 ```

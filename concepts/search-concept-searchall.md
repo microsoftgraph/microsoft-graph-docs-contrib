@@ -6,13 +6,13 @@ ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Search content with application permissions
+# Search SharePoint content with application permissions
 
-This article describes how you can use application permissions with the Microsoft Search API in Microsoft Graph to search SharePoint content. Application permissions are different than delegated permissions in that they enable the application owner to search all content in their SharePoint sites. 
+This article describes how you can use application permissions with the Microsoft Search API in Microsoft Graph to search SharePoint content. Unlike delegated permissions, application permissions allow an application owner the option to search all content in the owner's SharePoint sites in a selected region. 
 
-Performing a search with application permission is limited to one geographic region. You must specify a value for the **region** property in your request when you use application permissions to run a search.For details about how to get the **region** value, see [Get the region value](/sharepoint/dev/solution-guidance/multigeo-discovery).
+Performing a search with application permission is limited to one geographic region. You must specify a value for the **region** property in your [search request](/graph/api/resources/searchRequest) when you use application permissions to run a search. To get the **region** value for a tenant, use the **dataLocationCode** property of the [siteCollection](/graph/api/resources/sitecollection) resource. For more information and examples, see [Get the region value](/sharepoint/dev/solution-guidance/multigeo-discovery).
 
-By default, private content search is disabled for customers with application permissions. For details about how to enable private content search, see [Example 2: Include all private content](#example-2-include-all-private-content).
+By default, application permissions enable search on shared content and disable search on private content. To enable private content search, see [Example 2: Include all private content](#example-2-include-all-private-content).
 
 ## Example 1: Default search request
 

@@ -4,11 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var servicePrincipal = await graphClient.ServicePrincipals["{servicePrincipal-id}"]
-	.Request()
-	.Select("id,appId,displayName,appRoles,oauth2PermissionScopes")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "id","appId","displayName","appRoles","oauth2PermissionScopes" };
+});
+
 
 ```

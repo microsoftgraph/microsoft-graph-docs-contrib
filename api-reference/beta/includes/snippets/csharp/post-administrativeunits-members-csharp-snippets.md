@@ -4,23 +4,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var directoryObject = new Group
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.AdministrativeUnits.Item.Members.MembersPostRequestBody
 {
-	Description = "Self help community for golf",
-	DisplayName = "Golf Assist",
-	GroupTypes = new List<String>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		"Unified"
+		{
+			"@odata.type" , "#microsoft.graph.group"
+		},
+		{
+			"description" , "Self help community for golf"
+		},
+		{
+			"displayName" , "Golf Assist"
+		},
+		{
+			"groupTypes" , new List<string>
+			{
+				"Unified",
+			}
+		},
+		{
+			"mailEnabled" , true
+		},
+		{
+			"mailNickname" , "golfassist"
+		},
+		{
+			"securityEnabled" , false
+		},
 	},
-	MailEnabled = true,
-	MailNickname = "golfassist",
-	SecurityEnabled = false
 };
+await graphClient.AdministrativeUnits["{administrativeUnit-id}"].Members.PostAsync(requestBody);
 
-await graphClient.AdministrativeUnits["{administrativeUnit-id}"].Members
-	.Request()
-	.AddAsync(directoryObject);
 
 ```

@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "89b86683-1457-4b10-bf89-d1af587f4692",
+          "ApiChange": "Member",
+          "ChangedApiName": "approval",
+          "ChangeType": "Addition",
+          "Description": "Added the `approval` member to the **subjectRightsRequestStage** enumeration.",
+          "Target": "subjectRightsRequestStage"
+        },
+        {
+          "Id": "89b86683-1457-4b10-bf89-d1af587f4692",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvers",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvers** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "89b86683-1457-4b10-bf89-d1af587f4692",
+          "ApiChange": "Resource",
+          "ChangedApiName": "collaborators",
+          "ChangeType": "Addition",
+          "Description": "Added the **collaborators** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        }
+      ],
+      "Id": "89b86683-1457-4b10-bf89-d1af587f4692",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-02T23:37:17.6340671Z",
+      "WorkloadArea": "Microsoft.Compliance.DataSubjectRequest",
+      "SubArea": ""
+    },    
+    {
+      "ChangeList": [
+        {
           "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
           "ApiChange": "Resource",
           "ChangedApiName": "subjectRightsRequestAllMailboxLocation",

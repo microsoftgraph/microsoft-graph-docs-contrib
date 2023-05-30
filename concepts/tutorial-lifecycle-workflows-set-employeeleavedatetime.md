@@ -43,7 +43,7 @@ PATCH https://graph.microsoft.com/beta/users/df744d9e-2148-4922-88a8-633896c1e92
 # [PowerShell](#tab/powershell)
 
 ```powershell    
-    Connect-MgGraph -Scopes "User-LifeCycleInfo.ReadWrite.All"
+    Connect-MgGraph -Scopes "User.Read.All","User-LifeCycleInfo.ReadWrite.All"
     Select-MgProfile -Name "beta"
 
     $UserId = "528492ea-779a-4b59-b9a3-b3773ef6da6d"

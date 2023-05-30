@@ -4,15 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var cloudPcCrossCloudGovernmentOrganizationMapping = new CloudPcCrossCloudGovernmentOrganizationMapping
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.CrossCloudGovernmentOrganizationMapping.CrossCloudGovernmentOrganizationMappingPostRequestBody
 {
 };
+await graphClient.DeviceManagement.VirtualEndpoint.CrossCloudGovernmentOrganizationMapping.PostAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("X-MS-CloudPC-USGovCloudTenantAADToken", "{token}");
+});
 
-await graphClient.DeviceManagement.VirtualEndpoint.CrossCloudGovernmentOrganizationMapping
-	.Request()
-	.Header("X-MS-CloudPC-USGovCloudTenantAADToken","{token}")
-	.AddAsync(cloudPcCrossCloudGovernmentOrganizationMapping);
 
 ```

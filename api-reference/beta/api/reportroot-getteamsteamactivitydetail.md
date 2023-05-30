@@ -42,9 +42,6 @@ In the request URL, provide the following parameters with a valid value.
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
-| date      | Date   | Specifies the date for which you would like to view details about activities across one or more teams. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
-
-> **Note:** You need to set either **period** or **date** in the request URL.
 
 ## Optional query parameters
 

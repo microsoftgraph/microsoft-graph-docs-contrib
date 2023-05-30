@@ -4,38 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var schemaExtension = new SchemaExtension
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new SchemaExtension
 {
 	Owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
-	Properties = new List<ExtensionSchemaProperty>()
+	Properties = new List<ExtensionSchemaProperty>
 	{
 		new ExtensionSchemaProperty
 		{
 			Name = "courseId",
-			Type = "Integer"
+			Type = "Integer",
 		},
 		new ExtensionSchemaProperty
 		{
 			Name = "courseName",
-			Type = "String"
+			Type = "String",
 		},
 		new ExtensionSchemaProperty
 		{
 			Name = "courseType",
-			Type = "String"
+			Type = "String",
 		},
 		new ExtensionSchemaProperty
 		{
 			Name = "courseSupervisors",
-			Type = "String"
-		}
-	}
+			Type = "String",
+		},
+	},
 };
+var result = await graphClient.SchemaExtensions["{schemaExtension-id}"].PatchAsync(requestBody);
 
-await graphClient.SchemaExtensions["{schemaExtension-id}"]
-	.Request()
-	.UpdateAsync(schemaExtension);
 
 ```

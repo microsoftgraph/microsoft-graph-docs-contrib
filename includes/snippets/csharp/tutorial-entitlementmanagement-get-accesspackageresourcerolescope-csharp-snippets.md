@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var accessPackageResourceRoleScope = new AccessPackageResourceRoleScope
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new AccessPackageResourceRoleScope
 {
 	AccessPackageResourceRole = new AccessPackageResourceRole
 	{
@@ -18,18 +20,16 @@ var accessPackageResourceRoleScope = new AccessPackageResourceRoleScope
 			Id = "4a1e21c5-8a76-4578-acb1-641160e076e8",
 			ResourceType = "Security Group",
 			OriginId = "e93e24d1-2b65-4a6c-a1dd-654a12225487",
-			OriginSystem = "AadGroup"
-		}
+			OriginSystem = "AadGroup",
+		},
 	},
 	AccessPackageResourceScope = new AccessPackageResourceScope
 	{
 		OriginId = "e93e24d1-2b65-4a6c-a1dd-654a12225487",
-		OriginSystem = "AadGroup"
-	}
+		OriginSystem = "AadGroup",
+	},
 };
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{accessPackage-id}"].AccessPackageResourceRoleScopes.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{accessPackage-id}"].AccessPackageResourceRoleScopes
-	.Request()
-	.AddAsync(accessPackageResourceRoleScope);
 
 ```

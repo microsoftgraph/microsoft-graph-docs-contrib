@@ -39,7 +39,9 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |customSettings|[keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service|
 
 ## Relationships
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|settings|[deviceManagementConfigurationSetting](../resources/intune-mam-devicemanagementconfigurationsetting.md) collection|List of settings contained in this App Configuration policy|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

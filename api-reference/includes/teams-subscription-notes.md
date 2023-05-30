@@ -15,18 +15,18 @@ You must use the `Prefer: include-unknown-enum-members` request header to get th
 
 > [!NOTE]
 >`/teams/getAllMessages`, `/chats/getAllMessages`, `/me/chats/getAllMessages`, `/users/{id}/chats/getAllMessages`, and `/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages` 
-> have [licensing and payment requirements](/graph/teams-licenses).
-> `/teams/getAllMessages` and `/chats/getAllMessages` support both `model=A` and `model=B` query parameters,
-> `/me/chats/getAllMessages`, `/users/{id}/chats/getAllMessages`, and `/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages`  support only `model=B`.
-> If no model is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+> are metered APIs; [payment models and licensing requirements](/graph/teams-licenses) may apply.
+> `/teams/getAllMessages` and `/chats/getAllMessages` support both `model=A` and `model=B` payment models,
+> `/me/chats/getAllMessages`, `/users/{id}/chats/getAllMessages`, and `/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages` support only `model=B`.
+> If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. 
 
 ### conversationMember
 **conversationMember** subscriptions can be specified to include resource data. If specified to include resource data (**includeResourceData** set to `true`), [encryption](/graph/webhooks-with-resource-data) is required. The subscription creation fails if an [encryptionCertificate](/graph/api/resources/subscription) isn't specified.
 
 > [!NOTE]
->`/teams/getAllMembers`, `/chats/getAllMembers`, and `/appCatalogs/teamsApps/{id}/installedToChats/getAllMembers ` have [licensing and payment requirements](/graph/teams-licenses).
-> `/teams/getAllMembers` and `/chats/getAllMembers` support both `model=A` and `model=B` query parameters. `/appCatalogs/teamsApps/{id}/installedToChats/getAllMembers` supports only `model=B`.
-> If no model is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+>`/teams/getAllMembers`, `/chats/getAllMembers`, and `/appCatalogs/teamsApps/{id}/installedToChats/getAllMembers` are metered APIs; [payment models and licensing requirements](/graph/teams-licenses) may apply.
+> `/teams/getAllMembers` and `/chats/getAllMembers` support both `model=A` and `model=B` payment models. `/appCatalogs/teamsApps/{id}/installedToChats/getAllMembers` supports only `model=B`.
+> If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. 
 
 ### team, channel, and chat
 **team**, **channel**, and **chat** subscriptions can be specified to include resource data. If specified to include resource data (**includeResourceData** set to `true`), [encryption](/graph/webhooks-with-resource-data) is required. The subscription creation fails if an [encryptionCertificate](/graph/api/resources/subscription) isn't specified.

@@ -6,9 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-UpdatableAssetCollectionPage updatableAssets = graphClient.admin().windows().updates().updatableAssets()
+UpdatableAssetGroupCollectionPage updatableAssetGroup = graphClient.admin().windows().updates().updatableAssets().microsoft.graph.windowsUpdates.updatableAssetGroup()
 	.buildRequest()
-	.filter("isof('microsoft.graph.windowsUpdates.updatableAssetGroup')")
 	.get();
 
 ```

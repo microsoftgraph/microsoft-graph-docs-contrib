@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var cloudPcExternalPartnerSetting = new CloudPcExternalPartnerSetting
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new CloudPcExternalPartnerSetting
 {
+	OdataType = "#microsoft.graph.cloudPcExternalPartnerSetting",
 	PartnerId = "198d7140-80bb-4843-8cc4-811377a49a92",
-	EnableConnection = true
+	EnableConnection = true,
 };
+var result = await graphClient.DeviceManagement.VirtualEndpoint.ExternalPartnerSettings.PostAsync(requestBody);
 
-await graphClient.DeviceManagement.VirtualEndpoint.ExternalPartnerSettings
-	.Request()
-	.AddAsync(cloudPcExternalPartnerSetting);
 
 ```

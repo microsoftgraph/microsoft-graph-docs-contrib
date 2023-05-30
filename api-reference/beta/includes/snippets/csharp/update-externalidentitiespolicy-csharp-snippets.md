@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var externalIdentitiesPolicy = new ExternalIdentitiesPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ExternalIdentitiesPolicy
 {
-	AllowExternalIdentitiesToLeave = false
+	AllowExternalIdentitiesToLeave = false,
 };
+var result = await graphClient.Policies.ExternalIdentitiesPolicy.PatchAsync(requestBody);
 
-await graphClient.Policies.ExternalIdentitiesPolicy
-	.Request()
-	.UpdateAsync(externalIdentitiesPolicy);
 
 ```

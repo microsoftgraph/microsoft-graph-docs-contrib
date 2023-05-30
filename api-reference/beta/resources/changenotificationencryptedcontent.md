@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents the encrypted data attached to a change notification.
 
-For details, see [Set up change notifications that include resource data (preview)](/graph/webhooks-with-resource-data.md).
+For details, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
 
 ## Properties
 

@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 $params = @{
-	Status = @{
-		State = "completed"
-		Description = "completed"
+	status = @{
+		state = "completed"
+		description = "completed"
 	}
 }
 

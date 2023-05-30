@@ -4,20 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var activities = new List<Microsoft.Graph.ExternalConnectors.ExternalActivity>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Connections.Item.Items.Item.MicrosoftGraphExternalConnectorsAddActivities.AddActivitiesPostRequestBody
 {
-	new Microsoft.Graph.ExternalConnectors.ExternalActivity
+	Activities = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalActivity>
 	{
-		Type = Microsoft.Graph.ExternalConnectors.ExternalActivityType.Viewed,
-		StartDateTime = DateTimeOffset.Parse("String (timestamp)")
-	}
+		new Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalActivity
+		{
+			OdataType = "#microsoft.graph.externalConnectors.externalActivity",
+			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalActivityType.Created,
+			StartDateTime = DateTimeOffset.Parse("2021-04-06T18:04:31.033Z"),
+			PerformedBy = new Microsoft.Graph.Beta.Models.ExternalConnectors.Identity
+			{
+				Type = Microsoft.Graph.Beta.Models.ExternalConnectors.IdentityType.User,
+				Id = "1f0c997e-99f7-43f1-8cca-086f8d42be8d",
+			},
+		},
+	},
 };
+var result = await graphClient.Connections["{externalConnection-id}"].Items["{externalItem-id}"].MicrosoftGraphExternalConnectorsAddActivities.PostAsync(requestBody);
 
-await graphClient.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
-	.AddActivities(activities)
-	.Request()
-	.PostAsync();
 
 ```

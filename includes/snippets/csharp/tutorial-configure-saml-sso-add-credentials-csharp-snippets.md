@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var servicePrincipal = new ServicePrincipal
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ServicePrincipal
 {
-	KeyCredentials = new List<KeyCredential>()
+	KeyCredentials = new List<KeyCredential>
 	{
 		new KeyCredential
 		{
@@ -19,7 +21,7 @@ var servicePrincipal = new ServicePrincipal
 			Type = "X509CertAndPassword",
 			Usage = "Sign",
 			Key = Convert.FromBase64String("MIIKIAIBAz.....HBgUrDgMCERE20nuTptI9MEFCh2Ih2jaaLZBZGeZBRFVNXeZmAAgIH0A=="),
-			DisplayName = "CN=awsAPI"
+			DisplayName = "CN=awsAPI",
 		},
 		new KeyCredential
 		{
@@ -30,10 +32,10 @@ var servicePrincipal = new ServicePrincipal
 			Type = "AsymmetricX509Cert",
 			Usage = "Verify",
 			Key = Convert.FromBase64String("MIIDJzCCAg+gAw......CTxQvJ/zN3bafeesMSueR83hlCSyg=="),
-			DisplayName = "CN=awsAPI"
-		}
+			DisplayName = "CN=awsAPI",
+		},
 	},
-	PasswordCredentials = new List<PasswordCredential>()
+	PasswordCredentials = new List<PasswordCredential>
 	{
 		new PasswordCredential
 		{
@@ -41,13 +43,11 @@ var servicePrincipal = new ServicePrincipal
 			KeyId = Guid.Parse("4c266507-3e74-4b91-aeba-18a25b450f6e"),
 			EndDateTime = DateTimeOffset.Parse("2022-01-27T19:40:33Z"),
 			StartDateTime = DateTimeOffset.Parse("2020-04-20T19:40:33Z"),
-			SecretText = "61891f4ee44d"
-		}
-	}
+			SecretText = "61891f4ee44d",
+		},
+	},
 };
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].PatchAsync(requestBody);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"]
-	.Request()
-	.UpdateAsync(servicePrincipal);
 
 ```

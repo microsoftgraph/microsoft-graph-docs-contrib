@@ -25,6 +25,7 @@ Represents the base policy in the directory for cross-tenant access settings.
 |Property|Type|Description|
 |:---|:---|:---|
 | displayName | String | The display name of the cross-tenant access policy. Inherited from [policyBase](../resources/policybase.md).|
+| allowedCloudEndpoints | String collection | Used to specify which Microsoft clouds an organization would like to collaborate with. By default, this value is empty. Supported values for this field are: `microsoftonline.com`, `microsoftonline.us`, and `partner.microsoftonline.cn`. |
 
 ## Relationships
 
@@ -48,6 +49,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
-  "displayName": "String"
+  "displayName": "String",
+  "allowedCloudEndpoints": ["String"]
 }
 ```

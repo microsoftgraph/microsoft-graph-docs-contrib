@@ -7,22 +7,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	Topic = @{
-		Source = "entityUrl"
-		Value = "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+	topic = @{
+		source = "entityUrl"
+		value = "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
 	}
-	ActivityType = "pendingFinanceApprovalRequests"
-	PreviewText = @{
-		Content = "Internal spending team has a pending finance approval requests"
+	activityType = "pendingFinanceApprovalRequests"
+	previewText = @{
+		content = "Internal spending team has a pending finance approval requests"
 	}
-	Recipient = @{
+	recipient = @{
 		"@odata.type" = "microsoft.graph.teamMembersNotificationRecipient"
-		TeamId = "e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+		teamId = "e8bece96-d393-4b9b-b8da-69cedef1a7e7"
 	}
-	TemplateParameters = @(
+	templateParameters = @(
 		@{
-			Name = "pendingRequestCount"
-			Value = "5"
+			name = "pendingRequestCount"
+			value = "5"
 		}
 	)
 }

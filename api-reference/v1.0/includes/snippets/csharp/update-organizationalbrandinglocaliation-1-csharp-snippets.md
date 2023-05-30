@@ -4,17 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var organizationalBranding = new OrganizationalBranding
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new OrganizationalBranding
 {
 	SignInPageText = "Default",
-	UsernameHintText = "DefaultHint"
+	UsernameHintText = "DefaultHint",
 };
+var result = await graphClient.Organization["{organization-id}"].Branding.PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Accept-Language", "0");
+});
 
-await graphClient.Organization["{organization-id}"].Branding
-	.Request()
-	.Header("Accept-Language","0")
-	.UpdateAsync(organizationalBranding);
 
 ```

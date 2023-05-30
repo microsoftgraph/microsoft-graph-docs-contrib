@@ -4,16 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var bookingCustomerBase = new BookingCustomer
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new BookingCustomerBase
 {
-	DisplayName = "Adele",
-	EmailAddress = "adele@relecloud.com"
+	OdataType = "#microsoft.graph.bookingCustomer",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"displayName" , "Adele"
+		},
+		{
+			"emailAddress" , "adele@relecloud.com"
+		},
+	},
 };
+var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Customers["{bookingCustomerBase-id}"].PatchAsync(requestBody);
 
-await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Customers["{bookingCustomerBase-id}"]
-	.Request()
-	.UpdateAsync(bookingCustomerBase);
 
 ```

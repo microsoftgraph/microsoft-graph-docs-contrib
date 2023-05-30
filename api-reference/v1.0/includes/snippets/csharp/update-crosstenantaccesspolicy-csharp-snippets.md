@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var crossTenantAccessPolicy = new CrossTenantAccessPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new CrossTenantAccessPolicy
 {
-	DisplayName = "CrossTenantAccessPolicy"
+	AllowedCloudEndpoints = new List<string>
+	{
+		"microsoftonline.us",
+	},
 };
+var result = await graphClient.Policies.CrossTenantAccessPolicy.PatchAsync(requestBody);
 
-await graphClient.Policies.CrossTenantAccessPolicy
-	.Request()
-	.UpdateAsync(crossTenantAccessPolicy);
 
 ```
