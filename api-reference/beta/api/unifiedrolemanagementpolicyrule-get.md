@@ -140,7 +140,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve a rule defined for a policy for PIM for groups
+### Example 2: Retrieve a rule defined for a policy in PIM for groups
 
 #### Request
 
