@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 <!-- markdownlint-disable MD002 MD041 -->
 Before using Microsoft Graph Data Connect for the first time, you need to configure your Microsoft 365 tenant. This involves turning on the service and configuring a security group with permissions to approve data extraction requests.
 
-## Grant Azure AD users the Global administrator role
+## Grant Azure AD users the global administrator role
 
 In this step, you will ensure that two users in your Microsoft 365 tenant have the **Global administrator** role enabled.
 
