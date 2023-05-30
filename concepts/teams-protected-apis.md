@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 Microsoft Teams APIs in Microsoft Graph that access sensitive data are considered protected APIs. These APIs require that you have additional validation beyond permissions and consent before you can use them.
 
-You can call these protected APIs as long as other requirements, such as [app registration](/azure/active-directory/develop/quickstart-register-app) and [subscription association](metered-api-setup.md) are met.
+You can call these protected APIs if the other requirements, such as [app registration](/azure/active-directory/develop/quickstart-register-app) and [subscription association](metered-api-setup.md) are met.
 
 The following APIs are currently protected, and all use [Microsoft Graph application permissions](auth/auth-concepts.md#microsoft-graph-permissions):
 
