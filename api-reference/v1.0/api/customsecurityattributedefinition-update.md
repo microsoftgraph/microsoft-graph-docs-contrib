@@ -41,10 +41,8 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
-|OData-Version|4.01. Optional.|
+|OData-Version|4.01. Required only when updating the predefined values for a custom security attribute. |
 
-> [!NOTE]
-> To update the predefined values for a custom security attribute, you must add the **OData-Version** header and assign it the value `4.01`.
 
 ## Request body
 
