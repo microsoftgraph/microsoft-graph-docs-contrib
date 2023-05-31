@@ -68,11 +68,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+### Example 1: List approval steps example for entitlement management.
+
 ### Request
 
 The following is an example of the request.
-
-### Example 1: List approval steps example for entitlement management.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -149,6 +149,10 @@ Content-type: application/json
 }-->
 
 ### Example 2: List approval steps example for PIM for groups.
+
+### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {

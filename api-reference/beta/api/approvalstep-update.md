@@ -71,11 +71,11 @@ If successful, this method returns a `204 No Content` response code in the respo
 
 ## Examples
 
+### Example 1: Update approval decision example for entitlement management.
+
 ### Request
 
 The following is an example of the request.
-
-### Example 1: Update approval decision example for entitlement management.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,16 +85,6 @@ The following is an example of the request.
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/steps/d4fa4045-4716-436d-aec5-57b0a713f095
-```
-
-### Example 2: Update approval decision example for PIM for groups.
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/steps/d4fa4045-4716-436d-aec5-57b0a713f095
-
-{
-  "reviewResult": "Approve",
-  "justification": "This person has joined team"
-}
 ```
 
 # [C#](#tab/csharp)
@@ -143,13 +133,16 @@ Content-Type: application/json
 
 ### Example 2: Update approval decision example for PIM for groups.
 
+### Request
+
+The following is an example of the request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_approvalstep"
 }-->
 
-### Example 2: Update approval decision example for PIM for groups.
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/steps/d4fa4045-4716-436d-aec5-57b0a713f095
 

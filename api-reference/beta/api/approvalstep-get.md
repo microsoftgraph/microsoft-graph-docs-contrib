@@ -142,6 +142,10 @@ Content-type: application/json
 
 ### Example 2: Get approval step example for PIM for groups.
 
+### Request
+
+The following is an example of the request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
