@@ -42,7 +42,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To retrieve rules of a policy for either Azure AD roles or PIM for groups membership and ownership:
+To retrieve rules in a policy for either Azure AD roles or groups:
 <!-- {
   "blockType": "ignored"
 }
