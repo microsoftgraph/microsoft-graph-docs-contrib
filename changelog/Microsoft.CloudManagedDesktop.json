@@ -3170,6 +3170,32 @@
         "CreatedDateTime": "2023-04-25T04:14:41.3424906Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
+    },
+    {
+        "ChangeList": [
+            {
+                "Id": "a646af91-1226-4824-9e44-e91b7d27ef4a",
+                "ApiChange": "Property",
+                "ChangedApiName": "permissionCheckNoWindows365NetworkUserRole",
+                "ChangeType": "Addition",
+                "Description": "Added the **permissionCheckNoWindows365NetworkUserRole** member to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
+                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+            },
+            {
+                "Id": "a646af91-1226-4824-9e44-e91b7d27ef4a",
+                "ApiChange": "Property",
+                "ChangedApiName": "permissionCheckNoWindows365NetworkInterfaceContributorRole",
+                "ChangeType": "Addition",
+                "Description": "Added the **permissionCheckNoWindows365NetworkInterfaceContributorRole** member to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
+                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+            }
+        ],
+        "Id": "a646af91-1226-4824-9e44-e91b7d27ef4a",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-05-31T011:14:41.3424906Z",
+        "WorkloadArea": "Devices and apps",
+        "SubArea": "Cloud PC"
     }
     ]
 }
