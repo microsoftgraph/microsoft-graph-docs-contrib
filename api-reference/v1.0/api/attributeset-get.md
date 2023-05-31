@@ -23,14 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
 
-The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
-
-+ Attribute Assignment Reader
-+ Attribute Definition Reader
-+ Attribute Assignment Administrator
-+ Attribute Definition Administrator
-
-By default, Global Administrator and other administrator roles do not have permissions to define, read, or assign custom security attributes.
+[!INCLUDE [rbac-customsecurityattibutes-apis-definition-assignment-read](../includes/rbac-for-apis/rbac-customsecurityattibutes-apis-definition-assignment-read.md)]
 
 ## HTTP request
 
