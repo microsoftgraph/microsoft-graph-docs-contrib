@@ -1,6 +1,6 @@
 ---
 title: "Assign a manager"
-description: "Use this API to assign a user's manager."
+description: "Assign a user's manager."
 ms.localizationpriority: medium
 author: "yyuank"
 ms.prod: "users"
@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to assign a user's manager.
-> Note: You cannot assign direct reports - instead use this API.
+Assign a user's manager.
+
+> **Note:** You cannot assign direct reports; instead, use this API.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +45,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 ### Request
-Here is an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a manager.
+The following is an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a manager.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -87,6 +88,8 @@ Content-type: application/json
 ---
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response"
