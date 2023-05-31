@@ -43,7 +43,7 @@ This resource lets you add your own data to custom properties using [extensions]
 
 ## Properties
 
-| Property | Type	| Description |
+| Property | Type    | Description |
 |:-------- |:---- |:----------- |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | The collection of service plans associated with the tenant. Not nullable. |
 | businessPhones | String collection | Telephone number for the organization. Although this is a string collection, only one number can be set for this property. |
@@ -70,7 +70,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | state | String | State name of the address for the organization. |
 | street | String | Street name of the address for organization. |
 | technicalNotificationMails |String collection | Not nullable. |
-| tenantType | String | Not nullable. The tenant type option that was selected when the tenant was created. The possible values are: <li> `AAD` - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios. <li> `AAD B2C` A customer identity access management (CIAM) service that serves business-to-consumer (B2C) scenarios.  |
+| tenantType | String | Not nullable. The tenant type option that was selected when the tenant was created. The possible values are: <li> `AAD` - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios. <li> `AAD B2C` An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios.  <li> `CIAM` - A customer identity & access management (CIAM) solution that provides an integrated platform to serve consumers, partners, and citizen scenarios.  |
 | verifiedDomains | [verifiedDomain](verifieddomain.md) collection|The collection of domains associated with this tenant. Not nullable. |
 
 ### partnerTenantType values
@@ -87,7 +87,7 @@ This resource lets you add your own data to custom properties using [extensions]
 
 ## Relationships
 
-| Relationship  | Type	|Description|
+| Relationship  | Type    |Description|
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization resource. Nullable.| 

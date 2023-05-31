@@ -81,7 +81,7 @@ items:
       href: /graph/delta-query-overview?context=graph/api/1.0
     - name: Add custom data
       displayName: directory extensions, schema extensions, open extensions, extension attributes
-      href: /graph/extensibility-overview?context=graph/api/1.0
+      href: /graph/extensibility-overview?context=graph/api/1.0&view=graph-rest-1.0&preserve-view=true
     - name: Enable metered APIs
       href: /graph/metered-api-setup?context=graph/api/1.0
       displayName: monetize, charge, cost, pricing
@@ -283,7 +283,7 @@ items:
           href: /graph/toolkit/customize-components/right-to-left?context=graph/api/1.0
   - name: Configure Connected Services
     displayName: Configure Connected Services in Visual Studio
-    href: office-365-connected-services.md
+    href: /graph/office-365-connected-services?context=graph/api/1.0
   - name: Resources
     items:
     - name: Best practices
@@ -4734,9 +4734,9 @@ items:
     - name: Extensions
       items:
       - name: Overview
+        displayName: Directory extensions, Schema extensions, Open extensions, On-premises extensions
         href: /graph/extensibility-overview?context=graph/api/1.0&preserve-view=true
-      - name: Directory extension
-        displayname: Groups, Users, Applications, Organization, Devices
+      - name: Directory extensions
         items:
         - name: Extension property
           href: resources/extensionproperty.md
@@ -4750,8 +4750,7 @@ items:
           href: api/extensionproperty-delete.md
         - name: Get available extension properties
           href: api/directoryobject-getavailableextensionproperties.md
-      - name: Open extension
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+      - name: Open extensions
         items:
         - name: Open type extension
           href: resources/opentypeextension.md
@@ -4764,7 +4763,6 @@ items:
         - name: Delete
           href: api/opentypeextension-delete.md
       - name: Schema extension
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
         - name: Schema extension
           href: resources/schemaextension.md
@@ -8405,6 +8403,8 @@ items:
         - name: Time off request
           href: resources/timeoffrequest.md
           items:
+          - name: List
+            href: api/timeoffrequest-list.md
           - name: Get
             href: api/timeoffrequest-get.md
           - name: Delete

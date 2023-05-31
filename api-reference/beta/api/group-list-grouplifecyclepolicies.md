@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/groupLifecyclePolicies
 [!INCLUDE [sample-code](../includes/snippets/php/get-grouplifecyclepolicies-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-grouplifecyclepolicies-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
