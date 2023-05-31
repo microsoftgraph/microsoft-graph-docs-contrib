@@ -122,7 +122,7 @@ The following example gets the list of any [resource-specific permissions that w
 <!-- {
   "blockType": "request",
   "name": "get_installedApps_in_chat_select_consentedPermissionSet",
-  "sampleKeys": ["19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2"]
+  "sampleKeys": ["19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2", "MTk6NWJkODZlYzdmNmIyNDdkM2I5ZTUxOWIwYmZlZjVkMDNAdGhyZWFkLnYyIyMyYjUyNGUyOC05NWNlLTRjOWItOTc3My00YTViZDZlYzE3NzA="]
 }
 -->
 
