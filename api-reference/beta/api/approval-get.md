@@ -42,12 +42,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
-### Get approval example for entitlement management.
+### To get approval example for entitlement management.
 ```http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}
 ```
 
-### Get approval example for PIM for groups.
+### To get approval example for PIM for groups.
 ```http
 GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}
 ```
@@ -70,6 +70,8 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 ### Request
 
+### Example 1: Get approval example for entitlement management.
+
 The following is an example of the request.
 
 
@@ -79,7 +81,6 @@ The following is an example of the request.
   "name": "get_approval"
 }-->
 
-### Example 1: Get approval example for entitlement management.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489
 ```
@@ -149,16 +150,19 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
+### Example 2: Get approval example for PIM for groups.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_approval"
 }-->
 
-### Example 2: Get approval example for PIM for groups.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489
 ```
+
+---
 
 ### Response
 
