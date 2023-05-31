@@ -19,7 +19,7 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-read.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="ReadRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
@@ -54,7 +54,7 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 <!-- markdownlint-disable MD024 -->
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-select.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="SelectRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
@@ -90,7 +90,7 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-list.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="ListRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
@@ -126,7 +126,7 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-index.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="ItemByIdRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
@@ -160,7 +160,7 @@ You can use the `$expand` filter to request a related entity, or collection of e
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-expand.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="ExpandRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
@@ -194,7 +194,7 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-delete.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="DeleteRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
@@ -228,7 +228,7 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-create.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="CreateRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
@@ -262,7 +262,7 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-update.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="UpdateRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
@@ -296,7 +296,7 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-headers.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="HeadersRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
@@ -330,7 +330,7 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-queryparams.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="QueryParametersRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
@@ -354,7 +354,6 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-TODO
 [!INCLUDE [sample-code](includes/snippets/python/create-requests-queryparams.md)]
 
 ---
