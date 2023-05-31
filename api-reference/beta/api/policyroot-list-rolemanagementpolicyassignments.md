@@ -44,7 +44,7 @@ To retrieve details of all role management policy assignments for Azure AD roles
 GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 
-To retrieve details of all role management policy assignments for PIM for groups membership and ownership scoped to a group:
+To retrieve details of all role management policy assignments for groups:
 <!-- {
   "blockType": "ignored"
 }
