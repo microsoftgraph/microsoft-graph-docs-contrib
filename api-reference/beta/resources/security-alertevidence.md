@@ -25,13 +25,14 @@ This alert evidence base type and its derived evidence types provide a means to 
 
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The time the evidence was created and added to the alert.|
+|createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`.|
 |remediationStatusDetails|String|Details about the remediation status.|
-|roles|[microsoft.graph.security.evidenceRole](#evidencerole-values) collection|The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role "Attacker".|
-|tags|String collection|Array of custom tags associated with an evidence instance, for example to denote a group of devices, high value assets, etc.|
+|roles|[microsoft.graph.security.evidenceRole](#evidencerole-values) collection|One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role `Attacker`.|
+|tags|String collection|Array of custom tags associated with an evidence instance. For example, to denote a group of devices or high value assets.|
 |verdict|[microsoft.graph.security.evidenceVerdict](#evidenceverdict-values)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
 
 

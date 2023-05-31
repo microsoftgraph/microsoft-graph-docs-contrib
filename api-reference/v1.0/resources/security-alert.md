@@ -123,7 +123,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | microsoftDefenderForCloudApps| Microsoft Defender for Cloud Apps.             |
 | microsoftDefenderForOffice365| Microsoft Defender For Office365.              |
 | microsoft365Defender         | Microsoft 365 Defender.                        |
-| azureAdIdentityProtection    | AAD Identity Protection.                       |
+| azureAdIdentityProtection    | Azure Active Directory Identity Protection.    |
 | microsoftAppGovernance       | Microsoft app governance.                      |
 | dataLossPrevention           | Microsoft Purview Data Loss Prevention.        |
 | unknownFutureValue           | Evolvable enumeration sentinel value. Do not use.|
