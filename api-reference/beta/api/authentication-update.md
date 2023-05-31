@@ -83,7 +83,7 @@ Content-Type: application/json
 }
 -->
 ```http
-HTTP/1.1 204 NO CONTENT
+HTTP/1.1 204 No Content
 ```
 
 
