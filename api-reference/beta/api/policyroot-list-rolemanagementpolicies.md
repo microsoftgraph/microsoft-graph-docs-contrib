@@ -44,7 +44,7 @@ To retrieve policies and their details for Azure AD roles scoped to the tenant:
 GET /policies/roleManagementPolicies?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 
-To retrieve policies and their details for PIM for groups membership and ownership scoped to a group:
+To retrieve details of all role management policies scoped to a group:
 <!-- {
   "blockType": "ignored"
 }
