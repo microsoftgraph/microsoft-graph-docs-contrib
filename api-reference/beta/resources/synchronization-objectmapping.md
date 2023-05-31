@@ -333,7 +333,7 @@ The following is a JSON representation of the resource.
   "flowTypes": "String",
   "metadata": [
     {
-      "@odata.type": "microsoft.graph.objectMappingMetadataEntry"
+      "@odata.type": "microsoft.graph.metadataEntry"
     }
   ],
   "name": "String",
