@@ -42,12 +42,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
-### To list approval steps example for entitlement management.
+To list the approval steps in entitlement management:
 ```http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps
 ```
 
-### To list approval steps example for PIM for groups.
+To list the approval steps in PIM for groups:
 ```http
 GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps
 ```
