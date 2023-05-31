@@ -196,7 +196,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies(rules(id))",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies(rules(id))",
     "value": [
         {
             "id": "Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369",
