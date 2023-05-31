@@ -30,16 +30,9 @@ Object mappings are the main part of the [synchronization rule](synchronization-
 |sourceObjectName           |String     |Name of the object in the source directory. Must match the object name from the source [directory definition](synchronization-directorydefinition.md).|
 |targetObjectName           |String     |Name of the object in target directory. Must match the object name from the target [directory definition](synchronization-directorydefinition.md).|
 
-### JSON example
+### Sample configuration
 
-<!-- {
-  "blockType": "example",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.objectMapping"
-}-->
-
+<!-- { "blockType": "ignored" } -->
 ```json
 {
     "attributeMappings": [
@@ -322,29 +315,25 @@ Object mappings are the main part of the [synchronization rule](synchronization-
 ```
 
 ## JSON representation
-
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.objectMapping"
-}-->
-
-```json
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.objectMapping",
   "attributeMappings": [
     {
       "@odata.type": "microsoft.graph.attributeMapping"
     }
   ],
-  "enabled": true,
+  "enabled": "Boolean",
   "flowTypes": "String",
   "metadata": [
     {
-      "@odata.type": "microsoft.graph.metadataEntry"
+      "@odata.type": "microsoft.graph.objectMappingMetadataEntry"
     }
   ],
   "name": "String",
