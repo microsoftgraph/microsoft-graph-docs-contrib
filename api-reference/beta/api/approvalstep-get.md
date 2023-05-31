@@ -37,13 +37,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To get an approval step in entitlement management:
+
 <!-- { "blockType": "ignored" } -->
-### To get approval step  entitlement management.
 ```http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}
 ```
 
-### To get approval step for PIM for groups.
+To get an approval step in PIM for groups:
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps/{id}
 ```
