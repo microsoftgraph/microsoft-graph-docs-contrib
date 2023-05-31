@@ -40,14 +40,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+To get approval objects in entitlement management:
 
- To get approval objects in entitlement management:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}
 ```
 
- To get approval objects in PIM for groups:
+To get approval objects in PIM for groups:
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}
 ```
