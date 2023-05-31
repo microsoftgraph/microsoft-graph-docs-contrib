@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To retrieve the details of a policy for either Azure AD roles or PIM for groups membership and ownership:
+To retrieve the details of a policy in PIM that can be applied to Azure AD roles or group membership or ownership.
 <!-- {
   "blockType": "ignored"
 }
