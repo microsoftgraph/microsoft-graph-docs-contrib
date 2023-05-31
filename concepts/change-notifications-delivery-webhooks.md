@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: jumasure
 ms.prod: "change-notifications"
 ms.localizationpriority: high
-ms.custom: graphiamtop20, devx-track-azurecli
+ms.custom: graphiamtop20
 ms.date: 03/23/2023
 ---
 
