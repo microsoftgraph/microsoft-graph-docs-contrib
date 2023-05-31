@@ -22,7 +22,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->chatsById('chat-id')->members()->post($requestBody);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->members()->post($requestBody);
 
 
 ```

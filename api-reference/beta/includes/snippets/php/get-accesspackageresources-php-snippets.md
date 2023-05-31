@@ -16,7 +16,7 @@ $queryParameters->expand = ["accessPackageResourceScopes"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogsById('accessPackageCatalog-id')->accessPackageResources()->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogs()->byAccessPackageCatalogId('accessPackageCatalog-id')->accessPackageResources()->get($requestConfiguration);
 
 
 ```

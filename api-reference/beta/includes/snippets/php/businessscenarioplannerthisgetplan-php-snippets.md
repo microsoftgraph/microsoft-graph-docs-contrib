@@ -25,7 +25,7 @@ $target->setAdditionalData($additionalData);
 $requestBody->setTarget($target);
 
 
-$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->getPlan()->post($requestBody);
+$result = $graphServiceClient->solutions()->businessScenarios()->byBusinessScenarioId('businessScenario-id')->planner()->getPlan()->post($requestBody);
 
 
 ```

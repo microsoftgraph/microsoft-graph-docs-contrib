@@ -16,7 +16,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->groupsById('group-id')->members()->graphUser()->count()->get($requestConfiguration);
+$graphServiceClient->groups()->byGroupId('group-id')->members()->graphUser()->count()->get($requestConfiguration);
 
 
 ```

@@ -37,8 +37,8 @@ Use the following steps to test your connector:
         },
         "CredentialData": {
           "Path": "D:\\ApplianceParts.csv",
-          "AuthenticationKind": "Anonymous", // Authentication kind which connector supports eg: basic, windows, anonymous
-          "CredentialDetails": null
+          "AuthenticationKind": "Anonymous", // Authentication kind which connector supports eg: basic, windows, anonymous, oauth2.client_credentials
+          "CredentialDetails": null // If AuthenticationKind is set to something different, use { "loginId": "", "loginSecret": "" } here
     
         },
         "ProviderParameters": null // This parameter will have the data/configuration given during connection creation time. Will be present in JSON serialized format
@@ -46,6 +46,7 @@ Use the following steps to test your connector:
     }
 
     ```
+
 
 2. Update the CustomConnectorPortMap.json file with the port mapping of the connector. This file located in the following folder C:\Program Files\Graph connector agent. Update this file with an entry for the connector ID (which you identified in the ConnectorInfoServiceImpl.cs file in the previous step) and the port, which is defined in the ConnectorServer.cs file.
 

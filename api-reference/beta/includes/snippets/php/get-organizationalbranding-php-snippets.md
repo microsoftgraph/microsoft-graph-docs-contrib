@@ -16,7 +16,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->organizationById('organization-id')->branding()->get($requestConfiguration);
+$result = $graphServiceClient->organization()->byOrganization()Id('organization-id')->branding()->get($requestConfiguration);
 
 
 ```
