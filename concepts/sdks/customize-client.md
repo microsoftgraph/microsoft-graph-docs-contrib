@@ -12,35 +12,7 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 <!-- markdownlint-disable MD051 -->
 ## [C#](#tab/csharp)
 
-```csharp
-// using Azure.Identity;
-// https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
-var interactiveCredential = new InteractiveBrowserCredential(...);
-
-var authProvider = new AzureIdentityAuthenticationProvider(tokenCredential, scopes: scopes);
-
-var handlers = GraphClientFactory.CreateDefaultHandlers();
-
-// Remove a default handler
-var compressionHandler =
-    handlers.Where(h => h is CompressionHandler).FirstOrDefault();
-handlers.Remove(compressionHandler);
-
-// Add a new one
-// ChaosHandler simulates random server failures
-handlers.Add(new ChaosHandler());
-
-var httpClient = GraphClientFactory.Create(handlers);
-
-var customGraphClient = new GraphServiceClient(httpClient, authProvider);
-
-var messages = await graphClient.Me.Messages
-        .GetAsync(requestConfiguration => 
-        {
-            requestConfiguration.QueryParameters.Top = 100;
-            requestConfiguration.QueryParameters.Select = new string[] { "subject" };
-        });
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CustomClients.cs" id="ChaosHandlerSnippet":::
 
 ## [TypeScript](#tab/typeScript)
 
@@ -218,42 +190,7 @@ Some environments require client applications to use a HTTP proxy before they ca
 <!-- markdownlint-disable MD024 -->
 ## [C#](#tab/csharp)
 
-```csharp
-// URI to proxy
-var proxyAddress = "http://localhost:8888";
-
-// Create a new System.Net.Http.HttpClientHandler with the proxy
-var handler = new HttpClientHandler
-{
-    // Create a new System.Net.WebProxy
-    // See WebProxy documentation for scenarios requiring
-    // authentication to the proxy
-    Proxy = new WebProxy(new Uri(proxyAddress))
-};
-
-// Create an options object for the credential being used
-// For example, here we're using a ClientSecretCredential so
-// we create a ClientSecretCredentialOptions object
-var options = new ClientSecretCredentialOptions
-{
-    // Create a new Azure.Core.HttpClientTransport
-    Transport = new HttpClientTransport(handler)
-};
-
-var credential = new ClientSecretCredential(
-    "YOUR_TENANT_ID",
-    "YOUR_CLIENT_ID",
-    "YOUR_CLIENT_SECRET",
-    options
-);
-
-var scopes = new[] { "https://graph.microsoft.com/.default" };
-
-// This example works with Microsoft.Graph 5+
-var httpClient = GraphClientFactory.Create(proxy: new WebProxy(new Uri(proxyAddress)));
-
-var graphClient = new GraphServiceClient(httpClient, new AzureIdentityAuthenticationProvider(credential, scopes: scopes));
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CustomClients.cs" id="ProxySnippet":::
 
 ## [TypeScript](#tab/typeScript)
 
