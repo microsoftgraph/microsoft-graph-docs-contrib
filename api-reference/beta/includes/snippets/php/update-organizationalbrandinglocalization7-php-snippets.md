@@ -16,7 +16,7 @@ $requestBody->setUsernameHintText(' ');
 
 
 
-$result = $graphServiceClient->organizationById('organization-id')->branding()->localizationsById('organizationalBrandingLocalization-id')->patch($requestBody);
+$result = $graphServiceClient->organization()->byOrganization()Id('organization-id')->branding()->localizations()->byLocalizationId('organizationalBrandingLocalization-id')->patch($requestBody);
 
 
 ```

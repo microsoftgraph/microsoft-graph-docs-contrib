@@ -25,7 +25,7 @@ $businessScenarioProperties->setExternalObjectVersion('000003');
 $requestBody->setBusinessScenarioProperties($businessScenarioProperties);
 
 
-$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->tasksById('businessScenarioTask-id')->patch($requestBody);
+$result = $graphServiceClient->solutions()->businessScenarios()->byBusinessScenarioId('businessScenario-id')->planner()->tasks()->byTaskId('businessScenarioTask-id')->patch($requestBody);
 
 
 ```

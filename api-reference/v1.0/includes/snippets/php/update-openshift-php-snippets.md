@@ -47,7 +47,7 @@ $requestBody->setDraftOpenShift(null);
 
 
 
-$result = $graphServiceClient->teamsById('team-id')->schedule()->openShiftsById('openShift-id')->patch($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->openShifts()->byOpenShiftId('openShift-id')->patch($requestBody);
 
 
 ```

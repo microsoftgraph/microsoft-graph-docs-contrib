@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->compliance()->ediscovery()->casesById('case-id')->custodiansById('custodian-id')->siteSourcesById('siteSource-id')->delete();
+$graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->custodians()->byCustodianId('custodian-id')->siteSources()->bySiteSourceId('siteSource-id')->delete();
 
 
 ```

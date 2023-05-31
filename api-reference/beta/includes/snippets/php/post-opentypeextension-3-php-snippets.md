@@ -23,7 +23,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->groupsById('group-id')->eventsById('event-id')->extensions()->post($requestBody);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->events()->byEventId('event-id')->extensions()->post($requestBody);
 
 
 ```

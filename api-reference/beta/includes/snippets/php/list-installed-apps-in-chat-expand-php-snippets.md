@@ -15,7 +15,7 @@ $queryParameters->expand = ["teamsAppDefinition($expand=bot)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chatsById('chat-id')->installedApps()->get($requestConfiguration);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->installedApps()->get($requestConfiguration);
 
 
 ```

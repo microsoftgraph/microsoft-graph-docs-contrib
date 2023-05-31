@@ -19,7 +19,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->instancesById('accessReviewInstance-id')->decisionsById('accessReviewInstanceDecisionItem-id')->post($requestBody);
+$graphServiceClient->identityGovernance()->accessReviews()->definitions()->byDefinitionId('accessReviewScheduleDefinition-id')->instances()->byInstanceId('accessReviewInstance-id')->decisions()->byDecisionId('accessReviewInstanceDecisionItem-id')->post($requestBody);
 
 
 ```

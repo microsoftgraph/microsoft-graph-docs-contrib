@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/beta/onPremisesPublishing
 
 
 
-$graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->connectorGroupsById('connectorGroup-id')->members()->ref()->post($requestBody);
+$graphServiceClient->onPremisesPublishingProfiles()->byOnPremisesPublishingProfileId('onPremisesPublishingProfile-id')->connectorGroups()->byConnectorGroupId('connectorGroup-id')->members()->ref()->post($requestBody);
 
 
 ```

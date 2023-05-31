@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->createForward()->post();
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->createForward()->post();
 
 
 ```
