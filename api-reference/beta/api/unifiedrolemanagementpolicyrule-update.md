@@ -42,7 +42,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To update a rule defined for a policy for either Azure AD roles or PIM for groups membership and ownership:
+To update a rule defined for a policy for either Azure AD roles or groups in PIM:
 <!-- {
   "blockType": "ignored"
 }
