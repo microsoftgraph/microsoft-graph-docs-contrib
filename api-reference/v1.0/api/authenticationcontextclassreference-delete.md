@@ -55,7 +55,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_authenticationcontextclassreference"
+  "name": "delete_authenticationcontextclassreference",
+  "sampleKeys": ["c1"]
 }-->
 
 ```http
