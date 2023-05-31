@@ -32,7 +32,7 @@ $requestBody->setClientContext('d45324c1-fcb5-430a-902c-f20af696537c');
 
 
 
-$result = $graphServiceClient->communications()->callsById('call-id')->participantsById('participant-id')->startHoldMusic()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->byCallId('call-id')->participants()->byParticipantId('participant-id')->startHoldMusic()->post($requestBody);
 
 
 ```

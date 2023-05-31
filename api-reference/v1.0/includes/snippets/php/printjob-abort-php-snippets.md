@@ -14,7 +14,7 @@ $requestBody->setReason('String');
 
 
 
-$graphServiceClient->print()->printersById('printer-id')->jobsById('printJob-id')->abort()->post($requestBody);
+$graphServiceClient->print()->printers()->byPrinterId('printer-id')->jobs()->byJobId('printJob-id')->abort()->post($requestBody);
 
 
 ```

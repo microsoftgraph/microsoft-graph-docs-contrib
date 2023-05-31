@@ -14,7 +14,7 @@ $requestBody->setIsEnabled(false);
 
 
 
-$result = $graphServiceClient->policies()->appManagementPoliciesById('appManagementPolicy-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->appManagementPolicies()->byAppManagementPolicieId('appManagementPolicy-id')->patch($requestBody);
 
 
 ```

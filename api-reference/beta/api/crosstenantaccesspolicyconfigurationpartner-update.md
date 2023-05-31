@@ -196,3 +196,54 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+### Example 3: Configure tenant restrictions settings
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_crosstenantaccesspolicyconfigurationpartner_tenantrestriction"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/90e29127-71ad-49c7-9ce8-db3f41ea06f1
+Content-Type: application/json
+
+{
+"tenantRestrictions": {
+       "usersAndGroups": {
+            "accessType": "allowed",
+            "targets": [
+                {
+                    "target": "AllUsers",
+                    "targetType": "user"
+                }
+            ]
+        },
+        "applications": {
+            "accessType": "allowed",
+            "targets": [
+                {
+                    "target": "Office365",
+                    "targetType": "application"
+                }
+            ]
+        }
+    }
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```

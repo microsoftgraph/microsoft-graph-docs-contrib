@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->galleryImagesById('cloudPcGalleryImage-id')->get();
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->galleryImages()->byGalleryImageId('cloudPcGalleryImage-id')->get();
 
 
 ```

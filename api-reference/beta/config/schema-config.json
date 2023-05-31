@@ -21,6 +21,9 @@
     "treatErrorsAsWarningsWorkloads": [
       "intune"
     ],
+    "skipPermissionTableUpdateForWorkloads": [
+      "intune"
+    ],
     "foldersToSkip": [
       "templates",
       "includes"

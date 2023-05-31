@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->planner()->rostersById('plannerRoster-id')->membersById('plannerRosterMember-id')->delete();
+$graphServiceClient->planner()->rosters()->byRosterId('plannerRoster-id')->members()->byMemberId('plannerRosterMember-id')->delete();
 
 
 ```

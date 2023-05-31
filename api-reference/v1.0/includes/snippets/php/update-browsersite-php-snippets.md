@@ -24,7 +24,7 @@ $requestBody->setComment('Updating to Edge.');
 
 
 
-$result = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->sitesById('browserSite-id')->patch($requestBody);
+$result = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteLists()->bySiteListId('browserSiteList-id')->sites()->bySiteId('browserSite-id')->patch($requestBody);
 
 
 ```
