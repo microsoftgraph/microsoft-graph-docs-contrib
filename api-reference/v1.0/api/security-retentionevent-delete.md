@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1/security/triggers/retentionEvents/{retentionEventId}
+DELETE https://graph.microsoft.com/v1.0/security/triggers/retentionEvents/{retentionEventId}
 ```
 
 

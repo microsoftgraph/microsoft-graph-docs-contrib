@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update some or all of the properties of a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.
+Update some or all of the properties of a [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,13 +45,13 @@ PATCH /settings/regionalAndLanguageSettings
 | Content-Type  | application/json. Required.  |
 
 ## Request body
- **PUT**: In the request body, supply a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.
+ **PUT**: In the request body, supply a [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) object.
  
  **PATCH**: Only supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
  
 ## Response
 
-If successful, this method returns a 200 response code and the updated **regionalAndLanguageSettings** object.
+If successful, this method returns a `200 OK` response code and the updated [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) object.
 
 ## Example
 

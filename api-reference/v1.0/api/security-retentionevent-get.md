@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1/security/triggers/retentionEvents/{retentionEventId}
+GET https://graph.microsoft.com/v1.0/security/triggers/retentionEvents/{retentionEventId}
 ```
 
 
