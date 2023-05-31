@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: DarrelMiller
 ---
 
+<!-- markdownlint-disable MD024 MD051 -->
+
 # Upload large files using the Microsoft Graph SDKs
 
 A number of entities in Microsoft Graph support [resumable file uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) to make it easier to upload large files. Instead of trying to upload the entire file in a single request, the file is sliced into smaller pieces and a request is used to upload a single slice. In order to simplify this process, the Microsoft Graph SDKs implement a large file upload task that manages the uploading of the slices.
@@ -13,53 +15,7 @@ A number of entities in Microsoft Graph support [resumable file uploads](/graph/
 
 ## [C#](#tab/csharp)
 
-```csharp
-using var fileStream = System.IO.File.OpenRead(filePath);
-
-// Use properties to specify the conflict behavior
-// in this case, replace
-var uploadSessionRequestBody = new CreateUploadSessionPostRequestBody
-{
-    Item = new DriveItemUploadableProperties
-    {
-        AdditionalData = new Dictionary<string, object>
-        {
-            { "@microsoft.graph.conflictBehavior", "replace" }
-        }
-    }
-};
-
-// Create the upload session
-// itemPath does not need to be a path to an existing item
-var uploadSession = await graphClient.Drive.Root
-    .ItemWithPath(itemPath)
-    .CreateUploadSession
-    .PostAsync(uploadSessionRequestBody);
-
-// Max slice size must be a multiple of 320 KiB
-int maxSliceSize = 320 * 1024;
-var fileUploadTask = new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize, graphClient.RequestAdapter);
-
-var totalLength = fileStream.Length;
-// Create a callback that is invoked after each slice is uploaded
-IProgress<long> progress = new Progress<long>(prog => {
-    Console.WriteLine($"Uploaded {prog} bytes of {totalLength} bytes");
-});
-
-try
-{
-    // Upload the file
-    var uploadResult = await fileUploadTask.UploadAsync(progress);
-
-    Console.WriteLine(uploadResult.UploadSucceeded ?
-        $"Upload complete, item ID: {uploadResult.ItemResponse.Id}" :
-        "Upload failed");
-}
-catch (ServiceException ex)
-{
-    Console.WriteLine($"Error uploading: {ex.ToString()}");
-}
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/LargeFileUpload.cs" id="LargeFileUploadSnippet":::
 
 ## [TypeScript](#tab/typescript)
 
@@ -169,12 +125,9 @@ largeFileUploadTask.upload(0, null, callback);
 
 The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload). If your application encounters a connection interruption or a 5.x.x HTTP status during upload, you can resume the upload.
 
-<!-- markdownlint-disable MD024 -->
 ### [C#](#tab/csharp)
 
-```csharp
-fileUploadTask.ResumeAsync(progress);
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/LargeFileUpload.cs" id="ResumeSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
@@ -193,56 +146,7 @@ const resumedFile: DriveItem = await uploadTask.resume() as DriveItem;
 
 ### [C#](#tab/csharp)
 
-```csharp
-// Create message
-var draftMessage = new Message
-{
-    Subject = "Large attachment"
-};
-
-var savedDraft = await graphClient.Me
-    .Messages
-    .Request()
-    .AddAsync(draftMessage);
-
-using var fileStream = System.IO.File.OpenRead(filePath);
-var largeAttachment = new AttachmentItem
-{
-    AttachmentType = AttachmentType.File,
-    Name = "largefile.gif",
-    Size = fileStream.Length
-};
-
-var uploadSession = await graphClient.Me
-    .Messages[savedDraft.Id]
-    .Attachments
-    .CreateUploadSession(largeAttachment)
-    .Request()
-    .PostAsync();
-
-// Max slice size must be a multiple of 320 KiB
-int maxSliceSize = 320 * 1024;
-var fileUploadTask =
-    new LargeFileUploadTask<FileAttachment>(uploadSession, fileStream, maxSliceSize);
-
-var totalLength = fileStream.Length;
-// Create a callback that is invoked after each slice is uploaded
-IProgress<long> progress = new Progress<long>(prog => {
-    Console.WriteLine($"Uploaded {prog} bytes of {totalLength} bytes");
-});
-
-try
-{
-    // Upload the file
-    var uploadResult = await fileUploadTask.UploadAsync(progress);
-
-    Console.WriteLine(uploadResult.UploadSucceeded ? "Upload complete" : "Upload failed");
-}
-catch (ServiceException ex)
-{
-    Console.WriteLine($"Error uploading: {ex.ToString()}");
-}
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/LargeFileUpload.cs" id="UploadAttachmentSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
