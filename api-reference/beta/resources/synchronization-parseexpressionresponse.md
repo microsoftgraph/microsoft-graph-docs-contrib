@@ -38,17 +38,18 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.parseExpressionResponse",
   "error": {
     "@odata.type": "microsoft.graph.publicError"
   },
+  "evaluationSucceeded": "Boolean",
   "evaluationResult": [
     "String"
   ],
-  "evaluationSucceeded": true,
   "parsedExpression": {
     "@odata.type": "microsoft.graph.attributeMappingSource"
   },
-  "parsingSucceeded": true
+  "parsingSucceeded": "Boolean"
 }
 ```
 
