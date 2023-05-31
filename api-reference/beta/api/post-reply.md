@@ -1,7 +1,7 @@
 ---
 title: "post: reply"
 description: "Reply to a post and add a new post to the specified thread in a group conversation. You can specify "
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -41,7 +41,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 |post|[post](../resources/post.md)|The new post that is being replied with.|
 
