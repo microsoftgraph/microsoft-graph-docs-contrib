@@ -121,6 +121,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **userDefaultAuthenticationMethodType** enumeration type.",
           "Target": "userDefaultAuthenticationMethodType"
+        },
+        {
+          "Id": "b5ed3b76-66eb-4d12-94a0-badc3d6a592a",
+          "ApiChange": "Property",
+          "ChangedApiName": "userPreferredMethodForSecondaryAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the `userPreferredMethodForSecondaryAuthentication` property to the [signInPreferences](https://learn.microsoft.com/en-us/graph/api/resources/signInPreferences?view=graph-rest-beta) resource.",
+          "Target": "signInPreferences"
         }
       ],
       "Id": "b5ed3b76-66eb-4d12-94a0-badc3d6a592a",

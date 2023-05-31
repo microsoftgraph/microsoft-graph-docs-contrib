@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Get authentication
+# Get signInPreferences
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -22,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite|
+
+[!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
 
@@ -65,7 +67,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.strongAuthentication.authentication"
+  "@odata.type": "microsoft.graph.signInPreferences"
 }
 -->
 ``` http
@@ -73,10 +75,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "isSystemPreferredAuthenticationMethodEnabled": false,
-    "userPreferredMethodForSecondaryAuthentication": "push"
-  }
+  "isSystemPreferredAuthenticationMethodEnabled": false,
+  "userPreferredMethodForSecondaryAuthentication": "push"
 }
 ```
 
