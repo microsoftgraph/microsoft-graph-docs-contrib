@@ -84,11 +84,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489
 ```
 
-### Example 2: Get approval example for PIM for groups.
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489
-```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-approval-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -154,4 +149,46 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_approval"
+}-->
 
+### Example 2: Get approval example for PIM for groups.
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489
+```
+
+### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.approval"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "abd306ef-f7b2-4a10-9fd1-493454322489",
+    "steps": [
+        {
+            "id": "d4fa4045-4716-436d-aec5-57b0a713f095",
+            "displayName": null,
+            "reviewedDateTime": null,
+            "reviewResult": "NotReviewed",
+            "status": "InProgress",
+            "assignedToMe": true,
+            "justification": "",
+            "reviewedBy": null
+        }
+    ]
+}
+```
