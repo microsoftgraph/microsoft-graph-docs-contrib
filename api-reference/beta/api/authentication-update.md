@@ -48,7 +48,7 @@ PATCH /users/{id | userPrincipalName}/authentication/signInPreferences
 |Property|Type|Description|
 |:---|:---|:---|
 |isSystemPreferredAuthenticationMethodEnabled|Boolean|Indicates whether the credential preferences of the system are enabled.|
-|userPreferredMethodForSecondaryAuthentication|userDefaultAuthenticationMethodType|The default second factor method used by the user when signing in. If a user is enabled for system preferred authentication then this value is ignored except for a few scenarios where a user is authenticating via NPS extension or ADFS adapter. Possible values are `push`, `oath`, `voiceMobile`, `voiceAlternateMobile`, `voiceOffice`, `sms`, and `unknownFutureValue`|
+|userPreferredMethodForSecondaryAuthentication|userDefaultAuthenticationMethodType|The default second-factor method used by the user when signing in. If a user is enabled for system-preferred authentication, then this value is ignored except for a few scenarios where a user is authenticating via NPS extension or ADFS adapter. Possible values are `push`, `oath`, `voiceMobile`, `voiceAlternateMobile`, `voiceOffice`, `sms`, and `unknownFutureValue`|
 
 
 
