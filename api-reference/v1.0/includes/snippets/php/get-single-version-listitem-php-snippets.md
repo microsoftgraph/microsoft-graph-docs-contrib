@@ -15,7 +15,7 @@ $queryParameters->expand = ["fields"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->itemsById('listItem-id')->versionsById('listItemVersion-id')->get($requestConfiguration);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->lists()->byListId('list-id')->items()->byItemId('listItem-id')->versions()->byVersionId('listItemVersion-id')->get($requestConfiguration);
 
 
 ```

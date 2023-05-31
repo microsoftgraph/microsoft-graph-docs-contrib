@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->me()->authentication()->softwareOathMethodsById('softwareOathAuthenticationMethod-id')->get();
+$result = $graphServiceClient->me()->authentication()->softwareOathMethods()->bySoftwareOathMethodId('softwareOathAuthenticationMethod-id')->get();
 
 
 ```

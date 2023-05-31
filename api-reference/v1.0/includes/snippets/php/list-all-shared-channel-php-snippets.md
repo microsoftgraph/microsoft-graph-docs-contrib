@@ -15,7 +15,7 @@ $queryParameters->filter = "membershipType eq 'shared'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->allChannels()->get($requestConfiguration);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->allChannels()->get($requestConfiguration);
 
 
 ```

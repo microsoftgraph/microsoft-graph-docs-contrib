@@ -26,7 +26,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->teamsById('team-id')->schedule()->swapShiftsChangeRequests()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->swapShiftsChangeRequests()->post($requestBody, $requestConfiguration);
 
 
 ```

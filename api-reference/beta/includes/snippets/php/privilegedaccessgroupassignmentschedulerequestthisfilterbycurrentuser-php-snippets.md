@@ -15,7 +15,7 @@ $queryParameters->filter = "status eq 'PendingApproval' and groupId eq 'd5f0ad2e
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->privilegedAccess()->group()->assignmentScheduleRequestsById('privilegedAccessGroupAssignmentScheduleRequest-id')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->privilegedAccess()->group()->assignmentScheduleRequests()->byAssignmentScheduleRequestId('privilegedAccessGroupAssignmentScheduleRequest-id')->get($requestConfiguration);
 
 
 ```

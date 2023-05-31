@@ -2,7 +2,7 @@
 title: "subscribedSku resource type"
 description: "Represents the subscribed SKU type."
 ms.localizationpriority: medium
-author: "SumitParikh"
+author: "jconley76"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
@@ -17,13 +17,13 @@ Only the read operation is supported on subscribed SKUs; create, update, and del
 
 
 ## Methods
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
 |[Get subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Get a specific commercial subscription that an organization has acquired.|
 |[List subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) collection |Get the list of commercial subscriptions that an organization has acquired.|
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |appliesTo|String| For example, "User" or "Company". |
 |capabilityStatus|String| Possible values are: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. The capabilityStatus is `Enabled` if the **prepaidUnits** property has at least 1 unit that is **enabled**, and `LockedOut` if the customer cancelled their subscription. |

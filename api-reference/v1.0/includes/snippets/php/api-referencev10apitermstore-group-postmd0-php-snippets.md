@@ -14,7 +14,7 @@ $requestBody->setDisplayName('myGroup');
 
 
 
-$result = $graphServiceClient->sitesById('site-id')->termStore()->groups()->post($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->termStore()->groups()->post($requestBody);
 
 
 ```
