@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the details of all role management policy assignments including the policies and rules associated with the Azure AD roles, or Pim for Group membership and ownership.
+Get the details of all role management policy assignments made in PIM for Azure AD roles and PIM for groups.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
