@@ -37,14 +37,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+To update an approval decision in entitlement management:
 
-### To update approval decision example for entitlement management.
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}
 ```
 
-### To update approval decision example for PIM for groups.
+To update an approval decision in PIM for groups:
+
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps/{id}
 ```
