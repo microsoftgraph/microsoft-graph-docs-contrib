@@ -134,7 +134,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve the details of a policy for PIM for groups
+### Example 2: Retrieve the details of a policy in PIM for groups
 
 #### Request
 
