@@ -2,7 +2,7 @@
 title: "Delete namedLocation"
 description: "Delete a namedLocation object."
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
