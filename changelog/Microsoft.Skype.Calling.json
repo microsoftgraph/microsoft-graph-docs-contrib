@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "preferredDisplayName",
           "ChangeType": "Addition",
-          "Description": "Added the `preferredDisplayName` property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
+          "Description": "Added the **preferredDisplayName** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
           "Target": "participant"
         }
       ],
