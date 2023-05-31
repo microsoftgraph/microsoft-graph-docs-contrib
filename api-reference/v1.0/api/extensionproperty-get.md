@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /applications/{application ObjectId}/extensionProperties/{extensionPropertyId}
+GET /applications(appId='{appId}')/extensionProperties/{extensionPropertyId}
 ```
 
 ## Optional query parameters
