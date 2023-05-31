@@ -51,13 +51,10 @@ POST /employeeExperience/learningProviders/{registrationId}/learningCourseActivi
 
 ## Request body
 
-In the request body, supply a JSON representation of the [learningCourseActivity](../resources/learningcourseactivity.md) object.
-
-Based on the course activity type, you can specify the following properties when you create a **learningCourseActivity**.
+In the request body, use @odata.type to specify the type of [learningCourseActivity](../resources/learningcourseactivity.md) resource that you're creating ([learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md)), and include the properties of that type, as listed in the following table.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|Indicates whether this is a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course activity. Required.|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity. Optional. |
 |assignmentType|assignmentType|The assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
 |assignerUserId|String|The user ID of the assigner. Optional. |
@@ -88,6 +85,7 @@ The following example shows how to create a [learningAssignment](../resources/le
 
 The following example shows the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_assigned_learning_courseactivity"
@@ -119,6 +117,28 @@ Content-Type: application/json
   "status": "notStarted"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-assigned-learning-courseactivity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-assigned-learning-courseactivity-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-assigned-learning-courseactivity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-assigned-learning-courseactivity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-assigned-learning-courseactivity-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -166,6 +186,7 @@ The following example creates a [learningSelfInitiated](../resources/learningsel
 
 The following example shows the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_selfinitiated_learning_courseactivity"
@@ -186,6 +207,28 @@ Content-Type: application/json
   "status": "inProgress"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-selfinitiated-learning-courseactivity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-selfinitiated-learning-courseactivity-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-selfinitiated-learning-courseactivity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-selfinitiated-learning-courseactivity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-selfinitiated-learning-courseactivity-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

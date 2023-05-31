@@ -32,7 +32,7 @@ To list the document libraries for a group, your app requests the **drives** rel
 <!-- {"blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{groupId}/drives
+GET /groups/{groupId}/drives
 ```
 
 ### List a site's drives
@@ -50,7 +50,7 @@ GET /sites/{siteId}/drives
 <!-- {"blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/users/{userId}/drives
+GET /users/{userId}/drives
 ```
 
 ### List the current user's drives

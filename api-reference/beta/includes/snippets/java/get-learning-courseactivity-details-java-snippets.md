@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Content 8ba2228a-e020-11ec-9d64-0242ac120003 = graphClient.users("7ba2228a-e020-11ec-9d64-0242ac120002").employeeExperience().learningCourseActivities().8ba2228a-e020-11ec-9d64-0242ac120003()
+LearningCourseActivity learningCourseActivity = graphClient.users("7ba2228a-e020-11ec-9d64-0242ac120002").employeeExperience().learningCourseActivities("8ba2228a-e020-11ec-9d64-0242ac120003")
 	.buildRequest()
 	.get();
 

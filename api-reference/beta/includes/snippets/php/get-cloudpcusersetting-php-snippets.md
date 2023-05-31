@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->userSettingsById('cloudPcUserSetting-id')->get();
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->userSettings()->byUserSettingId('cloudPcUserSetting-id')->get();
 
 
 ```

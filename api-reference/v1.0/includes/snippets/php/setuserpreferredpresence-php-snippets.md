@@ -18,7 +18,7 @@ $requestBody->setExpirationDuration(new \DateInterval('PT8H'));
 
 
 
-$graphServiceClient->usersById('user-id')->presence()->setUserPreferredPresence()->post($requestBody);
+$graphServiceClient->users()->byUserId('user-id')->presence()->setUserPreferredPresence()->post($requestBody);
 
 
 ```

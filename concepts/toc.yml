@@ -106,7 +106,7 @@ items:
             href: /graph/api/resources/groups-overview?context=graph/context
             displayName: groups
           - name: Microsoft 365 groups
-            href: office365-groups-concept-overview.md
+            href: microsoft365-groups-concept-overview.md
           - name: Configure group options
             href: group-set-options.md
           - name: Microsoft 365 group settings
@@ -160,6 +160,8 @@ items:
           - name: Integrate with PAM
             href: data-connect-pam.md
             displayName: Privileged Access Management
+          - name: Define dataset scopes
+            href: data-connect-users-and-groups.md
           - name: Microsoft Graph Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect, frequently asked questions
@@ -649,6 +651,8 @@ items:
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
+          - name: Supported language codes
+            href: search-concept-acceptlanguage-header.md
       - name: Security
         items:
           - name: Overview
@@ -1080,6 +1084,9 @@ items:
                 href: toolkit/customize-components/localization.md
               - name: Right-to-left support
                 href: toolkit/customize-components/right-to-left.md
+      - name: Configure Connected Services
+        displayName: Configure Connected Services in Visual Studio
+        href: office-365-connected-services.md
       - name: Resources
         expanded: true
         items:

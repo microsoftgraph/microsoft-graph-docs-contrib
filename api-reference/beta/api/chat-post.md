@@ -50,7 +50,7 @@ The following table lists the properties that are required to create a chat obje
 |:---|:---|:---|
 |topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of `group` type.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are: `group` and `oneOnOne`. |
-|members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every user who will participate in the chat, including the user who initiates the create request, must be specified in this list. Each member must be assigned a role of `owner` or `guest`. Guest tenant users must be assigned the `guest` role.|
+|members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every user who will participate in the chat, including the user who initiates the create request, must be specified in this list. Each member must be assigned a role of `owner` or `guest`. In-tenant guest users must be assigned the `guest` role. Out-of-tenant external users must be assigned with `owner` role.|
 |installedApps| [teamsApp](../resources/teamsapp.md) collection|List of apps that should be installed in the chat.|
 
 > **Note:** Currently, only one app installation is supported. If multiple app installations are listed in the request, the response will be a `Bad Request` error.
@@ -388,7 +388,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Create a group chat with tenant guest user
+### Example 5: Create a group chat with in-tenant guest user
 
 #### Request
 
