@@ -68,8 +68,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List approval steps example for entitlement management.
-
 ### Request
 
 The following is an example of the request.
@@ -147,53 +145,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-### Example 2: List approval steps example for PIM for groups.
-
-### Request
-
-The following is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_approvalstep_1"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/steps
-```
-
----
-
-### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.approvalStep"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "value": [
-        {
-            "id": "d4fa4045-4716-436d-aec5-57b0a713f095",
-            "displayName": null,
-            "reviewedDateTime": null,
-            "reviewResult": "NotReviewed",
-            "status": "InProgress",
-            "assignedToMe": true,
-            "justification": "",
-            "reviewedBy": null
-        }
-    ]
-}
-```

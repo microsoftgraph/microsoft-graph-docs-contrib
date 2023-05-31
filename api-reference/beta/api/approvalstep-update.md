@@ -71,8 +71,6 @@ If successful, this method returns a `204 No Content` response code in the respo
 
 ## Examples
 
-### Example 1: Update approval decision example for entitlement management.
-
 ### Request
 
 The following is an example of the request.
@@ -130,42 +128,3 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-### Example 2: Update approval decision example for PIM for groups.
-
-### Request
-
-The following is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "patch_approvalstep"
-}-->
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/steps/d4fa4045-4716-436d-aec5-57b0a713f095
-
-{
-  "reviewResult": "Approve",
-  "justification": "This person has joined team"
-}
-```
-
----
-
-### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 204 No Content
-Content-Type: application/json
-```
