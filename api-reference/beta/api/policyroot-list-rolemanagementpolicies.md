@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get role management policies and their details. This API only applies to Azure AD roles, or Pim for Group membership and ownership. To retrieve policies that apply to Azure RBAC, use the [Azure REST PIM API for role management policies](/rest/api/authorization/role-management-policies/list-for-scope).
+Get the details of the policies in PIM that can be applied to Azure AD roles or group membership or ownership. To retrieve policies that apply to Azure RBAC, use the [Azure REST PIM API for role management policies](/rest/api/authorization/role-management-policies/list-for-scope).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -177,7 +177,7 @@ The following example retrieves policies that are scoped to the group and apply 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicies?$filter=scopeId eq '60bba733-f09d-49b7-8445-32369aa066b3' and scopeType eq 'Group'
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicies?$filter=scopeId eq '60bba733-f09d-49b7-8445-32369aa066b3' and scopeType eq 'Group'&$expand=rules($select=id)
 ```
 
 #### Response
@@ -196,7 +196,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies",
+    "@odata.context": https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies(rules(id))",
     "value": [
         {
             "id": "Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369",
@@ -209,7 +209,78 @@ Content-Type: application/json
             "lastModifiedBy": {
                 "displayName": null,
                 "id": null
-            }
+            },
+            "rules@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies('Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369')/rules(id)",
+            "rules": [
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
+                    "id": "Enablement_Admin_Eligibility"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+                    "id": "Expiration_Admin_Eligibility"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Requestor_Admin_Eligibility"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Approver_Admin_Eligibility"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Admin_Admin_Eligibility"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
+                    "id": "Enablement_Admin_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+                    "id": "Expiration_Admin_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Admin_Admin_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Requestor_Admin_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Approver_Admin_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
+                    "id": "Approval_EndUser_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyAuthenticationContextRule",
+                    "id": "AuthenticationContext_EndUser_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
+                    "id": "Enablement_EndUser_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+                    "id": "Expiration_EndUser_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Admin_EndUser_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Requestor_EndUser_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Approver_EndUser_Assignment"
+                }
+            ]
         },
         {
             "id": "Group_60bba733-f09d-49b7-8445-32369aa066b3_8ea17f58-323f-4b16-a1a1-2a7b8d974316",
@@ -222,7 +293,78 @@ Content-Type: application/json
             "lastModifiedBy": {
                 "displayName": null,
                 "id": null
-            }
+            },
+            "rules@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies('Group_60bba733-f09d-49b7-8445-32369aa066b3_8ea17f58-323f-4b16-a1a1-2a7b8d974316')/rules(id)",
+            "rules": [
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+                    "id": "Expiration_Admin_Eligibility"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
+                    "id": "Enablement_Admin_Eligibility"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Admin_Admin_Eligibility"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Requestor_Admin_Eligibility"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Approver_Admin_Eligibility"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+                    "id": "Expiration_Admin_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
+                    "id": "Enablement_Admin_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Admin_Admin_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Requestor_Admin_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Approver_Admin_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+                    "id": "Expiration_EndUser_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
+                    "id": "Enablement_EndUser_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
+                    "id": "Approval_EndUser_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyAuthenticationContextRule",
+                    "id": "AuthenticationContext_EndUser_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Admin_EndUser_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Requestor_EndUser_Assignment"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
+                    "id": "Notification_Approver_EndUser_Assignment"
+                }
+            ]
         }
     ]
 }
