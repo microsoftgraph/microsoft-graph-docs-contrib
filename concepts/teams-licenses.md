@@ -138,6 +138,7 @@ in excess of the seeded capacity will fail.
 
 | Error code | Scenario | Sample error message |
 |:-----------|:-----------|:-----------------|
+| 402 (Payment Required) | Missing an active Azure billing subscription  |`...To call this API, the app must be associated with an Azure subscription, see https://aka.ms/teams-api-payment-requirements for details....`|
 | 402 (Payment Required) | Passing `model=A` without a Microsoft E5 license |`...needs a valid license to access this API...`, `...tenant needs a valid license to access this API...`|
 | 402 (Payment Required) | Calling Patch API passing `model=B` |`...query parameter 'model' does not support value 'B' for this API. Use billing model 'A'...`|
 | 402 (Payment Required) | `Evaluation mode` capacity exceeded |`...evaluation mode capacity has been exceeded. Use a valid billing model...`|
