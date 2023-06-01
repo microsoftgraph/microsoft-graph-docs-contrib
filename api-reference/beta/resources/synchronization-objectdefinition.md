@@ -20,7 +20,7 @@ Describes an object and its attributes. Object definitions are part of [director
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
 |attributes     |[attributeDefinition](synchronization-attributedefinition.md) collection    | Defines attributes of the object. |
-|metadata       |[metadataEntry](synchronization-metadataentry.md) collection   |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
+|metadata       |[objectDefinitionMetadataEntry](synchronization-objectdefinitionmetadataentry.md) collection   |Metadata for the given object.|
 |name           |String     |Name of the object. Must be unique within a directory definition. Not nullable.|
 |supportedApis|String collection|The API that the provisioning service queries to retrieve data for synchronization.|
 
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "attributes": [{"@odata.type": "microsoft.graph.attributeDefinition"}],
-  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
+  "metadata": [{"@odata.type": "microsoft.graph.objectDefinitionMetadataEntry"}],
   "name": "String"
 }
 ```
