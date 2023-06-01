@@ -49,8 +49,8 @@ The following table describes the types available to query and the supported per
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that document libraries are also returned as lists. |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
-|[Search bookmark](search-bookmark.md)|Bookmark.Read.All|Microsoft Search|Microsoft Search bookmarks in your organization.|
-|[Search acronym](search-acronym.md)|Acronym.Read.All|Microsoft Search|Microsoft Search acronyms in your organization.|
+|[Bookmarks](/graph/api/resources/search-bookmark)|Bookmark.Read.All|Microsoft Search|Microsoft Search bookmarks in your organization.|
+|[Acronyms](/graph/api/resources/search-acronym)|Acronym.Read.All|Microsoft Search|Microsoft Search acronyms in your organization.|
 
 ## Page search results
 
