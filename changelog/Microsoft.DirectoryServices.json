@@ -13591,7 +13591,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "companySubscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the [companySubscriptions](https://learn.microsoft.com/en-us/graph/api/resources/companySubscriptions?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [companySubscriptions](https://learn.microsoft.com/en-us/graph/api/resources/companysubscriptions?view=graph-rest-beta) resource and supported methods.",
           "Target": "companySubscriptions"
         },
         {
@@ -13641,7 +13641,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "companySubscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the [companySubscriptions](https://learn.microsoft.com/en-us/graph/api/resources/companySubscriptions?view=graph-rest-v1.0) resource and supported methods.",
+          "Description": "Added the [companySubscriptions](https://learn.microsoft.com/en-us/graph/api/resources/companysubscriptions?view=graph-rest-v1.0) resource and supported methods.",
           "Target": "companySubscriptions"
         },
         {
