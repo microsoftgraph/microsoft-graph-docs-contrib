@@ -436,7 +436,7 @@ items:
             displayName: Azure AD, Microsoft identity platform, identity, access
           - name: Directory management
             items:
-              - name: "Manage custom security attribute assignments (preview)"
+              - name: "Manage custom security attribute assignments"
                 href: custom-security-attributes-examples.md
                 displayName: directory, identity
               - name: Use PIM to assign Azure AD roles
@@ -1084,6 +1084,9 @@ items:
                 href: toolkit/customize-components/localization.md
               - name: Right-to-left support
                 href: toolkit/customize-components/right-to-left.md
+      - name: Configure Connected Services
+        displayName: Configure Connected Services in Visual Studio
+        href: office-365-connected-services.md
       - name: Resources
         expanded: true
         items:

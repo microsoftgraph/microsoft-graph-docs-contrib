@@ -32,8 +32,10 @@ The following table lists scenarios for using PIM for groups APIs to manage acti
 | An administrator lists all active assignments, as well as requests for assignments to be created in the future, for membership and ownership for a group | [List assignmentSchedules](../api/privilegedaccessgroup-list-assignmentschedules.md) |
 | An administrator lists all active membership and ownership assignments for a group | [List assignmentScheduleInstances](../api/privilegedaccessgroup-list-assignmentscheduleinstances.md) |
 | An administrator queries a member and ownership assignment for a group and its details | [Get privilegedAccessGroupAssignmentScheduleRequest](../api/privilegedaccessgroupassignmentschedulerequest-get.md) |
-| A principal queries their membership or ownership assignment requests and the details | [privilegedAccessGroupAssignmentScheduleRequest: filterByCurrentUser](../api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser.md) |
+| A principal queries their membership or ownership assignment requests and the details <br/><br/> An approver queries membership or ownership requests waiting for their approval and details of these requests | [privilegedAccessGroupAssignmentScheduleRequest: filterByCurrentUser](../api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser.md) |
 | A principal cancels a membership or ownership assignment request they created | [privilegedAccessGroupAssignmentScheduleRequest: cancel](../api/privilegedaccessgroupassignmentschedulerequest-cancel.md) |
+| An approver gets details for approval request, including information about approval steps | [Get approval](../api/approval-get.md) |
+| An approver approves or denies approval request by approving or denying approval step | [Update approvalStep](../api/approvalstep-get.md) |
 
 ## PIM for groups APIs for managing eligible assignments of group owners and members
 
@@ -83,9 +85,12 @@ The following Microsoft Graph permissions are required to call the PIM for group
 | assignmentScheduleRequest | CREATE, LIST, GET, UPDATE, DELELE | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
 | eligibilitySchedule <br/> eligibilityScheduleInstance | LIST, GET | PrivilegedEligibilitySchedule.Read.AzureADGroup <br/> PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup |
 | eligibilityScheduleRequest | CREATE, LIST, GET, UPDATE, DELELE | PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup |
+| approval | GET | PrivilegedAssignmentSchedule.Read.AzureADGroup <br/> PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
+| approvalStep | LIST, GET | PrivilegedAssignmentSchedule.Read.AzureADGroup <br/> PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
+| approvalStep | UPDATE | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
 
 
-In addition, for delegated scenarios, the calling principal needs one of the following roles.
+In addition, for delegated scenarios, the calling principal needs one of the following roles (not applicable to approval and approvalStep endpoints).
 
 | Group | Role | Supported operations |
 |---|---|---|
@@ -95,6 +100,8 @@ In addition, for delegated scenarios, the calling principal needs one of the fol
 | Non-role-assignable | Global Reader <br/> Directory Writer <br/> Groups Administrator <br/> Identity Governance Administrator <br/> User Administrator <br/> Group owner* <br/> Group member* | LIST, GET |
 
 `*` Permissions for group members and group owners are limited to the read or write operations they need to perform. For example, a group member can [cancel their assignmentScheduleRequest](../api/privilegedaccessgroupassignmentschedulerequest-cancel.md) but not any other principal's request.
+
+Calls to approval and approvalStep endpoints can be made only by approver of the request. Azure AD roles are not required to call these endpoints.
 
 
 ## See also

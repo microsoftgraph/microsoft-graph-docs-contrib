@@ -56,9 +56,10 @@ If successful, this method returns a `204 No Content` response code.  If unsucce
 
 The following is an example of a request that adds city as an attribute for attribute collection step of an external identities self-service sign-up user flow. Before you can add an attribute to the attribute collection step, you must first [add it among the attributes to be collected in the user flow](../api/authenticationeventsflow-update.md).
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_onAttributeCollectionExternalUsersSelfServiceSignUp"
+  "name": "onAttributeCollectionExternalUsersSelfServiceSignUp_post_attributes"
 }
 -->
 
@@ -70,6 +71,16 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc3
 } 
 
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/onattributecollectionexternalusersselfservicesignup-post-attributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/onattributecollectionexternalusersselfservicesignup-post-attributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following is an example of the response

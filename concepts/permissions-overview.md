@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
-ms.date: 12/07/2022
+ms.date: 05/25/2023
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
@@ -200,7 +200,7 @@ Consider the following examples:
 
 Granting an application more privileges than it needs is a poor security practice that exposes an app to unauthorized and unintended access to data or operations. Also, requesting more permissions than necessary may cause users to refrain from consenting to an app, affecting an app's adoption and usage.
 
-Apply the principle of least privilege when assigning and granting Microsoft Graph permissions to an app. For more information, see [Enhance security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
+Apply the principle of least privilege when assigning and granting Microsoft Graph permissions to an app. For more information, see [Enhance security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access) and [Building apps that secure identity through permissions and consent](/security/zero-trust/develop/identity).
 
 
 ## Limits on requested permissions per app
