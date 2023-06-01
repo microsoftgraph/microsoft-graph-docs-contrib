@@ -116,7 +116,7 @@ The following table lists the members of an [evolvable enumeration](#shiftworkcl
 |activating|Indicates that a user requested to connect the Cloud PC and the service is starting.|
 |waitlisted (deprecated)|Indicates that the shift work Cloud PC is in waitlisted state after the user requests to connect this Cloud PC and all shared use licenses are being actively used. This value is deprecated and will stop returning on May 17, 2023. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
-|standbyMode|Indicates that the shift work Cloud PC is in the standby state before it's shut down and deallocated. A shift work Cloud PC in standby state is still accessible by the user.|
+|standbyMode|Indicates that the shift work Cloud PC is in a standby state before it's shut down and deallocated. A shift work Cloud PC in standby state is still accessible by the user.|
 
 ## Relationships
 
