@@ -38,7 +38,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## Optional query parameters
 
-This method supports `$select`, `$filter`, `$count` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -56,10 +56,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List all cloudPCs
+### Example 1: List all cloudPC devices in a tenant
+
+The following example shows how to get a list of all [cloudPC](../resources/cloudpc.md) devices in a tenant.
 
 #### Request
 
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +103,9 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -140,12 +145,14 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Request with $Top query parameter
+### Example 2: Get the top two cloudPC devices in a tenant
+
+The following example shows how to use the `$top` query parameter to get the top two [cloudPC](../resources/cloudpc.md) devices in a tenant.
 
 #### Request
 
+The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_cloudpcs_with_top_query"
@@ -158,7 +165,9 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs?$
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
