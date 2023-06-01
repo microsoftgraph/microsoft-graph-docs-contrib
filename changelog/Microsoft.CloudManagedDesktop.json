@@ -3178,7 +3178,7 @@
             "ApiChange": "EnumType",
             "ChangedApiName": "shiftWorkCloudPcAccessState",
             "ChangeType": "Change",
-            "Description": "Renamed the `hibernated` member to `standbyMode` in **shiftWorkCloudPcAccessState** enumeration type.",
+            "Description": "Renamed the `hibernated` member to `standbyMode` in the **shiftWorkCloudPcAccessState** enumeration type.",
             "Target": "shiftWorkCloudPcAccessState"
           }
         ],
