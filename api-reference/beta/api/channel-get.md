@@ -208,7 +208,7 @@ Content-type: application/json
 
 The following example shows a request to get the channelSummary property.
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2?$select=summary
 ```
 
@@ -224,7 +224,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('8bb12236-b929-42e0-94a0-1c417466ebf8')/channels(summary)/$entity",
-    ""summary":{
+    "summary":{
         "hasMembersFromOtherTenants":false,
         "guestsCount":1,
         "membersCount":3,
