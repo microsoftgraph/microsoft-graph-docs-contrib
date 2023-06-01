@@ -3,13 +3,13 @@
 ```go
 // GET https://graph.microsoft.com/v1.0/me?$select=displayName,jobTitle
 
-import me "github.com/microsoftgraph/msgraph-sdk-go/me"
+import "github.com/microsoftgraph/msgraph-sdk-go/users"
 
-query := me.MeRequestBuilderGetQueryParameters{
-    Select_escaped: []string{"displayName", "jobTitle"},
+query := users.UserItemRequestBuilderGetQueryParameters{
+    Select: []string{"displayName", "jobTitle"},
 }
 
-options := me.MeRequestBuilderGetOptions{
+options := users.UserItemRequestBuilderGetRequestConfiguration{
     QueryParameters: &query,
 }
 

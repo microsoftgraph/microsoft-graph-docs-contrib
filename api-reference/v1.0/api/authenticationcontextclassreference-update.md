@@ -69,7 +69,8 @@ The following is an example of the request. If an object with the ID `c1` doesn'
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationcontextclassreference"
+  "name": "update_authenticationcontextclassreference",
+  "sampleKeys": ["c1"]
 }-->
 
 ```http
