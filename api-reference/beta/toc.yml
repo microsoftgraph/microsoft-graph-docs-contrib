@@ -12351,9 +12351,9 @@ items:
         - name: Company subscriptions
           href: resources/companysubscriptions.md
           items:
-          - name: List companySubscriptions
+          - name: List
             href: api/companysubscriptions-list.md
-          - name: Get companySubscriptions
+          - name: Get
             href: api/companysubscriptions-get.md
         - name: Tenant information
           href: resources/tenantinformation.md
