@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /applications/{application ObjectId}/extensionProperties
+POST /applications(appId='{appId}')/extensionProperties
 ```
 
 ## Request headers

@@ -1,7 +1,7 @@
 ---
 title: "Delete conversationThread"
 description: "Delete conversationThread."
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

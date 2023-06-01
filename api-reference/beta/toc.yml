@@ -283,7 +283,7 @@ items:
         href: /graph/toolkit/customize-components/right-to-left?context=graph/api/beta
   - name: Configure Connected Services
     displayName: Configure Connected Services in Visual Studio
-    href: office-365-connected-services.md
+    href: /graph/office-365-connected-services?context=graph/api/beta
   - name: Resources
     items:
     - name: Best practices
@@ -11437,9 +11437,9 @@ items:
     - name: Extensions
       items:
       - name: Overview
-        href: /graph/extensibility-overview?context=graph/api/beta&preserve-view=true
-      - name: Directory extension
-        displayname: Groups, Users, Applications, Organization, Devices
+        displayName: Directory extensions, Schema extensions, Open extensions, On-premises extensions
+        href: /graph/extensibility-overview?context=graph/api/beta&view=graph-rest-beta&preserve-view=true
+      - name: Directory extensions
         items:
         - name: Extension property
           href: resources/extensionproperty.md
@@ -11451,8 +11451,7 @@ items:
           href: api/extensionproperty-get.md
         - name: Delete
           href: api/extensionproperty-delete.md
-      - name: Open extension
-        displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+      - name: Open extensions
         items:
         - name: Open type extension
           href: resources/opentypeextension.md
@@ -11464,8 +11463,7 @@ items:
           href: api/opentypeextension-update.md
         - name: Delete
           href: api/opentypeextension-delete.md
-      - name: Schema extension
-        displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+      - name: Schema extensions
         items:
         - name: Schema extension
           href: resources/schemaextension.md
@@ -12330,6 +12328,19 @@ items:
                 href: api/unifiedrbacresourcenamespace-list-resourceactions.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
+          - name: Custom app scope
+            href: resources/customappscope.md
+            items:
+            - name: List
+              href: api/unifiedrbacapplication-list-customappscopes.md
+            - name: Create
+              href: api/unifiedrbacapplication-post-customappscope.md
+            - name: Get
+              href: api/customappscope-get.md
+            - name: Update
+              href: api/customappscope-update.md
+            - name: Delete
+              href: api/customappscope-delete.md
         - name: Subscribed sku
           href: resources/subscribedsku.md
           items:
@@ -15177,6 +15188,13 @@ items:
             items:
             - name: List
               href: api/relyingpartydetailedsummary-list.md
+        - name: Application credential activity
+          href: resources/appcredentialsigninactivity.md
+          items:
+          - name: List
+            href: api/reportroot-list-appcredentialsigninactivities.md
+          - name: Get
+            href: api/appcredentialsigninactivity-get.md
         - name: Application sign-in
           items:
           - name: Sign-in summary
@@ -15232,6 +15250,13 @@ items:
               href: api/authenticationmethodsroot-list-userregistrationdetails.md
             - name: Get
               href: api/userregistrationdetails-get.md
+        - name: Service principal activity
+          href: resources/serviceprincipalsigninactivity.md
+          items:
+          - name: List
+            href: api/reportroot-list-serviceprincipalsigninactivities.md
+          - name: Get
+            href: api/serviceprincipalsigninactivity-get.md
       - name: Microsoft 365 usage reports
         items:
         - name: Overview
@@ -17693,6 +17718,8 @@ items:
         - name: Time off request
           href: resources/timeoffrequest.md
           items:
+          - name: List
+            href: api/timeoffrequest-list.md
           - name: Get
             href: api/timeoffrequest-get.md
           - name: Delete

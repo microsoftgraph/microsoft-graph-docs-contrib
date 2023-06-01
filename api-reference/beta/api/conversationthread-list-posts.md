@@ -2,7 +2,7 @@
 title: "List posts"
 description: "Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, "
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
