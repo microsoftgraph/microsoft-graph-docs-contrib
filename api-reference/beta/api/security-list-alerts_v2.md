@@ -248,7 +248,8 @@ Content-type: application/json
                     "domainName": "NT AUTHORITY",
                     "userSid": "S-1-5-18",
                     "azureAdUserId": null,
-                    "userPrincipalName": null
+                    "userPrincipalName": null,
+		    "displayName": "System"
                 }
             },
             {
