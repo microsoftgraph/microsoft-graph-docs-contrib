@@ -47,7 +47,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Get shift work access state](../api/cloudpc-getshiftworkcloudpcaccessstate.md)|[shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values)|Get the access state of the shift work Cloud PC. The possible values are: {unassigned, noLicensesAvailable, activationFailed, active, activating, waitlisted, unknownFutureValue, hibernated}. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values): {hibernated}.|
 |[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents which failed to install on the [cloudPC](../resources/cloudpc.md).|
-|[Bulk resize](../api/cloudpc-retrypartneragentinstallation.md)|[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform bulk resize for a set of Cloud PCs which passed validateBulkResize. If some devices can't be resized, then they will be marked as resize failed, while others will proceed to be provisioned.|
+|[Bulk resize](../api/cloudpc-retrypartneragentinstallation.md)|[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed the BulkResizePreview validation (cloudPC: validateBulkResize). If any devices cannot be resized, they will be labeled as "resize failed," while the remaining devices will be `provisioned` for the resize process.|
 
 ## Properties
 
@@ -104,7 +104,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |pendingProvision|The provisioning is pending on the Cloud PC. In this case, the number of Cloud PCs in grace period is more than the number of total available licenses. |
 |restoring|The Cloud PC is restoring.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
-|resizePendingLicense|Indicates that the Cloud PC resize is triggered, has not been licensed with target license, pending customer action.|
+|resizePendingLicense|Indicates that the Cloud PC resize process has been initiated but cannot be completed because the target license has not been properly licensed yet. It is currently awaiting customer action to resolve the licensing issue.|
 
 ### shiftWorkCloudPcAccessState values
 The following table lists the members of an [evolvable enumeration](#shiftworkcloudpcaccessstate-values). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `hibernated`.

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform bulk resize for a set of [cloudPC](../resources/cloudpc.md) which passed BulkResizePreview (cloudPC: validateBulkResize). If some devices cannot be resized, then they will be marked as resize `failed`, while others will proceed to be `provisioned`.
+Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed the BulkResizePreview validation (cloudPC: validateBulkResize). If any devices cannot be resized, they will be labeled as "resize failed," while the remaining devices will be `provisioned` for the resize process.sss
 
 ## Permissions
 
@@ -51,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudPcIds|String collection|The Cloud PC id list for selected Cloud PC devices to be set as pending resize.|
+|cloudPcIds|String collection|The list of Cloud PC ids that contain the selected Cloud PC devices that will be marked as pending to be resized.|
 |targetServicePlanId|String|The target service plan id of the resize configuration with new vCPU and storage size.|
 
 ## Response
