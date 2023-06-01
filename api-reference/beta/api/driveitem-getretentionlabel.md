@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Type                                   | Permissions (from least to most privileged)                              |
 |:---------------------------------------|:-------------------------------------------------------------------------|
-| Delegated (work or school account)     | Files.Read.All, Sites.Read.All, Sites.Read.All |
+| Delegated (work or school account)     | Files.Read.All, Sites.Read.All                                           |
 | Delegated (personal Microsoft account) | Not supported.                                                           |
-| Application                            | Files.Read.All, Sites.Read.All, Sites.Read.All |
+| Application                            | Files.Read.All, Sites.Read.All                                           |
 
 ## HTTP request
 
