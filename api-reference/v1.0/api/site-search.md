@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and the collection o
 GET https://graph.microsoft.com/v1.0/sites?search={query}
 ```
 
->**Note:** To search for all sites, use wildcard character `*` as query.
+>**Note:** To search for all sites, use the wildcard character `*` for the query.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-for-site-csharp-snippets.md)]
