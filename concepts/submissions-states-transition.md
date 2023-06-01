@@ -21,8 +21,8 @@ The status is a read-only property in the submission.  Status changes based on t
 |:--|:--|:--|
 | Working |	Initial state after the submission is created. | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
 | Submitted	| State after student turns in the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
-| Returned | State after the teacher has returned an assignment back to the student. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
-| Reassigned | State after the teacher has returned the assignment  to the student for revision. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
+| Returned | The state after the teacher has returned an assignment to the student. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
+| Reassigned | The state after the teacher has returned the assignment to the student for revision. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
 
 The following diagram shows the state transition flow.
 
@@ -52,7 +52,7 @@ The following diagram shows the state transition flow.
 
 The following table lists the API calls that affect the submission state and the operation type.
 
-In this case, all the calls are asynchronous, which means that the operation starts and another operation can start before the first one finishes. The asynchronous operation performs some background activity, and the caller must be polling to get the result.  
+In this case, all the calls are asynchronous, which means the operation starts, and another operation can begin before the first one finishes. The asynchronous operation performs some background activity, and the caller must be polling to get the result.  
 
 | API | Sync or async | Mechanism to get latest state |
 |:--|:--|:--|
