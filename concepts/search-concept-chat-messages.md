@@ -381,6 +381,24 @@ Content-type: application/json
 - Sorting results is not supported for messages.
 - You can't use this API with other entity types at this time.
 
+## JSON representation
+
+The following is a JSON representation of all retrievable properties in search to [chatMessage](/graph/api/resources/chatmessage)
+
+```json
+{
+  "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
+  "chatId": "string",
+  "createdDateTime": "string (timestamp)",
+  "etag": "string",
+  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
+  "id": "string (identifier)",
+  "importance": "string",
+  "lastModifiedDateTime": "string (timestamp)",
+  "subject": "string",
+  "webUrl": "string"
+}
+```
 
 ## Next steps
 
