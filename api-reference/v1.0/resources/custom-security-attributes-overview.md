@@ -1,10 +1,11 @@
 ---
 title: "Overview of custom security attributes using the Microsoft Graph API"
-description: "Learn how to programmatically define your own custom security attributes and assign them to Azure AD objects using the Microsoft Graph API."
-author: "rolyon"
+description: "Learn how to programmatically define your own custom security attributes and assign them to Azure Active Directory (Azure AD) objects using the Microsoft Graph API."
+author: "CecilyK"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: conceptualPageType
+ms.date: 04/11/2023
 ---
 
 # Overview of custom security attributes using the Microsoft Graph API
@@ -52,8 +53,8 @@ To configure allowed values, use the [allowedValue resource type](allowedvalue.m
 
 Custom security attributes can be assigned to the following objects by using the **customSecurityAttributes** property. Directory synced users from an on-premises Active Directory can also be assigned custom security attributes.
 
-+ [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)
-+ [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
++ [user](/graph/api/resources/user?view=graph-rest-v1.0&preserve-view=true)
++ [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-v1.0&preserve-view=true)
 
 For examples of custom security attribute assignments, see [Examples: Assign, update, list, or remove custom security attribute assignments using the Microsoft Graph API](/graph/custom-security-attributes-examples).
 

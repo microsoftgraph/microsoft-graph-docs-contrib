@@ -1,7 +1,7 @@
 ---
 title: "Update allowedValue"
 description: "Update the properties of an allowedValue object."
-author: "rolyon"
+author: "CecilyK"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update allowedValue
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [allowedValue](../resources/allowedvalue.md) object.
 
@@ -66,7 +64,6 @@ The following example deactivates a predefined value for a custom security attri
 + Attribute: `Project`
 + Predefined value: `Alpine`
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_allowedvalue",
@@ -74,7 +71,7 @@ The following example deactivates a predefined value for a custom security attri
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues/Alpine
+PATCH https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues/Alpine
 Content-Type: application/json
 Content-length: 80
 
@@ -83,35 +80,9 @@ Content-length: 80
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-allowedvalue-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-allowedvalue-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-allowedvalue-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-allowedvalue-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-allowedvalue-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-allowedvalue-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
-The following is an example of the response.
+The following is an example of a response.
 
 <!-- {
   "blockType": "response",

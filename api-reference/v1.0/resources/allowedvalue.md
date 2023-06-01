@@ -1,7 +1,7 @@
 ---
 title: "allowedValue resource type"
 description: "Represents a predefined value that is allowed for a custom security attribute definition."
-author: "rolyon"
+author: "CecilyK"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -11,11 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a predefined value that is allowed for a custom security attribute definition.
 
-You can define up to 100 **allowedValue** objects per [customSecurityAttributeDefinition](customsecurityattributedefinition.md). The **allowedValue** object can't be renamed or deleted, but it can be deactivated by using the [Update allowedValue](../api/../api/allowedvalue-update.md) operation. This object is defined as a navigation property on the [customSecurityAttributeDefinition](customsecurityattributedefinition.md) resource and its value is returned only on `$expand`.
+You can define up to 100 **allowedValue** objects per [customSecurityAttributeDefinition](customsecurityattributedefinition.md). The **allowedValue** object can't be renamed or deleted, but it can be deactivated by using the [Update allowedValue](../api/allowedvalue-update.md) operation. This object is defined as a navigation property on the [customSecurityAttributeDefinition](customsecurityattributedefinition.md) resource and its value is returned only on `$expand`.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -42,6 +40,7 @@ None.
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

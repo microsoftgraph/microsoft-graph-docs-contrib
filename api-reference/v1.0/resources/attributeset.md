@@ -1,7 +1,7 @@
 ---
 title: "attributeSet resource type"
 description: "Represents a group of related custom security attribute definitions."
-author: "rolyon"
+author: "CecilyK"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # attributeSet resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a group of related custom security attribute definitions.
 
@@ -55,6 +53,6 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.attributeSet",
   "description": "String",
   "id": "String (identifier)",
-  "maxAttributesPerSet": "Integer"
+  "maxAttributesPerSet": "Int32"
 }
 ```

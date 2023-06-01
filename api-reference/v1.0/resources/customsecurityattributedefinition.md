@@ -1,7 +1,7 @@
 ---
 title: "customSecurityAttributeDefinition resource type"
 description: "Represents the schema of a custom security attribute (key-value pair)."
-author: "rolyon"
+author: "CecilyK"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # customSecurityAttributeDefinition resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the schema of a custom security attribute (key-value pair). For example, the custom security attribute name, description, data type, and allowed values.
 
@@ -34,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |attributeSet|String|Name of the attribute set. Case insensitive.|
 |description|String|Description of the custom security attribute. Can be up to 128 characters long and include Unicode characters. Can be changed later.|
-|id|String|Identifier of the custom security attribute, which is a combination of the attribute set name and the custom security attribute name separated by an underscore (`attributeSet`_`name`). The **id** property is auto generated and cannot be set. Case insensitive. Inherited from [entity](../resources/entity.md).|
+|id|String|Identifier of the custom security attribute that is a combination of the attribute set name and the custom security attribute name separated by an underscore (`attributeSet`_`name`). The **id** property is auto generated and cannot be set. Case insensitive. Inherited from [entity](../resources/entity.md).|
 |isCollection|Boolean|Indicates whether multiple values can be assigned to the custom security attribute. Cannot be changed later. If **type** is set to `Boolean`, **isCollection** cannot be set to `true`.|
 |isSearchable|Boolean|Indicates whether custom security attribute values are indexed for searching on objects that are assigned attribute values. Cannot be changed later.|
 |name|String|Name of the custom security attribute. Must be unique within an attribute set. Can be up to 32 characters long and include Unicode characters. Cannot contain spaces or special characters. Cannot be changed later. Case insensitive.|
