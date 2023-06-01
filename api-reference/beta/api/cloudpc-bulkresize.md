@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |cloudPcIds|String collection|The list of Cloud PC ids that contain the selected Cloud PC devices that will be marked as pending to be resized.|
-|targetServicePlanId|String|The target service plan id of the resize configuration with new vCPU and storage size.|
+|targetServicePlanId|String|The target service plan ID refers to the configuration for resizing, including the desired number of virtual CPUs (vCPU) and storage size.|
 
 ## Response
 
