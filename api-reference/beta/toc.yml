@@ -13065,7 +13065,7 @@ items:
                 href: api/approval-get.md
               - name: Approval step
                 items:
-                - name: Approval Step
+                - name: Approval step
                   href: resources/approvalstep.md
                 - name: List
                   href: api/approval-list-steps.md
