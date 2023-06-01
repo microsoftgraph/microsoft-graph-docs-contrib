@@ -13641,7 +13641,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "companySubscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the [companySubscriptions](https://learn.microsoft.com/en-us/graph/api/resources/companySubscriptions?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [companySubscriptions](https://learn.microsoft.com/en-us/graph/api/resources/companySubscriptions?view=graph-rest-v1.0) resource and supported methods.",
           "Target": "companySubscriptions"
         },
         {
@@ -13649,7 +13649,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the **subscriptions** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Description": "Added the **subscriptions** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-v1.0) resource.",
           "Target": "directory"
         },
         {
@@ -13657,7 +13657,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "accountId",
           "ChangeType": "Addition",
-          "Description": "Added the **accountId** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-beta) resource.",
+          "Description": "Added the **accountId** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-v1.0) resource.",
           "Target": "subscribedSku"
         },
         {
@@ -13665,7 +13665,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "accountName",
           "ChangeType": "Addition",
-          "Description": "Added the **accountName** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-beta) resource.",
+          "Description": "Added the **accountName** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-v1.0) resource.",
           "Target": "subscribedSku"
         },
         {
@@ -13673,7 +13673,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "subscriptionIds",
           "ChangeType": "Addition",
-          "Description": "Added the **subscriptionIds** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-beta) resource.",
+          "Description": "Added the **subscriptionIds** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-v1.0) resource.",
           "Target": "subscribedSku"
         }
       ],
