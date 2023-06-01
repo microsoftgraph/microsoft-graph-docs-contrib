@@ -98,7 +98,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscribedSkus",
-    "values": [
+    "value": [
         {
             "capabilityStatus": "Enabled",
             "consumedUnits": 14,
