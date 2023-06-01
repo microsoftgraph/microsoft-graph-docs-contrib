@@ -15,7 +15,7 @@ Submissions are an important part in the interaction between teachers' and stude
 
 A submission represents the resources that an individual or group turns in for an assignment. Submissions are owned by an assignment and are automatically created when an assignment is published.
 
-The status is a read-only property in the submission.  Status changes based on the actions of students and teachers.
+The status is a read-only property in the submission. It changes based on the actions of students and teachers.
 
 | State | Description | REST API call |
 |:--|:--|:--|
