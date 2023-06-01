@@ -43,7 +43,7 @@ Represents a participant in a call.
 | removedState | [removedState](removedstate.md)        | Indicates the reason why the **participant** was removed from the roster. |
 | restrictedExperience | [onlineMeetingRestricted](onlinemeetingrestricted.md)        | Indicates the reason or reasons why media content from this participant is restricted. |
 | rosterSequenceNumber | Int64        | Indicates the roster sequence number the **participant** was last updated in. |
-| preferredDisplayName | String        | The participant's preferred displayName, which overrides the original display name in participantInfo's identity. |
+| preferredDisplayName | String        | The participant's preferred display name, which overrides the original display name. |
 
 ## Relationships
 
