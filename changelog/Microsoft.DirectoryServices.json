@@ -13637,6 +13637,56 @@
     {
       "ChangeList": [
         {
+          "Id": "1dd4cafb-2f2b-45b2-949e-f181e7f0d0c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "companySubscriptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [companySubscriptions](https://learn.microsoft.com/en-us/graph/api/resources/companySubscriptions?view=graph-rest-beta) resource and supported methods.",
+          "Target": "companySubscriptions"
+        },
+        {
+          "Id": "1dd4cafb-2f2b-45b2-949e-f181e7f0d0c7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "subscriptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **subscriptions** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "1dd4cafb-2f2b-45b2-949e-f181e7f0d0c7",
+          "ApiChange": "Property",
+          "ChangedApiName": "accountId",
+          "ChangeType": "Addition",
+          "Description": "Added the **accountId** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-beta) resource.",
+          "Target": "subscribedSku"
+        },
+        {
+          "Id": "1dd4cafb-2f2b-45b2-949e-f181e7f0d0c7",
+          "ApiChange": "Property",
+          "ChangedApiName": "accountName",
+          "ChangeType": "Addition",
+          "Description": "Added the **accountName** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-beta) resource.",
+          "Target": "subscribedSku"
+        },
+        {
+          "Id": "1dd4cafb-2f2b-45b2-949e-f181e7f0d0c7",
+          "ApiChange": "Property",
+          "ChangedApiName": "subscriptionIds",
+          "ChangeType": "Addition",
+          "Description": "Added the **subscriptionIds** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-beta) resource.",
+          "Target": "subscribedSku"
+        }
+      ],
+      "Id": "1dd4cafb-2f2b-45b2-949e-f181e7f0d0c7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-11T06:03:02.8820444Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
           "ApiChange": "Resource",
           "ChangedApiName": "allowedValue",
