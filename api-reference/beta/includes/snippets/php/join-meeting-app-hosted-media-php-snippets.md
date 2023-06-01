@@ -23,7 +23,7 @@ $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');
 
 $additionalData = [
-'blob' => '<Media Session Configuration>', 
+	'blob' => '<Media Session Configuration>', 
 ];
 $mediaConfig->setAdditionalData($additionalData);
 
@@ -45,7 +45,7 @@ $meetingInfo->set@odatatype('#microsoft.graph.organizerMeetingInfo');
 $meetingInfo->setAllowConversationWithoutHost(true);
 
 $additionalData = [
-'organizer' => $meetingInfo = new Organizer();
+	'organizer' => $meetingInfo = new Organizer();
 $	meetingInfo->set@odatatype('#microsoft.graph.identitySet');
 
 $user = new User();
@@ -72,7 +72,7 @@ $requestBody->setTenantId('aa67bd4c-8475-432d-bd41-39f255720e0a');
 
 
 
-$requestResult = $graphServiceClient->communications()->calls()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->post($requestBody);
 
 
 ```

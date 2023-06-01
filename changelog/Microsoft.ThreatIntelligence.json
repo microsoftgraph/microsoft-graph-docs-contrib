@@ -1,0 +1,255 @@
+{
+    "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "contentFormat",
+            "ChangeType": "Addition",
+            "Description": "Added the **contentFormat** enumeration type.",
+            "Target": "contentFormat"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "hostReputationClassification",
+            "ChangeType": "Addition",
+            "Description": "Added the **hostReputationClassification** enumeration type.",
+            "Target": "hostReputationClassification"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "hostReputationRuleSeverity",
+            "ChangeType": "Addition",
+            "Description": "Added the **hostReputationRuleSeverity** enumeration type.",
+            "Target": "hostReputationRuleSeverity"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "indicatorSource",
+            "ChangeType": "Addition",
+            "Description": "Added the **indicatorSource** enumeration type.",
+            "Target": "indicatorSource"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "intelligenceProfileKind",
+            "ChangeType": "Addition",
+            "Description": "Added the **intelligenceProfileKind** enumeration type.",
+            "Target": "intelligenceProfileKind"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "vulnerabilitySeverity",
+            "ChangeType": "Addition",
+            "Description": "Added the **vulnerabilitySeverity** enumeration type.",
+            "Target": "vulnerabilitySeverity"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "autonomousSystem",
+            "ChangeType": "Addition",
+            "Description": "Added the [autonomousSystem](https://learn.microsoft.com/en-us/graph/api/resources/security-autonomousSystem?view=graph-rest-beta) resource type.",
+            "Target": "autonomousSystem"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cvssSummary",
+            "ChangeType": "Addition",
+            "Description": "Added the [cvssSummary](https://learn.microsoft.com/en-us/graph/api/resources/security-cvssSummary?view=graph-rest-beta) resource type.",
+            "Target": "cvssSummary"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "formattedContent",
+            "ChangeType": "Addition",
+            "Description": "Added the [formattedContent](https://learn.microsoft.com/en-us/graph/api/resources/security-formattedContent?view=graph-rest-beta) resource type.",
+            "Target": "formattedContent"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "hostReputationRule",
+            "ChangeType": "Addition",
+            "Description": "Added the [hostReputationRule](https://learn.microsoft.com/en-us/graph/api/resources/security-hostReputationRule?view=graph-rest-beta) resource type.",
+            "Target": "hostReputationRule"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "hyperlink",
+            "ChangeType": "Addition",
+            "Description": "Added the [hyperlink](https://learn.microsoft.com/en-us/graph/api/resources/security-hyperlink?view=graph-rest-beta) resource type.",
+            "Target": "hyperlink"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "intelligenceProfileSponsorState",
+            "ChangeType": "Addition",
+            "Description": "Added the [intelligenceProfileSponsorState](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfileSponsorState?view=graph-rest-beta) resource type.",
+            "Target": "intelligenceProfileSponsorState"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "article",
+            "ChangeType": "Addition",
+            "Description": "Added the [article](https://learn.microsoft.com/en-us/graph/api/resources/security-article?view=graph-rest-beta) resource and a supported method.",
+            "Target": "article"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "articleIndicator",
+            "ChangeType": "Addition",
+            "Description": "Added the [articleIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-articleIndicator?view=graph-rest-beta) resource and a supported method.",
+            "Target": "articleIndicator"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "artifact",
+            "ChangeType": "Addition",
+            "Description": "Added the [artifact](https://learn.microsoft.com/en-us/graph/api/resources/security-artifact?view=graph-rest-beta) resource type.",
+            "Target": "artifact"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "host",
+            "ChangeType": "Addition",
+            "Description": "Added the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource and a supported method.",
+            "Target": "host"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "hostComponent",
+            "ChangeType": "Addition",
+            "Description": "Added the [hostComponent](https://learn.microsoft.com/en-us/graph/api/resources/security-hostComponent?view=graph-rest-beta) resource and a supported method.",
+            "Target": "hostComponent"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "hostCookie",
+            "ChangeType": "Addition",
+            "Description": "Added the [hostCookie](https://learn.microsoft.com/en-us/graph/api/resources/security-hostCookie?view=graph-rest-beta) resource and a supported method.",
+            "Target": "hostCookie"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "hostname",
+            "ChangeType": "Addition",
+            "Description": "Added the [hostname](https://learn.microsoft.com/en-us/graph/api/resources/security-hostname?view=graph-rest-beta) resource type.",
+            "Target": "hostname"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "hostReputation",
+            "ChangeType": "Addition",
+            "Description": "Added the [hostReputation](https://learn.microsoft.com/en-us/graph/api/resources/security-hostReputation?view=graph-rest-beta) resource type.",
+            "Target": "hostReputation"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "hostTracker",
+            "ChangeType": "Addition",
+            "Description": "Added the [hostTracker](https://learn.microsoft.com/en-us/graph/api/resources/security-hostTracker?view=graph-rest-beta) resource and a supported method.",
+            "Target": "hostTracker"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "indicator",
+            "ChangeType": "Addition",
+            "Description": "Added the [indicator](https://learn.microsoft.com/en-us/graph/api/resources/security-indicator?view=graph-rest-beta) resource type.",
+            "Target": "indicator"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "intelligenceProfile",
+            "ChangeType": "Addition",
+            "Description": "Added the [intelligenceProfile](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfile?view=graph-rest-beta) resource and a supported method.",
+            "Target": "intelligenceProfile"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "intelligenceProfileIndicator",
+            "ChangeType": "Addition",
+            "Description": "Added the [intelligenceProfileIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfileIndicator?view=graph-rest-beta) resource and a supported method.",
+            "Target": "intelligenceProfileIndicator"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "ipAddress",
+            "ChangeType": "Addition",
+            "Description": "Added the [ipAddress](https://learn.microsoft.com/en-us/graph/api/resources/security-ipAddress?view=graph-rest-beta) resource type.",
+            "Target": "ipAddress"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "passiveDnsRecord",
+            "ChangeType": "Addition",
+            "Description": "Added the [passiveDnsRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-passiveDnsRecord?view=graph-rest-beta) resource and a supported method.",
+            "Target": "passiveDnsRecord"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "threatIntelligence",
+            "ChangeType": "Addition",
+            "Description": "Added the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource type.",
+            "Target": "threatIntelligence"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "unclassifiedArtifact",
+            "ChangeType": "Addition",
+            "Description": "Added the [unclassifiedArtifact](https://learn.microsoft.com/en-us/graph/api/resources/security-unclassifiedArtifact?view=graph-rest-beta) resource type.",
+            "Target": "unclassifiedArtifact"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "vulnerability",
+            "ChangeType": "Addition",
+            "Description": "Added the [vulnerability](https://learn.microsoft.com/en-us/graph/api/resources/security-vulnerability?view=graph-rest-beta) resource and a supported method.",
+            "Target": "vulnerability"
+          },
+          {
+            "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "vulnerabilityComponent",
+            "ChangeType": "Addition",
+            "Description": "Added the [vulnerabilityComponent](https://learn.microsoft.com/en-us/graph/api/resources/security-vulnerabilityComponent?view=graph-rest-beta) resource and a supported method.",
+            "Target": "vulnerabilityComponent"
+          }
+        ],
+        "Id": "29495af2-28ab-4012-bd65-215593281a1c",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-03-27T02:39:03.2321081Z",
+        "WorkloadArea": "Security",
+        "SubArea": ""
+      }
+    ]
+  }
+  

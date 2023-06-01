@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-await graphClient.Security.TriggerTypes.RetentionEventTypes["{security.retentionEventType-id}"]
-	.Request()
-	.DeleteAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+await graphClient.Security.TriggerTypes.RetentionEventTypes["{retentionEventType-id}"].DeleteAsync();
+
 
 ```

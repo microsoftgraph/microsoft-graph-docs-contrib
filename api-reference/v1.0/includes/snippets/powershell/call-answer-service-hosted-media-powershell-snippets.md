@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	CallbackUri = "https://bot.contoso.com/api/calls"
-	AcceptedModalities = @(
+	callbackUri = "https://bot.contoso.com/api/calls"
+	acceptedModalities = @(
 		"audio"
 	)
-	MediaConfig = @{
+	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
-		PreFetchMedia = @(
+		preFetchMedia = @(
 		)
 	}
 }

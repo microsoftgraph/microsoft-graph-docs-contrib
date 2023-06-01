@@ -4,11 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var teamsApps = await graphClient.AppCatalogs.TeamsApps
-	.Request()
-	.Filter("id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.AppCatalogs.TeamsApps.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'";
+});
+
 
 ```

@@ -40,6 +40,7 @@ The following table describes the types available to query and the supported per
 
 | EntityType | Permission scope required to access the items| Source| Comment|
 |:------------------|:---------|:---------|:---------|
+|[chatMessage](chatmessage.md)|Chat.Read, Chat.ReadWrite, ChannelMessage.Read.All|Teams|Teams messages.|
 |[message](message.md)|Mail.Read, Mail.ReadWrite| Exchange Online| Email messages.|
 |[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange Online|Calendar events. |
 |[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document libraries.|
@@ -180,17 +181,18 @@ The search API has the following limitations:
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API does not support custom sort for **message**, **event** or  **externalItem**.
+- The search API does not support custom sort for **message**, **chatMessage**, **event**, **person**, or **externalItem**.
 
 - The search API does not support aggregations for **message**, **event**, **site** or **drive**.
 
 - The search API does not support xrank for **message**,**chatMessage**, **event**, **person**, or **externalItem**.
 
-- Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
+- Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
 ## See also
 
 - Learn more about a few key use cases:
+  - [Search Teams messages](/graph/search-concept-chat-messages)
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
   - [Search content in SharePoint and OneDrive](/graph/search-concept-files)
@@ -198,6 +200,7 @@ The search API has the following limitations:
   - [Refine search results](/graph/search-concept-aggregation)
   - [Request spelling correction](/graph/search-concept-speller)
   - [Use search display layout](/graph/search-concept-display-layout)
+  - [Search content with application permission](/graph/search-concept-searchall)
   - [XRANK search results](/graph/search-concept-xrank)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

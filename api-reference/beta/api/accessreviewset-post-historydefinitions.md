@@ -61,21 +61,7 @@ The following table shows the required properties used to create an [accessRevie
 
 ### Supported scope queries for accessReviewHistoryDefinition
 
-The **scopes** property of [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) is based on **accessReviewQueryScope**, a resource that allows you to configure different resources in it's **query** property. These resources then represent the scope of the history definition and dictate the type of review history data that is included in the downloadable CSV file which is generated when the history definition's [accessReviewHistoryInstances](../resources/accessreviewhistoryinstance.md) are created.
-
-Use the following format for the **query** property:
-
-```http
-/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
-```
-
-The value of `{object}` is one of the resources that can be configured in an **accessReviewScheduleDefinition**. For example, the following includes every accessReviewScheduleDefinition review result on individual groups (and excludes definitions scoped to all Microsoft 365 groups with guest users).
-
-```http
-/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
-```
-
-For more supported values, see Use the [$filter query parameter on accessReviewScheduleDefinition](accessreviewset-list-definitions.md#use-the-filter-query-parameter).
+[!INCLUDE [accessreviews-definition-filter-scope](../../includes/accessreviews-definition-filter-scope.md)]
 
 ## Response
 
@@ -130,24 +116,24 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewhistorydefinition-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewhistorydefinition-from--javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewhistorydefinition-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewhistorydefinition-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewhistorydefinition-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewhistorydefinition-from--powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewhistorydefinition-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewhistorydefinition-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewhistorydefinition-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -12,7 +12,14 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Represents a user in a [team](team.md), a [channel](channel.md), or a [chat](chat.md).
-See also [aadUserConversationMember](aaduserconversationmember.md).
+
+Base type for the following supported conversation member types:
+- [aadUserConversationMember](aaduserconversationmember.md)
+- [anonymousGuestConversationMember](anonymousguestconversationmember.md)
+- [azureCommunicationServicesUserConversationMember](azurecommunicationservicesuserconversationmember.md)
+- [microsoftAccountUserConversationMember](microsoftaccountuserconversationmember.md)
+- [skypeForBusinessUserConversationMember](skypeforbusinessuserconversationmember.md)
+- [skypeUserConversationMember](skypeuserconversationmember.md)
 
 ## Methods
 
@@ -39,7 +46,7 @@ See also [aadUserConversationMember](aaduserconversationmember.md).
 |:---------------|:--------|:----------|
 |displayName| string | The display name of the user. |
 |id|String| Read-only. Unique ID of the user.|
-|roles| string collection | The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has `owner` privileges, the **roles** property contains `owner` as one of the values. Similarly, if the member is a guest, the **roles** property contains `guest` as one of the values. A basic member should not have any values specified in the **roles** property.  |
+|roles| string collection | The roles for that user. This property contains additional qualifiers only when relevant - for example, if the member has `owner` privileges, the **roles** property contains `owner` as one of the values. Similarly, if the member is an in-tenant guest, the **roles** property contains `guest` as one of the values. A basic member should not have any values specified in the **roles** property. An Out-of-tenant external member is assigned the `owner` role.|
 |visibleHistoryStartDateTime| DateTimeOffset | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat. |
 
 ## JSON representation
@@ -65,6 +72,14 @@ The following is a JSON representation of the resource.
   "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
+
+## See also
+- [aadUserConversationMember](aaduserconversationmember.md)
+- [skypeForBusinessUserConversationMember](skypeForBusinessUserConversationMember.md)
+- [anonymousGuestConversationMember](anonymousGuestConversationMember.md)
+- [skypeUserConversationMember](skypeUserConversationMember.md)
+- [microsoftAccountUserConversationMember](microsoftAccountUserConversationMember.md)
+- [azureCommunicationServicesUserConversationMember](azureCommunicationServicesUserConversationMember.md)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

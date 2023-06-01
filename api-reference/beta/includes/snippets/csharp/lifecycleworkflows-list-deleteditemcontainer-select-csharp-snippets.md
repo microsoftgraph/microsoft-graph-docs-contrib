@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workflows = await graphClient.IdentityGovernance.LifecycleWorkflows.DeletedItems.Workflows
-	.Request()
-	.Filter("category eq 'leaver'")
-	.Select("id,category,displayName,description,version")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.IdentityGovernance.LifecycleWorkflows.DeletedItems.Workflows.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "id","category","displayName","description","version" };
+	requestConfiguration.QueryParameters.Filter = "category eq 'leaver'";
+});
+
 
 ```

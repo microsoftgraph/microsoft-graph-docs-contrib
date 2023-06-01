@@ -19,7 +19,7 @@ $requestBody->setUserFlowTypeVersion(1);
 $apiConnectorConfiguration = new UserFlowApiConnectorConfiguration();
 $apiConnectorConfigurationPostFederationSignup = new IdentityApiConnector();
 $additionalData = [
-'@odata.id' => '{apiConnectorId}', 
+		'@odata.id' => '{apiConnectorId}', 
 ];
 $apiConnectorConfigurationPostFederationSignup->setAdditionalData($additionalData);
 
@@ -28,7 +28,7 @@ $apiConnectorConfigurationPostFederationSignup->setAdditionalData($additionalDat
 $apiConnectorConfiguration->setPostFederationSignup($apiConnectorConfigurationPostFederationSignup);
 $apiConnectorConfigurationPostAttributeCollection = new IdentityApiConnector();
 $additionalData = [
-'@odata.id' => '{apiConnectorId}', 
+		'@odata.id' => '{apiConnectorId}', 
 ];
 $apiConnectorConfigurationPostAttributeCollection->setAdditionalData($additionalData);
 
@@ -39,7 +39,7 @@ $apiConnectorConfiguration->setPostAttributeCollection($apiConnectorConfiguratio
 $requestBody->setApiConnectorConfiguration($apiConnectorConfiguration);
 
 
-$requestResult = $graphServiceClient->identity()->b2cUserFlows()->post($requestBody);
+$result = $graphServiceClient->identity()->b2cUserFlows()->post($requestBody);
 
 
 ```

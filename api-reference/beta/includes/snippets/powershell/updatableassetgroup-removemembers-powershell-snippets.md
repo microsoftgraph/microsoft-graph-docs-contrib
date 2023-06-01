@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.WindowsUpdates
 
 $params = @{
-	Assets = @(
+	assets = @(
 		@{
 			"@odata.type" = "#microsoft.graph.windowsUpdates.azureADDevice"
-			Id = "String (identifier)"
+			id = "String (identifier)"
 		}
 	)
 }

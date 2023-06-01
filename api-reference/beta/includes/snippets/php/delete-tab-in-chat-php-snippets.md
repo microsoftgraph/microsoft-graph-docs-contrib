@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->chatsById('chat-id')->tabsById('teamsTab-id')->delete();
+$graphServiceClient->chats()->byChatId('chat-id')->tabs()->byTabId('teamsTab-id')->delete();
 
 
 ```

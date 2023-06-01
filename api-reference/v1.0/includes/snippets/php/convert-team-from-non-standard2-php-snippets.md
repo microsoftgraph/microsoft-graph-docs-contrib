@@ -46,7 +46,7 @@ $memberSettings->setAllowCreateUpdateRemoveConnectors(false);
 $requestBody->setMemberSettings($memberSettings);
 $installedAppsTeamsAppInstallation1 = new TeamsAppInstallation();
 $additionalData = [
-'teamsApp@odata.bind' => 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps(\'com.microsoft.teamspace.tab.vsts\')', 
+	'teamsApp@odata.bind' => 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps(\'com.microsoft.teamspace.tab.vsts\')', 
 ];
 $installedAppsTeamsAppInstallation1->setAdditionalData($additionalData);
 
@@ -55,7 +55,7 @@ $installedAppsTeamsAppInstallation1->setAdditionalData($additionalData);
 $installedAppsArray []= $installedAppsTeamsAppInstallation1;
 $installedAppsTeamsAppInstallation2 = new TeamsAppInstallation();
 $additionalData = [
-'teamsApp@odata.bind' => 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps(\'1542629c-01b3-4a6d-8f76-1938b779e48d\')', 
+	'teamsApp@odata.bind' => 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps(\'1542629c-01b3-4a6d-8f76-1938b779e48d\')', 
 ];
 $installedAppsTeamsAppInstallation2->setAdditionalData($additionalData);
 
@@ -73,7 +73,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->teams()->post($requestBody);
+$result = $graphServiceClient->teams()->post($requestBody);
 
 
 ```

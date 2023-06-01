@@ -21,15 +21,26 @@ You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|archiveFolder|string|Folder ID of an archive folder for the user. Read only.|
+|archiveFolder|string|Folder ID of an archive folder for the user. Read-only.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.|
 |dateFormat|string|The date format for the user's mailbox.|
 |delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| If the user has a calendar delegate, this specifies whether the delegate, mailbox owner, or both receive meeting messages and meeting responses. Possible values are: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`. The default is `sendToDelegateOnly`.|
 |language|[localeInfo](localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
 |timeFormat|string|The time format for the user's mailbox.|
 |timeZone|string|The default time zone for the user's mailbox.|
+|userPurpose|[userPurpose](#userpurpose-values)|The purpose of the mailbox. Differentiates a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online. Possible values are: `user`, `linked`, `shared`, `room`, `equipment`, `others`, `unknownFutureValue`. Read-only. |
 |workingHours|[workingHours](workinghours.md)|The days of the week and hours in a specific time zone that the user works.|
-|userPurpose|[userPurpose](userpurpose.md)|The purpose of the mailbox. Used to differentiate a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online. Read only.|
+
+### userPurpose values
+| Member             | Description                                                                                              |
+|:-------------------|:---------------------------------------------------------------------------------------------------------|
+| user               | A user account with a mailbox in the local forest.                                                       |
+| linked             | A mailbox linked to a user account in another forest.                                                    |
+| shared             | A mailbox shared by two or more user accounts.                                                           |
+| room               | A mailbox that represents a conference room.                                                             |
+| equipment          | A mailbox that represents a piece of equipment.                                                          |
+| others             | A mailbox was found but the user purpose is different from the ones specified in the previous scenarios. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                                        |
 
 ## JSON representation
 
@@ -52,8 +63,8 @@ Here is a JSON representation of the resource.
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
   "timeFormat": "string",
   "timeZone": "string",
-  "workingHours": {"@odata.type": "microsoft.graph.workingHours"},
-  "userPurpose": {"@odata.type": "microsoft.graph.userPurpose"}
+  "userPurpose": "String",
+  "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
 }
 ```
 

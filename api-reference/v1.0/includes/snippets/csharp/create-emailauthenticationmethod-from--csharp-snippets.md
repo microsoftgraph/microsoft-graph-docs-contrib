@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var emailAuthenticationMethod = new EmailAuthenticationMethod
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new EmailAuthenticationMethod
 {
-	EmailAddress = "kim@contoso.com"
+	EmailAddress = "kim@contoso.com",
 };
+var result = await graphClient.Users["{user-id}"].Authentication.EmailMethods.PostAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Authentication.EmailMethods
-	.Request()
-	.AddAsync(emailAuthenticationMethod);
 
 ```

@@ -9,6 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 GroupCollectionPage groups = graphClient.groups()
 	.buildRequest()
 	.filter("assignedLicenses/any()")
+	.expand("members($select=id,displayName)")
 	.select("id,assignedLicenses")
 	.get();
 

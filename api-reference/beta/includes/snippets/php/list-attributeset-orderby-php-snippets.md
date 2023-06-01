@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AttributeSetsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new AttributeSetsRequestBuilderGetQueryParameters();
+$queryParameters = AttributeSetsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->orderby = ["id"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->directory()->attributeSets()->get($requestConfiguration);
+$result = $graphServiceClient->directory()->attributeSets()->get($requestConfiguration);
 
 
 ```

@@ -4,11 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var messages = await graphClient.Me.Messages
-	.Request()
-	.Filter("subject eq 'let''s meet for lunch?'")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Me.Messages.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "subject eq 'let''s meet for lunch?'";
+});
+
 
 ```

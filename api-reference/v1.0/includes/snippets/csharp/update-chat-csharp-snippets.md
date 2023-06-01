@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var chat = new Chat
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Chat
 {
-	Topic = "Group chat title update"
+	Topic = "Group chat title update",
 };
+var result = await graphClient.Chats["{chat-id}"].PatchAsync(requestBody);
 
-await graphClient.Chats["{chat-id}"]
-	.Request()
-	.UpdateAsync(chat);
 
 ```

@@ -19,7 +19,7 @@ const addMembers = {
   ]
 };
 
-await client.api('/admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembers')
+await client.api('/admin/windows/updates/updatableAssets/f5ba7065-7065-f5ba-6570-baf56570baf5/addMembers')
 	.version('beta')
 	.post(addMembers);
 

@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	IssuingAuthority = "International Academy of Marketing Excellence"
-	IssuingCompany = "International Academy of Marketing Excellence"
+	issuingAuthority = "International Academy of Marketing Excellence"
+	issuingCompany = "International Academy of Marketing Excellence"
 }
 
 Update-MgUserProfileCertification -UserId $userId -PersonCertificationId $personCertificationId -BodyParameter $params

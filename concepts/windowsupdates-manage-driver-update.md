@@ -19,7 +19,7 @@ Devices must meet the [prerequisites for the deployment service](windowsupdates-
 
 ## Step 1: Enroll devices in driver management
 
-When you enroll a device in driver management, the deployment service becomes the authority for driver updates coming from Windows Update. As a result, devices do not receive drivers from Windows Update until a deployment is created or they are added to a driver update policy with approvals.
+When you enroll a device in driver management, the deployment service becomes the authority for driver updates coming from Windows Update. As a result, devices do not receive drivers from Windows Update until a deployment is created or they are added to a driver update policy with approvals. To enroll a device, you must provide an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) ID.
 
 ### Request
 ``` http
@@ -58,7 +58,7 @@ The following example shows how to create a deployment audience. The targeted de
 
 ### Request
 ```http
-POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/enrollAssets
+POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
 Content-Type: application/json
 {
 }
@@ -199,7 +199,7 @@ Content-type: application/json
 
 ## Step 5: Create driver approval
 
-Deployments for driver updates are created and enforced on a policy through [compliance changes](/graph/api/resources/windowsupdates-compliance). [Content approvals](/graph/api/esources/windowsupdates-contentapproval) for driver updates are added to a policy by specifying the [catalog entry](/graph/api/resources/windowsupdates-catalogentry) associated to a specific driver update. Content will only be delivered to devices in the deployment audiences associated with the update policy when approved.
+Deployments for driver updates are created and enforced on a policy through [compliance changes](/graph/api/resources/windowsupdates-compliancechange). [Content approvals](/graph/api/resources/windowsupdates-contentapproval) for driver updates are added to a policy by specifying the [catalog entry](/graph/api/resources/windowsupdates-catalogentry) associated to a specific driver update. Content will only be delivered to devices in the deployment audiences associated with the update policy when approved.
 
 The following example shows how to add a content approval to an existing policy.
 
@@ -216,7 +216,13 @@ Content-type: application/json
             "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateCatalogEntry",
             "id": "5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c"
         }
-    }
+    },
+    "deploymentSettings": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
+            "startDateTime": "2023-02-14T01:00:00Z"
+        }
+    }    
 }
 ```
 
@@ -234,6 +240,19 @@ Content-type: application/json
     "revokedDateTime": "0001-01-01T00:00:00Z",
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent"
+        "catalogEntry@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies('d7a89208-17c5-4daf-a164-ce176b00e4ef')/complianceChanges('dbf29574-ffd9-49cf-87f2-f03629e596ba')/microsoft.graph.windowsUpdates.contentApproval/content/microsoft.graph.windowsUpdates.catalogContent/catalogEntry/$entity",
+        "id": "5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c",
+        "displayName": "Microsoft - Test - 1.0.0.1",
+        "deployableUntilDateTime": null,
+        "releaseDateTime": "0001-01-21T04:18:32Z",
+        "description": "Microsoft test driver update released in January 2021",
+        "driverClass": "OtherHardware",
+        "provider": "Microsoft",
+        "setupInformationFile": null,
+        "manufacturer": "Microsoft",
+        "version": "1.0.0.1",
+        "versionDateTime": "2021-01-11T02:43:14Z"
+        }        
     },
     "deploymentSettings": {
         "schedule": null,
@@ -241,6 +260,14 @@ Content-type: application/json
         "contentApplicability": null,
         "userExperience": null,
         "expedite": null
+        "schedule": {
+            "startDateTime": "2023-02-14T01:00:00Z",
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+                "durationBetweenOffers": "P1D",
+                "devicesPerOffer": 0
+            }
+        }
     }
 }
 ```

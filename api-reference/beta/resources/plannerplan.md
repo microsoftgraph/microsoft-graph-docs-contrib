@@ -24,6 +24,7 @@ Represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) a
 |[List tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 |[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
 |[Delete](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
+|[Get delta](../api/plannerplan-delta.md) | [plannerPlan](../resources/plannerplan.md) collection | Get newly created, updated, or deleted **plannerPlan** objects in either a **group** or a [plannerRoster](plannerroster.md) type container without having to perform a full read of the entire resource collection. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -36,6 +37,7 @@ Represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) a
 |title|String|Required. Title of the plan.|
 |creationSource|[plannerPlanCreation](plannerplancreation.md)|  Contains information about the origin of the plan.|
 |owner (deprecated) |String| Use the **container** property instead. ID of the [group](group.md) that owns the plan. After it is set, this property can’t be updated. This property will not return a valid group ID if the container of the plan is not a group.|
+|sharedWithContainers|[plannerSharedWithContainer](plannersharedwithcontainer.md) collection|List of containers the plan is shared with.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -82,6 +84,11 @@ The following is a JSON representation of the resource.
     "containerId": "String",
     "type": "String"
   },
+  "sharedWithContainers": [
+    {
+      "@odata.type": "microsoft.graph.plannerSharedWithContainer"
+    }
+  ],
   "title": "String"
 }
 ```
@@ -98,5 +105,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

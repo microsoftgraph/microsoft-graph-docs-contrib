@@ -52,7 +52,7 @@ $requestBody->setAllowedValues($allowedValuesArray);
 
 
 
-$requestResult = $graphServiceClient->directory()->customSecurityAttributeDefinitions()->post($requestBody);
+$result = $graphServiceClient->directory()->customSecurityAttributeDefinitions()->post($requestBody);
 
 
 ```

@@ -33,7 +33,7 @@ $text->setMaxLength(255);
 $requestBody->setText($text);
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->columns()->post($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->lists()->byListId('list-id')->columns()->post($requestBody);
 
 
 ```
