@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "values": [
+  "value": [
     {
       "createdDateTime": "2023-01-01T00:00:00Z",
       "id": "860697e3-b0aa-4196-a6c6-7ec361ed58f7",
