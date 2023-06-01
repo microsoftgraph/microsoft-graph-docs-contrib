@@ -11,8 +11,6 @@ author: DarrelMiller
 
 For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page. The **PageIterator** class simplifies consuming of paged collections. **PageIterator** handles enumerating the current page and requesting subsequent pages automatically.
 
-[!INCLUDE [README](./snippets/dotnet/README.md)]
-
 ## Request headers
 
 If you send any additional request headers in your initial request, those headers are not included by default in subsequent page requests. If those headers need to be sent on subsequent requests, you must set them explicitly.
