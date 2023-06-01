@@ -38,6 +38,9 @@ There are no licensing requirements for `model=B`.
 
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
+> [!NOTE]
+> When adding or changing a payment model for a subscribed resource of a change notification, a new change notification subscription must be created with the new payment model; updating an existing change notification would not work.
+
 ### `model=A` requirements
 
 `model=A` is restricted to applications performing a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
