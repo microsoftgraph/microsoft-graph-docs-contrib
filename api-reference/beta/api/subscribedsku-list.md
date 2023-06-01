@@ -99,7 +99,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "values": [
+  "value": [
     {
       "accountName": "accountName-value",
       "accountId": "accountId-value",
