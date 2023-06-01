@@ -12765,7 +12765,7 @@ items:
               href: api/entitlementmanagementsettings-get.md
             - name: Update
               href: api/entitlementmanagementsettings-update.md
-        - name: Lifecycle workflows (preview)
+        - name: Lifecycle workflows
           displayName: LCW, Identity Governance, Joiner, Mover, Leaver
           items:
           - name: Overview
