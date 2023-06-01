@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /applications/{application ObjectId}/extensionProperties
+GET /applications(appId='{appId}')/extensionProperties
 ```
 
 ## Optional query parameters
@@ -120,6 +121,7 @@ Content-type: application/json
             "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
             "dataType": "String",
             "isSyncedFromOnPremises": false,
+            "isMultiValued": true,
             "targetObjects": [
                 "User"
             ]
@@ -131,6 +133,7 @@ Content-type: application/json
             "name": "extension_25883231668a43a780b25685c3f874bc_cpiminternal_useAccountEnabledForPhone",
             "dataType": "String",
             "isSyncedFromOnPremises": false,
+            "isMultiValued": true,
             "targetObjects": [
                 "User"
             ]

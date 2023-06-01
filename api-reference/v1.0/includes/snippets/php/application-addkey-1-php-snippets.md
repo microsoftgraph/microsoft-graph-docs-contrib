@@ -25,7 +25,7 @@ $requestBody->setProof('eyJ0eXAiOiJ...');
 
 
 
-$result = $graphServiceClient->applicationsById('application-id')->addKey()->post($requestBody);
+$result = $graphServiceClient->applications()->byApplicationId('application-id')->addKey()->post($requestBody);
 
 
 ```

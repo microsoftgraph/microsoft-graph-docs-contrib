@@ -16,7 +16,7 @@ $requestBody->setIsRevoked(true);
 
 
 
-$result = $graphServiceClient->admin()->windows()->updates()->updatePoliciesById('updatePolicy-id')->complianceChangesById('complianceChange-id')->patch($requestBody);
+$result = $graphServiceClient->admin()->windows()->updates()->updatePolicies()->byUpdatePolicieId('updatePolicy-id')->complianceChanges()->byComplianceChangeId('complianceChange-id')->patch($requestBody);
 
 
 ```

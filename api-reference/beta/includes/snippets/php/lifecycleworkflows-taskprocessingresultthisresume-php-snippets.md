@@ -21,7 +21,7 @@ $requestBody->setType('lifecycleEvent');
 
 
 
-$graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->tasksById('task-id')->taskProcessingResultsById('taskProcessingResult-id')->microsoftGraphIdentityGovernanceResume()->post($requestBody);
+$graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->byWorkflowId('workflow-id')->tasks()->byTaskId('task-id')->taskProcessingResults()->byTaskProcessingResultId('taskProcessingResult-id')->microsoftGraphIdentityGovernanceResume()->post($requestBody);
 
 
 ```

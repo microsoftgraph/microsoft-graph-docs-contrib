@@ -2,7 +2,7 @@
 title: "subscribedSku resource type"
 description: "Represents the subscribed SKU type."
 ms.localizationpriority: medium
-author: "SumitParikh"
+author: "jconley76"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
@@ -19,14 +19,15 @@ Inherits from [directoryObject](directoryobject.md).
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
+
+| Method         | Return Type    |Description|
+|:---------------|:---------------|:----------|
 |[Get subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Get a specific commercial subscription that an organization has acquired.|
 |[List subscribedSku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) collection |Get the list of commercial subscriptions that an organization has acquired.|
 
 ## Properties
 
-| Property   | Type |Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | accountId        | String                                           | The unique ID of the account this SKU belongs to.                                                                                                                                                    |
 | accountName      | String                                           | The name of the account this SKU belongs to.                                                                                                                                                         |

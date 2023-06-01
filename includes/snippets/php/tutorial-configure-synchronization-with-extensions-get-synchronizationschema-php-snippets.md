@@ -16,7 +16,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->jobsById('synchronizationJob-id')->schema()->get($requestConfiguration);
+$result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->synchronization()->jobs()->byJobId('synchronizationJob-id')->schema()->get($requestConfiguration);
 
 
 ```

@@ -15,7 +15,7 @@ $queryParameters->filter = "roles/any";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->members()->get($requestConfiguration);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->members()->get($requestConfiguration);
 
 
 ```

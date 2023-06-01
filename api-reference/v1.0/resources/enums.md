@@ -2494,3 +2494,12 @@ Possible values for user account types (group membership), per Windows definitio
 |published|
 |pending|
 |unknownFutureValue|
+
+### chatMessageActions values 
+
+|Member|
+|:---|
+|reactionAdded|
+|reactionRemoved|
+|actionUndefined|
+|unknownFutureValue|

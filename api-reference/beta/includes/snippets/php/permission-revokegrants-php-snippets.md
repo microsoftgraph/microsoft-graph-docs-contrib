@@ -20,7 +20,7 @@ $requestBody->setGrantees($granteesArray);
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->permissionsById('permission-id')->revokeGrants()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->permissions()->byPermissionId('permission-id')->revokeGrants()->post($requestBody);
 
 
 ```

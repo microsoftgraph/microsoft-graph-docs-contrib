@@ -15,7 +15,7 @@ $queryParameters->select = ["id","expand=columns"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->canvasLayout()->horizontalSectionsById('horizontalSection-id')->get($requestConfiguration);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->pages()->byPageId('sitePage-id')->canvasLayout()->horizontalSections()->byHorizontalSectionId('horizontalSection-id')->get($requestConfiguration);
 
 
 ```
