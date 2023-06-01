@@ -20,7 +20,7 @@ The status is a read-only property in the submission.  Status changes based on t
 | State | Description | REST API call |
 |:--|:--|:--|
 | Working |	Initial state after the submission is created. | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
-| Submitted	| State after student turns in the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
+| Submitted	| The state after the student turns in the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
 | Returned | The state after the teacher has returned an assignment to the student. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
 | Reassigned | The state after the teacher has returned the assignment to the student for revision. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
 
