@@ -12,7 +12,7 @@ ms.date: 11/29/2022
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure AD Identity Governance allows you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right principals have the right access to the right resources and at the right time.
+Azure Active Directory (Azure AD) Identity Governance allows you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right principals have the right access to the right resources and at the right time.
 
 The principals (or identities) whose access you can govern include users, groups, and applications (or service principals). The users can be your employees, business partners, vendors, or contractors. The resources to which you can govern access include groups, access packages, and privileged roles.
 

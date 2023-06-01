@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 Namespace: microsoft.graph
 
-Use Azure AD access reviews to configure one-time or recurring access reviews for attestation of a principal's right to access Azure AD resources. The principals are users or applications (service principals). The Azure AD resources include groups, applications (service principals), access packages, and privileged roles. Access reviews is a feature of Identity Governance.
+Use Azure AD access reviews to configure one-time or recurring access reviews for attestation of a principal's right to access Azure AD resources. The principals are users or applications (service principals). The Azure AD resources include groups, applications (service principals), access packages, and privileged roles. Access reviews is a feature of Azure AD Identity Governance.
 
 Typical customer scenarios for access reviews include:
 
