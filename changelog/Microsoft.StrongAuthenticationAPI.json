@@ -127,7 +127,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "userPreferredMethodForSecondaryAuthentication",
           "ChangeType": "Addition",
-          "Description": "Added the `userPreferredMethodForSecondaryAuthentication` property to the [signInPreferences](https://learn.microsoft.com/en-us/graph/api/resources/signInPreferences?view=graph-rest-beta) resource.",
+          "Description": "Added the **userPreferredMethodForSecondaryAuthentication** property to the [signInPreferences](https://learn.microsoft.com/en-us/graph/api/resources/signInPreferences?view=graph-rest-beta) resource.",
           "Target": "signInPreferences"
         }
       ],
