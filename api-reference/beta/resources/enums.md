@@ -663,6 +663,32 @@ Namespace: microsoft.graph
 | Binary |
 | Unary  |
 
+### synchronizationJobRestartScope values 
+
+|Member|
+|:---|
+|None|
+|ConnectorDataStore|
+|Escrows|
+|Watermark|
+|QuarantineState|
+|Full|
+|ForceDeletes|
+
+### synchronizationMetadata values 
+
+|Member|
+|:---|
+|GalleryApplicationIdentifier|
+|GalleryApplicationKey|
+|IsOAuthEnabled|
+|IsSynchronizationAgentAssignmentRequired|
+|IsSynchronizationAgentRequired|
+|IsSynchronizationInPreview|
+|OAuthSettings|
+|SynchronizationLearnMoreIbizaFwLink|
+|ConfigurationFields|
+
 ### mutability values
 
 | Member    |
@@ -682,6 +708,18 @@ Namespace: microsoft.graph
 | AttributeReadOnly   |
 | ReferenceAttributes |
 | UnknownFutureValue  |
+
+### objectDefinitionMetadata values 
+
+|Member|
+|:---|
+|PropertyNameAccountEnabled|
+|PropertyNameSoftDeleted|
+|IsSoftDeletionSupported|
+|IsSynchronizeAllSupported|
+|ConnectorDataStorageRequired|
+|Extensions|
+|BaseObjectName|
 
 ### connectorGroupRegion values
 
@@ -2318,10 +2356,10 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### scopeOperatorMultiValuedComparisonType values
 
-| Member |
-| :----- |
-| all    |
-| any    |
+|Member|
+|:---|
+|All|
+|Any|
 
 ### riskLevel values
 
@@ -2396,12 +2434,26 @@ Possible values for user account types (group membership), per Windows definitio
 | restId               |
 | restImmutableEntryId |
 
-### attributeFlowBehavior values
+### attributeDefinitionMetadata values 
 
-| Member          |
-| :-------------- |
-| flowWhenChanged |
-| flowAlways      |
+|Member|
+|:---|
+|BaseAttributeName|
+|ComplexObjectDefinition|
+|IsContainer|
+|IsCustomerDefined|
+|IsDomainQualified|
+|LinkPropertyNames|
+|LinkTypeName|
+|MaximumLength|
+|ReferencedProperty|
+
+### attributeFlowBehavior values 
+
+|Member|
+|:---|
+|FlowWhenChanged|
+|FlowAlways|
 
 ### attributeFlowType values 
 
@@ -2415,12 +2467,24 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### objectFlowTypes values
 
-| Member | Value |
-| :----- | :---- |
-| None   | 0     |
-| Add    | 1     |
-| Update | 2     |
-| Delete | 4     |
+|Member|
+|:---|
+|None|
+|Add|
+|Update|
+|Delete|
+
+### objectMappingMetadata values
+
+|Member|
+|:---|
+|EscrowBehavior|
+|DisableMonitoringForChanges|
+|OriginalJoiningProperty|
+|Disposition|
+|IsCustomerDefined|
+|ExcludeFromReporting|
+|Unsynchronized|
 
 ### chatMessageType values
 
