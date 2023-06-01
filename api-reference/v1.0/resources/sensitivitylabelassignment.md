@@ -1,7 +1,7 @@
 ---
 title: "sensitivityLabelAssignment resource type"
 description: "Provides details about a sensitivity label assigned to a file in SharePoint or OneDrive for Business."
-author: "jaLuthra"
+author: "kumarabhis"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
