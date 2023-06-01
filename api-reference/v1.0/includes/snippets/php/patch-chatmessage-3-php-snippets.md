@@ -90,6 +90,8 @@ $requestBody->setMentions([]);
 
 $requestBody->setReactions([]);
 
+$requestBody->setMessageHistory([]);
+
 
 
 $result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->byMessageId('chatMessage-id')->patch($requestBody);
