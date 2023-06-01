@@ -22,7 +22,7 @@ An assignment represents a task or unit of work assigned to a student or team me
 | Scheduled | Status when the teacher scheduled the assignment to publish at a future time. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` | Resources, categories, rubrics |
 | Assigned | After publish has finished, the assignment is moved to Assigned state and is available for the students, or the assignment is active again. | `POST /education/classes/{id}/assignments/{id}/publish`<br/>`POST /education/classes/{id}/assignments/{id}/activate` | Submissions |
 | Pending | Background processing status when a new assignment is being copied from an existing one. | `PATCH /education/classes/{id}/assignments/{id}` | |
-| Inactive | The assignment has no further action items for teachers and students. | `POST /education/classes/{id}/assignments/{id}/deactivate` | |
+| Inactive | The assignment has no additional action items for teachers and students. | `POST /education/classes/{id}/assignments/{id}/deactivate` | |
 
 The following diagram shows the state transitions that can occur for assignments.
 
@@ -59,7 +59,8 @@ The caller must use the [GET assignment](/graph/api/educationassignment-get) ope
 
 The following table lists the API calls that affect the assignment state and operation type.
 
-Synchronous operations are performed one at a time, and only after one operation is completed can the following operation start. The result is not returned until the last operation is completed. With asynchronous operations, the operation starts and another operation can run before the previous one finishes. The asynchronous operation performs some background activity, and the caller must be polling to get the result.
+Synchronous operations are executed one at a time. Each operation must be completed before the next one can begin, and the final result is only returned once all operations have finished.
+Asynchronous operations allow multiple tasks to run concurrently. While one operation is in progress, another operation can start before the previous one is finished. Asynchronous operations typically involve background activities, and the caller needs to actively check for the result by polling or monitoring until it becomes available.
 
 | API | Sync or async | Mechanism to get latest state |
 |:--|:--|:--|

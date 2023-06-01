@@ -1,6 +1,6 @@
 ---
 title: "Teacher and student actions for assignments and submissions"
-description: "Learn about on how to get the assignments and related submissions for Teachers and Students with state transition rules."
+description: "Learn how to get the assignments and related submissions for Teachers and Students with state transition rules."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
 ms.prod: "education"
@@ -9,11 +9,11 @@ doc_type: conceptualPageType
 
 # Teacher and student actions for assignments and submissions
 
-This article describes student and teacher roles for the assignment and submission state transition and related transition rules.
+This article describes student and teacher roles for assignments and submissions state transitions, and related transition rules.
 
-## Get all the assignments and their corresponding submissions belonging to the student
+## Get all the assignments and their respective submissions that belong to a specific student
 
-Use the following call for the student action:
+Make the following request to get the student's actions:
 
 `me/assignments?$expand=submissions` with a Delegated Scope, or `users/id/assignments?$expand=submissions` for Application scope.
 
