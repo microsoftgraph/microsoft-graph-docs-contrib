@@ -1,7 +1,7 @@
 ---
 title: "cloudPC: validateBulkResize"
-description: "Validate selected devices to see if their states meet the requirements to perform Bulk Resize."
-author: "Aria Zhang (yuzhang3)"
+description: "Validate if the selected devices meet the requirements to perform bulk resizing."
+author: "SleepIsImportant"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Validate a bulk of selected [cloudPC](../resources/cloudpc.md) to see if their states meet the requirements to perform Bulk Resize.
+Validate if the selected [cloudPC](../resources/cloudpc.md) devices meet the requirements for bulk resizing.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To validate a set of [cloudPC](../resources/cloudpc.md) to see if they can be bulk resized in the organization using delegated permission:
+To validate if a set of [cloudPC](../resources/cloudpc.md) can be bulk-resized in the organization using delegated permissions:
 ``` http
 POST /deviceManagement/virtualEndpoint/cloudPCs/validateBulkResize
 ```
@@ -52,12 +52,12 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudPcIds|String collection|The Cloud PC id list for selected Cloud PC devices to be validated. Max count is 2000.|
-|targetServicePlanId|String|The target service plan id of the resize configuration with new vCPU and storage size.|
+|cloudPcIds|String collection|The selected Cloud PC id list to be validated. The max count is 2000.|
+|targetServicePlanId|String|The target service plan id of the resize configuration with the new vCPU and storage size.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [cloudPcResizeValidateResult](../resources/cloudPcResizeValidationResult.md) object collection in the response body.
+If successful, this method returns a `200 OK` response code and the requested [cloudPcResizeValidateResult](../resources/cloudpcresizevalidationresult.md) object collection in the response body.
 
 ## Examples
 
