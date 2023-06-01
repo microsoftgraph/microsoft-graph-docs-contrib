@@ -24,7 +24,7 @@ var requestBody = new LearningCourseActivity
 		},
 	},
 };
-var result = await graphClient.EmployeeExperience.LearningCourseActivities["{learningCourseActivity-id}"].PatchAsync(requestBody);
+var result = await graphClient.EmployeeExperience.LearningProviders["{learningProvider-id}"].LearningCourseActivities["{learningCourseActivity-id}"].PatchAsync(requestBody);
 
 
 ```
