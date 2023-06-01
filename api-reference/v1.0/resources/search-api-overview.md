@@ -49,8 +49,8 @@ The following table describes the types available to query and the supported per
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that document libraries are also returned as lists. |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
-|[bookmark](search-bookmark.md)|Bookmark.Read.All|Microsoft Search|Bookmarks in Microsoft Search in your organization.|
-|[acronym](search-acronym.md)|Acronym.Read.All|Microsoft Search|Acronyms in Microsoft Search in your organization.|
+|[bookmark](search-bookmark.md)|Bookmark.Read.All|Microsoft Search|Microsoft Search bookmarks in your organization.|
+|[acronym](search-acronym.md)|Acronym.Read.All|Microsoft Search|Microsoft Search acronyms in your organization.|
 
 ## Page search results
 
@@ -110,15 +110,16 @@ Depending on the entity type, the searchable properties vary. For details, see:
 
 ## Collapse search results
 
-The **collapseProperties** property contains a set of criteria, fields, and limit size, which are used for collapsing results in a response body. Using **collapseProperties** only impacts the recall but not ranking/sorting.
+The **collapseProperties** property contains a set of criteria, fields, and limit size used to collapse results in a response body. Using **collapseProperties** only impacts the recall but not ranking/sorting actions.
 
 The [query](../api/search-query.md) method lets you customize the collapse property by specifying **collapseProperties** on the `requests` parameter, which is a collection of [collapseProperty](collapseproperty.md) objects. This allows you to specify a set of one or more collapse properties.
 
-Note that collapsing results is currently supported on the following entity types: [driveItem](driveitem.md), [listItem](listitem.md), [drive](drive.md), [list](list.md), [site](site.md), [externalItem](externalconnectors-externalitem.md).
+Note that collapsing results is currently supported for the following entity types: [driveItem](driveitem.md), [listItem](listitem.md), [drive](drive.md), [list](list.md), [site](site.md), [externalItem](externalconnectors-externalitem.md).
 
-The properties on which the collapse clause are applied need to be queryable and either sortable or refinable. For multi-level collapse, each subsequent property limit size specified in a multi-level request should be less than or equal to the previous; otherwise, the response will return an `HTTP 400 Bad Request` error.
+To use the collapse clause effectively, the properties you apply it to must be queryable, and either sortable or refinable.
+When using multi-level collapse,  it's important to note that each subsequent property's limit size specified in a multi-level request should be equal to or smaller than the previous one. If a subsequent property's limit size exceeds the previous one, the server will respond with an `HTTP 400 Bad Request` error.
 
-For examples that show how to collapse results, see [collapse search results](/graph/search-concept-collapse).
+See [collapse search results](/graph/search-concept-collapse) for more collapse results examples. 
 
 ## Sort search results
 
