@@ -1,7 +1,7 @@
 ---
 title: "cloudPC: getProvisionedCloudPCs"
 description: "Get all provisioned Cloud PCs of a specific service plan for users under an Azure Active Directory (AAD) user group."
-author: "Aria Zhang (yuzhang3)"
+author: "SleepIsImportant"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
