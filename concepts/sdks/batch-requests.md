@@ -138,8 +138,6 @@ System.out.println(String.format("You have %d events on your calendar today", ev
 
 ### [Go](#tab/Go)
 
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
 ```go
 import (
     msgraphgocore "github.com/microsoftgraph/msgraph-sdk-go-core"
@@ -356,8 +354,6 @@ System.out.println(String.format("You have %d events on your calendar today", ev
 ```
 
 ### [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 ```go
 import (

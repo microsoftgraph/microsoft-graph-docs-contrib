@@ -115,8 +115,6 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ## [Go](#tab/Go)
 
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
 ```go
 import (
     a "github.com/microsoftgraph/msgraph-sdk-go-core/authentication"
@@ -286,8 +284,6 @@ final GraphServiceClient graphServiceClient =
 > For more information about Azure Identity proxy configuration, see [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).
 
 ## [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 ```go
 import (

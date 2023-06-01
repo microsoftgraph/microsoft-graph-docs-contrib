@@ -12,7 +12,7 @@ Microsoft Graph SDKs are available to be included in your projects via GitHub an
 SDKs are available in the following languages:
 
 - [.NET](#install-the-microsoft-graph-net-sdk)
-- [Go (preview)](#install-the-microsoft-graph-go-sdk-preview)
+- [Go](#install-the-microsoft-graph-go-sdk)
 - [Java](#install-the-microsoft-graph-java-sdk)
 - [JavaScript](#install-the-microsoft-graph-javascript-sdk)
 - [PHP](#install-the-microsoft-graph-php-sdk)
@@ -41,7 +41,7 @@ dotnet add package Microsoft.Graph
 Install-Package Microsoft.Graph
 ```
 
-## Install the Microsoft Graph Go SDK (preview)
+## Install the Microsoft Graph Go SDK
 
 The Microsoft Graph Go SDK is included in the following packages:
 
