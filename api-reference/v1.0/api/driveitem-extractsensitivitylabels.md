@@ -1,7 +1,7 @@
 ---
 title: "driveItem: extractSensitivityLabels"
 description: "Extract one or more sensitivity labels assigned to a drive item."
-author: "jaLuthra"
+author: "abhishek-microsoft-2021"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType

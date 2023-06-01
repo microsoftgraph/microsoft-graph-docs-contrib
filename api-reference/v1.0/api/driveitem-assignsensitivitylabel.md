@@ -1,7 +1,7 @@
 ---
 title: "driveItem: assignSensitivityLabel"
 description: "Asynchronously assign a sensitivity label to a driveItem."
-author: "kumarabhis"
+author: "abhishek-microsoft-2021"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "extractSensitivityLabelsResult resource type"
 description: "Represents the response format for the extractSensitivityLabels API."
-author: "kumarabhis"
+author: "abhishek-microsoft-2021"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
