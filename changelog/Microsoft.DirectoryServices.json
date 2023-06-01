@@ -213,6 +213,40 @@
     {
       "ChangeList": [
         {
+          "Id": "48004467-2fa8-4cd8-959f-88616321cf4b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAppScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAppScope](https://learn.microsoft.com/en-us/graph/api/resources/customAppScope?view=graph-rest-beta) resource and supported methods.",
+          "Target": "customAppScope"
+        },
+        {
+          "Id": "48004467-2fa8-4cd8-959f-88616321cf4b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAppScopeAttributesDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAppScopeAttributesDictionary](https://learn.microsoft.com/en-us/graph/api/resources/customAppScopeAttributesDictionary?view=graph-rest-beta) resource type.",
+          "Target": "customAppScopeAttributesDictionary"
+        },
+        {
+          "Id": "48004467-2fa8-4cd8-959f-88616321cf4b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "customAppScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the **customAppScopes** relationship to the [unifiedRbacApplication](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacApplication?view=graph-rest-beta) resource.",
+          "Target": "unifiedRbacApplication"
+        }
+      ],
+      "Id": "48004467-2fa8-4cd8-959f-88616321cf4b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-30T11:02:06.6580762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
           "ApiChange": "Relationship",
           "ChangedApiName": "roleManagement",
@@ -9995,7 +10029,7 @@
         {
           "Id": "c71b4a31-ce26-4317-8dbc-ec6aa654d9e4",
           "ApiChange": "Resource",
-          "ChangedApiName": "privilegedapproval",
+          "ChangedApiName": "privilegedApproval",
           "ChangeType": "Change",
           "Description": "Change the **privilegedapproval** entity.",
           "Target": "privilegedapproval"
@@ -10003,7 +10037,7 @@
         {
           "Id": "c71b4a31-ce26-4317-8dbc-ec6aa654d9e4",
           "ApiChange": "Resource",
-          "ChangedApiName": "privilegedroleassignmentrequest,List,Create,Cancel,My",
+          "ChangedApiName": "privilegedRoleAssignmentRequest,List,Create,Cancel,My",
           "ChangeType": "Addition",
           "Description": "Added the **privilegedroleassignmentrequest** entity, and following methods and actions: List, Create, Cancel, My.",
           "Target": "privilegedroleassignmentrequest,List,Create,Cancel,My"
@@ -13547,6 +13581,56 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-04-11T17:56:44.238139Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allowedValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [allowedValue](https://learn.microsoft.com/en-us/graph/api/resources/allowedValue?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "allowedValue"
+        },
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeSet](https://learn.microsoft.com/en-us/graph/api/resources/attributeSet?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "attributeSet"
+        },
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customSecurityAttributeDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [customSecurityAttributeDefinition](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityAttributeDefinition?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "customSecurityAttributeDefinition"
+        },
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "attributeSets",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeSets** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "customSecurityAttributeDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the **customSecurityAttributeDefinitions** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        }
+      ],
+      "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-31T12:59:41.4957833Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
