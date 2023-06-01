@@ -24,38 +24,7 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 ### [C#](#tab/csharp)
 
-```csharp
-var messages = await graphClient.Me.Messages
-    .GetAsync(requestConfiguration =>
-    {
-        requestConfiguration.QueryParameters.Top = 10;
-        requestConfiguration.QueryParameters.Select = new string[] { "sender", "subject", "body" };
-        requestConfiguration.Headers.Add("Prefer", "outlook.body-content-type=\"text\"");
-    });
-
-var pageIterator = PageIterator<Message,MessageCollectionResponse>
-    .CreatePageIterator(
-        graphClient,
-        messages,
-        // Callback executed for each item in
-        // the collection
-        (m) =>
-        {
-            Console.WriteLine(m.Subject);
-            return true;
-        },
-        // Used to configure subsequent page
-        // requests
-        (req) =>
-        {
-            // Re-add the header to subsequent requests
-            req.Headers.Add("Prefer", "outlook.body-content-type=\"text\"");
-            return req;
-        }
-    );
-
-await pageIterator.IterateAsync();
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/Paging.cs" id="PagingSnippet":::
 
 ### [TypeScript](#tab/typeScript)
 
@@ -167,42 +136,7 @@ Some scenarios require stopping the iteration process in order to perform other 
 <!-- markdownlint-disable MD024 -->
 ### [C#](#tab/csharp)
 
-```csharp
-int count = 0;
-int pauseAfter = 25;
-
-var messages = await graphClient.Me.Messages
-    .GetAsync(requestConfiguration =>
-    {
-        requestConfiguration.QueryParameters.Top = 10;
-        requestConfiguration.QueryParameters.Select = new string[] { "sender", "subject" };
-    });
-
-var pageIterator = PageIterator<Message, MessageCollectionResponse>
-    .CreatePageIterator(
-        graphClient,
-        messages,
-        (m) =>
-        {
-            Console.WriteLine(m.Subject);
-            count++;
-            // If we've iterated over the limit,
-            // stop the iteration by returning false
-            return count < pauseAfter;
-        }
-    );
-
-await pageIterator.IterateAsync();
-
-while (pageIterator.State != PagingState.Complete)
-{
-    Console.WriteLine("Iteration paused for 5 seconds...");
-    await Task.Delay(5000);
-    // Reset count
-    count = 0;
-    await pageIterator.ResumeAsync();
-}
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/Paging.cs" id="ResumePagingSnippet":::
 
 ### [TypeScript](#tab/typeScript)
 
