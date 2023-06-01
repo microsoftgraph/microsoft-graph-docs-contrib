@@ -15,9 +15,9 @@ This article describes student and teacher roles for assignments and submissions
 
 Make the following request to get the student's actions:
 
-`me/assignments?$expand=submissions` with a Delegated Scope, or `users/id/assignments?$expand=submissions` for Application scope.
+`me/assignments?$expand=submissions` with delegated permissions, or `users/id/assignments?$expand=submissions` for application permissions.
 
-Code sample for student account with [Education assignment using Microsoft Graph SDK](https://github.com/microsoft/edu-assignments-graph-sdk/blob/main/samples/csharp/MicrosoftEduGraphSamples/Workflows/AssignmentWorkflow.cs#L62)
+See the code sample for a student account with [Education assignment using Microsoft Graph SDK](https://github.com/microsoft/edu-assignments-graph-sdk/blob/main/samples/csharp/MicrosoftEduGraphSamples/Workflows/AssignmentWorkflow.cs#L62)
 
 > [!NOTE]
 > For student account isTeacher parameter needs to be set to false.
