@@ -36,34 +36,7 @@ The following example configures an [Interactive authentication provider](choose
 
 ### [C#](#tab/csharp)
 
-```csharp
-using Azure.Identity;
-using Microsoft.Graph;
-using Microsoft.Graph.Authentication;
-
-// Create the InteractiveBrowserCredential using details
-// from app registered in the Azure AD for US Government portal
-var credential = new InteractiveBrowserCredential(
-    "YOUR_TENANT_ID",
-    "YOUR_CLIENT_ID",
-    new InteractiveBrowserCredentialOptions
-    {
-        // https://login.microsoftonline.us
-        AuthorityHost = AzureAuthorityHosts.AzureGovernment,
-        RedirectUri = new Uri("YOUR_REDIRECT_URI")
-    });
-
-// Create the authentication provider
-var authProvider = new AzureIdentityAuthenticationProvider(
-    credential,
-    new[] { "https://graph.microsoft.us/.default" });
-
-// Create the Microsoft Graph client object using
-// the Microsoft Graph for US Government L4 endpoint
-// NOTE: The API version must be included in the URL
-var graphClient = new GraphServiceClient(
-    authProvider, "https://graph.microsoft.us/v1.0");
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/NationalClouds.cs" id="NationalCloudSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
