@@ -12344,9 +12344,9 @@ items:
         - name: Subscribed sku
           href: resources/subscribedsku.md
           items:
-          - name: List subscribedSkus
+          - name: List
             href: api/subscribedsku-list.md
-          - name: Get subscribedSku
+          - name: Get
             href: api/subscribedsku-get.md
         - name: Company subscriptions
           href: resources/companysubscriptions.md
