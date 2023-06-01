@@ -49,7 +49,6 @@ PATCH /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name of the tenant in the multi-tenant organization. Optional.|
 |role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member` (default). Optional.|
 
 
@@ -59,47 +58,13 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Update the display name of a tenant
+The following example changes the role of a tenant in a multi-tenant organization from member to owner.
 
-The following example updates the display name of a tenant in a multi-tenant organization.
-
-#### Request
+### Request
 
 <!-- {
   "blockType": "request",
   "name": "update_multitenantorganizationmember"
-}
--->
-``` http
-PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenant/5036a0a0-a7a4-4933-9086-5dd54535dd6e
-Content-Type: application/json
-
-{
-    "displayName": "Woodgrove Bank"
-}
-```
-
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 204 No Content
-```
-
-### Example 2: Update the role of a tenant
-
-The following example changes the role of a tenant in a multi-tenant organization from member to owner.
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "update_multitenantorganizationmember_role"
 }
 -->
 ``` http
@@ -112,7 +77,7 @@ Content-Type: application/json
 ```
 
 
-#### Response
+### Response
 
 <!-- {
   "blockType": "response",
