@@ -55,6 +55,7 @@ If successful, this method returns a `200 OK` and a collection of [identityUserF
 
 ### Request
 The following is an example of a request to retrieve the list of applications associated with a user flow.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_includeApplications"
@@ -63,6 +64,16 @@ The following is an example of a request to retrieve the list of applications as
 ``` http
 GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/conditions/applications/includeApplications/
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-includeapplications-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-includeapplications-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following is an example of the response
