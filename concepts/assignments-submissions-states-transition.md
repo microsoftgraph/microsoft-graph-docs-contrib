@@ -20,14 +20,14 @@ Make the following request to get the student's actions:
 See the code sample for a student account with [Education assignment using Microsoft Graph SDK](https://github.com/microsoft/edu-assignments-graph-sdk/blob/main/samples/csharp/MicrosoftEduGraphSamples/Workflows/AssignmentWorkflow.cs#L62)
 
 > [!NOTE]
-> For student account isTeacher parameter needs to be set to false.
+> For student roles, the isTeacher parameter needs to be set to false.
 
 ## Get all the assignments for teacher and then submissions for each assignment
 
-Use the following call for the teacher action:
+Make the following request to get the teacher's actions:
 
 `me/assignments` or `users/id/assignments` to get the assignments belonging to a teacher.
-Then, for each of the assignments use `classses/id/assignments/id/submissions` to get submissions status (one assignment will contain n number of submissions, where n is the number of students. It can be a single student, a group of students or the entire class).
+For each of the assignments, use `classses/id/assignments/id/submissions` to get the submissions status (one assignment will contain n number of submissions, where n is the number of students. It can be a single student, a group of students or the entire class).
 
 See the code sample for a teacher account with [Education assignment using Microsoft Graph SDK](https://github.com/microsoft/edu-assignments-graph-sdk/blob/main/samples/csharp/MicrosoftEduGraphSamples/Workflows/AssignmentWorkflow.cs#L62).
 
