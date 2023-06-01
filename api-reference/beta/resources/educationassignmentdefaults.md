@@ -4,7 +4,7 @@ description: "Specify class-level defaults respected by new assignments created 
 author: "dipakboyed"
 ms.localizationpriority: medium
 ms.prod: "education"
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
 # educationAssignmentDefaults resource type

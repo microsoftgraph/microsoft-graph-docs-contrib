@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -27,7 +27,7 @@ configuration := &graphconfig.ItemMessageItemRequestBuilderGetRequestConfigurati
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().MessagesById("message-id").Get(context.Background(), configuration)
+result, err := graphClient.Me().Messages().ByMessageId("message-id").Get(context.Background(), configuration)
 
 
 ```

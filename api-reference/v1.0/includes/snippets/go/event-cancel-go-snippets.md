@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewCancelPostRequestBody()
 comment := "Cancelling for this week due to all hands"
 requestBody.SetComment(&comment) 
 
-graphClient.Me().EventsById("event-id").Cancel().Post(context.Background(), requestBody, nil)
+graphClient.Me().Events().ByEventId("event-id").Cancel().Post(context.Background(), requestBody, nil)
 
 
 ```

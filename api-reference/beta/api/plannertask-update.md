@@ -52,6 +52,7 @@ PATCH /planner/tasks/{id}
 |percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
 |planId|String|Plan id to which the task belongs.|
 |priority|Int32|Priority of the task. Valid range of values is between `0` and `10` (inclusive), with increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority).  Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low".  Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
+|recurrence|[plannerTaskRecurrence](../resources/plannertaskrecurrence.md)|The recurrence for the task, if defined. Optional.|
 |startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |title|String|Title of the task.|
 
@@ -87,6 +88,15 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   "appliedCategories": {
     "category3": true,
     "category4": false
+  },
+  "recurrence": {
+    "schedule": {
+      "pattern": {
+        "type": "daily",
+        "interval": 3
+      },
+      "patternStartDateTime": "2022-02-22T02:10:33Z"
+    }
   }
 }
 ```
@@ -95,20 +105,20 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannertask-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertask-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-plannertask-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-plannertask-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertask-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-plannertask-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-plannertask-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -173,9 +183,32 @@ Content-type: application/json
   "appliedCategories": {
     "category3": true,
     "category5": true,
-    "category6": true,
+    "category6": true
   },
-  "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
+  "id": "01gzSlKkIUSUl6DF_EilrmQAKDhh",
+  "recurrence": {
+    "@odata.type": "#microsoft.graph.plannerTaskRecurrence",
+    "seriesId": "qOqWwPLt4U-LIsWV5ByUuA",
+    "occurrenceId": 1,
+    "previousInSeriesTaskId": null,
+    "nextInSeriesTaskId": null,
+    "schedule": {
+      "@odata.type": "#microsoft.graph.plannerRecurrenceSchedule",
+      "pattern": {
+        "odata.type": "#microsoft.graph.recurrencePattern",
+        "type": "daily",
+        "interval": 3,
+        "firstDayOfWeek": "sunday",
+        "dayOfMonth": 0,
+        "daysOfWeek": [],
+        "index": "first",
+        "month": 0
+      },
+      "patternStartDateTime": "2022-02-22T02:10:33Z",
+      "nextOccurrenceDateTime": "2022-02-25T02:10:33Z"
+    },
+    "recurrenceStartDateTime": "2022-02-22T02:10:33Z"
+  }
 }
 ```
 
@@ -192,5 +225,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

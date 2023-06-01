@@ -25,6 +25,9 @@
     "treatErrorsAsWarningsWorkloads": [
       "intune"
     ],
+    "skipPermissionTableUpdateForWorkloads": [
+      "intune"
+    ],
     "requiredYamlHeaders": [
       "author",
       "title",

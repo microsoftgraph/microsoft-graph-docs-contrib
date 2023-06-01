@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.softwareOathAuthenticationMethodConfiguration"
-	State = "disabled"
+	state = "disabled"
 }
 
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params

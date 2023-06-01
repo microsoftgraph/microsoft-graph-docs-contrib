@@ -24,10 +24,10 @@ $attachmentsAttachment1->set@odatatype('#microsoft.graph.referenceAttachment');
 $attachmentsAttachment1->setName('Personal pictures');
 
 $additionalData = [
-'sourceUrl' => 'https://contoso.com/personal/mario_contoso_net/Documents/Pics', 
-'providerType' => 'oneDriveConsumer', 
-'permission' => 'Edit', 
-'isFolder' => 'True', 
+		'sourceUrl' => 'https://contoso.com/personal/mario_contoso_net/Documents/Pics', 
+		'providerType' => 'oneDriveConsumer', 
+		'permission' => 'Edit', 
+		'isFolder' => 'True', 
 ];
 $attachmentsAttachment1->setAdditionalData($additionalData);
 
@@ -41,7 +41,7 @@ $post->setAttachments($attachmentsArray);
 $requestBody->setPost($post);
 
 
-$graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->reply()->post($requestBody);
+$graphServiceClient->groups()->byGroupId('group-id')->threads()->byThreadId('conversationThread-id')->reply()->post($requestBody);
 
 
 ```

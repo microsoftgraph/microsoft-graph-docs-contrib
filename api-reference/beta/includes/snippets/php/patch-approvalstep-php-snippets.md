@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentApprovalsById('approval-id')->stepsById('approvalStep-id')->patch();
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentApprovals()->byAccessPackageAssignmentApprovalId('approval-id')->steps()->byStepId('approvalStep-id')->patch();
 
 
 ```

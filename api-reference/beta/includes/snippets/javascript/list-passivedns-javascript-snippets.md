@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let passiveDns = await client.api('/security/threatIntelligence/hosts/contoso.com/passiveDns')
+let passiveDnsReverse = await client.api('/security/threatIntelligence/hosts/contoso.com/passiveDnsReverse')
 	.version('beta')
 	.get();
 

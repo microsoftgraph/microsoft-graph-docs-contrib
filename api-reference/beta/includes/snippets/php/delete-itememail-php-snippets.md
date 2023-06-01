@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->profile()->emailsById('itemEmail-id')->delete();
+$graphServiceClient->me()->profile()->emails()->byEmailId('itemEmail-id')->delete();
 
 
 ```

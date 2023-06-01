@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->policies()->homeRealmDiscoveryPoliciesById('homeRealmDiscoveryPolicy-id')->delete();
+$graphServiceClient->policies()->homeRealmDiscoveryPolicies()->byHomeRealmDiscoveryPolicieId('homeRealmDiscoveryPolicy-id')->delete();
 
 
 ```

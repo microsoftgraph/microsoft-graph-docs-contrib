@@ -1,7 +1,7 @@
 ---
 title: "Configure an application access policy using the cloud communications API"
 description: "Use the cloud communications API in Microsoft Graph to configure an access policy that allows applications to access online meetings on behalf of a user."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---

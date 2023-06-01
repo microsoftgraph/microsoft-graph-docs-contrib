@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "github.com/google/uuid"
@@ -22,7 +22,7 @@ requestBody.SetKeyId(&keyId)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof) 
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").RemoveKey().Post(context.Background(), requestBody, nil)
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").RemoveKey().Post(context.Background(), requestBody, nil)
 
 
 ```

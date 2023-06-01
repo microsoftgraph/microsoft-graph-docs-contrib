@@ -42,7 +42,7 @@ $timeClockSettings->setApprovedLocation($timeClockSettingsApprovedLocation);
 $requestBody->setTimeClockSettings($timeClockSettings);
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->put($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->put($requestBody);
 
 
 ```

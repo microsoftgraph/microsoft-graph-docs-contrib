@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -32,7 +32,7 @@ configuration := &graphconfig.GroupItemCalendarViewRequestBuilderGetRequestConfi
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.GroupsById("group-id").CalendarView().Get(context.Background(), configuration)
+result, err := graphClient.Groups().ByGroupId("group-id").CalendarView().Get(context.Background(), configuration)
 
 
 ```

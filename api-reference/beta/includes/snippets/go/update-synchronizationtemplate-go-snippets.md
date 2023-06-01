@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -31,7 +31,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ApplicationsById("application-id").Synchronization().TemplatesById("synchronizationTemplate-id").Put(context.Background(), requestBody, configuration)
+graphClient.Applications().ByApplicationId("application-id").Synchronization().Templates().ByTemplateId("synchronizationTemplate-id").Put(context.Background(), requestBody, configuration)
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->applicationsById('application-id')->extensionPropertiesById('extensionProperty-id')->get();
+$result = $graphServiceClient->applications()->byApplicationId('application-id')->extensionProperties()->byExtensionPropertieId('extensionProperty-id')->get();
 
 
 ```

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	AllowedAudiences = "organization"
-	Client = @{
-		Department = "Corporate Marketing"
-		WebUrl = "https://www.contoso.com"
+	allowedAudiences = "organization"
+	client = @{
+		department = "Corporate Marketing"
+		webUrl = "https://www.contoso.com"
 	}
 }
 

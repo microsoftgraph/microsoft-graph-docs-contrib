@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -37,7 +37,7 @@ requestBody.SetCallOptions(callOptions)
 participantCapacity := int32(200)
 requestBody.SetParticipantCapacity(&participantCapacity) 
 
-graphClient.Communications().CallsById("call-id").Answer().Post(context.Background(), requestBody, nil)
+graphClient.Communications().Calls().ByCallId("call-id").Answer().Post(context.Background(), requestBody, nil)
 
 
 ```

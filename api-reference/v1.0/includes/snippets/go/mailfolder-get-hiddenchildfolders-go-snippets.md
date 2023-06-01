@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -25,7 +25,7 @@ configuration := &graphconfig.ItemMailFolderItemChildFoldersRequestBuilderGetReq
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").ChildFolders().Get(context.Background(), configuration)
+result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").ChildFolders().Get(context.Background(), configuration)
 
 
 ```
