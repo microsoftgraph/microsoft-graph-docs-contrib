@@ -383,7 +383,7 @@ Content-type: application/json
 
 ## JSON representation
 
-The following is a JSON representation of all retrievable properties in search to [chatMessage](/graph/api/resources/chatmessage)
+The following is a JSON representation of all retrievable properties currently available for [chatMessage] (/graph/api/resources/chatmessage) search
 
 ```json
 {
