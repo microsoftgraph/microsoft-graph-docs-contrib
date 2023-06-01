@@ -16,7 +16,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->messages()->delta()->get($requestConfiguration);
+$result = $graphServiceClient->me()->mailFolders()->byMailFolderId('mailFolder-id')->messages()->delta()->get($requestConfiguration);
 
 
 ```

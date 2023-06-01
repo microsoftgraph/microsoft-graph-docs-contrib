@@ -14,7 +14,7 @@ $requestBody->setDescription('This is a description for a legalHold');
 
 
 
-$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->legalHoldsById('legalHold-id')->patch($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->legalHolds()->byLegalHoldId('legalHold-id')->patch($requestBody);
 
 
 ```

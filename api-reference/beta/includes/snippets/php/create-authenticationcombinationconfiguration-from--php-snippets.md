@@ -23,7 +23,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->identity()->conditionalAccess()->authenticationStrength()->policiesById('authenticationStrengthPolicy-id')->combinationConfigurations()->post($requestBody);
+$result = $graphServiceClient->identity()->conditionalAccess()->authenticationStrength()->policies()->byPolicieId('authenticationStrengthPolicy-id')->combinationConfigurations()->post($requestBody);
 
 
 ```

@@ -29,7 +29,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->external()->connectionsById('externalConnection-id')->itemsById('externalItem-id')->patch($requestBody);
+$graphServiceClient->external()->connections()->byConnectionId('externalConnection-id')->items()->byItemId('externalItem-id')->patch($requestBody);
 
 
 ```

@@ -21,7 +21,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->bookingBusinessesById('bookingBusiness-id')->customQuestionsById('bookingCustomQuestion-id')->post($requestBody);
+$graphServiceClient->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->customQuestions()->byCustomQuestionId('bookingCustomQuestion-id')->post($requestBody);
 
 
 ```

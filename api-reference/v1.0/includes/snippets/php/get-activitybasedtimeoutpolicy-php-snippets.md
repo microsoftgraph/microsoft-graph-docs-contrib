@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->policies()->activityBasedTimeoutPoliciesById('activityBasedTimeoutPolicy-id')->get();
+$result = $graphServiceClient->policies()->activityBasedTimeoutPolicies()->byActivityBasedTimeoutPolicieId('activityBasedTimeoutPolicy-id')->get();
 
 
 ```

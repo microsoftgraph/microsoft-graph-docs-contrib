@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->policies()->tokenLifetimePoliciesById('tokenLifetimePolicy-id')->delete();
+$graphServiceClient->policies()->tokenLifetimePolicies()->byTokenLifetimePolicieId('tokenLifetimePolicy-id')->delete();
 
 
 ```

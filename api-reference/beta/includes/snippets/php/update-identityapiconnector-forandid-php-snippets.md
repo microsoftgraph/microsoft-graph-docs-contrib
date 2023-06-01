@@ -28,7 +28,7 @@ $authenticationConfiguration->setAdditionalData($additionalData);
 $requestBody->setAuthenticationConfiguration($authenticationConfiguration);
 
 
-$result = $graphServiceClient->identity()->apiConnectorsById('identityApiConnector-id')->patch($requestBody);
+$result = $graphServiceClient->identity()->apiConnectors()->byApiConnectorId('identityApiConnector-id')->patch($requestBody);
 
 
 ```

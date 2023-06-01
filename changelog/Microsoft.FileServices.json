@@ -69,6 +69,42 @@
     {
       "ChangeList": [
         {
+          "Id": "d07006c1-a451-4fcf-b9b6-835546842783",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllSites",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllSites](https://learn.microsoft.com/en-us/graph/api/site-getallsites?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        }
+      ],
+      "Id": "d07006c1-a451-4fcf-b9b6-835546842783",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-19T00:22:49.847Z",
+      "WorkloadArea": "Sites and Lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8ca9e51e-a486-41cb-af0e-105f86177d1b",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllSites",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllSites](https://learn.microsoft.com/en-us/graph/api/site-getallsites?view=graph-rest-1.0) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Target": "site"
+        }
+      ],
+        "Id": "8ca9e51e-a486-41cb-af0e-105f86177d1b",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2023-05-19T00:22:49.847Z",
+        "WorkloadArea": "Sites and Lists",
+        "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "imageTaggingChoice",
@@ -3195,7 +3231,7 @@
         },
         {
           "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "canvasLayout",
           "ChangeType": "Addition",
           "Description": "Added the **canvasLayout** relationship to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
@@ -3203,10 +3239,10 @@
         },
         {
           "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "webParts",
           "ChangeType": "Addition",
-          "Description": "Added the **webParts** relationship to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the **webParts** navigation property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {

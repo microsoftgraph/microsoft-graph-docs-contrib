@@ -16,7 +16,7 @@ $queryParameters->skip = 0;
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->pendingAccessReviewInstancesById('accessReviewInstance-id')->decisions()->get($requestConfiguration);
+$result = $graphServiceClient->me()->pendingAccessReviewInstances()->byPendingAccessReviewInstanceId('accessReviewInstance-id')->decisions()->get($requestConfiguration);
 
 
 ```
