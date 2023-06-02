@@ -203,7 +203,7 @@ The following example gets the list of any [resource-specific permissions that w
 <!-- {
   "blockType": "request",
   "name": "get_installedApps_in_team_select_consentedPermissionSet",
-  "sampleKeys": ["19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2"]
+  "sampleKeys": ["19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2", "N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg="]
 }
 -->
 

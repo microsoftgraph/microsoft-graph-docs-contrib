@@ -1,0 +1,86 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "attributeDefinitionMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeDefinitionMetadata** enumeration type.",
+          "Target": "attributeDefinitionMetadata"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "objectDefinitionMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **objectDefinitionMetadata** enumeration type.",
+          "Target": "objectDefinitionMetadata"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "objectMappingMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **objectMappingMetadata** enumeration type.",
+          "Target": "objectMappingMetadata"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "synchronizationMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **synchronizationMetadata** enumeration type.",
+          "Target": "synchronizationMetadata"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeDefinitionMetadataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeDefinitionMetadataEntry](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-attributeDefinitionMetadataEntry?view=graph-rest-beta) resource type.",
+          "Target": "attributeDefinitionMetadataEntry"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "metadataEntry",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **metadataEntry** resource type.",
+          "Target": "metadataEntry"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "objectDefinitionMetadataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [objectDefinitionMetadataEntry](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-objectDefinitionMetadataEntry?view=graph-rest-beta) resource type.",
+          "Target": "objectDefinitionMetadataEntry"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "objectMappingMetadataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [objectMappingMetadataEntry](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-objectMappingMetadataEntry?view=graph-rest-beta) resource type.",
+          "Target": "objectMappingMetadataEntry"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationMetadataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationMetadataEntry](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationMetadataEntry?view=graph-rest-beta) resource type.",
+          "Target": "synchronizationMetadataEntry"
+        }
+      ],
+      "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-31T00:00:00.4526604Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    }
+  ]
+}
