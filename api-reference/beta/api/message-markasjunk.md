@@ -30,10 +30,10 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /me/messages/{id}/markasjunk
-POST /users/{id | userPrincipalName}/messages/{id}/markasjunk
-POST /me/mailFolders/{id}/messages/{id}/markasjunk
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/markasjunk
+POST /me/messages/{id}/markAsJunk
+POST /users/{id | userPrincipalName}/messages/{id}/markAsJunk
+POST /me/mailFolders/{id}/messages/{id}/markAsJunk
+POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/markAsJunk
 ```
 
 ## Request headers
@@ -68,7 +68,7 @@ The following request moves the specified message to the **Junk Email** folder a
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/messages/AAMkADhAAATs28OAAA=/markasjunk
+POST https://graph.microsoft.com/beta/me/messages/AAMkADhAAATs28OAAA=/markAsJunk
 Content-type: application/json
 
 {
