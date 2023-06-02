@@ -1346,14 +1346,13 @@ Namespace: microsoft.graph
 
 ### educationSubmissionStatus values
 
-| Member             |
-| :----------------- |
-| working            |
-| submitted          |
-| released           |
-| returned           |
-| unknownFutureValue |
-| reassigned         |
+|Member|
+|:---|
+|working|
+|submitted|
+|returned|
+|unknownFutureValue|
+|reassigned|
 
 ### educationFeedbackResourceOutcomeStatus values
 
