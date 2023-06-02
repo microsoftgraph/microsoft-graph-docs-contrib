@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get audio routing group
+# Get audioRoutingGroup
 
 Namespace: microsoft.graph
 
@@ -47,7 +47,15 @@ If successful, this method returns a `200 OK` response code and an [audioRouting
 ## Example
 
 ### Request
+
 The following example shows the request.
+<!-- {
+  "blockType": "request",
+  "name": "get-audioRoutingGroup"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/communications/calls/{id}/audioRoutingGroups/{id}
+```
 
 ---
 

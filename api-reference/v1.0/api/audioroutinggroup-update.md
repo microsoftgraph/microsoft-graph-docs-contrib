@@ -7,8 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Update audio routing group
-
+# Update audioRoutingGroup
 Namespace: microsoft.graph
 
 Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).
@@ -52,6 +51,25 @@ If successful, this method returns a `200 OK` response code and an updated [audi
 ### Request
 The following example shows the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "update-audioRoutingGroup"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/communications/calls/{id}/audioRoutingGroups/{id}
+Content-Type: application/json
+{
+  "id": "oneToOne",
+  "routingMode": "oneToOne",
+  "sources": [
+    "632899f8-2ea1-4604-8413-27bd2892079f"
+  ],
+  "receivers": [
+    "550fae72-d251-43ec-868c-373732c2704f",
+    "72f988bf-86f1-41af-91ab-2d7cd011db47"
+  ]
+}
+```
 ---
 
 ### Response

@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Delete audio routing group
+# Delete audioRoutingGroup
 
 Namespace: microsoft.graph
 
@@ -46,8 +46,15 @@ If successful, this method returns `204 No Content` response code. It does not r
 ### Request
 The following example shows the request.
 
----
+<!-- {
+  "blockType": "request",
+  "name": "delete-audioRoutingGroup"
+}-->
+```http
+DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/audioRoutingGroups/{id}
+```
 
+---
 
 ### Response
 
