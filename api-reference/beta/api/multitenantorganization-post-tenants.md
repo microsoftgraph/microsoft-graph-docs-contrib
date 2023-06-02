@@ -52,7 +52,7 @@ You can specify the following properties when creating a **multiTenantOrganizati
 |:---|:---|:---|
 |tenantId|String|Tenant ID of the tenant to add to the multi-tenant organization. Required.|
 |displayName|String|Display name of the tenant added to the multi-tenant organization. Required.|
-|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member` (default). Optional.|
+|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member` (default), `unknownFutureValue`. Optional.|
 
 
 ## Response

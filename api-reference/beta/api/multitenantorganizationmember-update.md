@@ -49,7 +49,7 @@ PATCH /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member` (default). Optional.|
+|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member` (default), `unknownFutureValue`. Optional.|
 
 
 ## Response
