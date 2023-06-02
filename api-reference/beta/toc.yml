@@ -10691,6 +10691,16 @@ items:
             href: api/cloudpconpremisesconnection-runhealthcheck.md
           - name: Update Active Directory domain password
             href: api/cloudpconpremisesconnection-updateaddomainpassword.md
+        - name: Cloud PC bulk action
+          href: resources/cloudpcbulkaction.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-bulkActions.md
+          - name: Create
+            href: api/virtualendpoint-post-bulkactions
+          - name: Get
+            href: api/cloudpcbulkaction-get.md
+
         - name: Cloud PC cross-cloud government organization mapping
           href: resources/cloudpccrosscloudgovernmentorganizationmapping.md
           items:

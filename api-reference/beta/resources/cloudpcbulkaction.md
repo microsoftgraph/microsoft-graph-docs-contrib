@@ -1,7 +1,7 @@
 ---
 title: "CloudPcBulkAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the bulk action which will be applied to cloudPcs specified in parameter."
+author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: resourcePageType
@@ -13,25 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type.
+Entity that represents the bulk action which will be applied to cloudPcs specified in parameter. This is an abstract type.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List CloudPcBulkActions](../api/cloudpcbulkaction-list.md)|[CloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Get a list of the [CloudPcBulkAction](../resources/cloudpcbulkaction.md) objects and their properties.|
-|[Get CloudPcBulkAction](../api/cloudpcbulkaction-get.md)|[CloudPcBulkAction](../resources/cloudpcbulkaction.md)|Read the properties and relationships of a [CloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
-|[Update CloudPcBulkAction](../api/cloudpcbulkaction-update.md)|[CloudPcBulkAction](../resources/cloudpcbulkaction.md)|Update the properties of a [CloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
-|[Delete CloudPcBulkAction](../api/cloudpcbulkaction-delete.md)|None|Delete a [CloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
+|[List cloudPcBulkActions](../api/virtualendpoint-list-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Get a list of the [cloudPcBulkAction](../resources/cloudpcbulkaction.md) objects and their properties.|
+|[Create cloudPcBulkAction](../api/virtualendpoint-post-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Create a new [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
+|[Get cloudPcBulkAction](../api/cloudpcbulkaction-get.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Read the properties and relationships of a [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionSummary|[CloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|**TODO: Add Description**|
-|cloudPcIds|Guid collection|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|Guid|**TODO: Add Description**|
+|actionSummary|[CloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Run summary of this bulk action|
+|cloudPcIds|Guid collection|Id of cloudPcs this bulk action will apply to|
+|createdDateTime|DateTimeOffset|Time when this bulk action was created|
+|displayName|String|Name of this bulk action|
+|id|Guid|Id of this bulk action|
 
 ## Relationships
 None.
