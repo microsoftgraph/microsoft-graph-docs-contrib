@@ -51,6 +51,7 @@ The following table shows the parameters that can be used with this method.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |cloudPcIds|String collection|A collection of Cloud PC IDs.|
+|policySettings|cloudPcPolicySettingType|The target property of this apply action. This property is a enum flag, possible values are: region, singleSignOn and their bitwise combination. Default value is `region` as action will only apply region change if this parameter is null.|
 
 ## Response
 
@@ -75,7 +76,8 @@ Content-Type: application/json
   "cloudPcIds": [
     "52aa2645-36ee-47d2-9eb3-b8fbb17c3fc4",
     "ff117b6c-e3e6-41be-9cae-eb6743249a30"
-  ]
+  ],
+  "policySettings": ["region", "singleSignOn"]
 }
 ```
 

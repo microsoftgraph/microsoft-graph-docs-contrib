@@ -45,7 +45,13 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/apply
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this method.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|policySettings|cloudPcPolicySettingType|The target property of this apply action. This property is a enum flag, possible values are: region, singleSignOn and their bitwise combination. Default value is `region` as action will only apply region change if this parameter is null.|
 
 ## Response
 
@@ -64,7 +70,12 @@ The following is an example of a request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/353b6a8e-67c5-4f68-8d89-4360487576c4/apply
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/apply
+Content-Type: application/json
+
+{
+  "policySettings": ["region", "singleSignOn"]
+}
 ```
 
 ### Response
