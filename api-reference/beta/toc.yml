@@ -15103,6 +15103,13 @@ items:
           - name: Get directory audit
             href: api/directoryaudit-get.md
         - name: Custom security attributes audit
+          items:
+          - name: Custom security attributes audit
+            href: resources/customsecurityattributeaudit.md
+          - name: List custom security attribute audits
+            href: api/auditlogroot-list-customsecurityattributeaudits.md
+          - name: Get custom security attribute audit
+            href: api/customsecurityattributeaudit-get.md
         - name: Sign-in
           href: resources/signin.md
           items:
