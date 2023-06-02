@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.AAD.Reporting.customSecurityAttributeAudit"
+  "@odata.type": "microsoft.graph.customSecurityAttributeAudit"
 }
 -->
 ``` http
@@ -77,7 +77,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.AAD.Reporting.customSecurityAttributeAudit",
+    "@odata.type": "#microsoft.graph.customSecurityAttributeAudit",
     "id": "e0e78bac-1bbc-257e-d6f1-2e493d362616",
     "category": "String",
     "correlationId": "String",
