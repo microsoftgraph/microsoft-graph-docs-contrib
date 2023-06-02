@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Cloud PC provisioning policy. Property "onPremisesConnectionId" and "domainJoinConfiguration" has been deprecated as we have introduced a new property "domainJoinConfigurations" that specifies how CPC join Azure Active Derectory.
+Represents a Cloud PC provisioning policy. Property "onPremisesConnectionId" and "domainJoinConfiguration" will be deprecated at 2023/07/30 as we have introduced a new property "domainJoinConfigurations" that specifies how CPC join Azure Active Derectory.
 
 ## Methods
 
@@ -35,6 +35,7 @@ Represents a Cloud PC provisioning policy. Property "onPremisesConnectionId" and
 |description|String|The provisioning policy description.|
 |displayName|String|The display name for the provisioning policy.|
 |enableSingleSignOn|Boolean|`True` if the provisioned Cloud PC can be accessed by single sign-on. `False` indicates that the provisioned Cloud PC doesn't support this feature. Default value is `false`. Windows 365 users can use single sign-on to authenticate to Azure Active Directory (Azure AD) with passwordless options (for example, FIDO keys) to access their Cloud PC. Optional.|
+|domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Azure Active Directory. This property will be deprecated at 2023/07/30 as we have introduced a new property "domainJoinConfigurations" that specifies how CPC join Azure Active Derectory.|	
 |gracePeriodInHours|Int32|The number of hours to wait before reprovisioning/deprovisioning happens. Read-only.|
 |id|String|Unique identifier for the Cloud PC provisioning policy. Read-only.|
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
@@ -43,6 +44,7 @@ Represents a Cloud PC provisioning policy. Property "onPremisesConnectionId" and
 |localAdminEnabled|Boolean|Indicates whether the local admin option is enabled. If the local admin option is enabled, the end user can be an admin of the Cloud PC device. Read-only.|
 |managedBy|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|Specifies which services manage the Azure network connection. Possible values are: `windows365`, `devBox`, `unknownFutureValue`, `rpaBox`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rpaBox`. Read-only.|
 |microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftManagedDesktop.md)|The specific settings for the Microsoft Managed Desktop, which enables customers to get a managed device experience for the Cloud PC. Before you can enable Microsoft Managed Desktop, an admin must configure it.|
+|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service. This property will be deprecated at 2023/07/30 as we have introduced a new property "domainJoinConfigurations" that specifies how CPC join Azure Active Derectory.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs using this policy. By default, the license type is `dedicated` if the **provisioningType** isn't specified when you create the **cloudPcProvisioningPolicy**. You can't change this property after the **cloudPcProvisioningPolicy** was created. Possible values are: `dedicated`, `shared`, `unknownFutureValue`.|
 |windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Specific Windows settings to configure while creating Cloud PCs for this provisioning policy.|
 
