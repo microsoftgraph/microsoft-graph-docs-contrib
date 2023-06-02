@@ -50,7 +50,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.customSecurityAttributeAudit",
-  "baseType": "Microsoft.AAD.Reporting.directoryAudit",
+  "baseType": "microsoft.graph.directoryAudit",
   "openType": false
 }
 -->
