@@ -3,15 +3,47 @@
         {
             "ChangeList": [
                 {
-                    "Id": "933f075d-490f-474f-a6e6-037ab1e8703c",
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcBulkAction",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkAction?view=graph-rest-beta) resource and supported methods.",
+                    "Description": "Added the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkAction?view=graph-rest-beta) resource",
                     "Target": "cloudPcBulkAction"
+                },
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bulkActions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **bulkActions** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                },
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkActionSummary",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkActionSummary](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkActionSummary?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcBulkActionSummary"
+                },
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkPowerOff",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkPowerOff](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkPowerOff?view=graph-rest-beta) resource",
+                    "Target": "cloudPcBulkPowerOff"
+                },
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkPowerOn",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkPowerOn](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkPowerOn?view=graph-rest-beta) resource",
+                    "Target": "cloudPcBulkPowerOn"
                 }
             ],
-            "Id": "9784b8dc-f038-4cb0-9de8-757562ee3eea",
+            "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-05-21T05:55:14.173894Z",
