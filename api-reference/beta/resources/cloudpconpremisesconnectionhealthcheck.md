@@ -34,7 +34,7 @@ The result of a Cloud PC Azure network connection health check.
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|The type of error that occurred during this health check.|
 |recommendedAction|String|The recommended action to fix the corresponding error.|
 |additionalDetails|String|Additional details about the health check or the recommended action.|
-|correlationId|String|The unique identifier of the health check item related activities. This correlationId could help support team to troubleshoot.|
+|correlationId|String|The unique identifier of the health check item related activities. This correlationId can be useful in troubleshooting.|
 
 ### cloudPcOnPremisesConnectionHealthCheckErrorType values
 
