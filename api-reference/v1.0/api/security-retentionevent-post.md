@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1/security/triggers/retentionEvents
+POST https://graph.microsoft.com/v1.0/security/triggers/retentionEvents
 Content-Type: application/json
 Content-length: 616
 
