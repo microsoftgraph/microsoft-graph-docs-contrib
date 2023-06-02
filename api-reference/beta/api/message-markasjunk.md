@@ -53,7 +53,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and a [message](../resources/message.md) resource in the response body.
+If successful, this method returns a `202 Accepted` response code and a [message](../resources/message.md) object in the response body.
 
 ## Example
 
