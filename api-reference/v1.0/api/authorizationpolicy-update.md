@@ -23,6 +23,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Policy.ReadWrite.Authorization|
 
+When calling on behalf of a user, the user needs to belong to the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
++ Privileged Role Administrator 
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
