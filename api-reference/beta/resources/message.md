@@ -45,6 +45,8 @@ by providing a [delta](../api/message-delta.md) function.
 |[replyAll](../api/message-replyall.md)|None|Reply to all the recipients of a message by specifying a comment and modifying any updateable properties for the reply, all by using the **replyAll** method. The message is then saved in the Sent Items folder.|
 |[send](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 |[unsubscribe](../api/message-unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
+|[markAsJunk](../api/message-markasjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as junk. This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`.|
+|[markAsNotJunk](../api/message-markasnotjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as not junk. This API removes the sender from the list of blocked senders and moves the message to the **Inbox** folder, when **moveToInbox** is `true`.|
 |**Attachments**| | |
 |[List attachments](../api/message-list-attachments.md) |[Attachment](attachment.md) collection| Get all attachments on a message.|
 |[Add attachment](../api/message-post-attachments.md) |[Attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|
