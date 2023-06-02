@@ -63,7 +63,7 @@ The following is an example of the request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/print/connectors/{printConnectorId}
+DELETE https://graph.microsoft.com/v1.0/print/connectors/9953d245-3f6e-418c-a438-67f50e69a430
 ```
 
 # [C#](#tab/csharp)
