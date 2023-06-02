@@ -1,5 +1,5 @@
 ---
-title: "message: markasjunk"
+title: "message: markAsJunk"
 description: "Mark a message as junk."
 author: "kagunase"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# message: markasjunk
+# message: markAsJunk
 
 Namespace: microsoft.graph
 
