@@ -121,6 +121,14 @@
                     "ChangeType": "Addition",
                     "Description": "Added the policySettings property to [applyConfig](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-applyconfig?view=graph-rest-beta) method.",
                     "Target": "applyConfig"
+                },
+                {
+                    "Id": "73fac662-2262-4969-89ac-0b67adbe2a5b",
+                    "ApiChange": "Enumeration",
+                    "ChangedApiName": "cloudPcPolicySettingType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcPolicySettingType** enumeration type.",
+                    "Target": "cloudPcPolicySettingType"
                 }
             ],
             "Id": "73fac662-2262-4969-89ac-0b67adbe2a5b",
