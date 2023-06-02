@@ -105,7 +105,7 @@ Content-type: application/json
               "rank": 3,
               "summary": "Test externalItem",
               "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
+                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                 "title": "Test externalItem summary",
               }
             },

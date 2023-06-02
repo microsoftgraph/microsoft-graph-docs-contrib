@@ -234,6 +234,8 @@ For backward compatibility, the original properties and types are accessible and
 | [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
 | [entityTypes](./enums.md)          | Rename enum value | **unknownfuturevalue**  | **unknownFutureValue**  |
 
+And the externalItem resource with namespace **Microsoft.Graph** will be deprecated in beta and instead use the [externalItem resource](./externalconnectors-externalitem.md) with new namespace **Microsoft.Graph.ExternalConnectors** on **August 31, 2023**.
+
 ## See also
 
 - Learn more about a few key use cases:
