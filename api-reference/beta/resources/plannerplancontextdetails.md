@@ -19,7 +19,7 @@ The **plannerPlanContextDetails** resource contains additional information about
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |customLinkText|String|Nullable. Specifies the text to use in a user experience to display a link the the associated [plannerPlanContext](plannerplancontext.md). If null, applications should display the link with a custom text based on the **displayLinkType** property.|
-|displayLinkType|plannerPlanContextType|Specifies how an application should display the link to the associated **plannerPlanContext**. Applications may choose to provide customized text, description, icons, or other experiences based on the type of the link. Possible values are: `teamsTab`, `sharePointPage`, `meetingNotes`, `other`, `unknownFutureValue`.|
+|displayLinkType|plannerPlanContextType|Specifies how an application should display the link to the associated **plannerPlanContext**. Applications may choose to provide customized text, description, icons, or other experiences based on the type of the link. Possible values are: `teamsTab`, `sharePointPage`, `meetingNotes`, `loopPage`, `project`, `other`, `unknownFutureValue`.|
 |url|String|URL of the user experience represented by the associated **plannerPlanContext**. |
 |state|plannerContextState| Indicates the state of the associated **plannerPlanContext**. |
 

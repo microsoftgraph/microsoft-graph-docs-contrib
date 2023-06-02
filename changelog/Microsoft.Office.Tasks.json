@@ -1721,6 +1721,42 @@
       "CreatedDateTime": "2022-12-11T17:34:22.542461Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "20361528-0b8b-4e0a-ba3a-a3356271c75f",
+          "ApiChange": "Member",
+          "ChangedApiName": "loopPage",
+          "ChangeType": "Addition",
+          "Description": "Added the `loopPage` member to the **plannerPlanContextType** enumeration.",
+          "Target": "plannerPlanContextType"
+        }
+      ],
+      "Id": "20361528-0b8b-4e0a-ba3a-a3356271c75f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-22T00:20:05.2003932Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "00e2bcb5-13bf-4da2-8005-50925ca028e2",
+          "ApiChange": "Member",
+          "ChangedApiName": "project",
+          "ChangeType": "Addition",
+          "Description": "Added the `project` member to the **plannerPlanContextType** enumeration.",
+          "Target": "plannerPlanContextType"
+        }
+      ],
+      "Id": "00e2bcb5-13bf-4da2-8005-50925ca028e2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-31T08:00:05.7615321Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     }
   ]
 }
