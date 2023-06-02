@@ -35,7 +35,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |region|String|The geographic location for the search. Required for searches that use application permissions. For details, see [Get the region value](/graph/search-concept-searchall). |
 |resultTemplateOptions|[resultTemplateOption](resulttemplateoption.md) collection|Provides the search result template options to render search results from connectors.|
 |sharePointOneDriveOptions|[sharePointOneDriveOptions](sharepointonedriveoptions.md)|Indicates the kind of contents to be searched when a search is performed using application permissions. Optional.|
-|size|Int32|The size of the page to be retrieved.The maximum value is 1000. Optional.|
+|size|Int32|The size of the page to be retrieved. The maximum value is 500. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
 
 ## JSON representation
