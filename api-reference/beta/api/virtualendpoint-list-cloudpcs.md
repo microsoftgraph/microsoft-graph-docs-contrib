@@ -134,7 +134,7 @@ Content-Type: application/json
       "servicePlanName": "lite",
       "servicePlanType": "enterprise",
       "status": "provisioned",
-      "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+      "userPrincipalName": "dujanjic@fabrikam.onmicrosoft.com",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
       "statusDetails": null,
       "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
