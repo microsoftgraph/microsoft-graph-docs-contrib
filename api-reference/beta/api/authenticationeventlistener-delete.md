@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/identity/authenticationEventListeners/c7
 
 ---
 
-
 ### Response
 The following is an example of the response
 <!-- {

@@ -123,6 +123,15 @@ Content-Type: application/json
             ]
         }
     },
+    "reportSuspiciousActivitySettings": {
+        "@odata.type": "#microsoft.graph.reportSuspiciousActivitySettings",
+        "state": "enabled",
+        "includeTarget": {
+            "targetType": "group",
+            "id": "all_users",
+        },
+        "voiceReportingCode": 0,
+    },
     "authenticationMethodConfigurations": [
         {
             "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
@@ -209,5 +218,6 @@ Content-Type: application/json
             "excludeTargets": []
         }
     ]
+    
 }
 ```

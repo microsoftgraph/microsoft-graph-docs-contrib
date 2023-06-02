@@ -23,6 +23,9 @@ Inherits from [subjectSet](../resources/subjectset.md).
 |:---|:---|:---|
 |rule|String|The rule for the subject set. Lifecycle Workflows supports a rich set of [user properties](user.md#properties) for configuring the rules using `$filter` query expressions. For more information, see [supported user and query parameters](#supported-user-properties-and-query-parameters). |
 
+>[!NOTE]
+> The rule evaluation is case-sensitive.
+
 ### Supported user properties and query parameters
 
 Lifecycle Workflows supports the following user properties for configuring the rules that are in the scope of an execution condition. You can use the `$filter` OData query parameter with either the `eq`, `ne`, `in`, or `startsWith` operators. You can also combine the filter expressions using one of the following conjunction and disjunction operators:
