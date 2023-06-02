@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.
+Read the properties and relationships of a [authorityTemplate](../resources/security-authoritytemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/security/labels/authorities/{authorityTempl
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.
+Delete a [authorityTemplate](../resources/security-authoritytemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,8 +61,8 @@ DELETE https://graph.microsoft.com/beta/security/labels/authorities/{authorityTe
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+>
 <!-- {
   "blockType": "response",
   "truncated": true

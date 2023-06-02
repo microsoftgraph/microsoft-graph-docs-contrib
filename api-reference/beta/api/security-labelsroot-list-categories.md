@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) objects and their properties.
+Get a list of the [categoryTemplate](../resources/security-categorytemplate.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [categoryTemplate](../resources/security-categorytemplate.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) objects in the response body.
 
 ## Examples
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/security/labels/categories
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

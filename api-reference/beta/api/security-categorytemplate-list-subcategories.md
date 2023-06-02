@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) resources from the subCategories navigation property.
+Get a list of subcategories [subCategoryTemplate](../resources/security-subcategorytemplate.md) associated with a category template.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [subCategoryTemplate](../resources/security-subcategorytemplate.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) objects in the response body.
 
 ## Examples
 
