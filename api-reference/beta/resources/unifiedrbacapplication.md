@@ -24,6 +24,7 @@ Represents a role management container for unified role definitions and role ass
 | [List transitiveRoleAssignments](../api/rbacapplication-list-transitiveroleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) collection | Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for a specific principal. This API requires the **principalId** in a request. |
 | [Create unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider. |
 | [List roleDefinitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for an RBAC provider. |
+| [List customAppScopes](../api/unifiedrbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider. |
 
 ## Properties
 
@@ -33,11 +34,11 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|customAppScopes|[customAppScope](../resources/customappscope.md) collection| Workload-specific scope object that represents the resources for which the principal has been granted access. |
 |resourceNamespaces|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection|Resource that represents a collection of related actions.|
 |roleAssignments|[unifiedRoleAssignment](../resources/unifiedroleassignment.md) collection| Resource to grant access to users or groups. |
 |roleDefinitions|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection| The roles allowed by RBAC providers and the permissions assigned to the roles. |
 |transitiveRoleAssignments|[unifiedRoleAssignment](../resources/unifiedroleassignment.md) collection| Resource to grant access to users or groups that are transitive. |
-
 
 ## JSON representation
 
