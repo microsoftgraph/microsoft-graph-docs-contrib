@@ -132,6 +132,11 @@ Content-type: application/json
 
 The following example shows the response for a standard channel with channel moderation off.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
 ```http
 HTTP/1.1 200 OK
 
@@ -159,6 +164,11 @@ The following example shows the response for a standard channel with channel mod
 
 >**Note:** The response object shown here might be shortened for readability.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -185,6 +195,11 @@ Content-type: application/json
 
 The following example shows the response for a private channel.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -208,6 +223,12 @@ Content-type: application/json
 
 The following example shows a request to get the channelSummary property.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_channel",
+  "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2"]
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2?$select=summary
 ```
@@ -218,7 +239,11 @@ Here is an example of the response with the channelSummary property.
 
 >**Note:** The response object shown here might be shortened for readability.
 
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channelSummary"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
