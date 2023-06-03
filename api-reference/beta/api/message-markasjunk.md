@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/me/messages/AAMkADhAAATs28OAAA=/markAsJunk
 Content-type: application/json
 
 {
-  "moveToJunk": "true"
+  "moveToJunk": true
 }
 ```
 
@@ -167,5 +167,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
