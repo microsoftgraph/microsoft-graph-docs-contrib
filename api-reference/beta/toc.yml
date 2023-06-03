@@ -14408,42 +14408,46 @@ items:
           href: api/message-update.md
         - name: Delete message
           href: api/message-delete.md
-        - name: Get message delta
-          href: api/message-delta.md
-        - name: Send draft message
-          href: api/message-send.md
+        - name: Add attachment
+          href: api/message-post-attachments.md
         - name: Copy message
           href: api/message-copy.md
-        - name: Move message
-          href: api/message-move.md
-        - name: Create draft to reply
-          href: api/message-createreply.md
-        - name: Reply to a message
-          href: api/message-reply.md
-        - name: Create draft to reply-all
-          href: api/message-createreplyall.md
-        - name: Reply-all to a message
-          href: api/message-replyall.md
         - name: Create draft to forward message
           href: api/message-createforward.md
+        - name: Create draft to reply
+          href: api/message-createreply.md
+        - name: Create draft to reply-all
+          href: api/message-createreplyall.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Create session to attach large file
+          href: api/attachment-createuploadsession.md
         - name: Forward message
-          href: api/message-forward.md
+          href: api/message-forward.md  
+        - name: Get mail tips
+          href: api/user-getmailtips.md
+        - name: Get message delta
+          href: api/message-delta.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+        - name: List attachments
+          href: api/message-list-attachments.md
+        - name: Mark as junk
+          href: api/message-markasjunk.md
+        - name: Mark as not junk
+          href: api/message-markasnotjunk.md
+        - name: Move message
+          href: api/message-move.md  
+        - name: Reply to message
+          href: api/message-reply.md
+        - name: Reply-all to message
+          href: api/message-replyall.md
+        - name: Send draft message
+          href: api/message-send.md
         - name: Send mail
           href: api/user-sendmail.md
         - name: Unsubscribe
           href: api/message-unsubscribe.md
-        - name: Get MailTips
-          href: api/user-getmailtips.md
-        - name: List attachments
-          href: api/message-list-attachments.md
-        - name: Add attachment
-          href: api/message-post-attachments.md
-        - name: Create session to attach large file
-          href: api/attachment-createuploadsession.md
-        - name: Create open extension
-          href: api/opentypeextension-post-opentypeextension.md
-        - name: Get open extension
-          href: api/opentypeextension-get.md
       - name: Attachment
         items:
         - name: Attachment
