@@ -127,9 +127,6 @@ Content-type: application/json
 }
 
 ```
-
-#### Response
-
 The following example shows the response for a standard channel with channel moderation off.
 
 ```http
@@ -152,8 +149,6 @@ HTTP/1.1 200 OK
     }
 }
 ```
-
-#### Response
 
 The following example shows the response for a standard channel with channel moderation on.
 
@@ -180,8 +175,6 @@ Content-type: application/json
     }
 }
 ```
-
-#### Response
 
 The following example shows the response for a private channel.
 
