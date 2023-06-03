@@ -59,7 +59,7 @@ If successful, this method returns a `202 Accepted` response code and a [message
 
 ### Request
 
-The following request moves the specified message to the Junk email folder, identified by its well-known folder name `inbox` and removes the sender from the list of blocked senders.
+The following request moves the specified message from the **Junk Email** to the **Inbox** folder and removes the sender from the list of blocked senders.
 
 <!-- {
   "blockType": "request",
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/me/messages/AAMkADhAAATs28OAAA=/markAsNotJ
 Content-type: application/json
 
 {
-  "moveToInbox": "true"
+  "moveToInbox": true
 }
 ```
 
@@ -167,5 +167,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
