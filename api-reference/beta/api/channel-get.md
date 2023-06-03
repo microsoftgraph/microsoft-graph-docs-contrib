@@ -206,7 +206,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request to get the channelSummary property.
+The following example shows a request to get the **channelSummary** property.
 
 ```http
 GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2?$select=summary
@@ -214,7 +214,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 
 #### Response
 
-Here is an example of the response with the channelSummary property.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
