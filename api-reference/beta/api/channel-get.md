@@ -127,9 +127,6 @@ Content-type: application/json
 }
 
 ```
-
-#### Response
-
 The following example shows the response for a standard channel with channel moderation off.
 
 <!-- {
@@ -157,8 +154,6 @@ HTTP/1.1 200 OK
     }
 }
 ```
-
-#### Response
 
 The following example shows the response for a standard channel with channel moderation on.
 
@@ -191,8 +186,6 @@ Content-type: application/json
 }
 ```
 
-#### Response
-
 The following example shows the response for a private channel.
 
 <!-- {
@@ -221,7 +214,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request to get the channelSummary property.
+The following example shows a request to get the **channelSummary** property.
 
 <!-- {
   "blockType": "request",
@@ -235,7 +228,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 
 #### Response
 
-Here is an example of the response with the channelSummary property.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
