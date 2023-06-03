@@ -49,7 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter   | Type |Description|
 |:---------------|:--------|:----------|
-|moveToInbox|Boolean|`True` moves the **message** to the **Inbox** folder**.| 
+|moveToInbox|Boolean|`True` moves the **message** to the **Inbox** folder.| 
 
 ## Response
 
