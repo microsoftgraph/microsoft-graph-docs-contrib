@@ -71,13 +71,13 @@ The following table shows the properties that are required when you create the w
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|identityName|String|The Identity Name.|
-|identityPublisherHash|String|The Identity Publisher Hash.|
-|identityResourceIdentifier|String|The Identity Resource Identifier.|
-|isBundle|Boolean|Whether or not the app is a bundle.|
-|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
-|identityVersion|String|The identity version.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) on which this app can run. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`; default value is `none`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|identityName|String|The identity name of the uploaded app package. For example: "Contoso.DemoApp".|
+|identityPublisherHash|String|The identity publisher hash of the uploaded app package. This is the hash of the publisher from the manifest. For example: "AB82CD0XYZ".|
+|identityResourceIdentifier|String|The identity resource identifier of the uploaded app package. For example: "TestResourceId".|
+|isBundle|Boolean|When TRUE, indicates that the app is a bundle. When FALSE, indicates that the app is not a bundle. By default, property is set to FALSE.|
+|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system. Valid values for a WindowsAppX app include `v8_0`, `v8_1` and `v10_0`. If the app is a bundle, the minimum supported OS has to be at least `v8_1`.|
+|identityVersion|String|The identity version of the uploaded app package. For example: "1.0.0.0".|
 
 
 

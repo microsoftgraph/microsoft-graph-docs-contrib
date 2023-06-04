@@ -20,7 +20,7 @@ $requestBody->setShowRecommendedPages(false);
 
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->patch($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->pages()->byPageId('sitePage-id')->patch($requestBody);
 
 
 ```

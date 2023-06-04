@@ -16,7 +16,7 @@ $requestBody->setFederatedIdpMfaBehavior(new FederatedIdpMfaBehavior('acceptifmf
 
 
 
-$requestResult = $graphServiceClient->domainsById('domain-id')->federationConfigurationById('internalDomainFederation-id')->patch($requestBody);
+$result = $graphServiceClient->domains()->byDomainId('domain-id')->federationConfiguration()->byFederationConfiguration()Id('internalDomainFederation-id')->patch($requestBody);
 
 
 ```

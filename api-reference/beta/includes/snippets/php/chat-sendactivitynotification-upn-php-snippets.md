@@ -28,7 +28,7 @@ $recipient = new TeamworkNotificationRecipient();
 $recipient->set@odatatype('microsoft.graph.aadUserNotificationRecipient');
 
 $additionalData = [
-'userId' => 'jacob@contoso.com', 
+		'userId' => 'jacob@contoso.com', 
 ];
 $recipient->setAdditionalData($additionalData);
 
@@ -47,7 +47,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->chatsById('chat-id')->sendActivityNotification()->post($requestBody);
+$graphServiceClient->chats()->byChatId('chat-id')->sendActivityNotification()->post($requestBody);
 
 
 ```

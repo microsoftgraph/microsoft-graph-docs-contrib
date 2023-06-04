@@ -40,10 +40,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Get your own authentication methods.
 <!-- { "blockType": "ignored" } -->
-
-```http
+``` http
 GET /me/authentication/methods/{id}
+```
+
+Get your own or another user's authentication methods.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/methods/{id}
 ```
 
