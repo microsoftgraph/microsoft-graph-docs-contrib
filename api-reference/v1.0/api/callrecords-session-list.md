@@ -121,8 +121,13 @@ Content-type: application/json
             ],
             "startDateTime": "2020-02-25T18:52:21.2169889Z",
             "endDateTime": "2020-02-25T18:52:46.7640013Z",
+            "isTest": false,
             "caller": {
                 "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                "name": "machineName_1",
+                "cpuName": "AMD EPYC 7452 32-Core Processor",
+                "cpuCoresCount": 8,
+                "cpuProcessorSpeedInMhz": 2346,
                 "userAgent": {
                     "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                     "headerValue": "RTCC/7.0.0.0 UCWA/7.0.0.0 AndroidLync/6.25.0.27 (SM-G930U Android 8.0.0)",
@@ -140,6 +145,10 @@ Content-type: application/json
             },
             "callee": {
                 "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                "name": "machineName_2",
+                "cpuName": "Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz",
+                "cpuCoresCount": 2,
+                "cpuProcessorSpeedInMhz": 2594,
                 "userAgent": {
                     "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                     "headerValue": "UCCAPI/16.0.12527.20122 OC/16.0.12527.20194 (Skype for Business)",
@@ -243,8 +252,13 @@ Content-type: application/json
             ],
             "startDateTime": "2020-02-25T18:52:21.2169889Z",
             "endDateTime": "2020-02-25T18:52:46.7640013Z",
+            "isTest": false,
             "caller": {
                 "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                "name": "machineName_1",
+                "cpuName": "AMD EPYC 7452 32-Core Processor",
+                "cpuCoresCount": 8,
+                "cpuProcessorSpeedInMhz": 2346,
                 "userAgent": {
                     "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                     "headerValue": "RTCC/7.0.0.0 UCWA/7.0.0.0 AndroidLync/6.25.0.27 (SM-G930U Android 8.0.0)",
@@ -262,6 +276,10 @@ Content-type: application/json
             },
             "callee": {
                 "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                "name": "machineName_2",
+                "cpuName": "Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz",
+                "cpuCoresCount": 2,
+                "cpuProcessorSpeedInMhz": 2594,
                 "userAgent": {
                     "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                     "headerValue": "UCCAPI/16.0.12527.20122 OC/16.0.12527.20194 (Skype for Business)",
@@ -296,6 +314,10 @@ Content-type: application/json
                     "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
                     "caller": {
                         "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                        "name": "machineName_1",
+                        "cpuName": "AMD EPYC 7452 32-Core Processor",
+                        "cpuCoresCount": 8,
+                        "cpuProcessorSpeedInMhz": 2346,
                         "userAgent": {
                             "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                             "headerValue": "RTCC/7.0.0.0 UCWA/7.0.0.0 AndroidLync/6.25.0.27 (SM-G930U Android 8.0.0)",
@@ -312,6 +334,10 @@ Content-type: application/json
                     },
                     "callee": {
                         "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                        "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                        "name": "machineName_2",
+                        "cpuName": "Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz",
+                        "cpuCoresCount": 2,
                         "userAgent": {
                             "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                             "headerValue": "UCCAPI/16.0.12527.20122 OC/16.0.12527.20194 (Skype for Business)",
@@ -400,7 +426,10 @@ Content-type: application/json
                                     "averageBandwidthEstimate": 9965083,
                                     "wasMediaBypassed": false,
                                     "averageAudioNetworkJitter": "PT0.043S",
-                                    "maxAudioNetworkJitter": "PT0.046S"
+                                    "maxAudioNetworkJitter": "PT0.046S",
+                                    "rmsFreezeDuration": null,
+                                    "averageFreezeDuration": null,
+                                    "isAudioForwardErrorCorrectionUsed": true
                                 },
                                 {
                                     "streamId": "1785122252",
@@ -418,7 +447,10 @@ Content-type: application/json
                                     "averageBandwidthEstimate": 15644878,
                                     "wasMediaBypassed": false,
                                     "averageAudioNetworkJitter": "PT0.266S",
-                                    "maxAudioNetworkJitter": "PT0.474S"
+                                    "maxAudioNetworkJitter": "PT0.474S",
+                                    "rmsFreezeDuration": null,
+                                    "averageFreezeDuration": null,
+                                    "isAudioForwardErrorCorrectionUsed": false
                                 }
                             ]
                         }
