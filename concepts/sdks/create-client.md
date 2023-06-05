@@ -107,36 +107,13 @@ $user = $graph->createRequest("GET", "/me")
 
 # [Go](#tab/Go)
 
-```go
-import (
-    "context"
-    "fmt"
-
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
-
-cred, err := azidentity.NewDeviceCodeCredential(&azidentity.DeviceCodeCredentialOptions{
-    ClientID: "CLIENT_ID",
-    UserPrompt: func(ctx context.Context, message azidentity.DeviceCodeMessage) error {
-        fmt.Println(message.Message)
-        return nil
-    },
-})
-
-if err != nil {
-    fmt.Printf("Error creating credentials: %v\n", err)
-    return
-}
-
-client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
-```
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
 # [Python](#tab/Python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-```py
+```python
 from azure.identity.aio import EnvironmentCredential
 from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
 from msgraph import GraphRequestAdapter, GraphServiceClient
