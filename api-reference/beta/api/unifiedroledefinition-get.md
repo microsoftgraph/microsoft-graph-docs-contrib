@@ -189,7 +189,7 @@ Content-type: application/json
     "displayName": "Application Registration Reader",
     "isBuiltIn": false,
     "isEnabled": true,
-    "isPrivileged": "false",
+    "isPrivileged": false,
     "templateId": "f189965f-f560-4c59-9101-933d4c87a91a",
     "version": null,
     "rolePermissions": [
@@ -271,7 +271,7 @@ Content-type: application/json
     "displayName": "Groups Administrator",
     "isBuiltIn": true,
     "isEnabled": true,
-    "isPrivileged": "false",
+    "isPrivileged": false,
     "resourceScopes": [
         "/"
     ],
@@ -378,7 +378,7 @@ Content-type: application/json
     "displayName": "Groups Administrator",
     "isBuiltIn": true,
     "isEnabled": true,
-    "isPrivileged": "false",
+    "isPrivileged": false,
     "resourceScopes": [
         "/"
     ],
@@ -417,7 +417,7 @@ Content-type: application/json
             "displayName": "Directory Readers",
             "isBuiltIn": true,
             "isEnabled": true,
-            "isPrivileged": "false",
+            "isPrivileged": false,
             "resourceScopes": [
                 "/"
             ],
