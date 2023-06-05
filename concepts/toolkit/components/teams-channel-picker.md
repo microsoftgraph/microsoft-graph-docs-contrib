@@ -7,7 +7,7 @@ author: sebastienlevert
 
 # Microsoft Teams Channel Picker component in Microsoft Graph Toolkit
 
-A you can use the `mgt-teams-channel-picker` component to enable searches for Microsoft Teams channels associated with a user. The component can search all teams the user has joined, and each channel in those teams.
+You can use the `mgt-teams-channel-picker` component to enable searches for Microsoft Teams channels associated with a user. The component can search all teams the user has joined, and each channel in those teams.
 
 ## Example
 
