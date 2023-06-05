@@ -54,7 +54,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_authenticationcontextclassreference"
+  "name": "get_authenticationcontextclassreference",
+  "sampleKeys": ["c1"]
 }-->
 
 ```msgraph-interactive
