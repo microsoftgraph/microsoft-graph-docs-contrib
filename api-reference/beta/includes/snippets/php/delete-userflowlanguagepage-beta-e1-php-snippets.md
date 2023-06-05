@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->languagesById('userFlowLanguageConfiguration-id')->overridesPagesById('userFlowLanguagePage-id')->value()->delete();
+$graphServiceClient->identity()->b2cUserFlows()->byB2cUserFlowId('b2cIdentityUserFlow-id')->languages()->byLanguageId('userFlowLanguageConfiguration-id')->overridesPages()->byOverridesPageId('userFlowLanguagePage-id')->value()->delete();
 
 
 ```

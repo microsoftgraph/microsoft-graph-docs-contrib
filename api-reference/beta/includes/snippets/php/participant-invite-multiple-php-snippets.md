@@ -67,7 +67,7 @@ $requestBody->setClientContext('f2fa86af-3c51-4bc2-8fc0-475452d9764f');
 
 
 
-$result = $graphServiceClient->communications()->callsById('call-id')->participants()->invite()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->byCallId('call-id')->participants()->invite()->post($requestBody);
 
 
 ```

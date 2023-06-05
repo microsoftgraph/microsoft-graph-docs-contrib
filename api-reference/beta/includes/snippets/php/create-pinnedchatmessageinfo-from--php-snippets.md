@@ -18,7 +18,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->chatsById('chat-id')->pinnedMessages()->post($requestBody);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->pinnedMessages()->post($requestBody);
 
 
 ```

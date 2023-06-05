@@ -15,7 +15,7 @@ $queryParameters->select = ["id","displayName","imageDisplayName","lastModifiedD
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCsById('cloudPC-id')->get($requestConfiguration);
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCs()->byCloudPCId('cloudPC-id')->get($requestConfiguration);
 
 
 ```

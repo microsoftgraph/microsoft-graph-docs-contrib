@@ -15,7 +15,7 @@ $queryParameters->orderby = ["from/emailAddress/name desc","subject"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->messages()->get($requestConfiguration);
+$result = $graphServiceClient->me()->mailFolders()->byMailFolderId('mailFolder-id')->messages()->get($requestConfiguration);
 
 
 ```

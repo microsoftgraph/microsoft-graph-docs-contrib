@@ -74,7 +74,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_emailthreatsubmissionpolicy"
+  "name": "update_emailthreatsubmissionpolicy",
+  "sampleKeys": ["DefaultReportSubmissionPolicy"]
 }
 -->
 ``` http

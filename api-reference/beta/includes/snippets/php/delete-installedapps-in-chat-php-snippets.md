@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->chatsById('chat-id')->installedAppsById('teamsAppInstallation-id')->delete();
+$graphServiceClient->chats()->byChatId('chat-id')->installedApps()->byInstalledAppId('teamsAppInstallation-id')->delete();
 
 
 ```

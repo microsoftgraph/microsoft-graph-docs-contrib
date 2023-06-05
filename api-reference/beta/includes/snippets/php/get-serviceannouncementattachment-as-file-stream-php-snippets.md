@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->admin()->serviceAnnouncement()->messagesById('serviceUpdateMessage-id')->attachmentsById('serviceAnnouncementAttachment-id')->content()->get();
+$graphServiceClient->admin()->serviceAnnouncement()->messages()->byMessageId('serviceUpdateMessage-id')->attachments()->byAttachmentId('serviceAnnouncementAttachment-id')->content()->get();
 
 
 ```
