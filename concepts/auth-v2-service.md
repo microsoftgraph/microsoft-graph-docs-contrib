@@ -35,6 +35,10 @@ For an app to get authorization and access to Microsoft Graph using the client c
 4. Request an access token.
 5. Call Microsoft Graph using the access token.
 
+> [!TIP]
+> [![Try steps 2-5 in Postman](./images/auth-v2/runinpostman.png)](https://app.getpostman.com/run-collection/f77994d794bab767596d)<br/>
+> Try steps 2-5 in Postman. Don't forget to replace tokens and IDs!
+
 ## 1. Register the app
 
 Before the app can use the Microsoft identity platform endpoint or call Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Azure portal.
