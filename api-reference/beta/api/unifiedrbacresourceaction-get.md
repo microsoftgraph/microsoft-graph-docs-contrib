@@ -107,6 +107,7 @@ Content-Type: application/json
     "actionVerb": "GET",
     "description": "Read all properties of access reviews",
     "id": "microsoft.directory-accessReviews-allProperties-read-get",
+    "isPrivileged": "Boolean",
     "name": "microsoft.directory/accessReviews/allProperties/read",
     "resourceScopeId": null
 }
