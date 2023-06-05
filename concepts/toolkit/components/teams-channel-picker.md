@@ -92,7 +92,7 @@ The `mgt-teams-channel-picker` component defines the following CSS custom proper
 
 | Event              | When is it emitted                                       | Custom data                                                                                                                       | Cancelable | Bubbles | Works with custom template |
 | ------------------ | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | :--------: | :-----: | :------------------------: |
-| `selectionChanged` | Fired when user makes a change in selection of a channel | The currently selected item as `{ channel: `[channel](/graph/api/resources/channel)`, team: `[team](/graph/api/resources/team)`}` |     No     |   No    |            Yes             |
+| `selectionChanged` | Fires when the user makes a change in the selection of a channel | The currently selected item as `{ channel: `[channel](/graph/api/resources/channel)`, team: `[team](/graph/api/resources/team)`}` |     No     |   No    |            Yes             |
 
 For more information about handling events, see [events](../customize-components/events.md).
 
