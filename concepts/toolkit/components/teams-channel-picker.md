@@ -103,7 +103,7 @@ For more information about handling events, see [events](../customize-components
 | Data type | Data context  | Description                                                                                             |
 | --------- | ------------- | ------------------------------------------------------------------------------------------------------- |
 | loading   | null: no data | The template used to render the state of the picker while making a request to Microsoft Graph is being made. |
-| error     | null: no data | The template used if user search returns no users.                                                      |
+| error     | null: no data | The template used if a user search returns no users.                                                      |
 
 The following example shows how to use the `error` template.
 
