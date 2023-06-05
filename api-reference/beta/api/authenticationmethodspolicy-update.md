@@ -47,6 +47,7 @@ In the request body, supply a JSON representation of the [registrationEnforcemen
 |Property|Type|Description|
 |:---|:---|:---|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to prompt users to set up targeted authentication methods.|
+|reportSuspiciousActivitySettings|[reportSuspiciousActivitySettings](../resources/reportsuspiciousactivitysettings.md)|Enable users to report voice or phone app multi-factor authentication notifications as suspicious.|
 |systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|Prompt users with their most-preferred credential for multifactor authentication.|
 
 ## Response
@@ -80,6 +81,14 @@ Content-Type: application/json
             }
         ]
     }
+  },
+  "reportSuspiciousActivitySettings": {
+      "state": "enabled",
+      "includeTarget": {
+          "targetType": "group",
+          "id": "all_users"
+      },
+      "voiceReportingCode": 0
   }
 }
 ```
@@ -142,6 +151,14 @@ Content-Type: application/json
         }
       ]
     }
+  },
+    "reportSuspiciousActivitySettings": {
+      "state": "enabled",
+      "includeTarget": {
+          "targetType": "group",
+          "id": "all_users"
+      },
+      "voiceReportingCode": 0
   },
   "systemCredentialPreferences": {
     "@odata.type": "#microsoft.graph.systemCredentialPreferences",
