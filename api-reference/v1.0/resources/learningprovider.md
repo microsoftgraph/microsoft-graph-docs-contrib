@@ -31,12 +31,12 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |displayName|String|The display name that appears in Viva Learning. Required.|
 |id|String|The unique identifier for the learning provider. Required. Inherited from [entity](../resources/entity.md).|
+|isCourseActivitySyncEnabled|Boolean|Indicates whether a provider can ingest learning course activity records. The default value is `false`. Set to `true` to make learningCourseActivities available for this provider.|
 |loginWebUrl|String|Authentication URL to access the courses for the provider. Optional.|
 |longLogoWebUrlForDarkTheme|String|The long logo URL for the dark mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 |longLogoWebUrlForLightTheme|String|The long logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 |squareLogoWebUrlForDarkTheme|String|The square logo URL for the dark mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 |squareLogoWebUrlForLightTheme|String|The square logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
-|isCourseActivitySyncEnabled|Boolean|Indicates whether a provider can ingest learning course activity records. The default value is `false`. Set to `true` to make learningCourseActivities available for this provider.|
 
 ## Relationships
 
