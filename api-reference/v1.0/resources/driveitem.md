@@ -63,8 +63,8 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Preview item][item-preview]                             | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.
 | [Check in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
 | [Check out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
-| [Extract sensitivity labels](../api/driveitem-extractsensitivitylabels.md)   | `POST /drive/items/{item-id}/extractSensitivityLabels`                 |
-| [Assign sensitivity label](../api/driveitem-assignsensitivitylabel.md)       | `POST /drive/items/{item-id}/assignSensitivityLabel`                   |
+| [Extract sensitivity labels](../api/driveitem-extractsensitivitylabels.md)   | `POST /drive/items/{item-id}/extractSensitivityLabels` | Extract one or more sensitivity labels assigned to a drive item and update the metadata of a drive item with the latest details of the assigned label.
+| [Assign sensitivity label](../api/driveitem-assignsensitivitylabel.md)       | `POST /drive/items/{item-id}/assignSensitivityLabel` | Asynchronously assign a sensitivity label to a driveItem.
 
 ## Properties
 
