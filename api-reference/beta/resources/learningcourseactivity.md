@@ -47,7 +47,7 @@ Inherits from [entity](../resources/entity.md).
 |startedDateTime|DateTimeOffset|Date and time when the self-initiated course was started by the learner. Optional.|
 |status|courseStatus|The status of the course activity. Possible values are: `notStarted`, `inProgress`, `completed`. Required.|
 
->**Note**: A provider can ingest course activities when courseAcitvitySyncEnabled is set to `true`. Please use the [Update learningProvider API](../api/learningprovider-update.md) to update the value.  
+>**Note**: A provider can ingest course activities when courseAcitvitySyncEnabled is set to `true`. To update the value, use the [Update learningProvider API](../api/learningprovider-update.md) method.  
 
 ## Relationships
 
