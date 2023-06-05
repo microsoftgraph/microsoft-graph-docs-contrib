@@ -147,8 +147,6 @@ final User me = graphClient.me().buildRequest().get();
 
 # [Go](#tab/Go)
 
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
 ```go
 import (
     "context"
@@ -301,8 +299,6 @@ final User me = graphClient.me().buildRequest().get();
 
 # [Go](#tab/Go)
 
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
 ```go
 import (
     "context"
@@ -401,8 +397,6 @@ final User me = graphClient.me().buildRequest().get();
 ```
 
 # [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
 
@@ -514,8 +508,6 @@ final User me = graphClient.me().buildRequest().get();
 ```
 
 # [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 ```go
 import (
@@ -672,8 +664,6 @@ final User me = graphClient.me().buildRequest().get();
 
 # [Go](#tab/Go)
 
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
 ```go
 import (
     "context"
@@ -764,8 +754,6 @@ final User me = graphClient.me().buildRequest().get();
 ```
 
 # [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 ```go
 import (
