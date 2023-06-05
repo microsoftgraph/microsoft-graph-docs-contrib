@@ -151,7 +151,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "assignSensitivityLabel",
           "ChangeType": "Addition",
-          "Description": "Added the [assignSensitivityLabel](https://review.learn.microsoft.com/en-us/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0&tabs=http) method to the driveItem resource.",
+          "Description": "Added the [assignSensitivityLabel](https://review.learn.microsoft.com/en-us/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0&tabs=http) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-1.0) resource.",
           "Target": "driveItem"
         },
         {
@@ -159,7 +159,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "extractSensitivityLabels",
           "ChangeType": "Addition",
-          "Description": "Added the [extractSensitivityLabels](https://review.learn.microsoft.com/en-us/graph/api/driveitem-extractsensitivitylabels?view=graph-rest-1.0&tabs=http) method to the driveItem resource.",
+          "Description": "Added the [extractSensitivityLabels](https://review.learn.microsoft.com/en-us/graph/api/driveitem-extractsensitivitylabels?view=graph-rest-1.0&tabs=http) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/driveitem-get?view=graph-rest-1.0&tabs=http) resource.",
           "Target": "driveItem"
         }
       ],
