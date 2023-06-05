@@ -38,10 +38,10 @@ To get the raw contents of a file attachment (the content type is based on the o
   "blockType": "ignored"
 }
 -->
-``http
+```http
 GET /me/todo/lists/{id}/tasks/{id}/attachments/{id}/$value
 GET /users/{id}/todo/lists/{id}/tasks/{id}/attachments/{id}/$value
-``
+```
 
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
