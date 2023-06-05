@@ -18,7 +18,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->searchesById('ediscoverySearch-id')->custodianSourcesById('dataSource-id')->post($requestBody);
+$graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->searches()->bySearcheId('ediscoverySearch-id')->custodianSources()->byCustodianSourceId('dataSource-id')->post($requestBody);
 
 
 ```

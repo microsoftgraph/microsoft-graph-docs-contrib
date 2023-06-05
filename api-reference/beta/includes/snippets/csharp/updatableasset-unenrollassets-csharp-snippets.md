@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.WindowsUpdatesUnenrollAssets.UnenrollAssetsPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.MicrosoftGraphWindowsUpdatesUnenrollAssets.UnenrollAssetsPostRequestBody
 {
 	UpdateCategory = Microsoft.Graph.Beta.Models.WindowsUpdates.UpdateCategory.Feature,
 	Assets = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
@@ -18,7 +20,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets
 		},
 	},
 };
-await graphClient.Admin.Windows.Updates.UpdatableAssets.WindowsUpdatesUnenrollAssets.PostAsync(requestBody);
+await graphClient.Admin.Windows.Updates.UpdatableAssets.MicrosoftGraphWindowsUpdatesUnenrollAssets.PostAsync(requestBody);
 
 
 ```

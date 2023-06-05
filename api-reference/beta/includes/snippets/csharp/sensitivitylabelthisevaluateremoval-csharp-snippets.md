@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Users.Item.Security.InformationProtection.SensitivityLabels.SecurityEvaluateRemoval.EvaluateRemovalPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Users.Item.Security.InformationProtection.SensitivityLabels.MicrosoftGraphSecurityEvaluateRemoval.EvaluateRemovalPostRequestBody
 {
 	ContentInfo = new Microsoft.Graph.Beta.Models.Security.ContentInfo
 	{
@@ -62,7 +64,7 @@ var requestBody = new Microsoft.Graph.Beta.Users.Item.Security.InformationProtec
 		IsDowngradeJustified = true,
 	},
 };
-var result = await graphClient.Users["{user-id}"].Security.InformationProtection.SensitivityLabels.SecurityEvaluateRemoval.PostAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Users["{user-id}"].Security.InformationProtection.SensitivityLabels.MicrosoftGraphSecurityEvaluateRemoval.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("User-Agent", "ContosoLOBApp/1.0");
 });

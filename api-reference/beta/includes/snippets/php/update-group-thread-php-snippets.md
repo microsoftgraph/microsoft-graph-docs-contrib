@@ -30,7 +30,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->patch($requestBody);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->threads()->byThreadId('conversationThread-id')->patch($requestBody);
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setDisplayName('New display name');
 
 
 
-$result = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
+$result = $graphServiceClient->applications()->byApplicationId('application-id')->patch($requestBody);
 
 
 ```

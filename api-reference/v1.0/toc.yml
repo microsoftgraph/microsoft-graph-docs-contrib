@@ -81,7 +81,7 @@ items:
       href: /graph/delta-query-overview?context=graph/api/1.0
     - name: Add custom data
       displayName: directory extensions, schema extensions, open extensions, extension attributes
-      href: /graph/extensibility-overview?context=graph/api/1.0
+      href: /graph/extensibility-overview?context=graph/api/1.0&view=graph-rest-1.0&preserve-view=true
     - name: Enable metered APIs
       href: /graph/metered-api-setup?context=graph/api/1.0
       displayName: monetize, charge, cost, pricing
@@ -281,6 +281,9 @@ items:
           href: /graph/toolkit/customize-components/localization?context=graph/api/1.0
         - name: Right-to-left support
           href: /graph/toolkit/customize-components/right-to-left?context=graph/api/1.0
+  - name: Configure Connected Services
+    displayName: Configure Connected Services in Visual Studio
+    href: /graph/office-365-connected-services?context=graph/api/1.0
   - name: Resources
     items:
     - name: Best practices
@@ -4731,9 +4734,9 @@ items:
     - name: Extensions
       items:
       - name: Overview
+        displayName: Directory extensions, Schema extensions, Open extensions, On-premises extensions
         href: /graph/extensibility-overview?context=graph/api/1.0&preserve-view=true
-      - name: Directory extension
-        displayname: Groups, Users, Applications, Organization, Devices
+      - name: Directory extensions
         items:
         - name: Extension property
           href: resources/extensionproperty.md
@@ -4747,8 +4750,7 @@ items:
           href: api/extensionproperty-delete.md
         - name: Get available extension properties
           href: api/directoryobject-getavailableextensionproperties.md
-      - name: Open extension
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+      - name: Open extensions
         items:
         - name: Open type extension
           href: resources/opentypeextension.md
@@ -4761,7 +4763,6 @@ items:
         - name: Delete
           href: api/opentypeextension-delete.md
       - name: Schema extension
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
         - name: Schema extension
           href: resources/schemaextension.md
@@ -4931,6 +4932,43 @@ items:
             href: api/contract-get.md
           - name: List contracts
             href: api/contract-list.md
+        - name: Custom security attributes
+          items:
+          - name: Overview
+            href: resources/custom-security-attributes-overview.md
+          - name: Allowed values
+            href: resources/allowedvalue.md
+            items:
+            - name: List
+              href: api/customsecurityattributedefinition-list-allowedvalues.md
+            - name: Create
+              href: api/customsecurityattributedefinition-post-allowedvalues.md
+            - name: Get
+              href: api/allowedvalue-get.md
+            - name: Update
+              href: api/allowedvalue-update.md
+          - name: Attribute sets
+            href: resources/attributeset.md
+            items:
+            - name: List
+              href: api/directory-list-attributesets.md
+            - name: Create
+              href: api/directory-post-attributesets.md
+            - name: Get
+              href: api/attributeset-get.md
+            - name: Update
+              href: api/attributeset-update.md
+          - name: Custom security attribute definitions
+            href: resources/customsecurityattributedefinition.md
+            items:
+            - name: List
+              href: api/directory-list-customsecurityattributedefinitions.md
+            - name: Create
+              href: api/directory-post-customsecurityattributedefinitions.md
+            - name: Get
+              href: api/customsecurityattributedefinition-get.md
+            - name: Update
+              href: api/customsecurityattributedefinition-update.md
         - name: Deleted items
           href: resources/directory.md
           items:
@@ -5398,91 +5436,93 @@ items:
               href: api/accesspackageassignmentpolicy-delete.md
         - name: Privileged Identity Management
           displayName: Privileged Identity Management, PIM, Identity Governance
-          href: resources/privilegedidentitymanagementv3-overview.md
           items:
-          - name: Role assignment schedule requests
-            href: resources/unifiedroleassignmentschedulerequest.md
+          - name: PIM for Azure AD Roles
+            href: resources/privilegedidentitymanagementv3-overview.md
             items:
-            - name: List
-              href: api/rbacapplication-list-roleassignmentschedulerequests.md
-            - name: Create
-              href: api/rbacapplication-post-roleassignmentschedulerequests.md
-            - name: Get
-              href: api/unifiedroleassignmentschedulerequest-get.md
-            - name: Cancel
-              href: api/unifiedroleassignmentschedulerequest-cancel.md
-            - name: Filter by current user
-              href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
-          - name: Role assignment schedules
-            href: resources/unifiedroleassignmentschedule.md
-            items:
-            - name: List
-              href: api/rbacapplication-list-roleassignmentschedules.md
-            - name: Get
-              href: api/unifiedroleassignmentschedule-get.md
-            - name: Filter by current user
-              href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
-          - name: Role assignment schedule instances
-            href: resources/unifiedroleassignmentscheduleinstance.md
-            items:
-            - name: List
-              href: api/rbacapplication-list-roleassignmentscheduleinstances.md
-            - name: Get
-              href: api/unifiedroleassignmentscheduleinstance-get.md
-            - name: Filter by current user
-              href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
-          - name: Role eligibility schedule requests
-            href: resources/unifiedroleeligibilityschedulerequest.md
-            items:
-            - name: List
-              href: api/rbacapplication-list-roleeligibilityschedulerequests.md
-            - name: Create
-              href: api/rbacapplication-post-roleeligibilityschedulerequests.md
-            - name: Get
-              href: api/unifiedroleeligibilityschedulerequest-get.md
-            - name: Cancel
-              href: api/unifiedroleeligibilityschedulerequest-cancel.md
-            - name: Filter by current user
-              href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
-          - name: Role eligibility schedules
-            href: resources/unifiedroleeligibilityschedule.md
-            items:
-            - name: List
-              href: api/rbacapplication-list-roleeligibilityschedules.md
-            - name: Get
-              href: api/unifiedroleeligibilityschedule-get.md
-            - name: Filter by current user
-              href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
-          - name: Role eligibility schedule instances
-            href: resources/unifiedroleeligibilityscheduleinstance.md
-            items:
-            - name: List
-              href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
-            - name: Get
-              href: api/unifiedroleeligibilityscheduleinstance-get.md
-            - name: Filter by current user
-              href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-          - name: Role management policies
-            items:
-            - name: Policies and rules
-              href: resources/unifiedrolemanagementpolicy.md
-            - name: List
-              href: api/policyroot-list-rolemanagementpolicies.md
-            - name: Get
-              href: api/unifiedrolemanagementpolicy-get.md
-            - name: List rules
-              href: api/unifiedrolemanagementpolicy-list-rules.md
-            - name: Get rule
-              href: api/unifiedrolemanagementpolicyrule-get.md
-            - name: Update rule
-              href: api/unifiedrolemanagementpolicyrule-update.md
-          - name: Role management policy assignments
-            href: resources/unifiedrolemanagementpolicyassignment.md
-            items:
-            - name: List
-              href: api/policyroot-list-rolemanagementpolicyassignments.md
-            - name: Get
-              href: api/unifiedrolemanagementpolicyassignment-get.md
+            - name: Assignment schedule requests
+              href: resources/unifiedroleassignmentschedulerequest.md
+              items:
+              - name: List
+                href: api/rbacapplication-list-roleassignmentschedulerequests.md
+              - name: Create
+                href: api/rbacapplication-post-roleassignmentschedulerequests.md
+              - name: Get
+                href: api/unifiedroleassignmentschedulerequest-get.md
+              - name: Cancel
+                href: api/unifiedroleassignmentschedulerequest-cancel.md
+              - name: Filter by current user
+                href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+            - name: Assignment schedules
+              href: resources/unifiedroleassignmentschedule.md
+              items:
+              - name: List
+                href: api/rbacapplication-list-roleassignmentschedules.md
+              - name: Get
+                href: api/unifiedroleassignmentschedule-get.md
+              - name: Filter by current user
+                href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+            - name: Assignment schedule instances
+              href: resources/unifiedroleassignmentscheduleinstance.md
+              items:
+              - name: List
+                href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+              - name: Get
+                href: api/unifiedroleassignmentscheduleinstance-get.md
+              - name: Filter by current user
+                href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+            - name: Eligibility schedule requests
+              href: resources/unifiedroleeligibilityschedulerequest.md
+              items:
+              - name: List
+                href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+              - name: Create
+                href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+              - name: Get
+                href: api/unifiedroleeligibilityschedulerequest-get.md
+              - name: Cancel
+                href: api/unifiedroleeligibilityschedulerequest-cancel.md
+              - name: Filter by current user
+                href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+            - name: Eligibility schedules
+              href: resources/unifiedroleeligibilityschedule.md
+              items:
+              - name: List
+                href: api/rbacapplication-list-roleeligibilityschedules.md
+              - name: Get
+                href: api/unifiedroleeligibilityschedule-get.md
+              - name: Filter by current user
+                href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+            - name: Eligibility schedule instances
+              href: resources/unifiedroleeligibilityscheduleinstance.md
+              items:
+              - name: List
+                href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+              - name: Get
+                href: api/unifiedroleeligibilityscheduleinstance-get.md
+              - name: Filter by current user
+                href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+            - name: Policies
+              items:
+              - name: Policies and rules
+                href: resources/unifiedrolemanagementpolicy.md
+              - name: List
+                href: api/policyroot-list-rolemanagementpolicies.md
+              - name: Get
+                href: api/unifiedrolemanagementpolicy-get.md
+              - name: List rules
+                href: api/unifiedrolemanagementpolicy-list-rules.md
+              - name: Get rule
+                href: api/unifiedrolemanagementpolicyrule-get.md
+              - name: Update rule
+                href: api/unifiedrolemanagementpolicyrule-update.md
+            - name: Policy assignments
+              href: resources/unifiedrolemanagementpolicyassignment.md
+              items:
+              - name: List
+                href: api/policyroot-list-rolemanagementpolicyassignments.md
+              - name: Get
+                href: api/unifiedrolemanagementpolicyassignment-get.md
         - name: Terms of use
           items:
           - name: Agreement
@@ -5784,6 +5824,18 @@ items:
               href: api/crosstenantaccesspolicyconfigurationpartner-update.md
             - name: Delete
               href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
+          - name: Partner user sync settings
+            items:
+            - name: Cross-tenant access partner user sync settings
+              href: resources/crosstenantidentitysyncpolicypartner.md
+            - name: Create
+              href: api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
+            - name: Get
+              href: api/crosstenantidentitysyncpolicypartner-get.md
+            - name: Update
+              href: api/crosstenantidentitysyncpolicypartner-update.md
+            - name: Delete
+              href: api/crosstenantidentitysyncpolicypartner-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -5847,9 +5899,9 @@ items:
             - name: Get risky service principal
               href: api/riskyserviceprincipal-get.md
             - name: List history
-              href: api/riskyserviceprincipal-list-history.md 
+              href: api/riskyserviceprincipal-list-history.md
             - name: Confirm compromised
-              href: api/riskyserviceprincipal-confirmcompromised.md 
+              href: api/riskyserviceprincipal-confirmcompromised.md
             - name: Dismiss
               href: api/riskyserviceprincipal-dismiss.md
         - name: Identity provider
@@ -6181,7 +6233,7 @@ items:
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
         - name: User flows
           items:
-          - name: Self-service sign up user flows
+          - name: Self-service sign up user flows in Azure AD
             items:
             - name: Self-service sign up user flow
               href: resources/b2xidentityuserflow.md
@@ -7085,34 +7137,40 @@ items:
           items:
           - name: Alert evidence
             href: resources/security-alertevidence.md
+          - name: Amazon resource evidence
+            href: resources/security-amazonresourceevidence.md
           - name: Analyzed message evidence
-            href: resources/security-analyzedMessageEvidence.md
+            href: resources/security-analyzedmessageevidence.md
+          - name: Azure resource evidence
+            href: resources/security-azureresourceevidence.md
           - name: Cloud application evidence
-            href: resources/security-cloudApplicationEvidence.md
+            href: resources/security-cloudapplicationevidence.md
           - name: Device evidence
-            href: resources/security-deviceEvidence.md
+            href: resources/security-deviceevidence.md
           - name: File evidence
-            href: resources/security-fileEvidence.md
+            href: resources/security-fileevidence.md
+          - name: Google Cloud resource evidence
+            href: resources/security-googlecloudresourceevidence.md
           - name: IP evidence
-            href: resources/security-ipEvidence.md
+            href: resources/security-ipevidence.md
           - name: Mailbox evidence
-            href: resources/security-mailboxEvidence.md
+            href: resources/security-mailboxevidence.md
           - name: Mail cluster evidence
-            href: resources/security-mailClusterEvidence.md
+            href: resources/security-mailclusterevidence.md
           - name: OAuth application evidence
-            href: resources/security-oauthApplicationEvidence.md
+            href: resources/security-oauthapplicationevidence.md
           - name: Process evidence
-            href: resources/security-processEvidence.md
+            href: resources/security-processevidence.md
           - name: Registry key evidence
-            href: resources/security-registryKeyEvidence.md
+            href: resources/security-registrykeyevidence.md
           - name: Registry value evidence
-            href: resources/security-registryValueEvidence.md
+            href: resources/security-registryvalueevidence.md
           - name: Security group evidence
-            href: resources/security-securityGroupEvidence.md
+            href: resources/security-securitygroupevidence.md
           - name: URL evidence
-            href: resources/security-urlEvidence.md
+            href: resources/security-urlevidence.md
           - name: User evidence
-            href: resources/security-userEvidence.md
+            href: resources/security-userevidence.md
         - name: Incident
           items:
           - name: Incident
@@ -7481,6 +7539,8 @@ items:
           href: api/site-search.md
         - name: List operations
           href: api/site-list-operations.md
+        - name: List all root sites
+          href: api/site-getallsites.md
         - name: Permission
           href: resources/permission.md
           items:
@@ -7967,6 +8027,10 @@ items:
               href: api/onlinemeeting-delete.md
             - name: Create or get
               href: api/onlinemeeting-createorget.md
+          - name: Virtual appointment
+            items:
+            - name: Get virtual appointment join link
+              href: api/virtualappointment-getvirtualappointmentjoinweburl.md
         - name: Presence
           href: resources/presence.md
           items:
@@ -8382,6 +8446,8 @@ items:
         - name: Time off request
           href: resources/timeoffrequest.md
           items:
+          - name: List
+            href: api/timeoffrequest-list.md
           - name: Get
             href: api/timeoffrequest-get.md
           - name: Delete
