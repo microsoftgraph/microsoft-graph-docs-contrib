@@ -16,7 +16,7 @@ $requestBody->setGroupId('groupId-value');
 
 
 
-$result = $graphServiceClient->me()->onenote()->pagesById('onenotePage-id')->copyToSection()->post($requestBody);
+$result = $graphServiceClient->me()->onenote()->pages()->byPageId('onenotePage-id')->copyToSection()->post($requestBody);
 
 
 ```

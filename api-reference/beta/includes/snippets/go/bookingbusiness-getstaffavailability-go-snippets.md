@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -34,7 +34,7 @@ timeZone := "Pacific Standard Time"
 endDateTime.SetTimeZone(&timeZone) 
 requestBody.SetEndDateTime(endDateTime)
 
-result, err := graphClient.BookingBusinessesById("bookingBusiness-id").GetStaffAvailability().Post(context.Background(), requestBody, nil)
+result, err := graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").GetStaffAvailability().Post(context.Background(), requestBody, nil)
 
 
 ```

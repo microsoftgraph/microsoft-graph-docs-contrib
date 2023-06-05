@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -66,7 +66,7 @@ requestBody.SetIsPremium(&isPremium)
 isSearchable := true
 requestBody.SetIsSearchable(&isSearchable) 
 
-result, err := graphClient.EmployeeExperience().LearningProvidersById("learningProvider-id").LearningContentsById("learningContent-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").LearningContents().ByLearningContentId("learningContent-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

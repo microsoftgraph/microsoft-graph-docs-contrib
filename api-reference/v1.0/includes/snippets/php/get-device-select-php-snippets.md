@@ -15,7 +15,7 @@ $queryParameters->select = ["id","extensionAttributes"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->devicesById('device-id')->get($requestConfiguration);
+$result = $graphServiceClient->devices()->byDeviceId('device-id')->get($requestConfiguration);
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->teamsById('team-id')->membersById('conversationMember-id')->get();
+$result = $graphServiceClient->teams()->byTeamId('team-id')->members()->byMemberId('conversationMember-id')->get();
 
 
 ```

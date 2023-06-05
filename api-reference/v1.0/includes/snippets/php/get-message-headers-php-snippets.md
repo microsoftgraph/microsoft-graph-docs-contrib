@@ -15,7 +15,7 @@ $queryParameters->select = ["internetMessageHeaders"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->get($requestConfiguration);
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->get($requestConfiguration);
 
 
 ```

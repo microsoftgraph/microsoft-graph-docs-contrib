@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->calendarGroupsById('calendarGroup-id')->delete();
+$graphServiceClient->me()->calendarGroups()->byCalendarGroupId('calendarGroup-id')->delete();
 
 
 ```

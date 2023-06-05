@@ -16,12 +16,12 @@ Contains a key credential associated with an application or a service principal.
 To add a keyCredential using Microsoft Graph, see [Add a certificate to an app using Microsoft Graph](/graph/applications-how-to-add-certificate).
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binary| A 40-character binary type that can be used to identify the credential. Optional. When not provided in the payload, defaults to the thumbprint of the certificate. |
 | displayName | String | Friendly name for the key. Optional. |
 |endDateTime|DateTimeOffset|The date and time at which the credential expires. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|key|Binary| The certificate's raw data in byte array converted to Base64 string. Returned only on `$select` for a single object, that is, `GET applications/{applicationId}?$select=keyCredentials` or `GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials`; otherwise, it is always `null`. |
+|key|Binary| The certificate's raw data in byte array converted to Base64 string. Returned only on `$select` for a single object, that is, `GET applications/{applicationId}?$select=keyCredentials` or `GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials`; otherwise, it is always `null`. <br/><br> From a *.cer* certificate, you can read the key using the **Convert.ToBase64String()** method. For more information, see [Get the certificate key](/graph/applications-how-to-add-certificate).|
 |keyId|Guid|The unique identifier (GUID) for the key.|
 |startDateTime|DateTimeOffset|The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |type|String|The type of key credential; for example, `Symmetric`, `AsymmetricX509Cert`.|

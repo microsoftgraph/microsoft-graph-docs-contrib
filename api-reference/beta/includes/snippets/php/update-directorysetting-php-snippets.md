@@ -22,7 +22,7 @@ $requestBody->setValues($valuesArray);
 
 
 
-$result = $graphServiceClient->settingsById('directorySetting-id')->patch($requestBody);
+$result = $graphServiceClient->settings()->bySettingId('directorySetting-id')->patch($requestBody);
 
 
 ```

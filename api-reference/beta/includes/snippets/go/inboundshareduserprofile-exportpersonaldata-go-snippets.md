@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewExportPersonalDataPostRequestBody()
 storageLocation := "MyStorageAccount"
 requestBody.SetStorageLocation(&storageLocation) 
 
-graphClient.Directory().InboundSharedUserProfilesById("inboundSharedUserProfile-userId").ExportPersonalData().Post(context.Background(), requestBody, nil)
+graphClient.Directory().InboundSharedUserProfiles().ByInboundSharedUserProfileId("inboundSharedUserProfile-userId").ExportPersonalData().Post(context.Background(), requestBody, nil)
 
 
 ```

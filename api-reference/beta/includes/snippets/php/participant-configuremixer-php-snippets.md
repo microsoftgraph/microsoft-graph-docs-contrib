@@ -51,7 +51,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->communications()->callsById('call-id')->participantsById('participant-id')->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->participants()->byParticipantId('participant-id')->post($requestBody);
 
 
 ```

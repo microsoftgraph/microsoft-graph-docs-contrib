@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewSourceSystemDefinition()
 vendor := "LMS Vendor"
 requestBody.SetVendor(&vendor) 
 
-result, err := graphClient.External().IndustryData().SourceSystemsById("sourceSystemDefinition-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.External().IndustryData().SourceSystems().BySourceSystemId("sourceSystemDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -16,7 +16,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->me()->outlook()->tasksById('outlookTask-id')->complete()->post($requestConfiguration);
+$result = $graphServiceClient->me()->outlook()->tasks()->byTaskId('outlookTask-id')->complete()->post($requestConfiguration);
 
 
 ```
