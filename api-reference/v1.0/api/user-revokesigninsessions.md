@@ -71,7 +71,8 @@ POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 ### Response
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "string"
 } -->
 ```http
 HTTP/1.1 200 OK
