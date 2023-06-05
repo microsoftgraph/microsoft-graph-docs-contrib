@@ -35,7 +35,7 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-read.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="ReadRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -68,7 +68,7 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-select.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="SelectRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -102,7 +102,7 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-list.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="ListRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -136,7 +136,7 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-index.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="ItemByIdRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -168,7 +168,7 @@ You can use the `$expand` filter to request a related entity, or collection of e
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-expand.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="ExpandRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -200,7 +200,7 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-delete.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="DeleteRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -232,7 +232,7 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-create.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="CreateRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -264,7 +264,7 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-update.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="UpdateRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -296,7 +296,7 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-headers.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="HeadersRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -328,7 +328,7 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-queryparams.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="QueryParametersRequestSnippet":::
 
 # [Python](#tab/Python)
 
