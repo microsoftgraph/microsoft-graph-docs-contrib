@@ -120,28 +120,7 @@ final User me = graphClient.me().buildRequest().get();
 
 # [Go](#tab/Go)
 
-```go
-import (
-    "context"
-
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
-
-cred, err := azidentity.NewAuthorizationCodeCredential(
-    "TENANT_ID",
-    "CLIENT_ID",
-    "AUTH_CODE",
-    "REDIRECT_URL",
-    &azidentity.AuthorizationCodeCredentialOptions {
-        ClientSecret: "CLIENT_SECRET",
-    },
-)
-
-client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
-
-result, err := client.Me().Get(nil)
-```
+The [Azure Identity Client Module for Go](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) does not support the authorization code flow.
 
 # [Python](#tab/Python)
 
@@ -169,13 +148,13 @@ The client credential flow enables service applications to run without user inte
 
 # [C#](#tab/CS)
 
-### Using a client secret
-
-:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="ClientSecretSnippet":::
-
 ### Using a client certificate
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="ClientCertificateSnippet":::
+
+### Using a client secret
+
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="ClientSecretSnippet":::
 
 # [Javascript](#tab/Javascript)
 
@@ -224,25 +203,13 @@ final User me = graphClient.me().buildRequest().get();
 
 # [Go](#tab/Go)
 
-```go
-import (
-    "context"
+### Using a client certificate
 
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="ClientCertificateSnippet":::
 
-cred, err := azidentity.NewClientSecretCredential(
-    "TENANT_ID",
-    "CLIENT_ID",
-    "CLIENT_SECRET",
-    nil,
-)
+### Using a client secret
 
-client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
-
-result, err := client.Me().Get(nil)
-```
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="ClientSecretSnippet":::
 
 # [Python](#tab/Python)
 
@@ -298,7 +265,7 @@ final User me = graphClient.me().buildRequest().get();
 
 # [Go](#tab/Go)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="OnBehalfOfSnippet":::
 
 # [Python](#tab/Python)
 
@@ -380,26 +347,7 @@ final User me = graphClient.me().buildRequest().get();
 
 # [Go](#tab/Go)
 
-```go
-import (
-    "context"
-
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
-
-cred, err := azidentity.NewDeviceCodeCredential(&azidentity.DeviceCodeCredentialOptions{
-    ClientID: "CLIENT_ID",
-    UserPrompt: func(ctx context.Context, message azidentity.DeviceCodeMessage) error {
-        fmt.Println(message.Message)
-        return nil
-    },
-})
-
-client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
-
-result, err := client.Me().Get(nil)
-```
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
 # [Python](#tab/Python)
 
@@ -481,24 +429,7 @@ final User me = graphClient.me().buildRequest().get();
 
 # [Go](#tab/Go)
 
-```go
-import (
-    "context"
-
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
-
-cred, err := azidentity.NewInteractiveBrowserCredential(&azidentity.InteractiveBrowserCredentialOptions {
-    TenantID: "TENANT_ID",
-    ClientID: "CLIENT_ID",
-    RedirectURL: "REDIRECT_URL",
-})
-
-client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
-
-result, err := client.Me().Get(nil)
-```
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="InteractiveSnippet":::
 
 # [Python](#tab/Python)
 
@@ -548,26 +479,7 @@ final User me = graphClient.me().buildRequest().get();
 
 # [Go](#tab/Go)
 
-```go
-import (
-    "context"
-
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
-
-cred, err := azidentity.NewUsernamePasswordCredential(
-    "TENANT_ID",
-    "CLIENT_ID",
-    "USER_NAME",
-    "PASSWORD",
-    nil,
-)
-
-client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
-
-result, err := client.Me().Get(nil)
-```
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="UserNamePasswordSnippet":::
 
 # [Python](#tab/Python)
 
