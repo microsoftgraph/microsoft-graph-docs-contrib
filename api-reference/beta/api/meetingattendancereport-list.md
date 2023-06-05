@@ -50,6 +50,8 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 >
 >- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
+>- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
+>- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
 
 ## Optional query parameters
 
