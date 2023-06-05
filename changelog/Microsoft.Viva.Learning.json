@@ -213,7 +213,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isCourseActivitySyncEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isCourseActivitySyncEnabled** property to [learningProvider](https://learn.microsoft.com/en-us/graph/api/resources/learningProvider?view=graph-rest-1.0) resource.",
+          "Description": "Added the **isCourseActivitySyncEnabled** property to the [learningProvider](https://learn.microsoft.com/en-us/graph/api/resources/learningProvider?view=graph-rest-1.0) resource.",
           "Target": "learningProvider"
         }
       ],
