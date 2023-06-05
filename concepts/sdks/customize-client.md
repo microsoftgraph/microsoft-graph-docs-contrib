@@ -115,36 +115,9 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ## [Go](#tab/Go)
 
-```go
-import (
-    a "github.com/microsoftgraph/msgraph-sdk-go-core/authentication"
-    khttp "github.com/microsoft/kiota-http-go"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-    core "github.com/microsoftgraph/msgraph-sdk-go-core"
-)
+:::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ImportSnippet":::
 
-// Auth provider
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
-
-// Get default middleware from SDK
-defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefaultClientOptions())
-
-// Get instance of custom middleware
-// Implement a custom middleware by implementing the Middleware interface
-// https://github.com/microsoft/kiota-http-go/blob/main/middleware.go
-allMiddleware := append(defaultMiddleware, mycustom.NewCustomHandler())
-
-// Create an HTTP client with the middleware
-httpClient := khttp.GetDefaultClient(allMiddleware...)
-
-// Create the adapter
-// Passing nil values causes the adapter to use default implementations
-adapter, err :=
-    msgraphsdk.NewGraphRequestAdapterWithParseNodeFactoryAndSerializationWriterFactoryAndHttpClient(
-        auth, nil, nil, httpClient)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
-```
+:::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ChaosHandlerSnippet":::
 
 ## [Python](#tab/Python)
 
@@ -285,34 +258,9 @@ final GraphServiceClient graphServiceClient =
 
 ## [Go](#tab/Go)
 
-```go
-import (
-   a "github.com/microsoft/kiota-authentication-azure-go"
-   khttp "github.com/microsoft/kiota-http-go"
-   msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-   core "github.com/microsoftgraph/msgraph-sdk-go-core"
-)
+:::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ImportSnippet":::
 
-// Auth provider
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
-
-// Get default middleware from SDK
-defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefaultClientOptions())
-
-// Create an HTTP client with the middleware
-httpClient := core.GetClientWithAuthenticatedProxySettings("http://proxy-url", "username", "password", defaultMiddleware...)
-
-// A client that does not require user and password auth can use
-httpClient := core.GetClientWithProxySettings("http://proxy-url", defaultMiddleware...)
-
-// Create the adapter
-// Passing nil values causes the adapter to use default implementations
-adapter, err :=
-    msgraphsdk.NewGraphRequestAdapterWithParseNodeFactoryAndSerializationWriterFactoryAndHttpClient(
-        auth, nil, nil, httpClient)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
-```
+:::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ProxySnippet":::
 
 ## [Python](#tab/Python)
 
