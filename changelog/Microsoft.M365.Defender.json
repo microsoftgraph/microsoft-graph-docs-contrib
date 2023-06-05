@@ -1009,6 +1009,42 @@
 			"CreatedDateTime": "2023-05-31T16:27:08.6941406Z",
 			"WorkloadArea": "Security",
 			"SubArea": ""
+		  },
+		  {
+			  "ChangeList": [
+				  {
+					  "Id": "e6935041-9151-4b8c-8fd4-61f76865b40c",
+					  "ApiChange": "Resource",
+					  "ChangedApiName": "dynamicColumnValue",
+					  "ChangeType": "Addition",
+					  "Description": "Added the [dynamicColumnValue](https://learn.microsoft.com/en-us/graph/api/resources/security-dynamicColumnValue?view=graph-rest-beta) resource type.",
+					  "Target": "dynamicColumnValue"
+				  }
+			  ],
+			  "Id": "e6935041-9151-4b8c-8fd4-61f76865b40c",
+			  "Cloud": "Prod",
+			  "Version": "beta",
+			  "CreatedDateTime": "2023-06-05T10:21:26.3362371Z",
+			  "WorkloadArea": "Microsoft.M365.Defender",
+			  "SubArea": ""
+		  },
+		  {
+			  "ChangeList": [
+				  {
+					  "Id": "2fc51253-de45-43ef-95f4-ab9d842371be",
+					  "ApiChange": "Resource",
+					  "ChangedApiName": "dynamicColumnValue",
+					  "ChangeType": "Addition",
+					  "Description": "Added the [dynamicColumnValue](https://learn.microsoft.com/en-us/graph/api/resources/security-dynamicColumnValue?view=graph-rest-1.0) resource type.",
+					  "Target": "dynamicColumnValue"
+				  }
+			  ],
+			  "Id": "2fc51253-de45-43ef-95f4-ab9d842371be",
+			  "Cloud": "Prod",
+			  "Version": "v1.0",
+			  "CreatedDateTime": "2023-06-05T10:21:26.3368654Z",
+			  "WorkloadArea": "Microsoft.M365.Defender",
+			  "SubArea": ""
 		  }
 	]
 }
