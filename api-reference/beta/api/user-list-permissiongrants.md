@@ -1,19 +1,19 @@
 ---
-title: "List permissionGrants of a chat"
-description: "Retrieve permissionGrants of a chat."
-author: "akjo"
+title: "List permissionGrants of a user"
+description: "Retrieve permissionGrants of a user."
+author: "edle"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List permissionGrants of a chat
+# List permissionGrants of a user
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [chat](../resources/chat.md). This list specifies the Azure AD apps that have access to the **chat**, along with the corresponding kind of resource-specific access that each app has.
+List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [user](../resources/user.md). This list specifies the Azure AD apps that have access to the **user**, along with the corresponding kind of resource-specific access that each app has.
 
 ## Permissions
 
@@ -21,16 +21,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)                                                                                                                                                        |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | ResourceSpecificPermissionGrant.ReadForChat, TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat                                    |
+| Delegated (work or school account)     | ResourceSpecificPermissionGrant.ReadForUser, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser                                    |
 | Delegated (personal Microsoft account) | Not supported.                                                                                                                                                                                     |
-| Application                            | TeamsAppInstallation.Read.Chat*, Chat.Manage.Chat*, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
-
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+| Application                            | ResourceSpecificPermissionGrant.ReadForUser.All, TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /chats/{chat-id}/permissionGrants
+GET /users/{user-id}/permissionGrants
 ```
 
 ## Optional query parameters
@@ -61,37 +59,12 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chat_list_permission_grants",
-  "sampleKeys": ["19:089ac694c48647c68035aae675cf78ab@thread.v2"]
+  "name": "user_list_permission_grants",
+  "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19:089ac694c48647c68035aae675cf78ab@thread.v2/permissionGrants
+GET https://graph.microsoft.com/beta/users/2f39ffba-51ca-4d2d-a66f-a020a83ce208/permissionGrants
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/chat-list-permission-grants-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/chat-list-permission-grants-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/chat-list-permission-grants-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/chat-list-permission-grants-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/chat-list-permission-grants-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/chat-list-permission-grants-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response
@@ -117,31 +90,7 @@ Content-type: application/json
          "resourceAppId":"00000003-0000-0000-c000-000000000000",
          "clientId":"771b9da9-2260-41eb-a587-4d936e4aa08c",
          "permissionType":"Application",
-         "permission":"ChatSettings.ReadWrite.Chat"
-      },
-      {
-         "id":"Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNUZWFtc0FwcEluc3RhbGxhdGlvbi5SZWFkLkNoYXQjI0FwcGxpY2F0aW9u",
-         "clientAppId":"fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
-         "resourceAppId":"00000003-0000-0000-c000-000000000000",
-         "clientId":"771b9da9-2260-41eb-a587-4d936e4aa08c",
-         "permissionType":"Application",
-         "permission":"TeamsAppInstallation.Read.Chat"
-      },
-      {
-         "id":"Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNUZWFtc1RhYi5EZWxldGUuQ2hhdCMjQXBwbGljYXRpb24=",
-         "clientAppId":"fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
-         "resourceAppId":"00000003-0000-0000-c000-000000000000",
-         "clientId":"771b9da9-2260-41eb-a587-4d936e4aa08c",
-         "permissionType":"Application",
-         "permission":"TeamsTab.Delete.Chat"
-      },
-      {
-         "id":"ZmNmMGMzNjQtMWY1ZS00MDVjLThiN2QtNjI2YmRmOWQyZjI1IyNDaGF0U2V0dGluZ3MuUmVhZC5DaGF0IyNBcHBsaWNhdGlvbg==",
-         "clientAppId":"69024002-35ae-4574-a219-f261183580b4",
-         "resourceAppId":"00000003-0000-0000-c000-000000000000",
-         "clientId":"74c92190-dc0e-485a-81c6-fdffd4aadfd8",
-         "permissionType":"Application",
-         "permission":"ChatSettings.Read.Chat"
+         "permission":"TeamsActivity.Send.User"
       }
    ]
 }
@@ -150,3 +99,4 @@ Content-type: application/json
 ## See also
 - [List permission grants of a team](team-list-permissionGrants.md)
 - [List permission grants of a group](group-list-permissionGrants.md)
+- [List permission grants of a chat](chat-list-permissionGrants.md)
