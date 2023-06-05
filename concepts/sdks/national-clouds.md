@@ -119,52 +119,8 @@ graphClient.setServiceRoot("https://graph.microsoft.us/v1.0");
 
 ### [Go](#tab/go)
 
-```go
-import (
-    "context"
+:::code language="go" source="./snippets/go/src/snippets/national_clouds.go" id="ImportSnippet":::
 
-    "github.com/Azure/azure-sdk-for-go/sdk/azcore/cloud"
-    "github.com/Azure/azure-sdk-for-go/sdk/azcore/policy"
-    "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    auth "github.com/microsoftgraph/msgraph-sdk-go-core/authentication"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
-
-// Create the InteractiveBrowserCredential using details
-// from app registered in the Azure AD for US Government portal
-credential, err := azidentity.NewInteractiveBrowserCredential(&azidentity.InteractiveBrowserCredentialOptions{
-    ClientID: "YOUR_CLIENT_ID",
-    TenantID: "YOUR_TENANT_ID",
-    ClientOptions: policy.ClientOptions{
-        // https://login.microsoftonline.us
-        Cloud: cloud.AzureGovernment,
-    },
-    RedirectURL: "YOUR_REDIRECT_URL",
-})
-if err != nil {
-    return err
-}
-
-// Create the authentication provider
-authProvider, err := auth.NewAzureIdentityAuthenticationProviderWithScopes(credential,
-    []string{"https://graph.microsoft.us/.default"})
-if err != nil {
-    return err
-}
-
-// Create a request adapter using the auth provider
-adapter, err := msgraphsdk.NewGraphRequestAdapter(authProvider)
-if err != nil {
-    return err
-}
-
-// Set the service root to the
-// Microsoft Graph for US Government L4 endpoint
-// NOTE: The API version must be included in the URL
-adapter.SetBaseUrl("https://graph.microsoft.us/v1.0")
-
-// Create a Graph client using request adapter
-graphClient := msgraphsdk.NewGraphServiceClient(adapter)
-```
+:::code language="go" source="./snippets/go/src/snippets/national_clouds.go" id="NationalCloudSnippet":::
 
 ---
