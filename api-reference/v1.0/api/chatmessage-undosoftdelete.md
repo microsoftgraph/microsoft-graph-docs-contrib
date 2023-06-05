@@ -77,7 +77,8 @@ If successful, this action returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chatmessagethis-undosoftdelete1"
+  "name": "chatmessagethis-undosoftdelete1",
+  "sampleKeys": ["8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ap", "19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2", "1649864053377"]
 }
 -->
 ``` http
@@ -127,7 +128,8 @@ HTTP/1.1 204 No Content
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chatmessagethis2undosoftdelete2"
+  "name": "chatmessagethis2undosoftdelete2",
+  "sampleKeys": ["172b0cce-e65d-44ce-9a49-91d9f2e8593a", "19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2", "1649864053377"]
 }
 -->
 ``` http
@@ -177,7 +179,8 @@ HTTP/1.1 204 No Content
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chatmessagethis-undosoftdelete3"
+  "name": "chatmessagethis-undosoftdelete3",
+  "sampleKeys": ["172b0cce-e65d-44ce-9a49-91d9f2e8593a", "19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2", "1649864053377"]
 }
 -->
 ``` http

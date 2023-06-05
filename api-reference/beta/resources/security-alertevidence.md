@@ -1,7 +1,6 @@
 ---
 title: "alertEvidence resource type"
 description: "Each alert contains a list of related evidence."
-ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -16,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Evidence related to an [alert](security-alert.md).
 
-This is the base type of [analyzedMessageEvidence](security-analyzedmessageevidence.md), [cloudApplicationEvidence](security-cloudapplicationevidence.md), [deviceEvidence](security-deviceevidence.md), [fileEvidence](security-fileevidence.md), [ipEvidence](security-ipEvidence.md), [mailboxEvidence](security-mailboxevidence.md), [mailClusterEvidence](security-mailclusterevidence.md), [oauthApplicationEvidence](security-oauthapplicationevidence.md), [processEvidence](security-processevidence.md), [registryKeyEvidence](security-registrykeyevidence.md), [registryValueEvidence](security-registryvalueevidence.md), [securityGroupEvidence](security-securitygroupevidence.md), [urlEvidence](security-urlevidence.md), and [userEvidence](security-userevidence.md).
+This is the base type of [amazonResourceEvidence](security-amazonresourceevidence.md), [analyzedMessageEvidence](security-analyzedmessageevidence.md), [azureResourceEvidence](security-azureresourceevidence.md), [cloudApplicationEvidence](security-cloudapplicationevidence.md), [deviceEvidence](security-deviceevidence.md), [fileEvidence](security-fileevidence.md), [googleCloudResourceEvidence](security-googlecloudresourceevidence.md), [ipEvidence](security-ipEvidence.md), [mailboxEvidence](security-mailboxevidence.md), [mailClusterEvidence](security-mailclusterevidence.md), [oauthApplicationEvidence](security-oauthapplicationevidence.md), [processEvidence](security-processevidence.md), [registryKeyEvidence](security-registrykeyevidence.md), [registryValueEvidence](security-registryvalueevidence.md), [securityGroupEvidence](security-securitygroupevidence.md), [urlEvidence](security-urlevidence.md), and [userEvidence](security-userevidence.md).
 
 This alert evidence base type and its derived evidence types provide a means to organize and track rich data about each artifact involved in an **alert**. For example, an **alert** about an attacker's IP address logging into a cloud service using a compromised user account can track the following evidence:
 - [IP evidence](security-ipevidence.md) with the roles of `attacker` and `source`, remediation status of `running`, and verdict of `malicious`.
@@ -25,13 +24,14 @@ This alert evidence base type and its derived evidence types provide a means to 
 
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The time the evidence was created and added to the alert.|
+|createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`.|
 |remediationStatusDetails|String|Details about the remediation status.|
-|roles|[microsoft.graph.security.evidenceRole](#evidencerole-values) collection|The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role "Attacker".|
-|tags|String collection|Array of custom tags associated with an evidence instance, for example to denote a group of devices, high value assets, etc.|
+|roles|[microsoft.graph.security.evidenceRole](#evidencerole-values) collection|One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role `Attacker`.|
+|tags|String collection|Array of custom tags associated with an evidence instance. For example, to denote a group of devices or high value assets.|
 |verdict|[microsoft.graph.security.evidenceVerdict](#evidenceverdict-values)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
 
 
