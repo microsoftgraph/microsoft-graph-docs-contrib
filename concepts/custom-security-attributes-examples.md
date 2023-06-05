@@ -1,5 +1,5 @@
 ---
-title: "Manage custom security attribute assignments (preview)"
+title: "Manage custom security attribute assignments"
 description: "Learn how to assign, update, list, or remove custom security attribute assignments for users and service principals using Microsoft Graph."
 author: "rolyon"
 ms.author: rolyon
@@ -10,10 +10,7 @@ ms.prod: "directory-management"
 ms.date: 02/14/2023
 ---
 
-# Manage custom security attribute assignments (preview)
-
-> [!IMPORTANT]
-> The custom security attributes feature is currently in preview. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+# Manage custom security attribute assignments
 
 [Custom security attributes](/graph/api/resources/custom-security-attributes-overview) in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects. These attributes can be used to store information, categorize objects, or enforce fine-grained access control over specific Azure resources through Azure attribute-based access control (Azure ABAC).
 
@@ -53,7 +50,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_assign_user_string"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -119,7 +116,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_assign_serviceprincipal_string"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}
 Content-type: application/json
 
 {
@@ -185,7 +182,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_assign_user_multistring"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -252,7 +249,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_assign_user_integer"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -319,7 +316,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_assign_user_multiinteger"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -386,7 +383,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_assign_user_boolean"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -454,7 +451,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_update_user_integer"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -522,7 +519,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_update_user_boolean"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -613,7 +610,7 @@ Attribute #4
   "name": "customsecurityattribute_get_for_user"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
+GET https://graph.microsoft.com/v1.0/users/{id}?$select=customSecurityAttributes
 ```
 
 # [C#](#tab/csharp)
@@ -652,7 +649,7 @@ GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(customSecurityAttributes)/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(customSecurityAttributes)/$entity",
     "customSecurityAttributes": {
         "Marketing": {
             "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
@@ -682,7 +679,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(customSecurityAttributes)/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(customSecurityAttributes)/$entity",
     "customSecurityAttributes": null
 }
 ```
@@ -713,7 +710,7 @@ User #2
   "name": "customsecurityattribute_filter_users_equals_value"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry eq 'Canada'
+GET https://graph.microsoft.com/v1.0/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry eq 'Canada'
 ConsistencyLevel: eventual
 ```
 
@@ -752,7 +749,7 @@ ConsistencyLevel: eventual
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,customSecurityAttributes)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,customSecurityAttributes)",
     "@odata.count": 2,
     "value": [
         {
@@ -822,7 +819,7 @@ User #2
   "name": "customsecurityattribute_filter_users_starts_with_value"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=startsWith(customSecurityAttributes/Marketing/EmployeeId,'GS')
+GET https://graph.microsoft.com/v1.0/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=startsWith(customSecurityAttributes/Marketing/EmployeeId,'GS')
 ConsistencyLevel: eventual
 ```
 
@@ -862,7 +859,7 @@ ConsistencyLevel: eventual
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,customSecurityAttributes)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,customSecurityAttributes)",
     "@odata.count": 1,
     "value": [
         {
@@ -907,7 +904,7 @@ All other users
   "name": "customsecurityattribute_users_not_equal_value"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry ne 'Canada'
+GET https://graph.microsoft.com/v1.0/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry ne 'Canada'
 ConsistencyLevel: eventual
 ```
 
@@ -947,7 +944,7 @@ ConsistencyLevel: eventual
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,customSecurityAttributes)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,customSecurityAttributes)",
     "@odata.count": 32,
     "value": [
         {
@@ -1028,7 +1025,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_remove_from_user_singlevalue"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -1093,7 +1090,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_remove_from_user_multivalue"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
