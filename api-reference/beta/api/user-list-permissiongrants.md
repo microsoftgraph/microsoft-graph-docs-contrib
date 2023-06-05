@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)                                                                                                                                                        |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | ResourceSpecificPermissionGrant.ReadForUser, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser                                    |
+| Delegated (work or school account)     | ResourceSpecificPermissionGrant.ReadForUser, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser, TeamsAppInstallation.ReadWriteConsentSelfForUser,  TeamsAppInstallation.ReadWriteConsentForUser                                    |
 | Delegated (personal Microsoft account) | Not supported.                                                                                                                                                                                     |
-| Application                            | ResourceSpecificPermissionGrant.ReadForUser.All, TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+| Application                            | ResourceSpecificPermissionGrant.ReadForUser.All, TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteConsentSelfForUser.All,  TeamsAppInstallation.ReadWriteConsentForUser.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
