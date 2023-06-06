@@ -97,7 +97,7 @@ For more information about configuring application access policy, see the [Power
 
 ## Errors
 
-You might encounter the following error when an API call is denied access due to an app trying to access an online meeting or virtual event when application access policy is not configured.
+If you attempt an API call to access an online meeting or virtual event without configuring the application access policy, you may encounter the following error: 
 
 ```json
 {
