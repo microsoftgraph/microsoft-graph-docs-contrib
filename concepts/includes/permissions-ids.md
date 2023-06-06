@@ -667,6 +667,10 @@ ms.date: 04/14/2023
 | TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All | Application | ba1ba90b-2d8f-487e-9f16-80728d85bb5c |
 | TeamsAppInstallation.ReadWriteAndConsentSelfForTeam     | Delegated   | 4a6bbf29-a0e1-4a4d-a7d1-cef17f772975 |
 | TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All | Application | 1e4be56c-312e-42b8-a2c9-009600d732c0 |
+| TeamsAppInstallation.ReadWriteAndConsentForUser         | Delegated   | 2da62c49-dfbd-40df-ba16-fef3529d391c |
+| TeamsAppInstallation.ReadWriteAndConsentForUser.All     | Application | 32ca478f-f89e-41d0-aaf8-101deb7da510 |
+| TeamsAppInstallation.ReadWriteAndConsentSelfForUser     | Delegated   | 7a349935-c54d-44ab-ab66-1b460d315be7 |
+| TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All | Application | a87076cf-6abd-4e56-8559-4dbdf41bef96 |
 | TeamsAppInstallation.ReadWriteForChat                   | Delegated   | aa85bf13-d771-4d5d-a9e6-bca04ce44edf |
 | TeamsAppInstallation.ReadWriteForChat.All               | Application | 9e19bae1-2623-4c4f-ab6e-2664615ff9a0 |
 | TeamsAppInstallation.ReadWriteForTeam                   | Delegated   | 2e25a044-2580-450d-8859-42eeb6e996c0 |
