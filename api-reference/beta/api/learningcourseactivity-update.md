@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [learningCourseActivity](../resources/learningcourseactivity.md) object. 
 
-**Note**: Learning course activities can be managed by a provider only when isCourseAcitvitySyncEnabled is set to `true`. To update the value, use the [Update learningProvider API](../api/learningprovider-update.md) method.
+>**Note**: Learning course activities can be managed by a provider only when `isCourseAcitvitySyncEnabled` is set to `true`. To update the value, use the [Update learningProvider](../api/learningprovider-update.md) method.
 
 
 ## Permissions
