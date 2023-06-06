@@ -49,6 +49,7 @@ PATCH /teamwork/teamsAppSettings
 |:---|:---|:---|
 |allowUserRequestsForAppAccess|Boolean|Indicates whether users are allowed to request access to the unavailable Teams apps.|
 |isChatResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. If true, Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.|
+|isUserPersonalScopeResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for personal scope Teams apps has been enabled for the tenant. If true, Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope. If false, the installation of any Teams app that requires resource-specific permissions in the personal scope will be blocked.|
 
 
 ## Response
@@ -113,7 +114,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Allow Teams users to request admins for access to certain Teams Apps.
+### Example 2: Enable installation of apps that require resource-specific consent in User Personal Scope.
 
 #### Request
 
@@ -121,6 +122,36 @@ HTTP/1.1 204 No Content
 <!-- {
   "blockType": "request",
   "name": "update_teamsappsettings_2"
+}
+-->
+```http
+PATCH https://graph.microsoft.com/beta/teamwork/teamsAppSettings
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.teamsAppSettings",
+  "isUserPersonalScopeResourceSpecificConsentEnabled": "true"
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Allow Teams users to request admins for access to certain Teams Apps.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_teamsappsettings_3"
 }
 -->
 ```http
