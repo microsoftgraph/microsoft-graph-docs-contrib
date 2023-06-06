@@ -78,7 +78,7 @@ To configure an application access policy and allow applications to access onlin
 > [!NOTE]
 >
 > - _Identity_ refers to the policy name when creating the policy, but the user ID when granting the policy.
-> - When granting the policy, it will be applied to both Online meetings and Virtual events. If you prefer to manage Online meetings and Virtual events separately, it is advisable to have two separate applications.
+> - When granting the policy, it will be applied to both online meetings and virtual events. If you prefer to manage online meetings and virtual events separately, it is advisable to have two separate applications.
 > - Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.
 
 ## Supported permissions and additional resources
