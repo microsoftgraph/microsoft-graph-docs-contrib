@@ -60,7 +60,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpcexportjob"
+  "name": "get_cloudpcexportjob",
+  "sampleKeys": ["TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff"]
 }
 -->
 ``` http
