@@ -103,7 +103,7 @@ If you attempt an API call to access an online meeting or virtual event without 
 {
     "error": {
         "code": "Forbidden",
-        "message": "No Application Access Policy found for this app",
+        "message": "No application access policy found for this app",
         "innerError": {
             "date": "<date_redacted>",
             "request-id": "599d9cb0-56ac-4dc5-b6f8-1456a1414609"
