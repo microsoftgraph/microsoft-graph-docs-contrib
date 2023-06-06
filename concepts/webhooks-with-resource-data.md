@@ -567,7 +567,7 @@ byte[] iv = new byte[vectorSize];
 Array.Copy(decryptedSymmetricKey, iv, vectorSize);
 aesProvider.IV = iv;
 
-byte[] encryptedPayload = Convert.FromBase64String(<value from dataKey property>);
+byte[] encryptedPayload = Convert.FromBase64String(<value from data property>);
 
 string decryptedResourceData;
 // Decrypt the resource data content.
