@@ -15,13 +15,13 @@ The following are the two main scenarios that require an application access poli
 
 **1. Allow applications to access online meetings on behalf of a user:**
 
-In some cases, such as for background services or daemon apps that run on a server without the presence of a signed-in user, it is appropriate for an app to call Microsoft Graph to take actions on behalf of a user. For example, an app might need to call Microsoft Graph to schedule multiple meetings based on published schedules (such as courses) or external scheduling tools. In these cases, the user that the application acts on behalf of can be anyone so make sure that user has proper privilege (e.g. is the organizer/co-organizer) to access the online meeting.
+In some cases, such as background services or daemon apps running on a server without a signed-in user, it is acceptable for an app to call Microsoft Graph and perform actions on behalf of a user. For example, an app may require Microsoft Graph to schedule multiple meetings based on published schedules (like courses) or external scheduling tools. In such situations, the application can act on behalf of any user. Therefore, it is important to make sure that the user possesses the necessary privileges, such as being the organizer or co-organizer, to access the online meeting.
 
 **2. Allow applications to access virtual events created by the user:**
 
-In cases where a signed-in user is not presented, an app can call Microsft Graph to access a virtual event using application permissions. For example, an app can call Microsoft Graph to look up a virtual event that has been created by a user, or retrieve attendance reports of a virtual event that has been created by the user,  without using that user's delegated permissions. In these case, the user must be the organizer of that virtual event.
+In cases where a signed-in user is not presented, an app can call Microsoft Graph to access a virtual event using application permissions. For example, an app can call Microsoft Graph to look up a virtual event that a user has created or retrieve attendance reports of a virtual event created by the user without using that user's delegated permissions. In these cases, the user must be the organizer of that virtual event.
 
-This article covers the basic steps to configure an application access policy. These steps are specific to cloud communications resources (online meetings, virtual events) and do not apply to other Microsoft Graph resources.
+Follow these steps to configure an application access policy for cloud communications resources such as online meetings and virtual events. These steps do not apply to other Microsoft Graph resources.
 
 ## Compare
 
@@ -78,7 +78,7 @@ To configure an application access policy and allow applications to access onlin
 > [!NOTE]
 >
 > - _Identity_ refers to the policy name when creating the policy, but the user ID when granting the policy.
-> - Granting the policy will take effect for both Online meeting and Virtual event. It's recommended to have two applications if you wish to manage Online meeting and Virtual event separately.
+> - When granting the policy, it will be applied to both Online meetings and Virtual events. If you prefer to manage Online meetings and Virtual events separately, it is advisable to have two separate applications.
 > - Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.
 
 ## Supported permissions and additional resources
