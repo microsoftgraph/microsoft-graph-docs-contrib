@@ -184,6 +184,10 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: synchronizationschema_parseexpression/parsedExpression:
+    Schema validation failed on property 'parsedExpression' ['microsoft.graph.attributeMappingSource']",
+    "Error: synchronizationschema_parseexpression/parsedExpression/parameters:
+    Array expected members to be of type Collection(String) but found: Collection(Object)"
   ]
 }
 -->
