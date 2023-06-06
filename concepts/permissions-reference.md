@@ -2516,7 +2516,7 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsAppInstallation.ReadWriteAndConsentSelfForChat_ | Allow the Teams app to manage itself and its permission grants in chats| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
 | _TeamsAppInstallation.ReadWriteAndConsentSelfForTeam_ | Allow the Teams app to manage itself and its permission grants in teams| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
 | _TeamsAppInstallation.ReadWriteAndConsentForUser_ | Manage installation and permission grants of Teams apps on your user account| Allows the app to read, install, upgrade, and uninstall Teams apps for your account, on your behalf. Gives the ability to manage permission grants for accessing your data.| Yes | No |
-| _TeamsAppInstallation.ReadWriteAndConsentSelfForUser_ | Allow the Teams app to manage itself and its permission grants on your user account| Allows a Teams app to read, install, upgrade, and uninstall itself in your account, and manage its permission grants for accessing your data, on your behalf.| Yes | No |
+| _TeamsAppInstallation.ReadWriteAndConsentSelfForUser_ | Allow the Teams app to manage itself and its permission grants on your user account| Allows a Teams app to read, install, upgrade, and uninstall itself in your account, and manage its permission grants for accessing your data, on your behalf.| Yes | No | 
 
 #### Application permissions
 |   Permission    |  Display String   |  Description | Admin Consent Required |
