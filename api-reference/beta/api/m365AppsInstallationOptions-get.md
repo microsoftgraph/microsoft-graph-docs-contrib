@@ -1,5 +1,5 @@
 ---
-title: "Get adminMicrosoft365AppsInstallationOptions"
+title: "Get m365AppsInstallationOptions"
 description: "Read the properties of a microsoft.admin.m365AppsInstallationOptions object."
 author: "yan-git"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# Get adminMicrosoft365AppsInstallationOptions
+# Get m365AppsInstallationOptions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.adm
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_adminMicrosoft365AppsInstallationOptions"
+  "name": "get_m365AppsInstallationOptions"
 }
 -->
 ``` http

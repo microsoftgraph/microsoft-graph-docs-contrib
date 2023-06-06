@@ -1,5 +1,5 @@
 ---
-title: "microsoft365AppsInstallationOptions resource type"
+title: "m365AppsInstallationOptions resource type"
 description: "Represents the tenant-level installation options for Microsoft 365 Applications."
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -7,7 +7,7 @@ ms.prod: "reports"
 author: "yan-git"
 ---
 
-# microsoft365AppsInstallationOptions resource type
+# m365AppsInstallationOptions resource type
 
 Namespace: microsoft.graph
 
@@ -19,8 +19,8 @@ Represents the tenant-level installation options for Microsoft 365 applications.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminMicrosoft365AppsInstallationOptions](../api/adminmicrosoft365appsinstallationoptions-get.md)|[microsoft.admin.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md)|Get the tenant-level installation options for Microsoft 365 applications.|
-|[Update adminMicrosoft365AppsInstallationOptions](../api/adminmicrosoft365appsinstallationoptions-update.md)|[microsoft.admin.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md)|Update tenant-level installation options for Microsoft 365 applications.|
+|[Get m365AppsInstallationOptions](../api/m365AppsInstallationOptions-get.md)|[microsoft.admin.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md)|Get the tenant-level installation options for Microsoft 365 applications.|
+|[Update m365AppsInstallationOptions](../api/m365AppsInstallationOptions-update.md)|[microsoft.admin.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md)|Update tenant-level installation options for Microsoft 365 applications.|
 
 ## Properties
 

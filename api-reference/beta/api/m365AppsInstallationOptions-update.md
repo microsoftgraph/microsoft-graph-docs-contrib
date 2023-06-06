@@ -1,5 +1,5 @@
 ---
-title: "Update adminMicrosoft365AppsInstallationOptions"
+title: "Update m365AppsInstallationOptions"
 description: "Update the properties of a microsoft.admin.m365AppsInstallationOptions object."
 author: "yan-git"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# Update adminMicrosoft365AppsInstallationOptions
+# Update m365AppsInstallationOptions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -63,7 +63,7 @@ If successful, this method returns a `204 No Content` and no content is returned
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_adminappsandservices"
+  "name": "update_m365AppsInstallationOptions"
 }
 -->
 Either:
