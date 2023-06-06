@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->planner()->tasksById('plannerTask-id')->bucketTaskBoardFormat()->get();
+$result = $graphServiceClient->planner()->tasks()->byTaskId('plannerTask-id')->bucketTaskBoardFormat()->get();
 
 
 ```

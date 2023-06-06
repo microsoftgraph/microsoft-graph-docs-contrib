@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/directoryObjects/{id
 
 
 
-$graphServiceClient->applicationsById('application-id')->owners()->ref()->post($requestBody);
+$graphServiceClient->applications()->byApplicationId('application-id')->owners()->ref()->post($requestBody);
 
 
 ```

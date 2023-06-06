@@ -2,7 +2,7 @@
 title: "post: forward"
 description: "Forward a post to a recipient. You can specify both the parent conversation and thread in the request, "
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -40,7 +40,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 |comment|String|Optional comment that is forwarded together with the post.|
 |toRecipients|[recipient](../resources/recipient.md) collection|The recipients to whom the threaded is forwarded to.|

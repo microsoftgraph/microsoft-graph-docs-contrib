@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/beta/policies/tokenLifeti
 
 
 
-$graphServiceClient->applicationsById('application-id')->tokenLifetimePolicies()->ref()->post($requestBody);
+$graphServiceClient->applications()->byApplicationId('application-id')->tokenLifetimePolicies()->ref()->post($requestBody);
 
 
 ```

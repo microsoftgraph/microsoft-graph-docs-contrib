@@ -216,6 +216,24 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 
 ---
 
+## Authentication events flow permissions
+
+#### Delegated permissions
+
+| Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
+|:-----------|:---------------|:------------|:-----------------------|:----------------------------|
+|EventListener.Read.All|Read your organization's authentication event listeners|Allows the app to read your organization's authentication event listeners on behalf of the signed-in user.|Yes|No|
+|EventListener.ReadWrite.All|Read and write your organization's authentication event listeners|Allows the app to read or write your organization's authentication event listeners on behalf of the signed-in user.|Yes|No|
+
+#### Application permissions
+
+| Permission   | Display String   | Description   | Admin Consent Required   |
+|--------------|:-----------------|:--------------|:-------------------------|
+|EventListener.Read.All|Read all authentication event listeners|Allows the app to read your organization's authentication event listeners without a signed-in user.|Yes|
+| EventListener.ReadWrite.All | Read and write all authentication event listeners | Allows the app to read or write your organization's authentication event listeners without a signed-in user. | Yes |
+
+---
+
 ## BitLocker recovery key permissions
 
 #### Delegated permissions
@@ -700,6 +718,22 @@ Administrators can configure [application access policy](auth-limit-mailbox-acce
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
+
+## Custom authentication extensions permissions
+
+#### Delegated permissions
+
+| Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
+|:-----------|:---------------|:------------|:-----------------------|:----------------------------|
+|CustomAuthenticationExtension.Read.All|Read your oganization's custom authentication extensions|Allows the app to read your organization's custom authentication extensions on behalf of the signed-in user.|Yes|No|
+|CustomAuthenticationExtension.ReadWrite.All|Read and write your organization's custom authentication extensions|Allows the app to read or write your organization's custom authentication extensions on behalf of the signed-in user.|Yes|No|
+
+#### Application permissions
+
+| Permission   | Display String   | Description   | Admin Consent Required   |
+|--------------|:-----------------|:--------------|:-------------------------|
+| CustomAuthenticationExtension.Read.All | Read all custom authentication extensions | Allows the app to read your organization's custom authentication extensions without a signed-in user. | Yes |
+| CustomAuthenticationExtension.ReadWrite.All | Read and write all custom authentication extensions | Allows the app to read or write your organization's custom authentication extensions without a signed-in user. | Yes |
 
 ## Custom security attributes permissions
 
@@ -2980,6 +3014,27 @@ With these permissions, all authentication methods can be read and managed on a 
 * Primary authentication (password, FIDO2, Microsoft Authenticator, and so on)
 * Second factor of multi-factor authentication/MFA (phone numbers, Microsoft Authenticator, and so on)
 * Self-Service Password Reset/SSPR (email address, and so on)
+
+---
+
+## Virtual event permissions
+
+#### Delegated permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+|_VirtualEvent.Read_|Read your virtual events.|Allows the app to read virtual events created by the you.|Yes|
+
+#### Application permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+|_VirtualEvent.Read.All_|Read all users' virtual events.|Allows the app to read all virtual events without a signed-in user. |Yes|
+
+### Example usage
+
+* _VirtualEvent.Read_: Retrieve a virtual event created by the signed-in user (`GET /solutions/virtualEvents/webinars/{id}`).
+* _VirtualEvent.Read.All_: Retrieve a virtual event created by any user in the tenant (`GET /solutions/virtualEvents/webinars/{id}`).
+
+---
 
 ## Windows updates permissions
 

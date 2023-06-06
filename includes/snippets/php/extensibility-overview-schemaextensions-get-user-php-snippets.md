@@ -15,7 +15,7 @@ $queryParameters->select = ["id","displayName","extkmpdyld2_graphLearnCourses"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->usersById('user-id')->get($requestConfiguration);
+$result = $graphServiceClient->users()->byUserId('user-id')->get($requestConfiguration);
 
 
 ```

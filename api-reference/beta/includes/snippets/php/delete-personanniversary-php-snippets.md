@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->profile()->anniversariesById('personAnnualEvent-id')->delete();
+$graphServiceClient->me()->profile()->anniversaries()->byAnniversarieId('personAnnualEvent-id')->delete();
 
 
 ```

@@ -66,7 +66,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "privilegedaccessgroupeligibilityschedulethis.filterbycurrentuser"
+  "name": "privilegedaccessgroupeligibilityschedulethis.filterbycurrentuser_beta_e1"
 }
 -->
 ``` http
@@ -74,31 +74,30 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response.
@@ -147,7 +146,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "privilegedaccessgroupeligibilityschedulethis.filterbycurrentuser"
+  "name": "privilegedaccessgroupeligibilityschedulethis.filterbycurrentuser_beta_e2"
 }
 -->
 ``` http
@@ -155,31 +154,30 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response.

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->agentsById('onPremisesAgent-id')->agentGroupsById('onPremisesAgentGroup-id')->ref()->delete();
+$graphServiceClient->onPremisesPublishingProfiles()->byOnPremisesPublishingProfileId('onPremisesPublishingProfile-id')->agents()->byAgentId('onPremisesAgent-id')->agentGroups()->byAgentGroupId('onPremisesAgentGroup-id')->ref()->delete();
 
 
 ```

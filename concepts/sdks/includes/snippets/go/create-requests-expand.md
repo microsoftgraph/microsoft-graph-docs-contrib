@@ -4,24 +4,26 @@
 // GET https://graph.microsoft.com/v1.0/me/mailfolders/inbox/messages/{message-id}?$expand=attachments
 
 import (
-    events "github.com/microsoftgraph/msgraph-sdk-go/me/mailfolders/item/messages/item"
+    "github.com/microsoftgraph/msgraph-sdk-go/users"
     "context"
 )
 
 mailFolderId := "inbox"
 messageId := "AQMkAGUy..."
 
-expand := item.MessageRequestBuilderGetQueryParameters{
+expand := users.ItemMailFoldersItemMessagesMessageItemRequestBuilderGetQueryParameters{
     Expand: []string{"attachments"},
 }
 
-options := item.MessageRequestBuilderGetOptions{
+options := users.ItemMailFoldersItemMessagesMessageItemRequestBuilderGetRequestConfiguration{
     QueryParameters: &expand,
 }
 
-result, err := client
-    .Me()
-    .MailFoldersById(mailFolderId)
-    .MessagesById(messageId)
-    .Get(context.Background(), &options)
+result, err := client.
+    Me().
+    MailFolders().
+    ByMailFolderId(mailFolderId).
+    Messages().
+    ByMessageId(messageId).
+    Get(context.Background(), &options)
 ```

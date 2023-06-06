@@ -54,7 +54,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->teamsById('team-id')->sendActivityNotification()->post($requestBody);
+$graphServiceClient->teams()->byTeamId('team-id')->sendActivityNotification()->post($requestBody);
 
 
 ```

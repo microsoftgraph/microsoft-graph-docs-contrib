@@ -42,6 +42,9 @@ Inherits from [entity](../resources/entity.md).
 |[Attach rubric](../api/educationassignment-put-rubric.md)|None|Attach an existing **educationRubric** to this **assignment**.|
 |[Remove rubric](../api/educationassignment-delete-rubric.md)|None|Detach the **educationRubric** from this **assignment**.|
 |[Get delta](../api/educationassignment-delta.md)|[educationAssignment](../resources/educationassignment.md) collection|Get a list of newly created or updated **assignments** without having to perform a full read of the collection.|
+|[List educationGradingCategory](../api/educationassignment-list-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md) collection|Get the educationGradingCategory resources from the gradingCategory navigation property.|
+|[Add educationGradingCategory](../api/educationassignment-post-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Add gradingCategory by posting to the gradingCategory collection.|
+|[Remove educationGradingCategory](../api/educationassignment-delete-gradingcategory.md)|None|Remove an [educationGradingCategory](../resources/educationgradingcategory.md) object.|
 |[Activate assignment](../api/educationassignment-activate.md) |[educationAssignment](educationassignment.md) | Activate an inactive **educationAssignment** to signal that the assignment has action items for teachers and students.|
 |[Deactivate assignment](../api/educationassignment-deactivate.md) |[educationAssignment](educationassignment.md) | Mark an assigned **educationAssignment** as inactive to signal that the assignment has no further action items for both teachers and students.|
 
@@ -68,9 +71,9 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[identitySet](identityset.md)| Who last modified the **assignment**. |
 |lastModifiedDateTime|DateTimeOffset|Moment when the **assignment** was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the **assignment** publish notification. If not specified or null, defaults to the `General` channel. This field only applies to **assignments** where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** is not allowed after the **assignment** has been published.|
+|resourcesFolderUrl|string| Folder URL where all the file resources for this **assignment** are stored.|
 |status|string| Status of the **Assignment**.  You can not PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`, `unknownFutureValue` and `inactive`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `inactive`.|
 |webUrl|string| The deep link URL for the given **assignment**.|
-|resourcesFolderUrl|string| Folder URL where all the file resources for this **assignment** are stored.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -79,6 +82,7 @@ Inherits from [entity](../resources/entity.md).
 |submissions|[educationSubmission](educationsubmission.md) collection| Once published, there is a **submission** object for each student representing their work and grade.  Read-only. Nullable.|
 |categories|[educationCategory](educationcategory.md) collection| When set, enables users to easily find **assignments** of a given type.  Read-only. Nullable.|
 |rubric|[educationRubric](educationrubric.md)|When set, the grading rubric attached to this **assignment**.|
+|grading category|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
 
 ## JSON representation
 
@@ -115,9 +119,10 @@ The following is a JSON representation of the resource.
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "notificationChannelUrl": "String",
+  "resourcesFolderUrl": "String",
   "status": "String",
-  "webUrl": "String",
-  "resourcesFolderUrl": "String"
+  "webUrl": "String"
+ 
 }
 ```
 

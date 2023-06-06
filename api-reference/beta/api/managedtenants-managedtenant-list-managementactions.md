@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 [!INCLUDE [sample-code](../includes/snippets/php/list-managementaction-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-managementaction-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
