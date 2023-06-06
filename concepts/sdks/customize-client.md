@@ -158,7 +158,7 @@ $handlerStack->push(KiotaMiddleware::chaos());
 
 $httpClient = GraphClientFactory::createWithMiddleware($handlerStack);
 $requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = GraphServiceClient::createWithRequestAdapter($requestAdapter);
 ```
 
 ## [Go](#tab/Go)
@@ -418,7 +418,7 @@ $guzzleConfig = [
 
 $httpClient = GraphClientFactory::createWithConfig($guzzleConfig);
 $requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = GraphServiceClient::createWithRequestAdapter($requestAdapter);
 
 ```
 
