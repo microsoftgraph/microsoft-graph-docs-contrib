@@ -29,7 +29,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.edge",
+  "@odata.type": "microsoft.graph.adminMicrosoft365Apps",
   "openType": false
 }
 -->

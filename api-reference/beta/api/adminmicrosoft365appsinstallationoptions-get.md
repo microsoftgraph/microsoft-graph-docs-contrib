@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.adm
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_adminappsandservices"
+  "name": "get_adminMicrosoft365AppsInstallationOptions"
 }
 -->
 ``` http
@@ -73,7 +73,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.adminAppsAndServices"
+  "@odata.type": "microsoft.graph.m365AppsInstallationOptions"
 }
 -->
 ``` http

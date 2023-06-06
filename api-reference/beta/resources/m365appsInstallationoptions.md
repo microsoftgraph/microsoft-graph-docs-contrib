@@ -19,8 +19,8 @@ Represents the tenant-level installation options for Microsoft 365 applications.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminMicrosoft365AppsInstallationOptions](../api/adminmicrosoft365appsinstallationoptions-get.md)|[microsoft.admin.m365AppsInstallationOptions](../resources/adminmicrosoft365appsinstallationoptions.md)|Get the tenant-level installation options for Microsoft 365 applications.|
-|[Update adminMicrosoft365AppsInstallationOptions](../api/adminmicrosoft365appsinstallationoptions-update.md)|[microsoft.admin.m365AppsInstallationOptions](../resources/adminmicrosoft365appsinstallationoptions.md)|Update tenant-level installation options for Microsoft 365 applications.|
+|[Get adminMicrosoft365AppsInstallationOptions](../api/adminmicrosoft365appsinstallationoptions-get.md)|[microsoft.admin.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md)|Get the tenant-level installation options for Microsoft 365 applications.|
+|[Update adminMicrosoft365AppsInstallationOptions](../api/adminmicrosoft365appsinstallationoptions-update.md)|[microsoft.admin.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md)|Update tenant-level installation options for Microsoft 365 applications.|
 
 ## Properties
 
