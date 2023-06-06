@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/sites"
+	  graphsites "github.com/microsoftgraph/msgraph-sdk-go/sites"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
 requestFilter := "siteCollection/root ne null"
 
-requestParameters := &graphconfig.SitesRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.SitesRequestBuilderGetQueryParameters{
 	Select: [] string {"siteCollection","webUrl"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.SitesRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SitesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

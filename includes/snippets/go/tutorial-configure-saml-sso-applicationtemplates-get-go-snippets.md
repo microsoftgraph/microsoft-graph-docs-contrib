@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/applicationtemplates"
+	  graphapplicationtemplates "github.com/microsoftgraph/msgraph-sdk-go/applicationtemplates"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "displayName eq 'AWS IAM Identity Center '"
+requestFilter := "displayName eq 'AWS IAM Identity Center (successor to AWS Single Sign-On)'"
 
-requestParameters := &graphconfig.ApplicationTemplatesRequestBuilderGetQueryParameters{
+requestParameters := &graphapplicationtemplates.ApplicationTemplatesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.ApplicationTemplatesRequestBuilderGetRequestConfiguration{
+configuration := &graphapplicationtemplates.ApplicationTemplatesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

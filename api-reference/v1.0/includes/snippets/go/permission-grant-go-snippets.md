@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Shares/Item/Permission/Grant"
+	  graphshares "github.com/microsoftgraph/msgraph-sdk-go/shares"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewGrantPostRequestBody()
+requestBody := graphshares.NewGrantPostRequestBody()
 
 
 driveRecipient := graphmodels.NewDriveRecipient()
@@ -25,7 +26,7 @@ driveRecipient1 := graphmodels.NewDriveRecipient()
 email := "ryan@external.com"
 driveRecipient1.SetEmail(&email) 
 
-recipients := []graphmodels.DriveRecipientable {
+recipients := []graphshares.DriveRecipientable {
 	driveRecipient,
 	driveRecipient1,
 
