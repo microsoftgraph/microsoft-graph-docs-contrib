@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -22,7 +22,7 @@ configuration := &graphconfig.ComplianceEdiscoveryCaseItemSourceCollectionItemRe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").SourceCollectionsById("sourceCollection-id").Get(context.Background(), configuration)
+result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").SourceCollections().BySourceCollectionId("sourceCollection-id").Get(context.Background(), configuration)
 
 
 ```

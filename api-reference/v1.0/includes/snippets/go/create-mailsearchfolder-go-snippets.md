@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -29,7 +29,7 @@ requestBody.SetIncludeNestedFolders(&includeNestedFolders)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

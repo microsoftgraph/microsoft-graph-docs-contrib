@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -56,7 +56,7 @@ requestBody.SetDraftOpenShift(&draftOpenShift)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TeamsById("team-id").Schedule().OpenShiftsById("openShift-id").Put(context.Background(), requestBody, nil)
+graphClient.Teams().ByTeamId("team-id").Schedule().OpenShifts().ByOpenShiftId("openShift-id").Put(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,8 +15,8 @@ $requestBody->set@odatatype('#microsoft.graph.ipNamedLocation');
 $requestBody->setDisplayName('Untrusted IP named location');
 
 $additionalData = [
-'isTrusted' => false,
-'ipRanges' => $ipRanges1 = new ();
+		'isTrusted' => false,
+		'ipRanges' => $ipRanges1 = new ();
 $		ipRanges1->set@odatatype('#microsoft.graph.iPv4CidrRange');
 
 $		ipRanges1->setCidrAddress('12.34.221.11/22');
@@ -39,7 +39,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->post($requestBody);
+$result = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->post($requestBody);
 
 
 ```

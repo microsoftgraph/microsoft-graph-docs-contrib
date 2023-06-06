@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -22,7 +22,7 @@ configuration := &graphconfig.InformationProtectionThreatAssessmentRequestItemRe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.InformationProtection().ThreatAssessmentRequestsById("threatAssessmentRequest-id").Get(context.Background(), configuration)
+result, err := graphClient.InformationProtection().ThreatAssessmentRequests().ByThreatAssessmentRequestId("threatAssessmentRequest-id").Get(context.Background(), configuration)
 
 
 ```

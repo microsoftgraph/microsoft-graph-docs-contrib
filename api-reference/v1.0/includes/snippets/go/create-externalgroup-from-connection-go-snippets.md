@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -23,7 +23,7 @@ requestBody.SetDisplayName(&displayName)
 description := "The product marketing team"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.External().ConnectionsById("externalConnection-id").Groups().Post(context.Background(), requestBody, nil)
+result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Groups().Post(context.Background(), requestBody, nil)
 
 
 ```

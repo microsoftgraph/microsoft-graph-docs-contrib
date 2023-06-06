@@ -28,7 +28,7 @@ $requestorSettings->setScopeType('AllExistingDirectorySubjects');
 $requestorSettings->setAllowedRequestors([]);
 
 $additionalData = [
-'isOnBehalfAllowed' => false,
+	'isOnBehalfAllowed' => false,
 ];
 $requestorSettings->setAdditionalData($additionalData);
 
@@ -77,7 +77,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->post($requestBody);
 
 
 ```

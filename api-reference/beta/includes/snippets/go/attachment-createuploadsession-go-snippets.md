@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -25,7 +25,7 @@ size := int64(3483322)
 attachmentItem.SetSize(&size) 
 requestBody.SetAttachmentItem(attachmentItem)
 
-result, err := graphClient.Me().MessagesById("message-id").Attachments().CreateUploadSession().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Messages().ByMessageId("message-id").Attachments().CreateUploadSession().Post(context.Background(), requestBody, nil)
 
 
 ```

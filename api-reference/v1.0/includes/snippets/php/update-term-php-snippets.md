@@ -24,7 +24,7 @@ $requestBody->setLabels($labelsArray);
 
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->termStore()->setsById('set-id')->termsById('term-id')->patch($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->termStore()->sets()->bySetId('set-id')->terms()->byTermId('term-id')->patch($requestBody);
 
 
 ```

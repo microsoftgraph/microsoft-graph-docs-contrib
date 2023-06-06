@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->canvasLayout()->horizontalSectionsById('horizontalSection-id')->columnsById('horizontalSectionColumn-id')->webparts()->get();
+$result = $graphServiceClient->sites()->bySiteId('site-id')->pages()->byPageId('sitePage-id')->canvasLayout()->horizontalSections()->byHorizontalSectionId('horizontalSection-id')->columns()->byColumnId('horizontalSectionColumn-id')->webparts()->get();
 
 
 ```

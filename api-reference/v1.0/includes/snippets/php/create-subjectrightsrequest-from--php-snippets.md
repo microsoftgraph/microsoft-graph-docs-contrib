@@ -32,8 +32,8 @@ $dataSubject->setEmail('String');
 $dataSubject->setResidency('String');
 
 $additionalData = [
-'phoneNumber' => 'String', 
-'SSN' => 'String', 
+	'phoneNumber' => 'String', 
+	'SSN' => 'String', 
 ];
 $dataSubject->setAdditionalData($additionalData);
 
@@ -42,7 +42,7 @@ $dataSubject->setAdditionalData($additionalData);
 $requestBody->setDataSubject($dataSubject);
 
 
-$requestResult = $graphServiceClient->privacy()->subjectRightsRequests()->post($requestBody);
+$result = $graphServiceClient->privacy()->subjectRightsRequests()->post($requestBody);
 
 
 ```

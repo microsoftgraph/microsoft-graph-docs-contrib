@@ -20,7 +20,7 @@ $requestBody->setPrincipalId('071cc716-8147-4397-a5ba-b2105951cc0b');
 
 
 
-$requestResult = $graphServiceClient->roleManagement()->directory()->roleEligibilityScheduleRequests()->post($requestBody);
+$result = $graphServiceClient->roleManagement()->directory()->roleEligibilityScheduleRequests()->post($requestBody);
 
 
 ```

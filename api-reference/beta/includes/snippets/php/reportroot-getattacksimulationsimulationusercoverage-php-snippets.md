@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->reports()->getAttackSimulationSimulationUserCoverage()->get();
+$result = $graphServiceClient->reports()->getAttackSimulationSimulationUserCoverage()->get();
 
 
 ```

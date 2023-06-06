@@ -7,9 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	Name = "jobGroup"
-	DataType = "String"
-	TargetObjects = @(
+	name = "jobGroup"
+	dataType = "String"
+	isMultiValued = $true
+	targetObjects = @(
 		"User"
 	)
 }
