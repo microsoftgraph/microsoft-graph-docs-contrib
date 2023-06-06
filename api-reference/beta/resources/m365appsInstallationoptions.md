@@ -4,7 +4,7 @@ description: "Represents the tenant-level installation options for Microsoft 365
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "reports"
-author: "yade"
+author: "yan-git"
 ---
 
 # microsoft365AppsInstallationOptions resource type

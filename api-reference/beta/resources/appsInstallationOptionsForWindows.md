@@ -1,7 +1,7 @@
 ---
 title: "appsInstallationOptionsForWindows resource type"
 description: "Represents the tenant-level Microsoft 365 Applications installation options for Windows platform."
-author: "yade"
+author: "yan-git"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

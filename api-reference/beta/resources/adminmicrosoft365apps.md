@@ -1,7 +1,7 @@
 ---
 title: "adminMicrosoft365Apps resource type"
 description: "Represents an entity that acts as a container for m365AppsInstallationOptions."
-author: "yade"
+author: "yan-git"
 ms.localizationpriority: medium
 ms.prod: "browser-management"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "Update adminMicrosoft365AppsInstallationOptions"
 description: "Update the properties of a microsoft.admin.m365AppsInstallationOptions object."
-author: "yade"
+author: "yan-git"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType

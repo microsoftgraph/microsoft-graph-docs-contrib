@@ -1,7 +1,7 @@
 ---
 title: "appsInstallationOptionsForMac resource type"
 description: "Represents the tenant-level Microsoft 365 Applications installation options for MAC platform."
-author: "yade"
+author: "yan-git"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
