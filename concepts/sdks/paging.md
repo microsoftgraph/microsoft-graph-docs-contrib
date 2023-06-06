@@ -86,44 +86,9 @@ while(messagesPage != null) {
 
 ### [Go](#tab/Go)
 
-```go
-import (
-    abstractions "github.com/microsoft/kiota-abstractions-go"
-    msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
-    "github.com/microsoftgraph/msgraph-sdk-go/users"
-    "github.com/microsoftgraph/msgraph-sdk-go/models"
-)
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
 
-headers := abstractions.NewRequestHeaders()
-headers.Add("Prefer", "outlook.body-content-type=\"text\"")
-
-query := users.ItemMailFoldersItemMessagesRequestBuilderGetQueryParameters{
-    Select: []string{"body", "sender", "subject"},
-}
-
-options := users.ItemMailFoldersItemMessagesRequestBuilderGetRequestConfiguration{
-    Headers: headers,
-    QueryParameters: &query,
-}
-
-result, err := client.Me().Messages().Get(context.Background(), &options)
-
-// Initialize iterator
-pageIterator, err := msgraphcore.NewPageIterator(
-    result, client.GetAdapter(), models.CreateMessageCollectionResponseFromDiscriminatorValue)
-
-// Any custom headers sent in original request should also be added
-// to the iterator
-pageIterator.SetHeaders(headers)
-
-// Iterate over all pages
-iterateErr := pageIterator.Iterate(context.Background(), func(pageItem interface{}) bool {
-    message := pageItem.(models.Messageable)
-    fmt.Printf("%s\n", *message.GetSubject())
-    // Return true to continue the iteration
-    return true
-})
-```
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="PagingSnippet":::
 
 ---
 
@@ -177,62 +142,9 @@ while (!pageIterator.isComplete()) {
 
 ### [Go](#tab/Go)
 
-```go
-import (
-    abstractions "github.com/microsoft/kiota-abstractions-go"
-    msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
-    "github.com/microsoftgraph/msgraph-sdk-go/users"
-    "github.com/microsoftgraph/msgraph-sdk-go/models"
-)
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
 
-headers := abstractions.NewRequestHeaders()
-headers.Add("Prefer", "outlook.body-content-type=\"text\"")
-
-query := users.ItemMailFoldersItemMessagesRequestBuilderGetQueryParameters{
-    Select: []string{"body", "sender", "subject"},
-}
-
-options := users.ItemMailFoldersItemMessagesRequestBuilderGetRequestConfiguration{
-    Headers: headers,
-    QueryParameters: &query,
-}
-
-
-result, err := client.Me().Messages().Get(context.Background(), &options)
-
-// Initialize iterator
-pageIterator, err := msgraphcore.NewPageIterator<models.Messageable>(
-    result, client.GetAdapter(), models.CreateMessageCollectionResponseFromDiscriminatorValue)
-
-// Any custom headers sent in original request should also be added
-// to the iterator
-pageIterator.SetHeaders(headers)
-
-// Pause iterating after 25
-var count, pauseAfter = 0, 25
-
-// Iterate over all pages
-iterateErr := pageIterator.Iterate(context.Background(), func(message models.Messageable) bool {
-    count++
-    fmt.Printf("%d: %s\n", count, *message.GetSubject())
-    // Once count = 25, this returns false,
-    // Which pauses the iteration
-    return count < pauseAfter
-})
-
-// Pause 5 seconds
-fmt.Printf("Iterated first %d messages, pausing for 5 seconds...\n", pauseAfter)
-time.Sleep(5 * time.Second)
-fmt.Printf("Resuming iteration...\n")
-
-// Resume iteration
-iterateErr = pageIterator.Iterate(context.Background(), func(message models.Messageable) bool {
-    count++
-    fmt.Printf("%d: %s\n", count, *message.GetSubject())
-    // Return true to continue the iteration
-    return true
-})
-```
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ResumePagingSnippet":::
 
 ---
 <!-- markdownlint-enable MD024 -->
