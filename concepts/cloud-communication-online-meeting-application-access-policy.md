@@ -8,7 +8,7 @@ ms.prod: "cloud-communications"
 
 # Configure application access to online meetings or virtual events
 
-Besides Graph application permissions (see below [section](#supported-permissions-and-additional-resources) for a list of supported application permissions), the tenant administrators needs to configure an application access policy in order for apps to access cloud communications resources with application permissions. Below are the two main scenarios that require an application access policy. Check the "Permissions" section on each API page to find out if the API requires this policy.
+In addition to the Microsoft Graph application permissions, tenant administrators need to configure an application access policy for apps to access cloud communications resources with application permissions.
 
 **1. Allow applications to access online meetings on behalf of a user:**
 
