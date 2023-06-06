@@ -14,7 +14,7 @@ $requestBody->setName('Volunteer');
 
 
 
-$requestResult = $graphServiceClient->me()->outlook()->taskFolders()->post($requestBody);
+$result = $graphServiceClient->me()->outlook()->taskFolders()->post($requestBody);
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -26,13 +26,15 @@ requestBody.SetHasAttachments(&hasAttachments)
 subject := "subject-value"
 requestBody.SetSubject(&subject) 
 body := graphmodels.NewItemBody()
+contentType := graphmodels.TEXT_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "content-value"
 body.SetContent(&content) 
 requestBody.SetBody(body)
 bodyPreview := "bodyPreview-value"
 requestBody.SetBodyPreview(&bodyPreview) 
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").Messages().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

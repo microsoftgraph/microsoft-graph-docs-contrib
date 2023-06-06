@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	DisableUserAccounts = $true
+	disableUserAccounts = $true
 }
 
 Invoke-MgForceDomainDelete -DomainId $domainId -BodyParameter $params

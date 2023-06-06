@@ -26,7 +26,7 @@ $includedAccountTarget->set@odatatype('#microsoft.graph.addressBookAccountTarget
 $includedAccountTarget->setType(new AccountTargetContentType('addressbook'));
 
 $additionalData = [
-'accountTargetEmails' => ['john@contoso.com', ],
+		'accountTargetEmails' => ['john@contoso.com', ],
 ];
 $includedAccountTarget->setAdditionalData($additionalData);
 
@@ -34,14 +34,14 @@ $includedAccountTarget->setAdditionalData($additionalData);
 
 $requestBody->setIncludedAccountTarget($includedAccountTarget);
 $additionalData = [
-'payload@odata.bind' => 'https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a', 
+	'payload@odata.bind' => 'https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->security()->attackSimulation()->simulations()->post($requestBody);
+$result = $graphServiceClient->security()->attackSimulation()->simulations()->post($requestBody);
 
 
 ```

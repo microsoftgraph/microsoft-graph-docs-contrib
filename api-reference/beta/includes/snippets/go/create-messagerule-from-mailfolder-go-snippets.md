@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -49,7 +49,7 @@ stopProcessingRules := true
 actions.SetStopProcessingRules(&stopProcessingRules) 
 requestBody.SetActions(actions)
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").MessageRules().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").MessageRules().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewReferenceCreate()
 odataId := "https://graph.microsoft.com/beta/users/{id}"
 requestBody.SetOdataId(&odataId) 
 
-graphClient.GroupsById("group-id").Owners().Ref().Post(context.Background(), requestBody, nil)
+graphClient.Groups().ByGroupId("group-id").Owners().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

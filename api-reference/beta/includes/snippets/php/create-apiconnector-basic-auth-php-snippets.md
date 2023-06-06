@@ -18,8 +18,8 @@ $authenticationConfiguration = new ApiAuthenticationConfigurationBase();
 $authenticationConfiguration->set@odatatype('#microsoft.graph.basicAuthentication');
 
 $additionalData = [
-'username' => '<USERNAME>', 
-'password' => '<PASSWORD>', 
+		'username' => '<USERNAME>', 
+		'password' => '<PASSWORD>', 
 ];
 $authenticationConfiguration->setAdditionalData($additionalData);
 
@@ -28,7 +28,7 @@ $authenticationConfiguration->setAdditionalData($additionalData);
 $requestBody->setAuthenticationConfiguration($authenticationConfiguration);
 
 
-$requestResult = $graphServiceClient->identity()->apiConnectors()->post($requestBody);
+$result = $graphServiceClient->identity()->apiConnectors()->post($requestBody);
 
 
 ```

@@ -27,7 +27,7 @@ $answersAccessPackageAnswer1AnsweredQuestion->setId('8fe745e7-80b2-490d-bd22-4e7
 
 $answersAccessPackageAnswer1->setAnsweredQuestion($answersAccessPackageAnswer1AnsweredQuestion);
 $additionalData = [
-'value' => 'UpdatedAnswerValue', 
+		'value' => 'UpdatedAnswerValue', 
 ];
 $answersAccessPackageAnswer1->setAdditionalData($additionalData);
 
@@ -47,7 +47,7 @@ $answersAccessPackageAnswer2AnsweredQuestion->setId('7aaa18c9-8e4f-440f-bd5a-3a7
 
 $answersAccessPackageAnswer2->setAnsweredQuestion($answersAccessPackageAnswer2AnsweredQuestion);
 $additionalData = [
-'value' => 'My updated answer.', 
+		'value' => 'My updated answer.', 
 ];
 $answersAccessPackageAnswer2->setAdditionalData($additionalData);
 
@@ -64,7 +64,7 @@ $assignment->setId('44c741c1-2cf4-40db-83b6-e0112f8e5a83');
 $requestBody->setAssignment($assignment);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentRequests()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentRequests()->post($requestBody);
 
 
 ```

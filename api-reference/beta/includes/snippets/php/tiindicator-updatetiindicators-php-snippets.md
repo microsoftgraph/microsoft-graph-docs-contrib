@@ -29,7 +29,7 @@ $requestBody->setValue($valueArray);
 
 
 
-$requestResult = $graphServiceClient->security()->tiIndicators()->updateTiIndicators()->post($requestBody);
+$result = $graphServiceClient->security()->tiIndicators()->updateTiIndicators()->post($requestBody);
 
 
 ```

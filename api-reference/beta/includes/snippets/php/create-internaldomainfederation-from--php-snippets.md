@@ -38,7 +38,7 @@ $requestBody->setFederatedIdpMfaBehavior(new FederatedIdpMfaBehavior('rejectmfab
 
 
 
-$requestResult = $graphServiceClient->domainsById('domain-id')->federationConfiguration()->post($requestBody);
+$result = $graphServiceClient->domains()->byDomainId('domain-id')->federationConfiguration()->post($requestBody);
 
 
 ```

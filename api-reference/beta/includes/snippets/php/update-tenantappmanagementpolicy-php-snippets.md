@@ -77,7 +77,7 @@ $applicationRestrictions->setKeyCredentials($keyCredentialsArray);
 $requestBody->setApplicationRestrictions($applicationRestrictions);
 
 
-$requestResult = $graphServiceClient->policies()->defaultAppManagementPolicy()->patch($requestBody);
+$result = $graphServiceClient->policies()->defaultAppManagementPolicy()->patch($requestBody);
 
 
 ```

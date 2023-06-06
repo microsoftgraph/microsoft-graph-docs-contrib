@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -38,7 +38,7 @@ additionalData := map[string]interface{}{
 recipient.SetAdditionalData(additionalData)
 requestBody.SetRecipient(recipient)
 
-graphClient.TeamsById("team-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
+graphClient.Teams().ByTeamId("team-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

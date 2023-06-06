@@ -14,7 +14,7 @@ $requestBody->setAppId('0bf30f3b-4a52-48df-9a82-234910c4a086');
 
 
 
-$requestResult = $graphServiceClient->servicePrincipals()->post($requestBody);
+$result = $graphServiceClient->servicePrincipals()->post($requestBody);
 
 
 ```
