@@ -125,19 +125,23 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.intelligenceProfile",
-      "id": "actinium",
+      "id": "9b01de37bf66d1760954a16dc2b52fed2a7bd4e093dfc8a4905e108e4843da80",
       "kind": "actor",
-      "title": "ACTINIUM",
-      "firstActiveDateTime": "2022-01-31T16:00:00.000Z",
+      "title": "Aqua Blizzard",
+      "firstActiveDateTime": "2020-02-24T00:00:00Z",
       "aliases": [
-        "Primitive Bear",
-        "TEMP.Armageddon",
-        "Shuckworm",
-        "Gamaredon"
+          "Primitive Bear",
+          "ACTINIUM",
+          "SectorC08",
+          "shuckworm",
+          "Gamaredon",
+          "UNC530",
+          "Armageddon"
       ],
       "targets": [
-        "Government",
-        "Humanitarian"
+          "Government Agencies & Services: Defense",
+          "Government Agencies & Services: Law Enforcement",
+          "Non-Government Organization: Human Rights Organization"
       ],
       "countriesOrRegionsOfOrigin": [
         {
@@ -148,17 +152,17 @@ Content-Type: application/json
       ],
       "summary": {
         "@odata.type": "microsoft.graph.security.formattedContent",
-        "content": "ACTINIUM is an activity group with a long history of targeting government and private sector organizations that have a presence in or an association with Ukraine",
+        "content": "The actor that Microsoft tracks as Aqua Blizzard (ACTINIUM) is a nation-state activity group based out of ...",
         "format": "text"
       },
       "description": {
         "@odata.type": "microsoft.graph.security.formattedContent",
-        "content": "### Summary\n\nACTINIUM is an activity group with a long history of targeting government and private sector organizations that have a presence in or an association with Ukraine. On February 4, 2022, Microsoft released a [blog]...",
+        "content": "## Snapshot\r\nThe actor that Microsoft tracks as Aqua Blizzard (ACTINIUM) is a nation-state activity group based out of ...",
         "format": "markdown"
       },
       "tradecraft": {
         "@odata.type": "microsoft.graph.security.formattedContent",
-        "content": "#### Tactics, Techniques, and Procedures\n\n[ACTINIUM](https://attack.mitre.org/groups/G0047/) has exhibited use of the following attack techniques...",
+        "content": "Aqua Blizzard (ACTINIUM) primarily uses spear phishing emails to infect targets. These emails harness remote template injection to load malicious code or content. Typically, ...",
         "format": "markdown"
       }
     }
