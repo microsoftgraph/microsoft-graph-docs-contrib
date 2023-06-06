@@ -25,7 +25,7 @@ Follow these steps to configure an application access policy for cloud communica
 
 ## Compare
 
-In the following table, there are three application access policies:
+The following table is an example of three application access policies:
 
 1. application access policy (_policy_1_) contains one app ID (_app_1_)
 2. application access policy (_policy_2_) contains one app ID (_app_2_)
