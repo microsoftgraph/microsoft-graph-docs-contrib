@@ -106,7 +106,7 @@ Calls to approval and approvalStep endpoints can be made only by approver of the
 
 ## See also
 
-- [What is Microsoft Entra Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
+- [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
 - [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
 - [Privileged Identity Management (PIM) for groups (preview)](/azure/active-directory/privileged-identity-management/concept-pim-for-groups)
   

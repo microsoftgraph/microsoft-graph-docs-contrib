@@ -24,7 +24,7 @@ You manage Azure AD Identity Governance capabilities programmatically by using t
 + [Privileged identity management](#manage-access-to-privileged-roles)
 + [Terms of use](#enforce-terms-of-use-for-your-resources)
 
-For more information about Azure AD Identity Governance and its license requirements, see [What is Microsoft Entra Identity Governance?](/azure/active-directory/governance/identity-governance-overview).
+For more information about Azure AD Identity Governance and its license requirements, see [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview).
 
 ## Manage the lifecycle of users in your organization
 
@@ -66,6 +66,6 @@ With identities being the common denominator when considering the security of yo
 
 ## See also
 
-+ [What is Microsoft Entra Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
++ [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
 + [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
 + [Securing identity with Zero Trust](/security/zero-trust/deploy/identity#iv-identities-and-access-privileges-are-managed-with-identity-governance)
