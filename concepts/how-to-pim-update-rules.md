@@ -7,7 +7,7 @@ ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "governance"
-ms.date: 05/29/2023
+ms.date: 06/07/2023
 ---
 
 # Update rules in PIM using Microsoft Graph

@@ -5,7 +5,7 @@ author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
-ms.date: 05/29/2023
+ms.date: 06/07/2023
 ---
 
 # Govern membership and ownership of groups using PIM for groups

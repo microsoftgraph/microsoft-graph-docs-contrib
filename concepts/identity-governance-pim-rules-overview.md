@@ -7,7 +7,7 @@ ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.prod: "governance"
-ms.date: 05/29/2023
+ms.date: 06/07/2023
 ---
 
 # Working with rules in PIM using Microsoft Graph
