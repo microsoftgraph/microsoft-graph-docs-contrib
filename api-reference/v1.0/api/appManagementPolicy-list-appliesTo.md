@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [appManagementPolicy](../resources/appManagementPolicy.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.
 
 ## Examples
 
