@@ -24,6 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|VirtualEvent.Read.All|
 
+> [!NOTE]
+>
+> To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. The authorized application will access registrants' information from virtual events created by that specific user.
+
 ## HTTP request
 
 <!-- {
