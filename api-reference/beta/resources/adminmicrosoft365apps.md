@@ -7,7 +7,7 @@ ms.prod: "browser-management"
 doc_type: resourcePageType
 ---
 
-# edge resource type
+# adminMicrosoft365Apps resource type
 
 Namespace: microsoft.graph
 
