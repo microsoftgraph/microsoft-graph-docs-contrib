@@ -20,7 +20,7 @@ Represents the validation result of a single resized Cloud PC during the bulk-re
 |Property|Type|Description|
 |:---|:---|:---|
 |cloudPcId|String|The [cloudPC](../resources/cloudpc.md) id that corresponds to its unique identifier.|
-|validationResult|[cloudPcResizeValidationCode](#cloudpcresizevalidationcode-values)|Describes a list of the validation result for the Cloud PC resize action. Possible values are: `success`, `cloudPcNotFound`, `operationCnflict`, `operationNotSupported`, `targetLicenseHasAssigned`, `internalServerError`, `unknownFutureValue`.|
+|validationResult|[cloudPcResizeValidationCode](#cloudpcresizevalidationcode-values)|Describes a list of the validation result for the Cloud PC resize action. The possible values are: `success`, `cloudPcNotFound`, `operationCnflict`, `operationNotSupported`, `targetLicenseHasAssigned`, `internalServerError`, and `unknownFutureValue`.|
 
 
 ### cloudPcResizeValidationCode values
