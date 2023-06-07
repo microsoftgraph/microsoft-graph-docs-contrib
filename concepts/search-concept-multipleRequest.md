@@ -1,20 +1,18 @@
 ---
-title: "Use the Microsoft Search API to search results by passing multiple search requests in the request body"
+title: "Pass multiple search requests in a request body with the Microsoft Search API"
 description: "You can use the Microsoft Search API in Microsoft Graph to search results by passing multiple search requests in the request body."
 author: "ZChristine"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to search results by passing multiple search requests in the request body
-Use the Microsoft Search API in Microsoft Graph to search contents stored in OneDrive or SharePoint or external contents ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview) or bookmark/acronym/qna in your organization by passing multiple search requests in the request body.
+# Pass multiple search requests in a request body with the Microsoft Search API
+Now you can pass multiple search requests in a request body with the Microsoft Search API. This is currently enabled for OneDrive or SharePoint, external contents ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview) and answers types (bookmark/acronym/qna).
 
 
 ## Supported entity combination
 
-Entity types in every search request in the request body should be contained in the entity types list: `site`, `drive`, `driveItem`, `list`,`listItem`,`externalItem`, `bookmark`,`acronym`, `qna`. And Entity types in every search request should follow the relationships defined in [interleaving search](search-concept-interleaving.md).
-
-`site`, `drive`, `driveItem`, `list`,`listItem` can only be set in the same search request. 
+Supported entity types for passing multiple search requests in a request body are: `site`, `drive`, `driveItem`, `list`,`listItem`,`externalItem`, `bookmark`,`acronym`, `qna`. And Entity types in every search request should follow the relationships defined in [interleaving search](search-concept-interleaving.md).
 
 ## Examples
 
@@ -167,10 +165,10 @@ Content-type: application/json
 
 ## Known limitations
 
-- Properties **from**, **szie** from different [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in the request body should be the same. And properties **queryString** of [searchQuery](graph/api/resources/searchquery?view=graph-rest-beta) from different searchRequest should be the same.
+- Properties **from**, **size** from different [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in the request body should be the same. And properties **queryString** of [searchQuery](graph/api/resources/searchquery?view=graph-rest-beta) from different searchRequest should be the same.
 - Duplicate entitytype across different search requests in the request body is not allowed.
-- File entity type can only occur once across different entity requests.
-- Speller should only appear one time and in the first entity request.
+- File entity type(`site`, `drive`, `driveItem`, `list`,`listItem`) can only occur once across different entity requests.
+- Speller can only be used once and in the first entity request.
 
 ## Next steps
 
