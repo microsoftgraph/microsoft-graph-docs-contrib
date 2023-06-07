@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Access Package New Name');
 
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackagesById('accessPackage-id')->patch($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->byAccessPackageId('accessPackage-id')->patch($requestBody);
 
 
 ```

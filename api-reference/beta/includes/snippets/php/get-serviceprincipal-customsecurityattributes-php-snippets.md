@@ -15,7 +15,7 @@ $queryParameters->select = ["customSecurityAttributes"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->get($requestConfiguration);
+$result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->get($requestConfiguration);
 
 
 ```

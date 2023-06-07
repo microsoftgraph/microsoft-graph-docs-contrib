@@ -70,7 +70,6 @@ If successful, this method returns a `200 OK` response code and a [teamsApp](../
 
 #### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -123,8 +122,7 @@ Content-Type: application/json
 {
   "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
   "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
-  "name": "Test App",
-  "version": "1.0.0",
+  "displayName": "Test App",
   "distributionMethod": "organization"
 }
 ```
@@ -132,7 +130,6 @@ Content-Type: application/json
 ### Example 2: Upload a new application for review to an organization's app catalog
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -183,8 +180,7 @@ Location: https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-4
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps/$entity",
   "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
   "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
-  "name": "Test App",
-  "version": "1.0.0",
+  "displayName": "Test App",
   "distributionMethod": "organization"
 }
 ```
@@ -208,8 +204,6 @@ If-Match: InFtSStsNVJHVWdzWUJRU2ZVWGp4RWc9PSI=
   "publishingState":"published"
 }
 ```
-
----
 
 #### Response
 
@@ -238,3 +232,7 @@ Content-type: application/json
     "createdBy": null
 }
 ```
+
+## See also
+
+[App catalog C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/csharp)

@@ -17,7 +17,7 @@ $extensionAttributes->setExtensionAttribute1('BYOD-Device');
 $requestBody->setExtensionAttributes($extensionAttributes);
 
 
-$result = $graphServiceClient->devicesById('device-id')->patch($requestBody);
+$result = $graphServiceClient->devices()->byDeviceId('device-id')->patch($requestBody);
 
 
 ```

@@ -28,7 +28,7 @@ $dataSource->setAdditionalData($additionalData);
 $requestBody->setDataSource($dataSource);
 
 
-$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->noncustodialDataSources()->post($requestBody);
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->noncustodialDataSources()->post($requestBody);
 
 
 ```

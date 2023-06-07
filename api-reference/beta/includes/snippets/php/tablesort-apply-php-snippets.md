@@ -39,7 +39,7 @@ $requestBody->setMethod('method-value');
 
 
 
-$graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->tablesById('workbookTable-id')->sort()->apply()->post($requestBody);
+$graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->tables()->byTableId('workbookTable-id')->sort()->apply()->post($requestBody);
 
 
 ```
