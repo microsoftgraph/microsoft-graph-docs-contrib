@@ -581,7 +581,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "cpuCoresCount",
                     "ChangeType": "Addition",
-                    "Description": "Added the `cpuCoresCount` property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **cpuCoresCount** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
                     "Target": "participantEndpoint"
                 },
                 {
