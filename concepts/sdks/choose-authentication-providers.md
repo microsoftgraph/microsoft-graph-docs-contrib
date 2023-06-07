@@ -34,18 +34,18 @@ Authentication providers implement the code required to acquire a token using th
 > The following code snippets were written with the latest versions of their respective SDKs. If you encounter compiler errors with these snippets, make sure you have the latest versions. The authentication providers used are provided by the following Azure Identity libraries:
 >
 > - .NET developers need to add the [Azure.Identity](/dotnet/api/azure.identity) package.
-> - JavaScript developers need to add the [@azure/identity](/javascript/api/@azure/identity) library.
+> - TypeScript and JavaScript developers need to add the [@azure/identity](/javascript/api/@azure/identity) library.
 > - Java and Android developers need to add the [azure-identity](/java/api/overview/azure/identity-readme) library.
 
 ## Authorization code provider
 
 The authorization code flow enables native and web apps to securely obtain tokens in the name of the user. To learn more, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
-# [C#](#tab/CS)
+# [C#](#tab/csharp)
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="AuthorizationCodeSnippet":::
 
-# [Javascript](#tab/Javascript)
+# [TypeScript](#tab/typescript)
 
 ### Using @azure/msal-browser for browser applications
 
@@ -55,7 +55,7 @@ The authorization code flow enables native and web apps to securely obtain token
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="AuthorizationCodeSnippet":::
 
-# [Java](#tab/Java)
+# [Java](#tab/java)
 
 ```java
 final AuthorizationCodeCredential authCodeCredential = new AuthorizationCodeCredentialBuilder()
@@ -76,11 +76,11 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
-# [Go](#tab/Go)
+# [Go](#tab/go)
 
 The [Azure Identity Client Module for Go](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) does not support the authorization code flow.
 
-# [Python](#tab/Python)
+# [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
@@ -104,7 +104,7 @@ auth_provider = AzureIdentityAuthenticationProvider(credential)
 
 The client credential flow enables service applications to run without user interaction. Access is based on the identity of the application. For more information, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-# [C#](#tab/CS)
+# [C#](#tab/csharp)
 
 ### Using a client certificate
 
@@ -114,7 +114,7 @@ The client credential flow enables service applications to run without user inte
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="ClientSecretSnippet":::
 
-# [Javascript](#tab/Javascript)
+# [TypeScript](#tab/typescript)
 
 ### Using a client certificate
 
@@ -124,7 +124,7 @@ The client credential flow enables service applications to run without user inte
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="ClientSecretSnippet":::
 
-# [Java](#tab/Java)
+# [Java](#tab/java)
 
 ```java
 final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
@@ -144,7 +144,7 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
-# [Go](#tab/Go)
+# [Go](#tab/go)
 
 ### Using a client certificate
 
@@ -154,7 +154,7 @@ final User me = graphClient.me().buildRequest().get();
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="ClientSecretSnippet":::
 
-# [Python](#tab/Python)
+# [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
@@ -177,15 +177,15 @@ auth_provider = AzureIdentityAuthenticationProvider(credential)
 
 The on-behalf-of flow is applicable when your application calls a service/web API which in turns calls the Microsoft Graph API. Learn more by reading [Microsoft identity platform and OAuth 2.0 On-Behalf-Of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
-# [C#](#tab/CS)
+# [C#](#tab/csharp)
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="OnBehalfOfSnippet":::
 
-# [Javascript](#tab/Javascript)
+# [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="OnBehalfOfSnippet":::
 
-# [Java](#tab/Java)
+# [Java](#tab/java)
 
 ```java
 final OnBehalfOfCredential onBehalfOfCredential = new OnBehalfOfCredentialBuilder()
@@ -206,11 +206,11 @@ final GraphServiceClient graphClient = GraphServiceClient
 final User me = graphClient.me().buildRequest().get();
 ```
 
-# [Go](#tab/Go)
+# [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="OnBehalfOfSnippet":::
 
-# [Python](#tab/Python)
+# [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
@@ -232,21 +232,21 @@ auth_provider = AzureIdentityAuthenticationProvider(credential)
 
 ## Implicit provider
 
-Implicit Authentication flow is not recommended due to its [disadvantages](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6). Public clients such as native apps and JavaScript apps should now use the authorization code flow with the PKCE extension instead. [Reference](https://oauth.net/2/grant-types/implicit/).
+Implicit Authentication flow is not recommended due to its [disadvantages](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6). Public clients such as native apps and single-page apps should now use the authorization code flow with the PKCE extension instead. [Reference](https://oauth.net/2/grant-types/implicit/).
 
 ## Device code provider
 
 The device code flow enables sign in to devices by way of another device. For details, see [Microsoft identity platform and the OAuth 2.0 device code flow](/azure/active-directory/develop/v2-oauth2-device-code).
 
-# [C#](#tab/CS)
+# [C#](#tab/csharp)
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="DeviceCodeSnippet":::
 
-# [Javascript](#tab/Javascript)
+# [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
 
-# [Java](#tab/Java)
+# [Java](#tab/java)
 
 ```java
 final DeviceCodeCredential deviceCodeCredential = new DeviceCodeCredentialBuilder()
@@ -267,11 +267,11 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
-# [Go](#tab/Go)
+# [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
-# [Python](#tab/Python)
+# [Python](#tab/python)
 
 ```python
 from azure.identity import DeviceCodeCredential
@@ -289,7 +289,7 @@ auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
 
 The integrated Windows flow provides a way for Windows computers to silently acquire an access token when they are domain joined. For details, see [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
-# [C#](#tab/CS)
+# [C#](#tab/csharp)
 
 The `Azure.Identity` package does not currently support Windows integrated authentication. Instead create a custom access token provider using MSAL.
 
@@ -301,19 +301,19 @@ The `Azure.Identity` package does not currently support Windows integrated authe
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="IntegratedWindowsSnippet":::
 
-# [Javascript](#tab/Javascript)
+# [TypeScript](#tab/typescript)
 
 Not applicable.
 
-# [Java](#tab/Java)
+# [Java](#tab/java)
 
 Not applicable.
 
-# [Go](#tab/Go)
+# [Go](#tab/go)
 
 Not applicable.
 
-# [Python](#tab/Python)
+# [Python](#tab/python)
 
 Not applicable.
 
@@ -323,15 +323,15 @@ Not applicable.
 
 The interactive flow is used by mobile applications (Xamarin and UWP) and desktops applications to call Microsoft Graph in the name of a user. For details, see [Acquiring tokens interactively](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
-# [C#](#tab/CS)
+# [C#](#tab/csharp)
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="InteractiveSnippet":::
 
-# [Javascript](#tab/Javascript)
+# [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="InteractiveSnippet":::
 
-# [Java](#tab/Java)
+# [Java](#tab/java)
 
 ```java
 final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
@@ -349,11 +349,11 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
-# [Go](#tab/Go)
+# [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="InteractiveSnippet":::
 
-# [Python](#tab/Python)
+# [Python](#tab/python)
 
 ```python
 from azure.identity import InteractiveBrowserCredential
@@ -371,15 +371,15 @@ auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
 
 The username/password provider allows an application to sign in a user by using their username and password. Use this flow only when you cannot use any of the other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc)
 
-# [C#](#tab/CS)
+# [C#](#tab/csharp)
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="UserNamePasswordSnippet":::
 
-# [Javascript](#tab/Javascript)
+# [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="UserNamePasswordSnippet":::
 
-# [Java](#tab/Java)
+# [Java](#tab/java)
 
 ```java
 final UsernamePasswordCredential usernamePasswordCredential = new UsernamePasswordCredentialBuilder()
@@ -399,11 +399,11 @@ final GraphServiceClient graphClient =
 final User me = graphClient.me().buildRequest().get();
 ```
 
-# [Go](#tab/Go)
+# [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="UserNamePasswordSnippet":::
 
-# [Python](#tab/Python)
+# [Python](#tab/python)
 
 ```python
 from azure.identity import UsernamePasswordCredential

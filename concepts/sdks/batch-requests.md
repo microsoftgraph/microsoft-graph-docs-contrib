@@ -146,7 +146,7 @@ final EventCollectionResponse events = batchResponseContent.getResponseById(cale
 System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
-### [Go](#tab/Go)
+### [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="DependentBatchSnippet":::
 

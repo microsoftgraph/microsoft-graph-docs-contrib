@@ -13,15 +13,15 @@ The following code examples show how to create an instance of a Microsoft Graph 
 
 <!-- markdownlint-disable MD025 MD051 -->
 
-# [C#](#tab/CS)
+# [C#](#tab/csharp)
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="DeviceCodeSnippet":::
 
-# [Javascript](#tab/Javascript)
+# [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
 
-# [Java](#tab/Java)
+# [Java](#tab/java)
 
 ```java
 final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
@@ -39,24 +39,7 @@ final GraphServiceClient graphClient = GraphServiceClient
         .buildClient();
 ```
 
-# [Android](#tab/Android)
-
-```java
-final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
-        .clientId(CLIENT_ID)
-        .redirectUrl("http://localhost:8765")
-        .build();
-
-final TokenCredentialAuthProvider tokenCredAuthProvider =
-        new TokenCredentialAuthProvider(SCOPES, interactiveBrowserCredential);
-
-GraphServiceClient graphClient = GraphServiceClient
-        .builder()
-        .authenticationProvider(tokenCredAuthProvider)
-        .buildClient();
-```
-
-# [PHP](#tab/PHP)
+# [PHP](#tab/php)
 
 ```php
 // PHP client currently doesn't have an authentication provider. You will need to handle
@@ -84,11 +67,11 @@ $user = $graph->createRequest("GET", "/me")
               ->execute();
 ```
 
-# [Go](#tab/Go)
+# [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
-# [Python](#tab/Python)
+# [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
