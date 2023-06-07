@@ -1,0 +1,55 @@
+---
+title: "subdomain resource type"
+description: "Provides context about subdomains of a host"
+author: "joerattazzi-microsoft"
+ms.localizationpriority: medium
+ms.prod: "security"
+doc_type: resourcePageType
+---
+
+# subdomain resource type
+
+Namespace: microsoft.graph.security
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+A **subdomain** is an internet domain, which is part of a primary domain. As an example, **learn.microsoft.com** is a subdomain of **microsoft.com**. For every subdomain, there could be a new set of IP addresses which the domain resolves to, and this can be a great data source for finding related infrastructure.
+
+## Methods
+
+| Method                                            | Return type                                                              | Description                                                                                                                 |
+| :------------------------------------------------ | :----------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
+| [Get subdomain](../api/security-subdomain-get.md) | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) | Read the properties and relationships of a [microsoft.graph.security.subdomain](../resources/security-subdomain.md) object. |
+
+## Properties
+
+| Property          | Type           | Description                                                                                                                                                                                                                                                                          |
+| :---------------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| firstSeenDateTime | DateTimeOffset | The first date and time when this **subdomain** was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| id                | String         | A system-generated ID for the **subdomain**.                                                                                                                                                                                                                                         |
+
+## Relationships
+
+| Relationship | Type                                                           | Description                               |
+| :----------- | :------------------------------------------------------------- | :---------------------------------------- |
+| host         | [microsoft.graph.security.host](../resources/security-host.md) | Indicates the **host** of this subdomain. |
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.security.subdomain",
+  "openType": false
+}
+-->
+
+```json
+{
+  "@odata.type": "#microsoft.graph.security.subdomain",
+  "id": "String (identifier)",
+  "firstSeenDateTime": "String (timestamp)"
+}
+```

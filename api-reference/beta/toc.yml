@@ -16236,6 +16236,8 @@ items:
               href: api/security-host-list-passivednsreverse.md
             - name: Get reputation
               href: api/security-host-get-reputation.md
+            - name: List subdomains
+              href: api/security-host-list-subdomains.md
             - name: List trackers
               href: api/security-host-list-trackers.md
         - name: Host component
@@ -16278,14 +16280,12 @@ items:
             href: resources/security-passivednsrecord.md
           - name: Get
             href: api/security-passivednsrecord-get.md
-        - name: Vulnerability
+        - name: Subdomain
           items:
-          - name: Vulnerability
-            href: resources/security-vulnerability.md
+          - name: Subdomain
+            href: resources/security-subdomain.md
           - name: Get
-            href: api/security-vulnerability-get.md
-          - name: List vulnerability components
-            href: api/security-vulnerability-list-components.md
+            href: api/security-subdomain-get.md
         - name: Vulnerability component
           items:
           - name: Vulnerability componet
