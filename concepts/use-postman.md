@@ -17,7 +17,7 @@ This article explains how to get up and running with Postman and Microsoft Graph
 
 For details about how to use Postman, follow the steps in this article or watch the following video.
 
-[!VIDEO https://www.youtube-nocookie.com/embed/3RTHY3jScmA]
+> [!VIDEO https://www.youtube-nocookie.com/embed/3RTHY3jScmA]
 
 > [!TIP]
 > The Microsoft Graph Postman collection is configured to authenticate with the global Azure AD service and access the global Microsoft Graph service (`graph.microsoft.com`). If you want to use the collection to connect to a [national cloud deployment](deployments.md), you must modify your fork of the collection.
