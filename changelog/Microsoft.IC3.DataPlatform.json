@@ -589,7 +589,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "cpuName",
                     "ChangeType": "Addition",
-                    "Description": "Added the `cpuName` property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **cpuName** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
                     "Target": "participantEndpoint"
                 },
                 {
