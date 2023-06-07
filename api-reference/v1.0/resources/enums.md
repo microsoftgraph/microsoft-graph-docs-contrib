@@ -382,6 +382,29 @@ Namespace: microsoft.graph
 | reviewer           |
 | unknownFutureValue |
 
+### accessPackageCustomExtensionStage values 
+
+|Member|
+|:---|
+|assignmentRequestCreated|
+|assignmentRequestApproved|
+|assignmentRequestGranted|
+|assignmentRequestRemoved|
+|assignmentFourteenDaysBeforeExpiration|
+|assignmentOneDayBeforeExpiration|
+|unknownFutureValue|
+
+### customExtensionCalloutInstanceStatus values 
+
+|Member|
+|:---|
+|calloutSent|
+|callbackReceived|
+|calloutFailed|
+|callbackTimedOut|
+|waitingForCallback|
+|unknownFutureValue|
+
 ### volumeType values
 
 | Member                |
