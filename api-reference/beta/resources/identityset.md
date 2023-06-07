@@ -24,7 +24,7 @@ Represents a keyed collection of [identity](identity.md) resources. It is used t
 | conversationIdentityType| [identity](identity.md) | Optional. Indicates whether the **conversation** property identifies a team or channel.|
 | device      | [identity](identity.md) | Optional. The device associated with this action.       |
 | encrypted       | [identity](identity.md) | Optional. The encrypted identity associated with this action. |
-| onPremises       | [identity](identity.md) | Optional. The on premises identity associated with this action. |
+| onPremises       | [identity](identity.md) | Optional. The on-premises identity associated with this action. |
 | guest       | [identity](identity.md) | Optional. The guest identity associated with this action. |
 | phone       | [identity](identity.md) | Optional. The phone number associated with this action. |
 | user        | [identity](identity.md) | Optional. The user associated with this action.         |
