@@ -32,72 +32,7 @@ This example shows how to send multiple requests in a batch that are not depende
 
 ### [TypeScript](#tab/typescript)
 
-```typescript
-// Create a batch request step to GET /me
-let userRequestStep: MicrosoftGraph.BatchRequestStep = {
-  id: "1",
-  request: new Request("/me", {
-    method: "GET"
-  })
-}
-
-let today = moment({hour: 0, minute: 0, seconds: 0});
-let start = today.format();
-let end = today.add(1, "day").format();
-
-// Create a batch request step to GET
-// /me/calendarview?startDateTime="start"&endDateTime="end"
-let calendarViewRequestStep: MicrosoftGraph.BatchRequestStep = {
-  id: "2",
-  request: new Request(`/me/calendarview?startDateTime=${start}&endDateTime=${end}`, {
-    method: "GET"
-  })
-}
-
-// Create the batch request content with the steps created
-// above
-let batchRequestContent = new MicrosoftGraph.BatchRequestContent([
-  userRequestStep,
-  calendarViewRequestStep
-]);
-
-let content = await batchRequestContent.getContent();
-
-// POST the batch request content to the /$batch endpoint
-let batchResponse = await client
-  .api('/$batch')
-  .post(content);
-
-// Create a BatchResponseContent object to parse the response
-let batchResponseContent = new MicrosoftGraph.BatchResponseContent(batchResponse);
-
-// Get the user response using the id assigned to the request
-let userResponse = batchResponseContent.getResponseById("1");
-
-// For a single entity, the JSON payload can be deserialized
-// into the expected type
-// Types supplied by @microsoft/microsoft-graph-types
-if (userResponse.ok) {
-  let user: User = await userResponse.json();
-  console.log(`Hello ${user.displayName}!`);
-} else {
-  console.log(`Get user failed with status ${userResponse.status}`);
-}
-
-// Get the calendar view response by id
-let calendarResponse = batchResponseContent.getResponseById("2");
-
-// For a collection of entities, the "value" property of
-// the JSON payload can be deserialized into an array of
-// the expected type
-if (calendarResponse.ok) {
-  let rawResponse = await calendarResponse.json();
-  let events: [Event] = rawResponse.value;
-  console.log(`You have ${events.length} events on your calendar today.`);
-} else {
-  console.log(`Get calendar view failed with status ${calendarResponse.status}`);
-}
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="SimpleBatchSnippet":::
 
 ### [Java](#tab/java)
 
@@ -155,95 +90,7 @@ This example shows how to send multiple requests in a batch that are dependent o
 
 ### [TypeScript](#tab/typescript)
 
-```typescript
-// 5:00 PM
-let eventStart = moment({hour: 17, minute: 0, seconds: 0});
-
-// Create a batch request step to add an event
-let newEvent: Event = {
-  subject: "File end-of-day report",
-  start: {
-    dateTime: eventStart
-      .format("YYYY-MM-DDTHH:mm:ss"),
-    timeZone: moment.tz.guess()
-  },
-  end: {
-    // 5:30 PM
-    dateTime: eventStart.add(30, "minutes")
-      .format("YYYY-MM-DDTHH:mm:ss"),
-    timeZone: moment.tz.guess()
-  }
-}
-console.log(JSON.stringify(newEvent));
-
-let addEventRequestStep: MicrosoftGraph.BatchRequestStep = {
-  id: "1",
-  request: new Request("/me/events", {
-    method: "POST",
-    body: JSON.stringify(newEvent),
-    headers: {
-      "Content-Type": "application/json"
-    }
-  })
-}
-
-let today = moment({hour: 0, minute: 0, seconds: 0});
-let start = today.format();
-let end = today.add(1, "day").format();
-console.log(`/me/calendarview?startDateTime=${start}&endDateTime=${end}`);
-
-// Create a batch request step to GET
-// /me/calendarview?startDateTime="start"&endDateTime="end"
-let calendarViewRequestStep: MicrosoftGraph.BatchRequestStep = {
-  id: "2",
-  // This step will happen after step 1
-  dependsOn: [ "1" ],
-  request: new Request(`/me/calendarview?startDateTime=${start}&endDateTime=${end}`, {
-    method: "GET"
-  })
-}
-
-// Create the batch request content with the steps created
-// above
-let batchRequestContent = new MicrosoftGraph.BatchRequestContent([
-  addEventRequestStep,
-  calendarViewRequestStep
-]);
-
-let content = await batchRequestContent.getContent();
-
-// POST the batch request content to the /$batch endpoint
-let batchResponse = await client
-  .api('/$batch')
-  .post(content);
-
-// Create a BatchResponseContent object to parse the response
-let batchResponseContent = new MicrosoftGraph.BatchResponseContent(batchResponse);
-
-// Get the create event response by id
-let newEventResponse = batchResponseContent.getResponseById("1");
-if (newEventResponse.ok) {
-  let event: Event = await newEventResponse.json();
-  console.log(`New event created with ID: ${event.id}`);
-} else {
-  console.log(`Create event failed with status ${newEventResponse.status}`);
-}
-
-// Get the calendar view response by id
-let calendarResponse = batchResponseContent.getResponseById("2");
-
-if (calendarResponse.ok)
-{
-  // For a collection of entities, the "value" property of
-  // the JSON payload can be deserialized into an array of
-  // the expected type
-  let rawResponse = await calendarResponse.json();
-  let events: [Event] = rawResponse.value;
-  console.log(`You have ${events.length} events on your calendar today.`);
-} else {
-  console.log(`Get calendar view failed with status ${calendarResponse.status}`);
-}
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="DependentBatchSnippet":::
 
 ### [Java](#tab/java)
 
@@ -301,6 +148,6 @@ System.out.println(String.format("You have %d events on your calendar today", ev
 
 ### [Go](#tab/Go)
 
-:::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="DependentBatchSnippet":::
+    :::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="DependentBatchSnippet":::
 
 ---
