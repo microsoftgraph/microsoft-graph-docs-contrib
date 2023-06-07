@@ -148,6 +148,6 @@ System.out.println(String.format("You have %d events on your calendar today", ev
 
 ### [Go](#tab/Go)
 
-    :::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="DependentBatchSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="DependentBatchSnippet":::
 
 ---
