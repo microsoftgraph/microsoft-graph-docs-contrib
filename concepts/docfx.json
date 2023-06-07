@@ -10,6 +10,8 @@
           "**/obj/**",
           "**/includes/**",
           "concepts/sdks/snippets/dotnet/**",
+          "concepts/sdks/snippets/go/**",
+          "concepts/sdks/snippets/typescript/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
