@@ -22,6 +22,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get adminForms](../api/adminforms-get.md)|[microsoft.graph.adminForms](../resources/adminforms.md)|Read the properties and relationships of a [microsoft.graph.adminForms](../resources/adminforms.md) object.|
+|[Update adminForms](../api/adminforms-update.md)|[microsoft.graph.adminForms](../resources/adminforms.md)|Update the properties and relationships of a [microsoft.graph.adminForms](../resources/adminforms.md) object.|
 
 ## Properties
 |Property|Type|Description|

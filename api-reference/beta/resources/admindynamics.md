@@ -22,6 +22,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get adminDynamics](../api/admindynamics-get.md)|[microsoft.graph.adminDynamics](../resources/admindynamics.md)|Read the properties and relationships of a [microsoft.graph.adminDynamics](../resources/admindynamics.md) object.|
+|[Update adminDynamics](../api/admindynamics-update.md)|[microsoft.graph.adminDynamics](../resources/admindynamics.md)|Update the properties and relationships of a [microsoft.graph.adminDynamics](../resources/admindynamics.md) object.|
 
 ## Properties
 |Property|Type|Description|

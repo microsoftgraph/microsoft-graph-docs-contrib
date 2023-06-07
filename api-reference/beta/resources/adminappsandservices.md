@@ -21,7 +21,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminAppsAndServices](../api/adminappsandservices-get.md)|[microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md)|Read the properties and relationships of a [microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md) object.
+|[Get adminAppsAndServices](../api/adminappsandservices-get.md)|[microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md)|Read the properties and relationships of a [microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md) object.|
+|[Update adminAppsAndServices](../api/adminappsandservices-update.md)|[microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md)|Update the properties and relationships of a [microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md) object.|
 
 ## Properties
 |Property|Type|Description|

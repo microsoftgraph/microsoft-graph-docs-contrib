@@ -22,6 +22,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get adminTodo](../api/admintodo-get.md)|[microsoft.graph.adminTodo](../resources/admintodo.md)|Read the properties and relationships of a [microsoft.graph.adminTodo](../resources/admintodo.md) object.|
+|[Update adminTodo](../api/admintodo-update.md)|[microsoft.graph.adminTodo](../resources/admintodo.md)|Update the properties and relationships of a [microsoft.graph.adminTodo](../resources/admintodo.md) object.|
 
 ## Properties
 |Property|Type|Description|
