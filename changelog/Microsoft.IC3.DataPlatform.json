@@ -605,7 +605,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "name",
                     "ChangeType": "Addition",
-                    "Description": "Added the `name` property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **name** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
                     "Target": "participantEndpoint"
                 },
                 {
@@ -613,7 +613,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "isTest",
                     "ChangeType": "Addition",
-                    "Description": "Added the `isTest` property to the [session](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-session?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **isTest** property to the [session](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-session?view=graph-rest-1.0) resource.",
                     "Target": "session"
                 }
             ],
