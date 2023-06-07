@@ -286,3 +286,13 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 | renderNoData | Renders when no image or person data is available. |
 | renderAvatar | Renders the avatar. |
 | renderDetails | Renders the person details part. |
+
+## Localization
+
+The control exposes the following variables that can be localized. See how you setup localization [here](../customize-components/localization.md).
+
+| String name      | Default value   |
+| ---------------- | --------------- |
+| photoFor         | `Photo for`     |
+| emailAddress     | `Email address` |
+| initials         | `Initials`      |

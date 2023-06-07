@@ -272,13 +272,13 @@ The control exposes the following variables that can be localized. See how you s
 
 | String name                 | Default value                      |
 | --------------------------- | ---------------------------------- |
-| endOfCard                   | 'End of the card'                  |
-| quickMessage                | 'Send a quick message              |
-| expandDetailsLabel          | 'Expand details'                   |
-| renderOverviewSectionLabel  | 'Render overview section'          |
-| sendMessageLabel            | 'Send message'                     |
-| emailButtonLabel            | 'Email'                            |
-| callButtonLabel             | 'Call'                             |
-| chatButtonLabel             | 'Chat'                             |
-| videoButtonLabel            | 'Video'                            |
-| closeCardLabel              | 'Close card'                       |
+| endOfCard                   | `End of the card`                  |
+| quickMessage                | `Send a quick message`             |
+| expandDetailsLabel          | `Expand details`                   |
+| renderOverviewSectionLabel  | `Render overview section`          |
+| sendMessageLabel            | `Send message`                     |
+| emailButtonLabel            | `Email`                            |
+| callButtonLabel             | `Call`                             |
+| chatButtonLabel             | `Chat`                             |
+| videoButtonLabel            | `Video`                            |
+| closeCardLabel              | `Close card`                       |
