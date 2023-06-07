@@ -47,55 +47,13 @@ The authorization code flow enables native and web apps to securely obtain token
 
 # [Javascript](#tab/Javascript)
 
-### Using @azure/msal-browser for  browser applications
+### Using @azure/msal-browser for browser applications
 
-```javascript
-
-const {
-    PublicClientApplication,
-    InteractionType,
-    AccountInfo
-} = require("@azure/msal-browser");
-
-const {
-    AuthCodeMSALBrowserAuthenticationProvider,
-    AuthCodeMSALBrowserAuthenticationProviderOptions
-} = require("@microsoft/microsoft-graph-client/authProviders/authCodeMsalBrowser");
-
-const options: AuthCodeMSALBrowserAuthenticationProviderOptions = {
-    account: account, // the AccountInfo instance to acquire the token for.
-    interactionType: InteractionType.PopUp, // msal-browser InteractionType
-    scopes: ["user.read", "mail.send"] // example of the scopes to be passed
-}
-
-// Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
-const authProvider = new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="BrowserSnippet":::
 
 ### Using @azure/identity for server-side applications
 
-```javascript
-const {
-    Client
-} = require("@microsoft/microsoft-graph-client");
-const {
-    TokenCredentialAuthenticationProvider
-} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const {
-    AuthorizationCodeCredential
-} = require("@azure/identity");
-
-const credential = new AuthorizationCodeCredential(
-    "<YOUR_TENANT_ID>",
-    "<YOUR_CLIENT_ID>",
-    "<AUTH_CODE_FROM_QUERY_PARAMETERS>",
-    "<REDIRECT_URL>"
-);
-const authProvider = new TokenCredentialAuthenticationProvider(credential, {
-    scopes: [scopes]
-});
-
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="AuthorizationCodeSnippet":::
 
 # [Java](#tab/Java)
 
@@ -158,28 +116,13 @@ The client credential flow enables service applications to run without user inte
 
 # [Javascript](#tab/Javascript)
 
-```javascript
-const {
-    Client
-} = require("@microsoft/microsoft-graph-client");
-const {
-    TokenCredentialAuthenticationProvider
-} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const {
-    ClientSecretCredential
-} = require("@azure/identity");
+### Using a client certificate
 
-const credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
-const authProvider = new TokenCredentialAuthenticationProvider(credential, {
-    scopes: [scopes]
-});
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="ClientCertificateSnippet":::
 
-const client = Client.initWithMiddleware({
-    debugLogging: true,
-    authProvider
-    // Use the authProvider object to create the class.
-});
-```
+### Using a client secret
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="ClientSecretSnippet":::
 
 # [Java](#tab/Java)
 
@@ -240,7 +183,7 @@ The on-behalf-of flow is applicable when your application calls a service/web AP
 
 # [Javascript](#tab/Javascript)
 
-On-behalf-of OAuth flows require that you implement a custom authentication provider at this time. Read [Using Custom Authentication Provider](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) for more information.
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="OnBehalfOfSnippet":::
 
 # [Java](#tab/Java)
 
@@ -301,28 +244,7 @@ The device code flow enables sign in to devices by way of another device. For de
 
 # [Javascript](#tab/Javascript)
 
-```javascript
-const {
-    Client
-} = require("@microsoft/microsoft-graph-client");
-const {
-    TokenCredentialAuthenticationProvider
-} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const {
-    DeviceCodeCredential
-} = require("@azure/identity");
-
-const credential = new DeviceCodeCredential(tenantId, clientId, clientSecret);
-const authProvider = new TokenCredentialAuthenticationProvider(credential, {
-    scopes: [scopes]
-});
-
-const client = Client.initWithMiddleware({
-    debugLogging: true,
-    authProvider
-    // Use the authProvider object to create the class.
-});
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
 
 # [Java](#tab/Java)
 
@@ -407,7 +329,7 @@ The interactive flow is used by mobile applications (Xamarin and UWP) and deskto
 
 # [Javascript](#tab/Javascript)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="InteractiveSnippet":::
 
 # [Java](#tab/Java)
 
@@ -455,7 +377,7 @@ The username/password provider allows an application to sign in a user by using 
 
 # [Javascript](#tab/Javascript)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="UserNamePasswordSnippet":::
 
 # [Java](#tab/Java)
 

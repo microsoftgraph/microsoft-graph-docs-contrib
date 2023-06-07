@@ -19,28 +19,7 @@ The following code examples show how to create an instance of a Microsoft Graph 
 
 # [Javascript](#tab/Javascript)
 
-```javascript
-const {
-    Client
-} = require("@microsoft/microsoft-graph-client");
-const {
-    TokenCredentialAuthenticationProvider
-} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const {
-    DeviceCodeCredential
-} = require("@azure/identity");
-
-const credential = new DeviceCodeCredential(tenantId, clientId, clientSecret);
-const authProvider = new TokenCredentialAuthenticationProvider(credential, {
-    scopes: [scopes]
-});
-
-const client = Client.initWithMiddleware({
-    debugLogging: true,
-    authProvider
-    // Use the authProvider object to create the class.
-});
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
 
 # [Java](#tab/Java)
 
