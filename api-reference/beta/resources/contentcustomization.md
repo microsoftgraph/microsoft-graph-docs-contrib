@@ -19,7 +19,7 @@ Contains details of the various content options to be customized in the authenti
 
 |Property|Type|Description|
 |:---|:---|:---|
-|attributeCollection|[keyValue](../resources/contentcustomization-attributecollection-keyvalue.md) collection| Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.|
+|attributeCollection|[keyValue](../resources/keyvalue.md) collection| Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.|
 |attributeCollectionRelativeUrl|String| A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.|
 
 ## Relationships
