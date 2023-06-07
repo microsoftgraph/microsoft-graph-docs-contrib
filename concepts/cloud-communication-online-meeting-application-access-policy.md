@@ -8,10 +8,9 @@ ms.prod: "cloud-communications"
 
 # Configure application access to online meetings or virtual events
 
-For apps to access some cloud communications APIs with application permissions, in addition to the Microsoft Graph application permissions, tenant administrators must configure an application access policy.
-For more information, see [supported application permissions](#supported-permissions-and-additional-resources).
+For apps to access some cloud communications APIs with application permissions, in addition to the Microsoft Graph application permissions, tenant administrators must configure an application access policy. For details, see [supported application permissions](#supported-permissions-and-additional-resources).
 
-The following are the two main scenarios that require an application access policy.
+The following sections describe the two main scenarios that require an application access policy.
 
 ## Allow applications to access online meetings on behalf of a user
 
@@ -25,13 +24,11 @@ Follow these steps to configure an application access policy for cloud communica
 
 ## Compare application access policy for online meetings and virtual events
 
-The following table compares application access policy for online meeting and virtual event under various scenarios involving two users. These scenarios involve the following application access policies:
+The following table compares application access policy for online meeting and virtual event under various scenarios involving two users. These scenarios involve two users (_user_1_ and _user_2_) and the following application access policies:
 
-- application access policy (_policy_1_) contains one app ID (_app_1_)
-- application access policy (_policy_2_) contains one app ID (_app_2_)
-- application access policy (_policy_3_) contains both app IDs (_app_1_ and _app_2_)
-
-and two users (_user_1_ and _user_2_).
+- _Policy_1_ contains one app ID (_app_1_)
+- _Policy_2_ contains one app ID (_app_2_)
+- _Policy_3_) contains both app IDs (_app_1_ and _app_2_)
 
 | Scenario | Online meeting | Virtual event |
 |----------|----------------|---------------|
