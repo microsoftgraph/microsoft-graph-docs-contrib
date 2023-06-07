@@ -24,9 +24,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Not supported|
 
 When calling on behalf of a user, the user needs to belong to the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
-+ Global administrator
-+ Cloud device administrator
-+ Global reader
++ Global Reader
++ Cloud Device Administrator
++ Intune Administrator
++ Windows 365 Administrator
++ Directory Reviewer
 
 ## HTTP request
 
