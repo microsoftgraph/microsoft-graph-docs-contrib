@@ -155,7 +155,7 @@ You can use the groups API to manage your external groups and group membership. 
 
 
 > [!NOTE]
-> User's external group membership should ideally be less than 2,049 external security groups in total. This includes both direct and indirect group memberships. When this limit is exceeded search results become unpredictable. Queries from users with more than 10,000 external security groups will fail with 400 response.
+> A user should have less than 2,049 external security group memberships, including direct and indirect memberships. When this limit is exceeded, search results become unpredictable. Queries from users with more than 10,000 external security groups will fail with a `400` response.
 
 
 ## Next steps
