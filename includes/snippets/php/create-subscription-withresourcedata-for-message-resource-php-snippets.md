@@ -28,7 +28,7 @@ $requestBody->setEncryptionCertificateId('testCertificateId');
 
 
 
-$requestResult = $graphServiceClient->subscriptions()->post($requestBody);
+$result = $graphServiceClient->subscriptions()->post($requestBody);
 
 
 ```

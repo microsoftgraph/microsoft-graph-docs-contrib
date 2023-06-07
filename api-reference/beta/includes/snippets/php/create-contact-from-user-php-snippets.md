@@ -49,7 +49,7 @@ $requestBody->setPhones($phonesArray);
 
 
 
-$requestResult = $graphServiceClient->me()->contacts()->post($requestBody);
+$result = $graphServiceClient->me()->contacts()->post($requestBody);
 
 
 ```

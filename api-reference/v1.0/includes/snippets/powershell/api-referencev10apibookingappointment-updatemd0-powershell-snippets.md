@@ -8,15 +8,15 @@ Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingAppointment"
-	EndDateTime = @{
+	endDateTime = @{
 		"@odata.type" = "#microsoft.graph.dateTimeTimeZone"
-		DateTime = "2018-05-06T12:30:00.0000000+00:00"
-		TimeZone = "UTC"
+		dateTime = "2018-05-06T12:30:00.0000000+00:00"
+		timeZone = "UTC"
 	}
-	StartDateTime = @{
+	startDateTime = @{
 		"@odata.type" = "#microsoft.graph.dateTimeTimeZone"
-		DateTime = "2018-05-06T12:00:00.0000000+00:00"
-		TimeZone = "UTC"
+		dateTime = "2018-05-06T12:00:00.0000000+00:00"
+		timeZone = "UTC"
 	}
 }
 

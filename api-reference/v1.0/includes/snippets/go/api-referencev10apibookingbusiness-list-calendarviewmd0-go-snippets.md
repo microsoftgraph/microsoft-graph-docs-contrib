@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -27,7 +27,7 @@ configuration := &graphconfig.SolutionsBookingBusinesseItemCalendarViewRequestBu
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").CalendarView().Get(context.Background(), configuration)
+result, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").CalendarView().Get(context.Background(), configuration)
 
 
 ```

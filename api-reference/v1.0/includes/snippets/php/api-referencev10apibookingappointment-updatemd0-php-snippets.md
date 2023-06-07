@@ -32,7 +32,7 @@ $startDateTime->setTimeZone('UTC');
 $requestBody->setStartDateTime($startDateTime);
 
 
-$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->appointmentsById('bookingAppointment-id')->patch($requestBody);
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->appointments()->byAppointmentId('bookingAppointment-id')->patch($requestBody);
 
 
 ```

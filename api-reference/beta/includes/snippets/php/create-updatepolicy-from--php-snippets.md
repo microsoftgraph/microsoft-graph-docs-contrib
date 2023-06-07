@@ -29,13 +29,13 @@ $complianceChangeRulesComplianceChangeRule1 = new ComplianceChangeRule();
 $complianceChangeRulesComplianceChangeRule1->set@odatatype('#microsoft.graph.windowsUpdates.contentApprovalRule');
 
 $additionalData = [
-'contentFilter' => $complianceChangeRulesComplianceChangeRule1 = new ContentFilter();
+	'contentFilter' => $complianceChangeRulesComplianceChangeRule1 = new ContentFilter();
 $	complianceChangeRulesComplianceChangeRule1->set@odatatype('#microsoft.graph.windowsUpdates.driverUpdateFilter');
 
 
 $complianceChangeRulesComplianceChangeRule1->setContentFilter($contentFilter);
 
-'durationBeforeDeploymentStart' => 'P7D', 
+	'durationBeforeDeploymentStart' => 'P7D', 
 ];
 $complianceChangeRulesComplianceChangeRule1->setAdditionalData($additionalData);
 
@@ -68,7 +68,7 @@ $deploymentSettings->setSchedule($deploymentSettingsSchedule);
 $requestBody->setDeploymentSettings($deploymentSettings);
 
 
-$requestResult = $graphServiceClient->admin()->windows()->updates()->updatePolicies()->post($requestBody);
+$result = $graphServiceClient->admin()->windows()->updates()->updatePolicies()->post($requestBody);
 
 
 ```

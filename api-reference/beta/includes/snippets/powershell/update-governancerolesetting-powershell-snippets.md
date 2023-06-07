@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	AdminEligibleSettings = @(
+	adminEligibleSettings = @(
 		@{
-			RuleIdentifier = "ExpirationRule"
-			Setting = "{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}"
+			ruleIdentifier = "ExpirationRule"
+			setting = "{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}"
 		}
 	)
 }

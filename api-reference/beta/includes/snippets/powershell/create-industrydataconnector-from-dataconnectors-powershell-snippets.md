@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Search
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.industryData.azureDataLakeConnector"
-	DisplayName = "CSV connector"
-	"SourceSystem@odata.bind" = "https://graph.microsoft.com/beta/external/industryData/sourceSystems('aa050107-5784-4a8e-1876-08daddab21bc')"
+	displayName = "CSV connector"
+	"sourceSystem@odata.bind" = "https://graph.microsoft.com/beta/external/industryData/sourceSystems('aa050107-5784-4a8e-1876-08daddab21bc')"
 }
 
 New-MgExternalIndustryDataConnector -BodyParameter $params

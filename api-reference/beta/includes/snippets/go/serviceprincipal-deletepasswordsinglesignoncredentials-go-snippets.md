@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewDeletePasswordSingleSignOnCredentialsPostRequestBo
 id := "5793aa3b-cca9-4794-679a240f8b58"
 requestBody.SetId(&id) 
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").DeletePasswordSingleSignOnCredentials().Post(context.Background(), requestBody, nil)
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").DeletePasswordSingleSignOnCredentials().Post(context.Background(), requestBody, nil)
 
 
 ```

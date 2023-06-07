@@ -7,23 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	Value = @{
-		"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension"
-		DisplayName = "test_action_0124_email"
-		Description = "this is for graph testing only"
-		EndpointConfiguration = @{
-			"@odata.type" = "#microsoft.graph.logicAppTriggerEndpointConfiguration"
-			SubscriptionId = "38ab2ccc-3747-4567-b36b-9478f5602f0d"
-			ResourceGroupName = "test"
-			LogicAppWorkflowName = "elm-extension-email"
-		}
-		AuthenticationConfiguration = @{
-			"@odata.type" = "#microsoft.graph.azureAdPopTokenAuthentication"
-		}
-		CallbackConfiguration = @{
-			"@odata.type" = "microsoft.graph.customExtensionCallbackConfiguration"
-			DurationBeforeTimeout = "PT1H"
-		}
+	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension"
+	displayName = "test_action_0124_email"
+	description = "this is for graph testing only"
+	endpointConfiguration = @{
+		"@odata.type" = "#microsoft.graph.logicAppTriggerEndpointConfiguration"
+		subscriptionId = "38ab2ccc-3747-4567-b36b-9478f5602f0d"
+		resourceGroupName = "test"
+		logicAppWorkflowName = "elm-extension-email"
+	}
+	authenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.azureAdPopTokenAuthentication"
+	}
+	callbackConfiguration = @{
+		"@odata.type" = "microsoft.graph.customExtensionCallbackConfiguration"
+		durationBeforeTimeout = "PT1H"
 	}
 }
 

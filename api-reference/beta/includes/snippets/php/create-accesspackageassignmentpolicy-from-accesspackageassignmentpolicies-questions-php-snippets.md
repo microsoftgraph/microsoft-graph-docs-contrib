@@ -53,8 +53,8 @@ $primaryApproversUserSet1->set@odatatype('#microsoft.graph.groupMembers');
 $primaryApproversUserSet1->setIsBackup(true);
 
 $additionalData = [
-'id' => 'd2dcb9a1-a445-42ee-83a8-476522ed6cbf', 
-'description' => 'group for users from connected organizations which have no external sponsor', 
+		'id' => 'd2dcb9a1-a445-42ee-83a8-476522ed6cbf', 
+		'description' => 'group for users from connected organizations which have no external sponsor', 
 ];
 $primaryApproversUserSet1->setAdditionalData($additionalData);
 
@@ -196,7 +196,7 @@ $requestBody->setQuestions($questionsArray);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->post($requestBody);
 
 
 ```

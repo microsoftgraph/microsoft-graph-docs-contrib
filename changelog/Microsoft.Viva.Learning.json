@@ -137,6 +137,56 @@
       "CreatedDateTime": "2023-02-23T09:01:19.001Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Employee learning"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "79b38947-d95a-41ce-aa48-2394f5d7e1fc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "learningCourseActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [learningCourseActivity](https://learn.microsoft.com/en-us/graph/api/resources/learningCourseActivity?view=graph-rest-beta) resource and supported methods.",
+          "Target": "learningCourseActivity"
+        },
+        {
+          "Id": "79b38947-d95a-41ce-aa48-2394f5d7e1fc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "learningAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [learningAssignment](https://learn.microsoft.com/en-us/graph/api/resources/learningAssignment?view=graph-rest-beta) resource and supported methods.",
+          "Target": "learningAssignment"
+        },
+        {
+          "Id": "79b38947-d95a-41ce-aa48-2394f5d7e1fc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "learningSelfInitiatedCourse",
+          "ChangeType": "Addition",
+          "Description": "Added the [learningSelfInitiatedCourse](https://learn.microsoft.com/en-us/graph/api/resources/learningSelfInitiatedCourse?view=graph-rest-beta) resource and supported methods.",
+          "Target": "learningSelfInitiatedCourse"
+        },
+        {
+          "Id": "79b38947-d95a-41ce-aa48-2394f5d7e1fc",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "learningAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **courseStatus** enumeration.",
+          "Target": "learningAssignment"
+        },
+        {
+          "Id": "79b38947-d95a-41ce-aa48-2394f5d7e1fc",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "learningAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentType** enumeration.",
+          "Target": "learningAssignment"
+        }
+      ],
+      "Id": "79b38947-d95a-41ce-aa48-2394f5d7e1fc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-19T09:01:19.001Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Employee learning"
     }
   ]
 }
