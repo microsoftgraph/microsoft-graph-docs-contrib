@@ -547,7 +547,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "averageFreezeDuration",
                     "ChangeType": "Addition",
-                    "Description": "Added the `averageFreezeDuration` property to the [mediaStream](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-mediaStream?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **averageFreezeDuration** property to the [mediaStream](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-mediaStream?view=graph-rest-1.0) resource.",
                     "Target": "mediaStream"
                 },
                 {
