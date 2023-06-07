@@ -32,7 +32,7 @@ To use application permission for this API, tenant administrators must create an
 
 ## HTTP request
 
-To get an attendance report by ID with delegated (`/me`) and app (`/users/{userId}`) permission:
+To get an attendance report of an online meeting by ID with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}
@@ -46,11 +46,19 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
+To get an attendance report for a virtual event session by ID:
+<!-- { "blockType": "ignored" }-->
+``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}
+```
+
 > [!TIP]
 >
 >- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 >- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
+>- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
+>- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
 
 > [!CAUTION]
 >
@@ -84,7 +92,6 @@ If successful, this method returns a `200 OK` response code and a [meetingAttend
 ### Example 1: Get the attendance report for an online meeting by ID
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -291,5 +298,42 @@ Content-Type: application/json
     }
   ],
   "totalParticipantCount": 2
+}
+```
+
+### Example 3:  Get the attendance report for a virtual event session by ID
+
+#### Request
+
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_virtualeventattendancereport"
+}
+-->
+``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}
+```
+
+#### Response
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.meetingAttendanceReport"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/virtualEvents/webinars('336f94f4-3a81-5130-43e9-88f3-fcb3582cde37')/sessions('a0f934c324b7785c')/attendanceReports/$entity",
+  "id": "2c2c2454-7613-4d6e-9c7c-4c89",
+  "totalParticipantCount": 2,
+  "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
+  "meetingEndDateTime": "2021-10-04T23:18:57.563Z"
 }
 ```
