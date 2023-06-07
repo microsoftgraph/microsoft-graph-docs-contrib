@@ -8,28 +8,28 @@ ms.prod: "cloud-communications"
 
 # Configure application access to online meetings or virtual events
 
-In addition to the Microsoft Graph application permissions, tenant administrators need to configure an application access policy for apps to access cloud communications resources with application permissions
+For apps to access some cloud communications APIs with application permissions, in addition to the Microsoft Graph application permissions, tenant administrators must configure an application access policy.
 For more information, see [supported application permissions](#supported-permissions-and-additional-resources).
 
-The following are the two main scenarios that require an application access policy. 
+The following are the two main scenarios that require an application access policy.
 
-**1. Allow applications to access online meetings on behalf of a user:**
+## Allow applications to access online meetings on behalf of a user
 
 In some cases, such as background services or daemon apps running on a server without a signed-in user, it is acceptable for an app to call Microsoft Graph and perform actions on behalf of a user. For example, an app may require Microsoft Graph to schedule multiple meetings based on published schedules (like courses) or external scheduling tools. In such situations, the application can act on behalf of any user. Therefore, it is important to make sure that the user possesses the necessary privileges, such as being the organizer or co-organizer, to access the online meeting.
 
-**2. Allow applications to access virtual events created by the user:**
+## Allow applications to access virtual events created by the user
 
 In cases where a signed-in user is not presented, an app can call Microsoft Graph to access a virtual event using application permissions. For example, an app can call Microsoft Graph to look up a virtual event that a user has created or retrieve attendance reports of a virtual event created by the user without using that user's delegated permissions. In these cases, the user must be the organizer of that virtual event.
 
 Follow these steps to configure an application access policy for cloud communications resources such as online meetings and virtual events. These steps do not apply to other Microsoft Graph resources.
 
-## Compare
+## Compare application access policy for online meetings and virtual events
 
-The following table is an example of three application access policies:
+The following table compares application access policy for online meeting and virtual event under various scenarios involving two users. These scenarios involve the following application access policies:
 
-1. application access policy (_policy_1_) contains one app ID (_app_1_)
-2. application access policy (_policy_2_) contains one app ID (_app_2_)
-3. application access policy (_policy_3_) contains both app IDs (_app_1_ and _app_2_)
+- application access policy (_policy_1_) contains one app ID (_app_1_)
+- application access policy (_policy_2_) contains one app ID (_app_2_)
+- application access policy (_policy_3_) contains both app IDs (_app_1_ and _app_2_)
 
 and two users (_user_1_ and _user_2_).
 
@@ -78,26 +78,23 @@ To configure an application access policy and allow applications to access onlin
 > [!NOTE]
 >
 > - _Identity_ refers to the policy name when creating the policy, but the user ID when granting the policy.
-> - When granting the policy, it will be applied to both online meetings and virtual events. If you prefer to manage online meetings and virtual events separately, it is advisable to have two separate applications.
+> - When granting the policy, it will be applied to both online meetings and virtual events. If you prefer to manage online meetings and virtual events separately, we recommend that you have two separate applications.
 > - Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.
 
 ## Supported permissions and additional resources
 
-Administrators can use ApplicationAccessPolicy cmdlets to control online meeting access for an app that has been granted any of the following application permissions:
+Administrators can use ApplicationAccessPolicy cmdlets to control online meeting and virtual event access for an app that has been granted any of the following application permissions:
 
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
 - OnlineMeetingArtifact.Read.All
-
-and/or to control virtual event access for an app that has been granted the following application permissions:
-
 - VirtualEvent.Read.All
 
 For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy).
 
 ## Errors
 
-If you attempt an API call to access an online meeting or virtual event without configuring the application access policy, you may encounter the following error: 
+If you attempt an API call to access an online meeting or virtual event without configuring the application access policy, you might encounter the following error: 
 
 ```json
 {
