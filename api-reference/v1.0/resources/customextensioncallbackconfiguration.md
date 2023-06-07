@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Callback settings that define how long Azure AD can wait for a resume signal for the callout that it made to the logic app. This is an abstract type that's inherited by [customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).
+Callback settings that define how long Azure AD can wait for a resume signal for the callout that it made to the logic app.
 
 ## Properties
 
