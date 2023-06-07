@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-Id needs to be a GUID.
+`{id}` needs to be a GUID.
 
 ## Request headers
 
@@ -48,13 +48,13 @@ In the request body, supply a JSON representation of a [historyItem](../resource
 
 ## Response
 
-If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.
+If successful, this method returns a `201 Created` response code if the **historyItem** was created or `200 OK` if the **historyItem** was replaced.
 
 ## Example
 
-#### Request
+### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 <!-- {
     "blockType": "ignored",
@@ -73,9 +73,9 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
     "blockType": "ignored",

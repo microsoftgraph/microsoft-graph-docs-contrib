@@ -57,6 +57,7 @@ Looking for the API reference for this service?
   - [Search calendar events](search-concept-events.md)
   - [Search content in SharePoint and OneDrive](search-concept-files.md)
   - [Search external content](search-concept-custom-types.md)
+  - [Search with application permissions](search-concept-searchall.md)
   - [Search person](search-concept-person.md) (preview)
   - [Manage administrative search answers](search-concept-answers.md) (preview)
   - [Manage search results layout](search-concept-display-layout.md) (preview)
