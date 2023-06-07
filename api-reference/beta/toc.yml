@@ -1906,7 +1906,7 @@ items:
         - name: Update
           href: api/bookingstaffmember-update.md
         - name: Delete
-          href: api/bookingstaffmember-delete.md 
+          href: api/bookingstaffmember-delete.md
     - name: Device and app management
       items:
       - name: Browser management (preview)
@@ -2087,7 +2087,7 @@ items:
               href: api/unifiedstoragequota-get.md
             - name: List
               href: api/unifiedstoragequota-list-services.md
-          - name: Service storage quota breakdown 
+          - name: Service storage quota breakdown
             href: resources/servicestoragequotabreakdown.md
             items:
             - name: Get
@@ -2138,7 +2138,7 @@ items:
           - name: Get
             href: api/print-get-settings.md
           - name: Update
-            href: api/print-update-settings.md 
+            href: api/print-update-settings.md
       - name: Corporate management
         href: resources/intune-graph-overview.md
         displayName: Intune
@@ -8293,7 +8293,7 @@ items:
           - name: Notification template branding options
             href: resources/intune-notification-notificationtemplatebrandingoptions.md
           - name: Obliteration behavior
-            href: resources/intune-devices-obliterationbehavior.md          
+            href: resources/intune-devices-obliterationbehavior.md
           - name: Operating system upgrade eligibility
             href: resources/intune-devices-operatingsystemupgradeeligibility.md
           - name: Os version count
@@ -8817,7 +8817,7 @@ items:
             href: resources/intune-devices-userexperienceanalyticsdevicetimelineevent.md
             items:
             - name: Get
-              href: api/intune-devices-userexperienceanalyticsdevicetimelineevents-get.md            
+              href: api/intune-devices-userexperienceanalyticsdevicetimelineevents-get.md
           - name: User experience analytics device without cloud identity
             href: resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md
             items:
@@ -10695,6 +10695,8 @@ items:
               href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
             - name: Get historical remote connection reports
               href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
+            - name: Get overall connection quality reports
+              href: api/cloudpcreports-getconnectionqualityreports.md
             - name: Get real time remote connection latency
               href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
             - name: Get real time remote connection status
@@ -10800,7 +10802,7 @@ items:
             href: api/windowsupdates-catalog-list-entries.md
         - name: Compliance change
           href: resources/windowsupdates-compliancechange.md
-          items: 
+          items:
           - name: List
             href: api/windowsupdates-updatepolicy-list-compliancechanges.md
           - name: Get
@@ -11969,7 +11971,7 @@ items:
             href: api/device-list-usagerights.md
         - name: Device local credential (preview)
           items:
-          - name: Device local credential 
+          - name: Device local credential
             href: resources/devicelocalcredentialinfo.md
           - name: List
             href: api/devicelocalcredentialinfo-list.md
@@ -12819,7 +12821,7 @@ items:
               - name: Get task
                 href: api/identitygovernance-task-get.md
               - name: Update task
-                href: api/identitygovernance-task-update.md  
+                href: api/identitygovernance-task-update.md
             - name: Reports
               displayName: Lifecycle Workflows
               items:
@@ -12857,7 +12859,7 @@ items:
                 - name: Get summary
                   href: api/identitygovernance-run-summary.md
                 - name: List task processing results
-                  href: api/identitygovernance-run-list-taskprocessingresults.md  
+                  href: api/identitygovernance-run-list-taskprocessingresults.md
                 - name: List user processing results
                   href: api/identitygovernance-run-list-userprocessingresults.md
               - name: Task processing result
@@ -13490,7 +13492,7 @@ items:
             - name: Export personal data
               href: api/inboundshareduserprofile-exportpersonaldata.md
             - name: Remove personal data
-              href: api/inboundshareduserprofile-removepersonaldata.md 
+              href: api/inboundshareduserprofile-removepersonaldata.md
           - name: Outbound shared user profiles
             href: resources/outboundshareduserprofile.md
             items:
@@ -13516,7 +13518,7 @@ items:
           - name: Update
             href: api/customauthenticationextension-update.md
           - name: Delete
-            href: api/customauthenticationextension-delete.md 
+            href: api/customauthenticationextension-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -14206,7 +14208,7 @@ items:
           - name: Update user flow
             href: api/authenticationeventsflow-update.md
           - name: Delete user flow
-            href: api/authenticationeventsflow-delete.md            
+            href: api/authenticationeventsflow-delete.md
           - name: List identity providers
             href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
           - name: Add identity provider
@@ -14227,7 +14229,7 @@ items:
             - name: Add applications
               href: api/authenticationconditionsapplications-post-includeapplications.md
             - name: Remove applications
-              href: api/authenticationconditionapplication-delete.md  
+              href: api/authenticationconditionapplication-delete.md
       - name: Partner customer administration
         items:
         - name: Granular delegated admin privileges
@@ -14293,11 +14295,11 @@ items:
       items:
         - name: Overview
           href: resources/industrydata-overview.md
-        - name: Azure Data Lake connector 
+        - name: Azure Data Lake connector
           href: resources/industrydata-azuredatalakeconnector.md
           items:
             - name: List
-              href: api/industrydata-azuredatalakeconnector-list.md          
+              href: api/industrydata-azuredatalakeconnector-list.md
             - name: Create
               href: api/industrydata-azuredatalakeconnector-post.md
             - name: Get
@@ -14305,7 +14307,7 @@ items:
             - name: Update
               href: api/industrydata-azuredatalakeconnector-update.md
             - name: Delete
-              href: api/industrydata-azuredatalakeconnector-delete.md              
+              href: api/industrydata-azuredatalakeconnector-delete.md
             - name: Get upload session
               href: api/industrydata-azuredatalakeconnector-getuploadsession.md
         - name: File validate operation
@@ -14319,7 +14321,7 @@ items:
           href: resources/industrydata-inboundfileflow.md
           items:
             - name: List
-              href: api/industrydata-inboundfileflow-list.md          
+              href: api/industrydata-inboundfileflow-list.md
             - name: Create
               href: api/industrydata-inboundfileflow-post.md
             - name: Get
@@ -14327,7 +14329,7 @@ items:
             - name: Update
               href: api/industrydata-inboundfileflow-update.md
             - name: Delete
-              href: api/industrydata-inboundfileflow-delete.md                        
+              href: api/industrydata-inboundfileflow-delete.md
         - name: Inbound flow
           href: resources/industrydata-inboundflow.md
           items:
@@ -14340,7 +14342,7 @@ items:
             - name: Update
               href: api/industrydata-inboundflow-update.md
             - name: Delete
-              href: api/industrydata-inboundflow-delete.md              
+              href: api/industrydata-inboundflow-delete.md
         - name: Industry data connector
           href: resources/industrydata-industrydataconnector.md
           items:
@@ -14353,14 +14355,14 @@ items:
             - name: Update
               href: api/industrydata-industrydataconnector-update.md
             - name: Delete
-              href: api/industrydata-industrydataconnector-delete.md              
+              href: api/industrydata-industrydataconnector-delete.md
             - name: Validate
               href: api/industrydata-industrydataconnector-validate.md
         - name: Industry data run
           href: resources/industrydata-industrydatarun.md
           items:
             - name: List
-              href: api/industrydata-industrydatarun-list.md          
+              href: api/industrydata-industrydatarun-list.md
             - name: Get
               href: api/industrydata-industrydatarun-get.md
             - name: Get statistics
@@ -14376,14 +14378,14 @@ items:
           href: resources/industrydata-rolegroup.md
           items:
             - name: List
-              href: api/industrydata-rolegroup-list.md          
+              href: api/industrydata-rolegroup-list.md
             - name: Get
               href: api/industrydata-rolegroup-get.md
         - name: Source system definition
           href: resources/industrydata-sourcesystemdefinition.md
           items:
             - name: List
-              href: api/industrydata-sourcesystemdefinition-list.md          
+              href: api/industrydata-sourcesystemdefinition-list.md
             - name: Create
               href: api/industrydata-sourcesystemdefinition-post.md
             - name: Get
@@ -15834,7 +15836,7 @@ items:
             - name: Training user coverage
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
-              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md        
+              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
         - name: Simulation automation
           items:
           - name: Simulation automation
@@ -16147,7 +16149,7 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
-      - name: Records management 
+      - name: Records management
         items:
         - name: Overview
           href: resources/security-recordsManagement-overview.md
@@ -16208,7 +16210,7 @@ items:
           items:
           - name: Article
             href: resources/security-article.md
-          - name: Get 
+          - name: Get
             href: api/security-article-get.md
           - name: List
             href: api/security-article-list.md
@@ -16569,7 +16571,7 @@ items:
             href: resources/standardwebpart.md
           - name: List
             href: api/webpart-list.md
-          - name: Get 
+          - name: Get
             href: api/webpart-get.md
           - name: Get position
             href: api/webpart-getposition.md
