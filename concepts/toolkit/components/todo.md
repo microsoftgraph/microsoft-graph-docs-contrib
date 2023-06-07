@@ -119,12 +119,12 @@ The control exposes the following variables that can be localized. For more info
 
 | String name                 | Default value                |
 | --------------------------- | -----------------------------|
-| cancelNewTaskSubtitle       | 'Cancel'                     |
-| newTaskPlaceholder          | 'Add a task                  |
-| newTaskLabel                | 'New Task Input'             |
-| addTaskButtonSubtitle       | 'Add'                        |
-| deleteTaskLabel             | 'Delete Task'                |
-| dueDate                     | 'Due date'                   |
-| newTaskDateInputLabel       | 'New Task Date Input'        |
-| newTaskNameInputLabel       | 'New Task Name Input'        |
-| cancelAddingTask            | 'Cancel adding a new task'  |
+| cancelNewTaskSubtitle       | `Cancel`                     |
+| newTaskPlaceholder          | `Add a task`                 |
+| newTaskLabel                | `New Task Input`             |
+| addTaskButtonSubtitle       | `Add`                        |
+| deleteTaskLabel             | `Delete Task`                |
+| dueDate                     | `Due date`                   |
+| newTaskDateInputLabel       | `New Task Date Input`        |
+| newTaskNameInputLabel       | `New Task Name Input`        |
+| cancelAddingTask            | `Cancel adding a new task`  |
