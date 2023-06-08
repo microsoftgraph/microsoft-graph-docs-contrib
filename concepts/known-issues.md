@@ -380,7 +380,7 @@ The following limitations apply to query parameters:
 - `@odata.bind` is not supported. This means that you can't properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 - `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 - `$expand`:
-  - For directory objects, returns a maximum of 20 objects.
+  - For directory objects, returns a maximum of 100 objects.
   - No support for `@odata.nextLink`.
   - No support for more than one level of expand.
   - For directory objects, no support for nesting other query parameters such as `$filter` and `$select` in `$expand`.

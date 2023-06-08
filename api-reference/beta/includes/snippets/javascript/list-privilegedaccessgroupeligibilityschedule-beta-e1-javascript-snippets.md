@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let eligibilitySchedules = await client.api('/identityGovernance/privilegedAccess/group/eligibilitySchedules?filter=principalId%20eq%20\'3cce9d87-3986-4f19-8335-7ed075408ca2\'')
+let eligibilitySchedules = await client.api('/identityGovernance/privilegedAccess/group/eligibilitySchedules?filter=principalId eq \'3cce9d87-3986-4f19-8335-7ed075408ca2\'')
 	.version('beta')
 	.filter('principalId eq \'3cce9d87-3986-4f19-8335-7ed075408ca2\'')
 	.get();

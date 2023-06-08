@@ -9,11 +9,11 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -23,12 +23,12 @@ headers.Add("ConsistencyLevel", "eventual")
 requestSearch := "\"displayName:Team\""
 requestCount := true
 
-requestParameters := &graphconfig.ServicePrincipalsRequestBuilderGetQueryParameters{
+requestParameters := &graphserviceprincipals.ServicePrincipalsRequestBuilderGetQueryParameters{
 	Search: &requestSearch,
 	Count: &requestCount,
 	Select: [] string {"accountEnabled","displayName","publisherName","servicePrincipalType","signInAudience"},
 }
-configuration := &graphconfig.ServicePrincipalsRequestBuilderGetRequestConfiguration{
+configuration := &graphserviceprincipals.ServicePrincipalsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
