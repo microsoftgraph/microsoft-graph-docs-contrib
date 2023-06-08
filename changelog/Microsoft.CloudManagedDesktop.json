@@ -7,7 +7,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getProvisionedCloudPcs",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getProvisionedCloudPcs](https://learn.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) for end-user.",
+                    "Description": "Added the [getProvisionedCloudPcs](https://learn.microsoft.com/en-us/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) for end-user.",
                     "Target": "cloudPC"
                 }
             ],
