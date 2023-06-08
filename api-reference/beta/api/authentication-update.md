@@ -1,5 +1,5 @@
 ---
-title: "Update signInPreferences"
+title: "Update authentication signInPreferences"
 description: "Update the properties of a user's authentication sign in preferences."
 author: "jpettere"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Update signInPreferences
+# Update authentication signInPreferences
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
