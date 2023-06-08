@@ -8,21 +8,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Drives/Item/Items/Item/Invite"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewInvitePostRequestBody()
+requestBody := graphdrives.NewInvitePostRequestBody()
 
 
 driveRecipient := graphmodels.NewDriveRecipient()
 email := "robin@contoso.org"
 driveRecipient.SetEmail(&email) 
 
-recipients := []graphmodels.DriveRecipientable {
+recipients := []graphdrives.DriveRecipientable {
 	driveRecipient,
 
 }

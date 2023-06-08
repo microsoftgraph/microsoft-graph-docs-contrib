@@ -8,17 +8,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Communications/Calls/Item/Answer"
+	  graphcommunications "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAnswerPostRequestBody()
+requestBody := graphcommunications.NewAnswerPostRequestBody()
 callbackUri := "https://bot.contoso.com/api/calls"
 requestBody.SetCallbackUri(&callbackUri) 
-acceptedModalities := []graphmodels.Modalityable {
+acceptedModalities := []graphcommunications.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
 	requestBody.SetModality(&modality) 
 

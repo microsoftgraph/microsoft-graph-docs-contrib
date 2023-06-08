@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationMethodsPolicy()
@@ -43,6 +43,21 @@ includeTargets := []graphmodels.AuthenticationMethodsRegistrationCampaignInclude
 authenticationMethodsRegistrationCampaign.SetIncludeTargets(includeTargets)
 registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)
 requestBody.SetRegistrationEnforcement(registrationEnforcement)
+additionalData := map[string]interface{}{
+reportSuspiciousActivitySettings := graphmodels.New()
+state := "enabled"
+reportSuspiciousActivitySettings.SetState(&state) 
+includeTarget := graphmodels.New()
+targetType := "group"
+includeTarget.SetTargetType(&targetType) 
+id := "all_users"
+includeTarget.SetId(&id) 
+	reportSuspiciousActivitySettings.SetIncludeTarget(includeTarget)
+voiceReportingCode := int32(0)
+reportSuspiciousActivitySettings.SetVoiceReportingCode(&voiceReportingCode) 
+	requestBody.SetReportSuspiciousActivitySettings(reportSuspiciousActivitySettings)
+}
+requestBody.SetAdditionalData(additionalData)
 
 result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 

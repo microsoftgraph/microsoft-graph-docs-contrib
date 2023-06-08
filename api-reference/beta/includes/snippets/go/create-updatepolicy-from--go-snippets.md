@@ -8,30 +8,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//windowsUpdates"
+	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewUpdatePolicy()
-audience := graphmodels.NewDeploymentAudience()
+requestBody := graphmodelswindowsupdates.NewUpdatePolicy()
+audience := graphmodelswindowsupdates.NewDeploymentAudience()
 id := "8c4eb1eb-d7a3-4633-8e2f-f926e82df08e"
 audience.SetId(&id) 
 requestBody.SetAudience(audience)
 
 
-complianceChange := graphmodels.NewComplianceChange()
+complianceChange := graphmodelswindowsupdates.NewComplianceChange()
 
-complianceChanges := []graphmodels.ComplianceChangeable {
+complianceChanges := []graphmodelswindowsupdates.ComplianceChangeable {
 	complianceChange,
 
 }
 requestBody.SetComplianceChanges(complianceChanges)
 
 
-complianceChangeRule := graphmodels.NewComplianceChangeRule()
+complianceChangeRule := graphmodelswindowsupdates.NewComplianceChangeRule()
 additionalData := map[string]interface{}{
 contentFilter := graphmodels.New()
 	complianceChangeRule.SetContentFilter(contentFilter)
@@ -39,14 +39,14 @@ contentFilter := graphmodels.New()
 }
 complianceChangeRule.SetAdditionalData(additionalData)
 
-complianceChangeRules := []graphmodels.ComplianceChangeRuleable {
+complianceChangeRules := []graphmodelswindowsupdates.ComplianceChangeRuleable {
 	complianceChangeRule,
 
 }
 requestBody.SetComplianceChangeRules(complianceChangeRules)
-deploymentSettings := graphmodels.NewDeploymentSettings()
-schedule := graphmodels.NewScheduleSettings()
-gradualRollout := graphmodels.NewGradualRolloutSettings()
+deploymentSettings := graphmodelswindowsupdates.NewDeploymentSettings()
+schedule := graphmodelswindowsupdates.NewScheduleSettings()
+gradualRollout := graphmodelswindowsupdates.NewGradualRolloutSettings()
 durationBetweenOffers , err := abstractions.ParseISODuration("P1D")
 gradualRollout.SetDurationBetweenOffers(&durationBetweenOffers) 
 additionalData := map[string]interface{}{

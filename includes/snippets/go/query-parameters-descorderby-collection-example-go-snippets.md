@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.ItemMailFolderItemMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemMailFolderItemMessagesRequestBuilderGetQueryParameters{
 	Orderby: [] string {"from/emailAddress/name desc","subject"},
 }
-configuration := &graphconfig.ItemMailFolderItemMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMailFolderItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
