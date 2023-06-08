@@ -1043,7 +1043,7 @@
           "ApiChange": "Enumeration",
           "ChangedApiName": "teamworkdevices",
           "ChangeType": "Addition",
-          "Description": "Added the **sipAnalog** enumeration type.",
+          "Description": "Added the `sipAnalog` value to the **teamworkDeviceType** enumeration.",
           "Target": "teamworkdevices"
         }
       ],
