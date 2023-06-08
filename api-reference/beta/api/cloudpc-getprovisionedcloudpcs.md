@@ -46,8 +46,8 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='{
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|groupId|Guid|The unique identifier for Azure Active Directory (AAD) user group.|
-|servicePlanId|Guid|The unique identifier of the service plan.|
+|groupId|String|The unique identifier for Azure Active Directory (AAD) user group.|
+|servicePlanId|String|The unique identifier of the service plan.|
 
 ## Request body
 
