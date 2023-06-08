@@ -1,0 +1,15 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+
+
+await client.policies.permission_grant_policies.by_permission_grant_policie_id('permissionGrantPolicy-id').excludes.by_exclude_id('permissionGrantConditionSet-id').delete()
+
+
+```
