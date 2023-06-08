@@ -114,37 +114,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Enable installation of apps that require resource-specific consent in the personal scope of users.
-
-#### Request
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_teamsappsettings_2"
-}
--->
-```http
-PATCH https://graph.microsoft.com/beta/teamwork/teamsAppSettings
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.teamsAppSettings",
-  "isUserPersonalScopeResourceSpecificConsentEnabled": "true"
-}
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response"
-} -->
-
-```http
-HTTP/1.1 204 No Content
-```
-
-### Example 3: Allow Teams users to request admins for access to certain Teams Apps.
+### Example 2: Allow Teams users to request admins for access to certain Teams Apps.
 
 #### Request
 
@@ -189,6 +159,36 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Enable installation of apps that require resource-specific consent in the personal scope of users.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_teamsappsettings_2"
+}
+-->
+```http
+PATCH https://graph.microsoft.com/beta/teamwork/teamsAppSettings
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.teamsAppSettings",
+  "isUserPersonalScopeResourceSpecificConsentEnabled": "true"
+}
+```
 
 #### Response
 
