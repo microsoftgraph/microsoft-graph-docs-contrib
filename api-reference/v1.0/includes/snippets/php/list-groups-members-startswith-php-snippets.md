@@ -17,7 +17,7 @@ $requestConfiguration->headers = $headers;
 
 $queryParameters = MembersRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->count = true;
-$queryParameters->filter = "startswith(displayName,%20'a')";
+$queryParameters->filter = "startswith(displayName, 'a')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

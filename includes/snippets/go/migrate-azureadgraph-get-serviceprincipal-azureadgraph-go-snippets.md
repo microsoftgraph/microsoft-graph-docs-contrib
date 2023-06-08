@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
 requestFilter := "appId eq '00000002-0000-0000-c000-000000000000'"
 
-requestParameters := &graphconfig.ServicePrincipalsRequestBuilderGetQueryParameters{
+requestParameters := &graphserviceprincipals.ServicePrincipalsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.ServicePrincipalsRequestBuilderGetRequestConfiguration{
+configuration := &graphserviceprincipals.ServicePrincipalsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

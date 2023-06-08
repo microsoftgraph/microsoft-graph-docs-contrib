@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Communications/Calls/Item/Redirect"
+	  graphcommunications "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewRedirectPostRequestBody()
+requestBody := graphcommunications.NewRedirectPostRequestBody()
 
 
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
@@ -29,7 +30,7 @@ phone.SetId(&id)
 identity.SetAdditionalData(additionalData)
 invitationParticipantInfo.SetIdentity(identity)
 
-targets := []graphmodels.InvitationParticipantInfoable {
+targets := []graphcommunications.InvitationParticipantInfoable {
 	invitationParticipantInfo,
 
 }

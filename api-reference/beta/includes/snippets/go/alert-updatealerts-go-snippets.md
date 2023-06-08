@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Security/Alerts/UpdateAlerts"
+	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewUpdateAlertsPostRequestBody()
+requestBody := graphsecurity.NewUpdateAlertsPostRequestBody()
 
 
 alert := graphmodels.NewAlert()
@@ -52,7 +53,7 @@ vendor := "String"
 vendorInformation.SetVendor(&vendor) 
 alert.SetVendorInformation(vendorInformation)
 
-value := []graphmodels.Objectable {
+value := []graphsecurity.Objectable {
 	alert,
 
 }
