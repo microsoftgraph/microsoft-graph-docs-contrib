@@ -1,0 +1,75 @@
+---
+title: "branchSite resource type"
+description: "**TODO: Add Description**"
+author: "Moti-ba"
+ms.localizationpriority: medium
+ms.prod: identity-and-access
+doc_type: resourcePageType
+---
+
+# branchSite resource type
+
+Namespace: microsoft.graph.networkaccess
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+**TODO: Add Description**
+
+
+Inherits from [microsoft.graph.entity](../resources/entity.md).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List branchSites](../api/networkaccess-networkaccessroot-list-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) collection|Get a list of the [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) objects and their properties.|
+|[Create branchSite](../api/networkaccess-networkaccessroot-post-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Create a new [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
+|[Get branchSite](../api/networkaccess-branchsite-get.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
+|[Update branchSite](../api/networkaccess-branchsite-update.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Update the properties of a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
+|[Delete branchSite](../api/networkaccess-networkaccessroot-delete-branches.md)|None|Delete a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
+|[List deviceLinks](../api/networkaccess-branchsite-list-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Get the deviceLink resources from the deviceLinks navigation property.|
+|[Create deviceLink](../api/networkaccess-branchsite-post-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md)|Create a new deviceLink object.|
+|[List forwardingProfiles](../api/networkaccess-networkaccessroot-list-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Get the forwardingProfile resources from the forwardingProfiles navigation property.|
+|[Create forwardingProfile](../api/networkaccess-branchsite-post-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md)|Create a new forwardingProfile object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|bandwidthCapacity|Int64|**TODO: Add Description**|
+|connectivityState|microsoft.graph.networkaccess.connectivityState|**TODO: Add Description**.The possible values are: `pending`, `connected`, `inactive`, `error`, `unknownFutureValue`.|
+|country|String|**TODO: Add Description**|
+|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+|name|String|**TODO: Add Description**|
+|region|String|**TODO: Add Description**|
+|version|String|**TODO: Add Description**|
+
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|deviceLinks|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|**TODO: Add Description**|
+|forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|**TODO: Add Description**|
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.networkaccess.branchSite",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.networkaccess.branchSite",
+  "id": "String (identifier)",
+  "name": "String",
+  "country": "String",
+  "region": "String",
+  "connectivityState": "String",
+  "bandwidthCapacity": "Integer",
+  "version": "String",
+  "lastModifiedDateTime": "String (timestamp)"
+}
+```
+
