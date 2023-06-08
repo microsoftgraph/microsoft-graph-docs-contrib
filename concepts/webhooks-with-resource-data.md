@@ -11,21 +11,9 @@ ms.date: 12/02/2022
 
 # Set up change notifications that include resource data
 
-Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications. Your app can then run its business logic without having to make a separate API call to fetch the changed resource. As a result, the app performs better by making fewer API calls, which is beneficial in large scale scenarios.
+Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications. Change notifications that include the resource change data are called rich notifications. Your app can use rich notifications to run your business logic without having to make a separate API call to fetch the changed resource.
 
-Including resource data as part of change notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
-
-- [Handle](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications) special subscription lifecycle notifications to maintain an uninterrupted flow of data. Microsoft Graph sends lifecycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including resource data in change notifications.
-- [Validate](#validating-the-authenticity-of-notifications) the authenticity of change notifications as having originated from Microsoft Graph.
-- [Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through change notifications.
-
-## Resource data in notification payload
-
-In general, this type of change notifications include the following resource data in the payload:
-
-- ID and type of the changed resource instance, returned in the **resourceData** property.
-- All the property values of that resource instance, encrypted as specified in the subscription, returned in the **encryptedContent** property.
-- Or, depending on the resource, specific properties returned in the **resourceData** property. To get only specific properties, specify them as part of the **resource** URL in the subscription, using a `$select` parameter.  
+This article will guide you through the process for setting up rich notifications in your application.
 
 ## Supported resources
 
@@ -66,12 +54,24 @@ Change notifications for **contact**, **event**, or **message** resources includ
 
 The rest of this article walks through an example to subscribe to change notifications for **chatMessage** resources in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance. For more details about **chatMessage** subscriptions, see [Get change notifications for chat and channel messages](teams-changenotifications-chatmessage.md).
 
+## Resource data in notification payload
+
+In general, this type of change notifications include the following resource data in the payload:
+
+- ID and type of the changed resource instance, returned in the **resourceData** property.
+- All the property values of that resource instance, encrypted as specified in the subscription, returned in the **encryptedContent** property.
+- Or, depending on the resource, specific properties returned in the **resourceData** property. To get only specific properties, specify them as part of the **resource** URL in the subscription, using a `$select` parameter.  
+
 ## Creating a subscription
 
-To have resource data included in change notifications, you **must** specify the following properties, in addition to those that are usually specified when [creating a subscription](change-notifications-delivery-webhooks.md#create-a-subscription):
+Rich notifications are setup in the same way as [basic change notifications](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&tabs=http).
+
+For security, Microsoft Graph will encrypt the resource data returned in a rich notification.  You must provide a public encryption key as part of creating the subscription. Details for creating and managing encryption keys are [here](#decrypting-resource-data-from-change-notifications)
+
+To create a subscription that includes rich notifications, you **must** specify the following properties: 
 
 - **includeResourceData** which should be set to `true` to explicitly request resource data.
-- **encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](#decrypting-resource-data-from-change-notifications).
+- **encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt the resource data it returns to your app.
 - **encryptionCertificateId** which is your own identifier for the certificate. Use this ID to match in each change notification, which certificate to use for decryption.
 
 Keep the following in mind:
