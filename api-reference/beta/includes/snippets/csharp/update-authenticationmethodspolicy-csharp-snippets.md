@@ -30,6 +30,21 @@ var requestBody = new AuthenticationMethodsPolicy
 			},
 		},
 	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"reportSuspiciousActivitySettings" , new 
+			{
+				State = "enabled",
+				IncludeTarget = new 
+				{
+					TargetType = "group",
+					Id = "all_users",
+				},
+				VoiceReportingCode = 0,
+			}
+		},
+	},
 };
 var result = await graphClient.Policies.AuthenticationMethodsPolicy.PatchAsync(requestBody);
 
