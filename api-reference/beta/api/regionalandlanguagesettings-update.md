@@ -51,7 +51,7 @@ PATCH /settings/regionalAndLanguageSettings
  
 ## Response
 
-If successful, this method returns a `200 OK` response code and the updated [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) object.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
