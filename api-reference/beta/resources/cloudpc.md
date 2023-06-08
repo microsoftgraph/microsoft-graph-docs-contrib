@@ -89,6 +89,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ### cloudPcStatus values
+The following table lists the members of an `[evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this evolvable enum: movingRegion .
 
 |Member|Description|
 |:---|:---|
@@ -102,8 +103,9 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |resizing|The Cloud PC is resizing.|
 |pendingProvision|The provisioning is pending on the Cloud PC. In this case, the number of Cloud PCs in grace period is more than the number of total available licenses. |
 |restoring|The Cloud PC is restoring.|
-|movingRegion|Indicates that Cloud PC is being moved from one region to another.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|movingRegion|Indicates that Cloud PC is being moved from one region to another.|
+
 
 ### shiftWorkCloudPcAccessState values
 The following table lists the members of an [evolvable enumeration](#shiftworkcloudpcaccessstate-values). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `standbyMode`.
