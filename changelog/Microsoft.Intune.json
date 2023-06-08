@@ -9,15 +9,7 @@
           "ChangeType": "Deletion",
           "Description": "Removed the **mobileAppRelationshipState** resource type.",
           "Target": "mobileAppRelationshipState"
-        },
-        {
-          "Id": "27b55466-1caa-42c1-9a31-2e49a8380d9d",
-          "ApiChange": "Resource",
-          "ChangedApiName": "macOSPkgApp",
-          "ChangeType": "Addition",
-          "Description": "Added the [macOSPkgApp](https://learn.microsoft.com/graph/api/resources/intune-macOSPkgApp?view=graph-rest-beta) resource",
-          "Target": "macOSPkgApp"
-        },
+        },        
         {
           "Id": "27b55466-1caa-42c1-9a31-2e49a8380d9d",
           "ApiChange": "Resource",
@@ -77,46 +69,6 @@
         {
           "Id": "9ece8271-3ef7-4925-96d2-5f36627993d0",
           "ApiChange": "Enumeration",
-          "ChangedApiName": "deviceHealthScriptType",
-          "ChangeType": "Addition",
-          "Description": "Added the **deviceHealthScriptType** enumeration type.",
-          "Target": "deviceHealthScriptType"
-        },
-        {
-          "Id": "9ece8271-3ef7-4925-96d2-5f36627993d0",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "privilegeManagementElevationType",
-          "ChangeType": "Addition",
-          "Description": "Added the **privilegeManagementElevationType** enumeration type.",
-          "Target": "privilegeManagementElevationType"
-        },
-        {
-          "Id": "9ece8271-3ef7-4925-96d2-5f36627993d0",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "userExperienceAnalyticsAnomalyCorrelationGroupPrevalence",
-          "ChangeType": "Addition",
-          "Description": "Added the **userExperienceAnalyticsAnomalyCorrelationGroupPrevalence** enumeration type.",
-          "Target": "userExperienceAnalyticsAnomalyCorrelationGroupPrevalence"
-        },
-        {
-          "Id": "9ece8271-3ef7-4925-96d2-5f36627993d0",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "userExperienceAnalyticsAnomalyDeviceFeatureType",
-          "ChangeType": "Addition",
-          "Description": "Added the **userExperienceAnalyticsAnomalyDeviceFeatureType** enumeration type.",
-          "Target": "userExperienceAnalyticsAnomalyDeviceFeatureType"
-        },
-        {
-          "Id": "9ece8271-3ef7-4925-96d2-5f36627993d0",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "userExperienceAnalyticsDeviceStatus",
-          "ChangeType": "Addition",
-          "Description": "Added the **userExperienceAnalyticsDeviceStatus** enumeration type.",
-          "Target": "userExperienceAnalyticsDeviceStatus"
-        },
-        {
-          "Id": "9ece8271-3ef7-4925-96d2-5f36627993d0",
-          "ApiChange": "Enumeration",
           "ChangedApiName": "warrantyType",
           "ChangeType": "Deletion",
           "Description": "Removed the **warrantyType** enumeration type.",
@@ -156,43 +108,11 @@
         },
         {
           "Id": "9ece8271-3ef7-4925-96d2-5f36627993d0",
-          "ApiChange": "Property",
-          "ChangedApiName": "deviceHealthScriptType",
-          "ChangeType": "Addition",
-          "Description": "Added the `deviceHealthScriptType` property to the [deviceHealthScript](https://learn.microsoft.com/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) resource.",
-          "Target": "deviceHealthScript"
-        },
-        {
-          "Id": "9ece8271-3ef7-4925-96d2-5f36627993d0",
-          "ApiChange": "Resource",
-          "ChangedApiName": "privilegeManagementElevations",
-          "ChangeType": "Addition",
-          "Description": "Added the **privilegeManagementElevations** relationship to the [deviceManagement](https://learn.microsoft.com/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) resource.",
-          "Target": "deviceManagement"
-        },
-        {
-          "Id": "9ece8271-3ef7-4925-96d2-5f36627993d0",
-          "ApiChange": "Resource",
-          "ChangedApiName": "userExperienceAnalyticsAnomalyCorrelationGroupOverview",
-          "ChangeType": "Addition",
-          "Description": "Added the **userExperienceAnalyticsAnomalyCorrelationGroupOverview** relationship to the [deviceManagement](https://learn.microsoft.com/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) resource.",
-          "Target": "deviceManagement"
-        },
-        {
-          "Id": "9ece8271-3ef7-4925-96d2-5f36627993d0",
           "ApiChange": "Resource",
           "ChangedApiName": "oemWarrantyInformationOnboarding",
           "ChangeType": "Deletion",
           "Description": "Removed the **oemWarrantyInformationOnboarding** resource type.",
           "Target": "oemWarrantyInformationOnboarding"
-        },
-        {
-          "Id": "9ece8271-3ef7-4925-96d2-5f36627993d0",
-          "ApiChange": "Resource",
-          "ChangedApiName": "privilegeManagementElevation",
-          "ChangeType": "Addition",
-          "Description": "Added the [privilegeManagementElevation](https://learn.microsoft.com/graph/api/resources/intune-privilegeManagementElevation?view=graph-rest-beta) resource",
-          "Target": "privilegeManagementElevation"
         },
         {
           "Id": "9ece8271-3ef7-4925-96d2-5f36627993d0",
