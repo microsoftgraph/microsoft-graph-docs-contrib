@@ -175,6 +175,7 @@ Content-type: application/json
     "displayName": "Contoso",
     "isMultipleDataLocationsForServicesEnabled": null,
     "marketingNotificationEmails": [],
+    "onPremisesLastPasswordSyncDateTime": "2021-08-02T10:30:06Z",
     "onPremisesLastSyncDateTime": null,
     "onPremisesSyncEnabled": null,
     "partnerTenantType": "ResellerPartnerDelegatedAdmin",
