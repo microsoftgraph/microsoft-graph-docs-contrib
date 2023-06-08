@@ -17,7 +17,7 @@ $requestConfiguration->headers = $headers;
 
 $queryParameters = ServicePrincipalsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","appId","displayName"];
-$queryParameters->filter = "startswith(displayName,%20'salesforce')";
+$queryParameters->filter = "startswith(displayName, 'salesforce')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

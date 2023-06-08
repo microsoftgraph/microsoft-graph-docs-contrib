@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/DeviceManagement/VirtualEndpoint/UserSettings/Item/Assign"
+	  graphdevicemanagement "github.com/microsoftgraph/msgraph-beta-sdk-go/devicemanagement"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAssignPostRequestBody()
+requestBody := graphdevicemanagement.NewAssignPostRequestBody()
 
 
 cloudPcUserSettingAssignment := graphmodels.NewCloudPcUserSettingAssignment()
@@ -28,7 +29,7 @@ additionalData := map[string]interface{}{
 target.SetAdditionalData(additionalData)
 cloudPcUserSettingAssignment.SetTarget(target)
 
-assignments := []graphmodels.Objectable {
+assignments := []graphdevicemanagement.Objectable {
 	cloudPcUserSettingAssignment,
 
 }
