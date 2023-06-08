@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Groups/Item/AssignLicense"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAssignLicensePostRequestBody()
+requestBody := graphgroups.NewAssignLicensePostRequestBody()
 
 
 assignedLicense := graphmodels.NewAssignedLicense()
@@ -39,7 +40,7 @@ assignedLicense1.SetDisabledPlans(disabledPlans)
 skuId := uuid.MustParse("c7df2760-2c81-4ef7-b578-5b5392b571df")
 assignedLicense1.SetSkuId(&skuId) 
 
-addLicenses := []graphmodels.AssignedLicenseable {
+addLicenses := []graphgroups.AssignedLicenseable {
 	assignedLicense,
 	assignedLicense1,
 

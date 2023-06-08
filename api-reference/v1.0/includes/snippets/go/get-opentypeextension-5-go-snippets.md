@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "Extensions/any"
+requestFilter := "Extensions/any(f:f/id eq 'Com.Contoso.Referral')"
 
-requestParameters := &graphconfig.ItemMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemMessagesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
-	Expand: [] string {"Extensions($filter=id%20eq%20'Com.Contoso.Referral')"},
+	Expand: [] string {"Extensions($filter=id eq 'Com.Contoso.Referral')"},
 }
-configuration := &graphconfig.ItemMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
