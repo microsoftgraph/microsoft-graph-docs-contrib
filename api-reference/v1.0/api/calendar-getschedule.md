@@ -49,6 +49,8 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.
+> **Note**: Due to [KB 2962513](https://learn.microsoft.com/en-us/exchange/troubleshoot/calendars/cannot-view-another-user-calendar-free-busy-information) when the user's calendar has a time slot that contains more than 1000 entries. The response code: **5006** with message **"The result set contains too many calendar entries. The allowed size is 1000; the actual size is ...** will be returned.
+> 
 ## Example
 ##### Request
 The following example gets the availability information for two users for the specified date, time, and time zone.
