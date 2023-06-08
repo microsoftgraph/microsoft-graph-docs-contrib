@@ -9,21 +9,20 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Drives/Item/Items/Item/Workbook/RefreshSession"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("workbook-session-id", "{session-id}")
 
-configuration := &graphconfig.DriveItemItemItemWorkbookRefreshSessionRequestBuilderPostRequestConfiguration{
+configuration := &graphdrives.DriveItemItemItemWorkbookRefreshSessionRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewRefreshSessionPostRequestBody()
+requestBody := graphdrives.NewRefreshSessionPostRequestBody()
 
 graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().RefreshSession().Post(context.Background(), requestBody, configuration)
 
