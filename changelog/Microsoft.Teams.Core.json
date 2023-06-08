@@ -6448,6 +6448,24 @@
       "CreatedDateTime": "2023-04-10T00:00:00",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e04528be-94f6-4bc5-9485-9b71da7f4807",
+          "ApiChange": "Property",
+          "ChangedApiName": "isUserPersonalScopeResourceSpecificConsentEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isUserPersonalScopeResourceSpecificConsentEnabled** property to the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-beta) resource.",
+          "Target": "teamsAppSettings"
+        }
+      ],
+      "Id": "e04528be-94f6-4bc5-9485-9b71da7f4807",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-18T17:17:00.1619923Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }

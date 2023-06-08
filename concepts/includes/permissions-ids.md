@@ -533,6 +533,8 @@ ms.date: 04/14/2023
 | RecordsManagement.Read.All                              | Delegated   | 07f995eb-fc67-4522-ad66-2b8ca8ea3efd |
 | RecordsManagement.ReadWrite.All                         | Application | eb158f57-df43-4751-8b21-b8932adb3d34 |
 | RecordsManagement.ReadWrite.All                         | Delegated   | f2833d75-a4e6-40ab-86d4-6dfe73c97605 |
+| ResourceSpecificPermissionGrant.ReadForUser.All         | Application | acfca4d5-f49f-40ed-9648-84068b474c73 |
+| ResourceSpecificPermissionGrant.ReadForUser             | Delegated   | f1d91a8f-88e7-4774-8401-b668d5bca0c5 |
 | Reports.Read.All                                        | Application | 230c1aed-a721-4c5d-9cb4-a90514e508ef |
 | Reports.Read.All                                        | Delegated   | 02e97553-ed7b-43d0-ab3c-f8bace0d040c |
 | ReportSettings.Read.All                                 | Application | ee353f83-55ef-4b78-82da-555bfa2b4b95 |

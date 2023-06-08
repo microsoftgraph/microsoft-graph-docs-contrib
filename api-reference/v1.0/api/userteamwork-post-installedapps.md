@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser, TeamsAppInstallation.ReadWriteAndConsentSelfForUser, TeamsAppInstallation.ReadWriteAndConsentForUser |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+|Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ The request body should contain the ID of the existing catalog app to be added.
 
 If successful, this method returns a `201 Created` response code. It does not return anything in the response body.
 
-## Example
+## Example 1: Install app for user
 
 ### Request
 
@@ -104,6 +104,41 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
+} -->
+
+```http
+HTTP/1.1 201 Created
+```
+### Example 2: Install app for a user and consent to the resource-specific permissions required by the app
+To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "user_add_teamsApp"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps
+Content-Type: application/json
+
+{
+	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a",
+    "consentedPermissionSet": {
+        "resourceSpecificPermissions": [
+        {
+          "permissionValue": "TeamsActivity.Send.User",
+          "permissionType": "Application"
+        }]
+      }
+}
+```
+#### Response
+
+<!-- {
+  "blockType": "response"
 } -->
 
 ```http

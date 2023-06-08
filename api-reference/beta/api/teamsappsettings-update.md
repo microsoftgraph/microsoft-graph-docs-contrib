@@ -114,7 +114,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Enable installation of apps that require resource-specific consent in User Personal Scope.
+### Example 2: Enable installation of apps that require resource-specific consent in the personal scope of users.
 
 #### Request
 
