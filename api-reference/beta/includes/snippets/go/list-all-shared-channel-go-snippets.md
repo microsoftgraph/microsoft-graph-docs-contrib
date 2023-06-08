@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
 requestFilter := "membershipType eq 'shared'"
 
-requestParameters := &graphconfig.TeamItemAllChannelsRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamItemAllChannelsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TeamItemAllChannelsRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamItemAllChannelsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.ApplicationTemplates.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "displayName eq 'AWS IAM Identity Center '";
+	requestConfiguration.QueryParameters.Filter = "displayName eq 'AWS IAM Identity Center (successor to AWS Single Sign-On)'";
 });
 
 

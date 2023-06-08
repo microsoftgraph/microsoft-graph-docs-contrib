@@ -487,9 +487,9 @@ items:
                     href: accessreviews-scope-concept.md
                   - name: Assign reviewers
                     href: accessreviews-reviewers-concept.md
-              - name: Use PIM to manage Azure AD roles
+              - name: Use PIM to manage Azure AD roles and groups
                 items:
-                  - name: Rules for Azure AD roles
+                  - name: Rules in PIM
                     href: identity-governance-pim-rules-overview.md
                     displayName: PIM rules, privileged identity management settings
                   - name: Customize and update rules
@@ -739,6 +739,8 @@ items:
                 href: teams-change-notification-in-microsoft-teams-overview.md
               - name: Subscribe for online meetings
                 href: changenotifications-for-onlinemeeting.md
+              - name: Subscribe for virtual events
+                href: changenotifications-for-virtualevent.md
           - name: Groups and teams
             items:
               - name: Create a group and team

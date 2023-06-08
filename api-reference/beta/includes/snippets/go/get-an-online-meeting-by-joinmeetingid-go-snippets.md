@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
 requestFilter := "joinMeetingIdSettings/joinMeetingId eq '1234567890'"
 
-requestParameters := &graphconfig.ItemOnlineMeetingsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemOnlineMeetingsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.ItemOnlineMeetingsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemOnlineMeetingsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
