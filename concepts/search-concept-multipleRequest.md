@@ -39,15 +39,11 @@ Content-Type: application/json
     {
       "entityTypes": [
         "listItem",
-        "site",
-        "externalItem"
+        "site"
       ],
       "query": {
         "queryString": "POC"
       },
-      "contentSources":[
-        "/external/connections/*"
-      ],
       "from": 0,
       "size": 25
     }
@@ -110,12 +106,12 @@ Content-type: application/json
       ],
       "hitsContainers": [
         {
-          "total": 4,
+          "total": 2,
           "moreResultsAvailable": false,
           "hits": [
             {
               "hitId": "adce5789-c324-485a-a8bf-66bb809527ff",
-              "rank": 1,
+              "rank": 3,
               "summary": "Test listItem 1",
               "resource": {
                 "@odata.type": "#microsoft.graph.listItem",
@@ -126,33 +122,13 @@ Content-type: application/json
             },
             {
               "hitId": "microsoft.sharepoint.com,9fb3f597-167e-4c3d-b5e6-1ddc18d22d48,c53cd46e-9033-4b42-af94-0ad76ab75fd0",
-              "rank": 2,
+              "rank": 4,
               "summary": "Test site",
               "resource": {
                 "@odata.type": "#microsoft.graph.site",
                 "createdDateTime": "2019-10-07T10:00:08Z",
                 "lastModifiedDateTime": "2019-10-07T10:00:11Z",
                 "title": "Test site summary POC"
-              }
-            },
-            {
-              "hitId": "adce5789-c324-485a-a8bf-66bb809527ff=",
-              "rank": 3,
-              "summary": "Test externalItem",
-              "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
-                "title": "Test externalItem summary POC",
-              }
-            },
-            {
-              "hitId": "ad60906b-1317-495c-b566-7b8ce1be5555",
-              "rank": 4,
-              "summary": "Test listItem 2",
-              "resource": {
-                "@odata.type": "#microsoft.graph.listItem",
-                "createdDateTime": "2019-10-07T10:00:08Z",
-                "lastModifiedDateTime": "2019-10-07T10:00:11Z",
-                "title": "Test listItem summary 2 POC"
               }
             }
           ]
