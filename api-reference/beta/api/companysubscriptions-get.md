@@ -84,10 +84,10 @@ Content-length: 450
 
 {
   "createdDateTime": "2023-01-01T00:00:00Z",
+  "ommerceSubscriptionId": "f9c1ea2d-2c6e-4717-8c3b-7130812d70ba",
   "id": "860697e3-b0aa-4196-a6c6-7ec361ed58f7",
   "isTrial": false,
   "nextLifecycleDateTime": "2023-02-01T00:00:00Z",
-  "ocpSubscriptionId": "f9c1ea2d-2c6e-4717-8c3b-7130812d70ba",
   "serviceStatus": [
     {
       "appliesTo": "User",
@@ -100,6 +100,9 @@ Content-length: 450
   "skuId": "0816ccb9-3785-4d19-bf78-6c53e2106509",
   "skuPartNumber": "MyPartNumber",
   "status": "Enabled",
-  "totalLicenses": 25
+  "totalLicenses": 25,
+  "ownerId": "fe04f19f-d924-42b7-9dee-edf4e3fab7f6",
+  "ownerTenantId": "331af819-4e0b-49f7-a6bf-14e1165ad3a0",
+  "ownerType": "User"
 }
 ```
