@@ -1,7 +1,7 @@
 ---
 title: "subscription: reauthorize"
 description: "Reauthorize a subscription when you receive a reauthorizationRequired challenge."
-author: "jumasure"
+author: "keylimesoda"
 ms.localizationpriority: medium
 ms.prod: "change-notifications"
 doc_type: apiPageType
