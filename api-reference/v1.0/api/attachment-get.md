@@ -36,7 +36,7 @@ For an item attachment that is a [contact](../resources/contact.md), [event](../
 
 Attempting to get the `$value` of a reference attachment returns HTTP 405.
 > [!NOTE]
-> Depending on the requested files MIME type the byte stream output maybe in the response via link to email attachment.
+> When certain files are requested, MIME can encode the byte stream output in the response and provide a link to download the file as an email attachment.
 > 
 ## Permissions
 
