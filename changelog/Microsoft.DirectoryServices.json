@@ -13729,20 +13729,28 @@
     {
       "ChangeList": [
         {
-          "Id": "4b2c8f86-11b9-4f0e-9afd-bb43d46db4c2",
-          "ApiChange": "Property",
-          "ChangedApiName": "isLicenseReconciliationNeeded",
+          "Id": "4fc9507e-1080-457a-a3a1-9da4d744d1c6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesSipInfo",
           "ChangeType": "Addition",
-          "Description": "Added the **isLicenseReconciliationNeeded** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Description": "Added the [onPremisesSipInfo](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesSipInfo?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesSipInfo"
+        },
+        {
+          "Id": "4fc9507e-1080-457a-a3a1-9da4d744d1c6",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesSipInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the `onPremisesSipInfo` property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         }
       ],
-      "Id": "4b2c8f86-11b9-4f0e-9afd-bb43d46db4c2",
+      "Id": "4fc9507e-1080-457a-a3a1-9da4d744d1c6",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-05-15T08:54:08.6528325Z",
-      "WorkloadArea": "Users",
-      "SubArea": ""
+      "CreatedDateTime": "2023-06-08T09:55:08.8653576Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
