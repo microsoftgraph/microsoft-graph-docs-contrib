@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.IdentityGovernance.AppConsent.AppConsentRequests["{appConsentRequest-id}"].UserConsentRequests["{userConsentRequest-id}"].GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = " ";
+	requestConfiguration.QueryParameters.Filter = " (status eq 'Completed')";
 });
 
 

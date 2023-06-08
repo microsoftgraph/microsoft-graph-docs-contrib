@@ -8,15 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/AssignLicense"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAssignLicensePostRequestBody()
-addLicenses := []graphmodels.AssignedLicenseable {
+requestBody := graphusers.NewAssignLicensePostRequestBody()
+addLicenses := []graphusers.AssignedLicenseable {
 
 }
 requestBody.SetAddLicenses(addLicenses)
