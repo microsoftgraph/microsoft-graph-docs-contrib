@@ -3196,12 +3196,12 @@
                 "ApiChange": "Member",
                 "ChangedApiName": "permissionCheckNoWindows365NetworkUserRole",
                 "ChangeType": "Addition",
-                "Description": "Added the **permissionCheckNoWindows365NetworkUserRole** member to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
+                "Description": "Added the `permissionCheckNoWindows365NetworkUserRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration .",
                 "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
             },
             {
                 "Id": "a646af91-1226-4824-9e44-e91b7d27ef4a",
-                "ApiChange": "Property",
+                "ApiChange": "Member",
                 "ChangedApiName": "permissionCheckNoWindows365NetworkInterfaceContributorRole",
                 "ChangeType": "Addition",
                 "Description": "Added the `permissionCheckNoWindows365NetworkInterfaceContributorRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
