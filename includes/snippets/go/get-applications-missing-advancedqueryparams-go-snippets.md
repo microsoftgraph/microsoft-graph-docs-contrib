@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/applications"
+	  graphapplications "github.com/microsoftgraph/msgraph-sdk-go/applications"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
 requestSearch := "\"displayName:Browser\""
 
-requestParameters := &graphconfig.ApplicationsRequestBuilderGetQueryParameters{
+requestParameters := &graphapplications.ApplicationsRequestBuilderGetQueryParameters{
 	Search: &requestSearch,
 }
-configuration := &graphconfig.ApplicationsRequestBuilderGetRequestConfiguration{
+configuration := &graphapplications.ApplicationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

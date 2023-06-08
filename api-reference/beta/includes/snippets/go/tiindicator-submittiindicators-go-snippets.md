@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Security/TiIndicators/SubmitTiIndicators"
+	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSubmitTiIndicatorsPostRequestBody()
+requestBody := graphsecurity.NewSubmitTiIndicatorsPostRequestBody()
 
 
 tiIndicator := graphmodels.NewTiIndicator()
@@ -93,7 +94,7 @@ tiIndicator1.SetThreatType(&threatType)
 tlpLevel := graphmodels.GREEN_TLPLEVEL 
 tiIndicator1.SetTlpLevel(&tlpLevel) 
 
-value := []graphmodels.Objectable {
+value := []graphsecurity.Objectable {
 	tiIndicator,
 	tiIndicator1,
 
