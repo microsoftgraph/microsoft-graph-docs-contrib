@@ -163,10 +163,72 @@ Content-type: application/json
 }
 ```
 
+## Bad Request Examples
+
+### Example 1: Search with the same entity types in seperate requst blocks in the request body
+
+#### Request
+
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "bookmark"
+      ],
+      "query": {
+        "queryString": "POC"
+      },
+      "from": 0,
+      "size": 25
+    },
+    {
+      "entityTypes": [
+        "bookmark",
+      ],
+      "query": {
+        "queryString": "POC"
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
+}
+```
+
+#### Response
+
+The following is an example of bad request response.
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "SearchRequest Invalid (Entity types must not be duplicates in multiple entity requests)",
+        "target": "",
+        "details": [
+            {
+                "code": "Microsoft.SubstrateSearch.Api.ErrorReporting.ResourceBasedExceptions.BadRequestException",
+                "message": "Entity types must not be duplicates in multiple entity requests",
+                "target": "",
+                "httpCode": 400
+            }
+        ],
+        "httpCode": 400
+    }
+}
+```
+
 ## Known limitations
 
 - Properties **from**, **size** from different [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in the request body should be the same. And properties **queryString** of [searchQuery](graph/api/resources/searchquery?view=graph-rest-beta) from different searchRequest should be the same.
-- Duplicate entitytype across different search requests in the request body is not allowed.
+- Duplicate entitytype across different search requests in the request body is not allowed. For example, you cannot have a "bookmark" block and another "bookmark" block.".
 - File entity type(`site`, `drive`, `driveItem`, `list`,`listItem`) can only occur once across different entity requests.
 - Speller can only be used once and in the first entity request.
 
