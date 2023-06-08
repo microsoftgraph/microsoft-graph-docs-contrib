@@ -201,6 +201,66 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Search with the file entity types in seperate requst blocks in the request body
+
+#### Request
+
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "site"
+      ],
+      "query": {
+        "queryString": "POC"
+      },
+      "from": 0,
+      "size": 25
+    },
+    {
+      "entityTypes": [
+        "drive",
+      ],
+      "query": {
+        "queryString": "POC"
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
+}
+```
+
+#### Response
+
+The following is an example of bad request response.
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "SearchRequest Invalid (Entity types must not be duplicates in multiple entity requests)",
+        "target": "",
+        "details": [
+            {
+                "code": "Microsoft.SubstrateSearch.Api.ErrorReporting.ResourceBasedExceptions.BadRequestException",
+                "message": "File entity types can only appear in one entity request",
+                "target": "",
+                "httpCode": 400
+            }
+        ],
+        "httpCode": 400
+    }
+}
+```
+
 ## Known limitations
 
 - Properties **from**, **size** from different [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in the request body should be the same. And properties **queryString** of [searchQuery](graph/api/resources/searchquery?view=graph-rest-beta) from different searchRequest should be the same.
