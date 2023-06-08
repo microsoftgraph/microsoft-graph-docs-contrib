@@ -671,6 +671,8 @@ items:
           href: api/chat-get.md
         - name: List chats for user
           href: api/chat-list.md
+        - name: List for user (preview)
+          href: api/user-list-permissiongrants.md
       - name: To-do task
         items:
         - name: To-do task
@@ -16954,6 +16956,8 @@ items:
             href: api/group-list-permissiongrants.md
           - name: List for chat (preview)
             href: api/chat-list-permissiongrants.md
+          - name: List for user (preview)
+            href: api/user-list-permissiongrants.md
         - name: Tab
           href: resources/teamstab.md
           items:
