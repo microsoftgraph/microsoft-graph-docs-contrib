@@ -16,7 +16,7 @@ $queryParameters->expand = ["tasks"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->versionsById('workflowVersion-versionNumber')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->byWorkflowId('workflow-id')->versions()->byVersionId('workflowVersion-versionNumber')->get($requestConfiguration);
 
 
 ```

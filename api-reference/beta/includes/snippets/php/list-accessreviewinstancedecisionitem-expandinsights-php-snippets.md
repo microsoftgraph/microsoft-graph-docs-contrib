@@ -15,7 +15,7 @@ $queryParameters->expand = ["insights"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->instancesById('accessReviewInstance-id')->decisions()->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->byDefinitionId('accessReviewScheduleDefinition-id')->instances()->byInstanceId('accessReviewInstance-id')->decisions()->get($requestConfiguration);
 
 
 ```

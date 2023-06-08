@@ -34,7 +34,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->bundles()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->bundles()->post($requestBody);
 
 
 ```

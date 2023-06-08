@@ -50,7 +50,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->me()->eventsById('event-id')->attachments()->post($requestBody);
+$result = $graphServiceClient->me()->events()->byEventId('event-id')->attachments()->post($requestBody);
 
 
 ```

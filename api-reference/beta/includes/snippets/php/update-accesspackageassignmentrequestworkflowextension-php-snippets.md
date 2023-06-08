@@ -20,7 +20,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogsById('accessPackageCatalog-id')->accessPackageCustomWorkflowExtensionsById('customCalloutExtension-id')->put($requestBody);
+$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogs()->byAccessPackageCatalogId('accessPackageCatalog-id')->accessPackageCustomWorkflowExtensions()->byAccessPackageCustomWorkflowExtensionId('customCalloutExtension-id')->put($requestBody);
 
 
 ```

@@ -7,7 +7,7 @@ ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.prod: "extensions"
 ms.custom: graphiamtop20
-ms.date: 04/14/2023
+ms.date: 05/30/2023
 ---
 
 # Add custom data to resources using extensions
@@ -19,7 +19,7 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 > [!IMPORTANT]
 > Do not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
 >
-> The extensions mentioned in this article are not similar to Azure AD [custom security attributes](/graph/api/resources/custom-security-attributes-overview). To understand their differences, see [How do custom security attributes compare with directory extensions?](/azure/active-directory/fundamentals/custom-security-attributes-overview#how-do-custom-security-attributes-compare-with-directory-extensions).
+> The extensions mentioned in this article are not similar to Azure AD [custom security attributes](/graph/api/resources/custom-security-attributes-overview). To understand their differences, see [How do custom security attributes compare with extensions?](/azure/active-directory/fundamentals/custom-security-attributes-overview#how-do-custom-security-attributes-compare-with-extensions)
 
 ## Why add custom data to Microsoft Graph?
 
@@ -181,7 +181,7 @@ The 15 extension attributes are already predefined in Microsoft Graph and their 
 
 Directory extensions are first registered on an application through the [Create extensionProperty](/graph/api/application-post-extensionproperty) operation and must be explicitly targeted to specific and supported directory objects. After the application has been consented to by a user or an admin, the extension properties become immediately accessible in the tenant. All authorized applications in the tenant can read and write data on any extension properties defined on an instance of the target directory object.
 
-For the list of resource types that can be specified as target objects for a directory extension, see [Choose an extension type for your application](#comparison-of-extension-types).
+For the list of resource types that can be specified as target objects for a directory extension, see [Comparison of extension types](#comparison-of-extension-types).
 
 ### Developer experience
 
@@ -193,6 +193,7 @@ Before you can add a directory extension to a resource instance, you must first 
 
 ##### Request
 
+In the following request, `30a5435a-1871-485c-8c7b-65f69e287e7b` is the object ID of the application that owns the directory extension. On the `beta` endpoint, you can create directory extensions that store a collection of values.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -451,7 +452,7 @@ If a multi-tenant application creates additional directory extensions in an app 
 
 [Microsoft Graph schema extensions](/graph/api/resources/schemaextension) are conceptually similar to directory extensions. First, you define your schema extension. Then, use it to extend supported resource instances with strongly typed custom properties. In addition, you can control the [status](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of your schema extension and let it be discoverable by other apps.
 
-For the list of resource types that support schema extensions, see [Choose an extension type for your application](#comparison-of-extension-types).
+For the list of resource types that support schema extensions, see [Comparison of extension types](#comparison-of-extension-types).
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
 
@@ -761,7 +762,7 @@ To verify: Can you recover a schema extension definition by creating one with ex
 
 [Microsoft Graph open extensions](/graph/api/resources/opentypeextension) are [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a simple and flexible way to add untyped data directly to a resource instance. These extensions aren't strongly typed, discoverable, or filterable.
 
-For the list of resource types that support Microsoft Graph open extensions, see [Choose an extension type for your application](#comparison-of-extension-types).
+For the list of resource types that support Microsoft Graph open extensions, see [Comparison of extension types](#comparison-of-extension-types).
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
 
@@ -934,20 +935,23 @@ The table below contrasts and compares the extension types, which should help yo
 | Supported resource types | [user][] <br/>[device][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [application][] <br/>[device][] <br/> [organization][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [contact][] <br/> [device][] <br/> [event][] (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][]<sup>1</sup> (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][] |
 | Strongly typed | No | Yes | Yes | No |
 | Filterable | Yes | Yes | Yes | No |
+| Can store a collection<sup>2</sup> | No | Yes | No | No |
 | Managed via | Microsoft Graph <br/> Exchange admin center | Microsoft Graph | Microsoft Graph | Microsoft Graph |
 | Sync data from on-premises to extensions using [AD connect][] | Yes, for users | [Yes][ADConnect-YES] | No | No |
 | Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | [Yes][DynamicMembership-YES] | No | No |
 | Usable for customizing token claims | Yes | [Yes][DirectoryExt-CustomClaims] | No | No |
 | Available in Azure AD B2C | Yes | [Yes][B2CDirectoryExt] | Yes | Yes |
-| Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>2</sup> <br/><li> Max. of 2 Kb per open extension<sup>2</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>3</sup> |
+| Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>3</sup> <br/><li> Max. of 2 Kb per open extension<sup>3</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>4</sup> |
 
 > [!NOTE]
 > 
 > <sup>1</sup> Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 >
-> <sup>2</sup> These limits on open extensions apply to the following directory resources: **user**, **group**, **device**, <!--**administrativeUnit**,--> and **organization**.
+> <sup>2</sup> Only available in public preview for directory extensions.
 >
-> <sup>3</sup> Each [open extension](/graph/api/resources/opentypeextension) is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties), which are a limited resource in a user's mailbox. This limit applies to the following Outlook resources: **message**, **event**, and **contact**
+> <sup>3</sup> These limits on open extensions apply to the following directory resources: **user**, **group**, **device**, <!--**administrativeUnit**,--> and **organization**.
+>
+> <sup>4</sup> Each [open extension](/graph/api/resources/opentypeextension) is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties), which are a limited resource in a user's mailbox. This limit applies to the following Outlook resources: **message**, **event**, and **contact**
 >
 > You can manage all extensions when you're signed in with a work or school account. Additionally, you can manage open extensions for the following resources when signed-in with a personal Microsoft account: **event**, **post**, **group**, **message**, **contact**, and **user**.
 

@@ -14,7 +14,7 @@ $requestBody->setTenantIds(['String', ]);
 
 
 
-$result = $graphServiceClient->tenantRelationships()->managedTenants()->tenantTagsById('tenantTag-id')->managedTenantsUnassignTag()->post($requestBody);
+$result = $graphServiceClient->tenantRelationships()->managedTenants()->tenantTags()->byTenantTagId('tenantTag-id')->microsoftGraphManagedTenantsUnassignTag()->post($requestBody);
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setBlockMsolPowerShell(true);
 
 
 
-$result = $graphServiceClient->policies()->authorizationPolicyById('authorizationPolicy-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->authorizationPolicy()->byAuthorizationPolicy()Id('authorizationPolicy-id')->patch($requestBody);
 
 
 ```

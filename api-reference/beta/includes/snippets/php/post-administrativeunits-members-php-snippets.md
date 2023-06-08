@@ -24,7 +24,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->administrativeUnitsById('administrativeUnit-id')->members()->post($requestBody);
+$graphServiceClient->administrativeUnits()->byAdministrativeUnitId('administrativeUnit-id')->members()->post($requestBody);
 
 
 ```

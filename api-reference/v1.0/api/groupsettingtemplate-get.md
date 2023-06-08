@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates/08d542b9-071f-4e16-94
 [!INCLUDE [sample-code](../includes/snippets/php/get-groupsettingtemplate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-groupsettingtemplate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

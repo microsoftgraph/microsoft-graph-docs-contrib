@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->sitesById('browserSite-id')->get();
+$result = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteLists()->bySiteListId('browserSiteList-id')->sites()->bySiteId('browserSite-id')->get();
 
 
 ```

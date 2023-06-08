@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnectionsById('cloudPcOnPremisesConnection-id')->get();
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->byOnPremisesConnectionId('cloudPcOnPremisesConnection-id')->get();
 
 
 ```
