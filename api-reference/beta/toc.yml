@@ -10948,7 +10948,7 @@ items:
           - name: Get
             href: api/m365AppsInstallationOptions-get.md
           - name: Update
-            href: m365AppsInstallationOptions-update.md
+            href: api/m365AppsInstallationOptions-update.md
       - name: Multi-tenant management (preview)
         items:
         - name: Managed tenant
