@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a participant in a call.
+Represents a participant in a [call](call.md).
 
 ## Methods
 
