@@ -50,7 +50,7 @@ Authorization : Bearer {access_token}
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/users' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q'
 ```
 
@@ -111,7 +111,7 @@ Authorization : Bearer {access_token}
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/me/mailFolders' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/me/mailFolders' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q' 
 ```
 
@@ -172,7 +172,7 @@ Authorization : Bearer {access_token}
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q'
 ```
 
@@ -210,7 +210,7 @@ Authorization : Bearer {access_token}
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?%24select=displayName%2CaboutMe%2Cskills' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?%24select=displayName%2CaboutMe%2Cskills' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q' 
 ```
 
@@ -249,7 +249,7 @@ Authorization : Bearer {access_token}
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/me/drive/root/children?%24select=name' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/me/drive/root/children?%24select=name' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q' 
 ```
 
@@ -289,7 +289,7 @@ Authorization : Bearer {access_token}
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q' 
 ```
 
@@ -325,7 +325,7 @@ Authorization : Bearer {access_token}
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/me/messages' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/me/messages' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q' 
 ```
 
@@ -407,7 +407,7 @@ content-length: 96
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/me/sendMail' \
+curl --location --request POST 'https://graph.microsoft.com/v1.0/me/sendMail' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q' \
 --data-raw '{

@@ -68,7 +68,7 @@ In the following example, the app requests the _User.Read_ and _Mail.Read_ Micro
 ```
 // Line breaks for legibility only
 
-POST https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?
+GET https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?
 client_id=11111111-1111-1111-1111-111111111111
 &response_type=code
 &redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
@@ -80,7 +80,7 @@ client_id=11111111-1111-1111-1111-111111111111
 # [cURL](#tab/curl)
 
 ```bash
-curl --location -X POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?client_id=11111111-1111-1111-1111-111111111111&response_type=code&redirect_uri=https%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=offline_access%20User.Read%20Mail.Read&state=12345'
+curl --location --request GET 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?client_id=11111111-1111-1111-1111-111111111111&response_type=code&redirect_uri=https%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=offline_access%20User.Read%20Mail.Read&state=12345'
 ```
 
 ---
@@ -148,7 +148,7 @@ client_id=11111111-1111-1111-1111-111111111111
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
+curl --location --request POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'client_id=11111111-1111-1111-1111-111111111111' \
 --data-urlencode 'scope=User.Read Mail.Read' \
@@ -218,7 +218,7 @@ Host: graph.microsoft.com
 # [cURL](#tab/curl)
 
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/me' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/me' \
 --header 'Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw' \
 --data ''
 ```
@@ -286,7 +286,7 @@ client_id=11111111-1111-1111-1111-111111111111
 # [cURL](#tab/curl)
 
 ```bash
-curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
+curl --location --request POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'client_id=11111111-1111-1111-1111-111111111111' \
 --data-urlencode 'scope=User.Read Mail.Read' \

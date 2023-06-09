@@ -93,7 +93,7 @@ GET https://login.microsoftonline.com/{tenant}/adminconsent
 
 # [cURL](#tab/curl)
 ```bash
-curl --location --request POST 'https://login.microsoftonline.com/{tenant}/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&redirect_id=https%3A%2F%2Flocalhost%2Fmyapp%2Fpermissions&state=12345'
+curl --location --request GET 'https://login.microsoftonline.com/{tenant}/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&redirect_id=https%3A%2F%2Flocalhost%2Fmyapp%2Fpermissions&state=12345'
 ```
 
 ---
@@ -160,7 +160,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
+curl --location --request POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'client_id=535fb089-9ff3-47b6-9bfb-4f1264799865' \
 --data-urlencode 'scope=https://graph.microsoft.com/.default' \
@@ -211,7 +211,7 @@ Host: graph.microsoft.com
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/users' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users' \
 --header 'Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw' \
 --data ''
 ```
