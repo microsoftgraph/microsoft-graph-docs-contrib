@@ -1,6 +1,6 @@
 ---
 title: "participant resource type"
-description: "Represents the participant type."
+description: "Represents a participant in a call."
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
