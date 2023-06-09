@@ -17,6 +17,12 @@ For an app to access data in Microsoft Graph, the user or administrator must gra
 
 To find the unique identifiers for all permissions, see [All permissions and IDs](#all-permissions-and-ids).
 
+To read information about all Microsoft Graph permissions programmatically, sign-in to Graph Explorer using an account that has at least the *Application.Read.All* permission and run the following request.
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')?$select=id,appId,displayName,appRoles,oauth2PermissionScopes
+```
+
 [!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
 
 ## Access reviews permissions
