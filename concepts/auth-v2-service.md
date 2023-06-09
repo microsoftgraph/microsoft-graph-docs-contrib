@@ -88,7 +88,7 @@ Administrators can grant the permissions your app needs at the [Azure portal](ht
 GET https://login.microsoftonline.com/{tenant}/adminconsent
 ?client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 &state=12345
-&redirect_uri=https://localhost/myapp/permissions
+&redirect_uri=https://localhost/myapp/permissions  HTTP/1.1
 ```
 
 # [cURL](#tab/curl)
@@ -204,7 +204,7 @@ After you have an access token, the app uses it to call Microsoft Graph by attac
 
 # [HTTP](#tab/http)
 ```http
-GET https://graph.microsoft.com/v1.0/users
+GET https://graph.microsoft.com/v1.0/users  HTTP/1.1
 Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw
 Host: graph.microsoft.com
 ```
