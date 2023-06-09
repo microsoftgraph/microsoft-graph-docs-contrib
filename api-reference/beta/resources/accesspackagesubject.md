@@ -15,6 +15,13 @@ Namespace: microsoft.graph
 
 In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.  It may represent a requestor from a connected organization who is not yet in the tenant.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [Update accessPackageSubject](../api/accesspackagesubject-update.md)|None | Update the properties of an **accesspackagesubject** object. |
+| [Get accessPackageSubject](../api/accesspackagesubject-get.md)|None | Get the properties of an **accesspackagesubject** object. |
+
 ## Properties
 
 | Property     | Type        | Description |
@@ -25,6 +32,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 |objectId|String|The object identifier of the subject. `null` if the subject is not yet a user in the tenant.|
 |principalName|String|The principal name, if known, of the subject.|
 |type|String|The resource type of the subject.|
+|subjectLifecycle|accessPackageSubjectLifecycle|The lifecycle of the subject user, if a guest. The possible values are: `notDefined`, `notGoverned`, `governed`, `unknownFutureValue`.|
 |connectedOrganizationId|String|The identifier of the connected organization of the subject.|
 
 ## Relationships

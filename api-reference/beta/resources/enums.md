@@ -271,6 +271,15 @@ Namespace: microsoft.graph
 | requestReceived    |
 | unknownFutureValue |
 
+### accessPackageSubjectLifecycle values
+
+|Member|
+|:---|
+|notDefined|
+|notGoverned|
+|governed|
+|unknownFutureValue|
+
 ### customExtensionCalloutInstanceStatus values
 
 | Member             |
