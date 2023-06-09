@@ -1,6 +1,6 @@
 ---
 title: "participant resource type"
-description: "The participant type."
+description: "Represents a participant in a call."
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -39,7 +39,7 @@ Represents a participant in a call.
 | isMuted              | Boolean                                  | `true` if the participant is muted (client or server muted).    |
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
 | metadata             | String                                   | A blob of data provided by the participant in the roster.     |
-| preferredDisplayName | String        | The participant's preferred display name that overrides the original display name. |
+| preferredDisplayName | String        | The **participant**'s preferred display name that overrides the original display name. |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Information on whether the participant has recording capability. |
 | removedState | [removedState](removedstate.md)        | Indicates the reason why the **participant** was removed from the roster. |
 | restrictedExperience | [onlineMeetingRestricted](onlinemeetingrestricted.md)        | Indicates the reason or reasons why media content from this participant is restricted. |
