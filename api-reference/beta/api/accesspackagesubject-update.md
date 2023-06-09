@@ -34,13 +34,14 @@ PATCH /identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfUs
 ```
 
 ## Request headers
-|
+
 Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the parameters of an [accessPackageSubject](../resources/accesspackagesubject.md) object.
 
 The following table shows the properties that can be supplied when you update an [accessPackageSubject](../resources/accesspackagesubject.md).
@@ -50,6 +51,7 @@ The following table shows the properties that can be supplied when you update an
 |subjectLifecycle|accessPackageSubjectLifecycle|The lifecycle of the subject user, if a guest. The possible values are: `notDefined`, `notGoverned`, `governed`, `unknownFutureValue`.|
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 
 ## Examples
