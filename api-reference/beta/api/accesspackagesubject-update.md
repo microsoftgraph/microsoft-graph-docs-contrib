@@ -66,6 +66,7 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfUser}')
 Content-Type: application/json
+
 {
   "subjectLifecycle":"governed"
 }
