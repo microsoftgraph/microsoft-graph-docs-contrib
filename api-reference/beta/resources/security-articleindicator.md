@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Represents a resource that communicates indicators of threat or compromise related to the contents of an [article](../resources/security-article.md).
 
 The relationship from an **articleIndicator** to an [artifact](../resources/security-artifact.md) provides the means for threat intelligence API users to further evaluate details about reported indicator.

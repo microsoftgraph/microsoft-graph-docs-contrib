@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Get a list of [articleIndicator](../resources/security-articleindicator.md) objects that represent indicators of threat or compromise related to the contents of an [article](../resources/security-article.md).
 
 ## Permissions
