@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new TeamsAppsRequestBuilderGetRequestConfiguration();
 $queryParameters = TeamsAppsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["appDefinitions($select=id,displayName,allowedInstallationScopes)"];
-$queryParameters->filter = "appDefinitions/any";
+$queryParameters->filter = "appDefinitions/any(a:a/allowedInstallationScopes has 'personal')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

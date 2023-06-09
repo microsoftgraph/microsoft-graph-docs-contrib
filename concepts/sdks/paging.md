@@ -117,8 +117,6 @@ while(messagesPage != null) {
 
 ### [Go](#tab/Go)
 
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
 ```go
 import (
     abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -244,8 +242,6 @@ while (!pageIterator.isComplete()) {
 ```
 
 ### [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 ```go
 import (

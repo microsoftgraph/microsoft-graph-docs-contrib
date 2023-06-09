@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/identityprotection"
+	  graphidentityprotection "github.com/microsoftgraph/msgraph-sdk-go/identityprotection"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
 requestFilter := "userDisplayName eq 'MyTestUser1'"
 
-requestParameters := &graphconfig.IdentityProtectionRiskyUsersRequestBuilderGetQueryParameters{
+requestParameters := &graphidentityprotection.IdentityProtectionRiskyUsersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.IdentityProtectionRiskyUsersRequestBuilderGetRequestConfiguration{
+configuration := &graphidentityprotection.IdentityProtectionRiskyUsersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
