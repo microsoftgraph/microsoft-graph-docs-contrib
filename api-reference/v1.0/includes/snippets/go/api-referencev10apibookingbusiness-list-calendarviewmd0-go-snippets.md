@@ -8,22 +8,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/solutions"
+	  graphsolutions "github.com/microsoftgraph/msgraph-sdk-go/solutions"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
 requestStart := "2018-04-30T00:00:00Z"
 requestEnd := "2018-05-10T00:00:00Z"
 
-requestParameters := &graphconfig.SolutionsBookingBusinesseItemCalendarViewRequestBuilderGetQueryParameters{
+requestParameters := &graphsolutions.SolutionsBookingBusinesseItemCalendarViewRequestBuilderGetQueryParameters{
 	Start: &requestStart,
 	End: &requestEnd,
 }
-configuration := &graphconfig.SolutionsBookingBusinesseItemCalendarViewRequestBuilderGetRequestConfiguration{
+configuration := &graphsolutions.SolutionsBookingBusinesseItemCalendarViewRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

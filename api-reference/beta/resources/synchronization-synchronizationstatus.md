@@ -57,19 +57,34 @@ The following is a JSON representation of the resource.
 ```json
 {
   "code": "String",
-  "countSuccessiveCompleteFailures": 1024,
+  "countSuccessiveCompleteFailures": "Integer",
   "escrowsPruned": true,
-  "lastExecution": {"@odata.type": "microsoft.graph.synchronizationTaskExecution"},
-  "lastSuccessfulExecution": {"@odata.type": "microsoft.graph.synchronizationTaskExecution"},
-  "lastSuccessfulExecutionWithExports": {"@odata.type": "microsoft.graph.synchronizationTaskExecution"},
-  "progress": [{"@odata.type": "microsoft.graph.synchronizationProgress"}],
-  "quarantine": {"@odata.type": "microsoft.graph.synchronizationQuarantine"},
+  "lastExecution": {
+    "@odata.type": "microsoft.graph.synchronizationTaskExecution"
+  },
+  "lastSuccessfulExecution": {
+    "@odata.type": "microsoft.graph.synchronizationTaskExecution"
+  },
+  "lastSuccessfulExecutionWithExports": {
+    "@odata.type": "microsoft.graph.synchronizationTaskExecution"
+  },
+  "progress": [
+    {
+      "@odata.type": "microsoft.graph.synchronizationProgress"
+    }
+  ],
+  "quarantine": {
+    "@odata.type": "microsoft.graph.synchronizationQuarantine"
+  },
   "steadyStateFirstAchievedTime": "String (timestamp)",
   "steadyStateLastAchievedTime": "String (timestamp)",
-  "synchronizedEntryCountByType": [{"@odata.type": "microsoft.graph.stringKeyLongValuePair"}],
+  "synchronizedEntryCountByType": [
+    {
+      "@odata.type": "microsoft.graph.stringKeyLongValuePair"
+    }
+  ],
   "troubleshootingUrl": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

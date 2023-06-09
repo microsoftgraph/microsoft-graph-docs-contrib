@@ -9,23 +9,24 @@ import (
 	  "context"
 	  "time"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewRetentionEvent()
+requestBody := graphmodelssecurity.NewRetentionEvent()
 displayName := "String"
 requestBody.SetDisplayName(&displayName) 
 description := "String"
 requestBody.SetDescription(&description) 
 
 
-eventQuery := graphmodels.NewEventQuery()
+eventQuery := graphmodelssecurity.NewEventQuery()
 
-eventQueries := []graphmodels.EventQueryable {
+eventQueries := []graphmodelssecurity.EventQueryable {
 	eventQuery,
 
 }
@@ -36,14 +37,14 @@ createdBy := graphmodels.NewIdentitySet()
 requestBody.SetCreatedBy(createdBy)
 
 
-eventPropagationResult := graphmodels.NewEventPropagationResult()
+eventPropagationResult := graphmodelssecurity.NewEventPropagationResult()
 
-eventPropagationResults := []graphmodels.EventPropagationResultable {
+eventPropagationResults := []graphmodelssecurity.EventPropagationResultable {
 	eventPropagationResult,
 
 }
 requestBody.SetEventPropagationResults(eventPropagationResults)
-eventStatus := graphmodels.NewRetentionEventStatus()
+eventStatus := graphmodelssecurity.NewRetentionEventStatus()
 requestBody.SetEventStatus(eventStatus)
 lastStatusUpdateDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetLastStatusUpdateDateTime(&lastStatusUpdateDateTime) 
