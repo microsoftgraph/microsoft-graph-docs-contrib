@@ -1,7 +1,7 @@
 ---
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: jumasure
+ms.reviewer: keylimesoda
 ms.prod: "change-notifications"
 ms.topic: include
 ms.date: 02/23/2022
