@@ -52,7 +52,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->employeeExperience()->learningCourseActivities()->byLearningCourseActivitieId('learningCourseActivity-id')->patch($requestBody);
+$result = $graphServiceClient->employeeExperience()->learningProviders()->byLearningProviderId('learningProvider-id')->learningCourseActivities()->byLearningCourseActivitieId('learningCourseActivity-id')->patch($requestBody);
 
 
 ```

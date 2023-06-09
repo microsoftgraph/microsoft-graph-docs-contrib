@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.Users.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "imAddresses/any";
+	requestConfiguration.QueryParameters.Filter = "imAddresses/any(i:i eq 'admin@contoso.com')";
 });
 
 
