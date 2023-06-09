@@ -54,6 +54,7 @@ The following example updates the business email address and scheduling policy, 
 
 <!-- {
   "blockType": "request",
+  "name" : "bookingbusinesupdate",
   "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
 }-->
 ```http

@@ -57,12 +57,12 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "name": "bookingappointment_cancel",
   "sampleKeys": ["AAMkADKoAAA=", "Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel
 Content-type: application/json
-
 {
   "cancellationMessage": "Your appointment has been successfully cancelled. Please call us again."
 }
