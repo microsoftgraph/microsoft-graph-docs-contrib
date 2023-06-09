@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for the relationships that expose the Azure AD Identity Governance life cycle workflows API capabilities.
+A container for the relationships that expose the Azure AD Identity Governance Lifecycle Workflows API capabilities.
 
 Inherits from [entity](../resources/entity.md).
 

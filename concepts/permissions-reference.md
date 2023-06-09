@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 05/05/2023
+ms.date: 06/06/2023
 ---
 
 # Microsoft Graph permissions reference
@@ -2046,11 +2046,13 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _RoleManagement.Read.All_ | Read role management data for all RBAC providers. | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), on behalf of the signed-in user. This includes reading role definitions and role assignments. | Yes | No |
 | _RoleManagement.Read.Directory_ | Read role management data for Azure AD. | Allows the app to read the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes | No |
 | _RoleManagementPolicy.Read.Directory_ | Read all policies for privileged role assignments for your company's directory. | Allows the app to read policies for privileged role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. | Yes | No |
+| _RoleManagementPolicy.Read.AzureADGroup_ | Read all policies in PIM for groups. | Allows the app to read policies in Privileged Identity Management for groups, on behalf of the signed-in user. | Yes | No |
 | _RoleManagement.Read.Exchange_ | Read Exchange Online RBAC configuration | Allows the app to read the role-based access control (RBAC) settings for your organization's Exchange Online service, on behalf of the signed-in user. This includes reading Exchange management role definitions, role groups, role group membership, role assignments, management scopes, and role assignment policies. | Yes | No |
 | _RoleAssignmentSchedule.ReadWrite.Directory_ | Read, update, and delete all active role assignments for your company's directory. | Allows the app to read and manage the active role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. This includes managing active directory role membership, and reading directory role templates, directory roles and active memberships. | Yes | No |
 | _RoleEligibilitySchedule.ReadWrite.Directory_ | Read, update, and delete  all eligible role assignments for your company's directory. | Allows the app to read and manage the eligible role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. This includes managing eligible directory role membership, and reading directory role templates, directory roles and eligible memberships. | Yes | No |
 | _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD. | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes | No |
 | _RoleManagementPolicy.ReadWrite.Directory_ | Read, update, and delete all policies for privileged role assignments for your company's directory. | Allows the app to read, update, and delete policies for privileged role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. | Yes | No |
+| _RoleManagementPolicy.ReadWrite.AzureADGroup_ | Read, update, and delete all policies in PIM for groups. | Allows the app to read, update, and delete policies in Privileged Identity Management for groups, on behalf of the signed-in user. | Yes | No |
 | _RoleManagement.ReadWrite.Exchange_ | Read and write Exchange Online RBAC configuration | Allows the app to read and manage the role-based access control (RBAC) settings for your organization's Exchange Online service, on behalf of the signed-in user. This includes reading, creating, updating, and deleting Exchange management role definitions, role groups, role group membership, role assignments, management scopes, and role assignment policies. | Yes | No |
 
 #### Application permissions
@@ -2060,6 +2062,10 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _RoleManagement.Read.All_ | Read role management data for all RBAC providers. | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), without a signed-in user. This includes reading role definitions and role assignments. | Yes |
 | _RoleManagement.Read.Directory_ | Read role management data for Azure AD. | Allows the app to read the role-based access control (RBAC) settings for your company's directory, without a signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes |
 | _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD. | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, without a signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes |
+| _RoleManagementPolicy.Read.Directory_ | Read all policies for privileged role assignments of your company's directory. | Allows the app to read policies for privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user. | Yes |
+| _RoleManagementPolicy.Read.AzureADGroup_ | Read all policies in PIM for groups. | Allows the app to read policies in Privileged Identity Management for groups, without a signed-in user. | Yes |
+| _RoleManagementPolicy.ReadWrite.Directory_ | Read, update, and delete all policies for privileged role assignments of your company's directory. | Allows the app to read, update, and delete policies for privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user. | Yes |
+| _RoleManagementPolicy.ReadWrite.AzureADGroup_ | Read, update, and delete all policies in PIM for groups. | Allows the app to read, update, and delete policies in Privileged Identity Management for groups, without a signed-in user. | Yes |
 
 
 ### Remarks
@@ -3031,6 +3037,27 @@ With these permissions, all authentication methods can be read and managed on a 
 * Primary authentication (password, FIDO2, Microsoft Authenticator, and so on)
 * Second factor of multi-factor authentication/MFA (phone numbers, Microsoft Authenticator, and so on)
 * Self-Service Password Reset/SSPR (email address, and so on)
+
+---
+
+## Virtual event permissions
+
+#### Delegated permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+|_VirtualEvent.Read_|Read your virtual events.|Allows the app to read virtual events created by the you.|Yes|
+
+#### Application permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+|_VirtualEvent.Read.All_|Read all users' virtual events.|Allows the app to read all virtual events without a signed-in user. |Yes|
+
+### Example usage
+
+* _VirtualEvent.Read_: Retrieve a virtual event created by the signed-in user (`GET /solutions/virtualEvents/webinars/{id}`).
+* _VirtualEvent.Read.All_: Retrieve a virtual event created by any user in the tenant (`GET /solutions/virtualEvents/webinars/{id}`).
+
+---
 
 ## Windows updates permissions
 

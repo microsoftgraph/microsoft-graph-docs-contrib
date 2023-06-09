@@ -10,22 +10,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new ServicePrincipal();
-$customSecurityAttributes = new CustomSecurityAttributeValue();
 $additionalData = [
-		'Engineering' => $customSecurityAttributes = new Engineering();
-$		customSecurityAttributes->set@odatatype('#Microsoft.DirectoryServices.CustomSecurityAttributeValue');
+		'customSecurityAttributes' => $requestBody = new CustomSecurityAttributes();
+$engineering = new Engineering();
+$		engineering->set@odatatype('#Microsoft.DirectoryServices.CustomSecurityAttributeValue');
 
-$		customSecurityAttributes->setProjectDate('2022-10-01');
-
-
-$customSecurityAttributes->setEngineering($engineering);
-
-];
-$customSecurityAttributes->setAdditionalData($additionalData);
+$		engineering->setProjectDate('2022-10-01');
 
 
+$requestBody->setEngineering($engineering);
 
 $requestBody->setCustomSecurityAttributes($customSecurityAttributes);
+
+];
+$requestBody->setAdditionalData($additionalData);
+
+
 
 
 $result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->patch($requestBody);
