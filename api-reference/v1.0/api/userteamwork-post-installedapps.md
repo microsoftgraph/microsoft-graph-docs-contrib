@@ -114,7 +114,6 @@ The following is an example of the response.
 HTTP/1.1 201 Created
 ```
 ### Example 2: Install app for a user and consent to the resource-specific permissions required by the app
-To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
 
 #### Request
 
