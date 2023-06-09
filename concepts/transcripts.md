@@ -73,7 +73,7 @@ Notifications without resource data give you enough information to make GET call
 
 The following is the payload for notifications without resource data and for a transcript being available for an online meeting.
 
-```http
+```json
 { 
   "subscriptionId": "265009c7-312c-4594-981f-f620d31abdd3", 
   "changeType": "created", 
@@ -88,6 +88,8 @@ The following is the payload for notifications without resource data and for a t
   } 
 } 
 ```
+
+The `resource` and `@odata.id` properties can be used to make calls to Microsoft Graph to get the transcript.
 
 ## See also
 
