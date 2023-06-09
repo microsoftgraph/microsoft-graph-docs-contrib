@@ -69,9 +69,9 @@ Content-Type: application/json
 
 ## Notifications without resource data
 
-Notifications without resource data give you enough information to make GET calls to get the transcript. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data give you enough information to make GET calls to get the transcript. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data isn't sent over).
 
-For notifications without resource data, the payload looks like the following. This payload is for a transcript being available for an online meeting.
+The following is the payload for notifications without resource data and for a transcript being available for an online meeting.
 
 ```http
 { 
