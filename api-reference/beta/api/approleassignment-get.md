@@ -149,7 +149,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: To get details of an app role granted to a service principal
+### Example 2: Get details of an app role granted to a service principal
 
 #### Request
 The following request queries the client service principal to get details of an app role granted to it. In this instance, the app role represents the application permission.
@@ -190,7 +190,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: To get details of an app role granted to the signed-in user
+### Example 3: Get details of an app role granted to the signed-in user
 
 #### Request
 The following request queries the signed-in user's appRoleAssignments.
