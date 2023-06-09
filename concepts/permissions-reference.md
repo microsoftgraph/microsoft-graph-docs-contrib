@@ -2322,15 +2322,15 @@ The _Sites.Selected_ application permission is available only in the Microsoft G
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read synchronization data on behalf of the signed-in user. | Yes | No |
-Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to read and write synchronization data on behalf of the signed-in user. | Yes | No |
+Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read Azure AD synchronization information, on behalf of the signed-in user. | Yes | No |
+Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to configure the Azure AD synchronization service, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read synchronization data, without a signed-in user. | Yes |
-Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to read and write synchronization data, without a signed-in user. | Yes |
+Synchronization.Read.All | Read all Azure AD synchronization data | Allows the application to read Azure AD synchronization information, without a signed-in user. | Yes |
+Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the application to configure the Azure AD synchronization service, without a signed-in user. | Yes |
 
 ### Example usage
 
