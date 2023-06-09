@@ -67,6 +67,28 @@ Content-Type: application/json
 }
 ```
 
+## Notifications without resource data
+
+Notifications without resource data give you enough information to make GET calls to get the transcript. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
+
+For notifications without resource data, the payload looks like the following. This payload is for a transcript being available for an online meeting.
+
+```http
+{ 
+  "subscriptionId": "265009c7-312c-4594-981f-f620d31abdd3", 
+  "changeType": "created", 
+  "tenantId": "<<--TenantForWhichNotificationWasSent-->>", 
+  "clientState": "<<--SpecifiedClientState-->>", 
+  "subscriptionExpirationDateTime": "2023-03-20T11:00:00.0000000-08:00", 
+  "resource": "communications/onlineMeetings('MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19PVE0yTURZellUa3ROalkyT1MwMFlXRmxMVGcyWm1RdE5XTXdaalF5WlRJMk9XVmlAdGhyZWFkLnYy')/transcripts('MSMjMCMjNTYyN2ZiZDctNjFlNS00NGNmLWE0ZTQtYTQ1ODJhYTdmNGQ3')", 
+  "resourceData": { 
+    "id": "MSMjMCMjNTYyN2ZiZDctNjFlNS00NGNmLWE0ZTQtYTQ1ODJhYTdmNGQ3", 
+    "@odata.type": "#Microsoft.Graph.callTranscript", 
+    "@odata.id": "communications/onlineMeetings('MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19PVE0yTURZellUa3ROalkyT1MwMFlXRmxMVGcyWm1RdE5XTXdaalF5WlRJMk9XVmlAdGhyZWFkLnYy')/transcripts('MSMjMCMjNTYyN2ZiZDctNjFlNS00NGNmLWE0ZTQtYTQ1ODJhYTdmNGQ3')" 
+  } 
+} 
+```
+
 ## See also
 
 * [Microsoft Graph change notifications](webhooks.md)
