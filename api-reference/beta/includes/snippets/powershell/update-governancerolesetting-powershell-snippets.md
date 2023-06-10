@@ -10,7 +10,7 @@ $params = @{
 	adminEligibleSettings = @(
 		@{
 			ruleIdentifier = "ExpirationRule"
-			setting = "{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}"
+			setting = '{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}'
 		}
 	)
 }

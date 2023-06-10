@@ -57,8 +57,10 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "name": "bookingappointment_cancel",
   "sampleKeys": ["AAMkADKoAAA=", "Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel
 Content-type: application/json
@@ -75,6 +77,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
