@@ -11,7 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
 Install a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resources/chat.md).
 
 > **Notes**:
@@ -67,8 +66,6 @@ If successful, this method returns a `201 Created` response code.
 ### Example 1: Install app in a chat
 
 #### Request
-
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -142,6 +139,7 @@ To get the list of resource-specific permissions required by the app, get the ap
 ```http
 POST https://graph.microsoft.com/v1.0/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps
 Content-Type: application/json
+
 {
   "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/2b524e28-95ce-4c9b-9773-4a5bd6ec1770",
     "consentedPermissionSet": {

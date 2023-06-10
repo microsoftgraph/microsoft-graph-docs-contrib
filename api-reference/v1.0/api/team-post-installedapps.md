@@ -140,6 +140,7 @@ To get the list of resource-specific permissions required by the app, get the ap
 ```http
 POST https://graph.microsoft.com/v1.0/teams/7023576d-9e40-47ca-9cf2-daae6838e785/installedApps
 Content-Type: application/json
+
 {
   "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785",
     "consentedPermissionSet": {

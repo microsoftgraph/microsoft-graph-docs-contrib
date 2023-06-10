@@ -231,6 +231,7 @@ GET https://graph.microsoft.com/v1.0/teams/19%5bd86ec7f6b247d3b9e519b0bfef5d03%4
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('7eeb5a95-f602-4861-ab67-49714fa5a020')/installedApps(consentedPermissionSet,id)/$entity",
     "id": "N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg=",

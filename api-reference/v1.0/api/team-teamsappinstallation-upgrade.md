@@ -135,6 +135,7 @@ To get the list of resource-specific permissions required by the app, get the ap
 ```http
 POST https://graph.microsoft.com/v1.0/teams/20988f0f-a647-42f6-be30-79e04de3c2ed/installedApps/MjA5ODhmMGYtYTY0Ny00MmY2LWJlMzAtNzllMDRkZTNjMmVkIyNmYTkzN2Y4OS1iYWNhLTQ5NzktYmY4YS00MmY5ODE5MWY3ODA=/upgrade
 Content-Type: application/json
+
 {
   "consentedPermissionSet": {
     "resourceSpecificPermissions": [
@@ -177,5 +178,3 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
-
-

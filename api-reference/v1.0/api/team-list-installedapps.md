@@ -385,6 +385,7 @@ GET https://graph.microsoft.com/v1.0/teams/7eeb5a95-f602-4861-ab67-49714fa5a020/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/teams('7eeb5a95-f602-4861-ab67-49714fa5a020')/installedApps(consentedPermissionSet,id)",
     "@odata.count": 70,
