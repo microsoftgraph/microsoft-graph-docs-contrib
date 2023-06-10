@@ -161,5 +161,15 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 | renderDropdownList    | Renders the items in the dropdown recursively.          |
 | renderItem            | Renders a team or a channel in the dropdown list.       |
 | renderHighlightedText | Renders the channel text, highlighting the input query. |
-| renderLoading         | Renders the loading dropdown state.                     |
-| renderError           | Renders the dropdown error state.                       |
+| renderLoading | Renders the loading dropdown state. |
+| renderError | Renders the dropdown error state. |
+
+## Localization
+
+The control exposes the following variables that can be localized. See how you setup localization [here](../customize-components/localization.md).
+
+| String name           | Default value                 |
+| --------------------- | ----------------------------- |
+| inputPlaceholderText  | `Select a channel`            |
+| noResultsFound        | `We didn't find any matches.` |
+| loadingMessage        | `Loading...`                  |

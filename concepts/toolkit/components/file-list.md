@@ -295,6 +295,6 @@ The control exposes the following variables that can be localized. See how you s
 
 | String name        | Default value     |
 | ------------------ | ----------------- |
-| showMoreSubtitle   | 'Show more items' |
-| filesSectionTitle  | 'Files'           |
-| sharedTextSubtitle | 'Shared'          |
+| showMoreSubtitle   | `Show more items` |
+| filesSectionTitle  | `Files`           |
+| sharedTextSubtitle | `Shared`          |

@@ -103,7 +103,7 @@ The control exposes the following variables that can be localized. See how you s
 
 | String name        | Default value     |
 | ------------------ | ----------------- |
-| comboboxPlaceholder   | 'Select an item' |
+| comboboxPlaceholder   | `Select an item` |
 
 ## CSS custom properties
 

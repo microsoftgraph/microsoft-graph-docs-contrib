@@ -197,5 +197,5 @@ The control exposes the following variables that can be localized. See how you s
 
 | String name      | Default value |
 | ---------------- | ------------- |
-| modifiedSubtitle | 'Modified'    |
-| sizeSubtitle     | 'Size'        |
+| modifiedSubtitle | `Modified`    |
+| sizeSubtitle     | `Size`        |

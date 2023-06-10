@@ -65,6 +65,6 @@ The control exposes the following variables that can be localized. For details a
 
 | String name | Default value  |
 | ----------- | -------------- |
-| label       | 'Color mode: ' |
-| on          | 'Dark'         |
-| off         | 'Light'        |
+| label       | `Color mode: ` |
+| on          | `Dark`         |
+| off         | `Light`        |
