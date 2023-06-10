@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and a [bookingCustom
 
 <!-- {
   "blockType": "request",
+  "name": "bookingcustomquestionget",
   "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
 }
 -->
