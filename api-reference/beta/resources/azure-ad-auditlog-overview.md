@@ -34,6 +34,9 @@ The directory audit report provides you with access to the history of every task
 - Which users are signing in to a recently acquired app?
 - How many passwords resets were made within the directory?
 
+### Custom security attributes audit
+
+
 ### Sign-ins
 
 The sign-ins report helps you determine who performed the tasks reported by directory audits. The sign-ins report helps you answer questions like:
