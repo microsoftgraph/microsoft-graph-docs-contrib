@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
 requestToken := "2021-09-29T20:00:00Z"
 
-requestParameters := &graphconfig.DriveItemItemItemDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphdrives.DriveItemItemItemDelta()RequestBuilderGetQueryParameters{
 	Token: &requestToken,
 }
-configuration := &graphconfig.DriveItemItemItemDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.DriveItemItemItemDelta()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

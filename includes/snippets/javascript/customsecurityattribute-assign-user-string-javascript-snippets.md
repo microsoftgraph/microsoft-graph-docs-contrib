@@ -22,7 +22,6 @@ const user = {
 };
 
 await client.api('/users/{id}')
-	.version('beta')
 	.update(user);
 
 ```
