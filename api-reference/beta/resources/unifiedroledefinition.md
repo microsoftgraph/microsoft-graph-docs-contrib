@@ -43,7 +43,7 @@ The following RBAC providers are currently supported:
 |id|String| The unique identifier for the unifiedRoleDefinition. Key, not nullable, Read-only.  Supports `$filter` (`eq` operator only). |
 |isBuiltIn|Boolean| Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports `$filter` (`eq` operator only).|
 |isEnabled|Boolean| Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when **isBuiltIn** is true. |
-|isPrivileged|Boolean| Flag indicating if the role is privileged. Azure AD defines a role as privileged if it contains at least one sensitive resource action in the **rolePermissions** and **allowedResourceActions** objects. Read-only. |
+|isPrivileged|Boolean| Flag indicating if the role is privileged. Azure AD defines a role as privileged if it contains at least one sensitive resource action in the **rolePermissions** and **allowedResourceActions** objects. Read-only. Supports `$filter` (`eq` operator only).|
 |resourceScopes|String collection| List of scopes permissions granted by the role definition apply to. Currently only `/` is supported. Read-only when isBuiltIn is true. **DO NOT USE. This will be deprecated soon. Attach scope to role assignment** | 
 |rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) collection| List of permissions included in the role. Read-only when **isBuiltIn** is true. Required. |
 |templateId|String| Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when **isBuiltIn** is true. |
