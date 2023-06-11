@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.Policies.AuthenticationStrengthPolicies.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "allowedCombinations/any";
+	requestConfiguration.QueryParameters.Filter = "allowedCombinations/any(x:x has 'sms, password')";
 });
 
 

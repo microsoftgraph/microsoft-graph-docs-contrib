@@ -11,7 +11,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var result = await graphClient.AppCatalogs.TeamsApps.GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Expand = new string []{ "appDefinitions($expand=bot)" };
-	requestConfiguration.QueryParameters.Filter = "appDefinitions/any";
+	requestConfiguration.QueryParameters.Filter = "appDefinitions/any(a:a/bot ne null)";
 });
 
 
