@@ -50,11 +50,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get microsoft.directory actions
+### Example 1: List microsoft.directory actions
 
-The following example gets the actions for the resource namespace with the identifier of `microsoft.directory`.
+The following example lists the actions for the resource namespace with the identifier of `microsoft.directory`.
 
-This method returns a maximum of 100 actions. If there are more actions, you can use `@odata.nextLink` to get the next set of actions.
+This method returns a maximum of 100 actions. If there are more actions, you can use `@odata.nextLink` to get the next set of actions. To retrieve a larger set of actions, use the `$top` parameter.
 
 #### Request
 
@@ -143,9 +143,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get microsoft.insights actions
+### Example 2: List microsoft.insights actions
 
-The following example gets the actions for the resource namespace with the identifier of `microsoft.insights`.
+The following example lists the actions for the resource namespace with the identifier of `microsoft.insights`.
 
 #### Request
 
@@ -250,9 +250,9 @@ Content-Type: application/json
 
 ### Example 3: List privileged actions
 
-The following example list the actions that are privileged for the resource namespace with the identifier of `microsoft.directory`.
+The following example lists the actions that are privileged for the resource namespace with the identifier of `microsoft.directory`.
 
-This method returns a maximum of 100 actions. If there are more actions, you can use `@odata.nextLink` to get the next set of actions.
+This method returns a maximum of 100 actions. If there are more actions, you can use `@odata.nextLink` to get the next set of actions. To retrieve a larger set of actions, use the `$top` parameter.
 
 #### Request
 
