@@ -28,6 +28,22 @@
     },
     {
       "ChangeList": [
+		{
+          "Id": "7b6aebb5-6126-4f2d-b4c4-e0952613719b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagementAlert.Read.Directory",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagementAlert.Read.Directory` delegated and application permissions to the read operations of the [privileged identity management (PIM) for Azure AD Roles APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta).",
+          "Target": "unifiedRoleManagementAlert"
+        },
+        {
+          "Id": "7b6aebb5-6126-4f2d-b4c4-e0952613719b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagementAlert.ReadWrite.Directory",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagementAlert.ReadWrite.Directory` delegated and application permissions to the read and write operations of the [privileged identity management (PIM) for Azure AD Roles APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta).",
+          "Target": "unifiedRoleManagementAlert"
+        },
         {
           "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
           "ApiChange": "Enumeration",
