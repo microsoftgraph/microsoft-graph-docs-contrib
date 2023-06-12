@@ -14,7 +14,7 @@ $requestBody->setName('Personal Tasks');
 
 
 
-$result = $graphServiceClient->me()->outlook()->taskGroupsById('outlookTaskGroup-id')->patch($requestBody);
+$result = $graphServiceClient->me()->outlook()->taskGroups()->byTaskGroupId('outlookTaskGroup-id')->patch($requestBody);
 
 
 ```

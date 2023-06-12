@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->external()->industryData()->inboundFlowsById('inboundFlow-id')->delete();
+$graphServiceClient->external()->industryData()->inboundFlows()->byInboundFlowId('inboundFlow-id')->delete();
 
 
 ```

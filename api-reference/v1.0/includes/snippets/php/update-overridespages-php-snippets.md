@@ -33,7 +33,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->identity()->b2xUserFlowsById('b2xIdentityUserFlow-id')->languagesById('userFlowLanguageConfiguration-id')->overridesPagesById('userFlowLanguagePage-id')->value()->put($requestBody);
+$graphServiceClient->identity()->b2xUserFlows()->byB2xUserFlowId('b2xIdentityUserFlow-id')->languages()->byLanguageId('userFlowLanguageConfiguration-id')->overridesPages()->byOverridesPageId('userFlowLanguagePage-id')->value()->put($requestBody);
 
 
 ```

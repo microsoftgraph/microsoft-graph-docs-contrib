@@ -41,7 +41,7 @@ conceptualContent:
           text: Access and manipulate user resources directly.
     - title: Groups
       links:
-        - url: ./office365-groups-concept-overview.md
+        - url: ./microsoft365-groups-concept-overview.md
           itemType: overview
           text: Enable user collaboration and integration across services.
     - title: Identity and access management

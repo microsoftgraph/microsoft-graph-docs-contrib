@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/DirectoryObjects/Item/CheckMemberGroups"
+	  graphdirectoryobjects "github.com/microsoftgraph/msgraph-beta-sdk-go/directoryobjects"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCheckMemberGroupsPostRequestBody()
+requestBody := graphdirectoryobjects.NewCheckMemberGroupsPostRequestBody()
 groupIds := []string {
 	"f448435d-3ca7-4073-8152-a1fd73c0fd09",
 	"bd7c6263-4dd5-4ae8-8c96-556e1c0bece6",

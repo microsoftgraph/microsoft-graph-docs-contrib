@@ -11,11 +11,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UserConsentRequestRequestBuilderGetRequestConfiguration();
 $queryParameters = UserConsentRequestRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = " ";
+$queryParameters->filter = " (status eq 'Completed')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequestsById('appConsentRequest-id')->userConsentRequestsById('userConsentRequest-id')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequests()->byAppConsentRequestId('appConsentRequest-id')->userConsentRequests()->byUserConsentRequestId('userConsentRequest-id')->get($requestConfiguration);
 
 
 ```

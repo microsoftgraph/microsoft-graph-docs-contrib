@@ -24,7 +24,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->placesById('place-id')->patch($requestBody);
+$result = $graphServiceClient->places()->byPlaceId('place-id')->patch($requestBody);
 
 
 ```
