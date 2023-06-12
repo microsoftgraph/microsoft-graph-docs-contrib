@@ -12,7 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) objects and their properties.
+Get a list of the alert incidents. The alert incidents are a collection of any following type that is derived from the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object:
+
+- [invalidLicenseAlertIncident](invalidlicensealertincident.md)
+- [noMfaOnRoleActivationAlertIncident](nomfaonroleactivationalertincident.md)
+- [redundantAssignmentAlertIncident](redundantassignmentalertincident.md)
+- [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md)
+- [sequentialActivationRenewalsAlertIncident](sequentialactivationrenewalsalertincident.md)
+- [staleSignInAlertIncident](stalesigninalertincident.md)
+- [tooManyGlobalAdminsAssignedToTenantAlertIncident](toomanyglobaladminsassignedtotenantalertincident.md)
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get the top five alert incidents under a resource scope like the tenant
+### Example 1: Get the top five alert incidents of an alert under a resource scope like the tenant
 
 #### Request
 The following is an example of a request.

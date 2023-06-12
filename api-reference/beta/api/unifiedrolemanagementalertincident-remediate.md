@@ -12,7 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remediate or mitigate an incident of an alert.
+Remediate or mitigate an incident of an alert. The alert incident can be one of the following types that are derived from the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object:
+
+- [invalidLicenseAlertIncident](invalidlicensealertincident.md)
+- [noMfaOnRoleActivationAlertIncident](nomfaonroleactivationalertincident.md)
+- [redundantAssignmentAlertIncident](redundantassignmentalertincident.md)
+- [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md)
+- [sequentialActivationRenewalsAlertIncident](sequentialactivationrenewalsalertincident.md)
+- [staleSignInAlertIncident](stalesigninalertincident.md)
+- [tooManyGlobalAdminsAssignedToTenantAlertIncident](toomanyglobaladminsassignedtotenantalertincident.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
