@@ -13729,7 +13729,7 @@
     {
       "ChangeList": [
         {
-          "Id": "c6fcf67c-73bb-4454-9fca-f606c7176df3",
+          "Id": "d10f34c8-8787-4aa7-9bb4-3eee0f45fc90",
           "ApiChange": "Property",
           "ChangedApiName": "onPremisesLastPasswordSyncDateTime",
           "ChangeType": "Addition",
@@ -13737,10 +13737,10 @@
           "Target": "organization"
         }
       ],
-      "Id": "c6fcf67c-73bb-4454-9fca-f606c7176df3",
+      "Id": "d10f34c8-8787-4aa7-9bb4-3eee0f45fc90",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-06-08T09:48:38.2318445Z",
+      "CreatedDateTime": "2023-06-12T07:13:01.0506132Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }
