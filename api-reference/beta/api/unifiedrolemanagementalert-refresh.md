@@ -115,7 +115,6 @@ The following is an example of a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert/refresh
-Content-Type: application/json
 
 ```
 
@@ -128,6 +127,5 @@ The following is an example of the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Content-Type: application/json
 Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/7d6771e9-e1d0-a344-fg41-882954856ed7
 ```
