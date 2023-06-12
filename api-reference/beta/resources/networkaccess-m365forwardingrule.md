@@ -29,7 +29,7 @@ Inherits from [microsoft.graph.networkaccess.forwardingRule](../resources/networ
 |Property|Type|Description|
 |:---|:---|:---|
 |action|microsoft.graph.networkaccess.forwardingRuleAction|The action applies to traffic. The possible values are: `bypass`, `forward`.|
-|category|microsoft.graph.networkaccess.forwardingCategory|Defines the category of Office 365 traffic used by a forwarding rule for M365 traffic (e.g., optimized traffic)	.The possible values are: `default`, `optimized`, `allow`, `unknownFutureValue`.|
+|category|microsoft.graph.networkaccess.forwardingCategory|Defines the category of Office 365 traffic used by a forwarding rule for M365 traffic (e.g., optimized traffic)	.The possible values are: `default`, `optimized`, `allow`.|
 |destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|destinations à Maintains the list of potential destinations and destination types that the user could be accessing in the context of a forwarding policy, including IPs and FQDNs/URLs	 Inherited from [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md).|
 |id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |name|String|name Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
