@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an alert configuration. The alert configuration can be one of the following types that are derived from the [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) object.
+Update the properties of an alert configuration. The alert configuration can be one of the following types that are derived from the [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) object:
 
 - [invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md)
 - [noMfaOnRoleActivationAlertConfiguration](../resources/nomfaonroleactivationalertconfiguration.md)

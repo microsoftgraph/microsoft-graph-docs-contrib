@@ -12,7 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [unifiedRoleManagementAlertConfiguration](../resources/unifiedRoleManagementAlertConfiguration.md) objects and their properties.
+Get a list of the alert configurations. The alert configurations are a collection of following types that are derived from the [unifiedRoleManagementAlertConfiguration](../resources/unifiedRoleManagementAlertConfiguration.md) object:
+
+- [invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md)
+- [noMfaOnRoleActivationAlertConfiguration](../resources/nomfaonroleactivationalertconfiguration.md)
+- [redundantAssignmentAlertConfiguration](../resources/redundantassignmentalertconfiguration.md)
+- [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](../resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md)
+- [sequentialActivationRenewalsAlertConfiguration](../resources/sequentialactivationrenewalsalertconfiguration.md)
+- [staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md)
+- [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
