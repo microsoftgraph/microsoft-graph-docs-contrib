@@ -61,7 +61,7 @@ If successful, this method returns `200 OK` response code. If the group is added
 The following is an example of a request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "grouplifecyclepolicy_addgroup"
 } -->
 
@@ -78,7 +78,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 200 OK
