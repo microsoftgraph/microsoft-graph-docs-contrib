@@ -333,6 +333,8 @@ items:
           href: api/user-list-approleassignments.md
         - name: Add
           href: api/user-post-approleassignments.md
+        - name: Get
+          href: api/approleassignment-get.md
         - name: Remove
           href: api/user-delete-approleassignments.md
         - name: Get delta for directory object
@@ -695,6 +697,8 @@ items:
           href: api/group-list-approleassignments.md
         - name: Add
           href: api/group-post-approleassignments.md
+        - name: Get
+          href: api/approleassignment-get.md
         - name: Remove
           href: api/group-delete-approleassignments.md
         - name: Get delta for directory object
@@ -1024,6 +1028,8 @@ items:
             href: api/serviceprincipal-list-approleassignments.md
           - name: Add
             href: api/serviceprincipal-post-approleassignments.md
+          - name: Get
+            href: api/approleassignment-get.md
           - name: Remove
             href: api/serviceprincipal-delete-approleassignments.md
           - name: List assigned to
