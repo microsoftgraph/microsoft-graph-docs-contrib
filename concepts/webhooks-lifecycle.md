@@ -24,6 +24,14 @@ If you ignore these events, it might break the change notification flow; you can
 
 This article introduces lifecycle notifications in Microsoft Graph change notifications and provides guidance for handling the notifications.
 
+## Supported resources
+
+While you can provide a **lifecycleNotificationUrl** when creating a subscription on any resource type, lifecycle notifications are currently supported only for the following resource types.
+
+- reauthorizationRequired notifications - All resources
+- subscriptionRemoved notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][], Teams [chatMessage][]
+- missed notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][]
+
 ## Configure your subscription to receive lifecycle notifications
 
 To receive lifecycle notifications, you must provide a valid **lifecycleNotificationUrl** endpoint when creating the subscription.
@@ -108,14 +116,6 @@ The **lifecycleEvent** can be `subscriptionRemoved`, `missed`, or `reauthorizati
 A lifecycle notification doesn't contain any information about a specific resource, because it isn't related to a resource change, but to the subscription state change. Similar to change notifications, lifecycle notifications can be batched together and received as a collection, each with a possibly different **lifecycleEvent** value. Process each lifecycle notification in the batch accordingly.
 
 When you process the lifecycle notification and resume the flow of change notifications, the change notifications start flowing to the **notificationUrl**.
-
-### Resources that support lifecycle notifications
-
-While you can provide a **lifecycleNotificationUrl** when creating a subscription on any resource type, lifecycle notifications are currently supported only for the following resource types.
-
-- reauthorizationRequired notifications - All resources
-- subscriptionRemoved notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][], Teams [chatMessage][]
-- missed notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][]
 
 ## Responding to reauthorizationRequired notifications
 
