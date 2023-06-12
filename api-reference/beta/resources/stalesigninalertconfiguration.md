@@ -21,7 +21,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |Property|Type|Description|
 |:---|:---|:---|
 |alertDefinitionId|String|The identifier of an alert definition. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md). Supports `$filter` (`eq`, `ne`).|
-|duration|Duration|The number of days without activation to look back on from current timestamp.|
+|duration|Duration|The number of days to look back from current timestamp within which the account has not signed in.|
 |id|String|The identifier of the alert configuration. Inherited from [entity](../resources/entity.md).|
 |isEnabled|Boolean|`true` if the alert is enabled. Setting it to `false` disables PIM scanning the tenant to identify instances that trigger this alert. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 |scopeId|String|The identifier of the scope where the alert is related. For example, directory ID or application ID. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md). Supports `$filter` (`eq`, `ne`).|

@@ -12,7 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) object.
+Update the properties of an alert configuration. The alert configuration can be one of the following types that are derived from the [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) object.
+
+- [invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md)
+- [noMfaOnRoleActivationAlertConfiguration](../resources/nomfaonroleactivationalertconfiguration.md)
+- [redundantAssignmentAlertConfiguration](../resources/redundantassignmentalertconfiguration.md)
+- [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](../resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md)
+- [sequentialActivationRenewalsAlertConfiguration](../resources/sequentialactivationrenewalsalertconfiguration.md)
+- [staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md)
+- [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,10 +54,12 @@ PATCH /identityGovernance/roleManagementAlerts/alertConfigurations/{unifiedRoleM
 
 |Property|Type|Description|
 |:---|:---|:---|
-|alertDefinitionId|String|The identifier for an alert definition. Optional.|
-scopeType|String|The type of the scope where the alert is created. DirectoryRole is the only supported one for Azure AD Roles. New types like Application and Group may be introduced. Optional.|
-|scopeId|String|The id of the scope where the alert is related. `/` is the only supported one for the tenant. Optional.|
-|isEnabled|Boolean|True if the alert is enabled. Setting to false will disable scanning for the specific alert. Optional.|
+|duration|Boolean|The number of days to look back on from current timestamp. <br/><br/>Can be updated for the **redundantAssignmentAlertConfiguration** and the **staleSignInAlertConfiguration** alert configuration type.|
+|globalAdminCountThreshold|Int32|The threshold for the number of accounts assigned the Global Administrator role in the tenant. Triggers an alert if the number of global administrators in the tenant reaches or crosses this threshold value. <br/><br/>Can be updated for the **tooManyGlobalAdminsAssignedToTenantAlertConfiguration** alert configuration type.|
+|isEnabled|Boolean|True if the alert is enabled. Setting to false will disable scanning for the specific alert. Optional. <br/><br/>Can be updated for all alert configuration types.|
+|percentageOfGlobalAdminsOutOfRolesThreshold|Int32|Threshold of the percentage of global administrators out of all the role assignments in the tenant. Triggers an alert if the percentage in the tenant reaches or crosses this threshold value. <br/><br/>Can be updated for the **tooManyGlobalAdminsAssignedToTenantAlertConfiguration** alert configuration type.|
+|sequentialActivationCounterThreshold|Int32|The minimum number of activations within the timeIntervalBetweenActivations period to trigger an alert. <br/><br/>Can be updated for the **sequentialactivationrenewalsalertconfiguration** alert configuration type.|
+|timeIntervalBetweenActivations|Duration|Time interval between activations to trigger an alert. <br/><br/>Can be updated for the **sequentialactivationrenewalsalertconfiguration** alert configuration type.|
 
 ## Response
 
