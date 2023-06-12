@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 Remediate or mitigate an incident of an alert. The alert incident can be one of the following types that are derived from the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object:
 
-- [invalidLicenseAlertIncident](invalidlicensealertincident.md)
-- [noMfaOnRoleActivationAlertIncident](nomfaonroleactivationalertincident.md)
-- [redundantAssignmentAlertIncident](redundantassignmentalertincident.md)
-- [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md)
-- [sequentialActivationRenewalsAlertIncident](sequentialactivationrenewalsalertincident.md)
-- [staleSignInAlertIncident](stalesigninalertincident.md)
-- [tooManyGlobalAdminsAssignedToTenantAlertIncident](toomanyglobaladminsassignedtotenantalertincident.md)
+- [invalidLicenseAlertIncident](../resources/invalidlicensealertincident.md)
+- [noMfaOnRoleActivationAlertIncident](../resources/nomfaonroleactivationalertincident.md)
+- [redundantAssignmentAlertIncident](../resources/redundantassignmentalertincident.md)
+- [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](../resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md)
+- [sequentialActivationRenewalsAlertIncident](../resources/sequentialactivationrenewalsalertincident.md)
+- [staleSignInAlertIncident](../resources/stalesigninalertincident.md)
+- [tooManyGlobalAdminsAssignedToTenantAlertIncident](../resources/toomanyglobaladminsassignedtotenantalertincident.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

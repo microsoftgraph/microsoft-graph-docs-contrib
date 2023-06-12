@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 Get a list of the alert incidents. The alert incidents are a collection of any following type that is derived from the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object:
 
-- [invalidLicenseAlertIncident](invalidlicensealertincident.md)
-- [noMfaOnRoleActivationAlertIncident](nomfaonroleactivationalertincident.md)
-- [redundantAssignmentAlertIncident](redundantassignmentalertincident.md)
-- [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md)
-- [sequentialActivationRenewalsAlertIncident](sequentialactivationrenewalsalertincident.md)
-- [staleSignInAlertIncident](stalesigninalertincident.md)
-- [tooManyGlobalAdminsAssignedToTenantAlertIncident](toomanyglobaladminsassignedtotenantalertincident.md)
+- [invalidLicenseAlertIncident](../resources/invalidlicensealertincident.md)
+- [noMfaOnRoleActivationAlertIncident](../resources/nomfaonroleactivationalertincident.md)
+- [redundantAssignmentAlertIncident](../resources/redundantassignmentalertincident.md)
+- [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](../resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md)
+- [sequentialActivationRenewalsAlertIncident](../resources/sequentialactivationrenewalsalertincident.md)
+- [staleSignInAlertIncident](../resources/stalesigninalertincident.md)
+- [tooManyGlobalAdminsAssignedToTenantAlertIncident](../resources/toomanyglobaladminsassignedtotenantalertincident.md)
 
 
 ## Permissions
