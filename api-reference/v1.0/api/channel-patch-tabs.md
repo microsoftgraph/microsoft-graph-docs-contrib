@@ -75,7 +75,8 @@ Here is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+   "truncated": true,
+  "@odata.type": "microsoft.graph"
 } -->
 
 ```http
