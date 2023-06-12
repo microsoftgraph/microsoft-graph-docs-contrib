@@ -38,10 +38,10 @@ Inherits from [baseItem](../resources/baseitem.md).
 | lastModifiedDateTime | DateTimeOffset                                                       | The date and time the item was last modified. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
 | name                 | String                                                               | The name of the item. Inherited from [baseItem](../resources/baseitem.md).    |
 | pageLayout           | [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values) | The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`. |
-| parentReference      | [itemReference](../resources/itemreference.md)                       | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| parentReference      | [itemReference](../resources/itemreference.md)                       | Parent information, if the item has a parent. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
 | publishingState      | [publicationFacet](../resources/publicationfacet.md)                 | The publishing status and the MM.mm version of the page.                                                                        |
 | title                | String                                                               | Title of the sitePage.                                                                                                          |
-| webUrl               | String                                                               | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| webUrl               | String                                                               | URL that displays the resource in the browser. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
 
 ### pageLayoutType values
 

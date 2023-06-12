@@ -44,7 +44,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 | lastModifiedDateTime | DateTimeOffset                                                       | The date and time the item was last modified. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
 | name                 | String                                                               | The name of the item. Inherited from [baseItem](../resources/baseitem.md).    |
 | pageLayout           | [pageLayouttype](../resources/basesitepage.md#pagelayouttype-values)       | The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`. |
-| parentReference      | [itemReference](../resources/itemreference.md)                         | Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
+| parentReference      | [itemReference](../resources/itemreference.md)                         | Parent information, if the item has a parent. Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
 | promotionKind        | [pagePromotionType](../resources/sitepage.md#pagepromotiontype-values) | Indicates the promotion kind of the sitePage. The possible values are: `microsoftReserved`, `page`, `newsPost`, `unknownFutureValue`.                                                                                    |
 | publishingState      | [publicationFacet](../resources/publicationfacet.md)                   | The publishing status and the MM.mm version of the page.                                                                        |
 | reactions            | [reactionsFacet](../resources/reactionsfacet.md)                       | Reactions information for the page.                                                                                             |
@@ -53,7 +53,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 | thumbnailWebUrl      | String                                                                 | Url of the sitePage's thumbnail image                                                                                           |
 | title                | String                                                                 | Title of the sitePage.                                                                                                          |
 | titleArea            | [titleArea](../resources/titlearea.md)                                 | Title area on the SharePoint page.                                                                                              |
-| webUrl               | String                                                                 | Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
+| webUrl               | String                                                                 | URL that displays the resource in the browser. Read-only. Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
 
 ### pagePromotionType values
 
