@@ -32,7 +32,7 @@ The calling user must be a member user or have the Privileged Role Administrator
 }
 -->
 ``` http
-GET /identityGovernance/roleManagementAlerts/alerts?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType' and alertDefinitionId eq 'alertDefinitionId'
+GET /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/betaidentityGovernance/roleManagementAlerts/alerts?$filter=scopeId eq '67b47f38-0f0b-4e62-a3be-859140c2061f' and scopeType eq 'DirectoryRole' and alertDefinitionId eq 'DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert'&$expand=alertDefinition,alertConfiguration,alertIncidents
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert?$expand=alertDefinition,alertConfiguration,alertIncidents
 ```
 
 
@@ -79,51 +79,59 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/roleManagementAlerts/alerts(alertDefinition(),alertConfiguration(),alertIncidents())/$entity",
-    "id": "DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert",
-    "alertDefinitionId": "DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert",
-    "scopeId": "67b47f38-0f0b-4e62-a3be-859140c2061f",
+    "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert",
+    "alertDefinitionId": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert",
+    "scopeId": "/",
     "scopeType": "DirectoryRole",
+    "incidentCount": 3,
     "isActive": true,
-    "incidentCount": 2,
-    "lastModifiedDateTime": "2022-02-08T22:45:19.24Z",
-    "lastScannedDateTime": "2022-04-27T08:58:09.983Z",
+    "lastModifiedDateTime": "2023-05-27T19:16:09.643Z",
+    "lastScannedDateTime": "2023-06-11T23:01:35.21Z",
     "alertDefinition": {
-        "id": "DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert",
+        "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert",
         "displayName": "There are too many global administrators",
         "scopeType": "DirectoryRole",
-        "scopeId": "67b47f38-0f0b-4e62-a3be-859140c2061f",
+        "scopeId": "/",
         "description": "The percentage of global administrators is high, relative to other privileged roles. It is recommended to use least privileged roles, with just enough privileges to perform the required tasks.",
         "severityLevel": "low",
         "securityImpact": "Global administrator is the highest privileged role. If a Global Administrator is compromised, the attacker gains access to all of their permissions, which puts your whole system at risk.",
-        "mitigationSteps": "Review users and remove any that do not absolutely need the global administrator role. Assign lower privileged roles to these users instead.",
+        "mitigationSteps": "·Review the users in the list and remove any that do not absolutely need the Global Administrator role.·Assign lower privileged roles to these users instead.",
         "howToPrevent": "Assign users the least privileged role they need.",
         "isRemediatable": true,
         "isConfigurable": true
     },
     "alertConfiguration": {
         "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
-        "id": "DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert",
-        "alertDefinitionId": "DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert",
+        "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert",
+        "alertDefinitionId": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert",
         "scopeType": "DirectoryRole",
-        "scopeId": "67b47f38-0f0b-4e62-a3be-859140c2061f",
+        "scopeId": "/",
         "isEnabled": true,
-        "globalAdminCountThreshold": 20,
-        "percentageOfGlobalAdminsOutOfRolesThreshold": 10
+        "globalAdminCountThreshold": 2,
+        "percentageOfGlobalAdminsOutOfRolesThreshold": 4
     },
+    "alertIncidents@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/roleManagementAlerts/alerts('DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert')/alertIncidents",
     "alertIncidents": [
         {
-           "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
-            "Id": "a9f38501-74ec-43ea-8663-6c538602150d",
-            "assigneeId": "a9f38501-74ec-43ea-8663-6c538602150d",
+            "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
+            "id": "f5417b06-cdae-417f-9589-a334104206cf",
+            "assigneeId": "f5417b06-cdae-417f-9589-a334104206cf",
             "assigneeDisplayName": "testUser1",
-            "assigneeUserPrincipalName": "testuser1@azrbac.ccsctp.net"
+            "assigneeUserPrincipalName": "testuser1@anujcoffice.onmicrosoft.com"
         },
         {
             "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
-            "Id": "bfab9505-a77d-4edf-9474-e8258e8a6b40",
-            "assigneeId": "bfab9505-a77d-4edf-9474-e8258e8a6b40",
+            "id": "861e0b20-1e9f-4ca9-bcd1-ddc22c5d7320",
+            "assigneeId": "861e0b20-1e9f-4ca9-bcd1-ddc22c5d7320",
             "assigneeDisplayName": "testUser2",
-            "assigneeUserPrincipalName": "testuser2@azrbac.ccsctp.net"
+            "assigneeUserPrincipalName": "testuser2@anujcoffice.onmicrosoft.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
+            "id": "d15bb922-c926-412e-aae3-30afb1c8a0b6",
+            "assigneeId": "d15bb922-c926-412e-aae3-30afb1c8a0b6",
+            "assigneeDisplayName": "testUser3",
+            "assigneeUserPrincipalName": "testuser3@anujcoffice.onmicrosoft.com"
         }
     ]
 }

@@ -58,7 +58,7 @@ For role management alerts, the **resourceLocation** contains the url of the rol
 
 ### Example 1: Retrieve the details of a long running operation for role management alert refresh when the operation status is `running`.
 
-### Request
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ope
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 ### Example 2: Retrieve the details of a long running operation for role management alert refresh when the operation status is `succeeded`.
 
-### Request
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ope
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

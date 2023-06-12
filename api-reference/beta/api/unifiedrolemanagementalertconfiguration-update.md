@@ -48,7 +48,7 @@ PATCH /identityGovernance/roleManagementAlerts/alertConfigurations/{unifiedRoleM
 |:---|:---|:---|
 |alertDefinitionId|String|The identifier for an alert definition. Optional.|
 scopeType|String|The type of the scope where the alert is created. DirectoryRole is the only supported one for Azure AD Roles. New types like Application and Group may be introduced. Optional.|
-|scopeId|String|The id of the scope where the alert is related. For example, directory id, application id, etc. Optional.|
+|scopeId|String|The id of the scope where the alert is related. `/` is the only supported one for the tenant. Optional.|
 |isEnabled|Boolean|True if the alert is enabled. Setting to false will disable scanning for the specific alert. Optional.|
 
 ## Response

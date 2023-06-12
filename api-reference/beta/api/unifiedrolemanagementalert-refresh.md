@@ -59,7 +59,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |scopeType|String|The type of the scope where the alert is created. `DirectoryRole` is the only supported one for Azure AD roles. |
-|scopeId|String|The ID of the scope where the alert applies. For example, directory ID or application ID.|
+|scopeId|String|The identifier of the scope where the alert applies. `/` is the only supported one for the tenant.|
 
 For refreshing a single alert, a request body is not needed.
 
@@ -70,14 +70,14 @@ If successful, this action returns a `202 Accepted` response code with a 'Locati
 
 ## Examples
 
-The following example refreshes all the alerts under a resource scope like a tenant.
+### Example 1: refresh all the alerts under a resource scope like a tenant.
 
-### Request
+#### Request
 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "unifiedrolemanagementalertthis.refresh"
+  "name": "unifiedrolemanagementalert_refresh_all"
 }
 -->
 ``` http
@@ -85,12 +85,12 @@ POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/al
 Content-Type: application/json
 
 {
-    "scopeId" : "67b47f38-0f0b-4e62-a3be-859140c2061f",
+    "scopeId" : "/",
     "scopeType" : "DirectoryRole"
 }
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 <!-- {
   "blockType": "response",
@@ -101,4 +101,33 @@ The following is an example of the response.
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/5c5670d6-a2c0-a394-ef42-882954856de5
+```
+
+### Example 2: refresh a single alert under a resource scope like a tenant.
+
+#### Request
+
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "unifiedrolemanagementalert_refresh_single"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert/refresh
+Content-Type: application/json
+
+```
+
+#### Response
+The following is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/7d6771e9-e1d0-a344-fg41-882954856ed7
 ```

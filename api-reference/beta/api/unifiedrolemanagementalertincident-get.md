@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertIncidents/a9f38501-74ec-43ea-8663-6c538602150d
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert/alertIncidents/a9f38501-74ec-43ea-8663-6c538602150d
 ```
 
 
@@ -78,11 +78,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
-  "id": "a9f38501-74ec-43ea-8663-6c538602150d",
-  "assigneeId": "a9f38501-74ec-43ea-8663-6c538602150d",
-  "assigneeDisplayName": "testUser1",
-  "assigneeUserPrincipalName": "testuser1@Contoso.com"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/roleManagementAlerts/alerts('DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert')/alertIncidents/$entity",
+    "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertIncident",
+    "id": "13d5df6a-3d2e-4dcb-9dab-486df2cf5c8e",
+    "assigneeId": "13d5df6a-3d2e-4dcb-9dab-486df2cf5c8e",
+    "assigneeDisplayName": "testUser1",
+    "assigneeUserPrincipalName": "testuser1@anujcoffice.onmicrosoft.com"
 }
 ```
 

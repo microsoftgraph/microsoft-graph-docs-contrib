@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertDefinitions?$filter=scopeId eq '67b47f38-0f0b-4e62-a3be-859140c2061f' and scopeType eq 'DirectoryRole'&$expand=alertDefinition
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertDefinitions?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 
 
@@ -78,22 +78,100 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRoleManagementAlertDefinition",
-      "id": "0d5b2e31-dfef-d26a-b4c6-fd7a94e1ba2d",
-      "displayName": "There are too many global administrators",
-      "scopeType": "DirectoryRole",
-      "scopeId": "67b47f38-0f0b-4e62-a3be-859140c2061f",
-      "description": "The percentage of global administrators is high, relative to other privileged roles. It is recommended to use least privileged roles, with just enough privileges to perform the required tasks.",
-      "severityLevel": "low",
-      "securityImpact": "Global administrator is the highest privileged role. If a Global Administrator is compromised, the attacker gains access to all of their permissions, which puts your whole system at risk.",
-      "mitigationSteps": "Review users and remove any that do not absolutely need the global administrator role. Assign lower privileged roles to these users instead.",
-      "howToPrevent": "Assign users the least privileged role they need.",
-      "isRemediatable": true,
-      "isConfigurable": true
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/roleManagementAlerts/alertDefinitions",
+    "value": [
+        {
+            "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_InvalidLicenseAlert",
+            "displayName": "The organization doesn't have Azure AD Premium P2",
+            "scopeType": "DirectoryRole",
+            "scopeId": "/",
+            "description": "Azure AD Privileged Identity Management requires a license, but the tenant either doesn't have an Azure AD Premium P2 license, or a trial license has expired.  If you do not obtain a license, Azure AD Privileged Identity Management and its configuration will be removed from the tenant.",
+            "severityLevel": "high",
+            "securityImpact": "Administrators in the tenant will not be able to use Azure AD Privileged Identity Management for role activation, access reviews or other management tasks unless a license is present.",
+            "mitigationSteps": "Purchase a license plan which includes Azure AD Premium P2 for all users who will be interacting with Azure AD PIM or with Azure AD Identity Protection.  More information on pricing and purchase options is at https://azure.microsoft.com/en-us/pricing/details/active-directory/",
+            "howToPrevent": "To dismiss this alert, ensure there is a license on the tenant for Azure AD Premium P2.",
+            "isRemediatable": false,
+            "isConfigurable": false
+        },
+        {
+            "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_NoMfaOnRoleActivationAlert",
+            "displayName": "Roles don't require multi-factor authentication for activation",
+            "scopeType": "DirectoryRole",
+            "scopeId": "/",
+            "description": "Roles are configured for activation without requiring multifactor authentication. This is highly discouraged.",
+            "severityLevel": "medium",
+            "securityImpact": "Without multi-factor authentication, compromised users can activate privileged roles.",
+            "mitigationSteps": "Review the list of roles and require multi-factor authentication for every role.",
+            "howToPrevent": "Every privileged role should be configured to require MFA for activation.",
+            "isRemediatable": true,
+            "isConfigurable": false
+        },
+        {
+            "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_RedundantAssignmentAlert",
+            "displayName": "Eligible administrators aren't activating their privileged role",
+            "scopeType": "DirectoryRole",
+            "scopeId": "/",
+            "description": "{0} user(s) haven't activated their privileged roles in the past {1} days",
+            "severityLevel": "low",
+            "securityImpact": "Users that have been assigned privileged roles they don't need increases the chance of an attack. It is also easier for attackers to remain unnoticed in accounts that are not actively being used.",
+            "mitigationSteps": "Review the users in the list and remove them from privileged roles they do not need.",
+            "howToPrevent": "·Assign privileged roles to users that have a business justification.·Schedule regular access reviews to verify that users still need their access.",
+            "isRemediatable": true,
+            "isConfigurable": true
+        },
+        {
+            "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_RolesAssignedOutsidePimAlert",
+            "displayName": "Roles are being assigned outside of Privileged Identity Management",
+            "scopeType": "DirectoryRole",
+            "scopeId": "/",
+            "description": "{0} privileged assignment(s) were made outisde of Azure AD PIM",
+            "severityLevel": "high",
+            "securityImpact": "Privileged role assignments made outside of Privileged Identity Management are not properly monitored and may indicate an active attack.",
+            "mitigationSteps": "Review the users in the list and remove them from privileged roles assigned outside of Privileged Identity Management.",
+            "howToPrevent": "Investigate where users are being assigned privileged roles outside of Privileged Identity Management and prohibit future assignments from there.",
+            "isRemediatable": true,
+            "isConfigurable": false
+        },
+        {
+            "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_SequentialActivationRenewalsAlert",
+            "displayName": "Roles are being activated too frequently",
+            "scopeType": "DirectoryRole",
+            "scopeId": "/",
+            "description": "{0} multiple activations for a privileged role were made by the same user",
+            "severityLevel": "medium",
+            "securityImpact": "Multiple activations to the same privileged role by the same user is a sign of an attack.",
+            "mitigationSteps": "Review the users in the list and ensure that the activation duration for their privileged role is set long enough for them to perform their tasks.",
+            "howToPrevent": "·Ensure that the activation duration for privileged roles is set long enough for users to perform their tasks.·Require multi-factor authentication for privileged roles that have accounts shared by multiple administrators.",
+            "isRemediatable": false,
+            "isConfigurable": true
+        },
+        {
+            "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_StaleSignInAlert",
+            "displayName": "Potential stale accounts in a privileged role",
+            "scopeType": "DirectoryRole",
+            "scopeId": "/",
+            "description": "{0} account(s) in privileged roles that have not signed in to Azure AD in the past {1} day(s)",
+            "severityLevel": "medium",
+            "securityImpact": "Accounts in a privileged role have not signed in recently. These accounts might be service or shared accounts that aren't being maintained and are vulnerable to attackers.",
+            "mitigationSteps": "Review the accounts in the list. If they no longer need access, remove them from their privileged roles.",
+            "howToPrevent": "Regularly review accounts with privileged roles using <a href=\"https://docs.microsoft.com/en-us/azure/active-directory/governance/access-reviews-overview\" target=\"_blank\" >access reviews</a> and remove role assignments which are no longer needed.",
+            "isRemediatable": true,
+            "isConfigurable": true
+        },
+        {
+            "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert",
+            "displayName": "There are too many global administrators",
+            "scopeType": "DirectoryRole",
+            "scopeId": "/",
+            "description": "The percentage of global administrators is high, relative to other privileged roles. It is recommended to use least privileged roles, with just enough privileges to perform the required tasks.",
+            "severityLevel": "low",
+            "securityImpact": "Global administrator is the highest privileged role. If a Global Administrator is compromised, the attacker gains access to all of their permissions, which puts your whole system at risk.",
+            "mitigationSteps": "·Review the users in the list and remove any that do not absolutely need the Global Administrator role.·Assign lower privileged roles to these users instead.",
+            "howToPrevent": "Assign users the least privileged role they need.",
+            "isRemediatable": true,
+            "isConfigurable": true
+        }
+    ]
 }
 ```
 

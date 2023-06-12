@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |isActive|Boolean|`false` by default. `true` if the alert is active.|
 |lastModifiedDateTime|DateTimeOffset|The date time when the alert configuration was updated or new incidents generated.|
 |lastScannedDateTime|DateTimeOffset|The date time when the tenant was last scanned for incidents that trigger this alert.|
-|scopeId|String|The identifier of the scope where the alert is related. For example, directory ID or application ID. Supports `$filter` (`eq`, `ne`).|
+|scopeId|String|The identifier of the scope where the alert is related. `/` is the only supported one for the tenant. Supports `$filter` (`eq`, `ne`).|
 |scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Azure AD roles. |
 
 ## Relationships

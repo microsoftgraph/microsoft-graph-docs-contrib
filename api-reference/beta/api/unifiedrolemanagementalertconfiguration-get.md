@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertConfigurations/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertConfigurations/DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert?$expand=alertDefinition
 ```
 
 
@@ -78,25 +78,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
-  "id": "DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert",
-  "alertDefinitionId": "DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert",
-  "scopeId": "67b47f38-0f0b-4e62-a3be-859140c2061f",
-  "scopeType": "DirectoryRole",
-  "isEnabled": true,
-  "globalAdminCountThreshold": 20,
-  "percentageOfGlobalAdminsOutOfRolesThreshold": 10,
-  "alertDefinition": {
-    "id": "DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert",
-    "displayName": "There are too many global administrators",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/roleManagementAlerts/alertConfigurations(alertDefinition())/$entity",
+    "@odata.type": "#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
+    "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert",
+    "alertDefinitionId": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert",
     "scopeType": "DirectoryRole",
-    "description": "The percentage of global administrators is high, relative to other privileged roles. It is recommended to use least privileged roles, with just enough privileges to perform the required tasks.",
-    "severityLevel": "low",
-    "securityImpact": "Global administrator is the highest privileged role. If a Global Administrator is compromised, the attacker gains access to all of their permissions, which puts your whole system at risk.",
-    "mitigationSteps": "Review users and remove any that do not absolutely need the global administrator role. Assign lower privileged roles to these users instead.",
-    "isRemediatable": true,
-    "isConfigurable": true
-  }
+    "scopeId": "/",
+    "isEnabled": true,
+    "globalAdminCountThreshold": 2,
+    "percentageOfGlobalAdminsOutOfRolesThreshold": 4,
+    "alertDefinition": {
+        "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert",
+        "displayName": "There are too many global administrators",
+        "scopeType": "DirectoryRole",
+        "scopeId": "/",
+        "description": "The percentage of global administrators is high, relative to other privileged roles. It is recommended to use least privileged roles, with just enough privileges to perform the required tasks.",
+        "severityLevel": "low",
+        "securityImpact": "Global administrator is the highest privileged role. If a Global Administrator is compromised, the attacker gains access to all of their permissions, which puts your whole system at risk.",
+        "mitigationSteps": "·Review the users in the list and remove any that do not absolutely need the Global Administrator role.·Assign lower privileged roles to these users instead.",
+        "howToPrevent": "Assign users the least privileged role they need.",
+        "isRemediatable": true,
+        "isConfigurable": true
+    }
 }
 ```
 

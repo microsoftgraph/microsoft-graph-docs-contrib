@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |isConfigurable|Boolean|`true` if the alert configuration can be customized in the tenant, and `false` otherwise. For example, the number and percentage thresholds of the 'There are too many global administrators' alert can be configured by users, while the 'This organization does not have Azure AD Premium P2' cannot be configured, because the criteria is restricted.|
 |isRemediatable|Boolean|`true` if the alert can be remediated, and `false` otherwise.|
 |mitigationSteps|String|The methods to mitigate the alert when it's triggered in the tenant. For example, to mitigate the 'There are too many global administrators', you could remove redundant privileged role assignments. |
-|scopeId|String|The identifier of the scope where the alert is related. For example, directory ID or application ID. Supports `$filter` (`eq`, `ne`).|
+|scopeId|String|The identifier of the scope where the alert is related. `/` is the only supported one for the tenant. Supports `$filter` (`eq`, `ne`).|
 |scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Azure AD Roles. |
 |securityImpact|String|Security impact of the alert. For example, it could be information leaks or unauthorized access.|
 |severityLevel|alertSeverity|Severity level of the alert. The possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
