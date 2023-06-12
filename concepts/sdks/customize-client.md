@@ -35,7 +35,7 @@ var httpClient = GraphClientFactory.Create(handlers);
 var customGraphClient = new GraphServiceClient(httpClient, authProvider);
 
 var messages = await graphClient.Me.Messages
-        .GetAsync(requestConfiguration => 
+        .GetAsync(requestConfiguration =>
         {
             requestConfiguration.QueryParameters.Top = 100;
             requestConfiguration.QueryParameters.Select = new string[] { "subject" };
@@ -142,8 +142,6 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 ```
 
 ## [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 ```go
 import (
@@ -349,8 +347,6 @@ final GraphServiceClient graphServiceClient =
 > For more information about Azure Identity proxy configuration, see [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).
 
 ## [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 ```go
 import (

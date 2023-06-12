@@ -2,7 +2,7 @@
 title: "iPv4CidrRange resource type"
 description: "Represents an IPv4 range using the CIDR notation."
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: "davidspooner"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

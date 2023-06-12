@@ -81,7 +81,7 @@ items:
       href: /graph/delta-query-overview?context=graph/api/1.0
     - name: Add custom data
       displayName: directory extensions, schema extensions, open extensions, extension attributes
-      href: /graph/extensibility-overview?context=graph/api/1.0
+      href: /graph/extensibility-overview?context=graph/api/1.0&view=graph-rest-1.0&preserve-view=true
     - name: Enable metered APIs
       href: /graph/metered-api-setup?context=graph/api/1.0
       displayName: monetize, charge, cost, pricing
@@ -283,7 +283,7 @@ items:
           href: /graph/toolkit/customize-components/right-to-left?context=graph/api/1.0
   - name: Configure Connected Services
     displayName: Configure Connected Services in Visual Studio
-    href: office-365-connected-services.md
+    href: /graph/office-365-connected-services?context=graph/api/1.0
   - name: Resources
     items:
     - name: Best practices
@@ -333,6 +333,8 @@ items:
           href: api/user-list-approleassignments.md
         - name: Add
           href: api/user-post-approleassignments.md
+        - name: Get
+          href: api/approleassignment-get.md
         - name: Remove
           href: api/user-delete-approleassignments.md
         - name: Get delta for directory object
@@ -695,6 +697,8 @@ items:
           href: api/group-list-approleassignments.md
         - name: Add
           href: api/group-post-approleassignments.md
+        - name: Get
+          href: api/approleassignment-get.md
         - name: Remove
           href: api/group-delete-approleassignments.md
         - name: Get delta for directory object
@@ -1024,6 +1028,8 @@ items:
             href: api/serviceprincipal-list-approleassignments.md
           - name: Add
             href: api/serviceprincipal-post-approleassignments.md
+          - name: Get
+            href: api/approleassignment-get.md
           - name: Remove
             href: api/serviceprincipal-delete-approleassignments.md
           - name: List assigned to
@@ -4734,9 +4740,9 @@ items:
     - name: Extensions
       items:
       - name: Overview
+        displayName: Directory extensions, Schema extensions, Open extensions, On-premises extensions
         href: /graph/extensibility-overview?context=graph/api/1.0&preserve-view=true
-      - name: Directory extension
-        displayname: Groups, Users, Applications, Organization, Devices
+      - name: Directory extensions
         items:
         - name: Extension property
           href: resources/extensionproperty.md
@@ -4750,8 +4756,7 @@ items:
           href: api/extensionproperty-delete.md
         - name: Get available extension properties
           href: api/directoryobject-getavailableextensionproperties.md
-      - name: Open extension
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+      - name: Open extensions
         items:
         - name: Open type extension
           href: resources/opentypeextension.md
@@ -4764,7 +4769,6 @@ items:
         - name: Delete
           href: api/opentypeextension-delete.md
       - name: Schema extension
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
         - name: Schema extension
           href: resources/schemaextension.md
@@ -4934,6 +4938,43 @@ items:
             href: api/contract-get.md
           - name: List contracts
             href: api/contract-list.md
+        - name: Custom security attributes
+          items:
+          - name: Overview
+            href: resources/custom-security-attributes-overview.md
+          - name: Allowed values
+            href: resources/allowedvalue.md
+            items:
+            - name: List
+              href: api/customsecurityattributedefinition-list-allowedvalues.md
+            - name: Create
+              href: api/customsecurityattributedefinition-post-allowedvalues.md
+            - name: Get
+              href: api/allowedvalue-get.md
+            - name: Update
+              href: api/allowedvalue-update.md
+          - name: Attribute sets
+            href: resources/attributeset.md
+            items:
+            - name: List
+              href: api/directory-list-attributesets.md
+            - name: Create
+              href: api/directory-post-attributesets.md
+            - name: Get
+              href: api/attributeset-get.md
+            - name: Update
+              href: api/attributeset-update.md
+          - name: Custom security attribute definitions
+            href: resources/customsecurityattributedefinition.md
+            items:
+            - name: List
+              href: api/directory-list-customsecurityattributedefinitions.md
+            - name: Create
+              href: api/directory-post-customsecurityattributedefinitions.md
+            - name: Get
+              href: api/customsecurityattributedefinition-get.md
+            - name: Update
+              href: api/customsecurityattributedefinition-update.md
         - name: Deleted items
           href: resources/directory.md
           items:
@@ -5864,9 +5905,9 @@ items:
             - name: Get risky service principal
               href: api/riskyserviceprincipal-get.md
             - name: List history
-              href: api/riskyserviceprincipal-list-history.md 
+              href: api/riskyserviceprincipal-list-history.md
             - name: Confirm compromised
-              href: api/riskyserviceprincipal-confirmcompromised.md 
+              href: api/riskyserviceprincipal-confirmcompromised.md
             - name: Dismiss
               href: api/riskyserviceprincipal-dismiss.md
         - name: Identity provider
@@ -7102,34 +7143,40 @@ items:
           items:
           - name: Alert evidence
             href: resources/security-alertevidence.md
+          - name: Amazon resource evidence
+            href: resources/security-amazonresourceevidence.md
           - name: Analyzed message evidence
-            href: resources/security-analyzedMessageEvidence.md
+            href: resources/security-analyzedmessageevidence.md
+          - name: Azure resource evidence
+            href: resources/security-azureresourceevidence.md
           - name: Cloud application evidence
-            href: resources/security-cloudApplicationEvidence.md
+            href: resources/security-cloudapplicationevidence.md
           - name: Device evidence
-            href: resources/security-deviceEvidence.md
+            href: resources/security-deviceevidence.md
           - name: File evidence
-            href: resources/security-fileEvidence.md
+            href: resources/security-fileevidence.md
+          - name: Google Cloud resource evidence
+            href: resources/security-googlecloudresourceevidence.md
           - name: IP evidence
-            href: resources/security-ipEvidence.md
+            href: resources/security-ipevidence.md
           - name: Mailbox evidence
-            href: resources/security-mailboxEvidence.md
+            href: resources/security-mailboxevidence.md
           - name: Mail cluster evidence
-            href: resources/security-mailClusterEvidence.md
+            href: resources/security-mailclusterevidence.md
           - name: OAuth application evidence
-            href: resources/security-oauthApplicationEvidence.md
+            href: resources/security-oauthapplicationevidence.md
           - name: Process evidence
-            href: resources/security-processEvidence.md
+            href: resources/security-processevidence.md
           - name: Registry key evidence
-            href: resources/security-registryKeyEvidence.md
+            href: resources/security-registrykeyevidence.md
           - name: Registry value evidence
-            href: resources/security-registryValueEvidence.md
+            href: resources/security-registryvalueevidence.md
           - name: Security group evidence
-            href: resources/security-securityGroupEvidence.md
+            href: resources/security-securitygroupevidence.md
           - name: URL evidence
-            href: resources/security-urlEvidence.md
+            href: resources/security-urlevidence.md
           - name: User evidence
-            href: resources/security-userEvidence.md
+            href: resources/security-userevidence.md
         - name: Incident
           items:
           - name: Incident
