@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [webPart] at the specified position in the a [sitePage]
+Create a new [webPart] at a specified position in the [sitePage].
 
 [sitepage]: ../resources/sitePage.md
 [webPart]: ../resources/webPart.md
