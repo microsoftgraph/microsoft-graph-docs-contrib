@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessPolicy resource type"
-description: "**TODO: Add Description**"
+description: "conditional Access Policy"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+conditional Access Policy
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -30,11 +29,11 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|modifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|created DateTime|
+|description|String|description|
+|displayName|String|display Name|
+|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|modifiedDateTime|DateTimeOffset|modified DateTime|
 
 ## Relationships
 None.

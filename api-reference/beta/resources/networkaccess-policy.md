@@ -1,6 +1,6 @@
 ---
 title: "policy resource type"
-description: "**TODO: Add Description**"
+description: "policy"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+policy
 This is an abstract type.
 
 
@@ -33,15 +33,15 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|name|String|**TODO: Add Description**|
-|version|String|**TODO: Add Description**|
+|description|String|description|
+|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|name|String|name|
+|version|String|version|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|**TODO: Add Description**|
+|policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|policyRules maintains the definition of the policy ruleset that makes up the core definition of a policy	|
 
 ## JSON representation
 The following is a JSON representation of the resource.

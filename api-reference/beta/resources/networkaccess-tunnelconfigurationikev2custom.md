@@ -20,12 +20,12 @@ Inherits from [microsoft.graph.networkaccess.tunnelConfiguration](../resources/n
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|dhGroup|microsoft.graph.networkaccess.dhGroup|Specifies the DH group identifier for IPSec SA negotiation	.The possible values are: `dhGroup14`, `dhGroup24`, `dhGroup2048`, `ecp256`, `ecp384`, `unknownFutureValue`.|
-|ikeEncryption|microsoft.graph.networkaccess.ikeEncryption|Specifies the IKE encryption protocol	.The possible values are: `aes128`, `aes192`, `aes256`, `gcmAes128`, `gcmAes256`, `unknownFutureValue`.|
-|ikeIntegrity|microsoft.graph.networkaccess.ikeIntegrity|Specifies the integration properties of the IKE protocol	.The possible values are: `sha256`, `sha384`, `gcmAes128`, `gcmAes256`, `unknownFutureValue`.|
-|ipSecEncryption|microsoft.graph.networkaccess.ipSecEncryption|Specifies the encryption protocol used for the IPSec tunnel	.The possible values are: `none`, `gcmAes128`, `gcmAes192`, `gcmAes256`, `unknownFutureValue`.|
-|ipSecIntegrity|microsoft.graph.networkaccess.ipSecIntegrity|Specifies the integrity properties of the IPSec protocol	.The possible values are: `gcmAes128`, `gcmAes192`, `gcmAes256`, `sha256`, `unknownFutureValue`.|
-|pfsGroup|microsoft.graph.networkaccess.pfsGroup|Specifies the Phase 2 DH group identifier for IPSec SA negotiation	.The possible values are: `none`, `pfs1`, `pfs2`, `pfs14`, `pfs24`, `pfs2048`, `pfsmm`, `ecp256`, `ecp384`, `unknownFutureValue`.|
+|dhGroup|microsoft.graph.networkaccess.dhGroup|Specifies the DH group identifier for IPSec SA negotiation	.The possible values are: `dhGroup14`, `dhGroup24`, `dhGroup2048`, `ecp256`, `ecp384`.|
+|ikeEncryption|microsoft.graph.networkaccess.ikeEncryption|Specifies the IKE encryption protocol	.The possible values are: `aes128`, `aes192`, `aes256`, `gcmAes128`, `gcmAes256`.|
+|ikeIntegrity|microsoft.graph.networkaccess.ikeIntegrity|Specifies the integration properties of the IKE protocol	.The possible values are: `sha256`, `sha384`, `gcmAes128`, `gcmAes256`.|
+|ipSecEncryption|microsoft.graph.networkaccess.ipSecEncryption|Specifies the encryption protocol used for the IPSec tunnel	.The possible values are: `none`, `gcmAes128`, `gcmAes192`, `gcmAes256`.|
+|ipSecIntegrity|microsoft.graph.networkaccess.ipSecIntegrity|Specifies the integrity properties of the IPSec protocol	.The possible values are: `gcmAes128`, `gcmAes192`, `gcmAes256`, `sha256`.|
+|pfsGroup|microsoft.graph.networkaccess.pfsGroup|Specifies the Phase 2 DH group identifier for IPSec SA negotiation	.The possible values are: `none`, `pfs1`, `pfs2`, `pfs14`, `pfs24`, `pfs2048`, `pfsmm`, `ecp256`, `ecp384`.|
 |preSharedKey|String|A key to establish secure connection between the link and VPN tunnel on the Edge	 Inherited from [microsoft.graph.networkaccess.tunnelConfiguration](../resources/networkaccess-tunnelconfiguration.md).|
 |saLifeTimeSeconds|Int64|a standard specifiying Security Association lifetime with recommended values from an RFC standard	|
 

@@ -1,6 +1,6 @@
 ---
 title: "policyRule resource type"
-description: "**TODO: Add Description**"
+description: "policy Rule"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+policy Rule
 This is an abstract type.
 
 
@@ -31,8 +31,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|name|String|**TODO: Add Description**|
+|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|name|String|name|
 
 ## Relationships
 None.

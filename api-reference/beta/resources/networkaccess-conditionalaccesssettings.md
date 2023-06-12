@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessSettings resource type"
-description: "**TODO: Add Description**"
+description: "Conditional access settings. Admin can enable or disable conditional access signaling for source IP restoration and Connectivity through NaaS."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Conditional access settings. Admin can enable or disable conditional access signaling for source IP restoration and Connectivity through NaaS.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -30,8 +30,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|signalingStatus|microsoft.graph.networkaccess.status|**TODO: Add Description**.The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
+|id|String|Id Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|signalingStatus|microsoft.graph.networkaccess.status|Conditional Access policy includes zero trust network access information when SignalingStatus is enabled	.The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 None.

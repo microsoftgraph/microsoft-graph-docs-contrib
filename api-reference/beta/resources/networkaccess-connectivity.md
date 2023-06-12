@@ -1,6 +1,6 @@
 ---
 title: "connectivity resource type"
-description: "**TODO: Add Description**"
+description: "connectivity is a top level entity under networkAccess which represent all connectivity components."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+connectivity is a top level entity under networkAccess which represent all connectivity components.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -32,13 +31,13 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|webCategories|[microsoft.graph.networkaccess.webCategory](../resources/networkaccess-webcategory.md) collection|**TODO: Add Description**|
+|id|String|Id Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|webCategories|[microsoft.graph.networkaccess.webCategory](../resources/networkaccess-webcategory.md) collection|A web category is a group or classification of websites that share similar characteristics or content.	|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|branches|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) collection|**TODO: Add Description**|
+|branches|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) collection|branchSite represent locations for connectivity|
 
 ## JSON representation
 The following is a JSON representation of the resource.

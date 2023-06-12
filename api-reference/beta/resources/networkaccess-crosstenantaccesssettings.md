@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessSettings resource type"
-description: "**TODO: Add Description**"
+description: "Cross tenant access settings. For now it only contains the Network Packet Tagging Status. The network packet tagging with the user tenant ID will eventually be destined to Azure AD, and it will enforce Tenant Restrictions Policies, known as TRv2 Policies, which prevents users from exfiltrating data to tenants outside their organization"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Cross tenant access settings. For now it only contains the Network Packet Tagging Status. The network packet tagging with the user tenant ID will eventually be destined to Azure AD, and it will enforce Tenant Restrictions Policies, known as TRv2 Policies, which prevents users from exfiltrating data to tenants outside their organization
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -30,8 +30,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|networkPacketTaggingStatus|microsoft.graph.networkaccess.status|**TODO: Add Description**.The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
+|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|networkPacketTaggingStatus|microsoft.graph.networkaccess.status|Determines if the service inserts a header with the user tenant ID into network traffic	.The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 None.

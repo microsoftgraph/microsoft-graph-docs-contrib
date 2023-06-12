@@ -1,6 +1,6 @@
 ---
 title: "forwardingPolicyLink resource type"
-description: "**TODO: Add Description**"
+description: "Provides a link to the forwarding policy for a given forwarding profile"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Provides a link to the forwarding policy for a given forwarding profile
 
 
 Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).
@@ -32,14 +32,14 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|state|microsoft.graph.networkaccess.status|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
-|version|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
+|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|state|microsoft.graph.networkaccess.status|status Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).The possible values are: `enabled`, `disabled`.|
+|version|String|version Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[policy](../resources/networkaccess-policy.md)|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
+|policy|[policy](../resources/networkaccess-policy.md)|policy conatins a collection of policy rules Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -1,6 +1,6 @@
 ---
 title: "policyLink resource type"
-description: "**TODO: Add Description**"
+description: "Contains the link for a Policy for a given profile"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Contains the link for a Policy for a given profile
 This is an abstract type.
 
 
@@ -34,14 +34,14 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|state|microsoft.graph.networkaccess.status|**TODO: Add Description**.The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
-|version|String|**TODO: Add Description**|
+|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|state|microsoft.graph.networkaccess.status|Link status.The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
+|version|String|version|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[policy](../resources/networkaccess-policy.md)|**TODO: Add Description**|
+|policy|[policy](../resources/networkaccess-policy.md)|policy|
 
 ## JSON representation
 The following is a JSON representation of the resource.

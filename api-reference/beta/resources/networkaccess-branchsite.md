@@ -1,6 +1,6 @@
 ---
 title: "branchSite resource type"
-description: "**TODO: Add Description**"
+description: "branchSite represent locations for connectivity"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+branchSite represent locations for connectivity
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -34,20 +33,19 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bandwidthCapacity|Int64|**TODO: Add Description**|
-|connectivityState|microsoft.graph.networkaccess.connectivityState|**TODO: Add Description**.The possible values are: `pending`, `connected`, `inactive`, `error`, `unknownFutureValue`.|
-|country|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
-|region|String|**TODO: Add Description**|
-|version|String|**TODO: Add Description**|
+|bandwidthCapacity|Int64|Determines the maximum allowed Mbps (magabits per second) bandwidth from a branch site	|
+|connectivityState|microsoft.graph.networkaccess.connectivityState|Determines the branch site status.The possible values are: `pending`, `connected`, `inactive`, `error`.|
+|id|String|Id Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|last Modified DateTime|
+|name|String|name|
+|region|String|The location the branch site is created in	|
+|version|String|version|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceLinks|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|**TODO: Add Description**|
-|forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|**TODO: Add Description**|
+|deviceLinks|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Specifies each unique CPE device associated to a branch|
+|forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Specifies each forwarding profile that a branch site is associated with	|
 
 ## JSON representation
 The following is a JSON representation of the resource.

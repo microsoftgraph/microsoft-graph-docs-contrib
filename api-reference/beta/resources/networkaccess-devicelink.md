@@ -1,6 +1,6 @@
 ---
 title: "deviceLink resource type"
-description: "**TODO: Add Description**"
+description: "A link is a a single customer premises customer-premises equipment (CPE), at a physical branch site location."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A link is a a single customer premises customer-premises equipment (CPE), at a physical branch site location.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -30,14 +30,14 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bgpConfiguration|[microsoft.graph.networkaccess.bgpConfiguration](../resources/networkaccess-bgpconfiguration.md)|**TODO: Add Description**|
-|deviceVendor|microsoft.graph.networkaccess.deviceVendor|**TODO: Add Description**.The possible values are: `barracudaNetworks`, `checkPoint`, `ciscoMeraki`, `citrix`, `fortinet`, `hpeAruba`, `netFoundry`, `nuage`, `openSystems`, `paloAltoNetworks`, `riverbedTechnology`, `silverPeak`, `vmWareSdWan`, `versa`, `other`, `unknownFutureValue`.|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|ipAddress|String|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
-|tunnelConfiguration|[microsoft.graph.networkaccess.tunnelConfiguration](../resources/networkaccess-tunnelconfiguration.md)|**TODO: Add Description**|
-|version|String|**TODO: Add Description**|
+|bgpConfiguration|[microsoft.graph.networkaccess.bgpConfiguration](../resources/networkaccess-bgpconfiguration.md)|Specifies the IP address and ASN of the border gateway protocol to send traffic from a link to the edge	|
+|deviceVendor|microsoft.graph.networkaccess.deviceVendor|Specifies the vendor of the link.The possible values are: `barracudaNetworks`, `checkPoint`, `ciscoMeraki`, `citrix`, `fortinet`, `hpeAruba`, `netFoundry`, `nuage`, `openSystems`, `paloAltoNetworks`, `riverbedTechnology`, `silverPeak`, `vmWareSdWan`, `versa`, `other`.|
+|id|String|idInherited from [microsoft.graph.entity](../resources/entity.md).|
+|ipAddress|String|Specifies the client IPv4 of the link	|
+|lastModifiedDateTime|DateTimeOffset|last Modified DateTime|
+|name|String|name|
+|tunnelConfiguration|[microsoft.graph.networkaccess.tunnelConfiguration](../resources/networkaccess-tunnelconfiguration.md)|Specifies connectivity settings (protocol, IPSec policy, and presharked key) for establishing connectivity	|
+|version|String|version|
 
 ## Relationships
 None.

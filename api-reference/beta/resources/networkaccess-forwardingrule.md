@@ -1,6 +1,6 @@
 ---
 title: "forwardingRule resource type"
-description: "**TODO: Add Description**"
+description: "Forwarding rule is used to forward selective traffic to Network Access Cloud based on your needs"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Forwarding rule is used to forward selective traffic to Network Access Cloud based on your needs
 This is an abstract type.
 
 
@@ -30,11 +30,11 @@ Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkacc
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|microsoft.graph.networkaccess.forwardingRuleAction|**TODO: Add Description**.The possible values are: `bypass`, `forward`, `unknownFutureValue`.|
-|destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|name|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
-|ruleType|microsoft.graph.networkaccess.networkDestinationType|**TODO: Add Description**.The possible values are: `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`, `webCategory`, `unknownFutureValue`.|
+|action|microsoft.graph.networkaccess.forwardingRuleAction|The action applies to traffic. The possible values are: `bypass`, `forward`.|
+|destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|destinations à Maintains the list of potential destinations and destination types that the user could be accessing in the context of a network filtering policy, including IPs and FQDNs/URLs	|
+|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|name|String|name Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
+|ruleType|microsoft.graph.networkaccess.networkDestinationType|Defines the type of network destination type used by a URL filtering policy (E.g., IP, FQDN)	.The possible values are: `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`, `webCategory`.|
 
 ## Relationships
 None.

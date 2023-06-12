@@ -1,6 +1,6 @@
 ---
 title: "forwardingPolicy resource type"
-description: "**TODO: Add Description**"
+description: "Forwarding Policy will define what traffic is routed through Network Access. In order to enact the policy, forwardingPolicies will be added to forwardingProfiles.	"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Forwarding Policy will define what traffic is routed through Network Access. In order to enact the policy, forwardingPolicies will be added to forwardingProfiles.	
 
 
 Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).
@@ -32,16 +32,16 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|name|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
-|trafficForwardingType|microsoft.graph.networkaccess.trafficForwardingType|**TODO: Add Description**.The possible values are: `m365`, `internet`, `private`, `unknownFutureValue`.|
-|version|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|description|String|description Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|name|String|name Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|trafficForwardingType|microsoft.graph.networkaccess.trafficForwardingType|Provides the type of forwarding profile.The possible values are: `m365`, `internet`, `private`.|
+|version|String|version Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|
+|policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|policyRules maintains the definition of the policy ruleset that makes up the core definition of a policy	 Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.
