@@ -1,7 +1,7 @@
 ---
 title: "Receive change notifications through Azure Event Hubs"
 description: "Change notifications can be delivered via different channels, including webhooks and Azure Event Hubs. This article walks you through how to get change notifications through Azure Event Hubs."
-author: "jumasure"
+author: "keylimesoda"
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
