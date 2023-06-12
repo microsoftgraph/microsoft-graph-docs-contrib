@@ -1,6 +1,6 @@
 ---
 title: "Update webPart"
-description: "Update a new webPart"
+description: "Update a webPart"
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
