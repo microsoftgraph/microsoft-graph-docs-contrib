@@ -1,6 +1,6 @@
 ---
 title: "Create webPart"
-description: "Create a new webPart at the specified position in the a sitePage"
+description: "Create a new webPart at a specified position in the sitePage"
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
