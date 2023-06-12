@@ -3944,6 +3944,18 @@ Possible values for user account types (group membership), per Windows definitio
 | outlookMobile          |
 | unknownFutureValue     |
 
+### userDefaultAuthenticationMethodType values 
+
+|Member|
+|:---|
+|push|
+|oath|
+|voiceMobile|
+|voiceAlternateMobile|
+|voiceOffice|
+|sms|
+|unknownFutureValue|
+
 ### verifiableCredentialPresentationStatusCode values 
 
 | Member                |
