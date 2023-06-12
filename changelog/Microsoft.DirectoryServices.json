@@ -194,6 +194,48 @@
     },
     {
       "ChangeList": [
+        { 
+          "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
+          "ApiChange": "Property",
+          "ChangedApiName": "isMemberManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMemberManagementRestricted** property to the [administrativeUnit](https://learn.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
+          "Target": "administrativeUnit"
+        },
+        { 
+          "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManagementRestricted** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        },
+        { 
+          "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManagementRestricted** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        },
+        { 
+          "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManagementRestricted** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+        "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2023-06-09T00:00:00.000Z",
+        "WorkloadArea": "Identity and Access",
+        "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
           "ApiChange": "Property",
@@ -13599,6 +13641,56 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-04-11T17:56:44.238139Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allowedValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [allowedValue](https://learn.microsoft.com/en-us/graph/api/resources/allowedValue?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "allowedValue"
+        },
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeSet](https://learn.microsoft.com/en-us/graph/api/resources/attributeSet?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "attributeSet"
+        },
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customSecurityAttributeDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [customSecurityAttributeDefinition](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityAttributeDefinition?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "customSecurityAttributeDefinition"
+        },
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "attributeSets",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeSets** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "customSecurityAttributeDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the **customSecurityAttributeDefinitions** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        }
+      ],
+      "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-31T12:59:41.4957833Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },

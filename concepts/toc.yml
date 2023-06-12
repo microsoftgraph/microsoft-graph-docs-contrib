@@ -375,8 +375,14 @@ items:
             href: education-upload-resource-overview.md
           - name: Upload feedback files
             href: education-upload-feedback-resource-overview.md
-          - name: Assignment and submission state transitions
-            href: assignments-submissions-states-transition.md
+          - name: Assignment and submission states
+            items:
+              - name: Overview
+                href: assignments-submissions-states-transition.md
+              - name: Assignment states transition
+                href: assignments-states-transition.md
+              - name: Submission states transition
+                href: submissions-states-transition.md
           - name: Specify the default channel for assignment notifications
             href: education-build-notificationchannelurl.md
           - name: Set up an EDU development environment
@@ -436,7 +442,7 @@ items:
             displayName: Azure AD, Microsoft identity platform, identity, access
           - name: Directory management
             items:
-              - name: "Manage custom security attribute assignments (preview)"
+              - name: "Manage custom security attribute assignments"
                 href: custom-security-attributes-examples.md
                 displayName: directory, identity
               - name: Use PIM to assign Azure AD roles
@@ -481,9 +487,9 @@ items:
                     href: accessreviews-scope-concept.md
                   - name: Assign reviewers
                     href: accessreviews-reviewers-concept.md
-              - name: Use PIM to manage Azure AD roles
+              - name: Use PIM to manage Azure AD roles and groups
                 items:
-                  - name: Rules for Azure AD roles
+                  - name: Rules in PIM
                     href: identity-governance-pim-rules-overview.md
                     displayName: PIM rules, privileged identity management settings
                   - name: Customize and update rules
@@ -733,6 +739,8 @@ items:
                 href: teams-change-notification-in-microsoft-teams-overview.md
               - name: Subscribe for online meetings
                 href: changenotifications-for-onlinemeeting.md
+              - name: Subscribe for virtual events
+                href: changenotifications-for-virtualevent.md
           - name: Groups and teams
             items:
               - name: Create a group and team

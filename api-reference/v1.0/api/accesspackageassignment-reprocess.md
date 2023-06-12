@@ -54,11 +54,11 @@ If successful, this method returns a `202 Accepted` response code and reevaluate
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "reprocess_accesspackageassignments"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignments/d82eb508-acc4-43cc-bcf1-7c1c4a2c073b/reprocess
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignments/d82eb508-acc4-43cc-bcf1-7c1c4a2c073b/reprocess
 ```
 
 ### Response
@@ -72,5 +72,5 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 202 Accepted 
+HTTP/1.1 202 Accepted 
 ```

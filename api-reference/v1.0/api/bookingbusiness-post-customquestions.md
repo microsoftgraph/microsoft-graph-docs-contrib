@@ -62,6 +62,7 @@ If successful, this method returns a `201 Created` response code and a [bookingC
 
 <!-- {
   "blockType": "request",
+  "name" : "bookingbusinesspostcustomersquestios",
   "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
 }
 -->
