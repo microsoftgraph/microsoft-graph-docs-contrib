@@ -103,4 +103,4 @@ The following is a JSON representation of the resource.
 ```
 
 ## See also
-[List meetingAttendanceReports API](../api/meetingattendancereport-list.md)
+[List meetingAttendanceReports](../api/meetingattendancereport-list.md)
