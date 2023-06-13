@@ -35,6 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |isSsprCapable|Boolean|Whether the user has registered the required number of authentication methods for self-service password reset and the user is allowed to perform self-service password reset by policy. Supports `$filter` (`eq`).|
 |isSsprEnabled|Boolean|Whether the user is allowed to perform self-service password reset by policy. The user may not necessarily have registered the required number of authentication methods for self-service password reset. Supports `$filter` (`eq`).|
 |isSsprRegistered|Boolean|Whether the user has registered the required number of authentication methods for self-service password reset. The user may not necessarily be allowed to perform self-service password reset by policy. Supports `$filter` (`eq`).|
+|lastUpdatedDateTime|DateTimeOffset|The date and time (UTC) when the record was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |methodsRegistered|String collection|Collection of authentication methods registered, such as `mobilePhone`, `email`, `fido2`. Supports `$filter` (`any` with `eq`).|
 |userDisplayName|String| The user display name, such as `Adele Vance`. Supports `$filter` (`eq`, `startsWith`) and `$orderBy`.|
 |userPrincipalName|String|The user principal name, such as `AdeleV@contoso.com`. Supports `$filter` (`eq`, `startsWith`) and `$orderBy`.|
@@ -58,17 +59,17 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.userRegistrationDetails",
   "defaultMethod": "String",
   "id": "String (identifier)",
+  "isAdmin": "Boolean",
+  "isMfaCapable": "Boolean",
+  "isMfaRegistered": "Boolean",
+  "isPasswordlessCapable": "Boolean",
+  "isSsprCapable": "Boolean",
+  "isSsprEnabled": "Boolean",
+  "isSsprRegistered": "Boolean",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "methodsRegistered": ["String"],
   "userDisplayName": "String",
   "userPrincipalName": "String",
-  "isMfaRegistered": "Boolean",
-  "isMfaCapable": "Boolean",
-  "isSsprRegistered": "Boolean",
-  "isSsprEnabled": "Boolean",
-  "isSsprCapable": "Boolean",
-  "isPasswordlessCapable": "Boolean",
-  "methodsRegistered": [
-    "String"
-  ]
+  "userType": "String"
 }
 ```
-

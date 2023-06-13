@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AppConsentRequestRequestBuilderGetRequestConfiguration();
 $queryParameters = AppConsentRequestRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "userConsentRequests/any";
+$queryParameters->filter = "userConsentRequests/any(u:u/status eq 'InProgress')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
