@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "appId",
           "ChangeType": "Addition",
-          "Description": "Added support for addressing an [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta) using the application **appId** as the alternate key. You can now address an application via either the primary key **id** or the alternate key **appId** as the path parameter.",
+          "Description": "Added support for addressing an [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0) using the application **appId** as the alternate key. You can now address an application via either the primary key **id** or the alternate key **appId** as the path parameter.",
           "Target": "application"
         }
       ],
