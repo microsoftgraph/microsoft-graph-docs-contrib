@@ -115,7 +115,7 @@ The `mgt-todo` component doesn't cache any data.
 
 ## Localization
 
-The control exposes the following variables that can be localized. For more information, see [setup localization](../customize-components/localization.md).
+The control exposes the following variables that can be localized. For more information, see [Localizing components](../customize-components/localization.md).
 
 | String name                 | Default value                |
 | --------------------------- | -----------------------------|
