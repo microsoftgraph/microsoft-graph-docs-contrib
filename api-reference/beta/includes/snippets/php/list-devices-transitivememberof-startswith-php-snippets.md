@@ -18,7 +18,7 @@ $requestConfiguration->headers = $headers;
 $queryParameters = GroupRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->count = true;
 $queryParameters->orderby = ["displayName"];
-$queryParameters->filter = "startswith(displayName,%20'a')";
+$queryParameters->filter = "startswith(displayName, 'a')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

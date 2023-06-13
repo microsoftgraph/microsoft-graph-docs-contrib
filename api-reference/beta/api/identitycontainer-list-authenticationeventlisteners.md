@@ -12,7 +12,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [authenticationEventListener](../resources/authenticationeventlistener.md) objects and their properties. Only the [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) type is supported.
+Get a list of the [authenticationEventListener](../resources/authenticationeventlistener.md) objects and their properties. The following derived types are supported:
+
+- [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)
+- [onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md)
+- [onAuthenticationMethodStartListener](../resources/onauthenticationmethodloadstartlistener.md)
+- [onAttributeCollectionListener](../resources/onattributecollectionlistener.md)
+- [onUserCreateStartListener](../resources/onusercreatestartlistener.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -66,28 +72,31 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventListeners
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-authenticationeventlistener-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-authenticationeventlistener-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-authenticationeventlistener-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-authenticationeventlistener-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-authenticationeventlistener-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-authenticationeventlistener-php-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-authenticationeventlistener-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-authenticationeventlistener-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-authenticationeventlistener-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-authenticationeventlistener-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following is an example of the response
