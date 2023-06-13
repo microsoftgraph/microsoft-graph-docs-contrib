@@ -3,6 +3,24 @@
         {
             "ChangeList": [
                 {
+                    "Id": "72cfa695-5b49-404a-ab9e-c74a09557a11",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "correlationId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **correlationId** property to the [cloudPcOnPremisesConnectionHealthCheck](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheck"
+                }
+            ],
+            "Id": "72cfa695-5b49-404a-ab9e-c74a09557a11",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-06-12T05:55:14.173894Z",
+            "WorkloadArea": "Devices and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "bebbf84c-73de-4070-b44f-c670c25c4d4f",
                     "ApiChange": "Parameter",
                     "ChangedApiName": "LIST",
