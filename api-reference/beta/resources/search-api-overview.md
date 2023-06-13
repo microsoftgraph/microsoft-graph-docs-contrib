@@ -220,7 +220,7 @@ The search API has the following limitations:
 **In the beta version**, properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the following table.
 
 
-The externalItem resource with namespace **Microsoft.Graph** will be deprecated in beta and replaced by the [externalItem resource](./externalconnectors-externalitem.md) with new namespace **Microsoft.Graph.ExternalConnectors** starting **August 31, 2023**. Please make sure to update any namespace dependencies in beta by this date or **switch to using v1**  to avoid errors when the change is rolled out.
+Starting from August 31, 2023, the [externalItem resource](./externalconnectors-externalitem.md) resource within the Microsoft Graph namespace will be deprecated in the beta version of the API.  It will be replaced by the new namespace **Microsoft.Graph.ExternalConnectors**.  To prevent errors when this change is implemented, make sure that any namespace dependencies in the beta version are updated by the specified date. Alternatively, consider transitioning to using the v1 version of the API.
 
 Start updating any existing apps to use current property and type names, and to get current property names in the response.
 For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
