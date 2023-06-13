@@ -25,6 +25,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|VirtualEvent.Read.All|
 
+> [!NOTE]
+>
+> To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user.The authorized application will access registrants' information from virtual events created by that specific user.
+
 ## HTTP request
 
 <!-- {
@@ -58,6 +62,7 @@ If successful, this method returns a `200 OK` response code and a [virtualEventR
 ### Request
 
 The following is an example of a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_virtualeventregistrant"
@@ -66,6 +71,16 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta//solutions/virtualEvents/webinars/{webinarId}/registration/registrants/{registrantId}
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-virtualeventregistrant-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-virtualeventregistrant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

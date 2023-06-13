@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UserConsentRequestRequestBuilderGetRequestConfiguration();
 $queryParameters = UserConsentRequestRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = " ";
+$queryParameters->filter = " (status eq 'Completed')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
