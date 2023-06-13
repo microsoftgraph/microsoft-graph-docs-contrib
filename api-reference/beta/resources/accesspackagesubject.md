@@ -26,14 +26,14 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|connectedOrganizationId|String|The identifier of the connected organization of the subject.|
 |displayName|String|The display name of the subject.|
 |email|String|The email address of the subject.|
 |id|String| Read-only.|
 |objectId|String|The object identifier of the subject. `null` if the subject is not yet a user in the tenant.|
 |principalName|String|The principal name, if known, of the subject.|
-|type|String|The resource type of the subject.|
 |subjectLifecycle|accessPackageSubjectLifecycle|The lifecycle of the subject user, if a guest. The possible values are: `notDefined`, `notGoverned`, `governed`, `unknownFutureValue`.|
-|connectedOrganizationId|String|The identifier of the connected organization of the subject.|
+|type|String|The resource type of the subject.|
 
 ## Relationships
 
@@ -62,8 +62,8 @@ The following is a JSON representation of the resource.
   "id": "ab4291f6-66b7-42bf-b597-a05b29414f5c",
   "objectId": "cc754ed5-f598-45c0-aaf0-fc2f2eb1838f",
   "principalName": "admin@domain.contoso.com",
-  "type": "User",
-  "accessPackageSubjectLifecycle": "governed"
+  "subjectLifecycle": "governed",
+  "type": "User"
 }
 ```
 
