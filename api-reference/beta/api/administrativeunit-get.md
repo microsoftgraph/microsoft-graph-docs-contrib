@@ -54,9 +54,12 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.
-## Example
-### Request
-Here is an example of the request.
+
+## Examples
+
+### Example 1: Get an administrative unit
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,8 +100,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c3e
 
 ---
 
-### Response
-Here is an example of the response. 
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -119,6 +121,38 @@ Content-type: application/json
     "membershipRule": "(user.country -eq \"United States\")",
     "membershipType": "Dynamic",
     "membershipRuleProcessingState": "On"
+}
+```
+
+### Example 2: Get a restricted management administrative unit
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_administrativeunit_restricted"
+}-->
+```http
+GET https://graph.microsoft.com/beta/administrativeUnits/2sd35b05-ae71-48ab-9e7d-4r41a28te37d
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.administrativeUnit"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
+    "id": "2sd35b05-ae71-48ab-9e7d-4r41a28te37d",
+    "deletedDateTime": null,
+    "displayName": "Executive Division",
+    "description": "Executive division administration",
+    "isMemberManagementRestricted": true
 }
 ```
 
