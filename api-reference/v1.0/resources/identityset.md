@@ -34,7 +34,7 @@ Represents a keyed collection of [identity](identity.md) resources. It is used t
 The following is a JSON representation of the resource.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identitySet",
-       "optionalProperties": ["user", "application", "device"],
+       "optionalProperties": ["application", "applicationInstance", "conversation", "conversationIdentityType", "encrypted", "onPremises", "guest", "phone", "user", "device"],
        "openType": true } -->
 ```json
 {
