@@ -30,10 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
-
-<!-- {
-  "blockType": "ignored"
-}-->
 ```http
 PATCH /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ```
@@ -54,9 +50,6 @@ If successful, this method returns a `200 OK` response code.
 ## Example
 #### Request
 The following is an example of the request.
-<!-- {
-  "blockType": "ignored"
-}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
@@ -65,13 +58,7 @@ Content-type: application/json
   "displayName": "My Contoso Tab - updated"
 }
 ```
-
 #### Response
-
-Here is an example of the response.
-<!-- {
-  "blockType": "ignored"
-}-->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -106,4 +93,3 @@ Content-type: application/json
   "tocPath": ""
 }
 -->
-
