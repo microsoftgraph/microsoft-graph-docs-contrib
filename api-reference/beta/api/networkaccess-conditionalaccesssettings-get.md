@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/settings/conditionalAccess
+GET /networkAccess/settings/conditionalAccess
 ```
 
 

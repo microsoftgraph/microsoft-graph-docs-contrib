@@ -70,8 +70,9 @@ The following is an example of a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}/deviceLinks
+
 {
-    "name": "Moshe & Yuval test",
+    "name": "Branch test",
     "country": "Israel",
     "region": "Center",
     "deviceLinks": [

@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Get forwardingProfile
+# List forwardingProfile
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

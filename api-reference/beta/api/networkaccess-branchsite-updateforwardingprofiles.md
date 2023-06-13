@@ -68,6 +68,7 @@ The following is an example of a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}/forwardingProfiles
+
 {
     "@context": "#$delta",
     "value": [

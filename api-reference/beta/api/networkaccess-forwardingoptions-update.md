@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Update conditionalAccessSettings
+# Update forwardingOptions
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

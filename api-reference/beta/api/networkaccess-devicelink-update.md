@@ -48,7 +48,7 @@ PATCH /networkAccess/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 |:---|:---|:---|
 |name|String|**TODO: Add Description** Required.|
 |ipAddress|String|**TODO: Add Description** Required.|
-|deviceVendor|microsoft.graph.networkaccess.deviceVendor|**TODO: Add Description**. The possible values are: `barracudaNetworks`, `checkPoint`, `ciscoMeraki`, `citrix`, `fortinet`, `hpeAruba`, `netFoundry`, `nuage`, `openSystems`, `paloAltoNetworks`, `riverbedTechnology`, `silverPeak`, `vmWareSdWan`, `versa`, `other`, `unknownFutureValue`. Required.|
+|deviceVendor|microsoft.graph.networkaccess.deviceVendor|**TODO: Add Description**. The possible values are: `barracudaNetworks`, `checkPoint`, `ciscoMeraki`, `citrix`, `fortinet`, `hpeAruba`, `netFoundry`, `nuage`, `openSystems`, `paloAltoNetworks`, `riverbedTechnology`, `silverPeak`, `vmWareSdWan`, `versa`, `other`. Required.|
 |version|String|**TODO: Add Description** Required.|
 |lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
 |tunnelConfiguration|[microsoft.graph.networkaccess.tunnelConfiguration](../resources/networkaccess-tunnelconfiguration.md)|**TODO: Add Description** Required.|
