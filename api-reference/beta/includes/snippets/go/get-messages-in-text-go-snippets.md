@@ -9,20 +9,20 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.body-content-type=\"text\"")
 
-requestParameters := &graphconfig.ItemMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemMessagesRequestBuilderGetQueryParameters{
 	Select: [] string {"subject","body","bodyPreview","uniqueBody"},
 }
-configuration := &graphconfig.ItemMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMessagesRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
