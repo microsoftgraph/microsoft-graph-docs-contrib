@@ -1,7 +1,7 @@
 ---
 title: "conversationThread resource type"
 description: "A conversationThread is a collection of posts."
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: resourcePageType
@@ -43,7 +43,7 @@ A new thread is created when a recipient is removed from the thread.
 
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |posts|[post](post.md) collection| Read-only. Nullable.|
 

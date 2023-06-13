@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.Users.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "startswith(givenName,%20'J')";
+	requestConfiguration.QueryParameters.Filter = "startswith(givenName, 'J')";
 });
 
 

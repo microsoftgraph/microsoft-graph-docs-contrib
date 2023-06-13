@@ -1,0 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = OrganizationalBrandingLocalization()
+request_body.sign_in_page_text = 'Welcome to Contoso France.'
+
+request_body.username_hint_text = ' '
+
+
+
+
+result = await client.organization.by_organization_id('organization-id').branding.localizations.by_localization_id('organizationalBrandingLocalization-id').patch(request_body = request_body)
+
+
+```
