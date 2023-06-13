@@ -80,7 +80,10 @@ Content-type: application/json
 
 ##### Response
 
-<!-- { "blockType": "response" } -->
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.identityProvider"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
