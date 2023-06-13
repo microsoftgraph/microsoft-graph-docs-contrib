@@ -70,6 +70,9 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 
 ## Examples
 
+> [!NOTE]
+> The docx format for transcripts is deprecated as of May 31, 2023.
+
 ### Example 1: Get a callTranscript
 #### Request
 
