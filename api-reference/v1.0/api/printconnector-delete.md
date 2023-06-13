@@ -1,16 +1,16 @@
 ---
-title: Delete printConnector
-description: Delete (unregister) a printConnector.
-author: nilakhan
+title: "Delete printConnector"
+description: "Delete (unregister) a printConnector."
+author: "nilakhan"
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.prod: "cloud-printing"
 doc_type: apiPageType
 ---
 
 # Delete printConnector
 Namespace: microsoft.graph
 
-Delete (unregister) a **printConnector**.
+Delete (unregister) a [printConnector](../resources/printconnector.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,8 +20,8 @@ To use the Universal Print service, the user or app's tenant must have an active
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| PrintConnector.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -54,6 +54,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Request
 
+The following is an example of the request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -61,36 +63,43 @@ If successful, this method returns a `204 No Content` response code. It does not
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/print/connectors/{printConnectorId}
+DELETE https://graph.microsoft.com/v1.0/print/connectors/9953d245-3f6e-418c-a438-67f50e69a430
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-printconnector-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-printconnector-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-printconnector-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-printconnector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-printconnector-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-printconnector-php-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-printconnector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-printconnector-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-printconnector-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-printconnector-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

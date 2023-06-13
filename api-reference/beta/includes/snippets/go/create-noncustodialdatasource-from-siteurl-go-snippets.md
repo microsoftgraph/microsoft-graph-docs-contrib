@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//ediscovery"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewNoncustodialDataSource()
+requestBody := graphmodelsediscovery.NewNoncustodialDataSource()
 applyHoldToSource := false
 requestBody.SetApplyHoldToSource(&applyHoldToSource) 
-dataSource := graphmodels.NewDataSource()
+dataSource := graphmodelsediscovery.NewDataSource()
 additionalData := map[string]interface{}{
 site := graphmodels.New()
 webUrl := "https://contoso.sharepoint.com/sites/SecretSite"
