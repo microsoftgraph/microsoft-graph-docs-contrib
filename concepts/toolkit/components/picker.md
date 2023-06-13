@@ -107,7 +107,7 @@ The control exposes the following variables that can be localized. See how you s
 
 ## CSS custom properties
 
-The `mgt-picker` component defines the following CSS custom properties for developers to provide overrides with. 
+The `mgt-picker` component defines the following CSS custom properties for you to provide overrides with. 
 
 ```html
 <mgt-picker class="picker" resource="me/todo/lists" scopes="tasks.read, tasks.readwrite" key-name="displayName"></mgt-picker>
