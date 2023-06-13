@@ -1,6 +1,6 @@
 ---
-title: "A relationship between two items is represented by an association"
-description: "web Category Filtering Rule"
+title: "association resource type"
+description: "A relationship between two items is represented by an association"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,12 +13,11 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A relationship between two items is represented by an association
-This is an abstract type.
+Represents the users, groups, devices, and branch locations that are associated with a traffic profile.
+This is an abstract type that's inherited by the [associatedBranch](networkaccess-associatedbranch.md) derived type.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
 
 ## Relationships
 None.

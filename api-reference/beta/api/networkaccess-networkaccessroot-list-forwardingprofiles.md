@@ -1,5 +1,5 @@
 ---
-title: "List forwardingProfile"
+title: "List forwardingProfiles"
 description: "Get a list of the forwardingProfile in the tenant."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# List forwardingProfile
+# List forwardingProfiles
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) forwardingProfile in the tenant.
+Get a list of the [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) objects in the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,6 +35,8 @@ GET /networkAccess/forwardingProfiles/
 
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+/networkAccess/forwardingProfiles?$expand=policies	
+/networkAccess/forwardingProfiles?$expand=policies($expand=policy)	
 
 ## Request headers
 |Name|Description|
@@ -54,11 +56,11 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_forwardingprofile"
+  "name": "list_forwardingprofile"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles
+GET /networkAccess/forwardingProfiles
 ```
 
 
