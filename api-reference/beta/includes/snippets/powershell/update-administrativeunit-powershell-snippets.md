@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
+	displayName = "Executive Division"
 	membershipType = "Dynamic"
 	membershipRule = "(user.country -eq "United States")"
 	membershipRuleProcessingState = "On"
