@@ -55,11 +55,6 @@ If successful, this method returns a `200 OK` response code.
 #### Request
 The following is an example of the request.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_channelpatchtabs"
-}-->
-
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
