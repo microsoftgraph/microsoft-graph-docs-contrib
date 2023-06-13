@@ -78,7 +78,10 @@ Content-type: application/json
 
 The following is an example of the response.
 
-<!-- { "blockType": "response" } -->
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.groupLifecyclePolicy"
+} -->
 
 ```http
 HTTP/1.1 200 OK
