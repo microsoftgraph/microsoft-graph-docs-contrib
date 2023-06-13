@@ -118,8 +118,9 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 201 Created
+
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#networkAccess/connectivity/branches/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches/$entity",
     "id": "1a4294bc-9467-4003-9d43-8edf14cbfa71",
     "name": "Moshe & Yuval test",
     "country": "Israel",

@@ -57,6 +57,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -66,6 +67,7 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}
 Content-Type: application/json
+
 {
     "@context": "#$delta",
     "name": "My updated branch"
@@ -84,8 +86,9 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#networkAccess/connectivity/branches/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches/$entity",
     "id": "929a620e-fbfe-4041-bcc1-56431ca99606",
     "name": "My updated branch",
     "country": "Israel",
@@ -93,9 +96,9 @@ Content-Type: application/json
     "version": "1.0.0",
     "bandwidthCapacity": 500,
     "lastModifiedDateTime": "2023-05-24T08:51:15Z",
-    "forwardingProfiles@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#networkAccess/connectivity/branches('929a620e-fbfe-4041-bcc1-56431ca99606')/forwardingProfiles",
+    "forwardingProfiles@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches('929a620e-fbfe-4041-bcc1-56431ca99606')/forwardingProfiles",
     "forwardingProfiles": [],
-    "deviceLinks@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#networkAccess/connectivity/branches('929a620e-fbfe-4041-bcc1-56431ca99606')/deviceLinks",
+    "deviceLinks@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches('929a620e-fbfe-4041-bcc1-56431ca99606')/deviceLinks",
     "deviceLinks": []
 }
 ```

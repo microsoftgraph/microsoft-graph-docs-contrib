@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH ** Entity URI for microsoft.graph.networkaccess.forwardingPolicyLink not found
+PATCH /networkAccess/forwardingProfiles/{forwardingProfileId}/policies/{forwardingPolicyId}
 ```
 
 ## Request headers
@@ -64,6 +64,7 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{forwardingProfile_id}/policies/{policy_id}
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.networkaccess.forwardingPolicyLink",
   "state": "enabled"  

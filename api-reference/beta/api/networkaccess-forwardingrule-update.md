@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/NetworkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
+PATCH networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
 ```
 
 ## Request headers

@@ -55,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+DELETE /networkAccess/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 ```
 
 

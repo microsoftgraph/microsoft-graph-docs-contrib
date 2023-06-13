@@ -69,6 +69,7 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/networkAccess/connectivity/branches
 Content-Type: application/json
+
 {
     "name": "test branch - 11:50",
     "country": "United States",
@@ -90,8 +91,9 @@ The following is an example of the response
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#networkAccess/connectivity/branches/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches/$entity",
     "id": "88e5a488-92c3-45d6-ba56-e5cfa63677e8",
     "name": "test branch - 11:50",
     "country": "United States",

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /networkAccess/filteringPolicies
+POST /networkAccess/filteringPolicies/{filteringPolicyId}
 ```
 
 ## Request headers
@@ -71,6 +71,7 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/networkAccess/filteringPolicies
 Content-Type: application/json
+
 {
 	"name": "Policy",
 	"policyRules": [],
@@ -91,6 +92,7 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 201 Created
+
 Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringPolicies/$entity",

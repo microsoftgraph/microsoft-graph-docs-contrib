@@ -65,6 +65,7 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/networkAccess/settings/conditionalAccess
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/networkAccess/settings/$metadata#conditionalAccess",
     "signalingStatus": "disabled"

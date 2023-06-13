@@ -65,6 +65,7 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{forwardingProfileId}
 Content-Type: application/json
+
 {
     "associations": [
         {
@@ -87,7 +88,7 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/testppebetaztna-ui-integration/$metadata#networkAccess/forwardingProfiles/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/forwardingProfiles/$entity",
     "trafficForwardingType": "m365",
     "priority": 0,
     "id": "e1a17ea9-3d4e-4ea1-952e-17b9aac97ef0",

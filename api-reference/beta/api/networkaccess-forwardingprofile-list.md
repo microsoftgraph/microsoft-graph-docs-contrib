@@ -75,7 +75,7 @@ The following is an example of the response
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/testppebetaztna-ui-integration/$metadata#networkAccess/forwardingProfiles",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/forwardingProfiles",
     "value": [
         {
             "trafficForwardingType": "internet",

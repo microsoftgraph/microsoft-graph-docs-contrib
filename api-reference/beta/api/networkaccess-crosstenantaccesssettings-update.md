@@ -66,6 +66,7 @@ The following is an example of a request.
 PATCH https://graph.microsoft.com/beta/networkAccess/settings/crossTenantAccess
 Content-Type: application/json
 
+
 {
 	"@odata.type": "#microsoft.graph.networkaccess.crossTenantAccessSettings",
 	"networkPacketTaggingStatus": "enabled"

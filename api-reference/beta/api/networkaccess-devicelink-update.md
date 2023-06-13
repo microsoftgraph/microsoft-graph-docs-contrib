@@ -72,6 +72,7 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 Content-Type: application/json
+
 {
     "name": "Backup Link"
 }

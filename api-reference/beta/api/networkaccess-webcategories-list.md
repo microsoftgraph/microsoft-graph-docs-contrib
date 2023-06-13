@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.networkaccess.filteringPolicyLink not found
+GET /networkAccess/connectivity/webCategories
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft-ppe.com/beta/networkAccess/settings/connectivity/webCategories
+GET /networkAccess/settings/connectivity/webCategories
 ```
 
 
@@ -75,7 +75,7 @@ The following is an example of the response
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#networkAccess/connectivity/webCategories",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/webCategories",
     "value": [
         {
             "name": "AlcoholAndTobacco",

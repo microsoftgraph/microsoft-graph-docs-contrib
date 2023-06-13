@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Entity URI for microsoft.graph.networkaccess.forwardingPolicyLink not found
+GET /networkAccess/forwardingProfiles/{forwardingProfileId}/policies/{forwardingPolicyId}
 ```
 
 ## Optional query parameters

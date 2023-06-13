@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /networkAccess/filteringProfiles
+POST /networkAccess/filteringProfiles/{filteringProfileId}
 ```
 
 ## Request headers
@@ -70,6 +70,7 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/networkAccess/filteringProfiles/
 Content-Type: application/json
+
 {
     "name": "Filtering Profile",
     "state": "enabled",

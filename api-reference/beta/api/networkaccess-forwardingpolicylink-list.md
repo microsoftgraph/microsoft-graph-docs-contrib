@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{forwardingProfileId}/policies/ 
+GET /networkAccess/forwardingProfiles/{forwardingProfileId}/policies/ 
 ```
 
 ## Optional query parameters
