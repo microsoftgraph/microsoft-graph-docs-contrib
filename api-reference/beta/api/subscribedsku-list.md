@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/beta/subscribedSkus
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscribedskus-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-
-[!INCLUDE [sample-code](../includes/snippets/go/get-subscribedskus-go-snippets.md)]
-
 # [JavaScript](#tab/javascript)
 
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscribedskus-javascript-snippets.md)]
@@ -86,10 +82,6 @@ GET https://graph.microsoft.com/beta/subscribedSkus
 
 [!INCLUDE [sample-code](../includes/snippets/java/get-subscribedskus-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-subscribedskus-javascript-snippets.md)]
 
 # [Go](#tab/go)
 
@@ -105,10 +97,6 @@ GET https://graph.microsoft.com/beta/subscribedSkus
 
 [!INCLUDE [sample-code](../includes/snippets/php/get-subscribedskus-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-subscribedskus-powershell-snippets.md)]
 
 # [Python](#tab/python)
 
