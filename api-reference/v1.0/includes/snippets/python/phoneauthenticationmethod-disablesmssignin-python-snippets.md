@@ -1,0 +1,15 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+
+
+await client.me.authentication.phone_methods.by_phone_method_id('phoneAuthenticationMethod-id').disable_sm_sign_in.post()
+
+
+```

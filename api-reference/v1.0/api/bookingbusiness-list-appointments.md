@@ -57,6 +57,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "name" : "bookingbusinesslistappointments",
   "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http

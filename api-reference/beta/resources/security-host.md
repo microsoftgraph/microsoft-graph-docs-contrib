@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Represents a [hostname](../resources/security-hostname.md) or [IP address](../resources/security-ipaddress.md) that is currently or was previously available on the Internet and Microsoft Defender Threat Intelligence has detected.
 
 This is an abstract type. Implementations of this type include:
