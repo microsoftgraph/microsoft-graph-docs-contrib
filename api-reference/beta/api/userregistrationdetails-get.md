@@ -53,6 +53,8 @@ If successful, this method returns a `200 OK` response code and a [userRegistrat
 
 ### Request
 
+The following is an example of the request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -94,6 +96,9 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrat
 ---
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -117,8 +122,9 @@ Content-Type: application/json
     "isMfaRegistered": true,
     "isMfaCapable": true,
     "isPasswordlessCapable": false,
+    "lastUpdatedDateTime": "2023-03-13T19:15:41.6195833Z",
     "methodsRegistered": [
-    "microsoftAuthenticatorPush",
+      "microsoftAuthenticatorPush",
       "softwareOneTimePasscode"
     ],
     "defaultMfaMethod": "microsoftAuthenticatorPush",
@@ -126,4 +132,3 @@ Content-Type: application/json
   }
 }
 ```
-
