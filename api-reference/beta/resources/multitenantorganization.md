@@ -28,7 +28,7 @@ Defines an organization with more than one instance of Azure Active Directory (A
 |createdDateTime|DateTimeOffset|Date when multi-tenant organization was created. Read-only.|
 |description|String|Description of the multi-tenant organization.|
 |displayName|String|Display name of the multi-tenant organization.|
-|id|String|ID of the multi-tenant organization. Automatically generated when multi-tenant organization is created. Read-only|
+|id|String|Tenant-level ID for the multi-tenant organization object. It is automatically generated when multi-tenant organization is created and is stored in the local tenant. This ID doesn't appear across the other tenants in the multi-tenant organization. Read-only|
 
 ## Relationships
 |Relationship|Type|Description|
