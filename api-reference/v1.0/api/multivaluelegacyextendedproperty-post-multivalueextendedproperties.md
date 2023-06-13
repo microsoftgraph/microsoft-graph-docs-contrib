@@ -221,8 +221,10 @@ Content-Type: application/json
   "blockType": "response",
   "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
 } -->
-
-{
+```http
+  HTTP/1.1 200 OK
+  Content-type: application/json
+  {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('4d29052a-70e8-4251-a7de-542b522cdf25')/events/$entity",
     "@odata.etag": "W/\"F458GvdYA0ijqgp2gyJwzAAALXs9iQ==\"",
     "id": "AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQBGAAAAAABaZwRaNsIxTp0lpjY1il_IBwAXjnwa91gDSKOqCnaDInDMAAAAAAENAAAXjnwa91gDSKOqCnaDInDMAAAtgOgIAAA=",
@@ -312,7 +314,8 @@ Content-Type: application/json
         }
     },
     "onlineMeeting": null
-}
+  }
+  ```
 
 A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event
 in the response body, similar to the response from [creating just an event](../api/user-post-events.md).

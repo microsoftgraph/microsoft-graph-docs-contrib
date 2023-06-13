@@ -136,6 +136,7 @@ extended property that has its **id** matching the string `StringArray {66f5a359
 (with URL encoding removed here for ease of reading).
 
 <!-- { "blockType": "ignored", "name": "multivaluelegacyextendedpropertyget" } -->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/events('AAMkAGE1M2_bs88AACbuFiiAAA=')?$expand=multiValueExtendedProperties($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
 ```
