@@ -45,8 +45,8 @@ PATCH /networkAccess/forwardingProfiles/{forwardingProfileId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|name of profile. Required.|
-|associations|[microsoft.graph.networkaccess.association](../resources/networkaccess-association.md) collection|Specifies the associated users, groups, devices, and branch locations for a given traffic forwarding profile. Optional.|
+|name|String|Name of profile. Required.|
+|associations|[microsoft.graph.networkaccess.association](../resources/networkaccess-association.md) collection|Specifies the users, groups, devices, and branch locations that are associated with this traffic forwarding profile. Optional. You must include the **@odata.type** property with a value of the specific association in the body. For example, "@odata.type": "#microsoft.graph.associatedBranch". |
 
 
 ## Response
