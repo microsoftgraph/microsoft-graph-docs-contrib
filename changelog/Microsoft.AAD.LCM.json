@@ -637,14 +637,6 @@
         {
           "Id": "a5836c6f-a370-4034-a659-cb47d086cb4d",
           "ApiChange": "Resource",
-          "ChangedApiName": "usersProcessingSummary",
-          "ChangeType": "Addition",
-          "Description": "Added the [usersProcessingSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-usersProcessingSummary?view=graph-rest-1.0) resource type.",
-          "Target": "usersProcessingSummary"
-        },
-        {
-          "Id": "a5836c6f-a370-4034-a659-cb47d086cb4d",
-          "ApiChange": "Resource",
           "ChangedApiName": "userSummary",
           "ChangeType": "Addition",
           "Description": "Added the [userSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-userSummary?view=graph-rest-1.0) resource type.",
@@ -775,7 +767,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "activate",
           "ChangeType": "Addition",
-          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/workflow?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/workflow?view=graph-rest-1.0) resource.",
+          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/workflow?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-1.0) resource.",
           "Target": "workflow"
         },
         {
@@ -783,7 +775,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "createNewVersion",
           "ChangeType": "Addition",
-          "Description": "Added the [createNewVersion](https://learn.microsoft.com/en-us/graph/api/workflow?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/workflow?view=graph-rest-1.0) resource.",
+          "Description": "Added the [createNewVersion](https://learn.microsoft.com/en-us/graph/api/workflow?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-1.0) resource.",
           "Target": "workflow"
         },
         {
@@ -791,7 +783,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "restore",
           "ChangeType": "Addition",
-          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/workflow?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/workflow?view=graph-rest-1.0) resource.",
+          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/workflow?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-1.0) resource.",
           "Target": "workflow"
         },
         {
@@ -799,7 +791,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "resume",
           "ChangeType": "Addition",
-          "Description": "Added the [resume](https://learn.microsoft.com/en-us/graph/api/taskProcessingResult?view=graph-rest-1.0) method to the [taskProcessingResult](https://learn.microsoft.com/en-us/graph/api/taskProcessingResult?view=graph-rest-1.0) resource.",
+          "Description": "Added the [resume](https://learn.microsoft.com/en-us/graph/api/taskProcessingResult?view=graph-rest-1.0) method to the [taskProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-taskProcessingResult?view=graph-rest-1.0) resource.",
           "Target": "taskProcessingResult"
         },
         {
@@ -807,7 +799,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "summary",
           "ChangeType": "Addition",
-          "Description": "Added the [summary](https://learn.microsoft.com/en-us/graph/api/run?view=graph-rest-1.0) method to the [run](https://learn.microsoft.com/en-us/graph/api/run?view=graph-rest-1.0) resource.",
+          "Description": "Added the [summary](https://learn.microsoft.com/en-us/graph/api/run?view=graph-rest-1.0) method to the [run](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-run?view=graph-rest-1.0) resource.",
           "Target": "run"
         },
         {
@@ -815,7 +807,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "summary",
           "ChangeType": "Addition",
-          "Description": "Added the [summary](https://learn.microsoft.com/en-us/graph/api/taskReport?view=graph-rest-1.0) method to the [taskReport](https://learn.microsoft.com/en-us/graph/api/taskReport?view=graph-rest-1.0) resource.",
+          "Description": "Added the [summary](https://learn.microsoft.com/en-us/graph/api/taskReport?view=graph-rest-1.0) method to the [taskReport](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-taskReport?view=graph-rest-1.0) resource.",
           "Target": "taskReport"
         },
         {
@@ -823,7 +815,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "summary",
           "ChangeType": "Addition",
-          "Description": "Added the [summary](https://learn.microsoft.com/en-us/graph/api/userProcessingResult?view=graph-rest-1.0) method to the [userProcessingResult](https://learn.microsoft.com/en-us/graph/api/userProcessingResult?view=graph-rest-1.0) resource.",
+          "Description": "Added the [summary](https://learn.microsoft.com/en-us/graph/api/userProcessingResult?view=graph-rest-1.0) method to the [userProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-userProcessingResult?view=graph-rest-1.0) resource.",
           "Target": "userProcessingResult"
         }
       ],
