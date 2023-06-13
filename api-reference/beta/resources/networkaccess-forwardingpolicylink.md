@@ -1,6 +1,6 @@
 ---
 title: "forwardingPolicyLink resource type"
-description: "Provides a link to the forwarding policy for a given forwarding profile"
+description: "A forwardingPolicyLink connects a forwarding Policy with a forwarding profile"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides a link to the forwarding policy for a given forwarding profile
-
+A forwardingPolicyLink connects a forwarding Policy with a forwarding profile
 
 Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).
 
@@ -32,14 +31,14 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|state|microsoft.graph.networkaccess.status|status Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).The possible values are: `enabled`, `disabled`.|
+|id|String|Unique ID Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|state|microsoft.graph.networkaccess.status|Status Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).The possible values are: `enabled`, `disabled`.|
 |version|String|version Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[policy](../resources/networkaccess-policy.md)|policy conatins a collection of policy rules Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
+|policy|[policy](../resources/networkaccess-policy.md)|forwarding Policy Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -1,19 +1,19 @@
 ---
-title: "associatedBranch resource type"
-description: "A branch associated with another entity (for example, a forwarding profile) is called an associated branch"
+title: "associatedDevice resource type"
+description: "A device associated with another entity (for example, a forwarding profile) is called an associated device."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: resourcePageType
 ---
 
-# associatedBranch resource type
+# associatedDevice resource type
 
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A branch associated with another entity (for example, a forwarding profile) is called an associated branch.
+A device associated with another entity (for example, a forwarding profile) is called an associated device.
 
 
 Inherits from [microsoft.graph.networkaccess.association](../resources/networkaccess-association.md).
@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.networkaccess.association](../resources/networkac
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|branchId|String|**TODO: Add Description**|
+|deviceId|String|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -30,13 +30,13 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.networkaccess.associatedBranch"
+  "@odata.type": "microsoft.graph.networkaccess.associatedDevice"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.networkaccess.associatedBranch",
-  "branchId": "String"
+  "@odata.type": "#microsoft.graph.networkaccess.associatedDevice",
+  "deviceId": "String"
 }
 ```
 
