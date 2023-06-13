@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- {
-  "blockType": "ignore"
+  "blockType": "ignored"
 }-->
 ```http
 PATCH /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code.
 #### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "ignore"
+  "blockType": "ignored"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
@@ -70,7 +70,7 @@ Content-type: application/json
 
 Here is an example of the response.
 <!-- {
-  "blockType": "ignore"
+  "blockType": "ignored"
 }-->
 ```http
 HTTP/1.1 200 OK
