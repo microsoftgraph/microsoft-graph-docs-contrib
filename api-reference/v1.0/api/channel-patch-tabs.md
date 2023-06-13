@@ -73,12 +73,6 @@ Content-type: application/json
 
 Here is an example of the response.
 
-<!-- {
-  "blockType": "response",
-   "truncated": true,
-  "@odata.type": "microsoft.graph"
-} -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
