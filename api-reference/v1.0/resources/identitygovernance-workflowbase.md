@@ -37,7 +37,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |createdBy|[user](../resources/user.md)|The user who created the workflow.|
-|lastModifiedBy|[user](../resources/user.md)|The user who last modified the workflow.|
+|lastModifiedBy|[user](../resources/user.md)|The unique identifier of the AAD identity that last modified the workflow.|
 |tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow.|
 
 ## JSON representation
