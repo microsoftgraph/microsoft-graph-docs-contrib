@@ -54,6 +54,9 @@ If successful, this method returns a `200 OK` response code.
 ## Example
 #### Request
 The following is an example of the request.
+<!-- {
+  "blockType": "ignore"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
@@ -66,6 +69,9 @@ Content-type: application/json
 #### Response
 
 Here is an example of the response.
+<!-- {
+  "blockType": "ignore"
+}-->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
