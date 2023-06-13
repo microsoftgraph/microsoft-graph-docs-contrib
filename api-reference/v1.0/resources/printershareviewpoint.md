@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents additional data for a printer share as viewed by the signed-in user.
-
-**TODO: Add Description**
+Represents user-specific data for a printer share as viewed by the signed-in user.
 
 ## Properties
 |Property|Type|Description|
