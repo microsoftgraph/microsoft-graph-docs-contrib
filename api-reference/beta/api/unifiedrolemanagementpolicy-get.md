@@ -17,14 +17,25 @@ Retrieve the details of a role management policy. To read a policy that applies 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### For PIM for Azure AD roles
+
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+
+### For PIM for groups
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
 
 ## HTTP request
 
+To retrieve the details of a policy in PIM that can be applied to Azure AD roles or group membership or ownership:
 <!-- {
   "blockType": "ignored"
 }
@@ -50,16 +61,20 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the details of a policy in PIM for Azure AD roles
+
+#### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedrolemanagementpolicy"
+  "name": "get_unifiedrolemanagementpolicy_directory"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/f93a5c37-5c37-f93a-375c-3af9375c3af9
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_13b24d89-6e5a-46d5-b0d7-531c0846570a
 ```
 
 # [C#](#tab/csharp)
@@ -86,12 +101,17 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/f93a5c37-5c
 [!INCLUDE [sample-code](../includes/snippets/php/get-unifiedrolemanagementpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedrolemanagementpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+#### Response
 
+The following is an example of the response.
 
-### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,18 +123,63 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-    "displayName": "Policy1",
-    "description": "Policy for privileged admins",
-    "isOrganizationDefault": true,
-    "scopeId": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-    "scopeType": "subscription",
-    "lastModifiedDateTime": "2020-09-09T21:35:27.91Z",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies/$entity",
+    "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_13b24d89-6e5a-46d5-b0d7-531c0846570a",
+    "displayName": "DirectoryRole",
+    "description": "DirectoryRole",
+    "isOrganizationDefault": false,
+    "scopeId": "/",
+    "scopeType": "DirectoryRole",
+    "lastModifiedDateTime": null,
     "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identity"
+        "displayName": null,
+        "id": null
     }
-  }
 }
 ```
 
+### Example 2: Retrieve the details of a policy in PIM for groups
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedrolemanagementpolicy_azureADGroup"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicy"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies/$entity",
+    "id": "Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369",
+    "displayName": "Group",
+    "description": "Group",
+    "isOrganizationDefault": false,
+    "scopeId": "60bba733-f09d-49b7-8445-32369aa066b3",
+    "scopeType": "Group",
+    "lastModifiedDateTime": "2023-05-23T23:29:43.687Z",
+    "lastModifiedBy": {
+        "displayName": null,
+        "id": null
+    }
+}
+```

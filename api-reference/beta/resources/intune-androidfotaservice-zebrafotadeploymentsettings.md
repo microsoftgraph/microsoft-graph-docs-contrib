@@ -1,7 +1,7 @@
 ---
 title: "zebraFotaDeploymentSettings resource type"
 description: "The Zebra FOTA deployment complex type that describes the settings required to create a FOTA deployment."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -68,8 +68,3 @@ Here is a JSON representation of the resource.
   "batteryRuleRequireCharger": true
 }
 ```
-
-
-
-
-

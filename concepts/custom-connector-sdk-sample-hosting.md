@@ -35,7 +35,6 @@ Use the following steps to host the connector as a Windows service:
     ```dotnetcli
     dotnet add package Microsoft.Extensions.Hosting --version 6.0.0
     dotnet add package Microsoft.Extensions.Hosting.WindowsServices --version 6.0.0
-
     ```
 
 7. Right-click the worker service project and select **Add** > **Project Reference**.
@@ -62,6 +61,7 @@ Use the following steps to host the connector as a Windows service:
             public Worker(ILogger<Worker> logger)
             {
                 var server = new ConnectorServer();
+                server.StartLogger();
                 server.Start();
             }
     
@@ -74,7 +74,6 @@ Use the following steps to host the connector as a Windows service:
             }
         }
     }
-
     ```
 
 10. Replace the code in the **Program.cs** file with the following code.
@@ -101,7 +100,6 @@ Use the following steps to host the connector as a Windows service:
                     });
         }
     }
-
     ```
 
 11. Select the **Release** configuration and build the **CustomConnectorWorkerService** project.
@@ -115,17 +113,17 @@ Use the following steps to host the connector as a Windows service:
     $ExePath = "<Full path of CustomConnectorWorkerService.exe from above build>"
     # Create a service with the given executable. This just creates an entry for this service.
     sc.exe create $ServiceName binPath="$ExePath" start="delayed-auto"
-    # Set the service to run under a virtual account NT Service\<ServiceName>. Optionally skip this step to run the service under LOCAL SERVICE account
+    # Set the service to run under a virtual account NT Service\<ServiceName>. Optionally skip this step to run the service under LOCAL SYSTEM account
     sc.exe config $ServiceName obj="NT Service\$ServiceName"
     # Restarts service after 5 minutes on first, second and third failures and resets error after 1 day
     sc.exe failureflag $ServiceName 1
     sc.exe failure $ServiceName reset= 86400 actions= restart/300000/restart/300000/restart/300000
     sc.exe start $ServiceName
-
     ```
 
     >[!Note]
-    >The service name must be unique for each unique connector.
+    >- The service name must be unique for each unique connector.
+    >- For more information about service user accounts, see [Service User Accounts](/windows/win32/services/service-user-accounts).
 
 13. Open services.msc and verify that the service is running.
 

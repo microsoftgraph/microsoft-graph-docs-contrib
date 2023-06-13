@@ -69,7 +69,8 @@ The following is an example of the request. If an object with the ID `c1` doesn'
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationcontextclassreference"
+  "name": "update_authenticationcontextclassreference",
+  "sampleKeys": ["c1"]
 }-->
 
 ```http
@@ -107,8 +108,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-authenticationcontextclassreference-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-authenticationcontextclassreference-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

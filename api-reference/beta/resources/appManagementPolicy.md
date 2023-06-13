@@ -4,7 +4,7 @@ description: "An application auth method policy for enforcing app management res
 author: "madansr7"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # appManagementPolicy resource type
@@ -57,16 +57,16 @@ The following is a JSON representation of the resource.
 -->
 
 ```json
-[
-  {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/appManagementPolicies",
-    "id": "string (identifier)",
-    "description": "string",
-    "displayName": "string",
-    "isEnabled": true,
-    "restrictions": {
-      "@odata.type": "microsoft.graph.appManagementConfiguration"
-    }
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/appManagementPolicies",
+  "id": "string (identifier)",
+  "description": "string",
+  "displayName": "string",
+  "isEnabled": true,
+  "restrictions": {
+    "@odata.type": "microsoft.graph.appManagementConfiguration"
   }
-]
+}
 ```
+
+

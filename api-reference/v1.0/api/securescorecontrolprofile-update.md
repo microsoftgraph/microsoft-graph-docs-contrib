@@ -109,8 +109,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/securescorecontrolprofiles-update-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/securescorecontrolprofiles-update-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
@@ -174,8 +177,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/securescorecontrolprofiles-update-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/securescorecontrolprofiles-update-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

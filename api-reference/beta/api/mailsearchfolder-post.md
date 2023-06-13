@@ -73,7 +73,7 @@ The following is an example of the request - it creates a search folder of messa
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
+POST https://graph.microsoft.com/beta/me/mailFolders/AQMkADYAAAIBDAAAAA==/childFolders
 Content-type: application/json
 
 {
@@ -109,8 +109,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-mailsearchfolder-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-mailsearchfolder-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

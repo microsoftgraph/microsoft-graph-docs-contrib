@@ -33,7 +33,6 @@ const sendActivityNotification = {
 };
 
 await client.api('/teams/{teamId}/sendActivityNotification')
-	.version('beta')
 	.post(sendActivityNotification);
 
 ```

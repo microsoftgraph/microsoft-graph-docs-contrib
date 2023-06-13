@@ -27,7 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /solutions/bookingBusinesses/{id}/appointments/{id}/cancel
-
 ```
 
 ## Request headers
@@ -48,11 +47,9 @@ In the request body, provide a JSON object with the following parameter.
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-If you attempt to cancel an **appointment** that doesn't exist, this method returns a `404 Not found`.
+If you attempt to cancel an **appointment** that doesn't exist, this method returns `HTTP 404 Not Found`.
 
 ## Example
-
-The following is an example of how to call this API.
 
 ### Request
 
@@ -60,8 +57,10 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "name": "bookingappointment_cancel",
   "sampleKeys": ["AAMkADKoAAA=", "Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel
 Content-type: application/json
@@ -78,6 +77,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -95,5 +95,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

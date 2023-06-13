@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/organization
 [!INCLUDE [sample-code](../includes/snippets/php/get-organization-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-organization-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -108,11 +112,13 @@ Content-type: application/json
             "country": null,
             "countryLetterCode": "NL",
             "createdDateTime": "2021-08-02T10:30:06Z",
+            "defaultUsageLocation": "String",
             "displayName": "Contoso",
             "isMultipleDataLocationsForServicesEnabled": null,
             "marketingNotificationEmails": [],
             "onPremisesLastSyncDateTime": null,
             "onPremisesSyncEnabled": null,
+            "partnerTenantType": "ResellerPartnerDelegatedAdmin",
             "postalCode": null,
             "preferredLanguage": "en",
             "securityComplianceNotificationMails": [],

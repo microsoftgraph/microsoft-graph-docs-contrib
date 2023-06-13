@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewWorkflow()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/models/identitygovernance"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodelsidentitygovernance.NewWorkflow()
 displayName := "Onboard pre-hire employee"
 requestBody.SetDisplayName(&displayName) 
 description := "Configure pre-hire tasks for onboarding employees before their first day"
@@ -16,7 +25,7 @@ isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
 isSchedulingEnabled := false
 requestBody.SetIsSchedulingEnabled(&isSchedulingEnabled) 
-executionConditions := graphmodels.NewWorkflowExecutionConditions()
+executionConditions := graphmodelsidentitygovernance.NewWorkflowExecutionConditions()
 additionalData := map[string]interface{}{
 scope := graphmodels.New()
 rule := "(department eq 'Sales')"
@@ -33,7 +42,7 @@ executionConditions.SetAdditionalData(additionalData)
 requestBody.SetExecutionConditions(executionConditions)
 
 
-task := graphmodels.NewTask()
+task := graphmodelsidentitygovernance.NewTask()
 isEnabled := true
 task.SetIsEnabled(&isEnabled) 
 category := graphmodels.JOINER_LIFECYCLETASKCATEGORY 
@@ -57,14 +66,14 @@ keyValuePair1.SetName(&name)
 value := "true"
 keyValuePair1.SetValue(&value) 
 
-arguments := []graphmodels.KeyValuePairable {
+arguments := []graphmodelsidentitygovernance.KeyValuePairable {
 	keyValuePair,
 	keyValuePair1,
 
 }
 task.SetArguments(arguments)
 
-tasks := []graphmodels.Taskable {
+tasks := []graphmodelsidentitygovernance.Taskable {
 	task,
 
 }

@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MessagesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new MessagesRequestBuilderGetQueryParameters();
+$queryParameters = MessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "MentionsPreview/IsMentioned eq true";
 $queryParameters->select = ["Subject","Sender","ReceivedDateTime","MentionsPreview"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->messages()->get($requestConfiguration);
+$result = $graphServiceClient->me()->messages()->get($requestConfiguration);
 
 
 ```

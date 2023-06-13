@@ -2,8 +2,11 @@
 title: "Configure required Azure AD Graph permissions for an app registration"
 description: "Before Azure AD Graph is retired, you can use these options to configure required permissions for your app registration."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Configure required Azure AD Graph permissions for an app registration
@@ -127,8 +130,11 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq '0000000
 [!INCLUDE [sample-code](../includes/snippets/php/migrate-azureadgraph-get-serviceprincipal-azureadgraph-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/migrate-azureadgraph-get-serviceprincipal-azureadgraph-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -262,8 +268,11 @@ Content-Type: application/json
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -336,9 +345,9 @@ Create a new PowerShell script named **updatePermissions.ps1** and add the follo
 
 #### Request
 
-# [Azure AD Graph permissions only](#tab/powershell)
+# [Azure AD Graph permissions only](#tab/updatepermissions-azureadgraph-powershell)
 [!INCLUDE [addAzureADPermissions](includes/azure-ad-graph-migration-scripts/azureadgraphpermissions.md)]
-# [Azure AD and Microsoft Graph permissions](#tab/powershell-1)
+# [Azure AD and Microsoft Graph permissions](#tab/updatepermissions-azureadgraph-msgraph-powershell)
 [!INCLUDE [addAzureAD+MicrosoftGraphPermissions](includes/azure-ad-graph-migration-scripts/azureadgraph-microsoftgraph-permissions.md)]
 
 ---
@@ -362,3 +371,4 @@ Welcome To Microsoft Graph!
 
 + [application API](/graph/api/resources/application)
 + [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)
++ [Grant permissions programmatically without interactive consent](/graph/permissions-grant-via-msgraph)

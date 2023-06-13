@@ -32,10 +32,13 @@ ServicePrincipals that don’t have any existing valid certificates (i.e.: no ce
 
 ## HTTP request
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /servicePrincipals/{id}/addKey
+POST /serviceprincipals/{id}/addKey
+POST /servicePrincipals(appId='{appId}')/addKey
 ```
 
 ## Request headers
@@ -114,8 +117,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-addkey-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-addkey-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -190,8 +196,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-addkey-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-addkey-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

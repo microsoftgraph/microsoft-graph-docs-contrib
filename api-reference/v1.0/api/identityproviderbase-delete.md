@@ -94,8 +94,11 @@ DELETE https://graph.microsoft.com/v1.0/identity/identityProviders/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/delete-identityprovider-forid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-identityprovider-forid-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 <!-- {

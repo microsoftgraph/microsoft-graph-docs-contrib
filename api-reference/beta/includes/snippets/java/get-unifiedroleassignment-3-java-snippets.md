@@ -6,9 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-UnifiedRoleAssignmentMultiple unifiedRoleAssignmentMultiple = graphClient.roleManagement().cloudPC().roleAssignments("dbe9d288-fd87-41f4-b33d-b498ed207096")
+UnifiedRoleAssignment unifiedRoleAssignment = graphClient.roleManagement().exchange().roleAssignments("6f0be5be-49f3-42e6-8086-cdcd67b6eac0")
 	.buildRequest()
-	.expand("roleDefinition")
 	.get();
 
 ```

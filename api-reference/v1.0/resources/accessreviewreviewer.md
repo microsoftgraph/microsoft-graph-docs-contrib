@@ -37,10 +37,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewReviewer",
-  "id": "String",
-  "displayName": "String",
-  "userPrincipalName": "String",
   "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "id": "String",
+  "userPrincipalName": "String"
 }
 ```
 

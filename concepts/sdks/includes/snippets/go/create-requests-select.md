@@ -3,15 +3,15 @@
 ```go
 // GET https://graph.microsoft.com/v1.0/me?$select=displayName,jobTitle
 
-import me "github.com/microsoftgraph/msgraph-sdk-go/me"
+import "github.com/microsoftgraph/msgraph-sdk-go/users"
 
-query := me.MeRequestBuilderGetQueryParameters{
-    Select_escaped: []string{"displayName", "jobTitle"},
+query := users.UserItemRequestBuilderGetQueryParameters{
+    Select: []string{"displayName", "jobTitle"},
 }
 
-options := me.MeRequestBuilderGetOptions{
-    Q: &query,
+options := users.UserItemRequestBuilderGetRequestConfiguration{
+    QueryParameters: &query,
 }
 
-result, err := client.Me().Get(&options)
+result, err := client.Me().Get(context.Background(), &options)
 ```

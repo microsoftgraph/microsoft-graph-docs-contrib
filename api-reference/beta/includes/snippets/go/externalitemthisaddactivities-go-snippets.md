@@ -4,25 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewAddActivitiesPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconnections "github.com/microsoftgraph/msgraph-beta-sdk-go/connections"
+	  graphmodelsexternalconnectors "github.com/microsoftgraph/msgraph-beta-sdk-go/models/externalconnectors"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-externalActivity := graphmodels.NewExternalActivity()
-type := graphmodels.STRING_EXTERNALACTIVITYTYPE 
+requestBody := graphconnections.NewAddActivitiesPostRequestBody()
+
+
+externalActivity := graphmodelsexternalconnectors.NewExternalActivity()
+type := graphmodels.CREATED_EXTERNALACTIVITYTYPE 
 externalActivity.SetType(&type) 
-startDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
+startDateTime , err := time.Parse(time.RFC3339, "2021-04-06T18:04:31.033Z")
 externalActivity.SetStartDateTime(&startDateTime) 
+performedBy := graphmodelsexternalconnectors.NewIdentity()
+type := graphmodels.USER_IDENTITYTYPE 
+performedBy.SetType(&type) 
+id := "1f0c997e-99f7-43f1-8cca-086f8d42be8d"
+performedBy.SetId(&id) 
+externalActivity.SetPerformedBy(performedBy)
 
-activities := []graphmodels.ExternalActivityable {
+activities := []graphconnections.ExternalActivityable {
 	externalActivity,
 
 }
 requestBody.SetActivities(activities)
 
-result, err := graphClient.ConnectionsById("externalConnection-id").ItemsById("externalItem-id").AddActivities().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").MicrosoftGraphExternalConnectorsAddActivities().Post(context.Background(), requestBody, nil)
 
 
 ```

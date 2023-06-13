@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/acceptedSenders
 [!INCLUDE [sample-code](../includes/snippets/php/get-acceptedsenders-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-acceptedsenders-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

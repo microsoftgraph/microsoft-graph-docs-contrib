@@ -15,6 +15,7 @@ endDateTime.timeZone = "UTC";
 bookingAppointment.endDateTime = endDateTime;
 bookingAppointment.isLocationOnline = true;
 bookingAppointment.optOutOfCustomerEmail = false;
+bookingAppointment.anonymousJoinWebUrl = null;
 bookingAppointment.postBuffer = DatatypeFactory.newInstance().newDuration("PT10M");
 bookingAppointment.preBuffer = DatatypeFactory.newInstance().newDuration("PT5M");
 bookingAppointment.price = 10.0d;

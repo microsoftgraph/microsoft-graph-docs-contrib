@@ -1,7 +1,7 @@
 ---
 title: "internalDomainFederation resource type"
 description: "Represents configurations of the domains in a tenant that are federated with Azure AD."
-author: "akgoel23"
+author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents configurations of the domains in a tenant that are federated with Azure AD. Use this resource to configure federation settings when setting up federation with Azure AD. For information on federation, see [What is federation with Azure AD?](/azure/active-directory/hybrid/whatis-fed).
+Represents configurations of the domains in a tenant that are federated and verified with Azure AD. Use this resource to configure federation settings when setting up federation with Azure AD. For information on federation, see [What is federation with Azure AD?](/azure/active-directory/hybrid/whatis-fed).
 
 
 Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).

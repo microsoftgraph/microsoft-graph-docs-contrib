@@ -74,7 +74,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 ### Example 1: List all incidents
-### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,11 +110,13 @@ GET https://graph.microsoft.com/beta/security/incidents
 [!INCLUDE [sample-code](../includes/snippets/php/list-incident-for-defender-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-incident-for-defender-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -145,7 +147,7 @@ Content-Type: application/json
         "determination": "MultiStagedAttack",
         "status": "Active",
         "severity": "Medium",
-        "tags": [
+        "customTags": [
           "Demo"
         ],
         "comments": [
@@ -160,8 +162,8 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List all incidents with their alerts.
-### Request
+### Example 2: List all incidents with their alerts
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -197,11 +199,13 @@ GET https://graph.microsoft.com/beta/security/incidents?$expand=alerts
 [!INCLUDE [sample-code](../includes/snippets/php/list-incident-with-theri-alerts-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-incident-with-theri-alerts-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

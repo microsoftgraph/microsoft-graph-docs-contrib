@@ -1,7 +1,7 @@
 ---
 title: "Get operationalInsightsConnection"
 description: "Read the properties and relationships of an operationalInsightsConnection object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -87,9 +87,11 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/resourceConnections/f
 [!INCLUDE [sample-code](../includes/snippets/php/get-operationalinsightsconnection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-operationalinsightsconnection-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 The following is an example of the response.

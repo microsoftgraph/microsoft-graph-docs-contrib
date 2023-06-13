@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 A representation of a user's password. For security, the password itself will never be returned in the object, but action can be taken to reset a password.
 
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
+
 ## Methods
 
 | Method       | Return Type | Description |

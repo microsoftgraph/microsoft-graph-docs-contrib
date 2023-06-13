@@ -1,7 +1,8 @@
 ---
 title: "Get incremental changes to events in a calendar view"
 description: "Track event changes in calendar view using GET requests with the delta function. Example shows how to synchronize a user's default calendar in a set time range."
-author: "jumasure"
+author: "iamgirishck"
+ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -13,7 +14,7 @@ By using delta query, you can get new, updated, or deleted events in a specified
 > [!NOTE]
 > The capability for the former&mdash;getting incremental changes to events in a calendar not bound to a fixed start and end date range&mdash;is currently available only in the beta version. For more information, see [delta](/graph/api/event-delta) function.
 
-A calendar view is a collection of events in a date/time range (../me/calendarview) from the default calendar or some other specified calendar of a user or from a group calendar. The returned events may include single instances or occurrences and exceptions of a recurring series. The delta data enables you to maintain and synchronize a local store of a user's events without having to fetch the entire set of the user's events from the server every time.
+A calendar view is a collection of events in a date/time range (../me/calendarView) from the default calendar or some other specified calendar of a user or from a group calendar. The returned events may include single instances or occurrences and exceptions of a recurring series. The delta data enables you to maintain and synchronize a local store of a user's events without having to fetch the entire set of the user's events from the server every time.
 
 Delta query supports both full synchronization that retrieves all the events in the specified calendar view, and incremental synchronization that retrieves those events that have changed in the calendar view since the last synchronization. Typically, you would do an initial full synchronization, and subsequently get incremental changes to that calendar view periodically.
 
@@ -112,9 +113,11 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/php/get-calendarview-delta-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-calendarview-delta-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Sample initial response
 
@@ -229,8 +232,11 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/php/get-calendarview-delta-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-calendarview-delta-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Sample second response 
 
@@ -346,8 +352,11 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/php/get-calendarview-delta-3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-calendarview-delta-3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Sample third and final response
 
@@ -442,8 +451,11 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/php/get-calendarview-delta-next-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-calendarview-delta-next-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### The next round: sample first response
 

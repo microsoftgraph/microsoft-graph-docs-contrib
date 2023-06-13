@@ -92,9 +92,11 @@ GET https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 [!INCLUDE [sample-code](../includes/snippets/php/get-teamsappsettings-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-teamsappsettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 #### Response
 
@@ -113,6 +115,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.teamsAppSettings",
     "id": "65bdf003-0c4c-4bca-b102-0821ab0d1364",
+    "allowUserRequestsForAppAccess": true,
     "isChatResourceSpecificConsentEnabled": "true"
   }
 }

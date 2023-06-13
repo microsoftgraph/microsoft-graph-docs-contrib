@@ -13,7 +13,7 @@ const client = Client.init(options);
 const sendActivityNotification = {
     topic: {
         source: 'entityUrl',
-        value: 'https://graph.microsoft.com/beta/teams/{teamId}'
+        value: 'https://graph.microsoft.com/v1.0/teams/{teamId}'
     },
     activityType: 'taskCreated',
     previewText: {
@@ -32,7 +32,6 @@ const sendActivityNotification = {
 };
 
 await client.api('/teams/{teamId}/sendActivityNotification')
-	.version('beta')
 	.post(sendActivityNotification);
 
 ```

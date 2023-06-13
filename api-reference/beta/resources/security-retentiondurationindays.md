@@ -3,7 +3,7 @@ title: "retentionDurationInDays resource type"
 description: "Represents the number of days an item will be retained before it can be deleted"
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 

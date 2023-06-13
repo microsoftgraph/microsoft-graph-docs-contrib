@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewAssignLicensePostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphusers.NewAssignLicensePostRequestBody()
 
 
 assignedLicense := graphmodels.NewAssignedLicense()
@@ -20,7 +29,7 @@ assignedLicense.SetDisabledPlans(disabledPlans)
 skuId := uuid.MustParse("45715bb8-13f9-4bf6-927f-ef96c102d394")
 assignedLicense.SetSkuId(&skuId) 
 
-addLicenses := []graphmodels.AssignedLicenseable {
+addLicenses := []graphusers.AssignedLicenseable {
 	assignedLicense,
 
 }

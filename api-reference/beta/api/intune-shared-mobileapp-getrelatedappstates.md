@@ -1,7 +1,7 @@
 ---
 title: "getRelatedAppStates function"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -92,12 +92,3 @@ Content-Length: 481
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

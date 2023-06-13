@@ -31,9 +31,9 @@ $defaultLocationAddress->setState('NY');
 $defaultLocationAddress->setStreet('4567 First Street');
 
 $additionalData = [
-'postOfficeBox' => 		null,
-'type@odata.type' => '#microsoft.graph.physicalAddressType', 
-'type' => 		null,
+		'postOfficeBox' => 		null,
+		'type@odata.type' => '#microsoft.graph.physicalAddressType', 
+		'type' => 		null,
 ];
 $defaultLocationAddress->setAdditionalData($additionalData);
 
@@ -55,8 +55,8 @@ $DefaultLocation->setUniqueId(null);
 $DefaultLocation->setUniqueIdType(null);
 
 $additionalData = [
-'locationType@odata.type' => '#microsoft.graph.locationType', 
-'uniqueIdType@odata.type' => '#microsoft.graph.locationUniqueIdType', 
+		'locationType@odata.type' => '#microsoft.graph.locationType', 
+		'uniqueIdType@odata.type' => '#microsoft.graph.locationUniqueIdType', 
 ];
 $defaultLocation->setAdditionalData($additionalData);
 
@@ -77,7 +77,7 @@ $defaultRemindersBookingReminder1->setOffset(new \DateInterval('P1D'));
 $defaultRemindersBookingReminder1->setRecipients(new BookingReminderRecipients('allattendees'));
 
 $additionalData = [
-'recipients@odata.type' => '#microsoft.graph.bookingReminderRecipients', 
+		'recipients@odata.type' => '#microsoft.graph.bookingReminderRecipients', 
 ];
 $defaultRemindersBookingReminder1->setAdditionalData($additionalData);
 
@@ -94,6 +94,8 @@ $requestBody->setDisplayName('Bento');
 $requestBody->setIsLocationOnline(true);
 
 $requestBody->setSmsNotificationsEnabled(true);
+
+$requestBody->setLanguageTag('en-US');
 
 $requestBody->setIsHiddenFromCustomers(false);
 
@@ -120,6 +122,8 @@ $schedulingPolicy->setTimeSlotInterval(new \DateInterval('PT1H'));
 $requestBody->setSchedulingPolicy($schedulingPolicy);
 $requestBody->setStaffMemberIds(['d90d1e8c-5cfe-48cf-a2d5-966267375b6a', '2f5f8794-0b29-45b5-b56a-2eb5ff7aa880', ]);
 
+$requestBody->setIsAnonymousJoinEnabled(false);
+
 $additionalData = [
 'defaultPriceType@odata.type' => '#microsoft.graph.bookingPriceType', 
 'defaultReminders@odata.type' => '#Collection(microsoft.graph.bookingReminder)', 
@@ -130,7 +134,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->services()->post($requestBody);
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->services()->post($requestBody);
 
 
 ```

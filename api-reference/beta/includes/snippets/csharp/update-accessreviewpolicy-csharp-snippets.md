@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var accessReviewPolicy = new AccessReviewPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new AccessReviewPolicy
 {
-	IsGroupOwnerManagementEnabled = true
+	IsGroupOwnerManagementEnabled = true,
 };
+var result = await graphClient.Policies.AccessReviewPolicy.PatchAsync(requestBody);
 
-await graphClient.Policies.AccessReviewPolicy
-	.Request()
-	.UpdateAsync(accessReviewPolicy);
 
 ```

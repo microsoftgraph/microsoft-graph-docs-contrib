@@ -53,8 +53,10 @@ PATCH /solutions/bookingBusinesses/{id}/services/{id}
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
 |id|String| The unique identifier for the **bookingService**. Read-only.|
+|isAnonymousJoinEnabled|Boolean|`True` if the URL to join the appointment anonymously (**anonymousJoinWebUrl**) will be generated for the appointment booked for this service.|
 |isHiddenFromCustomers|Boolean|If `true`, the service is not available to customers for booking.|
 |isLocationOnline|Boolean|If `true` it indicates that the appointments for the service will be held online. Default value is `false`.|
+|languageTag|String|The language of the self-service booking page.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|

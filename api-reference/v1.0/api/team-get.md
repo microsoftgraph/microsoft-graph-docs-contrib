@@ -87,9 +87,11 @@ GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265
 [!INCLUDE [sample-code](../includes/snippets/php/get-team-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-team-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 The following is an example of the response. 
@@ -132,6 +134,11 @@ Content-type: application/json
   },
   "discoverySettings": {
     "showInTeamsSearchAndSuggestions": true
+  },
+  "summary": {
+    "ownersCount": 2,
+    "membersCount": 3,
+    "guestsCount": 4,
   }
 }
 ```

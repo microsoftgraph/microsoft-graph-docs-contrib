@@ -4,14 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewSendActivityNotificationToRecipientsPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphteamwork "github.com/microsoftgraph/msgraph-sdk-go/teamwork"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphteamwork.NewSendActivityNotificationToRecipientsPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
 source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
-value := "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}"
+value := "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/{teamsAppId}"
 topic.SetValue(&value) 
 requestBody.SetTopic(topic)
 activityType := "pendingFinanceApprovalRequests"
@@ -38,7 +47,7 @@ additionalData := map[string]interface{}{
 }
 teamworkNotificationRecipient2.SetAdditionalData(additionalData)
 
-recipients := []graphmodels.TeamworkNotificationRecipientable {
+recipients := []graphteamwork.TeamworkNotificationRecipientable {
 	teamworkNotificationRecipient,
 	teamworkNotificationRecipient1,
 	teamworkNotificationRecipient2,
@@ -53,7 +62,7 @@ keyValuePair.SetName(&name)
 value := "5"
 keyValuePair.SetValue(&value) 
 
-templateParameters := []graphmodels.KeyValuePairable {
+templateParameters := []graphteamwork.KeyValuePairable {
 	keyValuePair,
 
 }

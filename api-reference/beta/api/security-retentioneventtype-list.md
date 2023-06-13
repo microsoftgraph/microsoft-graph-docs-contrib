@@ -3,7 +3,7 @@ title: "List retentionEventTypes"
 description: "Get a list of the retentionEventType objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -86,9 +86,11 @@ GET https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes
 [!INCLUDE [sample-code](../includes/snippets/php/list-retentioneventtype-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-retentioneventtype-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

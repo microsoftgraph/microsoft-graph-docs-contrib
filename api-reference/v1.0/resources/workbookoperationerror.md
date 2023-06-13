@@ -16,8 +16,8 @@ Represents an error from a failed workbook operation.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |code|String| The error code.|
-|message|String| The error message.|
 |innererror|error object| Optional. Additional error objects that may be more specific than the top level error.|
+|message|String| The error message.|
 
 ## JSON representation
 
@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "code": "String",
-  "message": "String",
-  "innererror": { "@odata.type": "odata.error" }
+  "innererror": { "@odata.type": "odata.error" },
+  "message": "String"
 }
 ```
 

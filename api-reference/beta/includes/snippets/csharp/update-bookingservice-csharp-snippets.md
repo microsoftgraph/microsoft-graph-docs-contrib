@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var bookingService = new BookingService
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new BookingService
 {
-	DefaultDuration = new Duration("PT30M")
+	OdataType = "#microsoft.graph.bookingService",
+	DefaultDuration = TimeSpan.Parse("PT30M"),
 };
+var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].Services["{bookingService-id}"].PatchAsync(requestBody);
 
-await graphClient.BookingBusinesses["{bookingBusiness-id}"].Services["{bookingService-id}"]
-	.Request()
-	.UpdateAsync(bookingService);
 
 ```

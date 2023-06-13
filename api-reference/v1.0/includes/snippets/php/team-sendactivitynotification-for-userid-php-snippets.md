@@ -38,7 +38,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->usersById('user-id')->teamwork()->sendActivityNotification()->post($requestBody);
+$graphServiceClient->users()->byUserId('user-id')->teamwork()->sendActivityNotification()->post($requestBody);
 
 
 ```

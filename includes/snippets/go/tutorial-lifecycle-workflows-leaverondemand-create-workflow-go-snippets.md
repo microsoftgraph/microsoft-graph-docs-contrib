@@ -4,10 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewWorkflow()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/models/identitygovernance"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodelsidentitygovernance.NewWorkflow()
 category := graphmodels.LEAVER_LIFECYCLEWORKFLOWCATEGORY 
 requestBody.SetCategory(&category) 
 displayName := "Real-time employee termination"
@@ -18,11 +26,11 @@ isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
 isSchedulingEnabled := false
 requestBody.SetIsSchedulingEnabled(&isSchedulingEnabled) 
-executionConditions := graphmodels.NewWorkflowExecutionConditions()
+executionConditions := graphmodelsidentitygovernance.NewWorkflowExecutionConditions()
 requestBody.SetExecutionConditions(executionConditions)
 
 
-task := graphmodels.NewTask()
+task := graphmodelsidentitygovernance.NewTask()
 continueOnError := false
 task.SetContinueOnError(&continueOnError) 
 description := "Remove user from all Azure AD groups memberships"
@@ -35,11 +43,11 @@ isEnabled := true
 task.SetIsEnabled(&isEnabled) 
 taskDefinitionId := "b3a31406-2a15-4c9a-b25b-a658fa5f07fc"
 task.SetTaskDefinitionId(&taskDefinitionId) 
-arguments := []graphmodels.KeyValuePairable {
+arguments := []graphmodelsidentitygovernance.KeyValuePairable {
 
 }
 task.SetArguments(arguments)
-task1 := graphmodels.NewTask()
+task1 := graphmodelsidentitygovernance.NewTask()
 continueOnError := false
 task1.SetContinueOnError(&continueOnError) 
 description := "Remove user from all Teams memberships"
@@ -52,11 +60,11 @@ isEnabled := true
 task1.SetIsEnabled(&isEnabled) 
 taskDefinitionId := "81f7b200-2816-4b3b-8c5d-dc556f07b024"
 task1.SetTaskDefinitionId(&taskDefinitionId) 
-arguments := []graphmodels.KeyValuePairable {
+arguments := []graphmodelsidentitygovernance.KeyValuePairable {
 
 }
 task1.SetArguments(arguments)
-task2 := graphmodels.NewTask()
+task2 := graphmodelsidentitygovernance.NewTask()
 continueOnError := false
 task2.SetContinueOnError(&continueOnError) 
 description := "Delete user account in Azure AD"
@@ -69,12 +77,12 @@ isEnabled := true
 task2.SetIsEnabled(&isEnabled) 
 taskDefinitionId := "8d18588d-9ad3-4c0f-99d0-ec215f0e3dff"
 task2.SetTaskDefinitionId(&taskDefinitionId) 
-arguments := []graphmodels.KeyValuePairable {
+arguments := []graphmodelsidentitygovernance.KeyValuePairable {
 
 }
 task2.SetArguments(arguments)
 
-tasks := []graphmodels.Taskable {
+tasks := []graphmodelsidentitygovernance.Taskable {
 	task,
 	task1,
 	task2,

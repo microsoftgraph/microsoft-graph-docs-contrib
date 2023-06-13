@@ -1,6 +1,6 @@
 ---
 title: "Delete printer"
-description: "Delete (unregister) a printer".
+description: "Delete (unregister) a printer."
 author: "nilakhan"
 ms.localizationpriority: medium
 ms.prod: "cloud-printing"
@@ -85,9 +85,11 @@ DELETE https://graph.microsoft.com/v1.0/print/printers/{printerId}
 [!INCLUDE [sample-code](../includes/snippets/php/delete-printer-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-printer-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 

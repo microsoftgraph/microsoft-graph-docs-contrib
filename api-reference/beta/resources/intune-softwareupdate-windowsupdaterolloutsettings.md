@@ -1,7 +1,7 @@
 ---
 title: "windowsUpdateRolloutSettings resource type"
 description: "A complex type to store the windows update rollout settings including offer start date time, offer end date time, and days between each set of offers."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -42,8 +42,3 @@ Here is a JSON representation of the resource.
   "offerIntervalInDays": 1024
 }
 ```
-
-
-
-
-

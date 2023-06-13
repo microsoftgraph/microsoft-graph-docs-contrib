@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var name = "test7";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var formula = "=SUM(Sheet2!$A$1+Sheet2!$A$2)";
+var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Names.AddFormulaLocal.AddFormulaLocalPostRequestBody
+{
+	Name = "test7",
+	Formula = "=SUM(Sheet2!$A$1+Sheet2!$A$2)",
+	Comment = "Comment for the named item",
+};
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Names.AddFormulaLocal.PostAsync(requestBody);
 
-var comment = "Comment for the named item";
-
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Names
-	.AddFormulaLocal(name,formula,comment)
-	.Request()
-	.PostAsync();
 
 ```

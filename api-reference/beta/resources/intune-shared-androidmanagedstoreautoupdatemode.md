@@ -1,7 +1,7 @@
 ---
 title: "androidManagedStoreAutoUpdateMode enum type"
 description: "Prioritization for automatic updates of Android Managed Store apps set on assignment."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -24,8 +24,3 @@ Prioritization for automatic updates of Android Managed Store apps set on assign
 |postponed|1|Updates are postponed for a maximum of 90 days after the app becomes out of date.|
 |priority|2|The app is updated as soon as possible by the developer. If device is online, it will be updated within minutes.|
 |unknownFutureValue|3|Unknown future mode (reserved, not used right now).|
-
-
-
-
-

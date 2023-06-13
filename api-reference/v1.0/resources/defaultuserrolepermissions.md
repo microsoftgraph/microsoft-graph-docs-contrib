@@ -15,9 +15,11 @@ Contains certain customizable permissions of default user role in Azure Active D
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| allowedToCreateApps | Boolean | Indicates whether the default user role can create applications. |  
-| allowedToCreateSecurityGroups | Boolean | Indicates whether the default user role can create security groups. |  
+| allowedToCreateApps | Boolean | Indicates whether the default user role can create applications. This setting corresponds to the _Users can register applications_ setting in the [User settings menu in the Azure portal](/azure/active-directory/fundamentals/users-default-permissions?context=graph%2Fcontext#restrict-member-users-default-permissions). |  
+| allowedToCreateSecurityGroups | Boolean | Indicates whether the default user role can create security groups. This setting corresponds to the following menus in the Azure portal: <br/><li> _The Users can create security groups in Azure portals, API or PowerShell_ setting in the [Group settings menu](/azure/active-directory/enterprise-users/groups-self-service-management). <li> _Users can create security groups_ setting in the [User settings menu](/azure/active-directory/fundamentals/users-default-permissions?context=graph%2Fcontext#restrict-member-users-default-permissions). |  
+| allowedToReadBitlockerKeysForOwnedDevice | Boolean | Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role. |
 | allowedToReadOtherUsers | Boolean | Indicates whether the default user role can read other users. |
+| allowedToCreateTenants | Boolean | Indicates whether the default user role can create tenants. This setting corresponds to the _Restrict non-admin users from creating tenants_ setting in the [User settings menu in the Azure portal](/azure/active-directory/fundamentals/users-default-permissions?context=graph%2Fcontext#restrict-member-users-default-permissions). <br/><br/> When this setting is `false`, users assigned the [Tenant Creator](/azure/active-directory/roles/permissions-reference?context=graph%2Fcontext#tenant-creator) role can still create tenants.| 
 |permissionGrantPoliciesAssigned|String collection|Indicates if user consent to apps is allowed, and if it is, which permission to grant consent and which app consent policy (permissionGrantPolicy) govern the permission for users to grant consent. Value should be in the format `managePermissionGrantsForSelf.{id}`, where `{id}` is the **id** of a built-in or custom [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies). An empty list indicates user consent to apps is disabled. |
 
 ## Relationships
@@ -38,7 +40,9 @@ The following is a JSON representation of the resource.
 {
   "allowedToCreateApps": true,
   "allowedToCreateSecurityGroups": true,
+  "allowedToReadBitlockerKeysForOwnedDevice": true,
   "allowedToReadOtherUsers": true,
+  "allowedToCreateTenants": true,
   "permissionGrantPoliciesAssigned": ["String"]
 }
 ```

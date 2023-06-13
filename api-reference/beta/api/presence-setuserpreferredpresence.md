@@ -1,7 +1,7 @@
 ---
 title: "presence: setUserPreferredPresence"
 description: "Set the user preferred presence for a user"
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "cloud-communications"
@@ -112,8 +112,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/setuserpreferredpresence-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/setuserpreferredpresence-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

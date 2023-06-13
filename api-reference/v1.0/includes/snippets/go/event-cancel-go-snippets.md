@@ -4,14 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewCancelPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphusers.NewCancelPostRequestBody()
 comment := "Cancelling for this week due to all hands"
 requestBody.SetComment(&comment) 
 
-graphClient.Me().EventsById("event-id").Cancel().Post(context.Background(), requestBody, nil)
+graphClient.Me().Events().ByEventId("event-id").Cancel().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,16 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphsolutions "github.com/microsoftgraph/msgraph-sdk-go/solutions"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestQuery := "Adventure"
 
-requestParameters := &graphconfig.BookingBusinessesRequestBuilderGetQueryParameters{
+requestParameters := &graphsolutions.SolutionsBookingBusinessesRequestBuilderGetQueryParameters{
 	Query: &requestQuery,
 }
-configuration := &graphconfig.BookingBusinessesRequestBuilderGetRequestConfiguration{
+configuration := &graphsolutions.SolutionsBookingBusinessesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -4,10 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewWorkflow()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/models/identitygovernance"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodelsidentitygovernance.NewWorkflow()
 category := graphmodels.JOINER_LIFECYCLEWORKFLOWCATEGORY 
 requestBody.SetCategory(&category) 
 description := "Configure new hire tasks for onboarding employees on their first day"
@@ -18,7 +26,7 @@ isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
 isSchedulingEnabled := false
 requestBody.SetIsSchedulingEnabled(&isSchedulingEnabled) 
-executionConditions := graphmodels.NewWorkflowExecutionConditions()
+executionConditions := graphmodelsidentitygovernance.NewWorkflowExecutionConditions()
 additionalData := map[string]interface{}{
 scope := graphmodels.New()
 rule := "(country eq 'Australia')"
@@ -35,7 +43,7 @@ executionConditions.SetAdditionalData(additionalData)
 requestBody.SetExecutionConditions(executionConditions)
 
 
-task := graphmodels.NewTask()
+task := graphmodelsidentitygovernance.NewTask()
 continueOnError := false
 task.SetContinueOnError(&continueOnError) 
 description := "Enable user account in the directory"
@@ -46,11 +54,11 @@ isEnabled := true
 task.SetIsEnabled(&isEnabled) 
 taskDefinitionId := "6fc52c9d-398b-4305-9763-15f42c1676fc"
 task.SetTaskDefinitionId(&taskDefinitionId) 
-arguments := []graphmodels.KeyValuePairable {
+arguments := []graphmodelsidentitygovernance.KeyValuePairable {
 
 }
 task.SetArguments(arguments)
-task1 := graphmodels.NewTask()
+task1 := graphmodelsidentitygovernance.NewTask()
 continueOnError := false
 task1.SetContinueOnError(&continueOnError) 
 description := "Send welcome email to new hire"
@@ -61,12 +69,12 @@ isEnabled := true
 task1.SetIsEnabled(&isEnabled) 
 taskDefinitionId := "70b29d51-b59a-4773-9280-8841dfd3f2ea"
 task1.SetTaskDefinitionId(&taskDefinitionId) 
-arguments := []graphmodels.KeyValuePairable {
+arguments := []graphmodelsidentitygovernance.KeyValuePairable {
 
 }
 task1.SetArguments(arguments)
 
-tasks := []graphmodels.Taskable {
+tasks := []graphmodelsidentitygovernance.Taskable {
 	task,
 	task1,
 

@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 {
   "endDateTime": "DateTimeInfo",
   "serviceId": "String",
-  "status": "String",
-  "startDateTime": "DateTimeInfo"
+  "startDateTime": "DateTimeInfo",
+  "status": "String"
 }
 ```

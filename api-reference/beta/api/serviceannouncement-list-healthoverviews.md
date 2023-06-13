@@ -90,8 +90,11 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews
 [!INCLUDE [sample-code](../includes/snippets/php/list-healthoverviews-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-healthoverviews-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -167,8 +170,11 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews?$
 [!INCLUDE [sample-code](../includes/snippets/php/list-healthoverviews-with-issues-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-healthoverviews-with-issues-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

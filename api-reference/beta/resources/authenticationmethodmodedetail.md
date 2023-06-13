@@ -1,7 +1,7 @@
 ---
 title: "authenticationMethodModeDetail resource type"
 description: "A representation of a specific mode of an authentication method that can be used as part of an authentication method combination in an authentication strength."
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

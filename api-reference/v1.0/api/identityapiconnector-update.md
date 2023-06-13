@@ -116,8 +116,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-identityapiconnector-name-tgturl-username-password-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-identityapiconnector-name-tgturl-username-password-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -185,8 +188,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-identityapiconnector-cert-auth-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-identityapiconnector-cert-auth-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

@@ -4,10 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewConfirmCompromisedPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphauditlogs "github.com/microsoftgraph/msgraph-beta-sdk-go/auditlogs"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphauditlogs.NewConfirmCompromisedPostRequestBody()
 requestIds := []string {
 	"f01c6af6-6683-4a37-a945-0a925501eede",
 	"42bf60ac-d0cb-4206-aa5c-101884298f55",

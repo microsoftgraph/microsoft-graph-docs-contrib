@@ -4,16 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"User-Agent": "ContosoLOBApp/1.0",
-}
-configuration := &graphconfig.EvaluateClassificationResultsRequestBuilderPostRequestConfiguration{
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphinformationprotection "github.com/microsoftgraph/msgraph-beta-sdk-go/informationprotection"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("User-Agent", "ContosoLOBApp/1.0")
+
+configuration := &graphinformationprotection.InformationProtectionPolicyLabelsEvaluateClassificationResultsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewEvaluateClassificationResultsPostRequestBody()
+requestBody := graphinformationprotection.NewEvaluateClassificationResultsPostRequestBody()
 contentInfo := graphmodels.NewContentInfo()
 format := graphmodels.DEFAULT_CONTENTFORMAT 
 contentInfo.SetFormat(&format) 
@@ -22,8 +32,8 @@ contentInfo.SetIdentifier(&identifier)
 state := graphmodels.REST_CONTENTSTATE 
 contentInfo.SetState(&state) 
 additionalData := map[string]interface{}{
-	"format@odata.type" : "#microsoft.graph.contentFormat", 
-	"state@odata.type" : "#microsoft.graph.contentState", 
+	"odataType" : "#microsoft.graph.contentFormat", 
+	"odataType" : "#microsoft.graph.contentState", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
@@ -37,7 +47,7 @@ classificationResult.SetCount(&count)
 confidenceLevel := int32(75)
 classificationResult.SetConfidenceLevel(&confidenceLevel) 
 
-classificationResults := []graphmodels.ClassificationResultable {
+classificationResults := []graphinformationprotection.ClassificationResultable {
 	classificationResult,
 
 }

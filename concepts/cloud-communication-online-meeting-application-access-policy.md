@@ -1,20 +1,41 @@
 ---
 title: "Configure an application access policy using the cloud communications API"
-description: "Use the cloud communications API in Microsoft Graph to configure an access policy that allows applications to access online meetings on behalf of a user."
-author: "mkhribech"
+description: "Use the cloud communications API in Microsoft Graph to configure an access policy that allows applications to access cloud communications resources."
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
-# Configure application access to online meetings
+# Configure application access to online meetings or virtual events
 
-You can use the cloud communications API in Microsoft Graph to configure an application access policy that allows applications to access online meetings on behalf of a user.
+For apps to access some cloud communications APIs with application permissions, in addition to the Microsoft Graph application permissions, tenant administrators must configure an application access policy. For details, see [supported application permissions](#supported-permissions-and-additional-resources).
 
-In some cases, such as for background services or daemon apps that run on a server without the presence of a signed-in user, it is appropriate for an app to call Microsoft Graph to take actions on behalf of a user. For example, an app might need to call Microsoft Graph to schedule multiple meetings based on published schedules (such as courses) or external scheduling tools. In these cases, the user that the application acts on behalf of is identified as the meeting organizer.
+The following sections describe the two main scenarios that require an application access policy.
 
-Administrators who want to allow an application to access online meeting resources on behalf of a user can use the **New-CsApplicationAccessPolicy** and **Grant-CsApplicationAccessPolicy** PowerShell cmdlets to configure access control.
+## Allow applications to access online meetings on behalf of a user
 
-This article covers the basic steps to configure an application access policy. These steps are specific to online meetings and do not apply to other Microsoft Graph resources.
+In some cases, such as background services or daemon apps running on a server without a signed-in user, it is acceptable for an app to call Microsoft Graph and perform actions on behalf of a user. For example, an app may require Microsoft Graph to schedule multiple meetings based on published schedules (like courses) or external scheduling tools. In such situations, the application can act on behalf of any user. Therefore, it is important to make sure that the user possesses the necessary privileges, such as being the organizer or co-organizer, to access the online meeting.
+
+## Allow applications to access virtual events created by the user
+
+In cases where a signed-in user is not presented, an app can call Microsoft Graph to access a virtual event using application permissions. For example, an app can call Microsoft Graph to look up a virtual event that a user has created or retrieve attendance reports of a virtual event created by the user without using that user's delegated permissions. In these cases, the user must be the organizer of that virtual event.
+
+Follow these steps to configure an application access policy for cloud communications resources such as online meetings and virtual events. These steps do not apply to other Microsoft Graph resources.
+
+## Compare application access policy for online meetings and virtual events
+
+The following table compares application access policy for online meeting and virtual event under various scenarios involving two users. These scenarios involve two users (_user_1_ and _user_2_) and the following application access policies:
+
+- _Policy_1_ contains one app ID (_app_1_)
+- _Policy_2_ contains one app ID (_app_2_)
+- _Policy_3_) contains both app IDs (_app_1_ and _app_2_)
+
+| Scenario | Online meeting | Virtual event |
+|----------|----------------|---------------|
+| _policy_1_ is assigned to _user_1_, _policy_2_ is assigned to _user_2_ | _app_1_ can only access online meetings as _user_1_<br>_app_2_ can only access online meetings as _user_2_ | _app_1_ can only access virtual events created by _user_1_<br>_app_2_ can only access virtual events created by _user_2_ |
+| _policy_1_ is assigned to _user_1_ and _user_2_ | _app_1_ can access online meetings as _user_1_<br>_app_1_ can access online meetings as _user_2_ | _app_1_ can access virtual events created by _user_1_<br>_app_1_ can access virtual events created by _user_2_ |
+| _policy_3_ is assigned to _user_1_, no policy is assigned to _user_2_ | _app_1_ can access online meeting as _user_1_ and _user_2_<br>No app can access online meeting as _user_2_ | _app_1_ can access virtual events created by _user_1_ and _user_2_<br>No app can access virtual events created by _user_2_ |
+| _policy_3_ is assigned to the whole tenant | Both _app_1_ and _app_2_ can access online meetings as either _user_1_ or _user_2_ |  Both _app_1_ and _app_2_ can access virtual events created by either _user_1_ or _user_2_ |
 
 ## Configure application access policy
 
@@ -35,13 +56,14 @@ To configure an application access policy and allow applications to access onlin
     New-CsApplicationAccessPolicy -Identity Test-policy -AppIds "ddb80e06-92f3-4978-bc22-a0eee85e6a9e", "ccb80e06-92f3-4978-bc22-a0eee85e6a9e", "bbb80e06-92f3-4978-bc22-a0eee85e6a9e" -Description "description here"
     ```
 
-4. Grant the policy to the user to allow the app IDs contained in the policy to access online meetings on behalf of the granted user. 
+4. Grant the policy to the user to allow the app IDs contained in the policy to access  1) online meetings on behalf of the granted user, and 2) virtual events created by the granted user.
 
    Run the following cmdlet, replacing the **PolicyName** and **Identity** arguments.
 
    ```powershell
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "748d2cbb-3b55-40ed-8c34-2eae5932b22a"
    ```
+
 5. (Optional) Grant the policy to the whole tenant. This will apply to users who do not have an application access policy assigned. For details, see the cmdlet links in the [see also](#see-also) section.
 
    Run the following cmdlet, replacing the **PolicyName** argument.
@@ -51,28 +73,31 @@ To configure an application access policy and allow applications to access onlin
    ```
 
 > [!NOTE]
+>
 > - _Identity_ refers to the policy name when creating the policy, but the user ID when granting the policy.
+> - When granting the policy, it will be applied to both online meetings and virtual events. If you prefer to manage online meetings and virtual events separately, we recommend that you have two separate applications.
 > - Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.
 
 ## Supported permissions and additional resources
 
-Administrators can use ApplicationAccessPolicy cmdlets to control online meeting access for an app that has been granted any of the following application permissions:
+Administrators can use ApplicationAccessPolicy cmdlets to control online meeting and virtual event access for an app that has been granted any of the following application permissions:
 
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
 - OnlineMeetingArtifact.Read.All
+- VirtualEvent.Read.All
 
 For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy).
 
 ## Errors
 
-You might encounter the following error when an API call is denied access due to an app trying to access an online meeting when application access policy is not configured.
+If you attempt an API call to access an online meeting or virtual event without configuring the application access policy, you might encounter the following error: 
 
 ```json
 {
     "error": {
-        "code": "Unauthorized",
-        "message": "App <app_ID_redacted> is not authorized to Create meeting on behalf of user <user_ID_redacted>",
+        "code": "Forbidden",
+        "message": "No application access policy found for this app",
         "innerError": {
             "date": "<date_redacted>",
             "request-id": "599d9cb0-56ac-4dc5-b6f8-1456a1414609"

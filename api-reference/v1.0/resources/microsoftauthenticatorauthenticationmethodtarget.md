@@ -1,6 +1,6 @@
 ---
 title: "microsoftAuthenticatorAuthenticationMethodTarget resource type"
-description: "A collection of users or groups enabled to use Microsoft Authenticator authentication methods policy."
+description: "A collection of groups enabled to use Microsoft Authenticator authentication methods policy."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,13 +10,13 @@ doc_type: resourcePageType
 # microsoftAuthenticatorAuthenticationMethodTarget resource type
 Namespace: microsoft.graph
 
-A collection of users or groups enabled to use [Microsoft Authenticator authentication methods policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.
+A collection of groups enabled to use [Microsoft Authenticator authentication methods policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Object ID of an Azure AD user or group.|
 |authenticationMode|microsoftAuthenticatorAuthenticationMode|Determines which types of notifications can be used for sign-in. Possible values are: `any`, `deviceBasedPush` (passwordless only), `push`.|
+|id|String|Object ID of an Azure AD user or group.|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. *Not supported*. |
 |targetType|authenticationMethodTargetType| Possible values are: `user`, `group`.|
 

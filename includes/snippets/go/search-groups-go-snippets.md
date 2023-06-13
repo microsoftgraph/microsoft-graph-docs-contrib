@@ -4,16 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestSearch := "\"displayName:OneVideo OR mail:onevideo\""
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
 
-requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
+
+requestSearch := "\"displayName:OneVideo\" OR \"mail:onevideo\""
+
+requestParameters := &graphgroups.GroupsRequestBuilderGetQueryParameters{
 	Search: &requestSearch,
 }
-configuration := &graphconfig.GroupsRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupsRequestBuilderGetRequestConfiguration{
+	Headers: headers,
 	QueryParameters: requestParameters,
 }
 

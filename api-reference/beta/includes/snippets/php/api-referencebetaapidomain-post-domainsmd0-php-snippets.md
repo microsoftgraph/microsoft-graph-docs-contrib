@@ -14,7 +14,7 @@ $requestBody->setId('contoso.com');
 
 
 
-$requestResult = $graphServiceClient->domains()->post($requestBody);
+$result = $graphServiceClient->domains()->post($requestBody);
 
 
 ```

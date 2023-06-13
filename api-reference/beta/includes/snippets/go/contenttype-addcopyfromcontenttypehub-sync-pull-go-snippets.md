@@ -4,14 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewAddCopyFromContentTypeHubPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsites "github.com/microsoftgraph/msgraph-beta-sdk-go/sites"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphsites.NewAddCopyFromContentTypeHubPostRequestBody()
 contentTypeId := "0x0101"
 requestBody.SetContentTypeId(&contentTypeId) 
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").ContentTypes().AddCopyFromContentTypeHub().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").ContentTypes().AddCopyFromContentTypeHub().Post(context.Background(), requestBody, nil)
 
 
 ```

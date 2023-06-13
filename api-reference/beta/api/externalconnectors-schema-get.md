@@ -92,8 +92,11 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/schema
 [!INCLUDE [sample-code](../includes/snippets/php/get-schema-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-schema-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 <!-- markdownlint-disable MD024 -->
 ### Response

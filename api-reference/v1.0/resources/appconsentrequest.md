@@ -51,9 +51,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.appConsentRequest",
-  "id": "String (identifier)",
-  "appId": "String",
   "appDisplayName": "String",
+  "appId": "String",
+  "id": "String (identifier)",
   "pendingScopes": [
     {
       "@odata.type": "microsoft.graph.appConsentRequestScope"

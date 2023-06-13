@@ -25,9 +25,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/delegatedPermissionClassifications
+POST /servicePrincipals(appId='{appId}')/delegatedPermissionClassifications
 ```
 
 ## Request headers
@@ -93,8 +96,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-create-delegatedpermissionclassification-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-create-delegatedpermissionclassification-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

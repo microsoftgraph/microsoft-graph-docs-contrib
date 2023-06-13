@@ -1,7 +1,7 @@
 ---
 title: "List riskyUsers"
 description: "Get a list of the riskyUser objects and their properties."
-author: "ebasseri"
+author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -84,9 +84,11 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers
 [!INCLUDE [sample-code](../includes/snippets/php/get-riskyuser-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-riskyuser-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

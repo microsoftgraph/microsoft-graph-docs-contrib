@@ -3,7 +3,7 @@ title: "Get retentionEvent"
 description: "Read the properties and relationships of a retentionEvent object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
+|Application|Not Supported.|
 
 ## HTTP request
 
@@ -86,9 +86,11 @@ GET https://graph.microsoft.com/beta/security/triggers/retentionEvents/{retentio
 [!INCLUDE [sample-code](../includes/snippets/php/get-retentionevent-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-retentionevent-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

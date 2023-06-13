@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var internalDomainFederation = new InternalDomainFederation
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new InternalDomainFederation
 {
 	DisplayName = "Contoso name change",
-	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.AcceptIfMfaDoneByFederatedIdp
+	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.AcceptIfMfaDoneByFederatedIdp,
 };
+var result = await graphClient.Domains["{domain-id}"].FederationConfiguration["{internalDomainFederation-id}"].PatchAsync(requestBody);
 
-await graphClient.Domains["{domain-id}"].FederationConfiguration["{internalDomainFederation-id}"]
-	.Request()
-	.UpdateAsync(internalDomainFederation);
 
 ```

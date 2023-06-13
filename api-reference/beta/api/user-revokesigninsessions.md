@@ -19,6 +19,8 @@ If the application attempts to redeem a delegated access token for this user by 
 
 >[!NOTE]
 >After calling **revokeSignInSessions**, there might be a small delay of a few minutes before tokens are revoked.
+>
+>This API doesn't revoke sign-in sessions for external users, because external users sign in through their home tenant.
 
 ## Permissions
 
@@ -72,10 +74,6 @@ POST https://graph.microsoft.com/beta/me/revokeSignInSessions
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-revokesigninsessionss-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-revokesigninsessionss-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

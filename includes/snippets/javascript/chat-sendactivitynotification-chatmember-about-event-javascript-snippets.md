@@ -27,7 +27,6 @@ const sendActivityNotification = {
 };
 
 await client.api('/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/sendActivityNotification')
-	.version('beta')
 	.post(sendActivityNotification);
 
 ```

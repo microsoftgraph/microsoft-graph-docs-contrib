@@ -1,7 +1,7 @@
 ---
 title: "call: updateRecordingStatus"
 description: "Update the application's recording status associated with a call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -98,8 +98,11 @@ Content-Length: 79
 [!INCLUDE [sample-code](../includes/snippets/php/call-updaterecordingstatus-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/call-updaterecordingstatus-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

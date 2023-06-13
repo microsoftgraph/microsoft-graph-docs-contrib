@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 08/27/2022
 ---
 
 # Overview of Azure AD Identity Governance using Microsoft Graph
@@ -53,13 +54,6 @@ The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow
 ## Identity governance and Zero Trust
 
 With identities being the common denominator when considering the security of your data, identity governance APIs in Microsoft Graph help your organization to achieve the [Identity Zero Trust deployment objectives](#see-also).
-
-## License requirements
-
-| Identity governance APIs | License requirements |
-|--|--|
-| [Access reviews](/graph/api/resources/accessreviewsv2-overview) <br/> [Entitlement management](/graph/api/resources/entitlementmanagement-overview) <br/> [Privileged identity management](/graph/api/resources/privilegedidentitymanagementv3-overview) | Azure AD Premium P2 license. |
-| [Terms of use](/graph/api/resources/agreement) | Azure AD Premium P1, P2, EMS E3, or EMS E5 licenses. |
 
 ## See also
 

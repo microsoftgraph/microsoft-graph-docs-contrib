@@ -86,6 +86,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/renew
 [!INCLUDE [sample-code](../includes/snippets/php/group-renew-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-renew-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

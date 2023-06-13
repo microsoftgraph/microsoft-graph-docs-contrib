@@ -1,5 +1,5 @@
 ---
-author: "FaithOmbongi"
+author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -15,6 +15,6 @@ ms.topic: include
 
 The preceding limits apply to the following resources:  
 
-| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <!-- fake header--> |
+|---|
 | <ul> <li> [appVulnerabilityManagedDevice](/graph/api/resources/intune-partnerintegration-appvulnerabilitymanageddevice) <li> [appVulnerabilityMobileApp](/graph/api/resources/intune-partnerintegration-appvulnerabilitymobileapp) <li> [appVulnerabilityTask](/graph/api/resources/intune-partnerintegration-appvulnerabilitytask) <li> [configManagerCollection](/graph/api/resources/intune-partnerintegration-configmanagercollection) <li> [deviceAppManagementTask](/graph/api/resources/intune-partnerintegration-deviceappmanagementtask) <li> [securityConfigurationTask](/graph/api/resources/intune-partnerintegration-securityconfigurationtask) <li> [unmanagedDeviceDiscoveryTask](/graph/api/resources/intune-partnerintegration-unmanageddevicediscoverytask) <li> [vulnerableManagedDevice](/graph/api/resources/intune-partnerintegration-vulnerablemanageddevice)  </ul> |

@@ -95,8 +95,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-directoryobject-from-featurerolloutpolicy-policies-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-directoryobject-from-featurerolloutpolicy-policies-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

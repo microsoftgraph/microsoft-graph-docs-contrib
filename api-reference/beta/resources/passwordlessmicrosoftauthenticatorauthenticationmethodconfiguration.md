@@ -4,7 +4,7 @@ description: "Represents a Microsoft Authenticator Passwordless Phone Sign-in au
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration resource type (deprecated)
@@ -36,7 +36,7 @@ Represents a Microsoft Authenticator Passwordless Phone Sign-in authentication m
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method.|
+|includeTargets|[passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

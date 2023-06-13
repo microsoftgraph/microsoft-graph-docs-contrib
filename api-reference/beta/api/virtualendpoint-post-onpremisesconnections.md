@@ -1,7 +1,7 @@
 ---
 title: "Create cloudPcOnPremisesConnection"
 description: "Create an Azure network connection  for provisioning Cloud PCs."
-author: "AshleyYangSZ"
+author: "Emma0727"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
@@ -85,11 +85,9 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremise
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "displayName": "test-canary-02",
   "type": "hybridAzureADJoin",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
-  "subscriptionName": "CPC customer 001 test subscription",
   "adDomainName": "contoso001.com",
   "adDomainUsername": "dcadmin",
   "organizationalUnit": "OU=Domain Controllers, DC=contoso001, DC=com",
@@ -123,8 +121,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

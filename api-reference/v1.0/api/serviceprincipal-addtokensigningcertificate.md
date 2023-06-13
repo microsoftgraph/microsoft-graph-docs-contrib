@@ -35,10 +35,13 @@ The **passwordCredential** is used to open the PFX file (private key). It and th
 
 ## HTTP request
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /servicePrincipals/{id}/addTokenSigningCertificate
+POST /servicePrincipals(appId='{appId}')/addTokenSigningCertificate
 ```
 
 ## Request body
@@ -102,9 +105,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-addtokensigningcertificate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-addtokensigningcertificate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 

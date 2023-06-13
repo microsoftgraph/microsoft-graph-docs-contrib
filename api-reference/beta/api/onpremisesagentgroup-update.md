@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH ~/onPremisesPublishingProfiles/{publishingType}/agentGroups
+PATCH /onPremisesPublishingProfiles/{publishingType}/agentGroups
 ```
 
 ## Request headers
@@ -98,8 +98,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-onpremisesagentgroup-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-onpremisesagentgroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

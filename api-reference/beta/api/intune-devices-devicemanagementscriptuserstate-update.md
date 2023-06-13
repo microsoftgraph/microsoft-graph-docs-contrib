@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementScriptUserState"
 description: "Update the properties of a deviceManagementScriptUserState object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -92,8 +92,3 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-

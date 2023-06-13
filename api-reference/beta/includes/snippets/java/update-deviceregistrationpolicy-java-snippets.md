@@ -28,8 +28,11 @@ azureADJoin.allowedUsers = allowedUsersList1;
 LinkedList<String> allowedGroupsList1 = new LinkedList<String>();
 azureADJoin.allowedGroups = allowedGroupsList1;
 deviceRegistrationPolicy.azureADJoin = azureADJoin;
+LocalAdminPasswordSettings localAdminPassword = new LocalAdminPasswordSettings();
+localAdminPassword.isEnabled = true;
+deviceRegistrationPolicy.localAdminPassword = localAdminPassword;
 
-graphClient.deviceRegistrationPolicy()
+graphClient.policies().deviceRegistrationPolicy()
 	.buildRequest()
 	.put(deviceRegistrationPolicy);
 

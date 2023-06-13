@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /solutions/bookingBusinesses/{id}/customers/{id}
 ```
+> **Note:** This method currently requires the ID to be Base64 encoded. GUID IDs do not work.
 
 ## Optional query parameters
 
@@ -55,6 +56,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "name" : "bookingcustomerget",
   "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "8bb19078-0f45-4efb-b2c5-da78b860f73a"]
 }-->
 ```http

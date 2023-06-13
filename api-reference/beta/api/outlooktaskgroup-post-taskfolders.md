@@ -56,7 +56,7 @@ The following example creates a task folder called `Cooking` in the specified ta
   "sampleKeys": ["AAMkADIyAAAhrbe-AAA="]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=/taskfolders
+POST https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=/taskFolders
 Content-type: application/json
 
 {
@@ -88,8 +88,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-outlooktaskfolder-from-outlooktaskgroup-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-outlooktaskfolder-from-outlooktaskgroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.
 ##### Response

@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewQueryPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsearch "github.com/microsoftgraph/msgraph-beta-sdk-go/search"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphsearch.NewQueryPostRequestBody()
 
 
 searchRequest := graphmodels.NewSearchRequest()
@@ -26,7 +35,7 @@ searchRequest.SetFrom(&from)
 size := int32(25)
 searchRequest.SetSize(&size) 
 
-requests := []graphmodels.SearchRequestable {
+requests := []graphsearch.SearchRequestable {
 	searchRequest,
 
 }

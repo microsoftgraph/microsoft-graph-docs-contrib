@@ -4,17 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var messageIds = new List<String>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Admin.ServiceAnnouncement.Messages.MarkUnread.MarkUnreadPostRequestBody
 {
-	"MC172851",
-	"MC167983"
+	MessageIds = new List<string>
+	{
+		"MC172851",
+		"MC167983",
+	},
 };
+var result = await graphClient.Admin.ServiceAnnouncement.Messages.MarkUnread.PostAsync(requestBody);
 
-await graphClient.Admin.ServiceAnnouncement.Messages
-	.MarkUnread(messageIds)
-	.Request()
-	.PostAsync();
 
 ```

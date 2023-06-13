@@ -20,8 +20,8 @@ The presence of the **renameAction** resource on an [**itemActivity**][activity]
 
 | Property name | Type   | Description
 |:--------------|:-------|:----------------------------------------------------
-| oldName       | string | The previous name of the item.
 | newName       | string | The new name of the item.
+| oldName       | string | The previous name of the item.
 
 ## JSON representation
 

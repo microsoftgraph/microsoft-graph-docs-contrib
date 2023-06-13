@@ -48,6 +48,7 @@ PATCH /policies/crossTenantAccessPolicy
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the cross-tenant access policy.|
+| allowedCloudEndpoints | String collection | Used to specify which Microsoft clouds an organization would like to collaborate with. By default, this value is empty. Supported values for this field are: `microsoftonline.com`, `microsoftonline.us`, and `partner.microsoftonline.cn`. |
 
 ## Response
 
@@ -58,7 +59,6 @@ The [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object si
 ## Examples
 
 ### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -72,7 +72,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy
 Content-Type: application/json
 
 {
-  "displayName": "CrossTenantAccessPolicy",
+  "allowedCloudEndpoints": ["microsoftonline.us"]
 }
 ```
 
@@ -100,8 +100,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-crosstenantaccesspolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-crosstenantaccesspolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

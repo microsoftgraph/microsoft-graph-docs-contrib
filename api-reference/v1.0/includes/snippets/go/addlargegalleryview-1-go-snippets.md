@@ -4,14 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewAddLargeGalleryViewPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphcommunications "github.com/microsoftgraph/msgraph-sdk-go/communications"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphcommunications.NewAddLargeGalleryViewPostRequestBody()
 clientContext := "785f4929-92ca-497b-863f-c778c77c9758"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().CallsById("call-id").AddLargeGalleryView().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Communications().Calls().ByCallId("call-id").AddLargeGalleryView().Post(context.Background(), requestBody, nil)
 
 
 ```

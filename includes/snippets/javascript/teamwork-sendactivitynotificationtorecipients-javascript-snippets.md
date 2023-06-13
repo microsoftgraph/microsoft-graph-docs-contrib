@@ -13,7 +13,7 @@ const client = Client.init(options);
 const sendActivityNotificationToRecipients = {
     topic: {
         source: 'entityUrl',
-        value: 'https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}'
+        value: 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/{teamsAppId}'
     },
     activityType: 'pendingFinanceApprovalRequests',
     previewText: {
@@ -42,7 +42,6 @@ const sendActivityNotificationToRecipients = {
 };
 
 await client.api('/teamwork/sendActivityNotificationToRecipients')
-	.version('beta')
 	.post(sendActivityNotificationToRecipients);
 
 ```

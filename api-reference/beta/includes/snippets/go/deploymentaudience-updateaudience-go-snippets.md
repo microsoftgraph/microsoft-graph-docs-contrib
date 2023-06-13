@@ -4,56 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewUpdateAudiencePostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphadmin "github.com/microsoftgraph/msgraph-beta-sdk-go/admin"
+	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-updatableAsset := graphmodels.NewUpdatableAsset()
+requestBody := graphadmin.NewUpdateAudiencePostRequestBody()
+
+
+updatableAsset := graphmodelswindowsupdates.NewUpdatableAsset()
 id := "String (identifier)"
 updatableAsset.SetId(&id) 
 
-addMembers := []graphmodels.Objectable {
+addMembers := []graphadmin.Objectable {
 	updatableAsset,
 
 }
 requestBody.SetAddMembers(addMembers)
 
-
-updatableAsset := graphmodels.NewUpdatableAsset()
-id := "String (identifier)"
-updatableAsset.SetId(&id) 
-
-removeMembers := []graphmodels.Objectable {
-	updatableAsset,
-
-}
-requestBody.SetRemoveMembers(removeMembers)
-
-
-updatableAsset := graphmodels.NewUpdatableAsset()
-id := "String (identifier)"
-updatableAsset.SetId(&id) 
-
-addExclusions := []graphmodels.Objectable {
-	updatableAsset,
-
-}
-requestBody.SetAddExclusions(addExclusions)
-
-
-updatableAsset := graphmodels.NewUpdatableAsset()
-id := "String (identifier)"
-updatableAsset.SetId(&id) 
-
-removeExclusions := []graphmodels.Objectable {
-	updatableAsset,
-
-}
-requestBody.SetRemoveExclusions(removeExclusions)
-
-graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudience().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().DeploymentAudiences().ByDeploymentAudienceId("deploymentAudience-id").MicrosoftGraphWindowsUpdatesUpdateAudience().Post(context.Background(), requestBody, nil)
 
 
 ```

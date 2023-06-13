@@ -8,7 +8,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Create comment for incident
+# Create comment
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -80,7 +80,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response

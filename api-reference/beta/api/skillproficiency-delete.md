@@ -90,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/skills/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/delete-skillproficiency-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-skillproficiency-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

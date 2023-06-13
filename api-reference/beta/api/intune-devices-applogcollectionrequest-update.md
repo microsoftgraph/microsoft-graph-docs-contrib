@@ -1,7 +1,7 @@
 ---
 title: "Update appLogCollectionRequest"
 description: "Update the properties of a appLogCollectionRequest object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -49,10 +49,10 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique Identifier. This is userId_DeviceId_AppId id.|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Log upload status. Possible values are: `pending`, `completed`, `failed`.|
-|errorMessage|String|Error message if any during the upload process|
-|customLogFolders|String collection|List of log folders. |
-|completedDateTime|DateTimeOffset|Time at which the upload log request reached a terminal state|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Indicates the status for the app log collection request if it is pending, completed or failed, Default is pending. Possible values are: `pending`, `completed`, `failed`, `unknownFutureValue`.|
+|errorMessage|String|Indicates error message if any during the upload process.|
+|customLogFolders|String collection|List of log folders.|
+|completedDateTime|DateTimeOffset|Time at which the upload log request reached a completed state if not completed yet NULL will be returned.|
 
 
 
@@ -97,8 +97,3 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
-
-
-
-

@@ -88,8 +88,11 @@ DELETE https://graph.microsoft.com/v1.0/policies/activityBasedTimeoutPolicies/{i
 [!INCLUDE [sample-code](../includes/snippets/php/delete-activitybasedtimeoutpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-activitybasedtimeoutpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

@@ -14,7 +14,7 @@ $requestBody->setGroupId('ffffffff-ffff-ffff-ffff-ffffffffffff');
 
 
 
-$requestResult = $graphServiceClient->groupLifecyclePolicies()->renewGroup()->post($requestBody);
+$result = $graphServiceClient->groupLifecyclePolicies()->renewGroup()->post($requestBody);
 
 
 ```

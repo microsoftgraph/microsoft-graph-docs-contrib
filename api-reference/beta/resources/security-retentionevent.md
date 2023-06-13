@@ -3,7 +3,7 @@ title: "retentionEvent resource type"
 description: "Represents a trigger for event-based retention labels where start of the retention period is based on when a specific type of event occurs."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 

@@ -1,58 +1,59 @@
 ---
-author: rahmit
-description: "The webPart resource represents type and rendering information for a web part on a sitePage."
-ms.date: 09/01/2018
-title: WebPart
+title: 'webPart resource type'
+description: Represents a specific web part instance on a SharePoint page.
+author: sangle7
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.prod: sharepoint
 doc_type: resourcePageType
 ---
-# webPart resource
+
+# webPart resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **webPart** resource represents type and rendering information for a web part on a [sitePage](sitepage.md).
+Represents a specific web part instance on a SharePoint page.
 
-## JSON representation
+This is an abstract type.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [  ],
-  "@odata.type": "microsoft.graph.webPart"
-}-->
+Inherits from [entity](../resources/entity.md).
 
-```json
-{
-  "type": "string (identifier)",
-  "data": {"@odata.type":"microsoft.graph.sitePageData"}
-}
-```
+## Methods
+
+| Method                                                                         | Return type                                        | Description                                                                                                                                 |
+| :----------------------------------------------------------------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| [List webParts](../api/webpart-list.md)                                        | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects and their properties.                                                          |
+| [Get webPart](../api/webpart-get.md)                                           | [webPart](../resources/webpart.md)                 | Read the properties and relationships of a [webPart](../resources/webpart.md) object.                                                       |
+| [Get webPart position](../api/webpart-getposition.md)                          | [webPartPosition](../resources/webpartposition.md) | Get the [webPartPosition](../resources/webpartposition.md) information of a [WebPart](../resources/webpart.md).                             |
+| [Get webPart collection by position](../api/sitePage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects filtered by [webPartPosition](../resources/webpartposition.md) information.  |
 
 ## Properties
 
-| Property                | Type             | Description
-|:------------------------|:-----------------|:----------------------------------
-| **type**                | String           | A unique identifier specifying the webPart type. Read-only.
-| **data**                | [sitePageData][] | The required properties for the webPart (varies by webPart)
+| Property | Type   | Description                                                                                 |
+| :------- | :----- | :------------------------------------------------------------------------------------------ |
+| id       | String | Unique instance identifier of the web part. Inherited from [entity](../resources/entity.md). |
 
-[sitePageData]: sitepagedata.md
+## Relationships
 
-## Remarks
+None.
 
-Web parts can define their own required properties under **data**.
+## JSON representation
 
-For more information about pages, see [sitePage](sitepage.md).
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Defines a control resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "Control",
-  "suppressions": []
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.webPart",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
 }
 -->
 
-
+```json
+{
+  "@odata.type": "#microsoft.graph.webPart",
+  "id": "String (identifier)"
+}
+```

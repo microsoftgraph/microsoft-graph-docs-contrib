@@ -6,8 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-BaseTaskListDeltaCollectionPage delta = graphClient.me().tasks().lists()
-	.delta()
+Content delta = graphClient.me().tasks().lists().delta()
 	.buildRequest()
 	.get();
 

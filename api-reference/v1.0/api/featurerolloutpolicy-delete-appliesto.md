@@ -1,5 +1,5 @@
 ---
-title: "Remove appliesTo"
+title: "Remove appliesTo on a featureRolloutPolicy"
 description: "Remove a directoryObject from feature rollout."
 ms.localizationpriority: medium
 author: "madhavpatel6"
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Remove appliesTo
+# Remove appliesTo on a featureRolloutPolicy
 
 Namespace: microsoft.graph
 
@@ -86,8 +86,11 @@ DELETE https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9
 [!INCLUDE [sample-code](../includes/snippets/php/delete-directoryobject-from-featurerolloutpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-directoryobject-from-featurerolloutpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

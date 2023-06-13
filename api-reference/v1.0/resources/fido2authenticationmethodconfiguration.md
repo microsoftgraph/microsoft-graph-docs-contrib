@@ -4,7 +4,7 @@ description: "Represents a FIDO2 authentication methods policy"
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # fido2AuthenticationMethodConfiguration resource type
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Represents a FIDO2 authentication methods policy. Authentication methods policies define configuration settings and users or groups who are enabled to use the authentication method.
+
+Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
 
 
 ## Methods
@@ -25,6 +27,7 @@ Represents a FIDO2 authentication methods policy. Authentication methods policie
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier.|
 |isAttestationEnforced|Boolean|Determines whether attestation must be enforced for FIDO2 security key registration.|
 |isSelfServiceRegistrationAllowed|Boolean|Determines if users can register new FIDO2 security keys.|
@@ -34,7 +37,7 @@ Represents a FIDO2 authentication methods policy. Authentication methods policie
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method.|
+|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -50,12 +53,17 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
   "id": "String (identifier)",
-  "state": "String",
-  "isSelfServiceRegistrationAllowed": "Boolean",
+  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ],
   "isAttestationEnforced": "Boolean",
+  "isSelfServiceRegistrationAllowed": "Boolean",
   "keyRestrictions": {
     "@odata.type": "microsoft.graph.fido2KeyRestrictions"
   },
-  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ]
+  "state": "String",
+  "excludeTargets": [
+    {
+      "@odata.type": "microsoft.graph.excludeTarget"
+    }
+  ]
 }
 ```

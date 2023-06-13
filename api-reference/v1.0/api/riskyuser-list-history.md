@@ -1,7 +1,7 @@
 ---
 title: "List history"
 description: "Get the riskyUserHistoryItems from the history navigation property."
-author: "ebasseri"
+author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -85,9 +85,11 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/{riskyUserId}
 [!INCLUDE [sample-code](../includes/snippets/php/get-riskyuserhistoryitem-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-riskyuserhistoryitem-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

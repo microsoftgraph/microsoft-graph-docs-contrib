@@ -41,6 +41,7 @@ To associate a domain with a tenant:
 |[Delete domain](../api/domain-delete.md) | None |Deletes a domain.|
 |[ForceDelete domain](../api/domain-forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
 |[Verify domain](../api/domain-verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
+|[Promote domain](../api/domain-promote.md)|Boolean|Promote a verified subdomain to the root domain.|
 
 ## Properties
 
@@ -56,8 +57,8 @@ To associate a domain with a tenant:
 |isVerified|Boolean| `true` if the domain has completed domain ownership verification. Not nullable |
 |passwordNotificationWindowInDays|Int32|Specifies the number of days before a user receives notification that their password will expire. If the property is not set, a default value of 14 days will be used.|
 |passwordValidityPeriodInDays|Int32| Specifies the length of time that a password is valid before it must be changed. If the property is not set, a default value of 90 days will be used. |
-|supportedServices|String collection| The capabilities assigned to the domain. Can include `0`, `1` or more of following values: `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`. The values which you can add/remove using Graph API include: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Not nullable.|
 |state|[domainState](domainstate.md)| Status of asynchronous operations scheduled for the domain. |
+|supportedServices|String collection| The capabilities assigned to the domain. Can include `0`, `1` or more of following values: `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`. The values which you can add/remove using Graph API include: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Not nullable.|
 
 ## Relationships
 

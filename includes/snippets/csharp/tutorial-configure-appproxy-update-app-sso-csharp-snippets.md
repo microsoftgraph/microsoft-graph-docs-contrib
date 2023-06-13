@@ -4,26 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var application = new Application
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Applications.Item.Application
 {
-	OnPremisesPublishing = new OnPremisesPublishing
+	AdditionalData = new Dictionary<string, object>
 	{
-		SingleSignOnSettings = new OnPremisesPublishingSingleSignOn
 		{
-			KerberosSignOnSettings = new KerberosSignOnSettings
+			"onPremisesPublishing" , new 
 			{
-				KerberosServicePrincipalName = "HTTP/iwademo.contoso.com",
-				KerberosSignOnMappingAttributeType = KerberosSignOnMappingAttributeType.UserPrincipalName
-			},
-			SingleSignOnMode = SingleSignOnMode.OnPremisesKerberos
-		}
-	}
+				SingleSignOnSettings = new 
+				{
+					KerberosSignOnSettings = new 
+					{
+						KerberosServicePrincipalName = "HTTP/iwademo.contoso.com",
+						KerberosSignOnMappingAttributeType = "userPrincipalName",
+					},
+					SingleSignOnMode = "onPremisesKerberos",
+				},
+			}
+		},
+	},
 };
+await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
-await graphClient.Applications["{application-id}"]
-	.Request()
-	.UpdateAsync(application);
 
 ```

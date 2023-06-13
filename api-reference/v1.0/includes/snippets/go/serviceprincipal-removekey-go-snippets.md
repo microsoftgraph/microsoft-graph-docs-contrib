@@ -4,16 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewRemoveKeyPostRequestBody()
+import (
+	  "context"
+	  "github.com/google/uuid"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphserviceprincipals.NewRemoveKeyPostRequestBody()
 keyId := uuid.MustParse("f0b0b335-1d71-4883-8f98-567911bfdca6")
 requestBody.SetKeyId(&keyId) 
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof) 
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").RemoveKey().Post(context.Background(), requestBody, nil)
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").RemoveKey().Post(context.Background(), requestBody, nil)
 
 
 ```

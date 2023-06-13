@@ -1,7 +1,7 @@
 ---
 title: "call: recordResponse"
 description: "Records a short audio response from the caller. This is useful if the bot wishes to capture a voice response from the caller following a prompt."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -123,7 +123,6 @@ Content-Length: 394
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 The following example shows the response.

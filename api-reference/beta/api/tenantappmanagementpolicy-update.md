@@ -40,6 +40,9 @@ PATCH /policies/defaultAppManagementPolicy
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
+> [!IMPORTANT]
+> Service principals with a createdDateTime `null` are treated as having being created on 01/01/2019.
+
 ## Request body
 
 In the request body, supply the values for relevant fields from the [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) that should be updated. Existing properties that are not included in the request body will maintain their previous values. For best performance, do not include unchanged values in the request payload.
@@ -51,6 +54,9 @@ In the request body, supply the values for relevant fields from the [tenantAppMa
 | description                  | String                                                                   | The description of the default policy. Inherited from [policyBase](../resources/policybase.md).  |
 | isEnabled                    | Boolean                                                                  | Denotes if the policy is enabled. Default value is false.                                        |
 | servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all service principal objects in the tenant.               |
+
+> [!IMPORTANT]
+> Service principals with a createdDateTime `null` are treated as having being created on 01/01/2019.
 
 ## Response
 
@@ -136,6 +142,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-tenantappmanagementpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-tenantappmanagementpolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

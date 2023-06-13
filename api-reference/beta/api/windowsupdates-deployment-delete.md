@@ -1,7 +1,7 @@
 ---
 title: "Delete deployment"
 description: "Delete a deployment object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -56,7 +56,7 @@ If successful, this method returns a `202 Accepted` response code. It does not r
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/983f03cd-03cd-983f-cd03-3f98cd033f98
 ```
 
 # [C#](#tab/csharp)
@@ -83,9 +83,11 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deplo
 [!INCLUDE [sample-code](../includes/snippets/php/delete-deployment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-deployment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 

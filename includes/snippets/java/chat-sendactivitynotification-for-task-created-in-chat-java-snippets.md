@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 TeamworkActivityTopic topic = new TeamworkActivityTopic();
 topic.source = TeamworkActivityTopicSource.ENTITY_URL;
-topic.value = "https://graph.microsoft.com/beta/chats/{chatId}";
+topic.value = "https://graph.microsoft.com/v1.0/chats/{chatId}";
 
 String activityType = "taskCreated";
 

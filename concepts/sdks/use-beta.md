@@ -106,21 +106,17 @@ class UseBeta
 
 # [Go](#tab/Go)
 
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
 In order to call the beta API, you must install the [Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) package.
 
 ```go
 import (
     msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-    a "github.com/microsoft/kiota-authentication-azure-go"
 )
-
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(credentials, scopes)
 ```
 
 ---
+
+
+## See also
+[SDKs in preview or GA status](sdks-overview.md#sdks-in-preview-or-ga-status).

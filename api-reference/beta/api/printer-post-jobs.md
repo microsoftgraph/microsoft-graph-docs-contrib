@@ -61,6 +61,7 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs
 Content-type: application/json
 
 {
+  "displayName": "testjob",
   "configuration": {
     "feedOrientation": "longEdgeFirst",
     "pageRanges": [
@@ -107,8 +108,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-printjob-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-printjob-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-printjob-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-printjob-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -128,6 +138,7 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printJobs/$entity",
   "id": "1825",
+  "displayName": "testjob",
   "createdDateTime": "2020-10-14T05:16:49-07:00",
   "isFetchable": false,
   "redirectedFrom": null,

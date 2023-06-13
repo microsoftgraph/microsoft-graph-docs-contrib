@@ -115,7 +115,9 @@ Content-Type: application/json
 ## Subscribe to changes in any channel of a particular team
 
 
-To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{team-id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. Change notifications for private channels aren't supported in delegated context. In this case, a subscriber to this resource in delegated context will receive notifications only for standard channels under a particular team, not for private channels. Change notifications for shared channels aren't supported.
+To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{team-id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+
+>**Note:** Change notifications for private and shared channels in delegated context are only supported in beta. This is not currently available in v1.0. When you call the v1.0 endpoint, a subscriber to this resource in delegated context will receive notifications only for standard channels under a particular team, not for private and shared channels.
 
 
 ### Permissions
@@ -311,11 +313,13 @@ For notifications without resource data, the payload looks like the following. T
 }
 ```
 
-
 ## See also
+
 - [Microsoft Graph change notifications](webhooks.md)
 - [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
 - [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
 - [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
 - [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)
+- [Change notifications team or channel C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification-team-channel/csharp)
+- [Change notifications team or channel Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-change-notification-team-channel/nodejs)

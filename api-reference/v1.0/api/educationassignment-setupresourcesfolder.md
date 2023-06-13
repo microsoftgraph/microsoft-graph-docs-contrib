@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a SharePoint folder to upload files for a given [educationAssignment](../resources/educationassignment.md). 
+Create a SharePoint folder to upload files for a given [educationAssignment](../resources/educationassignment.md). Only teachers can perform this operation.
 
 The teacher determines the resources to upload in the assignment's folder. 
 
@@ -87,8 +87,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/educationassignment-setupresourcesfolder-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/educationassignment-setupresourcesfolder-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 The following is an example of the response. 

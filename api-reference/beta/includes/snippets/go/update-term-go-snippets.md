@@ -4,13 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewTerm()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelstermstore "github.com/microsoftgraph/msgraph-beta-sdk-go/models/termstore"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-localizedLabel := graphmodels.NewLocalizedLabel()
+requestBody := graphmodelstermstore.NewTerm()
+
+
+localizedLabel := graphmodelstermstore.NewLocalizedLabel()
 name := "changedLabel"
 localizedLabel.SetName(&name) 
 languageTag := "en-US"
@@ -18,13 +26,13 @@ localizedLabel.SetLanguageTag(&languageTag)
 isDefault := true
 localizedLabel.SetIsDefault(&isDefault) 
 
-labels := []graphmodels.LocalizedLabelable {
+labels := []graphmodelstermstore.LocalizedLabelable {
 	localizedLabel,
 
 }
 requestBody.SetLabels(labels)
 
-result, err := graphClient.TermStore().SetsById("set-id").TermsById("term-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.TermStore().Sets().BySetId("set-id").Terms().ByTermId("term-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

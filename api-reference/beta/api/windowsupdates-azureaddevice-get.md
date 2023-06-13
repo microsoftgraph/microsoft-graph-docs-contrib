@@ -1,7 +1,7 @@
 ---
 title: "Get azureADDevice"
 description: "Read the properties of an azureADDevice object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -88,8 +88,11 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/983f0
 [!INCLUDE [sample-code](../includes/snippets/php/get-azureaddevice-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-azureaddevice-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

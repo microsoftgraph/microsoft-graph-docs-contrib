@@ -1,7 +1,7 @@
 ---
 title: "Update deployment"
 description: "Update the properties of a deployment object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -40,15 +40,13 @@ PATCH /admin/windows/updates/deployments/{deploymentId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [deployment](../resources/windowsupdates-deployment.md) object.
 
-The following table shows the properties that can be set when you update the [deployment](../resources/windowsupdates-deployment.md).
+The following table shows the properties that can be set when you update a [deployment](../resources/windowsupdates-deployment.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |state|[microsoft.graph.windowsUpdates.deploymentState](../resources/windowsupdates-deploymentstate.md)|Execution status of the deployment.|
 |settings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings specified on the specific deployment governing how to deploy deployment `content`.|
-
 
 ## Response
 
@@ -56,11 +54,13 @@ If successful, this method returns a `202 Accepted` response code and an updated
 
 ## Examples
 
-### Example: Pause a deployment
+### Example 1: Pause a deployment
 
-In this example, the deployment is paused by updating the `requestedValue` of the deployment `state`.
+In this example, the deployment is paused by updating the **requestedValue** of the deployment **state**.
 
 #### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,11 +106,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-deployment-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-deployment-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -134,11 +138,13 @@ Content-Type: application/json
       }
     ],
     "requestedValue": "paused",
-    "value": "paused"
+    "effectiveValue": "paused"
   },
   "content": {
-    "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-    "version": "20H2"
+    "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+    "catalogEntry": {
+      "@odata.id": "catalog/entries/1"
+    }
   },
   "settings": null,
   "createdDateTime": "String (timestamp)",
@@ -146,11 +152,13 @@ Content-Type: application/json
 }
 ```
 
-### Example: Update deployment settings to add a monitoring rule
+### Example 2: Update deployment settings to add a monitoring rule
 
-In this example, the `settings` property of the deployment is updated to add a monitoring rule.
+In this example, the **settings** property of the deployment is updated to add a monitoring rule.
 
 #### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -166,7 +174,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
   "settings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
     "monitoring": {
       "monitoringRules": [
         {
@@ -204,11 +212,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-deployment-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-deployment-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -232,14 +244,16 @@ Content-Type: application/json
       }
     ],
     "requestedValue": "none",
-    "value": "offering"
+    "effectiveValue": "offering"
   },
   "content": {
-    "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-    "version": "20H2"
+    "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+    "catalogEntry": {
+      "@odata.id": "catalog/entries/1"
+    }
   },
   "settings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
     "monitoring": {
       "monitoringRules": [
         {

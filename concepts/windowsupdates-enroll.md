@@ -1,7 +1,7 @@
 ---
 title: "Enroll in update management by the Windows Update for Business deployment service"
 description: "Enroll a device in update management so that you can use the Windows Update for Business deployment service to manage content delivered from Windows Update to that device."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
@@ -11,11 +11,13 @@ doc_type: conceptualPageType
 
 When you enroll a device in update management by the Windows Update for Business deployment service, you can use the deployment service to manage content delivered from Windows Update to that device. You can enroll a device in update management by update category.
 
-Today, the deployment service supports enrollment in management of Windows 10 feature updates. At this time, the deployment service does not require enrollment in management of Windows 10 quality updates in order to deploy expedited quality updates.
+Today, the deployment service supports enrollment in management of Windows 10/11 feature updates and driver updates. At this time, the deployment service does not require enrollment in management of Windows 10/11 quality updates in order to deploy expedited quality updates.
 
 ## Enroll the device in update management
 
-When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, devices do not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a [deployment](windowsupdates-deployments.md). Devices are automatically registered with the service when enrolled in management by the service (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).
+When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, devices do not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a [deployment](/graph/windowsupdates-deployments). Devices are automatically registered with the service when enrolled in management by the service (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist). For driver enrollment, see [enroll devices in driver management](/graph/windowsupdates-manage-driver-update#step-1-enroll-devices-in-driver-management).
+
+The following example shows how to enroll a device in feature update management.
 
 ### Request
 
@@ -82,7 +84,7 @@ Content-Type: application/json
 
 ## Unenroll from management by the service or unregister from the service 
 
-When you unenroll a device from management by the service for a given update category, the device is no longer managed by the deployment service and may start receiving other updates from Windows Update based on its policy configuration. If the device is assigned to any deployments for the given update category, it does not receive that content. The device remains registered with the service and is still enrolled and receiving content for other update categories (if applicable).
+When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management by the service for a given update category, the device is no longer managed by the deployment service and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contains content for the given update category. The device remains registered with the service and is still enrolled and receiving content for other update categories (if applicable).
 
 ### Request
 
@@ -119,4 +121,3 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{a
 ``` http
 HTTP/1.1 202 Accepted
 ```
-

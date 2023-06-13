@@ -80,8 +80,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/todo-attachment-walkthrough-createuploadsession-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/todo-attachment-walkthrough-createuploadsession-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 The following example shows the **uploadSession** resource returned for the task in the response body.

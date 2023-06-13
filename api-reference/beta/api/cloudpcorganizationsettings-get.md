@@ -86,9 +86,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/organizati
 [!INCLUDE [sample-code](../includes/snippets/php/get-cloudpcorganizationsettings-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-cloudpcorganizationsettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 <!-- {
@@ -105,6 +107,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
     "enableMEMAutoEnroll": false,
+    "enableSingleSignOn": true,
     "id": "8660bf17-bf17-8660-17bf-608617bfffff",
     "osVersion": "windows11",
     "userAccountType": "standardUser",

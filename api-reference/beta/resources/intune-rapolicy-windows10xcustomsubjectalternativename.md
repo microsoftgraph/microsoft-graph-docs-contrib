@@ -1,7 +1,7 @@
 ---
 title: "windows10XCustomSubjectAlternativeName resource type"
 description: "Base Profile Type for Authentication Certificates (SCEP or PFX Create)"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -40,8 +40,3 @@ Here is a JSON representation of the resource.
   "name": "String"
 }
 ```
-
-
-
-
-

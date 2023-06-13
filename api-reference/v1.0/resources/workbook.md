@@ -28,9 +28,9 @@ None.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |names|[workbookNamedItem](nameditem.md) collection|Represents a collection of workbooks scoped named items (named ranges and constants). Read-only.|
+|operations|[workbookOperation](workbookoperation.md) collection|The status of workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the `Location` header is returned in the response. Read-only.|
 |tables|[workbookTable](table.md) collection|Represents a collection of tables associated with the workbook. Read-only.|
 |worksheets|[workbookWorksheet](worksheet.md) collection|Represents a collection of worksheets associated with the workbook. Read-only.|
-|operations|[workbookOperation](workbookoperation.md) collection|The status of workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the `Location` header is returned in the response. Read-only.|
 
 ## Functions
 

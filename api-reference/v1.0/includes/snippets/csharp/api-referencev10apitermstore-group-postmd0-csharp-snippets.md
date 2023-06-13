@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var group = new Microsoft.Graph.TermStore.Group
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Models.TermStore.Group
 {
-	DisplayName = "myGroup"
+	DisplayName = "myGroup",
 };
+var result = await graphClient.Sites["{site-id}"].TermStore.Groups.PostAsync(requestBody);
 
-await graphClient.Sites["{site-id}"].TermStore.Groups
-	.Request()
-	.AddAsync(group);
 
 ```

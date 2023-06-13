@@ -20,7 +20,7 @@ Represents a collection of allowed resource actions and the conditions that must
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |allowedResourceActions|String collection| Set of tasks that can be performed on a resource. |
-|condition|String| Optional constraints that must be met for the permission to be effective. |
+|condition|String| Optional constraints that must be met for the permission to be effective. Not supported for custom roles. |
 
 ### allowedResourceActions property
 
@@ -65,6 +65,7 @@ The following is an example of a role permission with a condition.
     ]
 
 ```
+Conditions aren't supported for custom roles.
 
 ## JSON representation
 

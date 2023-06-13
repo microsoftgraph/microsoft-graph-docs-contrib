@@ -90,8 +90,11 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceIma
 [!INCLUDE [sample-code](../includes/snippets/php/reupload-deviceimages-from-virtualendpoint-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/reupload-deviceimages-from-virtualendpoint-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

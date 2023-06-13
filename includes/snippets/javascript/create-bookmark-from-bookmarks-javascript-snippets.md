@@ -19,16 +19,6 @@ const bookmark = {
     reservedKeywords: ['Contoso'],
     matchSimilarKeywords: true
   },
-  availabilityStartDateTime: null,
-  availabilityEndDateTime: null,
-  platforms: ['windows'],
-  targetedVariations: [
-    {
-      languageTag: 'es-es',
-      displayName: 'Sitio de instalación Contoso',
-      description: 'Pruebe o compre Contoso hogar o negocios y vea la información del producto'
-    }
-  ],
   state: 'published'
 };
 

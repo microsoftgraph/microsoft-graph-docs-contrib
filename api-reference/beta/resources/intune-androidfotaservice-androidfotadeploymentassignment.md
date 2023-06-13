@@ -1,7 +1,7 @@
 ---
 title: "androidFotaDeploymentAssignment resource type"
 description: "Describes deployment security group to assign a deployment to. The backend will expand the security Group ID to extract device serial numbers prior sending a create deployment request to Zebra."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -45,8 +45,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-

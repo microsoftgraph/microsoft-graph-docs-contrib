@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewRecordResponsePostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphcommunications "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphcommunications.NewRecordResponsePostRequestBody()
 bargeInAllowed := true
 requestBody.SetBargeInAllowed(&bargeInAllowed) 
 clientContext := "d45324c1-fcb5-430a-902c-f20af696537c"
@@ -25,7 +34,7 @@ mediaInfo.SetResourceId(&resourceId)
 }
 prompt.SetAdditionalData(additionalData)
 
-prompts := []graphmodels.Promptable {
+prompts := []graphcommunications.Promptable {
 	prompt,
 
 }
@@ -46,7 +55,7 @@ stopTones := []string {
 }
 requestBody.SetStopTones(stopTones)
 
-result, err := graphClient.Communications().CallsById("call-id").RecordResponse().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Communications().Calls().ByCallId("call-id").RecordResponse().Post(context.Background(), requestBody, nil)
 
 
 ```

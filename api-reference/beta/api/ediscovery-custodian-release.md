@@ -91,8 +91,11 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea241
 [!INCLUDE [sample-code](../includes/snippets/php/custodian-release-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/custodian-release-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

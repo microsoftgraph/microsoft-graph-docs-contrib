@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewUpdateAlertsPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphsecurity.NewUpdateAlertsPostRequestBody()
 
 
 alert := graphmodels.NewAlert()
@@ -44,7 +53,7 @@ vendor := "String"
 vendorInformation.SetVendor(&vendor) 
 alert.SetVendorInformation(vendorInformation)
 
-value := []graphmodels.Objectable {
+value := []graphsecurity.Objectable {
 	alert,
 
 }

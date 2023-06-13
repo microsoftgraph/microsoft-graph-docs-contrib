@@ -352,7 +352,7 @@ The following example uses the replace action to change a to-do check box item t
 ```json
 [
   {
-    'target':'#task1',
+    'target':'p:{33f8a242-7c33-4bb2-90c5-8425a68cc5bf}{40}',
     'action':'replace',
     'content':'<p data-tag="to-do:completed" data-id="task1">First task</p>'
   }

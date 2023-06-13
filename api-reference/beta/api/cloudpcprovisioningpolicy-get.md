@@ -98,8 +98,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/php/get-cloudpcprovisioningpolicy-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-cloudpcprovisioningpolicy-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -125,6 +128,17 @@ Content-Type: application/json
         "domainJoinType": "hybridAzureADJoin",
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff"
     },
+    "domainJoinConfigurations": [
+      {
+        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+        "type": "hybridAzureADJoin"
+      },
+      {
+        "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
+        "type": "hybridAzureADJoin"
+      }
+    ],
+    "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
@@ -133,7 +147,8 @@ Content-Type: application/json
     "windowsSettings": {
       "language": "en-US"
     },
-    "managedBy": "windows365"
+    "managedBy": "windows365",
+    "provisioningType": "dedicated"
 }
 ```
 
@@ -178,8 +193,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/php/get-cloudpcprovisioningpolicy-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-cloudpcprovisioningpolicy-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -206,6 +224,17 @@ Content-Type: application/json
         "regionName": null,
         "type": "hybridAzureADJoin"
     },
+    "domainJoinConfigurations": [
+      {
+        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+        "type": "hybridAzureADJoin"
+      },
+      {
+        "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
+        "type": "hybridAzureADJoin"
+      }
+    ],
+    "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
@@ -224,7 +253,8 @@ Content-Type: application/json
           }
       }
     ],
-    "managedBy": "windows365"
+    "managedBy": "windows365",
+    "provisioningType": "dedicated"
 }
 ```
 
@@ -272,8 +302,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/php/get-cloudpcprovisioningpolicy-3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-cloudpcprovisioningpolicy-3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -302,6 +335,17 @@ Content-Type: application/json
         "regionName": null,
         "type": "hybridAzureADJoin"
     },
+    "domainJoinConfigurations": [
+      {
+        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+        "type": "hybridAzureADJoin"
+      },
+      {
+        "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
+        "type": "hybridAzureADJoin"
+      }
+    ],
+    "enableSingleSignOn": true,
     "gracePeriodInHours": 2,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "myCustomImage",
@@ -312,6 +356,7 @@ Content-Type: application/json
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
     "windowsSettings": {
       "language": "en-US"
-    }
+    },
+    "provisioningType": "dedicated"
 }
 ```

@@ -25,9 +25,9 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the dataSourceContainer. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 |createdDateTime|DateTimeOffset|Created date and time of the dataSourceContainer entity.|
 |displayName|String|Display name of the dataSourceContainer entity.|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the dataSourceContainer. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 |id|String|Unique identifier of the dataSourceContainer. Inherited from [entity](../resources/entity.md)|
 |lastModifiedDateTime|DateTimeOffset|Last modified date and time of the dataSourceContainer.|
 |releasedDateTime|DateTimeOffset|Date and time that the dataSourceContainer was released from the case.|

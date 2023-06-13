@@ -105,9 +105,11 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 [!INCLUDE [sample-code](../includes/snippets/php/list-simulation-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-simulation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -144,6 +146,7 @@ Content-Type: application/json
       },
       "launchDateTime": "2021-01-01T02:01:01.01Z",
       "completionDateTime": "2021-01-07T01:01:01.01Z",
+      "durationInDays": 4,
       "isAutomated": false,
       "automationId": "f1b13829-3829-f1b1-2938-b1f12938b1ab",
       "payloadDeliveryPlatform": "email"

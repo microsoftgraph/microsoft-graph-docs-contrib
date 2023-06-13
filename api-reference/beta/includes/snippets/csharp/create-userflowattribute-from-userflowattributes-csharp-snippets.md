@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var identityUserFlowAttribute = new IdentityUserFlowAttribute
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new IdentityUserFlowAttribute
 {
 	DisplayName = "Hobby",
 	Description = "Your hobby",
-	DataType = IdentityUserFlowAttributeDataType.String
+	DataType = IdentityUserFlowAttributeDataType.String,
 };
+var result = await graphClient.Identity.UserFlowAttributes.PostAsync(requestBody);
 
-await graphClient.Identity.UserFlowAttributes
-	.Request()
-	.AddAsync(identityUserFlowAttribute);
 
 ```

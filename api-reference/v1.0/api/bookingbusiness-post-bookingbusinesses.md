@@ -46,7 +46,8 @@ If successful, this method returns a `201 Created` response code and a [bookingB
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name" : "bookingbusinesspostbookingbusiness"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses
@@ -88,6 +89,7 @@ Content-type: application/json
     "phone":"206-555-0100",
     "email":"manager@fourthcoffee.com",
     "webSiteUrl":"https://www.fourthcoffee.com",
+    "languageTag":"en-US",
     "defaultCurrencyIso":"USD",
     "isPublished":false,
     "publicUrl":null,

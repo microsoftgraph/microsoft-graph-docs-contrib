@@ -55,6 +55,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "name" : "bookingbusinessliststaffmembers",
   "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
@@ -88,6 +89,7 @@ Content-type: application/json
             "role":"externalGuest",
             "timeZone":"America/Chicago",
             "useBusinessHours":true,
+            "isEmailNotificationEnabled": false,
             "workingHours":[
                 {
                     "day":"monday",
@@ -145,6 +147,7 @@ Content-type: application/json
             "role":"administrator",
             "timeZone":"America/Chicago",
             "useBusinessHours":true,
+            "isEmailNotificationEnabled": false,
             "workingHours":[
                 {
                     "day":"monday",

@@ -55,6 +55,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "name": "bookingappointment_get",
   "sampleKeys": ["AAMkADKnAAA=", "Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
@@ -90,9 +91,10 @@ Content-type: application/json
     "preBuffer": "PT5M",
     "postBuffer": "PT10M",
     "priceType": "fixedPrice",
-    "price": 10,
+    "price": 10.0,
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
+    "anonymousJoinWebUrl": null,
     "staffMemberIds": [],
     "startDateTime": {
         "dateTime": "2018-05-06T12:00:00.0000000Z",

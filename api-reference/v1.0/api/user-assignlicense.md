@@ -1,5 +1,5 @@
 ---
-title: "assignLicense"
+title: "user: assignLicense"
 description: "Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription."
 author: "jconley76"
 ms.localizationpriority: high
@@ -10,6 +10,7 @@ doc_type: apiPageType
 # user: assignLicense
 
 Namespace: microsoft.graph
+
 Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
 
 ## Permissions
@@ -90,7 +91,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.

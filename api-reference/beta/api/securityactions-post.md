@@ -1,6 +1,6 @@
 ---
 title: "Create securityAction"
-description: Create a new securityAction object."
+description: "Create a new securityAction object."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of a [securityAction](../resou
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.
 
 ## Examples
 
@@ -103,15 +103,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-securityaction-from-security-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-securityaction-from-security-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability.
+> **Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

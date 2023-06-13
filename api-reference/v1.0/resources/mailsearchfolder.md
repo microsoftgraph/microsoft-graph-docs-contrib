@@ -38,10 +38,10 @@ When a search folder is deleted, your app should create a new search folder reso
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| isSupported | Boolean | Indicates whether a search folder is editable using REST APIs. |
-| includeNestedFolders | Boolean | Indicates how the mailbox folder hierarchy should be traversed in the search. `true` means that a deep search should be done to include child folders in the hierarchy of each folder explicitly specified in **sourceFolderIds**. `false` means a shallow search of only each of the folders explicitly specified in **sourceFolderIds**. |
-| sourceFolderIds | String collection | The mailbox folders that should be mined. |
 | filterQuery | String | The OData query to filter the messages. |
+| includeNestedFolders | Boolean | Indicates how the mailbox folder hierarchy should be traversed in the search. `true` means that a deep search should be done to include child folders in the hierarchy of each folder explicitly specified in **sourceFolderIds**. `false` means a shallow search of only each of the folders explicitly specified in **sourceFolderIds**. |
+| isSupported | Boolean | Indicates whether a search folder is editable using REST APIs. |
+| sourceFolderIds | String collection | The mailbox folders that should be mined. |
 
 ## JSON representation
 

@@ -36,8 +36,8 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
 POST /me/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
 
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
+POST /me/calendarGroups/{id}/calendars/{id}/events/{id}/dismissReminder
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/dismissReminder
 ```
 
 <br/>
@@ -95,8 +95,11 @@ POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 [!INCLUDE [sample-code](../includes/snippets/php/event-dismissreminder-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/event-dismissreminder-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 <br/>
 

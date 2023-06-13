@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: conceptualPageType
+ms.date: 09/16/2022
 ---
 
 # Activity reports API overview

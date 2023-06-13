@@ -9,9 +9,9 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for Microsoft Teams meeting call updates
 
-Change notifications in Microsoft Graph enable you to subscribe to call started/ended and call roster updates for Microsoft Teams online meetings. Change notifications provide a low-latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications in Microsoft Graph enable you to subscribe to call started/ended and call roster updates for Microsoft Teams online meetings. Change notifications provide a low-latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload. 
 
-## Subscribe to messages across all channels
+A subscription has a max expiry period of 3 days. To persist the subscription for more than this period, a subscription renewal request must be made. For details, see [Update subscription](/graph/api/subscription-update). Alternatively, a user can wait for the subscription to expire and create a new subscription with the same meeting resource.
 
 To get change notifications for a meeting's call events, subscribe to `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`. 
 
@@ -152,18 +152,22 @@ The following are the supported meeting events:
 
 **CallRosterUpdate** events include two properties, **activeParticipants@joined** to depict participants added to a meeting call and **activeParticipants@exited** for participants leaving the meeting call. 
 
-An active participant is represented as follows: 
+An active participant is represented as follows:
+
 ```json
 {
   "Id": "string",
   "Identity": "microsoft.graph.communicationsIdentitySet"
 }
 ```
+
 - The **Id** property corresponds to participant ID, which is a unique identifier assigned to each participant in the meeting call.
-- The **Identity** property corresponds to the **communicationsIdentitySet**. For details, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta).
+- The **Identity** property corresponds to the **communicationsIdentitySet**. For details, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta&preserve-view=true).
 
 ## See also
 
 - [Microsoft Graph change notifications](/graph/webhooks)
 - [Microsoft Teams API overview](/graph/teams-concept-overview)
 - [Online meeting resource](/graph/api/resources/onlineMeeting)
+- [Meeting notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)
+- [Meeting notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)

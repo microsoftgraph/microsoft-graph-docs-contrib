@@ -17,6 +17,7 @@ Get a list of the authentication methods registered for the user as defined in t
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|UserAuthenticationMethod.Read.All and AuditLog.Read.All|
@@ -52,6 +53,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+The following is an example of the request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -86,11 +89,16 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrat
 [!INCLUDE [sample-code](../includes/snippets/php/list-userregistrationdetails-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-userregistrationdetails-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -103,61 +111,63 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#reports/authenticationMethods/userRegistrationDetails",
-    "value": [
-        {
-            "id": "86462606-fde0-4fc4-9e0c-a20eb73e54c6",
-            "userPrincipalName": "AlexW@Contoso.com",
-            "userDisplayName": "Alex Wilber",
-            "isAdmin": false,
-            "isSsprRegistered": false,
-            "isSsprEnabled": false,
-            "isSsprCapable": false,
-            "isMfaRegistered": true,
-            "isMfaCapable": true,
-            "isPasswordlessCapable": false,
-            "methodsRegistered": [
-                "microsoftAuthenticatorPush",
-                "softwareOneTimePasscode"
-            ],
-            "defaultMethod": "microsoftAuthenticatorPush",
-            "userType": "member"
-        },
-        {
-            "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
-            "userPrincipalName": "AllanD@Contoso.com",
-            "userDisplayName": "Allan Deyoung",
-            "isAdmin": false,
-            "isSsprRegistered": false,
-            "isSsprEnabled": false,
-            "isSsprCapable": false,
-            "isMfaRegistered": false,
-            "isMfaCapable": false,
-            "isPasswordlessCapable": false,
-            "methodsRegistered": [],
-            "defaultMethod": "", 
-            "userType": "guest"  
-        },
-        {
-            "id": "c8096958-797c-44fa-8fde-a6fb62567cf0",
-            "userPrincipalName": "BiancaP@Contoso.com",
-            "userDisplayName": "Bianca Pisani",
-            "isAdmin": false,
-            "isSsprRegistered": true,
-            "isSsprEnabled": false,
-            "isSsprCapable": false,
-            "isMfaRegistered": true,
-            "isMfaCapable": true,
-            "isPasswordlessCapable": false,
-            "methodsRegistered": [
-                "mobilePhone",
-                "microsoftAuthenticatorPush",
-                "softwareOneTimePasscode"
-            ],
-            "defaultMethod": "mobilePhone",
-            "userType": "member"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#reports/authenticationMethods/userRegistrationDetails",
+  "value": [
+    {
+      "id": "86462606-fde0-4fc4-9e0c-a20eb73e54c6",
+      "userPrincipalName": "AlexW@Contoso.com",
+      "userDisplayName": "Alex Wilber",
+      "isAdmin": false,
+      "isSsprRegistered": false,
+      "isSsprEnabled": false,
+      "isSsprCapable": false,
+      "isMfaRegistered": true,
+      "isMfaCapable": true,
+      "isPasswordlessCapable": false,
+      "lastUpdatedDateTime": "2023-03-13T19:15:41.6195833Z",
+      "methodsRegistered": [
+        "microsoftAuthenticatorPush",
+        "softwareOneTimePasscode"
+      ],
+      "defaultMethod": "microsoftAuthenticatorPush",
+      "userType": "member"
+    },
+    {
+      "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
+      "userPrincipalName": "AllanD@Contoso.com",
+      "userDisplayName": "Allan Deyoung",
+      "isAdmin": false,
+      "isSsprRegistered": false,
+      "isSsprEnabled": false,
+      "isSsprCapable": false,
+      "isMfaRegistered": false,
+      "isMfaCapable": false,
+      "isPasswordlessCapable": false,
+      "lastUpdatedDateTime": "2023-03-13T19:15:41.6195833Z",
+      "methodsRegistered": [],
+      "defaultMethod": "",
+      "userType": "guest"
+    },
+    {
+      "id": "c8096958-797c-44fa-8fde-a6fb62567cf0",
+      "userPrincipalName": "BiancaP@Contoso.com",
+      "userDisplayName": "Bianca Pisani",
+      "isAdmin": false,
+      "isSsprRegistered": true,
+      "isSsprEnabled": false,
+      "isSsprCapable": false,
+      "isMfaRegistered": true,
+      "isMfaCapable": true,
+      "isPasswordlessCapable": false,
+      "lastUpdatedDateTime": "2023-03-13T19:15:41.6195833Z",
+      "methodsRegistered": [
+        "mobilePhone",
+        "microsoftAuthenticatorPush",
+        "softwareOneTimePasscode"
+      ],
+      "defaultMethod": "mobilePhone",
+      "userType": "member"
+    }
+  ]
 }
 ```
-

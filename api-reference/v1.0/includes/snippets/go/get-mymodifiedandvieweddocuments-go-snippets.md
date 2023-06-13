@@ -4,13 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.UsedRequestBuilderGetQueryParameters{
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphusers.ItemInsightsUsedRequestBuilderGetQueryParameters{
 	Orderby: [] string {"LastUsed/LastAccessedDateTime desc"},
 }
-configuration := &graphconfig.UsedRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemInsightsUsedRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

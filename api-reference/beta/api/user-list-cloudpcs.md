@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# List cloudPCs
+# List cloudPCs for user
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -85,9 +85,11 @@ GET https://graph.microsoft.com/beta/me/cloudPCs
 [!INCLUDE [sample-code](../includes/snippets/php/list-cloudpc-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-cloudpc-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 <!-- {
@@ -114,7 +116,9 @@ Content-Type: application/json
       "status": "provisioned",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
       "statusDetails": null,
-      "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
+      "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
+      "provisioningType": "dedicated",
+      "diskEncryptionState": "encryptedUsingPlatformManagedKey"
     }
   ]
 }

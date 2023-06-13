@@ -27,9 +27,10 @@ For [Azure Active Directory user flows](/azure/active-directory/external-identit
 
 |Property|Type|Description|
 |:---|:---|:---|
+|displayName|String|The language name to display. This property is read-only.|
 |id|String|The identifier of the language. This field is Language ID tag [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant and must be a documented Language ID.|
 |isEnabled|Boolean|Indicates whether the language is enabled within the user flow.|
-|displayName|String|The language name to display. This property is read-only.|
+
 
 ## Relationships
 

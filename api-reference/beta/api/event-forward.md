@@ -44,8 +44,8 @@ POST /groups/{id}/calendar/events/{id}/forward
 POST /me/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/forward
 
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/forward
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/forward
+POST /me/calendarGroups/{id}/calendars/{id}/events/{id}/forward
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/forward
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -82,9 +82,9 @@ Content-type: application/json
 {
   "ToRecipients":[
       {
-        "emailAddress": {
-          "address":"danas@contoso.onmicrosoft.com",
-          "name":"Dana Swope"
+        "EmailAddress": {
+          "Address":"danas@contoso.onmicrosoft.com",
+          "Name":"Dana Swope"
         }
       }
      ],
@@ -117,8 +117,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/event-forward-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/event-forward-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ##### Response
 Here is an example of the response.

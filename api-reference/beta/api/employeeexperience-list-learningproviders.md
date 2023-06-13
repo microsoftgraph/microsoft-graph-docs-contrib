@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|LearningProvider.Read|
+|Delegated (work or school account)|LearningProvider.Read, LearningProvider.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET /employeeExperience/learningProviders
+GET https://graph.microsoft.com/beta/employeeExperience/learningProviders
 ```
 
 # [C#](#tab/csharp)
@@ -83,9 +83,11 @@ GET /employeeExperience/learningProviders
 [!INCLUDE [sample-code](../includes/snippets/php/list-learningprovider-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-learningprovider-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 The following is an example of the response.
@@ -111,7 +113,6 @@ Content-type: application/json
             "longLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
             "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
             "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
-            "isEnabled": true,
             "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
         },
         {
@@ -121,7 +122,6 @@ Content-type: application/json
             "longLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
             "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
             "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
-            "isEnabled": true,
             "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
         }
     ]

@@ -48,7 +48,8 @@ If successful, this method returns a `201 Created` response code and a [bookingS
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name" : "bookingbusinesspoststaffmembers"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{id}/staffMembers
@@ -129,7 +130,8 @@ Content-type: application/json
                 }
             ]
         }
-    ]
+    ],
+    "isEmailNotificationEnabled": false
 }
 ```
 
@@ -202,7 +204,8 @@ Content-type: application/json
                 }
             ]
         }
-    ]
+    ],
+    "isEmailNotificationEnabled": false
 }
 ```
 

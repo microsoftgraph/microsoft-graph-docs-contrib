@@ -1,7 +1,7 @@
 ---
 title: "List riskDetections"
 description: "Get a list of the riskDetection objects and their properties."
-author: "ebasseri"
+author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -87,9 +87,11 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections
 [!INCLUDE [sample-code](../includes/snippets/php/get-riskdetection-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-riskdetection-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewProvisionOnDemandPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphserviceprincipals.NewProvisionOnDemandPostRequestBody()
 
 
 synchronizationJobApplicationParameters := graphmodels.NewSynchronizationJobApplicationParameters()
@@ -48,13 +57,13 @@ subjects := []graphmodels.SynchronizationJobSubjectable {
 }
 synchronizationJobApplicationParameters.SetSubjects(subjects)
 
-parameters := []graphmodels.SynchronizationJobApplicationParametersable {
+parameters := []graphserviceprincipals.SynchronizationJobApplicationParametersable {
 	synchronizationJobApplicationParameters,
 
 }
 requestBody.SetParameters(parameters)
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").ProvisionOnDemand().Post(context.Background(), requestBody, nil)
+result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().ByJobId("synchronizationJob-id").ProvisionOnDemand().Post(context.Background(), requestBody, nil)
 
 
 ```

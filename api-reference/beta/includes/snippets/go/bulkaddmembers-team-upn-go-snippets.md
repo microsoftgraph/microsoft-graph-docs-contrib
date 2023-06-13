@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewAddPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphteams.NewAddPostRequestBody()
 
 
 conversationMember := graphmodels.NewConversationMember()
@@ -16,7 +25,7 @@ roles := []string {
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"user@odata.bind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')", 
+	"odataBind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')", 
 }
 conversationMember.SetAdditionalData(additionalData)
 conversationMember1 := graphmodels.NewConversationMember()
@@ -26,18 +35,18 @@ roles := []string {
 }
 conversationMember1.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"user@odata.bind" : "https://graph.microsoft.com/beta/users('alex@contoso.com')", 
+	"odataBind" : "https://graph.microsoft.com/beta/users('alex@contoso.com')", 
 }
 conversationMember1.SetAdditionalData(additionalData)
 
-values := []graphmodels.Objectable {
+values := []graphteams.Objectable {
 	conversationMember,
 	conversationMember1,
 
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.TeamsById("team-id").Members().Add().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Members().Add().Post(context.Background(), requestBody, nil)
 
 
 ```

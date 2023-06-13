@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph Windows Updates enumeration values"
 description: "Microsoft Graph Windows Updates enumeration values"
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: enumTypes
@@ -41,14 +41,6 @@ Namespace: microsoft.graph.windowsUpdates
 |paused|
 |faulted|
 |archived|
-|unknownFutureValue|
-
-### equivalentContentOption values 
-
-|Member|
-|:---|
-|none|
-|latestSecurity|
 |unknownFutureValue|
 
 ### monitoringAction values 
@@ -107,6 +99,7 @@ Namespace: microsoft.graph.windowsUpdates
 |feature|
 |quality|
 |unknownFutureValue|
+|driver|
 
 <!--
 {

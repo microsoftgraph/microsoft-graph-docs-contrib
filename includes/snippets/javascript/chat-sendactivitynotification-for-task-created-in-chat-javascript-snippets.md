@@ -13,7 +13,7 @@ const client = Client.init(options);
 const sendActivityNotification = {
     topic: {
         source: 'entityUrl',
-        value: 'https://graph.microsoft.com/beta/chats/{chatId}'
+        value: 'https://graph.microsoft.com/v1.0/chats/{chatId}'
     },
     activityType: 'taskCreated',
     previewText: {
@@ -32,7 +32,6 @@ const sendActivityNotification = {
 };
 
 await client.api('/chats/{chatId}/sendActivityNotification')
-	.version('beta')
 	.post(sendActivityNotification);
 
 ```

@@ -47,9 +47,9 @@ If successful, this method returns a `200 OK` response code and a [contactMergeS
 
 ## Examples
 
-The following is an example of the request to get **contactMergeSuggestions** settings for the user.
-
 ### Request
+
+The following is an example of the request to get **contactMergeSuggestions** settings for the user.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,11 +85,16 @@ GET https://graph.microsoft.com/beta/me/settings/contactMergeSuggestions
 [!INCLUDE [sample-code](../includes/snippets/php/get-contactmergesuggestions-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-contactmergesuggestions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -106,4 +111,3 @@ Content-Type: application/json
     "isEnabled": true
 }
 ```
-

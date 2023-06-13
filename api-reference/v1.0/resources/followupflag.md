@@ -3,7 +3,7 @@ title: "followupFlag resource type"
 description: "Allows setting a flag in an item for the user to follow up on later. "
 ms.localizationpriority: medium
 author: "abheek-das"
-ms.prod: ""
+ms.prod: outlook
 doc_type: resourcePageType
 ---
 

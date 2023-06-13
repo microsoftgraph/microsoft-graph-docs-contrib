@@ -36,8 +36,8 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/accept
 POST /me/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/accept
 
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/accept
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/accept
+POST /me/calendarGroups/{id}/calendars/{id}/events/{id}/accept
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/accept
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -101,8 +101,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/event-accept-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/event-accept-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ##### Response
 Here is an example of the response.

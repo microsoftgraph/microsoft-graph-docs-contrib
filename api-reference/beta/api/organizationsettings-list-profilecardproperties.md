@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties
+GET /organization/{organizationId}/settings/profileCardProperties
 ```
 
 ## Optional query parameters
@@ -94,8 +94,11 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 [!INCLUDE [sample-code](../includes/snippets/php/get-profilecardproperties-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-profilecardproperties-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

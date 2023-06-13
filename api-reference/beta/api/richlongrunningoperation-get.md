@@ -84,9 +84,11 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/operations/{richLongRunningO
 [!INCLUDE [sample-code](../includes/snippets/php/get-richlongrunningoperation-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-richlongrunningoperation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

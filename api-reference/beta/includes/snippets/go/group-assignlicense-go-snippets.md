@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewAssignLicensePostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphgroups.NewAssignLicensePostRequestBody()
 
 
 assignedLicense := graphmodels.NewAssignedLicense()
@@ -31,7 +40,7 @@ assignedLicense1.SetDisabledPlans(disabledPlans)
 skuId := uuid.MustParse("c7df2760-2c81-4ef7-b578-5b5392b571df")
 assignedLicense1.SetSkuId(&skuId) 
 
-addLicenses := []graphmodels.AssignedLicenseable {
+addLicenses := []graphgroups.AssignedLicenseable {
 	assignedLicense,
 	assignedLicense1,
 
@@ -42,7 +51,7 @@ removeLicenses := []string {
 }
 requestBody.SetRemoveLicenses(removeLicenses)
 
-result, err := graphClient.GroupsById("group-id").AssignLicense().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Groups().ByGroupId("group-id").AssignLicense().Post(context.Background(), requestBody, nil)
 
 
 ```

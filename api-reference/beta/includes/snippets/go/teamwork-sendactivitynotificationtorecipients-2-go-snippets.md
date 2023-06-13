@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewSendActivityNotificationToRecipientsPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphteamwork "github.com/microsoftgraph/msgraph-beta-sdk-go/teamwork"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphteamwork.NewSendActivityNotificationToRecipientsPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
 source := graphmodels.TEXT_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
@@ -30,7 +39,7 @@ keyValuePair.SetName(&name)
 value := "6788662"
 keyValuePair.SetValue(&value) 
 
-templateParameters := []graphmodels.KeyValuePairable {
+templateParameters := []graphteamwork.KeyValuePairable {
 	keyValuePair,
 
 }
@@ -53,7 +62,7 @@ additionalData := map[string]interface{}{
 }
 teamworkNotificationRecipient2.SetAdditionalData(additionalData)
 
-recipients := []graphmodels.TeamworkNotificationRecipientable {
+recipients := []graphteamwork.TeamworkNotificationRecipientable {
 	teamworkNotificationRecipient,
 	teamworkNotificationRecipient1,
 	teamworkNotificationRecipient2,

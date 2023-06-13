@@ -17,11 +17,11 @@ This resource is used to represent the entity that is being invited to a group c
 
 | Property                           | Type                          | Description                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
+| hidden                             | Boolean                       | Optional. Whether to hide the participant from the roster. |
 | identity                           | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this invitation.                   |
 | participantId                      | String                        | Optional. The ID of the target participant.                                          |
-| replacesCallId                     | String                        | Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully. |
 | removeFromDefaultAudioRoutingGroup | Boolean                       | Optional. Whether to remove them from the main mixer. |
-| hidden                             | Boolean                       | Optional. Whether to hide the participant from the roster. |
+| replacesCallId                     | String                        | Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully. |
 
 ## JSON representation
 

@@ -1,7 +1,7 @@
 ---
 title: "attendanceInterval resource type"
 description: "Contains information associated with an attendance interval in an attendanceRecord."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -38,8 +38,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+    "durationInSeconds": "Int32",
     "joinDateTime": "String (timestamp)",
-    "leaveDateTime": "String (timestamp)",
-    "durationInSeconds": "Int32"
+    "leaveDateTime": "String (timestamp)"
 }
 ```
