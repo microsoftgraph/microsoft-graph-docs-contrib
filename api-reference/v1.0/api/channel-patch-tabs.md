@@ -69,7 +69,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamTab"
+  "@odata.type": "microsoft.graph.teamsTab"
 } -->
 
 ```http
