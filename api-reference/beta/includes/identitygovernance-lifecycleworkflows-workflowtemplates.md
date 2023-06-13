@@ -16,6 +16,8 @@ ms.topic: include
 |---------------------------------|--------------------|
 | Onboard pre-hire employee       | Joiner             |
 | Onboard new hire employee       | Joiner             |
+| Post-Onboarding new hire employee       | Joiner             |
+| Real-time employee change       | Mover             |
 | Real-time employee termination  | Leaver             |
 | Pre-Offboarding of an employee  | Leaver             |
 | Offboard an employee            | Leaver             |
