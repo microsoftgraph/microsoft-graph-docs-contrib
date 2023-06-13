@@ -31,7 +31,7 @@ Reference base type [onlineMeeting](../resources/onlinemeeting.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of the virtual event session. Inherited from [microsoft.graph.onlineMeeting](../resources/onlinemeeting.md). For an example of how to get attendanceReports, see [List meetingAttendanceReports API](../api/meetingattendancereport-list.md) |
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of the virtual event session. Inherited from [microsoft.graph.onlineMeeting](../resources/onlinemeeting.md).|
 
 ## JSON representation
 
@@ -101,3 +101,6 @@ The following is a JSON representation of the resource.
   "allowParticipantsToChangeName": "Boolean"
 }
 ```
+
+## See also
+[List meetingAttendanceReports API](../api/meetingattendancereport-list.md)
