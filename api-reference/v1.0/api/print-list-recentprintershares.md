@@ -71,6 +71,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('74157b7f-9fa7-41b6-9ee9-97c382ba1189')/print/recentPrinterShares",
     "value": [
@@ -84,4 +85,14 @@ Content-type: application/json
         }
   ]
 }
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2023-06-12 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List printer shares",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
 ```
