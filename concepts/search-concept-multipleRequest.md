@@ -12,7 +12,7 @@ Now you can pass multiple search requests in a request body with the Microsoft S
 
 ## Supported entity types
 
-Supported entity types for passing multiple search requests in a request body are: `site`, `drive`, `driveItem`, `list`,`listItem`,`externalItem`, `bookmark`,`acronym`, `qna`. And in  the same time, the entity types in the same request block should follow the interleaving supported entity type relationships/combinations as defined in [interleaving search](search-concept-interleaving.md).
+The supported entity types for including multiple search requests in a request body are: `site`, `drive`, `driveItem`, `list`,`listItem`,`externalItem`, `bookmark`,`acronym`, `qna`. Entity types within the same request block should adhere to the supported entity type relationships and combinations defined in the [interleaving search](search-concept-interleaving.md) topic.
 
 ## Examples
 
