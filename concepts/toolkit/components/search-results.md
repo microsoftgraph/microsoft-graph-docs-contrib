@@ -9,7 +9,7 @@ author: sebastienlevert
 
 You can use `mgt-search-results` to make search queries to Microsoft Graph directly in your HTML. The component provides some default result type renderings but also offers full customization of the templatez.
 
-[!INCLUDE [preview-disclaimer](includes/preview-disclaimer.md)]
+[!INCLUDE [preview-disclaimer](./includes/preview-disclaimer.md)]
 
 ## Example
 
