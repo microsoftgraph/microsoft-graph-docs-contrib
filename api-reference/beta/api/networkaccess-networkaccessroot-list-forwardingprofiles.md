@@ -41,9 +41,11 @@ GET /networkAccess/forwardingProfiles/
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-/networkAccess/forwardingProfiles?$expand=policies	
-/networkAccess/forwardingProfiles?$expand=policies($expand=policy)	
+This method supports the $expand [OData query parameters](https://learn.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+|Pattern|Syntax|Notes
+|:---|:---|:---|
+|expand|/networkAccess/forwardingProfiles/{id}/policies?$expand=policy|first level|
+|expand|/networkAccess/forwardingProfiles/{id}/policies?$expand=policy($expand=policyRules)|second level|
 
 ## Request headers
 |Name|Description|
