@@ -4,26 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Drives/Item/Items/Item/Workbook/Functions/Vlookup"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("workbook-session-id", "{session-id}")
 
-configuration := &graphconfig.DriveItemItemItemWorkbookFunctionsVlookupRequestBuilderPostRequestConfiguration{
+configuration := &graphdrives.DriveItemItemItemWorkbookFunctionsVlookupRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewVlookupPostRequestBody()
+requestBody := graphdrives.NewVlookupPostRequestBody()
 lookupValue := "pear"
 requestBody.SetLookupValue(&lookupValue) 
 tableArray := graphmodels.NewJson()
@@ -37,7 +37,7 @@ requestBody.SetColIndexNum(&colIndexNum)
 rangeLookup := false
 requestBody.SetRangeLookup(&rangeLookup) 
 
-result, err := graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().Functions().Vlookup().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Functions().Vlookup().Post(context.Background(), requestBody, configuration)
 
 
 ```

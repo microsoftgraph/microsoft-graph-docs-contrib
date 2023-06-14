@@ -113,6 +113,10 @@ DELETE https://graph.microsoft.com/v1.0/me/authentication/phoneMethods/3179e48a-
 [!INCLUDE [sample-code](../includes/snippets/php/delete-phoneauthenticationmethod-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-phoneauthenticationmethod-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

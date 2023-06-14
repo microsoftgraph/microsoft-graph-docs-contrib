@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationAssignmentDefaults()
@@ -23,7 +23,7 @@ requestBody.SetAddToCalendarAction(&addToCalendarAction)
 notificationChannelUrl := "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 requestBody.SetNotificationChannelUrl(&notificationChannelUrl) 
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentDefaults().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").AssignmentDefaults().Patch(context.Background(), requestBody, nil)
 
 
 ```

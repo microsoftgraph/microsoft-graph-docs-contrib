@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Drives/Item/Items/Item/Copy"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCopyPostRequestBody()
+requestBody := graphdrives.NewCopyPostRequestBody()
 parentReference := graphmodels.NewItemReference()
 path := "/drive/root:/Documents"
 parentReference.SetPath(&path) 
@@ -23,7 +24,7 @@ requestBody.SetParentReference(parentReference)
 name := "Copy of LargeFolder1"
 requestBody.SetName(&name) 
 
-result, err := graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Copy().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Copy().Post(context.Background(), requestBody, nil)
 
 
 ```

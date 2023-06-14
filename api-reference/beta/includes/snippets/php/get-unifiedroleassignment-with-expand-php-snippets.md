@@ -15,7 +15,7 @@ $queryParameters->expand = ["roleDefinition","principals","directoryScopes"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->roleManagement()->deviceManagement()->roleAssignmentsById('unifiedRoleAssignmentMultiple-id')->get($requestConfiguration);
+$result = $graphServiceClient->roleManagement()->deviceManagement()->roleAssignments()->byRoleAssignmentId('unifiedRoleAssignmentMultiple-id')->get($requestConfiguration);
 
 
 ```

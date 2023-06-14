@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/teamwork/deletedTeams
 [!INCLUDE [sample-code](../includes/snippets/php/list-deletedteam-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-deletedteam-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

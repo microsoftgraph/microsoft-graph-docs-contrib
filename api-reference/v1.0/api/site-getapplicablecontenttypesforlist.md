@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/v1.0/sites/{siteId}/getApplicableContentTypesFor
 [!INCLUDE [sample-code](../includes/snippets/php/site-getapplicablecontenttypesforlist-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/site-getapplicablecontenttypesforlist-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

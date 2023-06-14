@@ -89,6 +89,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
 [!INCLUDE [sample-code](../includes/snippets/php/group-removefavorite-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-removefavorite-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

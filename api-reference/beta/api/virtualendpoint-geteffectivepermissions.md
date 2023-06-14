@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/getEffecti
 [!INCLUDE [sample-code](../includes/snippets/php/virtualendpoint-geteffectivepermissions-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/virtualendpoint-geteffectivepermissions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

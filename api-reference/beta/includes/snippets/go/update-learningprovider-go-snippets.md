@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewLearningProvider()
@@ -29,7 +29,7 @@ requestBody.SetLongLogoWebUrlForLightTheme(&longLogoWebUrlForLightTheme)
 loginWebUrl := "https://www.linkedin.com/learning-login/teams"
 requestBody.SetLoginWebUrl(&loginWebUrl) 
 
-result, err := graphClient.EmployeeExperience().LearningProvidersById("learningProvider-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

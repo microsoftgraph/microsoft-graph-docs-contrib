@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -63,7 +63,7 @@ qi := "qi-value"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").Put(context.Background(), requestBody, nil)
+graphClient.TrustFramework().KeySets().ByKeySetId("trustFrameworkKeySet-id").Put(context.Background(), requestBody, nil)
 
 
 ```

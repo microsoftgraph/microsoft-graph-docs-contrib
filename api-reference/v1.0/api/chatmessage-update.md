@@ -147,6 +147,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/chatmessagepatchpolicyviolationall-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/chatmessagepatchpolicyviolationall-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -184,7 +188,8 @@ The following is an example of the request to update the properties on a Microso
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "patch_chatMessage_1"
+  "name": "patch_chatMessage_1",
+  "sampleKeys":["e1234567-e123-4276-55555-6232b0e3a89a", "a7654321-e321-0000-0000-123b0e3a00a", "19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype"]
 }-->
 
 ```http
@@ -213,7 +218,8 @@ Content-Type: application/json
   },
   "attachments": [],
   "mentions": [],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
@@ -241,6 +247,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/patch-chatmessage-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -265,7 +275,8 @@ The following is an example of the request to update the mentions on a Microsoft
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "patch_chatMessage_2"
+  "name": "patch_chatMessage_2",
+  "sampleKeys": ["e1234567-e123-4276-55555-6232b0e3a89a", "a7654321-e321-0000-0000-123b0e3a00a", "19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype"]
 }-->
 
 ```http
@@ -324,7 +335,8 @@ Content-Type: application/json
       }
     }
   ],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
@@ -352,6 +364,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/patch-chatmessage-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -375,7 +391,8 @@ The following is an example of the request to update the attachments on a Micros
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "patch_chatMessage_3"
+  "name": "patch_chatMessage_3",
+  "sampleKeys": ["e1234567-e123-4276-55555-6232b0e3a89a", "a7654321-e321-0000-0000-123b0e3a00a", "19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype"]
 }-->
 
 ```http
@@ -421,7 +438,8 @@ Content-Type: application/json
     }
   ],
   "mentions": [],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
@@ -449,6 +467,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/patch-chatmessage-3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -474,7 +496,8 @@ The following is an example of the request to update the reactions property on a
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "patch_chatMessage_4"
+  "name": "patch_chatMessage_4",
+  "sampleKeys": ["19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype", "a7654321-e321-0000-0000-123b0e3a00a", "e1234567-e123-4276-55555-6232b0e3a89a"]
 }-->
 
 ```http
@@ -625,6 +648,136 @@ Content-Type: application/json
         }
       }
     }
+  ],
+  "messageHistory": [
+    {
+      "modifiedDateTime": "2018-10-21T08:10:30.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "angry",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "f1b66449-b46d-49b0-9c3c-53c10a5c818e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:32.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "laugh",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T02:17:14.67Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "like",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "f1b66449-b46d-49b0-9c3c-53c10a5c818e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T02:34:40.3Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "like",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "4c9041b7-449a-40f7-8855-56da239b9fd1",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:25.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "like",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:31.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "heart",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:33.489Z",
+      "actions": "reactionAdded",
+      "reaction": {
+        "reactionType": "sad",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    },
+    {
+      "modifiedDateTime": "2018-10-21T08:10:34.489Z",
+      "actions": "surprised",
+      "reaction": {
+        "reactionType": "sad",
+        "user": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+          }
+        }
+      }
+    }
   ]
 }
 ```
@@ -651,6 +804,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/patch-chatmessage-4-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

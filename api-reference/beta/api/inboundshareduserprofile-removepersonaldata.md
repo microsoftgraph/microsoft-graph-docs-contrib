@@ -91,6 +91,10 @@ POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2
 [!INCLUDE [sample-code](../includes/snippets/php/inboundshareuserprofile-removepersonaldata-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/inboundshareuserprofile-removepersonaldata-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -55,7 +55,7 @@ The following example creates a task folder called Volunteer in the default task
   "name": "create_outlooktaskfolder_from_outlookuser"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/outlook/taskfolders 
+POST https://graph.microsoft.com/beta/me/outlook/taskFolders 
 Content-type: application/json
 
 {
@@ -85,6 +85,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-outlooktaskfolder-from-outlookuser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-outlooktaskfolder-from-outlookuser-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

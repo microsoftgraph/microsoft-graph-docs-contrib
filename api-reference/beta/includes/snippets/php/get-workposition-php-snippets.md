@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->me()->profile()->positionsById('workPosition-id')->get();
+$result = $graphServiceClient->me()->profile()->positions()->byPositionId('workPosition-id')->get();
 
 
 ```

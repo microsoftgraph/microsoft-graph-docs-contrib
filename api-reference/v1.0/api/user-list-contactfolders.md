@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders
 [!INCLUDE [sample-code](../includes/snippets/php/get-contactfolders-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-contactfolders-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

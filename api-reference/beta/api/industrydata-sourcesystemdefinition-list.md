@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/external/industryData/sourceSystems
 [!INCLUDE [sample-code](../includes/snippets/php/list-sourcesystemdefinition-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-sourcesystemdefinition-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

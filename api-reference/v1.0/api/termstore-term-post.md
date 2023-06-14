@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 } -->
 
 ``` http
-POST sites/{site-id}/termStore/sets/{set-id}/children
-POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
+POST /sites/{site-id}/termStore/sets/{set-id}/children
+POST /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 ```
 
 ## Request headers
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-term-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-term-from--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

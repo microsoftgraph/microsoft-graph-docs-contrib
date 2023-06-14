@@ -81,6 +81,10 @@ workbook-session-id: {session-id}
 [!INCLUDE [sample-code](../includes/snippets/php/close-workbook-session-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/close-workbook-session-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 Note that workbook-session-id header is required.

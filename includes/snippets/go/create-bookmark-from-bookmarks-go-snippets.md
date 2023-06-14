@@ -4,25 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//search"
+	  graphmodelssearch "github.com/microsoftgraph/msgraph-beta-sdk-go/models/search"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewBookmark()
+requestBody := graphmodelssearch.NewBookmark()
 displayName := "Contoso Install Site"
 requestBody.SetDisplayName(&displayName) 
 webUrl := "http://www.contoso.com/"
 requestBody.SetWebUrl(&webUrl) 
 description := "Try or buy Contoso for Home or Business and view product information"
 requestBody.SetDescription(&description) 
-keywords := graphmodels.NewAnswerKeyword()
+keywords := graphmodelssearch.NewAnswerKeyword()
 keywords := []string {
 	"Contoso",
 	"install",

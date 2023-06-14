@@ -92,6 +92,10 @@ DELETE https://graph.microsoft.com/beta/external/industryData/dataConnectors/8c0
 [!INCLUDE [sample-code](../includes/snippets/php/delete-azuredatalakeconnector-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-azuredatalakeconnector-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

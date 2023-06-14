@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes
 [!INCLUDE [sample-code](../includes/snippets/php/list-retentioneventtype-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-retentioneventtype-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

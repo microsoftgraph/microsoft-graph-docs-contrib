@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/1-0b13154b-d92d-46
 [!INCLUDE [sample-code](../includes/snippets/php/get-sectiongroup-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-sectiongroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

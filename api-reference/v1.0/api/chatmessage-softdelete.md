@@ -78,7 +78,8 @@ If successful, this action returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chatmessagethis-softdelete1"
+  "name": "chatmessagethis-softdelete1",
+  "sampleKeys": ["8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ar", "19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2", "1649864053377"]
 }
 -->
 ``` http
@@ -109,6 +110,10 @@ POST https://graph.microsoft.com/v1.0/users/8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ar
 [!INCLUDE [sample-code](../includes/snippets/php/chatmessagethis-softdelete1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/chatmessagethis-softdelete1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -129,7 +134,8 @@ HTTP/1.1 204 No Content
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chatmessagethis-softdelete2"
+  "name": "chatmessagethis-softdelete2",
+  "sampleKeys": ["172b0cce-e65d-44ce-9a49-91d9f2e8593a", "19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2", "1649864053377"]
 }
 -->
 ``` http
@@ -160,6 +166,10 @@ POST https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 [!INCLUDE [sample-code](../includes/snippets/php/chatmessagethis-softdelete2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/chatmessagethis-softdelete2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -180,7 +190,8 @@ HTTP/1.1 204 No Content
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chatmessagethis-softdelete3"
+  "name": "chatmessagethis-softdelete3",
+  "sampleKeys": ["172b0cce-e65d-44ce-9a49-91d9f2e8593a", "19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2", "1649864053377", "1649852161658"]
 }
 -->
 ``` http
@@ -209,6 +220,10 @@ POST https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/chatmessagethis-softdelete3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/chatmessagethis-softdelete3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

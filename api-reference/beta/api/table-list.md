@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables
 [!INCLUDE [sample-code](../includes/snippets/php/get-tablecollection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-tablecollection-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

@@ -7,21 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	DisplayName = "Books"
-	Columns = @(
+	displayName = "Books"
+	columns = @(
 		@{
-			Name = "Author"
-			Text = @{
+			name = "Author"
+			text = @{
 			}
 		}
 		@{
-			Name = "PageCount"
-			Number = @{
+			name = "PageCount"
+			number = @{
 			}
 		}
 	)
-	List = @{
-		Template = "genericList"
+	list = @{
+		template = "genericList"
 	}
 }
 

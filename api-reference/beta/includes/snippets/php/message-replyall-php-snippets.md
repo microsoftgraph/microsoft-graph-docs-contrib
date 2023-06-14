@@ -33,7 +33,7 @@ $requestBody->setComment('Please take a look at the attached guidelines before y
 
 
 
-$graphServiceClient->me()->messagesById('message-id')->replyAll()->post($requestBody);
+$graphServiceClient->me()->messages()->byMessageId('message-id')->replyAll()->post($requestBody);
 
 
 ```

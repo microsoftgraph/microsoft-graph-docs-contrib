@@ -16,7 +16,7 @@ $requestBody->setValues([[1,2,3,],[4,5,6,],]);
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->tablesById('workbookTable-id')->rows()->add()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->tables()->byTableId('workbookTable-id')->rows()->add()->post($requestBody);
 
 
 ```

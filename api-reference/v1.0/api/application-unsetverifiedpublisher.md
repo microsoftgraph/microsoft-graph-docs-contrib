@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/v1.0/applications/{id}/unsetVerifiedPublisher
 [!INCLUDE [sample-code](../includes/snippets/php/application-unsetverifiedpublisher-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/application-unsetverifiedpublisher-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

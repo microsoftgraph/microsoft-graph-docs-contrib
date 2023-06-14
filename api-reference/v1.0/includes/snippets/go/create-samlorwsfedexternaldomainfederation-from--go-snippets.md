@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -36,7 +36,7 @@ id := "contoso.com"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Directory().FederationConfigurationsById("identityProviderBase-id").Post(context.Background(), requestBody, nil)
+graphClient.Directory().FederationConfigurations().ByFederationConfigurationId("identityProviderBase-id").Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  graphteams "github.com/microsoftgraph/msgraph-sdk-go/teams"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer {token}")
 
-configuration := &graphconfig.TeamItemScheduleOpenShiftsRequestBuilderPostRequestConfiguration{
+configuration := &graphteams.TeamItemScheduleOpenShiftsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewOpenShift()
@@ -86,7 +86,7 @@ lastModifiedBy.SetConversation(&conversation)
 lastModifiedBy.SetAdditionalData(additionalData)
 requestBody.SetLastModifiedBy(lastModifiedBy)
 
-result, err := graphClient.TeamsById("team-id").Schedule().OpenShifts().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().OpenShifts().Post(context.Background(), requestBody, configuration)
 
 
 ```

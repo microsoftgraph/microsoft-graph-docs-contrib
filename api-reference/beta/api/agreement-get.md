@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/0e
 [!INCLUDE [sample-code](../includes/snippets/php/get-agreement-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-agreement-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -144,6 +148,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/09
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-agreement-files-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-agreement-files-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

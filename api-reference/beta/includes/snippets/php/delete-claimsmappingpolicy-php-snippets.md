@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->policies()->claimsMappingPoliciesById('claimsMappingPolicy-id')->delete();
+$graphServiceClient->policies()->claimsMappingPolicies()->byClaimsMappingPolicieId('claimsMappingPolicy-id')->delete();
 
 
 ```

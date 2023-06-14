@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/beta/directory/recommendations
 [!INCLUDE [sample-code](../includes/snippets/php/list-recommendation-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-recommendation-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -205,6 +209,10 @@ GET https://graph.microsoft.com/beta/directory/recommendations?$filter=recommend
 [!INCLUDE [sample-code](../includes/snippets/php/get-recommendation-e2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-recommendation-e2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -307,6 +315,10 @@ GET https://graph.microsoft.com/beta/directory/recommendations?$filter=id eq '0c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-recommendation-e3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-recommendation-e3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
