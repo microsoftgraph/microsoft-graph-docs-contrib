@@ -145,10 +145,16 @@ Content-Type: application/json
             "status": "resolved",
             "displayName": "Frontline Cloud PCs max concurrency limit reached",
             "alertImpact": {
-                "details": {
-                    "Windows 365 Frontline 2 vCPU/8GB/128GB",
-                    "Windows 365 Frontline 4 vCPU/16GB/256GB",
-                },
+                "alertImpactDetails": [
+                    {
+                        "key": "Windows 365 Frontline 2 vCPU/8GB/128GB",
+                        "value": "30"
+                    },
+                    {
+                        "key": "Windows 365 Frontline 4 vCPU/16GB/256GB",
+                        "value": "10"
+                    }
+                ],
                 "value": 50
                 "aggregationType": "percentage",
             },
