@@ -19,10 +19,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccess.Read.All|
-|Delegated (personal Microsoft account)| Not supported|
-|Application|NetworkAccess.Read.All|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
+To read the configuration, the calling user must also be in one of the following [Azure AD roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference):
+
+* Global reader
+* Global Secure Access Administrator
+* Security Administrator
+* Global Administrator
 ## HTTP request
 
 <!-- {
