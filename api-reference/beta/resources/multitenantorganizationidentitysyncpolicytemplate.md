@@ -27,6 +27,7 @@ Each tenant has its own templates. This optional template can be used by any ten
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|templateApplicationLevel|templateApplicationLevel|**TODO: Add Description**.The possible values are: `none`, `newPartners`, `existingPartners`, `unknownFutureValue`.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Defines whether users can be synchronized from the partner tenant. Key.|
 
 ## Relationships
@@ -46,7 +47,8 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.multiTenantOrganizationIdentitySyncPolicyTemplate",
   "userSyncInbound": {
     "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
-  }
+  },
+  "templateApplicationLevel": "String"
 }
 ```
 

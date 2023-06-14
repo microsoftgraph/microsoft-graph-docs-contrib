@@ -33,6 +33,7 @@ Each tenant has its own templates. This optional template can be used by any ten
 |b2bDirectConnectInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner-specific configuration for users from other organizations accessing your resources via Azure B2B direct connect.|
 |b2bDirectConnectOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect.|
 |inboundTrust|[crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md)|Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure AD organizations.|
+|templateApplicationLevel|templateApplicationLevel|**TODO: Add Description**.The possible values are: `none`, `newPartners`, `existingPartners`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -66,7 +67,8 @@ The following is a JSON representation of the resource.
   },
   "automaticUserConsentSettings": {
     "@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"
-  }
+  },
+  "templateApplicationLevel": "String"
 }
 ```
 

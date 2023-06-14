@@ -50,7 +50,7 @@ PATCH /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentit
 |Property|Type|Description|
 |:---|:---|:---|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines whether users can be synchronized from the partner tenant. `false` causes any current user synchronization from the source tenant to the target tenant to stop. This property has no impact on existing users who have already been synchronized.|
-
+|templateApplicationLevel|templateApplicationLevel|**TODO: Add Description**. The possible values are: `none`, `newPartners`, `existingPartners`, `unknownFutureValue`. Required.|
 
 
 ## Response
@@ -75,7 +75,8 @@ Content-Type: application/json
 {
     "userSyncInbound": {
         "isSyncAllowed": true
-    }
+    },
+  "templateApplicationLevel": "String"
 }
 ```
 

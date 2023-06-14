@@ -56,7 +56,7 @@ PATCH /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartner
 |b2bDirectConnectOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect. Optional.|
 |b2bDirectConnectInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner-specific configuration for users from other organizations accessing your resources via Azure AD B2B direct connect. Optional.|
 |automaticUserConsentSettings|[inboundOutboundPolicyConfiguration](../resources/inboundoutboundpolicyconfiguration.md)|Determines the partner-specific configuration for automatic user consent settings. Optional.|
-
+|templateApplicationLevel|templateApplicationLevel|**TODO: Add Description**. The possible values are: `none`, `newPartners`, `existingPartners`, `unknownFutureValue`. Required.|
 
 
 ## Response
@@ -87,7 +87,8 @@ Content-Type: application/json
     "automaticUserConsentSettings": {
         "inboundAllowed": true,
         "outboundAllowed": true
-    }
+    },
+  "templateApplicationLevel": "String"
 }
 
 ```

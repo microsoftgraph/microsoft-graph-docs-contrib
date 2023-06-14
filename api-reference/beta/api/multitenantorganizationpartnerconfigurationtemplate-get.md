@@ -94,7 +94,8 @@ Content-Type: application/json
     "automaticUserConsentSettings": {
         "inboundAllowed": null,
         "outboundAllowed": null
-    }
+    },
+    "templateApplicationLevel": "String"
 }
 ```
 
@@ -119,7 +120,8 @@ Content-Type: application/json
     "automaticUserConsentSettings": {
         "inboundAllowed": true,
         "outboundAllowed": true
-    }
+    },
+    "templateApplicationLevel": "String"
 }
 ```
 
