@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.page"
+  "@odata.type": "microsoft.graph.onenote.page"
 } -->
 ```http
 HTTP/1.1 200 OK
