@@ -56,8 +56,8 @@ If successful, this method returns the `201 Created` response code if the activi
 The following is an example of the request.
 
 <!-- {
-    "blockType": "ignored",
-    "name": "upsert_activity"
+    "blockType": "request",
+    "name": "upsert_activity_1"
 } -->
 
 ```http
@@ -108,7 +108,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "response",
     "truncated": true,
     "@odata.type": "microsoft.graph.userActivity"
 } -->
@@ -168,8 +168,8 @@ This example creates a new activity and a history item for that activity in one 
 The following is an example of the request.
 
 <!-- {
-    "blockType": "ignored",
-    "name": "upsert_activity"
+    "blockType": "request",
+    "name": "upsert_activity_2"
 } -->
 
 ```http
@@ -225,7 +225,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "response",
     "truncated": true,
     "@odata.type": "microsoft.graph.userActivity"
 } -->
