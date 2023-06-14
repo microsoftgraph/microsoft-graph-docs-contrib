@@ -139,6 +139,24 @@ Content-Type: application/json
                 "value": 100,
                 "aggregationType": "count"
             }
+        },
+        {
+            "id": "6e493630-3561-409f-b0e3-64d8483507d0",
+            "status": "resolved",
+            "displayName": "Frontline Cloud PCs max concurrency limit reached",
+            "alertImpact": {
+                "details": {
+                    "Windows 365 Frontline 2 vCPU/8GB/128GB",
+                    "Windows 365 Frontline 4 vCPU/16GB/256GB",
+                },
+                "value": 50
+                "aggregationType": "percentage",
+            },
+            "alertRuleTemplate": "cloudPcFrontlineInsufficientLicensesScenario",
+            "alertRuleId": "e85c75bb-3d4e-4f47-84d0-d96a6558c9e3",
+            "severity": "critical",
+            "detectedDateTimeUTC": "2021-10-23T08:41:01.0068946+08:00",
+            "resolvedDateTimeUTC": "2021-10-23T08:43:31.7322847+08:00",
         }
     ]
 }
