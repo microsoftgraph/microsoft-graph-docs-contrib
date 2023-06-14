@@ -28,37 +28,7 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 ### [TypeScript](#tab/typeScript)
 
-```typescript
-// Makes request to fetch mails list.
-let response: PageCollection = await client
-  .api("/me/messages?$top=10&$select=sender,subject,body")
-  .header('Prefer', 'outlook.body-content-type="text"')
-  .get();
-
-// A callback function to be called for every item in the collection.
-// This call back should return boolean indicating whether not to
-// continue the iteration process.
-let callback: PageIteratorCallback = (data) => {
-  console.log(data.subject);
-  return true;
-};
-
-// A set of request options to be applied to
-// all subsequent page requests
-let requestOptions: GraphRequestOptions = {
-  // Re-add the header to subsequent requests
-  headers: {
-    'Prefer': 'outlook.body-content-type="text"'
-  }
-};
-
-// Creating a new page iterator instance with client a graph client
-// instance, page collection response from request and callback
-let pageIterator = new PageIterator(client, response, callback, requestOptions);
-
-// This iterates the collection until the nextLink is drained out.
-await pageIterator.iterate();
-```
+:::code language="typescript" source="./snippets/dotnet/src/snippets/paging.ts" id="PagingSnippet":::
 
 ### [Java](#tab/java)
 
@@ -103,36 +73,7 @@ Some scenarios require stopping the iteration process in order to perform other 
 
 ### [TypeScript](#tab/typeScript)
 
-```typescript
-let count: number = 0;
-let pauseAfter: number = 25;
-
-let response: PageCollection = await client
-  .api('/me/messages?$top=10&$select=sender,subject')
-  .get();
-
-let callback: PageIteratorCallback = (data) => {
-  result = `${result}${data.subject}\n`;
-  console.log(data.subject);
-  count++;
-
-  // If we've iterated over the limit,
-  // stop the iteration by returning false
-  return count < pauseAfter;
-};
-
-let pageIterator = new PageIterator(client, response, callback);
-await pageIterator.iterate();
-
-while (!pageIterator.isComplete()) {
-  console.log('Iteration paused for 5 seconds...');
-  await new Promise(resolve => setTimeout(resolve, 5000));
-
-  // Reset count
-  count = 0;
-  await pageIterator.resume();
-}
-```
+:::code language="typescript" source="./snippets/dotnet/src/snippets/paging.ts" id="ResumePagingSnippet":::
 
 ### [Java](#tab/java)
 
