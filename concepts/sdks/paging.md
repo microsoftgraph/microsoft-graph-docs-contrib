@@ -28,7 +28,7 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 ### [TypeScript](#tab/typeScript)
 
-:::code language="typescript" source="./snippets/dotnet/src/snippets/paging.ts" id="PagingSnippet":::
+:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="PagingSnippet":::
 
 ### [Java](#tab/java)
 
@@ -73,7 +73,7 @@ Some scenarios require stopping the iteration process in order to perform other 
 
 ### [TypeScript](#tab/typeScript)
 
-:::code language="typescript" source="./snippets/dotnet/src/snippets/paging.ts" id="ResumePagingSnippet":::
+:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="ResumePagingSnippet":::
 
 ### [Java](#tab/java)
 

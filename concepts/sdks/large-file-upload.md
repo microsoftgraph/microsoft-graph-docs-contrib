@@ -19,7 +19,7 @@ A number of entities in Microsoft Graph support [resumable file uploads](/graph/
 
 ## [TypeScript](#tab/typescript)
 
-:::code language="typescript" source="./snippets/dotnet/src/snippets/largeFileUpload.ts" id="LargeFileUploadSnippet":::
+:::code language="typescript" source="./snippets/typescript/src/snippets/largeFileUpload.ts" id="LargeFileUploadSnippet":::
 
 ## [Java](#tab/java)
 
@@ -76,7 +76,7 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 
 ### [TypeScript](#tab/typescript)
 
-:::code language="typescript" source="./snippets/dotnet/src/snippets/largeFileUpload.ts" id="ResumeSnippet":::
+:::code language="typescript" source="./snippets/typescript/src/snippets/largeFileUpload.ts" id="ResumeSnippet":::
 
 ### [Java](#tab/java)
 
@@ -93,7 +93,7 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 
 ### [TypeScript](#tab/typescript)
 
-:::code language="typescript" source="./snippets/dotnet/src/snippets/largeFileUpload.ts" id="UploadAttachmentSnippet":::
+:::code language="typescript" source="./snippets/typescript/src/snippets/largeFileUpload.ts" id="UploadAttachmentSnippet":::
 
 ### [Java](#tab/java)
 
