@@ -34,9 +34,9 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|description|
-|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|name|String|name|
-|version|String|version|
+|id|String|Identifier for the policy Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|name|String|Policy name|
+|version|String|Policy version number|
 
 ## Relationships
 |Relationship|Type|Description|

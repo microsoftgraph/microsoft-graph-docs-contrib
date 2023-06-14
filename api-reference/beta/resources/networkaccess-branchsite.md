@@ -1,6 +1,6 @@
 ---
-title: "branchSite resource type"
-description: "branchSite represent locations for connectivity"
+title: "branch resource type"
+description: "branch represents a location where Customer Premises Equipment (CPE) is connected to Global Secure Access service edge network"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-branchSite represent locations for connectivity
+branch represents a location where Customer Premises Equipment (CPE) is connected to Global Secure Access service edge network.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -33,9 +33,9 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bandwidthCapacity|Int64|Determines the maximum allowed Mbps (magabits per second) bandwidth from a branch site	|
+|bandwidthCapacity|Int64|Determines the maximum allowed Mbps (magabits per second) bandwidth from a branch site. The possible values are:`250`,`500`,`750`,`1000`.|
 |connectivityState|microsoft.graph.networkaccess.connectivityState|Determines the branch site status.The possible values are: `pending`, `connected`, `inactive`, `error`.|
-|id|String|Id Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|Identifier for the branch Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|last Modified DateTime|
 |name|String|name|
 |region|String|The location the branch site is created in	|

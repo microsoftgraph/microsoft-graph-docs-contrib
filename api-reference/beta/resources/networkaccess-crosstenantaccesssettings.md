@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessSettings resource type"
-description: "Cross tenant access settings. For now it only contains the Network Packet Tagging Status. The network packet tagging with the user tenant ID will eventually be destined to Azure AD, and it will enforce Tenant Restrictions Policies, known as TRv2 Policies, which prevents users from exfiltrating data to tenants outside their organization"
+description: "A tenant's cross tenant access settings define Universal tenant restrictions version 2. The universal tenant restrictions version 2 offer coverage for tagging all traffic regardless of the browser or operating system used on the device, support for branch connectivity and direct from device connectivity, and native integration with Microsoft 365 and Azure Active Directory."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,9 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cross tenant access settings. For now it only contains the Network Packet Tagging Status. The network packet tagging with the user tenant ID will eventually be destined to Azure AD, and it will enforce Tenant Restrictions Policies, known as TRv2 Policies, which prevents users from exfiltrating data to tenants outside their organization
+A tenant's cross tenant access settings define Universal tenant restrictions version 2. The universal tenant restrictions version 2 offer coverage for tagging all traffic regardless of the browser or operating system used on the device, support for branch connectivity and direct from device connectivity, and native integration with Microsoft 365 and Azure Active Directory.
+
+For more information about cross-tenant access settings, see [Universal tenant restrictions](https://github.com/azure/global-secure-access/how-to-universal-tenant-restrictions)."
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).

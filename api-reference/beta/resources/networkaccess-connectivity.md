@@ -1,6 +1,6 @@
 ---
 title: "connectivity resource type"
-description: "connectivity is a top level entity under networkAccess which represent all connectivity components."
+description: "connectivity is a top level entity under networkAccess which represent all connectivity components in Global Secure Access"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-connectivity is a top level entity under networkAccess which represent all connectivity components.
+connectivity is a top level entity under networkAccess which represent all connectivity components in Global Secure Access
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -25,8 +25,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Get connectivity](../api/networkaccess-connectivity-get.md)|[microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md) object.|
 |[Update connectivity](../api/networkaccess-connectivity-update.md)|[microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md)|Update the properties of a [microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md) object.|
 |[Delete connectivity](../api/networkaccess-networkaccessroot-delete-connectivity.md)|None|Delete a [microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md) object.|
-|[List branches](../api/networkaccess-networkaccessroot-list-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) collection|Get the branchSite resources from the branches navigation property.|
-|[Create branchSite](../api/networkaccess-connectivity-post-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Create a new branchSite object.|
+|[List branches](../api/networkaccess-networkaccessroot-list-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) collection|Get the branch resources from the branches navigation property.|
+|[Create branchSite](../api/networkaccess-connectivity-post-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Create a new branch object.|
 
 ## Properties
 |Property|Type|Description|

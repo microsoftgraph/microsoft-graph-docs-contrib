@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessSettings resource type"
-description: "Conditional access settings. Admin can enable or disable conditional access signaling for source IP restoration and Connectivity through NaaS."
+description: "Conditional access settings defines how you can restore users source IP and how you can use compliant network validation. Source IP restoration preserves your original user IP context for all AAD and M365 traffic, and compliant network validation ensures the user is connecting from a verified network."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,8 +13,9 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Conditional access settings. Admin can enable or disable conditional access signaling for source IP restoration and Connectivity through NaaS.
+Conditional access settings defines how you can restore users source IP and how you can use compliant network validation. Source IP restoration preserves your original user IP context for all AAD and M365 traffic, and compliant network validation ensures the user is connecting from a verified network
 
+For more information about conditional access settings, see [Universal Conditional Access through Global Secure Access](https://github.com/azure/global-secure-access/how-to-target-resource) and [Source IP restoration](https://github.com/azure/global-secure-access/how-to-universal-tenant-restrictions).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 

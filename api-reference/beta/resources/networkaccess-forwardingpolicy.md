@@ -32,11 +32,11 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|description Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
-|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|name|String|name Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
-|trafficForwardingType|microsoft.graph.networkaccess.trafficForwardingType|The type of forwarding profile and the related type of traffic. The possible values are: `m365`, `internet`, `private`.|
-|version|String|version Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|description|String|Forwarding policy description Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|id|String|Identifier for the forwarding policy Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|name|String|Forwarding policy name Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|trafficForwardingType|microsoft.graph.networkaccess.trafficForwardingType|Traffic type for forwarding policy. The possible values are: `m365`, `internet`, `private`.|
+|version|String|Forwarding policy version Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 
 ## Relationships
 |Relationship|Type|Description|

@@ -1,6 +1,6 @@
 ---
 title: "forwardingOptions resource type"
-description: "Admins can enable/disable the ability to skip DNS lookup at the edge and forward M365 traffic directly to Front Door using the client-resolved destination IP. As a result, admins will have consistency for both L3 and L4/L7 use cases, avoid an additional point of failure in the traffic forwarding path, and retain DNS resolution done locally."
+description: "Defines the traffic forwarding options for the tenant. The forwardingOptions object contains the skipDnsLookupState settings, which determine whether DNS lookup will be performed at the client, allowing M365 traffic to be forwarded directly to Azure Front Door, or if DNS resolution will be conducted at the Edge. This operation provides control over the traffic flow and DNS resolution strategy within the network infrastructure."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Admins can enable/disable the ability to skip DNS lookup at the edge and forward M365 traffic directly to Front Door using the client-resolved destination IP. As a result, admins will have consistency for both L3 and L4/L7 use cases, avoid an additional point of failure in the traffic forwarding path, and retain DNS resolution done locally.
+Defines the traffic forwarding options for the tenant. The forwardingOptions object contains the skipDnsLookupState settings, which determine whether DNS lookup will be performed at the client, allowing M365 traffic to be forwarded directly to Azure Front Door, or if DNS resolution will be conducted at the Edge. This operation provides control over the traffic flow and DNS resolution strategy within the network infrastructure
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
