@@ -19,62 +19,7 @@ A number of entities in Microsoft Graph support [resumable file uploads](/graph/
 
 ## [TypeScript](#tab/typescript)
 
-```typescript
-const options: OneDriveLargeFileUploadOptions = {
-  // Relative path from root to destination folder
-  path: itemPath,
-  // file is a File object, typically from an <input type="file"/>
-  fileName: file.name,
-  rangeSize: 1024 * 1024,
-  uploadEventHandlers: {
-    // Called as each "slice" of the file is uploaded
-    progress: (range, e) => {
-      console.log(`Uploaded ${range?.minValue} to ${range?.maxValue}`);
-    }
-  }
-};
-
-try {
-  // Create FileUpload object
-  const fileObject = new FileUpload(file, file.name, file.size);
-  // Create a OneDrive upload task
-  const uploadTask = await OneDriveLargeFileUploadTask
-    .createTaskWithFileObject(client, fileObject, options);
-
-  // Do the upload
-  const uploadResult: UploadResult = await uploadTask.upload();
-
-  // The response body will be of the corresponding type of the
-  // item being uploaded. For OneDrive, this is a DriveItem
-  const driveItem = uploadResult.responseBody as DriveItem;
-  console.log(`Uploaded file with ID: ${driveItem.id}`);
-  return `Uploaded file with ID: ${driveItem.id}`;
-} catch (err) {
-  console.log(`Error uploading file: ${JSON.stringify(err)}`);
-  return `Error uploading file: ${JSON.stringify(err)}`;
-}
-```
-
-As alternatives to using a `File` object to create a `FileUpload`, you can use a `ReadStream` object to create a `StreamUpload`.
-
-```typescript
-const fileName = "<FILE_NAME>";
-const stats = fs.statSync(`./test/sample_files/${fileName}`);
-const totalsize = stats.size;
-const readStream = fs.createReadStream(`./test/sample_files/${fileName}`);
-const fileObject = new StreamUpload(readStream, fileName, totalsize);
-```
-
-You can also create a custom implementation of the `FileObject` interface.
-
-```typescript
-interface FileObject<T> {
-  content: T;
-  name: string;
-  size: number;
-  sliceFile(range: Range): Promise<ArrayBuffer | Blob | Buffer>;
-}
-```
+:::code language="typescript" source="./snippets/dotnet/src/snippets/largeFileUpload.ts" id="LargeFileUploadSnippet":::
 
 ## [Java](#tab/java)
 
@@ -131,9 +76,7 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 
 ### [TypeScript](#tab/typescript)
 
-```typescript
-const resumedFile: DriveItem = await uploadTask.resume() as DriveItem;
-```
+:::code language="typescript" source="./snippets/dotnet/src/snippets/largeFileUpload.ts" id="ResumeSnippet":::
 
 ### [Java](#tab/java)
 
@@ -150,55 +93,7 @@ const resumedFile: DriveItem = await uploadTask.resume() as DriveItem;
 
 ### [TypeScript](#tab/typescript)
 
-```typescript
-// Create an attachment item payload
-// file is a File object
-const payload = {
-  AttachmentItem: {
-    attachmentType: 'file',
-    name: file.name,
-    size: file.size
-  }
-};
-
-const options: LargeFileUploadTaskOptions = {
-  rangeSize: 1024 * 1024,
-  // Called as each "slice" of the file is uploaded
-  uploadEventHandlers: {
-    progress: (range, e) => {
-      console.log(`Uploaded ${range?.minValue} to ${range?.maxValue}`);
-    }
-  }
-};
-
-try {
-  // Create a draft message
-  const draftMsg: Message = await client.api('/me/messages')
-    .post({
-      subject: 'Large file attachment'
-    });
-
-  // Create upload session using draft message's ID
-  const uploadSession = await LargeFileUploadTask
-    .createUploadSession(client,
-      `/me/messages/${draftMsg.id}/attachments/createUploadSession`,
-      payload);
-
-  // Create file upload
-  // Note you can use StreamUpload or custom implementation of FileObject instead
-  const fileObject = new FileUpload(file, file.name, file.size);
-
-  // Create upload task
-  const uploadTask = new LargeFileUploadTask(client, fileObject, uploadSession, options);
-
-  // Upload the file
-  const uploadResult: UploadResult = await uploadTask.upload();
-  return 'Attachment uploaded';
-} catch (err) {
-  console.log(`Error uploading file: ${JSON.stringify(err)}`);
-  return `Error uploading file: ${JSON.stringify(err)}`;
-}
-```
+:::code language="typescript" source="./snippets/dotnet/src/snippets/largeFileUpload.ts" id="UploadAttachmentSnippet":::
 
 ### [Java](#tab/java)
 
