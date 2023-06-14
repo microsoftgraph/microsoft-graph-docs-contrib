@@ -120,7 +120,7 @@ Here is a JSON representation of the resource
   "defaultUsageLocation": "String",
   "deletedDateTime": "String (timestamp)",
   "directorySizeQuota": {"@odata.type": "microsoft.graph.directorySizeQuota"},
-  "dirSyncEnabled": true.
+  "dirSyncEnabled": true,
   "displayName": "String",
   "id": "String (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "Boolean",
