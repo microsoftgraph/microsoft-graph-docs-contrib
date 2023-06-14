@@ -1,5 +1,5 @@
 ---
-title: "Pass multiple search requests in a request body with the Microsoft Search API"
+title: "Pass multiple search requests in the request body with the Microsoft Search API"
 description: "You can use the Microsoft Search API in Microsoft Graph to search results by passing multiple search requests in the request body."
 author: "ZChristine"
 ms.localizationpriority: medium
