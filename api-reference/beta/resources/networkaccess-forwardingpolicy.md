@@ -35,7 +35,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 |description|String|description Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 |id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |name|String|name Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
-|trafficForwardingType|microsoft.graph.networkaccess.trafficForwardingType|Provides the type of forwarding profile.The possible values are: `m365`, `internet`, `private`.|
+|trafficForwardingType|microsoft.graph.networkaccess.trafficForwardingType|The type of forwarding profile and the related type of traffic. The possible values are: `m365`, `internet`, `private`.|
 |version|String|version Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 
 ## Relationships
