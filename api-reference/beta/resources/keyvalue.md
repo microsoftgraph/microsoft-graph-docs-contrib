@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Provides additional authentication processing information, such as the server name and the presence of hints for sign in and domain.
 The configuration of this resource is shared by the following objects:
-+ The **attributeCollection** property of the [contentCustomization](contentcustomization.md) complex type of [organizationalBrandingProperties](organizationalbrandingproeprties.md).
++ The **attributeCollection** property of the [contentCustomization](contentcustomization.md) complex type of [organizationalBrandingProperties](organizationalbrandingproperties.md).
 + The **additionalDetails** property of the [directoryAudit](directoryaudit.md) resource type.
 + The **authenticationProcessingDetails** property of the [signIn](signin.md) resource type.
 + The **additionalDetails** property of the [impactedResource](impactedresource.md) resource type.
