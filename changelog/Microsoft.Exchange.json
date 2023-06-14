@@ -2047,20 +2047,20 @@
           "Target": "calendarGroup"
         },
         {
-            "Id": "ae497d52-a781-46de-bec7-12a215043afd",
-            "ApiChange": "Permission",
-            "ChangedApiName": "Calendars.ReadBasic",
-            "ChangeType": "Addition",
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
       	  "Description": "Added support for the delegated permission `Calendars.ReadBasic` to the [Get calendarPermission](https://learn.microsoft.com/en-us/graph/api/calendarpermission-get?view=graph-rest-beta) method of the [calendarPermission](https://learn.microsoft.com/en-us/graph/api/resources/calendarpermission?view=graph-rest-beta) resource.",
-            "Target": "calendarPermission"
+          "Target": "calendarPermission"
       	},
       	{
-            "Id": "ae497d52-a781-46de-bec7-12a215043afd",
-            "ApiChange": "Permission",
-            "ChangedApiName": "Calendars.ReadBasic",
-            "ChangeType": "Addition",
-            "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendarPermissions](https://learn.microsoft.com/en-us/graph/api/calendar-list-calendarpermissions?view=graph-rest-beta) method of the [calendarPermission](https://learn.microsoft.com/en-us/graph/api/resources/calendarpermission?view=graph-rest-beta) resource.",
-            "Target": "calendarPermission"
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendarPermissions](https://learn.microsoft.com/en-us/graph/api/calendar-list-calendarpermissions?view=graph-rest-beta) method of the [calendarPermission](https://learn.microsoft.com/en-us/graph/api/resources/calendarpermission?view=graph-rest-beta) resource.",
+          "Target": "calendarPermission"
       	},
         {
           "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
@@ -2185,20 +2185,20 @@
           "Target": "calendarGroup"
         },
       	{
-            "Id": "ae497d52-a781-46de-bec7-12a215043afd",
-            "ApiChange": "Permission",
-            "ChangedApiName": "Calendars.ReadBasic",
-            "ChangeType": "Addition",
+          "Id": "ae497d52-a781-46de-bec7-12a215043afd",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
       	  "Description": "Added support for the delegated permission `Calendars.ReadBasic` to the [Get calendarPermission](https://learn.microsoft.com/en-us/graph/api/calendarpermission-get?view=graph-rest-1.0) method of the [calendarPermission](https://learn.microsoft.com/en-us/graph/api/resources/calendarpermission?view=graph-rest-1.0) resource.",
-            "Target": "calendarPermission"
+          "Target": "calendarPermission"
       	},
       	{
-            "Id": "ae497d52-a781-46de-bec7-12a215043afd",
-            "ApiChange": "Permission",
-            "ChangedApiName": "Calendars.ReadBasic",
-            "ChangeType": "Addition",
-            "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendarPermissions](https://learn.microsoft.com/en-us/graph/api/calendar-list-calendarpermissions?view=graph-rest-1.0) method of the [calendarPermission](https://learn.microsoft.com/en-us/graph/api/resources/calendarpermission?view=graph-rest-1.0) resource.",
-            "Target": "calendarPermission"
+          "Id": "ae497d52-a781-46de-bec7-12a215043afd",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendarPermissions](https://learn.microsoft.com/en-us/graph/api/calendar-list-calendarpermissions?view=graph-rest-1.0) method of the [calendarPermission](https://learn.microsoft.com/en-us/graph/api/resources/calendarpermission?view=graph-rest-1.0) resource.",
+          "Target": "calendarPermission"
       	},
         {
           "Id": "ae497d52-a781-46de-bec7-12a215043afd",
