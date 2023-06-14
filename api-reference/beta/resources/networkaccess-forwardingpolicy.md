@@ -1,6 +1,6 @@
 ---
 title: "forwardingPolicy resource type"
-description: "Forwarding Policy will define what traffic is routed through Network Access. In order to enact the policy, forwardingPolicies will be added to forwardingProfiles.	"
+description: "A forwarding policy defines what traffic is routed through Network Access Service and is added to a forwardingProfile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
