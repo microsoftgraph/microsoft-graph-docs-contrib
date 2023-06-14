@@ -10,7 +10,7 @@ ms.prod: "search"
 Now you can pass multiple search requests in a request body with the Microsoft Search API. This is currently enabled for OneDrive or SharePoint, external contents ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview) and answers types (bookmark/acronym/qna).
 
 
-## Supported entity combination
+## Supported entity types
 
 Supported entity types for passing multiple search requests in a request body are: `site`, `drive`, `driveItem`, `list`,`listItem`,`externalItem`, `bookmark`,`acronym`, `qna`. And in  the same time, the entity types in the same request block should follow the interleaving supported entity type relationships/combinations as defined in [interleaving search](search-concept-interleaving.md).
 
