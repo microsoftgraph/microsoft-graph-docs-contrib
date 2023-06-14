@@ -1,6 +1,6 @@
 ---
 title: "policy resource type"
-description: "policy"
+description: "Represents a policy and its associated rules in a traffic forwarding policy."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
