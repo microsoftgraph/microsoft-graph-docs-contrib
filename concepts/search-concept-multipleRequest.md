@@ -16,7 +16,7 @@ Supported entity types for passing multiple search requests in a request body ar
 
 ## Examples
 
-### Example 1: Search with SharePoint file types and bookmark/acornym combination
+### Example 1: Search with SharePoint file types and bookmark/acronym combinations
 
 #### Request
 
