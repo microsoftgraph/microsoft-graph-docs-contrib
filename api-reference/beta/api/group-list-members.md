@@ -2,7 +2,7 @@
 title: "List group members"
 description: "Get a list of the group's direct members."
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
