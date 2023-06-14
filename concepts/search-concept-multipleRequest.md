@@ -7,7 +7,7 @@ ms.prod: "search"
 ---
 
 # Use the Microsoft Graph Search API to pass multiple search requests
-Now you can pass multiple search requests in a request body with the Microsoft Search API. This is currently enabled for OneDrive or SharePoint, external contents ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview) and answers types (bookmark/acronym/qna).
+The Microsoft Search API allows you to include multiple search requests in a single request body. This capability is currently available for OneDrive and SharePoint, as well as for external contents that are ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview) and answers types, including bookmarks, acronyms, and Q&A.
 
 
 ## Supported entity types
