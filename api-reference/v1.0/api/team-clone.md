@@ -11,24 +11,24 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
+> [!NOTE]
+> Cloning isn't supported for an organization-wide team.
 
 Create a copy of a [team](../resources/team.md). This operation also creates a copy of the corresponding [group](../resources/group.md).
 You can specify which parts of the team to clone:
 
-- **apps** - Copies Microsoft Teams apps that are installed in the team. 
+- **apps** - Copies Microsoft Teams apps that are installed in the team.
 - **channels** – Copies the channel structure (but not the messages in the channel).
 - **members** – Copies the members and owners of the group.
 - **settings** – Copies all settings within the team, along with key group settings.
 - **tabs** – Copies the tabs within channels.
 
-When tabs are cloned, they are put into an unconfigured state 
--- they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen. 
+When tabs are cloned, they are put into an unconfigured state they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen.
 (If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
 
 Cloning is a long-running operation.
-After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) to see if it's "running" or "succeeded" or "failed". 
-You should continue to GET until the status is not "running". 
+After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) to see if it's "running" or "succeeded" or "failed".
+You should continue to GET until the status is not "running".
 The recommended delay between GETs is 5 seconds.
 
 ## Permissions
