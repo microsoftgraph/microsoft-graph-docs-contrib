@@ -201,7 +201,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Search with the file entity types in seperate requst blocks in the request body
+### Example 2: Search with the file entity types in separate request blocks in the request body
 
 #### Request
 
