@@ -23,7 +23,7 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-read.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="ReadRequestSnippet":::
 
 # [Java](#tab/java)
 
@@ -56,7 +56,7 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-select.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="SelectRequestSnippet":::
 
 # [Java](#tab/java)
 
@@ -90,7 +90,7 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-list.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="ListRequestSnippet":::
 
 # [Java](#tab/java)
 
@@ -124,7 +124,7 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-index.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="ItemByIdRequestSnippet":::
 
 # [Java](#tab/java)
 
@@ -156,7 +156,7 @@ You can use the `$expand` filter to request a related entity, or collection of e
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-expand.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="ExpandRequestSnippet":::
 
 # [Java](#tab/java)
 
@@ -188,7 +188,7 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-delete.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="DeleteRequestSnippet":::
 
 # [Java](#tab/java)
 
@@ -220,7 +220,7 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-create.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="CreateRequestSnippet":::
 
 # [Java](#tab/java)
 
@@ -252,7 +252,7 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-update.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="UpdateRequestSnippet":::
 
 # [Java](#tab/java)
 
@@ -284,7 +284,7 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-headers.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="HeadersRequestSnippet":::
 
 # [Java](#tab/java)
 
@@ -316,7 +316,7 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-queryparams.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="QueryParametersRequestSnippet":::
 
 # [Java](#tab/java)
 
