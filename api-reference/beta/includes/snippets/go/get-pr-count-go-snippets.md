@@ -9,11 +9,11 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -23,13 +23,13 @@ headers.Add("ConsistencyLevel", "eventual")
 requestCount := true
 requestSearch := "\"displayName:Pr\""
 
-requestParameters := &graphconfig.GroupItemMembersGraph.userRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.GroupItemMembersGraph.userRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"displayName"},
 	Search: &requestSearch,
 	Select: [] string {"displayName","id"},
 }
-configuration := &graphconfig.GroupItemMembersGraph.userRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupItemMembersGraph.userRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

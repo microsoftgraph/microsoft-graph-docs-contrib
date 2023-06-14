@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new TeamTemplatesRequestBuilderGetRequestConfiguration();
 $queryParameters = TeamTemplatesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["definitions"];
-$queryParameters->filter = "definitions/any";
+$queryParameters->filter = "definitions/any(a:a/languageTag eq 'en-US')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

@@ -61,6 +61,7 @@ The following is an example of the request. This appointment does not involve bo
 
 <!-- {
   "blockType": "request",
+  "name" : "bookingbusinesspostappointments",
   "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
