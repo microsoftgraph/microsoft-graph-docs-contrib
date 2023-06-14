@@ -9,11 +9,11 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/contacts"
+	  graphcontacts "github.com/microsoftgraph/msgraph-sdk-go/contacts"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -24,13 +24,13 @@ requestFilter := "startswith(displayName,'A')"
 requestCount := true
 requestTop := int32(1)
 
-requestParameters := &graphconfig.ContactsRequestBuilderGetQueryParameters{
+requestParameters := &graphcontacts.ContactsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Count: &requestCount,
 	Top: &requestTop,
 	Orderby: [] string {"displayName"},
 }
-configuration := &graphconfig.ContactsRequestBuilderGetRequestConfiguration{
+configuration := &graphcontacts.ContactsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

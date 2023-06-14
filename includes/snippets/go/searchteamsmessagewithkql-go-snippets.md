@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Search/Query"
+	  graphsearch "github.com/microsoftgraph/msgraph-sdk-go/search"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewQueryPostRequestBody()
+requestBody := graphsearch.NewQueryPostRequestBody()
 
 
 searchRequest := graphmodels.NewSearchRequest()
@@ -36,7 +37,7 @@ searchRequest.SetSize(&size)
 enableTopResults := true
 searchRequest.SetEnableTopResults(&enableTopResults) 
 
-requests := []graphmodels.SearchRequestable {
+requests := []graphsearch.SearchRequestable {
 	searchRequest,
 
 }

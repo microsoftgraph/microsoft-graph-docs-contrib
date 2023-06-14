@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Communications/Calls/Item/RecordResponse"
+	  graphcommunications "github.com/microsoftgraph/msgraph-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewRecordResponsePostRequestBody()
+requestBody := graphcommunications.NewRecordResponsePostRequestBody()
 bargeInAllowed := true
 requestBody.SetBargeInAllowed(&bargeInAllowed) 
 clientContext := "d45324c1-fcb5-430a-902c-f20af696537c"
@@ -33,7 +34,7 @@ mediaInfo.SetResourceId(&resourceId)
 }
 prompt.SetAdditionalData(additionalData)
 
-prompts := []graphmodels.Promptable {
+prompts := []graphcommunications.Promptable {
 	prompt,
 
 }

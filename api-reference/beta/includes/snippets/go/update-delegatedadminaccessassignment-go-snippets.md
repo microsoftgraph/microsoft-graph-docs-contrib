@@ -10,17 +10,17 @@ import (
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/tenantrelationships"
+	  graphtenantrelationships "github.com/microsoftgraph/msgraph-beta-sdk-go/tenantrelationships"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("If-Match", "W/\"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==\"")
 
-configuration := &graphconfig.TenantRelationshipsDelegatedAdminRelationshipItemAccessAssignmentItemRequestBuilderPatchRequestConfiguration{
+configuration := &graphtenantrelationships.TenantRelationshipsDelegatedAdminRelationshipItemAccessAssignmentItemRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewDelegatedAdminAccessAssignment()
