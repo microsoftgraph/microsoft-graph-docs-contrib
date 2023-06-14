@@ -141,7 +141,7 @@ Content-type: application/json
 
 ## Bad Request Examples
 
-### Example 1: Search with the same entity types in seperate requst blocks in the request body
+### Example 1: Search with the same entity types in separate request blocks in the request body
 
 #### Request
 
