@@ -16,7 +16,7 @@ Represents user-specific data for a printer share as viewed by the signed-in use
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|lastUsedDateTime|DateTimeOffset|Date and time when the printer was last used by the signed-in user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastUsedDateTime|DateTimeOffset|Date and time when the printer was last used by the signed-in user. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships
 None.
