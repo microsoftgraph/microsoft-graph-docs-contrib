@@ -30,7 +30,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | filter             | String                                                   | The filter applied on the report.                                                                                                                                                       |
 | format             | String                                                   | The format of the exported report.                                                                                                                                                      |
 | id                 | String                                                   | The unique identifier for the report. Read-only.                                                                                                                                        |
-| reportName         | [cloudPcReportName](#cloudpcreportname-values)           | The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, or `unknownFutureValue`. |
+| reportName         | [cloudPcReportName](#cloudpcreportname-values)           | The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport` `noLicenseAvailableConnectivityFailureReport`, or `unknownFutureValue`. |
 | requestDateTime    | DateTimeOffset                                           | The date and time when the export job was requested.  |
 | select             | String collection                                        | The selected columns of the report.   |
 
@@ -53,6 +53,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | totalAggregatedRemoteConnectionReports | The total aggregated remote connections report.                     |
 | sharedUseLicenseUsageReport            | Indicates daily/hourly aggregated shared use license usage report.  |
 | sharedUseLicenseUsageRealTimeReport    | Indicates real-time data for shared use license usage.              |
+| noLicenseAvailableConnectivityFailureReport | Indicates the Cloud PCs report that failed to connect due to no licenses available. |
 | unknownFutureValue                     | Evolvable enumeration sentinel value. Do not use.                   |
 
 

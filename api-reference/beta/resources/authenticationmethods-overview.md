@@ -2,7 +2,7 @@
 title: "Azure AD authentication methods API overview"
 description: "Authentication methods are how users authenticate in Azure AD."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "jpettere"
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
 ms.date: 10/21/2022
@@ -46,7 +46,6 @@ The following authentication methods are not yet supported in Microsoft Graph `b
 
 |Authentication method       | Description |Examples     |
 |:---------------------------|:------------|:------------|
-|Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method. <br/> **NOTE:** Managing the details of the default method is currently supported only through the MSOL `Get-MsolUser` and `Set-MsolUser` cmdlets, using the **StrongAuthenticationMethods** property. |
 |Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
 |Require re-register MFA | A control that requires that when user signs in next time and MFA is required, they're requested to set up a new MFA authentication method.|**NOTE:** This feature is replaced by the individual authentication method APIs listed above. These can be used to delete a user's existing registered authentication methods; once the user has no more methods, they'll be prompted to register the next time they sign in where strong authentication is required (the user can also register at any time using [MySecurityInfo](https://aka.ms/mysecurityinfo)). This can be done using the Azure AD admin UX, the Microsoft Graph APIs, and the Microsoft Graph Powershell SDK. <br/> The legacy version of this feature is currently supported only through the MSOL`Set-MsolUser` cmdlet, using the **StrongAuthenticationMethods** property. |
 |Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
