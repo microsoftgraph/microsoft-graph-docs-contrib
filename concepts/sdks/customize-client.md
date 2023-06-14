@@ -16,68 +16,7 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 
 ## [TypeScript](#tab/typeScript)
 
-```typescript
-const {
-    TokenCredentialAuthenticationProvider
-} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const {
-    AuthorizationCodeCredential
-} = require("@azure/identity");
-
-const credential = new AuthorizationCodeCredential(
-    "<YOUR_TENANT_ID>",
-    "<YOUR_CLIENT_ID>",
-    "<AUTH_CODE_FROM_QUERY_PARAMETERS>",
-    "<REDIRECT_URL>"
-);
-
-const authProvider = new TokenCredentialAuthenticationProvider(credential, {
-    scopes: [scopes]
-});
-
-// Create an authentication handler that uses custom auth provider
-const authHandler = new MicrosoftGraph.AuthenticationHandler(authProvider);
-
-// Create a custom logging handler
-const loggingHandler = new CustomLoggingHandler();
-
-// Create a standard HTTP message handler
-const httpHandler = new MicrosoftGraph.HTTPMessageHandler();
-
-// Use setNext to chain handlers together
-// auth -> logging -> http
-authHandler.setNext(loggingHandler);
-loggingHandler.setNext(httpHandler);
-
-// Pass the first middleware in the chain in the middleWare property
-const client = MicrosoftGraph.Client.initWithMiddleware({
-  defaultVersion: 'v1.0',
-  debugLogging: true,
-  middleware: authHandler,
-});
-
-const response: PageCollection = await client
-  .api('/me/messages?$top=10&$select=sender,subject')
-  .get();
-```
-
-### CustomLoggingHandler.ts
-
-```typescript
-import { Context, Middleware } from "@microsoft/microsoft-graph-client";
-
-export default class CustomLoggingHandler implements Middleware {
-  private nextMiddleware: any = null;
-
-  execute = async (context: Context): Promise<void> => {
-    console.log(`Logging request: ${context.request.toString()}`);
-    return await this.nextMiddleware.execute(context);
-  }
-  setNext = (middleware: Middleware): void => {
-    this.nextMiddleware = middleware;
-  }
-}
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/customClients.ts" id="ChaosHandlerSnippet":::
 
 ## [Java](#tab/java)
 
@@ -165,38 +104,7 @@ Some environments require client applications to use a HTTP proxy before they ca
 
 ## [TypeScript](#tab/typeScript)
 
-```typescript
-// Create a credential from @azure/identity package
-const credential = new ClientSecretCredential(
-  'YOUR_TENANT_ID',
-  'YOUR_CLIENT_ID',
-  'YOUR_CLIENT_SECRET',
-  {
-    proxyOptions: {
-      host: 'localhost',
-      port: 8888,
-      // If proxy requires authentication
-      //username: '',
-      //password: ''
-    },
-  }
-);
-
-// Create a Graph token credential provider
-const tokenAuthProvider = new TokenCredentialAuthenticationProvider(
-  credential,
-  {
-    scopes: [ 'https://graph.microsoft.com/.default' ]
-  });
-
-const client = MicrosoftGraph.Client.initWithMiddleware({
-  authProvider: tokenAuthProvider,
-  // Configure proxy in fetchOptions
-  fetchOptions: {
-    agent: new HttpsProxyAgent('http://localhost:8888')
-  }
-});
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/customClients.ts" id="ProxySnippet":::
 
 ## [Java](#tab/java)
 
