@@ -41,7 +41,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|policyRules maintains the definition of the policy ruleset that makes up the core definition of a policy	 Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|
+|policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection| Represents the definition of the policy ruleset that makes up the core definition of a policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Supports `$expand`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
