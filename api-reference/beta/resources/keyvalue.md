@@ -15,18 +15,21 @@ Namespace: microsoft.graph
 
 Provides additional authentication processing information, such as the server name and the presence of hints for sign in and domain.
 The configuration of this resource is shared by the following objects:
-+ The **organizationalBranding** property of [organizationalBranding](organizationalbranding.md).
++ The **attributeCollection** property of the [contentCustomization](contentcustomization.md) complex type of [organizationalBrandingProperties](organizationalbrandingproeprties.md).
++ The **additionalDetails** property of the [directoryAudit](directoryaudit.md) resource type.
++ The **authenticationProcessingDetails** property of the [signIn](signin.md) resource type.
++ The **additionalDetails** property of the [impactedResource](impactedresource.md) resource type.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|key|String|Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: `Login hint present`, `Domain hint present`.|
-|value|String|Contains the corresponding value for the specified key. The value is `true` if a sign in hint was included in the sign-in request; otherwise `false`. The value is `true` if a domain hint was included in the sign-in request; otherwise `false`.|
+|key|String|Contains the name of the field that a value is associated with. <!--When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: `Login hint present`, `Domain hint present`.-->|
+|value|String|Contains the corresponding value for the specified key. <!--The value is `true` if a sign in hint was included in the sign-in request; otherwise `false`. The value is `true` if a domain hint was included in the sign-in request; otherwise `false`.-->|
 
 ### Key-value pair names and values
 
-#### Supported by organizationalBranding
+#### Supported by organizationalBrandingProperties
 
 | Name | Possible value |
 |:-|:-|
