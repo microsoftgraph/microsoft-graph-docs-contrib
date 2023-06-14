@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Communications/Calls/Item/Answer"
+	  graphcommunications "github.com/microsoftgraph/msgraph-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAnswerPostRequestBody()
+requestBody := graphcommunications.NewAnswerPostRequestBody()
 callbackUri := "callbackUri-value"
 requestBody.SetCallbackUri(&callbackUri) 
 mediaConfig := graphmodels.NewMediaConfig()
@@ -24,7 +25,7 @@ additionalData := map[string]interface{}{
 }
 mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
-acceptedModalities := []graphmodels.Modalityable {
+acceptedModalities := []graphcommunications.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
 	requestBody.SetModality(&modality) 
 

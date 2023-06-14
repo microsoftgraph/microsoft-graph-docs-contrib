@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/identity"
+	  graphidentity "github.com/microsoftgraph/msgraph-sdk-go/identity"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
 requestFilter := "scenarios has 'secureFoundation'"
 
-requestParameters := &graphconfig.IdentityConditionalAccessTemplatesRequestBuilderGetQueryParameters{
+requestParameters := &graphidentity.IdentityConditionalAccessTemplatesRequestBuilderGetQueryParameters{
 	Select: [] string {"name","description","id","scenarios"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.IdentityConditionalAccessTemplatesRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.IdentityConditionalAccessTemplatesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

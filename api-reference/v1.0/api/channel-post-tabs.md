@@ -54,9 +54,10 @@ If successful, this method returns a `201 Created` response code.
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "channelposttabs"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 
@@ -76,7 +77,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 
 The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
 } -->
