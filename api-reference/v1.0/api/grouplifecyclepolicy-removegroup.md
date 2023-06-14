@@ -55,7 +55,7 @@ If successful, this method returns `200 OK` response code. If the group is remov
 ##### Request
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "grouplifecyclepolicy_removegroup"
 } -->
 
@@ -74,11 +74,6 @@ Content-type: application/json
 
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "value": true
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

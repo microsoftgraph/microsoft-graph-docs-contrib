@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and the created [ope
 
 The following is an example of the request.
 <!-- {
-  "blockType": "request"
+  "blockType": "request", "name": "openshiftpost"
 }-->
 
 ```http
