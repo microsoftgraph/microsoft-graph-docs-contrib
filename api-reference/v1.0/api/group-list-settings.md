@@ -1,7 +1,7 @@
 ---
 title: "List settings"
 description: "Retrieve a list of group setting objects."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

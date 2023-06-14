@@ -55,7 +55,7 @@ If successful, this method returns a `201 Created` response code if the **histor
 The following is an example of the request.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "request",
     "name": "upsert_historyItem"
 } -->
 
@@ -75,7 +75,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "response",
     "truncated": true,
     "@odata.type": "microsoft.graph.activityHistoryItem"
 } -->

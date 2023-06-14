@@ -47,7 +47,12 @@ If successful, this method returns a `200 OK` response code and [columnDefinitio
 ## Example
 
 ### Request
-<!-- { "blockType": "request" } -->
+
+<!-- { 
+  "blockType": "request" ,
+  "name" : "contenttype_post_conlumns"
+} -->
+
 ```http
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-id}/columns
 Content-Type: application/json

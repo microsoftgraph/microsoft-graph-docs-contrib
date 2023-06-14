@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventType
 
 ---
 
-
 ### Response
 >
 <!-- {
