@@ -11,8 +11,6 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-
-
 List the [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) objects that are assigned to an [application](../resources/application.md).
 
 ## Permissions
@@ -28,10 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}/tokenLifetimePolicies
+GET /applications(appId='{appId}')/tokenLifetimePolicies
 ```
 
 ## Request headers
