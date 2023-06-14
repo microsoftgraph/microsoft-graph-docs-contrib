@@ -36,7 +36,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.authenticationBehaviors",
-  "removeUnverifiedEmailClaim": "Boolean",
-  "requireClientServicePrincipal": "Boolean"
+  "removeUnverifiedEmailClaim": "Boolean"
 }
 ```
