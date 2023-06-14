@@ -63,10 +63,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+<!-- {
+  "blockType": "request",
+  "name": "calendar_list_calendarpermissions_get"
+}
+-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions
 ```
+
 ### Response
 
 The following is an example of the response.

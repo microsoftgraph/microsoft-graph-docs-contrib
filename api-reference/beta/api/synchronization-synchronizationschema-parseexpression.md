@@ -43,7 +43,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 |expression               |String               |Expression to parse.|
 |testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Test data object to evaluate expression against. Optional.|
@@ -191,6 +191,10 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: synchronizationschema_parseexpression/parsedExpression:
+    Schema validation failed on property 'parsedExpression' ['microsoft.graph.attributeMappingSource']",
+    "Error: synchronizationschema_parseexpression/parsedExpression/parameters:
+    Array expected members to be of type Collection(String) but found: Collection(Object)"
   ]
 }
 -->

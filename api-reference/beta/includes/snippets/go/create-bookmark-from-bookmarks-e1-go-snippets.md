@@ -8,21 +8,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//search"
+	  graphmodelssearch "github.com/microsoftgraph/msgraph-beta-sdk-go/models/search"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewBookmark()
+requestBody := graphmodelssearch.NewBookmark()
 displayName := "Contoso Install Site"
 requestBody.SetDisplayName(&displayName) 
 webUrl := "http://www.contoso.com/"
 requestBody.SetWebUrl(&webUrl) 
 description := "Try or buy Contoso for Home or Business and view product information"
 requestBody.SetDescription(&description) 
-keywords := graphmodels.NewAnswerKeyword()
+keywords := graphmodelssearch.NewAnswerKeyword()
 keywords := []string {
 	"Contoso",
 	"install",
@@ -41,7 +42,7 @@ availabilityStartDateTime := null
 requestBody.SetAvailabilityStartDateTime(&availabilityStartDateTime) 
 availabilityEndDateTime := null
 requestBody.SetAvailabilityEndDateTime(&availabilityEndDateTime) 
-platforms := []graphmodels.DevicePlatformTypeable {
+platforms := []graphmodelssearch.DevicePlatformTypeable {
 	devicePlatformType := graphmodels.WINDOWS_DEVICEPLATFORMTYPE 
 	requestBody.SetDevicePlatformType(&devicePlatformType) 
 
@@ -49,7 +50,7 @@ platforms := []graphmodels.DevicePlatformTypeable {
 requestBody.SetPlatforms(platforms)
 
 
-answerVariant := graphmodels.NewAnswerVariant()
+answerVariant := graphmodelssearch.NewAnswerVariant()
 languageTag := "es-es"
 answerVariant.SetLanguageTag(&languageTag) 
 displayName := "Sitio de instalación Contoso"
@@ -57,7 +58,7 @@ answerVariant.SetDisplayName(&displayName)
 description := "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
 answerVariant.SetDescription(&description) 
 
-targetedVariations := []graphmodels.AnswerVariantable {
+targetedVariations := []graphmodelssearch.AnswerVariantable {
 	answerVariant,
 
 }
