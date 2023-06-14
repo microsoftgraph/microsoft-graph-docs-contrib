@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and the [page](../re
 ## Example
 ##### Request
 Here is an example of the request.
- <!-- { "blockType": "request" } -->
+ <!-- { "blockType": "request", "name": "page_get" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
