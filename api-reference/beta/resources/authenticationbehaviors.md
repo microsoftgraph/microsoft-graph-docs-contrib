@@ -22,7 +22,6 @@ Applications can adopt new breaking changes by enabling a behavior (set the beha
 |Property|Type|Description|
 |:---|:---|:---|
 |removeUnverifiedEmailClaim|Boolean| Removes the `email` claim from tokens sent to an application when the email address's domain cannot be verified. |
-|requireClientServicePrincipal|Boolean| Requires a client application attempting to acquire a cross-tenant token from a resource application to have a service principal as a pre-requisite. |
 
 ## Relationships
 None.
