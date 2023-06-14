@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.ReviewSets.Item.EdiscoveryAddToReviewSet.AddToReviewSetPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.ReviewSets.Item.MicrosoftGraphEdiscoveryAddToReviewSet.AddToReviewSetPostRequestBody
 {
 	SourceCollection = new Microsoft.Graph.Beta.Models.Ediscovery.SourceCollection
 	{
@@ -19,7 +21,7 @@ var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.Revi
 		},
 	},
 };
-await graphClient.Compliance.Ediscovery.Cases["{case-id}"].ReviewSets["{reviewSet-id}"].EdiscoveryAddToReviewSet.PostAsync(requestBody);
+await graphClient.Compliance.Ediscovery.Cases["{case-id}"].ReviewSets["{reviewSet-id}"].MicrosoftGraphEdiscoveryAddToReviewSet.PostAsync(requestBody);
 
 
 ```

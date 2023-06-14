@@ -4,25 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Drives/Item/Items/Item/Permissions/Item/RevokeGrants"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewRevokeGrantsPostRequestBody()
+requestBody := graphdrives.NewRevokeGrantsPostRequestBody()
 
 
 driveRecipient := graphmodels.NewDriveRecipient()
 email := "ryan@contoso.com"
 driveRecipient.SetEmail(&email) 
 
-grantees := []graphmodels.DriveRecipientable {
+grantees := []graphdrives.DriveRecipientable {
 	driveRecipient,
 
 }

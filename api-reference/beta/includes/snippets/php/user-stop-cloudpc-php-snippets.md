@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->cloudPCsById('cloudPC-id')->stop()->post();
+$graphServiceClient->me()->cloudPCs()->byCloudPCId('cloudPC-id')->stop()->post();
 
 
 ```

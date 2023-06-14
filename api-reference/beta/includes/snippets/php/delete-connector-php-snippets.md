@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->print()->connectorsById('printConnector-id')->delete();
+$graphServiceClient->print()->connectors()->byConnectorId('printConnector-id')->delete();
 
 
 ```

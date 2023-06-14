@@ -46,7 +46,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->usersById('user-id')->settings()->shiftPreferences()->put($requestBody);
+$graphServiceClient->users()->byUserId('user-id')->settings()->shiftPreferences()->put($requestBody);
 
 
 ```

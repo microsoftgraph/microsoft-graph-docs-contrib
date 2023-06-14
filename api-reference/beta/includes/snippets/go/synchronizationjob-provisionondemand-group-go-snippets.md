@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/ServicePrincipals/Item/Synchronization/Jobs/Item/ProvisionOnDemand"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewProvisionOnDemandPostRequestBody()
+requestBody := graphserviceprincipals.NewProvisionOnDemandPostRequestBody()
 
 
 synchronizationJobApplicationParameters := graphmodels.NewSynchronizationJobApplicationParameters()
@@ -56,7 +57,7 @@ subjects := []graphmodels.SynchronizationJobSubjectable {
 }
 synchronizationJobApplicationParameters.SetSubjects(subjects)
 
-parameters := []graphmodels.SynchronizationJobApplicationParametersable {
+parameters := []graphserviceprincipals.SynchronizationJobApplicationParametersable {
 	synchronizationJobApplicationParameters,
 
 }

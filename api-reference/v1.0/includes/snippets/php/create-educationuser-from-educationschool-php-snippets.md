@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/education/users/1400
 
 
 
-$graphServiceClient->education()->schoolsById('educationSchool-id')->users()->ref()->post($requestBody);
+$graphServiceClient->education()->schools()->bySchoolId('educationSchool-id')->users()->ref()->post($requestBody);
 
 
 ```

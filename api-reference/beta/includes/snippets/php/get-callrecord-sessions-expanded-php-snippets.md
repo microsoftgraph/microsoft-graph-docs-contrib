@@ -15,7 +15,7 @@ $queryParameters->expand = ["segments"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->communications()->callRecordsById('callRecord-id')->sessions()->get($requestConfiguration);
+$result = $graphServiceClient->communications()->callRecords()->byCallRecordId('callRecord-id')->sessions()->get($requestConfiguration);
 
 
 ```
