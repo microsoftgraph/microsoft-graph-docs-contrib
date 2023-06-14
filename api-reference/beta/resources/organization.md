@@ -113,12 +113,14 @@ Here is a JSON representation of the resource
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "businessPhones": ["String"],
   "city": "String",
+  "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
   "country": "String",
   "countryLetterCode": "String",
   "createdDateTime": "String (timestamp)",
   "defaultUsageLocation": "String",
   "deletedDateTime": "String (timestamp)",
   "directorySizeQuota": {"@odata.type": "microsoft.graph.directorySizeQuota"},
+  "dirSyncEnabled": true.
   "displayName": "String",
   "id": "String (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "Boolean",
@@ -137,9 +139,7 @@ Here is a JSON representation of the resource
   "street": "String",
   "technicalNotificationMails": ["String"],
   "tenantType": "string",
-  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}],
-  "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
-  "dirSyncEnabled": true
+  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
 ```
 
