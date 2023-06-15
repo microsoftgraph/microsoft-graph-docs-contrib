@@ -31,6 +31,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 |email|String|The email address of the subject.|
 |id|String| Read-only. Key.|
 |objectId|String|The object identifier of the subject. `null` if the subject is not yet a user in the tenant. Alternate key.|
+|altSecId|String|Not Supported.|
 |principalName|String|The principal name, if known, of the subject.|
 |subjectLifecycle|accessPackageSubjectLifecycle|The lifecycle of the subject user, if a guest. The possible values are: `notDefined`, `notGoverned`, `governed`, `unknownFutureValue`.|
 |type|String|The resource type of the subject.|

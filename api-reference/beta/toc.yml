@@ -12568,6 +12568,10 @@ items:
             - name: Create
               href: api/entitlementmanagement-post-accesspackages.md
             - name: Get
+              href: api/accesspackagesubject-get.md
+            - name: Update
+              href: api/accesspackagesubject-update.md
+            - name: Get
               href: api/accesspackage-get.md
             - name: Update
               href: api/accesspackage-update.md
