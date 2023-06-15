@@ -58,7 +58,7 @@ If successful, this method returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "update_accesspackage"
+  "name": "update_accesspackagesubject"
 }
 -->
 ``` http
