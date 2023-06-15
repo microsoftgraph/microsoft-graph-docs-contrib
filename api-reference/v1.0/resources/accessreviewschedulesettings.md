@@ -1,6 +1,6 @@
 ---
 title: "accessReviewScheduleSettings resource type"
-description: "Represents the settings associated with an access review series."
+description: "In the Azure AD access reviews feature, the `accessReviewScheduleSettings"
 author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,6 +10,8 @@ doc_type: resourcePageType
 # accessReviewScheduleSettings resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 The **accessReviewScheduleSettings** defines the settings of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). 
 
