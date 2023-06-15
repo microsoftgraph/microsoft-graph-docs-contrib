@@ -56,7 +56,7 @@ PATCH /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartner
 |b2bDirectConnectOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect. Optional.|
 |b2bDirectConnectInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner-specific configuration for users from other organizations accessing your resources via Azure AD B2B direct connect. Optional.|
 |automaticUserConsentSettings|[inboundOutboundPolicyConfiguration](../resources/inboundoutboundpolicyconfiguration.md)|Determines the partner-specific configuration for automatic user consent settings. Optional.|
-|templateApplicationLevel|templateApplicationLevel|**TODO: Add Description**. The possible values are: `none`, `newPartners`, `existingPartners`, `unknownFutureValue`. Required.|
+|templateApplicationLevel|templateApplicationLevel|Specifies how the template is applied when a tenant joins a multi-tenant organization and when other tenants join a multi-tenant organization.  The possible values are: `none`, `newPartners` (default), `existingPartners` (default), `unknownFutureValue`. Optional.|
 
 
 ## Response
@@ -65,7 +65,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following example configures the inbound trust settings to accept MFA, compliant, and Hybrid Azure AD Joined devices from the partner tenant. It also configures automatic redemption on behalf of your users and accepting admin consent for the users of the partner. For more information, see [crossTenantAccessPolicyConfigurationPartner resource type](../resources/crosstenantaccesspolicyconfigurationpartner.md).
+The following example configures the inbound trust settings to accept MFA, compliant, and Hybrid Azure AD Joined devices from the partner tenant. It configures automatic redemption on behalf of your users and accepts admin consent for the users of the partner. It configures that the template is applied for new and existing partners. For more information, see [crossTenantAccessPolicyConfigurationPartner resource type](../resources/crosstenantaccesspolicyconfigurationpartner.md).
 
 ### Request
 
@@ -88,7 +88,7 @@ Content-Type: application/json
         "inboundAllowed": true,
         "outboundAllowed": true
     },
-  "templateApplicationLevel": "String"
+    "templateApplicationLevel": "newPartners,existingPartners"
 }
 
 ```

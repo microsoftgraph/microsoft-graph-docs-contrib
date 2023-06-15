@@ -50,7 +50,7 @@ PATCH /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentit
 |Property|Type|Description|
 |:---|:---|:---|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines whether users can be synchronized from the partner tenant. `false` causes any current user synchronization from the source tenant to the target tenant to stop. This property has no impact on existing users who have already been synchronized.|
-|templateApplicationLevel|templateApplicationLevel|**TODO: Add Description**. The possible values are: `none`, `newPartners`, `existingPartners`, `unknownFutureValue`. Required.|
+|templateApplicationLevel|templateApplicationLevel|Specifies how the template is applied when a tenant joins a multi-tenant organization and when other tenants join a multi-tenant organization.  The possible values are: `none`, `newPartners` (default), `existingPartners` (default), `unknownFutureValue`. Optional.|
 
 
 ## Response
@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-Update the user synchronization settings of the template. For more information, see [crossTenantIdentitySyncPolicyPartner resource type](../resources/crosstenantidentitysyncpolicypartner.md).
+The following example updates the user synchronization settings of the template. It configures that the template is applied for new and existing partners. For more information, see [crossTenantIdentitySyncPolicyPartner resource type](../resources/crosstenantidentitysyncpolicypartner.md).
 
 ### Request
 
@@ -76,7 +76,7 @@ Content-Type: application/json
     "userSyncInbound": {
         "isSyncAllowed": true
     },
-  "templateApplicationLevel": "String"
+    "templateApplicationLevel": "newPartners,existingPartners"
 }
 ```
 

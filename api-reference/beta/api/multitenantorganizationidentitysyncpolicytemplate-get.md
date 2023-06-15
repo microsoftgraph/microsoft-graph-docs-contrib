@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/
 
 ### Response
 
-The following example response shows the default user synchronization settings before it has been configured or after it has been reset.
+The following example response shows the default user synchronization settings before they have been configured or after they have been reset.
 
 
 <!-- {
@@ -89,7 +89,7 @@ Content-Type: application/json
     "userSyncInbound": {
         "isSyncAllowed": null
     },
-    "templateApplicationLevel": "String"
+    "templateApplicationLevel": "newPartners,existingPartners"
 }
 ```
 
@@ -105,6 +105,6 @@ Content-Type: application/json
     "userSyncInbound": {
         "isSyncAllowed": true
     },
-    "templateApplicationLevel": "String"
+    "templateApplicationLevel": "newPartners,existingPartners"
 }
 ```

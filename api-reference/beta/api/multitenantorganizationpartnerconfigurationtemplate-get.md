@@ -95,11 +95,11 @@ Content-Type: application/json
         "inboundAllowed": null,
         "outboundAllowed": null
     },
-    "templateApplicationLevel": "String"
+    "templateApplicationLevel": "newPartners,existingPartners"
 }
 ```
 
-The following example response shows the partner configuration settings for inbound trust and automatic redemption.
+The following example response shows the partner configuration settings for inbound trust and automatic redemption after they have been configured.
 
 ``` http
 HTTP/1.1 200 OK
@@ -121,7 +121,7 @@ Content-Type: application/json
         "inboundAllowed": true,
         "outboundAllowed": true
     },
-    "templateApplicationLevel": "String"
+    "templateApplicationLevel": "newPartners,existingPartners"
 }
 ```
 
