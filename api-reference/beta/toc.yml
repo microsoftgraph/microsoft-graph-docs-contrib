@@ -671,7 +671,7 @@ items:
           href: api/chat-get.md
         - name: List chats for user
           href: api/chat-list.md
-        - name: List for user (preview)
+        - name: List permission grants for user (preview)
           href: api/user-list-permissiongrants.md
       - name: To-do task
         items:
