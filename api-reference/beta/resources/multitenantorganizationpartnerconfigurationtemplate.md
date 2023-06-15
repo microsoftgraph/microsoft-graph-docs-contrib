@@ -1,6 +1,6 @@
 ---
 title: "multiTenantOrganizationPartnerConfigurationTemplate resource type"
-description: "Defines an optional multi-tenant organization template for inbound and outbound partner configuration settings."
+description: "Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines an optional multi-tenant organization template for inbound and outbound partner configuration settings. For more information, see [crossTenantAccessPolicyConfigurationPartner resource type](crosstenantaccesspolicyconfigurationpartner.md).
+Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization. For more information, see [crossTenantAccessPolicyConfigurationPartner resource type](crosstenantaccesspolicyconfigurationpartner.md).
 
-Each tenant has its own templates. This optional template can be used by any tenant if they want to autogenerate cross-tenant access policies for other tenants in a multi-tenant organization. This template can used when a tenant joins a multi-tenant organization, or when other tenants joins a multi-tenant organization.
+Each tenant has its own template. This template is applied when a tenant joins a multi-tenant organization, or when other tenants join a multi-tenant organization.
 
 ## Methods
 |Method|Return type|Description|

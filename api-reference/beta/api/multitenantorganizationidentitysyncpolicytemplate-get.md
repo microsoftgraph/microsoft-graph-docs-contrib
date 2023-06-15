@@ -1,6 +1,6 @@
 ---
 title: "Get multiTenantOrganizationIdentitySyncPolicyTemplate"
-description: "Get the user synchronization policy settings of the multi-tenant organization template."
+description: "Get the cross-tenant access policy template with an inbound user synchronization setting for a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the user synchronization policy settings of the multi-tenant organization template.
+Get the cross-tenant access policy template with an inbound user synchronization setting for a multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

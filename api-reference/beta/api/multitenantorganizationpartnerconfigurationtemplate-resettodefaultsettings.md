@@ -1,6 +1,6 @@
 ---
 title: "multiTenantOrganizationPartnerConfigurationTemplate: resetToDefaultSettings"
-description: "Reset the inbound and outbound partner configuration settings of the multi-tenant organization template to the default values."
+description: "Reset the cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization to the default values."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reset the inbound and outbound partner configuration settings of the multi-tenant organization template to the default values.
+Reset the cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization to the default values.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

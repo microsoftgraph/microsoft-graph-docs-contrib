@@ -1,6 +1,6 @@
 ---
 title: "Update multiTenantOrganizationPartnerConfigurationTemplate"
-description: "Update the inbound and outbound partner configuration settings of the multi-tenant organization template."
+description: "Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the inbound and outbound partner configuration settings of the multi-tenant organization template.
+Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
