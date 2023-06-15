@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph Toolkit disambiguation"
-description: "Explaining how the disambiguation feature how to developers can use it"
+description: "Explaining the disambiguation feature and how to developers can use it"
 ms.localizationpriority: medium
 author: gavinbarron
 ---
