@@ -12568,10 +12568,6 @@ items:
             - name: Create
               href: api/entitlementmanagement-post-accesspackages.md
             - name: Get
-              href: api/accesspackagesubject-get.md
-            - name: Update
-              href: api/accesspackagesubject-update.md
-            - name: Get
               href: api/accesspackage-get.md
             - name: Update
               href: api/accesspackage-update.md
@@ -12730,6 +12726,13 @@ items:
               href: api/accesspackage-list-accesspackageresourcerolescopes.md
             - name: Create
               href: api/accesspackage-post-accesspackageresourcerolescopes.md
+          - name: Access package subject
+            href: resources/accesspackagesubject.md
+            items:
+            - name: Get
+              href: api/accesspackagesubject-get.md
+            - name: Update
+              href: api/accesspackagesubject-update.md
           - name: Connected organization
             href: resources/connectedorganization.md
             items:
