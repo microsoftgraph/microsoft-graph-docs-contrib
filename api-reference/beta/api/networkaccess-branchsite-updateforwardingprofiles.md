@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Create forwardingProfile
+# Update forwardingProfile assosication with a branch
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
