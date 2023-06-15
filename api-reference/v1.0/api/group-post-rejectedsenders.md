@@ -1,7 +1,7 @@
 ---
 title: "Create rejectedSender"
 description: "Add a new user or group to the rejectedSender list."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
