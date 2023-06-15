@@ -42,9 +42,7 @@ Name|Description|
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters of an [accessPackageSubject](../resources/accesspackagesubject.md) object.
-
-The following table shows the properties that can be supplied when you update an [accessPackageSubject](../resources/accesspackagesubject.md).
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
