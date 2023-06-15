@@ -111,6 +111,10 @@ The <code>[@microsoft/mgt-react](./mgt-react.md)</code> package contains all the
 
 The <code>[@microsoft/mgt-spfx](./mgt-spfx.md)</code> package contains a SharePoint Framework library that's required to use Microsoft Graph Toolkit in SharePoint Framework solutions.
 
+<b>@microsoft/mgt-spfx-utils</b>
+
+The <code>@microsoft/mgt-spfx-utils</code> package contains a helper function to assit with lazy loading for [disambiguation](../customize-components/disambiguation.md#usage-in-sharepoint-framework-web-parts-with-react) when using Microsoft Graph Toolkit in SharePoint Framework solutions.
+
 ## Next steps
 
 You're now ready to start developing with Microsoft Graph Toolkit! The following guides are available to help you get started:

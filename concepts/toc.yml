@@ -1092,6 +1092,8 @@ items:
                 href: toolkit/customize-components/localization.md
               - name: Right-to-left support
                 href: toolkit/customize-components/right-to-left.md
+              - name: Disambiguation of components
+                href: toolkit/customize-components/disambiguation.md
       - name: Configure Connected Services
         displayName: Configure Connected Services in Visual Studio
         href: office-365-connected-services.md
