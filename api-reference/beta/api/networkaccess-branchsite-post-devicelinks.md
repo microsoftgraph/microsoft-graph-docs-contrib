@@ -50,14 +50,14 @@ In the request body, supply a JSON representation of the [microsoft.graph.networ
 
 You can specify the following properties when creating a **deviceLink**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|A unique name for each link. Required.|
-|ipAddress|String|Specifies the client IPv4 of the link. Required.|
-|deviceVendor|microsoft.graph.networkaccess.deviceVendor|Specifies the vendor of the link . The possible values are: `barracudaNetworks`, `checkPoint`, `ciscoMeraki`, `citrix`, `fortinet`, `hpeAruba`, `netFoundry`, `nuage`, `openSystems`, `paloAltoNetworks`, `riverbedTechnology`, `silverPeak`, `vmWareSdWan`, `versa`, `other`, `unknownFutureValue`. Required.|
-|tunnelConfiguration|[microsoft.graph.networkaccess.tunnelConfiguration](../resources/networkaccess-tunnelconfiguration.md)|Specifies the IP address and ASN of the border gateway protocol to send traffic from a link to the edge. Required.|
-|bgpConfiguration|[microsoft.graph.networkaccess.bgpConfiguration](../resources/networkaccess-bgpconfiguration.md)|Specifies connectivity settings (protocol, IPSec policy, and presharked key) for establishing connectivity. Required.|
+|name|String|Represents the name or identifier associated with a device link Required.|
+|ipAddress|String|Represents the IP address associated with a device link Required.|
+|deviceVendor|microsoft.graph.networkaccess.deviceVendor|Represents the vendor or manufacturer of the device associated with a device link. The possible values are: `barracudaNetworks`, `checkPoint`, `ciscoMeraki`, `citrix`, `fortinet`, `hpeAruba`, `netFoundry`, `nuage`, `openSystems`, `paloAltoNetworks`, `riverbedTechnology`, `silverPeak`, `vmWareSdWan`, `versa`, `other`. Required.|
+|lastModifiedDateTime|DateTimeOffset|Represents the date and time when the device link was last modified Required.|
+|tunnelConfiguration|[microsoft.graph.networkaccess.tunnelConfiguration](../resources/networkaccess-tunnelconfiguration.md)|Represents the tunnel configuration settings associated with a device link Required.|
+|bgpConfiguration|[microsoft.graph.networkaccess.bgpConfiguration](../resources/networkaccess-bgpconfiguration.md)|Represents the Border Gateway Protocol (BGP) configuration settings associated with a device link Required.|
 
 
 

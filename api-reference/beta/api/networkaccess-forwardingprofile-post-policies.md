@@ -1,6 +1,6 @@
 ---
 title: "Create policyLink"
-description: "Create a new policyLink object."
+description: "Create a new policy Link object."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new policyLink object.
+Create a new policy Link object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,12 +50,9 @@ In the request body, supply a JSON representation of the [microsoft.graph.networ
 
 You can specify the following properties when creating a **policyLink**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|state|microsoft.graph.networkaccess.status|state. The possible values are: `enabled`, `disabled`. Required.|
-
-
+|state|microsoft.graph.networkaccess.status|Defines the state of a policy link, which establishes a connection between a policy and a specific profile. The possible values are: `enabled`, `disabled`. Required.|
 
 
 ## Response

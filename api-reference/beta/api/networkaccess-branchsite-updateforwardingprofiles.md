@@ -1,6 +1,6 @@
 ---
 title: "Update branch and forwardingProfile"
-description: "Attach a forwarding profile to Branch"
+description: "Attaches a forwarding profile to a specific branch, establishing the configuration for routing and forwarding network traffic"
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Attach a forwarding profile to Branch
+Attaches a forwarding profile to a specific branch, establishing the configuration for routing and forwarding network traffic
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,10 +50,9 @@ In the request body, supply a JSON representation of the [microsoft.graph.networ
 
 You can specify the following properties when creating a **forwardingProfile**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|associations|[microsoft.graph.networkaccess.association](../resources/networkaccess-association.md) collection|forwarding profile Id. Required.|
+|associations|[microsoft.graph.networkaccess.association](../resources/networkaccess-association.md) collection|The forwarding profile collection represents a group or collection of multiple forwarding profiles. Required.|
 
 
 

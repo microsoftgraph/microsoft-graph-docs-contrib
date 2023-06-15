@@ -1,6 +1,6 @@
 ---
 title: "Get conditionalAccessSettings"
-description: "Read the  conditional access signaling for source IP restoration and Connectivity through NaaS"
+description: "The signaling mechanism enables both the preservation of the original source IP address in network traffic for accurate identification and tracking, and the establishment of scalable network connectivity through the NaaS (Network as a Service) option, simplifying the management of network infrastructure"
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the  conditional access signaling for source IP restoration and Connectivity through NaaS
+The signaling mechanism enables both the preservation of the original source IP address in network traffic for accurate identification and tracking, and the establishment of scalable network connectivity through the NaaS (Network as a Service) option, simplifying the management of network infrastructure
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
