@@ -2181,6 +2181,14 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Calendars.ReadBasic",
           "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [Get calendarGroup](https://learn.microsoft.com/en-us/graph/api/calendargroup-list-calendars?view=graph-rest-1.0) method of the [calendarGroup](https://learn.microsoft.com/en-us/graph/api/resources/calendargroup?view=graph-rest-1.0) resource.",
+          "Target": "calendarGroup"
+        },
+        {
+          "Id": "ae497d52-a781-46de-bec7-12a215043afd",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
           "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendars](https://learn.microsoft.com/en-us/graph/api/calendargroup-list-calendars?view=graph-rest-1.0) method of the [calendarGroup](https://learn.microsoft.com/en-us/graph/api/resources/calendargroup?view=graph-rest-1.0) resource.",
           "Target": "calendarGroup"
         },
