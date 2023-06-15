@@ -699,7 +699,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageSubjects",
           "ChangeType": "Addition",
-          "Description": "Added the **accessPackageSubjects** relationship to the [entitlementManagement](https://docs.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-beta) resource.",
+          "Description": "Added the **subjects** relationship to the [entitlementManagement](https://docs.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-beta) resource.",
           "Target": "entitlementManagement"
         }
       ],
