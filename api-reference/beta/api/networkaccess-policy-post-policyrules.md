@@ -46,10 +46,9 @@ In the request body, supply a JSON representation of the [microsoft.graph.networ
 
 You can specify the following properties when creating a **policyRule**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description** Required.|
+|name|String|Policy name Required.|
 
 
 

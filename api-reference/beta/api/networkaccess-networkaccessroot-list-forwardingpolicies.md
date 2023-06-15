@@ -1,6 +1,6 @@
 ---
 title: "List forwardingPolicies"
-description: "Get a list of the microsoft.graph.networkaccess.forwardingPolicy objects and their properties."
+description: "Returns a collection of forwarding policies that have been configured in the tenant"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.networkaccess.forwardingPolicy](../resources/networkaccess-forwardingpolicy.md) objects and their properties.
+Returns a collection of forwarding policies that have been configured in the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

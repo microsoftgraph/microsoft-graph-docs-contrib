@@ -1,6 +1,6 @@
 ---
 title: "List forwardingRules"
-description: "Get a list of the forwarding Rules in a policy."
+description: "Return a list of forwarding rules associated with a specific forwarding policy within a tenant"
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md) objects and their properties.
+Return a list of forwarding rules associated with a specific forwarding policy within a tenant
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [forwardingRule](../resources/forwardingrule.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [forwardingRule](../resources/networkaccess-forwardingrule.md) objects in the response body.
 
 ## Examples
 
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/forwardingPolicies/{policyId}/policyRules
+GET /networkAccess/forwardingPolicies/{policyId}/policyRules
 ```
 
 

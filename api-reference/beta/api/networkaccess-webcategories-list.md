@@ -1,6 +1,6 @@
 ---
 title: "List webCategories"
-description: "Get a list of the web Categories and their properties."
+description: "Return a list of web categories"
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the web Categories and their properties
+Return a list of web categories
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [filteringPolicyLink](../resources/filteringpolicylink.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [WebCategory](../resources/networkaccess-webcategory.md.md) objects in the response body.
 
 ## Examples
 
@@ -70,7 +70,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.networkaccess.filteringPolicyLink)"
+  "@odata.type": "Collection(microsoft.graph.networkaccess.webcategory)"
 }
 -->
 ``` http
