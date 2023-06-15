@@ -1,6 +1,6 @@
 ---
 title: "Get conditionalAccessSettings"
-description: "The signaling mechanism enables both the preservation of the original source IP address in network traffic for accurate identification and tracking, and the establishment of scalable network connectivity through the NaaS (Network as a Service) option, simplifying the management of network infrastructure"
+description: "Retrieve the conditional access settings (both the preservation of the original source IP address in network traffic for accurate identification and tracking, and the establishment of scalable network connectivity through the Global Secure Access)"
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The signaling mechanism enables both the preservation of the original source IP address in network traffic for accurate identification and tracking, and the establishment of scalable network connectivity through the NaaS (Network as a Service) option, simplifying the management of network infrastructure
+Retrieve the conditional access settings (both the preservation of the original source IP address in network traffic for accurate identification and tracking, and the establishment of scalable network connectivity through the Global Secure Access)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 

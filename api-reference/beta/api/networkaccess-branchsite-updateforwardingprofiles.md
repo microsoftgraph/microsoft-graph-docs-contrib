@@ -14,12 +14,14 @@ Namespace: microsoft.graph.networkaccess
 
 Attaches a forwarding profile to a specific branch, establishing the configuration for routing and forwarding network traffic
 
+דייBy attaching a forwarding profile to a branch, developers can define how network traffic should be routed and forwarded within that specific branch. The forwarding profile allows customization of traffic handling based on various criteria such as source, destination, protocol, or port.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 

@@ -1,6 +1,6 @@
 ---
 title: "List forwardingPolicyLinks"
-description: "Get a list of the microsoft.graph.networkaccess.forwardingPolicyLink objects and their properties."
+description: "Retrieve a list of forwarding policy links associated with a specific forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) objects and their properties.
+Retrieve a list of forwarding policy links associated with a specific forwarding profile
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 

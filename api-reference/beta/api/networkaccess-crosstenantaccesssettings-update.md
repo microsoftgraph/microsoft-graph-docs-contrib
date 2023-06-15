@@ -1,6 +1,6 @@
 ---
 title: "Update crossTenantAccessSettings"
-description: "Updates the network packet tagging status for a user's tenant ID to enforce Tenant Restrictions Policies (TRv2 Policies) that prevent data exfiltration to external tenants."
+description: "Updates the cross-tenant access settings (network packet tagging to enforce Tenant Restrictions Policies (TRv2 Policies) that prevent data exfiltration to external tenants)"
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md) object.
+Updates the cross-tenant access settings (network packet tagging to enforce Tenant Restrictions Policies (TRv2 Policies) that prevent data exfiltration to external tenants)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -47,7 +47,7 @@ PATCH /networkAccess/settings/crossTenantAccess
 
 |Property|Type|Description|
 |:---|:---|:---|
-|networkPacketTaggingStatus|microsoft.graph.networkaccess.status| network packet tagging status. The possible values are: `enabled`, `disabled`. Required.|
+|networkPacketTaggingStatus|microsoft.graph.networkaccess.status|Network packet tagging status. The possible values are: `enabled`, `disabled`. Required.|
 
 
 

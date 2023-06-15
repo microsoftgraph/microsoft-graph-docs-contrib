@@ -1,6 +1,6 @@
 ---
 title: "Update forwardingOptions"
-description: "Update the  skipDnsLookupState flag to skip DNS lookup and forward M365 traffic directly to Front Door using the client-resolved destination"
+description: "Update the forwarding options for the tenant (focusing specifically on the "skipDnsLookupState" flag. This flag determines whether DNS lookup will be skipped and M365 (Microsoft 365) traffic will be forwarded directly to the Front Door using the client-resolved destination)."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -47,7 +47,7 @@ PATCH /networkAccess/settings/forwardingOptions
 
 |Property|Type|Description|
 |:---|:---|:---|
-|signalingStatus|microsoft.graph.networkaccess.status|skipDnsLookupState status. The possible values are: `enabled`, `disabled`. Required.|
+|signalingStatus|microsoft.graph.networkaccess.status|"skipDnsLookupState" flag is a boolean value that indicates whether DNS lookup should be performed at the client-side. When enabled (true), DNS lookup is skipped, and M365 traffic is directly forwarded to the Front Door using the client-resolved destination IP status. The possible values are: `enabled`, `disabled`. Required.|
 
 
 

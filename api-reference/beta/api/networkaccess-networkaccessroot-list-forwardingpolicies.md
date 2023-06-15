@@ -1,6 +1,6 @@
 ---
 title: "List forwardingPolicies"
-description: "Returns a collection of forwarding policies that have been configured in the tenant"
+description: "Retrieve a list of forwarding policies associated with a specific forwarding profile"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a collection of forwarding policies that have been configured in the tenant.
+Retrieve a list of forwarding policies associated with a specific forwarding profile
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 

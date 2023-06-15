@@ -1,6 +1,6 @@
 ---
 title: "Onboard tenant"
-description: "Initiates the onboarding process for a tenant. By making a POST request to this operation, administrators can begin the onboarding process for a specific tenant, allowing them to set up and configure the necessary settings and resources required for the tenant to become fully operational."
+description: "Initiate the onboarding process for a specific tenant."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) object.
+Initiate the onboarding process for a specific tenant
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -58,14 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Collection URI for microsoft.graph.networkaccess.tenantStatus not found
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.networkaccess.tenantStatus",
-  "onboardingStatus": "String",
-  "onboardingErrorMessage": "String"
-}
+POST https://graph.microsoft.com/beta/networkAccess/microsoft.graph.networkaccess.onboard
 ```
 
 

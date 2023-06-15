@@ -1,6 +1,6 @@
 ---
 title: "Get forwardingOptions"
-description: "Read the skipDnsLookupState flag to skip DNS lookup and forward M365 traffic directly to Front Door using the client-resolved destination"
+description: "Retrieve the forwarding options for the tenant (focusing specifically on the "skipDnsLookupState" flag. This flag determines whether DNS lookup will be skipped and M365 (Microsoft 365) traffic will be forwarded directly to the Front Door using the client-resolved destination)."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the  conditional access signaling for source IP restoration and Connectivity through NaaS
+Retrieve the forwarding options for the tenant (focusing specifically on the "skipDnsLookupState" flag. This flag determines whether DNS lookup will be skipped and M365 (Microsoft 365) traffic will be forwarded directly to the Front Door using the client-resolved destination).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 

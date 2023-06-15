@@ -1,6 +1,6 @@
 ---
 title: "List forwardingProfiles"
-description: "Get a list of the forwardingProfile in the tenant."
+description: "Retrieve a list of forwarding profiles."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) objects in the tenant.
+Retrieve a list of forwarding profiles
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 

@@ -1,6 +1,6 @@
 ---
 title: "List deviceLinks"
-description: "Get a list of the microsoft.graph.networkaccess.deviceLink objects and their properties."
+description: "Allows developers to retrieve a list of device links associated with a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) objects and their properties.
+Allows developers to retrieve a list of device links associated with a specific branch
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [deviceLink](../resources/devicelink.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [deviceLink](../resources/networkaccess-devicelink.md) objects in the response body.
 
 ## Examples
 
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}/deviceLinks
+GET /networkAccess/branches/{branchSiteId}/deviceLinks
 ```
 
 
@@ -84,7 +84,7 @@ Content-Type: application/json
     "value": [
         {
             "id": "1030ca77-40e9-4cd3-bf71-b5d74c2f3cb0",
-            "name": "Link1",
+            "name": "MainLink",
             "ipAddress": "24.123.22.168",
             "version": "1.0.0",
             "deviceVendor": "checkPoint",

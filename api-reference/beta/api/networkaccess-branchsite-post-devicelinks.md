@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -71,7 +71,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}/deviceLinks
+POST /networkAccess/branches/{branchSiteId}/deviceLinks
 
 {
     "name": "Branch test",
@@ -125,7 +125,7 @@ HTTP/1.1 201 Created
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches/$entity",
     "id": "1a4294bc-9467-4003-9d43-8edf14cbfa71",
-    "name": "Moshe & Yuval test",
+    "name": "Branch B1",
     "country": "Israel",
     "region": "Center",
     "version": "1.0.0",

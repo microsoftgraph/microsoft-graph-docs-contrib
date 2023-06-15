@@ -1,6 +1,6 @@
 ---
-title: "Update branchSite"
-description: "Update the properties of a microsoft.graph.networkaccess.branchSite object."
+title: "Update branch"
+description: "Update the configuration or properties of a specific branch"
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.
+Update the configuration or properties of a specific branch
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 

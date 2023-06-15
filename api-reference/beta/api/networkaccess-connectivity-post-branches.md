@@ -1,5 +1,5 @@
 ---
-title: "Create branch site"
+title: "Create branch"
 description: "Create a new branch site."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -48,10 +48,10 @@ You can specify the following properties when creating a **branchSite**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The name of the branch site. Required.|
-|country|String|The country the branch site is created in. Required.|
-|region|String|The location the branch site is created in. Required.|
-|bandwidthCapacity|Int64|Determines the maximum allowed Mbps (magabits per second) bandwidth from a branch site. Required.|
+|name|String|The name of the branch.  Required.|
+|country|String|The country the branch is created in. Required.|
+|region|String|The location the branch is created in. Required.|
+|bandwidthCapacity|Int64|Determines the maximum allowed Mbps (magabits per second) bandwidth from a branch. Required.|
 
 
 

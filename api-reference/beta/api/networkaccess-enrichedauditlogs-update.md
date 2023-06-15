@@ -1,6 +1,6 @@
 ---
 title: "Update enrichedAuditLogs"
-description: "This API call allows developers to update the "enrichedAuditLogsSettings" for the enriched audit logs workloads. By sending a PUT request to the specified endpoint with the updated settings in the request body, developers can control the enrichment feature for each partner workload (SharePoint, Teams, and Exchange)."
+description: "Update the settings for the enriched audit logs workloads. By sending a PATCH request to the specified endpoint with the updated settings in the request body, developers can control the enrichment feature for each partner workload (SharePoint, Teams, and Exchange)."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) object.
+Update the settings for the enriched audit logs workloads. By sending a PATCH request to the specified endpoint with the updated settings in the request body, developers can control the enrichment feature for each partner workload (SharePoint, Teams, and Exchange)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 

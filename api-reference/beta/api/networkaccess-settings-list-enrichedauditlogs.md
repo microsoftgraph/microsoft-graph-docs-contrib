@@ -1,6 +1,6 @@
 ---
 title: "List enrichedAuditLogs"
-description: "Allows developers to retrieve the enriched audit logs for the configured workloads. This API call provides a way to access the comprehensive enriched audit logs data, including the original audit logs from partners such as SharePoint, Teams, and Exchange"
+description: "Retrieve the enriched audit logs for the configured workloads. This API call provides a way to access the comprehensive enriched audit logs data, including the original audit logs from partners such as SharePoint, Teams, and Exchange"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) objects and their properties.
+Retrieve the enriched audit logs for the configured workloads. This API call provides a way to access the comprehensive enriched audit logs data, including the original audit logs from partners such as SharePoint, Teams, and Exchange
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.networkaccess.enrichedAuditLogs not found
+GET /networkaccess/settings/enrichedAuditLogs
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.networkaccess.enrichedAuditLogs not found
+GET https://graph.microsoft.com/beta/networkaccess/settings/enrichedAuditLogs
 ```
 
 
@@ -83,13 +83,13 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.networkaccess.enrichedAuditLogs",
       "id": "c477a530-2fe6-302f-79d5-f908851eae6e",
       "sharepoint": {
-        "@odata.type": "microsoft.graph.networkaccess.enrichedAuditLogsSettings"
+        "status": "enabled"
       },
       "teams": {
-        "@odata.type": "microsoft.graph.networkaccess.enrichedAuditLogsSettings"
+        "status": "enabled"
       },
       "exchange": {
-        "@odata.type": "microsoft.graph.networkaccess.enrichedAuditLogsSettings"
+        "status": "disabled"
       }
     }
   ]
