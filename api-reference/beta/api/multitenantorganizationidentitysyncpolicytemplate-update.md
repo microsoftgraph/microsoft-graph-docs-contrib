@@ -1,6 +1,6 @@
 ---
 title: "Update multiTenantOrganizationIdentitySyncPolicyTemplate"
-description: "Update the cross-tenant access policy template with an inbound user synchronization setting for a multi-tenant organization."
+description: "Update the cross-tenant access policy template with user synchronization settings for a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the cross-tenant access policy template with an inbound user synchronization setting for a multi-tenant organization.
+Update the cross-tenant access policy template with user synchronization settings for a multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-Update the user synchronization policy settings of the template. For more information, see [crossTenantIdentitySyncPolicyPartner resource type](../resources/crosstenantidentitysyncpolicypartner.md).
+Update the user synchronization settings of the template. For more information, see [crossTenantIdentitySyncPolicyPartner resource type](../resources/crosstenantidentitysyncpolicypartner.md).
 
 ### Request
 
