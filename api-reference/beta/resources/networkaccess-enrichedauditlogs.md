@@ -1,6 +1,6 @@
 ---
 title: "enrichedAuditLogs resource type"
-description: "This entity is designed to offer a comprehensive snapshot of our enhanced audit log workloads. At present, it encompasses three partners: SharePoint, Teams, and Exchange. Within each partner, the status indicates whether the corresponding feature is activated or deactivated"
+description: "Represents a complete overview of the enriched audit logs workloads within the tenant. It consists of three partners: SharePoint, Teams, and Exchange. Each partner represents a specific workload that generates audit logs"
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This entity is designed to offer a comprehensive snapshot of our enhanced audit log workloads. At present, it encompasses three partners: SharePoint, Teams, and Exchange. Within each partner, the status indicates whether the corresponding feature is activated or deactivated
+Represents a complete overview of the enriched audit logs workloads within the tenant. It consists of three partners: SharePoint, Teams, and Exchange. Each partner represents a specific workload that generates audit logs
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).

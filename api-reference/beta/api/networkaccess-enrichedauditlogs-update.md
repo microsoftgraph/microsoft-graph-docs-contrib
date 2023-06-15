@@ -1,0 +1,118 @@
+---
+title: "Update enrichedAuditLogs"
+description: "This API call allows developers to update the "enrichedAuditLogsSettings" for the enriched audit logs workloads. By sending a PUT request to the specified endpoint with the updated settings in the request body, developers can control the enrichment feature for each partner workload (SharePoint, Teams, and Exchange)."
+author: "Moti-ba"
+ms.localizationpriority: medium
+ms.prod: identity-and-access
+doc_type: apiPageType
+---
+
+# Update enrichedAuditLogs
+Namespace: microsoft.graph.networkaccess
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of a [microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
+
+To make changes, the calling user must also be in one of the following [Azure AD roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference):
+
+* Global Secure Access Administrator
+* Security Administrator
+* Global Administrator
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /networkAccess/settings/enrichedAuditLogs
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+
+|Property|Type|Description|
+|:---|:---|:---|
+|sharepoint|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Sharepoint enrichment log status Optional.|
+|teams|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Teams enrichment log status Optional.|
+|exchange|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Exchange enrichment log status Optional.|
+
+
+
+## Response
+
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) object in the response body.
+
+## Examples
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_enrichedauditlogs"
+}
+-->
+``` http
+PATCH /networkAccess/settings/enrichedAuditLogs
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.networkaccess.enrichedAuditLogs",
+  "sharepoint": {
+    "@odata.type": "microsoft.graph.networkaccess.enrichedAuditLogsSettings"
+  },
+  "teams": {
+    "@odata.type": "microsoft.graph.networkaccess.enrichedAuditLogsSettings"
+  },
+  "exchange": {
+    "@odata.type": "microsoft.graph.networkaccess.enrichedAuditLogsSettings"
+  }
+}
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.networkaccess.enrichedAuditLogs",
+  "id": "c477a530-2fe6-302f-79d5-f908851eae6e",
+  "sharepoint": {
+    "@odata.type": "microsoft.graph.networkaccess.enrichedAuditLogsSettings"
+  },
+  "teams": {
+    "@odata.type": "microsoft.graph.networkaccess.enrichedAuditLogsSettings"
+  },
+  "exchange": {
+    "@odata.type": "microsoft.graph.networkaccess.enrichedAuditLogsSettings"
+  }
+}
+```
+

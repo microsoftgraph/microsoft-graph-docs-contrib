@@ -1,7 +1,7 @@
 ---
 title: "enrichedAuditLogsSettings resource type"
-description: "The enriched audit logs settings will be organized in an expandable object to centralize all future feature-relevant settings. At present, it only includes the 'status' setting, which indicates whether the enrichment is turned on or off for that particular workload"
-author: "Moti-ba"
+description: "Represents a configuration object that centralizes enriched audit logs settings related to speficic M365 workload"
+author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: resourcePageType
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The enriched audit logs settings will be organized in an expandable object to centralize all future feature-relevant settings. At present, it only includes the 'status' setting, which indicates whether the enrichment is turned on or off for that particular workload
+Represents a configuration object that centralizes enriched audit logs settings related to speficic M365 workload
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|status|microsoft.graph.networkaccess.status|Indicate if Global Secure Access should enrich audit logs.The possible values are: `enabled`, `disabled`|
+|status|microsoft.graph.networkaccess.status|Define the current status of the enrichment feature for a particular workload.The possible values are: `enabled`, `disabled`|
 
 ## Relationships
 None.
