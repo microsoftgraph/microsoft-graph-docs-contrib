@@ -20,11 +20,6 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List connectivities](../api/networkaccess-networkaccessroot-list-connectivity.md)|[microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md) collection|Get a list of the [microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md) objects and their properties.|
-|[Create connectivity](../api/networkaccess-networkaccessroot-post-connectivity.md)|[microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md)|Create a new [microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md) object.|
-|[Get connectivity](../api/networkaccess-connectivity-get.md)|[microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md) object.|
-|[Update connectivity](../api/networkaccess-connectivity-update.md)|[microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md)|Update the properties of a [microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md) object.|
-|[Delete connectivity](../api/networkaccess-networkaccessroot-delete-connectivity.md)|None|Delete a [microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md) object.|
 |[List branches](../api/networkaccess-networkaccessroot-list-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) collection|Get the branch resources from the branches navigation property.|
 |[Create branchSite](../api/networkaccess-connectivity-post-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Create a new branch object.|
 

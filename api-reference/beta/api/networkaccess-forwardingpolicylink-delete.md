@@ -1,18 +1,18 @@
 ---
-title: "Update forwardingOptions"
-description: "Retrieve the forwarding options for the tenant."
+title: "Delete forwardingPolicyLink"
+description: "Delete a specific forwarding policy link."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Update forwardingOptions
+# Delete forwardingPolicyLink
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the conditional access signaling for source IP restoration and Connectivity through NaaS
+Delete a specific forwarding policy link
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,28 +32,20 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /networkAccess/settings/forwardingOptions
+DELETE /networkaccess/forwardingProfiles/{forwardingProfile_id}/policies/{policy_id}
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
-
-
-|Property|Type|Description|
-|:---|:---|:---|
-|signalingStatus|microsoft.graph.networkaccess.status|"skipDnsLookupState" flag is a boolean value that indicates whether DNS lookup should be performed at the client-side. When enabled (true), DNS lookup is skipped, and M365 traffic is directly forwarded to the Front Door using the client-resolved destination IP status. The possible values are: `enabled`, `disabled`. Required.|
-
-
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 OK` response code 
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -61,16 +53,11 @@ If successful, this method returns a `204 OK` response code
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_conditionalaccesssettings"
+  "name": "delete_forwardingpolicylink"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/networkAccess/settings/conditionalAccess
-Request:
-{
-    "skipDnsLookupState": "disabled"
-}
-
+DELETE /networkaccess/forwardingProfiles/{forwardingProfile_id}/policies/{policy_id}
 ```
 
 
@@ -85,5 +72,4 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 

@@ -25,7 +25,6 @@ Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkacc
 |[List forwardingRules](../api/networkaccess-forwardingrule-list.md)|[microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md) collection|Get a list of the [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md) objects and their properties.|
 |[Get forwardingRule](../api/networkaccess-forwardingrule-get.md)|[microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md) object.|
 |[Update forwardingRule](../api/networkaccess-forwardingrule-update.md)|[microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md)|Update the properties of a [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md) object.|
-|[Delete forwardingRule](../api/networkaccess-forwardingrule-delete.md)|None|Delete a [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md) object.|
 
 ## Properties
 |Property|Type|Description|

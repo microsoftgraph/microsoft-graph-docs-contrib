@@ -19,10 +19,7 @@ Represents a log entry in the network access traffic log. The networkAccessTraff
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List networkAccessTraffics](../api/networkaccess-logs-list-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Get a list of the [microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) objects and their properties.|
-|[Create networkAccessTraffic](../api/networkaccess-logs-post-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md)|Create a new [microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) object.|
 |[Get networkAccessTraffic](../api/networkaccess-networkaccesstraffic-get.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) object.|
-|[Update networkAccessTraffic](../api/networkaccess-networkaccesstraffic-update.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md)|Update the properties of a [microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) object.|
-|[Delete networkAccessTraffic](../api/networkaccess-logs-delete-traffic.md)|None|Delete a [microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) object.|
 
 ## Properties
 |Property|Type|Description|

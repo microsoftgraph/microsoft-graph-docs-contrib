@@ -22,8 +22,6 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List policyLinks](../api/networkaccess-filteringprofile-list-policies.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|Get a list of the [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) objects and their properties.|
-|[Create policyLink](../api/networkaccess-filteringprofile-post-policies.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Create a new [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) object.|
 |[Get policyLink](../api/networkaccess-policylink-get.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) object.|
 |[Update policyLink](../api/networkaccess-policylink-update.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Update the properties of a [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) object.|
 |[Delete policyLink](../api/networkaccess-filteringprofile-delete-policies.md)|None|Delete a [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) object.|

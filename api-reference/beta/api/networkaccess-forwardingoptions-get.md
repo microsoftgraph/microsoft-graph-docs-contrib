@@ -1,6 +1,6 @@
 ---
 title: "Get forwardingOptions"
-description: "Retrieve the forwarding options for the tenant (focusing specifically on the "skipDnsLookupState" flag. This flag determines whether DNS lookup will be skipped and M365 (Microsoft 365) traffic will be forwarded directly to the Front Door using the client-resolved destination)."
+description: "Retrieve the forwarding options for the tenant."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access

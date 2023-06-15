@@ -23,10 +23,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List policies](../api/networkaccess-policylink-list-policy.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) collection|Get a list of the [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) objects and their properties.|
-|[Create policy](../api/networkaccess-policylink-post-policy.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Create a new [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.|
 |[Get policy](../api/networkaccess-policy-get.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.|
 |[Update policy](../api/networkaccess-policy-update.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Update the properties of a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.|
-|[Delete policy](../api/networkaccess-policylink-delete-policy.md)|None|Delete a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.|
 |[List policyRules](../api/networkaccess-policy-list-policyrules.md)|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|Get the policyRule resources from the policyRules navigation property.|
 |[Create policyRule](../api/networkaccess-policy-post-policyrules.md)|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md)|Create a new policyRule object.|
 

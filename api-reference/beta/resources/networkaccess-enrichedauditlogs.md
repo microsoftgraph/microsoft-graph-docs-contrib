@@ -21,11 +21,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List enrichedAuditLogs](../api/networkaccess-settings-list-enrichedauditlogs.md)|[microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) collection|Get a list of the [microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) objects and their properties.|
-|[Create enrichedAuditLogs](../api/networkaccess-settings-post-enrichedauditlogs.md)|[microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md)|Create a new [microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) object.|
 |[Get enrichedAuditLogs](../api/networkaccess-enrichedauditlogs-get.md)|[microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) object.|
 |[Update enrichedAuditLogs](../api/networkaccess-enrichedauditlogs-update.md)|[microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md)|Update the properties of a [microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) object.|
-|[Delete enrichedAuditLogs](../api/networkaccess-settings-delete-enrichedauditlogs.md)|None|Delete a [microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) object.|
 
 ## Properties
 |Property|Type|Description|

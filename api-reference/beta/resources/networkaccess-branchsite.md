@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List branchSites](../api/networkaccess-networkaccessroot-list-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) collection|Get a list of the [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) objects and their properties.|
-|[Create branchSite](../api/networkaccess-networkaccessroot-post-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Create a new [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
+|[Create branchSite](../api/networkaccess-connectivity-post-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Create a new [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
 |[Get branchSite](../api/networkaccess-branchsite-get.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
 |[Update branchSite](../api/networkaccess-branchsite-update.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Update the properties of a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
 |[Delete branchSite](../api/networkaccess-networkaccessroot-delete-branches.md)|None|Delete a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|

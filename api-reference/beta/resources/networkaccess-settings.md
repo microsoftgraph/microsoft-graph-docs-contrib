@@ -21,10 +21,10 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List conditionalAccessSettings](../api/networkaccess-settings-list-conditionalaccess.md)|[microsoft.graph.networkaccess.conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md) collection|Get the conditionalAccessSettings resources from the conditionalAccess navigation property.|
-|[Create conditionalAccessSettings](../api/networkaccess-settings-post-conditionalaccess.md)|[microsoft.graph.networkaccess.conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md)|Create a new conditionalAccessSettings object.|
-|[List crossTenantAccessSettings](../api/networkaccess-settings-list-crosstenantaccess.md)|[microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md) collection|Get the crossTenantAccessSettings resources from the crossTenantAccess navigation property.|
-|[Create crossTenantAccessSettings](../api/networkaccess-settings-post-crosstenantaccess.md)|[microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md)|Create a new crossTenantAccessSettings object.|
+|[Get conditionalAccessSettings](../api/networkaccess-conditionalaccesssettings-get.md)|[microsoft.graph.networkaccess.conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md) collection|Get the conditionalAccessSettings resources from the conditionalAccess navigation property.|
+|[Update conditionalAccessSettings](../api/networkaccess-conditionalaccesssettings-update.md)|[microsoft.graph.networkaccess.conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md)|Create a new conditionalAccessSettings object.|
+|[Get crossTenantAccessSettings](../api/networkaccess-crosstenantaccesssettings-get.md)|[microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md) collection|Get the crossTenantAccessSettings resources from the crossTenantAccess navigation property.|
+|[Update crossTenantAccessSettings](../api/networkaccess-crosstenantaccesssettings-update.md)|[microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md)|Create a new crossTenantAccessSettings object.|
 
 ## Properties
 |Property|Type|Description|

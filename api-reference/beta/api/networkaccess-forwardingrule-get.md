@@ -1,18 +1,18 @@
 ---
-title: "List enrichedAuditLogs"
-description: "Retrieve the enriched audit logs for the configured workloads. This API call provides a way to access the comprehensive enriched audit logs data, including the original audit logs from partners such as SharePoint, Teams, and Exchange"
+title: "Get forwardingRule"
+description: "Retrieve information about a specific forwarding rule."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# List enrichedAuditLogs
+# Get forwardingRule
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the enriched audit logs for the configured workloads. This API call provides a way to access the comprehensive enriched audit logs data, including the original audit logs from partners such as SharePoint, Teams, and Exchange
+Retrieve information about a specific forwarding rule
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkaccess/settings/enrichedAuditLogs
+GET /forwardingRule
 ```
 
 ## Optional query parameters
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md) object in the response body.
 
 ## Examples
 
@@ -56,11 +56,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_enrichedauditlogs"
+  "name": "get_forwardingrule"
 }
 -->
 ``` http
-GET /networkaccess/settings/enrichedAuditLogs
+GET https://graph.microsoft.com/beta/networkaccess/forwardingprofile/{forwardingprofileId}/policyRules/{RuleId)
 ```
 
 
@@ -70,7 +70,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.networkaccess.enrichedAuditLogs)"
+  "@odata.type": "microsoft.graph.networkaccess.forwardingRule"
 }
 -->
 ``` http
@@ -78,21 +78,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.networkaccess.enrichedAuditLogs",
-      "id": "c477a530-2fe6-302f-79d5-f908851eae6e",
-      "sharepoint": {
-        "status": "enabled"
-      },
-      "teams": {
-        "status": "enabled"
-      },
-      "exchange": {
-        "status": "disabled"
+  "value": {
+    "@odata.type": "#microsoft.graph.networkaccess.forwardingRule",
+    "id": "d20eb417-05d7-3d2d-1805-0d4caeea1e8e",
+    "name": "String",
+    "ruleType": "String",
+    "action": "String",
+    "destinations": [
+      {
+        "@odata.type": "microsoft.graph.networkaccess.webCategory"
       }
-    }
-  ]
+    ]
+  }
 }
 ```
 

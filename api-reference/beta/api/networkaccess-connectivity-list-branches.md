@@ -1,18 +1,18 @@
 ---
-title: "List enrichedAuditLogs"
-description: "Retrieve the enriched audit logs for the configured workloads. This API call provides a way to access the comprehensive enriched audit logs data, including the original audit logs from partners such as SharePoint, Teams, and Exchange"
-author: "Moti-ba"
+title: "List branches"
+description: "Retrieve a list of branches within a tenant."
+author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# List enrichedAuditLogs
+# List branchSites
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the enriched audit logs for the configured workloads. This API call provides a way to access the comprehensive enriched audit logs data, including the original audit logs from partners such as SharePoint, Teams, and Exchange
+Retrieve a list of branches within a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkaccess/settings/enrichedAuditLogs
+GET /networkAccess/connectivity/branches
 ```
 
 ## Optional query parameters
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [branchSite](../resources/branchsite.md) objects in the response body.
 
 ## Examples
 
@@ -56,11 +56,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_enrichedauditlogs"
+  "name": "list_branchsite"
 }
 -->
 ``` http
-GET /networkaccess/settings/enrichedAuditLogs
+GET /networkAccess/connectivity/branches
 ```
 
 
@@ -70,7 +70,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.networkaccess.enrichedAuditLogs)"
+  "@odata.type": "Collection(microsoft.graph.networkaccess.branchSite)"
 }
 -->
 ``` http
@@ -80,17 +80,15 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.networkaccess.enrichedAuditLogs",
-      "id": "c477a530-2fe6-302f-79d5-f908851eae6e",
-      "sharepoint": {
-        "status": "enabled"
-      },
-      "teams": {
-        "status": "enabled"
-      },
-      "exchange": {
-        "status": "disabled"
-      }
+      "@odata.type": "#microsoft.graph.networkaccess.branchSite",
+      "id": "b90383de-6bac-87d9-e2a1-fe09ccb94c93",
+      "name": "String",
+      "country": "String",
+      "region": "String",
+      "bandwidthCapacity": "Integer",
+      "connectivityState": "String",
+      "version": "String",
+      "lastModifiedDateTime": "String (timestamp)"
     }
   ]
 }

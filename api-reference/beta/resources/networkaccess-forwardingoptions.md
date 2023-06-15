@@ -20,11 +20,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List forwardingOptions](../api/networkaccess-settings-list-forwardingoptions.md)|[microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md) collection|Get a list of the [microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md) objects and their properties.|
-|[Create forwardingOptions](../api/networkaccess-settings-post-forwardingoptions.md)|[microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md)|Create a new [microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md) object.|
 |[Get forwardingOptions](../api/networkaccess-forwardingoptions-get.md)|[microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md) object.|
 |[Update forwardingOptions](../api/networkaccess-forwardingoptions-update.md)|[microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md)|Update the properties of a [microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md) object.|
-|[Delete forwardingOptions](../api/networkaccess-settings-delete-forwardingoptions.md)|None|Delete a [microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md) object.|
 
 ## Properties
 |Property|Type|Description|

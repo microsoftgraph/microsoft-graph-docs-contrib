@@ -20,11 +20,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tenantStatus](../api/networkaccess-networkaccessroot-list-tenantstatus.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) collection|Get a list of the [microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) objects and their properties.|
-|[Create tenantStatus](../api/networkaccess-networkaccessroot-post-tenantstatus.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Create a new [microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) object.|
 |[Get tenantStatus](../api/networkaccess-tenantstatus-get.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) object.|
-|[Update tenantStatus](../api/networkaccess-tenantstatus-update.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Update the properties of a [microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) object.|
-|[Delete tenantStatus](../api/networkaccess-networkaccessroot-delete-tenantstatus.md)|None|Delete a [microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) object.|
+|[Update tenantStatus](../api/networkaccess-networkaccessroot-post-tenantstatus.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Update the properties of a [microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) object.|
 
 ## Properties
 |Property|Type|Description|
