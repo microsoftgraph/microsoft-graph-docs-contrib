@@ -48,7 +48,7 @@ The following table shows the properties that can be supplied when you update an
 
 |Property|Type|Description|
 |:---|:---|:---|
-|subjectLifecycle|accessPackageSubjectLifecycle|The lifecycle of the subject user, if a guest. The possible values are: `notDefined`, `notGoverned`, `governed`, `unknownFutureValue`.|
+|subjectLifecycle|accessPackageSubjectLifecycle|The lifecycle of the subject user, if a guest. The possible values are: `notDefined`, `notGoverned`, `governed`.|
 
 ## Response
 
