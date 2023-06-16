@@ -56,15 +56,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ## Examples
 
-
 ### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "termstoresetpost"
-}
--->
-
 ``` http
 POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets
 Content-Type: application/json
@@ -74,7 +66,7 @@ Content-Type: application/json
   "parentGroup":{
       "id": "fc733b51-10f1-40fd-b784-dc6d1e42804b"
    },
-   "localizedName" : [
+   "localizedNames" : [
       {
         "languageTag" : "en-US",
         "name" : "Department"
@@ -85,35 +77,32 @@ Content-Type: application/json
 
 
 ### Response
-
 >**Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
-  
+  "@odata.type": "microsoft.graph.termstore.set"
 }
 -->
-
 ``` http
 HTTP/1.1 201 Created
-```
-<!--
-"@odata.type": "microsoft.graph.termStore.set"Content-Type: application/json
+Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.termStore.set",
   "id": "3607e9f9-e9f9-3607-f9e9-0736f9e90736",
-  "localizedName" : [
+  "localizedNames" : [
       {
         "languageTag" : "en-US",
         "name" : "Department"
       }
   ]
-}-->
+}
+```
 
-<!--[microsoft.graph.termStore.set]: ../resources/termstore-set.md
+
+[microsoft.graph.termStore.set]: ../resources/termstore-set.md
 [microsoft.graph.termStore.group]: ../resources/termstore-group.md
-[microsoft.graph.termStore.term]: ../resources/termstore-term.md-->
+[microsoft.graph.termStore.term]: ../resources/termstore-term.md
 
 <!--
 {
@@ -126,5 +115,4 @@ HTTP/1.1 201 Created
   ]
 }
 -->
-
 
