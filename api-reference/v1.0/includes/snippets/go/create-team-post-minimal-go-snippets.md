@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTeam()
@@ -23,10 +23,9 @@ requestBody.SetDescription(&description)
 
 
 conversationMember := graphmodels.NewConversationMember()
-odataType := "#microsoft.graph.aadUserConversationMember"
-conversationMember.SetOdataType(&odataType)
 roles := []string {
 	"owner",
+
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{

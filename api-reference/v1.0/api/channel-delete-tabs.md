@@ -49,16 +49,23 @@ If successful, this method returns `204 No Content` response code. It does not r
 ## Example
 ### Request
 The following is an example of a request.
+
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "channeldeletetabs"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ```
 
 ### Response
 The following is an example of the response.
+
+<!-- {
+  "blockType": "response"
+} -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

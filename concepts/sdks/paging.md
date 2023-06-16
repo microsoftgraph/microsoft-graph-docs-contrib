@@ -26,7 +26,7 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 ```csharp
 var messages = await graphClient.Me.Messages
-    .GetAsync(requestConfiguration => 
+    .GetAsync(requestConfiguration =>
     {
         requestConfiguration.QueryParameters.Top = 10;
         requestConfiguration.QueryParameters.Select = new string[] { "sender", "subject", "body" };
@@ -117,24 +117,22 @@ while(messagesPage != null) {
 
 ### [Go](#tab/Go)
 
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
 ```go
 import (
     abstractions "github.com/microsoft/kiota-abstractions-go"
     msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
-    "github.com/microsoftgraph/msgraph-sdk-go/me"
+    "github.com/microsoftgraph/msgraph-sdk-go/users"
     "github.com/microsoftgraph/msgraph-sdk-go/models"
 )
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.body-content-type=\"text\"")
 
-query := me.MessagesRequestBuilderGetQueryParameters{
+query := users.ItemMailFoldersItemMessagesRequestBuilderGetQueryParameters{
     Select: []string{"body", "sender", "subject"},
 }
 
-options := me.MessagesRequestBuilderGetRequestConfiguration{
+options := users.ItemMailFoldersItemMessagesRequestBuilderGetRequestConfiguration{
     Headers: headers,
     QueryParameters: &query,
 }
@@ -245,24 +243,22 @@ while (!pageIterator.isComplete()) {
 
 ### [Go](#tab/Go)
 
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
 ```go
 import (
     abstractions "github.com/microsoft/kiota-abstractions-go"
     msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
-    "github.com/microsoftgraph/msgraph-sdk-go/me"
+    "github.com/microsoftgraph/msgraph-sdk-go/users"
     "github.com/microsoftgraph/msgraph-sdk-go/models"
 )
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.body-content-type=\"text\"")
 
-query := me.MessagesRequestBuilderGetQueryParameters{
+query := users.ItemMailFoldersItemMessagesRequestBuilderGetQueryParameters{
     Select: []string{"body", "sender", "subject"},
 }
 
-options := me.MessagesRequestBuilderGetRequestConfiguration{
+options := users.ItemMailFoldersItemMessagesRequestBuilderGetRequestConfiguration{
     Headers: headers,
     QueryParameters: &query,
 }
@@ -271,7 +267,7 @@ options := me.MessagesRequestBuilderGetRequestConfiguration{
 result, err := client.Me().Messages().Get(context.Background(), &options)
 
 // Initialize iterator
-pageIterator, err := msgraphcore.NewPageIterator(
+pageIterator, err := msgraphcore.NewPageIterator<models.Messageable>(
     result, client.GetAdapter(), models.CreateMessageCollectionResponseFromDiscriminatorValue)
 
 // Any custom headers sent in original request should also be added
@@ -282,8 +278,7 @@ pageIterator.SetHeaders(headers)
 var count, pauseAfter = 0, 25
 
 // Iterate over all pages
-iterateErr := pageIterator.Iterate(context.Background(), func(pageItem interface{}) bool {
-    message := pageItem.(models.Messageable)
+iterateErr := pageIterator.Iterate(context.Background(), func(message models.Messageable) bool {
     count++
     fmt.Printf("%d: %s\n", count, *message.GetSubject())
     // Once count = 25, this returns false,
@@ -297,8 +292,7 @@ time.Sleep(5 * time.Second)
 fmt.Printf("Resuming iteration...\n")
 
 // Resume iteration
-iterateErr = pageIterator.Iterate(context.Background(), func(pageItem interface{}) bool {
-    message := pageItem.(models.Messageable)
+iterateErr = pageIterator.Iterate(context.Background(), func(message models.Messageable) bool {
     count++
     fmt.Printf("%d: %s\n", count, *message.GetSubject())
     // Return true to continue the iteration

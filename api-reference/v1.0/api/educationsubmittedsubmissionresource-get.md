@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve a [submitted resource](../resources/educationsubmissionresource.md). Only teachers, students, and applications with application permissions can perform this operation.
 
-This will be available to a teacher or an application with application permissions after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources.
+Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission. Note that teachers can leave notes in some resources.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,19 +50,21 @@ If successful, this method returns a `200 OK` response code and an [educationSub
 ### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_educationsubmittedsubmissionresource"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/education/classes/f973bc68-2adb-4cf7-8b15-a57a1936b60c/assignments/8b890b42-a1df-478b-bff5-6814afb1afc2/submissions/6d71b348-898a-40cd-8e71-35127eed97f5/submittedResources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
+
 ### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationResource"
 } -->
