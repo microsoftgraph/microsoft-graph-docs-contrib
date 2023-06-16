@@ -51,42 +51,7 @@ Connect-MgGraph -Environment USGov -ClientId 'YOUR_CLIENT_ID' `
 
 ### [Java](#tab/java)
 
-```java
-import java.util.Arrays;
-import java.util.List;
-
-import com.azure.identity.AzureAuthorityHosts;
-import com.azure.identity.InteractiveBrowserCredential;
-import com.azure.identity.InteractiveBrowserCredentialBuilder;
-import com.microsoft.graph.authentication.TokenCredentialAuthProvider;
-import com.microsoft.graph.requests.GraphServiceClient;
-
-// Create the InteractiveBrowserCredential using details
-// from app registered in the Azure AD for US Government portal
-final InteractiveBrowserCredential credential =
-    new InteractiveBrowserCredentialBuilder()
-        .clientId("YOUR_CLIENT_ID")
-        .tenantId("YOUR_TENANT_ID")
-        // https://login.microsoftonline.us
-        .authorityHost(AzureAuthorityHosts.AZURE_GOVERNMENT)
-        .redirectUrl("YOUR_REDIRECT_URI")
-        .build();
-
-// Create the authentication provider
-final List<String> scopes = Arrays.asList("https://graph.microsoft.us/.default");
-final TokenCredentialAuthProvider authProvider =
-    new TokenCredentialAuthProvider(scopes, credential);
-
-// Create the Microsoft Graph client object
-final GraphServiceClient<Request> graphClient = GraphServiceClient.builder()
-    .authenticationProvider(authProvider)
-    .buildClient();
-
-// Set the service root to the
-// Microsoft Graph for US Government L4 endpoint
-// NOTE: The API version must be included in the URL
-graphClient.setServiceRoot("https://graph.microsoft.us/v1.0");
-```
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="UploadAttachmentSnippet":::
 
 ### [Go](#tab/go)
 
