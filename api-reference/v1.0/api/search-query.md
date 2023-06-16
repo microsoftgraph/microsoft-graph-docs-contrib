@@ -67,6 +67,11 @@ In the request body, supply the values for relevant fields that should be update
 
 Here is an example request on how to opt-out a user from Delve and disable his contribution on content relevancy for the whole organization.
 
+<!-- {
+  "blockType": "request",
+  "name": "searchquerydisableDiscovery"
+}-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/settings
 Content-type: application/json
