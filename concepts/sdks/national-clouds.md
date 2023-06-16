@@ -51,7 +51,7 @@ Connect-MgGraph -Environment USGov -ClientId 'YOUR_CLIENT_ID' `
 
 ### [Java](#tab/java)
 
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="UploadAttachmentSnippet":::
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/NationalClouds.java" id="NationalCloudSnippet":::
 
 ### [Go](#tab/go)
 
