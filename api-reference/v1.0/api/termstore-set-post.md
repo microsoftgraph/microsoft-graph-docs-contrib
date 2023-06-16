@@ -118,6 +118,8 @@ Content-Type: application/json
 }
 -->
 
+<!-->
 [microsoft.graph.termStore.set]: ../resources/termstore-set.md
 [microsoft.graph.termStore.group]: ../resources/termstore-group.md
 [microsoft.graph.termStore.term]: ../resources/termstore-term.md
+-->
