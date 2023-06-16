@@ -1,94 +1,211 @@
 ---
-title: "Update settings"
-description: "Update the properties of the settings object. "
-author: "yyuank"
+title: "searchEntity: query"
+description: "Runs the query specified in the request body. Search results are provided in the response"
 ms.localizationpriority: medium
-ms.prod: "users"
-doc_type: apiPageType
+author: "njerigrevious"
+ms.prod: "search"
+doc_type: "apiPageType"
 ---
 
-# Update settings
+# searchEntity: query
 
 Namespace: microsoft.graph
 
-Update the properties of the [userSettings](../resources/usersettings.md) object. 
-Users in the same organization can have different settings based on their preference or on the organization policies. 
-To get the user current settings, see [current user settings](usersettings-get.md). 
-
-### Batch request
-
-It's also possible to opt-out multiple users from Delve and disable their contribution on content relevancy for the whole organization through a batch request.
-To learn more, see [JSON batching](/graph/json-batching).
-
->**Important**: Only members of the [organization management](/exchange/permissions/permissions?view=exchserver-2019#role-groups&preserve-view=true) role group can update multiple users. 
-
+Runs the query specified in the request body. Search results are provided in the response.
 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All, Acronym.Read.All, Bookmark.Read.All,  ChannelMessage.Read.All, Chat.Read |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Files.Read.All, Sites.Read.All |
 
 ## HTTP request
 
-```http
-PATCH /me/settings
-```
-
-Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions-reference). 
-
-```http
-PATCH /users/{id | userPrincipalName}/settings/
+```HTTP
+POST /search/query
 ```
 
 ## Request headers
 
-| Header       | Value|
-|:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Name          | Description   |
+|:--------------|:--------------|
+| Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, provide a JSON object with the following parameters.
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean|Set to true do disable delegate access to the [Trending](/graph/api/resources/insights-trending?view=graph-rest-1.0&preserve-view=true) API and to disable access to documents in Office Delve for the user. Setting to true also affects the relevance of the content displayed in Microsoft 365 - for example, Suggested sites in SharePoint Home and the Discover view in OneDrive for Business show less relevant results. This setting reflects the control state in [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+| Parameter    | Type        | Description |
+|:-------------|:------------|:------------|
+|requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. |
 
-## Example 
+## Response
 
-##### Request
+If successful, this method returns `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
+ 
 
-Here is an example request on how to opt-out a user from Delve and disable his contribution on content relevancy for the whole organization.
+## Examples
 
-<!-- {
-  "blockType": "request",
-  "name": "searchquerydisableDiscovery"
-}-->
+### Example 1: Basic call to perform a search request
 
-```http
-PATCH https://graph.microsoft.com/v1.0/me/settings
+The following example shows how to search for expected connector items.
+
+#### Request
+
+```HTTP
+POST https://graph.microsoft.com/v1.0/search/query
 Content-type: application/json
 
 {
-  "contributionToContentDiscoveryDisabled": true
+  "requests": [
+    {
+      "entityTypes": [
+        "externalItem"
+      ],
+      "contentSources": [
+        "/external/connections/connectionfriendlyname"
+      ],
+      "query": {
+        "queryString": "contoso product"
+      },
+      "from": 0,
+      "size": 25,
+      "fields": [
+        "title",
+        "description"
+      ]
+    }
+  ]
 }
 ```
 
-##### Response
+#### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response", 
-  "truncated": true
-} -->
+The following example shows the response.
 
-```http
+```HTTP
 HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "searchTerms": [
+        "searchTerms-value"
+      ],
+      "hitsContainers": [
+        {
+          "hits": [
+            {
+              "hitId": "1",
+              "rank": 1,
+              "summary": "_summary-value",
+              "resource": "The source field will contain the underlying graph entity part of the response"
+            }
+          ],
+          "total": 47,
+          "moreResultsAvailable": true
+        }
+      ]
+    }
+  ]
+}
 ```
+
+### Example 2: Basic call to use queryTemplate
+
+The following example shows how to use the queryable property **createdBy** to retrieve all files created by a user.
+
+#### Request
+
+```HTTP
+POST https://graph.microsoft.com/v1.0/search/query
+Content-type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "listItem"
+      ],
+      "query": {
+        "queryString": "contoso",
+        "queryTemplate":"{searchTerms} CreatedBy:Bob"
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "searchTerms": [
+                "contoso"
+            ],
+            "hitsContainers": [
+                {
+                    "hits": [
+                        {
+                            "hitId": "1",
+                            "rank": 1,
+                            "summary": "_summary-value",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.listItem",
+                                "id": "c23c7035-73d6-4bad-8901-9e2930d4be8e",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Bob",
+                                        "email": "Bob@contoso.com"
+                                    }
+                                },
+                                "createdDateTime": "2021-11-19T17:04:18Z",
+                                "lastModifiedDateTime": "2023-03-09T18:52:26Z"
+                            }
+                        }
+                    ],
+                    "total": 1,
+                    "moreResultsAvailable": false
+                }
+            ]
+        }
+    ]
+}
+```
+
+## See also
+- Search [mail messages](/graph/search-concept-messages)
+- Search [calendar events](/graph/search-concept-events)
+- Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
+- Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
+- Search with [queryTemplate](/graph/search-concept-query-template)
+- [Sort](/graph/search-concept-sort) search results
+- Use [aggregations](/graph/search-concept-aggregation) to refine search results
+
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "search: query",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
+

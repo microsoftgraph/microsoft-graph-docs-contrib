@@ -48,6 +48,11 @@ If successful, this method returns a `200 OK` response code and [userSettings](.
 
 ##### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "get_usersettings"
+}-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/settings
 ```
@@ -55,6 +60,12 @@ GET https://graph.microsoft.com/v1.0/me/settings
 ##### Response
 
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userSettings"
+} -->
 
 ```http
 HTTP/1.1 200 OK
