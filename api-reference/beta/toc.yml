@@ -11167,6 +11167,36 @@ items:
           items:
           - name: Get
             href: api/serviceannouncementattachment-get.md
+      - name: Organization Settings
+        items:
+        - name: Microsoft Todo configuration
+          href: resources/admintodo.md
+          items:
+          - name: Get Todo configuration
+            href: api/admintodo-get.md
+          - name: Update Todo configuration
+            href: api/admintodo-update.md
+        - name: Microsoft Forms configuration
+          href: resources/adminforms.md
+          items:
+          - name: Get Forms configuration
+            href: api/adminforms-get.md
+          - name: Update Forms configuration
+            href: api/adminForms-update.md
+        - name: Apps and Services configuration
+          href: resources/adminappsandservices.md
+          items:
+          - name: Get Apps and Services configuration
+            href: api/adminappsandservices-get.md
+          - name: Update Apps and Services configuration
+            href: api/adminappsandservices-update.md
+        - name: Microsoft Dynamics configuration
+          href: resources/admindynamics.md
+          items:
+          - name: Get Dynamics configuration
+            href: api/admindynamics-get.md
+          - name: Update Dynamics configuration
+            href: api/admindynamics-update.md
     - name: Education
       items:
       - name: Overview
