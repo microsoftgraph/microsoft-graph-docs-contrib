@@ -93,6 +93,9 @@ Content-Type: application/json
 
 ``` http
 HTTP/1.1 201 Created
+```
+
+<!-->
 Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.termStore.set",
@@ -105,7 +108,7 @@ Content-Type: application/json
   ]
 }
 ```
-
+-->
 
 
 <!--
