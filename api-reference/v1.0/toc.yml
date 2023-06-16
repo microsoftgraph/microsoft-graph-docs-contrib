@@ -1721,6 +1721,8 @@ items:
             href: api/printtaskdefinition-update-task.md
         - name: Reports
           items:
+          - name: List daily reports
+            href: api/reportroot-list-dailyprintusage.md
           - name: Organized by printer
             items:
             - name: Get
