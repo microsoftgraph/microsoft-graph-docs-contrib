@@ -15,14 +15,14 @@ The providers are required when using the Microsoft Graph Toolkit components as 
 
 The Toolkit includes the following providers.
 
-| Providers                               | Description                                                                                                                                |
-| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Custom](./providers/custom.md)         | Creates a custom provider to enable authentication and access to Microsoft Graph by using your application's existing authentication code. |
-| [Electron](./providers/electron.md)     | Authenticates and provides Microsoft Graph access to components inside of Electron apps.                                                   |
-| [MSAL2](./providers/msal2.md)           | Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph.                                                         |
-| [Proxy](./providers/proxy.md)           | Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.                                     |
-| [SharePoint](./providers/sharepoint.md) | Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.                                            |
-| [TeamsFx](./providers/teamsfx.md)       | Use the TeamsFx provider inside your Microsoft Teams applications to provide Microsoft Graph Toolkit components access to Microsoft Graph. |
+| Providers                                | Description                                                                                                                                |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Custom](../providers/custom.md)         | Creates a custom provider to enable authentication and access to Microsoft Graph by using your application's existing authentication code. |
+| [Electron](../providers/electron.md)     | Authenticates and provides Microsoft Graph access to components inside of Electron apps.                                                   |
+| [MSAL2](../providers/msal2.md)           | Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph.                                                         |
+| [Proxy](../providers/proxy.md)           | Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.                                     |
+| [SharePoint](../providers/sharepoint.md) | Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.                                            |
+| [TeamsFx](../providers/teamsfx.md)       | Use the TeamsFx provider inside your Microsoft Teams applications to provide Microsoft Graph Toolkit components access to Microsoft Graph. |
 
 ## Initializing a provider
 
