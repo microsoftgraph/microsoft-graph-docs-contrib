@@ -90,13 +90,15 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.termStore.set"
+  
 }
 -->
 
 ``` http
 HTTP/1.1 201 Created
-Content-Type: application/json
+```
+<!--
+"@odata.type": "microsoft.graph.termStore.set"Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.termStore.set",
   "id": "3607e9f9-e9f9-3607-f9e9-0736f9e90736",
@@ -106,9 +108,7 @@ Content-Type: application/json
         "name" : "Department"
       }
   ]
-}
-```
-
+}-->
 
 <!--[microsoft.graph.termStore.set]: ../resources/termstore-set.md
 [microsoft.graph.termStore.group]: ../resources/termstore-group.md
