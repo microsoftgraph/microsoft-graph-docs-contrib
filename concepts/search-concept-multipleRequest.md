@@ -1,5 +1,5 @@
 ---
-title: "Pass multiple search requests in the request body with the Microsoft Search API"
+title: "Use the Microsoft Graph Search API to pass multiple search requests"
 description: "You can use the Microsoft Search API in Microsoft Graph to search results by passing multiple search requests in the request body."
 author: "ZChristine"
 ms.localizationpriority: medium
@@ -265,7 +265,7 @@ Content-type: application/json
 
 - The properties **from** and **size** from different [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in the request body should be the same. And the  **queryString** property of [searchQuery](graph/api/resources/searchquery?view=graph-rest-beta) in different searchRequest should be the same.
 - Duplicate entity types across different search requests in the request body are not allowed. For example, you cannot have a "bookmark" block and another "bookmark" block.".
-- The file entity types (`site`, `drive`, `driveItem`, `list`,`listItem`)  can only be present once among different entity requests..
+- The file entity types (`site`, `drive`, `driveItem`, `list`, and `listItem`)  can only be present once among different entity requests.
 - The speller functionality can only be used once and it should be included in the first entity request.
 
 ## Next steps
