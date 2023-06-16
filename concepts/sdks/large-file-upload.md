@@ -23,46 +23,7 @@ A number of entities in Microsoft Graph support [resumable file uploads](/graph/
 
 ## [Java](#tab/java)
 
-```java
-// Get an input stream for the file
-File file = new File(localFilePath);
-InputStream fileStream = new FileInputStream(file);
-long streamSize = file.length();
-
-// Create a callback used by the upload provider
-IProgressCallback callback = new IProgressCallback() {
-    @Override
-    // Called after each slice of the file is uploaded
-    public void progress(final long current, final long max) {
-        System.out.println(
-            String.format("Uploaded %d bytes of %d total bytes", current, max)
-        );
-    }
-};
-
-DriveItemCreateUploadSessionParameterSet uploadParams =
-    DriveItemCreateUploadSessionParameterSet.newBuilder()
-        .withItem(new DriveItemUploadableProperties()).build();
-
-// Create an upload session
-UploadSession uploadSession = graphClient
-    .me()
-    .drive()
-    .root()
-    // itemPath like "/Folder/file.txt"
-    // does not need to be a path to an existing item
-    .itemWithPath(itemPath)
-    .createUploadSession(uploadParams)
-    .buildRequest()
-    .post();
-
-LargeFileUploadTask<DriveItem> largeFileUploadTask =
-    new LargeFileUploadTask<DriveItem>
-        (uploadSession, graphClient, fileStream, streamSize, DriveItem.class);
-
-// Do the upload
-largeFileUploadTask.upload(0, null, callback);
-```
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="LargeFileUploadSnippet":::
 
 ---
 
@@ -97,61 +58,7 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 
 ### [Java](#tab/java)
 
-```java
-final String[] scopes = { "Mail.ReadWrite" };
-ensureGraphClient(scopes);
-
-final String localFilePath = "largefile.gif";
-
-final Message draftMessage = new Message();
-draftMessage.subject = "Large attachment";
-
-final Message savedDraft = graphClient
-    .me()
-    .messages()
-    .buildRequest()
-    .post(draftMessage);
-
-File file = new File(localFilePath);
-// Get an input stream for the file
-InputStream fileStream = new FileInputStream(file);
-
-final AttachmentItem largeAttachment = new AttachmentItem();
-largeAttachment.attachmentType = AttachmentType.FILE;
-largeAttachment.name = "largefile.gif";
-largeAttachment.size = file.length();
-
-final AttachmentCreateUploadSessionParameterSet upParams =
-    AttachmentCreateUploadSessionParameterSet.newBuilder()
-    .withAttachmentItem(largeAttachment)
-    .build();
-
-final UploadSession uploadSession = graphClient
-    .me()
-    .messages(savedDraft.id)
-    .attachments()
-    .createUploadSession(upParams)
-    .buildRequest()
-    .post();
-
-// Create a callback used by the upload provider
-IProgressCallback callback = new IProgressCallback() {
-    @Override
-    // Called after each slice of the file is uploaded
-    public void progress(final long current, final long max) {
-        System.out.println(
-            String.format("Uploaded %d bytes of %d total bytes", current, max)
-        );
-    }
-};
-
-LargeFileUploadTask<FileAttachment> uploadTask =
-    new LargeFileUploadTask<FileAttachment>
-        (uploadSession, graphClient, fileStream, file.length(), FileAttachment.class);
-
-// Do the upload
-uploadTask.upload(0, null, callback);
-```
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="UploadAttachmentSnippet":::
 
 ---
 
