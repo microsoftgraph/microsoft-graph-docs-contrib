@@ -38,7 +38,7 @@ This example shows how to send multiple requests in a batch that are not depende
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/BatchRequests.java" id="SimpleBatchSnippet":::
 
-### [Go](#tab/Go)
+### [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="SimpleBatchSnippet":::
 
