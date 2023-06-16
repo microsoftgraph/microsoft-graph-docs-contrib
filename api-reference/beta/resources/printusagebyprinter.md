@@ -31,7 +31,14 @@ Describes print activity for a printer during a specified time period (usageDate
 |usageDate|Date|The date associated with these statistics.|
 |completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed by the printer on the associated date.|
 |completedColorJobCount|Int64|The number of color print jobs completed by the printer on the associated date.|
+|completedJobCount|Int64|The number of print jobs that were completed by the printer on the associated date.|
 |incompleteJobCount|Int64|The number of print jobs that were queued for the printer, but not completed, on the associated date.|
+|pageCount|Int64|The number of pages printed by the printer on the associated date.|
+|blackAndWhitePageCount|Int64|The number of black and white pages printed by the printer on the associated date.|
+|colorPageCount|Int64|The number of color pages printed by the printer on the associated date.|
+|mediaSheetCount|Int64|The number of media sheets printed by the printer on the associated date.|
+|doubleSidedSheetCount|Int64|The number of double-sided media sheets printed by the printer on the associated date.|
+|singleSidedSheetCount|Int64|The number of single-sided media sheets printed by the printer on the associated date.|
 
 ## JSON representation
 
@@ -52,7 +59,14 @@ The following is a JSON representation of the resource.
     "usageDate": "String (timestamp)",
     "completedBlackAndWhiteJobCount": 123456,
     "completedColorJobCount": 123456,
-    "incompleteJobCount": 123456
+    "completedJobCount": 123456,
+    "incompleteJobCount": 123456,
+    "pageCount": 123456,
+    "blackAndWhitePageCount": 123456,
+    "colorPageCount": 123456
+    "mediaSheetCount": 123456,
+    "doubleSidedSheetCount": 123456,
+    "singleSidedSheetCount": 123456
 }
 ```
 

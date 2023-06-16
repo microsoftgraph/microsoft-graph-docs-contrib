@@ -22,32 +22,57 @@ Describes print activity for a user during a specified time period (usageDate).
 
 ## Properties
 |Property|Type|Description|
-|:---|:---|:---|
+|:-------------|:------------|:------------|
+|id|String|The ID of this usage summary.|
+|userPrincipalName|String|The UPN of the user represented by these statistics.|
+|usageDate|Date|The date associated with these statistics.|
 |completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed on behalf of the user on the associated date.|
 |completedColorJobCount|Int64|The number of color print jobs completed on behalf of the user on the associated date.|
-|id|String|The ID of this usage summary.|
+|completedJobCount|Int64|The number of print jobs that were completed on behalf of the user on the associated date.|
 |incompleteJobCount|Int64|The number of print jobs that were queued on behalf of the user, but not completed, on the associated date.|
-|usageDate|Date|The date associated with these statistics.|
-|userPrincipalName|String|The UPN of the user represented by these statistics.|
+|pageCount|Int64|The number of pages printed on behalf of the user on the associated date.|
+|blackAndWhitePageCount|Int64|The number of black and white pages printed on behalf of the user on the associated date.|
+|colorPageCount|Int64|The number of color pages printed on behalf of the user on the associated date.|
+|mediaSheetCount|Int64|The number of media sheets printed on behalf of the user on the associated date.|
+|doubleSidedSheetCount|Int64|The number of double-sided media sheets printed on behalf of the user on the associated date.|
+|singleSidedSheetCount|Int64|The number of single-sided media sheets printed on behalf of the user on the associated date.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.printUsageByUser",
-  "openType": false
-}
--->
-``` json
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.printUsageByUser"
+}-->
+
+```json
 {
-  "@odata.type": "#microsoft.graph.printUsageByUser",
-  "id": "String (identifier)",
-  "usageDate": "Date",
-  "completedBlackAndWhiteJobCount": "Integer",
-  "completedColorJobCount": "Integer",
-  "incompleteJobCount": "Integer",
-  "userPrincipalName": "String"
+    "id": "String (identifier)",
+    "userPrincipalName": "String (identifier)",
+    "usageDate": "String (timestamp)",
+    "completedBlackAndWhiteJobCount": 123456,
+    "completedColorJobCount": 123456,
+    "completedJobCount": 123456,
+    "incompleteJobCount": 123456,
+    "pageCount": 123456,
+    "blackAndWhitePageCount": 123456,
+    "colorPageCount": 123456
+    "mediaSheetCount": 123456,
+    "doubleSidedSheetCount": 123456,
+    "singleSidedSheetCount": 123456
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "printUsageByUser resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
 
