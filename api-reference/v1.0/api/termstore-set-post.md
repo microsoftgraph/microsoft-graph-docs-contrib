@@ -43,12 +43,13 @@ In the request body, supply a JSON representation of the [set](../resources/term
 
 The following table shows the properties that are required when you create the [set](../resources/termstore-set.md) object.
 
+<!--
 |Property|Type|Description|
 |:---|:---|:---|
 |localizedNames|[microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md) collection|Name of the set to be created.|
 |parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|termstore-group under which the set needs to be created.|
 
-
+-->
 
 ## Response
 
