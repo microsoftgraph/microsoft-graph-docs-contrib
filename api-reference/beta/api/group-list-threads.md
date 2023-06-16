@@ -1,7 +1,7 @@
 ---
 title: "List threads"
 description: "Get all the threads of a group."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
