@@ -45,12 +45,11 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 
 ## Example
 Here is an example of how to call this API.
-##### Request
+### Request
 Here is an example of the request.
 
 <!--{
   "blockType": "request",
-  "isComposable": true,
   "name": "tablerow_range"
 }-->
 ```http
@@ -58,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|nam
 ```
 
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -79,7 +79,7 @@ Here is an example of the response. Note: The response object shown here is trun
 <!-- {
   "blockType": "response",
   "truncated": "true",
-  "@odata.type": "microsoft.graph.pageLinks"
+  "@odata.type": "microsoft.graph.onenotePage"
 } -->
 ```http
 HTTP/1.1 200 OK

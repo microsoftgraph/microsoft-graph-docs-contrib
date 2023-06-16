@@ -57,6 +57,10 @@ If successful, this method returns `HTTP 200 OK` response code and a [searchResp
 The following example shows how to search for expected connector items.
 
 #### Request
+<!-- {
+  "blockType": "request",
+  "name": "search_query_1"
+}-->
 
 ```HTTP
 POST https://graph.microsoft.com/v1.0/search/query
@@ -88,6 +92,11 @@ Content-type: application/json
 #### Response
 
 The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.searchResponse"
+} -->
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -124,6 +133,11 @@ The following example shows how to use the queryable property **createdBy** to r
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "search_query_2"
+}-->
+
 ```HTTP
 POST https://graph.microsoft.com/v1.0/search/query
 Content-type: application/json
@@ -148,6 +162,11 @@ Content-type: application/json
 #### Response
 
 The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.searchResponse"
+} -->
 
 ```HTTP
 HTTP/1.1 200 OK
