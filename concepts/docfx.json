@@ -11,6 +11,7 @@
           "**/includes/**",
           "concepts/sdks/snippets/dotnet/**",
           "concepts/sdks/snippets/go/**",
+          "concepts/sdks/snippets/java/**",
           "concepts/sdks/snippets/typescript/**",
           "README.md",
           "LICENSE",

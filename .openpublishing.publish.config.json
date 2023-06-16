@@ -65,6 +65,11 @@
       "branch": "main"
     },
     {
+      "path_to_root": "concepts/sdks/snippets/java",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-java",
+      "branch": "main"
+    },
+    {
       "path_to_root": "concepts/sdks/snippets/typescript",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-typescript",
       "branch": "main"
