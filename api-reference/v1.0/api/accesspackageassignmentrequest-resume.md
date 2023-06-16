@@ -123,7 +123,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response
 <!-- {
