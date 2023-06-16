@@ -22,7 +22,7 @@ Inherits from [customExtensionData](../resources/customextensiondata.md).
 |customExtensionStageInstanceId|String|Unique identifier of the callout to the custom extension.|
 |customExtensionStageInstanceDetail|String|Details for the callback.|
 |stage|accessPackageCustomExtensionStage|Indicates the stage at which the custom callout extension will be executed. The possible values are: `assignmentRequestCreated`, `assignmentRequestApproved`, `assignmentRequestGranted`, `assignmentRequestRemoved`, `assignmentFourteenDaysBeforeExpiration`, `assignmentOneDayBeforeExpiration`, `unknownFutureValue`.|
-|state|String|Allow the extension to be able to deny or cancel the request submitted by the requestor. The supported values are `Denied` and `Canceled`. This property can only be set for an `assignmentRequestCreated` stage.|
+|state|accessPackageRequestState|Allow the extension to be able to deny or cancel the request submitted by the requestor. The supported values are `Denied` and `Canceled`. This property can only be set for an `assignmentRequestCreated` stage.|
 
 ## Relationships
 
