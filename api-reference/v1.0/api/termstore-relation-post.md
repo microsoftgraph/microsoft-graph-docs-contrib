@@ -111,9 +111,9 @@ Content-Type: application/json
 }
 ```
 
-[microsoft.graph.termStore.set]: ../resources/termstore-set.md
+<!--[microsoft.graph.termStore.set]: ../resources/termstore-set.md
 [microsoft.graph.termStore.term]: ../resources/termstore-term.md
-[microsoft.graph.termStore.relation]: ../resources/termstore-relation.md
+[microsoft.graph.termStore.relation]: ../resources/termstore-relation.md -->
 
 
 <!--
