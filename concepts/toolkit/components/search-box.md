@@ -7,9 +7,9 @@ author: sebastienlevert
 
 # Search box component in the Microsoft Graph Toolkit
 
-The Search box component renders an input control allowing searching for capabilities. This component is not connected to Microsoft Graph and should be used in collaboration with the [search results component](search-results.md).
-
 [!INCLUDE [preview-disclaimer](./includes/preview-disclaimer.md)]
+
+The Search box component renders an input control allowing searching for capabilities. This component is not connected to Microsoft Graph and should be used in collaboration with the [search results component](search-results.md).
 
 ## Example
 
@@ -27,7 +27,7 @@ You can use several attributes to change the behavior of the component.
 | -------------- | ------------- | ------------------------------------------------------------ |
 | search-term    | searchTerm    | Value of the search term.                                    |
 | placeholder    | placeholder   | The placeholder rendered in the picker. Default is `Search`. |
-| debounce-delay | debounceDelay | Debounce delay of the search input. Default is `300`         |
+| debounce-delay | debounceDelay | Debounce delay of the search input. Default is `300`.        |
 
 ## Events
 
@@ -39,9 +39,9 @@ For more information about handling events, see [events](../customize-components
 
 ## Localization
 
-The control exposes the following variables that can be localized. See how you setup localization [here](../customize-components/localization.md).
+The control exposes the following variables that can be localized. For details about how to set up localizationm see [Localizing](../customize-components/localization.md).
 
 | String name | Default value |
 | ----------- | ------------- |
-| placeholder | 'Search'      |
-| title       | 'Search'      |
+| placeholder | `Search`      |
+| title       | `Search`      |
