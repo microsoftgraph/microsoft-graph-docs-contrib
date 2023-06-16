@@ -36,40 +36,7 @@ This example shows how to send multiple requests in a batch that are not depende
 
 ### [Java](#tab/java)
 
-```java
-// Create the batch request content with the steps
-final BatchRequestContent batchRequestContent = new BatchRequestContent();
-
-// Use the Graph client to generate the request for GET /me
-final String meGetId = batchRequestContent
-                        .addBatchRequestStep(graphClient
-                                              .me()
-                                              .buildRequest());
-
-final ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
-final OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
-final OffsetDateTime tomorrow = today.plusDays(1);
-
-// Use the Graph client to generate the request URL for
-// GET /me/calendarview?startDateTime="start"&endDateTime="end"
-final List<Option> calendarViewOptions = Arrays.asList(new QueryOption("startDateTime", today.toString()),
-                                                      new QueryOption("endDateTime", tomorrow.toString()));
-final String calendarViewRequestStepId = batchRequestContent
-                                        .addBatchRequestStep(graphClient
-                                          .me()
-                                          .calendarView()
-                                          .buildRequest(calendarViewOptions));
-
-// Send the batch request content to the /$batch endpoint
-final BatchResponseContent batchResponseContent = graphClient.batch().buildRequest().post(batchRequestContent);
-// Get the user response using the id assigned to the request
-final User user = batchResponseContent.getResponseById(meGetId).getDeserializedBody(User.class);
-System.out.println(String.format("Hello %s!", user.displayName));
-
-// Get the calendar view response by id
-final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
-System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
-```
+:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/BatchRequests.java" id="SimpleBatchSnippet":::
 
 ### [Go](#tab/Go)
 
@@ -94,57 +61,7 @@ This example shows how to send multiple requests in a batch that are dependent o
 
 ### [Java](#tab/java)
 
-```java
-// Create the batch request content with the steps
-final BatchRequestContent batchRequestContent = new BatchRequestContent(batchSteps);
-
-final ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
-final OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
-final OffsetDateTime tomorrow = today.plusDays(1);
-
-// Use the Graph client to generate the request URL for POST /me/events
-final Event newEvent = new Event();
-newEvent.subject = "File end-of-day report";
-newEvent.start = new DateTimeTimeZone();
-// 5:00 PM
-newEvent.start.dateTime = today.plusHours(17)
-    .format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
-newEvent.start.timeZone = ZoneOffset.systemDefault().getId();
-newEvent.end = new DateTimeTimeZone();
-// 5:30 PM
-newEvent.end.dateTime = today.plusHours(17).plusMinutes(30)
-    .format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
-newEvent.end.timeZone = ZoneOffset.systemDefault().getId();
-
-final String addEventRequestId = batchRequestContent
-                                .addBatchRequestStep(graphClient
-                                                .me()
-                                                .events()
-                                                .buildRequest(), HttpMethod.POST, newEvent);
-
-// Use the Graph client to generate the request URL for
-// GET /me/calendarview?startDateTime="start"&endDateTime="end"
-final List<Option> calendarViewOptions = Arrays.asList(new QueryOption("startDateTime", today.toString()),
-                                                      new QueryOption("endDateTime", tomorrow.toString()));
-final String calendarViewRequestStepId = batchRequestContent
-                                        .addBatchRequestStep(graphClient
-                                          .me()
-                                          .calendarView()
-                                          .buildRequest(calendarViewOptions),
-                                          HttpMethod.GET,
-                                          null,
-                                          addEventRequestId);
-
-// Send the batch request content to the /$batch endpoint
-final BatchResponseContent batchResponseContent = client.batch().buildRequest().post(batchRequestContent);
-// Get the user response using the id assigned to the request
-final Event event = batchResponseContent.getResponseById(addEventRequestId).getDeserializedBody(Event.class);
-System.out.println(String.format("New event created with ID: %s", event.id));
-
-// Get the calendar view response by id
-final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
-System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
-```
+:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/BatchRequests.java" id="DependentBatchSnippet":::
 
 ### [Go](#tab/go)
 
