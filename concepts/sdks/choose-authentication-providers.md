@@ -57,24 +57,7 @@ The authorization code flow enables native and web apps to securely obtain token
 
 # [Java](#tab/java)
 
-```java
-final AuthorizationCodeCredential authCodeCredential = new AuthorizationCodeCredentialBuilder()
-        .clientId(clientId)
-        .clientSecret(clientSecret) //required for web apps, do not set for native apps
-        .authorizationCode(authorizationCode)
-        .redirectUrl(redirectUri)
-        .build();
-
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, authCodeCredential);
-
-final GraphServiceClient graphClient =
-  GraphServiceClient
-    .builder()
-    .authenticationProvider(tokenCredentialAuthProvider)
-    .buildClient();
-
-final User me = graphClient.me().buildRequest().get();
-```
+:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="AuthorizationCodeSnippet":::
 
 # [Go](#tab/go)
 
@@ -126,23 +109,13 @@ The client credential flow enables service applications to run without user inte
 
 # [Java](#tab/java)
 
-```java
-final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
-        .clientId(clientId)
-        .clientSecret(clientSecret)
-        .tenantId(tenant)
-        .build();
+### Using a client certificate
 
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, clientSecretCredential);
+:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientCertificateSnippet":::
 
-final GraphServiceClient graphClient =
-  GraphServiceClient
-    .builder()
-    .authenticationProvider(tokenCredentialAuthProvider)
-    .buildClient();
+### Using a client secret
 
-final User me = graphClient.me().buildRequest().get();
-```
+:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientSecretSnippet":::
 
 # [Go](#tab/go)
 
@@ -187,24 +160,7 @@ The on-behalf-of flow is applicable when your application calls a service/web AP
 
 # [Java](#tab/java)
 
-```java
-final OnBehalfOfCredential onBehalfOfCredential = new OnBehalfOfCredentialBuilder()
-        .clientId(clientID)
-        .pfxCertificate(pfxCertificatePath) // or .pemCertificate(certificatePath) or .clientSecret("ClientSecret")
-        .clientCertificatePassword(pfxCertificatePassword) // remove if using pemCertificate or clientSecret
-        .tokenCachePersistenceOptions(tokenCachePersistenceOptions) //Optional: enables the persistent token cache which is disabled by default
-        .userAssertion(userAssertion)
-        .build();
-
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, onBehalfOfCredential);
-
-final GraphServiceClient graphClient = GraphServiceClient
-        .builder()
-        .authenticationProvider(tokenCredentialAuthProvider)
-        .buildClient();
-
-final User me = graphClient.me().buildRequest().get();
-```
+:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="OnBehalfOfSnippet":::
 
 # [Go](#tab/go)
 
@@ -248,24 +204,7 @@ The device code flow enables sign in to devices by way of another device. For de
 
 # [Java](#tab/java)
 
-```java
-final DeviceCodeCredential deviceCodeCredential = new DeviceCodeCredentialBuilder()
-                    .clientId(clientId)
-                    .challengeConsumer(challenge -> {
-                        // lets user know of the challenge
-                        System.out.println(challenge.getMessage());
-                    })
-                    .build();
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, deviceCodeCredential);
-
-final GraphServiceClient graphClient =
-  GraphServiceClient
-    .builder()
-    .authenticationProvider(tokenCredentialAuthProvider)
-    .buildClient();
-
-final User me = graphClient.me().buildRequest().get();
-```
+:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
 
 # [Go](#tab/go)
 
@@ -333,21 +272,7 @@ The interactive flow is used by mobile applications (Xamarin and UWP) and deskto
 
 # [Java](#tab/java)
 
-```java
-final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
-                .clientId(clientId)
-                .redirectUrl("http://localhost:8765")
-                .build();
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, interactiveBrowserCredential);
-
-final GraphServiceClient graphClient =
-  GraphServiceClient
-    .builder()
-    .authenticationProvider(tokenCredentialAuthProvider)
-    .buildClient();
-
-final User me = graphClient.me().buildRequest().get();
-```
+:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="InteractiveSnippet":::
 
 # [Go](#tab/go)
 
@@ -381,23 +306,7 @@ The username/password provider allows an application to sign in a user by using 
 
 # [Java](#tab/java)
 
-```java
-final UsernamePasswordCredential usernamePasswordCredential = new UsernamePasswordCredentialBuilder()
-        .clientId(clientId)
-        .username(username)
-        .password(password)
-        .build();
-
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, usernamePasswordCredential);
-
-final GraphServiceClient graphClient =
-  GraphServiceClient
-    .builder()
-    .authenticationProvider(tokenCredentialAuthProvider)
-    .buildClient();
-
-final User me = graphClient.me().buildRequest().get();
-```
+:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="UserNamePasswordSnippet":::
 
 # [Go](#tab/go)
 

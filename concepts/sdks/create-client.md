@@ -23,21 +23,7 @@ The following code examples show how to create an instance of a Microsoft Graph 
 
 # [Java](#tab/java)
 
-```java
-final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
-        .clientId(CLIENT_ID)
-        .clientSecret(CLIENT_SECRET)
-        .tenantId(TENANT_GUID)
-        .build();
-
-final TokenCredentialAuthProvider tokenCredAuthProvider =
-        new TokenCredentialAuthProvider(SCOPES, clientSecretCredential);
-
-final GraphServiceClient graphClient = GraphServiceClient
-        .builder()
-        .authenticationProvider(tokenCredAuthProvider)
-        .buildClient();
-```
+:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
 
 # [PHP](#tab/php)
 
