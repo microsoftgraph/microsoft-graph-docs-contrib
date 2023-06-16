@@ -23,7 +23,7 @@ The following code examples show how to create an instance of a Microsoft Graph 
 
 # [Java](#tab/java)
 
-:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
 
 # [PHP](#tab/php)
 

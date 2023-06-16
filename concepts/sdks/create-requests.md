@@ -27,7 +27,7 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-read.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ReadRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -60,7 +60,7 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-select.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="SelectRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -94,7 +94,7 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-list.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ListRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -128,7 +128,7 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-index.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ItemByIdRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -160,7 +160,7 @@ You can use the `$expand` filter to request a related entity, or collection of e
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-expand.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ExpandRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -192,7 +192,7 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-delete.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="DeleteRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -224,7 +224,7 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-create.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="CreateRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -256,7 +256,7 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-update.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="UpdateRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -288,7 +288,7 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-headers.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="HeadersRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -320,7 +320,7 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-queryparams.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="QueryParametersRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 

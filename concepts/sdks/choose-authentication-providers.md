@@ -57,7 +57,7 @@ The authorization code flow enables native and web apps to securely obtain token
 
 # [Java](#tab/java)
 
-:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="AuthorizationCodeSnippet":::
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="AuthorizationCodeSnippet":::
 
 # [Go](#tab/go)
 
@@ -111,11 +111,11 @@ The client credential flow enables service applications to run without user inte
 
 ### Using a client certificate
 
-:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientCertificateSnippet":::
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientCertificateSnippet":::
 
 ### Using a client secret
 
-:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientSecretSnippet":::
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientSecretSnippet":::
 
 # [Go](#tab/go)
 
@@ -160,7 +160,7 @@ The on-behalf-of flow is applicable when your application calls a service/web AP
 
 # [Java](#tab/java)
 
-:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="OnBehalfOfSnippet":::
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="OnBehalfOfSnippet":::
 
 # [Go](#tab/go)
 
@@ -204,7 +204,7 @@ The device code flow enables sign in to devices by way of another device. For de
 
 # [Java](#tab/java)
 
-:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
 
 # [Go](#tab/go)
 
@@ -272,7 +272,7 @@ The interactive flow is used by mobile applications (Xamarin and UWP) and deskto
 
 # [Java](#tab/java)
 
-:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="InteractiveSnippet":::
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="InteractiveSnippet":::
 
 # [Go](#tab/go)
 
@@ -306,7 +306,7 @@ The username/password provider allows an application to sign in a user by using 
 
 # [Java](#tab/java)
 
-:::code language="typescript" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="UserNamePasswordSnippet":::
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="UserNamePasswordSnippet":::
 
 # [Go](#tab/go)
 
