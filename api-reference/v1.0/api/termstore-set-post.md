@@ -73,7 +73,7 @@ Content-Type: application/json
   "parentGroup":{
       "id": "fc733b51-10f1-40fd-b784-dc6d1e42804b"
    },
-   "localizedNames" : [
+   "localizedName" : [
       {
         "languageTag" : "en-US",
         "name" : "Department"
@@ -100,7 +100,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.termStore.set",
   "id": "3607e9f9-e9f9-3607-f9e9-0736f9e90736",
-  "localizedNames" : [
+  "localizedName" : [
       {
         "languageTag" : "en-US",
         "name" : "Department"
