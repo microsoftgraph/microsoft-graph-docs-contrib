@@ -66,10 +66,6 @@ In the request body, supply the values for relevant fields that should be update
 ##### Request
 
 Here is an example request on how to opt-out a user from Delve and disable his contribution on content relevancy for the whole organization.
-<!-- {
-  "blockType": "request",
-  "name": "usersettingsupdate"
-}-->
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/settings
@@ -83,12 +79,6 @@ Content-type: application/json
 ##### Response
 
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.usersettings"
-} -->
 
 ```http
 HTTP/1.1 200 OK
