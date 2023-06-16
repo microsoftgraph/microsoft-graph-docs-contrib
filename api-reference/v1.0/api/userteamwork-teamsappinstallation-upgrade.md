@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser,TeamsAppInstallation.ReadWriteAndConsentSelfForUser, TeamsAppInstallation.ReadWriteAndConsentForUser |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+|Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,13 +40,20 @@ POST /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installa
 
 ## Request body
 
-Do not supply a request body for this method.
+The request body should contain the catalog generated app ID for the app catalog. For details, see [teamsApp properties](../resources/teamsapp.md#properties).
+The following table lists additional parameters that can be used with the request body.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource-specific permissions that are being consented to.|
+
+> **Note**: The permissions consented to during the install must be same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsappdefinition.md) of the app. To get the application and delegated resource-specific permissions, see [List apps installed in the personal scope of a user](../api/userteamwork-list-installedapps.md). If only delegated resource-specific permissions are present in **teamsAppDefinition**, permissions can be omitted in the body of this request.
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Example 1: Upgrade app installed for a user.
 
 ### Request
 
@@ -83,6 +90,37 @@ The following is an example of the response.
   "blockType": "response",
   "name": "user_upgrade_teamsApp",
   "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Upgrade app installed for a user and consent to the resource specific permissions
+
+To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [List apps installed in the personal scope of a user](../api/userteamwork-list-installedapps.md).
+
+#### Request
+
+```http
+POST /users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk/upgrade
+Content-Type: application/json
+
+{
+  "consentedPermissionSet": {
+        "resourceSpecificPermissions": [
+        {
+          "permissionValue": "TeamsActivity.Send.User",
+          "permissionType": "Application"
+        }]
+      }
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response"
 } -->
 
 ```http

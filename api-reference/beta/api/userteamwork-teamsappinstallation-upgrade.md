@@ -41,13 +41,22 @@ POST /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installa
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of the parameters.
+
+The following table lists additional parameters that can be used with the upgrade action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|The set of resource-specific permissions that are being consented to.|
+
+> **Note**:
+> The permissions consented to during the upgrade must be the same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app). If only delegated resource-specific permissions are present in **teamsAppDefinition**, permissions can be omitted in the body of this request.
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Example 1 : Upgrade app installed for a user.
 
 ### Request
 
@@ -83,6 +92,36 @@ The following is an example of the response.
   "name": "user_upgrade_teamsApp",
   "truncated": true
 } -->
+```http
+HTTP/1.1 204 No Content
+```
+### Example 2: Upgrade app installed for a user and consent to the resource specific permissions
+
+To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
+
+#### Request
+
+```http
+POST /users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk/upgrade
+Content-Type: application/json
+
+{
+  "consentedPermissionSet": {
+        "resourceSpecificPermissions": [
+        {
+          "permissionValue": "TeamsActivity.Send.User",
+          "permissionType": "Application"
+        }]
+      }
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

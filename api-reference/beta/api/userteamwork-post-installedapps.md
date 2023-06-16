@@ -41,11 +41,14 @@ POST /users/{user-id | user-principal-name}/teamwork/installedApps
 
 ## Request body
 
-The request body should contain the ID of the existing catalog app to be added.
+The request body should contain the catalog generated app ID for the app catalog. For details, see [teamsApp properties](../resources/teamsapp.md#properties).
+The following table lists additional parameters that can be used with the request body.
 
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|teamsApp|String|The ID of the app to add.|
+|Parameter|Type|Description|
+|:---|:---|:---|
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource-specific permissions that are being consented to.|
+
+> **Note**: The permissions consented to during the install must be same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app). If only delegated resource-specific permissions are present in **teamsAppDefinition**, permissions can be omitted in the body of this request.
 
 ## Response
 
