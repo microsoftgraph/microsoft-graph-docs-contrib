@@ -32,27 +32,10 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 ### [Java](#tab/java)
 
-```java
-MessageCollectionPage messagesPage = graphClient.me().messages()
-    .buildRequest(new HeaderOption("Prefer", "outlook.body-content-type=\"text\""))
-    .select("Sender,Subject,Body")
-    .top(10)
-    .get();
+> [!NOTE]
+> The Microsoft Graph Java SDK does not currently have a **PageIterator** class. Instead, you need to request each page as shown in the following code.
 
-
-while(messagesPage != null) {
-  final List<Message> messages = messagesPage.getCurrentPage();
-  final MessageCollectionRequestBuilder nextPage = messagesPage.getNextPage();
-  if (nextPage == null) {
-    break;
-  } else {
-    messagesPage = nextPage.buildRequest(
-        // Re-add the header to subsequent requests
-        new HeaderOption("Prefer", "outlook.body-content-type=\"text\"")
-    ).get();
-  }
-}
-```
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/Paging.java" id="PagingSnippet":::
 
 ### [Go](#tab/Go)
 
