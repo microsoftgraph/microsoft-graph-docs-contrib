@@ -70,6 +70,9 @@ The following is a JSON representation of the resource.
   "methodsRegistered": ["String"],
   "userDisplayName": "String",
   "userPrincipalName": "String",
-  "userType": "String"
+  "userType": "String",
+  "isSystemPreferredAuthenticationMethodEnabled": "Boolean",
+  "systemPreferredAuthenticationMethods": ["String"],
+  "userPreferredMethodForSecondaryAuthentication": "String"  
 }
 ```
