@@ -1,6 +1,6 @@
 ---
 title: "Get adminAppsAndServices"
-description: "Read the properties and relationships of a microsoft.graph.adminAppsAndServices object."
+description: "Read the properties and relationships of a Microsoft Graph adminAppsAndServices object."
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
