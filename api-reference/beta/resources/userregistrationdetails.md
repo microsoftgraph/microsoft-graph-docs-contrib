@@ -66,13 +66,13 @@ The following is a JSON representation of the resource.
   "isSsprCapable": "Boolean",
   "isSsprEnabled": "Boolean",
   "isSsprRegistered": "Boolean",
+  "isSystemPreferredAuthenticationMethodEnabled": "Boolean",
   "lastUpdatedDateTime": "String (timestamp)",
   "methodsRegistered": ["String"],
-  "userDisplayName": "String",
-  "userPrincipalName": "String",
-  "userType": "String",
-  "isSystemPreferredAuthenticationMethodEnabled": "Boolean",
   "systemPreferredAuthenticationMethods": ["String"],
-  "userPreferredMethodForSecondaryAuthentication": "String"  
+  "userDisplayName": "String",
+  "userPreferredMethodForSecondaryAuthentication": "String",
+  "userPrincipalName": "String",
+  "userType": "String"
 }
 ```
