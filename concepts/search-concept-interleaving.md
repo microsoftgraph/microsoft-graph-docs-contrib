@@ -7,9 +7,9 @@ ms.prod: "search"
 ---
 
 # Use the Microsoft Search API to search with interleaved results
-The searchRequest resource supports passing multiple entity types in a single request, and return interleaved results with requested entity type which is ranked by relevance.
+The Microsoft Search **searchRequest** resource supports the passing of multiple entity types in a single request, and returns interleaved results with the requested entity types ranked by relevance.
 
-## Supported entity combination
+## Supported entity combinations
 
 The following table shows the relationship between different entity types that can be interleaved. Note that **qna** is only supported in v1.0.
 
