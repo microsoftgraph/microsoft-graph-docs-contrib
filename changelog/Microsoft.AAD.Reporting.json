@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "6248c9ab-afef-4d70-81e8-7eb948a3a45b",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "userDefaultAuthenticationMethod",
           "ChangeType": "Addition",
           "Description": "Added the **userDefaultAuthenticationMethod** enumeration type.",
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isSystemPreferredAuthenticationMethodEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the `isSystemPreferredAuthenticationMethodEnabled` property to the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **isSystemPreferredAuthenticationMethodEnabled** property to the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
           "Target": "userRegistrationDetails"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "systemPreferredAuthenticationMethods",
           "ChangeType": "Addition",
-          "Description": "Added the `systemPreferredAuthenticationMethods` property to the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **systemPreferredAuthenticationMethods** property to the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
           "Target": "userRegistrationDetails"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "userPreferredMethodForSecondaryAuthentication",
           "ChangeType": "Addition",
-          "Description": "Added the `userPreferredMethodForSecondaryAuthentication` property to the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **userPreferredMethodForSecondaryAuthentication** property to the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
           "Target": "userRegistrationDetails"
         }
       ],
@@ -39,7 +39,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-06-06T11:49:42.9712779Z",
-      "WorkloadArea": "Reports and audit",
+      "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },    
     {
