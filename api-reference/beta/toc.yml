@@ -1330,7 +1330,7 @@ items:
             href: api/synchronization-synchronizationjob-provision-on-demand.md
           - name: Validate credentials
             href: api/synchronization-synchronizationjob-validatecredentials.md
-          - name: Bulk upload
+          - name: Bulk upload 
             href: resources/synchronization-synchronizationjobbulkupload.md
             items:
             - name: Perform bulk upload

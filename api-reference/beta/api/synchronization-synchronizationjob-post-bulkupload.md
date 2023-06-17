@@ -4,7 +4,7 @@ description: "Perform a new bulkUpload object."
 author: "cmmdesai"
 ms.localizationpriority: medium
 ms.prod: "applications"
-doc_type: apiPageType
+doc_type: apiPageType 
 ---
 
 # Perform bulkUpload

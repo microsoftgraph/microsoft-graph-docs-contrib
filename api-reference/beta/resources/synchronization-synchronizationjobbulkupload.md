@@ -4,7 +4,7 @@ description: "Represents capability of the synchronization service to process bu
 author: "cmmdesai"
 ms.localizationpriority: medium
 ms.prod: "applications"
-doc_type: resourcePageType
+doc_type: resourcePageType 
 ---
 
 # bulkUpload resource type
