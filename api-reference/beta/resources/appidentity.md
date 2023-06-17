@@ -1,24 +1,25 @@
 ---
 title: "appIdentity resource type"
 description: "Indicates the identity of the application that performed the action or was changed. Includes Application Id, Name, Service Principal ID and Name. This resource is called by the directoryAudit API"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 author: "sureshja"
 ---
 
 # appIdentity resource type
 
 Namespace: microsoft.graph
-Indicates the identity of the application that performed the action or was changed. Includes Application Id, Name, Service Principal ID and Name. This resource is called by the [directoryAudit](../api/directoryaudit-get.md) API
+
+Indicates the identity of the application that performed the action or was changed. This resource is called by the [directoryAudit](../api/directoryaudit-get.md) API.
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|appId|String|Refers to the Unique GUID representing Application Id in the Azure Active Directory.|
+|appId|String|Refers to the unique identifier representing Application Id in the Azure Active Directory.|
 |displayName|String|Refers to the Application Name displayed in the Azure Portal.|
-|servicePrincipalId|String|Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.|
+|servicePrincipalId|String|Refers to the unique identifier indicating Service Principal Id in Azure Active Directory for the corresponding App.|
 |servicePrincipalName|String|Refers to the Service Principal Name is the Application name in the tenant. |
 
 ## JSON representation

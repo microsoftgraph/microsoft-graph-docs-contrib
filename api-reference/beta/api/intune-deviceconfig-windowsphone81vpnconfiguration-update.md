@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhone81VpnConfiguration"
 description: "Update the properties of a windowsPhone81VpnConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [windowsPhone81VpnConfiguration](../resources/intune-deviceconfig-windowsphone81vpnconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -222,9 +222,3 @@ Content-Length: 2188
   ]
 }
 ```
-
-
-
-
-
-

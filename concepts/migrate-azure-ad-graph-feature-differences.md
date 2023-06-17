@@ -1,16 +1,19 @@
 ---
 title: "Feature differences between Azure AD Graph and Microsoft Graph"
-description: "Describes feature differences between Azure Active Directory (Azure AD) API and Microsoft Graph API, in order to help you migrate apps quickly and easily."
-author: "dkershaw10"
-localization_priority: Normal
-ms.prod: "azure-active-directory"
+description: "Describes feature differences between Azure Active Directory (Azure AD) Graph API and Microsoft Graph API, in order to help you migrate apps quickly and easily."
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
+ms.localizationpriority: medium
+ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Feature differences between Azure AD Graph and Microsoft Graph
 
 This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-Many features in Microsoft Graph work similarly to their Azure AD Graph counterparts. However, a few have been changed and/or improved. Here, you'll learn how to adapt your apps to take advantage of these differences.  Frequently, the changes are minor, but well worth the effort.
+Many features in Microsoft Graph work similarly to their Azure Active Directory (Azure AD) Graph counterparts. However, a few have been changed or improved. Here, you'll learn how to adapt your apps to take advantage of these differences.  Frequently, the changes are minor, but well worth the effort.
 
 This article explores how Microsoft Graph handles:
 
@@ -18,18 +21,18 @@ This article explores how Microsoft Graph handles:
 - Differential queries
 - Batching
 
-## Directory schema extensions
+## Directory extensions
 
 If your app uses Azure AD Graph directory extensions, you can continue to use the same basic APIs (with Microsoft Graph request URLs) to:
 
-- Manage extension property definitions using the **extensionProperties** property on the [application][/graph/api/resources/application?view=graph-rest-v1.0) resource.
-- Get available extension properties using the [getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-v1.0) action.
-- Read extension values using GET and `$select`
+- Manage directory extension definitions using the [extensionProperty](/graph/api/resources/extensionproperty) resource and associated methods.
+- Get available extension properties using the [getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties) action.
+- Read extension values using GET and for users, only with a `$select` query via the `v1.0` endpoint
 - Search on extension values using GET and `$filter`
 - Update extension values using PATCH
 - Remove extension values using PATCH (set to **null**)
 
-Microsoft Graph provides an enhanced schema extensions developer experience, which today is not backwards compatible with Azure AD Graph directory extensions. To learn more, see [schema extensions in add custom data](./extensibility-overview.md#schema-extensions).
+Microsoft Graph provides an enhanced schema extensions developer experience, which today is not backwards compatible with Azure AD Graph directory extensions. To learn more, see [Choose an extension type for your application](extensibility-overview.md#comparison-of-extension-types).
 
 ### Recommended migration approach
 

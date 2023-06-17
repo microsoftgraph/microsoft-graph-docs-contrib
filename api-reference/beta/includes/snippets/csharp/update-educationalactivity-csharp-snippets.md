@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var educationalActivity = new EducationalActivity
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new EducationalActivity
 {
 	Institution = new InstitutionData
 	{
@@ -18,13 +20,11 @@ var educationalActivity = new EducationalActivity
 			City = "Fort Collins",
 			State = "Colorado",
 			CountryOrRegion = "USA",
-			PostalCode = "80525"
-		}
-	}
+			PostalCode = "80525",
+		},
+	},
 };
+var result = await graphClient.Me.Profile.EducationalActivities["{educationalActivity-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Profile.EducationalActivities["{id}"]
-	.Request()
-	.UpdateAsync(educationalActivity);
 
 ```

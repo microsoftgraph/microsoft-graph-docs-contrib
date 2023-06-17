@@ -1,10 +1,10 @@
 ---
 title: "changeNotificationEncryptedContent resource type"
 description: "A changeNotificationEncryptedContent object represents the encrypted data attached to a change notification."
-localization_priority: Normal
-author: "davidmu1"
+ms.localizationpriority: medium
+author: "keylimesoda"
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "change-notifications"
 ---
 
 # changeNotificationEncryptedContent resource type
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents the encrypted data attached to a change notification.
 
-For details, see [Set up change notifications that include resource data (preview)](/graph/webhooks-with-resource-data.md).
+For details, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
 
 ## Properties
 
@@ -38,14 +38,14 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.changeNotificationEncryptedContent"
 }-->
-
-```json
+``` json
 {
-  "data": "{encrypted data that produces a full resource}",
-  "dataSignature": "<HMAC-SHA256 hash>",
-  "dataKey": "{encrypted symmetric key from Microsoft Graph}",
-  "encryptionCertificateId": "MySelfSignedCert/DDC9651A-D7BC-4D74-86BC-A8923584B0AB",
-  "encryptionCertificateThumbprint": "07293748CC064953A3052FB978C735FB89E61C3D"
+  "@odata.type": "#microsoft.graph.changeNotificationEncryptedContent",
+  "data": "String",
+  "dataSignature": "String",
+  "dataKey": "String",
+  "encryptionCertificateId": "String",
+  "encryptionCertificateThumbprint": "String"
 }
 ```
 
@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "changeNotificationEncryptedConent resource",
+  "description": "changeNotificationEncryptedContent resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

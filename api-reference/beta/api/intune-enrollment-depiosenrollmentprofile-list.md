@@ -1,7 +1,7 @@
 ---
 title: "List depIOSEnrollmentProfiles"
 description: "List properties and relationships of the depIOSEnrollmentProfile objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2322
+Content-Length: 2780
 
 {
   "value": [
@@ -76,7 +76,6 @@ Content-Length: 2322
       "isDefault": true,
       "supervisedModeEnabled": true,
       "supportDepartment": "Support Department value",
-      "passCodeDisabled": true,
       "isMandatory": true,
       "locationDisabled": true,
       "supportPhoneNumber": "Support Phone Number value",
@@ -86,7 +85,6 @@ Content-Length: 2322
       "termsAndConditionsDisabled": true,
       "touchIdDisabled": true,
       "applePayDisabled": true,
-      "zoomDisabled": true,
       "siriDisabled": true,
       "diagnosticsDisabled": true,
       "displayToneSetupDisabled": true,
@@ -94,6 +92,9 @@ Content-Length: 2322
       "screenTimeScreenDisabled": true,
       "deviceNameTemplate": "Device Name Template value",
       "configurationWebUrl": true,
+      "enabledSkipKeys": [
+        "Enabled Skip Keys value"
+      ],
       "iTunesPairingMode": "allow",
       "managementCertificates": [
         {
@@ -118,14 +119,18 @@ Content-Length: 2322
       "expressLanguageScreenDisabled": true,
       "preferredLanguageScreenDisabled": true,
       "deviceToDeviceMigrationDisabled": true,
-      "welcomeScreenDisabled": true
+      "welcomeScreenDisabled": true,
+      "passCodeDisabled": true,
+      "zoomDisabled": true,
+      "restoreCompletedScreenDisabled": true,
+      "updateCompleteScreenDisabled": true,
+      "forceTemporarySession": true,
+      "temporarySessionTimeoutInSeconds": 0,
+      "userSessionTimeoutInSeconds": 11,
+      "passcodeLockGracePeriodInSeconds": 0,
+      "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+      "userlessSharedAadModeEnabled": true
     }
   ]
 }
 ```
-
-
-
-
-
-

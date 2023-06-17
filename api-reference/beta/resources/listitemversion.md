@@ -1,12 +1,13 @@
 ---
 author: JeremyKelley
-description: "The listItemVersion resource represents a previous version of a ListItem resource."
+description: The listItemVersion resource represents a previous version of a ListItem resource.
 ms.date: 09/17/2017
 title: ListItemVersion
-localization_priority: Normal
-ms.prod: "sharepoint"
+ms.localizationpriority: medium
+ms.prod: sharepoint
 doc_type: resourcePageType
 ---
+
 # ListItemVersion resource type
 
 Namespace: microsoft.graph
@@ -19,16 +20,15 @@ The **listItemVersion** resource represents a previous version of a [ListItem](l
 
 The following tasks are available for listItemVersion resources.
 
-|            Common task             |         HTTP method         |
-| :--------------------------------- | :-------------------------- |
-| [List versions][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
-| [Get version][version-get]         | `GET /sites/{site-id}/items/versions/{version-id}`     |
-| [Restore version][version-restore] | `POST /sites/{site-id}/items/versions/{version-id}/restore` |
+| Common task                        | HTTP method                                                 |
+| :--------------------------------- | :---------------------------------------------------------- |
+| [List versions][version-list]      | `GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions`             |
+| [Get version][version-get]         | `GET /sites/{site-id}/lists/{list-id}/items/versions/{version-id}`          |
+| [Restore version][version-restore] | `POST /sites/{site-id}/lists/{list-id}/items/versions/{version-id}/restore` |
 
 [version-list]: ../api/listitem-list-versions.md
 [version-get]: ../api/listitemversion-get.md
 [version-restore]: ../api/listitemversion-restore.md
-
 
 ## JSON representation
 
@@ -47,22 +47,20 @@ The following tasks are available for listItemVersion resources.
 
 ## Properties
 
-|      Property name       |                         Type                         |                               Description                               |
+| Property                 | Type                                                 | Description                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | The ID of the version. Read-only.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
 | **published**            | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
 
-
 ## Relationships
 
 The following table defines the relationships that the **driveItemVersion** resource has to other resources.
 
-| Relationship name |                      Type                      |                               Description                                |
-| :---------------- | :--------------------------------------------- | :----------------------------------------------------------------------- |
-| **fields**        | [FieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
-
+| Relationship | Type                                           | Description                                                              |
+| :----------- | :--------------------------------------------- | :----------------------------------------------------------------------- |
+| **fields**   | [FieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
 
 <!--
 {
@@ -74,5 +72,3 @@ The following table defines the relationships that the **driveItemVersion** reso
   "suppressions": []
 }
 -->
-
-

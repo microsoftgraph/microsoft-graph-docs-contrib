@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-await graphClient.Users["{id}"].Calendar.CalendarPermissions["{id}"]
-	.Request()
-	.DeleteAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+await graphClient.Users["{user-id}"].Calendar.CalendarPermissions["{calendarPermission-id}"].DeleteAsync();
+
 
 ```

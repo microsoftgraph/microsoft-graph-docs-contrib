@@ -1,7 +1,7 @@
 ---
 title: "createCopy action"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -49,6 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Not yet documented|
+|description|String|Not yet documented|
 
 
 
@@ -63,10 +64,11 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/createCopy
 
 Content-type: application/json
-Content-length: 43
+Content-length: 82
 
 {
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "description": "Description value"
 }
 ```
 
@@ -75,7 +77,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 418
+Content-Length: 465
 
 {
   "value": {
@@ -84,6 +86,7 @@ Content-Length: 418
     "displayName": "Display Name value",
     "description": "Description value",
     "isAssigned": true,
+    "isMigratingToConfigurationPolicy": true,
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "templateId": "Template Id value",
     "roleScopeTagIds": [
@@ -92,9 +95,3 @@ Content-Length: 418
   }
 }
 ```
-
-
-
-
-
-

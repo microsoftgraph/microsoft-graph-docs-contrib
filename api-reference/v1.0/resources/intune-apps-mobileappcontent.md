@@ -1,7 +1,7 @@
 ---
 title: "mobileAppContent resource type"
 description: "Contains content properties for a specific app version. Each mobileAppContent can have multiple mobileAppContentFile."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -33,6 +33,7 @@ Contains content properties for a specific app version. Each mobileAppContent ca
 |Relationship|Type|Description|
 |:---|:---|:---|
 |files|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) collection|The list of files for this app content version.|
+|containedApps|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) collection|The collection of contained apps in a MobileLobApp acting as a package.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -48,12 +49,3 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
-
-
-
-
-
-
-
-

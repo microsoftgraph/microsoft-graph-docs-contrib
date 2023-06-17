@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var plannerPlan = new PlannerPlan
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new PlannerPlan
 {
-	Title = "title-value"
+	Title = "title-value",
 };
+var result = await graphClient.Planner.Plans["{plannerPlan-id}"].PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "return=representation");
+	requestConfiguration.Headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");
+});
 
-await graphClient.Planner.Plans["{plan-id}"]
-	.Request()
-	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
-	.UpdateAsync(plannerPlan);
 
 ```

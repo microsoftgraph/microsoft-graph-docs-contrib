@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var shift = new Shift
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Shift
 {
 	Id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
 	UserId = "c5d0c76b-80c4-481c-be50-923cd8d680a1",
@@ -18,7 +20,7 @@ var shift = new Shift
 		StartDateTime = DateTimeOffset.Parse("2019-03-11T15:00:00Z"),
 		EndDateTime = DateTimeOffset.Parse("2019-03-12T00:00:00Z"),
 		Theme = ScheduleEntityTheme.Blue,
-		Activities = new List<ShiftActivity>()
+		Activities = new List<ShiftActivity>
 		{
 			new ShiftActivity
 			{
@@ -26,9 +28,9 @@ var shift = new Shift
 				StartDateTime = DateTimeOffset.Parse("2019-03-11T15:00:00Z"),
 				EndDateTime = DateTimeOffset.Parse("2019-03-11T15:15:00Z"),
 				Code = "",
-				DisplayName = "Lunch"
-			}
-		}
+				DisplayName = "Lunch",
+			},
+		},
 	},
 	DraftShift = new ShiftItem
 	{
@@ -37,7 +39,7 @@ var shift = new Shift
 		StartDateTime = DateTimeOffset.Parse("2019-03-11T15:00:00Z"),
 		EndDateTime = DateTimeOffset.Parse("2019-03-12T00:00:00Z"),
 		Theme = ScheduleEntityTheme.Blue,
-		Activities = new List<ShiftActivity>()
+		Activities = new List<ShiftActivity>
 		{
 			new ShiftActivity
 			{
@@ -45,14 +47,12 @@ var shift = new Shift
 				StartDateTime = DateTimeOffset.Parse("2019-03-11T15:00:00Z"),
 				EndDateTime = DateTimeOffset.Parse("2019-03-11T15:30:00Z"),
 				Code = "",
-				DisplayName = "Lunch"
-			}
-		}
-	}
+				DisplayName = "Lunch",
+			},
+		},
+	},
 };
+var result = await graphClient.Teams["{team-id}"].Schedule.Shifts.PostAsync(requestBody);
 
-await graphClient.Teams["{teamId}"].Schedule.Shifts
-	.Request()
-	.AddAsync(shift);
 
 ```

@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var directoryRole = new DirectoryRole
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new DirectoryRole
 {
-	Description = "description-value",
-	DisplayName = "displayName-value",
-	RoleTemplateId = "roleTemplateId-value"
+	RoleTemplateId = "fe930be7-5e62-47db-91af-98c3a49a38b1",
 };
+var result = await graphClient.DirectoryRoles.PostAsync(requestBody);
 
-await graphClient.DirectoryRoles
-	.Request()
-	.AddAsync(directoryRole);
 
 ```

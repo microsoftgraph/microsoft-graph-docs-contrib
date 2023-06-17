@@ -1,9 +1,9 @@
 ---
 title: "Create single-value extended property"
 description: "Create one or more single-value extended properties in a new or existing instance of a resource. "
-localization_priority: Normal
-author: "svpsiva"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "abheek-das"
+ms.prod: non-product-specific
 doc_type: apiPageType
 ---
 

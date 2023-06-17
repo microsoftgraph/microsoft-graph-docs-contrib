@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var invitation = new Invitation
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Invitation
 {
-	InvitedUserEmailAddress = "yyy@test.com",
-	InviteRedirectUrl = "https://myapp.com"
+	InvitedUserEmailAddress = "admin@fabrikam.com",
+	InviteRedirectUrl = "https://myapp.contoso.com",
 };
+var result = await graphClient.Invitations.PostAsync(requestBody);
 
-await graphClient.Invitations
-	.Request()
-	.AddAsync(invitation);
 
 ```

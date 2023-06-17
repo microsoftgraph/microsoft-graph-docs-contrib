@@ -1,11 +1,10 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Change sharing permissions
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Update the properties of a sharing permission by patching the permission resource."
-ms.prod: ""
+ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # Update sharing permission
@@ -51,9 +50,17 @@ In the request body, supply the values for relevant fields that should be update
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 For best performance you shouldn't include existing values that haven't changed.
 
-| Property | Type              | Description                   |
-|:---------|:------------------|:------------------------------|
-| roles    | String collection | An array of permission types. |
+The following properties on these permission types can be modified.
+
+| Permission Type        | Property | Type              | Description                   |
+|:-----------------------|:---------|:------------------|:------------------------------|
+| User                   | roles    | String collection | An array of permission types. |
+| Anonymous Sharing Link | expirationDateTime | DateTimeOffset | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset for the expiration time of the permission. |
+
+### Remarks
+Unsupported permission modifications include the following:
+- Organizational sharing links
+- People sharing links
 
 ## Response
 
@@ -75,6 +82,7 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,16 +91,27 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-permission-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-permission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-permission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-permission-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-permission-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -105,10 +124,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
   "grantedTo": {
     "user": {
-      "displayName": "Ryan Gregg",
+      "displayName": "Robin Danielsen",
       "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Robin Danielsen"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Robin Danielsen",
+      "loginName": "Robin Danielsen"
     }
   },
   "id": "1",

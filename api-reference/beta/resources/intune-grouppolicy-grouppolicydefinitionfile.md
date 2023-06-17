@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyDefinitionFile resource type"
 description: "The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -33,6 +33,7 @@ The entity represents an ADMX (Administrative Template) XML file. The ADMX file 
 |targetNamespace|String|Specifies the URI used to identify the namespace within the ADMX file.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. Possible values are: `admxBacked`, `admxIngested`.|
 |revision|String|The revision version associated with the file.|
+|fileName|String|The file name of the ADMX file without the path. For example: edge.admx|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
 
@@ -61,13 +62,8 @@ Here is a JSON representation of the resource.
   "targetNamespace": "String",
   "policyType": "String",
   "revision": "String",
+  "fileName": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

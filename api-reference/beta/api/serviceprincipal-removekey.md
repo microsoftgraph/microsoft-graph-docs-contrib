@@ -1,9 +1,9 @@
 ---
 title: "servicePrincipal: removeKey"
 description: "Remove a key credential from a servicePrincipal"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -25,19 +25,18 @@ As part of the request validation for this method, a proof of possession of an e
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | None.  |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | None.    |
-|Application | None. |
-
-> [!NOTE]
-> A servicePrincipal does not need any specific permission to roll its own keys.
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /serviceprincipals/{id}/removeKey
+POST /serviceprincipals(appId='{appId}')/removeKey
 ```
 
 ## Request headers
@@ -53,8 +52,8 @@ In the request body, provide the following required properties.
 
 | Property	| Type | Description|
 |:----------|:-----|:-----------|
-| keyId     | GUID | The unique identifier for the password.|
-| proof | String | A self-signed JWT token used as a proof of possession of the existing keys. This JWT token must be signed using the private key of one of the servicePrincipal's existing valid certificates. The token should contain the following claims:<ul><li>`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Issuer needs to be the __id__  of the servicePrincipal that is making the call.</li><li>`nbf` - Not before time.</li><li>`exp` - Expiration time should be "nbf" + 10 mins.</li></ul><br>Here is a code [sample](/graph/application-rollkey-prooftoken) that can be used to generate this proof of possession token.|
+| keyId     | Guid | The unique identifier for the password.|
+| proof | String | A self-signed JWT token used as a proof of possession of the existing keys. This JWT token must be signed using the private key of one of the servicePrincipal's existing valid certificates. The token should contain the following claims:<ul><li>`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Issuer needs to be the __id__  of the servicePrincipal that is making the call.</li><li>`nbf` - Not before time.</li><li>`exp` - Expiration time should be `nbf` + 10 mins.</li></ul><br>For steps to generate this proof of possession token, see [Generating proof of possession tokens for rolling keys](/graph/application-rollkey-prooftoken).|
 
 ## Response
 
@@ -84,12 +83,12 @@ Content-Type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-removekey-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -113,5 +112,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

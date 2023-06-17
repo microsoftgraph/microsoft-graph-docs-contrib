@@ -1,8 +1,8 @@
 ---
 title: "post: reply"
 description: "Reply to a post and add a new post to the specified thread in a group conversation. You can specify "
-author: "dkershaw10"
-localization_priority: Normal
+author: "mikemcleanlive"
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -41,7 +41,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 |post|[post](../resources/post.md)|The new post that is being replied with.|
 
@@ -62,7 +62,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/reply
 Content-type: application/json
-Content-length: 1131
 
 {
   "post": {
@@ -105,6 +104,7 @@ Content-length: 1131
     },
     "attachments": [
       {
+        "@odata.type": "#microsoft.graph.fileAttachment",
         "lastModifiedDateTime": "2016-10-19T10:37:00Z",
         "name": "name-value",
         "contentType": "contentType-value",
@@ -116,6 +116,7 @@ Content-length: 1131
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-reply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -124,8 +125,27 @@ Content-length: 1131
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-reply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-reply-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-reply-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-reply-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-reply-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-reply-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 ##### Response

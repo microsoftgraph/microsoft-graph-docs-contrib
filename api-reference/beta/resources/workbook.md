@@ -1,7 +1,7 @@
 ---
 title: "workbook resource type"
 description: "Contains related workbook objects such as worksheets, tables, ranges, and so on."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: resourcePageType
@@ -10,6 +10,8 @@ doc_type: resourcePageType
 # workbook resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains related workbook objects such as worksheets, tables, ranges, and so on.
 
@@ -27,7 +29,7 @@ None.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|names|[workbookNamedItem](workbooknameditem.md) collection |Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
+|names|[workbookNamedItem](workbooknameditem.md) collection |Represents a collection of workbooks scoped named items (named ranges and constants). Read-only.|
 |tables|[workbookTable](workbooktable.md) collection |Represents a collection of tables associated with the workbook. Read-only.|
 |worksheets|[workbookWorksheet](workbookworksheet.md) collection |Represents a collection of worksheets associated with the workbook. Read-only.|
 |workbbookApplication|[workbookApplication](workbookapplication.md) |Represents the Excel workbookApplication that manages the workbook.|
@@ -35,9 +37,9 @@ None.
 
 ## Functions
 
-[Excel functions](#functions): Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function. 
+[Excel functions](#functions): Invoke a workbook function using the syntax `POST /me/drive/root/workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function. 
 
-The complete list of supported functions are listed [here](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.
+The complete list of supported functions are listed [here](https://support.office.com/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.
 
 _Important notes:_ 
 * The range input parameter is supplied using a range object instead of the range address string.  
@@ -56,7 +58,7 @@ Inside a cell, the `vlookup` function looks like this:
 
 =VLOOKUP(lookup value, range containing the lookup value, the column number in the range containing the return value, optionally specify TRUE for approximate match or FALSE for an exact match)
 
-(See the documentation for the [VLOOKUP Excel function](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)
+(See the documentation for the [VLOOKUP Excel function](https://support.office.com/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)
 
 The example below shows how to call the `vlookup` function and pass these parameters with the Excel REST API.
 Request: 
@@ -98,7 +100,7 @@ Inside a cell, the `median` function looks like this example:
 
 =MEDIAN(A2:A6)
 
-(See the documentation for the [MEDIAN Excel function](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)
+(See the documentation for the [MEDIAN Excel function](https://support.office.com/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)
 
 The example below shows how to call the `median` function and one or more input ranges with the Excel REST API. 
 
@@ -111,10 +113,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 
 {
-"values" :  [
-        { "address": "Sheet2!A1:A5" },
-        { "address": "Sheet2!B1:B5" },
-      ] 
+   "values":[
+      {
+         "address":"Sheet2!A1:A5"
+      },
+      {
+         "address":"Sheet2!B1:B5"
+      }
+   ]
 }
 ```
 

@@ -1,10 +1,10 @@
 ---
 title: "synchronizationSchema: parseExpression"
 description: "(../resources/synchronization_attributemappingsource.md) object. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationSchema: parseExpression
@@ -20,11 +20,13 @@ For more information about expressions, see [Writing Expressions for Attribute M
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Not supported.|
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Synchronization.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All|
+
+[!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +43,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 |expression               |String               |Expression to parse.|
 |testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Test data object to evaluate expression against. Optional.|
@@ -114,25 +116,17 @@ Content-type: application/json
     }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationschema-parseexpression-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-parseexpression-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-parseexpression-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ##### Response
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -197,6 +191,10 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: synchronizationschema_parseexpression/parsedExpression:
+    Schema validation failed on property 'parsedExpression' ['microsoft.graph.attributeMappingSource']",
+    "Error: synchronizationschema_parseexpression/parsedExpression/parameters:
+    Array expected members to be of type Collection(String) but found: Collection(Object)"
   ]
 }
 -->

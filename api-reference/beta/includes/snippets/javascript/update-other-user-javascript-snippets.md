@@ -11,13 +11,18 @@ const options = {
 const client = Client.init(options);
 
 const user = {
-  businessPhones: [
-    "businessPhones-value"
-  ],
-  officeLocation: "city-value"
+    businessPhones: [
+        '+1 425 555 0109'
+    ],
+    officeLocation: '18/2111',
+    authorizationInfo: {
+        certificateUserIds: [
+            '5432109876543210@mil'
+        ]
+    }
 };
 
-let res = await client.api('/users/{id}')
+await client.api('/users/{id}')
 	.version('beta')
 	.update(user);
 

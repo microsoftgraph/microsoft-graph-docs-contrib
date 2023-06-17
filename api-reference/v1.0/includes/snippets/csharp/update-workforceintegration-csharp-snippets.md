@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workforceIntegrations = new WorkforceIntegration
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new WorkforceIntegration
 {
 	DisplayName = "displayName-value",
 	ApiVersion = 99,
 	Encryption = new WorkforceIntegrationEncryption
 	{
 		Protocol = WorkforceIntegrationEncryptionProtocol.SharedSecret,
-		Secret = "secret-value"
+		Secret = "secret-value",
 	},
 	IsActive = true,
 	Url = "url-value",
-	SupportedEntities = WorkforceIntegrationSupportedEntities.None
+	SupportedEntities = WorkforceIntegrationSupportedEntities.None,
 };
+var result = await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegration-id}"].PatchAsync(requestBody);
 
-await graphClient.Teamwork.WorkforceIntegrations
-	.Request()
-	.UpdateAsync(workforceIntegrations);
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Customize the Microsoft Graph SDK service client"
 description: "Provides instructions on how to change the default behavior of the Microsoft Graph SDK service client."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
 ---
 
@@ -9,117 +9,111 @@ author: DarrelMiller
 
 The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This default set is customizable, allowing you to change the behavior of the client. For example, you can insert customized logging, or add a test handler to simulate specific scenarios. You can add and remove middleware components. It is important to note that the order in which middleware components run is significant.
 
+<!-- markdownlint-disable MD051 -->
 ## [C#](#tab/csharp)
 
-```csharp
-var handlers = GraphClientFactory.CreateDefaultHandlers(authProvider);
-
-// Remove a default handler
-var compressionHandler =
-    handlers.Where(h => h is CompressionHandler).FirstOrDefault();
-handlers.Remove(compressionHandler);
-
-// Add a new one
-// ChaosHandler simulates random server failures
-handlers.Add(new ChaosHandler());
-
-var httpClient = GraphClientFactory.Create(handlers);
-
-var customGraphClient = new GraphServiceClient(httpClient);
-
-var messages = await customGraphClient.Me.Messages.Request()
-    .Top(100)
-    .Select(m => m.Subject)
-    .GetAsync();
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CustomClients.cs" id="ChaosHandlerSnippet":::
 
 ## [TypeScript](#tab/typeScript)
 
-```typescript
-// Create a custom auth provider
-let authProvider = new SimpleAuthProvider(accessToken);
-// Create an authentication handler that uses custom auth provider
-let authHandler = new MicrosoftGraph.AuthenticationHandler(authProvider);
-
-// Create a custom logging handler
-let loggingHandler = new CustomLoggingHandler();
-
-// Create a standard HTTP message handler
-let httpHandler = new MicrosoftGraph.HTTPMessageHandler();
-
-// Use setNext to chain handlers together
-// auth -> logging -> http
-authHandler.setNext(loggingHandler);
-loggingHandler.setNext(httpHandler);
-
-// Pass the first middleware in the chain in the middleWare property
-const client = MicrosoftGraph.Client.initWithMiddleware({
-  defaultVersion: 'v1.0',
-  debugLogging: true,
-  middleware: authHandler,
-});
-
-let response: PageCollection = await client
-  .api('/me/messages?$top=10&$select=sender,subject')
-  .get();
-```
-
-### SimpleAuthProvider.ts
-
-```typescript
-import { AuthenticationProvider } from "@microsoft/microsoft-graph-client";
-
-export default class SimpleAuthProvider implements AuthenticationProvider {
-  private accessToken: string;
-
-  constructor(accessToken: string) {
-    this.accessToken = accessToken;
-  }
-
-  getAccessToken = async (): Promise<string> => {
-    return this.accessToken;
-  }
-}
-```
-
-### CustomLoggingHandler.ts
-
-```typescript
-import { Context, Middleware } from "@microsoft/microsoft-graph-client";
-
-export default class CustomLoggingHandler implements Middleware {
-  private nextMiddleware: any = null;
-
-  execute = async (context: Context): Promise<void> => {
-    console.log(`Logging request: ${context.request.toString()}`);
-    return await this.nextMiddleware.execute(context);
-  }
-  setNext = (middleware: Middleware): void => {
-    this.nextMiddleware = middleware;
-  }
-}
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/customClients.ts" id="ChaosHandlerSnippet":::
 
 ## [Java](#tab/java)
 
-```java
-// you can configure any OkHttpClient option and add interceptors
-// Note: com.microsoft.graph:microsoft-graph:2.3 or above is required
-// for a complete description of available configuration options https://square.github.io/okhttp/4.x/okhttp/okhttp3/-ok-http-client/-builder/
-final OkHttpClient httpClient = HttpClients.createDefault(coreAuthenticationProvider)
-                                .newBuilder()
-                                .followSslRedirects(false) // sample configuration to apply to client
-                                .build();
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ChaosHandlerSnippet":::
 
-final IHttpProvider httpProvider = DefaultClientConfig
-                          .createWithAuthenticationProvider(authenticationProvider)
-                          .getHttpProvider(httpClient);
+## [Go](#tab/Go)
 
-final IGraphServiceClient graphServiceClient = GraphServiceClient
-                .builder()
-                .authenticationProvider(authenticationProvider)
-                .httpProvider(httpProvider)
-                .buildClient();
+:::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ChaosHandlerSnippet":::
+
+## [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+```python
+# using Azure.Identity
+# https://learn.microsoft.com/en-us/python/api/azure-identity/azure.identity.interactivebrowsercredential
+interactive_credential = InteractiveBrowserCredential()
+scopes = ['https://graph.microsoft.com/.default']
+authProvider = AzureIdentityAuthenticationProvider(interactive_credential, scopes=scopes)
+
+# Get default middleware
+middleware = GraphClientFactory.get_default_middleware(options=None)
+
+# Remove a default handler
+retry_handler = [handler for handler in middleware if isinstance(handler, RetryHandler)][0]
+middleware.remove(retry_handler)
+
+# Add custom middleware
+# Implement a custom middleware by extending the BaseMiddleware class
+# https://github.com/microsoft/kiota-http-go/blob/main/kiota_http/middleware/middleware.py
+middleware.append(MyCustomMiddleware())
+
+# Create an HTTP client with the middleware
+http_client = GraphClientFactory().create_with_custom_middleware(middleware)
+
+# Create a request adapter with the HTTP client
+adapter = GraphRequestAdapter(auth_provider=authProvider, client=http_client)
+
+# Create Graph client
+client = GraphServiceClient(adapter)
+```
+
+---
+
+## Configuring the HTTP proxy for the client
+
+Some environments require client applications to use a HTTP proxy before they can access the public internet. This section shows how to configure the proxy for the Microsoft Graph SDKs.
+
+<!-- markdownlint-disable MD024 -->
+## [C#](#tab/csharp)
+
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CustomClients.cs" id="ProxySnippet":::
+
+## [TypeScript](#tab/typeScript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/customClients.ts" id="ProxySnippet":::
+
+## [Java](#tab/java)
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ProxySnippet":::
+
+## [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ProxySnippet":::
+
+## [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+```python
+# using Azure.Identity
+# https://learn.microsoft.com/en-us/python/api/azure-identity/azure.identity.interactivebrowsercredential
+interactive_credential = InteractiveBrowserCredential()
+scopes = ['https://graph.microsoft.com/.default']
+authProvider = AzureIdentityAuthenticationProvider(interactive_credential, scopes=scopes)
+
+# Proxy URLs
+proxies = {
+    'http://': 'http://proxy-url',
+    'https://': 'http://proxy-url'
+}
+
+# Create a custom HTTP client with the proxies
+http_client = AsyncClient(proxies=proxies)
+
+# Apply Graph default middleware to HTTP client
+http_client = GraphClientFactory.create_with_default_middleware(client=http_client)
+
+# Create a request adapter with the HTTP client
+adapter = GraphRequestAdapter(auth_provider=authProvider, client=http_client)
+
+# Create Graph client
+client = GraphServiceClient(adapter)
 ```
 
 ---

@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var queryOptions = new List<QueryOption>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Content.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("format", "{format}")
-};
+	requestConfiguration.QueryParameters.Format = "{format}";
+});
 
-var stream = await graphClient.Me.Drive.Items["{item-id}"].Content
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

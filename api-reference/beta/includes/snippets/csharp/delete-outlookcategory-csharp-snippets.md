@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-await graphClient.Me.Outlook.MasterCategories["4b1c2495-54c9-4a5e-90a2-0ab0b31987d8"]
-	.Request()
-	.DeleteAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+await graphClient.Me.Outlook.MasterCategories["{outlookCategory-id}"].DeleteAsync();
+
 
 ```

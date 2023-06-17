@@ -1,9 +1,9 @@
 ---
 title: "Privileged Identity Management - Azure resources"
 description: "APIs for Azure AD Privileged Identity Management to manage Azure resources."
-localization_priority: Priority
-author: "shauliu"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: high
+author: "rkarim-ms"
+ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
@@ -12,6 +12,8 @@ doc_type: conceptualPageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 You can use [Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) for Azure resources to set up just-in-time access workflow for your Azure infrastructure roles at a management group, subscription, resource group, and resource level. These include built-in roles like Owner and Contributor as well as custom RBAC roles.
 
@@ -24,6 +26,8 @@ You can use [Azure Active Directory (Azure AD) Privileged Identity Management (P
 | Retrieve all role settings for a resource or make an update to a role setting | [governanceRoleSetting](governancerolesetting.md) | [Configure role setting](/azure/active-directory/privileged-identity-management/pim-resource-roles-configure-role-settings) |
 | List and export all role assignments for a resource. | [governanceRoleAssignment](governanceroleassignment.md) | [Export role assignments](/azure/active-directory/privileged-identity-management/azure-pim-resource-rbac#export-role-assignments-with-children) |
 | Create or remove an eligible or active role assignment, activate/deactivate an eligible assignment, view a list of pending requests, approve or deny a pending request or cancel your own pending request. | [governanceRoleAssignmentRequest](governanceroleassignmentrequest.md) | [Role Assignment](/azure/active-directory/privileged-identity-management/pim-resource-roles-assign-roles)<br/>[Role activation](/azure/active-directory/privileged-identity-management/pim-resource-roles-activate-your-roles)<br/>[Approve requests](/azure/active-directory/privileged-identity-management/azure-ad-pim-approval-workflow) |
+
+[!INCLUDE [pimv2AzureResources-migration](../../includes/pimv2AzureResources-migration.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

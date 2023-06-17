@@ -1,7 +1,7 @@
 ---
 title: "deviceComplianceScriptRuleError resource type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -24,6 +24,7 @@ Inherits from [deviceComplianceScriptError](../resources/intune-deviceconfig-dev
 |Property|Type|Description|
 |:---|:---|:---|
 |code|[code](../resources/intune-deviceconfig-code.md)|Error code. Inherited from [deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md). Possible values are: `none`, `jsonFileInvalid`, `jsonFileMissing`, `jsonFileTooLarge`, `rulesMissing`, `duplicateRules`, `tooManyRulesSpecified`, `operatorMissing`, `operatorNotSupported`, `datatypeMissing`, `datatypeNotSupported`, `operatorDataTypeCombinationNotSupported`, `moreInfoUriMissing`, `moreInfoUriInvalid`, `moreInfoUriTooLarge`, `descriptionMissing`, `descriptionInvalid`, `descriptionTooLarge`, `titleMissing`, `titleInvalid`, `titleTooLarge`, `operandMissing`, `operandInvalid`, `operandTooLarge`, `settingNameMissing`, `settingNameInvalid`, `settingNameTooLarge`, `englishLocaleMissing`, `duplicateLocales`, `unrecognizedLocale`, `unknown`, `remediationStringsMissing`.|
+|deviceComplianceScriptRulesValidationError|[deviceComplianceScriptRulesValidationError](../resources/intune-deviceconfig-devicecompliancescriptrulesvalidationerror.md)|Error code. Inherited from [deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md). Possible values are: `none`, `jsonFileInvalid`, `jsonFileMissing`, `jsonFileTooLarge`, `rulesMissing`, `duplicateRules`, `tooManyRulesSpecified`, `operatorMissing`, `operatorNotSupported`, `datatypeMissing`, `datatypeNotSupported`, `operatorDataTypeCombinationNotSupported`, `moreInfoUriMissing`, `moreInfoUriInvalid`, `moreInfoUriTooLarge`, `descriptionMissing`, `descriptionInvalid`, `descriptionTooLarge`, `titleMissing`, `titleInvalid`, `titleTooLarge`, `operandMissing`, `operandInvalid`, `operandTooLarge`, `settingNameMissing`, `settingNameInvalid`, `settingNameTooLarge`, `englishLocaleMissing`, `duplicateLocales`, `unrecognizedLocale`, `unknown`, `remediationStringsMissing`.|
 |message|String|Error message. Inherited from [deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md)|
 |settingName|String|Setting name for the rule with error.|
 
@@ -41,13 +42,8 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceComplianceScriptRuleError",
   "code": "String",
+  "deviceComplianceScriptRulesValidationError": "String",
   "message": "String",
   "settingName": "String"
 }
 ```
-
-
-
-
-
-

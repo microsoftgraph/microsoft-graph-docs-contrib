@@ -1,9 +1,9 @@
 ---
 title: "provisionedPlan resource type"
 description: "The **provisionedPlans** property of the user entity and the organization entity is a collection of **provisionedPlan**."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "adimitui"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -15,11 +15,11 @@ The **provisionedPlans** property of the [user](user.md) entity and the [organiz
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|capabilityStatus|String|For example, “Enabled”.|
-|provisioningStatus|String|For example, “Success”.|
-|service|String|The name of the service; for example, “AccessControlS2S”|
+|capabilityStatus|String|For example, "Enabled".|
+|provisioningStatus|String|For example, "Success".|
+|service|String|The name of the service; for example, "AccessControlS2S"|
 
 ## JSON representation
 

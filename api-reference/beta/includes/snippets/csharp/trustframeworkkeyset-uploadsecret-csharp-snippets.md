@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var use = "use-value";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var k = "application-secret-to-be-uploaded";
+var requestBody = new Microsoft.Graph.Beta.TrustFramework.KeySets.Item.UploadSecret.UploadSecretPostRequestBody
+{
+	Use = "use-value",
+	K = "application-secret-to-be-uploaded",
+	Nbf = 1508969811L,
+	Exp = 1508973711L,
+};
+var result = await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"].UploadSecret.PostAsync(requestBody);
 
-var nbf = 1508969811;
-
-var exp = 1508973711;
-
-await graphClient.TrustFramework.KeySets["{id}"]
-	.UploadSecret(use,k,nbf,exp)
-	.Request()
-	.PostAsync();
 
 ```

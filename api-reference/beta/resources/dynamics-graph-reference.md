@@ -4,7 +4,7 @@ description: API documentation for integration with Microsoft Graph
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: conceptualPageType
 ---
@@ -19,6 +19,12 @@ Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central API
 
 ## Common Dynamics 365 Business Central scenarios
 The Dynamics 365 Business Central API allows you to read and modify business data through apps that are connected and integrated through a single endpoint. Use the API to, for example, get access to [customer](../resources/dynamics-customer.md) and [vendor](../resources/dynamics-vendor.md) information, or [view overdue payments](../resources/dynamics-agedaccountspayable.md).
+
+## Environment
+To enable the Dynamics 365 Business Central API, you must ensure that the **Environment Name** in the Business Central Admin Center is **Production**. 
+
+:::image type="content" source="dynamics-tenant-admin-environment.png" alt-text="Business Central Admin Center setup":::
+
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
@@ -59,7 +65,6 @@ The Dynamics 365 Business Central API can open up new ways for you to engage wit
 |shipmentMethods resource type|[shipmentMethods](../resources/dynamics-shipmentmethods.md)|
 |taxGroups resource type|[taxGroups](../resources/dynamics-taxgroups.md)|
 |taxArea resource type|[taxAreas](..resources/dynamics-taxarea.md)|
-|trial balance resource type|[trialBalance](../resources/dynamics-trialbalance.md)|
 |unitsOfMeasure resource type|[unitsOfMeasure](../resources/dynamics-unitsofmeasure.md)|
 |vendor resource type|[vendor](../resources/dynamics-vendor.md)|
 -->

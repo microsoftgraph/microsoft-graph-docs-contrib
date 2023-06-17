@@ -2,7 +2,7 @@
 title: "List pages"
 description: "Retrieve a list of page objects."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
@@ -51,17 +51,20 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 ##### Request
 Here is an example of the request.
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "ignored", "name" : "onenote_list_pages"  } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/pages
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.page"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 393
 
 {
   "value": [

@@ -4,36 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var message = new Message
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Reply.ReplyPostRequestBody
 {
-	ToRecipients = new List<Recipient>()
+	Message = new Message
 	{
-		new Recipient
+		ToRecipients = new List<Recipient>
 		{
-			EmailAddress = new EmailAddress
+			new Recipient
 			{
-				Address = "samanthab@contoso.onmicrosoft.com",
-				Name = "Samantha Booth"
-			}
+				EmailAddress = new EmailAddress
+				{
+					Address = "samanthab@contoso.onmicrosoft.com",
+					Name = "Samantha Booth",
+				},
+			},
+			new Recipient
+			{
+				EmailAddress = new EmailAddress
+				{
+					Address = "randiw@contoso.onmicrosoft.com",
+					Name = "Randi Welch",
+				},
+			},
 		},
-		new Recipient
-		{
-			EmailAddress = new EmailAddress
-			{
-				Address = "randiw@contoso.onmicrosoft.com",
-				Name = "Randi Welch"
-			}
-		}
-	}
+	},
+	Comment = "Samantha, Randi, would you name the group please?",
 };
+await graphClient.Me.Messages["{message-id}"].Reply.PostAsync(requestBody);
 
-var comment = "Samantha, Randi, would you name the group please?";
-
-await graphClient.Me.Messages["AAMkADA1MTAAAAqldOAAA="]
-	.Reply(message,comment)
-	.Request()
-	.PostAsync();
 
 ```

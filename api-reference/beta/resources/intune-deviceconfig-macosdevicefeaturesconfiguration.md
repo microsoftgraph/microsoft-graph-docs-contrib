@@ -1,7 +1,7 @@
 ---
 title: "macOSDeviceFeaturesConfiguration resource type"
 description: "MacOS device features configuration profile."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -56,18 +56,19 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |shutDownDisabled|Boolean|Whether to hide the Shut Down button item on the login window.|
 |restartDisabled|Boolean|Whether to hide the Restart button item on the login window.|
 |sleepDisabled|Boolean|Whether to hide the Sleep menu item on the login window.|
-|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `>console> special user name.|
+|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `console` special user name.|
 |shutDownDisabledWhileLoggedIn|Boolean|Whether the Shut Down menu item on the login window will be disabled while the user is logged in.|
 |restartDisabledWhileLoggedIn|Boolean|Whether the Restart menu item on the login window will be disabled while the user is logged in.|
 |powerOffDisabledWhileLoggedIn|Boolean|Whether the Power Off menu item on the login window will be disabled while the user is logged in.|
 |logOutDisabledWhileLoggedIn|Boolean|Whether the Log Out menu item on the login window will be disabled while the user is logged in.|
 |screenLockDisableImmediate|Boolean|Whether to disable the immediate screen lock functions.|
-|associatedDomains|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Gets or sets a list that maps apps to their associated domains. The key should match the app's ID, and the value should be a string in the form of "service:domain" where domain is a fully qualified hostname (e.g. webcredentials:example.com). This collection can contain a maximum of 500 elements.|
+|associatedDomains|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) collection|DEPRECATED: use appAssociatedDomains instead. Gets or sets a list that maps apps to their associated domains. The key should match the app's ID, and the value should be a string in the form of "service:domain" where domain is a fully qualified hostname (e.g. webcredentials:example.com). This collection can contain a maximum of 500 elements.|
+|appAssociatedDomains|[macOSAssociatedDomainsItem](../resources/intune-deviceconfig-macosassociateddomainsitem.md) collection|Gets or sets a list that maps apps to their associated domains. Application identifiers must be unique. This collection can contain a maximum of 500 elements.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Gets or sets a single sign-on extension profile. Deprecated: use MacOSSingleSignOnExtension instead.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Gets or sets a single sign-on extension profile.|
 |contentCachingEnabled|Boolean|Enables content caching and prevents it from being disabled by the user.|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Determines what type of content is allowed to be cached by Apple's content caching service. Possible values are: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
-|contentCachingMaxSizeBytes|Int32|The maximum number of bytes of disk space that will be used for the content cache. A value of 0 (default) indicates unlimited disk space. |
+|contentCachingMaxSizeBytes|Int64|The maximum number of bytes of disk space that will be used for the content cache. A value of 0 (default) indicates unlimited disk space. |
 |contentCachingDataPath|String|The path to the directory used to store cached content. The value must be (or end with) /Library/Application Support/Apple/AssetCache/Data|
 |contentCachingDisableConnectionSharing|Boolean|Disables internet connection sharing.|
 |contentCachingForceConnectionSharing|Boolean|Forces internet connection sharing. contentCachingDisableConnectionSharing overrides this setting.|
@@ -179,6 +180,16 @@ Here is a JSON representation of the resource.
       "value": "String"
     }
   ],
+  "appAssociatedDomains": [
+    {
+      "@odata.type": "microsoft.graph.macOSAssociatedDomainsItem",
+      "applicationIdentifier": "String",
+      "domains": [
+        "String"
+      ],
+      "directDownloadsEnabled": true
+    }
+  ],
   "singleSignOnExtension": {
     "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
     "extensionIdentifier": "String",
@@ -223,7 +234,18 @@ Here is a JSON representation of the resource.
     "activeDirectorySiteCode": "String",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String"
+    "passwordChangeUrl": "String",
+    "modeCredentialUsed": "String",
+    "usernameLabelCustom": "String",
+    "userSetupDelayed": true,
+    "signInHelpText": "String",
+    "kerberosAppsInBundleIdACLIncluded": true,
+    "managedAppsInBundleIdACLIncluded": true,
+    "credentialsCacheMonitored": true,
+    "preferredKDCs": [
+      "String"
+    ],
+    "tlsForLDAPRequired": true
   },
   "contentCachingEnabled": true,
   "contentCachingType": "String",
@@ -272,9 +294,3 @@ Here is a JSON representation of the resource.
   "contentCachingPort": 1024
 }
 ```
-
-
-
-
-
-

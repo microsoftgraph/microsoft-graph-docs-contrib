@@ -4,18 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var userScopeTeamsAppInstallation = new UserScopeTeamsAppInstallation
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new UserScopeTeamsAppInstallation
 {
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"teamsApp@odata.bind", "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"}
-	}
+		{
+			"teamsApp@odata.bind" , "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+		},
+	},
 };
+var result = await graphClient.Users["{user-id}"].Teamwork.InstalledApps.PostAsync(requestBody);
 
-await graphClient.Users["{id}"].Teamwork.InstalledApps
-	.Request()
-	.AddAsync(userScopeTeamsAppInstallation);
 
 ```

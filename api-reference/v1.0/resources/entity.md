@@ -1,9 +1,9 @@
 ---
 title: "entity resource type"
-description: ""
-localization_priority: Normal
-author: "MSGraphDocsVteam"
-ms.prod: "keylimesoda"
+description: "Represents an entity."
+ms.localizationpriority: medium
+author: "keylimesoda"
+ms.prod: "applications"
 doc_type: resourcePageType
 ---
 
@@ -11,17 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+Represents an entity.
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
+|id|String| The unique idenfier for an entity. Read-only.|
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -37,7 +39,6 @@ Here is a JSON representation of the resource
 {
   "id": "string (identifier)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

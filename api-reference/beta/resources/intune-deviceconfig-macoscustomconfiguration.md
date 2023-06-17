@@ -1,7 +1,7 @@
 ---
 title: "macOSCustomConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSCustomConfiguration resource."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -46,6 +46,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |payloadName|String|Name that is displayed to the user.|
 |payloadFileName|String|Payload file name (*.mobileconfig | *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the channel used to deploy the configuration profile. Available choices are DeviceChannel, UserChannel. Possible values are: `deviceChannel`, `userChannel`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -102,12 +103,7 @@ Here is a JSON representation of the resource.
   "version": 1024,
   "payloadName": "String",
   "payloadFileName": "String",
-  "payload": "binary"
+  "payload": "binary",
+  "deploymentChannel": "String"
 }
 ```
-
-
-
-
-
-

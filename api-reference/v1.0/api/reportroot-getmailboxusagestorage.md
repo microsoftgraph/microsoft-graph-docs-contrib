@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getMailboxUsageStorage"
 description: "Get the amount of storage used in your organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -77,7 +77,7 @@ The following is an example of the request.
   "name": "reportroot_getmailboxusagestorage"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getMailboxUsageStorage(period='D7')
 ```
 

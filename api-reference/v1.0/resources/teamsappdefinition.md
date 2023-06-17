@@ -2,7 +2,7 @@
 title: "teamsAppDefinition resource type"
 description: "Represents the details of one version of a teamsApp."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -11,17 +11,26 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of one version of a [teamsApp](teamsapp.md).
+Represents the details of a version of a [teamsApp](teamsapp.md).
 
 ## Properties
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | A unique ID (not the Teams app ID). |
-| teamsAppId          | string   | The ID from the Teams app manifest. |
-| publishingState| string|The published status of a specific version of a Teams app. Possible values are:</br>`submitted` — The specific version of the Teams app has been submitted and is under review. </br>`published`  — The request to publish the specific version of the Teams app has been approved by the admin and the app is published. </br> `rejected` — The request to publish the specific version of the Teams app was rejected by the admin. |
+| description         | string   | Verbose description of the application. |
 | displayName         | string   | The name of the app provided by the app developer. |
+| id                  | string   | A unique ID (not the Teams app ID). |
+| publishingState| string|The published status of a specific version of a Teams app. Possible values are:</br>`submitted` — The specific version of the Teams app has been submitted and is under review. </br>`published`  — The request to publish the specific version of the Teams app has been approved by the admin and the app is published. </br> `rejected` — The request to publish the specific version of the Teams app was rejected by the admin. |
+| shortDescription    | string   | Short description of the application. |
+| teamsAppId          | string   | The ID from the Teams app manifest. |
 | version             | string   | The version number of the application. |
+
+
+## Relationships
+
+| Relationship | Type	| Description |
+|:---------------|:--------|:----------|
+|bot|[teamworkBot](teamworkbot.md) | The details of the bot specified in the Teams app manifest. |
 
 ## JSON representation
 

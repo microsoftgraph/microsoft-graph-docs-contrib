@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var destinationId = "destinationId-value";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Messages["{id}"]
-	.Copy(destinationId)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Me.Messages.Item.Copy.CopyPostRequestBody
+{
+	DestinationId = "destinationId-value",
+};
+var result = await graphClient.Me.Messages["{message-id}"].Copy.PostAsync(requestBody);
+
 
 ```

@@ -1,8 +1,8 @@
 ---
 title: "Update OneNote page content"
-description: " Enterprise notebooks on Microsoft 365"
+description: "Update the content of a OneNote page by sending a PATCH request to the page's content endpoint. Then send a JSON change object in the message body."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 ---
 
@@ -40,7 +40,7 @@ The **data-id** and **id** values are used as **target** identifiers for the ele
 Your full request URI will look like this:<br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
 
 
-Learn more about the [service root URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).
+Learn more about the [service root URL](/graph/api/resources/onenote-api-overview#root-url).
 
 
 <a name="message-body"></a>
@@ -122,7 +122,7 @@ Microsoft Graph generates **id** values for the elements on the page that can be
 
 `GET ../notes/pages/{page-id}/content?includeIDs=true` 
 
-> **Note:**
+> [!NOTE]
 > The API discards all **id** values that are defined in the [input HTML](onenote-input-output-html.md) of create-page and update-page requests.
 
 The following example shows generated IDs for a paragraph and an image in the [output HTML](onenote-input-output-html.md) of a page.
@@ -352,7 +352,7 @@ The following example uses the replace action to change a to-do check box item t
 ```json
 [
   {
-    'target':'#task1',
+    'target':'p:{33f8a242-7c33-4bb2-90c5-8425a68cc5bf}{40}',
     'action':'replace',
     'content':'<p data-tag="to-do:completed" data-id="task1">First task</p>'
   }
@@ -460,13 +460,10 @@ The OneNote service root URL uses the following format for all calls to the OneN
 
 The `version` segment in the URL represents the version of Microsoft Graph that you want to use. `v1.0` is for stable production code. `beta` is to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code.
 
-`me` is for OneNote content that the current user can access (owned and shared). `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [Azure AD Graph API](/previous-versions/azure/ad/graph/api/api-catalog).
+`me` is for OneNote content that the current user can access (owned and shared). `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [users](/graph/api/resources/user) API.
 
-
-> **Note:**
+> [!NOTE]
 > You can get user ids by making a GET request on `https://graph.microsoft.com/v1.0/users`.
-
-
 
 <a name="permissions"></a>
 
@@ -487,5 +484,5 @@ For more information about permission scopes and how they work, see [OneNote per
 - [Add images and files](onenote-images-files.md)
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote development questions on Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)

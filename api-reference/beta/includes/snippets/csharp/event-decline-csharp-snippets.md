@@ -4,29 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var comment = "I won't be able to make this week. How about next week?";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var sendResponse = true;
-
-var proposedNewTime = new TimeSlot
+var requestBody = new Microsoft.Graph.Beta.Me.Events.Item.Decline.DeclinePostRequestBody
 {
-	Start = new DateTimeTimeZone
+	Comment = "I won't be able to make this week. How about next week?",
+	SendResponse = true,
+	ProposedNewTime = new TimeSlot
 	{
-		DateTime = "2019-12-02T18:00:00",
-		TimeZone = "Pacific Standard Time"
+		Start = new DateTimeTimeZone
+		{
+			DateTime = "2019-12-02T18:00:00",
+			TimeZone = "Pacific Standard Time",
+		},
+		End = new DateTimeTimeZone
+		{
+			DateTime = "2019-12-02T19:00:00",
+			TimeZone = "Pacific Standard Time",
+		},
 	},
-	End = new DateTimeTimeZone
-	{
-		DateTime = "2019-12-02T19:00:00",
-		TimeZone = "Pacific Standard Time"
-	}
 };
+await graphClient.Me.Events["{event-id}"].Decline.PostAsync(requestBody);
 
-await graphClient.Me.Events["{id}"]
-	.Decline(proposedNewTime,sendResponse,comment)
-	.Request()
-	.PostAsync();
 
 ```

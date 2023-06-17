@@ -4,26 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var b2cIdentityUserFlow = new B2cIdentityUserFlow
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new B2cIdentityUserFlow
 {
 	Id = "Customer",
 	UserFlowType = UserFlowType.SignUpOrSignIn,
 	UserFlowTypeVersion = 3f,
-	IdentityProviders = (IB2cIdentityUserFlowIdentityProvidersCollectionPage)new List<IdentityProvider>()
+	IdentityProviders = new List<IdentityProvider>
 	{
 		new IdentityProvider
 		{
 			Id = "Facebook-OAuth",
-			Type = "Facebook",
-			Name = "Facebook"
-		}
-	}
+		},
+	},
 };
+var result = await graphClient.Identity.B2cUserFlows.PostAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Location", "https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')");
+});
 
-await graphClient.Identity.B2cUserFlows
-	.Request()
-	.AddAsync(b2cIdentityUserFlow);
 
 ```

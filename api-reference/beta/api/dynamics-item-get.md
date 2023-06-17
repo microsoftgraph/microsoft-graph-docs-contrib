@@ -1,10 +1,10 @@
 ---
-title: Get items 
-description: Gets an item object in Dynamics 365 Business Central.
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
-localization_priority: Normal
+title: "Get items" 
+description: "Gets an item object in Dynamics 365 Business Central."
+services: "project-madeira"
+documentationcenter: ""
+author: "SusanneWindfeldPedersen"
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
@@ -28,12 +28,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-```
+```http
 GET /financials/companies/{id}/items/{id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header       |Value                    |
@@ -44,21 +44,22 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an **items** object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [item](../resources/dynamics-item.md) objects in the response body.
 
 ## Example
-**Request**
 
-Here is an example of the request.
-```json
+### Request
+
+The following is an example of the request.
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
 ```
 
-**Response**
+### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
 ```json
 {
@@ -78,8 +79,4 @@ Here is an example of the response.
   "taxGroupCode": "FURNITURE",
   "lastModifiedDateTime": "2017-03-07T00:35:30.073Z"
 }
-
 ```
-
-
-

@@ -1,15 +1,15 @@
 ---
 title: "Working with the call records API in Microsoft Graph"
 description: "The Microsoft Graph call records API allows you to retrieve usage and diagnostics data for calls and online meetings within your organization."
-author: "williamlooney"
+author: "mcm223"
 doc_type: conceptualPageType
 ms.prod: cloud-communications
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Working with the call records API in Microsoft Graph
 
-Call records provide usage and diagnostic information about the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. You can use the call records APIs to subscribe to call records and look up call records by IDs.
+Call records provide usage and diagnostic information about the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. You can use the call records APIs to subscribe to call records and look up call records by IDs. A call record is created after a call or meeting ends and the record is retained for 30 days.
 
 The call records API is defined in the OData sub-namespace, `microsoft.graph.callRecords`.
 
@@ -20,6 +20,8 @@ The call records API is defined in the OData sub-namespace, `microsoft.graph.cal
 | [callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
 | [session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
 | [segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
+| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) |
+| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md)|
 
 ## Call record structure
 
@@ -35,5 +37,5 @@ In the diagram above, the numbers denote how many children of each type can be p
 
 ## See also
 
-- [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-1.0)
+- [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true)
 

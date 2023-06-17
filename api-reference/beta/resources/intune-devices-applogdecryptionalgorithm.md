@@ -1,7 +1,7 @@
 ---
 title: "appLogDecryptionAlgorithm enum type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -20,10 +20,5 @@ Not yet documented
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|aes256|0|Not yet documented|
-
-
-
-
-
-
+|aes256|0|decrypting using Aes256.|
+|unknownFutureValue|1|Evolvable enumeration sentinel value. Do not use.|

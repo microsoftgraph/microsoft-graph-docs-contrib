@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var storageLocation = "storageLocation-value";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Users["{id}"]
-	.ExportPersonalData(storageLocation)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Beta.Users.Item.ExportPersonalData.ExportPersonalDataPostRequestBody
+{
+	StorageLocation = "storageLocation-value",
+};
+await graphClient.Users["{user-id}"].ExportPersonalData.PostAsync(requestBody);
+
 
 ```

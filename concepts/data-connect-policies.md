@@ -1,67 +1,49 @@
 ---
-title: "Microsoft Graph data connect policies and licensing"
-description: "Describes what policies are supported and how to assign ISV access SKUs to organizations."
-author: "tlenig"
-localization_priority: Priority
+title: "Microsoft Graph Data Connect policies and billing"
+description: "Learn about Azure policies supported for an app built with Microsoft 365 data and the bill associated with the Azure Synapse or Azure Data Factory you are using."
+author: "rimisra2"
+ms.localizationpriority: high
 ms.prod: "data-connect"
 ---
 
-# Microsoft Graph data connect policies and licensing
+# Microsoft Graph Data Connect policies and billing
 
-Microsoft Graph data connect uses [Azure managed applications](/azure/managed-applications/overview) to allow you to create and deploy your solutions in your customer's Azure environment. Managed applications allow you to support certain Azure policies, giving customers greater confidence and comfortability when using your applications. Additionally, you must purchase and apply licenses from Microsoft your organization or the organizations that install your applications, in order to allow the application to access data through data connect.
+Microsoft Graph Data Connect uses [Azure managed applications](/azure/managed-applications/overview) to allow you to create and deploy your solutions in your Azure environment. Managed applications let you support certain Azure policies, giving customers greater confidence and comfortability when using your applications.
 
 ## Policies
 
-The following Azure policies are supported for an Azure managed application built using Microsoft 365 data:
+The following Azure policies are supported for an Azure managed application built by using Microsoft 365 data:
 
-- [ADLS Gen1 Encryption Required Policy](/azure/azure-policy/scripts/enforce-datalakestore-encryption)
+- [Azure Policy built-in definitions for Azure Storage](/azure/storage/common/policy-reference)
+- [Introduction to Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction)
+- [Azure Policy built-in definitions for Azure Data Lake Storage Gen1](/azure/data-lake-store/policy-reference)
 
-When you select any of the policies during Azure marketplace publishing, the policy compliance status will be checked and enforced for all installations of your application. All selected policies that are compliant will be shown to the data approvers as part of the data request. Any policy compliance violation would cause the pipeline run to fail and stop the data extraction.
+> [!NOTE]
+> Azure Data Lake Storage Gen1 and Gen2 use different policies because Azure Data Lake Storage Gen2 implements Azure Storage.
 
-If you would like to request support for additional policies , let us know on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581).
+When you select any of the policies during Azure Marketplace publishing, the policy compliance status is checked and enforced for all installations of your application. All selected policies that are compliant are shown to the data approvers as part of the data request. Any policy compliance violation causes the pipeline run to fail and stop the data extraction.
 
-## Licensing
+## Billing
 
-Access to the Microsoft Graph data connect toolset is available through Workplace Analytics, which is licensed on a per-user, per-month basis.  Organizations with Workplace Analytics can extend their insights from Microsoft 365 data by granting and governing access to their data at scale to applications developed in-house or by independent software vendors (ISVs). To learn more, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).
+A bill is associated with the Azure subscription of the Azure Synapse or Azure Data Factory you are using. The price in this new billing model is based on the number of Microsoft Graph objects that you are accessing. For more information about billing, see the [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
 
-If you’re an ISV, we also provide an option for you to build applications for customers who have not purchased Workplace Analytics. To do so, you must purchase enough licenses to associate them with all the users your application will access through Microsoft Graph data connect, for each customer who purchases your application. You can use this option along with Workplace Analytics licenses. You’ll need to take steps to associate instances of the Microsoft Graph data connect license with each of their customer installations.
+Microsoft Graph Data Connect consumption charges are billed monthly on a pay-as-you-go basis. The Data Connect billing unit is in a multiple of 1000s of objects, where 1 object maps to 1 individual instance of an entity in Microsoft 365. For example, 1 email == 1 object, 1 file == 1 object, 1 Teams chat message == 1 object, and so on. 
 
-### ISVs using the Microsoft Graph data connect license
-If you're an ISV using the data connect license, you must utilized [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to store and process the license assignment. You will need to [create a Key Vault](/azure/key-vault/quick-create-portal). During creation, note the Key Vault URI value. It will be used in the application definition to reference the Key Vault. After you create the Key Vault, ensure that the SPN used in the Source Linked Service of the application's ARM template has access to it. To do so, go to the **Access Policies** pane of the Key Vault instance, create an access policy for the application referenced by the SPN, and assign **Get** and **List** permissions to the application. 
+We have some datasets available for free or are currently free in preview while other datasets are charged. Microsoft Graph Data Connect offers datasets across multiple different Microsoft 365 products and services. For more information on datasets that are available through Microsoft Graph Data Connect, please refer to [Dataset, regions and sinks](/graph/data-connect-datasets#datasets).
 
-![Creating access policy to Key Vault](images/data-connect-keyvault-access.png)
+There is no charge for extraction of objects from the following datasets:
+- BasicDataSet_v0.User_v0
+- BasicDataSet_v0.User_v1
+- BasicDataSet_v0.MailboxSettings
+- BasicDataSet_v0.Manager
+- BasicDataSet_v0.DirectReport
+- BasicDataSet_v0.GroupDetails
+- BasicDataSet_v0.GroupMembers
+- BasicDataSet_v0.GroupOwners
 
-The assignment of Microsoft Graph data connect licenses to organizations is provided as a secret in the Key Vault. To do so:
-1. Go to the Key Vault and under **Generate/Import**, create a manual secret. The name of the secret must be **MGdcSKUMapping** and the value of the secret must contain the ID of the tenant and the number of licenses allocated to that tenant, in the following format.
 
-`{"tenantId1" : 20, "tenantId2" : 35, "tenantId3" : 12}`
+## See also
 
-2. After setting the value, make sure that it is enabled and select **Create** to begin the deployment. 
-
-![Creating the secret in Key Vault](images/data-connect-keyvault-create.png)
-
-3. You also need to update the application's ARM template to reference the Key Vault that you created. To do so, populated the **LicenseKeyVaultUri** property, which must be populated with the **KeyVaultUri** value you noted during creation. This property is provided in the Source Linked Service of the application's ARM template, as shown. 
-
-```
-"properties": {
-        "type": "Office365",
-	        "description": "Source O365 linked service",
-	        "typeProperties": {
-	               "office365tenantId": "[subscription().tenantId]",
-		"PrivacyPolicyUri": "http://www.wkw.com/privacy",
-		"TermsOfUseUri": "http://www.wkw.com/tos",
-		"servicePrincipalId": "[variables('sourceLinkedServicePrincipalId')]",
-		"servicePrincipalKey": {
-	                       "type": "SecureString",
-		        "value": "[variables('sourceLinkedServicePrincipalKey')]"
-		},
-		"servicePrincipalTenantId": "[variables('sourceLinkedServicePrincipalTenantId')]",
-	    "LicenseKeyVaultUri": "<KeyVaultUri>",
-	        }
-	}
-```
-
-Data connect will reference the secret in the Key Vault before each pipeline run. It will fail the pipeline if there aren't enough licenses assigned to the organization to provide data for each user, or if the Key Vault is inaccessible. 
-
-## Next Steps
-If you would like to request support for additional policies, let us know on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581). To learn more about Workplace Analytics, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).
+- [User selection and filtering](data-connect-filtering.md)
+- [Data Connect frequently asked questions](data-connect-faq.md)
+- [Dataset, regions and sinks](/graph/data-connect-datasets#datasets).

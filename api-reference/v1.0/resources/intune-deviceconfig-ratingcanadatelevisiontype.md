@@ -1,7 +1,7 @@
 ---
 title: "ratingCanadaTelevisionType enum type"
 description: "TV content rating labels in Canada"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -26,12 +26,3 @@ TV content rating labels in Canada
 |parentalGuidance|5|PG, Parental Guidance|
 |agesAbove14|6|The 14+ classification is intended for viewers ages 14 and older|
 |agesAbove18|7|The 18+ classification is intended for viewers ages 18 and older|
-
-
-
-
-
-
-
-
-

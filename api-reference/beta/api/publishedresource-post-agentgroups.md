@@ -1,9 +1,9 @@
 ---
 title: "Assign publishedResource to onPremisesAgentGroup"
 description: "Assign a **publishedResource** object to an **onPremisesAgentGroup** object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/agentGroups/$ref
+POST /onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/agentGroups/$ref
 ```
 
 ## Request headers
@@ -71,7 +71,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -92,5 +92,6 @@ HTTP/1.1 204
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

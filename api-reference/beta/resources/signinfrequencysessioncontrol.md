@@ -1,9 +1,9 @@
 ---
 title: "signInFrequencySessionControl resource type"
 description: "Session control to enforce signin frequency."
-localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "rckyplln"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Session control to enforce sign-in frequency. Inherits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
+Session control to enforce sign-in frequency. Inherits from [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`.|
+|frequencyInterval  |signInFrequencyInterval  | The possible values are `timeBased`, `everyTime`, `unknownFutureValue`.|
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. |
-|type          |String       | Possible values are: `days`, `hours`.|
+|type          |signinFrequencyType       | Possible values are: `days`, `hours`, or `null` if frequencyInterval is `everyTime` .|
 |value         |Int32        | The number of `days` or `hours`.|
+
 
 ## Relationships
 
@@ -42,9 +45,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "isEnabled": true,
+  "isEnabled":true,
   "type": "String",
-  "value": 1024
+  "value": 1024,
+  "authenticationType": "String",
+  "frequencyInterval": "String"
 }
 ```
 

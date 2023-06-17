@@ -1,7 +1,7 @@
 ---
 title: "List contacts"
 description: "Get contacts in the user's mailbox."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To get all the contacts in a user's mailbox:
+To get all the contacts in a user's default Contacts folder:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -47,7 +47,7 @@ To get contacts in a specific folder in the user's mailbox:
 GET /me/contactfolders/{Id}/contacts
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts
 
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## Optional query parameters
@@ -72,9 +72,10 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [contact](../resources/contact.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [contact](../resources/contact.md) objects in the response body.
+
 ## Example
-##### Request
+### Request
 The following example gets the **displayName** and **emailAddresses** properties of the signed-in user's contacts.
 
 # [HTTP](#tab/http)
@@ -85,6 +86,7 @@ The following example gets the **displayName** and **emailAddresses** properties
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddresses
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-contacts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -93,16 +95,31 @@ GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddres
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-contacts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-get-contacts-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-get-contacts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-get-contacts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-get-contacts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-get-contacts-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-get-contacts-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -169,5 +186,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -1,10 +1,10 @@
 ---
 title: "stringKeyLongValuePair resource type"
 description: "Represents a key-value pair where the key is a string and the value is an Int64."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # stringKeyLongValuePair resource type
@@ -16,10 +16,10 @@ Namespace: microsoft.graph
 Represents a key-value pair where the key is a string and the value is an Int64.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|key|String|Key.|
-|value|Int64|Value.|
+|key|String| The mapping of the user type from the source system to the target system. For example:<br/><li>`User to User` - For Azure AD to Azure AD synchronization <br/><li>`worker to user` - For Workday to Azure AD synchronization. <br/> |
+|value|Int64|Total number of synchronized objects.|
 
 ## JSON representation
 
@@ -36,7 +36,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "key": "String",
-  "value": 1024
+  "value": "Integer"
 }
 
 ```

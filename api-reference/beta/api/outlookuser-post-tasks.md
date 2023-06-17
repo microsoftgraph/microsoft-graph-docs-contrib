@@ -1,7 +1,7 @@
 ---
 title: "Create outlookTask"
 description: "Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mashriv"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -56,6 +56,8 @@ If successful, this method returns `201 Created` response code and [outlookTask]
 ## Example
 ##### Request
 The following example shows the use of the `Prefer: outlook.timezone` header. It creates a task, expresses **startDateTime** and **dueDateTime** in Eastern Standard Time (EST), and includes a `Prefer` header of Pacific Standard Time (PST).
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlookuser"
@@ -64,7 +66,6 @@ The following example shows the use of the `Prefer: outlook.timezone` header. It
 POST https://graph.microsoft.com/beta/me/outlook/tasks
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 276
 
 {
   "subject": "Shop for children's weekend",
@@ -78,6 +79,7 @@ Content-length: 276
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-outlooktask-from-outlookuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -86,8 +88,24 @@ Content-length: 276
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-outlooktask-from-outlookuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-outlooktask-from-outlookuser-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-outlooktask-from-outlookuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-outlooktask-from-outlookuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-outlooktask-from-outlookuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-outlooktask-from-outlookuser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-outlooktask-from-outlookuser-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -100,7 +118,7 @@ midnight in the specified time zone (EST).
 Since the `Prefer` header specifies PST, the POST method expresses all the date-related properties in the response in PST. 
 In particular, for the **startDateTime** and **dueDateTime** properties, the POST method converts midnight in EST to PST and returns them in PST in the response.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,7 +127,6 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 576
 
 {
   "id": "AAMkADA1MHgwAAA=",

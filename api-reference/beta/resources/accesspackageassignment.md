@@ -1,9 +1,9 @@
 ---
 title: "accessPackageAssignment resource type"
 description: "An access package assignment is an assignment of an access package to a particular subject, for a period of time."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -13,15 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment can state that user Alice has been assigned access via the access package Sales for the period January 2019 through July 2019.
+In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment can state that user Alice has been assigned access via the access package Sales for the period January 2019 through July 2019.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of **accesspackageassignment** objects. |
+| [List accessPackageAssignments](../api/entitlementmanagement-list-accesspackageassignments.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of **accessPackageAssignment** objects. |
+|[filterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects filtered on the signed-in user.|
+| [reprocess](../api/accesspackageassignment-reprocess.md) | None | Automatically reevaluate and enforce a user’s assignments for a specific access package.|
+| [additionalAccess](../api/accesspackageassignment-additionalaccess.md) | [accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects for users who have assignments to incompatible access packages.|
 
->**Note:** You can't use a method to create or remove an access package assignment. Instead, a client that wants to request an access package assignment for a user, or remove an access package assignment from a user, can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
+> [!NOTE]
+> To create or remove an access package assignment for a user, use the [create an accessPackageAssignmentRequest](../api/entitlementmanagement-post-accesspackageassignmentrequests.md)
 
 ## Properties
 
@@ -29,10 +33,11 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |:-------------|:------------|:------------|
 |accessPackageId|String|The identifier of the access package. Read-only.|
 |assignmentPolicyId|String|The identifier of the access package assignment policy. Read-only.|
-|assignmentState|String|The state of the access package. Possible values are `Delivered` or `Expired`. Read-only.|
-|assignmentStatus|String|Read-only.|
+|assignmentState|String|The state of the access package assignment. Possible values are `Delivering`, `Delivered`, or `Expired`. Read-only. Supports `$filter` (`eq`).|
+|assignmentStatus|String|More information about the assignment lifecycle.  Possible values include `Delivering`, `Delivered`, `NearExpiry1DayNotificationTriggered`, or `ExpiredNotificationTriggered`.  Read-only.|
 |catalogId|String|The identifier of the catalog containing the access package. Read-only.|
-|expiredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|customExtensionCalloutInstances|[customExtensionCalloutInstance](customextensioncalloutinstance.md) collection|Information about all the custom extension calls that were made during the access package assignment workflow.|
+|expiredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
 |isExtended|Boolean|Indicates whether the access package assignment is extended. Read-only.|
 |targetId|String| The ID of the subject with the assignment. Read-only.|
@@ -42,10 +47,10 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackage|[accessPackage](accesspackage.md)| Read-only. Nullable.|
-|accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Read-only. Nullable.|
+|accessPackage|[accessPackage](accesspackage.md)| Read-only. Nullable. Supports `$filter` (`eq`) on the **id** property and `$expand` query parameters.|
+|accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Read-only. Nullable. Supports `$filter` (`eq`) on the **id** property|
 |accessPackageAssignmentResourceRoles|[accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection| The resource roles delivered to the target user for this assignment. Read-only. Nullable.|
-|target|[accessPackageSubject](accesspackagesubject.md)| The subject of the access package assignment. Read-only. Nullable.|
+|target|[accessPackageSubject](accesspackagesubject.md)| The subject of the access package assignment. Read-only. Nullable. Supports `$expand`. Supports `$filter` (`eq`) on **objectId**. |
 
 ## JSON representation
 
@@ -53,25 +58,31 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.accessPackageAssignment",
-  "baseType": "",
-  "keyProperty": "id"
-}-->
-
-```json
+  "openType": false
+}
+-->
+``` json
 {
-   "id":"9bdae7b4-6ece-487b-9eb8-9679dbd67aa2",
-   "catalogId":"cc30dc98-6d3c-4fa0-bed8-fd76d0efd993",
-   "accessPackageId":"e3f47362-993f-4fcb-8a38-532ffca16150",
-   "assignmentPolicyId":"63ebd106-8116-40e7-a0ab-01ae475d11bb",
-   "targetId":"ab4291f6-66b7-42bf-b597-a05b29414f5c",
-   "assignmentStatus":"ExpiredNotificationTriggered",
-   "assignmentState":"Expired",
-   "isExtended":false,
-   "expiredDateTime":"2019-04-25T23:45:40.42Z"
+  "@odata.type": "#microsoft.graph.accessPackageAssignment",
+  "id": "String (identifier)",
+  "catalogId": "String",
+  "accessPackageId": "String",
+  "assignmentPolicyId": "String",
+  "targetId": "String",
+  "assignmentStatus": "String",
+  "assignmentState": "String",
+  "isExtended": "Boolean",
+  "expiredDateTime": "String (timestamp)",
+  "schedule": {
+    "@odata.type": "microsoft.graph.requestSchedule"
+  },
+  "customExtensionCalloutInstances": [
+    {
+      "@odata.type": "microsoft.graph.customExtensionCalloutInstance"
+    }
+  ]
 }
 ```
 
@@ -84,5 +95,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

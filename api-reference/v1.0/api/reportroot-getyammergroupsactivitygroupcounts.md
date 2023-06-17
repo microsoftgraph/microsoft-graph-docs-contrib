@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getYammerGroupsActivityGroupCounts"
 description: "Get the total number of groups that existed and how many included group conversation activity."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -78,7 +78,7 @@ The following is an example of the request.
   "name": "reportroot_getyammergroupsactivitygroupcounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityGroupCounts(period='D7')
 ```
 

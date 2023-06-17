@@ -1,10 +1,10 @@
 ---
 title: "teamwork resource type"
-description: "A container for Microsoft Teams features available for organization."
-author: "clearab"
+description: "A container for the range of Microsoft Teams functionalities that are available for the organization."
+author: "charlieforce"
+ms.localizationpriority: medium
+ms.prod: "teamwork"
 doc_type: resourcePageType
-localization_priority: Priority
-ms.prod: "microsoft-teams"
 ---
 
 # teamwork resource type
@@ -13,52 +13,49 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for the range of Microsoft Teams functionalities that are available for the organization.
+A container for the range of Microsoft Teams functionalities that are available for the organization. 
+
+Inherits from [entity](../resources/entity.md).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List deletedTeams](../api/teamwork-list-deletedteams.md)|[deletedTeam](../resources/deletedteam.md) collection|Get a list of the [deletedTeam](../resources/deletedteam.md) objects and their properties.|
+|[List teamTemplates](../api/teamwork-list-teamtemplates.md)|[teamTemplate](../resources/teamtemplate.md) collection|Get the list of [teamTemplate](../resources/teamtemplate.md) objects available for the tenant. |
 
 ## Properties
-
-| Property | Type | Description |
-|:---------------|:--------|:----------|
-|id|string| A unique identifier. |
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String| A unique identifier. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
-
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in the personal scope of this user.|
+|deletedTeams|[deletedTeam](../resources/deletedteam.md) collection| A collection of deleted teams.|
+|devices|[teamworkDevice](../resources/teamworkdevice.md) collection|The Teams devices provisioned for the tenant.|
+|teamsAppSettings|[teamsAppSettings](../resources/teamsappsettings.md)|Represents tenant-wide settings for all [Teams apps](teamsapp.md) in the tenant.|
+|teamTemplates|[teamtemplate](../resources/teamtemplate.md) collection| The templates associated with a team.|
+|workforceIntegrations|[workforceIntegration](../resources/workforceintegration.md) collection| A workforce integration with shifts.|
 
 ## JSON representation
-
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamwork",
-  "baseType": "microsoft.graph.entity"
-}-->
-
-```json
-{
-  "id": "string"
-}
-
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "teamwork resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
+  "baseType": "microsoft.graph.entity",
+  "openType": false
 }
 -->
 
-## See Also
+``` json
+{
+    "@odata.type": "#microsoft.graph.teamwork",
+    "id": "String (identifier)"
+}
+```
+
+## See also
 
 - [userTeamwork resource](userteamwork.md)
-
 

@@ -1,9 +1,9 @@
 ---
 title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event, message, or post.  "
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
-author: "svpsiva"
+author: "abheek-das"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Derived from [attachment](attachment.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentType|String|The content type of the attachment.|
+|contentType|String|The content type of the attachment. Returned as `null` by default, when not set explicitly. Optional.|
 |id|String| The attachment ID.|
 |isInline|Boolean|Set to true if the attachment is inline, such as an embedded image within the body of the item.|
 |lastModifiedDateTime|DateTimeOffset|The last time and date that the attachment was modified.|

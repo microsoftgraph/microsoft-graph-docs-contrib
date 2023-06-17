@@ -1,10 +1,10 @@
 ---
 title: "filter resource type"
 description: "Determines which objects should be provisioned to the application."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # filter resource type
@@ -22,7 +22,7 @@ An object is considered in scope for the group set (group set is evaluated to `t
 For more information, see [Attribute-based application provisioning with scoping filters](/azure/active-directory/active-directory-saas-scoping-filters)
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |categoryFilterGroups|[filterGroup](synchronization-filtergroup.md) collection|`*Experimental*` Filter group set used to decide whether given object belongs and should be processed as part of this object mapping. An object is considered in scope *if ANY of the groups in the collection is evaluated to `true`*.|
 |groups|[filterGroup](synchronization-filtergroup.md) collection|Filter group set used to decide whether given object is in scope for provisioning. **This is the filter which should be used in most cases**. If an object used to satisfy this filter at a given moment, and then the object or the filter was changed so that filter is not satisfied any longer, such object *will get de-provisioned". An object is considered in scope *if ANY of the groups in the collection is evaluated to `true`*.|
@@ -42,11 +42,22 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "categoryFilterGroups": [{"@odata.type": "microsoft.graph.filterGroup"}],
-  "groups": [{"@odata.type": "microsoft.graph.filterGroup"}],
-  "inputFilterGroups": [{"@odata.type": "microsoft.graph.filterGroup"}]
+  "categoryFilterGroups": [
+    {
+      "@odata.type": "microsoft.graph.filterGroup"
+    }
+  ],
+  "groups": [
+    {
+      "@odata.type": "microsoft.graph.filterGroup"
+    }
+  ],
+  "inputFilterGroups": [
+    {
+      "@odata.type": "microsoft.graph.filterGroup"
+    }
+  ]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

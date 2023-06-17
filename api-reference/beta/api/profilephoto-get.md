@@ -1,13 +1,13 @@
 ---
-title: "Get photo"
-description: "Get the specified profilePhoto or its metadata (**profilePhoto** properties)."
-localization_priority: Priority
+title: "Get profilePhoto"
+description: "Get the specified profilePhoto or its metadata (profilePhoto properties)."
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "people"
 author: "kevinbellinger"
 ---
 
-# Get photo
+# Get profilePhoto
 
 Namespace: microsoft.graph
 
@@ -26,22 +26,61 @@ For example, if the user uploads a photo that is 504x504 pixels, all but the 648
 If the specified size is not available in the user's mailbox or in Azure Active Directory, the size 1x1 is returned with the rest of the  metadata.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-> **Note:** The GET photo method in beta supports a user's work, school, or personal accounts. The GET photo metadata method, however, supports only the user's work or school accounts and not personal accounts.
+### To retrieve the profile photo of a contact
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | For **user** resource:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
-|Delegated (personal Microsoft account)  <br /> **Note**: Metadata operation is not supported. | For **user** resource:<br/>User.Read, User.ReadWrite<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
-|Application                        | For **user** resource:<br/>User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Least privileged permissions             | Higher privileged permissions             |
+|:--------------------|:-----------------------------------------|:------------------------------------------|
+|Delegated (work or school account)      |   Contacts.Read | Contacts.ReadWrite           |
+|Delegated (personal Microsoft account)      |   Contacts.Read | Contacts.ReadWrite            |
+|Application      |    Contacts.Read | Contacts.ReadWrite           |
 
-> **Note:**  There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+### To retrieve the profile photo of a group
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Least privileged permissions             | Higher privileged permissions             |
+|:--------------------|:-----------------------------------------|:------------------------------------------|
+|Delegated (work or school account)      |   Group.Read.All | Group.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   Not supported.            |  Not supported.            |
+|Application      |    Group.Read.All | Group.ReadWrite.All           |
+
+### To retrieve the profile photo of a team
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Least privileged permissions             | Higher privileged permissions             |
+|:--------------------|:-----------------------------------------|:------------------------------------------|
+|Delegated (work or school account) | Team.ReadBasic.All | TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
+|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
+|Application | TeamSettings.Read.Group* | TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All**  |
+
+
+### To retrieve the profile photo of a user
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Least privileged permissions             | Higher privileged permissions             |
+|:--------------------|:-----------------------------------------|:------------------------------------------|
+|Delegated (work or school account)      |   User.Read | User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   User.Read | User.ReadWrite            |
+|Application      |    User.Read.All | User.ReadWrite.All           |
+
+
+
+> [!NOTE]
+> 
+> - Metadata operation is not supported for personal Microsoft accounts.
+> - There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> - Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> - Retrieving a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
+
 
 ## HTTP request
 
 ### Get the photo
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photo/$value
 GET /users/{id | userPrincipalName}/photo/$value
@@ -50,9 +89,12 @@ GET /me/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+GET /team/{id}/photo/$value
 ```
+
 ### Get the metadata of the photo
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photo
 GET /users/{id | userPrincipalName}/photo
@@ -61,10 +103,12 @@ GET /me/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contacts/{id}/photo
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
+GET /team/{id}/photo
 ```
 
 ### Get the metadata for a specific photo size
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photos/{size}
 GET /users/{id | userPrincipalName}/photos/{size}
@@ -103,6 +147,7 @@ If successful, this method returns a `200 OK` response code and a [profilePhoto]
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/photo/$value
 Content-Type: image/jpg
@@ -117,6 +162,7 @@ Contains the binary data of the requested photo. The HTTP response code is 200.
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/photos/48x48/$value
 Content-Type: image/jpg
@@ -132,6 +178,7 @@ Contains the binary data of the requested 48x48 photo. The HTTP response code is
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/photo
 ```
@@ -144,6 +191,7 @@ The following response data shows the photo metadata.
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -153,7 +201,7 @@ Content-type: application/json
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
     "@odata.mediaContentType": "image/jpeg",
     "@odata.mediaEtag": "\"BA09D118\"",
-    "id": "240X240",
+    "id": "240x240",
     "width": 240,
     "height": 240
 }
@@ -166,6 +214,7 @@ The following response data shows the contents of a response when a photo hasn't
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -175,28 +224,88 @@ Content-type: application/json
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
     "@odata.mediaContentType": "image/gif",
     "@odata.mediaEtag": "",
-    "id": "1X1",
+    "id": "1x1",
     "width": 1,
     "height": 1
 }
 ```
+
+### Example 4: Get the photo metadata
+
+#### Request
+
+Here is an example of the request to get the metadata of the team photo.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team_photo_metadata"
+}-->
+```http
+GET https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo
+```
+
+#### Response
+
+Here is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo/$entity",
+    "@odata.id": "https://graph.microsoft.com/beta/teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo",
+    "@odata.mediaContentType": "image/jpeg",
+    "@odata.mediaEtag": "\"BA09D118\"",
+    "id": "240X240",
+    "width": 240,
+    "height": 240
+}
+```
+
+### Example 5: Get the team photo's binary data
+
+Here is an example of the request to get the team photo's binary data.
+
+#### Request
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team_photo"
+}-->
+```http
+GET https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
+```
+
+#### Response
+
+Contains the binary data of the requested photo. The HTTP response code is 200.
+
 ## Using the binary data of the requested photo
 
 When you use the `/photo/$value` endpoint to get the binary data for a profile photo, you'll need to convert the data into a base-64 string in order to add it as an email attachment. The following JavaScript example shows how to create an array that you can pass as the value of the `Attachments` parameter of an [Outlook message](user-post-messages.md).
 
-      const attachments = [{
-        '@odata.type': '#microsoft.graph.fileAttachment',
-        ContentBytes: file.toString('base64'),
-        Name: 'mypic.jpg'
-      }];
+```javascript
+const attachments = [{
+  '@odata.type': '#microsoft.graph.fileAttachment',
+  ContentBytes: file.toString('base64'),
+  Name: 'mypic.jpg'
+}];
+```
 
 See the [Microsoft Graph Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) for an implementation of this example.
 
 If you want to display the image on a web page, create an in-memory object from the image and make that object the source of an image element. Here is an example in JavaScript of this operation.
 
-    const url = window.URL || window.webkitURL;
-    const blobUrl = url.createObjectURL(image.data);
-    document.getElementById(imageElement).setAttribute("src", blobUrl);
+```javascript
+const url = window.URL || window.webkitURL;
+const blobUrl = url.createObjectURL(image.data);
+document.getElementById(imageElement).setAttribute("src", blobUrl);
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,11 +1,14 @@
 ---
-title: "Integrate your iOS app with the client-side SDK for user notifications"
-description: "Integrate your iOS app with user notifications client SDK."
-localization_priority: Priority
+title: "Integrate your iOS app with the client-side SDK (deprecated)"
+description: "After you register your app and onboard your cross-device experiences, integrate your client app with the client-side SDK for iOS apps (deprecated)."
+ms.localizationpriority: high
 ms.prod: "notifications"
 ---
 
-# Integrate your iOS app with the client-side SDK for user notifications
+# Integrate your iOS app with the client-side SDK for user notifications (deprecated)
+
+> [!IMPORTANT]
+> The Microsoft Graph notifications API is deprecated and stopped returning data in January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs). For more information, see the blog post [Retiring Microsoft Graph notifications API (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 After you [register your app](notifications-integration-app-registration.md) in the Azure Portal and onboard your [cross-device experiences](notifications-integration-cross-device-experiences-onboarding.md) in the Partner Dev Center, the next step is to integrate your client app with the client-side SDK for iOS apps.  
 

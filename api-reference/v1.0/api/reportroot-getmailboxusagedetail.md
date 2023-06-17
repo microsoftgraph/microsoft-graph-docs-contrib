@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getMailboxUsageDetail"
 description: "Get details about mailbox usage."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -73,6 +73,8 @@ The CSV file has the following headers for columns.
 - Prohibit Send/Receive Quota (Byte)
 - Deleted Item Count
 - Deleted Item Size (Byte)
+- Deleted Item Quota (Byte)
+- Has Archive
 - Report Period
 
 ## Example
@@ -88,7 +90,7 @@ The following is an example of the request.
   "name": "reportroot_getmailboxusageuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getMailboxUsageDetail(period='D7')
 ```
 

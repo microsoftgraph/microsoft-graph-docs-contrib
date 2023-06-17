@@ -1,9 +1,9 @@
 ---
 title: "website resource type"
 description: "Represents a website."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "AAmatino"
-ms.prod: ""
+ms.prod: applications
 doc_type: resourcePageType
 ---
 
@@ -17,9 +17,9 @@ Represents a website.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|websiteType| The possible values are: `other`, `home`, `work`, `blog`, `profile`.|
 |address|string|The URL of the website.|
 |displayName|string|The display name of the web site.|
+|type|websiteType| The possible values are: `other`, `home`, `work`, `blog`, `profile`.|
 
 ## JSON representation
 
@@ -35,9 +35,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "type": "String",
   "address": "string",
-  "displayName": "string"
+  "displayName": "string",
+  "type": "String"
 }
 
 ```

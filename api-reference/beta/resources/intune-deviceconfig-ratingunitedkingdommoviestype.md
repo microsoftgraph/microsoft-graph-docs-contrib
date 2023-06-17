@@ -1,7 +1,7 @@
 ---
 title: "ratingUnitedKingdomMoviesType enum type"
 description: "Movies rating labels in United Kingdom"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -29,9 +29,3 @@ Movies rating labels in United Kingdom
 |agesAbove12Cinema|6|12A, cinema release suitable for 12 years and over|
 |agesAbove15|7|15, suitable only for 15 years and older|
 |adults|8|Suitable only for adults|
-
-
-
-
-
-

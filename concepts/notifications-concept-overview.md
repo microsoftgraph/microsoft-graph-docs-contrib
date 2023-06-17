@@ -1,19 +1,22 @@
 ---
-title: "Enabling human-centric notification experiences using Microsoft Graph notifications "
-description: "The Microsoft Graph notifications platform provides a human-centric approach that gives you the ability to target your users across any and all device endpoints."
-localization_priority: Priority
+title: "Enabling human-centric notification experiences (deprecated)"
+description: "The Microsoft Graph notifications API stopped returning data in January 2022. For an alternative experience, see the Azure Notification Hubs documentation."
+ms.localizationpriority: high
 ms.prod: "notifications"
 ms.custom: scenarios:getting-started
 author: "merzink"
 ---
 
-# Enabling human-centric notification experiences using Microsoft Graph notifications
+# Enabling human-centric notification experiences using Microsoft Graph notifications (deprecated)
+
+> [!IMPORTANT]
+> The Microsoft Graph notifications API is deprecated and stopped returning data in January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs). For more information, see the blog post [Retiring Microsoft Graph notifications API (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 Notifications are one of the most effective ways to reengage with your application users. A great notification experience can help open a near real-time communication channel between you and your users, and that in turn can increase app engagement at the right time, make users more productive, and alert them to important events or required actions.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/cmpPFhrS8ZA]
 
-Today, users can access your applications and services via a wide variety of platforms and form factors. This mix of devices requires that you understand and support multiplatform notification systems, map users to endpoints, and maintain notification state across devices. 
+Today, users can access your applications and services via a wide variety of platforms and form factors. This mix of devices requires that you understand and support multiplatform notification systems, map users to endpoints, and maintain notification state across devices.
 
 Most other notification systems eliminate the need to understand and target platform-specific push notification systems, but are still  designed to target each device. The Microsoft Graph notifications platform provides a human-centric approach that gives you the ability to target your users across any and all device endpoints.
 
@@ -29,7 +32,7 @@ You can use the notifications API to target a personal Microsoft account or a wo
 
 ### Easily manage notifications across endpoints
 
-Using the new and improved [notifications client SDK](https://aka.ms/GNSDK) within your client application, you can update the state of a notification and sync that state across all endpoints. For example, when a user acts on a notification on one device, you can update the state of this notification (such as marking it as read or dismissed), and the same state change will be distributed to all other endpoints. The Microsoft Graph notifications API tracks the state of your user’s notifications in a centralized way, making it easy for you to ensure that your notifications are handled once, and dismissed everywhere, thereby minimizing redundancy and ensuring a great customer experience.
+Using the new and improved [notifications client SDK](https://aka.ms/GNSDK) within your client application, you can update the state of a notification and sync that state across all endpoints. For example, when a user acts on a notification on one device, you can update the state of this notification (such as marking it as read or dismissed), and the same state change will be distributed to all other endpoints. The Microsoft Graph notifications API tracks the state of your user's notifications in a centralized way, making it easy for you to ensure that your notifications are handled once, and dismissed everywhere, thereby minimizing redundancy and ensuring a great customer experience.
 
 ### Retrieve notification state and history
 
@@ -50,4 +53,4 @@ To get started, see the [integration overview](notifications-integration-e2e-ove
 ## API reference
 Looking for the API reference for this service?
 
-- [Use the notifications REST API in Microsoft Graph](/graph/api/resources/notifications-api-overview?view=graph-rest-beta)
+- [Use the notifications REST API in Microsoft Graph](/graph/api/resources/notifications-api-overview?view=graph-rest-beta&preserve-view=true)

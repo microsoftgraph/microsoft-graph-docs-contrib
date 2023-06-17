@@ -1,10 +1,10 @@
 ---
 title: "targetResource resource complex type - Microsoft Graph API"
 description: "Defines the targetResource entity resource complex type of the Microsoft Graph API which supports audit log reporting organization (tenant) activity."
-author: "cloudhandler"
-localization_priority: Normal
+author: "besiler"
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 ---
 
 # targetResource resource type
@@ -22,7 +22,7 @@ Represents target resource types associated with audit activity.
 |displayName|String|Indicates the visible name defined for the resource. Typically specified when the resource is created.|
 |type|String|Describes the resource type.  Example values include `Application`, `Group`, `ServicePrincipal`, and `User`.|
 |userPrincipalName|String|When **type** is set to `User`, this includes the user name that initiated the action; `null` for other types.|
-|groupType|String|When **type** is set to `Group`, this indicates the group type.|
+|groupType|groupType|When **type** is set to `Group`, this indicates the group type.  Possible values are: `unifiedGroups`, `azureAD`, and `unknownFutureValue`|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Indicates name, old value and new value of each attribute that changed. Property values depend on the operation **type**.|
 
 ## JSON representation

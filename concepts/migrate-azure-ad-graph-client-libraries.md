@@ -1,22 +1,25 @@
 ---
-title: "Migrate Azure AD Graph .NET apps to Microsoft Graph"
-description: "Describes how to migrate Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
-author: "dkershaw10"
-localization_priority: Normal
-ms.prod: "azure-active-directory"
+title: "Migrate Azure Active Directory (Azure AD) Graph .NET apps to Microsoft Graph"
+description: "Describes how to migrate Azure Active Directory (Azure AD) Graph API apps to Microsoft Graph API."
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
+ms.localizationpriority: medium
+ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Migrate .NET client library use to Microsoft Graph
 
 This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-If your app currently uses the Azure AD Graph client library, switch to the [Microsoft Graph .NET client library](https://github.com/microsoftgraph/msgraph-sdk-dotnet).
+If your app currently uses the Azure Active Directory (Azure AD) Graph client library, switch to the [Microsoft Graph .NET client library](https://github.com/microsoftgraph/msgraph-sdk-dotnet).
 
 >NOTE: The Microsoft Graph .NET client library is only supported for .NET Framework 4.5 and .NET Standard 1.1.  However please consult Microsoft Graph .NET client library for the latest support information.
 
 Here, we'll look at some general steps to migrate over to the Microsoft Graph .NET client library:
 
-- How to create a Microsoft Graph client, given an access token (that you can acquire using ADAL or MSAL)
+- How to create a Microsoft Graph client, given an access token (that you can acquire using either Azure Active Directory Authentication Library (ADAL) or Microsoft Authentication Library (MSAL))
 - How to formulate requests
 - How to use query builders
 - How to handle collections and paging  

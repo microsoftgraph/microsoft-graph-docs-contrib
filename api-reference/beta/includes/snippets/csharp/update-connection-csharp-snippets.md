@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var externalConnection = new ExternalConnection
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalConnection
 {
 	Name = "Contoso HR Service Tickets",
-	Description = "Connection to index HR service tickets"
+	Description = "Connection to index HR service tickets",
 };
+var result = await graphClient.External.Connections["{externalConnection-id}"].PatchAsync(requestBody);
 
-await graphClient.Connections["contosohr"]
-	.Request()
-	.UpdateAsync(externalConnection);
 
 ```

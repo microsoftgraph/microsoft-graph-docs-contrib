@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var @event = new Event
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Event
 {
 	Location = new Location
 	{
-		DisplayName = "Conf Room 2"
-	}
+		DisplayName = "Conf Room 2",
+	},
 };
+var result = await graphClient.Groups["{group-id}"].Calendar.Events["{event-id}"].PatchAsync(requestBody);
 
-await graphClient.Groups["01d4ee64-15ce-491e-bad1-b91aa3223df4"].Calendar.Events["AAMkADZlAAAAABERAAA="]
-	.Request()
-	.UpdateAsync(@event);
 
 ```

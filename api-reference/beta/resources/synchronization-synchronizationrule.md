@@ -1,10 +1,10 @@
 ---
 title: "synchronizationRule resource type"
 description: "Defines how the synchronization should be performed for the synchronization engine."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationRule resource type
@@ -48,14 +48,21 @@ The following is a JSON representation of the resource.
 {
   "editable": true,
   "id": "String",
-  "metadata": [{"@odata.type": "microsoft.graph.stringKeyStringValuePair"}],
+  "metadata": [
+    {
+      "@odata.type": "microsoft.graph.stringKeyStringValuePair"
+    }
+  ],
   "name": "String",
-  "objectMappings": [{"@odata.type": "microsoft.graph.objectMapping"}],
+  "objectMappings": [
+    {
+      "@odata.type": "microsoft.graph.objectMapping"
+    }
+  ],
   "priority": 1024,
   "sourceDirectoryName": "String",
   "targetDirectoryName": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,0 +1,31 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphidentity "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "microsoft.graph.countryNamedLocation/countriesAndRegions/any"
+
+requestParameters := &graphidentity.IdentityConditionalAccessNamedLocationsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
+}
+configuration := &graphidentity.IdentityConditionalAccessNamedLocationsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+}
+
+result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(context.Background(), configuration)
+
+
+```

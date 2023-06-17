@@ -1,10 +1,10 @@
 ---
-title: itemCategories resource type 
-description: An item category in Dynamics 365 Business Central.
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
-localization_priority: Normal
+title: "itemCategories resource type"
+description: "Represents a category for a number of items in Dynamics 365 Business Central."
+services: "project-madeira"
+documentationcenter: ""
+author: "SusanneWindfeldPedersen"
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---
@@ -21,35 +21,34 @@ Represents a category for a number of items in Dynamics 365 Business Central.
 
 | Method                                                          | Return Type  |Description             |
 |:----------------------------------------------------------------|:-------------|:-----------------------|
-|[Get itemCategories](../api/dynamics-itemcategories-get.md)      |itemCategories|Get an item category.   |
-|[Post itemCategories](../api/dynamics-create-itemcategories.md)  |itemCategories|Create an item category.|
-|[Patch itemCategories](../api/dynamics-itemcategories-update.md) |itemCategories|Update an item category.|
-|[Delete itemCategories](../api/dynamics-itemcategories-delete.md)|none          |Delete an item category.|
+|[Get itemCategories](../api/dynamics-itemcategories-get.md)      |[itemCategories](dynamics-itemcategories.md)|Get an item category.   |
+|[Post itemCategories](../api/dynamics-create-itemcategories.md)  |[itemCategories](dynamics-itemcategories.md)|Create an item category.|
+|[Patch itemCategories](../api/dynamics-itemcategories-update.md) |[itemCategories](dynamics-itemcategories.md)|Update an item category.|
+|[Delete itemCategories](../api/dynamics-itemcategories-delete.md)|None          |Delete an item category.|
 
 ## Properties
+
 | Property	         | Type	  |Description                                     |
 |:-------------------|:-------|:-----------------------------------------------|
-|id                  |GUID    |The unique ID of the itemCategory. Non-editable.|
-|code                |string  |The itemCategory code.                          |
-|displayName         |string  |The itemCategories display name.                |
-|lastModifiedDateTime|datetime|The last datetime the itemCategory was modified. Read-Only.|  
+|code                |String  |The item category code.                          |
+|displayName         |String  |The display name of the item category.                |
+|id                  |String  |The unique ID of the item category. Non-editable.|
+|lastModifiedDateTime|Datetime|The date and time when the item category was last modified. Read-Only.|  
 
 
 ## Relationships
-None
+
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the itemCategories.
+The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "GUID",
-  "code": "string",
-  "displayName": "string",
-  "lastModifiedDateTime": "datetime"
+  "code": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "lastModifiedDateTime": "Datetime"
 }
 ```
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "Update windowsMicrosoftEdgeApp"
 description: "Update the properties of a windowsMicrosoftEdgeApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -70,7 +70,7 @@ The following table shows the properties that are required when you create the [
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|The channel to install on target devices. Possible values are: `dev`, `beta`, `stable`.|
+|channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|The channel to install on target devices. The possible values are dev, beta, and stable. By default, this property is set to dev. Possible values are: `dev`, `beta`, `stable`, `unknownFutureValue`.|
 |displayLanguageLocale|String|The language locale to use when the Edge app displays text to the user.|
 
 
@@ -156,9 +156,3 @@ Content-Length: 1034
   "displayLanguageLocale": "Display Language Locale value"
 }
 ```
-
-
-
-
-
-

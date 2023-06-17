@@ -1,7 +1,7 @@
 ---
 title: "androidManagedStoreAccountEnterpriseSettings resource type"
 description: "Enterprise settings for an Android managed store account."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -29,6 +29,7 @@ Enterprise settings for an Android managed store account.
 |[unbind action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|None|Not yet documented|
 |[createGooglePlayWebToken action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|Generates a web token that is used in an embeddable component.|
 |[setAndroidDeviceOwnerFullyManagedEnrollmentState action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|None|Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled to the given value.|
+|[addApps action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-addapps.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -45,6 +46,7 @@ Enterprise settings for an Android managed store account.
 |deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 |companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md) collection|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
 |androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
+|managedGooglePlayInitialScopeTagIds|String collection|Initial scope tags for MGP apps|
 
 ## Relationships
 None
@@ -84,12 +86,9 @@ Here is a JSON representation of the resource.
       }
     }
   ],
-  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true,
+  "managedGooglePlayInitialScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
-
-
-
-
-

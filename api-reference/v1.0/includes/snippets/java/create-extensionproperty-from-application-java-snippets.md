@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ExtensionProperty extensionProperty = new ExtensionProperty();
-extensionProperty.name = "extensionName";
-extensionProperty.dataType = "string";
+extensionProperty.name = "jobGroup";
+extensionProperty.dataType = "String";
 LinkedList<String> targetObjectsList = new LinkedList<String>();
-targetObjectsList.add("Application");
+targetObjectsList.add("User");
 extensionProperty.targetObjects = targetObjectsList;
 
-graphClient.applications("{id}").extensionProperties()
+graphClient.applications("fd918e4b-c821-4efb-b50a-5eddd23afc6f").extensionProperties()
 	.buildRequest()
 	.post(extensionProperty);
 

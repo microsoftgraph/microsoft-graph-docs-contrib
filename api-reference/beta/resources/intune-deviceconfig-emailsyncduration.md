@@ -1,7 +1,7 @@
 ---
 title: "emailSyncDuration enum type"
 description: "Possible values for email sync duration."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -27,9 +27,3 @@ Possible values for email sync duration.
 |twoWeeks|4|Sync two weeks of email.|
 |oneMonth|5|Sync one month of email.|
 |unlimited|6|Sync an unlimited duration of email.|
-
-
-
-
-
-

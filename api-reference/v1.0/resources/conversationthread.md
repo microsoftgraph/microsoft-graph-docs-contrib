@@ -1,8 +1,8 @@
 ---
 title: "conversationThread resource type"
 description: "A conversationThread is a collection of posts."
-author: "dkershaw10"
-localization_priority: Normal
+author: "mikemcleanlive"
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
@@ -31,18 +31,19 @@ A new thread is created when a recipient is removed from the thread.
 ## Properties
 | Property              | Type                                 | Description                                                                                                                                                                                      |
 |:----------------------|:-------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| id                    | String                               | Read-only.                                                                                                                                                                                       |
-| toRecipients          | [recipient](recipient.md) collection | The To: recipients for the thread.                                                                                                                                                               |
-| ccRecipients          | [recipient](recipient.md) collection | The Cc: recipients for the thread.                                                                                                                                                               |
-| topic                 | String                               | The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.                                                                              |
-| hasAttachments        | Boolean                              | Indicates whether any of the posts within this thread has at least one attachment.                                                                                                               |
-| lastDeliveredDateTime | DateTimeOffset                       | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
-| uniqueSenders         | String collection                    | All the users that sent a message to this thread.                                                                                                                                                |
-| preview               | String                               | A short summary from the body of the latest post in this conversation.                                                                                                                           |
-| isLocked              | Boolean                              | Indicates if the thread is locked.                                                                                                                                                               |
+| ccRecipients          | [recipient](recipient.md) collection | The Cc: recipients for the thread. <br/><br/>Returned only on `$select`.                                                                                                                                                               |
+| hasAttachments        | Boolean                              | Indicates whether any of the posts within this thread has at least one attachment. <br/><br/>Returned by default.                                                                                                              |
+| id                    | String                               | Read-only. <br/><br/>Returned by default.                                                                                                                                                                                      |
+| isLocked              | Boolean                              | Indicates if the thread is locked. <br/><br/>Returned by default.                                                                                                                                                              |
+| lastDeliveredDateTime | DateTimeOffset                       | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.<br/><br/>Returned by default. |
+| preview               | String                               | A short summary from the body of the latest post in this conversation. <br/><br/>Returned by default.                                                                                                                           |
+| topic                 | String                               | The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. <br/><br/>Returned by default.                                                                              |
+| toRecipients          | [recipient](recipient.md) collection | The To: recipients for the thread. <br/><br/>Returned only on `$select`.                                                                                                                                                              |
+| uniqueSenders         | String collection                    | All the users that sent a message to this thread. <br/><br/>Returned by default.                                                                                                                                               |
+
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |posts|[post](post.md) collection| Read-only. Nullable.|
 
@@ -80,8 +81,8 @@ Here is a JSON representation of the resource
   "isLocked": true,
   "lastDeliveredDateTime": "String (timestamp)",
   "preview": "string",
-  "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "topic": "string",
+  "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "uniqueSenders": ["string"]
 }
 

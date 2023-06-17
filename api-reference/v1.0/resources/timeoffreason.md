@@ -1,17 +1,17 @@
 ---
 title: "timeOffReason resource type"
-description: "Represents a valid reason to take time-off in the schedule."
+description: "Represents a valid reason to take time off in a schedule."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
-doc_type: resourcePageType_
+doc_type: resourcePageType
 ---
 
 # timeOffReason resource type
 
 Namespace: microsoft.graph
 
-Represents a valid reason to for a [timeOff](timeoff.md) instance in a [schedule](schedule.md).
+Represents a valid reason to take [time off](timeoff.md) in a [schedule](schedule.md).
 
 ## Methods
 
@@ -24,15 +24,15 @@ Represents a valid reason to for a [timeOff](timeoff.md) instance in a [schedule
 |[Delete](../api/timeoffreason-delete.md) | None | Mark a **timeOffReason** as inactive.|
 
 ## Properties
-|Name          |Type           |Description                                                                                 |
+|Property          |Type           |Description                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
-| id			|`string`      |ID of the `timeOffReason`.|
-| displayName               | `string`                  | The name of the **timeOffReason**. Required. |
-| iconType | `timeOffReasonIconType`   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. Required. |
-| isActive 			|`Boolean`      | Indicates whether the **timeOffReason** can be used when creating new entities or updating existing ones. Required. |
-| createdDateTime		|`DateTimeOffset`        |The time stamp on which this **timeOffReason** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime		|`DateTimeOffset`         |The time stamp on which this **timeOffReason** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
+| createdDateTime		| DateTimeOffset        |The time stamp on which this **timeOffReason** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| displayName               | String                  | The name of the **timeOffReason**. Required. |
+| iconType | timeOffReasonIconType   | Supported icon types are: `none`, `car`, `calendar,` `running`, `plane`, `firstAid`, `doctor`, `notWorking`, `clock`, `juryDuty`, `globe`, `cup`, `phone`, `weather`, `umbrella`, `piggyBank`, `dog`, `cake`, `trafficCone`, `pin`, `sunny`. Required. |
+| id			| String      |Unique identifier for the time-off reason.|
+| isActive 			| Boolean      | Indicates whether the **timeOffReason** can be used when creating new entities or updating existing ones. Required. |
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **timeOffReason**.|
+| lastModifiedDateTime		| DateTimeOffset         |The time stamp on which this **timeOffReason** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 
 ## JSON representation
 
@@ -47,13 +47,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String",
+  
   "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
   "displayName": "String",
   "iconType": "String",
-  "isActive": true,
-  "lastModifiedBy": { "@odata.type":"microsoft.graph.identitySet"}
+  "id": "String (identifier)",
+  "isActive": "Boolean",
+  "lastModifiedBy": { "@odata.type":"microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
 

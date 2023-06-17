@@ -1,7 +1,7 @@
 ---
 title: "feedbackTokenSet resource type"
 description: "The feedbackTokenSet type"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
@@ -32,11 +32,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "DistortedSpeech": true,
-  "ElectronicFeedback": false,
   "BackgroundNoise": true,
-  "MuffledSpeech": true,
-  "Echo": false
+  "DistortedSpeech": true,
+  "Echo": false,
+  "ElectronicFeedback": false,
+  "MuffledSpeech": true
 }
 ```
 

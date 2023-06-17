@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-await graphClient.Identity.ConditionalAccess.NamedLocations["0854951d-5fc0-4eb1-b392-9b2c9d7949c2"]
-	.Request()
-	.DeleteAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+await graphClient.Identity.ConditionalAccess.NamedLocations["{namedLocation-id}"].DeleteAsync();
+
 
 ```

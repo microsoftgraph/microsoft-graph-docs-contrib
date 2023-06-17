@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-await graphClient.AppCatalogs.TeamsApps["06805b9e-77e3-4b93-ac81-525eb87513b8"]
-	.Request()
-	.DeleteAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+await graphClient.AppCatalogs.TeamsApps["{teamsApp-id}"].DeleteAsync();
+
 
 ```

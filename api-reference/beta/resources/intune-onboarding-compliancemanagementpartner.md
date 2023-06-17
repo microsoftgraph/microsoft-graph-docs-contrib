@@ -1,7 +1,7 @@
 ---
 title: "complianceManagementPartner resource type"
 description: "Compliance management partner for all platforms"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -34,11 +34,9 @@ Compliance management partner for all platforms
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Partner display name|
 |macOsOnboarded|Boolean|Partner onboarded for Mac devices.|
-|windowsOnboarded|Boolean|Partner onboarded for Windows devices.|
 |androidOnboarded|Boolean|Partner onboarded for Android devices.|
 |iosOnboarded|Boolean|Partner onboarded for ios devices.|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection|User groups which enroll Mac devices through partner.|
-|windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection|User groups which enroll Windows devices through partner.|
 |androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection|User groups which enroll Android devices through partner.|
 |iosEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) collection|User groups which enroll ios devices through partner.|
 
@@ -61,26 +59,16 @@ Here is a JSON representation of the resource.
   "partnerState": "String",
   "displayName": "String",
   "macOsOnboarded": true,
-  "windowsOnboarded": true,
   "androidOnboarded": true,
   "iosOnboarded": true,
   "macOsEnrollmentAssignments": [
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "String",
-        "deviceAndAppManagementAssignmentFilterType": "String"
-      }
-    }
-  ],
-  "windowsEnrollmentAssignments": [
-    {
-      "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
-      "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "String",
-        "deviceAndAppManagementAssignmentFilterType": "String"
+        "deviceAndAppManagementAssignmentFilterType": "String",
+        "collectionId": "String"
       }
     }
   ],
@@ -88,9 +76,10 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "String",
-        "deviceAndAppManagementAssignmentFilterType": "String"
+        "deviceAndAppManagementAssignmentFilterType": "String",
+        "collectionId": "String"
       }
     }
   ],
@@ -98,17 +87,12 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "String",
-        "deviceAndAppManagementAssignmentFilterType": "String"
+        "deviceAndAppManagementAssignmentFilterType": "String",
+        "collectionId": "String"
       }
     }
   ]
 }
 ```
-
-
-
-
-
-

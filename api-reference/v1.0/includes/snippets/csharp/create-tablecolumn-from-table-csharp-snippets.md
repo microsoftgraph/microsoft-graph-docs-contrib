@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workbookTableColumn = new WorkbookTableColumn
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new WorkbookTableColumn
 {
-	Id = 99,
+	Id = "99",
 	Name = "name-value",
 	Index = 99,
-	Values = "values-value"
+	Values = "values-value",
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns.PostAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns
-	.Request()
-	.AddAsync(workbookTableColumn);
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "iosMinimumOperatingSystem resource type"
 description: "Contains properties of the minimum operating system required for an iOS mobile app."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -20,12 +20,15 @@ Contains properties of the minimum operating system required for an iOS mobile a
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|v8_0|Boolean|Version 8.0 or later.|
-|v9_0|Boolean|Version 9.0 or later.|
-|v10_0|Boolean|Version 10.0 or later.|
-|v11_0|Boolean|Version 11.0 or later.|
-|v12_0|Boolean|Version 12.0 or later.|
-|v13_0|Boolean|Version 13.0 or later.|
+|v8_0|Boolean|When TRUE, only Version 8.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
+|v9_0|Boolean|When TRUE, only Version 9.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
+|v10_0|Boolean|When TRUE, only Version 10.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
+|v11_0|Boolean|When TRUE, only Version 11.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
+|v12_0|Boolean|When TRUE, only Version 12.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
+|v13_0|Boolean|When TRUE, only Version 13.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
+|v14_0|Boolean|When TRUE, only Version 14.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
+|v15_0|Boolean|When TRUE, only Version 15.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
+|v16_0|Boolean|When TRUE, only Version 16.0 or later is supported. Default value is FALSE. Exactly one of the minimum operating system boolean values will be TRUE.|
 
 ## Relationships
 None
@@ -45,12 +48,9 @@ Here is a JSON representation of the resource.
   "v10_0": true,
   "v11_0": true,
   "v12_0": true,
-  "v13_0": true
+  "v13_0": true,
+  "v14_0": true,
+  "v15_0": true,
+  "v16_0": true
 }
 ```
-
-
-
-
-
-

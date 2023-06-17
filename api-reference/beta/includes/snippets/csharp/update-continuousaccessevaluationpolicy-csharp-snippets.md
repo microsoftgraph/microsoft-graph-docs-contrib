@@ -4,23 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var continuousAccessEvaluationPolicy = new ContinuousAccessEvaluationPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ContinuousAccessEvaluationPolicy
 {
-	Users = new List<String>()
-	{
-		"88139f01-1f8d-4c06-ad74-a2544cee9aee"
-	},
-	Groups = new List<String>()
-	{
-		"9972fb3f-7a40-49f5-85f6-129d9dfbd47a",
-		"ea178055-4713-4d9a-a06c-ff17466b7e77"
-	}
+	OdataType = "#microsoft.graph.continuousAccessEvaluationPolicy",
+	Migrate = true,
 };
+var result = await graphClient.Identity.ContinuousAccessEvaluationPolicy.PatchAsync(requestBody);
 
-await graphClient.Identity.ContinuousAccessEvaluationPolicy
-	.Request()
-	.UpdateAsync(continuousAccessEvaluationPolicy);
 
 ```

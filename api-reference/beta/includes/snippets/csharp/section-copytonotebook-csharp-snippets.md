@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var id = "id-value";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var groupId = "groupId-value";
+var requestBody = new Microsoft.Graph.Beta.Me.Onenote.Sections.Item.CopyToNotebook.CopyToNotebookPostRequestBody
+{
+	Id = "id-value",
+	GroupId = "groupId-value",
+	RenameAs = "renameAs-value",
+};
+var result = await graphClient.Me.Onenote.Sections["{onenoteSection-id}"].CopyToNotebook.PostAsync(requestBody);
 
-var renameAs = "renameAs-value";
-
-await graphClient.Me.Onenote.Sections["{id}"]
-	.CopyToNotebook(id,groupId,renameAs,null,null)
-	.Request()
-	.PostAsync();
 
 ```

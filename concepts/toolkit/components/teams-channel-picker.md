@@ -1,11 +1,11 @@
 ---
-title: "Microsoft Teams Channel Picker component in the Microsoft Graph Toolkit"
-description: "You can use mgt-teams-channel-picker to search for channels and teams associated with the user from the Microsoft Graph."
-localization_priority: Normal
-author: vogtn
+title: "Microsoft Teams Channel Picker component in Microsoft Graph Toolkit"
+description: "You can use mgt-teams-channel-picker to search for channels and teams associated with the user from Microsoft Graph."
+ms.localizationpriority: medium
+author: sebastienlevert
 ---
 
-# Microsoft Teams Channel Picker component in the Microsoft Graph Toolkit
+# Microsoft Teams Channel Picker component in Microsoft Graph Toolkit
 
 A you can use the `mgt-teams-channel-picker` component to enable searches for Microsoft Teams channels associated with a user. The component can search all teams the user has joined, and each channel in those teams. 
 
@@ -19,7 +19,7 @@ The following example shows the `mgt-teams-channel-picker` component. Start sear
 
 ## Getting the selected channel
 
-Use the `selectedItem` property to retrieve the currently selected channel and parent team. This value will be null if no channel has been selected. `selectedItem` contains two properties: `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)) and `team` ([MicrosoftGraph.Team](/graph/api/resources/team?view=graph-rest-1.0)).
+Use the `selectedItem` property to retrieve the currently selected channel and parent team. This value will be null if no channel has been selected. `selectedItem` contains two properties: `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel)) and `team` ([MicrosoftGraph.Team](/graph/api/resources/team)).
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -57,33 +57,36 @@ mgt-teams-channel-picker {
     --input-border-top: 2px rgba(255, 255, 255, 0.5) solid;
 
     --input-background-color: #1f1f1f; /* input area background color */
-    --input-hover-color: #008394; /* input area border hover color */
-    --input-focus-color: #0f78d4; /* input area border focus color */
+    --input-border-color--hover: #008394; /* input area border hover color */
+    --input-border-color--focus: #0f78d4; /* input area border focus color */
 
     --dropdown-background-color: #1f1f1f; /* channel background color */
     --dropdown-item-hover-background: #333d47; /* channel or team hover background */
     --dropdown-item-selected-background: #0F78D4; /* selected channel background color */
 
-    --font-color: white; /* input area border focus color */
+    --color: white; /* input area border focus color */
     --arrow-fill: #ffffff;
-    --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* place holder text focus color */
+    --placeholder-color: #f1f1f1; /* placeholder text color */
+    --placeholder-color--focus: rgba(255, 255, 255, 0.8); /* place holder text focus color */
 }
 ```
 
 ## Events
-| Event | Detail | Description |
-| --- | --- | --- |
-| selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team?view=graph-rest-1.0)`}` | Fired when user makes a change in selection of a channel. |
+
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`selectionChanged` | Fired when user makes a change in selection of a channel | The currently selected item as `{ channel: `[channel](/graph/api/resources/channel)`, team: `[team](/graph/api/resources/team)`}` | No | No | Yes
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
- `mgt-teams-channel-picker` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+`mgt-teams-channel-picker` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
 | loading | null: no data | The template used to render the state of the picker while the request to Microsoft Graph is being made. |
 | error | null: no data| The template used if user search returns no users. |
-
 
 The following example shows how to use the `error` template.
 
@@ -97,16 +100,37 @@ The following example shows how to use the `error` template.
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions.
+This component uses the following Microsoft Graph APIs and permissions by default.
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0)                    | User.Read.All        |
-| [/teams/${id}/channels](/graph/api/channel-list?view=graph-rest-1.0) | Group.Read.All        |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
+| [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
+
+In version 2.2, the required permissions have been updated to the less restrictive Teams-based permissions. To avoid a breaking change, you need to opt in to the new permissions via a global config.
+
+```ts
+import {MgtTeamsChannelPicker} from "@microsoft/mgt-components";
+
+MgtTeamsChannelPicker.config.useTeamsBasedScopes = true;
+```
+
+With `useTeamsBasedScopes` set to `true`, the Teams Channel Picker will use the following scopes. 
+
+| API                                                                                                              | Permission  |
+| ---------------------------------------------------------------------------------------------------------------- | ----------- |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | Team.ReadBasic.All        |
+| [/teams/${id}/channels](/graph/api/channel-list) | Channel.ReadBasic.All        |
+
+These will be the default permissions in the next major update.
 
 ## Authentication
 
-The control uses the global authentication provider described in the [authentication documentation](./../providers.md).
+The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
+
+## Cache
+
+The `mgt-teams-channel-picker` component doesn't cache any data.
 
 ## Extend for more control
 

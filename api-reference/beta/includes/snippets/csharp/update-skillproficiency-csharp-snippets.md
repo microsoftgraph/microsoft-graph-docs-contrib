@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var skillProficiency = new SkillProficiency
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new SkillProficiency
 {
-	Categories = new List<String>()
+	Categories = new List<string>
 	{
-		"Professional"
+		"Professional",
 	},
-	Proficiency = SkillProficiencyLevel.AdvancedProfessional
+	Proficiency = SkillProficiencyLevel.AdvancedProfessional,
 };
+var result = await graphClient.Me.Profile.Skills["{skillProficiency-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Profile.Skills["{id}"]
-	.Request()
-	.UpdateAsync(skillProficiency);
 
 ```

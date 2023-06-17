@@ -4,14 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AdministrativeUnit administrativeUnit = new AdministrativeUnit();
-administrativeUnit.displayName = "displayName-value";
-administrativeUnit.description = "description-value";
-administrativeUnit.visibility = "visibility-value";
+administrativeUnit.displayName = "Greater Seattle District Technical Schools";
 
-graphClient.directory().administrativeUnits("{id}")
+graphClient.directory().administrativeUnits("4d7ea995-bc0f-45c0-8c3e-132e93bf95f8")
 	.buildRequest()
 	.patch(administrativeUnit);
 

@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var directorySetting = new DirectorySetting
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new DirectorySetting
 {
-	Values = new List<SettingValue>()
+	Values = new List<SettingValue>
 	{
 		new SettingValue
 		{
-			Name = "name-value",
-			Value = "value-value"
-		}
-	}
+			Name = "CustomBlockedWordsList",
+			Value = "Contoso",
+		},
+	},
 };
+var result = await graphClient.Settings["{directorySetting-id}"].PatchAsync(requestBody);
 
-await graphClient.Settings["{id}"]
-	.Request()
-	.UpdateAsync(directorySetting);
 
 ```

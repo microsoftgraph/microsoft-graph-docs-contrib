@@ -2,7 +2,7 @@
 title: "Range: BoundingRect"
 description: "."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -24,9 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/boundingRect
-GET /workbook/worksheets/{id|name}/range(address='<address>')/boundingRect
-GET /workbook/tables/{id|name}/columns/{id|name}/range/boundingRect
+GET /me/drive/items/{id}/workbook/names/{name}/range/boundingRect
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/boundingRect
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/boundingRect
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/boundingRect
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/boundingRect
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/boundingRect
 
 ```
 ## Request headers
@@ -58,7 +61,6 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/boundingRect
 Content-type: application/json
-Content-length: 42
 
 {
   "anotherRange": "anotherRange-value"
@@ -66,7 +68,7 @@ Content-length: 42
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,7 +77,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

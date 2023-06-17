@@ -4,25 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var credentials = new List<SynchronizationSecretKeyStringValuePair>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronization.Jobs.Item.ValidateCredentials.ValidateCredentialsPostRequestBody
 {
-	new SynchronizationSecretKeyStringValuePair
+	Credentials = new List<SynchronizationSecretKeyStringValuePair>
 	{
-		Key = SynchronizationSecret.UserName,
-		Value = "user@domain.com"
+		new SynchronizationSecretKeyStringValuePair
+		{
+			Key = SynchronizationSecret.UserName,
+			Value = "user@domain.com",
+		},
+		new SynchronizationSecretKeyStringValuePair
+		{
+			Key = SynchronizationSecret.Password,
+			Value = "password-value",
+		},
 	},
-	new SynchronizationSecretKeyStringValuePair
-	{
-		Key = SynchronizationSecret.Password,
-		Value = "password-value"
-	}
 };
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"].ValidateCredentials.PostAsync(requestBody);
 
-await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{id}"]
-	.ValidateCredentials(null,null,null,credentials)
-	.Request()
-	.PostAsync();
 
 ```

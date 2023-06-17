@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var governanceRoleSetting = new GovernanceRoleSetting
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new GovernanceRoleSetting
 {
-	AdminEligibleSettings = new List<GovernanceRuleSetting>()
+	AdminEligibleSettings = new List<GovernanceRuleSetting>
 	{
 		new GovernanceRuleSetting
 		{
 			RuleIdentifier = "ExpirationRule",
-			Setting = "{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}"
-		}
-	}
+			Setting = "{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}",
+		},
+	},
 };
+var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleSettings["{governanceRoleSetting-id}"].PatchAsync(requestBody);
 
-await graphClient.PrivilegedAccess["azureResources"].RoleSettings["5fb5aef8-1081-4b8e-bb16-9d5d0385bab5"]
-	.Request()
-	.UpdateAsync(governanceRoleSetting);
 
 ```

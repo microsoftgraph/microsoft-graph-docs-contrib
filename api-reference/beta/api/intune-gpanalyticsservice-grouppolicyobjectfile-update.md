@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyObjectFile"
 description: "Update the properties of a groupPolicyObjectFile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -54,6 +54,7 @@ The following table shows the properties that are required when you create the [
 |createdDateTime|DateTimeOffset|The date and time at which the GroupPolicy was first uploaded.|
 |lastModifiedDateTime|DateTimeOffset|The date and time at which the GroupPolicyObjectFile was last modified.|
 |content|String|The Group Policy Object file content.|
+|roleScopeTagIds|String collection|The list of scope tags for the configuration.|
 
 
 
@@ -67,13 +68,16 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 Content-type: application/json
-Content-length: 217
+Content-length: 279
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyObjectFile",
   "groupPolicyObjectId": "ca1c97af-97af-ca1c-af97-1ccaaf971cca",
   "ouDistinguishedName": "Ou Distinguished Name value",
-  "content": "Content value"
+  "content": "Content value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -82,7 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 389
+Content-Length: 451
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyObjectFile",
@@ -91,12 +95,9 @@ Content-Length: 389
   "ouDistinguishedName": "Ou Distinguished Name value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "content": "Content value"
+  "content": "Content value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
-
-
-
-
-

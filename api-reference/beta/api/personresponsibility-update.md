@@ -2,7 +2,7 @@
 title: "Update personResponsibility"
 description: "Update the properties of a personResponsibility object."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: apiPageType
 ---
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Application                            | User.Read.All, User.ReadWrite.All                            |
 
 ## HTTP request
 
@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /me/profile/responsibilities/{id}
-PATCH /users/{id | userPrincipalName}/profile/responsibilities/{id}
+PATCH /me/responsibilities/{id}
+PATCH /users/{id | userPrincipalName}/responsibilities/{id}
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 ## Examples
 
 ### Request
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f"],
@@ -70,9 +70,8 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/me/profile/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
+PATCH https://graph.microsoft.com/beta/me/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
 Content-Type: application/json
-Content-length: 446
 
 {
   "collaborationTags": [
@@ -80,19 +79,6 @@ Content-length: 446
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

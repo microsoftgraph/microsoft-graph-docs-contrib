@@ -1,7 +1,7 @@
 ---
 title: "visualInfo resource type"
 description: "A complex type for representing the **visualElements** property in the activity object."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "project-rome"
 author: "ailae"
 doc_type: resourcePageType
@@ -23,11 +23,12 @@ If a custom card is not provided, a simple card will be generated using displayT
 
 |Name | Type | Description|
 |:----|:------|:-----------|
-|displayText | String | Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)|
-|description | String | Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)|
+|attribution | [imageInfo](../resources/projectrome-imageinfo.md) | Optional. JSON object used to represent an icon which represents the application used to generate the activity|
 |backgroundColor | String | Optional. Background color used to render the activity in the UI - brand color for the application source of the activity. Must be a valid hex color|
 |content | Untyped JSON object | Optional. Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI|
-|attribution | [imageInfo](../resources/projectrome-imageinfo.md) | Optional. JSON object used to represent an icon which represents the application used to generate the activity|
+|description | String | Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)|
+|displayText | String | Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)|
+
 
 ## JSON Representation
 

@@ -1,0 +1,31 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewListItem()
+fields := graphmodels.NewFieldValueSet()
+additionalData := map[string]interface{}{
+	"title" : "Widget", 
+	"color" : "Purple", 
+	"weight" : int32(32) , 
+}
+fields.SetAdditionalData(additionalData)
+requestBody.SetFields(fields)
+
+result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().Post(context.Background(), requestBody, nil)
+
+
+```

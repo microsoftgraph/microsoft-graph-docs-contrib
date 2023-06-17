@@ -1,7 +1,7 @@
 ---
 title: "Create userExperienceAnalyticsAppHealthDevicePerformanceDetails"
 description: "Create a new userExperienceAnalyticsAppHealthDevicePerformanceDetails object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Create a new [userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -52,6 +52,8 @@ The following table shows the properties that are required when you create the u
 |eventDateTime|DateTimeOffset|The time the event occurred.|
 |eventType|String|The type of the event.|
 |appDisplayName|String|The friendly name of the application for which the event occurred.|
+|appPublisher|String|The publisher of the application.|
+|appVersion|String|The version of the application.|
 |deviceId|String|The id of the device.|
 |deviceDisplayName|String|The name of the device.|
 
@@ -67,13 +69,15 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 Content-type: application/json
-Content-length: 325
+Content-length: 405
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformanceDetails",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "eventType": "Event Type value",
   "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "appVersion": "App Version value",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
@@ -84,7 +88,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 374
+Content-Length: 454
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformanceDetails",
@@ -92,13 +96,9 @@ Content-Length: 374
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "eventType": "Event Type value",
   "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "appVersion": "App Version value",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
 ```
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "Update windowsAppX"
 description: "Update the properties of a windowsAppX object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [windowsAppX](../resources/intune-apps-windowsappx.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -73,13 +73,13 @@ The following table shows the properties that are required when you create the [
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|identityName|String|The Identity Name.|
-|identityPublisherHash|String|The Identity Publisher Hash.|
-|identityResourceIdentifier|String|The Identity Resource Identifier.|
-|isBundle|Boolean|Whether or not the app is a bundle.|
-|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
-|identityVersion|String|The identity version.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) on which this app can run. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`; default value is `none`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|identityName|String|The identity name of the uploaded app package. For example: "Contoso.DemoApp".|
+|identityPublisherHash|String|The identity publisher hash of the uploaded app package. This is the hash of the publisher from the manifest. For example: "AB82CD0XYZ".|
+|identityResourceIdentifier|String|The identity resource identifier of the uploaded app package. For example: "TestResourceId".|
+|isBundle|Boolean|When TRUE, indicates that the app is a bundle. When FALSE, indicates that the app is not a bundle. By default, property is set to FALSE.|
+|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system. Valid values for a WindowsAppX app include `v8_0`, `v8_1` and `v10_0`. If the app is a bundle, the minimum supported OS has to be at least `v8_1`.|
+|identityVersion|String|The identity version of the uploaded app package. For example: "1.0.0.0".|
 
 
 
@@ -93,7 +93,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1470
+Content-length: 1562
 
 {
   "@odata.type": "#microsoft.graph.windowsAppX",
@@ -138,7 +138,11 @@ Content-length: 1470
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true,
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "identityVersion": "Identity Version value"
 }
@@ -149,7 +153,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1642
+Content-Length: 1734
 
 {
   "@odata.type": "#microsoft.graph.windowsAppX",
@@ -197,14 +201,12 @@ Content-Length: 1642
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true,
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "identityVersion": "Identity Version value"
 }
 ```
-
-
-
-
-
-

@@ -1,12 +1,13 @@
 ---
 author: daspek
-description: "The presence of the DeleteAction resource on an itemActivity indicates that the activity deleted an item."
+description: The presence of the DeleteAction resource on an itemActivity indicates that the activity deleted an item.
 ms.date: 09/14/2017
 title: DeleteAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
+
 # DeleteAction resource type
 
 Namespace: microsoft.graph
@@ -34,10 +35,10 @@ The presence of the **DeleteAction** resource on an [**itemActivity**][activity]
 
 ## Properties
 
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| name          | string | The name of the item that was deleted.
-| objectType    | string | `File` or `Folder`, depending on the type of the deleted item.
+| Property   | Type   | Description                                                    |
+| :--------- | :----- | :------------------------------------------------------------- |
+| name       | string | The name of the item that was deleted.                         |
+| objectType | string | `File` or `Folder`, depending on the type of the deleted item. |
 
 ## Remarks
 
@@ -53,5 +54,3 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
-
-

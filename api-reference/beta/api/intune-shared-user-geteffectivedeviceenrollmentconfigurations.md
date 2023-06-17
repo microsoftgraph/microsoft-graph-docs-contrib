@@ -1,7 +1,7 @@
 ---
 title: "getEffectiveDeviceEnrollmentConfigurations function"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-## Prerequisites
+## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -87,15 +87,3 @@ Content-Length: 422
   ]
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

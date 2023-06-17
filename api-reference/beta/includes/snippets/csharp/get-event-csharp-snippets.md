@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var @event = await graphClient.Me.Events["AAMkAGIAAAoZDOFAAA="]
-	.Request()
-	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
-	.Select("subject,body,bodyPreview,organizer,attendees,start,end,location")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Me.Events["{event-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "subject","body","bodyPreview","organizer","attendees","start","end","location","hideAttendees" };
+	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
+});
+
 
 ```

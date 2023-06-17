@@ -1,7 +1,7 @@
 ---
 title: "wipe action"
 description: "Wipe a device"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,14 +15,14 @@ Namespace: microsoft.graph
 
 Wipe a device
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.PriviligedOperation.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PrivilegedOperations.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## HTTP Request
 <!-- {
@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/wipe
 POST /deviceManagement/managedDevices/{managedDeviceId}/wipe
 POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/wipe
+POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}/managedDevices/{managedDeviceId}/wipe
 ```
 
 ## Request headers
@@ -51,6 +51,7 @@ The following table shows the parameters that can be used with this action.
 |keepEnrollmentData|Boolean|Not yet documented|
 |keepUserData|Boolean|Not yet documented|
 |macOsUnlockCode|String|Not yet documented|
+|persistEsimDataPlan|Boolean|Not yet documented|
 
 
 
@@ -62,15 +63,16 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/wipe
+POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDeviceId}/wipe
 
 Content-type: application/json
-Content-length: 109
+Content-length: 141
 
 {
   "keepEnrollmentData": true,
   "keepUserData": true,
-  "macOsUnlockCode": "Mac Os Unlock Code value"
+  "macOsUnlockCode": "Mac Os Unlock Code value",
+  "persistEsimDataPlan": true
 }
 ```
 
@@ -79,12 +81,3 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-
-
-
-

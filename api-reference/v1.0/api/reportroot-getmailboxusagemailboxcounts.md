@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getMailboxUsageMailboxCounts"
 description: "Get the total number of user mailboxes in your organization and how many are active each day of the reporting period. A mailbox is considered active if the user sent or read any email."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -78,7 +78,7 @@ The following is an example of the request.
   "name": "reportroot_getmailboxusagemailboxcounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getMailboxUsageMailboxCounts(period='D7')
 ```
 

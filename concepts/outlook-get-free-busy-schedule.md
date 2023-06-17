@@ -1,16 +1,16 @@
 ---
-title: "Get free/busy schedule of users and resources"
-description: "In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period."
-author: "angelgolfer-ms"
-localization_priority: Priority
+title: "Get free/busy schedule of Outlook calendar users and resources"
+description: "Use the getSchedule action to get the availability information of one or more users, distribution lists, or resources for a specific period of time."
+author: "tariq-sharif"
+ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
-# Get free/busy schedule of users and resources
+# Get free/busy schedule of Outlook calendar users and resources
 
 In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period.
 
-The [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) action lets you get the availability information of one or more entities - users, distribution lists, or resources - for a specific period of time. 
+The [getSchedule](/graph/api/calendar-getschedule) action lets you get the availability information of one or more entities - users, distribution lists, or resources - for a specific period of time. 
 
 ## Example
 
@@ -130,7 +130,7 @@ By default, the length of each time slot is 30 minutes. This example uses the **
 
 ## How does getSchedule compare with findMeetingTimes
 
-The [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) action is similar to **getSchedule** in that both read the free/busy status and working hours of specified users and resources. The two actions differ in a few major ways.
+The [findMeetingTimes](/graph/api/user-findmeetingtimes) action is similar to **getSchedule** in that both read the free/busy status and working hours of specified users and resources. The two actions differ in a few major ways.
 
 ### Application
 
@@ -177,7 +177,7 @@ These conditions apply regardless of whether the signed-in user is an administra
 
 ## Time zone representation
 By default, the start and end times of the returned schedule items are represented in UTC. You can use a `Prefer` header to specify a time zone appropriate for your app. As an example: 
-```
+``` http
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
@@ -185,7 +185,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 Be aware of the following limits and error condition:
 
 - **getSchedule** can support looking up free/busy information for up to 20 entities at once. This limit applies to the number of users identified individually or as members of a distribution list, and to the number of resources as well.
-- The time period to look up must be less than 42 days.
+- The time period to look up must be less than 62 days.
 - If **getSchedule** cannot identify a specified user or resource, it returns a single schedule item and indicates the error. 
 
 

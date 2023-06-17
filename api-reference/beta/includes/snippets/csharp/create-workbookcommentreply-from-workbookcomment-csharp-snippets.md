@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workbookCommentReply = new WorkbookCommentReply
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new WorkbookCommentReply
 {
 	Content = "This is my reply to the comment.",
-	ContentType = "plain"
+	ContentType = "plain",
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Comments["{workbookComment-id}"].Replies.PostAsync(requestBody);
 
-await graphClient.Drive.Items["{id}"].Workbook.Comments["{id}"].Replies
-	.Request()
-	.AddAsync(workbookCommentReply);
 
 ```

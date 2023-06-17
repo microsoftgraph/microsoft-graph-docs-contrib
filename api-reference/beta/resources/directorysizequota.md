@@ -1,10 +1,10 @@
 ---
 title: "directorySizeQuota resource type"
 description: "Represents a company's used and total directory quota."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+ms.prod: "directory-management"
+author: "adimitui"
 ---
 
 # directorySizeQuota resource type
@@ -33,7 +33,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "used": 123,
-  "total": 1234
+  "used": "Int32",
+  "total": "Int32"
 }
 ```

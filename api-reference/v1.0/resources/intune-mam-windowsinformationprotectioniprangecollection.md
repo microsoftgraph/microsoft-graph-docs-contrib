@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtectionIPRangeCollection resource type"
 description: "Windows Information Protection IP Range Collection"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -19,7 +19,7 @@ Windows Information Protection IP Range Collection
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name|
-|ranges|[ipRange](../resources/intune-mam-iprange.md) collection|Collection of Internet protocol address ranges|
+|ranges|[ipRange](../resources/intune-mam-iprange.md) collection|Collection of ip ranges|
 
 ## Relationships
 None
@@ -37,19 +37,8 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "ranges": [
     {
-      "@odata.type": "microsoft.graph.ipRange",
-      "lowerAddress": "String",
-      "upperAddress": "String"
+      "@odata.type": "microsoft.graph.ipRange"
     }
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

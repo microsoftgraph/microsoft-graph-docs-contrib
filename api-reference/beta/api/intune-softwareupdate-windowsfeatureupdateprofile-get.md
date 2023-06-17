@@ -1,7 +1,7 @@
 ---
 title: "Get windowsFeatureUpdateProfile"
 description: "Read properties and relationships of the windowsFeatureUpdateProfile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 480
+Content-Length: 896
 
 {
   "value": {
@@ -72,17 +72,19 @@ Content-Length: 480
     "displayName": "Display Name value",
     "description": "Description value",
     "featureUpdateVersion": "Feature Update Version value",
+    "rolloutSettings": {
+      "@odata.type": "microsoft.graph.windowsUpdateRolloutSettings",
+      "offerStartDateTimeInUTC": "2017-01-01T00:01:16.3697768-08:00",
+      "offerEndDateTimeInUTC": "2016-12-31T23:58:15.1925199-08:00",
+      "offerIntervalInDays": 3
+    },
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
-    ]
+    ],
+    "deployableContentDisplayName": "Deployable Content Display Name value",
+    "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
   }
 }
 ```
-
-
-
-
-
-

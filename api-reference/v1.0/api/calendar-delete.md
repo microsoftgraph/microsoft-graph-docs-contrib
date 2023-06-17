@@ -1,8 +1,8 @@
 ---
 title: "Delete calendar"
 description: "Delete a calendar other than the default calendar."
-author: "harini84"
-localization_priority: Normal
+author: "iamgirishck"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -27,9 +27,6 @@ A user's [calendar](../resources/calendar.md) other than the default calendar in
 ```http
 DELETE /me/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}
-
-DELETE /me/calendarGroup/calendars/{id}
-DELETE /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 A [calendar](../resources/calendar.md) other than the default calendar, in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
@@ -60,16 +57,9 @@ Here is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/calendar
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-calendar-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-calendar-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

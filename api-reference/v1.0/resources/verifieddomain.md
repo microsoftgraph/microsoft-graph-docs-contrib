@@ -1,9 +1,9 @@
 ---
 title: "verifiedDomain resource type"
-description: "Specifies a domain for a tenant. The **verifiedDomains** property of the organization entity is a collection of **VerifiedDomain**."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: ""
+description: "Specifies a domain for a tenant. The verifiedDomains property of the organization entity is a collection of verifiedDomain objects."
+ms.localizationpriority: medium
+author: "adimitui"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -11,17 +11,17 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Specifies a domain for a tenant. The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **VerifiedDomain**.
+Specifies a domain for a tenant. The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **verifiedDomain** objects.
 
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|capabilities|String|For example, “Email”, “OfficeCommunicationsOnline”.|
-|isDefault|Boolean|                **true** if this is the default domain associated with the tenant; otherwise, **false**.            |
-|isInitial|Boolean|**true** if this is the initial domain associated with the tenant; otherwise, **false**|
-|name|String|The domain name; for example, “contoso.onmicrosoft.com”|
-|type|String|For example, “Managed”.|
+| Property     | Type    | Description                                                                          |
+|:-------------|:--------|:-------------------------------------------------------------------------------------|
+| capabilities | String  | For example, `Email`, `OfficeCommunicationsOnline`.                                  |
+| isDefault    | Boolean | `true` if this is the default domain associated with the tenant; otherwise, `false`. |
+| isInitial    | Boolean | `true` if this is the initial domain associated with the tenant; otherwise, `false`. |
+| name         | String  | The domain name; for example, `contoso.onmicrosoft.com`.                             |
+| type         | String  | For example, `Managed`.                                                              |
 
 ## JSON representation
 
@@ -37,11 +37,11 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "capabilities": "string",
+  "capabilities": "String",
   "isDefault": true,
   "isInitial": true,
-  "name": "string",
-  "type": "string"
+  "name": "String",
+  "type": "String"
 }
 
 ```

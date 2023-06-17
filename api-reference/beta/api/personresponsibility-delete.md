@@ -2,7 +2,7 @@
 title: "Delete personResponsibility"
 description: "Deletes a personResponsibility object."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: apiPageType
 ---
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Application                            | User.Read.All, User.ReadWrite.All                            |
 
 ## HTTP request
 
@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /me/profile/responsibilities/{id}
-DELETE /users/{id | userPrincipalName}/profile/responsibilities/{id}
+DELETE /me/responsibilities/{id}
+DELETE /users/{id | userPrincipalName}/responsibilities/{id}
 ```
 
 ## Request headers
@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/profile/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
+DELETE https://graph.microsoft.com/beta/me/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
 ```
 
 ### Response

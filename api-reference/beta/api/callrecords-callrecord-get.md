@@ -1,8 +1,8 @@
 ---
 title: "Get callRecord"
 description: "Retrieve the properties and relationships of callrecord object."
-localization_priority: Normal
-author: "williamlooney"
+ms.localizationpriority: medium
+author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
@@ -17,8 +17,12 @@ Retrieve the properties and relationships of a [callRecord](../resources/callrec
 
 There are two ways to get the **id** of a **callRecord**:
 
-* Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-beta) to the `/communications/callRecords` endpoint.
+* Subscribe to [change notifications](/graph/api/resources/webhooks) to the `/communications/callRecords` endpoint.
 * Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
+
+> [!WARNING]
+>
+> A call record is created after a call or meeting ends and will remain available for **30 days**. Requests for call records older than 30 days will receive a `404 Not Found` response.
 
 ## Permissions
 
@@ -54,7 +58,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) object in the response body. A request for a call record older than 30 days will receive a `404 Not Found` response.
 
 ## Examples
 
@@ -64,23 +68,55 @@ If successful, this method returns a `200 OK` response code and the requested [m
 
 The following is an example of the request to get the basic details from a [callRecord](../resources/callrecords-callrecord.md).
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecord-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecord-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-callrecord-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-callrecord-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->
@@ -132,23 +168,55 @@ Content-type: application/json
 
 The following is an example of the request to get the full details from a [callRecord](../resources/callrecords-callrecord.md), including session and segment components.
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord_expanded"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=sessions($expand=segments)
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-expanded-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecord-expanded-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-expanded-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-expanded-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecord-expanded-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-callrecord-expanded-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-callrecord-expanded-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
-The following is an example of the response. If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions.
+The following is an example of the response. If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions. The default page size for sessions is 60 entries.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->
@@ -191,7 +259,6 @@ Content-type: application/json
             }
         }
     ],
-    "sessions@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions(segments())",
     "sessions": [
         {
             "modalities": [
@@ -200,8 +267,13 @@ Content-type: application/json
             "startDateTime": "2020-02-25T18:52:21.2169889Z",
             "endDateTime": "2020-02-25T18:52:46.7640013Z",
             "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
+            "isTest": false,
             "caller": {
                 "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                "name": "machineName_2",
+                "cpuName": "Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz",
+                "cpuCoresCount": 2,
+                "cpuProcessorSpeedInMhz": 2594,
                 "userAgent": {
                     "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                     "headerValue": "RTCC/7.0.0.0 UCWA/7.0.0.0 AndroidLync/6.25.0.27 (SM-G930U Android 8.0.0)",
@@ -219,6 +291,10 @@ Content-type: application/json
             },
             "callee": {
                 "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                "name": "machineName_4",
+                "cpuName": "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz",
+                "cpuCoresCount": 8,
+                "cpuProcessorSpeedInMhz": 2295,
                 "userAgent": {
                     "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                     "headerValue": "UCCAPI/16.0.12527.20122 OC/16.0.12527.20194 (Skype for Business)",
@@ -246,7 +322,6 @@ Content-type: application/json
                     }
                 }
             },
-            "segments@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions('e523d2ed-2966-4b6b-925b-754a88034cc5')/segments",
             "segments": [
                 {
                     "startDateTime": "2020-02-25T18:52:21.2169889Z",
@@ -254,6 +329,10 @@ Content-type: application/json
                     "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
                     "caller": {
                         "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                        "name": "machineName_4",
+                        "cpuName": "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz",
+                        "cpuCoresCount": 8,
+                        "cpuProcessorSpeedInMhz": 2295,
                         "userAgent": {
                             "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                             "headerValue": "RTCC/7.0.0.0 UCWA/7.0.0.0 AndroidLync/6.25.0.27 (SM-G930U Android 8.0.0)",
@@ -270,6 +349,10 @@ Content-type: application/json
                     },
                     "callee": {
                         "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                        "name": "machineName_6",
+                        "cpuName": "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz",
+                        "cpuCoresCount": 8,
+                        "cpuProcessorSpeedInMhz": 2295,
                         "userAgent": {
                             "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                             "headerValue": "UCCAPI/16.0.12527.20122 OC/16.0.12527.20194 (Skype for Business)",
@@ -358,7 +441,10 @@ Content-type: application/json
                                     "averageBandwidthEstimate": 9965083,
                                     "wasMediaBypassed": false,
                                     "averageAudioNetworkJitter": "PT0.043S",
-                                    "maxAudioNetworkJitter": "PT0.046S"
+                                    "maxAudioNetworkJitter": "PT0.046S",
+                                    "rmsFreezeDuration": null,
+                                    "averageFreezeDuration": null,
+                                    "isAudioForwardErrorCorrectionUsed": false
                                 },
                                 {
                                     "streamId": "1785122252",
@@ -376,7 +462,10 @@ Content-type: application/json
                                     "averageBandwidthEstimate": 15644878,
                                     "wasMediaBypassed": false,
                                     "averageAudioNetworkJitter": "PT0.266S",
-                                    "maxAudioNetworkJitter": "PT0.474S"
+                                    "maxAudioNetworkJitter": "PT0.474S",
+                                    "rmsFreezeDuration": null,
+                                    "averageFreezeDuration": null,
+                                    "isAudioForwardErrorCorrectionUsed": null
                                 }
                             ]
                         }

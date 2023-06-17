@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var identityProvider = new IdentityProvider
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new IdentityProvider
 {
-	ClientSecret = "1111111111111"
+	ClientSecret = "1111111111111",
 };
+var result = await graphClient.IdentityProviders["{identityProvider-id}"].PatchAsync(requestBody);
 
-await graphClient.IdentityProviders["Amazon-OAuth"]
-	.Request()
-	.UpdateAsync(identityProvider);
 
 ```

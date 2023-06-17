@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var keyId = Guid.Parse("f0b0b335-1d71-4883-8f98-567911bfdca6");
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var proof = "eyJ0eXAiOiJ...";
+var requestBody = new Microsoft.Graph.Applications.Item.RemoveKey.RemoveKeyPostRequestBody
+{
+	KeyId = Guid.Parse("f0b0b335-1d71-4883-8f98-567911bfdca6"),
+	Proof = "eyJ0eXAiOiJ...",
+};
+await graphClient.Applications["{application-id}"].RemoveKey.PostAsync(requestBody);
 
-await graphClient.Applications["{id}"]
-	.RemoveKey(keyId,proof)
-	.Request()
-	.PostAsync();
 
 ```

@@ -1,17 +1,17 @@
 ---
 title: "resourceData resource type"
 description: "Represents the resouce data attached to the change notification sent to the subscriber."
-localization_priority: Normal
-author: "davidmu1"
+ms.localizationpriority: medium
+author: "keylimesoda"
 doc_type: resourcePageType
-ms.prod: "non-product-specific"
+ms.prod: "change-notifications"
 ---
 
 # resourceData resource type
 
 Namespace: microsoft.graph
 
-Represents the resouce data attached to the change notification sent to the subscriber.
+Represents the resource data attached to the change notification sent to the subscriber. This resource is an open type and allows other properties to be passed in.
 
 For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).
 
@@ -21,16 +21,16 @@ None.
 
 ## Properties
 
-For Outlook resources, **resourceData** contains the following fields:
+None except for Outlook resources where **resourceData** contains the following fields:
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| @odata.type | string | The OData entity type in Microsoft Graph that describes the represented object. |
-| @odata.id | string | The OData identifier of the object. |
-| @odata.etag | string | The HTTP entity tag that represents the version of the object. |
-| id | string | The identifier of the object. |
+| @odata.type | String | The OData entity type in Microsoft Graph that describes the represented object. |
+| @odata.id | String | The OData identifier of the object. |
+| @odata.etag | String | The HTTP entity tag that represents the version of the object. |
+| id | String | The identifier of the object. |
 
-> **Note:** The `id` value provided in **resourceData** is valid at the time the change notification was generated. Some actions, such as moving a message to another folder, might result in the `id` no longer being valid when the change notification is processed.
+> **Note:** The **id** value provided in **resourceData** is valid at the time the change notification was generated. Some actions, such as moving a message to another folder, might result in the `id` no longer being valid when the change notification is processed.
 
 ## Relationships
 
@@ -43,16 +43,17 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "@odata.type",
+    "@odata.id",
+    "@odata.etag",
+    "id"
   ],
   "@odata.type": "microsoft.graph.resourceData"
 }-->
 
 ```json
 {
-  "id": "1565293727947",
-  "@odata.type": "#Microsoft.Graph.ChatMessage",
-  "@odata.id": "teams('88cbc8fc-164b-44f0-b6a6-b59b4a1559d3')/channels('19:8d9da062ec7647d4bb1976126e788b47@thread.tacv2')/messages('1565293727947')/replies('1565293727947')"
+  "@odata.type": "#microsoft.graph.resourceData"
 }
 ```
 

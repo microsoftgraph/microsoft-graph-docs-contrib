@@ -1,0 +1,1074 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "e9e76f8b-a4c0-4e1e-8f49-1c99dfa89219",
+          "ApiChange": "Property",
+          "ChangedApiName": "outOfOfficeDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **outOfOfficeDays** property to the [attackSimulationUser](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationUser?view=graph-rest-beta) resource.",
+          "Target": "attackSimulationUser"
+        },
+        {
+          "Id": "e9e76f8b-a4c0-4e1e-8f49-1c99dfa89219",
+          "ApiChange": "Property",
+          "ChangedApiName": "latestSimulationActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the **latestSimulationActivity** property to the [userSimulationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userSimulationDetails?view=graph-rest-beta) resource.",
+          "Target": "userSimulationDetails"
+        }
+      ],
+      "Id": "e9e76f8b-a4c0-4e1e-8f49-1c99dfa89219",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-12T05:22:05.5222525Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "accountTargetContentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accountTargetContentType** enumeration type.",
+          "Target": "accountTargetContentType"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "attackSimulationOperationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **attackSimulationOperationType** enumeration type.",
+          "Target": "attackSimulationOperationType"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "coachmarkLocationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **coachmarkLocationType** enumeration type.",
+          "Target": "coachmarkLocationType"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "payloadBrand",
+          "ChangeType": "Addition",
+          "Description": "Added the **payloadBrand** enumeration type.",
+          "Target": "payloadBrand"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "payloadComplexity",
+          "ChangeType": "Addition",
+          "Description": "Added the **payloadComplexity** enumeration type.",
+          "Target": "payloadComplexity"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "payloadIndustry",
+          "ChangeType": "Addition",
+          "Description": "Added the **payloadIndustry** enumeration type.",
+          "Target": "payloadIndustry"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "payloadTheme",
+          "ChangeType": "Addition",
+          "Description": "Added the **payloadTheme** enumeration type.",
+          "Target": "payloadTheme"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "simulationContentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationContentStatus** enumeration type.",
+          "Target": "simulationContentStatus"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "simulationContentSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationContentSource** enumeration type.",
+          "Target": "simulationContentSource"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accountTargetContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [accountTargetContent](https://learn.microsoft.com/en-us/graph/api/resources/accounttargetcontent?view=graph-rest-beta) resource type.",
+          "Target": "accountTargetContent"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addressBookAccountTargetContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [addressBookAccountTargetContent](https://learn.microsoft.com/en-us/graph/api/resources/addressbookaccounttargetcontent?view=graph-rest-beta) resource type.",
+          "Target": "addressBookAccountTargetContent"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "coachmarkLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [coachmarkLocation](https://learn.microsoft.com/en-us/graph/api/resources/coachmarklocation?view=graph-rest-beta) resource type.",
+          "Target": "coachmarkLocation"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailPayloadDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailPayloadDetail](https://learn.microsoft.com/en-us/graph/api/resources/emailpayloaddetail?view=graph-rest-beta) resource type.",
+          "Target": "emailPayloadDetail"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "includeAllAccountTargetContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [includeAllAccountTargetContent](https://learn.microsoft.com/en-us/graph/api/resources/includeallaccounttargetcontent?view=graph-rest-beta) resource type.",
+          "Target": "includeAllAccountTargetContent"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "payloadCoachmark",
+          "ChangeType": "Addition",
+          "Description": "Added the [payloadCoachmark](https://learn.microsoft.com/en-us/graph/api/resources/payloadcoachmark?view=graph-rest-beta) resource type.",
+          "Target": "payloadCoachmark"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "payloadDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [payloadDetail](https://learn.microsoft.com/en-us/graph/api/resources/payloaddetail?view=graph-rest-beta) resource type.",
+          "Target": "payloadDetail"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attackSimulationOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationOperation](https://learn.microsoft.com/en-us/graph/api/resources/attacksimulationoperation?view=graph-rest-beta) resource and a supported method.",
+          "Target": "attackSimulationOperation"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "longRunningOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [longRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/longrunningoperation?view=graph-rest-beta) resource type.",
+          "Target": "longRunningOperation"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "payload",
+          "ChangeType": "Addition",
+          "Description": "Added the [payload](https://learn.microsoft.com/en-us/graph/api/resources/payload?view=graph-rest-beta) resource and supported methods.",
+          "Target": "payload"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "operations",
+          "ChangeType": "Addition",
+          "Description": "Added the **operations** relationship to the [attackSimulationRoot](https://learn.microsoft.com/en-us/graph/api/resources/attacksimulationroot?view=graph-rest-beta) resource.",
+          "Target": "attackSimulationRoot"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "payloads",
+          "ChangeType": "Addition",
+          "Description": "Added the **payloads** relationship to the [attackSimulationRoot](https://learn.microsoft.com/en-us/graph/api/resources/attacksimulationroot?view=graph-rest-beta) resource.",
+          "Target": "attackSimulationRoot"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "payload",
+          "ChangeType": "Addition",
+          "Description": "Added the **payload** relationship to the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Property",
+          "ChangedApiName": "durationInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **durationInDays** property to the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Property",
+          "ChangedApiName": "excludedAccountTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the **excludedAccountTarget** property to the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
+        },
+        {
+          "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+          "ApiChange": "Property",
+          "ChangedApiName": "includedAccountTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the **includedAccountTarget** property to the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
+        }
+      ],
+      "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-19T09:34:07.9850342Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Attack simulation and training"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "payloadDeliveryPlatform",
+          "ChangeType": "Addition",
+          "Description": "Added the **payloadDeliveryPlatform** enumeration type.",
+          "Target": "payloadDeliveryPlatform"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "simulationAttackTechnique",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationAttackTechnique** enumeration type.",
+          "Target": "simulationAttackTechnique"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "simulationAttackType",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationAttackType** enumeration type.",
+          "Target": "simulationAttackType"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "simulationAutomationRunStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationAutomationRunStatus** enumeration type.",
+          "Target": "simulationAutomationRunStatus"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "simulationAutomationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationAutomationStatus** enumeration type.",
+          "Target": "simulationAutomationStatus"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "simulationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationStatus** enumeration type.",
+          "Target": "simulationStatus"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "trainingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **trainingStatus** enumeration type.",
+          "Target": "trainingStatus"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignedTrainingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignedTrainingInfo](https://learn.microsoft.com/en-us/graph/api/resources/assignedTrainingInfo?view=graph-rest-1.0) resource type.",
+          "Target": "assignedTrainingInfo"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attackSimulationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationInfo](https://learn.microsoft.com/en-us/graph/api/resources/security-attacksimulationinfo?view=graph-rest-1.0) resource type.",
+          "Target": "attackSimulationInfo"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attackSimulationRepeatOffender",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationRepeatOffender](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationRepeatOffender?view=graph-rest-1.0) resource and a supported method.",
+          "Target": "attackSimulationRepeatOffender"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attackSimulationRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationRoot](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationRoot?view=graph-rest-1.0) resource type.",
+          "Target": "attackSimulationRoot"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attackSimulationSimulationUserCoverage",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationSimulationUserCoverage](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationSimulationUserCoverage?view=graph-rest-1.0) resource and a supported method.",
+          "Target": "attackSimulationSimulationUserCoverage"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attackSimulationTrainingUserCoverage",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationTrainingUserCoverage](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationTrainingUserCoverage?view=graph-rest-1.0) resource and a supported method.",
+          "Target": "attackSimulationTrainingUserCoverage"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attackSimulationUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationUser](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationUser?view=graph-rest-1.0) resource type.",
+          "Target": "attackSimulationUser"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailIdentity](https://learn.microsoft.com/en-us/graph/api/resources/emailIdentity?view=graph-rest-1.0) resource type.",
+          "Target": "emailIdentity"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendedAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendedAction](https://learn.microsoft.com/en-us/graph/api/resources/recommendedAction?view=graph-rest-1.0) resource type.",
+          "Target": "recommendedAction"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityReportsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityReportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/securityReportsRoot?view=graph-rest-1.0) resource type.",
+          "Target": "securityReportsRoot"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "simulation",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "simulation"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "simulationAutomation",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulationAutomation](https://learn.microsoft.com/en-us/graph/api/resources/simulationAutomation?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "simulationAutomation"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "simulationAutomationRun",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulationAutomationRun](https://learn.microsoft.com/en-us/graph/api/resources/simulationAutomationRun?view=graph-rest-1.0) resource and a supported method.",
+          "Target": "simulationAutomationRun"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "simulationEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulationEvent](https://learn.microsoft.com/en-us/graph/api/resources/simulationEvent?view=graph-rest-1.0) resource type.",
+          "Target": "simulationEvent"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "simulationEventsContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulationEventsContent](https://learn.microsoft.com/en-us/graph/api/resources/simulationEventsContent?view=graph-rest-1.0) resource type.",
+          "Target": "simulationEventsContent"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "simulationReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulationReport](https://learn.microsoft.com/en-us/graph/api/resources/simulationReport?view=graph-rest-1.0) resource type.",
+          "Target": "simulationReport"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "simulationReportOverview",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulationReportOverview](https://learn.microsoft.com/en-us/graph/api/resources/simulationReportOverview?view=graph-rest-1.0) resource type.",
+          "Target": "simulationReportOverview"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "trainingEventsContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [trainingEventsContent](https://learn.microsoft.com/en-us/graph/api/resources/trainingEventsContent?view=graph-rest-1.0) resource type.",
+          "Target": "trainingEventsContent"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSimulationDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSimulationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userSimulationDetails?view=graph-rest-1.0) resource type.",
+          "Target": "userSimulationDetails"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSimulationEventInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSimulationEventInfo](https://learn.microsoft.com/en-us/graph/api/resources/userSimulationEventInfo?view=graph-rest-1.0) resource type.",
+          "Target": "userSimulationEventInfo"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userTrainingContentEventInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [userTrainingContentEventInfo](https://learn.microsoft.com/en-us/graph/api/resources/userTrainingContentEventInfo?view=graph-rest-1.0) resource type.",
+          "Target": "userTrainingContentEventInfo"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userTrainingEventInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [userTrainingEventInfo](https://learn.microsoft.com/en-us/graph/api/resources/userTrainingEventInfo?view=graph-rest-1.0) resource type.",
+          "Target": "userTrainingEventInfo"
+        },
+        {
+          "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userTrainingStatusInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [userTrainingStatusInfo](https://learn.microsoft.com/en-us/graph/api/resources/userTrainingStatusInfo?view=graph-rest-1.0) resource type.",
+          "Target": "userTrainingStatusInfo"
+        }
+      ],
+      "Id": "09f87a41-9d1b-4a2f-bdaa-73afa83470f7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-30T06:21:53.0001447Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "security",
+          "ChangeType": "Addition",
+          "Description": "Added the **security** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityReportRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the securityReportRoot resource",
+          "Target": "securityReportRoot"
+        },
+        {
+          "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAttackSimulationRepeatOffenders",
+          "ChangeType": "Addition",
+          "Description": "Added the getAttackSimulationRepeatOffenders resource.",
+          "Target": "securityReportRoot"
+        },
+        {
+          "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAttackSimulationSimulationUserCoverage",
+          "ChangeType": "Addition",
+          "Description": "Added the getAttackSimulationSimulationUserCoverage resource.",
+          "Target": "securityReportRoot"
+        },
+        {
+          "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAttackSimulationTrainingUserCoverage",
+          "ChangeType": "Addition",
+          "Description": "Added the getAttackSimulationTrainingUserCoverage",
+          "Target": "securityReportRoot"
+        },
+        {
+          "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAttackSimulationRepeatOffenders",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [getAttackSimulationRepeatOffenders](https://learn.microsoft.com/en-us/graph/api/reportroot-getattacksimulationrepeatoffenders?view=graph-rest-beta) method of the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAttackSimulationSimulationUserCoverage",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [getAttackSimulationSimulationUserCoverage](https://learn.microsoft.com/en-us/graph/api/reportroot-getattacksimulationsimulationusercoverage?view=graph-rest-beta) method of the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAttackSimulationTrainingUserCoverage",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [getAttackSimulationTrainingUserCoverage](https://learn.microsoft.com/en-us/graph/api/reportroot-getattacksimulationtrainingusercoverage?view=graph-rest-beta) method of the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        }
+      ],
+      "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-20T09:29:29.2003102Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Attack simulation and training"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "payloadDeliveryPlatform",
+          "ChangeType": "Addition",
+          "Description": "Added the **payloadDeliveryPlatform** enumeration type.",
+          "Target": "payloadDeliveryPlatform"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "payloadSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **payloadSource** enumeration type.",
+          "Target": "payloadSource"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "simulationAttackTechnique",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationAttackTechnique** enumeration type.",
+          "Target": "simulationAttackTechnique"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "simulationAttackType",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationAttackType** enumeration type.",
+          "Target": "simulationAttackType"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "simulationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationMode** enumeration type.",
+          "Target": "simulationMode"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "simulationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationStatus** enumeration type.",
+          "Target": "simulationStatus"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "trainingAssignmentPreference",
+          "ChangeType": "Addition",
+          "Description": "Added the **trainingAssignmentPreference** enumeration type.",
+          "Target": "trainingAssignmentPreference"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "trainingContentPreference",
+          "ChangeType": "Addition",
+          "Description": "Added the **trainingContentPreference** enumeration type.",
+          "Target": "trainingContentPreference"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "trainingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **trainingStatus** enumeration type.",
+          "Target": "trainingStatus"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "assignedTrainingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignedTrainingInfo](https://learn.microsoft.com/en-us/graph/api/resources/assignedTrainingInfo?view=graph-rest-beta) resource type.",
+          "Target": "assignedTrainingInfo"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "attackSimulationRepeatOffender",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationRepeatOffender](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationRepeatOffender?view=graph-rest-beta) resource type.",
+          "Target": "attackSimulationRepeatOffender"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "attackSimulationSimulationUserCoverage",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationSimulationUserCoverage](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationSimulationUserCoverage?view=graph-rest-beta) resource type.",
+          "Target": "attackSimulationSimulationUserCoverage"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "attackSimulationTrainingUserCoverage",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationTrainingUserCoverage](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationTrainingUserCoverage?view=graph-rest-beta) resource type.",
+          "Target": "attackSimulationTrainingUserCoverage"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "attackSimulationUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationUser](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationUser?view=graph-rest-beta) resource type.",
+          "Target": "attackSimulationUser"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "emailIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailIdentity](https://learn.microsoft.com/en-us/graph/api/resources/emailIdentity?view=graph-rest-beta) resource type.",
+          "Target": "emailIdentity"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "identity",
+          "ChangeType": "Addition",
+          "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource type.",
+          "Target": "identity"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "recommendedAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendedAction](https://learn.microsoft.com/en-us/graph/api/resources/recommendedAction?view=graph-rest-beta) resource type.",
+          "Target": "recommendedAction"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "simulationEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulationEvent](https://learn.microsoft.com/en-us/graph/api/resources/simulationEvent?view=graph-rest-beta) resource type.",
+          "Target": "simulationEvent"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "simulationEventsContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulationEventsContent](https://learn.microsoft.com/en-us/graph/api/resources/simulationEventsContent?view=graph-rest-beta) resource type.",
+          "Target": "simulationEventsContent"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "simulationReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulationReport](https://learn.microsoft.com/en-us/graph/api/resources/simulationReport?view=graph-rest-beta) resource type.",
+          "Target": "simulationReport"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "simulationReportOverview",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulationReportOverview](https://learn.microsoft.com/en-us/graph/api/resources/simulationReportOverview?view=graph-rest-beta) resource type.",
+          "Target": "simulationReportOverview"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "trainingEventsContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [trainingEventsContent](https://learn.microsoft.com/en-us/graph/api/resources/trainingEventsContent?view=graph-rest-beta) resource type.",
+          "Target": "trainingEventsContent"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "userSimulationDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSimulationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userSimulationDetails?view=graph-rest-beta) resource type.",
+          "Target": "userSimulationDetails"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "userSimulationEventInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSimulationEventInfo](https://learn.microsoft.com/en-us/graph/api/resources/userSimulationEventInfo?view=graph-rest-beta) resource type.",
+          "Target": "userSimulationEventInfo"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "userTrainingContentEventInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [userTrainingContentEventInfo](https://learn.microsoft.com/en-us/graph/api/resources/userTrainingContentEventInfo?view=graph-rest-beta) resource type.",
+          "Target": "userTrainingContentEventInfo"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "userTrainingEventInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [userTrainingEventInfo](https://learn.microsoft.com/en-us/graph/api/resources/userTrainingEventInfo?view=graph-rest-beta) resource type.",
+          "Target": "userTrainingEventInfo"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "userTrainingStatusInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [userTrainingStatusInfo](https://learn.microsoft.com/en-us/graph/api/resources/userTrainingStatusInfo?view=graph-rest-beta) resource type.",
+          "Target": "userTrainingStatusInfo"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "attackSimulationRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationRoot](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationRoot?view=graph-rest-beta) resource",
+          "Target": "attackSimulationRoot"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "attackSimulation",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulation](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationRoot?view=graph-rest-beta) navigation property to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "simulation",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource",
+          "Target": "simulation"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "Function",
+          "ChangedApiName": "getAttackSimulationRepeatOffenders",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAttackSimulationRepeatOffenders](https://learn.microsoft.com/en-us/graph/api/getAttackSimulationRepeatOffenders?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "getAttackSimulationRepeatOffenders"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "Function",
+          "ChangedApiName": "getAttackSimulationSimulationUserCoverage",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAttackSimulationSimulationUserCoverage](https://learn.microsoft.com/en-us/graph/api/getAttackSimulationSimulationUserCoverage?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "getAttackSimulationSimulationUserCoverage"
+        },
+        {
+          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+          "ApiChange": "Function",
+          "ChangedApiName": "getAttackSimulationTrainingUserCoverage",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAttackSimulationTrainingUserCoverage](https://learn.microsoft.com/en-us/graph/api/getAttackSimulationTrainingUserCoverage?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "getAttackSimulationTrainingUserCoverage"
+        }
+      ],
+      "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-27T06:42:46.5889852Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Attack simulation and training"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d9cff973-8801-441f-996f-f075d3f4bf82",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "simulationMode",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **simulationMode** enumeration type. This enumeration is not used.",
+          "Target": "simulationMode"
+        },
+        {
+          "Id": "d9cff973-8801-441f-996f-f075d3f4bf82",
+          "ApiChange": "Member",
+          "ChangedApiName": "notCompleted",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **notCompleted** member from the **trainingStatus** enumeration. This member is not used.",
+          "Target": "trainingStatus"
+        },
+        {
+          "Id": "d9cff973-8801-441f-996f-f075d3f4bf82",
+          "ApiChange": "Property",
+          "ChangedApiName": "mode",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mode** property from the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource. This property is not used.",
+          "Target": "simulation"
+        }
+      ],
+      "Id": "d9cff973-8801-441f-996f-f075d3f4bf82",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-29T05:14:42.2618253Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Attack simulation and training"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "payloadSource",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **payloadSource** enumeration type.",
+          "Target": "payloadSource"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "simulationAutomationRunStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationAutomationRunStatus** enumeration type.",
+          "Target": "simulationAutomationRunStatus"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "simulationAutomationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationAutomationStatus** enumeration type.",
+          "Target": "simulationAutomationStatus"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Member",
+          "ChangedApiName": "running",
+          "ChangeType": "Addition",
+          "Description": "Added the **running** member to the **simulationStatus** enumeration.",
+          "Target": "simulationStatus"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Member",
+          "ChangedApiName": "inProgress",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **inProgress** member from the **simulationStatus** enumeration.",
+          "Target": "simulationStatus"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Member",
+          "ChangedApiName": "succeeded",
+          "ChangeType": "Addition",
+          "Description": "Added the **succeeded** member to the **simulationStatus** enumeration.",
+          "Target": "simulationStatus"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Member",
+          "ChangedApiName": "completed",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **completed** member from the **simulationStatus** enumeration.",
+          "Target": "simulationStatus"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Member",
+          "ChangedApiName": "partiallyCompleted",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **partiallyCompleted** member from the **simulationStatus** enumeration.",
+          "Target": "simulationStatus"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Member",
+          "ChangedApiName": "deleted",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deleted** member from the **simulationStatus** enumeration.",
+          "Target": "simulationStatus"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Member",
+          "ChangedApiName": "included",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **included** member from the **simulationStatus** enumeration.",
+          "Target": "simulationStatus"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "trainingAssignmentPreference",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **trainingAssignmentPreference** enumeration type.",
+          "Target": "trainingAssignmentPreference"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "trainingContentPreference",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **trainingContentPreference** enumeration type.",
+          "Target": "trainingContentPreference"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "simulationAutomations",
+          "ChangeType": "Addition",
+          "Description": "Added the **simulationAutomations** relationship to the [attackSimulationRoot](https://learn.microsoft.com/en-us/graph/api/resources/attacksimulationroot?view=graph-rest-beta) resource.",
+          "Target": "attackSimulationRoot"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Property",
+          "ChangedApiName": "automationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **automationId** property to the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Property",
+          "ChangedApiName": "cleanupArtifacts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **cleanupArtifacts** property from the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Property",
+          "ChangedApiName": "enableRegionTimezoneDelivery",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **enableRegionTimezoneDelivery** property from the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeAllAccountTargets",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **includeAllAccountTargets** property from the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Property",
+          "ChangedApiName": "payloadSource",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **payloadSource** property from the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Property",
+          "ChangedApiName": "trainingAssignmentPreference",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **trainingAssignmentPreference** property from the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Property",
+          "ChangedApiName": "trainingContentPreference",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **trainingContentPreference** property from the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Property",
+          "ChangedApiName": "trainingDueDateTime",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **trainingDueDateTime** property from the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "simulationAutomation",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulationAutomation](https://learn.microsoft.com/en-us/graph/api/resources/simulationautomation?view=graph-rest-beta) resource type and a supported list method.",
+          "Target": "simulationAutomation"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "simulationAutomationRun",
+          "ChangeType": "Addition",
+          "Description": "Added the [simulationAutomationRun](https://learn.microsoft.com/en-us/graph/api/resources/simulationautomationrun?view=graph-rest-beta) resource type and a supported list method.",
+          "Target": "simulationAutomationRun"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Member",
+          "ChangedApiName": "notCompleted",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **notCompleted** member from the **trainingStatus** enumeration. This member is not used.",
+          "Target": "trainingStatus"
+        }
+      ],
+      "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-03-22T11:29:09.302642Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    }
+  ]
+}

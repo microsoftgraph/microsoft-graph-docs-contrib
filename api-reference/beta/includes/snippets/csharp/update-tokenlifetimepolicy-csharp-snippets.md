@@ -4,21 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var tokenLifetimePolicy = new TokenLifetimePolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new TokenLifetimePolicy
 {
-	Definition = new List<String>()
+	Definition = new List<string>
 	{
-		"definition-value"
+		"{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"5:30:00\"}}",
 	},
-	DisplayName = "displayName-value",
+	DisplayName = "Contoso token lifetime policy",
 	IsOrganizationDefault = true,
-	Type = "type-value"
 };
+var result = await graphClient.Policies.TokenLifetimePolicies["{tokenLifetimePolicy-id}"].PatchAsync(requestBody);
 
-await graphClient.Policies.TokenLifetimePolicies["{id}"]
-	.Request()
-	.UpdateAsync(tokenLifetimePolicy);
 
 ```

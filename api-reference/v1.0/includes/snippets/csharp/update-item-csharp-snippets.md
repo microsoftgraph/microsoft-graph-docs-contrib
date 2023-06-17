@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var driveItem = new DriveItem
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new DriveItem
 {
-	Name = "new-file-name.docx"
+	Name = "new-file-name.docx",
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{item-id}"]
-	.Request()
-	.UpdateAsync(driveItem);
 
 ```

@@ -1,10 +1,10 @@
 ---
 title: "synchronizationError resource type"
 description: "Represents an error that occurred during the synchronization process."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationError resource type
@@ -17,12 +17,12 @@ Represents an error that occurred during the synchronization process.
 
 ## Properties
 
-<!-- Add descriptions for the properties. -->
-| Property	   | Type	|Description|
+<!-- Add descriptions for the properties. Fill in the examples. -->
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|code|String||
-|message|String||
-|tenantActionable|Boolean||
+|code|String| The error code. For example, `AzureDirectoryB2BManagementPolicyCheckFailure`. |
+|message|String| The error message. For example, `Policy permitting auto-redemption of invitations not configured`.  |
+|tenantActionable|Boolean| The action to take to resolve the error. For example, `false`.|
 
 ## JSON representation
 
@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
 {
   "code": "String",
   "message": "String",
-  "tenantActionable": true
+  "tenantActionable": "Boolean"
 }
 
 ```

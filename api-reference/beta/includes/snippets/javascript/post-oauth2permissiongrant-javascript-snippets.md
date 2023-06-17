@@ -11,16 +11,15 @@ const options = {
 const client = Client.init(options);
 
 const oAuth2PermissionGrant = {
-  clientId: "clientId-value",
-  consentType: "consentType-value",
-  principalId: "principalId-value",
-  resourceId: "resourceId-value",
-  scope: "scope-value",
-  startTime: "2016-10-19T10:37:00Z",
-  expiryTime: "2016-10-19T10:37:00Z"
+    clientId: 'ef969797-201d-4f6b-960c-e9ed5f31dab5',
+    consentType: 'AllPrincipals',
+    resourceId: '943603e4-e787-4fe9-93d1-e30f749aae39',
+    scope: 'DelegatedPermissionGrant.ReadWrite.All',
+    startTime: '2022-03-17T00:00:00Z',
+    expiryTime: '2023-03-17T00:00:00Z'
 };
 
-let res = await client.api('/oauth2PermissionGrants')
+await client.api('/oauth2PermissionGrants')
 	.version('beta')
 	.post(oAuth2PermissionGrant);
 

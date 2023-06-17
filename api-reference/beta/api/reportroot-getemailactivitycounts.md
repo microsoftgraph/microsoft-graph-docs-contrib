@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getEmailActivityCounts"
 description: "Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -74,7 +74,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and an **[emailActivitySummary](../resources/emailactivitysummary.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 ## Example
 
@@ -121,7 +121,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Send,Receive,Read,Report Date,Report Period
+Report Refresh Date,Send,Receive,Read,Meeting Created,Meeting Interacted,Report Date,Report Period
 ```
 
 ### JSON
@@ -147,12 +147,12 @@ GET https://graph.microsoft.com/beta/reports/getEmailActivityCounts(period='D7')
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.emailActivitySummary"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -160,14 +160,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 242
 
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.emailActivitySummary)", 
+{ 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
       "send": 504, 
       "receive": 76506, 
       "read": 12161, 
+      "meetingCreated": 421, 
+      "meetingInteracted": 7930, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }

@@ -1,10 +1,10 @@
 ---
 title: "stringKeyAttributeMappingSourceValuePair resource type"
 description: "Represents a key-value pair where the key is a string and the value is attributeMappingSource."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # stringKeyAttributeMappingSourceValuePair resource type
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |key|String|The name of the parameter.|
 |value|[attributeMappingSource](synchronization-attributemappingsource.md)|The value of the parameter.|
@@ -36,9 +36,10 @@ The following is a JSON representation of the resource.
 ```json
 {
   "key": "String",
-  "value": {"@odata.type": "microsoft.graph.attributeMappingSource"}
+  "value": {
+    "@odata.type": "microsoft.graph.attributeMappingSource"
+  }
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

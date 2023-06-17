@@ -3,9 +3,9 @@ author: JeremyKelley
 description: "The geoCoordinates resource provides geographic coordinates and elevation of a location based on metadata contained within the file."
 ms.date: 09/10/2017
 title: GeoCoordinates
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "identity-and-access-reports"
 ---
 # geoCoordinates resource type
 

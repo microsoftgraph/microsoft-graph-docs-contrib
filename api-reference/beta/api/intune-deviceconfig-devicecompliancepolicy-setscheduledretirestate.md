@@ -1,7 +1,7 @@
 ---
 title: "setScheduledRetireState action"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -48,6 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
+|scopedToAllDevices|Boolean|Not yet documented|
 |state|[scheduledRetireState](../resources/intune-deviceconfig-scheduledretirestate.md)|Not yet documented|
 |managedDeviceIds|String collection|Not yet documented|
 
@@ -64,10 +65,11 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/setScheduledRetireState
 
 Content-type: application/json
-Content-length: 95
+Content-length: 126
 
 {
-  "state": "comfirmRetire",
+  "scopedToAllDevices": true,
+  "state": "confirmRetire",
   "managedDeviceIds": [
     "Managed Device Ids value"
   ]
@@ -79,9 +81,3 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-

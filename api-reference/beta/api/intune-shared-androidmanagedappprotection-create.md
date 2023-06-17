@@ -1,7 +1,7 @@
 ---
 title: "Create androidManagedAppProtection"
 description: "Create a new androidManagedAppProtection object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -274,12 +274,3 @@ Content-Length: 3139
   "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
-
-
-
-
-
-
-
-
-

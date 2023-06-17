@@ -4,19 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workbookNamedItem = new WorkbookNamedItem
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new WorkbookNamedItem
 {
 	Type = "type-value",
 	Scope = "scope-value",
 	Comment = "comment-value",
-	Value = JToken.Parse("{}"),
-	Visible = true
+	Value = new Json
+	{
+	},
+	Visible = true,
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Names["{workbookNamedItem-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
-	.Request()
-	.UpdateAsync(workbookNamedItem);
 
 ```

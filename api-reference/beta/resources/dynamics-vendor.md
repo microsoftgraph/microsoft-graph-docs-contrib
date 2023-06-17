@@ -4,7 +4,7 @@ description: A vendor object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---
@@ -53,6 +53,13 @@ None
 
 ## JSON representation
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.vendor"
+}-->
+
 Here is a JSON representation of the vendor.
 
 ```json
@@ -75,7 +82,6 @@ Here is a JSON representation of the vendor.
   "balance": "decimal",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
 
 

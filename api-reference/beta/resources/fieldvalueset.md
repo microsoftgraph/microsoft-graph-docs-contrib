@@ -3,9 +3,9 @@ author: JeremyKelley
 description: "Represents the column values in a listItem resource."
 ms.date: 09/11/2017
 title: FieldValueSet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
 # FieldValueSet resource
 

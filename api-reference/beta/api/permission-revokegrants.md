@@ -2,7 +2,7 @@
 title: "permission: revokeGrants"
 description: "Update an item's sharing permissions"
 author: "learafa"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -23,7 +23,7 @@ Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by r
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
@@ -40,7 +40,7 @@ POST /drives/{drive-id}/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
-POST /sites/{site-id}/lists/{list-id}/items/{listItem-id}/permissions/{perm-id}/revokeGrants
+POST /sites/{site-id}/lists/{list-id}/items/{listItem-id}/driveItem/permissions/{perm-id}/revokeGrants
 POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 ```
 
@@ -66,6 +66,8 @@ If successful, this action returns a `200 OK` response code and a [permission](.
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "permission-revokegrants"
@@ -73,9 +75,7 @@ If successful, this action returns a `200 OK` response code and a [permission](.
 -->
 ``` http
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
-
 Content-Type: application/json
-Content-length: 95
 
 {
   "grantees": [
@@ -86,6 +86,35 @@ Content-length: 95
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/permission-revokegrants-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/permission-revokegrants-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/permission-revokegrants-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permission-revokegrants-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/permission-revokegrants-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/permission-revokegrants-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/permission-revokegrants-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

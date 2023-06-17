@@ -1,17 +1,19 @@
 ---
-title: "labelingOptions resource type"
-description: "Represents the labeling options that can be provided to the evaluation APIs."
-localization_priority: Normal
+title: "labelingOptions resource type  (deprecated)"
+description: "Represents the labeling options that can be provided to the evaluation APIs. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# labelingOptions resource type
+# labelingOptions resource type  (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Represents the labeling options that can be provided to the evaluation APIs. **labelingOptions** must be passed in to the [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) API to specify details about the label that is to be applied. 
 

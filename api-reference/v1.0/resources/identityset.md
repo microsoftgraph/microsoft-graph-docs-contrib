@@ -1,47 +1,59 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: IdentitySet
-localization_priority: Normal
-description: "The IdentitySet resource is a keyed collection of identity resources."
-ms.prod: ""
+author: "JeremyKelley"
+title: "identitySet resource type"
+description: "Represents a keyed collection of identity resources."
+ms.localizationpriority: medium
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# IdentitySet resource type
+# identitySet resource type
 
 Namespace: microsoft.graph
 
-The **IdentitySet** resource is a keyed collection of [identity](identity.md) resources.
-It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
-
-## JSON representation
-
-Here is a JSON representation of the resource.
-
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identitySet",
-       "optionalProperties": ["user", "application", "device"],
-       "openType": true } -->
-```json
-{
-  "application": {"@odata.type": "microsoft.graph.identity"},
-  "device": {"@odata.type": "microsoft.graph.identity"},
-  "user": {"@odata.type": "microsoft.graph.identity"}
-}
-```
+Represents a keyed collection of [identity](identity.md) resources. It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
 
 ## Properties
 
 | Property    | Type                    | Description                                            |
 |:------------|:------------------------|:-------------------------------------------------------|
-| application | [Identity](identity.md) | Optional. The application associated with this action. |
-| device      | [Identity](identity.md) | Optional. The device associated with this action.      |
-| user        | [Identity](identity.md) | Optional. The user associated with this action.        |
+| application | [identity](identity.md) | Optional. The application associated with this action.  |
+| applicationInstance | [identity](identity.md) | Optional. The application instance associated with this action.  |
+| conversation| [identity](identity.md) | Optional. The team or channel associated with this action.       |
+| conversationIdentityType| [identity](identity.md) | Optional. Indicates whether the **conversation** property identifies a team or channel.|
+| device      | [identity](identity.md) | Optional. The device associated with this action.       |
+| encrypted       | [identity](identity.md) | Optional. The encrypted identity associated with this action. |
+| onPremises       | [identity](identity.md) | Optional. The on-premises identity associated with this action. |
+| guest       | [identity](identity.md) | Optional. The guest identity associated with this action. |
+| phone       | [identity](identity.md) | Optional. The phone number associated with this action. |
+| user        | [identity](identity.md) | Optional. The user associated with this action.         |
 
-## Remarks 
 
-See [DriveItem](driveitem.md) for usage of **IdentitySet** resources.
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identitySet",
+       "optionalProperties": ["application", "applicationInstance", "conversation", "conversationIdentityType", "encrypted", "onPremises", "guest", "phone", "user", "device"],
+       "openType": true } -->
+```json
+{
+  "application": {"@odata.type": "microsoft.graph.identity"},
+  "applicationInstance": {"@odata.type": "microsoft.graph.identity"},
+  "conversation": {"@odata.type": "microsoft.graph.identity"},
+  "conversationIdentityType": {"@odata.type": "microsoft.graph.identity"},
+  "device": {"@odata.type": "microsoft.graph.identity"},
+  "encrypted": {"@odata.type": "microsoft.graph.identity"},
+  "onPremises": {"@odata.type": "microsoft.graph.identity"},
+  "guest": {"@odata.type": "microsoft.graph.identity"},
+  "phone": {"@odata.type": "microsoft.graph.identity"},
+  "user": {"@odata.type": "microsoft.graph.identity"}
+}
+```
+
+## See also 
+
+For examples about the usage of **identitySet** resources, see [driveItem](driveitem.md).
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

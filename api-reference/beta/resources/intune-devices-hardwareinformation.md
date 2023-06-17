@@ -1,7 +1,7 @@
 ---
 title: "hardwareInformation resource type"
 description: "Hardware information of a given device."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -47,6 +47,19 @@ Hardware information of a given device.
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Local System Authority (LSA) credential guard status. . Possible values are: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
 |osBuildNumber|String|Operating System Build Number on Android device|
 |operatingSystemProductType|Int32|Int that specifies the Windows Operating System ProductType. More details here https://go.microsoft.com/fwlink/?linkid=2126950. Valid values 0 to 2147483647|
+|ipAddressV4|String|IPAddressV4|
+|subnetAddress|String|SubnetAddress|
+|esimIdentifier|String|eSIM identifier|
+|systemManagementBIOSVersion|String|BIOS version as reported by SMBIOS|
+|tpmManufacturer|String|The identifying information that uniquely names the TPM manufacturer|
+|tpmVersion|String|The version of the TPM, as specified by the manufacturer|
+|wiredIPv4Addresses|String collection|A list of wired IPv4 addresses. The update frequency (the maximum delay for the change of property value to be synchronized from the device to the cloud storage) of this property is daily. Note this property is currently supported only on devices running on Windows.|
+|batteryLevelPercentage|Double|The battery level, between 0.0 and 100, or null if the battery level cannot be determined. The update frequency of this property is per-checkin. Note this property is currently supported only on devices running iOS 5.0 and later, and is available only when Device Information access right is obtained. Valid values 0 to 100|
+|residentUsersCount|Int32|The number of users currently on this device, or null (default) if the value of this property cannot be determined. The update frequency of this property is per-checkin. Note this property is currently supported only on devices running iOS 13.4 and later, and is available only when Device Information access right is obtained. Valid values 0 to 2147483647|
+|productName|String|The product name, e.g. iPad8,12 etc. The update frequency of this property is weekly. Note this property is currently supported only on iOS/MacOS devices, and is available only when Device Information access right is obtained.|
+|deviceLicensingStatus|[deviceLicensingStatus](../resources/intune-devices-devicelicensingstatus.md)|Device based subscription licensing status. The update frequency of this property is daily. Note this property is currently supported only for Windows based Device based subscription licensing. In case it is not supported, the value will be set to unknown (-1). Possible values are: `licenseRefreshStarted`, `licenseRefreshPending`, `deviceIsNotAzureActiveDirectoryJoined`, `verifyingMicrosoftDeviceIdentity`, `deviceIdentityVerificationFailed`, `verifyingMicrosoftAccountIdentity`, `microsoftAccountVerificationFailed`, `acquiringDeviceLicense`, `refreshingDeviceLicense`, `deviceLicenseRefreshSucceed`, `deviceLicenseRefreshFailed`, `removingDeviceLicense`, `deviceLicenseRemoveSucceed`, `deviceLicenseRemoveFailed`, `unknownFutureValue`, `unknown`.|
+|deviceLicensingLastErrorCode|Int32|A standard error code indicating the last error, or 0 indicating no error (default). The update frequency of this property is daily. Note this property is currently supported only for Windows based Device based subscription licensing. Valid values 0 to 2147483647|
+|deviceLicensingLastErrorDescription|String|Error text message as a descripition for deviceLicensingLastErrorCode. The update frequency of this property is daily. Note this property is currently supported only for Windows based Device based subscription licensing.|
 
 ## Relationships
 None
@@ -95,12 +108,21 @@ Here is a JSON representation of the resource.
   "deviceGuardVirtualizationBasedSecurityState": "String",
   "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
   "osBuildNumber": "String",
-  "operatingSystemProductType": 1024
+  "operatingSystemProductType": 1024,
+  "ipAddressV4": "String",
+  "subnetAddress": "String",
+  "esimIdentifier": "String",
+  "systemManagementBIOSVersion": "String",
+  "tpmManufacturer": "String",
+  "tpmVersion": "String",
+  "wiredIPv4Addresses": [
+    "String"
+  ],
+  "batteryLevelPercentage": "4.2",
+  "residentUsersCount": 1024,
+  "productName": "String",
+  "deviceLicensingStatus": "String",
+  "deviceLicensingLastErrorCode": 1024,
+  "deviceLicensingLastErrorDescription": "String"
 }
 ```
-
-
-
-
-
-

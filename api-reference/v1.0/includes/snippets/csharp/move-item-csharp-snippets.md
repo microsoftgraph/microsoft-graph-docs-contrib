@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var driveItem = new DriveItem
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new DriveItem
 {
 	ParentReference = new ItemReference
 	{
-		Id = "{new-parent-folder-id}"
+		Id = "{new-parent-folder-id}",
 	},
-	Name = "new-item-name.txt"
+	Name = "new-item-name.txt",
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{item-id}"]
-	.Request()
-	.UpdateAsync(driveItem);
 
 ```

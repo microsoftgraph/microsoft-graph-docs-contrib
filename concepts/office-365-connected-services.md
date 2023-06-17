@@ -1,92 +1,122 @@
 ---
-title: "Call Microsoft 365 services in Visual Studio 2017 with the Microsoft Graph API"
-description: "You can use the Connected Services in Visual Studio to configure your app to call the Microsoft Graph API. This article describes how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo."
-localization_priority: Priority
+title: "Configure Microsoft 365 services with the Microsoft Graph API in Visual Studio"
+description: "Learn how to configure Connected Services in Visual Studio to use Microsoft Graph in an ASP.NET MVC application that displays events from the currently signed in user's calendar."
+ms.localizationpriority: high
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 ---
 
-# Call Microsoft 365 services in Visual Studio 2017 with the Microsoft Graph API
+# Configure Microsoft 365 services with the Microsoft Graph API in Visual Studio 
 
-You can use the Connected Services in Visual Studio to configure your app to call the Microsoft Graph API. This article describes how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo.
+You can use Microsoft Graph to consume user information stored in Microsoft 365 in custom applications. By using Connected Services in Visual Studio, you can grant your application access to the following Microsoft 365 services:
+
+- Outlook: mail, calendars, and contacts 
+- Azure Active Directory: users, groups, and directories 
+- OneDrive: files
+- OneNote: notes and notebooks
+- SharePoint: sites, lists, and document libraries
+- Planner: tasks
+
+This article describes how to configure Connected Services in Visual Studio to use Microsoft Graph in an ASP.NET MVC application that displays events from the currently signed in user's calendar.
 
 ## Get set up
 
-To use the Office 365 Connected Services with Microsoft Graph, you'll need to do the following:
+To use the Office 365 Connected Services with Microsoft Graph, you need to:
 
-- Download the [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), if you haven't already. If you're using an earlier version of Visual Studio, you can use Visual Studio 2017 Preview side by side with your current version.
-
-- Get a Microsoft 365 subscription. To get a free trial, join the [Microsoft 365 Developer program](https://developer.microsoft.com/microsoft-365/dev-program).
+- Download [Visual Studio](https://visualstudio.microsoft.com/vs/). If you already have it, update to the latest version.
+- Get a Microsoft 365 subscription. To get a free trial developer subscription, join the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
 ## Get the starter project
 
-Download the [Microsoft Graph ASP.NET Connected Services Sample](https://github.com/microsoftgraph/aspnet-connect-sample/archive/Office365connectedservice.zip). This sample includes the references that you need to authenticate against Microsoft Graph. After you download the starter project, unzip, and open the sample in Visual Studio 2017 Preview.
+Download the [Microsoft Graph ASP.NET Connected Services MVC App Sample](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp/archive/refs/heads/Office365-ConnectedServices.zip). This sample includes the references that you need to authenticate against Microsoft Graph. After you download the starter project, unzip, and open the **graph-tutorial** sample in Visual Studio.
 
 ## Add the Connected Service
 
-You're now ready to add the Microsoft Graph service to your Visual Studio project. 
+### Visual Studio 2022
 
-1. In Solution Explorer, choose **Connected Services** to open the Connected Services tab. 
+1. In **Solution Explorer**, choose **Connected Services** to open the Connected Services tab.
+2. In **Service Dependencies**, click the **+** button to add a new service dependency.
+3. Scroll down and choose **Access Microsoft 365 services with Microsoft Graph**.
 
-2. Choose the **Access Microsoft 365 services with Microsoft Graph** provider. Follow the wizard. Select the following permissions (you can change the permissions later):
+### Visual Studio 2017 and Visual Studio 2019 
+  
+1. In Solution Explorer, choose **Connected Services** to open the Connected Services tab.
+2. Choose **Access Microsoft 365 services with Microsoft Graph** provider.
 
-    - For the **File** APIs, set permissions to **Have full access to your files**.
-    - For the **Mail** APIs, set permissions to **Send mail as you**.
-    - For the **User** APIs, set permissions to **Sign you in and read your profile**.
+## Configure Microsoft 365 data access
 
-## Call the Microsoft Graph API
+1. Enter the domain of your developer account and choose **Next**.  
+    
+    Go to your [Azure Active Directory (Azure AD)](https://aad.portal.azure.com) admin center in the Azure Portal to find your domain name. Sign in and select the **Azure Active Directory >  Overview** menu item. The field **Primary domain** in **Basic information** section contains your domain name.
 
-The starter sample is configured to send a simple email. You can use Microsoft Graph to update the sample to send an email with a link to the signed-in user's profile photo in OneDrive.
+ > **Tip:** If your primary address is `admin@contoso.onmicrosoft.com`, your domain is `contoso.onmicrosoft.com`. 
+    
+2. Select **Create a new Azure AD application** and choose **Next**.
+3. For this tutorial, select the following permissions:
 
-1. Go to 'Models\GraphService.cs', which hosts the code to call Microsoft Graph.
+    - Select the **Calendars** tab and check the box **Read your calendars** to grant your application the `Calendar.Read` permission.
+    - Select the **User** tab and check the box **Sign you in and read your profile** to grant your application the `User.Read` permission.
 
-2. Find and **Uncomment** calls to the SDK in the following methods. This shows how to call Microsoft Graph to get a profile photo, upload a file to OneDrive, and get a sharing link.
+4. Choose **Finish**.
 
-    ```csharp
-        GetCurrentUserPhotoStream(GraphServiceClient graphClient)
+## Update the app settings
+
+1. Double-click **Web.config**.
+
+2. Inside **<appSettings\>**, insert the following code: 
+
+    ```XML
+    <add key="ida:RedirectUri" value="https://localhost:PORT/" />
+    <add key="ida:AppScopes" value="User.Read Calendars.Read" />
     ```
     
-    ```csharp
-        UploadFileToOneDrive(GraphServiceClient graphClient, byte[] file)
-    ```
-
-    ```csharp
-        GetSharingLink(GraphServiceClient graphClient, string Id)
-    ```
+    Modify the `PORT` value for ```ida:RedirectUri``` to match the URL of your application.
  
-> **Tip:** Each comment starts with '//Uncomment:'
+> **Tip:** You can find the PORT information in the project properties.
  
 
 ## Run the sample
-Build and run the sample. Next, choose the **Sign-in** link on the top right, and then choose **Get email address** followed by **Send email**.
 
-This will send an email that includes a link to your profile photo.
+Save your changes and start the project. Next, select the **Click here to sign in** button that redirects you to https://login.microsoftonline.com. Sign in with your developer account and consent to the requested permissions. 
 
->**Notes:**
+The home page displays your name that indicates that you're signed-in. On the **Calendar** tab, a table of events displays accordingly to your account.  
 
->- If you stop and rerun the sample from Visual Studio, you might need to explicitly sign out for the sample to work.
->- If you get an exception that indicates that the User is not authenticated, you might need to repeat the [Add the Connected Service](#add-the-connected-service) step.
-    
+Select **Sign Out** on the avatar in the top-right corner to reset the session and return to the home page.
+
 
 ## Explore the code
 
-You can now use Visual Studio 2017 to connect to and configure your services. The starter sample creates the scaffolding and references for you.  
+You can now explore the files and code in Visual Studio to learn more about this starter project.
 
-The starter sample includes the following files:
+### Request to Microsoft Graph API
 
-- [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs) - Authenticates the current user and initializes the sample's token cache.
+The [Helpers\\GraphHelper.cs](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp/blob/Office365-ConnectedServices/Demos/Office365-ConnectedServices/graph-tutorial/Helpers/GraphHelper.cs) contains the methods that use the **GraphServiceClient** to send requests to the Microsoft Graph service. This class implements the **GetUserDetailsAsync** method that uses the Microsoft Graph SDK to retreive user's information by calling the `/me` endpoint.
 
-- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) - Stores the user's token information. You can replace this with your own custom token cache. For more information, see [Caching access tokens in a multitenant application](/azure/architecture/multitenant-identity/token-cache).
+The **GetEventsAsync** method uses the `/v1.0/me/events` endpoint to request calendars data. The `select` OData query parameter limits the fields returned for each event to just those displayed in the view. The `orderBy` parameter sorts the results by the date and time they were created, with the most recent item being first.
 
-- Models\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) - Implements the local IAuthProvider interface, and gets an access token. 
+The **GetAuthenticatedClient** method initializes a **GraphServiceClient** with an authentication provider and attempts to retrieve a previously obtained access token from the token store using the **AcquireTokenSilent** method. Notice that if the **AcquireTokenSilent** fails, the user is presented with an interactive login.
 
-- Helpers\\[SDKHelper.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SDKHelper.cs) - Initializes the **GraphServiceClient** from the [Microsoft Graph .NET Client Library](https://github.com/microsoftgraph/msgraph-sdk-dotnet) that is used to interact with the Microsoft Graph.
+### Authentication
 
-- Controllers\\[HomeController.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Controllers/HomeController.cs) - Contains methods that use the **GraphServiceClient** to build and send calls to the Microsoft Graph service and to process the response.
+The [App_Start\\Startup.Auth.cs](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp/blob/Office365-ConnectedServices/Demos/Office365-ConnectedServices/graph-tutorial/App_Start/Startup.Auth.cs) configures the OWIN middleware with the values from **Web.config** and defines the following callback methods **OnAuthenticationFailedAsync** and **OnAuthorizationCodeReceivedAsync** that are invoked when the sign-in process returns from Azure.
 
-- Views\\Home\\[Graph.cshtml](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Views/Home/Graph.cshtml) - Contains the UI for the sample. 
+The method **OnAuthorizationCodeReceivedAsync** wraps the default user token cache of the **ConfidentialClientApplication** with the **SessionTokenStore** class. The **MSAL library** handles the logic of storing the tokens and refreshing it when needed. The code passes the user details obtained from Microsoft Graph to the **SessionTokenStore** object to store in the session.
 
+### Token cache
+
+The [TokenStorage\\SessionTokenCache.cs](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp/blob/Office365-ConnectedServices/Demos/Office365-ConnectedServices/graph-tutorial/TokenStorage/SessionTokenStore.cs) implements a token store class to serialize and store the **MSAL token** cache and the user's details in the user session. You can replace this with your own custom token cache. For more information, see [Cache access tokens](/azure/architecture/multitenant-identity/token-cache).
+
+### Sign in and sign out
+
+The [Controllers\\AccountController.cs](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp/blob/Office365-ConnectedServices/Demos/Office365-ConnectedServices/graph-tutorial/Controllers/AccountController.cs) is a controller to handle sign-in that defines a **SignIn** and **SignOut** action. The **SignIn** action checks if the request is already authenticated. If not, it invokes the OWIN middleware to authenticate the user. The **SignOut** action invokes the OWIN middleware to sign out.
+
+### Views
+
+The [Views\\Shared\\\_Layout.cshtml](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp/blob/Office365-ConnectedServices/Demos/Office365-ConnectedServices/graph-tutorial/Views/Shared/_Layout.cshtml) defines the global layout of the app. It adds [Bootstrap](https://getbootstrap.com/) for simple styling and [Font Awesome](https://fontawesome.com/) for icons, defines the layout of the nav bar, and uses the **Alert** class to display alerts.
+
+The [Views\\Home\\Index.cshtml](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp/blob/Office365-ConnectedServices/Demos/Office365-ConnectedServices/graph-tutorial/Views/Home/Index.cshtml) 
+ and [Views\\Calendar\\Index.cshtml](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp/blob/Office365-ConnectedServices/Demos/Office365-ConnectedServices/graph-tutorial/Views/Calendar/Index.cshtml) contain the UI to display the information retrieved from Azure.  
 
 ## Need help?
 
-If you need help, post your questions on [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Tag your post with {microsoftgraph}.
+If you need help, post your questions on [Microsoft Q&A](/answers/products/m365#microsoft-graph). Tag your post with {microsoft-graph-identity}.

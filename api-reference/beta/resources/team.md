@@ -1,8 +1,8 @@
 ---
 title: "team resource type"
-description: "A team in Microsoft Teams is a collection of channels. "
-author: "nkramer"
-localization_priority: Priority
+description: "A team in Microsoft Teams is a collection of channels."
+author: "AkJo"
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -15,47 +15,65 @@ Namespace: microsoft.graph
 
 A team in Microsoft Teams is a collection of [channel](channel.md) objects. A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
-Every team is associated with a [group](../resources/group.md). The group has the same ID as the team - for example, `/groups/{id}/team` is the same as `/teams/{id}`. For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).
+Every team is associated with a [Microsoft 365 group](../resources/group.md). The group has the same ID as the team - for example, `/groups/{id}/team` is the same as `/teams/{id}`. For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Create team](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Create a team from scratch. |
-|[Create team from group](../api/team-put-teams.md) | [team](team.md) | Create a new team, or add a team to an existing group.|
+|[Create team from group](../api/team-put-teams.md) | [team](team.md) | Create a new team, or add a team to an existing Microsoft 365 group.|
 |[Get team](../api/team-get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
 |[Update team](../api/team-update.md) | [team](team.md) |Update the properties of the specified team. |
 |[Delete team](../api/group-delete.md) | None |Delete the team and its associated group. |
-|[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the conversationMembers from the members navigation property.|
-|[Add members](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member.|
-|[Remove members](../api/team-delete-members.md)|None|Delete a [conversationMember](../resources/conversationmember.md) object.|
-|[Change member's role](../api/conversationmember-update.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
+|[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of members in the team.|
+|[Add member](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member to the team.|
+|[Add members in bulk](../api/conversationmembers-add.md)|[actionResultPart](../resources/actionresultpart.md) collection|Add multiple members to the team in a single request.|
+|[Get member](../api/team-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in the team.|
+|[Update member's role](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
+|[Remove member](../api/team-delete-members.md)|None|Remove an existing member from the team.|
 |[Archive team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
-|[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
+|[List associated teams](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedteaminfo.md) collection | Get the list of [associatedTeamInfo](associatedteaminfo.md) objects in Microsoft Teams that a [user](user.md) is associated with. |
+|[List all teams in an organization](../api/teams-list.md) | [team](team.md) collection | List all teams in an organization. |
+|[Get team photo](../api/profilephoto-get.md) | Binary data | Get the photo (picture) for a team. |
+|[Complete migration](../api/team-completemigration.md)|[team](team.md)| Removes migration mode from the team and makes the team available to users to post and read messages.|
+|[List all channels](../api/team-list-allchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) either in this **team** or shared with this **team** (incoming channels).|
+|[List channels](../api/channel-list.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) in a **team**.|
+|[List incoming channels](../api/team-list-incomingchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) shared with this **team**.|
+|[Remove incoming channel](../api/team-delete-incomingchannels.md) | None| Remove an incoming [channel](../resources/channel.md) (a **channel** shared with a **team**) from a [team](../resources/team.md).|
+|[List apps installed in team](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a team.|
+|[Add app to team](../api/team-post-installedapps.md) |None | Add (install) an app to a team.|
+|[Get app installed in team](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get the specified app installed in a team.|
+|[Upgrade app installed in team](../api/team-teamsappinstallation-upgrade.md) | None | Upgrade the app installed in a team to the latest version.|
+|[Remove app from team](../api/team-delete-installedapps.md) | None | Remove (uninstall) an app from a team.|
+|[List permission grants](../api/team-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted to apps to access the team.|
 
 ## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|displayName|string| The name of the team. |
-|description|string| An optional description for the team. |
+| id | string | The unique identifier of the team. The group has the same ID as the team. This property is read-only, and is inherited from the base entity type. |
+|classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
 |classification|string| An optional label. Typically describes the data or business sensitivity of the team. Must match one of a pre-configured set in the tenant's directory. |
-|specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates whether the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
-|visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of the group and team. Defaults to Public. |
+|createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
+|description|string| An optional description for the team. Maximum length: 1024 characters. |
+|discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |Settings to configure team discoverability by others.|
+|displayName|string| The name of the team. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
 |internalId | string | A unique ID for the team that has been used in a few places such as the audit log/[Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Boolean|Whether this team is in read-only mode. |
+|isMembershipLimitedToOwners|Boolean|If set to `true`, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.|
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
-|discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |Settings to configure team discoverability by others.|
+|specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates whether the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
+|summary|[teamSummary](teamsummary.md)| Contains summary information about the team, including number of owners, members, and guests. |
+|tenantId |string | The ID of the Azure Active Directory tenant. |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of the group and team. Defaults to Public. |
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
-|classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
-|isMembershipLimitedToOwners|Boolean|If set to `true`, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.|
-|createdDateTime|dateTimeOffset|Read only. Timestamp at which the team was created.|
 
 ### Instance attributes
 
@@ -63,23 +81,28 @@ Instance attributes are properties with special behaviors. These properties are 
 
 | Property name| Type   | Description
 |:-----------------------|:-------|:-------------------------|
-|@microsoft.graph.teamCreationMode|string|Indicates the team is in migration state and is currently being used for migration purposes. It accepts one value: `migration`.|
+|@microsoft.graph.teamCreationMode|string|Indicates that the team is in migration state and is currently being used for migration purposes. It accepts one value: `migration`. **Note**: In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.|
 
-For a POST request example, see [Request(create team in migration state)](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state).
+For a POST request example, see [Request (create team in migration state)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## Relationships
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
+|allChannels|[channel](channel.md) collection|List of channels either hosted in or shared with the team (incoming channels).|
+|channels|[channel](channel.md) collection|The collection of channels and messages associated with the team.|
+|incomingChannels|[channel](channel.md) collection|List of [channels](../resources/channel.md) shared with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|
 |owners|[user](user.md)| The list of this team's owners. Currently, when creating a team using application permissions, exactly one owner must be specified. When using user delegated permissions, no owner can be specified (the current user is the owner). Owner must be specified as an object ID (GUID), not a UPN. |
-|operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 
+|operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |
 |photo|[profilePhoto](../resources/profilephoto.md)|The team photo.|
-|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. | 
+|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. |
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](/MicrosoftTeams/get-started-with-teams-templates). |
+| templateDefinition | [teamtemplatedefinition](teamtemplatedefinition.md)| Generic representation of a team template definition for a team with a specific structure and configuration.|
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps to access the team.|
+|tags|[teamworkTag](../resources/teamworktag.md) collection|The tags associated with the team.|
 
 ## JSON representation
 
@@ -95,22 +118,24 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
+  "classification": "String",
+  "createdDateTime": "DateTimeOffset",
+  "description": "String",
+  "discoverySettings": {"@odata.type": "microsoft.graph.teamDiscoverySettings"},
+  "displayName": "String",
+  "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
+  "internalId": "String",
+  "isArchived": "Boolean",
+  "isMembershipLimitedToOwners": "Boolean",
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
-  "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
-  "discoverySettings": {"@odata.type": "microsoft.graph.teamDiscoverySettings"},
-  "internalId": "string",
-  "isArchived": false,
-  "webUrl": "string (URL)",
-  "displayName": "string",
-  "description": "string",
-  "classification": "string",
-  "specialization": "string",
-  "visibility": "string",
-  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
-  "isMembershipLimitedToOwners":"boolean",
-  "createdDateTime": "string (timestamp)"
+  "specialization": "String",
+  "summary": {"@odata.type": "microsoft.graph.teamSummary"},
+  "tenantId": "String",
+  "visibility": "String",
+  "webUrl": "String (URL)"
 }
 ```
 

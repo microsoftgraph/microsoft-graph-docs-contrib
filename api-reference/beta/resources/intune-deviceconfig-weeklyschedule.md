@@ -1,7 +1,7 @@
 ---
 title: "weeklySchedule enum type"
 description: "Possible values for a weekly schedule."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -30,9 +30,3 @@ Possible values for a weekly schedule.
 |friday|7|Friday.|
 |saturday|8|Saturday.|
 |noScheduledScan|9|No Scheduled Scan|
-
-
-
-
-
-

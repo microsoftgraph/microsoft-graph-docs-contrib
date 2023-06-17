@@ -3,9 +3,9 @@ author: kevklam
 description: "The geolocationColumn on a columnDefinition resource indicates that the column holds a geolocation."
 ms.date: 09/10/2018
 title: GeolocationColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
 # geolocationColumn resource type
 

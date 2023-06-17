@@ -1,7 +1,7 @@
 ---
 title: "windowsHealthMonitoringConfiguration resource type"
 description: "Windows device health monitoring configuration"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -44,7 +44,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |allowDeviceHealthMonitoring|[enablement](../resources/intune-shared-enablement.md)|Enables device health monitoring on the device. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Specifies set of events collected from the device where health monitoring is enabled. Possible values are: `undefined`, `healthMonitoring`, `bootPerformance`, `windowsUpdates`.|
+|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Specifies set of events collected from the device where health monitoring is enabled. Possible values are: `undefined`, `healthMonitoring`, `bootPerformance`, `windowsUpdates`, `privilegeManagement`.|
 |configDeviceHealthMonitoringCustomScope|String|Specifies custom set of events collected from the device where health monitoring is enabled|
 
 ## Relationships
@@ -105,9 +105,3 @@ Here is a JSON representation of the resource.
   "configDeviceHealthMonitoringCustomScope": "String"
 }
 ```
-
-
-
-
-
-

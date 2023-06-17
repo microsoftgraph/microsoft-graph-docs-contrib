@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workbookChartSeries = new WorkbookChartSeries
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new WorkbookChartSeries
 {
-	Name = "name-value"
+	Name = "name-value",
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Series.PostAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Series
-	.Request()
-	.AddAsync(workbookChartSeries);
 
 ```

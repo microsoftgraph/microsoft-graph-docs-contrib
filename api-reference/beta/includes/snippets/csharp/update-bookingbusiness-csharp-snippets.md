@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var bookingBusiness = new BookingBusiness
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new BookingBusiness
 {
 	Email = "admin@fabrikam.com",
 	SchedulingPolicy = new BookingSchedulingPolicy
 	{
-		TimeSlotInterval = new Duration("PT60M"),
-		MinimumLeadTime = new Duration("P1D"),
-		MaximumAdvance = new Duration("P30D"),
+		TimeSlotInterval = TimeSpan.Parse("PT60M"),
+		MinimumLeadTime = TimeSpan.Parse("P1D"),
+		MaximumAdvance = TimeSpan.Parse("P30D"),
 		SendConfirmationsToOwner = true,
-		AllowStaffSelection = true
-	}
+		AllowStaffSelection = true,
+	},
 };
+var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].PatchAsync(requestBody);
 
-await graphClient.BookingBusinesses["fabrikam@M365B489948.onmicrosoft.com"]
-	.Request()
-	.UpdateAsync(bookingBusiness);
 
 ```

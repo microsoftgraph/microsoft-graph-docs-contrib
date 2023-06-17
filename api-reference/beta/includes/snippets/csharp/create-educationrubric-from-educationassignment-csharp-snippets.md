@@ -4,18 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var educationRubric = new EducationRubric
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.ReferenceUpdate
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.id", "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}"}
-	}
+	OdataId = "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}",
 };
+await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Rubric.Ref.PutAsync(requestBody);
 
-await graphClient.Education.Classes["{id}"].Assignments["{id}"].Rubric.Reference
-	.Request()
-	.PutAsync(educationRubric);
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Update windowsWifiEnterpriseEAPConfiguration"
 description: "Update the properties of a windowsWifiEnterpriseEAPConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -76,13 +76,14 @@ The following table shows the properties that are required when you create the [
 |forceFIPSCompliance|Boolean|Specify whether to force FIPS compliance. Inherited from [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |networkSingleSignOn|[networkSingleSignOnType](../resources/intune-deviceconfig-networksinglesignontype.md)|Specify the network single sign on type. Possible values are: `disabled`, `prelogon`, `postlogon`.|
 |maximumAuthenticationTimeoutInSeconds|Int32|Specify maximum authentication timeout (in seconds).  Valid range: 1-120|
+|userBasedVirtualLan|Boolean|Specifiy whether to change the virtual LAN used by the device based on the user’s credentials. Cannot be used when NetworkSingleSignOnType is set to ​Disabled.|
 |promptForAdditionalAuthenticationCredentials|Boolean|Specify whether the wifi connection should prompt for additional authentication credentials.|
 |enablePairwiseMasterKeyCaching|Boolean|Specify whether the wifi connection should enable pairwise master key caching.|
 |maximumPairwiseMasterKeyCacheTimeInMinutes|Int32|Specify maximum pairwise master key cache time (in minutes).  Valid range: 5-1440|
 |maximumNumberOfPairwiseMasterKeysInCache|Int32|Specify maximum number of pairwise master keys in cache.  Valid range: 1-255|
 |enablePreAuthentication|Boolean|Specify whether pre-authentication should be enabled.|
 |maximumPreAuthenticationAttempts|Int32|Specify maximum pre-authentication attempts.  Valid range: 1-16|
-|eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|Extensible Authentication Protocol (EAP). Indicates the type of EAP protocol set on the Wi-Fi endpoint (router). Possible values are: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap`, `eapFast`.|
+|eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|Extensible Authentication Protocol (EAP). Indicates the type of EAP protocol set on the Wi-Fi endpoint (router). Possible values are: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap`, `eapFast`, `teap`.|
 |trustedServerCertificateNames|String collection|Specify trusted server certificate names.|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Specify the authentication method. Possible values are: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |innerAuthenticationProtocolForEAPTTLS|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Specify inner authentication protocol for EAP TTLS. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
@@ -90,6 +91,13 @@ The following table shows the properties that are required when you create the [
 |requireCryptographicBinding|Boolean|Specify whether to enable cryptographic binding when EAP type is selected as PEAP.|
 |performServerValidation|Boolean|Specify whether to enable verification of server's identity by validating the certificate when EAP type is selected as PEAP.|
 |disableUserPromptForServerValidation|Boolean|Specify whether to prevent the user from being prompted to authorize new servers for trusted certification authorities when EAP type is selected as PEAP.|
+|authenticationPeriodInSeconds|Int32|Specify the number of seconds for the client to wait after an authentication attempt before failing. Valid range 1-3600.|
+|authenticationRetryDelayPeriodInSeconds|Int32|Specify the number of seconds between a failed authentication and the next authentication attempt. Valid range 1-3600.|
+|eapolStartPeriodInSeconds|Int32|Specify the number of seconds to wait before sending an EAPOL (Extensible Authentication Protocol over LAN) Start message. Valid range 1-3600.|
+|maximumEAPOLStartMessages|Int32|Specifiy the maximum number of EAPOL (Extensible Authentication Protocol over LAN) Start messages to be sent before returning failure. Valid range 1-100.|
+|maximumAuthenticationFailures|Int32|Specify the maximum authentication failures allowed for a set of credentials. Valid range 1-100.|
+|cacheCredentials|Boolean|Specify whether to cache user credentials on the device so that users don’t need to keep entering them each time they connect.|
+|authenticationType|[wifiAuthenticationType](../resources/intune-deviceconfig-wifiauthenticationtype.md)|Specify whether to authenticate the user, the device, either, or to use guest authentication (none). If you’re using certificate authentication, make sure the certificate type matches the authentication type. Possible values are: `none`, `user`, `machine`, `machineOrUser`, `guest`.|
 
 
 
@@ -103,7 +111,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2402
+Content-length: 2695
 
 {
   "@odata.type": "#microsoft.graph.windowsWifiEnterpriseEAPConfiguration",
@@ -150,6 +158,7 @@ Content-length: 2402
   "forceFIPSCompliance": true,
   "networkSingleSignOn": "prelogon",
   "maximumAuthenticationTimeoutInSeconds": 5,
+  "userBasedVirtualLan": true,
   "promptForAdditionalAuthenticationCredentials": true,
   "enablePairwiseMasterKeyCaching": true,
   "maximumPairwiseMasterKeyCacheTimeInMinutes": 10,
@@ -165,7 +174,14 @@ Content-length: 2402
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
   "requireCryptographicBinding": true,
   "performServerValidation": true,
-  "disableUserPromptForServerValidation": true
+  "disableUserPromptForServerValidation": true,
+  "authenticationPeriodInSeconds": 13,
+  "authenticationRetryDelayPeriodInSeconds": 7,
+  "eapolStartPeriodInSeconds": 9,
+  "maximumEAPOLStartMessages": 9,
+  "maximumAuthenticationFailures": 13,
+  "cacheCredentials": true,
+  "authenticationType": "user"
 }
 ```
 
@@ -174,7 +190,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2574
+Content-Length: 2867
 
 {
   "@odata.type": "#microsoft.graph.windowsWifiEnterpriseEAPConfiguration",
@@ -224,6 +240,7 @@ Content-Length: 2574
   "forceFIPSCompliance": true,
   "networkSingleSignOn": "prelogon",
   "maximumAuthenticationTimeoutInSeconds": 5,
+  "userBasedVirtualLan": true,
   "promptForAdditionalAuthenticationCredentials": true,
   "enablePairwiseMasterKeyCaching": true,
   "maximumPairwiseMasterKeyCacheTimeInMinutes": 10,
@@ -239,12 +256,13 @@ Content-Length: 2574
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
   "requireCryptographicBinding": true,
   "performServerValidation": true,
-  "disableUserPromptForServerValidation": true
+  "disableUserPromptForServerValidation": true,
+  "authenticationPeriodInSeconds": 13,
+  "authenticationRetryDelayPeriodInSeconds": 7,
+  "eapolStartPeriodInSeconds": 9,
+  "maximumEAPOLStartMessages": 9,
+  "maximumAuthenticationFailures": 13,
+  "cacheCredentials": true,
+  "authenticationType": "user"
 }
 ```
-
-
-
-
-
-

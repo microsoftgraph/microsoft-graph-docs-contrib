@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var outlookCategory = new OutlookCategory
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new OutlookCategory
 {
-	Color = CategoryColor.Preset15
+	Color = CategoryColor.Preset15,
 };
+var result = await graphClient.Me.Outlook.MasterCategories["{outlookCategory-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Outlook.MasterCategories["bac262b7-485d-4739-b436-e31467d64fac"]
-	.Request()
-	.UpdateAsync(outlookCategory);
 
 ```

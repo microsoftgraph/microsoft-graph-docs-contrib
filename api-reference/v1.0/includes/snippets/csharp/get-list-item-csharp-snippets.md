@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var queryOptions = new List<QueryOption>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"].GetAsync((requestConfiguration) =>
 {
-	new QueryOption("expand", "fields")
-};
+	requestConfiguration.QueryParameters.Expand = new string []{ "fields" };
+});
 
-var listItem = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{item-id}"]
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

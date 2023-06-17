@@ -1,8 +1,8 @@
 ---
-title: "Open the OneNote client"
-description: "You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook. "
+title: "Open the OneNote client by using the OneNote API"
+description: "Use the links property of a page or notebook to open a OneNote application to a particular page or notebook. Includes iOS and Android examples."
 author: "Jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ---
 
 # Open the OneNote client
@@ -24,32 +24,32 @@ The **links** property is a JSON object that contains two URLs. The URLs will op
 }
 ```
 
-- **oneNoteClientUrl** 
+- **oneNoteClientUrl**
 
   - Opens the OneNote client if it is already installed on the device. This URL includes the *onenote* prefix.
   - Opens the language-specific version if one is installed on the device. Otherwise, uses the platform language setting.
 
-- **oneNoteWebUrl** 
+- **oneNoteWebUrl**
 
-  - Opens OneNote on the web if the default browser on the device supports it. 
+  - Opens OneNote on the web if the default browser on the device supports it.
   - Uses the browser language setting.
 
 
 The OneNote API returns the **links** property in the HTTP response for the following operations:
 
-- Create a page by sending a [`POST pages`](/graph/api/section-post-pages?view=graph-rest-1.0) request.
+- Create a page by sending a [`POST pages`](/graph/api/section-post-pages) request.
 
-- Create a notebook by sending a [`POST notebooks`](/graph/api/onenote-post-notebooks?view=graph-rest-1.0) request.
+- Create a notebook by sending a [`POST notebooks`](/graph/api/onenote-post-notebooks) request.
 
-- Get page metadata by sending a [`GET pages`](/graph/api/page-get?view=graph-rest-1.0) or [`GET pages/{id}`](/graph/api/page-get?view=graph-rest-1.0) request.
+- Get page metadata by sending a [`GET pages`](/graph/api/page-get) or [`GET pages/{id}`](/graph/api/page-get) request.
 
-- Get notebook metadata by sending a [`GET notebooks`](/graph/api/notebook-get?view=graph-rest-1.0) or [`GET notebooks/{id}`](/graph/api/notebook-get?view=graph-rest-1.0) request.
+- Get notebook metadata by sending a [`GET notebooks`](/graph/api/notebook-get) or [`GET notebooks/{id}`](/graph/api/notebook-get) request.
 
 The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.
 
 ## iOS example
 
-The following example gets the OneNote client URLs from the JSON response. It uses the AFNetworking library (https://afnetworking.com/) to extract the two URLs. In the example, `created` is a pointer to the **ONSCPSStandardResponse** object used to store the response values, and `responseObject` holds the parsed JSON.
+The following example gets the OneNote client URLs from the JSON response. It uses the AFNetworking library (`https://afnetworking.com/`) to extract the two URLs. In the example, `created` is a pointer to the **ONSCPSStandardResponse** object used to store the response values, and `responseObject` holds the parsed JSON.
 
 ```objc
     /* Import the JSON library */

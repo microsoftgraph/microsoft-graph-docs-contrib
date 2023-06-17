@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var groupLifecyclePolicies = await graphClient.Groups["{id}"].GroupLifecyclePolicies
-	.Request()
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Groups["{group-id}"].GroupLifecyclePolicies.GetAsync();
+
 
 ```

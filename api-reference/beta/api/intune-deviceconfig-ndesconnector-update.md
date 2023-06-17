@@ -1,7 +1,7 @@
 ---
 title: "Update ndesConnector"
 description: "Update the properties of a ndesConnector object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -52,6 +52,10 @@ The following table shows the properties that are required when you create the [
 |lastConnectionDateTime|DateTimeOffset|Last connection time for the Ndes Connector|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes Connector Status. Possible values are: `none`, `active`, `inactive`.|
 |displayName|String|The friendly name of the Ndes Connector.|
+|machineName|String|Name of the machine running on-prem certificate connector service.|
+|enrolledDateTime|DateTimeOffset|Timestamp when on-prem certificate connector was enrolled in Intune.|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
+|connectorVersion|String|The build version of the Ndes Connector.|
 
 
 
@@ -65,13 +69,19 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/ndesConnectors/{ndesConnectorId}
 Content-type: application/json
-Content-length: 183
+Content-length: 394
 
 {
   "@odata.type": "#microsoft.graph.ndesConnector",
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
   "state": "active",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "machineName": "Machine Name value",
+  "enrolledDateTime": "2016-12-31T23:59:43.797191-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "connectorVersion": "Connector Version value"
 }
 ```
 
@@ -80,19 +90,19 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 232
+Content-Length: 443
 
 {
   "@odata.type": "#microsoft.graph.ndesConnector",
   "id": "e71fa706-a706-e71f-06a7-1fe706a71fe7",
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
   "state": "active",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "machineName": "Machine Name value",
+  "enrolledDateTime": "2016-12-31T23:59:43.797191-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "connectorVersion": "Connector Version value"
 }
 ```
-
-
-
-
-
-

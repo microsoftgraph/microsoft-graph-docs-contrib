@@ -2,7 +2,7 @@
 title: "insightIdentity"
 description: "Complex type containing properties of Shared items."
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
@@ -34,7 +34,7 @@ Here is a JSON representation of the resource
 
 | Property              | Type          | Description  |
 | -------------         |-----------    | -------------|
+| address      	      | String	    | The email address of the user who shared the item.  |
 | displayName      	| String	      | The display name of the user who shared the item. |
 | id     		  | String        | The id of the user who shared the item.     |
-| address      	      | String	    | The email address of the user who shared the item.  |
 

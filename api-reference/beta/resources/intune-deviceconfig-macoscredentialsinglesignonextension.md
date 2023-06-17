@@ -1,7 +1,7 @@
 ---
 title: "macOSCredentialSingleSignOnExtension resource type"
 description: "Represents a Credential-type Single Sign-On extension profile for macOS devices."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -57,9 +57,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

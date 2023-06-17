@@ -1,7 +1,7 @@
 ---
 title: "Create windowsPhoneXAP"
 description: "Create a new windowsPhoneXAP object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Create a new [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -87,7 +87,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1294
+Content-length: 1386
 
 {
   "@odata.type": "#microsoft.graph.windowsPhoneXAP",
@@ -127,7 +127,11 @@ Content-length: 1294
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true,
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "productIdentifier": "Product Identifier value",
   "identityVersion": "Identity Version value"
@@ -139,7 +143,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1466
+Content-Length: 1558
 
 {
   "@odata.type": "#microsoft.graph.windowsPhoneXAP",
@@ -182,15 +186,13 @@ Content-Length: 1466
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true,
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "productIdentifier": "Product Identifier value",
   "identityVersion": "Identity Version value"
 }
 ```
-
-
-
-
-
-

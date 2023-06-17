@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```csharp
+
+// Code snippets are only available for the latest version. Current version is 5.x
+
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new AppManagementPolicy
+{
+	IsEnabled = false,
+};
+var result = await graphClient.Policies.AppManagementPolicies["{appManagementPolicy-id}"].PatchAsync(requestBody);
+
+
+```

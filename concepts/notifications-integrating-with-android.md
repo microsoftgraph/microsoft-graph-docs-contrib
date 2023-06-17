@@ -1,11 +1,14 @@
 ---
-title: "Integrate your Android app with the client-side SDK for user notifications"
-description: "Integrate your Android app with user notifications client SDK"
-localization_priority: Priority
+title: "Integrate your Android app with the client-side SDK (deprecated)"
+description: "After you register your app and onboard your cross-device experiences, integrate your client app with the client-side SDK for Android apps (deprecated)."
+ms.localizationpriority: high
 ms.prod: "notifications"
 ---
 
-# Integrate your Android app with the client-side SDK for user notifications
+# Integrate your Android app with the client-side SDK for user notifications (deprecated)
+
+> [!IMPORTANT]
+> The Microsoft Graph notifications API is deprecated and stopped returning data in January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs). For more information, see the blog post [Retiring Microsoft Graph notifications API (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 After you [register your app](notifications-integration-app-registration.md) in the Azure Portal and onboard your [cross-device experiences](notifications-integration-cross-device-experiences-onboarding.md) in the Partner Dev Center, the next step is to integrate your client app with the client-side SDK for Android apps.  
 
@@ -88,7 +91,7 @@ dependencies {
 }
 ```
 
-If you want to use ProGuard in your app, add the ProGuard Rules for these new APIs. Create a file called *proguard-rules.txt* in the *App* folder of your project, and paste in the contents of [ProGuard_Rules_for_Android_Rome_SDK.txt](https://github.com/Microsoft/project-rome/blob/master/Android/ProGuard_Rules_for_Android_Rome_SDK.txt).
+If you want to use ProGuard in your app, add the ProGuard Rules for these new APIs. Create a file called *proguard-rules.txt* in the *App* folder of your project, and paste in the contents of `ProGuard_Rules_for_Android_Rome_SDK.txt`.
 In your project's *AndroidManifest.xml* file, add the following permissions inside the `manifest` element (if they are not already present). This gives your app permission to connect to the Internet and to enable Bluetooth discovery on your device.
 Note that the Bluetooth-related permissions are only necessary for using Bluetooth discovery; they are not needed for the other features in the Connected Devices Platform. Additionally, `ACCESS_COARSE_LOCATION` is only required on Android SDKs 21 and later. On Android SDKs 23 and later, you must also prompt the user to grant location access at runtime.
 
@@ -111,7 +114,7 @@ import com.microsoft.connecteddevices.userdata.usernotifications;
 
 The client-side SDK is built on top of an infrastructure called Connected Device Platform. Before any feature can be used, the platform must be initialized within your app. The initialization steps should occur in your main class **OnCreate** method, because they are required before the notification scenarios can take place.
 
-You must construct and initialize the platform by instantiating the [**ConnectedDevicesPlatform**](/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest) class. Before doing that, make sure to hook up event handlers, because after the platform is started, the events might begin to fire. 
+You must construct and initialize the platform by instantiating the [**ConnectedDevicesPlatform**](/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest&preserve-view=true) class. Before doing that, make sure to hook up event handlers, because after the platform is started, the events might begin to fire. 
 
 ```java
 ConnectedDevicesPlatform platform = new ConnectedDevicesPlatform(context);

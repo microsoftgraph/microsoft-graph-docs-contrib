@@ -1,10 +1,10 @@
 ---
 title: "command resource type"
-description: ""
-localization_priority: Normal
+description: "Set of commands sent to a device."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "finsharp"
+ms.prod: "directory-management"
+author: "myra-ramdenbourg"
 ---
 
 # command resource type
@@ -12,8 +12,7 @@ author: "finsharp"
 Namespace: microsoft.graph
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None
 
 ## Relationships
 None

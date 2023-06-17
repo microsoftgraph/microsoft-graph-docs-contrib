@@ -1,13 +1,13 @@
 ---
-title: "Microsoft Graph REST API v1.0 reference"
-description: "Welcome to Microsoft Graph REST API reference for the v1.0 endpoint."
-localization_priority: Priority
+title: "Microsoft Graph REST API v1.0 endpoint reference"
+description: "Documentation for the Microsoft Graph REST API v1.0 endpoint, which includes APIs in general availability (GA) status. Features common use cases in v1.0."
+ms.localizationpriority: high
 author: "angelgolfer-ms"
 ms.prod: "non-product-specific"
 doc_type: conceptualPageType
 ---
 
-# Microsoft Graph REST API v1.0 reference
+# Microsoft Graph REST API v1.0 endpoint reference
 
 Welcome to Microsoft Graph REST API reference for the v1.0 endpoint.
 
@@ -41,7 +41,7 @@ A number of these services are designed to enable rich scenarios around a [user]
 ## Other API versions
 
 There are currently 2 versions of Microsoft Graph REST APIs - v1.0 and beta.
-If you're interested in new or enhanced APIs that are still in preview status, see [Microsoft Graph beta endpoint reference](/graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta). Be aware that APIs in preview status are subject to change, and may break existing scenarios without notice. Don't take a production dependency on APIs in the beta endpoint.
+If you're interested in new or enhanced APIs that are still in preview status, see [Microsoft Graph beta endpoint reference](/graph/api/overview?view=graph-rest-beta&preserve-view=true). Be aware that APIs in preview status are subject to change, and may break existing scenarios without notice. Don't take a production dependency on APIs in the beta endpoint.
 
 Find more information about [versioning and support](/graph/versioning-and-support).
 
@@ -60,6 +60,6 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 
 ## Connect with us
 
-Are there additional APIs or features you'd like to see in Microsoft Graph? Post new feature requests on [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632).
+Are there additional APIs or features you'd like to see in Microsoft Graph? Post new feature requests on the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
-Have feedback for existing Microsoft Graph APIs? Connect with us on [Github](https://github.com/microsoftgraph/microsoft-graph-docs/issues).
+Have feedback for existing Microsoft Graph APIs? Connect with us on [GitHub](https://github.com/microsoftgraph/microsoft-graph-docs/issues).

@@ -2,7 +2,7 @@
 title: "sharedInsight resource type"
 description: "An insight representing files shared with or by a specific user. The following shared files are supported:"
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
@@ -30,8 +30,8 @@ An insight representing files shared with or by a specific user. The following s
 | -------------         |---------------	 		| -------------|
 | id      				| String	 				| Unique identifier of the relationship. Read only. 	   |
 | lastShared			| [sharingDetail](insights-sharingdetail.md)				| Details about the shared item. Read only. 	   |
-| resourceVisualization	| [resourceVisualization](insights-resourcevisualization.md)				| Properties that you can use to visualize the document in your experience. Read-only	   |
 | resourceReference		| [resourceReference](insights-resourcereference.md)                      | Reference properties of the shared document, such as the url and type of the document. Read-only	   |
+| resourceVisualization	| [resourceVisualization](insights-resourcevisualization.md)				| Properties that you can use to visualize the document in your experience. Read-only	   |
 
 ## Relationships
 

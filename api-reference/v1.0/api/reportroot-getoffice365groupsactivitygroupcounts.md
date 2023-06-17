@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getOffice365GroupsActivityGroupCounts"
 description: "Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -78,7 +78,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365groupsactivitygroupcounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityGroupCounts(period='D7')
 ```
 

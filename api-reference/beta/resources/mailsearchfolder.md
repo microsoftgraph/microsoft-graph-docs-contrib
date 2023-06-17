@@ -1,8 +1,8 @@
 ---
 title: "mailSearchFolder resource type"
 description: "A mailSearchFolder is a virtual folder in the user's mailbox that contains all the email items matching specified search criteria. mailSearchFolder inherits from mailFolder."
-localization_priority: Normal
-author: "svpsiva"
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var sourceData = "sourceData-value";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var seriesBy = "seriesBy-value";
+var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Worksheets.Item.Charts.Item.SetData.SetDataPostRequestBody
+{
+	SourceData = "sourceData-value",
+	SeriesBy = "seriesBy-value",
+};
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].SetData.PostAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"]
-	.SetData(seriesBy,sourceData)
-	.Request()
-	.PostAsync();
 
 ```

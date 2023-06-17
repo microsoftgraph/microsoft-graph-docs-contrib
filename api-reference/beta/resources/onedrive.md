@@ -1,7 +1,7 @@
 ---
 title: "Working with files in Microsoft Graph"
 description: "You can use Microsoft Graph to create an app that connects with files across OneDrive, OneDrive for Business, and SharePoint document libraries. With Microsoft Graph, you can build a variety of experiences with files stored in Microsoft 365, from simply storing user documents to complex file sharing scenarios."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: conceptualPageType
 author: "JeremyKelley"
@@ -50,7 +50,7 @@ Most of the interaction with files occurs through interaction with **DriveItem**
 **Drive** and **DriveItem** resources expose data in three different ways:
 
 * _Properties_ (like **id** and **name**) expose simple values (strings, numbers, Booleans).
-* _Facets_ (like **file** and **photo**) expose complex values. The presence of **file** or **folder** facets indicates behaviors and properties of a **DriveItem**.
+* _Facets_ (like **file** and **image**) expose complex values. The presence of **file** or **folder** facets indicates behaviors and properties of a **DriveItem**.
 * _References_ (like **children** and **thumbnails**) point to collections of other resources.
 
 ## Commonly accessed resources
@@ -79,6 +79,8 @@ This table provides an example of different ways to use the colon character to a
 | `/me/drive/items/{item-id}:/path/to/file` | Access a **DriveItem** by path relative to another item (a **DriveItem** with a **folder** facet). |
 | `/me/drive/root:/path/to/folder:/children` | List the children of a **DriveItem** by path relative to the root of the user's OneDrive. |
 | `/me/drive/items/{item-id}:/path/to/folder:/children` | List the children of a **DriveItem** by path relative to another item. |
+
+For more information, see [addressing driveItems](/graph/concepts/onedrive-addressing-driveitems).
 
 ## Drive resource
 

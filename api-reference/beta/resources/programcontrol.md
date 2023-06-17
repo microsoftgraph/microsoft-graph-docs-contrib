@@ -1,17 +1,19 @@
 ---
-title: "programControl resource type"
+title: "programControl resource type (deprecated)"
 description: "In the Azure AD access reviews feature, the program control object represents a control, linking an access review to a program."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# programControl resource type
+# programControl resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 In the Azure AD [access reviews](accessreviews-root.md) feature, the program control object represents a control, linking an access review to a program.
 

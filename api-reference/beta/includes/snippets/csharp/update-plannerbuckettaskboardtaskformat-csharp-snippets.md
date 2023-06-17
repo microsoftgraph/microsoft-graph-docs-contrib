@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var plannerBucketTaskBoardTaskFormat = new PlannerBucketTaskBoardTaskFormat
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new PlannerBucketTaskBoardTaskFormat
 {
-	OrderHint = "A6673H Ejkl!"
+	OrderHint = "A6673H Ejkl!",
 };
+var result = await graphClient.Planner.Tasks["{plannerTask-id}"].BucketTaskBoardFormat.PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "return=representation");
+	requestConfiguration.Headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");
+});
 
-await graphClient.Planner.Tasks["hsOf2dhOJkqyYYZEtdzDe2QAIUCR"].BucketTaskBoardFormat
-	.Request()
-	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
-	.UpdateAsync(plannerBucketTaskBoardTaskFormat);
 
 ```

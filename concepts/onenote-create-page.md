@@ -1,8 +1,8 @@
 ---
-title: "Create OneNote pages"
-description: " Enterprise notebooks on Microsoft 365"
+title: "Create OneNote pages by using the OneNote API"
+description: "Create a OneNote page by sending a POST request to a pages endpoint. Then send the HTML that defines the page in the message body."
 author: "jewan-microsoft"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "onenote"
 ---
 
@@ -14,14 +14,10 @@ To create a OneNote page, you send a POST request to a *pages* endpoint. For exa
 
 `POST ../notes/sections/{id}/pages`
 
-<br/>
-
 Send the HTML that defines the page in the message body. If the request is successful, Microsoft Graph returns a 201 HTTP status code.
 
-
-> **Note:**
+> [!NOTE]
 > To learn about the POST requests you can send to create sections, section groups, and notebooks, see our [interactive REST reference](https://dev.onenote.com/docs).
-
 
 <a name="request-uri"></a>
 
@@ -31,30 +27,32 @@ To construct the POST request URI, start with the service root URL:
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
-<br/>
-
 Then append the *pages* endpoint:
 
-- **Create a page in any section (specified by section name)**<br/><br/>`.../pages?sectionName=DefaultSection`
+- **Create a page in any section (specified by section name)**
 
-- **Create a page in any section (specified by ID)**<br/><br/>`.../sections/{section-id}/pages` 
+  `.../pages?sectionName=DefaultSection`
 
-If you're creating pages in the user's personal notebook, Microsoft Graph also provides endpoints you can use to create pages in the default notebook:
+- **Create a page in any section (specified by ID)**
 
-- **Create a page in the default section of the default notebook**<br/><br/>`../pages` 
+  `.../sections/{section-id}/pages`
 
+If you're creating pages in the user's personal notebook, Microsoft Graph also provides endpoints that you can use to create pages in the default notebook:
 
+- **Create a page in the default section of the default notebook**
+
+  `../pages`
 
 Your full request URI will look like one of these examples:
 
 - `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`
 - `https://graph.microsoft.com/v1.0/me/onenote/pages?sectionName=Homework`
 
-Learn more about the [service root URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).
+Learn more about the [service root URL](/graph/api/resources/onenote-api-overview#root-url).
 
 <a name="post-pages-section-name"></a>
 
-### Using the *sectionName* URL parameter
+### Use the *sectionName* URL parameter
 
 The following rules apply when using the *sectionName* parameter to create a page in a named section in the default notebook:
 
@@ -70,17 +68,16 @@ The following rules apply when using the *sectionName* parameter to create a pag
 
 Because sections are created if they don't exist, it's safe to use this call with every page your app creates. Users might rename sections, but the API will create a new section with the section name that you supply. 
 
-> **Note:**
-> The links returned by the API for pages in a renamed section will still reach those older pages. 
-
+> [!NOTE]
+> The links returned by the API for pages in a renamed section will still reach those older pages.
 
 <a name="message-body"></a>
 
 ## Construct the message body
 
-The HTML that defines page content is called *input HTML*. Input HTML supports a [subset of standard HTML and CSS](#supported-html-and-css-for-onenote-pages), with the addition of custom attributes. (Custom attributes, like **data-id** and **data-render-src**, are described in [Input and output HTML](onenote-input-output-html.md).) 
+The HTML that defines page content is called *input HTML*. Input HTML supports a [subset of standard HTML and CSS](#supported-html-and-css-for-onenote-pages), with the addition of custom attributes. (Custom attributes, like **data-id** and **data-render-src**, are described in [Input and output HTML](onenote-input-output-html.md).)
 
-Send the input HTML in the message body of the POST request. You can send the input HTML directly in the message body using the  `application/xhtml+xml` or `text/html` content type, or you can send it in the "Presentation" part of a multipart request. 
+Send the input HTML in the message body of the POST request. You can send the input HTML directly in the message body using the  `application/xhtml+xml` or `text/html` content type, or you can send it in the "Presentation" part of a multipart request.
 
 The following example sends the input HTML directly in the message body.
 
@@ -106,9 +103,8 @@ Content-Type: application/xhtml+xml
 
 If you're sending binary data, you must use a [multipart request](#example-request). 
 
-> **Note:**
+> [!NOTE]
 > To simplify programming and consistency in your app, you can use multipart requests to create all pages. It's a good idea to use a library to construct multipart messages. This reduces the risk of creating malformed payloads.
-
 
 <a name="input-html-rules"></a>
 
@@ -126,7 +122,6 @@ When sending input HTML, be aware of these general requirements and limitations:
 
 - Microsoft Graph supports a subset of common HTML attributes and a set of custom attributes, such as the **data-id** attribute used for updating pages. For supported attributes, see [Input and output HTML](onenote-input-output-html.md).
 
-
 <a name="supported-html"></a>
 
 ### Supported HTML and CSS for OneNote pages
@@ -137,17 +132,16 @@ Not all elements, attributes, and properties are supported (in HTML4, XHTML, CSS
 
 The following list shows the basic element types that Microsoft Graph supports:
 
-- `<head>` and `<body>`</p>
-- `<title>` and `<meta>` that set the page title and creation date</p>
-- `<h1>` through `<h6>` for section headings</p>
-- `<p>` for paragraphs</p>
-- `<ul>`, `<ol>`, and `<li>` for lists and list items</p>
-- `<table>`, `<tr>` and `<td>`, including nested tables</p>
-- `<pre>` for preformatted text (preserves white space and line breaks)</p>
-- `<b>` and `<i>` for bold and italic character styles</p>
+- `<head>` and `<body>`
+- `<title>` and `<meta>` that set the page title and creation date
+- `<h1>` through `<h6>` for section headings
+- `<p>` for paragraphs
+- `<ul>`, `<ol>`, and `<li>` for lists and list items
+- `<table>`, `<tr>` and `<td>`, including nested tables
+- `<pre>` for preformatted text (preserves white space and line breaks)
+- `<b>` and `<i>` for bold and italic character styles
 
-Microsoft Graph preserves the semantic content and basic structure of the input HTML when it creates pages, but it converts the input HTML to use the supported set of HTML and CSS. Features that don't exist in OneNote have nothing to be translated to, so they might not be recognized in the source HTML. 
-
+Microsoft Graph preserves the semantic content and basic structure of the input HTML when it creates pages, but it converts the input HTML to use the supported set of HTML and CSS. Features that don't exist in OneNote have nothing to be translated to, so they might not be recognized in the source HTML.
 
 <a name="example"></a>
 
@@ -236,7 +230,7 @@ The Microsoft Graph service root URL uses the following format for all calls to 
 
 The `version` segment in the URL represents the version of Microsoft Graph that you want to use. Use `v1.0` for stable production code. Use `beta` to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code. 
 
-Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use [Microsoft Graph](https://graph.microsoft.com/v1.0/users) to get user IDs. 
+Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use Microsoft Graph to get user IDs. 
 
 <a name="limitations"></a>
 
@@ -261,9 +255,6 @@ Choose from:
 
 For more information about permission scopes and how they work, see [Microsoft Graph permissions reference](permissions-reference.md).
 
-
-
-
 <a name="see-also"></a>
 
 ## See also
@@ -274,5 +265,5 @@ For more information about permission scopes and how they work, see [Microsoft G
 - [Use note tags](onenote-note-tags.md)
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote development questions on Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)

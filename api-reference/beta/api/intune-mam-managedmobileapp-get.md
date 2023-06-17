@@ -1,7 +1,7 @@
 ---
 title: "Get managedMobileApp"
 description: "Read properties and relationships of the managedMobileApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [managedMobileApp](../resources/intune-mam-managedmobileapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
 GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/apps/{managedMobileAppId}
+GET /deviceAppManagement/windowsManagedAppProtections/{windowsManagedAppProtectionId}/apps/{managedMobileAppId}
 GET /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps/{managedMobileAppId}
 GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps/{managedMobileAppId}
 ```
@@ -66,23 +67,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 308
+Content-Length: 309
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.managedMobileApp",
     "mobileAppIdentifier": {
-      "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-      "packageId": "Package Id value"
+      "@odata.type": "microsoft.graph.windowsAppIdentifier",
+      "windowsAppId": "Windows App Id value"
     },
     "id": "0a129715-9715-0a12-1597-120a1597120a",
     "version": "Version value"
   }
 }
 ```
-
-
-
-
-
-

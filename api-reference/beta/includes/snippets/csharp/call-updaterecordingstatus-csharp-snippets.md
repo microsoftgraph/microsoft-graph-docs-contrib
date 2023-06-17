@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var clientContext = "clientContext-value";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var status = RecordingStatus.NotRecording | RecordingStatus.Recording | RecordingStatus.Failed;
+var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.UpdateRecordingStatus.UpdateRecordingStatusPostRequestBody
+{
+	ClientContext = "clientContext-value",
+	Status = RecordingStatus.NotRecording | RecordingStatus.Recording | RecordingStatus.Failed,
+};
+var result = await graphClient.Communications.Calls["{call-id}"].UpdateRecordingStatus.PostAsync(requestBody);
 
-await graphClient.Communications.Calls["{id}"]
-	.UpdateRecordingStatus(status,clientContext)
-	.Request()
-	.PostAsync();
 
 ```

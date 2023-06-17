@@ -1,10 +1,10 @@
 ---
 title: "objectDefinition resource type"
 description: "Describes an object and its attributes."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # objectDefinition resource type
@@ -20,38 +20,11 @@ Describes an object and its attributes. Object definitions are part of [director
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
 |attributes     |[attributeDefinition](synchronization-attributedefinition.md) collection    | Defines attributes of the object. |
-|metadata       |[metadataEntry](synchronization-metadataentry.md) collection   |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
+|metadata       |[objectDefinitionMetadataEntry](synchronization-objectdefinitionmetadataentry.md) collection   |Metadata for the given object.|
 |name           |String     |Name of the object. Must be unique within a directory definition. Not nullable.|
+|supportedApis|String collection|The API that the provisioning service queries to retrieve data for synchronization.|
 
-## JSON representation
-
-The following is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.objectDefinition"
-}-->
-
-```json
-{
-  "attributes": [{"@odata.type": "microsoft.graph.attributeDefinition"}],
-  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
-  "name": "String"
-}
-```
-
-## JSON Example
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.objectDefinition"
-}-->
+### Sample configuration
 
 ```json
 {
@@ -433,6 +406,34 @@ The following is a JSON representation of the resource.
         }
     ],
     "name": "User"
+}
+```
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.objectDefinition"
+}-->
+
+```json
+{
+  "attributes": [
+    {
+      "@odata.type": "microsoft.graph.attributeDefinition"
+    }
+  ],
+  "metadata": [
+    {
+      "@odata.type": "microsoft.graph.objectDefinitionMetadataEntry"
+    }
+  ],
+  "name": "String"
 }
 ```
 

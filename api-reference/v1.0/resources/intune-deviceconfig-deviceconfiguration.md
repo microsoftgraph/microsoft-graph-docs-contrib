@@ -1,7 +1,7 @@
 ---
 title: "deviceConfiguration resource type"
 description: "Device Configuration."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -21,6 +21,7 @@ Device Configuration.
 |[List deviceConfigurations](../api/intune-deviceconfig-deviceconfiguration-list.md)|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) collection|List properties and relationships of the [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) objects.|
 |[Get deviceConfiguration](../api/intune-deviceconfig-deviceconfiguration-get.md)|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|Read properties and relationships of the [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) object.|
 |[assign action](../api/intune-deviceconfig-deviceconfiguration-assign.md)|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) collection|Not yet documented|
+|[getOmaSettingPlainTextValue function](../api/intune-deviceconfig-deviceconfiguration-getomasettingplaintextvalue.md)|String|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -61,12 +62,3 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
-
-
-
-
-
-
-

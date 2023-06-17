@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getYammerDeviceUsageDistributionUserCounts"
 description: "Get the number of users by device type."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -81,7 +81,7 @@ The following is an example of the request.
   "name": "reportroot_getyammerdeviceusagedistributionusercounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageDistributionUserCounts(period='D7')
 ```
 

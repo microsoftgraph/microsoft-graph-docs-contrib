@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var domain = new Domain
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Domain
 {
 	IsDefault = true,
-	SupportedServices = new List<String>()
+	SupportedServices = new List<string>
 	{
 		"Email",
-		"OfficeCommunicationsOnline"
-	}
+		"OfficeCommunicationsOnline",
+	},
 };
+var result = await graphClient.Domains["{domain-id}"].PatchAsync(requestBody);
 
-await graphClient.Domains["contoso.com"]
-	.Request()
-	.UpdateAsync(domain);
 
 ```

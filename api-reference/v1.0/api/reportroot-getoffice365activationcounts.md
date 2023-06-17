@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getOffice365ActivationCounts"
 description: "Get the count of Microsoft 365 activations on desktops and devices."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -72,7 +72,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365activationcounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationCounts
 ```
 

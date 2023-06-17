@@ -4,37 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var conversationThread = new ConversationThread
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ConversationThread
 {
 	Topic = "New Conversation Thread Topic",
-	Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
+	Posts = new List<Post>
 	{
 		new Post
 		{
 			Body = new ItemBody
 			{
 				ContentType = BodyType.Html,
-				Content = "this is body content"
+				Content = "this is body content",
 			},
-			NewParticipants = new List<Recipient>()
+			NewParticipants = new List<Recipient>
 			{
 				new Recipient
 				{
 					EmailAddress = new EmailAddress
 					{
 						Name = "Alex Darrow",
-						Address = "alexd@contoso.com"
-					}
-				}
-			}
-		}
-	}
+						Address = "alexd@contoso.com",
+					},
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Groups["{group-id}"].Threads.PostAsync(requestBody);
 
-await graphClient.Groups["{id}"].Threads
-	.Request()
-	.AddAsync(conversationThread);
 
 ```

@@ -1,0 +1,532 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "authenticationStrengthRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationStrengthRoot** relationship to the [conditionalAccessRoot](https://learn.microsoft.com/graph/api/resources/conditionalAccessRoot?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessRoot"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "authenticationStrengthPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationStrengthPolicies** relationship to the [policyRoot](https://learn.microsoft.com/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationStrengthPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationStrengthPolicy](https://learn.microsoft.com/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "authenticationStrengthPolicy"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationMethodModes",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationMethodModes** enumeration type.",
+          "Target": "authenticationMethodModes"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationStrengthPolicyType",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationStrengthPolicyType** enumeration type.",
+          "Target": "authenticationStrengthPolicyType"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationStrengthRequirements",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationStrengthRequirements** enumeration type.",
+          "Target": "authenticationStrengthRequirements"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "baseAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **baseAuthenticationMethod** enumeration type.",
+          "Target": "baseAuthenticationMethod"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "updateAllowedCombinationsResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateAllowedCombinationsResult](https://learn.microsoft.com/graph/api/resources/updateAllowedCombinationsResult?view=graph-rest-beta) resource.",
+          "Target": "updateAllowedCombinationsResult"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationStrengthUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationStrengthUsage](https://learn.microsoft.com/graph/api/resources/authenticationStrengthUsage?view=graph-rest-beta) resource.",
+          "Target": "authenticationStrengthUsage"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationCombinationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationCombinationConfiguration](https://learn.microsoft.com/graph/api/resources/authenticationCombinationConfiguration?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "authenticationCombinationConfiguration"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethodModeDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationMethodModeDetail](https://learn.microsoft.com/graph/api/resources/authenticationMethodModeDetail?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "authenticationMethodModeDetail"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fido2CombinationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [fido2CombinationConfiguration](https://learn.microsoft.com/graph/api/resources/fido2CombinationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "fido2CombinationConfiguration"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Method",
+          "ChangedApiName": "updateAllowedCombinations",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateAllowedCombinations](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-updateAllowedCombinations?view=graph-rest-beta) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-beta) resource.",
+          "Target": "updateAllowedCombinations"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Method",
+          "ChangedApiName": "findByMethodMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [findByMethodMode](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-findByMethodMode?view=graph-rest-beta) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-beta) resource.",
+          "Target": "findByMethodMode"
+        },
+        {
+          "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+          "ApiChange": "Method",
+          "ChangedApiName": "usage",
+          "ChangeType": "Addition",
+          "Description": "Added the [usage](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-usage?view=graph-rest-beta) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-beta) resource.",
+          "Target": "findByMethodMode"
+        }
+      ],
+      "Id": "1cc8a2c4-49bd-4aa2-ab33-eb82169dc17f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-12T00:00:00.4281584Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Property",
+          "ChangedApiName": "featureSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **featureSettings** property to the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) resource. This property allows you to configure Microsoft Authenticator settings such as number matching and location context, and whether they are enabled for all users or specific users only.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorFeatureSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAuthenticatorFeatureSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource.",
+          "Target": "microsoftAuthenticatorFeatureSettings"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "featureTargetType",
+          "ChangeType": "Addition",
+          "Description": "Added the **featureTargetType** enumeration.",
+          "Target": "featureTargetType"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethodFeatureConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationMethodFeatureConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodFeatureConfiguration?view=graph-rest-beta) resource. Use this resource to configure users that are allowed from using an authentication method.",
+          "Target": "authenticationMethodFeatureConfiguration"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "featureTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [featureTarget](https://learn.microsoft.com/en-us/graph/api/resources/featureTarget?view=graph-rest-beta) resource.",
+          "Target": "featureTarget"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayAppInformationRequiredState",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **displayAppInformationRequiredState** property of the [microsoftAuthenticatorAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta) resource. Use the **displayAppInformationRequiredState** property of the [microsoftAuthenticatorFeatureSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource instead.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Property",
+          "ChangedApiName": "numberMatchingRequiredState",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **numberMatchingRequiredState** property of the [microsoftAuthenticatorAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta) resource. Use the **numberMatchingRequiredState** property of the [microsoftAuthenticatorFeatureSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource instead.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+        }
+      ],
+      "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-01T00:00:00.1897686Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bacd077e-b2ee-4d2b-be5d-b4ca0a6bcfe4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationMethodsPolicyMigrationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationMethodsPolicyMigrationState** enumeration.",
+          "Target": "authenticationMethodsPolicyMigrationState"
+        },
+        {
+          "Id": "bacd077e-b2ee-4d2b-be5d-b4ca0a6bcfe4",
+          "ApiChange": "Property",
+          "ChangedApiName": "excludeTargets",
+          "ChangeType": "Addition",
+          "Description": "Added the **excludeTargets** property to the [authenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodConfiguration?view=graph-rest-beta) resource. Use this property to specify the groups of users that are excluded from an authentication methods policy.",
+          "Target": "authenticationMethodConfiguration"
+        },
+        {
+          "Id": "bacd077e-b2ee-4d2b-be5d-b4ca0a6bcfe4",
+          "ApiChange": "Property",
+          "ChangedApiName": "policyMigrationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyMigrationState** property to the [authenticationMethodsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-beta) resource.",
+          "Target": "authenticationMethodsPolicy"
+        },
+        {
+          "Id": "bacd077e-b2ee-4d2b-be5d-b4ca0a6bcfe4",
+          "ApiChange": "Property",
+          "ChangedApiName": "isSoftwareOathEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isSoftwareOathEnabled** property to the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "bacd077e-b2ee-4d2b-be5d-b4ca0a6bcfe4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "softwareOathAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [softwareOathAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/softwareOathAuthenticationMethodConfiguration?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "softwareOathAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "bacd077e-b2ee-4d2b-be5d-b4ca0a6bcfe4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "voiceAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [voiceAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/voiceAuthenticationMethodConfiguration?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "voiceAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "bacd077e-b2ee-4d2b-be5d-b4ca0a6bcfe4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "voiceAuthenticationMethodTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [voiceAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/voiceAuthenticationMethodTarget?view=graph-rest-beta) resource.",
+          "Target": "voiceAuthenticationMethodTarget"
+        }
+      ],
+      "Id": "bacd077e-b2ee-4d2b-be5d-b4ca0a6bcfe4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-22T00:00:00.1642286Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a1532782-8e1f-4dad-9b88-66861b3e2fc5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationMethodsPolicyMigrationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationMethodsPolicyMigrationState** enumeration type.",
+          "Target": "authenticationMethodsPolicyMigrationState"
+        },
+        {
+          "Id": "a1532782-8e1f-4dad-9b88-66861b3e2fc5",
+          "ApiChange": "Property",
+          "ChangedApiName": "excludeTargets",
+          "ChangeType": "Addition",
+          "Description": "Added the `excludeTargets` property to the [authenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "authenticationMethodConfiguration"
+        },
+        {
+          "Id": "a1532782-8e1f-4dad-9b88-66861b3e2fc5",
+          "ApiChange": "Property",
+          "ChangedApiName": "policyMigrationState",
+          "ChangeType": "Addition",
+          "Description": "Added the `policyMigrationState` property to the [authenticationMethodsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-1.0) resource.",
+          "Target": "authenticationMethodsPolicy"
+        },
+        {
+          "Id": "a1532782-8e1f-4dad-9b88-66861b3e2fc5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isSoftwareOathEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `isSoftwareOathEnabled` property to the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "a1532782-8e1f-4dad-9b88-66861b3e2fc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "smsAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [smsAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/smsAuthenticationMethodConfiguration?view=graph-rest-1.0) resource",
+          "Target": "smsAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "a1532782-8e1f-4dad-9b88-66861b3e2fc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "smsAuthenticationMethodTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [smsAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/smsAuthenticationMethodTarget?view=graph-rest-1.0) resource",
+          "Target": "smsAuthenticationMethodTarget"
+        },
+        {
+          "Id": "a1532782-8e1f-4dad-9b88-66861b3e2fc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "softwareOathAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [softwareOathAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/softwareOathAuthenticationMethodConfiguration?view=graph-rest-1.0) resource",
+          "Target": "softwareOathAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "a1532782-8e1f-4dad-9b88-66861b3e2fc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "voiceAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [voiceAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/voiceAuthenticationMethodConfiguration?view=graph-rest-1.0) resource",
+          "Target": "voiceAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "a1532782-8e1f-4dad-9b88-66861b3e2fc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "voiceAuthenticationMethodTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [voiceAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/voiceAuthenticationMethodTarget?view=graph-rest-1.0) resource",
+          "Target": "voiceAuthenticationMethodTarget"
+        }
+      ],
+      "Id": "a1532782-8e1f-4dad-9b88-66861b3e2fc5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-20T00:05:57.0061048Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e393aa08-85ce-4352-9d3b-930bebb43139",
+          "ApiChange": "Property",
+          "ChangedApiName": "companionAppAllowedState",
+          "ChangeType": "Addition",
+          "Description": "Added the `companionAppAllowedState` property to the [microsoftAuthenticatorFeatureSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource.",
+          "Target": "microsoftAuthenticatorFeatureSettings"
+        }
+      ],
+      "Id": "e393aa08-85ce-4352-9d3b-930bebb43139",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-08T16:03:17.7593978Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationMethodModes",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationMethodModes** enumeration type.",
+          "Target": "authenticationMethodModes"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationStrengthPolicyType",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationStrengthPolicyType** enumeration type.",
+          "Target": "authenticationStrengthPolicyType"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationStrengthRequirements",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationStrengthRequirements** enumeration type.",
+          "Target": "authenticationStrengthRequirements"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "baseAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **baseAuthenticationMethod** enumeration type.",
+          "Target": "baseAuthenticationMethod"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Resource",
+          "ChangedApiName": "updateAllowedCombinationsResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateAllowedCombinationsResult](https://learn.microsoft.com/en-us/graph/api/resources/updateAllowedCombinationsResult?view=graph-rest-1.0) resource type.",
+          "Target": "updateAllowedCombinationsResult"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationCombinationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationCombinationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationCombinationConfiguration?view=graph-rest-1.0) resource",
+          "Target": "authenticationCombinationConfiguration"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethodModeDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationMethodModeDetail](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodModeDetail?view=graph-rest-1.0) resource",
+          "Target": "authenticationMethodModeDetail"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationStrengthPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) resource",
+          "Target": "authenticationStrengthPolicy"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationStrengthRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationStrengthRoot](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthRoot?view=graph-rest-1.0) resource",
+          "Target": "authenticationStrengthRoot"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-1.0) resource",
+          "Target": "conditionalAccessRoot"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fido2CombinationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [fido2CombinationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fido2CombinationConfiguration?view=graph-rest-1.0) resource",
+          "Target": "fido2CombinationConfiguration"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationStrengthPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationStrengthPolicies** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-1.0) resource.",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Method",
+          "ChangedApiName": "updateAllowedCombinations",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateAllowedCombinations](https://learn.microsoft.com/en-us/graph/api/authenticationstrengthpolicy-updateallowedcombinations.md?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
+          "Target": "authenticationStrengthPolicy"
+        }
+      ],
+      "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-04-20T00:00:00.7593978Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "66342c44-4bd8-4324-b5f1-5002171a8e51",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "authenticationStrengths",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **authenticationStrengths** relationship of the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-beta) resource. See the **authenticationStrength** relationship instead.",
+          "Target": "conditionalAccessRoot"
+        },
+        {
+          "Id": "66342c44-4bd8-4324-b5f1-5002171a8e51",
+          "ApiChange": "Method",
+          "ChangedApiName": "findByMethodMode",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **findByMethodMode** function of the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-beta) resource. To retrieve authentication strength policies that include specified authentication method modes, use the following syntax: `GET /policies/authenticationStrengthPolicies?$filter=allowedCombinations/any(x:x has 'sms, password')`.",
+          "Target": "authenticationStrengthPolicy"
+        }
+      ],
+      "Id": "66342c44-4bd8-4324-b5f1-5002171a8e51",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-20T00:00:00.7593978Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c9cb7b4d-85b0-4fa8-9028-9b8235f3b9b2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reportSuspiciousActivitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [reportSuspiciousActivitySettings](https://learn.microsoft.com/en-us/graph/api/resources/reportSuspiciousActivitySettings?view=graph-rest-beta) resource type.",
+          "Target": "reportSuspiciousActivitySettings"
+        },
+        {
+          "Id": "c9cb7b4d-85b0-4fa8-9028-9b8235f3b9b2",
+          "ApiChange": "Property",
+          "ChangedApiName": "reportSuspiciousActivitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `reportSuspiciousActivitySettings` property to the [authenticationMethodsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-beta) resource.",
+          "Target": "authenticationMethodsPolicy"
+        }
+      ],
+      "Id": "c9cb7b4d-85b0-4fa8-9028-9b8235f3b9b2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-30T16:57:35.0770948Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    }
+  ]
+}

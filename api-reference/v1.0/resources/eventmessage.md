@@ -1,8 +1,8 @@
 ---
 title: "eventMessage resource type"
 description: "A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline)."
-localization_priority: Normal
-author: "harini84"
+ms.localizationpriority: medium
+author: "iamgirishck"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -15,7 +15,7 @@ A message that represents a meeting request, cancellation, or response (which ca
 
 The **eventMessage** entity is derived from [message](message.md). **eventMessage** is the base type for [eventMessageRequest](eventmessagerequest.md) and [eventMessageResponse](eventmessageresponse.md). The **meetingMessageType** property identifies the type of the event message.
 
-When an organizer or app sends a meeting request, the meeting request arrives in an invitee's mailbox as an **eventMessage** instance with the **meetingMessageType** of **meetingRequest**. In addition, Outlook automatically creates an **event** instance in the invitee's calendar, with the **showAs** property as **tentative**. 
+When an organizer or app sends a meeting request, the meeting request arrives in an invitee's mailbox as an **eventMessage** instance with the **meetingMessageType** of **meetingRequest**. In addition, Outlook automatically creates an **event** instance in the invitee's calendar, with the **showAs** property as **tentative**.
 
 To get the properties of the associated event in the invitee's mailbox, the app can use the **event** navigation property of the **eventMessage**, as shown in
 this [get event message example](../api/eventmessage-get.md#example-2). The app can also respond to the event on behalf of the invitee programmatically, by [accepting](../api/event-accept.md), [tentatively accepting](../api/event-tentativelyaccept.md), or [declining](../api/event-decline.md) the event.
@@ -64,7 +64,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an in
 |flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The owner of the mailbox from which the message is sent. In most cases, this value is the same as the **sender** property, except for sharing or delegation scenarios. The value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
-|id|String|Unique identifier for the event message (note that this value may change if a message is moved or altered)|
+|id|String|Unique identifier for the event message. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Read-only. |
 |importance|String| The importance of the message: `low`, `normal`, `high`.|
 |inferenceClassification|String| The possible values are: `focused`, `other`.|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
@@ -79,12 +79,12 @@ Aside from a meeting request, an **eventMessage** instance can be found in an in
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
-|sender|[recipient](recipient.md)|The account that is actually used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [for a shared calendar, or as a delegate](/graph/outlook-share-delegate-calendar.md). In any case, the value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
+|sender|[recipient](recipient.md)|The account that is actually used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [for a shared calendar, or as a delegate](/graph/outlook-share-or-delegate-calendar). In any case, the value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message.|
-|webLink|String|The URL to open the message in Outlook Web App.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL can be accessed from within an iFrame.|
+|webLink|String|The URL to open the message in Outlook on the web.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL cannot be accessed from within an iFrame.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -97,7 +97,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an in
 
 ## JSON representation
 
-Here is a JSON representation of the resource  
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

@@ -1,9 +1,9 @@
 ---
 title: "operation resource type"
 description: "The status of a long-running operation."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "billbliss"
-ms.prod: ""
+ms.prod: teamwork
 doc_type: resourcePageType
 ---
 
@@ -12,6 +12,13 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 The status of a long-running operation.
+
+## Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|createdDateTime| DateTimeOffset |The start time of the operation.|
+|lastActionDateTime| DateTimeOffset |The time of the last action of the operation.|
+|status|operationStatus|The current status of the operation: `notStarted`, `running`, `completed`, `failed` |
 
 ## JSON representation
 
@@ -30,14 +37,7 @@ Here is a JSON representation of the resource.
   "lastActionDateTime": "String (timestamp)",
   "status": "notStarted | running | completed | failed"
 }
-
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|createdDateTime| DateTimeOffset |The start time of the operation.|
-|lastActionDateTime| DateTimeOffset |The time of the last action of the operation.|
-|status|operationStatus|The current status of the operation: `notStarted`, `running`, `completed`, `failed` |
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->

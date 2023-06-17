@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var @event = new Event
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Event
 {
 	OriginalStartTimeZone = "originalStartTimeZone-value",
 	OriginalEndTimeZone = "originalEndTimeZone-value",
 	ResponseStatus = new ResponseStatus
 	{
 		Response = ResponseType.None,
-		Time = DateTimeOffset.Parse("datetime-value")
+		Time = DateTimeOffset.Parse("datetime-value"),
 	},
 	Uid = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,
-	IsReminderOn = true
+	IsReminderOn = true,
 };
+var result = await graphClient.Groups["{group-id}"].Events["{event-id}"].PatchAsync(requestBody);
 
-await graphClient.Groups["{id}"].Events["{id}"]
-	.Request()
-	.UpdateAsync(@event);
 
 ```

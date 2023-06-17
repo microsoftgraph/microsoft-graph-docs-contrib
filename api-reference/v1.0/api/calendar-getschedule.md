@@ -1,8 +1,8 @@
 ---
 title: "calendar: getSchedule"
 description: "Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period."
-localization_priority: Priority
-author: "angelgolfer-ms"
+ms.localizationpriority: high
+author: "tariq-sharif"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -49,10 +49,12 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.
-## Example
-##### Request
-The following example gets the availability information for two users for the specified date, time, and time zone.
 
+> **Note**: When the user's calendar has a time slot that contains more than 1000 entries, a `5006` response code with the message "The result set contains too many calendar entries. The allowed size is 1000; the actual size is ..." will be returned. For details, see [KB 2962513](/exchange/troubleshoot/calendars/cannot-view-another-user-calendar-free-busy-information).
+ 
+## Examples
+### Request
+The following example gets the availability information for two users for the specified date, time, and time zone.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -77,6 +79,7 @@ Content-Type: application/json
     "availabilityViewInterval": 60
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendar-getschedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -85,19 +88,30 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/calendar-getschedule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/calendar-getschedule-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/calendar-getschedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/calendar-getschedule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/calendar-getschedule-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/calendar-getschedule-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/calendar-getschedule-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

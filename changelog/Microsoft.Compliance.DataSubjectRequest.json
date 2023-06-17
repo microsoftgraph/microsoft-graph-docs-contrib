@@ -1,0 +1,348 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "89b86683-1457-4b10-bf89-d1af587f4692",
+          "ApiChange": "Member",
+          "ChangedApiName": "approval",
+          "ChangeType": "Addition",
+          "Description": "Added the `approval` member to the **subjectRightsRequestStage** enumeration.",
+          "Target": "subjectRightsRequestStage"
+        },
+        {
+          "Id": "89b86683-1457-4b10-bf89-d1af587f4692",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvers",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvers** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "89b86683-1457-4b10-bf89-d1af587f4692",
+          "ApiChange": "Resource",
+          "ChangedApiName": "collaborators",
+          "ChangeType": "Addition",
+          "Description": "Added the **collaborators** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        }
+      ],
+      "Id": "89b86683-1457-4b10-bf89-d1af587f4692",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-02T23:37:17.6340671Z",
+      "WorkloadArea": "Microsoft.Compliance.DataSubjectRequest",
+      "SubArea": ""
+    },    
+    {
+      "ChangeList": [
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestAllMailboxLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestAllMailboxLocation](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestAllMailboxLocation?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestAllMailboxLocation"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestAllSiteLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestAllSiteLocation](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestAllSiteLocation?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestAllSiteLocation"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestEnumeratedMailboxLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestEnumeratedMailboxLocation](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestEnumeratedMailboxLocation?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestEnumeratedMailboxLocation"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestEnumeratedSiteLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestEnumeratedSiteLocation](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestEnumeratedSiteLocation?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestEnumeratedSiteLocation"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestMailboxLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestMailboxLocation](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestMailboxLocation?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestMailboxLocation"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestSiteLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestSiteLocation](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestSiteLocation?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestSiteLocation"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentQuery",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentQuery** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalId",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalId** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeAllVersions",
+          "ChangeType": "Addition",
+          "Description": "Added the **includeAllVersions** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeAuthoredContent",
+          "ChangeType": "Addition",
+          "Description": "Added the **includeAuthoredContent** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "mailboxLocations",
+          "ChangeType": "Addition",
+          "Description": "Added the **mailboxLocations** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "pauseAfterEstimate",
+          "ChangeType": "Addition",
+          "Description": "Added the **pauseAfterEstimate** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "siteLocations",
+          "ChangeType": "Addition",
+          "Description": "Added the **siteLocations** property to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        }
+      ],
+      "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-17T21:04:31.2767577Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": "Subject rights requests"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "dataSubjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the **dataSubjectType** enumeration type.",
+          "Target": "dataSubjectType"
+        },
+        {
+          "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "subjectRightsRequestStage",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectRightsRequestStage** enumeration type.",
+          "Target": "subjectRightsRequestStage"
+        },
+        {
+          "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "subjectRightsRequestStageStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectRightsRequestStageStatus** enumeration type.",
+          "Target": "subjectRightsRequestStageStatus"
+        },
+        {
+          "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "subjectRightsRequestStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectRightsRequestStatus** enumeration type.",
+          "Target": "subjectRightsRequestStatus"
+        },
+        {
+          "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "subjectRightsRequestType",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectRightsRequestType** enumeration type.",
+          "Target": "subjectRightsRequestType"
+        },
+        {
+          "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestDetail](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestDetail?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestDetail"
+        },
+        {
+          "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestHistory](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestHistory?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestHistory"
+        },
+        {
+          "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestStageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestStageDetail](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestStageDetail?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestStageDetail"
+        },
+        {
+          "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
+          "ApiChange": "Method",
+          "ChangedApiName": "getFinalAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [getFinalAttachment](https://learn.microsoft.com/en-us/graph/api/getFinalAttachment?view=graph-rest-beta) method to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "getFinalAttachment"
+        },
+        {
+          "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
+          "ApiChange": "Method",
+          "ChangedApiName": "getFinalReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getFinalReport](https://learn.microsoft.com/en-us/graph/api/getFinalReport?view=graph-rest-beta) method to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "getFinalReport"
+        }
+      ],
+      "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-15T21:04:31.2767577Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": "Subject rights requests"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3d033240-225a-4ccc-a5b8-c64b855132e9",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "dataSubjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the **dataSubjectType** enumeration type.",
+          "Target": "dataSubjectType"
+        },
+        {
+          "Id": "3d033240-225a-4ccc-a5b8-c64b855132e9",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "subjectRightsRequestStage",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectRightsRequestStage** enumeration type.",
+          "Target": "subjectRightsRequestStage"
+        },
+        {
+          "Id": "3d033240-225a-4ccc-a5b8-c64b855132e9",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "subjectRightsRequestStageStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectRightsRequestStageStatus** enumeration type.",
+          "Target": "subjectRightsRequestStageStatus"
+        },
+        {
+          "Id": "3d033240-225a-4ccc-a5b8-c64b855132e9",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "subjectRightsRequestStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectRightsRequestStatus** enumeration type.",
+          "Target": "subjectRightsRequestStatus"
+        },
+        {
+          "Id": "3d033240-225a-4ccc-a5b8-c64b855132e9",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "subjectRightsRequestType",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectRightsRequestType** enumeration type.",
+          "Target": "subjectRightsRequestType"
+        },
+        {
+          "Id": "3d033240-225a-4ccc-a5b8-c64b855132e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestDetail](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestDetail?view=graph-rest-1.0) resource type.",
+          "Target": "subjectRightsRequestDetail"
+        },
+        {
+          "Id": "3d033240-225a-4ccc-a5b8-c64b855132e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestHistory](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestHistory?view=graph-rest-1.0) resource type.",
+          "Target": "subjectRightsRequestHistory"
+        },
+        {
+          "Id": "3d033240-225a-4ccc-a5b8-c64b855132e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestStageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestStageDetail](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestStageDetail?view=graph-rest-1.0) resource type.",
+          "Target": "subjectRightsRequestStageDetail"
+        },
+        {
+          "Id": "3d033240-225a-4ccc-a5b8-c64b855132e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-1.0) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "3d033240-225a-4ccc-a5b8-c64b855132e9",
+          "ApiChange": "Method",
+          "ChangedApiName": "getFinalAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [getFinalAttachment](https://learn.microsoft.com/en-us/graph/api/getFinalAttachment?view=graph-rest-1.0) method to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-1.0) resource.",
+          "Target": "getFinalAttachment"
+        },
+        {
+          "Id": "3d033240-225a-4ccc-a5b8-c64b855132e9",
+          "ApiChange": "Method",
+          "ChangedApiName": "getFinalReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getFinalReport](https://learn.microsoft.com/en-us/graph/api/getFinalReport?view=graph-rest-beta) method to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-1.0) resource.",
+          "Target": "getFinalReport"
+        }
+      ],
+      "Id": "3d033240-225a-4ccc-a5b8-c64b855132e9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-15T21:04:31.2767577Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": "Subject rights requests"
+    }
+  ]
+}

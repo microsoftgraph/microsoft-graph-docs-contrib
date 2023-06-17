@@ -4,29 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var id = "5793aa3b-cca9-4794-679a240f8b58";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var credentials = new List<Credential>()
+var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.UpdatePasswordSingleSignOnCredentials.UpdatePasswordSingleSignOnCredentialsPostRequestBody
 {
-	new Credential
+	Id = "5793aa3b-cca9-4794-679a240f8b58",
+	Credentials = new List<Credential>
 	{
-		FieldId = "param_username",
-		Value = "myusername",
-		Type = "username"
+		new Credential
+		{
+			FieldId = "param_username",
+			Value = "myusername",
+			Type = "username",
+		},
+		new Credential
+		{
+			FieldId = "param_password",
+			Value = "pa$$w0rd",
+			Type = "password",
+		},
 	},
-	new Credential
-	{
-		FieldId = "param_password",
-		Value = "pa$$w0rd",
-		Type = "password"
-	}
 };
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].UpdatePasswordSingleSignOnCredentials.PostAsync(requestBody);
 
-await graphClient.ServicePrincipals["{id}"]
-	.UpdatePasswordSingleSignOnCredentials(id,credentials)
-	.Request()
-	.PostAsync();
 
 ```

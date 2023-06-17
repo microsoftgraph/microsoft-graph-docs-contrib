@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getOffice365GroupsActivityStorage"
 description: "Get the total storage used across all group mailboxes and group sites."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -78,7 +78,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365groupsactivitystorage"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityStorage(period='D7')
 ```
 

@@ -2,7 +2,7 @@
 title: "itemInsights resource type"
 description: "Relationships between a user and items such as OneDrive for Business documents, calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for Business documents trending around users."
 author: "simonhult"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
@@ -23,7 +23,11 @@ Each insight is returned with a `resourceVisualization` and `resourceReference` 
 
 ### Limiting item insights
 
-Update [itemInsightsSettings](iteminsightssettings.md) to disable item insights for a specific Azure AD group or an entire organization. For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0).
+Update [insightsSettings](insightssettings.md) to disable item insights for a specific Azure AD group or an entire organization. For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy).
+
+## Properties
+
+None.
 
 ## Relationships
 

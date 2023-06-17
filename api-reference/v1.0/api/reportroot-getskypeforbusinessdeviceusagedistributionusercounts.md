@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts"
 description: "Get the number of users using unique devices in your organization. The report will show you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -80,7 +80,7 @@ The following is an example of the request.
   "name": "reportroot_getskypeforbusinessdeviceusagedistributionusercounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessDeviceUsageDistributionUserCounts(period='D7')
 ```
 

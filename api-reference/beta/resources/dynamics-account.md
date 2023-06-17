@@ -1,10 +1,10 @@
 ---
-title: accounts resource type 
-description: An account object in Dynamics 365 Business Central.
-services: project-madeira
+title: "accounts resource type"
+description: "Represents an account object in Dynamics 365 Business Central."
+services: "project-madeira"
 documentationcenter: ''
-author: SusanneWindfeldPedersen
-localization_priority: Normal
+author: "SusanneWindfeldPedersen"
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---
@@ -26,32 +26,31 @@ Represents an account object in Dynamics 365 Business Central.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|GUID|The unique ID of the account.|
-|number|string, maximum size 20|Specifies the number of the G/L account.|
-|displayName|string, maximum size 50|Specifies the name of the G/L account.|
-|category|string, maximum size 20|Specifies the category of the G/L account.|
-|subCategory|string, maximum size 80|Specifies the subcategory of the account category of the G/L account.|
-|blocked|boolean|Specifies that entries cannot be posted to the G/L account. **True** indicates account is blocked and posting is not allowed.|
-|lastModifiedDateTime|datetime|The last datetime the account was modified.|
-
+|blocked|Boolean|Specifies that entries cannot be posted to the G/L account. `True` indicates that the account is blocked and posting is not allowed.|
+|category|String|Specifies the category of the G/L account. Maximum size is 20.|
+|displayName|String|Specifies the name of the G/L account. Maximum size is 50.|
+|id|GUID|The unique identifier for the account.|
+|lastModifiedDateTime|Datetime|The date and time when the account was last modified.|
+|number|String |Specifies the number of the G/L account. Maximum size is 20.|
+|subCategory|String|Specifies the subcategory of the account category of the G/L account. Maximum size is 80.|
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 
 ```json
 {
+  "blocked": "Boolean",  
+  "category": "String",
+  "displayName": "String",
   "id": "GUID",
-  "number": "string",
-  "displayName": "string",
-  "category": "string",
-  "subCategory": "string",
-  "blocked": "boolean",
-  "lastModifiedDateTime": "datetime"
+  "lastModifiedDateTime": "Datetime"
+  "number": "String",
+  "subCategory": "String"
 }
 ```
 

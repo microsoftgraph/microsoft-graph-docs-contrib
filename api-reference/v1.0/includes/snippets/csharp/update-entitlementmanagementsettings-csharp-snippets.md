@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```csharp
+
+// Code snippets are only available for the latest version. Current version is 5.x
+
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new EntitlementManagementSettings
+{
+	ExternalUserLifecycleAction = AccessPackageExternalUserLifecycleAction.None,
+};
+var result = await graphClient.IdentityGovernance.EntitlementManagement.Settings.PatchAsync(requestBody);
+
+
+```

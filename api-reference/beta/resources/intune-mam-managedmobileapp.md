@@ -1,7 +1,7 @@
 ---
 title: "managedMobileApp resource type"
 description: "The identifier for the deployment an app."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -48,16 +48,10 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-    "packageId": "String"
+    "@odata.type": "microsoft.graph.windowsAppIdentifier",
+    "windowsAppId": "String"
   },
   "id": "String (identifier)",
   "version": "String"
 }
 ```
-
-
-
-
-
-

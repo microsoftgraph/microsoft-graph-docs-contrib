@@ -1,10 +1,11 @@
 ---
 title: "Azure AD authentication methods API overview"
 description: "Authentication methods are how users authenticate in Azure AD."
-localization_priority: Normal
-author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "jpettere"
+ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
+ms.date: 10/21/2022
 ---
 
 # Azure AD authentication methods API overview
@@ -22,7 +23,8 @@ The authentication method APIs are used to manage a user's authentication method
 * You can enable or disable the number for SMS sign-in.
 * You can reset a user's password.
 * You can retrieve details of a user's FIDO2 Security Key, and delete it if the user has lost the key.
-* You can retrieve details of a user's Microsoft Authenticator Passwordless Phone Sign-in registration, and delete it if the user has lost the phone.
+* You can retrieve details of a user's Microsoft Authenticator registration, and delete it if the user has lost the phone.
+* You can retrieve details of a user's Windows Hello for Business registration, and delete it if the user has lost the device.
 * You can add an email address to a user. The user can then use that email as part of the Self-Service Password Reset (SSPR) process.
 * You can update that email, or delete it from the user.
 
@@ -30,13 +32,25 @@ The authentication method APIs are used to manage a user's authentication method
 
 |Authentication method       | Description |Examples     |
 |:---------------------------|:------------|:------------|
+|[emailAuthenticationMethod](emailauthenticationmethod.md)|An email address can be used by a user as part of the Self-Service Password Reset (SSPR) process.|See a user's authentication email address. Add, update, or remove an email address to a user.|
+|[fido2AuthenticationMethod](fido2authenticationmethod.md)|A FIDO2 Security Key can be used by a user to sign-in to Azure AD.|Delete a lost FIDO2 Security Key.|
+|[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|Microsoft Authenticator can be used by a user to sign-in or perform multi-factor authentication to Azure AD|Delete a Microsoft Authenticator authentication method.|
 |[passwordAuthenticationMethod](passwordauthenticationmethod.md)| A password is currently the default primary authentication method in Azure AD.|Reset a user's password|
-|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|A phone can be used by a user to authenticate using [SMS or voice calls](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods#phone-options) (as allowed by policy).|See a user's authentication phone numbers. Add, update, or remove a phone number to a user. Enable or disable a primary mobile phone for SMS sign-in.|
-|[fido2authenticationmethod](fido2authenticationmethod.md)|A FIDO2 Security Key can be used by a user to sign in to Azure AD.|Delete a lost FIDO2 Security Key.|
-|[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md)|Microsoft Authenticator Passwordless Phone Sign-in can be used by a user to sign in to Azure AD|Delete a Passwordless Phone Sign-in authentication method.|
-|[emailauthenticationmethod](emailauthenticationmethod.md)|An email address can be user by a user as part of the Self-Service Password Reset (SSPR) process.|See a user's authentication email address. Add, update, or remove an email address to a user.|
+|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|A phone can be used by a user to authenticate using [SMS or voice calls](/azure/active-directory/authentication/concept-authentication-methods#phone-options) (as allowed by policy).|See a user's authentication phone numbers. Add, update, or remove a phone number to a user. Enable or disable a primary mobile phone for SMS sign-in.|
+|[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md)| Allow users to perform multifactor authentication using an application that supports the OATH specification and provides a one-time code. | Get and delete a software token assigned to a user.|
+|[temporaryaccesspassauthenticationmethod](temporaryaccesspassauthenticationmethod.md)|Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials. | Set a new Temporary Access Pass on a user.|
+|[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello for Business is a passwordless sign-in method on Windows devices.|See devices where a user has enabled Windows Hello for Business sign-in. Delete a Windows Hello for Business credential.|
+|[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (deprecated)|Microsoft Authenticator Passwordless Phone Sign-in can be used by a user to sign-in to Azure AD|Delete a Passwordless Phone Sign-in authentication method.|
+
+The following authentication methods are not yet supported in Microsoft Graph `beta`.
+
+|Authentication method       | Description |Examples     |
+|:---------------------------|:------------|:------------|
+|Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
+|Require re-register MFA | A control that requires that when user signs in next time and MFA is required, they're requested to set up a new MFA authentication method.|**NOTE:** This feature is replaced by the individual authentication method APIs listed above. These can be used to delete a user's existing registered authentication methods; once the user has no more methods, they'll be prompted to register the next time they sign in where strong authentication is required (the user can also register at any time using [MySecurityInfo](https://aka.ms/mysecurityinfo)). This can be done using the Azure AD admin UX, the Microsoft Graph APIs, and the Microsoft Graph Powershell SDK. <br/> The legacy version of this feature is currently supported only through the MSOL`Set-MsolUser` cmdlet, using the **StrongAuthenticationMethods** property. |
+|Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
 
 ## Next steps
 
 * Review the authentication method types and their various methods.
-* Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+* Try the API in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

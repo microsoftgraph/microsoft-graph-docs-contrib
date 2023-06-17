@@ -2,8 +2,8 @@
 title: "Create group"
 description: "Create a new group object."
 author: mohitpcad
-localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Create a new [group](../resources/termstore-group.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account) |TermStore.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
@@ -66,7 +66,6 @@ If successful, this method returns a `201 Created` response code and a [group](.
 ``` http
 POST https://graph.microsoft.com/beta/termStore/groups
 Content-Type: application/json
-Content-length: 135
 
 {
   "displayName" : "myGroup"

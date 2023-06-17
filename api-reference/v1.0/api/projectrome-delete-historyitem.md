@@ -1,7 +1,7 @@
 ---
 title: "Delete a historyItem"
 description: "Delete an existing history item for an existing user activity."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "project-rome"
 author: "ailae"
 doc_type: apiPageType
@@ -53,7 +53,6 @@ If successful, this method returns the `204 No Content` response code if the his
 Here is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_historyItem"
@@ -62,12 +61,6 @@ Here is an example of the request.
 ```http
 PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{item-id}
 ```
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-historyitem-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ##### Response
 

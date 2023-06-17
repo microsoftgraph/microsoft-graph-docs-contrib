@@ -1,23 +1,29 @@
 ---
-title: "Get OneNote content and structure with Microsoft Graph"
-description: " Enterprise notebooks on Microsoft 365"
+title: "Get OneNote content and structure by using the OneNote API"
+description: "Get OneNote content and structure by sending a GET request to the target endpoint. Then use query string options to filter your queries and improve performance."
 author: "jewan-microsoft"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "onenote"
 ---
 
-# Get OneNote content and structure with Microsoft Graph
+# Get OneNote content and structure
 
 **Applies to**: Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
-To get OneNote content and structure, you send a GET request to the target endpoint. For example:
+To get OneNote content and structure by using the Microsoft Graph OneNote API, you send a GET request to the target endpoint. For example:
 
 `GET ../onenote/pages/{id}`
 
-If the request is successful, Microsoft Graph returns a 200 HTTP status code and the entities or content that you requested. OneNote entities are returned as JSON objects that conform to the OData version 4.0 specification.
+If the request is successful, Microsoft Graph returns a `200 OK` HTTP status code and the entities or content that you requested. OneNote entities are returned as JSON objects that conform to the OData version 4.0 specification.
 
 By using query string options, you can filter your queries and improve performance.
 
+> [!NOTE]
+> If you're building a solution that supports one of the following scenarios, you will reach OneNote API limitations:
+> - Backup/restore OneNote sections
+> - Backup/restore OneNote notebooks
+>
+> For backup and restore operations, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
 <a name="request-uri"></a>
 
@@ -27,8 +33,6 @@ To construct the request URI, start with the service root URL:
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
-<br/>
-
 Then append the endpoint of the resource you want to retrieve. ([Resource paths](#resource-paths-for-get-requests) are shown in the next section.)
 
 Your full request URI will look like one of these examples:
@@ -37,7 +41,8 @@ Your full request URI will look like one of these examples:
 - `https://graph.microsoft.com/v1.0/me/onenote/notes/pages`
 - `https://graph.microsoft.com/v1.0/me/onenote/pages?select=title,self`
 
-> **Note:** Learn more about the [service root URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).
+> [!NOTE]
+> Learn more about the [service root URL](/graph/api/resources/onenote-api-overview#root-url).
 
 <a name="resource-paths"></a>
 
@@ -65,13 +70,9 @@ Get pages (metadata) across all notebooks.
 
 `../pages[?filter,orderby,select,expand,top,skip,search,count]`
 
-<br/>
-
 Get pages (metadata) from a specific section.
 
 `../sections/{section-id}/pages[?filter,orderby,select,expand,top,skip,search,count,pagelevel]`
-
-<br/>
  
 The `search` query string option is available for consumer notebooks only.
 
@@ -87,29 +88,23 @@ For the pages collection in a section, use **pagelevel** to return the indentati
 
 `GET ../sections/{section-id}/pages?pagelevel=true`
 
-
-
 <a name="get-page"></a> 
 
 ### Page entity
 
 Get the metadata for a specific page. 
 
-`../pages/{page-id}[?select,expand,pagelevel]` 
-
-<br/>
+`../pages/{page-id}[?select,expand,pagelevel]`
 
 Pages can expand the **parentNotebook** and **parentSection** properties.
 
 The default query expands the parent section and selects the section's `id`, `name`, and `self` properties.
 
-Use **pagelevel** to return the indentation level of the page and its order within its parent section. 
+Use **pagelevel** to return the indentation level of the page and its order within its parent section.
 
 #### Example
 
 `GET ../pages/{page-id}?pagelevel=true`
-
-
 
 <a name="get-page-preview"></a> 
 
@@ -118,8 +113,6 @@ Use **pagelevel** to return the indentation level of the page and its order with
 Get text and image preview content for a page.
 
 `../pages/{page-id}/preview`
-
-<br/>
 
 
 The JSON response contains the preview content, which you can use to help users identify what's in the page.
@@ -144,7 +137,6 @@ If the page has an image that can be used to build a preview UI, the **href** pr
 
 `<img src="https://www.onenote.com/api/v1.0/resources/{id}/content?publicAuth=true&mimeType=image/png" />`
 
-
 <a name="get-page-content"></a> 
 
 ### Page HTML content
@@ -155,11 +147,8 @@ Get the HTML content of a page.
 
 (*learn more about [returned HTML content](onenote-input-output-html.md)*) 
 
-<br/>
 
 Use the **includeIDs=true** query string option to get generated IDs used to [update the page](onenote-update-page.md).
-
-
 
 <a name="get-sections"></a>
 
@@ -167,21 +156,15 @@ Use the **includeIDs=true** query string option to get generated IDs used to [up
 
 Get all sections from all notebooks that are owned by the user, including sections in nested section groups.
 
-`../sections[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../sections[?filter,orderby,select,top,skip,expand,count]`
 
 Get all sections that are directly under a specific section group.
 
-`../sectionGroups/{sectiongroup-id}/sections[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../sectionGroups/{sectiongroup-id}/sections[?filter,orderby,select,top,skip,expand,count]`
 
 Get all sections that are directly under a specific notebook.
 
-`../notebooks/{notebook-id}/sections[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../notebooks/{notebook-id}/sections[?filter,orderby,select,top,skip,expand,count]`
 
 Sections can expand the **parentNotebook** and **parentSectionGroup** properties.
 
@@ -189,23 +172,17 @@ The default sort order for sections is `name asc`.
 
 The default query expands the parent notebook and parent section group and selects their `id`, `name`, and `self` properties.
 
-
-
 <a name="get-section"></a>
 
 ### Section entity
 
 Get a specific section.
 
-`../sections/{section-id}[?select,expand]` 
-
-<br/>
+`../sections/{section-id}[?select,expand]`
 
 Sections can expand the **parentNotebook** and **parentSectionGroup** properties.
 
 The default query expands the parent notebook and parent section group and selects their `id`, `name`, and `self` properties.
-
-
 
 <a name="get-section-groups"></a>
 
@@ -213,15 +190,11 @@ The default query expands the parent notebook and parent section group and selec
 
 Get all section groups from all notebooks that are owned by the user, including nested section groups.
 
-`../sectionGroups[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../sectionGroups[?filter,orderby,select,top,skip,expand,count]`
 
 Get all section groups that are directly under a specific notebook. 
 
-`../notebooks/{notebook-id}/sectionGroups[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../notebooks/{notebook-id}/sectionGroups[?filter,orderby,select,top,skip,expand,count]`
 
 Section groups can expand the **sections**, **sectionGroups**, **parentNotebook**, and **parentSectionGroup** properties.
 
@@ -229,23 +202,17 @@ The default sort order for section groups is `name asc`.
 
 The default query expands the parent notebook and parent section group and selects their `id`, `name`, and `self` properties.
 
-
-
 <a name="get-section-group"></a>
 
 ### SectionGroup entity
 
 Get a specific section group.
 
-`../sectionGroups/{sectiongroup-id}[?select,expand]` 
-
-<br/>
+`../sectionGroups/{sectiongroup-id}[?select,expand]`
 
 Section groups can expand the **sections**, **sectionGroups**, **parentNotebook**, and **parentSectionGroup** properties.
 
 The default query expands the parent notebook and parent section group and selects their `id`, `name`, and `self` properties.
-
-
 
 <a name="get-notebooks"></a>
 
@@ -253,15 +220,11 @@ The default query expands the parent notebook and parent section group and selec
 
 Get all the notebooks that are owned by the user. 
 
-`../notebooks[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../notebooks[?filter,orderby,select,top,skip,expand,count]`
 
 Notebooks can expand the **sections** and **sectionGroups** properties.
 
 The default sort order for notebooks is `name asc`. 
-
-
 
 <a name="get-notebook"></a>
 
@@ -269,13 +232,9 @@ The default sort order for notebooks is `name asc`.
 
 Get a specific notebook.
 
-`../notebooks/{notebook-id}[?select,expand]` 
-
-<br/>
+`../notebooks/{notebook-id}[?select,expand]`
 
 Notebooks can expand the **sections** and **sectionGroups** properties.
-
-
 
 <a name="get-resource"></a>
 
@@ -283,9 +242,7 @@ Notebooks can expand the **sections** and **sectionGroups** properties.
 
 Get the binary data of a specific resource. 
 
-`../resources/{resource-id}/$value` 
-
-<br/>
+`../resources/{resource-id}/$value`
 
 You can find the file's resource URI in the page's [output HTML](onenote-input-output-html.md).
 
@@ -312,17 +269,17 @@ And an **object** tag includes the endpoint for the file resource in the **data*
     type="application/pdf" ... />
 ```
 
-> **Note:**
+> [!NOTE]
 > Getting a collection of resources is not supported. 
 
 When you get a file resource, you don't need to include an **Accept** content type in the request.
 
 For more information about GET requests, see the following resources in the Microsoft Graph API REST reference:
 
-- [GET Pages](/graph/api/page-get?view=graph-rest-1.0)
-- [GET Sections](/graph/api/section-get?view=graph-rest-1.0)
-- [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
-- [GET Notebooks](/graph/api/notebook-get?view=graph-rest-1.0) 
+- [GET Pages](/graph/api/page-get)
+- [GET Sections](/graph/api/section-get)
+- [GET SectionGroups](/graph/api/sectiongroup-get)
+- [GET Notebooks](/graph/api/notebook-get)
 
 
 
@@ -335,12 +292,17 @@ You can query for OneNote entities and search page content to get just the infor
 
 **Remember:**
 
-- All GET requests start with the [service root URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url). <br/><br/>**Examples**: `https://www.onenote.com/api/v1.0/me/notes` and `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
+- All GET requests start with the [service root URL](/graph/api/resources/onenote-api-overview#root-url).
+  
+  **Examples**: `https://www.onenote.com/api/v1.0/me/notes` and `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
 
-- Spaces in the URL query string must use %20 encoding.<br/><br/>**Example**: `filter=title%20eq%20'biology'`
+- Spaces in the URL query string must use %20 encoding.
 
-- Property names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.<br/><br/>**Example**: `filter=tolower(name) eq 'spring'`
- 
+  **Example**: `filter=title%20eq%20'biology'`
+
+- Property names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.
+
+  **Example**: `filter=tolower(name) eq 'spring'`
 
 ### search & filter  
 
@@ -390,7 +352,7 @@ Get all notebooks and expand their sections and section groups, and expand all s
 [GET] ../notebooks?expand=sections,sectionGroups(expand=sections)
 ```
  
-> **Note:**
+> [!NOTE]
 > Expanding parents of child entities or expanding children of parent entities creates a circular reference and is not supported.
 
  
@@ -498,7 +460,7 @@ And the next five (`search` is available for consumer notebooks only).
 [GET] ../pages?search=biology&filter=createdTime ge 2015-01-01&top=5&skip=10
 ```
 
-> **Note:**
+> [!NOTE]
 > If both **search** and **filter** are applied to the same request, the results include only those entities that match both criteria.
  
 ### select
@@ -541,7 +503,7 @@ Get pages 51 to 100. The API returns 20 entries by default with a maximum of 100
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> **Note:**
+> [!NOTE]
 > GET requests for pages that retrieve the default number of entries (that is, they don't specify a **top** expression) return an **\@odata.nextLink** link in the response that you can use to get the next 20 entries.
  
 
@@ -551,7 +513,7 @@ Get pages 51 to 100. The API returns 20 entries by default with a maximum of 100
 
 When sending GET requests to Microsoft Graph, you can use OData query string options to customize your query and get just the information you need. They can also improve performance by reducing the number of calls to the service and the size of the response payload.
 
-> **Note:**
+> [!NOTE]
 > For readability, the examples in this article don't use the %20 percent-encoding required for spaces in the URL query string: `filter=isDefault%20eq%20true`
  
 | Query option | Example and description |  
@@ -576,9 +538,13 @@ Microsoft Graph also provides the `pagelevel` query string option you can use to
 
 Microsoft Graph supports the following OData operators and functions in **filter** expressions. When using OData expressions, remember:
 
-- Spaces in the URL query string must be replaced with the `%20` encoding.<br/><br/>**Example:** `filter=isDefault%20eq%20true`
+- Spaces in the URL query string must be replaced with the `%20` encoding.
 
-- Property names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.<br/><br/>**Example:** `filter=tolower(name) eq 'spring'`
+  **Example:** `filter=isDefault%20eq%20true`
+
+- Property names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.
+
+  **Example:** `filter=tolower(name) eq 'spring'`
 
 
 | Comparison operator | Example |  
@@ -599,7 +565,7 @@ Microsoft Graph supports the following OData operators and functions in **filter
 | not | `not contains(tolower(title),'school')` |  
 
 <br/>
-  
+
 | String function | Example |  
 |------|------|   
 | contains | `contains(tolower(title),'spring')` |  
@@ -628,11 +594,10 @@ Property names are case-sensitive in query expressions.
 
 For the list of properties and property types, see the following resources in the Microsoft Graph API REST reference:
 
-- [GET Pages](/graph/api/page-get?view=graph-rest-1.0)
-- [GET Sections](/graph/api/section-get?view=graph-rest-1.0)
-- [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
-- [GET Notebooks](/graph/api/notebook-get?view=graph-rest-1.0) 
-
+- [GET Pages](/graph/api/page-get)
+- [GET Sections](/graph/api/section-get)
+- [GET SectionGroups](/graph/api/sectiongroup-get)
+- [GET Notebooks](/graph/api/notebook-get)
 
 
 The **expand** query string option can be used with the following navigation properties:
@@ -673,7 +638,7 @@ The Microsoft Graph notes root URL uses the following format for all calls to Mi
 
 The `version` segment in the URL represents the version of Microsoft Graph that you want to use. Use `v1.0` for stable production code. Use `beta` to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code. 
 
-Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use [Microsoft Graph](https://graph.microsoft.com/v1.0/users) to get user IDs. 
+Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use Microsoft Graph to get user IDs. 
 
 
 <a name="permissions"></a>
@@ -699,5 +664,5 @@ For more information about permission scopes and how they work, see [Microsoft G
 - [Input and output HTML for OneNote pages](onenote-input-output-html.md)
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote development questions on Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)

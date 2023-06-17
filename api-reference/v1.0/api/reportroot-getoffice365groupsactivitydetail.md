@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getOffice365GroupsActivityDetail"
 description: "Get details about Microsoft 365 groups activity by group."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -96,7 +96,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365groupsactivityuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityDetail(period='D7')
 ```
 

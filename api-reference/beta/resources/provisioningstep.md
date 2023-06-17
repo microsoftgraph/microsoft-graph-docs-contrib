@@ -1,9 +1,9 @@
 ---
 title: "provisioningStep resource type"
 description: "Describes the steps taken to perform an action. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -22,8 +22,8 @@ Describes the steps taken to perform an action.
 |description|String|Summary of what occurred during the step.|
 |details|[detailsInfo](detailsinfo.md)|Details of what occurred during the step.|
 |name|String|Name of the step.|
-|provisioningStepType|String| Type of step. Possible values are: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
-|status|String| Status of the step. Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.|
+|provisioningStepType|provisioningStepType| Type of step. Possible values are: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
+|status|provisioningResult| Status of the step. Possible values are: `success`, `warning`,  `failure`, `skipped`, `unknownFutureValue`.|
 
 ## JSON representation
 
@@ -41,7 +41,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "description": "String",
-  "details": {"@odata.type": "microsoft.graph.detailsInfo"},
+  "details": {
+    "@odata.type": "microsoft.graph.detailsInfo"
+  },
   "name": "String",
   "provisioningStepType": "String",
   "status": "String"

@@ -2,7 +2,7 @@
 title: "participant resource type"
 description: "Represents the participant type."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -22,19 +22,24 @@ Represents a participant in a call.
 | [Delete participant](../api/participant-delete.md)         | None   | Delete a participant in a call.                  |
 | [Invite](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | Invite a participant to the call.              |
 | [Mute participant](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in a call.                  |
+| [Start hold music](../api/participant-startholdmusic.md) | [startHoldMusicOperation](startholdmusicoperation.md) | Place a participant on hold while playing music on the background. |
+| [Stop hold music](../api/participant-stopholdmusic.md) | [stopHoldMusicOperation](stopholdmusicoperation.md) | Reincorporate a participant previously put on hold to the call. |
 
 ## Properties
 
 | Property             | Type                                     | Description                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | String                                   | The participant ID.                                          |
-| info                 | [participantInfo](participantinfo.md)    | The participant of the participant.                          |
+| info                 | [participantInfo](participantinfo.md)    | Information about the participant.                          |
 | isInLobby            | Boolean                                  | `true` if the participant is in lobby.                          |
 | isMuted              | Boolean                                  | `true` if the participant is muted (client or server muted).    |
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
+| metadata             | String                                   | A blob of data provided by the participant in the roster.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Information about whether the participant has recording capability. |
+| restrictedExperience | [onlineMeetingRestricted](onlinemeetingrestricted.md)        | Indicates the reason or reasons media content from this participant is restricted. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
@@ -52,9 +57,12 @@ The following is a JSON representation of the resource.
 {
   "id": "String (identifier)",
   "info": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "isInLobby": true,
-  "isMuted": true,
-  "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ]
+  "isInLobby": "Boolean",
+  "isMuted": "Boolean",
+  "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
+  "metadata": "String",
+  "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" },
+  "restrictedExperience": { "@odata.type": "#microsoft.graph.onlineMeetingRestricted" }
 }
 ```
 

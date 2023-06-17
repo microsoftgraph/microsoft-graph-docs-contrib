@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var use = "sig";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var kty = "RSA";
+var requestBody = new Microsoft.Graph.Beta.TrustFramework.KeySets.Item.GenerateKey.GenerateKeyPostRequestBody
+{
+	Use = "sig",
+	Kty = "RSA",
+	Nbf = 1508969811L,
+	Exp = 1508969811L,
+};
+var result = await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"].GenerateKey.PostAsync(requestBody);
 
-var nbf = 1508969811;
-
-var exp = 1508969811;
-
-await graphClient.TrustFramework.KeySets["{id}"]
-	.GenerateKey(use,kty,nbf,exp)
-	.Request()
-	.PostAsync();
 
 ```

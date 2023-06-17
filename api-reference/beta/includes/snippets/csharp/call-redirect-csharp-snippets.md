@@ -4,28 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var targets = new List<InvitationParticipantInfo>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Redirect.RedirectPostRequestBody
 {
-	new InvitationParticipantInfo
+	Targets = new List<InvitationParticipantInfo>
 	{
-		Identity = new IdentitySet
+		new InvitationParticipantInfo
 		{
-			Application = new Identity
+			OdataType = "#microsoft.graph.invitationParticipantInfo",
+			Identity = new IdentitySet
 			{
-				DisplayName = "test bot 2",
-				Id = "22bfd41f-550e-477d-8789-f6f7bd2a5e8b"
-			}
-		}
-	}
+				OdataType = "#microsoft.graph.identitySet",
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"phone" , new 
+						{
+							OdataType = "#microsoft.graph.identity",
+							Id = "+12345678901",
+						}
+					},
+				},
+			},
+		},
+	},
+	CallbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
 };
+await graphClient.Communications.Calls["{call-id}"].Redirect.PostAsync(requestBody);
 
-var callbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039";
-
-await graphClient.Communications.Calls["491f0b00-ffff-4bc9-a43e-b226498ec22a"]
-	.Redirect(targets,null,null,null,null,callbackUri)
-	.Request()
-	.PostAsync();
 
 ```

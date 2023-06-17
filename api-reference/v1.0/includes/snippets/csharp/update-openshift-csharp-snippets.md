@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var openShift = new OpenShift
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new OpenShift
 {
 	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
 	SharedOpenShift = new OpenShiftItem
@@ -14,26 +16,24 @@ var openShift = new OpenShift
 		Notes = "Inventory Management",
 		OpenSlotCount = 5,
 		DisplayName = "Field shift",
-		StartDateTime = DateTimeOffset.Parse("2018-10-04T00:58:45.34Z"),
+		StartDateTime = DateTimeOffset.Parse("2018-10-04T00:58:45.340Z"),
 		EndDateTime = DateTimeOffset.Parse("2018-10-04T09:50:45.332Z"),
 		Theme = ScheduleEntityTheme.White,
-		Activities = new List<ShiftActivity>()
+		Activities = new List<ShiftActivity>
 		{
 			new ShiftActivity
 			{
 				IsPaid = true,
-				StartDateTime = DateTimeOffset.Parse("2018-10-04T00:58:45.34Z"),
-				EndDateTime = DateTimeOffset.Parse("2018-10-04T01:58:45.34Z"),
+				StartDateTime = DateTimeOffset.Parse("2018-10-04T00:58:45.340Z"),
+				EndDateTime = DateTimeOffset.Parse("2018-10-04T01:58:45.340Z"),
 				Code = "",
-				DisplayName = "Lunch"
-			}
-		}
+				DisplayName = "Lunch",
+			},
+		},
 	},
-	DraftOpenShift = null
+	DraftOpenShift = null,
 };
+var result = await graphClient.Teams["{team-id}"].Schedule.OpenShifts["{openShift-id}"].PatchAsync(requestBody);
 
-await graphClient.Teams["{id}"].Schedule.OpenShifts["OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
-	.Request()
-	.UpdateAsync(openShift);
 
 ```

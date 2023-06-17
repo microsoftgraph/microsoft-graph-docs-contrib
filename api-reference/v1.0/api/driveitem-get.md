@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Get a file or folder
-localization_priority: Priority
+title: Get a driveItem resource
+ms.localizationpriority: high
 ms.prod: "sharepoint"
-description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
+description: "Retrieve the metadata for a driveItem in a drive by file system path or ID."
 doc_type: apiPageType
 ---
-# Get a DriveItem resource
+# Get a driveItem resource
 
 Namespace: microsoft.graph
 
-Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.
+Retrieve the metadata for a [driveItem](../resources/driveitem.md) in a [drive](../resources/drive.md) by file system path or ID.
+`item-id` is the ID of a driveItem. It may also be the unique ID of a [SharePoint list item](../resources/listitem.md).
 
 ## Permissions
 
@@ -60,7 +59,7 @@ This is currently only supported on OneDrive Personal.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.
+If successful, this method returns a `200 OK` response code and the [driveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
 
@@ -75,6 +74,7 @@ Here is an example of the request to the root folder of the user's OneDrive.
 ```msgraph-interactive
 GET /me/drive/root
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-root-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,18 +83,29 @@ GET /me/drive/root
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-root-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-drive-root-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-root-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-root-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-drive-root-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-drive-root-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-drive-root-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-## Response
+### Response
 
 Here is an example of the response.
 
@@ -130,10 +141,9 @@ Content-type: application/json
 }
 ```
 
-## Remarks
+## See also
 
-See [Error Responses][error-response] for more info about
-how errors are returned.
+For details about how errors are returned, see [Error responses][error-response].
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters

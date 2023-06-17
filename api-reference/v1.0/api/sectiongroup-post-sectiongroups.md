@@ -1,7 +1,7 @@
 ---
 title: "Create sectionGroup"
 description: "Create a new section group in the specified section group."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
@@ -56,22 +56,14 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sectionGroups
 Content-type: application/json
-Content-length: 30
 
 {
   "displayName": "Section group name"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-sectiongroup-from-sectiongroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-sectiongroup-from-sectiongroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-sectiongroup-from-sectiongroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -90,7 +82,6 @@ Here is an example of the response. Note: The response object shown here is trun
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 305
 
 {
   "sectionsUrl": "sectionsUrl-value",

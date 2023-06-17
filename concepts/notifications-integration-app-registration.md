@@ -1,12 +1,15 @@
 ---
-title: "Manage app registration and API permission for Microsoft Graph notifications"
-description: "In order to receive notifications sent via Microsoft Graph, you first need to register your application on the Microsoft Azure portal."
-localization_priority: Priority
+title: "Manage app registration and API permission (deprecated)"
+description: "To integrate your application service with notifications, register your app with the Microsoft identity platform and declare the required API permissions (deprecated)."
+ms.localizationpriority: high
 ms.prod: "notifications"
 author: "merzink"
 ---
 
-# Manage app registration and API permission for Microsoft Graph notifications
+# Manage app registration and API permission for Microsoft Graph notifications (deprecated)
+
+> [!IMPORTANT]
+> The Microsoft Graph notifications API is deprecated and stopped returning data in January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs). For more information, see the blog post [Retiring Microsoft Graph notifications API (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 In order for your application service to integrate with Microsoft Graph notifications, you need to register your app with the Microsoft identity platform to support Microsoft accounts or work or school accounts, and declare the API permissions that are required.
 

@@ -1,7 +1,7 @@
 ---
 title: "roleScopeTagAutoAssignment resource type"
 description: "Contains the properties for auto-assigning a Role Scope Tag to a group to be applied to Devices."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -29,7 +29,7 @@ Contains the properties for auto-assigning a Role Scope Tag to a group to be app
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The auto-assignment target for the specific Role Scope Tag.|
 
 ## Relationships
@@ -48,15 +48,10 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.roleScopeTagAutoAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
-    "deviceAndAppManagementAssignmentFilterType": "String"
+    "deviceAndAppManagementAssignmentFilterType": "String",
+    "collectionId": "String"
   }
 }
 ```
-
-
-
-
-
-

@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getSharePointSiteUsageStorage"
 description: "Get the trend of storage allocated and consumed during the reporting period."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -71,7 +71,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[siteUsageStorage](../resources/siteusagestorage.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 ## Example
 
@@ -144,12 +144,12 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageStorage(perio
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.siteUsageStorage"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -158,7 +158,6 @@ Content-Type: application/json
 Content-Length: 248
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.siteUsageStorage)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

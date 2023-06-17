@@ -1,8 +1,8 @@
 ---
 title: "Create deviceManagementTroubleshootingEvent"
 description: "Create a new deviceManagementTroubleshootingEvent object."
-author: "dougeby"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -11,16 +11,14 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
-
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -53,7 +51,7 @@ The following table shows the properties that are required when you create the d
 |correlationId|String|Id used for tracing the failure in the service.|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Object containing detailed information about the error and its remediation.|
 |eventName|String|Event Name corresponding to the Troubleshooting Event. It is an Optional field|
-|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|A set of string key and string value pairs which provides additional information on the Troubleshooting event|
+|additionalInformation|[keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md) collection|A set of string key and string value pairs which provides additional information on the Troubleshooting event|
 
 
 
@@ -65,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
+POST https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
 Content-type: application/json
 Content-length: 852
 
@@ -134,9 +132,3 @@ Content-Length: 901
   ]
 }
 ```
-
-
-
-
-
-

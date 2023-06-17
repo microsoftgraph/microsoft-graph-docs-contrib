@@ -1,7 +1,7 @@
 ---
 title: "Create androidDeviceOwnerWiFiConfiguration"
 description: "Create a new androidDeviceOwnerWiFiConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Create a new [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -67,6 +67,11 @@ The following table shows the properties that are required when you create the a
 |wiFiSecurityType|[androidDeviceOwnerWiFiSecurityType](../resources/intune-deviceconfig-androiddeviceownerwifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. Possible values are: `open`, `wep`, `wpaPersonal`, `wpaEnterprise`.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 |preSharedKeyIsSet|Boolean|This is the pre-shared key for WPA Personal Wi-Fi network.|
+|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Specify the proxy setting for Wi-Fi configuration. Possible values include none, manual, and automatic. Possible values are: `none`, `manual`, `automatic`.|
+|proxyManualAddress|String|Specify the proxy server IP address. Android documentation does not specify IPv4 or IPv6. For example: 192.168.1.1.|
+|proxyManualPort|Int32|Specify the proxy server port.|
+|proxyAutomaticConfigurationUrl|String|Specify the proxy server configuration script URL.|
+|proxyExclusionList|String|List of hosts to exclude using the proxy on connections for. These hosts can use wildcards such as *.example.com.|
 
 
 
@@ -80,7 +85,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1282
+Content-length: 1540
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerWiFiConfiguration",
@@ -118,7 +123,12 @@ Content-length: 1282
   "connectWhenNetworkNameIsHidden": true,
   "wiFiSecurityType": "wep",
   "preSharedKey": "Pre Shared Key value",
-  "preSharedKeyIsSet": true
+  "preSharedKeyIsSet": true,
+  "proxySettings": "manual",
+  "proxyManualAddress": "Proxy Manual Address value",
+  "proxyManualPort": 15,
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "proxyExclusionList": "Proxy Exclusion List value"
 }
 ```
 
@@ -127,7 +137,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1454
+Content-Length: 1712
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerWiFiConfiguration",
@@ -168,12 +178,11 @@ Content-Length: 1454
   "connectWhenNetworkNameIsHidden": true,
   "wiFiSecurityType": "wep",
   "preSharedKey": "Pre Shared Key value",
-  "preSharedKeyIsSet": true
+  "preSharedKeyIsSet": true,
+  "proxySettings": "manual",
+  "proxyManualAddress": "Proxy Manual Address value",
+  "proxyManualPort": 15,
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "proxyExclusionList": "Proxy Exclusion List value"
 }
 ```
-
-
-
-
-
-

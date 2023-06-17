@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementPartner resource type"
 description: "Entity which represents a connection to device management partner."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -23,6 +23,7 @@ Entity which represents a connection to device management partner.
 |[Create deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-create.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Create a new [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.|
 |[Delete deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-delete.md)|None|Deletes a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).|
 |[Update deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-update.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Update the properties of a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.|
+|[terminate action](../api/intune-onboarding-devicemanagementpartner-terminate.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -36,6 +37,7 @@ Entity which represents a connection to device management partner.
 |isConfigured|Boolean|Whether device management partner is configured or not|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be removed|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be marked as NonCompliant|
+|groupsRequiringPartnerEnrollment|[deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md) collection|User groups that specifies whether enrollment is through partner.|
 
 ## Relationships
 None
@@ -59,15 +61,15 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "isConfigured": true,
   "whenPartnerDevicesWillBeRemovedDateTime": "String (timestamp)",
-  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)",
+  "groupsRequiringPartnerEnrollment": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "String"
+      }
+    }
+  ]
 }
 ```
-
-
-
-
-
-
-
-
-

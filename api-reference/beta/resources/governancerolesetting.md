@@ -1,10 +1,10 @@
 ---
 title: "governanceRoleSetting resource type"
 description: "Represents a set of configurations on each role definition that needs to be evaluated against when role assignments are created or modified."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "shauliu"
+ms.prod: "governance"
+author: "rkarim-ms"
 ---
 
 # governanceRoleSetting resource type
@@ -12,6 +12,8 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Represents a set of configurations on each role definition that needs to be evaluated against when role assignments are created or modified. For example, role settings might include "maximum assignment duration" rule, "MFA required on activation" rule, and so on.
 
@@ -30,7 +32,7 @@ Represents a set of configurations on each role definition that needs to be eval
 |resourceId           |String                                  |Required. The id of the resource that the role setting is associated with.|
 |roleDefinitionId     |String                                  |Required. The id of the role definition that the role setting is associated with.|
 |isDefault            |Boolean                                 |Read-only. Indicate if the roleSetting is a default roleSetting|
-|lastUpdatedDateTime  |DateTimeOffset                          |Read-only. The time when the role setting was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|lastUpdatedDateTime  |DateTimeOffset                          |Read-only. The time when the role setting was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |lastUpdatedBy        |String                                  |Read-only. The display name of the administrator who last updated the roleSetting.|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when an administrator tries to add an eligible role assignment.|
 |adminMemberSettings  |[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when an administrator tries to add a direct member role assignment.|

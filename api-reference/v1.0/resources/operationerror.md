@@ -1,9 +1,9 @@
 ---
 title: "operationError resource type"
 description: "Describes errors in teamsAsyncOperation."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "billbliss"
-ms.prod: ""
+ms.prod: teamwork
 doc_type: resourcePageType
 ---
 

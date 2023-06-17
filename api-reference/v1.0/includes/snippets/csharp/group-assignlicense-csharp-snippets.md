@@ -4,35 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var addLicenses = new List<AssignedLicense>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Groups.Item.AssignLicense.AssignLicensePostRequestBody
 {
-	new AssignedLicense
+	AddLicenses = new List<AssignedLicense>
 	{
-		DisabledPlans = new List<Guid>()
+		new AssignedLicense
 		{
-			Guid.Parse("11b0131d-43c8-4bbb-b2c8-e80f9a50834a")
+			DisabledPlans = new List<113feb6c-3fe4-4440-bddc-54d774bf0318>
+			{
+				Guid.Parse("113feb6c-3fe4-4440-bddc-54d774bf0318"),
+				Guid.Parse("14ab5db5-e6c4-4b20-b4bc-13e36fd2227f"),
+			},
+			SkuId = Guid.Parse("b05e124f-c7cc-45a0-a6aa-8cf78c946968"),
 		},
-		SkuId = Guid.Parse("skuId-value-1")
+		new AssignedLicense
+		{
+			DisabledPlans = new List<A413a9ff-720c-4822-98ef-2f37c2a21f4c>
+			{
+				Guid.Parse("a413a9ff-720c-4822-98ef-2f37c2a21f4c"),
+			},
+			SkuId = Guid.Parse("c7df2760-2c81-4ef7-b578-5b5392b571df"),
+		},
 	},
-	new AssignedLicense
+	RemoveLicenses = new List<String>
 	{
-		DisabledPlans = new List<Guid>()
-		{
-			Guid.Parse("a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235")
-		},
-		SkuId = Guid.Parse("skuId-value-2")
-	}
+	},
 };
+var result = await graphClient.Groups["{group-id}"].AssignLicense.PostAsync(requestBody);
 
-var removeLicenses = new List<Guid>()
-{
-};
-
-await graphClient.Groups["1ad75eeb-7e5a-4367-a493-9214d90d54d0"]
-	.AssignLicense(addLicenses,removeLicenses)
-	.Request()
-	.PostAsync();
 
 ```

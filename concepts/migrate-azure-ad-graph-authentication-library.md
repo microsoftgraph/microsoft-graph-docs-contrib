@@ -1,9 +1,12 @@
 ---
 title: "Review app authentication library changes"
 description: "Describes how to update authentication library use in order to migrate an app from Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
-author: "dkershaw10"
-localization_priority: Normal
-ms.prod: "azure-active-directory"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
+ms.localizationpriority: medium
+ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Review app authentication library changes
@@ -12,8 +15,8 @@ This article is part of *step 3: review app details* of the [process to migrate 
 
 Most apps use an authentication library to acquire and manage access tokens to call Microsoft Graph.  Microsoft offers two authentication libraries:
 
-- [Azure Active Directory authentication library](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
-- [Microsoft authentication library](/azure/active-directory/develop/reference-v2-libraries) (MSAL)
+- [Azure Active Directory Authentication Library](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
+- [Microsoft Authentication Library](/azure/active-directory/develop/reference-v2-libraries) (MSAL)
 
 ## Updating ADAL
 
@@ -51,5 +54,5 @@ Once you've migrated to MSAL, you can request additional scopes dynamically, and
 
 ## Next Steps
 
-- Learn [.NET client library](migrate-azure-ad-graph-client-libraries.md) differences between Azure AD Graph and Microsoft Graph.
+- Learn [.NET client library](migrate-azure-ad-graph-client-libraries.md) differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph.
 - Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.

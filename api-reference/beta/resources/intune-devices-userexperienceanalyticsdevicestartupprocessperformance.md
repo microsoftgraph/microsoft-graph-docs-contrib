@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsDeviceStartupProcessPerformance resource type"
 description: "The user experience analytics device startup process performance."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -36,6 +36,8 @@ The user experience analytics device startup process performance.
 |deviceCount|Int64|User experience analytics device startup process summarized count.|
 |medianImpactInMs|Int32|User experience analytics device startup process median impact in milliseconds.|
 |totalImpactInMs|Int32|User experience analytics device startup process total impact in milliseconds.|
+|medianImpactInMs2|Int64|User experience analytics device startup process median impact in milliseconds.|
+|totalImpactInMs2|Int64|User experience analytics device startup process total impact in milliseconds.|
 
 ## Relationships
 None
@@ -57,12 +59,8 @@ Here is a JSON representation of the resource.
   "publisher": "String",
   "deviceCount": 1024,
   "medianImpactInMs": 1024,
-  "totalImpactInMs": 1024
+  "totalImpactInMs": 1024,
+  "medianImpactInMs2": 1024,
+  "totalImpactInMs2": 1024
 }
 ```
-
-
-
-
-
-

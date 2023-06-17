@@ -1,12 +1,15 @@
 ---
-title: "Integrate with Microsoft Graph notifications "
-description: "Notifications are one of the most effective ways to re-engage with users of your application. You can integrate your apps with Microsoft Graph notifications in a few simple steps.  "
-localization_priority: Priority
+title: "Integrate with Microsoft Graph notifications (deprecated)"
+description: "Integrate your apps with Microsoft Graph notifications with a few simple steps (deprecated)."
+ms.localizationpriority: high
 ms.prod: "notifications"
 author: "merzink"
 ---
 
-# Integrate with Microsoft Graph notifications
+# Integrate with Microsoft Graph notifications (deprecated)
+
+> [!IMPORTANT]
+> The Microsoft Graph notifications API is deprecated and stopped returning data in January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs). For more information, see the blog post [Retiring Microsoft Graph notifications API (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 You can integrate your apps with Microsoft Graph notifications with a few simple steps, as shown in the following diagram.
 

@@ -2,8 +2,8 @@
 title: "set resource type"
 description: "Represents a set in a term store."
 author: mohitpcad
-localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "FilterDatetime resource type"
 description: "Represents how to filter a date when filtering on values."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
 ---
 

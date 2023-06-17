@@ -1,9 +1,9 @@
 ---
 title: "provisioningServicePrincipal resource type"
 description: "Represents the service principal used for provisioning."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the service principal used for provisioning. 
+Represents the service principal used for provisioning. Inherits from [identity](../resources/identity.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String|Uniquely identifies the **servicePrincipal** used for provisioning.|
+|id|String|Uniquely identifies the **servicePrincipal** used for provisioning. Inherited from [identity](../resources/identity.md).|
 |name|String| Customer-defined name for the **servicePrincipal**.|
 
 ## JSON representation

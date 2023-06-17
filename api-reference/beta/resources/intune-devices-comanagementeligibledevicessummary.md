@@ -1,7 +1,7 @@
 ---
 title: "comanagementEligibleDevicesSummary resource type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -22,6 +22,7 @@ Not yet documented
 |:---|:---|:---|
 |comanagedCount|Int32|Count of devices already Co-Managed|
 |eligibleCount|Int32|Count of devices fully eligible for Co-Management|
+|scheduledForEnrollmentCount|Int32|Count of devices scheduled for Co-Management enrollment. Valid values 0 to 9999999|
 |eligibleButNotAzureAdJoinedCount|Int32|Count of devices eligible for Co-Management but not yet joined to Azure Active Directory|
 |needsOsUpdateCount|Int32|Count of devices that will be eligible for Co-Management after an OS update|
 |ineligibleCount|Int32|Count of devices ineligible for Co-Management|
@@ -41,14 +42,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.comanagementEligibleDevicesSummary",
   "comanagedCount": 1024,
   "eligibleCount": 1024,
+  "scheduledForEnrollmentCount": 1024,
   "eligibleButNotAzureAdJoinedCount": 1024,
   "needsOsUpdateCount": 1024,
   "ineligibleCount": 1024
 }
 ```
-
-
-
-
-
-

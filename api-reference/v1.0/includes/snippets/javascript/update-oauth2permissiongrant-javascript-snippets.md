@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const oAuth2PermissionGrant = {
-  scope: "scope-value"
+    scope: 'User.ReadBasic.All Group.ReadWrite.All'
 };
 
-let res = await client.api('/oauth2PermissionGrants/{id}')
+await client.api('/oauth2PermissionGrants/l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk')
 	.update(oAuth2PermissionGrant);
 
 ```

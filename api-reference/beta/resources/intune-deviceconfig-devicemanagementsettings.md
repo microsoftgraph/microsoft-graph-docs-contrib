@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettings resource type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -30,6 +30,9 @@ Not yet documented
 |androidDeviceAdministratorEnrollmentEnabled|Boolean|The property to determine if Android device administrator enrollment is enabled for this account.|
 |ignoreDevicesForUnsupportedSettingsEnabled|Boolean|The property to determine whether to ignore unsupported compliance settings on certian models of devices.|
 |enableLogCollection|Boolean|Determines whether the log collection feature should be available for use.|
+|enableAutopilotDiagnostics|Boolean|Determines whether the autopilot diagnostic feature is enabled or not.|
+|enableEnhancedTroubleshootingExperience|Boolean|Determines whether the enhanced troubleshooting UX is enabled or not.|
+|enableDeviceGroupMembershipReport|Boolean|Determines whether the device group membership report feature is enabled or not.|
 
 ## Relationships
 None
@@ -53,12 +56,9 @@ Here is a JSON representation of the resource.
   "derivedCredentialUrl": "String",
   "androidDeviceAdministratorEnrollmentEnabled": true,
   "ignoreDevicesForUnsupportedSettingsEnabled": true,
-  "enableLogCollection": true
+  "enableLogCollection": true,
+  "enableAutopilotDiagnostics": true,
+  "enableEnhancedTroubleshootingExperience": true,
+  "enableDeviceGroupMembershipReport": true
 }
 ```
-
-
-
-
-
-

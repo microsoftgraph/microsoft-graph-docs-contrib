@@ -1,10 +1,10 @@
 ---
 title: "objectMapping resource type"
 description: "Defines how a given object should be synchronized from source directory to target directory."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # objectMapping resource type
@@ -24,47 +24,15 @@ Object mappings are the main part of the [synchronization rule](synchronization-
 |attributeMappings  |[attributeMapping](synchronization-attributemapping.md) collection    | Attribute mappings define which attributes to map from the source object into the target object and how they should flow. A number of functions are available to support the transformation of the original source values.|
 |enabled        |Boolean    |When `true`, this object mapping will be processed during synchronization. When `false`, this object mapping will be skipped.|
 |flowTypes      |objectFlowTypes    |Which flow types are enabled for this object mapping. `Add` creates new objects in the target directory, `Update` modifies existing objects, and `Delete` deprovisions existing users. The default is `Add, Update, Delete`. |
-|metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
+|metadata       |[objectMappingMetadataEntry](../resources/synchronization-objectmappingmetadataentry.md) collection|Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
 |name           |String     |Human-friendly name of the object mapping.|
 |scope          |[filter](synchronization-filter.md)     |Defines a filter to be used when deciding whether a given object should be provisioned. For example, you might want to only provision users that are located in the US.|
 |sourceObjectName           |String     |Name of the object in the source directory. Must match the object name from the source [directory definition](synchronization-directorydefinition.md).|
 |targetObjectName           |String     |Name of the object in target directory. Must match the object name from the target [directory definition](synchronization-directorydefinition.md).|
 
-## JSON representation
+### Sample configuration
 
-The following is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.objectMapping"
-}-->
-
-```json
-{
-  "attributeMappings": [{"@odata.type": "microsoft.graph.attributeMapping"}],
-  "enabled": true,
-  "flowTypes": "String",
-  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
-  "name": "String",
-  "scope": {"@odata.type": "microsoft.graph.filter"},
-  "sourceObjectName": "String",
-  "targetObjectName": "String"
-}
-```
-
-## JSON Example
-
-<!-- {
-  "blockType": "example",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.objectMapping"
-}-->
-
+<!-- { "blockType": "ignored" } -->
 ```json
 {
     "attributeMappings": [
@@ -343,6 +311,37 @@ The following is a JSON representation of the resource.
     "scope": null,
     "sourceObjectName": "User",
     "targetObjectName": "User"
+}
+```
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.objectMapping"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.objectMapping",
+  "attributeMappings": [
+    {
+      "@odata.type": "microsoft.graph.attributeMapping"
+    }
+  ],
+  "enabled": "Boolean",
+  "flowTypes": "String",
+  "metadata": [
+    {
+      "@odata.type": "microsoft.graph.objectMappingMetadataEntry"
+    }
+  ],
+  "name": "String",
+  "scope": {
+    "@odata.type": "microsoft.graph.filter"
+  },
+  "sourceObjectName": "String",
+  "targetObjectName": "String"
 }
 ```
 

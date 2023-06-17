@@ -1,11 +1,10 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: TextColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The textColumn on a columnDefinition resource indicates that the column's values are text."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

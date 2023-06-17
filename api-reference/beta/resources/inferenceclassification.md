@@ -1,10 +1,10 @@
 ---
 title: "inferenceClassification resource type"
 description: "Classification of a user's messages to enable focus on those that are more relevant or important to the user. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "svpsiva"
+ms.prod: mail
+author: "abheek-das"
 ---
 
 # inferenceClassification resource type

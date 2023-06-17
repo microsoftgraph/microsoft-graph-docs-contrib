@@ -1,9 +1,9 @@
 ---
 title: "singleValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a single value. "
-localization_priority: Normal
-author: "svpsiva"
-ms.prod: ""
+ms.localizationpriority: medium
+author: "abheek-das"
+ms.prod: outlook
 doc_type: resourcePageType
 ---
 
@@ -50,7 +50,6 @@ Here is a JSON representation of the resource.
   "id": "string (identifier)",
   "value": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

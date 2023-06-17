@@ -1,26 +1,24 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Video
-localization_priority: Normal
-description: "The Video resource groups video-related data items into a single structure."
-ms.prod: ""
+title: video resource type
+ms.localizationpriority: medium
+description: "The video resource groups video-related data items into a single structure."
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# Video resource type
+# video resource type
 
 Namespace: microsoft.graph
 
-The **Video** resource groups video-related data items into a single structure.
+The **video** resource groups video-related data items into a single structure.
 
-If a [**DriveItem**](driveitem.md) has a non-null **video** facet, the item represents a video file.
-The properties of the **Video** resource are populated by extracting metadata from the file.
+If a [**driveItem**](driveitem.md) has a non-null **video** facet, the item represents a video file.
+The properties of the **video** resource are populated by extracting metadata from the file.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -62,7 +60,7 @@ Here is a JSON representation of the resource
 
 ## Remarks
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information about the facets on a driveItem, see [driveItem](driveitem.md).
 
 <!-- {
   "type": "#page.annotation",

@@ -1,7 +1,7 @@
 ---
 title: "teamMemberSettings resource type"
 description: "Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "nkramer"
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -18,12 +18,12 @@ Settings to configure whether members can perform certain actions, for example, 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|allowAddRemoveApps|Boolean|If set to true, members can add and remove apps.|
 |allowCreatePrivateChannels|Boolean|If set to true, members can add and update private channels.|
 |allowCreateUpdateChannels|Boolean|If set to true, members can add and update channels.|
-|allowDeleteChannels|Boolean|If set to true, members can delete channels.|
-|allowAddRemoveApps|Boolean|If set to true, members can add and remove apps.|
-|allowCreateUpdateRemoveTabs|Boolean|If set to true, members can add, update, and remove tabs. |
 |allowCreateUpdateRemoveConnectors|Boolean|If set to true, members can add, update, and remove connectors.|
+|allowCreateUpdateRemoveTabs|Boolean|If set to true, members can add, update, and remove tabs. |
+|allowDeleteChannels|Boolean|If set to true, members can delete channels.|
 
 ## JSON representation
 

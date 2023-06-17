@@ -1,19 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Quota
-localization_priority: Normal
-description: "The quota resource provides details about space constrains on a Drive resource."
-ms.prod: ""
+title: quota
+ms.localizationpriority: medium
+description: "The quota resource provides details about space constraints on a drive resource."
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# Quota resource type
+# quota resource type
 
 Namespace: microsoft.graph
 
-The **quota** resource provides details about space constrains on a [Drive](drive.md) resource.
+The **quota** resource provides details about space constraints on a [drive](drive.md) resource. In OneDrive Personal, the values reflect the total/used unified storage quota across multiple Microsoft services.
 
 ## JSON representation
 
@@ -42,12 +40,13 @@ Here is a JSON representation of the resource.
 
 | Property name | Type   | Description                                                                 |
 |:--------------|:-------|:----------------------------------------------------------------------------|
-| total         | Int64  | Total allowed storage space, in bytes. Read-only.                           |
-| used          | Int64  | Total space used, in bytes. Read-only.                                      |
-| remaining     | Int64  | Total space remaining before reaching the quota limit, in bytes. Read-only. |
 | deleted       | Int64  | Total space consumed by files in the recycle bin, in bytes. Read-only.      |
+| remaining     | Int64  | Total space remaining before reaching the quota limit, in bytes. Read-only. |
 | state         | string | Enumeration value that indicates the state of the storage space. Read-only. |
 | storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Information about the drive's storage quota plans. Only in Personal OneDrive.|
+| total         | Int64  | Total allowed storage space, in bytes. Read-only.                           |
+| used          | Int64  | Total space used, in bytes. Read-only.                                      |
+
 
 ## State Enumeration
 

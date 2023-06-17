@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var webAccount = new WebAccount
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new WebAccount
 {
-	WebUrl = "https://github.com/innocenty.popov"
+	WebUrl = "https://github.com/innocenty.popov",
 };
+var result = await graphClient.Me.Profile.WebAccounts["{webAccount-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Profile.WebAccounts["{id}"]
-	.Request()
-	.UpdateAsync(webAccount);
 
 ```

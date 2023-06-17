@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var user = new User
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new User
 {
-	BusinessPhones = new List<String>()
+	BusinessPhones = new List<string>
 	{
-		"businessPhones-value"
+		"+1 425 555 0109",
 	},
-	OfficeLocation = "city-value"
+	OfficeLocation = "18/2111",
 };
+var result = await graphClient.Me.PatchAsync(requestBody);
 
-await graphClient.Me
-	.Request()
-	.UpdateAsync(user);
 
 ```

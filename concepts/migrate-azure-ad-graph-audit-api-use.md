@@ -1,16 +1,19 @@
 ---
 title: "Examine Azure AD Graph APIs app usage"
-description: "Describes how to audit Azure Active Directory (Azure AD) APIs to migrate an app to Microsoft Graph API."
-author: "dkershaw10"
-localization_priority: Normal
-ms.prod: "azure-active-directory"
+description: "Describes how to audit Azure Active Directory (Azure AD) Graph APIs to migrate an app to Microsoft Graph API."
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
+ms.localizationpriority: medium
+ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Examine Azure AD Graph APIs app usage
 
 This is step 2 of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-While planning your migration to Microsoft Graph, take time to review your existing application and to catalog the Azure AD Graph APIs you're currently using.
+While planning your migration to Microsoft Graph, take time to review your existing application and to catalog the Azure Active Directory (Azure AD) Graph APIs you're currently using.
 
 Compare your list to the known differences.  This helps identify specific changes you'll need to make to migrate your app.  These include simple changes easily resolved using an editor's search-and-replace features or more complicated updates that might require more analysis.
 
@@ -21,6 +24,7 @@ Microsoft Graph supports many of the same features and capabilities of Azure AD 
 - [Resource type differences](migrate-azure-ad-graph-resource-differences.md)
 - [Property differences](migrate-azure-ad-graph-property-differences.md)
 - [Method differences](migrate-azure-ad-graph-method-differences.md)
+- [Permissions differences](migrate-azure-ad-graph-permissions-differences.md)
 
 You'll also want to verify the permissions required for the features your app is using.  In some cases, more granular permissions are available.
 

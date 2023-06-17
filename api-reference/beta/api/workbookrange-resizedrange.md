@@ -1,7 +1,7 @@
 ---
 title: "workbookRange: resizedRange"
-description: "Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns."
-localization_priority: Normal
+description: "Get a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns."
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
+Get a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
-
+POST /me/drive/items/{id}/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 ```
 
 ## Function parameters
@@ -42,19 +42,19 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [workbookRange](../resources/workbookrange.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+
+### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "workbookrange_resizedrange"
@@ -63,8 +63,9 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/resizedRange(deltarows={n}, deltaColumns={n})
 ```
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,7 +74,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 157
 
 {
   "address": "address-value",

@@ -1,7 +1,7 @@
 ---
 title: "deviceConfigurationPolicySetItem resource type"
 description: "A class containing the properties used for device configuration PolicySetItem."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -32,7 +32,7 @@ Inherits from [policySetItem](../resources/intune-policyset-policysetitem.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the MobileAppPolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|id|String|Key of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |createdDateTime|DateTimeOffset|Creation time of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |payloadId|String|PayloadId of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
@@ -69,9 +69,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

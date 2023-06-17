@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getTeamsDeviceUsageUserCounts"
-description: "Get the number of Microsoft Teams daily unique users by device type."
-localization_priority: Normal
+description: "Get the number of daily unique Microsoft Teams licensed users by device type."
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of Microsoft Teams daily unique users by device type.
+Get the number of daily unique Microsoft Teams licensed users by device type.
 
 ## Permissions
 
@@ -68,12 +68,14 @@ The CSV file has the following headers for columns.
 - iOS
 - Mac
 - Windows
+- Chrome OS
+- Linux
 - Report Date
 - Report Period
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[teamsDeviceUsageUserCounts](../resources/teamsdeviceusageusercounts.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 ## Example
 
@@ -120,7 +122,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Report Date,Report Period
+Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Chrome OS,Linux,Report Date,Report Period
 ```
 
 ### JSON
@@ -146,12 +148,12 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserCounts(perio
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsDeviceUsageUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -160,7 +162,6 @@ Content-Type: application/json
 Content-Length: 269
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsDeviceUsageUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
@@ -170,6 +171,8 @@ Content-Length: 269
       "ios": 75, 
       "mac": 16, 
       "windows": 257, 
+      "chromeOS": 10, 
+      "linux": 5, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }

@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getSharePointActivityFileCounts"
 description: "Get the number of unique, licensed users who interacted with files stored on SharePoint sites."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -80,7 +80,7 @@ The following is an example of the request.
   "name": "reportroot_getsharepointactivityfilecounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityFileCounts(period='D7')
 ```
 

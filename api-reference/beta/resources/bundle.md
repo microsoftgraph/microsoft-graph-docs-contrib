@@ -1,12 +1,12 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: bundle resource type
 description: Facet describing a driveItem that is a logical grouping of other driveItems
-localization_priority: Normal
-ms.prod: "sharepoint"
+ms.localizationpriority: medium
+ms.prod: sharepoint
 doc_type: resourcePageType
 ---
+
 # bundle resource type
 
 Namespace: microsoft.graph
@@ -21,27 +21,27 @@ Note that the `bundle` resource type itself is not an entity of its own, and is 
 
 ## Methods
 
-|                        Method             |         Return type      | Description        |
-| :---------------------------------------- | :----------------------- | :------------------|
-| [List bundles][bundle-list]               | [driveItem][] collection | List all bundles in a drive |
-| [Get bundle][bundle-get]                  | [driveItem][]            | Get bundle metadata |
-| [Create bundle][bundle-create]            | [driveItem][]            | Create a new bundle |
-| [Add item][bundle-add-item]               | None                     | Add a [driveItem][] to an existing bundle |
-| [Remove item][bundle-remove-item]         | None                     | Remove a [driveItem][] from an existing bundle |
-| [Update bundle][bundle-update]            | [driveItem][]            | Update bundle metadata |
-| [Delete bundle][bundle-delete]            | None                     | Delete bundle |
-
+| Method                            | Return type              | Description                                    |
+| :-------------------------------- | :----------------------- | :--------------------------------------------- |
+| [List bundles][bundle-list]       | [driveItem][] collection | List all bundles in a drive                    |
+| [Get bundle][bundle-get]          | [driveItem][]            | Get bundle metadata                            |
+| [Create bundle][bundle-create]    | [driveItem][]            | Create a new bundle                            |
+| [Add item][bundle-add-item]       | None                     | Add a [driveItem][] to an existing bundle      |
+| [Remove item][bundle-remove-item] | None                     | Remove a [driveItem][] from an existing bundle |
+| [Update bundle][bundle-update]    | [driveItem][]            | Update bundle metadata                         |
+| [Delete bundle][bundle-delete]    | None                     | Delete bundle                                  |
 
 ## Properties
 
-| Property name | Type      | Description
-|:--------------|:----------|:------------------------------------------------
-| childCount    | Int32     | Number of children contained immediately within this container.
-| album         | [album][] | If the bundle is an [album][], then the `album` property is included
+| Property   | Type      | Description                                                          |
+| :--------- | :-------- | :------------------------------------------------------------------- |
+| childCount | Int32     | Number of children contained immediately within this container.      |
+| album      | [album][] | If the bundle is an [album][], then the `album` property is included |
 
 ## JSON representation
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.bundle" } -->
+
 ```json
 {
   "childCount": 3,
@@ -60,5 +60,3 @@ Note that the `bundle` resource type itself is not an entity of its own, and is 
 [bundle-remove-item]: ../api/bundle-removeItem.md
 [bundle-update]: ../api/bundle-update.md
 [bundle-delete]: ../api/bundle-delete.md
-
-

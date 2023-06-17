@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var servicePrincipal = new ServicePrincipal
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ServicePrincipal
 {
-	AppRoleAssignmentRequired = true
+	AppRoleAssignmentRequired = true,
 };
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].PatchAsync(requestBody);
 
-await graphClient.ServicePrincipals["{id}"]
-	.Request()
-	.UpdateAsync(servicePrincipal);
 
 ```

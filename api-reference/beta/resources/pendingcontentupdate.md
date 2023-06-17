@@ -1,10 +1,10 @@
 ---
 title: "pendingContentUpdate"
 description: "The pendingContentUpdate resource indicates that an operation that might affect the binary content of the driveItem is pending completion."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "JeremyKelley"
 ms.date: 08/06/2019
-ms.prod: ""
+ms.prod: notes
 doc_type: "resourcePageType"
 ---
 

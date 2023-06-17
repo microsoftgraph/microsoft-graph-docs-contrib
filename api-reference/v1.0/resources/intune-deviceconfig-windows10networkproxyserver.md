@@ -1,7 +1,7 @@
 ---
 title: "windows10NetworkProxyServer resource type"
 description: "Network Proxy Server Policy."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -18,7 +18,7 @@ Network Proxy Server Policy.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|address|String|Address to the proxy server. Specify an address in the format \<server\>\[:\<port\>\]|
+|address|String|Address to the proxy server. Specify an address in the format <server>\[“:”<port>\]|
 |exceptions|String collection|Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node.|
 |useForLocalAddresses|Boolean|Specifies whether the proxy server should be used for local (intranet) addresses.|
 
@@ -42,12 +42,3 @@ Here is a JSON representation of the resource.
   "useForLocalAddresses": true
 }
 ```
-
-
-
-
-
-
-
-
-

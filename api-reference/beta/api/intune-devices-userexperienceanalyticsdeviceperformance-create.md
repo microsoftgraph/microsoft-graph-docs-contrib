@@ -1,7 +1,7 @@
 ---
 title: "Create userExperienceAnalyticsDevicePerformance"
 description: "Create a new userExperienceAnalyticsDevicePerformance object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Create a new [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -52,21 +52,23 @@ The following table shows the properties that are required when you create the u
 |deviceName|String|The user experience analytics device name.|
 |model|String|The user experience analytics device model.|
 |manufacturer|String|The user experience analytics device manufacturer.|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|The user experience analytics device disk type. Possible values are: `unkown`, `hdd`, `ssd`.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|The user experience analytics device disk type. Possible values are: `unknown`, `hdd`, `ssd`, `unknownFutureValue`.|
 |operatingSystemVersion|String|The user experience analytics device Operating System version.|
 |bootScore|Int32|The user experience analytics device boot score.|
 |coreBootTimeInMs|Int32|The user experience analytics device core boot time in milliseconds.|
 |groupPolicyBootTimeInMs|Int32|The user experience analytics device group policy boot time in milliseconds.|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 |loginScore|Int32|The user experience analytics device login score.|
 |coreLoginTimeInMs|Int32|The user experience analytics device core login time in milliseconds.|
 |groupPolicyLoginTimeInMs|Int32|The user experience analytics device group policy login time in milliseconds.|
 |deviceCount|Int64|User experience analytics summarized device count.|
 |responsiveDesktopTimeInMs|Int32|The user experience analytics responsive desktop time in milliseconds.|
-|blueScreenCount|Int32|Number of Blue Screens in the last 14 days. Valid values 0 to 9999999|
-|restartCount|Int32|Number of Restarts in the last 14 days. Valid values 0 to 9999999|
-|averageBlueScreens|Double|Average (mean) number of Blue Screens per device in the last 14 days. Valid values 0 to 9999999|
-|averageRestarts|Double|Average (mean) number of Restarts per device in the last 14 days. Valid values 0 to 9999999|
+|blueScreenCount|Int32|Number of Blue Screens in the last 30 days. Valid values 0 to 9999999|
+|restartCount|Int32|Number of Restarts in the last 30 days. Valid values 0 to 9999999|
+|averageBlueScreens|Double|Average (mean) number of Blue Screens per device in the last 30 days. Valid values 0 to 9999999|
+|averageRestarts|Double|Average (mean) number of Restarts per device in the last 30 days. Valid values 0 to 9999999|
+|startupPerformanceScore|Double|The user experience analytics device startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|modelStartupPerformanceScore|Double|The user experience analytics model level startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 
 
 
@@ -80,7 +82,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance
 Content-type: application/json
-Content-length: 635
+Content-length: 739
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -101,7 +103,9 @@ Content-length: 635
   "blueScreenCount": 15,
   "restartCount": 12,
   "averageBlueScreens": 6.0,
-  "averageRestarts": 5.0
+  "averageRestarts": 5.0,
+  "startupPerformanceScore": 7.666666666666667,
+  "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
 
@@ -110,7 +114,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 684
+Content-Length: 788
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -132,12 +136,8 @@ Content-Length: 684
   "blueScreenCount": 15,
   "restartCount": 12,
   "averageBlueScreens": 6.0,
-  "averageRestarts": 5.0
+  "averageRestarts": 5.0,
+  "startupPerformanceScore": 7.666666666666667,
+  "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
-
-
-
-
-
-

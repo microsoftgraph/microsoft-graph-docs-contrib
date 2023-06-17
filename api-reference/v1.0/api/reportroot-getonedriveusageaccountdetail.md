@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getOneDriveUsageAccountDetail"
 description: "Get details about OneDrive usage by account."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -88,7 +88,7 @@ The following is an example of the request.
   "name": "reportroot_getonedriveusageuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOneDriveUsageAccountDetail(period='D7')
 ```
 

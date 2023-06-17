@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-await graphClient.AccessReviews["2975E9B5-44CE-4E71-93D3-30F03B5AA992"]
-	.ResetDecisions()
-	.Request()
-	.PostAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+await graphClient.AccessReviews["{accessReview-id}"].ResetDecisions.PostAsync();
+
 
 ```

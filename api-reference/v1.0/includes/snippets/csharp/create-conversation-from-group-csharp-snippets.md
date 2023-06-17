@@ -4,43 +4,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var conversation = new Conversation
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Conversation
 {
-	Topic = "New locations for this quarter",
-	Threads = (IConversationThreadsCollectionPage)new List<ConversationThread>()
+	Topic = "Take your wellness days and rest",
+	Threads = new List<ConversationThread>
 	{
 		new ConversationThread
 		{
-			Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
+			Posts = new List<Post>
 			{
 				new Post
 				{
 					Body = new ItemBody
 					{
 						ContentType = BodyType.Html,
-						Content = "What do we know so far?"
+						Content = "Contoso cares about you: Rest and Recharge",
 					},
-					NewParticipants = new List<Recipient>()
+					NewParticipants = new List<Recipient>
 					{
 						new Recipient
 						{
 							EmailAddress = new EmailAddress
 							{
 								Name = "Adele Vance",
-								Address = "AdeleV@contoso.onmicrosoft.com"
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+								Address = "AdeleV@contoso.onmicrosoft.com",
+							},
+						},
+					},
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Groups["{group-id}"].Conversations.PostAsync(requestBody);
 
-await graphClient.Groups["29981b6a-0e57-42dc-94c9-cd24f5306196"].Conversations
-	.Request()
-	.AddAsync(conversation);
 
 ```

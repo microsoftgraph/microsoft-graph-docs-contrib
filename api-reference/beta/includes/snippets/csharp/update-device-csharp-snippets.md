@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var device = new Device
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Device
 {
-	AccountEnabled = false
+	AccountEnabled = false,
 };
+var result = await graphClient.Devices["{device-id}"].PatchAsync(requestBody);
 
-await graphClient.Devices["{id}"]
-	.Request()
-	.UpdateAsync(device);
 
 ```

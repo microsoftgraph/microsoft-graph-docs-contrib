@@ -1,7 +1,7 @@
 ---
 title: "androidWorkProfileGeneralDeviceConfiguration resource type"
 description: "Android Work Profile general device configuration."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -53,6 +53,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset. Valid values 1 to 16|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Type of password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
+|requiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required device password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is a new API targeted to Android 12+. Possible values are: `none`, `low`, `medium`, `high`.|
+|workProfileAllowAppInstallsFromUnknownSources|Boolean|Indicates whether to allow installation of apps from unknown sources.|
 |workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|Type of data sharing that is allowed. Possible values are: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
 |workProfileBlockNotificationsWhileDeviceLocked|Boolean|Indicates whether or not to block notifications while device locked.|
 |workProfileBlockAddingAccounts|Boolean|Block users from adding/removing accounts in work profile.|
@@ -79,12 +81,15 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |workProfilePasswordPreviousPasswordBlockCount|Int32|Number of previous work profile passwords to block. Valid values 0 to 24|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 1 to 16|
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Type of work profile password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
+|workProfileRequiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required work profile password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is a new API targeted to Android 12+. Possible values are: `none`, `low`, `medium`, `high`.|
 |workProfileRequirePassword|Boolean|Password is required or not for work profile|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 |vpnAlwaysOnPackageIdentifier|String|Enable lockdown mode for always-on VPN.|
 |vpnEnableAlwaysOnLockdownMode|Boolean|Enable lockdown mode for always-on VPN.|
 |workProfileAllowWidgets|Boolean|Allow widgets from work profile apps.|
 |workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|Prevent app installations from unknown sources in the personal profile.|
+|workProfileAccountUse|[androidWorkProfileAccountUse](../resources/intune-deviceconfig-androidworkprofileaccountuse.md)|Control user's ability to add accounts in work profile including Google accounts. Possible values are: `allowAllExceptGoogleAccounts`, `blockAll`, `allowAll`, `unknownFutureValue`.|
+|allowedGoogleAccountDomains|String collection|Determine domains allow-list for accounts that can be added to work profile.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -149,6 +154,8 @@ Here is a JSON representation of the resource.
   "passwordPreviousPasswordBlockCount": 1024,
   "passwordSignInFailureCountBeforeFactoryReset": 1024,
   "passwordRequiredType": "String",
+  "requiredPasswordComplexity": "String",
+  "workProfileAllowAppInstallsFromUnknownSources": true,
   "workProfileDataSharingType": "String",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
   "workProfileBlockAddingAccounts": true,
@@ -175,17 +182,16 @@ Here is a JSON representation of the resource.
   "workProfilePasswordPreviousPasswordBlockCount": 1024,
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 1024,
   "workProfilePasswordRequiredType": "String",
+  "workProfileRequiredPasswordComplexity": "String",
   "workProfileRequirePassword": true,
   "securityRequireVerifyApps": true,
   "vpnAlwaysOnPackageIdentifier": "String",
   "vpnEnableAlwaysOnLockdownMode": true,
   "workProfileAllowWidgets": true,
-  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true,
+  "workProfileAccountUse": "String",
+  "allowedGoogleAccountDomains": [
+    "String"
+  ]
 }
 ```
-
-
-
-
-
-

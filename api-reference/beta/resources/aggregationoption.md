@@ -1,8 +1,8 @@
 ---
 title: "aggregationOption resource type"
-description: "Specifies the aggregationOption entity"
-localization_priority: Normal
-author: "nmoreau"
+description: "Specifies which aggregations should be returned alongside the search results"
+ms.localizationpriority: medium
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
@@ -18,10 +18,10 @@ Specifies which aggregations should be returned alongside the search results.
 ## Properties
 
 | Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|field|String|Specifies the field in the schema of the specified entity type that aggregation should be computed on. Required.|
-|size|Int32|The number of [searchBucket](searchBucket.md) resources to be returned. This is not required when the range is provided manually in the search request. Optional.|
+|:-------------|:------------|:------------| 
 |bucketDefinition|[bucketAggregationDefinition](bucketaggregationdefinition.md)|Specifies the criteria to compute an aggregation. Optional.|
+|field|String|Computes aggregation on the field while the field exists in current entity type. Required.|
+|size|Int32|The number of [searchBucket](searchBucket.md) resources to be returned. This is not required when the range is provided manually in the search request. Optional.|
 
 ## JSON representation
 

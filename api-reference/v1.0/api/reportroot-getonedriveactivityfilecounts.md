@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getOneDriveActivityFileCounts"
 description: "Get the number of unique, licensed users that performed file interactions against any OneDrive account."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -80,7 +80,7 @@ The following is an example of the request.
   "name": "reportroot_getonedriveactivityfilecounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOneDriveActivityFileCounts(period='D7')
 ```
 

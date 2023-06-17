@@ -1,0 +1,1002 @@
+{
+	"changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "conditionalAccessExternalTenantsMembershipKind",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditionalAccessExternalTenantsMembershipKind** enumeration type.",
+          "Target": "conditionalAccessExternalTenantsMembershipKind"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "conditionalAccessGuestOrExternalUserTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditionalAccessGuestOrExternalUserTypes** enumeration type.",
+          "Target": "conditionalAccessGuestOrExternalUserTypes"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessAllExternalTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessAllExternalTenants](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessAllExternalTenants?view=graph-rest-1.0) resource type.",
+          "Target": "conditionalAccessAllExternalTenants"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessEnumeratedExternalTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessEnumeratedExternalTenants](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessEnumeratedExternalTenants?view=graph-rest-1.0) resource type.",
+          "Target": "conditionalAccessEnumeratedExternalTenants"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessExternalTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessExternalTenants](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessExternalTenants?view=graph-rest-1.0) resource type.",
+          "Target": "conditionalAccessExternalTenants"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessGuestsOrExternalUsers",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessGuestsOrExternalUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGuestsOrExternalUsers?view=graph-rest-1.0) resource type.",
+          "Target": "conditionalAccessGuestsOrExternalUsers"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Property",
+          "ChangedApiName": "excludeGuestsOrExternalUsers",
+          "ChangeType": "Addition",
+          "Description": "Added the **excludeGuestsOrExternalUsers** property to the [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessUsers"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeGuestsOrExternalUsers",
+          "ChangeType": "Addition",
+          "Description": "Added the **includeGuestsOrExternalUsers** property to the [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessUsers"
+        }
+      ],
+      "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-03T16:31:23.725417Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+	    {
+      "ChangeList": [
+        {
+          "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
+          "ApiChange": "Member",
+          "ChangedApiName": "servicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the `servicePrincipal` member to the **activityType** enumeration.",
+          "Target": "activityType"
+        },
+        {
+          "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminConfirmedServicePrincipalCompromised",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminConfirmedServicePrincipalCompromised` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminDismissedAllRiskForServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminDismissedAllRiskForServicePrincipal` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "riskServicePrincipalActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [riskServicePrincipalActivity](https://docs.microsoft.com/en-us/graph/api/resources/riskServicePrincipalActivity?view=graph-rest-1.0) resource type.",
+          "Target": "riskServicePrincipalActivity"
+        },
+        {
+          "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "riskyServicePrincipals",
+          "ChangeType": "Addition",
+          "Description": "Added the **riskyServicePrincipals** relationship to the [identityProtectionRoot](https://docs.microsoft.com/en-us/graph/api/resources/identityProtectionRoot?view=graph-rest-1.0) resource.",
+          "Target": "identityProtectionRoot"
+        },
+        {
+          "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalRiskDetections",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePrincipalRiskDetections** relationship to the [identityProtectionRoot](https://docs.microsoft.com/en-us/graph/api/resources/identityProtectionRoot?view=graph-rest-1.0) resource.",
+          "Target": "identityProtectionRoot"
+        },
+        {
+          "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "riskyServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipal?view=graph-rest-1.0) resource",
+          "Target": "riskyServicePrincipal"
+        },
+        {
+          "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "riskyServicePrincipalHistoryItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [riskyServicePrincipalHistoryItem](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipalHistoryItem?view=graph-rest-1.0) resource",
+          "Target": "riskyServicePrincipalHistoryItem"
+        },
+        {
+          "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalRiskDetection",
+          "ChangeType": "Addition",
+          "Description": "Added the [servicePrincipalRiskDetection](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipalRiskDetection?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipalRiskDetection"
+        },
+        {
+          "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
+          "ApiChange": "Method",
+          "ChangedApiName": "confirmCompromised",
+          "ChangeType": "Addition",
+          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-1.0) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipal?view=graph-rest-1.0) resource.",
+          "Target": "riskyServicePrincipal"
+        },
+        {
+          "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
+          "ApiChange": "Method",
+          "ChangedApiName": "dismiss",
+          "ChangeType": "Addition",
+          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-1.0) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipal?view=graph-rest-1.0) resource.",
+          "Target": "riskyServicePrincipal"
+        }
+      ],
+      "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-05T00:00:00.4722346Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+		{
+			"ChangeList": [
+			  {
+				"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+				"ApiChange": "Member",
+				"ChangedApiName": "adminConfirmedServicePrincipalCompromised",
+				"ChangeType": "Addition",
+				"Description": "Added the `adminConfirmedServicePrincipalCompromised` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+				"ApiChange": "Member",
+				"ChangedApiName": "m365DAdminDismissedDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the `adminDismissedAllRiskForServicePrincipal` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+				"ApiChange": "Member",
+				"ChangedApiName": "m365DAdminDismissedDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the `m365DAdminDismissedDetection` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  }
+			],
+			"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-09-12T15:11:34.8050491Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+			  {
+				"Id": "9c8271a4-b275-4d34-bef6-2ab260c1c4bf",
+				"ApiChange": "Member",
+				"ChangedApiName": "m365DAdminDismissedDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the `m365DAdminDismissedDetection` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  }
+			],
+			"Id": "9c8271a4-b275-4d34-bef6-2ab260c1c4bf",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2022-09-12T18:11:30.5644341Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+		      "ChangeList": [
+			{
+			  "Id": "68fb7e36-efee-4e07-a53c-06325d9e1e91",
+			  "ApiChange": "Enumeration",
+			  "ChangedApiName": "conditionalAccessExternalTenantsMembershipKind",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **conditionalAccessExternalTenantsMembershipKind** enumeration.",
+			  "Target": "conditionalAccessExternalTenantsMembershipKind"
+			},
+			{
+			  "Id": "68fb7e36-efee-4e07-a53c-06325d9e1e91",
+			  "ApiChange": "Enumeration",
+			  "ChangedApiName": "conditionalAccessGuestOrExternalUserTypes",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **conditionalAccessGuestOrExternalUserTypes** enumeration.",
+			  "Target": "conditionalAccessGuestOrExternalUserTypes"
+			},
+			{
+			  "Id": "68fb7e36-efee-4e07-a53c-06325d9e1e91",
+			  "ApiChange": "Resource",
+			  "ChangedApiName": "conditionalAccessAllExternalTenants",
+			  "ChangeType": "Addition",
+			  "Description": "Added the [conditionalAccessAllExternalTenants] (https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessAllExternalTenants?view=graph-rest-beta) resource.",
+			  "Target": "conditionalAccessAllExternalTenants"
+			},
+			{
+			  "Id": "68fb7e36-efee-4e07-a53c-06325d9e1e91",
+			  "ApiChange": "Resource",
+			  "ChangedApiName": "conditionalAccessEnumeratedExternalTenants",
+			  "ChangeType": "Addition",
+			  "Description": "Added the [conditionalAccessEnumeratedExternalTenants] (https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessEnumeratedExternalTenants?view=graph-rest-beta) resource.",
+			  "Target": "conditionalAccessEnumeratedExternalTenants"
+			},
+			{
+			  "Id": "68fb7e36-efee-4e07-a53c-06325d9e1e91",
+			  "ApiChange": "Resource",
+			  "ChangedApiName": "conditionalAccessExternalTenants",
+			  "ChangeType": "Addition",
+			  "Description": "Added the [conditionalAccessExternalTenants] (https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessExternalTenants?view=graph-rest-beta)  resource.",
+			  "Target": "conditionalAccessExternalTenants"
+			},
+			{
+			  "Id": "68fb7e36-efee-4e07-a53c-06325d9e1e91",
+			  "ApiChange": "Resource",
+			  "ChangedApiName": "conditionalAccessGuestsOrExternalUsers",
+			  "ChangeType": "Addition",
+			  "Description": "Added the [conditionalAccessGuestsOrExternalUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGuestsOrExternalUsers?view=graph-rest-beta) resource.",
+			  "Target": "conditionalAccessGuestsOrExternalUsers"
+			},
+			{
+			  "Id": "68fb7e36-efee-4e07-a53c-06325d9e1e91",
+			  "ApiChange": "Property",
+			  "ChangedApiName": "excludeGuestsOrExternalUsers",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **excludeGuestsOrExternalUsers** property to the [conditionalaccessusers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessusers?view=graph-rest-beta) resource.",
+			  "Target": "conditionalAccessUsers"
+			},
+			{
+			  "Id": "68fb7e36-efee-4e07-a53c-06325d9e1e91",
+			  "ApiChange": "Property",
+			  "ChangedApiName": "includeGuestsOrExternalUsers",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **includeGuestsOrExternalUsers** property to the [conditionalaccessusers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessusers?view=graph-rest-beta) resource. ",
+			  "Target": "conditionalAccessUsers"
+			}
+		      ],
+		      "Id": "68fb7e36-efee-4e07-a53c-06325d9e1e91",
+		      "Cloud": "Prod",
+		      "Version": "beta",
+		      "CreatedDateTime": "2022-09-28T22:16:14.3585844Z",
+		      "WorkloadArea": "Identity and access",
+		      "SubArea": "Identity and sign-in"
+    		},
+		{
+		      "ChangeList": [
+			{
+			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+			  "ApiChange": "Enumeration",
+			  "ChangedApiName": "signInFrequencyAuthenticationType",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **signInFrequencyAuthenticationType** enumeration type.",
+			  "Target": "signInFrequencyAuthenticationType"
+			},
+			{
+			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+			  "ApiChange": "Enumeration",
+			  "ChangedApiName": "signInFrequencyInterval",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **signInFrequencyInterval** enumeration type.",
+			  "Target": "signInFrequencyInterval"
+			},
+			{
+			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+			  "ApiChange": "Property",
+			  "ChangedApiName": "authenticationType",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **authenticationType** property to the [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
+			  "Target": "signInFrequencySessionControl"
+			},
+			{
+			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+			  "ApiChange": "Property",
+			  "ChangedApiName": "frequencyInterval",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **frequencyInterval** property to the [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
+			  "Target": "signInFrequencySessionControl"
+			}
+		      ],
+		      "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+		      "Cloud": "Prod",
+		      "Version": "v1.0",
+		      "CreatedDateTime": "2022-08-12T23:51:58.4545889Z",
+		      "WorkloadArea": "Identity and access",
+		      "SubArea": "Identity and sign-in"
+    },
+    {
+			
+			"ChangeList": [
+			      {
+			  		"Id": "72b6ab5a-f674-4872-9c80-bb4dcb54915f",
+			  		"ApiChange": "Member",
+			  		"ChangedApiName": "linux",
+			  		"ChangeType": "Addition",
+			  		"Description": "Added the **linux** member to the **conditionalAccessDevicePlatform** enumeration.",
+			  		"Target": "conditionalAccessDevicePlatform"
+			      	    }
+		      	          ],
+		      		  "Id": "72b6ab5a-f674-4872-9c80-bb4dcb54915f",
+		      		  "Cloud": "Prod",
+		      		  "Version": "v1.0",
+		      		  "CreatedDateTime": "2022-03-18T02:27:11.9832963Z",
+		      		  "WorkloadArea": "Identity and access",
+		      		  "SubArea": "Identity and sign-in"
+    },
+    {
+			"ChangeList": [
+			  {
+				"Id": "1ea2aa9b-44d5-43b9-9b47-73ab6b4de86c",
+				"ApiChange": "Enum type",
+				"ChangedApiName": "signInFrequencyAuthenticationType",
+				"ChangeType": "Addition",
+				"Description": "Added the **signInFrequencyAuthenticationType** enumeration.",
+				"Target": "signInFrequencyAuthenticationType"
+			  },
+			  {
+				"Id": "1ea2aa9b-44d5-43b9-9b47-73ab6b4de86c",
+				"ApiChange": "Enum type",
+				"ChangedApiName": "signInFrequencyInterval",
+				"ChangeType": "Addition",
+				"Description": "Added the **signInFrequencyInterval** enumeration.",
+				"Target": "signInFrequencyInterval"
+			  },
+			  {
+				"Id": "1ea2aa9b-44d5-43b9-9b47-73ab6b4de86c",
+				"ApiChange": "Property",
+				"ChangedApiName": "authenticationType",
+				"ChangeType": "Addition",
+				"Description": "Added the **authenticationType** property to the [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-beta) resource.",
+				"Target": "signInFrequencySessionControl"
+			  },
+			  {
+				"Id": "1ea2aa9b-44d5-43b9-9b47-73ab6b4de86c",
+				"ApiChange": "Property",
+				"ChangedApiName": "frequencyInterval",
+				"ChangeType": "Addition",
+				"Description": "Added the **frequencyInterval** property to the [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-beta) resource.",
+				"Target": "signInFrequencySessionControl"
+			  }
+			],
+			"Id": "1ea2aa9b-44d5-43b9-9b47-73ab6b4de86c",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-03-18T21:32:10.5630958Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+      "ChangeList": [
+				{
+					"Id": "8aa81736-9387-4a42-ab7a-e69eaf53fb8c",
+					"ApiChange": "Property",
+					"ChangedApiName": "clientApplications",
+					"ChangeType": "Addition",
+					"Description": "Added the **clientApplications** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet) resource. Use this property to configure the service principals and workload identities to include in or exclude from a conditional access policy.",
+					"Target": "conditionalAccessConditionSet"
+				},
+				{
+					"Id": "8aa81736-9387-4a42-ab7a-e69eaf53fb8c",
+					"ApiChange": "Resource",
+					"ChangedApiName": "conditionalAccessClientApplications",
+					"ChangeType": "Addition",
+					"Description": "Added the [conditionalAccessClientApplications](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary) resource type.",
+					"Target": "conditionalAccessClientApplications"
+				}
+			],
+			"Id": "8aa81736-9387-4a42-ab7a-e69eaf53fb8c",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2022-03-18T00:00:00.000Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+      			"ChangeList": [
+        			{
+					  "Id": "8e875dc0-5df2-43c8-8c6b-316aed281493",
+					  "ApiChange": "Member",
+					  "ChangedApiName": "linux",
+					  "ChangeType": "Addition",
+					  "Description": "Added the **linux** member to the **conditionalAccessDevicePlatform** enumeration.",
+					  "Target": "conditionalAccessDevicePlatform"
+					}
+				      ],
+				      "Id": "8e875dc0-5df2-43c8-8c6b-316aed281493",
+				      "Cloud": "Prod",
+				      "Version": "beta",
+				      "CreatedDateTime": "2022-02-09T17:21:01.758458Z",
+				      "WorkloadArea": "Identity and access",
+				      "SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Member",
+				"ChangedApiName": "servicePrincipal",
+				"ChangeType": "Addition",
+				"Description": "Added the `servicePrincipal` member to the **activityType** enumeration.",
+				"Target": "activityType"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Member",
+				"ChangedApiName": "adminConfirmedServicePrincipalCompromised",
+				"ChangeType": "Addition",
+				"Description": "Added the `adminConfirmedServicePrincipalCompromised` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Member",
+				"ChangedApiName": "adminDismissedAllRiskForServicePrincipal",
+				"ChangeType": "Addition",
+				"Description": "Added the `adminDismissedAllRiskForServicePrincipal` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "riskServicePrincipalActivity",
+				"ChangeType": "Addition",
+				"Description": "Added the [riskServicePrincipalActivity](https://learn.microsoft.com/en-us/graph/api/resources/riskServicePrincipalActivity?view=graph-rest-beta) resource. Represents the risk activity of an Azure AD service principal as determined by Azure AD Identity Protection.",
+				"Target": "riskServicePrincipalActivity"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "riskyServicePrincipal",
+				"ChangeType": "Addition",
+				"Description": "Added the [riskyServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/riskyServicePrincipal?view=graph-rest-beta) resource and related methods. Use this API to access all at-risk service principals in your Azure AD tenant.",
+				"Target": "riskyServicePrincipal"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "servicePrincipalRiskDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the [servicePrincipalRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipalRiskDetection?view=graph-rest-beta) resource and related methods. Use this API to access all service principal risk detections in your Azure AD environment.",
+				"Target": "servicePrincipalRiskDetection"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Relationship",
+				"ChangedApiName": "riskyServicePrincipals",
+				"ChangeType": "Addition",
+				"Description": "Added the **riskyServicePrincipals** navigation property to the [identityProtectionRoot](https://learn.microsoft.com/en-us/graph/api/resources/identityProtectionRoot?view=graph-rest-beta) resource.",
+				"Target": "identityProtectionRoot"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Relationship",
+				"ChangedApiName": "servicePrincipalRiskDetections",
+				"ChangeType": "Addition",
+				"Description": "Added the **servicePrincipalRiskDetections** navigation property to the [identityProtectionRoot](https://learn.microsoft.com/en-us/graph/api/resources/identityProtectionRoot?view=graph-rest-beta) resource.",
+				"Target": "identityProtectionRoot"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "riskyServicePrincipalHistoryItem",
+				"ChangeType": "Addition",
+				"Description": "Added the [riskyServicePrincipalHistoryItem](https://learn.microsoft.com/en-us/graph/api/resources/riskyServicePrincipalHistoryItem?view=graph-rest-beta) resource and related methods. Use this API to retrieve the risk history of an Azure AD service principal as determined by Azure AD Identity Protection.",
+				"Target": "riskyServicePrincipalHistoryItem"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Method",
+				"ChangedApiName": "confirmCompromised",
+				"ChangeType": "Addition",
+				"Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta) method to the [riskyServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/riskyserviceprincipal?view=graph-rest-beta) resource.",
+				"Target": "riskyServicePrincipal"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Method",
+				"ChangedApiName": "dismiss",
+				"ChangeType": "Addition",
+				"Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta) method to the [riskyServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/riskyserviceprincipal?view=graph-rest-beta) resource.",
+				"Target": "riskyServicePrincipal"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Property",
+				"ChangedApiName": "servicePrincipalRiskLevels",
+				"ChangeType": "Addition",
+				"Description": "Added the **servicePrincipalRiskLevels** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) resource. Administrators can use this property to set a risk-based policy for service principals in their Azure AD tenant.",
+				"Target": "conditionalAccessConditionSet"
+			},
+			{
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Permission",
+				"ChangedApiName": "IdentityRiskyServicePrincipal.Read.All",
+				"ChangeType": "Addition",
+				"Description": "Added support for the service principals risk-based delegated and application permissions of `IdentityRiskyServicePrincipal.Read.All` to the read operations of Azure AD [identity protection](https://learn.microsoft.com/graph/api/resources/identityprotectionroot?view=graph-rest-beta) APIs.",
+				"Target": "identityProtectionRoot"
+			},
+			{
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Permission",
+				"ChangedApiName": "IdentityRiskyServicePrincipal.ReadWrite.All",
+				"ChangeType": "Addition",
+				"Description": "Added support for the service principals risk-based delegated and application permissions of `IdentityRiskyServicePrincipal.ReadWrite.All` to the read and write operations of Azure AD [identity protection](https://learn.microsoft.com/graph/api/resources/identityprotectionroot?view=graph-rest-beta) APIs.",
+				"Target": "identityProtectionRoot"
+			}
+			],
+			"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-02-09T00:00:00.2696343Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		  },
+		  {
+
+			"ChangeList": [
+				{
+				"Id": "df8951cf-1bb2-4670-ba15-bd95f1e0f44a",
+				"ApiChange": "Relationship",
+				"ChangedApiName": "authenticationStrength",
+				"ChangeType": "Addition",
+				"Description": "Added the **authenticationStrength** relationship to the [conditionalAccessGrantControls](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) resource.",
+				"Target": "conditionalAccessGrantControls"
+				}
+			],
+			"Id": "df8951cf-1bb2-4670-ba15-bd95f1e0f44a",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-10-12T00:00:00.4281584Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "cad83874-f5f9-459e-9b42-965603408cda",
+					"ApiChange": "Property",
+					"ChangedApiName": "clientApplications",
+					"ChangeType": "Addition",
+					"Description": "Added the **clientApplications** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-beta) resource. Use this property to configure the service principals and workload identities to include in or exclude from a conditional access policy.",
+					"Target": "conditionalAccessConditionSet"
+				},
+				{
+					"Id": "9946d332-7957-421b-ad0a-70b3a9f0efa4",
+					"ApiChange": "Resource",
+					"ChangedApiName": "conditionalAccessClientApplications",
+					"ChangeType": "Addition",
+					"Description": "Added the [conditionalAccessClientApplications](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource type.",
+					"Target": "conditionalAccessClientApplications"
+				}
+			],
+			"Id": "9946d332-7957-421b-ad0a-70b3a9f0efa4",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2021-01-26T00:00:00.000Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "3e561e90-bb23-498e-970c-4e1d562d4b3d",
+					"ApiChange": "Member",
+					"ChangedApiName": "ADFederationServicesMFAAdapter",
+					"ChangeType": "Addition",
+					"Description": "Added the **ADFederationServicesMFAAdapter** member to the **tokenIssuerType** enumeration.",
+					"Target": "tokenIssuerType"
+				},
+				{
+					"Id": "3e561e90-bb23-498e-970c-4e1d562d4b3d",
+					"ApiChange": "Member",
+					"ChangedApiName": "NPSExtension",
+					"ChangeType": "Addition",
+					"Description": "Added the **NPSExtension** member to the **tokenIssuerType** enumeration.",
+					"Target": "tokenIssuerType"
+				}
+			],
+			"Id": "3e561e90-bb23-498e-970c-4e1d562d4b3d",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-01-19T00:00:00.000Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+					"ApiChange": "Member",
+					"ChangedApiName": "AzureADBackupAuth",
+					"ChangeType": "Addition",
+					"Description": "Added the **AzureADBackupAuth** member to the **tokenIssuerType** enumeration.",
+					"Target": "tokenIssuerType"
+				},
+				{
+					"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+					"ApiChange": "Property",
+					"ChangedApiName": "riskType",
+					"ChangeType": "Deprecation",
+					"Description": "Deprecated the **riskType** property of the [riskDetection](https://learn.microsoft.com/en-us/graph/api/resources/riskdetection?view=graph-rest-beta) resource. Replaced with the **riskEventType** property.",
+					"Target": "riskDetection"
+				},
+				{
+					"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+					"ApiChange": "Property",
+					"ChangedApiName": "eventTypes ",
+					"ChangeType": "Deprecation",
+					"Description": "Deprecated the **eventTypes** property of the [riskUserActivity](https://learn.microsoft.com/en-us/graph/api/resources/riskuseractivity?view=graph-rest-beta) resource. Replaced with the **riskEventType** property.",
+					"Target": "riskUserActivity"
+				}
+			],
+			"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2021-12-28T00:00:00.000Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",
+					"ApiChange": "Property",
+					"ChangedApiName": "disableResilienceDefaults",
+					"ChangeType": "Addition",
+					"Description": "Added the **disableResilienceDefaults** property to the [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesssessioncontrols?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessSessionControls"
+				}
+			],
+			"Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2021-08-11T22:32:52.387Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
+					"ApiChange": "Property",
+					"ChangedApiName": "deviceFilter",
+					"ChangeType": "Addition",
+					"Description": "Added the **deviceFilter** property to the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
+					"ApiChange": "ComplexType",
+					"ChangedApiName": "conditionalAccessFilter",
+					"ChangeType": "Addition",
+					"Description": "Added the **conditionalAccessFilter** type to the [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessPolicy"
+				}
+			],
+			"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2021-06-21T18:03:46.8906341Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "0a7f2e5c-7af6-4546-ad77-7e068f3a718c",
+					"ApiChange": "Property",
+					"ChangedApiName": "migrate",
+					"ChangeType": "Addition",
+					"Description": "Added the **migrate** property to the [continuousAccessEvaluationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta) resource.",
+					"Target": "continuousAccessEvaluationPolicy"
+				}
+			],
+			"Id": "0a7f2e5c-7af6-4546-ad77-7e068f3a718c",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2021-10-22T23:46:51.9090188Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "d4673d1c-2924-11eb-9746-158983535857",
+					"ApiChange": "Property",
+					"ChangedApiName": "userRiskLevels",
+					"ChangeType": "Addition",
+					"Description": "Added the **userRiskLevels** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
+					"Target": "conditionalAccessConditionSet"
+				},
+				{
+					"Id": "d469a259-2924-11eb-9746-158983535857",
+					"ApiChange": "Member",
+					"ChangedApiName": "passwordChange",
+					"ChangeType": "Addition",
+					"Description": "Added the `passwordChange` member to the **conditionalAccessGrantControl** enumeration.",
+					"Target": "conditionalAccessGrantControl"
+				}
+			],
+			"Id": "d464db13-2924-11eb-9746-158983535857",
+			"Cloud": "prd",
+			"Version": "v1.0",
+			"CreatedDateTime": "2020-11-17T22:32:52.387Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "d4d6369d-3f0c-11eb-8849-810a86a5025c",
+					"ApiChange": "Property",
+					"ChangedApiName": "includeDevices",
+					"ChangeType": "Addition",
+					"Description": "Added the **includeDevices** property to the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "d4daff8e-3f0c-11eb-8849-810a86a5025c",
+					"ApiChange": "Property",
+					"ChangedApiName": "excludeDevices",
+					"ChangeType": "Addition",
+					"Description": "Added the **excludeDevices** property to the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "d4d6369e-3f0d-11ec-8840-810a86a5025d",
+					"ApiChange": "Property",
+					"ChangedApiName": "includeDeviceStates",
+					"ChangeType": "Change",
+					"Description": "Deprecated the **includeDeviceStates** property on the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "d4daff8d-3f0d-11ec-8840-810a86a5025d",
+					"ApiChange": "Property",
+					"ChangedApiName": "excludeDeviceStates",
+					"ChangeType": "Change",
+					"Description": "Deprecated the **excludeDeviceStates** property on the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Target": "conditionalAccessDevices"
+				}
+			],
+			"Id": "d4d13c07-3f0c-11eb-8849-810a86a5025c",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2020-12-15T19:36:30.757Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",
+					"ApiChange": "Property",
+					"ChangedApiName": "disableResilienceDefaults",
+					"ChangeType": "Addition",
+					"Description": "Added the **disableResilienceDefaults** property to the [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesssessioncontrols?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessSessionControls"
+				}
+			],
+			"Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2021-08-11T22:32:52.387Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "d4673d1c-2924-11eb-9746-158983535857",
+					"ApiChange": "Property",
+					"ChangedApiName": "userRiskLevels",
+					"ChangeType": "Addition",
+					"Description": "Added the **userRiskLevels** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
+					"Target": "conditionalAccessConditionSet"
+				},
+				{
+					"Id": "d469a259-2924-11eb-9746-158983535857",
+					"ApiChange": "Member",
+					"ChangedApiName": "passwordChange",
+					"ChangeType": "Addition",
+					"Description": "Added the `passwordChange` member to the **conditionalAccessGrantControl** enumeration.",
+					"Target": "conditionalAccessGrantControl"
+				}
+			],
+			"Id": "d464db13-2924-11eb-9746-158983535857",
+			"Cloud": "prd",
+			"Version": "v1.0",
+			"CreatedDateTime": "2020-11-17T22:32:52.387Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "d4d6369d-3f0c-11eb-8849-810a86a5025c",
+					"ApiChange": "Property",
+					"ChangedApiName": "includeDevices",
+					"ChangeType": "Addition",
+					"Description": "Added the **includeDevices** property to the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "d4daff8e-3f0c-11eb-8849-810a86a5025c",
+					"ApiChange": "Property",
+					"ChangedApiName": "excludeDevices",
+					"ChangeType": "Addition",
+					"Description": "Added the **excludeDevices** property to the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "d4d6369e-3f0d-11ec-8840-810a86a5025d",
+					"ApiChange": "Property",
+					"ChangedApiName": "includeDeviceStates",
+					"ChangeType": "Change",
+					"Description": "Deprecated the **includeDeviceStates** property on the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "d4daff8d-3f0d-11ec-8840-810a86a5025d",
+					"ApiChange": "Property",
+					"ChangedApiName": "excludeDeviceStates",
+					"ChangeType": "Change",
+					"Description": "Deprecated the **excludeDeviceStates** property on the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Target": "conditionalAccessDevices"
+				}
+			],
+			"Id": "d4d13c07-3f0c-11eb-8849-810a86a5025c",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2020-12-15T19:36:30.757Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
+					"ApiChange": "Property",
+					"ChangedApiName": "deviceFilter",
+					"ChangeType": "Addition",
+					"Description": "Added the **deviceFilter** property to the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
+					"ApiChange": "ComplexType",
+					"ChangedApiName": "conditionalAccessFilter",
+					"ChangeType": "Addition",
+					"Description": "Added the **conditionalAccessFilter** type to the [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessPolicy"
+				}
+			],
+			"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2021-06-21T18:03:46.8906341Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "e4c34d51-38ea-4b91-8525-c018bd362b9f",
+					"ApiChange": "EnumType",
+					"ChangedApiName": "filterMode",
+					"ChangeType": "Addition",
+					"Description": "Added the **filterMode** enumeration type.",
+					"Target": "filterMode"
+				},
+				{
+					"Id": "e4c34d51-38ea-4b91-8525-c018bd362b9f",
+					"ApiChange": "Property",
+					"ChangedApiName": "devices",
+					"ChangeType": "Addition",
+					"Description": "Added the **devices** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
+					"Target": "conditionalAccessConditionSet"
+				},
+				{
+					"Id": "e4c34d51-38ea-4b91-8525-c018bd362b9f",
+					"ApiChange": "Resource",
+					"ChangedApiName": "conditionalAccessDevices",
+					"ChangeType": "Addition",
+					"Description": "Added the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-1.0) resource type.",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "e4c34d51-38ea-4b91-8525-c018bd362b9f",
+					"ApiChange": "Resource",
+					"ChangedApiName": "conditionalAccessFilter",
+					"ChangeType": "Addition",
+					"Description": "Added the [conditionalAccessFilter](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessFilter?view=graph-rest-1.0) resource type.",
+					"Target": "conditionalAccessFilter"
+				}
+			],
+			"Id": "e4c34d51-38ea-4b91-8525-c018bd362b9f",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2021-10-18T21:20:59.3487047Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+			  {
+				"Id": "7208e6e3-6f7d-4490-a27b-c529578f9f8a",
+				"ApiChange": "Resource",
+				"ChangedApiName": "authenticationStrengthUsage",
+				"ChangeType": "Addition",
+				"Description": "Added the [authenticationStrengthUsage](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthUsage?view=graph-rest-1.0) resource type.",
+				"Target": "authenticationStrengthUsage"
+			  },
+			  {
+				"Id": "7208e6e3-6f7d-4490-a27b-c529578f9f8a",
+				"ApiChange": "Resource",
+				"ChangedApiName": "authenticationStrength",
+				"ChangeType": "Addition",
+				"Description": "Added the [authenticationStrength](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls?view=graph-rest-1.0) resource",
+				"Target": "conditionalAccessGrantControls"
+			  },
+			  {
+				"Id": "7208e6e3-6f7d-4490-a27b-c529578f9f8a",
+				"ApiChange": "Resource",
+				"ChangedApiName": "authenticationStrengthPolicy",
+				"ChangeType": "Addition",
+				"Description": "Added the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) resource",
+				"Target": "authenticationStrengthPolicy"
+			  },
+			  {
+				"Id": "7208e6e3-6f7d-4490-a27b-c529578f9f8a",
+				"ApiChange": "Method",
+				"ChangedApiName": "usage",
+				"ChangeType": "Addition",
+				"Description": "Added the [usage](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy-usage?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
+				"Target": "authenticationStrengthPolicy"
+			  }
+			],
+			"Id": "7208e6e3-6f7d-4490-a27b-c529578f9f8a",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2023-04-20T00:00:00.5059025Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		  }
+	]
+}

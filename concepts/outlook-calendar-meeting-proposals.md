@@ -1,19 +1,20 @@
 ---
-title: "Propose new meeting times in Outlook"
-description: "In Outlook, a meeting organizer can allow invitees to propose alternative meeting times."
-author: "angelgolfer-ms"
-localization_priority: Priority
+title: "Propose new meeting times in Outlook calendar"
+description: "Learn how to use the allowNewTimeProposals and proposedNewTime properties to set up meetings that allow invitees to propose alternative meeting times."
+author: "iamgirishck"
+ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
-# Propose new meeting times in Outlook
+# Propose new meeting times in Outlook calendar
 
 In Outlook, a meeting organizer can allow invitees to propose alternative meeting times, if they cannot meet at the original set date/time and accept tentatively or decline. The organizer can accept a proposal by adjusting the meeting time as appropriate.
 
 ## Example: attendee responds tentative and suggests a different date/time
+
 The following is an example where Alex invites Adele to lunch, Adele tentatively accepts and proposes an alternative date and time, and Alex accepts the proposal by adjusting the meeting accordingly:
 
-1. As the organizer, Alex sends a meeting request to Adele. He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-1.0) to `true` to let Adele suggest another time if she needs to.
+1. As the organizer, Alex sends a meeting request to Adele. He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event) to `true` to let Adele suggest another time if she needs to.
 
     <!-- {
       "blockType": "request",
@@ -75,7 +76,6 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "categories": [],
       "originalStartTimeZone": "Pacific Standard Time",
       "originalEndTimeZone": "Pacific Standard Time",
-      "uid": "0400000082008A9979A0BD16",
       "reminderMinutesBeforeStart": 15,
       "isReminderOn": true,
       "hasAttachments": false,
@@ -146,7 +146,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     }
     ```
 
-2. Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0). She notices the **allowNewTimeProposals** property is set. [Using the **event** associated](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2) with this **eventMessageRequest**, she makes a tentative reply and proposes the next day at the same time, in the **proposedNewTime** body parameter. She also sets the **sendResponse** parameter to true.
+2. Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest). She notices the **allowNewTimeProposals** property is set. [Using the **event** associated](/graph/api/eventmessage-get#example-2) with this **eventMessageRequest**, she makes a tentative reply and proposes the next day at the same time, in the **proposedNewTime** body parameter. She also sets the **sendResponse** parameter to true.
 
     <!-- {
       "blockType": "request",
@@ -183,7 +183,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     HTTP/1.1 202 Accepted
     ```
 
-3. Alex receives an email of the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) type. He notices the following:
+3. Alex receives an email of the [eventMessageResponse](/graph/api/resources/eventmessageresponse) type. He notices the following:
 
    - The subject includes a prefix and says "New Time Proposed: Let's go for lunch"
    - The sender is Adele Vance
@@ -308,7 +308,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     }
     ```
 
-4. Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal. This property is only present as part of an [attendee](/graph/api/resources/attendee?view=graph-rest-1.0) instance if the corresponding attendee has suggested an alternative meeting time. 
+4. Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal. This property is only present as part of an [attendee](/graph/api/resources/attendee) instance if the corresponding attendee has suggested an alternative meeting time. 
 
     <!-- {
       "blockType": "request",
@@ -419,7 +419,6 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "categories": [],
       "originalStartTimeZone": "Pacific Standard Time",
       "originalEndTimeZone": "Pacific Standard Time",
-      "uid": "0400000082008A9979A0BD16",
       "reminderMinutesBeforeStart": 15,
       "isReminderOn": true,
       "hasAttachments": false,

@@ -11,15 +11,16 @@ const options = {
 const client = Client.init(options);
 
 const homeRealmDiscoveryPolicy = {
-  definition: [
-    "definition-value"
+    definition: [
+    '{\"HomeRealmDiscoveryPolicy\':
+     {\'AccelerateToFederatedDomain\':true,
+      \'PreferredDomain\':\"federated.example.edu\",
+      \'AlternateIdLogin\':{\'Enabled\':true}}}"
   ],
-  displayName: "displayName-value",
-  isOrganizationDefault: true,
-  type: "type-value"
+    displayName: 'Contoso default HRD Policy'
 };
 
-let res = await client.api('/policies/homeRealmDiscoveryPolicies/{id}')
+await client.api('/policies/homeRealmDiscoveryPolicies/{id}')
 	.version('beta')
 	.update(homeRealmDiscoveryPolicy);
 

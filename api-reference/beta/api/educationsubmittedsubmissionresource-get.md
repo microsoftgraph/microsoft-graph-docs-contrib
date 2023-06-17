@@ -1,8 +1,8 @@
 ---
 title: "Get educationSubmittedSubmissionResource"
-description: "Returns a submitted resource. This will be available to a teacher after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources."
-author: "mmast-msft"
-localization_priority: Normal
+description: "Retrieve a submitted resource."
+author: "Sureshpadimi88"
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a submitted resource. This will be available to a teacher after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources.
+Retrieve a [submitted resource](../resources/educationsubmissionresource.md). Only teachers, students, and applications with application permissions can perform this operation.
+
+Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission. Note that teachers can leave notes in some resources.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,15 +24,17 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+|Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources/{id}
 ```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Header       | Value |
@@ -42,19 +46,21 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "get_educationsubmittedsubmissionresource"
+  "name": "get_educationsubmittedsubmissionresource",
+  "sampleKeys": ["11021", "19002", "850f51b7", "f2387c3b-ec39-4bf2-a399-d7242677f024"]
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/submittedResources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
-##### Response
+### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "ignored",
@@ -64,7 +70,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
   "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",

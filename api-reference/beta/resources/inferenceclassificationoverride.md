@@ -1,10 +1,10 @@
 ---
 title: "inferenceClassificationOverride resource type"
 description: "Represents a user's override for how incoming messages from a specific sender should always be classified as"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "svpsiva"
+ms.prod: mail
+author: "abheek-das"
 ---
 
 # inferenceClassificationOverride resource type
@@ -27,7 +27,7 @@ in a [Focused Inbox](manage-focused-inbox.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|classifyAs|string| Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.|
+|classifyAs|inferenceClassificationType| Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.|
 |id|string| The unique identifier of the override. Read-only.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|The email address information of the sender for whom the override is created.|
 

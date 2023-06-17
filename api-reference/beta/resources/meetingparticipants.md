@@ -1,8 +1,8 @@
 ---
 title: "meetingParticipants resource type"
 description: "Participants in a meeting."
-author: "ananmishr"
-localization_priority: Normal
+author: "awang119"
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -17,12 +17,17 @@ Participants in a meeting.
 
 ## Properties
 
-| Property       | Type    | Description|
-|:---------------|:--------|:----------|
-| attendees | [meetingParticipantInfo](meetingparticipantinfo.md) collection |  |
-| organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
-| producers | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only. |
-| contributors | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only. |
+| Property                  | Type                                                           | Description                           |
+| :------------------------ | :------------------------------------------------------------- | :------------------------------------ |
+| attendees                 | [meetingParticipantInfo](meetingparticipantinfo.md) collection | Information of the meeting attendees. |
+| organizer                 | [meetingParticipantInfo](meetingparticipantinfo.md)            | Information of the meeting organizer. |
+| producers (deprecated)    | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only.           |
+| contributors (deprecated) | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only.           |
+
+> [!CAUTION]
+> The **producers** and **contributors** properties are deprecated. All meeting participants are returned in the
+> **attendees** collection. Use the **role** property of [meetingParticipantInfo](meetingparticipantinfo.md)
+> to identify the meeting role of the attendee.
 
 ## JSON representation
 
@@ -30,17 +35,12 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.meetingParticipants"
 }-->
 ```json
 {
   "attendees": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
   "organizer": {"@odata.type": "#microsoft.graph.meetingParticipantInfo"},
-  "producers": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
-  "contributors": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
 }
 ```
 

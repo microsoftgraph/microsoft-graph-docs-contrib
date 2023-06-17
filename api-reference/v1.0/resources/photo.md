@@ -1,14 +1,13 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Photo
-localization_priority: Normal
+title: photo
+ms.localizationpriority: medium
 description: "The photo resource provides photo and camera properties, for example, EXIF metadata, on a driveItem."
-ms.prod: ""
+ms.prod: files
 doc_type: resourcePageType
 ---
-# Photo resource type
+# photo resource type
 
 Namespace: microsoft.graph
 
@@ -40,15 +39,15 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
 
 | Property                | Type           | Description
 |:------------------------|:---------------|:----------------------------------
-| **takenDateTime**       | DateTimeOffset | Represents the date and time the photo was taken. Read-only.
 | **cameraMake**          | String         | Camera manufacturer. Read-only.
 | **cameraModel**         | String         | Camera model. Read-only.
-| **fNumber**             | Double         | The F-stop value from the camera. Read-only.
 | **exposureDenominator** | Double         | The denominator for the exposure time fraction from the camera. Read-only.
 | **exposureNumerator**   | Double         | The numerator for the exposure time fraction from the camera. Read-only.
+| **fNumber**             | Double         | The F-stop value from the camera. Read-only.
 | **focalLength**         | Double         | The focal length from the camera. Read-only.
 | **iso**                 | Int32          | The ISO value from the camera. Read-only.
 | **orientation**         | Int16          | The orientation value from the camera. Writable on OneDrive Personal.      |
+| **takenDateTime**       | DateTimeOffset | Represents the date and time the photo was taken. Read-only.
 
 ## Remarks
 

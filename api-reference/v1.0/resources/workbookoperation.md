@@ -1,7 +1,7 @@
 ---
 title: "workbookOperation resource type"
 description: "Represents the status of a long-running workbook operations."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: "resourcePageType"
@@ -23,10 +23,11 @@ Represents the status of a long-running workbook operation.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|String| The current status of the operation. Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
-|id|String| The operation id. Read-only.|
 |error|[workbookOperationError](workbookoperationerror.md)| The error returned by the operation.|
+|id|String| The operation id. Read-only.|
 |resourceLocation|String| The resource URI for the result.|
+|status|String| The current status of the operation. Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
+|StatusCode| integer| Status code of the operation. | 
 
 ## Relationships
 
@@ -39,19 +40,22 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "id", "status", "error", "resourceLocation"
   ],
   "@odata.type": "microsoft.graph.workbookOperation",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.workbookOperation",
+  "error": {
+    "@odata.type": "microsoft.graph.workbookOperationError"
+  },
   "id": "String (identifier)",
-  "status": {"@odata.type": "microsoft.graph.workbookOperationStatus"},
-  "error": {"@odata.type": "microsoft.graph.workbookOperationError"},
   "resourceLocation": "String",
+  "status": "String",
+  "statusCode": "Integer"
 }
 ```
 

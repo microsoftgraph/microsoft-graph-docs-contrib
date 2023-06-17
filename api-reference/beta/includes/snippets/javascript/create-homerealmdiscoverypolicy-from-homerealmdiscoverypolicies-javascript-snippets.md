@@ -11,14 +11,17 @@ const options = {
 const client = Client.init(options);
 
 const homeRealmDiscoveryPolicy = {
-  definition: [
-    "definition-value"
+    definition: [
+    '{\"HomeRealmDiscoveryPolicy\':
+     {\'AccelerateToFederatedDomain\':true,
+      \'PreferredDomain\':\"federated.example.edu\",
+      \'AlternateIdLogin\':{\'Enabled\':true}}}"
   ],
-  displayName: "displayName-value",
-  isOrganizationDefault: true
+    displayName: 'displayName-value',
+    isOrganizationDefault: true
 };
 
-let res = await client.api('/policies/homeRealmDiscoveryPolicies')
+await client.api('/policies/homeRealmDiscoveryPolicies')
 	.version('beta')
 	.post(homeRealmDiscoveryPolicy);
 

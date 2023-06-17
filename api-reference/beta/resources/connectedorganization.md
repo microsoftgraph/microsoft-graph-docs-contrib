@@ -2,8 +2,8 @@
 title: "connectedOrganization resource type"
 description: "In Azure AD entitlement management, a connected organization is a reference to a directory or domain of another organization whose users can request access."
 author: "markwahl-msft"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), a connected organization is a reference to a directory or domain of another organization whose users can request access.
+In [Azure AD entitlement management](entitlementmanagement-overview.md), a connected organization is a reference to a directory or domain of another organization whose users can request access.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List connectedOrganizations](../api/connectedorganization-list.md) | [connectedOrganization](connectedorganization.md) collection | Retrieve a list of connectedOrganization objects. |
-|[Create connectedOrganization](../api/connectedorganization-post.md) | [connectedOrganization](connectedorganization.md) | Create a new connectedOrganization object. |
+|[List connectedOrganizations](../api/entitlementmanagement-list-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) collection | Retrieve a list of connectedOrganization objects. |
+|[Create connectedOrganization](../api/entitlementmanagement-post-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) | Create a new connectedOrganization object. |
 |[Get connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Read properties and relationships of a connectedOrganization object. |
 |[Update connectedOrganization](../api/connectedorganization-update.md) | | Update a connectedOrganization. |
 |[Delete connectedOrganization](../api/connectedorganization-delete.md) |None | Delete a connectedOrganization. |
@@ -36,19 +36,19 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), a connected
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|String|UPN of the user who created this resource. Read-only.|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |description|String|The description of the connected organization.|
-|displayName|String|The display name of the connected organization.|
+|displayName|String|The display name of the connected organization. Supports `$filter` (`eq`).|
 |id|String| Read-only.|
 |modifiedBy|String|UPN of the user who last modified this resource. Read-only.|
-|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |state|connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
+|identitySources|[identitySource](identitySource.md) collection| The identity sources in this connected organization, one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [crossCloudAzureActiveDirectoryTenant](crosscloudazureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md). Read-only. Nullable. Supports `$select` and `$filter`(`eq`). To filter by the derived types, you must declare the resource using its full OData cast, for example, `$filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f')`.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identitySources|[identitySource](identitySource.md) collection| The identity sources in this connected organization, one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md). Read-only. Nullable.|
 |internalSponsors| [directoryObject](directoryobject.md) collection| Nullable.|
 |externalSponsors| [directoryObject](directoryobject.md) collection| Nullable.|
 

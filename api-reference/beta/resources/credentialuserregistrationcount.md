@@ -1,9 +1,9 @@
 ---
 title: "credentialUserRegistrationCount resource type"
 description: "Represents the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities."
-localization_priority: Normal
-author: "khotz"
-ms.prod: "reports"
+ms.localizationpriority: medium
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -26,7 +26,7 @@ Represents the current state of how many users in your organization are register
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | id | String | The unique identifier for the activity. Read-only. |
-| totalUserCount | Int64 | Provides the total user count in the tenant. |
+| totalUserCount | Int64 | Provides the count of users with **accountEnabled** set to `true` in the tenant. |
 | userRegistrationCounts | [userRegistrationCount](userregistrationcount.md) collection | A collection of registration count and status information for users in your tenant. |
 
 ## Relationships
@@ -43,7 +43,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.credentialUserRegistrationCount",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

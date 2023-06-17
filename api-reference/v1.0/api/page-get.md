@@ -1,7 +1,7 @@
 ---
 title: "Get page"
 description: "Retrieve the properties and relationships of a page object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
@@ -69,17 +69,21 @@ If successful, this method returns a `200 OK` response code and the [page](../re
 ## Example
 ##### Request
 Here is an example of the request.
- <!-- { "blockType": "ignored" } -->
+ <!-- { "blockType": "request", "name": "page_get" } -->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
- <!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": "true",
+  "@odata.type": "microsoft.graph.pageLinks"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 312
 
 {
   "title": "title-value",

@@ -1,9 +1,9 @@
 ---
 title: "website resource type"
 description: "Represents a web site."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: mail
 author: "AAmatino"
 ---
 

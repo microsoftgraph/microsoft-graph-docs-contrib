@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var destinationId = "deleteditems";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Messages["AAMkADhAAATs28OAAA="]
-	.Move(destinationId)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Me.Messages.Item.Move.MovePostRequestBody
+{
+	DestinationId = "deleteditems",
+};
+var result = await graphClient.Me.Messages["{message-id}"].Move.PostAsync(requestBody);
+
 
 ```

@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var comment = "comment-value";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Messages["{id}"]
-	.ReplyAll(null,comment)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Me.Messages.Item.ReplyAll.ReplyAllPostRequestBody
+{
+	Comment = "comment-value",
+};
+await graphClient.Me.Messages["{message-id}"].ReplyAll.PostAsync(requestBody);
+
 
 ```

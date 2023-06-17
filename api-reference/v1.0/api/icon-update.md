@@ -1,9 +1,9 @@
 ---
 title: "Update icon"
 description: "Update the properties of icon object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
 ---
 
@@ -24,8 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}/sort/fields/icon
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/fields/icon
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```
 ## Optional request headers
 | Name       | Description|
@@ -51,10 +53,10 @@ Here is an example of the request.
   "blockType": "request",
   "name": "update_icon"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
 Content-type: application/json
-Content-length: 39
 
 {
   "set": "set-value",
@@ -62,16 +64,17 @@ Content-length: 39
 }
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.workbookIcon"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "set": "set-value",

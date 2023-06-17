@@ -1,8 +1,8 @@
 ---
 title: "Create deviceManagementAutopilotPolicyStatusDetail"
 description: "Create a new deviceManagementAutopilotPolicyStatusDetail object."
-author: "dougeby"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -11,16 +11,14 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
-
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -54,6 +52,7 @@ The following table shows the properties that are required when you create the d
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|The policy compliance status. Possible values are: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
 |trackedOnEnrollmentStatus|Boolean|Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session|
 |lastReportedDateTime|DateTimeOffset|Timestamp of the reported policy status|
+|errorCode|Int32|The errorode associated with the compliance or enforcement status of the policy. Error code for enforcement status takes precedence if it exists.|
 
 
 
@@ -65,9 +64,9 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails
+POST https://graph.microsoft.com/v1/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails
 Content-type: application/json
-Content-length: 295
+Content-length: 314
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotPolicyStatusDetail",
@@ -75,7 +74,8 @@ Content-length: 295
   "policyType": "application",
   "complianceStatus": "compliant",
   "trackedOnEnrollmentStatus": true,
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "errorCode": 9
 }
 ```
 
@@ -84,7 +84,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 344
+Content-Length: 363
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotPolicyStatusDetail",
@@ -93,12 +93,7 @@ Content-Length: 344
   "policyType": "application",
   "complianceStatus": "compliant",
   "trackedOnEnrollmentStatus": true,
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "errorCode": 9
 }
 ```
-
-
-
-
-
-

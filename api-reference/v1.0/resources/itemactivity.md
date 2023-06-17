@@ -1,9 +1,8 @@
 ---
 author: daspek
-ms.author: dspektor
 title: itemActivity resource type
 description: The itemActivity object provides information about an activity that took place on an item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
@@ -24,10 +23,10 @@ The actions that took place within an itemActivity are detailed in the [itemActi
 
 | Property | Type                    | Description
 |:---------|:------------------------|:----------------------------------------
-| id       | string                  | The unique identifier of the activity. Read-only.
 | access   | [accessAction][]        | An item was accessed.
-| actor    | [identitySet][]         | Identity of who performed the action. Read-only.
 | activityDateTime    | DateTimeOffset | Details about when the activity took place. Read-only.
+| actor    | [identitySet][]         | Identity of who performed the action. Read-only.
+| id       | string                  | The unique identifier of the activity. Read-only.
 
 [accessAction]: accessaction.md
 [identitySet]: identityset.md

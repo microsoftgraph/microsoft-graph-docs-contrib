@@ -2,8 +2,8 @@
 title: "store resource type"
 description:  "Represents a taxonomy term store."
 author: mohitpcad
-localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: "resourcePageType"
 ---
 

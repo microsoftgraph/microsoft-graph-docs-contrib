@@ -1,14 +1,14 @@
 ---
 title: "Device relay API in Microsoft Graph (preview)"
-description: "Today, people interact with multiple devices on a daily basis. Users often start productivity tasks and entertainment activities on one device and continue them on another. To meet your customers' needs, your apps need to seamlessly span devices and platforms. "
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+description: "Use the Microsoft Graph device relay APIs to enable users to transfer an experience from one device to another or enhance it by using multiple devices at once."
+ms.localizationpriority: medium
+ms.prod: "project-rome"
+ms.custom: scenarios:getting-started
 ---
 
 # Device relay API in Microsoft Graph (preview)
 
-Today, people interact with multiple devices on a daily basis. Users often start productivity tasks and entertainment activities on one device and continue them on another. To meet your customers' needs, your apps need to seamlessly span devices and platforms. 
+Today, people interact with multiple devices on a daily basis. Users often start productivity tasks and entertainment activities on one device and continue them on another. To meet your customers' needs, your apps need to seamlessly span devices and platforms.
 
 You can use the device relay APIs to deliver seamless experiences to your users. You can make it possible for them to actively transfer an experience from one device to another or enhance it by using multiple devices at once. This is done via in-app actions (a button or selection in your app) that call the device relay API to discover users' devices, and enable them to launch and message your app on those other devices.
 
@@ -18,7 +18,7 @@ The device relay API enables your app to register itself, and discover, command,
 
 You can use the device relay API for companion devices, or remote control scenarios. Use the messaging capabilities to create an app channel between two devices to send and receive custom messages. For example, you can enable your customers to use their phone to control playback on a TV. You could also provide a companion app in a productivity scenario by displaying context-based commonly used actions on a phone while your users work on the main view of your app in the PC.
 
-Your customers can also actively transfer an experience from one device to another by performing an action in your app. For example, a user might be watching a live broadcast on her phone while on the bus, but when she gets home she wants to transfer playback to the PC in her living room. Productivity scenarios are also supported by device relay. 
+Your customers can also actively transfer an experience from one device to another by performing an action in your app. For example, a user might be watching a live broadcast on her phone while on the bus, but when she gets home she wants to transfer playback to the PC in her living room. Productivity scenarios are also supported by device relay.
 
 ### Extend the experience
 
@@ -35,5 +35,5 @@ Add additional controlling abilities to your app. For example, provide remote co
 ## See also
 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
-- [Learn more about the device relay API](/graph/api/resources/project-rome-overview?view=graph-rest-beta)
-- [Learn more about Project Rome](https://aka.ms/projectrome)
+- [Learn more about the device relay API](/graph/api/resources/project-rome-overview)
+- [Learn more about Project Rome](/windows/project-rome/)

@@ -1,9 +1,9 @@
 ---
 title: "secureScore resource type"
 description: "top=n, where n = the number of days of data that you want to retrieve. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: security
 author: "preetikr"
 ---
 
@@ -28,16 +28,18 @@ Entity type containing properties of the tenant security score (daily snapshot d
 
 |Property |Type |Description |
 |:--|:--|:--|
+|	activeUserCount	|	Int32	|	Active user count of the given tenant.	|
+|	averageComparativeScores |	[averageComparativeScore](averagecomparativescore.md) collection	|Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.	|
 |	azureTenantId	|	String	|	GUID string for tenant ID.	|
+|	controlScores |	[controlScore](controlscore.md) collection	|	Contains tenant scores for a set of controls.	|
 |	createdDateTime	|	DateTimeOffset	|	The date when the entity is created.  |
+|	currentScore	|	Double	|	Tenant current attained score on specified date.	|
+|	enabledServices |	String collection	|	Microsoft-provided services for the tenant (for example, Exchange online, Skype, SharePoint).	|
 |	id	|	String	|	Combination of azureTenantId_createdDateTime.	|
 |	licensedUserCount	|	Int32	|	Licensed user count of the given tenant.	|
-|	activeUserCount	|	Int32	|	Active user count of the given tenant.	|
-|	currentScore	|	Double	|	Tenant current attained score on specified date.	|
 |	maxScore |	Double	|	Tenant maximum possible score on specified date.	|
-|	enabledServices |	String collection	|	Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint).	|
-|	averageComparativeScores |	[averageComparativeScore](averagecomparativescore.md) collection	|Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.	|
-|	controlScores |	[controlScore](controlscore.md) collection	|	Contains tenant scores for a set of controls.	|
+
+
 
 
 ## Relationships
@@ -58,20 +60,19 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String",
-  "azureTenantId": "Guid",
-  "createdDate": "DateTimeOffset",
-  "licensedUserCount": "Int32",
   "activeUserCount": "Int32",
-  "currentScore": "Int32",
-  "maxScore": "Int32",
-  "averageScore": "Double",
-  "enabledServices": "Collection(string)",
   "averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
+  "averageScore": "Double",
+  "azureTenantId": "Guid",
   "controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
-  "createdDateTime": "2019-02-07T20:33:53.156Z"
+  "createdDate": "DateTimeOffset",
+  "createdDateTime": "2019-02-07T20:33:53.156Z",
+  "currentScore": "Int32",
+  "enabledServices": "Collection(string)",
+  "id": "String",
+  "licensedUserCount": "Int32",
+  "maxScore": "Int32"
 }
-
 ```
 
 

@@ -1,8 +1,8 @@
 ---
 title: "conversation resource type"
 description: "A conversation is a collection of threads, and a thread contains posts to that thread. All threads and posts in a conversation share the same subject."
-localization_priority: Normal
-author: "dkershaw10"
+ms.localizationpriority: medium
+author: "mikemcleanlive"
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
@@ -29,17 +29,17 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 |[Create conversation thread](../api/conversation-post-threads.md) |[conversationThread](conversationthread.md) collection| Create a thread in the specified conversation.|
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|hasAttachments|Boolean|Indicates whether any of the posts within this Conversation has at least one attachment.|
+|hasAttachments|Boolean|Indicates whether any of the posts within this Conversation has at least one attachment. Supports `$filter` (`eq`, `ne`) and `$search`.|
 |id|String|The conversations's unique identifier. Read-only.|
-|lastDeliveredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|preview|String|A short summary from the body of the latest post in this converstaion.|
+|lastDeliveredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$filter` (`eq`, `ne`, `le`, `ge`).|
+|preview|String|A short summary from the body of the latest post in this conversation.|
 |topic|String|The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.|
 |uniqueSenders|String collection|All the users that sent a message to this Conversation.|
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |threads|[conversationThread](conversationthread.md) collection|A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.|
 

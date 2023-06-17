@@ -1,9 +1,9 @@
 ---
 title: "approvalSettings complex type"
-description: "Used for the requestApprovalSettings property of an access package assignment policy. Provides additional settings to select who must approve each request."
-localization_priority: Normal
+description: "The settings for approval as defined in a role management policy rule."
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -13,38 +13,40 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for the `requestApprovalSettings` property of an [access package assignment policy](accesspackageassignmentpolicy.md). Provides additional settings to select who must approve each request. 
+The settings for approval as defined in a role management policy rule.
 
 ## Properties
 
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| isApprovalRequired | Boolean | If false, then approval is not required for requests in this policy. |
-| isApprovalRequiredForExtension | Boolean| If false, then approval is not required for a user who already has an assignment to extend their assignment. |
-| isRequestorJustificationRequired | Boolean | Indicates whether the requestor is required to supply a justification in their request. |
-| approvalMode| String | One of `NoApproval`, `SingleStage` or `Serial`. The `NoApproval` is used when `isApprovalRequired` is false. |
-| approvalStages | [approvalStage](approvalstage.md) collection| If approval is required, the one or two elements of this collection define each of the stages of approval. An empty array if no approval is required.  |
+|Property|Type|Description|
+|:---|:---|:---|
+|approvalMode|String|One of `SingleStage`, `Serial`, `Parallel`, `NoApproval` (default). `NoApproval` is used when `isApprovalRequired` is `false`.|
+|approvalStages|[approvalStage](../resources/approvalstage.md) collection|If approval is required, the one or two elements of this collection define each of the stages of approval. An empty array if no approval is required.|
+|isApprovalRequired|Boolean|Indicates whether approval is required for requests in this policy.|
+|isApprovalRequiredForExtension|Boolean|Indicates whether approval is required for a user to extend their assignment.|
+|isRequestorJustificationRequired|Boolean|Indicates whether the requestor is required to supply a justification in their request.|
+
+## Relationships
+None.
 
 ## JSON representation
-
-The following is a JSON representation of the request approval settings property.
-
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.approvalSettings",
-  "baseType": ""
-}-->
-
-```json
+  "@odata.type": "microsoft.graph.approvalSettings"
+}
+-->
+``` json
 {
-    "isApprovalRequired": true,
-    "isApprovalRequiredForExtension": false,
-    "isRequestorJustificationRequired": true,
-    "approvalMode": "Serial",
-    "approvalStages": [{"@odata.type": "microsoft.graph.approvalStage"}]
+  "@odata.type": "#microsoft.graph.approvalSettings",
+  "isApprovalRequired": "Boolean",
+  "isApprovalRequiredForExtension": "Boolean",
+  "isRequestorJustificationRequired": "Boolean",
+  "approvalMode": "String",
+  "approvalStages": [
+    {
+      "@odata.type": "microsoft.graph.approvalStage"
+    }
+  ]
 }
 ```
 

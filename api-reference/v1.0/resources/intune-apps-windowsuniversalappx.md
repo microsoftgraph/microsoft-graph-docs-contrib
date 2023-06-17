@@ -1,7 +1,7 @@
 ---
 title: "windowsUniversalAppX resource type"
 description: "Contains properties and inherited properties for Windows Universal AppX Line Of Business apps."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -62,6 +62,7 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |contentVersions|[mobileAppContent](../resources/intune-apps-mobileappcontent.md) collection|The list of content versions for this app. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|committedContainedApps|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) collection|The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -110,12 +111,3 @@ Here is a JSON representation of the resource.
   "identityVersion": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

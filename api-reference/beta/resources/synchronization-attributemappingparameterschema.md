@@ -1,10 +1,10 @@
 ---
 title: "attributeMappingParameterSchema resource type"
 description: "Describes a single parameter used in an attributeMappingFunctionSchema."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # attributeMappingParameterSchema resource type
@@ -22,7 +22,7 @@ Describes a single parameter used in an [attributeMappingFunctionSchema](../reso
 |allowMultipleOccurrences    |Boolean                   |The given parameter can be provided multiple times (for example, multiple input strings in the `Concatenate(string,string,...)` function). |
 |name                        |String                    |Parameter name. |
 |required                    |Boolean                   |`true` if the parameter is required; otherwise `false`. |
-|type                        |String                    |Possible values are: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. Default is `String`.|
+|type                        |attributeType                    |The possible values are: `String`, `Integer`, `Reference`, `Binary`, `Boolean`, `DateTime`. Default is `String`.|
 
 ## JSON representation
 

@@ -1,12 +1,13 @@
 ---
 author: JeremyKelley
-description: "The SharingInvitation resource groups invitation-related data items into a single structure."
+description: The SharingInvitation resource groups invitation-related data items into a single structure.
 ms.date: 09/10/2017
 title: SharingInvitation
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: files
 ---
+
 # SharingInvitation resource type
 
 Namespace: microsoft.graph
@@ -38,19 +39,19 @@ Here is a JSON representation of the resource
 
 ## Properties
 
-| Property Name  | Type                          | Description                                                                                                                   |
-|:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| email          | String                        | The email address provided for the recipient of the sharing invitation. Read-only.                                          |
+| Property       | Type                          | Description                                                                                                                   |
+| :------------- | :---------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
+| email          | String                        | The email address provided for the recipient of the sharing invitation. Read-only.                                            |
 | invitedBy      | [identitySet](identityset.md) | Provides information about who sent the invitation that created this permission, if that information is available. Read-only. |
 | signInRequired | Boolean                       | If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.                     |
 
-## Remarks 
+## Remarks
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -61,5 +62,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
-
-

@@ -1,8 +1,8 @@
 ---
 title: "outlookUser resource type"
 description: "Represents the Outlook services available to a user."
-author: "svpsiva"
-localization_priority: Normal
+author: "abheek-das"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

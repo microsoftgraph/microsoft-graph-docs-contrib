@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var personAnniversary = new PersonAnniversary
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new PersonAnnualEvent
 {
-	Type = AnniversaryType.Birthday,
-	Date = new Date(1980,1,8)
+	Type = PersonAnnualEventType.Birthday,
+	Date = new Date(DateTime.Parse("1980-01-08")),
 };
+var result = await graphClient.Me.Profile.Anniversaries.PostAsync(requestBody);
 
-await graphClient.Me.Profile.Anniversaries
-	.Request()
-	.AddAsync(personAnniversary);
 
 ```

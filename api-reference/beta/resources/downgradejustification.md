@@ -1,17 +1,19 @@
 ---
-title: "downgradeJustification resource type"
-description: "Represents user input on why downgrade was performed."
-localization_priority: Normal
+title: "downgradeJustification resource type (deprecated)"
+description: "Represents user input on why downgrade was performed. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# downgradeJustification resource type
+# downgradeJustification resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Represents user input on why downgrade was performed. Downgrade justification might be required based on label policy configuration in Office Security and Compliance Center.
 

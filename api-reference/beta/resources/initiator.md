@@ -1,9 +1,9 @@
 ---
 title: "initiator resource type"
 description: "Describes who or what initiated the provisioning event."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes who or what initiated the provisioning event. 
+Describes who or what initiated the provisioning event. Inherits from [identity](../resources/identity.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String|Name of the person or service that initiated the provisioning event.|
-|id|String|Uniquely identifies the person or service that initiated the provisioning event.|
-|initiatorType|String| Type of initiator. Possible values are: `user`, `app`, `system`, `unknownFutureValue`.|
+|displayName|String|Name of the person or service that initiated the provisioning event. Inherited from [identity](../resources/identity.md).|
+|id|String|Uniquely identifies the person or service that initiated the provisioning event. Inherited from [identity](../resources/identity.md).|
+|initiatorType|String| Type of initiator. Possible values are: `user`, `application`, `system`, `unknownFutureValue`.|
 
 ## JSON representation
 
@@ -33,7 +33,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.initiator",
-  "baseType": null
+  "baseType": "microsoft.graph.identity"
 }-->
 
 ```json

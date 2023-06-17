@@ -1,15 +1,17 @@
 ---
 title: "Make API calls using the Microsoft Graph SDKs"
 description: "Provides instructions for creating Microsoft Graph HTTP requests using the SDKs."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
 ---
+
+<!-- markdownlint-disable MD025 MD051 -->
 
 # Make API calls using the Microsoft Graph SDKs
 
 The Microsoft Graph SDK service libraries provide a client class that you can use as the starting point for creating all API requests. There are two styles of client class: one uses a fluent interface to create the request (for example, `client.Users["user-id"].Manager`) and the other accepts a path string (for example, `api("/users/user-id/manager")`). When you have a request object, you can specify a variety of options such as filtering and sorting, and finally, you select the type of operation you want to perform.
 
-There is also the [Microsoft Graph PowerShell SDK](../powershell/get-started.md), which has no client class at all. Instead, all requests are represented as PowerShell commands. For example, to get a user's manager, the command is `Get-MgUserManager`. For more information on finding commands for API calls, see [Navigating the Microsoft Graph PowerShell SDK](../powershell/navigating.md).
+There is also the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started), which has no client class at all. Instead, all requests are represented as PowerShell commands. For example, to get a user's manager, the command is `Get-MgUserManager`. For more information on finding commands for API calls, see [Navigating the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating).
 
 ## Read information from Microsoft Graph
 
@@ -17,19 +19,29 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-read.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="ReadRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-read.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="ReadRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-read.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ReadRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-read.md)]
+
+# [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="ReadRequestSnippet":::
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-read.md)]
 
 ---
 
@@ -40,19 +52,29 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 <!-- markdownlint-disable MD024 -->
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-select.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="SelectRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-select.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="SelectRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-select.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="SelectRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
+
+# [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="SelectRequestSnippet":::
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-select.md)]
 
 ---
 
@@ -60,21 +82,33 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 Retrieving a list of entities is similar to retrieving a single entity except there a number of other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition.  The `$orderBy` query parameter will request that the server provide the list of entities sorted by the specified properties.
 
+[!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
+
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-list.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="ListRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-list.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="ListRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-list.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ListRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-list.md)]
+
+# [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="ListRequestSnippet":::
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-list.md)]
 
 ---
 
@@ -86,41 +120,61 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-index.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="ItemByIdRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-index.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="ItemByIdRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-index.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ItemByIdRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
 
+# [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="ItemByIdRequestSnippet":::
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-index.md)]
+
 ---
 
 ## Use $expand to access related entities
 
-You can use the `$expand` filter to request a related entity, or collection of entities, at the same that you request the main entity.
+You can use the `$expand` filter to request a related entity, or collection of entities, at the same time that you request the main entity.
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-expand.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="ExpandRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-expand.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="ExpandRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-expand.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ExpandRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-expand.md)]
+
+# [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="ExpandRequestSnippet":::
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-expand.md)]
 
 ---
 
@@ -130,19 +184,29 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-delete.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="DeleteRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-delete.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="DeleteRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-delete.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="DeleteRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
+
+# [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="DeleteRequestSnippet":::
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-delete.md)]
 
 ---
 
@@ -152,19 +216,29 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-create.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="CreateRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-create.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="CreateRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-create.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="CreateRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
+
+# [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="CreateRequestSnippet":::
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-create.md)]
 
 ---
 
@@ -174,19 +248,29 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-update.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="UpdateRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-update.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="UpdateRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-update.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="UpdateRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
+
+# [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="UpdateRequestSnippet":::
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-update.md)]
 
 ---
 
@@ -196,40 +280,60 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-headers.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="HeadersRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-headers.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="HeadersRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-headers.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="HeadersRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
 
+# [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="HeadersRequestSnippet":::
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-headers.md)]
+
 ---
 
 ## Provide custom query parameters
 
-For SDKs that support a fluent style, you can provide custom query parameter values by using a list of `QueryOptions` objects. For template-based SDKs, the parameters are URL-encoded and added to the request URI. For PowerShell, defined query parameters for a given API are exposed as parameters to the corresponding command.
+For SDKs that support a fluent style, you can provide custom query parameter values by using a list of `QueryOptions` objects. For template-based SDKs, the parameters are URL-encoded and added to the request URI. For PowerShell and Go, defined query parameters for a given API are exposed as parameters to the corresponding command.
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-queryparams.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="QueryParametersRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-queryparams.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="QueryParametersRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-queryparams.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="QueryParametersRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-queryparams.md)]
+
+# [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="QueryParametersRequestSnippet":::
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-queryparams.md)]
 
 ---

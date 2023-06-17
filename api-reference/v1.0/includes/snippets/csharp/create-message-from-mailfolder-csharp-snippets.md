@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var message = new Message
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Message
 {
 	ReceivedDateTime = DateTimeOffset.Parse("datetime-value"),
 	SentDateTime = DateTimeOffset.Parse("datetime-value"),
@@ -15,13 +17,11 @@ var message = new Message
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "content-value"
+		Content = "content-value",
 	},
-	BodyPreview = "bodyPreview-value"
+	BodyPreview = "bodyPreview-value",
 };
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].Messages.PostAsync(requestBody);
 
-await graphClient.Me.MailFolders["{id}"].Messages
-	.Request()
-	.AddAsync(message);
 
 ```

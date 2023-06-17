@@ -1,7 +1,7 @@
 ---
 title: "List managedMobileApps"
 description: "List properties and relationships of the managedMobileApp objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,14 +15,14 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [managedMobileApp](../resources/intune-mam-managedmobileapp.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -61,14 +61,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 287
+Content-Length: 336
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.managedMobileApp",
       "mobileAppIdentifier": {
-        "@odata.type": "microsoft.graph.mobileAppIdentifier"
+        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+        "packageId": "Package Id value"
       },
       "id": "0a129715-9715-0a12-1597-120a1597120a",
       "version": "Version value"
@@ -76,12 +77,3 @@ Content-Length: 287
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

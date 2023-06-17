@@ -4,34 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var recipients = new List<DriveRecipient>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Invite.InvitePostRequestBody
 {
-	new DriveRecipient
+	Recipients = new List<DriveRecipient>
 	{
-		Email = "ryan@contoso.org"
-	}
+		new DriveRecipient
+		{
+			Email = "robin@contoso.org",
+		},
+	},
+	Message = "Here's the file that we're collaborating on.",
+	RequireSignIn = true,
+	SendInvitation = true,
+	Roles = new List<string>
+	{
+		"write",
+	},
+	Password = "password123",
+	ExpirationDateTime = "2018-07-15T14:00:00.000Z",
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Invite.PostAsync(requestBody);
 
-var message = "Here's the file that we're collaborating on.";
-
-var requireSignIn = true;
-
-var sendInvitation = true;
-
-var roles = new List<String>()
-{
-	"write"
-};
-
-var password = "password123";
-
-var expirationDateTime = "2018-07-15T14:00:00Z";
-
-await graphClient.Me.Drive.Items["{item-id}"]
-	.Invite(recipients,requireSignIn,roles,sendInvitation,message,expirationDateTime,password)
-	.Request()
-	.PostAsync();
 
 ```

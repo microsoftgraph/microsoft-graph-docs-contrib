@@ -1,9 +1,9 @@
 ---
 title: "Update agreement"
 description: "Update the properties of an agreement object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "raprakasMSFT"
 ---
 
@@ -23,10 +23,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
+[!INCLUDE [rbac-tou-apis](../includes/rbac-for-apis/rbac-tou-apis.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /agreements/{id}
+PATCH /identityGovernance/termsOfUse/agreements/{id}
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -42,25 +44,26 @@ In the request body, supply the values for relevant fields that should be update
 |isViewingBeforeAcceptanceRequired|Boolean|Whether the user has to expand and view the agreement before accepting.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [agreement](../resources/agreement.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 ## Example
 ##### Request
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_agreement"
 }-->
-```http
-PATCH https://graph.microsoft.com/beta/agreements/{id}
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b
 Content-type: application/json
-Content-length: 85
 
 {
-  "displayName": "displayName-value",
-  "isViewingBeforeAcceptanceRequired": true
+    "displayName": "All Contoso volunteers - Terms of use",
+    "isViewingBeforeAcceptanceRequired": true
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-agreement-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -69,30 +72,36 @@ Content-length: 85
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-agreement-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-agreement-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-agreement-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-agreement-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-agreement-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-agreement-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-agreement-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.agreement"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 105
-
-{
-  "displayName": "displayName-value",
-  "isViewingBeforeAcceptanceRequired": true,
-  "id": "id-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

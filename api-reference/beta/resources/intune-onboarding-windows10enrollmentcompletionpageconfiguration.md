@@ -1,7 +1,7 @@
 ---
 title: "windows10EnrollmentCompletionPageConfiguration resource type"
 description: "Windows 10 Enrollment Status Page Configuration"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -40,6 +40,7 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune-shared-devicee
 |lastModifiedDateTime|DateTimeOffset|Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |roleScopeTagIds|String collection|Optional role scope tags for the enrollment restrictions. Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|deviceEnrollmentConfigurationType|[deviceEnrollmentConfigurationType](../resources/intune-onboarding-deviceenrollmentconfigurationtype.md)|Support for Enrollment Configuration Type Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md). Possible values are: `unknown`, `limit`, `platformRestrictions`, `windowsHelloForBusiness`, `defaultLimit`, `defaultPlatformRestrictions`, `defaultWindowsHelloForBusiness`, `defaultWindows10EnrollmentCompletionPageConfiguration`, `windows10EnrollmentCompletionPageConfiguration`, `deviceComanagementAuthorityConfiguration`, `singlePlatformRestriction`, `unknownFutureValue`, `enrollmentNotificationsConfiguration`.|
 |showInstallationProgress|Boolean|Show or hide installation progress to user|
 |blockDeviceSetupRetryByUser|Boolean|Allow the user to retry the setup on installation failure|
 |allowDeviceResetOnInstallFailure|Boolean|Allow or block device reset on installation failure|
@@ -48,6 +49,8 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune-shared-devicee
 |installProgressTimeoutInMinutes|Int32|Set installation progress timeout in minutes|
 |allowDeviceUseOnInstallFailure|Boolean|Allow the user to continue using the device on installation failure|
 |selectedMobileAppIds|String collection|Selected applications to track the installation status|
+|allowNonBlockingAppInstallation|Boolean|Install all required apps as non blocking apps during white glove|
+|installQualityUpdates|Boolean|Allows quality updates installation during OOBE|
 |trackInstallProgressForAutopilotOnly|Boolean|Only show installation progress for Autopilot enrollment scenarios|
 |disableUserStatusTrackingAfterFirstUser|Boolean|Only show installation progress for first user post enrollment|
 
@@ -77,6 +80,7 @@ Here is a JSON representation of the resource.
   "roleScopeTagIds": [
     "String"
   ],
+  "deviceEnrollmentConfigurationType": "String",
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,
@@ -87,13 +91,9 @@ Here is a JSON representation of the resource.
   "selectedMobileAppIds": [
     "String"
   ],
+  "allowNonBlockingAppInstallation": true,
+  "installQualityUpdates": true,
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
-
-
-
-
-

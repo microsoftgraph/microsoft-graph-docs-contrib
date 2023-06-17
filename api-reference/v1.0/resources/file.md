@@ -1,8 +1,8 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: File resource thype
-localization_priority: Normal
+title: File resource type
+ms.localizationpriority: medium
 description: "The File resource groups file-related data items into a single structure."
 ms.prod: "sharepoint"
 doc_type: resourcePageType

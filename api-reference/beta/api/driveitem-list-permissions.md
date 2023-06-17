@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "List the effective sharing permissions of on a driveItem."
 ms.date: 09/10/2017
 title: List who has access to a file
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -68,8 +68,6 @@ Effective sharing permissions of a DriveItem can come from two sources:
 Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property.
 This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.
 
-SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](/SharePoint/sites/user-permissions-and-permission-levels#section1).
-
 ## Example
 
 This example retrieves the collection of permissions on an item in the signed in user's drive.
@@ -81,6 +79,7 @@ This example retrieves the collection of permissions on an item in the signed in
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/permissions
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permissions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,12 +88,27 @@ GET /me/drive/items/{item-id}/permissions
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-item-permissions-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-permissions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-item-permissions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-item-permissions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-item-permissions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-item-permissions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -105,6 +119,7 @@ This example response includes three permissions, the first is a sharing link wi
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 
 {
   "value": [
@@ -118,11 +133,23 @@ Content-Type: application/json
     },
     {
       "id": "2",
+      "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
       "roles": ["write"],
       "grantedTo": {
         "user": {
           "id": "5D33DD65C6932946",
-          "displayName": "John Doe"
+          "displayName": "Robin Danielsen"
+        }
+      },
+      "grantedToV2": {
+        "user": {
+          "id": "5D33DD65C6932946",
+          "displayName": "Robin Danielsen"
+        },
+        "siteUser": {
+          "id": "1",
+          "displayName": "Robin Danielsen",
+          "loginName": "Robin Danielsen"
         }
       },
       "inheritedFrom": {

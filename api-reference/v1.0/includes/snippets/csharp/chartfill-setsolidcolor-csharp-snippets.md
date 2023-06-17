@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var color = "color-value";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Format.Fill
-	.SetSolidColor(color)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Worksheets.Item.Charts.Item.Format.Fill.SetSolidColor.SetSolidColorPostRequestBody
+{
+	Color = "color-value",
+};
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Format.Fill.SetSolidColor.PostAsync(requestBody);
+
 
 ```

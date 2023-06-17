@@ -1,9 +1,9 @@
 ---
 title: "operation resource type"
 description: "The status of a long-running operation."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: teamwork
 author: "billbliss"
 ---
 
@@ -17,20 +17,20 @@ The status of a long-running operation.
 
 ## Methods
 
-None
+None.
 
 ## Properties
 
 | Property           | Type            | Description                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | The start time of the operation.                                                |
-| id                 | String          | The operation id. Read-only. Server generated.                                  |
+| id                 | String          | The operation ID. Read-only. Server generated.                                  |
 | lastActionDateTime | DateTimeOffset  | The time of the last action of the operation.                                   |
 | status             | String          | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 

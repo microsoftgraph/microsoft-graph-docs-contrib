@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var conditionalAccessPolicy = new ConditionalAccessPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ConditionalAccessPolicy
 {
 	Conditions = new ConditionalAccessConditionSet
 	{
-		SignInRiskLevels = new List<RiskLevel>()
+		SignInRiskLevels = new List<RiskLevel?>
 		{
 			RiskLevel.High,
 			RiskLevel.Medium,
-			RiskLevel.Low
-		}
-	}
+			RiskLevel.Low,
+		},
+	},
 };
+var result = await graphClient.Identity.ConditionalAccess.Policies["{conditionalAccessPolicy-id}"].PatchAsync(requestBody);
 
-await graphClient.Identity.ConditionalAccess.Policies["{id}"]
-	.Request()
-	.UpdateAsync(conditionalAccessPolicy);
 
 ```

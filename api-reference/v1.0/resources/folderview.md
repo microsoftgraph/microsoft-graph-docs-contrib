@@ -1,15 +1,13 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: FolderView
-localization_priority: Normal
+title: folderView
+ms.localizationpriority: medium
 description: "The FolderView resource provides or sets recommendations on the user-experience of a folder."
-ms.prod: ""
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# FolderView resource type
+# folderView resource type
 
 Namespace: microsoft.graph
 

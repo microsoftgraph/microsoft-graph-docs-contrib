@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id}/appRoleAssignments')
+let appRoleAssignments = await client.api('/users/6e7b768e-07e2-4810-8459-485f84f8f204/appRoleAssignments')
 	.get();
 
 ```

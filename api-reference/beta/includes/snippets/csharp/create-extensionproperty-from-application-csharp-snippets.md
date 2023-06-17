@@ -4,20 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var extensionProperty = new ExtensionProperty
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ExtensionProperty
 {
-	Name = "extensionName",
-	DataType = "string",
-	TargetObjects = new List<String>()
+	Name = "jobGroup",
+	DataType = "String",
+	IsMultiValued = true,
+	TargetObjects = new List<string>
 	{
-		"Application"
-	}
+		"User",
+	},
 };
+var result = await graphClient.Applications["{application-id}"].ExtensionProperties.PostAsync(requestBody);
 
-await graphClient.Applications["{id}"].ExtensionProperties
-	.Request()
-	.AddAsync(extensionProperty);
 
 ```

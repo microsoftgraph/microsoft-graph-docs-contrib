@@ -1,17 +1,19 @@
 ---
-title: "accessReviewSettings resource type"
+title: "accessReviewSettings resource type (deprecated)"
 description: "Provides additional settings when creating an access review."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# accessReviewSettings resource type
+# accessReviewSettings resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 Provides additional settings when creating an access review, to control the feature behavior when starting an access review.
 

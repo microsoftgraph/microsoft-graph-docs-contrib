@@ -4,22 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var plannerAssignedToTaskBoardTaskFormat = new PlannerAssignedToTaskBoardTaskFormat
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new PlannerAssignedToTaskBoardTaskFormat
 {
 	OrderHintsByAssignee = new PlannerOrderHintsByAssignee
 	{
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new Dictionary<string, object>
 		{
-			{"aaa27244-1db4-476a-a5cb-004607466324", "8566473P 957764Jk!"}
-		}
-	}
+			{
+				"aaa27244-1db4-476a-a5cb-004607466324" , "8566473P 957764Jk!"
+			},
+		},
+	},
 };
+var result = await graphClient.Planner.Tasks["{plannerTask-id}"].AssignedToTaskBoardFormat.PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "return=representation");
+	requestConfiguration.Headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");
+});
 
-await graphClient.Planner.Tasks["01gzSlKkIUSUl6DF_EilrmQAKDhh"].AssignedToTaskBoardFormat
-	.Request()
-	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
-	.UpdateAsync(plannerAssignedToTaskBoardTaskFormat);
 
 ```

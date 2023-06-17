@@ -1,9 +1,9 @@
 ---
 title: "fileAssessmentRequest resource type"
 description: "Used to create and retrieve a file threat assessment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -24,15 +24,15 @@ The file can be a text file or Word document or binary file received in an email
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|contentData|String|Base64 encoded file content. The file content cannot fetch back because it isn't stored.|
-|fileName|String|The file name.|
 |category|[threatCategory](enums.md#threatcategory-values)|The threat category. Possible values are: `spam`, `phishing`, `malware`.|
+|contentData|String|Base64 encoded file content. The file content cannot fetch back because it isn't stored.|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|The content type of threat assessment. Possible values are: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|The threat assessment request creator.|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|The expected assessment from submitter. Possible values are: `block`, `unblock`.|
+|fileName|String|The file name.|
 |id|String|The threat assessment request ID is a globally unique identifier (GUID).|
-|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|The source of threat assessment request. Possible values are: `user`, `administrator`.|
+|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|The source of threat assessment request. Possible values are: `administrator`.|
 |status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|The assessment process status. Possible values are: `pending`, `completed`.|
 
 ## Relationships
@@ -51,19 +51,18 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.fileAssessmentRequest",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
   "contentData": "String",
-  "fileName": "String",
   "category": "String",
   "contentType": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "expectedAssessment": "String",
+  "fileName": "String",
   "id": "String (identifier)",
   "requestSource": "String",
   "status": "String"

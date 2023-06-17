@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var externalGroup = new ExternalGroup
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalGroup
 {
 	Id = "31bea3d537902000",
 	DisplayName = "Contoso Marketing",
-	Description = "The product marketing team"
+	Description = "The product marketing team",
 };
+var result = await graphClient.External.Connections["{externalConnection-id}"].Groups.PostAsync(requestBody);
 
-await graphClient.External.Connections["contosohr"].Groups
-	.Request()
-	.AddAsync(externalGroup);
 
 ```

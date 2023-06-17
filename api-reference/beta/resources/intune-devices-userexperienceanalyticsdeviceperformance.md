@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsDevicePerformance resource type"
 description: "The user experience analytics device performance entity contains device boot performance details."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -34,21 +34,23 @@ The user experience analytics device performance entity contains device boot per
 |deviceName|String|The user experience analytics device name.|
 |model|String|The user experience analytics device model.|
 |manufacturer|String|The user experience analytics device manufacturer.|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|The user experience analytics device disk type. Possible values are: `unkown`, `hdd`, `ssd`.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|The user experience analytics device disk type. Possible values are: `unknown`, `hdd`, `ssd`, `unknownFutureValue`.|
 |operatingSystemVersion|String|The user experience analytics device Operating System version.|
 |bootScore|Int32|The user experience analytics device boot score.|
 |coreBootTimeInMs|Int32|The user experience analytics device core boot time in milliseconds.|
 |groupPolicyBootTimeInMs|Int32|The user experience analytics device group policy boot time in milliseconds.|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 |loginScore|Int32|The user experience analytics device login score.|
 |coreLoginTimeInMs|Int32|The user experience analytics device core login time in milliseconds.|
 |groupPolicyLoginTimeInMs|Int32|The user experience analytics device group policy login time in milliseconds.|
 |deviceCount|Int64|User experience analytics summarized device count.|
 |responsiveDesktopTimeInMs|Int32|The user experience analytics responsive desktop time in milliseconds.|
-|blueScreenCount|Int32|Number of Blue Screens in the last 14 days. Valid values 0 to 9999999|
-|restartCount|Int32|Number of Restarts in the last 14 days. Valid values 0 to 9999999|
-|averageBlueScreens|Double|Average (mean) number of Blue Screens per device in the last 14 days. Valid values 0 to 9999999|
-|averageRestarts|Double|Average (mean) number of Restarts per device in the last 14 days. Valid values 0 to 9999999|
+|blueScreenCount|Int32|Number of Blue Screens in the last 30 days. Valid values 0 to 9999999|
+|restartCount|Int32|Number of Restarts in the last 30 days. Valid values 0 to 9999999|
+|averageBlueScreens|Double|Average (mean) number of Blue Screens per device in the last 30 days. Valid values 0 to 9999999|
+|averageRestarts|Double|Average (mean) number of Restarts per device in the last 30 days. Valid values 0 to 9999999|
+|startupPerformanceScore|Double|The user experience analytics device startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|modelStartupPerformanceScore|Double|The user experience analytics model level startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 
 ## Relationships
 None
@@ -82,12 +84,8 @@ Here is a JSON representation of the resource.
   "blueScreenCount": 1024,
   "restartCount": 1024,
   "averageBlueScreens": "4.2",
-  "averageRestarts": "4.2"
+  "averageRestarts": "4.2",
+  "startupPerformanceScore": "4.2",
+  "modelStartupPerformanceScore": "4.2"
 }
 ```
-
-
-
-
-
-

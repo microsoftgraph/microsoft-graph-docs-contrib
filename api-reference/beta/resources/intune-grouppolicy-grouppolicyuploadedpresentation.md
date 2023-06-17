@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyUploadedPresentation resource type"
-description: "The base entity for the display presentation of any of the additional options in a group policy definition."
-author: "dougeby"
+description: "Represents an ADMX checkBox element and an ADMX boolean element."
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The base entity for the display presentation of any of the additional options in a group policy definition.
+Represents an ADMX checkBox element and an ADMX boolean element.
 
 
 Inherits from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
@@ -57,9 +57,3 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

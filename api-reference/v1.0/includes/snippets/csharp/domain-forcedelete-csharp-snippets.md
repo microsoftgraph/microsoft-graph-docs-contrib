@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var disableUserAccounts = true;
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Domains["{id}"]
-	.ForceDelete(disableUserAccounts)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Domains.Item.ForceDelete.ForceDeletePostRequestBody
+{
+	DisableUserAccounts = true,
+};
+await graphClient.Domains["{domain-id}"].ForceDelete.PostAsync(requestBody);
+
 
 ```

@@ -1,11 +1,10 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/12/2017
 title: DefaultColumnValue
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The defaultColumnValue on a columnDefinition resource specifies the default value for this column."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

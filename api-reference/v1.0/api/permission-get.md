@@ -1,11 +1,10 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Get permissions
-localization_priority: Normal
+title: Get permission
+ms.localizationpriority: medium
 description: "Return the effective sharing permission for a particular permission resource."
-ms.prod: ""
+ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # Get sharing permission for a file or folder
@@ -18,8 +17,6 @@ Effective permissions of an item can come from two sources: permissions set dire
 
 Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.
 This property is an [ItemReference](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.
-
-SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](/SharePoint/sites/user-permissions-and-permission-levels#section1).
 
 ## Permissions
 
@@ -64,6 +61,7 @@ Here is an example of the request to access a permission on a folder.
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/permissions/{perm-id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -72,16 +70,27 @@ GET /me/drive/items/{item-id}/permissions/{perm-id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-item-permission-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-item-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-item-permission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-item-permission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-item-permission-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-item-permission-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -94,10 +103,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
   "grantedTo": {
     "user": {
-      "displayName": "Ryan Gregg",
+      "displayName": "Robin Danielsen",
       "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Robin Danielsen"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Robin Danielsen",
+      "loginName": "Robin Danielsen"
     }
   },
   "id": "1",

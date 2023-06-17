@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var scopedRoleMembership = new ScopedRoleMembership
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ScopedRoleMembership
 {
 	RoleId = "roleId-value",
 	RoleMemberInfo = new Identity
 	{
-		Id = "id-value"
-	}
+		Id = "id-value",
+	},
 };
+var result = await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"].ScopedRoleMembers.PostAsync(requestBody);
 
-await graphClient.Directory.AdministrativeUnits["{id}"].ScopedRoleMembers
-	.Request()
-	.AddAsync(scopedRoleMembership);
 
 ```

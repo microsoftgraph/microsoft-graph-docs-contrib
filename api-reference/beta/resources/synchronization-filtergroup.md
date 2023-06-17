@@ -1,10 +1,10 @@
 ---
 title: "filterGroup resource type"
 description: "Defines a set of clauses that an object must satisfy to be considered in scope."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # filterGroup resource type
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Defines a set of clauses that an object must satisfy to be considered in scope. An object is considered in scope for the group (the group is evaluated to `true`) only if all the clauses of the group are evaluated to `true`.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |clauses|[filterClause](synchronization-filterclause.md) collection|Filter clauses (conditions) of this group. All clauses in a group must be satisfied in order for the filter group to evaluate to `true`.|
 |name|String|Human-readable name of the filter group.|
@@ -35,10 +35,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "clauses": [{"@odata.type": "microsoft.graph.filterClause"}],
+  "clauses": [
+    {
+      "@odata.type": "microsoft.graph.filterClause"
+    }
+  ],
   "name": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

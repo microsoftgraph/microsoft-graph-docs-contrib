@@ -4,27 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var device = new Device
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Device
 {
 	AccountEnabled = false,
-	AlternativeSecurityIds = new List<AlternativeSecurityId>()
+	AlternativeSecurityIds = new List<AlternativeSecurityId>
 	{
 		new AlternativeSecurityId
 		{
 			Type = 2,
-			Key = Encoding.ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
-		}
+			Key = Convert.FromBase64String("base64Y3YxN2E1MWFlYw=="),
+		},
 	},
 	DeviceId = "4c299165-6e8f-4b45-a5ba-c5d250a707ff",
 	DisplayName = "Test device",
 	OperatingSystem = "linux",
-	OperatingSystemVersion = "1"
+	OperatingSystemVersion = "1",
 };
+var result = await graphClient.Devices.PostAsync(requestBody);
 
-await graphClient.Devices
-	.Request()
-	.AddAsync(device);
 
 ```

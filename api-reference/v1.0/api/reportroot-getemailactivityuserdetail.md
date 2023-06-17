@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getEmailActivityUserDetail"
 description: "Get details about email activity users have performed."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -72,6 +72,8 @@ The CSV file has the following headers for columns.
 - Send Count
 - Receive Count
 - Read Count
+- Meeting Created Count
+- Meeting Interacted Count
 - Assigned Products
 - Report Period
 
@@ -88,7 +90,7 @@ The following is an example of the request.
   "name": "reportroot_getemailactivityuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getEmailActivityUserDetail(period='D7')
 ```
 
@@ -117,7 +119,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read Count,Assigned Products,Report Period
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read Count,Meeting Created Count,Meeting Interacted Count,Assigned Products,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

@@ -1,8 +1,8 @@
 ---
 title: "Update deviceManagementAutopilotEvent"
 description: "Update the properties of a deviceManagementAutopilotEvent object."
-author: "dougeby"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -11,16 +11,14 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
-
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -60,7 +58,10 @@ The following table shows the properties that are required when you create the [
 |windowsAutopilotDeploymentProfileDisplayName|String|Autopilot profile name.|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Enrollment state like Enrolled, Failed. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |windows10EnrollmentCompletionPageConfigurationDisplayName|String|Enrollment Status Page profile name|
-|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment state like Success, Failure, InProgress, SuccessWithTimeout. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
+|windows10EnrollmentCompletionPageConfigurationId|String|Enrollment Status Page profile ID|
+|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment state like Success, Failure, InProgress, SuccessWithTimeout. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment status for the enrollment status page device setup phase. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment status for the enrollment status page account setup phase. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |osVersion|String|Device operating system version.|
 |deploymentDuration|Duration|Autopilot deployment duration including enrollment.|
 |deploymentTotalDuration|Duration|Total deployment duration from enrollment to Desktop screen.|
@@ -83,9 +84,9 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
+PATCH https://graph.microsoft.com/v1/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 Content-type: application/json
-Content-length: 1357
+Content-length: 1545
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
@@ -100,7 +101,10 @@ Content-length: 1357
   "windowsAutopilotDeploymentProfileDisplayName": "Windows Autopilot Deployment Profile Display Name value",
   "enrollmentState": "enrolled",
   "windows10EnrollmentCompletionPageConfigurationDisplayName": "Windows10Enrollment Completion Page Configuration Display Name value",
+  "windows10EnrollmentCompletionPageConfigurationId": "Windows10Enrollment Completion Page Configuration Id value",
   "deploymentState": "success",
+  "deviceSetupStatus": "success",
+  "accountSetupStatus": "success",
   "osVersion": "Os Version value",
   "deploymentDuration": "PT3M21.5549443S",
   "deploymentTotalDuration": "PT1M43.5284261S",
@@ -120,7 +124,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1406
+Content-Length: 1594
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
@@ -136,7 +140,10 @@ Content-Length: 1406
   "windowsAutopilotDeploymentProfileDisplayName": "Windows Autopilot Deployment Profile Display Name value",
   "enrollmentState": "enrolled",
   "windows10EnrollmentCompletionPageConfigurationDisplayName": "Windows10Enrollment Completion Page Configuration Display Name value",
+  "windows10EnrollmentCompletionPageConfigurationId": "Windows10Enrollment Completion Page Configuration Id value",
   "deploymentState": "success",
+  "deviceSetupStatus": "success",
+  "accountSetupStatus": "success",
   "osVersion": "Os Version value",
   "deploymentDuration": "PT3M21.5549443S",
   "deploymentTotalDuration": "PT1M43.5284261S",
@@ -150,9 +157,3 @@ Content-Length: 1406
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
-
-
-
-
-
-

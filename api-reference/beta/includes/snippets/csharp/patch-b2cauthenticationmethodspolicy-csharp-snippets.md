@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var b2cAuthenticationMethodsPolicy = new B2cAuthenticationMethodsPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new B2cAuthenticationMethodsPolicy
 {
 	IsEmailPasswordAuthenticationEnabled = false,
-	IsUserNameAuthenticationEnabled = true
+	IsUserNameAuthenticationEnabled = true,
+	IsPhoneOneTimePasswordAuthenticationEnabled = true,
 };
+var result = await graphClient.Policies.B2cAuthenticationMethodsPolicy.PatchAsync(requestBody);
 
-await graphClient.Policies.B2cAuthenticationMethodsPolicy
-	.Request()
-	.UpdateAsync(b2cAuthenticationMethodsPolicy);
 
 ```

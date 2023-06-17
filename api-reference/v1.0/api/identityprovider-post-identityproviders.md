@@ -1,15 +1,16 @@
 ---
 title: "Create identityProvider"
 description: "Create a new identityProvider"
-localization_priority: Priority
-author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: high
+author: "namkedia"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create identityProvider
-
+# Create identityProvider (deprecated)
 Namespace: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Create a new [identityProvider](../resources/identityprovider.md) by specifying display name, identityProvider type, client ID, and client secret.
 
@@ -60,7 +61,11 @@ The following example creates an **identityProvider**.
 
 ##### Request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+   "blockType": "request",
+   "name": "identityprovider-post-identityproviders"
+} -->
+
 ```http
 POST https://graph.microsoft.com/v1.0/identityProviders
 Content-type: application/json
@@ -75,7 +80,10 @@ Content-type: application/json
 
 ##### Response
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.identityProvider"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -88,6 +96,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -97,6 +106,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
-

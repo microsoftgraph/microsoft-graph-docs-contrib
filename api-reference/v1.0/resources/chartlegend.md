@@ -2,7 +2,7 @@
 title: "ChartLegend resource type"
 description: "Represents the legend in a chart."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
@@ -48,10 +48,10 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "format": {"@odata.type":"microsoft.graph.workbookChartLegendFormat"},
   "overlay": true,
   "position": "string",
-  "visible": true,
-  "format": {"@odata.type":"microsoft.graph.workbookChartLegendFormat"}
+  "visible": true
 }
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "educationRubricOutcome resource type"
 description: "An educationOutcome that provides a graded rubric"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "resourcePageType"
@@ -25,8 +25,9 @@ An [educationOutcome](educationoutcome.md) that provides a graded rubric.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|id|String|Unique identifier for the educationRubricOutcome.|
 |lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource.|
-|lastModifiedDateTime|DateTimeOffset|Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |publishedRubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) collection|A copy of the rubricQualityFeedback property that is made when the grade is released to the student.|
 |publishedRubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md) collection|A copy of the rubricQualitySelectedLevels property that is made when the grade is released to the student.|
 |rubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) collection|A collection of specific feedback for each quality of this rubric.|
@@ -46,12 +47,12 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.educationRubricOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
+  "id": "String (identifier)",
   "publishedRubricQualityFeedback": [{"@odata.type": "microsoft.graph.rubricQualityFeedbackModel"}],
   "publishedRubricQualitySelectedLevels": [{"@odata.type": "microsoft.graph.rubricQualitySelectedColumnModel"}],
   "rubricQualityFeedback": [{"@odata.type": "microsoft.graph.rubricQualityFeedbackModel"}],

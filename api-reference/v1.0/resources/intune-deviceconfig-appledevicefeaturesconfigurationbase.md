@@ -1,7 +1,7 @@
 ---
 title: "appleDeviceFeaturesConfigurationBase resource type"
 description: "Apple device features configuration profile."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -63,12 +63,3 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
-
-
-
-
-
-
-

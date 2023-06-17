@@ -1,10 +1,10 @@
 ---
 title: "attributeMappingFunctionSchema resource type"
 description: "Describes a function that can be used in an attribute mapping to transform values during synchronization."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # attributeMappingFunctionSchema resource type
@@ -17,7 +17,7 @@ Describes a function that can be used in an [attribute mapping](synchronization-
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
 |[List](../api/synchronization-synchronizationschema-functions.md) | [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection|List supported attribute mapping functions.|
 
@@ -25,7 +25,7 @@ Describes a function that can be used in an [attribute mapping](synchronization-
 
 | Property                   | Type                      | Description    |
 |:---------------------------|:-------------------------|:---------------|
-|name                        |String                    |Operator name. |
+|id                        |String                    |Key. Read-only. |
 |parameters                  |[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection  |Collection of function parameters.|
 
 ## JSON representation
@@ -42,10 +42,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "name": "String (identifier)",
-  "parameters": [{"@odata.type": "microsoft.graph.attributeMappingParameterSchema"}]
+  "id": "String (identifier)",
+  "parameters": [
+    {
+      "@odata.type": "microsoft.graph.attributeMappingParameterSchema"
+    }
+  ]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

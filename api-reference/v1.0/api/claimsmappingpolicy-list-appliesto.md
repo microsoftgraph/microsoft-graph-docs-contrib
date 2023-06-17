@@ -1,9 +1,9 @@
 ---
 title: "List appliesTo"
 description: "Get a list of directoryObject objects that a claimsMappingPolicy object has been applied to."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "paulgarn"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -17,6 +17,7 @@ Get a list of [directoryObject](../resources/directoryObject.md) objects that a 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All |
@@ -54,20 +55,49 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of the request.
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_appliesto"
+  "name": "get_appliesto_1"
 }-->
 
-```http
-GET https://graph.microsoft.com/v1.0/claimsMappingPolicies/{id}/appliesTo
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/{id}/appliesTo
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-appliesto-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-appliesto-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-appliesto-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-appliesto-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-appliesto-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-appliesto-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -81,12 +111,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "deletedDateTime": "datetime-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.servicePrincipal",
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/335601aa-9c79-48a3-a9f7-d2a6ac9cb730/Microsoft.DirectoryServices.ServicePrincipal",
+            "id": "335601aa-9c79-48a3-a9f7-d2a6ac9cb730",
+            "accountEnabled": true,
+            "createdDateTime": "2021-08-12T07:28:18Z",
+            "appDisplayName": "My App",
+            "appId": "e4d924fc-d18d-4e69-9a17-7095f311bf17",
+            "appOwnerOrganizationId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "displayName": "My App",
+            "publisherName": "Contoso",
+            "servicePrincipalNames": [
+                "e4d924fc-d18d-4e69-9a17-7095f311bf17"
+            ],
+            "servicePrincipalType": "Application",
+            "signInAudience": "AzureADMyOrg"
+        }
+    ]
 }
 ```
 

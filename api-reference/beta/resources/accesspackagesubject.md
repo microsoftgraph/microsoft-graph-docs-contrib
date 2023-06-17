@@ -1,9 +1,9 @@
 ---
 title: "accessPackageSubject resource type"
 description: "In Azure AD entitlement management, a subject of an access package assignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.
+In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.  It may represent a requestor from a connected organization who is not yet in the tenant.
 
 ## Properties
 
@@ -22,13 +22,17 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |displayName|String|The display name of the subject.|
 |email|String|The email address of the subject.|
 |id|String| Read-only.|
-|objectId|String|The object ID of the subject.|
+|objectId|String|The object identifier of the subject. `null` if the subject is not yet a user in the tenant.|
 |principalName|String|The principal name, if known, of the subject.|
 |type|String|The resource type of the subject.|
+|connectedOrganizationId|String|The identifier of the connected organization of the subject.|
 
 ## Relationships
 
-None.
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|connectedOrganization|[connectedOrganization](connectedorganization.md)| The connected organization of the subject. Read-only. Nullable.|
+
 
 ## JSON representation
 
@@ -40,7 +44,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageSubject",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -64,5 +67,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

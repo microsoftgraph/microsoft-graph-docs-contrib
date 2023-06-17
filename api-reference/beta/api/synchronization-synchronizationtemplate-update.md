@@ -1,10 +1,10 @@
 ---
 title: "Update synchronizationTemplate"
 description: "Update (override) the synchronization template associated with a given application."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Update synchronizationTemplate
@@ -18,16 +18,18 @@ Update (override) the synchronization template associated with a given applicati
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Not supported.| 
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Synchronization.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All|
+
+[!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH application/{id}/synchronization/templates/{templateId}
+PATCH /applications/{id}/synchronization/templates/{templateId}
 ```
 
 ## Request headers
@@ -58,7 +60,6 @@ The following is an example of a request.
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/applications/{id}/synchronization/templates/{templateId}
-Authorization: Bearer <token>
 Content-type: application/json
 
 {
@@ -67,27 +68,21 @@ Content-type: application/json
     "factoryTag": "CustomSCIM"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-synchronizationtemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-synchronizationtemplate-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-synchronizationtemplate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
 The following is an example of a response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.synchronizationTemplate"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

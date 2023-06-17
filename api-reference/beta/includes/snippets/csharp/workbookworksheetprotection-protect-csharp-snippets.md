@@ -4,26 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var options = new WorkbookWorksheetProtectionOptions
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Worksheets.Item.Protection.Protect.ProtectPostRequestBody
 {
-	AllowFormatCells = true,
-	AllowFormatColumns = true,
-	AllowFormatRows = true,
-	AllowInsertColumns = true,
-	AllowInsertRows = true,
-	AllowInsertHyperlinks = true,
-	AllowDeleteColumns = true,
-	AllowDeleteRows = true,
-	AllowSort = true,
-	AllowAutoFilter = true,
-	AllowPivotTables = true
+	Options = new WorkbookWorksheetProtectionOptions
+	{
+		AllowFormatCells = true,
+		AllowFormatColumns = true,
+		AllowFormatRows = true,
+		AllowInsertColumns = true,
+		AllowInsertRows = true,
+		AllowInsertHyperlinks = true,
+		AllowDeleteColumns = true,
+		AllowDeleteRows = true,
+		AllowSort = true,
+		AllowAutoFilter = true,
+		AllowPivotTables = true,
+	},
 };
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Protection.Protect.PostAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Protection
-	.Protect(options)
-	.Request()
-	.PostAsync();
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "plannerBucketTaskBoardTaskFormat resource type"
-description: "The **plannerBucketTaskBoardTaskFormat** resource represents the information used to render a task correctly in the Buckets view of the Task Board (a view organized by tasks within the buckets they are assigned to). Each task will have one **plannerBucketTaskBoardTaskFormat** object associated with it."
-localization_priority: Normal
+description: "Represents the information used to render a task correctly in the buckets view of a task board."
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerBucketTaskBoardTaskFormat** resource represents the information used to render a task correctly in the Buckets view of the Task Board (a view organized by tasks within the buckets they are assigned to). Each [task](plannertask.md) will have one **plannerBucketTaskBoardTaskFormat** object associated with it.
+Represents the information used to render a task correctly in the buckets view of a task board (a view organized by tasks within the buckets they are assigned to). Each [task](plannertask.md) will have one **plannerBucketTaskBoardTaskFormat** object associated with it.
 
 
 ## Methods
@@ -26,15 +26,15 @@ The **plannerBucketTaskBoardTaskFormat** resource represents the information use
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. ID of the resource. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
-|orderHint|String|Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined [here](planner-order-hint-format.md).|
+|id|String| Read-only. ID of the resource. It is 28 characters long and case-sensitive. The [format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|orderHint|String|Hint used to order tasks in the bucket view of the task board. For details about the supported format, see [Using order hints in Planner](planner-order-hint-format.md).|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -49,7 +49,6 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "orderHint": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -64,5 +63,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

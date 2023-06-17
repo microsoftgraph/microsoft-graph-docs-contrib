@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var sectionGroup = new SectionGroup
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new SectionGroup
 {
-	DisplayName = "Section group name"
+	DisplayName = "Section group name",
 };
+var result = await graphClient.Me.Onenote.Notebooks["{notebook-id}"].SectionGroups.PostAsync(requestBody);
 
-await graphClient.Me.Onenote.Notebooks["{id}"].SectionGroups
-	.Request()
-	.AddAsync(sectionGroup);
 
 ```

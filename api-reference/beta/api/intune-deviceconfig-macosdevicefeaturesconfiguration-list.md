@@ -1,7 +1,7 @@
 ---
 title: "List macOSDeviceFeaturesConfigurations"
 description: "List properties and relationships of the macOSDeviceFeaturesConfiguration objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6245
+Content-Length: 7030
 
 {
   "value": [
@@ -138,6 +138,16 @@ Content-Length: 6245
           "value": "Value value"
         }
       ],
+      "appAssociatedDomains": [
+        {
+          "@odata.type": "microsoft.graph.macOSAssociatedDomainsItem",
+          "applicationIdentifier": "Application Identifier value",
+          "domains": [
+            "Domains value"
+          ],
+          "directDownloadsEnabled": true
+        }
+      ],
       "singleSignOnExtension": {
         "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
         "extensionIdentifier": "Extension Identifier value",
@@ -182,7 +192,18 @@ Content-Length: 6245
         "activeDirectorySiteCode": "Active Directory Site Code value",
         "passwordEnableLocalSync": true,
         "blockActiveDirectorySiteAutoDiscovery": true,
-        "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+        "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+        "modeCredentialUsed": "Mode Credential Used value",
+        "usernameLabelCustom": "Username Label Custom value",
+        "userSetupDelayed": true,
+        "signInHelpText": "Sign In Help Text value",
+        "kerberosAppsInBundleIdACLIncluded": true,
+        "managedAppsInBundleIdACLIncluded": true,
+        "credentialsCacheMonitored": true,
+        "preferredKDCs": [
+          "Preferred KDCs value"
+        ],
+        "tlsForLDAPRequired": true
       },
       "contentCachingEnabled": true,
       "contentCachingType": "userContentOnly",
@@ -233,9 +254,3 @@ Content-Length: 6245
   ]
 }
 ```
-
-
-
-
-
-

@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var comment = "Cancelling for this week due to all hands";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Events["{id}"]
-	.Cancel(comment)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Beta.Me.Events.Item.Cancel.CancelPostRequestBody
+{
+	Comment = "Cancelling for this week due to all hands",
+};
+await graphClient.Me.Events["{event-id}"].Cancel.PostAsync(requestBody);
+
 
 ```

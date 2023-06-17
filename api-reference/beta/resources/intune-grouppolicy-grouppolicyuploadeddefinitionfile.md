@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyUploadedDefinitionFile resource type"
 description: "The entity represents an ADMX (Administrative Template) XML file uploaded by Administrator. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -44,9 +44,9 @@ Inherits from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-groupp
 |targetNamespace|String|Specifies the URI used to identify the namespace within the ADMX file. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md). Possible values are: `admxBacked`, `admxIngested`.|
 |revision|String|The revision version associated with the file. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|fileName|String|The file name of the ADMX file without the path. For example: edge.admx Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |id|String|Key of the entity. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified. Inherited from [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|fileName|String|The file name of the uploaded ADML file.|
 |status|[groupPolicyUploadedDefinitionFileStatus](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)|The upload status of the uploaded ADMX file. Possible values are: `none`, `uploadInProgress`, `available`, `assigned`, `removalInProgress`, `uploadFailed`, `removalFailed`.|
 |content|Binary|The contents of the uploaded ADMX file.|
 |uploadDateTime|DateTimeOffset|The uploaded time of the uploaded ADMX file.|
@@ -79,9 +79,9 @@ Here is a JSON representation of the resource.
   "targetNamespace": "String",
   "policyType": "String",
   "revision": "String",
+  "fileName": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "fileName": "String",
   "status": "String",
   "content": "binary",
   "uploadDateTime": "String (timestamp)",
@@ -98,9 +98,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

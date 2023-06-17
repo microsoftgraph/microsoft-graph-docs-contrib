@@ -4,47 +4,47 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var @event = new Event
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Event
 {
 	Subject = "Let's go for lunch",
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "Does next month work for you?"
+		Content = "Does next month work for you?",
 	},
 	Start = new DateTimeTimeZone
 	{
 		DateTime = "2019-03-10T12:00:00",
-		TimeZone = "Pacific Standard Time"
+		TimeZone = "Pacific Standard Time",
 	},
 	End = new DateTimeTimeZone
 	{
 		DateTime = "2019-03-10T14:00:00",
-		TimeZone = "Pacific Standard Time"
+		TimeZone = "Pacific Standard Time",
 	},
 	Location = new Location
 	{
-		DisplayName = "Harry's Bar"
+		DisplayName = "Harry's Bar",
 	},
-	Attendees = new List<Attendee>()
+	Attendees = new List<Attendee>
 	{
 		new Attendee
 		{
 			EmailAddress = new EmailAddress
 			{
 				Address = "adelev@contoso.onmicrosoft.com",
-				Name = "Adele Vance"
+				Name = "Adele Vance",
 			},
-			Type = AttendeeType.Required
-		}
+			Type = AttendeeType.Required,
+		},
 	},
-	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
+	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7",
 };
+var result = await graphClient.Me.Calendars["{calendar-id}"].Events.PostAsync(requestBody);
 
-await graphClient.Me.Calendars["AAMkAGViNDU7zAAAAAGtlAAA="].Events
-	.Request()
-	.AddAsync(@event);
 
 ```

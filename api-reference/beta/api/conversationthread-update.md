@@ -1,8 +1,8 @@
 ---
 title: "Update conversationthread"
 description: "Lock or unlock a thread, to allow or avoid further posting to the thread."
-localization_priority: Normal
-author: "dkershaw10"
+ms.localizationpriority: medium
+author: "mikemcleanlive"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groups/{id}/threads/{id}
-PATCH /groups/{id}/conversations/{id}/threads/{id}
+PATCH /groups/{group id}/threads/{thread id}
+PATCH /groups/{group id}/conversations/{conversation id}/threads/{thread id}
 
 ```
 ## Request headers
@@ -39,29 +39,27 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |isLocked|Boolean|Indicates if the thread is locked. Set to `true` to disallow posting.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an empty object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "update_conversationthread"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/groups/{id}/threads/{id}
+PATCH https://graph.microsoft.com/beta/groups/0fbf2921-5d17-4c2b-bae4-cc581de72c13/threads/AAQkAGU3OGZjZTE2LTFlOWItNGExYi1hMGMzLTMwZWU4OGUzYjU5MQMkABAALmW2hn6Ui0_7hOBeAIFdWhAALmW2hn6Ui0_7hOBeAIFdWg==
 Content-type: application/json
-Content-length: 419
 
 {
-  "@odata.type":"#Microsoft.OutlookServices.ConversationThread",
   "isLocked": true
 }
 ```
@@ -73,49 +71,23 @@ Content-length: 419
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-conversationthread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-conversationthread-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-conversationthread-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.conversationThread"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 419
 
-{
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ],
-  "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "ccRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ],
-  "isLocked": true
-}
+{}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

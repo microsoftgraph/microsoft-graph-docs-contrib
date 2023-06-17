@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var educationSchool = new EducationSchool
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new EducationSchool
 {
 	DisplayName = "Fabrikam Arts High School",
-	Description = "Magnate school for the arts. Los Angeles School District"
+	Description = "Magnate school for the arts. Los Angeles School District",
 };
+var result = await graphClient.Education.Schools["{educationSchool-id}"].PatchAsync(requestBody);
 
-await graphClient.Education.Schools["10002"]
-	.Request()
-	.UpdateAsync(educationSchool);
 
 ```

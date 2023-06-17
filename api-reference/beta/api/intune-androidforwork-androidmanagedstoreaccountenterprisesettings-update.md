@@ -1,7 +1,7 @@
 ---
 title: "Update androidManagedStoreAccountEnterpriseSettings"
 description: "Update the properties of a androidManagedStoreAccountEnterpriseSettings object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -60,6 +60,7 @@ The following table shows the properties that are required when you create the [
 |deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 |companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md) collection|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
 |androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
+|managedGooglePlayInitialScopeTagIds|String collection|Initial scope tags for MGP apps|
 
 
 
@@ -73,7 +74,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccountEnterpriseSettings
 Content-type: application/json
-Content-length: 897
+Content-length: 1002
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
@@ -99,7 +100,10 @@ Content-length: 897
       }
     }
   ],
-  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true,
+  "managedGooglePlayInitialScopeTagIds": [
+    "Managed Google Play Initial Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -108,7 +112,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1010
+Content-Length: 1115
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
@@ -136,12 +140,9 @@ Content-Length: 1010
       }
     }
   ],
-  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true,
+  "managedGooglePlayInitialScopeTagIds": [
+    "Managed Google Play Initial Scope Tag Ids value"
+  ]
 }
 ```
-
-
-
-
-
-

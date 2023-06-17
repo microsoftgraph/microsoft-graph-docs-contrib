@@ -1,8 +1,8 @@
 ---
 title: "mobileAppTroubleshootingAppUpdateHistory resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
-author: "dougeby"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # mobileAppTroubleshootingAppUpdateHistory resource type
 
 Namespace: microsoft.graph
-
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -56,9 +54,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

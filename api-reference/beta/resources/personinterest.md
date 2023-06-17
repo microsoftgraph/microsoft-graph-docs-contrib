@@ -1,7 +1,7 @@
 ---
 title: "personInterest resource type"
 description: "personInterest resource type"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"
@@ -58,8 +58,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.personInterest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.personInterest"
 }-->
 
 ```json

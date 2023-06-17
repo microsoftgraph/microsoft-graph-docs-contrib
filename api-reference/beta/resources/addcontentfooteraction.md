@@ -1,17 +1,19 @@
 ---
-title: "addContentFooterAction resource type"
-description: "Represents an action that specifies the details on the content footer to be added to the information, if applicable."
-localization_priority: Normal
+title: "addContentFooterAction resource type (deprecated)"
+description: "Represents an action that specifies the details on the content footer to be added to the information, if applicable. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# addContentFooterAction resource type
+# addContentFooterAction resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Represents an action that specifies the details on the content footer to be added to the information, if applicable.
 

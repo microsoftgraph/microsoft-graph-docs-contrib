@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getOffice365GroupsActivityCounts"
 description: "Get the number of group activities across group workloads."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -68,6 +68,8 @@ The CSV file has the following headers for columns.
 - Yammer Messages Posted
 - Yammer Messages Read
 - Yammer Messages Liked
+- Teams Channel Messages
+- Teams Meetings Organized
 - Report Date
 - Report Period
 
@@ -76,6 +78,8 @@ The following columns are not supported in Microsoft Graph China operated by 21V
 - Yammer Messages Posted
 - Yammer Messages Read
 - Yammer Messages Liked
+- Teams Channel Messages
+- Teams Meetings Organized
 
 ### JSON
 
@@ -86,6 +90,8 @@ The following properties in **[office365GroupsActivityCounts](../resources/offic
 - yammerMessagesPosted
 - yammerMessagesRead
 - yammerMessagesLiked
+- teamsChannelMessages
+- teamsMeetingsOrganized
 
 ## Example
 
@@ -132,7 +138,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Exchange Emails Received,Yammer Messages Posted,Yammer Messages Read,Yammer Messages Liked,Report Date,Report Period
+Report Refresh Date,Exchange Emails Received,Yammer Messages Posted,Yammer Messages Read,Yammer Messages Liked,Teams Channel Messages,Teams Meetings Organized,Report Date,Report Period
 ```
 
 ### JSON
@@ -158,7 +164,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityCounts(pe
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -180,6 +186,8 @@ Content-Length: 310
       "yammerMessagesPosted": 0, 
       "yammerMessagesRead": 0, 
       "yammerMessagesLiked": 0, 
+      "teamsChannelMessages": 0, 
+      "teamsMeetingsOrganized": 0, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }

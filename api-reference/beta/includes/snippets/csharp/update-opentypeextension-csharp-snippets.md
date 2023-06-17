@@ -4,22 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var extension = new OpenTypeExtension
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Extension
 {
-	ExtensionName = "Com.Contoso.Estimate",
-	AdditionalData = new Dictionary<string, object>()
+	OdataType = "#microsoft.outlookServices.openTypeExtension",
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"companyName", "Contoso"},
-		{"expirationDate", "2016-07-30T11:00:00Z"},
-		{"DealValue", "1010100"},
-		{"topPicks", "[\"Employees only\",\"Add spouse or guest\",\"Add family\"]"}
-	}
+		{
+			"extensionName" , "Com.Contoso.Estimate"
+		},
+		{
+			"companyName" , "Contoso"
+		},
+		{
+			"expirationDate" , "2016-07-30T11:00:00.000Z"
+		},
+		{
+			"DealValue" , 1010100
+		},
+		{
+			"topPicks" , new List<string>
+			{
+				"Employees only",
+				"Add spouse or guest",
+				"Add family",
+			}
+		},
+	},
 };
+var result = await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"].Extensions["{extension-id}"].PatchAsync(requestBody);
 
-await graphClient.Groups["37df2ff0-0de0-4c33-8aee-75289364aef6"].Threads["AAQkADJizZJpEWwqDHsEpV_KA=="].Posts["AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA="].Extensions["Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate"]
-	.Request()
-	.UpdateAsync(extension);
 
 ```

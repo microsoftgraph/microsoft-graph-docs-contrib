@@ -1,7 +1,7 @@
 ---
 title: "Update managedDevice"
 description: "Update the properties of a managedDevice object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Update the properties of a [managedDevice](../resources/intune-devices-manageddevice.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -57,38 +57,38 @@ The following table shows the properties that are required when you create the [
 |id|String|Unique Identifier for the device. This property is read-only.|
 |userId|String|Unique Identifier for the user associated with the device. This property is read-only.|
 |deviceName|String|Name of the device. This property is read-only.|
-|hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|The hardward details for the device.  Includes information such as storage space, manufacturer, serial number, etc. This property is read-only.|
-|ownerType|[ownerType](../resources/intune-shared-ownertype.md)|Ownership of the device. Can be 'company' or 'personal'. Possible values are: `unknown`, `company`, `personal`.|
+|hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|The hardward details for the device. Includes information such as storage space, manufacturer, serial number, etc. By default most property of this type are set to null/0/false and enum defaults for associated types. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. $Search is not supported. Read-only. This property is read-only.|
+|ownerType|[ownerType](../resources/intune-shared-ownertype.md)|Ownership of the device. Possible values are, 'company' or 'personal'. Default is unknown. Supports $filter operator 'eq' and 'or'. Possible values are: `unknown`, `company`, `personal`.|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Ownership of the device. Can be 'company' or 'personal'. Possible values are: `unknown`, `company`, `personal`.|
 |deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) collection|List of ComplexType deviceActionResult objects. This property is read-only.|
-|managementState|[managementState](../resources/intune-devices-managementstate.md)|Management state of the device. This property is read-only. Possible values are: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
-|enrolledDateTime|DateTimeOffset|Enrollment time of the device. This property is read-only.|
-|lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. This property is read-only.|
+|managementState|[managementState](../resources/intune-devices-managementstate.md)|Management state of the device. Examples: Managed, RetirePending, etc. Default is managed. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
+|enrolledDateTime|DateTimeOffset|Enrollment time of the device. Supports $filter operator 'lt' and 'gt'. This property is read-only.|
+|lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. Supports $filter operator 'lt' and 'gt'. This property is read-only.|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Chassis type of the device. This property is read-only. Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc. This property is read-only.|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `cloudPC`, `blackberry`, `palm`, `unknown`.|
-|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. This property is read-only. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
-|jailBroken|String|whether the device is jail broken or rooted. This property is read-only.|
-|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
+|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|Platform of the device. Examples: Desktop, WindowsRT, etc. Default is unknown. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
+|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. Examples: Compliant, Conflict, Error, etc. Default is unknown. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
+|jailBroken|String|Whether the device is jail broken or rooted. Default is an empty string. Supports $filter operator 'eq' and 'or'. This property is read-only.|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Examples: Intune, EAS, etc. Default is unknown. Supports $filter operator 'eq' and 'or'. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`, `intuneAosp`.|
 |osVersion|String|Operating system version of the device. This property is read-only.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated. This property is read-only.|
 |easDeviceId|String|Exchange ActiveSync Id of the device. This property is read-only.|
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device. This property is read-only.|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only.|
 |azureADRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only.|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`, `azureAdJoinUsingAzureVmExtension`, `androidEnterpriseDedicatedDevice`, `androidEnterpriseFullyManaged`, `androidEnterpriseCorporateWorkProfile`.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`, `azureAdJoinUsingAzureVmExtension`, `androidEnterpriseDedicatedDevice`, `androidEnterpriseFullyManaged`, `androidEnterpriseCorporateWorkProfile`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Indicates if Lost mode is enabled or disabled. This property is read-only. Possible values are: `disabled`, `enabled`.|
-|activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed. This property is read-only.|
+|activationLockBypassCode|String|The code that allows the Activation Lock on managed device to be bypassed. Default, is Null (Non-Default property) for this property when returned as part of managedDevice entity in LIST call. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. $Search is not supported. Read-only. This property is read-only.|
 |emailAddress|String|Email(s) for the user associated with the device. This property is read-only.|
 |azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only. This property is read-only.|
 |azureADDeviceId|String|The unique identifier for the Azure Active Directory device. Read only. This property is read-only.|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Device registration state. This property is read-only. Possible values are: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
-|deviceCategoryDisplayName|String|Device category display name. This property is read-only.|
+|deviceCategoryDisplayName|String|Device category display name. Default is an empty string. Supports $filter operator 'eq' and 'or'. This property is read-only.|
 |isSupervised|Boolean|Device supervised status. This property is read-only.|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Last time the device contacted Exchange. This property is read-only.|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|The Access State of the device in Exchange. This property is read-only. Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|The reason for the device's access state in Exchange. This property is read-only. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
-|remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device. This property is read-only.|
+|remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device. Default is an empty string. To retrieve actual values GET call needs to be made, with device id and included in select parameter. This property is read-only.|
 |remoteAssistanceSessionErrorDetails|String|An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.|
 |isEncrypted|Boolean|Device encryption status. This property is read-only.|
 |userPrincipalName|String|Device user principal name. This property is read-only.|
@@ -106,7 +106,7 @@ The following table shows the properties that are required when you create the [
 |subscriberCarrier|String|Subscriber Carrier. This property is read-only.|
 |meid|String|MEID. This property is read-only.|
 |totalStorageSpaceInBytes|Int64|Total Storage in Bytes. This property is read-only.|
-|freeStorageSpaceInBytes|Int64|Free Storage in Bytes. This property is read-only.|
+|freeStorageSpaceInBytes|Int64|Free Storage in Bytes. Default value is 0. Read-only. This property is read-only.|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name.|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. This property is read-only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |retireAfterDateTime|DateTimeOffset|Indicates the time after when a device will be auto retired because of scheduled action. This property is read-only.|
@@ -115,22 +115,26 @@ The following table shows the properties that are required when you create the [
 |autopilotEnrolled|Boolean|Reports if the managed device is enrolled via auto-pilot. This property is read-only.|
 |requireUserEnrollmentApproval|Boolean|Reports if the managed iOS device is user approval enrollment. This property is read-only.|
 |managementCertificateExpirationDate|DateTimeOffset|Reports device management certificate expiration date. This property is read-only.|
-|iccid|String|Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.|
-|udid|String|Unique Device Identifier for iOS and macOS devices. This property is read-only.|
+|iccid|String|Integrated Circuit Card Identifier, it is A SIM card's unique identification number. Default is an empty string. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. $Search is not supported. Read-only. This property is read-only.|
+|udid|String|Unique Device Identifier for iOS and macOS devices. Default is an empty string. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. $Search is not supported. Read-only. This property is read-only.|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for this Device instance.|
-|windowsActiveMalwareCount|Int32|Count of active malware for this windows device. This property is read-only.|
-|windowsRemediatedMalwareCount|Int32|Count of remediated malware for this windows device. This property is read-only.|
-|notes|String|Notes on the device created by IT Admin|
+|windowsActiveMalwareCount|Int32|Count of active malware for this windows device. Default is 0. To retrieve actual values GET call needs to be made, with device id and included in select parameter. This property is read-only.|
+|windowsRemediatedMalwareCount|Int32|Count of remediated malware for this windows device. Default is 0. To retrieve actual values GET call needs to be made, with device id and included in select parameter. This property is read-only.|
+|notes|String|Notes on the device created by IT Admin. Default is null. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. $Search is not supported.|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration manager client health state, valid only for devices managed by MDM/ConfigMgr Agent|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager client information, valid only for devices managed, duel-managed or tri-managed by ConfigMgr Agent|
-|ethernetMacAddress|String|Ethernet MAC. This property is read-only.|
-|physicalMemoryInBytes|Int64|Total Memory in Bytes. This property is read-only.|
+|ethernetMacAddress|String|Indicates Ethernet MAC Address of the device. Default, is Null (Non-Default property) for this property when returned as part of managedDevice entity. Individual get call with select query options is needed to retrieve actual values. Example: deviceManagement/managedDevices({managedDeviceId})?$select=ethernetMacAddress Supports: $select. $Search is not supported. Read-only. This property is read-only.|
+|physicalMemoryInBytes|Int64|Total Memory in Bytes. Default is 0. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. Read-only. This property is read-only.|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Processor architecture. This property is read-only. Possible values are: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
 |specificationVersion|String|Specification version. This property is read-only.|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Device join type. Possible values are: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|String|Device sku family|
-|skuNumber|Int32|Device sku number, see also: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only.|
+|skuNumber|Int32|Device sku number, see also: https://learn.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only.|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features. Possible values are: `none`, `microsoftManagedDesktop`.|
+|chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) collection|List of properties of the ChromeOS Device. Default is an empty list. To retrieve actual values GET call needs to be made, with device id and included in select parameter.|
+|enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only.|
+|bootstrapTokenEscrowed|Boolean|Reports if the managed device has an escrowed Bootstrap Token. This is only for macOS devices. To get, include BootstrapTokenEscrowed in the select clause and query with a device id. If FALSE, no bootstrap token is escrowed. If TRUE, the device has escrowed a bootstrap token with Intune. This property is read-only.|
+|deviceFirmwareConfigurationInterfaceManaged|Boolean|Indicates whether the device is DFCI managed. When TRUE the device is DFCI managed. When FALSE, the device is not DFCI managed. The default value is FALSE.|
 
 
 
@@ -144,7 +148,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 8019
+Content-length: 9138
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -186,7 +190,22 @@ Content-length: 8019
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
     "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
     "osBuildNumber": "Os Build Number value",
-    "operatingSystemProductType": 10
+    "operatingSystemProductType": 10,
+    "ipAddressV4": "Ip Address V4 value",
+    "subnetAddress": "Subnet Address value",
+    "esimIdentifier": "Esim Identifier value",
+    "systemManagementBIOSVersion": "System Management BIOSVersion value",
+    "tpmManufacturer": "Tpm Manufacturer value",
+    "tpmVersion": "Tpm Version value",
+    "wiredIPv4Addresses": [
+      "Wired IPv4Addresses value"
+    ],
+    "batteryLevelPercentage": 7.333333333333333,
+    "residentUsersCount": 2,
+    "productName": "Product Name value",
+    "deviceLicensingStatus": "licenseRefreshPending",
+    "deviceLicensingLastErrorCode": 12,
+    "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -320,7 +339,8 @@ Content-length: 8019
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
     "clientIdentifier": "Client Identifier value",
-    "isBlocked": true
+    "isBlocked": true,
+    "clientVersion": "Client Version value"
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
@@ -329,7 +349,19 @@ Content-length: 8019
   "joinType": "azureADJoined",
   "skuFamily": "Sku Family value",
   "skuNumber": 9,
-  "managementFeatures": "microsoftManagedDesktop"
+  "managementFeatures": "microsoftManagedDesktop",
+  "chromeOSDeviceInfo": [
+    {
+      "@odata.type": "microsoft.graph.chromeOSDeviceProperty",
+      "name": "Name value",
+      "value": "Value value",
+      "valueType": "Value Type value",
+      "updatable": true
+    }
+  ],
+  "enrollmentProfileName": "Enrollment Profile Name value",
+  "bootstrapTokenEscrowed": true,
+  "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
 
@@ -338,7 +370,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8068
+Content-Length: 9187
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -381,7 +413,22 @@ Content-Length: 8068
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
     "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
     "osBuildNumber": "Os Build Number value",
-    "operatingSystemProductType": 10
+    "operatingSystemProductType": 10,
+    "ipAddressV4": "Ip Address V4 value",
+    "subnetAddress": "Subnet Address value",
+    "esimIdentifier": "Esim Identifier value",
+    "systemManagementBIOSVersion": "System Management BIOSVersion value",
+    "tpmManufacturer": "Tpm Manufacturer value",
+    "tpmVersion": "Tpm Version value",
+    "wiredIPv4Addresses": [
+      "Wired IPv4Addresses value"
+    ],
+    "batteryLevelPercentage": 7.333333333333333,
+    "residentUsersCount": 2,
+    "productName": "Product Name value",
+    "deviceLicensingStatus": "licenseRefreshPending",
+    "deviceLicensingLastErrorCode": 12,
+    "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -515,7 +562,8 @@ Content-Length: 8068
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
     "clientIdentifier": "Client Identifier value",
-    "isBlocked": true
+    "isBlocked": true,
+    "clientVersion": "Client Version value"
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
@@ -524,12 +572,18 @@ Content-Length: 8068
   "joinType": "azureADJoined",
   "skuFamily": "Sku Family value",
   "skuNumber": 9,
-  "managementFeatures": "microsoftManagedDesktop"
+  "managementFeatures": "microsoftManagedDesktop",
+  "chromeOSDeviceInfo": [
+    {
+      "@odata.type": "microsoft.graph.chromeOSDeviceProperty",
+      "name": "Name value",
+      "value": "Value value",
+      "valueType": "Value Type value",
+      "updatable": true
+    }
+  ],
+  "enrollmentProfileName": "Enrollment Profile Name value",
+  "bootstrapTokenEscrowed": true,
+  "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
-
-
-
-
-
-

@@ -1,9 +1,9 @@
 ---
 title: "extensionSchemaProperty resource type"
 description: "Use the **extensionSchemaProperty** resource to define a property's name and its type, as part of a schemaExtension definition."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "extensions"
 author: "keylimesoda"
 ---
 
@@ -20,9 +20,9 @@ Use the **extensionSchemaProperty** resource to define a property's name and its
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|String| The name of the strongly typed property defined as part of a schema extension.|
-|type|String| The type of the property that is defined as part of a schema extension.  Allowed values are *Binary, Boolean, DateTime, Integer* or *String*.  See the table below for more details.|
+|type|String| The type of the property that is defined as part of a schema extension.  Allowed values are `Binary`, `Boolean`, `DateTime`, `Integer` or `String`. See the table below for more details.|
 
-#### Supported property data types 
+### Supported property data types 
 The following data types are supported when defining a property in a schema extension:
 
 | Property Type | Remarks |

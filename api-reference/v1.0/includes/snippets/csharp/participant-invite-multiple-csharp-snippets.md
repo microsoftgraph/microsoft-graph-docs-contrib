@@ -4,41 +4,48 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var participants = new List<InvitationParticipantInfo>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Invite.InvitePostRequestBody
 {
-	new InvitationParticipantInfo
+	Participants = new List<InvitationParticipantInfo>
 	{
-		ReplacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db",
-		Identity = new IdentitySet
+		new InvitationParticipantInfo
 		{
-			User = new Identity
+			OdataType = "#microsoft.graph.invitationParticipantInfo",
+			ReplacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db",
+			Identity = new IdentitySet
 			{
-				Id = "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
-				DisplayName = "string"
-			}
-		}
+				OdataType = "#microsoft.graph.identitySet",
+				User = new Identity
+				{
+					OdataType = "#microsoft.graph.identity",
+					Id = "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+					DisplayName = "string",
+				},
+			},
+		},
+		new InvitationParticipantInfo
+		{
+			OdataType = "#microsoft.graph.invitationParticipantInfo",
+			ReplacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db",
+			Identity = new IdentitySet
+			{
+				OdataType = "#microsoft.graph.identitySet",
+				User = new Identity
+				{
+					OdataType = "#microsoft.graph.identity",
+					Id = "1e126418-44a0-4a94-a6f8-0efe1ad71acb",
+					DisplayName = "string",
+				},
+			},
+		},
 	},
-	new InvitationParticipantInfo
-	{
-		ReplacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db",
-		Identity = new IdentitySet
-		{
-			User = new Identity
-			{
-				Id = "1e126418-44a0-4a94-a6f8-0efe1ad71acb",
-				DisplayName = "string"
-			}
-		}
-	}
+	ClientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
 };
+var result = await graphClient.Communications.Calls["{call-id}"].Participants.Invite.PostAsync(requestBody);
 
-var clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f";
-
-await graphClient.Communications.Calls["7531d31f-d10d-44de-802f-c569dbca451c"].Participants
-	.Invite(participants,clientContext)
-	.Request()
-	.PostAsync();
 
 ```

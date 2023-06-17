@@ -1,22 +1,20 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Shared
-localization_priority: Normal
-description: "The Shared resource indicates a DriveItem has been shared with others."
-ms.prod: ""
+title: shared resource type
+ms.localizationpriority: medium
+description: "The shared resource indicates a driveItem has been shared with others."
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# Shared resource type
+# shared resource type
 
 Namespace: microsoft.graph
 
-The **Shared** resource indicates a DriveItem has been shared with others.
+The **shared** resource indicates a **driveItem** has been shared with others.
 The resource includes information about how the item is shared.
 
-If a [**Driveitem**](driveitem.md) has a non-null **shared** facet, the item has been shared.
+If a [**driveitem**](driveitem.md) has a non-null **shared** facet, the item has been shared.
 
 ## JSON representation
 

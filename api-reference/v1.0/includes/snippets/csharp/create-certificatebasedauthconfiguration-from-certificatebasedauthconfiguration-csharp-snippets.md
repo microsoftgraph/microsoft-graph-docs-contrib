@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var certificateBasedAuthConfiguration = new CertificateBasedAuthConfiguration
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new CertificateBasedAuthConfiguration
 {
-	CertificateAuthorities = new List<CertificateAuthority>()
+	CertificateAuthorities = new List<CertificateAuthority>
 	{
 		new CertificateAuthority
 		{
 			IsRootAuthority = true,
-			Certificate = Encoding.ASCII.GetBytes("Binary")
-		}
-	}
+			Certificate = Convert.FromBase64String("Binary"),
+		},
+	},
 };
+var result = await graphClient.Organization["{organization-id}"].CertificateBasedAuthConfiguration.PostAsync(requestBody);
 
-await graphClient.Organization["{id}"].CertificateBasedAuthConfiguration
-	.Request()
-	.AddAsync(certificateBasedAuthConfiguration);
 
 ```

@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getSharePointSiteUsageSiteCounts"
-description: "Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period."
-localization_priority: Normal
+description: "Get the trend of total and active site count during the reporting period."
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period.
+Get the trend of total and active site count during the reporting period.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
@@ -72,7 +72,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[sharePointSiteUsageSiteCounts](../resources/sharepointsiteusagesitecounts.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 ## Example
 
@@ -145,12 +145,12 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageSiteCounts(pe
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sharePointSiteUsageSiteCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -159,7 +159,6 @@ Content-Type: application/json
 Content-Length: 251
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.sharePointSiteUsageSiteCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

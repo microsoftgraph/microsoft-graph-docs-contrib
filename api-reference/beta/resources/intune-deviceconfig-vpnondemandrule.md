@@ -1,7 +1,7 @@
 ---
 title: "vpnOnDemandRule resource type"
 description: "VPN On-Demand Rule definition."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -27,6 +27,8 @@ VPN On-Demand Rule definition.
 |domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Domain Action (Only applicable when Action is evaluate connection). Possible values are: `connectIfNeeded`, `neverConnect`.|
 |domains|String collection|Domains (Only applicable when Action is evaluate connection).|
 |probeRequiredUrl|String|Probe Required Url (Only applicable when Action is evaluate connection and DomainAction is connect if needed).|
+|interfaceTypeMatch|[vpnOnDemandRuleInterfaceTypeMatch](../resources/intune-deviceconfig-vpnondemandruleinterfacetypematch.md)|Network interface to trigger VPN. Possible values are: `notConfigured`, `ethernet`, `wiFi`, `cellular`.|
+|dnsServerAddressMatch|String collection|DNS Search Server Address.|
 
 ## Relationships
 None
@@ -53,12 +55,10 @@ Here is a JSON representation of the resource.
   "domains": [
     "String"
   ],
-  "probeRequiredUrl": "String"
+  "probeRequiredUrl": "String",
+  "interfaceTypeMatch": "String",
+  "dnsServerAddressMatch": [
+    "String"
+  ]
 }
 ```
-
-
-
-
-
-

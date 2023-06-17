@@ -4,21 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var team = new Team
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Team
 {
 	DisplayName = "My Sample Team",
 	Description = "My Sample Team’s Description",
-	AdditionalData = new Dictionary<string, object>()
+	Members = new List<ConversationMember>
 	{
-		{"template@odata.bind", "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"},
-		{"members@odata.bind", "[{\"@odata.type\":\"#microsoft.graph.aadUserConversationMember\",\"roles\":[\"owner\"],\"userId\":\"0040b377-61d8-43db-94f5-81374122dc7e\"}]"}
-	}
+		new ConversationMember
+		{
+			OdataType = "#microsoft.graph.aadUserConversationMember",
+			Roles = new List<string>
+			{
+				"owner",
+			},
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"user@odata.bind" , "https://graph.microsoft.com/v1.0/users('0040b377-61d8-43db-94f5-81374122dc7e')"
+				},
+			},
+		},
+	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"template@odata.bind" , "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
+		},
+	},
 };
+var result = await graphClient.Teams.PostAsync(requestBody);
 
-await graphClient.Teams
-	.Request()
-	.AddAsync(team);
 
 ```

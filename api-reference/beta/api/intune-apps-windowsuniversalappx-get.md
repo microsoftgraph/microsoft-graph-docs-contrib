@@ -1,7 +1,7 @@
 ---
 title: "Get windowsUniversalAppX"
 description: "Read properties and relationships of the windowsUniversalAppX object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1807
+Content-Length: 1907
 
 {
   "value": {
@@ -115,15 +115,13 @@ Content-Length: 1807
       "v10_1709": true,
       "v10_1803": true,
       "v10_1809": true,
-      "v10_1903": true
+      "v10_1903": true,
+      "v10_1909": true,
+      "v10_2004": true,
+      "v10_2H20": true,
+      "v10_21H1": true
     },
     "identityVersion": "Identity Version value"
   }
 }
 ```
-
-
-
-
-
-

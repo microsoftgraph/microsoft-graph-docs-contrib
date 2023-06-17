@@ -1,7 +1,7 @@
 ---
 title: "secureBootWithDMAType enum type"
 description: "Possible values of Secure Boot with DMA"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,9 +23,3 @@ Possible values of Secure Boot with DMA
 |notConfigured|0|Not configured, no operation|
 |withoutDMA|1|Turns on VBS with Secure Boot|
 |withDMA|3|Turns on VBS with Secure Boot and DMA|
-
-
-
-
-
-

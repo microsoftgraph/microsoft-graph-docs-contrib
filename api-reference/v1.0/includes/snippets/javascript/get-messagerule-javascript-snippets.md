@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=')
+let messageRule = await client.api('/me/mailFolders/inbox/messageRules/AQAABHg9by8=')
 	.get();
 
 ```
