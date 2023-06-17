@@ -93,11 +93,10 @@ The SCIM bulk request shown below uses the SCIM standard Core User and Enterpris
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_bulkupload_from_"
+  "name": "bulk_upload_from_SCIM_standard_schema"
 }
 -->
 ```http
-
 POST https://graph.microsoft.com/beta/servicePrincipals/ad423e08-bc97-4408-8bfb-e17d48a8c138/synchronization/jobs/API2AAD.b17887d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9123aaa8e530/bulkUpload
 Content-Type: application/scim+json
 
@@ -239,7 +238,8 @@ Content-Type: application/scim+json
 }
 ```
 
-The following is an example of the response
+### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -259,7 +259,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Bulk upload using SCIM Core user and Enterprise User schema
+### Example 2: Bulk upload using SCIM custom schema namespace
 
 The SCIM bulk request shown below uses the SCIM standard Core User and Enterprise User schema.
 It also has an additional custom schema namespace called `urn:contoso:employee` with two attributes `HireDate` and `JobCode`.
@@ -268,11 +268,10 @@ Notice how the `schemas` array in the data object is updated to include the cust
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_bulkupload_from_"
+  "name": "bulk_upload_from_SCIM_custom_schema"
 }
 -->
 ```http
-
 POST https://graph.microsoft.com/beta/servicePrincipals/ad423e08-bc97-4408-8bfb-e17d48a8c138/synchronization/jobs/API2AAD.b17887d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9123aaa8e530/bulkUpload
 Content-Type: application/scim+json
 
@@ -423,4 +422,24 @@ Content-Type: application/scim+json
     "failOnErrors": null
 }
 
+```
+### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.bulkUpload"
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+{
+    "client-request-id": "92cd10f6-fcc3-5d61-098e-a6dd35e460ef",
+    "content-length": "0",
+    "location": "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'",
+    "request-id": "beeb9ea0-f7e4-4fe7-8507-cd834c88f18b"
+}
 ```
