@@ -130,7 +130,7 @@ Content-Type: application/json
         "softwareOneTimePasscode"
       ],
       "defaultMfaMethod": "microsoftAuthenticatorPush",
-      "isSystemPreferredAuthenticationMethodEnabled": "true",
+      "isSystemPreferredAuthenticationMethodEnabled": true,
       "systemPreferredAuthenticationMethods": [                
         "push"
       ],
@@ -151,7 +151,7 @@ Content-Type: application/json
       "lastUpdatedDateTime": "2023-03-13T19:15:41.6195833Z",
       "methodsRegistered": [],
       "defaultMfaMethod": "",
-      "isSystemPreferredAuthenticationMethodEnabled": "true",
+      "isSystemPreferredAuthenticationMethodEnabled": true,
       "systemPreferredAuthenticationMethods": [],
       "userPreferredMethodForSecondaryAuthentication": "",      
       "userType": "guest"
@@ -174,7 +174,7 @@ Content-Type: application/json
         "softwareOneTimePasscode"
       ],
       "defaultMfaMethod": "mobilePhone",
-      "isSystemPreferredAuthenticationMethodEnabled": "true",
+      "isSystemPreferredAuthenticationMethodEnabled": true,
       "systemPreferredAuthenticationMethods": [                
         "push"
       ],
