@@ -1,6 +1,6 @@
 ---
 title: "Update adminTodo"
-description: "Update the properties of a microsoft.graph.adminTodo object."
+description: "Update the properties of a Microsoft Graph adminTodo object."
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -45,7 +45,7 @@ PATCH /admin/todo
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.graph.todoSettings](../resources/todosettings.md)|**Company wide settings for Microsoft Todo** Required.|
+|settings|[microsoft.graph.todoSettings](../resources/todosettings.md)|Company-wide settings for Microsoft Todo. Required.|
 
 
 

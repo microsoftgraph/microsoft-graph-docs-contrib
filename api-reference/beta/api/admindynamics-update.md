@@ -45,7 +45,7 @@ PATCH /admin/dynamics
 
 |Property|Type|Description|
 |:---|:---|:---|
-|customerVoice|[microsoft.graph.customerVoiceSettings](../resources/customervoicesettings.md)|**Company wide settings for Dynamics customer voice** Required.|
+|customerVoice|[microsoft.graph.customerVoiceSettings](../resources/customervoicesettings.md)|Company-wide settings for Dynamics customer voice. Required.|
 
 
 
