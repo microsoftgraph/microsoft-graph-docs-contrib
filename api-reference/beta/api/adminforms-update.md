@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**OrgSettings-Forms.ReadWrite.All**|
+|Delegated (work or school account)|OrgSettings-Forms.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|OrgSettings-Forms.ReadWrite.All|
 
@@ -45,7 +45,7 @@ PATCH /admin/forms
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.graph.formsSettings](../resources/formssettings.md)|**Company wide settings for Microsoft Forms** Required.|
+|settings|[microsoft.graph.formsSettings](../resources/formssettings.md)|Company-wide settings for Microsoft Forms. Required.|
 
 
 

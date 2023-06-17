@@ -1,6 +1,6 @@
 ---
 title: "Get adminTodo"
-description: "Read the properties and relationships of a microsoft.graph.adminTodo object."
+description: "Read the properties and relationships of a Microsoft Graph adminTodo object."
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**OrgSettings-Todo.Read.All, OrgSettings-Todo.ReadWrite.All**|
-|Delegated (personal Microsoft account)|**Not supported.**|
-|Application|**OrgSettings-Todo.Read.All, OrgSettings-Todo.ReadWrite.All**|
+|Delegated (work or school account)|OrgSettings-Todo.Read.All, OrgSettings-Todo.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|OrgSettings-Todo.Read.All, OrgSettings-Todo.ReadWrite.All|
 
 ## HTTP request
 
