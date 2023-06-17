@@ -22,7 +22,7 @@ Inherits from [directoryObject](directoryobject.md).
 | Method                                                           | Return Type                                                | Description                                                                 |
 | :--------------------------------------------------------------- | :--------------------------------------------------------- | :-------------------------------------------------------------------------- |
 | [Get companySubscriptions](../api/companysubscriptions-get.md)   | [companySubscriptions](companysubscriptions.md)            | Get a specific commercial subscription that an organization has acquired.   |
-| [List companySubscriptions](../api/companysubscriptions-list.md) | [companySubscriptions](companysubscriptions.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
+| [List companySubscriptions](../api/directory-list-subscriptions.md) | [companySubscriptions](companysubscriptions.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
 
 ## Properties
 
