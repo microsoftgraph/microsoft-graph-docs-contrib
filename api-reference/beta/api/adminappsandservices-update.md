@@ -1,6 +1,6 @@
 ---
 title: "Update adminAppsAndServices"
-description: "Update the properties of a microsoft.graph.adminAppsAndServices object."
+description: "Update the properties of a Microsoft Graph adminAppsAndServices object."
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -20,8 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|OrgSettings-AppsAndServices.ReadWrite.All|
-|Delegated (personal Microsoft account)|**Not supported.**|
-|Application|**OrgSettings-AppsAndServices.ReadWrite.All**|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|OrgSettings-AppsAndServices.ReadWrite.All|
 
 ## HTTP request
 
@@ -45,7 +45,7 @@ PATCH /admin/appsAndServices
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.graph.appsAndServicesSettings](../resources/appsandservicessettings.md)|**Company wide settings for apps and services** Required.|
+|settings|[microsoft.graph.appsAndServicesSettings](../resources/appsandservicessettings.md)|Company-wide settings for apps and services.Required.|
 
 
 
