@@ -51,7 +51,7 @@ The following table shows the parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|policySettings|cloudPcPolicySettingType|The target property of this apply action. This property is a enum flag, possible values are: region, singleSignOn and their bitwise combination. Default value is `region` as action will only apply region change if this parameter is null.|
+|policySettings|[cloudPcPolicySettingType](../enums.md#cloudpcpolicysettingtype-values)|The target property of this apply action. Possible values are: `region`, `singleSignOn`, `unknownFutureValue`, and their bitwise combination. Default value is `region`. This action applies `region` as a value if this parameter is `null`.|
 
 ## Response
 
