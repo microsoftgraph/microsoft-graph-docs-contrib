@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Identity/B2cUserFlows/Item/Languages/Item/OverridesPages/Item/Value"
+	  graphidentity "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.New$valuePutRequestBody()
+requestBody := graphidentity.New$valuePutRequestBody()
 additionalData := map[string]interface{}{
 
 
@@ -38,7 +38,7 @@ value := "Are you sure that you want to cancel your selection?"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").LanguagesById("userFlowLanguageConfiguration-id").OverridesPagesById("userFlowLanguagePage-id").Value().Put(context.Background(), requestBody, nil)
+graphClient.Identity().B2cUserFlows().ByB2cUserFlowId("b2cIdentityUserFlow-id").Languages().ByLanguageId("userFlowLanguageConfiguration-id").OverridesPages().ByOverridesPageId("userFlowLanguagePage-id").Value().Put(context.Background(), requestBody, nil)
 
 
 ```

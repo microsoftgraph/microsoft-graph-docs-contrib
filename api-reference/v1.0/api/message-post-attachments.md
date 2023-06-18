@@ -112,6 +112,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-file-attachment-from-message-v1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-file-attachment-from-message-v1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.

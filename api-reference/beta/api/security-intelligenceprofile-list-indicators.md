@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Get the [intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) resources from the **indicators** navigation property of an [intelligenceProfile](../resources/security-intelligenceprofile.md).
 
 ## Permissions
@@ -85,8 +87,16 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/intelProfiles/a
 [!INCLUDE [sample-code](../includes/snippets/go/list-intelligenceprofileindicator-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-intelligenceprofileindicator-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-intelligenceprofileindicator-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-intelligenceprofileindicator-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

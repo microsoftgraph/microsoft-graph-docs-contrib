@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSectionGroup()
 displayName := "Section group name"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().Onenote().NotebooksById("notebook-id").SectionGroups().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Onenote().Notebooks().ByNotebookId("notebook-id").SectionGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

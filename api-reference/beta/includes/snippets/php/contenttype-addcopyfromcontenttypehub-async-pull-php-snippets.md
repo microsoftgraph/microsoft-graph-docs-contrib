@@ -14,7 +14,7 @@ $requestBody->setContentTypeId('String');
 
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->contentTypes()->addCopyFromContentTypeHub()->post($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->lists()->byListId('list-id')->contentTypes()->addCopyFromContentTypeHub()->post($requestBody);
 
 
 ```

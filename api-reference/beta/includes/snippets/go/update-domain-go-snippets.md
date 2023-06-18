@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDomain()
@@ -25,7 +25,7 @@ supportedServices := []string {
 }
 requestBody.SetSupportedServices(supportedServices)
 
-result, err := graphClient.DomainsById("domain-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Domains().ByDomainId("domain-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

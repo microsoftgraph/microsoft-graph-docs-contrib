@@ -112,6 +112,10 @@ POST https://graph.microsoft.com/v1.0/me/authentication/phoneMethods/3179e48a-75
 [!INCLUDE [sample-code](../includes/snippets/php/phoneauthenticationmethod-enablesmssignin-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/phoneauthenticationmethod-enablesmssignin-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

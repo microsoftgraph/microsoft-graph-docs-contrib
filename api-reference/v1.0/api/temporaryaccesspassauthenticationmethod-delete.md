@@ -97,6 +97,10 @@ DELETE https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc
 [!INCLUDE [sample-code](../includes/snippets/php/delete-temporaryaccesspassauthenticationmethod-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-temporaryaccesspassauthenticationmethod-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

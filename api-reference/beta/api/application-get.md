@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e919
 [!INCLUDE [sample-code](../includes/snippets/php/get-application-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-application-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

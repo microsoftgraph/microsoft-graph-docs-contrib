@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UsersRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new UsersRequestBuilderGetQueryParameters();
-$queryParameters->filter = "assignedLicenses/any";
-
+$queryParameters = UsersRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = "assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->users()->get($requestConfiguration);
+$result = $graphServiceClient->users()->get($requestConfiguration);
 
 
 ```

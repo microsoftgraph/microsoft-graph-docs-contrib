@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/policies/activityBasedTimeoutPolicies/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/get-activitybasedtimeoutpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-activitybasedtimeoutpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

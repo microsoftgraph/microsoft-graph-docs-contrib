@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/62e90394-69f5-4237-9
 [!INCLUDE [sample-code](../includes/snippets/php/get-directoryroletemplate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-directoryroletemplate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

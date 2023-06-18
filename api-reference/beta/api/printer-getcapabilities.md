@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
 [!INCLUDE [sample-code](../includes/snippets/php/printer-getcapabilities-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/printer-getcapabilities-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

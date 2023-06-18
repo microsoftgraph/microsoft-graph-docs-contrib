@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Chats/Item/SendActivityNotification"
+	  graphchats "github.com/microsoftgraph/msgraph-beta-sdk-go/chats"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
+requestBody := graphchats.NewSendActivityNotificationPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
 source := graphmodels.TEXT_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
@@ -44,13 +45,13 @@ keyValuePair.SetName(&name)
 value := "6788662"
 keyValuePair.SetValue(&value) 
 
-templateParameters := []graphmodels.KeyValuePairable {
+templateParameters := []graphchats.KeyValuePairable {
 	keyValuePair,
 
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.ChatsById("chat-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
+graphClient.Chats().ByChatId("chat-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

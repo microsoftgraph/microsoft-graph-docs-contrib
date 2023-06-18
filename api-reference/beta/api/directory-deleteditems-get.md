@@ -32,7 +32,7 @@ The following table shows the least privileged permission or permissions require
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directory/deleteditems/{id}
+GET /directory/deleteditems/{object-id}
 ```
 
 ## Optional query parameters
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-9
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-directory-deleteditem-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-directory-deleteditem-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

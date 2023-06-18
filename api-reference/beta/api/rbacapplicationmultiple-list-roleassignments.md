@@ -121,6 +121,10 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 [!INCLUDE [sample-code](../includes/snippets/php/list-unifiedroleassignmentmultiple-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-unifiedroleassignmentmultiple-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -195,6 +199,10 @@ GET  https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-cloudpcunifiedroleassignmentmultiple-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-cloudpcunifiedroleassignmentmultiple-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -285,6 +293,10 @@ GET  https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments?$fi
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-cloudpcunifiedroleassignmentmultiple-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-cloudpcunifiedroleassignmentmultiple-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

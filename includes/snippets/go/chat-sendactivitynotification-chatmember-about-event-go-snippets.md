@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Chats/Item/SendActivityNotification"
+	  graphchats "github.com/microsoftgraph/msgraph-sdk-go/chats"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
+requestBody := graphchats.NewSendActivityNotificationPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
 source := graphmodels.TEXT_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
@@ -37,7 +38,7 @@ additionalData := map[string]interface{}{
 recipient.SetAdditionalData(additionalData)
 requestBody.SetRecipient(recipient)
 
-graphClient.ChatsById("chat-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
+graphClient.Chats().ByChatId("chat-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

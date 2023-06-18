@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Get a list of [articleIndicator](../resources/security-articleindicator.md) objects that represent indicators of threat or compromise related to the contents of an [article](../resources/security-article.md).
 
 ## Permissions
@@ -87,6 +89,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/a272d5
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-articleindicator-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-articleindicator-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies
 [!INCLUDE [sample-code](../includes/snippets/php/get-featurerolloutpolicies-policies-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-featurerolloutpolicies-policies-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/reports/getAttackSimulationSimulationUserCo
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getattacksimulationsimulationusercoverage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/reportroot-getattacksimulationsimulationusercoverage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

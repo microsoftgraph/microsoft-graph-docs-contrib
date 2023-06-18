@@ -61,8 +61,8 @@ GET /users/{id | userPrincipalName}/calendar/events
 GET /me/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendars/{id}/events
 
-GET /me/calendargroups/{id}/calendars/{id}/events
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
+GET /me/calendarGroups/{id}/calendars/{id}/events
+GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -119,6 +119,10 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-events-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-events-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

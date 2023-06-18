@@ -1,10 +1,11 @@
 ---
 title: "Receive change notifications through Azure Event Hubs"
 description: "Change notifications can be delivered via different channels, including webhooks and Azure Event Hubs. This article walks you through how to get change notifications through Azure Event Hubs."
-author: "jumasure"
+author: "keylimesoda"
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
+ms.date: 03/23/2023
 ---
 
 # Receive change notifications through Azure Event Hubs
@@ -204,6 +205,10 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/change-notifications-eventhubs-create-changetrackingapp-sp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/change-notifications-eventhubs-create-changetrackingapp-sp-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

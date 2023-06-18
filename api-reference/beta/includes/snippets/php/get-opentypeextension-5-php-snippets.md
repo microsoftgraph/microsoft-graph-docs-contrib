@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MessagesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new MessagesRequestBuilderGetQueryParameters();
-$queryParameters->filter = "Extensions/any";
-$queryParameters->expand = ["Extensions($filter=id%20eq%20'Com.Contoso.Referral')"];
-
+$queryParameters = MessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = "Extensions/any(f:f/id eq 'Com.Contoso.Referral')";
+$queryParameters->expand = ["Extensions($filter=id eq 'Com.Contoso.Referral')"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->messages()->get($requestConfiguration);
+$result = $graphServiceClient->me()->messages()->get($requestConfiguration);
 
 
 ```

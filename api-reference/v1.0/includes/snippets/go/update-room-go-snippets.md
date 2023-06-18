@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPlace()
@@ -26,7 +26,7 @@ requestBody.SetIsWheelChairAccessible(&isWheelChairAccessible)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.PlacesById("place-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Places().ByPlaceId("place-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

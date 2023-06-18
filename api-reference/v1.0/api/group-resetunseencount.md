@@ -1,7 +1,7 @@
 ---
 title: "group: resetUnseenCount"
 description: "Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for Microsoft 365 groups only."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/resetUnseenCount
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/group-resetunseencount-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-resetunseencount-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

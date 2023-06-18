@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/delet
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-get-deleteditemcontainer-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-get-deleteditemcontainer-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -187,6 +191,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/delet
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-get-deleteditemcontainer-select-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-get-deleteditemcontainer-select-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

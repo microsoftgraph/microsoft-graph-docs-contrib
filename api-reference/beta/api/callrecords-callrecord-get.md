@@ -103,6 +103,10 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/get-callrecord-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-callrecord-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -199,6 +203,10 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=ses
 [!INCLUDE [sample-code](../includes/snippets/php/get-callrecord-expanded-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-callrecord-expanded-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -259,8 +267,13 @@ Content-type: application/json
             "startDateTime": "2020-02-25T18:52:21.2169889Z",
             "endDateTime": "2020-02-25T18:52:46.7640013Z",
             "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
+            "isTest": false,
             "caller": {
                 "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                "name": "machineName_2",
+                "cpuName": "Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz",
+                "cpuCoresCount": 2,
+                "cpuProcessorSpeedInMhz": 2594,
                 "userAgent": {
                     "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                     "headerValue": "RTCC/7.0.0.0 UCWA/7.0.0.0 AndroidLync/6.25.0.27 (SM-G930U Android 8.0.0)",
@@ -278,6 +291,10 @@ Content-type: application/json
             },
             "callee": {
                 "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                "name": "machineName_4",
+                "cpuName": "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz",
+                "cpuCoresCount": 8,
+                "cpuProcessorSpeedInMhz": 2295,
                 "userAgent": {
                     "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                     "headerValue": "UCCAPI/16.0.12527.20122 OC/16.0.12527.20194 (Skype for Business)",
@@ -312,6 +329,10 @@ Content-type: application/json
                     "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
                     "caller": {
                         "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                        "name": "machineName_4",
+                        "cpuName": "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz",
+                        "cpuCoresCount": 8,
+                        "cpuProcessorSpeedInMhz": 2295,
                         "userAgent": {
                             "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                             "headerValue": "RTCC/7.0.0.0 UCWA/7.0.0.0 AndroidLync/6.25.0.27 (SM-G930U Android 8.0.0)",
@@ -328,6 +349,10 @@ Content-type: application/json
                     },
                     "callee": {
                         "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                        "name": "machineName_6",
+                        "cpuName": "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz",
+                        "cpuCoresCount": 8,
+                        "cpuProcessorSpeedInMhz": 2295,
                         "userAgent": {
                             "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
                             "headerValue": "UCCAPI/16.0.12527.20122 OC/16.0.12527.20194 (Skype for Business)",
@@ -416,7 +441,10 @@ Content-type: application/json
                                     "averageBandwidthEstimate": 9965083,
                                     "wasMediaBypassed": false,
                                     "averageAudioNetworkJitter": "PT0.043S",
-                                    "maxAudioNetworkJitter": "PT0.046S"
+                                    "maxAudioNetworkJitter": "PT0.046S",
+                                    "rmsFreezeDuration": null,
+                                    "averageFreezeDuration": null,
+                                    "isAudioForwardErrorCorrectionUsed": false
                                 },
                                 {
                                     "streamId": "1785122252",
@@ -434,7 +462,10 @@ Content-type: application/json
                                     "averageBandwidthEstimate": 15644878,
                                     "wasMediaBypassed": false,
                                     "averageAudioNetworkJitter": "PT0.266S",
-                                    "maxAudioNetworkJitter": "PT0.474S"
+                                    "maxAudioNetworkJitter": "PT0.474S",
+                                    "rmsFreezeDuration": null,
+                                    "averageFreezeDuration": null,
+                                    "isAudioForwardErrorCorrectionUsed": null
                                 }
                             ]
                         }

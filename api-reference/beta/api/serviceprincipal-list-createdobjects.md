@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/createdObjects
 [!INCLUDE [sample-code](../includes/snippets/php/serviceprincipals-get-createdobjects-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipals-get-createdobjects-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

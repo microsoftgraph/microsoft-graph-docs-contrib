@@ -56,7 +56,7 @@ PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
 
 > [!NOTE]
-> You can also update task name and description within a workflow without creating a new version. For details about these properties, see [task resource type (lifecycle workflow tasks)](../resources/identitygovernance-task.md).
+> You can also update task name and description within a workflow without creating a new version. For more information on these properties, see: [update task](identitygovernance-task-update.md).
 
 ## Response
 
@@ -111,8 +111,11 @@ Content-length: 454
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-update-workflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-update-workflow-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

@@ -14,7 +14,7 @@ $requestBody->setDestinationId('destinationId-value');
 
 
 
-$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->copy()->post($requestBody);
+$result = $graphServiceClient->me()->mailFolders()->byMailFolderId('mailFolder-id')->copy()->post($requestBody);
 
 
 ```

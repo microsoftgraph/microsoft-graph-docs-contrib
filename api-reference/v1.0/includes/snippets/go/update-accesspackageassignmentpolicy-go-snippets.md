@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
@@ -117,7 +117,7 @@ id := "49d2c59b-0a81-463d-a8ec-ddad3935d8a0"
 accessPackage.SetId(&id) 
 requestBody.SetAccessPackage(accessPackage)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentPoliciesById("accessPackageAssignmentPolicy-id").Put(context.Background(), requestBody, nil)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentPolicies().ByAssignmentPolicieId("accessPackageAssignmentPolicy-id").Put(context.Background(), requestBody, nil)
 
 
 ```

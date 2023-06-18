@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforcein
 [!INCLUDE [sample-code](../includes/snippets/php/get-workforceintegration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-workforceintegration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

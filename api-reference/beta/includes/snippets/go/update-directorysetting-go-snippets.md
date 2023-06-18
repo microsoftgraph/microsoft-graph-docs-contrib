@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDirectorySetting()
@@ -30,7 +30,7 @@ values := []graphmodels.SettingValueable {
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.SettingsById("directorySetting-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Settings().BySettingId("directorySetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

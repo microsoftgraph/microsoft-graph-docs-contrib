@@ -114,6 +114,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lA
 [!INCLUDE [sample-code](../includes/snippets/php/get-unifiedroleassignment-givenanid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedroleassignment-givenanid-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -182,6 +186,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lA
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-unifiedroleassignment-expand-relationships-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedroleassignment-expand-relationships-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

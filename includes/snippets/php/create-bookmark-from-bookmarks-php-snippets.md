@@ -29,7 +29,7 @@ $requestBody->setState(new AnswerState('published'));
 
 
 
-$requestResult = $graphServiceClient->search()->bookmarks()->post($requestBody);
+$result = $graphServiceClient->search()->bookmarks()->post($requestBody);
 
 
 ```

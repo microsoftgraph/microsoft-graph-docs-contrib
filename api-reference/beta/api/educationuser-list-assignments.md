@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/education/me/assignments
 [!INCLUDE [sample-code](../includes/snippets/php/get-me-assignments-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-me-assignments-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -241,6 +245,10 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-user-assignments-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-user-assignments-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -390,6 +398,10 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-user-assignments-expand-submissions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-user-assignments-expand-submissions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

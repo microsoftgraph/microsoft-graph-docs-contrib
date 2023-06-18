@@ -24,7 +24,7 @@ For this scenario, this article will show you how to:
 4. Delete the user's roaming profile information.
 
 > [!NOTE]
-> Apart from users, open extensions are also supported and can be managed for [other resource types](extensibility-overview.md#choose-an-extension-type-for-your-application).
+> Apart from users, open extensions are also supported and can be managed for [other resource types](extensibility-overview.md#comparison-of-extension-types).
 
 ## 1. Add roaming profile information
 
@@ -72,6 +72,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/openextensions-users-create-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/openextensions-users-create-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -135,6 +139,10 @@ GET https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/openextensions-users-get-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/openextensions-users-get-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -215,6 +223,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/openextensions-users-update-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/openextensions-users-update-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -265,6 +277,10 @@ DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSetting
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/openextensions-users-delete-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/openextensions-users-delete-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

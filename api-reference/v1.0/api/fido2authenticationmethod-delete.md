@@ -36,11 +36,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
+Remove a FIDO2 authentication method from your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/authentication/fido2Methods/{id}
+```
+
+Remove a FIDO2 authentication method from another user's account.
+<!-- { "blockType": "ignored" } -->
+```http
 DELETE /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ```
 
@@ -93,6 +97,10 @@ DELETE https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/fid
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-fido2authenticationmethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-fido2authenticationmethod-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

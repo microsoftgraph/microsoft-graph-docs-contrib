@@ -1,13 +1,13 @@
 ---
-title: "List calendarView"
+title: "List group calendarView"
 description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,"
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# List calendarView
+# List group calendarView
 
 Namespace: microsoft.graph
 
@@ -101,6 +101,10 @@ Prefer: outlook.body-content-type="text"
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/group-get-calendarview-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-get-calendarview-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

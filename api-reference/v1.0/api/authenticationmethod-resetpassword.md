@@ -120,6 +120,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/passwordauthenticationmethod-resetpassword-adminprovided-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/passwordauthenticationmethod-resetpassword-adminprovided-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -191,6 +195,10 @@ POST https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/passwordauthenticationmethod-resetpassword-systemgenerated-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/passwordauthenticationmethod-resetpassword-systemgenerated-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

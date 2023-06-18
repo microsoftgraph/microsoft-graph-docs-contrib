@@ -464,7 +464,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
-        {
+    {
       "ChangeList": [
         {
           "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
@@ -567,6 +567,112 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-03-17T02:51:10.3743047Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+          "ApiChange": "Property",
+          "ChangedApiName": "verifiableCredentialRequirementStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the `verifiableCredentialRequirementStatus` property to the [accessPackageAssignmentRequestRequirements](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestRequirements?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentRequestRequirements"
+        },
+        {
+          "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+          "ApiChange": "Property",
+          "ChangedApiName": "verifiableCredentialSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `verifiableCredentialSettings` property to the [accessPackageAssignmentPolicy](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentPolicy"
+        },
+        {
+          "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+          "ApiChange": "Property",
+          "ChangedApiName": "verifiedCredentialsData",
+          "ChangeType": "Addition",
+          "Description": "Added the `verifiedCredentialsData` property to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        },
+        {
+          "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "verifiableCredentialPresentationStatusCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **verifiableCredentialPresentationStatusCode** enumeration type.",
+          "Target": "verifiableCredentialPresentationStatusCode"
+        },
+        {
+          "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiableCredentialRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiableCredentialRequired](https://learn.microsoft.com/en-us/graph/api/resources/verifiableCredentialRequired?view=graph-rest-beta) resource type.",
+          "Target": "verifiableCredentialRequired"
+        },
+        {
+          "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiableCredentialRequirementStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiableCredentialRequirementStatus](https://learn.microsoft.com/en-us/graph/api/resources/verifiableCredentialRequirementStatus?view=graph-rest-beta) resource type.",
+          "Target": "verifiableCredentialRequirementStatus"
+        },
+        {
+          "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiableCredentialRetrieved",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiableCredentialRetrieved](https://learn.microsoft.com/en-us/graph/api/resources/verifiableCredentialRetrieved?view=graph-rest-beta) resource type.",
+          "Target": "verifiableCredentialRetrieved"
+        },
+        {
+          "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiableCredentialSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiableCredentialSettings](https://learn.microsoft.com/en-us/graph/api/resources/verifiableCredentialSettings?view=graph-rest-beta) resource type.",
+          "Target": "verifiableCredentialSettings"
+        },
+        {
+          "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiableCredentialType",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiableCredentialType](https://learn.microsoft.com/en-us/graph/api/resources/verifiableCredentialType?view=graph-rest-beta) resource type.",
+          "Target": "verifiableCredentialType"
+        },
+        {
+          "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiableCredentialVerified",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiableCredentialVerified](https://learn.microsoft.com/en-us/graph/api/resources/verifiableCredentialVerified?view=graph-rest-beta) resource type.",
+          "Target": "verifiableCredentialVerified"
+        },
+        {
+          "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiedCredentialClaims",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiedCredentialClaims](https://learn.microsoft.com/en-us/graph/api/resources/verifiedCredentialClaims?view=graph-rest-beta) resource type.",
+          "Target": "verifiedCredentialClaims"
+        },
+        {
+          "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiedCredentialData",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiedCredentialData](https://learn.microsoft.com/en-us/graph/api/resources/verifiedCredentialData?view=graph-rest-beta) resource type.",
+          "Target": "verifiedCredentialData"
+        }
+      ],
+      "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-20T23:07:49.0396653Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }

@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationP
 [!INCLUDE [sample-code](../includes/snippets/php/list-sensitivitylabel-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-sensitivitylabel-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

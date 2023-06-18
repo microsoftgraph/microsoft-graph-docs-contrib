@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/v1.0/policies/tokenIssuancePolicies/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/delete-tokenissuancepolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-tokenissuancepolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/sites/root/operations
 [!INCLUDE [sample-code](../includes/snippets/php/list-richlongrunningoperation-for-sites-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-richlongrunningoperation-for-sites-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

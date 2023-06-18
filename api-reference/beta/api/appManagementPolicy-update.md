@@ -99,6 +99,10 @@ PATCH https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/update-appmanagementpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-appmanagementpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

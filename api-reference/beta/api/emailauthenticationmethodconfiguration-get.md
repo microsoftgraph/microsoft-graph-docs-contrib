@@ -91,8 +91,11 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/ema
 [!INCLUDE [sample-code](../includes/snippets/php/get-emailauthenticationmethodconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-emailauthenticationmethodconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

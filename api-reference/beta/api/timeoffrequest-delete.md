@@ -89,6 +89,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/
 [!INCLUDE [sample-code](../includes/snippets/php/delete-timeoffrequest-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-timeoffrequest-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

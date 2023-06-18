@@ -1,7 +1,7 @@
 ---
 title: "Get onlineMeeting"
 description: "Retrieve the properties and relationships of an online meeting object."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -26,9 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
+| Delegated (work or school account)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
 | Delegated (personal Microsoft account) | Not Supported.                                        |
-| Application                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+| Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
@@ -149,6 +149,10 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-onlinemeeting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-onlinemeeting-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -278,6 +282,10 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/php/get-onlinemeeting-user-token-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-onlinemeeting-user-token-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 The following request uses an app token.
@@ -374,6 +382,10 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings?$filter=JoinWebUrl eq 'ht
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-onlinemeeting-joinurl-user-token-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-onlinemeeting-joinurl-user-token-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -479,6 +491,10 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings?$filter=joinMeetingIdSett
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-an-online-meeting-by-joinmeetingid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-an-online-meeting-by-joinmeetingid-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -592,6 +608,10 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-attendee-report-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-attendee-report-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

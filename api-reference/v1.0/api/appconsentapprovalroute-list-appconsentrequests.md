@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/php/list-appconsentrequest-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-appconsentrequest-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -172,6 +176,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-appconsentrequest-userconsentrequest-inprogress-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-appconsentrequest-userconsentrequest-inprogress-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -83,6 +83,10 @@ POST https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-
 [!INCLUDE [sample-code](../includes/snippets/php/educationsubmission-unsubmit-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/educationsubmission-unsubmit-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

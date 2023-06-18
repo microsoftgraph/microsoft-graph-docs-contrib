@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewGovernanceRoleAssignmentRequest()
@@ -39,7 +39,7 @@ requestBody.SetSchedule(schedule)
 linkedEligibleRoleAssignmentId := "e327f4be-42a0-47a2-8579-0a39b025b394"
 requestBody.SetLinkedEligibleRoleAssignmentId(&linkedEligibleRoleAssignmentId) 
 
-result, err := graphClient.PrivilegedAccessById("privilegedAccess-id").RoleAssignmentRequests().Post(context.Background(), requestBody, nil)
+result, err := graphClient.PrivilegedAccess().ByPrivilegedAccesId("privilegedAccess-id").RoleAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

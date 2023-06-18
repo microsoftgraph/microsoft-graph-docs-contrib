@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles
 [!INCLUDE [sample-code](../includes/snippets/php/get-securescorecontrolprofiles-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-securescorecontrolprofiles-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

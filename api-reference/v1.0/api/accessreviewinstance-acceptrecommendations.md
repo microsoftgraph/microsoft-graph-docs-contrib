@@ -81,6 +81,10 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 [!INCLUDE [sample-code](../includes/snippets/php/accessreviewinstance-acceptrecommendations-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/accessreviewinstance-acceptrecommendations-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

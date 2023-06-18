@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	Criteria = @{
-		ResetScope = "Watermark, Escrows, QuarantineState"
+	criteria = @{
+		resetScope = "Watermark, Escrows, QuarantineState"
 	}
 }
 

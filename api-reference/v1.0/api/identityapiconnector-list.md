@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/v1.0/identity/apiConnectors
 [!INCLUDE [sample-code](../includes/snippets/php/list-identityapiconnectors-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-identityapiconnectors-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

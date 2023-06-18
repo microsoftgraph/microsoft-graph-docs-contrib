@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->external()->connectionsById('externalConnection-id')->groupsById('externalGroup-id')->membersById('identity-id')->delete();
+$graphServiceClient->external()->connections()->byConnectionId('externalConnection-id')->groups()->byGroupId('externalGroup-id')->members()->byMemberId('identity-id')->delete();
 
 
 ```

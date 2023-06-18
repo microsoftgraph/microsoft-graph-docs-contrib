@@ -2,7 +2,7 @@
 title: "List group owners"
 description: "Retrieve a list of the group's owners. The owners are a set of non-admin users who are allowed to modify the group object. "
 ms.localizationpriority: high
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/group-get-owners-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-get-owners-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Remove changes made to the [text message authentication method policy](../resources/smsauthenticationmethodconfiguration.md) by reverting the policy to its default configuration.
+Remove changes made to the [SMS authentication method policy](../resources/smsauthenticationmethodconfiguration.md) by reverting the policy to its default configuration.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/aut
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-smsauthenticationmethodconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-smsauthenticationmethodconfiguration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
