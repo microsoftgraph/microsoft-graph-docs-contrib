@@ -12,7 +12,7 @@ The Microsoft Search API allows you to include multiple search requests in a sin
 
 ## Supported entity types
 
-The supported entity types for including multiple search requests in a request body are: `site`, `drive`, `driveItem`, `list`,`listItem`,`externalItem`, `bookmark`,`acronym`, `qna`. Entity types within the same request block should adhere to the supported entity type relationships and combinations defined in the [interleaving search](search-concept-interleaving.md) topic.
+The supported entity types for including multiple search requests in a request body are: **site**, **drive**, **driveItem**, **list**,**listItem**,**externalItem**, **bookmark**,**acronym**, **qna**. Entity types within the same request block should adhere to the supported entity type relationships and combinations defined in the [interleaving search](search-concept-interleaving.md) topic.
 
 ## Examples
 
@@ -53,7 +53,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of interleaving response.
+The following shows a response that searches with SharePoint file types and bookmark/acronym combinations.
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -177,7 +177,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of bad request response.
+The following is an example of a bad request response.
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -237,7 +237,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of bad request response.
+The following is an example of a bad request response.
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -264,9 +264,9 @@ Content-type: application/json
 ## Known limitations
 
 - The properties **from** and **size** from different [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in the request body should be the same. And the  **queryString** property of [searchQuery](graph/api/resources/searchquery?view=graph-rest-beta) in different searchRequest should be the same.
-- Duplicate entity types across different search requests in the request body are not allowed. For example, you cannot have a "bookmark" block and another "bookmark" block.".
-- The file entity types (`site`, `drive`, `driveItem`, `list`, and `listItem`)  can only be present once among different entity requests.
-- The speller functionality can only be used once and it should be included in the first entity request.
+- Duplicate entity types across different search requests in the request body are not allowed. For example, you cannot have a "bookmark" search request and another "bookmark" search request in a request body.
+- The file entity types (**site**, **drive**, **driveItem**, **list**, and **listItem**)  can only be present in the same entity request of a request body. For example, you cannot have a "site" search request and another "drive" search request in a request body. 
+- The [speller](search-concept-speller.md) functionality can only be used once and it should be included in the first entity request.
 
 ## Next steps
 
