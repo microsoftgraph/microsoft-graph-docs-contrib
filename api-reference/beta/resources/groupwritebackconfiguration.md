@@ -1,7 +1,7 @@
 ---
 title: "groupWritebackConfiguration resource type"
 description: "Indicates whether writeback of cloud groups to on-premise Active Directory is enabled and the target group type for the on-premise group."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: resourcePageType

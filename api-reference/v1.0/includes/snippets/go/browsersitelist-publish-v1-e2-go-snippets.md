@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Admin/Edge/InternetExplorerMode/SiteLists/Item/Publish"
+	  graphadmin "github.com/microsoftgraph/msgraph-sdk-go/admin"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewPublishPostRequestBody()
+requestBody := graphadmin.NewPublishPostRequestBody()
 revision := "1.0"
 requestBody.SetRevision(&revision) 
 
@@ -27,7 +28,7 @@ browserSite1 := graphmodels.NewBrowserSite()
 id := "2e27cc86-3662-447e-b751-274fb9f869ea"
 browserSite1.SetId(&id) 
 
-sites := []graphmodels.Objectable {
+sites := []graphadmin.Objectable {
 	browserSite,
 	browserSite1,
 
@@ -39,7 +40,7 @@ browserSharedCookie := graphmodels.NewBrowserSharedCookie()
 id := "7f639835-23ab-4793-b1e6-1a06fad127a2"
 browserSharedCookie.SetId(&id) 
 
-sharedCookies := []graphmodels.Objectable {
+sharedCookies := []graphadmin.Objectable {
 	browserSharedCookie,
 
 }

@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Azure AD SAML Toolkit');
 
 
 
-$result = $graphServiceClient->applicationTemplatesById('applicationTemplate-id')->instantiate()->post($requestBody);
+$result = $graphServiceClient->applicationTemplates()->byApplicationTemplateId('applicationTemplate-id')->instantiate()->post($requestBody);
 
 
 ```

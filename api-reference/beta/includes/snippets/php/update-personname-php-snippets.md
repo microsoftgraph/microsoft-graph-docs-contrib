@@ -14,7 +14,7 @@ $requestBody->setNickname('Kesha');
 
 
 
-$result = $graphServiceClient->me()->profile()->namesById('personName-id')->patch($requestBody);
+$result = $graphServiceClient->me()->profile()->names()->byNameId('personName-id')->patch($requestBody);
 
 
 ```

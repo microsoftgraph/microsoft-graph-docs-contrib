@@ -15,7 +15,7 @@ $queryParameters->select = ["id","failedUsersCount","processingStatus","successf
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->taskReports()->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->byWorkflowId('workflow-id')->taskReports()->get($requestConfiguration);
 
 
 ```

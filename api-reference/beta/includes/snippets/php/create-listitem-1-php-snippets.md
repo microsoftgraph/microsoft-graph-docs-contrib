@@ -23,7 +23,7 @@ $fields->setAdditionalData($additionalData);
 $requestBody->setFields($fields);
 
 
-$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->items()->post($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->lists()->byListId('list-id')->items()->post($requestBody);
 
 
 ```

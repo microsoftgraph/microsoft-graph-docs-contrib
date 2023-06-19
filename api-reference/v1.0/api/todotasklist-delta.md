@@ -72,10 +72,13 @@ To track changes in the **todoTaskList**, you would make one or more **delta** f
 
 The main differences between tracking **todoTaskList** and tracking **todoTask** resources in a list are in the delta query request URLs, and the query responses returning **todoTaskList** rather than **todoTask** collections.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "todotasklistdelta"
+}-->
+
 ``` http
 GET https://graph.microsoft.com/v1.0/me/todo/lists/delta
-Prefer: odata.maxpagesize=2
 ```
 ### Response
 
@@ -87,6 +90,12 @@ getting all the changes for that round.
 The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
 
 Note: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.todoTaskList"
+} -->
 
 ```http
 HTTP/1.1 200 OK

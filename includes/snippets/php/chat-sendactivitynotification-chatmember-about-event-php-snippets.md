@@ -39,7 +39,7 @@ $recipient->setAdditionalData($additionalData);
 $requestBody->setRecipient($recipient);
 
 
-$graphServiceClient->chatsById('chat-id')->sendActivityNotification()->post($requestBody);
+$graphServiceClient->chats()->byChatId('chat-id')->sendActivityNotification()->post($requestBody);
 
 
 ```

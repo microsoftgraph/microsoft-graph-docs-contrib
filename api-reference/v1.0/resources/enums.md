@@ -11,6 +11,34 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### binaryOperator values 
+
+|Member|
+|:---|
+|or|
+|and|
+
+### conditionalAccessExternalTenantsMembershipKind values
+
+| Member             |
+|:-------------------|
+| all                |
+| enumerated         |
+| unknownFutureValue |
+
+### conditionalAccessGuestOrExternalUserTypes values
+
+| Member                 |
+|:-----------------------|
+| none                   |
+| internalGuest          |
+| b2bCollaborationGuest  |
+| b2bCollaborationMember |
+| b2bDirectConnectUser   |
+| otherExternalUser      |
+| serviceProvider        |
+| unknownFutureValue     |
+
 ### appCredentialRestrictionType values
 
 | Member               |
@@ -712,7 +740,6 @@ Namespace: microsoft.graph
 | :----------------- |
 | working            |
 | submitted          |
-| released           |
 | returned           |
 | unknownFutureValue |
 | reassigned         |
@@ -2465,4 +2492,13 @@ Possible values for user account types (group membership), per Windows definitio
 |draft|
 |published|
 |pending|
+|unknownFutureValue|
+
+### chatMessageActions values 
+
+|Member|
+|:---|
+|reactionAdded|
+|reactionRemoved|
+|actionUndefined|
 |unknownFutureValue|

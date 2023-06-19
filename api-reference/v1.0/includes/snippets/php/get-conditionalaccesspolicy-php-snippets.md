@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->identity()->conditionalAccess()->policiesById('conditionalAccessPolicy-id')->get();
+$result = $graphServiceClient->identity()->conditionalAccess()->policies()->byPolicieId('conditionalAccessPolicy-id')->get();
 
 
 ```

@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AuthenticationMethodsPolicy
@@ -26,6 +28,21 @@ var requestBody = new AuthenticationMethodsPolicy
 					TargetedAuthenticationMethod = "microsoftAuthenticator",
 				},
 			},
+		},
+	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"reportSuspiciousActivitySettings" , new 
+			{
+				State = "enabled",
+				IncludeTarget = new 
+				{
+					TargetType = "group",
+					Id = "all_users",
+				},
+				VoiceReportingCode = 0,
+			}
 		},
 	},
 };
