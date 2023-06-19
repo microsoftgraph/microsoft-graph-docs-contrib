@@ -84,7 +84,8 @@ Content-length: 450
 
 {
   "createdDateTime": "2023-01-01T00:00:00Z",
-  "ommerceSubscriptionId": "f9c1ea2d-2c6e-4717-8c3b-7130812d70ba",
+  "commerceSubscriptionId": "f9c1ea2d-2c6e-4717-8c3b-7130812d70ba",
+  
   "id": "860697e3-b0aa-4196-a6c6-7ec361ed58f7",
   "isTrial": false,
   "nextLifecycleDateTime": "2023-02-01T00:00:00Z",
