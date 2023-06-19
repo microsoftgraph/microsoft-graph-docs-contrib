@@ -37,11 +37,14 @@ GET /sites/getAllSites
 
 ### Request
 
-# [HTTP](#tab/http)
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "site_getallsites"
+}
+-->
 
-```msgraph-interactive
+```http
 GET /sites/getAllSites
 ```
 

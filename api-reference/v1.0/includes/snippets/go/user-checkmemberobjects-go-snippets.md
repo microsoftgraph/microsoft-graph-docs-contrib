@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Me/CheckMemberObjects"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCheckMemberObjectsPostRequestBody()
+requestBody := graphusers.NewCheckMemberObjectsPostRequestBody()
 ids := []string {
 	"80a963dd-84af-4eb8-b2a6-781e444d4fb0",
 	"62e90394-69f5-4237-9190-012177145e10",

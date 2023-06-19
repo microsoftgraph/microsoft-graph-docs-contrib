@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewLearningCourseActivity()
@@ -49,7 +49,7 @@ notes.SetContent(&content)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.EmployeeExperience().LearningCourseActivities().ByLearningCourseActivitieId("learningCourseActivity-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").LearningCourseActivities().ByLearningCourseActivitieId("learningCourseActivity-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

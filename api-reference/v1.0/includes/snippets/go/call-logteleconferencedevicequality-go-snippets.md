@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Communications/Calls/LogTeleconferenceDeviceQuality"
+	  graphcommunications "github.com/microsoftgraph/msgraph-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewLogTeleconferenceDeviceQualityPostRequestBody()
+requestBody := graphcommunications.NewLogTeleconferenceDeviceQualityPostRequestBody()
 quality := graphmodels.NewTeleconferenceDeviceQuality()
 callChainId := uuid.MustParse("0622673d-9f69-49b3-9d4f-5ec64f42ecce")
 quality.SetCallChainId(&callChainId) 
