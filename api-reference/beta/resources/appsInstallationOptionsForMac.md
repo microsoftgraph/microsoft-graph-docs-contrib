@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is a Microsoft 365 applications installation options container object for MAC platform. Specify whether users can install Microsoft 365 apps on their own Windows devices. If admins choose not to allow this, they can manually deploy apps to users instead.
+This is a Microsoft 365 applications installation options container object for MAC platform. Specify whether users can install Microsoft 365 apps on their own MAC devices. If admins choose not to allow this, they can manually deploy apps to users instead.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| isMicrosoft365AppsEnabled | Boolean | Specifes whether the users can install Microsoft 365 apps on their Windows devices. Default value is `true` meaning users with active license assigned can install. |
-| isSkypeForBusinessEnabled | Boolean | Specifes whether the users can install Skype for Business (X EI Capitan 10.11 or higher) on their Windows devices. Default value is `true` meaning users with active license assigned can install. |
+| isMicrosoft365AppsEnabled | Boolean | Specifes whether the users can install Microsoft 365 apps on their MAC devices. Default value is `true` meaning users with active license assigned can install. |
+| isSkypeForBusinessEnabled | Boolean | Specifes whether the users can install Skype for Business (X EI Capitan 10.11 or higher) on their MAC devices. Default value is `true` meaning users with active license assigned can install. |
 
 ## Relationships
 None.
