@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents subscriptions for a tenant.
 
-Inherits from [directoryObject](directoryobject.md).
+Inherits from [entity](entity.md).
 
 ## Methods
 
@@ -29,10 +29,10 @@ Inherits from [directoryObject](directoryobject.md).
 | Property               | Type                                             | Description                                                                                             |
 | ---------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
 | commerceSubscriptionId | String                                           | The ID of this subscription in the commerce system.                                                     |
-| createdDateTime        | DateTime                                         | The date and time when this subscription was created.                                                   |
-| id                     | String                                           | The unique ID for this subscription. Inherited from [directoryObject](directoryobject.md).              |
+| createdDateTime        | DateTimeOffset                                         | The date and time when this subscription was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.                                                  |
+| id                     | String                                           | The unique ID for this subscription. Inherited from [entity](entity.md).              |
 | isTrial                | Boolean                                          | The trial status of the subscription.                                                                   |
-| nextLifecycleDateTime  | DateTime                                         | The date and time of the next lifecycle event for this subscription.                                    |
+| nextLifecycleDateTime  | DateTimeOffset                                         | The date and time of the next lifecycle event for this subscription. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.                                    |
 | ownerId                | String                                           | The object ID of the account admin.                                                                     |
 | ownerTenantId          | String                                           | When a partner tenant creates a subscription on a customer tenant, `ownerTenantId` is used to track it. |
 | ownerType              | String                                           | This helps identify which entity `ownerId` belongs to. For e.g. "User".                                 |
