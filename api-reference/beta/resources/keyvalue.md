@@ -31,7 +31,7 @@ The configuration of this resource is shared by the following objects:
 
 #### Supported by organizationalBrandingProperties
 
-| Name | Possible value |
+| Key | Possible value |
 |:-|:-|
 | AttributeCollection_Description |  We just need a little more information to set up your account. |
 | AttributeCollection_Title | Add details |
