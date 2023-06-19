@@ -28,19 +28,19 @@ Inherits from [directoryObject](directoryobject.md).
 
 | Property               | Type                                             | Description                                                                                             |
 | ---------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
-| createdDateTime        | DateTime                                         | The date and time when this subscription was created.                                                   |
 | commerceSubscriptionId | String                                           | The ID of this subscription in the commerce system.                                                     |
+| createdDateTime        | DateTime                                         | The date and time when this subscription was created.                                                   |
 | id                     | String                                           | The unique ID for this subscription. Inherited from [directoryObject](directoryobject.md).              |
 | isTrial                | Boolean                                          | The trial status of the subscription.                                                                   |
 | nextLifecycleDateTime  | DateTime                                         | The date and time of the next lifecycle event for this subscription.                                    |
+| ownerId                | String                                           | The object ID of the account admin.                                                                     |
+| ownerTenantId          | String                                           | When a partner tenant creates a subscription on a customer tenant, `ownerTenantId` is used to track it. |
+| ownerType              | String                                           | This helps identify which entity `ownerId` belongs to. For e.g. "User".                                 |
 | serviceStatus          | [servicePlanInfo](serviceplaninfo.md) collection | The provisioning status of each service associated with this subscription.                              |
 | skuId                  | String                                           | The object ID of the SKU associated with this subscription.                                             |
 | skuPartNumber          | String                                           | The SKU associated with this subscription.                                                              |
 | status                 | String                                           | The status of this subscription. Possible values are: `Enabled`, `Expired`, `Suspended`.                |
 | totalLicenses          | Int32                                            | The number of seats included in this subscription.                                                      |
-| ownerId                | String                                           | The Object Id of the account admin.                                                                     |
-| ownerTenantId          | String                                           | When a partner tenant creates a subscription on a customer tenant, `ownerTenantId` is used to track it. |
-| ownerType              | String                                           | This helps identify which entity `ownerId` belongs to. For e.g. "User".                                 |
 
 ## Relationships
 
