@@ -36,7 +36,6 @@ Represents a Cloud PC user setting.
 |resetEnabled|Boolean|Indicates whether an end-user is allowed to reset their Cloud PC. When `true`, the user is allowed to reset their Cloud PC. When `false`, end-user initiated reset is not allowed. The default value is `false`. |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
 |selfServiceEnabled|Boolean|Indicates whether the self-service option is enabled. Default value is `false`. To enable the self-service option, change the setting to `true`. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal.|
-|resetEnabled|Boolean|Indicates whether an end-user is allowed to reset their Cloud PC. When `true`, the user is allowed to reset their Cloud PC. When `false`, end-user initiated reset is not allowed. The default value is `false`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -64,7 +63,6 @@ The following is a JSON representation of the resource.
   "restorePointSetting": {
     "@odata.type": "microsoft.graph.cloudPcRestorePointSetting"
   },
-  "selfServiceEnabled": "Boolean",
-  "resetEnabled": "Boolean"
+  "selfServiceEnabled": "Boolean"
 }
 ```
