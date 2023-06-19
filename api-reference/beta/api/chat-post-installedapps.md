@@ -209,6 +209,7 @@ HTTP/1.1 201 Created
 ## See also
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -220,6 +221,3 @@ HTTP/1.1 201 Created
   "tocPath": ""
 }-->
 
-## See also
-
-[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
