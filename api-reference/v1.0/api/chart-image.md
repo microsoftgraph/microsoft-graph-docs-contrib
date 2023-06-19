@@ -58,14 +58,21 @@ Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" } -->
+<!-- 
+{ 
+  "blockType": "request",
+  "name": "chart_image"
+} -->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
+
 <!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true
