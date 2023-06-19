@@ -1048,6 +1048,8 @@ items:
                 href: toolkit/components/person.md
               - name: Person card
                 href: toolkit/components/person-card.md
+              - name: Picker
+                href: toolkit/components/picker.md
               - name: Planner tasks
                 href: toolkit/components/tasks.md
               - name: Teams channel picker
@@ -1056,6 +1058,8 @@ items:
                 href: toolkit/components/search-box.md
               - name: Search results (preview)
                 href: toolkit/components/search-results.md
+              - name: Taxonomy picker
+                href: toolkit/components/taxonomy-picker.md
               - name: To-do tasks
                 href: toolkit/components/todo.md
           - name: Customize components
