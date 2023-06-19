@@ -11,7 +11,7 @@ The Microsoft Search **searchRequest** resource supports the passing of multiple
 
 ## Supported entity combinations
 
-The following table shows the relationship between different entity types that can be interleaved. Note that **qna** is only supported in beta.
+The following table shows the relationship between different entity types that can be interleaved. Note that the **qna** entity type is only supported in beta.
 
 | Entity type |acronym     |bookmark     |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     |qna     | site       |
 |-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|------------|------------|------------|
