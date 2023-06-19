@@ -7346,6 +7346,8 @@ items:
             href: api/security-ediscoveryreviewset-get.md
           - name: Add to review set
             href: api/security-ediscoveryreviewset-addtoreviewset.md
+          - name: Export 
+            href: api/security-ediscoveryreviewset-export.md 
           - name: Query
             href: resources/security-ediscoveryreviewsetquery.md
             items:
