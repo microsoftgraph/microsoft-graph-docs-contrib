@@ -90,11 +90,11 @@ The control exposes the following variables that can be localized. See how you s
 
 | String name | Default value |
 | ----------- | ------------- |
-| modified    | 'modified on' |
-| back        | 'Back'        |
-| next        | 'Next'        |
-| pages       | 'pages'       |
-| page        | 'Page'        |
+| modified    | `modified on` |
+| back        | `Back`        |
+| next        | `Next`        |
+| pages       | `pages`       |
+| page        | `Page`        |
 
 ## CSS custom properties
 
