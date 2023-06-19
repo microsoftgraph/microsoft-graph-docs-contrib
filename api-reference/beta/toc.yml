@@ -339,6 +339,8 @@ items:
           href: api/user-list-approleassignments.md
         - name: List app role assigned resources
           href: api/user-list-approleassignedresources.md
+        - name: Get app role assignment
+          href: api/approleassignment-get.md
         - name: Add app role assignment
           href: api/user-post-approleassignments.md
         - name: Remove app role assignment
@@ -771,6 +773,8 @@ items:
           href: api/group-list-approleassignments.md
         - name: Add app role assignment
           href: api/group-post-approleassignments.md
+        - name: Get app role assignment
+          href: api/approleassignment-get.md
         - name: Remove app role assignment
           href: api/group-delete-approleassignments.md
         - name: Get delta for directory object
@@ -1185,6 +1189,8 @@ items:
             href: api/serviceprincipal-list-approleassignments.md
           - name: Add app role assignment
             href: api/serviceprincipal-post-approleassignments.md
+          - name: Get app role assignment
+            href: api/approleassignment-get.md
           - name: Remove app role assignment
             href: api/serviceprincipal-delete-approleassignments.md
           - name: List app role assigned to
@@ -13230,6 +13236,13 @@ items:
           items:
           - name: Overview
             href: resources/authenticationmethods-overview.md
+          - name: Authentication sign-in preferences
+            href: resources/authentication.md
+            items:
+            - name: Get
+              href: api/authentication-get.md
+            - name: Update
+              href: api/authentication-update.md
           - name: Authentication methods
             href: resources/authenticationmethod.md
             items:
@@ -13865,7 +13878,7 @@ items:
                 href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-            - name: Text Message policy
+            - name: SMS policy
               href: resources/smsAuthenticationMethodConfiguration.md
               items:
               - name: Get

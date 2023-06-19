@@ -45,6 +45,7 @@ Inherits from [printerBase](../resources/printerbase.md).
 |manufacturer|String|The manufacturer reported by the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md). Read-only.|
 |model|String|The model name reported by the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md). Read-only.|
 |status|[printerStatus](printerstatus.md)|The processing status, including any errors, of the printer associated with this printer share.Inherited from [printerBase](../resources/printerbase.md). Read-only.|
+|viewPoint|[printerShareViewpoint](../resources/printershareviewpoint.md)|Additional data for a printer share as viewed by the signed-in user.|
 
 
 ## Relationships
@@ -85,7 +86,8 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.printerStatus"
   },
   "allowAllUsers": "Boolean",
-  "createdDateTime": "String (timestamp)"
+  "createdDateTime": "String (timestamp)",
+  "viewPoint": {"@odata.type": "microsoft.graph.printerShareViewpoint"}
 }
 ```
 

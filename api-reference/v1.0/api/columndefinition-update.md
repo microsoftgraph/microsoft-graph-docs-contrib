@@ -66,6 +66,12 @@ If successful, this method returns a `200 OK` response code and an updated [colu
 
 ### Request
 
+
+<!-- {
+  "blockType": "request",
+  "name": "columndefinitionupdate"
+}-->
+
 ```http
 PATCH /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 Content-Type: application/json

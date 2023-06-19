@@ -333,6 +333,8 @@ items:
           href: api/user-list-approleassignments.md
         - name: Add
           href: api/user-post-approleassignments.md
+        - name: Get
+          href: api/approleassignment-get.md
         - name: Remove
           href: api/user-delete-approleassignments.md
         - name: Get delta for directory object
@@ -695,6 +697,8 @@ items:
           href: api/group-list-approleassignments.md
         - name: Add
           href: api/group-post-approleassignments.md
+        - name: Get
+          href: api/approleassignment-get.md
         - name: Remove
           href: api/group-delete-approleassignments.md
         - name: Get delta for directory object
@@ -1024,6 +1028,8 @@ items:
             href: api/serviceprincipal-list-approleassignments.md
           - name: Add
             href: api/serviceprincipal-post-approleassignments.md
+          - name: Get
+            href: api/approleassignment-get.md
           - name: Remove
             href: api/serviceprincipal-delete-approleassignments.md
           - name: List assigned to
@@ -1692,6 +1698,8 @@ items:
             href: api/printershare-post-allowedgroups.md
           - name: Delete allowed group
             href: api/printershare-delete-allowedgroup.md
+          - name: List recent shares
+            href: api/print-list-recentprintershares.md
         - name: Print task definition
           href: resources/printtaskdefinition.md
           items:
@@ -6103,7 +6111,7 @@ items:
                 href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-            - name: Text Message policy
+            - name: SMS policy
               href: resources/smsAuthenticationMethodConfiguration.md
               items:
               - name: Get

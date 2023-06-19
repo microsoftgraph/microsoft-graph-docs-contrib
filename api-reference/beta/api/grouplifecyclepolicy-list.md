@@ -1,7 +1,7 @@
 ---
 title: "List groupLifecyclePolicies"
 description: "List all the groupLifecyclePolicies."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
