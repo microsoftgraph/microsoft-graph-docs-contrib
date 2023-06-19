@@ -3,46 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "9d156a63-f37c-4e9e-b47a-32d208963a9a",
-          "ApiChange": "Property",
-          "ChangedApiName": "blackAndWhitePageCount",
-          "ChangeType": "Addition",
-          "Description": "Added the `blackAndWhitePageCount` property to the [archivedPrintJob](https://learn.microsoft.com/en-us/graph/api/resources/archivedPrintJob?view=graph-rest-1.0) resource.",
-          "Target": "archivedPrintJob"
-        },
-        {
-          "Id": "9d156a63-f37c-4e9e-b47a-32d208963a9a",
-          "ApiChange": "Property",
-          "ChangedApiName": "colorPageCount",
-          "ChangeType": "Addition",
-          "Description": "Added the `colorPageCount` property to the [archivedPrintJob](https://learn.microsoft.com/en-us/graph/api/resources/archivedPrintJob?view=graph-rest-1.0) resource.",
-          "Target": "archivedPrintJob"
-        },
-        {
-          "Id": "9d156a63-f37c-4e9e-b47a-32d208963a9a",
-          "ApiChange": "Property",
-          "ChangedApiName": "duplexPageCount",
-          "ChangeType": "Addition",
-          "Description": "Added the `duplexPageCount` property to the [archivedPrintJob](https://learn.microsoft.com/en-us/graph/api/resources/archivedPrintJob?view=graph-rest-1.0) resource.",
-          "Target": "archivedPrintJob"
-        },
-        {
-          "Id": "9d156a63-f37c-4e9e-b47a-32d208963a9a",
-          "ApiChange": "Property",
-          "ChangedApiName": "pageCount",
-          "ChangeType": "Addition",
-          "Description": "Added the `pageCount` property to the [archivedPrintJob](https://learn.microsoft.com/en-us/graph/api/resources/archivedPrintJob?view=graph-rest-1.0) resource.",
-          "Target": "archivedPrintJob"
-        },
-        {
-          "Id": "9d156a63-f37c-4e9e-b47a-32d208963a9a",
-          "ApiChange": "Property",
-          "ChangedApiName": "simplexPageCount",
-          "ChangeType": "Addition",
-          "Description": "Added the `simplexPageCount` property to the [archivedPrintJob](https://learn.microsoft.com/en-us/graph/api/resources/archivedPrintJob?view=graph-rest-1.0) resource.",
-          "Target": "archivedPrintJob"
-        },
-        {
           "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
           "ApiChange": "Property",
           "ChangedApiName": "blackAndWhitePageCount",
