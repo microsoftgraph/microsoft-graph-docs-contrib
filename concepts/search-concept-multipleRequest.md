@@ -7,12 +7,12 @@ ms.prod: "search"
 ---
 
 # Use the Microsoft Graph Search API to pass multiple search requests
-The Microsoft Search API allows you to include multiple search requests in a single request body. This capability is currently available for OneDrive and SharePoint, as well as for external contents that are ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview) and answers types, including bookmarks, acronyms, and Q&A.
+The Microsoft Search API allows you to include multiple search requests in a single request body. This capability is currently available for OneDrive and SharePoint, as well as for external content that is ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview) and answer resource types, including bookmarks, acronyms, and Q&A.
 
 
 ## Supported entity types
 
-The supported entity types for including multiple search requests in a request body are: **site**, **drive**, **driveItem**, **list**,**listItem**,**externalItem**, **bookmark**,**acronym**, **qna**. Entity types within the same request block should adhere to the supported entity type relationships and combinations defined in the [interleaving search](search-concept-interleaving.md) topic.
+The supported entity types for including multiple search requests in a request body are: **site**, **drive**, **driveItem**, **list**,**listItem**,**externalItem**, **bookmark**,**acronym**, and **qna**. Entity types within the same request block should adhere to the supported entity type relationships and combinations defined in the [interleaving search](search-concept-interleaving.md) topic.
 
 ## Examples
 
