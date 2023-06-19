@@ -25,11 +25,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
 
-The calling user must be a member user or have the Privileged Role Administrator Azure AD role.
+[!INCLUDE [rbac-pim-alerts-apis-read](../includes/rbac-for-apis/rbac-pim-alerts-apis-read.md)]
 
-To retrieve details of a long running operation of role management alert refresh
 ## HTTP request
 
+To retrieve details of a long running operation of role management alert refresh
 <!-- {
   "blockType": "ignored"
 }
@@ -56,7 +56,7 @@ For role management alerts, the **resourceLocation** contains the url of the rol
 
 ## Examples
 
-### Example 1: Retrieve the details of a long running operation for role management alert refresh when the operation status is `running`.
+### Example 1: Retrieve the details of a long running operation for role management alert refresh when the operation status is `running`
 
 #### Request
 The following is an example of a request.
@@ -94,7 +94,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve the details of a long running operation for role management alert refresh when the operation status is `succeeded`.
+### Example 2: Retrieve the details of a long running operation for role management alert refresh when the operation status is `succeeded`
 
 #### Request
 The following is an example of a request.

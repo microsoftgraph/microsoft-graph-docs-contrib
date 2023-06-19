@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|RoleManagementAlert.ReadWrite.Directory|
 
-[!INCLUDE [rbac-pim-alerts-apis](../includes/rbac-for-apis/rbac-pim-alerts-apis.md)]
+[!INCLUDE [rbac-pim-alerts-apis-write](../includes/rbac-for-apis/rbac-pim-alerts-apis-write.md)]
 
 ## HTTP requests
 
@@ -61,8 +61,7 @@ The following table shows the parameters that can be used with this action.
 |scopeType|String|The type of the scope where the alert is created. `DirectoryRole` is the only supported one for Azure AD roles. |
 |scopeId|String|The identifier of the scope where the alert applies. `/` is the only supported one for the tenant.|
 
-For refreshing a single alert, a request body is not needed.
-
+For refreshing a single alert, do not specify a request body.
 
 ## Response
 
@@ -70,7 +69,7 @@ If successful, this action returns a `202 Accepted` response code with a 'Locati
 
 ## Examples
 
-### Example 1: refresh all the alerts under a resource scope like a tenant.
+### Example 1: Refresh all the alerts under a resource scope like a tenant
 
 #### Request
 
@@ -103,7 +102,7 @@ Content-Type: application/json
 Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/5c5670d6-a2c0-a394-ef42-882954856de5
 ```
 
-### Example 2: refresh a single alert under a resource scope like a tenant.
+### Example 2: Refresh a single alert under a resource scope like a tenant
 
 #### Request
 

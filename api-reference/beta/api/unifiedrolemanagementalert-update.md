@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|RoleManagementAlert.ReadWrite.Directory|
 
-[!INCLUDE [rbac-pim-alerts-apis](../includes/rbac-for-apis/rbac-pim-alerts-apis.md)]
+[!INCLUDE [rbac-pim-alerts-apis-write](../includes/rbac-for-apis/rbac-pim-alerts-apis-write.md)]
 
 ## HTTP request
 
@@ -54,10 +54,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Dismiss an alert by specifying the alert id and setting the isActive to false.
-
-#### Request
-The following is an example of a request.
+### Request
+The following is an example of a request to dismiss an alert by specifying the alert id and setting the isActive to false.
 <!-- {
   "blockType": "request",
   "name": "update_unifiedrolemanagementalert"
@@ -72,7 +70,7 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 The following is an example of the response
 <!-- {
   "blockType": "response",

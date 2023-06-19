@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|RoleManagementAlert.ReadWrite.Directory|
 
-[!INCLUDE [rbac-pim-alerts-apis](../includes/rbac-for-apis/rbac-pim-alerts-apis.md)]
+[!INCLUDE [rbac-pim-alerts-apis-write](../includes/rbac-for-apis/rbac-pim-alerts-apis-write.md)]
 
 ## HTTP request
 
@@ -51,6 +51,8 @@ PATCH /identityGovernance/roleManagementAlerts/alertConfigurations/{unifiedRoleM
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+You must include the **@odata.type** property in the body of the request. The value for this property must be the same as the derived alert configuration type that you are updating. For example, if you are updating the **tooManyGlobalAdminsAssignedToTenantAlertConfiguration** alert configuration, the value for the **@odata.type** property must be **#microsoft.graph.tooManyGlobalAdminsAssignedToTenantAlertConfiguration**.
 
 |Property|Type|Description|
 |:---|:---|:---|

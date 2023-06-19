@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
 
-The calling user must be a member user or have the Privileged Role Administrator Azure AD role.
+[!INCLUDE [rbac-pim-alerts-apis-read](../includes/rbac-for-apis/rbac-pim-alerts-apis-read.md)]
 
 ## HTTP request
 

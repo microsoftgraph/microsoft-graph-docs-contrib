@@ -46,14 +46,6 @@
         },
         {
           "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "alertSeverity",
-          "ChangeType": "Addition",
-          "Description": "Added the **alertSeverity** enumeration type.",
-          "Target": "alertSeverity"
-        },
-        {
-          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
           "ApiChange": "Resource",
           "ChangedApiName": "roleManagementAlerts",
           "ChangeType": "Addition",
@@ -240,7 +232,7 @@
       "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-01-31T17:44:49.9324302Z",
+      "CreatedDateTime": "2023-06-21T00:00:00.9324302Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
