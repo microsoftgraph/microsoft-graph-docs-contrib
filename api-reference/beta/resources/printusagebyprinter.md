@@ -63,7 +63,7 @@ The following is a JSON representation of the resource.
     "incompleteJobCount": 123456,
     "pageCount": 123456,
     "blackAndWhitePageCount": 123456,
-    "colorPageCount": 123456
+    "colorPageCount": 123456,
     "mediaSheetCount": 123456,
     "doubleSidedSheetCount": 123456,
     "singleSidedSheetCount": 123456
