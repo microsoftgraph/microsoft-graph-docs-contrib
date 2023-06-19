@@ -13697,6 +13697,14 @@
         {
           "Id": "1dd4cafb-2f2b-45b2-949e-f181e7f0d0c7",
           "ApiChange": "Property",
+          "ChangedApiName": "lockedOut",
+          "ChangeType": "Addition",
+          "Description": "Added the **lockedOut** property to the [licenseUnitsDetail](https://learn.microsoft.com/en-us/graph/api/resources/licenseUnitsDetail?view=graph-rest-1.0) resource.",
+          "Target": "licenseUnitsDetail"
+        },
+        {
+          "Id": "1dd4cafb-2f2b-45b2-949e-f181e7f0d0c7",
+          "ApiChange": "Property",
           "ChangedApiName": "accountId",
           "ChangeType": "Addition",
           "Description": "Added the **accountId** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-1.0) resource.",
@@ -13867,24 +13875,6 @@
       "CreatedDateTime": "2023-05-15T08:54:08.6528325Z",
       "WorkloadArea": "Users",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "6f5f2fd6-dc7c-45d4-be54-312b12b49734",
-          "ApiChange": "Property",
-          "ChangedApiName": "lockedOut",
-          "ChangeType": "Addition",
-          "Description": "Added the `lockedOut` property to the [licenseUnitsDetail](https://learn.microsoft.com/en-us/graph/api/resources/licenseUnitsDetail?view=graph-rest-1.0) resource.",
-          "Target": "licenseUnitsDetail"
-        }
-      ],
-      "Id": "6f5f2fd6-dc7c-45d4-be54-312b12b49734",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2023-06-01T23:45:55.9837236Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
     }
   ]
 }
