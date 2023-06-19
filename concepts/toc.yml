@@ -1052,32 +1052,32 @@ items:
                 href: toolkit/components/picker.md
               - name: Planner tasks
                 href: toolkit/components/tasks.md
-              - name: Teams channel picker
-                href: toolkit/components/teams-channel-picker.md
               - name: Search box (preview)
                 href: toolkit/components/search-box.md
               - name: Search results (preview)
                 href: toolkit/components/search-results.md
               - name: Taxonomy picker
                 href: toolkit/components/taxonomy-picker.md
+              - name: Teams channel picker
+                href: toolkit/components/teams-channel-picker.md
               - name: Theme toggle
                 href: toolkit/components/todo.md
               - name: To-do tasks
                 href: toolkit/components/todo.md
           - name: Customize components
             items:
-              - name: Styling components
-                href: toolkit/customize-components/style.md
-              - name: Templating components
-                href: toolkit/customize-components/templates.md
-              - name: Handling events
-                href: toolkit/customize-components/events.md
               - name: Caching Microsoft Graph calls in components
                 href: toolkit/customize-components/cache.md
+              - name: Handling events
+                href: toolkit/customize-components/events.md
               - name: Localizing components
                 href: toolkit/customize-components/localization.md
               - name: Right-to-left support
                 href: toolkit/customize-components/right-to-left.md
+              - name: Styling components
+                href: toolkit/customize-components/style.md
+              - name: Templating components
+                href: toolkit/customize-components/templates.md
       - name: Resources
         expanded: true
         items:
