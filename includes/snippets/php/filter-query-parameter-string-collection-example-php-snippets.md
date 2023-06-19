@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UsersRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new UsersRequestBuilderGetQueryParameters();
-$queryParameters->filter = "imAddresses/any";
-
+$queryParameters = UsersRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = "imAddresses/any(i:i eq 'admin@contoso.com')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->users()->get($requestConfiguration);
+$result = $graphServiceClient->users()->get($requestConfiguration);
 
 
 ```

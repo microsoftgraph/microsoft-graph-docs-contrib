@@ -91,6 +91,10 @@ POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 [!INCLUDE [sample-code](../includes/snippets/php/domain-verify-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/domain-verify-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

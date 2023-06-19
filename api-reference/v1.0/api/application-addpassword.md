@@ -25,10 +25,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /applications/{id}/addPassword
+POST /applications(appId='{appId}')/addPassword
 ```
 
 ## Request headers
@@ -99,6 +101,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/application-addpassword-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/application-addpassword-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

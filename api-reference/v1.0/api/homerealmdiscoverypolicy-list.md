@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies
 [!INCLUDE [sample-code](../includes/snippets/php/get-homerealmdiscoverypolicies-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-homerealmdiscoverypolicies-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

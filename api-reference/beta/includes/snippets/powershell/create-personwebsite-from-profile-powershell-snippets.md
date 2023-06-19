@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	Categories = @(
+	categories = @(
 		"football"
 	)
-	DisplayName = "Lyn Damer"
-	WebUrl = "www.lyndamer.no"
+	displayName = "Lyn Damer"
+	webUrl = "www.lyndamer.no"
 }
 
 # A UPN can also be used as -UserId.

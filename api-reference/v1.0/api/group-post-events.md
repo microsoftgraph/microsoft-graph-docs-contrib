@@ -1,7 +1,7 @@
 ---
 title: "Create event"
 description: "Use this API to create a new event."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
@@ -115,6 +115,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-event-from-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-event-from-group-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -15,9 +15,7 @@ const onPremisesDirectorySynchronization = {
     accidentalDeletionPrevention: {
       synchronizationPreventionType: 'enabledForCount',
       alertThreshold: 500
-    },
-    synchronizationInterval: 'PT30M',
-    customerRequestedSynchronizationInterval: 'PT1H'
+    }
   },
   features: {
     groupWriteBackEnabled: true

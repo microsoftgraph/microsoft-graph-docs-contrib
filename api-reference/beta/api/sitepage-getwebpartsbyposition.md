@@ -70,14 +70,13 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_webpart"
+  "name": "get_webparts_by_position"
 }
 -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{siteId}/pages/{sitePageId}/getWebPartsByPosition(horizontalSectionId={horizontalSectionId},columnId={columnId},webPartIndex={webPartIndex},isInVerticalSection={isInVerticalSection})
 ```
-
 
 ### Response
 

@@ -8,21 +8,21 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule"
-	Id = "Enablement_Admin_Assignment"
-	EnabledRules = @(
+	id = "Enablement_Admin_Assignment"
+	enabledRules = @(
 		"Justification"
 		"MultiFactorAuthentication"
 	)
-	Target = @{
+	target = @{
 		"@odata.type" = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
-		Caller = "Admin"
-		Operations = @(
+		caller = "Admin"
+		operations = @(
 			"All"
 		)
-		Level = "Assignment"
-		InheritableSettings = @(
+		level = "Assignment"
+		inheritableSettings = @(
 		)
-		EnforcedSettings = @(
+		enforcedSettings = @(
 		)
 	}
 }

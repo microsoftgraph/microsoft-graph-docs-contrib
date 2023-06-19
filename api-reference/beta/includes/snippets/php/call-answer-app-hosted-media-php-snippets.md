@@ -19,7 +19,7 @@ $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');
 
 $additionalData = [
-'blob' => '<Media Session Configuration Blob>', 
+	'blob' => '<Media Session Configuration Blob>', 
 ];
 $mediaConfig->setAdditionalData($additionalData);
 
@@ -28,7 +28,7 @@ $mediaConfig->setAdditionalData($additionalData);
 $requestBody->setMediaConfig($mediaConfig);
 
 
-$graphServiceClient->communications()->callsById('call-id')->answer()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->answer()->post($requestBody);
 
 
 ```

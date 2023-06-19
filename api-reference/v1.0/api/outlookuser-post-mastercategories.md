@@ -86,6 +86,10 @@ Content-Length: 70
 [!INCLUDE [sample-code](../includes/snippets/php/create-outlookcategory-from-outlookuser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-outlookcategory-from-outlookuser-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

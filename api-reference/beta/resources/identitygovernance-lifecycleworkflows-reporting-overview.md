@@ -35,7 +35,7 @@ These auditable logs are represented by the [directoryAudit resource type](/grap
 
 ## License checks
 
-The Lifecycle Workflows feature, including the API, is included in the Azure AD Premium P2 license. The tenant where Lifecycle Workflows are being created must have a valid purchased, or trial, Azure AD Premium P2 or EMS E5 subscription. For more information about the license requirements, see [Lifecycle Workflows license requirements](/azure/active-directory/governance/lifecycle-workflows-deployment#licenses).
+To preview the Lifecycle Workflows feature, you must have an Azure AD Premium P2 license in your tenant. For more information about the license requirements, see: [Lifecycle Workflows license requirements](/azure/active-directory/governance/lifecycle-workflows-deployment#licenses).
 
 ## Role and application permission authorization checks
 
@@ -43,8 +43,8 @@ The following [Azure AD roles](/azure/active-directory/roles/permissions-referen
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
-| Read | LifecycleWorkflows.Read.All or LifecycleWorkflows.ReadWrite.All | Global Admin, Global Reader or Lifecycle Workflows Administrator |
-| Create, Update or Delete | LifecycleWorkflows.ReadWrite.All | Global Administrator or Lifecycle Workflows Administrator |
+| Read | LifecycleWorkflows.Read.All or LifecycleWorkflows.ReadWrite.All |Global Reader or Lifecycle Workflows Administrator |
+| Create, Update or Delete | LifecycleWorkflows.ReadWrite.All | Lifecycle Workflows Administrator |
 
 ## See also
 

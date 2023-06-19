@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/external/connections
 [!INCLUDE [sample-code](../includes/snippets/php/list-externalconnection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-externalconnection-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

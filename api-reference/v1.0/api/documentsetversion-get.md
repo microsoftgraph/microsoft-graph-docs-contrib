@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/sites/root/lists/Documents/items/2/document
 [!INCLUDE [sample-code](../includes/snippets/php/get-documentsetversion-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-documentsetversion-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

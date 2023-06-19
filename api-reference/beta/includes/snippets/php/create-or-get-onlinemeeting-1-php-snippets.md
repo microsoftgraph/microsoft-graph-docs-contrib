@@ -41,7 +41,7 @@ $participants->setAttendees($attendeesArray);
 $requestBody->setParticipants($participants);
 
 
-$requestResult = $graphServiceClient->me()->onlineMeetings()->createOrGet()->post($requestBody);
+$result = $graphServiceClient->me()->onlineMeetings()->createOrGet()->post($requestBody);
 
 
 ```

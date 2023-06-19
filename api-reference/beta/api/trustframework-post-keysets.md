@@ -96,6 +96,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-trustframeworkkeyset-from-trustframework-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-trustframeworkkeyset-from-trustframework-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

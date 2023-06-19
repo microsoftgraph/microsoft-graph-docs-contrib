@@ -4,20 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-sdk-go/identitygovernance"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestFilter := "userConsentRequests/any"
 
-requestParameters := &graphconfig.IdentityGovernanceAppConsentAppConsentRequestItemRequestBuilderGetQueryParameters{
+requestFilter := "userConsentRequests/any(u:u/status eq 'InProgress')"
+
+requestParameters := &graphidentitygovernance.IdentityGovernanceAppConsentAppConsentRequestItemRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.IdentityGovernanceAppConsentAppConsentRequestItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernanceAppConsentAppConsentRequestItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById("appConsentRequest-id").Get(context.Background(), configuration)
+result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequests().ByAppConsentRequestId("appConsentRequest-id").Get(context.Background(), configuration)
 
 
 ```

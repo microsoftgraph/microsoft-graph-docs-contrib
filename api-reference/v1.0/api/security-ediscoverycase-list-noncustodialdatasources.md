@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-418
 [!INCLUDE [sample-code](../includes/snippets/php/create-ediscoverynoncustodialdatasource-expand-datasource-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-ediscoverynoncustodialdatasource-expand-datasource-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

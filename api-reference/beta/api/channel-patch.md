@@ -133,6 +133,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/patch-channel-with-moderationsettings-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/patch-channel-with-moderationsettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

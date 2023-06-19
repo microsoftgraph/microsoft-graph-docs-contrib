@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	ExtensionAttributes = @{
-		ExtensionAttribute1 = "BYOD-Device"
+	extensionAttributes = @{
+		extensionAttribute1 = "BYOD-Device"
 	}
 }
 

@@ -105,6 +105,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-mailfolder-from-mailfolder-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-mailfolder-from-mailfolder-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

@@ -25,14 +25,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-PATCH /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 
+You can also address the federated identity credential with either its **id** or **name**.
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 PATCH /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+PATCH /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+PATCH /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Request headers
@@ -107,6 +108,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-federatedidentitycredential-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-federatedidentitycredential-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

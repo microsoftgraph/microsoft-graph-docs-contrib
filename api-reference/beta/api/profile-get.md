@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/me/profile
 [!INCLUDE [sample-code](../includes/snippets/php/get-profile-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-profile-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -329,6 +333,10 @@ GET https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-profile-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-profile-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

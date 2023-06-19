@@ -2,7 +2,7 @@
 title: "Get conversationThread"
 description: "Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, "
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-conversationthread-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-conversationthread-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

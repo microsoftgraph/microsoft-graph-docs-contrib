@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read, Organization.Read.All, User.ReadBasic.All, User.Read.All |
+| Delegated (work or school account)     | User.Read, Organization.Read.All, User.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Organization.Read.All |
 
@@ -96,6 +96,10 @@ Accept-Language: 0
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-organizationalbranding-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-organizationalbranding-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -203,6 +207,10 @@ Accept-Language: 0
 [!INCLUDE [sample-code](../includes/snippets/php/get-organizationalbranding-error-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-organizationalbranding-error-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -258,6 +266,10 @@ Accept-Language: fr-FR
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-organizationalbranding-locale-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-organizationalbranding-locale-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -368,6 +380,10 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-organizationalbranding-frlocale-defaultbannerlogo-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-organizationalbranding-frlocale-defaultbannerlogo-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

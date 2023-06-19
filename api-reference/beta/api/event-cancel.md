@@ -47,8 +47,8 @@ POST /groups/{id}/calendar/events/{id}/cancel
 POST /me/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/cancel
 
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/cancel
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/cancel
+POST /me/calendarGroups/{id}/calendars/{id}/events/{id}/cancel
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/cancel
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/event-cancel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/event-cancel-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

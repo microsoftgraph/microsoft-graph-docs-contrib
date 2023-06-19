@@ -2,7 +2,7 @@
 title: "group: renew"
 description: "Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -82,6 +82,10 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/group-renew-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-renew-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

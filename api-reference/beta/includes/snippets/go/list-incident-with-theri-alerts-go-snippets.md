@@ -4,13 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.SecurityIncidentsRequestBuilderGetQueryParameters{
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphsecurity.SecurityIncidentsRequestBuilderGetQueryParameters{
 	Expand: [] string {"alerts"},
 }
-configuration := &graphconfig.SecurityIncidentsRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.SecurityIncidentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -48,14 +48,14 @@ To update an existing unfiedRoleAssignmentMultiple for a Cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /roleManagement/cloudPC/roleAssignments
+PATCH /roleManagement/cloudPC/roleAssignments/{id}
 ```
 
 To update an existing unfiedRoleAssignmentMultiple for an Intune provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /roleManagement/deviceManagement/roleAssignments
+PATCH /roleManagement/deviceManagement/roleAssignments/{id}
 ```
 
 ## Request headers
@@ -121,6 +121,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-unifiedroleassignmentmultiple-from-rbacapplication-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-unifiedroleassignmentmultiple-from-rbacapplication-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -181,6 +185,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

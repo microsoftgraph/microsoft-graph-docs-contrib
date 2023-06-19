@@ -21,7 +21,7 @@ The support for the `$search` query parameter varies by entity, with some, such 
 
 ## Using $search on message collections
 
-You can search messages based on a value in specific message properties. The results of the search are sorted by the date and time that the message was sent. A `$search` request returns up to 1000 results.
+You can search [messages](/graph/api/resources/message) based on a value in specific message properties. The results of the search are sorted by the date and time that the message was sent. A `$search` request returns up to 1000 results.
 
 If you do a search on messages and specify only a value without specific message properties, the search is carried out on the default search properties of **from**, **subject**, and **body**.
 
@@ -58,6 +58,10 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/search-my-messages-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/search-my-messages-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -131,6 +135,10 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
 [!INCLUDE [sample-code](../includes/snippets/php/search-my-people-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/search-my-people-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 The following example shows the response.
@@ -183,7 +191,7 @@ To learn more about the People API, see [Get information about relevant people](
 
 ## Using $search on directory object collections
 
-Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in advanced queries. The search implementation does **not** support `contains`. Instead, it uses a tokenization approach that works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols as shown in the following examples:
+Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in [advanced queries](./aad-advanced-queries.md). The search implementation does **not** support "contains" logic. Instead, it uses a tokenization approach that works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols as shown in the following examples:
 
 - **Spaces**: `hello world` => `hello`, `world`
 - **Different casing**⁽¹⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
@@ -207,6 +215,7 @@ For example:
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo" OR "mail:onevideo"
+ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
@@ -233,6 +242,10 @@ GET https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo" OR "
 [!INCLUDE [sample-code](../includes/snippets/php/search-groups-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/search-groups-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 This looks for all groups with display names that has `one` and `video` tokens, or mail starting with `onevideo`.  
@@ -247,6 +260,7 @@ This looks for all groups with display names that has `one` and `video` tokens, 
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"
+ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
@@ -271,6 +285,10 @@ GET https://graph.microsoft.com/v1.0/groups/?$filter=mailEnabled eq true&$search
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/search-filter-groups-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/search-filter-groups-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

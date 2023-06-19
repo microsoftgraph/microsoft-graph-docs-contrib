@@ -22,7 +22,7 @@ The following permission is required to call the API. To learn more, including h
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Presence.ReadWrite                          |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
+| Application                            | Presence.ReadWrite.All                              |
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
@@ -104,6 +104,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/setstatusmessage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/setstatusmessage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -117,11 +121,11 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 ```
 
-### Example 2: Get status message of another user
+### Example 2: Set status message of another user
 
 The following request sets the presence status message as "Hey I'm currently in a meeting." for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`. Then presence for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` is obtained on behalf of other user via a [getPresence](presence-get.md) request.
 
-#### Set status message: request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -167,9 +171,13 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/setstatusmessage-another-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/setstatusmessage-another-user-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### Set status message: response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -180,9 +188,10 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 ```
 
-#### Get another user presence: request
+### Example 3:  Get another user presence
 This request should be executed on behalf of another user.
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -217,9 +226,13 @@ GET https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/
 [!INCLUDE [sample-code](../includes/snippets/php/setstatusmessage-another-user-get-presence-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/setstatusmessage-another-user-get-presence-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### Get another user presence: response
+#### Response
 Since this presence request does not qualify as a [self presence](presence-get.md#example-1-get-your-own-presence-information) request, `statusMessage.expiryDateTime` and `statusMessage.publishedDateTime` properties are not included in the response body.
 
 <!-- {

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->organizationById('organization-id')->certificateBasedAuthConfigurationById('certificateBasedAuthConfiguration-id')->get();
+$result = $graphServiceClient->organization()->byOrganization()Id('organization-id')->certificateBasedAuthConfiguration()->byCertificateBasedAuthConfiguration()Id('certificateBasedAuthConfiguration-id')->get();
 
 
 ```

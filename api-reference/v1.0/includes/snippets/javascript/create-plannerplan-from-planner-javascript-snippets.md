@@ -18,7 +18,6 @@ const plannerPlan = {
 };
 
 await client.api('/planner/plans')
-	.version('beta')
 	.post(plannerPlan);
 
 ```

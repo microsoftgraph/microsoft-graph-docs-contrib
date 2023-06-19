@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new OnPremisesDirectorySynchronization
@@ -15,8 +17,6 @@ var requestBody = new OnPremisesDirectorySynchronization
 			SynchronizationPreventionType = OnPremisesDirectorySynchronizationDeletionPreventionType.EnabledForCount,
 			AlertThreshold = 500,
 		},
-		SynchronizationInterval = TimeSpan.Parse("PT30M"),
-		CustomerRequestedSynchronizationInterval = TimeSpan.Parse("PT1H"),
 	},
 	Features = new OnPremisesDirectorySynchronizationFeature
 	{

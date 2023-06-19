@@ -4,19 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var bookingCustomQuestion = new BookingCustomQuestion
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new BookingCustomQuestion
 {
+	OdataType = "#microsoft.graph.bookingCustomQuestion",
 	DisplayName = "What is your age?",
 	AnswerInputType = AnswerInputType.Text,
-	AnswerOptions = new List<String>()
+	AnswerOptions = new List<String>
 	{
-	}
+	},
 };
+var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].CustomQuestions["{bookingCustomQuestion-id}"].PatchAsync(requestBody);
 
-await graphClient.BookingBusinesses["{bookingBusiness-id}"].CustomQuestions["{bookingCustomQuestion-id}"]
-	.Request()
-	.UpdateAsync(bookingCustomQuestion);
 
 ```

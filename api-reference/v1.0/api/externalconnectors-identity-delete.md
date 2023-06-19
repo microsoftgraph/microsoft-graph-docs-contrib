@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31
 [!INCLUDE [sample-code](../includes/snippets/php/delete-identity-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-identity-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 <!-- markdownlint-disable MD024 -->

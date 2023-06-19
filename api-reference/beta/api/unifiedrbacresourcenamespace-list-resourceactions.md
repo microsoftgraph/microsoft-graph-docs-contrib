@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 [!INCLUDE [sample-code](../includes/snippets/php/list-unifiedrbacresourceaction-directory-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-unifiedrbacresourceaction-directory-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -175,6 +179,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-unifiedrbacresourceaction-insights-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-unifiedrbacresourceaction-insights-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

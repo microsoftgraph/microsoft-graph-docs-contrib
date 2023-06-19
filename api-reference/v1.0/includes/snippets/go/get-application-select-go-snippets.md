@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.ApplicationItemRequestBuilderGetQueryParameters{
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphapplications "github.com/microsoftgraph/msgraph-sdk-go/applications"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphapplications.ApplicationItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","appId","displayName","requiredResourceAccess"},
 }
-configuration := &graphconfig.ApplicationItemRequestBuilderGetRequestConfiguration{
+configuration := &graphapplications.ApplicationItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.ApplicationsById("application-id").Get(context.Background(), configuration)
+result, err := graphClient.Applications().ByApplicationId("application-id").Get(context.Background(), configuration)
 
 
 ```

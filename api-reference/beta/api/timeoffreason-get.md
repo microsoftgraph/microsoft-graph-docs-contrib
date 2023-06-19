@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{tim
 [!INCLUDE [sample-code](../includes/snippets/php/timeoffreason-get-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/timeoffreason-get-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

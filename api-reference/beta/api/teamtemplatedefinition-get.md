@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [teamTemplateDefinition](../resources/teamtemplatedefinition.md) object.
 
+> **Note**: This API is currently in private preview only. When it reaches public preview, we will publish a blog post announcement on the [Microsoft 365 Developer blog](https://devblogs.microsoft.com/microsoft365dev/).
+
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -84,6 +87,10 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates/com.microsoft.teams.
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-teamtemplatedefinition-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-teamtemplatedefinition-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

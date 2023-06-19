@@ -93,6 +93,10 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/delete-b2xuserflows-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-b2xuserflows-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

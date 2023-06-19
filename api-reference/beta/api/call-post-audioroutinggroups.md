@@ -1,7 +1,7 @@
 ---
 title: "Create audio routing group"
 description: "Create a new **audioRoutingGroup**."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -95,6 +95,10 @@ Content-Length: 233
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-audioroutinggroup-from-call-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-audioroutinggroup-from-call-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

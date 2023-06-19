@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST sites/{site-id}/termStore/sets
+POST /sites/{site-id}/termStore/sets
 ```
 
 ## Request headers
@@ -115,5 +115,4 @@ Content-Type: application/json
   ]
 }
 -->
-
 

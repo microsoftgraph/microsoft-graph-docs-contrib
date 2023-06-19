@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Models.Search.Bookmark
@@ -23,21 +25,6 @@ var requestBody = new Microsoft.Graph.Beta.Models.Search.Bookmark
 			"Contoso",
 		},
 		MatchSimilarKeywords = true,
-	},
-	AvailabilityStartDateTime = null,
-	AvailabilityEndDateTime = null,
-	Platforms = new List<DevicePlatformType?>
-	{
-		DevicePlatformType.Android,
-	},
-	TargetedVariations = new List<Microsoft.Graph.Beta.Models.Search.AnswerVariant>
-	{
-		new Microsoft.Graph.Beta.Models.Search.AnswerVariant
-		{
-			LanguageTag = "es-es",
-			DisplayName = "Sitio de instalación Contoso",
-			Description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto",
-		},
 	},
 	State = Microsoft.Graph.Beta.Models.Search.AnswerState.Published,
 };

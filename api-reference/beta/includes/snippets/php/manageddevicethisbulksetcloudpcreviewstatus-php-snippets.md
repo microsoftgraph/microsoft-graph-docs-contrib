@@ -23,7 +23,7 @@ $reviewStatus->setAzureStorageAccountId('/subscriptions/f68bd846-16ad-4b51-a7c6-
 $requestBody->setReviewStatus($reviewStatus);
 
 
-$requestResult = $graphServiceClient->deviceManagement()->managedDevices()->bulkSetCloudPcReviewStatus()->post($requestBody);
+$result = $graphServiceClient->deviceManagement()->managedDevices()->bulkSetCloudPcReviewStatus()->post($requestBody);
 
 
 ```

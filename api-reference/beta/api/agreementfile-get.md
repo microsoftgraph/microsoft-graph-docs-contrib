@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/94
 [!INCLUDE [sample-code](../includes/snippets/php/get-agreementfile-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-agreementfile-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

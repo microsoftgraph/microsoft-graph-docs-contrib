@@ -25,14 +25,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 
+You can also address the federated identity credential with either its **id** or **name**.
+<!-- { "blockType": "ignored" } -->
+```http
+GET /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 GET /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+GET /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+GET /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Optional query parameters
@@ -88,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/applications/acd7c908-1c4d-4d48-93ee-ff3834
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-federatedidentitycredential-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-federatedidentitycredential-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

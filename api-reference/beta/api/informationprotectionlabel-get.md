@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/get-informationprotectionlabel-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-informationprotectionlabel-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

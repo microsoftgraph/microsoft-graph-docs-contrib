@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedUsers
 [!INCLUDE [sample-code](../includes/snippets/php/list-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-user-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

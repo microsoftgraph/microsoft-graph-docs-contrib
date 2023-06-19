@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
+POST /onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 ```
 
 ## Request headers
@@ -87,6 +87,10 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-onpremisesagent-from-onpremisesagentgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-onpremisesagent-from-onpremisesagentgroup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
