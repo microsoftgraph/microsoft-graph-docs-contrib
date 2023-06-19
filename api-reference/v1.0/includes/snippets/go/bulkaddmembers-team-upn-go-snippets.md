@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Teams/Item/Members/Add"
+	  graphteams "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddPostRequestBody()
+requestBody := graphteams.NewAddPostRequestBody()
 
 
 conversationMember := graphmodels.NewConversationMember()
@@ -38,7 +39,7 @@ additionalData := map[string]interface{}{
 }
 conversationMember1.SetAdditionalData(additionalData)
 
-values := []graphmodels.Objectable {
+values := []graphteams.Objectable {
 	conversationMember,
 	conversationMember1,
 
