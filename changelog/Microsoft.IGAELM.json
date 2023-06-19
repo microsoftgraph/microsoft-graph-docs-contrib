@@ -476,7 +476,7 @@
         },
         {
           "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "customExtensionStageSettings",
           "ChangeType": "Addition",
           "Description": "Added the **customExtensionStageSettings** relationship to the [accessPackageAssignmentPolicy](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-1.0) resource.",
@@ -495,7 +495,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageAssignmentRequestWorkflowExtension",
           "ChangeType": "Addition",
-          "Description": "Added the [accessPackageAssignmentRequestWorkflowExtension](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestWorkflowExtension?view=graph-rest-1.0) resource",
+          "Description": "Added the [accessPackageAssignmentRequestWorkflowExtension](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestWorkflowExtension?view=graph-rest-1.0) resource.",
           "Target": "accessPackageAssignmentRequestWorkflowExtension"
         },
         {
@@ -503,12 +503,12 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageAssignmentWorkflowExtension",
           "ChangeType": "Addition",
-          "Description": "Added the [accessPackageAssignmentWorkflowExtension](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentWorkflowExtension?view=graph-rest-1.0) resource",
+          "Description": "Added the [accessPackageAssignmentWorkflowExtension](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentWorkflowExtension?view=graph-rest-1.0) resource.",
           "Target": "accessPackageAssignmentWorkflowExtension"
         },
         {
           "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "accessPackageCustomWorkflowExtensions",
           "ChangeType": "Addition",
           "Description": "Added the **accessPackageCustomWorkflowExtensions** relationship to the [accessPackageCatalog](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageCatalog?view=graph-rest-1.0) resource.",
@@ -519,7 +519,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customCalloutExtension",
           "ChangeType": "Addition",
-          "Description": "Added the [customCalloutExtension](https://learn.microsoft.com/en-us/graph/api/resources/customCalloutExtension?view=graph-rest-1.0) resource",
+          "Description": "Added the [customCalloutExtension](https://learn.microsoft.com/en-us/graph/api/resources/customCalloutExtension?view=graph-rest-1.0) resource.",
           "Target": "customCalloutExtension"
         },
         {
@@ -527,7 +527,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionStageSetting",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionStageSetting](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionStageSetting?view=graph-rest-1.0) resource",
+          "Description": "Added the [customExtensionStageSetting](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionStageSetting?view=graph-rest-1.0) resource.",
           "Target": "customExtensionStageSetting"
         },
         {
