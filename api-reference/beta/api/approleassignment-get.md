@@ -113,7 +113,7 @@ If successful, this method returns a `200 OK` response code and an [appRoleAssig
 The following request queries the resource service principal to get details of an app role it has granted to a client that can be a user, group, or client service principal in the tenant.
 <!-- {
   "blockType": "request",
-  "name": "get_approleassignment"
+  "name": "get_approleassignment_beta_e1"
 }
 -->
 ``` http
@@ -155,7 +155,7 @@ Content-Type: application/json
 The following request queries the client service principal to get details of an app role granted to it. In this instance, the app role represents the application permission.
 <!-- {
   "blockType": "request",
-  "name": "get_approleassignment"
+  "name": "get_approleassignment_serviceprincipal_beta_e2"
 }
 -->
 ``` http
