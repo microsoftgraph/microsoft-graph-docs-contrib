@@ -1060,6 +1060,8 @@ items:
                 href: toolkit/components/search-results.md
               - name: Taxonomy picker
                 href: toolkit/components/taxonomy-picker.md
+              - name: Theme toggle
+                href: toolkit/components/todo.md
               - name: To-do tasks
                 href: toolkit/components/todo.md
           - name: Customize components
