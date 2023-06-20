@@ -1,6 +1,6 @@
 ---
 title: "fqdn resource type"
-description: "A fully qualified domain name (FQDN) is the complete address of an internet host or computer"
+description: "A fully qualified domain name (FQDN) refers to the complete address of an internet host or computer. It includes the hostname and the domain name, providing a specific and unique identification for the device on the internet."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A fully qualified domain name (FQDN) is the complete address of an internet host or computer
+A fully qualified domain name (FQDN) refers to the complete address of an internet host or computer. It includes the hostname and the domain name, providing a specific and unique identification for the device on the internet.
 
 Inherits from [microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md).
 

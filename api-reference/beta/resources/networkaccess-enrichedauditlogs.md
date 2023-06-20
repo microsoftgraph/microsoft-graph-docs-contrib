@@ -1,6 +1,6 @@
 ---
 title: "enrichedAuditLogs resource type"
-description: "Represents a complete overview of the enriched audit logs workloads within the tenant. It consists of three partners: SharePoint, Teams, and Exchange. Each partner represents a specific workload that generates audit logs"
+description: "An overview of the enriched audit logs workloads within the tenant is provided. It comprises three partners: SharePoint, Teams, and Exchange. Each partner represents a specific workload that generates audit logs."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a complete overview of the enriched audit logs workloads within the tenant. It consists of three partners: SharePoint, Teams, and Exchange. Each partner represents a specific workload that generates audit logs
+An overview of the enriched audit logs workloads within the tenant is provided. It comprises three partners: SharePoint, Teams, and Exchange. Each partner represents a specific workload that generates audit logs.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -27,10 +27,10 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|exchange|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Exchange Online enriched audit logs settings	|
+|exchange|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Exchange Online enriched audit logs settings.|
 |id|String|Id Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|sharepoint|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|SharePoint Online enriched audit logs settings|
-|teams|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Teams enriched audit logs settings|
+|sharepoint|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|SharePoint Online enriched audit logs settings.|
+|teams|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Teams enriched audit logs settings.|
 
 ## Relationships
 None.

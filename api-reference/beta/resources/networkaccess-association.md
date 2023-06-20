@@ -1,6 +1,6 @@
 ---
 title: "association resource type"
-description: "A relationship between two items is represented by an association"
+description: "An association represents a relationship between two items."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the users, groups, devices, and branch locations that are associated with a traffic profile.
+An association represents a relationship between two items.
 This is an abstract type that's inherited by the [associatedBranch](networkaccess-associatedbranch.md) derived type.
 
 ## Properties

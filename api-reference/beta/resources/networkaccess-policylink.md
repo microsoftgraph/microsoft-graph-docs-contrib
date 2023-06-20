@@ -1,6 +1,6 @@
 ---
 title: "policyLink resource type"
-description: "Contains the link for a Policy for a given profile"
+description: "The PolicyLink object contains the link to a policy associated with a specific profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains the link for a Policy for a given profile
+The PolicyLink object contains the link to a policy associated with a specific profile.
 This is an abstract type.
 
 
@@ -32,9 +32,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|state|microsoft.graph.networkaccess.status|Link status.The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
-|version|String|version|
+|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|state|microsoft.graph.networkaccess.status|Link status. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|

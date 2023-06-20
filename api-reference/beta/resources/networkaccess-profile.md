@@ -1,6 +1,6 @@
 ---
 title: "network access profile resource type"
-description: "A profile is a container for forwarding policies."
+description: "A profile serves as a container for forwarding policies."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A profile is a container for forwarding policies.
+A profile serves as a container for forwarding policies.
 This is an abstract type.
 
 
@@ -25,10 +25,10 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|Description|
+|description|String|Description.|
 |id|String|Identifier for the profile. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|Profile last modified time|
-|name|String|Profile name|
+|lastModifiedDateTime|DateTimeOffset|Profile last modified time.|
+|name|String|Profile name.|
 |state|microsoft.graph.networkaccess.status|Profile state.The possible values are: `enabled`, `disabled`.|
 |version|String|Profile version.|
 

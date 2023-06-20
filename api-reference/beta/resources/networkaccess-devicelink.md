@@ -1,6 +1,6 @@
 ---
 title: "deviceLink resource type"
-description: "A link is a a single customer premises customer-premises equipment (CPE), at a physical branch site location."
+description: "A device link represents a single customer-premises equipment (CPE) at a physical branch site location."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A link is a a single customer premises customer-premises equipment (CPE), at a physical branch site location.
-
+A device link represents a single customer-premises equipment (CPE) at a physical branch site location.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -30,14 +29,14 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bgpConfiguration|[microsoft.graph.networkaccess.bgpConfiguration](../resources/networkaccess-bgpconfiguration.md)|Specifies the IP address and ASN of the border gateway protocol to send traffic from a link to the edge	|
+|bgpConfiguration|[microsoft.graph.networkaccess.bgpConfiguration](../resources/networkaccess-bgpconfiguration.md)|The border gateway protocol specifies the IP address and ASN for directing traffic from a link to the edge.|
 |deviceVendor|microsoft.graph.networkaccess.deviceVendor|Specifies the vendor of the link.The possible values are: `barracudaNetworks`, `checkPoint`, `ciscoMeraki`, `citrix`, `fortinet`, `hpeAruba`, `netFoundry`, `nuage`, `openSystems`, `paloAltoNetworks`, `riverbedTechnology`, `silverPeak`, `vmWareSdWan`, `versa`, `other`.|
-|id|String|idInherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |ipAddress|String|Specifies the client IPv4 of the link	|
-|lastModifiedDateTime|DateTimeOffset|last Modified DateTime|
-|name|String|name|
-|redundancyConfiguration|[microsoft.graph.networkaccess.redundancyConfiguration](../resources/networkaccess-redundancyconfiguration.md)|Specifies the details of redundancy option for the device link|
-|tunnelConfiguration|[microsoft.graph.networkaccess.tunnelConfiguration](../resources/networkaccess-tunnelconfiguration.md)|Specifies connectivity settings (protocol, IPSec policy, and presharked key) for establishing connectivity	|
+|lastModifiedDateTime|DateTimeOffset|last modified time.|
+|name|String|Name.|
+|redundancyConfiguration|[microsoft.graph.networkaccess.redundancyConfiguration](../resources/networkaccess-redundancyconfiguration.md)|The redundancy option details for the device link are specified.|
+|tunnelConfiguration|[microsoft.graph.networkaccess.tunnelConfiguration](../resources/networkaccess-tunnelconfiguration.md)|The connectivity settings, including the protocol, IPSec policy, and preshared key, are specified for establishing connectivity.|
 |version|String|version|
 
 ## Relationships

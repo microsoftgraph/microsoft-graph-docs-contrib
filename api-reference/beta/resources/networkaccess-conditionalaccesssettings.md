@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Conditional access settings defines how you can restore users source IP and how you can use compliant network validation. Source IP restoration preserves your original user IP context for all AAD and M365 traffic, and compliant network validation ensures the user is connecting from a verified network
+Conditional access settings defines how you can restore users source IP and how you can use compliant network validation. Source IP restoration preserves your original user IP context for all AAD and M365 traffic, and compliant network validation ensures the user is connecting from a verified network.
 
 For more information about conditional access settings, see [Universal Conditional Access through Global Secure Access](https://github.com/azure/global-secure-access/how-to-target-resource) and [Source IP restoration](https://github.com/azure/global-secure-access/how-to-universal-tenant-restrictions).
 
@@ -28,8 +28,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Id Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|signalingStatus|microsoft.graph.networkaccess.status|Conditional Access policy includes zero trust network access information when SignalingStatus is enabled	.The possible values are: `enabled`, `disabled`.|
+|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|signalingStatus|microsoft.graph.networkaccess.status|When SignalingStatus is enabled, the Conditional Access policy includes zero trust network access information.The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 None.

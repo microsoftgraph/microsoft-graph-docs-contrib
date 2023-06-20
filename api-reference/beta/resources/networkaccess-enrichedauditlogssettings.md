@@ -1,6 +1,6 @@
 ---
 title: "enrichedAuditLogsSettings resource type"
-description: "Represents a configuration object that centralizes enriched audit logs settings related to speficic M365 workload"
+description: "Represents a configuration object that centralizes enriched audit logs settings related to speficic M365 workload."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a configuration object that centralizes enriched audit logs settings related to speficic M365 workload
+Represents a configuration object that centralizes enriched audit logs settings related to speficic M365 workload.
 
 ## Properties
 |Property|Type|Description|

@@ -1,6 +1,6 @@
 ---
 title: "ipSubnet resource type"
-description: "IP Subnet"
+description: "An IP subnet is a portion of an IP network that shares a common network prefix. It is a logical subdivision of an IP network created by grouping IP addresses together based on a shared network mask. The subnet mask determines the size of the subnet and helps identify the network and host portions of an IP address."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-IP Subnet
+An IP subnet is a portion of an IP network that shares a common network prefix. It is a logical subdivision of an IP network created by grouping IP addresses together based on a shared network mask. The subnet mask determines the size of the subnet and helps identify the network and host portions of an IP address.
 
 Inherits from [microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md).
 

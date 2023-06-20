@@ -1,6 +1,6 @@
 ---
 title: "forwardingRule resource type"
-description: "Forwarding rule is used to forward selective traffic to Network Access Cloud based on your needs"
+description: "A forwarding rule is utilized to selectively forward traffic to the Global Secure Access Cloud based on specific requirements or preferences."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Forwarding rule is used to forward selective traffic to Network Access Cloud based on your needs
-This is an abstract type.
+A forwarding rule is utilized to selectively forward traffic to the Global Secure Access Cloud based on specific requirements or preferences.
 
 
 Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).
@@ -30,10 +29,10 @@ Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkacc
 |Property|Type|Description|
 |:---|:---|:---|
 |action|microsoft.graph.networkaccess.forwardingRuleAction|The action applies to traffic. The possible values are: `bypass`, `forward`.|
-|destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|destinations à Maintains the list of potential destinations and destination types that the user could be accessing in the context of a network filtering policy, including IPs and FQDNs/URLs	|
-|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|name|String|name Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
-|ruleType|microsoft.graph.networkaccess.networkDestinationType|Defines the type of network destination type used by a URL filtering policy (E.g., IP, FQDN)	.The possible values are: `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`, `webCategory`.|
+|destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|Destinations maintain a list of potential destinations and destination types that the user may access within the context of a network filtering policy. This includes IP addresses and fully qualified domain names (FQDNs)/URLs.|
+|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|name|String|Name. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
+|ruleType|microsoft.graph.networkaccess.networkDestinationType|The network destination type used by a URL filtering policy is defined, which can include types such as IP (Internet Protocol) or FQDN (Fully Qualified Domain Name). The possible values are: `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`.|
 
 ## Relationships
 None.

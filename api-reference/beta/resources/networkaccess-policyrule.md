@@ -1,6 +1,6 @@
 ---
 title: "policyRule resource type"
-description: "policy Rule"
+description: "A forwarding policy rule refers to a specific rule within a forwarding policy. It defines the conditions and criteria for forwarding or routing network traffic based on various factors such as source, destination, protocol, ports, and other parameters."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,8 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-policy Rule
+A forwarding policy rule refers to a specific rule within a forwarding policy. It defines the conditions and criteria for forwarding or routing network traffic based on various factors such as source, destination, protocol, ports, and other parameters.
+
 This is an abstract type.
 
 
@@ -29,8 +30,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|id Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|name|String|name|
+|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|name|String|Name.|
 
 ## Relationships
 None.

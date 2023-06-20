@@ -1,6 +1,6 @@
 ---
 title: "branch resource type"
-description: "branch represents a location where Customer Premises Equipment (CPE) is connected to Global Secure Access service edge network"
+description: "A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access service edge network."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-branch represents a location where Customer Premises Equipment (CPE) is connected to Global Secure Access service edge network.
+A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access service edge network.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -35,17 +35,17 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---|
 |bandwidthCapacity|Int64|Determines the maximum allowed Mbps (magabits per second) bandwidth from a branch site. The possible values are:`250`,`500`,`750`,`1000`.|
 |connectivityState|microsoft.graph.networkaccess.connectivityState|Determines the branch site status.The possible values are: `pending`, `connected`, `inactive`, `error`.|
-|id|String|Identifier for the branch Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|last Modified DateTime|
-|name|String|name|
-|region|String|The location the branch site is created in	|
-|version|String|version|
+|id|String|Identifier for the branch. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|last modified time.|
+|name|String|Name.|
+|region|String|The branch site is created in the specified location.|
+
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceLinks|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Specifies each unique CPE device associated to a branch|
-|forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Specifies each forwarding profile that a branch site is associated with	|
+|deviceLinks|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Each unique CPE device associated with a branch is specified.|
+|forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Each forwarding profile associated with a branch site is specified.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

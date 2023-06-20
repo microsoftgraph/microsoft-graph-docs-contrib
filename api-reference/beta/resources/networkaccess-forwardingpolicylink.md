@@ -1,6 +1,6 @@
 ---
 title: "forwardingPolicyLink resource type"
-description: "A forwardingPolicyLink connects a forwarding Policy with a forwarding profile"
+description: "A forwardingPolicyLink establishes a connection between a forwarding policy and a forwarding profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A forwardingPolicyLink connects a forwarding Policy with a forwarding profile
+A forwardingPolicyLink establishes a connection between a forwarding policy and a forwarding profile.
 
 Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).
 
@@ -29,9 +29,9 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique ID Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |state|microsoft.graph.networkaccess.status|Status Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).The possible values are: `enabled`, `disabled`.|
-|version|String|version Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
+
 
 ## Relationships
 |Relationship|Type|Description|

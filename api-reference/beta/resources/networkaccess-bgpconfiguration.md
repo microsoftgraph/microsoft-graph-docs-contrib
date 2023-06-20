@@ -1,6 +1,6 @@
 ---
 title: "bgpConfiguration resource type"
-description: "Specifies the IP address and ASN of the border gateway protocol to send traffic from a link to the edge	"
+description: "The border gateway protocol specifies the IP address and ASN to route traffic from a link to the edge."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the IP address and ASN of the border gateway protocol to send traffic from a link to the edge	
+The border gateway protocol specifies the IP address and ASN to route traffic from a link to the edge.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|asn|Int64|Specifies the ASN of the BGP|
-|ipAddress|String|Specifies the BGP IP address of customer's on-premise VPN router configuration|
+|asn|Int64|Specifies the ASN of the BGP.|
+|ipAddress|String|Specifies the BGP IP address of customer's on-premise VPN router configuration.|
 
 ## Relationships
 None.

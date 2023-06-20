@@ -1,6 +1,6 @@
 ---
 title: "associatedDevice resource type"
-description: "A device associated with another entity (for example, a forwarding profile) is called an associated device."
+description: "A device that is linked with another entity, such as a forwarding profile, is designated as an associated device."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,15 +13,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A device associated with another entity (for example, a forwarding profile) is called an associated device.
-
+A device that is linked with another entity, such as a forwarding profile, is designated as an associated device.
 
 Inherits from [microsoft.graph.networkaccess.association](../resources/networkaccess-association.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceId|String|**TODO: Add Description**|
+|deviceId|String|Device identifier.|
 
 ## Relationships
 None.

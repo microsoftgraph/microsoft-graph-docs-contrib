@@ -1,6 +1,6 @@
 ---
 title: "forwardingOptions resource type"
-description: "Defines the traffic forwarding options for the tenant. The forwardingOptions object contains the skipDnsLookupState settings, which determine whether DNS lookup will be performed at the client, allowing M365 traffic to be forwarded directly to Azure Front Door, or if DNS resolution will be conducted at the Edge. This operation provides control over the traffic flow and DNS resolution strategy within the network infrastructure."
+description: "ForwardingOptions object includes the skipDnsLookupState settings, which determine whether DNS lookup will be performed at the client. This setting allows M365 traffic to be forwarded directly to Azure Front Door. Alternatively, DNS resolution can be conducted at the Edge. This operation provides control over the traffic flow and DNS resolution strategy within the network infrastructure."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the traffic forwarding options for the tenant. The forwardingOptions object contains the skipDnsLookupState settings, which determine whether DNS lookup will be performed at the client, allowing M365 traffic to be forwarded directly to Azure Front Door, or if DNS resolution will be conducted at the Edge. This operation provides control over the traffic flow and DNS resolution strategy within the network infrastructure
+ForwardingOptions object includes the skipDnsLookupState settings, which determine whether DNS lookup will be performed at the client. This setting allows M365 traffic to be forwarded directly to Azure Front Door. Alternatively, DNS resolution can be conducted at the Edge. This operation provides control over the traffic flow and DNS resolution strategy within the network infrastructure.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -26,8 +26,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Id, Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|skipDnsLookupState|microsoft.graph.networkaccess.status|The forwardingOptions control manages the various traffic forwarding options.The possible values are: `enabled`, `disabled`.|
+|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|skipDnsLookupState|microsoft.graph.networkaccess.status|Dns lookup options.The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 None.

@@ -1,6 +1,6 @@
 ---
 title: "ipRange resource type"
-description: "Represents a range of IP addresses or a specific IP address. It is used to define a set of network addresses or a single network endpoint within a specified range"
+description: "An IP address range represents either a specific IP address or a range of IP addresses. It is used to define a set of network addresses or a single network endpoint within a specified range."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,16 +13,15 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a range of IP addresses or a specific IP address. It is used to define a set of network addresses or a single network endpoint within a specified range
-
+An IP address range represents either a specific IP address or a range of IP addresses. It is used to define a set of network addresses or a single network endpoint within a specified range.
 
 Inherits from [microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|beginAddress|String|Specifies the starting IP address of the IP range|
-|endAddress|String|Specifies the ending IP address of the IP range|
+|beginAddress|String|Specifies the starting IP address of the IP range.|
+|endAddress|String|Specifies the ending IP address of the IP range.|
 
 ## Relationships
 None.

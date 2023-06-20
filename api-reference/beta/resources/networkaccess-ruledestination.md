@@ -1,6 +1,6 @@
 ---
 title: "ruleDestination resource type"
-description: "Maintains the list of potential destinations and destination types that the user could be accessing in the context of a network filtering policy, including IPs and FQDNs/URLs"
+description: "List of potential destinations and destination types maintained in the context of a network forwarding policy includes IPs (Internet Protocol addresses) and FQDNs/URLs (Fully Qualified Domain Names/Uniform Resource Locators)."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Maintains the list of potential destinations and destination types that the user could be accessing in the context of a network filtering policy, including IPs and FQDNs/URLs
+List of potential destinations and destination types maintained in the context of a network forwarding policy includes IPs (Internet Protocol addresses) and FQDNs/URLs (Fully Qualified Domain Names/Uniform Resource Locators).
 This is an abstract type.
 
 ## Properties

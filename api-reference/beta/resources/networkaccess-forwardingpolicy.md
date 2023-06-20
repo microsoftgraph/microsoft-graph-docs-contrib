@@ -1,6 +1,6 @@
 ---
 title: "forwardingPolicy resource type"
-description: "A forwarding policy defines what traffic is routed through Network Access Service and is added to a forwardingProfile."
+description: "A forwarding policy defines the specific traffic that is routed through the Gloval Secure Access Service. It is then added to a forwarding profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Forwarding Policy will define what traffic is routed through Network Access. In order to enact the policy, forwardingPolicies will be added to forwardingProfiles.	
+A forwarding policy defines the specific traffic that is routed through the Gloval Secure Access Service. It is then added to a forwarding profile.
 
 
 Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).
@@ -30,11 +30,11 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|Forwarding policy description Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
-|id|String|Identifier for the forwarding policy Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|name|String|Forwarding policy name Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|description|String|Forwarding policy description. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|id|String|Identifier for the forwarding policy. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|name|String|Forwarding policy name. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 |trafficForwardingType|microsoft.graph.networkaccess.trafficForwardingType|Traffic type for forwarding policy. The possible values are: `m365`, `internet`, `private`.|
-|version|String|Forwarding policy version Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|version|String|Forwarding policy version. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 
 ## Relationships
 |Relationship|Type|Description|

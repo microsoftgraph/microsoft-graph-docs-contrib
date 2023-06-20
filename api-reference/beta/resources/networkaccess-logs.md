@@ -26,7 +26,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|

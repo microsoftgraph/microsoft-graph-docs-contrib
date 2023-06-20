@@ -1,6 +1,6 @@
 ---
 title: "policy resource type"
-description: "Represents a policy and its associated rules in a traffic forwarding policy."
+description: "A traffic forwarding policy consists of a policy and its associated rules. It defines the guidelines and instructions for routing and handling network traffic."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-policy
+A traffic forwarding policy consists of a policy and its associated rules. It defines the guidelines and instructions for routing and handling network traffic.
 This is an abstract type.
 
 
@@ -31,10 +31,9 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|description|
-|id|String|Identifier for the policy Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|description|String|Description.|
+|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |name|String|Policy name|
-|version|String|Policy version number|
 
 ## Relationships
 |Relationship|Type|Description|

@@ -1,6 +1,6 @@
 ---
 title: "headers resource type"
-description: "Represents the HTTP headers included in a network request or response"
+description: "The HTTP headers represent the additional information included in a network request or response. These headers contain various attributes and values that provide additional context or instructions for the communication between the client and the server."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the HTTP headers included in a network request or response
+The HTTP headers represent the additional information included in a network request or response. These headers contain various attributes and values that provide additional context or instructions for the communication between the client and the server.
 
 ## Properties
 |Property|Type|Description|
