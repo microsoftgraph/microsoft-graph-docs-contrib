@@ -1,6 +1,6 @@
 ---
 title: "Update forwardingPolicyLink"
-description: "Update an existing forwarding policy link within a network infrastructure. This operation can be used to modify the association between a forwarding policy and a forwarding profile, either by linking or unlinking them."
+description: "Update an existing forwarding policy link to modify the association between a forwarding policy and a forwarding profile. This operation allows for linking or unlinking them as needed."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an existing forwarding policy link within a network infrastructure. This operation can be used to modify the association between a forwarding policy and a forwarding profile, either by linking or unlinking them
+Update an existing forwarding policy link to modify the association between a forwarding policy and a forwarding profile. This operation allows for linking or unlinking them as needed.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +47,7 @@ PATCH /networkAccess/forwardingProfiles/{forwardingProfileId}/policies/{forwardi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|microsoft.graph.networkaccess.status|Represents the current state or status of a forwarding policy link within a network infrastructure. It indicates whether the link between a forwarding policy and a forwarding profile is active or inactive., Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). The possible values are: `enabled`, `disabled`. Required.|
+|state|microsoft.graph.networkaccess.status|Represents the current state or status of a forwarding policy link. It indicates whether the link between a forwarding policy and a forwarding profile is active or inactive., Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). The possible values are: `enabled`, `disabled`. Required.|
 
 
 ## Response

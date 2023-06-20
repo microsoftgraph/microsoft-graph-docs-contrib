@@ -1,6 +1,6 @@
 ---
 title: "List forwardingRules"
-description: "Return a list of forwarding rules associated with a specific forwarding policy within a tenant"
+description: "Return a list of forwarding rules associated with a specific forwarding policy within a tenant."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Return a list of forwarding rules associated with a specific forwarding policy within a tenant
+Return a list of forwarding rules associated with a specific forwarding policy within a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

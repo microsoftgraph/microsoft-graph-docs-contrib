@@ -1,6 +1,6 @@
 ---
 title: "Create policyLink"
-description: "Create a new policy Link object, this operation can be used to modify the association between a forwarding policy and a forwarding profile"
+description: "Create a new policy link object to modify the association between a forwarding policy and a forwarding profile. This operation enables the adjustment of the association between the two entities within the tenant."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new policy Link object, this operation can be used to modify the association between a forwarding policy and a forwarding profile
+Create a new policy link object to modify the association between a forwarding policy and a forwarding profile. This operation enables the adjustment of the association between the two entities within the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -65,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{forwardingProfileId}/policies
+POST /networkAccess/forwardingProfiles/{forwardingProfileId}/policies
 Content-Type: application/json
 
 {

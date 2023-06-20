@@ -1,6 +1,6 @@
 ---
 title: "Get tenantStatus"
-description: "Retreive the onboarding status of a specific tenant"
+description: "Retrieve the onboarding status of a specific tenant."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retreive the onboarding status of a specific tenant
+Retrieve the onboarding status of a specific tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

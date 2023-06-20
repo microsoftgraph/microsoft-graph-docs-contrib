@@ -1,6 +1,6 @@
 ---
 title: "Update branch and forwardingProfile"
-description: "Attaches a forwarding profile to a specific branch, establishing the configuration for routing and forwarding network traffic"
+description: "Attaching a forwarding profile to a specific branch establishes the configuration for routing and forwarding network traffic."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Attaches a forwarding profile to a specific branch, establishing the configuration for routing and forwarding network traffic
+Attaching a forwarding profile to a specific branch establishes the configuration for routing and forwarding network traffic.
 
 דייBy attaching a forwarding profile to a branch, developers can define how network traffic should be routed and forwarded within that specific branch. The forwarding profile allows customization of traffic handling based on various criteria such as source, destination, protocol, or port.
 
@@ -50,7 +50,7 @@ You can specify the following properties when creating a **forwardingProfile**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|associations|[microsoft.graph.networkaccess.association](../resources/networkaccess-association.md) collection|The forwarding profile collection represents a group or collection of multiple forwarding profiles. Required.|
+|associations|[microsoft.graph.networkaccess.association](../resources/networkaccess-association.md) collection|The forwarding profile collection represents a group of multiple forwarding profiles. Required.|
 
 
 

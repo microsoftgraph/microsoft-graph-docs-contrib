@@ -1,6 +1,6 @@
 ---
 title: "Update forwardingProfile"
-description: "update an existing forwarding profile."
+description: "Update an existing forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-update an existing forwarding profile
+Update an existing forwarding profile.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -65,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{forwardingProfileId}
+PATCH /networkAccess/forwardingProfiles/{forwardingProfileId}
 Content-Type: application/json
 
 {

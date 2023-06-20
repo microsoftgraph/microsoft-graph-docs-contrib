@@ -1,6 +1,6 @@
 ---
 title: "List deviceLinks"
-description: "Allows developers to retrieve a list of device links associated with a specific branch."
+description: "Retrieve a list of device links associated with a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allows developers to retrieve a list of device links associated with a specific branch
+Retrieve a list of device links associated with a specific branch.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

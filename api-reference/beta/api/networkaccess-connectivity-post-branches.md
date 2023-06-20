@@ -1,6 +1,6 @@
 ---
 title: "Create branch"
-description: "Create a new branch site."
+description: "Create a new branch."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new branch site.
+Create a new branch.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +51,7 @@ You can specify the following properties when creating a **branchSite**.
 |name|String|The name of the branch.  Required.|
 |country|String|The country the branch is created in. Required.|
 |region|String|The location the branch is created in. Required.|
-|bandwidthCapacity|Int64|Determines the maximum allowed Mbps (magabits per second) bandwidth from a branch. Required.|
+|bandwidthCapacity|Int64|Determines the maximum allowed Mbps (megabits per second) bandwidth from a branch. Required.|
 
 
 

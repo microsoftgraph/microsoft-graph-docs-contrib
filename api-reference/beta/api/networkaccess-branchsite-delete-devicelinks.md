@@ -1,6 +1,6 @@
 ---
 title: "Delete deviceLink"
-description: "Deletes the customer premises equipment (CPE) device link that is uniquely associated with the specified branch"
+description: "Removes the link between the branch and the CPE device, effectively removing the connection and associated configuration between them."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes the customer premises equipment (CPE) device link that is uniquely associated with the specified branch
+Removes the link between the branch and the CPE device, effectively removing the connection and associated configuration between them.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

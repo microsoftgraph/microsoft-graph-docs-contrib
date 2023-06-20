@@ -1,6 +1,6 @@
 ---
 title: "List forwardingPolicies"
-description: "Retrieve a list of forwarding policies associated with a specific forwarding profile"
+description: "Retrieve a list of forwarding policies associated with a specific forwarding profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of forwarding policies associated with a specific forwarding profile
+Retrieve a list of forwarding policies associated with a specific forwarding profile.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

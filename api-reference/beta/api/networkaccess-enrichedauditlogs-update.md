@@ -1,6 +1,6 @@
 ---
 title: "Update enrichedAuditLogs"
-description: "Update the settings for the enriched audit logs workloads. By sending a PATCH request to the specified endpoint with the updated settings in the request body, developers can control the enrichment feature for each partner workload (SharePoint, Teams, and Exchange)."
+description: "Update the settings for the enriched audit logs workloads to control the enrichment feature for each partner workload, such as SharePoint, Teams, and Exchange."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the settings for the enriched audit logs workloads. By sending a PATCH request to the specified endpoint with the updated settings in the request body, developers can control the enrichment feature for each partner workload (SharePoint, Teams, and Exchange)
+Update the settings for the enriched audit logs workloads to control the enrichment feature for each partner workload, such as SharePoint, Teams, and Exchange.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,9 +47,9 @@ PATCH /networkAccess/settings/enrichedAuditLogs
 
 |Property|Type|Description|
 |:---|:---|:---|
-|sharepoint|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Sharepoint enrichment log status Optional.|
-|teams|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Teams enrichment log status Optional.|
-|exchange|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Exchange enrichment log status Optional.|
+|sharepoint|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Sharepoint enrichment log status. Optional.|
+|teams|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Teams enrichment log status. Optional.|
+|exchange|[microsoft.graph.networkaccess.enrichedAuditLogsSettings](../resources/networkaccess-enrichedauditlogssettings.md)|Exchange enrichment log status. Optional.|
 
 
 

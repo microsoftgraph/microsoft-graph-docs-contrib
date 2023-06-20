@@ -1,6 +1,6 @@
 ---
 title: "List logs"
-description: "Retrieve a list of traffic log events."
+description: "Retrieve specific traffic log entries based on specified criteria."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of traffic log events.
+Retrieve specific traffic log entries based on specified criteria.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

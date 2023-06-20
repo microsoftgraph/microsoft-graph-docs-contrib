@@ -1,6 +1,6 @@
 ---
 title: "Get crossTenantAccessSettings"
-description: "Retrieve the cross-tenant access settings (network packet tagging to enforce Tenant Restrictions Policies (TRv2 Policies) that prevent data exfiltration to external tenants)."
+description: "Retrieve the cross-tenant access settings, which include network packet tagging to enforce Tenant Restrictions Policies (TRv2 Policies) aimed at preventing data exfiltration to external tenants."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the cross-tenant access settings (network packet tagging to enforce Tenant Restrictions Policies (TRv2 Policies) that prevent data exfiltration to external tenants)
+Retrieve the cross-tenant access settings, which include network packet tagging to enforce Tenant Restrictions Policies (TRv2 Policies) aimed at preventing data exfiltration to external tenants.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/settings/crossTenantAccess
+GET /networkAccess/settings/crossTenantAccess
 ```
 
 

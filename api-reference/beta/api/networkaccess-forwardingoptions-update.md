@@ -1,6 +1,6 @@
 ---
 title: "Update forwardingOptions"
-description: "Retrieve the forwarding options for the tenant."
+description: "Update the forwarding options for the tenant, with a specific focus on the "skipDnsLookupState" flag. This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 (M365) traffic to be forwarded directly to the Front Door using the client-resolved destination."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the conditional access signaling for source IP restoration and Connectivity through NaaS
+the forwarding options for the tenant, with a specific focus on the "skipDnsLookupState" flag. This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 (M365) traffic to be forwarded directly to the Front Door using the client-resolved destination.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +47,7 @@ PATCH /networkAccess/settings/forwardingOptions
 
 |Property|Type|Description|
 |:---|:---|:---|
-|signalingStatus|microsoft.graph.networkaccess.status|"skipDnsLookupState" flag is a boolean value that indicates whether DNS lookup should be performed at the client-side. When enabled (true), DNS lookup is skipped, and M365 traffic is directly forwarded to the Front Door using the client-resolved destination IP status. The possible values are: `enabled`, `disabled`. Required.|
+|signalingStatus|microsoft.graph.networkaccess.status|The "skipDnsLookupState" flag is a boolean value that determines whether DNS lookup should be performed at the client-side. When this flag is enabled (true), DNS lookup is skipped, and Microsoft 365 (M365) traffic is directly forwarded to the Front Door using the client-resolved destination IP address. The possible values are: `enabled`, `disabled`. Required.|
 
 
 

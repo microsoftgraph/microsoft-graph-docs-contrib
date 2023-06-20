@@ -1,6 +1,6 @@
 ---
 title: "Create a new branch and assosicate a forwarding Profile"
-description: "create a new branch and associate it with a forwarding profile"
+description: "Create a new branch and associate a forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new forwardingProfile object.
+Create a new branch and associate a forwarding profile.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,10 +49,10 @@ You can specify the following properties when creating a **forwardingProfile**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The name of the branch Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Required.|
-|description|String|Description Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Optional.|
-|state|microsoft.graph.networkaccess.status|Status Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). The possible values are: `enabled`, `disabled`. Required.|
-|associations|[microsoft.graph.networkaccess.association](../resources/networkaccess-association.md) collection|The forwarding profile collection represents a group or collection of multiple forwarding profiles. Required.|
+|name|String|Name of the branch. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Required.|
+|description|String|Description. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Optional.|
+|state|microsoft.graph.networkaccess.status|Status. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). The possible values are: `enabled`, `disabled`. Required.|
+|associations|[microsoft.graph.networkaccess.association](../resources/networkaccess-association.md) collection|The forwarding profile collection represents a group of multiple forwarding profiles. Required.|
 
 
 

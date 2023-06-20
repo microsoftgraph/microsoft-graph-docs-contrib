@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an existing forwarding rule within a forwarding policy
+Update an existing forwarding rule within a forwarding policy.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,7 +62,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/NetworkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
+PATCH /networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
 ```
 
 

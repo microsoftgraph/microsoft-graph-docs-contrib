@@ -1,6 +1,6 @@
 ---
 title: "Update branch"
-description: "Update the configuration or properties of a specific branch"
+description: "Update the configuration or properties of a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the configuration or properties of a specific branch
+Update the configuration or properties of a specific branch.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,10 +47,10 @@ PATCH /networkAccess/branches/{branchSiteId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The name of the branch site. Required.|
-|country|String|The country the branch site is created in. Required.|
-|region|String|The location the branch site is created in. Required.|
-|bandwidthCapacity|Int64|Determines the maximum allowed Mbps (magabits per second) bandwidth from a branch site. Required.|
+|name|String|Name of the branch. Required.|
+|country|String|Country the branch is created in. Required.|
+|region|String|Location the branch  is created in. Required.|
+|bandwidthCapacity|Int64|The maximum allowed Mbps (megabits per second) bandwidth for a branch. Required.|
 
 ## Response
 
