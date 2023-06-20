@@ -61,7 +61,7 @@ The following is a JSON representation of the resource.
   "remediationStatusDetails": "String",
   "roles": ["String"],
   "tags": ["String"],
-  "url": "Uri", // TODO(rborysowski): ??
+  "url": "String",
   "verdict": "String"
 }
 ```

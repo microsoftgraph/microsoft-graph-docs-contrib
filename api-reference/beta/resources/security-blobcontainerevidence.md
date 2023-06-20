@@ -28,7 +28,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |roles|[microsoft.graph.security.evidenceRole](../resources/security-alertevidence.md#evidencerole-values) collection|One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role `Attacker`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 |storageResource|[microsoft.graph.security.azureResourceEvidence](./security-azureresourceevidence.md)|The storage which the blob container belongs to.|
 |tags|String collection|Array of custom tags associated with an evidence instance. For example, to denote a group of devices or high value assets. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
-|url|[microsoft.graph.security.Uri](./securityuri) TODO(rborysowski): where do I get this URI from??|The full URL representation of the blob container.|
+|url|String|The full URL representation of the blob container.|
 |verdict|[microsoft.graph.security.evidenceVerdict](../resources/security-alertevidence.md#evidenceverdict-values)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 
 ## Relationships
@@ -55,7 +55,7 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.security.azureResourceEvidence"
   },
   "tags": ["String"],
-  "url": "Uri", // TODO(rborysowski):???
+  "url": "String",
   "verdict": "String"
 }
 ```
