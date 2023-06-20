@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get enrichedAuditLogs](../api/networkaccess-enrichedauditlogs-get.md)|[microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) object.|
+|[Get enrichedAuditLogs](../api/networkaccess-settings-list-enrichedauditlogs.md)|[microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) object.|
 |[Update enrichedAuditLogs](../api/networkaccess-enrichedauditlogs-update.md)|[microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md)|Update the properties of a [microsoft.graph.networkaccess.enrichedAuditLogs](../resources/networkaccess-enrichedauditlogs.md) object.|
 
 ## Properties
