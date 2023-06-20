@@ -1,6 +1,6 @@
 ---
 title: "stringKeyObjectValuePair resource type"
-description: "Represents a key-value pair where the key is a string and the value is an arbitrary JSON object. This is an OData open type that expects to have a property named `value` that is a valid JSON object."
+description: "Represents a key."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
@@ -11,13 +11,12 @@ ms.prod: "applications"
 
 Namespace: microsoft.graph
 
-Represents a key-value pair where the key is a string and the value is an arbitrary JSON object. This is an OData open type that expects to have a property named `value` that is a valid JSON object.
+Represents a key. This resource is an open type that allows other properties to be passed in.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|key|String|Key.|
-|value|Json|Arbitrary JSON object.|
+| Property | Type   | Description |
+|:---------|:-------|:------------|
+| key      | String | Key.        |
 
 ## JSON representation
 
@@ -33,12 +32,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "key": "String",
-  "value": {
-    "@odata.type": "microsoft.graph.Json"
-  }
+  "key": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
