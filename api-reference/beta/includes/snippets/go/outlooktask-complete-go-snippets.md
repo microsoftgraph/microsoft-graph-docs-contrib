@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -23,7 +23,7 @@ configuration := &graphconfig.ItemOutlookTaskItemCompleteRequestBuilderPostReque
 	Headers: headers,
 }
 
-result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").Complete().Post(context.Background(), configuration)
+result, err := graphClient.Me().Outlook().Tasks().ByTaskId("outlookTask-id").Complete().Post(context.Background(), configuration)
 
 
 ```

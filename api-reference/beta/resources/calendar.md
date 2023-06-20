@@ -30,7 +30,7 @@ Represents a container for [event](event.md) resources. It can be a calendar for
 |[Get calendar](../api/calendar-get.md) | [calendar](calendar.md) |Get the properties and relationships of a **calendar** object. The calendar can be one for a user, or the default calendar of a Microsoft 365 group. |
 |[Update](../api/calendar-update.md) | [calendar](calendar.md)  |Update the properties of a **calendar** object. The calendar can be one for a user, or the default calendar of a Microsoft 365 group. |
 |[Delete](../api/calendar-delete.md) | None |Delete calendar object. |
-|[List calendarView](../api/calendar-list-calendarview.md) |[event](event.md) collection| Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar `(../me/calendarview)` or from a specified calendar.|
+|[List calendarView](../api/calendar-list-calendarview.md) |[event](event.md) collection| Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar `(../me/calendarView)` or from a specified calendar.|
 |[List events](../api/calendar-list-events.md) |[event](event.md) collection| Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.|
 |[Create event](../api/calendar-post-events.md) |[event](event.md)| Create a new event in the default or specified calendar.|
 |[getSchedule](../api/calendar-getschedule.md) |[scheduleInformation](scheduleinformation.md) collection|Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period. |

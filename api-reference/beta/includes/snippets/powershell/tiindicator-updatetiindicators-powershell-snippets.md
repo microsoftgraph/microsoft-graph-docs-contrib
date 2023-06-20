@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	Value = @(
+	value = @(
 		@{
-			Id = "c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4"
-			AdditionalInformation = "mytest"
+			id = "c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4"
+			additionalInformation = "mytest"
 		}
 		@{
-			Id = "e58c072b-c9bb-a5c4-34ce-eb69af44fb1e"
-			AdditionalInformation = "test again"
+			id = "e58c072b-c9bb-a5c4-34ce-eb69af44fb1e"
+			additionalInformation = "test again"
 		}
 	)
 }

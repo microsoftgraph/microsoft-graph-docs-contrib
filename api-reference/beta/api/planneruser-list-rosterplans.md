@@ -1,6 +1,6 @@
 ---
 title: "List rosterPlans"
-description: "Get the plannerPlan resources from the rosterPlans navigation property."
+description: "Get the list of plannerPlans that are contained by the plannerRosters of which the user is a member."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -34,11 +34,8 @@ GET /users/{usersId}/planner/rosterPlans
 ```
 
 ## Optional query parameters
-This method only supports following OData query parameters:
 
-- $select
-
-For general information, see [OData query parameters](/graph/query-parameters).
+This method only supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -56,6 +53,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+The following is an example of the request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -70,30 +69,33 @@ GET https://graph.microsoft.com/beta/users/{usersId}/planner/rosterPlans
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-plannerplan-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-plannerplan-2-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-plannerplan-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-plannerplan-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-plannerplan-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-plannerplan-2-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-plannerplan-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-plannerplan-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-plannerplan-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -123,4 +125,3 @@ Content-Type: application/json
   ]
 }
 ```
-

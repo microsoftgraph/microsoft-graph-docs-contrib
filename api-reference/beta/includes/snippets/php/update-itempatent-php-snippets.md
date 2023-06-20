@@ -16,7 +16,7 @@ $requestBody->setWebUrl('https://patents.gov/3954432633');
 
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->profile()->patentsById('itemPatent-id')->patch($requestBody);
+$result = $graphServiceClient->users()->byUserId('user-id')->profile()->patents()->byPatentId('itemPatent-id')->patch($requestBody);
 
 
 ```

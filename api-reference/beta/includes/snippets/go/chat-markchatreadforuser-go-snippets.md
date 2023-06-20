@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -25,7 +25,7 @@ additionalData := map[string]interface{}{
 user.SetAdditionalData(additionalData)
 requestBody.SetUser(user)
 
-graphClient.ChatsById("chat-id").MarkChatReadForUser().Post(context.Background(), requestBody, nil)
+graphClient.Chats().ByChatId("chat-id").MarkChatReadForUser().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -22,7 +22,7 @@ configuration := &graphconfig.IdentityConditionalAccessTemplateItemRequestBuilde
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().ConditionalAccess().TemplatesById("conditionalAccessTemplate-id").Get(context.Background(), configuration)
+result, err := graphClient.Identity().ConditionalAccess().Templates().ByTemplateId("conditionalAccessTemplate-id").Get(context.Background(), configuration)
 
 
 ```

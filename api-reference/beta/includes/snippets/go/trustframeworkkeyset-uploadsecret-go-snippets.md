@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -25,7 +25,7 @@ requestBody.SetNbf(&nbf)
 exp := int64(1508973711)
 requestBody.SetExp(&exp) 
 
-result, err := graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").UploadSecret().Post(context.Background(), requestBody, nil)
+result, err := graphClient.TrustFramework().KeySets().ByKeySetId("trustFrameworkKeySet-id").UploadSecret().Post(context.Background(), requestBody, nil)
 
 
 ```

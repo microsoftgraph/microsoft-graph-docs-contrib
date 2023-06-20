@@ -11,14 +11,14 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new AppManagementPolicie();
 $additionalData = [
-'@odata.id' => 'https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}', 
+		'@odata.id' => 'https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->appManagementPoliciesById('appManagementPolicy-id')->post($requestBody);
+$graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->appManagementPolicies()->byAppManagementPolicieId('appManagementPolicy-id')->post($requestBody);
 
 
 ```

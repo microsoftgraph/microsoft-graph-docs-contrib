@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	DisplayName = "testprogram3"
-	Description = "test description"
+	displayName = "testprogram3"
+	description = "test description"
 }
 
 New-MgProgram -BodyParameter $params

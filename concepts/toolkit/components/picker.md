@@ -103,11 +103,11 @@ The control exposes the following variables that can be localized. See how you s
 
 | String name        | Default value     |
 | ------------------ | ----------------- |
-| comboboxPlaceholder   | 'Select an item' |
+| comboboxPlaceholder   | `Select an item` |
 
 ## CSS custom properties
 
-The `mgt-picker` component defines the following CSS custom properties.
+The `mgt-picker` component defines the following CSS custom properties for you to provide overrides with. 
 
 ```html
 <mgt-picker class="picker" resource="me/todo/lists" scopes="tasks.read, tasks.readwrite" key-name="displayName"></mgt-picker>
@@ -116,5 +116,6 @@ The `mgt-picker` component defines the following CSS custom properties.
 ```css
 mgt-picker {
   --picker-background-color: grey;
+  --picker-list-max-height: 200px;
 }
 ```

@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 $params = @{
-	AuthoringLanguages = @(
+	authoringLanguages = @(
 		@{
-			Locale = "en-US"
+			locale = "en-US"
 		}
 		@{
-			Locale = "es-MX"
+			locale = "es-MX"
 		}
 	)
-	DefaultRegionalFormat = @{
-		Locale = "en-US"
+	defaultRegionalFormat = @{
+		locale = "en-US"
 	}
 }
 

@@ -202,12 +202,12 @@ The `mgt-tasks` component doesn't cache any data.
 
 The control exposes the following variables that can be localized. For details about localization, see [Localizing components](../customize-components/localization.md).
 
-| String name           | Default value     |
-| --------------------- | ----------------- |
-| removeTaskSubtitle    | Delete Task       |
-| cancelNewTaskSubtitle | Cancel            |
-| newTaskPlaceholder    | Adding a task...  |
-| addTaskButtonSubtitle | Add               |
-| due                   | Due               |
-| addTaskDate           | Add the task date |
-| assign                | Assign            |
+| String name           | Default value       |
+| --------------------- | ------------------- |
+| removeTaskSubtitle    | `Delete Task`       |
+| cancelNewTaskSubtitle | `Cancel`            |
+| newTaskPlaceholder    | `Adding a task...`  |
+| addTaskButtonSubtitle | `Add`               |
+| due                   | `Due`               |
+| addTaskDate           | `Add the task date` |
+| assign                | `Assign`            |

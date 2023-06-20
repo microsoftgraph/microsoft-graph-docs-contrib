@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->chatsById('chat-id')->installedAppsById('teamsAppInstallation-id')->get();
+$result = $graphServiceClient->chats()->byChatId('chat-id')->installedApps()->byInstalledAppId('teamsAppInstallation-id')->get();
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/beta/identityProviders/{i
 
 
 
-$graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->identityProviders()->ref()->post($requestBody);
+$graphServiceClient->identity()->b2cUserFlows()->byB2cUserFlowId('b2cIdentityUserFlow-id')->identityProviders()->ref()->post($requestBody);
 
 
 ```

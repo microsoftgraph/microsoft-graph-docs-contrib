@@ -201,10 +201,10 @@ The control exposes the following variables that can be localized. For details a
 
 | String name          | Default value                 |
 | -------------------- | ----------------------------- |
-| inputPlaceholderText | Start typing a name         |
-| noResultsFound       | We didn't find any matches. |
-| loadingMessage       | Loading...                  |
-| suggestedContact     | suggested contact           |
-| suggestedContacts    | suggested contacts          |
-| selected             | selected                    |
-| removeSelectedItem   | remove selected item        |
+| inputPlaceholderText | `Start typing a name`         |
+| noResultsFound       | `We didn't find any matches.` |
+| loadingMessage       | `Loading...`                  |
+| suggestedContact     | `suggested contact`           |
+| suggestedContacts    | `suggested contacts`          |
+| selected             | `selected`                    |
+| removeSelectedItem   | `remove selected item`        |

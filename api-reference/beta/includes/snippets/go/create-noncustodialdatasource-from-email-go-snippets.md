@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -25,7 +25,7 @@ additionalData := map[string]interface{}{
 dataSource.SetAdditionalData(additionalData)
 requestBody.SetDataSource(dataSource)
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").NoncustodialDataSources().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").NoncustodialDataSources().Post(context.Background(), requestBody, nil)
 
 
 ```

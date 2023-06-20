@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new NamedLocationsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new NamedLocationsRequestBuilderGetQueryParameters();
+$queryParameters = NamedLocationsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "microsoft.graph.countryNamedLocation/countriesAndRegions/any";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->get($requestConfiguration);
+$result = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->get($requestConfiguration);
 
 
 ```

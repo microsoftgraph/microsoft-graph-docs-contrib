@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -46,7 +46,7 @@ extensions := []graphmodels.Extensionable {
 post.SetExtensions(extensions)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply().Post(context.Background(), requestBody, nil)
+graphClient.Groups().ByGroupId("group-id").Threads().ByThreadId("conversationThread-id").Posts().ByPostId("post-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MessagesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new MessagesRequestBuilderGetQueryParameters();
+$queryParameters = MessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "Subject eq 'welcome' and importance eq 'normal'";
 $queryParameters->orderby = ["subject","importance","receivedDateTime desc"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->messages()->get($requestConfiguration);
+$result = $graphServiceClient->me()->messages()->get($requestConfiguration);
 
 
 ```
