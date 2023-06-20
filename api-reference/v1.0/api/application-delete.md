@@ -23,10 +23,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request
-Replace `{applicationObjectId}` with the **id** for the application object, also referred to as the **Object ID** in the Azure portal.
+
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal. Replace `{applicationObjectId}` with the **id** for the application object.
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{applicationObjectId}
+DELETE /applications(appId='{appId}')
 ```
 
 ## Request headers
@@ -59,24 +62,28 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-application-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-application-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-application-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-application-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-application-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-application-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
