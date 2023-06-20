@@ -77,7 +77,7 @@ To track changes in the **todoTask** resources in a **todoTaskList** since the l
 ### HTTP Request
 <!-- {
   "blockType": "request",
-  "name": "get_swapshiftschangerequest_2"
+  "name": "get_todotask_delta"
 }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=w0vf2jHg2mBXU-I2AK0FSWl0dopNtG8u5YoM

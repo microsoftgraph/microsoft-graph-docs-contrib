@@ -142,7 +142,7 @@ If you want to link an aspect that is not represented by Microsoft Graph, or you
 
 <!-- {
   "blockType": "request",
-  "name": "teamworksendactivitynotificationtorecipients1"
+  "name": "teamworksendactivitynotificationtorecipients2"
 }-->
 
 ``` http
