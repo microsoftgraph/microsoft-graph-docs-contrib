@@ -13691,6 +13691,14 @@
         {
           "Id": "7486594e-94b8-4472-9125-e21cab4bcee9",
           "ApiChange": "Property",
+          "ChangedApiName": "lockedOut",
+          "ChangeType": "Addition",
+          "Description": "Added the **lockedOut** property to the [licenseUnitsDetail](https://learn.microsoft.com/en-us/graph/api/resources/licenseUnitsDetail?view=graph-rest-beta) resource.",
+          "Target": "licenseUnitsDetail"
+        },
+        {
+          "Id": "7486594e-94b8-4472-9125-e21cab4bcee9",
+          "ApiChange": "Property",
           "ChangedApiName": "accountId",
           "ChangeType": "Addition",
           "Description": "Added the **accountId** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-beta) resource.",
