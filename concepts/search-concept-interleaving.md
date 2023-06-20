@@ -132,7 +132,117 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Search with bookmark and acronym combination
+### Example 2: Search with SharePoint file types and specific connector combination
+
+#### Request
+
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "listItem",
+        "site",
+        "externalItem"
+      ],
+      "query": {
+        "queryString": "contoso"
+      },
+      "contentSources":[
+        "/external/connections/*"
+      ],
+      "from": 0,
+      "size": 25
+    }
+  ]
+}
+```
+
+#### Response
+
+The following is an example of interleaving response.
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
+  "value": [
+    {
+      "searchTerms": [
+        "contoso"
+      ],
+      "hitsContainers": [
+        {
+          "total": 5,
+          "moreResultsAvailable": false,
+          "hits": [
+            {
+              "hitId": "adce5789-c324-485a-a8bf-66bb809527ff",
+              "rank": 1,
+              "summary": "Test listItem 1",
+              "resource": {
+                "@odata.type": "#microsoft.graph.listItem",
+                "createdDateTime": "2019-10-07T10:00:08Z",
+                "lastModifiedDateTime": "2019-10-07T10:00:11Z",
+                "title": "Here is a summary of your messages from last week -   New Feature: Live captions in English-US a"
+              }
+            },
+            {
+              "hitId": "microsoft.sharepoint.com,9fb3f597-167e-4c3d-b5e6-1ddc18d22d48,c53cd46e-9033-4b42-af94-0ad76ab75fd0",
+              "rank": 2,
+              "summary": "Test site",
+              "resource": {
+                "@odata.type": "#microsoft.graph.site",
+                "createdDateTime": "2019-10-07T10:00:08Z",
+                "lastModifiedDateTime": "2019-10-07T10:00:11Z",
+                "title": "Test site summary"
+              }
+            },
+            {
+              "hitId": "adce5789-c324-485a-a8bf-66bb809527ff=",
+              "rank": 3,
+              "summary": "Test externalItem",
+              "contentSource": "MicrosoftPowerBI",
+              "resource": {
+                "@odata.type": "#microsoft.graph.externalItem",
+                "title": "Test externalItem summary",
+              }
+            },
+            {
+              "hitId": "adce5789-c324-485a-a8bf-66bb809527ff=",
+              "rank": 4,
+              "summary": "Learning externalItem",
+              "contentSource": "Learning",
+              "resource": {
+                "@odata.type": "#microsoft.graph.externalItem",
+                "title": "Test externalItem summary",
+              }
+            },
+            {
+              "hitId": "ad60906b-1317-495c-b566-7b8ce1be5555",
+              "rank": 5,
+              "summary": "Test listItem 2",
+              "resource": {
+                "@odata.type": "#microsoft.graph.listItem",
+                "createdDateTime": "2019-10-07T10:00:08Z",
+                "lastModifiedDateTime": "2019-10-07T10:00:11Z",
+                "title": "Test listItem summary 2"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Example 3: Search with bookmark and acronym combination
 
 #### Request
 
@@ -219,7 +329,6 @@ Content-type: application/json
 - Speller modification is not supported, speller suggestion can be used as normal.
 - Result template is not supported.
 - Aggregation limitation, if same aggregated field both exist in Sharepoint file types (site, drive, driveItem, list, listItem) and connectors. Aggregation result will show two same aggregation buckets with same name, suggest to rename one of its name to bypass the limitation.
-- Specifying a single connection in content source is not supported, so please only use "/external/connections/*" in contentSource. Note that there is a plan to change the behavior to allow single connection interleaving search in the future.
 
 ## Next steps
 
