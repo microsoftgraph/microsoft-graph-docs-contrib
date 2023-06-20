@@ -1698,6 +1698,8 @@ items:
             href: api/printershare-post-allowedgroups.md
           - name: Delete allowed group
             href: api/printershare-delete-allowedgroup.md
+          - name: List recent shares
+            href: api/print-list-recentprintershares.md
         - name: Print task definition
           href: resources/printtaskdefinition.md
           items:
@@ -6109,7 +6111,7 @@ items:
                 href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-            - name: Text Message policy
+            - name: SMS policy
               href: resources/smsAuthenticationMethodConfiguration.md
               items:
               - name: Get
