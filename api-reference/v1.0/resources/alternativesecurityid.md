@@ -23,6 +23,8 @@ For internal use only. This complex type will be deprecated in the future.
 
 ## JSON representation
 
+The following is a JSON representation of the resource.
+
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.alternativeSecurityId"
