@@ -71,7 +71,6 @@ POST /beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
