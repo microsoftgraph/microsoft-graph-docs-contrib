@@ -3,37 +3,45 @@
     {
       "ChangeList": [
         {
-          "Id": "d3f27c9e-689d-45c1-99f0-659827b1a885",
+          "Id": "088a4dd9-4a4e-476a-a3eb-50b8746acc3b",
           "ApiChange": "Resource",
           "ChangedApiName": "serviceLevelAgreementAttainment",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceLevelAgreementAttainment](https://docs.microsoft.com/en-us/graph/api/resources/serviceLevelAgreementAttainment?view=graph-rest-beta) resource",
+          "Description": "Added the [serviceLevelAgreementAttainment](https://learn.microsoft.com/en-us/graph/api/resources/serviceLevelAgreementAttainment?view=graph-rest-beta) resource type.",
           "Target": "serviceLevelAgreementAttainment"
         },
         {
-          "Id": "d3f27c9e-689d-45c1-99f0-659827b1a885",
+          "Id": "088a4dd9-4a4e-476a-a3eb-50b8746acc3b",
           "ApiChange": "Resource",
           "ChangedApiName": "azureADAuthentication",
           "ChangeType": "Addition",
-          "Description": "Added the [azureADAuthentication](https://docs.microsoft.com/en-us/graph/api/resources/azureADAuthentication?view=graph-rest-beta) resource",
+          "Description": "Added the [azureADAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/azureADAuthentication?view=graph-rest-beta) resource",
           "Target": "azureADAuthentication"
         },
         {
-          "Id": "d3f27c9e-689d-45c1-99f0-659827b1a885",
+          "Id": "088a4dd9-4a4e-476a-a3eb-50b8746acc3b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sla",
+          "ChangeType": "Addition",
+          "Description": "Added the **sla** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "088a4dd9-4a4e-476a-a3eb-50b8746acc3b",
           "ApiChange": "Resource",
           "ChangedApiName": "serviceLevelAgreementRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceLevelAgreementRoot](https://docs.microsoft.com/en-us/graph/api/resources/serviceLevelAgreementRoot?view=graph-rest-beta) resource",
+          "Description": "Added the [serviceLevelAgreementRoot](https://learn.microsoft.com/en-us/graph/api/resources/serviceLevelAgreementRoot?view=graph-rest-beta) resource",
           "Target": "serviceLevelAgreementRoot"
         }
       ],
-      "Id": "d3f27c9e-689d-45c1-99f0-659827b1a885",
+      "Id": "088a4dd9-4a4e-476a-a3eb-50b8746acc3b",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-06-30T18:51:54.744953Z",
+      "CreatedDateTime": "2023-06-20T18:06:59.7302599Z",
       "WorkloadArea": "Reports and audit",
       "SubArea": "Identity and access reports"
-    },
+  },
   {
     "ChangeList": [
       {
