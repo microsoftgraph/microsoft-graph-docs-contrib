@@ -37,8 +37,6 @@ To make use of the disambiguation feature when using standard HTML and JavaScrip
 ```
 
 > Note: the `import` of `mgt-components` must use a [dynamic import](#dynamic-imports-aka-lazy-loading) to ensure that the disambiguation is applied before the components are imported.
-
-
 ## Usage in React
 
 To make use of disambiguation in a React application you should call `customElementHelper.withDisambiguation()` before loading and rendering your root component. To help with lazy loading in this secnario React provides the `lazy` function and `Suspense` component in React version 16.6 and up. Because the disambiguation value is only used when rendering the web component there is no change to the way a given component is referenced in React code.
