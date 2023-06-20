@@ -80,7 +80,7 @@ The following example shows how to send an activity feed notification to multipl
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "teamworksendactivitynotificationtorecipients1"
+  "name": "teamworksendactivitynotificationtorecipients_v1_e1"
 }-->
 
 ``` http
@@ -142,7 +142,7 @@ If you want to link an aspect that is not represented by Microsoft Graph, or you
 
 <!-- {
   "blockType": "request",
-  "name": "teamworksendactivitynotificationtorecipients1"
+  "name": "teamworksendactivitynotificationtorecipients_notifymultipleusers_v1_e2"
 }-->
 
 ``` http

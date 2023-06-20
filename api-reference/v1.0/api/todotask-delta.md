@@ -72,17 +72,14 @@ If successful, this method returns a `200 OK` response code and [todoTask](../re
 ## Example
 ### Request
 To track changes in the **todoTask** resources in a **todoTaskList** since the last round of change tracking, you would make one or more **delta** function calls to get the set of incremental changes. The following example shows how to begin a next round of change tracking, using the URL in the `@odata.deltaLink` returned from the last **delta** function call of the last round, which contains a `deltaToken`. This **delta** function call limits the maximum number of **todoTask** in the response body to 2.
- 
 
-### HTTP Request
 <!-- {
   "blockType": "request",
-  "name": "get_swapshiftschangerequest_2"
+  "name": "todotask-delta-v1-e1"
 }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=w0vf2jHg2mBXU-I2AK0FSWl0dopNtG8u5YoM
 ```
-
 
 ### Response
 If the request is successful, the response would include a state token, which is either a _skipToken_  
