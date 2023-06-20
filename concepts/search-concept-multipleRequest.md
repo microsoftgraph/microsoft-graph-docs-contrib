@@ -265,7 +265,7 @@ Content-type: application/json
 
 ## Known limitations
 
-- The properties **from** and **size** from different [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in the request body should be the same. And the  **queryString** property of [searchQuery](graph/api/resources/searchquery?view=graph-rest-beta) in different searchRequest should be the same.
+- The properties **from** and **size** from different [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) instances in the request body should be the same. And the  **queryString** property of [searchQuery](graph/api/resources/searchquery?view=graph-rest-beta) in different searchRequest should be the same.
 - Duplicate entity types across different search requests in the request body are not allowed. For example, you cannot have a **bookmark** [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) and another **bookmark** [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in a request body.
 - The file entity types (**site**, **drive**, **driveItem**, **list**, and **listItem**) can only be present in the same search request of a request body. For example, you can't include a **site** entity in one [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) and a **drive** entity in a different [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in the request body. 
 - The [speller](search-concept-speller.md) functionality can only be used once and it should be included in the first [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in the request body.
