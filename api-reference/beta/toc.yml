@@ -13033,7 +13033,7 @@ items:
                   href: api/unifiedrolemanagementalertconfiguration-get.md
                 - name: Update
                   href: api/unifiedrolemanagementalertconfiguration-update.md
-              - name: Role management alert incidents
+              - name: Alert incidents
                 href: resources/unifiedrolemanagementalertincident.md
                 items:
                 - name: List
