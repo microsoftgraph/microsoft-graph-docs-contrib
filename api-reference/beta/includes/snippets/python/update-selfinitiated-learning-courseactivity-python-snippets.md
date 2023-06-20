@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = LearningCourseActivity()
+request_body = LearningSelfInitiatedCourse()
 request_body.@odata_type = '#microsoft.graph.learningSelfInitiatedCourse'
 
 request_body.completedDateTime=null
@@ -20,13 +20,9 @@ request_body.learning_content_id = '57baf9dc-e020-11ec-9d64-0242ac120002'
 
 request_body.learning_provider_id = '01e8f81b-3060-4dec-acf0-0389665a0a38'
 
+request_body.startedDateTime = DateTime('2021-05-11T22:57:17+00:00')
+
 request_body.status(CourseStatus.InProgress('coursestatus.inprogress'))
-
-additional_data = [
-'started_date_time' => '2021-05-11T22:57:17+00:00', 
-];
-request_body.additional_data(additional_data)
-
 
 
 

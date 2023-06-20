@@ -30,15 +30,13 @@ synchronizationJobSubject.SetObjectTypeName(&objectTypeName)
 
 subjects := []graphmodels.SynchronizationJobSubjectable {
 	synchronizationJobSubject,
-
 }
 synchronizationJobApplicationParameters.SetSubjects(subjects)
 ruleId := "ea807875-5618-4f0a-9125-0b46a05298ca"
 synchronizationJobApplicationParameters.SetRuleId(&ruleId) 
 
-parameters := []graphserviceprincipals.SynchronizationJobApplicationParametersable {
+parameters := []graphmodels.SynchronizationJobApplicationParametersable {
 	synchronizationJobApplicationParameters,
-
 }
 requestBody.SetParameters(parameters)
 

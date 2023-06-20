@@ -16,12 +16,12 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 
 
 requestBody := graphmodelswindowsupdates.NewResourceConnection()
-additionalData := map[string]interface{}{
-	"azureSubscriptionId" : "322ec614-e9c2-4cd5-a55c-5711fdecf02e", 
-	"azureResourceGroupName" : "target-resource-group", 
-	"workspaceName" : "my-workspace", 
-}
-requestBody.SetAdditionalData(additionalData)
+azureSubscriptionId := "322ec614-e9c2-4cd5-a55c-5711fdecf02e"
+requestBody.SetAzureSubscriptionId(&azureSubscriptionId) 
+azureResourceGroupName := "target-resource-group"
+requestBody.SetAzureResourceGroupName(&azureResourceGroupName) 
+workspaceName := "my-workspace"
+requestBody.SetWorkspaceName(&workspaceName) 
 
 result, err := graphClient.Admin().Windows().Updates().ResourceConnections().Post(context.Background(), requestBody, nil)
 

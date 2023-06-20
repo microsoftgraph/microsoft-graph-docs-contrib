@@ -10,7 +10,7 @@ client =  GraphServiceClient(request_adapter)
 request_body = EnrollAssetsPostRequestBody()
 request_body.updatecategory(UpdateCategory.String('updatecategory.string'))
 
-assets_updatable_asset1 = UpdatableAsset()
+assets_updatable_asset1 = AzureADDevice()
 assets_updatable_asset1.@odata_type = '#microsoft.graph.windowsUpdates.azureADDevice'
 
 assets_updatable_asset1.id = 'String (identifier)'

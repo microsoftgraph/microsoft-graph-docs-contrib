@@ -26,7 +26,6 @@ select := []string {
 	"LicenseCount",
 	"ClaimedLicenseCount",
 	"DateTimeUTC",
-
 }
 requestBody.SetSelect(select)
 skip := int32(0)
