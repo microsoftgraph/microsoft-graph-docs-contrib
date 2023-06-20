@@ -15,44 +15,6 @@ Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your application
 
 [Open this example in mgt.dev](https://mgt.dev/?path=/story/samples-general--login-to-show-agenda&source=docs).
 
-## What's in Microsoft Graph Toolkit?
-
-### Components
-
-Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs.
-
-The components are also available as [React components](./get-started/mgt-react.md).
-
-|Component|Description|
-|---------|-----------|
-|[Agenda](./components/agenda.md)|Displays events in a user's or group's calendar.|
-|[File](./components/file.md)|Represents a file or folder with an icon, a file name, an author, and more.|
-|[File list](./components/file-list.md)|Displays a list of multiple files or folders.|
-|[Get](./components/get.md)|Lets you make a GET query to any Microsoft Graph API directly in your HTML.|
-|[Login](./components/login.md)|A button and a flyout control to authenticate a user with the Microsoft Identity platform and display the user's profile information when they sign in.|
-|[People](./components/people.md)|Displays a group of people or contacts by their photos or initials.|
-|[People picker](./components/people-picker.md)|Provides the ability to search for people and renders the list of results.|
-|[Person](./components/person.md)|Displays a person or contact by their photo, name, and/or email address.|
-|[Person card](./components/person-card.md)|A flyout used on the person component to display more profile information about a user.|
-|[Planner tasks](./components/tasks.md)|Displays and enables adding, removing, completing, or editing of tasks from Microsoft Planner or Microsoft To Do.|
-|[Search box (preview)](./components/search-box.md)|Provides the ability to search for Microsoft Teams channels to select a channel from a rendered list of results.|
-|[Search results (preview)](./components/search-results.md)|Lets you make a queries to the search endpoint of Microsoft Graph directly in your HTML.|
-|[Teams Channel picker](./components/teams-channel-picker.md)|Provides the ability to search for Microsoft Teams channels to select a channel from a rendered list of results.|
-|[To Do](./components/todo.md)|Displays and enables adding, removing, completing, or editing of tasks from Microsoft To Do.|
-
-### Providers
-
-[Providers](./providers/providers.md) enable authentication, provide the implementation for acquiring access tokens on various platforms, and expose a Microsoft Graph client for calling the Microsoft Graph APIs. The components work best when used with a provider, but the providers can be used on their own.
-
-| Providers                               | Description                                                                                                                                |
-| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Custom](./providers/custom.md)         | Creates a custom provider to enable authentication and access to Microsoft Graph by using your application's existing authentication code. |
-| [Electron](./providers/electron.md)     | Authenticates and provides Microsoft Graph access to components inside of Electron apps.                                                   |
-| [MSAL2](./providers/msal2.md)           | Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph.                                                         |
-| [Proxy](./providers/proxy.md)           | Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.                                     |
-| [SharePoint](./providers/sharepoint.md) | Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.                                            |
-| [TeamsFx](./providers/teamsfx.md)       | Use the TeamsFx provider inside your Microsoft Teams applications to provide Microsoft Graph Toolkit components access to Microsoft Graph. |
-
 ## Why use Microsoft Graph Toolkit?
 
 Microsoft Graph Toolkit enables you to quickly and easily integrate common experiences powered by Microsoft Graph into your own application. The toolkit:
@@ -72,6 +34,44 @@ Microsoft Graph Toolkit is great for developers of all experience levels that wa
 - Progressive Web App (PWA)
 - Electron app
 - SharePoint web part
+
+## What's in Microsoft Graph Toolkit?
+
+### Components
+
+Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs.
+
+The components are also available as [React components](./get-started/mgt-react.md).
+
+| Component                                                    | Description                                                                                                                                             |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Agenda](./components/agenda.md)                             | Displays events in a user's or group's calendar.                                                                                                        |
+| [File](./components/file.md)                                 | Represents a file or folder with an icon, a file name, an author, and more.                                                                             |
+| [File list](./components/file-list.md)                       | Displays a list of multiple files or folders.                                                                                                           |
+| [Get](./components/get.md)                                   | Lets you make a GET query to any Microsoft Graph API directly in your HTML.                                                                             |
+| [Login](./components/login.md)                               | A button and a flyout control to authenticate a user with the Microsoft Identity platform and display the user's profile information when they sign in. |
+| [People](./components/people.md)                             | Displays a group of people or contacts by their photos or initials.                                                                                     |
+| [People picker](./components/people-picker.md)               | Provides the ability to search for people and renders the list of results.                                                                              |
+| [Person](./components/person.md)                             | Displays a person or contact by their photo, name, and/or email address.                                                                                |
+| [Person card](./components/person-card.md)                   | A flyout used on the person component to display more profile information about a user.                                                                 |
+| [Planner tasks](./components/tasks.md)                       | Displays and enables adding, removing, completing, or editing of tasks from Microsoft Planner or Microsoft To Do.                                       |
+| [Search box (preview)](./components/search-box.md)           | Provides the ability to search for Microsoft Teams channels to select a channel from a rendered list of results.                                        |
+| [Search results (preview)](./components/search-results.md)   | Lets you make a queries to the search endpoint of Microsoft Graph directly in your HTML.                                                                |
+| [Teams Channel picker](./components/teams-channel-picker.md) | Provides the ability to search for Microsoft Teams channels to select a channel from a rendered list of results.                                        |
+| [To Do](./components/todo.md)                                | Displays and enables adding, removing, completing, or editing of tasks from Microsoft To Do.                                                            |
+
+### Providers
+
+[Providers](./providers/providers.md) enable authentication, provide the implementation for acquiring access tokens on various platforms, and expose a Microsoft Graph client for calling the Microsoft Graph APIs. The components work best when used with a provider, but the providers can be used on their own.
+
+| Providers                               | Description                                                                                                                                |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Custom](./providers/custom.md)         | Creates a custom provider to enable authentication and access to Microsoft Graph by using your application's existing authentication code. |
+| [Electron](./providers/electron.md)     | Authenticates and provides Microsoft Graph access to components inside of Electron apps.                                                   |
+| [MSAL2](./providers/msal2.md)           | Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph.                                                         |
+| [Proxy](./providers/proxy.md)           | Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.                                     |
+| [SharePoint](./providers/sharepoint.md) | Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.                                            |
+| [TeamsFx](./providers/teamsfx.md)       | Use the TeamsFx provider inside your Microsoft Teams applications to provide Microsoft Graph Toolkit components access to Microsoft Graph. |
 
 ## Where can I use it?
 
