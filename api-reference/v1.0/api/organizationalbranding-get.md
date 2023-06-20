@@ -321,7 +321,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbranding_for_default_locale_bannerLogo_notset"
+  "name": "get_organizationalbranding_for_default_locale_bannerLogo_notset",
+  "sampleKeys": ["d69179bf-f4a4-41a9-a9de-249c0f2efb1d", "default"]
 }-->
 
 ```msgraph-interactive

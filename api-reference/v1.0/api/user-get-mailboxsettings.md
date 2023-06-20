@@ -441,7 +441,7 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": ["Error: get_mailboxsettings_4:
+  "suppressions": ["Error: getmailboxsettings4:
       Unable to locate a definition for resource type: microsoft.graph.userPurpose"
   ]
 }-->
