@@ -37,7 +37,7 @@ None.
 |alertDefinitionId|String|The identifier of an alert definition. Supports `$filter` (`eq`, `ne`).|
 |id|String|The identifier of the alert configuration. Inherited from [entity](../resources/entity.md).|
 |isEnabled|Boolean|`true` if the alert is enabled. Setting it to `false` disables PIM scanning the tenant to identify instances that trigger the alert.|
-|scopeId|String|The identifier of the scope to which the alert is related. `/` is the only supported one for the tenant. Supports `$filter` (`eq`, `ne`).|
+|scopeId|String|The identifier of the scope to which the alert is related. Only `/` is supported to represent the tenant scope. Supports `$filter` (`eq`, `ne`).|
 |scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Azure AD roles. |
 
 ## Relationships
