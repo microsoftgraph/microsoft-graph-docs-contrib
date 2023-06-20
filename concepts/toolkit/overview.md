@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Microsoft Graph Toolkit overview 
+# Microsoft Graph Toolkit overview
 
 Microsoft Graph Toolkit is a collection of reusable, framework-agnostic components and authentication providers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built-in providers that authenticate with and fetch data from Microsoft Graph.
 
@@ -44,16 +44,14 @@ The components are also available as [React components](./get-started/mgt-react.
 
 [Providers](./providers/providers.md) enable authentication, provide the implementation for acquiring access tokens on various platforms, and expose a Microsoft Graph client for calling the Microsoft Graph APIs. The components work best when used with a provider, but the providers can be used on their own.
 
-|Providers|Description|
-|---------|-----------|
-|[MSAL](./providers/msal.md)|Uses msal.js to sign in users and acquire tokens to use with Microsoft Graph.|
-|[MSAL2](./providers/msal2.md)| Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph.|
-|[Electron](./providers/electron.md)|Authenticates and provides Microsoft Graph access to components inside of Electron apps.|
-|[SharePoint](./providers/sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
-|[Teams](./providers/teams.md)|Uses msal.js to sign in users and acquire tokens on the client on Microsoft Teams tabs.|
-|[Teams MSAL2](./providers/teams-msal2.md)|Uses msal-browser to sign in users and acquire tokens on Microsoft Teams tabs. Supports single sign-on (SSO) with a custom backend. |
-|[Proxy](./providers/proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
-|[Custom](./providers/custom.md)|Creates a custom provider to enable authentication and access to Microsoft Graph by using your application's existing authentication code.|
+| Providers                               | Description                                                                                                                                |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Custom](./providers/custom.md)         | Creates a custom provider to enable authentication and access to Microsoft Graph by using your application's existing authentication code. |
+| [Electron](./providers/electron.md)     | Authenticates and provides Microsoft Graph access to components inside of Electron apps.                                                   |
+| [MSAL2](./providers/msal2.md)           | Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph.                                                         |
+| [Proxy](./providers/proxy.md)           | Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.                                     |
+| [SharePoint](./providers/sharepoint.md) | Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.                                            |
+| [TeamsFx](./providers/teamsfx.md)       | Use the TeamsFx provider inside your Microsoft Teams applications to provide Microsoft Graph Toolkit components access to Microsoft Graph. |
 
 ## Why use Microsoft Graph Toolkit?
 
@@ -61,13 +59,14 @@ Microsoft Graph Toolkit enables you to quickly and easily integrate common exper
 
 - **Cuts development time**. The work to connect to Microsoft Graph APIs and render the data in a UI that looks and feels like a Microsoft 365 experience is done for you, with no customization required.
 
-- **Works everywhere**. All components are based on web standards and work seamlessly with any modern browser and web framework (such as React, Angular, or Vue). 
+- **Works everywhere**. All components are based on web standards and work seamlessly with any modern browser and web framework (such as React, Angular, or Vue).
 
 - **Is beautiful but flexible**. The components are designed to look and feel like Microsoft 365 experiences but are also customizable by using [CSS custom properties](./customize-components/style.md) and [templating](./customize-components/templates.md).
 
 ## Who should use it?
 
 Microsoft Graph Toolkit is great for developers of all experience levels that want to develop an app that connects to and accesses data from Microsoft Graph, such as a:
+
 - Web app
 - Microsoft Teams tab
 - Progressive Web App (PWA)
@@ -78,9 +77,9 @@ Microsoft Graph Toolkit is great for developers of all experience levels that wa
 
 Microsoft Graph Toolkit is supported in the following browsers:
 
-|![Edge](images/edgeIcon.png)|![Firefox](images/firefoxIcon.png)|![Chrome](images/chromeIcon.png)|![Safari](images/safariIcon.png)|![Opera](images/operaIcon.png)|![Samsung Internet](images/samsungInternetIcon.png)|
-|----|----|----|----|----|----|----|
-|**Edge**|**Firefox**|**Chrome**|**Safari**|**Opera**|**Samsung**|
+| ![Edge](images/edgeIcon.png) | ![Firefox](images/firefoxIcon.png) | ![Chrome](images/chromeIcon.png) | ![Safari](images/safariIcon.png) | ![Opera](images/operaIcon.png) | ![Samsung Internet](images/samsungInternetIcon.png) |
+| ---------------------------- | ---------------------------------- | -------------------------------- | -------------------------------- | ------------------------------ | --------------------------------------------------- |
+| **Edge**                     | **Firefox**                        | **Chrome**                       | **Safari**                       | **Opera**                      | **Samsung**                                         |
 
 ## Next steps
 
