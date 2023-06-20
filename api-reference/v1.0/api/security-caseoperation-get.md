@@ -125,4 +125,6 @@ Content-Type: application/json
     }
 }
 ```
+**Note:** In case of export case operation, you will be receive the downloadURL, fileName and size in the exportfileMetadata property of the response. The actual operation where you will initiate the download is an operation managed on your side. You may choose to download it to your local machine or export it to your storage account.
+
 
