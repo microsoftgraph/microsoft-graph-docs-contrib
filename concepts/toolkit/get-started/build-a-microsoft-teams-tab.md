@@ -19,7 +19,7 @@ Building a tab involves the following steps:
 
 ## Build a new Teams Tab using React and Fluent UI with the Teams Toolkit
 
-To get start, use [this documentation](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/create-new-project) to get your tab up and running. When asked about the App Features of your tab, select **React with Fluent UI**. When asked about the **Programming Language**, select **TypeScript**. For the rest, go through the regular path of the wizard.
+To get start, use [this documentation](/microsoftteams/platform/toolkit/create-new-project) to get your tab up and running. When asked about the App Features of your tab, select **React with Fluent UI**. When asked about the **Programming Language**, select **TypeScript**. For the rest, go through the regular path of the wizard.
 
 ---
 
