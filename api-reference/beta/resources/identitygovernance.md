@@ -20,7 +20,7 @@ The identity governance singleton is the container for the following Azure Activ
 + [App consent](consentrequests-overview.md)
 + [Lifecycle Workflows](identitygovernance-lifecycleworkflows-overview.md)
 + [Terms of use](agreement.md)
-+ [Security alerts for Azure AD roles](privilegedidentitymanagementv3-overview.md)
++ [Privileged Identity Management](privilegedidentitymanagementv3-overview.md)
 
 ## Methods
 
