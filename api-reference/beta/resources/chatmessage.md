@@ -1,6 +1,6 @@
 ---
 title: "chatMessage resource type"
-description: "Represents an individual chat message in a channel or chat entity. The chat message can be a root chat message or part of a thread that is defined by the **replyToId** property in the chat message."
+description: "Represents an individual chat message in a channel or chat entity."
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "RamjotSingh"
