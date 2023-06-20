@@ -7179,6 +7179,30 @@ items:
             href: resources/security-urlevidence.md
           - name: User evidence
             href: resources/security-userevidence.md
+          - name: Container Image Evidence
+            href: resources/security-containerimageevidence.md
+          - name: Container Registry Evidence
+            href: resources/security-containerregistryevidence.md
+          - name: Container Evidence
+            href: resources/security-containerevidence.md
+          - name: Kubernetes Pod Evidence
+            href: resources/security-kubernetespodevidence.md
+          - name: Kubernetes Namespace Evidence
+            href: resources/security-kubernetesnamespaceevidence.md
+          - name: Kubernetes Cluster Evidence
+            href: resources/security-kubernetesclusterevidence.md
+          - name: Kubernetes Service Evidence
+            href: resources/security-kubernetesserviceevidence.md
+          - name: Kubernetes Service Account Evidence
+            href: resources/security-kubernetesserviceaccountevidence.md
+          - name: Kubernetes Controller Evidence
+            href: resources/security-kubernetescontrollerevidence.md
+          - name: Kubernetes Secret Evidence
+            href: resources/security-kubernetessecretevidence.md
+          - name: Blob Container Evidence
+            href: resources/security-blobcontainerevidence.md
+          - name: Blob Evidence
+            href: resources/security-blobevidence.md
         - name: Incident
           items:
           - name: Incident
