@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.serviceLevelAgreementAttainment",
-  "startDate": "Date",
-  "endDate": "Date",
+  "startDate": "DateTimeOffset",
+  "endDate": "DateTimeOffset",
   "score": "Double"
 }
 ```
