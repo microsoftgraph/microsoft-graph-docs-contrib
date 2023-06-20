@@ -1,6 +1,6 @@
 ---
 title: "url resource type"
-description: Represents a Uniform Resource Locator (URL), which specifies the address of a web resource and includes the protocol, domain, path, and parameters"
+description: "Represents a Uniform Resource Locator (URL), which specifies the address of a web resource and includes the protocol, domain, path, and parameters."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Uniform Resource Locator (URL), which specifies the address of a web resource and includes the protocol, domain, path, and parameters
+Represents a Uniform Resource Locator (URL), which specifies the address of a web resource and includes the protocol, domain, path, and parameters.
 
 Inherits from [microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md).
 

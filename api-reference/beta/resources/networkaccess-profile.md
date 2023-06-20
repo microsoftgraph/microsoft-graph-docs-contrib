@@ -1,6 +1,6 @@
 ---
 title: "profile resource type"
-description: "A profile is a container for forwarding or filtering policies"
+description: "A profile is a container for forwarding or filtering policies."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A profile is a container for forwarding or filtering policies
+A profile is a container for forwarding or filtering policies.
 This is an abstract type.
 
 
@@ -25,17 +25,17 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|description|
-|id|String|Identifier for the profile Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|Profile last Modified Time|
+|description|String|Description|
+|id|String|Identifier for the profile. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|Profile last modified time|
 |name|String|Profile name|
-|state|microsoft.graph.networkaccess.status|Profile state.The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
-|version|String|Profile version|
+|state|microsoft.graph.networkaccess.status|Profile state.The possible values are: `enabled`, `disabled`.|
+|version|String|Profile version.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|Filtering or forwarding policies associated with this profile|
+|policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|Forwarding policies associated with this profile|
 
 ## JSON representation
 The following is a JSON representation of the resource.

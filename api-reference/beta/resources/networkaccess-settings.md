@@ -1,6 +1,6 @@
 ---
 title: "settings resource type"
-description: "Global Settings"
+description: "Global Secure Access settings for the tenant."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Global Settings
+Global Secure Access settings for the tenant.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -27,14 +27,13 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Update crossTenantAccessSettings](../api/networkaccess-crosstenantaccesssettings-update.md)|[microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md)|Create a new crossTenantAccessSettings object.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|conditionalAccess|[conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md)|Conditional access settings. Admin can enable or disable conditional access signaling for source IP restoration and Connectivity through NaaS. In other words, Conditional Access policy will include zero trust network access information when SignalingStatus is enabled.|
-|crossTenantAccess|[crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md)|Cross tenant access settings. For now it only contains the Network Packet Tagging Status. The network packet tagging with the user tenant ID will eventually be destined to Azure AD, and it will enforce Tenant Restrictions Policies, known as TRv2 Policies, which prevents users from exfiltrating data to tenants outside their organization|
+|conditionalAccess|[conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md)|Conditional access settings. You can enable or disable conditional access signaling for source IP restoration and connectivity through NaaS. In other words, Conditional Access policy will include zero trust network access information when signalingStatus is enabled.|
+|crossTenantAccess|[crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md)|Cross tenant access settings. Currently defines the network packet tagging status. The network packet tagging with the user tenant ID will eventually be destined to Azure AD, and it will enforce Tenant Restrictions Policies, known as TRv2 Policies, which prevents users from exfiltrating data to tenants outside their organization.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
