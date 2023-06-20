@@ -11,7 +11,7 @@ The Microsoft Graph Toolkit is built using [web components](https://developer.mo
 
 To mitigate this challenge we built the [`mgt-spfx`](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt-spfx) package. Using `mgt-spfx` developers can centralize the registration of MGT web components across all SPFx solutions deployed on the tenant. By reusing MGT components from a central location web parts from different solutions can be loaded into a single page without throwing errors. When using `mgt-spfx` all MGT based web parts in a SharePoint tenant use the same version of MGT.
 
-To allow developers to build web parts using the latest version of MGT and load them on pages along with web parts that use v2.x of MGT, we've added a new disambiguation feature to MGT. Using this feature developers can specify a unique string to add to the tag name of all MGT web components in their application. When using disambiguation the suppied value is inserted as the second segment of the tag name, so when using `customElementHelper.withDisambiguation('foo)` the `<mgt-login>` tag is referenced using `<mgt-foo-login>`.
+To allow developers to build web parts using the latest version of MGT and load them on pages along with web parts that use v2.x of MGT, we've added a new disambiguation feature to MGT. Using this feature developers can specify a unique string to add to the tag name of all MGT web components in their application. When using disambiguation the suppied value is inserted as the second segment of the tag name, so when using `customElementHelper.withDisambiguation('foo')` the `<mgt-login>` tag is referenced using `<mgt-foo-login>`.
 
 ## Usage in standard HTML and JavaScript
 
