@@ -130,7 +130,7 @@ Content-Type: application/json
                 "id": "00000000-0000-0000-0000-000000000000",
                 "displayName": "",
                 "displayName": "guest example",
-                "userPrincipalName": ""
+                "userPrincipalName": "",
                 "userPrincipalName": "guest@guest.com"
             },
             "appliedBy": {
