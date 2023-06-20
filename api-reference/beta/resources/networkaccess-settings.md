@@ -1,5 +1,5 @@
 ---
-title: "settings resource type"
+title: "network access settings resource type"
 description: "Global Secure Access settings for the tenant."
 author: "Moti-ba"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: resourcePageType
 ---
 
-# settings resource type
+# network access settings resource type
 
 Namespace: microsoft.graph.networkaccess
 

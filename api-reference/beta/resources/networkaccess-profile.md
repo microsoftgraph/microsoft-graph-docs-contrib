@@ -1,19 +1,19 @@
 ---
-title: "profile resource type"
-description: "A profile is a container for forwarding or filtering policies."
+title: "network access profile resource type"
+description: "A profile is a container for forwarding policies."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: resourcePageType
 ---
 
-# profile resource type
+# network access profile resource type
 
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A profile is a container for forwarding or filtering policies.
+A profile is a container for forwarding policies.
 This is an abstract type.
 
 
