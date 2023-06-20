@@ -221,7 +221,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "recordAllDecisions",
           "ChangeType": "Addition",
-          "Description": "Added the [recordAllDecisions](https://learn.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-recordalldecisions?view=graph-rest-beta) method to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem?view=graph-rest-beta) resource.",
+          "Description": "Added the [recordAllDecisions](https://learn.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-recordalldecisions?view=graph-rest-beta) method to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta) resource.",
           "Target": "recordAllDecisions"
         }
       ],
