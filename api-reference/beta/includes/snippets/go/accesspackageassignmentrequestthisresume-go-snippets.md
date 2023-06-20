@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewResumePostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphidentitygovernance.NewResumePostRequestBody()
 source := "Contoso.SodCheckProcess"
 requestBody.SetSource(&source) 
 type := "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated"
@@ -21,7 +30,7 @@ additionalData := map[string]interface{}{
 data.SetAdditionalData(additionalData)
 requestBody.SetData(data)
 
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequestsById("accessPackageAssignmentRequest-id").Resume().Post(context.Background(), requestBody, nil)
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().ByAccessPackageAssignmentRequestId("accessPackageAssignmentRequest-id").Resume().Post(context.Background(), requestBody, nil)
 
 
 ```

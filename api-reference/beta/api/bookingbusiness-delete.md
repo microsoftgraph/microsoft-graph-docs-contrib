@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmic
 [!INCLUDE [sample-code](../includes/snippets/php/delete-bookingbusiness-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-bookingbusiness-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

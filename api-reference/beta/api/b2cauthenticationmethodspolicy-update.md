@@ -99,6 +99,10 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 [!INCLUDE [sample-code](../includes/snippets/php/patch-b2cauthenticationmethodspolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/patch-b2cauthenticationmethodspolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -104,6 +104,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/
 [!INCLUDE [sample-code](../includes/snippets/php/get-userflowlanguageconfiguration-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-userflowlanguageconfiguration-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -180,6 +184,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-userflowlanguageconfiguration-filter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-userflowlanguageconfiguration-filter-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

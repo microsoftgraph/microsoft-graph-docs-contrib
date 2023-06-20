@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/security/incidents/2972395
 [!INCLUDE [sample-code](../includes/snippets/php/get-incident-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-incident-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

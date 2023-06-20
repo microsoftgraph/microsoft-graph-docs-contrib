@@ -43,10 +43,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Add a phone authentication method to your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
 <!-- { "blockType": "ignored" } -->
-
 ```http
 POST /me/authentication/phoneMethods
+```
+
+Add a phone authentication method to another user's account.
+<!-- { "blockType": "ignored" } -->
+```http
 POST /users/{id | userPrincipalName}/authentication/phoneMethods
 ```
 
@@ -114,6 +119,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-phoneauthenticationmethod-from-authentication-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-phoneauthenticationmethod-from-authentication-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

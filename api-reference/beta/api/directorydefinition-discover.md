@@ -87,6 +87,10 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 [!INCLUDE [sample-code](../includes/snippets/php/discover-directorydefinition-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/discover-directorydefinition-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -109,23 +113,27 @@ Content-type: application/json
   "discoverabilities": "AttributeNames, AttributeDataTypes",
   "discoveryDateTime": "2019-03-20T15:47:50.4707552Z",
   "id": "directoryDefinitionId",
-  "objects": [{
-        "name": "User",
-        "attributes": [{
-                "name": "Id",
-                "type": "String"
-            }, {
-                "name": "FirstName",
-                "type": "String"
-            },
-            {
-                "name": "CustomExendedAttribute",
-                "type": "String"
-            }  
-        ]
-    }],
+  "objects": [
+    {
+      "name": "User",
+      "attributes": [
+        {
+          "name": "Id",
+          "type": "String"
+        },
+        {
+          "name": "FirstName",
+          "type": "String"
+        },
+        {
+          "name": "CustomExendedAttribute",
+          "type": "String"
+        }
+      ]
+    }
+  ],
   "version": "bf8c03ac-d45e-47fe-b3a1-711a9418b2b1"
 }
- ```
+```
 
 

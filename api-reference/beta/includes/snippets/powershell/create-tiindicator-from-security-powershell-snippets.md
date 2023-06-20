@@ -7,25 +7,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	Action = "alert"
-	ActivityGroupNames = @(
+	action = "alert"
+	activityGroupNames = @(
 	)
-	Confidence = 0
-	Description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."
-	ExpirationDateTime = [System.DateTime]::Parse("2019-03-01T21:43:37.5031462+00:00")
-	ExternalId = "Test--8586509942679764298MS501"
-	FileHashType = "sha256"
-	FileHashValue = "aa64428647b57bf51524d1756b2ed746e5a3f31b67cf7fe5b5d8a9daf07ca313"
-	KillChain = @(
+	confidence = 0
+	description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."
+	expirationDateTime = [System.DateTime]::Parse("2019-03-01T21:43:37.5031462+00:00")
+	externalId = "Test--8586509942679764298MS501"
+	fileHashType = "sha256"
+	fileHashValue = "aa64428647b57bf51524d1756b2ed746e5a3f31b67cf7fe5b5d8a9daf07ca313"
+	killChain = @(
 	)
-	MalwareFamilyNames = @(
+	malwareFamilyNames = @(
 	)
-	Severity = 0
-	Tags = @(
+	severity = 0
+	tags = @(
 	)
-	TargetProduct = "Azure Sentinel"
-	ThreatType = "WatchList"
-	TlpLevel = "green"
+	targetProduct = "Azure Sentinel"
+	threatType = "WatchList"
+	tlpLevel = "green"
 }
 
 New-MgSecurityTiIndicator -BodyParameter $params

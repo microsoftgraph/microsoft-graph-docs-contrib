@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 [!INCLUDE [sample-code](../includes/snippets/php/get-mailassessmentrequest-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-mailassessmentrequest-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -181,6 +185,10 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-emailfileassessmentrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-emailfileassessmentrequest-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -264,6 +272,10 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 [!INCLUDE [sample-code](../includes/snippets/php/get-fileassessmentrequest-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-fileassessmentrequest-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -344,6 +356,10 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 [!INCLUDE [sample-code](../includes/snippets/php/get-urlassessmentrequest-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-urlassessmentrequest-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -421,6 +437,10 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-threatassessmentrequest-expand-results-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-threatassessmentrequest-expand-results-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,10 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewSynchronizationSecretKeyStringValuePair()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphserviceprincipals.NewSynchronizationSecretKeyStringValuePair()
 additionalData := map[string]interface{}{
 
 
@@ -42,7 +50,7 @@ value := "false"
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().Secrets().Put(context.Background(), requestBody, nil)
+result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Secrets().Put(context.Background(), requestBody, nil)
 
 
 ```

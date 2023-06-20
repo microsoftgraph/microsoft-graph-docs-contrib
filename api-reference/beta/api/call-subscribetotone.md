@@ -1,7 +1,7 @@
 ---
 title: "call: subscribeToTone"
 description: "Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a 'Dialpad'."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -95,6 +95,10 @@ Content-Length: 46
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/call-subscribetotone-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/call-subscribetotone-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

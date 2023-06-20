@@ -4,10 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewAcronym()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelssearch "github.com/microsoftgraph/msgraph-beta-sdk-go/models/search"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodelssearch.NewAcronym()
 displayName := "GDPR"
 requestBody.SetDisplayName(&displayName) 
 standsFor := "General Data Protection Regulation"

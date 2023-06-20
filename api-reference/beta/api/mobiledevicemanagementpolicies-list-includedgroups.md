@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab9
 [!INCLUDE [sample-code](../includes/snippets/php/list-mobiledevicepolicies-includedgroups-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-mobiledevicepolicies-includedgroups-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -1,0 +1,68 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```csharp
+
+// Code snippets are only available for the latest version. Current version is 5.x
+
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Team
+{
+	Channels = new List<Channel>
+	{
+		new Channel
+		{
+			DisplayName = "Class Announcements 📢",
+			IsFavoriteByDefault = true,
+		},
+		new Channel
+		{
+			DisplayName = "Homework 🏋️",
+			IsFavoriteByDefault = true,
+		},
+	},
+	MemberSettings = new TeamMemberSettings
+	{
+		AllowCreateUpdateChannels = false,
+		AllowDeleteChannels = false,
+		AllowAddRemoveApps = false,
+		AllowCreateUpdateRemoveTabs = false,
+		AllowCreateUpdateRemoveConnectors = false,
+	},
+	InstalledApps = new List<TeamsAppInstallation>
+	{
+		new TeamsAppInstallation
+		{
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"teamsApp@odata.bind" , "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+				},
+			},
+		},
+		new TeamsAppInstallation
+		{
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"teamsApp@odata.bind" , "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+				},
+			},
+		},
+	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"template@odata.bind" , "https://graph.microsoft.com/beta/teamsTemplates('standard')"
+		},
+		{
+			"group@odata.bind" , "https://graph.microsoft.com/beta/groups('dbd8de4f-5d47-48da-87f1-594bed003375')"
+		},
+	},
+};
+var result = await graphClient.Teams.PostAsync(requestBody);
+
+
+```

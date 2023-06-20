@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-b24
 [!INCLUDE [sample-code](../includes/snippets/php/get-addlargegalleryviewoperation-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-addlargegalleryviewoperation-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

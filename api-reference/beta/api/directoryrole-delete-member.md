@@ -28,6 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | RoleManagement.ReadWrite.Directory |
 
+[!INCLUDE [rbac-directory-role-apis-write](../includes/rbac-for-apis/rbac-directory-role-apis-write.md)]
+
 ## HTTP request
 
 You can address the directory role using either its **id** or **roleTemplateId**.
@@ -93,6 +95,10 @@ DELETE https://graph.microsoft.com/beta/directoryRoles/f8e85ed8-f66f-4058-b170-3
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-directoryobject-from-directoryrole-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-directoryobject-from-directoryrole-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

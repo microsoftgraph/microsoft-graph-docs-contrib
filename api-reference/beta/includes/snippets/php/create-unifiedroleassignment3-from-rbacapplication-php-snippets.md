@@ -18,7 +18,7 @@ $requestBody->setAppScopeId('/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb
 
 
 
-$requestResult = $graphServiceClient->roleManagement()->entitlementManagement()->roleAssignments()->post($requestBody);
+$result = $graphServiceClient->roleManagement()->entitlementManagement()->roleAssignments()->post($requestBody);
 
 
 ```

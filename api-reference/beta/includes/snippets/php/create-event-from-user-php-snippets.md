@@ -59,15 +59,13 @@ $requestBody->setTransactionId('7E163156-7762-4BEB-A1C6-729EA81755A7');
 
 
 $requestConfiguration = new EventsRequestBuilderPostRequestConfiguration();
-
 $headers = [
-'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+	'Prefer' => 'outlook.timezone="Pacific Standard Time"',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->me()->events()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->me()->events()->post($requestBody, $requestConfiguration);
 
 
 ```

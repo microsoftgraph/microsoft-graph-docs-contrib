@@ -7,7 +7,7 @@ ms.reviewer: "Luca.Spolidoro"
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 12/08/2022
+ms.date: 04/14/2023
 ---
 
 # Use the filter query parameter
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/v1.0/users?$filter=imAddresses/any(i:i eq 'admin
 [!INCLUDE [sample-code](../includes/snippets/php/filter-query-parameter-string-collection-example-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/filter-query-parameter-string-collection-example-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 The **assignedLicenses** property of the `user` resource contains a collection of **assignedLicense** objects, a complex type with two properties, **skuId** and **disabledPlans**. The following query retrieves only users with an assigned license identified by the **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`.
@@ -131,6 +135,10 @@ GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuI
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/filter-query-parameter-complex-collection-example-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/filter-query-parameter-complex-collection-example-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -171,6 +179,10 @@ ConsistencyLevel: eventual
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/filter-query-parameter-complex-collection-advancedquery-example-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/filter-query-parameter-complex-collection-advancedquery-example-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -251,6 +263,8 @@ These examples show how to use `$filter` to match against supported properties a
 | `ne` and `$count` for empty collections  | `~/users?$filter=assignedLicenses/$count ne 0`<sup>*</sup>                    |
 | `not` and `$count` for empty collections | `~/users?$filter=not(assignedLicenses/$count eq 0)`<sup>*</sup>               |
 | `$count` for collections with one object | `~/servicePrincipals?$filter=owners/$count eq 1`<sup>*</sup>                  |
+
+For the list of all properties of directory objects that support count of a collection in a filter expression, see [Count of a collection in a filter expression](/graph/aad-advanced-queries#count-of-a-collection-in-a-filter-expression).
 
 <!--`in` - otherMails example; 
 `not` and `in`; 

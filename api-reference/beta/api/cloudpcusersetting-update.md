@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
+PATCH /deviceManagement/virtualEndpoint/userSettings/{id}
 ```
 
 ## Request headers
@@ -113,6 +113,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-cloudpcusersetting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-cloudpcusersetting-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

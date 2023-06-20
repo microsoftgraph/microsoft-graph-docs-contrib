@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/education/classes/11014/schools
 [!INCLUDE [sample-code](../includes/snippets/php/get-schools-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-schools-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

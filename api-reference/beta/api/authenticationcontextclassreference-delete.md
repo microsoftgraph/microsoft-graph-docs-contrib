@@ -53,7 +53,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_authenticationcontextclassreference"
+  "name": "delete_authenticationcontextclassreference",
+  "sampleKeys": ["c1"]
 }
 -->
 ``` http
@@ -82,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/authenticatio
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-authenticationcontextclassreference-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-authenticationcontextclassreference-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

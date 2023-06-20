@@ -95,6 +95,10 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProp
 [!INCLUDE [sample-code](../includes/snippets/php/directoryobject-getavailableextensionproperties-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/directoryobject-getavailableextensionproperties-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

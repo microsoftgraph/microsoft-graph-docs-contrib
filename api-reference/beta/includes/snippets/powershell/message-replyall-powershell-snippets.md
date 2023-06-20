@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	Message = @{
-		Attachments = @(
+	message = @{
+		attachments = @(
 			@{
 				"@odata.type" = "#microsoft.graph.fileAttachment"
-				Name = "guidelines.txt"
-				ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+				name = "guidelines.txt"
+				contentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 			}
 		)
 	}
-	Comment = "Please take a look at the attached guidelines before you decide on the name."
+	comment = "Please take a look at the attached guidelines before you decide on the name."
 }
 
 # A UPN can also be used as -UserId.

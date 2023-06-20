@@ -1,7 +1,7 @@
 ---
 title: "call: answer"
 description: "Answer an incoming call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -111,6 +111,10 @@ Content-Length: 211
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/call-answer-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/call-answer-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -399,8 +403,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/call-answer-app-hosted-media-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/call-answer-app-hosted-media-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

@@ -101,6 +101,10 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 [!INCLUDE [sample-code](../includes/snippets/php/get-eventmessage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-eventmessage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -247,6 +251,10 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=mi
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-event-based-on-eventmessage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-event-based-on-eventmessage-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

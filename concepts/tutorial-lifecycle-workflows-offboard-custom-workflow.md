@@ -23,7 +23,7 @@ This post off-boarding scenario will run a workflow on-demand and accomplish the
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
++ The tenant you want to use to preview the Lifecycle Workflows feature with an Azure AD Premium P2 license enabled.
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Lifecycle Administrator or Global Administrator Azure AD role.
 + Grant yourself the following *LifecycleWorkflows.ReadWrite.All* delegated permission.
 + Create a test user account that you'll use to represent an employee leaving your organization. This test user account will be deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
@@ -90,7 +90,7 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-lifecycle-workflows-leaverondemand-create-workflow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -111,6 +111,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-lifecycle-workflows-leaverondemand-create-workflow-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-lifecycle-workflows-leaverondemand-create-workflow-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -193,6 +197,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/work
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-lifecycle-workflows-leaverondemand-run-workflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-lifecycle-workflows-leaverondemand-run-workflow-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -244,6 +252,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresults-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -319,6 +331,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-lifecycle-workflows-leaverondemand-list-userprocessingresultssummary-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -378,6 +394,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-lifecycle-workflows-leaverondemand-list-taskprocessingresults-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

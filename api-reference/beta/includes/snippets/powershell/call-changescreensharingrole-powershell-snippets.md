@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	Role = "viewer"
+	role = "viewer"
 }
 
 Rename-MgCommunicationCallScreenSharingRole -CallId $callId -BodyParameter $params

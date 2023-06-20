@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9-e8
 [!INCLUDE [sample-code](../includes/snippets/php/get-featurerolloutpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-featurerolloutpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -159,6 +163,10 @@ GET https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9-e8
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-featurerolloutpolicy-expand-appliesto-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-featurerolloutpolicy-expand-appliesto-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

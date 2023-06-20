@@ -115,6 +115,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/delta
 [!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-delta-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-delta-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

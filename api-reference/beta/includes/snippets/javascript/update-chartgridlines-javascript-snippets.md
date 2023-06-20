@@ -14,7 +14,7 @@ const workbookChartGridlines = {
   visible: true
 };
 
-await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/minorgridlines')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/minorGridlines')
 	.version('beta')
 	.update(workbookChartGridlines);
 

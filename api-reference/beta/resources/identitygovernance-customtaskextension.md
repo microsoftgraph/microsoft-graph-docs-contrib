@@ -34,7 +34,7 @@ For more information about using custom task extensions, refer to the links in t
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Required.|
-|callbackConfiguration|[microsoft.graph.customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
+|callbackConfiguration|[microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md)|The callback configuration for a custom task extension.|
 |clientConfiguration|[microsoft.graph.customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define how long Azure AD can wait for a connection to a logic app, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |createdDateTime|DateTimeOffset|When the custom task extension was created.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |description|String|Describes the purpose of the custom task extension for administrative use. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|

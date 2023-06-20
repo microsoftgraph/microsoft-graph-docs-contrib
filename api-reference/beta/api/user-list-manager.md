@@ -111,6 +111,10 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 [!INCLUDE [sample-code](../includes/snippets/php/get-manager-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-manager-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -174,6 +178,10 @@ ConsistencyLevel: eventual
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-transitive-managers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-transitive-managers-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

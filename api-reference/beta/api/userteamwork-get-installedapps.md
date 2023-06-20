@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/user-list-teamsapps-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-list-teamsapps-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -155,6 +159,10 @@ GET https://graph.microsoft.com/beta/users/5b649834-7412-4cce-9e69-176e95a394f5/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/user-list-teamsapps-details-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-list-teamsapps-details-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

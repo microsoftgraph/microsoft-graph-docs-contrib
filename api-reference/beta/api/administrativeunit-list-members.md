@@ -24,7 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
-> Note: To list the members of a hidden membership in an administrative unit, the Member.Read.Hidden permission is required.
+> [!NOTE]
+> To view the members with a hidden membership in an administrative unit, the app must be granted the `Member.Read.Hidden` delegated or application permission.
+
+[!INCLUDE [rbac-admin-units-apis-read](../includes/rbac-for-apis/rbac-admin-units-apis-read.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

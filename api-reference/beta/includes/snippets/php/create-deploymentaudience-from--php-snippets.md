@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new DeploymentAudience();
 
 
-$requestResult = $graphServiceClient->admin()->windows()->updates()->deploymentAudiences()->post($requestBody);
+$result = $graphServiceClient->admin()->windows()->updates()->deploymentAudiences()->post($requestBody);
 
 
 ```

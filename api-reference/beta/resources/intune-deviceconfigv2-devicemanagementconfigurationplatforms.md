@@ -20,11 +20,11 @@ Supported platform types.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|none|0|None.|
-|android|1|Android.|
-|iOS|4|iOS.|
-|macOS|8|MacOS.|
+|none|0|Default. No platform type specified.|
+|android|1|Settings for Android platform.|
+|iOS|4|Settings for iOS platform.|
+|macOS|8|Settings for MacOS platform.|
 |windows10X|16|Windows 10 X.|
-|windows10|32|Windows 10.|
-|linux|128|Linux.|
-|unknownFutureValue|1073741824|Sentinel member for cases where the client cannot handle the new enum values.|
+|windows10|32|Settings for Windows 10 platform.|
+|linux|128|Settings for Linux platform.|
+|unknownFutureValue|256|Evolvable enumeration sentinel value. Do not use.|

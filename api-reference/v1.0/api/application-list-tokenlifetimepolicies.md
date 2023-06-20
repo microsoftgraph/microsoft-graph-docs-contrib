@@ -11,14 +11,13 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-
-
 List the [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) objects that are assigned to an [application](../resources/application.md).
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
@@ -27,10 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}/tokenLifetimePolicies
+GET /applications(appId='{appId}')/tokenLifetimePolicies
 ```
 
 ## Request headers
@@ -86,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/applications/3ccc9971-9ae7-45d6-8de8-263fd2
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-tokenlifetimepolicies-on-application-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-tokenlifetimepolicies-on-application-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

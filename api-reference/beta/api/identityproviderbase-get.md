@@ -101,6 +101,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 [!INCLUDE [sample-code](../includes/snippets/php/get-socialidentityprovider-from-identityproviderbase-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-socialidentityprovider-from-identityproviderbase-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -169,6 +173,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/MSASignup-OAUTH
 [!INCLUDE [sample-code](../includes/snippets/php/get-builtinidentityprovider-from-identityproviderbase-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-builtinidentityprovider-from-identityproviderbase-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -233,6 +241,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-test-icm
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-openidconnectidentityprovider-from-identityproviderbase-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-openidconnectidentityprovider-from-identityproviderbase-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -312,6 +324,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OI
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-applemanagedidentityprovider-from-identityproviderbase-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-applemanagedidentityprovider-from-identityproviderbase-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

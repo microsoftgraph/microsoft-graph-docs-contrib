@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewAddPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphteams "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphteams.NewAddPostRequestBody()
 
 
 conversationMember := graphmodels.NewConversationMember()
@@ -30,14 +39,14 @@ additionalData := map[string]interface{}{
 }
 conversationMember1.SetAdditionalData(additionalData)
 
-values := []graphmodels.Objectable {
+values := []graphteams.Objectable {
 	conversationMember,
 	conversationMember1,
 
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.TeamsById("team-id").Members().Add().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Members().Add().Post(context.Background(), requestBody, nil)
 
 
 ```

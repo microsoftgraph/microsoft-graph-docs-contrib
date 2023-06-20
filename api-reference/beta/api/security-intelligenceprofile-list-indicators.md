@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Get the [intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) resources from the **indicators** navigation property of an [intelligenceProfile](../resources/security-intelligenceprofile.md).
 
 ## Permissions
@@ -58,6 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_intelligenceprofileindicator",
@@ -67,6 +70,36 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/threatIntelligence/intelProfiles/actinium/indicators
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-intelligenceprofileindicator-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-intelligenceprofileindicator-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-intelligenceprofileindicator-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-intelligenceprofileindicator-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-intelligenceprofileindicator-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-intelligenceprofileindicator-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-intelligenceprofileindicator-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

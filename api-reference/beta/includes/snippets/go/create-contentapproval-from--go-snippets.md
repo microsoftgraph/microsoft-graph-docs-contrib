@@ -4,10 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewComplianceChange()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodelswindowsupdates.NewComplianceChange()
 additionalData := map[string]interface{}{
 content := graphmodels.New()
 catalogEntry := graphmodels.New()
@@ -28,7 +36,7 @@ gradualRollout.SetEndDateTime(&endDateTime)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Admin().Windows().Updates().UpdatePoliciesById("updatePolicy-id").ComplianceChanges().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Admin().Windows().Updates().UpdatePolicies().ByUpdatePolicieId("updatePolicy-id").ComplianceChanges().Post(context.Background(), requestBody, nil)
 
 
 ```

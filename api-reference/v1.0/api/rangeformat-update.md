@@ -117,10 +117,12 @@ This request updates the font style, size, and color of the first cell.
 
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_font"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$A$1')/format/font
 Content-type: application/json
@@ -211,10 +213,12 @@ This request updates the vertical alignment, horizontal alignment, row height, a
 
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_two"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format
 Content-type: application/json
@@ -265,7 +269,7 @@ This request updates the font style and size of the second cell.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_font_two"
+  "name": "update_rangeformat_font_two1"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format/font
@@ -278,11 +282,11 @@ Content-type: application/json
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-font-two-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-font-two1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-font-two-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-font-two1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -315,7 +319,7 @@ This request updates the background color of the second cell.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_fill_two"
+  "name": "update_rangeformat_fill_two1"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format/fill
@@ -327,11 +331,11 @@ Content-type: application/json
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-two-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-two1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-two-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-two1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -409,10 +413,12 @@ This request updates the font style, size, and color of the third cell. Note tha
 
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_font_three"
+  "name": "update_font_rangeformat"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format/font
 Content-type: application/json
@@ -425,11 +431,11 @@ Content-type: application/json
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-font-three-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-font-rangeformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-font-three-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-font-rangeformat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -462,7 +468,7 @@ This request updates the background color of the third cell.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_fill_three"
+  "name": "update_rangeformat_fill_three_v_one"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format/fill
@@ -474,11 +480,11 @@ Content-type: application/json
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-three-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-three-v-one-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-three-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-three-v-one-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -507,7 +513,7 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: update_rangeformat_font_three/underline:
+    "Error: update_font_rangeformat/underline:
       Expected type String but actual was Single. Property: underline, actual value: 'Single'"
   ],
   "tocPath": ""

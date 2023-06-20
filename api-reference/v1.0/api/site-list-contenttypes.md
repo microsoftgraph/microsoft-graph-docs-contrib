@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes
 [!INCLUDE [sample-code](../includes/snippets/php/enum-contenttypes-for-specified-site-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/enum-contenttypes-for-specified-site-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

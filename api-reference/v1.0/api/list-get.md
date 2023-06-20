@@ -72,8 +72,11 @@ GET /sites/{site-id}/lists/{list-id}
 [!INCLUDE [sample-code](../includes/snippets/php/get-list-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-list-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -131,8 +134,11 @@ GET /sites/{site-id}/lists/{list-title}
 [!INCLUDE [sample-code](../includes/snippets/php/get-list-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-list-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -190,8 +196,11 @@ GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=
 [!INCLUDE [sample-code](../includes/snippets/php/get-list-multi-expand-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-list-multi-expand-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

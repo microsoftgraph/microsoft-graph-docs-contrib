@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
 [!INCLUDE [sample-code](../includes/snippets/php/shift-delete-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/shift-delete-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

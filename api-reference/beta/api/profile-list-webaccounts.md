@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/me/profile/webAccounts
 [!INCLUDE [sample-code](../includes/snippets/php/get-webaccounts-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-webaccounts-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

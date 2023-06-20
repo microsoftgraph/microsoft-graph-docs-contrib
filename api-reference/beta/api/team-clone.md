@@ -118,8 +118,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/clone-team-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/clone-team-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 The following is an example of the response. Note: The response object shown here might be shortened for readability.

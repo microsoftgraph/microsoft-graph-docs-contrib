@@ -39,8 +39,8 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
 POST /me/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
 
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/decline
+POST /me/calendarGroups/{id}/calendars/{id}/events/{id}/decline
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/decline
 ```
 
 <br/>
@@ -129,6 +129,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/event-decline-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/event-decline-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

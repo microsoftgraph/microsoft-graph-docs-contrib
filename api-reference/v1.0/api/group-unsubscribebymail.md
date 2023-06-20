@@ -2,7 +2,7 @@
 title: "group: unsubscribeByMail"
 description: "Calling this method will prevent the current user from receiving email notifications for this group about new posts, events, and files in that group. Supported for Microsoft 365 groups only. "
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/unsubscribeByMail
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/group-unsubscribebymail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-unsubscribebymail-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

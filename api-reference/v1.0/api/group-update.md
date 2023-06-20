@@ -1,7 +1,7 @@
 ---
 title: "Update group"
 description: "Update the properties of a group object."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
@@ -126,6 +126,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-group-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

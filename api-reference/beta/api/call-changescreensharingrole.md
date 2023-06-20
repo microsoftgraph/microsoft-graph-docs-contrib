@@ -1,7 +1,7 @@
 ---
 title: "call: changeScreenSharingRole"
 description: "Allow applications to share screen content with the participants of a group call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -93,6 +93,10 @@ Content-Length: 24
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/call-changescreensharingrole-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/call-changescreensharingrole-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

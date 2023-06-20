@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 [!INCLUDE [sample-code](../includes/snippets/php/get-bookingbusinesses-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-bookingbusinesses-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response 1
@@ -152,6 +156,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/query-bookingbusinesses-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/query-bookingbusinesses-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

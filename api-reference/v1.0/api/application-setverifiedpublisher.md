@@ -23,10 +23,12 @@ Set the [verifiedPublisher](../resources/verifiedPublisher.md) on an [applicatio
 
 ## HTTP request
 
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /applications/{id}/setVerifiedPublisher
+POST /applications(appId='{appId}')/setVerifiedPublisher
 ```
 
 ## Request headers
@@ -92,6 +94,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/application-setverifiedpublisher-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/application-setverifiedpublisher-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

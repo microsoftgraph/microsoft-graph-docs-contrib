@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/mailFolders/inbox/messagerules
-POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
+POST /me/mailFolders/inbox/messageRules
+POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
 ## Request headers
 | Name       | Description|
@@ -65,7 +65,7 @@ Here is an example of the request.
   "name": "create_messagerule_from_mailfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders/inbox/messagerules
+POST https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules
 Content-type: application/json
 
 {      
@@ -114,6 +114,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-messagerule-from-mailfolder-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-messagerule-from-mailfolder-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

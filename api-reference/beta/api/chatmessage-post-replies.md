@@ -105,6 +105,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/post-chatmessagereply-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-chatmessagereply-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -141,6 +145,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
@@ -219,6 +224,10 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 [!INCLUDE [sample-code](../includes/snippets/php/post-chatmessagereply-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-chatmessagereply-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -252,9 +261,11 @@ HTTP/1.1 200 OK
       "application":null,
       "device":null,
       "user":{
+         "@odata.type": "#microsoft.graph.teamworkUserIdentity",
          "id":"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
          "displayName":"Joh Doe",
-         "userIdentityType":"aadUser"
+         "userIdentityType":"aadUser",
+         "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
       }
    },
    "body":{

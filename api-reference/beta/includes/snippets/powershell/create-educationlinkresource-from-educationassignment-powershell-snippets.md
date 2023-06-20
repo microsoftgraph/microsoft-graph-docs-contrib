@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Education
 
 $params = @{
-	DistributeForStudentWork = $false
-	Resource = @{
-		DisplayName = "Where the Wonders of Learning Never Cease | Wonderopolis"
-		Link = "https://wonderopolis.org/"
-		ThumbnailPreviewUrl = $null
+	distributeForStudentWork = $false
+	resource = @{
+		displayName = "Where the Wonders of Learning Never Cease | Wonderopolis"
+		link = "https://wonderopolis.org/"
+		thumbnailPreviewUrl = $null
 		"@odata.type" = "#microsoft.graph.educationLinkResource"
 	}
 }

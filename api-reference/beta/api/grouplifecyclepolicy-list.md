@@ -1,7 +1,7 @@
 ---
 title: "List groupLifecyclePolicies"
 description: "List all the groupLifecyclePolicies."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/groupLifecyclePolicies
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-grouplifecyclepolicy-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-grouplifecyclepolicy-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

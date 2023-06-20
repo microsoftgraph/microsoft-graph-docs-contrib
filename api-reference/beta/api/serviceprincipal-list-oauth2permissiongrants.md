@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/oauth2PermissionGran
 [!INCLUDE [sample-code](../includes/snippets/php/get-serviceprincipal-oauth2permissiongrants-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-serviceprincipal-oauth2permissiongrants-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 [!INCLUDE [sample-code](../includes/snippets/php/get-delta-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-delta-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

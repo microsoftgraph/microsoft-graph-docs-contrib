@@ -97,8 +97,11 @@ GET https://graph.microsoft.com/v1.0/teamwork/deletedTeams/fbe2bf47-16c8-47cf-b4
 [!INCLUDE [sample-code](../includes/snippets/php/deletedteamthisgetallmessages-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/deletedteamthisgetallmessages-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 The following is an example of the response

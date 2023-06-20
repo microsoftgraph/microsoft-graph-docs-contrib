@@ -84,6 +84,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-application-from-connectorgroup-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-application-from-connectorgroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

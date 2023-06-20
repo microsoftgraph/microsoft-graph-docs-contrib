@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/me/findRoomLists
 [!INCLUDE [sample-code](../includes/snippets/php/user-get-room-lists-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-get-room-lists-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

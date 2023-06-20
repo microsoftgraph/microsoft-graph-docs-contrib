@@ -63,7 +63,7 @@ The following is an example of the request.  From the response, the app manageme
   "name": "get_appManagementPolicy"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 ```
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-appmanagementpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-appmanagementpolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -99,6 +99,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-usersource-and-include-sources-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-usersource-and-include-sources-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

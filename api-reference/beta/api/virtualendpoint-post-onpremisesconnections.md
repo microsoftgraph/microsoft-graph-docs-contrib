@@ -121,6 +121,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

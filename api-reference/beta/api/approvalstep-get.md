@@ -19,18 +19,36 @@ Retrieve the properties of an [approvalStep](../resources/approvalstep.md) objec
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### Permissions required for calling this API for entitlement management
+
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
+### Permissions required for calling this API for PIM for groups
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | PrivilegedAssignmentSchedule.Read.AzureADGroup, PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+To get an approval step in entitlement management:
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}
+```
+
+To get an approval step in PIM for groups:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps/{id}
 ```
 
 ## Request headers
@@ -52,8 +70,6 @@ If successful, this method returns a `200 OK` response code and the [approvalSte
 ### Request
 
 The following is an example of the request.
-
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -83,6 +99,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-approvalstep-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-approvalstep-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -124,5 +144,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

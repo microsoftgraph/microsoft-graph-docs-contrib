@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-ceb
 [!INCLUDE [sample-code](../includes/snippets/php/get-ediscoveryreviewsetquery-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-ediscoveryreviewsetquery-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

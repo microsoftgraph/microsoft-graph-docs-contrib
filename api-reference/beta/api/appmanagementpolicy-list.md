@@ -64,7 +64,7 @@ The following is an example of the request.
   "name": "list_appManagementPolicies"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/appManagementPolicies
 ```
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-appmanagementpolicies-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-appmanagementpolicies-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

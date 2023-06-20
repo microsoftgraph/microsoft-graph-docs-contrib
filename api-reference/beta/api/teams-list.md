@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/teams
 [!INCLUDE [sample-code](../includes/snippets/php/get-teams-in-org-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-teams-in-org-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -162,6 +166,10 @@ GET https://graph.microsoft.com/beta/teams?$filter=startswith(displayName, 'A')&
 [!INCLUDE [sample-code](../includes/snippets/php/get-teams-filter-top-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-teams-filter-top-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -229,6 +237,10 @@ GET https://graph.microsoft.com/beta/teams?$filter=displayName eq 'A Contoso Tea
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-teams-filter-select-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-teams-filter-select-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

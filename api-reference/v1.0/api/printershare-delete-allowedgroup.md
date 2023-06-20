@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedGro
 [!INCLUDE [sample-code](../includes/snippets/php/delete-allowedgroup-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-allowedgroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

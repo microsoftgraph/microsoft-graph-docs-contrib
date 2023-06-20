@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/me/profile/addresses/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/get-itemaddress-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-itemaddress-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

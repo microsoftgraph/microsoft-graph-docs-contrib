@@ -17,6 +17,8 @@ Deletes a user's [email Authentication Method](../resources/emailauthenticationm
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### Permissions acting on self
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
@@ -35,10 +37,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Delete the email method from your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
+<!-- {  "blockType": "ignored" } -->
+``` http
+DELETE /me/authentication/emailMethods/{id}
+```
+
+Delete the email authentication method from another user's account.
+<!-- {  "blockType": "ignored" } -->
 ``` http
 DELETE /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 ```
@@ -92,6 +98,10 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/ema
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-emailauthenticationmethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-emailauthenticationmethod-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

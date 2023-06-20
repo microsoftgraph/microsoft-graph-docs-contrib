@@ -1,7 +1,7 @@
 ---
 title: "presence: setPresence"
 description: "Set the presence information for a user's application presence session."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "cloud-communications"
@@ -127,6 +127,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/set-presence-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/set-presence-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new PoliciesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new PoliciesRequestBuilderGetQueryParameters();
+$queryParameters = PoliciesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identity()->conditionalAccess()->policies()->get($requestConfiguration);
+$result = $graphServiceClient->identity()->conditionalAccess()->policies()->get($requestConfiguration);
 
 
 ```

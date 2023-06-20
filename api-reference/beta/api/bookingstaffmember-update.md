@@ -61,7 +61,7 @@ The following example changes the staff member's schedule to have Mondays off.
   "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "8ee1c803-a1fa-406d-8259-7ab53233f148"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffMembers/8ee1c803-a1fa-406d-8259-7ab53233f148
 Content-type: application/json
 
 {
@@ -130,6 +130,10 @@ Content-type: application/json
     ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingstaffmember-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingstaffmember-javascript-snippets.md)]

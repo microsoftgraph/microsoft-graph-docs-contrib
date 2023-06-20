@@ -26,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
+[!INCLUDE [rbac-directory-role-apis-read](../includes/rbac-for-apis/rbac-directory-role-apis-read.md)]
+
 ## HTTP request
 
 You can address the directory role using either its **id** or **roleTemplateId**.
@@ -86,6 +88,10 @@ GET https://graph.microsoft.com/beta/directoryRoles/fe8f10bf-c9c2-47eb-95cb-c26c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-directoryrole-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-directoryrole-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

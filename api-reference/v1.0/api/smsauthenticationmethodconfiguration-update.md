@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Update the properties of a [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) object, which represents the text message authentication method policy for the Azure AD tenant.
+Update the properties of a [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) object, which represents the SMS authentication method policy for the Azure AD tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -98,8 +98,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-smsauthenticationmethodconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-smsauthenticationmethodconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 The following is an example of the response

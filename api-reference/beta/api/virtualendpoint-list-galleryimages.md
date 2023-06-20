@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryIma
 [!INCLUDE [sample-code](../includes/snippets/php/list-cloudpcgalleryimage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-cloudpcgalleryimage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

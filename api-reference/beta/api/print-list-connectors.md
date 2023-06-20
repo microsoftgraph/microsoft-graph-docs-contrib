@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/print/connectors
 [!INCLUDE [sample-code](../includes/snippets/php/get-connectors-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-connectors-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
