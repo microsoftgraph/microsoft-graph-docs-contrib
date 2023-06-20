@@ -13024,7 +13024,7 @@ items:
                   href: api/rolemanagementalert-list-alertdefinitions.md
                 - name: Get
                   href: api/unifiedrolemanagementalertdefinition-get.md
-              - name: Role management alert configurations
+              - name: Alert configurations
                 href: resources/unifiedrolemanagementalertconfiguration.md
                 items:
                 - name: List
