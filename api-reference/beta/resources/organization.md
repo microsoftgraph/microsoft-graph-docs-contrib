@@ -58,6 +58,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | id | String | The tenant ID, a unique identifier representing the organization (or tenant). Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | `true` if organization is Multi-Geo enabled; `false` if organization is not Multi-Geo enabled; `null` (default). Read-only. For more information, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | String collection | Not nullable. |
+| onPremisesLastPasswordSyncDateTime  | DateTimeOffset  | The last time a password sync request was received for the tenant. |
 | onPremisesLastSyncDateTime | DateTimeOffset | The time and date at which the tenant was last synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 | onPremisesSyncEnabled | Boolean | `true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; Nullable. `null` if this object has never been synced from an on-premises directory (default). |
 | partnerTenantType | partnerTenantType | The type of partnership this tenant has with Microsoft. The possible values are: `microsoftSupport`, `syndicatePartner`, `breadthPartner`, `breadthPartnerDelegatedAdmin`, `resellerPartnerDelegatedAdmin`, `valueAddedResellerPartnerDelegatedAdmin`, `unknownFutureValue`. Nullable. For more information about the possible types, see [partnerTenantType values](#partnertenanttype-values).|
@@ -112,16 +113,19 @@ Here is a JSON representation of the resource
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "businessPhones": ["String"],
   "city": "String",
+  "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
   "country": "String",
   "countryLetterCode": "String",
   "createdDateTime": "String (timestamp)",
   "defaultUsageLocation": "String",
   "deletedDateTime": "String (timestamp)",
   "directorySizeQuota": {"@odata.type": "microsoft.graph.directorySizeQuota"},
+  "dirSyncEnabled": true,
   "displayName": "String",
   "id": "String (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "Boolean",
   "marketingNotificationEmails": ["String"],
+  "onPremisesLastPasswordSyncDateTime": "String (timestamp)",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "partnerTenantType": "String",
@@ -135,9 +139,7 @@ Here is a JSON representation of the resource
   "street": "String",
   "technicalNotificationMails": ["String"],
   "tenantType": "string",
-  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}],
-  "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
-  "dirSyncEnabled": true
+  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
 ```
 
