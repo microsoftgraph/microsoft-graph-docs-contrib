@@ -29,9 +29,9 @@ Restrictions on app management operations for specific applications and service 
 
 | Property     | Type                                                        | Description                                                            |
 | :----------- | :---------------------------------------------------------- | :--------------------------------------------------------------------- |
-| displayName  | String                                                      | The display name of the policy. Inherited from [policyBase](policybase.md).                                        |
+| displayName  | String                                                      | The display name of the policy. Inherited from [policyBase](policybase.md). |
 | description  | String                                                      | The description of the policy. Inherited from [policyBase](policybase.md).  |
-| id           | String                                                      | Identifier for the policy.                                                 |
+| id           | String                                                      | The unique identifier for the policy.                                       |
 | isEnabled    | Boolean                                                     | Denotes whether the policy is enabled.                                      |
 | restrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. |
 
