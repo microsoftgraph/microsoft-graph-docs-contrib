@@ -13,52 +13,9 @@ To mitigate this challenge we built the [`mgt-spfx`](https://github.com/microsof
 
 To allow developers to build web parts using the latest version of MGT and load them on pages along with web parts that use v2.x of MGT, we've added a new disambiguation feature to MGT. Using this feature developers can specify a unique string to add to the tag name of all MGT web components in their application. When using disambiguation the suppied value is inserted as the second segment of the tag name, so when using `customElementHelper.withDisambiguation('foo')` the `<mgt-login>` tag is referenced using `<mgt-foo-login>`.
 
-## Usage in standard HTML and JavaScript
-
-To make use of the disambiguation feature when using standard HTML and JavaScript you should call `customElementHelper.withDisambiguation()` prior to loading the `@microsoft/mgt-components` module.
-
-```html
-<script type="module">
-  import { Providers, customElementHelper } from '@microsoft/mgt-element';
-  import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
-  // configure disambiguation
-  customElementHelper.withDisambiguation('contoso');
-
-  // initialize the auth provider globally
-  Providers.globalProvider = new Msal2Provider({clientId: 'clientId'});
-
-  // import the components using dynamic import to avoid hoisting
-  import('@microsoft/mgt-components');
-</script>
-
-<mgt-contoso-login></mgt-contoso-login>
-<mgt-contoso-person person-query="Bill Gates" person-card="hover"></mgt-contoso-person>
-<mgt-contoso-agenda group-by-day></mgt-contoso-agenda>
-```
-
-> [!Important]
-> The `import` of `mgt-components` must use a [dynamic import](#dynamic-imports-aka-lazy-loading) to ensure that the disambiguation is applied before the components are imported. If a static import is used it is [hoisted](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) and the import will occur before disambiguation can be applied.
-## Usage in React
-
-To make use of disambiguation in a React application you should call `customElementHelper.withDisambiguation()` before loading and rendering your root component. To help with lazy loading in this secnario React provides the `lazy` function and `Suspense` component in React version 16.6 and up. Because the disambiguation value is only used when rendering the web component there is no change to the way a given component is referenced in React code.
-
-```TypeScript
-import React, { lazy, Suspense } from 'react';
-import ReactDOM from 'react-dom';
-import { customElementHelper, Providers } from '@microsoft/mgt-element';
-import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
-
-customElementHelper.withDisambiguation('contoso');
-
-Providers.globalProvider = new Msal2Provider({ clientId: 'clientId' });
-
-const App = lazy(() => import('./App'));
-ReactDOM.render(<Suspense fallback='...'><App /></Suspense>, document.getElementById('root'));
-```
-
 ## Usage in SharePoint Framework web parts with React
 
-When building SharePoint Framework web parts using React any component that imports from the `@microsoft/mgt-react` library must be asynchronously loaded after configuring the disambiguation setting. The `lazyLoadComponent` helper function exists to facilitate using `React.lazy` and `React.Suspense` to lazy load these components from the top level web part. The `lazyLoadComponent` function is provided in the `@microsft/mgt-spfx-utils` package.
+When building SharePoint Framework web parts using React any component that imports from the `@microsoft/mgt-react` library must be asynchronously loaded after configuring the disambiguation setting. The `lazyLoadComponent` helper function exists to facilitate using `React.lazy` and `React.Suspense` to lazy load these components from the top level web part. The `lazyLoadComponent` function is provided in the `@microsft/mgt-spfx-utils` package. Because the disambiguation value is only used when rendering the web component there is no change to the way a given component is referenced in React code.
 
 Below is a minimal example web part that demonstrates how to use MGT with disambiguation in React based SharePoint Framework Web parts. A complete example is available in the [React SharePoint Web Part Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/main/samples/sp-webpart/src/webparts/mgtDemo/MgtDemoWebPart.ts).
 
@@ -117,13 +74,57 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 }
 ```
 
+## Usage in React
+
+To make use of disambiguation in a React application you should call `customElementHelper.withDisambiguation()` before loading and rendering your root component. To help with lazy loading in this secnario React provides the `lazy` function and `Suspense` component in React version 16.6 and up.
+
+```TypeScript
+import React, { lazy, Suspense } from 'react';
+import ReactDOM from 'react-dom';
+import { customElementHelper, Providers } from '@microsoft/mgt-element';
+import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+
+customElementHelper.withDisambiguation('contoso');
+
+Providers.globalProvider = new Msal2Provider({ clientId: 'clientId' });
+
+const App = lazy(() => import('./App'));
+ReactDOM.render(<Suspense fallback='...'><App /></Suspense>, document.getElementById('root'));
+```
+
+## Usage in standard HTML and JavaScript
+
+To make use of the disambiguation feature when using standard HTML and JavaScript you should call `customElementHelper.withDisambiguation()` prior to importing the `@microsoft/mgt-components` module.
+
+```html
+<script type="module">
+  import { Providers, customElementHelper } from '@microsoft/mgt-element';
+  import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+  // configure disambiguation
+  customElementHelper.withDisambiguation('contoso');
+
+  // initialize the auth provider globally
+  Providers.globalProvider = new Msal2Provider({clientId: 'clientId'});
+
+  // import the components using dynamic import to avoid hoisting
+  import('@microsoft/mgt-components');
+</script>
+
+<mgt-contoso-login></mgt-contoso-login>
+<mgt-contoso-person person-query="Bill Gates" person-card="hover"></mgt-contoso-person>
+<mgt-contoso-agenda group-by-day></mgt-contoso-agenda>
+```
+
+> [!Important]
+> The `import` of `mgt-components` must use a [dynamic import](#dynamic-imports-aka-lazy-loading) to ensure that the disambiguation is applied before the components are imported. If a static import is used it is [hoisted](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) and the import will occur before disambiguation can be applied.
+
 ## Dynamic imports aka Lazy Loading
 
 Using dynamic imports you can load dependencies asynchronously. This pattern allows you to load dependencies only when needed. For example, you may want to load a component only when a user clicks a button. This is a great way to reduce the initial load time of your application. In the context of disambiguation, you need to use this technique because components register themselves in the browser when they are imported.
 
 **Important:** If you import the components before you have applied the disambiguation, the disambiguation will not be applied and using the disambiguated tag name will not work.
 
-When using an `import` statement the import statement is hoisted and executed before any other code in the code block. To use dynamic imports you must use the `import()` function. The `import()` function returns a promise that resolves to the module. You can also use the `then` method to execute code after the module is loaded and the `catch` method to handle any errors if necessary.
+When using an `import` statement the import statement is [hoisted](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) and executed before any other code in the code block. To use dynamic imports you must use the `import()` function. The `import()` function returns a promise that resolves to the module. You can also use the `then` method to execute code after the module is loaded and the `catch` method to handle any errors if necessary.
 
 ### Example using dynamic imports
 
