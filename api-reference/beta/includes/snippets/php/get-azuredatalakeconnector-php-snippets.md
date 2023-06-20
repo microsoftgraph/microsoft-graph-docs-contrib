@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->external()->industryData()->dataConnectorsById('industryDataConnector-id')->get();
+$result = $graphServiceClient->external()->industryData()->dataConnectors()->byDataConnectorId('industryDataConnector-id')->get();
 
 
 ```

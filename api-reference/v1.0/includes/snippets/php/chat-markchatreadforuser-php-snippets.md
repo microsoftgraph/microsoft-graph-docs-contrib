@@ -23,7 +23,7 @@ $user->setAdditionalData($additionalData);
 $requestBody->setUser($user);
 
 
-$graphServiceClient->chatsById('chat-id')->markChatReadForUser()->post($requestBody);
+$graphServiceClient->chats()->byChatId('chat-id')->markChatReadForUser()->post($requestBody);
 
 
 ```

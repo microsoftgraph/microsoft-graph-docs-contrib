@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/users/alexd@contoso.
 
 
 
-$graphServiceClient->groupsById('group-id')->acceptedSenders()->ref()->post($requestBody);
+$graphServiceClient->groups()->byGroupId('group-id')->acceptedSenders()->ref()->post($requestBody);
 
 
 ```

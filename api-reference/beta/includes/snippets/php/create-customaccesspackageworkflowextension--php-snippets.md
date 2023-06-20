@@ -40,7 +40,7 @@ $authenticationConfiguration->setAdditionalData($additionalData);
 $requestBody->setAuthenticationConfiguration($authenticationConfiguration);
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogsById('accessPackageCatalog-id')->customAccessPackageWorkflowExtensions()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogs()->byAccessPackageCatalogId('accessPackageCatalog-id')->customAccessPackageWorkflowExtensions()->post($requestBody);
 
 
 ```

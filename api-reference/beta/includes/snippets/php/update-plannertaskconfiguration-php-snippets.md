@@ -156,7 +156,7 @@ $editPolicy->setRules($rulesArray);
 $requestBody->setEditPolicy($editPolicy);
 
 
-$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->taskConfiguration()->patch($requestBody);
+$result = $graphServiceClient->solutions()->businessScenarios()->byBusinessScenarioId('businessScenario-id')->planner()->taskConfiguration()->patch($requestBody);
 
 
 ```

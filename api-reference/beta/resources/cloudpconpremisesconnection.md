@@ -117,6 +117,7 @@ The following is a JSON representation of the resource.
         "endDateTime": "String (timestamp)",
         "errorType": "String",
         "recommendedAction": "String",
+        "correlationId": "String",
         "startDateTime": "String (timestamp)",
         "status": "String"
       }

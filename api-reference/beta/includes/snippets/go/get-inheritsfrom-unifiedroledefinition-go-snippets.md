@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/rolemanagement"
+	  graphrolemanagement "github.com/microsoftgraph/msgraph-beta-sdk-go/rolemanagement"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.RoleManagementDirectoryRoleDefinitionItemRequestBuilderGetQueryParameters{
+requestParameters := &graphrolemanagement.RoleManagementDirectoryRoleDefinitionItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"inheritsPermissionsFrom"},
 }
-configuration := &graphconfig.RoleManagementDirectoryRoleDefinitionItemRequestBuilderGetRequestConfiguration{
+configuration := &graphrolemanagement.RoleManagementDirectoryRoleDefinitionItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

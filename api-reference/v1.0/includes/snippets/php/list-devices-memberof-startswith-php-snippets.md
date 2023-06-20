@@ -18,11 +18,11 @@ $requestConfiguration->headers = $headers;
 $queryParameters = GroupRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->count = true;
 $queryParameters->orderby = ["displayName"];
-$queryParameters->filter = "startswith(displayName,%20'A')";
+$queryParameters->filter = "startswith(displayName, 'A')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->devicesById('device-id')->memberOf()->graphGroup()->get($requestConfiguration);
+$result = $graphServiceClient->devices()->byDeviceId('device-id')->memberOf()->graphGroup()->get($requestConfiguration);
 
 
 ```

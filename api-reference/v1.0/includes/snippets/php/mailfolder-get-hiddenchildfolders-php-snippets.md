@@ -11,11 +11,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ChildFoldersRequestBuilderGetRequestConfiguration();
 $queryParameters = ChildFoldersRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->includehiddenfolders = true;
+$queryParameters->includeHiddenFolders = "true";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->childFolders()->get($requestConfiguration);
+$result = $graphServiceClient->me()->mailFolders()->byMailFolderId('mailFolder-id')->childFolders()->get($requestConfiguration);
 
 
 ```

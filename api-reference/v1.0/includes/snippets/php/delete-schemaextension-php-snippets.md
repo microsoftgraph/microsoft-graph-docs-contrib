@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->schemaExtensionsById('schemaExtension-id')->delete();
+$graphServiceClient->schemaExtensions()->bySchemaExtensionId('schemaExtension-id')->delete();
 
 
 ```
