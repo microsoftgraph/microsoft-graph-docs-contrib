@@ -54,7 +54,6 @@ userMatchingSetting1.SetAdditionalData(additionalData)
 userMatchingSettings := []graphmodelsindustrydata.UserMatchingSettingable {
 	userMatchingSetting,
 	userMatchingSetting1,
-
 }
 requestBody.SetUserMatchingSettings(userMatchingSettings)
 

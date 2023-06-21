@@ -13867,7 +13867,7 @@ items:
                 href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-            - name: Text Message policy
+            - name: SMS policy
               href: resources/smsAuthenticationMethodConfiguration.md
               items:
               - name: Get

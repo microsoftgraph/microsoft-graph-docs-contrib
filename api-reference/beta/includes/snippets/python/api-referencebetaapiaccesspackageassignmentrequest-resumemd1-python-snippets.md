@@ -12,17 +12,16 @@ request_body.source = 'Contoso.SodCheckProcess'
 
 request_body.type = 'microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated'
 
-data = CustomExtensionData()
+data = AccessPackageAssignmentRequestCallbackData()
 data.@odata_type = 'microsoft.graph.accessPackageAssignmentRequestCallbackData'
 
-additional_data = [
-'stage' => 'AssignmentRequestCreated', 
-'custom_extension_stage_instance_id' => '857d0c50-466b-4840-bb5b-c92cea7141ff', 
-'state' => 'denied', 
-'custom_extension_stage_instance_detail' => 'Potential risk user based on the SOD check', 
-];
-data.additional_data(additional_data)
+data.stage(AccessPackageCustomExtensionStage.AssignmentRequestCreated('accesspackagecustomextensionstage.assignmentrequestcreated'))
 
+data.custom_extension_stage_instance_id = '857d0c50-466b-4840-bb5b-c92cea7141ff'
+
+data.state = 'denied'
+
+data.custom_extension_stage_instance_detail = 'Potential risk user based on the SOD check'
 
 
 request_body.data = data
