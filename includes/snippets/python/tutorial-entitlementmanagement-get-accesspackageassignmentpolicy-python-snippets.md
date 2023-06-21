@@ -23,17 +23,14 @@ requestor_settings.scope_type = 'SpecificDirectorySubjects'
 
 requestor_settings.accept_requests = True
 
-allowed_requestors_user_set1 = UserSet()
+allowed_requestors_user_set1 = SingleUser()
 allowed_requestors_user_set1.@odata_type = '#microsoft.graph.singleUser'
 
 allowed_requestors_user_set1.is_backup = False
 
-additional_data = [
-'id' => '007d1c7e-7fa8-4e33-b678-5e437acdcddc', 
-'description' => 'Requestor1', 
-];
-allowed_requestors_user_set1.additional_data(additional_data)
+allowed_requestors_user_set1.id = '007d1c7e-7fa8-4e33-b678-5e437acdcddc'
 
+allowed_requestors_user_set1.description = 'Requestor1'
 
 
 allowedRequestorsArray []= allowedRequestorsUserSet1;

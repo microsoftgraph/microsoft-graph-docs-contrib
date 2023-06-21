@@ -14,7 +14,7 @@ deployment_settings = DeploymentSettings()
 deployment_settings.@odata_type = 'microsoft.graph.windowsUpdates.deploymentSettings'
 
 deployment_settingsschedule = ScheduleSettings()
-deployment_settingsschedulegradual_rollout = GradualRolloutSettings()
+deployment_settingsschedulegradual_rollout = RateDrivenRolloutSettings()
 deployment_settingsschedulegradual_rollout.@odata_type = '#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings'
 
 deployment_settingsschedulegradual_rollout.durationbetweenoffers =  \DateInterval('P1D')

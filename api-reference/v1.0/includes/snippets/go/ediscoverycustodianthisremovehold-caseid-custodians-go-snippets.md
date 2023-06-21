@@ -19,7 +19,6 @@ requestBody := graphsecurity.NewRemoveHoldPostRequestBody()
 ids := []string {
 	"7f697316-43ed-48e1-977f-261be050db93",
 	"b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8",
-
 }
 requestBody.SetIds(ids)
 

@@ -28,7 +28,6 @@ select := []string {
 	"UserPrincipalName",
 	"TotalUsageInHour",
 	"DaysSinceLastSignIn",
-
 }
 requestBody.SetSelect(select)
 

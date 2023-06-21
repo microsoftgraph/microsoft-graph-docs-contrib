@@ -30,10 +30,9 @@ synchronizationSecretKeyStringValuePair1.SetKey(&key)
 value := "password-value"
 synchronizationSecretKeyStringValuePair1.SetValue(&value) 
 
-credentials := []graphserviceprincipals.SynchronizationSecretKeyStringValuePairable {
+credentials := []graphmodels.SynchronizationSecretKeyStringValuePairable {
 	synchronizationSecretKeyStringValuePair,
 	synchronizationSecretKeyStringValuePair1,
-
 }
 requestBody.SetCredentials(credentials)
 
