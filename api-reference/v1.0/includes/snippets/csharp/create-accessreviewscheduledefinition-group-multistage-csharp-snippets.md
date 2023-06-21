@@ -13,18 +13,11 @@ var requestBody = new AccessReviewScheduleDefinition
 	DisplayName = "Group Multi-stage Access Review",
 	DescriptionForAdmins = "New scheduled access review",
 	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com",
-	Scope = new AccessReviewScope
+	Scope = new AccessReviewQueryScope
 	{
 		OdataType = "#microsoft.graph.accessReviewQueryScope",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"query" , "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
-			},
-			{
-				"queryType" , "MicrosoftGraph"
-			},
-		},
+		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
+		QueryType = "MicrosoftGraph",
 	},
 	StageSettings = new List<AccessReviewStageSettings>
 	{

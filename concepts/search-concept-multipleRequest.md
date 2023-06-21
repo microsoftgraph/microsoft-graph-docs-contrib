@@ -265,10 +265,10 @@ Content-type: application/json
 
 ## Known limitations
 
-- The values used for the **from** and **size** properties in different [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) instances in the request body should be the same. The value used for the **queryString** property in different [searchQuery](graph/api/resources/searchquery?view=graph-rest-beta) instances in different **searchRequest** instances should be the same.
-- Duplicate entity types across different search requests in the request body are not allowed. For example, you cannot have a **bookmark** [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) and another **bookmark** [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in a request body.
-- The file entity types (**site**, **drive**, **driveItem**, **list**, and **listItem**) can only be present in the same search request of a request body. For example, you can't include a **site** entity in one [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) and a **drive** entity in a different [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in the request body. 
-- The [speller](search-concept-speller.md) functionality can only be used once and it should be included in the first [searchRequest](graph/api/resources/searchrequest?view=graph-rest-beta) in the request body.
+- The values used for the **from** and **size** properties in different [searchRequest](/graph/api/resources/searchRequest) instances in the request body should be the same. The value used for the **queryString** property in different [searchQuery](/graph/api/resources/searchquery) instances in different **searchRequest** instances should be the same.
+- Duplicate entity types across different search requests in the request body are not allowed. For example, you cannot have a **bookmark** [searchRequest](/graph/api/resources/searchRequest) and another **bookmark** [searchRequest](/graph/api/resources/searchRequest) in a request body.
+- The file entity types (**site**, **drive**, **driveItem**, **list**, and **listItem**) can only be present in the same search request of a request body. For example, you can't include a **site** entity in one [searchRequest](/graph/api/resources/searchRequest) and a **drive** entity in a different [searchRequest](/graph/api/resources/searchRequest) in the request body. 
+- The [speller](search-concept-speller.md) functionality can only be used once and it should be included in the first [searchRequest](/graph/api/resources/searchRequest) in the request body.
 
 ## Next steps
 

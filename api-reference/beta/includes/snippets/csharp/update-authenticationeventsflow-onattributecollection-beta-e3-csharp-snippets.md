@@ -8,76 +8,71 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AuthenticationEventsFlow
+var requestBody = new ExternalUsersSelfServiceSignUpEventsFlow
 {
 	OdataType = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
-	AdditionalData = new Dictionary<string, object>
+	OnAttributeCollection = new OnAttributeCollectionExternalUsersSelfServiceSignUp
 	{
+		OdataType = "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
+		AttributeCollectionPage = new AuthenticationAttributeCollectionPage
 		{
-			"onAttributeCollection" , new 
+			CustomStringsFileId = null,
+			Views = new List<AuthenticationAttributeCollectionPageViewConfiguration>
 			{
-				OdataType = "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-				AttributeCollectionPage = new 
+				new AuthenticationAttributeCollectionPageViewConfiguration
 				{
-					CustomStringsFileId = null,
-					Views = new List<>
+					Title = null,
+					Description = null,
+					Inputs = new List<AuthenticationAttributeCollectionInputConfiguration>
 					{
-						new 
+						new AuthenticationAttributeCollectionInputConfiguration
 						{
-							Title = null,
-							Description = null,
-							Inputs = new List<>
+							Attribute = "email",
+							Label = "Email Address",
+							InputType = AuthenticationAttributeCollectionInputType.Text,
+							DefaultValue = null,
+							Hidden = true,
+							Editable = false,
+							WriteToDirectory = true,
+							Required = true,
+							ValidationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
+							Options = new List<AuthenticationAttributeCollectionOptionConfiguration>
 							{
-								new 
-								{
-									Attribute = "email",
-									Label = "Email Address",
-									InputType = "text",
-									DefaultValue = null,
-									Hidden = true,
-									Editable = false,
-									WriteToDirectory = true,
-									Required = true,
-									ValidationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
-									Options = new List<>
-									{
-									},
-								},
-								new 
-								{
-									Attribute = "displayName",
-									Label = "Display Name",
-									InputType = "text",
-									DefaultValue = null,
-									Hidden = false,
-									Editable = true,
-									WriteToDirectory = true,
-									Required = false,
-									ValidationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
-									Options = new List<>
-									{
-									},
-								},
-								new 
-								{
-									Attribute = "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
-									Label = "Favorite color",
-									InputType = "text",
-									DefaultValue = null,
-									Hidden = false,
-									Editable = true,
-									WriteToDirectory = true,
-									Required = false,
-									ValidationRegEx = "^.*",
-									Options = new List<>
-									{
-									},
-								},
+							},
+						},
+						new AuthenticationAttributeCollectionInputConfiguration
+						{
+							Attribute = "displayName",
+							Label = "Display Name",
+							InputType = AuthenticationAttributeCollectionInputType.Text,
+							DefaultValue = null,
+							Hidden = false,
+							Editable = true,
+							WriteToDirectory = true,
+							Required = false,
+							ValidationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
+							Options = new List<AuthenticationAttributeCollectionOptionConfiguration>
+							{
+							},
+						},
+						new AuthenticationAttributeCollectionInputConfiguration
+						{
+							Attribute = "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
+							Label = "Favorite color",
+							InputType = AuthenticationAttributeCollectionInputType.Text,
+							DefaultValue = null,
+							Hidden = false,
+							Editable = true,
+							WriteToDirectory = true,
+							Required = false,
+							ValidationRegEx = "^.*",
+							Options = new List<AuthenticationAttributeCollectionOptionConfiguration>
+							{
 							},
 						},
 					},
 				},
-			}
+			},
 		},
 	},
 };

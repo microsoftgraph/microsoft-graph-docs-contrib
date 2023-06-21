@@ -12,44 +12,36 @@ request_body.@odata_type = '#microsoft.graph.accessPackageAssignmentRequest'
 
 request_body.requesttype(AccessPackageRequestType.UserAdd('accesspackagerequesttype.useradd'))
 
-answers_access_package_answer1 = AccessPackageAnswer()
+answers_access_package_answer1 = AccessPackageAnswerString()
 answers_access_package_answer1.@odata_type = '#microsoft.graph.accessPackageAnswerString'
 
 answers_access_package_answer1.display_value = 'This is the answer to a multiple choice question'
 
-answers_access_package_answer1answered_question = AccessPackageQuestion()
+answers_access_package_answer1.value = 'MultipleChoiceAnswerValue'
+
+answers_access_package_answer1answered_question = AccessPackageMultipleChoiceQuestion()
 answers_access_package_answer1answered_question.@odata_type = '#microsoft.graph.accessPackageMultipleChoiceQuestion'
 
 answers_access_package_answer1answered_question.id = '8fe745e7-80b2-490d-bd22-4e708c77288c'
 
 
 answers_access_package_answer1.answered_question = answers_access_package_answer1answered_question
-additional_data = [
-'value' => 'MultipleChoiceAnswerValue', 
-];
-answers_access_package_answer1.additional_data(additional_data)
-
-
 
 answersArray []= answersAccessPackageAnswer1;
-answers_access_package_answer2 = AccessPackageAnswer()
+answers_access_package_answer2 = AccessPackageAnswerString()
 answers_access_package_answer2.@odata_type = '#microsoft.graph.accessPackageAnswerString'
+
+answers_access_package_answer2.value = 'This is my answer to a text input question.'
 
 answers_access_package_answer2.display_value = 'This is my answer.'
 
-answers_access_package_answer2answered_question = AccessPackageQuestion()
+answers_access_package_answer2answered_question = AccessPackageTextInputQuestion()
 answers_access_package_answer2answered_question.@odata_type = '#microsoft.graph.accessPackageTextInputQuestion'
 
 answers_access_package_answer2answered_question.id = '7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6'
 
 
 answers_access_package_answer2.answered_question = answers_access_package_answer2answered_question
-additional_data = [
-'value' => 'This is my answer to a text input question.', 
-];
-answers_access_package_answer2.additional_data(additional_data)
-
-
 
 answersArray []= answersAccessPackageAnswer2;
 request_body.answers(answersArray)
