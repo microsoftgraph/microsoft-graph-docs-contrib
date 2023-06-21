@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "synchronizationschema_parseexpression"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{id}/schema/parseExpression
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{id}/schema/parseExpression
 Content-type: application/json
 
 {
@@ -115,9 +115,6 @@ Content-type: application/json
 }
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-parseexpression-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
