@@ -168,8 +168,8 @@ This example creates a new activity and a history item for that activity in one 
 The following is an example of the request.
 
 <!-- {
-    "blockType": "ignored",
-    "name": "upsert_activity"
+    "blockType": "request",
+    "name": "upsert_activity2"
 } -->
 
 ```http
@@ -225,7 +225,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "response",
     "truncated": true,
     "@odata.type": "Edm.String"
 } -->
