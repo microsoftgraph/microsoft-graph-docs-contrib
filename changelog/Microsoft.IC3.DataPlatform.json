@@ -7,7 +7,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "clientLocalIpV4Address",
                 "ChangeType": "Addition",
-                "Description": "Added the `clientLocalIpV4Address` property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
+                "Description": "Added the **clientLocalIpV4Address** property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
                 "Target": "pstnCallLogRow"
               },
               {
@@ -15,7 +15,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "clientLocalIpV6Address",
                 "ChangeType": "Addition",
-                "Description": "Added the `clientLocalIpV6Address` property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
+                "Description": "Added the **clientLocalIpV6Address** property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
                 "Target": "pstnCallLogRow"
               },
               {
@@ -23,7 +23,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "clientPublicIpV4Address",
                 "ChangeType": "Addition",
-                "Description": "Added the `clientPublicIpV4Address` property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
+                "Description": "Added the **clientPublicIpV4Address** property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
                 "Target": "pstnCallLogRow"
               },
               {
@@ -31,7 +31,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "clientPublicIpV6Address",
                 "ChangeType": "Addition",
-                "Description": "Added the `clientPublicIpV6Address` property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
+                "Description": "Added the **clientPublicIpV6Address** property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-pstnCallLogRow?view=graph-rest-beta) resource.",
                 "Target": "pstnCallLogRow"
               }
             ],
@@ -39,8 +39,8 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-06-19T07:38:13.9482874Z",
-            "WorkloadArea": "Cloud communications",
-            "SubArea": "Online meeting"
+            "WorkloadArea": "Teamwork and communications",
+            "SubArea": "Calls and online meetings"
         },
         {
             "ChangeList": [
