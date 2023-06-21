@@ -24,13 +24,13 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |clusterIP|[microsoft.graph.security.ipEvidence](./security-ipevidence.md)|The service cluster IP.|
 |createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [alertEvidence](../resources/security-alertevidence.md). |
 |externalIPs|[microsoft.graph.security.ipEvidence](./security-ipevidence.md) collection|The service external IPs.|
-|labels|Dictionary<string, string>|The service labels.|
+|labels|[microsoft.graph.security.Dictionary_2OfString_String](./security-dictionarystringtostring)|The service labels.|
 |name|String|The service name.|
 |namespace|[microsoft.graph.security.kubernetesNamespaceEvidence](./security-kubernetesnamespaceevidence.md)|The service namespace.|
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 |remediationStatusDetails|String|Details about the remediation status. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 |roles|[microsoft.graph.security.evidenceRole](../resources/security-alertevidence.md#evidencerole-values) collection|One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role `Attacker`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
-|selector|Dictionary<string, string>|The service selector.|
+|selector|[microsoft.graph.security.Dictionary_2OfString_String](./security-dictionarystringtostring)|The service selector.|
 |servicePorts|[microsoft.graph.security.kubernetesServicePort](./security-kubernetesserviceport.md) collection|The service ports list.|
 |serviceType|[microsoft.graph.security.kubernetesServiceType](#kubernetesservicetype-values)|The service type.|
 |tags|String collection|Array of custom tags associated with an evidence instance. For example, to denote a group of devices or high value assets. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
@@ -70,7 +70,9 @@ The following is a JSON representation of the resource.
   "externalIPs": [{
     "@odata.type": "microsoft.graph.security.ipEvidence"
   }],
-  "labels": "Dictionary<string, string>",
+  "labels": {
+    "@odata.type": "microsoft.graph.security.Dictionary_2OfString_String"
+  },
   "name": "String",
   "namespace": {
     "@odata.type": "microsoft.graph.security.kubernetesNamespaceEvidence"
@@ -78,7 +80,9 @@ The following is a JSON representation of the resource.
   "remediationStatus": "String",
   "remediationStatusDetails": "String",
   "roles": ["String"],
-  "selector": "Dictionary<string, string>",
+  "selector": {
+    "@odata.type": "microsoft.graph.security.Dictionary_2OfString_String"
+  },
   "servicePorts": [{
     "@odata.type": "microsoft.graph.security.kubernetesServicePort"
   }],
