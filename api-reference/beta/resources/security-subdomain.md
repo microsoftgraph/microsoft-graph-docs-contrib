@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an internet domain that is part of a primary domain. As an example, **learn.microsoft.com** is a subdomain of **microsoft.com**. For every subdomain, there could be a new set of IP addresses which the domain resolves to, and this can be a great data source for finding related infrastructure.
+Represents an internet domain that is part of a primary domain. As an example, **learn.microsoft.com** is a subdomain of **microsoft.com**. 
 
 ## Methods
 
