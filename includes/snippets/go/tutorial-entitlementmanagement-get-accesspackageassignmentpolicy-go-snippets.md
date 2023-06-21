@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
@@ -33,18 +33,16 @@ acceptRequests := true
 requestorSettings.SetAcceptRequests(&acceptRequests) 
 
 
-userSet := graphmodels.NewUserSet()
+userSet := graphmodels.NewSingleUser()
 isBackup := false
 userSet.SetIsBackup(&isBackup) 
-additionalData := map[string]interface{}{
-	"id" : "007d1c7e-7fa8-4e33-b678-5e437acdcddc", 
-	"description" : "Requestor1", 
-}
-userSet.SetAdditionalData(additionalData)
+id := "007d1c7e-7fa8-4e33-b678-5e437acdcddc"
+userSet.SetId(&id) 
+description := "Requestor1"
+userSet.SetDescription(&description) 
 
 allowedRequestors := []graphmodels.UserSetable {
 	userSet,
-
 }
 requestorSettings.SetAllowedRequestors(allowedRequestors)
 requestBody.SetRequestorSettings(requestorSettings)

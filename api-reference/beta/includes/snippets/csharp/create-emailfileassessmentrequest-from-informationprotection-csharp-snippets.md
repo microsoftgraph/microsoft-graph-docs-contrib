@@ -8,20 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new ThreatAssessmentRequest
+var requestBody = new EmailFileAssessmentRequest
 {
 	OdataType = "#microsoft.graph.emailFileAssessmentRequest",
+	RecipientEmail = "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
 	ExpectedAssessment = ThreatExpectedAssessment.Block,
 	Category = ThreatCategory.Malware,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"recipientEmail" , "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"
-		},
-		{
-			"contentData" , "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
-		},
-	},
+	ContentData = "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC.....",
 };
 var result = await graphClient.InformationProtection.ThreatAssessmentRequests.PostAsync(requestBody);
 

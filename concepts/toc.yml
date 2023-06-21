@@ -487,9 +487,9 @@ items:
                     href: accessreviews-scope-concept.md
                   - name: Assign reviewers
                     href: accessreviews-reviewers-concept.md
-              - name: Use PIM to manage Azure AD roles
+              - name: Use PIM to manage Azure AD roles and groups
                 items:
-                  - name: Rules for Azure AD roles
+                  - name: Rules in PIM
                     href: identity-governance-pim-rules-overview.md
                     displayName: PIM rules, privileged identity management settings
                   - name: Customize and update rules
@@ -631,6 +631,8 @@ items:
             href: search-concept-searchall.md
           - name: Search multiple entity types
             href: search-concept-interleaving.md
+          - name: Search with multiple requests
+            href: search-concept-multipleRequest.md
           - name: Search Outlook events
             href: search-concept-events.md
           - name: Search Outlook messages
