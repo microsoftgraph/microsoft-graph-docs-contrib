@@ -54,7 +54,8 @@ The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "update-audioRoutingGroup"
-}-->
+}
+-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/communications/calls/{id}/audioRoutingGroups/{id}
 Content-Type: application/json
@@ -80,7 +81,8 @@ Content-Type: application/json
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.audioRoutingGroup"
-} -->
+}
+-->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json

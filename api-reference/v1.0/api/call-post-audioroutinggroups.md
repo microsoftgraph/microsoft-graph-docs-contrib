@@ -51,33 +51,12 @@ The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "create-audioRoutingGroup-from-call"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/communications/calls/{id}/audioRoutingGroups
-Content-Type: application/json
-Content-Length: 233
-{
-  "id": "oneToOne",
-  "routingMode": "oneToOne",
-  "sources": [
-    "632899f8-2ea1-4604-8413-27bd2892079f"
-  ],
-  "receivers": [
-    "550fae72-d251-43ec-868c-373732c2704f"
-  ]
 }
-```
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create-audioRoutingGroup-from-call"
-}-->
+-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/audioRoutingGroups
 Content-Type: application/json
 Content-Length: 233
-
 {
   "id": "oneToOne",
   "routingMode": "oneToOne",
@@ -103,7 +82,8 @@ In the request body, supply a JSON representation of [audioRoutingGroup](../reso
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.audioRoutingGroup"
-} -->
+}
+-->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -135,7 +115,8 @@ Content-Length: 233
   "blockType": "example",
   "name": "create-audioRoutingGroup-from-call",
   "@odata.type": "microsoft.graph.audioRoutingGroup"
-}-->
+}
+-->
 
 ```json
 {
@@ -166,7 +147,8 @@ Content-Length: 233
   "blockType": "example",
   "truncated": true,
   "@odata.type": "microsoft.graph.audioRoutingGroup"
-} -->
+}
+-->
 
 ```json
 {
