@@ -202,6 +202,13 @@ Namespace: microsoft.graph
 | renew              |
 | unknownFutureValue |
 
+### userSignInRecommendationScope values 
+
+| Member      |
+| :---------- |
+| tenant      |
+| application |
+
 ### unifiedRoleScheduleRequestActions values 
 
 | Member             |
