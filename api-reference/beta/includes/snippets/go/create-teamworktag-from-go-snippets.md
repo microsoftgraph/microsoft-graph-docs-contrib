@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTeamworkTag()
@@ -30,7 +30,6 @@ teamworkTagMember1.SetUserId(&userId)
 members := []graphmodels.TeamworkTagMemberable {
 	teamworkTagMember,
 	teamworkTagMember1,
-
 }
 requestBody.SetMembers(members)
 

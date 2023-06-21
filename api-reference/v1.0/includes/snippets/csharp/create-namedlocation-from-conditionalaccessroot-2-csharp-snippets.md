@@ -8,23 +8,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new NamedLocation
+var requestBody = new CountryNamedLocation
 {
 	OdataType = "#microsoft.graph.countryNamedLocation",
 	DisplayName = "Named location with unknown countries and regions",
-	AdditionalData = new Dictionary<string, object>
+	CountriesAndRegions = new List<string>
 	{
-		{
-			"countriesAndRegions" , new List<string>
-			{
-				"US",
-				"GB",
-			}
-		},
-		{
-			"includeUnknownCountriesAndRegions" , true
-		},
+		"US",
+		"GB",
 	},
+	IncludeUnknownCountriesAndRegions = true,
 };
 var result = await graphClient.Identity.ConditionalAccess.NamedLocations.PostAsync(requestBody);
 
