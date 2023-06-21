@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_microsofttunnelhealththreshold" }-->
+<!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelhealththreshold_update_update_microsofttunnelhealththreshold" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelHealthThresholds/{microsoftTunnelHealthThresholdId}
 Content-type: application/json

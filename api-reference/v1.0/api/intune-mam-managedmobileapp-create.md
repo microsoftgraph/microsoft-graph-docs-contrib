@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [managedM
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_managedmobileapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_managedmobileapp_create_create_managedmobileapp" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps
 Content-type: application/json

@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [user](../resour
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_user" }-->
+<!-- { "blockType": "request" , "name" : "intune_troubleshooting_user_get_get_user" }-->
 ``` http
 GET https://graph.microsoft.com/v1/users/{usersId}
 ```

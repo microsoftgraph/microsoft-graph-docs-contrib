@@ -85,7 +85,7 @@ If successful, this method returns a `201 Created` response code and a [mdmWindo
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_mdmwindowsinformationprotectionpolicy" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_mdmwindowsinformationprotectionpolicy_create_create_mdmwindowsinformationprotectionpolicy" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mdmWindowsInformationProtectionPolicies
 Content-type: application/json

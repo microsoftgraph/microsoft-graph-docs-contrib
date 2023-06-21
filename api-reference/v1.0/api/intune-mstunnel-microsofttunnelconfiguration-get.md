@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and [microsoftTunnel
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_microsofttunnelconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelconfiguration_get_get_microsofttunnelconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelConfigurations/{microsoftTunnelConfigurationId}
 ```

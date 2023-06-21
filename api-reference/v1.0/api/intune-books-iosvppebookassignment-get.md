@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [iosVppEBookAssi
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_iosvppebookassignment" }-->
+<!-- { "blockType": "request" , "name" : "intune_books_iosvppebookassignment_get_get_iosvppebookassignment" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 ```

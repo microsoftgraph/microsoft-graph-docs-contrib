@@ -50,7 +50,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "sendtestmessage_action" }-->
+<!-- { "blockType": "request" , "name" : "intune_notification_notificationmessagetemplate_sendtestmessage_sendtestmessage_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/sendTestMessage
 ```

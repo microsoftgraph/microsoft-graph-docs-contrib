@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [managedEBook](.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_managedebook" }-->
+<!-- { "blockType": "request" , "name" : "intune_books_managedebook_get_get_managedebook" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}
 ```

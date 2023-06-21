@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [windows10Mobile
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_windows10mobilecompliancepolicy" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windows10mobilecompliancepolicy_get_get_windows10mobilecompliancepolicy" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```

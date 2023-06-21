@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [managedDeviceMo
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_manageddevicemobileappconfigurationdevicesummary" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_manageddevicemobileappconfigurationdevicesummary_get_get_manageddevicemobileappconfigurationdevicesummary" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary
 ```

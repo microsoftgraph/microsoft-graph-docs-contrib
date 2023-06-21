@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [iosUpdateDevice
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_iosupdatedevicestatus" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_iosupdatedevicestatus_get_get_iosupdatedevicestatus" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ```

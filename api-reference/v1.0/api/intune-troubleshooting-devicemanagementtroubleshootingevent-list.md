@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "list_devicemanagementtroubleshootingevents" }-->
+<!-- { "blockType": "request" , "name" : "intune_troubleshooting_devicemanagementtroubleshootingevent_list_list_devicemanagementtroubleshootingevents" }-->
 ``` http
 GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
 ```

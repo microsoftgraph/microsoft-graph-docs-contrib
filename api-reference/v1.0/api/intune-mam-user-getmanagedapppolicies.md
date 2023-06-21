@@ -50,7 +50,7 @@ If successful, this function returns a `200 OK` response code and a [managedAppP
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "getmanagedapppolicies_function" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_user_getmanagedapppolicies_getmanagedapppolicies_function" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/{usersId}/getManagedAppPolicies
 ```

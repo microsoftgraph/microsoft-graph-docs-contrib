@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [deviceManagemen
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_devicemanagementtroubleshootingevent" }-->
+<!-- { "blockType": "request" , "name" : "intune_troubleshooting_devicemanagementtroubleshootingevent_get_get_devicemanagementtroubleshootingevent" }-->
 ``` http
 GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 ```

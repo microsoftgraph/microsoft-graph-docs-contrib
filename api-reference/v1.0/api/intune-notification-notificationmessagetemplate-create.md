@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [notifica
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_notificationmessagetemplate" }-->
+<!-- { "blockType": "request" , "name" : "intune_notification_notificationmessagetemplate_create_create_notificationmessagetemplate" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates
 Content-type: application/json

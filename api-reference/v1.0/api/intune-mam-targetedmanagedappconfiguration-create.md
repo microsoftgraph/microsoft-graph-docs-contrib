@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [targeted
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_targetedmanagedappconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_targetedmanagedappconfiguration_create_create_targetedmanagedappconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/targetedManagedAppConfigurations
 Content-type: application/json

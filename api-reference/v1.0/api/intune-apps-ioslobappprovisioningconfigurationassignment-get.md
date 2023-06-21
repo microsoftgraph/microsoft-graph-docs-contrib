@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [iosLobAppProvis
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_ioslobappprovisioningconfigurationassignment" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_ioslobappprovisioningconfigurationassignment_get_get_ioslobappprovisioningconfigurationassignment" }-->
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments/{iosLobAppProvisioningConfigurationAssignmentId}
 ```

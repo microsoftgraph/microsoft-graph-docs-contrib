@@ -61,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a [resource
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_resourceoperation" }-->
+<!-- { "blockType": "request" , "name" : "intune_rbac_resourceoperation_create_create_resourceoperation" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/resourceOperations
 Content-type: application/json

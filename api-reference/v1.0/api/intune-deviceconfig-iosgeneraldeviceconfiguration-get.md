@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [iosGeneralDevic
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_iosgeneraldeviceconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_iosgeneraldeviceconfiguration_get_get_iosgeneraldeviceconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```

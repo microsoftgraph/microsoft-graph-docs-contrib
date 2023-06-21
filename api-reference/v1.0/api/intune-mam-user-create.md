@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a [user](..
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_user" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_user_create_create_user" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json

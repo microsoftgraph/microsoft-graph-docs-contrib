@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [importedWindows
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_importedwindowsautopilotdeviceidentity" }-->
+<!-- { "blockType": "request" , "name" : "intune_enrollment_importedwindowsautopilotdeviceidentity_get_get_importedwindowsautopilotdeviceidentity" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```

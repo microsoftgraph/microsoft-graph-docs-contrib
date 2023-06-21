@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "list_microsofttunnelservers" }-->
+<!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelserver_list_list_microsofttunnelservers" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers
 ```

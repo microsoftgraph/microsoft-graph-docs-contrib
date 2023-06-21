@@ -58,7 +58,7 @@ If successful, this function returns a `200 OK` response code and a [deviceAndAp
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "exportdeviceandappmanagementdata_function" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_user_exportdeviceandappmanagementdata_exportdeviceandappmanagementdata_function" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/{usersId}/exportDeviceAndAppManagementData(skip=4,top=3)
 ```

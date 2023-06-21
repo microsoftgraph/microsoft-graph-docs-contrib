@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [settingS
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_settingstatedevicesummary" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_settingstatedevicesummary_create_create_settingstatedevicesummary" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries
 Content-type: application/json

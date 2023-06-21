@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "delete_mobileappcontent" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_mobileappcontent_delete_delete_mobileappcontent" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}
 ```

@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [enrollme
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_enrollmenttroubleshootingevent" }-->
+<!-- { "blockType": "request" , "name" : "intune_troubleshooting_enrollmenttroubleshootingevent_create_create_enrollmenttroubleshootingevent" }-->
 ``` http
 POST https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
 Content-type: application/json

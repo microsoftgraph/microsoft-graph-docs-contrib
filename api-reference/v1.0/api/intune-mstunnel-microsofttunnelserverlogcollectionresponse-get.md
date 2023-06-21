@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [microsoftTunnel
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_microsofttunnelserverlogcollectionresponse" }-->
+<!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelserverlogcollectionresponse_get_get_microsofttunnelserverlogcollectionresponse" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelServerLogCollectionResponses/{microsoftTunnelServerLogCollectionResponseId}
 ```

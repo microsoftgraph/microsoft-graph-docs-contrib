@@ -92,7 +92,7 @@ If successful, this method returns a `201 Created` response code and a [windowsP
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_windowsphone81generalconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windowsphone81generalconfiguration_create_create_windowsphone81generalconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json

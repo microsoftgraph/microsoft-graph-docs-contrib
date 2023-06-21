@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [deviceEnrollmen
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_deviceenrollmentconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_deviceenrollmentconfiguration_get_get_deviceenrollmentconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 ```

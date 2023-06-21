@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [windows10Secure
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_windows10secureassessmentconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windows10secureassessmentconfiguration_get_get_windows10secureassessmentconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```

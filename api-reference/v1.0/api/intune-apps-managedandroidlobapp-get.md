@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [managedAndroidL
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_managedandroidlobapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_managedandroidlobapp_get_get_managedandroidlobapp" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```

@@ -59,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [iosLobAp
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_ioslobappprovisioningconfigurationassignment" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_ioslobappprovisioningconfigurationassignment_create_create_ioslobappprovisioningconfigurationassignment" }-->
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments
 Content-type: application/json

@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an updated [orga
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_organization" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_organization_update_update_organization" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/organization/{organizationId}
 Content-type: application/json

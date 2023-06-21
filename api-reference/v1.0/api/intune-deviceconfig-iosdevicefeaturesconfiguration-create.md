@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [iosDevic
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_iosdevicefeaturesconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_iosdevicefeaturesconfiguration_create_create_iosdevicefeaturesconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json

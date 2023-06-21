@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an updated [repo
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_reportroot" }-->
+<!-- { "blockType": "request" , "name" : "intune_troubleshooting_reportroot_update_update_reportroot" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1/reports
 Content-type: application/json

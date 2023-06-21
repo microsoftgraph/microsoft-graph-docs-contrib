@@ -80,7 +80,7 @@ If successful, this method returns a `201 Created` response code and a [macOSCom
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_macoscompliancepolicy" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_macoscompliancepolicy_create_create_macoscompliancepolicy" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 Content-type: application/json

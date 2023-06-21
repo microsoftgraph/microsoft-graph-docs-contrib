@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [enro
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_enrollmenttroubleshootingevent" }-->
+<!-- { "blockType": "request" , "name" : "intune_troubleshooting_enrollmenttroubleshootingevent_update_update_enrollmenttroubleshootingevent" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 Content-type: application/json

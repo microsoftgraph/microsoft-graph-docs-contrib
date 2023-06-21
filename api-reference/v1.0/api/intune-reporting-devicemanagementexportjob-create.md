@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_devicemanagementexportjob" }-->
+<!-- { "blockType": "request" , "name" : "intune_reporting_devicemanagementexportjob_create_create_devicemanagementexportjob" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/reports/exportJobs
 Content-type: application/json

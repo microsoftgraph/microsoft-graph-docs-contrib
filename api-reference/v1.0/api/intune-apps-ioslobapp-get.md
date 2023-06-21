@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [iosLobApp](../r
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_ioslobapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_ioslobapp_get_get_ioslobapp" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```

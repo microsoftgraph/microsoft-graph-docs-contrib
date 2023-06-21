@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [targetedManaged
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_targetedmanagedappconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_targetedmanagedappconfiguration_get_get_targetedmanagedappconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}
 ```

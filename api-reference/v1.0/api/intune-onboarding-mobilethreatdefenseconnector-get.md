@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [mobileThreatDef
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_mobilethreatdefenseconnector" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_mobilethreatdefenseconnector_get_get_mobilethreatdefenseconnector" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnectorId}
 ```

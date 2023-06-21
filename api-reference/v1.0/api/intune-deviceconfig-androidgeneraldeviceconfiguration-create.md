@@ -111,7 +111,7 @@ If successful, this method returns a `201 Created` response code and a [androidG
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_androidgeneraldeviceconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_androidgeneraldeviceconfiguration_create_create_androidgeneraldeviceconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json

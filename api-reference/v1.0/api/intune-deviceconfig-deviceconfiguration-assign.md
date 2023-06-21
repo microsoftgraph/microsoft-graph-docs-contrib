@@ -58,7 +58,7 @@ If successful, this action returns a `200 OK` response code and a [deviceConfigu
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "assign_action" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_deviceconfiguration_assign_assign_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
 

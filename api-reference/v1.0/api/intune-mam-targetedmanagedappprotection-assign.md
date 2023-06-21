@@ -60,7 +60,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "assign_action" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_targetedmanagedappprotection_assign_assign_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
 

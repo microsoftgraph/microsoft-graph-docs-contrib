@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [androidC
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_androidcustomconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_androidcustomconfiguration_create_create_androidcustomconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json

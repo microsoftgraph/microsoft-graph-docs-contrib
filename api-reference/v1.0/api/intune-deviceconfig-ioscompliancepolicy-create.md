@@ -77,7 +77,7 @@ If successful, this method returns a `201 Created` response code and a [iosCompl
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_ioscompliancepolicy" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_ioscompliancepolicy_create_create_ioscompliancepolicy" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 Content-type: application/json

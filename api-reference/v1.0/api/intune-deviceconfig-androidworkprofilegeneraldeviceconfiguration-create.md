@@ -97,7 +97,7 @@ If successful, this method returns a `201 Created` response code and a [androidW
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_androidworkprofilegeneraldeviceconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration_create_create_androidworkprofilegeneraldeviceconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json

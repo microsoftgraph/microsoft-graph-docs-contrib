@@ -57,7 +57,7 @@ If successful, this function returns a `200 OK` response code and a [report](../
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "manageddeviceenrollmenttopfailures_function" }-->
+<!-- { "blockType": "request" , "name" : "intune_troubleshooting_reportroot_manageddeviceenrollmenttopfailures_manageddeviceenrollmenttopfailures_function" }-->
 ``` http
 GET https://graph.microsoft.com/v1/reports/managedDeviceEnrollmentTopFailures(period='parameterValue')
 ```

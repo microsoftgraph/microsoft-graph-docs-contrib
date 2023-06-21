@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "delete_user" }-->
+<!-- { "blockType": "request" , "name" : "intune_troubleshooting_user_delete_delete_user" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1/users/{usersId}
 ```

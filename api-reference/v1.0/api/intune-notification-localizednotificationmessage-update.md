@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [loca
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_localizednotificationmessage" }-->
+<!-- { "blockType": "request" , "name" : "intune_notification_localizednotificationmessage_update_update_localizednotificationmessage" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 Content-type: application/json

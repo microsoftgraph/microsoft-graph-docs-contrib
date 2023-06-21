@@ -59,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_devicecompliancescheduledactionforrule" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_devicecompliancescheduledactionforrule_create_create_devicecompliancescheduledactionforrule" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule
 Content-type: application/json

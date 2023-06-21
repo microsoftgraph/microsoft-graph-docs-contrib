@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "delete_localizednotificationmessage" }-->
+<!-- { "blockType": "request" , "name" : "intune_notification_localizednotificationmessage_delete_delete_localizednotificationmessage" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 ```

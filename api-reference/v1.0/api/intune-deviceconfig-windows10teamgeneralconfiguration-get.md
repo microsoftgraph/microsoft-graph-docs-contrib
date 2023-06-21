@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [windows10TeamGe
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_windows10teamgeneralconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windows10teamgeneralconfiguration_get_get_windows10teamgeneralconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```

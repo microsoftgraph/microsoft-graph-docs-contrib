@@ -57,7 +57,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "getauditactivitytypes_function" }-->
+<!-- { "blockType": "request" , "name" : "intune_auditing_auditevent_getauditactivitytypes_getauditactivitytypes_function" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/getAuditActivityTypes(category='parameterValue')
 ```

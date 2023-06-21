@@ -50,7 +50,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "getmanageddeviceswithappfailures_function" }-->
+<!-- { "blockType": "request" , "name" : "intune_troubleshooting_user_getmanageddeviceswithappfailures_getmanageddeviceswithappfailures_function" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/{usersId}/getManagedDevicesWithAppFailures
 ```

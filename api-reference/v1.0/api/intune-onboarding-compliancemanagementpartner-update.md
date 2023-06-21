@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [comp
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_compliancemanagementpartner" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_compliancemanagementpartner_update_update_compliancemanagementpartner" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/complianceManagementPartners/{complianceManagementPartnerId}
 Content-type: application/json

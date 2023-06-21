@@ -58,7 +58,7 @@ If successful, this action returns a `200 OK` response code and a [importedWindo
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "import_action" }-->
+<!-- { "blockType": "request" , "name" : "intune_enrollment_importedwindowsautopilotdeviceidentity_import_import_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 

@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [iosD
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_iosdevicefeaturesconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_iosdevicefeaturesconfiguration_update_update_iosdevicefeaturesconfiguration" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json

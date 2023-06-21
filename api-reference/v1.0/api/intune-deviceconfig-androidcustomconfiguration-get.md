@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [androidCustomCo
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_androidcustomconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_androidcustomconfiguration_get_get_androidcustomconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```

@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a [deviceCa
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_devicecategory" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_devicecategory_create_create_devicecategory" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories
 Content-type: application/json

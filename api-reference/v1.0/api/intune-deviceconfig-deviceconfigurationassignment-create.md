@@ -59,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_deviceconfigurationassignment" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_deviceconfigurationassignment_create_create_deviceconfigurationassignment" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 Content-type: application/json

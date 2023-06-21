@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [windowsInformat
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_windowsinformationprotectionapplearningsummary" }-->
+<!-- { "blockType": "request" , "name" : "intune_wip_windowsinformationprotectionapplearningsummary_get_get_windowsinformationprotectionapplearningsummary" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 ```

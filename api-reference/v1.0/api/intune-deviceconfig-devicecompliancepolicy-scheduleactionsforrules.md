@@ -58,7 +58,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "scheduleactionsforrules_action" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules_scheduleactionsforrules_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduleActionsForRules
 

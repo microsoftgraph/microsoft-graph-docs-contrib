@@ -62,7 +62,7 @@ If successful, this method returns a `201 Created` response code and a [remoteAs
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_remoteassistancepartner" }-->
+<!-- { "blockType": "request" , "name" : "intune_remoteassistance_remoteassistancepartner_create_create_remoteassistancepartner" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners
 Content-type: application/json

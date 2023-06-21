@@ -100,7 +100,7 @@ If successful, this method returns a `201 Created` response code and a [defaultM
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_defaultmanagedappprotection" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_defaultmanagedappprotection_create_create_defaultmanagedappprotection" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json

@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [enrollmentTroub
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_enrollmenttroubleshootingevent" }-->
+<!-- { "blockType": "request" , "name" : "intune_troubleshooting_enrollmenttroubleshootingevent_get_get_enrollmenttroubleshootingevent" }-->
 ``` http
 GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 ```

@@ -74,7 +74,7 @@ If successful, this method returns a `201 Created` response code and a [windowsP
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_windowsphone81compliancepolicy" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windowsphone81compliancepolicy_create_create_windowsphone81compliancepolicy" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 Content-type: application/json

@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [notificationMes
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_notificationmessagetemplate" }-->
+<!-- { "blockType": "request" , "name" : "intune_notification_notificationmessagetemplate_get_get_notificationmessagetemplate" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 ```

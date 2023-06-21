@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [edit
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_editionupgradeconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_editionupgradeconfiguration_update_update_editionupgradeconfiguration" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json

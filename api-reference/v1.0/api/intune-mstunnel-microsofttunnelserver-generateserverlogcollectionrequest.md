@@ -59,7 +59,7 @@ If successful, this action returns a `200 OK` response code and a [microsoftTunn
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "generateserverlogcollectionrequest_action" }-->
+<!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelserver_generateserverlogcollectionrequest_generateserverlogcollectionrequest_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}/generateServerLogCollectionRequest
 

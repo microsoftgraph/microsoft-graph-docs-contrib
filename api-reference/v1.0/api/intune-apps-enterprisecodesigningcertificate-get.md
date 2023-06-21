@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [enterpriseCodeS
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_enterprisecodesigningcertificate" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_enterprisecodesigningcertificate_get_get_enterprisecodesigningcertificate" }-->
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSigningCertificateId}
 ```

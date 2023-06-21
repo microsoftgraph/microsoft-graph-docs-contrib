@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a [managedE
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_managedebookassignment" }-->
+<!-- { "blockType": "request" , "name" : "intune_books_managedebookassignment_create_create_managedebookassignment" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 Content-type: application/json

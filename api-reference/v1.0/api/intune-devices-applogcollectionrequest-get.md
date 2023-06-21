@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [appLogCollectio
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_applogcollectionrequest" }-->
+<!-- { "blockType": "request" , "name" : "intune_devices_applogcollectionrequest_get_get_applogcollectionrequest" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests/{appLogCollectionRequestId}
 ```

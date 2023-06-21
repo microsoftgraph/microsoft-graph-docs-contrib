@@ -80,7 +80,7 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_managedandroidlobapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_managedandroidlobapp_update_update_managedandroidlobapp" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json

@@ -73,7 +73,7 @@ If successful, this method returns a `201 Created` response code and a [mobileTh
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_mobilethreatdefenseconnector" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_mobilethreatdefenseconnector_create_create_mobilethreatdefenseconnector" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/mobileThreatDefenseConnectors
 Content-type: application/json

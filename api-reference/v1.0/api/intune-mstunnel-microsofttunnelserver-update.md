@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_microsofttunnelserver" }-->
+<!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelserver_update_update_microsofttunnelserver" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}
 Content-type: application/json

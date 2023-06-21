@@ -75,7 +75,7 @@ If successful, this method returns a `201 Created` response code and a [macOSGen
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_macosgeneraldeviceconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_macosgeneraldeviceconfiguration_create_create_macosgeneraldeviceconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json

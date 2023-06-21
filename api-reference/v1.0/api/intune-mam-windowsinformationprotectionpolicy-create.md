@@ -97,7 +97,7 @@ If successful, this method returns a `201 Created` response code and a [windowsI
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_windowsinformationprotectionpolicy" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_windowsinformationprotectionpolicy_create_create_windowsinformationprotectionpolicy" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies
 Content-type: application/json

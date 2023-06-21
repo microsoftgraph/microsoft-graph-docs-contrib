@@ -67,7 +67,7 @@ If successful, this method returns a `201 Created` response code and a [editionU
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_editionupgradeconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_editionupgradeconfiguration_create_create_editionupgradeconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json

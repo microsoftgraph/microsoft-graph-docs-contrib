@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "list_manageddevicemobileappconfigurationuserstatuses" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_manageddevicemobileappconfigurationuserstatus_list_list_manageddevicemobileappconfigurationuserstatuses" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatuses
 ```

@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "list_telecomexpensemanagementpartners" }-->
+<!-- { "blockType": "request" , "name" : "intune_tem_telecomexpensemanagementpartner_list_list_telecomexpensemanagementpartners" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/telecomExpenseManagementPartners
 ```

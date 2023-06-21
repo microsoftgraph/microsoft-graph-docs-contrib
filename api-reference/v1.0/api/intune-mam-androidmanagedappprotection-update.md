@@ -99,7 +99,7 @@ If successful, this method returns a `200 OK` response code and an updated [andr
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_androidmanagedappprotection" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_androidmanagedappprotection_update_update_androidmanagedappprotection" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}
 Content-type: application/json

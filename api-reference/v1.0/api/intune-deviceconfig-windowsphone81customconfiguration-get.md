@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [windowsPhone81C
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_windowsphone81customconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windowsphone81customconfiguration_get_get_windowsphone81customconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```

@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [enterpri
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_enterprisecodesigningcertificate" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_enterprisecodesigningcertificate_create_create_enterprisecodesigningcertificate" }-->
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates
 Content-type: application/json

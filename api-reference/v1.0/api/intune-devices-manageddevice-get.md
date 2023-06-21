@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and [managedDevice](
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_manageddevice" }-->
+<!-- { "blockType": "request" , "name" : "intune_devices_manageddevice_get_get_manageddevice" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDeviceId}
 ```

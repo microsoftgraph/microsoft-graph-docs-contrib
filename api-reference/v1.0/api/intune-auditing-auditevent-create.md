@@ -69,7 +69,7 @@ If successful, this method returns a `201 Created` response code and a [auditEve
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_auditevent" }-->
+<!-- { "blockType": "request" , "name" : "intune_auditing_auditevent_create_create_auditevent" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/auditEvents
 Content-type: application/json

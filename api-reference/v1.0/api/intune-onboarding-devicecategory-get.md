@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [deviceCategory]
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_devicecategory" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_devicecategory_get_get_devicecategory" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{deviceCategoryId}
 ```

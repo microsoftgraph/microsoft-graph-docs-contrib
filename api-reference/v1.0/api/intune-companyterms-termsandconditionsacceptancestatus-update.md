@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [term
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_termsandconditionsacceptancestatus" }-->
+<!-- { "blockType": "request" , "name" : "intune_companyterms_termsandconditionsacceptancestatus_update_update_termsandconditionsacceptancestatus" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}
 Content-type: application/json

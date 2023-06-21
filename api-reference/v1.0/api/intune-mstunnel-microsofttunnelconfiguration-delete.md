@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "delete_microsofttunnelconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelconfiguration_delete_delete_microsofttunnelconfiguration" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelConfigurations/{microsoftTunnelConfigurationId}
 ```

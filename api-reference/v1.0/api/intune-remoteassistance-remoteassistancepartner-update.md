@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [remo
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_remoteassistancepartner" }-->
+<!-- { "blockType": "request" , "name" : "intune_remoteassistance_remoteassistancepartner_update_update_remoteassistancepartner" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 Content-type: application/json

@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [managedAppOpera
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_managedappoperation" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_managedappoperation_get_get_managedappoperation" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 ```

@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [deviceConfigura
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_deviceconfigurationassignment" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_deviceconfigurationassignment_get_get_deviceconfigurationassignment" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
 ```

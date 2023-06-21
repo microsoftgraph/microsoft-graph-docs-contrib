@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "delete_resourceoperation" }-->
+<!-- { "blockType": "request" , "name" : "intune_rbac_resourceoperation_delete_delete_resourceoperation" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/resourceOperations/{resourceOperationId}
 ```

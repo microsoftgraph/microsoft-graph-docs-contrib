@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [termsAndConditi
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_termsandconditionsassignment" }-->
+<!-- { "blockType": "request" , "name" : "intune_companyterms_termsandconditionsassignment_get_get_termsandconditionsassignment" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{termsAndConditionsAssignmentId}
 ```

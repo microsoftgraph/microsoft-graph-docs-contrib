@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and [settingStateDev
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_settingstatedevicesummary" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_settingstatedevicesummary_get_get_settingstatedevicesummary" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 ```

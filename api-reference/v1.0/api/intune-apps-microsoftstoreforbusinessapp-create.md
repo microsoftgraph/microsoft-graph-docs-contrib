@@ -76,7 +76,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_microsoftstoreforbusinessapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_microsoftstoreforbusinessapp_create_create_microsoftstoreforbusinessapp" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 Content-type: application/json

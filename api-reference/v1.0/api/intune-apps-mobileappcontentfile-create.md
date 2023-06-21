@@ -67,7 +67,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_mobileappcontentfile" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_mobileappcontentfile_create_create_mobileappcontentfile" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files
 Content-type: application/json

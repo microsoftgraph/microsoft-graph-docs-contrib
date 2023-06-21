@@ -50,7 +50,7 @@ If successful, this action returns a `200 OK` response code and a Int32 in the r
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "setmobiledevicemanagementauthority_action" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_organization_setmobiledevicemanagementauthority_setmobiledevicemanagementauthority_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/organization/{organizationId}/setMobileDeviceManagementAuthority
 ```

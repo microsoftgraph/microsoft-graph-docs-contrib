@@ -62,7 +62,7 @@ If successful, this method returns a `201 Created` response code and a [appLogCo
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_applogcollectionrequest" }-->
+<!-- { "blockType": "request" , "name" : "intune_devices_applogcollectionrequest_create_create_applogcollectionrequest" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests
 Content-type: application/json

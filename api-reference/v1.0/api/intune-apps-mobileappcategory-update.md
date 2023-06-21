@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [mobi
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_mobileappcategory" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_mobileappcategory_update_update_mobileappcategory" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
 Content-type: application/json

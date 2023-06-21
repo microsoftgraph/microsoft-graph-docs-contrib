@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "delete_editionupgradeconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_editionupgradeconfiguration_delete_delete_editionupgradeconfiguration" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```

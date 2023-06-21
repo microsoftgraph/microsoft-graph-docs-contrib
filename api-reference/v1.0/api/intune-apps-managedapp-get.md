@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [managedApp](../
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_managedapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_managedapp_get_get_managedapp" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```

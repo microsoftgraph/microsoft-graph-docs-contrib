@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_deviceandappmanagementroledefinition" }-->
+<!-- { "blockType": "request" , "name" : "intune_rbac_deviceandappmanagementroledefinition_update_update_deviceandappmanagementroledefinition" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}
 Content-type: application/json

@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [deviceManagemen
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_devicemanagement" }-->
+<!-- { "blockType": "request" , "name" : "intune_policyset_devicemanagement_get_get_devicemanagement" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement
 ```

@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and [managedAppPolic
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_managedapppolicydeploymentsummary" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_managedapppolicydeploymentsummary_get_get_managedapppolicydeploymentsummary" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
 ```

@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [managedAppRegis
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_managedappregistration" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_managedappregistration_get_get_managedappregistration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ```

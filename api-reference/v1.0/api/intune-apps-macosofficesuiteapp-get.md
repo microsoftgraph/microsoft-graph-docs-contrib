@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [macOSOfficeSuit
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_macosofficesuiteapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_macosofficesuiteapp_get_get_macosofficesuiteapp" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```

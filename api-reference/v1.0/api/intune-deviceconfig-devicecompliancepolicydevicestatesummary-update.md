@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_devicecompliancepolicydevicestatesummary" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_devicecompliancepolicydevicestatesummary_update_update_devicecompliancepolicydevicestatesummary" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicyDeviceStateSummary
 Content-type: application/json

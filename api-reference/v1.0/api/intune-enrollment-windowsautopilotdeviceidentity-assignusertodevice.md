@@ -59,7 +59,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "assignusertodevice_action" }-->
+<!-- { "blockType": "request" , "name" : "intune_enrollment_windowsautopilotdeviceidentity_assignusertodevice_assignusertodevice_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/assignUserToDevice
 

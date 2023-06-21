@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [complianceManag
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_compliancemanagementpartner" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_compliancemanagementpartner_get_get_compliancemanagementpartner" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/complianceManagementPartners/{complianceManagementPartnerId}
 ```

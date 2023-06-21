@@ -92,7 +92,7 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_windowsphone81generalconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windowsphone81generalconfiguration_update_update_windowsphone81generalconfiguration" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json

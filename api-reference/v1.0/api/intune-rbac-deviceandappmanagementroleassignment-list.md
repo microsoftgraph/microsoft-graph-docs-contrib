@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "list_deviceandappmanagementroleassignments" }-->
+<!-- { "blockType": "request" , "name" : "intune_rbac_deviceandappmanagementroleassignment_list_list_deviceandappmanagementroleassignments" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/roleAssignments
 ```

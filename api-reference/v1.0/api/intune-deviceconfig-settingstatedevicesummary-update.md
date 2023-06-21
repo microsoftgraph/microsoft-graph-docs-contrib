@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [sett
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_settingstatedevicesummary" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_settingstatedevicesummary_update_update_settingstatedevicesummary" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 Content-type: application/json

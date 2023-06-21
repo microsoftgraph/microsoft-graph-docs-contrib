@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [windows10Enterp
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_windows10enterprisemodernappmanagementconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration_get_get_windows10enterprisemodernappmanagementconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```

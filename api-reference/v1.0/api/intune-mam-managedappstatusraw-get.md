@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [managedAppStatu
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_managedappstatusraw" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_managedappstatusraw_get_get_managedappstatusraw" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ```

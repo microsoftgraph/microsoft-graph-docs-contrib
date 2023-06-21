@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "delete_managedmobileapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_managedmobileapp_delete_delete_managedmobileapp" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
 ```

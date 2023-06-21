@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [windowsInformat
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_windowsinformationprotectionpolicy" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_windowsinformationprotectionpolicy_get_get_windowsinformationprotectionpolicy" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}
 ```

@@ -80,7 +80,7 @@ If successful, this method returns a `200 OK` response code and an updated [iosL
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_ioslobapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_ioslobapp_update_update_ioslobapp" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json

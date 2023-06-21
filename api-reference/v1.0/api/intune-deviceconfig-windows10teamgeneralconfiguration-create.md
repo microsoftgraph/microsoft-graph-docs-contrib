@@ -83,7 +83,7 @@ If successful, this method returns a `201 Created` response code and a [windows1
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_windows10teamgeneralconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windows10teamgeneralconfiguration_create_create_windows10teamgeneralconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json

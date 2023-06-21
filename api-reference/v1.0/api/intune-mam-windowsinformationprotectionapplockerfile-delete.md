@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "delete_windowsinformationprotectionapplockerfile" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_windowsinformationprotectionapplockerfile_delete_delete_windowsinformationprotectionapplockerfile" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
 ```

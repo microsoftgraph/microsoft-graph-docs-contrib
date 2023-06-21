@@ -74,7 +74,7 @@ If successful, this method returns a `201 Created` response code and a [windowsA
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_windowsautopilotdeviceidentity" }-->
+<!-- { "blockType": "request" , "name" : "intune_enrollment_windowsautopilotdeviceidentity_create_create_windowsautopilotdeviceidentity" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json

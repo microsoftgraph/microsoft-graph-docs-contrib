@@ -50,7 +50,7 @@ If successful, this function returns a `200 OK` response code and a String in th
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "downloadapplepushnotificationcertificatesigningrequest_function" }-->
+<!-- { "blockType": "request" , "name" : "intune_devices_applepushnotificationcertificate_downloadapplepushnotificationcertificatesigningrequest_downloadapplepushnotificationcertificatesigningrequest_function" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/applePushNotificationCertificate/downloadApplePushNotificationCertificateSigningRequest
 ```

@@ -66,7 +66,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "getpolicynoncompliancereport_action" }-->
+<!-- { "blockType": "request" , "name" : "intune_reporting_devicemanagementreports_getpolicynoncompliancereport_getpolicynoncompliancereport_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/reports/getPolicyNonComplianceReport
 

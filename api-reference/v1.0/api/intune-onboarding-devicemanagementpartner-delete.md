@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "delete_devicemanagementpartner" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_devicemanagementpartner_delete_delete_devicemanagementpartner" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ```

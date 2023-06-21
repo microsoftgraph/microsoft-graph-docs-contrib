@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [mdmWindowsInfor
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_mdmwindowsinformationprotectionpolicy" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_mdmwindowsinformationprotectionpolicy_get_get_mdmwindowsinformationprotectionpolicy" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}
 ```

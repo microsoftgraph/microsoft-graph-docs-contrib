@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [andr
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_androidworkprofilecustomconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_androidworkprofilecustomconfiguration_update_update_androidworkprofilecustomconfiguration" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json

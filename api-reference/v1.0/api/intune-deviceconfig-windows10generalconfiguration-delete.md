@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "delete_windows10generalconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windows10generalconfiguration_delete_delete_windows10generalconfiguration" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```

@@ -75,7 +75,7 @@ If successful, this method returns a `201 Created` response code and a [sharedPC
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_sharedpcconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_sharedpcconfiguration_create_create_sharedpcconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json

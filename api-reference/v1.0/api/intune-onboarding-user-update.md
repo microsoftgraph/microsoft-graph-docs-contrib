@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an updated [user
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_user" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_user_update_update_user" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/users/{usersId}
 Content-type: application/json

@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "list_windows10enterprisemodernappmanagementconfigurations" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration_list_list_windows10enterprisemodernappmanagementconfigurations" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```

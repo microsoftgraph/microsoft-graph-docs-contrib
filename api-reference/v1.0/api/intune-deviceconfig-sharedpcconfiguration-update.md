@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and an updated [shar
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_sharedpcconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_sharedpcconfiguration_update_update_sharedpcconfiguration" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json

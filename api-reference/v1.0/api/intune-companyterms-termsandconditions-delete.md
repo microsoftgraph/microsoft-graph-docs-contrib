@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "delete_termsandconditions" }-->
+<!-- { "blockType": "request" , "name" : "intune_companyterms_termsandconditions_delete_delete_termsandconditions" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}
 ```

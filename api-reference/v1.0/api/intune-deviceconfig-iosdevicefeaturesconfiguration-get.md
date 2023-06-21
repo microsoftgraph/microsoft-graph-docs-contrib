@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [iosDeviceFeatur
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_iosdevicefeaturesconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_iosdevicefeaturesconfiguration_get_get_iosdevicefeaturesconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```

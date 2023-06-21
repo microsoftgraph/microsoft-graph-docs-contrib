@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [managedD
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_manageddevicemobileappconfigurationdevicestatus" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_manageddevicemobileappconfigurationdevicestatus_create_create_manageddevicemobileappconfigurationdevicestatus" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatuses
 Content-type: application/json

@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_devicecompliancescheduledactionforrule" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_devicecompliancescheduledactionforrule_update_update_devicecompliancescheduledactionforrule" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
 Content-type: application/json

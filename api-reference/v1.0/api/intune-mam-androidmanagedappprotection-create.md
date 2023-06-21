@@ -99,7 +99,7 @@ If successful, this method returns a `201 Created` response code and a [androidM
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_androidmanagedappprotection" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_androidmanagedappprotection_create_create_androidmanagedappprotection" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/androidManagedAppProtections
 Content-type: application/json

@@ -113,7 +113,7 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_manageddevice" }-->
+<!-- { "blockType": "request" , "name" : "intune_devices_manageddevice_update_update_manageddevice" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json

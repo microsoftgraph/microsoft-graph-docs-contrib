@@ -82,7 +82,7 @@ If successful, this method returns a `201 Created` response code and a [windowsU
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_windowsuniversalappx" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_windowsuniversalappx_create_create_windowsuniversalappx" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 Content-type: application/json

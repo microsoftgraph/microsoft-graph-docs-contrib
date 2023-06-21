@@ -57,7 +57,7 @@ If successful, this function returns a `200 OK` response code and a String in th
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "getomasettingplaintextvalue_function" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_deviceconfiguration_getomasettingplaintextvalue_getomasettingplaintextvalue_function" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/getOmaSettingPlainTextValue(secretReferenceValueId='parameterValue')
 ```

@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [macOSGeneralDev
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_macosgeneraldeviceconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_macosgeneraldeviceconfiguration_get_get_macosgeneraldeviceconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```

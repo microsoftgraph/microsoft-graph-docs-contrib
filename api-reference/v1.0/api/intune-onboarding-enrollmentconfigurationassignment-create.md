@@ -59,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [enrollme
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_enrollmentconfigurationassignment" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_enrollmentconfigurationassignment_create_create_enrollmentconfigurationassignment" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments
 Content-type: application/json

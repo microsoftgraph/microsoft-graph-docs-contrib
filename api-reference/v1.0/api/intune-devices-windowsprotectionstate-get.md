@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and [windowsProtecti
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_windowsprotectionstate" }-->
+<!-- { "blockType": "request" , "name" : "intune_devices_windowsprotectionstate_get_get_windowsprotectionstate" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/windowsProtectionState
 ```

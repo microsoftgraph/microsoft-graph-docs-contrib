@@ -50,7 +50,7 @@ If successful, this function returns a `200 OK` response code and a [report](../
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "deviceconfigurationdeviceactivity_function" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_reportroot_deviceconfigurationdeviceactivity_deviceconfigurationdeviceactivity_function" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/reports/deviceConfigurationDeviceActivity
 ```

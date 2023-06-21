@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [win32LobApp](..
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_win32lobapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_win32lobapp_get_get_win32lobapp" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```

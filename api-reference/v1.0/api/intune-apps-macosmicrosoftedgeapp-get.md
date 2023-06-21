@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [macOSMicrosoftE
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_macosmicrosoftedgeapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_macosmicrosoftedgeapp_get_get_macosmicrosoftedgeapp" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```

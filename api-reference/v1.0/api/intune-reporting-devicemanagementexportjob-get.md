@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [deviceManagemen
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_devicemanagementexportjob" }-->
+<!-- { "blockType": "request" , "name" : "intune_reporting_devicemanagementexportjob_get_get_devicemanagementexportjob" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 ```

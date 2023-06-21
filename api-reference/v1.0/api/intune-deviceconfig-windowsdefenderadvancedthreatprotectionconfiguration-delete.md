@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "delete_windowsdefenderadvancedthreatprotectionconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete_delete_windowsdefenderadvancedthreatprotectionconfiguration" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```

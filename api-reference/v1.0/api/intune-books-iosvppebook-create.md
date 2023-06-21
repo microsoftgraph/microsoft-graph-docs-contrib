@@ -75,7 +75,7 @@ If successful, this method returns a `201 Created` response code and a [iosVppEB
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_iosvppebook" }-->
+<!-- { "blockType": "request" , "name" : "intune_books_iosvppebook_create_create_iosvppebook" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks
 Content-type: application/json

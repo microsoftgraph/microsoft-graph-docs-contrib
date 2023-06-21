@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [macOSCompliance
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_macoscompliancepolicy" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_macoscompliancepolicy_get_get_macoscompliancepolicy" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```

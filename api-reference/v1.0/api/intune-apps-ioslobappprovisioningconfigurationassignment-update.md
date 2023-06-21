@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an updated [iosL
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_ioslobappprovisioningconfigurationassignment" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_ioslobappprovisioningconfigurationassignment_update_update_ioslobappprovisioningconfigurationassignment" }-->
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments/{iosLobAppProvisioningConfigurationAssignmentId}
 Content-type: application/json

@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_microsofttunnelserver" }-->
+<!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelserver_create_create_microsofttunnelserver" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers
 Content-type: application/json

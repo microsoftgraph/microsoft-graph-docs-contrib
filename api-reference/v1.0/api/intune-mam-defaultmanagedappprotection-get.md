@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [defaultManagedA
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_defaultmanagedappprotection" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_defaultmanagedappprotection_get_get_defaultmanagedappprotection" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 ```

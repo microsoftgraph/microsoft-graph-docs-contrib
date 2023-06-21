@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [onPremisesCondi
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_onpremisesconditionalaccesssettings" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_onpremisesconditionalaccesssettings_get_get_onpremisesconditionalaccesssettings" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
 ```

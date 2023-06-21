@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [eBoo
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_ebookinstallsummary" }-->
+<!-- { "blockType": "request" , "name" : "intune_books_ebookinstallsummary_update_update_ebookinstallsummary" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 Content-type: application/json

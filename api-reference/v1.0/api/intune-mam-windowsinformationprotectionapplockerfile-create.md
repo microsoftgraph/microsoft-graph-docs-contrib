@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [windowsI
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_windowsinformationprotectionapplockerfile" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_windowsinformationprotectionapplockerfile_create_create_windowsinformationprotectionapplockerfile" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles
 Content-type: application/json

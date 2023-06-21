@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [telecomExpenseM
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_telecomexpensemanagementpartner" }-->
+<!-- { "blockType": "request" , "name" : "intune_tem_telecomexpensemanagementpartner_get_get_telecomexpensemanagementpartner" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId}
 ```

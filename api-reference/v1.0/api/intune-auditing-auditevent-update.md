@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and an updated [audi
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_auditevent" }-->
+<!-- { "blockType": "request" , "name" : "intune_auditing_auditevent_update_update_auditevent" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json

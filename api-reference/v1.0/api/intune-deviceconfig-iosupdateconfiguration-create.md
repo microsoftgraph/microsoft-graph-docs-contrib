@@ -67,7 +67,7 @@ If successful, this method returns a `201 Created` response code and a [iosUpdat
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_iosupdateconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_iosupdateconfiguration_create_create_iosupdateconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json

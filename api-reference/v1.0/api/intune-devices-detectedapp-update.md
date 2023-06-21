@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [dete
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_detectedapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_devices_detectedapp_update_update_detectedapp" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}
 Content-type: application/json

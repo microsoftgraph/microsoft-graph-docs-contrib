@@ -85,7 +85,7 @@ If successful, this method returns a `200 OK` response code and an updated [mdmW
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_mdmwindowsinformationprotectionpolicy" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_mdmwindowsinformationprotectionpolicy_update_update_mdmwindowsinformationprotectionpolicy" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}
 Content-type: application/json

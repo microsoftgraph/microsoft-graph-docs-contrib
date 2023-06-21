@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [androidManagedA
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_androidmanagedappprotection" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_androidmanagedappprotection_get_get_androidmanagedappprotection" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}
 ```

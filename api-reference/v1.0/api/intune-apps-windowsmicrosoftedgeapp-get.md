@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [windowsMicrosof
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_windowsmicrosoftedgeapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_windowsmicrosoftedgeapp_get_get_windowsmicrosoftedgeapp" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```

@@ -83,7 +83,7 @@ If successful, this method returns a `200 OK` response code and an updated [macO
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_macoslobapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_macoslobapp_update_update_macoslobapp" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json

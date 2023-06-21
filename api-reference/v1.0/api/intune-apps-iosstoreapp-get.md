@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [iosStoreApp](..
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_iosstoreapp" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_iosstoreapp_get_get_iosstoreapp" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```

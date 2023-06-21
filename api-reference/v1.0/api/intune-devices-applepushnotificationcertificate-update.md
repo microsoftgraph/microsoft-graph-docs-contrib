@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an updated [appl
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_applepushnotificationcertificate" }-->
+<!-- { "blockType": "request" , "name" : "intune_devices_applepushnotificationcertificate_update_update_applepushnotificationcertificate" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/applePushNotificationCertificate
 Content-type: application/json

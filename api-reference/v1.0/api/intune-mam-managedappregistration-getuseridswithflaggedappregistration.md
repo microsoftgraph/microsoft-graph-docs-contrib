@@ -50,7 +50,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "getuseridswithflaggedappregistration_function" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_managedappregistration_getuseridswithflaggedappregistration_getuseridswithflaggedappregistration_function" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/getUserIdsWithFlaggedAppRegistration
 ```

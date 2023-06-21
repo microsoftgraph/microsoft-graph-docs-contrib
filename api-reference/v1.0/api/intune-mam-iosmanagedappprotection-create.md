@@ -96,7 +96,7 @@ If successful, this method returns a `201 Created` response code and a [iosManag
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_iosmanagedappprotection" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_iosmanagedappprotection_create_create_iosmanagedappprotection" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections
 Content-type: application/json

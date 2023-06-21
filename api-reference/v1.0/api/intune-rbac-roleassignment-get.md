@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [roleAssignment]
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_roleassignment" }-->
+<!-- { "blockType": "request" , "name" : "intune_rbac_roleassignment_get_get_roleassignment" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
 ```

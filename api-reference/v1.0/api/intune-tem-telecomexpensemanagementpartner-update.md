@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [tele
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_telecomexpensemanagementpartner" }-->
+<!-- { "blockType": "request" , "name" : "intune_tem_telecomexpensemanagementpartner_update_update_telecomexpensemanagementpartner" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId}
 Content-type: application/json

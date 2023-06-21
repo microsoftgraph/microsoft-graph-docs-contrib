@@ -50,7 +50,7 @@ If successful, this action returns a `200 OK` response code and a [appLogCollect
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "createdownloadurl_action" }-->
+<!-- { "blockType": "request" , "name" : "intune_devices_applogcollectionrequest_createdownloadurl_createdownloadurl_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests/{appLogCollectionRequestId}/createDownloadUrl
 ```

@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_devicemanagementexportjob" }-->
+<!-- { "blockType": "request" , "name" : "intune_reporting_devicemanagementexportjob_update_update_devicemanagementexportjob" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 Content-type: application/json

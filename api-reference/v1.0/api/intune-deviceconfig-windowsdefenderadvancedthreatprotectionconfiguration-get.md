@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [windowsDefender
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_windowsdefenderadvancedthreatprotectionconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_get_windowsdefenderadvancedthreatprotectionconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```

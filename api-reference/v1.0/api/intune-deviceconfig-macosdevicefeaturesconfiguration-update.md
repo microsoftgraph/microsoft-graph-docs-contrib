@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [macO
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_macosdevicefeaturesconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_macosdevicefeaturesconfiguration_update_update_macosdevicefeaturesconfiguration" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json

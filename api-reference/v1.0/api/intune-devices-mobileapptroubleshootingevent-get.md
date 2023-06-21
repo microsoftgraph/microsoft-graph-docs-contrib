@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [mobileAppTroubl
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_mobileapptroubleshootingevent" }-->
+<!-- { "blockType": "request" , "name" : "intune_devices_mobileapptroubleshootingevent_get_get_mobileapptroubleshootingevent" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}
 ```

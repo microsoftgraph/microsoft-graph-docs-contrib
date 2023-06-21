@@ -69,7 +69,7 @@ If successful, this method returns a `201 Created` response code and a [vppToken
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "create_vpptoken" }-->
+<!-- { "blockType": "request" , "name" : "intune_onboarding_vpptoken_create_create_vpptoken" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens
 Content-type: application/json

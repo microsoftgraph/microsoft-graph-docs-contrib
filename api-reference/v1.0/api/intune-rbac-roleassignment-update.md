@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [role
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_roleassignment" }-->
+<!-- { "blockType": "request" , "name" : "intune_rbac_roleassignment_update_update_roleassignment" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
 Content-type: application/json

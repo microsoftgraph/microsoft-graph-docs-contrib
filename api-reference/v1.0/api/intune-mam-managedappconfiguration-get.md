@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and [managedAppConfi
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_managedappconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_mam_managedappconfiguration_get_get_managedappconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}
 ```

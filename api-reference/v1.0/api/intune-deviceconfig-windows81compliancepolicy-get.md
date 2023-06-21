@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [windows81Compli
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "get_windows81compliancepolicy" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windows81compliancepolicy_get_get_windows81compliancepolicy" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```

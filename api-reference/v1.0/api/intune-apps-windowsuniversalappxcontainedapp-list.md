@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "list_windowsuniversalappxcontainedapps" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_windowsuniversalappxcontainedapp_list_list_windowsuniversalappxcontainedapps" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/containedApps
 ```

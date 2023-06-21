@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [appL
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_applogcollectionrequest" }-->
+<!-- { "blockType": "request" , "name" : "intune_devices_applogcollectionrequest_update_update_applogcollectionrequest" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests/{appLogCollectionRequestId}
 Content-type: application/json

@@ -194,7 +194,7 @@ If successful, this method returns a `200 OK` response code and an updated [iosG
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "update_iosgeneraldeviceconfiguration" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_iosgeneraldeviceconfiguration_update_update_iosgeneraldeviceconfiguration" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json

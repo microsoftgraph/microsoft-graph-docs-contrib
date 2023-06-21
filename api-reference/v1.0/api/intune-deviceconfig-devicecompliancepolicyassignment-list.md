@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "list_devicecompliancepolicyassignments" }-->
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_devicecompliancepolicyassignment_list_list_devicecompliancepolicyassignments" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
 ```
