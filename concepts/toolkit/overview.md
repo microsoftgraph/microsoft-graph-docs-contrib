@@ -34,7 +34,7 @@ The components are also available as [React components](./get-started/mgt-react.
 |[People picker](./components/people-picker.md)|Provides the ability to search for people and renders the list of results.|
 |[Person](./components/person.md)|Displays a person or contact by their photo, name, and/or email address.|
 |[Person card](./components/person-card.md)|A flyout used on the person component to display more profile information about a user.|
-|[Picker](./components/picker.md)|Renders a dropdown control allowing selection of a single resource from an array of resources.|
+|[Picker](./components/picker.md)|Renders a dropdown control that allows a selection of a single resource from an array of resources.|
 |[Planner tasks](./components/tasks.md)|Displays and enables adding, removing, completing, or editing of tasks from Microsoft Planner or Microsoft To Do.|
 |[Search box (preview)](./components/search-box.md)|Provides the ability to search for Microsoft Teams channels to select a channel from a rendered list of results.|
 |[Search results (preview)](./components/search-results.md)|Lets you make a queries to the search endpoint of Microsoft Graph directly in your HTML.|
