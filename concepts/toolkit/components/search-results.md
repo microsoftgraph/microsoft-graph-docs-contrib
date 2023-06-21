@@ -40,6 +40,29 @@ You can use several attributes to change the behavior of the component. The requ
 | cache-invalidation-period | cacheInvalidationPeriod | Optional number of milliseconds. When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period will be modified by this value. Default is `30000` and will use the default invalidation period. |
 | N/A                       | error                   | Read-only error from Microsoft Graph if request was not successful.                                                                                                                                                                       |
 
+## CSS custom properties
+
+The `mgt-search-results` component defines the following CSS custom properties.
+
+```html
+<mgt-search-results
+  class="search-results"
+  query-string="contoso"
+  entity-types="driveItem"
+></mgt-search-results>
+```
+
+```css
+.search-results {
+  --answer-border-radius: 10px;
+  --answer-box-shadow: 0px 2px 30px pink;
+  --answer-border: dotted 2px white;
+  --answer-padding: 8px 0px;
+}
+```
+
+To learn more, see [styling components](../customize-components/style.md).
+
 ## Methods
 
 | Method                  | Description                                                                                                                                 |
@@ -95,24 +118,3 @@ The control exposes the following variables that can be localized. See how you s
 | next        | `Next`        |
 | pages       | `pages`       |
 | page        | `Page`        |
-
-## CSS custom properties
-
-The `mgt-search-results` component defines the following CSS custom properties.
-
-```html
-<mgt-search-results
-  class="search-results"
-  query-string="contoso"
-  entity-types="driveItem"
-></mgt-search-results>
-```
-
-```css
-.search-results {
-  --answer-border-radius: 10px;
-  --answer-box-shadow: 0px 2px 30px pink;
-  --answer-border: dotted 2px white;
-  --answer-padding: 8px 0px;
-}
-```

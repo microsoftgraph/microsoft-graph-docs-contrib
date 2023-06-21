@@ -101,46 +101,6 @@ By default, the `mgt-person` component will pass the person details to the `mgt-
 | person-query    | string                                                                     | Allows developers to supply person-query to retrieve data shown on person-card component                                                                                         |
 | person-card     | string                                                                     | Specifies wheter the `person-card` component can be shown as a pop up card when you hover or click on the the `mgt-person` component. The allowed values are `hover` or `click`. |
 
-## Templates
-
-The Person-Card component uses [templates](../customize-components/templates.md) that allow you to add or replace portions of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following.
-
-| Data type          | Data context                                                                 | Description                                                                  |
-| ------------------ | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| no-data            | null                                                                         | The template used when no data is available.                                 |
-| default            | `person`: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own.            |
-| person-details     | `person`: The person details object                                          | The template used to render the top part of the person card.                 |
-| additional-details | `person`: The person details object <br> `personImage`: the URL of the image | The template used to add custom content to the additional details container. |
-
-For example, you can use a template to customize the component attached to the `mgt-person` component and a template to add additional details in the card.
-
-```html
-<mgt-person person-query="me" view="twolines" person-card="hover">
-  <template data-type="person-card">
-    <mgt-person-card inherit-details>
-      <template data-type="additional-details">
-        <h3>Stuffed Animal Friends:</h3>
-        <ul>
-          <li>Giraffe</li>
-          <li>lion</li>
-          <li>Rabbit</li>
-        </ul>
-      </template>
-    </mgt-person-card>
-  </template>
-</mgt-person>
-```
-
-## Events
-
-The following events are fired from the component.
-
-| Event      | When is it emitted                                           | Custom data | Cancelable | Bubbles |          Works with custom template           |
-| ---------- | ------------------------------------------------------------ | ----------- | :--------: | :-----: | :-------------------------------------------: |
-| `expanded` | The user has opened the expanded details section of the card | None        |     No     |   Yes   | Yes, unless you override the default template |
-
-For more information about handling events, see [events](../customize-components/events.md).
-
 ## CSS custom properties
 
 The `mgt-person-card` component defines the following CSS custom properties.
@@ -219,6 +179,46 @@ The `mgt-person-card` component defines the following CSS custom properties.
 ```
 
 To learn more, see [styling components](../customize-components/style.md).
+
+## Templates
+
+The Person-Card component uses [templates](../customize-components/templates.md) that allow you to add or replace portions of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following.
+
+| Data type          | Data context                                                                 | Description                                                                  |
+| ------------------ | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| no-data            | null                                                                         | The template used when no data is available.                                 |
+| default            | `person`: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own.            |
+| person-details     | `person`: The person details object                                          | The template used to render the top part of the person card.                 |
+| additional-details | `person`: The person details object <br> `personImage`: the URL of the image | The template used to add custom content to the additional details container. |
+
+For example, you can use a template to customize the component attached to the `mgt-person` component and a template to add additional details in the card.
+
+```html
+<mgt-person person-query="me" view="twolines" person-card="hover">
+  <template data-type="person-card">
+    <mgt-person-card inherit-details>
+      <template data-type="additional-details">
+        <h3>Stuffed Animal Friends:</h3>
+        <ul>
+          <li>Giraffe</li>
+          <li>lion</li>
+          <li>Rabbit</li>
+        </ul>
+      </template>
+    </mgt-person-card>
+  </template>
+</mgt-person>
+```
+
+## Events
+
+The following events are fired from the component.
+
+| Event      | When is it emitted                                           | Custom data | Cancelable | Bubbles |          Works with custom template           |
+| ---------- | ------------------------------------------------------------ | ----------- | :--------: | :-----: | :-------------------------------------------: |
+| `expanded` | The user has opened the expanded details section of the card | None        |     No     |   Yes   | Yes, unless you override the default template |
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Microsoft Graph permissions
 

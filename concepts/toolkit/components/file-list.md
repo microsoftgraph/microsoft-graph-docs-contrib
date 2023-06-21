@@ -107,30 +107,6 @@ The following example excludes upload of files with file extensions ".doc,.pdf".
 ></mgt-file-list>
 ```
 
-## Methods
-
-| Method                     | Description                                                                                                                               |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| reload(clearCache = false) | Call the method to reload the component with potential new data based on its properties. Pass `true` to clear the cache before reloading. |
-
-### Reloading example
-
-You can use the `reload()` method that is exposed on `mgt-file-list` by getting the `mgt-file-list` reference from the DOM and triggering the method in a button using the `click` event.
-
-```html
-<mgt-file-list insight-type="shared"></mgt-file-list>
-
-<button id="reload-btn">Reload Files</button>
-```
-
-```javascript
-const fileList = document.querySelector("mgt-file-list");
-document.getElementById("reload-btn").addEventListener("click", () => {
-  // passing true will clear file cache before reloading
-  fileList.reload(true);
-});
-```
-
 ## CSS custom properties
 
 The `mgt-file-list` component defines the following CSS custom properties.
@@ -204,6 +180,30 @@ The `mgt-file-list` component defines the following CSS custom properties.
 ```
 
 To learn more, see [styling components](../customize-components/style.md).
+
+## Methods
+
+| Method                     | Description                                                                                                                               |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| reload(clearCache = false) | Call the method to reload the component with potential new data based on its properties. Pass `true` to clear the cache before reloading. |
+
+### Reloading example
+
+You can use the `reload()` method that is exposed on `mgt-file-list` by getting the `mgt-file-list` reference from the DOM and triggering the method in a button using the `click` event.
+
+```html
+<mgt-file-list insight-type="shared"></mgt-file-list>
+
+<button id="reload-btn">Reload Files</button>
+```
+
+```javascript
+const fileList = document.querySelector("mgt-file-list");
+document.getElementById("reload-btn").addEventListener("click", () => {
+  // passing true will clear file cache before reloading
+  fileList.reload(true);
+});
+```
 
 ## Microsoft Graph APIs and permissions
 

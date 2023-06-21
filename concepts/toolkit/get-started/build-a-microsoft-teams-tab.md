@@ -146,12 +146,12 @@ Add your component between the `<></>` at the bottom of the file:
 > **Note**
 > If you receive the HTTPS error when running your tab `It looks like the webpage at **https://localhost:53000/index.html#/tab** might be having issues, or it may have moved permanently to a new web address`, see the following articles:
 >
-> - [What to do if I do not want to install the development certificate?](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#what-to-do-if-i-do-not-want-to-install-the-development-certificate) (Windows) 
+> - [What to do if I do not want to install the development certificate?](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#what-to-do-if-i-do-not-want-to-install-the-development-certificate) (Windows)
 > - [What to do if I do not want to install the development certificate?](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#what-to-do-if-i-do-not-want-to-install-the-development-certificate) (WSL)
 
 ## Next Steps
 
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Microsoft Q&A](/answers/topics/microsoft-graph-toolkit.html).
-- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt/issues).
 - Check out the [Microsoft TeamsFx samples](https://github.com/OfficeDev/TeamsFx-Samples).

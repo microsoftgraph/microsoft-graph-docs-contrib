@@ -88,10 +88,12 @@ The `mgt-teams-channel-picker` component defines the following CSS custom proper
 }
 ```
 
+To learn more, see [styling components](../customize-components/style.md).
+
 ## Events
 
-| Event              | When is it emitted                                       | Custom data                                                                                                                       | Cancelable | Bubbles | Works with custom template |
-| ------------------ | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | :--------: | :-----: | :------------------------: |
+| Event              | When is it emitted                                               | Custom data                                                                                                                       | Cancelable | Bubbles | Works with custom template |
+| ------------------ | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | :--------: | :-----: | :------------------------: |
 | `selectionChanged` | Fires when the user makes a change in the selection of a channel | The currently selected item as `{ channel: `[channel](/graph/api/resources/channel)`, team: `[team](/graph/api/resources/team)`}` |     No     |   No    |            Yes             |
 
 For more information about handling events, see [events](../customize-components/events.md).
@@ -100,10 +102,10 @@ For more information about handling events, see [events](../customize-components
 
 `mgt-teams-channel-picker` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
-| Data type | Data context  | Description                                                                                             |
-| --------- | ------------- | ------------------------------------------------------------------------------------------------------- |
+| Data type | Data context  | Description                                                                                                  |
+| --------- | ------------- | ------------------------------------------------------------------------------------------------------------ |
 | loading   | null: no data | The template used to render the state of the picker while making a request to Microsoft Graph is being made. |
-| error     | null: no data | The template used if a user search returns no users.                                                      |
+| error     | null: no data | The template used if a user search returns no users.                                                         |
 
 The following example shows how to use the `error` template.
 
@@ -161,15 +163,15 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 | renderDropdownList    | Renders the items in the dropdown recursively.          |
 | renderItem            | Renders a team or a channel in the dropdown list.       |
 | renderHighlightedText | Renders the channel text, highlighting the input query. |
-| renderLoading | Renders the loading dropdown state. |
-| renderError | Renders the dropdown error state. |
+| renderLoading         | Renders the loading dropdown state.                     |
+| renderError           | Renders the dropdown error state.                       |
 
 ## Localization
 
 The control exposes the following variables that can be localized. See how you setup localization [here](../customize-components/localization.md).
 
-| String name           | Default value                 |
-| --------------------- | ----------------------------- |
-| inputPlaceholderText  | `Select a channel`            |
-| noResultsFound        | `We didn't find any matches.` |
-| loadingMessage        | `Loading...`                  |
+| String name          | Default value                 |
+| -------------------- | ----------------------------- |
+| inputPlaceholderText | `Select a channel`            |
+| noResultsFound       | `We didn't find any matches.` |
+| loadingMessage       | `Loading...`                  |

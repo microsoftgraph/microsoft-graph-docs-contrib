@@ -53,6 +53,7 @@ taskView.taskFilter = (task) => task.appliedCategories.category3 === true;
 ```html
 <mgt-tasks class="tasks"></mgt-tasks>
 ```
+
 ```css
 .tasks {
   --tasks-header-padding: 28px 14px;
@@ -142,6 +143,8 @@ taskView.taskFilter = (task) => task.appliedCategories.category3 === true;
   --task-new-person-icon-color: blue;
 }
 ```
+
+To learn more, see [styling components](../customize-components/style.md).
 
 ## Events
 
