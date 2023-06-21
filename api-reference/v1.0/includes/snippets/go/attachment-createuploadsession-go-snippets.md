@@ -16,7 +16,7 @@ import (
 graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewCreateUploadSessionPostRequestBody()
+requestBody := graphusers.NewItemCreateUploadSessionPostRequestBody()
 attachmentItem := graphmodels.NewAttachmentItem()
 attachmentType := graphmodels.FILE_ATTACHMENTTYPE 
 attachmentItem.SetAttachmentType(&attachmentType) 

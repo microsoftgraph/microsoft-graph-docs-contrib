@@ -27,12 +27,10 @@ keywords := graphmodelssearch.NewAnswerKeyword()
 keywords := []string {
 	"Contoso",
 	"install",
-
 }
 keywords.SetKeywords(keywords)
 reservedKeywords := []string {
 	"Contoso",
-
 }
 keywords.SetReservedKeywords(reservedKeywords)
 matchSimilarKeywords := true
@@ -42,10 +40,9 @@ availabilityStartDateTime := null
 requestBody.SetAvailabilityStartDateTime(&availabilityStartDateTime) 
 availabilityEndDateTime := null
 requestBody.SetAvailabilityEndDateTime(&availabilityEndDateTime) 
-platforms := []graphmodelssearch.DevicePlatformTypeable {
+platforms := []graphmodels.DevicePlatformTypeable {
 	devicePlatformType := graphmodels.WINDOWS_DEVICEPLATFORMTYPE 
-	requestBody.SetDevicePlatformType(&devicePlatformType) 
-
+	requestBody.SetDevicePlatformType(&devicePlatformType)
 }
 requestBody.SetPlatforms(platforms)
 
@@ -60,7 +57,6 @@ answerVariant.SetDescription(&description)
 
 targetedVariations := []graphmodelssearch.AnswerVariantable {
 	answerVariant,
-
 }
 requestBody.SetTargetedVariations(targetedVariations)
 state := graphmodels.PUBLISHED_ANSWERSTATE 

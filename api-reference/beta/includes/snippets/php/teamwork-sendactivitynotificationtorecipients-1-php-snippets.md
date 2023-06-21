@@ -24,36 +24,24 @@ $previewText->setContent('Internal spending team has a pending finance approval 
 
 
 $requestBody->setPreviewText($previewText);
-$recipientsTeamworkNotificationRecipient1 = new TeamworkNotificationRecipient();
+$recipientsTeamworkNotificationRecipient1 = new AadUserNotificationRecipient();
 $recipientsTeamworkNotificationRecipient1->set@odatatype('microsoft.graph.aadUserNotificationRecipient');
 
-$additionalData = [
-		'userId' => '569363e2-4e49-4661-87f2-16f245c5d66a', 
-];
-$recipientsTeamworkNotificationRecipient1->setAdditionalData($additionalData);
-
+$recipientsTeamworkNotificationRecipient1->setUserId('569363e2-4e49-4661-87f2-16f245c5d66a');
 
 
 $recipientsArray []= $recipientsTeamworkNotificationRecipient1;
-$recipientsTeamworkNotificationRecipient2 = new TeamworkNotificationRecipient();
+$recipientsTeamworkNotificationRecipient2 = new AadUserNotificationRecipient();
 $recipientsTeamworkNotificationRecipient2->set@odatatype('microsoft.graph.aadUserNotificationRecipient');
 
-$additionalData = [
-		'userId' => 'ab88234e-0874-477c-9638-d144296ed04f', 
-];
-$recipientsTeamworkNotificationRecipient2->setAdditionalData($additionalData);
-
+$recipientsTeamworkNotificationRecipient2->setUserId('ab88234e-0874-477c-9638-d144296ed04f');
 
 
 $recipientsArray []= $recipientsTeamworkNotificationRecipient2;
-$recipientsTeamworkNotificationRecipient3 = new TeamworkNotificationRecipient();
+$recipientsTeamworkNotificationRecipient3 = new AadUserNotificationRecipient();
 $recipientsTeamworkNotificationRecipient3->set@odatatype('microsoft.graph.aadUserNotificationRecipient');
 
-$additionalData = [
-		'userId' => '01c64f53-69aa-42c7-9b7f-9f75195d6bfc', 
-];
-$recipientsTeamworkNotificationRecipient3->setAdditionalData($additionalData);
-
+$recipientsTeamworkNotificationRecipient3->setUserId('01c64f53-69aa-42c7-9b7f-9f75195d6bfc');
 
 
 $recipientsArray []= $recipientsTeamworkNotificationRecipient3;

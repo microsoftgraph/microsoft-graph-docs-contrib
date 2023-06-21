@@ -10,16 +10,12 @@ client =  GraphServiceClient(request_adapter)
 request_body = EducationAssignmentResource()
 request_body.distribute_for_student_work = False
 
-resource = EducationResource()
+resource = EducationExcelResource()
 resource.@odata_type = 'microsoft.graph.educationExcelResource'
 
 resource.display_name = 'Graph Doc pages.xlsx'
 
-additional_data = [
-'file_url' => 'https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RIR7PSV4JJSFJHKNPUVUWGPW4O2', 
-];
-resource.additional_data(additional_data)
-
+resource.file_url = 'https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RIR7PSV4JJSFJHKNPUVUWGPW4O2'
 
 
 request_body.resource = resource
