@@ -15,6 +15,26 @@ Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your application
 
 [Open this example in mgt.dev](https://mgt.dev/?path=/story/samples-general--login-to-show-agenda&source=docs).
 
+## Why use Microsoft Graph Toolkit?
+
+Microsoft Graph Toolkit enables you to quickly and easily integrate common experiences powered by Microsoft Graph into your own application. The toolkit:
+
+- **Cuts development time**. The work to connect to Microsoft Graph APIs and render the data in a UI that looks and feels like a Microsoft 365 experience is done for you, with no customization required.
+
+- **Works everywhere**. All components are based on web standards and work seamlessly with any modern browser and web framework (such as React, Angular, or Vue).
+
+- **Is beautiful but flexible**. The components are designed to look and feel like Microsoft 365 experiences but are also customizable by using [CSS custom properties](./customize-components/style.md) and [templating](./customize-components/templates.md).
+
+## Who should use it?
+
+Microsoft Graph Toolkit is great for developers of all experience levels that want to develop an app that connects to and accesses data from Microsoft Graph, such as a:
+
+- Web app
+- Microsoft Teams tab
+- Progressive Web App (PWA)
+- Electron app
+- SharePoint web part
+
 ## What's in Microsoft Graph Toolkit?
 
 ### Components
@@ -53,26 +73,6 @@ The components are also available as [React components](./get-started/mgt-react.
 | [Proxy](./providers/proxy.md)           | Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.                                     |
 | [SharePoint](./providers/sharepoint.md) | Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.                                            |
 | [TeamsFx](./providers/teamsfx.md)       | Use the TeamsFx provider inside your Microsoft Teams applications to provide Microsoft Graph Toolkit components access to Microsoft Graph. |
-
-## Why use Microsoft Graph Toolkit?
-
-Microsoft Graph Toolkit enables you to quickly and easily integrate common experiences powered by Microsoft Graph into your own application. The toolkit:
-
-- **Cuts development time**. The work to connect to Microsoft Graph APIs and render the data in a UI that looks and feels like a Microsoft 365 experience is done for you, with no customization required.
-
-- **Works everywhere**. All components are based on web standards and work seamlessly with any modern browser and web framework (such as React, Angular, or Vue).
-
-- **Is beautiful but flexible**. The components are designed to look and feel like Microsoft 365 experiences but are also customizable by using [CSS custom properties](./customize-components/style.md) and [templating](./customize-components/templates.md).
-
-## Who should use it?
-
-Microsoft Graph Toolkit is great for developers of all experience levels that want to develop an app that connects to and accesses data from Microsoft Graph, such as a:
-
-- Web app
-- Microsoft Teams tab
-- Progressive Web App (PWA)
-- Electron app
-- SharePoint web part
 
 ## Where can I use it?
 
