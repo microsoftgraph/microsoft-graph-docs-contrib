@@ -7,17 +7,17 @@ author: sebastienlevert
 
 # Build a Microsoft Teams tab with the Microsoft Graph Toolkit
 
-This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app without single sign-on (SSO) and does not require a backend. It leverages the Teams Toolkit as the scaffolding system.
+This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app without single sign-on (SSO) and does not require a backend. It uses the Teams Toolkit as the scaffolding system.
 
 Building a tab involves the following steps:
 
-1. Build a new Teams Tab using React and Fluent UI with the Teams Toolkit.
+1. Build a new Teams tab using React and Fluent UI with the Teams Toolkit.
 1. Replace the content of the `Tab.tsx` file.
 1. Initialize the TeamsFx Provider.
 1. Add components.
 1. Test your app.
 
-## Build a new Teams Tab using React and Fluent UI with the Teams Toolkit
+## Build a new Teams tab using React and Fluent UI with the Teams Toolkit
 
 To get start, use [this documentation](/microsoftteams/platform/toolkit/create-new-project) to get your tab up and running. When asked about the App Features of your tab, select **React with Fluent UI**. When asked about the **Programming Language**, select **TypeScript**. For the rest, go through the regular path of the wizard.
 
@@ -25,7 +25,7 @@ To get start, use [this documentation](/microsoftteams/platform/toolkit/create-n
 
 ## Replace the content of the `Tab.tsx` file
 
-Remove the entire content of the `/src/components/Tab.tsx` file and use the following code. This will help with focusing on the goal to achieve.
+Remove the contents of the `/src/components/Tab.tsx` file and use the following code. This will help with focusing on the goal to achieve.
 
 ```tsx
 import { useContext } from "react";
@@ -125,7 +125,7 @@ Replace the `<Button>` by the following code:
 
 ## Add components
 
-Now, you're ready to add any of the Microsoft Graph Toolkit components. The first components you will likely want to add is a person and an agenda. First, update your `imports` for `@microsoft/mgt-react`:
+Now, you're ready to add any of the Microsoft Graph Toolkit components. The first components you will likely want to add are a person and an agenda. First, update your `imports` for `@microsoft/mgt-react`:
 
 ```tsx
 import { Agenda, Person, applyTheme } from "@microsoft/mgt-react";
@@ -141,13 +141,13 @@ Add your component between the `<></>` at the bottom of the file:
 ## Test your app
 
 1. Press `F5` or use the `Run and Debug Activity Panel` in Visual Studio Code.
-1. Select a target Microsoft 365 application where the personal tabs can run: `Debug in Teams`, `Debug in Outlook` or `Debug in the Microsoft 365 app` and click the `Run and Debug` green arrow button.
+1. Select a target Microsoft 365 application where the personal tabs can run: **Debug in Teams**, **Debug in Outlook**, or **Debug in the Microsoft 365 app**, and choose **Run and Debug**.
 
 > **Note**
-> If you receive an https error when running your tab `It looks like the webpage at **https://localhost:53000/index.html#/tab** might be having issues, or it may have moved permanently to a new web address`, please see these articles :
+> If you receive the HTTPS error when running your tab `It looks like the webpage at **https://localhost:53000/index.html#/tab** might be having issues, or it may have moved permanently to a new web address`, see the following articles:
 >
-> - On Windows : https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#what-to-do-if-i-do-not-want-to-install-the-development-certificate
-> - On WSL : https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#how-to-manually-install-the-development-certificate-for-windows-subsystem-for-linux-wsl-users
+> - [What to do if I do not want to install the development certificate?](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#what-to-do-if-i-do-not-want-to-install-the-development-certificate) (Windows) 
+> - [What to do if I do not want to install the development certificate?](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#what-to-do-if-i-do-not-want-to-install-the-development-certificate) (WSL)
 
 ## Next Steps
 
