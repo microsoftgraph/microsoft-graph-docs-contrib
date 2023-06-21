@@ -56,7 +56,7 @@ None.
 |intelProfiles|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|A list of **intelligenceProfile** objects.|
 |intelProfileIndicators|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|Refers to indicators of threat or compromise highlighted in a [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md).<br/>**Note**: List retrieval is not yet supported.|
 |passiveDnsRecords|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Retrieve details about [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) objects.<br/>**Note**: List retrieval is not yet supported.|
-|subdomains|[microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection|Retrieve details about [microsoft.graph.security.subdomain](../resources/security-subdomain.md).<br/>**Note**: List retrieval is not yet supported.|
+|subdomains|[microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection|Retrieve details about the [microsoft.graph.security.subdomain](../resources/security-subdomain.md).<br/>**Note**: List retrieval is not yet supported.|
 |vulnerabilities|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) collection|Retrieve details about [microsoft.graph.security.vulnerabilities](../resources/security-vulnerability.md).<br/>**Note**: List retrieval is not yet supported.|
 
 ## JSON representation

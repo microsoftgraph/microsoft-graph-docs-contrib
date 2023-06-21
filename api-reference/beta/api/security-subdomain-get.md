@@ -1,6 +1,6 @@
 ---
 title: "Get subdomain"
-description: "Read the properties and relationships of a microsoft.graph.security.subdomain object."
+description: "Read the properties and relationships of a Microsoft Graph security subdomain object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"

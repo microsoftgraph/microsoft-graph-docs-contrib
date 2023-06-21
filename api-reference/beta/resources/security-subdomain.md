@@ -32,7 +32,7 @@ Represents an internet domain that is part of a primary domain. For example, lea
 
 | Relationship | Type                                                           | Description                               |
 | :----------- | :------------------------------------------------------------- | :---------------------------------------- |
-| host         | [microsoft.graph.security.host](../resources/security-host.md) | Indicates the host of the subdomain. |
+| host         | [microsoft.graph.security.host](../resources/security-host.md) | The host of the subdomain. |
 
 ## JSON representation
 
