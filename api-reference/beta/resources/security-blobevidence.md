@@ -24,7 +24,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |blobContainer|[microsoft.graph.security.blobContainerEvidence](./security-blobcontainerevidence.md)|The container which the blob belongs to.|
 |createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [alertEvidence](../resources/security-alertevidence.md). |
 |etag|String|The Etag associated with this blob.|
-|fileHashes|[microsoft.graph.security.fileHash](./filehash.md) collection|The file hashes associated with this blob.|
+|fileHashes|[microsoft.graph.fileHash](./filehash.md) collection|The file hashes associated with this blob.|
 |name|String|The name of the blob.|
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 |remediationStatusDetails|String|Details about the remediation status. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "etag": "String",
   "fileHashes": [{
-    "@odata.type": "microsoft.graph.security.fileHash"
+    "@odata.type": "microsoft.graph.fileHash"
   }],
   "name": "String",
   "remediationStatus": "String",
