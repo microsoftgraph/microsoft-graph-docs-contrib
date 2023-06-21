@@ -33,12 +33,12 @@ var requestBody = new Call
 	{
 		Modality.Audio,
 	},
-	CallOptions = new CallOptions
+	CallOptions = new OutgoingCallOptions
 	{
 		OdataType = "#microsoft.graph.outgoingCallOptions",
 		IsContentSharingNotificationEnabled = true,
 	},
-	MediaConfig = new MediaConfig
+	MediaConfig = new ServiceHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.serviceHostedMediaConfig",
 	},

@@ -8,17 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AttachmentBase
+var requestBody = new TaskFileAttachment
 {
 	OdataType = "#microsoft.graph.taskFileAttachment",
 	Name = "smile",
+	ContentBytes = Convert.FromBase64String("a0b1c76de9f7="),
 	ContentType = "image/gif",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"contentBytes" , "a0b1c76de9f7="
-		},
-	},
 };
 var result = await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].Attachments.PostAsync(requestBody);
 

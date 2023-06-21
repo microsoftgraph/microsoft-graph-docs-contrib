@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AuthenticationEventListener
+var requestBody = new OnTokenIssuanceStartListener
 {
 	OdataType = "#microsoft.graph.onTokenIssuanceStartListener",
 	Conditions = new AuthenticationConditions

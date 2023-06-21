@@ -56,7 +56,7 @@ $targetsInvitationParticipantInfo1Identity->setUser($targetsInvitationParticipan
 $targetsInvitationParticipantInfo1->setIdentity($targetsInvitationParticipantInfo1Identity);
 
 $targetsArray []= $targetsInvitationParticipantInfo1;
-$targetsInvitationParticipantInfo2 = new InvitationParticipantInfo();
+$targetsInvitationParticipantInfo2 = new ParticipantInfo();
 $targetsInvitationParticipantInfo2->set@odatatype('#microsoft.graph.participantInfo');
 
 $targetsInvitationParticipantInfo2Identity = new IdentitySet();
@@ -81,7 +81,7 @@ $requestBody->setTargets($targetsArray);
 $requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
 ]);
 
-$mediaConfig = new MediaConfig();
+$mediaConfig = new ServiceHostedMediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
 
 $mediaConfig->setRemoveFromDefaultAudioGroup(false);

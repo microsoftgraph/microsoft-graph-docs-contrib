@@ -24,15 +24,12 @@ preview_text.content = 'It will be fun!'
 request_body.preview_text = preview_text
 request_body.activity_type = 'eventCreated'
 
-recipient = TeamworkNotificationRecipient()
+recipient = ChannelMembersNotificationRecipient()
 recipient.@odata_type = 'microsoft.graph.channelMembersNotificationRecipient'
 
-additional_data = [
-'team_id' => '7155e3c8-175e-4311-97ef-572edc3aa3db', 
-'channel_id' => '19:0ea5de04de4743bcb4cd20cb99235d99@thread.tacv2', 
-];
-recipient.additional_data(additional_data)
+recipient.team_id = '7155e3c8-175e-4311-97ef-572edc3aa3db'
 
+recipient.channel_id = '19:0ea5de04de4743bcb4cd20cb99235d99@thread.tacv2'
 
 
 request_body.recipient = recipient

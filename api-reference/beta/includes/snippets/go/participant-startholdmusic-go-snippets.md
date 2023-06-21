@@ -17,14 +17,11 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 
 
 requestBody := graphcommunications.NewStartHoldMusicPostRequestBody()
-customPrompt := graphmodels.NewPrompt()
-additionalData := map[string]interface{}{
-mediaInfo := graphmodels.New()
+customPrompt := graphmodels.NewMediaPrompt()
+mediaInfo := graphmodels.NewMediaInfo()
 uri := "https://bot.contoso.com/onHold.wav"
 mediaInfo.SetUri(&uri) 
-	customPrompt.SetMediaInfo(mediaInfo)
-}
-customPrompt.SetAdditionalData(additionalData)
+customPrompt.SetMediaInfo(mediaInfo)
 requestBody.SetCustomPrompt(customPrompt)
 clientContext := "d45324c1-fcb5-430a-902c-f20af696537c"
 requestBody.SetClientContext(&clientContext) 

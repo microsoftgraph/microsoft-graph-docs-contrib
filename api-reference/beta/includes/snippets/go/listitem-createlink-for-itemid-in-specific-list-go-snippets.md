@@ -27,9 +27,8 @@ requestBody.SetPassword(&password)
 
 driveRecipient := graphmodels.NewDriveRecipient()
 
-recipients := []graphsites.DriveRecipientable {
+recipients := []graphmodels.DriveRecipientable {
 	driveRecipient,
-
 }
 requestBody.SetRecipients(recipients)
 sendNotification := true

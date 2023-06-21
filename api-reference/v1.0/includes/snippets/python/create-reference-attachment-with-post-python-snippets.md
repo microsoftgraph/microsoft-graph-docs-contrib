@@ -16,7 +16,7 @@ postbody.content = 'I attached a reference to a file on OneDrive.'
 
 
 post.body = postbody
-attachments_attachment1 = Attachment()
+attachments_attachment1 = ReferenceAttachment()
 attachments_attachment1.@odata_type = '#microsoft.graph.referenceAttachment'
 
 attachments_attachment1.name = 'Personal pictures'

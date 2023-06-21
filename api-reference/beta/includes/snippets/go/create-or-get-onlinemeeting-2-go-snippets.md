@@ -17,7 +17,7 @@ import (
 graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewCreateOrGetPostRequestBody()
+requestBody := graphusers.NewItemCreateOrGetPostRequestBody()
 chatInfo := graphmodels.NewChatInfo()
 threadId := "19:7ebda77322dd4505ac4dedb5b67df076@thread.tacv2"
 chatInfo.SetThreadId(&threadId) 
@@ -43,7 +43,6 @@ meetingParticipantInfo.SetUpn(&upn)
 
 attendees := []graphmodels.MeetingParticipantInfoable {
 	meetingParticipantInfo,
-
 }
 participants.SetAttendees(attendees)
 requestBody.SetParticipants(participants)

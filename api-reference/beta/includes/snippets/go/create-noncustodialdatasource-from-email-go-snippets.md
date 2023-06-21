@@ -18,11 +18,9 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 requestBody := graphmodelsediscovery.NewNoncustodialDataSource()
 applyHoldToSource := true
 requestBody.SetApplyHoldToSource(&applyHoldToSource) 
-dataSource := graphmodelsediscovery.NewDataSource()
-additionalData := map[string]interface{}{
-	"email" : "adelev@contoso.com", 
-}
-dataSource.SetAdditionalData(additionalData)
+dataSource := graphmodelsediscovery.NewUserSource()
+email := "adelev@contoso.com"
+dataSource.SetEmail(&email) 
 requestBody.SetDataSource(dataSource)
 
 result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").NoncustodialDataSources().Post(context.Background(), requestBody, nil)

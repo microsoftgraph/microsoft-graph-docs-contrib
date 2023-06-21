@@ -85,7 +85,6 @@ chatMessageAttachment1.SetThumbnailUrl(&thumbnailUrl)
 attachments := []graphmodels.ChatMessageAttachmentable {
 	chatMessageAttachment,
 	chatMessageAttachment1,
-
 }
 requestBody.SetAttachments(attachments)
 mentions := []graphmodels.ChatMessageMentionable {
