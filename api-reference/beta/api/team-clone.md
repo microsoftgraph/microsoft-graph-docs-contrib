@@ -29,7 +29,7 @@ When you clone tabs in Microsoft Teams, they initially appear in an unconfigured
 (If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
 
 Cloning is a long-running operation.
-After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md)
+Once the POST clone operation is complete, you need to GET the [operation](../resources/teamsasyncoperation.md)
 returned by the Location: header to see if it's "running" or "succeeded" or "failed".
 You should continue to GET until the status is not "running".
 The recommended delay between GETs is 5 seconds.
