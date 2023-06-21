@@ -16,10 +16,8 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 
 
 requestBody := graphmodelsediscovery.NewDataSource()
-additionalData := map[string]interface{}{
-	"email" : "badguy@contoso.com", 
-}
-requestBody.SetAdditionalData(additionalData)
+email := "badguy@contoso.com"
+requestBody.SetEmail(&email) 
 
 result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").SourceCollections().BySourceCollectionId("sourceCollection-id").AdditionalSources().Post(context.Background(), requestBody, nil)
 

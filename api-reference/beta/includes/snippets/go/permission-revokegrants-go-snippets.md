@@ -23,9 +23,8 @@ driveRecipient := graphmodels.NewDriveRecipient()
 email := "ryan@contoso.com"
 driveRecipient.SetEmail(&email) 
 
-grantees := []graphdrives.DriveRecipientable {
+grantees := []graphmodels.DriveRecipientable {
 	driveRecipient,
-
 }
 requestBody.SetGrantees(grantees)
 

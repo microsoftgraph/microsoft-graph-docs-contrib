@@ -10,16 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new EducationSubmissionResource();
-$resource = new EducationResource();
+$resource = new EducationLinkResource();
 $resource->setDisplayName('Wikipedia');
 
+$resource->setLink('https://en.wikipedia.org/wiki/Main_Page');
+
 $resource->set@odatatype('#microsoft.graph.educationLinkResource');
-
-$additionalData = [
-		'link' => 'https://en.wikipedia.org/wiki/Main_Page', 
-];
-$resource->setAdditionalData($additionalData);
-
 
 
 $requestBody->setResource($resource);

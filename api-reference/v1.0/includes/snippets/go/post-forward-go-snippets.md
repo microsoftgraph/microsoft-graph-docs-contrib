@@ -29,9 +29,8 @@ address := "address-value"
 emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
-toRecipients := []graphgroups.Recipientable {
+toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 

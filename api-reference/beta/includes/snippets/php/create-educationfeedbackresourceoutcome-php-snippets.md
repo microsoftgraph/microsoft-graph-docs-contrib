@@ -9,22 +9,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new EducationOutcome();
+$requestBody = new EducationFeedbackResourceOutcome();
 $requestBody->set@odatatype('#microsoft.graph.educationFeedbackResourceOutcome');
 
-$additionalData = [
-		'feedbackResource' => $requestBody = new FeedbackResource();
-$		requestBody->set@odatatype('#microsoft.graph.educationWordResource');
+$feedbackResource = new EducationWordResource();
+$feedbackResource->set@odatatype('#microsoft.graph.educationWordResource');
 
-$		requestBody->setDisplayName('Document1.docx');
+$feedbackResource->setDisplayName('Document1.docx');
 
 
 $requestBody->setFeedbackResource($feedbackResource);
-
-];
-$requestBody->setAdditionalData($additionalData);
-
-
 
 
 $result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->byAssignmentId('educationAssignment-id')->submissions()->bySubmissionId('educationSubmission-id')->outcomes()->post($requestBody);
