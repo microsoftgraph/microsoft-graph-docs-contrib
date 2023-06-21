@@ -61,7 +61,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_swapshiftschangerequest_2"
+  "name": "get_swapshiftschangerequest_v1_e1"
 }-->
 
 ```msgraph-interactive

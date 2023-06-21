@@ -69,7 +69,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_channel",
+  "name": "get_channel_beta_e1",
   "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2"]
 }-->
 ```msgraph-interactive
@@ -222,7 +222,7 @@ The following example shows a request to get the **channelSummary** property.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_channel",
+  "name": "get_channelsummary_beta_e2",
   "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2"]
 }-->
 
