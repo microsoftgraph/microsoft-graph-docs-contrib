@@ -17,9 +17,10 @@ Represents an internet domain that is part of a primary domain. For example, lea
 
 ## Methods
 
-| Method                                            | Return type                                                              | Description                                                                                                                 |
-| :------------------------------------------------ | :----------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
-| [Get subdomain](../api/security-subdomain-get.md) | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) | Read the properties and relationships of a [microsoft.graph.security.subdomain](../resources/security-subdomain.md) object. |
+| Method                                                                | Return type                                                                         | Description                                                                                                                 |
+| :-------------------------------------------------------------------- | :---------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
+| [Get subdomain](../api/security-subdomain-get.md)                     | [microsoft.graph.security.subdomain](../resources/security-subdomain.md)            | Read the properties and relationships of a [microsoft.graph.security.subdomain](../resources/security-subdomain.md) object. |
+| [List subdomains for a host](../api/security-host-list-subdomains.md) | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection | Get a list of **subdomain** resources of a host.                                                                            |
 
 ## Properties
 
