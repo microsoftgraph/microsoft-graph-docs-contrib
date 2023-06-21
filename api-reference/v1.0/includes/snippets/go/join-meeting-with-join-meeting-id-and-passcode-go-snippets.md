@@ -20,39 +20,34 @@ callbackUri := "https://bot.contoso.com/callback"
 requestBody.SetCallbackUri(&callbackUri) 
 requestedModalities := []graphmodels.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
-	requestBody.SetModality(&modality) 
-
+	requestBody.SetModality(&modality)
 }
 requestBody.SetRequestedModalities(requestedModalities)
-mediaConfig := graphmodels.NewMediaConfig()
-additionalData := map[string]interface{}{
+mediaConfig := graphmodels.NewServiceHostedMediaConfig()
 
 
- := graphmodels.New()
+mediaInfo := graphmodels.NewMediaInfo()
 uri := "https://cdn.contoso.com/beep.wav"
-.SetUri(&uri) 
+mediaInfo.SetUri(&uri) 
 resourceId := "f8971b04-b53e-418c-9222-c82ce681a582"
-.SetResourceId(&resourceId) 
- := graphmodels.New()
+mediaInfo.SetResourceId(&resourceId) 
+mediaInfo1 := graphmodels.NewMediaInfo()
 uri := "https://cdn.contoso.com/cool.wav"
-.SetUri(&uri) 
+mediaInfo1.SetUri(&uri) 
 resourceId := "86dc814b-c172-4428-9112-60f8ecae1edb"
-.SetResourceId(&resourceId) 
+mediaInfo1.SetResourceId(&resourceId) 
 
-	preFetchMedia := []graphmodels.Objectable {
-		,
-		,
-
-	}
+preFetchMedia := []graphmodels.MediaInfoable {
+	mediaInfo,
+	mediaInfo1,
 }
-mediaConfig.SetAdditionalData(additionalData)
+mediaConfig.SetPreFetchMedia(preFetchMedia)
 requestBody.SetMediaConfig(mediaConfig)
-meetingInfo := graphmodels.NewMeetingInfo()
-additionalData := map[string]interface{}{
-	"joinMeetingId" : "1234567", 
-	"passcode" : "psw123", 
-}
-meetingInfo.SetAdditionalData(additionalData)
+meetingInfo := graphmodels.NewJoinMeetingIdMeetingInfo()
+joinMeetingId := "1234567"
+meetingInfo.SetJoinMeetingId(&joinMeetingId) 
+passcode := "psw123"
+meetingInfo.SetPasscode(&passcode) 
 requestBody.SetMeetingInfo(meetingInfo)
 tenantId := "86dc81db-c112-4228-9222-63f3esaa1edb"
 requestBody.SetTenantId(&tenantId) 

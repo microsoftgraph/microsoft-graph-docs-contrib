@@ -24,7 +24,6 @@ assignedLabel.SetLabelId(&labelId)
 
 assignedLabels := []graphmodels.AssignedLabelable {
 	assignedLabel,
-
 }
 requestBody.SetAssignedLabels(assignedLabels)
 

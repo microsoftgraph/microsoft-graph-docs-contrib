@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new UpdateAudiencePostRequestBody();
-$addMembersUpdatableAsset1 = new UpdatableAsset();
+$addMembersUpdatableAsset1 = new AzureADDevice();
 $addMembersUpdatableAsset1->set@odatatype('#microsoft.graph.windowsUpdates.azureADDevice');
 
 $addMembersUpdatableAsset1->setId('String (identifier)');
