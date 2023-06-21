@@ -25,14 +25,14 @@ Represents an internet domain that is part of a primary domain. For example, lea
 
 | Property          | Type           | Description                                                                                                                                                                                                                                                                          |
 | :---------------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| firstSeenDateTime | DateTimeOffset | The first date and time when this **subdomain** was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| id                | String         | A system-generated ID for the **subdomain**.                                                                                                                                                                                                                                         |
+| firstSeenDateTime | DateTimeOffset | The first date and time when Microsoft Defender Threat Intelligence observed the subdomain. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`. |
+| id                | String         | A system-generated ID for the subdomain.                                                                                                                                                                                                                                         |
 
 ## Relationships
 
 | Relationship | Type                                                           | Description                               |
 | :----------- | :------------------------------------------------------------- | :---------------------------------------- |
-| host         | [microsoft.graph.security.host](../resources/security-host.md) | Indicates the **host** of this subdomain. |
+| host         | [microsoft.graph.security.host](../resources/security-host.md) | Indicates the host of the subdomain. |
 
 ## JSON representation
 
