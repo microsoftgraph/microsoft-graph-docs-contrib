@@ -25,7 +25,7 @@ You can specify which parts of the team to clone:
 - **settings** – Copies all settings within the team, along with key group settings.
 - **tabs** – Copies the tabs within channels.
 
-When tabs are cloned, they are put into an unconfigured state they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen.
+When you clone tabs in Microsoft Teams, they initially appear in an unconfigured state on the tab bar. The first time you open these cloned tabs, you will be prompted to go through the configuration screen.
 (If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
 
 Cloning is a long-running operation.
