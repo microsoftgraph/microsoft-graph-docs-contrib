@@ -56,7 +56,7 @@ If successful, this method returns the `201 Created` response code if the activi
 The following is an example of the request.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "request",
     "name": "upsert_activity"
 } -->
 
@@ -108,9 +108,9 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "response",
     "truncated": true,
-    "@odata.type": "microsoft.graph.userActivity"
+    "@odata.type": "Edm.String"
 } -->
 
 ```http
