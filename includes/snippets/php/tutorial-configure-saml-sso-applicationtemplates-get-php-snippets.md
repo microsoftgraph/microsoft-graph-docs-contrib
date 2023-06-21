@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ApplicationTemplatesRequestBuilderGetRequestConfiguration();
 $queryParameters = ApplicationTemplatesRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "displayName eq 'AWS IAM Identity Center '";
+$queryParameters->filter = "displayName eq 'AWS IAM Identity Center (successor to AWS Single Sign-On)'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

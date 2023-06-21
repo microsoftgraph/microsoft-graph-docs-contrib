@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMessageRule()
@@ -25,7 +25,6 @@ requestBody.SetIsEnabled(&isEnabled)
 conditions := graphmodels.NewMessageRulePredicates()
 senderContains := []string {
 	"adele",
-
 }
 conditions.SetSenderContains(senderContains)
 requestBody.SetConditions(conditions)
@@ -42,7 +41,6 @@ recipient.SetEmailAddress(emailAddress)
 
 forwardTo := []graphmodels.Recipientable {
 	recipient,
-
 }
 actions.SetForwardTo(forwardTo)
 stopProcessingRules := true
