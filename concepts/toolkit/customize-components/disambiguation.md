@@ -1,21 +1,21 @@
 ---
-title: "Microsoft Graph Toolkit disambiguation"
-description: "Explaining the disambiguation feature and how to developers can use it"
+title: "Microsoft Graph Toolkit component disambiguation"
+description: "Learn about the disambiguation feature of Microsoft Graph Toolkit and how to use it."
 ms.localizationpriority: medium
 author: gavinbarron
 ---
 
-# Microsoft Graph Toolkit disambiguation
+# Microsoft Graph Toolkit component disambiguation
 
-The Microsoft Graph Toolkit is built using [web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components). Web components use their tag name as a unique key when registering within a browser. Any attempt to register a component using a previously registered tag name results in an error being thrown when calling `CustomElementRegistry.define()`. In scenarios where multiple custom applications can be loaded into a single page this created issues for MGT, most notably in developing solutions using SharePoint Framework.
+The Microsoft Graph Toolkit is built using [web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components). Web components use their tag name as a unique key when registering within a browser. Any attempt to register a component using a previously registered tag name results in an error being thrown when calling `CustomElementRegistry.define()`. In scenarios where multiple custom applications can be loaded into a single page, this created issues for Microsoft Graph Toolkit, most notably when developing solutions using SharePoint Framework.
 
-To mitigate this challenge we built the [`mgt-spfx`](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt-spfx) package. Using `mgt-spfx` developers can centralize the registration of MGT web components across all SPFx solutions deployed on the tenant. By reusing MGT components from a central location web parts from different solutions can be loaded into a single page without throwing errors. When using `mgt-spfx` all MGT based web parts in a SharePoint tenant use the same version of MGT.
+The [`mgt-spfx`](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt-spfx) package helps to mitigate this challenge. By using `mgt-spfx`, you can centralize the registration of Microsoft Graph Toolkit web components across all SPFx solutions deployed on the tenant. By reusing toolkit components from a central location, web parts from different solutions can be loaded into a single page without throwing errors. When you use `mgt-spfx`, all Microsoft Graph Toolkit-based web parts in a SharePoint tenant use the same version of the toolkit.
 
-To allow developers to build web parts using the latest version of MGT and load them on pages along with web parts that use v2.x of MGT, we've added a new disambiguation feature to MGT. Using this feature developers can specify a unique string to add to the tag name of all MGT web components in their application. When using disambiguation the suppied value is inserted as the second segment of the tag name, so when using `customElementHelper.withDisambiguation('foo')` the `<mgt-login>` tag is referenced using `<mgt-foo-login>`.
+The disambiguation feature enables you to build web parts using the latest version of Microsoft Graph Toolkit and load them on pages along with web parts that use v2.x. By using this feature, you can specify a unique string to add to the tag name of all toolkit web components in their application. When using disambiguation, the supplied value is inserted as the second segment of the tag name, so when using `customElementHelper.withDisambiguation('foo')` the `<mgt-login>` tag is referenced using `<mgt-foo-login>`.
 
 ## Usage in SharePoint Framework web parts with React
 
-When building SharePoint Framework web parts using React any component that imports from the `@microsoft/mgt-react` library must be asynchronously loaded after configuring the disambiguation setting. The `lazyLoadComponent` helper function exists to facilitate using `React.lazy` and `React.Suspense` to lazy load these components from the top level web part. The `lazyLoadComponent` function is provided in the `@microsft/mgt-spfx-utils` package. Because the disambiguation value is only used when rendering the web component there is no change to the way a given component is referenced in React code.
+When building SharePoint Framework web parts, using React any component that imports from the `@microsoft/mgt-react` library must be asynchronously loaded after configuring the disambiguation setting. The `lazyLoadComponent` helper function exists to facilitate using `React.lazy` and `React.Suspense` to lazy load these components from the top level web part. The `lazyLoadComponent` function is provided in the `@microsft/mgt-spfx-utils` package. Because the disambiguation value is only used when rendering the web component there is no change to the way a given component is referenced in React code.
 
 Below is a minimal example web part that demonstrates how to use MGT with disambiguation in React based SharePoint Framework Web parts. A complete example is available in the [React SharePoint Web Part Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/main/samples/sp-webpart/src/webparts/mgtDemo/MgtDemoWebPart.ts).
 
