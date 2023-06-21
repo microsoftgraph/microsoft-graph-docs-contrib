@@ -7,7 +7,7 @@
             "ApiChange": "Relationship",
             "ChangedApiName": "subdomains",
             "ChangeType": "Addition",
-            "Description": "Added the **subdomains** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+            "Description": "Added the **subdomains** navigation property to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
             "Target": "host"
           },
           {
