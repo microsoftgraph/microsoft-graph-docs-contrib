@@ -17,11 +17,19 @@ Read the properties and relationships of an [azureADAuthentication](../resources
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-| Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All and Directory.Read.All | 
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Reports.Read.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Reports.Read.All |
+
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
++ Global Reader
++ Reports Reader
++ Security Administrator
++ Security Operator
++ Security Reader
 
 ## HTTP request
 
@@ -34,7 +42,7 @@ GET /reports/sla/azureADAuthentication
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't take any parameters.
 
 ## Request headers
 |Name|Description|
@@ -58,7 +66,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/azureADAuthentication
+GET https://graph.microsoft.com/beta/reports/sla/azureADAuthentication
 ```
 
 

@@ -26,8 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attainments|[serviceLevelAgreementAttainment](../resources/servicelevelagreementattainment.md) collection|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|attainments|[serviceLevelAgreementAttainment](../resources/servicelevelagreementattainment.md) collection|A list of monthly serviceLevelAgreementAttainment objects|
 
 ## Relationships
 None.
@@ -36,7 +35,6 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.azureADAuthentication",
   "baseType": "microsoft.graph.entity",
   "openType": false
@@ -45,7 +43,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.azureADAuthentication",
-  "id": "String (identifier)",
   "attainments": [
     {
       "@odata.type": "microsoft.graph.serviceLevelAgreementAttainment"

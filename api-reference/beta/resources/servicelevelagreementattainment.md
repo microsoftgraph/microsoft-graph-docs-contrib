@@ -18,9 +18,9 @@ Describes the Azure AD SLA attainment for a tenant for the identified calendar m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|endDate|Date|The end date for the calendar month for which SLA attainment is measured.|
+|endDate|DatetimeOffset|The end date for the calendar month for which SLA attainment is measured.|
 |score|Double|The level of SLA attainment achieved by the tenant for the calendar month identified, as documented here: https://learn.microsoft.com/azure/active-directory/reports-monitoring/reference-azure-ad-sla-performance. Values are truncated, not rounded, so the actual value is always equal to or higher than the displayed value.|
-|startDate|Date|The start date for the calendar month for which SLA attainment is measured.|
+|startDate|DatetimeOffset|The start date for the calendar month for which SLA attainment is measured.|
 
 ## Relationships
 None.
@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.serviceLevelAgreementAttainment",
-  "startDate": "DateTimeOffset",
-  "endDate": "DateTimeOffset",
+  "startDate": "DateTime",
+  "endDate": "DateTime",
   "score": "Double"
 }
 ```

@@ -17,11 +17,8 @@ A placeholder to allow for the desired URL path for Azure AD SLA attainment.
 
 Inherits from [entity](../resources/entity.md).
 
-
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Uniquely identifies the serviceLevelAgreementRoot. Inherited from [entity](../resources/entity.md).|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
@@ -29,19 +26,4 @@ Inherits from [entity](../resources/entity.md).
 |azureADAuthentication|[azureADAuthentication](../resources/azureadauthentication.md)|Collects the Azure AD SLA attainment for each month for an Azure AD tenant.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
-<!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.serviceLevelAgreementRoot",
-  "baseType": "microsoft.graph.entity",
-  "openType": false
-}
--->
-``` json
-{
-  "@odata.type": "#microsoft.graph.serviceLevelAgreementRoot",
-  "id": "String (identifier)"
-}
-```
-
+This entity can not be viewed as it is only a placeholder.
