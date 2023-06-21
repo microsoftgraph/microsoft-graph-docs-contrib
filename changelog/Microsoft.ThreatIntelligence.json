@@ -4,7 +4,7 @@
         "ChangeList": [
           {
             "Id": "7c4aa088-2340-477e-b502-b648e706c81d",
-            "ApiChange": "Resource",
+            "ApiChange": "Relationship",
             "ChangedApiName": "subdomains",
             "ChangeType": "Addition",
             "Description": "Added the **subdomains** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
