@@ -51,12 +51,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["9f01e9b8-caf4-4132-b8d8-14de1bfc07a7","4656e4f1-0d8c-4bf8-8d4e-b1b551e9ef16"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","ba8e4215-4fb2-4dba-abe7-a8f2585177d3"],
   "name": "educationmodule_publish_1"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/education/classes/1e40c4aa-98b0-400a-8570-161e8dcfa631/modules/777c289e-d0d4-4912-88d2-21812ae87b9a/publish
+POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/ba8e4215-4fb2-4dba-abe7-a8f2585177d3/publish
 ```
 
 ### Response
@@ -72,21 +72,21 @@ The following is an example of a response.
 HTTP/1.1 200 Ok
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationModule",
+    "@odata.context": "https://graph.microsoft.com/$metadata#educationModule",
     "@odata.type": "#microsoft.graph.educationModule",
     "displayName": "2023-05-05T22_28_20_564Z",
     "description": "Description for 2023-05-05T22_28_20_564Z",
     "resourcesFolderUrl": null,
-    "isPinned": false,
+    "isPinned": true,
     "status": "published",
-    "createdDateTime": "2023-05-04T22:28:20.2048002Z",
-    "lastModifiedDateTime": "2023-05-04T22:34:49.3045564Z",
-    "id": "777c289e-d0d4-4912-88d2-21812ae87b9a",
+    "createdDateTime": "2023-06-21T17:25:44.1277744Z",
+    "lastModifiedDateTime": "2023-06-21T17:43:14.7269771Z",
+    "id": "ba8e4215-4fb2-4dba-abe7-a8f2585177d3",
     "createdBy": {
         "application": null,
         "device": null,
         "user": {
-            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+            "id": "4aa81579-714a-4f46-8a05-605558455fa1",
             "displayName": null
         }
     },
@@ -94,7 +94,7 @@ HTTP/1.1 200 Ok
         "application": null,
         "device": null,
         "user": {
-            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+            "id": "4aa81579-714a-4f46-8a05-605558455fa1",
             "displayName": null
         }
     }

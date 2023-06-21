@@ -54,7 +54,7 @@ The following is an example of the request.
   "name": "create_educationmodule_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/1e40c4aa-98b0-400a-8570-161e8dcfa631/modules
+POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules
 Content-type: application/json
 
 { 
@@ -78,30 +78,30 @@ HTTP/1.1 201 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('1e40c4aa-98b0-400a-8570-161e8dcfa631')/modules/$entity",
-  "displayName": "2023-05-05T22_28_20_564Z",
-  "description": "Description for 2023-05-05T22_28_20_564Z",
-  "resourcesFolderUrl": null,
-  "isPinned": false,
-  "status": "draft",
-  "createdDateTime": "2023-05-04T22:28:20.2048002Z",
-  "lastModifiedDateTime": "2023-05-04T22:28:20.2297093Z",
-  "id": "777c289e-d0d4-4912-88d2-21812ae87b9a",
-  "createdBy": {
-    "application": null,
-    "device": null,
-    "user": {
-      "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
-      "displayName": null
+    "@odata.context": "https://graph.microsoft.com/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules/$entity",
+    "displayName": "2023-05-05T22_28_20_564Z",
+    "description": "Description for 2023-05-05T22_28_20_564Z",
+    "resourcesFolderUrl": null,
+    "isPinned": false,
+    "status": "draft",
+    "createdDateTime": "2023-06-21T17:25:44.1277744Z",
+    "lastModifiedDateTime": "2023-06-21T17:25:44.1494968Z",
+    "id": "ba8e4215-4fb2-4dba-abe7-a8f2585177d3",
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "4aa81579-714a-4f46-8a05-605558455fa1",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "4aa81579-714a-4f46-8a05-605558455fa1",
+            "displayName": null
+        }
     }
-  },
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "user": {
-      "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
-      "displayName": null
-    }
-  }
 }
 ```

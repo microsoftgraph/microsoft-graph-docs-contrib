@@ -51,12 +51,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["1e40c4aa-98b0-400a-8570-161e8dcfa631","82781966-72d7-4bc3-8803-2530f1a382d7"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","ba8e4215-4fb2-4dba-abe7-a8f2585177d3"],
   "name": "educationmodule_pin_1"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/education/classes/1e40c4aa-98b0-400a-8570-161e8dcfa631/modules/82781966-72d7-4bc3-8803-2530f1a382d7/pin
+POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/ba8e4215-4fb2-4dba-abe7-a8f2585177d3/pin
 ```
 
 ### Response
@@ -72,21 +72,21 @@ The following is an example of a response.
 HTTP/1.1 200 Ok
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationModule",
+    "@odata.context": "https://graph.microsoft.com/$metadata#educationModule",
     "@odata.type": "#microsoft.graph.educationModule",
-    "displayName": "2023-05-05T23_09_02_734Z",
-    "description": "Description for 2023-05-05T23_09_02_734Z",
+    "displayName": "2023-05-05T22_28_20_564Z",
+    "description": "Description for 2023-05-05T22_28_20_564Z",
     "resourcesFolderUrl": null,
     "isPinned": true,
     "status": "draft",
-    "createdDateTime": "2023-05-04T23:09:02.1925818Z",
-    "lastModifiedDateTime": "2023-05-04T23:09:54.7566354Z",
-    "id": "82781966-72d7-4bc3-8803-2530f1a382d7",
+    "createdDateTime": "2023-06-21T17:25:44.1277744Z",
+    "lastModifiedDateTime": "2023-06-21T17:41:17.3790932Z",
+    "id": "ba8e4215-4fb2-4dba-abe7-a8f2585177d3",
     "createdBy": {
         "application": null,
         "device": null,
         "user": {
-            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+            "id": "4aa81579-714a-4f46-8a05-605558455fa1",
             "displayName": null
         }
     },
@@ -94,7 +94,7 @@ HTTP/1.1 200 Ok
         "application": null,
         "device": null,
         "user": {
-            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+            "id": "4aa81579-714a-4f46-8a05-605558455fa1",
             "displayName": null
         }
     }
