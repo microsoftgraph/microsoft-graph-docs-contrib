@@ -19,16 +19,13 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 requestBody := graphcommunications.NewAnswerPostRequestBody()
 callbackUri := "callbackUri-value"
 requestBody.SetCallbackUri(&callbackUri) 
-mediaConfig := graphmodels.NewMediaConfig()
-additionalData := map[string]interface{}{
-	"blob" : "<Media Session Configuration Blob>", 
-}
-mediaConfig.SetAdditionalData(additionalData)
+mediaConfig := graphmodels.NewAppHostedMediaConfig()
+blob := "<Media Session Configuration Blob>"
+mediaConfig.SetBlob(&blob) 
 requestBody.SetMediaConfig(mediaConfig)
-acceptedModalities := []graphcommunications.Modalityable {
+acceptedModalities := []graphmodels.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
-	requestBody.SetModality(&modality) 
-
+	requestBody.SetModality(&modality)
 }
 requestBody.SetAcceptedModalities(acceptedModalities)
 callOptions := graphmodels.NewIncomingCallOptions()

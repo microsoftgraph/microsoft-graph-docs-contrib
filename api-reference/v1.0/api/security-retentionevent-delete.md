@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/v1.0/security/triggers/retentionEvents/{reten
 
 ---
 
-
 ### Response
 >
 <!-- {

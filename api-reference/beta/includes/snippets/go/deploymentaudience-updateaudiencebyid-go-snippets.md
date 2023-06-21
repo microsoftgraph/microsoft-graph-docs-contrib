@@ -20,22 +20,18 @@ memberEntityType := "String"
 requestBody.SetMemberEntityType(&memberEntityType) 
 addMembers := []string {
 	"String",
-
 }
 requestBody.SetAddMembers(addMembers)
 removeMembers := []string {
 	"String",
-
 }
 requestBody.SetRemoveMembers(removeMembers)
 addExclusions := []string {
 	"String",
-
 }
 requestBody.SetAddExclusions(addExclusions)
 removeExclusions := []string {
 	"String",
-
 }
 requestBody.SetRemoveExclusions(removeExclusions)
 
