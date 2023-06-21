@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AuthenticationStrengthPoliciesRequestBuilderGetRequestConfiguration();
 $queryParameters = AuthenticationStrengthPoliciesRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "allowedCombinations/any";
+$queryParameters->filter = "allowedCombinations/any(x:x has 'sms, password')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

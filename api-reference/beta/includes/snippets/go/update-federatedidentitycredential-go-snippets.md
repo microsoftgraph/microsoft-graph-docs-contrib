@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewFederatedIdentityCredential()
@@ -26,7 +26,6 @@ description := "Updated description"
 requestBody.SetDescription(&description) 
 audiences := []string {
 	"api://AzureADTokenExchange",
-
 }
 requestBody.SetAudiences(audiences)
 

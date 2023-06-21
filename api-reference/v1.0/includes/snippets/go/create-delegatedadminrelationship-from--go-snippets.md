@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDelegatedAdminRelationship()
@@ -40,7 +40,6 @@ unifiedRole1.SetRoleDefinitionId(&roleDefinitionId)
 unifiedRoles := []graphmodels.UnifiedRoleable {
 	unifiedRole,
 	unifiedRole1,
-
 }
 accessDetails.SetUnifiedRoles(unifiedRoles)
 requestBody.SetAccessDetails(accessDetails)

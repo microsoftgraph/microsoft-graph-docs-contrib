@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgIdentityGovernanceLifecycleWorkflowRun -WorkflowId $workflowId -RunId $runId
+Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun -WorkflowId $workflowId
 
 ```

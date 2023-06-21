@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
@@ -24,16 +24,14 @@ allowedTargetScope := graphmodels.SPECIFICDIRECTORYUSERS_ALLOWEDTARGETSCOPE
 requestBody.SetAllowedTargetScope(&allowedTargetScope) 
 
 
-subjectSet := graphmodels.NewSubjectSet()
-additionalData := map[string]interface{}{
-	"description" : "Membership rule for all users from sales department", 
-	"membershipRule" : "(user.department -eq \"Sales\")", 
-}
-subjectSet.SetAdditionalData(additionalData)
+subjectSet := graphmodels.NewAttributeRuleMembers()
+description := "Membership rule for all users from sales department"
+subjectSet.SetDescription(&description) 
+membershipRule := "(user.department -eq \"Sales\")"
+subjectSet.SetMembershipRule(&membershipRule) 
 
 specificAllowedTargets := []graphmodels.SubjectSetable {
 	subjectSet,
-
 }
 requestBody.SetSpecificAllowedTargets(specificAllowedTargets)
 automaticRequestSettings := graphmodels.NewAccessPackageAutomaticRequestSettings()

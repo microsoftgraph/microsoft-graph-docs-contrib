@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UsersRequestBuilderGetRequestConfiguration();
 $queryParameters = UsersRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "startswith(givenName,%20'J')";
+$queryParameters->filter = "startswith(givenName, 'J')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

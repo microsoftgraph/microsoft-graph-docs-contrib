@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//identityGovernance"
+	  graphmodelsidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/models/identitygovernance"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewWorkflow()
+requestBody := graphmodelsidentitygovernance.NewWorkflow()
 category := graphmodels.LEAVER_LIFECYCLEWORKFLOWCATEGORY 
 requestBody.SetCategory(&category) 
 displayName := "Real-time employee termination"
@@ -26,11 +27,11 @@ isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
 isSchedulingEnabled := false
 requestBody.SetIsSchedulingEnabled(&isSchedulingEnabled) 
-executionConditions := graphmodels.NewWorkflowExecutionConditions()
+executionConditions := graphmodelsidentitygovernance.NewOnDemandExecutionOnly()
 requestBody.SetExecutionConditions(executionConditions)
 
 
-task := graphmodels.NewTask()
+task := graphmodelsidentitygovernance.NewTask()
 continueOnError := false
 task.SetContinueOnError(&continueOnError) 
 description := "Remove user from all Azure AD groups memberships"
@@ -47,7 +48,7 @@ arguments := []graphmodels.KeyValuePairable {
 
 }
 task.SetArguments(arguments)
-task1 := graphmodels.NewTask()
+task1 := graphmodelsidentitygovernance.NewTask()
 continueOnError := false
 task1.SetContinueOnError(&continueOnError) 
 description := "Remove user from all Teams memberships"
@@ -64,7 +65,7 @@ arguments := []graphmodels.KeyValuePairable {
 
 }
 task1.SetArguments(arguments)
-task2 := graphmodels.NewTask()
+task2 := graphmodelsidentitygovernance.NewTask()
 continueOnError := false
 task2.SetContinueOnError(&continueOnError) 
 description := "Delete user account in Azure AD"
@@ -82,11 +83,10 @@ arguments := []graphmodels.KeyValuePairable {
 }
 task2.SetArguments(arguments)
 
-tasks := []graphmodels.Taskable {
+tasks := []graphmodelsidentitygovernance.Taskable {
 	task,
 	task1,
 	task2,
-
 }
 requestBody.SetTasks(tasks)
 

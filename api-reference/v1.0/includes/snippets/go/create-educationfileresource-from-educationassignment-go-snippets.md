@@ -12,13 +12,13 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := false
 requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
-resource := graphmodels.NewEducationResource()
+resource := graphmodels.NewEducationFileResource()
 displayName := "article.pdf"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
