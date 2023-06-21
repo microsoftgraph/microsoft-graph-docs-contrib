@@ -26,10 +26,10 @@ Represents a row of data in the public switched telephone network (PSTN) call lo
 |Property|Type|Description|
 |:---|:---|:---|
 |callDurationSource|microsoft.graph.callRecords.pstnCallDurationSource|The source of the call duration data. If the call uses a third-party telecommunications operator via the Operator Connect Program, the operator may provide their own call duration data. In this case, the property value is `operator`. Otherwise, the value is `microsoft`.|
-|callId|String|Call identifier. Not guaranteed to be unique.|
-|callType|String|Indicates whether the call was a PSTN outbound or inbound call and the type of call such as a call placed by a user or an audio conference.|
 |calleeNumber|String|Number of the user or bot who received the call ([E.164](https://en.wikipedia.org/wiki/E.164)).|
 |callerNumber|String|Number of the user or bot who made the call ([E.164](https://en.wikipedia.org/wiki/E.164)).|
+|callId|String|Call identifier. Not guaranteed to be unique.|
+|callType|String|Indicates whether the call was a PSTN outbound or inbound call and the type of call such as a call placed by a user or an audio conference.|
 |charge|Decimal|Amount of money or cost of the call that is charged to your account.|
 |clientLocalIpV4Address|String|Local IPv4 of the client that is retrieved from the operating system of the client.|
 |clientLocalIpV6Address|String|Local IPv6 of the client that is retrieved from the operating system of the client.|
@@ -73,10 +73,10 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.callRecords.pstnCallLogRow",
   "callDurationSource": "String",
-  "callId": "String",
-  "callType": "String",
   "calleeNumber": "String",
   "callerNumber": "String",
+  "callId": "String",
+  "callType": "String",
   "charge": "Decimal",
   "clientLocalIpV4Address": "String",
   "clientLocalIpV6Address": "String",
