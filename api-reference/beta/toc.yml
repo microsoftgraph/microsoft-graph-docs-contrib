@@ -16330,6 +16330,8 @@ items:
             href: resources/security-subdomain.md
           - name: Get
             href: api/security-subdomain-get.md
+          - name: List Subdomains for a host
+            href: api/security-host-list-subdomains.md
         - name: Vulnerability component
           items:
           - name: Vulnerability componet
