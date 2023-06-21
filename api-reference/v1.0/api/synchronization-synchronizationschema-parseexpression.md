@@ -41,7 +41,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 |expression               |String               |Expression to parse.|
 |testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Test data object to evaluate expression against. Optional.|
@@ -55,12 +55,13 @@ If successful, this method returns a `200 OK` response code and a [parseExpressi
 ##### Request
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_parseexpression"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{id}/schema/parseExpression
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{id}/schema/parseExpression
 Content-type: application/json
 
 {
@@ -114,6 +115,11 @@ Content-type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-parseexpression-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 The following is an example of the response.
@@ -183,6 +189,10 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: synchronizationschema_parseexpression/parsedExpression:
+    Schema validation failed on property 'parsedExpression' ['microsoft.graph.attributeMappingSource']",
+    "Error: synchronizationschema_parseexpression/parsedExpression/parameters:
+    Array expected members to be of type Collection(String) but found: Collection(Object)"
   ]
 }
 -->
