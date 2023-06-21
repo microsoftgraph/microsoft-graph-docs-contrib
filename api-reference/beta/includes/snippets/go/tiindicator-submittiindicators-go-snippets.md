@@ -94,10 +94,9 @@ tiIndicator1.SetThreatType(&threatType)
 tlpLevel := graphmodels.GREEN_TLPLEVEL 
 tiIndicator1.SetTlpLevel(&tlpLevel) 
 
-value := []graphsecurity.Objectable {
+value := []graphmodels.tiIndicatorable {
 	tiIndicator,
 	tiIndicator1,
-
 }
 requestBody.SetValue(value)
 

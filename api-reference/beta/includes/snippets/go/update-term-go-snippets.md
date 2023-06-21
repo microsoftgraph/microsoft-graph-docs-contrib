@@ -28,7 +28,6 @@ localizedLabel.SetIsDefault(&isDefault)
 
 labels := []graphmodelstermstore.LocalizedLabelable {
 	localizedLabel,
-
 }
 requestBody.SetLabels(labels)
 

@@ -32,7 +32,6 @@ channel1.SetIsFavoriteByDefault(&isFavoriteByDefault)
 channels := []graphmodels.Channelable {
 	channel,
 	channel1,
-
 }
 requestBody.SetChannels(channels)
 memberSettings := graphmodels.NewTeamMemberSettings()
@@ -63,7 +62,6 @@ teamsAppInstallation1.SetAdditionalData(additionalData)
 installedApps := []graphmodels.TeamsAppInstallationable {
 	teamsAppInstallation,
 	teamsAppInstallation1,
-
 }
 requestBody.SetInstalledApps(installedApps)
 additionalData := map[string]interface{}{

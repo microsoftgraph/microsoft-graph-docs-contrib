@@ -63,7 +63,6 @@ passwordCredentials := []graphmodels.PasswordCredentialConfigurationable {
 	passwordCredentialConfiguration2,
 	passwordCredentialConfiguration3,
 	passwordCredentialConfiguration4,
-
 }
 applicationRestrictions.SetPasswordCredentials(passwordCredentials)
 
@@ -78,7 +77,6 @@ keyCredentialConfiguration.SetRestrictForAppsCreatedAfterDateTime(&restrictForAp
 
 keyCredentials := []graphmodels.KeyCredentialConfigurationable {
 	keyCredentialConfiguration,
-
 }
 applicationRestrictions.SetKeyCredentials(keyCredentials)
 requestBody.SetApplicationRestrictions(applicationRestrictions)

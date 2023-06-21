@@ -19,7 +19,6 @@ requestBody := graphsecurity.NewDeleteTiIndicatorsByExternalIdPostRequestBody()
 value := []string {
 	"externalId-value1",
 	"externalId-value2",
-
 }
 requestBody.SetValue(value)
 

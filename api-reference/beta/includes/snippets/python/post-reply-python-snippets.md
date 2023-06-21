@@ -70,7 +70,7 @@ post.id = 'id-value'
 postin_reply_to = Post()
 
 post.in_reply_to = postin_reply_to
-attachments_attachment1 = Attachment()
+attachments_attachment1 = FileAttachment()
 attachments_attachment1.@odata_type = '#microsoft.graph.fileAttachment'
 
 attachments_attachment1.lastModifiedDateTime = DateTime('2016-10-19T10:37:00Z')
