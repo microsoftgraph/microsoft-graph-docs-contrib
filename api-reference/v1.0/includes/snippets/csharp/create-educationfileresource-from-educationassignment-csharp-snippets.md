@@ -11,7 +11,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new EducationAssignmentResource
 {
 	DistributeForStudentWork = false,
-	Resource = new EducationResource
+	Resource = new EducationFileResource
 	{
 		DisplayName = "article.pdf",
 		OdataType = "#microsoft.graph.educationFileResource",

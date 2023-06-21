@@ -29,7 +29,6 @@ select := []string {
 	"AvailableBandwidthInMBpsP50",
 	"RemoteSignInTimeInSecP50",
 	"UserPrincipalName",
-
 }
 requestBody.SetSelect(select)
 skip := int32(0)

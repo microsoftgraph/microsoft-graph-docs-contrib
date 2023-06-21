@@ -54,7 +54,7 @@ stages_access_package_approval_stage1.is_escalation_enabled = False
 
 stages_access_package_approval_stage1.durationbeforeescalation =  \DateInterval('PT0S')
 
-primary_approvers_subject_set1 = SubjectSet()
+primary_approvers_subject_set1 = InternalSponsors()
 primary_approvers_subject_set1.@odata_type = '#microsoft.graph.internalSponsors'
 
 
@@ -62,25 +62,17 @@ primaryApproversArray []= primaryApproversSubjectSet1;
 stages_access_package_approval_stage1.primaryapprovers(primaryApproversArray)
 
 
-fallback_primary_approvers_subject_set1 = SubjectSet()
+fallback_primary_approvers_subject_set1 = SingleUser()
 fallback_primary_approvers_subject_set1.@odata_type = '#microsoft.graph.singleUser'
 
-additional_data = [
-'user_id' => '7deff43e-1f17-44ef-9e5f-d516b0ba11d4', 
-];
-fallback_primary_approvers_subject_set1.additional_data(additional_data)
-
+fallback_primary_approvers_subject_set1.user_id = '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'
 
 
 fallbackPrimaryApproversArray []= fallbackPrimaryApproversSubjectSet1;
-fallback_primary_approvers_subject_set2 = SubjectSet()
+fallback_primary_approvers_subject_set2 = GroupMembers()
 fallback_primary_approvers_subject_set2.@odata_type = '#microsoft.graph.groupMembers'
 
-additional_data = [
-'group_id' => '1623f912-5e86-41c2-af47-39dd67582b66', 
-];
-fallback_primary_approvers_subject_set2.additional_data(additional_data)
-
+fallback_primary_approvers_subject_set2.group_id = '1623f912-5e86-41c2-af47-39dd67582b66'
 
 
 fallbackPrimaryApproversArray []= fallbackPrimaryApproversSubjectSet2;
@@ -104,25 +96,17 @@ stages_access_package_approval_stage2.durationbeforeescalation =  \DateInterval(
 
 stages_access_package_approval_stage2.PrimaryApprovers([])
 
-fallback_primary_approvers_subject_set1 = SubjectSet()
+fallback_primary_approvers_subject_set1 = SingleUser()
 fallback_primary_approvers_subject_set1.@odata_type = '#microsoft.graph.singleUser'
 
-additional_data = [
-'user_id' => '46184453-e63b-4f20-86c2-c557ed5d5df9', 
-];
-fallback_primary_approvers_subject_set1.additional_data(additional_data)
-
+fallback_primary_approvers_subject_set1.user_id = '46184453-e63b-4f20-86c2-c557ed5d5df9'
 
 
 fallbackPrimaryApproversArray []= fallbackPrimaryApproversSubjectSet1;
-fallback_primary_approvers_subject_set2 = SubjectSet()
+fallback_primary_approvers_subject_set2 = GroupMembers()
 fallback_primary_approvers_subject_set2.@odata_type = '#microsoft.graph.groupMembers'
 
-additional_data = [
-'group_id' => '1623f912-5e86-41c2-af47-39dd67582b66', 
-];
-fallback_primary_approvers_subject_set2.additional_data(additional_data)
-
+fallback_primary_approvers_subject_set2.group_id = '1623f912-5e86-41c2-af47-39dd67582b66'
 
 
 fallbackPrimaryApproversArray []= fallbackPrimaryApproversSubjectSet2;
@@ -186,14 +170,10 @@ review_settingsschedulerecurrence.range = review_settingsschedulerecurrencerange
 review_settingsschedule.recurrence = review_settingsschedulerecurrence
 
 review_settings.schedule = review_settingsschedule
-primary_reviewers_subject_set1 = SubjectSet()
+primary_reviewers_subject_set1 = GroupMembers()
 primary_reviewers_subject_set1.@odata_type = '#microsoft.graph.groupMembers'
 
-additional_data = [
-'group_id' => '1623f912-5e86-41c2-af47-39dd67582b66', 
-];
-primary_reviewers_subject_set1.additional_data(additional_data)
-
+primary_reviewers_subject_set1.group_id = '1623f912-5e86-41c2-af47-39dd67582b66'
 
 
 primaryReviewersArray []= primaryReviewersSubjectSet1;

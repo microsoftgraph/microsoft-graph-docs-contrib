@@ -21,9 +21,8 @@ requestBody := graphapplications.NewAcquireAccessTokenPostRequestBody()
 
 synchronizationSecretKeyStringValuePair := graphmodels.NewSynchronizationSecretKeyStringValuePair()
 
-credentials := []graphapplications.SynchronizationSecretKeyStringValuePairable {
+credentials := []graphmodels.SynchronizationSecretKeyStringValuePairable {
 	synchronizationSecretKeyStringValuePair,
-
 }
 requestBody.SetCredentials(credentials)
 

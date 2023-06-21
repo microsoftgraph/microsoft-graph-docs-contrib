@@ -42,7 +42,6 @@ chatMessageAttachment.SetThumbnailUrl(&thumbnailUrl)
 
 attachments := []graphmodels.ChatMessageAttachmentable {
 	chatMessageAttachment,
-
 }
 requestBody.SetAttachments(attachments)
 

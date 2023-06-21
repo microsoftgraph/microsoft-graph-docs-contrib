@@ -85,7 +85,6 @@ chatMessageAttachment1.SetThumbnailUrl(&thumbnailUrl)
 attachments := []graphmodels.ChatMessageAttachmentable {
 	chatMessageAttachment,
 	chatMessageAttachment1,
-
 }
 requestBody.SetAttachments(attachments)
 mentions := []graphmodels.ChatMessageMentionable {
@@ -272,7 +271,6 @@ reactions := []graphmodels.ChatMessageReactionable {
 	chatMessageReaction5,
 	chatMessageReaction6,
 	chatMessageReaction7,
-
 }
 requestBody.SetReactions(reactions)
 
@@ -487,7 +485,6 @@ messageHistory := []graphmodels.ChatMessageHistoryItemable {
 	chatMessageHistoryItem5,
 	chatMessageHistoryItem6,
 	chatMessageHistoryItem7,
-
 }
 requestBody.SetMessageHistory(messageHistory)
 

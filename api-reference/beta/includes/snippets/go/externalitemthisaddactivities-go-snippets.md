@@ -31,9 +31,8 @@ id := "1f0c997e-99f7-43f1-8cca-086f8d42be8d"
 performedBy.SetId(&id) 
 externalActivity.SetPerformedBy(performedBy)
 
-activities := []graphconnections.ExternalActivityable {
+activities := []graphmodelsexternalconnectors.ExternalActivityable {
 	externalActivity,
-
 }
 requestBody.SetActivities(activities)
 

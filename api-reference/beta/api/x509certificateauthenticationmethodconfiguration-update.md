@@ -132,6 +132,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-x509certificateauthenticationmethodconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-x509certificateauthenticationmethodconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

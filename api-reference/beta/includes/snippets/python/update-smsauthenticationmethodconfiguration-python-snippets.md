@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = AuthenticationMethodConfiguration()
+request_body = SmsAuthenticationMethodConfiguration()
 request_body.@odata_type = '#microsoft.graph.smsAuthenticationMethodConfiguration'
 
 request_body.id = 'Sms'
