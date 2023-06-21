@@ -36,10 +36,9 @@ credential1.SetValue(&value)
 type := "password"
 credential1.SetType(&type) 
 
-credentials := []graphserviceprincipals.Credentialable {
+credentials := []graphmodels.Credentialable {
 	credential,
 	credential1,
-
 }
 requestBody.SetCredentials(credentials)
 

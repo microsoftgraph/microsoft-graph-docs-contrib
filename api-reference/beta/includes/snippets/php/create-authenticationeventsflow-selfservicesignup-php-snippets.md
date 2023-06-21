@@ -9,123 +9,115 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new AuthenticationEventsFlow();
+$requestBody = new ExternalUsersSelfServiceSignUpEventsFlow();
 $requestBody->set@odatatype('#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow');
 
 $requestBody->setDisplayName('Woodgrove Drive User Flow');
 
-$additionalData = [
-		'onAuthenticationMethodLoadStart' => $requestBody = new OnAuthenticationMethodLoadStart();
-$		requestBody->set@odatatype('#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp');
+$onAuthenticationMethodLoadStart = new OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp();
+$onAuthenticationMethodLoadStart->set@odatatype('#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp');
 
-$identityProviders1 = new ();
-$		identityProviders1->setId('EmailPassword-OAUTH');
+$identityProvidersIdentityProviderBase1 = new IdentityProviderBase();
+$identityProvidersIdentityProviderBase1->setId('EmailPassword-OAUTH');
 
 
-$identityProvidersArray []= $identityProviders1;
-$requestBody->setIdentityProviders($identityProvidersArray);
+$identityProvidersArray []= $identityProvidersIdentityProviderBase1;
+$onAuthenticationMethodLoadStart->setIdentityProviders($identityProvidersArray);
 
 
 
 $requestBody->setOnAuthenticationMethodLoadStart($onAuthenticationMethodLoadStart);
+$onInteractiveAuthFlowStart = new OnInteractiveAuthFlowStartExternalUsersSelfServiceSignUp();
+$onInteractiveAuthFlowStart->set@odatatype('#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp');
 
-	'onInteractiveAuthFlowStart' => $requestBody = new OnInteractiveAuthFlowStart();
-$	requestBody->set@odatatype('#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp');
-
-	$requestBody->setIsSignUpAllowed(true);
+$onInteractiveAuthFlowStart->setIsSignUpAllowed(true);
 
 
 $requestBody->setOnInteractiveAuthFlowStart($onInteractiveAuthFlowStart);
+$onAttributeCollection = new OnAttributeCollectionExternalUsersSelfServiceSignUp();
+$onAttributeCollection->set@odatatype('#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp');
 
-	'onAttributeCollection' => $requestBody = new OnAttributeCollection();
-$	requestBody->set@odatatype('#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp');
+$attributesIdentityUserFlowAttribute1 = new IdentityUserFlowAttribute();
+$attributesIdentityUserFlowAttribute1->setId('email');
 
-$attributes1 = new ();
-$	attributes1->setId('email');
+$attributesIdentityUserFlowAttribute1->setDisplayName('Email Address');
 
-$	attributes1->setDisplayName('Email Address');
+$attributesIdentityUserFlowAttribute1->setDescription('Email address of the user');
 
-$	attributes1->setDescription('Email address of the user');
+$attributesIdentityUserFlowAttribute1->setUserFlowAttributeType(new IdentityUserFlowAttributeType('builtin'));
 
-$	attributes1->setUserFlowAttributeType('builtIn');
-
-$	attributes1->setDataType('string');
-
-
-$attributesArray []= $attributes1;
-$attributes2 = new ();
-$	attributes2->setId('displayName');
-
-$	attributes2->setDisplayName('Display Name');
-
-$	attributes2->setDescription('Display Name of the User.');
-
-$	attributes2->setUserFlowAttributeType('builtIn');
-
-$	attributes2->setDataType('string');
+$attributesIdentityUserFlowAttribute1->setDataType(new IdentityUserFlowAttributeDataType('string'));
 
 
-$attributesArray []= $attributes2;
-$requestBody->setAttributes($attributesArray);
+$attributesArray []= $attributesIdentityUserFlowAttribute1;
+$attributesIdentityUserFlowAttribute2 = new IdentityUserFlowAttribute();
+$attributesIdentityUserFlowAttribute2->setId('displayName');
+
+$attributesIdentityUserFlowAttribute2->setDisplayName('Display Name');
+
+$attributesIdentityUserFlowAttribute2->setDescription('Display Name of the User.');
+
+$attributesIdentityUserFlowAttribute2->setUserFlowAttributeType(new IdentityUserFlowAttributeType('builtin'));
+
+$attributesIdentityUserFlowAttribute2->setDataType(new IdentityUserFlowAttributeDataType('string'));
 
 
-$attributeCollectionPage = new AttributeCollectionPage();
-$views1 = new ();
-$inputs1 = new ();
-$inputs1->setAttribute('email');
-
-$inputs1->setLabel('Email Address');
-
-$inputs1->setInputType('Text');
-
-$inputs1->setHidden(true);
-
-$inputs1->setEditable(false);
-
-$inputs1->setWriteToDirectory(true);
-
-$inputs1->setRequired(true);
-
-$inputs1->setValidationRegEx('^[a-zA-Z0-9.!#$%&amp;&#8217;\'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$');
+$attributesArray []= $attributesIdentityUserFlowAttribute2;
+$onAttributeCollection->setAttributes($attributesArray);
 
 
-$inputsArray []= $inputs1;
-$inputs2 = new ();
-$inputs2->setAttribute('displayName');
+$onAttributeCollectionAttributeCollectionPage = new AuthenticationAttributeCollectionPage();
+$viewsAuthenticationAttributeCollectionPageViewConfiguration1 = new AuthenticationAttributeCollectionPageViewConfiguration();
+$inputsAuthenticationAttributeCollectionInputConfiguration1 = new AuthenticationAttributeCollectionInputConfiguration();
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setAttribute('email');
 
-$inputs2->setLabel('Display Name');
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setLabel('Email Address');
 
-$inputs2->setInputType('text');
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setInputType(new AuthenticationAttributeCollectionInputType('text'));
 
-$inputs2->setHidden(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setHidden(true);
 
-$inputs2->setEditable(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setEditable(false);
 
-$inputs2->setWriteToDirectory(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setWriteToDirectory(true);
 
-$inputs2->setRequired(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setRequired(true);
 
-$inputs2->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
-
-
-$inputsArray []= $inputs2;
-$views1->setInputs($inputsArray);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setValidationRegEx('^[a-zA-Z0-9.!#$%&amp;&#8217;\'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$');
 
 
+$inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration1;
+$inputsAuthenticationAttributeCollectionInputConfiguration2 = new AuthenticationAttributeCollectionInputConfiguration();
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setAttribute('displayName');
 
-$viewsArray []= $views1;
-$attributeCollectionPage->setViews($viewsArray);
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setLabel('Display Name');
+
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setInputType(new AuthenticationAttributeCollectionInputType('text'));
+
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setHidden(false);
+
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setEditable(true);
+
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setWriteToDirectory(true);
+
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setRequired(false);
+
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
+
+
+$inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration2;
+$viewsAuthenticationAttributeCollectionPageViewConfiguration1->setInputs($inputsArray);
 
 
 
-$requestBody->setAttributeCollectionPage($attributeCollectionPage);
+$viewsArray []= $viewsAuthenticationAttributeCollectionPageViewConfiguration1;
+$onAttributeCollectionAttributeCollectionPage->setViews($viewsArray);
+
+
+
+$onAttributeCollection->setAttributeCollectionPage($onAttributeCollectionAttributeCollectionPage);
 
 $requestBody->setOnAttributeCollection($onAttributeCollection);
-
-];
-$requestBody->setAdditionalData($additionalData);
-
-
 
 
 $result = $graphServiceClient->identity()->authenticationEventsFlows()->post($requestBody);

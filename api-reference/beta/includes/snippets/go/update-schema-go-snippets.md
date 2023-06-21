@@ -31,8 +31,7 @@ isRetrievable := true
 property.SetIsRetrievable(&isRetrievable) 
 labels := []graphmodelsexternalconnectors.Labelable {
 	label := graphmodels.TITLE_LABEL 
-	property.SetLabel(&label) 
-
+	property.SetLabel(&label)
 }
 property.SetLabels(labels)
 property1 := graphmodelsexternalconnectors.NewProperty()
@@ -58,7 +57,6 @@ properties := []graphmodelsexternalconnectors.Propertyable {
 	property,
 	property1,
 	property2,
-
 }
 requestBody.SetProperties(properties)
 

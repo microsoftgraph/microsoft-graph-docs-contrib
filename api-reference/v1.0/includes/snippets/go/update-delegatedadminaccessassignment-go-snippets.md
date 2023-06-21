@@ -41,7 +41,6 @@ unifiedRoles := []graphmodels.UnifiedRoleable {
 	unifiedRole,
 	unifiedRole1,
 	unifiedRole2,
-
 }
 accessDetails.SetUnifiedRoles(unifiedRoles)
 requestBody.SetAccessDetails(accessDetails)

@@ -9,7 +9,7 @@ client =  GraphServiceClient(request_adapter)
 
 
 
-result = await client.communications.call_records.by_call_record_id('callRecord-id').get()
+result = await client.communications.call_records.microsoft_graph_call_record_get_sm_log(from_date_time={from_date_time},to_date_time={to_date_time}.get()
 
 
 ```

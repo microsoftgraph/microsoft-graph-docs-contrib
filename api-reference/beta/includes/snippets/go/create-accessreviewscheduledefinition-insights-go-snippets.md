@@ -22,12 +22,11 @@ descriptionForAdmins := "New scheduled access review"
 requestBody.SetDescriptionForAdmins(&descriptionForAdmins) 
 descriptionForReviewers := "If you have any questions, contact jerry@contoso.com"
 requestBody.SetDescriptionForReviewers(&descriptionForReviewers) 
-scope := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
-	"query" : "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers", 
-	"queryType" : "MicrosoftGraph", 
-}
-scope.SetAdditionalData(additionalData)
+scope := graphmodels.NewAccessReviewQueryScope()
+query := "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+scope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+scope.SetQueryType(&queryType) 
 requestBody.SetScope(scope)
 
 
@@ -37,9 +36,8 @@ accessReviewReviewerScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
 
-reviewers := []graphmodels.Objectable {
+reviewers := []graphmodels.accessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 requestBody.SetReviewers(reviewers)
 settings := graphmodels.NewAccessReviewScheduleSettings()
@@ -61,18 +59,16 @@ recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
 
 
-accessReviewRecommendationInsightSetting := graphmodels.NewAccessReviewRecommendationInsightSetting()
-additionalData := map[string]interface{}{
-	"recommendationLookBackDuration" : "P30D", 
-	"signInScope" : "tenant", 
-}
-accessReviewRecommendationInsightSetting.SetAdditionalData(additionalData)
-accessReviewRecommendationInsightSetting1 := graphmodels.NewAccessReviewRecommendationInsightSetting()
+accessReviewRecommendationInsightSetting := graphmodels.NewUserLastSignInRecommendationInsightSetting()
+recommendationLookBackDuration , err := abstractions.ParseISODuration("P30D")
+accessReviewRecommendationInsightSetting.SetRecommendationLookBackDuration(&recommendationLookBackDuration) 
+signInScope := graphmodels.TENANT_USERSIGNINRECOMMENDATIONSCOPE 
+accessReviewRecommendationInsightSetting.SetSignInScope(&signInScope) 
+accessReviewRecommendationInsightSetting1 := graphmodels.NewGroupPeerOutlierRecommendationInsightSettings()
 
 recommendationInsightSettings := []graphmodels.AccessReviewRecommendationInsightSettingable {
 	accessReviewRecommendationInsightSetting,
 	accessReviewRecommendationInsightSetting1,
-
 }
 settings.SetRecommendationInsightSettings(recommendationInsightSettings)
 requestBody.SetSettings(settings)

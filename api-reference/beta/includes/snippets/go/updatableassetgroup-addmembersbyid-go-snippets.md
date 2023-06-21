@@ -20,7 +20,6 @@ ids := []string {
 	"String",
 	"String",
 	"String",
-
 }
 requestBody.SetIds(ids)
 memberEntityType := "#microsoft.graph.windowsUpdates.azureADDevice"

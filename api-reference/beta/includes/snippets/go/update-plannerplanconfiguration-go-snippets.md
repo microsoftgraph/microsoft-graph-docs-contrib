@@ -38,7 +38,6 @@ buckets := []graphmodels.PlannerPlanConfigurationBucketDefinitionable {
 	plannerPlanConfigurationBucketDefinition1,
 	plannerPlanConfigurationBucketDefinition2,
 	plannerPlanConfigurationBucketDefinition3,
-
 }
 requestBody.SetBuckets(buckets)
 
