@@ -56,7 +56,7 @@ If successful, this method returns the `201 Created` response code if the activi
 The following is an example of the request.
 
 <!-- {
-    "blockType": "request",
+    "blockType": "ignored",
     "name": "upsert_activity"
 } -->
 
@@ -108,7 +108,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-    "blockType": "response",
+    "blockType": "ignored",
     "truncated": true,
     "@odata.type": "Edm.String"
 } -->
@@ -168,7 +168,7 @@ This example creates a new activity and a history item for that activity in one 
 The following is an example of the request.
 
 <!-- {
-    "blockType": "request",
+    "blockType": "ignored",
     "name": "upsert_activity2"
 } -->
 
@@ -225,7 +225,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-    "blockType": "response",
+    "blockType": "ignored",
     "truncated": true,
     "@odata.type": "Edm.String"
 } -->
