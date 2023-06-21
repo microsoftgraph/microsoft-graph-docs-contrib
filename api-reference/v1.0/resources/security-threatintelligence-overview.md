@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft Graph APIs for Microsoft Defender Threat Intelligence (preview)
+# Use the Microsoft Graph APIs for Microsoft Defender Threat Intelligence
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
