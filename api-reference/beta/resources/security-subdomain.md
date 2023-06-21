@@ -1,6 +1,6 @@
 ---
 title: "subdomain resource type"
-description: "Provides context about subdomains of a host"
+description: "Represents an internet domain that is part of a primary domain"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
