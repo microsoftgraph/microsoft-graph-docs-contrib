@@ -22,14 +22,10 @@ preview_text.content = 'New Task Created'
 
 
 request_body.preview_text = preview_text
-recipient = TeamworkNotificationRecipient()
+recipient = ChatMembersNotificationRecipient()
 recipient.@odata_type = 'microsoft.graph.chatMembersNotificationRecipient'
 
-additional_data = [
-'chat_id' => '19:1c3af46e9e0f4a5293343c8813c47619@thread.v2', 
-];
-recipient.additional_data(additional_data)
-
+recipient.chat_id = '19:1c3af46e9e0f4a5293343c8813c47619@thread.v2'
 
 
 request_body.recipient = recipient

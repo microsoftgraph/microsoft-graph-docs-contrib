@@ -111,7 +111,7 @@ If successful, this method returns a `200 OK` response code and an [appRoleAssig
 The following request queries the resource service principal to get details of an app role it has granted to a client that can be a user, group, or client service principal in the tenant.
 <!-- {
   "blockType": "request",
-  "name": "get_approleassignment"
+  "name": "get_approleassignment_v1_e1"
 }
 -->
 ``` http
@@ -153,7 +153,7 @@ Content-Type: application/json
 The following request queries the client service principal to get details of an app role granted to it. In this instance, the app role represents the application permission.
 <!-- {
   "blockType": "request",
-  "name": "get_approleassignment"
+  "name": "get_approleassignment_serviceprincipal_v1_e2"
 }
 -->
 ``` http
@@ -192,6 +192,7 @@ Content-Type: application/json
 
 #### Request
 The following request queries the signed-in user's appRoleAssignments.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_approleassignment"
@@ -200,6 +201,36 @@ The following request queries the signed-in user's appRoleAssignments.
 ``` http
 GET https://graph.microsoft.com/v1.0/me/appRoleAssignments/Lo6gEKI-4EyAy9X91LBepo6Aq0Rt6QxBjWRl76txk8I
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-approleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-approleassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-approleassignment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-approleassignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-approleassignment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response

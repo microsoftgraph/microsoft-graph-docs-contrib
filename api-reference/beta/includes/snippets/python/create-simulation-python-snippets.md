@@ -18,16 +18,12 @@ request_body.status(SimulationStatus.Scheduled('simulationstatus.scheduled'))
 
 request_body.DurationInDays = 3
 
-included_account_target = AccountTargetContent()
+included_account_target = AddressBookAccountTargetContent()
 included_account_target.@odata_type = '#microsoft.graph.addressBookAccountTargetContent'
 
 included_account_target.type(AccountTargetContentType.AddressBook('accounttargetcontenttype.addressbook'))
 
-additional_data = [
-'account_target_emails' => ['john@contoso.com', ],
-];
-included_account_target.additional_data(additional_data)
-
+included_account_target.AccountTargetEmails(['john@contoso.com', ])
 
 
 request_body.included_account_target = included_account_target

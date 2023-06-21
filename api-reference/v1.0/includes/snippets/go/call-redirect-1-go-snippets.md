@@ -29,9 +29,8 @@ application.SetId(&id)
 identity.SetApplication(application)
 invitationParticipantInfo.SetIdentity(identity)
 
-targets := []graphcommunications.InvitationParticipantInfoable {
+targets := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,
-
 }
 requestBody.SetTargets(targets)
 callbackUri := "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"

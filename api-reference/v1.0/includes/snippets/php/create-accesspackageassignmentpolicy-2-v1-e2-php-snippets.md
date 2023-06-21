@@ -56,7 +56,7 @@ $stagesAccessPackageApprovalStage1->setIsEscalationEnabled(false);
 
 $stagesAccessPackageApprovalStage1->setDurationBeforeEscalation(new \DateInterval('PT0S'));
 
-$primaryApproversSubjectSet1 = new SubjectSet();
+$primaryApproversSubjectSet1 = new InternalSponsors();
 $primaryApproversSubjectSet1->set@odatatype('#microsoft.graph.internalSponsors');
 
 
@@ -64,25 +64,17 @@ $primaryApproversArray []= $primaryApproversSubjectSet1;
 $stagesAccessPackageApprovalStage1->setPrimaryApprovers($primaryApproversArray);
 
 
-$fallbackPrimaryApproversSubjectSet1 = new SubjectSet();
+$fallbackPrimaryApproversSubjectSet1 = new SingleUser();
 $fallbackPrimaryApproversSubjectSet1->set@odatatype('#microsoft.graph.singleUser');
 
-$additionalData = [
-'userId' => '7deff43e-1f17-44ef-9e5f-d516b0ba11d4', 
-];
-$fallbackPrimaryApproversSubjectSet1->setAdditionalData($additionalData);
-
+$fallbackPrimaryApproversSubjectSet1->setUserId('7deff43e-1f17-44ef-9e5f-d516b0ba11d4');
 
 
 $fallbackPrimaryApproversArray []= $fallbackPrimaryApproversSubjectSet1;
-$fallbackPrimaryApproversSubjectSet2 = new SubjectSet();
+$fallbackPrimaryApproversSubjectSet2 = new GroupMembers();
 $fallbackPrimaryApproversSubjectSet2->set@odatatype('#microsoft.graph.groupMembers');
 
-$additionalData = [
-'groupId' => '1623f912-5e86-41c2-af47-39dd67582b66', 
-];
-$fallbackPrimaryApproversSubjectSet2->setAdditionalData($additionalData);
-
+$fallbackPrimaryApproversSubjectSet2->setGroupId('1623f912-5e86-41c2-af47-39dd67582b66');
 
 
 $fallbackPrimaryApproversArray []= $fallbackPrimaryApproversSubjectSet2;
@@ -106,25 +98,17 @@ $stagesAccessPackageApprovalStage2->setDurationBeforeEscalation(new \DateInterva
 
 $stagesAccessPackageApprovalStage2->setPrimaryApprovers([]);
 
-$fallbackPrimaryApproversSubjectSet1 = new SubjectSet();
+$fallbackPrimaryApproversSubjectSet1 = new SingleUser();
 $fallbackPrimaryApproversSubjectSet1->set@odatatype('#microsoft.graph.singleUser');
 
-$additionalData = [
-'userId' => '46184453-e63b-4f20-86c2-c557ed5d5df9', 
-];
-$fallbackPrimaryApproversSubjectSet1->setAdditionalData($additionalData);
-
+$fallbackPrimaryApproversSubjectSet1->setUserId('46184453-e63b-4f20-86c2-c557ed5d5df9');
 
 
 $fallbackPrimaryApproversArray []= $fallbackPrimaryApproversSubjectSet1;
-$fallbackPrimaryApproversSubjectSet2 = new SubjectSet();
+$fallbackPrimaryApproversSubjectSet2 = new GroupMembers();
 $fallbackPrimaryApproversSubjectSet2->set@odatatype('#microsoft.graph.groupMembers');
 
-$additionalData = [
-'groupId' => '1623f912-5e86-41c2-af47-39dd67582b66', 
-];
-$fallbackPrimaryApproversSubjectSet2->setAdditionalData($additionalData);
-
+$fallbackPrimaryApproversSubjectSet2->setGroupId('1623f912-5e86-41c2-af47-39dd67582b66');
 
 
 $fallbackPrimaryApproversArray []= $fallbackPrimaryApproversSubjectSet2;
@@ -188,14 +172,10 @@ $reviewSettingsScheduleRecurrence->setRange($reviewSettingsScheduleRecurrenceRan
 $reviewSettingsSchedule->setRecurrence($reviewSettingsScheduleRecurrence);
 
 $reviewSettings->setSchedule($reviewSettingsSchedule);
-$primaryReviewersSubjectSet1 = new SubjectSet();
+$primaryReviewersSubjectSet1 = new GroupMembers();
 $primaryReviewersSubjectSet1->set@odatatype('#microsoft.graph.groupMembers');
 
-$additionalData = [
-'groupId' => '1623f912-5e86-41c2-af47-39dd67582b66', 
-];
-$primaryReviewersSubjectSet1->setAdditionalData($additionalData);
-
+$primaryReviewersSubjectSet1->setGroupId('1623f912-5e86-41c2-af47-39dd67582b66');
 
 
 $primaryReviewersArray []= $primaryReviewersSubjectSet1;

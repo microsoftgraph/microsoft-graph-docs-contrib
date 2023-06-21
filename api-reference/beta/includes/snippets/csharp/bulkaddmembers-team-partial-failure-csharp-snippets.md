@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Members.Add.AddPostRequest
 {
 	Values = new List<ConversationMember>
 	{
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "microsoft.graph.aadUserConversationMember",
 			Roles = new List<String>
@@ -25,7 +25,7 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Members.Add.AddPostRequest
 				},
 			},
 		},
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "microsoft.graph.aadUserConversationMember",
 			Roles = new List<string>
