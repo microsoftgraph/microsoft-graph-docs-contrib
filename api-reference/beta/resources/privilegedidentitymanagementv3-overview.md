@@ -121,7 +121,7 @@ PIM APIs support organizations to adopt a Zero Trust approach to secure the iden
 
 The following permissions are supported for PIM for Azure AD roles API operations:
 
-|Permissions  |Column2  |
+|Permissions  |Supported operations  |
 |---------|---------|
 | RoleAssignmentSchedule.Read.Directory <br/> RoleAssignmentSchedule.ReadWrite.Directory <br/> RoleManagement.Read.Directory <br/> RoleManagement.ReadWrite.Directory     | To manage role assignment operations.        |
 | RoleEligibilitySchedule.Read.Directory <br/> RoleEligibilitySchedule.ReadWrite.Directory <br/> RoleManagement.Read.Directory <br/> RoleManagement.ReadWrite.Directory    | To manage role eligibility operations.         |
