@@ -29,11 +29,9 @@ previewText := graphmodels.NewItemBody()
 content := "New Task Created"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
-recipient := graphmodels.NewTeamworkNotificationRecipient()
-additionalData := map[string]interface{}{
-	"userId" : "569363e2-4e49-4661-87f2-16f245c5d66a", 
-}
-recipient.SetAdditionalData(additionalData)
+recipient := graphmodels.NewAadUserNotificationRecipient()
+userId := "569363e2-4e49-4661-87f2-16f245c5d66a"
+recipient.SetUserId(&userId) 
 requestBody.SetRecipient(recipient)
 
 
@@ -43,9 +41,8 @@ keyValuePair.SetName(&name)
 value := "Task 12322"
 keyValuePair.SetValue(&value) 
 
-templateParameters := []graphchats.KeyValuePairable {
+templateParameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
-
 }
 requestBody.SetTemplateParameters(templateParameters)
 

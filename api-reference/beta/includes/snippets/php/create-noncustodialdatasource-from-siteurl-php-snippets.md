@@ -12,20 +12,14 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new NoncustodialDataSource();
 $requestBody->setApplyHoldToSource(false);
 
-$dataSource = new DataSource();
+$dataSource = new SiteSource();
 $dataSource->set@odatatype('microsoft.graph.ediscovery.siteSource');
 
-$additionalData = [
-		'site' => $dataSource = new Site();
-$		dataSource->setWebUrl('https://contoso.sharepoint.com/sites/SecretSite');
+$dataSourceSite = new Site();
+$dataSourceSite->setWebUrl('https://contoso.sharepoint.com/sites/SecretSite');
 
 
-$dataSource->setSite($site);
-
-];
-$dataSource->setAdditionalData($additionalData);
-
-
+$dataSource->setSite($dataSourceSite);
 
 $requestBody->setDataSource($dataSource);
 

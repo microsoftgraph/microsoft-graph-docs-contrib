@@ -54,7 +54,6 @@ allowedValues := []graphmodels.AllowedValueable {
 	allowedValue,
 	allowedValue1,
 	allowedValue2,
-
 }
 requestBody.SetAllowedValues(allowedValues)
 
