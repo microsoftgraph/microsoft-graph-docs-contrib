@@ -26,20 +26,20 @@ body.SetContent(&content)
 post.SetBody(body)
 
 
-attachment := graphmodels.NewAttachment()
+attachment := graphmodels.NewReferenceAttachment()
 name := "Personal pictures"
 attachment.SetName(&name) 
-additionalData := map[string]interface{}{
-	"sourceUrl" : "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-	"providerType" : "oneDriveConsumer", 
-	"permission" : "Edit", 
-	"isFolder" : "True", 
-}
-attachment.SetAdditionalData(additionalData)
+sourceUrl := "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
+attachment.SetSourceUrl(&sourceUrl) 
+providerType := graphmodels.ONEDRIVECONSUMER_REFERENCEATTACHMENTPROVIDER 
+attachment.SetProviderType(&providerType) 
+permission := graphmodels.EDIT_REFERENCEATTACHMENTPERMISSION 
+attachment.SetPermission(&permission) 
+isFolder := true
+attachment.SetIsFolder(&isFolder) 
 
 attachments := []graphmodels.Attachmentable {
 	attachment,
-
 }
 post.SetAttachments(attachments)
 requestBody.SetPost(post)

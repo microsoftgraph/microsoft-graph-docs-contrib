@@ -23,9 +23,8 @@ ediscoveryReviewTag := graphmodelssecurity.NewEdiscoveryReviewTag()
 id := "d3d99dc704a74801b792b3e1e722aa0d"
 ediscoveryReviewTag.SetId(&id) 
 
-tagsToAdd := []graphsecurity.Objectable {
+tagsToAdd := []graphmodelssecurity.ediscoveryReviewTagable {
 	ediscoveryReviewTag,
-
 }
 requestBody.SetTagsToAdd(tagsToAdd)
 

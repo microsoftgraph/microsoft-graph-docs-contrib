@@ -60,7 +60,6 @@ timeCardBreak.SetStart(start)
 
 breaks := []graphmodels.TimeCardBreakable {
 	timeCardBreak,
-
 }
 requestBody.SetBreaks(breaks)
 additionalData := map[string]interface{}{
