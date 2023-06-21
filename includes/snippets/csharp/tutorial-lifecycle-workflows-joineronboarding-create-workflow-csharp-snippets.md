@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
@@ -12,29 +14,22 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 	Description = "Configure pre-hire tasks for onboarding employees before their first day",
 	IsEnabled = true,
 	IsSchedulingEnabled = false,
-	ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowExecutionConditions
+	ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.TriggerAndScopeBasedConditions
 	{
 		OdataType = "microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-		AdditionalData = new Dictionary<string, object>
+		Scope = new Microsoft.Graph.Beta.Models.IdentityGovernance.RuleBasedSubjectSet
 		{
-			{
-				"scope" , new 
-				{
-					OdataType = "microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-					Rule = "(department eq 'Sales')",
-				}
-			},
-			{
-				"trigger" , new 
-				{
-					OdataType = "microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-					TimeBasedAttribute = "employeeHireDate",
-					OffsetInDays = -2,
-				}
-			},
+			OdataType = "microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+			Rule = "(department eq 'Sales')",
+		},
+		Trigger = new Microsoft.Graph.Beta.Models.IdentityGovernance.TimeBasedAttributeTrigger
+		{
+			OdataType = "microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+			TimeBasedAttribute = Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowTriggerTimeBasedAttribute.EmployeeHireDate,
+			OffsetInDays = -2,
 		},
 	},
-	Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject>
+	Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.Task>
 	{
 		new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
 		{

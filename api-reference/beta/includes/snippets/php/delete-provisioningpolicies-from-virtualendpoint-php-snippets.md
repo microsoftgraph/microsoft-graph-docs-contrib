@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPoliciesById('cloudPcProvisioningPolicy-id')->delete();
+$graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->byProvisioningPolicieId('cloudPcProvisioningPolicy-id')->delete();
 
 
 ```

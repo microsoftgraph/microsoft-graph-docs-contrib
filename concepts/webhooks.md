@@ -3,7 +3,7 @@ title: "Set up notifications for changes in resource data."
 description: "Change notifications enable applications to receive alerts when a Microsoft Graph resource they're interested changes."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: jumasure
+ms.reviewer: keylimesoda
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -31,7 +31,7 @@ Change notifications follow an event-driven model where customers receive alerts
 Microsoft Graph supports three types of change notifications:
 
 - **Basic notifications**: Change notifications that don't contain resource data other than the **id** of the resource that changed. All Microsoft Graph resources support basic notifications. When an app receives a basic notification, the service can use the **id** to query to changed object.
-- **Rich notifications**: Change notifications that include the resource data of the object that changed. For the list of Microsoft Graph resources that support rich notifications, see [supported resources](#supported-resources).
+- **Rich notifications**: Change notifications that include the resource data of the object that changed. For more information about rich notifications, see [Rich notifications](./webhooks-with-resource-data.md).
 - **Lifecycle notifications**: Notifications that alert the customer when they are at risk of missing change notifications due to the lifecycle of their subscription. For more information about lifecycle notifications, see [Lifecycle notifications](./webhooks-lifecycle.md).
 
 ## Supported resources

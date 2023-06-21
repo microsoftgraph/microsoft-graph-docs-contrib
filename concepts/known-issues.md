@@ -380,7 +380,7 @@ The following limitations apply to query parameters:
 - `@odata.bind` is not supported. This means that you can't properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 - `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 - `$expand`:
-  - For directory objects, returns a maximum of 20 objects.
+  - For directory objects, returns a maximum of 100 objects.
   - No support for `@odata.nextLink`.
   - No support for more than one level of expand.
   - For directory objects, no support for nesting other query parameters such as `$filter` and `$select` in `$expand`.
@@ -448,14 +448,6 @@ GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 ```
 
 To solve this issue, remove the `/tenants/{tenant-id}` part from the URL before you call the API to access the cross-tenant shared [channel](/graph/api/resources/channel).
-
-### TeamworkAppSettings permissions are not visible in the Azure portal
-
-The permissions TeamworkAppSettings.Read.All and TeamworkAppSettings.ReadWrite.All are currently being rolled out and might not be visible in Azure Portal yet. To consent to these permissions, please use an authorize request as follows:
-
-```http
-GET https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authorize?client_id={client-app-id}&response_type=code&scope=https://graph.microsoft.com/TeamworkAppSettings.ReadWrite.All
-```
 
 ### Create channel can return an error response
 

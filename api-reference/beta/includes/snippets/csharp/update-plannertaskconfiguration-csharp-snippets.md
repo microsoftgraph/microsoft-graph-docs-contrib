@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new PlannerTaskConfiguration
@@ -16,16 +18,11 @@ var requestBody = new PlannerTaskConfiguration
 			new PlannerTaskRoleBasedRule
 			{
 				DefaultRule = "block",
-				Role = new PlannerTaskConfigurationRoleBase
+				Role = new PlannerRelationshipBasedUserType
 				{
 					OdataType = "#microsoft.graph.plannerRelationshipBasedUserType",
 					RoleKind = PlannerUserRoleKind.Relationship,
-					AdditionalData = new Dictionary<string, object>
-					{
-						{
-							"role" , "defaultRules"
-						},
-					},
+					Role = PlannerRelationshipUserRoles.DefaultRules,
 				},
 				PropertyRule = new PlannerTaskPropertyRule
 				{
@@ -49,16 +46,11 @@ var requestBody = new PlannerTaskConfiguration
 			new PlannerTaskRoleBasedRule
 			{
 				DefaultRule = "block",
-				Role = new PlannerTaskConfigurationRoleBase
+				Role = new PlannerRelationshipBasedUserType
 				{
 					OdataType = "#microsoft.graph.plannerRelationshipBasedUserType",
 					RoleKind = PlannerUserRoleKind.Relationship,
-					AdditionalData = new Dictionary<string, object>
-					{
-						{
-							"role" , "taskAssignees"
-						},
-					},
+					Role = PlannerRelationshipUserRoles.TaskAssignees,
 				},
 				PropertyRule = new PlannerTaskPropertyRule
 				{

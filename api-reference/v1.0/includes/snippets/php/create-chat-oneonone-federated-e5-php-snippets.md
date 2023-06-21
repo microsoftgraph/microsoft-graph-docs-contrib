@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new Chat();
 $requestBody->setChatType(new ChatType('oneonone'));
 
-$membersConversationMember1 = new ConversationMember();
+$membersConversationMember1 = new AadUserConversationMember();
 $membersConversationMember1->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember1->setRoles(['owner', ]);
@@ -25,14 +25,15 @@ $membersConversationMember1->setAdditionalData($additionalData);
 
 
 $membersArray []= $membersConversationMember1;
-$membersConversationMember2 = new ConversationMember();
+$membersConversationMember2 = new AadUserConversationMember();
 $membersConversationMember2->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember2->setRoles(['owner', ]);
 
+$membersConversationMember2->setTenantId('4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1');
+
 $additionalData = [
 'user@odata.bind' => 'https://graph.microsoft.com/v1.0/users(\'82af01c5-f7cc-4a2e-a728-3a5df21afd9d\')', 
-'tenantId' => '4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1', 
 ];
 $membersConversationMember2->setAdditionalData($additionalData);
 

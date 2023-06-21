@@ -4,44 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Review access of users and groups to privileged roles",
 	DescriptionForAdmins = "Review access of users and groups to privileged roles",
-	Scope = new AccessReviewScope
+	Scope = new PrincipalResourceMembershipsScope
 	{
 		OdataType = "#microsoft.graph.principalResourceMembershipsScope",
-		AdditionalData = new Dictionary<string, object>
+		PrincipalScopes = new List<AccessReviewScope>
 		{
+			new AccessReviewQueryScope
 			{
-				"principalScopes" , new List<>
-				{
-					new 
-					{
-						OdataType = "#microsoft.graph.accessReviewQueryScope",
-						Query = "/users",
-						QueryType = "MicrosoftGraph",
-					},
-					new 
-					{
-						OdataType = "#microsoft.graph.accessReviewQueryScope",
-						Query = "/groups",
-						QueryType = "MicrosoftGraph",
-					},
-				}
+				OdataType = "#microsoft.graph.accessReviewQueryScope",
+				Query = "/users",
+				QueryType = "MicrosoftGraph",
 			},
+			new AccessReviewQueryScope
 			{
-				"resourceScopes" , new List<>
-				{
-					new 
-					{
-						OdataType = "#microsoft.graph.accessReviewQueryScope",
-						Query = "/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1",
-						QueryType = "MicrosoftGraph",
-					},
-				}
+				OdataType = "#microsoft.graph.accessReviewQueryScope",
+				Query = "/groups",
+				QueryType = "MicrosoftGraph",
+			},
+		},
+		ResourceScopes = new List<AccessReviewScope>
+		{
+			new AccessReviewQueryScope
+			{
+				OdataType = "#microsoft.graph.accessReviewQueryScope",
+				Query = "/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1",
+				QueryType = "MicrosoftGraph",
 			},
 		},
 	},

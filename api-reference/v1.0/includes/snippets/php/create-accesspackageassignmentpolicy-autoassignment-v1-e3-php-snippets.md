@@ -16,15 +16,12 @@ $requestBody->setDescription('All users from sales department');
 
 $requestBody->setAllowedTargetScope(new AllowedTargetScope('specificdirectoryusers'));
 
-$specificAllowedTargetsSubjectSet1 = new SubjectSet();
+$specificAllowedTargetsSubjectSet1 = new AttributeRuleMembers();
 $specificAllowedTargetsSubjectSet1->set@odatatype('#microsoft.graph.attributeRuleMembers');
 
-$additionalData = [
-		'description' => 'Membership rule for all users from sales department', 
-		'membershipRule' => '(user.department -eq \"Sales\")', 
-];
-$specificAllowedTargetsSubjectSet1->setAdditionalData($additionalData);
+$specificAllowedTargetsSubjectSet1->setDescription('Membership rule for all users from sales department');
 
+$specificAllowedTargetsSubjectSet1->setMembershipRule('(user.department -eq \"Sales\")');
 
 
 $specificAllowedTargetsArray []= $specificAllowedTargetsSubjectSet1;

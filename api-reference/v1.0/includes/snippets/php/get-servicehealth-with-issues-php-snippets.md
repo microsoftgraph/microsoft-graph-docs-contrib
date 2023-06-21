@@ -15,7 +15,7 @@ $queryParameters->expand = ["issues"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->admin()->serviceAnnouncement()->healthOverviewsById('serviceHealth-id')->get($requestConfiguration);
+$result = $graphServiceClient->admin()->serviceAnnouncement()->healthOverviews()->byHealthOverviewId('serviceHealth-id')->get($requestConfiguration);
 
 
 ```

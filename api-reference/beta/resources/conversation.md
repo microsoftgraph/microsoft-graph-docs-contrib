@@ -2,7 +2,7 @@
 title: "conversation resource type"
 description: "A conversation is a collection of threads, and a thread contains posts to that thread. All threads and posts in a conversation share the same subject."
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
@@ -29,7 +29,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 |[Create conversation thread](../api/conversation-post-threads.md) |[conversationThread](conversationthread.md) collection| Create a thread in the specified conversation.|
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|Indicates whether any of the posts within this Conversation has at least one attachment. Supports `$filter` (`eq`, `ne`) and `$search`.|
 |id|String|The conversations's unique identifier. Read-only.|
@@ -39,7 +39,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 |uniqueSenders|String collection|All the users that sent a message to this Conversation.|
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |threads|[conversationThread](conversationthread.md) collection|A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.|
 

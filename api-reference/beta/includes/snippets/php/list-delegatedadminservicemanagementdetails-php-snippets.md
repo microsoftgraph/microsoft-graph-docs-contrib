@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->tenantRelationships()->delegatedAdminCustomersById('delegatedAdminCustomer-id')->serviceManagementDetails()->get();
+$result = $graphServiceClient->tenantRelationships()->delegatedAdminCustomers()->byDelegatedAdminCustomerId('delegatedAdminCustomer-id')->serviceManagementDetails()->get();
 
 
 ```
