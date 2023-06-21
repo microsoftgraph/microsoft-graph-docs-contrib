@@ -14,17 +14,16 @@ $requestBody->setSource('Contoso.SodCheckProcess');
 
 $requestBody->setType('microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated');
 
-$data = new CustomExtensionData();
+$data = new AccessPackageAssignmentRequestCallbackData();
 $data->set@odatatype('microsoft.graph.accessPackageAssignmentRequestCallbackData');
 
-$additionalData = [
-		'stage' => 'AssignmentRequestCreated', 
-		'customExtensionStageInstanceId' => '857d0c50-466b-4840-bb5b-c92cea7141ff', 
-		'state' => 'denied', 
-		'customExtensionStageInstanceDetail' => 'Potential risk user based on the SOD check', 
-];
-$data->setAdditionalData($additionalData);
+$data->setStage(new AccessPackageCustomExtensionStage('assignmentrequestcreated'));
 
+$data->setCustomExtensionStageInstanceId('857d0c50-466b-4840-bb5b-c92cea7141ff');
+
+$data->setState('denied');
+
+$data->setCustomExtensionStageInstanceDetail('Potential risk user based on the SOD check');
 
 
 $requestBody->setData($data);

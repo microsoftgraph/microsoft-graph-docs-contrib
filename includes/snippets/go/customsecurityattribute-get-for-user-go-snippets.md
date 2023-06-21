@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 import (
 	  "context"
-	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.UserItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.UserItemRequestBuilderGetQueryParameters{
 	Select: [] string {"customSecurityAttributes"},
 }
-configuration := &graphconfig.UserItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UserItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

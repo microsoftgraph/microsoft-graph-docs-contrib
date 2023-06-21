@@ -8,14 +8,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().SwapShiftsChangeRequests().Get(context.Background(), nil)
+requestDeltatoken := "w0vf2jHg2mBXU-I2AK0FSWl0dopNtG8u5YoM"
+
+requestParameters := &graphusers.ItemTodoListItemTasksDelta()RequestBuilderGetQueryParameters{
+	Deltatoken: &requestDeltatoken,
+}
+configuration := &graphusers.ItemTodoListItemTasksDelta()RequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+}
+
+result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Tasks().Delta().Get(context.Background(), configuration)
 
 
 ```

@@ -50,7 +50,7 @@ Most of the interaction with files occurs through interaction with **DriveItem**
 **Drive** and **DriveItem** resources expose data in three different ways:
 
 * _Properties_ (like **id** and **name**) expose simple values (strings, numbers, Booleans).
-* _Facets_ (like **file** and **photo**) expose complex values. The presence of **file** or **folder** facets indicates behaviors and properties of a **DriveItem**.
+* _Facets_ (like **file** and **image**) expose complex values. The presence of **file** or **folder** facets indicates behaviors and properties of a **DriveItem**.
 * _References_ (like **children** and **thumbnails**) point to collections of other resources.
 
 ## Commonly accessed resources

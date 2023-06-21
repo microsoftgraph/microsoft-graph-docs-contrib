@@ -10,18 +10,18 @@ import (
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/planner"
+	  graphplanner "github.com/microsoftgraph/msgraph-sdk-go/planner"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
 headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-configuration := &graphconfig.PlannerTaskItemDetailsRequestBuilderPatchRequestConfiguration{
+configuration := &graphplanner.PlannerTaskItemDetailsRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewPlannerTaskDetails()

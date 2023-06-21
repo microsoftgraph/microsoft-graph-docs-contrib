@@ -9,11 +9,11 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/devices"
+	  graphdevices "github.com/microsoftgraph/msgraph-sdk-go/devices"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -21,14 +21,14 @@ headers.Add("ConsistencyLevel", "eventual")
 
 
 requestCount := true
-requestFilter := "startswith(displayName,%20'a')"
+requestFilter := "startswith(displayName, 'a')"
 
-requestParameters := &graphconfig.DeviceItemTransitiveMemberOfGraph.groupRequestBuilderGetQueryParameters{
+requestParameters := &graphdevices.DeviceItemTransitiveMemberOfGraph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"displayName"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.DeviceItemTransitiveMemberOfGraph.groupRequestBuilderGetRequestConfiguration{
+configuration := &graphdevices.DeviceItemTransitiveMemberOfGraph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewApplication()
@@ -22,7 +22,6 @@ appRole := graphmodels.NewAppRole()
 allowedMemberTypes := []string {
 	"User",
 	"Application",
-
 }
 appRole.SetAllowedMemberTypes(allowedMemberTypes)
 description := "Survey.Read"
@@ -40,7 +39,6 @@ appRole.SetValue(&value)
 
 appRoles := []graphmodels.AppRoleable {
 	appRole,
-
 }
 requestBody.SetAppRoles(appRoles)
 
