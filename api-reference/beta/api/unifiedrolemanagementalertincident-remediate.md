@@ -55,7 +55,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code.
+If successful, this action returns a `200 OK` response code. Calling this API for an incident that has an alert definition with **isRemediatable** set to `false` returns in a `400 Bad Request` error response.
 
 ## Examples
 
