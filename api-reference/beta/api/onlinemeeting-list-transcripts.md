@@ -17,7 +17,7 @@ Retrieve the list of [callTranscript](../resources/calltranscript.md) objects as
 
 > [!NOTE]
 >
-> * In future, Microsoft might require you or your customers to pay additional fees based on the amount of data accessed through the API.
+> * In the future, Microsoft might require you or your customers to pay additional fees based on the amount of data accessed through the API.
 > * This API works differently in one or more national clouds. For more information, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions
