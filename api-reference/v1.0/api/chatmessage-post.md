@@ -1279,7 +1279,7 @@ Content-type: application/json
 
 The following is an example of the request.
 
-> **Note:** The Base64-encoded value for the **contentBytes** property is truncated for readability.
+> **Note:** The Base64-encoded value for the **contentBytes** property is shortened for readability.
 
 # [HTTP](#tab/http)
 <!-- {
