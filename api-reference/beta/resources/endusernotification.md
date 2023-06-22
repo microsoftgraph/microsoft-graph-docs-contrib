@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List endUserNotifications](../api/attacksimulationroot-list-endusernotifications.md)|[endUserNotification](../resources/endusernotification.md) collection|Get a list of the [endUserNotification](../resources/endusernotification.md) objects and their properties.|
 |[Get endUserNotification](../api/endusernotification-get.md)|[endUserNotification](../resources/endusernotification.md)|Read the properties and relationships of an [endUserNotification](../resources/endusernotification.md) object.|
-|[List details](../api/endusernotification-list-details.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md) collection|Get the endUserNotificationDetail resources from the details navigation property.|
+|[Get details](../api/endusernotificationdetail-get.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Get the endUserNotificationDetail resources from the details navigation property.|
 
 ## Properties
 |Property|Type|Description|

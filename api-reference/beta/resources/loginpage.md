@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List loginPages](../api/simulation-list-loginpage.md)|[loginPage](../resources/loginpage.md) collection|Get a list of the [loginPage](../resources/loginpage.md) objects and their properties.|
+|[List loginPages](../api/attacksimulationroot-list-loginpage.md)|[loginPage](../resources/loginpage.md) collection|Get a list of the [loginPage](../resources/loginpage.md) objects and their properties.|
 |[Get loginPage](../api/loginpage-get.md)|[loginPage](../resources/loginpage.md)|Read the properties and relationships of a [loginPage](../resources/loginpage.md) object.|
 
 ## Properties

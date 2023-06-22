@@ -1,5 +1,4 @@
 ---
-title: "noTrainingNotificationSetting resource type"
 title: "No notification setting for simulation creation."
 description: "Details required for oAuth technique"
 author: "stuartcl"

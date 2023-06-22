@@ -20,7 +20,6 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List trainingLanguageDetails](../api/training-list-languagedetails.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md) collection|Get a list of the [trainingLanguageDetail](../resources/traininglanguagedetail.md) objects and their properties.|
 |[Get trainingLanguageDetail](../api/traininglanguagedetail-get.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md)|Read the properties and relationships of a [trainingLanguageDetail](../resources/traininglanguagedetail.md) object.|
 
 ## Properties

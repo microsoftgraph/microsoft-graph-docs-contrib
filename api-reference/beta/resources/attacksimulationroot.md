@@ -28,12 +28,12 @@ Namespace: microsoft.graph
 |[Get attackSimulationOperation](../api/attacksimulationoperation-get.md)|[attackSimulationOperation](../resources/attacksimulationoperation.md)|Get an attack simulation campaign operation for a tracking ID.|
 |[List endUserNotification](../api/attacksimulationroot-list-endusernotifications.md)|[endUserNotification](../resources/endusernotification.md) collection|Get the endUserNotifications.|
 |[Get endUserNotification](../api/endUserNotification-get.md)|[endUserNotification](../resources/endUserNotification.md) |Get the endUserNotification for a tenant.|
-|[List landingPages](../api/simulation-list-landingpage.md)|[landingPage](../resources/landingpage.md) collection|Get the landingPages.|
-|[Get landingPages](../api/landingPages-get.md)|[landingPages](../resources/landingPages.md) |Get the landingPage for a tenant.|
-|[List loginPages](../api/simulation-list-loginpage.md)|[loginPage](../resources/loginpage.md) collection|Get the loginPage resources from the loginPages navigation property.|
-|[Get loginPages](../api/loginPages-get.md)|[loginPages](../resources/loginPages.md) |Get the loginPage for a tenant.|
+|[List landingPages](../api/attacksimulationroot-list-landingpage.md)|[landingPage](../resources/landingpage.md) collection|Get the landingPages.|
+|[Get landingPages](../api/landingPage-get.md)|[landingPages](../resources/landingPage.md) |Get the landingPage for a tenant.|
+|[List loginPages](../api/attacksimulationroot-list-loginpage.md)|[loginPage](../resources/loginpage.md) collection|Get the loginPage resources from the loginPages navigation property.|
+|[Get loginPages](../api/loginPage-get.md)|[loginPages](../resources/loginPage.md) |Get the loginPage for a tenant.|
 |[List trainings](../api/attacksimulationroot-list-trainings.md)|[training](../resources/training.md) collection|Get the training resources from the trainings navigation property.|
-|[Get training](../api/trainings-get.md)|[trainings](../resources/trainings.md) |Get the training for a tenant.|
+|[Get training](../api/training-get.md)|[trainings](../resources/training.md) |Get the training for a tenant.|
 
 ## Properties
 None.

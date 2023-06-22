@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List landingPages](../api/simulation-list-landingpage.md)|[landingPage](../resources/landingpage.md) collection|Get a list of the [landingPage](../resources/landingpage.md) objects and their properties.|
+|[List landingPages](../api/attacksimulationroot-list-landingpage.md)|[landingPage](../resources/landingpage.md) collection|Get a list of the [landingPage](../resources/landingpage.md) objects and their properties.|
 |[Get landingPage](../api/landingpage-get.md)|[landingPage](../resources/landingpage.md)|Read the properties and relationships of a [landingPage](../resources/landingpage.md) object.|
 |[List details](../api/landingpage-list-details.md)|[landingPageDetail](../resources/landingpagedetail.md) collection|Get the landingPageDetail resources from the details navigation property.|
 
