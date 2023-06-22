@@ -32,13 +32,11 @@ synchronizationJobSubject.SetObjectTypeName(&objectTypeName)
 
 subjects := []graphmodels.SynchronizationJobSubjectable {
 	synchronizationJobSubject,
-
 }
 synchronizationJobApplicationParameters.SetSubjects(subjects)
 
-parameters := []graphserviceprincipals.SynchronizationJobApplicationParametersable {
+parameters := []graphmodels.SynchronizationJobApplicationParametersable {
 	synchronizationJobApplicationParameters,
-
 }
 requestBody.SetParameters(parameters)
 

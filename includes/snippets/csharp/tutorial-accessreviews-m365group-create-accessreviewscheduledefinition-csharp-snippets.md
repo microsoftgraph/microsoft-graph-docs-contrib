@@ -90,7 +90,7 @@ var requestBody = new AccessReviewScheduleDefinition
 		},
 		ApplyActions = new List<AccessReviewApplyAction>
 		{
-			new AccessReviewApplyAction
+			new RemoveAccessApplyAction
 			{
 				OdataType = "#microsoft.graph.removeAccessApplyAction",
 			},

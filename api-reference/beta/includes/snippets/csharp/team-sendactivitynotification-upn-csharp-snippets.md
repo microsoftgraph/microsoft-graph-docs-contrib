@@ -20,15 +20,10 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.SendActivityNotification.S
 	{
 		Content = "You have moved up the queue",
 	},
-	Recipient = new TeamworkNotificationRecipient
+	Recipient = new AadUserNotificationRecipient
 	{
 		OdataType = "microsoft.graph.aadUserNotificationRecipient",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"userId" , "jacob@contoso.com"
-			},
-		},
+		UserId = "jacob@contoso.com",
 	},
 	TemplateParameters = new List<KeyValuePair>
 	{

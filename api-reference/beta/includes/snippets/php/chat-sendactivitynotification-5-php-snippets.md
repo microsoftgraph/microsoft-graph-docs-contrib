@@ -24,14 +24,10 @@ $previewText->setContent('New Task Created');
 
 
 $requestBody->setPreviewText($previewText);
-$recipient = new TeamworkNotificationRecipient();
+$recipient = new ChatMembersNotificationRecipient();
 $recipient->set@odatatype('microsoft.graph.chatMembersNotificationRecipient');
 
-$additionalData = [
-		'chatId' => '19:1c3af46e9e0f4a5293343c8813c47619@thread.v2', 
-];
-$recipient->setAdditionalData($additionalData);
-
+$recipient->setChatId('19:1c3af46e9e0f4a5293343c8813c47619@thread.v2');
 
 
 $requestBody->setRecipient($recipient);
