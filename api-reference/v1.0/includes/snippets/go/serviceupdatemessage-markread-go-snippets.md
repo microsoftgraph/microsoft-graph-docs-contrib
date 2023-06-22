@@ -19,7 +19,6 @@ requestBody := graphadmin.NewMarkReadPostRequestBody()
 messageIds := []string {
 	"MC172851",
 	"MC167983",
-
 }
 requestBody.SetMessageIds(messageIds)
 

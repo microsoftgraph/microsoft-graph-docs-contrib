@@ -20,11 +20,10 @@ index := int32(3)
 requestBody.SetIndex(&index) 
 
 
-json := graphmodels.New()
+json := graphmodels.NewJson()
 
-values := []graphdrives.Jsonable {
+values := []graphmodels.Jsonable {
 	json,
-
 }
 requestBody.SetValues(values)
 

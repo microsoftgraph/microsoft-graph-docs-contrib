@@ -29,11 +29,9 @@ previewText := graphmodels.NewItemBody()
 content := "You have moved up the queue"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
-recipient := graphmodels.NewTeamworkNotificationRecipient()
-additionalData := map[string]interface{}{
-	"userId" : "569363e2-4e49-4661-87f2-16f245c5d66a", 
-}
-recipient.SetAdditionalData(additionalData)
+recipient := graphmodels.NewAadUserNotificationRecipient()
+userId := "569363e2-4e49-4661-87f2-16f245c5d66a"
+recipient.SetUserId(&userId) 
 requestBody.SetRecipient(recipient)
 
 
@@ -48,10 +46,9 @@ keyValuePair1.SetName(&name)
 value := "23"
 keyValuePair1.SetValue(&value) 
 
-templateParameters := []graphteams.KeyValuePairable {
+templateParameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
 	keyValuePair1,
-
 }
 requestBody.SetTemplateParameters(templateParameters)
 

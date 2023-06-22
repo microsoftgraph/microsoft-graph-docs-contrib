@@ -19,7 +19,6 @@ requestBody := graphsecurity.NewDeleteTiIndicatorsPostRequestBody()
 value := []string {
 	"id-value1",
 	"id-value2",
-
 }
 requestBody.SetValue(value)
 
