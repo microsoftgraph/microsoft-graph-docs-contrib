@@ -1,5 +1,5 @@
 ---
-title: "Get companySubscriptions"
+title: "Get companySubscription"
 description: "Get a specific commercial subscription that an organization has acquired."
 ms.localizationpriority: medium
 author: "arp19690"
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Get companySubscriptions
+# Get companySubscription
 
 Namespace: microsoft.graph
 
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [companySubscriptions](../resources/companysubscriptions.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [companySubscription](../resources/companysubscription.md) object in the response body.
 
 ## Example
 
@@ -59,7 +59,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_companySubscriptions"
+  "name": "get_companySubscription"
 }-->
 
 ```msgraph-interactive
@@ -74,7 +74,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.companySubscriptions"
+  "@odata.type": "microsoft.graph.companySubscription"
 } -->
 
 ```http
