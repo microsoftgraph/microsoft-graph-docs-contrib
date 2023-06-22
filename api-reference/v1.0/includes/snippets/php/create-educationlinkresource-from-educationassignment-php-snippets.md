@@ -12,13 +12,14 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new EducationAssignmentResource();
 $requestBody->setDistributeForStudentWork(false);
 
-$resource = new EducationResource();
+$resource = new EducationLinkResource();
 $resource->setDisplayName('Where the Wonders of Learning Never Cease | Wonderopolis');
+
+$resource->setLink('https://wonderopolis.org/');
 
 $resource->set@odatatype('#microsoft.graph.educationLinkResource');
 
 $additionalData = [
-		'link' => 'https://wonderopolis.org/', 
 		'thumbnailPreviewUrl' => 		null,
 ];
 $resource->setAdditionalData($additionalData);

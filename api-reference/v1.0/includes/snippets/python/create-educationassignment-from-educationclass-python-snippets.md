@@ -19,18 +19,14 @@ instructions.content = 'Read chapter 4'
 
 
 request_body.instructions = instructions
-grading = EducationAssignmentGradeType()
+grading = EducationAssignmentPointsGradeType()
 grading.@odata_type = '#microsoft.graph.educationAssignmentPointsGradeType'
 
-additional_data = [
-'max_points' => 50,
-];
-grading.additional_data(additional_data)
-
+grading.MaxPoints = 50
 
 
 request_body.grading = grading
-assign_to = EducationAssignmentRecipient()
+assign_to = EducationAssignmentClassRecipient()
 assign_to.@odata_type = '#microsoft.graph.educationAssignmentClassRecipient'
 
 

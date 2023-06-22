@@ -7,11 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = Extension()
+request_body = OpenTypeExtension()
 request_body.@odata_type = 'microsoft.graph.openTypeExtension'
 
+request_body.extension_name = 'com.contoso.roamingSettings'
+
 additional_data = [
-'extension_name' => 'com.contoso.roamingSettings', 
 'theme' => 'dark', 
 'color' => 'purple', 
 'lang' => 'Japanese', 

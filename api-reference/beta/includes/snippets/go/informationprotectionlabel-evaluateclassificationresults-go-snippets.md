@@ -47,9 +47,8 @@ classificationResult.SetCount(&count)
 confidenceLevel := int32(75)
 classificationResult.SetConfidenceLevel(&confidenceLevel) 
 
-classificationResults := []graphinformationprotection.ClassificationResultable {
+classificationResults := []graphmodels.ClassificationResultable {
 	classificationResult,
-
 }
 requestBody.SetClassificationResults(classificationResults)
 

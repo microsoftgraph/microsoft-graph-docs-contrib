@@ -15,14 +15,14 @@ import (
 graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionsFilterByCurrentUser(on='{on}')RequestBuilderGetQueryParameters{
 	Expand: [] string {"instance($expand=definition)"},
 }
-configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionsFilterByCurrentUser(on='{on}')RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Decisions().ByDecisionId("accessReviewInstanceDecisionItem-id").Get(context.Background(), configuration)
+result, err := graphClient.IdentityGovernance().AccessReviews().Decisions().FilterByCurrentUser(on='{on}')().Get(context.Background(), configuration)
 
 
 ```
