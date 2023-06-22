@@ -8,9 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Teams.GetAsync((requestConfiguration) =>
+var result = await graphClient.Teams.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "startswith(displayName,%20'A')";
+	requestConfiguration.QueryParameters.Filter = "startswith(displayName, 'A')";
 	requestConfiguration.QueryParameters.Top = 2;
 });
 

@@ -20,16 +20,12 @@ $requestBody->setStatus(new SimulationStatus('scheduled'));
 
 $requestBody->setDurationInDays(3);
 
-$includedAccountTarget = new AccountTargetContent();
+$includedAccountTarget = new AddressBookAccountTargetContent();
 $includedAccountTarget->set@odatatype('#microsoft.graph.addressBookAccountTargetContent');
 
 $includedAccountTarget->setType(new AccountTargetContentType('addressbook'));
 
-$additionalData = [
-		'accountTargetEmails' => ['john@contoso.com', ],
-];
-$includedAccountTarget->setAdditionalData($additionalData);
-
+$includedAccountTarget->setAccountTargetEmails(['john@contoso.com', ]);
 
 
 $requestBody->setIncludedAccountTarget($includedAccountTarget);

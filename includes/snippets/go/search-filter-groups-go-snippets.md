@@ -9,11 +9,11 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -23,11 +23,11 @@ headers.Add("ConsistencyLevel", "eventual")
 requestFilter := "mailEnabled eq true"
 requestSearch := "\"displayName:OneVideo\""
 
-requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.GroupsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Search: &requestSearch,
 }
-configuration := &graphconfig.GroupsRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

@@ -35,6 +35,10 @@ For an app to get authorization and access to Microsoft Graph using the client c
 4. Request an access token.
 5. Call Microsoft Graph using the access token.
 
+> [!TIP]
+> [![Try steps 2-5 in Postman](./images/auth-v2/runinpostman.png)](https://app.getpostman.com/run-collection/f77994d794bab767596d)<br/>
+> Try steps 2-5 in Postman. Don't forget to replace tokens and IDs!
+
 ## 1. Register the app
 
 Before the app can use the Microsoft identity platform endpoint or call Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Azure portal.
@@ -84,12 +88,12 @@ Administrators can grant the permissions your app needs at the [Azure portal](ht
 GET https://login.microsoftonline.com/{tenant}/adminconsent
 ?client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 &state=12345
-&redirect_uri=https://localhost/myapp/permissions
+&redirect_uri=https://localhost/myapp/permissions  HTTP/1.1
 ```
 
 # [cURL](#tab/curl)
 ```bash
-curl --location --request POST 'https://login.microsoftonline.com/{tenant}/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&redirect_id=https%3A%2F%2Flocalhost%2Fmyapp%2Fpermissions&state=12345'
+curl --location --request GET 'https://login.microsoftonline.com/{tenant}/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&redirect_id=https%3A%2F%2Flocalhost%2Fmyapp%2Fpermissions&state=12345'
 ```
 
 ---
@@ -156,7 +160,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
+curl --location --request POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'client_id=535fb089-9ff3-47b6-9bfb-4f1264799865' \
 --data-urlencode 'scope=https://graph.microsoft.com/.default' \
@@ -200,14 +204,14 @@ After you have an access token, the app uses it to call Microsoft Graph by attac
 
 # [HTTP](#tab/http)
 ```http
-GET https://graph.microsoft.com/v1.0/users
+GET https://graph.microsoft.com/v1.0/users  HTTP/1.1
 Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw
 Host: graph.microsoft.com
 ```
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/users' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users' \
 --header 'Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw' \
 --data ''
 ```
