@@ -74,6 +74,7 @@ If successful, this method returns a `202 Accepted` response code and a tracking
 The following is an example of a request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_simulation"
