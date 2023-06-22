@@ -38,7 +38,7 @@ GET ** Collection URI for microsoft.graph.networkaccess.logs not found
 ## Optional query parameters
 This method supports the $expand [OData query parameters](https://learn.microsoft.com/graph/query-parameters) to help customize the response.
 
-|Pattern|Syntax|Notes|
+|Name|Syntax|Notes|
 |:---|:---|:---|
 |Server-side pagination|@odata.nextLink=https://graph.microsoft.com/v1.0/networkAccess/logs/traffic?$skiptoken="generatedtoken"|Page size default and limit is 1000.|
 |Filter|/logs/traffic?$filter=connectionId eq 'a812bcdc-aa36-4c51-b70d-20a84f0ce556'|All properties are filterable.|

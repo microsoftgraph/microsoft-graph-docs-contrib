@@ -12364,7 +12364,140 @@ items:
       - name: Global Secure Access
         items:
         - name: Tenant status
-          href: resources/networkaccess-tenantstatus.md      
+          href: resources/networkaccess-tenantstatus.md 
+        - name: Settings
+          href: resources/networkaccess-settings.md
+          items: 
+          - name: Cross tenant access settings
+            href: /resources/networkaccess-crosstenantaccesssettings.md
+            items:
+            - name: Get
+              href: /api/networkaccess-crosstenantaccesssettings-get.md
+            - name: Update
+              href: /api/networkaccess-crosstenantaccesssettings-update.md 
+          - name: Conditional Access Settings
+            href: /resources/networkaccess-conditionalaccesssettings.md
+            items:
+            - name: Get
+              href: /api/networkaccess-conditionalaccesssettings-get.md
+            - name: Update
+              href: /api/networkaccess-conditionalaccesssettings-update.md
+          - name: Forwarding options
+            href: /resources/networkaccess-forwardingoptions.md
+            items:
+            - name: Get
+              href: /api/networkaccess-forwardingoptions-get.md
+            - name: Update
+              href: /api/networkaccess-forwardingoptions-update.md              
+        - name: Forwarding traffic
+          href: 
+          items:
+          - name: Forwarding Profile
+            href: /resources/networkaccess-forwardingprofile.md
+           items:
+           - name: Get
+             href: /api/networkaccess-forwardingprofile-get.md 
+           - name: List
+             href: /api/networkaccess-networkaccessroot-list-forwardingprofiles.md
+          - name: Forwarding policy
+            href: /resources/networkaccess-forwardingpolicy.md
+           items:
+           - name: Get
+             href: /networkaccess-forwardingpolicy-get.md
+          - name: Forwarding policy Link
+            href: /resources/networkaccess-forwardingpolicylink.md
+            items:
+            - name: Get
+              href: /api/networkaccess-forwardingpolicy-get.md            
+            - name: List
+              href: /api/networkaccess-forwardingpolicylink-list.md
+            - name: Update
+              href: /api/networkaccess-forwardingpolicylink-update.md
+            - name: Delete
+              href: /api/networkaccess-forwardingpolicylink-delete.md
+          - name: Forwarding policy Rule
+            href: /resources/networkaccess-forwardingrule.md
+            items:
+            - name: Get
+              href: /api/networkaccess-forwardingrule-get.md 
+            - name: List
+              href: /api/networkaccess-forwardingrule-list.md 
+            - name: update
+              href: /api/networkaccess-forwardingrule-update.md
+          - name: M365 Forwarding Rule
+            href: /resources/networkaccess-m365forwardingrule.md
+          - name: Private Access Forwarding Rule
+            href: /resources/networkaccess-privateaccessforwardingrule.md          
+        - name: Rule destination
+          href: /resources/networkaccess-ruledestination.md
+          items:
+          - name: FQDN
+            href: /resources/networkaccess-fqdn.md
+          - name: IP Address
+            href: /resources/networkaccess-ipaddress.md
+          - name: IP Range
+            href: /resources/networkaccess-intune-iprange.md
+          - name: IP subnet
+            href: /resources/networkaccess-ipsubnet.md
+          - name: URL
+            href: /resources/networkaccess-url.md            
+        - name: Branch
+          href: /resources/networkaccess-branchsite.md
+          items:
+          - name: Get
+            href: /api/networkaccess-branchsite-get.md
+          - name: List 
+            href: /api/networkaccess-connectivity-list-branches.md
+          - name: Update
+            href: /api/networkaccess-branchsite-update.md
+          - name: Delete
+            href: /api/networkaccess-networkaccessroot-delete-branches.md
+          - name: Create
+            href: /api/networkaccess-connectivity-post-branches.md
+          - name: Create with device links
+            href: /api/networkaccess-branchsite-post-devicelinks.md
+          - name: Create with forwarding profile
+            href: /api/networkaccess-branchsite-post-forwardingprofiles.md
+          - name: Update forwarding profile for branch
+            href: /api/networkaccess-branchsite-updateforwardingprofiles.md
+            items:
+            - name: Device Link
+              href: /resources/networkaccess-devicelink.md
+              items:
+              - name: Get
+                href: /api/networkaccess-devicelink-get.md
+              - name: List 
+                href: /api/networkaccess-branchsite-list-devicelinks.md
+              - name: Update
+                href: /api/networkaccess-devicelink-update.md              
+              - name: Create
+                href: /api/networkaccess-branchsite-post-devicelinks.md
+              - name: Delete
+                href: /api/networkaccess-branchsite-delete-devicelinks.md
+            - name: BGP Configuration
+              href: /resources/bgpconfiguration.md
+            - name: Redundancy Configuration
+              href: /resources/networkaccess-redundancyconfiguration.md             
+            - name: Tunnel Configuration
+              href: /resources/networkaccess-tunnelconfiguration.md
+            - name: Tunnel Configuration IKE Custom
+              href: /resources/networkaccess-tunnelconfigurationikev2custom.md 
+            - name: Tunnel Configuration IKE default
+              href: /resources/networkaccess-tunnelconfigurationikev2default.md  
+        - name: Traffic Logs
+          href: /resources/networkaccess-logs.md
+          items:
+          - name: Get 
+            href: /api/networkaccess-logs-get.md
+          - name: List  
+            href: /api/networkaccess-networkaccessroot-list-logs.md
+        - name: Enriched Office Logs
+          href: /resources/networkaccess-enrichedauditlogs.md
+          items:
+          - name: List 
+            href: /api/networkaccess-settings-list-enrichedauditlogs.md
+          - name: Update  
+            href: /api/networkaccess-enrichedauditlogs-update.md    
       - name: Governance
         href: resources/identitygovernance-overview.md
         displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management

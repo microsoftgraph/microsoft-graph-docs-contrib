@@ -38,9 +38,9 @@ GET /networkAccess/forwardingPolicies/{forwardingPolicyId}
 ## Optional query parameters
 This method supports the $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
-|Pattern|Syntax|Notes|
+|Name|Syntax|Notes|
 |:---|:---|:---|
-|expand|/networkAccess/forwardingPolicies?$expand=policyRules	|first level|
+|expand|/networkAccess/forwardingPolicies?$expand=policyRules|first level|
 
 
 ## Request headers
