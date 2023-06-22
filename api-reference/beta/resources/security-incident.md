@@ -49,14 +49,14 @@ Because piecing the individual alerts together to gain insight into an attack ca
 
 ### incidentStatus values 
 
-| Member              | Description                                                                                                                    |
-| :-------------------| :----------------------------------------------------------------------------------------------------------------------------- |
-| active			        | The incident is in active state.                                                                                         |
-| resolved            | The incident is in resolved state.                                                                                             |
-| inProgress          | The incident is in mitigation progress.                                                                                        |
-| redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property.          |
-| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                                                              |
-| awaitingAction      | This incident has required actions from Defender Experts awaiting your action. This status can only be set by Defender Experts.|
+| Member              | Description                                                                                                                                  |
+| :-------------------| :------------------------------------------------------------------------------------------------------------------------------------------- |
+| active			        | The incident is in active state.                                                                                                             |
+| resolved            | The incident is in resolved state.                                                                                                           |
+| inProgress          | The incident is in mitigation progress.                                                                                                      |
+| redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property.                        |
+| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                                                                            |
+| awaitingAction      | This incident has required actions from Defender Experts awaiting your action. This status can only be set by Microsoft 365 Defender experts.|
 
 
 
