@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "intelligenceProfileCountryOrRegionOfOrigin",
           "ChangeType": "Addition",
-          "Description": "Added the [intelligenceProfileCountryOrRegionOfOrigin](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfileCountryOrRegionOfOrigin?view=graph-rest-beta) resource type.",
+          "Description": "Added the **intelligenceProfileCountryOrRegionOfOrigin** resource type.",
           "Target": "intelligenceProfileCountryOrRegionOfOrigin"
         },
         {
