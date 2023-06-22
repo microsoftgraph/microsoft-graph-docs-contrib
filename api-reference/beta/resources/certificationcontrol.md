@@ -1,22 +1,24 @@
 ---
-title: " certificationControl resource type"
-description: "This resource contains compliance certification data associated with secure score control."
+title: "certificationControl resource type"
+description: "Contains compliance certification data associated with secure score control."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: security
+ms.prod: "security"
 author: "preetikr"
 ---
 
-#  certificationControl resource type
+# certificationControl resource type
 
 Namespace: microsoft.graph
 
 Contains compliance certification data associated with secure score control.
 
+## Property
+
 |Property |Type |Description |
 |:--|:--|:--|
-|name | string | Certification control name |
-|url | string | URL for the Microsoft Service Trust Portal |
+|name | string | Certification control name. |
+|url | string | URL for the Microsoft Service Trust Portal. |
 
 ## JSON representation
 
@@ -35,7 +37,6 @@ The following is a JSON representation of the resource.
   "name": "String",
   "url": "Collection(microsoft.graph.certificationControl)"
 }
-
 ```
 
 
