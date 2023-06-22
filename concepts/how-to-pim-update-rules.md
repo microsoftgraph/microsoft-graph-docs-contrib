@@ -18,6 +18,9 @@ When updating the rules, you must include the `@odata.type` for the derived type
 
 If successful, all requests return `204 No Content` response codes.
 
+> [!NOTE]
+> PIM for groups APIs are currently available on the `beta` endpoint only.
+
 ## Prerequisites
 
 + Have an understanding of [PIM for Azure AD roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview).

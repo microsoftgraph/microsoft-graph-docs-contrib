@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
-# [HTTP](#tab/http)
 <!-- { "blockType": "samples" } -->
 ```msgraph-interactive
 GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image
@@ -59,6 +58,7 @@ Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- 
 { 
   "blockType": "request",
