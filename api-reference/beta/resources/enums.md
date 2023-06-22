@@ -3837,7 +3837,6 @@ Possible values for user account types (group membership), per Windows definitio
 |outlookMobile|
 |unknownFutureValue|
 
-<<<<<<< HEAD
 ### endUserNotificationPreference values 
 
 
@@ -3985,12 +3984,3 @@ Possible values for user account types (group membership), per Windows definitio
 |phishing|
 |unknownFutureValue|
 
-=======
-### verifiableCredentialPresentationStatusCode values 
-
-|Member|
-|:---|
-|request_retrieved|
-|presentation_verified|
-|unknownFutureValue|
->>>>>>> origin/main
