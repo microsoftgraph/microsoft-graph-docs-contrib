@@ -43,7 +43,7 @@ Inherits from [entity](entity.md).
 | deletedItems                       | [directoryObject](directoryobject.md) collection                                         | Recently deleted items. Read-only. Nullable.                                                                              |
 | federationConfigurations           | [identityProviderBase](../resources/identityproviderbase.md) collection                  | Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol. |
 | onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.            |
-| subscriptions                      | [subscription](companysubscriptions.md) collection                                       | List of commercial subscriptions that an organization has acquired.                                                       |
+| subscriptions                      | [subscription](companysubscription.md) collection                                       | List of commercial subscriptions that an organization has acquired.                                                       |
 
 ## JSON representation
 
