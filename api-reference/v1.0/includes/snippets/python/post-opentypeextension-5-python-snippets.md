@@ -19,11 +19,12 @@ posts_post1body.content = 'This is urgent!'
 
 
 posts_post1.body = posts_post1body
-extensions_extension1 = Extension()
+extensions_extension1 = OpenTypeExtension()
 extensions_extension1.@odata_type = 'microsoft.graph.openTypeExtension'
 
+extensions_extension1.extension_name = 'Com.Contoso.Benefits'
+
 additional_data = [
-'extension_name' => 'Com.Contoso.Benefits', 
 'company_name' => 'Contoso', 
 'expiration_date' => '2016-08-03T11:00:00.000Z', 
 'top_picks' => ['Employees only', 'Add spouse or guest', 'Add family', ],

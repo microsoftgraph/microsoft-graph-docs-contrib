@@ -21,32 +21,25 @@ $workflow->setIsEnabled(true);
 
 $workflow->setIsSchedulingEnabled(false);
 
-$workflowExecutionConditions = new WorkflowExecutionConditions();
+$workflowExecutionConditions = new TriggerAndScopeBasedConditions();
 $workflowExecutionConditions->set@odatatype('#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
 
-$additionalData = [
-		'scope' => $workflowExecutionConditions = new Scope();
-$		workflowExecutionConditions->set@odatatype('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
+$workflowExecutionConditionsScope = new RuleBasedSubjectSet();
+$workflowExecutionConditionsScope->set@odatatype('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
 
-$		workflowExecutionConditions->setRule('(department eq \'Marketing\')');
-
-
-$workflowExecutionConditions->setScope($scope);
-
-		'trigger' => $workflowExecutionConditions = new Trigger();
-$		workflowExecutionConditions->set@odatatype('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
-
-$		workflowExecutionConditions->setTimeBasedAttribute('employeeHireDate');
-
-		$workflowExecutionConditions->setOffsetInDays(1);
+$workflowExecutionConditionsScope->setRule('(department eq \'Marketing\')');
 
 
-$workflowExecutionConditions->setTrigger($trigger);
+$workflowExecutionConditions->setScope($workflowExecutionConditionsScope);
+$workflowExecutionConditionsTrigger = new TimeBasedAttributeTrigger();
+$workflowExecutionConditionsTrigger->set@odatatype('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
 
-];
-$workflowExecutionConditions->setAdditionalData($additionalData);
+$workflowExecutionConditionsTrigger->setTimeBasedAttribute(new WorkflowTriggerTimeBasedAttribute('employeehiredate'));
+
+$workflowExecutionConditionsTrigger->setOffsetInDays(1);
 
 
+$workflowExecutionConditions->setTrigger($workflowExecutionConditionsTrigger);
 
 $workflow->setExecutionConditions($workflowExecutionConditions);
 $tasksTask1 = new Task();

@@ -12,14 +12,10 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new NoncustodialDataSource();
 $requestBody->setApplyHoldToSource(true);
 
-$dataSource = new DataSource();
+$dataSource = new UserSource();
 $dataSource->set@odatatype('microsoft.graph.ediscovery.userSource');
 
-$additionalData = [
-		'email' => 'adelev@contoso.com', 
-];
-$dataSource->setAdditionalData($additionalData);
-
+$dataSource->setEmail('adelev@contoso.com');
 
 
 $requestBody->setDataSource($dataSource);

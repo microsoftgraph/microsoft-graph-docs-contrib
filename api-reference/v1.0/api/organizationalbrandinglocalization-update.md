@@ -254,3 +254,21 @@ HTTP/1.1 204 No Content
 ```
 
 Following this request, usernameHintText for the `fr-FR` localization will be empty instead of inheriting the value from the default branding object.
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update organizationalBrandingLocalization",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: microsoft.graph.microsoft.graph/organization:
+      /organization/{var}/branding/localizations/{var}/bannerLogo
+      Uri path requires navigating into unknown object hierarchy: missing property 'localizations' on 'microsoft.graph.organizationalBranding'. Possible issues:
+  	 1) Doc bug where 'localizations' isn't defined on the resource.
+  	 2) Doc bug where 'localizations' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'microsoft.graph.organizationalBranding' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation.
+  ]
+}
+-->

@@ -25,8 +25,7 @@ engineering.SetOdataType(&odataType)
  := int32(1001)
 engineering.Set(&) 
  := int32(1003)
-engineering.Set(&) 
-
+engineering.Set(&)
 	}
 	engineering.SetCostCenter(costCenter)
 	customSecurityAttributes.SetEngineering(engineering)

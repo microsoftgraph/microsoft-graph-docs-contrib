@@ -32,35 +32,32 @@ body.SetContent(&content)
 post.SetBody(body)
 
 
-extension := graphmodels.NewExtension()
+extension := graphmodels.NewOpenTypeExtension()
+extensionName := "Com.Contoso.Benefits"
+extension.SetExtensionName(&extensionName) 
 additionalData := map[string]interface{}{
-	"extensionName" : "Com.Contoso.Benefits", 
 	"companyName" : "Contoso", 
 	"expirationDate" : "2016-08-03T11:00:00.000Z", 
 	topPicks := []string {
 		"Employees only",
 		"Add spouse or guest",
 		"Add family",
-
 	}
 }
 extension.SetAdditionalData(additionalData)
 
 extensions := []graphmodels.Extensionable {
 	extension,
-
 }
 post.SetExtensions(extensions)
 
 posts := []graphmodels.Postable {
 	post,
-
 }
 conversationThread.SetPosts(posts)
 
 threads := []graphmodels.ConversationThreadable {
 	conversationThread,
-
 }
 requestBody.SetThreads(threads)
 
