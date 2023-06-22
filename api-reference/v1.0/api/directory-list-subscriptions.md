@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [companySubscriptions](../resources/companysubscriptions.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [companySubscription](../resources/companysubscription.md) objects in the response body.
 
 ## Example
 
@@ -72,7 +72,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.companySubscriptions)"
+  "@odata.type": "Collection(microsoft.graph.companySubscription)"
 } -->
 
 ```http
