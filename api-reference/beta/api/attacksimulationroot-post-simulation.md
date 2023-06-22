@@ -83,7 +83,6 @@ The following is an example of a request.
 ```http
 POST https://graph.microsoft.com/beta/security/attackSimulation/simulations
 Content-type: application/json
-
 {
   "displayName": "Graph Simulation",
   "payload@odata.bind":"https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
