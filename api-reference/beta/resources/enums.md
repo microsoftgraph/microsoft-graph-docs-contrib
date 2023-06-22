@@ -3966,14 +3966,13 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### userDefaultAuthenticationMethod values 
 
-
 | Member                     |
 | :------------------------- |
-| none                       |
 | push                       |
 | oath                       |
 | voiceMobile                |
 | voiceAlternateMobile       |
 | voiceOffice                |
 | sms                        |
+| none                       |
 | unknownFutureValue         |
