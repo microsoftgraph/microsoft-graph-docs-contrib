@@ -3964,15 +3964,3 @@ Possible values for user account types (group membership), per Windows definitio
 | presentation_verified |
 | unknownFutureValue    |
 
-### userDefaultAuthenticationMethod values 
-
-| Member                     |
-| :------------------------- |
-| push                       |
-| oath                       |
-| voiceMobile                |
-| voiceAlternateMobile       |
-| voiceOffice                |
-| sms                        |
-| none                       |
-| unknownFutureValue         |
