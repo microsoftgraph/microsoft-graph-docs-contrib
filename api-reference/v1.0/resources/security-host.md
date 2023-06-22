@@ -1,6 +1,6 @@
 ---
 title: "host resource type"
-description: "Represents a hostname or IP address that is currently or was previously available on the Internet and Microsoft Defender Threat Intelligence has detected."
+description: "Represents a hostname or IP address that is currently or was previously available on the internet and Microsoft Defender Threat Intelligence has detected."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a [hostname](../resources/security-hostname.md) or [IP address](../resources/security-ipaddress.md) that is currently or was previously available on the Internet and Microsoft Defender Threat Intelligence has detected.
+Represents a [hostname](../resources/security-hostname.md) or [IP address](../resources/security-ipaddress.md) that is currently or was previously available on the internet and Microsoft Defender Threat Intelligence has detected.
 
 This is an abstract type. Implementations of this type include:
 
@@ -38,9 +38,9 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 | Property          | Type           | Description                                                                                                                                                                                                                             |
 | :---------------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| firstSeenDateTime | DateTimeOffset | The first date and time when this host was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.       |
+| firstSeenDateTime | DateTimeOffset | The first date and time this host was observed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`.       |
 | id                | String         | Unique identifier for the host. Read-only. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).                                                                                                       |
-| lastSeenDateTime  | DateTimeOffset | The most recent date and time when this host was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| lastSeenDateTime  | DateTimeOffset | The most recent date and time when this host was observed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`. |
 
 ## Relationships
 
