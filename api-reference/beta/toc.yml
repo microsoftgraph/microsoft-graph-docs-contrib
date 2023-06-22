@@ -12354,13 +12354,13 @@ items:
             href: api/subscribedsku-list.md
           - name: Get
             href: api/subscribedsku-get.md
-        - name: Company subscriptions
-          href: resources/companysubscriptions.md
+        - name: Company subscription
+          href: resources/companysubscription.md
           items:
           - name: List
             href: api/directory-list-subscriptions.md
           - name: Get
-            href: api/companysubscriptions-get.md
+            href: api/companysubscription-get.md
         - name: Tenant information
           href: resources/tenantinformation.md
           items:
