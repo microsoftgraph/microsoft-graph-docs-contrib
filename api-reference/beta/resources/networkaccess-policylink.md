@@ -22,15 +22,12 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get policyLink](../api/networkaccess-forwardingpolicylink-get.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) object.|
-|[Update policyLink](../api/networkaccess-forwardingpolicylink-update.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Update the properties of a [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) object.|
-|[List policy](../api/networkaccess-forwardingpolicylink-list.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) collection|Get the policy resources from the policy navigation property.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|state|microsoft.graph.networkaccess.status|Link status. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
+|state|microsoft.graph.networkaccess.status|Link status. The possible values are: `enabled`, `disabled`.|
 |version|String|Version.|
 
 ## Relationships

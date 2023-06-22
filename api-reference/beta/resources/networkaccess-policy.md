@@ -22,10 +22,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List policies](../api/networkaccess-forwardingpolicylink-list.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) collection|Get a list of the [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) objects and their properties.|
-|[Get policy](../api/networkaccess-policyrule-get.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.|
-|[Update policy](../api/networkaccess-policy-update.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Update the properties of a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.|
-|[List policyRules](../api/networkaccess-policy-list-policyrules.md)|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|Get the policyRule resources from the policyRules navigation property.|
+
 
 
 ## Properties
