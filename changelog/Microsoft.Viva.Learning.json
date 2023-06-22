@@ -253,18 +253,18 @@
         {
           "Id": "a0d7aeb6-2a11-4412-9cc5-0c33f301ccf4",
           "ApiChange": "Enum type",
-          "ChangedApiName": "learningAssignment",
+          "ChangedApiName": "courseStatus",
           "ChangeType": "Addition",
           "Description": "Added the **courseStatus** enumeration.",
-          "Target": "learningAssignment"
+          "Target": "courseStatus"
         },
         {
           "Id": "a0d7aeb6-2a11-4412-9cc5-0c33f301ccf4",
           "ApiChange": "Enum type",
-          "ChangedApiName": "learningAssignment",
+          "ChangedApiName": "assignmentType",
           "ChangeType": "Addition",
           "Description": "Added the **assignmentType** enumeration.",
-          "Target": "learningAssignment"
+          "Target": "assignmentType"
         }
       ],
       "Id": "a0d7aeb6-2a11-4412-9cc5-0c33f301ccf4",
