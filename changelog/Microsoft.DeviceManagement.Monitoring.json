@@ -9,6 +9,14 @@
                     "ChangeType": "Addition",
                     "Description": "Added the `cloudPcFrontlineInsufficientLicensesScenario` member to the **alertRuleTemplate** enumeration.",
                     "Target": "alertRuleTemplate"
+                },
+                {
+                    "Id": "63a12e02-580f-449d-8ad9-8398d73331b4",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "alertImpactDetails",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **alertImpactDetails** property to the [alertImpact](https://learn.microsoft.com/en-us/graph/api/resources/devicemanagement-alertimpact?view=graph-rest-beta) resource.",
+                    "Target": "alertImpact"
                 }
             ],
             "Id": "63a12e02-580f-449d-8ad9-8398d73331b4",
