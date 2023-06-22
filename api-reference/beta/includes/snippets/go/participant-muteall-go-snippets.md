@@ -18,7 +18,6 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 requestBody := graphcommunications.NewMuteAllPostRequestBody()
 participants := []string {
 	"",
-
 }
 requestBody.SetParticipants(participants)
 clientContext := "clientContext-value"

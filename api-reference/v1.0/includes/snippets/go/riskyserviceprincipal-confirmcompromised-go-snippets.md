@@ -18,7 +18,6 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 requestBody := graphidentityprotection.NewConfirmCompromisedPostRequestBody()
 servicePrincipalIds := []string {
 	"9089a539-a539-9089-39a5-899039a58990",
-
 }
 requestBody.SetServicePrincipalIds(servicePrincipalIds)
 

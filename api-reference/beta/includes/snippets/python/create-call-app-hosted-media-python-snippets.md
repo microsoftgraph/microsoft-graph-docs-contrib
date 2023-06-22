@@ -60,14 +60,10 @@ request_body.targets(targetsArray)
 request_body.RequestedModalities([request_body.modality(Modality.Audio('modality.audio'))
 ])
 
-media_config = MediaConfig()
+media_config = AppHostedMediaConfig()
 media_config.@odata_type = '#microsoft.graph.appHostedMediaConfig'
 
-additional_data = [
-'blob' => '<Media Session Configuration>', 
-];
-media_config.additional_data(additional_data)
-
+media_config.blob = '<Media Session Configuration>'
 
 
 request_body.media_config = media_config

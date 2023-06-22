@@ -25,7 +25,6 @@ ids := []string {
 	"String",
 	"String",
 	"String",
-
 }
 requestBody.SetIds(ids)
 

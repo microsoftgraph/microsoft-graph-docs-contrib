@@ -29,20 +29,17 @@ isEnabled := true
 workflow.SetIsEnabled(&isEnabled) 
 isSchedulingEnabled := false
 workflow.SetIsSchedulingEnabled(&isSchedulingEnabled) 
-executionConditions := graphmodelsidentitygovernance.NewWorkflowExecutionConditions()
-additionalData := map[string]interface{}{
-scope := graphmodels.New()
+executionConditions := graphmodelsidentitygovernance.NewTriggerAndScopeBasedConditions()
+scope := graphmodelsidentitygovernance.NewRuleBasedSubjectSet()
 rule := "(department eq 'Marketing')"
 scope.SetRule(&rule) 
-	executionConditions.SetScope(scope)
-trigger := graphmodels.New()
-timeBasedAttribute := "employeeHireDate"
+executionConditions.SetScope(scope)
+trigger := graphmodelsidentitygovernance.NewTimeBasedAttributeTrigger()
+timeBasedAttribute := graphmodels.EMPLOYEEHIREDATE_WORKFLOWTRIGGERTIMEBASEDATTRIBUTE 
 trigger.SetTimeBasedAttribute(&timeBasedAttribute) 
 offsetInDays := int32(1)
 trigger.SetOffsetInDays(&offsetInDays) 
-	executionConditions.SetTrigger(trigger)
-}
-executionConditions.SetAdditionalData(additionalData)
+executionConditions.SetTrigger(trigger)
 workflow.SetExecutionConditions(executionConditions)
 
 
@@ -57,7 +54,7 @@ isEnabled := true
 task.SetIsEnabled(&isEnabled) 
 taskDefinitionId := "6fc52c9d-398b-4305-9763-15f42c1676fc"
 task.SetTaskDefinitionId(&taskDefinitionId) 
-arguments := []graphmodelsidentitygovernance.KeyValuePairable {
+arguments := []graphmodels.KeyValuePairable {
 
 }
 task.SetArguments(arguments)
@@ -95,19 +92,17 @@ keyValuePair3.SetName(&name)
 value := "en-us"
 keyValuePair3.SetValue(&value) 
 
-arguments := []graphmodelsidentitygovernance.KeyValuePairable {
+arguments := []graphmodels.KeyValuePairable {
 	keyValuePair,
 	keyValuePair1,
 	keyValuePair2,
 	keyValuePair3,
-
 }
 task1.SetArguments(arguments)
 
 tasks := []graphmodelsidentitygovernance.Taskable {
 	task,
 	task1,
-
 }
 workflow.SetTasks(tasks)
 requestBody.SetWorkflow(workflow)

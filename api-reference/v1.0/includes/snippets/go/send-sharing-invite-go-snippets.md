@@ -23,9 +23,8 @@ driveRecipient := graphmodels.NewDriveRecipient()
 email := "ryan@contoso.com"
 driveRecipient.SetEmail(&email) 
 
-recipients := []graphdrives.DriveRecipientable {
+recipients := []graphmodels.DriveRecipientable {
 	driveRecipient,
-
 }
 requestBody.SetRecipients(recipients)
 message := "Here's the file that we're collaborating on."
@@ -36,7 +35,6 @@ sendInvitation := true
 requestBody.SetSendInvitation(&sendInvitation) 
 roles := []string {
 	"write",
-
 }
 requestBody.SetRoles(roles)
 password := "password123"
