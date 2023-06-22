@@ -21,7 +21,6 @@ visibleHistoryStartDateTime , err := time.Parse(time.RFC3339, "2019-04-18T23:51:
 requestBody.SetVisibleHistoryStartDateTime(&visibleHistoryStartDateTime) 
 roles := []string {
 	"owner",
-
 }
 requestBody.SetRoles(roles)
 additionalData := map[string]interface{}{

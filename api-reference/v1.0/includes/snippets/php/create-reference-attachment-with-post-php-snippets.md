@@ -18,7 +18,7 @@ $postBody->setContent('I attached a reference to a file on OneDrive.');
 
 
 $post->setBody($postBody);
-$attachmentsAttachment1 = new Attachment();
+$attachmentsAttachment1 = new ReferenceAttachment();
 $attachmentsAttachment1->set@odatatype('#microsoft.graph.referenceAttachment');
 
 $attachmentsAttachment1->setName('Personal pictures');

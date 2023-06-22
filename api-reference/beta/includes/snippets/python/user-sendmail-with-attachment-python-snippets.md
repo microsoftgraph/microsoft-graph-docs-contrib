@@ -29,18 +29,14 @@ toRecipientsArray []= toRecipientsRecipient1;
 message.torecipients(toRecipientsArray)
 
 
-attachments_attachment1 = Attachment()
+attachments_attachment1 = FileAttachment()
 attachments_attachment1.@odata_type = '#microsoft.graph.fileAttachment'
 
 attachments_attachment1.name = 'attachment.txt'
 
 attachments_attachment1.content_type = 'text/plain'
 
-additional_data = [
-'content_bytes' => 'SGVsbG8gV29ybGQh', 
-];
-attachments_attachment1.additional_data(additional_data)
-
+attachments_attachment1.ContentBytes(base64_decode('SGVsbG8gV29ybGQh'))
 
 
 attachmentsArray []= attachmentsAttachment1;

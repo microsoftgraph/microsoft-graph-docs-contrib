@@ -42,20 +42,17 @@ lastModifiedDateTime , err := time.Parse(time.RFC3339, "2021-04-01T04:26:06.1995
 requestBody.SetLastModifiedDateTime(&lastModifiedDateTime) 
 contributors := []string {
 	"Scott Simpson",
-
 }
 requestBody.SetContributors(contributors)
 additionalTags := []string {
 	"Create private or public teams",
 	"Add members to teams",
-
 }
 requestBody.SetAdditionalTags(additionalTags)
 skillTags := []string {
 	"Create teams",
 	"Teams channels",
 	"Teams members",
-
 }
 requestBody.SetSkillTags(skillTags)
 isActive := true
