@@ -1,5 +1,5 @@
 ---
-title: "companySubscriptions resource type"
+title: "companySubscription resource type"
 description: "Represents subscriptions for a tenant."
 ms.localizationpriority: medium
 author: "arp19690"
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
-# companySubscriptions resource type
+# companySubscription resource type
 
 Namespace: microsoft.graph
 
@@ -21,8 +21,8 @@ Inherits from [entity](entity.md).
 
 | Method                                                              | Return Type                                                | Description                                                                 |
 | :------------------------------------------------------------------ | :--------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [Get companySubscriptions](../api/companysubscriptions-get.md)      | [companySubscriptions](companysubscriptions.md)            | Get a specific commercial subscription that an organization has acquired.   |
-| [List companySubscriptions](../api/directory-list-subscriptions.md) | [companySubscriptions](companysubscriptions.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
+| [Get companySubscription](../api/companysubscription-get.md)      | [companySubscription](companysubscription.md)            | Get a specific commercial subscription that an organization has acquired.   |
+| [List companySubscriptions](../api/directory-list-subscriptions.md) | [companySubscription](companysubscription.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
 
 ## Properties
 
@@ -55,23 +55,23 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.companySubscriptions"
+  "@odata.type": "microsoft.graph.companySubscription"
 }-->
 
 ```json
 {
-  "createdDateTime": "String (timestamp)",
   "commerceSubscriptionId": "String",
+  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "isTrial": "Boolean",
   "nextLifecycleDateTime": "String (timestamp)",
+  "ownerId": "String",
+  "ownerTenantId": "String",
+  "ownerType": "String",
   "serviceStatus": [{ "@odata.type": "microsoft.graph.servicePlanInfo" }],
   "skuId": "String",
   "skuPartNumber": "String",
   "status": "String",
-  "totalLicenses": "Int32",
-  "ownerTenantId": "String",
-  "ownerId": "String",
-  "ownerType": "String"
+  "totalLicenses": "Int32"
 }
 ```
