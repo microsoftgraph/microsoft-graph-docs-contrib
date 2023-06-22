@@ -1001,6 +1001,8 @@ items:
           - name: Overview
             href: toolkit/overview.md
             displayName: Microsoft Graph Toolkit, toolkit
+          - name: Upgrade
+            href: toolkit/upgrade.md
           - name: Get started
             items:
               - name: Get started
