@@ -53,10 +53,11 @@ The following example shows the request.
   "name": "create-audioRoutingGroup-from-call"
 }
 -->
-```http
+``` http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/audioRoutingGroups
 Content-Type: application/json
 Content-Length: 233
+
 {
   "id": "oneToOne",
   "routingMode": "oneToOne",

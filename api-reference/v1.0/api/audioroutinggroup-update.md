@@ -59,6 +59,7 @@ The following example shows the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/communications/calls/{id}/audioRoutingGroups/{id}
 Content-Type: application/json
+
 {
   "id": "oneToOne",
   "routingMode": "oneToOne",
@@ -71,6 +72,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 ---
 
 ### Response
