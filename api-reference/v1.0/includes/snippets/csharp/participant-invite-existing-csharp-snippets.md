@@ -4,29 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var participants = new List<InvitationParticipantInfo>()
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Invite.InvitePostRequestBody
 {
-	new InvitationParticipantInfo
+	Participants = new List<InvitationParticipantInfo>
 	{
-		ReplacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db",
-		Identity = new IdentitySet
+		new InvitationParticipantInfo
 		{
-			User = new Identity
+			OdataType = "#microsoft.graph.invitationParticipantInfo",
+			ReplacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db",
+			Identity = new IdentitySet
 			{
-				Id = "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
-				DisplayName = "string"
-			}
-		}
-	}
+				OdataType = "#microsoft.graph.identitySet",
+				User = new Identity
+				{
+					OdataType = "#microsoft.graph.identity",
+					Id = "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+					DisplayName = "string",
+				},
+			},
+		},
+	},
+	ClientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
 };
+var result = await graphClient.Communications.Calls["{call-id}"].Participants.Invite.PostAsync(requestBody);
 
-var clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f";
-
-await graphClient.Communications.Calls["{call-id}"].Participants
-	.Invite(participants,clientContext)
-	.Request()
-	.PostAsync();
 
 ```

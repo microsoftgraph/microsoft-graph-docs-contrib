@@ -16,7 +16,7 @@ $requestBody->setState(new AuthenticationMethodState('string'));
 
 
 
-$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
 
 
 ```

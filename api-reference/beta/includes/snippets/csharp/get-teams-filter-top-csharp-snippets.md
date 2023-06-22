@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.Teams.GetAsync((requestConfiguration) =>
+await graphClient.Teams.GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Filter = "startswith(displayName,%20'A')";
 	requestConfiguration.QueryParameters.Top = 2;

@@ -22,7 +22,7 @@ $requestBody->setType('AdminRemove');
 
 
 
-$requestResult = $graphServiceClient->privilegedAccessById('privilegedAccess-id')->roleAssignmentRequests()->post($requestBody);
+$result = $graphServiceClient->privilegedAccessById('privilegedAccess-id')->roleAssignmentRequests()->post($requestBody);
 
 
 ```

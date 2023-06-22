@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	ContentTypeId = "String"
+	contentTypeId = "String"
 }
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params

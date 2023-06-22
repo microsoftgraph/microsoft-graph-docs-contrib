@@ -14,7 +14,7 @@ $requestBody->setDisplayName('AWS Contoso');
 
 
 
-$requestResult = $graphServiceClient->applicationTemplatesById('applicationTemplate-id')->instantiate()->post($requestBody);
+$result = $graphServiceClient->applicationTemplatesById('applicationTemplate-id')->instantiate()->post($requestBody);
 
 
 ```

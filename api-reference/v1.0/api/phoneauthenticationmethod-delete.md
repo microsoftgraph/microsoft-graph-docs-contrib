@@ -37,20 +37,23 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global administrator
-* Privileged authentication administrator
-* Authentication administrator
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
+Delete your own phone authentication method.
 <!-- { "blockType": "ignored" } -->
-
-```http
-DELETE /me/authentication/phoneMethods/{id}
-DELETE /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
+``` http
+DELETE /me/authentication/phoneMethods/{phoneMethodId}
 ```
-The value of `id` corresponding to the phoneType to delete is one of the following:
+
+Delete your own or another user's phone authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
+DELETE /users/{id | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
+```
+
+The value of `phoneMethodId` corresponding to the phoneType to delete is one of the following:
 + `b6332ec1-7057-4abe-9331-3d72feddfe41` to delete the `alternateMobile` **phoneType**.
 + `e37fc753-ff3b-4958-9484-eaa9425c82bc` to delete the `office` **phoneType**.
 + `3179e48a-750b-4051-897c-87b9720928f7` to delete the `mobile` **phoneType**.
@@ -90,24 +93,24 @@ DELETE https://graph.microsoft.com/v1.0/me/authentication/phoneMethods/3179e48a-
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-phoneauthenticationmethod-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-phoneauthenticationmethod-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-phoneauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-phoneauthenticationmethod-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-phoneauthenticationmethod-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-phoneauthenticationmethod-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-phoneauthenticationmethod-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-phoneauthenticationmethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-phoneauthenticationmethod-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

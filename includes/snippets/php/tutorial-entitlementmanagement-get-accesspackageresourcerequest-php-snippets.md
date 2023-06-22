@@ -31,7 +31,7 @@ $accessPackageResource->setOriginSystem('AadGroup');
 $requestBody->setAccessPackageResource($accessPackageResource);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageResourceRequests()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageResourceRequests()->post($requestBody);
 
 
 ```

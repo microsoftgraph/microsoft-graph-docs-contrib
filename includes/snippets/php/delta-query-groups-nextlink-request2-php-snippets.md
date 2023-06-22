@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DeltaRequestBuilderGetQueryParameters();
+$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->skiptoken = "ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->groups()->delta()->get($requestConfiguration);
+$result = $graphServiceClient->groups()->delta()->get($requestConfiguration);
 
 
 ```

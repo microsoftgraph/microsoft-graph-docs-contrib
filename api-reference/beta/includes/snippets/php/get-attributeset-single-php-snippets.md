@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->directory()->attributeSetsById('attributeSet-id')->get();
+$result = $graphServiceClient->directory()->attributeSetsById('attributeSet-id')->get();
 
 
 ```

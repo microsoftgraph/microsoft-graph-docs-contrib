@@ -16,7 +16,7 @@ $requestBody->setDescription('Updated description');
 
 
 
-$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->patch($requestBody);
+$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->patch($requestBody);
 
 
 ```

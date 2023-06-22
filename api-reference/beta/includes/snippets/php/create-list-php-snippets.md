@@ -38,7 +38,7 @@ $list->setTemplate('genericList');
 $requestBody->setList($list);
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->lists()->post($requestBody);
+$result = $graphServiceClient->sitesById('site-id')->lists()->post($requestBody);
 
 
 ```

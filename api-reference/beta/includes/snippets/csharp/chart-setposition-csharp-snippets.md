@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var startCell = JsonDocument.Parse(@"""startCell-value""");
+var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Worksheets.Item.Charts.Item.SetPosition.SetPositionPostRequestBody
+{
+	StartCell = "startCell-value",
+	EndCell = "endCell-value",
+};
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].SetPosition.PostAsync(requestBody);
 
-var endCell = JsonDocument.Parse(@"""endCell-value""");
-
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"]
-	.SetPosition(startCell,endCell)
-	.Request()
-	.PostAsync();
 
 ```

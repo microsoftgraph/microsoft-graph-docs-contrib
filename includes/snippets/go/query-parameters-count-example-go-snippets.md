@@ -5,15 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestCount := true
 
-requestParameters := &graphconfig.MeContactsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.ItemContactsRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 }
-configuration := &graphconfig.MeContactsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ItemContactsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

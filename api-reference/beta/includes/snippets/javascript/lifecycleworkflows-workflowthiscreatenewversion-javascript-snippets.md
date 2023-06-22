@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 const workflow = {
     workflow: {
+        category: 'joiner',
         description: 'Configure new hire tasks for onboarding employees on their first day',
         displayName: 'Global onboard new hire employee',
         isEnabled: true,

@@ -14,7 +14,7 @@ $requestBody->setIsEnabled(false);
 
 
 
-$requestResult = $graphServiceClient->policies()->identitySecurityDefaultsEnforcementPolicy()->patch($requestBody);
+$result = $graphServiceClient->policies()->identitySecurityDefaultsEnforcementPolicy()->patch($requestBody);
 
 
 ```

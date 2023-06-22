@@ -14,7 +14,7 @@ $requestBody->setDisplayConcealedNames(true);
 
 
 
-$requestResult = $graphServiceClient->admin()->reportSettings()->patch($requestBody);
+$result = $graphServiceClient->admin()->reportSettings()->patch($requestBody);
 
 
 ```

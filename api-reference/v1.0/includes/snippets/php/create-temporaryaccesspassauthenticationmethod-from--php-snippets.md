@@ -18,7 +18,7 @@ $requestBody->setIsUsableOnce(false);
 
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->authentication()->temporaryAccessPassMethods()->post($requestBody);
+$result = $graphServiceClient->usersById('user-id')->authentication()->temporaryAccessPassMethods()->post($requestBody);
 
 
 ```

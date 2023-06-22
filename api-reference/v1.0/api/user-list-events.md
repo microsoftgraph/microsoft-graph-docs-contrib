@@ -61,8 +61,8 @@ GET /users/{id | userPrincipalName}/calendar/events
 GET /me/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendars/{id}/events
 
-GET /me/calendargroups/{id}/calendars/{id}/events
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
+GET /me/calendarGroups/{id}/calendars/{id}/events
+GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -101,24 +101,24 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-events-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-events-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-events-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-events-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-events-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-events-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-events-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-events-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-events-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

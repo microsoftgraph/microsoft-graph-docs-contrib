@@ -7,6 +7,71 @@ ms.localizationpriority: high
 
 # Highlights of earlier releases
 
+## February 2023: New and generally available
+
+### Identity and access | Directory management
+- Following the Zero Trust cybersecurity model, Microsoft partners can use [granular delegated admin privileges (GDAP)](/graph/api/resources/delegatedadminrelationships-api-overview) to carry out administrative tasks with least-privileged access to their customer tenants, to avoid potential security exposures. Instead of requesting Global Administrator role as in the past, partners request specific roles for customer tenant administration for a definite amount of time, and their customers must explicitly grant the least-privileged access to them.
+- [Get](/graph/api/onpremisesdirectorysynchronization-get) or [update](/graph/api/onpremisesdirectorysynchronization-update) the configuration and features of [on-premises directory synchronization](/graph/api/resources/onpremisesdirectorysynchronization) set up for an organization, including [configuration to prevent accidental deletion](/graph/api/resources/onPremisesAccidentalDeletionPrevention).
+
+### Identity and access | Governance
+As part of a [policy for access package assignment](/graph/api/resources/accesspackageassignmentpolicy), you can specify or get the required regex pattern for a requestor to answer an [access package question](/graph/api/resources/accesspackagequestion).
+
+### Identity and access | Identity and sign-in
+Specify in a [cross-tenant access policy](/graph/api/resources/crosstenantaccesspolicy) to enable B2B collaboration across Azure clouds, for example, between tenants in Azure Commercial and Azure Government clouds, and between Azure Commercial and Azure China clouds.
+
+### Search | Query
+Use application permissions and [search all shared or private content on SharePoint sites](search-concept-searchall.md) that belong to the app owner in a specified region. 
+
+### Security | Attack simulation and training
+- [Get](/graph/api/simulationautomation-get) information about an [automated attack simulation](/graph/api/resources/simulationautomation) for a tenant.
+- [Get a list](/graph/api/simulationautomation-list-runs) of [automated runs of attack simulation](/graph/api/resources/simulationautomationrun) for a tenant.
+
+### Teamwork and communications | Calls and online meetings
+Support a user to participate in an [online meeting](/graph/api/resources/onlinemeeting) in the [role](/graph/api/resources/meetingparticipantinfo#onlinemeetingrole-values) of a coorganizer.
+
+### Teamwork and communications | Messaging
+Support an [Azure Communication Services user](/graph/api/resources/azureCommunicationServicesUserConversationMember) to participate in a [team](/graph/api/resources/team), [channel](/graph/api/resources/channel), or [chat](/graph/api/resources/chat).
+
+### To-do tasks
+Use a single POST operation to [attach a file](/graph/api/todotask-post-attachments) up to 3MB to a [to-do task](/graph/api/resources/todotask), or [create an upload session](/graph/api/taskfileattachment-createuploadsession) to iteratively upload portions of a file up to 25 MB total size to attach it to a task.
+
+## February 2023: New in preview only
+
+### Applications | Synchronization
+When calling the [synchronization API](/graph/api/resources/synchronization-overview?view=graph-rest-beta&preserve-view=true), take advantage of more granular permissions designed for reading or writing synchronization data, by using the new permission, `Synchronization.Read.All`, instead of the higher privileged permission, `Directory.Read.All`, and `Synchronization.ReadWrite.All` instead of `Directory.Read.All`.
+
+### Calendar
+Request a lower privileged delegated or application permission, `Calendar.ReadBasic` or `Calendars.ReadBasic.All`, for most read operations for events in calendars, with or without a signed-in user present. These permissions allow an app to read events of all calendars, except for properties such as body, attachments, and extensions. For the exact list of operations that support these permissions, see the [February updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2023-02-01&to=2023-02-28) for **Calendar**.
+
+### Device and app management | Cloud PC
+- Enable or disable single sign-on as part of a [Cloud PC provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) and of the [tenant-wide organization settings for Cloud PC](/graph/api/resources/cloudpcorganizationsettings?view=graph-rest-beta&preserve-view=true). When single sign-on is enabled, Windows 365 users can use single sign-on to authenticate to Azure Active Directory (Azure AD) with passwordless options (for example, FIDO keys) to access their Cloud PCs. 
+- Organizations with frontline workers can provision Cloud PCs as a shared [type](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true#cloudpcprovisioningtype-values) and subscribe to a [shared-use service plan](/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta&preserve-view=true) for Cloud PCs.
+- Allow a customer to select from a list of [supported region groups](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true#cloudpcregiongroup-values) when provisioning a Cloud PC, so to put that Cloud PC in one of the regions belonging to that group based on resource status. 
+
+### Device and app management | Device updates
+Use the Windows Update for Business deployment service to manage Windows 11 feature updates and [driver updates](windowsupdates-manage-driver-update.md). When enrolled devices are scanned for updates, the deployment service identifies applicable, better drivers for each device. The service collects such driver information in a [catalog](/graph/api/resources/windowsupdates-catalog?view=graph-rest-beta&preserve-view=true) for [approval](/graph/api/resources/windowsupdates-contentapproval?view=graph-rest-beta&preserve-view=true), and schedules approved [catalog content](/graph/api/resources/windowsupdates-catalogcontent?view=graph-rest-beta&preserve-view=true) for [deployment](/graph/api/resources/windowsupdates-deployment?view=graph-rest-beta&preserve-view=true).
+
+### Identity and access | Directory management
+Debut of pronouns support for organizations - use [pronouns settings](/graph/api/resources/pronounsSettings?view=graph-rest-beta&preserve-view=true) to _programmatically_ [manage the support of pronouns in an organization](pronouns-configure-pronouns-availability.md). Find out about how _administrators_ can [enable or disable pronouns in the Microsoft 365 admin center](/microsoft-365/admin/add-users/turn-pronouns-on-or-off?view=o365-worldwide&preserve-view=true), and the availability timeline for pronouns on profile cards on the [Microsoft 365 roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=pronouns).  
+
+### Identity and access | Directory management
+Use the [recommendation](/graph/api/resources/recommendation?view=graph-rest-beta&preserve-view=true) resource as personalized and actionable insights to implement Azure Active Directory best practices. Recommendations help to ensure your tenant is in a secure and healthy state and maximize the value of the features available in Azure AD. For more information about how recommendations work in Azure AD for administrators, see [What are Azure Active Directory recommendations](/azure/active-directory/reports-monitoring/overview-recommendations).
+
+### Identity and access | Governance
+[List](/graph/api/workflow-list-executionscope?view=graph-rest-beta&preserve-view=true) the users who are in the scope of the execution conditions of a [workflow](/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta&preserve-view=true).
+
+### Security | Attack simulation and training
+- [Create](/graph/api/attacksimulationroot-post-simulation?view=graph-rest-beta&preserve-view=true) or [delete](/graph/api/simulation-delete?view=graph-rest-beta&preserve-view=true) an [attack simulation](/graph/api/resources/simulation?view=graph-rest-beta&preserve-view=true) campaign for a tenant. Prior to this update, apps can only [get](/graph/api/simulation-get?view=graph-rest-beta&preserve-view=true) information about an existing simulation campaign.
+- [Get](/graph/api/payload-get?view=graph-rest-beta&preserve-view=true) information about an attack simulation training. Get further [details](/graph/api/resources/payloaddetail?view=graph-rest-beta&preserve-view=true) such as the content and coachmarks.
+
+### Teamwork and communications | Calls and online meetings
+Identify the reasons for shared content or video from an [online meeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta&preserve-view=true) [participant](/graph/api/resources/meetingparticipants?view=graph-rest-beta&preserve-view=true) being [restricted](/graph/api/resources/onlineMeetingRestricted?view=graph-rest-beta&preserve-view=true).
+
+### Teamwork and communications | Messaging
+Support an [Azure Communication Services user](/graph/api/resources/azureCommunicationServicesUserConversationMember?view=graph-rest-beta&preserve-view=true) to participate in a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), or [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
+
+
+
 ## January 2023: New and generally available
 
 ### Device and app management | Corporate management
@@ -352,8 +417,8 @@ Manage the [version history of a document set](/graph/api/resources/documentsetv
 Intune [August updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2022-08-01&to=2022-08-31) for the beta version.
 
 ### Files
-[Get](/graph/api/tenantadmin-settings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/tenantadmin-settings-update?view=graph-rest-beta&preserve-view=true) tenant-wide [settings](/graph/api/resources/tenantadmin-settings?view=graph-rest-beta&preserve-view=true) for SharePoint and OneDrive:
-- The [idle session sign-out policy settings](/graph/api/resources/tenantadmin-idlesessionsignout?view=graph-rest-beta&preserve-view=true) for SharePoint.
+[Get](/graph/api/sharepointsettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/sharepointsettings-update?view=graph-rest-beta&preserve-view=true) tenant-wide [settings](/graph/api/resources/sharepointsettings?view=graph-rest-beta&preserve-view=true) for SharePoint and OneDrive:
+- The [idle session sign-out policy settings](/graph/api/resources/idlesessionsignout?view=graph-rest-beta&preserve-view=true) for SharePoint.
 - Whether legacy authentication protocols are enabled for the tenant.
 - Whether guests must sign in using the same account to which sharing invitations are sent.
 
@@ -609,7 +674,7 @@ When configuring Azure AD Application Proxy for on-premises applications for sec
 Use a [Teams app resource](/graph/api/resources/educationteamsappresource?view=graph-rest-beta&preserve-view=true) that corresponds to an installed Microsoft Teams app, to allow education service users to create and share assignments with embedded Teams applications, such as YouTube or FlipGrid.
 
 ### Identity and access | Directory management
-Activating a service [for an organization](/graph/api/organization-activateService?view=graph-rest-beta&preserve-view=true) and [for a user](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) are deprecated, and will stop returning data on June 30, 2022.
+Activating a service for an organization and for a user are deprecated, and will stop returning data on June 30, 2022.
 
 ### Identity and access | Identity and sign-in
 As part of the [default user role](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true) of an [authorization policy](/graph/api/resources/authorizationPolicy?view=graph-rest-beta&preserve-view=true), specify whether the registered owner of a device can read their own BitLocker recovery keys.
@@ -1482,7 +1547,6 @@ Apply the new model of [access reviews](/graph/api/resources/accessreviewsv2-ove
 
 ### Users
 - [Get](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta&preserve-view=true) a user's [preferences for translating languages](/graph/api/resources/translationpreferences?view=graph-rest-beta&preserve-view=true). For example, whether or not to translate, translate automatically, or prompt before translating specific languages in messages, chats, and web pages, and any [translation overrides](/graph/api/resources/translationlanguageoverride?view=graph-rest-beta&preserve-view=true).
-- [Activate a service plan](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) for a user.
 
 
 ## February 2021: New and generally available
@@ -2204,7 +2268,7 @@ of these entities, and use OData cast to trim **directoryObject** results to cer
 
 ### Identity and access
 - To manage roles and assign access to resources in role-based access control (RBAC) providers such as Microsoft Intune, use [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-1.0&preserve-view=true). The **unifiedRoleAssignmentMultiple** resource supports defining a single role over an array of scopes, and assigning the role to multiple principals (such as users).
-- Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-1.0&preserve-view=true) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-1.0&preserve-view=true). This is a [breaking change](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-1.0/) to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0&preserve-view=true), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0&preserve-view=true), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0&preserve-view=true), and [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy). 
+- Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-1.0&preserve-view=true) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-1.0&preserve-view=true). This is a breaking change to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0&preserve-view=true), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0&preserve-view=true), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0&preserve-view=true), and [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy). 
 
 ### Mail
 Add [file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true).

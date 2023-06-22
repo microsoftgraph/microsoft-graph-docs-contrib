@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
+	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4"
 }
 
 New-MgApplicationTokenLifetimePolicyByRef -ApplicationId $applicationId -BodyParameter $params

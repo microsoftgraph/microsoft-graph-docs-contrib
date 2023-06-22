@@ -122,16 +122,16 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagedeltachannel-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachannel-1-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagedeltachannel-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-1-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachannel-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -181,9 +181,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {
@@ -223,9 +225,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {
@@ -265,16 +269,16 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagedeltachannel-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachannel-2-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagedeltachannel-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-2-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachannel-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -323,9 +327,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {
@@ -363,9 +369,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {
@@ -405,16 +413,16 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagedeltachannel-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachannel-3-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagedeltachannel-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-3-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachannel-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -463,9 +471,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {
@@ -503,9 +513,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {
@@ -547,16 +559,16 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagedeltachannel-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachannel-4-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagedeltachannel-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-4-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachannel-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -604,9 +616,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {

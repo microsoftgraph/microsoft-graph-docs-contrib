@@ -14,7 +14,7 @@ $requestBody->setAllowedAudiences(new AllowedAudiences('contacts'));
 
 
 
-$requestResult = $graphServiceClient->me()->profile()->anniversariesById('personAnnualEvent-id')->patch($requestBody);
+$result = $graphServiceClient->me()->profile()->anniversariesById('personAnnualEvent-id')->patch($requestBody);
 
 
 ```

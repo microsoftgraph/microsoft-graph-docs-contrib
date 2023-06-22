@@ -11,8 +11,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new SchemaPostRequestBody();
 $additionalData = [
-'baseType' => 'microsoft.graph.externalItem', 
-'properties' => $properties1 = new ();
+		'baseType' => 'microsoft.graph.externalItem', 
+		'properties' => $properties1 = new ();
 $		properties1->setName('ticketTitle');
 
 $		properties1->setType('String');
