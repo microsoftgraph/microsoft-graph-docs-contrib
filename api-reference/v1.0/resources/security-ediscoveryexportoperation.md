@@ -34,7 +34,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |id|String| The ID for the operation. Read-only. |
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation.|
-|resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
+|resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
 
