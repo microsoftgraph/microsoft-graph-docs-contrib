@@ -20,12 +20,11 @@ displayName := "Test API"
 requestBody.SetDisplayName(&displayName) 
 targetUrl := "https://someotherapi.com/api"
 requestBody.SetTargetUrl(&targetUrl) 
-authenticationConfiguration := graphmodels.NewApiAuthenticationConfigurationBase()
-additionalData := map[string]interface{}{
-	"pkcs12Value" : "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA", 
-	"password" : "CertificatePassword", 
-}
-authenticationConfiguration.SetAdditionalData(additionalData)
+authenticationConfiguration := graphmodels.NewPkcs12Certificate()
+pkcs12Value := "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
+authenticationConfiguration.SetPkcs12Value(&pkcs12Value) 
+password := "CertificatePassword"
+authenticationConfiguration.SetPassword(&password) 
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 
 result, err := graphClient.Identity().ApiConnectors().Post(context.Background(), requestBody, nil)
