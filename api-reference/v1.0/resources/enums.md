@@ -204,10 +204,11 @@ Namespace: microsoft.graph
 
 ### userSignInRecommendationScope values 
 
-| Member      |
-| :---------- |
-| tenant      |
-| application |
+| Member             |
+| :----------------- |
+| tenant             |
+| application        |
+| unknownFutureValue |
 
 ### unifiedRoleScheduleRequestActions values 
 

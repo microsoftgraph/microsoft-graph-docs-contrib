@@ -1,5 +1,5 @@
 ---
-title: "userSignInInsight resource type"
+title: "usersignininsight resource type"
 description: "In the Azure AD access reviews, the userSignInInsight resource represents insights provided to reviewers based on the user's last sign-in date and time."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
-
 Represents an insight provided to reviewers based on the user's last sign-in date and time.
 
 Inherits from [governanceInsight](governanceinsight.md).
@@ -20,7 +18,8 @@ Inherits from [governanceInsight](governanceinsight.md).
 ## Properties
 | Property    | Type   | Description |
 | :---------------| :---------- | :---------- |
-| lastSignInDateTime | DateTimeOffset | Indicates when the user last signed in |
+| lastSignInDateTime | DateTimeOffset | Indicates when the user last signed in. |
+| insightCreatedDateTime | DateTimeOffset | Indicates when the insight was created. |
 
 ## Relationships
 None.
@@ -29,14 +28,15 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.userSignInInsight",
+  "@odata.type": "microsoft.graph.usersignininsight",
   "baseType": "microsoft.graph.governanceInsight"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.userSignInInsight",
-  "lastSignInDateTime": "DateTimeOffset"
+  "@odata.type": "#microsoft.graph.usersignininsight",
+  "lastSignInDateTime": "DateTimeOffset",
+  "insightCreatedDateTime": "DateTimeOffset"
 }
 ```
 

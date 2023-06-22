@@ -1,17 +1,15 @@
 ---
-title: "membershipOutlierInsight resource type"
-description: "In the Azure AD access reviews, the membershipOutlierInsight resource represents insights provided to reviewers based on whether a user has low affiliation with other users within the group."
+title: "membershipoutlierinsight resource type"
+description: "In the Azure AD access reviews, the membershipoutlierinsight resource represents insights provided to reviewers based on whether a user has low affiliation with other users within the group."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# membershipOutlierInsight resource type
+# membershipoutlierinsight resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 Represents an insight provided to reviewers based on whether a user has low affiliation with other users within the group.
 
@@ -39,7 +37,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.membershipOutlierInsight",
+  "@odata.type": "microsoft.graph.membershipoutlierinsight",
   "baseType": "microsoft.graph.governanceInsight",
   "openType": false
 }
@@ -59,7 +57,7 @@ The following is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "membershipOutlierInsight resource",
+  "description": "membershipoutlierinsight resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
