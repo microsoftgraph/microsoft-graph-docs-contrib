@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,14 +12,15 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewExtension()
+extensionName := "com.contoso.socialSettings"
+requestBody.SetExtensionName(&extensionName) 
 id := "com.contoso.socialSettings"
 requestBody.SetId(&id) 
 additionalData := map[string]interface{}{
-	"extensionName" : "com.contoso.socialSettings", 
 	"skypeId" : "skypeId.AdeleV", 
 	"linkedInProfile" : "www.linkedin.com/in/testlinkedinprofile", 
 	"xboxGamerTag" : "AwesomeAdele", 

@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new ConversationMember();
+$requestBody = new AadUserConversationMember();
 $requestBody->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $requestBody->setRoles([]);
@@ -22,7 +22,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->members()->post($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->members()->post($requestBody);
 
 
 ```

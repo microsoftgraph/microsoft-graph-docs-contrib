@@ -22,7 +22,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->tags()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->tags()->post($requestBody);
 
 
 ```

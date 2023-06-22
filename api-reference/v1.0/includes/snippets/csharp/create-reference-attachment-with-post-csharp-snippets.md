@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Reply.ReplyPostRequestBody
@@ -17,7 +19,7 @@ var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Reply.ReplyPostRe
 		},
 		Attachments = new List<Attachment>
 		{
-			new Attachment
+			new ReferenceAttachment
 			{
 				OdataType = "#microsoft.graph.referenceAttachment",
 				Name = "Personal pictures",

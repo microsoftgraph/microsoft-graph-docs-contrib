@@ -11,11 +11,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MembersRequestBuilderGetRequestConfiguration();
 $queryParameters = MembersRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "roles/any";
+$queryParameters->filter = "roles/any(r:r eq 'owner')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->members()->get($requestConfiguration);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->members()->get($requestConfiguration);
 
 
 ```

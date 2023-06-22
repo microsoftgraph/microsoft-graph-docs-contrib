@@ -18,7 +18,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->identityProvidersById('identityProvider-id')->patch($requestBody);
+$result = $graphServiceClient->identityProviders()->byIdentityProviderId('identityProvider-id')->patch($requestBody);
 
 
 ```

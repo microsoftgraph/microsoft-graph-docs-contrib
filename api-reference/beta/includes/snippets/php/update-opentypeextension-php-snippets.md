@@ -24,7 +24,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->postsById('post-id')->extensionsById('extension-id')->patch($requestBody);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->threads()->byThreadId('conversationThread-id')->posts()->byPostId('post-id')->extensions()->byExtensionId('extension-id')->patch($requestBody);
 
 
 ```

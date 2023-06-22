@@ -20,7 +20,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->me()->extensionsById('extension-id')->patch($requestBody);
+$result = $graphServiceClient->me()->extensions()->byExtensionId('extension-id')->patch($requestBody);
 
 
 ```

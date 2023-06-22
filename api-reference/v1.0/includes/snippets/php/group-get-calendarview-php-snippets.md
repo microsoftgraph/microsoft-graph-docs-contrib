@@ -21,7 +21,7 @@ $queryParameters->endDateTime = "2017-10-01T19:00:00.00-08:00";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->groupsById('group-id')->calendarView()->get($requestConfiguration);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->calendarView()->get($requestConfiguration);
 
 
 ```

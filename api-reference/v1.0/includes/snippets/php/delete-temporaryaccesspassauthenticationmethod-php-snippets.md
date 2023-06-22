@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->usersById('user-id')->authentication()->temporaryAccessPassMethodsById('temporaryAccessPassAuthenticationMethod-id')->delete();
+$graphServiceClient->users()->byUserId('user-id')->authentication()->temporaryAccessPassMethods()->byTemporaryAccessPassMethodId('temporaryAccessPassAuthenticationMethod-id')->delete();
 
 
 ```

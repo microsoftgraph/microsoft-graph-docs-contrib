@@ -15,7 +15,7 @@ $queryParameters->select = ["consentedPermissionSet","id"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chatsById('chat-id')->installedAppsById('teamsAppInstallation-id')->get($requestConfiguration);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->installedApps()->byInstalledAppId('teamsAppInstallation-id')->get($requestConfiguration);
 
 
 ```

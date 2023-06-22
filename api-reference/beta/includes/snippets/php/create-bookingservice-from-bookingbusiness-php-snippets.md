@@ -136,7 +136,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->bookingBusinessesById('bookingBusiness-id')->services()->post($requestBody);
+$result = $graphServiceClient->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->services()->post($requestBody);
 
 
 ```
