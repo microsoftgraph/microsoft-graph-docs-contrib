@@ -23,11 +23,10 @@ headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 configuration := &graphusers.ItemCalendarGetScheduleRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphusers.NewGetSchedulePostRequestBody()
+requestBody := graphusers.NewItemGetSchedulePostRequestBody()
 schedules := []string {
 	"adelev@contoso.onmicrosoft.com",
 	"meganb@contoso.onmicrosoft.com",
-
 }
 requestBody.SetSchedules(schedules)
 startTime := graphmodels.NewDateTimeTimeZone()

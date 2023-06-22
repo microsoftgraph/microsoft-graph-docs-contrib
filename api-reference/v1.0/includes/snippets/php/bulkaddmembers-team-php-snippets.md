@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new AddPostRequestBody();
-$valuesConversationMember1 = new ConversationMember();
+$valuesConversationMember1 = new AadUserConversationMember();
 $valuesConversationMember1->set@odatatype('microsoft.graph.aadUserConversationMember');
 
 $valuesConversationMember1->setRoles([]);
@@ -23,7 +23,7 @@ $valuesConversationMember1->setAdditionalData($additionalData);
 
 
 $valuesArray []= $valuesConversationMember1;
-$valuesConversationMember2 = new ConversationMember();
+$valuesConversationMember2 = new AadUserConversationMember();
 $valuesConversationMember2->set@odatatype('microsoft.graph.aadUserConversationMember');
 
 $valuesConversationMember2->setRoles(['owner', ]);

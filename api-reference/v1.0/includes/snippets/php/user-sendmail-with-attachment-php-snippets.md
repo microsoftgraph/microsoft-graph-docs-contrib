@@ -31,18 +31,14 @@ $toRecipientsArray []= $toRecipientsRecipient1;
 $message->setToRecipients($toRecipientsArray);
 
 
-$attachmentsAttachment1 = new Attachment();
+$attachmentsAttachment1 = new FileAttachment();
 $attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
 
 $attachmentsAttachment1->setName('attachment.txt');
 
 $attachmentsAttachment1->setContentType('text/plain');
 
-$additionalData = [
-	'contentBytes' => 'SGVsbG8gV29ybGQh', 
-];
-$attachmentsAttachment1->setAdditionalData($additionalData);
-
+$attachmentsAttachment1->setContentBytes(base64_decode('SGVsbG8gV29ybGQh'));
 
 
 $attachmentsArray []= $attachmentsAttachment1;

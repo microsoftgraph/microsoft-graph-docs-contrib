@@ -321,7 +321,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbranding_for_default_locale_bannerLogo_notset"
+  "name": "get_organizationalbranding_for_default_locale_bannerLogo_notset",
+  "sampleKeys": ["d69179bf-f4a4-41a9-a9de-249c0f2efb1d", "default"]
 }-->
 
 ```msgraph-interactive
@@ -373,3 +374,21 @@ HTTP/1.1 200 OK
 
 {}
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Get organizationalBranding",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: microsoft.graph.microsoft.graph/organization:
+      /organization/{var}/branding/localizations/{var}/bannerLogo
+      Uri path requires navigating into unknown object hierarchy: missing property 'localizations' on 'microsoft.graph.organizationalBranding'. Possible issues:
+  	 1) Doc bug where 'localizations' isn't defined on the resource.
+  	 2) Doc bug where 'localizations' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'microsoft.graph.organizationalBranding' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation.
+  ]
+}
+-->
