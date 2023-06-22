@@ -43,5 +43,5 @@ In this release, we removed multiple providers to ensure your apps stay secure a
 
 ## Next steps
 
-- Update your solutions to the latest Toolkit version <img src="https://img.shields.io/npm/v/@microsoft/mgt/latest.svg">
+- Update your solutions to the latest Toolkit version <img alt="Microsoft Graph Toolkit latest version" src="https://img.shields.io/npm/v/@microsoft/mgt/latest.svg">
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt/issues).
