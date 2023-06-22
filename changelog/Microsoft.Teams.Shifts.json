@@ -113,18 +113,28 @@
          {
            "Id": "8662d342-a455-4111-a5a0-fa023070440a",
            "ApiChange": "Header",
-           "ChangedApiName": "offerShiftRequest, openShift, schedulingGroup, shift, timeOffReason, timeOff, shiftPreferences, swapShiftsChangeRequest, timeOffRequest, workforceIntegration",
+           "ChangedApiName": "offerShiftRequest, openShift, schedule, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, timeOff, timeOffReason, timeOffRequest, workforceIntegration",
            "ChangeType": "Addition",
-           "Description": "Added the `MS-APP-ACTS-AS` request header for all operations of the following resources: [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-1.0), [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openshift?view=graph-rest-1.0), [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulinggroup?view=graph-rest-1.0), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-1.0), [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeoffreason?view=graph-rest-1.0), [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeoff?view=graph-rest-1.0), [shiftPreferences](https://learn.microsoft.com/en-us/graph/api/resources/shiftpreferences?view=graph-rest-1.0), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0), [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-1.0), and [workforceIntegration](https://learn.microsoft.com/en-us/graph/api/resources/workforceintegration?view=graph-rest-1.0).",
-           "Target": "offerShiftRequest, openShift, schedulingGroup, shift, timeOffReason, timeOff, shiftPreferences, swapShiftsChangeRequest, timeOffRequest, workforceIntegration"
-         },
+           "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the following resources: [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-beta), [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openshift?view=graph-rest-beta), [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta), [shiftPreferences](https://learn.microsoft.com/en-us/graph/api/resources/shiftpreferences?view=graph-rest-beta), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta), [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeoff?view=graph-rest-beta), [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeoffreason?view=graph-rest-beta), [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta), and [workforceIntegration](https://learn.microsoft.com/en-us/graph/api/resources/workforceintegration?view=graph-rest-beta).",
+           "Target": "offerShiftRequest, openShift, schedule, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, timeOff, timeOffReason, timeOffRequest, workforceIntegration"
+         }
+       ],
+       "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+       "Cloud": "prd",
+       "Version": "beta",
+       "CreatedDateTime": "2021-06-04T01:15:33.264Z",
+       "WorkloadArea": "Teamwork and communications",
+       "SubArea": "Shift management"
+     },
+     {
+       "ChangeList": [
          {
            "Id": "8662d342-a455-4111-a5a0-fa023070440a",
            "ApiChange": "Header",
-           "ChangedApiName": "schedule",
+           "ChangedApiName": "offerShiftRequest, openShift, schedule, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, timeOff, timeOffReason, timeOffRequest, workforceIntegration",
            "ChangeType": "Addition",
-           "Description": "Added the `MS-APP-ACTS-AS` request header for the [get](https://learn.microsoft.com/en-us/graph/api/schedule-get?view=graph-rest-1.0) and [share](https://learn.microsoft.com/en-us/graph/api/schedule-share?view=graph-rest-1.0) operations of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-1.0) resource.",
-           "Target": "schedule"
+           "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the following resources: [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-1.0), [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openshift?view=graph-rest-1.0), [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-1.0), [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulinggroup?view=graph-rest-1.0), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-1.0), [shiftPreferences](https://learn.microsoft.com/en-us/graph/api/resources/shiftpreferences?view=graph-rest-1.0), [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0), [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeoff?view=graph-rest-1.0), [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeoffreason?view=graph-rest-1.0), [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-1.0), and [workforceIntegration](https://learn.microsoft.com/en-us/graph/api/resources/workforceintegration?view=graph-rest-1.0).",
+           "Target": "offerShiftRequest, openShift, schedule, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, timeOff, timeOffReason, timeOffRequest, workforceIntegration"
          }
        ],
        "Id": "8662d342-a455-4111-a5a0-fa023070440a",
