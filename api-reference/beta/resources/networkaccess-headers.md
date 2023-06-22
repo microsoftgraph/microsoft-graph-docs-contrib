@@ -18,9 +18,9 @@ The HTTP headers represent the additional information included in a network requ
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|origin|String|Represents the origin or source from which the request is being made|
-|referrer|String|Represents the referring URL or the URL of the web page that the current request originates from|
-||String|Represents the information about the client's original IP address when the request passes through one or more proxy servers or load balancers|
+|origin|String|Represents the origin or source from which the request is being made.|
+|referrer|String|Represents the referring URL or the URL of the web page that the current request originates from.|
+|xForwardedFor|String|Represents the information about the client original IP address when the request passes through one or more proxy servers or load balancers.|
 
 ## Relationships
 None.

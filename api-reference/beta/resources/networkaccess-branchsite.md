@@ -39,7 +39,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |lastModifiedDateTime|DateTimeOffset|last modified time.|
 |name|String|Name.|
 |region|String|The branch site is created in the specified location.|
-
+|country|String|The branch site is created in the specified country.|
+|version|String|The branch version.|
 
 ## Relationships
 |Relationship|Type|Description|

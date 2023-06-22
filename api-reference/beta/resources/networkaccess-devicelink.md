@@ -35,9 +35,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |ipAddress|String|Specifies the client IPv4 of the link	|
 |lastModifiedDateTime|DateTimeOffset|last modified time.|
 |name|String|Name.|
-|redundancyConfiguration|[microsoft.graph.networkaccess.redundancyConfiguration](../resources/networkaccess-redundancyconfiguration.md)|The redundancy option details for the device link are specified.|
 |tunnelConfiguration|[microsoft.graph.networkaccess.tunnelConfiguration](../resources/networkaccess-tunnelconfiguration.md)|The connectivity settings, including the protocol, IPSec policy, and preshared key, are specified for establishing connectivity.|
-|version|String|version|
+|version|String|Version.|
 
 ## Relationships
 None.

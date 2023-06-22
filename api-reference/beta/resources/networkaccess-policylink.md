@@ -22,18 +22,16 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get policyLink](../api/networkaccess-policylink-get.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) object.|
-|[Update policyLink](../api/networkaccess-policylink-update.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Update the properties of a [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) object.|
-|[Delete policyLink](../api/networkaccess-filteringprofile-delete-policies.md)|None|Delete a [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) object.|
-|[List policy](../api/networkaccess-policylink-list-policy.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) collection|Get the policy resources from the policy navigation property.|
-|[Add policy](../api/networkaccess-policylink-post-policy.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Add policy by posting to the policy collection.|
-|[Remove policy](../api/networkaccess-policylink-delete-policy.md)|None|Remove a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.|
+|[Get policyLink](../api/networkaccess-forwardingpolicylink-get.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) object.|
+|[Update policyLink](../api/networkaccess-forwardingpolicylink-update.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Update the properties of a [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) object.|
+|[List policy](../api/networkaccess-forwardingpolicylink-list.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) collection|Get the policy resources from the policy navigation property.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |state|microsoft.graph.networkaccess.status|Link status. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
+|version|String|Version.|
 
 ## Relationships
 |Relationship|Type|Description|

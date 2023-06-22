@@ -31,7 +31,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |:---|:---|:---|
 |id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |state|microsoft.graph.networkaccess.status|Status Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).The possible values are: `enabled`, `disabled`.|
-
+|version|String|Version.|
 
 ## Relationships
 |Relationship|Type|Description|

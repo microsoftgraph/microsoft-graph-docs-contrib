@@ -23,8 +23,8 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 |[List forwardingProfiles](../api/networkaccess-networkaccessroot-list-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Get a list of the [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) objects and their properties.|
 |[Get forwardingProfile](../api/networkaccess-forwardingprofile-get.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) object.|
 |[Update forwardingProfile](../api/networkaccess-forwardingprofile-update.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md)|Update the properties of a [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) object.|
-|[List policies](../api/networkaccess-filteringprofile-list-policies.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|Get the policyLink resources from the policies navigation property.|
-|[Create policyLink](../api/networkaccess-forwardingprofile-post-policies.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Create a new policyLink object.|
+|[List policies](../api/networkaccess-forwardingpolicylink-list.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|Get the policyLink resources from the policies navigation property.|
+
 
 ## Properties
 |Property|Type|Description|
@@ -37,6 +37,7 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 |priority|Int32|Profile priority.|
 |state|microsoft.graph.networkaccess.status|Determines whether the profile is active or inactive. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).The possible values are: `enabled`, `disabled`.|
 |trafficForwardingType|microsoft.graph.networkaccess.trafficForwardingType|Profile traffic type.The possible values are: `m365`, `internet`, `private`.|
+|version|String|Version.|
 
 ## Relationships
 |Relationship|Type|Description|
