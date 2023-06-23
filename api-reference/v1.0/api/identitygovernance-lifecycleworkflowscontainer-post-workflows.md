@@ -65,10 +65,12 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ## Examples
 
-### Request
+### Example 1: Create a new workflow
+
+#### Request
 
 The following is an example of a request that creates a workflow with the following configuration:
-+ It's a "leaver" workflow that's enabled and schedule to run.
++ It's a "joiner" workflow that's enabled and schedule to run.
 + It runs for new users that are based in Australia, on their employeeHireDate.
 + Two tasks are carried out when the workflow runs: the user's account is enabled and a "Welcome" email is sent to the user.
 
@@ -86,7 +88,7 @@ Content-Type: application/json
     "description": "Configure new hire tasks for onboarding employees on their first day",
     "displayName": "Australia Onboard new hire employee",
     "isEnabled": true,
-    "isSchedulingEnabled": false,
+    "isSchedulingEnabled": true,
     "executionConditions": {
         "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
         "scope": {
@@ -120,7 +122,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -158,6 +160,152 @@ Content-Type: application/json
             "timeBasedAttribute": "employeeHireDate",
             "offsetInDays": 0
         }
+    }
+}
+```
+
+### Example 2: Create a new version of a task with customized email
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_create_workflow_from_customemail"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows
+Content-Type: application/json
+Content-length: 631
+
+{
+    "category": "joiner",
+    "description": "Configure new hire tasks for onboarding employees on their first day",
+    "displayName": "custom email marketing API test",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(department eq 'Marketing')"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeHireDate",
+            "offsetInDays": 0
+        }
+    },
+    "tasks": [
+        {
+            "continueOnError": false,
+            "description": "Enable user account in the directory",
+            "displayName": "Enable User Account",
+            "isEnabled": true,
+            "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+            "arguments": []
+        },
+        {
+            "continueOnError": false,
+            "description": "Send welcome email to new hire",
+            "displayName": "Send Welcome Email",
+            "isEnabled": true,
+            "taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+            "arguments": [
+                {
+                    "name": "cc",
+                    "value": "1baa57fa-3c4e-4526-ba5a-db47a9df95f0"
+                },
+                {
+                    "name": "customSubject",
+                    "value": "Welcome to the organization {{userDisplayName}}!"
+                },
+                {
+                    "name": "customBody",
+                    "value": "Welcome to our organization {{userGivenName}}!"
+                },
+                {
+                    "name": "locale",
+                    "value": "en-us"
+                }
+            ]
+        }
+    ]
+}
+
+```
+
+#### Response
+
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "workflow":{
+        "category": "joiner",
+        "description": "Configure new hire tasks for onboarding employees on their first day",
+        "displayName": "Global onboard new hire employee",
+        "isEnabled": true,
+        "isSchedulingEnabled": false,
+        "executionConditions": {
+            "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+            "scope": {
+                "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+                "rule": "(department eq 'Marketing')"
+            },
+            "trigger": {
+                "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+                "timeBasedAttribute": "employeeHireDate",
+                "offsetInDays": 1
+            }
+        },
+        "tasks": [
+            {
+                "continueOnError": false,
+                "description": "Enable user account in the directory",
+                "displayName": "Enable User Account",
+                "isEnabled": true,
+                "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+                "arguments": []
+            },
+            {
+                "continueOnError": false,
+                "description": "Send welcome email to new hire",
+                "displayName": "Send Welcome Email",
+                "isEnabled": true,
+                "taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+                "arguments": [
+                    {
+                    "name": "cc",
+                    "value": "b47471b9-af8f-4a5a-bfa2-b78e82398f6e, a7a23ce0-909b-40b9-82cf-95d31f0aaca2"
+                },
+                {
+                "name": "customSubject",
+                "value": "Welcome to the organization {{userDisplayName}}!"
+                },
+                {
+                "name": "customBody",
+                "value": "Welcome to our organization {{userGivenName}} {{userSurname}}. \nFor more information, reach out to your manager {{managerDisplayName}} at {{managerEmail}}."
+                },
+                {
+                "name": "locale",
+                "value": "en-us"
+                }, 
+    ]
+            }
+        ]
     }
 }
 ```
