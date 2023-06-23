@@ -91,6 +91,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.termStore.set",
   "id": "3607e9f9-e9f9-3607-f9e9-0736f9e90736",
