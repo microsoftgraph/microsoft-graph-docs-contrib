@@ -221,7 +221,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.event"
+  "@odata.type": "Edm.String"
 } -->
 
 ```http
