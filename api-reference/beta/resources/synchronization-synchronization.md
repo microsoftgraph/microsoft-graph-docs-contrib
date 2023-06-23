@@ -27,10 +27,10 @@ Represents the capability for Azure Active Directory (Azure AD) identity synchro
 |secrets|[synchronizationSecretKeyStringValuePair](synchronization-synchronizationsecretkeystringvaluepair.md) collection| Represents a collection of credentials to access provisioned cloud applications.|
 
 ## Relationships
-| Relationship | Type |Description|
-|:---------------|:--------|:----------|
+|Relationship|Type|Description|
+|:---|:---|:---|
 |jobs|[synchronizationJob](../resources/synchronization-synchronizationjob.md) collection| Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.|
-
+|templates|[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) collection| Pre-configured synchronization settings for a particular application.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
