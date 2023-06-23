@@ -353,7 +353,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 |profile |[profile](profile.md) | Represents properties that are descriptive of a user in a tenant. |
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable. Supports `$expand`.|
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
-|security|[security](security.md) | **TODO: Add description**|
+|security|[security](security.md) |Nullable.|
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
