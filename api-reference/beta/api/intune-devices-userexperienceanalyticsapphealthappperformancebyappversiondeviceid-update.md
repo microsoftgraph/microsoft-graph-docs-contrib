@@ -48,10 +48,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics app performance object.|
-|deviceId|String|The id of the device.|
-|deviceDisplayName|String|The name of the device.|
-|processedDateTime|DateTimeOffset|The date and time when the statistics were last computed.|
+|id|String|The unique identifier of the user experience analytics application performance by application version device id object. Supports: $select, $OrderBy. Read-only.|
+|deviceId|String|The Intune device id of the device. Supports: $select, $OrderBy. Read-only.|
+|deviceDisplayName|String|The name of the device. Supports: $select, $OrderBy. Read-only.|
+|processedDateTime|DateTimeOffset|The date and time when the statistics were last computed. The value cannot be modified and is automatically populated when the statistics are computed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2022 would look like this: '2022-01-01T00:00:00Z'. Returned by default. Read-only.|
 |appName|String|The name of the application.|
 |appDisplayName|String|The friendly name of the application.|
 |appPublisher|String|The publisher of the application.|
