@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstance: stopApplyDecisions"
-description: "Stops apply decision Action on accessReviewInstance which is in applying state."
+description: "Stop the apply decision action on when accessReviewInstance is in applying state."
 author: "rahulsharm0210"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stops the applyDecision on a currently completed [accessReviewInstance](../resources/accessreviewinstance.md). 
-The API is only applicable to the instances in applying state. The review must be created with autoApply and autoReview along with remediation option to disable and delete users.
-Stopping the applyDecision on an instance will not effect future instances. 
+Stop the apply decision action on a [accessReviewInstance](../resources/accessreviewinstance.md) which is currently in applying state. 
+The API is only applicable to the instances which are in applying state. The review must be created with autoapply and autoreview settings 
+along with remediation option to disable and delete users.When you invoke this api on a current instance of a recurrence, it will not affect future instances. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,14 +22,14 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)	   | AccessReview.ReadWrite.All |
-|Delegated (personal Microsoft account)| Not supported				|
+|Delegated (personal Microsoft account)| Not supported.				|
 |Application						   | AccessReview.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
-```msgraph-interactive
+```http
 POST  /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}/stopApplyDecisions
 ```
 
@@ -45,7 +45,6 @@ If successful, this method returns a `204, No Content` response code. It does no
 
 ## Examples
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "stop_applyDecisions"
@@ -57,7 +56,6 @@ POST  https://graph.microsoft.com/beta/identityGovernance/accessReviews/definiti
 ---
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": false
