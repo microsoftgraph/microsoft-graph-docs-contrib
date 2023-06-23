@@ -10,22 +10,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new StartHoldMusicPostRequestBody();
-$customPrompt = new Prompt();
+$customPrompt = new MediaPrompt();
 $customPrompt->set@odatatype('#microsoft.graph.mediaPrompt');
 
-$additionalData = [
-		'mediaInfo' => $customPrompt = new MediaInfo();
-$		customPrompt->set@odatatype('#microsoft.graph.mediaInfo');
+$customPromptMediaInfo = new MediaInfo();
+$customPromptMediaInfo->set@odatatype('#microsoft.graph.mediaInfo');
 
-$		customPrompt->setUri('https://bot.contoso.com/onHold.wav');
-
-
-$customPrompt->setMediaInfo($mediaInfo);
-
-];
-$customPrompt->setAdditionalData($additionalData);
+$customPromptMediaInfo->setUri('https://bot.contoso.com/onHold.wav');
 
 
+$customPrompt->setMediaInfo($customPromptMediaInfo);
 
 $requestBody->setCustomPrompt($customPrompt);
 $requestBody->setClientContext('d45324c1-fcb5-430a-902c-f20af696537c');

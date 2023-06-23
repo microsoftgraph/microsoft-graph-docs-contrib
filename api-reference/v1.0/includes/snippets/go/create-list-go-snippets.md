@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewList()
@@ -34,7 +34,6 @@ columnDefinition1.SetNumber(number)
 columns := []graphmodels.ColumnDefinitionable {
 	columnDefinition,
 	columnDefinition1,
-
 }
 requestBody.SetColumns(columns)
 list := graphmodels.NewListInfo()

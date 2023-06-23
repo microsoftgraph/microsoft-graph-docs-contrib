@@ -12,12 +12,13 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewExtension()
+extensionName := "Com.Contoso.Referral"
+requestBody.SetExtensionName(&extensionName) 
 additionalData := map[string]interface{}{
-	"extensionName" : "Com.Contoso.Referral", 
 	"companyName" : "Wingtip Toys", 
 	"dealValue" : int32(500050) , 
 	"expirationDate" : "2015-12-03T10:00:00.000Z", 

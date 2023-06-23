@@ -9,21 +9,21 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/InformationProtection/Policy/Labels/EvaluateApplication"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/informationprotection"
+	  graphinformationprotection "github.com/microsoftgraph/msgraph-beta-sdk-go/informationprotection"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphconfig.InformationProtectionPolicyLabelsEvaluateApplicationRequestBuilderPostRequestConfiguration{
+configuration := &graphinformationprotection.InformationProtectionPolicyLabelsEvaluateApplicationRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewEvaluateApplicationPostRequestBody()
+requestBody := graphinformationprotection.NewEvaluateApplicationPostRequestBody()
 contentInfo := graphmodels.NewContentInfo()
 format := graphmodels.DEFAULT_CONTENTFORMAT 
 contentInfo.SetFormat(&format) 
@@ -77,7 +77,6 @@ metadata := []graphmodels.KeyValuePairable {
 	keyValuePair4,
 	keyValuePair5,
 	keyValuePair6,
-
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
