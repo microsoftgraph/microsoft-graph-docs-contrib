@@ -128,6 +128,11 @@ Content-Type: application/json
       "softwareOneTimePasscode"
     ],
     "defaultMfaMethod": "microsoftAuthenticatorPush",
+    "isSystemPreferredAuthenticationMethodEnabled": true,
+    "systemPreferredAuthenticationMethods": [                
+      "push"
+    ],
+    "userPreferredMethodForSecondaryAuthentication": "push",    
     "userType": "member"
   }
 }
