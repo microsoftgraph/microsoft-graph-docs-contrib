@@ -456,7 +456,7 @@ items:
                 href: tutorial-riskdetection-api.md
           - name: Governance
             items:
-              - name: Automate lifecycle of users (preview)
+              - name: Automate lifecycle of users
                 displayName: LCW, Lifecycle Workflows
                 items:
                   - name: Configure task arguments
