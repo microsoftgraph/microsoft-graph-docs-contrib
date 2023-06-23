@@ -51,10 +51,7 @@ Here is an example of how to call this API.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "delete-drive-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "checkout-item", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "permanentDelete-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST /drives/{drive-id}/items/{item-id}/permanentDelete
