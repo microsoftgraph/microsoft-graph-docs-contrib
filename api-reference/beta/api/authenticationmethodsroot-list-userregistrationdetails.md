@@ -129,7 +129,12 @@ Content-Type: application/json
         "microsoftAuthenticatorPush",
         "softwareOneTimePasscode"
       ],
-      "defaultMethod": "microsoftAuthenticatorPush",
+      "defaultMfaMethod": "microsoftAuthenticatorPush",
+      "isSystemPreferredAuthenticationMethodEnabled": true,
+      "systemPreferredAuthenticationMethods": [                
+        "push"
+      ],
+      "userPreferredMethodForSecondaryAuthentication": "push",       
       "userType": "member"
     },
     {
@@ -145,7 +150,10 @@ Content-Type: application/json
       "isPasswordlessCapable": false,
       "lastUpdatedDateTime": "2023-03-13T19:15:41.6195833Z",
       "methodsRegistered": [],
-      "defaultMethod": "",
+      "defaultMfaMethod": "",
+      "isSystemPreferredAuthenticationMethodEnabled": true,
+      "systemPreferredAuthenticationMethods": [],
+      "userPreferredMethodForSecondaryAuthentication": "",      
       "userType": "guest"
     },
     {
@@ -165,7 +173,12 @@ Content-Type: application/json
         "microsoftAuthenticatorPush",
         "softwareOneTimePasscode"
       ],
-      "defaultMethod": "mobilePhone",
+      "defaultMfaMethod": "mobilePhone",
+      "isSystemPreferredAuthenticationMethodEnabled": true,
+      "systemPreferredAuthenticationMethods": [                
+        "push"
+      ],
+      "userPreferredMethodForSecondaryAuthentication": "voiceMobile",      
       "userType": "member"
     }
   ]
