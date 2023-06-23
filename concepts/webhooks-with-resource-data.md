@@ -6,12 +6,12 @@ ms.author: ombongifaith
 ms.reviewer: keylimesoda
 ms.prod: "change-notifications"
 ms.localizationpriority: high
-ms.date: 06/12/2023
+ms.date: 06/23/2023
 ---
 
 # Set up change notifications that include resource data
 
-Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications. Change notifications that include the resource change data are called rich notifications. Your app can use rich notifications to run your business logic without having to make a separate API call to fetch the changed resource.
+Microsoft Graph allows apps to subscribe to and receive change notifications for resources through [different delivery channels](./webhooks.md#receiving-change-notifications). You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications. Change notifications that include the resource change data are called rich notifications. Your app can use rich notifications to run your business logic without having to make a separate API call to fetch the changed resource.
 
 This article will guide you through the process for setting up rich notifications in your application.
 
@@ -192,6 +192,7 @@ The following is an example of the properties included in the JWT token that are
 
 ### Example: Verifying validation tokens
 
+# [C#](#tab/csharp)
 ```csharp
 // add Microsoft.IdentityModel.Protocols.OpenIdConnect and System.IdentityModel.Tokens.Jwt nuget packages to your project
 public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable<string> appIds)
@@ -221,6 +222,7 @@ public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable
 }
 ```
 
+# [Java](#tab/java)
 ```java
 private boolean IsValidationTokenValid(String[] appIds, String tenantId, String serializedToken) {
     try {
@@ -242,39 +244,6 @@ private boolean IsValidationTokenValid(String[] appIds, String tenantId, String 
         LOGGER.error(e.getMessage());
         return false;
     }
-}
-```
-```JavaScript
-import jwt from 'jsonwebtoken';
-import jkwsClient from 'jwks-rsa';
-
-const client = jkwsClient({
-  jwksUri: 'https://login.microsoftonline.com/common/discovery/v2.0/keys'
-});
-
-export function getKey(header, callback) {
-  client.getSigningKey(header.kid, (err, key) => {
-    var signingKey = key.publicKey || key.rsaPublicKey;
-    callback(null, signingKey);
-  });
-}
-
-export function isTokenValid(token, appId, tenantId) {
-  return new Promise((resolve) => {
-    const options = {
-      audience: [appId],
-      issuer: [`https://sts.windows.net/${tenantId}/`]
-    };
-    jwt.verify(token, getKey, options, (err) => {
-      if (err) {
-        // eslint-disable-next-line no-console
-        console.error(err);
-        resolve(false);
-      } else {
-        resolve(true);
-      }
-    });
-  });
 }
 ```
 
@@ -312,6 +281,43 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
     }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+```JavaScript
+import jwt from 'jsonwebtoken';
+import jkwsClient from 'jwks-rsa';
+
+const client = jkwsClient({
+  jwksUri: 'https://login.microsoftonline.com/common/discovery/v2.0/keys'
+});
+
+export function getKey(header, callback) {
+  client.getSigningKey(header.kid, (err, key) => {
+    var signingKey = key.publicKey || key.rsaPublicKey;
+    callback(null, signingKey);
+  });
+}
+
+export function isTokenValid(token, appId, tenantId) {
+  return new Promise((resolve) => {
+    const options = {
+      audience: [appId],
+      issuer: [`https://sts.windows.net/${tenantId}/`]
+    };
+    jwt.verify(token, getKey, options, (err) => {
+      if (err) {
+        // eslint-disable-next-line no-console
+        console.error(err);
+        resolve(false);
+      } else {
+        resolve(true);
+      }
+    });
+  });
+}
+```
+
+---
 
 ## Decrypting resource data from change notifications
 
@@ -430,6 +436,7 @@ This section contains some useful code snippets that use C# and .NET for each st
 
 #### Decrypt the symmetric key
 
+# [C#](#tab/csharp)
 ```csharp
 // Initialize with the private key that matches the encryptionCertificateId.
 RSACryptoServiceProvider rsaProvider = ...;        
@@ -441,6 +448,7 @@ byte[] decryptedSymmetricKey = rsaProvider.Decrypt(encryptedSymmetricKey, fOAEP:
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
 
+# [Java](#tab/java)
 ```Java
 String storename = ""; //name/path of the jks store
 String storepass = ""; //password used to open the jks store
@@ -455,6 +463,7 @@ byte[] decryptedSymmetricKey = cipher.doFinal(encryptedSymetricKey);
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
 
+# [JavaScript](#tab/javascript)
 ```JavaScript
 const base64encodedKey = 'base 64 encoded dataKey value';
 const asymetricPrivateKey = 'pem encoded private key';
@@ -463,8 +472,11 @@ const decryptedSymetricKey = crypto.privateDecrypt(asymetricPrivateKey, decodedK
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
 
+----
+
 #### Compare data signature using HMAC-SHA256
 
+# [C#](#tab/csharp)
 ```csharp
 byte[] decryptedSymmetricKey = <the aes key decrypted in the previous step>;
 byte[] encryptedPayload = <the value from the data property, still encrypted>;
@@ -485,6 +497,7 @@ else
 }
 ```
 
+# [Java](#tab/java)
 ```Java
 byte[] decryptedSymmetricKey = "<the aes key decrypted in the previous step>";
 byte[] decodedEncryptedData = Base64.decodeBase64("data property from encryptedContent object");
@@ -503,6 +516,7 @@ else
 }
 ```
 
+# [JavaScript](#tab/javascript)
 ```JavaScript
 const decryptedSymetricKey = []; //Buffer provided by previous step
 const base64encodedSignature = 'base64 encodded value from the dataSignature property';
@@ -518,8 +532,11 @@ else
 }
 ```
 
+----
+
 #### Decrypt the resource data content
 
+# [C#](#tab/csharp)
 ```csharp
 AesCryptoServiceProvider aesProvider = new AesCryptoServiceProvider();
 aesProvider.Key = decryptedSymmetricKey;
@@ -553,6 +570,8 @@ using (var decryptor = aesProvider.CreateDecryptor())
 // decryptedResourceData now contains a JSON string that represents the resource.
 ```
 
+# [Java](#tab/java)
+
 ```Java
 SecretKey skey = new SecretKeySpec(decryptedSymmetricKey, "AES");
 IvParameterSpec ivspec = new IvParameterSpec(Arrays.copyOf(decryptedSymmetricKey, 16));
@@ -560,6 +579,8 @@ Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
 cipher.init(Cipher.DECRYPT_MODE, skey, ivspec);
 String decryptedResourceData = new String(cipher.doFinal(Base64.decodeBase64(encryptedData)));
 ```
+
+# [JavaScript](#tab/javascript)
 ```JavaScript
 const base64encodedPayload = 'base64 encoded value from data property';
 const decryptedSymetricKey = []; //Buffer provided by previous step
@@ -569,6 +590,8 @@ const decipher = crypto.createDecipheriv('aes-256-cbc', decryptedSymetricKey, iv
 let decryptedPayload = decipher.update(base64encodedPayload, 'base64', 'utf8');
 decryptedPayload += decipher.final('utf8');
 ```
+
+---
 
 ## See also
 
