@@ -17,7 +17,7 @@ Get a collection of [bookingBusiness](../resources/bookingbusiness.md) objects t
 
 This operation returns only the **id** and **displayName** of each Microsoft Bookings business in the collection. For performance considerations, it does not return other properties. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness-get.md) operation.
 
-You can also query for Bookings businesses by specifying a string in a `query` parameter to do substring matching among the businesses of a tenant. For details, see [Example 2](#example-2).
+You can also query for Bookings businesses by specifying a string in a `query` parameter to do substring matching among the businesses of a tenant. For details, see [Example 2](#example-2-query-parameter).
 
 > **Note:** Results are limited to 500 mailboxes. Pagination of the results is not currently supported.
 
@@ -51,7 +51,11 @@ This method also supports the `query` parameter which accepts a string value. Th
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [bookingBusiness](../resources/bookingbusiness.md) objects in the response body.
+
 ## Examples
+
+### Example 1: Get the Bookings buinsesses in a tenant
+
 #### Request 
 The following example gets the Bookings businesses in a tenant.
 
@@ -120,6 +124,8 @@ Content-type: application/json
     ]
 }
 ```
+
+### Example 2: Query parameter
 
 #### Request
 
