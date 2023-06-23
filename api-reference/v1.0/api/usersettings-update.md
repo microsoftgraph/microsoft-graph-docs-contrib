@@ -88,7 +88,7 @@ Here is an example of the response. Note: The response object shown here might b
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.users.settings"
+  "@odata.type": "microsoft.graph.userSettings"
 } -->
 ```http
 HTTP/1.1 200 OK
