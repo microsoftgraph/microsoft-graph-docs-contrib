@@ -65,6 +65,8 @@ If successful, this method returns a `200 OK` response code and an updated [ente
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_apps_enterprisecodesigningcertificate_update_update_enterprisecodesigningcertificate" }-->
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSigningCertificateId}
 Content-type: application/json
@@ -85,6 +87,8 @@ Content-length: 390
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.enterpriseCodeSigningCertificate" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
