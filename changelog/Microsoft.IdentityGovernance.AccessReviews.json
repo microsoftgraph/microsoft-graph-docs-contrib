@@ -1235,6 +1235,24 @@
       "CreatedDateTime": "2023-06-16T08:30:40.3980156Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "540953ee-b8ed-4ca1-86f7-7251e1111546",
+          "ApiChange": "Resource",
+          "ChangedApiName": "insights",
+          "ChangeType": "Addition",
+          "Description": "Added the **insights** relationship to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        }
+      ],
+      "Id": "540953ee-b8ed-4ca1-86f7-7251e1111546",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-06-23T06:15:25.4858496Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     }
   ]
 }
