@@ -172,7 +172,7 @@ The request body includes the following for that multi-value extended property:
 - **value** which specifies `Recreation` as an array of 3 string values, `["Food", "Hiking", "Swimming"]`.
 
 
-<!-- { "blockType": "ignored", "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties" } -->
+<!-- { "blockType": "request", "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties" } -->
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/events
