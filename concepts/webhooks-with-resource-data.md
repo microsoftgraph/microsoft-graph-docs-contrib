@@ -110,22 +110,16 @@ In the following example, the change notification contains two items for the sam
 ```json
 {
     "value": [
-          {
+        {
             "subscriptionId": "76619225-ff6b-4489-96ca-4ef547e78b22",
-      "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
+            "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
             "changeType": "created",
             ...
-          },
-      {
-            "subscriptionId": "e990d58f-fd93-40af-acf7-a7c907c5d8ea",
-      "tenantId": "46d9e3bd-6309-4177-a016-b256a411e30f",
-            "changeType": "created",
-            ...
-            }
+        }
     ],
     "validationTokens": [
         "eyJ0eXAiOiJKV1QiLCJhb...",
-    "cGlkYWNyIjoiMiIsImlkc..."
+        "cGlkYWNyIjoiMiIsImlkc..."
     ]
 }
 ```
