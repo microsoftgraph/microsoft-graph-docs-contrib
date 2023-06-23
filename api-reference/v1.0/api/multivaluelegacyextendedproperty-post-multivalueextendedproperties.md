@@ -220,12 +220,14 @@ Content-Type: application/json
 #### Response
 
 <!-- {
-  "blockType": "response",
-  "@odata.type": "Edm.String"
+  "blockType": "response"  
 } -->
 
 ```http
   HTTP/1.1 200 OK
+```
+
+<!--
   Content-type: application/json
   {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('4d29052a-70e8-4251-a7de-542b522cdf25')/events/$entity",
@@ -320,6 +322,7 @@ Content-Type: application/json
     
   }
 ```
+-->
 
 A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event
 in the response body, similar to the response from [creating just an event](../api/user-post-events.md).
