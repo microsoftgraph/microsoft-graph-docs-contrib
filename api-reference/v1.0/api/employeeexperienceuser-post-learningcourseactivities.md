@@ -82,10 +82,8 @@ If successful, this method returns a `201 Created` response code and a [learning
 The following example shows how to create a [learningAssignment](../resources/learningassignment.md) activity.
 
 #### Request
-
 The following example shows the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_assigned_learning_courseactivity"
@@ -164,7 +162,6 @@ The following example creates a [learningSelfInitiated](../resources/learningsel
 
 The following example shows the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_selfinitiated_learning_courseactivity"

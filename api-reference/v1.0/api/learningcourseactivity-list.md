@@ -69,7 +69,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request to retrieve all the course activities for a given user.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_learningcourseactivity"

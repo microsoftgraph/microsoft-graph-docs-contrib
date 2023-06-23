@@ -79,7 +79,6 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_assigned_learning_courseactivity"
@@ -132,7 +131,6 @@ HTTP/1.1 204 No Content
 
 The following example shows the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_selfinitiated_learning_courseactivity"

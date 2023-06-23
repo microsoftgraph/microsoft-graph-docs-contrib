@@ -86,7 +86,6 @@ If successful, this method returns a `200 OK` response code and a [learningCours
 
 The following examples shows a request to get an learning course activity using an ID.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_learning_courseactivity_details_id"
@@ -192,7 +191,6 @@ Content-Type: application/json
 
 The following example shows a request to get the details of a learning course activity for a user.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_learning_courseactivity_details"
