@@ -234,7 +234,6 @@ Content-length: 631
         }
     ]
 }
-
 ```
 
 #### Response
