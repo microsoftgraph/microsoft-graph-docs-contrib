@@ -50,7 +50,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ### Teamwork and communications | Calls and online meetings
 - Identify the reasons for shared content or video from an [online meeting](/graph/api/resources/onlineMeeting) [participant](/graph/api/resources/meetingparticipants) being [restricted](/graph/api/resources/onlineMeetingRestricted).
-- [Get a join web URL](/graph/api/virtualappointment-getvirtualappointmentjoinweburl) for a [Microsoft Virtual Appointment](/microsoft-365/frontline/virtual-appointments?view=o365-worldwide). This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms. 
+- [Get a join web URL](/graph/api/virtualappointment-getvirtualappointmentjoinweburl) for a [Microsoft Virtual Appointment](/microsoft-365/frontline/virtual-appointments). This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms. 
 
 
 ## May 2023: New in preview only
