@@ -103,16 +103,3 @@ Content-Type: application/json
     "id": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs"
 }
 ```
-
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Update taskList",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    ""
-  ]
-}
--->
