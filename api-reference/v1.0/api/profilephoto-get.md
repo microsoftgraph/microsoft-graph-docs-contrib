@@ -134,7 +134,8 @@ If successful, this method returns a `200 OK` response code and [profilePhoto](.
 ### Example 1: Get the photo for the signed-in user in the largest available size
 #### Request
 <!-- {
-  "blockType": "ignored"
+  "blockType": "ignored",
+  "name": "get_photo_value"
 }-->
 
 ```http
@@ -144,11 +145,18 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 #### Response
 Contains the binary data of the requested photo. The HTTP response code is 200.
 
+<!-- {
+  "blockType": "response"
+}-->
+
+```http
+HTTP/1.1 200 OK
+```
+
 ### Example 2: Get the 48x48 photo for the signed-in user
 #### Request
 <!-- {
-  "blockType": "request",
-  "name": "getphotovalue"
+  "blockType": "ignored"
 }-->
 
 ```http
@@ -158,13 +166,6 @@ Content-Type: image/jpg
 
 #### Response
 Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
-
-<!-- {
-  "blockType": "response"
--->
-```http
-HTTP/1.1 200 OK
-```
 
 ### Example 3: Get the metadata of the user photo of the signed-in user
 #### Request
@@ -182,7 +183,7 @@ The following response data shows the photo metadata.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored"
 }-->
 
 ```http
