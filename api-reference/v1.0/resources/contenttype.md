@@ -1,7 +1,7 @@
 ---
-author: daspek
-description: "The contentType resource represents a content type in SharePoint."
-title: contentType resource type
+author: "daspek"
+description: "Represents a content type in SharePoint."
+title: "contentType resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
@@ -10,9 +10,7 @@ ms.prod: "sites-and-lists"
 
 Namespace: microsoft.graph
 
-
-Represents a content type in SharePoint.
-Content types allow you to define a set of columns that must be present on every [**listItem**][listItem] in a [**list**][list].
+Represents a content type in SharePoint. Content types allow you to define a set of columns that must be present on every [**listItem**][listItem] in a [**list**][list].
 
 ## Methods
 |Method|Return type|Description|
@@ -95,16 +93,16 @@ The following is a JSON representation of a **contentType** resource.
   "documentSet" : { "@type": "microsoft.graph.documentSet" },
   "documentTemplate" : { "@type": "microsoft.graph.documentSetContent" },
   "group": "string",
-  "hidden": false,
+  "hidden": "Boolean",
   "id": "string",
   "inheritedFrom": { "@type": "microsoft.graph.itemReference" },
-  "isBuiltIn" : false,
+  "isBuiltIn" : "Boolean",
   "name": "string",
   "order": { "@type": "microsoft.graph.contentTypeOrder" },
   "parentId": "string",
-  "propagateChanges" : false,
-  "readOnly": false,
-  "sealed": false
+  "propagateChanges" : "Boolean",
+  "readOnly": "Boolean",
+  "sealed": "Boolean"
 }
 ```
 
