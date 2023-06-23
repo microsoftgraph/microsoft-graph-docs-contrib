@@ -77,7 +77,6 @@ metadata := []graphmodelssecurity.KeyValuePairable {
 	keyValuePair4,
 	keyValuePair5,
 	keyValuePair6,
-
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{

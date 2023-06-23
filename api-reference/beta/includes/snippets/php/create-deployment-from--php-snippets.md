@@ -12,29 +12,23 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new Deployment();
 $requestBody->set@odatatype('#microsoft.graph.windowsUpdates.deployment');
 
-$content = new DeployableContent();
+$content = new CatalogContent();
 $content->set@odatatype('#microsoft.graph.windowsUpdates.catalogContent');
 
-$additionalData = [
-		'catalogEntry' => $content = new CatalogEntry();
-$		content->set@odatatype('#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry');
+$contentCatalogEntry = new FeatureUpdateCatalogEntry();
+$contentCatalogEntry->set@odatatype('#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry');
 
-$		content->setId('f341705b-0b15-4ce3-aaf2-6a1681d78606');
-
-
-$content->setCatalogEntry($catalogEntry);
-
-];
-$content->setAdditionalData($additionalData);
+$contentCatalogEntry->setId('f341705b-0b15-4ce3-aaf2-6a1681d78606');
 
 
+$content->setCatalogEntry($contentCatalogEntry);
 
 $requestBody->setContent($content);
 $settings = new DeploymentSettings();
 $settings->set@odatatype('microsoft.graph.windowsUpdates.deploymentSettings');
 
 $settingsSchedule = new ScheduleSettings();
-$settingsScheduleGradualRollout = new GradualRolloutSettings();
+$settingsScheduleGradualRollout = new RateDrivenRolloutSettings();
 $settingsScheduleGradualRollout->set@odatatype('#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings');
 
 $settingsScheduleGradualRollout->setDurationBetweenOffers(new \DateInterval('P7D'));

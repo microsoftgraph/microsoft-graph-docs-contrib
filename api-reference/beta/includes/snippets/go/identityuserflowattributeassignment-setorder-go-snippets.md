@@ -21,7 +21,6 @@ newAssignmentOrder := graphmodels.NewAssignmentOrder()
 order := []string {
 	"City",
 	"extension_GUID_ShoeSize",
-
 }
 newAssignmentOrder.SetOrder(order)
 requestBody.SetNewAssignmentOrder(newAssignmentOrder)

@@ -13004,6 +13004,49 @@ items:
                 href: api/policyroot-list-rolemanagementpolicyassignments.md
               - name: Get
                 href: api/unifiedrolemanagementpolicyassignment-get.md
+            - name: Role management alerts
+              items:
+              - name: Alerts
+                href: resources/unifiedrolemanagementalert.md
+                items:
+                - name: List
+                  href: api/rolemanagementalert-list-alerts.md
+                - name: Get
+                  href: api/unifiedrolemanagementalert-get.md
+                - name: Update
+                  href: api/unifiedrolemanagementalert-update.md
+                - name: Refresh
+                  href: api/unifiedrolemanagementalert-refresh.md
+              - name: Alert definitions
+                href: resources/unifiedrolemanagementalertdefinition.md
+                items:
+                - name: List
+                  href: api/rolemanagementalert-list-alertdefinitions.md
+                - name: Get
+                  href: api/unifiedrolemanagementalertdefinition-get.md
+              - name: Alert configurations
+                href: resources/unifiedrolemanagementalertconfiguration.md
+                items:
+                - name: List
+                  href: api/rolemanagementalert-list-alertconfigurations.md
+                - name: Get
+                  href: api/unifiedrolemanagementalertconfiguration-get.md
+                - name: Update
+                  href: api/unifiedrolemanagementalertconfiguration-update.md
+              - name: Alert incidents
+                href: resources/unifiedrolemanagementalertincident.md
+                items:
+                - name: List
+                  href: api/unifiedrolemanagementalert-list-alertincidents.md
+                - name: Get
+                  href: api/unifiedrolemanagementalertincident-get.md
+                - name: Remediate
+                  href: api/unifiedrolemanagementalertincident-remediate.md
+              - name: Long running operations
+                href: resources/longrunningoperation.md
+                items:
+                - name: Get
+                  href: api/longrunningoperation-get.md
           - name: PIM for Groups
             href: resources/privilegedidentitymanagement-for-groups-api-overview.md
             items:
