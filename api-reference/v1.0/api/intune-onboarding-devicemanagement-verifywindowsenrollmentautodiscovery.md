@@ -57,7 +57,7 @@ If successful, this function returns a `200 OK` response code and a Boolean in t
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "intune_onboarding_devicemanagement_verifywindowsenrollmentautodiscovery_verifywindowsenrollmentautodiscovery_function" }-->
+<!-- { "blockType": "ignored" , "name" : "intune_onboarding_devicemanagement_verifywindowsenrollmentautodiscovery_verifywindowsenrollmentautodiscovery_function" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/verifyWindowsEnrollmentAutoDiscovery(domainName='parameterValue')
 ```
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/verifyWindowsEnrollmentAut
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-<!-- { "blockType": "response" , "@odata.type" : "Edm.String" }-->
+<!-- { "blockType": "response" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
