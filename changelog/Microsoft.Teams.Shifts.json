@@ -221,7 +221,7 @@
           "ApiChange": "Header",
           "ChangedApiName": "offerShiftRequest",
           "ChangeType": "Addition",
-          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-beta) resource.",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-1.0) resource.",
           "Target": "offerShiftRequest"
         },
         {
@@ -229,7 +229,7 @@
           "ApiChange": "Header",
           "ChangedApiName": "openShift",
           "ChangeType": "Addition",
-          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openshift?view=graph-rest-beta) resource.",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openshift?view=graph-rest-1.0) resource.",
           "Target": "openShift"
         },
         {
@@ -237,7 +237,7 @@
           "ApiChange": "Header",
           "ChangedApiName": "openShiftChangeRequest",
           "ChangeType": "Addition",
-          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-beta) resource.",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-1.0) resource.",
           "Target": "openShiftChangeRequest"
         },
         {
@@ -245,7 +245,7 @@
           "ApiChange": "Header",
           "ChangedApiName": "schedule",
           "ChangeType": "Addition",
-          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-1.0) resource.",
           "Target": "schedule"
         },
         {
@@ -253,7 +253,7 @@
           "ApiChange": "Header",
           "ChangedApiName": "schedulingGroup",
           "ChangeType": "Addition",
-          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulinggroup?view=graph-rest-beta) resource.",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulinggroup?view=graph-rest-1.0) resource.",
           "Target": "schedulingGroup"
         },
         {
@@ -261,7 +261,7 @@
           "ApiChange": "Header",
           "ChangedApiName": "shift",
           "ChangeType": "Addition",
-          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta) resource.",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-1.0) resource.",
           "Target": "shift"
         },
         {
@@ -269,7 +269,7 @@
           "ApiChange": "Header",
           "ChangedApiName": "shiftPreferences",
           "ChangeType": "Addition",
-          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [shiftPreferences](https://learn.microsoft.com/en-us/graph/api/resources/shiftpreferences?view=graph-rest-beta) resource.",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [shiftPreferences](https://learn.microsoft.com/en-us/graph/api/resources/shiftpreferences?view=graph-rest-1.0) resource.",
           "Target": "shiftPreferences"
         },
         {
@@ -277,7 +277,7 @@
           "ApiChange": "Header",
           "ChangedApiName": "swapShiftsChangeRequest",
           "ChangeType": "Addition",
-          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta) resource.",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0) resource.",
           "Target": "swapShiftsChangeRequest"
         },
         {
@@ -285,7 +285,7 @@
           "ApiChange": "Header",
           "ChangedApiName": "timeOff",
           "ChangeType": "Addition",
-          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeoff?view=graph-rest-beta) resource.",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeoff?view=graph-rest-1.0) resource.",
           "Target": "timeOff"
         },
         {
@@ -293,7 +293,7 @@
           "ApiChange": "Header",
           "ChangedApiName": "timeOffReason",
           "ChangeType": "Addition",
-          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeoffreason?view=graph-rest-beta) resource.",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeoffreason?view=graph-rest-1.0) resource.",
           "Target": "timeOffReason"
         },
         {
@@ -301,7 +301,7 @@
           "ApiChange": "Header",
           "ChangedApiName": "timeOffRequest",
           "ChangeType": "Addition",
-          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta) resource.",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-1.0) resource.",
           "Target": "timeOffRequest"
         },
         {
@@ -309,7 +309,7 @@
           "ApiChange": "Header",
           "ChangedApiName": "workforceIntegration",
           "ChangeType": "Addition",
-          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [workforceIntegration](https://learn.microsoft.com/en-us/graph/api/resources/workforceintegration?view=graph-rest-beta) resource.",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [workforceIntegration](https://learn.microsoft.com/en-us/graph/api/resources/workforceintegration?view=graph-rest-1.0) resource.",
           "Target": "workforceIntegration"
         }
       ],
