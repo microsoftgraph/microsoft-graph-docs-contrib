@@ -1,5 +1,5 @@
 ---
-title: "Update settings"
+title: "Update userSettings"
 description: "Update the properties of the settings object. "
 author: "yyuank"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# Update settings
+# Update userSettings
 
 Namespace: microsoft.graph
 
