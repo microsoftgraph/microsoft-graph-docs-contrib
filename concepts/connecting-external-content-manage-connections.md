@@ -74,7 +74,7 @@ To enable one or more content experiences, set the value of the **enabledContent
 
 | enabledContentExperiences value | Description |
 |-|-|
-| search | Allows your content to appear in Microsoft search results. The format of these results is consistent across different search canvases, such as SharePoint and Microsoft Bing. |
+| search | Allows your content to appear in Microsoft search results. The format of these results is consistent across different search canvases, such as SharePoint and Microsoft Bing. Your content will also appear in the Quick Access & My Content sections of the [M365 App](Office.com) if you send [activities](./graph/api/externalconnectors-externalitem-addactivities) and register [activity settings](./graph/api/resources/externalconnectors-activitysettings).  |
 | compliance | Allows your content to be visible to the Microsoft Purview advanced eDiscovery solution. For details about advanced eDiscovery solution & licensing requirements, see [Microsoft Purview solutions](/microsoft-365/compliance/ediscovery).|
 
 The following example shows how to update a connection to enable both the search and compliance content experiences.
@@ -114,7 +114,7 @@ Note that the following limitations apply to Adaptive Cards in the eDiscovery re
 ### Activity settings
 In activity settings, you can provide a way for Microsoft 365 apps to detect **share activity**, which will enable your content to be recommended to users who interact with that content the most. The way to do this is to add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase), which will allow a given URL detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem). 
 
-The following image shows how your item might appear within recommendation experiences across the Microsoft 365 suite. 
+The following image shows how your item might appear within recommendation experiences across Microsoft 365.
 
 ![Screenshot of a recommended item with share activity](./images/connectors-images/share-activity-recommendation-example.png)
 
