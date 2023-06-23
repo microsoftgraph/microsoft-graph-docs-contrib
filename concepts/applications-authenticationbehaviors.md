@@ -7,7 +7,7 @@ ms.reviewer: medhir
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.date: 23/06/2023
+ms.date: 06/23/2023
 ---
 
 # Manage application authenticationBehaviors to prevent use of email claims for user identification or authorization
@@ -25,7 +25,7 @@ This article provides guidance to use authentication behaviors in order to migra
 
 The authenticationBehaviors property of the application object allows you to configure breaking-change behaviors related to token issuance. Applications can adopt new breaking changes by enabling a behavior (set the behavior to `true`), or continue using pre-existing behavior by disabling it (by setting the behavior to `false`).
 
-Today, the default behavior is to remove email addresses with unverified domain owners in claims, except for single-tenant apps and for multi-tenant apps with previous sign-in activity with unverified emails. If your app falls into either of these exceptions and you wish to to remove unverified email addresses, set the **removeUnverifiedEmailClaim** property of [authenticationBehaviors](/graph/api/resources/authenticationbehaviors.md) to `true` as follows. The request returns a `204 No Content` response code.  
+Today, the default behavior is to remove email addresses with unverified domain owners in claims, except for single-tenant apps and for multi-tenant apps with previous sign-in activity with unverified emails. If your app falls into either of these exceptions and you wish to to remove unverified email addresses, set the **removeUnverifiedEmailClaim** property of [authenticationBehaviors](/graph/api/resources/authenticationbehaviors) to `true` as follows. The request returns a `204 No Content` response code.  
 
 ### Remove email addresses with unverified domain owners from claims
 
