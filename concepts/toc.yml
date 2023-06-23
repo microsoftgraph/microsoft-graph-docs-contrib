@@ -137,6 +137,8 @@ items:
               href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
             - name: Generate proof of possession tokens for rolling keys
               href: application-rollkey-prooftoken.md
+            - name: Migrate off email-based authorization
+              href: applications-authenticationbehaviors.md
           - name: Synchronization
             items:
             - name: Synchronize custom target attributes
