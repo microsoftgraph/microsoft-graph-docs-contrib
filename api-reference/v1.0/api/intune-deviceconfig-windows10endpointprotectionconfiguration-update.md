@@ -205,7 +205,7 @@ Content-length: 4245
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-<!-- { "blockType": "response" , "@odata.type" : "Edm.String" }-->
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windows10EndpointProtectionConfiguration" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
