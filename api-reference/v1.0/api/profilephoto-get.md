@@ -147,7 +147,8 @@ Contains the binary data of the requested photo. The HTTP response code is 200.
 ### Example 2: Get the 48x48 photo for the signed-in user
 #### Request
 <!-- {
-  "blockType": "ignored"
+  "blockType": "request",
+  "name": "getphotovalue"
 }-->
 
 ```http
@@ -158,10 +159,18 @@ Content-Type: image/jpg
 #### Response
 Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
 
+<!-- {
+  "blockType": "response"
+-->
+```http
+HTTP/1.1 200 OK
+```
+
 ### Example 3: Get the metadata of the user photo of the signed-in user
 #### Request
 <!-- {
-  "blockType": "ignored"
+  "blockType": "request",
+  "name": "megetphoto"
 }-->
 
 ```http
@@ -174,7 +183,8 @@ The following response data shows the photo metadata.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response",
+  "@odata.type": "Edm.String"
 }-->
 
 ```http
