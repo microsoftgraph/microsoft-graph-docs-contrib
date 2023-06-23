@@ -110,7 +110,7 @@ The following is an example of the response.
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.userActivity"
+    "@odata.type": "Edm.String"
 } -->
 
 ```http
@@ -169,7 +169,7 @@ The following is an example of the request.
 
 <!-- {
     "blockType": "ignored",
-    "name": "upsert_activity"
+    "name": "upsert_activity2"
 } -->
 
 ```http
@@ -227,7 +227,7 @@ The following is an example of the response.
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.userActivity"
+    "@odata.type": "Edm.String"
 } -->
 
 ```http
