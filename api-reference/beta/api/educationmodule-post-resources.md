@@ -79,17 +79,15 @@ The following is an example of the request.
   "name": "create_educationlinkresource_from_educationmodule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/modules/ba8e4215-4fb2-4dba-abe7-a8f2585177d3/resources
+POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/ba8e4215-4fb2-4dba-abe7-a8f2585177d3/resources
 Content-type: application/json
 
 {
-	"distributeForStudentWork": false,
-	"resource": {
-		"displayName": "Where the Wonders of Learning Never Cease | Wonderopolis",
-		"link": "https://wonderopolis.org/",
-		"thumbnailPreviewUrl": null,
-		"@odata.type": "#microsoft.graph.educationLinkResource"
-	}
+    "resource": {
+        "@odata.type": "microsoft.graph.educationLinkResource",
+        "displayName": "2023-06-24T17_13_22_819Z",
+        "link": "https://www.bing.com"
+    }
 }
 ```
 
