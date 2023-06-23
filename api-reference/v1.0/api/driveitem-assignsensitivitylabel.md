@@ -1,7 +1,7 @@
 ---
 title: "driveItem: assignSensitivityLabel"
 description: "Asynchronously assign a sensitivity label to a driveItem."
-author: "jaLuthra"
+author: "abhishek-microsoft-2021"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
@@ -9,8 +9,6 @@ doc_type: apiPageType
 
 # driveItem: assignSensitivityLabel
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Asynchronously assign a sensitivity label to a [driveItem][item-resource]. 
 
@@ -60,7 +58,7 @@ In the request body, provide the ID for the sensitivity label that is to be assi
 | Name                | Value        |Description          |
 |:--------------------|:-----------------------|:---------------------------------|
 | sensitivityLabelId  | String  | Required. ID of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
-| assignmentMethod    | [sensitivityLabelAssignmentMethod](/graph/api/resources/sensitivitylabelassignment?view=graph-rest-beta&preserve-view=true#sensitivitylabelassignmentmethod-values) | Optional. The assignment method of the label on the document. Indicates whether the assignment of the label was done automatically, standard, or as a privileged operation (the equivalent of an administrator operation).     |
+| assignmentMethod    | [sensitivityLabelAssignmentMethod](/graph/api/resources/sensitivitylabelassignment?view=graph-rest-1.0&preserve-view=true#sensitivitylabelassignmentmethod-values) | Optional. The assignment method of the label on the document. Indicates whether the assignment of the label was done automatically, standard, or as a privileged operation (the equivalent of an administrator operation).     |
 | justificationText   | String | Optional. Justification text for audit purposes. Required when downgrading/removing a label.  |
 
 ## Response
@@ -87,10 +85,9 @@ The following table lists the possible values for the error types.
 The following is an example of a request.
 
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "assignSensitivityLabel", "tags": "service.graph", "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U"] } -->
 ``` http
-POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivityLabel
+POST https://graph.microsoft.com/v1.0/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivityLabel
 Content-Type: application/json
 
 {
@@ -100,11 +97,6 @@ Content-Type: application/json
 }
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/assignsensitivitylabel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
