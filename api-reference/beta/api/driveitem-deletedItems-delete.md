@@ -61,31 +61,31 @@ POST /drives/{drive-id}/items/{item-id}/permanentDelete
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/checkout-item-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/permanentDelete-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/checkout-item-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/permanentDelete-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/checkout-item-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/permanentDelete-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/checkout-item-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/permanentDelete-item-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/checkout-item-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/permanentDelete-item-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/checkout-item-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/permanentDelete-item-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/checkout-item-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/permanentDelete-item-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
