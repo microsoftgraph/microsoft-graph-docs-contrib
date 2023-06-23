@@ -29,7 +29,7 @@ In general, this type of change notifications include the following resource dat
 
 ## Creating a subscription
 
-Rich notifications are setup in the same way as [basic change notifications](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&tabs=http).
+Rich notifications are setup in the same way as [basic change notifications](/graph/api/subscription-post-subscriptions).
 
 For security, Microsoft Graph will encrypt the resource data returned in a rich notification.  You must provide a public encryption key as part of creating the subscription. Details for creating and managing encryption keys are [here](#decrypting-resource-data-from-change-notifications)
 
