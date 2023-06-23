@@ -80,7 +80,6 @@ bookingReminder.SetAdditionalData(additionalData)
 
 defaultReminders := []graphmodels.BookingReminderable {
 	bookingReminder,
-
 }
 requestBody.SetDefaultReminders(defaultReminders)
 description := "Individual bento box lunch delivery"
@@ -116,7 +115,6 @@ requestBody.SetSchedulingPolicy(schedulingPolicy)
 staffMemberIds := []string {
 	"d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
 	"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880",
-
 }
 requestBody.SetStaffMemberIds(staffMemberIds)
 isAnonymousJoinEnabled := false

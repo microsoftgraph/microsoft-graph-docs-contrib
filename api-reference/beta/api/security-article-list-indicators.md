@@ -21,11 +21,11 @@ Get a list of [articleIndicator](../resources/security-articleindicator.md) obje
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ThreatIntelligence.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|ThreatIntelligence.Read.All|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | ThreatIntelligence.Read.All                 |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ThreatIntelligence.Read.All                 |
 
 ## HTTP request
 
@@ -33,7 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /security/threatIntelligence/articles/{articleId}/indicators
 ```
 
@@ -43,9 +44,9 @@ This method supports the `$count`, `$select`, `$top`, and `$skip` OData query pa
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -60,38 +61,47 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of a request.
+
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_articleindicator",
   "sampleKeys": ["a272d5ab"]
 }
 -->
-``` http
+
+```http
 GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/a272d5ab/indicators
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-articleindicator-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-articleindicator-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/list-articleindicator-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/list-articleindicator-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
+
 [!INCLUDE [sample-code](../includes/snippets/php/list-articleindicator-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
+
 [!INCLUDE [sample-code](../includes/snippets/python/list-articleindicator-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -100,14 +110,17 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/a272d5
 ### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.security.articleIndicator)"
 }
 -->
-``` json
+
+```json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -116,7 +129,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.articleIndicator",
       "id": "ZmFrZS1tYWxpY2lvdXMuc2l0ZQ==",
-      "source": "microsoftDefenderThreatIntelligence",
+      "source": "microsoft",
       "artifact": {
           "@odata.type": "#microsoft.graph.security.hostname",
           "id": "fake-malicious.site"

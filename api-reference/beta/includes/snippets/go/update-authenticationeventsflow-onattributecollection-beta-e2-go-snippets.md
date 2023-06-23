@@ -16,131 +16,126 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 
 
 requestBody := graphmodels.NewAuthenticationEventsFlow()
-additionalData := map[string]interface{}{
-onAttributeCollection := graphmodels.New()
-attributeCollectionPage := graphmodels.New()
-	customStringsFileId := null
+onAttributeCollection := graphmodels.NewOnAttributeCollectionExternalUsersSelfServiceSignUp()
+attributeCollectionPage := graphmodels.NewAuthenticationAttributeCollectionPage()
+customStringsFileId := null
 attributeCollectionPage.SetCustomStringsFileId(&customStringsFileId) 
 
 
- := graphmodels.New()
+authenticationAttributeCollectionPageViewConfiguration := graphmodels.NewAuthenticationAttributeCollectionPageViewConfiguration()
 title := null
-.SetTitle(&title) 
+authenticationAttributeCollectionPageViewConfiguration.SetTitle(&title) 
 description := null
-.SetDescription(&description) 
+authenticationAttributeCollectionPageViewConfiguration.SetDescription(&description) 
 
 
- := graphmodels.New()
+authenticationAttributeCollectionInputConfiguration := graphmodels.NewAuthenticationAttributeCollectionInputConfiguration()
 attribute := "email"
-.SetAttribute(&attribute) 
+authenticationAttributeCollectionInputConfiguration.SetAttribute(&attribute) 
 label := "Email Address"
-.SetLabel(&label) 
-inputType := "text"
-.SetInputType(&inputType) 
+authenticationAttributeCollectionInputConfiguration.SetLabel(&label) 
+inputType := graphmodels.TEXT_AUTHENTICATIONATTRIBUTECOLLECTIONINPUTTYPE 
+authenticationAttributeCollectionInputConfiguration.SetInputType(&inputType) 
 defaultValue := null
-.SetDefaultValue(&defaultValue) 
+authenticationAttributeCollectionInputConfiguration.SetDefaultValue(&defaultValue) 
 hidden := true
-.SetHidden(&hidden) 
+authenticationAttributeCollectionInputConfiguration.SetHidden(&hidden) 
 editable := false
-.SetEditable(&editable) 
+authenticationAttributeCollectionInputConfiguration.SetEditable(&editable) 
 writeToDirectory := true
-.SetWriteToDirectory(&writeToDirectory) 
+authenticationAttributeCollectionInputConfiguration.SetWriteToDirectory(&writeToDirectory) 
 required := true
-.SetRequired(&required) 
+authenticationAttributeCollectionInputConfiguration.SetRequired(&required) 
 validationRegEx := "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
-.SetValidationRegEx(&validationRegEx) 
-options := []graphmodels.able {
+authenticationAttributeCollectionInputConfiguration.SetValidationRegEx(&validationRegEx) 
+options := []graphmodels.AuthenticationAttributeCollectionOptionConfigurationable {
 
 }
-.SetOptions(options)
- := graphmodels.New()
+authenticationAttributeCollectionInputConfiguration.SetOptions(options)
+authenticationAttributeCollectionInputConfiguration1 := graphmodels.NewAuthenticationAttributeCollectionInputConfiguration()
 attribute := "displayName"
-.SetAttribute(&attribute) 
+authenticationAttributeCollectionInputConfiguration1.SetAttribute(&attribute) 
 label := "Display Name"
-.SetLabel(&label) 
-inputType := "text"
-.SetInputType(&inputType) 
+authenticationAttributeCollectionInputConfiguration1.SetLabel(&label) 
+inputType := graphmodels.TEXT_AUTHENTICATIONATTRIBUTECOLLECTIONINPUTTYPE 
+authenticationAttributeCollectionInputConfiguration1.SetInputType(&inputType) 
 defaultValue := null
-.SetDefaultValue(&defaultValue) 
+authenticationAttributeCollectionInputConfiguration1.SetDefaultValue(&defaultValue) 
 hidden := false
-.SetHidden(&hidden) 
+authenticationAttributeCollectionInputConfiguration1.SetHidden(&hidden) 
 editable := true
-.SetEditable(&editable) 
+authenticationAttributeCollectionInputConfiguration1.SetEditable(&editable) 
 writeToDirectory := true
-.SetWriteToDirectory(&writeToDirectory) 
+authenticationAttributeCollectionInputConfiguration1.SetWriteToDirectory(&writeToDirectory) 
 required := false
-.SetRequired(&required) 
+authenticationAttributeCollectionInputConfiguration1.SetRequired(&required) 
 validationRegEx := "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
-.SetValidationRegEx(&validationRegEx) 
-options := []graphmodels.able {
+authenticationAttributeCollectionInputConfiguration1.SetValidationRegEx(&validationRegEx) 
+options := []graphmodels.AuthenticationAttributeCollectionOptionConfigurationable {
 
 }
-.SetOptions(options)
- := graphmodels.New()
+authenticationAttributeCollectionInputConfiguration1.SetOptions(options)
+authenticationAttributeCollectionInputConfiguration2 := graphmodels.NewAuthenticationAttributeCollectionInputConfiguration()
 attribute := "city"
-.SetAttribute(&attribute) 
+authenticationAttributeCollectionInputConfiguration2.SetAttribute(&attribute) 
 label := "City"
-.SetLabel(&label) 
-inputType := "text"
-.SetInputType(&inputType) 
+authenticationAttributeCollectionInputConfiguration2.SetLabel(&label) 
+inputType := graphmodels.TEXT_AUTHENTICATIONATTRIBUTECOLLECTIONINPUTTYPE 
+authenticationAttributeCollectionInputConfiguration2.SetInputType(&inputType) 
 defaultValue := null
-.SetDefaultValue(&defaultValue) 
+authenticationAttributeCollectionInputConfiguration2.SetDefaultValue(&defaultValue) 
 hidden := false
-.SetHidden(&hidden) 
+authenticationAttributeCollectionInputConfiguration2.SetHidden(&hidden) 
 editable := true
-.SetEditable(&editable) 
+authenticationAttributeCollectionInputConfiguration2.SetEditable(&editable) 
 writeToDirectory := true
-.SetWriteToDirectory(&writeToDirectory) 
+authenticationAttributeCollectionInputConfiguration2.SetWriteToDirectory(&writeToDirectory) 
 required := false
-.SetRequired(&required) 
+authenticationAttributeCollectionInputConfiguration2.SetRequired(&required) 
 validationRegEx := "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
-.SetValidationRegEx(&validationRegEx) 
-options := []graphmodels.able {
+authenticationAttributeCollectionInputConfiguration2.SetValidationRegEx(&validationRegEx) 
+options := []graphmodels.AuthenticationAttributeCollectionOptionConfigurationable {
 
 }
-.SetOptions(options)
- := graphmodels.New()
+authenticationAttributeCollectionInputConfiguration2.SetOptions(options)
+authenticationAttributeCollectionInputConfiguration3 := graphmodels.NewAuthenticationAttributeCollectionInputConfiguration()
 attribute := "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor"
-.SetAttribute(&attribute) 
+authenticationAttributeCollectionInputConfiguration3.SetAttribute(&attribute) 
 label := "Favorite color"
-.SetLabel(&label) 
-inputType := "text"
-.SetInputType(&inputType) 
+authenticationAttributeCollectionInputConfiguration3.SetLabel(&label) 
+inputType := graphmodels.TEXT_AUTHENTICATIONATTRIBUTECOLLECTIONINPUTTYPE 
+authenticationAttributeCollectionInputConfiguration3.SetInputType(&inputType) 
 defaultValue := null
-.SetDefaultValue(&defaultValue) 
+authenticationAttributeCollectionInputConfiguration3.SetDefaultValue(&defaultValue) 
 hidden := false
-.SetHidden(&hidden) 
+authenticationAttributeCollectionInputConfiguration3.SetHidden(&hidden) 
 editable := true
-.SetEditable(&editable) 
+authenticationAttributeCollectionInputConfiguration3.SetEditable(&editable) 
 writeToDirectory := true
-.SetWriteToDirectory(&writeToDirectory) 
+authenticationAttributeCollectionInputConfiguration3.SetWriteToDirectory(&writeToDirectory) 
 required := false
-.SetRequired(&required) 
+authenticationAttributeCollectionInputConfiguration3.SetRequired(&required) 
 validationRegEx := "^.*"
-.SetValidationRegEx(&validationRegEx) 
-options := []graphmodels.able {
+authenticationAttributeCollectionInputConfiguration3.SetValidationRegEx(&validationRegEx) 
+options := []graphmodels.AuthenticationAttributeCollectionOptionConfigurationable {
 
 }
-.SetOptions(options)
+authenticationAttributeCollectionInputConfiguration3.SetOptions(options)
 
-inputs := []graphmodels.Objectable {
-	,
-	,
-	,
-	,
-
+inputs := []graphmodels.AuthenticationAttributeCollectionInputConfigurationable {
+	authenticationAttributeCollectionInputConfiguration,
+	authenticationAttributeCollectionInputConfiguration1,
+	authenticationAttributeCollectionInputConfiguration2,
+	authenticationAttributeCollectionInputConfiguration3,
 }
-.SetInputs(inputs)
+authenticationAttributeCollectionPageViewConfiguration.SetInputs(inputs)
 
-	views := []graphmodels.Objectable {
-		,
-
-	}
-	attributeCollectionPage.SetViews(views)
-	onAttributeCollection.SetAttributeCollectionPage(attributeCollectionPage)
-	requestBody.SetOnAttributeCollection(onAttributeCollection)
+views := []graphmodels.AuthenticationAttributeCollectionPageViewConfigurationable {
+	authenticationAttributeCollectionPageViewConfiguration,
 }
-requestBody.SetAdditionalData(additionalData)
+attributeCollectionPage.SetViews(views)
+onAttributeCollection.SetAttributeCollectionPage(attributeCollectionPage)
+requestBody.SetOnAttributeCollection(onAttributeCollection)
 
 result, err := graphClient.Identity().AuthenticationEventsFlows().ByAuthenticationEventsFlowId("authenticationEventsFlow-id").Patch(context.Background(), requestBody, nil)
 

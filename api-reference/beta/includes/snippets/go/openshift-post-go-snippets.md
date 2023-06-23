@@ -58,7 +58,6 @@ shiftActivity.SetDisplayName(&displayName)
 
 activities := []graphmodels.ShiftActivityable {
 	shiftActivity,
-
 }
 sharedOpenShift.SetActivities(activities)
 requestBody.SetSharedOpenShift(sharedOpenShift)

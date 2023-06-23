@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = ConversationMember()
+request_body = AadUserConversationMember()
 request_body.@odata_type = '#microsoft.graph.aadUserConversationMember'
 
 request_body.Roles(['guest', ])

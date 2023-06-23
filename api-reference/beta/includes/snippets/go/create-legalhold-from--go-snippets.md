@@ -29,7 +29,6 @@ contentQuery := "String"
 requestBody.SetContentQuery(&contentQuery) 
 errors := []string {
 	"String",
-
 }
 requestBody.SetErrors(errors)
 displayName := "String"

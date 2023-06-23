@@ -9,18 +9,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new MailFolder();
+$requestBody = new MailSearchFolder();
 $requestBody->set@odatatype('microsoft.graph.mailSearchFolder');
 
 $requestBody->setDisplayName('Weekly digests');
 
-$additionalData = [
-		'includeNestedFolders' => true,
-		'sourceFolderIds' => ['AQMkADYAAAIBDAAAAA==', ],
-	'filterQuery' => 'contains(subject, \'weekly digest\')', 
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setIncludeNestedFolders(true);
 
+$requestBody->setSourceFolderIds(['AQMkADYAAAIBDAAAAA==', ]);
+
+$requestBody->setFilterQuery('contains(subject, \'weekly digest\')');
 
 
 
