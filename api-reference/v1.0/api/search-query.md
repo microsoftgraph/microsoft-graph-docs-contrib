@@ -61,7 +61,7 @@ The following example shows how to search for expected connector items.
   "blockType": "request",
   "name": "search_query_v1_e1"
 } -->
-```HTTP
+```http
 POST https://graph.microsoft.com/v1.0/search/query
 Content-type: application/json
 
@@ -96,7 +96,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.searchResponse"
 } -->
-```HTTP
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -134,7 +134,7 @@ The following example shows how to use the queryable property **createdBy** to r
   "blockType": "request",
   "name": "search_query_v1_e2"
 } -->
-```HTTP
+```http
 POST https://graph.microsoft.com/v1.0/search/query
 Content-type: application/json
 
@@ -163,7 +163,7 @@ Content-type: application/json
 } -->
 The following example shows the response.
 
-```HTTP
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
