@@ -169,8 +169,7 @@ HTTP/1.1 200 OK
 ### Example 3: Get the metadata of the user photo of the signed-in user
 #### Request
 <!-- {
-  "blockType": "request",
-  "name": "megetphoto"
+  "blockType": "ignored"
 }-->
 
 ```http
@@ -184,7 +183,6 @@ The following response data shows the photo metadata.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "@odata.type": "Edm.String"
 }-->
 
 ```http
