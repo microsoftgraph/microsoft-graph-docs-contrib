@@ -11,6 +11,19 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### userDefaultAuthenticationMethod values
+
+| Member             |
+|:-------------------|
+| push               |
+| oath               |
+| voiceMobile        |
+| voiceAlternateMobile |
+| voiceOffice        |
+| sms                |
+| none               |
+| unknownFutureValue |
+
 ### applicationKeyUsage values
 
 | Member             |
