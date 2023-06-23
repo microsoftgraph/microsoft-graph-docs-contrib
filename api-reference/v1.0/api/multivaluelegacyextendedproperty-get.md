@@ -139,6 +139,7 @@ extended property that has its **id** matching the string `StringArray {66f5a359
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/events('AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQBGAAAAAABaZwRaNsIxTp0lpjY1il_IBwAXjnwa91gDSKOqCnaDInDMAAAAAAENAAAXjnwa91gDSKOqCnaDInDMAAAtgOgIAAA=')?$expand=multiValueExtendedProperties($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
+
 ```
 ##### Response
 
@@ -148,7 +149,7 @@ Note: The **event** object shown here is truncated for brevity. All of the prope
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
+  "@odata.type": "microsoft.graph.events"
 } -->
 ```http
 HTTP/1.1 200 OK
