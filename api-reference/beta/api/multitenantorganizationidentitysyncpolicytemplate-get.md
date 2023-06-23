@@ -88,8 +88,7 @@ Content-Type: application/json
     "id": "0e7aad84-cb46-4b8e-a881-522ef25939f1",
     "userSyncInbound": {
         "isSyncAllowed": null
-    },
-    "templateApplicationLevel": "newPartners,existingPartners"
+    }
 }
 ```
 
@@ -104,7 +103,6 @@ Content-Type: application/json
     "id": "e1a11ff3-01f1-4c48-9784-b9d931571474",
     "userSyncInbound": {
         "isSyncAllowed": true
-    },
-    "templateApplicationLevel": "newPartners,existingPartners"
+    }
 }
 ```
