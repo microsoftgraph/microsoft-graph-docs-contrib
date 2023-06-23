@@ -54,7 +54,7 @@ Here is an example of the request.
 <!-- { "blockType": "request", "name" : "onenote_list_pages"  } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/pageLinks
+GET https://graph.microsoft.com/v1.0/me/onenote/page
 ```
 
 ##### Response
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here is trun
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.pages"
+  "@odata.type": "microsoft.graph.pageLinks"
 } -->
 ```http
 HTTP/1.1 200 OK
