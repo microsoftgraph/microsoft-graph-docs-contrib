@@ -117,7 +117,7 @@ Content-Type: application/json
   "status": "notStarted"
 }
 ```
-
+---
 #### Response
 
 The following example shows the response.
@@ -185,6 +185,7 @@ Content-Type: application/json
   "status": "inProgress"
 }
 ```
+---
 
 #### Response
 
