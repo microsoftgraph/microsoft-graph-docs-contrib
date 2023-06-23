@@ -63,8 +63,7 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "ediscoveryreviewsetthis.export"
-}
--->
+}-->
 
 
 ### Response
@@ -73,7 +72,6 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
-}
--->
+}-->
 
 
