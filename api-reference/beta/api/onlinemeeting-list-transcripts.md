@@ -44,7 +44,7 @@ GET /users({userId})/onlineMeetings({meetingId})/transcripts
 
 ## Optional query parameters
 
-This method doesn't support any [OData query parameters](/graph/query-parameters).
+This method doesn't support any [OData query parameters](/graph/query-parameters)
 
 ## Request headers
 
