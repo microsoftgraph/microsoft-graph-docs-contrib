@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and [windowsUniversa
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "intune_apps_windowsuniversalappxcontainedapp_get_get_windowsuniversalappxcontainedapp" }-->
+<!-- { "blockType": "ignored" , "name" : "intune_apps_windowsuniversalappxcontainedapp_get_get_windowsuniversalappxcontainedapp" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/containedApps/{mobileContainedAppId}
 ```
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-<!-- { "blockType": "response" , "@odata.type" : "Edm.String" }-->
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windowsUniversalAppXContainedApp" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
