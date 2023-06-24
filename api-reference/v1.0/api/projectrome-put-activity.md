@@ -109,12 +109,13 @@ The following is an example of the response.
 
 <!-- {
     "blockType": "ignored",
-    "truncated": true,
-    "@odata.type": "Edm.String"
+    
 } -->
 
 ```http
 HTTP/1.1 200 OK
+```
+<!-->
 Content-Type: application/json
 
 {
@@ -158,6 +159,7 @@ Content-Type: application/json
   }
 }
 ```
+-->
 
 ### Example 2: Deep insert
 
