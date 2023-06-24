@@ -15277,7 +15277,7 @@ items:
             items:
             - name: Get
               href: api/reportroot-getcredentialuserregistrationcount.md
-          - name: Credential User Registration Details
+          - name: Credential User Registration Details (deprecated)
             href: resources/credentialuserregistrationdetails.md
             items:
             - name: List
