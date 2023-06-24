@@ -1,5 +1,5 @@
 ---
-title: "Manage custom security attribute assignments (preview)"
+title: "Manage custom security attribute assignments"
 description: "Learn how to assign, update, list, or remove custom security attribute assignments for users and service principals using Microsoft Graph."
 author: "rolyon"
 ms.author: rolyon
@@ -10,10 +10,7 @@ ms.prod: "directory-management"
 ms.date: 02/14/2023
 ---
 
-# Manage custom security attribute assignments (preview)
-
-> [!IMPORTANT]
-> The custom security attributes feature is currently in preview. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+# Manage custom security attribute assignments
 
 [Custom security attributes](/graph/api/resources/custom-security-attributes-overview) in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects. These attributes can be used to store information, categorize objects, or enforce fine-grained access control over specific Azure resources through Azure attribute-based access control (Azure ABAC).
 
@@ -53,7 +50,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_assign_user_string"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -72,24 +69,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-assign-user-string-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-assign-user-string-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-assign-user-string-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-assign-user-string-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-assign-user-string-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-assign-user-string-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-assign-user-string-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-assign-user-string-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -119,7 +120,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_assign_serviceprincipal_string"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}
 Content-type: application/json
 
 {
@@ -138,24 +139,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-assign-serviceprincipal-string-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-assign-serviceprincipal-string-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-assign-serviceprincipal-string-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-assign-serviceprincipal-string-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-assign-serviceprincipal-string-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-assign-serviceprincipal-string-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-assign-serviceprincipal-string-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-assign-serviceprincipal-string-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -185,7 +190,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_assign_user_multistring"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -205,24 +210,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-assign-user-multistring-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-assign-user-multistring-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-assign-user-multistring-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-assign-user-multistring-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-assign-user-multistring-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-assign-user-multistring-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-assign-user-multistring-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-assign-user-multistring-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -252,7 +261,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_assign_user_integer"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -272,24 +281,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-assign-user-integer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-assign-user-integer-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-assign-user-integer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-assign-user-integer-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-assign-user-integer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-assign-user-integer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-assign-user-integer-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-assign-user-integer-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -319,7 +332,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_assign_user_multiinteger"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -339,24 +352,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-assign-user-multiinteger-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-assign-user-multiinteger-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-assign-user-multiinteger-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-assign-user-multiinteger-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-assign-user-multiinteger-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-assign-user-multiinteger-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-assign-user-multiinteger-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-assign-user-multiinteger-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -386,7 +403,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_assign_user_boolean"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -405,24 +422,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-assign-user-boolean-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-assign-user-boolean-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-assign-user-boolean-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-assign-user-boolean-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-assign-user-boolean-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-assign-user-boolean-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-assign-user-boolean-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-assign-user-boolean-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -454,7 +475,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_update_user_integer"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -474,24 +495,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-update-user-integer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-update-user-integer-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-update-user-integer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-update-user-integer-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-update-user-integer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-update-user-integer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-update-user-integer-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-update-user-integer-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -522,7 +547,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_update_user_boolean"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -541,24 +566,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-update-user-boolean-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-update-user-boolean-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-update-user-boolean-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-update-user-boolean-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-update-user-boolean-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-update-user-boolean-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-update-user-boolean-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-update-user-boolean-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -613,31 +642,35 @@ Attribute #4
   "name": "customsecurityattribute_get_for_user"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
+GET https://graph.microsoft.com/v1.0/users/{id}?$select=customSecurityAttributes
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-get-for-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-get-for-user-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-get-for-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/customsecurityattribute-get-for-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-get-for-user-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-get-for-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-get-for-user-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-get-for-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-get-for-user-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/customsecurityattribute-get-for-user-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -652,7 +685,7 @@ GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(customSecurityAttributes)/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(customSecurityAttributes)/$entity",
     "customSecurityAttributes": {
         "Marketing": {
             "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
@@ -682,7 +715,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(customSecurityAttributes)/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(customSecurityAttributes)/$entity",
     "customSecurityAttributes": null
 }
 ```
@@ -713,7 +746,7 @@ User #2
   "name": "customsecurityattribute_filter_users_equals_value"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry eq 'Canada'
+GET https://graph.microsoft.com/v1.0/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry eq 'Canada'
 ConsistencyLevel: eventual
 ```
 
@@ -721,24 +754,28 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-filter-users-equals-value-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-filter-users-equals-value-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-filter-users-equals-value-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/customsecurityattribute-filter-users-equals-value-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-filter-users-equals-value-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-filter-users-equals-value-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-filter-users-equals-value-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-filter-users-equals-value-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-filter-users-equals-value-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/customsecurityattribute-filter-users-equals-value-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -752,7 +789,7 @@ ConsistencyLevel: eventual
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,customSecurityAttributes)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,customSecurityAttributes)",
     "@odata.count": 2,
     "value": [
         {
@@ -822,7 +859,7 @@ User #2
   "name": "customsecurityattribute_filter_users_starts_with_value"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=startsWith(customSecurityAttributes/Marketing/EmployeeId,'GS')
+GET https://graph.microsoft.com/v1.0/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=startsWith(customSecurityAttributes/Marketing/EmployeeId,'GS')
 ConsistencyLevel: eventual
 ```
 
@@ -830,24 +867,28 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-filter-users-starts-with-value-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-filter-users-starts-with-value-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-filter-users-starts-with-value-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/customsecurityattribute-filter-users-starts-with-value-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-filter-users-starts-with-value-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-filter-users-starts-with-value-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-filter-users-starts-with-value-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-filter-users-starts-with-value-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-filter-users-starts-with-value-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/customsecurityattribute-filter-users-starts-with-value-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -862,7 +903,7 @@ ConsistencyLevel: eventual
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,customSecurityAttributes)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,customSecurityAttributes)",
     "@odata.count": 1,
     "value": [
         {
@@ -907,7 +948,7 @@ All other users
   "name": "customsecurityattribute_users_not_equal_value"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry ne 'Canada'
+GET https://graph.microsoft.com/v1.0/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry ne 'Canada'
 ConsistencyLevel: eventual
 ```
 
@@ -915,24 +956,28 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-users-not-equal-value-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-users-not-equal-value-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-users-not-equal-value-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/customsecurityattribute-users-not-equal-value-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-users-not-equal-value-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-users-not-equal-value-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-users-not-equal-value-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-users-not-equal-value-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-users-not-equal-value-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/customsecurityattribute-users-not-equal-value-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -947,7 +992,7 @@ ConsistencyLevel: eventual
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,customSecurityAttributes)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,customSecurityAttributes)",
     "@odata.count": 32,
     "value": [
         {
@@ -1028,7 +1073,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_remove_from_user_singlevalue"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -1047,24 +1092,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-remove-from-user-singlevalue-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-remove-from-user-singlevalue-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-remove-from-user-singlevalue-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-remove-from-user-singlevalue-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-remove-from-user-singlevalue-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-remove-from-user-singlevalue-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-remove-from-user-singlevalue-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-remove-from-user-singlevalue-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1093,7 +1142,7 @@ The following example shows how to use the [Update user](/graph/api/user-update?
   "name": "customsecurityattribute_remove_from_user_multivalue"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}
 Content-type: application/json
 
 {
@@ -1112,24 +1161,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-remove-from-user-multivalue-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-remove-from-user-multivalue-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-remove-from-user-multivalue-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-remove-from-user-multivalue-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-remove-from-user-multivalue-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-remove-from-user-multivalue-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-remove-from-user-multivalue-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

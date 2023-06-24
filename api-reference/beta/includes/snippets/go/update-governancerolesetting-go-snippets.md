@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewGovernanceRoleSetting()
@@ -26,7 +26,6 @@ governanceRuleSetting.SetSetting(&setting)
 
 adminEligibleSettings := []graphmodels.GovernanceRuleSettingable {
 	governanceRuleSetting,
-
 }
 requestBody.SetAdminEligibleSettings(adminEligibleSettings)
 

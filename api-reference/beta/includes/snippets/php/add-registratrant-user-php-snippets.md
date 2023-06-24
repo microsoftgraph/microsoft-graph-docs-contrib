@@ -9,32 +9,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new MeetingRegistrantBase();
+$requestBody = new MeetingRegistrant();
 $requestBody->set@odatatype('#microsoft.graph.meetingRegistrant');
 
-$additionalData = [
-		'firstName' => 'Frederick', 
-		'lastName' => 'Cormier', 
-		'email' => 'frederick.cormier@contoso.com', 
-		'customQuestionAnswers' => $customQuestionAnswers1 = new ();
-$		customQuestionAnswers1->setQuestionId('MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU=');
+$requestBody->setFirstName('Frederick');
 
-$		customQuestionAnswers1->setValue('No');
+$requestBody->setLastName('Cormier');
 
+$requestBody->setEmail('frederick.cormier@contoso.com');
 
-$customQuestionAnswersArray []= $customQuestionAnswers1;
-$customQuestionAnswers2 = new ();
-$		customQuestionAnswers2->setQuestionId('MSM5M2E2OWQ1Ni1jZTc4LTQDAwMjBfZGlkX3gwMDIwX3lvdV94MDAyMF8=');
+$customQuestionAnswersCustomQuestionAnswer1 = new CustomQuestionAnswer();
+$customQuestionAnswersCustomQuestionAnswer1->setQuestionId('MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU=');
 
-$		customQuestionAnswers2->setValue('Internet');
+$customQuestionAnswersCustomQuestionAnswer1->setValue('No');
 
 
-$customQuestionAnswersArray []= $customQuestionAnswers2;
+$customQuestionAnswersArray []= $customQuestionAnswersCustomQuestionAnswer1;
+$customQuestionAnswersCustomQuestionAnswer2 = new CustomQuestionAnswer();
+$customQuestionAnswersCustomQuestionAnswer2->setQuestionId('MSM5M2E2OWQ1Ni1jZTc4LTQDAwMjBfZGlkX3gwMDIwX3lvdV94MDAyMF8=');
+
+$customQuestionAnswersCustomQuestionAnswer2->setValue('Internet');
+
+
+$customQuestionAnswersArray []= $customQuestionAnswersCustomQuestionAnswer2;
 $requestBody->setCustomQuestionAnswers($customQuestionAnswersArray);
-
-
-];
-$requestBody->setAdditionalData($additionalData);
 
 
 

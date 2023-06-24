@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//identityGovernance"
+	  graphmodelsidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/models/identitygovernance"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewWorkflow()
+requestBody := graphmodelsidentitygovernance.NewWorkflow()
 category := graphmodels.LEAVER_LIFECYCLEWORKFLOWCATEGORY 
 requestBody.SetCategory(&category) 
 displayName := "Post-Offboarding of an employee"
@@ -26,24 +27,21 @@ isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
 isSchedulingEnabled := false
 requestBody.SetIsSchedulingEnabled(&isSchedulingEnabled) 
-executionConditions := graphmodels.NewWorkflowExecutionConditions()
-additionalData := map[string]interface{}{
-scope := graphmodels.New()
+executionConditions := graphmodelsidentitygovernance.NewTriggerAndScopeBasedConditions()
+scope := graphmodelsidentitygovernance.NewRuleBasedSubjectSet()
 rule := "department eq 'Marketing'"
 scope.SetRule(&rule) 
-	executionConditions.SetScope(scope)
-trigger := graphmodels.New()
-timeBasedAttribute := "employeeLeaveDateTime"
+executionConditions.SetScope(scope)
+trigger := graphmodelsidentitygovernance.NewTimeBasedAttributeTrigger()
+timeBasedAttribute := graphmodels.EMPLOYEELEAVEDATETIME_WORKFLOWTRIGGERTIMEBASEDATTRIBUTE 
 trigger.SetTimeBasedAttribute(&timeBasedAttribute) 
 offsetInDays := int32(7)
 trigger.SetOffsetInDays(&offsetInDays) 
-	executionConditions.SetTrigger(trigger)
-}
-executionConditions.SetAdditionalData(additionalData)
+executionConditions.SetTrigger(trigger)
 requestBody.SetExecutionConditions(executionConditions)
 
 
-task := graphmodels.NewTask()
+task := graphmodelsidentitygovernance.NewTask()
 category := graphmodels.LEAVER_LIFECYCLETASKCATEGORY 
 task.SetCategory(&category) 
 continueOnError := false
@@ -62,7 +60,7 @@ arguments := []graphmodels.KeyValuePairable {
 
 }
 task.SetArguments(arguments)
-task1 := graphmodels.NewTask()
+task1 := graphmodelsidentitygovernance.NewTask()
 category := graphmodels.LEAVER_LIFECYCLETASKCATEGORY 
 task1.SetCategory(&category) 
 continueOnError := false
@@ -81,7 +79,7 @@ arguments := []graphmodels.KeyValuePairable {
 
 }
 task1.SetArguments(arguments)
-task2 := graphmodels.NewTask()
+task2 := graphmodelsidentitygovernance.NewTask()
 category := graphmodels.LEAVER_LIFECYCLETASKCATEGORY 
 task2.SetCategory(&category) 
 continueOnError := false
@@ -101,11 +99,10 @@ arguments := []graphmodels.KeyValuePairable {
 }
 task2.SetArguments(arguments)
 
-tasks := []graphmodels.Taskable {
+tasks := []graphmodelsidentitygovernance.Taskable {
 	task,
 	task1,
 	task2,
-
 }
 requestBody.SetTasks(tasks)
 

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].Runs["{run-id}"].GetAsync();
+var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].Runs.MicrosoftGraphIdentityGovernanceSummaryWithStartDateTimeWithEndDateTime(DateTimeOffset.Parse("{endDateTime}"),DateTimeOffset.Parse("{startDateTime}")).GetAsync();
 
 
 ```

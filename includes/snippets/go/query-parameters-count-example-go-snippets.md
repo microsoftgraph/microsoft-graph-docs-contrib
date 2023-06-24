@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
 requestCount := true
 
-requestParameters := &graphconfig.ItemContactsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemContactsRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 }
-configuration := &graphconfig.ItemContactsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemContactsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

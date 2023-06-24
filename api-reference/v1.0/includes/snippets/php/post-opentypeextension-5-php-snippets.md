@@ -21,11 +21,12 @@ $postsPost1Body->setContent('This is urgent!');
 
 
 $postsPost1->setBody($postsPost1Body);
-$extensionsExtension1 = new Extension();
+$extensionsExtension1 = new OpenTypeExtension();
 $extensionsExtension1->set@odatatype('microsoft.graph.openTypeExtension');
 
+$extensionsExtension1->setExtensionName('Com.Contoso.Benefits');
+
 $additionalData = [
-		'extensionName' => 'Com.Contoso.Benefits', 
 		'companyName' => 'Contoso', 
 		'expirationDate' => '2016-08-03T11:00:00.000Z', 
 		'topPicks' => ['Employees only', 'Add spouse or guest', 'Add family', ],
