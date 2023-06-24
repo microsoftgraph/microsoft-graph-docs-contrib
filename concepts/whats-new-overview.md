@@ -38,7 +38,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 - [Add](/graph/api/externalconnectors-externalitem-addactivities) instances of [external activity](/graph/api/resources/externalConnectors-externalActivity) on an [external item](/graph/api/resources/externalconnectors-externalitem). You can track the type of external activity (such as viewed, modified, created, commented), the [identity](/graph/api/resources/externalconnectors-identity) of the [user](/graph/api/resources/user), [group](/graph/api/resources/group), or external group who performed the activity, and the [result](/graph/api/resources/externalconnectors-externalactivityresult) of adding the activity.
 
 ### Security | Alerts and incidents
-- Manage an Amazon resource, Azure resource such as a VM, Storage, or KeyVault, or Google Cloud resource such as compute or Kubernetes cluster identifier, as [evidence](/graph/api/resources/security-alertevidence) related to an [alert](/graph/api/resources/security-alert).
+- Manage an Amazon resource, Azure resource such as a VM, Storage, or KeyVault, or Google Cloud resource such as compute or Kubernetes cluster identifier, as specific types of [evidence](/graph/api/resources/security-alertevidence) related to an [alert](/graph/api/resources/security-alert).
 - Support Microsoft Defender for Cloud as a detection source that identifies a notable component or activity, or as a source that creates an [alert](/graph/api/resources/security-alert).  
 
 ### Sites and lists
