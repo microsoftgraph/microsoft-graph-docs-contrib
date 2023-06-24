@@ -1,7 +1,7 @@
 ---
 title: "userConsentRequest: filterByCurrentUser"
 description: "Retrieve userConsentRequest objects for which the current user is the reviewer."
-author: "psignoret"
+author: "eringreenlee"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

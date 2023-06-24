@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new AuthenticationEventListener();
+$requestBody = new OnTokenIssuanceStartListener();
 $requestBody->set@odatatype('#microsoft.graph.onTokenIssuanceStartListener');
 
 $conditions = new AuthenticationConditions();

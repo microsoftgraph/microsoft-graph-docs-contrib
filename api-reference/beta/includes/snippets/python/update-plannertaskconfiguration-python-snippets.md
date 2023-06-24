@@ -14,16 +14,12 @@ edit_policy = PlannerTaskPolicy()
 rules_planner_task_role_based_rule1 = PlannerTaskRoleBasedRule()
 rules_planner_task_role_based_rule1.default_rule = 'block'
 
-rules_planner_task_role_based_rule1role = PlannerTaskConfigurationRoleBase()
+rules_planner_task_role_based_rule1role = PlannerRelationshipBasedUserType()
 rules_planner_task_role_based_rule1role.@odata_type = '#microsoft.graph.plannerRelationshipBasedUserType'
 
 rules_planner_task_role_based_rule1role.rolekind(PlannerUserRoleKind.Relationship('planneruserrolekind.relationship'))
 
-additional_data = [
-'role' => 'defaultRules', 
-];
-rules_planner_task_role_based_rule1role.additional_data(additional_data)
-
+rules_planner_task_role_based_rule1role.role(PlannerRelationshipUserRoles.DefaultRules('plannerrelationshipuserroles.defaultrules'))
 
 
 rules_planner_task_role_based_rule1.role = rules_planner_task_role_based_rule1role
@@ -46,16 +42,12 @@ rulesArray []= rulesPlannerTaskRoleBasedRule1;
 rules_planner_task_role_based_rule2 = PlannerTaskRoleBasedRule()
 rules_planner_task_role_based_rule2.default_rule = 'block'
 
-rules_planner_task_role_based_rule2role = PlannerTaskConfigurationRoleBase()
+rules_planner_task_role_based_rule2role = PlannerRelationshipBasedUserType()
 rules_planner_task_role_based_rule2role.@odata_type = '#microsoft.graph.plannerRelationshipBasedUserType'
 
 rules_planner_task_role_based_rule2role.rolekind(PlannerUserRoleKind.Relationship('planneruserrolekind.relationship'))
 
-additional_data = [
-'role' => 'taskAssignees', 
-];
-rules_planner_task_role_based_rule2role.additional_data(additional_data)
-
+rules_planner_task_role_based_rule2role.role(PlannerRelationshipUserRoles.TaskAssignees('plannerrelationshipuserroles.taskassignees'))
 
 
 rules_planner_task_role_based_rule2.role = rules_planner_task_role_based_rule2role

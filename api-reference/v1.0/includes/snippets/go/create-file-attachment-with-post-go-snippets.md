@@ -26,17 +26,14 @@ body.SetContent(&content)
 post.SetBody(body)
 
 
-attachment := graphmodels.NewAttachment()
+attachment := graphmodels.NewFileAttachment()
 name := "Another file as attachment"
 attachment.SetName(&name) 
-additionalData := map[string]interface{}{
-	"contentBytes" : "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu", 
-}
-attachment.SetAdditionalData(additionalData)
+contentBytes := []byte("vGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu")
+attachment.SetContentBytes(&contentBytes) 
 
 attachments := []graphmodels.Attachmentable {
 	attachment,
-
 }
 post.SetAttachments(attachments)
 requestBody.SetPost(post)

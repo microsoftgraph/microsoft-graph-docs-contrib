@@ -32,7 +32,6 @@ integerRange.SetEnd(&end)
 
 pageRanges := []graphmodels.IntegerRangeable {
 	integerRange,
-
 }
 configuration.SetPageRanges(pageRanges)
 quality := graphmodels.MEDIUM_PRINTQUALITY 
