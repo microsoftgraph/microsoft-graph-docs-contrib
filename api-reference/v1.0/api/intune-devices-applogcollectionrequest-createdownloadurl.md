@@ -49,12 +49,16 @@ If successful, this action returns a `200 OK` response code and a [appLogCollect
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_devices_applogcollectionrequest_createdownloadurl_createdownloadurl_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests/{appLogCollectionRequestId}/createDownloadUrl
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.appLogCollectionDownloadDetails" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

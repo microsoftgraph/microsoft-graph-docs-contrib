@@ -63,6 +63,7 @@ Here is a JSON representation of the resource.
   "osVersion": "String",
   "anomalyId": "String",
   "anomalyOnDeviceFirstOccurrenceDateTime": "String (timestamp)",
-  "anomalyOnDeviceLatestOccurrenceDateTime": "String (timestamp)"
+  "anomalyOnDeviceLatestOccurrenceDateTime": "String (timestamp)",
+  "correlationGroupId": "String"
 }
 ```
