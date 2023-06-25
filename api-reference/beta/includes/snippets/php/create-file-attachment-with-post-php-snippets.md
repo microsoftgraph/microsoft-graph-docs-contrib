@@ -18,16 +18,12 @@ $postBody->setContent('Which quarter does that file cover? See my attachment.');
 
 
 $post->setBody($postBody);
-$attachmentsAttachment1 = new Attachment();
+$attachmentsAttachment1 = new FileAttachment();
 $attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
 
 $attachmentsAttachment1->setName('Another file as attachment');
 
-$additionalData = [
-		'contentBytes' => 'VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu', 
-];
-$attachmentsAttachment1->setAdditionalData($additionalData);
-
+$attachmentsAttachment1->setContentBytes(base64_decode('VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu'));
 
 
 $attachmentsArray []= $attachmentsAttachment1;

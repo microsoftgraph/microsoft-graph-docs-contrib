@@ -33,8 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceAppManagement/mobileApps/{mobileAppId}/revokeAllLicenses
-POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/revokeAllLicenses
-POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/revokeAllLicenses
 ```
 
 ## Request headers

@@ -39,8 +39,6 @@ GET /sites/getAllSites
 
 ### Request
 
-# [HTTP](#tab/http)
-
 <!-- { "blockType": "ignored" } -->
 
 ```msgraph-interactive

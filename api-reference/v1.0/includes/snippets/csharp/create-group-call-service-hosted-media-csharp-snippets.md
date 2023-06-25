@@ -63,7 +63,7 @@ var requestBody = new Call
 	{
 		Modality.Audio,
 	},
-	MediaConfig = new MediaConfig
+	MediaConfig = new ServiceHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.serviceHostedMediaConfig",
 		AdditionalData = new Dictionary<string, object>

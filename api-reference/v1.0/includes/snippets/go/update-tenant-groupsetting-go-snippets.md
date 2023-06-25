@@ -26,7 +26,6 @@ settingValue.SetValue(&value)
 
 values := []graphmodels.SettingValueable {
 	settingValue,
-
 }
 requestBody.SetValues(values)
 

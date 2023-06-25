@@ -16,7 +16,7 @@ import (
 graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewSnoozeReminderPostRequestBody()
+requestBody := graphusers.NewItemSnoozeReminderPostRequestBody()
 newReminderTime := graphmodels.NewDateTimeTimeZone()
 dateTime := "dateTime-value"
 newReminderTime.SetDateTime(&dateTime) 
