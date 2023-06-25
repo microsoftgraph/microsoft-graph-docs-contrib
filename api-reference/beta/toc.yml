@@ -12394,13 +12394,13 @@ items:
           items:
           - name: Forwarding Profile
             href: /resources/networkaccess-forwardingprofile.md
-           items:
-           - name: Get
-             href: /api/networkaccess-forwardingprofile-get.md 
-           - name: List
-             href: /api/networkaccess-networkaccessroot-list-forwardingprofiles.md
+            items:
+            - name: Get
+              href: /api/networkaccess-forwardingprofile-get.md 
+            - name: List
+              href: /api/networkaccess-networkaccessroot-list-forwardingprofiles.md
           - name: Forwarding policy
-            href: /resources/networkaccess-forwardingpolicy.md
+          href: /resources/networkaccess-forwardingpolicy.md
            items:
            - name: Get
              href: /networkaccess-forwardingpolicy-get.md

@@ -1,6 +1,6 @@
 ---
 title: "tunnelConfigurationIKEv2Custom resource type"
-description: "Specifies connectivity settings such as protocol, IPSec policy, and presharked key for establishing connectivity."
+description: "Specifies custom connectivity settings such as protocol, IPSec policy, and presharked key for establishing connectivity."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
