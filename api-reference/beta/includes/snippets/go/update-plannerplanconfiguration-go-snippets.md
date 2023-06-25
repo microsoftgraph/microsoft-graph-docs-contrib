@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPlannerPlanConfiguration()
@@ -38,7 +38,6 @@ buckets := []graphmodels.PlannerPlanConfigurationBucketDefinitionable {
 	plannerPlanConfigurationBucketDefinition1,
 	plannerPlanConfigurationBucketDefinition2,
 	plannerPlanConfigurationBucketDefinition3,
-
 }
 requestBody.SetBuckets(buckets)
 

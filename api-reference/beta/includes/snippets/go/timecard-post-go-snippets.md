@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTimeCard()
@@ -60,7 +60,6 @@ timeCardBreak.SetStart(start)
 
 breaks := []graphmodels.TimeCardBreakable {
 	timeCardBreak,
-
 }
 requestBody.SetBreaks(breaks)
 additionalData := map[string]interface{}{

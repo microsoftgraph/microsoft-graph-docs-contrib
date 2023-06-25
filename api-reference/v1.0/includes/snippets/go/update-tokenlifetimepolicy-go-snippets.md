@@ -12,13 +12,12 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTokenLifetimePolicy()
 definition := []string {
 	"{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"5:30:00\"}}",
-
 }
 requestBody.SetDefinition(definition)
 displayName := "Contoso token lifetime policy"

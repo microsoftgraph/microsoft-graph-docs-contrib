@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewConversationThread()
@@ -39,13 +39,11 @@ recipient.SetEmailAddress(emailAddress)
 
 newParticipants := []graphmodels.Recipientable {
 	recipient,
-
 }
 post.SetNewParticipants(newParticipants)
 
 posts := []graphmodels.Postable {
 	post,
-
 }
 requestBody.SetPosts(posts)
 
