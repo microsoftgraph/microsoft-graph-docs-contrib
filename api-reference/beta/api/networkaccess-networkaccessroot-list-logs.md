@@ -36,7 +36,7 @@ GET ** Collection URI for microsoft.graph.networkaccess.logs not found
 ```
 
 ## Optional query parameters
-This method supports the $expand [OData query parameters](https://learn.microsoft.com/graph/query-parameters) to help customize the response.
+This method supports the $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 |Name|Syntax|Notes|
 |:---|:---|:---|
