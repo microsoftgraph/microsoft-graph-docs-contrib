@@ -1051,14 +1051,6 @@
 			  {
 				"Id": "7000d034-3cfd-4568-8268-cdb2f7d1714d",
 				"ApiChange": "Enumeration",
-				"ChangedApiName": "fileHashType",
-				"ChangeType": "Addition",
-				"Description": "Added the **fileHashType** enumeration type.",
-				"Target": "fileHashType"
-			  },
-			  {
-				"Id": "7000d034-3cfd-4568-8268-cdb2f7d1714d",
-				"ApiChange": "Enumeration",
 				"ChangedApiName": "kubernetesServiceType",
 				"ChangeType": "Addition",
 				"Description": "Added the **kubernetesServiceType** enumeration type.",
@@ -1103,22 +1095,6 @@
 				"ChangeType": "Addition",
 				"Description": "Added the [containerRegistryEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-containerRegistryEvidence?view=graph-rest-beta) resource type.",
 				"Target": "containerRegistryEvidence"
-			  },
-			  {
-				"Id": "7000d034-3cfd-4568-8268-cdb2f7d1714d",
-				"ApiChange": "Resource",
-				"ChangedApiName": "dictionary_2OfString_String",
-				"ChangeType": "Addition",
-				"Description": "Added the [dictionary_2OfString_String](https://learn.microsoft.com/en-us/graph/api/resources/security-dictionary_2OfString_String?view=graph-rest-beta) resource type.",
-				"Target": "dictionary_2OfString_String"
-			  },
-			  {
-				"Id": "7000d034-3cfd-4568-8268-cdb2f7d1714d",
-				"ApiChange": "Resource",
-				"ChangedApiName": "fileHash",
-				"ChangeType": "Addition",
-				"Description": "Added the [fileHash](https://learn.microsoft.com/en-us/graph/api/resources/security-fileHash?view=graph-rest-beta) resource type.",
-				"Target": "fileHash"
 			  },
 			  {
 				"Id": "7000d034-3cfd-4568-8268-cdb2f7d1714d",
@@ -1197,14 +1173,6 @@
 			  {
 				"Id": "17dfef8b-f399-44a1-a691-029c7a4917bf",
 				"ApiChange": "Enumeration",
-				"ChangedApiName": "fileHashType",
-				"ChangeType": "Addition",
-				"Description": "Added the **fileHashType** enumeration type.",
-				"Target": "fileHashType"
-			  },
-			  {
-				"Id": "17dfef8b-f399-44a1-a691-029c7a4917bf",
-				"ApiChange": "Enumeration",
 				"ChangedApiName": "kubernetesServiceType",
 				"ChangeType": "Addition",
 				"Description": "Added the **kubernetesServiceType** enumeration type.",
@@ -1249,22 +1217,6 @@
 				"ChangeType": "Addition",
 				"Description": "Added the [containerRegistryEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-containerRegistryEvidence?view=graph-rest-1.0) resource type.",
 				"Target": "containerRegistryEvidence"
-			  },
-			  {
-				"Id": "17dfef8b-f399-44a1-a691-029c7a4917bf",
-				"ApiChange": "Resource",
-				"ChangedApiName": "dictionary_2OfString_String",
-				"ChangeType": "Addition",
-				"Description": "Added the [dictionary_2OfString_String](https://learn.microsoft.com/en-us/graph/api/resources/security-dictionary_2OfString_String?view=graph-rest-1.0) resource type.",
-				"Target": "dictionary_2OfString_String"
-			  },
-			  {
-				"Id": "17dfef8b-f399-44a1-a691-029c7a4917bf",
-				"ApiChange": "Resource",
-				"ChangedApiName": "fileHash",
-				"ChangeType": "Addition",
-				"Description": "Added the [fileHash](https://learn.microsoft.com/en-us/graph/api/resources/security-fileHash?view=graph-rest-1.0) resource type.",
-				"Target": "fileHash"
 			  },
 			  {
 				"Id": "17dfef8b-f399-44a1-a691-029c7a4917bf",
