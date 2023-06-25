@@ -12400,10 +12400,10 @@ items:
             - name: List
               href: /api/networkaccess-networkaccessroot-list-forwardingprofiles.md
           - name: Forwarding policy
-          href: /resources/networkaccess-forwardingpolicy.md
-           items:
-           - name: Get
-             href: /networkaccess-forwardingpolicy-get.md
+            href: /resources/networkaccess-forwardingpolicy.md
+            items:
+            - name: Get
+              href: /networkaccess-forwardingpolicy-get.md
           - name: Forwarding policy Link
             href: /resources/networkaccess-forwardingpolicylink.md
             items:
