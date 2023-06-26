@@ -407,14 +407,6 @@
         {
           "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
           "ApiChange": "Resource",
-          "ChangedApiName": "overview",
-          "ChangeType": "Addition",
-          "Description": "Added the [overview](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-overview?view=graph-rest-1.0) resource type.",
-          "Target": "overview"
-        },
-        {
-          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
-          "ApiChange": "Resource",
           "ChangedApiName": "parseExpressionResponse",
           "ChangeType": "Addition",
           "Description": "Added the [parseExpressionResponse](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-parseExpressionResponse?view=graph-rest-1.0) resource type.",
