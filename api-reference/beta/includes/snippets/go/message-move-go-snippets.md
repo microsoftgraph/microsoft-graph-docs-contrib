@@ -15,7 +15,7 @@ import (
 graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewMovePostRequestBody()
+requestBody := graphusers.NewItemMovePostRequestBody()
 destinationId := "deleteditems"
 requestBody.SetDestinationId(&destinationId) 
 

@@ -215,7 +215,8 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:15Z",
           "errorType": "dnsCheckFqdnNotFound",
           "recommendedAction": "We did not find the provided domain name; please re-enter",
-          "additionalDdetails": null
+          "additionalDdetails": null,
+          "correlationId": "992e64f0-231c-46b0-8918-c5aed0585f53"
         },
         {
           "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
@@ -225,7 +226,8 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:26Z",
           "errorType": null,
           "recommendedAction": null,
-          "additionalDetails": null
+          "additionalDetails": null,
+          "correlationId": null
         },
         {
           "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
@@ -235,7 +237,8 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:32Z",
           "errorType": "endpointConnectivityCheckUrlNotWhitelisted",
           "recommendedAction": "Recommended Action value",
-          "additionaldDetails": "Additional Details value"
+          "additionaldDetails": "Additional Details value",
+          "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
         },
         {
           "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
@@ -245,7 +248,8 @@ Content-Type: application/json
           "endDateTime": null,
           "errorType": null,
           "recommendedAction": null,
-          "additionaldDetails": null
+          "additionaldDetails": null,
+          "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
         }
       ]
     },

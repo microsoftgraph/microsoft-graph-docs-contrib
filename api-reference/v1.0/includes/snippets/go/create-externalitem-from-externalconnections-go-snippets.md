@@ -36,7 +36,6 @@ acl1.SetAccessType(&accessType)
 acl := []graphmodelsexternalconnectors.Aclable {
 	acl,
 	acl1,
-
 }
 requestBody.SetAcl(acl)
 properties := graphmodelsexternalconnectors.NewProperties()

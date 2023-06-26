@@ -19,25 +19,14 @@ var requestBody = new Microsoft.Graph.Beta.Groups.Item.Threads.Item.Reply.ReplyP
 		},
 		Attachments = new List<Attachment>
 		{
-			new Attachment
+			new ReferenceAttachment
 			{
 				OdataType = "#microsoft.graph.referenceAttachment",
 				Name = "Personal pictures",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"sourceUrl" , "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
-					},
-					{
-						"providerType" , "oneDriveConsumer"
-					},
-					{
-						"permission" , "Edit"
-					},
-					{
-						"isFolder" , "True"
-					},
-				},
+				SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
+				ProviderType = ReferenceAttachmentProvider.OneDriveConsumer,
+				Permission = ReferenceAttachmentPermission.Edit,
+				IsFolder = true,
 			},
 		},
 	},

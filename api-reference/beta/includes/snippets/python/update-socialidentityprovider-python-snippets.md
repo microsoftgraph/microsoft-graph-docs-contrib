@@ -7,14 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = IdentityProviderBase()
+request_body = SocialIdentityProvider()
 request_body.@odata_type = '#microsoft.graph.socialIdentityProvider'
 
-additional_data = [
-'client_secret' => '1111111111111', 
-];
-request_body.additional_data(additional_data)
-
+request_body.client_secret = '1111111111111'
 
 
 

@@ -18,16 +18,12 @@ $requestBody->setPercentComplete(0);
 
 $requestBody->setPriority(5);
 
-$target = new BusinessScenarioTaskTargetBase();
+$target = new BusinessScenarioGroupTarget();
 $target->set@odatatype('microsoft.graph.businessScenarioGroupTarget');
 
 $target->setTaskTargetKind(new PlannerTaskTargetKind('group'));
 
-$additionalData = [
-		'groupId' => '7a339254-4b2b-4410-b295-c890a16776ee', 
-];
-$target->setAdditionalData($additionalData);
-
+$target->setGroupId('7a339254-4b2b-4410-b295-c890a16776ee');
 
 
 $requestBody->setTarget($target);

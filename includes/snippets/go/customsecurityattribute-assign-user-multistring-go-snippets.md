@@ -24,7 +24,6 @@ engineering.SetOdataType(&odataType)
 	project := []string {
 		"Baker",
 		"Cascade",
-
 	}
 	engineering.SetProject(project)
 	customSecurityAttributes.SetEngineering(engineering)

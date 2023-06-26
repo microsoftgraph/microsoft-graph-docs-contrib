@@ -46,7 +46,6 @@ buckets := []graphmodels.PlannerPlanConfigurationBucketLocalizationable {
 	plannerPlanConfigurationBucketLocalization1,
 	plannerPlanConfigurationBucketLocalization2,
 	plannerPlanConfigurationBucketLocalization3,
-
 }
 requestBody.SetBuckets(buckets)
 

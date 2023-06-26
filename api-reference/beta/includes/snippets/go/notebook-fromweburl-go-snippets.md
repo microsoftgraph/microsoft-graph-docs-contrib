@@ -15,7 +15,7 @@ import (
 graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewGetNotebookFromWebUrlPostRequestBody()
+requestBody := graphusers.NewItemGetNotebookFromWebUrlPostRequestBody()
 webUrl := "webUrl value"
 requestBody.SetWebUrl(&webUrl) 
 

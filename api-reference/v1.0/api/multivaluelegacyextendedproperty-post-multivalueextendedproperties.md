@@ -160,8 +160,9 @@ When creating an extended property in a _new_ group post, the response includes 
 the extended property. You cannot create an extended property in an existing group post.
 
 
-## Example
-##### Request 1
+## Examples
+### Example 1
+#### Request
 
 The first example creates a multi-value extended property in a new event all in the same POST operation. Apart from the properties you'd normally
 include for a new event, the request body includes the **multiValueExtendedProperties** collection which contains one extended property.
@@ -171,7 +172,8 @@ The request body includes the following for that multi-value extended property:
 - **value** which specifies `Recreation` as an array of 3 string values, `["Food", "Hiking", "Swimming"]`.
 
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "ignored", "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties" } -->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/events
 Content-Type: application/json
@@ -215,7 +217,112 @@ Content-Type: application/json
 }
 ```
 
-##### Response 1
+#### Response
+
+<!-- {
+  "blockType": "response"  
+} -->
+
+```http
+  HTTP/1.1 200 OK
+```
+
+<!--
+  Content-type: application/json
+  {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('4d29052a-70e8-4251-a7de-542b522cdf25')/events/$entity",
+    "@odata.etag": "W/\"F458GvdYA0ijqgp2gyJwzAAAOCEJmw==\"",
+    "id": "AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQBGAAAAAABaZwRaNsIxTp0lpjY1il_IBwAXjnwa91gDSKOqCnaDInDMAAAAAAENAAAXjnwa91gDSKOqCnaDInDMAAA4KToJAAA=",
+    "createdDateTime": "2023-06-23T00:52:52.5418Z",
+    "lastModifiedDateTime": "2023-06-23T00:52:53.570523Z",
+    "changeKey": "F458GvdYA0ijqgp2gyJwzAAAOCEJmw==",
+    "categories": [],
+    "transactionId": null,
+    "originalStartTimeZone": "Pacific Standard Time",
+    "originalEndTimeZone": "Pacific Standard Time",
+    "iCalUId": "040000008200E00074C5B7101A82E008000000001076340A6DA5D9010000000000000000100000003EE8BF77931D7D40B835A528EFD465E8",
+    "reminderMinutesBeforeStart": 15,
+    "isReminderOn": true,
+    "hasAttachments": false,
+    "subject": "Family reunion",
+    "bodyPreview": "Let's get together this Thanksgiving!",
+    "importance": "normal",
+    "sensitivity": "normal",
+    "isAllDay": false,
+    "isCancelled": false,
+    "isOrganizer": true,
+    "responseRequested": true,
+    "seriesMasterId": null,
+    "showAs": "busy",
+    "type": "singleInstance",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQBGAAAAAABaZwRaNsIxTp0lpjY1il%2BIBwAXjnwa91gDSKOqCnaDInDMAAAAAAENAAAXjnwa91gDSKOqCnaDInDMAAA4KToJAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl": null,
+    "isOnlineMeeting": false,
+    "onlineMeetingProvider": "unknown",
+    "allowNewTimeProposals": true,
+    "occurrenceId": null,
+    "isDraft": false,
+    "hideAttendees": false,
+    "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body>Let's get together this Thanksgiving!</body></html>"
+    },
+    "start": {
+        "dateTime": "2015-11-26T09:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "end": {
+        "dateTime": "2015-11-29T21:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "location": {
+        "displayName": "",
+        "locationType": "default",
+        "uniqueIdType": "unknown",
+        "address": {},
+        "coordinates": {}
+    },
+    "locations": [],
+    "recurrence": null,
+    "attendees": [
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Terrie Barrera",
+                "address": "Terrie@contoso.com"
+            }
+        },
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Lauren Solis",
+                "address": "Lauren@contoso.com"
+            }
+        }
+    ],
+    "organizer": {
+        "emailAddress": {
+            "name": "MOD Administrator",
+            "address": "admin@M365x39866865.OnMicrosoft.com"
+        }
+    },
+    "onlineMeeting": null
+    
+  }
+```
+-->
 
 A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event
 in the response body, similar to the response from [creating just an event](../api/user-post-events.md).
@@ -225,8 +332,8 @@ To see the newly created extended property, [get the event expanded with the ext
 
 
 ****
-
-##### Request 2
+### Example 2
+#### Request
 
 The second example creates one multi-value extended property for the specified message. That extended property is the only
 element in the **multiValueExtendedProperties** collection. The request body includes the following for the
@@ -251,7 +358,7 @@ Content-Type: application/json
 }
 ```
 
-##### Response 2
+#### Response
 
 A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body,
 similar to the response from [updating a message](../api/message-update.md). The response does not

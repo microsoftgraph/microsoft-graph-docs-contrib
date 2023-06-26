@@ -631,6 +631,8 @@ items:
             href: search-concept-searchall.md
           - name: Search multiple entity types
             href: search-concept-interleaving.md
+          - name: Search with multiple requests
+            href: search-concept-multipleRequest.md
           - name: Search Outlook events
             href: search-concept-events.md
           - name: Search Outlook messages
