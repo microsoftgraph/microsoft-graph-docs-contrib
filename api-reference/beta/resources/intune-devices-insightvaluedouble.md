@@ -23,7 +23,7 @@ Inherits from [userExperienceAnalyticsInsightValue](../resources/intune-devices-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|value|Double|Not yet documented|
+|value|Double|The double value of the user experience analytics insight.|
 
 ## Relationships
 None

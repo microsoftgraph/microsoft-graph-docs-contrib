@@ -2456,6 +2456,48 @@
     {
       "ChangeList": [
         {
+          "Id": "5e8653ad-641d-42b9-8f4a-b2994f98b060",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCustomization",
+          "ChangeType": "Addition",
+          "Description": "Added the `contentCustomization` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "5e8653ad-641d-42b9-8f4a-b2994f98b060",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentCustomization",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentCustomization](https://learn.microsoft.com/en-us/graph/api/resources/contentCustomization?view=graph-rest-beta) resource type.",
+          "Target": "contentCustomization"
+        },
+        {
+          "Id": "5e8653ad-641d-42b9-8f4a-b2994f98b060",
+          "ApiChange": "Property",
+          "ChangedApiName": "attributeCollection",
+          "ChangeType": "Addition",
+          "Description": "Added the `attributeCollection` property to the [contentCustomization](https://learn.microsoft.com/en-us/graph/api/resources/contentCustomization?view=graph-rest-beta) resource.",
+          "Target": "contentCustomization"
+        },
+        {
+          "Id": "5e8653ad-641d-42b9-8f4a-b2994f98b060",
+          "ApiChange": "Property",
+          "ChangedApiName": "attributeCollectionRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `attributeCollectionRelativeUrl` property to the [contentCustomization](https://learn.microsoft.com/en-us/graph/api/resources/contentCustomization?view=graph-rest-beta) resource.",
+          "Target": "contentCustomization"
+        }
+      ],
+      "Id": "5e8653ad-641d-42b9-8f4a-b2994f98b060",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-19T00:00:00.4444034Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
           "ApiChange": "Relationship",
           "ChangedApiName": "memberOf",
@@ -8625,6 +8667,200 @@
     {
       "ChangeList": [
         {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "layoutTemplateType",
+          "ChangeType": "Addition",
+          "Description": "Added the **layoutTemplateType** enumeration type.",
+          "Target": "layoutTemplateType"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Resource",
+          "ChangedApiName": "loginPageLayoutConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [loginPageLayoutConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/loginPageLayoutConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "loginPageLayoutConfiguration"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Resource",
+          "ChangedApiName": "loginPageTextVisibilitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [loginPageTextVisibilitySettings](https://learn.microsoft.com/en-us/graph/api/resources/loginPageTextVisibilitySettings?view=graph-rest-1.0) resource type.",
+          "Target": "loginPageTextVisibilitySettings"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customAccountResetCredentialsUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `customAccountResetCredentialsUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCannotAccessYourAccountText",
+          "ChangeType": "Addition",
+          "Description": "Added the `customCannotAccessYourAccountText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCannotAccessYourAccountUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `customCannotAccessYourAccountUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCSS",
+          "ChangeType": "Addition",
+          "Description": "Added the `customCSS` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCSSRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `customCSSRelativeUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customForgotMyPasswordText",
+          "ChangeType": "Addition",
+          "Description": "Added the `customForgotMyPasswordText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customPrivacyAndCookiesText",
+          "ChangeType": "Addition",
+          "Description": "Added the `customPrivacyAndCookiesText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customPrivacyAndCookiesUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `customPrivacyAndCookiesUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customResetItNowText",
+          "ChangeType": "Addition",
+          "Description": "Added the `customResetItNowText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customTermsOfUseText",
+          "ChangeType": "Addition",
+          "Description": "Added the `customTermsOfUseText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customTermsOfUseUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `customTermsOfUseUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "favicon",
+          "ChangeType": "Addition",
+          "Description": "Added the `favicon` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "faviconRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `faviconRelativeUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "headerBackgroundColor",
+          "ChangeType": "Addition",
+          "Description": "Added the `headerBackgroundColor` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "headerLogo",
+          "ChangeType": "Addition",
+          "Description": "Added the `headerLogo` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "headerLogoRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `headerLogoRelativeUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "loginPageLayoutConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the `loginPageLayoutConfiguration` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "loginPageTextVisibilitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `loginPageTextVisibilitySettings` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "squareLogoDark",
+          "ChangeType": "Addition",
+          "Description": "Added the `squareLogoDark` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "squareLogoDarkRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `squareLogoDarkRelativeUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        }
+      ],
+      "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-30T17:42:19.2449231Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2b1254a0-197c-4be1-84a1-d832226e52d7",
           "ApiChange": "Property",
           "ChangedApiName": "securityIdentifier",
@@ -13811,198 +14047,22 @@
       "CreatedDateTime": "2023-05-15T08:54:08.6528325Z",
       "WorkloadArea": "Users",
       "SubArea": ""
-    },  
+    },
     {
       "ChangeList": [
         {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "layoutTemplateType",
-          "ChangeType": "Addition",
-          "Description": "Added the **layoutTemplateType** enumeration type.",
-          "Target": "layoutTemplateType"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Resource",
-          "ChangedApiName": "loginPageLayoutConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the [loginPageLayoutConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/loginPageLayoutConfiguration?view=graph-rest-1.0) resource type.",
-          "Target": "loginPageLayoutConfiguration"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Resource",
-          "ChangedApiName": "loginPageTextVisibilitySettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [loginPageTextVisibilitySettings](https://learn.microsoft.com/en-us/graph/api/resources/loginPageTextVisibilitySettings?view=graph-rest-1.0) resource type.",
-          "Target": "loginPageTextVisibilitySettings"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "Id": "d10f34c8-8787-4aa7-9bb4-3eee0f45fc90",
           "ApiChange": "Property",
-          "ChangedApiName": "customAccountResetCredentialsUrl",
+          "ChangedApiName": "onPremisesLastPasswordSyncDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the `customAccountResetCredentialsUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "customCannotAccessYourAccountText",
-          "ChangeType": "Addition",
-          "Description": "Added the `customCannotAccessYourAccountText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "customCannotAccessYourAccountUrl",
-          "ChangeType": "Addition",
-          "Description": "Added the `customCannotAccessYourAccountUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "customCSS",
-          "ChangeType": "Addition",
-          "Description": "Added the `customCSS` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "customCSSRelativeUrl",
-          "ChangeType": "Addition",
-          "Description": "Added the `customCSSRelativeUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "customForgotMyPasswordText",
-          "ChangeType": "Addition",
-          "Description": "Added the `customForgotMyPasswordText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "customPrivacyAndCookiesText",
-          "ChangeType": "Addition",
-          "Description": "Added the `customPrivacyAndCookiesText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "customPrivacyAndCookiesUrl",
-          "ChangeType": "Addition",
-          "Description": "Added the `customPrivacyAndCookiesUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "customResetItNowText",
-          "ChangeType": "Addition",
-          "Description": "Added the `customResetItNowText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "customTermsOfUseText",
-          "ChangeType": "Addition",
-          "Description": "Added the `customTermsOfUseText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "customTermsOfUseUrl",
-          "ChangeType": "Addition",
-          "Description": "Added the `customTermsOfUseUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "favicon",
-          "ChangeType": "Addition",
-          "Description": "Added the `favicon` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "faviconRelativeUrl",
-          "ChangeType": "Addition",
-          "Description": "Added the `faviconRelativeUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "headerBackgroundColor",
-          "ChangeType": "Addition",
-          "Description": "Added the `headerBackgroundColor` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "headerLogo",
-          "ChangeType": "Addition",
-          "Description": "Added the `headerLogo` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "headerLogoRelativeUrl",
-          "ChangeType": "Addition",
-          "Description": "Added the `headerLogoRelativeUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "loginPageLayoutConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the `loginPageLayoutConfiguration` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "loginPageTextVisibilitySettings",
-          "ChangeType": "Addition",
-          "Description": "Added the `loginPageTextVisibilitySettings` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "squareLogoDark",
-          "ChangeType": "Addition",
-          "Description": "Added the `squareLogoDark` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
-          "ApiChange": "Property",
-          "ChangedApiName": "squareLogoDarkRelativeUrl",
-          "ChangeType": "Addition",
-          "Description": "Added the `squareLogoDarkRelativeUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
-          "Target": "organizationalBrandingProperties"
+          "Description": "Added the `onPremisesLastPasswordSyncDateTime` property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
+          "Target": "organization"
         }
       ],
-      "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+      "Id": "d10f34c8-8787-4aa7-9bb4-3eee0f45fc90",
       "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2023-05-30T17:42:19.2449231Z",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-19T07:13:01.0506132Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }

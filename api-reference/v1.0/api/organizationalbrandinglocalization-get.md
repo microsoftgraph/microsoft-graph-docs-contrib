@@ -206,7 +206,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "ignored",
   "name": "get_organizationalbranding_defaultlocale_bannerLogo",
-  "sampleKeys": ["d69179bf-f4a4-41a9-a9de-249c0f2efb1d"]
+  "sampleKeys": ["d69179bf-f4a4-41a9-a9de-249c0f2efb1d", "default"]
 }-->
 
 ```http
@@ -243,7 +243,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbranding_frlocale_bannerLogo_not_set",
-  "sampleKeys": ["d69179bf-f4a4-41a9-a9de-249c0f2efb1d"]
+  "sampleKeys": ["d69179bf-f4a4-41a9-a9de-249c0f2efb1d", "default"]
 }-->
 
 ```msgraph-interactive
@@ -295,3 +295,12 @@ HTTP/1.1 200 OK
 
 {}
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get organizationalBrandingLocalization",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}-->

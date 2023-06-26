@@ -54,6 +54,7 @@ If successful, this method returns a `201 Created` response code if the **histor
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
     "blockType": "request",
     "name": "upsert_historyItem"
@@ -69,6 +70,16 @@ Content-type: application/json
     "lastActiveDateTime": "2015-02-11T20:54:04.3457274+00:00"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upsert-historyitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/upsert-historyitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

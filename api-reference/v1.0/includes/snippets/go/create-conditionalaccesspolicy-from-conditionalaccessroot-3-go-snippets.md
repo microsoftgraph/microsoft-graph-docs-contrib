@@ -25,8 +25,7 @@ signInRiskLevels := []graphmodels.RiskLevelable {
 	riskLevel := graphmodels.HIGH_RISKLEVEL 
 	conditions.SetRiskLevel(&riskLevel) 
 	riskLevel := graphmodels.MEDIUM_RISKLEVEL 
-	conditions.SetRiskLevel(&riskLevel) 
-
+	conditions.SetRiskLevel(&riskLevel)
 }
 conditions.SetSignInRiskLevels(signInRiskLevels)
 clientAppTypes := []graphmodels.ConditionalAccessClientAppable {
@@ -35,14 +34,12 @@ clientAppTypes := []graphmodels.ConditionalAccessClientAppable {
 	conditionalAccessClientApp := graphmodels.EXCHANGEACTIVESYNC_CONDITIONALACCESSCLIENTAPP 
 	conditions.SetConditionalAccessClientApp(&conditionalAccessClientApp) 
 	conditionalAccessClientApp := graphmodels.OTHER_CONDITIONALACCESSCLIENTAPP 
-	conditions.SetConditionalAccessClientApp(&conditionalAccessClientApp) 
-
+	conditions.SetConditionalAccessClientApp(&conditionalAccessClientApp)
 }
 conditions.SetClientAppTypes(clientAppTypes)
 applications := graphmodels.NewConditionalAccessApplications()
 includeApplications := []string {
 	"All",
-
 }
 applications.SetIncludeApplications(includeApplications)
 excludeApplications := []string {
@@ -53,7 +50,6 @@ excludeApplications := []string {
 	"797f4846-ba00-4fd7-ba43-dac1f8f63013",
 	"05a65629-4c1b-48c1-a78b-804c4abdd4af",
 	"7df0a125-d3be-4c96-aa54-591f83ff541c",
-
 }
 applications.SetExcludeApplications(excludeApplications)
 includeUserActions := []string {
@@ -64,13 +60,11 @@ conditions.SetApplications(applications)
 users := graphmodels.NewConditionalAccessUsers()
 includeUsers := []string {
 	"a702a13d-a437-4a07-8a7e-8c052de62dfd",
-
 }
 users.SetIncludeUsers(includeUsers)
 excludeUsers := []string {
 	"124c5b6a-ffa5-483a-9b88-04c3fce5574a",
 	"GuestsOrExternalUsers",
-
 }
 users.SetExcludeUsers(excludeUsers)
 includeGroups := []string {
@@ -85,41 +79,35 @@ includeRoles := []string {
 	"9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
 	"cf1c38e5-3621-4004-a7cb-879624dced7c",
 	"c4e39bd9-1100-46d3-8c65-fb160da0071f",
-
 }
 users.SetIncludeRoles(includeRoles)
 excludeRoles := []string {
 	"b0f54661-2d74-4c50-afa3-1ec803f12efe",
-
 }
 users.SetExcludeRoles(excludeRoles)
 conditions.SetUsers(users)
 platforms := graphmodels.NewConditionalAccessPlatforms()
 includePlatforms := []graphmodels.ConditionalAccessDevicePlatformable {
 	conditionalAccessDevicePlatform := graphmodels.ALL_CONDITIONALACCESSDEVICEPLATFORM 
-	platforms.SetConditionalAccessDevicePlatform(&conditionalAccessDevicePlatform) 
-
+	platforms.SetConditionalAccessDevicePlatform(&conditionalAccessDevicePlatform)
 }
 platforms.SetIncludePlatforms(includePlatforms)
 excludePlatforms := []graphmodels.ConditionalAccessDevicePlatformable {
 	conditionalAccessDevicePlatform := graphmodels.IOS_CONDITIONALACCESSDEVICEPLATFORM 
 	platforms.SetConditionalAccessDevicePlatform(&conditionalAccessDevicePlatform) 
 	conditionalAccessDevicePlatform := graphmodels.WINDOWSPHONE_CONDITIONALACCESSDEVICEPLATFORM 
-	platforms.SetConditionalAccessDevicePlatform(&conditionalAccessDevicePlatform) 
-
+	platforms.SetConditionalAccessDevicePlatform(&conditionalAccessDevicePlatform)
 }
 platforms.SetExcludePlatforms(excludePlatforms)
 conditions.SetPlatforms(platforms)
 locations := graphmodels.NewConditionalAccessLocations()
 includeLocations := []string {
 	"AllTrusted",
-
 }
 locations.SetIncludeLocations(includeLocations)
 excludeLocations := []string {
 	"00000000-0000-0000-0000-000000000000",
 	"d2136c9c-b049-47ae-b9cf-316e04ef7198",
-
 }
 locations.SetExcludeLocations(excludeLocations)
 conditions.SetLocations(locations)
@@ -137,8 +125,7 @@ builtInControls := []graphmodels.ConditionalAccessGrantControlable {
 	conditionalAccessGrantControl := graphmodels.APPROVEDAPPLICATION_CONDITIONALACCESSGRANTCONTROL 
 	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl) 
 	conditionalAccessGrantControl := graphmodels.COMPLIANTAPPLICATION_CONDITIONALACCESSGRANTCONTROL 
-	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl) 
-
+	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl)
 }
 grantControls.SetBuiltInControls(builtInControls)
 customAuthenticationFactors := []string {
@@ -148,7 +135,6 @@ grantControls.SetCustomAuthenticationFactors(customAuthenticationFactors)
 termsOfUse := []string {
 	"ce580154-086a-40fd-91df-8a60abac81a0",
 	"7f29d675-caff-43e1-8a53-1b8516ed2075",
-
 }
 grantControls.SetTermsOfUse(termsOfUse)
 requestBody.SetGrantControls(grantControls)

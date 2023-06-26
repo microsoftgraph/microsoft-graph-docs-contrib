@@ -20,32 +20,25 @@ $requestBody->setIsEnabled(true);
 
 $requestBody->setIsSchedulingEnabled(false);
 
-$executionConditions = new WorkflowExecutionConditions();
+$executionConditions = new TriggerAndScopeBasedConditions();
 $executionConditions->set@odatatype('#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
 
-$additionalData = [
-		'scope' => $executionConditions = new Scope();
-$		executionConditions->set@odatatype('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
+$executionConditionsScope = new RuleBasedSubjectSet();
+$executionConditionsScope->set@odatatype('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
 
-$		executionConditions->setRule('(country eq \'Australia\')');
-
-
-$executionConditions->setScope($scope);
-
-		'trigger' => $executionConditions = new Trigger();
-$		executionConditions->set@odatatype('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
-
-$		executionConditions->setTimeBasedAttribute('employeeHireDate');
-
-		$executionConditions->setOffsetInDays(0);
+$executionConditionsScope->setRule('(country eq \'Australia\')');
 
 
-$executionConditions->setTrigger($trigger);
+$executionConditions->setScope($executionConditionsScope);
+$executionConditionsTrigger = new TimeBasedAttributeTrigger();
+$executionConditionsTrigger->set@odatatype('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
 
-];
-$executionConditions->setAdditionalData($additionalData);
+$executionConditionsTrigger->setTimeBasedAttribute(new WorkflowTriggerTimeBasedAttribute('employeehiredate'));
+
+$executionConditionsTrigger->setOffsetInDays(0);
 
 
+$executionConditions->setTrigger($executionConditionsTrigger);
 
 $requestBody->setExecutionConditions($executionConditions);
 $tasksTask1 = new Task();
