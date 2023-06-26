@@ -1,6 +1,6 @@
 ---
 title: "userRegistrationFeatureCount resource type"
-description: "Number of users registered or capable for Multi-Factor Authentication, Self-Service Password Reset and Passwordless Authentication."
+description: "Represents the number of users registered or capable for multi-factor authentication, self-service password reset, and passwordless authentication."
 author: "kvenkit"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -11,19 +11,23 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the number of users registered or capable for Multi-Factor Authentication, Self-Service Password Reset and Passwordless Authentication.
+Represents the number of users registered or capable for multi-factor authentication, self-service password reset, and passwordless authentication.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|feature|authenticationMethodFeature|Number of users registered or capable for Multi-Factor Authentication, Self-Service Password Reset and Passwordless Authentication. Possible values are: `ssprRegistered`, `ssprEnabled`, `ssprCapable`, `passwordlessCapable`, `mfaCapable`.|
+|feature|authenticationMethodFeature|Number of users registered or capable for multi-factor authentication, self-service password reset, and passwordless authentication. Possible values are: `ssprRegistered`, `ssprEnabled`, `ssprCapable`, `passwordlessCapable`, `mfaCapable`, `unknownFutureValue`.|
 |userCount|Int64|Number of users.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userRegistrationFeatureCount"
@@ -33,6 +37,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.userRegistrationFeatureCount",
   "feature": "String",
-  "userCount": "Integer"
+  "userCount": "Int64"
 }
 ```
