@@ -12,19 +12,20 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAttachment()
 name := "Personal pictures"
 requestBody.SetName(&name) 
-additionalData := map[string]interface{}{
-	"sourceUrl" : "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-	"providerType" : "oneDriveConsumer", 
-	"permission" : "Edit", 
-	"isFolder" : "True", 
-}
-requestBody.SetAdditionalData(additionalData)
+sourceUrl := "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
+requestBody.SetSourceUrl(&sourceUrl) 
+providerType := graphmodels.ONEDRIVECONSUMER_REFERENCEATTACHMENTPROVIDER 
+requestBody.SetProviderType(&providerType) 
+permission := graphmodels.EDIT_REFERENCEATTACHMENTPERMISSION 
+requestBody.SetPermission(&permission) 
+isFolder := true
+requestBody.SetIsFolder(&isFolder) 
 
 result, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
 

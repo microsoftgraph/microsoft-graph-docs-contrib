@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new IndustryDataConnector();
+$requestBody = new AzureDataLakeConnector();
 $requestBody->set@odatatype('microsoft.graph.industryData.azureDataLakeConnector');
 
 $requestBody->setDisplayName('API Monitor 60201009');

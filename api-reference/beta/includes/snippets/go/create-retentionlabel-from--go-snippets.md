@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewRetentionLabel()
+requestBody := graphmodelssecurity.NewRetentionLabel()
 displayName := "String"
 requestBody.SetDisplayName(&displayName) 
 behaviorDuringRetentionPeriod := graphmodels.STRING_BEHAVIORDURINGRETENTIONPERIOD 
@@ -24,7 +25,7 @@ actionAfterRetentionPeriod := graphmodels.STRING_ACTIONAFTERRETENTIONPERIOD
 requestBody.SetActionAfterRetentionPeriod(&actionAfterRetentionPeriod) 
 retentionTrigger := graphmodels.STRING_RETENTIONTRIGGER 
 requestBody.SetRetentionTrigger(&retentionTrigger) 
-retentionDuration := graphmodels.NewRetentionDuration()
+retentionDuration := graphmodelssecurity.NewRetentionDuration()
 requestBody.SetRetentionDuration(retentionDuration)
 isInUse := boolean
 requestBody.SetIsInUse(&isInUse) 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Provides information about the quarantine state of a [synchronizationJob](synchronization-synchronizationjob.md).
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |currentBegan|DateTimeOffset|Date and time when the quarantine was last evaluated and imposed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |nextAttempt|DateTimeOffset|Date and time when the next attempt to re-evaluate the quarantine will be made. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
@@ -39,14 +39,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "error": {"@odata.type": "microsoft.graph.synchronizationError"},
+  "error": {
+    "@odata.type": "microsoft.graph.synchronizationError"
+  },
   "currentBegan": "String (timestamp)",
   "nextAttempt": "String (timestamp)",
   "reason": "String",
   "seriesBegan": "String (timestamp)",
-  "seriesCount": 1024
+  "seriesCount": "Integer"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
