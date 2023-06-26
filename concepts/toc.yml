@@ -1081,7 +1081,7 @@ items:
               - name: Teams channel picker
                 href: toolkit/components/teams-channel-picker.md
               - name: Theme toggle
-                href: toolkit/components/todo.md
+                href: toolkit/components/theme-toggle.md
               - name: To-do tasks
                 href: toolkit/components/todo.md
           - name: Customize components
