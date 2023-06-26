@@ -45,8 +45,8 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|localizedNames|[microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md) collection|Name of the set to be created.|
-|parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|termstore-group under which the set needs to be created.|
+|localizedNames|[microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md) collection|Name of the set to be created.|
+|parentGroup|[microsoft.graph.termStore.group](../resources/termstore-group.md)|termstore-group under which the set needs to be created.|
 
 
 
