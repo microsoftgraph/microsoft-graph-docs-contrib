@@ -58,7 +58,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "intune_apps_mobileappcontentfile_commit_commit_action" }-->
+<!-- { "blockType": "ignored" , "name" : "intune_apps_mobileappcontentfile_commit_commit_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}/commit
 
@@ -82,7 +82,7 @@ Content-length: 399
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-<!-- { "blockType": "response" , "@odata.type" : "Edm.String" }-->
+<!-- { "blockType": "response"  }-->
 ``` http
 HTTP/1.1 204 No Content
 ```
