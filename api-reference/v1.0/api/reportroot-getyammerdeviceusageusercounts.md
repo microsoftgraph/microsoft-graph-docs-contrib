@@ -77,7 +77,7 @@ The following is an example of the request.
 
 
 <!--{
-  "blockType": "request"
+  "blockType": "request",
   "name": "reportroot_getyammerdeviceusageusercounts"
 }-->
 
