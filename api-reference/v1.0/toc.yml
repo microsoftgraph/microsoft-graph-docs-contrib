@@ -185,7 +185,7 @@ items:
           href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
       - name: Use the CLI
         items:
-          - name: CLI overview
+          - name: CLI overview (preview)
             href: /graph/cli/overview?context=graph/api/1.0
           - name: Install the CLI
             href: /graph/cli/installation?context=graph/api/1.0
