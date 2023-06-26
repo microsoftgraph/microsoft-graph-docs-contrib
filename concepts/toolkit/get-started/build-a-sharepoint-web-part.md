@@ -129,7 +129,7 @@ Go to your **SharePoint Admin center**. In the left-hand navigation, select **Ad
 
 You're now ready to add your web part to a SharePoint page and test it out. You will need to use the hosted workbench to test web parts that use the Microsoft Graph Toolkit because the components need the authenticated context in order to call Microsoft Graph. You can find your hosted workbench at **https://<YOUR_TENANT>.sharepoint.com/\_layouts/15/workbench.aspx**.
 
-Open the `config\serve.json` file in your project and replace the value of `initialPage` with the url for your hosted workbench:
+Open the `config\serve.json` file in your project and replace the value of `initialPage` with the URL for your hosted workbench:
 
 ```json
 "initialPage": "https://<YOUR_TENANT>.sharepoint.com/_layouts/15/workbench.aspx",
