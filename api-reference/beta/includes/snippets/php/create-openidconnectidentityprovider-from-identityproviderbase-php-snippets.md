@@ -9,36 +9,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new IdentityProviderBase();
+$requestBody = new OpenIdConnectIdentityProvider();
 $requestBody->set@odatatype('microsoft.graph.openIdConnectIdentityProvider');
 
 $requestBody->setDisplayName('Login with the Contoso identity provider');
 
-$additionalData = [
-		'clientId' => '56433757-cadd-4135-8431-2c9e3fd68ae8', 
-		'clientSecret' => '12345', 
-		'claimsMapping' => $requestBody = new ClaimsMapping();
-$		requestBody->setUserId('myUserId');
+$requestBody->setClientId('56433757-cadd-4135-8431-2c9e3fd68ae8');
 
-$		requestBody->setGivenName('myGivenName');
+$requestBody->setClientSecret('12345');
 
-$		requestBody->setSurname('mySurname');
+$claimsMapping = new ClaimsMapping();
+$claimsMapping->setUserId('myUserId');
 
-$		requestBody->setEmail('myEmail');
+$claimsMapping->setGivenName('myGivenName');
 
-$		requestBody->setDisplayName('myDisplayName');
+$claimsMapping->setSurname('mySurname');
+
+$claimsMapping->setEmail('myEmail');
+
+$claimsMapping->setDisplayName('myDisplayName');
 
 
 $requestBody->setClaimsMapping($claimsMapping);
+$requestBody->setDomainHint('mycustomoidc');
 
-		'domainHint' => 'mycustomoidc', 
-		'metadataUrl' => 'https://mycustomoidc.com/.well-known/openid-configuration', 
-		'responseMode' => 'form_post', 
-		'responseType' => 'code', 
-		'scope' => 'openid', 
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setMetadataUrl('https://mycustomoidc.com/.well-known/openid-configuration');
 
+$requestBody->setResponseMode(new OpenIdConnectResponseMode('form_post'));
+
+$requestBody->setResponseType(new OpenIdConnectResponseTypes('code'));
+
+$requestBody->setScope('openid');
 
 
 

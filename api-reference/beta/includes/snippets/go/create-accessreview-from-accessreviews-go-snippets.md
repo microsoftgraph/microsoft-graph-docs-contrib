@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessReview()
@@ -45,7 +45,6 @@ accessReviewReviewer1.SetId(&id)
 reviewers := []graphmodels.AccessReviewReviewerable {
 	accessReviewReviewer,
 	accessReviewReviewer1,
-
 }
 requestBody.SetReviewers(reviewers)
 settings := graphmodels.NewAccessReviewSettings()

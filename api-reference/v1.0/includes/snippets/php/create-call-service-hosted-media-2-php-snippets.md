@@ -76,7 +76,7 @@ $requestBody->setTargets($targetsArray);
 $requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
 ]);
 
-$mediaConfig = new MediaConfig();
+$mediaConfig = new ServiceHostedMediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
 
 

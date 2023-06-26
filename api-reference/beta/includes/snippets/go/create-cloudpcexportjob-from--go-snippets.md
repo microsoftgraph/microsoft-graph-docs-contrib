@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewCloudPcExportJob()
@@ -24,7 +24,6 @@ select := []string {
 	"UserPrincipalName",
 	"DaysSinceLastSignIn",
 	"TotalUsageInHour",
-
 }
 requestBody.SetSelect(select)
 
