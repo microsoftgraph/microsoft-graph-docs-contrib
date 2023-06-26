@@ -16091,7 +16091,7 @@ items:
               href: api/security-ediscoveryreviewsetquery-update.md
             - name: Delete
               href: api/security-ediscoveryreviewset-delete-queries.md
-            - name: Export (preview)
+            - name: Export 
               href: api/security-ediscoveryreviewsetquery-export.md
               items:
               - name: Get download URL (deprecated)
