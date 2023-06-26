@@ -65,7 +65,7 @@ The Azure AD synchronization API uses OAuth 2.0 for authorization. Before making
 
 The following example shows how to find service principal object by display name.
 
-**Request**
+#### Request
 
 <!-- { "blockType": "ignored" } -->
 ```http
