@@ -1,6 +1,6 @@
 ---
 title: "synchronizationSchema: parseExpression"
-description: "(../resources/synchronization_attributemappingsource.md) object. "
+description: "Parse a given string expression into an attributeMappingSource object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
