@@ -9,13 +9,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new AccessPackageAssignmentRequestBuilderGetRequestConfiguration();
-$queryParameters = AccessPackageAssignmentRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new AdditionalAccessWithAccessPackageIdWithIncompatibleAccessPackageIdRequestBuilderGetRequestConfiguration();
+$queryParameters = AdditionalAccessWithAccessPackageIdWithIncompatibleAccessPackageIdRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["target"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignments()->byAccessPackageAssignmentId('accessPackageAssignment-id')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignments()->additionalAccess(accessPackageId='{accessPackageId}',incompatibleAccessPackageId='{incompatibleAccessPackageId}')()->get($requestConfiguration);
 
 
 ```

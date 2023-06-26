@@ -15,7 +15,7 @@ import (
 graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewReplyAllPostRequestBody()
+requestBody := graphusers.NewItemReplyAllPostRequestBody()
 comment := "comment-value"
 requestBody.SetComment(&comment) 
 

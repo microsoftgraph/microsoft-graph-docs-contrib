@@ -18,7 +18,6 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 requestBody := graphmodels.NewAuthorizationPolicy()
 permissionGrantPolicyIdsAssignedToDefaultUserRole := []string {
 	"managePermissionGrantsForSelf.microsoft-user-default-low",
-
 }
 requestBody.SetPermissionGrantPolicyIdsAssignedToDefaultUserRole(permissionGrantPolicyIdsAssignedToDefaultUserRole)
 
