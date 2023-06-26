@@ -123,6 +123,56 @@
     {
       "ChangeList": [
         {
+          "Id": "e6fbdfd4-1666-480e-92d6-c0bbee33eaf8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sensitivityLabelAssignmentMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensitivityLabelAssignmentMethod** enumeration type.",
+          "Target": "sensitivityLabelAssignmentMethod"
+        },
+        {
+          "Id": "e6fbdfd4-1666-480e-92d6-c0bbee33eaf8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extractSensitivityLabelsResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [extractSensitivityLabelsResult](https://learn.microsoft.com/graph/api/resources/extractSensitivityLabelsResult?view=graph-rest-1.0) resource type.",
+          "Target": "extractSensitivityLabelsResult"
+        },
+        {
+          "Id": "e6fbdfd4-1666-480e-92d6-c0bbee33eaf8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [sensitivityLabelAssignment](https://learn.microsoft.com/graph/api/resources/sensitivityLabelAssignment?view=graph-rest-1.0) resource type.",
+          "Target": "sensitivityLabelAssignment"
+        },
+        {
+          "Id": "e6fbdfd4-1666-480e-92d6-c0bbee33eaf8",
+          "ApiChange": "Method",
+          "ChangedApiName": "assignSensitivityLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignSensitivityLabel](https://review.learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0&tabs=http) method to the [driveItem](https://learn.microsoft.com/graph/api/driveItem-get?view=graph-rest-1.0&tabs=http) resource.",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "e6fbdfd4-1666-480e-92d6-c0bbee33eaf8",
+          "ApiChange": "Method",
+          "ChangedApiName": "extractSensitivityLabels",
+          "ChangeType": "Addition",
+          "Description": "Added the [extractSensitivityLabels](https://review.learn.microsoft.com/graph/api/driveitem-extractsensitivitylabels?view=graph-rest-1.0&tabs=http) method to the [driveItem](https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0&tabs=http) resource.",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "e6fbdfd4-1666-480e-92d6-c0bbee33eaf8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-06-15T12:09:50.4097557Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bb775eb6-032d-4958-946f-a5b608a5be43",
           "ApiChange": "Method",
           "ChangedApiName": "assignSensitivityLabel",
