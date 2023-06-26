@@ -19,7 +19,7 @@ Building a tab involves the following steps:
 
 ## Build a new Teams tab using React and Fluent UI with the Teams Toolkit
 
-To get start, use [this documentation](/microsoftteams/platform/toolkit/create-new-project) to get your tab up and running. When asked about the App Features of your tab, select **React with Fluent UI**. When asked about the **Programming Language**, select **TypeScript**. For the rest, go through the regular path of the wizard.
+To get started, see [Create a new Teams project](/microsoftteams/platform/toolkit/create-new-project) to get your tab up and running. When prompted to choose the capabilities of your new App, select **React with Fluent UI**. When prompted to choose a **Programming Language**, select **TypeScript**. For the rest, go through the regular path of the wizard.
 
 ---
 
@@ -65,7 +65,7 @@ export default function Tab() {
 
 ## Initialize the TeamsFx Provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [TeamsFx Provider](../providers/teamsfx.md) handles all the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
+Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [TeamsFx Provider](../providers/teamsfx.md) handles all the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
 
 To initialize the provider in your JavaScript code, add the following code in the `imports` section of your file:
 
