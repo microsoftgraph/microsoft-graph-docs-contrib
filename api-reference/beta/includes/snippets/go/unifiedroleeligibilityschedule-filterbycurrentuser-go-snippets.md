@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.RoleManagement().Directory().RoleEligibilitySchedules().ByRoleEligibilityScheduleId("unifiedRoleEligibilitySchedule-id").Get(context.Background(), nil)
+result, err := graphClient.RoleManagement().Directory().RoleEligibilitySchedules().FilterByCurrentUser(on='{on}')().Get(context.Background(), nil)
 
 
 ```

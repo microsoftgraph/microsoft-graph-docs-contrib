@@ -52,12 +52,16 @@ If successful, this method returns a `200 OK` response code and [enterpriseCodeS
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_apps_enterprisecodesigningcertificate_get_get_enterprisecodesigningcertificate" }-->
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSigningCertificateId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.enterpriseCodeSigningCertificate" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

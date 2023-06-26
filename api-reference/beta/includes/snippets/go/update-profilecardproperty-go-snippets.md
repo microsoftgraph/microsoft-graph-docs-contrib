@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewProfileCardProperty()
@@ -29,13 +29,11 @@ displayNameLocalization.SetDisplayName(&displayName)
 
 localizations := []graphmodels.DisplayNameLocalizationable {
 	displayNameLocalization,
-
 }
 profileCardAnnotation.SetLocalizations(localizations)
 
 annotations := []graphmodels.ProfileCardAnnotationable {
 	profileCardAnnotation,
-
 }
 requestBody.SetAnnotations(annotations)
 
