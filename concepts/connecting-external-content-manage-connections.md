@@ -74,7 +74,7 @@ To enable one or more content experiences, set the value of the **enabledContent
 
 | enabledContentExperiences value | Description |
 |-|-|
-| search | Allows your content to appear in Microsoft search results. The format of these results is consistent across different search canvases, such as SharePoint and Microsoft Bing. Your content will also appear in the Quick Access & My Content sections of the [M365 App](Office.com) if you send [activities](./graph/api/externalconnectors-externalitem-addactivities) and register [activity settings](./graph/api/resources/externalconnectors-activitysettings).  |
+| search | Allows your content to appear in Microsoft search results. The format of these results is consistent across different search canvases, such as SharePoint and Microsoft Bing. Your content will also appear in the Quick Access & My Content sections of the [Microsoft 365 App](Office.com) if you send [activities](./graph/api/externalconnectors-externalitem-addactivities) and register [activity settings](./graph/api/resources/externalconnectors-activitysettings).  |
 | compliance | Allows your content to be visible to the Microsoft Purview advanced eDiscovery solution. For details about advanced eDiscovery solution & licensing requirements, see [Microsoft Purview solutions](/microsoft-365/compliance/ediscovery).|
 
 The following example shows how to update a connection to enable both the search and compliance content experiences.
