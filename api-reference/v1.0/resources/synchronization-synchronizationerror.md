@@ -15,7 +15,6 @@ Represents an error that occurred during the synchronization process.
 
 ## Properties
 
-<!-- Add descriptions for the properties. Fill in the examples. -->
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |code|String| The error code. For example, `AzureDirectoryB2BManagementPolicyCheckFailure`. |
