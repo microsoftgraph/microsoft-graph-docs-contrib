@@ -1,24 +1,24 @@
 ---
-title: "Build a web application with the Microsoft Graph Toolkit"
-description: "Get started building a web application using the Microsoft Graph Toolkit."
+title: "Build a web application with Microsoft Graph Toolkit"
+description: "Get started building a web application using Microsoft Graph Toolkit."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
 # Build a web application with the Microsoft Graph Toolkit
 
-This topic describes how to get started with the Microsoft Graph Toolkit in a web application written in vanilla JavaScript. For a step-by-step tutorial, try the [Get started with Microsoft Graph Toolkit module](/training/modules/msgraph-toolkit-intro/). If you would like to learn how to use the Toolkit with a web framework, see [Build a web app (React)](./use-toolkit-with-react.md) or [Build a web app (Angular)](./use-toolkit-with-angular.md).
+This topic describes how to get started with Microsoft Graph Toolkit in a web application written in vanilla JavaScript. For a step-by-step tutorial, try the [Get started with Microsoft Graph Toolkit module](/training/modules/msgraph-toolkit-intro/). If you would like to learn how to use the Toolkit with a web framework, see [Build a web app (React)](./use-toolkit-with-react.md) or [Build a web app (Angular)](./use-toolkit-with-angular.md).
 
-Getting started with the Microsoft Graph Toolkit involves the following steps:
+Getting started with the Toolkit involves the following steps:
 
 1. Add Microsoft Graph Toolkit to your project.
 2. Initialize the MSAL2 Provider.
 3. Add components.
 4. Test your application.
 
-## Add the Microsoft Graph Toolkit to your project
+## Add Microsoft Graph Toolkit to your project
 
-You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package.
+You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package.
 
 # [unpkg](#tab/html)
 
@@ -42,8 +42,8 @@ npm install @microsoft/mgt
 
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [MSAL2 Provider](../providers/msal2.md) uses msal-browser to sign in users and acquire tokens. You can initialize this provider in your HTML or JavaScript.
 
-> **Note**: If you are currently using the MSAL Provider and would like to update to MSAL2 Provider, follow the steps listed [here](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider).
-> If you would like to use your own backend authentication, use the [Proxy Provider](../providers/proxy.md) in place of the MSAL2 Provider.
+> **Note**: If you're currently using the MSAL Provider and would like to update to MSAL2 Provider, see [Migrating from MSAL Provider to MSAL2 Provider](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider).
+> If you want to use your own backend authentication, use the [Proxy Provider](../providers/proxy.md) in place of the MSAL2 Provider.
 
 You can choose to initialize the provider in either your HTML or your JavaScript code.
 
