@@ -680,10 +680,18 @@
       "ChangeList": [
         {
           "Id": "1dbbd2a3-caa8-49f3-bc3c-763ff8e6419a",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageAutomaticRequestSettings",
+          "ApiChange": "Property",
+          "ChangedApiName": "removeAccessWhenTargetLeavesAllowedTargets",
           "ChangeType": "Addition",
-          "Description": "Added the **removeAccessWhenTargetLeavesAllowedTargets** and **gracePeriodBeforeAccessRemoval** properties to [accessPackageAutomaticRequestSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAutomaticRequestSettings?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **removeAccessWhenTargetLeavesAllowedTargets** property to [accessPackageAutomaticRequestSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAutomaticRequestSettings?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAutomaticRequestSettings"
+        },
+        {
+          "Id": "1dbbd2a3-caa8-49f3-bc3c-763ff8e6419a",
+          "ApiChange": "Property",
+          "ChangedApiName": "gracePeriodBeforeAccessRemoval",
+          "ChangeType": "Addition",
+          "Description": "Added the **gracePeriodBeforeAccessRemoval** property to [accessPackageAutomaticRequestSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAutomaticRequestSettings?view=graph-rest-1.0) resource type.",
           "Target": "accessPackageAutomaticRequestSettings"
         }
       ],
