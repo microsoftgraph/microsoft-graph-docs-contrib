@@ -98,7 +98,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.report"
+  "@odata.type": "String"
 } -->
 ```http
 HTTP/1.1 200 OK
