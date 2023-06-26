@@ -2202,7 +2202,7 @@
       "ChangeList": [
         {
           "Id": "b32f8312-c1c8-4c2f-9067-a63caa0978d3",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "authenticationMethodFeature",
           "ChangeType": "Addition",
           "Description": "Added the **authenticationMethodFeature** enumeration type.",
@@ -2210,7 +2210,7 @@
         },
         {
           "Id": "b32f8312-c1c8-4c2f-9067-a63caa0978d3",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "featureType",
           "ChangeType": "Addition",
           "Description": "Added the **featureType** enumeration type.",
@@ -2218,7 +2218,7 @@
         },
         {
           "Id": "b32f8312-c1c8-4c2f-9067-a63caa0978d3",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "includedUserRoles",
           "ChangeType": "Addition",
           "Description": "Added the **includedUserRoles** enumeration type.",
@@ -2226,7 +2226,7 @@
         },
         {
           "Id": "b32f8312-c1c8-4c2f-9067-a63caa0978d3",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "includedUserTypes",
           "ChangeType": "Addition",
           "Description": "Added the **includedUserTypes** enumeration type.",
@@ -2234,7 +2234,7 @@
         },
         {
           "Id": "b32f8312-c1c8-4c2f-9067-a63caa0978d3",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "signInUserType",
           "ChangeType": "Addition",
           "Description": "Added the **signInUserType** enumeration type.",
@@ -2242,7 +2242,7 @@
         },
         {
           "Id": "b32f8312-c1c8-4c2f-9067-a63caa0978d3",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "userDefaultAuthenticationMethod",
           "ChangeType": "Addition",
           "Description": "Added the **userDefaultAuthenticationMethod** enumeration type.",
@@ -2261,7 +2261,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userRegistrationFeatureSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [userRegistrationFeatureSummary](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureSummary?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [userRegistrationFeatureSummary](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureSummary?view=graph-rest-1.0) resource and a supported method.",
           "Target": "userRegistrationFeatureSummary"
         },
         {
@@ -2277,7 +2277,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userRegistrationMethodSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [userRegistrationMethodSummary](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationMethodSummary?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [userRegistrationMethodSummary](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationMethodSummary?view=graph-rest-1.0) resource and a supported method.",
           "Target": "userRegistrationMethodSummary"
         },
         {
@@ -2285,7 +2285,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationMethodsRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [authenticationMethodsRoot](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-1.0) resource",
+          "Description": "Added the [authenticationMethodsRoot](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-1.0) resource type.",
           "Target": "authenticationMethodsRoot"
         },
         {
@@ -2293,7 +2293,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "reportRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-1.0) resource",
+          "Description": "Added the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-1.0) resource type.",
           "Target": "reportRoot"
         },
         {
@@ -2301,7 +2301,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userRegistrationDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-1.0) resource",
+          "Description": "Added the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-1.0) resource and supported methods.",
           "Target": "userRegistrationDetails"
         },
         {
@@ -2309,15 +2309,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "usersRegisteredByFeature",
           "ChangeType": "Addition",
-          "Description": "Added the [usersRegisteredByFeature](https://learn.microsoft.com/en-us/graph/api/authenticationMethodsRoot?view=graph-rest-1.0) method to the [authenticationMethodsRoot](https://learn.microsoft.com/en-us/graph/api/authenticationMethodsRoot?view=graph-rest-1.0) resource.",
-          "Target": "authenticationMethodsRoot"
-        },
-        {
-          "Id": "b32f8312-c1c8-4c2f-9067-a63caa0978d3",
-          "ApiChange": "Method",
-          "ChangedApiName": "usersRegisteredByFeature",
-          "ChangeType": "Addition",
-          "Description": "Added the [usersRegisteredByFeature](https://learn.microsoft.com/en-us/graph/api/authenticationMethodsRoot?view=graph-rest-1.0) method to the [authenticationMethodsRoot](https://learn.microsoft.com/en-us/graph/api/authenticationMethodsRoot?view=graph-rest-1.0) resource.",
+          "Description": "Added the [usersRegisteredByFeature](https://learn.microsoft.com/en-us/graph/api/authenticationmethodsroot-usersregisteredbyfeature?view=graph-rest-1.0) method to the [authenticationMethodsRoot](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-1.0) resource.",
           "Target": "authenticationMethodsRoot"
         },
         {
@@ -2325,31 +2317,15 @@
           "ApiChange": "Method",
           "ChangedApiName": "usersRegisteredByMethod",
           "ChangeType": "Addition",
-          "Description": "Added the [usersRegisteredByMethod](https://learn.microsoft.com/en-us/graph/api/authenticationMethodsRoot?view=graph-rest-1.0) method to the [authenticationMethodsRoot](https://learn.microsoft.com/en-us/graph/api/authenticationMethodsRoot?view=graph-rest-1.0) resource.",
+          "Description": "Added the [usersRegisteredByMethod](https://learn.microsoft.com/en-us/graph/api/authenticationmethodsroot-usersregisteredbymethod?view=graph-rest-1.0) method to the [authenticationMethodsRoot](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-1.0) resource.",
           "Target": "authenticationMethodsRoot"
-        },
-        {
-          "Id": "b32f8312-c1c8-4c2f-9067-a63caa0978d3",
-          "ApiChange": "Method",
-          "ChangedApiName": "usersRegisteredByMethod",
-          "ChangeType": "Addition",
-          "Description": "Added the [usersRegisteredByMethod](https://learn.microsoft.com/en-us/graph/api/authenticationMethodsRoot?view=graph-rest-1.0) method to the [authenticationMethodsRoot](https://learn.microsoft.com/en-us/graph/api/authenticationMethodsRoot?view=graph-rest-1.0) resource.",
-          "Target": "authenticationMethodsRoot"
-        },
-        {
-          "Id": "b32f8312-c1c8-4c2f-9067-a63caa0978d3",
-          "ApiChange": "Singleton",
-          "ChangedApiName": "reports",
-          "ChangeType": "Addition",
-          "Description": "Added the [reports](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource",
-          "Target": "AADAuditActivities"
         }
       ],
       "Id": "b32f8312-c1c8-4c2f-9067-a63caa0978d3",
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-06-19T17:06:39.835526Z",
-      "WorkloadArea": "Reports and audit",
+      "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     }
   ]
