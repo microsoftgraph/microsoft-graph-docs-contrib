@@ -101,7 +101,7 @@ The following example shows how to find the service principal object by app ID.
 **Request**
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
+GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='219561ee-1480-4c67-9aa6-63d861fae3ef')?$select=id,appId,displayName
 ```
 
 **Response**
