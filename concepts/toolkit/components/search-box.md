@@ -39,7 +39,7 @@ For more information about handling events, see [events](../customize-components
 
 ## Localization
 
-The control exposes the following variables that can be localized. For details about how to set up localizationm see [Localizing](../customize-components/localization.md).
+The control exposes the following variables that can be localized. For details about how to set up localization, see [Localizing components](../customize-components/localization.md).
 
 | String name | Default value |
 | ----------- | ------------- |
