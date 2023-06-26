@@ -23,9 +23,12 @@ This article provides guidance to use authentication behaviors in order to migra
 
 ## Configure authenticationBehaviors to prevent issuance of email claims with unverified domain owners
 
-The **authenticationBehaviors** property of the [user](/graph/api/resources/application?view=graph-rest-beta) object allows you to configure breaking-change behaviors related to token issuance. Applications can adopt new breaking changes by enabling a behavior (set the behavior to `true`), or continue using pre-existing behavior by disabling it (by setting the behavior to `false`).
+The **authenticationBehaviors** property of the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) object allows you to configure breaking-change behaviors related to token issuance. Applications can adopt new breaking changes by enabling a behavior (set the behavior to `true`), or continue using pre-existing behavior by disabling it (by setting the behavior to `false`).
 
-Today, the default behavior is to remove email addresses with unverified domain owners in claims, except for single-tenant apps and for multi-tenant apps with previous sign-in activity with unverified emails. If your app falls into either of these exceptions and you wish to remove unverified email addresses, set the **removeUnverifiedEmailClaim** property of [authenticationBehaviors](/graph/api/resources/authenticationbehaviors) to `true` as illustrated in the following examples. The request returns a `204 No Content` response code.  
+Today, the default behavior is to remove email addresses with unverified domain owners in claims, except for single-tenant apps and for multi-tenant apps with previous sign-in activity with unverified emails. If your app falls into either of these exceptions and you wish to remove unverified email addresses, set the **removeUnverifiedEmailClaim** property of [authenticationBehaviors](/graph/api/resources/authenticationbehaviors) to `true` as illustrated in the following examples. The request returns a `204 No Content` response code.
+
+> [!NOTE]
+> The authenticationBehaviors property of the application object is currently in `beta` only.
 
 ### Read the authenticationBehaviors setting for an application
 
