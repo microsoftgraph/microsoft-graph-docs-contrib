@@ -9,10 +9,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new UnifiedRoleManagementPolicyRule();
+$requestBody = new UnifiedRoleManagementPolicyEnablementRule();
 $requestBody->set@odatatype('#microsoft.graph.unifiedRoleManagementPolicyEnablementRule');
 
 $requestBody->setId('Enablement_Admin_Assignment');
+
+$requestBody->setEnabledRules(['Justification', 'MultiFactorAuthentication', ]);
 
 $target = new UnifiedRoleManagementPolicyRuleTarget();
 $target->set@odatatype('microsoft.graph.unifiedRoleManagementPolicyRuleTarget');
@@ -30,12 +32,6 @@ $target->setEnforcedSettings([]);
 
 
 $requestBody->setTarget($target);
-$additionalData = [
-'enabledRules' => ['Justification', 'MultiFactorAuthentication', ],
-];
-$requestBody->setAdditionalData($additionalData);
-
-
 
 
 $result = $graphServiceClient->policies()->roleManagementPolicies()->byRoleManagementPolicieId('unifiedRoleManagementPolicy-id')->rules()->byRuleId('unifiedRoleManagementPolicyRule-id')->patch($requestBody);

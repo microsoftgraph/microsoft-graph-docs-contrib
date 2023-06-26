@@ -37,14 +37,14 @@ request_body.targets(targetsArray)
 request_body.RequestedModalities([request_body.modality(Modality.Audio('modality.audio'))
 ])
 
-call_options = CallOptions()
+call_options = OutgoingCallOptions()
 call_options.@odata_type = '#microsoft.graph.outgoingCallOptions'
 
 call_options.is_content_sharing_notification_enabled = True
 
 
 request_body.call_options = call_options
-media_config = MediaConfig()
+media_config = ServiceHostedMediaConfig()
 media_config.@odata_type = '#microsoft.graph.serviceHostedMediaConfig'
 
 

@@ -18,7 +18,7 @@ request_body.is_enabled = True
 
 request_body.is_scheduling_enabled = False
 
-execution_conditions = WorkflowExecutionConditions()
+execution_conditions = OnDemandExecutionOnly()
 execution_conditions.@odata_type = '#microsoft.graph.identityGovernance.onDemandExecutionOnly'
 
 

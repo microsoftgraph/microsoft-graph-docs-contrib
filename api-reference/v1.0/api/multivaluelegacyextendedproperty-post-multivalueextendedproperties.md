@@ -173,6 +173,7 @@ The request body includes the following for that multi-value extended property:
 
 
 <!-- { "blockType": "ignored", "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties" } -->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/events
 Content-Type: application/json
@@ -217,25 +218,29 @@ Content-Type: application/json
 ```
 
 #### Response
+
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
+  "blockType": "response"  
 } -->
+
 ```http
   HTTP/1.1 200 OK
+```
+
+<!--
   Content-type: application/json
   {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('4d29052a-70e8-4251-a7de-542b522cdf25')/events/$entity",
-    "@odata.etag": "W/\"F458GvdYA0ijqgp2gyJwzAAALXs9iQ==\"",
-    "id": "AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQBGAAAAAABaZwRaNsIxTp0lpjY1il_IBwAXjnwa91gDSKOqCnaDInDMAAAAAAENAAAXjnwa91gDSKOqCnaDInDMAAAtgOgIAAA=",
-    "createdDateTime": "2023-06-13T23:13:17.305298Z",
-    "lastModifiedDateTime": "2023-06-13T23:13:18.529304Z",
-    "changeKey": "F458GvdYA0ijqgp2gyJwzAAALXs9iQ==",
+    "@odata.etag": "W/\"F458GvdYA0ijqgp2gyJwzAAAOCEJmw==\"",
+    "id": "AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQBGAAAAAABaZwRaNsIxTp0lpjY1il_IBwAXjnwa91gDSKOqCnaDInDMAAAAAAENAAAXjnwa91gDSKOqCnaDInDMAAA4KToJAAA=",
+    "createdDateTime": "2023-06-23T00:52:52.5418Z",
+    "lastModifiedDateTime": "2023-06-23T00:52:53.570523Z",
+    "changeKey": "F458GvdYA0ijqgp2gyJwzAAAOCEJmw==",
     "categories": [],
     "transactionId": null,
     "originalStartTimeZone": "Pacific Standard Time",
     "originalEndTimeZone": "Pacific Standard Time",
-    "iCalUId": "040000008200E00074C5B7101A82E00800000000742AF7A24C9ED901000000000000000010000000C525CA622368B44D89B3B78E4B44A92A",
+    "iCalUId": "040000008200E00074C5B7101A82E008000000001076340A6DA5D9010000000000000000100000003EE8BF77931D7D40B835A528EFD465E8",
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
@@ -250,7 +255,7 @@ Content-Type: application/json
     "seriesMasterId": null,
     "showAs": "busy",
     "type": "singleInstance",
-    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQBGAAAAAABaZwRaNsIxTp0lpjY1il%2BIBwAXjnwa91gDSKOqCnaDInDMAAAAAAENAAAXjnwa91gDSKOqCnaDInDMAAAtgOgIAAA%3D&exvsurl=1&path=/calendar/item",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQBGAAAAAABaZwRaNsIxTp0lpjY1il%2BIBwAXjnwa91gDSKOqCnaDInDMAAAAAAENAAAXjnwa91gDSKOqCnaDInDMAAA4KToJAAA%3D&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl": null,
     "isOnlineMeeting": false,
     "onlineMeetingProvider": "unknown",
@@ -314,8 +319,10 @@ Content-Type: application/json
         }
     },
     "onlineMeeting": null
+    
   }
-  ```
+```
+-->
 
 A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event
 in the response body, similar to the response from [creating just an event](../api/user-post-events.md).

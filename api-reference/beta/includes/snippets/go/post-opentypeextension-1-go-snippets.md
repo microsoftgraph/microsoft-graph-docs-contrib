@@ -34,14 +34,14 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 
 
-extension := graphmodels.NewExtension()
+extension := graphmodels.NewOpenTypeExtension()
+extensionName := "Com.Contoso.Referral"
+extension.SetExtensionName(&extensionName) 
 additionalData := map[string]interface{}{
-	"extensionName" : "Com.Contoso.Referral", 
 	"companyName" : "Wingtip Toys", 
 	"expirationDate" : "2015-12-30T11:00:00.000Z", 
 	"dealValue" : int32(10000) , 
@@ -50,7 +50,6 @@ extension.SetAdditionalData(additionalData)
 
 extensions := []graphmodels.Extensionable {
 	extension,
-
 }
 requestBody.SetExtensions(extensions)
 

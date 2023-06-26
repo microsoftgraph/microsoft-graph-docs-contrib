@@ -58,6 +58,8 @@ If successful, this method returns a `201 Created` response code and a [termsAnd
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_companyterms_termsandconditionsassignment_create_create_termsandconditionsassignment" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 Content-type: application/json
@@ -74,6 +76,8 @@ Content-length: 220
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.termsAndConditionsAssignment" }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
