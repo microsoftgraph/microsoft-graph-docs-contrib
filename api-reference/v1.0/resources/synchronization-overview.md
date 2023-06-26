@@ -72,7 +72,7 @@ The following example shows how to find service principal object by display name
 GET https://graph.microsoft.com/v1.0/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 ```
 
-**Response**
+#### Response
 
 <!-- { "blockType": "ignored" } -->
 ```http
