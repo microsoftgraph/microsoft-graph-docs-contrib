@@ -57,6 +57,8 @@ If successful, this action returns a `200 OK` response code and a [importedWindo
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_enrollment_importedwindowsautopilotdeviceidentity_import_import_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 
@@ -88,6 +90,8 @@ Content-length: 808
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.importedWindowsAutopilotDeviceIdentity" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

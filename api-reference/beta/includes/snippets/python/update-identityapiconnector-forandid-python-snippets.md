@@ -12,15 +12,12 @@ request_body.display_name = 'New Test API'
 
 request_body.target_url = 'https://otherapi.com/api/endpoint'
 
-authentication_configuration = ApiAuthenticationConfigurationBase()
+authentication_configuration = BasicAuthentication()
 authentication_configuration.@odata_type = 'microsoft.graph.basicAuthentication'
 
-additional_data = [
-'username' => '<NEW_USERNAME>', 
-'password' => '<NEW_PASSWORD>', 
-];
-authentication_configuration.additional_data(additional_data)
+authentication_configuration.username = '<NEW_USERNAME>'
 
+authentication_configuration.password = '<NEW_PASSWORD>'
 
 
 request_body.authentication_configuration = authentication_configuration

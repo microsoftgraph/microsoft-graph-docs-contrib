@@ -2456,6 +2456,48 @@
     {
       "ChangeList": [
         {
+          "Id": "5e8653ad-641d-42b9-8f4a-b2994f98b060",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCustomization",
+          "ChangeType": "Addition",
+          "Description": "Added the `contentCustomization` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "5e8653ad-641d-42b9-8f4a-b2994f98b060",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentCustomization",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentCustomization](https://learn.microsoft.com/en-us/graph/api/resources/contentCustomization?view=graph-rest-beta) resource type.",
+          "Target": "contentCustomization"
+        },
+        {
+          "Id": "5e8653ad-641d-42b9-8f4a-b2994f98b060",
+          "ApiChange": "Property",
+          "ChangedApiName": "attributeCollection",
+          "ChangeType": "Addition",
+          "Description": "Added the `attributeCollection` property to the [contentCustomization](https://learn.microsoft.com/en-us/graph/api/resources/contentCustomization?view=graph-rest-beta) resource.",
+          "Target": "contentCustomization"
+        },
+        {
+          "Id": "5e8653ad-641d-42b9-8f4a-b2994f98b060",
+          "ApiChange": "Property",
+          "ChangedApiName": "attributeCollectionRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `attributeCollectionRelativeUrl` property to the [contentCustomization](https://learn.microsoft.com/en-us/graph/api/resources/contentCustomization?view=graph-rest-beta) resource.",
+          "Target": "contentCustomization"
+        }
+      ],
+      "Id": "5e8653ad-641d-42b9-8f4a-b2994f98b060",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-19T00:00:00.4444034Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
           "ApiChange": "Relationship",
           "ChangedApiName": "memberOf",
@@ -13643,6 +13685,32 @@
       "CreatedDateTime": "2023-04-11T17:56:44.238139Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    }, 
+    {
+      "ChangeList": [
+        {
+          "Id": "5037c838-ee0a-4207-8969-620185db4240",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationBehaviors",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationBehaviors](https://learn.microsoft.com/en-us/graph/api/resources/authenticationBehaviors?view=graph-rest-beta) resource type.",
+          "Target": "authenticationBehaviors"
+        },
+        {
+          "Id": "5037c838-ee0a-4207-8969-620185db4240",
+          "ApiChange": "Property",
+          "ChangedApiName": "authenticationBehaviors",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationBehaviors** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "5037c838-ee0a-4207-8969-620185db4240",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-15T01:47:34.2749095Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -13785,6 +13853,24 @@
       "CreatedDateTime": "2023-05-15T08:54:08.6528325Z",
       "WorkloadArea": "Users",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d10f34c8-8787-4aa7-9bb4-3eee0f45fc90",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesLastPasswordSyncDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the `onPremisesLastPasswordSyncDateTime` property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "d10f34c8-8787-4aa7-9bb4-3eee0f45fc90",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-19T07:13:01.0506132Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }

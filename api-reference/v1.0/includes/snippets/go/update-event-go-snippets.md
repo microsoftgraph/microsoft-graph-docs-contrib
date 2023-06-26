@@ -40,7 +40,6 @@ hideAttendees := false
 requestBody.SetHideAttendees(&hideAttendees) 
 categories := []string {
 	"Red category",
-
 }
 requestBody.SetCategories(categories)
 

@@ -1,10 +1,8 @@
 ---
 author: FaithOmbongi
-ms.author: ombongifaith
-ms.reviewer: keylimesoda
+ms.reviewer: ric.lewis
 ms.prod: "change-notifications"
 ms.topic: include
-ms.date: 02/23/2022
 ms.localizationpriority: high
 ---
 

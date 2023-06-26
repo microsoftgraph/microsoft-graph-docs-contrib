@@ -11,6 +11,19 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### userDefaultAuthenticationMethod values
+
+| Member             |
+|:-------------------|
+| push               |
+| oath               |
+| voiceMobile        |
+| voiceAlternateMobile |
+| voiceOffice        |
+| sms                |
+| none               |
+| unknownFutureValue |
+
 ### applicationKeyUsage values
 
 | Member             |
@@ -3963,3 +3976,4 @@ Possible values for user account types (group membership), per Windows definitio
 | request_retrieved     |
 | presentation_verified |
 | unknownFutureValue    |
+

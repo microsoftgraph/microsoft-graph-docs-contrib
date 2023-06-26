@@ -58,6 +58,8 @@ If successful, this method returns a `201 Created` response code and a [managedD
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_apps_manageddevicemobileappconfigurationassignment_create_create_manageddevicemobileappconfigurationassignment" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assignments
 Content-type: application/json
@@ -73,6 +75,8 @@ Content-length: 179
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.managedDeviceMobileAppConfigurationAssignment" }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

@@ -18,7 +18,6 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 requestBody := graphmodels.NewTokenIssuancePolicy()
 definition := []string {
 	"definition-value",
-
 }
 requestBody.SetDefinition(definition)
 displayName := "displayName-value"

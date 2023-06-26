@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronizatio
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"value" , new List<>
+			"value" , new List<object>
 			{
 				new 
 				{

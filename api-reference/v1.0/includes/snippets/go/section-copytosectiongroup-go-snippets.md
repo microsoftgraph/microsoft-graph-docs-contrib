@@ -15,7 +15,7 @@ import (
 graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewCopyToSectionGroupPostRequestBody()
+requestBody := graphusers.NewItemCopyToSectionGroupPostRequestBody()
 id := "id-value"
 requestBody.SetId(&id) 
 groupId := "groupId-value"

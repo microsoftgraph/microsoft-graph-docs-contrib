@@ -30,7 +30,6 @@ teamworkTagMember1.SetUserId(&userId)
 members := []graphmodels.TeamworkTagMemberable {
 	teamworkTagMember,
 	teamworkTagMember1,
-
 }
 requestBody.SetMembers(members)
 
