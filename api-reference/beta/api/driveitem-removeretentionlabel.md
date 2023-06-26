@@ -37,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 DELETE /driveitem/retentionLabel
-DELETE /drives/{drive-id}/items/{item-id}/retentionLabel
+DELETE /drives/{drive-id}/items/{id}/retentionLabel
 ```
 
 ## Request headers
@@ -63,12 +63,12 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "driveItem_removeRetentionLabel",
-  "sampleKeys": ["22e064df-3562-4a3c-98c3-74721ca06aa0", "2"]
+  "sampleKeys": ["22e064df-3562-4a3c-98c3-74721ca06aa0", "44d372fc-2eb6-4c85-8538-f3a0386a568f"]
 }
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06aa0/items/2/retentionLabel
+DELETE https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06aa0/items/44d372fc-2eb6-4c85-8538-f3a0386a568f/retentionLabel
 ```
 
 ### Response
