@@ -348,6 +348,7 @@ To see the newly created extended property, [get the message expanded with the e
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('3cc-ad3-4b9-9a-54')/messages/$entity",
     "@odata.etag": "W/\"CQAAABTiMty\"",
