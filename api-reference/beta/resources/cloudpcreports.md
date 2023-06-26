@@ -26,6 +26,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[getRemoteConnectionHistoricalReports](../api/cloudpcreports-getremoteconnectionhistoricalreports.md)|Stream|Get a Cloud PC's remote connection historical reports, such as **signInDateTime**, **signOutDateTime**, or **usageInHour**, in a given period.|
 |[getSharedUseLicenseUsageReport](../api/cloudpcreports-getshareduselicenseusagereport.md)|Stream|Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
 |[getTotalAggregatedRemoteConnectionReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports, like usage and **daysSinceLastUse**, in a given period.|
+|[getInaccessibleCloudPcReports](../api/cloudpcreports-getinaccessiblecloudpcreports.md)|Stream|Get the details of inaccessible Cloud PCs，like **deviceHealthStatus**, **recentDeviceHealthFailureCount**, **recentConnectionFailureCount** and **systemStatus** 	|
 
 ## Properties
 |Property|Type|Description|

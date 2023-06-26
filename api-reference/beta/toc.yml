@@ -10464,6 +10464,8 @@ items:
               href: api/cloudpcreports-getshareduselicenseusagereport.md
             - name: Get total aggregated remote connection reports
               href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+            - name: Get inaccessible Cloud PC reports
+              href: api/cloudpcreports-getInaccessibleCloudPcReports.md
             - name: Export to download report
               items:
               - name: Cloud PC export job
