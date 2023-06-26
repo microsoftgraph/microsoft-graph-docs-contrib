@@ -43,6 +43,10 @@ The JSON blob contains the types of resources expected in the response, the unde
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.searchRequest"
+}-->
 ```json
 {
   "aggregationFilters": ["String"],
