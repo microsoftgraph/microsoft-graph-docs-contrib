@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.Teams["{team-id}"].Members.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "roles/any";
+	requestConfiguration.QueryParameters.Filter = "roles/any(r:r eq 'owner')";
 });
 
 
