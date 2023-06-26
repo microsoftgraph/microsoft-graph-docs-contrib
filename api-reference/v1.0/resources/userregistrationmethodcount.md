@@ -1,6 +1,6 @@
 ---
 title: "userRegistrationMethodCount resource type"
-description: "Number of users registered for an authentication method."
+description: "Represents the number of users registered for an authentication method."
 author: "kvenkit"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -11,19 +11,23 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Number of users registered for an authentication method.
+Represents the number of users registered for an authentication method.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationMethod|String|Name of authentication method.|
+|authenticationMethod|String|Name of the authentication method.|
 |userCount|Int64|Number of users registered.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userRegistrationMethodCount"
@@ -33,6 +37,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.userRegistrationMethodCount",
   "authenticationMethod": "String",
-  "userCount": "Integer"
+  "userCount": "Int64"
 }
 ```
