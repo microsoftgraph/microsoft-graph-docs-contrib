@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/identitygovernance/lifecycleWorkflows/workf
 
 #### Response
 
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -65,7 +65,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/dele
 ```
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

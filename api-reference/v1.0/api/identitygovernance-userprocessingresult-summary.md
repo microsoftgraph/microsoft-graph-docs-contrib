@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/IdentityGovernance/lifecycleWorkflows/workf
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

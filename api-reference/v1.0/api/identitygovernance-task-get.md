@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.identityGovernance
 
-Get a task specific from a [workflow](../resources/identitygovernance-workflow.md) or [workflowVersion](../resources/identitygovernance-workflowversion.md).
+Get a specific task from a [workflow](../resources/identitygovernance-workflow.md) or [workflowVersion](../resources/identitygovernance-workflowversion.md).
 
 ## Permissions
 

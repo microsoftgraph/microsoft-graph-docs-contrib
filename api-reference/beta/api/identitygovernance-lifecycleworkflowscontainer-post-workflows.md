@@ -82,7 +82,7 @@ The following is an example of a request that creates a workflow with the follow
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows
+POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 Content-Type: application/json
 
 {
@@ -126,7 +126,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -139,7 +139,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
     "category": "joiner",
     "description": "Configure new hire tasks for onboarding employees on their first day",
     "displayName": "New Zealand new hire",
@@ -178,7 +178,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows
+POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 Content-Type: application/json
 Content-length: 631
 
@@ -241,7 +241,7 @@ Content-length: 631
 #### Response
 
 
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

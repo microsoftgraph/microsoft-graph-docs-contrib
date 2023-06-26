@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.identityGovernance
 
-Get the workflow resources from the workflows navigation property.
+Get a list of workflow resources that are associated with lifecycle workflows.
 
 ## Permissions
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 #### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -173,7 +173,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 ```
 
 #### Response
-The following is an example of the response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
