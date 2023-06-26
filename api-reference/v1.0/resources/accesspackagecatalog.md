@@ -42,6 +42,7 @@ An access package catalog might also have linked resources that are used in thos
 |Relationship|Type|Description|
 |:---|:---|:---|
 |accessPackages|[accessPackage](accesspackage.md) collection|The access packages in this catalog. Read-only. Nullable.|
+|resources|[accessPackageResource](../resources/accesspackageresource.md) collection|Access package resources in this catalog.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

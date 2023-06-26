@@ -52,6 +52,7 @@ Each access package is referenced by a single access package catalog, and has li
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Read-only. Nullable.|
 |incompatibleAccessPackages | [accessPackage](accesspackage.md) collection | The access packages whose assigned users are ineligible to be assigned this access package. |
 |incompatibleGroups | [group](group.md) collection | The groups whose members are ineligible to be assigned this access package. |
+|resourceRoleScopes| [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | The resource roles and scopes in this access package. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
