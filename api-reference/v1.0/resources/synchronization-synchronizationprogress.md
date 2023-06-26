@@ -22,7 +22,6 @@ Represents the progress of a [synchronizationJob](synchronization-synchronizatio
 |totalUnits|Int32|The denominator of a progress ratio; a number of units of changes to be processed to accomplish synchronization.|
 |units|String|An optional description of the units.|
 
-<!-- The troubleshootingUrl property is missing a description -->
 
 ## JSON representation
 The following is a JSON representation of the resource.
