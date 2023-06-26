@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /directory/subscriptions/{ocpSubscriptionId}
+GET /directory/subscriptions/{commerceSubscriptionId}
 ```
 
 ## Optional query parameters
@@ -86,7 +86,6 @@ Content-length: 450
   "id": "860697e3-b0aa-4196-a6c6-7ec361ed58f7",
   "isTrial": false,
   "nextLifecycleDateTime": "2023-02-01T00:00:00Z",
-  "ocpSubscriptionId": "f9c1ea2d-2c6e-4717-8c3b-7130812d70ba",
   "serviceStatus": [
     {
       "appliesTo": "User",
