@@ -25,7 +25,7 @@ Subscriptions expire after a length of time that varies by resource type. In ord
 
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
-> **Note**: 
+> **Note**:
 >
 > Some resources support change notifications in multiple scenarios, each of which may require different permissions. In those cases, use the resource path to differentiate the scenarios.
 >
@@ -35,6 +35,10 @@ Depending on the resource and the permission type (delegated or application) req
 |:-----|:-----|:-----|:-----|
 |[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[callRecord](../resources/callrecords-callrecord.md) | Not supported | Not supported | CallRecords.Read.All  |
+|[callTranscript](/graph/api/resources/calltranscript) <br /> communications/onlineMeetings/getAllTranscripts <br /> Any transcript becomes available in the tenant. | Not supported | Not supported | OnlineMeetingTranscript.Read.All |
+|[callTranscript](/graph/api/resources/calltranscript) <br /> communications/onlineMeetings/{onlineMeetingId}/transcripts <br /> Any transcript becomes available for a specific meeting. | OnlineMeetingTranscript.Read.All | Not supported | OnlineMeetingTranscript.Read.All |
+|[callRecording](/graph/api/resources/callrecording) <br /> communications/onlineMeetings/getAllRecordings <br /> Any recording becomes available in the tenant. | Not supported | Not supported | OnlineMeetingRecording.Read.All |
+|[callRecording](/graph/api/resources/callrecording) <br /> communications/onlineMeetings/{onlineMeetingId}/recordings  <br /> Any recording becomes available for a specific meeting. | OnlineMeetingRecording.Read.All | Not supported | OnlineMeetingRecording.Read.All |
 |[channel](../resources/channel.md) <br />/teams/getAllChannels <br /> All channels in an organization. | Not supported  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All |
 |[channel](../resources/channel.md) <br />/teams/{id}/channels <br /> All channels in a particular team in an organization.  | Channel.ReadBasic.All, ChannelSettings.Read.All  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) <br />/chats <br />All chats in an organization.  | Not supported | Not supported | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
@@ -71,7 +75,6 @@ Depending on the resource and the permission type (delegated or application) req
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### driveItem
@@ -104,7 +107,6 @@ PATCH /subscriptions/{id}
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-
 
 ## Request body
 
@@ -142,31 +144,33 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-subscription-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-subscription-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-subscription-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/update-subscription-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-subscription-powershell-snippets.md)]
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](../includes/snippets/java/update-subscription-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-subscription-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
+
 [!INCLUDE [sample-code](../includes/snippets/php/update-subscription-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-subscription-python-snippets.md)]
+# [PowerShell](#tab/powershell)
+
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-subscription-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -215,4 +219,3 @@ Content-type: application/json
   ]
 }
 -->
-

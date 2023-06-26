@@ -28,9 +28,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [baseTask][] (deprecated), [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][] |
+| Delegated - work or school account     | [alert][], [baseTask][] (deprecated), [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][], [CallTranscript][], [CallRecording][] |
 | Delegated - personal Microsoft account | [baseTask][] (deprecated), [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                   |
-| Application                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlinemeeting][], [printer][], [printTaskDefinition][], [team][] |
+| Application                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlinemeeting][], [printer][], [printTaskDefinition][], [team][], [CallTranscript][], [CallRecording][] |
 
 ## See also
 
@@ -49,7 +49,6 @@ In general, subscription operations require read permission to the resource. For
 [channel]: ./channel.md
 [driveItem]: ./driveitem.md
 [list]: ./list.md
-[site]: ./site.md
 [event]: ./event.md
 [group]: ./group.md
 [message]: ./message.md
@@ -62,5 +61,6 @@ In general, subscription operations require read permission to the resource. For
 [team]: ./team.md
 [baseTask]: ./baseTask.md
 [todoTask]: ./todotask.md
-[To Do task]: ./todotask.md
 [onlineMeeting]: ./onlinemeeting.md
+[CallTranscript]: ./calltranscript.md
+[CallRecording]: ./callrecording.md

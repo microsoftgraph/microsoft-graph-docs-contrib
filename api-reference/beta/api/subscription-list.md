@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-Retrieve a list of webhook subscriptions. 
+Retrieve a list of webhook subscriptions.
 
 The content of the response depends on the context in which the app is calling; for details, see the scenarios in the [Permissions](#permissions) section.
 
@@ -23,7 +23,7 @@ The content of the response depends on the context in which the app is calling; 
 
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
-> **Note**: 
+> **Note**:
 >
 > Some resources support change notifications in multiple scenarios, each of which may require different permissions. In those cases, use the resource path to differentiate the scenarios.
 >
@@ -33,6 +33,10 @@ Depending on the resource and the permission type (delegated or application) req
 |:-----|:-----|:-----|:-----|
 |[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite, Subscription.Read.All | Tasks.ReadWrite, Subscription.Read.All | Not supported |
 |[callRecord](../resources/callrecords-callrecord.md) | Not supported | Not supported | CallRecords.Read.All  |
+|[callTranscript](/graph/api/resources/calltranscript) <br /> communications/onlineMeetings/getAllTranscripts <br /> Any transcript becomes available in the tenant. | Not supported | Not supported | OnlineMeetingTranscript.Read.All |
+|[callTranscript](/graph/api/resources/calltranscript) <br /> communications/onlineMeetings/{onlineMeetingId}/transcripts <br /> Any transcript becomes available for a specific meeting. | OnlineMeetingTranscript.Read.All | Not supported | OnlineMeetingTranscript.Read.All |
+|[callRecording](/graph/api/resources/callrecording) <br /> communications/onlineMeetings/getAllRecordings <br /> Any recording becomes available in the tenant. | Not supported | Not supported | OnlineMeetingRecording.Read.All |
+|[callRecording](/graph/api/resources/callrecording) <br /> communications/onlineMeetings/{onlineMeetingId}/recordings  <br /> Any recording becomes available for a specific meeting. | OnlineMeetingRecording.Read.All | Not supported | OnlineMeetingRecording.Read.All |
 |[channel](../resources/channel.md) <br />/teams/getAllChannels <br /> All channels in an organization. | Not supported  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All |
 |[channel](../resources/channel.md) <br />/teams/{id}/channels <br /> All channels in a particular team in an organization. | Channel.ReadBasic.All, ChannelSettings.Read.All, Subscription.Read.All  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) <br />/chats <br />All chats in an organization. | Not supported | Not supported | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
@@ -120,7 +124,6 @@ If successful, this method returns a `200 OK` response code and a list of [subsc
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -132,38 +135,40 @@ GET https://graph.microsoft.com/beta/subscriptions
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscriptions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-subscriptions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-subscriptions-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/get-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-subscriptions-powershell-snippets.md)]
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](../includes/snippets/java/get-subscriptions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-subscriptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
+
 [!INCLUDE [sample-code](../includes/snippets/php/get-subscriptions-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-subscriptions-python-snippets.md)]
+# [PowerShell](#tab/powershell)
+
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-subscriptions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response shown here might be shortened for readability.
 

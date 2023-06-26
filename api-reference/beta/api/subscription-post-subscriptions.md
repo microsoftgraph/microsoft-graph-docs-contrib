@@ -23,11 +23,11 @@ Some resources support rich notifications, that is, notifications that include r
 
 ## Permissions
 
-Creating a subscription requires read permission to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission. 
+Creating a subscription requires read permission to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission.
 
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing the permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
-> **Note**: 
+> **Note**:
 >
 > Due to security restrictions, Microsoft Graph subscriptions do not support write access permissions when only read access permissions are needed.
 >
@@ -39,6 +39,10 @@ Depending on the resource and the permission type (delegated or application) req
 |:-----|:-----|:-----|:-----|
 |[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[callRecord](../resources/callrecords-callrecord.md) | Not supported | Not supported | CallRecords.Read.All  |
+|[callTranscript](/graph/api/resources/calltranscript) <br /> communications/onlineMeetings/getAllTranscripts <br /> Any transcript becomes available in the tenant. | Not supported | Not supported | OnlineMeetingTranscript.Read.All |
+|[callTranscript](/graph/api/resources/calltranscript) <br /> communications/onlineMeetings/{onlineMeetingId}/transcripts <br /> Any transcript becomes available for a specific meeting. | OnlineMeetingTranscript.Read.All | Not supported | OnlineMeetingTranscript.Read.All |
+|[callRecording](/graph/api/resources/callrecording) <br /> communications/onlineMeetings/getAllRecordings <br /> Any recording becomes available in the tenant. | Not supported | Not supported | OnlineMeetingRecording.Read.All |
+|[callRecording](/graph/api/resources/callrecording) <br /> communications/onlineMeetings/{onlineMeetingId}/recordings  <br /> Any recording becomes available for a specific meeting. | OnlineMeetingRecording.Read.All | Not supported | OnlineMeetingRecording.Read.All |
 |[channel](../resources/channel.md) <br />/teams/getAllChannels <br /> All channels in an organization. | Not supported  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All |
 |[channel](../resources/channel.md) <br />/teams/{id}/channels <br /> All channels in a particular team in an organization.  | Channel.ReadBasic.All, ChannelSettings.Read.All  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) <br />/chats <br />All chats in an organization. | Not supported | Not supported | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
@@ -74,7 +78,6 @@ Depending on the resource and the permission type (delegated or application) req
 |[team](../resources/team.md) <br />/teams/{id} <br />A particular team. | Team.ReadBasic.All, TeamSettings.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
-
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
@@ -151,31 +154,33 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-subscription-from-subscriptions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-subscription-from-subscriptions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-subscription-from-subscriptions-powershell-snippets.md)]
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-subscription-from-subscriptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
+
 [!INCLUDE [sample-code](../includes/snippets/php/create-subscription-from-subscriptions-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-subscription-from-subscriptions-python-snippets.md)]
+# [PowerShell](#tab/powershell)
+
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-subscription-from-subscriptions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -191,6 +196,8 @@ The following are valid values for the resource property.
 |:------ |:----- |
 |[baseTask](../resources/basetask.md) (deprecated) | `/me/tasks/lists/{Id}/tasks`
 |[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[callTranscript](/graph/api/resources/calltranscript) | `communications/onlineMeetings/getAllTranscripts`, <br> `communications/onlineMeetings/{onlineMeetingId}/transcripts`|
+|[callRecording](/graph/api/resources/callrecording)| `Communications/onlineMeetings/getAllRecordings`, <br> `communications/onlineMeetings/{onlineMeetingId}/recordings`|
 |[Channels](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[Chat](../resources/chat.md)|`/chats`, `/chats/{id}`|
 |[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
@@ -215,7 +222,7 @@ The following are valid values for the resource property.
 
 ### Response
 
-The following example shows the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -262,4 +269,3 @@ The subscription notification endpoint (specified in the **notificationUrl** pro
   ]
 }
 -->
-
