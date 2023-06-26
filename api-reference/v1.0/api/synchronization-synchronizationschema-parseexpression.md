@@ -55,7 +55,6 @@ If successful, this method returns a `200 OK` response code and a [parseExpressi
 ##### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_parseexpression"
