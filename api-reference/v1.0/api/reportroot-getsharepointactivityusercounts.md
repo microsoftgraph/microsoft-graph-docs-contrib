@@ -74,16 +74,13 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
-
 <!--{
-  "blockType": "request"
+  "blockType": "request",
   "name": "reportroot_getsharepointactivityusercounts"
 }-->
-
 ```http
 GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityUserCounts(period='D7')
 ```
-
 
 #### Response
 
@@ -92,7 +89,6 @@ The following is an example of the response.
 <!-- {
   "blockType": "ignored"
 } -->
-
 ```http
 HTTP/1.1 302 Found
 Content-Type: text/plain
@@ -111,6 +107,7 @@ Content-Type: application/octet-stream
 
 Report Refresh Date,Visited Page,Viewed Or Edited,Synced,Shared Internally,Shared Externally,Report Date,Report Period
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
