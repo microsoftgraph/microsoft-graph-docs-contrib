@@ -78,7 +78,7 @@ The following is an example of the request.
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "reportroot_getteamsdeviceusageusercounts"
 }-->
 

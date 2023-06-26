@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/beta/reports/getTeamsTeamCounts(period='D7')?$fo
 The following is an example of the response.
 
 <!-- { "blockType": "ignored" } --> 
-
 ```http
 HTTP/1.1 302 Found
 Content-Type: text/plain
@@ -97,14 +96,13 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "String"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Public Teams,Active Public Teams,Private Teams,Active Private Teams,
+Report Refresh Date,Report Date,Public Teams,Active Public Teams,Private Teams,Active Private Teams
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
