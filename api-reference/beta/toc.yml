@@ -17160,10 +17160,7 @@ items:
           items:
           - name: Learning course activity
             href: resources/learningcourseactivity.md
-          - name: Learning assignment
-            href: resources/learningassignment.md
-          - name: Learning selfinitiated course
-            href: resources/learningselfinitiatedcourse.md
+            items:  
           - name: List
             href: api/learningcourseactivity-list.md
           - name: Create
@@ -17174,6 +17171,10 @@ items:
             href: api/learningcourseactivity-update.md
           - name: Delete
             href: api/learningcourseactivity-delete.md
+          - name: Learning assignment
+            href: resources/learningassignment.md
+          - name: Learning self-initiated course
+            href: resources/learningselfinitiatedcourse.md
       - name: Messaging
         items:
         - name: Activity feed
