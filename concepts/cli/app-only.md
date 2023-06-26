@@ -9,6 +9,8 @@ author: jasonjoh
 
 The Microsoft Graph command-line interface (CLI) supports two types of authentication: [delegated access](../auth-v2-user.md), and [app-only access](../auth-v2-service.md). This guide will focus on the configuration needed to enable app-only access.
 
+[!INCLUDE [cli-preview](../../includes/cli-preview.md)]
+
 > [!IMPORTANT]
 > App-only access grants permissions directly to an application, and requires an administrator to consent to the required permission scopes. For more information on app-only access, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 

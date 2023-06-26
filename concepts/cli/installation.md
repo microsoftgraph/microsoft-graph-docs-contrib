@@ -9,6 +9,8 @@ author: jasonjoh
 
 The Microsoft Graph command-line interface (CLI) is published on [GitHub](https://github.com/microsoftgraph/msgraph-cli/releases/latest).
 
+[!INCLUDE [cli-preview](../../includes/cli-preview.md)]
+
 ## Installation
 
 ### Windows[#tab/windows]

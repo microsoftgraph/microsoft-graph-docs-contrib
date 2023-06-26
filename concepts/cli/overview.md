@@ -9,6 +9,8 @@ author: jasonjoh
 
 The Microsoft Graph PowerShell command-line interface (CLI) acts as an API wrapper for the Microsoft Graph APIs, exposing the entire API set for use from the command line.
 
+[!INCLUDE [cli-preview](../../includes/cli-preview.md)]
+
 ## Microsoft Graph CLI features & benefits
 
 The Microsoft Graph CLI provides the following benefits:
