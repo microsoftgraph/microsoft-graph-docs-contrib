@@ -1001,8 +1001,6 @@ items:
           - name: Overview
             href: toolkit/overview.md
             displayName: Microsoft Graph Toolkit, toolkit
-          - name: Upgrade
-            href: toolkit/upgrade.md
           - name: Get started
             items:
               - name: Get started
@@ -1100,6 +1098,8 @@ items:
                 href: toolkit/customize-components/templates.md
               - name: Disambiguation of components
                 href: toolkit/customize-components/disambiguation.md
+          - name: Upgrading to v3
+            href: toolkit/upgrade.md
       - name: Configure Connected Services
         displayName: Configure Connected Services in Visual Studio
         href: office-365-connected-services.md
