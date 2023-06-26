@@ -76,16 +76,14 @@ The CSV file has the following headers for columns.
 - Liked Count
 - Report Period
 
-## Example
-
+## Examples
+### Example 1: getYammerGroupsActivityDetail by period
 #### Request
 
 The following is an example of the request.
 
-
 <!--{
-  "blockType": "ignored",
-  "isComposable": true,
+  "blockType": "request",
   "name": "reportroot_getyammergroupsactivityuserdetail"
 }-->
 
@@ -93,25 +91,24 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(period='D7')
 ```
 
-
 #### Response
 
 The following is an example of the response.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
+<!-- { "blockType": "response"} --> 
 
 ```http
 HTTP/1.1 302 Found
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
+### Example 2: getYammerGroupsActivityDetail by date
 #### Request
 If called with a `date`, the report is scoped to activity on the given date.
 
 # [HTTP](#tab/http)
 <!--{
   "blockType": "request",
-  "isComposable": true,
   "name": "reportroot_getyammergroupsactivityuserdetail_date"
 }-->
 
