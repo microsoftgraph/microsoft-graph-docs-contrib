@@ -18,8 +18,8 @@ Inherits from [governanceInsight](governanceinsight.md).
 ## Properties
 | Property    | Type   | Description |
 | :---------------| :---------- | :---------- |
-| memberId | String | Indicates the identifier of the user. |
 | containerId | String | Indicates the identifier of the container, for example, a group ID. |
+| memberId | String | Indicates the identifier of the user. |
 | outlierContainerType | outlierContainerType | Indicates the type of container. The possible values are: `group`, `unknownFutureValue`. |
 | outlierMemberType | outlierMemberType | Indicates the type of outlier member. The possible values are: `user`, `unknownFutureValue`. |
 
@@ -28,8 +28,8 @@ Inherits from [governanceInsight](governanceinsight.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |container|[directoryObject](../resources/directoryobject.md)| Navigation link to the container directory object. For example, to a group.|
-|member|[directoryObject](../resources/directoryobject.md)| Navigation link to a member object. For example, to a user.|
 |lastModifiedBy|[user](../resources/user.md)| Navigation link to a member object who modified the record. For example, to a user.|
+|member|[directoryObject](../resources/directoryobject.md)| Navigation link to a member object. For example, to a user.|
 
 
 ## JSON representation

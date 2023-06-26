@@ -1198,6 +1198,14 @@
         },
         {
           "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "insights",
+          "ChangeType": "Addition",
+          "Description": "Added the **insights** relationship to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        }
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
           "ApiChange": "Resource",
           "ChangedApiName": "groupPeerOutlierRecommendationInsightSettings",
           "ChangeType": "Addition",
@@ -1227,7 +1235,15 @@
           "ChangeType": "Addition",
           "Description": "Added the [userSignInInsight](https://learn.microsoft.com/en-us/graph/api/resources/userSignInInsight?view=graph-rest-1.0) resource",
           "Target": "userSignInInsight"
-        }
+        },
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "membershipOutlierInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [membershipOutlierInsight](https://learn.microsoft.com/en-us/graph/api/resources/membershipOutlierInsight?view=graph-rest-1.0) resource type.",
+          "Target": "membershipOutlierInsight"
+        },
       ],
       "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
       "Cloud": "Prod",
