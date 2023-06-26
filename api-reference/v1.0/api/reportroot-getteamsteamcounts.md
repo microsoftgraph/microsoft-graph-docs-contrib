@@ -72,7 +72,7 @@ The CSV file has the following headers for columns:
 The following is an example of a request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "reportroot_getteamsteamcounts_csv"
 }-->
 
