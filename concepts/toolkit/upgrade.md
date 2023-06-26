@@ -13,7 +13,7 @@ This article provides a summary of the breaking changes introduced in Microsoft 
 
 To stay compliant and to align with the modern look and feel of Microsoft 365, Microsoft Graph Toolkit now uses Fluent UI [web components](/fluent-ui/web-components/). We recommend that you update some of your styling with the Fluent 2 design system.
 
-We also changed many of the design tokens we offer to customize the look and feel of our components. Please refer to the "CSS custom properties" section of the article for each component.
+Many of the design tokens provided to customize the look and feel of our components have changed. Please refer to the "CSS custom properties" section of the article for each component.
 
 ## Upgraded our Microsoft Graph JS SDK from 2.x to 3.x
 
@@ -25,15 +25,15 @@ If you have been building custom components on top of the toolkit, review the [L
 
 ## Object structures changed and typings are available for events emitted by our components
 
-In this release, we changed some of our object structures to provide a better developer experience. We also introduced typed events to help you deliver high-quality code. Please refer to the "Events" section of the article for each component.
+In this release, the object structures of some events have changed to provide a better developer experience. All events have been accurately typed using the `CustomEvent<T>` generic type to help you deliver high-quality code. Please refer to the "Events" section of the article for each component.
 
 ## Permissions changed in the Teams channel picker
 
-We removed the `MgtTeamsChannelPickerConfig` and moved from `User.Read.All` and `Group.Read.All` to only use the `Team.ReadBasic.All` and `Channel.ReadBasic.All` scopes in the Teams channel picker component. This enables your application to use a least priviledged approach.
+The `MgtTeamsChannelPickerConfig` has been removed and the Teams channel picker component now only uses `Team.ReadBasic.All` and `Channel.ReadBasic.All` scopes instead of the legacy `User.Read.All` and `Group.Read.All` scopes. This enables your application to use a least privileged approach.
 
 ## Removed multiple providers
 
-In this release, we removed multiple providers to ensure your apps stay secure and provide the best experience possible for you users (support for conditional access, continuous access evaluation, etc.). The following providers were removed:
+In this release, multiple providers were removed to ensure your apps stay secure and provide the best experience possible for you users (support for conditional access, continuous access evaluation, etc.). The following providers were removed:
 
 - Teams Provider
 - Teams MSAL2 Provider
