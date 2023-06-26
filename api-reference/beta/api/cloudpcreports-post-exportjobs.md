@@ -60,7 +60,9 @@ If successful, this method returns a `201 Created` response code and a [cloudPcE
 
 ## Examples
 
-### Request
+### Example 1: Create an export job to download the TotalAggregatedRemoteConnectionReports report.
+
+#### Request
 The following is an example of a request.
 
 # [HTTP](#tab/http)
@@ -116,9 +118,8 @@ Content-length: 315
 
 ---
 
-### Response
+#### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,6 +145,77 @@ Content-Type: application/json
     "format": null,
     "expirationDateTime": "0001-01-01T00:00:00Z",
     "requestDateTime": "2022-09-16T12:00:06.5137388Z",
+    "exportJobStatus": "inProgress",
+    "exportUrl": null
+}
+```
+
+### Example 2: Create an export job to download the RemoteConnectionQualityReports report.
+
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_cloudpcexportjob_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/exportJobs
+Content-Type: application/json
+Content-length: 315
+
+{
+  "reportName": "RemoteConnectionQualityReports",
+  "select": [
+        "CloudPcId",
+        "ManagedDeviceName",
+        "AvgRoundTripTimeInMsP50",
+        "LastConnectionRoundTripTimeInMs",
+        "AvgAvailableBandwidthInMBpsP50",
+        "LastConnectionAvailableBandWidthInMSps",
+        "AvgRemoteSignInTimeInSecP50",
+        "UDPConnectionPercentage",
+        "LastConnectionGateway",
+        "LastConnectionProtocol",
+        "EventDateTime"
+  ],
+  "filter": "EventDateTime gt datetime'2023-06-14T07:40:41.694Z'"
+}
+```
+
+#### Response
+The following is an example of the response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcExportJob"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/reports/exportJobs/$entity",
+    "id": "RemoteConnectionQualityReports__85678957-6202-4e29-97e6-eb26ef07f330",
+    "reportName": "remoteConnectionQualityReports",
+    "filter": "EventDateTime gt datetime'2023-06-14T07:40:41.694Z'",
+    "select": [
+        "CloudPcId",
+        "ManagedDeviceName",
+        "AvgRoundTripTimeInMsP50",
+        "LastConnectionRoundTripTimeInMs",
+        "AvgAvailableBandwidthInMBpsP50",
+        "LastConnectionAvailableBandWidthInMSps",
+        "AvgRemoteSignInTimeInSecP50",
+        "UDPConnectionPercentage",
+        "LastConnectionGateway",
+        "LastConnectionProtocol",
+        "EventDateTime"
+    ],
+    "format": null,
+    "expirationDateTime": null,
+    "requestDateTime": "2023-06-14T07:40:41.694Z",
     "exportJobStatus": "inProgress",
     "exportUrl": null
 }

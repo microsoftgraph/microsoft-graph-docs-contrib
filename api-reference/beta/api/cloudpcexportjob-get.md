@@ -16,7 +16,7 @@ Read the properties and relationships of a [cloudPcExportJob](../resources/cloud
 
 You can download a report by first [creating a new cloudPcExportJob resource](cloudpcreports-post-exportjobs.md) to initiate downloading.
 
-Use this GET operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource. When the property becomes `completed`, the report has finished downloading in the location specified by the **exportUrl** property. 
+Use this GET operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource. When the property becomes `completed`, the report has finished downloading in the location specified by the **exportUrl** property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,7 +54,8 @@ If successful, this method returns a `200 OK` response code and a [cloudPcExport
 
 ## Examples
 
-### Request
+### Example 1: Get an export job that was created by the POST request for the TotalAggregatedRemoteConnectionReports report.
+#### Request
 The following is an example of a request.
 
 # [HTTP](#tab/http)
@@ -98,9 +99,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/ex
 
 ---
 
-### Response
+#### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,3 +127,43 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Get an export job that was created by the POST request for the RemoteConnectionHistoricalReports report.
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpcexportjob",
+  "sampleKeys": ["TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/exportJobs/RemoteConnectionQualityReports__85678957-6202-4e29-97e6-eb26ef07f330
+```
+
+#### Response
+The following is an example of the response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcExportJob"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.cloudPcExportJob",
+    "id": "RemoteConnectionQualityReports__85678957-6202-4e29-97e6-eb26ef07f330",
+    "reportName": "remoteConnectionHistoricalReports",
+    "format": "csv",
+    "select":  ["CloudPcId", "ManagedDeviceName", "UserPrincipalName", "DaysSinceLastSignIn", "TotalUsageInHour"],
+    "filter": null,
+    "requestDateTime": "2023-06-14T07:40:41.694Z",
+    "expirationDateTime": "",
+    "exportJobStatus": "completed",
+    "exportUrl": "https://westus01repexpstorage.blob.core.windows.net/599fe3a3-0285-4e7f-9c83-ffdf37914e27/remoteConnectionHistoricalReports_af34378a-cf5a-418d-b735-54b0ee155118.zip"
+  }
+}
+```
