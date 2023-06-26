@@ -18,6 +18,23 @@ Namespace: microsoft.graph
 |or|
 |and|
 
+### entityType values
+|Member|
+|:---|
+|event|
+|message|
+|driveItem|
+|externalItem|
+|site|
+|list|
+|listItem|
+|drive|
+|unknownFutureValue|
+|acronym|
+|bookmark|
+|chatMessage|
+|person|
+
 ### conditionalAccessExternalTenantsMembershipKind values
 
 | Member             |
