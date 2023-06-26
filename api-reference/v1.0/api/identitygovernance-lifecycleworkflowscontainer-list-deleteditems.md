@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # List deletedItems (deleted lifecycle workflows)
 
-Namespace: microsoft.graph.identityGovernance
+Namespace: microsoft.graph
 
 Get a list of the deleted workflow objects and their properties.
 
@@ -77,7 +77,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.identityGovernance.deletedItemContainer)"
+  "@odata.type": "Collection(microsoft.graph.deletedItemContainer)"
 }
 -->
 ``` http

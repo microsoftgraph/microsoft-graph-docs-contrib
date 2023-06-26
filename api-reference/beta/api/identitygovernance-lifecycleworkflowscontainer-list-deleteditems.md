@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # List deletedItems (deleted lifecycle workflows)
 
-Namespace: microsoft.graph.identityGovernance
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -197,7 +197,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.identityGovernance.deletedItemContainer)"
+  "@odata.type": "Collection(microsoft.graph.deletedItemContainer)"
 }
 -->
 ``` http
