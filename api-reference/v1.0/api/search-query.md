@@ -156,14 +156,15 @@ Content-type: application/json
 ```
 
 #### Response
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.searchResponse"
 } -->
-The following example shows the response.
 
-```HTTP
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
