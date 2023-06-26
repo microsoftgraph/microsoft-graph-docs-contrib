@@ -23,13 +23,12 @@ None.
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
-|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|role|[accessPackageResourceRole](accesspackageresourcerole.md)| Read-only. Nullable. Supports `$expand`.|
+|role|[accessPackageResourceRole](accesspackageresourcerole.md)| Read-only. Nullable.|
 |scope|[accessPackageResourceScope](accesspackageresourcescope.md)| Read-only. Nullable.|
 
 ## JSON representation

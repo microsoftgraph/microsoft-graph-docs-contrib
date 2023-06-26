@@ -21,9 +21,10 @@ None.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |id|String| Read-only.|
-|state|String| The outcome of whether the service was able to add the resource to the catalog.  The value is `Delivered` if the resource was added or removed. Read-Only.|
-|requestType|String|Use `AdminAdd` to add a resource, if the caller is an administrator or resource owner, `AdminUpdate` to update a resource, or `AdminRemove` to remove a resource. |
+|requestType|accessPackageRequestType|The type of the request. Use `adminAdd` to add a resource, if the caller is an administrator or resource owner, `adminUpdate` to update a resource, or `adminRemove` to remove a resource. |
+|state|accessPackageRequestState| The outcome of whether the service was able to add the resource to the catalog.  The value is `delivered` if the resource was added or removed. Read-only.|
 
 ## Relationships
 
@@ -47,9 +48,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "1fe272f0-d463-42aa-a9a8-b07ab50a1c4d",
-  "state": "Delivered",
-  "requestType": "AdminAdd"
+  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "requestType": "String",
+  "state": "String"
 }
 ```
 

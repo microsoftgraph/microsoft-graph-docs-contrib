@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "originSystem": "String",
   "originId": "String",
-  "isDefaultEnvironment": "Boolean",
+  "isDefaultEnvironment": true,
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)"
 }
