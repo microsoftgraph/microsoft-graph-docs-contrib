@@ -25,6 +25,8 @@ Rich notifications are available for the following resources.
 | Teams [onlineMeeting][] * | Changes to an online meeting: `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{joinWebUrl}` * | Does not support using `$select` to return only selected properties. The rich notification consists of all the properties of the changed instance. |
 | Teams [presence][] | Changes to a single user's presence: `/communications/presences/{id}` | Does not support using `$select` to return only selected properties. The rich notification consists of all the properties of the changed instance. |
 | Teams [team][] | Changes to any team in the tenant: `/teams`<br/><br/>Changes to a specific team: `/teams/{id}` | - |
+| Teams [CallTranscript][] <sup>*<sup> | Any transcript becomes available in the tenant: `communications/onlineMeetings/getAllTranscripts` <br><br> Any transcript becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per organization: 10,000 total subscriptions. |
+| Teams [CallRecording][] <sup>*<sup> | Any recording becomes available in the tenant: `communications/onlineMeetings/getAllRecordings` <br><br> Any recording becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per organization: 10,000 total subscriptions. |
 
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
@@ -48,3 +50,5 @@ Rich notifications are available for the following resources.
 [todoTask]: /graph/api/resources/todotask
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [baseTask]: /graph/api/resources/basetask
+[CallTranscript]: /graph/api/resources/calltranscript
+[CallRecording]: /graph/api/resources/callrecording
