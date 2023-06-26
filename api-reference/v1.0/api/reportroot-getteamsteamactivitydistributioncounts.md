@@ -77,11 +77,11 @@ The CSV file has the following headers for columns:
 The following is an example of a request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "reportroot_getteamsteamactivitydistributioncounts_csv"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getTeamsTeamActivityDistributionCounts(period='D7')
 ```
 

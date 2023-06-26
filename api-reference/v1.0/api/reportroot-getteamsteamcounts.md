@@ -76,7 +76,7 @@ The following is an example of a request.
   "name": "reportroot_getteamsteamcounts_csv"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getTeamsTeamCounts(period='D7')?$format=text/csv
 ```
 
@@ -103,6 +103,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
+
 Report Refresh Date,Report Date,Public Teams,Active Public Teams,Private Teams,Active Private Teams,
 ```
 
