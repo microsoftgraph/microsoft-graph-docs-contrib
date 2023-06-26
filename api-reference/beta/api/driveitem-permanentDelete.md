@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Permanentlt deletes a [DriveItem](../resources/driveitem.md) by using its ID.
+Permanently deletes a [DriveItem](../resources/driveitem.md) by using its ID.
 Note that deleting items using this method will be permanently deleted and won't go to recycleBin. Hence can't be restored.
 
 ## Permissions
