@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Get userRegistrationDetails
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Read the properties and relationships of a [userRegistrationDetails](../resources/userregistrationdetails.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
@@ -35,14 +37,17 @@ GET /reports/authenticationMethods/userRegistrationDetails/{userId}
 ```
 
 ## Optional query parameters
+
 This method does not support the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
