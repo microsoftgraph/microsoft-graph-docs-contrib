@@ -1,11 +1,15 @@
 ---
-title: "Enum values"
-description: "Microsoft Graph enumeration values"
+title: "Network Access enum values"
+description: "Microsoft Graph Network Access enumeration values"
 author: "moti-ba"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 doc_type: enumTypes
 ---
+
+# Network Access Enum Values
+
+Namespace: microsoft.graph.networkaccess
 
 ### aggregationFilter values 
 
