@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/virtualEndpoint/reports/getTotalAggregatedRemoteConnectionReports
+POST /deviceManagement/virtualEndpoint/reports/getInaccessibleCloudPcReports
 ```
 
 ## Request headers
@@ -69,7 +69,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpcreportsthis.gettotalaggregatedremoteconnectionreports"
+  "name": "cloudpcreportsthis.getInaccessibleCloudPcReports"
 }
 -->
 ``` http
