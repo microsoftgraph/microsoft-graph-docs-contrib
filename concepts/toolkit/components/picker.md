@@ -122,7 +122,7 @@ See [Caching](../customize-components/cache.md) for more details.
 
 ## Localization
 
-The control exposes the following variables that can be localized. See how you setup localization [here](../customize-components/localization.md).
+The control exposes the following variables that can be localized. For details about how to set up localization, see [Localizing components](../customize-components/localization.md).
 
 | String name         | Default value    |
 | ------------------- | ---------------- |
