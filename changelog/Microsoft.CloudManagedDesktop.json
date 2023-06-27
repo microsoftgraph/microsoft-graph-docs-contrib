@@ -3312,7 +3312,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getInaccessibleCloudPcReports",
           "ChangeType": "Addition",
-          "Description": "Added the [getInaccessibleCloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getInaccessibleCloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports?view=graph-rest-beta) resource.",
+          "Description": "Added the [getInaccessibleCloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getInaccessibleCloudPcReports?view=graph-rest-beta) method to the [cloudPcReports]https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
           "Target": "cloudPcReports"
         }
       ],
