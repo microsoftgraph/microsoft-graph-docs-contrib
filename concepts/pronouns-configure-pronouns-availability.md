@@ -27,7 +27,7 @@ The end user experience with pronouns might evolve over time. For current inform
 Global administrators can decide whether to display pronouns that users set up in their profile cards. To enable this scenario, you set the [isEnabledInOrganization](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true#properties) property to `true`. When this property is set to `true`, pronouns are displayed for everyone within the organization. When this property is set to `false`, pronouns are not displayed for anyone within or outside the organization. The default setting is `false`.
 
 > [!IMPORTANT]
-> When you turn pronouns on or off, it can take up to six hours for users to see changes. For example, if you turn pronouns on, users cannot see the option to add pronouns on their profile card for up to six hours. If you turn pronouns off, any previously set pronouns might stay visible in Microsoft 365 (for example, on profile cards) for up to six hours.
+> When you turn pronouns on or off, it can take up to seven hours for users to see changes. For example, if you turn pronouns on, users cannot see the option to add pronouns on their profile card for up to seven hours. If you turn pronouns off, any previously set pronouns might stay visible in Microsoft 365 (for example, on profile cards) for up to seven hours.
 >
 > When you turn off pronouns, all pronouns data created by users is deleted. The data deletion process might take up to 30 days to complete. If you turn pronouns back on within that period, any hidden pronouns that have not yet been deleted from Microsoft servers become visible in Microsoft 365 experiences, such as profile cards.
 
