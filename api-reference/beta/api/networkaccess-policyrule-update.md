@@ -42,7 +42,7 @@ PATCH /networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
-You must specify the @odata.type property and the value of the [policyRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-policyrule?view=graph-rest-beta) object type to update. For example, "@odata.type": "#microsoft.graph.m365ForwardingRule".
+You must specify the @odata.type property and the value of the [policyRule](/graph/api/resources/networkaccess-policyrule?view=graph-rest-beta) object type to update. For example, "@odata.type": "#microsoft.graph.m365ForwardingRule".
 
 
 |Property|Type|Description|
