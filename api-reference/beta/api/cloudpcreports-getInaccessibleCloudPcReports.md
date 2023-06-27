@@ -66,7 +66,6 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 ### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcreportsthis.getInaccessibleCloudPcReports"
@@ -101,7 +100,6 @@ Content-length: 199
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
