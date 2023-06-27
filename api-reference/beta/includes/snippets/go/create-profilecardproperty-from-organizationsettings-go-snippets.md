@@ -33,13 +33,11 @@ displayNameLocalization.SetDisplayName(&displayName)
 
 localizations := []graphmodels.DisplayNameLocalizationable {
 	displayNameLocalization,
-
 }
 profileCardAnnotation.SetLocalizations(localizations)
 
 annotations := []graphmodels.ProfileCardAnnotationable {
 	profileCardAnnotation,
-
 }
 requestBody.SetAnnotations(annotations)
 

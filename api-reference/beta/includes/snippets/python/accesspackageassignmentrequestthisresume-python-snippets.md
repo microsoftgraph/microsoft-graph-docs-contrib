@@ -12,16 +12,14 @@ request_body.source = 'Contoso.SodCheckProcess'
 
 request_body.type = 'microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated'
 
-data = CustomExtensionData()
+data = AccessPackageAssignmentRequestCallbackData()
 data.@odata_type = 'microsoft.graph.accessPackageAssignmentRequestCallbackData'
 
-additional_data = [
-'stage' => 'assignmentRequestCreated', 
-'custom_extension_stage_instance_id' => '957d0c50-466b-4840-bb5b-c92cea7141ff', 
-'custom_extension_stage_instance_detail' => 'This user is all verified', 
-];
-data.additional_data(additional_data)
+data.stage(AccessPackageCustomExtensionStage.AssignmentRequestCreated('accesspackagecustomextensionstage.assignmentrequestcreated'))
 
+data.custom_extension_stage_instance_id = '957d0c50-466b-4840-bb5b-c92cea7141ff'
+
+data.custom_extension_stage_instance_detail = 'This user is all verified'
 
 
 request_body.data = data

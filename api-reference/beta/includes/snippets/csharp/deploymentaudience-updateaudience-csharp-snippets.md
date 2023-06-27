@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.DeploymentAudie
 {
 	AddMembers = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
-		new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset
+		new Microsoft.Graph.Beta.Models.WindowsUpdates.AzureADDevice
 		{
 			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
 			Id = "String (identifier)",

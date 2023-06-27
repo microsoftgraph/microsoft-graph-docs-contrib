@@ -65,10 +65,9 @@ attendee1.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee1.SetType(&type) 
 
-attendees := []graphmodels.Objectable {
+attendees := []graphmodels.attendeeable {
 	attendee,
 	attendee1,
-
 }
 requestBody.SetAttendees(attendees)
 location := graphmodels.NewLocation()
@@ -111,7 +110,6 @@ locations := []graphmodels.Locationable {
 	location,
 	location1,
 	location2,
-
 }
 requestBody.SetLocations(locations)
 allowNewTimeProposals := true

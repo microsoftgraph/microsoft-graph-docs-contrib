@@ -25,7 +25,6 @@ select := []string {
 	"RoundTripTimeInMsP50",
 	"AvailableBandwidthInMBpsP50",
 	"RemoteSignInTimeInSec",
-
 }
 requestBody.SetSelect(select)
 top := int32(25)

@@ -18,7 +18,7 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 requestBody := graphmodelswindowsupdates.NewUpdatePolicy()
 deploymentSettings := graphmodelswindowsupdates.NewDeploymentSettings()
 schedule := graphmodelswindowsupdates.NewScheduleSettings()
-gradualRollout := graphmodelswindowsupdates.NewGradualRolloutSettings()
+gradualRollout := graphmodelswindowsupdates.NewRateDrivenRolloutSettings()
 durationBetweenOffers , err := abstractions.ParseISODuration("P1D")
 gradualRollout.SetDurationBetweenOffers(&durationBetweenOffers) 
 additionalData := map[string]interface{}{
