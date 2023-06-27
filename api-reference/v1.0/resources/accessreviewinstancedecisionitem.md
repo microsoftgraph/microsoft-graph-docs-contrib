@@ -47,8 +47,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-| instance |[accessReviewInstance](accessreviewinstance.md) | There is exactly one accessReviewInstance associated with each decision. The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on. |
-| insights |[governanceInsight](governanceinsight.md) collection | Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an **accessReviewInstanceDecisionItem**.
+| insights |[governanceInsight](governanceinsight.md) collection | Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an **accessReviewInstanceDecisionItem**. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
