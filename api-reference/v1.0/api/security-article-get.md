@@ -73,6 +73,8 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/a272d5ab
 ```
 
+---
+
 ### Response
 
 The following is an example of the response.
