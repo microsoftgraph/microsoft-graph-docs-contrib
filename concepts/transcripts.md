@@ -11,25 +11,30 @@ ms.custom: scenarios:getting-started
 
 Change notifications enable you to subscribe to changes (create) to transcripts. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) is available after an online meeting.
 
-Continue with this article about scenarios for the transcript resource. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
+This article describes scenarios for the transcript resource. For more details, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
-## Subscribe to any transcripts being available at tenant level
+## Subscribe to transcripts available at tenant-level
 
-To get change notifications for any transcript being available for any online meeting for a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. The notification for a transcript will be sent only if subscription is made before transcription starts. This subscription is supported only for regular scheduled meetings.
+To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for regular scheduled meetings.
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported |
-|Delegated (personal Microsoft account) | Not supported   |
-|Application | OnlineMeetingTranscript.Read.All   |
+One of the following permissions is required to subscribe to `communications/onlineMeetings/getAllTranscripts`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | OnlineMeetingTranscript.Read.All            |
 
 ### Example
+
+The following example shows how to subscribe to transcripts available at tenant-level.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -40,23 +45,28 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to any transcripts being available for a particular online meeting
+## Subscribe to transcripts available for a particular online meeting
 
-To get change notifications for any transcript being available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. The notification for a transcript will be sent only if subscription is made before transcription starts. This subscription is supported only for regular scheduled meetings.
+To get change notifications for any transcript available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for regular scheduled meetings.
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | OnlineMeetingTranscript.Read.All |
-|Delegated (personal Microsoft account) | Not supported   |
-|Application | OnlineMeetingTranscript.Read.All   |
+One of the following permissions is required to subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | OnlineMeetingTranscript.Read.All            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | OnlineMeetingTranscript.Read.All            |
 
 ### Example
+
+The following example shows how to subscribe to transcripts available for a particular online meeting.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -71,25 +81,25 @@ Content-Type: application/json
 
 Notifications without resource data give you enough information to make GET calls to get the transcript. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data isn't sent over).
 
-The following is the payload for notifications without resource data and for a transcript being available for an online meeting.
+The following shows a payload for notifications without resource data and for the transcript available for an online meeting.
 
 ```json
-{ 
-  "subscriptionId": "265009c7-312c-4594-981f-f620d31abdd3", 
-  "changeType": "created", 
-  "tenantId": "<<--TenantForWhichNotificationWasSent-->>", 
-  "clientState": "<<--SpecifiedClientState-->>", 
-  "subscriptionExpirationDateTime": "2023-03-20T11:00:00.0000000-08:00", 
-  "resource": "communications/onlineMeetings('MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19PVE0yTURZellUa3ROalkyT1MwMFlXRmxMVGcyWm1RdE5XTXdaalF5WlRJMk9XVmlAdGhyZWFkLnYy')/transcripts('MSMjMCMjNTYyN2ZiZDctNjFlNS00NGNmLWE0ZTQtYTQ1ODJhYTdmNGQ3')", 
-  "resourceData": { 
-    "id": "MSMjMCMjNTYyN2ZiZDctNjFlNS00NGNmLWE0ZTQtYTQ1ODJhYTdmNGQ3", 
-    "@odata.type": "#Microsoft.Graph.callTranscript", 
-    "@odata.id": "communications/onlineMeetings('MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19PVE0yTURZellUa3ROalkyT1MwMFlXRmxMVGcyWm1RdE5XTXdaalF5WlRJMk9XVmlAdGhyZWFkLnYy')/transcripts('MSMjMCMjNTYyN2ZiZDctNjFlNS00NGNmLWE0ZTQtYTQ1ODJhYTdmNGQ3')" 
-  } 
-} 
+{
+  "subscriptionId": "265009c7-312c-4594-981f-f620d31abdd3",
+  "changeType": "created",
+  "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
+  "clientState": "<<--SpecifiedClientState-->>",
+  "subscriptionExpirationDateTime": "2023-03-20T11:00:00.0000000-08:00",
+  "resource": "communications/onlineMeetings('MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19PVE0yTURZellUa3ROalkyT1MwMFlXRmxMVGcyWm1RdE5XTXdaalF5WlRJMk9XVmlAdGhyZWFkLnYy')/transcripts('MSMjMCMjNTYyN2ZiZDctNjFlNS00NGNmLWE0ZTQtYTQ1ODJhYTdmNGQ3')",
+  "resourceData": {
+    "id": "MSMjMCMjNTYyN2ZiZDctNjFlNS00NGNmLWE0ZTQtYTQ1ODJhYTdmNGQ3",
+    "@odata.type": "#Microsoft.Graph.callTranscript",
+    "@odata.id": "communications/onlineMeetings('MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19PVE0yTURZellUa3ROalkyT1MwMFlXRmxMVGcyWm1RdE5XTXdaalF5WlRJMk9XVmlAdGhyZWFkLnYy')/transcripts('MSMjMCMjNTYyN2ZiZDctNjFlNS00NGNmLWE0ZTQtYTQ1ODJhYTdmNGQ3')"
+  }
+}
 ```
 
-The `resource` and `@odata.id` properties can be used to make calls to Microsoft Graph to get the transcript.
+The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the transcript.
 
 ## See also
 
