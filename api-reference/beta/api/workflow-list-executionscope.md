@@ -61,9 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example: Retrieve the users that fall in scope of a workflow
-
-#### Request
+### Request
 
 The following is an example of a request.
 
@@ -73,10 +71,10 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identitygovernance/lifecycleWorkflows/workflows/8696088c-1aef-4f65-afe9-acd55343e327/executionScope
+GET https://graph.microsoft.com/beta/identitygovernance/lifecycleWorkflows/workflows/8696088c-1aef-4f65-afe9-acd55343e327/executionScope
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
