@@ -332,3 +332,9 @@ Namespace: microsoft.graph.networkaccess
 |all|
 |unknownFutureValue|
 
+<!--
+{
+  "type": "#page.annotation",
+  "namespace": "microsoft.graph.networkaccess"
+}
+-->
