@@ -550,7 +550,7 @@ Content-Type: application/json
 The *app instance lock* feature allows you to protect sensitive properties of your multi-tenant apps from unauthorized tampering. The following properties of the service principal object can be locked:
 
 - **keyCredentials** where the usage type is `Sign` or `Verify`.
-- **passwordCredentials** where the usage is `Sign` or `Verify`.
+- **passwordCredentials** where the usage type is `Sign` or `Verify`.
 - **tokenEncryptionKeyId** property.
 
 You manage the app instance lock feature through the **servicePrincipalLockConfiguration** property of the [application](/graph/api/resources/application) object of the multi-tenant app.
