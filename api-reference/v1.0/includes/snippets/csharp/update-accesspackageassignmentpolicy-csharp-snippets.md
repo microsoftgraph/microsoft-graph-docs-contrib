@@ -49,31 +49,19 @@ var requestBody = new AccessPackageAssignmentPolicy
 				DurationBeforeEscalation = TimeSpan.Parse("PT0S"),
 				PrimaryApprovers = new List<SubjectSet>
 				{
-					new SubjectSet
+					new RequestorManager
 					{
 						OdataType = "#microsoft.graph.requestorManager",
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"managerLevel" , 1
-							},
-						},
+						ManagerLevel = 1,
 					},
 				},
 				FallbackPrimaryApprovers = new List<SubjectSet>
 				{
-					new SubjectSet
+					new SingleUser
 					{
 						OdataType = "#microsoft.graph.singleUser",
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"userId" , "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2"
-							},
-							{
-								"description" , "user"
-							},
-						},
+						UserId = "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2",
+						Description = "user",
 					},
 				},
 				EscalationApprovers = new List<SubjectSet>

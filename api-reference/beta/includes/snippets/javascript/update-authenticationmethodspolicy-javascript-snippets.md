@@ -24,6 +24,14 @@ const authenticationMethodsPolicy = {
             }
         ]
     }
+  },
+  reportSuspiciousActivitySettings: {
+      state: 'enabled',
+      includeTarget: {
+          targetType: 'group',
+          id: 'all_users'
+      },
+      voiceReportingCode: 0
   }
 };
 

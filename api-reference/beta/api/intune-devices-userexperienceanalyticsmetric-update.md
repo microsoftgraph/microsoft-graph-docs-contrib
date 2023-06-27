@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics metric.|
 |value|Double|The value of the user experience analytics metric.|
-|unit|String|The unit of the user experience analytics metric.|
+|unit|String|The unit of the user experience analytics metric. Examples: none, percentage, count, seconds, score.|
 
 
 

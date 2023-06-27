@@ -29,8 +29,8 @@ The user experience analytics device startup score history.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics device startup process.|
-|startupDateTime|DateTimeOffset|The user experience analytics device startup date time.|
+|id|String|The unique identifier of the user experience analytics device startup process. Supports: $select, $OrderBy. Read-only.|
+|startupDateTime|DateTimeOffset|The device startup date time. The value cannot be modified and is automatically populated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default.|
 |overallScore|Int32|User experience analytics overall score. Score will be in the range 0-100, 100 is the ideal score. Valid values 0 to 100|
 |startupScore|Int32|User experience analytics device startup score. Score will be in the range 0-100, 100 is the ideal score.|
 |coreBootScore|Int32|The user experience analytics device core boot score. Score will be in the range 0-100, 100 is the ideal score.|

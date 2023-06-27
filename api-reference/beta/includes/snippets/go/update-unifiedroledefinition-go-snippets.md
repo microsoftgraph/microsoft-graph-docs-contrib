@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUnifiedRoleDefinition()
@@ -25,13 +25,11 @@ requestBody.SetDisplayName(&displayName)
 unifiedRolePermission := graphmodels.NewUnifiedRolePermission()
 allowedResourceActions := []string {
 	"microsoft.directory/applications/basic/read",
-
 }
 unifiedRolePermission.SetAllowedResourceActions(allowedResourceActions)
 
 rolePermissions := []graphmodels.UnifiedRolePermissionable {
 	unifiedRolePermission,
-
 }
 requestBody.SetRolePermissions(rolePermissions)
 
