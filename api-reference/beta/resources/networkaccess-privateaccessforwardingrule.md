@@ -20,9 +20,9 @@ Inherits from [microsoft.graph.networkaccess.forwardingRule](../resources/networ
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List privateAccessForwardingRules](../api/networkaccess-forwardingrule-list.md)|[microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md) collection|Get a list of the [microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md) objects and their properties.|
-|[Get privateAccessForwardingRule](../api/networkaccess-forwardingrule-get.md)|[microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md) object.|
-|[Update privateAccessForwardingRule](../api/networkaccess-forwardingrule-update.md)|[microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md)|Update the properties of a [microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md) object.|
+|[List privateAccessForwardingRules](../api/networkaccess-policy-list-policyrules.md)|[microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md) collection|Get a list of the [microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md) objects and their properties.|
+|[Get privateAccessForwardingRule](../api/networkaccess-policyrule-get.md)|[microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md) object.|
+|[Update privateAccessForwardingRule](../api/networkaccess-policyrule-update.md)|[microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md)|Update the properties of a [microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -20,9 +20,9 @@ Inherits from [microsoft.graph.networkaccess.forwardingRule](../resources/networ
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List m365ForwardingRule](../api/networkaccess-forwardingrule-list.md)|[microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) collection|Get a list of the [microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) objects and their properties.|
-|[Get m365ForwardingRule](../api/networkaccess-forwardingrule-get.md)|[microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) object.|
-|[Update m365ForwardingRule](../api/networkaccess-forwardingrule-update.md)|[microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md)|Update the properties of a [microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) object.|
+|[List m365ForwardingRule](../api/networkaccess-policy-list-policyrules.md)|[microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) collection|Get a list of the [microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) objects and their properties.|
+|[Get m365ForwardingRule](../api/networkaccess-policyrule-get.md)|[microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) object.|
+|[Update m365ForwardingRule](../api/networkaccess-policyrule-update.md)|[microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md)|Update the properties of a [microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) object.|
 
 
 ## Properties
