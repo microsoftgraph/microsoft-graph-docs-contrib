@@ -10329,7 +10329,7 @@ items:
             href: api/cloudpc-getcloudpclaunchinfo.md
           - name: Get shift work access state
             href: api/cloudpc-getshiftworkcloudpcaccessstate.md
-          - name: Get provisioned Cloud PCs by group Id and service plan id
+          - name: Get provisioned Cloud PCs
             href: api/cloudpc-getprovisionedcloudpcs.md
           - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
