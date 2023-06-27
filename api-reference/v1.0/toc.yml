@@ -5591,6 +5591,16 @@ items:
                         href: api/accesspackageassignmentpolicy-update.md
                       - name: Delete
                         href: api/accesspackageassignmentpolicy-delete.md
+                  - name: Access package resource
+                    href: resources/accesspackageresource.md
+                  - name: Access package resource environment
+                    href: resources/accesspackageresourceenvironment.md
+                  - name: Access package resource request
+                    href: resources/accesspackageresourcerequest.md
+                  - name: Access package resource role
+                    href: resources/accesspackageresourcerole.md
+                  - name: Access package resource role scope
+                    href: resources/accesspackageresourcerolescope.md
               - name: Privileged Identity Management
                 displayName: Privileged Identity Management, PIM, Identity Governance
                 items:
