@@ -54,7 +54,7 @@ Here is an example of the request.
 
 <!-- { "blockType": "request" , "name" : "intune_apps_mobileappcontent_list_list_mobileappcontents" }-->
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe/contentVersions
 ```
 
 ### Response
