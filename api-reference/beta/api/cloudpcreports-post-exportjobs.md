@@ -68,7 +68,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_cloudpcexportjob_from_"
+  "name": "create_cloudpcexportjob_from_example1"
 }
 -->
 ``` http
@@ -156,7 +156,7 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_cloudpcexportjob_from_"
+  "name": "create_cloudpcexportjob_from_example2"
 }
 -->
 ``` http
