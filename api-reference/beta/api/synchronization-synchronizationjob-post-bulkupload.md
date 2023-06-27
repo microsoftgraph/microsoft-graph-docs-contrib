@@ -451,13 +451,13 @@ Content-Type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "synchronizationJob: bulkupload",
+  "description": "synchronizationJob: bulkUpload",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
     "Error: microsoft.graph.microsoft.graph/servicePrincipals:
-      /servicePrincipals/{var}/synchronization/jobs/{var}/restart
+      /servicePrincipals/{var}/synchronization/jobs/{var}/bulkUpload
       Uri path requires navigating into unknown object hierarchy: missing property 'jobs' on 'synchronization'. Possible issues:
        1) Doc bug where 'jobs' isn't defined on the resource.
        2) Doc bug where 'jobs' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
