@@ -15,7 +15,10 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 
 ## Methods
 
-None.
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
+
 
 ## Properties
 
