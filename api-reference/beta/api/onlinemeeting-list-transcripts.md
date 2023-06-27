@@ -45,14 +45,7 @@ GET /users{userId}/onlineMeetings{meetingId}/transcripts
 
 ## Optional query parameters
 
-This method supports the `$skipToken` and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
-
-### Supported query patterns
-
-| Pattern                | Supported | Syntax                                 | Notes |
-| ---------------------- | ------- | -------------------------------------- | ----- |
-| Server-side pagination |     ✓     | `@odata.nextLink`                      | You will get a continuation token in the response, when a result set spans multiple pages. |
-| Page limit             |     ✓     | `/transcripts?$top=20` | Get transcripts with page size 20. Default page limit is 10. Max page limit is 100. |
+This method doesn't support any [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -130,7 +123,6 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts",
     "@odata.count": 3,
-    "@odata.nextLink": "https://graph.microsoft.com/beta/users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts?$skiptoken=MSMjMCMjMjAyMS0wOS0xNlQxMzo1OToyNy4xMjEwMzgzWg%3d%3d",
     "value": [
         {
             "id": "MSMjMCMjZDAwYWU3NjUtNmM2Yi00NjQxLTgwMWQtMTkzMmFmMjEzNzdh",
