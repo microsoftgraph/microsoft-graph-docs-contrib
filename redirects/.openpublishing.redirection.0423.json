@@ -12,7 +12,7 @@
       },
       {
         "source_path_from_root": "/api-reference/beta/api/directorydefinition-discover.md",
-        "redirect_url": "/graph/api/synchronization-directorydefinition-discover.md?view=graph-rest-beta",
+        "redirect_url": "/graph/api/synchronization-directorydefinition-discover?view=graph-rest-beta",
         "redirect_document_id": true
       },
       {
