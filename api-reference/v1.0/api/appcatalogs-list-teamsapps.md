@@ -357,16 +357,18 @@ Content-Type: application/json
       "id": "876df28f-2e78-423b-94a5-44181bd0e225",
       "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "displayName": "Test App",
-      "distributionMethod": "organization",
+      "distributionMethod": "Organization",
       "appDefinitions": [
         {
           "id": "NGQyMGNiNDUtZWViYS00ZTEyLWE3YzktMGQ0NDgzYjYxNzU2IyMxLjAuMA==",
           "teamsAppId": "876df28f-2e78-423b-94a5-44181bd0e225",
-          "azureADAppId": null,
           "displayName": "Test App",
           "version": "1.0.1",
-          "requiredResourceSpecificApplicationPermissions": [],
-          "publishingState": "published"
+          "publishingState": "published",
+          "shortDescription": "quaerat quasi magnam. slight change. 5",
+          "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
+          "lastModifiedDateTime": "2020-11-23T21:36:00.9437445Z",
+          "createdBy": null 
         }
       ]
     }
@@ -451,10 +453,8 @@ Content-Type: application/json
                     "@odata.etag": "ImNOTW1CR2V1VzgwczlEblVidU00UHc9PSI=",
                     "id": "OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ=",
                     "teamsAppId": "8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6",
-                    "azureADAppId": null,
                     "displayName": "Ducks-3",
-                    "version": "1.0.9",
-                    "requiredResourceSpecificApplicationPermissions": [],
+                    "version": "1.0.9",                  
                     "publishingState": "rejected",
                     "shortDescription": "quaerat quasi magnam. slight change. 5",
                     "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
@@ -484,11 +484,9 @@ Content-Type: application/json
                 {
                     "@odata.etag": "IkwzVDlMOTBSSEdTMFducHUyYkpjVmc9PSI=",
                     "id": "MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk",
-                    "teamsAppId": "30909dee-f7dd-4f89-8b3b-55de2e32489c",
-                    "azureADAppId": "d75abc57-8255-4309-9c29-a3c689e20341",
+                    "teamsAppId": "30909dee-f7dd-4f89-8b3b-55de2e32489c",                
                     "displayName": "Self-Install-App-E2E-Tests",
                     "version": "6.0.0",
-                    "requiredResourceSpecificApplicationPermissions": [],
                     "publishingState": "submitted",
                     "shortDescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
                     "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
