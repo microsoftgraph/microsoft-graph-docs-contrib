@@ -7742,7 +7742,7 @@ items:
                     href: api/security-vulnerability-list-components.md
               - name: Vulnerability component
                 items:
-                  - name: Vulnerability componet
+                  - name: Vulnerability component
                     href: resources/security-vulnerabilitycomponent.md
                   - name: Get
                     href: api/security-vulnerabilitycomponent-get.md
