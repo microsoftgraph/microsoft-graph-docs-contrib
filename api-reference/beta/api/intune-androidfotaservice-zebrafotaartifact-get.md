@@ -68,7 +68,7 @@ Content-Length: 434
 {
   "value": {
     "@odata.type": "#microsoft.graph.zebraFotaArtifact",
-    "id": "37305f61-5f61-3730-615f-3037615f3037",
+    "id": "c81cfc78-fc78-c81c-78fc-1cc878fc1cc8",
     "deviceModel": "Device Model value",
     "osVersion": "Os Version value",
     "patchVersion": "Patch Version value",

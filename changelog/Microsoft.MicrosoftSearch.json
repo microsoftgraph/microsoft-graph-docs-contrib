@@ -394,7 +394,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-28T12:49:29.5221544Z",
       "WorkloadArea": "Search",
-      "SubArea": "Analytics"
+      "SubArea": "Query"
     },
     {
       "ChangeList": [
@@ -500,7 +500,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2022-02-16T06:29:33.9252671Z",
       "WorkloadArea": "Search",
-      "SubArea": "Analytics"
+      "SubArea": "Query"
     },
     {
       "ChangeList": [
@@ -686,7 +686,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-01-27T08:44:58.7479522Z",
       "WorkloadArea": "Search",
-      "SubArea": "Analytics"
+      "SubArea": "Query"
     },
     {
       "ChangeList": [
@@ -757,7 +757,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isCollapsed",
           "ChangeType": "Addition",
-          "Description": "Added the **isCollapsed** property to the [searchHit](https://learn.microsoft.com/en-us/graph/api/resources/searchHit?view=graph-rest-beta) resource.",
+          "Description": "Added the **isCollapsed** property to the [searchHit](https://learn.microsoft.com/en-us/graph/api/resources/searchHit) resource.",
           "Target": "searchHit"
         }
       ],
@@ -766,7 +766,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2023-06-02T08:33:47.66211Z",
       "WorkloadArea": "Search",
-      "SubArea": "Analytics"
+      "SubArea": "Query"
     }
   ]
 }

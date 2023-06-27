@@ -49,10 +49,10 @@ The following table shows the properties that are required when you create the u
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics baseline.|
-|displayName|String|The name of the user experience analytics baseline.|
+|displayName|String|The name of the baseline.|
 |overallScore|Int32|The overall score of the user experience analytics baseline.|
-|isBuiltIn|Boolean|Signifies if the current baseline is the commercial median baseline or a custom baseline.|
-|createdDateTime|DateTimeOffset|The date the custom baseline was created.|
+|isBuiltIn|Boolean|When TRUE, indicates the current baseline is the commercial median baseline. When FALSE, indicates it is a custom baseline. FALSE by default.|
+|createdDateTime|DateTimeOffset|The date the custom baseline was created. The value cannot be modified and is automatically populated when the baseline is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default.|
 
 
 

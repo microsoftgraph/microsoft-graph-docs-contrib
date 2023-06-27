@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new MeetingRegistrantBase
+var requestBody = new ExternalMeetingRegistrant
 {
 	OdataType = "#microsoft.graph.externalMeetingRegistrant",
 	Id = "9d96988d-a66a-46ce-aad7-0b245615b297",

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSharepointSettings()
@@ -20,7 +20,6 @@ deletedUserPersonalSiteRetentionPeriodInDays := int32(365)
 requestBody.SetDeletedUserPersonalSiteRetentionPeriodInDays(&deletedUserPersonalSiteRetentionPeriodInDays) 
 excludedFileExtensionsForSyncApp := []string {
 	".mp3",
-
 }
 requestBody.SetExcludedFileExtensionsForSyncApp(excludedFileExtensionsForSyncApp)
 imageTaggingOption := graphmodels.ENHANCED_IMAGETAGGINGCHOICE 

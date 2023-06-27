@@ -26,14 +26,12 @@ var requestBody = new Conversation
 					},
 					Extensions = new List<Extension>
 					{
-						new Extension
+						new OpenTypeExtension
 						{
 							OdataType = "microsoft.graph.openTypeExtension",
+							ExtensionName = "Com.Contoso.Benefits",
 							AdditionalData = new Dictionary<string, object>
 							{
-								{
-									"extensionName" , "Com.Contoso.Benefits"
-								},
 								{
 									"companyName" , "Contoso"
 								},

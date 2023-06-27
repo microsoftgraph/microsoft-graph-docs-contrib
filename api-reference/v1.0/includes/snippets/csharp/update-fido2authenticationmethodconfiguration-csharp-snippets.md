@@ -8,16 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AuthenticationMethodConfiguration
+var requestBody = new Fido2AuthenticationMethodConfiguration
 {
 	OdataType = "#microsoft.graph.fido2AuthenticationMethodConfiguration",
 	State = AuthenticationMethodState.Enabled,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"isAttestationEnforced" , "true"
-		},
-	},
+	IsAttestationEnforced = true,
 };
 var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"].PatchAsync(requestBody);
 

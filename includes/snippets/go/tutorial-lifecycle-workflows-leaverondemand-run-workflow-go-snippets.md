@@ -8,23 +8,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/IdentityGovernance/LifecycleWorkflows/Workflows/Item/MicrosoftGraphIdentityGovernanceActivate"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewActivatePostRequestBody()
+requestBody := graphidentitygovernance.NewActivatePostRequestBody()
 
 
 user := graphmodels.NewUser()
 id := "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
 user.SetId(&id) 
 
-subjects := []graphmodels.Objectable {
+subjects := []graphmodels.userable {
 	user,
-
 }
 requestBody.SetSubjects(subjects)
 

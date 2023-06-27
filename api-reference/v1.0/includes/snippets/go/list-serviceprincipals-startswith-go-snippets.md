@@ -9,28 +9,28 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("ConsistencyLevel", "eventual")
 
 
-requestFilter := "startswith(displayName,%20'a')"
+requestFilter := "startswith(displayName, 'a')"
 requestCount := true
 requestTop := int32(1)
 
-requestParameters := &graphconfig.ServicePrincipalsRequestBuilderGetQueryParameters{
+requestParameters := &graphserviceprincipals.ServicePrincipalsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Count: &requestCount,
 	Top: &requestTop,
 	Orderby: [] string {"displayName"},
 }
-configuration := &graphconfig.ServicePrincipalsRequestBuilderGetRequestConfiguration{
+configuration := &graphserviceprincipals.ServicePrincipalsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
