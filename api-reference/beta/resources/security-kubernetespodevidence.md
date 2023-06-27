@@ -26,7 +26,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [alertEvidence](../resources/security-alertevidence.md). |
 |ephemeralContainers|[microsoft.graph.security.containerEvidence](./security-containerevidence.md) collection|The pod ephemeral containers list.|
 |initContainers|[microsoft.graph.security.containerEvidence](./security-containerevidence.md) collection|The pod init containers list.|
-|labels|[microsoft.graph.security.Dictionary_2OfString_String](./security-dictionarystringtostring)|The pod labels.|
+|labels|[microsoft.graph.dictionary](./security-dictionarystringtostring)|The pod labels.|
 |name|String|The pod name.|
 |namespace|[microsoft.graph.security.kubernetesNamespaceEvidence](./security-kubernetesnamespaceevidence.md)|The pod namespace.|
 |podIp|[microsoft.graph.security.ipEvidence](./security-ipevidence.md)|The pod ip.|
@@ -66,7 +66,7 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.security.containerEvidence"
   }],
   "labels": {
-    "@odata.type": "microsoft.graph.security.Dictionary_2OfString_String"
+    "@odata.type": "microsoft.graph.dictionary"
   },
   "name": "String",
   "namespace": {

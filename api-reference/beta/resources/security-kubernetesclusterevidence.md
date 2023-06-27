@@ -23,7 +23,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |:---|:---|:---|
 |cloudResource|[microsoft.graph.security.alertEvidence](./security-alertevidence.md)|The cloud identifier of the cluster can be either azureResourceEvidence, amazonResourceEvidence, googleCloudResourceEvidence or other.|
 |createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [alertEvidence](../resources/security-alertevidence.md). |
-|distro|String|The distribution type of the cluster.|
+|distribution|String|The distribution type of the cluster.|
 |name|String|The cluster name.|
 |platform|String|The platform the cluster runs on (AKS, GKE, EKS or other).|
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
@@ -52,7 +52,7 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.security.alertEvidence"
   },
   "createdDateTime": "String (timestamp)",
-  "distro": "String",
+  "distribution": "String",
   "name": "String",
   "platform": "String",
   "remediationStatus": "String",
