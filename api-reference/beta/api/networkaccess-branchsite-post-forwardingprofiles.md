@@ -70,7 +70,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST /networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
+POST https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
 Content-Type: application/json
 
 {

@@ -66,7 +66,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH /networkAccess/settings/conditionalAccess
+PATCH https://graph.microsoft.com/beta/networkAccess/settings/conditionalAccess
 Content-Type: application/json
 
 {

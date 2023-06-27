@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccess/branches/{branchSiteId}
+GET /networkAccess/connectivity/branches/{branchSiteId}
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET /networkAccess/branches/{branchSiteId}
+GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}
 ```
 
 

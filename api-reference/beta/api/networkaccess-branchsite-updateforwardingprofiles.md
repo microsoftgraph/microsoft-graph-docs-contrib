@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /networkAccess/branches/{branchSiteId}/forwardingProfiles
+PATCH /networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
 ```
 
 ## Request headers
@@ -70,7 +70,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}/forwardingProfiles
+PATCH https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
 
 {
     "@context": "#$delta",

@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /networkAccess/branches/{branchSiteId}/deviceLinks
+POST /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks
 ```
 
 ## Request headers
@@ -71,7 +71,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST /networkAccess/branches/{branchSiteId}/deviceLinks
+POST https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/deviceLinks
 
 {
     "name": "Branch test",

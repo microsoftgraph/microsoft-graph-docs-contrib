@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET /networkaccess/settings/enrichedAuditLogs
+GET https://graph.microsoft.com/beta/networkaccess/settings/enrichedAuditLogs
 ```
 
 

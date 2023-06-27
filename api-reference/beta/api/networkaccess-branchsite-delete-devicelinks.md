@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /networkAccess/branches/{branchSiteId}/deviceLinks/{deviceLinkId}/$ref
+DELETE /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}/$ref
 ```
 
 ## Request headers
@@ -57,7 +57,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE /networkAccess/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+DELETE https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 ```
 
 

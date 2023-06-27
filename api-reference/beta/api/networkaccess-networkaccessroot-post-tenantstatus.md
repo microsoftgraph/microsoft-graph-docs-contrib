@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST /networkAccess/microsoft.graph.networkaccess.onboard
+POST https://graph.microsoft.com/beta/networkAccess/microsoft.graph.networkaccess.onboard
 ```
 
 

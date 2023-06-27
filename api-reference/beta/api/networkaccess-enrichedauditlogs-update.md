@@ -67,7 +67,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH /networkAccess/settings/enrichedAuditLogs
+PATCH https://graph.microsoft.com/beta/networkAccess/settings/enrichedAuditLogs
 Content-Type: application/json
 
 {

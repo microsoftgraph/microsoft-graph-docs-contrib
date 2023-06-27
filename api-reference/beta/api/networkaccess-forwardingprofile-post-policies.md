@@ -65,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST /networkAccess/forwardingProfiles/{forwardingProfileId}/policies
+POST https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{forwardingProfileId}/policies
 Content-Type: application/json
 
 {

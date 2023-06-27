@@ -62,7 +62,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH /networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
+PATCH https://graph.microsoft.com/beta/networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
 ```
 
 
