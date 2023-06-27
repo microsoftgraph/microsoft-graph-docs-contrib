@@ -99,7 +99,8 @@ The following SCIM bulk request uses the SCIM standard Core User and Enterprise 
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/ad423e08-bc97-4408-8bfb-e17d48a8c138/synchronization/jobs/API2AAD.b17887d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9123aaa8e530/bulkUpload
+POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
+Authorization: Bearer <token>
 Content-Type: application/scim+json
 
 {
@@ -273,7 +274,8 @@ The following is an example of a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/ad423e08-bc97-4408-8bfb-e17d48a8c138/synchronization/jobs/API2AAD.b17887d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9123aaa8e530/bulkUpload
+POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
+Authorization: Bearer <token>
 Content-Type: application/scim+json
 
 {
