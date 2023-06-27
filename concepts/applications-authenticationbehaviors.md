@@ -12,7 +12,7 @@ ms.date: 06/26/2023
 
 # Manage application authenticationBehaviors to prevent use of email claims for user identification or authorization
 
-As described in [this Microsoft security advisory](https://msrc.microsoft.com/blog/2023/06/potential-risk-of-privilege-escalation-in-azure-ad-applications/), **apps should never use the email claim for authorization purposes**. If your application uses the email claim for authorization or primary user identification purposes, it's subject to account and privilege escalation attacks. This risk of unauthorized access is especially identified in the following scenarios:
+As described in the Microsoft security advisory [Potential Risk of Privilege Escalation in Azure AD Applications](https://msrc.microsoft.com/blog/2023/06/potential-risk-of-privilege-escalation-in-azure-ad-applications/), **apps should never use the email claim for authorization purposes**. If your application uses the email claim for authorization or primary user identification purposes, it's subject to account and privilege escalation attacks. This risk of unauthorized access is especially identified in the following scenarios:
 
 - When the **mail** attribute of the [user](/graph/api/resources/user) object contains an email address with an unverified domain owner
 - For multi-tenant apps where a user from one tenant could escalate their privileges to access resources from another tenant through modification of their **mail** attribute
