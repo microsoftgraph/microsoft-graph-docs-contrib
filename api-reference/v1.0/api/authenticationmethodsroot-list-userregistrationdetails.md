@@ -102,7 +102,7 @@ Content-Type: application/json
         "microsoftAuthenticatorPush",
         "softwareOneTimePasscode"
       ],
-      "isSystemPreferredAuthenticationMethodEnabled": "true",
+      "isSystemPreferredAuthenticationMethodEnabled": true,
       "systemPreferredAuthenticationMethods": [
         "push"
       ],
@@ -122,7 +122,7 @@ Content-Type: application/json
       "isPasswordlessCapable": false,
       "lastUpdatedDateTime": "2023-03-13T19:15:41.6195833Z",
       "methodsRegistered": [],
-      "isSystemPreferredAuthenticationMethodEnabled": "true",
+      "isSystemPreferredAuthenticationMethodEnabled": true,
       "systemPreferredAuthenticationMethods": [],
       "userPreferredMethodForSecondaryAuthentication": "",
       "userType": "guest"
@@ -144,7 +144,7 @@ Content-Type: application/json
         "microsoftAuthenticatorPush",
         "softwareOneTimePasscode"
       ],
-      "isSystemPreferredAuthenticationMethodEnabled": "true",
+      "isSystemPreferredAuthenticationMethodEnabled": true,
       "systemPreferredAuthenticationMethods": [
         "push"
       ],
