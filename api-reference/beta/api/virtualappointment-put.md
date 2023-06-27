@@ -79,7 +79,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
+PUT https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
 Content-Type: application/json
 ETag: W/"ZfYdV7Meckeip07P//nwjAAADyI7NQ=="
 Content-length: 379

@@ -30,7 +30,6 @@ monitoringRule.SetAction(&action)
 
 monitoringRules := []graphmodelswindowsupdates.MonitoringRuleable {
 	monitoringRule,
-
 }
 monitoring.SetMonitoringRules(monitoringRules)
 settings.SetMonitoring(monitoring)

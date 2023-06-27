@@ -22,13 +22,11 @@ requestBody := graphsearch.NewQueryPostRequestBody()
 searchRequest := graphmodels.NewSearchRequest()
 entityTypes := []graphmodels.EntityTypeable {
 	entityType := graphmodels.EXTERNALITEM_ENTITYTYPE 
-	searchRequest.SetEntityType(&entityType) 
-
+	searchRequest.SetEntityType(&entityType)
 }
 searchRequest.SetEntityTypes(entityTypes)
 contentSources := []string {
 	"/external/connections/connectionfriendlyname",
-
 }
 searchRequest.SetContentSources(contentSources)
 query := graphmodels.NewSearchQuery()
@@ -42,13 +40,11 @@ searchRequest.SetSize(&size)
 fields := []string {
 	"title",
 	"description",
-
 }
 searchRequest.SetFields(fields)
 
-requests := []graphsearch.SearchRequestable {
+requests := []graphmodels.SearchRequestable {
 	searchRequest,
-
 }
 requestBody.SetRequests(requests)
 

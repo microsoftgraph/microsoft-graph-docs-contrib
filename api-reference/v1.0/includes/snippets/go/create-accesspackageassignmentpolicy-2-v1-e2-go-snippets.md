@@ -68,30 +68,24 @@ durationBeforeEscalation , err := abstractions.ParseISODuration("PT0S")
 accessPackageApprovalStage.SetDurationBeforeEscalation(&durationBeforeEscalation) 
 
 
-subjectSet := graphmodels.NewSubjectSet()
+subjectSet := graphmodels.NewInternalSponsors()
 
 primaryApprovers := []graphmodels.SubjectSetable {
 	subjectSet,
-
 }
 accessPackageApprovalStage.SetPrimaryApprovers(primaryApprovers)
 
 
-subjectSet := graphmodels.NewSubjectSet()
-additionalData := map[string]interface{}{
-	"userId" : "7deff43e-1f17-44ef-9e5f-d516b0ba11d4", 
-}
-subjectSet.SetAdditionalData(additionalData)
-subjectSet1 := graphmodels.NewSubjectSet()
-additionalData := map[string]interface{}{
-	"groupId" : "1623f912-5e86-41c2-af47-39dd67582b66", 
-}
-subjectSet1.SetAdditionalData(additionalData)
+subjectSet := graphmodels.NewSingleUser()
+userId := "7deff43e-1f17-44ef-9e5f-d516b0ba11d4"
+subjectSet.SetUserId(&userId) 
+subjectSet1 := graphmodels.NewGroupMembers()
+groupId := "1623f912-5e86-41c2-af47-39dd67582b66"
+subjectSet1.SetGroupId(&groupId) 
 
 fallbackPrimaryApprovers := []graphmodels.SubjectSetable {
 	subjectSet,
 	subjectSet1,
-
 }
 accessPackageApprovalStage.SetFallbackPrimaryApprovers(fallbackPrimaryApprovers)
 escalationApprovers := []graphmodels.SubjectSetable {
@@ -117,21 +111,16 @@ primaryApprovers := []graphmodels.SubjectSetable {
 accessPackageApprovalStage1.SetPrimaryApprovers(primaryApprovers)
 
 
-subjectSet := graphmodels.NewSubjectSet()
-additionalData := map[string]interface{}{
-	"userId" : "46184453-e63b-4f20-86c2-c557ed5d5df9", 
-}
-subjectSet.SetAdditionalData(additionalData)
-subjectSet1 := graphmodels.NewSubjectSet()
-additionalData := map[string]interface{}{
-	"groupId" : "1623f912-5e86-41c2-af47-39dd67582b66", 
-}
-subjectSet1.SetAdditionalData(additionalData)
+subjectSet := graphmodels.NewSingleUser()
+userId := "46184453-e63b-4f20-86c2-c557ed5d5df9"
+subjectSet.SetUserId(&userId) 
+subjectSet1 := graphmodels.NewGroupMembers()
+groupId := "1623f912-5e86-41c2-af47-39dd67582b66"
+subjectSet1.SetGroupId(&groupId) 
 
 fallbackPrimaryApprovers := []graphmodels.SubjectSetable {
 	subjectSet,
 	subjectSet1,
-
 }
 accessPackageApprovalStage1.SetFallbackPrimaryApprovers(fallbackPrimaryApprovers)
 escalationApprovers := []graphmodels.SubjectSetable {
@@ -146,7 +135,6 @@ accessPackageApprovalStage1.SetFallbackEscalationApprovers(fallbackEscalationApp
 stages := []graphmodels.AccessPackageApprovalStageable {
 	accessPackageApprovalStage,
 	accessPackageApprovalStage1,
-
 }
 requestApprovalSettings.SetStages(stages)
 requestBody.SetRequestApprovalSettings(requestApprovalSettings)
@@ -195,15 +183,12 @@ schedule.SetRecurrence(recurrence)
 reviewSettings.SetSchedule(schedule)
 
 
-subjectSet := graphmodels.NewSubjectSet()
-additionalData := map[string]interface{}{
-	"groupId" : "1623f912-5e86-41c2-af47-39dd67582b66", 
-}
-subjectSet.SetAdditionalData(additionalData)
+subjectSet := graphmodels.NewGroupMembers()
+groupId := "1623f912-5e86-41c2-af47-39dd67582b66"
+subjectSet.SetGroupId(&groupId) 
 
 primaryReviewers := []graphmodels.SubjectSetable {
 	subjectSet,
-
 }
 reviewSettings.SetPrimaryReviewers(primaryReviewers)
 fallbackReviewers := []graphmodels.SubjectSetable {

@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-query_params = AppConsentRequestRequestBuilder.AppConsentRequestRequestBuilderGetQueryParameters(
+query_params = FilterByCurrentUserWithOnRequestBuilder.FilterByCurrentUserWithOnRequestBuilderGetQueryParameters(
 		filter = "userConsentRequests/any(u:u/status eq 'InProgress')",
 )
 
-request_configuration = AppConsentRequestRequestBuilder.AppConsentRequestRequestBuilderGetRequestConfiguration(
+request_configuration = FilterByCurrentUserWithOnRequestBuilder.FilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
 
-result = await client.identity_governance.app_consent.app_consent_requests.by_app_consent_request_id('appConsentRequest-id').get(request_configuration = request_configuration)
+result = await client.identity_governance.app_consent.app_consent_requests.filter_by_current_user(on='{on}'.get(request_configuration = request_configuration)
 
 
 ```

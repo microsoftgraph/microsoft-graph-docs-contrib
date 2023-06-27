@@ -22,7 +22,6 @@ description := "New Managers training course for March 2017"
 requestBody.SetDescription(&description) 
 groupTypes := []string {
 	"Unified",
-
 }
 requestBody.SetGroupTypes(groupTypes)
 mailEnabled := true

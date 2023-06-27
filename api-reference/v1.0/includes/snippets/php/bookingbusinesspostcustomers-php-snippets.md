@@ -9,68 +9,71 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new BookingCustomerBase();
+$requestBody = new BookingCustomer();
 $requestBody->set@odatatype('#microsoft.graph.bookingCustomer');
 
+$requestBody->setDisplayName('Joni Sherman');
+
+$requestBody->setEmailAddress('jonis@relecloud.com');
+
+$addressesPhysicalAddress1 = new PhysicalAddress();
+$addressesPhysicalAddress1->setStreet('4567 Main Street');
+
+$addressesPhysicalAddress1->setCity('Buffalo');
+
+$addressesPhysicalAddress1->setState('NY');
+
+$addressesPhysicalAddress1->setCountryOrRegion('USA');
+
+$addressesPhysicalAddress1->setPostalCode('98052');
+
 $additionalData = [
-		'displayName' => 'Joni Sherman', 
-		'emailAddress' => 'jonis@relecloud.com', 
-		'addresses' => $addresses1 = new ();
-$		addresses1->setPostOfficeBox('');
-
-$		addresses1->setStreet('4567 Main Street');
-
-$		addresses1->setCity('Buffalo');
-
-$		addresses1->setState('NY');
-
-$		addresses1->setCountryOrRegion('USA');
-
-$		addresses1->setPostalCode('98052');
-
-$		addresses1->setType('home');
+		'postOfficeBox' => '', 
+		'type' => 'home', 
+];
+$addressesPhysicalAddress1->setAdditionalData($additionalData);
 
 
-$addressesArray []= $addresses1;
-$addresses2 = new ();
-$		addresses2->setPostOfficeBox('');
 
-$		addresses2->setStreet('4570 Main Street');
+$addressesArray []= $addressesPhysicalAddress1;
+$addressesPhysicalAddress2 = new PhysicalAddress();
+$addressesPhysicalAddress2->setStreet('4570 Main Street');
 
-$		addresses2->setCity('Buffalo');
+$addressesPhysicalAddress2->setCity('Buffalo');
 
-$		addresses2->setState('NY');
+$addressesPhysicalAddress2->setState('NY');
 
-$		addresses2->setCountryOrRegion('USA');
+$addressesPhysicalAddress2->setCountryOrRegion('USA');
 
-$		addresses2->setPostalCode('98054');
+$addressesPhysicalAddress2->setPostalCode('98054');
 
-$		addresses2->setType('business');
+$additionalData = [
+		'postOfficeBox' => '', 
+		'type' => 'business', 
+];
+$addressesPhysicalAddress2->setAdditionalData($additionalData);
 
 
-$addressesArray []= $addresses2;
+
+$addressesArray []= $addressesPhysicalAddress2;
 $requestBody->setAddresses($addressesArray);
 
 
-	'phones' => $phones1 = new ();
-$	phones1->setNumber('206-555-0100');
+$phonesPhone1 = new Phone();
+$phonesPhone1->setNumber('206-555-0100');
 
-$	phones1->setType('home');
-
-
-$phonesArray []= $phones1;
-$phones2 = new ();
-$	phones2->setNumber('206-555-0200');
-
-$	phones2->setType('business');
+$phonesPhone1->setType(new PhoneType('home'));
 
 
-$phonesArray []= $phones2;
+$phonesArray []= $phonesPhone1;
+$phonesPhone2 = new Phone();
+$phonesPhone2->setNumber('206-555-0200');
+
+$phonesPhone2->setType(new PhoneType('business'));
+
+
+$phonesArray []= $phonesPhone2;
 $requestBody->setPhones($phonesArray);
-
-
-];
-$requestBody->setAdditionalData($additionalData);
 
 
 

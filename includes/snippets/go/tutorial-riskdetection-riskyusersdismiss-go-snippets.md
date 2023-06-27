@@ -18,7 +18,6 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 requestBody := graphidentityprotection.NewDismissPostRequestBody()
 userIds := []string {
 	"4628e7df-dff3-407c-a08f-75f08c0806dc",
-
 }
 requestBody.SetUserIds(userIds)
 

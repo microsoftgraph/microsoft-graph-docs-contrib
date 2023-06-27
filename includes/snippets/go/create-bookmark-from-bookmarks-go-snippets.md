@@ -26,12 +26,10 @@ keywords := graphmodelssearch.NewAnswerKeyword()
 keywords := []string {
 	"Contoso",
 	"install",
-
 }
 keywords.SetKeywords(keywords)
 reservedKeywords := []string {
 	"Contoso",
-
 }
 keywords.SetReservedKeywords(reservedKeywords)
 matchSimilarKeywords := true

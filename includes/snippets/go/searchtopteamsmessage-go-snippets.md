@@ -22,8 +22,7 @@ requestBody := graphsearch.NewQueryPostRequestBody()
 searchRequest := graphmodels.NewSearchRequest()
 entityTypes := []graphmodels.EntityTypeable {
 	entityType := graphmodels.CHATMESSAGE_ENTITYTYPE 
-	searchRequest.SetEntityType(&entityType) 
-
+	searchRequest.SetEntityType(&entityType)
 }
 searchRequest.SetEntityTypes(entityTypes)
 query := graphmodels.NewSearchQuery()
@@ -37,9 +36,8 @@ searchRequest.SetSize(&size)
 enableTopResults := true
 searchRequest.SetEnableTopResults(&enableTopResults) 
 
-requests := []graphsearch.SearchRequestable {
+requests := []graphmodels.SearchRequestable {
 	searchRequest,
-
 }
 requestBody.SetRequests(requests)
 
