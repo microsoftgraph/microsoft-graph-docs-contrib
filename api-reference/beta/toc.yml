@@ -10329,6 +10329,8 @@ items:
             href: api/cloudpc-getcloudpclaunchinfo.md
           - name: Get shift work access state
             href: api/cloudpc-getshiftworkcloudpcaccessstate.md
+          - name: Get provisioned Cloud PCs
+            href: api/cloudpc-getprovisionedcloudpcs.md
           - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Get review status
@@ -12526,7 +12528,7 @@ items:
               href: api/entitlementmanagementsettings-get.md
             - name: Update
               href: api/entitlementmanagementsettings-update.md
-        - name: Lifecycle workflows (preview)
+        - name: Lifecycle workflows
           displayName: LCW, Identity Governance, Joiner, Mover, Leaver
           items:
           - name: Overview
@@ -16078,6 +16080,8 @@ items:
               href: api/security-host-list-passivednsreverse.md
             - name: Get reputation
               href: api/security-host-get-reputation.md
+            - name: List subdomains
+              href: api/security-host-list-subdomains.md
             - name: List trackers
               href: api/security-host-list-trackers.md
         - name: Host component
@@ -16120,14 +16124,14 @@ items:
             href: resources/security-passivednsrecord.md
           - name: Get
             href: api/security-passivednsrecord-get.md
-        - name: Vulnerability
+        - name: Subdomain
           items:
-          - name: Vulnerability
-            href: resources/security-vulnerability.md
+          - name: Subdomain
+            href: resources/security-subdomain.md
           - name: Get
-            href: api/security-vulnerability-get.md
-          - name: List vulnerability components
-            href: api/security-vulnerability-list-components.md
+            href: api/security-subdomain-get.md
+          - name: List Subdomains for a host
+            href: api/security-host-list-subdomains.md
         - name: Vulnerability component
           items:
           - name: Vulnerability componet
