@@ -116,7 +116,7 @@ To make use of the disambiguation feature when using standard HTML and JavaScrip
 ```
 
 > [!Important]
-> The `import` of `mgt-components` must use a [dynamic import](#dynamic-imports-aka-lazy-loading) to ensure that the disambiguation is applied before the components are imported. If a static import is used, it is [hoisted](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) and the import will occur before disambiguation can be applied.
+> The `import` of `mgt-components` must use a [dynamic import](#dynamic-imports-lazy-loading) to ensure that the disambiguation is applied before the components are imported. If a static import is used, it is [hoisted](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) and the import will occur before disambiguation can be applied.
 
 ## Dynamic imports (lazy loading)
 
