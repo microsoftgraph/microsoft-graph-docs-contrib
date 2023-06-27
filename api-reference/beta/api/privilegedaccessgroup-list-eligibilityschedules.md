@@ -149,7 +149,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilitySchedules?$select=accessId,principalId,groupId
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilitySchedules?filter=principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'&$select=accessId,principalId,groupId
 ```
 
 # [C#](#tab/csharp)
