@@ -68,7 +68,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "cloudpcreportsthis.getInaccessibleCloudPcReports"
+  "name": "cloudpcreports.getInaccessibleCloudPcReports"
 }
 -->
 ``` http
