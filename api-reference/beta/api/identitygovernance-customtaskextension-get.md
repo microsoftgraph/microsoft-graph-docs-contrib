@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/custo
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -76,8 +76,7 @@ The following is an example of the request.
 
 
 <!--{
-  "blockType": "ignored",
-  "isComposable": true,
+  "blockType": "request",
   "name": "reportroot_getyammerdeviceusagedistributionusercounts"
 }-->
 
@@ -90,12 +89,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageDistributionUse
 
 The following is an example of the response.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.report"
-} -->
-
+<!-- { "blockType": "ignored" } --> 
 ```http
 HTTP/1.1 302 Found
 Content-Type: text/plain
@@ -104,8 +98,11 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
-<!-- { "blockType": "ignored" } --> 
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "String"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream

@@ -77,16 +77,15 @@ The CSV file has the following headers for columns.
 - Used Others
 - Report Period
 
-## Example
-
+## Examples
+### Example 1: getYammerDeviceUsageUserDetail by period
 #### Request
 
 The following is an example of the request.
 
 
 <!--{
-  "blockType": "ignored",
-  "isComposable": true,
+  "blockType": "request",
   "name": "reportroot_getyammerdeviceusageuserdetail"
 }-->
 
@@ -99,14 +98,30 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(peri
 
 The following is an example of the response.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
+<!-- { 
+  "blockType": "ignored"
+} --> 
 
 ```http
 HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "String"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+
+Report Refresh Date,User Principal Name,Display Name,User State,State Change Date,Last Activity Date,Used Web,Used Windows Phone,Used Android Phone,Used iPhone,Used iPad,Used Others,Report Period
+```
+### Example 2: getYammerDeviceUsageUserDetail by date
 #### Request
 
 If called with the `date` parameter, the report is scoped to usage on the given date.
@@ -114,7 +129,6 @@ If called with the `date` parameter, the report is scoped to usage on the given 
 # [HTTP](#tab/http)
 <!--{
   "blockType": "request",
-  "isComposable": true,
   "name": "reportroot_getyammerdeviceusageuserdetail_date"
 }-->
 
@@ -149,7 +163,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(date
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "ignored"
 } -->
 
 ```http
@@ -160,7 +174,11 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "String"
+} -->
 
 ```http
 HTTP/1.1 200 OK

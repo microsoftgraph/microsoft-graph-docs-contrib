@@ -49,12 +49,16 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_devices_user_removealldevicesfrommanagement_removealldevicesfrommanagement_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}/removeAllDevicesFromManagement
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" }-->
 ``` http
 HTTP/1.1 204 No Content
 ```

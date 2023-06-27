@@ -70,7 +70,7 @@ If successful, this method returns the `200 OK` response code with the user's ac
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_activities"
 }-->
 
@@ -83,9 +83,9 @@ GET https://graph.microsoft.com/v1.0/me/activities
 The following is an example of the response.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.activity)"
+  "@odata.type": "Edm.String"
 } -->
 
 ```http
