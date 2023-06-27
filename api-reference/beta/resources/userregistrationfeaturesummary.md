@@ -64,3 +64,4 @@ The following is a JSON representation of the resource.
   "userRoles": "String",
   "userTypes": "String"
 }
+```
