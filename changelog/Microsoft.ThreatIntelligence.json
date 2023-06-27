@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [list subdomains](https://learn.microsoft.com/en-us/graph/api/security-host-list-subdomains?view=graph-rest-beta) operation to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource",
+          "Description": "Added the [list subdomains](https://learn.microsoft.com/en-us/graph/api/security-host-list-subdomains?view=graph-rest-beta) operation to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
           "Target": "host"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/security-subdomain-get?view=graph-rest-beta) operation to the [subdomain](https://learn.microsoft.com/en-us/graph/api/resources/security-subdomain?view=graph-rest-beta) resource",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/security-subdomain-get?view=graph-rest-beta) operation to the [subdomain](https://learn.microsoft.com/en-us/graph/api/resources/security-subdomain?view=graph-rest-beta) resource.",
           "Target": "host"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "subdomain",
           "ChangeType": "Addition",
-          "Description": "Added the [subdomain](https://learn.microsoft.com/en-us/graph/api/resources/security-subdomain?view=graph-rest-beta) resource",
+          "Description": "Added the [subdomain](https://learn.microsoft.com/en-us/graph/api/resources/security-subdomain?view=graph-rest-beta) resource.",
           "Target": "subdomain"
         }
       ],

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the subdomain resources from the subdomains navigation property.
+Get the list of [subdomain](../resources/security-subdomain.md) resources associated with a host.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [subdomain](../resources/security-subdomain.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.subdomain](../resources/security-subdomain.md) objects in the response body.
 
 ## Examples
 
