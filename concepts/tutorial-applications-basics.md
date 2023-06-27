@@ -166,8 +166,8 @@ You can address an application or a service principal by its ID or by its **appI
 To address an application or a service principal by its ID.
 
 ```http
-https://graph.microsoft.com/v1.0/applications/applicationObjectId
-https://graph.microsoft.com/v1.0/servicePrincipals/servicePrincipalObjectId
+https://graph.microsoft.com/v1.0/applications/{applicationObjectId}
+https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipalObjectId}
 ```
 
 To address an application or a service principal by its **appId**.
