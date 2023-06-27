@@ -446,3 +446,22 @@ Content-Type: application/json
     "request-id": "beeb9ea0-f7e4-4fe7-8507-cd834c88f18b"
 }
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2023-06-27 16:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "synchronizationJob: bulkupload",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: microsoft.graph.microsoft.graph/servicePrincipals:
+      /servicePrincipals/{var}/synchronization/jobs/{var}/restart
+      Uri path requires navigating into unknown object hierarchy: missing property 'jobs' on 'synchronization'. Possible issues:
+       1) Doc bug where 'jobs' isn't defined on the resource.
+       2) Doc bug where 'jobs' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+       3) Doc bug where 'synchronization' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
+}
+-->
