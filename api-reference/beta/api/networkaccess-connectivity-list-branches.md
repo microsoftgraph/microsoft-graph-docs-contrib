@@ -36,7 +36,12 @@ GET /networkAccess/connectivity/branches
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports $expand and $select OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+| Pattern | Supported | Syntax                                                               | Notes       |
+| ------- | :-------- | :------------------------------------------------------------------- | :---------- |
+| expand  | ✔         | `/networkAccess/connectivity/branches?$expand=deviceLinks`           | first level |
+| expand  | ✔         | `/networkAccess/connectivity/branches?$expand=forwardingProfiles`    | first level |
+| select  | ✔         | `/networkAccess/connectivity/branches?$select=forwardingProfiles/id` | first level |
 
 ## Request headers
 |Name|Description|

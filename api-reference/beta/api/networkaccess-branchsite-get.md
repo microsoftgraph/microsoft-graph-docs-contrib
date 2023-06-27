@@ -1,6 +1,6 @@
 ---
-title: "Get branch"
-description: "Allows developers to retrieve information about a specific branch."
+title: "Get branchSite"
+description: "Retrieve information about a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -36,7 +36,10 @@ GET /networkAccess/connectivity/branches/{branchSiteId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+| Pattern | Supported | Syntax                                                               | Notes       |
+| ------- | :-------- | :------------------------------------------------------------------- | :---------- |
+| select  | ✔         | `/networkAccess/connectivity/branches?$select=forwardingProfiles/id` | first level |
 
 ## Request headers
 |Name|Description|

@@ -1,6 +1,6 @@
 ---
-title: "Create a new branch and assosicate a forwarding Profile"
-description: "Create a new branch and associate a forwarding profile."
+title: "Assign a forwardingProfile to a branchSite"
+description: "Create a new branch and assign a forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new branch and associate a forwarding profile.
+Create a new branch and assign a forwarding profile.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -70,22 +70,43 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
+POST https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.networkaccess.forwardingProfile",
-  "name": "String",
-  "description": "String",
-  "state": "String",
-  "version": "String",
-  "trafficForwardingType": "String",
-  "associations": [
-    {
-      "@odata.type": "microsoft.graph.networkaccess.associatedBranch"
-    }
-  ],
-  "priority": "Integer"
+    "name": "branch 1",
+    "region": "eastUS",
+    "deviceLinks":
+    [
+        {
+            "name": "device link 1",
+            "ipAddress": "24.123.22.168",
+            "deviceVendor": "intel",
+            "bandwidthCapacityInMbps": "mbps250",
+            "bgpConfiguration":
+            {
+                "localIpAddress": "1.128.24.22",
+                "peerIpAddress": "1.128.24.28",
+                "asn": 4,
+            },
+            "redundancyConfiguration":
+            {
+                "zoneLocalIpAddress": "1.128.23.20",
+                "redundancyTier": "zoneRedundancy",
+            },
+            "tunnelConfiguration":
+            {
+                "@odata.type": "microsoft.graph.networkAccess.tunnelConfigurationIKEv2Default",
+                "preSharedKey": "/path/to/kv"
+            }
+        },
+
+    ],
+    "forwardingProfiles": [
+        {
+            "id": "8e30d8d6-3588-4d5f-a704-6bd843be5b8f"
+        }
+    ]
 }
 ```
 
@@ -104,20 +125,42 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.networkaccess.forwardingProfile",
-  "id": "1f486c29-0344-5a0b-8e03-630176b3e448",
-  "name": "String",
-  "description": "String",
-  "state": "String",
-  "version": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "trafficForwardingType": "String",
-  "associations": [
-    {
-      "@odata.type": "microsoft.graph.networkaccess.associatedBranch"
-    }
-  ],
-  "priority": "Integer"
+    "@odata.context": "https://localhost:5001/networkaccess/connectivity/$metadata#branches/$entity",
+    "id": "c038928c-4100-4b8d-895d-f90ae38bafa1",
+    "name": "branch 1",
+    "region": "eastUS",
+    "connectivityState": "pending",
+    "version": 1.0.0,
+    "lastModifiedDateTime": "2021-01-05T00:00:00Z",
+    "deviceLinks": [
+        {
+            "id": "f29753d5-85b4-4cce-9194-10a287568973",
+            "name": "device link 1",
+            "ipAddress": "24.123.22.168",
+            "deviceVendor": "intel",
+            "bandwidthCapacityInMbps": "mbps250",
+            "bgpConfiguration":
+            {
+                "localIpAddress": "1.128.24.22",
+                "peerIpAddress": "1.128.24.28",
+                "asn": 4,
+            },
+            "redundancyConfiguration":
+            {
+                "zoneLocalIpAddress": "1.128.23.20",
+                "redundancyTier": "zoneRedundancy",
+            },
+            "tunnleConfiguration": {
+                "@odata.type": "#microsoft.graph.networkaccess.TunnleConfigurationIKEv2Deafult",
+                "preSharedKey": "/path/to/kv"
+            }
+        }
+    ],
+    "forwardingProfiles": [
+        {
+            "id": "8e30d8d6-3588-4d5f-a704-6bd843be5b8f"
+        }
+    ],
 }
 ```
 

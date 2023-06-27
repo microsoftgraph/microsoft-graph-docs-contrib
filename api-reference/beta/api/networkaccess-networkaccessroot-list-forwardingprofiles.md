@@ -40,8 +40,8 @@ This method supports the $expand [OData query parameters](/graph/query-parameter
 
 |Name|Syntax|Notes|
 |:---|:---|:---|
-|expand|/networkAccess/forwardingProfiles/{id}/policies?$expand=policy|first level|
-|expand|/networkAccess/forwardingProfiles/{id}/policies?$expand=policy($expand=policyRules)|second level|
+|expand|/networkAccess/connectivity/branches?$expand=deviceLinks|first level|
+
 
 ## Request headers
 |Name|Description|

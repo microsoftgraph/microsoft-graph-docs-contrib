@@ -86,23 +86,7 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches/$entity",
-    "id": "929a620e-fbfe-4041-bcc1-56431ca99606",
-    "name": "My updated branch",
-    "country": "Israel",
-    "region": "Center",
-    "version": "1.0.0",
-    "bandwidthCapacity": 500,
-    "lastModifiedDateTime": "2023-05-24T08:51:15Z",
-    "forwardingProfiles@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches('929a620e-fbfe-4041-bcc1-56431ca99606')/forwardingProfiles",
-    "forwardingProfiles": [],
-    "deviceLinks@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches('929a620e-fbfe-4041-bcc1-56431ca99606')/deviceLinks",
-    "deviceLinks": []
-}
+HTTP/1.1 204 No Content
 ```
 
 

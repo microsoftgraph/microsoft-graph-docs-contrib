@@ -36,7 +36,14 @@ GET /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+
+|Name|Syntax|Notes|
+|:---|:---|:---|
+|expand|/networkAccess/connectivity/branches?$expand=deviceLinks|first level|
+
+
 
 ## Request headers
 |Name|Description|
