@@ -1243,7 +1243,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [membershipOutlierInsight](https://learn.microsoft.com/en-us/graph/api/resources/membershipOutlierInsight?view=graph-rest-1.0) resource type.",
           "Target": "membershipOutlierInsight"
-        },
+        }
       ],
       "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
       "Cloud": "Prod",
