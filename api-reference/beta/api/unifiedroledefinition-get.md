@@ -406,7 +406,7 @@ Content-type: application/json
 }
 ```
 
-## Example 4: Get the definition of a built-in role for the entitlement management provider
+### Example 4: Get the definition of a built-in role for the entitlement management provider
 
 #### Request
 
@@ -484,7 +484,7 @@ Content-type: application/json
 }
 ```
 
-## Example 5: Get the definition of a built-in role for the Exchange Online provider
+### Example 5: Get the definition of a built-in role for the Exchange Online provider
 
 #### Request
 
