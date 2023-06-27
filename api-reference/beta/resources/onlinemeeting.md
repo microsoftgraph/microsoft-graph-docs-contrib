@@ -106,8 +106,8 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
-| registration | [meetingRegistrationBase](meetingregistrationbase.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
+| attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md) collection | The attendance reports of an online meeting. Read-only. |
+| registration | [meetingRegistration](meetingregistration.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
 | meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of the latest online meeting session. Read-only. |
 | transcripts | [callTranscript](callTranscript.md) collection | The transcripts of an online meeting. Read-only. |
 
@@ -120,8 +120,9 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
-  "externalId"
+	"externalId"
   ],
   "@odata.type": "microsoft.graph.onlineMeeting"
 }-->

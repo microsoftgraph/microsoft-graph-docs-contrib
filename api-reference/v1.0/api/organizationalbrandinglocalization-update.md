@@ -254,3 +254,14 @@ HTTP/1.1 204 No Content
 ```
 
 Following this request, usernameHintText for the `fr-FR` localization will be empty instead of inheriting the value from the default branding object.
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update organizationalBrandingLocalization",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
