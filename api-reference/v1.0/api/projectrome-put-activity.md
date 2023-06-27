@@ -109,12 +109,13 @@ The following is an example of the response.
 
 <!-- {
     "blockType": "ignored",
-    "truncated": true,
-    "@odata.type": "microsoft.graph.userActivity"
+    
 } -->
 
 ```http
 HTTP/1.1 200 OK
+```
+<!-->
 Content-Type: application/json
 
 {
@@ -158,6 +159,7 @@ Content-Type: application/json
   }
 }
 ```
+-->
 
 ### Example 2: Deep insert
 
@@ -169,7 +171,7 @@ The following is an example of the request.
 
 <!-- {
     "blockType": "ignored",
-    "name": "upsert_activity"
+    "name": "upsert_activity2"
 } -->
 
 ```http
@@ -227,7 +229,7 @@ The following is an example of the response.
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.userActivity"
+    "@odata.type": "Edm.String"
 } -->
 
 ```http

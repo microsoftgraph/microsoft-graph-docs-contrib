@@ -67,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/restore
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/restore
 Content-type: application/json
 
 {
