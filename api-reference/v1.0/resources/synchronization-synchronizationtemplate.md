@@ -21,6 +21,7 @@ You can provide multiple templates for an application, and designate a default t
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization-synchronization-list-templates.md)    |[synchronizationTemplate](synchronization-synchronizationtemplate.md) collection  |List the templates that are available for an application or application instance (service principal).|
 |[Get](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Read the properties and relationships of the **synchronizationTemplate** object.|
+|[Update](../api/synchronization-synchronizationtemplate-update.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the properties and relationships of the **synchronizationTemplate** object.|
 
 ## Properties
 
