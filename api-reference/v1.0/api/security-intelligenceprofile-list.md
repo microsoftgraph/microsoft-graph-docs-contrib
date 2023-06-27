@@ -60,8 +60,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "list_intelligenceprofile"
@@ -69,7 +67,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/intelProfiles
+GET https://graph.microsoft.com/v1.0/security/threatIntelligence/intelProfiles
 ```
 
 ### Response

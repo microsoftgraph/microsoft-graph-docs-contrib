@@ -60,8 +60,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_hostcomponent",
@@ -70,7 +68,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hostComponents/TWljcm9zb2Z0LUlJUyQkMTAuMCQkU2VydmVyJCRjMS5taWNyb3NvZnQuY29t
+GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hostComponents/TWljcm9zb2Z0LUlJUyQkMTAuMCQkU2VydmVyJCRjMS5taWNyb3NvZnQuY29t
 ```
 
 ### Response
@@ -91,17 +89,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-      "@odata.type": "#microsoft.graph.security.hostComponent",
-      "id": "TWljcm9zb2Z0LUlJUyQkMTAuMCQkU2VydmVyJCRjMS5taWNyb3NvZnQuY29t",
-      "firstSeenDateTime": "2023-02-28T00:00:19.644Z",
-      "lastSeenDateTime": "2023-03-06T23:58:55.615Z",
-      "name": "Microsoft-IIS",
-      "version": "10.0",
-      "category": "Server",
-      "host": {
-          "id": "contoso.com"
-      }
-    }
+  "@odata.type": "#microsoft.graph.security.hostComponent",
+  "id": "TWljcm9zb2Z0LUlJUyQkMTAuMCQkU2VydmVyJCRjMS5taWNyb3NvZnQuY29t",
+  "firstSeenDateTime": "2023-02-28T00:00:19.644Z",
+  "lastSeenDateTime": "2023-03-06T23:58:55.615Z",
+  "name": "Microsoft-IIS",
+  "version": "10.0",
+  "category": "Server",
+  "host": {
+      "id": "contoso.com"
+  }
 }
 ```

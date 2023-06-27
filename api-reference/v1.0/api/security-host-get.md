@@ -63,8 +63,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_host",
@@ -73,7 +71,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com
+GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.com
 ```
 
 ### Response
@@ -94,13 +92,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.hostname",
-    "id": "contoso.com",
-    "firstSeenDateTime": "2009-09-02T03:29:10.000Z",
-    "lastSeenDateTime": "2009-09-02T03:29:10.000Z",
-    "registrar": "MarkMonitor Inc.",
-    "registrant": "Microsoft Corporation"
-  }
+  "@odata.type": "#microsoft.graph.security.hostname",
+  "id": "contoso.com",
+  "firstSeenDateTime": "2009-09-02T03:29:10.000Z",
+  "lastSeenDateTime": "2009-09-02T03:29:10.000Z",
+  "registrar": "MarkMonitor Inc.",
+  "registrant": "Microsoft Corporation"
 }
 ```

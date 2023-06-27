@@ -68,7 +68,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/a272d5ab
+GET https://graph.microsoft.com/v1.0/security/threatIntelligence/articles/a272d5ab
 ```
 
 ### Response
@@ -89,31 +89,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.context": "$metadata#articles/$entity",
-    "id": "a272d5ab",
-    "createdDateTime": "2023-03-03T18:20:22.677Z",
-    "lastUpdatedDateTime": "2023-03-03T18:20:22.677Z",
-    "title": "Batloader Malware Abuses Legitimate Tools Uses Obfuscated JavaScript Files in Q4 2022 Attacks",
-    "summary": {
-        "content": "Trend Micro discusses Batloader campaigns that were observed in the last quarter of 2022.",
-        "format": "markdown"
-    },
-    "isFeatured": false,
-    "body": {
-        "content": "#### Description\r\nTrend Micro discusses Batloader...",
-        "format": "markdown"
-    },
-    "tags": [
-        "OSINT",
-        "Batloader",
-        "RoyalRansomware",
-        "Python",
-        "JavaScript",
-        "MSI",
-        "PowerShell"
-    ],
-    "imageUrl": null
-  }
+  "@odata.context": "$metadata#articles/$entity",
+  "id": "a272d5ab",
+  "createdDateTime": "2023-03-03T18:20:22.677Z",
+  "lastUpdatedDateTime": "2023-03-03T18:20:22.677Z",
+  "title": "Batloader Malware Abuses Legitimate Tools Uses Obfuscated JavaScript Files in Q4 2022 Attacks",
+  "summary": {
+      "content": "Trend Micro discusses Batloader campaigns that were observed in the last quarter of 2022.",
+      "format": "markdown"
+  },
+  "isFeatured": false,
+  "body": {
+      "content": "#### Description\r\nTrend Micro discusses Batloader...",
+      "format": "markdown"
+  },
+  "tags": [
+      "OSINT",
+      "Batloader",
+      "RoyalRansomware",
+      "Python",
+      "JavaScript",
+      "MSI",
+      "PowerShell"
+  ],
+  "imageUrl": null
 }
 ```

@@ -60,8 +60,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_hostcookie",
@@ -70,7 +68,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hostCookies/c2VjdXJlbWFpbC5jb250b3NvLmNvbSQkT0lEQyQkc2VjdXJlbWFpbC5jb250b3NvLmNvbQ==
+GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hostCookies/c2VjdXJlbWFpbC5jb250b3NvLmNvbSQkT0lEQyQkc2VjdXJlbWFpbC5jb250b3NvLmNvbQ==
 ```
 
 ### Response
@@ -91,16 +89,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.hostCookie",
-    "id": "c2VjdXJlbWFpbC5jb250b3NvLmNvbSQkT0lEQyQkc2VjdXJlbWFpbC5jb250b3NvLmNvbQ==",
-    "firstSeenDateTime": "2022-02-26T07:23:34.558Z",
-    "lastSeenDateTime": "2023-02-28T04:57:15.288Z",
-    "domain": "securemail.contoso.com",
-    "name": "OIDC",
-    "host": {
-        "id": "securemail.contoso.com"
-    }
+  "@odata.type": "#microsoft.graph.security.hostCookie",
+  "id": "c2VjdXJlbWFpbC5jb250b3NvLmNvbSQkT0lEQyQkc2VjdXJlbWFpbC5jb250b3NvLmNvbQ==",
+  "firstSeenDateTime": "2022-02-26T07:23:34.558Z",
+  "lastSeenDateTime": "2023-02-28T04:57:15.288Z",
+  "domain": "securemail.contoso.com",
+  "name": "OIDC",
+  "host": {
+      "id": "securemail.contoso.com"
   }
 }
 ```

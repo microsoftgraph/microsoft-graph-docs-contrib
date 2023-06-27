@@ -68,7 +68,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/intelProfileIndicators/ff3eecd2-a2be-27c2-8dc0-40d1c0eada55
+GET https://graph.microsoft.com/v1.0/security/threatIntelligence/intelProfileIndicators/ff3eecd2-a2be-27c2-8dc0-40d1c0eada55
 ```
 
 ### Response
@@ -89,16 +89,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.intelligenceProfileIndicator",
-    "id": "ff3eecd2-a2be-27c2-8dc0-40d1c0eada55",
-    "source": "microsoft",
-    "firstSeenDateTime": "2022-05-02T23:09:20.000Z",
-    "lastSeenDateTime": null,
-    "artifact": {
-        "@odata.type": "#microsoft.graph.security.hostname",
-        "id": "fake-malicious.site"
-    }
+  "@odata.type": "#microsoft.graph.security.intelligenceProfileIndicator",
+  "id": "ff3eecd2-a2be-27c2-8dc0-40d1c0eada55",
+  "source": "microsoft",
+  "firstSeenDateTime": "2022-05-02T23:09:20.000Z",
+  "lastSeenDateTime": null,
+  "artifact": {
+      "@odata.type": "#microsoft.graph.security.hostname",
+      "id": "fake-malicious.site"
   }
 }
 ```

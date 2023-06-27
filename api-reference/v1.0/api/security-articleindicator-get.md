@@ -60,8 +60,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_articleindicator",
@@ -70,7 +68,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/articleIndicators/ZmFrZS1tYWxpY2lvdXMuc2l0ZQ==
+GET https://graph.microsoft.com/v1.0/security/threatIntelligence/articleIndicators/ZmFrZS1tYWxpY2lvdXMuc2l0ZQ==
 ```
 
 ### Response
@@ -91,14 +89,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.articleIndicator",
-    "id": "ZmFrZS1tYWxpY2lvdXMuc2l0ZQ==",
-    "source": "microsoft",
-    "artifact": {
-        "@odata.type": "#microsoft.graph.security.hostname",
-        "id": "fake-malicious.site"
-    }
+  "@odata.type": "#microsoft.graph.security.articleIndicator",
+  "id": "ZmFrZS1tYWxpY2lvdXMuc2l0ZQ==",
+  "source": "microsoft",
+  "artifact": {
+      "@odata.type": "#microsoft.graph.security.hostname",
+      "id": "fake-malicious.site"
   }
 }
 ```
