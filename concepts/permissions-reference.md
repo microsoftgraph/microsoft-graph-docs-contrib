@@ -2332,6 +2332,7 @@ The _Sites.Selected_ application permission is available only in the Microsoft G
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read Azure AD synchronization information, on behalf of the signed-in user. | Yes | No |
 Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to configure the Azure AD synchronization service, on behalf of the signed-in user. | Yes | No |
+SynchronizationData-User.Upload | Upload user data to the identity synchronization service | Allows the application to upload bulk user data to the identity synchronization service, without a signed-in user. | Yes | No |
 
 #### Application permissions
 

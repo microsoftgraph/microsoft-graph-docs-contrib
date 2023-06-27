@@ -1,6 +1,6 @@
 ---
 title: "bulkUpload resource type"
-description: "Represents capability of the synchronization service to process bulk uploads"
+description: "Represents capability of the synchronization service to process bulk uploads."
 author: "cmmdesai"
 ms.localizationpriority: medium
 ms.prod: "applications"
