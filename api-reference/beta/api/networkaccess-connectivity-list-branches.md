@@ -1,18 +1,18 @@
 ---
 title: "List branches"
-description: "Retrieve a list of branches within a tenant."
+description: "Retrieve a list of branches within a tenant connected to the Global Secure Access service."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# List branchSites
+# List branches
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of branches within a tenant.
+Retrieve a list of branches within a tenant connected to the Global Secure Access service.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -27,9 +27,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Update crossTenantAccessSettings](../api/networkaccess-crosstenantaccesssettings-update.md)|[microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md)|Create a new crossTenantAccessSettings object.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+None.
 
 ## Relationships
 |Relationship|Type|Description|

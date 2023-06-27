@@ -53,7 +53,7 @@ PATCH /networkAccess/settings/crossTenantAccess
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 

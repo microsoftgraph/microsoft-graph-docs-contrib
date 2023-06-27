@@ -1,6 +1,6 @@
 ---
 title: "policyLink resource type"
-description: "The PolicyLink object contains the link to a policy associated with a specific profile."
+description: "The link to a policy associated with a specific profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The PolicyLink object contains the link to a policy associated with a specific profile.
-This is an abstract type.
+This is an abstract type from which the [forwardingPolicyLink](networkaccess-forwardingpolicylink.md) resource type is derived.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).

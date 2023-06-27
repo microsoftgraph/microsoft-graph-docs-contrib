@@ -28,7 +28,7 @@ Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkacc
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|microsoft.graph.networkaccess.forwardingRuleAction|The action applies to traffic. The possible values are: `bypass`, `forward`.|
+|action|microsoft.graph.networkaccess.forwardingRuleAction|The action to apply to traffic. The possible values are: `bypass`, `forward`.|
 |destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|Destinations maintain a list of potential destinations and destination types that the user may access within the context of a network filtering policy. This includes IP addresses and fully qualified domain names (FQDNs)/URLs.|
 |id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |name|String|Name. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|

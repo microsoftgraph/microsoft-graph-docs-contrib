@@ -1,5 +1,5 @@
 ---
-title: "Update forwardingRule"
+title: "Update policyRule"
 description: "Update an existing forwarding rule within a forwarding policy."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Update forwardingRule
+# Update policyRule
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
+PATCH /networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
 ```
 
 ## Request headers
@@ -41,7 +41,9 @@ PATCH networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-You can specify the following properties when updating a **forwarding rule**.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+You must specify the @odata.type property and the value of the [policyRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-policyrule?view=graph-rest-beta) object type to update. For example, "@odata.type": "#microsoft.graph.m365ForwardingRule".
+
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -58,7 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_forwardingrule"
+  "name": "update_policyrule"
 }
 -->
 ``` http

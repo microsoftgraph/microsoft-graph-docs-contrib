@@ -42,7 +42,7 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|The collection of policies that are linked to this traffic forwarding profile.	 Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md)|
+|policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|The collection of policies that are linked to this traffic forwarding profile.     Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
 
 ## JSON representation
 The following is a JSON representation of the resource.

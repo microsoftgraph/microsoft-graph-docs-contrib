@@ -20,11 +20,9 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List forwardingPolicyLinks](../api/networkaccess-forwardingpolicylink-list.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) collection|Get a list of the [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) objects and their properties.|
+|[List forwardingPolicyLinks](../api/s networkaccess-forwardingprofile-list-policies.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) collection|Get a list of the [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) objects and their properties.|
 |[Get forwardingPolicyLink](../api/networkaccess-forwardingpolicylink-get.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) object.|
 |[Update forwardingPolicyLink](../api/networkaccess-forwardingpolicylink-update.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md)|Update the properties of a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) object.|
-|[Delete forwardingPolicyLink](../api/networkaccess-forwardingpolicylink-delete.md)|None|Delete a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) object.|
-|[List policy](../api/networkaccess-networkaccessroot-list-forwardingpolicies.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) collection|Get the policy resources from the policy navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +34,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[policy](../resources/networkaccess-policy.md)|forwarding Policy Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
+|policy|[policy](../resources/networkaccess-policy.md)|The forwarding policy. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -57,7 +57,7 @@ You can specify the following properties when creating a **forwardingProfile**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -92,7 +92,7 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 

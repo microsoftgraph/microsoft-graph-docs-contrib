@@ -1,5 +1,5 @@
 ---
-title: "List forwardingPolicyLinks"
+title: "List policies"
 description: "Retrieve a list of forwarding policy links associated with a specific forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# List forwardingPolicyLinks
+# List policies
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

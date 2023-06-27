@@ -1,5 +1,5 @@
 ---
-title: "Delete branch"
+title: "Delete branchSite"
 description: "Delete a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium

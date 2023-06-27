@@ -1,13 +1,13 @@
 ---
 title: "Onboard tenant"
-description: "Initiate the onboarding process for a specific tenant."
+description: "Initiate the process to onboard the tenant to the Global Secure Access service."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Create tenantStatus
+# Onboard tenant
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST networkAccess/microsoft.graph.networkaccess.onboard
+POST /networkAccess/microsoft.graph.networkaccess.onboard
 ```
 
 ## Request headers

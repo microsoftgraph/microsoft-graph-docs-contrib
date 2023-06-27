@@ -53,7 +53,7 @@ PATCH /networkAccess/settings/conditionalAccess
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.networkaccess.conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 

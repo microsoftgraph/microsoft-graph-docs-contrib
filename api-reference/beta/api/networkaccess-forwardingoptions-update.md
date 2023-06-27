@@ -53,7 +53,7 @@ PATCH /networkAccess/settings/forwardingOptions
 
 ## Response
 
-If successful, this method returns a `204 OK` response code 
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -61,7 +61,7 @@ If successful, this method returns a `204 OK` response code
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_conditionalaccesssettings"
+  "name": "update_forwardingoptions"
 }
 -->
 ``` http
