@@ -16140,7 +16140,7 @@ items:
             href: api/security-host-list-subdomains.md
         - name: Vulnerability component
           items:
-          - name: Vulnerability componet
+          - name: Vulnerability component
             href: resources/security-vulnerabilitycomponent.md
           - name: Get
             href: api/security-vulnerabilitycomponent-get.md
