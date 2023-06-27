@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get inaccessible Cloud PCs with details including latest health state, failed connection count, failed health check count, system status and datetime. 
-Definition of "Inaccessible Cloud PC": A Cloud PC is in unavailable state(at least one of health checks is failed) or has consecutive user connection failures.
+Definition of "Inaccessible Cloud PC": A Cloud PC is in unavailable state(at least one of health checks failed) or has consecutive user connection failure.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
