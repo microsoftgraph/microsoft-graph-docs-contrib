@@ -16,8 +16,9 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 
 
 requestBody := graphmodels.NewExtension()
+extensionName := "com.contoso.roamingSettings"
+requestBody.SetExtensionName(&extensionName) 
 additionalData := map[string]interface{}{
-	"extensionName" : "com.contoso.roamingSettings", 
 	"theme" : "dark", 
 	"color" : "purple", 
 	"lang" : "Japanese", 

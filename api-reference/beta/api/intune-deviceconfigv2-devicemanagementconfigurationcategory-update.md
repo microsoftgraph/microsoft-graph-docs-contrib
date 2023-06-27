@@ -61,6 +61,7 @@ The following table shows the properties that are required when you create the [
 |parentCategoryId|String|Direct parent id of the category. If the category is the root, the parent id is same as its id.|
 |rootCategoryId|String|Root id of the category.|
 |childCategoryIds|String collection|List of child ids of the category.|
+|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Category visibility scope to UX. Possible values are: none, settingsCatalog, template. Possible values are: `none`, `settingsCatalog`, `template`, `unknownFutureValue`.|
 
 
 
@@ -74,7 +75,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
 Content-type: application/json
-Content-length: 523
+Content-length: 559
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -90,7 +91,8 @@ Content-length: 523
   "rootCategoryId": "Root Category Id value",
   "childCategoryIds": [
     "Child Category Ids value"
-  ]
+  ],
+  "visibility": "settingsCatalog"
 }
 ```
 
@@ -99,7 +101,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 572
+Content-Length: 608
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -116,6 +118,7 @@ Content-Length: 572
   "rootCategoryId": "Root Category Id value",
   "childCategoryIds": [
     "Child Category Ids value"
-  ]
+  ],
+  "visibility": "settingsCatalog"
 }
 ```

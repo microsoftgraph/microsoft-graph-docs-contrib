@@ -22,7 +22,6 @@ determination := graphmodels.MULTISTAGEDATTACK_ALERTDETERMINATION
 requestBody.SetDetermination(&determination) 
 customTags := []string {
 	"Demo",
-
 }
 requestBody.SetCustomTags(customTags)
 

@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new EducationAssignmentResource();
 $requestBody->setDistributeForStudentWork(false);
 
-$resource = new EducationResource();
+$resource = new EducationFileResource();
 $resource->setDisplayName('article.pdf');
 
 $resource->set@odatatype('#microsoft.graph.educationFileResource');

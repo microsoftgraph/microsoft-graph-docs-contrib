@@ -16,67 +16,68 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 
 
 requestBody := graphmodels.NewBookingCustomerBase()
-additionalData := map[string]interface{}{
-	"displayName" : "Joni Sherman", 
-	"emailAddress" : "jonis@relecloud.com", 
+displayName := "Joni Sherman"
+requestBody.SetDisplayName(&displayName) 
+emailAddress := "jonis@relecloud.com"
+requestBody.SetEmailAddress(&emailAddress) 
 
 
- := graphmodels.New()
-postOfficeBox := ""
-.SetPostOfficeBox(&postOfficeBox) 
+physicalAddress := graphmodels.NewPhysicalAddress()
 street := "4567 Main Street"
-.SetStreet(&street) 
+physicalAddress.SetStreet(&street) 
 city := "Buffalo"
-.SetCity(&city) 
+physicalAddress.SetCity(&city) 
 state := "NY"
-.SetState(&state) 
+physicalAddress.SetState(&state) 
 countryOrRegion := "USA"
-.SetCountryOrRegion(&countryOrRegion) 
+physicalAddress.SetCountryOrRegion(&countryOrRegion) 
 postalCode := "98052"
-.SetPostalCode(&postalCode) 
-type := "home"
-.SetType(&type) 
- := graphmodels.New()
-postOfficeBox := ""
-.SetPostOfficeBox(&postOfficeBox) 
-street := "4570 Main Street"
-.SetStreet(&street) 
-city := "Buffalo"
-.SetCity(&city) 
-state := "NY"
-.SetState(&state) 
-countryOrRegion := "USA"
-.SetCountryOrRegion(&countryOrRegion) 
-postalCode := "98054"
-.SetPostalCode(&postalCode) 
-type := "business"
-.SetType(&type) 
-
-	addresses := []graphmodels.Objectable {
-		,
-		,
-
-	}
-
-
- := graphmodels.New()
-number := "206-555-0100"
-.SetNumber(&number) 
-type := "home"
-.SetType(&type) 
- := graphmodels.New()
-number := "206-555-0200"
-.SetNumber(&number) 
-type := "business"
-.SetType(&type) 
-
-	phones := []graphmodels.Objectable {
-		,
-		,
-
-	}
+physicalAddress.SetPostalCode(&postalCode) 
+additionalData := map[string]interface{}{
+	"postOfficeBox" : "", 
+	"type" : "home", 
 }
-requestBody.SetAdditionalData(additionalData)
+physicalAddress.SetAdditionalData(additionalData)
+physicalAddress1 := graphmodels.NewPhysicalAddress()
+street := "4570 Main Street"
+physicalAddress1.SetStreet(&street) 
+city := "Buffalo"
+physicalAddress1.SetCity(&city) 
+state := "NY"
+physicalAddress1.SetState(&state) 
+countryOrRegion := "USA"
+physicalAddress1.SetCountryOrRegion(&countryOrRegion) 
+postalCode := "98054"
+physicalAddress1.SetPostalCode(&postalCode) 
+additionalData := map[string]interface{}{
+	"postOfficeBox" : "", 
+	"type" : "business", 
+}
+physicalAddress1.SetAdditionalData(additionalData)
+
+addresses := []graphmodels.PhysicalAddressable {
+	physicalAddress,
+	physicalAddress1,
+}
+requestBody.SetAddresses(addresses)
+
+
+phone := graphmodels.NewPhone()
+number := "206-555-0100"
+phone.SetNumber(&number) 
+type := graphmodels.HOME_PHONETYPE 
+phone.SetType(&type) 
+phone1 := graphmodels.NewPhone()
+number := "206-555-0200"
+phone1.SetNumber(&number) 
+type := graphmodels.BUSINESS_PHONETYPE 
+phone1.SetType(&type) 
+
+phones := []graphmodels.Phoneable {
+	phone,
+	phone1,
+}
+requestBody.SetPhones(phones)
 
 result, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").Customers().Post(context.Background(), requestBody, nil)
 
