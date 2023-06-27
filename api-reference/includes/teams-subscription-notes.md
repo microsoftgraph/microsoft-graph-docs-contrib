@@ -19,6 +19,8 @@ You must use the `Prefer: include-unknown-enum-members` request header to get th
 > `/teams/getAllMessages` and `/chats/getAllMessages` support both `model=A` and `model=B` payment models,
 > `/me/chats/getAllMessages`, `/users/{id}/chats/getAllMessages`, and `/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages` support only `model=B`.
 > If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+
+> [!NOTE]
 > When adding or changing a payment model for a subscribed resource of a change notification, a new change notification subscription must be created with the new payment model; updating an existing change notification would not work.
 
 ### conversationMember
@@ -28,6 +30,8 @@ You must use the `Prefer: include-unknown-enum-members` request header to get th
 >`/teams/getAllMembers`, `/chats/getAllMembers`, and `/appCatalogs/teamsApps/{id}/installedToChats/getAllMembers` are metered APIs; [payment models and licensing requirements](/graph/teams-licenses) may apply.
 > `/teams/getAllMembers` and `/chats/getAllMembers` support both `model=A` and `model=B` payment models. `/appCatalogs/teamsApps/{id}/installedToChats/getAllMembers` supports only `model=B`.
 > If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used
+
+> [!NOTE]
 > When adding or changing a payment model for a subscribed resource of a change notification, a new change notification subscription must be created with the new payment model; updating an existing change notification would not work.
 
 ### team, channel, and chat
@@ -36,6 +40,8 @@ You must use the `Prefer: include-unknown-enum-members` request header to get th
 > [!NOTE]
 >`/appCatalogs/teamsApps/{id}/installedToChats` has [licensing and payment requirements](/graph/teams-licenses), specifically supporting only `model=B`.
 > If no model is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+
+> [!NOTE]
 > When adding or changing a payment model for a subscribed resource of a change notification, a new change notification subscription must be created with the new payment model; updating an existing change notification would not work.
 
 
