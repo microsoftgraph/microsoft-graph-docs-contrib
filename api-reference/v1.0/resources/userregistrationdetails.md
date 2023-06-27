@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 |methodsRegistered|String collection|Collection of authentication methods registered, such as `mobilePhone`, `email`, `fido2`. Supports `$filter` (`any` with `eq`).|
 |systemPreferredAuthenticationMethods|String collection| The list of values that the system determined to be the most secure authentication methods among the registered methods for second factor authentication. An empty array if **isSystemPreferredAuthenticationMethodEnabled** is `false`.  |
 |userDisplayName|String| The user display name, such as `Adele Vance`. Supports `$filter` (`eq`, `startsWith`) and `$orderBy`.|
-|userPreferredMethodForSecondaryAuthentication|userDefaultAuthenticationMethodType| The channel of multi-factor authentication (MFA) communication preferred by this user for secondary authentication. The property is used as preferred MFA method when **isSystemPreferredAuthenticationMethodEnabled** is `false`.  |
+|userPreferredMethodForSecondaryAuthentication|userDefaultAuthenticationMethod| The channel of multi-factor authentication (MFA) communication preferred by this user for secondary authentication. The property is used as preferred MFA method when **isSystemPreferredAuthenticationMethodEnabled** is `false`.  |
 |userPrincipalName|String|The user principal name, such as `AdeleV@contoso.com`. Supports `$filter` (`eq`, `startsWith`) and `$orderBy`.|
 |userType|signInUserType|Identifies whether the user is a member or guest in the tenant. The possible values are: `member`, `guest`, `unknownFutureValue`.|
 
