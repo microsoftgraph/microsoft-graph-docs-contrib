@@ -95,7 +95,7 @@
         {
           "Id": "a34189c5-af07-4671-9246-dde6c999e2dd",
           "ApiChange": "Resource",
-          "ChangedApiName": "bulkUpload",
+          "ChangedApiName": "synchronizationJob",
           "ChangeType": "Addition",
           "Description": "Added the **bulkUpload** relationship to the [synchronizationJob](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationJob?view=graph-rest-beta) resource.",
           "Target": "synchronizationJob"
