@@ -12,15 +12,12 @@ request_body.display_name = 'Test API'
 
 request_body.target_url = 'https://someotherapi.com/api'
 
-authentication_configuration = ApiAuthenticationConfigurationBase()
+authentication_configuration = Pkcs12Certificate()
 authentication_configuration.@odata_type = '#microsoft.graph.pkcs12Certificate'
 
-additional_data = [
-'pkcs12_value' => 'eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA', 
-'password' => '<password>', 
-];
-authentication_configuration.additional_data(additional_data)
+authentication_configuration.pkcs12_value = 'eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA'
 
+authentication_configuration.password = '<password>'
 
 
 request_body.authentication_configuration = authentication_configuration

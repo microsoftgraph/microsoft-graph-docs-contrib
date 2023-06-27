@@ -7,14 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = DataSource()
+request_body = UserSource()
 request_body.@odata_type = 'microsoft.graph.ediscovery.userSource'
 
-additional_data = [
-'email' => 'badguy@contoso.com', 
-];
-request_body.additional_data(additional_data)
-
+request_body.email = 'badguy@contoso.com'
 
 
 

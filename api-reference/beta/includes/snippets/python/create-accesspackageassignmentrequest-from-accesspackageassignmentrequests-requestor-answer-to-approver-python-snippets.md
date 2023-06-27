@@ -19,40 +19,32 @@ access_package_assignment.access_package_id = 'a914b616-e04e-476b-aa37-91038f0b1
 
 
 request_body.access_package_assignment = access_package_assignment
-answers_access_package_answer1 = AccessPackageAnswer()
+answers_access_package_answer1 = AccessPackageAnswerString()
 answers_access_package_answer1.@odata_type = '#microsoft.graph.accessPackageAnswerString'
 
-answers_access_package_answer1answered_question = AccessPackageQuestion()
+answers_access_package_answer1.value = 'Arizona'
+
+answers_access_package_answer1answered_question = AccessPackageMultipleChoiceQuestion()
 answers_access_package_answer1answered_question.@odata_type = '#microsoft.graph.accessPackageMultipleChoiceQuestion'
 
 answers_access_package_answer1answered_question.id = 'A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF'
 
 
 answers_access_package_answer1.answered_question = answers_access_package_answer1answered_question
-additional_data = [
-'value' => 'Arizona', 
-];
-answers_access_package_answer1.additional_data(additional_data)
-
-
 
 answersArray []= answersAccessPackageAnswer1;
-answers_access_package_answer2 = AccessPackageAnswer()
+answers_access_package_answer2 = AccessPackageAnswerString()
 answers_access_package_answer2.@odata_type = '#microsoft.graph.accessPackageAnswerString'
 
-answers_access_package_answer2answered_question = AccessPackageQuestion()
+answers_access_package_answer2.value = 'Need access to marketing campaign material'
+
+answers_access_package_answer2answered_question = AccessPackageTextInputQuestion()
 answers_access_package_answer2answered_question.@odata_type = '#microsoft.graph.accessPackageTextInputQuestion'
 
 answers_access_package_answer2answered_question.id = 'AA615EE9-D9D8-4C03-BE91-BEE37106DEDA'
 
 
 answers_access_package_answer2.answered_question = answers_access_package_answer2answered_question
-additional_data = [
-'value' => 'Need access to marketing campaign material', 
-];
-answers_access_package_answer2.additional_data(additional_data)
-
-
 
 answersArray []= answersAccessPackageAnswer2;
 request_body.answers(answersArray)

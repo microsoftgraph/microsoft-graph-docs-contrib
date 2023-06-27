@@ -18,7 +18,7 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 requestBody := graphmodels.NewUnifiedRoleManagementPolicy()
 
 
-unifiedRoleManagementPolicyRule := graphmodels.NewUnifiedRoleManagementPolicyRule()
+unifiedRoleManagementPolicyRule := graphmodels.NewUnifiedRoleManagementPolicyApprovalRule()
 id := "Approval_EndUser_Assignment"
 unifiedRoleManagementPolicyRule.SetId(&id) 
 target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
@@ -26,7 +26,6 @@ caller := "EndUser"
 target.SetCaller(&caller) 
 operations := []string {
 	"All",
-
 }
 target.SetOperations(operations)
 level := "Assignment"
@@ -40,53 +39,52 @@ enforcedSettings := []string {
 }
 target.SetEnforcedSettings(enforcedSettings)
 unifiedRoleManagementPolicyRule.SetTarget(target)
-additionalData := map[string]interface{}{
-setting := graphmodels.New()
-	isApprovalRequired := false
+setting := graphmodels.NewApprovalSettings()
+isApprovalRequired := false
 setting.SetIsApprovalRequired(&isApprovalRequired) 
-	isApprovalRequiredForExtension := false
+isApprovalRequiredForExtension := false
 setting.SetIsApprovalRequiredForExtension(&isApprovalRequiredForExtension) 
-	isRequestorJustificationRequired := true
+isRequestorJustificationRequired := true
 setting.SetIsRequestorJustificationRequired(&isRequestorJustificationRequired) 
 approvalMode := "SingleStage"
 setting.SetApprovalMode(&approvalMode) 
 
 
- := graphmodels.New()
+approvalStage := graphmodels.NewApprovalStage()
 approvalStageTimeOutInDays := int32(1)
-.SetApprovalStageTimeOutInDays(&approvalStageTimeOutInDays) 
+approvalStage.SetApprovalStageTimeOutInDays(&approvalStageTimeOutInDays) 
 isApproverJustificationRequired := true
-.SetIsApproverJustificationRequired(&isApproverJustificationRequired) 
+approvalStage.SetIsApproverJustificationRequired(&isApproverJustificationRequired) 
 escalationTimeInMinutes := int32(0)
-.SetEscalationTimeInMinutes(&escalationTimeInMinutes) 
+approvalStage.SetEscalationTimeInMinutes(&escalationTimeInMinutes) 
 isEscalationEnabled := false
-.SetIsEscalationEnabled(&isEscalationEnabled) 
-primaryApprovers := []graphmodels.able {
+approvalStage.SetIsEscalationEnabled(&isEscalationEnabled) 
+primaryApprovers := []graphmodels.UserSetable {
 
 }
-.SetPrimaryApprovers(primaryApprovers)
-escalationApprovers := []graphmodels.able {
+approvalStage.SetPrimaryApprovers(primaryApprovers)
+escalationApprovers := []graphmodels.UserSetable {
 
 }
-.SetEscalationApprovers(escalationApprovers)
+approvalStage.SetEscalationApprovers(escalationApprovers)
 
-	approvalStages := []graphmodels.Objectable {
-		,
-
-	}
-	setting.SetApprovalStages(approvalStages)
-	unifiedRoleManagementPolicyRule.SetSetting(setting)
+approvalStages := []graphmodels.ApprovalStageable {
+	approvalStage,
 }
-unifiedRoleManagementPolicyRule.SetAdditionalData(additionalData)
-unifiedRoleManagementPolicyRule1 := graphmodels.NewUnifiedRoleManagementPolicyRule()
+setting.SetApprovalStages(approvalStages)
+unifiedRoleManagementPolicyRule.SetSetting(setting)
+unifiedRoleManagementPolicyRule1 := graphmodels.NewUnifiedRoleManagementPolicyAuthenticationContextRule()
 id := "AuthenticationContext_EndUser_Assignment"
 unifiedRoleManagementPolicyRule1.SetId(&id) 
+isEnabled := false
+unifiedRoleManagementPolicyRule1.SetIsEnabled(&isEnabled) 
+claimValue := ""
+unifiedRoleManagementPolicyRule1.SetClaimValue(&claimValue) 
 target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
 caller := "EndUser"
 target.SetCaller(&caller) 
 operations := []string {
 	"All",
-
 }
 target.SetOperations(operations)
 level := "Assignment"
@@ -100,21 +98,18 @@ enforcedSettings := []string {
 }
 target.SetEnforcedSettings(enforcedSettings)
 unifiedRoleManagementPolicyRule1.SetTarget(target)
-additionalData := map[string]interface{}{
-	isEnabled := false
-unifiedRoleManagementPolicyRule1.SetIsEnabled(&isEnabled) 
-	"claimValue" : "", 
-}
-unifiedRoleManagementPolicyRule1.SetAdditionalData(additionalData)
-unifiedRoleManagementPolicyRule2 := graphmodels.NewUnifiedRoleManagementPolicyRule()
+unifiedRoleManagementPolicyRule2 := graphmodels.NewUnifiedRoleManagementPolicyEnablementRule()
 id := "Enablement_Admin_Eligibility"
 unifiedRoleManagementPolicyRule2.SetId(&id) 
+enabledRules := []string {
+
+}
+unifiedRoleManagementPolicyRule2.SetEnabledRules(enabledRules)
 target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
 caller := "Admin"
 target.SetCaller(&caller) 
 operations := []string {
 	"All",
-
 }
 target.SetOperations(operations)
 level := "Eligibility"
@@ -128,21 +123,18 @@ enforcedSettings := []string {
 }
 target.SetEnforcedSettings(enforcedSettings)
 unifiedRoleManagementPolicyRule2.SetTarget(target)
-additionalData := map[string]interface{}{
-	enabledRules := []graphmodels.able {
-
-	}
-}
-unifiedRoleManagementPolicyRule2.SetAdditionalData(additionalData)
-unifiedRoleManagementPolicyRule3 := graphmodels.NewUnifiedRoleManagementPolicyRule()
+unifiedRoleManagementPolicyRule3 := graphmodels.NewUnifiedRoleManagementPolicyExpirationRule()
 id := "Expiration_Admin_Eligibility"
 unifiedRoleManagementPolicyRule3.SetId(&id) 
+isExpirationRequired := false
+unifiedRoleManagementPolicyRule3.SetIsExpirationRequired(&isExpirationRequired) 
+maximumDuration , err := abstractions.ParseISODuration("P365D")
+unifiedRoleManagementPolicyRule3.SetMaximumDuration(&maximumDuration) 
 target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
 caller := "Admin"
 target.SetCaller(&caller) 
 operations := []string {
 	"All",
-
 }
 target.SetOperations(operations)
 level := "Eligibility"
@@ -156,21 +148,26 @@ enforcedSettings := []string {
 }
 target.SetEnforcedSettings(enforcedSettings)
 unifiedRoleManagementPolicyRule3.SetTarget(target)
-additionalData := map[string]interface{}{
-	isExpirationRequired := false
-unifiedRoleManagementPolicyRule3.SetIsExpirationRequired(&isExpirationRequired) 
-	"maximumDuration" : "P365D", 
-}
-unifiedRoleManagementPolicyRule3.SetAdditionalData(additionalData)
-unifiedRoleManagementPolicyRule4 := graphmodels.NewUnifiedRoleManagementPolicyRule()
+unifiedRoleManagementPolicyRule4 := graphmodels.NewUnifiedRoleManagementPolicyNotificationRule()
 id := "Notification_Admin_Admin_Eligibility"
 unifiedRoleManagementPolicyRule4.SetId(&id) 
+notificationType := "Email"
+unifiedRoleManagementPolicyRule4.SetNotificationType(&notificationType) 
+recipientType := "Admin"
+unifiedRoleManagementPolicyRule4.SetRecipientType(&recipientType) 
+notificationLevel := "All"
+unifiedRoleManagementPolicyRule4.SetNotificationLevel(&notificationLevel) 
+isDefaultRecipientsEnabled := true
+unifiedRoleManagementPolicyRule4.SetIsDefaultRecipientsEnabled(&isDefaultRecipientsEnabled) 
+notificationRecipients := []string {
+
+}
+unifiedRoleManagementPolicyRule4.SetNotificationRecipients(notificationRecipients)
 target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
 caller := "Admin"
 target.SetCaller(&caller) 
 operations := []string {
 	"All",
-
 }
 target.SetOperations(operations)
 level := "Eligibility"
@@ -184,17 +181,6 @@ enforcedSettings := []string {
 }
 target.SetEnforcedSettings(enforcedSettings)
 unifiedRoleManagementPolicyRule4.SetTarget(target)
-additionalData := map[string]interface{}{
-	"notificationType" : "Email", 
-	"recipientType" : "Admin", 
-	"notificationLevel" : "All", 
-	isDefaultRecipientsEnabled := true
-unifiedRoleManagementPolicyRule4.SetIsDefaultRecipientsEnabled(&isDefaultRecipientsEnabled) 
-	notificationRecipients := []graphmodels.able {
-
-	}
-}
-unifiedRoleManagementPolicyRule4.SetAdditionalData(additionalData)
 
 rules := []graphmodels.UnifiedRoleManagementPolicyRuleable {
 	unifiedRoleManagementPolicyRule,
@@ -202,7 +188,6 @@ rules := []graphmodels.UnifiedRoleManagementPolicyRuleable {
 	unifiedRoleManagementPolicyRule2,
 	unifiedRoleManagementPolicyRule3,
 	unifiedRoleManagementPolicyRule4,
-
 }
 requestBody.SetRules(rules)
 

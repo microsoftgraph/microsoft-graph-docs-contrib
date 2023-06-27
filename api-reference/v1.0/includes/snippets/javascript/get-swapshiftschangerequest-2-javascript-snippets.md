@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let swapShiftsChangeRequests = await client.api('/teams/00d4ce58-658a-4d53-a0ad-99aa318bed28/schedule/swapShiftsChangeRequests')
+let delta = await client.api('/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta')
 	.get();
 
 ```

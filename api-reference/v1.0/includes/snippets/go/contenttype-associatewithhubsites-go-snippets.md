@@ -18,7 +18,6 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 requestBody := graphsites.NewAssociateWithHubSitesPostRequestBody()
 hubSiteUrls := []string {
 	"https://graph.microsoft.com/v1.0/sites/{site-id}",
-
 }
 requestBody.SetHubSiteUrls(hubSiteUrls)
 propagateToExistingLists := false
