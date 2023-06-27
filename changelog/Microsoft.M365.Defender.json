@@ -1045,6 +1045,368 @@
 			"CreatedDateTime": "2023-05-31T16:27:08.6941406Z",
 			"WorkloadArea": "Security",
 			"SubArea": "Alerts and incidents"
-		  }
+		  },
+		{
+			"ChangeList": [
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "rules",
+					"ChangeType": "Addition",
+					"Description": "Added the **rules** relationship to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+					"Target": "security"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "deviceAssetIdentifier",
+					"ChangeType": "Addition",
+					"Description": "Added the **deviceAssetIdentifier** enumeration type.",
+					"Target": "deviceAssetIdentifier"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "deviceIdEntityIdentifier",
+					"ChangeType": "Addition",
+					"Description": "Added the **deviceIdEntityIdentifier** enumeration type.",
+					"Target": "deviceIdEntityIdentifier"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "disableUserEntityIdentifier",
+					"ChangeType": "Addition",
+					"Description": "Added the **disableUserEntityIdentifier** enumeration type.",
+					"Target": "disableUserEntityIdentifier"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "emailEntityIdentifier",
+					"ChangeType": "Addition",
+					"Description": "Added the **emailEntityIdentifier** enumeration type.",
+					"Target": "emailEntityIdentifier"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "fileEntityIdentifier",
+					"ChangeType": "Addition",
+					"Description": "Added the **fileEntityIdentifier** enumeration type.",
+					"Target": "fileEntityIdentifier"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "forceUserPasswordResetEntityIdentifier",
+					"ChangeType": "Addition",
+					"Description": "Added the **forceUserPasswordResetEntityIdentifier** enumeration type.",
+					"Target": "forceUserPasswordResetEntityIdentifier"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "huntingRuleErrorCode",
+					"ChangeType": "Addition",
+					"Description": "Added the **huntingRuleErrorCode** enumeration type.",
+					"Target": "huntingRuleErrorCode"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "huntingRuleRunStatus",
+					"ChangeType": "Addition",
+					"Description": "Added the **huntingRuleRunStatus** enumeration type.",
+					"Target": "huntingRuleRunStatus"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "isolationType",
+					"ChangeType": "Addition",
+					"Description": "Added the **isolationType** enumeration type.",
+					"Target": "isolationType"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "mailboxAssetIdentifier",
+					"ChangeType": "Addition",
+					"Description": "Added the **mailboxAssetIdentifier** enumeration type.",
+					"Target": "mailboxAssetIdentifier"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "markUserAsCompromisedEntityIdentifier",
+					"ChangeType": "Addition",
+					"Description": "Added the **markUserAsCompromisedEntityIdentifier** enumeration type.",
+					"Target": "markUserAsCompromisedEntityIdentifier"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "scopeType",
+					"ChangeType": "Addition",
+					"Description": "Added the **scopeType** enumeration type.",
+					"Target": "scopeType"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "stopAndQuarantineFileEntityIdentifier",
+					"ChangeType": "Addition",
+					"Description": "Added the **stopAndQuarantineFileEntityIdentifier** enumeration type.",
+					"Target": "stopAndQuarantineFileEntityIdentifier"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "userAssetIdentifier",
+					"ChangeType": "Addition",
+					"Description": "Added the **userAssetIdentifier** enumeration type.",
+					"Target": "userAssetIdentifier"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "alertTemplate",
+					"ChangeType": "Addition",
+					"Description": "Added the [alertTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-alertTemplate?view=graph-rest-beta) resource type.",
+					"Target": "alertTemplate"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "allowFileResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [allowFileResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-allowFileResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "allowFileResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "blockFileResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [blockFileResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-blockFileResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "blockFileResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "collectInvestigationPackageResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [collectInvestigationPackageResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-collectInvestigationPackageResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "collectInvestigationPackageResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "detectionAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [detectionAction](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionAction?view=graph-rest-beta) resource type.",
+					"Target": "detectionAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "disableUserResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [disableUserResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-disableUserResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "disableUserResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "forceUserPasswordResetResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [forceUserPasswordResetResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-forceUserPasswordResetResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "forceUserPasswordResetResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "hardDeleteResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [hardDeleteResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-hardDeleteResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "hardDeleteResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "impactedAsset",
+					"ChangeType": "Addition",
+					"Description": "Added the [impactedAsset](https://learn.microsoft.com/en-us/graph/api/resources/security-impactedAsset?view=graph-rest-beta) resource type.",
+					"Target": "impactedAsset"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "impactedDeviceAsset",
+					"ChangeType": "Addition",
+					"Description": "Added the [impactedDeviceAsset](https://learn.microsoft.com/en-us/graph/api/resources/security-impactedDeviceAsset?view=graph-rest-beta) resource type.",
+					"Target": "impactedDeviceAsset"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "impactedMailboxAsset",
+					"ChangeType": "Addition",
+					"Description": "Added the [impactedMailboxAsset](https://learn.microsoft.com/en-us/graph/api/resources/security-impactedMailboxAsset?view=graph-rest-beta) resource type.",
+					"Target": "impactedMailboxAsset"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "impactedUserAsset",
+					"ChangeType": "Addition",
+					"Description": "Added the [impactedUserAsset](https://learn.microsoft.com/en-us/graph/api/resources/security-impactedUserAsset?view=graph-rest-beta) resource type.",
+					"Target": "impactedUserAsset"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "initiateInvestigationResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [initiateInvestigationResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-initiateInvestigationResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "initiateInvestigationResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "isolateDeviceResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [isolateDeviceResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-isolateDeviceResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "isolateDeviceResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "markUserAsCompromisedResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [markUserAsCompromisedResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-markUserAsCompromisedResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "markUserAsCompromisedResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "moveToDeletedItemsResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [moveToDeletedItemsResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-moveToDeletedItemsResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "moveToDeletedItemsResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "moveToInboxResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [moveToInboxResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-moveToInboxResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "moveToInboxResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "moveToJunkResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [moveToJunkResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-moveToJunkResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "moveToJunkResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "organizationalScope",
+					"ChangeType": "Addition",
+					"Description": "Added the [organizationalScope](https://learn.microsoft.com/en-us/graph/api/resources/security-organizationalScope?view=graph-rest-beta) resource type.",
+					"Target": "organizationalScope"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "queryCondition",
+					"ChangeType": "Addition",
+					"Description": "Added the [queryCondition](https://learn.microsoft.com/en-us/graph/api/resources/security-queryCondition?view=graph-rest-beta) resource type.",
+					"Target": "queryCondition"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "responseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [responseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-responseAction?view=graph-rest-beta) resource type.",
+					"Target": "responseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "restrictAppExecutionResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [restrictAppExecutionResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-restrictAppExecutionResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "restrictAppExecutionResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "ruleSchedule",
+					"ChangeType": "Addition",
+					"Description": "Added the [ruleSchedule](https://learn.microsoft.com/en-us/graph/api/resources/security-ruleSchedule?view=graph-rest-beta) resource type.",
+					"Target": "ruleSchedule"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "runAntivirusScanResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [runAntivirusScanResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-runAntivirusScanResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "runAntivirusScanResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "runDetails",
+					"ChangeType": "Addition",
+					"Description": "Added the [runDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-runDetails?view=graph-rest-beta) resource type.",
+					"Target": "runDetails"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "softDeleteResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [softDeleteResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-softDeleteResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "softDeleteResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "stopAndQuarantineFileResponseAction",
+					"ChangeType": "Addition",
+					"Description": "Added the [stopAndQuarantineFileResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-stopAndQuarantineFileResponseAction?view=graph-rest-beta) resource type.",
+					"Target": "stopAndQuarantineFileResponseAction"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "detectionRule",
+					"ChangeType": "Addition",
+					"Description": "Added the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource",
+					"Target": "detectionRule"
+				},
+				{
+					"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+					"ApiChange": "Resource",
+					"ChangedApiName": "protectionRule",
+					"ChangeType": "Addition",
+					"Description": "Added the [protectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-protectionRule?view=graph-rest-beta) resource",
+					"Target": "protectionRule"
+				}
+			],
+			"Id": "1bf25d8e-ee00-481e-a3cc-e5c58e6ec62d",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2023-06-27T09:38:57.9798452Z",
+			"WorkloadArea": "Microsoft.M365.Defender",
+			"SubArea": ""
+		}
 	]
 }
