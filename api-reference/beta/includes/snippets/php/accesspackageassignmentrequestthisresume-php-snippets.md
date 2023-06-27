@@ -14,22 +14,20 @@ $requestBody->setSource('Contoso.SodCheckProcess');
 
 $requestBody->setType('microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated');
 
-$data = new CustomExtensionData();
+$data = new AccessPackageAssignmentRequestCallbackData();
 $data->set@odatatype('microsoft.graph.accessPackageAssignmentRequestCallbackData');
 
-$additionalData = [
-'stage' => 'assignmentRequestCreated', 
-'customExtensionStageInstanceId' => '957d0c50-466b-4840-bb5b-c92cea7141ff', 
-'customExtensionStageInstanceDetail' => 'This user is all verified', 
-];
-$data->setAdditionalData($additionalData);
+$data->setStage(new AccessPackageCustomExtensionStage('assignmentrequestcreated'));
 
+$data->setCustomExtensionStageInstanceId('957d0c50-466b-4840-bb5b-c92cea7141ff');
+
+$data->setCustomExtensionStageInstanceDetail('This user is all verified');
 
 
 $requestBody->setData($data);
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequestsById('accessPackageAssignmentRequest-id')->resume()->post($requestBody);
+$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->byAccessPackageAssignmentRequestId('accessPackageAssignmentRequest-id')->resume()->post($requestBody);
 
 
 ```

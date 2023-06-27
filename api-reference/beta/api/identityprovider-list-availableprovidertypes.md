@@ -56,6 +56,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 ### Request
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "identityprovider_availableprovidertypes_in_directory"
@@ -84,6 +85,10 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/identityprovider-availableprovidertypes-in-directory-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/identityprovider-availableprovidertypes-in-directory-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

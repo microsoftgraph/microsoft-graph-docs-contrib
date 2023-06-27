@@ -42,11 +42,13 @@ PATCH /policies/authenticationMethodsPolicy
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [registrationEnforcement](../resources/registrationenforcement.md) object to prompt users to set up targeted authentication methods. 
+In the request body, supply a JSON representation of the [registrationEnforcement](../resources/registrationenforcement.md) object to prompt users to set up targeted authentication methods.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to prompt users to set up targeted authentication methods.|
+|reportSuspiciousActivitySettings|[reportSuspiciousActivitySettings](../resources/reportsuspiciousactivitysettings.md)|Enable users to report voice or phone app multi-factor authentication notifications as suspicious.|
+|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|Prompt users with their most-preferred credential for multifactor authentication.|
 
 ## Response
 If successful, this method returns a `200 OK` response code.
@@ -79,9 +81,21 @@ Content-Type: application/json
             }
         ]
     }
+  },
+  "reportSuspiciousActivitySettings": {
+      "state": "enabled",
+      "includeTarget": {
+          "targetType": "group",
+          "id": "all_users"
+      },
+      "voiceReportingCode": 0
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authenticationmethodspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationmethodspolicy-javascript-snippets.md)]
@@ -101,6 +115,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-authenticationmethodspolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-authenticationmethodspolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -126,17 +144,36 @@ Content-Type: application/json
   "policyVersion": "1.4",
   "registrationEnforcement": {
     "authenticationMethodsRegistrationCampaign": {
-        "snoozeDurationInDays": 1,
-        "state": "enabled",
-        "excludeTargets": [],
-        "includeTargets": [
-            {
-                "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
-                "targetType": "group",
-                "targetedAuthenticationMethod": "microsoftAuthenticator"
-            }
-        ]
+      "snoozeDurationInDays": 1,
+      "state": "enabled",
+      "excludeTargets": [],
+      "includeTargets": [
+        {
+          "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+          "targetType": "group",
+          "targetedAuthenticationMethod": "microsoftAuthenticator"
+        }
+      ]
     }
+  },
+    "reportSuspiciousActivitySettings": {
+      "state": "enabled",
+      "includeTarget": {
+          "targetType": "group",
+          "id": "all_users"
+      },
+      "voiceReportingCode": 0
+  },
+  "systemCredentialPreferences": {
+    "@odata.type": "#microsoft.graph.systemCredentialPreferences",
+    "excludeTargets": [],
+    "includeTargets": [
+      {
+        "id": "all_users",
+        "targetType": "group"
+      }
+    ],
+    "state": "enabled"
   }
 }
 ```

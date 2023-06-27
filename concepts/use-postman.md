@@ -15,7 +15,9 @@ You can use the Microsoft Graph Postman collection to get started with Microsoft
 
 This article explains how to get up and running with Postman and Microsoft Graph. You can also explore Microsoft Graph APIs directly in your web browser by using [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-For details about how to use Postman, follow the steps in this article or watch the [Getting started with Microsoft Graph Postman workspace](https://youtu.be/3RTHY3jScmA) video.
+For details about how to use Postman, follow the steps in this article or watch the following video.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/3RTHY3jScmA]
 
 > [!TIP]
 > The Microsoft Graph Postman collection is configured to authenticate with the global Azure AD service and access the global Microsoft Graph service (`graph.microsoft.com`). If you want to use the collection to connect to a [national cloud deployment](deployments.md), you must modify your fork of the collection.
@@ -123,7 +125,7 @@ Inside the **Application** folder are requests for various Microsoft Graph workl
 
 1. Expand the **Application** folder, and then expand the **User** folder.
 1. Double-click **Get Users** to open the request.
-1. On the top right, select **Send**.
+1. On the top right, select **Send**Access to OData is disabled.
 
 You have now successfully made a Microsoft Graph call using application authentication.
 
@@ -138,6 +140,10 @@ If you want to contribute your own requests, you need a Postman license. You can
 ### Authentication fails with "You can't get there from here"
 
 Certain [conditional access policies](/azure/active-directory/conditional-access/overview) configured by your organization's administrators can block the authentication flow from Postman. To explore alternatives, contact your administrators.
+
+### "Access to OData is disabled."
+
+See [403 Forbidden "Access to OData is disabled."](resolve-auth-errors.md#403-forbidden-access-to-odata-is-disabled).
 
 ## See also
 

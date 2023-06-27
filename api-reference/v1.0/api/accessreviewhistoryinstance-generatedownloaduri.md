@@ -90,6 +90,10 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/historyDe
 [!INCLUDE [sample-code](../includes/snippets/php/accessreviewhistoryinstance-generatedownloaduri-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/accessreviewhistoryinstance-generatedownloaduri-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

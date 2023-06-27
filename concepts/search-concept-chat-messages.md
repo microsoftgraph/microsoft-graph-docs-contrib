@@ -72,6 +72,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/basicsearchteamsmessage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/basicsearchteamsmessage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -186,6 +190,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/searchtopteamsmessage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/searchtopteamsmessage-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -318,6 +326,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/searchteamsmessagewithkql-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/searchteamsmessagewithkql-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -381,6 +393,24 @@ Content-type: application/json
 - Sorting results is not supported for messages.
 - You can't use this API with other entity types at this time.
 
+## JSON representation
+
+The following is a JSON representation of all retrievable properties currently available for [chatMessage](/graph/api/resources/chatmessage) search.
+
+```json
+{
+  "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
+  "chatId": "string",
+  "createdDateTime": "string (timestamp)",
+  "etag": "string",
+  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
+  "id": "string (identifier)",
+  "importance": "string",
+  "lastModifiedDateTime": "string (timestamp)",
+  "subject": "string",
+  "webUrl": "string"
+}
+```
 
 ## Next steps
 

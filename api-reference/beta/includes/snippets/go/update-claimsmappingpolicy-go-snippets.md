@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewClaimsMappingPolicy()
 displayName := "UpdateClaimsPolicy"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Policies().ClaimsMappingPoliciesById("claimsMappingPolicy-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().ClaimsMappingPolicies().ByClaimsMappingPolicieId("claimsMappingPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

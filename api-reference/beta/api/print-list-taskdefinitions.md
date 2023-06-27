@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions
 [!INCLUDE [sample-code](../includes/snippets/php/print-list-taskdefinitions-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/print-list-taskdefinitions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

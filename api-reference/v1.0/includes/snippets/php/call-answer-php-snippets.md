@@ -12,14 +12,10 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new AnswerPostRequestBody();
 $requestBody->setCallbackUri('callbackUri-value');
 
-$mediaConfig = new MediaConfig();
+$mediaConfig = new AppHostedMediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');
 
-$additionalData = [
-'blob' => '<Media Session Configuration Blob>', 
-];
-$mediaConfig->setAdditionalData($additionalData);
-
+$mediaConfig->setBlob('<Media Session Configuration Blob>');
 
 
 $requestBody->setMediaConfig($mediaConfig);
@@ -37,7 +33,7 @@ $requestBody->setParticipantCapacity(200);
 
 
 
-$graphServiceClient->communications()->callsById('call-id')->answer()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->answer()->post($requestBody);
 
 
 ```

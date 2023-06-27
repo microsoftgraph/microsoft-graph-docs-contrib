@@ -7,72 +7,72 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	AccessPackageId = "b2eba9a1-b357-42ee-83a8-336522ed6cbf"
-	DisplayName = "Users from connected organizations can request"
-	Description = "Allow users from configured connected organizations to request and be approved by their sponsors"
-	CanExtend = $false
-	DurationInDays = 365
-	ExpirationDateTime = $null
-	RequestorSettings = @{
-		ScopeType = "AllExistingConnectedOrganizationSubjects"
-		AcceptRequests = $true
+	accessPackageId = "b2eba9a1-b357-42ee-83a8-336522ed6cbf"
+	displayName = "Users from connected organizations can request"
+	description = "Allow users from configured connected organizations to request and be approved by their sponsors"
+	canExtend = $false
+	durationInDays = 365
+	expirationDateTime = $null
+	requestorSettings = @{
+		scopeType = "AllExistingConnectedOrganizationSubjects"
+		acceptRequests = $true
 	}
-	RequestApprovalSettings = @{
-		IsApprovalRequired = $true
-		IsApprovalRequiredForExtension = $false
-		IsRequestorJustificationRequired = $true
-		ApprovalMode = "SingleStage"
-		ApprovalStages = @(
+	requestApprovalSettings = @{
+		isApprovalRequired = $true
+		isApprovalRequiredForExtension = $false
+		isRequestorJustificationRequired = $true
+		approvalMode = "SingleStage"
+		approvalStages = @(
 			@{
-				ApprovalStageTimeOutInDays = 14
-				IsApproverJustificationRequired = $true
-				IsEscalationEnabled = $false
-				EscalationTimeInMinutes = 11520
-				PrimaryApprovers = @(
+				approvalStageTimeOutInDays = 14
+				isApproverJustificationRequired = $true
+				isEscalationEnabled = $false
+				escalationTimeInMinutes = 11520
+				primaryApprovers = @(
 					@{
 						"@odata.type" = "#microsoft.graph.groupMembers"
-						IsBackup = $true
-						Id = "d2dcb9a1-a445-42ee-83a8-476522ed6cbf"
-						Description = "group for users from connected organizations which have no external sponsor"
+						isBackup = $true
+						id = "d2dcb9a1-a445-42ee-83a8-476522ed6cbf"
+						description = "group for users from connected organizations which have no external sponsor"
 					}
 					@{
 						"@odata.type" = "#microsoft.graph.externalSponsors"
-						IsBackup = $false
+						isBackup = $false
 					}
 				)
 			}
 		)
 	}
-	Questions = @(
+	questions = @(
 		@{
-			IsRequired = $false
-			Text = @{
-				DefaultText = "what state are you from?"
-				LocalizedTexts = @(
+			isRequired = $false
+			text = @{
+				defaultText = "what state are you from?"
+				localizedTexts = @(
 					@{
-						Text = "¿De qué estado eres?"
-						LanguageCode = "es"
+						text = "¿De qué estado eres?"
+						languageCode = "es"
 					}
 				)
 			}
 			"@odata.type" = "#microsoft.graph.accessPackageMultipleChoiceQuestion"
-			Choices = @(
+			choices = @(
 			)
-			AllowsMultipleSelection = $false
+			allowsMultipleSelection = $false
 		}
 		@{
-			IsRequired = $false
-			Text = @{
-				DefaultText = "Who is your manager?"
-				LocalizedTexts = @(
+			isRequired = $false
+			text = @{
+				defaultText = "Who is your manager?"
+				localizedTexts = @(
 					@{
-						Text = "por qué necesita acceso a este paquete"
-						LanguageCode = "es"
+						text = "por qué necesita acceso a este paquete"
+						languageCode = "es"
 					}
 				)
 			}
 			"@odata.type" = "#microsoft.graph.accessPackageTextInputQuestion"
-			IsSingleLineQuestion = $false
+			isSingleLineQuestion = $false
 		}
 	)
 }

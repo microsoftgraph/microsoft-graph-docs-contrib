@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,18 +12,16 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAttachment()
 name := "menu.txt"
 requestBody.SetName(&name) 
-additionalData := map[string]interface{}{
-	"contentBytes" : "bWFjIGFuZCBjaGVlc2UgdG9kYXk=", 
-}
-requestBody.SetAdditionalData(additionalData)
+contentBytes := []byte("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
+requestBody.SetContentBytes(&contentBytes) 
 
-result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").Attachments().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Outlook().Tasks().ByTaskId("outlookTask-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

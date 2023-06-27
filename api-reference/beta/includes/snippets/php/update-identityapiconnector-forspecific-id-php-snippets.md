@@ -10,21 +10,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new IdentityApiConnector();
-$authenticationConfiguration = new ApiAuthenticationConfigurationBase();
+$authenticationConfiguration = new Pkcs12Certificate();
 $authenticationConfiguration->set@odatatype('#microsoft.graph.pkcs12Certificate');
 
-$additionalData = [
-'pkcs12Value' => 'eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA', 
-'password' => 'secret', 
-];
-$authenticationConfiguration->setAdditionalData($additionalData);
+$authenticationConfiguration->setPkcs12Value('eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA');
 
+$authenticationConfiguration->setPassword('secret');
 
 
 $requestBody->setAuthenticationConfiguration($authenticationConfiguration);
 
 
-$requestResult = $graphServiceClient->identity()->apiConnectorsById('identityApiConnector-id')->patch($requestBody);
+$result = $graphServiceClient->identity()->apiConnectors()->byApiConnectorId('identityApiConnector-id')->patch($requestBody);
 
 
 ```

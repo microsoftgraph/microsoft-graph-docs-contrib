@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}/tasks
 [!INCLUDE [sample-code](../includes/snippets/php/plannerbucket-get-tasks-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/plannerbucket-get-tasks-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

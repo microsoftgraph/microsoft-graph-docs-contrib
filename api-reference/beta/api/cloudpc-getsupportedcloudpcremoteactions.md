@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | CloudPC.Read.All                            |
+| Delegated (work or school account)     | CloudPC.Read.All, CloudPC.ReadWrite.All     |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | CloudPC.ReadWrite.All                       |
+| Application                            | CloudPC.Read.All, CloudPC.ReadWrite.All     |
 
 ## HTTP request
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/8
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpc-getsupportedcloudpcremoteactions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpc-getsupportedcloudpcremoteactions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

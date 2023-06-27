@@ -60,7 +60,6 @@ The following example updates the definition of the token lifetime **identityPro
 
 ##### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -95,6 +94,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-identityprovider-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-identityprovider-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

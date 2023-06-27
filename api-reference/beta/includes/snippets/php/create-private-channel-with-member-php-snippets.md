@@ -18,13 +18,13 @@ $requestBody->setDisplayName('My First Private Channel');
 
 $requestBody->setDescription('This is my first private channels');
 
-$membersConversationMember1 = new ConversationMember();
+$membersConversationMember1 = new AadUserConversationMember();
 $membersConversationMember1->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember1->setRoles(['owner', ]);
 
 $additionalData = [
-'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'62855810-484b-4823-9e01-60667f8b12ae\')', 
+	'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'62855810-484b-4823-9e01-60667f8b12ae\')', 
 ];
 $membersConversationMember1->setAdditionalData($additionalData);
 
@@ -36,7 +36,7 @@ $requestBody->setMembers($membersArray);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channels()->post($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->post($requestBody);
 
 
 ```

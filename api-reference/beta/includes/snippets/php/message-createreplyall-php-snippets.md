@@ -11,16 +11,12 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CreateReplyAllPostRequestBody();
 $message = new Message();
-$attachmentsAttachment1 = new Attachment();
+$attachmentsAttachment1 = new FileAttachment();
 $attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
 
 $attachmentsAttachment1->setName('guidelines.txt');
 
-$additionalData = [
-'contentBytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
-];
-$attachmentsAttachment1->setAdditionalData($additionalData);
-
+$attachmentsAttachment1->setContentBytes(base64_decode('bWFjIGFuZCBjaGVlc2UgdG9kYXk='));
 
 
 $attachmentsArray []= $attachmentsAttachment1;
@@ -33,7 +29,7 @@ $requestBody->setComment('if the project gets approved, please take a look at th
 
 
 
-$requestResult = $graphServiceClient->me()->messagesById('message-id')->createReplyAll()->post($requestBody);
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->createReplyAll()->post($requestBody);
 
 
 ```

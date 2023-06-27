@@ -7,24 +7,27 @@ ms.prod: "search"
 ---
 
 # Use the Microsoft Search API to search with interleaved results
-The searchRequest resource supports passing multiple entity types in a single request, and return interleaved results with requested entity type which is ranked by relevance.
+The Microsoft Search **searchRequest** resource supports the passing of multiple entity types in a single request, and returns interleaved results with the requested entity types ranked by relevance.
 
-## Supported entity combination
+## Supported entity combinations
 
-The following table shows the relationship between different entity types that can be interleaved.
+The following table shows the relationship between different entity types that can be interleaved. Note that the **qna** entity type is only supported in beta.
 
-| Entity Type |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     | site       |
-|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|
-|  message    |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |
-| chatMessage |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |
-|    drive    |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
-|  driveItem  |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
-|   event     |     -      |     -      |      -      |       -    |    True    |       -     |      -     |    -       |      -     |     -      |
-|externalItem |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
-|   list      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
-|  listItem   |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
-|   person    |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |
-|    site     |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+| Entity type |acronym     |bookmark     |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     |qna     | site       |
+|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|------------|------------|------------|
+|  acronym    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
+|  bookmark    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
+|  message    |     -      |     -      |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
+| chatMessage |     -      |     -      |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
+|    drive    |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
+|  driveItem  |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
+|   event     |     -      |     -      |     -      |     -      |      -      |       -    |    True    |       -     |      -     |    -       |      -     |     -      |     -      |
+|externalItem |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
+|   list      |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
+|  listItem   |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
+|   person    |     -      |     -      |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |     -      |
+|  qna    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |  True      |     -      |
+|    site     |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
 
 
 
@@ -88,6 +91,7 @@ Content-type: application/json
                 "createdDateTime": "2019-10-07T10:00:08Z",
                 "lastModifiedDateTime": "2019-10-07T10:00:11Z",
                 "title": "Here is a summary of your messages from last week -   New Feature: Live captions in English-US a"
+              }
             },
             {
               "hitId": "microsoft.sharepoint.com,9fb3f597-167e-4c3d-b5e6-1ddc18d22d48,c53cd46e-9033-4b42-af94-0ad76ab75fd0",
@@ -118,6 +122,85 @@ Content-type: application/json
                 "createdDateTime": "2019-10-07T10:00:08Z",
                 "lastModifiedDateTime": "2019-10-07T10:00:11Z",
                 "title": "Test listItem summary 2"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Example 2: Search with bookmark and acronym combination
+
+#### Request
+
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "bookmark",
+        "acronym"
+      ],
+      "query": {
+        "queryString": "POC"
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
+}
+```
+
+#### Response
+
+The following is an example of interleaving response for bookmark and acronym.
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
+  "value": [
+    {
+      "searchTerms": [
+        "POC"
+      ],
+      "hitsContainers": [
+        {
+          "total": 2,
+          "moreResultsAvailable": false,
+          "hits": [
+            {
+              "hitId": "adce5789-c324-485a-a8bf-66bb809527ff",
+              "rank": 1,
+              "summary": "",
+              "resource": {
+                "@odata.type": "#microsoft.graph.search.acronym",
+                "id": "adce5789-c324-485a-a8bf-66bb809527ff",
+                "displayName": "POC",
+                "description": "Acronym in Spanish",
+                "webUrl": "",
+                "standsFor": "prueba de concepto"
+              }
+            },
+            {
+              "hitId": "1c0599db-2e89-4327-827a-3935c999f6cc",
+              "rank": 2,
+              "summary": "",
+              "resource": {
+                "@odata.type": "#microsoft.graph.search.bookmark",
+                "id": "1c0599db-2e89-4327-827a-3935c999f6cc",
+                "displayName": "POC",
+                "description": "A proof of concept (POC) is an exercise in which work is focused on determining whether an idea can be turned into a reality. ",
+                "webUrl": "https://en.wikipedia.org/wiki/POC"
+              }
             }
           ]
         }

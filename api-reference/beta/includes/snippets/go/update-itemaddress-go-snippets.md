@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewItemAddress()
@@ -21,7 +21,7 @@ requestBody.SetAllowedAudiences(&allowedAudiences)
 displayName := "Secret Hideout"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.UsersById("user-id").Profile().AddressesById("itemAddress-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").Profile().Addresses().ByAddresseId("itemAddress-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/RoleEligibilitySch
 [!INCLUDE [sample-code](../includes/snippets/php/unifiedroleeligibilityschedulerequest-filterbycurrentuser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/unifiedroleeligibilityschedulerequest-filterbycurrentuser-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

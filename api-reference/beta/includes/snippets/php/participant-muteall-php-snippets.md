@@ -16,7 +16,7 @@ $requestBody->setClientContext('clientContext-value');
 
 
 
-$requestResult = $graphServiceClient->communications()->callsById('call-id')->participants()->muteAll()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->byCallId('call-id')->participants()->muteAll()->post($requestBody);
 
 
 ```

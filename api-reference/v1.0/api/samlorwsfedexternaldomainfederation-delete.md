@@ -92,6 +92,10 @@ DELETE https://graph.microsoft.com/beta/directory/federationConfigurations/96db0
 [!INCLUDE [sample-code](../includes/snippets/php/delete-samlorwsfedexternaldomainfederation-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-samlorwsfedexternaldomainfederation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

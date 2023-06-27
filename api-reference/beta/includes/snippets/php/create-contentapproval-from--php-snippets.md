@@ -9,28 +9,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new ComplianceChange();
+$requestBody = new ContentApproval();
 $requestBody->set@odatatype('#microsoft.graph.windowsUpdates.contentApproval');
 
-$additionalData = [
-'content' => $requestBody = new Content();
-$		requestBody->set@odatatype('#microsoft.graph.windowsUpdates.catalogContent');
+$content = new CatalogContent();
+$content->set@odatatype('#microsoft.graph.windowsUpdates.catalogContent');
 
-$catalogEntry = new CatalogEntry();
-$		catalogEntry->set@odatatype('#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry');
+$contentCatalogEntry = new FeatureUpdateCatalogEntry();
+$contentCatalogEntry->set@odatatype('#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry');
 
-$		catalogEntry->setId('6b7e60db-a8e4-426a-9aed-bd12b5c0b9d4');
+$contentCatalogEntry->setId('6b7e60db-a8e4-426a-9aed-bd12b5c0b9d4');
 
 
-$requestBody->setCatalogEntry($catalogEntry);
+$content->setCatalogEntry($contentCatalogEntry);
 
 $requestBody->setContent($content);
-
-'deploymentSettings' => $requestBody = new DeploymentSettings();
+$deploymentSettings = new DeploymentSettings();
 
 $requestBody->setDeploymentSettings($deploymentSettings);
-
-'schedule' => $requestBody = new Schedule();
+$additionalData = [
+		'schedule' => $requestBody = new Schedule();
 $		requestBody->setStartDateTime('String (timestamp)');
 
 $gradualRollout = new GradualRollout();
@@ -49,7 +47,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->admin()->windows()->updates()->updatePoliciesById('updatePolicy-id')->complianceChanges()->post($requestBody);
+$result = $graphServiceClient->admin()->windows()->updates()->updatePolicies()->byUpdatePolicieId('updatePolicy-id')->complianceChanges()->post($requestBody);
 
 
 ```

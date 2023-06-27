@@ -25,12 +25,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+<!-- { "blockType": "ignored" } -->
+```http
 GET /applications/{id}/federatedIdentityCredentials
+GET /applications(appId='{appId}')/federatedIdentityCredentials
 ```
 
 ## Optional query parameters
@@ -86,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/applications/bcd7c908-1c4d-4d48-93ee-ff3834
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-federatedidentitycredential-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-federatedidentitycredential-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

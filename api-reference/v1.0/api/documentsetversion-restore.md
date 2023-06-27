@@ -86,6 +86,10 @@ POST https://graph.microsoft.com/v1.0/sites/root/lists/Documents/items/2/documen
 [!INCLUDE [sample-code](../includes/snippets/php/documentsetversionthisrestore-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/documentsetversionthisrestore-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

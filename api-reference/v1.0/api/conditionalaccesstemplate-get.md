@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/templates/c75034
 [!INCLUDE [sample-code](../includes/snippets/php/get-conditionalaccesstemplate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-conditionalaccesstemplate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -201,6 +205,10 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/templates/c75034
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-conditionalaccesstemplate-select-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-conditionalaccesstemplate-select-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

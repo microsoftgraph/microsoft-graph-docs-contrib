@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new UnifiedRoleManagementPolicyRule();
+$requestBody = new UnifiedRoleManagementPolicyApprovalRule();
 $requestBody->set@odatatype('#microsoft.graph.unifiedRoleManagementPolicyApprovalRule');
 
 $requestBody->setId('Approval_EndUser_Assignment');
@@ -30,63 +30,57 @@ $target->setEnforcedSettings([]);
 
 
 $requestBody->setTarget($target);
-$additionalData = [
-'setting' => $requestBody = new Setting();
-$requestBody->set@odatatype('microsoft.graph.approvalSettings');
+$setting = new ApprovalSettings();
+$setting->set@odatatype('microsoft.graph.approvalSettings');
 
-$requestBody->setIsApprovalRequired(true);
+$setting->setIsApprovalRequired(true);
 
-$requestBody->setIsApprovalRequiredForExtension(false);
+$setting->setIsApprovalRequiredForExtension(false);
 
-$requestBody->setIsRequestorJustificationRequired(true);
+$setting->setIsRequestorJustificationRequired(true);
 
-$requestBody->setApprovalMode('SingleStage');
+$setting->setApprovalMode('SingleStage');
 
-$approvalStages1 = new ();
-$approvalStages1->set@odatatype('microsoft.graph.unifiedApprovalStage');
+$approvalStagesUnifiedApprovalStage1 = new UnifiedApprovalStage();
+$approvalStagesUnifiedApprovalStage1->set@odatatype('microsoft.graph.unifiedApprovalStage');
 
-$approvalStages1->setApprovalStageTimeOutInDays(1);
+$approvalStagesUnifiedApprovalStage1->setApprovalStageTimeOutInDays(1);
 
-$approvalStages1->setIsApproverJustificationRequired(true);
+$approvalStagesUnifiedApprovalStage1->setIsApproverJustificationRequired(true);
 
-$approvalStages1->setEscalationTimeInMinutes(0);
+$approvalStagesUnifiedApprovalStage1->setEscalationTimeInMinutes(0);
 
-$primaryApprovers1 = new ();
-$primaryApprovers1->set@odatatype('#microsoft.graph.singleUser');
+$primaryApproversSubjectSet1 = new SingleUser();
+$primaryApproversSubjectSet1->set@odatatype('#microsoft.graph.singleUser');
 
-$primaryApprovers1->setUserId('10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6');
-
-
-$primaryApproversArray []= $primaryApprovers1;
-$primaryApprovers2 = new ();
-$primaryApprovers2->set@odatatype('#microsoft.graph.groupMembers');
-
-$primaryApprovers2->setGroupId('14f2746d-7d6f-4ac6-acd8-8cac318b041b');
+$primaryApproversSubjectSet1->setUserId('10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6');
 
 
-$primaryApproversArray []= $primaryApprovers2;
-$approvalStages1->setPrimaryApprovers($primaryApproversArray);
+$primaryApproversArray []= $primaryApproversSubjectSet1;
+$primaryApproversSubjectSet2 = new GroupMembers();
+$primaryApproversSubjectSet2->set@odatatype('#microsoft.graph.groupMembers');
+
+$primaryApproversSubjectSet2->setGroupId('14f2746d-7d6f-4ac6-acd8-8cac318b041b');
 
 
-$approvalStages1->setIsEscalationEnabled(false);
+$primaryApproversArray []= $primaryApproversSubjectSet2;
+$approvalStagesUnifiedApprovalStage1->setPrimaryApprovers($primaryApproversArray);
 
-$approvalStages1->setEscalationApprovers([]);
+
+$approvalStagesUnifiedApprovalStage1->setIsEscalationEnabled(false);
+
+$approvalStagesUnifiedApprovalStage1->setEscalationApprovers([]);
 
 
-$approvalStagesArray []= $approvalStages1;
-$requestBody->setApprovalStages($approvalStagesArray);
+$approvalStagesArray []= $approvalStagesUnifiedApprovalStage1;
+$setting->setApprovalStages($approvalStagesArray);
 
 
 
 $requestBody->setSetting($setting);
 
-];
-$requestBody->setAdditionalData($additionalData);
 
-
-
-
-$requestResult = $graphServiceClient->policies()->roleManagementPoliciesById('unifiedRoleManagementPolicy-id')->rulesById('unifiedRoleManagementPolicyRule-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->roleManagementPolicies()->byRoleManagementPolicieId('unifiedRoleManagementPolicy-id')->rules()->byRuleId('unifiedRoleManagementPolicyRule-id')->patch($requestBody);
 
 
 ```

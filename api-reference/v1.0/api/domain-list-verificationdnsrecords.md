@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecord
 [!INCLUDE [sample-code](../includes/snippets/php/get-verificationdnsrecords-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-verificationdnsrecords-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

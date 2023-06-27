@@ -14,7 +14,7 @@ $requestBody->setIsCurrent(true);
 
 
 
-$requestResult = $graphServiceClient->me()->profile()->positionsById('workPosition-id')->patch($requestBody);
+$result = $graphServiceClient->me()->profile()->positions()->byPositionId('workPosition-id')->patch($requestBody);
 
 
 ```

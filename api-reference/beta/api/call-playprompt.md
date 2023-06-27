@@ -1,7 +1,7 @@
 ---
 title: "call: playPrompt"
 description: "Play a prompt in the call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -112,6 +112,10 @@ Content-Length: 166
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/call-playprompt-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/call-playprompt-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

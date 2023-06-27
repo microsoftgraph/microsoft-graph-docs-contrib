@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->snapshotsById('cloudPcSnapshot-id')->get();
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->snapshots()->getStorageAccounts(subscriptionId='{subscriptionId}')()->get();
 
 
 ```

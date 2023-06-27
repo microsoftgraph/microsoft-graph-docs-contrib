@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
 [!INCLUDE [sample-code](../includes/snippets/php/get-policies-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-policies-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

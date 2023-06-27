@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDete
 [!INCLUDE [sample-code](../includes/snippets/php/list-serviceprincipalriskdetection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-serviceprincipalriskdetection-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -179,6 +183,10 @@ GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDete
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-filter-serviceprincipalriskdetection-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-filter-serviceprincipalriskdetection-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

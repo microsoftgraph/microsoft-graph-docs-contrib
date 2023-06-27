@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEvent()
@@ -21,7 +21,7 @@ requestBody.SetIsOnlineMeeting(&isOnlineMeeting)
 onlineMeetingProvider := graphmodels.TEAMSFORBUSINESS_ONLINEMEETINGPROVIDERTYPE 
 requestBody.SetOnlineMeetingProvider(&onlineMeetingProvider) 
 
-result, err := graphClient.Me().EventsById("event-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Events().ByEventId("event-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -9,30 +9,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new NamedLocation();
+$requestBody = new IpNamedLocation();
 $requestBody->set@odatatype('#microsoft.graph.ipNamedLocation');
 
 $requestBody->setDisplayName('Untrusted named location with only IPv4 address');
 
-$additionalData = [
-'isTrusted' => false,
-'ipRanges' => $ipRanges1 = new ();
-$		ipRanges1->set@odatatype('#microsoft.graph.iPv4CidrRange');
+$requestBody->setIsTrusted(false);
 
-$		ipRanges1->setCidrAddress('6.5.4.3/18');
+$ipRangesIpRange1 = new IPv4CidrRange();
+$ipRangesIpRange1->set@odatatype('#microsoft.graph.iPv4CidrRange');
+
+$ipRangesIpRange1->setCidrAddress('6.5.4.3/18');
 
 
-$ipRangesArray []= $ipRanges1;
+$ipRangesArray []= $ipRangesIpRange1;
 $requestBody->setIpRanges($ipRangesArray);
 
 
-];
-$requestBody->setAdditionalData($additionalData);
 
 
-
-
-$requestResult = $graphServiceClient->identity()->conditionalAccess()->namedLocationsById('namedLocation-id')->patch($requestBody);
+$result = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->byNamedLocationId('namedLocation-id')->patch($requestBody);
 
 
 ```

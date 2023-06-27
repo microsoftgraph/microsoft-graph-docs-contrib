@@ -1,9 +1,9 @@
 ---
-title: customerPayments resource type 
-description: A customer payments object in Dynamics 365 Business Central.
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
+title: "customerPayments resource type"
+description: "Represents a customer payment in Dynamics 365 Business Central."
+services: "project-madeira"
+documentationcenter: ""
+author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
@@ -21,30 +21,29 @@ Represents a customer payment in Dynamics 365 Business Central. A customer payme
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get customerPayments](../api/dynamics-customerpayment-get.md)|customerPayments|Gets a customer payment.|
-|[Post customerPayments](../api/dynamics-create-customerpayment.md)|customerPayments|Creates a customer payment.|
-|[Patch customerPayments](../api/dynamics-customerpayment-update.md)|customerPayments|Updates a customer payment.|
-|[Delete customerPayments](../api/dynamics-customerpayment-delete.md)|none|Deletes a customer payment.|
+|[Get customerPayments](../api/dynamics-customerpayment-get.md)|[customerPayments](dynamics-customerpayment.md)|Get a customer payment.|
+|[Post customerPayments](../api/dynamics-create-customerpayment.md)|[customerPayments](dynamics-customerpayment.md)|Create a customer payment.|
+|[Patch customerPayments](../api/dynamics-customerpayment-update.md)|[customerPayments](dynamics-customerpayment.md)|Update a customer payment.|
+|[Delete customerPayments](../api/dynamics-customerpayment-delete.md)|None|Delete a customer payment.|
 
 ## Properties
 | Property	   | Type	 |Description|
 |:-------------|:--------|:----------|
-|id|GUID|The unique ID of the customer payment. Non-editable.|
-|journalDisplayName|string|The customer payment journal in which the payment record is a line.|
-|lineNumber|integer|The number of the customer payment.|
-|customerId|GUID|The unique ID of the customer that the payment is related to.|
-|customerNumber|string, maximum size 20|The number of the customer that the payment is related to.|
-|contactId|string, maximum size 250|The exchange contact id for the given customer. If a customer id is not specified, we will use the contact id to find it.|
-|postingDate|date|The date that the customer payment is posted.|
-|documentNumber|string, maximum size 20|Specifies a document number for the customer payment.|
-|externalDocumentNumber|string, maximum size 20|Specifies an external document number for the customer payment.|
-|amount|decimal|Specifies the total amount (including VAT) that the customer payment consists of.|
+|amount|Decimal|Specifies the total amount (including VAT) that the customer payment consists of.|
 |appliesToInvoiceId|GUID|The unique ID of the invoice that the payment is related to.|
-|appliesToInvoiceNumber|string, maximum size 20|The number of the invoice that the payment is related to.|
-|description|string, maximum size 50|The description of the customer payment, provided by the user or autocreated.|
-|comment|string, maximum size 250|A user specified comment on the customer payment.|
-|lastModifiedDateTime|datetime|The last datetime the customer payment was modified. Read-Only.|
-
+|appliesToInvoiceNumber|String|The number of the invoice that the payment is related to. Maximum supported size is 20 characters.|
+|comment|String|A user specified comment on the customer payment. Maximum supported size is 250 characters.|
+|contactId|String|The exchange contact id for the given customer. If a customer id is not specified, we will use the contact id to find it. Maximum supported size is 250 characters.|
+|customerId|GUID|The unique ID of the customer that the payment is related to.|
+|customerNumber|String|The number of the customer that the payment is related to. Maximum supported size is 20 characters.|
+|description|String|The description of the customer payment, provided by the user or autocreated. Maximum supported size is 50 characters.|
+|documentNumber|String|Specifies a document number for the customer payment. Maximum supported size is 20 characters.|
+|externalDocumentNumber|String|Specifies an external document number for the customer payment. Maximum supported size is 20 characters.|
+|id|GUID|The unique ID of the customer payment. Non-editable.|
+|journalDisplayName|String|The customer payment journal in which the payment record is a line.|
+|lastModifiedDateTime|Datetime|The last datetime the customer payment was modified. Read-Only.|
+|lineNumber|Integer|The number of the customer payment.|
+|postingDate|Date|The date that the customer payment is posted.|
 
 ## Relationships
 A customer payment is a subpage of a customer payment journal. It cannot be accessed directly.
@@ -58,25 +57,25 @@ An Invoice (appliesToInvoiceId) must exist in the Sales Invoices Table.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "GUID",
-    "journalDisplayName": "string",
-    "lineNumber": "integer",
-    "customerId": "GUID",
-    "customerNumber": "string",
-    "contactId": "string",
-    "postingDate": "date",
-    "documentNumber": "string",
-    "externalDocumentNumber": "string",
-    "amount": "decimal",
-    "appliesToInvoiceId": "GUID",
-    "appliesToInvoiceNumber": "string",
-    "description": "string",
-    "comment": "string",
-    "lastModifiedDateTime": "datetime"
+  "amount": "Decimal",
+  "appliesToInvoiceId": "GUID",
+  "appliesToInvoiceNumber": "String",
+  "comment": "String",
+  "contactId": "String",
+  "customerId": "GUID",
+  "customerNumber": "String",
+  "description": "String",
+  "documentNumber": "String",
+  "externalDocumentNumber": "String",
+  "id": "GUID",
+  "journalDisplayName": "String",
+  "lastModifiedDateTime": "Datetime",
+  "lineNumber": "Integer",
+  "postingDate": "Date"
 }
 ```
 

@@ -17,15 +17,13 @@ $criteria->setResetScope(new SynchronizationJobRestartScope('watermark, escrows,
 $requestBody->setCriteria($criteria);
 
 $requestConfiguration = new RestartRequestBuilderPostRequestConfiguration();
-
 $headers = [
-	'Authorization' => 'Bearer <token>',
-];
-
+		'Authorization' => 'Bearer <token>',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->jobsById('synchronizationJob-id')->restart()->post($requestBody, $requestConfiguration);
+$graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->synchronization()->jobs()->byJobId('synchronizationJob-id')->restart()->post($requestBody, $requestConfiguration);
 
 
 ```

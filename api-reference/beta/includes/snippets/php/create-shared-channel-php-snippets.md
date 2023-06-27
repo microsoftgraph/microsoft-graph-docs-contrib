@@ -16,13 +16,13 @@ $requestBody->setDescription('This is my first shared channel');
 
 $requestBody->setMembershipType(new ChannelMembershipType('shared'));
 
-$membersConversationMember1 = new ConversationMember();
+$membersConversationMember1 = new AadUserConversationMember();
 $membersConversationMember1->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember1->setRoles(['owner', ]);
 
 $additionalData = [
-'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'7640023f-fe43-gv3f-9gg4-84a9efe4acd6\')', 
+	'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'7640023f-fe43-gv3f-9gg4-84a9efe4acd6\')', 
 ];
 $membersConversationMember1->setAdditionalData($additionalData);
 
@@ -34,7 +34,7 @@ $requestBody->setMembers($membersArray);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channels()->post($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->post($requestBody);
 
 
 ```

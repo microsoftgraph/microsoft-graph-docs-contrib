@@ -9,23 +9,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new Attachment();
+$requestBody = new ReferenceAttachment();
 $requestBody->set@odatatype('#microsoft.graph.referenceAttachment');
 
 $requestBody->setName('Personal pictures');
 
-$additionalData = [
-'sourceUrl' => 'https://contoso.com/personal/mario_contoso_net/Documents/Pics', 
-'providerType' => 'oneDriveConsumer', 
-'permission' => 'Edit', 
-'isFolder' => 'True', 
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setSourceUrl('https://contoso.com/personal/mario_contoso_net/Documents/Pics');
+
+$requestBody->setProviderType(new ReferenceAttachmentProvider('onedriveconsumer'));
+
+$requestBody->setPermission(new ReferenceAttachmentPermission('edit'));
+
+$requestBody->setIsFolder(true);
 
 
 
-
-$requestResult = $graphServiceClient->me()->eventsById('event-id')->attachments()->post($requestBody);
+$result = $graphServiceClient->me()->events()->byEventId('event-id')->attachments()->post($requestBody);
 
 
 ```

@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.Teams["{team-id}"].Members.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "roles/any";
+	requestConfiguration.QueryParameters.Filter = "roles/any(r:r eq 'owner')";
 });
 
 

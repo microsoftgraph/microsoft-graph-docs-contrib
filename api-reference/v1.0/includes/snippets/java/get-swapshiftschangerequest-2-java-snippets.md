@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-SwapShiftsChangeRequestCollectionPage swapShiftsChangeRequests = graphClient.teams("{teamId}").schedule().swapShiftsChangeRequests()
+TodoTaskDeltaCollectionPage delta = graphClient.me().todo().lists("gDbc8U7HGwADDZocJgAAAA==").tasks()
+	.delta()
 	.buildRequest()
 	.get();
 

@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies
 [!INCLUDE [sample-code](../includes/snippets/php/list-appmanagementpolicies-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-appmanagementpolicies-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

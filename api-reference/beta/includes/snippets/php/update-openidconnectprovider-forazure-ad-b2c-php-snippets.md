@@ -9,18 +9,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new IdentityProviderBase();
+$requestBody = new SocialIdentityProvider();
 $requestBody->set@odatatype('#microsoft.graph.socialIdentityProvider');
 
 $additionalData = [
-'responseType' => 'id_token', 
+		'responseType' => 'id_token', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->identity()->identityProvidersById('identityProviderBase-id')->patch($requestBody);
+$result = $graphServiceClient->identity()->identityProviders()->byIdentityProviderId('identityProviderBase-id')->patch($requestBody);
 
 
 ```

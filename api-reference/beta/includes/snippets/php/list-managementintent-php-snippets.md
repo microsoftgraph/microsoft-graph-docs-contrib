@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->tenantRelationships()->managedTenants()->managementIntents()->get();
+$result = $graphServiceClient->tenantRelationships()->managedTenants()->managementIntents()->get();
 
 
 ```

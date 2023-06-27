@@ -30,14 +30,15 @@ $toRecipientsArray []= $toRecipientsRecipient1;
 $requestBody->setToRecipients($toRecipientsArray);
 
 
-$extensionsExtension1 = new Extension();
+$extensionsExtension1 = new OpenTypeExtension();
 $extensionsExtension1->set@odatatype('microsoft.graph.openTypeExtension');
 
+$extensionsExtension1->setExtensionName('Com.Contoso.Referral');
+
 $additionalData = [
-'extensionName' => 'Com.Contoso.Referral', 
-'companyName' => 'Wingtip Toys', 
-'expirationDate' => '2015-12-30T11:00:00.000Z', 
-'dealValue' => 10000,
+	'companyName' => 'Wingtip Toys', 
+	'expirationDate' => '2015-12-30T11:00:00.000Z', 
+	'dealValue' => 10000,
 ];
 $extensionsExtension1->setAdditionalData($additionalData);
 
@@ -49,7 +50,7 @@ $requestBody->setExtensions($extensionsArray);
 
 
 
-$requestResult = $graphServiceClient->me()->messages()->post($requestBody);
+$result = $graphServiceClient->me()->messages()->post($requestBody);
 
 
 ```

@@ -120,6 +120,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-phoneauthenticationmethod-from-authentication-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-phoneauthenticationmethod-from-authentication-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

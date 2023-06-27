@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates
 [!INCLUDE [sample-code](../includes/snippets/php/list-teamtemplatedefinition-for-tenant-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamtemplatedefinition-for-tenant-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -162,6 +166,10 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates?$expand=definitions&
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-teamtemplatedefinition-extend-filter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamtemplatedefinition-extend-filter-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
