@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "entity",
           "ChangeType": "Addition",
-          "Description": "Added the [entity](https://learn.microsoft.com/en-us/graph/api/resources/entity?view=graph-rest-1.0) resource",
+          "Description": "Added the [entity](https://learn.microsoft.com/en-us/graph/api/resources/entity?view=graph-rest-1.0) resource.",
           "Target": "entity"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "security",
           "ChangeType": "Addition",
-          "Description": "Added the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-1.0) resource",
+          "Description": "Added the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-1.0) resource.",
           "Target": "security"
         },
         {
@@ -119,7 +119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "article",
           "ChangeType": "Addition",
-          "Description": "Added the [article](https://learn.microsoft.com/en-us/graph/api/resources/security-article?view=graph-rest-1.0) resource",
+          "Description": "Added the [article](https://learn.microsoft.com/en-us/graph/api/resources/security-article?view=graph-rest-1.0) resource.",
           "Target": "article"
         },
         {
@@ -127,7 +127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "articleIndicator",
           "ChangeType": "Addition",
-          "Description": "Added the [articleIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-articleIndicator?view=graph-rest-1.0) resource",
+          "Description": "Added the [articleIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-articleIndicator?view=graph-rest-1.0) resource.",
           "Target": "articleIndicator"
         },
         {
@@ -135,7 +135,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "artifact",
           "ChangeType": "Addition",
-          "Description": "Added the [artifact](https://learn.microsoft.com/en-us/graph/api/resources/security-artifact?view=graph-rest-1.0) resource",
+          "Description": "Added the [artifact](https://learn.microsoft.com/en-us/graph/api/resources/security-artifact?view=graph-rest-1.0) resource.",
           "Target": "artifact"
         },
         {
@@ -143,7 +143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "host",
           "ChangeType": "Addition",
-          "Description": "Added the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-1.0) resource",
+          "Description": "Added the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-1.0) resource.",
           "Target": "host"
         },
         {
@@ -151,7 +151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hostComponent",
           "ChangeType": "Addition",
-          "Description": "Added the [hostComponent](https://learn.microsoft.com/en-us/graph/api/resources/security-hostComponent?view=graph-rest-1.0) resource",
+          "Description": "Added the [hostComponent](https://learn.microsoft.com/en-us/graph/api/resources/security-hostComponent?view=graph-rest-1.0) resource.",
           "Target": "hostComponent"
         },
         {
@@ -159,7 +159,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hostCookie",
           "ChangeType": "Addition",
-          "Description": "Added the [hostCookie](https://learn.microsoft.com/en-us/graph/api/resources/security-hostCookie?view=graph-rest-1.0) resource",
+          "Description": "Added the [hostCookie](https://learn.microsoft.com/en-us/graph/api/resources/security-hostCookie?view=graph-rest-1.0) resource.",
           "Target": "hostCookie"
         },
         {
@@ -167,7 +167,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hostname",
           "ChangeType": "Addition",
-          "Description": "Added the [hostname](https://learn.microsoft.com/en-us/graph/api/resources/security-hostname?view=graph-rest-1.0) resource",
+          "Description": "Added the [hostname](https://learn.microsoft.com/en-us/graph/api/resources/security-hostname?view=graph-rest-1.0) resource.",
           "Target": "hostname"
         },
         {
@@ -175,7 +175,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hostReputation",
           "ChangeType": "Addition",
-          "Description": "Added the [hostReputation](https://learn.microsoft.com/en-us/graph/api/resources/security-hostReputation?view=graph-rest-1.0) resource",
+          "Description": "Added the [hostReputation](https://learn.microsoft.com/en-us/graph/api/resources/security-hostReputation?view=graph-rest-1.0) resource.",
           "Target": "hostReputation"
         },
         {
@@ -183,7 +183,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hostTracker",
           "ChangeType": "Addition",
-          "Description": "Added the [hostTracker](https://learn.microsoft.com/en-us/graph/api/resources/security-hostTracker?view=graph-rest-1.0) resource",
+          "Description": "Added the [hostTracker](https://learn.microsoft.com/en-us/graph/api/resources/security-hostTracker?view=graph-rest-1.0) resource.",
           "Target": "hostTracker"
         },
         {
@@ -191,7 +191,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "indicator",
           "ChangeType": "Addition",
-          "Description": "Added the [indicator](https://learn.microsoft.com/en-us/graph/api/resources/security-indicator?view=graph-rest-1.0) resource",
+          "Description": "Added the [indicator](https://learn.microsoft.com/en-us/graph/api/resources/security-indicator?view=graph-rest-1.0) resource.",
           "Target": "indicator"
         },
         {
@@ -199,7 +199,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "intelligenceProfile",
           "ChangeType": "Addition",
-          "Description": "Added the [intelligenceProfile](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfile?view=graph-rest-1.0) resource",
+          "Description": "Added the [intelligenceProfile](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfile?view=graph-rest-1.0) resource.",
           "Target": "intelligenceProfile"
         },
         {
@@ -207,7 +207,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "intelligenceProfileIndicator",
           "ChangeType": "Addition",
-          "Description": "Added the [intelligenceProfileIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfileIndicator?view=graph-rest-1.0) resource",
+          "Description": "Added the [intelligenceProfileIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfileIndicator?view=graph-rest-1.0) resource.",
           "Target": "intelligenceProfileIndicator"
         },
         {
@@ -215,7 +215,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "ipAddress",
           "ChangeType": "Addition",
-          "Description": "Added the [ipAddress](https://learn.microsoft.com/en-us/graph/api/resources/security-ipAddress?view=graph-rest-1.0) resource",
+          "Description": "Added the [ipAddress](https://learn.microsoft.com/en-us/graph/api/resources/security-ipAddress?view=graph-rest-1.0) resource.",
           "Target": "ipAddress"
         },
         {
@@ -223,7 +223,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "passiveDnsRecord",
           "ChangeType": "Addition",
-          "Description": "Added the [passiveDnsRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-passiveDnsRecord?view=graph-rest-1.0) resource",
+          "Description": "Added the [passiveDnsRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-passiveDnsRecord?view=graph-rest-1.0) resource.",
           "Target": "passiveDnsRecord"
         },
         {
@@ -231,7 +231,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "threatIntelligence",
           "ChangeType": "Addition",
-          "Description": "Added the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-1.0) resource",
+          "Description": "Added the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-1.0) resource.",
           "Target": "threatIntelligence"
         },
         {
@@ -239,7 +239,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unclassifiedArtifact",
           "ChangeType": "Addition",
-          "Description": "Added the [unclassifiedArtifact](https://learn.microsoft.com/en-us/graph/api/resources/security-unclassifiedArtifact?view=graph-rest-1.0) resource",
+          "Description": "Added the [unclassifiedArtifact](https://learn.microsoft.com/en-us/graph/api/resources/security-unclassifiedArtifact?view=graph-rest-1.0) resource.",
           "Target": "unclassifiedArtifact"
         },
         {
@@ -247,7 +247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vulnerability",
           "ChangeType": "Addition",
-          "Description": "Added the [vulnerability](https://learn.microsoft.com/en-us/graph/api/resources/security-vulnerability?view=graph-rest-1.0) resource",
+          "Description": "Added the [vulnerability](https://learn.microsoft.com/en-us/graph/api/resources/security-vulnerability?view=graph-rest-1.0) resource.",
           "Target": "vulnerability"
         },
         {
@@ -255,14 +255,14 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vulnerabilityComponent",
           "ChangeType": "Addition",
-          "Description": "Added the [vulnerabilityComponent](https://learn.microsoft.com/en-us/graph/api/resources/security-vulnerabilityComponent?view=graph-rest-1.0) resource",
+          "Description": "Added the [vulnerabilityComponent](https://learn.microsoft.com/en-us/graph/api/resources/security-vulnerabilityComponent?view=graph-rest-1.0) resource.",
           "Target": "vulnerabilityComponent"
         }
       ],
       "Id": "01daeb88-0ba8-4bcf-b85d-5130e7813a0d",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-06-09T14:08:23.7878701Z",
+      "CreatedDateTime": "2023-06-27T14:08:23.7878701Z",
       "WorkloadArea": "Microsoft.ThreatIntelligence",
       "SubArea": ""
     },
