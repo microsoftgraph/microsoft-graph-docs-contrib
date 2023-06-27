@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /connections/{connectionsId}/items/{externalItemId}/addActivities
+POST external/connections/{connectionsId}/items/{externalItemId}/addActivities
 ```
 
 ## Request headers
