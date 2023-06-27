@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: getProvisionedCloudPCs"
-description: "Get all provisioned Cloud PCs of a specific service plan for users under an Azure Active Directory (AAD) user group."
+description: "Get all provisioned Cloud PCs of a specific service plan for users under an Azure Active Directory (Azure AD) user group."
 author: "SleepIsImportant"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all provisioned Cloud PCs of a specific service plan for users under an Azure Active Directory (AAD) user group.
+Get all provisioned Cloud PCs of a specific service plan for users under an Azure Active Directory (Azure AD) user group.
 
 ## Permissions
 
@@ -46,7 +46,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='{
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|groupId|String|The unique identifier for Azure Active Directory (AAD) user group.|
+|groupId|String|The unique identifier for Azure AD user group.|
 |servicePlanId|String|The unique identifier of the service plan.|
 
 ## Request body
@@ -55,7 +55,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [cloudPC](../resources/cloudPC.md) collection object in the response body.
+If successful, this method returns a `200 OK` response code and a [cloudPC](../resources/cloudPC.md) collection in the response body.
 
 ## Examples
 
