@@ -17,12 +17,6 @@ Microsoft Graph connectors offer an intuitive way to bring content from external
 
 Today, with Microsoft Graph connectors, the data you bring in from your organization can appear in Microsoft Search results. This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. Soon, connectors will power many other Microsoft 365 intelligent experiences, such as Viva Topics.
 
-The following diagram provides a high-level overview of Microsoft Graph connectors.
-
-<!---Insert image reference here --->
-<!---       ![Select the Microsoft Graph permissions](./images/application-saml-sso-configure-api/set-permissions.png) --->
-![Image showing connectors being used to bring data into Microsoft Graph](./images/connectors-images/overview.png)
-
 ## Get started with custom connectors
 
 The 100+ connectors currently available from Microsoft and partners enable you to connect to popular Microsoft and non-Microsoft services. Examples of existing connectors include Azure services, Box, ServiceNow, Salesforce, Google services, and MediaWiki.
