@@ -61,7 +61,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpcexportjob",
+  "name": "get_cloudpcexportjob_example1",
   "sampleKeys": ["TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff"]
 }
 -->
@@ -132,8 +132,8 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpcexportjob",
-  "sampleKeys": ["TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff"]
+  "name": "get_cloudpcexportjob_example2",
+  "sampleKeys": ["RemoteConnectionQualityReports__85678957-6202-4e29-97e6-eb26ef07f330"]
 }
 -->
 ``` http
