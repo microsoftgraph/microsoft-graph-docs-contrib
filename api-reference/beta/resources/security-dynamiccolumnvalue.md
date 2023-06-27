@@ -13,7 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a dynamic column in a [row](../resources/security-huntingrowresult.md), from running an [advanced hunting query](../api/security-security-runhuntingquery.md).
+
+
 
 ## Properties
 |Property|Type|Description|
@@ -26,12 +28,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.dynamicColumnValue"
+  "@odata.type": "microsoft.graph.security.dynamicColumnValue",
+  "openType": true
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.dynamicColumnValue"
 }
 ```
 
