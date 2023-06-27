@@ -545,7 +545,7 @@ Content-Type: application/json
 }
 ```
 
-### Lock sensitive properties for service principals
+## Lock sensitive properties for service principals
 
 The *app instance lock* feature allows you to protect sensitive properties of your multi-tenant apps from unauthorized tampering. The following properties of the service principal object can be locked:
 
