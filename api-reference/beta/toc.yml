@@ -10329,6 +10329,8 @@ items:
             href: api/cloudpc-getcloudpclaunchinfo.md
           - name: Get shift work access state
             href: api/cloudpc-getshiftworkcloudpcaccessstate.md
+          - name: Get provisioned Cloud PCs
+            href: api/cloudpc-getprovisionedcloudpcs.md
           - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Get review status
@@ -12526,7 +12528,7 @@ items:
               href: api/entitlementmanagementsettings-get.md
             - name: Update
               href: api/entitlementmanagementsettings-update.md
-        - name: Lifecycle workflows (preview)
+        - name: Lifecycle workflows
           displayName: LCW, Identity Governance, Joiner, Mover, Leaver
           items:
           - name: Overview
