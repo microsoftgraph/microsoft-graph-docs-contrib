@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new Chat();
 $requestBody->setChatType(new ChatType('oneonone'));
 
-$membersConversationMember1 = new ConversationMember();
+$membersConversationMember1 = new AadUserConversationMember();
 $membersConversationMember1->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember1->setRoles(['owner', ]);
@@ -25,7 +25,7 @@ $membersConversationMember1->setAdditionalData($additionalData);
 
 
 $membersArray []= $membersConversationMember1;
-$membersConversationMember2 = new ConversationMember();
+$membersConversationMember2 = new AadUserConversationMember();
 $membersConversationMember2->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember2->setRoles(['owner', ]);

@@ -40,7 +40,6 @@ acl1.SetIdentitySource(&identitySource)
 acl := []graphmodelsexternalconnectors.Aclable {
 	acl,
 	acl1,
-
 }
 requestBody.SetAcl(acl)
 properties := graphmodelsexternalconnectors.NewProperties()

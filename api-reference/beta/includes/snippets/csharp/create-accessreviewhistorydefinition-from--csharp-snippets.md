@@ -23,37 +23,19 @@ var requestBody = new AccessReviewHistoryDefinition
 	ReviewHistoryPeriodEndDateTime = DateTimeOffset.Parse("2021-04-30T23:59:59Z"),
 	Scopes = new List<AccessReviewScope>
 	{
-		new AccessReviewScope
+		new AccessReviewQueryScope
 		{
 			OdataType = "#microsoft.graph.accessReviewQueryScope",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"queryType" , "MicrosoftGraph"
-				},
-				{
-					"query" , "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')"
-				},
-				{
-					"queryRoot" , null
-				},
-			},
+			QueryType = "MicrosoftGraph",
+			Query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
+			QueryRoot = null,
 		},
-		new AccessReviewScope
+		new AccessReviewQueryScope
 		{
 			OdataType = "#microsoft.graph.accessReviewQueryScope",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"queryType" , "MicrosoftGraph"
-				},
-				{
-					"query" , "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')"
-				},
-				{
-					"queryRoot" , null
-				},
-			},
+			QueryType = "MicrosoftGraph",
+			Query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
+			QueryRoot = null,
 		},
 	},
 };

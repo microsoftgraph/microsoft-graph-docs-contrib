@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 request_body = AddPostRequestBody()
-values_conversation_member1 = ConversationMember()
+values_conversation_member1 = AadUserConversationMember()
 values_conversation_member1.@odata_type = 'microsoft.graph.aadUserConversationMember'
 
 values_conversation_member1.Roles([])
@@ -21,7 +21,7 @@ values_conversation_member1.additional_data(additional_data)
 
 
 valuesArray []= valuesConversationMember1;
-values_conversation_member2 = ConversationMember()
+values_conversation_member2 = AadUserConversationMember()
 values_conversation_member2.@odata_type = 'microsoft.graph.aadUserConversationMember'
 
 values_conversation_member2.Roles(['owner', ])
