@@ -1,7 +1,7 @@
 ---
 title: "List teams"
 description: "List all teams in an organization."
-author: "pruthvi0501"
+author: "pruthvi0105"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
