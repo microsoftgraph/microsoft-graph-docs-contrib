@@ -161,7 +161,7 @@ HTTP/1.1 200 OK
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
+GET https://graph.microsoft.com/v1.0/me/photo/48x48/$value
 Content-Type: image/jpg
 ```
 
