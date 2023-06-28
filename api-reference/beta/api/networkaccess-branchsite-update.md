@@ -54,7 +54,7 @@ PATCH /networkAccess/connectivity/branches/{branchSiteId}
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object in the response body.
 
 ## Examples
 
@@ -71,7 +71,6 @@ PATCH https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{bran
 Content-Type: application/json
 
 {
-    "@context": "#$delta",
     "name": "My updated branch"
 }
 ```
@@ -86,7 +85,19 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches/$entity",
+    "id": "88e5a488-92c3-45d6-ba56-e5cfa63677e8",
+    "name": "test branch - 11:50",
+    "country": "United States",
+    "region": "East US",
+    "version": "1.0.0",
+    "bandwidthCapacity": 500,
+    "lastModifiedDateTime": "2023-05-24T08:22:02Z"
+}
 ```
 
 
