@@ -48,11 +48,15 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [page](../resources/page.md) objects in the response body.
+
 ## Example
 ##### Request
 Here is an example of the request.
-<!-- { "blockType": "request", "name" : "onenote_list_pages"  } -->
 
+<!-- { 
+  "blockType": "request",
+  "name" : "onenote_list_pages_v1_e1"  
+} -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/pages
 ```
@@ -62,7 +66,7 @@ Here is an example of the response. Note: The response object shown here is trun
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.pageLinks"
+  "@odata.type": "Collection(microsoft.graph.onenotePage)"
 } -->
 ```http
 HTTP/1.1 200 OK
