@@ -1,5 +1,5 @@
 ---
-title: "List pages"
+title: "List onenotePages"
 description: "Retrieve a list of page objects."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "onenote"
 doc_type: apiPageType
 ---
 
-# List pages
+# List onenotePages
 
 Namespace: microsoft.graph
 
