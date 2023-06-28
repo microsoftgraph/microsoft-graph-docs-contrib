@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).
+Create a new or replace an existing [user activity](../resources/projectrome-activity.md) for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).
 
 ## Permissions
 
@@ -56,7 +56,7 @@ If successful, this method returns the `201 Created` response code if the activi
 The following is an example of the request.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "request",
     "name": "upsert_activity"
 } -->
 
@@ -101,21 +101,17 @@ Content-type: application/json
 }
 ```
 
-<!-- markdownlint-disable MD024 -->
-
 #### Response
 
 The following is an example of the response.
 
 <!-- {
-    "blockType": "ignored",
-    
+    "blockType": "response",
+    "truncated": true,
+    "@odata.type": "microsoft.graph.userActivity"
 } -->
-
 ```http
 HTTP/1.1 200 OK
-```
-<!-->
 Content-Type: application/json
 
 {
@@ -159,7 +155,6 @@ Content-Type: application/json
   }
 }
 ```
--->
 
 ### Example 2: Deep insert
 
@@ -170,7 +165,7 @@ This example creates a new activity and a history item for that activity in one 
 The following is an example of the request.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "request",
     "name": "upsert_activity2"
 } -->
 
@@ -227,9 +222,9 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "response",
     "truncated": true,
-    "@odata.type": "Edm.String"
+    "@odata.type": "microsoft.graph.userActivity"
 } -->
 
 ```http
