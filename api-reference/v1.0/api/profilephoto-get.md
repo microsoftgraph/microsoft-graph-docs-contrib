@@ -134,7 +134,7 @@ If successful, this method returns a `200 OK` response code and [profilePhoto](.
 ### Example 1: Get the photo for the signed-in user in the largest available size
 #### Request
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_photo_value"
 }-->
 
