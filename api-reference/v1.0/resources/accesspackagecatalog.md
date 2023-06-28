@@ -26,6 +26,7 @@ An access package catalog might also have linked resources that are used in thos
 |[Update accessPackageCatalog](../api/accesspackagecatalog-update.md)|None|Update the properties of an accessPackageCatalog object. |
 |[Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md)|None|Delete accessPackageCatalog. |
 | [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
+| [List accessPackageCatalog resource roles](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection | Retrieve a list of accessPackageResourceRole objects in a catalog. |
 
 ## Properties
 |Property|Type|Description|
