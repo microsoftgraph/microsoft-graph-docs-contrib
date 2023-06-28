@@ -591,7 +591,7 @@
 				"ApiChange": "Method",
 				"ChangedApiName": "export",
 				"ChangeType": "Addition",
-				"Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/ediscoveryReviewSet?view=graph-rest-1.0) method to the [ediscoveryReviewSet](https://learn.microsoft.com/en-us/graph/api/ediscoveryReviewSet?view=graph-rest-1.0) resource.",
+				"Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryreviewsetquery-export?view=graph-rest-1.0) method to the [ediscoveryReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewsetquery?view=graph-rest-1.0) resource.",
 				"Target": "ediscoveryReviewSet"
 			  },
 			  {
@@ -599,7 +599,7 @@
 				"ApiChange": "Method",
 				"ChangedApiName": "export",
 				"ChangeType": "Addition",
-				"Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/ediscoveryReviewSetQuery?view=graph-rest-1.0) method to the [ediscoveryReviewSetQuery](https://learn.microsoft.com/en-us/graph/api/ediscoveryReviewSetQuery?view=graph-rest-1.0) resource.",
+				"Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryreviewsetquery-export?view=graph-rest-1.0) method to the [ediscoveryReviewSetQuery](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewsetquery?view=graph-rest-1.0) resource.",
 				"Target": "ediscoveryReviewSetQuery"
 			  }
 			],
