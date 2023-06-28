@@ -86,7 +86,6 @@ Content-type: application/json
         }
       },
       "contentUrl": "contentUrl-value",
-      "content": "content-value",
       "lastModifiedDateTime": "2016-10-19T10:37:00Z"
     }
   ]
