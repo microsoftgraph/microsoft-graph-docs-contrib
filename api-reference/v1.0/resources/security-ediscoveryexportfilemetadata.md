@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryExportFileMetadata resource type"
-description: "Represents the file metadata for an export in eDiscovery."
+description: "Represents the file metadata for an export in  Microsoft Purview eDiscovery."
 author: "vbhatt0211"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
