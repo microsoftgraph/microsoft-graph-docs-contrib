@@ -51,16 +51,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "ignored" , "name" : "intune_apps_mobilecontainedapp_list_list_mobilecontainedapps" }
+<!-- { "blockType": "ignored" , "name" : "intune_apps_mobilecontainedapp_list_list_mobilecontainedapps" } -->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/containedApps
-```
--->
-
-<!-- { "blockType": "request" , "name" : "intune_apps_mobilecontainedapp_get_get_mobilecontainedapp" }-->
-``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/0122f94e-45c4-458a-a25a-c08135a036fc/microsoft.graph.windowsMobileMSI/contentVersions/3c02d875-d875-3c02-75d8-023c75d8023c/containedApps
-
 ```
 
 

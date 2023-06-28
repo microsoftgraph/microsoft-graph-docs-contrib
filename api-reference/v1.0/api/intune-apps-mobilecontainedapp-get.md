@@ -56,11 +56,8 @@ Here is an example of the request.
 
 <!-- { "blockType": "ignored" , "name" : "intune_apps_mobilecontainedapp_get_get_mobilecontainedapp" }-->
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/0122f94e-45c4-458a-a25a-c08135a036fc/microsoft.graph.windowsMobileMSI/contentVersions/3c02d875-d875-3c02-75d8-023c75d8023c/containedApps/3c02d875-d875-3c02-75d8-023c75d8023c
-
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/containedApps/{mobileContainedAppId}
 ```
-<!-- GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/containedApps/{mobileContainedAppId} -->
-
 
 
 
