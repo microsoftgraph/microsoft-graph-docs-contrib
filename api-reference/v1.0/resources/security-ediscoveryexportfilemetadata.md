@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents the file metadata for an export in eDiscovery.
+Represents the file metadata for an export in Microsoft Purview eDiscovery.
 
 ## Properties
 
