@@ -29,30 +29,27 @@ To congifure your connector for Microsoft Search, you must:
 Users can access this feature by inserting "/" in an Outlook web email and typing keywords. They are then given relevant suggestions based on the context typed, that can be directly inserted into the body of the email. 
 
 To configure your connector for Context IQ, you must:
-- add "search" as an experience in enabledContentExperiences in connectionSettings
-- assign the following labels to your schema 
-- send activities on item
-- register urltoitemresolver in activity settings 
+- Apply the following [semantic labels](graph/connecting-external-content-manage-schema#semantic-labels) to your [schema](graph/api/resources/externalconnectors-schema): `title`, `url`, `iconUrl`. These labels determine which properties are displayed in the experience.
+- Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. Supported activity types are shown [here](/graph/api/resources/externalconnectors-externalactivity). These activities inform the platform of which users have interacted most recently with which items. Items with activities performed by a given user will have a higher likelihood of being displayed to that user in the experience.
+- Add a [urlToItemrResolver](graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](graph/api/resources/externalconnectors-activitysettings) when you [create your connection](graph/connecting-external-content-manage-connections#create-a-connection). A `urlToItemResolver` will enable the platform to become aware when users share URLs from your external content with each other. The experience will have a higher likelihood of displaying content that has been shared with that user.
 
 ## Copilot (coming soon)
-[Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) with Graph connectors allows users to discover, summarize, and do Q&A on 
+[Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) with Graph connectors allows users to easily find, summarize, and learn important details about *all* content relevant to a user's natural language prompts to Copilot. 
 
 >![NOTE]
 >Microsoft Graph connectors with Microsoft 365 Copilot is in early access preview. When you get access to the [developer preview program](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR06na7ADVcFBoFXEJ5M8YD1UNkdQODE5VDNKOUQ2UlBSVUJJRlJDVktTVS4u), you'll receive instructions on how to test your Graph connector with Microsoft 365 Copilot.
 >Also, only customers who are part of the [Copilot Early Access Program](https://blogs.microsoft.com/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-2023-microsoft-work-trend-index/) will have Copilot enabled in their tenants in the coming months.
 
 To configure your connector for Copilot, you must:
-- Include a `urlToItemResolver`. By including a `urlToItemResolver` in your connector’s [activity settings](/graph/connecting-external-content-manage-connections), Copilot will become aware when users share URLs to your content with one another. When users share an item with one another, Copilot will boost its importance for including the item in its response.  
-- Provide a rich human-readable name and detailed description when you [create the connection](/graph/api/externalconnectors-external-post-connections). This helps Copilot understand what the data source is, so it includes the data source in its response if it’s relevant.
-- Apply [semantic labels](/graph/connecting-external-content-manage-schema). Semantic labels help Copilot understand the semantic meaning of your schema. You must apply as many of them to your schema as applicable.
-- Add [user activities](/graph/api/externalconnectors-externalitem-addactivities). In addition to adding your content `externalItems` to the Microsoft Graph, your connector should also add user activities around you’re content. Supported activity types are shown [here](/graph/api/resources/externalconnectors-externalactivity). Items that have more activities are boosted in their importance.
+- Add a [urlToItemrResolver](graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](graph/api/resources/externalconnectors-activitysettings) when you [create your connection](graph/connecting-external-content-manage-connections#create-a-connection). A `urlToItemResolver` will enable the platform to become aware when users share URLs from your external content with each other. Copilot will have a higher likelihood of displaying content that has been shared with that user. 
+- Apply [semantic labels](/graph/connecting-external-content-manage-schema). Semantic labels help Copilot understand the semantic meaning of your schema. Apply as many of them to your schema as applicable.
+- Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. Supported activity types are shown [here](/graph/api/resources/externalconnectors-externalactivity). Items that have more activities are boosted in their importance.
 
 ## Microsoft 365 App (coming soon)
-The [Microsoft 365 App](https://office.com) with Graph connectors _______
+The [Microsoft 365 App](https://office.com) with Graph connectors allows your third-party data to become discoverable from [Microsoft365.com](Microsoft365.com) under *Quick Access* and *My Content*. This helps users find all the content that is important to them in one place. 
 
 To configure your connector for the [Microsoft 365 App](office.com), you must:
-- Include `search` as an experience in `enabledContentExperiences` when you create your connection. 
-- assign the following labels to your schema 
-- send activities on item
-- register urltoitemresolver in activity settings 
+- Apply the following [semantic labels](graph/connecting-external-content-manage-schema#semantic-labels) to your [schema](graph/api/resources/externalconnectors-schema): `title`, `url`, `iconUrl`. These labels determine which properties are displayed in the experience.
+- Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. Supported activity types are shown [here](/graph/api/resources/externalconnectors-externalactivity). These activities inform the platform of which users have interacted most recently with which items. Items with activities performed by a given user will have a higher likelihood of being displayed to that user in the experience.
+- Add a [urlToItemrResolver](graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](graph/api/resources/externalconnectors-activitysettings) when you [create your connection](graph/connecting-external-content-manage-connections#create-a-connection). A `urlToItemResolver` will enable the platform to become aware when users share URLs from your external content with each other. The experience will have a higher likelihood of displaying content that has been shared with that user.
 
