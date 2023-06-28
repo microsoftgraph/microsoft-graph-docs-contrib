@@ -9,7 +9,7 @@ client =  GraphServiceClient(request_adapter)
 
 
 
-result = await client.identity_governance.privileged_access.group.eligibility_schedule_instances.by_eligibility_schedule_instance_id('privilegedAccessGroupEligibilityScheduleInstance-id').get()
+result = await client.identity_governance.privileged_access.group.eligibility_schedule_instances.filter_by_current_user(on='{on}'.get()
 
 
 ```

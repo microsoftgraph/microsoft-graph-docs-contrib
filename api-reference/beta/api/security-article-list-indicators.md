@@ -21,11 +21,11 @@ Get a list of [articleIndicator](../resources/security-articleindicator.md) obje
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ThreatIntelligence.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|ThreatIntelligence.Read.All|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | ThreatIntelligence.Read.All                 |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ThreatIntelligence.Read.All                 |
 
 ## HTTP request
 
@@ -33,7 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /security/threatIntelligence/articles/{articleId}/indicators
 ```
 
@@ -43,9 +44,9 @@ This method supports the `$count`, `$select`, `$top`, and `$skip` OData query pa
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -60,14 +61,17 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of a request.
+
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_articleindicator",
   "sampleKeys": ["a272d5ab"]
 }
 -->
-``` http
+
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/a272d5ab/indicators
 ```
 
@@ -100,14 +104,17 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/a272d5
 ### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.security.articleIndicator)"
 }
 -->
-``` json
+
+```json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -116,7 +123,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.articleIndicator",
       "id": "ZmFrZS1tYWxpY2lvdXMuc2l0ZQ==",
-      "source": "microsoftDefenderThreatIntelligence",
+      "source": "microsoft",
       "artifact": {
           "@odata.type": "#microsoft.graph.security.hostname",
           "id": "fake-malicious.site"

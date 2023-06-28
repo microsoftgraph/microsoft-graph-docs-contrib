@@ -30,7 +30,7 @@ deviceDescription := "TestDescription"
 quality.SetDeviceDescription(&deviceDescription) 
 
 
-teleconferenceDeviceMediaQuality := graphmodels.NewTeleconferenceDeviceMediaQuality()
+teleconferenceDeviceMediaQuality := graphmodels.NewTeleconferenceDeviceAudioQuality()
 channelIndex := int32(1)
 teleconferenceDeviceMediaQuality.SetChannelIndex(&channelIndex) 
 mediaDuration , err := abstractions.ParseISODuration("PT20M")
@@ -73,7 +73,7 @@ maximumInboundJitter , err := abstractions.ParseISODuration("PT0.023S")
 teleconferenceDeviceMediaQuality.SetMaximumInboundJitter(&maximumInboundJitter) 
 maximumOutboundJitter , err := abstractions.ParseISODuration("PT0.024S")
 teleconferenceDeviceMediaQuality.SetMaximumOutboundJitter(&maximumOutboundJitter) 
-teleconferenceDeviceMediaQuality1 := graphmodels.NewTeleconferenceDeviceMediaQuality()
+teleconferenceDeviceMediaQuality1 := graphmodels.NewTeleconferenceDeviceVideoQuality()
 channelIndex := int32(1)
 teleconferenceDeviceMediaQuality1.SetChannelIndex(&channelIndex) 
 mediaDuration , err := abstractions.ParseISODuration("PT20M")
@@ -116,7 +116,7 @@ maximumInboundJitter , err := abstractions.ParseISODuration("PT0.023S")
 teleconferenceDeviceMediaQuality1.SetMaximumInboundJitter(&maximumInboundJitter) 
 maximumOutboundJitter , err := abstractions.ParseISODuration("PT0.024S")
 teleconferenceDeviceMediaQuality1.SetMaximumOutboundJitter(&maximumOutboundJitter) 
-teleconferenceDeviceMediaQuality2 := graphmodels.NewTeleconferenceDeviceMediaQuality()
+teleconferenceDeviceMediaQuality2 := graphmodels.NewTeleconferenceDeviceScreenSharingQuality()
 channelIndex := int32(1)
 teleconferenceDeviceMediaQuality2.SetChannelIndex(&channelIndex) 
 mediaDuration , err := abstractions.ParseISODuration("PT20M")
@@ -164,7 +164,6 @@ mediaQualityList := []graphmodels.TeleconferenceDeviceMediaQualityable {
 	teleconferenceDeviceMediaQuality,
 	teleconferenceDeviceMediaQuality1,
 	teleconferenceDeviceMediaQuality2,
-
 }
 quality.SetMediaQualityList(mediaQualityList)
 requestBody.SetQuality(quality)

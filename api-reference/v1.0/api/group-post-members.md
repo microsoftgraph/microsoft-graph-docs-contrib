@@ -199,3 +199,16 @@ HTTP/1.1 204 No Content
 - [Update member's role in team](team-update-members.md)
 - [Remove member from team](team-delete-members.md)
 
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Create member",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api/group-post-members.md:
+    Failed to parse enumeration values for type microsoft.graph.add. Table requires a column header named one of the following: Member, Name, Value"
+  ]
+}
+-->

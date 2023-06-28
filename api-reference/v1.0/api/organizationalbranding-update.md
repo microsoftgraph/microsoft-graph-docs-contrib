@@ -188,3 +188,14 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update organizationalBranding",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

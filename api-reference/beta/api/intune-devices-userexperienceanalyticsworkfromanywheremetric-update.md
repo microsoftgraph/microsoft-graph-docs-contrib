@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics work from anywhere metric.|
+|id|String|The unique identifier of the user experience analytics work from anywhere metric. Read-only.|
 
 
 
