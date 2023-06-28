@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: validateBulkResize"
-description: "Validate if the selected devices meet the requirements to perform bulk resizing."
+description: "Validate that a set of Cloud PC devices meet the requirements to be bulk resized."
 author: "SleepIsImportant"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Validate if the selected [cloudPC](../resources/cloudpc.md) devices meet the requirements for bulk resizing.
+Validate that a set of [cloudPC](../resources/cloudpc.md) devices meet the requirements to be bulk resized.
 
 ## Permissions
 
