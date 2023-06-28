@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed the BulkResizePreview validation (cloudPC: validateBulkResize). If any devices cannot be resized, they will be labeled as "resize failed," while the remaining devices will be `provisioned` for the resize process.sss
+Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed validation (cloudPC: validateBulkResize). If any devices cannot be resized, they will indicate "resize failed," while the remaining devices will be `provisioned` for the resize process.
 
 ## Permissions
 
