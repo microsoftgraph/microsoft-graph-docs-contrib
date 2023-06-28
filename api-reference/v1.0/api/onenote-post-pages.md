@@ -54,12 +54,15 @@ The body can contain HTML placed directly in the request body, or it can contain
 If successful, this method returns a `201 Created` response code and the new [page](../resources/page.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../onenote/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "get_onenoteoperation"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
@@ -98,9 +101,15 @@ Content-Type:application/pdf
 
 --MyPartBoundary198374--
 ```
-##### Response
-Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
-<!-- { "blockType": "ignored" } -->
+### Response
+Here is an example of the response. 
+
+> Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onenotePage"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
