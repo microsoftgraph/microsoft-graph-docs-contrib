@@ -1,6 +1,6 @@
 ---
 author: mahgoyal
-ms.date: 22/06/2023
+ms.date: 06/28/2023
 title: Permanently delete a file or folder
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -87,7 +87,7 @@ POST /drives/{drive-id}/items/{item-id}/permanentDelete
 
 ---
 
-## Response
+### Response
 
 If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
 
