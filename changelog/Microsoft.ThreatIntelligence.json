@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "7c4aa088-2340-477e-b502-b648e706c81d",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list subdomains](https://learn.microsoft.com/en-us/graph/api/security-host-list-subdomains?view=graph-rest-beta) operation to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "7c4aa088-2340-477e-b502-b648e706c81d",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/security-subdomain-get?view=graph-rest-beta) operation to the [subdomain](https://learn.microsoft.com/en-us/graph/api/resources/security-subdomain?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "7c4aa088-2340-477e-b502-b648e706c81d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "subdomains",
+          "ChangeType": "Addition",
+          "Description": "Added the **subdomains** navigation property to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "7c4aa088-2340-477e-b502-b648e706c81d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "subdomains",
+          "ChangeType": "Addition",
+          "Description": "Added the **subdomains** navigation property to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
+        },
+        {
+          "Id": "7c4aa088-2340-477e-b502-b648e706c81d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subdomain",
+          "ChangeType": "Addition",
+          "Description": "Added the [subdomain](https://learn.microsoft.com/en-us/graph/api/resources/security-subdomain?view=graph-rest-beta) resource.",
+          "Target": "subdomain"
+        }
+      ],
+      "Id": "7c4aa088-2340-477e-b502-b648e706c81d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-26T17:53:19.4436751Z",
+      "WorkloadArea": "Microsoft.ThreatIntelligence",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b51abfa7-f2cd-43d5-bba2-5d0c1ea4c857",
           "ApiChange": "Member",
           "ChangedApiName": "microsoft",

@@ -1,6 +1,6 @@
 ---
 title: "workflow: activate"
-description: "Run a workflow on-demand for time critical execution and testing."
+description: "Run a workflow object on demand."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
