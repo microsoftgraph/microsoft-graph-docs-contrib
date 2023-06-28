@@ -20,7 +20,7 @@ Inherits from [microsoft.graph.security.impactedAsset](../resources/security-imp
 ## Properties
 | Property   | Type                                                                                                          | Description                                                                                                                                                                                |
 |:-----------|:--------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| identifier | [microsoft.graph.security.deviceAssetIdentifier](../resources/enums-security.md#deviceAssetIdentifier-values) | Unique identifier for the impacted device asset. The possible values are: `deviceId`, `deviceName`, `remoteDeviceName`, `targetDeviceName`, `destinationDeviceName`, `unknownFutureValue`. |
+| identifier | [microsoft.graph.security.deviceAssetIdentifier](../resources/enums-security.md#deviceassetidentifier-values) | Unique identifier for the impacted device asset. The possible values are: `deviceId`, `deviceName`, `remoteDeviceName`, `targetDeviceName`, `destinationDeviceName`, `unknownFutureValue`. |
 
 ## Relationships
 None.

@@ -22,7 +22,7 @@ Inherits from [microsoft.graph.security.responseAction](../resources/security-re
 ## Properties
 | Property   | Type                                                                                                                                            | Description                                                                                                                                                              |
 |:-----------|:------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| identifier | [microsoft.graph.security.forceUserPasswordResetEntityIdentifier](../resources/enums-security.md#forceUserPasswordResetEntityIdentifier-values) | Unique identifier for the response action. The possible values are: `accountSid`, `initiatingProcessAccountSid`, `requestAccountSid`, `onPremSid`, `unknownFutureValue`. |
+| identifier | [microsoft.graph.security.forceUserPasswordResetEntityIdentifier](../resources/enums-security.md#forceuserpasswordresetentityidentifier-values) | Unique identifier for the response action. The possible values are: `accountSid`, `initiatingProcessAccountSid`, `requestAccountSid`, `onPremSid`, `unknownFutureValue`. |
 
 ## Relationships
 None.

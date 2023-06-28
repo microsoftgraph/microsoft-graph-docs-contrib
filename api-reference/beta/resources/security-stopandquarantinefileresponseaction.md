@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.security.responseAction](../resources/security-re
 ## Properties
 | Property   | Type                                                                                                                                          | Description                                                                                                                            |
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| identifier | [microsoft.graph.security.stopAndQuarantineFileEntityIdentifier](../resources/enums-security.md#stopAndQuarantineFileEntityIdentifier-values) | Unique identifier for the response action. The possible values are: `deviceId`, `sha1`, `initiatingProcessSHA1`, `unknownFutureValue`. |
+| identifier | [microsoft.graph.security.stopAndQuarantineFileEntityIdentifier](../resources/enums-security.md#stopandquarantinefileentityidentifier-values) | Unique identifier for the response action. The possible values are: `deviceId`, `sha1`, `initiatingProcessSHA1`, `unknownFutureValue`. |
 
 ## Relationships
 None.

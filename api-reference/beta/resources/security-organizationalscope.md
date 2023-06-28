@@ -19,7 +19,7 @@ The scope to specify which devices are covered by a [custom detection rule's](..
 | Property   | Type                                                                                  | Description                                                                                         |
 |:-----------|:--------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
 | scopeNames | String collection                                                                     | List of groups to which the custom detection rule applies.                                          |
-| scopeType  | [microsoft.graph.security.scopeType](../resources/enums-security.md#scopeType-values) | The type of the organizational scope. The possible values are: `deviceGroup`, `unknownFutureValue`. |
+| scopeType  | [microsoft.graph.security.scopeType](../resources/enums-security.md#scopetype-values) | The type of the organizational scope. The possible values are: `deviceGroup`, `unknownFutureValue`. |
 
 ## Relationships
 None.

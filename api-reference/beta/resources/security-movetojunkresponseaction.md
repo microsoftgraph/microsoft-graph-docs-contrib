@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.security.responseAction](../resources/security-re
 ## Properties
 | Property   | Type                                                                                                          | Description                                                                                                                                                                                   |
 |:-----------|:--------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| identifier | [microsoft.graph.security.emailEntityIdentifier](../resources/enums-security.md#emailEntityIdentifier-values) | Unique identifier for the response action. Default is `networkMessageId`,`recipientEmailAddress`. The possible values are: `networkMessageId`, `recipientEmailAddress`, `unknownFutureValue`. |
+| identifier | [microsoft.graph.security.emailEntityIdentifier](../resources/enums-security.md#emailentityidentifier-values) | Unique identifier for the response action. Default is `networkMessageId`,`recipientEmailAddress`. The possible values are: `networkMessageId`, `recipientEmailAddress`, `unknownFutureValue`. |
 
 ## Relationships
 None.

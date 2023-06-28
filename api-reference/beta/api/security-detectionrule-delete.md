@@ -1,9 +1,9 @@
 ---
 title: "Delete detectionRule"
-description: "Delete a microsoft.graph.security.detectionRule object."
+description: "Delete a microsoft.graph.security.detectionRule object"
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "*security"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -17,11 +17,11 @@ Delete a [Custom Detection Rule](../resources/security-detectionrule.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type| Permissions (from least to most privileged) |
-|:---|:--------------------------------------------|
-|Delegated (work or school account)| CustomDetection.ReadWrite.All               |
-|Delegated (personal Microsoft account)| Not supported.                              |
-|Application| CustomDetection.ReadWrite.All               |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | CustomDetection.ReadWrite.All               |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | CustomDetection.ReadWrite.All               |
 
 ## HTTP request
 

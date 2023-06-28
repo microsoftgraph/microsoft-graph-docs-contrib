@@ -1,13 +1,13 @@
 ---
-title: "Delete detectionRule"
-description: "Create a new microsoft.graph.security.detectionRule object."
+title: "Create detectionRule"
+description: "Create a new microsoft.graph.security.detectionRule object"
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "*security"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Delete detectionRule
+# Create detectionRule
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -20,11 +20,11 @@ Using [Kusto query language (KQL)](/azure/data-explorer/kusto/query/), custom de
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type| Permissions (from least to most privileged) |
-|:---|:--------------------------------------------|
-|Delegated (work or school account)| CustomDetection.ReadWrite.All               |
-|Delegated (personal Microsoft account)| Not supported.                              |
-|Application| CustomDetection.ReadWrite.All               |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | CustomDetection.ReadWrite.All               |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | CustomDetection.ReadWrite.All               |
 
 ## HTTP request
 

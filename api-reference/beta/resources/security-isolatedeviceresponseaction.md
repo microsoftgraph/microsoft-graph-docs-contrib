@@ -21,8 +21,8 @@ Inherits from [microsoft.graph.security.responseAction](../resources/security-re
 ## Properties
 | Property      | Type                                                                                                                | Description                                                                                                                  |
 |:--------------|:--------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
-| identifier    | [microsoft.graph.security.deviceIdEntityIdentifier](../resources/enums-security.md#deviceIdEntityIdentifier-values) | Unique identifier for the response action. Default is `deviceId`. The possible values are: `deviceId`, `unknownFutureValue`. |
-| isolationType | [microsoft.graph.security.isolationType](../resources/enums-security.md#isolationType-values)                       | For the isolated device, the type of isolation applied. The possible values are: `full`, `selective`, `unknownFutureValue`.  |
+| identifier    | [microsoft.graph.security.deviceIdEntityIdentifier](../resources/enums-security.md#deviceidentityidentifier-values) | Unique identifier for the response action. Default is `deviceId`. The possible values are: `deviceId`, `unknownFutureValue`. |
+| isolationType | [microsoft.graph.security.isolationType](../resources/enums-security.md#isolationtype-values)                       | For the isolated device, the type of isolation applied. The possible values are: `full`, `selective`, `unknownFutureValue`.  |
 
 ## Relationships
 None.
