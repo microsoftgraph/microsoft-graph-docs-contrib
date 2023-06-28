@@ -573,10 +573,10 @@
 			  {
 				"Id": "b4937176-8221-4bc7-83a4-6e84c4ee02d1",
 				"ApiChange": "Resource",
-				"ChangedApiName": "exportFileMetadata",
+				"ChangedApiName": "ediscoveryExportFileMetadata",
 				"ChangeType": "Addition",
-				"Description": "Added the [exportFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/security-exportFileMetadata?view=graph-rest-1.0) resource type.",
-				"Target": "exportFileMetadata"
+				"Description": "Added the [ediscoveryExportFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryExportFileMetadata?view=graph-rest-1.0) resource type.",
+				"Target": "ediscoveryExportFileMetadata"
 			  },
 			  {
 				"Id": "b4937176-8221-4bc7-83a4-6e84c4ee02d1",
