@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 <!-- {
   "blockType": "request",
-  "name": "update_accesspackage"
+  "name": "get_accesspackagesubject"
 }
 -->
 ``` http
