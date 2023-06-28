@@ -1,5 +1,5 @@
 ---
-title: "exportFileMetadata resource type"
+title: "ediscoveryExportFileMetadata resource type"
 description: "Represents the file metadata for an export in eDiscovery."
 author: "vbhatt0211"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
-# exportFileMetadata resource type
+# ediscoveryExportFileMetadata resource type
 
 Namespace: microsoft.graph.security
 
@@ -27,14 +27,14 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.exportFileMetadata",
+  "@odata.type": "microsoft.graph.security.ediscoveryExportFileMetadata",
   "openType": false
 }
 -->
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.exportFileMetadata",
+  "@odata.type": "#microsoft.graph.security.ediscoveryExportFileMetadata",
   "downloadUrl": "String",
   "fileName": "String",
   "size": "Int64"
