@@ -64,7 +64,7 @@ The following is an example of the request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/reports/authenticationMethods/userRegistrationDetails/{userRegistrationDetailsId}
+GET https://graph.microsoft.com/v1.0/reports/authenticationMethods/userRegistrationDetails/86462606-fde0-4fc4-9e0c-a20eb73e54c6
 ```
 
 ### Response
