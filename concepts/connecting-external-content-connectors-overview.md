@@ -10,7 +10,7 @@ ms.prod: search
 # Microsoft Graph connectors overview
 
 >[!NOTE]
->Microsoft Graph connectors for Microsoft 365 Copilot are in early access preview. See [Copilot for Graph connectors](connecting-external-content-experiences#Copilot) for more details on how to build a Graph connector for Microsoft 365 Copilot. 
+>Microsoft Graph connectors for Microsoft 365 Copilot are in early access preview. See [Copilot for Graph connectors](connecting-external-content-experiences#Copilot) for more details on how to build a Graph connector that is integrated with Microsoft 365 Copilot. 
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) is a complete, intelligent solution that empowers users and organizations with innovative productivity experiences and rich insights to increase efficiency and drive business growth. Microsoft Graph is the data fabric that powers these intelligent experiences, and the [Microsoft Search API](graph/api/resources/indexing-api-overview) provides access to this data and intelligence.
 
@@ -23,7 +23,6 @@ Today, with Microsoft Graph connectors, the data you bring in from your organiza
 - [Context IQ in Outlook Web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) (GA)
 - [Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) (coming soon)
 - [Microsoft 365 App](https://office.com) (formerly known as [Office.com](https://office.com)) (coming soon)
-- [Viva Topics](https://learn.microsoft.com/en-us/viva/topics/topic-experiences-overview) (coming soon)
 
 ## Get started with custom connectors
 
