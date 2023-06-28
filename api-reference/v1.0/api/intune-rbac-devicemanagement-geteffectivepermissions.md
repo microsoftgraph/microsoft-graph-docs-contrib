@@ -57,7 +57,7 @@ If successful, this function returns a `200 OK` response code and a [rolePermiss
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "ignored" , "name" : "intune_rbac_devicemanagement_geteffectivepermissions_geteffectivepermissions_function" }-->
+<!-- { "blockType": "request" , "name" : "intune_rbac_devicemanagement_geteffectivepermissions_geteffectivepermissions_function" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/getEffectivePermissions(scope='parameterValue')
 ```
