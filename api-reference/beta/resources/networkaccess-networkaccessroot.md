@@ -3,7 +3,8 @@ title: "networkAccessRoot resource type"
 description: "Represents the top-level namespace for network access-related resources and functionalities within the network infrastructure. It serves as the entry point for accessing various network access-related APIs and operations."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-accessdoc_type: resourcePageType
+ms.prod: identity-and-access
+doc_type: resourcePageType
 ---
 
 # networkAccessRoot resource type
@@ -22,7 +23,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[List forwardingPolicies](../api/networkaccess-networkaccessroot-list-forwardingpolicies.md)|[microsoft.graph.networkaccess.forwardingPolicy](../resources/networkaccess-forwardingpolicy.md) collection|Get the forwardingPolicy resources from the forwardingPolicies navigation property.|
 |[List forwardingProfiles](../api/networkaccess-networkaccessroot-list-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Get the forwardingProfile resources from the forwardingProfiles navigation property.|
 |[List logs](../api/networkaccess-networkaccessroot-list-logs.md)|[microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) collection|Get the logs resources from the logs navigation property.|
-|[Get tenantStatus](../api/networkaccess-tenantstatus-get.md.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) collection|Get the tenantStatus resources from the tenantStatus navigation property.|
+|[Get tenantStatus](../api/networkaccess-tenantstatus-get.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) collection|Get the tenantStatus resources from the tenantStatus navigation property.|
 
 
 ## Properties

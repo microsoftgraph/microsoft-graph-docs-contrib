@@ -3,7 +3,8 @@ title: "forwardingPolicy: updatePolicyRules"
 description: "Update the forwarding rule within a forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-accessdoc_type: apiPageType
+ms.prod: identity-and-access
+doc_type: apiPageType
 ---
 
 # forwardingPolicy: updatePolicyRules
@@ -47,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|Id|[microsoft.graph.networkaccess.policyRuleDelta](../resources/networkaccess-policyrule.md)||
+|Id|[microsoft.graph.networkaccess.policyRuleDelta](../resources/networkaccess-policyrule.md)|Unique Identifier for the rule.|
 |action|String|Action for the traffic, possible values are "Forward" or "Bypass". Required.|
 
 
