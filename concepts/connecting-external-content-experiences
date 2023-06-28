@@ -13,18 +13,20 @@ Microsoft Graph connectors offer an intuitive way to bring content from external
 
 This article explains the experiences configurable with Graph connectors and the requirements to enable them.
 
-The prerequisitie to enable any of these experiences is to have a basic Graph connector built. See [Work with the Microsoft Graph connectors API](connecting-external-content-connectors-api-overview) to learn how to create a connection, register your schema, and ingest items with correct access control. 
+The prerequisitie to enable any of these experiences is to have a basic Graph connector built. See [Work with the Microsoft Graph connectors API](connecting-external-content-connectors-api-overview) to learn how to create a connection, register your schema, and ingest items with correct access control lists. 
 
 ## Microsoft Search 
-[Microsoft Search](microsoftsearch/connectors-overview) with Graph connectors allows your third-party data to be searchable for users in several Microsoft Search endpoints including Office.com, Bing at Work, and SharePoint. 
+[Microsoft Search](microsoftsearch/connectors-overview) with Graph connectors allows your third-party data to be searchable for users in the Microsoft Search endpoints which include Office.com, Bing at Work, and SharePoint. 
 
 To congifure your connector for Microsoft Search, you must:
-- add "search" as an experience in enabledContentExperiences in connectionSettings
-- schema labels, properties, search attributes 
-- enable vertical in admin center 
+- Apply [semantic labels](graph/connecting-external-content-manage-schema#semantic-labels) to your [schema](graph/api/resources/externalconnectors-schema). Semantic labels help with ranking, relevance, and default display templates in search results.
+- Apply [property attributes](graph/connecting-external-content-manage-schema#property-attributes) to your [schema](graph/api/resources/externalconnectors-schema). Property attributes determine the search functionalities of each property.
+- Optionally add [searchSettings](graph/api/resources/externalconnectors-searchsettings) when you [create your connection](graph/api/externalconnectors-external-post-connections) to register custom result types for your search results. 
+- Once the connection is published, enable a [custom vertical](microsoftsearch/manage-verticals) in the [Microsoft 365 admin center](admin.microsoft.com).
 
 ## Context IQ in Outlook Web
 [Context IQ in Outlook Web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) with Graph connectors allows users to find in-content suggestions from third-party data while composing emails in Outlook web. Editor using Context IQ will surface relevant people, files, and Graph connector content, that users can select and embed as an adaptive card within the email.
+Users can access this feature by inserting "/" in an Outlook web email and typing keywords. They are then given relevant suggestions based on the context typed, that can be directly inserted into the body of the email. 
 
 To configure your connector for Context IQ, you must:
 - add "search" as an experience in enabledContentExperiences in connectionSettings
@@ -50,15 +52,6 @@ The [Microsoft 365 App](https://office.com) with Graph connectors _______
 
 To configure your connector for the [Microsoft 365 App](office.com), you must:
 - Include `search` as an experience in `enabledContentExperiences` when you create your connection. 
-- assign the following labels to your schema 
-- send activities on item
-- register urltoitemresolver in activity settings 
-
-## Viva Topics (coming soon)
-[Viva Topics](https://learn.microsoft.com/en-us/viva/topics/topic-experiences-overview) with Graph connectors ___
-
-To configure your connector for Viva Topics, you must:
-- add "search" as an experience in enabledContentExperiences in connectionSettings
 - assign the following labels to your schema 
 - send activities on item
 - register urltoitemresolver in activity settings 
