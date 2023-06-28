@@ -65,28 +65,22 @@ PUT https://graph.microsoft.com/v1.0/me/activities/3F12345
 Content-type: application/json
 
 {
-  "appActivityId": "2345",
-  "activitySourceHost": "https://www.contoso.com",
-  "userTimezone": "Africa/Casablanca",
-  "appDisplayName": "Contoso Ltd",
-  "activationUrl": "https://www.contoso.com/article?id=12345",
-  "contentUrl": "https://www.contoso.com/article?id=12345",
-  "fallbackUrl": "https://www.contoso.com/article?id=12345",
-  "contentInfo": {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "author": "Jennifer Booth",
-    "name": "How to Tie a Reef Knot"
-  },
+  "activitySourceHost": "https://contoso.com",
+  "createdDateTime": "2017-06-09T20:54:43.969Z",
+  "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
+  "id": "14332800362997268276",
+  "appActivityId": "/article?12345",
+  "status": "updated",
+  "expirationDateTime": "2017-02-26T20:20:48.114Z",
   "visualElements": {
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
-      "alternateText": "Contoso, Ltd.",
+      "alternateText": "Contoso Ltd",
       "addImageQuery": false
     },
-    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
-    "displayText": "Contoso How-To: How to Tie a Reef Knot",
     "content": {
       "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
       "type": "AdaptiveCard",
