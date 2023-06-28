@@ -68,6 +68,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |onPremisesConnectionName|String|The Azure network connection that is applied during the provisioning of Cloud PCs.|
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of the operating system (OS) to provision on Cloud PCs. Possible values are: `windows10`, `windows11`, and `unknownFutureValue`.|
 |partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
+|powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The power state of a Cloud PC. The possible values are: `running`, `poweredOff` and `unknown`. This property only supports shift work Cloud PCs.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Default value is `dedicated`. |
@@ -107,6 +108,14 @@ The following table lists the members of an `[evolvable enumeration](/graph/best
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 |movingRegion|Indicates that the Cloud PC is being moved from one region to another.|
 
+
+### cloudPcPowerState values
+
+|Member|Description|
+|:---|:---|
+|running|The Cloud PC status is running.|
+|poweredOff|The Cloud PC status is power off.|
+|unknown|The Cloud PC status is unknown.|
 
 ### shiftWorkCloudPcAccessState values
 The following table lists the members of an [evolvable enumeration](#shiftworkcloudpcaccessstate-values). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `standbyMode`.
@@ -154,6 +163,7 @@ The following is a JSON representation of the resource.
   "managedDeviceId": "String",
   "managedDeviceName": "String",
   "onPremisesConnectionName": "String",
+  "powerState": "String",
   "osVersion": "String",
   "partnerAgentInstallResults": "String",
   "provisioningPolicyId": "String",
