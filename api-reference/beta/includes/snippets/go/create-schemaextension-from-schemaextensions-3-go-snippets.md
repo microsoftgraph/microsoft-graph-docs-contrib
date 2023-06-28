@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSchemaExtension()
@@ -22,7 +22,6 @@ description := "Graph Learn training courses extensions"
 requestBody.SetDescription(&description) 
 targetTypes := []string {
 	"Group",
-
 }
 requestBody.SetTargetTypes(targetTypes)
 owner := "50897f70-a455-4adf-87bc-4cf17091d5ac"
@@ -49,7 +48,6 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 	extensionSchemaProperty,
 	extensionSchemaProperty1,
 	extensionSchemaProperty2,
-
 }
 requestBody.SetProperties(properties)
 

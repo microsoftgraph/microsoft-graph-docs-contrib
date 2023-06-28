@@ -10,17 +10,17 @@ import (
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/organization"
+	  graphorganization "github.com/microsoftgraph/msgraph-sdk-go/organization"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Accept-Language", "0")
 
-configuration := &graphconfig.OrganizationItemBrandingRequestBuilderPatchRequestConfiguration{
+configuration := &graphorganization.OrganizationItemBrandingRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewOrganizationalBranding()

@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new ChatsRequestBuilderGetRequestConfiguration();
 $queryParameters = ChatsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["members"];
-$queryParameters->filter = "members/any";
+$queryParameters->filter = "members/any(o: o/displayname eq 'Peter Parker')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

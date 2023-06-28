@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Applications/Item"
+	  graphapplications "github.com/microsoftgraph/msgraph-beta-sdk-go/applications"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewApplication()
+requestBody := graphapplications.NewApplication()
 additionalData := map[string]interface{}{
 onPremisesPublishing := graphmodels.New()
 singleSignOnSettings := graphmodels.New()

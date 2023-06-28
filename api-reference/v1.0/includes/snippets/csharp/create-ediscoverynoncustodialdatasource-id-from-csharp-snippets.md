@@ -10,17 +10,12 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Models.Security.EdiscoveryNoncustodialDataSource
 {
-	DataSource = new Microsoft.Graph.Models.Security.DataSource
+	DataSource = new Microsoft.Graph.Models.Security.SiteSource
 	{
 		OdataType = "microsoft.graph.security.siteSource",
-		AdditionalData = new Dictionary<string, object>
+		Site = new Site
 		{
-			{
-				"site" , new 
-				{
-					WebUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret",
-				}
-			},
+			WebUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret",
 		},
 	},
 };

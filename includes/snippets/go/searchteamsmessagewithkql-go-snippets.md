@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Search/Query"
+	  graphsearch "github.com/microsoftgraph/msgraph-sdk-go/search"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewQueryPostRequestBody()
+requestBody := graphsearch.NewQueryPostRequestBody()
 
 
 searchRequest := graphmodels.NewSearchRequest()
 entityTypes := []graphmodels.EntityTypeable {
 	entityType := graphmodels.CHATMESSAGE_ENTITYTYPE 
-	searchRequest.SetEntityType(&entityType) 
-
+	searchRequest.SetEntityType(&entityType)
 }
 searchRequest.SetEntityTypes(entityTypes)
 query := graphmodels.NewSearchQuery()
@@ -38,7 +38,6 @@ searchRequest.SetEnableTopResults(&enableTopResults)
 
 requests := []graphmodels.SearchRequestable {
 	searchRequest,
-
 }
 requestBody.SetRequests(requests)
 

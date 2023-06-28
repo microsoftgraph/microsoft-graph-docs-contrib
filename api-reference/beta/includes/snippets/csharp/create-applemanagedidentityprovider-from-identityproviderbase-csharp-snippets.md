@@ -8,25 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new IdentityProviderBase
+var requestBody = new AppleManagedIdentityProvider
 {
 	OdataType = "microsoft.graph.appleManagedIdentityProvider",
 	DisplayName = "Sign in with Apple",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"developerId" , "UBF8T346G9"
-		},
-		{
-			"serviceId" , "com.microsoft.rts.b2c.test.client"
-		},
-		{
-			"keyId" , "99P6D879C4"
-		},
-		{
-			"certificateData" , "******"
-		},
-	},
+	DeveloperId = "UBF8T346G9",
+	ServiceId = "com.microsoft.rts.b2c.test.client",
+	KeyId = "99P6D879C4",
+	CertificateData = "******",
 };
 var result = await graphClient.Identity.IdentityProviders.PostAsync(requestBody);
 

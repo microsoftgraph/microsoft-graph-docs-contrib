@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
@@ -67,7 +67,6 @@ customExtensionHandler1.SetCustomExtension(customExtension)
 customExtensionHandlers := []graphmodels.CustomExtensionHandlerable {
 	customExtensionHandler,
 	customExtensionHandler1,
-
 }
 requestBody.SetCustomExtensionHandlers(customExtensionHandlers)
 additionalData := map[string]interface{}{

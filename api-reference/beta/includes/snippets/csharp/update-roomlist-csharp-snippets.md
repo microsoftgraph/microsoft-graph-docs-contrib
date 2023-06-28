@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Place
+var requestBody = new RoomList
 {
 	OdataType = "microsoft.graph.roomList",
 	DisplayName = "Building 1",
