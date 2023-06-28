@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List accessPackageResourceEnvironments
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve a list of [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) objects and their properties.
 
 ## Permissions
@@ -59,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0beta/identityGovernance/entitlementManagement/resourceEnvironments?$filter=originSystem eq 'SharePointOnline'
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/resourceEnvironments?$filter=originSystem eq 'SharePointOnline'
 ```
 
 ### Response
