@@ -115,3 +115,4 @@ The `template` prop allows you to specify which template to overwrite. In this c
 
 * [Get started with the Microsoft Graph Toolkit in React](./use-toolkit-with-react.md)
 * [Learn about authentication providers](../providers/providers.md)
+* [Disambiguation of Microsoft Graph Toolkit components](../customize-components/disambiguation.md) 
