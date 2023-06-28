@@ -31,7 +31,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---|
 |bgpConfiguration|[microsoft.graph.networkaccess.bgpConfiguration](../resources/networkaccess-bgpconfiguration.md)|The border gateway protocol specifies the IP address and ASN for directing traffic from a link to the edge.|
 |bandwidthCapacityInMbps|Int64|Determines the maximum allowed Mbps (megabits per second) bandwidth from a branch site. The possible values are:`250`,`500`,`750`,`1000`.|
-|deviceVendor|microsoft.graph.networkaccess.deviceVendor|Specifies the vendor of the link.The possible values are: `barracudaNetworks`, `checkPoint`, `ciscoMeraki`, `citrix`, `fortinet`, `hpeAruba`, `netFoundry`, `nuage`, `openSystems`, `paloAltoNetworks`, `riverbedTechnology`, `silverPeak`, `vmWareSdWan`, `versa`, `other`.|
+|deviceVendor|microsoft.graph.networkaccess.deviceVendor|Specifies the manufacturer of the deviceLink. The possible values are: `barracudaNetworks`, `checkPoint`, `ciscoMeraki`, `citrix`, `fortinet`, `hpeAruba`, `netFoundry`, `nuage`, `openSystems`, `paloAltoNetworks`, `riverbedTechnology`, `silverPeak`, `vmWareSdWan`, `versa`, `other`, `unknownFutureValue`.|
 |id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |ipAddress|String|Specifies the client IPv4 of the link	|
 |lastModifiedDateTime|DateTimeOffset|last modified time.|
