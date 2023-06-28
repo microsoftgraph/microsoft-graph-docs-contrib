@@ -1,0 +1,13 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+
+DeviceConfigurationAssignment deviceConfigurationAssignment = graphClient.deviceManagement().deviceConfigurations("{deviceConfigurationId}").assignments("{deviceConfigurationAssignmentId}")
+	.buildRequest()
+	.get();
+
+```
