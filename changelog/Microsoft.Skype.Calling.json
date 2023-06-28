@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "5bd55826-eb41-4116-820d-8629374e4ceb",
+          "ApiChange": "Property",
+          "ChangedApiName": "anonymizeIdentityForRoles",
+          "ChangeType": "Addition",
+          "Description": "Added the **anonymizeIdentityForRoles** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "5bd55826-eb41-4116-820d-8629374e4ceb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-27T02:06:59.705919Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "af2b778c-bcb4-4003-8412-f8b511443dc5",
           "ApiChange": "Property",
           "ChangedApiName": "allowRecording",

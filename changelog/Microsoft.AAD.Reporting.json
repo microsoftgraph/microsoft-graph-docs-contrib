@@ -2239,6 +2239,56 @@
       "CreatedDateTime": "2017-03-01T00:00:00",
       "WorkloadArea": "Reports",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3dede837-7cf9-4092-9cd0-fa299fa5fd1e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "outlierContainerType",
+          "ChangeType": "Addition",
+          "Description": "Added the **outlierContainerType** enumeration type.",
+          "Target": "outlierContainerType"
+        },
+        {
+          "Id": "3dede837-7cf9-4092-9cd0-fa299fa5fd1e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "outlierMemberType",
+          "ChangeType": "Addition",
+          "Description": "Added the **outlierMemberType** enumeration type.",
+          "Target": "outlierMemberType"
+        },
+        {
+          "Id": "3dede837-7cf9-4092-9cd0-fa299fa5fd1e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directoryObject",
+          "ChangeType": "Addition",
+          "Description": "Added the [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource",
+          "Target": "directoryObject"
+        },
+        {
+          "Id": "3dede837-7cf9-4092-9cd0-fa299fa5fd1e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "governanceInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [governanceInsight](https://learn.microsoft.com/en-us/graph/api/resources/governanceInsight?view=graph-rest-1.0) resource",
+          "Target": "governanceInsight"
+        },
+        {
+          "Id": "3dede837-7cf9-4092-9cd0-fa299fa5fd1e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "membershipOutlierInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [membershipOutlierInsight](https://learn.microsoft.com/en-us/graph/api/resources/membershipOutlierInsight?view=graph-rest-1.0) resource",
+          "Target": "membershipOutlierInsight"
+        }
+      ],
+      "Id": "3dede837-7cf9-4092-9cd0-fa299fa5fd1e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-06-27T06:15:25.4854828Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
     }
   ]
 }
