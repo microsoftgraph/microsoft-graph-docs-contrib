@@ -174,6 +174,14 @@ Namespace: microsoft.graph
 | renew              |
 | unknownFutureValue |
 
+### userSignInRecommendationScope values 
+
+| Member             |
+| :----------------- |
+| tenant             |
+| application        |
+| unknownFutureValue |
+
 ### unifiedRoleScheduleRequestActions values 
 
 | Member             |
@@ -2470,4 +2478,18 @@ Possible values for user account types (group membership), per Windows definitio
 |voiceOffice|
 |sms|
 |none|
+|unknownFutureValue|
+
+### outlierMemberType values 
+
+|Member|
+|:---|
+|user|
+|unknownFutureValue|
+
+### outlierContainerType values 
+
+|Member|
+|:---|
+|group|
 |unknownFutureValue|
