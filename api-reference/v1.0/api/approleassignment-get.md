@@ -234,7 +234,6 @@ GET https://graph.microsoft.com/v1.0/me/appRoleAssignments/Lo6gEKI-4EyAy9X91LBep
 
 ---
 
-
 #### Response
 The following is an example of the response. It shows the signed-in user has the default app role for a resource service principal named *Postman*.
 
