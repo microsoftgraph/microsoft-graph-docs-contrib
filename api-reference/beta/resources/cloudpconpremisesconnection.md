@@ -75,9 +75,9 @@ Represents a defined collection of Azure resource information that can be used t
 |:---|:---|
 |pending|Created and waiting for health checks.|
 |running|Health checks are running.|
-|passed|Health checks notify customer the on-premises connection is operating as intended. Customer can provision their Cloud PC without any issue.|
-|failed|Health checks notify customer the on-premises connection isn't properly configured or functioning. Provisioning would fail. Customer needs to identify the issue and resolve it using the guidance provided by on-premises connection for provisioning to be successful.|
-|warning|Health checks notify customer the on-premises connection isn't configured as per Microsoft's best practice guidance, such as endpoint connectivity. Customer is recommended to configure Cloud PC required endpoints before provisioning a Cloud PC. It will not affect the provisioning of our customers' Cloud PC but may affect the customer's experience.|
+|passed|Health checks notify customer the Azure network connection is operating as intended. Customer can provision their Cloud PC without any issue.|
+|failed|Health checks notify customer the Azure network connection isn't properly configured or functioning. Provisioning would fail. Customer needs to identify the issue and resolve it using the guidance provided by Azure network connection for provisioning to be successful.|
+|warning|Health checks notify customer the Azure network connection isn't configured as per Microsoft's best practice guidance, such as endpoint connectivity. Customer is recommended to configure Cloud PC required endpoints before provisioning a Cloud PC. It will not affect the provisioning of our customers' Cloud PC but may affect the customer's experience.|
 |informational|Health checks provide information to customer about current or associated prerequisites checks status on Cloud PC add-on features such as Single Sign-On. it will not affect the provisioning of our customers' Cloud PC but intend to optimize user experience.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
