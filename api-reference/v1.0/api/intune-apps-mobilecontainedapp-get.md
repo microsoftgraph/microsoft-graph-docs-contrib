@@ -56,8 +56,13 @@ Here is an example of the request.
 
 <!-- { "blockType": "ignored" , "name" : "intune_apps_mobilecontainedapp_get_get_mobilecontainedapp" }-->
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/containedApps/{mobileContainedAppId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/0122f94e-45c4-458a-a25a-c08135a036fc/microsoft.graph.windowsMobileMSI
+
 ```
+<!-- GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/containedApps/{mobileContainedAppId} -->
+
+
+
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
