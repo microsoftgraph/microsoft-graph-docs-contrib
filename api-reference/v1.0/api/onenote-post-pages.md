@@ -61,7 +61,7 @@ In the `../onenote/pages` path, you can use the `sectionName` query parameter to
 
 <!-- {
   "blockType": "request",
-  "name": "get_onenoteoperation"
+  "name": "onenote_post_pages_v1_e1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
