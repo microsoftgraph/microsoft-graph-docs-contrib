@@ -15,7 +15,9 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 
 ## Methods
 
-None.
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [List accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve a list of **accessPackageResourceRoleScope** objects for an access package. |
 
 ## Properties
 
