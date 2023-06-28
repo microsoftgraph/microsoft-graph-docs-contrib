@@ -9,10 +9,55 @@ ms.prod: search
 
 # Microsoft Graph connectors experiences
 
+Microsoft Graph connectors offer an intuitive way to bring content from external services into Microsoft Graph and the Microsoft Search index, which enables external data to be discoverable across a set of Microsoft 365 experiences.
 
+This article explains the experiences configurable with Graph connectors and the requirements to enable them.
 
-- [Microsoft Search](microsoftsearch/overview-microsoft-search) (GA)
-- [Context IQ in Outlook Web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) (GA)
-- [Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) (coming soon)
-- [Microsoft 365 App](https://office.com) (formerly known as [Office.com](https://office.com)) (coming soon)
-- [Viva Topics](https://learn.microsoft.com/en-us/viva/topics/topic-experiences-overview) (coming soon)
+The prerequisitie to enable any of these experiences is to have a basic Graph connector built. See [Work with the Microsoft Graph connectors API](connecting-external-content-connectors-api-overview) to learn how to create a connection, register your schema, and ingest items with correct access control. 
+
+## Microsoft Search 
+[Microsoft Search](microsoftsearch/connectors-overview) with Graph connectors allows your third-party data to be searchable for users in several Microsoft Search endpoints including Office.com, Bing at Work, and SharePoint. 
+
+To congifure your connector for Microsoft Search, you must:
+- add "search" as an experience in enabledContentExperiences in connectionSettings
+- schema labels, properties, search attributes 
+- enable vertical in admin center 
+
+## Context IQ in Outlook Web
+[Context IQ in Outlook Web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) with Graph connectors allows users to find in-content suggestions from third-party data while composing emails in Outlook web. Editor using Context IQ will surface relevant people, files, and Graph connector content, that users can select and embed as an adaptive card within the email.
+
+To configure your connector for Context IQ, you must:
+- add "search" as an experience in enabledContentExperiences in connectionSettings
+- assign the following labels to your schema 
+- send activities on item
+- register urltoitemresolver in activity settings 
+
+## Copilot (coming soon)
+[Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) with Graph connectors _______
+
+Plugins for Microsoft 365 Copilot are in early access preview. This documentation is subject to change. When you have access to the developer preview program, you'll receive instructions on evaluating your message extension to be used by Microsoft 365 Copilot.
+
+To configure your connector for Copilot, you must:
+- Include urlToItemResolver. By including urlToItemResolver in your connector’s activity settings, Copilot will become aware when users share URLs to your content with one another. When users share an item with one another, Copilot will boost its importance for including the item in its response.
+- Provide a rich human-readable name and detailed description when you create the connection. This helps Copilot understand what the data source is, so it includes the data source in its response if it’s relevant.
+- Apply semantic labels. Semantic labels help Copilot understand the semantic meaning of your schema. You must apply as many of them to your schema as applicable.
+- Add user activities. In addition to adding your content externalItems to the Microsoft Graph, your connector should also add user activities around you’re content. Supported activity types are shown here. Items that have more activities are boosted in their importance.
+
+## Microsoft 365 App (coming soon)
+The [Microsoft 365 App](https://office.com) with Graph connectors _______
+
+To configure your connector for the [Microsoft 365 App](office.com), you must:
+- add "search" as an experience in enabledContentExperiences in connectionSettings
+- assign the following labels to your schema 
+- send activities on item
+- register urltoitemresolver in activity settings 
+
+## Viva Topics (coming soon)
+[Viva Topics](https://learn.microsoft.com/en-us/viva/topics/topic-experiences-overview) with Graph connectors ___
+
+To configure your connector for Viva Topics, you must:
+- add "search" as an experience in enabledContentExperiences in connectionSettings
+- assign the following labels to your schema 
+- send activities on item
+- register urltoitemresolver in activity settings 
+
