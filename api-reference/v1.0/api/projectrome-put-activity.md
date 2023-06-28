@@ -61,14 +61,14 @@ The following is an example of the request.
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/v1.0/me/activities/3F12345
 Content-type: application/json
 
 {
-  "appActivityId": "/article?12345",
+  "appActivityId": "2345",
   "activitySourceHost": "https://www.contoso.com",
   "userTimezone": "Africa/Casablanca",
-  "appDisplayName": "Contoso, Ltd.",
+  "appDisplayName": "Contoso Ltd",
   "activationUrl": "https://www.contoso.com/article?id=12345",
   "contentUrl": "https://www.contoso.com/article?id=12345",
   "fallbackUrl": "https://www.contoso.com/article?id=12345",
@@ -82,7 +82,7 @@ Content-type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": false
+      "addImageQuery": "false"
     },
     "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
@@ -128,7 +128,7 @@ Content-Type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": "false"
+      "addImageQuery": false
     },
     "backgroundColor": "#ff0000",
     "content": {
@@ -170,11 +170,11 @@ The following is an example of the request.
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/v1.0/me/activities/12345
 Content-type: application/json
 
 {
-  "appActivityId": "/article?12345",
+  "appActivityId": "12345",
   "activitySourceHost": "https://www.contoso.com",
   "userTimezone": "Africa/Casablanca",
   "appDisplayName": "Contoso, Ltd.",
@@ -191,7 +191,7 @@ Content-type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": "false"
+      "addImageQuery": false
     },
     "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
