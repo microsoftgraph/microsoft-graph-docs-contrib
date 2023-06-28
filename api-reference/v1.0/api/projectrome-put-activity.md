@@ -57,7 +57,7 @@ The following is an example of the request.
 
 <!-- {
     "blockType": "request",
-    "name": "upsert_activity"
+    "name": "upsert_activity_v1_e1"
 } -->
 
 ```http
@@ -82,7 +82,7 @@ Content-type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": "false"
+      "addImageQuery": false
     },
     "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
@@ -166,7 +166,7 @@ The following is an example of the request.
 
 <!-- {
     "blockType": "request",
-    "name": "upsert_activity2"
+    "name": "upsert_activity2_v1_e2"
 } -->
 
 ```http
