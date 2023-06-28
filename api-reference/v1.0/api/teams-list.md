@@ -57,8 +57,6 @@ If successful, this method returns a `200 OK` response code and collection of [t
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_teams_in_org"
@@ -110,8 +108,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_teams_filter_top"
@@ -160,8 +156,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_teams_filter_select"
