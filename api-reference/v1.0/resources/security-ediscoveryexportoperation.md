@@ -38,7 +38,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
 
-### exportOptions valuesre
+### exportOptions values
 
 |Member|Description|
 |:----|-----------|
