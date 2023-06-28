@@ -12,13 +12,12 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewCrossTenantAccessPolicy()
 allowedCloudEndpoints := []string {
 	"microsoftonline.us",
-
 }
 requestBody.SetAllowedCloudEndpoints(allowedCloudEndpoints)
 

@@ -16,7 +16,7 @@ The following table lists the metered APIs and services.
 
 | API | Billing and license information | Protected API form |
 |:--------------------------|:--------------------------|:----------------------------------------|
-| SharePoint and OneDrive for Business [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) | No charge while API is in preview | [SharePoint preview enrollment form](https://aka.ms/previewspopremiumapi) |
+| SharePoint and OneDrive for Business [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) | $0.00185 (USD) per API call| [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup) |
 | SharePoint and OneDrive for Business [setRetentionLabel](/graph/api/driveitem-setretentionlabel) | No charge while API is in preview | Pending |
 | Teams [channel](/graph/api/channel-getallmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) | [Microsoft Teams request](https://aka.ms/teamsgraph/requestaccess) |
 | Teams [chat](/graph/api/chats-getallmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) | [Microsoft Teams request](https://aka.ms/teamsgraph/requestaccess) |

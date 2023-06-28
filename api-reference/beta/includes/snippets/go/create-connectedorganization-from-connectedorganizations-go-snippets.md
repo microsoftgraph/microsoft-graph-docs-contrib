@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewConnectedOrganization()
@@ -22,16 +22,14 @@ description := "Connected organization description"
 requestBody.SetDescription(&description) 
 
 
-identitySource := graphmodels.NewIdentitySource()
-additionalData := map[string]interface{}{
-	"domainName" : "example.com", 
-	"displayName" : "example.com", 
-}
-identitySource.SetAdditionalData(additionalData)
+identitySource := graphmodels.NewDomainIdentitySource()
+domainName := "example.com"
+identitySource.SetDomainName(&domainName) 
+displayName := "example.com"
+identitySource.SetDisplayName(&displayName) 
 
 identitySources := []graphmodels.IdentitySourceable {
 	identitySource,
-
 }
 requestBody.SetIdentitySources(identitySources)
 state := graphmodels.PROPOSED_CONNECTEDORGANIZATIONSTATE 
