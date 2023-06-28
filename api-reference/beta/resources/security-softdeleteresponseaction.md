@@ -1,9 +1,9 @@
 ---
 title: "softDeleteResponseAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes a 'Soft Delete' email response action"
+author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Describes a 'Soft Delete' email response action.
+Moves the email message to a deleted folder in the cloud. Can be done by admins. End users have to go to the Deleted folder within the Deleted items folder to do this.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|identifier|microsoft.graph.security.emailEntityIdentifier|**TODO: Add Description**.The possible values are: `networkMessageId`, `recipientEmailAddress`, `unknownFutureValue`.|
+| Property   | Type                                                                                                          | Description                                                                                                                                                                                   |
+|:-----------|:--------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| identifier | [microsoft.graph.security.emailEntityIdentifier](../resources/enums-security.md#emailEntityIdentifier-values) | Unique identifier for the response action. Default is `networkMessageId`,`recipientEmailAddress`. The possible values are: `networkMessageId`, `recipientEmailAddress`, `unknownFutureValue`. |
 
 ## Relationships
 None.

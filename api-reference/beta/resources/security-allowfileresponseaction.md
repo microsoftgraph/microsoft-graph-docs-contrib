@@ -1,9 +1,9 @@
 ---
 title: "allowFileResponseAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes a 'Allow File' response action."
+author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,16 +13,18 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Describes a 'Allow File' response action.
+Allows the file to run on devices controlled by Microsoft Defender for Endpoint.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|deviceGroupNames|String collection|**TODO: Add Description**|
-|identifier|microsoft.graph.security.fileEntityIdentifier|**TODO: Add Description**.The possible values are: `sha1`, `initiatingProcessSHA1`, `sha256`, `initiatingProcessSHA256`, `unknownFutureValue`.|
+
+| Property         | Type                                                                                                        | Description                                                                                                                                                                                                     |
+|------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| identifier       | [microsoft.graph.security.fileEntityIdentifier](../resources/enums-security.md#fileEntityIdentifier-values) | Unique identifier for the response action. The possible values are: `sha1`, `initiatingProcessSHA1`, `sha256`, `initiatingProcessSHA256`, `unknownFutureValue`.                                                 |
+| deviceGroupNames | String collection                                                                                           | Device groups to which the actions set in the custom detection rule are applied. Additional info: https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/machine-groups?view=o365-worldwide |
+
 
 ## Relationships
 None.

@@ -1,9 +1,9 @@
 ---
 title: "stopAndQuarantineFileResponseAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes a 'Stop and Quarantine File' response action"
+author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Describes a 'Stop and Quarantine File' response action.
+Deletes the file from its current location and places a copy in.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|identifier|microsoft.graph.security.stopAndQuarantineFileEntityIdentifier|**TODO: Add Description**.The possible values are: `deviceId`, `sha1`, `initiatingProcessSHA1`, `unknownFutureValue`.|
+| Property   | Type                                                                                                                                          | Description                                                                                                                            |
+|:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
+| identifier | [microsoft.graph.security.stopAndQuarantineFileEntityIdentifier](../resources/enums-security.md#stopAndQuarantineFileEntityIdentifier-values) | Unique identifier for the response action. The possible values are: `deviceId`, `sha1`, `initiatingProcessSHA1`, `unknownFutureValue`. |
 
 ## Relationships
 None.

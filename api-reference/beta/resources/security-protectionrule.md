@@ -1,9 +1,9 @@
 ---
 title: "protectionRule resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents an abstract rule, which contains basic properties like ID, name, etc."
+author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,30 +13,21 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an abstract rule, which contains basic properties like ID, name, etc.
 This is an abstract type.
-
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List protectionRules](../api/security-protectionrule-list.md)|[microsoft.graph.security.protectionRule](../resources/security-protectionrule.md) collection|Get a list of the [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md) objects and their properties.|
-|[Get protectionRule](../api/security-protectionrule-get.md)|[microsoft.graph.security.protectionRule](../resources/security-protectionrule.md)|Read the properties and relationships of a [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md) object.|
-|[Update protectionRule](../api/security-protectionrule-update.md)|[microsoft.graph.security.protectionRule](../resources/security-protectionrule.md)|Update the properties of a [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md) object.|
-|[Delete protectionRule](../api/security-protectionrule-delete.md)|None|Delete a [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md) object.|
-
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|createdBy|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|isEnabled|Boolean|**TODO: Add Description**|
-|lastModifiedBy|String|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+| Property             | Type           | Description                                            |
+|:---------------------|:---------------|:-------------------------------------------------------|
+| createdBy            | String         | Name of the user or application that created the rule. |
+| createdDateTime      | DateTimeOffset | Timestamp of rule creation.                            |
+| displayName          | String         | Name of the rule.                                      |
+| id                   | String         | Unique identifier to represent the rule.               |
+| isEnabled            | Boolean        | Indicates whether rule is turned on for the tenant.    |
+| lastModifiedBy       | String         | Name of user or application who last updated the rule. |
+| lastModifiedDateTime | DateTimeOffset | Timestamp of when the rule was last updated.           |
 
 ## Relationships
 None.

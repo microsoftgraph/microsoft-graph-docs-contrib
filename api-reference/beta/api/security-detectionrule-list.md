@@ -1,9 +1,9 @@
 ---
 title: "List detectionRules"
 description: "Get a list of the microsoft.graph.security.detectionRule objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,18 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) objects and their properties.
+Get a list of [Custom Detection Rules](../resources/security-detectionrule.md).
+With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured assets in their organization network.
+Using [Kusto query language (KQL)](/azure/data-explorer/kusto/query/), custom detection rules automatically trigger [alerts](../resources/security-alert.md) as well as response actions once there are events matching their KQL queries.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type| Permissions (from least to most privileged) |
+|:---|:--------------------------------------------|
+|Delegated (work or school account)| CustomDetection.Read.All                    |
+|Delegated (personal Microsoft account)| Not supported.                              |
+|Application| CustomDetection.Read.All                    |
 
 ## HTTP request
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.security.detectionRule not found
+GET /security/rules/detectionRules
 ```
 
 ## Optional query parameters
@@ -58,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.security.detectionRule not found
+GET https://graph.microsoft.com/beta/security/rules/detectionRules?$top=3
 ```
 
 
@@ -79,24 +81,162 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.detectionRule",
-      "id": "4790e8ec-9488-3dde-c3a6-be0c4ba14cf9",
-      "displayName": "String",
-      "isEnabled": "Boolean",
-      "createdBy": "String",
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "lastModifiedBy": "String",
+      "id": "7506",
+      "displayName": "ban file",
+      "isEnabled": true,
+      "createdBy": "NaderK@winatptestlic06.ccsctp.net",
+      "createdDateTime": "2021-02-28T16:28:15.3863467Z",
+      "lastModifiedDateTime": "2023-05-24T09:26:11.8630516Z",
+      "lastModifiedBy": "GlobalAdmin@unifiedrbactest3.ccsctp.net",
       "queryCondition": {
-        "@odata.type": "microsoft.graph.security.queryCondition"
+        "queryText": "DeviceFileEvents\r\n| where Timestamp > ago(1h)\r\n| where FileName == \"ifz30zlx.dll\"",
+        "lastModifiedDateTime": null
       },
       "schedule": {
-        "@odata.type": "microsoft.graph.security.ruleSchedule"
+        "period": "24H",
+        "nextRunDateTime": "2023-06-26T08:52:06.1766667Z"
       },
       "lastRunDetails": {
-        "@odata.type": "microsoft.graph.security.runDetails"
+        "lastRunDateTime": "2023-06-25T08:52:06.1766667Z",
+        "status": null,
+        "failureReason": null,
+        "errorCode": null
       },
       "detectionAction": {
-        "@odata.type": "microsoft.graph.security.detectionAction"
+        "alertTemplate": {
+          "title": "unwanted dll",
+          "description": "test",
+          "severity": "low",
+          "category": "Malware",
+          "recommendedActions": null,
+          "mitreTechniques": [],
+          "impactedAssets": []
+        },
+        "organizationalScope": null,
+        "responseActions": [
+          {
+            "@odata.type": "#microsoft.graph.security.restrictAppExecutionResponseAction",
+            "identifier": "deviceId"
+          },
+          {
+            "@odata.type": "#microsoft.graph.security.initiateInvestigationResponseAction",
+            "identifier": "deviceId"
+          },
+          {
+            "@odata.type": "#microsoft.graph.security.collectInvestigationPackageResponseAction",
+            "identifier": "deviceId"
+          },
+          {
+            "@odata.type": "#microsoft.graph.security.runAntivirusScanResponseAction",
+            "identifier": "deviceId"
+          },
+          {
+            "@odata.type": "#microsoft.graph.security.isolateDeviceResponseAction",
+            "isolationType": "full",
+            "identifier": "deviceId"
+          },
+          {
+            "@odata.type": "#microsoft.graph.security.blockFileResponseAction",
+            "identifier": "sha1",
+            "deviceGroupNames": []
+          }
+        ]
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.security.detectionRule",
+      "id": "8575",
+      "displayName": "Continuous_EmailAttachmentInfo_Mod300",
+      "isEnabled": true,
+      "createdBy": "rony@winatptestlic06.ccsctp.net",
+      "createdDateTime": "2021-11-03T21:32:01.6144651Z",
+      "lastModifiedDateTime": "2022-11-03T19:27:14.4187141Z",
+      "lastModifiedBy": "InESecAdmin@winatptestlic06.ccsctp.net",
+      "queryCondition": {
+        "queryText": "EmailAttachmentInfo\r\n| extend second = datetime_diff('second',now(),Timestamp)\r\n| where second % 300 == 0 ",
+        "lastModifiedDateTime": "2022-11-03T19:27:14.4331537Z"
+      },
+      "schedule": {
+        "period": "0",
+        "nextRunDateTime": "2021-11-03T21:32:01.7863185Z"
+      },
+      "lastRunDetails": {
+        "lastRunDateTime": "2021-11-03T21:32:01.7863185Z",
+        "status": null,
+        "failureReason": null,
+        "errorCode": null
+      },
+      "detectionAction": {
+        "alertTemplate": {
+          "title": "EmailAttachmentInfo",
+          "description": "EmailAttachmentInfo",
+          "severity": "low",
+          "category": "Exfiltration",
+          "recommendedActions": "EmailAttachmentInfo",
+          "mitreTechniques": [],
+          "impactedAssets": [
+            {
+              "@odata.type": "#microsoft.graph.security.impactedMailboxAsset",
+              "identifier": "recipientEmailAddress"
+            },
+            {
+              "@odata.type": "#microsoft.graph.security.impactedUserAsset",
+              "identifier": "recipientObjectId"
+            }
+          ]
+        },
+        "organizationalScope": null,
+        "responseActions": [
+          {
+            "@odata.type": "#microsoft.graph.security.moveToDeletedItemsResponseAction",
+            "identifier": "networkMessageId, recipientEmailAddress"
+          }
+        ]
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.security.detectionRule",
+      "id": "9794",
+      "displayName": "UPDATED DET: Office/LoLBin Network Connection to Low-Reputation TLD",
+      "isEnabled": true,
+      "createdBy": "NaderK@winatptestlic06.ccsctp.net",
+      "createdDateTime": "2022-02-02T10:26:01.7708581Z",
+      "lastModifiedDateTime": "2022-02-02T10:26:01.7708581Z",
+      "lastModifiedBy": "NaderK@winatptestlic06.ccsctp.net",
+      "queryCondition": {
+        "queryText": "//https://www.spamhaus.org/statistics/tlds/      http://www.surbl.org/tld       https://www.iana.org/domains/root/db      https://unit42.paloaltonetworks.com/top-level-domains-cybercrime/\r\nDeviceNetworkEvents\r\n| where isnotempty(RemoteUrl) and RemoteIPType == \"Public\"\r\n| where InitiatingProcessFileName in~ (\"winword.exe\", \"excel.exe\", \"powerpnt.exe\", \"rundll32.exe\", \"regsvr32.exe\", \"certutil.exe\", \"bitsadmin.exe\", \"wscript.exe\", \"cscript.exe\", \"powershell.exe\", \"pwsh.exe\", \"powershell_ise.exe\")\r\n| extend TopLevelDomain=tolower(extract(@\"([A-Za-z0-9-]{1,63}\\.)+([A-Za-z]{2,10})\", 2, RemoteUrl))\r\n| where TopLevelDomain in (\"xyz\", \"top\", \"live\", \"loan\", \"club\", \"surf\", \"work\", \"biz\", \"ryukyu\", \"press\", \"ltd\", \"bid\", \"vip\", \"online\", \"download\" \"buzz\", \"cam\", \"ru\", \"cn\", \"ci\", \"ga\", \"gq\", \"tk\", \"tw\", \"ml\", \"cf\", \"cfd\", \"icu\", \"cm\")\r\n| extend TimeDiff=datetime_diff(\"Second\", Timestamp, InitiatingProcessCreationTime)\r\n| where TimeDiff < 30\r\n| project-reorder Timestamp, DeviceName, RemoteUrl, TopLevelDomain, TimeDiff, InitiatingProcessCommandLine, *\r\n//| summarize count() by InitiatingProcessFolderPath, TopLevelDomain, RemoteUrl",
+        "lastModifiedDateTime": null
+      },
+      "schedule": {
+        "period": "1H",
+        "nextRunDateTime": "2023-06-25T10:17:06.4366667Z"
+      },
+      "lastRunDetails": {
+        "lastRunDateTime": "2023-06-25T09:17:06.4366667Z",
+        "status": null,
+        "failureReason": null,
+        "errorCode": null
+      },
+      "detectionAction": {
+        "alertTemplate": {
+          "title": "updated Office/LoLBin Network Connection to Low-Reputation TLD",
+          "description": "This is a custom detection created by the Centene Detection Engineering team.\n\nAn Office application or Living-Off-The-Land Binary made an immediate remote connection to a domain with a low-reputation top level domain after execution. This activity is suspicious as threat actors typically use low-reputation TLDs for malicious purposes, such as hosting payloads for potential targets. These TLDs are often abused because of their low cost and lack of oversite. The TLDs included in the list cover destinations that have either a high count or a high percentage of low-reputation sites. ",
+          "severity": "low",
+          "category": "CommandAndControl",
+          "recommendedActions": "Check the reputation of the RemoteUrl through OSINT tools such as VirusTotal and Hybrid Analysis.\n\nReview the document and device timeline for additional context and IOCs. \n\nCheck for related alerts on the associated endpoint. ",
+          "mitreTechniques": ["T1071.001"],
+          "impactedAssets": [
+            {
+              "@odata.type": "#microsoft.graph.security.impactedDeviceAsset",
+              "identifier": "deviceId"
+            }
+          ]
+        },
+        "organizationalScope": {
+          "scopeType": "deviceGroup",
+          "scopeNames": ["UnassignedGroup"]
+        },
+        "responseActions": []
       }
     }
   ]

@@ -1,9 +1,9 @@
 ---
 title: "ruleSchedule resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes the triggering of the custom detection rule"
+author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Describes the triggering of a [Custom Detection Rule](../resources/security-detectionrule.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|nextRunDateTime|DateTimeOffset|**TODO: Add Description**|
-|period|String|**TODO: Add Description**|
+| Property        | Type           | Description                                                                                                                                       |
+|:----------------|:---------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
+| nextRunDateTime | DateTimeOffset | Timestamp of the custom detection rule's next scheduled run.                                                                                      |
+| period          | String         | How often the detection rule is set to run. The allowed values are: "0", "1H", "3H", "12H", or "24H". "0" signifies the rule is run continuously. |
 
 ## Relationships
 None.

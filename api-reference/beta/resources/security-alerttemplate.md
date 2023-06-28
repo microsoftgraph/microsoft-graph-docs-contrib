@@ -1,9 +1,9 @@
 ---
 title: "alertTemplate resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes the alert that will be generated following a detection"
+author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,18 +13,20 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Describes the alert that will be generated following a detection by a [Custom Detection Rule](../resources/security-detectionrule.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|category|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|impactedAssets|[microsoft.graph.security.impactedAsset](../resources/security-impactedasset.md) collection|**TODO: Add Description**|
-|mitreTechniques|String collection|**TODO: Add Description**|
-|recommendedActions|String|**TODO: Add Description**|
-|severity|microsoft.graph.security.alertSeverity|**TODO: Add Description**.The possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
-|title|String|**TODO: Add Description**|
+
+| Property           | Type                                                                                        | Description                                                                                             |
+|--------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| title              | String                                                                                      | Name of the alert triggered by the custom detection rule.                                               |
+| description        | String                                                                                      | Description of the alert triggered by the custom detection rule.                                        |
+| severity           | [microsoft.graph.alertSeverity]((#alertseverity-values))                                    | Severity assigned to the alert triggered by the custom detection rule.                                  |
+| category           | String                                                                                      | Category assigned to the alert triggered by the custom detection rule.                                  |
+| mitreTechniques    | String collection                                                                           | MITRE technique assigned to the alert triggered by the custom detection rule.                           |
+| recommendedActions | String                                                                                      | Recommended actions to mitigate the threat related to the alert triggered by the custom detection rule. |
+| impactedAssets     | [microsoft.graph.security.impactedAsset](../resources/security-impactedasset.md) collection | Which asset or assets were impacted based on the alert triggered by the custom detection rule.          |
+
 
 ## Relationships
 None.

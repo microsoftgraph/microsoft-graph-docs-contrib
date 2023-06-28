@@ -1,9 +1,9 @@
 ---
 title: "organizationalScope resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "The scope to specify which devices are covered by a custom detection rule's detection action"
+author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The scope to specify which devices are covered by a [custom detection rule's](../resources/security-detectionrule.md) [detection action](../resources/security-detectionaction.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|scopeNames|String collection|**TODO: Add Description**|
-|scopeType|microsoft.graph.security.scopeType|**TODO: Add Description**.The possible values are: `deviceGroup`, `unknownFutureValue`.|
+| Property   | Type                                                                                  | Description                                                                                         |
+|:-----------|:--------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
+| scopeNames | String collection                                                                     | List of groups to which the custom detection rule applies.                                          |
+| scopeType  | [microsoft.graph.security.scopeType](../resources/enums-security.md#scopeType-values) | The type of the organizational scope. The possible values are: `deviceGroup`, `unknownFutureValue`. |
 
 ## Relationships
 None.

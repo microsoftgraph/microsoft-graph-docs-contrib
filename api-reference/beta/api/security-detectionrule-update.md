@@ -1,9 +1,9 @@
 ---
 title: "Update detectionRule"
 description: "Update the properties of a microsoft.graph.security.detectionRule object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object.
+Update the properties of a [Custom Detection Rule](../resources/security-detectionrule.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | CustomDetection.ReadWrite.All               |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | CustomDetection.ReadWrite.All               |
 
 ## HTTP request
 
@@ -30,34 +30,34 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /detectionRule
+PATCH /security/rules/detectionRules/{ruleId}
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+Provide the properties of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) which are to be updated, and those properties only.
+The properties which are updateable are specified in the following table:
 
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md). Required.|
-|isEnabled|Boolean|**TODO: Add Description** Inherited from [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md). Required.|
-|createdBy|String|**TODO: Add Description** Inherited from [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md). Required.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md). Required.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md). Required.|
-|lastModifiedBy|String|**TODO: Add Description** Inherited from [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md). Required.|
-|queryCondition|[microsoft.graph.security.queryCondition](../resources/security-querycondition.md)|**TODO: Add Description** Optional.|
-|schedule|[microsoft.graph.security.ruleSchedule](../resources/security-ruleschedule.md)|**TODO: Add Description** Optional.|
-|lastRunDetails|[microsoft.graph.security.runDetails](../resources/security-rundetails.md)|**TODO: Add Description** Optional.|
-|detectionAction|[microsoft.graph.security.detectionAction](../resources/security-detectionaction.md)|**TODO: Add Description** Optional.|
-
-
+| Property                                         | Type                                                                                         | Description                                                      |
+|:-------------------------------------------------|:---------------------------------------------------------------------------------------------|:-----------------------------------------------------------------|
+| displayName                                      | String                                                                                       | Optional.                                                        |
+| isEnabled                                        | Boolean                                                                                      | Optional.                                                        |
+| detectionAction/alertTemplate/title              | String                                                                                       | Optional.                                                        |
+| detectionAction/alertTemplate/category           | String                                                                                       | Optional.                                                        |
+| detectionAction/alertTemplate/description        | String                                                                                       | Optional.                                                        |
+| detectionAction/alertTemplate/recommendedActions | String                                                                                       | Optional. Provide 'null' to delete the existing response actions |
+| detectionAction/alertTemplate/severity           | [microsoft.graph.alertSeverity]((#alertseverity-values))                                     | Optional.                                                        |
+| detectionAction/alertTemplate/impactedAssets     | [microsoft.graph.security.impactedAsset](../resources/security-impactedasset.md)             | Optional. Provide 'null' to delete the existing inpacted assets. |
+| detectionAction/responseActions                  | [microsoft.graph.security.responseAction](../resources/security-responseaction.md)           | Optional.                                                        |
+| detectionAction/organizationalScope              | [microsoft.graph.security.organizationalscope](../resources/security-organizationalscope.md) | Optional.                                                        |
+| queryCondition/queryText                         | String                                                                                       | Optional.                                                        |
+| schedule/period                                  | String                                                                                       | Optional.                                                        |
 
 ## Response
 
@@ -73,25 +73,16 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/detectionRule
+PATCH https://graph.microsoft.com/beta/security/rules/detectionRules/35079
 Content-Type: application/json
-
 {
-  "@odata.type": "#microsoft.graph.security.detectionRule",
-  "displayName": "String",
-  "isEnabled": "Boolean",
-  "createdBy": "String",
-  "queryCondition": {
-    "@odata.type": "microsoft.graph.security.queryCondition"
-  },
   "schedule": {
-    "@odata.type": "microsoft.graph.security.ruleSchedule"
-  },
-  "lastRunDetails": {
-    "@odata.type": "microsoft.graph.security.runDetails"
+    "period": "24H"
   },
   "detectionAction": {
-    "@odata.type": "microsoft.graph.security.detectionAction"
+    "alertTemplate": {
+      "title": "Different alert title"
+    }
   }
 }
 ```
@@ -111,24 +102,50 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.detectionRule",
-  "id": "4790e8ec-9488-3dde-c3a6-be0c4ba14cf9",
-  "displayName": "String",
-  "isEnabled": "Boolean",
-  "createdBy": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": "String",
+  "id": "35079",
+  "displayName": "Some rule name",
+  "isEnabled": true,
+  "createdBy": "MichaelMekler@winatptestlic06.ccsctp.net",
+  "createdDateTime": "2023-06-25T09:37:28.6149005Z",
+  "lastModifiedDateTime": "2023-06-25T09:38:09.5960938Z",
+  "lastModifiedBy": "MichaelMekler@winatptestlic06.ccsctp.net",
   "queryCondition": {
-    "@odata.type": "microsoft.graph.security.queryCondition"
+    "queryText": "DeviceProcessEvents | take 1",
+    "lastModifiedDateTime": null
   },
   "schedule": {
-    "@odata.type": "microsoft.graph.security.ruleSchedule"
+    "period": "24H",
+    "nextRunDateTime": "2023-06-25T09:37:28.6149005Z"
   },
   "lastRunDetails": {
-    "@odata.type": "microsoft.graph.security.runDetails"
+    "lastRunDateTime": null,
+    "status": null,
+    "failureReason": null,
+    "errorCode": null
   },
   "detectionAction": {
-    "@odata.type": "microsoft.graph.security.detectionAction"
+    "alertTemplate": {
+      "title": "Different alert title",
+      "description": "Some alert description",
+      "severity": "medium",
+      "category": "Execution",
+      "recommendedActions": null,
+      "mitreTechniques": [],
+      "impactedAssets": [
+        {
+          "@odata.type": "#microsoft.graph.security.impactedDeviceAsset",
+          "identifier": "deviceId"
+        }
+      ]
+    },
+    "organizationalScope": null,
+    "responseActions": [
+      {
+        "@odata.type": "#microsoft.graph.security.isolateDeviceResponseAction",
+        "isolationType": "full",
+        "identifier": "deviceId"
+      }
+    ]
   }
 }
 ```

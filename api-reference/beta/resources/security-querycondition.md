@@ -1,9 +1,9 @@
 ---
 title: "queryCondition resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes the advanced hunting query behind the custom detection rule"
+author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Describes the advanced hunting query behind a [Custom Detection Rule](../resources/security-detectionrule.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|queryText|String|**TODO: Add Description**|
+| Property             | Type           | Description                                                                |
+|:---------------------|:---------------|:---------------------------------------------------------------------------|
+| lastModifiedDateTime | DateTimeOffset | Timestamp of when the query in the custom detection rule was last updated. |
+| queryText            | String         | Contents of the query.                                                     |
 
 ## Relationships
 None.

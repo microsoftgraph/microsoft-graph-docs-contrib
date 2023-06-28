@@ -1,9 +1,9 @@
 ---
 title: "detectionAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes the actions that will be taken after a detection is made by the custom detection rule"
+author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Describes the actions that will be taken after a detection is made by a [Custom Detection Rule](../resources/security-detectionrule.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|alertTemplate|[microsoft.graph.security.alertTemplate](../resources/security-alerttemplate.md)|**TODO: Add Description**|
-|organizationalScope|[microsoft.graph.security.organizationalScope](../resources/security-organizationalscope.md)|**TODO: Add Description**|
-|responseActions|[microsoft.graph.security.responseAction](../resources/security-responseaction.md) collection|**TODO: Add Description**|
+| Property            | Type                                                                                          | Description                                                           |
+|:--------------------|:----------------------------------------------------------------------------------------------|:----------------------------------------------------------------------|
+| alertTemplate       | [microsoft.graph.security.alertTemplate](../resources/security-alerttemplate.md)              | Template for the generates alert.                                     |
+| organizationalScope | [microsoft.graph.security.organizationalScope](../resources/security-organizationalscope.md)  | Groups to which the custom detection rule applies.                    |
+| responseActions     | [microsoft.graph.security.responseAction](../resources/security-responseaction.md) collection | Actions taken on impacted assets as set in the custom detection rule. |
 
 ## Relationships
 None.

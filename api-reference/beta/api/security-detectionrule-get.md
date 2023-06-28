@@ -1,9 +1,9 @@
 ---
 title: "Get detectionRule"
 description: "Read the properties and relationships of a microsoft.graph.security.detectionRule object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,18 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object.
+Gets a [Custom Detection Rule](../resources/security-detectionrule.md).
+With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured assets in their organization network. 
+Using [Kusto query language (KQL)](/azure/data-explorer/kusto/query/), custom detection rules automatically trigger [alerts](../resources/security-alert.md) as well as response actions once there are events matching their KQL queries.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type| Permissions (from least to most privileged) |
+|:---|:--------------------------------------------|
+|Delegated (work or school account)| CustomDetection.Read.All                    |
+|Delegated (personal Microsoft account)| Not supported.                              |
+|Application| CustomDetection.Read.All                    |
 
 ## HTTP request
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /detectionRule
+GET /security/rules/detectionRules/{ruleId}
 ```
 
 ## Optional query parameters
@@ -58,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/detectionRule
+GET https://graph.microsoft.com/beta/security/rules/detectionRules/7506
 ```
 
 
@@ -76,27 +78,67 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.detectionRule",
-    "id": "4790e8ec-9488-3dde-c3a6-be0c4ba14cf9",
-    "displayName": "String",
-    "isEnabled": "Boolean",
-    "createdBy": "String",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": "String",
-    "queryCondition": {
-      "@odata.type": "microsoft.graph.security.queryCondition"
+  "@odata.type": "#microsoft.graph.security.detectionRule",
+  "id": "7506",
+  "displayName": "ban file",
+  "isEnabled": true,
+  "createdBy": "NaderK@winatptestlic06.ccsctp.net",
+  "createdDateTime": "2021-02-28T16:28:15.3863467Z",
+  "lastModifiedDateTime": "2023-05-24T09:26:11.8630516Z",
+  "lastModifiedBy": "GlobalAdmin@unifiedrbactest3.ccsctp.net",
+  "queryCondition": {
+    "queryText": "DeviceFileEvents\r\n| where Timestamp > ago(1h)\r\n| where FileName == \"ifz30zlx.dll\"",
+    "lastModifiedDateTime": null
+  },
+  "schedule": {
+    "period": "24H",
+    "nextRunDateTime": "2023-06-26T08:52:06.1766667Z"
+  },
+  "lastRunDetails": {
+    "lastRunDateTime": "2023-06-25T08:52:06.1766667Z",
+    "status": null,
+    "failureReason": null,
+    "errorCode": null
+  },
+  "detectionAction": {
+    "alertTemplate": {
+      "title": "unwanted dll",
+      "description": "test",
+      "severity": "low",
+      "category": "Malware",
+      "recommendedActions": null,
+      "mitreTechniques": [],
+      "impactedAssets": []
     },
-    "schedule": {
-      "@odata.type": "microsoft.graph.security.ruleSchedule"
-    },
-    "lastRunDetails": {
-      "@odata.type": "microsoft.graph.security.runDetails"
-    },
-    "detectionAction": {
-      "@odata.type": "microsoft.graph.security.detectionAction"
-    }
+    "organizationalScope": null,
+    "responseActions": [
+      {
+        "@odata.type": "#microsoft.graph.security.restrictAppExecutionResponseAction",
+        "identifier": "deviceId"
+      },
+      {
+        "@odata.type": "#microsoft.graph.security.initiateInvestigationResponseAction",
+        "identifier": "deviceId"
+      },
+      {
+        "@odata.type": "#microsoft.graph.security.collectInvestigationPackageResponseAction",
+        "identifier": "deviceId"
+      },
+      {
+        "@odata.type": "#microsoft.graph.security.runAntivirusScanResponseAction",
+        "identifier": "deviceId"
+      },
+      {
+        "@odata.type": "#microsoft.graph.security.isolateDeviceResponseAction",
+        "isolationType": "full",
+        "identifier": "deviceId"
+      },
+      {
+        "@odata.type": "#microsoft.graph.security.blockFileResponseAction",
+        "identifier": "sha1",
+        "deviceGroupNames": []
+      }
+    ]
   }
 }
 ```
