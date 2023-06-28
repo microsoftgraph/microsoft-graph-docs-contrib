@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryReviewSetQuery resource type"
-description: "Represents a review set query, which is used to query and cull data stored in an eDiscovery reviewSet."
+description: "Represents a review set query, which is used to query and cull data stored in a Microsoft Purview eDiscovery reviewSet."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 
 
-Represents a review set query, which is used to query and cull data stored in an eDiscovery [reviewSet](security-ediscoveryreviewset.md).
+Represents a review set query, which is used to query and cull data stored in a Microsoft Purview eDiscovery [reviewSet](security-ediscoveryreviewset.md).
 
 ## Methods
 |Method|Return type|Description|
