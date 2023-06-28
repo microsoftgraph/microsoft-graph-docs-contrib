@@ -581,9 +581,9 @@
 			  {
 				"Id": "b4937176-8221-4bc7-83a4-6e84c4ee02d1",
 				"ApiChange": "Resource",
-				"ChangedApiName": "ediscoveryExportOperation",
+				"ChangedApiName": "ediscoveryExportFileMetadata",
 				"ChangeType": "Addition",
-				"Description": "Added the [ediscoveryExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryExportOperation?view=graph-rest-1.0) resource",
+				"Description": "Added the [ediscoveryExportFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryexportfilemetadata?view=graph-rest-1.0) resource",
 				"Target": "ediscoveryExportOperation"
 			  },
 			  {
