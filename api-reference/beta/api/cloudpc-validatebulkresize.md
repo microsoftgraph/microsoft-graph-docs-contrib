@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: validateBulkResize"
-description: "Validate that a set of Cloud PC devices meet the requirements to be bulk resized."
+description: "Validate if the selected devices meet the requirements to perform bulk resizing."
 author: "SleepIsImportant"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
