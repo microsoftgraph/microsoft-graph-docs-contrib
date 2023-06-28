@@ -60,7 +60,7 @@ Here is an example of the request.
 
 <!-- { "blockType": "request" , "name" : "intune_apps_mobileappcontentfile_commit_commit_action" }-->
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}/commit
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/5592d133-0c0e-4600-b884-17ca224c8a2e/contentVersions/e701c17c-57fa-4dd8-9280-0f71daaf440a/files/4cdcdd4b-58bb-46ce-9380-4de590a5eb42/commit
 
 Content-type: application/json
 Content-length: 399

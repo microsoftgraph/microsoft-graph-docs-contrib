@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and [mobileAppConten
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "ignored" , "name" : "intune_apps_mobileappcontent_get_get_mobileappcontent" }-->
+<!-- { "blockType": "request" , "name" : "intune_apps_mobileappcontent_get_get_mobileappcontent" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}
 ```
