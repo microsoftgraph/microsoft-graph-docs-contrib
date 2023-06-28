@@ -59,7 +59,7 @@ Here is an example of the request.
 
 <!-- { "blockType": "request" , "name" : "intune_rbac_devicemanagement_geteffectivepermissions_geteffectivepermissions_function" }-->
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/getEffectivePermissions(scope='parameterValue')
+GET https://graph.microsoft.com/v1.0/deviceManagement/getEffectivePermissions
 ```
 
 ### Response
