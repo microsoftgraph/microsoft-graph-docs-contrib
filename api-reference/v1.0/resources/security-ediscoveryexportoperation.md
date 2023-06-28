@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryExportOperation resource type"
-description: "Represents the process of an eDiscovery export."
+description: "Represents the process of a Microsoft Purview eDiscovery export."
 author: "vbhatt0211"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents the process of an eDiscovery export.
+Represents the process of a Microsoft Purview eDiscovery export.
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
