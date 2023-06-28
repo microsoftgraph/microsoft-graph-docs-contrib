@@ -32,7 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To validate if a set of [cloudPC](../resources/cloudpc.md) can be bulk-resized in the organization using delegated permissions:
 ``` http
 POST /deviceManagement/virtualEndpoint/cloudPCs/validateBulkResize
 ```
