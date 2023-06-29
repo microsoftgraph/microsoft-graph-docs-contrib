@@ -104,6 +104,10 @@ GET https://graph.microsoft.com/v1.0/education/classes
 [!INCLUDE [sample-code](../includes/snippets/php/list-education-classes-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-education-classes-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

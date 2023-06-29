@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies
 [!INCLUDE [sample-code](../includes/snippets/php/list-mobilemanagementpolicies-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-mobilemanagementpolicies-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

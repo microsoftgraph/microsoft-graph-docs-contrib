@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->accessReviewsById('accessReview-id')->reviewersById('accessReviewReviewer-id')->delete();
+$graphServiceClient->accessReviews()->byAccessReviewId('accessReview-id')->reviewers()->byReviewerId('accessReviewReviewer-id')->delete();
 
 
 ```

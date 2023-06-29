@@ -12,22 +12,18 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new EducationAssignmentResource();
 $requestBody->setDistributeForStudentWork(false);
 
-$resource = new EducationResource();
+$resource = new EducationExcelResource();
 $resource->set@odatatype('microsoft.graph.educationExcelResource');
 
 $resource->setDisplayName('Graph Doc pages.xlsx');
 
-$additionalData = [
-'fileUrl' => 'https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RIR7PSV4JJSFJHKNPUVUWGPW4O2', 
-];
-$resource->setAdditionalData($additionalData);
-
+$resource->setFileUrl('https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RIR7PSV4JJSFJHKNPUVUWGPW4O2');
 
 
 $requestBody->setResource($resource);
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->resources()->post($requestBody);
+$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->byAssignmentId('educationAssignment-id')->resources()->post($requestBody);
 
 
 ```

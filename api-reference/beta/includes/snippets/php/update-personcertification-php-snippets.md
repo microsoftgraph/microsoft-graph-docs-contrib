@@ -16,7 +16,7 @@ $requestBody->setIssuingCompany('International Academy of Marketing Excellence')
 
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->profile()->certificationsById('personCertification-id')->patch($requestBody);
+$result = $graphServiceClient->users()->byUserId('user-id')->profile()->certifications()->byCertificationId('personCertification-id')->patch($requestBody);
 
 
 ```

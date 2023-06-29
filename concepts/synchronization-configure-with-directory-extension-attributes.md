@@ -55,6 +55,10 @@ Authorization: Bearer {Token}
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -126,6 +130,10 @@ Authorization: Bearer {Token}
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -192,6 +200,10 @@ Authorization: Bearer {Token}
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

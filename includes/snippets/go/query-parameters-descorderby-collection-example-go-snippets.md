@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.MeMailFolderItemMessagesRequestBuilderGetQueryParameters{
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphusers.ItemMailFolderItemMessagesRequestBuilderGetQueryParameters{
 	Orderby: [] string {"from/emailAddress/name desc","subject"},
 }
-configuration := &graphconfig.MeMailFolderItemMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMailFolderItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").Messages().Get(context.Background(), configuration)
+result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").Messages().Get(context.Background(), configuration)
 
 
 ```

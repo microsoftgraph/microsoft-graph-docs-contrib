@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/publications/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/delete-itempublication-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-itempublication-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

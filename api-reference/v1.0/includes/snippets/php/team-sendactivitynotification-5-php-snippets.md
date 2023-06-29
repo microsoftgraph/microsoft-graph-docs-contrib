@@ -24,14 +24,10 @@ $previewText->setContent('Internal spending team has a pending finance approval 
 
 
 $requestBody->setPreviewText($previewText);
-$recipient = new TeamworkNotificationRecipient();
+$recipient = new TeamMembersNotificationRecipient();
 $recipient->set@odatatype('microsoft.graph.teamMembersNotificationRecipient');
 
-$additionalData = [
-'teamId' => 'e8bece96-d393-4b9b-b8da-69cedef1a7e7', 
-];
-$recipient->setAdditionalData($additionalData);
-
+$recipient->setTeamId('e8bece96-d393-4b9b-b8da-69cedef1a7e7');
 
 
 $requestBody->setRecipient($recipient);
@@ -47,7 +43,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->teamsById('team-id')->sendActivityNotification()->post($requestBody);
+$graphServiceClient->teams()->byTeamId('team-id')->sendActivityNotification()->post($requestBody);
 
 
 ```

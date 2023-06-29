@@ -14,7 +14,7 @@ $requestBody->setDisplayName('My Private notebook');
 
 
 
-$requestResult = $graphServiceClient->me()->onenote()->notebooks()->post($requestBody);
+$result = $graphServiceClient->me()->onenote()->notebooks()->post($requestBody);
 
 
 ```

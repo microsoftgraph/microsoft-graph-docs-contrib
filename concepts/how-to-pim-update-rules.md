@@ -1,28 +1,31 @@
 ---
-title: "Use privileged identity management (PIM) to update Azure AD rules"
-description: "Learn how to use the PIM API in Microsoft Graph to update Azure AD rules."
+title: "Update rules in privileged identity management (PIM)"
+description: "Learn how to update rules in PIM using Microsoft Graph."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "governance"
-ms.date: 12/07/2022
+ms.date: 06/07/2023
 ---
 
-# Use privileged identity management (PIM) APIs in Microsoft Graph to update Azure AD rules
+# Update rules in PIM using Microsoft Graph
 
-The following article provides examples for using Microsoft Graph APIs to update different rules that are assigned to Azure AD roles through Privileged Identity Management (PIM). To understand the structure of role settings in PIM, see [Overview of rules for Azure AD roles in privileged identity management (PIM) APIs in Microsoft Graph](identity-governance-pim-rules-overview.md).
+The following article provides examples for using Microsoft Graph APIs to update different rules that are assigned to Azure AD roles or groups through Privileged Identity Management (PIM). To understand the structure of rules in PIM, see [Working with rules in PIM using Microsoft Graph](identity-governance-pim-rules-overview.md).
 
 When updating the rules, you must include the `@odata.type` for the derived type in the request body. For example, to update an activation rule of ID `Enablement_EndUser_Assignment`, you must include `"@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule"`.
 
 If successful, all requests return `204 No Content` response codes.
 
+> [!NOTE]
+> PIM for groups APIs are currently available on the `beta` endpoint only.
+
 ## Prerequisites
 
-+ Have an understanding of [privileged identity management APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) for managing Azure AD roles.
++ Have an understanding of [PIM for Azure AD roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview).
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the *Global Administrator* or *Privileged Role Administrator* roles.
-+ Grant yourself the `RoleManagementPolicy.ReadWrite.Directory` delegated permission.
++ To manage the rules for Azure AD roles, grant yourself the `RoleManagementPolicy.ReadWrite.Directory` delegated permission. To manage the rules for groups, grant yourself the `RoleManagementPolicy.ReadWrite.AzureADGroup` delegated permission.
 
 ## Example 1: Update the activation maximum duration
 
@@ -57,6 +60,10 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/how-to-pim-update-rules-expiration-enduser-assignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/how-to-pim-update-rules-expiration-enduser-assignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -75,6 +82,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/how-to-pim-update-rules-expiration-enduser-assignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/how-to-pim-update-rules-expiration-enduser-assignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -115,6 +126,10 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/how-to-pim-update-rules-enablement-enduser-assignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/how-to-pim-update-rules-enablement-enduser-assignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -133,6 +148,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/how-to-pim-update-rules-enablement-enduser-assignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/how-to-pim-update-rules-enablement-enduser-assignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -201,6 +220,10 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/how-to-pim-update-rules-approval-enduser-assignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/how-to-pim-update-rules-approval-enduser-assignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -219,6 +242,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/how-to-pim-update-rules-approval-enduser-assignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/how-to-pim-update-rules-approval-enduser-assignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -256,6 +283,10 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/how-to-pim-update-rules-expiration-admin-eligibility-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/how-to-pim-update-rules-expiration-admin-eligibility-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -274,6 +305,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/how-to-pim-update-rules-expiration-admin-eligibility-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/how-to-pim-update-rules-expiration-admin-eligibility-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -311,6 +346,10 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/how-to-pim-update-rules-expiration-admin-assignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/how-to-pim-update-rules-expiration-admin-assignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -329,6 +368,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/how-to-pim-update-rules-expiration-admin-assignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/how-to-pim-update-rules-expiration-admin-assignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -368,6 +411,10 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/how-to-pim-update-rules-enablement-admin-assignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/how-to-pim-update-rules-enablement-admin-assignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -386,6 +433,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/how-to-pim-update-rules-enablement-admin-assignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/how-to-pim-update-rules-enablement-admin-assignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

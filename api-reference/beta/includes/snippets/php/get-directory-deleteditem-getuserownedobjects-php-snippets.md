@@ -16,7 +16,7 @@ $requestBody->setType('Group');
 
 
 
-$requestResult = $graphServiceClient->directory()->deletedItems()->getUserOwnedObjects()->post($requestBody);
+$result = $graphServiceClient->directory()->deletedItems()->getUserOwnedObjects()->post($requestBody);
 
 
 ```

@@ -18,32 +18,25 @@ $requestBody->setIsEnabled(true);
 
 $requestBody->setIsSchedulingEnabled(false);
 
-$executionConditions = new WorkflowExecutionConditions();
+$executionConditions = new TriggerAndScopeBasedConditions();
 $executionConditions->set@odatatype('microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
 
-$additionalData = [
-'scope' => $executionConditions = new Scope();
-$		executionConditions->set@odatatype('microsoft.graph.identityGovernance.ruleBasedSubjectSet');
+$executionConditionsScope = new RuleBasedSubjectSet();
+$executionConditionsScope->set@odatatype('microsoft.graph.identityGovernance.ruleBasedSubjectSet');
 
-$		executionConditions->setRule('(department eq \'Sales\')');
-
-
-$executionConditions->setScope($scope);
-
-'trigger' => $executionConditions = new Trigger();
-$		executionConditions->set@odatatype('microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
-
-$		executionConditions->setTimeBasedAttribute('employeeHireDate');
-
-		$executionConditions->setOffsetInDays(-2);
+$executionConditionsScope->setRule('(department eq \'Sales\')');
 
 
-$executionConditions->setTrigger($trigger);
+$executionConditions->setScope($executionConditionsScope);
+$executionConditionsTrigger = new TimeBasedAttributeTrigger();
+$executionConditionsTrigger->set@odatatype('microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
 
-];
-$executionConditions->setAdditionalData($additionalData);
+$executionConditionsTrigger->setTimeBasedAttribute(new WorkflowTriggerTimeBasedAttribute('employeehiredate'));
+
+$executionConditionsTrigger->setOffsetInDays(-2);
 
 
+$executionConditions->setTrigger($executionConditionsTrigger);
 
 $requestBody->setExecutionConditions($executionConditions);
 $tasksTask1 = new Task();
@@ -81,7 +74,7 @@ $requestBody->setTasks($tasksArray);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->post($requestBody);
 
 
 ```

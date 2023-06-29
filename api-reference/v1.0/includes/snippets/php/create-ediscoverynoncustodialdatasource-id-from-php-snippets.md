@@ -10,25 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new EdiscoveryNoncustodialDataSource();
-$dataSource = new DataSource();
+$dataSource = new SiteSource();
 $dataSource->set@odatatype('microsoft.graph.security.siteSource');
 
-$additionalData = [
-'site' => $dataSource = new Site();
-$		dataSource->setWebUrl('https://m365x809305.sharepoint.com/sites/Design-topsecret');
+$dataSourceSite = new Site();
+$dataSourceSite->setWebUrl('https://m365x809305.sharepoint.com/sites/Design-topsecret');
 
 
-$dataSource->setSite($site);
-
-];
-$dataSource->setAdditionalData($additionalData);
-
-
+$dataSource->setSite($dataSourceSite);
 
 $requestBody->setDataSource($dataSource);
 
 
-$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->noncustodialDataSources()->post($requestBody);
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->noncustodialDataSources()->post($requestBody);
 
 
 ```

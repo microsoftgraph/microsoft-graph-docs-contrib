@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/delete-mailfolder-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-mailfolder-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

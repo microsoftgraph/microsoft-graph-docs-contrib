@@ -7,33 +7,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Education
 
 $params = @{
-	DisplayName = "Dion Matheson"
-	GivenName = "Dion"
-	MiddleName = $null
-	Surname = "Matheson"
-	Mail = "DionM@contoso.com"
-	MobilePhone = "+1 (253) 555-0101"
-	CreatedBy = @{
-		User = @{
-			DisplayName = "Susana Rocha"
-			Id = "14012"
+	displayName = "Dion Matheson"
+	givenName = "Dion"
+	middleName = $null
+	surname = "Matheson"
+	mail = "DionM@contoso.com"
+	mobilePhone = "+1 (253) 555-0101"
+	createdBy = @{
+		user = @{
+			displayName = "Susana Rocha"
+			id = "14012"
 		}
 	}
-	ExternalSource = "sis"
-	MailingAddress = @{
-		City = "Los Angeles"
-		CountryOrRegion = "United States"
-		PostalCode = "98055"
-		State = "CA"
-		Street = "12345 Main St."
+	externalSource = "sis"
+	mailingAddress = @{
+		city = "Los Angeles"
+		countryOrRegion = "United States"
+		postalCode = "98055"
+		state = "CA"
+		street = "12345 Main St."
 	}
-	PrimaryRole = "student"
-	ResidenceAddress = @{
-		City = "Los Angeles"
-		CountryOrRegion = "United States"
-		PostalCode = "98055"
-		State = "CA"
-		Street = "12345 Main St."
+	primaryRole = "student"
+	residenceAddress = @{
+		city = "Los Angeles"
+		countryOrRegion = "United States"
+		postalCode = "98055"
+		state = "CA"
+		street = "12345 Main St."
 	}
 }
 

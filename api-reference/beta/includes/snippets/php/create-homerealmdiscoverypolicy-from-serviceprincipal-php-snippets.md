@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/beta/policies/homeRealmDi
 
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->homeRealmDiscoveryPolicies()->ref()->post($requestBody);
+$graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->homeRealmDiscoveryPolicies()->ref()->post($requestBody);
 
 
 ```

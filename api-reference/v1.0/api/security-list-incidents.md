@@ -109,6 +109,10 @@ GET https://graph.microsoft.com/v1.0/security/incidents
 [!INCLUDE [sample-code](../includes/snippets/php/list-incident-for-defender-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-incident-for-defender-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -193,6 +197,10 @@ GET https://graph.microsoft.com/v1.0/security/incidents?$expand=alerts
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-incident-with-their-alerts-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-incident-with-their-alerts-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

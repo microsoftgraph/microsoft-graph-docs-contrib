@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftChangeRequests
 [!INCLUDE [sample-code](../includes/snippets/php/get-openshiftchangerequest-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-openshiftchangerequest-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sh
 [!INCLUDE [sample-code](../includes/snippets/php/schedule-list-timesoff-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/schedule-list-timesoff-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

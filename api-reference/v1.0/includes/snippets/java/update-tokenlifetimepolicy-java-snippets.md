@@ -8,12 +8,12 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 TokenLifetimePolicy tokenLifetimePolicy = new TokenLifetimePolicy();
 LinkedList<String> definitionList = new LinkedList<String>();
-definitionList.add("definition-value");
+definitionList.add("{"TokenLifetimePolicy":{"Version":1,"AccessTokenLifetime":"5:30:00"}}");
 tokenLifetimePolicy.definition = definitionList;
-tokenLifetimePolicy.displayName = "displayName-value";
+tokenLifetimePolicy.displayName = "Contoso token lifetime policy";
 tokenLifetimePolicy.isOrganizationDefault = true;
 
-graphClient.policies().tokenLifetimePolicies("{id}")
+graphClient.policies().tokenLifetimePolicies("4d2f137b-e8a9-46da-a5c3-cc85b2b840a4")
 	.buildRequest()
 	.patch(tokenLifetimePolicy);
 

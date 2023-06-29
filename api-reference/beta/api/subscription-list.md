@@ -2,7 +2,7 @@
 title: "List subscriptions"
 description: " see the scenarios below for details."
 ms.localizationpriority: medium
-author: "jumasure"
+author: "keylimesoda"
 doc_type: apiPageType
 ms.prod: "change-notifications"
 ---
@@ -153,6 +153,10 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-subscriptions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-subscriptions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termId}
 [!INCLUDE [sample-code](../includes/snippets/php/delete-term-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-term-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

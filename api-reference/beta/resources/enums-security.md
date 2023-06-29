@@ -11,6 +11,15 @@ author: "BenAlfasi"
 
 Namespace: microsoft.graph.security
 
+### contentFormat values
+
+| Member             |
+| :----------------- |
+| text               |
+| html               |
+| markdown           |
+| unknownFutureValue |
+
 ### detectionStatus values
 
 | Member
@@ -20,89 +29,118 @@ Namespace: microsoft.graph.security
 | prevented
 | unknownFutureValue
 
-### actionAfterRetentionPeriod values 
+### actionAfterRetentionPeriod values
 
+| Member                 |
+| :--------------------- |
+| none                   |
+| delete                 |
+| startDispositionReview |
+| unknownFutureValue     |
 
+### behaviorDuringRetentionPeriod values
 
-|Member|
-|:---|
-|none|
-|delete|
-|startDispositionReview|
-|unknownFutureValue|
+| Member                   |
+| :----------------------- |
+| doNotRetain              |
+| retain                   |
+| retainAsRecord           |
+| retainAsRegulatoryRecord |
+| unknownFutureValue       |
 
-### behaviorDuringRetentionPeriod values 
+### defaultRecordBehavior values
 
+| Member             |
+| :----------------- |
+| startLocked        |
+| startUnlocked      |
+| unknownFutureValue |
 
+### eventPropagationStatus values
 
-|Member|
-|:---|
-|doNotRetain|
-|retain|
-|retainAsRecord|
-|retainAsRegulatoryRecord|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| none               |
+| inProcessing       |
+| failed             |
+| success            |
+| unknownFutureValue |
 
+### eventStatusType values
 
-### defaultRecordBehavior values 
+| Member             |
+| :----------------- |
+| pending            |
+| error              |
+| success            |
+| notAvaliable       |
+| unknownFutureValue |
 
+### hostReputationClassification values
 
+| Member             |
+| :----------------- |
+| unknown            |
+| neutral            |
+| suspicious         |
+| malicious          |
+| unknownFutureValue |
 
-|Member|
-|:---|
-|startLocked|
-|startUnlocked|
-|unknownFutureValue|
+### hostReputationRuleSeverity values
 
+| Member             |
+| :----------------- |
+| unknown            |
+| low                |
+| medium             |
+| high               |
+| unknownFutureValue |
 
-### eventPropagationStatus values 
+### indicatorSource values
 
+| Member             |
+| :----------------- |
+| microsoft          |
+| osint              |
+| public             |
+| unknownFutureValue |
 
+### intelligenceProfileKind values
 
-|Member|
-|:---|
-|none|
-|inProcessing|
-|failed|
-|success|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| actor              |
+| tool               |
+| unknownFutureValue |
 
-### eventStatusType values 
+### queryType values
 
+| Member             |
+| :----------------- |
+| files              |
+| messages           |
+| unknownFutureValue |
 
+### retentionTrigger values
 
-|Member|
-|:---|
-|pending|
-|error|
-|success|
-|notAvaliable|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| dateLabeled        |
+| dateCreated        |
+| dateModified       |
+| dateOfEvent        |
+| unknownFutureValue |
 
-### queryType values 
+### vulnerabilitySeverity values
 
-
-
-|Member|
-|:---|
-|files|
-|messages|
-|unknownFutureValue|
-
-
-
-### retentionTrigger values 
-
-
-
-|Member|
-|:---|
-|dateLabeled|
-|dateCreated|
-|dateModified|
-|dateOfEvent|
-|unknownFutureValue|
-
+| Member             |
+| :----------------- |
+| none               |
+| low                |
+| medium             |
+| high               |
+| critical           |
+| unknownFutureValue |
 
 <!--
 {

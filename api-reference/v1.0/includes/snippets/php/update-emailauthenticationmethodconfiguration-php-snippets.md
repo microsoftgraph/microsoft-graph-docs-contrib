@@ -9,18 +9,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new AuthenticationMethodConfiguration();
+$requestBody = new EmailAuthenticationMethodConfiguration();
 $requestBody->set@odatatype('#microsoft.graph.emailAuthenticationMethodConfiguration');
 
-$additionalData = [
-'allowExternalIdToUseEmailOtp' => 'enabled', 
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setAllowExternalIdToUseEmailOtp(new ExternalEmailOtpState('enabled'));
 
 
 
-
-$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurations()->byAuthenticationMethodConfigurationId('authenticationMethodConfiguration-id')->patch($requestBody);
 
 
 ```

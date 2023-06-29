@@ -70,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/137
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

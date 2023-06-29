@@ -4,35 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var callbackUri = "https://bot.contoso.com/api/calls";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var acceptedModalities = new List<Modality>()
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.Answer.AnswerPostRequestBody
 {
-	Modality.Audio
-};
-
-var mediaConfig = new ServiceHostedMediaConfig
-{
-	PreFetchMedia = new List<MediaInfo>()
+	CallbackUri = "https://bot.contoso.com/api/calls",
+	AcceptedModalities = new List<Modality?>
 	{
-		new MediaInfo
+		Modality.Audio,
+	},
+	MediaConfig = new ServiceHostedMediaConfig
+	{
+		OdataType = "#microsoft.graph.serviceHostedMediaConfig",
+		PreFetchMedia = new List<MediaInfo>
 		{
-			Uri = "https://cdn.contoso.com/beep.wav",
-			ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E"
+			new MediaInfo
+			{
+				Uri = "https://cdn.contoso.com/beep.wav",
+				ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+			},
+			new MediaInfo
+			{
+				Uri = "https://cdn.contoso.com/cool.wav",
+				ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+			},
 		},
-		new MediaInfo
-		{
-			Uri = "https://cdn.contoso.com/cool.wav",
-			ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-		}
-	}
+	},
 };
+await graphClient.Communications.Calls["{call-id}"].Answer.PostAsync(requestBody);
 
-await graphClient.Communications.Calls["{call-id}"]
-	.Answer(callbackUri,mediaConfig,acceptedModalities,null,null)
-	.Request()
-	.PostAsync();
 
 ```

@@ -9,28 +9,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new EducationOutcome();
+$requestBody = new EducationFeedbackOutcome();
 $requestBody->set@odatatype('#microsoft.graph.educationFeedbackOutcome');
 
-$additionalData = [
-'feedback' => $requestBody = new Feedback();
-$text = new Text();
-$		text->setContent('This is feedback for the assignment as a whole.');
+$feedback = new EducationFeedback();
+$feedbackText = new EducationItemBody();
+$feedbackText->setContent('This is feedback for the assignment as a whole.');
 
-$		text->setContentType('text');
+$feedbackText->setContentType(new BodyType('text'));
 
 
-$requestBody->setText($text);
+$feedback->setText($feedbackText);
 
 $requestBody->setFeedback($feedback);
 
-];
-$requestBody->setAdditionalData($additionalData);
 
-
-
-
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->outcomesById('educationOutcome-id')->patch($requestBody);
+$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->byAssignmentId('educationAssignment-id')->submissions()->bySubmissionId('educationSubmission-id')->outcomes()->byOutcomeId('educationOutcome-id')->patch($requestBody);
 
 
 ```

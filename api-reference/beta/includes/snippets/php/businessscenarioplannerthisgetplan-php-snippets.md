@@ -10,22 +10,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new GetPlanPostRequestBody();
-$target = new BusinessScenarioTaskTargetBase();
+$target = new BusinessScenarioGroupTarget();
 $target->set@odatatype('microsoft.graph.businessScenarioGroupTarget');
 
 $target->setTaskTargetKind(new PlannerTaskTargetKind('group'));
 
-$additionalData = [
-'groupId' => '7a339254-4b2b-4410-b295-c890a16776ee', 
-];
-$target->setAdditionalData($additionalData);
-
+$target->setGroupId('7a339254-4b2b-4410-b295-c890a16776ee');
 
 
 $requestBody->setTarget($target);
 
 
-$requestResult = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->getPlan()->post($requestBody);
+$result = $graphServiceClient->solutions()->businessScenarios()->byBusinessScenarioId('businessScenario-id')->planner()->getPlan()->post($requestBody);
 
 
 ```

@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	Topic = @{
-		Source = "text"
-		Value = "Weekly Virtual Social"
-		WebUrl = "Teams webUrl"
+	topic = @{
+		source = "text"
+		value = "Weekly Virtual Social"
+		webUrl = "Teams webUrl"
 	}
-	PreviewText = @{
-		Content = "It will be fun!"
+	previewText = @{
+		content = "It will be fun!"
 	}
-	ActivityType = "eventCreated"
-	Recipient = @{
+	activityType = "eventCreated"
+	recipient = @{
 		"@odata.type" = "microsoft.graph.teamMembersNotificationRecipient"
-		TeamId = "7155e3c8-175e-4311-97ef-572edc3aa3db"
+		teamId = "7155e3c8-175e-4311-97ef-572edc3aa3db"
 	}
 }
 

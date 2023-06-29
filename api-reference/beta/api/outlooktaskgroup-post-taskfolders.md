@@ -56,7 +56,7 @@ The following example creates a task folder called `Cooking` in the specified ta
   "sampleKeys": ["AAMkADIyAAAhrbe-AAA="]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=/taskfolders
+POST https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=/taskFolders
 Content-type: application/json
 
 {
@@ -86,6 +86,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-outlooktaskfolder-from-outlooktaskgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-outlooktaskfolder-from-outlooktaskgroup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -120,7 +124,14 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+	"Error: microsoft.graph.microsoft.graph/me:
+      /me/outlook/taskGroups/{var}/taskFolders
+      Uri path requires navigating into unknown object hierarchy: missing property 'taskGroups' on 'outlookUser'. Possible issues:
+  	 1) Doc bug where 'taskGroups' isn't defined on the resource.
+  	 2) Doc bug where 'taskGroups' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'outlookUser' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
 }
 -->
 

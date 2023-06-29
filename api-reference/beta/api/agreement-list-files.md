@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/94
 [!INCLUDE [sample-code](../includes/snippets/php/list-agreementfilelocalization-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-agreementfilelocalization-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

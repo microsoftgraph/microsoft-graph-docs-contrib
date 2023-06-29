@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/shares
 [!INCLUDE [sample-code](../includes/snippets/php/list-printershare-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-printershare-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/servicePla
 [!INCLUDE [sample-code](../includes/snippets/php/list-serviceplans-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-serviceplans-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

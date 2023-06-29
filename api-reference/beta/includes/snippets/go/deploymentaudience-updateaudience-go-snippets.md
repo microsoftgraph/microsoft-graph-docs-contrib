@@ -4,23 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewUpdateAudiencePostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphadmin "github.com/microsoftgraph/msgraph-beta-sdk-go/admin"
+	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-updatableAsset := graphmodels.NewUpdatableAsset()
+requestBody := graphadmin.NewUpdateAudiencePostRequestBody()
+
+
+updatableAsset := graphmodelswindowsupdates.NewAzureADDevice()
 id := "String (identifier)"
 updatableAsset.SetId(&id) 
 
-addMembers := []graphmodels.Objectable {
+addMembers := []graphmodelswindowsupdates.updatableAssetable {
 	updatableAsset,
-
 }
 requestBody.SetAddMembers(addMembers)
 
-graphClient.Admin().Windows().Updates().DeploymentAudiencesById("deploymentAudience-id").WindowsUpdatesUpdateAudience().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().DeploymentAudiences().ByDeploymentAudienceId("deploymentAudience-id").MicrosoftGraphWindowsUpdatesUpdateAudience().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5014
+Content-Length: 5057
 
 {
   "value": {
@@ -184,7 +184,8 @@ Content-Length: 5014
         "appId": "App Id value",
         "appType": "desktop",
         "routingPolicyType": "splitTunnel",
-        "claims": "Claims value"
+        "claims": "Claims value",
+        "vpnTrafficDirection": "inbound"
       }
     ],
     "routes": [

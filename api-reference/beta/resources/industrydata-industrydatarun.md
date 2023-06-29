@@ -15,7 +15,7 @@ Namespace: microsoft.graph.industryData
 
 Represents an ephemeral run that contains data for all subordinate activities performed by the system. Industry data automates a run every 12 hours. Each of these operations is represented by an **industryDataRun** resource. All flows that are active at the time of the run start are included in the run. The individual flows are represented by an [industryDataRunActivity](industrydata-industrydatarunactivity.md) resource.
 
-During a run, the data supplied is validated, bringing in good data to the data lake and flagging bad data. For more information about data validation, see [Validation rules and descriptions](/schooldatasync/validation-rules-and-descriptions.md). To determine the health of the data, it goes through data matching and validation rules to help safeguard required and optional data. Good data goes into the data lake. Data that doesn't pass validation is identified as errors or warnings and isn't sent to the data lake. The following list shows possible results for a run:
+During a run, the data supplied is validated, bringing in good data to the data lake and flagging bad data. For more information about data validation, see [Validation rules and descriptions](/schooldatasync/validation-rules-and-descriptions). To determine the health of the data, it goes through data matching and validation rules to help safeguard required and optional data. Good data goes into the data lake. Data that doesn't pass validation is identified as errors or warnings and isn't sent to the data lake. The following list shows possible results for a run:
 
 - `running`: Run is actively running.
 - `completed`: Run completed without any errors or warnings.

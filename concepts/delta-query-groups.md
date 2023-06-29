@@ -3,7 +3,8 @@ title: "Get incremental changes for groups"
 description: "Use delta query to discover changes without fetching the entire set of groups to compare changes. Example shows a series of requests to track changes to groups."
 author: "FaithOmbongi"
 ms.author: ombongifaith
-ms.reviewer: "jumasure"
+ms.reviewer: "keylimesoda"
+ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 11/17/2022
@@ -75,6 +76,10 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delta-query-groups-initial-request-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delta-query-groups-initial-request-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -157,6 +162,10 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAw
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delta-query-groups-nextlink-request-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delta-query-groups-nextlink-request-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -242,6 +251,10 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVA
 [!INCLUDE [sample-code](../includes/snippets/php/delta-query-groups-nextlink-request2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delta-query-groups-nextlink-request2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Final nextLink response
@@ -311,6 +324,10 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delta-query-groups-deltalink-request-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delta-query-groups-deltalink-request-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -424,6 +441,10 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delta-query-groups-delta-paging-request-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delta-query-groups-delta-paging-request-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/php/delete-accesspackagecatalog-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-accesspackagecatalog-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

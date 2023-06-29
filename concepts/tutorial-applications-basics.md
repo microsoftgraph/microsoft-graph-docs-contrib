@@ -7,7 +7,7 @@ ms.reviewer: sureshja
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
-ms.date: 12/08/2022
+ms.date: 06/27/2023
 ---
 
 # Manage an Azure AD application using Microsoft Graph
@@ -21,7 +21,7 @@ Many settings for apps are recorded as objects that can be accessed, updated, or
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant.
-+ Sign in to [Graph Explorer](https://aka.ms/ge) as a user in an _Application Administrator_ role or a user allowed to create and manage applications in the tenant.
++ Sign in to [Graph Explorer](https://aka.ms/ge) as a user with privileges allowed to create and manage applications in the tenant.
 
 ## Register an application with Azure AD
 
@@ -65,6 +65,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-application-basics-create-app-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-application-basics-create-app-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -155,6 +159,23 @@ The **signInAudience** property is assigned a default value of `AzureADandPerson
 
 If you created the application as a user with administrator privileges, you were automatically assigned ownership to the application. You can confirm ownership by retrieving the owners navigation property through `GET https://graph.microsoft.com/v1.0/applications/0d0021e2-eaab-4b9f-a5ad-38c55337d63e/owners`. You can also assign another user or app ownership of the application.
 
+## Addressing an application or a service principal object
+
+You can address an application or a service principal by its ID or by its **appId**, where ID is referred to as *Object ID* and **appId** is refered to as *Application (client) ID* on the Azure portal. These syntaxes are supported for all HTTP CRUD operations on applications and service principals.
+
+To address an application or a service principal by its ID.
+
+```http
+https://graph.microsoft.com/v1.0/applications/{applicationObjectId}
+https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipalObjectId}
+```
+
+To address an application or a service principal by its **appId**.
+```http
+https://graph.microsoft.com/v1.0/applications(appId='appId')
+https://graph.microsoft.com/v1.0/servicePrincipals(appId='appId')
+```
+
 ## Configure other basic properties for your app
 
 Least privilege delegated permission: `Application.ReadWrite.All`
@@ -222,6 +243,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-application-basics-update-app-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-application-basics-update-app-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ## Limit app sign-in to only assigned identities
@@ -263,6 +288,10 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-application-basics-grant-approleassignmentrequired-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-application-basics-grant-approleassignmentrequired-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -327,6 +356,10 @@ Content-Type: application/json
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ## Create app roles
@@ -384,6 +417,10 @@ Content-Type: application/json
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ## Manage owners
@@ -429,6 +466,10 @@ ConsistencyLevel: eventual
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-application-basics-ownerless-serviceprincipals-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-application-basics-ownerless-serviceprincipals-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -478,6 +519,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-application-basics-assign-app-owner-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-application-basics-assign-app-owner-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Assign an owner to a service principal
@@ -497,6 +542,47 @@ Content-Type: application/json
 
 {
     "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/8afc02cb-4d62-4dba-b536-9f6d73e9be26"
+}
+```
+
+## Lock sensitive properties for service principals
+
+The *app instance lock* feature allows you to protect sensitive properties of your multi-tenant apps from unauthorized tampering. The following properties of the service principal object can be locked:
+
+- **keyCredentials** where the usage type is `Sign` or `Verify`.
+- **passwordCredentials** where the usage type is `Sign` or `Verify`.
+- **tokenEncryptionKeyId** property.
+
+You manage the app instance lock feature through the **servicePrincipalLockConfiguration** property of the [application](/graph/api/resources/application) object of the multi-tenant app.
+
+#### To lock all sensitive properties of a service principal
+
+When **isEnabled** and **allProperties** is set to `true`, the other properties of the servicePrincipalLockConfiguration object are `null`. This means that all the sensitive properties of the service principal are locked.
+
+```http
+PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46fb63102f7
+
+{
+    "servicePrincipalLockConfiguration": {
+        "isEnabled": true,
+        "allProperties": true
+    }
+}
+```
+
+#### To lock specific sensitive properties of a service principal
+
+The following example locks the **keyCredentials** and **passwordCredentials** properties of the service principal and enables the app instance lock feature.
+
+```http
+PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46fb63102f7
+
+{
+    "servicePrincipalLockConfiguration": {
+        "isEnabled": true,
+        "credentialsWithUsageSign": true,
+        "credentialsWithUsageVerify": true
+    }
 }
 ```
 

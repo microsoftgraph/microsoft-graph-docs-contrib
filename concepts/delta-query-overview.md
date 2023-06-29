@@ -3,7 +3,8 @@ title: "Use delta query to track changes in Microsoft Graph data"
 description: "Use delta query to enable applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request."
 author: "FaithOmbongi"
 ms.author: ombongifaith
-ms.reviewer: jumasure
+ms.reviewer: keylimesoda
+ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 08/12/2022
@@ -69,10 +70,9 @@ For the [user](/graph/api/resources/user) and [group](/graph/api/resources/group
 - If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
 - `$select` also supports **manager** and **members** navigation properties for users and groups respectively. Selecting those properties allows tracking of changes to user's manager and group memberships.
 
-- Scoping filters allow you to track changes to one or more specific users or groups by object ID. For example, the following request returns changes for the groups matching the IDs specified in the query filter.
+- Scoping filters allow you to track changes to one or more specific users or groups, filtering **only by object ID**. For example, the following request returns changes for the groups matching the IDs specified in the query filter.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -80,28 +80,6 @@ For the [user](/graph/api/resources/user) and [group](/graph/api/resources/group
 ```http
 https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e'
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-delta-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/group-delta-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/group-delta-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ## Resource representation in the delta query response
 
@@ -131,8 +109,8 @@ Delta query is currently supported for the following resources. Note that some r
 | **Resource collection**                                        | **API**                                                                                                                                            |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Applications                                                   | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource                                     |
-| Administrative units                                           | [delta](/graph/api/administrativeunit-delta) function of the [administrativeUnit](/graph/api/resources/administrativeunit) resource      |
-| Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage)                                    |
+| Administrative units                                           | [delta](/graph/api/administrativeunit-delta) function of the [administrativeUnit](/graph/api/resources/administrativeunit) resource                |
+| Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage) resource                           |
 | Device objects                                                 | [delta](/graph/api/device-delta) function of the [device](/graph/api/resources/device) resource                                                    |
 | Directory roles                                                | [delta](/graph/api/directoryrole-delta) function of the [directoryRole](/graph/api/resources/directoryrole) resource |
 | Directory objects                                              | [delta](/graph/api/directoryobject-delta) function of the [directoryObject](/graph/api/resources/directoryObject) resource |
@@ -151,7 +129,10 @@ Delta query is currently supported for the following resources. Note that some r
 | OAuth2PermissionGrants                                         | [delta](/graph/api/oauth2permissiongrant-delta) function of the [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant) resource        |
 | Personal contact folders                                       | [delta](/graph/api/contactfolder-delta) function of the [contactFolder](/graph/api/resources/contactfolder) resource |
 | Personal contacts in a folder                                  | [delta](/graph/api/contact-delta) function of the [contact](/graph/api/resources/contact) resource                   |
+| Planner buckets (preview)                                      | [delta](/graph/api/plannerbucket-delta) function (preview) of the [plannerBucket](/graph/api/resources/plannerbucket) resource        |
 | Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta) function (preview) of the all segment of [plannerUser](/graph/api/resources/planneruser) resource        |
+| Planner plans (preview)                                      | [delta](/graph/api/plannerplan-delta) function (preview) of the [plannerPlan](/graph/api/resources/plannerplan) resource        |
+| Planner tasks (preview)                                      | [delta](/graph/api/plannertask-delta) function (preview) of the [plannerTask](/graph/api/resources/plannertask) resource        |
 | Service principals                                             | [delta](/graph/api/serviceprincipal-delta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal) resource                       |
 | To-do tasks in a task list                                     | [delta](/graph/api/todotask-delta) function of the [todoTask](/graph/api/resources/todotask) resource                                               |
 | To-do task lists                                               | [delta](/graph/api/todotasklist-delta) function of the [todoTaskList](/graph/api/resources/todotasklist) resource                                   |

@@ -95,6 +95,10 @@ DELETE https://graph.microsoft.com/v1.0/identity/apiConnectors/370eeb68-dfd3-4a4
 [!INCLUDE [sample-code](../includes/snippets/php/delete-identityapiconnector-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-identityapiconnector-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

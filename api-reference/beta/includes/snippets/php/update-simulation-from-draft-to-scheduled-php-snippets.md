@@ -22,29 +22,21 @@ $requestBody->setAttackType(new SimulationAttackType('social'));
 
 $requestBody->setStatus(new SimulationStatus('scheduled'));
 
-$includedAccountTarget = new AccountTargetContent();
+$includedAccountTarget = new AddressBookAccountTargetContent();
 $includedAccountTarget->set@odatatype('#microsoft.graph.addressBookAccountTargetContent');
 
 $includedAccountTarget->setType(new AccountTargetContentType('addressbook'));
 
-$additionalData = [
-'accountTargetEmails' => ['faiza@contoso.com', ],
-];
-$includedAccountTarget->setAdditionalData($additionalData);
-
+$includedAccountTarget->setAccountTargetEmails(['faiza@contoso.com', ]);
 
 
 $requestBody->setIncludedAccountTarget($includedAccountTarget);
-$excludedAccountTarget = new AccountTargetContent();
+$excludedAccountTarget = new AddressBookAccountTargetContent();
 $excludedAccountTarget->set@odatatype('#microsoft.graph.addressBookAccountTargetContent');
 
 $excludedAccountTarget->setType(new AccountTargetContentType('addressbook'));
 
-$additionalData = [
-'accountTargetEmails' => ['sam@contoso.com', ],
-];
-$excludedAccountTarget->setAdditionalData($additionalData);
-
+$excludedAccountTarget->setAccountTargetEmails(['sam@contoso.com', ]);
 
 
 $requestBody->setExcludedAccountTarget($excludedAccountTarget);
@@ -57,7 +49,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->security()->attackSimulation()->simulationsById('simulation-id')->patch($requestBody);
+$result = $graphServiceClient->security()->attackSimulation()->simulations()->bySimulationId('simulation-id')->patch($requestBody);
 
 
 ```

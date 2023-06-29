@@ -7,60 +7,60 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	DisplayName = "Group owners review guest across Microsoft 365 groups in the tenant (Quarterly)"
-	DescriptionForAdmins = ""
-	DescriptionForReviewers = ""
-	Scope = @{
-		Query = "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')"
-		QueryType = "MicrosoftGraph"
+	displayName = "Group owners review guest across Microsoft 365 groups in the tenant (Quarterly)"
+	descriptionForAdmins = ""
+	descriptionForReviewers = ""
+	scope = @{
+		query = "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')"
+		queryType = "MicrosoftGraph"
 	}
-	InstanceEnumerationScope = @{
-		Query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true"
-		QueryType = "MicrosoftGraph"
+	instanceEnumerationScope = @{
+		query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true"
+		queryType = "MicrosoftGraph"
 	}
-	Reviewers = @(
+	reviewers = @(
 		@{
-			Query = "./owners"
-			QueryType = "MicrosoftGraph"
-			QueryRoot = $null
+			query = "./owners"
+			queryType = "MicrosoftGraph"
+			queryRoot = $null
 		}
 	)
-	FallbackReviewers = @(
+	fallbackReviewers = @(
 		@{
-			Query = "/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4"
-			QueryType = "MicrosoftGraph"
-			QueryRoot = $null
+			query = "/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4"
+			queryType = "MicrosoftGraph"
+			queryRoot = $null
 		}
 	)
-	Settings = @{
-		MailNotificationsEnabled = $true
-		ReminderNotificationsEnabled = $true
-		JustificationRequiredOnApproval = $true
-		DefaultDecisionEnabled = $true
-		DefaultDecision = "Approve"
-		InstanceDurationInDays = 0
-		AutoApplyDecisionsEnabled = $true
-		RecommendationsEnabled = $true
-		Recurrence = @{
-			Pattern = @{
-				Type = "absoluteMonthly"
-				Interval = 3
-				Month = 0
-				DayOfMonth = 0
-				DaysOfWeek = @(
+	settings = @{
+		mailNotificationsEnabled = $true
+		reminderNotificationsEnabled = $true
+		justificationRequiredOnApproval = $true
+		defaultDecisionEnabled = $true
+		defaultDecision = "Approve"
+		instanceDurationInDays = 0
+		autoApplyDecisionsEnabled = $true
+		recommendationsEnabled = $true
+		recurrence = @{
+			pattern = @{
+				type = "absoluteMonthly"
+				interval = 3
+				month = 0
+				dayOfMonth = 0
+				daysOfWeek = @(
 				)
-				FirstDayOfWeek = "sunday"
-				Index = "first"
+				firstDayOfWeek = "sunday"
+				index = "first"
 			}
-			Range = @{
-				Type = "numbered"
-				NumberOfOccurrences = 0
-				RecurrenceTimeZone = $null
-				StartDate = "2021-02-10"
-				EndDate = "2022-12-21"
+			range = @{
+				type = "numbered"
+				numberOfOccurrences = 0
+				recurrenceTimeZone = $null
+				startDate = "2021-02-10"
+				endDate = "2022-12-21"
 			}
 		}
-		ApplyActions = @(
+		applyActions = @(
 			@{
 				"@odata.type" = "#microsoft.graph.removeAccessApplyAction"
 			}

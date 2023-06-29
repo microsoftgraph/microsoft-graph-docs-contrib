@@ -18,7 +18,7 @@ $requestBody->setSubject('User Token Meeting');
 
 
 
-$requestResult = $graphServiceClient->me()->onlineMeetings()->post($requestBody);
+$result = $graphServiceClient->me()->onlineMeetings()->post($requestBody);
 
 
 ```

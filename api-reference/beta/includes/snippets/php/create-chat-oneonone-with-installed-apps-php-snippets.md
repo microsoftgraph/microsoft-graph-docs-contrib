@@ -12,20 +12,20 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new Chat();
 $requestBody->setChatType(new ChatType('oneonone'));
 
-$membersConversationMember1 = new ConversationMember();
+$membersConversationMember1 = new AadUserConversationMember();
 $membersConversationMember1->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember1->setRoles(['owner', ]);
 
 $additionalData = [
-'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'8b081ef6-4792-4def-b2c9-c363a1bf41d5\')', 
+	'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'8b081ef6-4792-4def-b2c9-c363a1bf41d5\')', 
 ];
 $membersConversationMember1->setAdditionalData($additionalData);
 
 
 
 $membersArray []= $membersConversationMember1;
-$membersConversationMember2 = new ConversationMember();
+$membersConversationMember2 = new AadUserConversationMember();
 $membersConversationMember2->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember2->setRoles(['owner', ]);
@@ -55,7 +55,7 @@ $requestBody->setInstalledApps($installedAppsArray);
 
 
 
-$requestResult = $graphServiceClient->chats()->post($requestBody);
+$result = $graphServiceClient->chats()->post($requestBody);
 
 
 ```

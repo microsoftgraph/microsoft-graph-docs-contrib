@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestFilter := "displayName eq 'A Contoso Team'"
 
-requestParameters := &graphconfig.TeamsRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"id","description"},
 }
-configuration := &graphconfig.TeamsRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

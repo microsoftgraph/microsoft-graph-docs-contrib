@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new ConditionalAccessPolicy
 {
-	DisplayName = "Policy for risky sign-in block access",
+	DisplayName = "Policy for risky sign-in",
 	State = ConditionalAccessPolicyState.Enabled,
 	Conditions = new ConditionalAccessConditionSet
 	{
@@ -37,7 +39,7 @@ var requestBody = new ConditionalAccessPolicy
 		Operator = "OR",
 		BuiltInControls = new List<ConditionalAccessGrantControl?>
 		{
-			ConditionalAccessGrantControl.Block,
+			ConditionalAccessGrantControl.Mfa,
 		},
 	},
 };

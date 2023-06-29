@@ -59,7 +59,7 @@ The following is an example of the request.
   "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "71d64d0e-7225-49b6-b0b1-070d476cda51"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
+GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffMembers/71d64d0e-7225-49b6-b0b1-070d476cda51
 ```
 
 # [C#](#tab/csharp)
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-bookingstaffmember-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-bookingstaffmember-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

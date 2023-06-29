@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->print()->sharesById('printerShare-id')->delete();
+$graphServiceClient->print()->shares()->byShareId('printerShare-id')->delete();
 
 
 ```

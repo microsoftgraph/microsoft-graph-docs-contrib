@@ -17,7 +17,7 @@ $audience->setId('8c4eb1eb-d7a3-4633-8e2f-f926e82df08e');
 
 
 $requestBody->setAudience($audience);
-$complianceChangesComplianceChange1 = new ComplianceChange();
+$complianceChangesComplianceChange1 = new ContentApproval();
 $complianceChangesComplianceChange1->set@odatatype('#microsoft.graph.windowsUpdates.contentApproval');
 
 
@@ -25,20 +25,15 @@ $complianceChangesArray []= $complianceChangesComplianceChange1;
 $requestBody->setComplianceChanges($complianceChangesArray);
 
 
-$complianceChangeRulesComplianceChangeRule1 = new ComplianceChangeRule();
+$complianceChangeRulesComplianceChangeRule1 = new ContentApprovalRule();
 $complianceChangeRulesComplianceChangeRule1->set@odatatype('#microsoft.graph.windowsUpdates.contentApprovalRule');
 
-$additionalData = [
-'contentFilter' => $complianceChangeRulesComplianceChangeRule1 = new ContentFilter();
-$	complianceChangeRulesComplianceChangeRule1->set@odatatype('#microsoft.graph.windowsUpdates.driverUpdateFilter');
+$complianceChangeRulesComplianceChangeRule1ContentFilter = new DriverUpdateFilter();
+$complianceChangeRulesComplianceChangeRule1ContentFilter->set@odatatype('#microsoft.graph.windowsUpdates.driverUpdateFilter');
 
 
-$complianceChangeRulesComplianceChangeRule1->setContentFilter($contentFilter);
-
-'durationBeforeDeploymentStart' => 'P7D', 
-];
-$complianceChangeRulesComplianceChangeRule1->setAdditionalData($additionalData);
-
+$complianceChangeRulesComplianceChangeRule1->setContentFilter($complianceChangeRulesComplianceChangeRule1ContentFilter);
+$complianceChangeRulesComplianceChangeRule1->setDurationBeforeDeploymentStart(new \DateInterval('P7D'));
 
 
 $complianceChangeRulesArray []= $complianceChangeRulesComplianceChangeRule1;
@@ -49,7 +44,7 @@ $deploymentSettings = new DeploymentSettings();
 $deploymentSettings->set@odatatype('microsoft.graph.windowsUpdates.deploymentSettings');
 
 $deploymentSettingsSchedule = new ScheduleSettings();
-$deploymentSettingsScheduleGradualRollout = new GradualRolloutSettings();
+$deploymentSettingsScheduleGradualRollout = new RateDrivenRolloutSettings();
 $deploymentSettingsScheduleGradualRollout->set@odatatype('#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings');
 
 $deploymentSettingsScheduleGradualRollout->setDurationBetweenOffers(new \DateInterval('P1D'));
@@ -68,7 +63,7 @@ $deploymentSettings->setSchedule($deploymentSettingsSchedule);
 $requestBody->setDeploymentSettings($deploymentSettings);
 
 
-$requestResult = $graphServiceClient->admin()->windows()->updates()->updatePolicies()->post($requestBody);
+$result = $graphServiceClient->admin()->windows()->updates()->updatePolicies()->post($requestBody);
 
 
 ```

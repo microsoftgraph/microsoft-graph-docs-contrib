@@ -18,14 +18,15 @@ $postBody->setContent('<html><body><div><div><div><div>When and where? </div></d
 
 
 $post->setBody($postBody);
-$extensionsExtension1 = new Extension();
+$extensionsExtension1 = new OpenTypeExtension();
 $extensionsExtension1->set@odatatype('microsoft.graph.openTypeExtension');
 
+$extensionsExtension1->setExtensionName('Com.Contoso.HR');
+
 $additionalData = [
-'extensionName' => 'Com.Contoso.HR', 
-'companyName' => 'Contoso', 
-'expirationDate' => '2015-07-03T13:04:00.000Z', 
-'topPicks' => ['Employees only', 'Add spouse or guest', 'Add family', ],
+		'companyName' => 'Contoso', 
+		'expirationDate' => '2015-07-03T13:04:00.000Z', 
+		'topPicks' => ['Employees only', 'Add spouse or guest', 'Add family', ],
 ];
 $extensionsExtension1->setAdditionalData($additionalData);
 
@@ -39,7 +40,7 @@ $post->setExtensions($extensionsArray);
 $requestBody->setPost($post);
 
 
-$graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->postsById('post-id')->reply()->post($requestBody);
+$graphServiceClient->groups()->byGroupId('group-id')->threads()->byThreadId('conversationThread-id')->posts()->byPostId('post-id')->reply()->post($requestBody);
 
 
 ```
