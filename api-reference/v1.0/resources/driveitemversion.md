@@ -1,6 +1,6 @@
 ---
 title: "driveItemVersion resource type"
-description: "Represents a specific version of a DriveItem."
+description: "Represents a specific version of a driveItem."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 author: "JeremyKelley"
@@ -31,14 +31,14 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 
 ## Properties
 
-|      Property name       |                         Type                         |                               Description                               |
-| :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **content**              | Stream                                               | The content stream for this version of the item.                        |
-| **id**                   | string                                               | The ID of the version. Read-only.                                       |
-| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
-| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
-| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
-| **size**                 | Int64                                                | Indicates the size of the content stream for this version of the item.  |
+|      Property        |                         Type                         |                               Description                               |
+| :------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
+| content              | Stream                                               | The content stream for this version of the item.                        |
+| id                   | String                                               | The ID of the version. Read-only.                                       |
+| lastModifiedBy       | [identitySet](../resources/identityset.md)           | Identity of the user who last modified the version. Read-only.          |
+| lastModifiedDateTime | [DateTimeOffset](../resources/timestamp.md)          | Date and time when the version was last modified. Read-only.            |
+| publication          | [publicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
+| size                 | Int64                                                | Indicates the size of the content stream for this version of the item.  |
 
 
 ## Instance attributes
@@ -48,10 +48,12 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 | @microsoft.graph.downloadUrl      | string | A URL that can be used to download this version of the file's content. Authentication is not required with this URL. Read-only.
 
 >**Notes:** 
->The `@microsoft.graph.downloadUrl` value is a short-lived URL and can't be cached. The URL will only be available for a short period of time (1 hour) before it is invalidated.
+>The `@microsoft.graph.downloadUrl` value is a short-lived URL and can't be cached. The URL is only available for a short period of time (1 hour) before it is invalidated.
 Removing file permissions for a user might not immediately invalidate the URL.
 
 ## JSON representation
+
+The following is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
@@ -63,11 +65,11 @@ Removing file permissions for a user might not immediately invalidate the URL.
 ```json
 {
   "content": { "@odata.type": "Edm.Stream" },
-  "id": "string",
+  "id": "String",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
+  "lastModifiedDateTime": "String (timestamp)",
   "publication": { "@odata.type": "microsoft.graph.publicationFacet" },
-  "size": 12356,
+  "size": "Int64",
 
   /* instance annotations */
   "@microsoft.graph.downloadUrl": "url",
