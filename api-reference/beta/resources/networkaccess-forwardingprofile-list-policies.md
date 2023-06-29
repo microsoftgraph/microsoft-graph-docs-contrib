@@ -20,9 +20,9 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List forwardingPolicyLinks](../api/s networkaccess-forwardingprofile-list-policies.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) collection|Get a list of the [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) objects and their properties.|
-|[Get forwardingPolicyLink](../api/networkaccess-forwardingpolicylink-get.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) object.|
-|[Update forwardingPolicyLink](../api/networkaccess-forwardingpolicylink-update.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md)|Update the properties of a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) object.|
+|[List forwardingPolicyLinks](../api/s networkaccess-forwardingprofile-list-policies.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingprofile-list-policies) collection|Get a list of the [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingprofile-list-policies) objects and their properties.|
+|[Get forwardingPolicyLink](../api/networkaccess-forwardingpolicylink-get.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingprofile-list-policies)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingprofile-list-policies) object.|
+|[Update forwardingPolicyLink](../api/networkaccess-forwardingpolicylink-update.md)|[microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingprofile-list-policies)|Update the properties of a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingprofile-list-policies) object.|
 
 ## Properties
 |Property|Type|Description|
