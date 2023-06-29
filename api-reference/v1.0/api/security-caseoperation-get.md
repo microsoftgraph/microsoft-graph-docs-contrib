@@ -131,6 +131,6 @@ To automate the process and avoid the interactive sign-in page, please follow th
 2. Once the application is provisioned, request user-delegated permissions for discovery.Download.Read from the tenant admin. This request should be made from your third-party application interacting with Microsoft Graph.
 3. Make sure the tenant admin approves the request.
 4. Add the scope for the application to your existing script and make sure the headers include ("X-AllowWithAADToken", "true");. 
-With these steps, user authorisation will take place in the automated manner and you will not receive manual interactive sign in page. 
+By following these steps, the user authorization process will be automated, and you won't encounter a manual interactive sign-in page.
 
 
