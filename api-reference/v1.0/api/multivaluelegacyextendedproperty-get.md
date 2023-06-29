@@ -180,14 +180,13 @@ The response body includes all the properties of the specified event and extende
 Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "response" 
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
 } -->
 
 ```http
 HTTP/1.1 200 OK
-```
-<!--
-
 Content-type: application/json
 
 {
@@ -294,7 +293,7 @@ Content-type: application/json
     "calendar@odata.navigationLink": "https://graph.microsoft.com/v1.0/users('4d29052a-70e8-4251-a7de-542b522cdf25')/calendars('AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQAuAAAAAABaZwRaNsIxTp0lpjY1il_IAQAXjnwa91gDSKOqCnaDInDMAAAAAAENAAA=')"
 }
 ```
--->
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
