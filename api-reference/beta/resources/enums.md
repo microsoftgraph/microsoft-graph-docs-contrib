@@ -3977,3 +3977,11 @@ Possible values for user account types (group membership), per Windows definitio
 | presentation_verified |
 | unknownFutureValue    |
 
+### rolePrincipalTypes values
+
+|Member|
+|:---|
+|user|
+|servicePrincipal|
+|group|
+|unknownFutureValue|

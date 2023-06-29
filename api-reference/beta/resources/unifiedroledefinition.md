@@ -38,6 +38,7 @@ The following RBAC providers are currently supported:
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|allowedPrincipalTypes|rolePrincipalTypes|Types of principals that can be assigned the role. Read-only. The possible values are: `user`, `servicePrincipal`, `group`, `unknownFutureValue`. This is a multi-valued enumeration that can contain up to three values as a comma-separated string. For example, `user, group`. Optional.|
 |description|String| The description for the unifiedRoleDefinition. Read-only when **isBuiltIn** is true. |
 |displayName|String| The display name for the unifiedRoleDefinition. Read-only when **isBuiltIn** is true. Required.  Supports `$filter` (`eq` and `startsWith` operators only).|
 |id|String| The unique identifier for the unifiedRoleDefinition. Key, not nullable, Read-only.  Supports `$filter` (`eq` operator only). |
@@ -69,6 +70,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "allowedPrincipalTypes": "String",
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
