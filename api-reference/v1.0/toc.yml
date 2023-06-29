@@ -1729,8 +1729,6 @@ items:
                 items:
                   - name: Organized by printer
                     items:
-                      - name: List daily reports
-                        href: api/reportroot-list-dailyprintusage.md
                       - name: Get
                         href: api/printusagebyprinter-get.md
                       - name: List a printer's archived print jobs
