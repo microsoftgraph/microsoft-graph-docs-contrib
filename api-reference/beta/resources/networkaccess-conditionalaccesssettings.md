@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessSettings resource type"
-description: "Conditional access settings defines how you can restore users source IP and how you can use compliant network validation." validation ensures the user is connecting from a verified network."
+description: "Conditional access settings defines how you can restore users source IP and how you can use compliant network validation to ensure that the user is connecting from a verified network."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access

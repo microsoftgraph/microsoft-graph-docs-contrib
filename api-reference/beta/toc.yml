@@ -12453,7 +12453,7 @@ items:
           - name: Update
             href: api/networkaccess-branchsite-update.md
           - name: Delete
-            href: api/networkaccess-networkaccessroot-delete-branches.md
+            href: api/networkaccess-branchsite-delete.md
           - name: Create
             href: api/networkaccess-connectivity-post-branches.md
           - name: Create with device links
