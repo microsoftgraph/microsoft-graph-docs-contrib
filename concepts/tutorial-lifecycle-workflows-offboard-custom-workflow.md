@@ -23,7 +23,7 @@ This post off-boarding scenario will run a workflow on-demand and accomplish the
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ The tenant you want to use the Lifecycle Workflows feature with an Entra ID Governance license enabled.
++ The tenant you want to use the Lifecycle Workflows feature with a Microsoft Entra ID Governance license enabled.
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Lifecycle Administrator or Global Administrator Azure AD role.
 + Grant yourself the following *LifecycleWorkflows.ReadWrite.All* delegated permission.
 + Create a test user account that you'll use to represent an employee leaving your organization. This test user account will be deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
