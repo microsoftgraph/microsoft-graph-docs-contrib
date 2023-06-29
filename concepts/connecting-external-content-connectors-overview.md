@@ -22,7 +22,7 @@ Today, with Microsoft Graph connectors, the data you bring in from your organiza
 - [Microsoft Search](microsoftsearch/overview-microsoft-search) (GA)
 - [Context IQ in Outlook Web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) (GA)
 - [Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) (coming soon)
-- [Microsoft 365 App](https://office.com) (formerly known as [Office.com](https://office.com)) (coming soon)
+- [Microsoft 365 Hub](https://office.com) (formerly known as [Office.com](https://office.com)) (coming soon)
 
 ## Get started with custom connectors
 
