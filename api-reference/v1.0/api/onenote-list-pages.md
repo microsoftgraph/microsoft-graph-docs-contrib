@@ -51,16 +51,18 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 ##### Request
 Here is an example of the request.
-<!-- { "blockType": "ignored", "name" : "onenote_list_pages"  } -->
+<!-- { "blockType": "request", "name" : "onenote_list_pages"  } -->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/pages
 ```
+
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.page"
+  "@odata.type": "microsoft.graph.pageLinks"
 } -->
 ```http
 HTTP/1.1 200 OK
