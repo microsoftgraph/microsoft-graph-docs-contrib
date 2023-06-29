@@ -55,7 +55,7 @@ If successful, this method returns a `201 Created` response code and the new [pa
 
 ## Example
 ### Request
-Here is an example of the request.
+The following is an example of a request.
 
 In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../onenote/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.
 
@@ -102,9 +102,9 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ### Response
-Here is an example of the response. 
+The following example shows the response. 
 
-> Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here is shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
