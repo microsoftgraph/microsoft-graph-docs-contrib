@@ -17,8 +17,9 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve a list of **accessPackageResourceRoleScope** objects for an access package. |
-| [Create accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Create a new **accessPackageResourceRoleScope** object for an access package. |
+| [List accessPackageResourceRoleScopes](../api/accesspackage-list-resourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve a list of **accessPackageResourceRoleScope** objects for an access package. |
+| [Create accessPackageResourceRoleScope](../api/accesspackage-post-resourcerolescopes.md) | | Create a new **accessPackageResourceRoleScope** object for an access package. |
+| [Delete accessPackageResourceRoleScope](../api/accesspackage-delete-resourcerolescopes.md) | | Delete an **accessPackageResourceRoleScope** object from an access package. |
 
 ## Properties
 
