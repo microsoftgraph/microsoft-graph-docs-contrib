@@ -11,6 +11,34 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### binaryOperator values 
+
+|Member|
+|:---|
+|or|
+|and|
+
+### conditionalAccessExternalTenantsMembershipKind values
+
+| Member             |
+|:-------------------|
+| all                |
+| enumerated         |
+| unknownFutureValue |
+
+### conditionalAccessGuestOrExternalUserTypes values
+
+| Member                 |
+|:-----------------------|
+| none                   |
+| internalGuest          |
+| b2bCollaborationGuest  |
+| b2bCollaborationMember |
+| b2bDirectConnectUser   |
+| otherExternalUser      |
+| serviceProvider        |
+| unknownFutureValue     |
+
 ### appCredentialRestrictionType values
 
 | Member               |
@@ -720,7 +748,6 @@ Namespace: microsoft.graph
 | :----------------- |
 | working            |
 | submitted          |
-| released           |
 | returned           |
 | unknownFutureValue |
 | reassigned         |
@@ -1747,8 +1774,6 @@ Possible values for user account types (group membership), per Windows definitio
 | Member
 |:-------
 | low
-| medium
-| high
 
 ### permissionType values
 
@@ -2349,6 +2374,62 @@ Possible values for user account types (group membership), per Windows definitio
 |migrationComplete|
 |unknownFutureValue|
 
+### authenticationStrengthPolicyType values
+
+|Member|
+|:---|
+|builtIn|
+|custom|
+|unknownFutureValue|
+
+### authenticationStrengthRequirements values
+
+|Member|
+|:---|
+|none|
+|mfa|
+|unknownFutureValue|
+
+### authenticationMethodModes values
+
+|Member|
+|:---|
+|password|
+|voice|
+|hardwareOath|
+|softwareOath|
+|sms|
+|fido2|
+|windowsHelloForBusiness|
+|microsoftAuthenticatorPush|
+|deviceBasedPush|
+|temporaryAccessPassOneTime|
+|temporaryAccessPassMultiUse|
+|email|
+|x509CertificateSingleFactor|
+|x509CertificateMultiFactor|
+|federatedSingleFactor|
+|federatedMultiFactor|
+|unknownFutureValue|
+
+### baseAuthenticationMethod values
+
+|Member|
+|:---|
+|password|
+|voice|
+|hardwareOath|
+|softwareOath|
+|sms|
+|fido|
+|microsoftAuthenticator|
+|windowsHelloForBusiness|
+|temporaryAccessPass|
+|email|
+|x509Certificate|
+|federation|
+|unknownFutureValue|
+
 ### browserSharedCookieSourceEnvironment values
 
 | Member|
@@ -2421,63 +2502,13 @@ Possible values for user account types (group membership), per Windows definitio
 |pending|
 |unknownFutureValue|
 
-### authenticationMethodFeature values 
+### chatMessageActions values 
 
 |Member|
 |:---|
-|ssprRegistered|
-|ssprEnabled|
-|ssprCapable|
-|passwordlessCapable|
-|mfaCapable|
-|unknownFutureValue|
-
-### featureType values 
-
-|Member|
-|:---|
-|registration|
-|reset|
-|unknownFutureValue|
-
-### includedUserRoles values 
-
-|Member|
-|:---|
-|all|
-|privilegedAdmin|
-|admin|
-|user|
-|unknownFutureValue|
-
-### includedUserTypes values 
-
-|Member|
-|:---|
-|all|
-|member|
-|guest|
-|unknownFutureValue|
-
-### signInUserType values 
-
-|Member|
-|:---|
-|member|
-|guest|
-|unknownFutureValue|
-
-### userDefaultAuthenticationMethod values 
-
-|Member|
-|:---|
-|push|
-|oath|
-|voiceMobile|
-|voiceAlternateMobile|
-|voiceOffice|
-|sms|
-|none|
+|reactionAdded|
+|reactionRemoved|
+|actionUndefined|
 |unknownFutureValue|
 
 ### outlierMemberType values 
@@ -2493,3 +2524,63 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |group|
 |unknownFutureValue|
+
+### authenticationMethodFeature values
+
+|Member|
+|:---|
+|ssprRegistered|
+|ssprEnabled|
+|ssprCapable|
+|passwordlessCapable|
+|mfaCapable|
+|unknownFutureValue|
+
+### featureType values
+
+|Member|
+|:---|
+|registration|
+|reset|
+|unknownFutureValue|
+
+### includedUserRoles values
+
+|Member|
+|:---|
+|all|
+|privilegedAdmin|
+|admin|
+|user|
+|unknownFutureValue|
+
+### includedUserTypes values
+
+|Member|
+|:---|
+|all|
+|member|
+|guest|
+|unknownFutureValue|
+
+### signInUserType values
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
+### userDefaultAuthenticationMethod values
+
+|Member|
+|:---|
+|push|
+|oath|
+|voiceMobile|
+|voiceAlternateMobile|
+|voiceOffice|
+|sms|
+|none|
+|unknownFutureValue|
+

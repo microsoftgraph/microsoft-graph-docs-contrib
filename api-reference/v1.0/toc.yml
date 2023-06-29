@@ -6934,7 +6934,18 @@ items:
                 href: resources/provisioningobjectsummary.md
                 items:
                   - name: List provisioning
-                    href: api/provisioningobjectsummary-list.md
+                    href: api/provisioningobjectsummary-list.md                      
+          - name: Identity and access reports
+            items:
+            - name: Registration and usage
+              items:
+              - name: User registration details
+                href: resources/userregistrationdetails.md
+                items:
+                - name: List
+                  href: api/authenticationmethodsroot-list-userregistrationdetails.md
+                - name: Get
+                  href: api/userregistrationdetails-get.md
           - name: Microsoft 365 usage reports
             items:
               - name: Overview
