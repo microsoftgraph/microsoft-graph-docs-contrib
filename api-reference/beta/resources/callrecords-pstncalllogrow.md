@@ -31,6 +31,10 @@ Represents a row of data in the public switched telephone network (PSTN) call lo
 |callId|String|Call identifier. Not guaranteed to be unique.|
 |callType|String|Indicates whether the call was a PSTN outbound or inbound call and the type of call such as a call placed by a user or an audio conference.|
 |charge|Decimal|Amount of money or cost of the call that is charged to your account.|
+|clientLocalIpV4Address|String|Local IPv4 of the client that is retrieved from the operating system of the client.|
+|clientLocalIpV6Address|String|Local IPv6 of the client that is retrieved from the operating system of the client.|
+|clientPublicIpV4Address|String|Public IPv4 of the client that can be used to determine the location of the client.|
+|clientPublicIpV6Address|String|Public IPv6 of the client that can be used to determine the location of the client.|
 |conferenceId|String|ID of the audio conference.|
 |connectionCharge|Decimal|Connection fee price.|
 |currency|String|Type of currency used to calculate the cost of the call ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)).|
@@ -74,6 +78,10 @@ The following is a JSON representation of the resource.
   "callId": "String",
   "callType": "String",
   "charge": "Decimal",
+  "clientLocalIpV4Address": "String",
+  "clientLocalIpV6Address": "String",
+  "clientPublicIpV4Address": "String",
+  "clientPublicIpV6Address": "String",
   "conferenceId": "String",
   "connectionCharge": "Decimal",
   "currency": "String",

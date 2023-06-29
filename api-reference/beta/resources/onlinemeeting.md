@@ -41,6 +41,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | allowRecording | Boolean | Indicates whether recording is enabled for the meeting. |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. |
 | alternativeRecording  | Stream | The content stream of the alternative recording of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
+| anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity will be anonymized in the meeting. Possible values are: `attendee`. The `attendee` value cannot be removed through a PATCH operation once added.|
 | attendeeReport        | Stream | The content stream of the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only.   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
@@ -106,8 +107,8 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
-| registration | [meetingRegistrationBase](meetingregistrationbase.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
+| attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md) collection | The attendance reports of an online meeting. Read-only. |
+| registration | [meetingRegistration](meetingregistration.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
 | meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of the latest online meeting session. Read-only. |
 | transcripts | [callTranscript](callTranscript.md) collection | The transcripts of an online meeting. Read-only. |
 
@@ -120,8 +121,9 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
-  "externalId"
+	"externalId"
   ],
   "@odata.type": "microsoft.graph.onlineMeeting"
 }-->
@@ -133,6 +135,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
   "allowTeamworkReactions": "Boolean",
   "allowedPresenters": "String",
   "alternativeRecording": "Stream",
+  "anonymizeIdentityForRoles": ["String"],
   "attendeeReport": "Stream",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},

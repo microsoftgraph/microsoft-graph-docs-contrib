@@ -31,11 +31,9 @@ previewText.SetContent(&content)
 requestBody.SetPreviewText(previewText)
 activityType := "eventCreated"
 requestBody.SetActivityType(&activityType) 
-recipient := graphmodels.NewTeamworkNotificationRecipient()
-additionalData := map[string]interface{}{
-	"chatId" : "19:d65713bc498c4a428c71ef9353e6ce20@thread.v2", 
-}
-recipient.SetAdditionalData(additionalData)
+recipient := graphmodels.NewChatMembersNotificationRecipient()
+chatId := "19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"
+recipient.SetChatId(&chatId) 
 requestBody.SetRecipient(recipient)
 
 graphClient.Chats().ByChatId("chat-id").SendActivityNotification().Post(context.Background(), requestBody, nil)

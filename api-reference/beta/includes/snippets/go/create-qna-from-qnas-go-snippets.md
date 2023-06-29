@@ -34,13 +34,11 @@ keywords := []string {
 	"labor day",
 	"thanksgiving",
 	"christmas",
-
 }
 keywords.SetKeywords(keywords)
 reservedKeywords := []string {
 	"holidays",
 	"paid days off",
-
 }
 keywords.SetReservedKeywords(reservedKeywords)
 matchSimilarKeywords := true
@@ -52,13 +50,11 @@ availabilityEndDateTime , err := time.Parse(time.RFC3339, "2021-12-31T20:01:37Z"
 requestBody.SetAvailabilityEndDateTime(&availabilityEndDateTime) 
 languageTags := []string {
 	"en-us",
-
 }
 requestBody.SetLanguageTags(languageTags)
-platforms := []graphmodelssearch.DevicePlatformTypeable {
+platforms := []graphmodels.DevicePlatformTypeable {
 	devicePlatformType := graphmodels.IOS_DEVICEPLATFORMTYPE 
-	requestBody.SetDevicePlatformType(&devicePlatformType) 
-
+	requestBody.SetDevicePlatformType(&devicePlatformType)
 }
 requestBody.SetPlatforms(platforms)
 state := graphmodels.PUBLISHED_ANSWERSTATE 

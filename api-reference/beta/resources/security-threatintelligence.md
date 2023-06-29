@@ -36,6 +36,7 @@ The threat intelligence API allows you to operationalize intelligence found with
 |[List intelProfiles](../api/security-intelligenceprofile-list.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Get a list of **intelligenceProfile** resources.|
 |[Get hostTracker](../api/security-hosttracker-get.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) |Get a list of **hostTracker** resources.|
 |[Get passiveDnsRecord](../api/security-passivednsrecord-get.md)|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) |Get the properties and relationships of a **hostTracker** object.|
+|[Get subdomain](../api/security-subdomain-get.md)|[microsoft.graph.security.subdomain](../resources/security-subdomain.md) |Get the properties and relationships of a **subdomain** object.|
 |[Get vulnerabilities](../api/security-vulnerability-get.md)|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) |Get the properties and relationships of a **vulnerability** object.|
 
 ## Properties
@@ -55,6 +56,7 @@ None.
 |intelProfiles|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|A list of **intelligenceProfile** objects.|
 |intelProfileIndicators|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|Refers to indicators of threat or compromise highlighted in a [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md).<br/>**Note**: List retrieval is not yet supported.|
 |passiveDnsRecords|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Retrieve details about [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) objects.<br/>**Note**: List retrieval is not yet supported.|
+|subdomains|[microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection|Retrieve details about the [microsoft.graph.security.subdomain](../resources/security-subdomain.md).<br/>**Note**: List retrieval is not yet supported.|
 |vulnerabilities|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) collection|Retrieve details about [microsoft.graph.security.vulnerabilities](../resources/security-vulnerability.md).<br/>**Note**: List retrieval is not yet supported.|
 
 ## JSON representation

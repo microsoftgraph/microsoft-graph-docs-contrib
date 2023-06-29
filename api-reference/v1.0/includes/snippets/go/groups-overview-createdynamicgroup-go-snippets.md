@@ -23,7 +23,6 @@ requestBody.SetDisplayName(&displayName)
 groupTypes := []string {
 	"Unified",
 	"DynamicMembership",
-
 }
 requestBody.SetGroupTypes(groupTypes)
 mailEnabled := true

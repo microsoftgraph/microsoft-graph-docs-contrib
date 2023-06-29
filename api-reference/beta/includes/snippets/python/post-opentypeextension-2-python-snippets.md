@@ -7,11 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = Extension()
+request_body = OpenTypeExtension()
 request_body.@odata_type = 'microsoft.graph.openTypeExtension'
 
+request_body.extension_name = 'Com.Contoso.Referral'
+
 additional_data = [
-'extension_name' => 'Com.Contoso.Referral', 
 'company_name' => 'Wingtip Toys', 
 'deal_value' => 500050,
 'expiration_date' => '2015-12-03T10:00:00.000Z', 

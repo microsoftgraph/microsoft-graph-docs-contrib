@@ -9,16 +9,12 @@ client =  GraphServiceClient(request_adapter)
 
 request_body = ReplyAllPostRequestBody()
 message = Message()
-attachments_attachment1 = Attachment()
+attachments_attachment1 = FileAttachment()
 attachments_attachment1.@odata_type = '#microsoft.graph.fileAttachment'
 
 attachments_attachment1.name = 'guidelines.txt'
 
-additional_data = [
-'content_bytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
-];
-attachments_attachment1.additional_data(additional_data)
-
+attachments_attachment1.ContentBytes(base64_decode('bWFjIGFuZCBjaGVlc2UgdG9kYXk='))
 
 
 attachmentsArray []= attachmentsAttachment1;

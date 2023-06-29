@@ -12,7 +12,7 @@ request_body.chattype(ChatType.Group('chattype.group'))
 
 request_body.topic = 'Group chat title'
 
-members_conversation_member1 = ConversationMember()
+members_conversation_member1 = AadUserConversationMember()
 members_conversation_member1.@odata_type = '#microsoft.graph.aadUserConversationMember'
 
 members_conversation_member1.Roles(['owner', ])
@@ -25,7 +25,7 @@ members_conversation_member1.additional_data(additional_data)
 
 
 membersArray []= membersConversationMember1;
-members_conversation_member2 = ConversationMember()
+members_conversation_member2 = AadUserConversationMember()
 members_conversation_member2.@odata_type = '#microsoft.graph.aadUserConversationMember'
 
 members_conversation_member2.Roles(['owner', ])
@@ -38,7 +38,7 @@ members_conversation_member2.additional_data(additional_data)
 
 
 membersArray []= membersConversationMember2;
-members_conversation_member3 = ConversationMember()
+members_conversation_member3 = AadUserConversationMember()
 members_conversation_member3.@odata_type = '#microsoft.graph.aadUserConversationMember'
 
 members_conversation_member3.Roles(['guest', ])
