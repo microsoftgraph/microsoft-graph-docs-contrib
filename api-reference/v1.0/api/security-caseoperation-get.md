@@ -128,7 +128,7 @@ Content-Type: application/json
 **Note:** If you need to perform an export operation, the response will include the downloadURL, fileName, and size in the exportfileMetadata property. You will be responsible for managing the actual download process. You can choose to download the file to your local machine or export it to your storage account.
 To automate the process and avoid the interactive sign-in page, please follow these steps:
 1. Provision the Microsoft Purview eDiscovery application by leveraging [Create ServicePrincpal](../api/serviceprincipal-post-serviceprincipals.md) for the application id b26e684c-5068-4120-a679-64a5d2c909d9.
-2. After provisioning, please raise request for user delegated permission of ediscovery.Download.Read for the above application from your third party application which you would be using for the graph. 
+2. Once the application is provisioned, request user-delegated permissions for discovery.Download.Read from the tenant admin. This request should be made from your third-party application interacting with Microsoft Graph.
 3. Ensure the tenant admin approve the request
 4. Now, you can add the scope for the application to your existing scope in the script and ensure the headers allow ("X-AllowWithAADToken", "true"); 
 With these steps, user authorisation will take place in the automated manner and you will not receive manual interactive sign in page. 
