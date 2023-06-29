@@ -1,18 +1,18 @@
 ---
-title: "Delete branch"
-description: "Delete a specific branch."
+title: "Onboard tenant"
+description: "Initiate the process to onboard the tenant to the Global Secure Access service."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Delete branchSite
+# Onboard tenant
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a specific branch.
+Initiate the onboarding process for a specific tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,20 +32,21 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /networkAccess/branches/{branchSiteId}/
+POST /networkAccess/microsoft.graph.networkaccess.onboard
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code and a [microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) object in the response body.
 
 ## Examples
 
@@ -53,11 +54,11 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_branchsite"
+  "name": "create_tenantstatus_from_"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}
+POST https://graph.microsoft.com/beta/networkAccess/microsoft.graph.networkaccess.onboard
 ```
 
 
@@ -66,11 +67,11 @@ The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.networkaccess.tenantStatus"
 }
 -->
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 

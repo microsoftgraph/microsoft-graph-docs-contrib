@@ -1,5 +1,5 @@
 ---
-title: "List forwardingRules"
+title: "List policyRules"
 description: "Retrieve a list of forwarding rules within a forwarding profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# List forwardingRules
+# List policyRules
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -32,11 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkaccess/forwardingprofile/{forwardingprofileId}/policyRules/
+GET /networkaccess/forwardingprofile/{forwardingprofileId}/policyRules/
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters.
 
 ## Request headers
 |Name|Description|
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [forwardingRule](../resources/networkaccess-forwardingrule.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [policyRule](../resources/networkaccess-policyrule.md) objects in the response body.
 
 ## Examples
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_forwardingrule"
+  "name": "list_policyrule"
 }
 -->
 ``` http
@@ -70,7 +70,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.networkaccess.forwardingRule)"
+  "@odata.type": "Collection(microsoft.graph.networkaccess.policyRule)"
 }
 -->
 ``` http
@@ -80,7 +80,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.networkaccess.forwardingRule",
+      "@odata.type": "#microsoft.graph.networkaccess.policyRule",
       "id": "d20eb417-05d7-3d2d-1805-0d4caeea1e8e",
       "name": "String",
       "ruleType": "String",

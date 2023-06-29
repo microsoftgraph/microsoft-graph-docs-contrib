@@ -27,14 +27,13 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Delete branchSite](../api/networkaccess-branchsite-delete.md)|None|Delete a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
 |[List deviceLinks](../api/networkaccess-branchsite-list-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Get the deviceLink resources from the deviceLinks navigation property.|
 |[Create deviceLink](../api/networkaccess-branchsite-post-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md)|Create a new deviceLink object.|
-|[List forwardingProfiles](../api/networkaccess-branchsite-list-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Get the forwardingProfile resources linked to this branchSite.|
-|[Update forwardingProfile](../api/networkaccess-forwardingprofile-update.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md)|Create a new forwardingProfile object.|
+|[List forwardingProfiles](../api/networkaccess-branchsite-get.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Get the forwardingProfile resources linked to this branchSite.|[Create forwardingProfile](../api/networkaccess-branchsite-post-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md)|Create a new forwardingProfile object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bandwidthCapacity|Int64|Determines the maximum allowed Mbps (magabits per second) bandwidth from a branch site. The possible values are:`250`,`500`,`750`,`1000`.|
-|connectivityState|microsoft.graph.networkaccess.connectivityState|Determines the branch site status.The possible values are: `pending`, `connected`, `inactive`, `error`.|
+|bandwidthCapacity|Int64|Determines the maximum allowed Mbps (megabits per second) bandwidth from a branch site. The possible values are:`250`,`500`,`750`,`1000`.|
+|connectivityState|microsoft.graph.networkaccess.connectivityState|Determines the branch site status. The possible values are: `pending`, `connected`, `inactive`, `error`.|
 |id|String|Identifier for the branch. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|last modified time.|
 |name|String|Name.|

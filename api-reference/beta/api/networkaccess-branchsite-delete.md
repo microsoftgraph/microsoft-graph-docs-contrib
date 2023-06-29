@@ -1,18 +1,18 @@
 ---
-title: "Update forwardingRule"
-description: "Update an existing forwarding rule within a forwarding policy."
+title: "Delete branchSite"
+description: "Delete a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Update forwardingRule
+# Delete branchSite
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an existing forwarding rule within a forwarding policy.
+Delete a specific branch.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
+DELETE /networkAccess/connectivity/branches/{branchSiteId}/
 ```
 
 ## Request headers
@@ -41,12 +41,7 @@ PATCH networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-You can specify the following properties when updating a **forwarding rule**.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|action|String|Action for the traffic, possible values are "Forward" or "Bypass". Required.|
-
+Do not supply a request body for this method.
 
 ## Response
 
@@ -58,11 +53,11 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_forwardingrule"
+  "name": "delete_branchsite"
 }
 -->
 ``` http
-PATCH /networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
+DELETE https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}
 ```
 
 

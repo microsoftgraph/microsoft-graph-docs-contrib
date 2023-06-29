@@ -15,7 +15,7 @@ Namespace: microsoft.graph.networkaccess
 
 The cross tenant access settings of a tenant determine the Universal tenant restrictions version 2. These restrictions provide comprehensive coverage by tagging all traffic, irrespective of the device's browser or operating system, facilitate branch and direct from device connectivity, and integrate natively with Microsoft 365 and Azure Active Directory.
 
-For more information about cross-tenant access settings, see [Universal tenant restrictions](https://github.com/azure/global-secure-access/how-to-universal-tenant-restrictions)."
+For more information about cross-tenant access settings, see [Universal tenant restrictions](https://github.com/azure/global-secure-access/how-to-universal-tenant-restrictions).
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).

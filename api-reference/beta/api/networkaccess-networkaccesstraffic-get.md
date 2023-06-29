@@ -36,7 +36,7 @@ GET /networkAccess/logs/traffic/{networkAccessTrafficId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters.
 
 ## Request headers
 |Name|Description|
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET /networkAccess/logs/traffic/{networkAccessTrafficId}
+GET https://graph.microsoft.com/beta/networkAccess/logs/traffic/{networkAccessTrafficId}
 ```
 
 

@@ -57,7 +57,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE /networkaccess/forwardingProfiles/{forwardingProfile_id}/policies/{policy_id}
+DELETE https://graph.microsoft.com/beta/networkaccess/forwardingProfiles/{forwardingProfile_id}/policies/{policy_id}
 ```
 
 

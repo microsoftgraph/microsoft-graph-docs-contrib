@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /networkAccess/branches/{branchSiteId}/forwardingProfiles
+PATCH /networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
 ```
 
 ## Request headers
@@ -57,7 +57,7 @@ You can specify the following properties when creating a **forwardingProfile**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -70,7 +70,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}/forwardingProfiles
+PATCH https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
 
 {
     "@context": "#$delta",
@@ -92,7 +92,7 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 

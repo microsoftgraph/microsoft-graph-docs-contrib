@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get tenantStatus](../api/networkaccess-tenantstatus-get.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) object.|
-|[Update tenantStatus](../api/networkaccess-networkaccessroot-post-tenantstatus.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Onboard the tenant to the Global Secure Access service.|
+|[Update tenantStatus](../api/networkaccess-networkaccessroot-onboard.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Onboard the tenant to the Global Secure Access service.|
 
 ## Properties
 |Property|Type|Description|

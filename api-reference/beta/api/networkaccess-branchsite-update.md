@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /networkAccess/branches/{branchSiteId}
+PATCH /networkAccess/connectivity/branches/{branchSiteId}
 ```
 
 ## Request headers
@@ -54,7 +54,7 @@ PATCH /networkAccess/branches/{branchSiteId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object in the response body.
 
 ## Examples
 
@@ -67,11 +67,10 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}
+PATCH https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}
 Content-Type: application/json
 
 {
-    "@context": "#$delta",
     "name": "My updated branch"
 }
 ```
@@ -91,17 +90,13 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches/$entity",
-    "id": "929a620e-fbfe-4041-bcc1-56431ca99606",
-    "name": "My updated branch",
-    "country": "Israel",
-    "region": "Center",
+    "id": "88e5a488-92c3-45d6-ba56-e5cfa63677e8",
+    "name": "test branch - 11:50",
+    "country": "United States",
+    "region": "East US",
     "version": "1.0.0",
     "bandwidthCapacity": 500,
-    "lastModifiedDateTime": "2023-05-24T08:51:15Z",
-    "forwardingProfiles@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches('929a620e-fbfe-4041-bcc1-56431ca99606')/forwardingProfiles",
-    "forwardingProfiles": [],
-    "deviceLinks@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches('929a620e-fbfe-4041-bcc1-56431ca99606')/deviceLinks",
-    "deviceLinks": []
+    "lastModifiedDateTime": "2023-05-24T08:22:02Z"
 }
 ```
 

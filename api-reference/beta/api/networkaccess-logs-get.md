@@ -36,7 +36,7 @@ GET /networkAccess/logs
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters.
 
 ## Request headers
 |Name|Description|
@@ -78,10 +78,42 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.networkaccess.logs",
-    "id": "91cc7fd8-f9af-976b-931b-9afd10810c91"
-  }
-}
+      "tenantId": "cb9af522-39fe-4056-b879-e3200ff37b3d",
+      "createdDateTime": "2023-03-07T07:58:46.8346145Z",
+      "transactionId": "vvvvvrrrrr-gnwuk8cd9h2wvbnm4cq7banegs0000000080000000001m9x",
+      "connectionId": "6+Cy7aaBT+aGV+Ds.1",
+      "sessionId": "",
+      "trafficType": "internet",
+      "deviceCategory": "client",
+      "destinationIp": "100.64.0.239",
+      "destinationPort": 443,
+      "destinationFQDN": "oneozco.sharepoint.com",
+      "sourceIp": "20.51.192.19",
+      "sourcePort": 63391,
+      "deviceOperatingSystem": "Windows 10 Pro",
+      "deviceOperatingSystemVersion": "10.0.19044",
+      "agentVersion": "1.5.233",
+      "deviceId": "46bba529-d081-4cec-883b-4023b9bde1e0",
+      "userId": "ef147e40-db4c-40e4-9e63-f254f576421f",
+      "userPrincipalName": "user1@microsoft.com",
+      "transportProtocol": "TCP",
+      "networkProtocol": "IPv4",
+      "action": "allowed",
+      "policyRule": {
+        "@odata.type": "microsoft.graph.networkaccess.policyRule",
+        "id": "11111-c507-4b11-8e9b-236e79b04279"
+      },
+      "policy": {
+        "@odata.type": "microsoft.graph.networkaccess.policy",
+        "id": "fbea3325-6cc8-46e9-8c61-0451d96a1c02"
+      },
+      "sentBytes": 1500,
+      "receivedBytes": 1000,
+      "headers": {
+        "referrer": "process",
+        "origin": "https://developer.mozilla.org",
+        "xForwardedFor": "incentivize"
+      }
+    }
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: "List forwardingPolicyLinks"
+title: "List policies"
 description: "Retrieve a list of forwarding policy links associated with a specific forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# List forwardingPolicyLinks
+# List policies
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -36,7 +36,7 @@ GET /networkAccess/forwardingProfiles/{forwardingProfileId}/policies/
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters.
 
 ## Request headers
 |Name|Description|

@@ -1,6 +1,6 @@
 ---
 title: "policyLink resource type"
-description: "The PolicyLink object contains the link to a policy associated with a specific profile."
+description: "The link to a policy associated with a specific profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access

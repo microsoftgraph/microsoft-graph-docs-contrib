@@ -22,8 +22,7 @@ This is an abstract type from which the following resources are derived:
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

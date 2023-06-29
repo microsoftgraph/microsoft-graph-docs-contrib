@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /networkAccess/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+PATCH /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ PATCH /networkAccess/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -70,7 +70,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+PATCH https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 Content-Type: application/json
 
 {

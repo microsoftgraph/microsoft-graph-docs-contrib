@@ -20,7 +20,7 @@ Inherits from [microsoft.graph.networkaccess.ruleDestination](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|Defines the IP address subset used in a destination for a rule.	|
+|value|String|Defines the IP address of the subset used in a destination for a rule.	|
 
 ## Relationships
 None.

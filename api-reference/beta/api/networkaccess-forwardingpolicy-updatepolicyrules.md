@@ -1,18 +1,18 @@
 ---
-title: "Onboard tenant"
-description: "Initiate the onboarding process for a specific tenant."
+title: "forwardingPolicy: updatePolicyRules"
+description: "Update the forwarding rule within a forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Create tenantStatus
+# forwardingPolicy: updatePolicyRules
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Initiate the onboarding process for a specific tenant.
+Update the forwarding rules within a forwarding profile.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST networkAccess/microsoft.graph.networkaccess.onboard
+PATCH /networkAccess/filteringPolicies/{id}/policyRules/{id}
 ```
 
 ## Request headers
@@ -42,11 +42,19 @@ POST networkAccess/microsoft.graph.networkaccess.onboard
 |Content-Type|application/json. Required.|
 
 ## Request body
+In the request body, supply a JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|Id|[microsoft.graph.networkaccess.policyRuleDelta](../resources/networkaccess-policyrule.md)|Unique Identifier for the rule.|
+|action|String|Action for the traffic, possible values are "Forward" or "Bypass". Required.|
 
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) object in the response body.
+If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
@@ -54,11 +62,17 @@ If successful, this method returns a `204 No Content` response code and a [micro
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_tenantstatus_from_"
+  "name": "forwardingpolicythis.updatepolicyrules"
 }
 -->
 ``` http
-POST /networkAccess/microsoft.graph.networkaccess.onboard
+PATCH /networkAccess/filteringPolicies/{id}/policyRules/{id}
+Content-Type: application/json
+
+{
+  "@odata.type":"microsoft.graph.networkAccess.m365ForwardingRule", 
+  "action":"forward" 
+}
 ```
 
 
@@ -67,8 +81,7 @@ The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.networkaccess.tenantStatus"
+  "truncated": true
 }
 -->
 ``` http

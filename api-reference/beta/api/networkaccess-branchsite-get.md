@@ -1,6 +1,6 @@
 ---
-title: "Get branch"
-description: "Allows developers to retrieve information about a specific branch."
+title: "Get branchSite"
+description: "Retrieve information about a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allows developers to retrieve information about a specific branch
+Retrieve information about a specific branch.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,11 +32,14 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccess/branches/{branchSiteId}
+GET /networkAccess/connectivity/branches/{branchSiteId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+| Pattern | Supported | Syntax                                                               | Notes       |
+| ------- | :-------- | :------------------------------------------------------------------- | :---------- |
+| select  | ✔         | `/networkAccess/connectivity/branches?$select=forwardingProfiles/id` | first level |
 
 ## Request headers
 |Name|Description|
@@ -60,7 +63,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET /networkAccess/branches/{branchSiteId}
+GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}
 ```
 
 

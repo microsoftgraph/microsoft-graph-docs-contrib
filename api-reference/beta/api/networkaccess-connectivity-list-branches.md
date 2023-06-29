@@ -1,18 +1,18 @@
 ---
 title: "List branches"
-description: "Retrieve a list of branches within a tenant."
+description: "Retrieve a list of branches within a tenant connected to the Global Secure Access service."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# List branchSites
+# List branches
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of branches within a tenant.
+Retrieve a list of branches within a tenant connected to the Global Secure Access service.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,12 @@ GET /networkAccess/connectivity/branches
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports $expand and $select OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+| Pattern | Supported | Syntax                                                               | Notes       |
+| ------- | :-------- | :------------------------------------------------------------------- | :---------- |
+| expand  | ✔         | `/networkAccess/connectivity/branches?$expand=deviceLinks`           | first level |
+| expand  | ✔         | `/networkAccess/connectivity/branches?$expand=forwardingProfiles`    | first level |
+| select  | ✔         | `/networkAccess/connectivity/branches?$select=forwardingProfiles/id` | first level |
 
 ## Request headers
 |Name|Description|
@@ -60,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET /networkAccess/connectivity/branches
+GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches
 ```
 
 

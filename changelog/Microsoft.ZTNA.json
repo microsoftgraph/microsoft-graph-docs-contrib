@@ -433,22 +433,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [tenantStatus](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tenantStatus?view=graph-rest-beta) resource",
           "Target": "tenantStatus"
-        },
-        {
-          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
-          "ApiChange": "Method",
-          "ChangedApiName": "onboard",
-          "ChangeType": "Addition",
-          "Description": "Added the [onboard](https://learn.microsoft.com/en-us/graph/api/networkaccess-onboard?view=graph-rest-beta) method to the [onboard](https://learn.microsoft.com/en-us/graph/api/networkaccess-onboard?view=graph-rest-beta) resource.",
-          "Target": "onboard"
-        },
-        {
-          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
-          "ApiChange": "Method",
-          "ChangedApiName": "updatePolicyRules",
-          "ChangeType": "Addition",
-          "Description": "Added the [updatePolicyRules](https://learn.microsoft.com/en-us/graph/api/networkaccess-updatePolicyRules?view=graph-rest-beta) method to the [updatePolicyRules](https://learn.microsoft.com/en-us/graph/api/networkaccess-updatePolicyRules?view=graph-rest-beta) resource.",
-          "Target": "updatePolicyRules"
         }
       ],
       "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",

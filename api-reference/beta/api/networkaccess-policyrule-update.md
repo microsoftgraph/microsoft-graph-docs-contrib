@@ -1,18 +1,18 @@
 ---
-title: "Delete deviceLink"
-description: "Removes the link between the branch and the CPE device, effectively removing the connection and associated configuration between them."
+title: "Update policyRule"
+description: "Update an existing forwarding rule within a forwarding policy."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Delete deviceLink
+# Update policyRule
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes the link between the branch and the CPE device, effectively removing the connection and associated configuration between them.
+Update an existing forwarding rule within a forwarding policy.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}/$ref
+PATCH /networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
 ```
 
 ## Request headers
@@ -41,7 +41,14 @@ DELETE /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLi
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+You must specify the @odata.type property and the value of the [policyRule](/graph/api/resources/networkaccess-policyrule?view=graph-rest-beta) object type to update. For example, "@odata.type": "#microsoft.graph.m365ForwardingRule".
+
+
+|Property|Type|Description|
+|:---|:---|:---|
+|action|String|Action for the traffic, possible values are "Forward" or "Bypass". Required.|
+
 
 ## Response
 
@@ -53,11 +60,11 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_devicelink"
+  "name": "update_policyrule"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+PATCH https://graph.microsoft.com/beta/networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
 ```
 
 

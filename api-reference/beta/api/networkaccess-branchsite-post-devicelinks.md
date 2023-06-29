@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /networkAccess/branches/{branchSiteId}/deviceLinks
+POST /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks
 ```
 
 ## Request headers
@@ -71,41 +71,30 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST /networkAccess/branches/{branchSiteId}/deviceLinks
+POST https://graph.microsoft.com/beta/networkAccess/connectivity/branches/19a92090-c14e-4cea-a933-27d38f72c4d1/deviceLinks
 
+Request:
 {
-    "name": "Branch test",
-    "country": "Israel",
-    "region": "Center",
-    "deviceLinks": [
-        {
-            "name": "CPE1",
-            "ipAddress": "20.125.118.219",
-            "bgpConfiguration": {
-                "ipAddress": "172.16.11.5",
-                "asn": 10
-            },
-            "deviceVendor": "citrix",
-            "tunnelConfiguration": {
-                "@odata.type": "#microsoft.graph.networkaccess.tunnelConfigurationIKEv2Default",
-                "preSharedKey": "Detective5OutgrowDiligence"
-            }
-        },
-        {
-            "name": "CPE2",
-            "ipAddress": "20.125.113.146",
-            "bgpConfiguration": {
-                "ipAddress": "172.16.11.4",
-                "asn": 10
-            },
-            "deviceVendor": "citrix",
-            "tunnelConfiguration": {
-                "@odata.type": "#microsoft.graph.networkaccess.tunnelConfigurationIKEv2Default",
-                "preSharedKey": "Detective5OutgrowDiligence"
-            }
-        }
-    ],
-    "bandwidthCapacity": 250
+    "name": "device link 1",
+    "ipAddress": "24.123.22.168",
+    "deviceVendor": "intel",
+    "bandwidthCapacityInMbps": "mbps250",
+    "bgpConfiguration":
+    {
+        "localIpAddress": "1.128.24.22",
+        "peerIpAddress": "1.128.24.28",
+        "asn": 4,
+    },
+    "redundancyConfiguration":
+    {
+        "zoneLocalIpAddress": "1.128.23.20",
+        "redundancyTier": "zoneRedundancy",
+    },
+    "tunnelConfiguration":
+    {
+        "@odata.type": "microsoft.graph.networkAccess.tunnelConfigurationIKEv2Default",
+        "preSharedKey": "/microsoft/keyVault/placeholder"
+    }
 }
 ```
 
@@ -122,16 +111,6 @@ The following is an example of the response
 ``` http
 HTTP/1.1 201 Created
 
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches/$entity",
-    "id": "1a4294bc-9467-4003-9d43-8edf14cbfa71",
-    "name": "Branch B1",
-    "country": "Israel",
-    "region": "Center",
-    "version": "1.0.0",
-    "bandwidthCapacity": 250,
-    "lastModifiedDateTime": "2023-05-24T08:27:37Z"
-}
 ```
 
 

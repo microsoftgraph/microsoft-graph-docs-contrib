@@ -36,7 +36,7 @@ GET /networkAccess/settings/forwardingOptions
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters.
 
 ## Request headers
 |Name|Description|
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_conditionalaccesssettings"
+  "name": "get_forwardingoptions"
 }
 -->
 ``` http
@@ -70,7 +70,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.networkaccess.conditionalAccessSettings"
+  "@odata.type": "microsoft.graph.networkaccess.forwardingOptions"
 }
 -->
 ``` http

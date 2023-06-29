@@ -31,11 +31,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccess/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+GET /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters.
 
 ## Request headers
 |Name|Description|
@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+GET /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 ```
 
 
