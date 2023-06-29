@@ -79,16 +79,24 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "printer": {
-        "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6"
-      },
-      "createdBy": {},
-      "processingState": "completed"
-    }
-  ]
+  "@odata.type": "#microsoft.graph.archivedPrintJob",
+  "id": "String",
+  "printerId": "String",
+  "printerName": "String",
+  "processingState": "String",
+  "createdDateTime": "String (timestamp)",
+  "acquiredDateTime": "String (timestamp)",
+  "completionDateTime": "String (timestamp)",
+  "acquiredByPrinter": "Boolean",
+  "copiesPrinted": "Integer",
+  "pageCount": "Integer",
+  "blackAndWhitePageCount": "Integer",
+  "colorPageCount": "Integer",
+  "simplexPageCount": "Integer",
+  "duplexPageCount": "Integer",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  }
 }
 ```
 
