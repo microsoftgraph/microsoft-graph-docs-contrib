@@ -125,7 +125,7 @@ Content-Type: application/json
     }
 }
 ```
-**Note:** In case of export case operation, you will  receive the downloadURL, fileName and size in the exportfileMetadata property of the response. The actual operation where you will initiate the download is an operation managed on your side. You may choose to download it to your local machine or export it to your storage account.
+**Note:** If you need to perform an export operation, the response will include the downloadURL, fileName, and size in the exportfileMetadata property. You will be responsible for managing the actual download process. You can choose to download the file to your local machine or export it to your storage account.
 In order to avoid the interactive sign-in page and fully automate the process, please follow the following steps
 1. Provision the MicrosoftPurviewEDiscovery application by leveraging [Create ServicePrincpal](../api/serviceprincipal-post-serviceprincipals.md) for the application id b26e684c-5068-4120-a679-64a5d2c909d9
 2. After provisioning, please raise request for user delegated permission of ediscovery.Download.Read for the above application from your third party application which you would be using for the graph. 
