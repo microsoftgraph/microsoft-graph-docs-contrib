@@ -4,24 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAttachment()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAttachment()
 name := "Personal pictures"
-requestBody.SetName(&name)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.referenceAttachment",
-	"sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
-	"providerType": "oneDriveConsumer",
-	"permission": "Edit",
-	"isFolder": "True",
-}
-options := &msgraphsdk.AttachmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Attachments().Post(options)
+requestBody.SetName(&name) 
+sourceUrl := "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
+requestBody.SetSourceUrl(&sourceUrl) 
+providerType := graphmodels.ONEDRIVECONSUMER_REFERENCEATTACHMENTPROVIDER 
+requestBody.SetProviderType(&providerType) 
+permission := graphmodels.EDIT_REFERENCEATTACHMENTPERMISSION 
+requestBody.SetPermission(&permission) 
+isFolder := true
+requestBody.SetIsFolder(&isFolder) 
+
+result, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

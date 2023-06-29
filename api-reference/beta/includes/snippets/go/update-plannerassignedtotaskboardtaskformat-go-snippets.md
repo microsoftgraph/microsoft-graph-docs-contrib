@@ -4,25 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPlannerAssignedToTaskBoardTaskFormat()
-orderHintsByAssignee := msgraphsdk.NewPlannerOrderHintsByAssignee()
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  graphplanner "github.com/microsoftgraph/msgraph-beta-sdk-go/planner"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
+
+configuration := &graphplanner.PlannerTaskItemAssignedToTaskBoardFormatRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
+}
+requestBody := graphmodels.NewPlannerAssignedToTaskBoardTaskFormat()
+orderHintsByAssignee := graphmodels.NewPlannerOrderHintsByAssignee()
+additionalData := map[string]interface{}{
+	"aaa27244-1db4-476a-a5cb-004607466324" : "8566473P 957764Jk!", 
+}
+orderHintsByAssignee.SetAdditionalData(additionalData)
 requestBody.SetOrderHintsByAssignee(orderHintsByAssignee)
-orderHintsByAssignee.SetAdditionalData(map[string]interface{}{
-	"aaa27244-1db4-476a-a5cb-004607466324": "8566473P 957764Jk!",
-}
-headers := map[string]string{
-	"Prefer": "return=representation"
-	"If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
-}
-options := &msgraphsdk.AssignedToTaskBoardFormatRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
-}
-plannerTaskId := "plannerTask-id"
-graphClient.Planner().TasksById(&plannerTaskId).AssignedToTaskBoardFormat().Patch(options)
+
+result, err := graphClient.Planner().Tasks().ByTaskId("plannerTask-id").AssignedToTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
 
 
 ```

@@ -17,6 +17,8 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), the app
 
 In [userConsentRequests](../resources/userconsentrequest.md), the approval  decisions associated with a request.
 
+In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval decisions associated with requests to activate group membership or ownership.
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -33,7 +35,7 @@ In [userConsentRequests](../resources/userconsentrequest.md), the approval  deci
 |id|String|The identifier of the step associated with an approval object. Read-only.|
 |justification|String|The justification associated with the approval step decision.|
 |reviewResult|String|The result of this approval record. Possible values include: `NotReviewed`, `Approved`, `Denied`.|
-|reviewedBy|[userIdentity](useridentity.md) collection | The identifier of the reviewer. Read-only.|
+|reviewedBy|[userIdentity](useridentity.md) collection | The identifier of the reviewer. `00000000-0000-0000-0000-000000000000` if the assigned reviewer hasn't reviewed. Read-only.|
 |reviewedDateTime|DateTimeOffset|The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |status|String|The step status. Possible values: `InProgress`, `Initializing`, `Completed`, `Expired`. Read-only.|
 
@@ -41,7 +43,7 @@ In [userConsentRequests](../resources/userconsentrequest.md), the approval  deci
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|approval|[approval](../resources/approval.md) collection|The approval object for decisions associated with the `accessPackageAssignmentRequest`.|
+|approval|[approval](../resources/approval.md) collection| The approval object for decisions associated with the `accessPackageAssignmentRequest` in entitlement management or the `assignmentScheduleRequest` in PIM for groups.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

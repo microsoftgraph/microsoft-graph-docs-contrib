@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const aAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs = {
+    '@odata.type': '#microsoft.graph.taskList',
     displayName: 'Travel Plan'
 };
 

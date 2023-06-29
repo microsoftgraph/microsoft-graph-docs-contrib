@@ -4,28 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewConnectedOrganization()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewConnectedOrganization()
 displayName := "Connected organization name"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Connected organization description"
-requestBody.SetDescription(&description)
-requestBody.SetIdentitySources( []IdentitySource {
-	msgraphsdk.NewIdentitySource(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.domainIdentitySource",
-		"domainName": "example.com",
-		"displayName": "example.com",
-	}
+requestBody.SetDescription(&description) 
+
+
+identitySource := graphmodels.NewDomainIdentitySource()
+domainName := "example.com"
+identitySource.SetDomainName(&domainName) 
+displayName := "example.com"
+identitySource.SetDisplayName(&displayName) 
+
+identitySources := []graphmodels.IdentitySourceable {
+	identitySource,
 }
-state := "proposed"
-requestBody.SetState(&state)
-options := &msgraphsdk.ConnectedOrganizationsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(options)
+requestBody.SetIdentitySources(identitySources)
+state := graphmodels.PROPOSED_CONNECTEDORGANIZATIONSTATE 
+requestBody.SetState(&state) 
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(context.Background(), requestBody, nil)
 
 
 ```

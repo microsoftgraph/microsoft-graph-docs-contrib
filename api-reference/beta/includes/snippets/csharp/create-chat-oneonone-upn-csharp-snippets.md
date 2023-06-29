@@ -4,40 +4,46 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var chat = new Chat
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Chat
 {
 	ChatType = ChatType.OneOnOne,
-	Members = new ChatMembersCollectionPage()
+	Members = new List<ConversationMember>
 	{
 		new AadUserConversationMember
 		{
-			Roles = new List<String>()
+			OdataType = "#microsoft.graph.aadUserConversationMember",
+			Roles = new List<string>
 			{
-				"owner"
+				"owner",
 			},
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"user@odata.bind", "https://graph.microsoft.com/beta/users('jacob@contoso.com')"}
-			}
+				{
+					"user@odata.bind" , "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+				},
+			},
 		},
 		new AadUserConversationMember
 		{
-			Roles = new List<String>()
+			OdataType = "#microsoft.graph.aadUserConversationMember",
+			Roles = new List<string>
 			{
-				"owner"
+				"owner",
 			},
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"user@odata.bind", "https://graph.microsoft.com/beta/users('alex@contoso.com')"}
-			}
-		}
-	}
+				{
+					"user@odata.bind" , "https://graph.microsoft.com/beta/users('alex@contoso.com')"
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Chats.PostAsync(requestBody);
 
-await graphClient.Chats
-	.Request()
-	.AddAsync(chat);
 
 ```

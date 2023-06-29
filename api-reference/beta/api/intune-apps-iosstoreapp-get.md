@@ -1,7 +1,7 @@
 ---
 title: "Get iosStoreApp"
 description: "Read properties and relationships of the iosStoreApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [iosStoreApp](../resources/intune-apps-iosstoreapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -33,8 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceAppManagement/mobileApps/{mobileAppId}
-GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
-GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## Optional query parameters
@@ -65,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1516
+Content-Length: 1560
 
 {
   "value": {
@@ -111,12 +109,10 @@ Content-Length: 1516
       "v11_0": true,
       "v12_0": true,
       "v13_0": true,
-      "v14_0": true
+      "v14_0": true,
+      "v15_0": true,
+      "v16_0": true
     }
   }
 }
 ```
-
-
-
-

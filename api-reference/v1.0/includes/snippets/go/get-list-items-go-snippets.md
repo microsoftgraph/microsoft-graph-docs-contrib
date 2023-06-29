@@ -4,18 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ItemsRequestBuilderGetQueryParameters{
-	Expand: "fields(select=Name,Color,Quantity)",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphsites "github.com/microsoftgraph/msgraph-sdk-go/sites"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphsites.SiteItemListItemItemsRequestBuilderGetQueryParameters{
+	Expand: [] string {"fields(select=Name,Color,Quantity)"},
 }
-options := &msgraphsdk.ItemsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphsites.SiteItemListItemItemsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-siteId := "site-id"
-listId := "list-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).Items().Get(options)
+
+result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().Get(context.Background(), configuration)
 
 
 ```

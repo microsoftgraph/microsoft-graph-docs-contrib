@@ -7,12 +7,14 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create baseTaskList
+# Create baseTaskList (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [taskList](../resources/basetasklist.md) object.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Create a new [baseTaskList](../resources/basetasklist.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -70,16 +72,16 @@ POST https://graph.microsoft.com/beta/me/tasks/lists
 Content-Type: application/json
 
 {
+    "@odata.type": "#microsoft.graph.taskList",
     "displayName": "Shopping list"
 }
 ```
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-tasklist-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

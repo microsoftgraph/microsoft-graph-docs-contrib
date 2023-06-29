@@ -4,37 +4,54 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var deployment = new Microsoft.Graph.WindowsUpdates.Deployment
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
 {
-	Content = new FeatureUpdateReference
+	OdataType = "#microsoft.graph.windowsUpdates.deployment",
+	Content = new Microsoft.Graph.Beta.Models.WindowsUpdates.CatalogContent
 	{
-		Version = "20H2"
-	},
-	Settings = new WindowsDeploymentSettings
-	{
-		Rollout = new Microsoft.Graph.WindowsUpdates.RolloutSettings
+		OdataType = "#microsoft.graph.windowsUpdates.catalogContent",
+		CatalogEntry = new Microsoft.Graph.Beta.Models.WindowsUpdates.FeatureUpdateCatalogEntry
 		{
-			DevicesPerOffer = 100
+			OdataType = "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+			Id = "f341705b-0b15-4ce3-aaf2-6a1681d78606",
 		},
-		Monitoring = new Microsoft.Graph.WindowsUpdates.MonitoringSettings
+	},
+	Settings = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeploymentSettings
+	{
+		OdataType = "microsoft.graph.windowsUpdates.deploymentSettings",
+		Schedule = new Microsoft.Graph.Beta.Models.WindowsUpdates.ScheduleSettings
 		{
-			MonitoringRules = new List<Microsoft.Graph.WindowsUpdates.MonitoringRule>()
+			GradualRollout = new Microsoft.Graph.Beta.Models.WindowsUpdates.RateDrivenRolloutSettings
 			{
-				new Microsoft.Graph.WindowsUpdates.MonitoringRule
+				OdataType = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+				DurationBetweenOffers = TimeSpan.Parse("P7D"),
+				AdditionalData = new Dictionary<string, object>
 				{
-					Signal = Microsoft.Graph.WindowsUpdates.MonitoringSignal.Rollback,
+					{
+						"devicePerOffer" , 100
+					},
+				},
+			},
+		},
+		Monitoring = new Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringSettings
+		{
+			MonitoringRules = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringRule>
+			{
+				new Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringRule
+				{
+					Signal = Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringSignal.Rollback,
 					Threshold = 5,
-					Action = Microsoft.Graph.WindowsUpdates.MonitoringAction.PauseDeployment
-				}
-			}
-		}
-	}
+					Action = Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringAction.PauseDeployment,
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Admin.Windows.Updates.Deployments.PostAsync(requestBody);
 
-await graphClient.Admin.Windows.Updates.Deployments
-	.Request()
-	.AddAsync(deployment);
 
 ```

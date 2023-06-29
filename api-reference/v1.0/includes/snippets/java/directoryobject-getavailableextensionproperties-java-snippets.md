@@ -6,12 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Boolean isSyncedFromOnPremises = false;
-
 graphClient.directoryObjects()
 	.getAvailableExtensionProperties(DirectoryObjectGetAvailableExtensionPropertiesParameterSet
 		.newBuilder()
-		.withIsSyncedFromOnPremises(isSyncedFromOnPremises)
+		.withIsSyncedFromOnPremises(null)
 		.build())
 	.buildRequest()
 	.post();

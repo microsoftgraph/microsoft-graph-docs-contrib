@@ -4,24 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphtenantrelationships "github.com/microsoftgraph/msgraph-beta-sdk-go/tenantrelationships"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphtenantrelationships.NewChangeDeploymentStatusPostRequestBody()
 tenantGroupId := "String"
-requestBody.SetTenantGroupId(&tenantGroupId)
+requestBody.SetTenantGroupId(&tenantGroupId) 
 tenantId := "String"
-requestBody.SetTenantId(&tenantId)
+requestBody.SetTenantId(&tenantId) 
 managementActionId := "String"
-requestBody.SetManagementActionId(&managementActionId)
+requestBody.SetManagementActionId(&managementActionId) 
 managementTemplateId := "String"
-requestBody.SetManagementTemplateId(&managementTemplateId)
+requestBody.SetManagementTemplateId(&managementTemplateId) 
 status := "String"
-requestBody.SetStatus(&status)
-options := &msgraphsdk.ChangeDeploymentStatusRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().ChangeDeploymentStatus().Post(options)
+requestBody.SetStatus(&status) 
+
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().MicrosoftGraphManagedTenantsChangeDeploymentStatus().Post(context.Background(), requestBody, nil)
 
 
 ```

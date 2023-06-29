@@ -21,7 +21,8 @@ Inherits from [identity](../resources/identity.md).
 |:---|:---|:---|
 |displayName|String|Inherited from [identity](../resources/identity.md). Display name of the user. Optional.|
 |id|String|Inherited from [identity](../resources/identity.md). ID of the user. |
-|userIdentityType|teamworkUserIdentityType| Type of user. Possible values are: `aadUser`, `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, `phoneUser`, and `unknownFutureValue`.|
+|userIdentityType|teamworkUserIdentityType| Type of user. Possible values are: `aadUser`, `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, `phoneUser`, `unknownFutureValue` and `emailUser`.|
+|tenantId|String|Identifier of tenant, which user is part of. Optional. |
 
 ## Relationships
 None.

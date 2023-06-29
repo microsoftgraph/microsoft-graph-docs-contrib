@@ -1,7 +1,7 @@
 ---
 title: "Create userExperienceAnalyticsMetricHistory"
 description: "Create a new userExperienceAnalyticsMetricHistory object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -50,8 +50,8 @@ The following table shows the properties that are required when you create the u
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics metric history.|
-|deviceId|String|The user experience analytics device id.|
-|metricDateTime|DateTimeOffset|The user experience analytics metric date time.|
+|deviceId|String|The Intune device id of the device.|
+|metricDateTime|DateTimeOffset|The metric date time. The value cannot be modified and is automatically populated when the metric is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default.|
 |metricType|String|The user experience analytics metric type.|
 
 
@@ -91,7 +91,3 @@ Content-Length: 257
   "metricType": "Metric Type value"
 }
 ```
-
-
-
-

@@ -37,26 +37,27 @@ Inherits from [printerBase](../resources/printerbase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The document's identifier. Inherited from [printerBase](../resources/printerbase.md). Read-only.|
+|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md).|
+|defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings. Inherited from [printerBase](../resources/printerbase.md).|
 |displayName|String|The name of the printer. Inherited from [printerBase](../resources/printerbase.md).|
+|hasPhysicalDevice|Boolean|True if the printer has a physical device for printing. Read-only.|
+|id|String|The document's identifier. Inherited from [printerBase](../resources/printerbase.md). Read-only.|
+|isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs. Inherited from [printerBase](../resources/printerbase.md).|
+|isShared|Boolean|True if the printer is shared; false otherwise. Read-only.|
+|lastSeenDateTime|DateTimeOffset|The most recent dateTimeOffset when a printer interacted with Universal Print. Read-only.|
+|location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer. Inherited from [printerBase](../resources/printerbase.md).|
 |manufacturer|String|The manufacturer reported by the printer. Inherited from [printerBase](../resources/printerbase.md).|
 |model|String|The model name reported by the printer. Inherited from [printerBase](../resources/printerbase.md).|
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the printer was registered. Read-only.|
 |status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors. Inherited from [printerBase](../resources/printerbase.md).|
-|isShared|Boolean|True if the printer is shared; false otherwise. Read-only.|
-|hasPhysicalDevice|Boolean|True if the printer has a physical device for printing. Read-only.|
-|isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs. Inherited from [printerBase](../resources/printerbase.md).|
-|location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer. Inherited from [printerBase](../resources/printerbase.md).|
-|defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings. Inherited from [printerBase](../resources/printerbase.md).|
-|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md).|
-|lastSeenDateTime|DateTimeOffset|The most recent dateTimeOffset when a printer interacted with Universal Print. Read-only.|
+
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|connectors|[printConnector](printconnector.md)|The connectors that are associated with the printer.|
 |jobs|[printJob](printjob.md) collection| The list of jobs that are queued for printing by the printer.  Inherited from [printerBase](../resources/printerbase.md).|
 |shares|[printerShare](printershare.md) collection| The list of printerShares that are associated with the printer. Currently, only one printerShare can be associated with the printer. Read-only. Nullable.|
-|connectors|[printConnector](printconnector.md)|The connectors that are associated with the printer.|
 |taskTriggers|[printTaskTrigger](printtasktrigger.md) collection|A list of task triggers that are associated with the printer.|
 
 ## JSON representation

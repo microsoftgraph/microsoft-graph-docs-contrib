@@ -1,7 +1,7 @@
 ---
 title: "Update userExperienceAnalyticsDeviceStartupProcess"
 description: "Update the properties of a userExperienceAnalyticsDeviceStartupProcess object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -48,12 +48,12 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics device startup process.|
-|managedDeviceId|String|The user experience analytics device id.|
-|processName|String|User experience analytics device startup process name.|
-|productName|String|The user experience analytics device startup process product name.|
-|publisher|String|The User experience analytics device startup process publisher.|
-|startupImpactInMs|Int32|User experience analytics device startup process impact in milliseconds.|
+|id|String|The unique identifier of the user experience analytics device startup process. Supports: $select, $OrderBy. Read-only.|
+|managedDeviceId|String|The Intune device id of the device. Supports: $select, $OrderBy. Read-only.|
+|processName|String|The name of the process. Examples: outlook, excel. Supports: $select, $OrderBy. Read-only.|
+|productName|String|The product name of the process. Examples: Microsoft Outlook, Microsoft Excel. Supports: $select, $OrderBy. Read-only.|
+|publisher|String|The publisher of the process. Examples: Microsoft Corporation, Contoso Corp. Supports: $select, $OrderBy. Read-only.|
+|startupImpactInMs|Int32|The impact of startup process on device boot time in milliseconds. Supports: $select, $OrderBy. Read-only.|
 
 
 
@@ -96,7 +96,3 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
-
-
-
-

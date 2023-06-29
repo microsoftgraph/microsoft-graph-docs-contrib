@@ -4,24 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewLinkedResource()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewLinkedResource()
 webUrl := "https://microsoft.com"
-requestBody.SetWebUrl(&webUrl)
+requestBody.SetWebUrl(&webUrl) 
 applicationName := "Microsoft"
-requestBody.SetApplicationName(&applicationName)
+requestBody.SetApplicationName(&applicationName) 
 displayName := "Microsoft"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 externalId := "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
-requestBody.SetExternalId(&externalId)
-options := &msgraphsdk.LinkedResourcesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-todoTaskListId := "todoTaskList-id"
-todoTaskId := "todoTask-id"
-result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).LinkedResources().Post(options)
+requestBody.SetExternalId(&externalId) 
+
+result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Tasks().ByTaskId("todoTask-id").LinkedResources().Post(context.Background(), requestBody, nil)
 
 
 ```

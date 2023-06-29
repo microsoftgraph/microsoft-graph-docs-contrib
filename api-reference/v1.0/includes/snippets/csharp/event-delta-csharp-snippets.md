@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var queryOptions = new List<QueryOption>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Me.CalendarView.Delta.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("startdatetime", "{start_datetime}"),
-	new QueryOption("enddatetime", "{end_datetime}")
-};
+	requestConfiguration.QueryParameters.StartDateTime = "{start_datetime}";
+	requestConfiguration.QueryParameters.EndDateTime = "{end_datetime}";
+	requestConfiguration.Headers.Add("Prefer", "odata.maxpagesize=2");
+});
 
-var delta = await graphClient.Me.CalendarView
-	.Delta()
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

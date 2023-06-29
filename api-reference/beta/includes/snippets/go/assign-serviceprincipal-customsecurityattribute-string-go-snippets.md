@@ -4,19 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewServicePrincipal()
-customSecurityAttributes := msgraphsdk.NewCustomSecurityAttributeValue()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewServicePrincipal()
+customSecurityAttributes := graphmodels.NewCustomSecurityAttributeValue()
+additionalData := map[string]interface{}{
+engineering := graphmodels.New()
+projectDate := "2022-10-01"
+engineering.SetProjectDate(&projectDate) 
+	customSecurityAttributes.SetEngineering(engineering)
+}
+customSecurityAttributes.SetAdditionalData(additionalData)
 requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
-customSecurityAttributes.SetAdditionalData(map[string]interface{}{
-}
-options := &msgraphsdk.ServicePrincipalRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-servicePrincipalId := "servicePrincipal-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).Patch(options)
+
+result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

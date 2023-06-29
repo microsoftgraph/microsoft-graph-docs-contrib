@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var entitlementManagementSettings = new EntitlementManagementSettings
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new EntitlementManagementSettings
 {
-	ExternalUserLifecycleAction = "None"
+	ExternalUserLifecycleAction = "None",
 };
+var result = await graphClient.IdentityGovernance.EntitlementManagement.Settings.PatchAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.Settings
-	.Request()
-	.UpdateAsync(entitlementManagementSettings);
 
 ```

@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var queryOptions = new List<QueryOption>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Me.CalendarView.Delta.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$skiptoken", "R0usmci39OQxqJrxK4")
-};
+	requestConfiguration.QueryParameters.Skiptoken = "R0usmci39OQxqJrxK4";
+	requestConfiguration.Headers.Add("Prefer", "odata.maxpagesize=2");
+});
 
-var delta = await graphClient.Me.CalendarView
-	.Delta()
-	.Request()
-	.Header("Prefer","odata.maxpagesize=2")
-	.GetAsync();
 
 ```

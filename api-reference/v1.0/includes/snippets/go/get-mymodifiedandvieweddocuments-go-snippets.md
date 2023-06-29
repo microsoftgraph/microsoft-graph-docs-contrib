@@ -4,16 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UsedRequestBuilderGetQueryParameters{
-	Orderby: "LastUsed/LastAccessedDateTime%20desc",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphusers.ItemInsightsUsedRequestBuilderGetQueryParameters{
+	Orderby: [] string {"LastUsed/LastAccessedDateTime desc"},
 }
-options := &msgraphsdk.UsedRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphusers.ItemInsightsUsedRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Insights().Used().Get(options)
+
+result, err := graphClient.Me().Insights().Used().Get(context.Background(), configuration)
 
 
 ```

@@ -3,7 +3,7 @@ title: "managedTenantExecutionError resource type"
 description: "Represents an exception for a managed tenant operation."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

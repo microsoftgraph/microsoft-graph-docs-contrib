@@ -1,7 +1,7 @@
 ---
 title: "Update androidDeviceOwnerEnrollmentProfile"
 description: "Update the properties of a androidDeviceOwnerEnrollmentProfile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -64,10 +64,12 @@ The following table shows the properties that are required when you create the [
 |qrCodeContent|String|String used to generate a QR code for the token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|String used to generate a QR code for the token.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
+|configureWifi|Boolean|Boolean that indicates that the Wi-Fi network should be configured during device provisioning. When set to TRUE, device provisioning will use Wi-Fi related properties to automatically connect to Wi-Fi networks. When set to FALSE or undefined, other Wi-Fi related properties will be ignored. Default value is TRUE. Returned by default.|
 |wifiSsid|String|String that contains the wi-fi login ssid|
 |wifiPassword|String|String that contains the wi-fi login password|
 |wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|String that contains the wi-fi security type. Possible values are: `none`, `wpa`, `wep`.|
 |wifiHidden|Boolean|Boolean that indicates if hidden wifi networks are enabled|
+|isTeamsDeviceProfile|Boolean|Boolean indicating if this profile is an Android AOSP for Teams device profile.|
 
 
 
@@ -81,7 +83,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEnrollmentProfileId}
 Content-type: application/json
-Content-length: 922
+Content-length: 981
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -104,10 +106,12 @@ Content-length: 922
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "configureWifi": true,
   "wifiSsid": "Wifi Ssid value",
   "wifiPassword": "Wifi Password value",
   "wifiSecurityType": "wpa",
-  "wifiHidden": true
+  "wifiHidden": true,
+  "isTeamsDeviceProfile": true
 }
 ```
 
@@ -116,7 +120,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1094
+Content-Length: 1153
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -142,13 +146,11 @@ Content-Length: 1094
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "configureWifi": true,
   "wifiSsid": "Wifi Ssid value",
   "wifiPassword": "Wifi Password value",
   "wifiSecurityType": "wpa",
-  "wifiHidden": true
+  "wifiHidden": true,
+  "isTeamsDeviceProfile": true
 }
 ```
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "Get operationApprovalRequest"
 description: "Read properties and relationships of the operationApprovalRequest object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1566
+Content-Length: 1637
 
 {
   "value": {
@@ -110,11 +110,8 @@ Content-Length: 1566
     },
     "status": "needsApproval",
     "requestJustification": "Request Justification value",
-    "approvalJustification": "Approval Justification value"
+    "approvalJustification": "Approval Justification value",
+    "operationApprovalPolicies": "Operation Approval Policies value"
   }
 }
 ```
-
-
-
-

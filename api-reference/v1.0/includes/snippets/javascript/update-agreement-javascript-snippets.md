@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const agreement = {
-  displayName: 'Sample ToU display name',
-  isViewingBeforeAcceptanceRequired: true
+    displayName: 'All Contoso volunteers - Terms of use',
+    isViewingBeforeAcceptanceRequired: true
 };
 
-await client.api('/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be')
+await client.api('/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b')
 	.update(agreement);
 
 ```

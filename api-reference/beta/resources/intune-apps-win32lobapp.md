@@ -1,7 +1,7 @@
 ---
 title: "win32LobApp resource type"
 description: "Contains properties and inherited properties for Win32 apps."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -72,15 +72,13 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |setupFilePath|String|The relative path of the setup file in the encrypted Win32LobApp package.|
 |minimumSupportedWindowsRelease|String|The value for the minimum supported windows release.|
 |displayVersion|String|The version displayed in the UX for this app.|
+|allowAvailableUninstall|Boolean|When TRUE, indicates that uninstall is supported from the company portal for the Windows app (Win32) with an Available assignment. When FALSE, indicates that uninstall is not supported for the Windows app (Win32) with an Available assignment. Default value is FALSE.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection|The set of direct relationships for this app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |contentVersions|[mobileAppContent](../resources/intune-apps-mobileappcontent.md) collection|The list of content versions for this app. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 
@@ -205,10 +203,7 @@ Here is a JSON representation of the resource.
   },
   "setupFilePath": "String",
   "minimumSupportedWindowsRelease": "String",
-  "displayVersion": "String"
+  "displayVersion": "String",
+  "allowAvailableUninstall": true
 }
 ```
-
-
-
-

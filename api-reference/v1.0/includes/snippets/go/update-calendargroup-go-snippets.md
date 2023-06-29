@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewCalendarGroup()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCalendarGroup()
 name := "name-value"
-requestBody.SetName(&name)
-options := &msgraphsdk.CalendarGroupRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-calendarGroupId := "calendarGroup-id"
-graphClient.Me().CalendarGroupsById(&calendarGroupId).Patch(options)
+requestBody.SetName(&name) 
+
+result, err := graphClient.Me().CalendarGroups().ByCalendarGroupId("calendarGroup-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

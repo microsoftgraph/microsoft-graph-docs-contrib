@@ -5,6 +5,8 @@ ms.localizationpriority: medium
 author: DarrelMiller
 ---
 
+<!-- markdownlint-disable MD051 -->
+
 # Page through a collection using the Microsoft Graph SDKs
 
 For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page. The **PageIterator** class simplifies consuming of paged collections. **PageIterator** handles enumerating the current page and requesting subsequent pages automatically.
@@ -22,99 +24,24 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 ### [C#](#tab/csharp)
 
-```csharp
-var messages = await graphClient.Me.Messages
-    .Request()
-    .Header("Prefer", "outlook.body-content-type=\"text\"")
-    .Select(e => new {
-        e.Sender,
-        e.Subject,
-        e.Body
-    })
-    .Top(10)
-    .GetAsync();
-
-var pageIterator = PageIterator<Message>
-    .CreatePageIterator(
-        graphClient,
-        messages,
-        // Callback executed for each item in
-        // the collection
-        (m) =>
-        {
-            Console.WriteLine(m.Subject);
-            return true;
-        },
-        // Used to configure subsequent page
-        // requests
-        (req) =>
-        {
-            // Re-add the header to subsequent requests
-            req.Header("Prefer", "outlook.body-content-type=\"text\"");
-            return req;
-        }
-    );
-
-await pageIterator.IterateAsync();
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/Paging.cs" id="PagingSnippet":::
 
 ### [TypeScript](#tab/typeScript)
 
-```typescript
-// Makes request to fetch mails list.
-let response: PageCollection = await client
-  .api("/me/messages?$top=10&$select=sender,subject,body")
-  .header('Prefer', 'outlook.body-content-type="text"')
-  .get();
-
-// A callback function to be called for every item in the collection.
-// This call back should return boolean indicating whether not to
-// continue the iteration process.
-let callback: PageIteratorCallback = (data) => {
-  console.log(data.subject);
-  return true;
-};
-
-// A set of request options to be applied to
-// all subsequent page requests
-let requestOptions: GraphRequestOptions = {
-  // Re-add the header to subsequent requests
-  headers: {
-    'Prefer': 'outlook.body-content-type="text"'
-  }
-};
-
-// Creating a new page iterator instance with client a graph client
-// instance, page collection response from request and callback
-let pageIterator = new PageIterator(client, response, callback, requestOptions);
-
-// This iterates the collection until the nextLink is drained out.
-await pageIterator.iterate();
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="PagingSnippet":::
 
 ### [Java](#tab/java)
 
-```java
-final MessageCollectionPage messagesPage = graphClient.me().messages()
-    .buildRequest(new HeaderOption("Prefer", "outlook.body-content-type=\"text\""))
-    .select("Sender,Subject,Body")
-    .top(10)
-    .get();
+> [!NOTE]
+> The Microsoft Graph Java SDK does not currently have a **PageIterator** class. Instead, you need to request each page as shown in the following code.
 
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/Paging.java" id="PagingSnippet":::
 
-while(messagesPage != null) {
-  final List<Message> messages = messagesPage.getCurrentPage();
-  final MessageCollectionRequestBuilder nextPage = messagesPage.getNextPage();
-  if(nextPage == null) {
-    break;
-  } else {
-    messagePage = nextPage.buildRequest(
-        // Re-add the header to subsequent requests
-        new HeaderOption("Prefer", "outlook.body-content-type=\"text\"")
-    ).get();
-  }
-}
-```
+### [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="PagingSnippet":::
 
 ---
 
@@ -125,83 +52,23 @@ Some scenarios require stopping the iteration process in order to perform other 
 <!-- markdownlint-disable MD024 -->
 ### [C#](#tab/csharp)
 
-```csharp
-int count = 0;
-int pauseAfter = 25;
-
-var messages = await graphClient.Me.Messages
-    .Request()
-    .Select(e => new {
-        e.Sender,
-        e.Subject
-    })
-    .Top(10)
-    .GetAsync();
-
-var pageIterator = PageIterator<Message>
-    .CreatePageIterator(
-        graphClient,
-        messages,
-        (m) =>
-        {
-            Console.WriteLine(m.Subject);
-            count++;
-            // If we've iterated over the limit,
-            // stop the iteration by returning false
-            return count < pauseAfter;
-        }
-    );
-
-await pageIterator.IterateAsync();
-
-while (pageIterator.State != PagingState.Complete)
-{
-    Console.WriteLine("Iteration paused for 5 seconds...");
-    await Task.Delay(5000);
-    // Reset count
-    count = 0;
-    await pageIterator.ResumeAsync();
-}
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/Paging.cs" id="ResumePagingSnippet":::
 
 ### [TypeScript](#tab/typeScript)
 
-```typescript
-let count: number = 0;
-let pauseAfter: number = 25;
-
-let response: PageCollection = await client
-  .api('/me/messages?$top=10&$select=sender,subject')
-  .get();
-
-let callback: PageIteratorCallback = (data) => {
-  result = `${result}${data.subject}\n`;
-  console.log(data.subject);
-  count++;
-
-  // If we've iterated over the limit,
-  // stop the iteration by returning false
-  return count < pauseAfter;
-};
-
-let pageIterator = new PageIterator(client, response, callback);
-await pageIterator.iterate();
-
-while (!pageIterator.isComplete()) {
-  console.log('Iteration paused for 5 seconds...');
-  await new Promise(resolve => setTimeout(resolve, 5000));
-
-  // Reset count
-  count = 0;
-  await pageIterator.resume();
-}
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="ResumePagingSnippet":::
 
 ### [Java](#tab/java)
 
 ```java
 // not supported in java SDK
 ```
+
+### [Go](#tab/Go)
+
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ResumePagingSnippet":::
 
 ---
 <!-- markdownlint-enable MD024 -->

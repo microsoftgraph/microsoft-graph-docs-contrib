@@ -1,7 +1,7 @@
 ---
 title: "lobbyBypassSettings resource type"
 description: "Specifies which participants can bypass the meeting lobby."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -17,10 +17,12 @@ Specifies which participants can bypass the meeting lobby.
 
 | Property              | Type    | Description                                                         |
 | --------------------- | ------- | ------------------------------------------------------------------- |
-| scope                 | [lobbyBypassScope](#lobbybypassscope-values)  | Specifies the type of participants that are automatically admitted into a meeting, bypassing the lobby. Optional.|
 | isDialInBypassEnabled | Boolean | Specifies whether or not to always let dial-in callers bypass the lobby. Optional. |
+| scope                 | [lobbyBypassScope](#lobbybypassscope-values)  | Specifies the type of participants that are automatically admitted into a meeting, bypassing the lobby. Optional.|
 
 ### lobbyBypassScope values
+
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `invited`, `organizationExcludingGuests`.
 
 | Value                    | Description     |
 | ------------------------ | --------------------------------------------------- |

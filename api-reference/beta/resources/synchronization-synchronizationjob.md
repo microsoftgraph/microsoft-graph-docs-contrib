@@ -29,7 +29,7 @@ Performs synchronization by periodically running in the background, polling for 
 |[Get synchronizationSchema](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |Retrieve the job's effective synchronization schema.|
 |[Update synchronizationSchema](../api/synchronization-synchronizationschema-update.md)    |None   |Update the job's synchronization schema. |
 |[Validate credentials](../api/synchronization-synchronizationjob-validatecredentials.md)|None|Test provided credentials against target directory.|
-|[provisionOnDemand](../api/synchronization-synchronizationjob-provision-on-demand.md)|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) collection|Represents the objects that will be provisioned and the synchronization rules executed. The resource is primarily used for on-demand provisioning. |
+|[provisionOnDemand](../api/synchronization-synchronizationjob-provisionondemand.md)|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) collection|Represents the objects that will be provisioned and the synchronization rules executed. The resource is primarily used for on-demand provisioning. |
 ## Properties
 
 | Property      | Type      | Description    |
@@ -41,7 +41,7 @@ Performs synchronization by periodically running in the background, polling for 
 |templateId     |String    |Identifier of the [synchronization template](synchronization-synchronizationtemplate.md) this job is based on.|
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |schema|[synchronizationSchema](synchronization-synchronizationschema.md)| The synchronization schema configured for the job.|
 
@@ -61,12 +61,17 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "schedule": {"@odata.type": "microsoft.graph.synchronizationSchedule"},
-  "status": {"@odata.type": "microsoft.graph.synchronizationStatus"},
-  "synchronizationJobSettings": {"@odata.type": "microsoft.graph.keyValuePair"},
+  "schedule": {
+    "@odata.type": "microsoft.graph.synchronizationSchedule"
+  },
+  "status": {
+    "@odata.type": "microsoft.graph.synchronizationStatus"
+  },
+  "synchronizationJobSettings": {
+    "@odata.type": "microsoft.graph.keyValuePair"
+  },
   "templateId": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

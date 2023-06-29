@@ -2,7 +2,7 @@
 title: "Microsoft Graph Toolkit React components"
 description: "The Microsoft Graph Toolkit React components (`mgt-react`) allow React developers to use the Microsoft Graph Toolkit in their React applications."
 ms.localizationpriority: medium
-author: nmetulev
+author: sebastienlevert
 ---
 
 # Microsoft Graph Toolkit React components
@@ -115,3 +115,4 @@ The `template` prop allows you to specify which template to overwrite. In this c
 
 * [Get started with the Microsoft Graph Toolkit in React](./use-toolkit-with-react.md)
 * [Learn about authentication providers](../providers/providers.md)
+* [Disambiguation of Microsoft Graph Toolkit components](../customize-components/disambiguation.md) 

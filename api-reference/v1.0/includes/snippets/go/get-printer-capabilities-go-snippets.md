@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.PrinterRequestBuilderGetQueryParameters{
-	Select: "id,displayName,capabilities",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphprint "github.com/microsoftgraph/msgraph-sdk-go/print"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphprint.PrintPrinterItemRequestBuilderGetQueryParameters{
+	Select: [] string {"id","displayName","capabilities"},
 }
-options := &msgraphsdk.PrinterRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphprint.PrintPrinterItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-printerId := "printer-id"
-result, err := graphClient.Print().PrintersById(&printerId).Get(options)
+
+result, err := graphClient.Print().Printers().ByPrinterId("printer-id").Get(context.Background(), configuration)
 
 
 ```

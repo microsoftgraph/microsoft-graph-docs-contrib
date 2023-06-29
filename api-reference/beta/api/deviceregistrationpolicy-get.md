@@ -1,7 +1,7 @@
 ---
 title: "Get deviceRegistrationPolicy"
 description: "Read the properties and relationships of a deviceRegistrationPolicy object."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -19,14 +19,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)| Policy.ReadWrite.DeviceConfiguration|
+|Delegated (work or school account)| Policy.Read.All, Policy.ReadWrite.DeviceConfiguration|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
 When calling on behalf of a user, the user needs to belong to the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
-+ Global administrator
-+ Cloud device administrator
-+ Global reader
++ Global Reader
++ Cloud Device Administrator
++ Intune Administrator
++ Windows 365 Administrator
++ Directory Reviewer
 
 ## HTTP request
 
@@ -55,6 +57,8 @@ If successful, this method returns a `200 OK` response code and a [deviceRegistr
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_deviceregistrationpolicy"
@@ -64,6 +68,35 @@ If successful, this method returns a `200 OK` response code and a [deviceRegistr
 GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-deviceregistrationpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-deviceregistrationpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-deviceregistrationpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-deviceregistrationpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-deviceregistrationpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-deviceregistrationpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-deviceregistrationpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -98,6 +131,9 @@ Content-Type: application/json
         "isAdminConfigurable": true,
         "allowedUsers": [],
         "allowedGroups": []
+    },
+    "localAdminPassword": {
+      "isEnabled": false
     }
 }
 ```

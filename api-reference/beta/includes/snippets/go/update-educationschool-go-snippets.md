@@ -4,19 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEducationSchool()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewEducationSchool()
 displayName := "Fabrikam Arts High School"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Magnate school for the arts. Los Angeles School District"
-requestBody.SetDescription(&description)
-options := &msgraphsdk.EducationSchoolRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-educationSchoolId := "educationSchool-id"
-graphClient.Education().SchoolsById(&educationSchoolId).Patch(options)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.Education().Schools().BySchoolId("educationSchool-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -3,7 +3,7 @@ title: "genericError resource type"
 description: "A general-purpose error."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: non-product-specific
 author: "abheek-das"
 ---
 

@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var conversationMember = new AadUserConversationMember
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new AadUserConversationMember
 {
-	Roles = new List<String>()
+	OdataType = "#microsoft.graph.aadUserConversationMember",
+	Roles = new List<string>
 	{
-		"owner"
-	}
+		"owner",
+	},
 };
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Members["{conversationMember-id}"].PatchAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Members["{conversationMember-id}"]
-	.Request()
-	.UpdateAsync(conversationMember);
 
 ```

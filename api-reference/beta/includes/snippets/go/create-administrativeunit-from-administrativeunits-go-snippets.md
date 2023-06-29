@@ -4,20 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAdministrativeUnit()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAdministrativeUnit()
 displayName := "Seattle District Technical Schools"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Seattle district technical schools administration"
-requestBody.SetDescription(&description)
-visibility := "HiddenMembership"
-requestBody.SetVisibility(&visibility)
-options := &msgraphsdk.AdministrativeUnitsRequestBuilderPostOptions{
-	Body: requestBody,
+requestBody.SetDescription(&description) 
+additionalData := map[string]interface{}{
+	"membershipType" : "Dynamic", 
+	"membershipRule" : "(user.country -eq \"United States\")", 
+	"membershipRuleProcessingState" : "On", 
 }
-result, err := graphClient.AdministrativeUnits().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.AdministrativeUnits().Post(context.Background(), requestBody, nil)
 
 
 ```

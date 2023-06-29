@@ -4,26 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPrinter()
-location := msgraphsdk.NewPrinterLocation()
-requestBody.SetLocation(location)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPrinter()
+location := graphmodels.NewPrinterLocation()
 latitude := float64(1.1)
-location.SetLatitude(&latitude)
+location.SetLatitude(&latitude) 
 longitude := float64(2.2)
-location.SetLongitude(&longitude)
+location.SetLongitude(&longitude) 
 altitudeInMeters := int32(3)
-location.SetAltitudeInMeters(&altitudeInMeters)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"name": "PrinterName",
+location.SetAltitudeInMeters(&altitudeInMeters) 
+requestBody.SetLocation(location)
+additionalData := map[string]interface{}{
+	"name" : "PrinterName", 
 }
-options := &msgraphsdk.PrinterRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-printerId := "printer-id"
-graphClient.Print().PrintersById(&printerId).Patch(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Print().Printers().ByPrinterId("printer-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

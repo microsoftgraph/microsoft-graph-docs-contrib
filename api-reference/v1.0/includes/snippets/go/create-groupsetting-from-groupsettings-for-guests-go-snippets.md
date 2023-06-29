@@ -4,26 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewGroupSetting()
-displayName := "Group.Unified.Guest"
-requestBody.SetDisplayName(&displayName)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewGroupSetting()
 templateId := "08d542b9-071f-4e16-94b0-74abb372e3d9"
-requestBody.SetTemplateId(&templateId)
-requestBody.SetValues( []SettingValue {
-	msgraphsdk.NewSettingValue(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "AllowToAddGuests",
-		"value": "false",
-	}
+requestBody.SetTemplateId(&templateId) 
+
+
+settingValue := graphmodels.NewSettingValue()
+name := "AllowToAddGuests"
+settingValue.SetName(&name) 
+value := "false"
+settingValue.SetValue(&value) 
+
+values := []graphmodels.SettingValueable {
+	settingValue,
 }
-options := &msgraphsdk.SettingsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Settings().Post(options)
+requestBody.SetValues(values)
+
+result, err := graphClient.Groups().ByGroupId("group-id").Settings().Post(context.Background(), requestBody, nil)
 
 
 ```

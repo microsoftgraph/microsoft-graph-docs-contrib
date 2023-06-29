@@ -4,21 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPrintTaskDefinition()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPrintTaskDefinition()
 displayName := "Test TaskDefinitionName"
-requestBody.SetDisplayName(&displayName)
-createdBy := msgraphsdk.NewAppIdentity()
-requestBody.SetCreatedBy(createdBy)
+requestBody.SetDisplayName(&displayName) 
+createdBy := graphmodels.NewAppIdentity()
 displayName := "Requesting App Display Name"
-createdBy.SetDisplayName(&displayName)
-options := &msgraphsdk.PrintTaskDefinitionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-printTaskDefinitionId := "printTaskDefinition-id"
-graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).Patch(options)
+createdBy.SetDisplayName(&displayName) 
+requestBody.SetCreatedBy(createdBy)
+
+result, err := graphClient.Print().TaskDefinitions().ByTaskDefinitionId("printTaskDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,21 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAssignments( []CloudPcUserSettingAssignment {
-	msgraphsdk.NewCloudPcUserSettingAssignment(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
-	}
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphdevicemanagement "github.com/microsoftgraph/msgraph-beta-sdk-go/devicemanagement"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphdevicemanagement.NewAssignPostRequestBody()
+
+
+cloudPcUserSettingAssignment := graphmodels.NewCloudPcUserSettingAssignment()
+id := "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
+cloudPcUserSettingAssignment.SetId(&id) 
+target := graphmodels.NewCloudPcManagementGroupAssignmentTarget()
+groupId := "64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
+target.SetGroupId(&groupId) 
+cloudPcUserSettingAssignment.SetTarget(target)
+
+assignments := []graphmodels.cloudPcUserSettingAssignmentable {
+	cloudPcUserSettingAssignment,
 }
-options := &msgraphsdk.AssignRequestBuilderPostOptions{
-	Body: requestBody,
-}
-cloudPcUserSettingId := "cloudPcUserSetting-id"
-graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Assign().Post(options)
+requestBody.SetAssignments(assignments)
+
+graphClient.DeviceManagement().VirtualEndpoint().UserSettings().ByUserSettingId("cloudPcUserSetting-id").Assign().Post(context.Background(), requestBody, nil)
 
 
 ```

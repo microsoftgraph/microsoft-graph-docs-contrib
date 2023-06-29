@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 A representation of a Windows Hello for Business authentication method registered to a user. Windows Hello for Business is a sign-in authentication method for Windows devices.
 
-Inherits from [authenticationMethod](../resources/authenticationmethod.md).
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
@@ -33,7 +33,7 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|device|[device](../resources/device.md)|The registered device on which this Windows Hello for Business key resides.|
+|device|[device](../resources/device.md)|The registered device on which this Windows Hello for Business key resides. Supports `$expand`. <br/><br/>When you get a user's Windows Hello for Business registration information, this property is returned only on a single GET and when you specify `?$expand`. For example, GET `/users/admin@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -48,9 +48,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
-  "id": "String (Identifier)",
   "displayName": "String",
   "createdDateTime": "String",
+  "id": "String (Identifier)",
   "keyStrength": {"@odata.type": "microsoft.graph.authenticationMethodKeyStrength"}
 }
 ```

@@ -4,16 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.PoliciesRequestBuilderGetQueryParameters{
-	Filter: "displayName%20eq%20'SimplePolicy1'%20or%20displayName%20eq%20'SimplePolicy2'",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphidentity "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'"
+
+requestParameters := &graphidentity.IdentityConditionalAccessPoliciesRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.PoliciesRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphidentity.IdentityConditionalAccessPoliciesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Identity().ConditionalAccess().Policies().Get(options)
+
+result, err := graphClient.Identity().ConditionalAccess().Policies().Get(context.Background(), configuration)
 
 
 ```

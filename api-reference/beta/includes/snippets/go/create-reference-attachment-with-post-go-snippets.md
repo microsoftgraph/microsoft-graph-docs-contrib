@@ -4,35 +4,47 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-post := msgraphsdk.NewPost()
-requestBody.SetPost(post)
-body := msgraphsdk.NewItemBody()
-post.SetBody(body)
-contentType := "text"
-body.SetContentType(&contentType)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphgroups.NewReplyPostRequestBody()
+post := graphmodels.NewPost()
+body := graphmodels.NewItemBody()
+contentType := graphmodels.TEXT_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "I attached a reference to a file on OneDrive."
-body.SetContent(&content)
-post.SetAttachments( []Attachment {
-	msgraphsdk.NewAttachment(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.referenceAttachment",
-		"name": "Personal pictures",
-		"sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
-		"providerType": "oneDriveConsumer",
-		"permission": "Edit",
-		"isFolder": "True",
-	}
+body.SetContent(&content) 
+post.SetBody(body)
+
+
+attachment := graphmodels.NewReferenceAttachment()
+name := "Personal pictures"
+attachment.SetName(&name) 
+sourceUrl := "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
+attachment.SetSourceUrl(&sourceUrl) 
+providerType := graphmodels.ONEDRIVECONSUMER_REFERENCEATTACHMENTPROVIDER 
+attachment.SetProviderType(&providerType) 
+permission := graphmodels.EDIT_REFERENCEATTACHMENTPERMISSION 
+attachment.SetPermission(&permission) 
+isFolder := true
+attachment.SetIsFolder(&isFolder) 
+
+attachments := []graphmodels.Attachmentable {
+	attachment,
 }
-options := &msgraphsdk.ReplyRequestBuilderPostOptions{
-	Body: requestBody,
-}
-groupId := "group-id"
-conversationThreadId := "conversationThread-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Reply().Post(options)
+post.SetAttachments(attachments)
+requestBody.SetPost(post)
+
+graphClient.Groups().ByGroupId("group-id").Threads().ByThreadId("conversationThread-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

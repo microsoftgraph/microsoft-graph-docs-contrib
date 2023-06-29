@@ -4,11 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Patch(nil)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewMessage()
+isRead := true
+requestBody.SetIsRead(&isRead) 
+
+result, err := graphClient.Me().Messages().ByMessageId("message-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

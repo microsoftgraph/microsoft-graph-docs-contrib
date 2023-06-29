@@ -4,30 +4,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewB2cIdentityUserFlow()
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  graphidentity "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Location", "https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')")
+
+configuration := &graphidentity.IdentityB2cUserFlowsRequestBuilderPostRequestConfiguration{
+	Headers: headers,
+}
+requestBody := graphmodels.NewB2cIdentityUserFlow()
 id := "Customer"
-requestBody.SetId(&id)
-userFlowType := "signUpOrSignIn"
-requestBody.SetUserFlowType(&userFlowType)
+requestBody.SetId(&id) 
+userFlowType := graphmodels.SIGNUPORSIGNIN_USERFLOWTYPE 
+requestBody.SetUserFlowType(&userFlowType) 
 userFlowTypeVersion := float32(3)
-requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion)
-requestBody.SetIdentityProviders( []IdentityProvider {
-	msgraphsdk.NewIdentityProvider(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "Facebook-OAuth",
-	}
+requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion) 
+
+
+identityProvider := graphmodels.NewIdentityProvider()
+id := "Facebook-OAuth"
+identityProvider.SetId(&id) 
+
+identityProviders := []graphmodels.IdentityProviderable {
+	identityProvider,
 }
-headers := map[string]string{
-	"Location": "https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')"
-}
-options := &msgraphsdk.B2cUserFlowsRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
-}
-result, err := graphClient.Identity().B2cUserFlows().Post(options)
+requestBody.SetIdentityProviders(identityProviders)
+
+result, err := graphClient.Identity().B2cUserFlows().Post(context.Background(), requestBody, configuration)
 
 
 ```

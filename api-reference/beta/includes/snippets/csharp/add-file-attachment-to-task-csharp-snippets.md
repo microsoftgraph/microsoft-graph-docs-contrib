@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var attachment = new FileAttachment
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new FileAttachment
 {
+	OdataType = "#microsoft.graph.fileAttachment",
 	Name = "menu.txt",
-	ContentBytes = Convert.FromBase64String("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
+	ContentBytes = Convert.FromBase64String("bWFjIGFuZCBjaGVlc2UgdG9kYXk="),
 };
+var result = await graphClient.Me.Outlook.Tasks["{outlookTask-id}"].Attachments.PostAsync(requestBody);
 
-await graphClient.Me.Outlook.Tasks["{outlookTask-id}"].Attachments
-	.Request()
-	.AddAsync(attachment);
 
 ```

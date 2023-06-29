@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var parentReference = new ItemReference
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Restore.RestorePostRequestBody
 {
-	Id = "String"
+	ParentReference = new ItemReference
+	{
+		Id = "String",
+	},
+	Name = "String",
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Restore.PostAsync(requestBody);
 
-var name = "String";
-
-await graphClient.Me.Drive.Items["{driveItem-id}"]
-	.Restore(parentReference,name)
-	.Request()
-	.PostAsync();
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Update auditEvent"
 description: "Update the properties of a auditEvent object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [auditEvent](../resources/intune-auditing-auditevent.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -68,10 +68,13 @@ If successful, this method returns a `200 OK` response code and an updated [audi
 
 ### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_auditing_auditevent_update_update_auditevent" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1390
+Content-length: 1496
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -80,6 +83,7 @@ Content-length: 1390
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "Type value",
+    "auditActorType": "Audit Actor Type value",
     "userPermissions": [
       "User Permissions value"
     ],
@@ -109,6 +113,7 @@ Content-length: 1390
         }
       ],
       "type": "Type value",
+      "auditResourceType": "Audit Resource Type value",
       "resourceId": "Resource Id value"
     }
   ],
@@ -116,12 +121,32 @@ Content-length: 1390
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-auditing-auditevent-update-update-auditevent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-auditing-auditevent-update-update-auditevent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-auditing-auditevent-update-update-auditevent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-auditing-auditevent-update-update-auditevent-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.auditEvent" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1439
+Content-Length: 1545
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -131,6 +156,7 @@ Content-Length: 1439
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "Type value",
+    "auditActorType": "Audit Actor Type value",
     "userPermissions": [
       "User Permissions value"
     ],
@@ -160,12 +186,10 @@ Content-Length: 1439
         }
       ],
       "type": "Type value",
+      "auditResourceType": "Audit Resource Type value",
       "resourceId": "Resource Id value"
     }
   ],
   "category": "Category value"
 }
 ```
-
-
-

@@ -4,26 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAttachment()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAttachment()
 name := "name-value"
-requestBody.SetName(&name)
+requestBody.SetName(&name) 
 contentType := "contentType-value"
-requestBody.SetContentType(&contentType)
+requestBody.SetContentType(&contentType) 
 isInline := false
-requestBody.SetIsInline(&isInline)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#Microsoft.OutlookServices.FileAttachment",
-	"contentLocation": "contentLocation-value",
-	"contentBytes": "contentBytes-value",
+requestBody.SetIsInline(&isInline) 
+additionalData := map[string]interface{}{
+	"contentLocation" : "contentLocation-value", 
+	"contentBytes" : "contentBytes-value", 
 }
-options := &msgraphsdk.AttachmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Attachments().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Me().Messages().ByMessageId("message-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

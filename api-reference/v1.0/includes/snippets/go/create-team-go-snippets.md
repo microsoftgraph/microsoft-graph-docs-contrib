@@ -4,17 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-}
-options := &msgraphsdk.TeamRequestBuilderPutOptions{
-	Body: requestBody,
-}
-groupId := "group-id"
-graphClient.GroupsById(&groupId).Team().Put(options)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTeam()
+memberSettings := graphmodels.NewTeamMemberSettings()
+allowCreatePrivateChannels := true
+memberSettings.SetAllowCreatePrivateChannels(&allowCreatePrivateChannels) 
+allowCreateUpdateChannels := true
+memberSettings.SetAllowCreateUpdateChannels(&allowCreateUpdateChannels) 
+requestBody.SetMemberSettings(memberSettings)
+messagingSettings := graphmodels.NewTeamMessagingSettings()
+allowUserEditMessages := true
+messagingSettings.SetAllowUserEditMessages(&allowUserEditMessages) 
+allowUserDeleteMessages := true
+messagingSettings.SetAllowUserDeleteMessages(&allowUserDeleteMessages) 
+requestBody.SetMessagingSettings(messagingSettings)
+funSettings := graphmodels.NewTeamFunSettings()
+allowGiphy := true
+funSettings.SetAllowGiphy(&allowGiphy) 
+giphyContentRating := graphmodels.STRICT_GIPHYRATINGTYPE 
+funSettings.SetGiphyContentRating(&giphyContentRating) 
+requestBody.SetFunSettings(funSettings)
+
+result, err := graphClient.Groups().ByGroupId("group-id").Team().Put(context.Background(), requestBody, nil)
 
 
 ```

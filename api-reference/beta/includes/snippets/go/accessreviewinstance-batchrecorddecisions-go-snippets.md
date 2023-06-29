@@ -4,21 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphusers.NewItemBatchRecordDecisionsPostRequestBody()
 decision := "Approve"
-requestBody.SetDecision(&decision)
+requestBody.SetDecision(&decision) 
 justification := "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team"
-requestBody.SetJustification(&justification)
+requestBody.SetJustification(&justification) 
 resourceId := "a5c51e59-3fcd-4a37-87a1-835c0c21488a"
-requestBody.SetResourceId(&resourceId)
-options := &msgraphsdk.BatchRecordDecisionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-accessReviewInstanceId := "accessReviewInstance-id"
-graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).BatchRecordDecisions().Post(options)
+requestBody.SetResourceId(&resourceId) 
+
+graphClient.Me().PendingAccessReviewInstances().ByPendingAccessReviewInstanceId("accessReviewInstance-id").BatchRecordDecisions().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ThreatAssessmentRequestRequestBuilderGetQueryParameters{
-	Expand: "results",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphinformationprotection "github.com/microsoftgraph/msgraph-sdk-go/informationprotection"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphinformationprotection.InformationProtectionThreatAssessmentRequestItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"results"},
 }
-options := &msgraphsdk.ThreatAssessmentRequestRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphinformationprotection.InformationProtectionThreatAssessmentRequestItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-threatAssessmentRequestId := "threatAssessmentRequest-id"
-result, err := graphClient.InformationProtection().ThreatAssessmentRequestsById(&threatAssessmentRequestId).Get(options)
+
+result, err := graphClient.InformationProtection().ThreatAssessmentRequests().ByThreatAssessmentRequestId("threatAssessmentRequest-id").Get(context.Background(), configuration)
 
 
 ```

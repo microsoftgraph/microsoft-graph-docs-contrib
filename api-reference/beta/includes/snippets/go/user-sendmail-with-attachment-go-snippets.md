@@ -4,38 +4,57 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-message := msgraphsdk.NewMessage()
-requestBody.SetMessage(message)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphusers.NewItemSendMailPostRequestBody()
+message := graphmodels.NewMessage()
 subject := "Meet for lunch?"
-message.SetSubject(&subject)
-body := msgraphsdk.NewItemBody()
-message.SetBody(body)
-contentType := "Text"
-body.SetContentType(&contentType)
+message.SetSubject(&subject) 
+body := graphmodels.NewItemBody()
+contentType := graphmodels.TEXT_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "The new cafeteria is open."
-body.SetContent(&content)
-message.SetToRecipients( []Recipient {
-	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+body.SetContent(&content) 
+message.SetBody(body)
+
+
+recipient := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
+address := "meganb@contoso.onmicrosoft.com"
+emailAddress.SetAddress(&address) 
+recipient.SetEmailAddress(emailAddress)
+
+toRecipients := []graphmodels.Recipientable {
+	recipient,
 }
-message.SetAttachments( []Attachment {
-	msgraphsdk.NewAttachment(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.fileAttachment",
-		"name": "attachment.txt",
-		"contentType": "text/plain",
-		"contentBytes": "SGVsbG8gV29ybGQh",
-	}
+message.SetToRecipients(toRecipients)
+
+
+attachment := graphmodels.NewFileAttachment()
+name := "attachment.txt"
+attachment.SetName(&name) 
+contentType := "text/plain"
+attachment.SetContentType(&contentType) 
+contentBytes := []byte("sGVsbG8gV29ybGQh")
+attachment.SetContentBytes(&contentBytes) 
+
+attachments := []graphmodels.Attachmentable {
+	attachment,
 }
-options := &msgraphsdk.SendMailRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Me().SendMail().Post(options)
+message.SetAttachments(attachments)
+requestBody.SetMessage(message)
+
+graphClient.Me().SendMail().Post(context.Background(), requestBody, nil)
 
 
 ```

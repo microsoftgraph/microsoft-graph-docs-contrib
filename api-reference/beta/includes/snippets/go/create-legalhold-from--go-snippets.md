@@ -4,36 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewLegalHold()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodelsediscovery.NewLegalHold()
 description := "String"
-requestBody.SetDescription(&description)
-createdBy := msgraphsdk.NewIdentitySet()
+requestBody.SetDescription(&description) 
+createdBy := graphmodels.NewIdentitySet()
 requestBody.SetCreatedBy(createdBy)
-createdBy.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.identitySet",
-}
-isEnabled := "Boolean"
-requestBody.SetIsEnabled(&isEnabled)
-status := "String"
-requestBody.SetStatus(&status)
+isEnabled := boolean
+requestBody.SetIsEnabled(&isEnabled) 
+status := graphmodels.STRING_LEGALHOLDSTATUS 
+requestBody.SetStatus(&status) 
 contentQuery := "String"
-requestBody.SetContentQuery(&contentQuery)
-requestBody.SetErrors( []String {
+requestBody.SetContentQuery(&contentQuery) 
+errors := []string {
 	"String",
 }
+requestBody.SetErrors(errors)
 displayName := "String"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.ediscovery.legalHold",
-}
-options := &msgraphsdk.LegalHoldsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-caseId := "case-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHolds().Post(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").LegalHolds().Post(context.Background(), requestBody, nil)
 
 
 ```

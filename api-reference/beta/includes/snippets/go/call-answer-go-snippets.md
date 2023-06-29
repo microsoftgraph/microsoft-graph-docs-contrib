@@ -4,28 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphcommunications "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphcommunications.NewAnswerPostRequestBody()
 callbackUri := "callbackUri-value"
-requestBody.SetCallbackUri(&callbackUri)
-mediaConfig := msgraphsdk.NewMediaConfig()
+requestBody.SetCallbackUri(&callbackUri) 
+mediaConfig := graphmodels.NewAppHostedMediaConfig()
+blob := "<Media Session Configuration Blob>"
+mediaConfig.SetBlob(&blob) 
 requestBody.SetMediaConfig(mediaConfig)
-mediaConfig.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.appHostedMediaConfig",
-	"blob": "<Media Session Configuration Blob>",
+acceptedModalities := []graphmodels.Modalityable {
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality)
 }
-requestBody.SetAcceptedModalities( []Modality {
-	"audio",
-}
+requestBody.SetAcceptedModalities(acceptedModalities)
+callOptions := graphmodels.NewIncomingCallOptions()
+isContentSharingNotificationEnabled := true
+callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled) 
+requestBody.SetCallOptions(callOptions)
 participantCapacity := int32(200)
-requestBody.SetParticipantCapacity(&participantCapacity)
-options := &msgraphsdk.AnswerRequestBuilderPostOptions{
-	Body: requestBody,
-}
-callId := "call-id"
-graphClient.Communications().CallsById(&callId).Answer().Post(options)
+requestBody.SetParticipantCapacity(&participantCapacity) 
+
+graphClient.Communications().Calls().ByCallId("call-id").Answer().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -16,6 +16,6 @@ const updateAdDomainPassword = {
 
 await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword')
 	.version('beta')
-	.update(updateAdDomainPassword);
+	.post(updateAdDomainPassword);
 
 ```

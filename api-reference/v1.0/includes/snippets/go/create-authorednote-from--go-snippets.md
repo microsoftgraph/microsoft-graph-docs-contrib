@@ -4,21 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAuthoredNote()
-content := msgraphsdk.NewItemBody()
-requestBody.SetContent(content)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAuthoredNote()
+content := graphmodels.NewItemBody()
 content := "String"
-content.SetContent(&content)
-contentType := "text"
-content.SetContentType(&contentType)
-options := &msgraphsdk.NotesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-subjectRightsRequestId := "subjectRightsRequest-id"
-result, err := graphClient.Privacy().SubjectRightsRequestsById(&subjectRightsRequestId).Notes().Post(options)
+content.SetContent(&content) 
+contentType := graphmodels.TEXT_BODYTYPE 
+content.SetContentType(&contentType) 
+requestBody.SetContent(content)
+
+result, err := graphClient.Privacy().SubjectRightsRequests().BySubjectRightsRequestId("subjectRightsRequest-id").Notes().Post(context.Background(), requestBody, nil)
 
 
 ```

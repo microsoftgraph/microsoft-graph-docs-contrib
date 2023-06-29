@@ -4,20 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewSiteSource()
-site := msgraphsdk.NewSite()
-requestBody.SetSite(site)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodelsediscovery.NewSiteSource()
+site := graphmodels.NewSite()
 webUrl := "https://contoso.sharepoint.com/sites/SecretSite"
-site.SetWebUrl(&webUrl)
-options := &msgraphsdk.SiteSourcesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-caseId := "case-id"
-legalHoldId := "legalHold-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).SiteSources().Post(options)
+site.SetWebUrl(&webUrl) 
+requestBody.SetSite(site)
+
+result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").LegalHolds().ByLegalHoldId("legalHold-id").SiteSources().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,17 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.AppRoleAssignmentsRequestBuilderGetQueryParameters{
-	Filter: "resourceId%20eq%208e881353-1735-45af-af21-ee1344582a4d",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "resourceId eq 8e881353-1735-45af-af21-ee1344582a4d"
+
+requestParameters := &graphusers.UserItemAppRoleAssignmentsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.AppRoleAssignmentsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphusers.UserItemAppRoleAssignmentsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-userId := "user-id"
-result, err := graphClient.UsersById(&userId).AppRoleAssignments().Get(options)
+
+result, err := graphClient.Users().ByUserId("user-id").AppRoleAssignments().Get(context.Background(), configuration)
 
 
 ```

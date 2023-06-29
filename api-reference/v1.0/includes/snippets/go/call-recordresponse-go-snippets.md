@@ -4,38 +4,53 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphcommunications "github.com/microsoftgraph/msgraph-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphcommunications.NewRecordResponsePostRequestBody()
 bargeInAllowed := true
-requestBody.SetBargeInAllowed(&bargeInAllowed)
+requestBody.SetBargeInAllowed(&bargeInAllowed) 
 clientContext := "d45324c1-fcb5-430a-902c-f20af696537c"
-requestBody.SetClientContext(&clientContext)
-requestBody.SetPrompts( []Prompt {
-	msgraphsdk.NewPrompt(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.mediaPrompt",
-	}
+requestBody.SetClientContext(&clientContext) 
+
+
+prompt := graphmodels.NewMediaPrompt()
+mediaInfo := graphmodels.NewMediaInfo()
+uri := "https://cdn.contoso.com/beep.wav"
+mediaInfo.SetUri(&uri) 
+resourceId := "1D6DE2D4-CD51-4309-8DAA-70768651088E"
+mediaInfo.SetResourceId(&resourceId) 
+prompt.SetMediaInfo(mediaInfo)
+
+prompts := []graphmodels.Promptable {
+	prompt,
 }
+requestBody.SetPrompts(prompts)
 maxRecordDurationInSeconds := int32(10)
-requestBody.SetMaxRecordDurationInSeconds(&maxRecordDurationInSeconds)
+requestBody.SetMaxRecordDurationInSeconds(&maxRecordDurationInSeconds) 
 initialSilenceTimeoutInSeconds := int32(5)
-requestBody.SetInitialSilenceTimeoutInSeconds(&initialSilenceTimeoutInSeconds)
+requestBody.SetInitialSilenceTimeoutInSeconds(&initialSilenceTimeoutInSeconds) 
 maxSilenceTimeoutInSeconds := int32(2)
-requestBody.SetMaxSilenceTimeoutInSeconds(&maxSilenceTimeoutInSeconds)
+requestBody.SetMaxSilenceTimeoutInSeconds(&maxSilenceTimeoutInSeconds) 
 playBeep := true
-requestBody.SetPlayBeep(&playBeep)
-requestBody.SetStopTones( []String {
+requestBody.SetPlayBeep(&playBeep) 
+stopTones := []string {
 	"#",
 	"1",
 	"*",
 }
-options := &msgraphsdk.RecordResponseRequestBuilderPostOptions{
-	Body: requestBody,
-}
-callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).RecordResponse().Post(options)
+requestBody.SetStopTones(stopTones)
+
+result, err := graphClient.Communications().Calls().ByCallId("call-id").RecordResponse().Post(context.Background(), requestBody, nil)
 
 
 ```

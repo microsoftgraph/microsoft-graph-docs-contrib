@@ -4,19 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"certificateAuthorities":  []Object {
-	}
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCertificateBasedAuthConfiguration()
+
+
+certificateAuthority := graphmodels.NewCertificateAuthority()
+isRootAuthority := true
+certificateAuthority.SetIsRootAuthority(&isRootAuthority) 
+certificate := []byte("binary")
+certificateAuthority.SetCertificate(&certificate) 
+
+certificateAuthorities := []graphmodels.CertificateAuthorityable {
+	certificateAuthority,
 }
-options := &msgraphsdk.CertificateBasedAuthConfigurationRequestBuilderPostOptions{
-	Body: requestBody,
-}
-organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).CertificateBasedAuthConfiguration().Post(options)
+requestBody.SetCertificateAuthorities(certificateAuthorities)
+
+result, err := graphClient.Organization().ByOrganization().Id("organization-id").CertificateBasedAuthConfiguration().Post(context.Background(), requestBody, nil)
 
 
 ```

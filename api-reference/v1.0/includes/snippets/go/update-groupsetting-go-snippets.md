@@ -4,23 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewGroupSetting()
-requestBody.SetValues( []SettingValue {
-	msgraphsdk.NewSettingValue(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "AllowToAddGuests",
-		"value": "true",
-	}
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewGroupSetting()
+
+
+settingValue := graphmodels.NewSettingValue()
+name := "AllowToAddGuests"
+settingValue.SetName(&name) 
+value := "true"
+settingValue.SetValue(&value) 
+
+values := []graphmodels.SettingValueable {
+	settingValue,
 }
-options := &msgraphsdk.GroupSettingRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-groupId := "group-id"
-groupSettingId := "groupSetting-id"
-graphClient.GroupsById(&groupId).SettingsById(&groupSettingId).Patch(options)
+requestBody.SetValues(values)
+
+result, err := graphClient.Groups().ByGroupId("group-id").Settings().BySettingId("groupSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

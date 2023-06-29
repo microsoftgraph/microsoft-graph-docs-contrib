@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewLanguageProficiency()
-allowedAudiences := "organization"
-requestBody.SetAllowedAudiences(&allowedAudiences)
-options := &msgraphsdk.LanguageProficiencyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-languageProficiencyId := "languageProficiency-id"
-graphClient.Me().Profile().LanguagesById(&languageProficiencyId).Patch(options)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewLanguageProficiency()
+allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
+requestBody.SetAllowedAudiences(&allowedAudiences) 
+
+result, err := graphClient.Me().Profile().Languages().ByLanguageId("languageProficiency-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

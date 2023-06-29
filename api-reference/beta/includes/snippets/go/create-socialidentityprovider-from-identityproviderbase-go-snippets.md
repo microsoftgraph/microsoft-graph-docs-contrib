@@ -4,22 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewIdentityProviderBase()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewIdentityProviderBase()
 displayName := "Login with Amazon"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.socialIdentityProvider",
-	"identityProviderType": "Amazon",
-	"clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-	"clientSecret": "000000000000",
-}
-options := &msgraphsdk.IdentityProvidersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().IdentityProviders().Post(options)
+requestBody.SetDisplayName(&displayName) 
+identityProviderType := "Amazon"
+requestBody.SetIdentityProviderType(&identityProviderType) 
+clientId := "56433757-cadd-4135-8431-2c9e3fd68ae8"
+requestBody.SetClientId(&clientId) 
+clientSecret := "000000000000"
+requestBody.SetClientSecret(&clientSecret) 
+
+result, err := graphClient.Identity().IdentityProviders().Post(context.Background(), requestBody, nil)
 
 
 ```

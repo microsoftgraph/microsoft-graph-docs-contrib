@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var user = new User
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new User
 {
 	PasswordProfile = new PasswordProfile
 	{
-		ForceChangePasswordNextSignIn = false,
-		Password = "xWwvJ]6NMw+bWH-d"
-	}
+		ForceChangePasswordNextSignIn = true,
+		Password = "xWwvJ]6NMw+bWH-d",
+	},
 };
+var result = await graphClient.Users["{user-id}"].PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"]
-	.Request()
-	.UpdateAsync(user);
 
 ```

@@ -17,32 +17,34 @@ Adds specific groups to a lifecycle policy. This action limits the group lifecyc
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Directory.ReadWrite.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Directory.ReadWrite.All                     |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groupLifecyclePolicies/{id}/addGroup
 ```
 
 ## Request headers
 
-| Name | Description |
-|:---------------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json |
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter | Type | Description |
-|:---------------|:--------|:----------|
-|groupId|String| The identifier of the group to add to the policy. |
+| Parameter | Type   | Description                                       |
+| :-------- | :----- | :------------------------------------------------ |
+| groupId   | String | The identifier of the group to add to the policy. |
 
 When the **managedGroupTypes** property of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) is set to `Selected`, you can add up to 500 groups to the list. If you need to add more than 500 groups, the **managedGroupTypes** property of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) must be set to `All`.
 
@@ -54,12 +56,16 @@ If successful, this method returns `200 OK` response code. If the group is added
 
 ## Example
 
-#### Request
+### Request
 
+The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "grouplifecyclepolicy_addgroup"
 } -->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}/addGroup
 Content-type: application/json
@@ -69,16 +75,46 @@ Content-type: application/json
 }
 ```
 
-#### Response
-<!-- { "blockType": "ignored" } -->
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/grouplifecyclepolicy-addgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/grouplifecyclepolicy-addgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/grouplifecyclepolicy-addgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/grouplifecyclepolicy-addgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/grouplifecyclepolicy-addgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/grouplifecyclepolicy-addgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/grouplifecyclepolicy-addgroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response"
+} -->
 
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "value": true
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -90,4 +126,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

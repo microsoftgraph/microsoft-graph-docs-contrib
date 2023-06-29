@@ -4,25 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphteams.NewClonePostRequestBody()
 displayName := "Library Assist"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Self help community for library"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 mailNickname := "libassist"
-requestBody.SetMailNickname(&mailNickname)
-partsToClone := "apps,tabs,settings,channels,members"
-requestBody.SetPartsToClone(&partsToClone)
-visibility := "public"
-requestBody.SetVisibility(&visibility)
-options := &msgraphsdk.CloneRequestBuilderPostOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-graphClient.TeamsById(&teamId).Clone().Post(options)
+requestBody.SetMailNickname(&mailNickname) 
+partsToClone := graphmodels.APPS,TABS,SETTINGS,CHANNELS,MEMBERS_CLONABLETEAMPARTS 
+requestBody.SetPartsToClone(&partsToClone) 
+visibility := graphmodels.PUBLIC_TEAMVISIBILITYTYPE 
+requestBody.SetVisibility(&visibility) 
+
+graphClient.Teams().ByTeamId("team-id").Clone().Post(context.Background(), requestBody, nil)
 
 
 ```

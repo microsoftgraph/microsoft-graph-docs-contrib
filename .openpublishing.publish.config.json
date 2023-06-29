@@ -9,7 +9,8 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "ZonePivotGroups": "Toc"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -44,8 +45,34 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "azure_docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs/",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "concepts/sdks/snippets/dotnet",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-dotnet",
+      "branch": "main"
+    },
+    {
+      "path_to_root": "concepts/sdks/snippets/go",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-go",
+      "branch": "main"
+    },
+    {
+      "path_to_root": "concepts/sdks/snippets/java",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-java",
+      "branch": "main"
+    },
+    {
+      "path_to_root": "concepts/sdks/snippets/typescript",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-typescript",
+      "branch": "main"
     }
   ],
   "branch_target_mapping": {},
@@ -65,6 +92,9 @@
     "redirects/.openpublishing.redirection.0121.json",
     "redirects/.openpublishing.redirection.0921.json",
     "redirects/.openpublishing.redirection.1121.json",
-    "redirects/.openpublishing.redirection.1221.json"
+    "redirects/.openpublishing.redirection.1221.json",
+    "redirects/.openpublishing.redirection.0522.json",
+    "redirects/.openpublishing.redirection.0423.json",
+    "redirects/.openpublishing.redirection.changedapi.json"
   ]
 }

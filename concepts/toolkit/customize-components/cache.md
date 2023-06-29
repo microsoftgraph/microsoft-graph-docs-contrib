@@ -2,7 +2,7 @@
 title: "Microsoft Graph Toolkit caching"
 description: "Explaining how the Cache works and how to configure the options provided to developers"
 ms.localizationpriority: medium
-author: adchau
+author: sebastienlevert
 ---
 
 # Microsoft Graph Toolkit caching
@@ -67,7 +67,7 @@ The presence store is the only exception, and has a default value of 300000 ms, 
 
 To individual disable a store simply set the value of `isEnabled` in that store's config properties to false:
 ```JavaScript
-import { CacheService } from '@microsoft/mgt';
+import { CacheService } from '@microsoft/mgt-element';
 
 CacheService.config.users.isEnabled = false;
 ```
@@ -88,7 +88,7 @@ The cache is automatically cleared when the user signs out. It can also be clear
 The clear all the stores in the cache, the `clearCaches()` method of the `CacheService` class will clear every store maintained by the CacheService.
 
 ```JavaScript
-import { CacheService } from '@microsoft/mgt';
+import { CacheService } from '@microsoft/mgt-element';
 
 CacheService.clearCaches();
 ```
@@ -105,7 +105,7 @@ CacheService.getCache(schema: CacheSchema, storeName: String);
 The `CacheSchema` object is a dictionary with the key/value pairs.
 
 ```TypeScript
-import { CacheSchema } from '@microsoft/mgt';
+import { CacheSchema } from '@microsoft/mgt-element';
 const cacheSchema: CacheSchema = {
   name: string,
   stores: {
@@ -120,7 +120,7 @@ const cacheSchema: CacheSchema = {
 The following example shows the cache implementation.
 
 ```TypeScript
-import { CacheItem, CacheSchema, CacheService, CacheStore } from '@microsoft/mgt';
+import { CacheItem, CacheSchema, CacheService, CacheStore } from '@microsoft/mgt-element';
 
 const cacheSchema: CacheSchema = {
   name: 'users',

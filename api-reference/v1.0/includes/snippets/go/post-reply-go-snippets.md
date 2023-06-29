@@ -4,79 +4,101 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-post := msgraphsdk.NewPost()
-requestBody.SetPost(post)
-body := msgraphsdk.NewItemBody()
-post.SetBody(body)
-contentType := ""
-body.SetContentType(&contentType)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphgroups.NewReplyPostRequestBody()
+post := graphmodels.NewPost()
+body := graphmodels.NewItemBody()
+contentType := graphmodels.TEXT_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "content-value"
-body.SetContent(&content)
-receivedDateTime, err := time.Parse(time.RFC3339, "datetime-value")
-post.SetReceivedDateTime(&receivedDateTime)
+body.SetContent(&content) 
+post.SetBody(body)
+receivedDateTime , err := time.Parse(time.RFC3339, "datetime-value")
+post.SetReceivedDateTime(&receivedDateTime) 
 hasAttachments := true
-post.SetHasAttachments(&hasAttachments)
-from := msgraphsdk.NewRecipient()
-post.SetFrom(from)
-emailAddress := msgraphsdk.NewEmailAddress()
+post.SetHasAttachments(&hasAttachments) 
+from := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
+name := "name-value"
+emailAddress.SetName(&name) 
+address := "address-value"
+emailAddress.SetAddress(&address) 
 from.SetEmailAddress(emailAddress)
+post.SetFrom(from)
+sender := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
 name := "name-value"
-emailAddress.SetName(&name)
+emailAddress.SetName(&name) 
 address := "address-value"
-emailAddress.SetAddress(&address)
-sender := msgraphsdk.NewRecipient()
-post.SetSender(sender)
-emailAddress := msgraphsdk.NewEmailAddress()
+emailAddress.SetAddress(&address) 
 sender.SetEmailAddress(emailAddress)
-name := "name-value"
-emailAddress.SetName(&name)
-address := "address-value"
-emailAddress.SetAddress(&address)
+post.SetSender(sender)
 conversationThreadId := "conversationThreadId-value"
-post.SetConversationThreadId(&conversationThreadId)
-post.SetNewParticipants( []Recipient {
-	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+post.SetConversationThreadId(&conversationThreadId) 
+
+
+recipient := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
+name := "name-value"
+emailAddress.SetName(&name) 
+address := "address-value"
+emailAddress.SetAddress(&address) 
+recipient.SetEmailAddress(emailAddress)
+
+newParticipants := []graphmodels.Recipientable {
+	recipient,
 }
+post.SetNewParticipants(newParticipants)
 conversationId := "conversationId-value"
-post.SetConversationId(&conversationId)
-createdDateTime, err := time.Parse(time.RFC3339, "datetime-value")
-post.SetCreatedDateTime(&createdDateTime)
-lastModifiedDateTime, err := time.Parse(time.RFC3339, "datetime-value")
-post.SetLastModifiedDateTime(&lastModifiedDateTime)
+post.SetConversationId(&conversationId) 
+createdDateTime , err := time.Parse(time.RFC3339, "datetime-value")
+post.SetCreatedDateTime(&createdDateTime) 
+lastModifiedDateTime , err := time.Parse(time.RFC3339, "datetime-value")
+post.SetLastModifiedDateTime(&lastModifiedDateTime) 
 changeKey := "changeKey-value"
-post.SetChangeKey(&changeKey)
-post.SetCategories( []String {
+post.SetChangeKey(&changeKey) 
+categories := []string {
 	"categories-value",
 }
+post.SetCategories(categories)
 id := "id-value"
-post.SetId(&id)
-inReplyTo := msgraphsdk.NewPost()
+post.SetId(&id) 
+inReplyTo := graphmodels.NewPost()
 post.SetInReplyTo(inReplyTo)
-post.SetAttachments( []Attachment {
-	msgraphsdk.NewAttachment(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.fileAttachment",
-		"lastModifiedDateTime": "datetime-value",
-		"name": "name-value",
-		"contentType": "contentType-value",
-		"size": ,
-		"isInline": true,
-		"id": "id-value",
-	}
+
+
+attachment := graphmodels.NewFileAttachment()
+lastModifiedDateTime , err := time.Parse(time.RFC3339, "datetime-value")
+attachment.SetLastModifiedDateTime(&lastModifiedDateTime) 
+name := "name-value"
+attachment.SetName(&name) 
+contentType := "contentType-value"
+attachment.SetContentType(&contentType) 
+size := int32(99)
+attachment.SetSize(&size) 
+isInline := true
+attachment.SetIsInline(&isInline) 
+id := "id-value"
+attachment.SetId(&id) 
+
+attachments := []graphmodels.Attachmentable {
+	attachment,
 }
-options := &msgraphsdk.ReplyRequestBuilderPostOptions{
-	Body: requestBody,
-}
-groupId := "group-id"
-conversationThreadId := "conversationThread-id"
-postId := "post-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Reply().Post(options)
+post.SetAttachments(attachments)
+requestBody.SetPost(post)
+
+graphClient.Groups().ByGroupId("group-id").Threads().ByThreadId("conversationThread-id").Posts().ByPostId("post-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

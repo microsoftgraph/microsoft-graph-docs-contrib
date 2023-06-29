@@ -1,0 +1,25 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```php
+
+<?php
+
+// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$requestBody = new SiteSource();
+$requestBody->set@odatatype('microsoft.graph.security.siteSource');
+
+$site = new Site();
+$site->setWebUrl('https://contoso.sharepoint.com/sites/SecretSite');
+
+
+$requestBody->setSite($site);
+
+
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->searches()->bySearcheId('ediscoverySearch-id')->additionalSources()->post($requestBody);
+
+
+```

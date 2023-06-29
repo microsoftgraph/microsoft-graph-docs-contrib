@@ -4,18 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAuthenticationFlowsPolicy()
-selfServiceSignUp := msgraphsdk.NewSelfServiceSignUpAuthenticationFlowConfiguration()
-requestBody.SetSelfServiceSignUp(selfServiceSignUp)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAuthenticationFlowsPolicy()
+selfServiceSignUp := graphmodels.NewSelfServiceSignUpAuthenticationFlowConfiguration()
 isEnabled := true
-selfServiceSignUp.SetIsEnabled(&isEnabled)
-options := &msgraphsdk.AuthenticationFlowsPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Policies().AuthenticationFlowsPolicy().Patch(options)
+selfServiceSignUp.SetIsEnabled(&isEnabled) 
+requestBody.SetSelfServiceSignUp(selfServiceSignUp)
+
+result, err := graphClient.Policies().AuthenticationFlowsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

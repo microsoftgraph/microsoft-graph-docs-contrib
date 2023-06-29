@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var sessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var availability = "Available";
+var requestBody = new Microsoft.Graph.Beta.Users.Item.Presence.SetPresence.SetPresencePostRequestBody
+{
+	SessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87",
+	Availability = "Available",
+	Activity = "Available",
+	ExpirationDuration = TimeSpan.Parse("PT1H"),
+};
+await graphClient.Users["{user-id}"].Presence.SetPresence.PostAsync(requestBody);
 
-var activity = "Available";
-
-var expirationDuration = new Duration("PT1H");
-
-await graphClient.Users["{user-id}"].Presence
-	.SetPresence(availability,activity,sessionId,expirationDuration)
-	.Request()
-	.PostAsync();
 
 ```

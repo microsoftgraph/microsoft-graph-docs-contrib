@@ -22,41 +22,13 @@ Defines how a value should be extracted (or transformed) from the source object.
 |expression             |String                     |Equivalent expression representation of this **attributeMappingSource** object.|
 |name                   |String                     |Name parameter of the mapping source. Depending on the **type** property value, this can be the name of the function, the name of the source attribute, or a constant value to be used. |
 |parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) collection | If this object represents a function, lists function parameters. Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions. If **type** is not `Function`, this property will be null/empty array. |
-|type                   | String                    |The type of this attribute mapping source. Possible values are: `Attribute`, `Constant`, `Function`. Default is `Attribute`.|
+|type                   | attributeMappingSourceType                    |The type of this attribute mapping source. Possible values are: `Attribute`, `Constant`, `Function`. Default is `Attribute`.|
 
-## JSON representation
+### Sample syntaxes
 
-The following is a JSON representation of the resource.
+Simple attribute to attribute mapping.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.attributeMappingSource"
-}-->
-
-```json
-{
-  "expression": "String",
-  "name": "String",
-  "parameters": [{"@odata.type": "microsoft.graph.stringKeyAttributeMappingSourceValuePair"}],
-  "type": "String"
-}
-```
-
-## JSON Examples
-
-Simple attribute to attribute mapping
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.attributeMappingSource"
-}-->
-
+<!-- { "blockType": "ignored" } -->
 ```json
 {
     "expression": "[mail]",
@@ -65,16 +37,9 @@ Simple attribute to attribute mapping
 }
 ```
 
-Expression extracting first 8 characters from the source attribute
+Expression extracting first 8 characters from the source attribute.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.attributeMappingSource"
-}-->
-
+<!-- { "blockType": "ignored" } -->
 ```json
  {
     "expression": "Mid([userPrincipalName], 1, 8)",
@@ -112,6 +77,27 @@ Expression extracting first 8 characters from the source attribute
 }
 ```
 
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.attributeMappingSource"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.attributeMappingSource",
+  "expression": "String",
+  "name": "String",
+  "parameters": [
+    {
+      "@odata.type": "microsoft.graph.stringKeyAttributeMappingSourceValuePair"
+    }
+  ],
+  "type": "String"
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -124,5 +110,3 @@ Expression extracting first 8 characters from the source attribute
   "suppressions": []
 }
 -->
-
-

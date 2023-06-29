@@ -2,7 +2,7 @@
 title: "conditionalAccessLocations resource type"
 description: "Represents locations included in and excluded from the policy scope."
 ms.localizationpriority: medium
-author: "videor"
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
@@ -17,8 +17,8 @@ Represents locations included in and excluded from the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| includeLocations | String collection | Location IDs in scope of policy unless explicitly excluded, `All`, or `AllTrusted`. |
 | excludeLocations | String collection | Location IDs excluded from scope of policy. |
+| includeLocations | String collection | Location IDs in scope of policy unless explicitly excluded, `All`, or `AllTrusted`. |
 
 ## JSON representation
 

@@ -1,7 +1,7 @@
 ---
 title: "participant: stopHoldMusic"
 description: "Reincorporate a participant previously put on hold to the call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -20,11 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not Supported.                               |
-| Delegated (personal Microsoft account) | Not Supported.                               |
-| Application                            | None. |
-
-> **Note:** The permission check happens when the application joins or tries to start the call. No additional permission check is performed when `stopHoldMusic` is called.
+| Delegated (work or school account)     | Not supported.                               |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,15 +44,13 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|Optional. Unique client context string. Can have a maximum of 256 characters.|
 
 ## Response
-If successful, this method returns a `202 Accepted` response code and a [stopHoldMusicOperation](../resources/stopHoldmusicoperation.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and a [stopHoldMusicOperation](../resources/stopholdmusicoperation.md) object in the response body.
 
 ## Example
-The following example shows how to call this API.
 
 ### Request
+
 The following is an example of a request.
-
-
 
 # [HTTP](#tab/http)
 <!-- { 
@@ -66,19 +62,16 @@ POST https://graph.microsoft.com/beta/communications/calls/e141b67c-90fd-455d-85
 Content-type: application/json
 
 {
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-stopholdmusic-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-stopholdmusic-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/participant-stopholdmusic-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -89,13 +82,23 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/participant-stopholdmusic-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-stopholdmusic-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/participant-stopholdmusic-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/participant-stopholdmusic-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
----
-
 
 ### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
  
@@ -111,38 +114,8 @@ Location: https://graph.microsoft.com/beta/communications/calls/e141b67c-90fd-45
 {
   "@odata.type": "#microsoft.graph.stopHoldMusicOperation",
   "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-### Notification sent to the application after the stopHoldMusicOperation finishes
-
-```http
-POST https://bot.contoso.com/api/calls
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "@odata.type": "#microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.commsNotification",
-      "changeType": "deleted",
-      "resourceUrl": "communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.stopHoldMusicOperation",
-        "@odata.id": "communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
-      }
-    }
-  ]
+  "status": "completed",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "resultInfo": null
 }
 ```

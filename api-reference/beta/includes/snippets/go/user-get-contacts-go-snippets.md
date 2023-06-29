@@ -4,16 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ContactsRequestBuilderGetQueryParameters{
-	Select: "displayName,emailAddresses",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphusers.ItemContactsRequestBuilderGetQueryParameters{
+	Select: [] string {"displayName","emailAddresses"},
 }
-options := &msgraphsdk.ContactsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphusers.ItemContactsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Contacts().Get(options)
+
+result, err := graphClient.Me().Contacts().Get(context.Background(), configuration)
 
 
 ```

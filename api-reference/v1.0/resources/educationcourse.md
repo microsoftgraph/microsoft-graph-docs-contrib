@@ -40,10 +40,10 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.educationCourse",
-  "subject": "String",
   "courseNumber": "String",
   "description": "String",
   "displayName": "String",
-  "externalId": "String"
+  "externalId": "String",
+  "subject": "String"
 }
 ```

@@ -4,20 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewReviewSetQuery()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodelsediscovery.NewReviewSetQuery()
 displayName := "My Query 1"
-requestBody.SetDisplayName(&displayName)
-query := "(subject:"Quarterly Financials")"
-requestBody.SetQuery(&query)
-options := &msgraphsdk.QueriesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-caseId := "case-id"
-reviewSetId := "reviewSet-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).Queries().Post(options)
+requestBody.SetDisplayName(&displayName) 
+query := "(subject:\"Quarterly Financials\")"
+requestBody.SetQuery(&query) 
+
+result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").ReviewSets().ByReviewSetId("reviewSet-id").Queries().Post(context.Background(), requestBody, nil)
 
 
 ```

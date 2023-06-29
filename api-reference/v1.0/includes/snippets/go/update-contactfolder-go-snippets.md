@@ -4,19 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewContactFolder()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewContactFolder()
 parentFolderId := "parentFolderId-value"
-requestBody.SetParentFolderId(&parentFolderId)
+requestBody.SetParentFolderId(&parentFolderId) 
 displayName := "displayName-value"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ContactFolderRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-contactFolderId := "contactFolder-id"
-graphClient.Me().ContactFoldersById(&contactFolderId).Patch(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

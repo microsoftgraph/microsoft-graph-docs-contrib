@@ -44,12 +44,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageSubject",
+  "displayName": "String",
+  "email": "String",
   "id": "String (identifier)",
   "objectId": "String",
   "onPremisesSecurityIdentifier": "String",
-  "displayName": "String",
   "principalName": "String",
-  "email": "String",
   "subjectType": "String"
 }
 ```

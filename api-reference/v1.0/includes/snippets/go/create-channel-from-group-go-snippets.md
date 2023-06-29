@@ -4,21 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewChannel()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewChannel()
 displayName := "Architecture Discussion"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "This channel is where we debate all future architecture plans"
-requestBody.SetDescription(&description)
-membershipType := "standard"
-requestBody.SetMembershipType(&membershipType)
-options := &msgraphsdk.ChannelsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(options)
+requestBody.SetDescription(&description) 
+membershipType := graphmodels.STANDARD_CHANNELMEMBERSHIPTYPE 
+requestBody.SetMembershipType(&membershipType) 
+
+result, err := graphClient.Teams().ByTeamId("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

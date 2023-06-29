@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsAutopilotDevicesSummary resource type"
 description: "The user experience analytics summary of Devices not windows autopilot ready."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -20,9 +20,9 @@ The user experience analytics summary of Devices not windows autopilot ready.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|devicesNotAutopilotRegistered|Int32|The count of intune devices that are not autopilot registerd.|
-|devicesWithoutAutopilotProfileAssigned|Int32|The count of intune devices not autopilot profile assigned.|
-|totalWindows10DevicesWithoutTenantAttached|Int32|The count of windows 10 devices that are Intune and Comanaged.|
+|devicesNotAutopilotRegistered|Int32|The count of intune devices that are not autopilot registerd. Read-only.|
+|devicesWithoutAutopilotProfileAssigned|Int32|The count of intune devices not autopilot profile assigned. Read-only.|
+|totalWindows10DevicesWithoutTenantAttached|Int32|The count of windows 10 devices that are Intune and co-managed. Read-only.|
 
 ## Relationships
 None
@@ -42,7 +42,3 @@ Here is a JSON representation of the resource.
   "totalWindows10DevicesWithoutTenantAttached": 1024
 }
 ```
-
-
-
-

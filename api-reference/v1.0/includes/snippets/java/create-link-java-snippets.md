@@ -12,6 +12,8 @@ String password = "ThisIsMyPrivatePassword";
 
 String scope = "anonymous";
 
+Boolean retainInheritedPermissions = false;
+
 graphClient.me().drive().items("{item-id}")
 	.createLink(DriveItemCreateLinkParameterSet
 		.newBuilder()
@@ -20,6 +22,7 @@ graphClient.me().drive().items("{item-id}")
 		.withExpirationDateTime(null)
 		.withPassword(password)
 		.withMessage(null)
+		.withRetainInheritedPermissions(retainInheritedPermissions)
 		.build())
 	.buildRequest()
 	.post();

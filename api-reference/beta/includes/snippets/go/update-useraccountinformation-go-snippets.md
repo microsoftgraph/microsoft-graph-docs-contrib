@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewUserAccountInformation()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewUserAccountInformation()
 countryCode := "NO"
-requestBody.SetCountryCode(&countryCode)
-options := &msgraphsdk.UserAccountInformationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userAccountInformationId := "userAccountInformation-id"
-graphClient.Me().Profile().AccountById(&userAccountInformationId).Patch(options)
+requestBody.SetCountryCode(&countryCode) 
+
+result, err := graphClient.Me().Profile().Account().ByAccount().Id("userAccountInformation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,21 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphusers.NewSetUserPreferredPresencePostRequestBody()
 availability := "DoNotDisturb"
-requestBody.SetAvailability(&availability)
+requestBody.SetAvailability(&availability) 
 activity := "DoNotDisturb"
-requestBody.SetActivity(&activity)
-expirationDuration := "PT8H"
-requestBody.SetExpirationDuration(&expirationDuration)
-options := &msgraphsdk.SetUserPreferredPresenceRequestBuilderPostOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-graphClient.UsersById(&userId).Presence().SetUserPreferredPresence().Post(options)
+requestBody.SetActivity(&activity) 
+expirationDuration , err := abstractions.ParseISODuration("PT8H")
+requestBody.SetExpirationDuration(&expirationDuration) 
+
+graphClient.Users().ByUserId("user-id").Presence().SetUserPreferredPresence().Post(context.Background(), requestBody, nil)
 
 
 ```

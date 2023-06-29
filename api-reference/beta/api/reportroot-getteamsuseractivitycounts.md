@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getTeamsUserActivityCounts"
-description: "Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings. The activities are performed by Microsoft Teams licensed users."
+description: "Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed users."
 ms.localizationpriority: medium
 ms.prod: "reports"
-author: "sarahwxy"
+author: "zhiliqiao"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings. The activities are performed by Microsoft Teams licensed users.
+Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed users.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -51,6 +51,10 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
+## Request body
+
+Do not supply a request body for this method.
+
 ## Response
 
 ### CSV
@@ -64,9 +68,16 @@ The CSV file has the following headers for columns.
 - Report Refresh Date
 - Report Date
 - Team Chat Messages
+- Post Messages
+- Reply Messages
 - Private Chat Messages
 - Calls
 - Meetings
+- Audio Duration
+- Video Duration
+- Screen Share Duration
+- Meetings Organized
+- Meetings Attended
 - Report Period
 
 ### JSON
@@ -117,7 +128,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
+Report Refresh Date,Report Date,Team Chat Messages,Post Messages,Reply Messages,Private Chat Messages,Calls,Meetings,Audio Duration,Video Duration,Screen Share Duration,Meetings Organized,Meetings Attended,Report Period
 ```
 
 ### JSON
@@ -154,7 +165,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 277
+Content-Length: 475
 
 {
   "value": [
@@ -162,9 +173,16 @@ Content-Length: 277
       "reportRefreshDate": "2017-09-01", 
       "reportDate": "2017-09-01", 
       "teamChatMessages": 26, 
+      "postMessages": 3,
+      "replyMessages": 1,
       "privateChatMessages": 17, 
       "calls": 4, 
       "meetings": 0, 
+      "audioDuration": 00:00:00,
+      "videoDuration": 00:00:00,
+      "screenShareDuration": 00:00:00,
+      "meetingsOrganized": 0,
+      "meetingsAttended": 0,
       "reportPeriod": "7"
     }
   ]

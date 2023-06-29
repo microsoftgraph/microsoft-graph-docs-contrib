@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementConfigurationPolicy"
 description: "Read properties and relationships of the deviceManagementConfigurationPolicy object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -64,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 920
+Content-Length: 1050
 
 {
   "value": {
@@ -88,11 +88,11 @@ Content-Length: 920
       "templateFamily": "endpointSecurityAntivirus",
       "templateDisplayName": "Template Display Name value",
       "templateDisplayVersion": "Template Display Version value"
+    },
+    "priorityMetaData": {
+      "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData",
+      "priority": 8
     }
   }
 }
 ```
-
-
-
-

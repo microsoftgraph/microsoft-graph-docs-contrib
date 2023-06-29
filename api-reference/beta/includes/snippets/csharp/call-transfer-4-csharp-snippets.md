@@ -4,29 +4,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var transferTarget = new InvitationParticipantInfo
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Transfer.TransferPostRequestBody
 {
-	EndpointType = EndpointType.Default,
-	Identity = new IdentitySet
+	TransferTarget = new InvitationParticipantInfo
 	{
-		AdditionalData = new Dictionary<string, object>()
+		OdataType = "#microsoft.graph.invitationParticipantInfo",
+		EndpointType = EndpointType.Default,
+		Identity = new IdentitySet
 		{
-			{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
-		}
+			OdataType = "#microsoft.graph.identitySet",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"phone" , new 
+					{
+						OdataType = "#microsoft.graph.identity",
+						Id = "+12345678901",
+					}
+				},
+			},
+		},
+		ReplacesCallId = "e5d39592-99bd-4db8-bca8-30fb894ec51d",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"languageId" , "en-us"
+			},
+			{
+				"region" , "amer"
+			},
+		},
 	},
-	ReplacesCallId = "e5d39592-99bd-4db8-bca8-30fb894ec51d",
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"languageId", "en-us"},
-		{"region", "amer"}
-	}
 };
+await graphClient.Communications.Calls["{call-id}"].Transfer.PostAsync(requestBody);
 
-await graphClient.Communications.Calls["{call-id}"]
-	.Transfer(transferTarget,null)
-	.Request()
-	.PostAsync();
 
 ```

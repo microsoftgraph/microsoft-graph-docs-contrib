@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphcommunications "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphcommunications.NewSubscribeToTonePostRequestBody()
 clientContext := "fd1c7836-4d84-4e24-b6aa-23188688cc54"
-requestBody.SetClientContext(&clientContext)
-options := &msgraphsdk.SubscribeToToneRequestBuilderPostOptions{
-	Body: requestBody,
-}
-callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).SubscribeToTone().Post(options)
+requestBody.SetClientContext(&clientContext) 
+
+result, err := graphClient.Communications().Calls().ByCallId("call-id").SubscribeToTone().Post(context.Background(), requestBody, nil)
 
 
 ```

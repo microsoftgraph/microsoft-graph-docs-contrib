@@ -1,7 +1,7 @@
 ---
 title: "ingestionSource enum type"
-description: "Not yet documented"
-author: "dougeby"
+description: "Category Ingestion source"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -15,14 +15,12 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+Category Ingestion source
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|custom|0|Not yet documented|
-|global|1|Not yet documented|
-
-
-
-
+|unknown|0|Indicates unknown category|
+|custom|1|Indicates the category is ingested by IT admin with sufficient permissions through custom ingestion process|
+|builtIn|2|Indicates the category is ingested through system ingestion process|
+|unknownFutureValue|3|Unknown future enum value|

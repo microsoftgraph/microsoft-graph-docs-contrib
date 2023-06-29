@@ -4,26 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#Microsoft.Graph.Group",
-	"description": "Self help community for golf",
-	"displayName": "Golf Assist",
-	"groupTypes":  []String {
-		"Unified",
-	}
-	"mailEnabled": true,
-	"mailNickname": "golfassist",
-	"securityEnabled": false,
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewDirectoryObject()
+description := "Self help community for golf"
+requestBody.SetDescription(&description) 
+displayName := "Golf Assist"
+requestBody.SetDisplayName(&displayName) 
+groupTypes := []string {
+	"Unified",
 }
-options := &msgraphsdk.MembersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-administrativeUnitId := "administrativeUnit-id"
-graphClient.AdministrativeUnitsById(&administrativeUnitId).Members().Post(options)
+requestBody.SetGroupTypes(groupTypes)
+mailEnabled := true
+requestBody.SetMailEnabled(&mailEnabled) 
+mailNickname := "golfassist"
+requestBody.SetMailNickname(&mailNickname) 
+securityEnabled := false
+requestBody.SetSecurityEnabled(&securityEnabled) 
+
+result, err := graphClient.AdministrativeUnits().ByAdministrativeUnitId("administrativeUnit-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,18 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewUserScopeTeamsAppInstallation()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewUserScopeTeamsAppInstallation()
+additionalData := map[string]interface{}{
+	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a", 
 }
-options := &msgraphsdk.InstalledAppsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-result, err := graphClient.UsersById(&userId).Teamwork().InstalledApps().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Users().ByUserId("user-id").Teamwork().InstalledApps().Post(context.Background(), requestBody, nil)
 
 
 ```

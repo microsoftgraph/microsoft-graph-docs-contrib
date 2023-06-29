@@ -4,24 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTerm()
-requestBody.SetLabels( []LocalizedLabel {
-	msgraphsdk.NewLocalizedLabel(),
-	SetAdditionalData(map[string]interface{}{
-		"languageTag": "en-US",
-		"name": "Car",
-		"isDefault": true,
-	}
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodelstermstore "github.com/microsoftgraph/msgraph-sdk-go/models/termstore"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodelstermstore.NewTerm()
+
+
+localizedLabel := graphmodelstermstore.NewLocalizedLabel()
+languageTag := "en-US"
+localizedLabel.SetLanguageTag(&languageTag) 
+name := "Car"
+localizedLabel.SetName(&name) 
+isDefault := true
+localizedLabel.SetIsDefault(&isDefault) 
+
+labels := []graphmodelstermstore.LocalizedLabelable {
+	localizedLabel,
 }
-options := &msgraphsdk.ChildrenRequestBuilderPostOptions{
-	Body: requestBody,
-}
-siteId := "site-id"
-setId := "set-id"
-result, err := graphClient.SitesById(&siteId).TermStore().SetsById(&setId).Children().Post(options)
+requestBody.SetLabels(labels)
+
+result, err := graphClient.Sites().BySiteId("site-id").TermStore().Sets().BySetId("set-id").Children().Post(context.Background(), requestBody, nil)
 
 
 ```

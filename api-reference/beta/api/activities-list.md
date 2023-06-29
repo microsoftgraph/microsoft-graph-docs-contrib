@@ -1,13 +1,12 @@
 ---
 author: daspek
-ms.date: 09/10/2017
-title: File Activities
+title: List activities
 description: "List the recent activities that took place on an item or under a hierarchy."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: files
 ---
-# Enumerate activities (preview)
+# List activities (preview)
 
 Namespace: microsoft.graph
 
@@ -15,7 +14,7 @@ Namespace: microsoft.graph
 
 List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.
 
-**Note:** Activities is in a limited Preview and not yet available to all tenants.
+>**Note:** Activities is in a limited preview and is not yet available to all tenants.
 
 [activities]: ../resources/itemactivity.md
 
@@ -42,7 +41,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 
 ## Example
 
-#### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -51,6 +50,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/activities
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -59,18 +59,29 @@ GET https://graph.microsoft.com/beta/me/drive/activities
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-activities-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-activities-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-activities-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-activities-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-activities-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-activities-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-#### Response
+### Response
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->
 

@@ -4,20 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewConnectorGroup()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewConnectorGroup()
 name := "name-value"
-requestBody.SetName(&name)
-region := "region-value"
-requestBody.SetRegion(&region)
-options := &msgraphsdk.ConnectorGroupRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-connectorGroupId := "connectorGroup-id"
-graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorGroupsById(&connectorGroupId).Patch(options)
+requestBody.SetName(&name) 
+region := graphmodels.REGION-VALUE_CONNECTORGROUPREGION 
+requestBody.SetRegion(&region) 
+
+result, err := graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").ConnectorGroups().ByConnectorGroupId("connectorGroup-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

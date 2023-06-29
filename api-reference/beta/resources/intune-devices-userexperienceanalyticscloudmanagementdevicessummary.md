@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsCloudManagementDevicesSummary resource type"
 description: "The user experience work from anywhere Cloud management devices summary."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -20,9 +20,9 @@ The user experience work from anywhere Cloud management devices summary.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|coManagedDeviceCount|Int32|Total number of  co-managed devices.|
-|intuneDeviceCount|Int32|The count of intune devices that are not autopilot registerd.|
-|tenantAttachDeviceCount|Int32|Total count of tenant attach devices.|
+|coManagedDeviceCount|Int32|Total number of  co-managed devices. Read-only.|
+|intuneDeviceCount|Int32|The count of intune devices that are not autopilot registerd. Read-only.|
+|tenantAttachDeviceCount|Int32|Total count of tenant attach devices. Read-only.|
 
 ## Relationships
 None
@@ -42,7 +42,3 @@ Here is a JSON representation of the resource.
   "tenantAttachDeviceCount": 1024
 }
 ```
-
-
-
-

@@ -4,19 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"enabled": true,
-	"timeZone": "America/Chicago",
-}
-options := &msgraphsdk.ScheduleRequestBuilderPutOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-graphClient.TeamsById(&teamId).Schedule().Put(options)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewSchedule()
+enabled := true
+requestBody.SetEnabled(&enabled) 
+timeZone := "America/Chicago"
+requestBody.SetTimeZone(&timeZone) 
+
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().Put(context.Background(), requestBody, nil)
 
 
 ```

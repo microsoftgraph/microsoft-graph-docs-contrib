@@ -1,7 +1,7 @@
 ---
 title: "Update userExperienceAnalyticsAppHealthDevicePerformanceDetails"
 description: "Update the properties of a userExperienceAnalyticsAppHealthDevicePerformanceDetails object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -48,14 +48,14 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics device performance object.|
-|eventDateTime|DateTimeOffset|The time the event occurred.|
-|eventType|String|The type of the event.|
-|appDisplayName|String|The friendly name of the application for which the event occurred.|
-|appPublisher|String|The publisher of the application.|
-|appVersion|String|The version of the application.|
-|deviceId|String|The id of the device.|
-|deviceDisplayName|String|The name of the device.|
+|id|String|The unique identifier of the user experience analytics device performance details object. Supports: $select, $OrderBy. Read-only.|
+|eventDateTime|DateTimeOffset|The time the event occurred. The value cannot be modified and is automatically populated when the statistics are computed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2022 would look like this: '2022-01-01T00:00:00Z'. Returned by default. Read-only.|
+|eventType|String|The type of the event. Supports: $select, $OrderBy. Read-only.|
+|appDisplayName|String|The friendly name of the application for which the event occurred. Possible values are: outlook.exe, excel.exe. Supports: $select, $OrderBy. Read-only.|
+|appPublisher|String|The publisher of the application. Supports: $select, $OrderBy. Read-only.|
+|appVersion|String|The version of the application. Possible values are: 1.0.0.1, 75.65.23.9. Supports: $select, $OrderBy. Read-only.|
+|deviceId|String|The Intune device id of the device. Supports: $select, $OrderBy. Read-only.|
+|deviceDisplayName|String|The name of the device. Supports: $select, $OrderBy. Read-only.|
 
 
 
@@ -102,7 +102,3 @@ Content-Length: 454
   "deviceDisplayName": "Device Display Name value"
 }
 ```
-
-
-
-

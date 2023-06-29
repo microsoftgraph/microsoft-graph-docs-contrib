@@ -4,19 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphcommunications "github.com/microsoftgraph/msgraph-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphcommunications.NewUpdateRecordingStatusPostRequestBody()
 clientContext := "clientContext-value"
-requestBody.SetClientContext(&clientContext)
-status := "notRecording | recording | failed"
-requestBody.SetStatus(&status)
-options := &msgraphsdk.UpdateRecordingStatusRequestBuilderPostOptions{
-	Body: requestBody,
-}
-callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).UpdateRecordingStatus().Post(options)
+requestBody.SetClientContext(&clientContext) 
+status := graphmodels.NOTRECORDING | RECORDING | FAILED_RECORDINGSTATUS 
+requestBody.SetStatus(&status) 
+
+result, err := graphClient.Communications().Calls().ByCallId("call-id").UpdateRecordingStatus().Post(context.Background(), requestBody, nil)
 
 
 ```

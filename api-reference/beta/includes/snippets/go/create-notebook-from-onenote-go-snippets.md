@@ -4,16 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewNotebook()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewNotebook()
 displayName := "My Private notebook"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.NotebooksRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Onenote().Notebooks().Post(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Me().Onenote().Notebooks().Post(context.Background(), requestBody, nil)
 
 
 ```

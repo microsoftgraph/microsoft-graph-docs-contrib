@@ -4,20 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewB2cAuthenticationMethodsPolicy()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewB2cAuthenticationMethodsPolicy()
 isEmailPasswordAuthenticationEnabled := false
-requestBody.SetIsEmailPasswordAuthenticationEnabled(&isEmailPasswordAuthenticationEnabled)
+requestBody.SetIsEmailPasswordAuthenticationEnabled(&isEmailPasswordAuthenticationEnabled) 
 isUserNameAuthenticationEnabled := true
-requestBody.SetIsUserNameAuthenticationEnabled(&isUserNameAuthenticationEnabled)
+requestBody.SetIsUserNameAuthenticationEnabled(&isUserNameAuthenticationEnabled) 
 isPhoneOneTimePasswordAuthenticationEnabled := true
-requestBody.SetIsPhoneOneTimePasswordAuthenticationEnabled(&isPhoneOneTimePasswordAuthenticationEnabled)
-options := &msgraphsdk.B2cAuthenticationMethodsPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(options)
+requestBody.SetIsPhoneOneTimePasswordAuthenticationEnabled(&isPhoneOneTimePasswordAuthenticationEnabled) 
+
+result, err := graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

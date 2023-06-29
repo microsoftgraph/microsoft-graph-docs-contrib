@@ -4,20 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewItemPatent()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewItemPatent()
 number := "USPTO-3954432633"
-requestBody.SetNumber(&number)
+requestBody.SetNumber(&number) 
 webUrl := "https://patents.gov/3954432633"
-requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.ItemPatentRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-itemPatentId := "itemPatent-id"
-graphClient.UsersById(&userId).Profile().PatentsById(&itemPatentId).Patch(options)
+requestBody.SetWebUrl(&webUrl) 
+
+result, err := graphClient.Users().ByUserId("user-id").Profile().Patents().ByPatentId("itemPatent-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

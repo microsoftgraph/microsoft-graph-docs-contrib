@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewDriveItem()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewDriveItem()
 name := "Shared legal agreements"
-requestBody.SetName(&name)
-options := &msgraphsdk.DriveItemRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-driveItemId := "driveItem-id"
-graphClient.Drive().ItemsById(&driveItemId).Patch(options)
+requestBody.SetName(&name) 
+
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

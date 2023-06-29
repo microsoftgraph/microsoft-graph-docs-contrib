@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsCloudIdentityDevicesSummary resource type"
 description: "The user experience analytics work from anywhere cloud identity devices summary."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -20,7 +20,7 @@ The user experience analytics work from anywhere cloud identity devices summary.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceWithoutCloudIdentityCount|Int32|The count of devices that are not cloud identity.|
+|deviceWithoutCloudIdentityCount|Int32|The count of devices that are not cloud identity. Read-only.|
 
 ## Relationships
 None
@@ -38,7 +38,3 @@ Here is a JSON representation of the resource.
   "deviceWithoutCloudIdentityCount": 1024
 }
 ```
-
-
-
-

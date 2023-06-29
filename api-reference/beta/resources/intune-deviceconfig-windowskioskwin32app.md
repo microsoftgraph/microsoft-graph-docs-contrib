@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskWin32App resource type"
 description: "KioskModeApp v4 for Win32 app support"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -57,7 +57,3 @@ Here is a JSON representation of the resource.
   "edgeKiosk": "String"
 }
 ```
-
-
-
-

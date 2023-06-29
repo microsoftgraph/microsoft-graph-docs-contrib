@@ -1,7 +1,7 @@
 ---
 title: "Update androidDeviceOwnerPkcsCertificateProfile"
 description: "Update the properties of a androidDeviceOwnerPkcsCertificateProfile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [androidDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -75,6 +75,8 @@ The following table shows the properties that are required when you create the [
 |subjectNameFormatString|String|Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US|
 |certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
 |customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.|
+|certificateAccessType|[androidDeviceOwnerCertificateAccessType](../resources/intune-deviceconfig-androiddeviceownercertificateaccesstype.md)|Certificate access type. Possible values are: `userApproval`, `specificApps`, `unknownFutureValue`.|
+|silentCertificateAccessDetails|[androidDeviceOwnerSilentCertificateAccess](../resources/intune-deviceconfig-androiddeviceownersilentcertificateaccess.md) collection|Certificate access information. This collection can contain a maximum of 50 elements.|
 
 
 
@@ -88,7 +90,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2078
+Content-length: 2303
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerPkcsCertificateProfile",
@@ -145,6 +147,13 @@ Content-length: 2078
       "sanType": "emailAddress",
       "name": "Name value"
     }
+  ],
+  "certificateAccessType": "specificApps",
+  "silentCertificateAccessDetails": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSilentCertificateAccess",
+      "packageId": "Package Id value"
+    }
   ]
 }
 ```
@@ -154,7 +163,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2250
+Content-Length: 2475
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerPkcsCertificateProfile",
@@ -214,10 +223,13 @@ Content-Length: 2250
       "sanType": "emailAddress",
       "name": "Name value"
     }
+  ],
+  "certificateAccessType": "specificApps",
+  "silentCertificateAccessDetails": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSilentCertificateAccess",
+      "packageId": "Package Id value"
+    }
   ]
 }
 ```
-
-
-
-

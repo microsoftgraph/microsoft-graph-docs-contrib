@@ -23,10 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
-When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
-+ Global Administrator
-+ Conditional Access Administrator
-+ Security Administrator
+[!INCLUDE [rbac-tou-apis](../includes/rbac-for-apis/rbac-tou-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -71,7 +68,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
+  "displayName": "Contoso ToU for guest users",
   "isViewingBeforeAcceptanceRequired": true,
   "files": [
     {
@@ -79,22 +76,19 @@ Content-type: application/json
       "language": "en",
       "isDefault": true,
       "fileData": {
-        "data": "SGVsbG8gd29ybGQ="
+        "data": "SGVsbG8gd29ybGQ=//truncated-binary"
       }
     }
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-agreement-from-agreements-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-agreement-from-agreements-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-agreement-from-agreements-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -105,9 +99,19 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-agreement-from-agreements-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-agreement-from-agreements-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-agreement-from-agreements-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-agreement-from-agreements-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ##### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -121,9 +125,13 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
-  "isViewingBeforeAcceptanceRequired": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#agreements/$entity",
+    "id": "94410bbf-3d3e-4683-8149-f034e55c39dd",
+    "displayName": "Contoso ToU for guest users",
+    "termsExpiration": null,
+    "userReacceptRequiredFrequency": null,
+    "isViewingBeforeAcceptanceRequired": true,
+    "isPerDeviceAcceptanceRequired": false
 }
 ```
 

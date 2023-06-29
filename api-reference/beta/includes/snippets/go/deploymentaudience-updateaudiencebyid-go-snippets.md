@@ -4,29 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphadmin "github.com/microsoftgraph/msgraph-beta-sdk-go/admin"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphadmin.NewUpdateAudienceByIdPostRequestBody()
 memberEntityType := "String"
-requestBody.SetMemberEntityType(&memberEntityType)
-requestBody.SetAddMembers( []String {
+requestBody.SetMemberEntityType(&memberEntityType) 
+addMembers := []string {
 	"String",
 }
-requestBody.SetRemoveMembers( []String {
+requestBody.SetAddMembers(addMembers)
+removeMembers := []string {
 	"String",
 }
-requestBody.SetAddExclusions( []String {
+requestBody.SetRemoveMembers(removeMembers)
+addExclusions := []string {
 	"String",
 }
-requestBody.SetRemoveExclusions( []String {
+requestBody.SetAddExclusions(addExclusions)
+removeExclusions := []string {
 	"String",
 }
-options := &msgraphsdk.UpdateAudienceByIdRequestBuilderPostOptions{
-	Body: requestBody,
-}
-deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Audience().UpdateAudienceById().Post(options)
+requestBody.SetRemoveExclusions(removeExclusions)
+
+graphClient.Admin().Windows().Updates().Deployments().ByDeploymentId("deployment-id").Audience().MicrosoftGraphWindowsUpdatesUpdateAudienceById().Post(context.Background(), requestBody, nil)
 
 
 ```

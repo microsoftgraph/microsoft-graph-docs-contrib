@@ -4,12 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var devices = await graphClient.Devices
-	.Request()
-	.Header("ConsistencyLevel","eventual")
-	.Search("displayName:Android")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Devices.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Search = "\"displayName:Android\"";
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
+});
+
 
 ```

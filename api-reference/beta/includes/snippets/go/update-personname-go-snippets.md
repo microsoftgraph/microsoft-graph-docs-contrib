@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPersonName()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPersonName()
 nickname := "Kesha"
-requestBody.SetNickname(&nickname)
-options := &msgraphsdk.PersonNameRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-personNameId := "personName-id"
-graphClient.Me().Profile().NamesById(&personNameId).Patch(options)
+requestBody.SetNickname(&nickname) 
+
+result, err := graphClient.Me().Profile().Names().ByNameId("personName-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

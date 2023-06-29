@@ -1,7 +1,7 @@
 ---
 title: "Update windows10VpnConfiguration"
 description: "Update the properties of a windows10VpnConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -101,7 +101,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 4525
+Content-length: 4566
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -216,7 +216,8 @@ Content-length: 4525
       "appId": "App Id value",
       "appType": "desktop",
       "routingPolicyType": "splitTunnel",
-      "claims": "Claims value"
+      "claims": "Claims value",
+      "vpnTrafficDirection": "inbound"
     }
   ],
   "routes": [
@@ -258,7 +259,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4697
+Content-Length: 4738
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -376,7 +377,8 @@ Content-Length: 4697
       "appId": "App Id value",
       "appType": "desktop",
       "routingPolicyType": "splitTunnel",
-      "claims": "Claims value"
+      "claims": "Claims value",
+      "vpnTrafficDirection": "inbound"
     }
   ],
   "routes": [
@@ -412,7 +414,3 @@ Content-Length: 4697
   }
 }
 ```
-
-
-
-

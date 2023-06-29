@@ -4,19 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ListRequestBuilderGetQueryParameters{
-	Select: "id,name,lastModifiedDateTime",
-	Expand: "columns(select=name,description),items)",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphsites "github.com/microsoftgraph/msgraph-sdk-go/sites"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphsites.SiteItemListItemRequestBuilderGetQueryParameters{
+	Select: [] string {"id","name","lastModifiedDateTime"},
+	Expand: [] string {"columns(select=name,description)","items",")"},
 }
-options := &msgraphsdk.ListRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphsites.SiteItemListItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-siteId := "site-id"
-listId := "list-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).Get(options)
+
+result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Get(context.Background(), configuration)
 
 
 ```

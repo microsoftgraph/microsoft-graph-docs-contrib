@@ -1,7 +1,7 @@
 ---
 title: "getRemediationHistory function"
 description: "Function to get the number of remediations by a device health scripts"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Function to get the number of remediations by a device health scripts
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 397
+Content-Length: 436
 
 {
   "value": {
@@ -71,13 +71,10 @@ Content-Length: 397
         "@odata.type": "microsoft.graph.deviceHealthScriptRemediationHistoryData",
         "date": "2016-12-31",
         "remediatedDeviceCount": 5,
-        "noIssueDeviceCount": 2
+        "noIssueDeviceCount": 2,
+        "detectFailedDeviceCount": 7
       }
     ]
   }
 }
 ```
-
-
-
-

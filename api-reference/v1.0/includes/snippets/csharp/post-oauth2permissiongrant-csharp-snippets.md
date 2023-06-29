@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var oAuth2PermissionGrant = new OAuth2PermissionGrant
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new OAuth2PermissionGrant
 {
-	ClientId = "clientId-value",
-	ConsentType = "consentType-value",
-	PrincipalId = "principalId-value",
-	ResourceId = "resourceId-value",
-	Scope = "scope-value"
+	ClientId = "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+	ConsentType = "AllPrincipals",
+	ResourceId = "943603e4-e787-4fe9-93d1-e30f749aae39",
+	Scope = "DelegatedPermissionGrant.ReadWrite.All",
 };
+var result = await graphClient.Oauth2PermissionGrants.PostAsync(requestBody);
 
-await graphClient.Oauth2PermissionGrants
-	.Request()
-	.AddAsync(oAuth2PermissionGrant);
 
 ```

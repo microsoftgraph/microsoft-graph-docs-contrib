@@ -4,23 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var conversationMember = new AadUserConversationMember
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new AadUserConversationMember
 {
+	OdataType = "#microsoft.graph.aadUserConversationMember",
 	VisibleHistoryStartDateTime = DateTimeOffset.Parse("2019-04-18T23:51:43.255Z"),
-	Roles = new List<String>()
+	Roles = new List<string>
 	{
-		"owner"
+		"owner",
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"user@odata.bind", "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"}
-	}
+		{
+			"user@odata.bind" , "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+		},
+	},
 };
+var result = await graphClient.Chats["{chat-id}"].Members.PostAsync(requestBody);
 
-await graphClient.Chats["{chat-id}"].Members
-	.Request()
-	.AddAsync(conversationMember);
 
 ```

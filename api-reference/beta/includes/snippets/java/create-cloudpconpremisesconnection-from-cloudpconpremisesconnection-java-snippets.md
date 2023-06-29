@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 CloudPcOnPremisesConnection cloudPcOnPremisesConnection = new CloudPcOnPremisesConnection();
-cloudPcOnPremisesConnection.displayName = "Display Name value";
+cloudPcOnPremisesConnection.displayName = "test-canary-02";
+cloudPcOnPremisesConnection.type = CloudPcOnPremisesConnectionType.HYBRID_AZURE_A_D_JOIN;
 cloudPcOnPremisesConnection.subscriptionId = "0ac520ee-14c0-480f-b6c9-0a90c585ffff";
-cloudPcOnPremisesConnection.subscriptionName = "Subscription Name value";
-cloudPcOnPremisesConnection.adDomainName = "Active Directory Domain Name value";
-cloudPcOnPremisesConnection.adDomainUsername = "Active Directory Domain User Name value";
-cloudPcOnPremisesConnection.organizationalUnit = "Organization Unit value";
-cloudPcOnPremisesConnection.resourceGroupId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG";
-cloudPcOnPremisesConnection.virtualNetworkId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet";
-cloudPcOnPremisesConnection.subnetId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default";
+cloudPcOnPremisesConnection.adDomainName = "contoso001.com";
+cloudPcOnPremisesConnection.adDomainUsername = "dcadmin";
+cloudPcOnPremisesConnection.organizationalUnit = "OU=Domain Controllers, DC=contoso001, DC=com";
+cloudPcOnPremisesConnection.resourceGroupId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG";
+cloudPcOnPremisesConnection.virtualNetworkId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET";
+cloudPcOnPremisesConnection.subnetId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet";
 
 graphClient.deviceManagement().virtualEndpoint().onPremisesConnections()
 	.buildRequest()

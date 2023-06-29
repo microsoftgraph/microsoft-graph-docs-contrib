@@ -1,8 +1,8 @@
 ---
 title: "searchResponse resource type"
-description: "Description of the searchResponse"
+description: "Represents results from a search query, and the terms used for the query. "
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
@@ -13,14 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the response from a search query. 
+Represents results from a search query, and the terms used for the query. 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection|A collection of search results.|
+|searchTerms|String collection|Contains the search terms sent in the initial search query.|
+|resultTemplates|[resultTemplate](resultTemplate.md) collection|A dictionary of resultTemplateIds and associated values, which include the name and JSON schema of the result templates.
 |queryAlterationResponse|[alterationResponse](alterationResponse.md)|Provides details of query alteration response for spelling correction.|
-|value|[searchResultSet](searchResultSet.md) collection|Represents results from a search query, and the terms used for the query.|
 
 ## JSON representation
 
@@ -38,7 +40,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "queryAlterationResponse": {"@odata.type": "microsoft.graph.alterationResponse"},
-  "value": [{"@odata.type": "microsoft.graph.searchResultSet"}]
+  "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
+  "searchTerms": ["String"],
+  "resultTemplates": [{"@odata.type":"microsoft.graph.resultTemplateDictionary"}]
 }
 ```
 

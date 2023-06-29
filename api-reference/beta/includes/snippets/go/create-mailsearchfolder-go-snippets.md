@@ -4,25 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewMailFolder()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewMailFolder()
 displayName := "Weekly digests"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.mailSearchFolder",
-	"includeNestedFolders": true,
-	"sourceFolderIds":  []String {
-		"AQMkADYAAAIBDAAAAA==",
-	}
-	"filterQuery": "contains(subject, 'weekly digest')",
+requestBody.SetDisplayName(&displayName) 
+includeNestedFolders := true
+requestBody.SetIncludeNestedFolders(&includeNestedFolders) 
+sourceFolderIds := []string {
+	"AQMkADYAAAIBDAAAAA==",
 }
-options := &msgraphsdk.ChildFoldersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().Post(options)
+requestBody.SetSourceFolderIds(sourceFolderIds)
+filterQuery := "contains(subject, 'weekly digest')"
+requestBody.SetFilterQuery(&filterQuery) 
+
+result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

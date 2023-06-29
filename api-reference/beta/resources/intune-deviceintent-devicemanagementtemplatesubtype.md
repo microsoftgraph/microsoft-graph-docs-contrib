@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementTemplateSubtype enum type"
 description: "Template subtype"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -30,7 +30,3 @@ Template subtype
 |firewallSharedAppList|7|Endpoint security firewall shared app subtype|
 |firewallSharedIpList|8|Endpoint security firewall shared ip range list subtype|
 |firewallSharedPortlist|9|Endpoint security firewall shared port range list subtype|
-
-
-
-

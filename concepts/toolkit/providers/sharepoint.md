@@ -2,7 +2,7 @@
 title: "SharePoint provider"
 description: "Use the SharePoint provider inside your SharePoint web parts to power the components with Microsoft Graph access."
 ms.localizationpriority: medium
-author: nmetulev
+author: sebastienlevert
 ---
 
 # SharePoint provider
@@ -34,6 +34,25 @@ public render(): void {
     `;
 }
 ```
+
+#### Use a different cloud endpoint
+
+Use this when you want to use the toolkit to render your data from a different Microsoft 365 endpoint.
+
+```ts
+// import the providers at the top of the page
+import {Providers, SharePointProvider} from '@microsoft/mgt-spfx';
+import {GraphEndpoint} from '@microsoft/mgt-element';
+
+const baseUrl: GraphEndpoint = 'https://graph.microsoft.us';
+
+// add the onInit() method if not already there in your web part class
+protected async onInit() {
+  Providers.globalProvider = new SharePointProvider(this.context, baseUrl=baseUrl);
+}
+```
+
+Then use the toolkit as usual.
 
 >**Note:** The Microsoft Graph Toolkit requires Typescript 3.7 or newer. Make sure you're using a supported version of Typescript by [installing the right compiler](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x).
 

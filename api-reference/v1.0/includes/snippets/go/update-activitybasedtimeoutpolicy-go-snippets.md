@@ -4,22 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewActivityBasedTimeoutPolicy()
-requestBody.SetDefinition( []String {
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewActivityBasedTimeoutPolicy()
+definition := []string {
 	"definition-value",
 }
+requestBody.SetDefinition(definition)
 displayName := "displayName-value"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 isOrganizationDefault := true
-requestBody.SetIsOrganizationDefault(&isOrganizationDefault)
-options := &msgraphsdk.ActivityBasedTimeoutPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-activityBasedTimeoutPolicyId := "activityBasedTimeoutPolicy-id"
-graphClient.Policies().ActivityBasedTimeoutPoliciesById(&activityBasedTimeoutPolicyId).Patch(options)
+requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
+
+result, err := graphClient.Policies().ActivityBasedTimeoutPolicies().ByActivityBasedTimeoutPolicieId("activityBasedTimeoutPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

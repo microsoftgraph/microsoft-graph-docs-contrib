@@ -4,18 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPhoneAuthenticationMethod()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPhoneAuthenticationMethod()
 phoneNumber := "+1 2065555555"
-requestBody.SetPhoneNumber(&phoneNumber)
-phoneType := "mobile"
-requestBody.SetPhoneType(&phoneType)
-options := &msgraphsdk.PhoneMethodsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Authentication().PhoneMethods().Post(options)
+requestBody.SetPhoneNumber(&phoneNumber) 
+phoneType := graphmodels.MOBILE_AUTHENTICATIONPHONETYPE 
+requestBody.SetPhoneType(&phoneType) 
+
+result, err := graphClient.Me().Authentication().PhoneMethods().Post(context.Background(), requestBody, nil)
 
 
 ```

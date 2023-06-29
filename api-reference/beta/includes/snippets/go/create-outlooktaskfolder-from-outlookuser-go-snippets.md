@@ -4,16 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewOutlookTaskFolder()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewOutlookTaskFolder()
 name := "Volunteer"
-requestBody.SetName(&name)
-options := &msgraphsdk.TaskFoldersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Outlook().TaskFolders().Post(options)
+requestBody.SetName(&name) 
+
+result, err := graphClient.Me().Outlook().TaskFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

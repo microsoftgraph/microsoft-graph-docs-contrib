@@ -1,7 +1,7 @@
 ---
 title: "adminConsentRequestPolicy resource type"
-description: "Specifies the policy by which consent requests can be created and managed for the entire tenant."
-author: "psignoret"
+description: "Represents the policy for enabling or disabling the Azure AD admin consent workflow."
+author: "eringreenlee"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the policy by which consent requests are created and managed for the entire tenant. There is a single **adminConsentRequestPolicy** per tenant. 
-
-The **adminConsentRequestPolicy** provides additional settings when creating a consent request, to control the feature behavior when starting a consent request.
+Represents the policy for enabling or disabling the Azure AD admin consent workflow. The admin consent workflow allows users to request access for apps that they wish to use and that require admin authorization before users can use the apps to access organizational data. There is a single **adminConsentRequestPolicy** per tenant.
 
 ## Methods
 |Method|Return type|Description|

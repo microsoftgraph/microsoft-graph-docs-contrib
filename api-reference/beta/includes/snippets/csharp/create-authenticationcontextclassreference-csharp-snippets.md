@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var authenticationContextClassReference = new AuthenticationContextClassReference
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new AuthenticationContextClassReference
 {
 	Id = "c1",
 	DisplayName = "Contoso medium",
 	Description = "Medium protection level defined for Contoso policy",
-	IsAvailable = true
+	IsAvailable = true,
 };
+var result = await graphClient.Identity.ConditionalAccess.AuthenticationContextClassReferences.PostAsync(requestBody);
 
-await graphClient.Identity.ConditionalAccess.AuthenticationContextClassReferences
-	.Request()
-	.AddAsync(authenticationContextClassReference);
 
 ```

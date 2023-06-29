@@ -4,29 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewBookingBusiness()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewBookingBusiness()
 email := "admin@fabrikam.com"
-requestBody.SetEmail(&email)
-schedulingPolicy := msgraphsdk.NewBookingSchedulingPolicy()
-requestBody.SetSchedulingPolicy(schedulingPolicy)
-timeSlotInterval := "PT60M"
-schedulingPolicy.SetTimeSlotInterval(&timeSlotInterval)
-minimumLeadTime := "P1D"
-schedulingPolicy.SetMinimumLeadTime(&minimumLeadTime)
-maximumAdvance := "P30D"
-schedulingPolicy.SetMaximumAdvance(&maximumAdvance)
+requestBody.SetEmail(&email) 
+schedulingPolicy := graphmodels.NewBookingSchedulingPolicy()
+timeSlotInterval , err := abstractions.ParseISODuration("PT60M")
+schedulingPolicy.SetTimeSlotInterval(&timeSlotInterval) 
+minimumLeadTime , err := abstractions.ParseISODuration("P1D")
+schedulingPolicy.SetMinimumLeadTime(&minimumLeadTime) 
+maximumAdvance , err := abstractions.ParseISODuration("P30D")
+schedulingPolicy.SetMaximumAdvance(&maximumAdvance) 
 sendConfirmationsToOwner := true
-schedulingPolicy.SetSendConfirmationsToOwner(&sendConfirmationsToOwner)
+schedulingPolicy.SetSendConfirmationsToOwner(&sendConfirmationsToOwner) 
 allowStaffSelection := true
-schedulingPolicy.SetAllowStaffSelection(&allowStaffSelection)
-options := &msgraphsdk.BookingBusinessRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-bookingBusinessId := "bookingBusiness-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).Patch(options)
+schedulingPolicy.SetAllowStaffSelection(&allowStaffSelection) 
+requestBody.SetSchedulingPolicy(schedulingPolicy)
+
+result, err := graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

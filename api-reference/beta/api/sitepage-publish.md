@@ -1,8 +1,7 @@
 ---
-author: rahmit
-description: "Publish the latest version of a sitePage resource, which makes the version of the page available to all users. If the page is checked out, check in the page and publish it. If the page is checked out to the caller of this API, the page is automatically checked in and then published."
-ms.date: 09/10/2018
-title: Publish Page
+author: sangle7
+description: "Publish the latest version of a sitePage resource, which makes the version of the page available to all users."
+title: "sitePage: publish"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -14,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Publish the latest version of a [sitePage][] resource, which makes the version of the page available to all users. If the page is checked out, check in the page and publish it. If the page is checked out to the caller of this API, the page is automatically checked in and then published.
+
+> If a page approval flow has been activated in the page library, the page is not published until the approval flow is completed.
 
 [sitePage]: ../resources/sitepage.md
 

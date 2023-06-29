@@ -2,7 +2,7 @@
 title: "subscribedSku resource type"
 description: "Contains information about a service SKU that a company is subscribed to."
 ms.localizationpriority: medium
-author: "SumitParikh"
+author: "jconley76"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
@@ -63,14 +63,14 @@ The following is a JSON representation of the resource
 
 ```json
 {
-  "appliesTo": "string",
-  "capabilityStatus": "string",
+  "appliesTo": "String",
+  "capabilityStatus": "String",
   "consumedUnits": 1024,
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "prepaidUnits": {"@odata.type": "microsoft.graph.licenseUnitsDetail"},
   "servicePlans": [{"@odata.type": "microsoft.graph.servicePlanInfo"}],
-  "skuId": "guid",
-  "skuPartNumber": "string"
+  "skuId": "Guid",
+  "skuPartNumber": "String"
 }
 
 ```

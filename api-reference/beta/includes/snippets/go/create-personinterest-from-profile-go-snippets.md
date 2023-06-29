@@ -4,23 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPersonInterest()
-requestBody.SetCategories( []String {
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPersonInterest()
+categories := []string {
 	"Sports",
 }
+requestBody.SetCategories(categories)
 description := "World's greatest football club"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 displayName := "Chelsea FC"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 webUrl := "https://www.chelseafc.com"
-requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.InterestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Interests().Post(options)
+requestBody.SetWebUrl(&webUrl) 
+
+result, err := graphClient.Me().Profile().Interests().Post(context.Background(), requestBody, nil)
 
 
 ```

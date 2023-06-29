@@ -23,20 +23,17 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
-When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
-+ Global Administrator
-+ Conditional Access Administrator
-+ Security Administrator
+[!INCLUDE [rbac-tou-apis](../includes/rbac-for-apis/rbac-tou-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/termsOfUse/agreements
 ```
-<!--
+
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
--->
+This method supports the `$select`, `$filter`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name         | Type        | Description |
@@ -59,16 +56,13 @@ If successful, this method returns a `200 OK` response code and collection of [a
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreements-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-agreements-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-agreements-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -79,8 +73,19 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 [!INCLUDE [sample-code](../includes/snippets/go/get-agreements-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-agreements-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-agreements-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-agreements-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -95,13 +100,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "isViewingBeforeAcceptanceRequired": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#agreements",
+    "value": [
+        {
+            "id": "0ec9f6a6-159d-4dd8-a563-1f0b5935e80b",
+            "displayName": "All users terms of use",
+            "termsExpiration": null,
+            "userReacceptRequiredFrequency": "P90D",
+            "isViewingBeforeAcceptanceRequired": false,
+            "isPerDeviceAcceptanceRequired": false
+        },
+        {
+            "id": "920f5775-d5d7-454b-861f-14685bb24e2c",
+            "displayName": "ToU",
+            "termsExpiration": null,
+            "userReacceptRequiredFrequency": "P90D",
+            "isViewingBeforeAcceptanceRequired": false,
+            "isPerDeviceAcceptanceRequired": false
+        },
+        {
+            "id": "94410bbf-3d3e-4683-8149-f034e55c39dd",
+            "displayName": "Contoso ToU for guest users",
+            "termsExpiration": null,
+            "userReacceptRequiredFrequency": null,
+            "isViewingBeforeAcceptanceRequired": true,
+            "isPerDeviceAcceptanceRequired": false
+        }
+    ]
 }
 ```
 

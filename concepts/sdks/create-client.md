@@ -11,127 +11,21 @@ The Microsoft Graph client is designed to make it simple to make calls to Micros
 
 The following code examples show how to create an instance of a Microsoft Graph client with an authentication provider in the supported languages. The authentication provider will handle acquiring access tokens for the application. Many different authentication providers are available for each language and platform. The different authentication providers support different client scenarios. For details about which provider and options are appropriate for your scenario, see [Choose an Authentication Provider](choose-authentication-providers.md).
 
-<!-- markdownlint-disable MD025 -->
-# [C#](#tab/CS)
+<!-- markdownlint-disable MD025 MD051 -->
 
-```csharp
-var scopes = new[] { "User.Read" };
+# [C#](#tab/csharp)
 
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="DeviceCodeSnippet":::
 
-// Value from app registration
-var clientId = "YOUR_CLIENT_ID";
+# [TypeScript](#tab/typescript)
 
-// using Azure.Identity;
-var options = new TokenCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
 
-// Callback function that receives the user prompt
-// Prompt contains the generated device code that use must
-// enter during the auth process in the browser
-Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) => {
-    Console.WriteLine(code.Message);
-    return Task.FromResult(0);
-};
+# [Java](#tab/java)
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.devicecodecredential
-var deviceCodeCredential = new DeviceCodeCredential(
-    callback, tenantId, clientId, options);
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
 
-var graphClient = new GraphServiceClient(deviceCodeCredential, scopes);
-```
-
-# [Javascript](#tab/Javascript)
-
-```javascript
-const {
-    Client
-} = require("@microsoft/microsoft-graph-client");
-const {
-    TokenCredentialAuthenticationProvider
-} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const {
-    DeviceCodeCredential
-} = require("@azure/identity");
-
-const credential = new DeviceCodeCredential(tenantId, clientId, clientSecret);
-const authProvider = new TokenCredentialAuthenticationProvider(credential, {
-    scopes: [scopes]
-});
-
-const client = Client.initWithMiddleware({
-    debugLogging: true,
-    authProvider
-    // Use the authProvider object to create the class.
-});
-```
-
-# [Java](#tab/Java)
-
-```java
-final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
-        .clientId(CLIENT_ID)
-        .clientSecret(CLIENT_SECRET)
-        .tenantId(TENANT_GUID)
-        .build();
-
-final TokenCredentialAuthProvider tokenCredAuthProvider =
-        new TokenCredentialAuthProvider(SCOPES, clientSecretCredential);
-
-final GraphServiceClient graphClient = GraphServiceClient
-        .builder()
-        .authenticationProvider(tokenCredAuthProvider)
-        .buildClient();
-```
-
-# [Android](#tab/Android)
-
-```java
-final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
-        .clientId(CLIENT_ID)
-        .redirectUrl("http://localhost:8765")
-        .build();
-
-final TokenCredentialAuthProvider tokenCredAuthProvider =
-        new TokenCredentialAuthProvider(SCOPES, interactiveBrowserCredential);
-
-GraphServiceClient graphClient = GraphServiceClient
-        .builder()
-        .authenticationProvider(tokenCredAuthProvider)
-        .buildClient();
-```
-
-# [Objective-C](#tab/Objective-C)
-
-```objectivec
-// Create the authenticationProvider.
-NSError *error = nil;
-MSALPublicClientApplication *publicClientApplication = [[MSALPublicClientApplication alloc] initWithClientId:@"INSERT-CLIENT-APP-ID"
-error:&error];
-MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProviderOptions alloc] initWithScopes:<array-of-scopes-for-which-you-need-access-token>];
- MSALAuthenticationProvider *authenticationProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:publicClientApplication
- andOptions:authProviderOptions];
-
-// Create the client with the authenticationProvider and create a request to the /me resource.
-MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me"]]];
-
-// Create the task to send the request and handle the response.
-MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
-    completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-
-    //Do something
-
-    }];
-
-[meDataTask execute];
-```
-
-# [PHP](#tab/PHP)
+# [PHP](#tab/php)
 
 ```php
 // PHP client currently doesn't have an authentication provider. You will need to handle
@@ -159,46 +53,24 @@ $user = $graph->createRequest("GET", "/me")
               ->execute();
 ```
 
-# [Go](#tab/Go)
+# [Go](#tab/go)
 
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
-```go
-import (
-    "context"
-    "fmt"
+# [Python](#tab/python)
 
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-cred, err := azidentity.NewDeviceCodeCredential(&azidentity.DeviceCodeCredentialOptions{
-    ClientID: "CLIENT_ID",
-    UserPrompt: func(ctx context.Context, message azidentity.DeviceCodeMessage) error {
-        fmt.Println(message.Message)
-        return nil
-    },
-})
+```python
+from azure.identity.aio import EnvironmentCredential
+from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+from msgraph import GraphRequestAdapter, GraphServiceClient
 
-if err != nil {
-    fmt.Printf("Error creating credentials: %v\n", err)
-    return
-}
+credential=EnvironmentCredential()
+auth_provider = AzureIdentityAuthenticationProvider(credential)
 
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(cred, []string{"User.Read"})
-
-if err != nil {
-    fmt.Printf("Error authentication provider: %v\n", err)
-    return
-}
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-if err != nil {
-    fmt.Printf("Error creating adapter: %v\n", err)
-    return
-}
-client := msgraphsdk.NewGraphServiceClient(adapter)
+adapter = GraphRequestAdapter(auth_provider)
+client = GraphServiceClient(adapter)
 ```
 
 ---

@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const lists = {
+    '@odata.type': '#microsoft.graph.taskList',
     displayName: 'Shopping list'
 };
 

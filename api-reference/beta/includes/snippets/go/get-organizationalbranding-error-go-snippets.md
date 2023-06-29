@@ -4,17 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"Accept-Language": "0"
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphorganization "github.com/microsoftgraph/msgraph-beta-sdk-go/organization"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Accept-Language", "0")
+
+configuration := &graphorganization.OrganizationItemBrandingRequestBuilderGetRequestConfiguration{
+	Headers: headers,
 }
-options := &msgraphsdk.BrandingRequestBuilderGetOptions{
-	H: headers,
-}
-organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Branding().Get(options)
+
+result, err := graphClient.Organization().ByOrganization().Id("organization-id").Branding().Get(context.Background(), configuration)
 
 
 ```

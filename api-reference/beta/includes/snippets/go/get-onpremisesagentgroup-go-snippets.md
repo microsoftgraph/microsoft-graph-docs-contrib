@@ -4,18 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.OnPremisesAgentGroupRequestBuilderGetQueryParameters{
-	Expand: "publishedResources,agents",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphonpremisespublishingprofiles "github.com/microsoftgraph/msgraph-beta-sdk-go/onpremisespublishingprofiles"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphonpremisespublishingprofiles.OnPremisesPublishingProfileItemAgentGroupItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"publishedResources","agents"},
 }
-options := &msgraphsdk.OnPremisesAgentGroupRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphonpremisespublishingprofiles.OnPremisesPublishingProfileItemAgentGroupItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-onPremisesAgentGroupId := "onPremisesAgentGroup-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroupsById(&onPremisesAgentGroupId).Get(options)
+
+result, err := graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").AgentGroups().ByAgentGroupId("onPremisesAgentGroup-id").Get(context.Background(), configuration)
 
 
 ```

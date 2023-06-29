@@ -4,23 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-updateCategory := "String"
-requestBody.SetUpdateCategory(&updateCategory)
-requestBody.SetAssets( []UpdatableAsset {
-	msgraphsdk.NewUpdatableAsset(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-		"id": "String (identifier)",
-	}
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphadmin "github.com/microsoftgraph/msgraph-beta-sdk-go/admin"
+	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphadmin.NewEnrollAssetsPostRequestBody()
+updateCategory := graphmodels.STRING_UPDATECATEGORY 
+requestBody.SetUpdateCategory(&updateCategory) 
+
+
+updatableAsset := graphmodelswindowsupdates.NewAzureADDevice()
+id := "String (identifier)"
+updatableAsset.SetId(&id) 
+
+assets := []graphmodelswindowsupdates.updatableAssetable {
+	updatableAsset,
 }
-options := &msgraphsdk.EnrollAssetsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Admin().Windows().Updates().UpdatableAssets().EnrollAssets().Post(options)
+requestBody.SetAssets(assets)
+
+graphClient.Admin().Windows().Updates().UpdatableAssets().MicrosoftGraphWindowsUpdatesEnrollAssets().Post(context.Background(), requestBody, nil)
 
 
 ```

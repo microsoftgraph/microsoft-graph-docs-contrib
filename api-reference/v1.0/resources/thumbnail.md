@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Thumbnail
 ms.localizationpriority: medium
 description: "The thumbnail resource type represents a thumbnail for an image, video, document, or any item that has a bitmap representation."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 
@@ -18,11 +18,12 @@ The **thumbnail** resource type represents a thumbnail for an image, video, docu
 
 | Property     | Type   | Description|
 | :----------- | :----- | :----------------------------------------------------|
+| content      | Stream | The content stream for the thumbnail.|
 | height       | Int32  | The height of the thumbnail, in pixels.|
 | sourceItemId | String | The unique identifier of the item that provided the thumbnail. This is only available when a folder thumbnail is requested.|
 | url          | String | The URL used to fetch the thumbnail content.|
 | width        | Int32  | The width of the thumbnail, in pixels.|
-| content      | Stream | The content stream for the thumbnail.|
+
 
 ## JSON representation
 

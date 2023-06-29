@@ -4,31 +4,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewList()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewList()
 displayName := "Books"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetColumns( []ColumnDefinition {
-	msgraphsdk.NewColumnDefinition(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "Author",
-	}
-	msgraphsdk.NewColumnDefinition(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "PageCount",
-	}
+requestBody.SetDisplayName(&displayName) 
+
+
+columnDefinition := graphmodels.NewColumnDefinition()
+name := "Author"
+columnDefinition.SetName(&name) 
+text := graphmodels.NewTextColumn()
+columnDefinition.SetText(text)
+columnDefinition1 := graphmodels.NewColumnDefinition()
+name := "PageCount"
+columnDefinition1.SetName(&name) 
+number := graphmodels.NewNumberColumn()
+columnDefinition1.SetNumber(number)
+
+columns := []graphmodels.ColumnDefinitionable {
+	columnDefinition,
+	columnDefinition1,
 }
-list := msgraphsdk.NewListInfo()
-requestBody.SetList(list)
+requestBody.SetColumns(columns)
+list := graphmodels.NewListInfo()
 template := "genericList"
-list.SetTemplate(&template)
-options := &msgraphsdk.ListsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-siteId := "site-id"
-result, err := graphClient.SitesById(&siteId).Lists().Post(options)
+list.SetTemplate(&template) 
+requestBody.SetList(list)
+
+result, err := graphClient.Sites().BySiteId("site-id").Lists().Post(context.Background(), requestBody, nil)
 
 
 ```

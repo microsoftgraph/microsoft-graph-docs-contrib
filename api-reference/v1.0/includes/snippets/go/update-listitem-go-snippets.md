@@ -4,21 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewFieldValueSet()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"Color": "Fuchsia",
-	"Quantity": ,
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewFieldValueSet()
+additionalData := map[string]interface{}{
+	"color" : "Fuchsia", 
+	"quantity" : int32(934) , 
 }
-options := &msgraphsdk.FieldsRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-siteId := "site-id"
-listId := "list-id"
-listItemId := "listItem-id"
-graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).Fields().Patch(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByItemId("listItem-id").Fields().Patch(context.Background(), requestBody, nil)
 
 
 ```

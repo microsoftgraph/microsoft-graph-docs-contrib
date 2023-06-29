@@ -4,18 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ChatRequestBuilderGetQueryParameters{
-	Top: 2,
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestTop := int32(2)
+
+requestParameters := &graphusers.UserItemChatsGetAllMessages()RequestBuilderGetQueryParameters{
+	Top: &requestTop,
 }
-options := &msgraphsdk.ChatRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphusers.UserItemChatsGetAllMessages()RequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-userId := "user-id"
-chatId := "chat-id"
-result, err := graphClient.UsersById(&userId).ChatsById(&chatId).Get(options)
+
+result, err := graphClient.Users().ByUserId("user-id").Chats().GetAllMessages().Get(context.Background(), configuration)
 
 
 ```

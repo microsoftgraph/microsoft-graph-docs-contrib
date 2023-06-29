@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.DriveItemRequestBuilderGetQueryParameters{
-	Expand: "children",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphshares "github.com/microsoftgraph/msgraph-beta-sdk-go/shares"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphshares.ShareItemDriveItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"children"},
 }
-options := &msgraphsdk.DriveItemRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphshares.ShareItemDriveItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-sharedDriveItemId := "sharedDriveItem-id"
-result, err := graphClient.SharesById(&sharedDriveItemId).DriveItem().Get(options)
+
+result, err := graphClient.Shares().ByShareId("sharedDriveItem-id").DriveItem().Get(context.Background(), configuration)
 
 
 ```

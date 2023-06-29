@@ -4,21 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAddLicenses( []AssignedLicense {
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphgroups.NewAssignLicensePostRequestBody()
+addLicenses := []graphmodels.AssignedLicenseable {
+
 }
-requestBody.SetRemoveLicenses( []String {
-	"c7df2760-2c81-4ef7-b578-5b5392b571df",
-	"b05e124f-c7cc-45a0-a6aa-8cf78c946968",
+requestBody.SetAddLicenses(addLicenses)
+removeLicenses := []uuid.UUID {
+	uuid.MustParse("c7df2760-2c81-4ef7-b578-5b5392b571df"),
+	uuid.MustParse("b05e124f-c7cc-45a0-a6aa-8cf78c946968"),
 }
-options := &msgraphsdk.AssignLicenseRequestBuilderPostOptions{
-	Body: requestBody,
-}
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).AssignLicense().Post(options)
+requestBody.SetRemoveLicenses(removeLicenses)
+
+result, err := graphClient.Groups().ByGroupId("group-id").AssignLicense().Post(context.Background(), requestBody, nil)
 
 
 ```

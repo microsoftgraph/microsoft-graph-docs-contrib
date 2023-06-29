@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementAutopilotPolicyType enum type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
@@ -22,7 +22,3 @@ Not yet documented
 |application|3|Not yet documented|
 |appModel|7|Not yet documented|
 |configurationPolicy|12|Not yet documented|
-
-
-
-

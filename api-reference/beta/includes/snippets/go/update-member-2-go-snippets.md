@@ -4,22 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewConversationMember()
-requestBody.SetRoles( []String {
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewConversationMember()
+roles := []string {
 	"owner",
 }
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.aadUserConversationMember",
-}
-options := &msgraphsdk.ConversationMemberRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-conversationMemberId := "conversationMember-id"
-graphClient.TeamsById(&teamId).MembersById(&conversationMemberId).Patch(options)
+requestBody.SetRoles(roles)
+
+result, err := graphClient.Teams().ByTeamId("team-id").Members().ByMemberId("conversationMember-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

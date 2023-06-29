@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PrintJob printJob = new PrintJob();
+printJob.displayName = "testjob";
 PrintJobConfiguration configuration = new PrintJobConfiguration();
 configuration.feedOrientation = PrinterFeedOrientation.LONG_EDGE_FIRST;
 LinkedList<IntegerRange> pageRangesList = new LinkedList<IntegerRange>();

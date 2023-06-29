@@ -4,23 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewExtension()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.openTypeExtension",
-	"extensionName": "Com.Contoso.Deal",
-	"companyName": "Alpine Skis",
-	"dealValue": ,
-	"expirationDate": "2015-07-03T13:04:00.000Z",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewExtension()
+extensionName := "Com.Contoso.Deal"
+requestBody.SetExtensionName(&extensionName) 
+additionalData := map[string]interface{}{
+	"companyName" : "Alpine Skis", 
+	"dealValue" : int32(1010100) , 
+	"expirationDate" : "2015-07-03T13:04:00.000Z", 
 }
-options := &msgraphsdk.ExtensionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-groupId := "group-id"
-eventId := "event-id"
-result, err := graphClient.GroupsById(&groupId).EventsById(&eventId).Extensions().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Groups().ByGroupId("group-id").Events().ByEventId("event-id").Extensions().Post(context.Background(), requestBody, nil)
 
 
 ```

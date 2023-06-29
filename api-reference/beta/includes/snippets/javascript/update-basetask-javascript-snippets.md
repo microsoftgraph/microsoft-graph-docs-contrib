@@ -11,10 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const aAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT = {
-  '@odata.type': '#microsoft.graph.baseTask',
-  body: {
-    '@odata.type': 'microsoft.graph.itemBody'
-  },
+  '@odata.type': '#microsoft.graph.task',
+  textBody: 'String',
   bodyLastModifiedDateTime: 'String (timestamp)',
   completedDateTime: 'String (timestamp)',
   dueDateTime: {
@@ -29,8 +27,8 @@ const aAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT = {
   },
   displayName: 'String',
   status: 'String',
-  personalProperties: {
-    '@odata.type': 'microsoft.graph.personalTaskProperties'
+  viewpoint: {
+    '@odata.type': 'microsoft.graph.taskViewpoint'
   }
 };
 

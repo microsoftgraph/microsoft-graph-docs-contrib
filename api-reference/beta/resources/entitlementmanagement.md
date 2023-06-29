@@ -32,8 +32,8 @@ None.
 |accessPackageAssignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection| Represents the policy that governs which subjects can request or be assigned an access package via an access package assignment. |
 |accessPackageAssignmentRequests|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Represents access package assignment requests created by or on behalf of a user.|
 |accessPackageAssignmentResourceRoles|[accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) collection| Represents the resource-specific role which a subject has been assigned through an access package assignment.|
-|accessPackageAssignments|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Represents the grant of an access package to a subject (user or group).|
-|accessPackageCatalogs|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection|Represents a group of access packages.|
+|accessPackageAssignments|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|The assignment of an access package to a subject for a period of time.|
+|accessPackageCatalogs|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection|A container of access packages.|
 |accessPackageResourceEnvironments|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) collection| A reference to the geolocation environment in which a resource is located.|
 |accessPackageResourceRequests|[accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) collection|Represents a request to add or remove a resource to or from a catalog respectively. |
 |accessPackageResourceRoleScopes|[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) collection| A reference to both a scope within a resource, and a role in that resource for that scope. |
@@ -41,6 +41,7 @@ None.
 |accessPackages|[accessPackage](../resources/accesspackage.md) collection|Represents access package objects.|
 |connectedOrganizations|[connectedOrganization](../resources/connectedorganization.md) collection|Represents references to a directory or domain of another organization whose users can request access.|
 |settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)|Represents the settings that control the behavior of Azure AD entitlement management.|
+|subjects|[accessPackageSubject](../resources/accesspackagesubject.md)|Represents the subjects within entitlement management.|
 
 ## JSON representation
 

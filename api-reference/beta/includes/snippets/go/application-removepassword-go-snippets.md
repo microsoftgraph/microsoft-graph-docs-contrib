@@ -4,17 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-keyId := "f0b0b335-1d71-4883-8f98-567911bfdca6"
-requestBody.SetKeyId(&keyId)
-options := &msgraphsdk.RemovePasswordRequestBuilderPostOptions{
-	Body: requestBody,
-}
-applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).RemovePassword().Post(options)
+import (
+	  "context"
+	  "github.com/google/uuid"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphapplications "github.com/microsoftgraph/msgraph-beta-sdk-go/applications"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphapplications.NewRemovePasswordPostRequestBody()
+keyId := uuid.MustParse("f0b0b335-1d71-4883-8f98-567911bfdca6")
+requestBody.SetKeyId(&keyId) 
+
+graphClient.Applications().ByApplicationId("application-id").RemovePassword().Post(context.Background(), requestBody, nil)
 
 
 ```

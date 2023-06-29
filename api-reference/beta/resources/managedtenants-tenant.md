@@ -3,7 +3,7 @@ title: "tenant resource type"
 description: "Represents a tenant associated with the managing entity."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 
@@ -50,16 +50,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenant",
-  "id": "String (identifier)",
-  "tenantId": "String",
+  "contract": {"@odata.type": "microsoft.graph.managedTenants.tenantContract"},
+  "createdDateTime": "String (timestamp)",
   "displayName": "String",
-  "contract": {
-    "@odata.type": "microsoft.graph.managedTenants.tenantContract"
-  },
-  "tenantStatusInformation": {
-    "@odata.type": "microsoft.graph.managedTenants.tenantStatusInformation"
-  },
+  "id": "String (identifier)",
   "lastUpdatedDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)"
+  "tenantId": "String",
+  "tenantStatusInformation": {"@odata.type": "microsoft.graph.managedTenants.tenantStatusInformation"}
 }
 ```

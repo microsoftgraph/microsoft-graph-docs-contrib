@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new AccessPackageAssignmentPolicy
 {
 	AccessPackageId = "string (identifier)",
 	DisplayName = "Users from connected organizations can request",
@@ -18,9 +20,9 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 	{
 		ScopeType = "AllExistingConnectedOrganizationSubjects",
 		AcceptRequests = true,
-		AllowedRequestors = new List<UserSet>()
+		AllowedRequestors = new List<UserSet>
 		{
-		}
+		},
 	},
 	RequestApprovalSettings = new ApprovalSettings
 	{
@@ -28,7 +30,7 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 		IsApprovalRequiredForExtension = false,
 		IsRequestorJustificationRequired = true,
 		ApprovalMode = "Serial",
-		ApprovalStages = new List<ApprovalStage>()
+		ApprovalStages = new List<ApprovalStage>
 		{
 			new ApprovalStage
 			{
@@ -36,28 +38,31 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 				IsApproverJustificationRequired = true,
 				IsEscalationEnabled = true,
 				EscalationTimeInMinutes = 11520,
-				PrimaryApprovers = new List<UserSet>()
+				PrimaryApprovers = new List<UserSet>
 				{
 					new GroupMembers
 					{
+						OdataType = "#microsoft.graph.groupMembers",
 						IsBackup = true,
 						Id = "string (identifier)",
-						Description = "group for users from connected organizations which have no external sponsor"
+						Description = "group for users from connected organizations which have no external sponsor",
 					},
 					new ExternalSponsors
 					{
-						IsBackup = false
-					}
+						OdataType = "#microsoft.graph.externalSponsors",
+						IsBackup = false,
+					},
 				},
-				EscalationApprovers = new List<UserSet>()
+				EscalationApprovers = new List<UserSet>
 				{
 					new SingleUser
 					{
+						OdataType = "#microsoft.graph.singleUser",
 						IsBackup = true,
 						Id = "string (identifier)",
-						Description = "user if the external sponsor does not respond"
-					}
-				}
+						Description = "user if the external sponsor does not respond",
+					},
+				},
 			},
 			new ApprovalStage
 			{
@@ -65,30 +70,33 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 				IsApproverJustificationRequired = true,
 				IsEscalationEnabled = true,
 				EscalationTimeInMinutes = 11520,
-				PrimaryApprovers = new List<UserSet>()
+				PrimaryApprovers = new List<UserSet>
 				{
 					new GroupMembers
 					{
+						OdataType = "#microsoft.graph.groupMembers",
 						IsBackup = true,
 						Id = "string (identifier)",
-						Description = "group for users from connected organizations which have no internal sponsor"
+						Description = "group for users from connected organizations which have no internal sponsor",
 					},
 					new InternalSponsors
 					{
-						IsBackup = false
-					}
+						OdataType = "#microsoft.graph.internalSponsors",
+						IsBackup = false,
+					},
 				},
-				EscalationApprovers = new List<UserSet>()
+				EscalationApprovers = new List<UserSet>
 				{
 					new SingleUser
 					{
+						OdataType = "#microsoft.graph.singleUser",
 						IsBackup = true,
 						Id = "string (identifier)",
-						Description = "user if the internal sponsor does not respond"
-					}
-				}
-			}
-		}
+						Description = "user if the internal sponsor does not respond",
+					},
+				},
+			},
+		},
 	},
 	AccessReviewSettings = new AssignmentReviewSettings
 	{
@@ -97,14 +105,12 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 		ReviewerType = "Self",
 		StartDateTime = DateTimeOffset.Parse("2020-04-01T07:59:59.998Z"),
 		DurationInDays = 25,
-		Reviewers = new List<UserSet>()
+		Reviewers = new List<UserSet>
 		{
-		}
-	}
+		},
+	},
 };
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies
-	.Request()
-	.AddAsync(accessPackageAssignmentPolicy);
 
 ```

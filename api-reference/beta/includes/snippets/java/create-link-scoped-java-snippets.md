@@ -19,6 +19,8 @@ graphClient.me().drive().items("{item-id}")
 		.withPassword(null)
 		.withMessage(null)
 		.withRecipients(null)
+		.withRetainInheritedPermissions(null)
+		.withSendNotification(null)
 		.build())
 	.buildRequest()
 	.post();

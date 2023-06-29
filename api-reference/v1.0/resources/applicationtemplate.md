@@ -4,7 +4,7 @@ description: 'Represents an application in the Azure AD application gallery'
 ms.localizationpriority: medium
 author: 'luleonpla'
 ms.prod: 'applications'
-doc_type: 'resourcePageType'
+doc_type: resourcePageType
 ---
 
 # applicationTemplate resource type
@@ -54,14 +54,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "id-value",
+  "categories": ["categories-value"],
+  "description": "description-value",
   "displayName": "displayName-value",
   "homePageUrl": "homePageUrl-value",
-  "supportedSingleSignOnModes": ["supportedSingleSignOnModes-value"],
+  "id": "id-value",
   "logoUrl": "logoUrl-value",
-  "categories": ["categories-value"],
   "publisher": "publisher-value",
-  "description": "description-value"
+  "supportedSingleSignOnModes": ["supportedSingleSignOnModes-value"]
 }
 ```
 

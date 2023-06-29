@@ -2,7 +2,7 @@
 title: "Search"
 description: "Retrieve the search resource used to execute queries"
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---

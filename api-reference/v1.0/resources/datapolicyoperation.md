@@ -54,11 +54,11 @@ The following is a JSON representation of the resource.
 {
   "completedDateTime": "String (timestamp)",
   "id": "String (identifier)",
+  "progress": "String (double)",
   "status": "string",
   "storageLocation": "String",
   "userId": "String",
-  "submittedDateTime": "String (timestamp)", 
-  "progress": "String (double)"
+  "submittedDateTime": "String (timestamp)"
 }
 
 ```

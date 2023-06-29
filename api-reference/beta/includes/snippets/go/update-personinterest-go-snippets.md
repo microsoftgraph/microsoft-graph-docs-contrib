@@ -4,18 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPersonInterest()
-requestBody.SetCategories( []String {
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPersonInterest()
+categories := []string {
 	"Sports",
 }
-options := &msgraphsdk.PersonInterestRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-personInterestId := "personInterest-id"
-graphClient.Me().Profile().InterestsById(&personInterestId).Patch(options)
+requestBody.SetCategories(categories)
+
+result, err := graphClient.Me().Profile().Interests().ByInterestId("personInterest-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

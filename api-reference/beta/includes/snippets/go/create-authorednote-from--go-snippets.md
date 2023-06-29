@@ -4,21 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAuthoredNote()
-content := msgraphsdk.NewItemBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAuthoredNote()
+content := graphmodels.NewItemBody()
+content := "Please take a look at the files tagged with follow up"
+content.SetContent(&content) 
+contentType := graphmodels.TEXT_BODYTYPE 
+content.SetContentType(&contentType) 
 requestBody.SetContent(content)
-content := "String"
-content.SetContent(&content)
-contentType := "text"
-content.SetContentType(&contentType)
-options := &msgraphsdk.NotesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-subjectRightsRequestId := "subjectRightsRequest-id"
-result, err := graphClient.Privacy().SubjectRightsRequestsById(&subjectRightsRequestId).Notes().Post(options)
+
+result, err := graphClient.Privacy().SubjectRightsRequests().BySubjectRightsRequestId("subjectRightsRequest-id").Notes().Post(context.Background(), requestBody, nil)
 
 
 ```
