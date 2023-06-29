@@ -13,15 +13,13 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The PolicyLink object contains the link to a policy associated with a specific profile.
-This is an abstract type.
+This is an abstract type from which the [forwardingPolicyLink](networkaccess-forwardingpolicylink.md) resource type is derived.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
+None.
 
 ## Properties
 |Property|Type|Description|

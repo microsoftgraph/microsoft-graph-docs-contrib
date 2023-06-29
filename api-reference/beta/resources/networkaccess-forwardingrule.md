@@ -13,17 +13,10 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A forwarding rule is utilized to selectively forward traffic to the Global Secure Access Cloud based on specific requirements or preferences.
-
-
-Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).
+This is an abstract type from which the [m365ForwardingRule](networkaccess-m365forwardingrule.md) and [privateAccessForwardingRule](networkaccess-privateaccessforwardingrule.md) resource types are derived.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List forwardingRules](../api/networkaccess-forwardingrule-list.md)|[microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md) collection|Get a list of the [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md) objects and their properties.|
-|[Get forwardingRule](../api/networkaccess-forwardingrule-get.md)|[microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md) object.|
-|[Update forwardingRule](../api/networkaccess-forwardingrule-update.md)|[microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md)|Update the properties of a [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md) object.|
+None.
 
 ## Properties
 |Property|Type|Description|

@@ -17,7 +17,7 @@ An association represents a relationship between two items.
 This is an abstract type that's inherited by the [associatedBranch](networkaccess-associatedbranch.md) derived type.
 
 ## Properties
-
+None.
 
 ## Relationships
 None.

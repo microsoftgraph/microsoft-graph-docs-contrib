@@ -18,12 +18,7 @@ The ForwardingRule for M365 traffic type defines the rule or criteria used to di
 Inherits from [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List m365ForwardingRule](../api/networkaccess-forwardingrule-list.md)|[microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) collection|Get a list of the [microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) objects and their properties.|
-|[Get m365ForwardingRule](../api/networkaccess-forwardingrule-get.md)|[microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) object.|
-|[Update m365ForwardingRule](../api/networkaccess-forwardingrule-update.md)|[microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md)|Update the properties of a [microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) object.|
-
+None.
 
 ## Properties
 |Property|Type|Description|

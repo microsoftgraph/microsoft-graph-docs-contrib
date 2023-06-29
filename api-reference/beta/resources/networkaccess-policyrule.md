@@ -13,16 +13,13 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A forwarding policy rule refers to a specific rule within a forwarding policy. It defines the conditions and criteria for forwarding or routing network traffic based on various factors such as source, destination, protocol, ports, and other parameters.
-
-This is an abstract type.
+This is an abstract type from which the [forwardingRule](networkaccess-forwardingrule.md) resource type is derived.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
+None.
 
 
 ## Properties

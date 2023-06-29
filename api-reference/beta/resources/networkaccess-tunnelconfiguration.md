@@ -1,6 +1,6 @@
 ---
 title: "tunnelConfiguration resource type"
-description: "Specifies connectivity settings such as protocol, IPSec policy, and presharked key for establishing connectivity."
+description: "Specifies connectivity settings such as protocol, IPSec policy, and preshared key for a customer premises equipment (CPE) in a branchSite."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,8 +13,8 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies connectivity settings such as protocol, IPSec policy, and presharked key for establishing connectivity.
-This is an abstract type.
+Specifies connectivity settings such as protocol, IPSec policy, and preshared key for a deviceLink, represented by a customer premises equipment (CPE), in a branchSite.
+This is an abstract type from which the [tunnelConfigurationIKEv2Custom](networkaccess-tunnelconfigurationikev2custom.md) and [tunnelConfigurationIKEv2Default](networkaccess-tunnelconfigurationikev2default.md) resource types are derived.
 
 ## Properties
 |Property|Type|Description|
