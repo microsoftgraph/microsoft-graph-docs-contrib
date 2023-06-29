@@ -679,6 +679,32 @@
     {
       "ChangeList": [
         {
+          "Id": "1dbbd2a3-caa8-49f3-bc3c-763ff8e6419a",
+          "ApiChange": "Property",
+          "ChangedApiName": "removeAccessWhenTargetLeavesAllowedTargets",
+          "ChangeType": "Addition",
+          "Description": "Added the **removeAccessWhenTargetLeavesAllowedTargets** property to the [accessPackageAutomaticRequestSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAutomaticRequestSettings?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAutomaticRequestSettings"
+        },
+        {
+          "Id": "1dbbd2a3-caa8-49f3-bc3c-763ff8e6419a",
+          "ApiChange": "Property",
+          "ChangedApiName": "gracePeriodBeforeAccessRemoval",
+          "ChangeType": "Addition",
+          "Description": "Added the **gracePeriodBeforeAccessRemoval** property to the [accessPackageAutomaticRequestSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAutomaticRequestSettings?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAutomaticRequestSettings"
+        }
+      ],
+      "Id": "1dbbd2a3-caa8-49f3-bc3c-763ff8e6419a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-06-27T00:38:24.9985436Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "74a238a4-8f95-47bf-8e9a-133e6e7b0c71",
           "ApiChange": "EnumType",
           "ChangedApiName": "accessPackageSubjectLifecycle",
