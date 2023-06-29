@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: bulkResize"
-description: "Bulk resize a set of Cloud PC."
+description: "Bulk resize a set of Cloud PC devices."
 author: "Aria Zhang (yuzhang3)"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed [validation](../resources/cloudpc-validatebulkresize.md). If any devices cannot be resized, they will indicate "resize failed". The remaining devices will be `provisioned` for the resize process.
+Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed [validation](../resources/cloudpc-validatebulkresize.md). If any devices cannot be resized, those devices will indicate "resize failed". The remaining devices will be `provisioned` for the resize process.
 
 ## Permissions
 
