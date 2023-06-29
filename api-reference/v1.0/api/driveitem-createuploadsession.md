@@ -103,7 +103,6 @@ Content-Type: application/json
 
 {
   "item": {
-    "@odata.type": "microsoft.graph.driveItemUploadableProperties",
     "@microsoft.graph.conflictBehavior": "rename",
     "name": "largefile.dat"
   }

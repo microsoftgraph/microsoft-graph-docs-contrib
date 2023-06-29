@@ -62,6 +62,9 @@ If successful, this method returns a `200 OK` response code and an updated [macO
 
 ### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_deviceconfig_macosdevicefeaturesconfiguration_update_update_macosdevicefeaturesconfiguration" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
@@ -75,8 +78,40 @@ Content-length: 170
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-macosdevicefeaturesconfiguration-update-update-macosdevicefeaturesconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.macOSDeviceFeaturesConfiguration" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

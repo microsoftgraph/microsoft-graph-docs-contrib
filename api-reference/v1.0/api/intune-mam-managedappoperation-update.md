@@ -61,6 +61,9 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 
 ### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_mam_managedappoperation_update_update_managedappoperation" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 Content-type: application/json
@@ -74,8 +77,40 @@ Content-length: 159
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-mam-managedappoperation-update-update-managedappoperation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-mam-managedappoperation-update-update-managedappoperation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-mam-managedappoperation-update-update-managedappoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-mam-managedappoperation-update-update-managedappoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-mam-managedappoperation-update-update-managedappoperation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-mam-managedappoperation-update-update-managedappoperation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-mam-managedappoperation-update-update-managedappoperation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.managedAppOperation" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
