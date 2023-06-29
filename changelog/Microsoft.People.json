@@ -187,6 +187,22 @@
 					"ChangeType": "Change",
 					"Description": "Moved the **pronounsSettings** relationship to [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
 					"Target": "organizationSettings"
+				},
+				{
+					"Id": "3d55601a-1632-4115-9e52-4d8a174040d4",
+					"ApiChange": "Permission",
+					"ChangedApiName": "PeopleSettings.Read.All",
+					"ChangeType": "Addition",
+					"Description": "Added support for the policy-based application permission of `PeopleSettings.Read.All` to read tenant-wide [peoplesettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+					"Target": "PeopleSettings"
+				},
+				{
+					"Id": "3d55601a-1632-4115-9e52-4d8a174040d4",
+					"ApiChange": "Permission",
+					"ChangedApiName": "PeopleSettings.ReadWrite.All",
+					"ChangeType": "Addition",
+					"Description": "Added support for the policy-based application permission of `PeopleSettings.Read.All` to the read and write tenant-wide [peoplesettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+					"Target": "PeopleSettings"
 				}
 			],
 			"Id": "3d55601a-1632-4115-9e52-4d8a174040d4",
