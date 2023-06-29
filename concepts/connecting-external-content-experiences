@@ -45,10 +45,10 @@ To configure your connector for Copilot, you must:
 - Apply [semantic labels](/graph/connecting-external-content-manage-schema). Semantic labels help Copilot understand the semantic meaning of your schema. Apply as many of them to your schema as applicable.
 - Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. Supported activity types are shown [here](/graph/api/resources/externalconnectors-externalactivity). Items that have more activities are boosted in their importance.
 
-## Microsoft 365 App (coming soon)
-The [Microsoft 365 App](https://office.com) with Graph connectors allows your third-party data to become discoverable from [Microsoft365.com](Microsoft365.com) under *Quick Access* and *My Content*. This helps users find all the content that is important to them in one place. 
+## Microsoft 365 Hub (coming soon)
+The [Microsoft 365 Hub](https://office.com) with Graph connectors allows your third-party data to become discoverable from [Microsoft365.com](Microsoft365.com) under *Quick Access* and *My Content*. This helps users find all the content that is important to them in one place. 
 
-To configure your connector for the [Microsoft 365 App](office.com), you must:
+To configure your connector for the [Microsoft 365 Hub](office.com), you must:
 - Apply the following [semantic labels](graph/connecting-external-content-manage-schema#semantic-labels) to your [schema](graph/api/resources/externalconnectors-schema): `title`, `url`, `iconUrl`. These labels determine which properties are displayed in the experience.
 - Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. Supported activity types are shown [here](/graph/api/resources/externalconnectors-externalactivity). These activities inform the platform of which users have interacted most recently with which items. Items with activities performed by a given user will have a higher likelihood of being displayed to that user in the experience.
 - Add a [urlToItemrResolver](graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](graph/api/resources/externalconnectors-activitysettings) when you [create your connection](graph/connecting-external-content-manage-connections#create-a-connection). A `urlToItemResolver` will enable the platform to become aware when users share URLs from your external content with each other. The experience will have a higher likelihood of displaying content that has been shared with that user.
