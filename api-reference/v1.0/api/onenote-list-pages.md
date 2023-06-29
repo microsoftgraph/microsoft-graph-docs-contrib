@@ -54,7 +54,7 @@ Here is an example of the request.
 <!-- { "blockType": "request", "name" : "onenote_list_pages"  } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/page
+GET https://graph.microsoft.com/v1.0/me/onenote/pages
 ```
 
 ##### Response
