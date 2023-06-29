@@ -231,13 +231,13 @@ items:
                   - name: Teams and channels
                     href: teams-changenotifications-team-and-channel.md
                   - name: Team and channel membership
-                    href: teams-changenotifications-teamMembership.md
+                    href: teams-changenotifications-teammembership.md
                   - name: Chat and channel messages
                     href: teams-changenotifications-chatmessage.md
                   - name: Chat
                     href: teams-changenotifications-chat.md
                   - name: Chat membership
-                    href: teams-changenotifications-chatMembership.md
+                    href: teams-changenotifications-chatmembership.md
               - name: Notifications for Outlook resources
                 href: outlook-change-notifications-overview.md
       - name: Change tracking
@@ -482,7 +482,7 @@ items:
                   - name: Review access to a security group
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access for guest users
-                    href: tutorial-accessreviews-M365group.md
+                    href: tutorial-accessreviews-m365group.md
                   - name: Review access to privileged roles
                     href: tutorial-accessreviews-roleassignments.md
                   - name: Configure the scope
@@ -634,7 +634,7 @@ items:
           - name: Search multiple entity types
             href: search-concept-interleaving.md
           - name: Search with multiple requests
-            href: search-concept-multipleRequest.md
+            href: search-concept-multiplerequest.md
           - name: Search Outlook events
             href: search-concept-events.md
           - name: Search Outlook messages

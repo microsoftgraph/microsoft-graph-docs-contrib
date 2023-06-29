@@ -10321,6 +10321,8 @@ items:
             href: api/cloudpc-get.md
           - name: Bulk-reprovision remotely
             href: api/manageddevice-bulkreprovisioncloudpc.md
+          - name: Bulk resize
+            href: api/cloudpc-bulkresize.md
           - name: Bulk-restore remotely
             href: api/manageddevice-bulkrestorecloudpc.md
           - name: Bulk-set review status
@@ -10367,6 +10369,8 @@ items:
             href: api/cloudpc-troubleshoot.md
           - name: Retry partner agent installation
             href: api/cloudpc-retrypartneragentinstallation.md
+          - name: Validate bulk resize
+            href: api/cloudpc-validatebulkresize.md
         - name: Cloud PC audit event
           href: resources/cloudpcauditevent.md
           items:
@@ -12489,6 +12493,13 @@ items:
               href: api/accesspackage-list-accesspackageresourcerolescopes.md
             - name: Create
               href: api/accesspackage-post-accesspackageresourcerolescopes.md
+          - name: Access package subject
+            href: resources/accesspackagesubject.md
+            items:
+            - name: Get
+              href: api/accesspackagesubject-get.md
+            - name: Update
+              href: api/accesspackagesubject-update.md
           - name: Connected organization
             href: resources/connectedorganization.md
             items:
@@ -15083,7 +15094,7 @@ items:
             items:
             - name: Get
               href: api/reportroot-getcredentialuserregistrationcount.md
-          - name: Credential User Registration Details
+          - name: Credential User Registration Details (deprecated)
             href: resources/credentialuserregistrationdetails.md
             items:
             - name: List
@@ -16140,7 +16151,7 @@ items:
             href: api/security-host-list-subdomains.md
         - name: Vulnerability component
           items:
-          - name: Vulnerability componet
+          - name: Vulnerability component
             href: resources/security-vulnerabilitycomponent.md
           - name: Get
             href: api/security-vulnerabilitycomponent-get.md
