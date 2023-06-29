@@ -110,9 +110,16 @@ Content-Type: application/json
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
       "userPrincipalName": "username@contoso.com",
       "usageDate": "Date",
-      "completedBlackAndWhiteJobCount": 42,
-      "completedColorJobCount": 0,
-      "incompleteJobCount": 6
+      "completedJobCount": 110,
+      "completedBlackAndWhiteJobCount": 1,
+      "completedColorJobCount": 109,
+      "incompleteJobCount": 13,
+      "pageCount": 138,
+      "blackAndWhitePageCount": 0,
+      "colorPageCount": 138,
+      "mediaSheetCount": 132,
+      "doubleSidedSheetCount": 12,
+      "singleSidedSheetCount": 120
     }
   ]
 }
