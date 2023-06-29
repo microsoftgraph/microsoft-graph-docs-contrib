@@ -42,19 +42,16 @@ recipient.SetEmailAddress(emailAddress)
 
 newParticipants := []graphmodels.Recipientable {
 	recipient,
-
 }
 post.SetNewParticipants(newParticipants)
 
 posts := []graphmodels.Postable {
 	post,
-
 }
 conversationThread.SetPosts(posts)
 
 threads := []graphmodels.ConversationThreadable {
 	conversationThread,
-
 }
 requestBody.SetThreads(threads)
 

@@ -18,6 +18,9 @@ When updating the rules, you must include the `@odata.type` for the derived type
 
 If successful, all requests return `204 No Content` response codes.
 
+> [!NOTE]
+> PIM for groups APIs are currently available on the `beta` endpoint only.
+
 ## Prerequisites
 
 + Have an understanding of [PIM for Azure AD roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview).
@@ -242,7 +245,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/how-to-pim-update-rules-approval-enduser-assignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

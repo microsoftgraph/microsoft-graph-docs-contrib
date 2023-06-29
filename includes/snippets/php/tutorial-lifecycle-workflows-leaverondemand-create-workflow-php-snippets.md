@@ -20,7 +20,7 @@ $requestBody->setIsEnabled(true);
 
 $requestBody->setIsSchedulingEnabled(false);
 
-$executionConditions = new WorkflowExecutionConditions();
+$executionConditions = new OnDemandExecutionOnly();
 $executionConditions->set@odatatype('#microsoft.graph.identityGovernance.onDemandExecutionOnly');
 
 

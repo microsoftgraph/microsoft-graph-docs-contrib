@@ -24,14 +24,10 @@ preview_text.content = 'New deployment requires your approval'
 
 
 request_body.preview_text = preview_text
-recipient = TeamworkNotificationRecipient()
+recipient = AadUserNotificationRecipient()
 recipient.@odata_type = 'microsoft.graph.aadUserNotificationRecipient'
 
-additional_data = [
-'user_id' => '569363e2-4e49-4661-87f2-16f245c5d66a', 
-];
-recipient.additional_data(additional_data)
-
+recipient.user_id = '569363e2-4e49-4661-87f2-16f245c5d66a'
 
 
 request_body.recipient = recipient

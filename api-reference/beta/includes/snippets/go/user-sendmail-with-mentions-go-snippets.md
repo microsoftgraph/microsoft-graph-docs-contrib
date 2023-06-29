@@ -16,7 +16,7 @@ import (
 graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewSendMailPostRequestBody()
+requestBody := graphusers.NewItemSendMailPostRequestBody()
 message := graphmodels.NewMessage()
 subject := "Project kickoff"
 message.SetSubject(&subject) 
@@ -32,7 +32,6 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 message.SetToRecipients(toRecipients)
 
@@ -47,7 +46,6 @@ mention.SetMentioned(mentioned)
 
 mentions := []graphmodels.Mentionable {
 	mention,
-
 }
 message.SetMentions(mentions)
 requestBody.SetMessage(message)

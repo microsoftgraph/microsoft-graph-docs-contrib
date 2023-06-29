@@ -16,7 +16,7 @@ import (
 graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewForwardPostRequestBody()
+requestBody := graphusers.NewItemForwardPostRequestBody()
 
 
 recipient := graphmodels.NewRecipient()
@@ -27,9 +27,8 @@ name := "Dana Swope"
 emailAddress.SetName(&name) 
 recipient.SetEmailAddress(emailAddress)
 
-toRecipients := []graphusers.Recipientable {
+toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 comment := "Dana, hope you can make this meeting."
