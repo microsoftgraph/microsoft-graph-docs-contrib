@@ -115,6 +115,7 @@ Content-Type: application/json
     "displayName": "String",
     "selfServiceEnabled": true,
     "localAdminEnabled": false,
+    "resetEnabled": true,
     "restorePointSetting": {
       "frequencyInHours": 16,
       "userRestoreEnabled": true
@@ -186,6 +187,7 @@ Content-Type: application/json
     "displayName": "Display Name value",
     "selfServiceEnabled": true,
     "localAdminEnabled": false,
+    "resetEnabled": true,
     "restorePointSetting": {
       "frequencyInHours": 16,
       "userRestoreEnabled": true
