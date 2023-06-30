@@ -11,11 +11,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TagRequestBuilderDeleteRequestConfiguration();
 $queryParameters = TagRequestBuilderDeleteRequestConfiguration::createQueryParameters();
-$queryParameters->forcedelete = true;
+$queryParameters->forcedelete = "true";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$graphServiceClient->compliance()->ediscovery()->casesById('case-id')->tagsById('tag-id')->delete($requestConfiguration);
+$graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->tags()->byTagId('tag-id')->delete($requestConfiguration);
 
 
 ```

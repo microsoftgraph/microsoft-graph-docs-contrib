@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewApplication()
@@ -37,13 +37,11 @@ resourceAccess1.SetType(&type)
 resourceAccess := []graphmodels.ResourceAccessable {
 	resourceAccess,
 	resourceAccess1,
-
 }
 requiredResourceAccess.SetResourceAccess(resourceAccess)
 
 requiredResourceAccess := []graphmodels.RequiredResourceAccessable {
 	requiredResourceAccess,
-
 }
 requestBody.SetRequiredResourceAccess(requiredResourceAccess)
 

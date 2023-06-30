@@ -9,14 +9,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new MeetingRegistrantBase();
+$requestBody = new ExternalMeetingRegistrant();
 $requestBody->set@odatatype('#microsoft.graph.externalMeetingRegistrant');
 
 $requestBody->setId('9d96988d-a66a-46ce-aad7-0b245615b297');
 
 
 
-$result = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->registrants()->post($requestBody);
+$result = $graphServiceClient->me()->onlineMeetings()->byOnlineMeetingId('onlineMeeting-id')->registration()->registrants()->post($requestBody);
 
 
 ```

@@ -22,7 +22,6 @@ const servicePrincipal = {
 };
 
 await client.api('/servicePrincipals/{id}')
-	.version('beta')
 	.update(servicePrincipal);
 
 ```

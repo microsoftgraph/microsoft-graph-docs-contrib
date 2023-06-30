@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new LearningCourseActivity
+var requestBody = new LearningSelfInitiatedCourse
 {
 	OdataType = "#microsoft.graph.learningSelfInitiatedCourse",
 	CompletedDateTime = null,
@@ -14,13 +16,8 @@ var requestBody = new LearningCourseActivity
 	ExternalCourseActivityId = "12a2228a-e020-11ec-9d64-0242ac120002",
 	LearningContentId = "57baf9dc-e020-11ec-9d64-0242ac120002",
 	LearnerUserId = "7ba2228a-e020-11ec-9d64-0242ac120002",
+	StartedDateTime = DateTimeOffset.Parse("2021-05-21T22:57:17+00:00"),
 	Status = CourseStatus.InProgress,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"startedDateTime" , "2021-05-21T22:57:17+00:00"
-		},
-	},
 };
 var result = await graphClient.EmployeeExperience.LearningProviders["{learningProvider-id}"].LearningCourseActivities.PostAsync(requestBody);
 

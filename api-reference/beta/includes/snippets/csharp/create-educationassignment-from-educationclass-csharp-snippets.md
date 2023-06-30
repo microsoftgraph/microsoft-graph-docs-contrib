@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new EducationAssignment
@@ -15,17 +17,12 @@ var requestBody = new EducationAssignment
 		ContentType = BodyType.Text,
 		Content = "Read chapter 4",
 	},
-	Grading = new EducationAssignmentGradeType
+	Grading = new EducationAssignmentPointsGradeType
 	{
 		OdataType = "#microsoft.graph.educationAssignmentPointsGradeType",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"maxPoints" , 50
-			},
-		},
+		MaxPoints = 50f,
 	},
-	AssignTo = new EducationAssignmentRecipient
+	AssignTo = new EducationAssignmentClassRecipient
 	{
 		OdataType = "#microsoft.graph.educationAssignmentClassRecipient",
 	},

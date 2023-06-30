@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->teamsById('team-id')->installedAppsById('teamsAppInstallation-id')->upgrade()->post();
+$graphServiceClient->teams()->byTeamId('team-id')->installedApps()->byInstalledAppId('teamsAppInstallation-id')->upgrade()->post();
 
 
 ```

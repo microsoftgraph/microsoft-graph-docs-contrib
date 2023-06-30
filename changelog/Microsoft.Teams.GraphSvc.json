@@ -1001,6 +1001,66 @@
       "CreatedDateTime": "2023-03-14T05:32:34.8477703Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2693683c-f49a-4715-a649-edadd3f54aad",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "chatMessageActions",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatMessageActions** enumeration type.",
+          "Target": "chatMessageActions"
+        },
+        {
+          "Id": "2693683c-f49a-4715-a649-edadd3f54aad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessageHistoryItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatMessageHistoryItem](https://learn.microsoft.com/en-us/graph/api/resources/chatMessageHistoryItem?view=graph-rest-1.0) resource type.",
+          "Target": "chatMessageHistoryItem"
+        },
+        {
+          "Id": "2693683c-f49a-4715-a649-edadd3f54aad",
+          "ApiChange": "Property",
+          "ChangedApiName": "messageHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the **messageHistory** property to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "2693683c-f49a-4715-a649-edadd3f54aad",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-18T23:04:05.0154606Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8A36C99E-BF27-45D1-9888-F55420EEB5C2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelSummary](https://learn.microsoft.com/en-us/graph/api/resources/channelSummary?view=graph-rest-beta) resource type.",
+          "Target": "channelSummary"
+        },
+        {
+          "Id": "8A36C99E-BF27-45D1-9888-F55420EEB5C2",
+          "ApiChange": "Property",
+          "ChangedApiName": "summary",
+          "ChangeType": "Addition",
+          "Description": "Added the **summary** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "8A36C99E-BF27-45D1-9888-F55420EEB5C2",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-13T20:18:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }

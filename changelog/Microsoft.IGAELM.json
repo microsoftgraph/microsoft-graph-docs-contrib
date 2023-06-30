@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
       {
         "ChangeList": [
@@ -325,7 +325,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [targetManager](https://learn.microsoft.com/en-us/graph/api/resources/targetManager?view=graph-rest-1.0) resource type.",
           "Target": "targetManager"
-        },
+        }
       ],
       "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
       "Cloud": "Prod",
@@ -673,6 +673,66 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-04-20T23:07:49.0396653Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1dbbd2a3-caa8-49f3-bc3c-763ff8e6419a",
+          "ApiChange": "Property",
+          "ChangedApiName": "removeAccessWhenTargetLeavesAllowedTargets",
+          "ChangeType": "Addition",
+          "Description": "Added the **removeAccessWhenTargetLeavesAllowedTargets** property to the [accessPackageAutomaticRequestSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAutomaticRequestSettings?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAutomaticRequestSettings"
+        },
+        {
+          "Id": "1dbbd2a3-caa8-49f3-bc3c-763ff8e6419a",
+          "ApiChange": "Property",
+          "ChangedApiName": "gracePeriodBeforeAccessRemoval",
+          "ChangeType": "Addition",
+          "Description": "Added the **gracePeriodBeforeAccessRemoval** property to the [accessPackageAutomaticRequestSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAutomaticRequestSettings?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAutomaticRequestSettings"
+        }
+      ],
+      "Id": "1dbbd2a3-caa8-49f3-bc3c-763ff8e6419a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-06-27T00:38:24.9985436Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "74a238a4-8f95-47bf-8e9a-133e6e7b0c71",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageSubjectLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageSubjectLifecycle** enumeration type.",
+          "Target": "accessPackageSubjectLifecycle"
+        },
+        {
+          "Id": "74a238a4-8f95-47bf-8e9a-133e6e7b0c71",
+          "ApiChange": "Property",
+          "ChangedApiName": "subjectLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectLifecycle** property to the [accessPackageSubject](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageSubject?view=graph-rest-beta) resource.",
+          "Target": "accessPackageSubject"
+        },
+        {
+          "Id": "74a238a4-8f95-47bf-8e9a-133e6e7b0c71",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageSubjects",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjects** relationship to the [entitlementManagement](https://docs.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-beta) resource.",
+          "Target": "entitlementManagement"
+        }
+      ],
+      "Id": "74a238a4-8f95-47bf-8e9a-133e6e7b0c71",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-28T20:30:23.0405695Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }

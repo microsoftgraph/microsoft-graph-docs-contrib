@@ -15,7 +15,7 @@ $queryParameters->expand = ["publishedResources","agents"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->agentGroupsById('onPremisesAgentGroup-id')->get($requestConfiguration);
+$result = $graphServiceClient->onPremisesPublishingProfiles()->byOnPremisesPublishingProfileId('onPremisesPublishingProfile-id')->agentGroups()->byAgentGroupId('onPremisesAgentGroup-id')->get($requestConfiguration);
 
 
 ```

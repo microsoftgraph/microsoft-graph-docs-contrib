@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDevice()
@@ -31,7 +31,6 @@ alternativeSecurityId.SetKey(&key)
 
 alternativeSecurityIds := []graphmodels.AlternativeSecurityIdable {
 	alternativeSecurityId,
-
 }
 requestBody.SetAlternativeSecurityIds(alternativeSecurityIds)
 approximateLastSignInDateTime , err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")

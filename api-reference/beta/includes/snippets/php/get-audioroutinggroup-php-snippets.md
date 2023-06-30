@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->communications()->callsById('call-id')->audioRoutingGroupsById('audioRoutingGroup-id')->get();
+$result = $graphServiceClient->communications()->calls()->byCallId('call-id')->audioRoutingGroups()->byAudioRoutingGroupId('audioRoutingGroup-id')->get();
 
 
 ```

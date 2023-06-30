@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "d07006c1-a451-4fcf-b9b6-835546842783",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllSites",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllSites](https://learn.microsoft.com/en-us/graph/api/site-getallsites?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        }
+      ],
+      "Id": "d07006c1-a451-4fcf-b9b6-835546842783",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-19T00:22:49.847Z",
+      "WorkloadArea": "Sites and Lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8ca9e51e-a486-41cb-af0e-105f86177d1b",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllSites",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllSites](https://learn.microsoft.com/en-us/graph/api/site-getallsites?view=graph-rest-1.0) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Target": "site"
+        }
+      ],
+        "Id": "8ca9e51e-a486-41cb-af0e-105f86177d1b",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2023-05-19T00:22:49.847Z",
+        "WorkloadArea": "Sites and Lists",
+        "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "imageTaggingChoice",
@@ -87,6 +123,56 @@
     {
       "ChangeList": [
         {
+          "Id": "e6fbdfd4-1666-480e-92d6-c0bbee33eaf8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sensitivityLabelAssignmentMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensitivityLabelAssignmentMethod** enumeration type.",
+          "Target": "sensitivityLabelAssignmentMethod"
+        },
+        {
+          "Id": "e6fbdfd4-1666-480e-92d6-c0bbee33eaf8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extractSensitivityLabelsResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [extractSensitivityLabelsResult](https://learn.microsoft.com/graph/api/resources/extractSensitivityLabelsResult?view=graph-rest-1.0) resource type.",
+          "Target": "extractSensitivityLabelsResult"
+        },
+        {
+          "Id": "e6fbdfd4-1666-480e-92d6-c0bbee33eaf8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [sensitivityLabelAssignment](https://learn.microsoft.com/graph/api/resources/sensitivityLabelAssignment?view=graph-rest-1.0) resource type.",
+          "Target": "sensitivityLabelAssignment"
+        },
+        {
+          "Id": "e6fbdfd4-1666-480e-92d6-c0bbee33eaf8",
+          "ApiChange": "Method",
+          "ChangedApiName": "assignSensitivityLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignSensitivityLabel](https://review.learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0&tabs=http) method to the [driveItem](https://learn.microsoft.com/graph/api/driveItem-get?view=graph-rest-1.0&tabs=http) resource.",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "e6fbdfd4-1666-480e-92d6-c0bbee33eaf8",
+          "ApiChange": "Method",
+          "ChangedApiName": "extractSensitivityLabels",
+          "ChangeType": "Addition",
+          "Description": "Added the [extractSensitivityLabels](https://review.learn.microsoft.com/graph/api/driveitem-extractsensitivitylabels?view=graph-rest-1.0&tabs=http) method to the [driveItem](https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0&tabs=http) resource.",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "e6fbdfd4-1666-480e-92d6-c0bbee33eaf8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-06-15T12:09:50.4097557Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bb775eb6-032d-4958-946f-a5b608a5be43",
           "ApiChange": "Method",
           "ChangedApiName": "assignSensitivityLabel",
@@ -109,7 +195,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Addition",
-          "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-idlesessionsignout?view=graph-rest-beta) resource type.",
+          "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/idlesessionsignout?view=graph-rest-beta) resource type.",
           "Target": "idleSessionSignOut"
         },
         {
@@ -117,7 +203,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Addition",
-          "Description": "Added the **idleSessionSignOut** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Description": "Added the **idleSessionSignOut** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointsettings?view=graph-rest-beta) resource.",
           "Target": "settings"
         },
         {
@@ -125,7 +211,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isLegacyAuthProtocolsEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isLegacyAuthProtocolsEnabled** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Description": "Added the **isLegacyAuthProtocolsEnabled** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointsettings?view=graph-rest-beta) resource.",
           "Target": "settings"
         },
         {
@@ -133,7 +219,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isRequireAcceptingUserToMatchInvitedUserEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isRequireAcceptingUserToMatchInvitedUserEnabled** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Description": "Added the **isRequireAcceptingUserToMatchInvitedUserEnabled** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointsettings?view=graph-rest-beta) resource.",
           "Target": "settings"
         }
       ],
@@ -159,16 +245,8 @@
           "ApiChange": "Resource",
           "ChangedApiName": "settings",
           "ChangeType": "Addition",
-          "Description": "Added the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource type and supported methods.",
+          "Description": "Added the [settings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointsettings?view=graph-rest-beta) resource type and supported methods.",
           "Target": "settings"
-        },
-        {
-          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharepoint",
-          "ChangeType": "Addition",
-          "Description": "Added the [sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-sharepoint?view=graph-rest-beta) resource type.",
-          "Target": "sharepoint"
         },
         {
           "Id": "87095323-a508-44c8-95b1-5583e8e14167",
@@ -3129,7 +3207,7 @@
         },
         {
           "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "canvasLayout",
           "ChangeType": "Addition",
           "Description": "Added the **canvasLayout** relationship to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
@@ -3137,10 +3215,10 @@
         },
         {
           "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "webParts",
           "ChangeType": "Addition",
-          "Description": "Added the **webParts** relationship to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Description": "Added the **webParts** navigation property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
           "Target": "sitePage"
         },
         {

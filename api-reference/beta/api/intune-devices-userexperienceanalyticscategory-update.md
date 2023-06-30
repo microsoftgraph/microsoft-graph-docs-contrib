@@ -56,10 +56,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics category.|
+|id|String|The unique identifier of the user experience analytics category. Read-only.|
 |overallScore|Int32|The overall score of the user experience analytics category.|
 |totalDevices|Int32|The total device count of the user experience analytics category.|
-|insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) collection|The insights for the user experience analytics category.|
+|insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) collection|The insights for the category. Read-only.|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 

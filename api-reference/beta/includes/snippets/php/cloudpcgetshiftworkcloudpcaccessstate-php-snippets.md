@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->me()->cloudPCsById('cloudPC-id')->getShiftWorkCloudPcAccessState()->get();
+$result = $graphServiceClient->me()->cloudPCs()->byCloudPCId('cloudPC-id')->getShiftWorkCloudPcAccessState()->get();
 
 
 ```

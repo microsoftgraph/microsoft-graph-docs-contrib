@@ -15,7 +15,7 @@ $queryParameters->expand = ["assignments"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->userSettingsById('cloudPcUserSetting-id')->get($requestConfiguration);
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->userSettings()->byUserSettingId('cloudPcUserSetting-id')->get($requestConfiguration);
 
 
 ```

@@ -33,7 +33,7 @@ $proposedNewTime->setEnd($proposedNewTimeEnd);
 $requestBody->setProposedNewTime($proposedNewTime);
 
 
-$graphServiceClient->me()->eventsById('event-id')->tentativelyAccept()->post($requestBody);
+$graphServiceClient->me()->events()->byEventId('event-id')->tentativelyAccept()->post($requestBody);
 
 
 ```
