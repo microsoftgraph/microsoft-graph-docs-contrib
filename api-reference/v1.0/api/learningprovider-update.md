@@ -52,6 +52,7 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}
 |longLogoWebUrlForLightTheme|String|The long logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 |squareLogoWebUrlForDarkTheme|String|The square logo URL for the dark mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 |squareLogoWebUrlForLightTheme|String|The square logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
+|isCourseActivitySyncEnabled|Boolean|Indicates whether a provider can ingest [learningCourseActivity](../resources/learningcourseactivity.md). The default value is `false`. Set to `true` to make learningCourseActivities available for this provider.|
 
 ## Response
 
@@ -79,7 +80,7 @@ Content-Type: application/json
     "longLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
     "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
     "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
-    "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
+    "loginWebUrl": "https://www.linkedin.com/learning-login/teams","isCourseActivitySyncEnabled": true
 }
 ```
 
