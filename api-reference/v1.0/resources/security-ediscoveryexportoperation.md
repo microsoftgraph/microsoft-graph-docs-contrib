@@ -52,7 +52,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |Member|Description|
 |:----|-----------|
 |None|Default file structure.|
-|directory|All files in a singe folder called NativeFiles.|
+|directory|All files in a single folder called Native files.|
 |pst|Mails will be grouped in pst format.|
 
 ## Relationships
