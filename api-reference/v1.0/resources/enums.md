@@ -30,10 +30,10 @@ Namespace: microsoft.graph
 |listItem|
 |drive|
 |unknownFutureValue|
-|acronym|
-|bookmark|
 |chatMessage|
 |person|
+|acronym|
+|bookmark|
 
 ### conditionalAccessExternalTenantsMembershipKind values
 
