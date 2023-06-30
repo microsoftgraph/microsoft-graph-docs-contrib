@@ -23,7 +23,6 @@ You can create the following types of module resources:
 - [educationLinkResource](../resources/educationlinkresource.md)
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
-- [educationTeamsAppResource](../resources/educationteamsappresource.md)
 
 Every resource has an **@odata.type** property to indicate which type of resource is being created.
 
@@ -59,7 +58,6 @@ In the request body, supply a JSON representation of one of the following resour
 - [educationLinkResource](../resources/educationlinkresource.md)
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
-- [educationTeamsAppResource](../resources/educationteamsappresource.md)
 
 >**Note:** You can't use this operation to create an [educationExternalResource](../resources/educationexternalresource.md).
 
@@ -133,6 +131,27 @@ Content-type: application/json
         }
     }
 }
+```
+
+### Example 2: Create an educationWordResource
+
+
+```
+
+### Example 3: Create an educationFileResource
+#
+```
+
+### Example 4: Create an educationExcelResource
+
+```
+
+### Example 5: Create an educationPowerPointResource
+
+```
+
+### Example 6: Create an educationMediaResource
+
 ```
 
 
