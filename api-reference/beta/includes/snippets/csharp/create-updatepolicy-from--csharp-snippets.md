@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatePolicy
@@ -15,28 +17,21 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatePolicy
 	},
 	ComplianceChanges = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.ComplianceChange>
 	{
-		new Microsoft.Graph.Beta.Models.WindowsUpdates.ComplianceChange
+		new Microsoft.Graph.Beta.Models.WindowsUpdates.ContentApproval
 		{
 			OdataType = "#microsoft.graph.windowsUpdates.contentApproval",
 		},
 	},
 	ComplianceChangeRules = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.ComplianceChangeRule>
 	{
-		new Microsoft.Graph.Beta.Models.WindowsUpdates.ComplianceChangeRule
+		new Microsoft.Graph.Beta.Models.WindowsUpdates.ContentApprovalRule
 		{
 			OdataType = "#microsoft.graph.windowsUpdates.contentApprovalRule",
-			AdditionalData = new Dictionary<string, object>
+			ContentFilter = new Microsoft.Graph.Beta.Models.WindowsUpdates.DriverUpdateFilter
 			{
-				{
-					"contentFilter" , new 
-					{
-						OdataType = "#microsoft.graph.windowsUpdates.driverUpdateFilter",
-					}
-				},
-				{
-					"durationBeforeDeploymentStart" , "P7D"
-				},
+				OdataType = "#microsoft.graph.windowsUpdates.driverUpdateFilter",
 			},
+			DurationBeforeDeploymentStart = TimeSpan.Parse("P7D"),
 		},
 	},
 	DeploymentSettings = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeploymentSettings
@@ -44,7 +39,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatePolicy
 		OdataType = "microsoft.graph.windowsUpdates.deploymentSettings",
 		Schedule = new Microsoft.Graph.Beta.Models.WindowsUpdates.ScheduleSettings
 		{
-			GradualRollout = new Microsoft.Graph.Beta.Models.WindowsUpdates.GradualRolloutSettings
+			GradualRollout = new Microsoft.Graph.Beta.Models.WindowsUpdates.RateDrivenRolloutSettings
 			{
 				OdataType = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
 				DurationBetweenOffers = TimeSpan.Parse("P1D"),

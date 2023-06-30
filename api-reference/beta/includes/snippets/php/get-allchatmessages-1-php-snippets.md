@@ -16,7 +16,7 @@ $queryParameters->orderby = ["createdDateTime desc"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chatsById('chat-id')->messages()->get($requestConfiguration);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->messages()->get($requestConfiguration);
 
 
 ```

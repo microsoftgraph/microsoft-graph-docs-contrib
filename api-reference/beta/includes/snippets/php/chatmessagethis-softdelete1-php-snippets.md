@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->usersById('user-id')->chatsById('chat-id')->messagesById('chatMessage-id')->softDelete()->post();
+$graphServiceClient->users()->byUserId('user-id')->chats()->byChatId('chat-id')->messages()->byMessageId('chatMessage-id')->softDelete()->post();
 
 
 ```

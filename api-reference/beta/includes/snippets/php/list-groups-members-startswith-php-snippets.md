@@ -17,11 +17,11 @@ $requestConfiguration->headers = $headers;
 
 $queryParameters = MembersRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->count = true;
-$queryParameters->filter = "startswith(displayName,%20'a')";
+$queryParameters->filter = "startswith(displayName, 'a')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->groupsById('group-id')->members()->get($requestConfiguration);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->members()->get($requestConfiguration);
 
 
 ```

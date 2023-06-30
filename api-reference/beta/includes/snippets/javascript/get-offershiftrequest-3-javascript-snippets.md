@@ -16,7 +16,7 @@ const offerShiftRequest = {
   recipientUserId: 'fe278b61-21ac-4872-8b41-1962bbb98e3c'
 };
 
-await client.api('/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/offershiftrequests')
+await client.api('/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/offerShiftRequests')
 	.version('beta')
 	.post(offerShiftRequest);
 

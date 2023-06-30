@@ -16,7 +16,7 @@ $queryParameters->expand = ["exceptionOccurrences"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->eventsById('event-id')->get($requestConfiguration);
+$result = $graphServiceClient->me()->events()->byEventId('event-id')->get($requestConfiguration);
 
 
 ```

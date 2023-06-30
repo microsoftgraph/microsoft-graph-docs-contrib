@@ -14,7 +14,7 @@ $requestBody->setType('embed');
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->createLink()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->createLink()->post($requestBody);
 
 
 ```

@@ -56,6 +56,21 @@ Namespace: microsoft.graph
 | asymmetricKeyLifetime |
 | unknownFutureValue    |
 
+### assignmentType values
+
+| Member              | 
+| :-------------------|
+| Required            |
+| Recommeded          |
+| UnknownFutureValue  |
+
+### courseStatus values
+
+| Member             |
+| :----------------- |
+| notStarted         |
+| inProgress         |
+| completed          |
 ### userPurpose values
 | Member             |
 | :----------------- |
@@ -200,6 +215,14 @@ Namespace: microsoft.graph
 | remove             |
 | extend             |
 | renew              |
+| unknownFutureValue |
+
+### userSignInRecommendationScope values 
+
+| Member             |
+| :----------------- |
+| tenant             |
+| application        |
 | unknownFutureValue |
 
 ### unifiedRoleScheduleRequestActions values 
@@ -740,7 +763,6 @@ Namespace: microsoft.graph
 | :----------------- |
 | working            |
 | submitted          |
-| released           |
 | returned           |
 | unknownFutureValue |
 | reassigned         |
@@ -2493,4 +2515,27 @@ Possible values for user account types (group membership), per Windows definitio
 |draft|
 |published|
 |pending|
+|unknownFutureValue|
+
+### chatMessageActions values 
+
+|Member|
+|:---|
+|reactionAdded|
+|reactionRemoved|
+|actionUndefined|
+|unknownFutureValue|
+
+### outlierMemberType values 
+
+|Member|
+|:---|
+|user|
+|unknownFutureValue|
+
+### outlierContainerType values 
+
+|Member|
+|:---|
+|group|
 |unknownFutureValue|

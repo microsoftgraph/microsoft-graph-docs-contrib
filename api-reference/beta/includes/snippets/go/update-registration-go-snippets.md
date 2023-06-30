@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMeetingRegistration()
@@ -39,7 +39,6 @@ meetingSpeaker1.SetBio(&bio)
 speakers := []graphmodels.MeetingSpeakerable {
 	meetingSpeaker,
 	meetingSpeaker1,
-
 }
 requestBody.SetSpeakers(speakers)
 

@@ -19,7 +19,7 @@ $requestBody->setAdditionalDataOptions(new AdditionalDataOptions('linkedfiles'))
 
 
 
-$graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->reviewSetsById('ediscoveryReviewSet-id')->microsoftGraphSecurityAddToReviewSet()->post($requestBody);
+$graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->reviewSets()->byReviewSetId('ediscoveryReviewSet-id')->microsoftGraphSecurityAddToReviewSet()->post($requestBody);
 
 
 ```

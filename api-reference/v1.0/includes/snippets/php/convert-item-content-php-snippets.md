@@ -15,7 +15,7 @@ $queryParameters->format = "{format}";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->content()->get($requestConfiguration);
+$graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->content()->get($requestConfiguration);
 
 
 ```
