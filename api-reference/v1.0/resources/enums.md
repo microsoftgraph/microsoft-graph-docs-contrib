@@ -56,6 +56,21 @@ Namespace: microsoft.graph
 | asymmetricKeyLifetime |
 | unknownFutureValue    |
 
+### assignmentType values
+
+| Member              | 
+| :-------------------|
+| Required            |
+| Recommeded          |
+| UnknownFutureValue  |
+
+### courseStatus values
+
+| Member             |
+| :----------------- |
+| notStarted         |
+| inProgress         |
+| completed          |
 ### userPurpose values
 | Member             |
 | :----------------- |
