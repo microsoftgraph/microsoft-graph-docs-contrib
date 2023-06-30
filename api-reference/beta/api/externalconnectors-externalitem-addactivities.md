@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /connections/{connectionsId}/items/{externalItemId}/addActivities
+POST external/connections/{connectionsId}/items/{externalItemId}/addActivities
 ```
 
 ## Request headers
@@ -75,7 +75,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938/addActivities
+POST https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938/addActivities
 Content-Type: application/json
 Content-length: 190
 
