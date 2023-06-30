@@ -32,6 +32,10 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /administrativeUnits/{id}/members/{id}/$ref
 ```
+
+> [!CAUTION]
+> If you don't append `/$ref` to the request and the calling app has permissions to manage the member object, the object will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md).
+
 ## Request headers
 | Name      |Description|
 |:----------|:----------|

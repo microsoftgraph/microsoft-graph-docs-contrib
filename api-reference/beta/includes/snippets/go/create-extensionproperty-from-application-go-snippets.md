@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewExtensionProperty()
@@ -20,9 +20,10 @@ name := "jobGroup"
 requestBody.SetName(&name) 
 dataType := "String"
 requestBody.SetDataType(&dataType) 
+isMultiValued := true
+requestBody.SetIsMultiValued(&isMultiValued) 
 targetObjects := []string {
 	"User",
-
 }
 requestBody.SetTargetObjects(targetObjects)
 

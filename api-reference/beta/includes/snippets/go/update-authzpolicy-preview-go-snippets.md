@@ -12,13 +12,12 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthorizationPolicy()
 enabledPreviewFeatures := []string {
 	"assignGroupsToRoles",
-
 }
 requestBody.SetEnabledPreviewFeatures(enabledPreviewFeatures)
 

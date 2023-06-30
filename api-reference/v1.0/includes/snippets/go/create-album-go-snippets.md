@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDriveItem()
@@ -30,7 +30,6 @@ driveItem.SetId(&id)
 
 children := []graphmodels.DriveItemable {
 	driveItem,
-
 }
 requestBody.SetChildren(children)
 additionalData := map[string]interface{}{
