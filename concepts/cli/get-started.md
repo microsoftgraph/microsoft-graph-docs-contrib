@@ -7,7 +7,7 @@ author: jasonjoh
 
 # Get started with the Microsoft Graph command-line interface (CLI)
 
-In this guide, you'll use the Microsoft Graph command-line interface (CLI) to perform some basic tasks. If you haven't already [installed the CLI](installation.md), do so before following this guide.
+In this topic, you'll use the Microsoft Graph command-line interface (CLI) to perform some basic tasks. If you haven't already [installed the CLI](installation.md), do so before following this guide.
 
 [!INCLUDE [cli-preview](../../includes/cli-preview.md)]
 
@@ -17,20 +17,20 @@ The Microsoft Graph CLI uses the [Microsoft Graph REST API v1.0](/graph/api/over
 
 ## Authentication
 
-The Microsoft Graph CLI supports two types of authentication: delegated access, and app-only access. In this guide, you'll use delegated access to sign in as a user, grant consent to the CLI to act on your behalf, and call the Microsoft Graph.
+The Microsoft Graph CLI supports two types of authentication: delegated access, and app-only access. In this topic, you'll use delegated access to sign in as a user, grant consent to the CLI to act on your behalf, and call Microsoft Graph.
 
-For details on using app-only access for unattended scenarios, see [Use app-only authentication with the Microsoft Graph command-line interface (CLI)](app-only.md).
+For details about using app-only access for unattended scenarios, see [Use app-only authentication with the Microsoft Graph command-line interface (CLI)](app-only.md).
 
 ### Determine required permission scopes
 
-Each API in the Microsoft Graph is protected by one or more permission scopes. The user logging in must consent to one of the required scopes for the APIs you plan to use. In this example, we'll use the following APIs.
+Each API in Microsoft Graph is protected by one or more permission scopes. The user signing in must consent to one of the required scopes for the APIs you plan to use. In this example, you'll use the following APIs:
 
 - [Get user](/graph/api/user-get?view=graph-rest-1.0&preserve-view=true) to find the user ID of the logged-in user
 - [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true) to get the Teams the user is a member of.
 - [List channels](/graph/api/channel-list?view=graph-rest-1.0&preserve-view=true) to get the channels in a Team.
 - [Send message](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) to send a message to a Team channel.
 
-The `User.Read`, `Team.ReadBasic.All`, `Channel.ReadBasic.All`, and `ChannelMessage.Send` permission scopes will enable the above calls.
+The `User.Read`, `Team.ReadBasic.All`, `Channel.ReadBasic.All`, and `ChannelMessage.Send` permission scopes will enable these calls.
 
 ### Sign in
 
@@ -40,7 +40,7 @@ Use the `mgc login` command to sign in with the required scopes.
 mgc login --scopes User.Read Team.ReadBasic.All Channel.ReadBasic.All ChannelMessage.Send
 ```
 
-The command prompts you to go to a web page to sign in using a device code. Once you've done that, the command completes. You only need to sign in once per session.
+The command prompts you to go to a web page to sign in using a device code. When you've done that, the command completes. You only need to sign in once per session.
 
 > [!TIP]
 > You can add additional permissions by repeating the `mgc login` command with the new permission scopes.
