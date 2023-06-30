@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEvent()
@@ -40,7 +40,6 @@ hideAttendees := false
 requestBody.SetHideAttendees(&hideAttendees) 
 categories := []string {
 	"Red category",
-
 }
 requestBody.SetCategories(categories)
 

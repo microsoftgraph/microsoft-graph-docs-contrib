@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/ServicePrincipals/Item/AppRoleAssignments"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAppRoleAssignmentsPostRequestBody()
+requestBody := graphserviceprincipals.NewAppRoleAssignmentsPostRequestBody()
 additionalData := map[string]interface{}{
 	"principalId" : "4628e7df-dff3-407c-a08f-75f08c0806dc", 
 	"principalType" : "User", 

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewChatMessage()
@@ -42,13 +42,16 @@ chatMessageMention.SetMentioned(mentioned)
 
 mentions := []graphmodels.ChatMessageMentionable {
 	chatMessageMention,
-
 }
 requestBody.SetMentions(mentions)
 reactions := []graphmodels.ChatMessageReactionable {
 
 }
 requestBody.SetReactions(reactions)
+messageHistory := []graphmodels.ChatMessageHistoryItemable {
+
+}
+requestBody.SetMessageHistory(messageHistory)
 
 result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().Post(context.Background(), requestBody, nil)
 

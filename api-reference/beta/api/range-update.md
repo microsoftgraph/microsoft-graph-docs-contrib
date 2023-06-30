@@ -77,10 +77,6 @@ Content-type: application/json
 }
 ```
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-range-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-range-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

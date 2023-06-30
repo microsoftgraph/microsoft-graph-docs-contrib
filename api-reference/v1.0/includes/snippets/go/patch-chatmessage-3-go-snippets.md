@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewChatMessage()
@@ -85,7 +85,6 @@ chatMessageAttachment1.SetThumbnailUrl(&thumbnailUrl)
 attachments := []graphmodels.ChatMessageAttachmentable {
 	chatMessageAttachment,
 	chatMessageAttachment1,
-
 }
 requestBody.SetAttachments(attachments)
 mentions := []graphmodels.ChatMessageMentionable {
@@ -96,6 +95,10 @@ reactions := []graphmodels.ChatMessageReactionable {
 
 }
 requestBody.SetReactions(reactions)
+messageHistory := []graphmodels.ChatMessageHistoryItemable {
+
+}
+requestBody.SetMessageHistory(messageHistory)
 
 result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().ByMessageId("chatMessage-id").Patch(context.Background(), requestBody, nil)
 

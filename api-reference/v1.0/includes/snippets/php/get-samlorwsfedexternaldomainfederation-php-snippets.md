@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new IdentityProviderBaseRequestBuilderGetRequestConfiguration();
 $queryParameters = IdentityProviderBaseRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "domains/any";
+$queryParameters->filter = "domains/any(x: x/id eq 'contoso.com')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

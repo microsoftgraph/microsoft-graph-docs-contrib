@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  graphteams "github.com/microsoftgraph/msgraph-sdk-go/teams"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
 requestTop := int32(3)
 
-requestParameters := &graphconfig.TeamItemChannelItemMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamItemChannelItemMessagesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphconfig.TeamItemChannelItemMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamItemChannelItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
