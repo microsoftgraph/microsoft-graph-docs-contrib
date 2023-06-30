@@ -2333,14 +2333,6 @@
         {
           "Id": "b32f8312-c1c8-4c2f-9067-a63caa0978d3",
           "ApiChange": "Resource",
-          "ChangedApiName": "reportRoot",
-          "ChangeType": "Addition",
-          "Description": "Added the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-1.0) resource type.",
-          "Target": "reportRoot"
-        },
-        {
-          "Id": "b32f8312-c1c8-4c2f-9067-a63caa0978d3",
-          "ApiChange": "Resource",
           "ChangedApiName": "userRegistrationDetails",
           "ChangeType": "Addition",
           "Description": "Added the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-1.0) resource and supported methods.",
