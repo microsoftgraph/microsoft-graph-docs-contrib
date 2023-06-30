@@ -1,6 +1,6 @@
 ---
 title: "Install the Microsoft Graph command-line interface (CLI)"
-description: "Learn how to install the Microsoft Graph command-line interface (CLI)"
+description: "Learn how to install the Microsoft Graph command-line interface (CLI)."
 ms.localizationpriority: medium
 author: jasonjoh
 ---
@@ -26,7 +26,7 @@ The Microsoft Graph command-line interface (CLI) is published on [GitHub](https:
 1. Locate and select **Path**, then select **Edit**.
 
     > [!NOTE]
-    > The **Path** variable is present in **User variables** as well as **System variables**. Updating the variable in **User variables** will only update the current user's path. Updating the variable in **System variables** will update the path for all users on the machine.
+    > The **Path** variable is present in **User variables** as well as **System variables**. Updating the variable in **User variables** will only update the current user's path. Updating the variable in **System variables** will update the path for all users on the computer.
 
 1. Add the full path to the directory containing **mgc.exe**.
 
@@ -115,4 +115,4 @@ Delete the files from their location.
 
 ## Next steps
 
-Learn how to perform basic tasks with the Microsoft Graph CLI in [Get started with the Microsoft Graph command-line interface (CLI)](get-started.md).
+To learn how to perform basic tasks with the Microsoft Graph CLI, see [Get started with the Microsoft Graph command-line interface (CLI)](get-started.md).
