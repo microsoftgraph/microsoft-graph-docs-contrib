@@ -1,5 +1,31 @@
 {
   "changelog": [
+     {
+      "ChangeList": [
+        {
+          "Id": "9405cf87-84a8-45bf-a1ed-69264c4afb7f",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerName",
+          "ChangeType": "Addition",
+          "Description": "Added the **printerName** property to the [archivedPrintJob](https://learn.microsoft.com/en-us/graph/api/resources/archivedPrintJob?view=graph-rest-beta) resource.",
+          "Target": "archivedPrintJob"
+        },
+        {
+          "Id": "9405cf87-84a8-45bf-a1ed-69264c4afb7f",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerName",
+          "ChangeType": "Addition",
+          "Description": "Added the **printerName** property to the [printUsageByPrinter](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-beta) resource.",
+          "Target": "printUsageByPrinter"
+        }
+      ],
+      "Id": "9405cf87-84a8-45bf-a1ed-69264c4afb7f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-06-29T01:56:49.6329133Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud printing"
+    },
     {
       "ChangeList": [
         {
