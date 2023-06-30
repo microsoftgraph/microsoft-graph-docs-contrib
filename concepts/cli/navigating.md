@@ -7,7 +7,7 @@ author: jasonjoh
 
 # Navigating the Microsoft Graph command-line interface (CLI)
 
-The Microsoft Graph API is huge, and it's growing all the time. Therefore, the number of commands in the Microsoft Graph command-line interface (CLI) is also large. Finding the right command for what you want to achieve can be challenging, especially if you're not already familiar with Microsoft Graph. Let's look at some ways to help find a particular command.
+The Microsoft Graph API is huge, and it's growing all the time. Therefore, the number of commands in the Microsoft Graph command-line interface (CLI) is also large. Finding the right command for what you want to achieve can be challenging, especially if you're not already familiar with Microsoft Graph. This topic looks at some ways to help find a particular command.
 
 [!INCLUDE [cli-preview](../../includes/cli-preview.md)]
 
@@ -17,7 +17,7 @@ The Microsoft Graph API is huge, and it's growing all the time. Therefore, the n
 
 The commands in the CLI are generated directly from the [REST API](/graph/api/overview?view=graph-rest-1.0&preserve-view=true), so the names are influenced by the API. You don't have to understand the details of the API to use the Microsoft Graph CLI, but it helps to understand the naming convention.
 
-The Microsoft Graph CLI commands represent resource in Microsoft Graph and the actions that can be taken on those resources. The general structure of the commands follow this pattern:
+The Microsoft Graph CLI commands represent resources in Microsoft Graph and the actions that can be taken on those resources. The general structure of the commands follow this pattern:
 
 ```bash
 mgc <path-to-resource> <action>
@@ -29,7 +29,7 @@ The `<path-to-resource>` is one or more commands that follow the URL structure o
 
 The path to the target resource is constructed by sequencing one or more commands to represent the URL to the resource, as specified by the REST API. For a simple API like `GET /me`, a single command (`me`) is enough to represent the path.
 
-Let's look at a more complex example: the [get message API](/graph/api/message-get?view=graph-rest-1.0&preserve-view=true). Look at the HTTP requests for this API. If you ignore the requests with `/me` in the URL, there are two other ways to call this API.
+Next, look at a more complex example: the [get message API](/graph/api/message-get?view=graph-rest-1.0&preserve-view=true). Look at the HTTP requests for this API. If you ignore the requests with `/me` in the URL, there are two other ways to call this API.
 
 ```http
 GET /users/{id | userPrincipalName}/messages/{id}
@@ -47,7 +47,7 @@ Putting that all together, the equivalent commands would be `users messages --us
 
 #### Accessing an item in a collection
 
-URL segments in an API that use a plural noun indicate a collection. When an API acts on a specific item in that collection, the URL will contain a segment with an ID. In the above example, the segments `/users/{id | userPrincipalName}` combine to access a specific user in the collection of users. These "ID segments" are represented in the Microsoft Graph CLI by a required ID option, which is named like `--<name of resource>-id`. These options appear *after* the action command. Use the `--help` option to see required options for a given command.
+URL segments in an API that use a plural noun indicate a collection. When an API acts on a specific item in that collection, the URL will contain a segment with an ID. In the previous example, the segments `/users/{id | userPrincipalName}` combine to access a specific user in the collection of users. These "ID segments" are represented in the Microsoft Graph CLI by a required ID option, which is named like `--<name of resource>-id`. These options appear *after* the action command. Use the `--help` option to see required options for a given command.
 
 ### Action commands
 
