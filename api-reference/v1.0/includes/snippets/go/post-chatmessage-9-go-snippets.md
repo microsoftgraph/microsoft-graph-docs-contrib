@@ -44,7 +44,6 @@ chatMessageAttachment.SetTeamsAppId(&teamsAppId)
 
 attachments := []graphmodels.ChatMessageAttachmentable {
 	chatMessageAttachment,
-
 }
 requestBody.SetAttachments(attachments)
 

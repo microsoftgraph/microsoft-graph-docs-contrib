@@ -16,21 +16,18 @@ import (
 graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewCreateReplyAllPostRequestBody()
+requestBody := graphusers.NewItemCreateReplyAllPostRequestBody()
 message := graphmodels.NewMessage()
 
 
-attachment := graphmodels.NewAttachment()
+attachment := graphmodels.NewFileAttachment()
 name := "guidelines.txt"
 attachment.SetName(&name) 
-additionalData := map[string]interface{}{
-	"contentBytes" : "bWFjIGFuZCBjaGVlc2UgdG9kYXk=", 
-}
-attachment.SetAdditionalData(additionalData)
+contentBytes := []byte("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
+attachment.SetContentBytes(&contentBytes) 
 
 attachments := []graphmodels.Attachmentable {
 	attachment,
-
 }
 message.SetAttachments(attachments)
 requestBody.SetMessage(message)

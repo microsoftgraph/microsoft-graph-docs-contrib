@@ -15,29 +15,22 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 	Description = "Configure offboarding tasks for employees after their last day of work",
 	IsEnabled = true,
 	IsSchedulingEnabled = false,
-	ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowExecutionConditions
+	ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.TriggerAndScopeBasedConditions
 	{
 		OdataType = "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-		AdditionalData = new Dictionary<string, object>
+		Scope = new Microsoft.Graph.Beta.Models.IdentityGovernance.RuleBasedSubjectSet
 		{
-			{
-				"scope" , new 
-				{
-					OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-					Rule = "department eq 'Marketing'",
-				}
-			},
-			{
-				"trigger" , new 
-				{
-					OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-					TimeBasedAttribute = "employeeLeaveDateTime",
-					OffsetInDays = 7,
-				}
-			},
+			OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+			Rule = "department eq 'Marketing'",
+		},
+		Trigger = new Microsoft.Graph.Beta.Models.IdentityGovernance.TimeBasedAttributeTrigger
+		{
+			OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+			TimeBasedAttribute = Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowTriggerTimeBasedAttribute.EmployeeLeaveDateTime,
+			OffsetInDays = 7,
 		},
 	},
-	Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject>
+	Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.Task>
 	{
 		new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
 		{
