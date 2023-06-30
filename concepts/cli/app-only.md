@@ -1,26 +1,26 @@
 ---
-title: "Use app-only authentication with the Microsoft Graph command-line interface (CLI)"
+title: "Use app-only authentication with the Microsoft Graph CLI"
 description: "Learn how to use app-only authentication to enable non-interactive scenarios with the Microsoft Graph command-line interface."
 ms.localizationpriority: medium
 author: jasonjoh
 ---
 
-# Use app-only authentication with the Microsoft Graph command-line interface (CLI)
+# Use app-only authentication with the Microsoft Graph CLI
 
-The Microsoft Graph command-line interface (CLI) supports two types of authentication: [delegated access](../auth-v2-user.md), and [app-only access](../auth-v2-service.md). This guide will focus on the configuration needed to enable app-only access.
+The Microsoft Graph command-line interface (CLI) supports two types of authentication: [delegated access](../auth-v2-user.md), and [app-only access](../auth-v2-service.md). This topic describes the configuration needed to enable app-only access.
 
 [!INCLUDE [cli-preview](../../includes/cli-preview.md)]
 
 > [!IMPORTANT]
-> App-only access grants permissions directly to an application, and requires an administrator to consent to the required permission scopes. For more information on app-only access, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
+> App-only access grants permissions directly to an application, and requires an administrator to consent to the required permission scopes. For more information, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-Let's configure app-only access for a simple script to list users and groups in your Microsoft 365 tenant.
+In this topic, you'll configure app-only access for a simple script to list users and groups in your Microsoft 365 tenant.
 
 ## Configuration
 
-Before you can use app-only access with the SDK, you need the following.
+Before you can use app-only access with the SDK, you need the following:
 
-- A certificate to use as a credential for the application. This certificate can be a self-signed certificate or a certificate from an authority. Refer to the [See also](#see-also) section for guidance on how to create a self-signed certificate.
+- A certificate to use as a credential for the application. This can be a self-signed certificate or a certificate from an authority. For details about how to create a self-signed certificate, see the [See also](#see-also) section.
 - [Register an application](/azure/active-directory/develop/app-objects-and-service-principals) in Azure AD, configure it with the permission scopes your scenario requires, and share the public key for your certificate.
 
 ### Certificate
@@ -31,11 +31,11 @@ You'll need an X.509 certificate installed in your user's trusted store on the m
 
 You can register the application in the [Azure Active Directory portal](https://aad.portal.azure.com).
 
-1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com) and sign in using a Microsoft 365 tenant organization admin.
+1. Open a browser, go to the [Azure Active Directory admin center](https://aad.portal.azure.com), and sign in using a Microsoft 365 tenant organization admin.
 
-1. Select **Azure Active Directory** in the left-hand navigation, then select **App registrations** under **Manage**.
+1. In the left pane, select **Azure Active Directory**, and under **Manage**, select **App registrations**.
 
-    ![A screenshot of the App registrations ](../images/cli/aad-portal-app-registrations.png)
+    ![A screenshot of the App registrations](../images/cli/aad-portal-app-registrations.png)
 
 1. Select **New registration**. On the **Register an application** page, set the values as follows.
 
@@ -47,7 +47,7 @@ You can register the application in the [Azure Active Directory portal](https://
 
     ![A screenshot of the application ID of the new app registration](../images/cli/aad-application-id.png)
 
-1. Select **API Permissions** under **Manage**. Choose **Add a permission**.
+1. Under **Manage**, select **API Permissions**. Choose **Add a permission**.
 
 1. Select **Microsoft Graph**, then **Application Permissions**. Add **User.Read.All** and **Group.Read.All**, then select **Add permissions**.
 
@@ -57,17 +57,17 @@ You can register the application in the [Azure Active Directory portal](https://
 
     ![A screenshot of the configured permissions with admin consent granted](../images/cli/configured-permissions.png)
 
-1. Select **Certificates & secrets** under **Manage**, then select the **Certificates** tab. Select the **Upload certificate** button. Browse to your certificate's public key file and select **Add**.
+1. Under **Manage**, select **Certificates & secrets**, then select the **Certificates** tab. Select the **Upload certificate** button. Browse to your certificate's public key file and select **Add**.
 
 ## Authenticate
 
-You should have three pieces of information after completing the configuration steps above.
+You should have three pieces of information after completing the previous configuration steps:
 
 - Certificate subject or thumbprint of the certificate uploaded to your Azure AD app registration.
 - Application ID for your app registration.
 - Your tenant ID.
 
-We'll use this information to test authentication. Open PowerShell and run the following command, replacing the placeholders with your information.
+You'll use this information to test authentication. Open PowerShell and run the following command, replacing the placeholders with your information.
 
 ```bash
 mgc login --client-id YOUR_APP_ID --tenant-id YOUR_TENANT_ID --certificate-name "YOUR_CERT_SUBJECT" --strategy ClientCertificate
@@ -137,9 +137,9 @@ The command returns groups' display names and IDs in JSON format.
 }
 ```
 
-## Logout
+## Sign out
 
-Finally, logout of the CLI.
+Finally, sign out of the CLI.
 
 ```bash
 mgc logout
