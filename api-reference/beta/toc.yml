@@ -185,102 +185,108 @@ items:
         href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
   - name: Use the toolkit
     items:
-    - name: Overview
-      href: /graph/toolkit/overview?context=graph/api/beta
-      displayName: Microsoft Graph Toolkit, toolkit
-    - name: Get started
-      items:
-      - name: Get started
-        href: /graph/toolkit/get-started/overview?context=graph/api/beta
+      - name: Overview
+        href: /graph/toolkit/overview?context=graph/api/beta
         displayName: Microsoft Graph Toolkit, toolkit
-      - name: Toolkit for React
-        href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
-      - name: Toolkit for SPFx
-        href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/beta
-    - name: Build your first app
-      items:
-      - name: Register an Azure AD app
-        href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/beta
-      - name: Build a web app (JavaScript)
-        href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
-      - name: Build a web app (React)
-        href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
-      - name: Build a web app (Angular)
-        href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
-      - name: Build a SharePoint web part
-        href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
-      - name: Build a Teams tab
-        href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/beta
-      - name: Build a Teams tab with SSO
-        href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/beta
-      - name: Build an Electron app
-        href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/beta
-      - name: Build a productivity hub app
-        href: /graph/toolkit/get-started/building-one-productivity-hub?context=graph/api/beta
-    - name: Providers
-      items:
-      - name: Using the providers
-        href: /graph/toolkit/providers/providers?context=graph/api/beta
-        displayName: Microsoft Graph Toolkit providers, toolkit provider
-      - name: MSAL provider
-        href: /graph/toolkit/providers/msal?context=graph/api/beta
-      - name: MSAL2 provider
-        href: /graph/toolkit/providers/msal2?context=graph/api/beta
-      - name: SharePoint provider
-        href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
-      - name: Teams provider
-        href: /graph/toolkit/providers/teams?context=graph/api/beta
-      - name: Teams MSAL2 provider
-        href: /graph/toolkit/providers/teams-msal2?context=graph/api/beta
-      - name: TeamsFx provider
-        href: /graph/toolkit/providers/teamsfx?context=graph/api/beta
-      - name: Electron provider
-        href: /graph/toolkit/providers/electron?context=graph/api/beta
-      - name: Proxy provider
-        href: /graph/toolkit/providers/proxy?context=graph/api/beta
-      - name: Custom provider
-        href: /graph/toolkit/providers/custom?context=graph/api/beta
-    - name: Components
-      items:
-      - name: Login
-        href: /graph/toolkit/components/login?context=graph/api/beta
-        displayName: Microsoft Graph toolkit components, toolkit component
-      - name: Get
-        href: /graph/toolkit/components/get?context=graph/api/beta
-      - name: Person
-        href: /graph/toolkit/components/person?context=graph/api/beta
-      - name: People
-        href: /graph/toolkit/components/people?context=graph/api/beta
-      - name: Person card
-        href: /graph/toolkit/components/person-card?context=graph/api/beta
-      - name: People picker
-        href: /graph/toolkit/components/people-picker?context=graph/api/beta
-      - name: Teams channel picker
-        href: /graph/toolkit/components/teams-channel-picker?context=graph/api/beta
-      - name: Agenda
-        href: /graph/toolkit/components/agenda?context=graph/api/beta
-      - name: Planner tasks
-        href: /graph/toolkit/components/tasks?context=graph/api/beta
-      - name: To-do tasks
-        href: /graph/toolkit/components/todo?context=graph/api/beta
-      - name: File
-        href: /graph/toolkit/components/file?context=graph/api/beta
-      - name: File list
-        href: /graph/toolkit/components/file-list?context=graph/api/beta
-    - name: Customize components
-      items:
-      - name: Styling components
-        href: /graph/toolkit/customize-components/style?context=graph/api/beta
-      - name: Templating components
-        href: /graph/toolkit/customize-components/templates?context=graph/api/beta
-      - name: Handling events
-        href: /graph/toolkit/customize-components/events?context=graph/api/beta
-      - name: Caching Microsoft Graph calls in components
-        href: /graph/toolkit/customize-components/cache?context=graph/api/beta
-      - name: Localizing components
-        href: /graph/toolkit/customize-components/localization?context=graph/api/beta
-      - name: Right-to-left support
-        href: /graph/toolkit/customize-components/right-to-left?context=graph/api/beta
+      - name: Get started
+        items:
+          - name: Get started
+            href: /graph/toolkit/get-started/overview?context=graph/api/beta
+            displayName: Microsoft Graph Toolkit, toolkit
+          - name: Toolkit for React
+            href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
+          - name: Toolkit for SPFx
+            href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/beta
+      - name: Build your first app
+        items:
+          - name: Register an Azure AD app
+            href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/beta
+          - name: Build a web app (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
+          - name: Build a web app (React)
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
+          - name: Build a web app (Angular)
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
+          - name: Build a SharePoint web part
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
+          - name: Build a Teams tab
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/beta
+          - name: Build an Electron app
+            href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/beta
+          - name: Build a productivity hub app
+            href: /graph/toolkit/get-started/building-one-productivity-hub?context=graph/api/beta
+      - name: Providers
+        items:
+          - name: Using the providers
+            href: /graph/toolkit/providers/providers?context=graph/api/beta
+            displayName: Microsoft Graph Toolkit providers, toolkit provider
+          - name: Custom provider
+            href: /graph/toolkit/providers/custom?context=graph/api/beta
+          - name: Electron provider
+            href: /graph/toolkit/providers/electron?context=graph/api/beta
+          - name: MSAL2 provider
+            href: /graph/toolkit/providers/msal2?context=graph/api/beta
+          - name: Proxy provider
+            href: /graph/toolkit/providers/proxy?context=graph/api/beta
+          - name: SharePoint provider
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
+          - name: TeamsFx provider
+            href: /graph/toolkit/providers/teamsfx?context=graph/api/beta
+      - name: Components
+        items:
+          - name: Agenda
+            href: /graph/toolkit/components/agenda?context=graph/api/beta
+          - name: File
+            href: /graph/toolkit/components/file?context=graph/api/beta
+          - name: File list
+            href: /graph/toolkit/components/file-list?context=graph/api/beta
+          - name: Get
+            href: /graph/toolkit/components/get?context=graph/api/beta
+          - name: Login
+            href: /graph/toolkit/components/login?context=graph/api/beta
+            displayName: Microsoft Graph toolkit components, toolkit component
+          - name: People
+            href: /graph/toolkit/components/people?context=graph/api/beta
+          - name: People picker
+            href: /graph/toolkit/components/people-picker?context=graph/api/beta
+          - name: Person
+            href: /graph/toolkit/components/person?context=graph/api/beta
+          - name: Person card
+            href: /graph/toolkit/components/person-card?context=graph/api/beta
+          - name: Picker
+            href: /graph/toolkit/components/picker?context=graph/api/beta
+          - name: Planner tasks
+            href: /graph/toolkit/components/tasks?context=graph/api/beta
+          - name: Search box (preview)
+            href: /graph/toolkit/components/search-box?context=graph/api/beta
+          - name: Search results (preview)
+            href: /graph/toolkit/components/search-results?context=graph/api/beta
+          - name: Taxonomy picker
+            href: /graph/toolkit/components/taxonomy-picker?context=graph/api/beta
+          - name: Teams channel picker
+            href: /graph/toolkit/components/teams-channel-picker?context=graph/api/beta
+          - name: Theme toggle
+            href: /graph/toolkit/components/theme-toggle?context=graph/api/beta
+          - name: To-do tasks
+            href: /graph/toolkit/components/todo?context=graph/api/beta
+      - name: Customize components
+        items:
+          - name: Caching Microsoft Graph calls in components
+            href: /graph/toolkit/customize-components/cache?context=graph/api/beta
+          - name: Handling events
+            href: /graph/toolkit/customize-components/events?context=graph/api/beta
+          - name: Localizing components
+            href: /graph/toolkit/customize-components/localization?context=graph/api/beta
+          - name: Right-to-left support
+            href: /graph/toolkit/customize-components/right-to-left?context=graph/api/beta
+          - name: Styling components
+            href: /graph/toolkit/customize-components/style?context=graph/api/beta
+          - name: Templating components
+            href: /graph/toolkit/customize-components/templates?context=graph/api/beta
+          - name: Disambiguation of components
+            href: /graph/toolkit/customize-components/disambiguation?context=graph/api/beta
+      - name: Upgrading to v3
+        href: /graph/toolkit/upgrade?context=graph/api/beta
   - name: Configure Connected Services
     displayName: Configure Connected Services in Visual Studio
     href: /graph/office-365-connected-services?context=graph/api/beta
@@ -1912,7 +1918,7 @@ items:
         - name: Update
           href: api/bookingstaffmember-update.md
         - name: Delete
-          href: api/bookingstaffmember-delete.md 
+          href: api/bookingstaffmember-delete.md
     - name: Device and app management
       items:
       - name: Browser management (preview)
@@ -2093,7 +2099,7 @@ items:
               href: api/unifiedstoragequota-get.md
             - name: List
               href: api/unifiedstoragequota-list-services.md
-          - name: Service storage quota breakdown 
+          - name: Service storage quota breakdown
             href: resources/servicestoragequotabreakdown.md
             items:
             - name: Get
@@ -2102,6 +2108,12 @@ items:
               href: api/unifiedstoragequota-list-services.md
         - name: Reports
           items:
+          - name: Archived print job
+            href: resources/archivedprintjob.md
+          - name: Print usage by printer
+            href: resources/printusagebyprinter.md
+          - name: Print usage by user
+            href: resources/printusagebyuser.md
           - name: Organized by printer
             items:
             - name: Get
@@ -2144,7 +2156,7 @@ items:
           - name: Get
             href: api/print-get-settings.md
           - name: Update
-            href: api/print-update-settings.md 
+            href: api/print-update-settings.md
       - name: Corporate management
         href: resources/intune-graph-overview.md
         displayName: Intune
@@ -8258,7 +8270,7 @@ items:
             - name: sendTestMessage action
               href: api/intune-notification-notificationmessagetemplate-sendtestmessage.md
           - name: Notification template branding options
-            href: resources/intune-notification-notificationtemplatebrandingoptions.md        
+            href: resources/intune-notification-notificationtemplatebrandingoptions.md
           - name: Operating system upgrade eligibility
             href: resources/intune-devices-operatingsystemupgradeeligibility.md
           - name: Os version count
@@ -8782,7 +8794,7 @@ items:
             href: resources/intune-devices-userexperienceanalyticsdevicetimelineevent.md
             items:
             - name: Get
-              href: api/intune-devices-userexperienceanalyticsdevicetimelineevents-get.md            
+              href: api/intune-devices-userexperienceanalyticsdevicetimelineevents-get.md
           - name: User experience analytics device without cloud identity
             href: resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md
             items:
@@ -10315,6 +10327,8 @@ items:
             href: api/cloudpc-get.md
           - name: Bulk-reprovision remotely
             href: api/manageddevice-bulkreprovisioncloudpc.md
+          - name: Bulk resize
+            href: api/cloudpc-bulkresize.md
           - name: Bulk-restore remotely
             href: api/manageddevice-bulkrestorecloudpc.md
           - name: Bulk-set review status
@@ -10329,6 +10343,8 @@ items:
             href: api/cloudpc-getcloudpclaunchinfo.md
           - name: Get shift work access state
             href: api/cloudpc-getshiftworkcloudpcaccessstate.md
+          - name: Get provisioned Cloud PCs
+            href: api/cloudpc-getprovisionedcloudpcs.md
           - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Get review status
@@ -10359,6 +10375,8 @@ items:
             href: api/cloudpc-troubleshoot.md
           - name: Retry partner agent installation
             href: api/cloudpc-retrypartneragentinstallation.md
+          - name: Validate bulk resize
+            href: api/cloudpc-validatebulkresize.md
         - name: Cloud PC audit event
           href: resources/cloudpcauditevent.md
           items:
@@ -10561,7 +10579,7 @@ items:
             href: api/windowsupdates-catalog-list-entries.md
         - name: Compliance change
           href: resources/windowsupdates-compliancechange.md
-          items: 
+          items:
           - name: List
             href: api/windowsupdates-updatepolicy-list-compliancechanges.md
           - name: Get
@@ -11730,7 +11748,7 @@ items:
             href: api/device-list-usagerights.md
         - name: Device local credential (preview)
           items:
-          - name: Device local credential 
+          - name: Device local credential
             href: resources/devicelocalcredentialinfo.md
           - name: List
             href: api/devicelocalcredentialinfo-list.md
@@ -12481,6 +12499,13 @@ items:
               href: api/accesspackage-list-accesspackageresourcerolescopes.md
             - name: Create
               href: api/accesspackage-post-accesspackageresourcerolescopes.md
+          - name: Access package subject
+            href: resources/accesspackagesubject.md
+            items:
+            - name: Get
+              href: api/accesspackagesubject-get.md
+            - name: Update
+              href: api/accesspackagesubject-update.md
           - name: Connected organization
             href: resources/connectedorganization.md
             items:
@@ -12526,7 +12551,7 @@ items:
               href: api/entitlementmanagementsettings-get.md
             - name: Update
               href: api/entitlementmanagementsettings-update.md
-        - name: Lifecycle workflows (preview)
+        - name: Lifecycle workflows
           displayName: LCW, Identity Governance, Joiner, Mover, Leaver
           items:
           - name: Overview
@@ -12580,7 +12605,7 @@ items:
               - name: Get task
                 href: api/identitygovernance-task-get.md
               - name: Update task
-                href: api/identitygovernance-task-update.md  
+                href: api/identitygovernance-task-update.md
             - name: Reports
               displayName: Lifecycle Workflows
               items:
@@ -12618,7 +12643,7 @@ items:
                 - name: Get summary
                   href: api/identitygovernance-run-summary.md
                 - name: List task processing results
-                  href: api/identitygovernance-run-list-taskprocessingresults.md  
+                  href: api/identitygovernance-run-list-taskprocessingresults.md
                 - name: List user processing results
                   href: api/identitygovernance-run-list-userprocessingresults.md
               - name: Task processing result
@@ -12866,7 +12891,7 @@ items:
               - name: Get
                 href: api/privilegedaccessgroupeligibilityscheduleinstance-get.md
               - name: Filter by current user
-                href: api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md    
+                href: api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
             - name: Assignment approval
               href: resources/approval.md
               items:
@@ -13332,7 +13357,7 @@ items:
             - name: Export personal data
               href: api/inboundshareduserprofile-exportpersonaldata.md
             - name: Remove personal data
-              href: api/inboundshareduserprofile-removepersonaldata.md 
+              href: api/inboundshareduserprofile-removepersonaldata.md
           - name: Outbound shared user profiles
             href: resources/outboundshareduserprofile.md
             items:
@@ -13358,7 +13383,7 @@ items:
           - name: Update
             href: api/customauthenticationextension-update.md
           - name: Delete
-            href: api/customauthenticationextension-delete.md 
+            href: api/customauthenticationextension-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -14048,7 +14073,7 @@ items:
           - name: Update user flow
             href: api/authenticationeventsflow-update.md
           - name: Delete user flow
-            href: api/authenticationeventsflow-delete.md            
+            href: api/authenticationeventsflow-delete.md
           - name: List identity providers
             href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
           - name: Add identity provider
@@ -14069,7 +14094,7 @@ items:
             - name: Add applications
               href: api/authenticationconditionsapplications-post-includeapplications.md
             - name: Remove applications
-              href: api/authenticationconditionapplication-delete.md  
+              href: api/authenticationconditionapplication-delete.md
       - name: Partner customer administration
         items:
         - name: Granular delegated admin privileges
@@ -14135,11 +14160,11 @@ items:
       items:
         - name: Overview
           href: resources/industrydata-overview.md
-        - name: Azure Data Lake connector 
+        - name: Azure Data Lake connector
           href: resources/industrydata-azuredatalakeconnector.md
           items:
             - name: List
-              href: api/industrydata-azuredatalakeconnector-list.md          
+              href: api/industrydata-azuredatalakeconnector-list.md
             - name: Create
               href: api/industrydata-azuredatalakeconnector-post.md
             - name: Get
@@ -14147,7 +14172,7 @@ items:
             - name: Update
               href: api/industrydata-azuredatalakeconnector-update.md
             - name: Delete
-              href: api/industrydata-azuredatalakeconnector-delete.md              
+              href: api/industrydata-azuredatalakeconnector-delete.md
             - name: Get upload session
               href: api/industrydata-azuredatalakeconnector-getuploadsession.md
         - name: File validate operation
@@ -14161,7 +14186,7 @@ items:
           href: resources/industrydata-inboundfileflow.md
           items:
             - name: List
-              href: api/industrydata-inboundfileflow-list.md          
+              href: api/industrydata-inboundfileflow-list.md
             - name: Create
               href: api/industrydata-inboundfileflow-post.md
             - name: Get
@@ -14169,7 +14194,7 @@ items:
             - name: Update
               href: api/industrydata-inboundfileflow-update.md
             - name: Delete
-              href: api/industrydata-inboundfileflow-delete.md                        
+              href: api/industrydata-inboundfileflow-delete.md
         - name: Inbound flow
           href: resources/industrydata-inboundflow.md
           items:
@@ -14182,7 +14207,7 @@ items:
             - name: Update
               href: api/industrydata-inboundflow-update.md
             - name: Delete
-              href: api/industrydata-inboundflow-delete.md              
+              href: api/industrydata-inboundflow-delete.md
         - name: Industry data connector
           href: resources/industrydata-industrydataconnector.md
           items:
@@ -14195,14 +14220,14 @@ items:
             - name: Update
               href: api/industrydata-industrydataconnector-update.md
             - name: Delete
-              href: api/industrydata-industrydataconnector-delete.md              
+              href: api/industrydata-industrydataconnector-delete.md
             - name: Validate
               href: api/industrydata-industrydataconnector-validate.md
         - name: Industry data run
           href: resources/industrydata-industrydatarun.md
           items:
             - name: List
-              href: api/industrydata-industrydatarun-list.md          
+              href: api/industrydata-industrydatarun-list.md
             - name: Get
               href: api/industrydata-industrydatarun-get.md
             - name: Get statistics
@@ -14218,14 +14243,14 @@ items:
           href: resources/industrydata-rolegroup.md
           items:
             - name: List
-              href: api/industrydata-rolegroup-list.md          
+              href: api/industrydata-rolegroup-list.md
             - name: Get
               href: api/industrydata-rolegroup-get.md
         - name: Source system definition
           href: resources/industrydata-sourcesystemdefinition.md
           items:
             - name: List
-              href: api/industrydata-sourcesystemdefinition-list.md          
+              href: api/industrydata-sourcesystemdefinition-list.md
             - name: Create
               href: api/industrydata-sourcesystemdefinition-post.md
             - name: Get
@@ -15075,7 +15100,7 @@ items:
             items:
             - name: Get
               href: api/reportroot-getcredentialuserregistrationcount.md
-          - name: Credential User Registration Details
+          - name: Credential User Registration Details (deprecated)
             href: resources/credentialuserregistrationdetails.md
             items:
             - name: List
@@ -15676,7 +15701,7 @@ items:
             - name: Training user coverage
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
-              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md        
+              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
         - name: Simulation automation
           items:
           - name: Simulation automation
@@ -15989,7 +16014,7 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
-      - name: Records management 
+      - name: Records management
         items:
         - name: Overview
           href: resources/security-recordsManagement-overview.md
@@ -16050,7 +16075,7 @@ items:
           items:
           - name: Article
             href: resources/security-article.md
-          - name: Get 
+          - name: Get
             href: api/security-article-get.md
           - name: List
             href: api/security-article-list.md
@@ -16078,6 +16103,8 @@ items:
               href: api/security-host-list-passivednsreverse.md
             - name: Get reputation
               href: api/security-host-get-reputation.md
+            - name: List subdomains
+              href: api/security-host-list-subdomains.md
             - name: List trackers
               href: api/security-host-list-trackers.md
         - name: Host component
@@ -16120,17 +16147,17 @@ items:
             href: resources/security-passivednsrecord.md
           - name: Get
             href: api/security-passivednsrecord-get.md
-        - name: Vulnerability
+        - name: Subdomain
           items:
-          - name: Vulnerability
-            href: resources/security-vulnerability.md
+          - name: Subdomain
+            href: resources/security-subdomain.md
           - name: Get
-            href: api/security-vulnerability-get.md
-          - name: List vulnerability components
-            href: api/security-vulnerability-list-components.md
+            href: api/security-subdomain-get.md
+          - name: List Subdomains for a host
+            href: api/security-host-list-subdomains.md
         - name: Vulnerability component
           items:
-          - name: Vulnerability componet
+          - name: Vulnerability component
             href: resources/security-vulnerabilitycomponent.md
           - name: Get
             href: api/security-vulnerabilitycomponent-get.md
@@ -16411,7 +16438,7 @@ items:
             href: resources/standardwebpart.md
           - name: List
             href: api/webpart-list.md
-          - name: Get 
+          - name: Get
             href: api/webpart-get.md
           - name: Get position
             href: api/webpart-getposition.md
@@ -17156,10 +17183,11 @@ items:
             href: api/learningcontent-update.md
           - name: Delete
             href: api/learningprovider-delete-learningcontents.md
-        - name: Learning course activities (preview)
+        - name: Learning course activities
           items:
           - name: Learning course activity
             href: resources/learningcourseactivity.md
+            items:  
           - name: List
             href: api/learningcourseactivity-list.md
           - name: Create
@@ -17170,6 +17198,10 @@ items:
             href: api/learningcourseactivity-update.md
           - name: Delete
             href: api/learningcourseactivity-delete.md
+          - name: Learning assignment
+            href: resources/learningassignment.md
+          - name: Learning self-initiated course
+            href: resources/learningselfinitiatedcourse.md
       - name: Messaging
         items:
         - name: Activity feed
