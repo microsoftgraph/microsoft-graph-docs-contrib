@@ -28,7 +28,7 @@ The Microsoft Graph CLI is published on [GitHub](https://github.com/microsoftgra
 
 ## Get started
 
-To perform basic tasks, see [Get started with the Microsoft Graph command-line interface (CLI)](get-started.md).
+To perform basic tasks, see [Get started with the Microsoft Graph CLI](get-started.md).
 
 ## Next steps
 
