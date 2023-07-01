@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Update an [appManagementPolicy](../resources/appManagementPolicy.md) object.
+Update an [appManagementPolicy](../resources/appmanagementpolicy.md) object.
 
 ## Permissions
 
@@ -44,10 +44,10 @@ PATCH /policies/appManagementPolicies/{id}
 
 | Property     | Type                                                                     | Description                                                                              |
 | :----------- | :----------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
-| displayName  | String                                                                   | The display name of the policy. Inherited from [policyBase](../resources/policybase.md). |
 | description  | String                                                                   | The description of the policy. Inherited from [policyBase](../resources/policybase.md).  |
+| displayName  | String                                                                   | The display name of the policy. Inherited from [policyBase](../resources/policybase.md). |
 | isEnabled    | Boolean                                                                  | Denotes whether the policy is enabled.                                                   |
-| restrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply to an application or service principal object.                   |
+| restrictions | [appManagementConfiguration](../resources/appmanagementconfiguration.md) | Restrictions that apply to an application or service principal object.                   |
 
 ## Response
 
@@ -71,7 +71,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}
 {
     "isEnabled": false
 }
-
 ```
 
 # [C#](#tab/csharp)
@@ -111,7 +110,6 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
