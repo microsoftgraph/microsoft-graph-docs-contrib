@@ -45,7 +45,7 @@ PATCH /admin/appsAndServices
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.graph.appsAndServicesSettings](../resources/appsandservicessettings.md)|Company-wide settings for apps and services.Required.|
+|settings|[microsoft.graph.appsAndServicesSettings](../resources/appsandservicessettings.md)|Company-wide settings for apps and services. Required.|
 
 
 
@@ -78,7 +78,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
