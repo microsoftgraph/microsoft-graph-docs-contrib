@@ -19,7 +19,7 @@ Microsoft Graph supports [21 built-in tasks](/graph/api/resources/identitygovern
 This article provides guidance on the allowed configuration for the **arguments** property of [tasks](/graph/api/resources/identitygovernance-task) in Lifecycle Workflows.
 
 > [!NOTE]
-> For a full list lifecycle workflow task examples, see: [Lifecycle Workflow built-in tasks](/azure/active-directory/governance/lifecycle-workflow-tasks )
+> For a full list lifecycle workflow task examples, see [Lifecycle Workflow built-in tasks](/azure/active-directory/governance/lifecycle-workflow-tasks).
 
 ## Configure arguments for tasks
 
