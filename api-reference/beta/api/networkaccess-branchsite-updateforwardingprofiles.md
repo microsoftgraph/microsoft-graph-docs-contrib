@@ -66,7 +66,7 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_forwardingprofile_from_"
+  "name": "attach_forwardingprofile_to_branch"
 }
 -->
 ``` http

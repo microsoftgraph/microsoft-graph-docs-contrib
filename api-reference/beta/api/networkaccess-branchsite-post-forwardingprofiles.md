@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_forwardingprofile_from_"
+  "name": "create_branch_and_assign_forwardingprofile"
 }
 -->
 ``` http
