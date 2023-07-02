@@ -12372,7 +12372,7 @@ items:
           href: resources/networkaccess-settings.md
           items: 
           - name: Cross-tenant access settings
-            href: /resources/networkaccess-crosstenantaccesssettings.md
+            href: resources/networkaccess-crosstenantaccesssettings.md
             items:
             - name: Get
               href: api/networkaccess-crosstenantaccesssettings-get.md

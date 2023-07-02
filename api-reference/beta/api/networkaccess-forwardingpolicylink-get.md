@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingprofile-list-policies.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.networkaccess.forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) object in the response body.
 
 ## Examples
 
