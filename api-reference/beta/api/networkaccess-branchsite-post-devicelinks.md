@@ -56,7 +56,6 @@ You can specify the following properties when creating a **deviceLink**.
 |bgpConfiguration|[microsoft.graph.networkaccess.bgpConfiguration](../resources/networkaccess-bgpconfiguration.md)|Represents the Border Gateway Protocol (BGP) configuration settings associated with a device link. Required.|
 
 
-
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object in the response body.
@@ -73,7 +72,6 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/networkAccess/connectivity/branches/19a92090-c14e-4cea-a933-27d38f72c4d1/deviceLinks
 
-Request:
 {
     "name": "device link 1",
     "ipAddress": "24.123.22.168",
@@ -83,12 +81,12 @@ Request:
     {
         "localIpAddress": "1.128.24.22",
         "peerIpAddress": "1.128.24.28",
-        "asn": 4,
+        "asn": 4
     },
     "redundancyConfiguration":
     {
         "zoneLocalIpAddress": "1.128.23.20",
-        "redundancyTier": "zoneRedundancy",
+        "redundancyTier": "zoneRedundancy"
     },
     "tunnelConfiguration":
     {
