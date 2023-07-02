@@ -12412,7 +12412,7 @@ items:
             - name: Get
               href: api/networkaccess-forwardingpolicy-get.md            
             - name: List
-              href: api/networkaccess-forwardingpolicylink-list.md
+              href: api/networkaccess-forwardingprofile-list-policies.md
             - name: Update
               href: api/networkaccess-forwardingpolicylink-update.md
             - name: Delete
@@ -12438,7 +12438,7 @@ items:
           - name: IP address
             href: resources/networkaccess-ipaddress.md
           - name: IP range
-            href: resources/networkaccess-intune-iprange.md
+            href: resources/networkaccess-iprange.md
           - name: IP subnet
             href: resources/networkaccess-ipsubnet.md
           - name: URL
