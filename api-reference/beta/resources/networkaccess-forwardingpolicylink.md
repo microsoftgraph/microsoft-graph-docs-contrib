@@ -1,6 +1,6 @@
 ---
 title: "forwardingPolicyLink resource type"
-description: "A forwardingPolicyLink" represents the association between a forwarding policy and another forwarding profile."
+description: "A forwardingPolicyLink represents the association between a forwarding policy and another forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A forwardingPolicyLink" represents the association between a forwarding policy and another forwarding profile.
+A forwardingPolicyLink represents the association between a forwarding policy and another forwarding profile.
 
 
 Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).
