@@ -1,6 +1,6 @@
 ---
 title: "Update forwardingOptions"
-description: "Update the forwarding options for the tenant, with a specific focus on the 'skipDnsLookupState' flag. This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 traffic to be forwarded directly to the Front Door using the client-resolved destination."
+description: "Update the forwarding options for the tenant, with a specific focus on the skipDnsLookupState flag. This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 traffic to be forwarded directly to the Front Door using the client-resolved destination."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -86,5 +86,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
