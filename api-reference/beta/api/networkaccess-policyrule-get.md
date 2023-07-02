@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-forwardingrule.md) object in the response body.  The **@odata.type** property identifies whether the policyRule is a [m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) or a [privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md) type.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-forwardingrule.md) object in the response body.  The **@odata.type** property identifies whether the policyRule is a [microsoft.graph.networkaccess.m365ForwardingRule](../resources/networkaccess-m365forwardingrule.md) or a [microsoft.graph.networkaccess.privateAccessForwardingRule](../resources/networkaccess-privateaccessforwardingrule.md) type.
 
 ## Examples
 

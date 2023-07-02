@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|Id|[microsoft.graph.networkaccess.policyRuleDelta](../resources/networkaccess-policyrule.md)|Unique Identifier for the rule.|
+|Id|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md)|Unique Identifier for the rule.|
 |action|String|Action for the traffic, possible values are "Forward" or "Bypass". Required.|
 
 
