@@ -38,9 +38,15 @@ The following example configures an [Interactive authentication provider](choose
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/NationalClouds.cs" id="NationalCloudSnippet":::
 
-### [TypeScript](#tab/typescript)
+### [Go](#tab/go)
 
-:::code language="csharp" source="./snippets/typescript/src/snippets/nationalClouds.ts" id="NationalCloudSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/national_clouds.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/national_clouds.go" id="NationalCloudSnippet":::
+
+### [Java](#tab/java)
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/NationalClouds.java" id="NationalCloudSnippet":::
 
 ### [PowerShell](#tab/powershell)
 
@@ -49,14 +55,8 @@ Connect-MgGraph -Environment USGov -ClientId 'YOUR_CLIENT_ID' `
   -TenantId 'YOUR_TENANT_ID' -Scopes 'https://graph.microsoft.us/.default'
 ```
 
-### [Java](#tab/java)
+### [TypeScript](#tab/typescript)
 
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/NationalClouds.java" id="NationalCloudSnippet":::
-
-### [Go](#tab/go)
-
-:::code language="go" source="./snippets/go/src/snippets/national_clouds.go" id="ImportSnippet":::
-
-:::code language="go" source="./snippets/go/src/snippets/national_clouds.go" id="NationalCloudSnippet":::
+:::code language="csharp" source="./snippets/typescript/src/snippets/nationalClouds.ts" id="NationalCloudSnippet":::
 
 ---

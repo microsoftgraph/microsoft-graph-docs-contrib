@@ -2108,6 +2108,12 @@ items:
               href: api/unifiedstoragequota-list-services.md
         - name: Reports
           items:
+          - name: Archived print job
+            href: resources/archivedprintjob.md
+          - name: Print usage by printer
+            href: resources/printusagebyprinter.md
+          - name: Print usage by user
+            href: resources/printusagebyuser.md
           - name: Organized by printer
             items:
             - name: Get
@@ -10321,6 +10327,8 @@ items:
             href: api/cloudpc-get.md
           - name: Bulk-reprovision remotely
             href: api/manageddevice-bulkreprovisioncloudpc.md
+          - name: Bulk resize
+            href: api/cloudpc-bulkresize.md
           - name: Bulk-restore remotely
             href: api/manageddevice-bulkrestorecloudpc.md
           - name: Bulk-set review status
@@ -10367,6 +10375,8 @@ items:
             href: api/cloudpc-troubleshoot.md
           - name: Retry partner agent installation
             href: api/cloudpc-retrypartneragentinstallation.md
+          - name: Validate bulk resize
+            href: api/cloudpc-validatebulkresize.md
         - name: Cloud PC audit event
           href: resources/cloudpcauditevent.md
           items:
@@ -12489,6 +12499,13 @@ items:
               href: api/accesspackage-list-accesspackageresourcerolescopes.md
             - name: Create
               href: api/accesspackage-post-accesspackageresourcerolescopes.md
+          - name: Access package subject
+            href: resources/accesspackagesubject.md
+            items:
+            - name: Get
+              href: api/accesspackagesubject-get.md
+            - name: Update
+              href: api/accesspackagesubject-update.md
           - name: Connected organization
             href: resources/connectedorganization.md
             items:
@@ -15083,7 +15100,7 @@ items:
             items:
             - name: Get
               href: api/reportroot-getcredentialuserregistrationcount.md
-          - name: Credential User Registration Details
+          - name: Credential User Registration Details (deprecated)
             href: resources/credentialuserregistrationdetails.md
             items:
             - name: List
@@ -16000,20 +16017,91 @@ items:
       - name: Records management
         items:
         - name: Overview
-          href: resources/security-recordsManagement-overview.md
+          href: resources/security-recordsmanagement-overview.md
+        - name: Label (preview)
+          href: resources/security-labelsroot.md
         - name: Retention label (preview)
           href: resources/security-retentionlabel.md
           items:
           - name: List
-            href: api/security-retentionlabel-list.md
+            href: api/security-labelsroot-list-retentionlabel.md
           - name: Create
-            href: api/security-retentionlabel-post.md
+            href: api/security-labelsroot-post-retentionlabel.md
           - name: Get
             href: api/security-retentionlabel-get.md
           - name: Update
             href: api/security-retentionlabel-update.md
           - name: Delete
             href: api/security-retentionlabel-delete.md
+        - name: File plan descriptors
+          href: resources/security-fileplandescriptor.md
+          items: 
+          - name: File plan reference
+            href: resources/security-fileplanreference.md
+            items:
+            - name: List
+              href: api/security-labelsroot-list-fileplanreferences.md
+            - name: Create
+              href: api/security-labelsroot-post-fileplanreferences.md
+            - name: Get
+              href: api/security-fileplanreferencetemplate-get.md
+            - name: Delete
+              href: api/security-labelsroot-delete-fileplanreferences.md
+          - name: Authority
+            href: resources/security-authority.md
+            items:
+            - name: List
+              href: api/security-labelsroot-list-authorities.md
+            - name: Create
+              href: api/security-labelsroot-post-authorities.md
+            - name: Get
+              href: api/security-authoritytemplate-get.md
+            - name: Delete
+              href: api/security-labelsroot-delete-authorities.md
+          - name: Category
+            href: resources/security-appliedcategory.md
+            items:
+            - name: List
+              href: api/security-labelsroot-list-categories.md
+            - name: Create
+              href: api/security-labelsroot-post-categories.md
+            - name: Get
+              href: api/security-categorytemplate-get.md
+            - name: Delete
+              href: api/security-labelsroot-delete-categories.md
+          - name: Subcategory
+            href: resources/security-subcategory.md
+            items:
+            - name: List
+              href: api/security-categorytemplate-list-subcategories.md
+            - name: Create
+              href: api/security-categorytemplate-post-subcategories.md
+            - name: Get
+              href: api/security-subcategorytemplate-get.md
+            - name: Delete
+              href: api/security-categorytemplate-delete-subcategories.md
+          - name: Department
+            href: resources/security-department.md
+            items:
+            - name: List
+              href: api/security-labelsroot-list-departments.md
+            - name: Create
+              href: api/security-labelsroot-post-departments.md
+            - name: Get
+              href: api/security-departmenttemplate-get.md
+            - name: Delete
+              href: api/security-labelsroot-delete-departments.md
+          - name: Citation
+            href: resources/security-citation.md
+            items:
+            - name: List
+              href: api/security-labelsroot-list-citations.md
+            - name: Create
+              href: api/security-labelsroot-post-citations.md
+            - name: Get
+              href: api/security-citationtemplate-get.md
+            - name: Delete
+              href: api/security-labelsroot-delete-citations.md
         - name: Retention event
           href: resources/security-retentionevent.md
           items:
@@ -16140,7 +16228,7 @@ items:
             href: api/security-host-list-subdomains.md
         - name: Vulnerability component
           items:
-          - name: Vulnerability componet
+          - name: Vulnerability component
             href: resources/security-vulnerabilitycomponent.md
           - name: Get
             href: api/security-vulnerabilitycomponent-get.md
@@ -17166,10 +17254,11 @@ items:
             href: api/learningcontent-update.md
           - name: Delete
             href: api/learningprovider-delete-learningcontents.md
-        - name: Learning course activities (preview)
+        - name: Learning course activities
           items:
           - name: Learning course activity
             href: resources/learningcourseactivity.md
+            items:  
           - name: List
             href: api/learningcourseactivity-list.md
           - name: Create
@@ -17180,6 +17269,10 @@ items:
             href: api/learningcourseactivity-update.md
           - name: Delete
             href: api/learningcourseactivity-delete.md
+          - name: Learning assignment
+            href: resources/learningassignment.md
+          - name: Learning self-initiated course
+            href: resources/learningselfinitiatedcourse.md
       - name: Messaging
         items:
         - name: Activity feed
