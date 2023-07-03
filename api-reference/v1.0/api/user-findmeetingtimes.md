@@ -174,7 +174,7 @@ Content-Type: application/json
   "isOrganizerOptional": "false",
   "meetingDuration": "PT1H",
   "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "minimumAttendeePercentage": 100
 }
 ```
 
