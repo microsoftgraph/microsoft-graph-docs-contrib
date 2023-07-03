@@ -152,7 +152,8 @@ Content-Type: application/json
         "queryString": "contoso"
       },
       "contentSources":[
-        "/external/connections/*"
+        "/external/connections/MicrosoftPowerBI",
+        "/external/connections/Learning"
       ],
       "from": 0,
       "size": 25
