@@ -35,7 +35,7 @@ These auditable logs are represented by the [directoryAudit resource type](/grap
 
 ## License checks
 
-To preview the Lifecycle Workflows feature, you must have an Azure AD Premium P2 license in your tenant. For more information about the license requirements, see: [Lifecycle Workflows license requirements](/azure/active-directory/governance/lifecycle-workflows-deployment#licenses).
+Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Micorosft Azure AD](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 
 ## Role and application permission authorization checks
 
@@ -48,5 +48,5 @@ The following [Azure AD roles](/azure/active-directory/roles/permissions-referen
 
 ## See also
 
-+ [What are Lifecycle Workflows? (Public Preview)](/azure/active-directory/governance/what-are-lifecycle-workflows)
++ [What are Lifecycle Workflows?](/azure/active-directory/governance/what-are-lifecycle-workflows)
 + [Overview of Lifecycle Workflows](identitygovernance-lifecycleworkflows-overview.md)

@@ -14,21 +14,17 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CustomClients.cs" id="ChaosHandlerSnippet":::
 
-## [TypeScript](#tab/typeScript)
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/customClients.ts" id="ChaosHandlerSnippet":::
-
-## [Java](#tab/java)
-
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ChaosHandlerSnippet":::
-
-## [Go](#tab/Go)
+## [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ImportSnippet":::
 
 :::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ChaosHandlerSnippet":::
 
-## [Python](#tab/Python)
+## [Java](#tab/java)
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ChaosHandlerSnippet":::
+
+## [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
@@ -61,6 +57,10 @@ adapter = GraphRequestAdapter(auth_provider=authProvider, client=http_client)
 client = GraphServiceClient(adapter)
 ```
 
+## [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/customClients.ts" id="ChaosHandlerSnippet":::
+
 ---
 
 ## Configuring the HTTP proxy for the client
@@ -72,21 +72,17 @@ Some environments require client applications to use a HTTP proxy before they ca
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CustomClients.cs" id="ProxySnippet":::
 
-## [TypeScript](#tab/typeScript)
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/customClients.ts" id="ProxySnippet":::
-
-## [Java](#tab/java)
-
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ProxySnippet":::
-
-## [Go](#tab/Go)
+## [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ImportSnippet":::
 
 :::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ProxySnippet":::
 
-## [Python](#tab/Python)
+## [Java](#tab/java)
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ProxySnippet":::
+
+## [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
@@ -115,5 +111,9 @@ adapter = GraphRequestAdapter(auth_provider=authProvider, client=http_client)
 # Create Graph client
 client = GraphServiceClient(adapter)
 ```
+
+## [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/customClients.ts" id="ProxySnippet":::
 
 ---
