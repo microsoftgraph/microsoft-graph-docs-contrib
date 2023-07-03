@@ -57,8 +57,11 @@ If successful, this method returns `HTTP 200 OK` response code and a [searchResp
 The following example shows how to search for expected connector items.
 
 #### Request
-
-```HTTP
+<!-- {
+  "blockType": "request",
+  "name": "search_query_v1_e1"
+} -->
+```http
 POST https://graph.microsoft.com/v1.0/search/query
 Content-type: application/json
 
@@ -88,8 +91,12 @@ Content-type: application/json
 #### Response
 
 The following example shows the response.
-
-```HTTP
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.searchResponse"
+} -->
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -123,8 +130,11 @@ Content-type: application/json
 The following example shows how to use the queryable property **createdBy** to retrieve all files created by a user.
 
 #### Request
-
-```HTTP
+<!-- {
+  "blockType": "request",
+  "name": "search_query_v1_e2"
+} -->
+```http
 POST https://graph.microsoft.com/v1.0/search/query
 Content-type: application/json
 
@@ -146,10 +156,15 @@ Content-type: application/json
 ```
 
 #### Response
-
 The following example shows the response.
 
-```HTTP
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.searchResponse"
+} -->
+
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

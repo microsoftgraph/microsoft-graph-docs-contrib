@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [appManagementPolicy](../resources/appManagementPolicy.md) object.
+Delete an [appManagementPolicy](../resources/appmanagementpolicy.md) object.
 
 ## Permissions
 
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -106,7 +106,6 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
