@@ -7,13 +7,15 @@ author: jasonjoh
 
 # Install the Microsoft Graph command-line interface (CLI)
 
+<!-- markdownlint-disable MD051 -->
+
 The Microsoft Graph command-line interface (CLI) is published on [GitHub](https://github.com/microsoftgraph/msgraph-cli/releases/latest).
 
 [!INCLUDE [cli-preview](../../includes/cli-preview.md)]
 
 ## Installation
 
-### Windows[#tab/windows]
+### [Windows](#tab/windows)
 
 1. Download the .zip file beginning with **msgraph-cli-win-x64** from the **Assets** section of the page.
 1. Extract the contents of the file into a directory.
@@ -30,7 +32,7 @@ The Microsoft Graph command-line interface (CLI) is published on [GitHub](https:
 
 1. Add the full path to the directory containing **mgc.exe**.
 
-### Linux[#tab/linux]
+### [Linux](#tab/linux)
 
 1. Download the .tar.gz file beginning with **msgraph-cli-linux-x64** from the **Assets** section of the page.
 1. Extract the contents of the file into a directory.
@@ -74,7 +76,7 @@ The following steps are required on Linux distributions that do not have a deskt
     > [!NOTE]
     > The previous commands must be run every time the system restarts.
 
-### macOS[#tab/macos]
+### [macOS](#tab/macos)
 
 1. Download the .tar.gz file beginning with **msgraph-cli-osx-x64** (for Intel-based Mac) or **msgraph-cli-osx-arm** (for M1 or M2-based Mac) from the **Assets** section of the page.
 1. Extract the contents of the file into a directory.

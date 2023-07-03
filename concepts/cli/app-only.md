@@ -11,7 +11,7 @@ The Microsoft Graph command-line interface (CLI) supports two types of authentic
 
 [!INCLUDE [cli-preview](../../includes/cli-preview.md)]
 
-> [!IMPORTANT]
+> [!NOTE]
 > App-only access grants permissions directly to an application, and requires an administrator to consent to the required permission scopes. For more information, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
 In this topic, you'll configure app-only access for a simple script to list users and groups in your Microsoft 365 tenant.
