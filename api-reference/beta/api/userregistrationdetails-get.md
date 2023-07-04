@@ -67,7 +67,7 @@ The following is an example of the request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrationDetails/{userRegistrationDetailsId}
+GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrationDetails/86462606-fde0-4fc4-9e0c-a20eb73e54c6
 ```
 
 # [C#](#tab/csharp)
