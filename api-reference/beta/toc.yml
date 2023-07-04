@@ -11901,8 +11901,6 @@ items:
         - name: Organization settings
           href: resources/organizationSettings.md
           items:
-          - name: Get org settings
-            href: api/organizationSettings-get.md
           - name: App settings for Microsoft 365 data (preview)
             items:
             - name: App data access settings
