@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List tasks
+# List task changes
 
 Namespace: microsoft.graph
 
