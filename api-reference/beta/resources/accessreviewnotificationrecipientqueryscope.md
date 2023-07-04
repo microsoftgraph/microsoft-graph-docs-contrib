@@ -1,13 +1,13 @@
 ---
-title: "accessReviewnotificationrecipientqueryscope resource type"
-description: "Represents users who will receive notifications for access reviews."
+title: "accessReviewNotificationRecipientQueryScope resource type"
+description: "Specifies a static list of recipients (for example, specific users, group owners, or group members) to receive access review notifications."
 author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# accessReviewnotificationrecipientqueryscope resource type
+# accessReviewNotificationRecipientQueryScope resource type
 
 Namespace: microsoft.graph
 
@@ -20,6 +20,7 @@ Specifies a static list of recipients (for example, specific users, group owners
 Inherits from [accessReviewNotificationRecipientScope](../resources/accessreviewnotificationrecipientscope.md).
 
 ## Properties
+
 | Property | Type | Description |
 | :-------------------------| :---------- | :---------- |
 | query | String | This represents the query for who the recipients are. For example, `/groups/{group id}/members` for group members and `/users/{user id}` for a specific user. |
@@ -28,10 +29,13 @@ Inherits from [accessReviewNotificationRecipientScope](../resources/accessreview
 
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewNotificationRecipientQueryScope"
@@ -41,7 +45,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.accessReviewNotificationRecipientQueryScope",
   "query": "String",
-  "queryType": "String",
-  "queryRoot": "String"
+  "queryRoot": "String",
+  "queryType": "String"
 }
 ```
