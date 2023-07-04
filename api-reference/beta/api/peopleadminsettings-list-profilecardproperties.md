@@ -19,11 +19,11 @@ Get a collection of [profileCardProperty](../resources/profilecardproperty.md) r
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.Read.All                    |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
+| Permission type                        | Permissions (from least to most privileged)             |
+|:---------------------------------------|:--------------------------------------------------------|
+| Delegated (work or school account)     | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All   |
+| Delegated (personal Microsoft account) | Not supported.                                          |
+| Application                            | Not supported.                                          |
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a tenant administrator or global administrator role.
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{organizationId}/settings/profileCardProperties
+GET /admin/people/profileCardProperties
 ```
 
 ## Optional query parameters
@@ -67,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties
+GET https://graph.microsoft.com/beta/admin/people/profileCardProperties
 ```
 
 # [C#](#tab/csharp)
@@ -136,15 +136,3 @@ Content-type: application/json
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List profileCardProperties",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
-
