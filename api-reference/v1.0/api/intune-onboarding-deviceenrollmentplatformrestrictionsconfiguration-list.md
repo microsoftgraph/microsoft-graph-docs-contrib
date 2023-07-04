@@ -60,24 +60,28 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurat
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list-list-deviceenrollmentplatformrestrictionsconfigurations-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

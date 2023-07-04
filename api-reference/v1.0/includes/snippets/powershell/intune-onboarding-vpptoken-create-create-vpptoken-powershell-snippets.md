@@ -20,6 +20,6 @@ $params = @{
 	countryOrRegion = "Country Or Region value"
 }
 
-New-MgDeviceAppMgtVppToken -BodyParameter $params
+New-MgDeviceAppManagementVppToken -BodyParameter $params
 
 ```

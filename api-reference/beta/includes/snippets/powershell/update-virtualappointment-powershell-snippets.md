@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.virtualAppointment"
@@ -27,6 +27,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgUserOnlineMeetingVirtualAppointment -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+Update-MgBetaUserOnlineMeetingVirtualAppointment -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
 
 ```

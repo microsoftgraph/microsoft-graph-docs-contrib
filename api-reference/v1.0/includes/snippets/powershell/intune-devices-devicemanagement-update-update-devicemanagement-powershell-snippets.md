@@ -11,58 +11,58 @@ $params = @{
 	subscriptionState = "active"
 	deviceProtectionOverview = @{
 		"@odata.type" = "microsoft.graph.deviceProtectionOverview"
-		totalReportedDeviceCount = 
-		inactiveThreatAgentDeviceCount = 
-		unknownStateThreatAgentDeviceCount = 
-		pendingSignatureUpdateDeviceCount = 
-		cleanDeviceCount = 
-		pendingFullScanDeviceCount = 
-		pendingRestartDeviceCount = 
-		pendingManualStepsDeviceCount = 
-		pendingOfflineScanDeviceCount = 
-		criticalFailuresDeviceCount = 
-		pendingQuickScanDeviceCount = 
+		totalReportedDeviceCount = 8
+		inactiveThreatAgentDeviceCount = 14
+		unknownStateThreatAgentDeviceCount = 2
+		pendingSignatureUpdateDeviceCount = 1
+		cleanDeviceCount = 0
+		pendingFullScanDeviceCount = 10
+		pendingRestartDeviceCount = 9
+		pendingManualStepsDeviceCount = 13
+		pendingOfflineScanDeviceCount = 13
+		criticalFailuresDeviceCount = 11
+		pendingQuickScanDeviceCount = 11
 	}
 	windowsMalwareOverview = @{
 		"@odata.type" = "microsoft.graph.windowsMalwareOverview"
-		malwareDetectedDeviceCount = 
-		totalMalwareCount = 
-		totalDistinctMalwareCount = 
+		malwareDetectedDeviceCount = 10
+		totalMalwareCount = 1
+		totalDistinctMalwareCount = 9
 		malwareStateSummary = @(
 			@{
 				"@odata.type" = "microsoft.graph.windowsMalwareStateCount"
 				state = "actionFailed"
-				deviceCount = 
-				malwareDetectionCount = 
-				distinctMalwareCount = 
-				lastUpdateDateTime = "2016-12-31T23:58:21.6459442-08:00"
+				deviceCount = 11
+				malwareDetectionCount = 5
+				distinctMalwareCount = 4
+				lastUpdateDateTime = [System.DateTime]::Parse("2016-12-31T23:58:21.6459442-08:00")
 			}
 		)
 		malwareSeveritySummary = @(
 			@{
 				"@odata.type" = "microsoft.graph.windowsMalwareSeverityCount"
 				severity = "low"
-				malwareDetectionCount = 
-				distinctMalwareCount = 
-				lastUpdateDateTime = "2016-12-31T23:58:21.6459442-08:00"
+				malwareDetectionCount = 5
+				distinctMalwareCount = 4
+				lastUpdateDateTime = [System.DateTime]::Parse("2016-12-31T23:58:21.6459442-08:00")
 			}
 		)
 		malwareExecutionStateSummary = @(
 			@{
 				"@odata.type" = "microsoft.graph.windowsMalwareExecutionStateCount"
 				executionState = "blocked"
-				deviceCount = 
-				lastUpdateDateTime = "2016-12-31T23:58:21.6459442-08:00"
+				deviceCount = 11
+				lastUpdateDateTime = [System.DateTime]::Parse("2016-12-31T23:58:21.6459442-08:00")
 			}
 		)
 		malwareCategorySummary = @(
 			@{
 				"@odata.type" = "microsoft.graph.windowsMalwareCategoryCount"
 				category = "adware"
-				deviceCount = 
-				activeMalwareDetectionCount = 
-				distinctActiveMalwareCount = 
-				lastUpdateDateTime = "2016-12-31T23:58:21.6459442-08:00"
+				deviceCount = 11
+				activeMalwareDetectionCount = 11
+				distinctActiveMalwareCount = 10
+				lastUpdateDateTime = [System.DateTime]::Parse("2016-12-31T23:58:21.6459442-08:00")
 			}
 		)
 		malwareNameSummary = @(
@@ -70,16 +70,16 @@ $params = @{
 				"@odata.type" = "microsoft.graph.windowsMalwareNameCount"
 				malwareIdentifier = "Malware Identifier value"
 				name = "Name value"
-				deviceCount = 
-				lastUpdateDateTime = "2016-12-31T23:58:21.6459442-08:00"
+				deviceCount = 11
+				lastUpdateDateTime = [System.DateTime]::Parse("2016-12-31T23:58:21.6459442-08:00")
 			}
 		)
 		osVersionsSummary = @(
 			@{
 				"@odata.type" = "microsoft.graph.osVersionCount"
 				osVersion = "Os Version value"
-				deviceCount = 
-				lastUpdateDateTime = "2016-12-31T23:58:21.6459442-08:00"
+				deviceCount = 11
+				lastUpdateDateTime = [System.DateTime]::Parse("2016-12-31T23:58:21.6459442-08:00")
 			}
 		)
 	}

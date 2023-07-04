@@ -50,6 +50,6 @@ $params = @{
 	versionCode = "Version Code value"
 }
 
-New-MgDeviceAppMgtMobileApp -BodyParameter $params
+New-MgDeviceAppManagementMobileApp -BodyParameter $params
 
 ```

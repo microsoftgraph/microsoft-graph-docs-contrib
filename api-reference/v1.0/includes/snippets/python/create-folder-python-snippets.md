@@ -13,7 +13,9 @@ request_body.name = 'New Folder'
 folder = Folder()
 
 request_body.folder = folder
-additional_data = {'@microsoft_graph_conflict_behavior': 'rename'}
+additional_data = [
+'@microsoft_graph_conflict_behavior' => 'rename', 
+];
 request_body.additional_data(additional_data)
 
 

@@ -14,6 +14,6 @@ $params = @{
 	installIntent = "required"
 }
 
-New-MgDeviceAppMgtManagedEBookAssignment -ManagedEBookId $managedEBookId -BodyParameter $params
+New-MgDeviceAppManagementManagedEBookAssignment -ManagedEBookId $managedEBookId -BodyParameter $params
 
 ```

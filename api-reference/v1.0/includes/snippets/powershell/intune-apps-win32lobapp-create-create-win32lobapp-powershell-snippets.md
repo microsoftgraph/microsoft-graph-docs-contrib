@@ -71,6 +71,6 @@ $params = @{
 	minimumSupportedWindowsRelease = "Minimum Supported Windows Release value"
 }
 
-New-MgDeviceAppMgtMobileApp -BodyParameter $params
+New-MgDeviceAppManagementMobileApp -BodyParameter $params
 
 ```

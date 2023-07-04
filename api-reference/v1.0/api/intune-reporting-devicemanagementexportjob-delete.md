@@ -60,16 +60,20 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/reports/exportJobs/{dev
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-reporting-devicemanagementexportjob-delete-delete-devicemanagementexportjob-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-reporting-devicemanagementexportjob-delete-delete-devicemanagementexportjob-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-reporting-devicemanagementexportjob-delete-delete-devicemanagementexportjob-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-reporting-devicemanagementexportjob-delete-delete-devicemanagementexportjob-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/intune-reporting-devicemanagementexportjob-delete-delete-devicemanagementexportjob-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-reporting-devicemanagementexportjob-delete-delete-devicemanagementexportjob-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-reporting-devicemanagementexportjob-delete-delete-devicemanagementexportjob-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

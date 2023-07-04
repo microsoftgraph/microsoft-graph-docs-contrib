@@ -58,6 +58,6 @@ $params = @{
 	faceIdBlocked = $true
 }
 
-Update-MgDeviceAppMgtDefaultManagedAppProtection -DefaultManagedAppProtectionId $defaultManagedAppProtectionId -BodyParameter $params
+Update-MgDeviceAppManagementDefaultManagedAppProtection -DefaultManagedAppProtectionId $defaultManagedAppProtectionId -BodyParameter $params
 
 ```
