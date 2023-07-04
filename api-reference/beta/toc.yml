@@ -15095,26 +15095,33 @@ items:
           items:
           - name: Overview
             href: resources/authenticationmethods-usage-insights-overview.md
-          - name: Credential User Registration Count
+          - name: Credential usage summary
+            href: resources/credentialusagesummary.md
+            items:
+            - name: List
+              href: api/reportroot-getcredentialusagesummary.md            
+          - name: Credential user registration count
             href: resources/credentialuserregistrationcount.md
             items:
             - name: Get
               href: api/reportroot-getcredentialuserregistrationcount.md
-          - name: Credential User Registration Details (deprecated)
+          - name: Credential user registration details (deprecated)
             href: resources/credentialuserregistrationdetails.md
             items:
             - name: List
               href: api/reportroot-list-credentialuserregistrationdetails.md
-          - name: User Credential Usage Details
+          - name: User credential usage details
             href: resources/usercredentialusagedetails.md
             items:
             - name: List
               href: api/reportroot-list-usercredentialusagedetails.md
-          - name: Credential Usage Summary
-            href: resources/credentialusagesummary.md
+          - name: User registration details
+            href: resources/userregistrationdetails.md
             items:
             - name: List
-              href: api/reportroot-getcredentialusagesummary.md
+              href: api/authenticationmethodsroot-list-userregistrationdetails.md
+            - name: Get
+              href: api/userregistrationdetails-get.md
           - name: Users registered by feature
             href: resources/userregistrationfeaturesummary.md
             items:
@@ -15125,13 +15132,6 @@ items:
             items:
             - name: List
               href: api/authenticationmethodsroot-usersregisteredbymethod.md
-          - name: User registration details
-            href: resources/userregistrationdetails.md
-            items:
-            - name: List
-              href: api/authenticationmethodsroot-list-userregistrationdetails.md
-            - name: Get
-              href: api/userregistrationdetails-get.md
         - name: Service principal activity
           href: resources/serviceprincipalsigninactivity.md
           items:
