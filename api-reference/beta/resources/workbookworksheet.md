@@ -34,6 +34,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |[List](../api/worksheet-list.md) | [workbookWorksheet](workbookworksheet.md) collection |Get worksheet object collection. |
 |[Add](../api/worksheetcollection-add.md)|[workbookWorksheet](workbookworksheet.md)|Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. |
 |[List pivotTables](../api/workbookworksheet-list-pivottables.md) |[workbookPivotTable](workbookpivottable.md) collection| Get a workbookPivotTable object collection.|
+|[List tasks](../api/workbookworksheet-list-tasks.md)|[workbookDocumentTask](workbookdocumenttask.md) collection|Get the workbookDocumentTask object collection.|
 
 ## Properties
 | Property	   | Type	|Description|
