@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureADAuthentication",
           "ChangeType": "Addition",
-          "Description": "Added the [azureADAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/azureADAuthentication?view=graph-rest-beta) resource",
+          "Description": "Added the [azureADAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/azureADAuthentication?view=graph-rest-beta) resource.",
           "Target": "azureADAuthentication"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serviceLevelAgreementRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceLevelAgreementRoot](https://learn.microsoft.com/en-us/graph/api/resources/serviceLevelAgreementRoot?view=graph-rest-beta) resource",
+          "Description": "Added the [serviceLevelAgreementRoot](https://learn.microsoft.com/en-us/graph/api/resources/serviceLevelAgreementRoot?view=graph-rest-beta) resource.",
           "Target": "serviceLevelAgreementRoot"
         }
       ],
