@@ -23,10 +23,9 @@ Inherits from [accessReviewNotificationRecipientScope](../resources/accessreview
 
 | Property | Type | Description |
 | :-------------------------| :---------- | :---------- |
-| query | String | This represents the query for who the recipients are. For example, `/groups/{group id}/members` for group members and `/users/{user id}` for a specific user. |
+| query | String | Represents the query for who the recipients are. For example, `/groups/{group id}/members` for group members and `/users/{user id}` for a specific user. |
+| queryRoot | String | In the scenario where reviewers need to be specified dynamically, indicates the relative source of the query. This property is only required if a relative query (that is, `./manager`) is specified. |
 | queryType | String | Indicates the type of query. Allowed value is `MicrosoftGraph`. |
-| queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query that is, `./manager`) is specified. |
-
 
 ## Relationships
 
