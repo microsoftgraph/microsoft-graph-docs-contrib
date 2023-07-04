@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (work or school account)     | PeopleSettings.Read.All                     |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization/{organizationId}/settings/profileCardProperties/{id}
+PATCH /admin/people/profileCardProperties/{id}
 ```
 
 ## Request headers
@@ -44,7 +44,7 @@ PATCH /organization/{organizationId}/settings/profileCardProperties/{id}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -68,7 +68,7 @@ The following example adds a localized label "Kostnads Senter" for the locale "n
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/CustomAttribute1
+PATCH https://graph.microsoft.com/beta/admin/people/profileCardProperties/CustomAttribute1
 Content-type: application/json
 
 {

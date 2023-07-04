@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (work or school account)     | PeopleSettings.Read.All                     |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /organization/{organizationId}/settings/profileCardProperties/{directoryPropertyName-Value}
+DELETE /admin/people/profileCardProperties/{directoryPropertyName-Value}
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ The following example shows how to delete the attribute named "Fax" from the pro
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/fax
+DELETE https://graph.microsoft.com/beta/admin/people/profileCardProperties/fax
 ```
 
 # [C#](#tab/csharp)

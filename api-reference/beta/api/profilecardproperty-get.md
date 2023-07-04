@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.Read.All                    |
+| Delegated (work or school account)     | PeopleSettings.Read.All                     |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
@@ -32,12 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{organizationId}/settings/profileCardProperties/{id}
+GET /admin/people/profileCardProperties/{id}
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports Select, Filter and OrderBy OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +66,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/{id}
+GET https://graph.microsoft.com/beta/admin/people/profileCardProperties/{id}
 ```
 
 # [C#](#tab/csharp)
