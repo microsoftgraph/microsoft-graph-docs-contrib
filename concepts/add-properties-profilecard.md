@@ -45,7 +45,7 @@ The following table shows how the Azure AD attributes correspond with properties
 | StateOrProvince | state |
 | Alias | mailNickname |
 
-You can add any of these attributes to the profile card by configuring your [organization settings](/graph/api/resources/organizationsettings) and adding the attribute as the **directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
+You can add any of these attributes to the profile card by configuring your [people admin settings](/graph/api/resources/peopleadminsettings) and adding the attribute as the **directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
 
 > [!IMPORTANT]
 > When adding an attribute to profile card, it takes up to 24 hours for the addition to be displayed.
@@ -55,7 +55,7 @@ You can add any of these attributes to the profile card by configuring your [org
 The following example displays the `Alias` attribute on the profile card.
 
 ``` http
-POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
+POST https://graph.microsoft.com/beta/admin/people/profileCardProperties
 Content-Type: application/json
 
 {
@@ -77,7 +77,7 @@ Content-type: application/json
 
 ## Add a custom attribute
 
-You can add any of the 15 Azure AD [custom extension attributes](/graph/api/resources/onpremisesextensionattributes) to users' profile cards by configuring your organization settings and [adding the corresponding value as a profileCardProperty](/graph/api/organizationsettings-post-profilecardproperties) in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
+You can add any of the 15 Azure AD [custom extension attributes](/graph/api/resources/onpremisesextensionattributes) to users' profile cards by configuring your organization settings and [adding the corresponding value as a profileCardProperty](/graph/api/peopleadminsettings-post-profilecardproperties) in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
 
 It takes up to 24 hours for the changes to show on profile cards.
 
@@ -110,7 +110,7 @@ The following example adds the first Azure AD custom extension attribute to the 
 #### Request
 
 ``` http
-POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
+POST https://graph.microsoft.com/beta/admin/people/profileCardProperties
 Content-Type: application/json
 
 {
@@ -166,7 +166,7 @@ The following example deletes the custom attribute `customAttribute5` from the o
 #### Request
 
 ``` http
-DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/customAttribute5
+DELETE https://graph.microsoft.com/beta/admin/people/profileCardProperties/customAttribute5
 ```
 
 #### Response
