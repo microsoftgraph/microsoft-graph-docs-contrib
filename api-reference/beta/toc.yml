@@ -18081,6 +18081,8 @@ items:
           href: api/worksheet-list-charts.md
         - name: Add chart
           href: api/worksheet-post-charts.md
+        - name: List tasks
+          href: api/workbookworksheet-list-tasks.md
       - name: Range
         href: resources/workbookrange.md
         items:
@@ -18161,3 +18163,10 @@ items:
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md
+      - name: Workbook Document Task
+        href: resources/workbookdocumenttask.md
+        items:
+        - name: List Task Changes
+          href: api/workbookdocumenttask-list-changes.md
+      - name: Workbook Document Task Change
+        href: resources/workbookdocumenttaskchange.md
