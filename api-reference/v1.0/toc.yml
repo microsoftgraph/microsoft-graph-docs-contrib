@@ -183,6 +183,18 @@ items:
             href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
           - name: App-only authentication
             href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+      - name: Use the CLI (preview)
+        items:
+          - name: CLI overview
+            href: /graph/cli/overview?context=graph/api/1.0
+          - name: Install the CLI
+            href: /graph/cli/installation?context=graph/api/1.0
+          - name: Get started
+            href: /graph/cli/get-started?context=graph/api/1.0
+          - name: Navigate the CLI
+            href: /graph/cli/navigating?context=graph/api/1.0
+          - name: App-only authentication
+            href: /graph/cli/app-only?context=graph/api/1.0
   - name: Use the toolkit
     items:
       - name: Overview
