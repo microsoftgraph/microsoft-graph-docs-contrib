@@ -45,18 +45,19 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [workbookDocumentTask](../resources/workbookDocumentTask.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [workbookDocumentTaskChange](../resources/workbookDocumentTaskChange.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
 
-# [HTTP](#tab/http)
+# HTTP
 <!-- {
   "blockType": "request",
-  "name": "get_tasks"
+  "name": "get_changes"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/tasks
+GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/tasks/{id}/changes
+GET https://graph.microsoft.com/beta/drive/root/workbook/comments/{id}/task/changes
 ```
 
 ---
@@ -72,6 +73,7 @@ Here is an example of the response. Note: The response object shown here might b
 } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "value": [
         {

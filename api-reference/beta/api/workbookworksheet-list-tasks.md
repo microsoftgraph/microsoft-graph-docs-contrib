@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and collection of [w
 ##### Request
 Here is an example of the request.
 
-# [HTTP](#tab/http)
+# HTTP
 <!-- {
   "blockType": "request",
   "name": "get_tasks"
@@ -72,6 +72,7 @@ Here is an example of the response. Note: The response object shown here might b
 } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "value": [
         { 
