@@ -74,8 +74,6 @@ If successful, this method returns a `200 OK` response code and an updated [iosV
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_books_iosvppebook_update_update_iosvppebook" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}
 Content-type: application/json
@@ -109,8 +107,6 @@ Content-length: 792
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.iosVppEBook" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
