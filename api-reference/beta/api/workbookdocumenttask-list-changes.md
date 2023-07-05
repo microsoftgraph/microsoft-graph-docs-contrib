@@ -57,7 +57,6 @@ Here is an example of the request.
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/tasks/{id}/changes
-GET https://graph.microsoft.com/beta/drive/root/workbook/comments/{id}/task/changes
 ```
 
 ---
