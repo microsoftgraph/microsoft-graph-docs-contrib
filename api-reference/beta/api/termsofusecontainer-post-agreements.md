@@ -107,6 +107,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-agreement-from-agreements-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-agreement-from-agreements-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Teams/Item/Schedule/TimeCards/Item/StartBreak"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewStartBreakPostRequestBody()
+requestBody := graphteams.NewStartBreakPostRequestBody()
 notes := graphmodels.NewItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 
 notes.SetContentType(&contentType) 

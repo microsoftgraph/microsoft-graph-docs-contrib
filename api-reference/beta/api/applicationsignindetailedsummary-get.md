@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{i
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationsignindetailedsummary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-applicationsignindetailedsummary-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

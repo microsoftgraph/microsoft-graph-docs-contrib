@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/1
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-countrynamedlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-countrynamedlocation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

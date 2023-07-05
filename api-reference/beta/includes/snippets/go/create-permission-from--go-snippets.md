@@ -18,7 +18,6 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewPermission()
 roles := []string {
 	"write",
-
 }
 requestBody.SetRoles(roles)
 
@@ -33,7 +32,6 @@ identitySet.SetApplication(application)
 
 grantedToIdentities := []graphmodels.IdentitySetable {
 	identitySet,
-
 }
 requestBody.SetGrantedToIdentities(grantedToIdentities)
 

@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//search"
+	  graphmodelssearch "github.com/microsoftgraph/msgraph-beta-sdk-go/models/search"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewBookmark()
+requestBody := graphmodelssearch.NewBookmark()
 description := "Book a fancy vacation in Tuscany or browse museums in Florence."
 requestBody.SetDescription(&description) 
 

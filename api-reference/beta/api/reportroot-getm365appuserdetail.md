@@ -161,6 +161,10 @@ GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')?$
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getm365appusercoundetail-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/reportroot-getm365appusercoundetail-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -228,6 +232,10 @@ GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')?$
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getm365appusercountdetail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/reportroot-getm365appusercountdetail-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

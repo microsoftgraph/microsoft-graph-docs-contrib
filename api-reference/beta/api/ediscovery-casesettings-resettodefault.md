@@ -90,6 +90,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/setti
 [!INCLUDE [sample-code](../includes/snippets/powershell/settings-resettodefault-for-caseid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/settings-resettodefault-for-caseid-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

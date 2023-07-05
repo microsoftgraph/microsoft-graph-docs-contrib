@@ -19,13 +19,11 @@ requestBody := graphmodels.NewApplication()
 web := graphmodels.NewWebApplication()
 redirectUris := []string {
 	"https://signin.aws.amazon.com/saml",
-
 }
 web.SetRedirectUris(redirectUris)
 requestBody.SetWeb(web)
 identifierUris := []string {
 	"https://signin.aws.amazon.com/saml",
-
 }
 requestBody.SetIdentifierUris(identifierUris)
 

@@ -82,12 +82,20 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 [!INCLUDE [sample-code](../includes/snippets/php/synchronizationschema-filteroperators-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationschema-filteroperators-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/synchronizationschema-filteroperators-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
 The following is an example of a response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -206,7 +214,13 @@ non-string type names like "Integer" or "Boolean"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: synchronizationschema_filteroperators/container/arity:\r\n       Expected type String but actual was Binary. Property: arity, actual value: 'Binary'"
+    "Error: synchronizationschema_filteroperators/container/arity:\r\n       Expected type String but actual was Binary. Property: arity, actual value: 'Binary'",
+    "Error: microsoft.graph.microsoft.graph/servicePrincipals:
+      /servicePrincipals/{var}/synchronization/jobs/{var}/schema/filterOperators
+      Uri path requires navigating into unknown object hierarchy: missing property 'jobs' on 'synchronization'. Possible issues:
+  	 1) Doc bug where 'jobs' isn't defined on the resource.
+  	 2) Doc bug where 'jobs' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'synchronization' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
   ]
 }
 -->

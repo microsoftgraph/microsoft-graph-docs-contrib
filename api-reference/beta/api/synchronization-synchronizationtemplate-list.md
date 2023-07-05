@@ -85,11 +85,15 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-synchronizationtemplate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-synchronizationtemplate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
 The following is an example of a response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,18 +102,19 @@ The following is an example of a response.
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
 
 {
-    "value": [
-        {
-            "id": "Slack",
-            "factoryTag": "CustomSCIM",
-            "schema": {
-                    "directories": [],
-                    "synchronizationRules": []
-                    }
-        }
-    ]
+  "value": [
+    {
+      "id": "Slack",
+      "factoryTag": "CustomSCIM",
+      "schema": {
+        "directories": [],
+        "synchronizationRules": []
+      }
+    }
+  ]
 }
 ```
 

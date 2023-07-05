@@ -30,7 +30,6 @@ keyValuePair.SetValue(&value)
 
 parameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
-
 }
 requestBody.SetParameters(parameters)
 vendorInformation := graphmodels.NewSecurityVendorInformation()

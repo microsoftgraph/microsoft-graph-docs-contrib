@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/organization
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-organization-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-organization-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -110,6 +114,7 @@ Content-type: application/json
             "displayName": "Contoso",
             "isMultipleDataLocationsForServicesEnabled": null,
             "marketingNotificationEmails": [],
+            "onPremisesLastPasswordSyncDateTime": "2021-08-02T10:30:06Z",
             "onPremisesLastSyncDateTime": null,
             "onPremisesSyncEnabled": null,
             "partnerTenantType": "ResellerPartnerDelegatedAdmin",

@@ -38,7 +38,6 @@ gradingCategories := []graphmodels.EducationGradingCategoryable {
 	educationGradingCategory,
 	educationGradingCategory1,
 	educationGradingCategory2,
-
 }
 requestBody.SetGradingCategories(gradingCategories)
 

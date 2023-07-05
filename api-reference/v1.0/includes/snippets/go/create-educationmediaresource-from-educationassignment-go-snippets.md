@@ -18,13 +18,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := false
 requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
-resource := graphmodels.NewEducationResource()
+resource := graphmodels.NewEducationMediaResource()
 displayName := "homework example.PNG"
 resource.SetDisplayName(&displayName) 
-additionalData := map[string]interface{}{
-	"fileUrl" : "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RMUWOKAGSJZ6BHINJVKNMOOJABF", 
-}
-resource.SetAdditionalData(additionalData)
+fileUrl := "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RMUWOKAGSJZ6BHINJVKNMOOJABF"
+resource.SetFileUrl(&fileUrl) 
 requestBody.SetResource(resource)
 
 result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Resources().Post(context.Background(), requestBody, nil)

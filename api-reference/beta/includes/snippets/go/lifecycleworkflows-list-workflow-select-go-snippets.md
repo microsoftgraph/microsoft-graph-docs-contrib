@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
 	  //other-imports
 )
 
@@ -18,11 +18,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "category eq 'leaver'"
 
-requestParameters := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"id","category","displayName","isEnabled","isSchedulingEnabled"},
 }
-configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

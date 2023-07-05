@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/983
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-contentapproval-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-contentapproval-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

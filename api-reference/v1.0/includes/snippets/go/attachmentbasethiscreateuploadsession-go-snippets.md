@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Me/Todo/Lists/Item/Tasks/Item/Attachments/CreateUploadSession"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCreateUploadSessionPostRequestBody()
+requestBody := graphusers.NewItemCreateUploadSessionPostRequestBody()
 attachmentInfo := graphmodels.NewAttachmentInfo()
 attachmentType := graphmodels.FILE_ATTACHMENTTYPE 
 attachmentInfo.SetAttachmentType(&attachmentType) 

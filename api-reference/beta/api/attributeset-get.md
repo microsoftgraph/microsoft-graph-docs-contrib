@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Get attributeSet
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Read the properties and relationships of an [attributeSet](../resources/attributeset.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -23,14 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
 
-The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
-
-+ Attribute Assignment Reader
-+ Attribute Definition Reader
-+ Attribute Assignment Administrator
-+ Attribute Definition Administrator
-
-By default, Global Administrator and other administrator roles do not have permissions to define, read, or assign custom security attributes.
+[!INCLUDE [rbac-customsecurityattibutes-apis-definition-assignment-read](../includes/rbac-for-apis/rbac-customsecurityattibutes-apis-definition-assignment-read.md)]
 
 ## HTTP request
 
@@ -43,14 +38,17 @@ GET /directory/attributeSets/{attributeSetId}
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -59,16 +57,15 @@ If successful, this method returns a `200 OK` response code and an [attributeSet
 
 ## Examples
 
-### Example: Get an attribute set
+### Request
 
 The following example gets a single attribute set named `Engineering`.
-
-#### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_attributeset_single"
+  "name": "get_attributeset_single",
+  "sampleKeys": ["Engineering"]
 }
 -->
 ``` http
@@ -99,9 +96,15 @@ GET https://graph.microsoft.com/beta/directory/attributeSets/Engineering
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-attributeset-single-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-attributeset-single-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### Response
+### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

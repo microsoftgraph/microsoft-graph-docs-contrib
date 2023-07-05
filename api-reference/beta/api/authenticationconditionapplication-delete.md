@@ -53,6 +53,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 #### Request
 The following is an example of a request. `63856651-13d9-4784-9abf-20758d509e19` representes the **appId** of the application, also known as the client ID, not the object ID.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_includeApplications"
@@ -62,6 +63,15 @@ The following is an example of a request. `63856651-13d9-4784-9abf-20758d509e19`
 DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/conditions/applications/includeApplications/63856651-13d9-4784-9abf-20758d509e19
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-includeapplications-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-includeapplications-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following is an example of the response

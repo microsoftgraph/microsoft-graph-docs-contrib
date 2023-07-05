@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/schemaExtensions/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-schemaextension-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-schemaextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//externalConnectors"
+	  graphmodelsexternalconnectors "github.com/microsoftgraph/msgraph-beta-sdk-go/models/externalconnectors"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewIdentity()
+requestBody := graphmodelsexternalconnectors.NewIdentity()
 id := "e5477431-1038-484e-bf69-1dfedb97a110"
 requestBody.SetId(&id) 
 type := graphmodels.EXTERNALGROUP_IDENTITYTYPE 

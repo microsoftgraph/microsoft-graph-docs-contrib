@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
@@ -19,11 +19,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("ConsistencyLevel", "eventual")
 
-requestParameters := &graphconfig.MeRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.MeRequestBuilderGetQueryParameters{
 	Expand: [] string {"manager($levels=max;$select=id,displayName)"},
 	Select: [] string {"id","displayName"},
 }
-configuration := &graphconfig.MeRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.MeRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

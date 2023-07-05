@@ -72,29 +72,24 @@ durationBeforeEscalation , err := abstractions.ParseISODuration("PT0S")
 accessPackageApprovalStage.SetDurationBeforeEscalation(&durationBeforeEscalation) 
 
 
-subjectSet := graphmodels.NewSubjectSet()
-additionalData := map[string]interface{}{
-	"managerLevel" : int32(1) , 
-}
-subjectSet.SetAdditionalData(additionalData)
+subjectSet := graphmodels.NewRequestorManager()
+managerLevel := int32(1)
+subjectSet.SetManagerLevel(&managerLevel) 
 
 primaryApprovers := []graphmodels.SubjectSetable {
 	subjectSet,
-
 }
 accessPackageApprovalStage.SetPrimaryApprovers(primaryApprovers)
 
 
-subjectSet := graphmodels.NewSubjectSet()
-additionalData := map[string]interface{}{
-	"userId" : "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2", 
-	"description" : "user", 
-}
-subjectSet.SetAdditionalData(additionalData)
+subjectSet := graphmodels.NewSingleUser()
+userId := "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2"
+subjectSet.SetUserId(&userId) 
+description := "user"
+subjectSet.SetDescription(&description) 
 
 fallbackPrimaryApprovers := []graphmodels.SubjectSetable {
 	subjectSet,
-
 }
 accessPackageApprovalStage.SetFallbackPrimaryApprovers(fallbackPrimaryApprovers)
 escalationApprovers := []graphmodels.SubjectSetable {
@@ -108,7 +103,6 @@ accessPackageApprovalStage.SetFallbackEscalationApprovers(fallbackEscalationAppr
 
 stages := []graphmodels.AccessPackageApprovalStageable {
 	accessPackageApprovalStage,
-
 }
 requestApprovalSettings.SetStages(stages)
 requestBody.SetRequestApprovalSettings(requestApprovalSettings)

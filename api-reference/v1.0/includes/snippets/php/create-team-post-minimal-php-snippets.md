@@ -14,7 +14,7 @@ $requestBody->setDisplayName('My Sample Team');
 
 $requestBody->setDescription('My Sample Team’s Description');
 
-$membersConversationMember1 = new ConversationMember();
+$membersConversationMember1 = new AadUserConversationMember();
 $membersConversationMember1->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember1->setRoles(['owner', ]);

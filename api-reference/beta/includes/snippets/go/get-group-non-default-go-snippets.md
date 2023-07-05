@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.GroupItemRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.GroupItemRequestBuilderGetQueryParameters{
 	Select: [] string {"allowExternalSenders","autoSubscribeNewMembers","isSubscribedByMail","unseenCount"},
 }
-configuration := &graphconfig.GroupItemRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

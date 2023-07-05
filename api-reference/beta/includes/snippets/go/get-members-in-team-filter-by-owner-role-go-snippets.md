@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
 	  //other-imports
 )
 
@@ -16,12 +16,12 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "roles/any"
+requestFilter := "roles/any(r:r eq 'owner')"
 
-requestParameters := &graphconfig.TeamItemMembersRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamItemMembersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TeamItemMembersRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamItemMembersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

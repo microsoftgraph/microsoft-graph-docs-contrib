@@ -145,6 +145,10 @@ GET https://graph.microsoft.com/beta/me/insights/used
 [!INCLUDE [sample-code](../includes/snippets/php/get-mymodifieddocuments-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-mymodifieddocuments-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -221,6 +225,10 @@ GET https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAcce
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-mymodifiedandvieweddocuments-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-mymodifiedandvieweddocuments-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

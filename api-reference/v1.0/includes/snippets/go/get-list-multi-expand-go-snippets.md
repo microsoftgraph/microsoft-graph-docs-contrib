@@ -8,18 +8,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/sites"
+	  graphsites "github.com/microsoftgraph/msgraph-sdk-go/sites"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.SiteItemListItemRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.SiteItemListItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","name","lastModifiedDateTime"},
 	Expand: [] string {"columns(select=name,description)","items",")"},
 }
-configuration := &graphconfig.SiteItemListItemRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SiteItemListItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

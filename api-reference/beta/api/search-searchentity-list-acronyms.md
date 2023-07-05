@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/search/acronyms
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-acronym-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-acronym-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

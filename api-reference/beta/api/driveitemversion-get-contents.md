@@ -87,6 +87,10 @@ GET /me/drive/items/{item-id}/versions/{version-id}/content
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-version-contents-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-version-contents-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

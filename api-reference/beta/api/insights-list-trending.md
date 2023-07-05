@@ -122,6 +122,10 @@ GET https://graph.microsoft.com/beta/me/insights/trending
 [!INCLUDE [sample-code](../includes/snippets/php/get-me-trending-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-me-trending-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
