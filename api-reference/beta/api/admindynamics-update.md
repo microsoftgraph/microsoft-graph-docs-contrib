@@ -67,9 +67,9 @@ PATCH https://graph.microsoft.com/beta/admin/dynamics
 Content-Type: application/json
 
 {
-  "@odata.type": "#adminDynamics",
+  "@odata.type": "#microsoft.graph.adminDynamics",
   "customerVoice": {
-    "@odata.type": "customerVoiceSettings",
+    "@odata.type": "microsoft.graph.customerVoiceSettings",
     "isRestrictedSurveyAccessEnabled": "false",
     "isRecordIdentityByDefaultEnabled": "false",
     "isInOrgFormsPhishingScanEnabled": "false"

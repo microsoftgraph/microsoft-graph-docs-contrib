@@ -68,7 +68,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "adminTodo"
+  "@odata.type": "microsoft.graph.adminTodo"
 }
 -->
 ``` http
@@ -77,10 +77,10 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#adminTodo",
+    "@odata.type": "#microsoft.graph.adminTodo",
     "id": "9b13e840-31a8-2ed4-57d8-22f42c130334",
     "settings": {
-      "@odata.type": "todoSettings",
+      "@odata.type": "microsoft.graph.todoSettings",
       "isPushNotificationEnabled": true,
       "isExternalJoinEnabled": true,
       "isExternalShareEnabled": true

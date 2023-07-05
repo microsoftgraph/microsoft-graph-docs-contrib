@@ -38,14 +38,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "adminDynamics",
+  "@odata.type": "microsoft.graph.adminDynamics",
   "baseType": "entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#adminDynamics",
+  "@odata.type": "#microsoft.graph.adminDynamics",
   "id": "String (identifier)",
   "customerVoice": {
     "@odata.type": "customerVoiceSettings"

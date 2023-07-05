@@ -67,9 +67,9 @@ PATCH https://graph.microsoft.com/beta/admin/appsAndServices
 Content-Type: application/json
 
 {
-  "@odata.type": "#adminAppsAndServices",
+  "@odata.type": "#microsoft.graph.adminAppsAndServices",
   "settings": {
-    "@odata.type": "appsAndServicesSettings",
+    "@odata.type": "microsoft.graph.appsAndServicesSettings",
     "isOfficeStoreEnabled": false,
     "isAppAndServicesTrialEnabled": false
   }

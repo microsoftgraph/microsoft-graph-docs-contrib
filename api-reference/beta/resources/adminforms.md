@@ -38,14 +38,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "adminForms",
+  "@odata.type": "microsoft.graph.adminForms",
   "baseType": "entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#adminForms",
+  "@odata.type": "#microsoft.graph.adminForms",
   "id": "String (identifier)",
   "settings": {
     "@odata.type": "formsSettings"

@@ -38,14 +38,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "adminAppsAndServices",
+  "@odata.type": "microsoft.graph.adminAppsAndServices",
   "baseType": "entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#adminAppsAndServices",
+  "@odata.type": "#microsoft.graph.adminAppsAndServices",
   "id": "String (identifier)",
   "settings": {
     "@odata.type": "appsAndServicesSettings"

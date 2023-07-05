@@ -29,12 +29,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "customerVoiceSettings"
+  "@odata.type": "microsoft.graph.customerVoiceSettings"
 }
 -->
 ``` json
 {
-  "@odata.type": "#customerVoiceSettings",
+  "@odata.type": "#microsoft.graph.customerVoiceSettings",
   "isRestrictedSurveyAccessEnabled": "Boolean",
   "isRecordIdentityByDefaultEnabled": "Boolean",
   "isInOrgFormsPhishingScanEnabled": "Boolean"

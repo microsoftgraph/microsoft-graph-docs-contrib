@@ -68,7 +68,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "adminAppsAndServices"
+  "@odata.type": "microsoft.graph.adminAppsAndServices"
 }
 -->
 ``` http
@@ -77,10 +77,10 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#adminAppsAndServices",
+    "@odata.type": "#microsoft.graph.adminAppsAndServices",
     "id": "c079f617-c04e-c14f-0750-cb2f87064342",
     "settings": {
-      "@odata.type": "appsAndServicesSettings",
+      "@odata.type": "microsoft.graph.appsAndServicesSettings",
       "isOfficeStoreEnabled": false,
       "isAppAndServicesTrialEnabled": true
     }

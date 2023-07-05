@@ -67,9 +67,9 @@ PATCH https://graph.microsoft.com/beta/admin/forms
 Content-Type: application/json
 
 {
-  "@odata.type": "#adminForms",
+  "@odata.type": "#microsoft.graph.adminForms",
   "settings": {
-    "@odata.type": "formsSettings",
+    "@odata.type": "microsoft.graph.formsSettings",
     "isExternalSendFormEnabled": true,
     "isExternalShareCollaborationEnabled": false,
     "isExternalShareResultEnabled": false,

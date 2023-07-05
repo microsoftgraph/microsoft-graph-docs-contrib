@@ -67,9 +67,9 @@ PATCH https://graph.microsoft.com/beta/admin/todo
 Content-Type: application/json
 
 {
-  "@odata.type": "#adminTodo",
+  "@odata.type": "#microsoft.graph.adminTodo",
   "settings": {
-    "@odata.type": "todoSettings",
+    "@odata.type": "microsoft.graph.todoSettings",
     "isPushNotificationEnabled": true,
     "isExternalJoinEnabled": false,
     "isExternalShareEnabled": true

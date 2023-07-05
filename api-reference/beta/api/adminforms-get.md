@@ -68,7 +68,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "adminForms"
+  "@odata.type": "microsoft.graph.adminForms"
 }
 -->
 ``` http
@@ -77,10 +77,10 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#adminForms",
+    "@odata.type": "#microsoft.graph.adminForms",
     "id": "7ef97113-d231-e67c-535d-7c051d9e22be",
     "settings": {
-      "@odata.type": "formsSettings",
+      "@odata.type": "microsoft.graph.formsSettings",
       "isExternalSendFormEnabled": true,
       "isExternalShareCollaborationEnabled": false,
       "isExternalShareResultEnabled": false,

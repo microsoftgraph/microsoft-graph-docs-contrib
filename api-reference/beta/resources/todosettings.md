@@ -29,12 +29,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "todoSettings"
+  "@odata.type": "microsoft.graph.todoSettings"
 }
 -->
 ``` json
 {
-  "@odata.type": "#todoSettings",
+  "@odata.type": "#microsoft.graph.todoSettings",
   "isPushNotificationEnabled": "Boolean",
   "isExternalJoinEnabled": "Boolean",
   "isExternalShareEnabled": "Boolean"
