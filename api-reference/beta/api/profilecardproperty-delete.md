@@ -2,7 +2,7 @@
 title: "Delete profileCardProperty"
 description: "Delete a profileCardProperty object and remove all customizations from the profile card."
 ms.localizationpriority: medium
-author: "kevinbellinger"
+author: "rwaithera"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /admin/people/profileCardProperties/{directoryPropertyName-Value}
+DELETE /admin/people/profileCardProperties/{id}
 ```
 
 ## Request headers
@@ -55,7 +55,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following example shows how to delete the attribute named "Fax" from the profile card for the organization.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_profilecardproperty"
@@ -65,35 +64,6 @@ The following example shows how to delete the attribute named "Fax" from the pro
 DELETE https://graph.microsoft.com/beta/admin/people/profileCardProperties/fax
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-profilecardproperty-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-profilecardproperty-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-profilecardproperty-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-profilecardproperty-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-profilecardproperty-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-profilecardproperty-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/delete-profilecardproperty-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

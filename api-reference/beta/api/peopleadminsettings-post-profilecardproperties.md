@@ -2,7 +2,7 @@
 title: "Create profileCardProperty"
 description: "Use this API to create a new profileCardProperty."
 ms.localizationpriority: medium
-author: "kevinbellinger"
+author: "rwaithera"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
@@ -48,6 +48,13 @@ POST /admin/people/profileCardProperties
 
 In the request body, supply a JSON representation of a [profileCardProperty](../resources/profilecardproperty.md) object.
 
+You can specify the following properties when creating a **profileCardProperty**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|directoryPropertyName|String|Contains the name of the directory property which is intended to surface on the profile card.|
+|annotations|[profileCardAnnotation](../resources/profilecardannotation.md) collection|Contains any alternative or localized labels an administrator has chosen to specify.|
+
 ## Response
 
 If successful, this method returns `201 Created` response code and a new [profileCardProperty](../resources/profilecardproperty.md) object in the response body.
@@ -57,13 +64,10 @@ If successful, this method returns `201 Created` response code and a new [profil
 ### Request
 
 The following is an example of the request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_profilecardproperty_from_organizationsettings"
+  "name": "create_profilecardproperty"
 }-->
-
 ```http
 POST https://graph.microsoft.com/beta/admin/people/profileCardProperties
 Content-type: application/json
@@ -84,35 +88,6 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-profilecardproperty-from-organizationsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-profilecardproperty-from-organizationsettings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-profilecardproperty-from-organizationsettings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-profilecardproperty-from-organizationsettings-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-profilecardproperty-from-organizationsettings-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-profilecardproperty-from-organizationsettings-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-profilecardproperty-from-organizationsettings-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

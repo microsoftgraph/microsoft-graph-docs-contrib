@@ -2,7 +2,7 @@
 title: "Update profileCardProperty"
 description: "Update the properties of a profileCardProperty object."
 ms.localizationpriority: medium
-author: "kevinbellinger"
+author: "rwaithera"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
@@ -43,8 +43,8 @@ PATCH /admin/people/profileCardProperties/{id}
 | Content-Type  | application/json. Required. |
 
 ## Request body
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -61,7 +61,6 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 
 The following example adds a localized label "Kostnads Senter" for the locale "no-NB".
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_profilecardproperty"
@@ -85,35 +84,6 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-profilecardproperty-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-profilecardproperty-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-profilecardproperty-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-profilecardproperty-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-profilecardproperty-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-profilecardproperty-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-profilecardproperty-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

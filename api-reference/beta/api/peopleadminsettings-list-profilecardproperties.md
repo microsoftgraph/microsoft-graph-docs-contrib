@@ -2,7 +2,7 @@
 title: "List profileCardProperties"
 description: "Retrieve a list of profilecardproperty objects."
 ms.localizationpriority: medium
-author: "kevinbellinger"
+author: "rwaithera"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
@@ -37,14 +37,13 @@ GET /admin/people/profileCardProperties
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports Select, Filter and OrderBy OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name          |Description                  |
 |:--------------|:----------------------------|
 | Authorization | Bearer {token}. Required.   |
-| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -57,62 +56,25 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-
 The following is an example of the request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_profilecardproperties"
+  "name": "list_profilecardproperties"
 }-->
-
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/admin/people/profileCardProperties
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-profilecardproperties-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-profilecardproperties-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-profilecardproperties-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-profilecardproperties-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-profilecardproperties-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-profilecardproperties-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-profilecardproperties-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
-
 The following is an example of the response.
-
 > **Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.profileCardProperty",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

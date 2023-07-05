@@ -1,7 +1,7 @@
 ---
 title: "peopleAdminSettings resource type"
 description: "Represents a setting to control people related admin settings in the tenant"
-author: "aymen-ms"
+author: "rwaithera"
 ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: resourcePageType
@@ -31,7 +31,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card. [List profileCardProperties](../api/peopleadminsettings-list-profilecardproperties.md) returns the properties configured for profile cards for the organization.|
+|profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.|
+|pronouns|[pronounsSettings](../resources/pronounssettings.md)|Represents administrator settings that manage the support of pronouns in an organization.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
