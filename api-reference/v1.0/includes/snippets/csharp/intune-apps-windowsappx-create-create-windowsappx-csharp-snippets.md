@@ -38,9 +38,9 @@ var requestBody = new WindowsAppX
 	MinimumSupportedOperatingSystem = new WindowsMinimumOperatingSystem
 	{
 		OdataType = "microsoft.graph.windowsMinimumOperatingSystem",
-		V8_0 = true,
-		V8_1 = true,
-		V10_0 = true,
+		V80 = true,
+		V81 = true,
+		V100 = true,
 	},
 	IdentityVersion = "Identity Version value",
 };

@@ -11,6 +11,6 @@ $params = @{
 	displayName = "Display Name value"
 }
 
-New-MgDeviceAppMgtMobileAppCategory -BodyParameter $params
+New-MgDeviceAppManagementMobileAppCategory -BodyParameter $params
 
 ```
