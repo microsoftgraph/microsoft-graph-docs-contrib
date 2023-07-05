@@ -2,7 +2,7 @@
 title: "Update phoneAuthenticationMethod"
 description: "Update a user's phone number associated with a phoneAuthenticationMethod object."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "jpettere"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -21,16 +21,6 @@ If a user is enabled by policy to use SMS to sign in and the `mobile` number is 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Permissions acting on self
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
-
-### Permissions acting on other users
-
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
@@ -38,6 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | UserAuthenticationMethod.ReadWrite.All |
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
+
+Users without one of the supported Azure AD roles cannot update their own phone authentication method.
 
 ## HTTP request
 
