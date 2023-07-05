@@ -31,24 +31,52 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{ediscoveryCustodianId}/updateIndex
+POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/updateIndex
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|ids|String collection|The IDs of custodians to index. Optional. Maximum number of IDs that can be provided is 1000.|
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
-(REMOVE LATER RESPONSE)
+If successful, this action returns a 202 Accepted response code.
+
 ## Examples
 
 ### Request
-The following is an example of a request.
+
+Example 1: Bulk index custodians.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "ediscoverycustodianthis.updateindex"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/updateIndex
+Content-Type: application/json
+
+{
+  "ids": [
+    "7f697316-43ed-48e1-977f-261be050db93", "b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8"
+  ]
+}
+```
+
+Example 2: Index single custodian.
 
 # [HTTP](#tab/http)
 <!-- {
