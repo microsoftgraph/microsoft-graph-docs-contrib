@@ -24,14 +24,14 @@ Represents a file hash value that is reported as part of the security detection 
 
 ### fileHashAlgorithm values
 
-| Member             | Description                                                    |
-|:-------------------|:---------------------------------------------------------------|
-| Unknown            | Unknown hash algorithm, used mostly for forward compatibility. |
-| MD5                | MD5 hash type.                                                 |
-| SHA1               | SHA1 hash type.                                                |
-| SHA256             | SHA256 hash type.                                              |
-| SHA256AC           | SHA256 Authenticode hash type.                                 |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.              |
+| Member                 | Description                                                    |
+|:-----------------------|:---------------------------------------------------------------|
+| unknown                | Unknown hash algorithm, used mostly for forward compatibility. |
+| md5                    | MD5 hash type.                                                 |
+| sha1                   | SHA1 hash type.                                                |
+| sha256                 | SHA256 hash type.                                              |
+| sha256ac               | SHA256 Authenticode hash type.                                 |
+| unknownFutureValue     | Evolvable enumeration sentinel value. Do not use.              |
 
 
 ## Relationships
