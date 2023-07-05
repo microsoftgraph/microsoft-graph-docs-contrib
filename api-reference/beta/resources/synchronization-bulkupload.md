@@ -1,6 +1,6 @@
 ---
 title: "bulkUpload resource type"
-description: "Represents capability of the synchronization service to process bulk uploads."
+description: "Represents capability of the synchronization service to process bulk uploads. The bulk upload request payload should be compliant with the [SCIM bulk request](https://www.rfc-editor.org/rfc/rfc7644.html#section-3.7) format."
 author: "cmmdesai"
 ms.localizationpriority: medium
 ms.prod: "applications"
