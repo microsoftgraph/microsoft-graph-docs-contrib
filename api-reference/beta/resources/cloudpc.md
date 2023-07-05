@@ -48,6 +48,8 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Get shift work access state](../api/cloudpc-getshiftworkcloudpcaccessstate.md)|[shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values)|Get the access state of the shift work Cloud PC. The possible values are: {unassigned, noLicensesAvailable, activationFailed, active, activating, waitlisted, unknownFutureValue, standbyMode}. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values): {standbyMode}.|
 |[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents which failed to install on the [cloudPC](../resources/cloudpc.md).|
+|[Bulk resize](../api/cloudpc-retrypartneragentinstallation.md)|[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed validation (cloudPC: validateBulkResize). If any devices cannot be resized, they will be labeled as "resize failed," while the remaining devices will be `provisioned` for the resize process.|
+|[Validate bulk resize](../api/cloudpc-validatebulkresize.md)|[cloudPcResizeValidateResult](../resources/cloudPcResizeValidationResult.md) collection|Validate that a set of [cloudPC](../resources/cloudpc.md) devices meet the requirements to be bulk resized.|
 
 ## Properties
 
@@ -68,13 +70,14 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |onPremisesConnectionName|String|The Azure network connection that is applied during the provisioning of Cloud PCs.|
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of the operating system (OS) to provision on Cloud PCs. Possible values are: `windows10`, `windows11`, and `unknownFutureValue`.|
 |partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
+|powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The power state of a Cloud PC. The possible values are: `running`, `poweredOff` and `unknown`. This property only supports shift work Cloud PCs.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Default value is `dedicated`. |
 |servicePlanId|String|The service plan ID of the Cloud PC.|
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
-|status|[cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. The possible values are: `notProvisioned`, `provisioning`, `provisioned`, `inGracePeriod`, `deprovisioning`, `failed`, `provisionedWithWarnings`, `resizing`, `pendingProvision`, `restoring`, and `unknownFutureValue`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this `[evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`: `movingRegion`.|
+|status|[microsoft.graph.cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`, `restoring`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, and `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
@@ -106,7 +109,15 @@ The following table lists the members of an `[evolvable enumeration](/graph/best
 |restoring|The Cloud PC is restoring.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 |movingRegion|Indicates that the Cloud PC is being moved from one region to another.|
+|resizePendingLicense|Indicates that the Cloud PC resize process has been initiated but cannot be completed because the target license hasn't been identified. It is currently awaiting customer action to resolve the licensing issue.|
 
+### cloudPcPowerState values
+
+|Member|Description|
+|:---|:---|
+|running|The Cloud PC status is running.|
+|poweredOff|The Cloud PC status is power off.|
+|unknown|The Cloud PC status is unknown.|
 
 ### shiftWorkCloudPcAccessState values
 The following table lists the members of an [evolvable enumeration](#shiftworkcloudpcaccessstate-values). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `standbyMode`.
@@ -154,6 +165,7 @@ The following is a JSON representation of the resource.
   "managedDeviceId": "String",
   "managedDeviceName": "String",
   "onPremisesConnectionName": "String",
+  "powerState": "String",
   "osVersion": "String",
   "partnerAgentInstallResults": "String",
   "provisioningPolicyId": "String",

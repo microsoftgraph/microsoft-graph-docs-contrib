@@ -49,16 +49,12 @@ If successful, this action returns a `200 OK` response code and a Int32 in the r
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_onboarding_organization_setmobiledevicemanagementauthority_setmobiledevicemanagementauthority_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/organization/{organizationId}/setMobileDeviceManagementAuthority
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

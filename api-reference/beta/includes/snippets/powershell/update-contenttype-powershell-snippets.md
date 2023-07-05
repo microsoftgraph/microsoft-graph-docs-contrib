@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Sites
+Import-Module Microsoft.Graph.Beta.Sites
 
 $params = @{
 	name = "updatedCt"
@@ -49,6 +49,6 @@ $params = @{
 	}
 }
 
-Update-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+Update-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 
 ```

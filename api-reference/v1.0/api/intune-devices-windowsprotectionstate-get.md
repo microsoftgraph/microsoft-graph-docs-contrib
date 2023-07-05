@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/windowsProtectionState
-GET /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
 ```
 
 ## Optional query parameters
@@ -53,16 +52,12 @@ If successful, this method returns a `200 OK` response code and [windowsProtecti
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_devices_windowsprotectionstate_get_get_windowsprotectionstate" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/windowsProtectionState
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windowsProtectionState" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

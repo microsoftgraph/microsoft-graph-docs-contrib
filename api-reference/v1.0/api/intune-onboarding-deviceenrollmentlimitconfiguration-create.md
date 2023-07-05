@@ -64,8 +64,6 @@ If successful, this method returns a `201 Created` response code and a [deviceEn
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_onboarding_deviceenrollmentlimitconfiguration_create_create_deviceenrollmentlimitconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
@@ -83,8 +81,6 @@ Content-length: 205
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.deviceEnrollmentLimitConfiguration" }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

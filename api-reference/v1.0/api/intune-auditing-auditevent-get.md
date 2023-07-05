@@ -52,16 +52,12 @@ If successful, this method returns a `200 OK` response code and [auditEvent](../
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_auditing_auditevent_get_get_auditevent" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.auditEvent" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

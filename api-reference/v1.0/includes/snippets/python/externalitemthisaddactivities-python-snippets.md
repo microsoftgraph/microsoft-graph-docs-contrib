@@ -30,7 +30,7 @@ request_body.activities(activitiesArray)
 
 
 
-result = await client.connections.by_connection_id('externalConnection-id').items.by_item_id('externalItem-id').microsoft_graph_external_connector_add_activities.post(request_body = request_body)
+result = await client.external.connections.by_connection_id('externalConnection-id').items.by_item_id('externalItem-id').microsoft_graph_external_connector_add_activities.post(request_body = request_body)
 
 
 ```

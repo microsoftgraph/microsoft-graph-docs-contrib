@@ -63,6 +63,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPC](../r
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpc.getProvisionedCloudPCs"
@@ -71,6 +72,32 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='30d0e128-de93-41dc-89ec-33d84bb662a0',servicePlanId='9ecf691d-8b82-46cb-b254-cd061b2c02fb')
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcgetprovisionedcloudpcs-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcgetprovisionedcloudpcs-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/cloudpcgetprovisionedcloudpcs-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcgetprovisionedcloudpcs-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/cloudpcgetprovisionedcloudpcs-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpcgetprovisionedcloudpcs-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -103,6 +130,7 @@ Content-Type: application/json
             "servicePlanName": "Cloud PC Enterprise 4vCPU/16GB/256GB",
             "servicePlanType": "enterprise",
             "status": "provisioned",
+            "powerState": "running",
             "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
             "lastModifiedDateTime": "2020-07-23T10:29:57Z",
             "statusDetails": null,
@@ -131,6 +159,7 @@ Content-Type: application/json
             "servicePlanName": "Cloud PC Enterprise 4vCPU/16GB/256GB",
             "servicePlanType": "enterprise",
             "status": "provisioned",
+            "powerState": "running",
             "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
             "lastModifiedDateTime": "2020-07-28T18:14:34Z",
             "statusDetails": null,
