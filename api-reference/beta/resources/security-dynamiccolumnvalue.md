@@ -15,8 +15,6 @@ Namespace: microsoft.graph.security
 
 Represents a dynamic column in a [row](../resources/security-huntingrowresult.md), obtained through the execution of an [advanced hunting query](../api/security-security-runhuntingquery.md).
 
-
-
 ## Properties
 None.
 
