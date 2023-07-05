@@ -1,6 +1,6 @@
 ---
 title: "dynamicColumnValue resource type"
-description: "Represent a dynamic column in a huntingRowResult row"
+description: "Represents a dynamic column in a huntingRowResult row"
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,12 +12,11 @@ doc_type: resourcePageType
 Namespace: microsoft.graph.security
 
 
-Represents a dynamic column in a [row](../resources/security-huntingrowresult.md), from running an [advanced hunting query](../api/security-security-runhuntingquery.md).
+Represents a dynamic column in a [row](../resources/security-huntingrowresult.md), obtained through the execution of an [advanced hunting query](../api/security-security-runhuntingquery.md).
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
