@@ -111,7 +111,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "entitiesSummaries",
           "ChangeType": "Addition",
-          "Description": "Added the [entitiesSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-entitiesSummaries?view=graph-rest-beta) method to the [entitiesSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-entitiesSummaries?view=graph-rest-beta) resource.",
+          "Description": "Added the [entitiesSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-entitiessummaries?view=graph-rest-beta) method to the [entitiesSummaries](https://learn.microsoft.com/en-us/graph/api/nnetworkaccess-reports-entitiessummaries?view=graph-rest-beta) resource.",
           "Target": "entitiesSummaries"
         },
         {
@@ -119,7 +119,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getCrossTenantSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [getCrossTenantSummary](https://learn.microsoft.com/en-us/graph/api/networkaccess-getCrossTenantSummary?view=graph-rest-beta) method to the [getCrossTenantSummary](https://learn.microsoft.com/en-us/graph/api/networkaccess-getCrossTenantSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the [getCrossTenantSummary](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-getcrosstenantsummary?view=graph-rest-beta) method to the [getCrossTenantSummary](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-getcrosstenantsummary?view=graph-rest-beta) resource.",
           "Target": "getCrossTenantSummary"
         },
         {
@@ -127,7 +127,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getDestinationSummaries",
           "ChangeType": "Addition",
-          "Description": "Added the [getDestinationSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-getDestinationSummaries?view=graph-rest-beta) method to the [getDestinationSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-getDestinationSummaries?view=graph-rest-beta) resource.",
+          "Description": "Added the [getDestinationSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-getdestinationsummaries?view=graph-rest-beta) method to the [getDestinationSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-getdestinationsummaries?view=graph-rest-beta) resource.",
           "Target": "getDestinationSummaries"
         },
         {
@@ -135,7 +135,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getDeviceUsageSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [getDeviceUsageSummary](https://learn.microsoft.com/en-us/graph/api/networkaccess-getDeviceUsageSummary?view=graph-rest-beta) method to the [getDeviceUsageSummary](https://learn.microsoft.com/en-us/graph/api/networkaccess-getDeviceUsageSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the [getDeviceUsageSummary](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-getdeviceusagesummary?view=graph-rest-beta) method to the [getDeviceUsageSummary](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-getdeviceusagesummary?view=graph-rest-beta) resource.",
           "Target": "getDeviceUsageSummary"
         },
         {
@@ -143,7 +143,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "transactionSummaries",
           "ChangeType": "Addition",
-          "Description": "Added the [transactionSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-transactionSummaries?view=graph-rest-beta) method to the [transactionSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-transactionSummaries?view=graph-rest-beta) resource.",
+          "Description": "Added the [transactionSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-transactionsummaries?view=graph-rest-beta) method to the [transactionSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-transactionsummaries?view=graph-rest-beta) resource.",
           "Target": "transactionSummaries"
         }
       ],
