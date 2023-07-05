@@ -11,7 +11,9 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Update an [appManagementPolicy](../resources/appManagementPolicy.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update an [appManagementPolicy](../resources/appmanagementpolicy.md) object.
 
 ## Permissions
 
@@ -44,10 +46,10 @@ PATCH /policies/appManagementPolicies/{id}
 
 | Property     | Type                                                                     | Description                                                                              |
 | :----------- | :----------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
-| displayName  | String                                                                   | The display name of the policy. Inherited from [policyBase](../resources/policybase.md). |
 | description  | String                                                                   | The description of the policy. Inherited from [policyBase](../resources/policybase.md).  |
+| displayName  | String                                                                   | The display name of the policy. Inherited from [policyBase](../resources/policybase.md). |
 | isEnabled    | Boolean                                                                  | Denotes whether the policy is enabled.                                                   |
-| restrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply to an application or service principal object.                   |
+| restrictions | [appManagementConfiguration](../resources/appmanagementconfiguration.md) | Restrictions that apply to an application or service principal object.                   |
 
 ## Response
 
@@ -59,6 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following is an example of the request.
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,12 +69,11 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}
+PATCH https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 {
     "isEnabled": false
 }
-
 ```
 
 # [C#](#tab/csharp)
@@ -111,7 +113,6 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
