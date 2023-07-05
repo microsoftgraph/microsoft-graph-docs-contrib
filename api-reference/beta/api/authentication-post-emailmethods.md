@@ -1,7 +1,7 @@
 ---
 title: "Create emailAuthenticationMethod"
 description: "Create a new emailAuthenticationMethod object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -17,16 +17,6 @@ Set a user's [emailAuthenticationMethod](../resources/emailauthenticationmethod.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Permissions acting on self
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
-
-### Permissions acting on other users
-
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
@@ -34,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | UserAuthenticationMethod.ReadWrite.All |
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
+
+Users without one of the supported Azure AD roles cannot add their own email authentication method.
 
 ## HTTP request
 
