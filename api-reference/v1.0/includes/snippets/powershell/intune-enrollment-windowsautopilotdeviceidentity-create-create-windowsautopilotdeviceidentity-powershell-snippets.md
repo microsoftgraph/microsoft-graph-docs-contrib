@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsAutopilotDeviceIdentity"
@@ -26,6 +26,6 @@ $params = @{
 	displayName = "Display Name value"
 }
 
-New-MgDeviceManagementWindowAutopilotDeviceIdentity -BodyParameter $params
+New-MgDeviceManagementWindowsAutopilotDeviceIdentity -BodyParameter $params
 
 ```

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DeviceManagement.Actions
 
-Invoke-MgUnassignDeviceManagementWindowAutopilotDeviceIdentityUserFromDevice -WindowsAutopilotDeviceIdentityId $windowsAutopilotDeviceIdentityId
+Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice -WindowsAutopilotDeviceIdentityId $windowsAutopilotDeviceIdentityId
 
 ```

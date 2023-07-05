@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
 	displayName = "Fiscal Year 2022"
@@ -15,6 +15,6 @@ $params = @{
 	}
 }
 
-New-MgExternalIndustryDataYear -BodyParameter $params
+New-MgBetaExternalIndustryDataYear -BodyParameter $params
 
 ```

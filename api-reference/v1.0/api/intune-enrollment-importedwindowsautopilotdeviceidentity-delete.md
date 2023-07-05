@@ -60,24 +60,28 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilo
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-enrollment-importedwindowsautopilotdeviceidentity-delete-delete-importedwindowsautopilotdeviceidentity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-enrollment-importedwindowsautopilotdeviceidentity-delete-delete-importedwindowsautopilotdeviceidentity-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-enrollment-importedwindowsautopilotdeviceidentity-delete-delete-importedwindowsautopilotdeviceidentity-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-enrollment-importedwindowsautopilotdeviceidentity-delete-delete-importedwindowsautopilotdeviceidentity-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-enrollment-importedwindowsautopilotdeviceidentity-delete-delete-importedwindowsautopilotdeviceidentity-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-enrollment-importedwindowsautopilotdeviceidentity-delete-delete-importedwindowsautopilotdeviceidentity-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-enrollment-importedwindowsautopilotdeviceidentity-delete-delete-importedwindowsautopilotdeviceidentity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-enrollment-importedwindowsautopilotdeviceidentity-delete-delete-importedwindowsautopilotdeviceidentity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-enrollment-importedwindowsautopilotdeviceidentity-delete-delete-importedwindowsautopilotdeviceidentity-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-enrollment-importedwindowsautopilotdeviceidentity-delete-delete-importedwindowsautopilotdeviceidentity-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

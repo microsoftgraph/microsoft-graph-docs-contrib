@@ -63,24 +63,28 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{devi
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-appledevicefeaturesconfigurationbase-get-get-appledevicefeaturesconfigurationbase-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -93,6 +93,10 @@ Content-length: 278
 }
 ```
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-reporting-devicemanagementreports-getconfigurationpolicynoncompliancesummaryreport-getconfigurationpolicynoncompliancesummaryreport-action-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/intune-reporting-devicemanagementreports-getconfigurationpolicynoncompliancesummaryreport-getconfigurationpolicynoncompliancesummaryreport-action-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
