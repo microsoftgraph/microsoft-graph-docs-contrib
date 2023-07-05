@@ -24,7 +24,7 @@ This post off-boarding scenario will run a scheduled workflow and accomplish the
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ The tenant you want to use to preview the Lifecycle Workflows feature with an Azure AD Premium P2 license enabled.
++ Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Micorosft Azure AD](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Lifecycle Administrator or Global Administrator Azure AD role.
 + Grant yourself the following *LifecycleWorkflows.ReadWrite.All* delegated permission.
 + Create a test user account that you'll use to represent an employee leaving your organization. This test user account will be deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
@@ -127,7 +127,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/tutorial-lifecycle-workflows-scheduledleaver-create-workflow-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -574,6 +574,6 @@ HTTP/1.1 204 No Content
 
 ## See also
 
-- [Automate employee offboarding tasks after their last day of work with Azure portal (preview)](/azure/active-directory/governance/tutorial-scheduled-leaver-portal)
+- [Automate employee offboarding tasks after their last day of work with Azure portal](/azure/active-directory/governance/tutorial-scheduled-leaver-portal)
 - [Overview of Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
 - [Overview of reporting in Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)

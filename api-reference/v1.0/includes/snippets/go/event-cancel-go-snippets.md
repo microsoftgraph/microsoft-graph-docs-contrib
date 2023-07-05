@@ -15,7 +15,7 @@ import (
 graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewCancelPostRequestBody()
+requestBody := graphusers.NewItemCancelPostRequestBody()
 comment := "Cancelling for this week due to all hands"
 requestBody.SetComment(&comment) 
 

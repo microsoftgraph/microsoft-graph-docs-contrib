@@ -58,7 +58,7 @@ The following table shows the properties that are required when you create the u
 |anomalyId|String|The unique identifier of the anomaly.|
 |anomalyOnDeviceFirstOccurrenceDateTime|DateTimeOffset|Indicates the first occurance date and time for the anomaly on the device.|
 |anomalyOnDeviceLatestOccurrenceDateTime|DateTimeOffset|Indicates the latest occurance date and time for the anomaly on the device.|
-
+|correlationGroupId|String|The unique identifier of the correlation group.|
 
 
 ## Response
@@ -71,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAnomalyDevice
 Content-type: application/json
-Content-length: 511
+Content-length: 597
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAnomalyDevice",
@@ -83,7 +83,8 @@ Content-length: 511
   "osVersion": "Os Version value",
   "anomalyId": "Anomaly Id value",
   "anomalyOnDeviceFirstOccurrenceDateTime": "2017-01-01T00:00:47.4723614-08:00",
-  "anomalyOnDeviceLatestOccurrenceDateTime": "2016-12-31T23:59:20.6899849-08:00"
+  "anomalyOnDeviceLatestOccurrenceDateTime": "2016-12-31T23:59:20.6899849-08:00",
+  "correlationGroupId": "Correlation Group Id value"
 }
 ```
 
@@ -92,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 560
+Content-Length: 646
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAnomalyDevice",
@@ -105,6 +106,8 @@ Content-Length: 560
   "osVersion": "Os Version value",
   "anomalyId": "Anomaly Id value",
   "anomalyOnDeviceFirstOccurrenceDateTime": "2017-01-01T00:00:47.4723614-08:00",
-  "anomalyOnDeviceLatestOccurrenceDateTime": "2016-12-31T23:59:20.6899849-08:00"
+  "anomalyOnDeviceLatestOccurrenceDateTime": "2016-12-31T23:59:20.6899849-08:00",
+  "correlationGroupId": "Correlation Group Id value",
+  "deviceStatus": "affected"
 }
 ```

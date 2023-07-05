@@ -15,35 +15,25 @@ var requestBody = new AccessPackageAssignmentRequest
 	RequestType = AccessPackageRequestType.AdminUpdate,
 	Answers = new List<AccessPackageAnswer>
 	{
-		new AccessPackageAnswer
+		new AccessPackageAnswerString
 		{
 			OdataType = "#microsoft.graph.accessPackageAnswerString",
-			AnsweredQuestion = new AccessPackageQuestion
+			Value = "UpdatedAnswerValue",
+			AnsweredQuestion = new AccessPackageMultipleChoiceQuestion
 			{
 				OdataType = "#microsoft.graph.accessPackageMultipleChoiceQuestion",
 				Id = "8fe745e7-80b2-490d-bd22-4e708c77288c",
 			},
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"value" , "UpdatedAnswerValue"
-				},
-			},
 		},
-		new AccessPackageAnswer
+		new AccessPackageAnswerString
 		{
 			OdataType = "#microsoft.graph.accessPackageAnswerString",
+			Value = "My updated answer.",
 			DisplayValue = "This is my updated answer to the question.",
-			AnsweredQuestion = new AccessPackageQuestion
+			AnsweredQuestion = new AccessPackageTextInputQuestion
 			{
 				OdataType = "#microsoft.graph.accessPackageTextInputQuestion",
 				Id = "7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6",
-			},
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"value" , "My updated answer."
-				},
 			},
 		},
 	},

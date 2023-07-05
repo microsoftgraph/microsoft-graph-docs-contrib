@@ -365,7 +365,9 @@ Content-Type: application/json
         }
     ],
     "automaticRequestSettings": {
-        "requestAccessForAllowedTargets": true
+        "requestAccessForAllowedTargets": true,
+        "removeAccessWhenTargetLeavesAllowedTargets": true,
+        "gracePeriodBeforeAccessRemoval": "P7D"
     },
     "accessPackage": {
         "id": "8a36831e-1527-4b2b-aff2-81259a8d8e76"
@@ -556,7 +558,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageassignmentpolicy-autoassignment-v1-e4-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

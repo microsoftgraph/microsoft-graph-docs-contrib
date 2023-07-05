@@ -87,3 +87,20 @@ DELETE /me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAu/
 HTTP/1.1 204 No Content
 ```
 
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Delete baseTask",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: microsoft.graph.microsoft.graph/me:
+      /me/tasks/lists/{var}/tasks/{var}
+      Uri path requires navigating into unknown object hierarchy: missing property 'tasks' on 'user'. Possible issues:
+  	 1) Doc bug where 'tasks' isn't defined on the resource.
+  	 2) Doc bug where 'tasks' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'user' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
+}
+-->

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->places()->byPlaceId('place-id')->get();
+$result = $graphServiceClient->places()->graphRoomList()->get();
 
 
 ```

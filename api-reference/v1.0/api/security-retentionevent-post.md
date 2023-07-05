@@ -79,18 +79,7 @@ Content-length: 616
     }
   ],
   "eventTriggerDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "eventPropagationResults": [
-    {
-      "@odata.type": "microsoft.graph.security.eventPropagationResult"
-    }
-  ],
-  "eventStatus": {
-    "@odata.type": "microsoft.graph.security.retentionEventStatus"
-  },
-  "lastStatusUpdateDateTime": "String (timestamp)"
+  "retentionEventType@odata.bind": "https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventType/9eecef97-fb3c-4c68-825b-4dd74530863a"
 }
 ```
 
@@ -102,10 +91,6 @@ Content-length: 616
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-retentionevent-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-retentionevent-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-retentionevent-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -115,8 +100,6 @@ Content-length: 616
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 The following is an example of the response

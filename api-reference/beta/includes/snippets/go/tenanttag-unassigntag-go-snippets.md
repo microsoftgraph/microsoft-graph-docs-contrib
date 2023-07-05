@@ -18,7 +18,6 @@ graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes
 requestBody := graphtenantrelationships.NewUnassignTagPostRequestBody()
 tenantIds := []string {
 	"String",
-
 }
 requestBody.SetTenantIds(tenantIds)
 
