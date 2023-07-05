@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.adminTodo](../resources/admintodo.md) object.
+Read the properties and relationships of a [adminTodo](../resources/admintodo.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.adminTodo](../resources/admintodo.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [adminTodo](../resources/admintodo.md) object in the response body.
 
 ## Examples
 
@@ -63,12 +63,12 @@ GET https://graph.microsoft.com/beta/admin/todo
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.adminTodo"
+  "@odata.type": "adminTodo"
 }
 -->
 ``` http
@@ -77,10 +77,10 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.adminTodo",
+    "@odata.type": "#adminTodo",
     "id": "9b13e840-31a8-2ed4-57d8-22f42c130334",
     "settings": {
-      "@odata.type": "microsoft.graph.todoSettings",
+      "@odata.type": "todoSettings",
       "isPushNotificationEnabled": true,
       "isExternalJoinEnabled": true,
       "isExternalShareEnabled": true

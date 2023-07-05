@@ -16,19 +16,19 @@ Namespace: microsoft.graph
 Company-wide configuration for Microsoft Dynamics 365.
 
 
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminDynamics](../api/admindynamics-get.md)|[microsoft.graph.adminDynamics](../resources/admindynamics.md)|Read the properties and relationships of a [microsoft.graph.adminDynamics](../resources/admindynamics.md) object.|
-|[Update adminDynamics](../api/admindynamics-update.md)|[microsoft.graph.adminDynamics](../resources/admindynamics.md)|Update the properties and relationships of a [microsoft.graph.adminDynamics](../resources/admindynamics.md) object.|
+|[Get adminDynamics](../api/admindynamics-get.md)|[adminDynamics](../resources/admindynamics.md)|Read the properties and relationships of a [adminDynamics](../resources/admindynamics.md) object.|
+|[Update adminDynamics](../api/admindynamics-update.md)|[adminDynamics](../resources/admindynamics.md)|Update the properties and relationships of a [adminDynamics](../resources/admindynamics.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customerVoice|[microsoft.graph.customerVoiceSettings](../resources/customervoicesettings.md)|Company-wide settings for Microsoft Dynamics 365 Customer Voice.|
-|id|String|Unique Id. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|customerVoice|[customerVoiceSettings](../resources/customervoicesettings.md)|Company-wide settings for Microsoft Dynamics 365 Customer Voice.|
+|id|String|Unique ID. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
@@ -38,17 +38,17 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.adminDynamics",
-  "baseType": "microsoft.graph.entity",
+  "@odata.type": "adminDynamics",
+  "baseType": "entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.adminDynamics",
+  "@odata.type": "#adminDynamics",
   "id": "String (identifier)",
   "customerVoice": {
-    "@odata.type": "microsoft.graph.customerVoiceSettings"
+    "@odata.type": "customerVoiceSettings"
   }
 }
 ```

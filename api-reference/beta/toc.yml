@@ -12194,33 +12194,33 @@ items:
               href: api/profilecardproperty-update.md
             - name: Delete
               href: api/profilecardproperty-delete.md
-          - name: Microsoft Todo configuration
+          - name: Todo configuration (preview)
             href: resources/admintodo.md
             items:
-            - name: Get Todo configuration
+            - name: Get
               href: api/admintodo-get.md
-            - name: Update Todo configuration
+            - name: Update
               href: api/admintodo-update.md
-          - name: Microsoft Forms configuration
+          - name: Forms configuration (preview)
             href: resources/adminforms.md
             items:
-            - name: Get Forms configuration
+            - name: Get
               href: api/adminforms-get.md
-            - name: Update Forms configuration
+            - name: Update
               href: api/adminForms-update.md
-          - name: Apps and Services configuration
+          - name: Apps and Services configuration (preview)
             href: resources/adminappsandservices.md
             items:
-            - name: Get Apps and Services configuration
+            - name: Get
               href: api/adminappsandservices-get.md
-            - name: Update Apps and Services configuration
+            - name: Update
               href: api/adminappsandservices-update.md
-          - name: Microsoft Dynamics configuration
+          - name: Dynamics configuration (preview)
             href: resources/admindynamics.md
             items:
-            - name: Get Dynamics configuration
+            - name: Get
               href: api/admindynamics-get.md
-            - name: Update Dynamics configuration
+            - name: Update
               href: api/admindynamics-update.md
         - name: Organizational contacts
           href: resources/orgcontact.md

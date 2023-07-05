@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md) object.
+Update the properties of a [adminAppsAndServices](../resources/adminappsandservices.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,13 +45,13 @@ PATCH /admin/appsAndServices
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.graph.appsAndServicesSettings](../resources/appsandservicessettings.md)|Company-wide settings for apps and services. Required.|
+|settings|[appsAndServicesSettings](../resources/appsandservicessettings.md)|Company-wide settings for apps and services. Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [adminAppsAndServices](../resources/adminappsandservices.md) object in the response body.
 
 ## Examples
 
@@ -67,9 +67,9 @@ PATCH https://graph.microsoft.com/beta/admin/appsAndServices
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.adminAppsAndServices",
+  "@odata.type": "#adminAppsAndServices",
   "settings": {
-    "@odata.type": "microsoft.graph.appsAndServicesSettings",
+    "@odata.type": "appsAndServicesSettings",
     "isOfficeStoreEnabled": false,
     "isAppAndServicesTrialEnabled": false
   }

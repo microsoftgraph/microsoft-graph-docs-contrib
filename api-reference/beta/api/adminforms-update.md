@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.adminForms](../resources/adminforms.md) object.
+Update the properties of a [adminForms](../resources/adminforms.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,13 +45,13 @@ PATCH /admin/forms
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.graph.formsSettings](../resources/formssettings.md)|Company-wide settings for Microsoft Forms. Required.|
+|settings|[formsSettings](../resources/formssettings.md)|Company-wide settings for Microsoft Forms. Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.adminForms](../resources/adminforms.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [adminForms](../resources/adminforms.md) object in the response body.
 
 ## Examples
 
@@ -67,9 +67,9 @@ PATCH https://graph.microsoft.com/beta/admin/forms
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.adminForms",
+  "@odata.type": "#adminForms",
   "settings": {
-    "@odata.type": "microsoft.graph.formsSettings",
+    "@odata.type": "formsSettings",
     "isExternalSendFormEnabled": true,
     "isExternalShareCollaborationEnabled": false,
     "isExternalShareResultEnabled": false,

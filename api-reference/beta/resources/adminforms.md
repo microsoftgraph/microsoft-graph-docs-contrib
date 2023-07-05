@@ -16,19 +16,19 @@ Namespace: microsoft.graph
 Company-wide configuration for Microsoft Forms.
 
 
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminForms](../api/adminforms-get.md)|[microsoft.graph.adminForms](../resources/adminforms.md)|Read the properties and relationships of a [microsoft.graph.adminForms](../resources/adminforms.md) object.|
-|[Update adminForms](../api/adminforms-update.md)|[microsoft.graph.adminForms](../resources/adminforms.md)|Update the properties and relationships of a [microsoft.graph.adminForms](../resources/adminforms.md) object.|
+|[Get adminForms](../api/adminforms-get.md)|[adminForms](../resources/adminforms.md)|Read the properties and relationships of a [adminForms](../resources/adminforms.md) object.|
+|[Update adminForms](../api/adminforms-update.md)|[adminForms](../resources/adminforms.md)|Update the properties and relationships of a [adminForms](../resources/adminforms.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Id. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|settings|[microsoft.graph.formsSettings](../resources/formssettings.md)|Company-wide settings for Microsoft Forms.|
+|id|String|Unique ID. Inherited from [entity](../resources/entity.md).|
+|settings|[formsSettings](../resources/formssettings.md)|Company-wide settings for Microsoft Forms.|
 
 ## Relationships
 None.
@@ -38,17 +38,17 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.adminForms",
-  "baseType": "microsoft.graph.entity",
+  "@odata.type": "adminForms",
+  "baseType": "entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.adminForms",
+  "@odata.type": "#adminForms",
   "id": "String (identifier)",
   "settings": {
-    "@odata.type": "microsoft.graph.formsSettings"
+    "@odata.type": "formsSettings"
   }
 }
 ```

@@ -16,19 +16,19 @@ Namespace: microsoft.graph
 Company-wide configuration for apps and services.
 
 
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminAppsAndServices](../api/adminappsandservices-get.md)|[microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md)|Read the properties and relationships of a [microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md) object.|
-|[Update adminAppsAndServices](../api/adminappsandservices-update.md)|[microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md)|Update the properties and relationships of a [microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md) object.|
+|[Get adminAppsAndServices](../api/adminappsandservices-get.md)|[adminAppsAndServices](../resources/adminappsandservices.md)|Read the properties and relationships of a [adminAppsAndServices](../resources/adminappsandservices.md) object.|
+|[Update adminAppsAndServices](../api/adminappsandservices-update.md)|[adminAppsAndServices](../resources/adminappsandservices.md)|Update the properties and relationships of a [adminAppsAndServices](../resources/adminappsandservices.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique id. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|settings|[microsoft.graph.appsAndServicesSettings](../resources/appsandservicessettings.md)|Company-wide settings for apps and services.|
+|id|String|Unique ID. Inherited from [entity](../resources/entity.md).|
+|settings|[appsAndServicesSettings](../resources/appsandservicessettings.md)|Company-wide settings for apps and services.|
 
 ## Relationships
 None.
@@ -38,17 +38,17 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.adminAppsAndServices",
-  "baseType": "microsoft.graph.entity",
+  "@odata.type": "adminAppsAndServices",
+  "baseType": "entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.adminAppsAndServices",
+  "@odata.type": "#adminAppsAndServices",
   "id": "String (identifier)",
   "settings": {
-    "@odata.type": "microsoft.graph.appsAndServicesSettings"
+    "@odata.type": "appsAndServicesSettings"
   }
 }
 ```

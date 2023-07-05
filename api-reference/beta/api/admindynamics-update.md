@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.adminDynamics](../resources/admindynamics.md) object.
+Update the properties of a [adminDynamics](../resources/admindynamics.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,13 +45,13 @@ PATCH /admin/dynamics
 
 |Property|Type|Description|
 |:---|:---|:---|
-|customerVoice|[microsoft.graph.customerVoiceSettings](../resources/customervoicesettings.md)|Company-wide settings for Dynamics customer voice. Required.|
+|customerVoice|[customerVoiceSettings](../resources/customervoicesettings.md)|Company-wide settings for Dynamics customer voice. Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.adminDynamics](../resources/admindynamics.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [adminDynamics](../resources/admindynamics.md) object in the response body.
 
 ## Examples
 
@@ -67,9 +67,9 @@ PATCH https://graph.microsoft.com/beta/admin/dynamics
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.adminDynamics",
+  "@odata.type": "#adminDynamics",
   "customerVoice": {
-    "@odata.type": "microsoft.graph.customerVoiceSettings",
+    "@odata.type": "customerVoiceSettings",
     "isRestrictedSurveyAccessEnabled": "false",
     "isRecordIdentityByDefaultEnabled": "false",
     "isInOrgFormsPhishingScanEnabled": "false"

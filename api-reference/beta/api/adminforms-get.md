@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.adminForms](../resources/adminforms.md) object.
+Read the properties and relationships of a [adminForms](../resources/adminforms.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.adminForms](../resources/adminforms.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [adminForms](../resources/adminforms.md) object in the response body.
 
 ## Examples
 
@@ -63,12 +63,12 @@ GET https://graph.microsoft.com/beta/admin/forms
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.adminForms"
+  "@odata.type": "adminForms"
 }
 -->
 ``` http
@@ -77,10 +77,10 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.adminForms",
+    "@odata.type": "#adminForms",
     "id": "7ef97113-d231-e67c-535d-7c051d9e22be",
     "settings": {
-      "@odata.type": "microsoft.graph.formsSettings",
+      "@odata.type": "formsSettings",
       "isExternalSendFormEnabled": true,
       "isExternalShareCollaborationEnabled": false,
       "isExternalShareResultEnabled": false,

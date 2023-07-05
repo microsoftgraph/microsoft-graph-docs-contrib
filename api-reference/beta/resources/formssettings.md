@@ -33,12 +33,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.formsSettings"
+  "@odata.type": "formsSettings"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.formsSettings",
+  "@odata.type": "#formsSettings",
   "isExternalSendFormEnabled": "Boolean",
   "isExternalShareCollaborationEnabled": "Boolean",
   "isExternalShareResultEnabled": "Boolean",

@@ -16,19 +16,19 @@ Namespace: microsoft.graph
 Company-wide configuration for Microsoft Todo.
 
 
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminTodo](../api/admintodo-get.md)|[microsoft.graph.adminTodo](../resources/admintodo.md)|Read the properties and relationships of a [microsoft.graph.adminTodo](../resources/admintodo.md) object.|
-|[Update adminTodo](../api/admintodo-update.md)|[microsoft.graph.adminTodo](../resources/admintodo.md)|Update the properties and relationships of a [microsoft.graph.adminTodo](../resources/admintodo.md) object.|
+|[Get adminTodo](../api/admintodo-get.md)|[adminTodo](../resources/admintodo.md)|Read the properties and relationships of a [adminTodo](../resources/admintodo.md) object.|
+|[Update adminTodo](../api/admintodo-update.md)|[adminTodo](../resources/admintodo.md)|Update the properties and relationships of a [adminTodo](../resources/admintodo.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Id. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|settings|[microsoft.graph.todoSettings](../resources/todosettings.md)|Company-wide settings for Microsoft Todo.|
+|id|String|Unique ID. Inherited from [entity](../resources/entity.md).|
+|settings|[todoSettings](../resources/todosettings.md)|Company-wide settings for Microsoft Todo.|
 
 ## Relationships
 None.
@@ -38,17 +38,17 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.adminTodo",
-  "baseType": "microsoft.graph.entity",
+  "@odata.type": "adminTodo",
+  "baseType": "entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.adminTodo",
+  "@odata.type": "#adminTodo",
   "id": "String (identifier)",
   "settings": {
-    "@odata.type": "microsoft.graph.todoSettings"
+    "@odata.type": "todoSettings"
   }
 }
 ```

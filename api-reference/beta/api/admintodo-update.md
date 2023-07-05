@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.adminTodo](../resources/admintodo.md) object.
+Update the properties of a [adminTodo](../resources/admintodo.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,13 +45,13 @@ PATCH /admin/todo
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.graph.todoSettings](../resources/todosettings.md)|Company-wide settings for Microsoft Todo. Required.|
+|settings|[todoSettings](../resources/todosettings.md)|Company-wide settings for Microsoft Todo. Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.adminTodo](../resources/admintodo.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [adminTodo](../resources/admintodo.md) object in the response body.
 
 ## Examples
 
@@ -67,9 +67,9 @@ PATCH https://graph.microsoft.com/beta/admin/todo
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.adminTodo",
+  "@odata.type": "#adminTodo",
   "settings": {
-    "@odata.type": "microsoft.graph.todoSettings",
+    "@odata.type": "todoSettings",
     "isPushNotificationEnabled": true,
     "isExternalJoinEnabled": false,
     "isExternalShareEnabled": true
