@@ -1,6 +1,6 @@
 ---
 title: "deviceUsageSummary resource type"
-description: "Number of total, active and inactive devices in a given time range, where definition of active and inactive is based on the "discoveryPivotDateTime" parameter."
+description: "A summary for total, active and inactive devices in a given time range."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Number of total, active and inactive devices in a given time range, where definition of active and inactive is based on the "discoveryPivotDateTime" parameter.
+A summary for total, active and inactive devices in a given time range.
 
 ## Properties
 |Property|Type|Description|
