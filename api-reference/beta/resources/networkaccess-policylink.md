@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type from which the [forwardingPolicyLink](../resources/networkaccess-forwardingprofile-list-policies.md) resource type is derived.
+This is an abstract type from which the [forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) resource type is derived.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -31,7 +31,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[policy](../resources/networkaccess-policy.md)|policy|
+|policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|policy|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -12372,7 +12372,7 @@ items:
           href: resources/networkaccess-settings.md
           items: 
           - name: Cross-tenant access settings
-            href: /resources/networkaccess-crosstenantaccesssettings.md
+            href: resources/networkaccess-crosstenantaccesssettings.md
             items:
             - name: Get
               href: api/networkaccess-crosstenantaccesssettings-get.md
@@ -12412,7 +12412,7 @@ items:
             - name: Get
               href: api/networkaccess-forwardingpolicy-get.md            
             - name: List
-              href: api/networkaccess-forwardingpolicylink-list.md
+              href: api/networkaccess-forwardingprofile-list-policies.md
             - name: Update
               href: api/networkaccess-forwardingpolicylink-update.md
             - name: Delete
@@ -12421,11 +12421,11 @@ items:
             href: resources/networkaccess-forwardingrule.md
             items:
             - name: Get
-              href: api/networkaccess-forwardingrule-get.md 
+              href: api/networkaccess-policyrule-get.md 
             - name: List
-              href: api/networkaccess-forwardingrule-list.md 
+              href: api/networkaccess-policy-list-policyrules.md 
             - name: update
-              href: api/networkaccess-forwardingrule-update.md
+              href: api/networkaccess-policyrule-update.md
           - name: Microsoft 365 forwarding rule
             href: resources/networkaccess-m365forwardingrule.md
           - name: Private access forwarding rule
@@ -12438,7 +12438,7 @@ items:
           - name: IP address
             href: resources/networkaccess-ipaddress.md
           - name: IP range
-            href: resources/networkaccess-intune-iprange.md
+            href: resources/networkaccess-iprange.md
           - name: IP subnet
             href: resources/networkaccess-ipsubnet.md
           - name: URL
@@ -12453,7 +12453,7 @@ items:
           - name: Update
             href: api/networkaccess-branchsite-update.md
           - name: Delete
-            href: api/networkaccess-networkaccessroot-delete-branches.md
+            href: api/networkaccess-branchsite-delete.md
           - name: Create
             href: api/networkaccess-connectivity-post-branches.md
           - name: Create with device links

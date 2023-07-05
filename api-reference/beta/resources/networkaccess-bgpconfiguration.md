@@ -18,9 +18,9 @@ The border gateway protocol specifies the IP address and ASN to route traffic fr
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|localIpAddress| String | Specifies the BGP IP address of peer (Microsoft, in this case)                                                                               | ❌  | ✔       | ❌       |
-|peerIpAddress | String | Specifies the BGP IP address of customer's on-premise VPN router configuration                                                               | ❌  | ✔       | ❌       |
-|asn           | Int32  | Specifies the ASN of the BGP                                                                                                                 | ❌  | ✔        | ❌       |
+|localIpAddress|String| Specifies the BGP IP address of peer (Microsoft, in this case)| 
+|peerIpAddress |String| Specifies the BGP IP address of customer's on-premise VPN router configuration|
+|asn           |Int32| Specifies the ASN of the BGP|
 
 
 ## Relationships
