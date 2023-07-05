@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
             },
             "createdDateTime": "2020-09-01T18:36:49.2407981Z",
             "id":"97A21473-8339-4BF0-BCB6-F55E4909FFB8",
-            "type": "assign"
+            "type": "assign",
             "assignee":{
                 "id": "1e9955d2-6acd-45bf-86d3-b546fdc795eb",
                 "displayName": "Joe Doe",
