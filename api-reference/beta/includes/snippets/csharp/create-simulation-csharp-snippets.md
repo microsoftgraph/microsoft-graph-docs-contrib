@@ -15,18 +15,13 @@ var requestBody = new Simulation
 	AttackTechnique = SimulationAttackTechnique.CredentialHarvesting,
 	Status = SimulationStatus.Scheduled,
 	DurationInDays = 3,
-	IncludedAccountTarget = new AccountTargetContent
+	IncludedAccountTarget = new AddressBookAccountTargetContent
 	{
 		OdataType = "#microsoft.graph.addressBookAccountTargetContent",
 		Type = AccountTargetContentType.AddressBook,
-		AdditionalData = new Dictionary<string, object>
+		AccountTargetEmails = new List<string>
 		{
-			{
-				"accountTargetEmails" , new List<string>
-				{
-					"john@contoso.com",
-				}
-			},
+			"john@contoso.com",
 		},
 	},
 	AdditionalData = new Dictionary<string, object>

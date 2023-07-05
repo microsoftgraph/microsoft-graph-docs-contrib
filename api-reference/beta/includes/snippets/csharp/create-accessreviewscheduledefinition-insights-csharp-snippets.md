@@ -13,18 +13,11 @@ var requestBody = new AccessReviewScheduleDefinition
 	DisplayName = "Test create",
 	DescriptionForAdmins = "New scheduled access review",
 	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com",
-	Scope = new AccessReviewScope
+	Scope = new AccessReviewQueryScope
 	{
 		OdataType = "#microsoft.graph.accessReviewQueryScope",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"query" , "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
-			},
-			{
-				"queryType" , "MicrosoftGraph"
-			},
-		},
+		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
+		QueryType = "MicrosoftGraph",
 	},
 	Reviewers = new List<AccessReviewReviewerScope>
 	{
@@ -52,20 +45,13 @@ var requestBody = new AccessReviewScheduleDefinition
 		},
 		RecommendationInsightSettings = new List<AccessReviewRecommendationInsightSetting>
 		{
-			new AccessReviewRecommendationInsightSetting
+			new UserLastSignInRecommendationInsightSetting
 			{
 				OdataType = "#microsoft.graph.userLastSignInRecommendationInsightSetting",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"recommendationLookBackDuration" , "P30D"
-					},
-					{
-						"signInScope" , "tenant"
-					},
-				},
+				RecommendationLookBackDuration = TimeSpan.Parse("P30D"),
+				SignInScope = UserSignInRecommendationScope.Tenant,
 			},
-			new AccessReviewRecommendationInsightSetting
+			new GroupPeerOutlierRecommendationInsightSettings
 			{
 				OdataType = "#microsoft.graph.groupPeerOutlierRecommendationInsightSettings",
 			},

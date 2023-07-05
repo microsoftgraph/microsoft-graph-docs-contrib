@@ -12,15 +12,12 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationMethodConfiguration()
-additionalData := map[string]interface{}{
-	isUsableOnce := true
+isUsableOnce := true
 requestBody.SetIsUsableOnce(&isUsableOnce) 
-}
-requestBody.SetAdditionalData(additionalData)
 
 result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurations().ByAuthenticationMethodConfigurationId("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
 

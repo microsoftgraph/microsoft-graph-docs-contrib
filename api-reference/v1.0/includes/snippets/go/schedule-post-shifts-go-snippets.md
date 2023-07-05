@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewShift()
@@ -49,7 +49,6 @@ shiftActivity.SetDisplayName(&displayName)
 
 activities := []graphmodels.ShiftActivityable {
 	shiftActivity,
-
 }
 sharedShift.SetActivities(activities)
 requestBody.SetSharedShift(sharedShift)
@@ -80,7 +79,6 @@ shiftActivity.SetDisplayName(&displayName)
 
 activities := []graphmodels.ShiftActivityable {
 	shiftActivity,
-
 }
 draftShift.SetActivities(activities)
 requestBody.SetDraftShift(draftShift)

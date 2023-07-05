@@ -33,8 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /deviceAppManagement/mobileApps/{mobileAppId}
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## Request headers

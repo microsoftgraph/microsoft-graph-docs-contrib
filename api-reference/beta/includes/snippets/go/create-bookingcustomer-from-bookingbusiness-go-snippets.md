@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewBookingCustomer()
@@ -56,7 +56,6 @@ physicalAddress1.SetType(&type)
 addresses := []graphmodels.PhysicalAddressable {
 	physicalAddress,
 	physicalAddress1,
-
 }
 requestBody.SetAddresses(addresses)
 
@@ -75,7 +74,6 @@ phone1.SetType(&type)
 phones := []graphmodels.Phoneable {
 	phone,
 	phone1,
-
 }
 requestBody.SetPhones(phones)
 

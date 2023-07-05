@@ -34,6 +34,20 @@ $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setIncludeTar
 $registrationEnforcement->setAuthenticationMethodsRegistrationCampaign($registrationEnforcementAuthenticationMethodsRegistrationCampaign);
 
 $requestBody->setRegistrationEnforcement($registrationEnforcement);
+$reportSuspiciousActivitySettings = new ReportSuspiciousActivitySettings();
+$reportSuspiciousActivitySettings->setState(new AdvancedConfigState('enabled'));
+
+$reportSuspiciousActivitySettingsIncludeTarget = new IncludeTarget();
+$reportSuspiciousActivitySettingsIncludeTarget->setTargetType(new AuthenticationMethodTargetType('group'));
+
+$reportSuspiciousActivitySettingsIncludeTarget->setId('all_users');
+
+
+$reportSuspiciousActivitySettings->setIncludeTarget($reportSuspiciousActivitySettingsIncludeTarget);
+$reportSuspiciousActivitySettings->setVoiceReportingCode(0);
+
+
+$requestBody->setReportSuspiciousActivitySettings($reportSuspiciousActivitySettings);
 
 
 $result = $graphServiceClient->policies()->authenticationMethodsPolicy()->patch($requestBody);

@@ -12,20 +12,18 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewApplication()
 web := graphmodels.NewWebApplication()
 redirectUris := []string {
 	"https://signin.aws.amazon.com/saml",
-
 }
 web.SetRedirectUris(redirectUris)
 requestBody.SetWeb(web)
 identifierUris := []string {
 	"https://signin.aws.amazon.com/saml",
-
 }
 requestBody.SetIdentifierUris(identifierUris)
 

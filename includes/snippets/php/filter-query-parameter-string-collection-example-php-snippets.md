@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UsersRequestBuilderGetRequestConfiguration();
 $queryParameters = UsersRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "imAddresses/any";
+$queryParameters->filter = "imAddresses/any(i:i eq 'admin@contoso.com')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
