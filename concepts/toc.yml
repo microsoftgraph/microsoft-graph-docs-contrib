@@ -755,8 +755,6 @@ items:
             href: teams-embed-within-own-app.md
           - name: Payment models and licensing requirements
             href: teams-licenses.md
-          - name: Protected APIs
-            href: teams-protected-apis.md
           - name: Implementation differences in national clouds
             href: teamwork-national-cloud-differences.md
       - name: To-do tasks
