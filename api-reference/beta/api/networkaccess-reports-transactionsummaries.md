@@ -1,9 +1,9 @@
 ---
 title: "reports: transactionSummaries"
 description: "Provides a high-level summary of transactions, including a breakdown by traffic type and counts for allowed and blocked transactions."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
