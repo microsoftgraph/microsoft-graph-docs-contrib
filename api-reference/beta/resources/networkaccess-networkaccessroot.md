@@ -34,9 +34,9 @@ None.
 |:---|:---|:---|
 |connectivity|[microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md)|Connectivity represents all the connectivity components in Global Secure Access.|
 |forwardingPolicies|[microsoft.graph.networkaccess.forwardingPolicy](../resources/networkaccess-forwardingpolicy.md) collection|A forwarding policy defines the specific traffic that is routed through the Gloval Secure Access Service. It is then added to a forwarding profile.|
-|forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|A forwarding profile determines which types of traffic are routed through the Global Secure Access Service and which ones are skipped. The handling of specific traffic is determined by the forwarding policies that are added to the forwarding profile.|
+|forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|A forwarding profile determines which types of traffic are routed through the Global Secure Access services and which ones are skipped. The handling of specific traffic is determined by the forwarding policies that are added to the forwarding profile.|
 |logs|[microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md)|Represnts network connections that are routed through Global Secure Access.|
-|tenantStatus|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Represents the status of the Global Secure Access service for the tenant.|
+|tenantStatus|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Represents the status of the Global Secure Access services for the tenant.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

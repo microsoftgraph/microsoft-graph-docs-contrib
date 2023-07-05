@@ -1,6 +1,6 @@
 ---
 title: "forwardingRule resource type"
-description: "A forwarding rule is utilized to selectively forward traffic to the Global Secure Access Cloud based on specific requirements or preferences."
+description: "A forwarding rule is utilized to selectively forward traffic to the Global Secure Access services based on specific requirements or preferences."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,11 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+A forwarding rule is utilized to selectively forward traffic to the Global Secure Access services based on specific requirements or preferences.
+
 This is an abstract type from which the [m365ForwardingRule](networkaccess-m365forwardingrule.md) and [privateAccessForwardingRule](networkaccess-privateaccessforwardingrule.md) resource types are derived.
+
+Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).
 
 ## Methods
 None.

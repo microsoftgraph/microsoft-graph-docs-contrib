@@ -1,6 +1,6 @@
 ---
 title: "branch resource type"
-description: "A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access service edge network."
+description: "A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access services edge network."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access service edge network.
+A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access services edge network.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -27,7 +27,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Delete branchSite](../api/networkaccess-branchsite-delete.md)|None|Delete a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
 |[List deviceLinks](../api/networkaccess-branchsite-list-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Get the deviceLink resources from the deviceLinks navigation property.|
 |[Create deviceLink](../api/networkaccess-branchsite-post-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md)|Create a new deviceLink object.|
-|[List forwardingProfiles](../api/networkaccess-branchsite-get.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Get the forwardingProfile resources linked to this branchSite.|
+|[List forwardingProfiles](../api/networkaccess-branchsite-list-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Get the forwardingProfile resources linked to this branchSite.|
 [Create forwardingProfile](../api/networkaccess-branchsite-post-forwardingprofiles.md)|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md)|Create a new forwardingProfile object.|
 
 ## Properties
@@ -45,8 +45,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceLinks|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Each unique CPE device associated with a branch is specified.|
-|forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Each forwarding profile associated with a branch site is specified.|
+|deviceLinks|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Each unique CPE device associated with a branch is specified. Supports `$expand`.|
+|forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Each forwarding profile associated with a branch site is specified. Supports `$expand`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

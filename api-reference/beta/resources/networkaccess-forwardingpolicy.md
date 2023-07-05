@@ -1,6 +1,6 @@
 ---
 title: "forwardingPolicy resource type"
-description: "A forwarding policy defines the specific traffic that is routed through the Gloval Secure Access Service. It is then added to a forwarding profile."
+description: "A forwarding policy defines the specific traffic that is routed through the Global Secure Access services. It is then added to a forwarding profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A forwarding policy defines the specific traffic that is routed through the Gloval Secure Access Service. It is then added to a forwarding profile.
-
+A forwarding policy defines the specific traffic that is routed through the Gloval Secure Access services. It is then added to a [forwarding profile](networkaccess-forwardingprofile.md).
 
 Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).
 
@@ -23,7 +22,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 |:---|:---|:---|
 |[List forwardingPolicies](../api/networkaccess-networkaccessroot-list-forwardingpolicies.md)|[microsoft.graph.networkaccess.forwardingPolicy](../resources/networkaccess-forwardingpolicy.md) collection|Get a list of the [microsoft.graph.networkaccess.forwardingPolicy](../resources/networkaccess-forwardingpolicy.md) objects and their properties.|
 |[Get forwardingPolicy](../api/networkaccess-forwardingpolicy-get.md)|[microsoft.graph.networkaccess.forwardingPolicy](../resources/networkaccess-forwardingpolicy.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingPolicy](../resources/networkaccess-forwardingpolicy.md) object.|
-|[List policyRules](../api/networkaccess-policy-list-policyrules.md)|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|Get the policy Rules.|
+|[Update policy rule](../api/networkaccess-forwardingpolicy-updatepolicyrules.md)|[microsoft.graph.networkaccess.forwardingPolicy](../resources/networkaccess-forwardingpolicy.md)|Update the rules within a forwarding policy.|
 
 
 ## Properties

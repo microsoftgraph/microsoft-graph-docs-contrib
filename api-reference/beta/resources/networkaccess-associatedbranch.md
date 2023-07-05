@@ -1,6 +1,6 @@
 ---
 title: "associatedBranch resource type"
-description: "A traffic profile associates with a branch office location."
+description: "A branch office location associated with a traffic profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A traffic profile associates with a branch office location.
+A branch office location associated with a traffic profile.
 
 Inherits from [microsoft.graph.networkaccess.association](../resources/networkaccess-association.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|branchId|String|Identifier. for the Branch|
+|branchId|String|Identifier for the branch.|
 
 ## Relationships
 None.

@@ -1,6 +1,6 @@
 ---
 title: "List branches"
-description: "Retrieve a list of branches within a tenant connected to the Global Secure Access service."
+description: "Retrieve a list of branches within a tenant connected to the Global Secure Access services."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of branches within a tenant connected to the Global Secure Access service.
+Retrieve a list of branches within a tenant connected to the Global Secure Access services.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,8 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|NetworkAccessPolicy.Read.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 
@@ -36,12 +36,7 @@ GET /networkAccess/connectivity/branches
 ```
 
 ## Optional query parameters
-This method supports $expand and $select OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-| Pattern | Supported | Syntax                                                               | Notes       |
-| ------- | :-------- | :------------------------------------------------------------------- | :---------- |
-| expand  | ✔         | `/networkAccess/connectivity/branches?$expand=deviceLinks`           | first level |
-| expand  | ✔         | `/networkAccess/connectivity/branches?$expand=forwardingProfiles`    | first level |
-| select  | ✔         | `/networkAccess/connectivity/branches?$select=forwardingProfiles/id` | first level |
+This method supports the `$expand` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

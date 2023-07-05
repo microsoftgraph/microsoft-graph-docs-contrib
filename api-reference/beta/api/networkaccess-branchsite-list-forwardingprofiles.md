@@ -1,18 +1,18 @@
 ---
-title: "Get forwardingOptions"
-description: "Retrieve the forwarding options for the tenant, with a specific focus on the 'skipDnsLookupState' flag. This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 traffic to be forwarded directly to the Front Door using the client-resolved destination."
+title: "List forwardingProfiles"
+description: "Retrieve a list of traffic forwarding profiles associated with a branch."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Get forwardingOptions
+# List forwardingProfiles
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the forwarding options for the tenant, with a specific focus on the "skipDnsLookupState" flag. This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 traffic to be forwarded directly to the Front Door using the client-resolved destination.
+Retrieve a list of traffic forwarding profiles associated with a branch.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,11 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccess/settings/forwardingOptions
+GET /networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
 ```
 
 ## Optional query parameters
-This method does not support any OData query parameters.
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.networkaccess.conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [forwardingProfile](../resources/forwardingprofile.md) objects in the response body.
 
 ## Examples
 
@@ -56,11 +56,11 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_forwardingoptions"
+  "name": "list_forwardingprofiles_branchsite"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/settings/forwardingOptions
+GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
 ```
 
 
@@ -70,16 +70,32 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.networkaccess.forwardingOptions"
+  "@odata.type": "Collection(microsoft.graph.networkaccess.forwardingProfile)"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
-    "@odata.context": "https://graph.microsoft.com/beta/networkAccess/settings/$metadata#forwardingOptions",
-    "skipDnsLookupState": "enabled"
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.networkaccess.forwardingProfile",
+      "id": "1f486c29-0344-5a0b-8e03-630176b3e448",
+      "name": "String",
+      "description": "String",
+      "state": "String",
+      "version": "String",
+      "lastModifiedDateTime": "String (timestamp)",
+      "trafficForwardingType": "String",
+      "associations": [
+        {
+          "@odata.type": "microsoft.graph.networkaccess.associatedBranch"
+        }
+      ],
+      "priority": "Integer"
+    }
+  ]
 }
 ```
-
 

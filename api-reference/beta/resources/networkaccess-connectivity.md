@@ -1,6 +1,6 @@
 ---
 title: "connectivity resource type"
-description: "Under networkAccess, connectivity represents all the connectivity components in Global Secure Access."
+description: "Represents all the connectivity components in the Global Secure Access services."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Under networkAccess, connectivity represents all the connectivity components in Global Secure Access.
+Represents all the connectivity components in Global Secure Access services.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 

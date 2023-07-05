@@ -1,6 +1,6 @@
 ---
 title: "forwardingPolicy: updatePolicyRules"
-description: "Update the forwarding rule within a forwarding profile."
+description: "Update the rules within a forwarding policy."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the forwarding rules within a forwarding profile.
+Update the rules within a forwarding policy.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,8 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /networkAccess/filteringPolicies/{id}/policyRules/{id}
+POST /networkAccess/forwardingPolicies/{id}/updatePolicyRules
 ```
 
 ## Request headers
@@ -48,8 +48,8 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|Id|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md)|Unique Identifier for the rule.|
-|action|String|Action for the traffic, possible values are "Forward" or "Bypass". Required.|
+|id|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md)|Unique Identifier for the rule.|
+|action|[microsoft.graph.networkaccess.policyRuleDelta](../resources/networkaccess-policyruledelta.md)|Action for the traffic, possible values are "forward" or "bypass". Required.|
 
 
 ## Response
@@ -66,19 +66,22 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH /networkAccess/filteringPolicies/{id}/policyRules/{id}
+POST https://graph.microsoft.com/beta/networkAccess/forwardingPolicies/{id}/updatePolicyRules
 Content-Type: application/json
 
 {
-  "@odata.type":"microsoft.graph.networkAccess.m365ForwardingRule", 
-  "action":"forward" 
+  "rules": [
+    {
+      "ruleId": "e296c914-768c-4ce9-a279-e4b6145a8a4b",
+      "action": "forward"
+    }
+  ]
 }
 ```
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

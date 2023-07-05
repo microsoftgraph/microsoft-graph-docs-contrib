@@ -1,6 +1,6 @@
 ---
 title: "tenantStatus resource type"
-description: "Represents the status of the Global Secure Access service for the tenant."
+description: "Represents the status of the Global Secure Access services for the tenant."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the status of the Global Secure Access service for the tenant.	
+Represents the status of the Global Secure Access services for the tenant.    
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get tenantStatus](../api/networkaccess-tenantstatus-get.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) object.|
-|[Update tenantStatus](../api/networkaccess-networkaccessroot-onboard.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Onboard the tenant to the Global Secure Access service.|
+|[Onboard](../api/networkaccess-networkaccessroot-onboard.md)|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Onboard the tenant to the Global Secure Access services.|
 
 ## Properties
 |Property|Type|Description|

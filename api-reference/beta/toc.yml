@@ -12361,11 +12361,13 @@ items:
               href: api/tenantrelationship-findtenantinformationbydomainname.md
             - name: Find tenant by tenant ID
               href: api/tenantrelationship-findtenantinformationbytenantid.md
-      - name: Global Secure Access
+      - name: Network access
         items:
         - name: Tenant status
           href: resources/networkaccess-tenantstatus.md 
           items:
+          - name: Onboard
+            href: api/networkaccess-tenantstatus-onboard.md
           - name: Get
             href: api/networkaccess-tenantstatus-get.md
         - name: Settings
@@ -12397,95 +12399,82 @@ items:
           - name: Forwarding profile
             href: resources/networkaccess-forwardingprofile.md
             items:
-            - name: Get
-              href: api/networkaccess-forwardingprofile-get.md 
             - name: List
               href: api/networkaccess-networkaccessroot-list-forwardingprofiles.md
+            - name: Get
+              href: api/networkaccess-forwardingprofile-get.md 
+            - name: Update
+              href: api/networkaccess-forwardingprofile-update.md 
           - name: Forwarding policy
             href: resources/networkaccess-forwardingpolicy.md
             items:
+            - name: List
+              href: api/networkaccess-networkaccessroot-list-forwardingpolicies.md
             - name: Get
               href: api/networkaccess-forwardingpolicy-get.md
+            - name: Update policy rules
+              href: api/networkaccess-forwardingpolicy-updatepolicyrules.md
           - name: Forwarding policy link
             href: resources/networkaccess-forwardingpolicylink.md
-            items:
-            - name: Get
-              href: api/networkaccess-forwardingpolicy-get.md            
+            items:            
             - name: List
               href: api/networkaccess-forwardingprofile-list-policies.md
+            - name: Get
+              href: api/networkaccess-forwardingpolicy-get.md
             - name: Update
               href: api/networkaccess-forwardingpolicylink-update.md
             - name: Delete
               href: api/networkaccess-forwardingpolicylink-delete.md
-          - name: Forwarding policy rule
-            href: resources/networkaccess-forwardingrule.md
+          - name: Policy rule
+            href: resources/networkaccess-policyrule.md
             items:
-            - name: Get
-              href: api/networkaccess-policyrule-get.md 
-            - name: List
-              href: api/networkaccess-policy-list-policyrules.md 
-            - name: update
-              href: api/networkaccess-policyrule-update.md
-          - name: Microsoft 365 forwarding rule
-            href: resources/networkaccess-m365forwardingrule.md
-          - name: Private access forwarding rule
-            href: resources/networkaccess-privateaccessforwardingrule.md          
-        - name: Rule destination
-          href: resources/networkaccess-ruledestination.md
-          items:
-          - name: FQDN
-            href: resources/networkaccess-fqdn.md
-          - name: IP address
-            href: resources/networkaccess-ipaddress.md
-          - name: IP range
-            href: resources/networkaccess-iprange.md
-          - name: IP subnet
-            href: resources/networkaccess-ipsubnet.md
-          - name: URL
-            href: resources/networkaccess-url.md            
-        - name: Branch
+            - name: Forwarding rule
+              href: resources/networkaccess-forwardingrule.md
+              items:
+              - name: Microsoft 365 forwarding rule
+                href: resources/networkaccess-m365forwardingrule.md
+              - name: Private access forwarding rule
+                href: resources/networkaccess-privateaccessforwardingrule.md 
+              - name: List
+                href: api/networkaccess-policy-list-policyrules.md  
+              - name: Get
+                href: api/networkaccess-policyrule-get.md 
+              - name: Update
+                href: api/networkaccess-policyrule-update.md      
+        - name: Branch site
           href: resources/networkaccess-branchsite.md
           items:
-          - name: Get
-            href: api/networkaccess-branchsite-get.md
-          - name: List 
+          - name: List branch sites
             href: api/networkaccess-connectivity-list-branches.md
-          - name: Update
-            href: api/networkaccess-branchsite-update.md
-          - name: Delete
-            href: api/networkaccess-branchsite-delete.md
-          - name: Create
+          - name: List forwarding profiles for branch
+            href: api/networkaccess-branchsite-list-forwardingprofiles.md
+          - name: Create branch site
             href: api/networkaccess-connectivity-post-branches.md
           - name: Create with device links
             href: api/networkaccess-branchsite-post-devicelinks.md
           - name: Create with forwarding profile
             href: api/networkaccess-branchsite-post-forwardingprofiles.md
+          - name: Get branch site
+            href: api/networkaccess-branchsite-get.md
+          - name: Update branch site
+            href: api/networkaccess-branchsite-update.md
           - name: Update forwarding profile for branch
-            href: api/networkaccess-branchsite-updateforwardingprofiles.md
+            href: api/networkaccess-forwardingprofile-update.md
+          - name: Delete branch site
+            href: api/networkaccess-branchsite-delete.md
+          - name: Device link
+            href: resources/networkaccess-devicelink.md
             items:
-            - name: Device link
-              href: resources/networkaccess-devicelink.md
-              items:
-              - name: Get
-                href: api/networkaccess-devicelink-get.md
-              - name: List 
-                href: api/networkaccess-branchsite-list-devicelinks.md
-              - name: Update
-                href: api/networkaccess-devicelink-update.md              
-              - name: Create
-                href: api/networkaccess-branchsite-post-devicelinks.md
-              - name: Delete
-                href: api/networkaccess-branchsite-delete-devicelinks.md
-            - name: BGP configuration
-              href: resources/networkaccess-bgpconfiguration.md
-            - name: Redundancy configuration
-              href: resources/networkaccess-redundancyconfiguration.md             
-            - name: Tunnel configuration
-              href: resources/networkaccess-tunnelconfiguration.md
-            - name: Tunnel configuration IKE custom
-              href: resources/networkaccess-tunnelconfigurationikev2custom.md 
-            - name: Tunnel configuration IKE default
-              href: resources/networkaccess-tunnelconfigurationikev2default.md  
+            - name: List 
+              href: api/networkaccess-branchsite-list-devicelinks.md
+            - name: Get
+              href: api/networkaccess-devicelink-get.md             
+            - name: Create
+              href: api/networkaccess-branchsite-post-devicelinks.md
+            - name: Update
+              href: api/networkaccess-devicelink-update.md 
+            - name: Delete
+              href: api/networkaccess-branchsite-delete-devicelinks.md
         - name: Traffic logs
           href: resources/networkaccess-logs.md
           items:

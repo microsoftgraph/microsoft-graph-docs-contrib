@@ -31,7 +31,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|policy|
+|policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Policy. |
 
 ## JSON representation
 The following is a JSON representation of the resource.

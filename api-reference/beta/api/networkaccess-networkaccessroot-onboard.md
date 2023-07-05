@@ -1,6 +1,6 @@
 ---
 title: "Onboard tenant"
-description: "Initiate the process to onboard the tenant to the Global Secure Access service."
+description: "Initiate the process to onboard the tenant to the Global Secure Access services."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -20,8 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 
@@ -63,8 +63,7 @@ POST https://graph.microsoft.com/beta/networkAccess/microsoft.graph.networkacces
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

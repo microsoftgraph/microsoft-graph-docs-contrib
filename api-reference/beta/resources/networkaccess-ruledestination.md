@@ -13,6 +13,8 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents the list of potential destinations and destination types that the user could be accessing in the context of a network filtering policy, including IPs and FQDNs or URLs.
+
 This is an abstract type from which the following resources are derived:
 - [microsoft.graph.networkaccess.fqdn](networkaccess-fqdn.md)
 - [microsoft.graph.networkaccess.ipAddress](networkaccess-ipaddress.md)

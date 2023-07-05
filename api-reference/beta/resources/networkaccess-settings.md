@@ -1,30 +1,25 @@
 ---
-title: "network access settings resource type"
-description: "The tenant configuration settings that are associated with Microsoft Entra Internet Access and Microsoft Entra Private Access capabilities."
+title: "settings resource type"
+description: "The tenant configuration settings that are associated with Microsoft Entra Internet Access and Microsoft Entra Private Access capabilities under the umbrella of Global Secure Access."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: resourcePageType
 ---
 
-# network access settings resource type
+# settings resource type
 
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Global Secure Access settings for the tenant.
-
+The tenant configuration settings that are associated with the Microsoft Entra Internet Access and Microsoft Entra Private Access capabilities under the umbrella of Global Secure Access.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get conditionalAccessSettings](../api/networkaccess-conditionalaccesssettings-get.md)|[microsoft.graph.networkaccess.conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md) collection|Get the conditionalAccessSettings resources from the conditionalAccess navigation property.|
-|[Update conditionalAccessSettings](../api/networkaccess-conditionalaccesssettings-update.md)|[microsoft.graph.networkaccess.conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md)|Create a new conditionalAccessSettings object.|
-|[Get crossTenantAccessSettings](../api/networkaccess-crosstenantaccesssettings-get.md)|[microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md) collection|Get the crossTenantAccessSettings resources from the crossTenantAccess navigation property.|
-|[Update crossTenantAccessSettings](../api/networkaccess-crosstenantaccesssettings-update.md)|[microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md)|Create a new crossTenantAccessSettings object.|
+
+None.
 
 ## Properties
 None.

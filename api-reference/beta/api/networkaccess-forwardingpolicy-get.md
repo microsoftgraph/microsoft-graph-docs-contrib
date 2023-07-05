@@ -20,8 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|NetworkAccessPolicy.Read.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 
@@ -36,11 +36,7 @@ GET /networkAccess/forwardingPolicies/{forwardingPolicyId}
 ```
 
 ## Optional query parameters
-This method supports the $expand [OData query parameters](/graph/query-parameters) to help customize the response.
-
-|Name|Syntax|Notes|
-|:---|:---|:---|
-|expand|/networkAccess/forwardingPolicies?$expand=policyRules|first level|
+This method supports the `$expand` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 
 ## Request headers
@@ -81,6 +77,7 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/forwardingPolicies/$entity",
     "id": "81e6666b-dcf3-4ee6-9212-adb12df18dab",

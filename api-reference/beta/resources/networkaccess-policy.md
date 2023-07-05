@@ -13,14 +13,15 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+A traffic forwarding policy consists of a policy and its associated rules. It defines the guidelines and instructions for routing and handling network traffic.
+
 This is an abstract type from which the [microsoft.graph.networkaccess.forwardingPolicy](networkaccess-forwardingpolicy.md) resource type is derived.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
+None.
 
 
 
