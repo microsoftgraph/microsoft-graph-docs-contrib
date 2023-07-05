@@ -111,7 +111,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "entitiesSummaries",
           "ChangeType": "Addition",
-          "Description": "Added the [entitiesSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-entitiessummaries?view=graph-rest-beta) method to the [entitiesSummaries](https://learn.microsoft.com/en-us/graph/api/nnetworkaccess-reports-entitiessummaries?view=graph-rest-beta) resource.",
+          "Description": "Added the [entitiesSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-entitiessummaries?view=graph-rest-beta) method to the [entitiesSummaries](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-entitiessummaries?view=graph-rest-beta) resource.",
           "Target": "entitiesSummaries"
         },
         {
