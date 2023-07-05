@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!-- {
   "blockType": "request",
-  "name": "list_accessreviewinstancedecisionitem"
+  "name": "list_accessreviewinstancedecisionitem_v1_e1"
 }
 -->
 ``` http
@@ -162,7 +162,7 @@ The following example shows a request to retrieve all the decisions on every ins
 
 <!-- {
   "blockType": "request",
-  "name": "list_accessReviewInstanceDecisionItem_expand"
+  "name": "list_accessReviewInstanceDecisionItem_expand_v1_e2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')?$expand=instance($expand=definition)
@@ -223,7 +223,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "list_accessreviewinstancedecisionitem_expandinsights"
+  "name": "list_accessreviewinstancedecisionitem_expandinsights_v1_e3"
 }
 -->
 ``` http
