@@ -1,43 +1,46 @@
 ---
 title: "Use the Microsoft Search API to search with interleaved results"
-description: "You can use the Microsoft Search API in Microsoft Graph to search multiple entities in one request and get interleaved results."
+description: "Learn how to use the Microsoft Search API in Microsoft Graph to search multiple entities in one request and get interleaved results."
 author: "yiwenwang"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
 # Use the Microsoft Search API to search with interleaved results
+
 The Microsoft Search **searchRequest** resource supports the passing of multiple entity types in a single request, and returns interleaved results with the requested entity types ranked by relevance.
 
 ## Supported entity combinations
 
 The following table shows the relationship between different entity types that can be interleaved. Note that the **qna** entity type is only supported in beta.
 
-| Entity type |acronym     |bookmark     |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     |qna     | site       |
-|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|------------|------------|------------|
-|  acronym    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
-|  bookmark    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
-|  message    |     -      |     -      |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
-| chatMessage |     -      |     -      |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
-|    drive    |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|  driveItem  |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   event     |     -      |     -      |     -      |     -      |      -      |       -    |    True    |       -     |      -     |    -       |      -     |     -      |     -      |
-|externalItem |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   list      |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|  listItem   |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   person    |     -      |     -      |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |     -      |
-|  qna    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |  True      |     -      |
-|    site     |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-
-
+| Entity type  | acronym | bookmark | message | chatMessage | drive | driveItem | event | externalItem | list | listItem | person | qna  | site |
+|--------------|---------|----------|---------|-------------|-------|-----------|-------|--------------|------|----------|--------|------|------|
+| acronym      | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+| bookmark     | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+| message      | -       | -        | True    | -           | -     | -         | -     | -            | -    | -        | -      | -    | -    |
+| chatMessage  | -       | -        | -       | True        | -     | -         | -     | -            | -    | -        | -      | -    | -    |
+| drive        | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+| driveItem    | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+| event        | -       | -        | -       | -           | -     | -         | True  | -            | -    | -        | -      | -    | -    |
+| externalItem | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+| list         | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+| listItem     | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+| person       | -       | -        | -       | -           | -     | -         | -     | -            | -    | -        | True   | -    | -    |
+| qna          | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+| site         | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
 
 ## Examples
 
-### Example 1: Search with SharePoint file types and connector combination
+### Example 1: Search with SharePoint file types and any connector combination
+
+The following shows an example of a request that searches with SharePoint file types and any combination of connectors.
 
 #### Request
 
-```HTTP
+The following is an example of the request.
+
+```http
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
@@ -52,7 +55,7 @@ Content-Type: application/json
       "query": {
         "queryString": "contoso"
       },
-      "contentSources":[
+      "contentSources": [
         "/external/connections/*"
       ],
       "from": 0,
@@ -64,9 +67,9 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of interleaving response.
+The following is an example of an interleaving response.
 
-```HTTP
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -110,7 +113,7 @@ Content-type: application/json
               "summary": "Test externalItem",
               "resource": {
                 "@odata.type": "#microsoft.graph.externalItem",
-                "title": "Test externalItem summary",
+                "title": "Test externalItem summary"
               }
             },
             {
@@ -134,9 +137,13 @@ Content-type: application/json
 
 ### Example 2: Search with SharePoint file types and specific connector combination
 
+The following shows an example of a request that searches with SharePoint file types and a specific combination of connectors.
+
 #### Request
 
-```HTTP
+The following is an example of a request.
+
+```http
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
@@ -151,7 +158,7 @@ Content-Type: application/json
       "query": {
         "queryString": "contoso"
       },
-      "contentSources":[
+      "contentSources": [
         "/external/connections/MicrosoftPowerBI",
         "/external/connections/Learning"
       ],
@@ -164,9 +171,9 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of interleaving response.
+The following is an example of an interleaving response.
 
-```HTTP
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -245,9 +252,13 @@ Content-type: application/json
 
 ### Example 3: Search with bookmark and acronym combination
 
+The following shows an example of a request that searches with bookmark and acronym as entity types.
+
 #### Request
 
-```HTTP
+The following is an example of a request.
+
+```http
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
@@ -270,9 +281,9 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of interleaving response for bookmark and acronym.
+The following is an example of an interleaving response for bookmark and acronym.
 
-```HTTP
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
