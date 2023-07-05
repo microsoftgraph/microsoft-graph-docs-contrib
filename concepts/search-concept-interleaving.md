@@ -32,9 +32,9 @@ The following table shows the relationship between different entity types that c
 
 ## Examples
 
-### Example 1: Search with SharePoint file types and all connector combination
+### Example 1: Search with SharePoint file types and all connectors combination
 
-The following shows an example of a request that searches with SharePoint file types and any combination of connectors.
+The following shows an example of a request that searches with SharePoint file types and all combination of connectors.
 
 #### Request
 
