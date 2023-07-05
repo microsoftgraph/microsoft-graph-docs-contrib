@@ -21,8 +21,8 @@ For more information on adding properties to the profile card for an organizatio
 
 | Method       | Return Type | Description |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [List](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Get a collection of **profileCardProperty** resources of an organization. |
-| [Create](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new **profileCardProperty** resource for an organization. |
+| [List](../api/peopleadminsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Get a collection of **profileCardProperty** resources of an organization. |
+| [Create](../api/peopleadminsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new **profileCardProperty** resource for an organization. |
 | [Get](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | Read the properties and relationships of a **profileCardProperty** resource, which contains the profile card customizations that exist in a Microsoft 365 organization for a given field. |
 | [Update](../api/profilecardproperty-update.md)               | [profileCardProperty](profilecardproperty.md) | Update a **profileCardProperty** object.                               |
 | [Delete](../api/profilecardproperty-delete.md)               | None                                          | Delete a **profileCardProperty** object.                               |
@@ -52,6 +52,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "directoryPropertyName": "String",
   "annotations": [
     {
       "displayName": "String",
@@ -62,18 +63,6 @@ The following is a JSON representation of the resource.
         }
       ]
     }
-  ],
-  "directoryPropertyName": "String"
+  ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "profileCardProperty resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
