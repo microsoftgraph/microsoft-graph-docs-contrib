@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
-Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId
+Get-MgDeviceAppMgtMobileAppConfigurationUserStatusSummary -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId
 
 ```

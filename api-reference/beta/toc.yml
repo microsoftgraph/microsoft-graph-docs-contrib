@@ -2195,6 +2195,8 @@ items:
               href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
             - name: createToken action
               href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
+            - name: getDefaultTeamsDeviceNonGmsEnrollmentProfile action
+              href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-getdefaultteamsdevicenongmsenrollmentprofile.md
           - name: Android device owner enrollment token type
             href: resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md
           - name: Android enrollment company code
@@ -2427,6 +2429,10 @@ items:
               href: api/intune-books-ebookinstallsummary-get.md
             - name: Update
               href: api/intune-books-ebookinstallsummary-update.md
+          - name: Encrypted provisioning package extras
+            href: resources/intune-androidforwork-encryptedprovisioningpackageextras.md
+          - name: Enrollment profile for non gms teams device
+            href: resources/intune-androidforwork-enrollmentprofilefornongmsteamsdevice.md
           - name: Enterprise code signing certificate
             href: resources/intune-apps-enterprisecodesigningcertificate.md
             items:
@@ -2687,6 +2693,19 @@ items:
               href: api/intune-apps-macosofficesuiteapp-delete.md
             - name: Update
               href: api/intune-apps-macosofficesuiteapp-update.md
+          - name: macOS pkg app
+            href: resources/intune-apps-macospkgapp.md
+            items:
+            - name: List
+              href: api/intune-apps-macospkgapp-list.md
+            - name: Get
+              href: api/intune-apps-macospkgapp-get.md
+            - name: Create
+              href: api/intune-apps-macospkgapp-create.md
+            - name: Delete
+              href: api/intune-apps-macospkgapp-delete.md
+            - name: Update
+              href: api/intune-apps-macospkgapp-update.md
           - name: macOS VPP app
             href: resources/intune-apps-macosvppapp.md
             items:
@@ -2998,6 +3017,8 @@ items:
               href: api/intune-apps-mobileappprovisioningconfiggroupassignment-delete.md
             - name: Update
               href: api/intune-apps-mobileappprovisioningconfiggroupassignment-update.md
+          - name: Mobile app publishing constraints
+            href: resources/intune-apps-mobileapppublishingconstraints.md
           - name: Mobile app publishing state
             href: resources/intune-apps-mobileapppublishingstate.md
           - name: Mobile app relationship
@@ -3160,6 +3181,8 @@ items:
             href: resources/intune-apps-win32lobappproductcodedetection.md
           - name: Win32 LOB app product code rule
             href: resources/intune-apps-win32lobappproductcoderule.md
+          - name: Win32 LOB app publishing constraints
+            href: resources/intune-apps-win32lobapppublishingconstraints.md
           - name: Win32 LOB app registry detection
             href: resources/intune-apps-win32lobappregistrydetection.md
           - name: Win32 LOB app registry detection type
@@ -4644,10 +4667,6 @@ items:
               href: api/intune-raimportcerts-certificateconnectordetails-gethealthmetrictimeseries.md
           - name: Certificate connector health metric value
             href: resources/intune-raimportcerts-certificateconnectorhealthmetricvalue.md
-          - name: Certificate issuance states
-            href: resources/intune-deviceconfig-certificateissuancestates.md
-          - name: Certificate revocation status
-            href: resources/intune-deviceconfig-certificaterevocationstatus.md
           - name: Change uefi settings permission
             href: resources/intune-deviceconfig-changeuefisettingspermission.md
           - name: Code
@@ -6485,8 +6504,6 @@ items:
             href: resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md
           - name: State management setting
             href: resources/intune-deviceconfig-statemanagementsetting.md
-          - name: Subject name format
-            href: resources/intune-deviceconfig-subjectnameformat.md
           - name: Time series parameter
             href: resources/intune-raimportcerts-timeseriesparameter.md
           - name: Unsupported device configuration
@@ -7586,6 +7603,8 @@ items:
             href: resources/intune-devices-devicehealthscriptstringparameter.md
           - name: Device health script time schedule
             href: resources/intune-devices-devicehealthscripttimeschedule.md
+          - name: Device health script type
+            href: resources/intune-devices-devicehealthscripttype.md
           - name: Device licensing status
             href: resources/intune-devices-devicelicensingstatus.md
           - name: Device log collection request
@@ -8462,6 +8481,17 @@ items:
               href: api/intune-devices-userexperienceanalyticsanomaly-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsanomaly-update.md
+          - name: User experience analytics anomaly correlation group feature
+            href: resources/intune-devices-userexperienceanalyticsanomalycorrelationgroupfeature.md
+          - name: User experience analytics anomaly correlation group overview
+            href: resources/intune-devices-userexperienceanalyticsanomalycorrelationgroupoverview.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsanomalycorrelationgroupoverview-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsanomalycorrelationgroupoverview-get.md            
+          - name: User experience analytics anomaly correlation group prevalence
+            href: resources/intune-devices-userexperienceanalyticsanomalycorrelationgroupprevalence.md
           - name: User experience analytics anomaly device
             href: resources/intune-devices-userexperienceanalyticsanomalydevice.md
             items:
@@ -8475,6 +8505,8 @@ items:
               href: api/intune-devices-userexperienceanalyticsanomalydevice-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsanomalydevice-update.md
+          - name: User experience analytics anomaly device feature type
+            href: resources/intune-devices-userexperienceanalyticsanomalydevicefeaturetype.md
           - name: User experience analytics anomaly severity
             href: resources/intune-devices-userexperienceanalyticsanomalyseverity.md
           - name: User experience analytics anomaly severity overview
@@ -8802,11 +8834,15 @@ items:
               href: api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-update.md
+          - name: User experience analytics device status
+            href: resources/intune-devices-userexperienceanalyticsdevicestatus.md
           - name: User experience analytics device timeline event
             href: resources/intune-devices-userexperienceanalyticsdevicetimelineevent.md
             items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-list.md
             - name: Get
-              href: api/intune-devices-userexperienceanalyticsdevicetimelineevents-get.md
+              href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-get.md            
           - name: User experience analytics device without cloud identity
             href: resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md
             items:
@@ -9947,6 +9983,10 @@ items:
             href: resources/intune-shared-androidmanagedstoreautoupdatemode.md
           - name: Certificate destination store
             href: resources/intune-shared-certificatedestinationstore.md
+          - name: Certificate issuance states
+            href: resources/intune-shared-certificateissuancestates.md
+          - name: Certificate revocation status
+            href: resources/intune-shared-certificaterevocationstatus.md
           - name: Certificate store
             href: resources/intune-shared-certificatestore.md
           - name: Certificate validity period scale
@@ -10219,6 +10259,8 @@ items:
             href: resources/intune-shared-settingsourcetype.md
           - name: Subject alternative name type
             href: resources/intune-shared-subjectalternativenametype.md
+          - name: Subject name format
+            href: resources/intune-shared-subjectnameformat.md
           - name: Targeted managed app configuration
             href: resources/intune-shared-targetedmanagedappconfiguration.md
             items:

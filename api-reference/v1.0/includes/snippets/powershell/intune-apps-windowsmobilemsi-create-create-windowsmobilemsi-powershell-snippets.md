@@ -32,6 +32,6 @@ $params = @{
 	ignoreVersionDetection = $true
 }
 
-New-MgDeviceAppManagementMobileApp -BodyParameter $params
+New-MgDeviceAppMgtMobileApp -BodyParameter $params
 
 ```

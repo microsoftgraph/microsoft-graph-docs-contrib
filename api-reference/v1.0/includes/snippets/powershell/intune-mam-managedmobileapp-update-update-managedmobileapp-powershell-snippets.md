@@ -15,6 +15,6 @@ $params = @{
 	version = "Version value"
 }
 
-Update-MgDeviceAppManagementiOSManagedAppProtectionApp -IosManagedAppProtectionId $iosManagedAppProtectionId -ManagedMobileAppId $managedMobileAppId -BodyParameter $params
+Update-MgDeviceAppMgtiOSManagedAppProtectionApp -IosManagedAppProtectionId $iosManagedAppProtectionId -ManagedMobileAppId $managedMobileAppId -BodyParameter $params
 
 ```

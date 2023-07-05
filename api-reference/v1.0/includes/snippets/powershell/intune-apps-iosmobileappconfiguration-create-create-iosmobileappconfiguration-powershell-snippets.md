@@ -25,6 +25,6 @@ $params = @{
 	)
 }
 
-New-MgDeviceAppManagementMobileAppConfiguration -BodyParameter $params
+New-MgDeviceAppMgtMobileAppConfiguration -BodyParameter $params
 
 ```

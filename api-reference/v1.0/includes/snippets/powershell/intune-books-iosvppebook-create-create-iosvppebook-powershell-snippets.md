@@ -31,6 +31,6 @@ $params = @{
 	usedLicenseCount = 
 }
 
-New-MgDeviceAppManagementManagedEBook -BodyParameter $params
+New-MgDeviceAppMgtManagedEBook -BodyParameter $params
 
 ```

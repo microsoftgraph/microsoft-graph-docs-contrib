@@ -43,6 +43,6 @@ $params = @{
 	bundleId = "Bundle Id value"
 }
 
-New-MgDeviceAppManagementMobileApp -BodyParameter $params
+New-MgDeviceAppMgtMobileApp -BodyParameter $params
 
 ```

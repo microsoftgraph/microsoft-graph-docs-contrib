@@ -17,6 +17,6 @@ $params = @{
 	configurationVersion = 4
 }
 
-Update-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -BodyParameter $params
+Update-MgDeviceAppMgtMobileAppConfigurationUserStatusSummary -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -BodyParameter $params
 
 ```

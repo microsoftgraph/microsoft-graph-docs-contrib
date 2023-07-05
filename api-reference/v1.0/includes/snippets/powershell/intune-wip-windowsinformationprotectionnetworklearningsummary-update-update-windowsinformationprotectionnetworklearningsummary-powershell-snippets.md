@@ -12,6 +12,6 @@ $params = @{
 	deviceCount = 11
 }
 
-Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary -WindowsInformationProtectionNetworkLearningSummaryId $windowsInformationProtectionNetworkLearningSummaryId -BodyParameter $params
+Update-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary -WindowsInformationProtectionNetworkLearningSummaryId $windowsInformationProtectionNetworkLearningSummaryId -BodyParameter $params
 
 ```

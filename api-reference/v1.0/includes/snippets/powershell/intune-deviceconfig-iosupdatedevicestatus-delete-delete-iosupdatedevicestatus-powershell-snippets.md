@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-Remove-MgDeviceManagementIoUpdateStatus -IosUpdateDeviceStatusId $iosUpdateDeviceStatusId
+Remove-MgDeviceManagementIoUpdateStatuses -IosUpdateDeviceStatusId $iosUpdateDeviceStatusId
 
 ```

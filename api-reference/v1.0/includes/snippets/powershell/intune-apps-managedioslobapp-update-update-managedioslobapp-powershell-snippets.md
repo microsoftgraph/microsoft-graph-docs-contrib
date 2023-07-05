@@ -50,6 +50,6 @@ $params = @{
 	buildNumber = "Build Number value"
 }
 
-Update-MgDeviceAppManagementMobileApp -MobileAppId $mobileAppId -BodyParameter $params
+Update-MgDeviceAppMgtMobileApp -MobileAppId $mobileAppId -BodyParameter $params
 
 ```

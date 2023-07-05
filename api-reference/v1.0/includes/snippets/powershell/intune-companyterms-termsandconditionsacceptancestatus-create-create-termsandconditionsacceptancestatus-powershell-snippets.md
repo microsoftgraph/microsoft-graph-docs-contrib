@@ -14,6 +14,6 @@ $params = @{
 	userPrincipalName = "User Principal Name value"
 }
 
-New-MgDeviceManagementTermAndConditionAcceptanceStatus -TermsAndConditionsId $termsAndConditionsId -BodyParameter $params
+New-MgDeviceManagementTermAndConditionAcceptanceStatuses -TermsAndConditionsId $termsAndConditionsId -BodyParameter $params
 
 ```

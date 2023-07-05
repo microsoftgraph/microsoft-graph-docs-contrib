@@ -141,6 +141,6 @@ $params = @{
 	daysWithoutContactBeforeUnenroll = 0
 }
 
-Update-MgDeviceAppManagementWindowsInformationProtectionPolicy -WindowsInformationProtectionPolicyId $windowsInformationProtectionPolicyId -BodyParameter $params
+Update-MgDeviceAppMgtWindowInformationProtectionPolicy -WindowsInformationProtectionPolicyId $windowsInformationProtectionPolicyId -BodyParameter $params
 
 ```

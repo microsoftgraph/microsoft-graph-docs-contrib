@@ -18,6 +18,6 @@ $params = @{
 	userName = "User Name value"
 }
 
-New-MgDeviceAppManagementManagedEBookDeviceState -ManagedEBookId $managedEBookId -BodyParameter $params
+New-MgDeviceAppMgtManagedEBookDeviceState -ManagedEBookId $managedEBookId -BodyParameter $params
 
 ```

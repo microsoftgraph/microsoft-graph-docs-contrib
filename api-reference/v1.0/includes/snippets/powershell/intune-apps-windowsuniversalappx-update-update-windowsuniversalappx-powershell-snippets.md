@@ -41,6 +41,6 @@ $params = @{
 	identityVersion = "Identity Version value"
 }
 
-Update-MgDeviceAppManagementMobileApp -MobileAppId $mobileAppId -BodyParameter $params
+Update-MgDeviceAppMgtMobileApp -MobileAppId $mobileAppId -BodyParameter $params
 
 ```

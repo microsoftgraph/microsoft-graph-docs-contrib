@@ -21,6 +21,6 @@ $params = @{
 	userPrincipalName = "User Principal Name value"
 }
 
-Update-MgDeviceManagementIoUpdateStatus -IosUpdateDeviceStatusId $iosUpdateDeviceStatusId -BodyParameter $params
+Update-MgDeviceManagementIoUpdateStatuses -IosUpdateDeviceStatusId $iosUpdateDeviceStatusId -BodyParameter $params
 
 ```

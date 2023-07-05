@@ -27,6 +27,6 @@ $params = @{
 	useManagedBrowser = $true
 }
 
-New-MgDeviceAppManagementMobileApp -BodyParameter $params
+New-MgDeviceAppMgtMobileApp -BodyParameter $params
 
 ```

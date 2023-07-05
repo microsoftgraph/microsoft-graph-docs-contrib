@@ -14,140 +14,147 @@ $requestBody->set@odatatype('#microsoft.graph.deviceManagement');
 
 $requestBody->setSubscriptionState(new DeviceManagementSubscriptionState('active'));
 
-$deviceProtectionOverview = new DeviceProtectionOverview();
-$deviceProtectionOverview->set@odatatype('microsoft.graph.deviceProtectionOverview');
+$additionalData = [
+		'deviceProtectionOverview' => $requestBody = new DeviceProtectionOverview();
+$		requestBody->set@odatatype('microsoft.graph.deviceProtectionOverview');
 
-$deviceProtectionOverview->setTotalReportedDeviceCount(8);
+		$requestBody->setTotalReportedDeviceCount(8);
 
-$deviceProtectionOverview->setInactiveThreatAgentDeviceCount(14);
+		$requestBody->setInactiveThreatAgentDeviceCount(14);
 
-$deviceProtectionOverview->setUnknownStateThreatAgentDeviceCount(2);
+		$requestBody->setUnknownStateThreatAgentDeviceCount(2);
 
-$deviceProtectionOverview->setPendingSignatureUpdateDeviceCount(1);
+		$requestBody->setPendingSignatureUpdateDeviceCount(1);
 
-$deviceProtectionOverview->setCleanDeviceCount(0);
+		$requestBody->setCleanDeviceCount(0);
 
-$deviceProtectionOverview->setPendingFullScanDeviceCount(10);
+		$requestBody->setPendingFullScanDeviceCount(10);
 
-$deviceProtectionOverview->setPendingRestartDeviceCount(9);
+		$requestBody->setPendingRestartDeviceCount(9);
 
-$deviceProtectionOverview->setPendingManualStepsDeviceCount(13);
+		$requestBody->setPendingManualStepsDeviceCount(13);
 
-$deviceProtectionOverview->setPendingOfflineScanDeviceCount(13);
+		$requestBody->setPendingOfflineScanDeviceCount(13);
 
-$deviceProtectionOverview->setCriticalFailuresDeviceCount(11);
+		$requestBody->setCriticalFailuresDeviceCount(11);
 
-$deviceProtectionOverview->setPendingQuickScanDeviceCount(11);
+		$requestBody->setPendingQuickScanDeviceCount(11);
 
 
 $requestBody->setDeviceProtectionOverview($deviceProtectionOverview);
-$windowsMalwareOverview = new WindowsMalwareOverview();
-$windowsMalwareOverview->set@odatatype('microsoft.graph.windowsMalwareOverview');
 
-$windowsMalwareOverview->setMalwareDetectedDeviceCount(10);
+		'windowsMalwareOverview' => $requestBody = new WindowsMalwareOverview();
+$		requestBody->set@odatatype('microsoft.graph.windowsMalwareOverview');
 
-$windowsMalwareOverview->setTotalMalwareCount(1);
+		$requestBody->setMalwareDetectedDeviceCount(10);
 
-$windowsMalwareOverview->setTotalDistinctMalwareCount(9);
+		$requestBody->setTotalMalwareCount(1);
 
-$malwareStateSummaryWindowsMalwareStateCount1 = new WindowsMalwareStateCount();
-$malwareStateSummaryWindowsMalwareStateCount1->set@odatatype('microsoft.graph.windowsMalwareStateCount');
+		$requestBody->setTotalDistinctMalwareCount(9);
 
-$malwareStateSummaryWindowsMalwareStateCount1->setState(new WindowsMalwareThreatState('actionfailed'));
+$malwareStateSummary1 = new ();
+$		malwareStateSummary1->set@odatatype('microsoft.graph.windowsMalwareStateCount');
 
-$malwareStateSummaryWindowsMalwareStateCount1->setDeviceCount(11);
+$		malwareStateSummary1->setState('actionFailed');
 
-$malwareStateSummaryWindowsMalwareStateCount1->setMalwareDetectionCount(5);
+		$malwareStateSummary1->setDeviceCount(11);
 
-$malwareStateSummaryWindowsMalwareStateCount1->setDistinctMalwareCount(4);
+		$malwareStateSummary1->setMalwareDetectionCount(5);
 
-$malwareStateSummaryWindowsMalwareStateCount1->setLastUpdateDateTime(new DateTime('2016-12-31T23:58:21.6459442-08:00'));
+		$malwareStateSummary1->setDistinctMalwareCount(4);
 
-
-$malwareStateSummaryArray []= $malwareStateSummaryWindowsMalwareStateCount1;
-$windowsMalwareOverview->setMalwareStateSummary($malwareStateSummaryArray);
+$		malwareStateSummary1->setLastUpdateDateTime('2016-12-31T23:58:21.6459442-08:00');
 
 
-$malwareSeveritySummaryWindowsMalwareSeverityCount1 = new WindowsMalwareSeverityCount();
-$malwareSeveritySummaryWindowsMalwareSeverityCount1->set@odatatype('microsoft.graph.windowsMalwareSeverityCount');
-
-$malwareSeveritySummaryWindowsMalwareSeverityCount1->setSeverity(new WindowsMalwareSeverity('low'));
-
-$malwareSeveritySummaryWindowsMalwareSeverityCount1->setMalwareDetectionCount(5);
-
-$malwareSeveritySummaryWindowsMalwareSeverityCount1->setDistinctMalwareCount(4);
-
-$malwareSeveritySummaryWindowsMalwareSeverityCount1->setLastUpdateDateTime(new DateTime('2016-12-31T23:58:21.6459442-08:00'));
+$malwareStateSummaryArray []= $malwareStateSummary1;
+$requestBody->setMalwareStateSummary($malwareStateSummaryArray);
 
 
-$malwareSeveritySummaryArray []= $malwareSeveritySummaryWindowsMalwareSeverityCount1;
-$windowsMalwareOverview->setMalwareSeveritySummary($malwareSeveritySummaryArray);
+$malwareSeveritySummary1 = new ();
+$	malwareSeveritySummary1->set@odatatype('microsoft.graph.windowsMalwareSeverityCount');
+
+$	malwareSeveritySummary1->setSeverity('low');
+
+	$malwareSeveritySummary1->setMalwareDetectionCount(5);
+
+	$malwareSeveritySummary1->setDistinctMalwareCount(4);
+
+$	malwareSeveritySummary1->setLastUpdateDateTime('2016-12-31T23:58:21.6459442-08:00');
 
 
-$malwareExecutionStateSummaryWindowsMalwareExecutionStateCount1 = new WindowsMalwareExecutionStateCount();
-$malwareExecutionStateSummaryWindowsMalwareExecutionStateCount1->set@odatatype('microsoft.graph.windowsMalwareExecutionStateCount');
-
-$malwareExecutionStateSummaryWindowsMalwareExecutionStateCount1->setExecutionState(new WindowsMalwareExecutionState('blocked'));
-
-$malwareExecutionStateSummaryWindowsMalwareExecutionStateCount1->setDeviceCount(11);
-
-$malwareExecutionStateSummaryWindowsMalwareExecutionStateCount1->setLastUpdateDateTime(new DateTime('2016-12-31T23:58:21.6459442-08:00'));
+$malwareSeveritySummaryArray []= $malwareSeveritySummary1;
+$requestBody->setMalwareSeveritySummary($malwareSeveritySummaryArray);
 
 
-$malwareExecutionStateSummaryArray []= $malwareExecutionStateSummaryWindowsMalwareExecutionStateCount1;
-$windowsMalwareOverview->setMalwareExecutionStateSummary($malwareExecutionStateSummaryArray);
+$malwareExecutionStateSummary1 = new ();
+$malwareExecutionStateSummary1->set@odatatype('microsoft.graph.windowsMalwareExecutionStateCount');
+
+$malwareExecutionStateSummary1->setExecutionState('blocked');
+
+$malwareExecutionStateSummary1->setDeviceCount(11);
+
+$malwareExecutionStateSummary1->setLastUpdateDateTime('2016-12-31T23:58:21.6459442-08:00');
 
 
-$malwareCategorySummaryWindowsMalwareCategoryCount1 = new WindowsMalwareCategoryCount();
-$malwareCategorySummaryWindowsMalwareCategoryCount1->set@odatatype('microsoft.graph.windowsMalwareCategoryCount');
-
-$malwareCategorySummaryWindowsMalwareCategoryCount1->setCategory(new WindowsMalwareCategory('adware'));
-
-$malwareCategorySummaryWindowsMalwareCategoryCount1->setDeviceCount(11);
-
-$malwareCategorySummaryWindowsMalwareCategoryCount1->setActiveMalwareDetectionCount(11);
-
-$malwareCategorySummaryWindowsMalwareCategoryCount1->setDistinctActiveMalwareCount(10);
-
-$malwareCategorySummaryWindowsMalwareCategoryCount1->setLastUpdateDateTime(new DateTime('2016-12-31T23:58:21.6459442-08:00'));
+$malwareExecutionStateSummaryArray []= $malwareExecutionStateSummary1;
+$requestBody->setMalwareExecutionStateSummary($malwareExecutionStateSummaryArray);
 
 
-$malwareCategorySummaryArray []= $malwareCategorySummaryWindowsMalwareCategoryCount1;
-$windowsMalwareOverview->setMalwareCategorySummary($malwareCategorySummaryArray);
+$malwareCategorySummary1 = new ();
+$malwareCategorySummary1->set@odatatype('microsoft.graph.windowsMalwareCategoryCount');
+
+$malwareCategorySummary1->setCategory('adware');
+
+$malwareCategorySummary1->setDeviceCount(11);
+
+$malwareCategorySummary1->setActiveMalwareDetectionCount(11);
+
+$malwareCategorySummary1->setDistinctActiveMalwareCount(10);
+
+$malwareCategorySummary1->setLastUpdateDateTime('2016-12-31T23:58:21.6459442-08:00');
 
 
-$malwareNameSummaryWindowsMalwareNameCount1 = new WindowsMalwareNameCount();
-$malwareNameSummaryWindowsMalwareNameCount1->set@odatatype('microsoft.graph.windowsMalwareNameCount');
-
-$malwareNameSummaryWindowsMalwareNameCount1->setMalwareIdentifier('Malware Identifier value');
-
-$malwareNameSummaryWindowsMalwareNameCount1->setName('Name value');
-
-$malwareNameSummaryWindowsMalwareNameCount1->setDeviceCount(11);
-
-$malwareNameSummaryWindowsMalwareNameCount1->setLastUpdateDateTime(new DateTime('2016-12-31T23:58:21.6459442-08:00'));
+$malwareCategorySummaryArray []= $malwareCategorySummary1;
+$requestBody->setMalwareCategorySummary($malwareCategorySummaryArray);
 
 
-$malwareNameSummaryArray []= $malwareNameSummaryWindowsMalwareNameCount1;
-$windowsMalwareOverview->setMalwareNameSummary($malwareNameSummaryArray);
+$malwareNameSummary1 = new ();
+$malwareNameSummary1->set@odatatype('microsoft.graph.windowsMalwareNameCount');
+
+$malwareNameSummary1->setMalwareIdentifier('Malware Identifier value');
+
+$malwareNameSummary1->setName('Name value');
+
+$malwareNameSummary1->setDeviceCount(11);
+
+$malwareNameSummary1->setLastUpdateDateTime('2016-12-31T23:58:21.6459442-08:00');
 
 
-$osVersionsSummaryOsVersionCount1 = new OsVersionCount();
-$osVersionsSummaryOsVersionCount1->set@odatatype('microsoft.graph.osVersionCount');
-
-$osVersionsSummaryOsVersionCount1->setOsVersion('Os Version value');
-
-$osVersionsSummaryOsVersionCount1->setDeviceCount(11);
-
-$osVersionsSummaryOsVersionCount1->setLastUpdateDateTime(new DateTime('2016-12-31T23:58:21.6459442-08:00'));
+$malwareNameSummaryArray []= $malwareNameSummary1;
+$requestBody->setMalwareNameSummary($malwareNameSummaryArray);
 
 
-$osVersionsSummaryArray []= $osVersionsSummaryOsVersionCount1;
-$windowsMalwareOverview->setOsVersionsSummary($osVersionsSummaryArray);
+$osVersionsSummary1 = new ();
+$osVersionsSummary1->set@odatatype('microsoft.graph.osVersionCount');
+
+$osVersionsSummary1->setOsVersion('Os Version value');
+
+$osVersionsSummary1->setDeviceCount(11);
+
+$osVersionsSummary1->setLastUpdateDateTime('2016-12-31T23:58:21.6459442-08:00');
+
+
+$osVersionsSummaryArray []= $osVersionsSummary1;
+$requestBody->setOsVersionsSummary($osVersionsSummaryArray);
 
 
 
 $requestBody->setWindowsMalwareOverview($windowsMalwareOverview);
+
+];
+$requestBody->setAdditionalData($additionalData);
+
+
 
 
 $result = $graphServiceClient->deviceManagement()->patch($requestBody);

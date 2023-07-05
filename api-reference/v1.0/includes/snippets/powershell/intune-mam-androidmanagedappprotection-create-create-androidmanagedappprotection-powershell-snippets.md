@@ -51,6 +51,6 @@ $params = @{
 	customBrowserDisplayName = "Custom Browser Display Name value"
 }
 
-New-MgDeviceAppManagementAndroidManagedAppProtection -BodyParameter $params
+New-MgDeviceAppMgtAndroidManagedAppProtection -BodyParameter $params
 
 ```

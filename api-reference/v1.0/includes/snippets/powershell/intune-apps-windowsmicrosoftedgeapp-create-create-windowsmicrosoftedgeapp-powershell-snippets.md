@@ -27,6 +27,6 @@ $params = @{
 	displayLanguageLocale = "Display Language Locale value"
 }
 
-New-MgDeviceAppManagementMobileApp -BodyParameter $params
+New-MgDeviceAppMgtMobileApp -BodyParameter $params
 
 ```

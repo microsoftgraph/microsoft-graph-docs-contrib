@@ -25,6 +25,6 @@ $params = @{
 	publishingState = "processing"
 }
 
-New-MgDeviceAppManagementMobileApp -BodyParameter $params
+New-MgDeviceAppMgtMobileApp -BodyParameter $params
 
 ```

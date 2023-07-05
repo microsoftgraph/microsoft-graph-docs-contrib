@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DeviceManagement
 
-Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceDeviceStatusId $deviceComplianceDeviceStatusId
+Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceDeviceStatusId $deviceComplianceDeviceStatusId
 
 ```
