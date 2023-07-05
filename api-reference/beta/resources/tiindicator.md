@@ -19,15 +19,13 @@ Threat indicators uploaded via **tiIndicators** will be used in conjunction with
 
 Current **targetProduct** support includes the following:
 
-- **Azure Sentinel** – Supports all documented **tiIndicators** methods listed in the following section.
 - **Microsoft Defender for Endpoint** – Supports the following **tiIndicators** methods:
      - [Get tiIndicator](../api/tiindicator-get.md)
      - [Create tiIndicator](../api/tiindicators-post.md)
      - [List tiIndicators](../api/tiindicators-list.md)
      - [Update](../api/tiindicator-update.md)
      - [Delete](../api/tiindicator-delete.md)
-
-     Support for the bulk methods is coming soon.
+- **Azure Sentinel** – Please refer this document to [Connect your threat intelligence platform to Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/connect-threat-intelligence-tip). Please note that the Security API exclusively accepts TiIndicator requests from tenants with existing accounts.
 
   > [!NOTE]
   >The following indicator types are supported by Microsoft Defender for Endpoint targetProduct:
