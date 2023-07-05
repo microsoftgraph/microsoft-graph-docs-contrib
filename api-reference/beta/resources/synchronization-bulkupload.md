@@ -1,6 +1,6 @@
 ---
 title: "bulkUpload resource type"
-description: "Represents capability of the synchronization service to process bulk uploads. The bulk upload request payload should be compliant with the [SCIM bulk request](https://www.rfc-editor.org/rfc/rfc7644.html#section-3.7) format."
+description: "Represents capability of the synchronization service to process bulk uploads."
 author: "cmmdesai"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the capability of the Azure AD synchronization service to process bulk uploads.
+Represents the capability of the Azure AD synchronization service to process bulk uploads. The bulk upload request payload should be compliant with the [SCIM bulk request](https://www.rfc-editor.org/rfc/rfc7644.html#section-3.7) format.
 
 ## Methods
 

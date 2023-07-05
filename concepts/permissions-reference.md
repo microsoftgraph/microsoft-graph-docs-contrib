@@ -2344,7 +2344,7 @@ SynchronizationData-User.Upload | Allows the app to upload bulk user data to the
 |:----------------|:------------------|:-------------|:-----------------------|
 Synchronization.Read.All | Read all Azure AD synchronization data | Allows the application to read Azure AD synchronization information, without a signed-in user. | Yes |
 Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the application to configure the Azure AD synchronization service, without a signed-in user. | Yes |
-SynchronizationData-User.Upload | Upload user data to the identity synchronization service | Allows the application to upload bulk user data to the identity synchronization service, without a signed-in user. | Yes | No |
+SynchronizationData-User.Upload | Upload user data to the identity synchronization service | Allows the application to upload bulk user data to the identity synchronization service, without a signed-in user. | Yes |
 
 
 ### Example usage
