@@ -25,7 +25,9 @@ Address an [application](/graph/api/resources/application) by a new alternate ke
 ### Search | Query
 Optionally specify the sortable or refinable properties to collapse in the results of a [search request](/graph/api/resources/searchrequest).
 
+[Search with multiple entity request](/graph/search-concept-multiplerequest) in the request body to retrieve items from different sources. 
 
+Guest users can search SharePoint or OneDrive items that are shared with them.
 ## June 2023: New in preview only
 
 ### Device and app management | Cloud PC
