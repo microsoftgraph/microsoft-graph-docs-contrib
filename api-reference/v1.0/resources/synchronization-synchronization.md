@@ -36,7 +36,6 @@ Represents the capability for Azure Active Directory (Azure AD) identity synchro
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.synchronization",
   "openType": false
 }
