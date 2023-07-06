@@ -15982,7 +15982,7 @@ items:
             href: api/security-ediscoveryreviewset-get.md
           - name: Add to review set
             href: api/security-ediscoveryreviewset-addtoreviewset.md
-          - name: Export (preview)
+          - name: Export 
             href: api/security-ediscoveryreviewset-export.md
             items:
             - name: Get download URL (deprecated)
@@ -16000,7 +16000,7 @@ items:
               href: api/security-ediscoveryreviewsetquery-update.md
             - name: Delete
               href: api/security-ediscoveryreviewset-delete-queries.md
-            - name: Export (preview)
+            - name: Export 
               href: api/security-ediscoveryreviewsetquery-export.md
               items:
               - name: Get download URL (deprecated)
