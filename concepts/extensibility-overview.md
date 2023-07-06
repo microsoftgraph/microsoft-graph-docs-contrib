@@ -209,7 +209,7 @@ Before you can add a directory extension to a resource instance, you must first 
 
 ##### Request
 
-In the following request, `30a5435a-1871-485c-8c7b-65f69e287e7b` is the object ID of the application that owns the directory extension. On the `beta` endpoint, you can create directory extensions that store a collection of values.
+In the following request, `30a5435a-1871-485c-8c7b-65f69e287e7b` is the object ID of the application that owns the directory extension. You can create directory extensions that store a collection of values.
 
 # [HTTP](#tab/http)
 <!-- {

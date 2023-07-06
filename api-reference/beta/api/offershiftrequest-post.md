@@ -38,6 +38,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 Provide the new [offershiftrequest](../resources/offershiftrequest.md) object in the request body for this method.
