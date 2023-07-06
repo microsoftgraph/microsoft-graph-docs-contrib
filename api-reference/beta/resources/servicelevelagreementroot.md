@@ -34,3 +34,8 @@ This entity can not be viewed as it is only a placeholder.
   "openType": false
 }
 -->
+``` json
+{
+  "@odata.type": "#microsoft.graph.serviceLevelAgreementRoot",
+}
+```
