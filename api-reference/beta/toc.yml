@@ -12894,6 +12894,20 @@ items:
               - name: Alert configurations
                 href: resources/unifiedrolemanagementalertconfiguration.md
                 items:
+                - name: Invalid license
+                  href: resources/invalidlicensealertconfiguration.md
+                - name: No MFA on role activation
+                  href: resources/nomfaonroleactivationalertconfiguration.md
+                - name: Redundant role assignment
+                  href: resources/redundantassignmentalertconfiguration.md
+                - name: Role assigned outside PIM
+                  href: resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md
+                - name: Frequent role activation
+                  href: resources/sequentialactivationrenewalsalertconfiguration.md
+                - name: Stale account in privileged role
+                  href: resources/stalesigninalertconfiguration.md
+                - name: Too many global administrators
+                  href: resources/toomanyglobaladminsassignedtotenantalertconfiguration.md
                 - name: List
                   href: api/rolemanagementalert-list-alertconfigurations.md
                 - name: Get
