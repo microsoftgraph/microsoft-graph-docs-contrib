@@ -20,7 +20,7 @@
         },
         {
           "Id": "088a4dd9-4a4e-476a-a3eb-50b8746acc3b",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "sla",
           "ChangeType": "Addition",
           "Description": "Added the **sla** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
