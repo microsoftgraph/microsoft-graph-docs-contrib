@@ -18,6 +18,23 @@ Namespace: microsoft.graph
 |or|
 |and|
 
+### entityType values
+|Member|
+|:---|
+|event|
+|message|
+|driveItem|
+|externalItem|
+|site|
+|list|
+|listItem|
+|drive|
+|unknownFutureValue|
+|chatMessage|
+|person|
+|acronym|
+|bookmark|
+
 ### conditionalAccessExternalTenantsMembershipKind values
 
 | Member             |
@@ -56,6 +73,21 @@ Namespace: microsoft.graph
 | asymmetricKeyLifetime |
 | unknownFutureValue    |
 
+### assignmentType values
+
+| Member              | 
+| :-------------------|
+| Required            |
+| Recommeded          |
+| UnknownFutureValue  |
+
+### courseStatus values
+
+| Member             |
+| :----------------- |
+| notStarted         |
+| inProgress         |
+| completed          |
 ### userPurpose values
 | Member             |
 | :----------------- |
@@ -2790,4 +2822,3 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |group|
 |unknownFutureValue|
-

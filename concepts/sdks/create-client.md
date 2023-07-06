@@ -17,9 +17,9 @@ The following code examples show how to create an instance of a Microsoft Graph 
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="DeviceCodeSnippet":::
 
-# [TypeScript](#tab/typescript)
+# [Go](#tab/go)
 
-:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
 # [Java](#tab/java)
 
@@ -53,24 +53,14 @@ $user = $graph->createRequest("GET", "/me")
               ->execute();
 ```
 
-# [Go](#tab/go)
-
-:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
-
 # [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-```python
-from azure.identity.aio import EnvironmentCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-from msgraph import GraphRequestAdapter, GraphServiceClient
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="DeviceCodeSnippet":::
 
-credential=EnvironmentCredential()
-auth_provider = AzureIdentityAuthenticationProvider(credential)
+# [TypeScript](#tab/typescript)
 
-adapter = GraphRequestAdapter(auth_provider)
-client = GraphServiceClient(adapter)
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
 
 ---
