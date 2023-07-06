@@ -217,7 +217,7 @@ The search API has the following limitations:
 
 - The search API does not support xrank for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
-- Guest search does not supported for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+- Guest search does not support for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
