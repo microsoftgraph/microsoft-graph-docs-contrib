@@ -67,24 +67,28 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-418
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-caseoperation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-caseoperation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-caseoperation-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-caseoperation-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-caseoperation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-caseoperation-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-caseoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-caseoperation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-caseoperation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-caseoperation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -125,4 +129,12 @@ Content-Type: application/json
     }
 }
 ```
+> **Note:** If you need to perform an export operation, the response will include the download URL, file name, and size in the **exportfileMetadata property. You will be responsible for managing the actual download process. You can choose to download the file to your local computer or export it to your storage account.
+> To automate the process and avoid the interactive sign-in page:
+> 1. Provision the Microsoft Purview eDiscovery application by using [Create ServicePrincpal](../api/serviceprincipal-post-serviceprincipals.md) for the application ID b26e684c-5068-4120-a679-64a5d2c909d9.
+> 2. When the application is provisioned, request user-delegated permissions for discovery.Download.Read from the tenant admin. This request should be made from your third-party application interacting with Microsoft Graph.
+> 3. Make sure the tenant admin approves the request.
+> 4. Add the scope for the application to your existing script and make sure the headers include ("X-AllowWithAADToken", "true");. 
+> By following these steps, the user authorization process will be automated, and you won't encounter a manual interactive sign-in page.
+
 

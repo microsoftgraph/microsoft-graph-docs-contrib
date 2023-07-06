@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	action = "adminRemove"
@@ -13,6 +13,6 @@ $params = @{
 	principalId = "071cc716-8147-4397-a5ba-b2105951cc0b"
 }
 
-New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -BodyParameter $params
+New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest -BodyParameter $params
 
 ```

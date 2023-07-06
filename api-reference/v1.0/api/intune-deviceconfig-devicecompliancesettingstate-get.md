@@ -52,16 +52,12 @@ If successful, this method returns a `200 OK` response code and [deviceComplianc
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_deviceconfig_devicecompliancesettingstate_get_get_devicecompliancesettingstate" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{deviceComplianceSettingStateId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.deviceComplianceSettingState" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
