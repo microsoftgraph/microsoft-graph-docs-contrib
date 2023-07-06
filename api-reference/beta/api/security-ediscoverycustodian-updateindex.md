@@ -59,13 +59,12 @@ If successful, this action returns a 202 Accepted response code.
 #### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "start_ediscoverycustodianthis.updateindex"
 }
 -->
----
+
 #### Response
 The following is an example of the response.
 <!-- {
