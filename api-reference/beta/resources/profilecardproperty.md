@@ -21,7 +21,7 @@ For more information on adding properties to the profile card for an organizatio
 
 | Method       | Return Type | Description |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [List](../api/peopleadminsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Get a collection of **profileCardProperty** resources of an organization. |
+| [List](../api/peopleadminsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Get a collection of **profileCardProperty** resources for an organization. |
 | [Create](../api/peopleadminsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new **profileCardProperty** resource for an organization. |
 | [Get](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | Read the properties and relationships of a **profileCardProperty** resource, which contains the profile card customizations that exist in a Microsoft 365 organization for a given field. |
 | [Update](../api/profilecardproperty-update.md)               | [profileCardProperty](profilecardproperty.md) | Update a **profileCardProperty** object.                               |
