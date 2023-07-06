@@ -175,7 +175,7 @@ To get the result template in the [searchResponse](searchresponse.md), you have 
 
 See [Use search display layout](/graph/search-concept-display-layout) for examples.
 
-## Guest Search
+## Guest search
 
 The search API allows guest users to search SharePoint or OneDrive items that are shared with them. To view guest users,  in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, in the left nav, expand **Users**, and then choose **Guest users**. 
 
