@@ -53,6 +53,8 @@ The following table shows the parameters that can be used with this action.
 
 If successful, this action returns a 202 Accepted response code.
 
+## Examples
+
 ### Example 1: Bulk index custodians.
 #### Request
 The following is an example of a request.
@@ -61,6 +63,14 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "start_ediscoverycustodianthis.updateindex"
+}
+-->
+
+#### Response
+The following is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
 }
 -->
 
@@ -108,7 +118,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-41
 
 ---
 
-### Response
+#### Response
 The following is an example of the response.
 <!-- {
   "blockType": "response",
