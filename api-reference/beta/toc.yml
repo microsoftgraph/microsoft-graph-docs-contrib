@@ -12021,6 +12021,34 @@ items:
               href: api/profilecardproperty-update.md
             - name: Delete
               href: api/profilecardproperty-delete.md
+          - name: Todo configuration (preview)
+            href: resources/admintodo.md
+            items:
+            - name: Get
+              href: api/admintodo-get.md
+            - name: Update
+              href: api/admintodo-update.md
+          - name: Forms configuration (preview)
+            href: resources/adminforms.md
+            items:
+            - name: Get
+              href: api/adminforms-get.md
+            - name: Update
+              href: api/adminForms-update.md
+          - name: Apps and Services configuration (preview)
+            href: resources/adminappsandservices.md
+            items:
+            - name: Get
+              href: api/adminappsandservices-get.md
+            - name: Update
+              href: api/adminappsandservices-update.md
+          - name: Dynamics configuration (preview)
+            href: resources/admindynamics.md
+            items:
+            - name: Get
+              href: api/admindynamics-get.md
+            - name: Update
+              href: api/admindynamics-update.md
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
