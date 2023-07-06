@@ -177,7 +177,7 @@ See [Use search display layout](/graph/search-concept-display-layout) for exampl
 
 ## Guest search
 
-The Search API enables guest users to search for items within SharePoint or OneDrive that have been shared with them. To access the list of guest users, navigate to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, click **Users** in the left navigation menu, and select **Guest users**. 
+The Search API enables guest users to search for items within SharePoint or OneDrive that have been shared with them. To access the list of guest users, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, and in the left navigation, choose **Users**, and select **Guest users**. 
 
 ## Error handling
 
@@ -217,7 +217,7 @@ The search API has the following limitations:
 
 - The search API does not support xrank for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
-- Guest search does not support for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+- Guest search does not support searches for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
