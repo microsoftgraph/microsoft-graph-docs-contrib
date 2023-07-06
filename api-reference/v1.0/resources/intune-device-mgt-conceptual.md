@@ -1,7 +1,7 @@
 ---
 title: "Device management in Microsoft Intune"
 description: "Device management resources in Microsoft Intune"
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: conceptualPageType

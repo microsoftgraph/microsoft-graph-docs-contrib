@@ -20,7 +20,7 @@ ExternalActivityCollectionResponse externalActivityCollectionResponse = new Exte
 externalActivityCollectionResponse.value = activitiesList;
 ExternalActivityCollectionPage externalActivityCollectionPage = new ExternalActivityCollectionPage(externalActivityCollectionResponse, null);
 
-graphClient.connections("contosohr").items("TSP228082938")
+graphClient.external().connections("contosohr").items("TSP228082938")
 	.addActivities(ExternalItemAddActivitiesParameterSet
 		.newBuilder()
 		.withActivities(activitiesList)

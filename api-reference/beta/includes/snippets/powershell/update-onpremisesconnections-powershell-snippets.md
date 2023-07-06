@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Administration
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcOnPremisesConnection"
@@ -19,6 +19,6 @@ $params = @{
 	subnetId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"
 }
 
-Update-MgDeviceManagementVirtualEndpointOnPremisesConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -BodyParameter $params
+Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -BodyParameter $params
 
 ```

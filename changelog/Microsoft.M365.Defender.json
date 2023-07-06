@@ -986,7 +986,7 @@
 			"Version": "beta",
 			"CreatedDateTime": "2023-05-31T16:27:08.6931099Z",
 			"WorkloadArea": "Security",
-			"SubArea": ""
+			"SubArea": "Alerts and incidents"
 		  },
 		  {
 			"ChangeList": [
@@ -1044,7 +1044,7 @@
 			"Version": "v1.0",
 			"CreatedDateTime": "2023-05-31T16:27:08.6941406Z",
 			"WorkloadArea": "Security",
-			"SubArea": ""
+			"SubArea": "Alerts and incidents"
 		  }
 	]
 }
