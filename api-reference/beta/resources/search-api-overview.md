@@ -177,7 +177,7 @@ See [Use search display layout](/graph/search-concept-display-layout) for exampl
 
 ## Guest search
 
-The search API allows guest users to search SharePoint or OneDrive items that are shared with them. To view guest users,  in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, in the left nav, expand **Users**, and then choose **Guest users**. 
+The Search API enables guest users to search for items within SharePoint or OneDrive that have been shared with them. To access the list of guest users, navigate to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, click **Users** in the left navigation menu, and select **Guest users**. 
 
 ## Error handling
 
