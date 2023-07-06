@@ -13,7 +13,7 @@ request_body.name = 'new-file-name.docx'
 
 
 
-result = await client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').patch(body = request_body)
+result = await client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').patch(request_body = request_body)
 
 
 ```
