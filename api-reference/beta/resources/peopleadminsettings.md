@@ -21,12 +21,11 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List pronounsSettings](../api/peopleadminsettings-list-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md) collection|Get the pronounsSettings resources from the pronouns navigation property.|
+|[List pronounsSettings](../api/peopleadminsettings-list-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md) collection|Get the [pronounsSettings](../resources/pronounssettings.md) resources from the pronouns navigation property.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-| [List pronounsSettings](../api/peopleadminsettings-list-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md) resource|Get the properties of the [pronounsSettings](../resources/pronounssettings.md) resource for an organization.|
+
+None.
 
 ## Relationships
 |Relationship|Type|Description|
