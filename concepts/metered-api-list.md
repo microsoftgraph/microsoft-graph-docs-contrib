@@ -14,18 +14,17 @@ Some metered APIs and services in Microsoft Graph are protected and require addi
 
 The following table lists the metered APIs and services.
 
-| API | Billing and license information | Protected API form |
-|:--------------------------|:--------------------------|:----------------------------------------|
-| SharePoint and OneDrive for Business [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) | $0.00185 (USD) per API call| [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup) |
-| SharePoint and OneDrive for Business [setRetentionLabel](/graph/api/driveitem-setretentionlabel) | No charge while API is in preview | Pending |
-| Teams [channel](/graph/api/channel-getallmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) | [Microsoft Teams request](https://aka.ms/teamsgraph/requestaccess) |
-| Teams [chat](/graph/api/chats-getallmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) | [Microsoft Teams request](https://aka.ms/teamsgraph/requestaccess) |
-| Teams chat / channel [change notifications](/graph/api/subscription-post-subscriptions) | [Teams API payment models and licensing requirements](/graph/teams-licenses) | [Microsoft Teams request](https://aka.ms/teamsgraph/requestaccess) |
-| Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update) | [Teams API payment models and licensing requirements](teams-licenses.md) | [Microsoft Teams request](https://aka.ms/teamsgraph/requestaccess) |
-| Teams conversationMember [change notifications](/graph/api/subscription-post-subscriptions) | [Teams API payment models and licensing requirements](/graph/teams-licenses) | [Microsoft Teams request](https://aka.ms/teamsgraph/requestaccess) |
+| API | Billing and license information |
+|:--------------------------|:--------------------------|
+| Teams [chat](/graph/api/chats-getallmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) |
+| Teams [channel](/graph/api/channel-getallmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) |
+| Teams chat / channel [change notifications](/graph/api/subscription-post-subscriptions) | [Teams API payment models and licensing requirements](/graph/teams-licenses) |
+| Teams conversationMember [change notifications](/graph/api/subscription-post-subscriptions) | [Teams API payment models and licensing requirements](/graph/teams-licenses) |
+| Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update) | [Teams API payment models and licensing requirements](teams-licenses.md) |
+| SharePoint and OneDrive for Business [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) | $0.00185 (USD) per API call<br/>[Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup) |
 
 ## See also
 
 - [Overview of metered APIs and services in Microsoft Graph](/graph/metered-api-overview)
 - [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup)
-- [Protected APIs in Microsoft Teams](/graph/teams-protected-apis)
+
