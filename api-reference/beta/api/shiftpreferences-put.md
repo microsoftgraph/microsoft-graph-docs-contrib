@@ -39,6 +39,7 @@ PUT /users/{userId}/settings/shiftPreferences
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required.  |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 In the request body, supply a JSON representation of a [shiftPreferences](../resources/shiftpreferences.md) object.
