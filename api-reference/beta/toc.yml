@@ -1348,6 +1348,11 @@ items:
             href: api/synchronization-synchronizationjob-provision-on-demand.md
           - name: Validate credentials
             href: api/synchronization-synchronizationjob-validatecredentials.md
+          - name: Bulk upload 
+            href: resources/synchronization-bulkupload.md
+            items:
+            - name: Perform bulk upload
+              href: api/synchronization-synchronizationjob-post-bulkupload.md
         - name: Schema
           href: resources/synchronization-synchronizationschema.md
           items:
@@ -12021,6 +12026,34 @@ items:
               href: api/profilecardproperty-update.md
             - name: Delete
               href: api/profilecardproperty-delete.md
+          - name: Todo configuration (preview)
+            href: resources/admintodo.md
+            items:
+            - name: Get
+              href: api/admintodo-get.md
+            - name: Update
+              href: api/admintodo-update.md
+          - name: Forms configuration (preview)
+            href: resources/adminforms.md
+            items:
+            - name: Get
+              href: api/adminforms-get.md
+            - name: Update
+              href: api/adminForms-update.md
+          - name: Apps and Services configuration (preview)
+            href: resources/adminappsandservices.md
+            items:
+            - name: Get
+              href: api/adminappsandservices-get.md
+            - name: Update
+              href: api/adminappsandservices-update.md
+          - name: Dynamics configuration (preview)
+            href: resources/admindynamics.md
+            items:
+            - name: Get
+              href: api/admindynamics-get.md
+            - name: Update
+              href: api/admindynamics-update.md
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
@@ -14344,42 +14377,46 @@ items:
           href: api/message-update.md
         - name: Delete message
           href: api/message-delete.md
-        - name: Get message delta
-          href: api/message-delta.md
-        - name: Send draft message
-          href: api/message-send.md
+        - name: Add attachment
+          href: api/message-post-attachments.md
         - name: Copy message
           href: api/message-copy.md
-        - name: Move message
-          href: api/message-move.md
-        - name: Create draft to reply
-          href: api/message-createreply.md
-        - name: Reply to a message
-          href: api/message-reply.md
-        - name: Create draft to reply-all
-          href: api/message-createreplyall.md
-        - name: Reply-all to a message
-          href: api/message-replyall.md
         - name: Create draft to forward message
           href: api/message-createforward.md
+        - name: Create draft to reply
+          href: api/message-createreply.md
+        - name: Create draft to reply-all
+          href: api/message-createreplyall.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Create session to attach large file
+          href: api/attachment-createuploadsession.md
         - name: Forward message
-          href: api/message-forward.md
+          href: api/message-forward.md  
+        - name: Get mail tips
+          href: api/user-getmailtips.md
+        - name: Get message delta
+          href: api/message-delta.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+        - name: List attachments
+          href: api/message-list-attachments.md
+        - name: Mark as junk
+          href: api/message-markasjunk.md
+        - name: Mark as not junk
+          href: api/message-markasnotjunk.md
+        - name: Move message
+          href: api/message-move.md  
+        - name: Reply to message
+          href: api/message-reply.md
+        - name: Reply-all to message
+          href: api/message-replyall.md
+        - name: Send draft message
+          href: api/message-send.md
         - name: Send mail
           href: api/user-sendmail.md
         - name: Unsubscribe
           href: api/message-unsubscribe.md
-        - name: Get MailTips
-          href: api/user-getmailtips.md
-        - name: List attachments
-          href: api/message-list-attachments.md
-        - name: Add attachment
-          href: api/message-post-attachments.md
-        - name: Create session to attach large file
-          href: api/attachment-createuploadsession.md
-        - name: Create open extension
-          href: api/opentypeextension-post-opentypeextension.md
-        - name: Get open extension
-          href: api/opentypeextension-get.md
       - name: Attachment
         items:
         - name: Attachment
@@ -15149,26 +15186,33 @@ items:
           items:
           - name: Overview
             href: resources/authenticationmethods-usage-insights-overview.md
-          - name: Credential User Registration Count
+          - name: Credential usage summary
+            href: resources/credentialusagesummary.md
+            items:
+            - name: List
+              href: api/reportroot-getcredentialusagesummary.md            
+          - name: Credential user registration count
             href: resources/credentialuserregistrationcount.md
             items:
             - name: Get
               href: api/reportroot-getcredentialuserregistrationcount.md
-          - name: Credential User Registration Details (deprecated)
+          - name: Credential user registration details (deprecated)
             href: resources/credentialuserregistrationdetails.md
             items:
             - name: List
               href: api/reportroot-list-credentialuserregistrationdetails.md
-          - name: User Credential Usage Details
+          - name: User credential usage details
             href: resources/usercredentialusagedetails.md
             items:
             - name: List
               href: api/reportroot-list-usercredentialusagedetails.md
-          - name: Credential Usage Summary
-            href: resources/credentialusagesummary.md
+          - name: User registration details
+            href: resources/userregistrationdetails.md
             items:
             - name: List
-              href: api/reportroot-getcredentialusagesummary.md
+              href: api/authenticationmethodsroot-list-userregistrationdetails.md
+            - name: Get
+              href: api/userregistrationdetails-get.md
           - name: Users registered by feature
             href: resources/userregistrationfeaturesummary.md
             items:
@@ -15179,13 +15223,6 @@ items:
             items:
             - name: List
               href: api/authenticationmethodsroot-usersregisteredbymethod.md
-          - name: User registration details
-            href: resources/userregistrationdetails.md
-            items:
-            - name: List
-              href: api/authenticationmethodsroot-list-userregistrationdetails.md
-            - name: Get
-              href: api/userregistrationdetails-get.md
         - name: Service principal activity
           href: resources/serviceprincipalsigninactivity.md
           items:
@@ -15950,7 +15987,7 @@ items:
             href: api/security-ediscoveryreviewset-get.md
           - name: Add to review set
             href: api/security-ediscoveryreviewset-addtoreviewset.md
-          - name: Export (preview)
+          - name: Export 
             href: api/security-ediscoveryreviewset-export.md
             items:
             - name: Get download URL (deprecated)
@@ -15968,7 +16005,7 @@ items:
               href: api/security-ediscoveryreviewsetquery-update.md
             - name: Delete
               href: api/security-ediscoveryreviewset-delete-queries.md
-            - name: Export (preview)
+            - name: Export 
               href: api/security-ediscoveryreviewsetquery-export.md
               items:
               - name: Get download URL (deprecated)

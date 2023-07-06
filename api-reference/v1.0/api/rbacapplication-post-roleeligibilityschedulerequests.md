@@ -190,7 +190,7 @@ In the following request, the admin creates a request to revoke the eligibility 
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests
 Content-Type: application/json
 
 {

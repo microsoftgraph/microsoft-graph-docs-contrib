@@ -1,112 +1,324 @@
 {
-    "changelog":[
-       {
-          "ChangeList":[
-             {
-                "Id": "1db1cd43-231a-4044-bbdb-b5e23b2b2d16",
-                "ApiChange": "Resources",
-                "ChangedApiName": "resourceSpecificPermissionGrant",
-                "ChangeType": "Addition",
-                "Description": "Added the [resourceSpecificPermissionGrant](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta) resource.",
-                "Target": "resourceSpecificPermissionGrant"
-             },
-             {
-                "Id":"c1b17c32-9287-11eb-8507-815178c7c041",
-                "ApiChange":"Resources",
-                "ChangedApiName":"timeCard",
-                "ChangeType":"Addition",
-                "Description":"Added the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timecard?view=graph-rest-beta) resource.",
-                "Target":"timeCard"
-             },
-             {
-               "Id":"c1b17c32-9287-11eb-8507-815178c7c041",
-               "ApiChange":"Resources",
-               "ChangedApiName":"timeCardBreak",
-               "ChangeType":"Addition",
-               "Description":"Added the [timeCardBreak](https://learn.microsoft.com/en-us/graph/api/resources/timecardbreak?view=graph-rest-beta) resource.",
-               "Target":"timeCardBreak"
-             },
-             {
-               "Id":"c1b17c32-9287-11eb-8507-815178c7c041",
-               "ApiChange":"Resources",
-               "ChangedApiName":"timeCardEntry",
-               "ChangeType":"Addition",
-               "Description":"Added the [timeCardEntry](https://learn.microsoft.com/en-us/graph/api/resources/timecardentry?view=graph-rest-beta) resource.",
-               "Target":"timeCardEntry"
-             },
-             {
-               "Id":"c1b17c32-9287-11eb-8507-815178c7c041",
-               "ApiChange":"Resources",
-               "ChangedApiName":"timeCardEvent",
-               "ChangeType":"Addition",
-               "Description":"Added the [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timecardevent?view=graph-rest-beta) resource.",
-               "Target":"timeCardEvent"
-             },
-             {
-                "Id":"c1b3db9e-9287-11eb-8507-815178c7c041",
-                "ApiChange":"Member",
-                "ChangedApiName":"timeOffReason",
-                "ChangeType":"Addition",
-                "Description":"Added the `timeOffReason` member to the **workforceIntegrationSupportedEntities** enumeration.",
-                "Target":"workforceIntegrationSupportedEntities"
-             },
-             {
-                "Id":"c1b63d09-9287-11eb-8507-815178c7c041",
-                "ApiChange":"Member",
-                "ChangedApiName":"timeOff",
-                "ChangeType":"Addition",
-                "Description":"Added the `timeOff` member to the **workforceIntegrationSupportedEntities** enumeration.",
-                "Target":"workforceIntegrationSupportedEntities"
-             },
-             {
-                "Id":"c1b89e1f-9287-11eb-8507-815178c7c041",
-                "ApiChange":"Member",
-                "ChangedApiName":"timeOffRequest",
-                "ChangeType":"Addition",
-                "Description":"Added the `timeOffRequest` member to the **workforceIntegrationSupportedEntities** enumeration.",
-                "Target":"workforceIntegrationSupportedEntities"
-             },
-             {
-               "Id":"c1b89e1f-9287-11eb-8507-815178c7c041",
-               "ApiChange":"Member",
-               "ChangedApiName":"confirmedBy",
-               "ChangeType":"Addition",
-               "Description":"Added the `none`, `user`, `manager` and `unknownFutureValue` members to the **confirmedBy** enumeration.",
-               "Target":"confirmedBy"
-            }
-          ],
-          "Id":"c1af173d-9287-11eb-8507-815178c7c041",
-          "Cloud":"prd",
-          "Version":"beta",
-          "CreatedDateTime":"2021-06-04T01:15:33.264Z",
-          "WorkloadArea":"Teamwork and communications",
-          "SubArea":"Shift management"
-       },
-       {
-        "ChangeList":[
-           {
-              "Id":"c9923370-4dca-4605-9027-77a05ddfdc8b",
-              "ApiChange":"Member",
-              "ChangedApiName":"workforceIntegrationSupportedEntities",
-              "ChangeType":"Addition",
-              "Description":"Added the `shift`,`swapRequest`,`userShiftPreferences`,`openShift`,``openShiftRequest`,`offerShiftRequest` members to the **workforceIntegrationSupportedEntities** enumeration.",
-              "Target":"workforceIntegrationSupportedEntities"
-           },
-           {
-            "Id":"c9923370-4dca-4605-9027-77a05ddfdc8b",
-            "ApiChange":"Member",
-            "ChangedApiName":"workforceIntegrationEncryptionProtocol",
-            "ChangeType":"Addition",
-            "Description":"Added the `sharedSecret` and `unknownFutureValue` members to the **workforceIntegrationEncryptionProtocol** enumeration.",
-            "Target":"workforceIntegrationEncryptionProtocol"
-         }
-        ],
-        "Id":"c9923370-4dca-4605-9027-77a05ddfdc8b",
-        "Cloud":"prd",
-        "Version":"beta",
-        "CreatedDateTime":"2021-06-04T01:15:33.264Z",
-        "WorkloadArea":"Teamwork and communications",
-        "SubArea":"Shift management"
-     }
-    ]
- }
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "1db1cd43-231a-4044-bbdb-b5e23b2b2d16",
+          "ApiChange": "Resources",
+          "ChangedApiName": "resourceSpecificPermissionGrant",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceSpecificPermissionGrant](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta) resource.",
+          "Target": "resourceSpecificPermissionGrant"
+        },
+        {
+          "Id": "c1b17c32-9287-11eb-8507-815178c7c041",
+          "ApiChange": "Resources",
+          "ChangedApiName": "timeCard",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timecard?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        },
+        {
+          "Id": "c1b17c32-9287-11eb-8507-815178c7c041",
+          "ApiChange": "Resources",
+          "ChangedApiName": "timeCardBreak",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeCardBreak](https://learn.microsoft.com/en-us/graph/api/resources/timecardbreak?view=graph-rest-beta) resource.",
+          "Target": "timeCardBreak"
+        },
+        {
+          "Id": "c1b17c32-9287-11eb-8507-815178c7c041",
+          "ApiChange": "Resources",
+          "ChangedApiName": "timeCardEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeCardEntry](https://learn.microsoft.com/en-us/graph/api/resources/timecardentry?view=graph-rest-beta) resource.",
+          "Target": "timeCardEntry"
+        },
+        {
+          "Id": "c1b17c32-9287-11eb-8507-815178c7c041",
+          "ApiChange": "Resources",
+          "ChangedApiName": "timeCardEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timecardevent?view=graph-rest-beta) resource.",
+          "Target": "timeCardEvent"
+        },
+        {
+          "Id": "c1b3db9e-9287-11eb-8507-815178c7c041",
+          "ApiChange": "Member",
+          "ChangedApiName": "timeOffReason",
+          "ChangeType": "Addition",
+          "Description": "Added the `timeOffReason` member to the **workforceIntegrationSupportedEntities** enumeration.",
+          "Target": "workforceIntegrationSupportedEntities"
+        },
+        {
+          "Id": "c1b63d09-9287-11eb-8507-815178c7c041",
+          "ApiChange": "Member",
+          "ChangedApiName": "timeOff",
+          "ChangeType": "Addition",
+          "Description": "Added the `timeOff` member to the **workforceIntegrationSupportedEntities** enumeration.",
+          "Target": "workforceIntegrationSupportedEntities"
+        },
+        {
+          "Id": "c1b89e1f-9287-11eb-8507-815178c7c041",
+          "ApiChange": "Member",
+          "ChangedApiName": "timeOffRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the `timeOffRequest` member to the **workforceIntegrationSupportedEntities** enumeration.",
+          "Target": "workforceIntegrationSupportedEntities"
+        },
+        {
+          "Id": "c1b89e1f-9287-11eb-8507-815178c7c041",
+          "ApiChange": "Member",
+          "ChangedApiName": "confirmedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the `none`, `user`, `manager` and `unknownFutureValue` members to the **confirmedBy** enumeration.",
+          "Target": "confirmedBy"
+        }
+      ],
+      "Id": "c1af173d-9287-11eb-8507-815178c7c041",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-04T01:15:33.264Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c9923370-4dca-4605-9027-77a05ddfdc8b",
+          "ApiChange": "Member",
+          "ChangedApiName": "workforceIntegrationSupportedEntities",
+          "ChangeType": "Addition",
+          "Description": "Added the `shift`,`swapRequest`,`userShiftPreferences`,`openShift`,``openShiftRequest`,`offerShiftRequest` members to the **workforceIntegrationSupportedEntities** enumeration.",
+          "Target": "workforceIntegrationSupportedEntities"
+        },
+        {
+          "Id": "c9923370-4dca-4605-9027-77a05ddfdc8b",
+          "ApiChange": "Member",
+          "ChangedApiName": "workforceIntegrationEncryptionProtocol",
+          "ChangeType": "Addition",
+          "Description": "Added the `sharedSecret` and `unknownFutureValue` members to the **workforceIntegrationEncryptionProtocol** enumeration.",
+          "Target": "workforceIntegrationEncryptionProtocol"
+        }
+      ],
+      "Id": "c9923370-4dca-4605-9027-77a05ddfdc8b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-04T01:15:33.264Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+          "ApiChange": "Header",
+          "ChangedApiName": "offerShiftRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-beta) resource.",
+          "Target": "offerShiftRequest"
+        },
+        {
+          "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+          "ApiChange": "Header",
+          "ChangedApiName": "openShift",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openshift?view=graph-rest-beta) resource.",
+          "Target": "openShift"
+        },
+        {
+          "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+          "ApiChange": "Header",
+          "ChangedApiName": "openShiftChangeRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-beta) resource.",
+          "Target": "openShiftChangeRequest"
+        },
+        {
+          "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+          "ApiChange": "Header",
+          "ChangedApiName": "schedule",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+          "ApiChange": "Header",
+          "ChangedApiName": "schedulingGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulinggroup?view=graph-rest-beta) resource.",
+          "Target": "schedulingGroup"
+        },
+        {
+          "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+          "ApiChange": "Header",
+          "ChangedApiName": "shift",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta) resource.",
+          "Target": "shift"
+        },
+        {
+          "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+          "ApiChange": "Header",
+          "ChangedApiName": "shiftPreferences",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [shiftPreferences](https://learn.microsoft.com/en-us/graph/api/resources/shiftpreferences?view=graph-rest-beta) resource.",
+          "Target": "shiftPreferences"
+        },
+        {
+          "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+          "ApiChange": "Header",
+          "ChangedApiName": "swapShiftsChangeRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta) resource.",
+          "Target": "swapShiftsChangeRequest"
+        },
+        {
+          "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+          "ApiChange": "Header",
+          "ChangedApiName": "timeOff",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeoff?view=graph-rest-beta) resource.",
+          "Target": "timeOff"
+        },
+        {
+          "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+          "ApiChange": "Header",
+          "ChangedApiName": "timeOffReason",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeoffreason?view=graph-rest-beta) resource.",
+          "Target": "timeOffReason"
+        },
+        {
+          "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+          "ApiChange": "Header",
+          "ChangedApiName": "timeOffRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta) resource.",
+          "Target": "timeOffRequest"
+        },
+        {
+          "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+          "ApiChange": "Header",
+          "ChangedApiName": "workforceIntegration",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [workforceIntegration](https://learn.microsoft.com/en-us/graph/api/resources/workforceintegration?view=graph-rest-beta) resource.",
+          "Target": "workforceIntegration"
+        }
+      ],
+      "Id": "237752c8-2bdf-4e94-8e63-1cf3712fc3e6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-05T01:15:33.264Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+          "ApiChange": "Header",
+          "ChangedApiName": "offerShiftRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-1.0) resource.",
+          "Target": "offerShiftRequest"
+        },
+        {
+          "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+          "ApiChange": "Header",
+          "ChangedApiName": "openShift",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openshift?view=graph-rest-1.0) resource.",
+          "Target": "openShift"
+        },
+        {
+          "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+          "ApiChange": "Header",
+          "ChangedApiName": "openShiftChangeRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-1.0) resource.",
+          "Target": "openShiftChangeRequest"
+        },
+        {
+          "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+          "ApiChange": "Header",
+          "ChangedApiName": "schedule",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-1.0) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+          "ApiChange": "Header",
+          "ChangedApiName": "schedulingGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulinggroup?view=graph-rest-1.0) resource.",
+          "Target": "schedulingGroup"
+        },
+        {
+          "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+          "ApiChange": "Header",
+          "ChangedApiName": "shift",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-1.0) resource.",
+          "Target": "shift"
+        },
+        {
+          "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+          "ApiChange": "Header",
+          "ChangedApiName": "shiftPreferences",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [shiftPreferences](https://learn.microsoft.com/en-us/graph/api/resources/shiftpreferences?view=graph-rest-1.0) resource.",
+          "Target": "shiftPreferences"
+        },
+        {
+          "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+          "ApiChange": "Header",
+          "ChangedApiName": "swapShiftsChangeRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0) resource.",
+          "Target": "swapShiftsChangeRequest"
+        },
+        {
+          "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+          "ApiChange": "Header",
+          "ChangedApiName": "timeOff",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeoff?view=graph-rest-1.0) resource.",
+          "Target": "timeOff"
+        },
+        {
+          "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+          "ApiChange": "Header",
+          "ChangedApiName": "timeOffReason",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeoffreason?view=graph-rest-1.0) resource.",
+          "Target": "timeOffReason"
+        },
+        {
+          "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+          "ApiChange": "Header",
+          "ChangedApiName": "timeOffRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-1.0) resource.",
+          "Target": "timeOffRequest"
+        },
+        {
+          "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+          "ApiChange": "Header",
+          "ChangedApiName": "workforceIntegration",
+          "ChangeType": "Addition",
+          "Description": "Added the `MS-APP-ACTS-AS` request header to all operations of the [workforceIntegration](https://learn.microsoft.com/en-us/graph/api/resources/workforceintegration?view=graph-rest-1.0) resource.",
+          "Target": "workforceIntegration"
+        }
+      ],
+      "Id": "8662d342-a455-4111-a5a0-fa023070440a",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-07-05T01:15:33.264Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
+    }
+  ]
+}

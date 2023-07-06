@@ -7839,6 +7839,8 @@ items:
                     href: api/security-ediscoveryreviewset-get.md
                   - name: Add to review set
                     href: api/security-ediscoveryreviewset-addtoreviewset.md
+                  - name: Export 
+                    href: api/security-ediscoveryreviewset-export.md 
                   - name: Query
                     href: resources/security-ediscoveryreviewsetquery.md
                     items:
@@ -7854,6 +7856,8 @@ items:
                         href: api/security-ediscoveryreviewset-delete-queries.md
                       - name: Apply tags
                         href: api/security-ediscoveryreviewsetquery-applytags.md
+                      - name: Export
+                        href: api/security-ediscoveryreviewsetquery-export.md
               - name: Tag
                 href: resources/security-ediscoveryreviewtag.md
                 items:
