@@ -1,6 +1,6 @@
 ---
 title: "peopleAdminSettings resource type"
-description: "Represents a setting to control the people related admin settings in the tenant"
+description: "Represents a setting to control the people-related admin settings in the tenant"
 author: "aymen-ms"
 ms.localizationpriority: medium
 ms.prod: "people"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains settings that are applicable to the [organization](organization.md) or that should be applied to [user](user.md) objects within an organization.
-
+Represents a setting to control the people-related admin settings in the tenant.
 
 Inherits from [entity](../resources/entity.md).
 

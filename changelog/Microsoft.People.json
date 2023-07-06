@@ -175,7 +175,7 @@
 				{
 					"Id": "3d55601a-1632-4115-9e52-4d8a174040d4",
 					"ApiChange": "Resource",
-					"ChangedApiName": "peopleSetting",
+					"ChangedApiName": "peopleAdminSetting",
 					"ChangeType": "Addition",
 					"Description": "Added the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource",
 					"Target": "peopleAdminSettings"
@@ -184,8 +184,16 @@
 					"Id": "3d55601a-1632-4115-9e52-4d8a174040d4",
 					"ApiChange": "Relationship",
 					"ChangedApiName": "pronounsSettings",
-					"ChangeType": "Change",
-					"Description": "Moved the **pronounsSettings** relationship to [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+					"ChangeType": "Deletion",
+					"Description": "Removed the **pronounsSettings** relationship from [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
+					"Target": "organizationSettings"
+				},
+				{
+					"Id": "3d55601a-1632-4115-9e52-4d8a174040d4",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "pronounsSettings",
+					"ChangeType": "Addition",
+					"Description": "Added the **pronounsSettings** relationship to [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
 					"Target": "organizationSettings"
 				},
 				{
@@ -193,7 +201,7 @@
 					"ApiChange": "Permission",
 					"ChangedApiName": "PeopleSettings.Read.All",
 					"ChangeType": "Addition",
-					"Description": "Added support for the policy-based application permission of `PeopleSettings.Read.All` to read tenant-wide [peoplesettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+					"Description": "Added support for the policy-based application permission of `PeopleSettings.Read.All` to read tenant-wide properties of the [peoplesettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
 					"Target": "PeopleSettings"
 				},
 				{
@@ -201,7 +209,7 @@
 					"ApiChange": "Permission",
 					"ChangedApiName": "PeopleSettings.ReadWrite.All",
 					"ChangeType": "Addition",
-					"Description": "Added support for the policy-based application permission of `PeopleSettings.Read.All` to the read and write tenant-wide [peoplesettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+					"Description": "Added support for the policy-based application permission of `PeopleSettings.Read.All` to the read and write tenant-wide properties of the [peoplesettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
 					"Target": "PeopleSettings"
 				}
 			],
