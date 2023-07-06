@@ -98,7 +98,7 @@ POST https://graph.microsoft.com/beta/networkAccess/connectivity/branches/19a920
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -108,4 +108,5 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 201 Created
+Content-Type: application/json
 ```

@@ -99,8 +99,7 @@ Content-Type: application/json
                 "@odata.type": "microsoft.graph.networkAccess.tunnelConfigurationIKEv2Default",
                 "preSharedKey": "/path/to/kv"
             }
-        },
-
+        }
     ],
     "forwardingProfiles": [
         {
@@ -112,7 +111,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -130,7 +129,7 @@ Content-Type: application/json
     "name": "branch 1",
     "region": "eastUS",
     "connectivityState": "pending",
-    "version": 1.0.0,
+    "version": "1.0.0",
     "lastModifiedDateTime": "2021-01-05T00:00:00Z",
     "deviceLinks": [
         {
@@ -160,7 +159,7 @@ Content-Type: application/json
         {
             "id": "8e30d8d6-3588-4d5f-a704-6bd843be5b8f"
         }
-    ],
+    ]
 }
 ```
 

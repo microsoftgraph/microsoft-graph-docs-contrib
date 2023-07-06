@@ -12367,7 +12367,7 @@ items:
           href: resources/networkaccess-tenantstatus.md 
           items:
           - name: Onboard
-            href: api/networkaccess-tenantstatus-onboard.md
+            href: api/networkaccess-networkaccessroot-onboard.md
           - name: Get
             href: api/networkaccess-tenantstatus-get.md
         - name: Settings
@@ -12478,17 +12478,32 @@ items:
         - name: Traffic logs
           href: resources/networkaccess-logs.md
           items:
+          - name: Network access traffic
+            href: resources/networkaccess-networkaccesstraffic.md
           - name: Get 
-            href: api/networkaccess-logs-get.md
+            href: api/networkaccess-networkaccesstraffic-get.md
           - name: List  
-            href: api/networkaccess-networkaccessroot-list-logs.md
+            href: api/networkaccess-logs-list-traffic.md
         - name: Enriched Microsoft 365 logs
           href: resources/networkaccess-enrichedauditlogs.md
           items:
           - name: List 
             href: api/networkaccess-settings-list-enrichedauditlogs.md
           - name: Update  
-            href: api/networkaccess-enrichedauditlogs-update.md    
+            href: api/networkaccess-enrichedauditlogs-update.md
+        - name: Traffic reports
+          href: resources/networkaccess-reports.md
+          items:
+          - name: Entities summary
+            href: api/networkaccess-reports-entitiessummaries.md
+          - name: Cross-tenant access summary
+            href: api/networkaccess-reports-getcrosstenantsummary.md
+          - name: Destination summary
+            href: api/networkaccess-reports-getdestinationsummaries.md
+          - name: Device usage summary
+            href: api/networkaccess-reports-getdeviceusagesummary.md
+          - name: Transaction summaries
+            href: api/networkaccess-reports-transactionsummaries.md
       - name: Governance
         href: resources/identitygovernance-overview.md
         displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management

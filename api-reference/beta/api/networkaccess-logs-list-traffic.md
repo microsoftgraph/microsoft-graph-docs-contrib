@@ -1,18 +1,18 @@
 ---
-title: "Get networkAccessTraffic"
-description: "Retrieve a specific traffic log event."
+title: "List networkAccessTraffic"
+description: "Get a list of log events for traffic routed through the Global Secure Access services."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Get networkAccessTraffic
+# List networkAccessTraffic
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a specific traffic log event.
+Get a list of log events for traffic routed through the Global Secure Access services.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,11 +32,19 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccess/logs/traffic/{networkAccessTrafficId}
+GET /networkAccess/logs/traffic
 ```
 
 ## Optional query parameters
-This method does not support any OData query parameters.
+This method supports the `$select`, `$expand`, `$filter`, `$sort`, and `$top` OData query parameters [OData query parameters](/graph/query-parameters) to help customize the response.
+
+|Name|Syntax|Notes|
+|:---|:---|:---|
+|Server-side pagination|@odata.nextLink=https://graph.microsoft.com/beta/networkAccess/logs/traffic?$skiptoken="generatedtoken"|Page size default and limit is 1000.|
+|Filter|/logs/traffic?$filter=connectionId eq 'a812bcdc-aa36-4c51-b70d-20a84f0ce556'|All properties are filterable.|
+|Sort|/logs/traffic?$orderby=createdDateTime desc|Can order by all properties.|
+|Top|/logs/traffic?$top=50|Max value 1000.|
+|Select|/logs/traffic?$select=transactionId,connectionId,createdDateTime|Select properties.|
 
 ## Request headers
 |Name|Description|
@@ -48,7 +56,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) objects in the response body.
 
 ## Examples
 
@@ -56,11 +64,11 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_networkaccesstraffic"
+  "name": "list_networkaccesstraffic"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/logs/traffic/{networkAccessTrafficId}
+GET https://graph.microsoft.com/beta/networkAccess/logs/traffic
 ```
 
 
@@ -70,7 +78,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.networkaccess.networkAccessTraffic"
+  "@odata.type": "Collection(microsoft.graph.networkaccess.networkAccessTraffic)"
 }
 -->
 ``` http

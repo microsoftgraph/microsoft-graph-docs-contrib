@@ -15,6 +15,8 @@ Namespace: microsoft.graph.networkaccess
 
 An overview of the enriched audit logs workloads within the tenant is provided. It comprises three partners: SharePoint, Teams, and Exchange. Each partner represents a specific workload that generates audit logs.
 
+For more information about enriched audit logs, see [How to use the Global Secure Access enriched Microsoft 365 logs](/azure/global-secure-access/how-to-view-enriched-logs).
+
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 

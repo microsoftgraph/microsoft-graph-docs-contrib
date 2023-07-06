@@ -1,6 +1,6 @@
 ---
 title: "logs resource type"
-description: "Represnts network connections that are routed through Global Secure Access."
+description: "Represnts network connections that are routed through the Global Secure Access services."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,15 +13,13 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represnts network connections that are routed through Global Secure Access.
+Represnts network connections that are routed through the Global Secure Access services.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List logs](../api/networkaccess-networkaccessroot-list-logs.md)|[microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) collection|Retrieve a list of network access logs [microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) objects and their properties.|
-|[Get logs](../api/networkaccess-logs-get.md)|[microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md)|Retrieve a specific network access log  of a [microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) object.|
+
+None.
 
 ## Properties
 |Property|Type|Description|
