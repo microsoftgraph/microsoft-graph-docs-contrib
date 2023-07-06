@@ -6452,12 +6452,52 @@
     {
       "ChangeList": [
         {
+          "Id":"e04528be-94f6-4bc5-9485-9b71da7f4807",
+          "ApiChange":"Permission",
+          "ChangedApiName":"TeamsAppInstallation.ReadWriteAndConsentSelfForUser",
+          "ChangeType":"Addition",
+          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentSelfForUser` delegated permission to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-beta) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-beta).",
+          "Target":"userTeamwork"
+        },
+        {
+          "Id":"e04528be-94f6-4bc5-9485-9b71da7f4807",
+          "ApiChange":"Permission",
+          "ChangedApiName":"TeamsAppInstallation.ReadWriteAndConsentForUser",
+          "ChangeType":"Addition",
+          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentForUser` delegated and application permissions to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-beta) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-beta).",
+          "Target":"userTeamwork"
+        },
+        {
+          "Id":"e04528be-94f6-4bc5-9485-9b71da7f4807",
+          "ApiChange":"Permission",
+          "ChangedApiName":"TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All",
+          "ChangeType":"Addition",
+          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All` application and application permissions to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-beta) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-beta).",
+          "Target":"userTeamwork"
+        },
+        {
+          "Id":"e04528be-94f6-4bc5-9485-9b71da7f4807",
+          "ApiChange":"Permission",
+          "ChangedApiName":"TeamsAppInstallation.ReadWriteAndConsentForUser.All",
+          "ChangeType":"Addition",
+          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentForUser.All` application and application permissions to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-beta) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-beta).",
+          "Target":"userTeamwork"
+        },
+        {
           "Id": "e04528be-94f6-4bc5-9485-9b71da7f4807",
           "ApiChange": "Property",
           "ChangedApiName": "isUserPersonalScopeResourceSpecificConsentEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isUserPersonalScopeResourceSpecificConsentEnabled** property to the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the **isUserPersonalScopeResourceSpecificConsentEnabled** property to the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsappsettings?view=graph-rest-beta) resource.",
           "Target": "teamsAppSettings"
+        },
+        {
+          "Id": "e04528be-94f6-4bc5-9485-9b71da7f4807",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Added the [List permissionGrants](https://learn.microsoft.com/graph/api/user-list-permissiongrants?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
         }
       ],
       "Id": "e04528be-94f6-4bc5-9485-9b71da7f4807",
