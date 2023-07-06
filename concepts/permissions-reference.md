@@ -1829,24 +1829,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## People Settings permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _PeopleSettings.Read.All_ | Read tenant-wide people settings | Allows the application to read tenant-wide people settings, on behalf of the signed-in user. | Yes | No |
-| _PeopleSettings.ReadWrite.All_ | Read and write tenant-wide people settings | Allows the application to read and write tenant-wide people settings, on behalf of the signed-in user. | Yes | No |
-
-#### Application permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _PeopleSettings.Read.All_ | Read all tenant-wide people settings | Allows the application to read tenant-wide people settings, without a signed-in user. | Yes |
-| _PeopleSettings.ReadWrite.All_ | Read and write all tenant-wide people settings | Allows the application to read and write tenant-wide people settings, without a signed-in user. | Yes |
-
----
-
 ## Privileged access permissions
 
 #### Delegated permissions
