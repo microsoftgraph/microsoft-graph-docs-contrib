@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A summary for total, active and inactive devices in a given time range that's returned by the [getDeviceUsageSummaries](../api/networkaccess-reports-getdeviceusagesummaries.md) method.
+A summary for total, active and inactive devices in a given time range that's returned by the [getDeviceUsageSummary](../api/networkaccess-reports-getdeviceusagesummary.md) method.
 
 ## Properties
 |Property|Type|Description|

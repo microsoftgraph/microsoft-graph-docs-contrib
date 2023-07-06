@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A summary for cross-tenant access counts for Microsoft 365 traffic that's returned by the [getCrossTenantSummaries](../api/networkaccess-reports-getcrosstenantsummaries.md) method.
+A summary for cross-tenant access counts for Microsoft 365 traffic that's returned by the [getCrossTenantSummary](../api/networkaccess-reports-getcrosstenantsummary.md) method.
 
 ## Properties
 |Property|Type|Description|
