@@ -25,7 +25,9 @@ Address an [application](/graph/api/resources/application) by a new alternate ke
 ### Search | Query
 Optionally specify the sortable or refinable properties to collapse in the results of a [search request](/graph/api/resources/searchrequest).
 
+To include multiple search requests in a single request body in the request body, [use the Microsoft Graph Search API to pass multiple search requests](/graph/search-concept-multiplerequest). 
 
+Guest users can search for items within SharePoint or OneDrive that have been shared with them.
 ## June 2023: New in preview only
 
 ### Device and app management | Cloud PC
