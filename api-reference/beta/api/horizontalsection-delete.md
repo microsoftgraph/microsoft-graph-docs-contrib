@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a [horizontalSection]( ../resources/horizontalSection.md) from the [sitePage](../resources/sitepage.md).
+Remove a [horizontalSection]( ../resources/horizontalSection.md) from a [sitePage](../resources/sitepage.md).
 
 ## Permissions
 
@@ -55,13 +55,13 @@ If the target horizontal section is not found, this method returns `404 Not Foun
 
 <!-- { "blockType": "request", "name": "delete-horizontalSection", "scopes": "files.readwrite sites.readwrite.all" } -->
 
-##### Request
+### Request
 
 ```http
 DELETE /sites/{site-id}/pages/{page-id}/canvasLayout/horizontalSections/{horizontalSectionId}
 ```
-
-##### Response
+ve
+### Response
 
 <!-- { "blockType": "response" } -->
 

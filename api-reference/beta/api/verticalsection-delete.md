@@ -1,5 +1,5 @@
 ---
-title: 'Delete a verticalSection'
+title: 'Delete verticalSection'
 description: 'Delete a vertical section from a page.'
 author: sangle7
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-# Delete vertical section from a page
+# Delete verticalSection
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a [verticalSection](../resources/verticalSection.md) from the [sitePage](../resources/sitepage.md).
+Remove a [verticalSection](../resources/verticalSection.md) from a [sitePage](../resources/sitepage.md).
 
 ## Permissions
 
@@ -55,12 +55,12 @@ If the vertical section is not found, this method returns `404 Not Found`.
 
 <!-- { "blockType": "request", "name": "delete-verticalSection", "scopes": "sites.readwrite.all" } -->
 
-##### Request
+### Request
 
 ```http
 DELETE /sites/{site-id}/pages/{page-id}/canvasLayout/verticalSection
 ```
-##### Response
+### Response
 
 <!-- { "blockType": "response" } -->
 
