@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # organizationSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains settings that are applicable to the [organization](organization.md) or that should be applied to [user](user.md) objects within an organization.
@@ -39,3 +41,20 @@ None.
 |peopleInsights|[insightsSettings](insightssettings.md)| Contains the properties that are configured by an administrator for the visibility of a list of people [relevant and working with](/graph/people-example#including-a-person-as-relevant-or-working-with) a user in Microsoft 365. [List peopleInsights](../api/organizationsettings-list-peopleinsights.md) returns the _settings_ to display or return people insights in an organization.|
 |pronouns|[pronounsSettings](../resources/pronounssettings.md)|Represents administrator settings that manage the support of pronouns in an organization.|
 
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],
+  "@odata.type": "microsoft.graph.organizationSettings",
+  "keyProperty": "id"
+}-->
+
+```json
+{
+  "id": "String (identifier)",
+}
+```
