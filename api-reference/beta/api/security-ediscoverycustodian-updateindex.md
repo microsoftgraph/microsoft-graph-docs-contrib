@@ -53,11 +53,9 @@ The following table shows the parameters that can be used with this action.
 
 If successful, this action returns a 202 Accepted response code.
 
-## Examples
-
-### Request
-
-Example 1: Bulk index custodians.
+### Example 1: Bulk index custodians.
+#### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,7 +64,9 @@ Example 1: Bulk index custodians.
 }
 -->
 
-Example 2: Index single custodian.
+### Example 2: Index single custodian.
+#### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
