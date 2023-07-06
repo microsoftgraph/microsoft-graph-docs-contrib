@@ -1,0 +1,54 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "292beb80-a0c7-4a70-8365-ff249e4e68c0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "profileCardProperties",
+          "ChangeType": "Change",
+          "Description": "Move the **profileCardProperties** relationship from the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationsettings?view=graph-rest-beta) resource to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "34e8ba16-c086-46e6-bd06-e7372a0380c0",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Change",
+          "Description": "Moved the [List profileCardProperties](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-beta) method from the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationsettings?view=graph-rest-beta) resource to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "465d684e-f343-4f74-9d5c-46778fd21431",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Change",
+          "Description": "Moved the [Create profileCardProperty](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta) method from the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationsettings?view=graph-rest-beta) resource to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "8ddc599e-e8c8-4f59-b179-ac5edc7a199b",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the **Get organization settings** method from the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationsettings?view=graph-rest-beta) resource.",
+          "Target": "organizationSettings"
+        },
+        {
+          "Id": "2d567087-f9a1-41dc-b8dd-99b70f1a15df",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the **Get organization settings** method from the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-05T13:25:08.1357387Z",
+      "WorkloadArea": "Microsoft.PeopleAdmin",
+      "SubArea": ""
+    }
+  ]
+}
