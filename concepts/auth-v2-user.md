@@ -43,7 +43,7 @@ Before the app can call the Microsoft identity platform endpoints or Microsoft G
 
 From the app registration, save the following values:
 
-- The application ID (object ID) assigned by the app registration portal.
+- The application ID (client ID) assigned by the app registration portal.
 - A redirect URI (or reply URL) for the app to receive responses from Azure AD.
 - A client secret (application password), a certificate, or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
 

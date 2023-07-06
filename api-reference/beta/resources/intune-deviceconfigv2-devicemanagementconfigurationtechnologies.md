@@ -31,4 +31,4 @@ Describes which technology this setting can be deployed with
 |linuxMdm|1024|Setting can be deployed through the Linux Mdm channel.|
 |enrollment|4096|Setting can be deployed through device enrollment.|
 |endpointPrivilegeManagement|8192|Setting can be deployed using the Endpoint privilege management channel|
-|unknownFutureValue|16384|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|32696|Evolvable enumeration sentinel value. Do not use.|

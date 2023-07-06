@@ -67,8 +67,8 @@ The following table shows the properties that are required when you create the [
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Require encryption on Mac OS devices.|
 |firewallEnabled|Boolean|Whether the firewall should be enabled or not.|
-|firewallBlockAllIncoming|Boolean|Corresponds to the “Block all incoming connections� option.|
-|firewallEnableStealthMode|Boolean|Corresponds to “Enable stealth mode.�|
+|firewallBlockAllIncoming|Boolean|Corresponds to the “Block all incoming connections” option.|
+|firewallEnableStealthMode|Boolean|Corresponds to “Enable stealth mode.”|
 
 
 
@@ -79,8 +79,6 @@ If successful, this method returns a `200 OK` response code and an updated [macO
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_deviceconfig_macoscompliancepolicy_update_update_macoscompliancepolicy" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
@@ -113,8 +111,6 @@ Content-length: 849
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.macOSCompliancePolicy" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
