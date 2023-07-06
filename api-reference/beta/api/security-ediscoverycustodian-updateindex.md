@@ -62,19 +62,9 @@ Example 1: Bulk index custodians.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "ediscoverycustodianthis.updateindex"
+  "name": "start_ediscoverycustodianthis.updateindex"
 }
 -->
-``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/updateIndex
-Content-Type: application/json
-
-{
-  "ids": [
-    "7f697316-43ed-48e1-977f-261be050db93", "b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8"
-  ]
-}
-```
 
 Example 2: Index single custodian.
 
