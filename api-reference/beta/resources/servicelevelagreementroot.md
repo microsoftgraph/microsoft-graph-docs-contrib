@@ -27,3 +27,10 @@ None.
 
 ## JSON representation
 This entity can not be viewed as it is only a placeholder.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.serviceLevelAgreementRoot",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
