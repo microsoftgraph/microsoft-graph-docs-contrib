@@ -12015,9 +12015,9 @@ items:
             - name: Profile card property
               href: resources/profilecardproperty.md
             - name: List
-              href: api/organizationsettings-list-profilecardproperties.md
+              href: api/peopleadminsettings-list-profilecardproperties.md
             - name: Create
-              href: api/organizationsettings-post-profilecardproperties.md
+              href: api/peopleadminsettings-post-profilecardproperties.md
             - name: Get
               href: api/profilecardproperty-get.md
             - name: Update
