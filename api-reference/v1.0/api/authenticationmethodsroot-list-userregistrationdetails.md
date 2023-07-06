@@ -36,7 +36,17 @@ GET /reports/authenticationMethods/userRegistrationDetails
 
 ## Optional query parameters
 
-This method supports only the `$filter` and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This function supports the optional OData query parameter **$filter**. For general information, see [OData query parameters](/graph/query-parameters). You can apply **$filter** on one or more of the following properties of the [userRegistrationDetails](../resources/userregistrationdetails.md) resource.
+
+| Properties | Description and example |
+| --------- | ----------------------- |
+| userDisplayName | Filter by user name. For example: `/reports/userRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Supported filter operators: `eq`, and `startswith()`. Supports case insensitive. |
+| userPrincipalName | Filter by user principal name. For example: `/reports/userRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
+| methodsRegistered | Filter by the authentication methods used during registration. For example: `/reports/userRegistrationDetails?$filter=methodsRegistered eq 'email')`. Supported filter operators: `eq`. |
+| isSsprRegistered | Filter for users who have registered for self-service password reset (SSPR). For example: `/reports/userRegistrationDetails?$filter=isSsprRegistered eq true`. Supported filter operators: `eq`. |
+| isSsprEnabled | Filter for users who have been enabled for SSPR. For example: `/reports/userRegistrationDetails?$filter=isSsprEnabled eq true`. Supported filtter operators: `eq`. |
+| isMfaCapable | Filter for users who are ready to perform password reset or multi-factor authentication (MFA). For example: `/reports/userRegistrationDetails?$filter=isMfaCapable eq true`. Supported filter operators: `eq` |
+| isMfaRegistered | Filter for users who are registered for MFA. For example: `/reports/userRegistrationDetails?$filter=isMfaRegistered eq true`. Supported filter operators: `eq`. |
 
 ## Request headers
 
