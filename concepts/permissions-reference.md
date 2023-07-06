@@ -1829,7 +1829,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## People Settings permissions
+## People settings permissions
 
 #### Delegated permissions
 
