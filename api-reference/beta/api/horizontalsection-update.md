@@ -63,7 +63,7 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/canvasLayout/horizontalSections/{horizontalSectionId}
+PATCH https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitepage/canvasLayout/horizontalSections/{horizontalSectionId}
 Content-Type: application/json
 
 {

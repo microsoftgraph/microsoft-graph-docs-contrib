@@ -58,7 +58,7 @@ If the target horizontal section is not found, this method returns `404 Not Foun
 ### Request
 
 ```http
-DELETE /sites/{site-id}/pages/{page-id}/canvasLayout/horizontalSections/{horizontalSectionId}
+DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
 ```
 ve
 ### Response
