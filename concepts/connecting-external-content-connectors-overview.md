@@ -17,7 +17,7 @@ Microsoft Graph connectors offer an intuitive way to bring content from external
 
 Today, with Microsoft Graph connectors, the data you bring in from your organization can be discoverable in the following [experiences](connecting-external-content-experiences):
 - [Microsoft Search](microsoftsearch/overview-microsoft-search) (GA)
-- [Context IQ in Outlook Web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) (GA)
+- [Context IQ in Outlook on the web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) (GA)
 - [Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) (preview)
 - [Microsoft 365 Hub](https://office.com) (formerly known as [Office.com](https://office.com)) (coming soon)
 
