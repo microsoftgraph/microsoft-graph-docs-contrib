@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore the given [deletedChat](../resources/deletedchat.md). The deletedChat is restored as a [chat](../resources/chat.md)
+Restore the given [deletedChat](../resources/deletedchat.md). The deletedChat is restored as [chat](../resources/chat.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

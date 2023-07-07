@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Soft Delete a [chat](../resources/chat.md). This operation will work only for tenant admins.
+Soft Delete a [chat](../resources/chat.md). When invoked in delegated context, this operation will work only for tenant admins.
 
->**Note:** Delete operation is not supported for one on one chats.
+>**Note:** Delete operation is only supported for tenant admins.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /chats/{chatsId}
+DELETE /chats/{chat-id}
 ```
 
 ## Request headers
@@ -70,4 +70,3 @@ DELETE https://graph.microsoft.com/beta/chats/19:7d898072-792c-4006-bb10-5ca9f25
 ``` http
 HTTP/1.1 204 No Content
 ```
-

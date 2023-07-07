@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get deletedChat
+# Get deleted chat
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teamwork/deletedChats/{deletedChatId}
+GET /teamwork/deletedChats/{deleted-chat-id}
 ```
 
 ## Optional query parameters
