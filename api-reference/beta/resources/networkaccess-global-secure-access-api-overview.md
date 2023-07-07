@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits?$filter=
 
 ## Traffic logs and reports
 
-You can browse through the network traffic connection logs to see a breakdown of the types of network traffic through the Global Secure Access services. Use the [networkAccessTraffic resource type](../resources/networkaccess-networktraffic.md) and its associated APIs to view granular network traffic logs.
+You can browse through the network traffic connection logs to see a breakdown of the types of network traffic through the Global Secure Access services. Use the [networkAccessTraffic resource type](../resources/networkaccess-networkaccesstraffic.md) and its associated APIs to view granular network traffic logs.
 
 You can also retrieve summarized counts of traffic relating to devices, users, transactions and cross-tenant access requests through the Global Secure Access services. Use the [reports resource type](../resources/networkaccess-reports.md) and its associated APIs to view summarized network traffic statistics.
 
