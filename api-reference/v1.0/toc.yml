@@ -8873,6 +8873,8 @@ items:
                     href: api/team-clone.md
                   - name: List your teams
                     href: api/user-list-joinedteams.md
+                  - name: List all teams in an organization
+                    href: api/teams-list.md
                   - name: List your associated teams
                     href: api/associatedteaminfo-list.md
                   - name: Get primary channel
