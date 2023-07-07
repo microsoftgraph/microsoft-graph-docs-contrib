@@ -23,7 +23,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "undoDelete",
           "ChangeType": "Addition",
-          "Description": "Added the [undoDelete](https://learn.microsoft.com/en-us/graph/api/deletedChat?view=graph-rest-beta) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/deletedChat?view=graph-rest-beta) resource.",
+          "Description": "Added the [undoDelete](https://learn.microsoft.com/en-us/graph/api/deletedchat-undodelete.md?view=graph-rest-beta) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-beta) resource.",
           "Target": "deletedChat"
         }
       ],
