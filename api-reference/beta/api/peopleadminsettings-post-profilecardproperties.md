@@ -44,6 +44,8 @@ POST /admin/people/profileCardProperties
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
+> **Note** To avoid encoding issues that malform payload, use `Content-Type: application/json; charset=utf-8`.
+
 ## Request body
 
 In the request body, supply a JSON representation of a [profileCardProperty](../resources/profilecardproperty.md) object.
@@ -70,7 +72,7 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/admin/people/profileCardProperties
-Content-type: application/json
+Content-type: application/json; charset=utf-8
 
 {
   "directoryPropertyName": "CustomAttribute1",
@@ -103,7 +105,7 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-type: application/json; charset=utf-8
 
 {
   "directoryPropertyName": "CustomAttribute1",

@@ -42,6 +42,8 @@ PATCH /admin/people/profileCardProperties/{id}
 | Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json. Required. |
 
+> **Note** To avoid encoding issues that malform payload, use `Content-Type: application/json; charset=utf-8`.
+
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
@@ -68,7 +70,7 @@ The following example adds a localized label "Kostnads Senter" for the locale "n
 
 ```http
 PATCH https://graph.microsoft.com/beta/admin/people/profileCardProperties/CustomAttribute1
-Content-type: application/json
+Content-type: application/json; charset=utf-8
 
 {
   "annotations": [
@@ -99,7 +101,7 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-type: application/json; charset=utf-8
 
 {
   "directoryPropertyName": "CustomAttribute1",
