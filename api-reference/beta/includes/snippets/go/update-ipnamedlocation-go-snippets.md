@@ -12,27 +12,24 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewNamedLocation()
 displayName := "Untrusted named location with only IPv4 address"
 requestBody.SetDisplayName(&displayName) 
-additionalData := map[string]interface{}{
-	isTrusted := false
+isTrusted := false
 requestBody.SetIsTrusted(&isTrusted) 
 
 
- := graphmodels.New()
+ipRange := graphmodels.NewIPv4CidrRange()
 cidrAddress := "6.5.4.3/18"
-.SetCidrAddress(&cidrAddress) 
+ipRange.SetCidrAddress(&cidrAddress) 
 
-	ipRanges := []graphmodels.Objectable {
-		,
-
-	}
+ipRanges := []graphmodels.IpRangeable {
+	ipRange,
 }
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetIpRanges(ipRanges)
 
 result, err := graphClient.Identity().ConditionalAccess().NamedLocations().ByNamedLocationId("namedLocation-id").Patch(context.Background(), requestBody, nil)
 

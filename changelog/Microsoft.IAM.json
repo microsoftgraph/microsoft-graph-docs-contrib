@@ -81,6 +81,32 @@
       "CreatedDateTime": "2023-05-31T00:00:00.4526604Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a34189c5-af07-4671-9246-dde6c999e2dd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bulkUpload",
+          "ChangeType": "Addition",
+          "Description": "Added the [bulkUpload](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-bulkUpload?view=graph-rest-beta) resource",
+          "Target": "bulkUpload"
+        },
+        {
+          "Id": "a34189c5-af07-4671-9246-dde6c999e2dd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bulkUpload",
+          "ChangeType": "Addition",
+          "Description": "Added the **bulkUpload** relationship to the [synchronizationJob](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationJob?view=graph-rest-beta) resource.",
+          "Target": "synchronizationJob"
+        }
+      ],
+      "Id": "a34189c5-af07-4671-9246-dde6c999e2dd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-05T07:08:26.9619605Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     }
   ]
 }

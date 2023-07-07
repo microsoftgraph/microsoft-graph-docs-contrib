@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphapplications.NewAcquireAccessTokenPostRequestBody()
@@ -21,9 +21,8 @@ requestBody := graphapplications.NewAcquireAccessTokenPostRequestBody()
 
 synchronizationSecretKeyStringValuePair := graphmodels.NewSynchronizationSecretKeyStringValuePair()
 
-credentials := []graphapplications.SynchronizationSecretKeyStringValuePairable {
+credentials := []graphmodels.SynchronizationSecretKeyStringValuePairable {
 	synchronizationSecretKeyStringValuePair,
-
 }
 requestBody.SetCredentials(credentials)
 

@@ -12,16 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAttachment()
 name := "menu.txt"
 requestBody.SetName(&name) 
-additionalData := map[string]interface{}{
-	"contentBytes" : "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=", 
-}
-requestBody.SetAdditionalData(additionalData)
+contentBytes := []byte("base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
+requestBody.SetContentBytes(&contentBytes) 
 
 result, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
 

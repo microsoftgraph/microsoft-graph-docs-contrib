@@ -39,14 +39,14 @@ $requestBody->setTargets($targetsArray);
 $requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
 ]);
 
-$callOptions = new CallOptions();
+$callOptions = new OutgoingCallOptions();
 $callOptions->set@odatatype('#microsoft.graph.outgoingCallOptions');
 
 $callOptions->setIsContentSharingNotificationEnabled(true);
 
 
 $requestBody->setCallOptions($callOptions);
-$mediaConfig = new MediaConfig();
+$mediaConfig = new ServiceHostedMediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
 
 
