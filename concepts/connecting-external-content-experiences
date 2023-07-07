@@ -9,26 +9,26 @@ ms.prod: search
 
 # Microsoft Graph connectors experiences
 
-Microsoft Graph connectors offer an intuitive way to bring content from external services into Microsoft Graph and the Microsoft Search index, which enables external data to be discoverable across a set of Microsoft 365 experiences.
+Microsoft Graph connectors offer an intuitive way to bring content from external services into Microsoft Graph and the Microsoft Search index. This enables you to make external data discoverable across a set of Microsoft 365 experiences.
 
-This article explains the experiences configurable with Graph connectors and the requirements to enable them.
+This article describes the experiences that you can enable with Microsoft Graph connectors and the requirements to enable those experiences.
 
-The prerequisitie to enable any of these experiences is to have a basic Graph connector built. See [Work with the Microsoft Graph connectors API](connecting-external-content-connectors-api-overview) to learn how to create a connection, register your schema, and ingest items with correct access control lists. 
+To enable these experiences, you must first build a basic Microsoft Graph connector. For details about how to create a connection, register your schema, and ingest items with correct access control list, see [Work with the Microsoft Graph connectors API](connecting-external-content-connectors-api-overview). 
 
 ## Microsoft Search 
-[Microsoft Search](microsoftsearch/connectors-overview) with Graph connectors allows your third-party data to be searchable for users in the Microsoft Search endpoints which include Office.com, Bing at Work, and SharePoint. 
+[Microsoft Search](microsoftsearch/connectors-overview) with Microsoft Graph connectors allows your third-party data to be searchable for users in the Microsoft Search endpoints, including Office.com, Bing at Work, and SharePoint. 
 
-To congifure your connector for Microsoft Search, you must:
+To congifure your connector for Microsoft Search:
 - Apply [semantic labels](graph/connecting-external-content-manage-schema#semantic-labels) to your [schema](graph/api/resources/externalconnectors-schema). Semantic labels help with ranking, relevance, and default display templates in search results.
 - Apply [property attributes](graph/connecting-external-content-manage-schema#property-attributes) to your [schema](graph/api/resources/externalconnectors-schema). Property attributes determine the search functionalities of each property.
-- Optionally add [searchSettings](graph/api/resources/externalconnectors-searchsettings) when you [create your connection](graph/api/externalconnectors-external-post-connections) to register custom result types for your search results. 
-- Once the connection is published, enable a [custom vertical](microsoftsearch/manage-verticals) in the [Microsoft 365 admin center](admin.microsoft.com).
+- Optionally, add [searchSettings](graph/api/resources/externalconnectors-searchsettings) when you [create your connection](graph/api/externalconnectors-external-post-connections) to register custom result types for your search results. 
+- After the connection is published, enable a [custom vertical](microsoftsearch/manage-verticals) in the [Microsoft 365 admin center](admin.microsoft.com).
 
-## Context IQ in Outlook Web
-[Context IQ in Outlook Web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) with Graph connectors allows users to find in-content suggestions from third-party data while composing emails in Outlook web. Editor using Context IQ will surface relevant people, files, and Graph connector content, that users can select and embed as an adaptive card within the email.
+## Context IQ in Outlook on the web
+[Context IQ in Outlook on the seb](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) with Microsoft Graph connectors allows users to find in-content suggestions from third-party data while composing emails in Outlook web. Editor using Context IQ will surface relevant people, files, and Graph connector content, that users can select and embed as an adaptive card within the email.
 Users can access this feature by inserting "/" in an Outlook web email and typing keywords. They are then given relevant suggestions based on the context typed, that can be directly inserted into the body of the email. 
 
-To configure your connector for Context IQ, you must:
+To configure your connector for Context IQ:
 - Apply the following [semantic labels](graph/connecting-external-content-manage-schema#semantic-labels) to your [schema](graph/api/resources/externalconnectors-schema): `title`, `url`, `iconUrl`. These labels determine which properties are displayed in the experience.
 - Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. Supported activity types are shown [here](/graph/api/resources/externalconnectors-externalactivity). These activities inform the platform of which users have interacted most recently with which items. Items with activities performed by a given user will have a higher likelihood of being displayed to that user in the experience.
 - Add a [urlToItemrResolver](graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](graph/api/resources/externalconnectors-activitysettings) when you [create your connection](graph/connecting-external-content-manage-connections#create-a-connection). A `urlToItemResolver` will enable the platform to become aware when users share URLs from your external content with each other. The experience will have a higher likelihood of displaying content that has been shared with that user.
@@ -40,7 +40,7 @@ To configure your connector for Context IQ, you must:
 >Microsoft Graph connectors with Microsoft 365 Copilot is in early access preview. When you get access to the [developer preview program](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR06na7ADVcFBoFXEJ5M8YD1UNkdQODE5VDNKOUQ2UlBSVUJJRlJDVktTVS4u), you'll receive instructions on how to test your Graph connector with Microsoft 365 Copilot.
 >Also, only customers who are part of the [Copilot Early Access Program](https://blogs.microsoft.com/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-2023-microsoft-work-trend-index/) will have Copilot enabled in their tenants in the coming months.
 
-To configure your connector for Copilot, you must:
+To configure your connector for Copilot:
 - Add a [urlToItemrResolver](graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](graph/api/resources/externalconnectors-activitysettings) when you [create your connection](graph/connecting-external-content-manage-connections#create-a-connection). A `urlToItemResolver` will enable the platform to become aware when users share URLs from your external content with each other. Copilot will have a higher likelihood of displaying content that has been shared with that user. 
 - Apply [semantic labels](/graph/connecting-external-content-manage-schema). Semantic labels help Copilot understand the semantic meaning of your schema. Apply as many of them to your schema as applicable.
 - Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. Supported activity types are shown [here](/graph/api/resources/externalconnectors-externalactivity). Items that have more activities are boosted in their importance.
@@ -48,7 +48,7 @@ To configure your connector for Copilot, you must:
 ## Microsoft 365 Hub (coming soon)
 The [Microsoft 365 Hub](https://office.com) with Graph connectors allows your third-party data to become discoverable from [Microsoft365.com](Microsoft365.com) under *Quick Access* and *My Content*. This helps users find all the content that is important to them in one place. 
 
-To configure your connector for the [Microsoft 365 Hub](office.com), you must:
+To configure your connector for the [Microsoft 365 Hub](office.com):
 - Apply the following [semantic labels](graph/connecting-external-content-manage-schema#semantic-labels) to your [schema](graph/api/resources/externalconnectors-schema): `title`, `url`, `iconUrl`. These labels determine which properties are displayed in the experience.
 - Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. Supported activity types are shown [here](/graph/api/resources/externalconnectors-externalactivity). These activities inform the platform of which users have interacted most recently with which items. Items with activities performed by a given user will have a higher likelihood of being displayed to that user in the experience.
 - Add a [urlToItemrResolver](graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](graph/api/resources/externalconnectors-activitysettings) when you [create your connection](graph/connecting-external-content-manage-connections#create-a-connection). A `urlToItemResolver` will enable the platform to become aware when users share URLs from your external content with each other. The experience will have a higher likelihood of displaying content that has been shared with that user.
