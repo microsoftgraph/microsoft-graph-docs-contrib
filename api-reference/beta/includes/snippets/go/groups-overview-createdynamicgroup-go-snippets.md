@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewGroup()
@@ -23,7 +23,6 @@ requestBody.SetDisplayName(&displayName)
 groupTypes := []string {
 	"Unified",
 	"DynamicMembership",
-
 }
 requestBody.SetGroupTypes(groupTypes)
 mailEnabled := true

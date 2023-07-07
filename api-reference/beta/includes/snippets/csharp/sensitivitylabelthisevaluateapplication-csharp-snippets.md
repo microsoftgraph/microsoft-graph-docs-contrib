@@ -87,7 +87,7 @@ var requestBody = new Microsoft.Graph.Beta.Users.Item.Security.InformationProtec
 			JustificationMessage = "Justified",
 			IsDowngradeJustified = true,
 		},
-		ExtendedProperties = new List<KeyValuePair>
+		ExtendedProperties = new List<Microsoft.Graph.Beta.Models.Security.KeyValuePair>
 		{
 		},
 		AdditionalData = new Dictionary<string, object>

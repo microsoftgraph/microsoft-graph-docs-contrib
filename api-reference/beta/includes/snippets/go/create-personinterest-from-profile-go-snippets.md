@@ -12,13 +12,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPersonInterest()
 categories := []string {
 	"Sports",
-
 }
 requestBody.SetCategories(categories)
 description := "World's greatest football club"

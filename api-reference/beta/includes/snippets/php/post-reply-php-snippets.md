@@ -72,7 +72,7 @@ $post->setId('id-value');
 $postInReplyTo = new Post();
 
 $post->setInReplyTo($postInReplyTo);
-$attachmentsAttachment1 = new Attachment();
+$attachmentsAttachment1 = new FileAttachment();
 $attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
 
 $attachmentsAttachment1->setLastModifiedDateTime(new DateTime('2016-10-19T10:37:00Z'));

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
-Get-MgSecurityTriggerTypeRetentionEventType -RetentionEventTypeId $retentionEventTypeId
+Get-MgBetaSecurityTriggerTypeRetentionEventType -RetentionEventTypeId $retentionEventTypeId
 
 ```
