@@ -8,16 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 request_body = EducationSubmissionResource()
-resource = EducationResource()
+resource = EducationLinkResource()
 resource.display_name = 'Wikipedia'
 
+resource.link = 'https://en.wikipedia.org/wiki/Main_Page'
+
 resource.@odata_type = '#microsoft.graph.educationLinkResource'
-
-additional_data = [
-'link' => 'https://en.wikipedia.org/wiki/Main_Page', 
-];
-resource.additional_data(additional_data)
-
 
 
 request_body.resource = resource

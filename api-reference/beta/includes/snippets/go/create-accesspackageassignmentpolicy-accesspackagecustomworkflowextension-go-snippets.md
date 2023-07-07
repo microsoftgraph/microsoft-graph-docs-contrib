@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
@@ -67,7 +67,6 @@ customExtensionStageSetting1.SetCustomExtension(customExtension)
 customExtensionStageSettings := []graphmodels.CustomExtensionStageSettingable {
 	customExtensionStageSetting,
 	customExtensionStageSetting1,
-
 }
 requestBody.SetCustomExtensionStageSettings(customExtensionStageSettings)
 additionalData := map[string]interface{}{

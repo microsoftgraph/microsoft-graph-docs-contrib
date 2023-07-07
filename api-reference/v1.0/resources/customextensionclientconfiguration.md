@@ -21,9 +21,11 @@ Connection settings that define how long Azure AD can wait for a a response from
 
 ## Relationships
 
+
 None.
 
 ## JSON representation
+
 
 The following is a JSON representation of the resource.
 <!-- {
@@ -37,3 +39,4 @@ The following is a JSON representation of the resource.
   "timeoutInMilliseconds": "Integer"
 }
 ```
+

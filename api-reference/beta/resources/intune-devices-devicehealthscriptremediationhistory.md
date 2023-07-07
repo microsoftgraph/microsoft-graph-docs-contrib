@@ -42,7 +42,8 @@ Here is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.deviceHealthScriptRemediationHistoryData",
       "date": "String (Date)",
       "remediatedDeviceCount": 1024,
-      "noIssueDeviceCount": 1024
+      "noIssueDeviceCount": 1024,
+      "detectFailedDeviceCount": 1024
     }
   ]
 }

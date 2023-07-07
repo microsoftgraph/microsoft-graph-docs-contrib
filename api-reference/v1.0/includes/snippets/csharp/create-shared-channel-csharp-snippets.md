@@ -15,7 +15,7 @@ var requestBody = new Channel
 	MembershipType = ChannelMembershipType.Shared,
 	Members = new List<ConversationMember>
 	{
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
 			Roles = new List<string>

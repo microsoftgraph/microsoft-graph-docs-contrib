@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -23,7 +23,7 @@ headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 configuration := &graphusers.ItemFindMeetingTimesRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphusers.NewFindMeetingTimesPostRequestBody()
+requestBody := graphusers.NewItemFindMeetingTimesPostRequestBody()
 
 
 attendeeBase := graphmodels.NewAttendeeBase()
@@ -36,9 +36,8 @@ address := "alexw@contoso.onmicrosoft.com"
 emailAddress.SetAddress(&address) 
 attendeeBase.SetEmailAddress(emailAddress)
 
-attendees := []graphusers.Objectable {
+attendees := []graphmodels.attendeeBaseable {
 	attendeeBase,
-
 }
 requestBody.SetAttendees(attendees)
 locationConstraint := graphmodels.NewLocationConstraint()
@@ -54,9 +53,8 @@ locationConstraintItem.SetResolveAvailability(&resolveAvailability)
 displayName := "Conf room Hood"
 locationConstraintItem.SetDisplayName(&displayName) 
 
-locations := []graphmodels.Objectable {
+locations := []graphmodels.locationConstraintItemable {
 	locationConstraintItem,
-
 }
 locationConstraint.SetLocations(locations)
 requestBody.SetLocationConstraint(locationConstraint)
@@ -81,7 +79,6 @@ timeSlot.SetEnd(end)
 
 timeSlots := []graphmodels.TimeSlotable {
 	timeSlot,
-
 }
 timeConstraint.SetTimeSlots(timeSlots)
 requestBody.SetTimeConstraint(timeConstraint)

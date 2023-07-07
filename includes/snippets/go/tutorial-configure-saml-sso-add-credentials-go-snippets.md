@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewServicePrincipal()
@@ -56,7 +56,6 @@ keyCredential1.SetDisplayName(&displayName)
 keyCredentials := []graphmodels.KeyCredentialable {
 	keyCredential,
 	keyCredential1,
-
 }
 requestBody.SetKeyCredentials(keyCredentials)
 
@@ -75,7 +74,6 @@ passwordCredential.SetSecretText(&secretText)
 
 passwordCredentials := []graphmodels.PasswordCredentialable {
 	passwordCredential,
-
 }
 requestBody.SetPasswordCredentials(passwordCredentials)
 

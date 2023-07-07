@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->communications()->callRecords()->byCallRecordId('callRecord-id')->get();
+$result = $graphServiceClient->communications()->callRecords()->microsoftGraphCallRecordsGetSmsLog(fromDateTime={fromDateTime},toDateTime={toDateTime})()->get();
 
 
 ```
