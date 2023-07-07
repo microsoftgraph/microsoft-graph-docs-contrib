@@ -198,6 +198,22 @@
 				},
 				{
 					"Id": "3d55601a-1632-4115-9e52-4d8a174040d4",
+					"ApiChange": "Method",
+					"ChangedApiName": "GET",
+					"ChangeType": "Deletion",
+					"Description": "Removed the [list](https://learn.microsoft.com/en-us/graph/api/organizationsettings-list-pronounssettings?view=graph-rest-beta&tabs=http) operation to the [pronounsSettings](https://learn.microsoft.com/en-us/graph/api/resources/pronounssettings?view=graph-rest-beta) resource",
+					"Target": "pronounsSettings"
+				},
+				{
+					"Id": "3d55601a-1632-4115-9e52-4d8a174040d4",
+					"ApiChange": "Method",
+					"ChangedApiName": "GET",
+					"ChangeType": "Addition",
+					"Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-beta&tabs=http) operation to the [pronounsSettings](https://learn.microsoft.com/en-us/graph/api/resources/pronounssettings?view=graph-rest-beta) resource",
+					"Target": "pronounsSettings"
+				},
+				{
+					"Id": "3d55601a-1632-4115-9e52-4d8a174040d4",
 					"ApiChange": "Permission",
 					"ChangedApiName": "PeopleSettings.Read.All",
 					"ChangeType": "Addition",
