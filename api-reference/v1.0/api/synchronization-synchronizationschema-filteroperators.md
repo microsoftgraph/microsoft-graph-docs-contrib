@@ -90,3 +90,15 @@ Content-type: application/json
 }
 ```
 
+<!--
+{
+  "type": "#page.annotation",
+  "description": "synchronizationSchema: filterOperators",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: synchronizationschema_filteroperators/container/arity:\r\n       Expected type String but actual was Binary. Property: arity, actual value: 'Binary'"
+  ]
+}
+-->
