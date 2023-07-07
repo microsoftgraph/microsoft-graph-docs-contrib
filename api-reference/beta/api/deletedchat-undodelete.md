@@ -1,6 +1,6 @@
 ---
 title: "deletedChat: undoDelete"
-description: "Restores a deletedChat"
+description: "Restores a deletedChat."
 author: "sthapliyal"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
