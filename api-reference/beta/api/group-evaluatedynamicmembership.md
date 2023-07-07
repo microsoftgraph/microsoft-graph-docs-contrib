@@ -1,7 +1,7 @@
 ---
 title: "group: evaluateDynamicMembership"
 description: "Evaluate if a user or device is or would be a member of a dynamic group."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -115,6 +115,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-evaluatedynamicmembership-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-evaluatedynamicmembership-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -192,6 +196,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-evaluatedynamicmembership-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-evaluatedynamicmembership-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -105,6 +105,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-calendar-from-calendargroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-calendar-from-calendargroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.

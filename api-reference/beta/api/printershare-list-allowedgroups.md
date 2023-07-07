@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-allowedgroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-allowedgroups-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

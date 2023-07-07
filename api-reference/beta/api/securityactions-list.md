@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/security/securityActions
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-securityactions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-securityactions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

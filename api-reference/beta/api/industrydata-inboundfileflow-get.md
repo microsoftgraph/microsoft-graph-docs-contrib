@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/external/industryData/inboundFlows/7bd62d17
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-inboundflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-inboundflow-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

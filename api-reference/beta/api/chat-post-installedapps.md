@@ -17,7 +17,6 @@ Install a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resour
 
 > **Notes**:
 > - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp** will get installed to the meeting.
-> - Currently, installing an app that requires resource-specific consent permissions is not supported in application context.
 
 ## Permissions
 
@@ -112,6 +111,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-app-in-chat-beta-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/add-app-in-chat-beta-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -185,6 +188,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-app-in-chat-beta-e2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/add-app-in-chat-beta-e2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

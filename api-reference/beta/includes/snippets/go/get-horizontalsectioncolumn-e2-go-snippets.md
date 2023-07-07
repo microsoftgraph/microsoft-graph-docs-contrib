@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/sites"
+	  graphsites "github.com/microsoftgraph/msgraph-beta-sdk-go/sites"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.SiteItemPageItemCanvasLayoutHorizontalSectionItemColumnItemRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.SiteItemPageItemCanvasLayoutHorizontalSectionItemColumnItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","expand=webparts"},
 }
-configuration := &graphconfig.SiteItemPageItemCanvasLayoutHorizontalSectionItemColumnItemRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SiteItemPageItemCanvasLayoutHorizontalSectionItemColumnItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

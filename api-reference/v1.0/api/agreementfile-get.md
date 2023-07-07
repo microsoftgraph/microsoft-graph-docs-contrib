@@ -1,7 +1,7 @@
 ---
 title: "Get agreementFile"
 description: "Retrieve the details of the default file for an agreement, including the language and version information."
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/94
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-agreementfile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-agreementfile-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-agreementfile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/94
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-agreementfile-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-agreementfile-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

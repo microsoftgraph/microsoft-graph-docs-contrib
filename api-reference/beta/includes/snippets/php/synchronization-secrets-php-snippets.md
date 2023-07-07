@@ -48,7 +48,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->secrets()->put($requestBody);
+$result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->synchronization()->secrets()->put($requestBody);
 
 
 ```

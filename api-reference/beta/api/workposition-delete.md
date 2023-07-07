@@ -90,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/positions/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-workposition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-workposition-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

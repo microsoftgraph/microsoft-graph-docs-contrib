@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->inferenceClassification()->overridesById('inferenceClassificationOverride-id')->delete();
+$graphServiceClient->me()->inferenceClassification()->overrides()->byOverrideId('inferenceClassificationOverride-id')->delete();
 
 
 ```

@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 [!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationjob-pause-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/synchronizationjob-pause-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -104,8 +108,12 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+	"Error: microsoft.graph.microsoft.graph/servicePrincipals:
+      /servicePrincipals/{var}/synchronization/jobs/{var}/pause
+      Uri path requires navigating into unknown object hierarchy: missing property 'jobs' on 'synchronization'. Possible issues:
+  	 1) Doc bug where 'jobs' isn't defined on the resource.
+  	 2) Doc bug where 'jobs' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'synchronization' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
   ]
 }
 -->
-
-

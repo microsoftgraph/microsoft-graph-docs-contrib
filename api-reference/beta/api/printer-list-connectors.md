@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/connectors
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-connectors-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-connectors-3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

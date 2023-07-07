@@ -86,8 +86,8 @@ GET https://graph.microsoft.com/beta/termStore/groups/1FFD3F87-9464-488A-A0EC-8F
 [!INCLUDE [sample-code](../includes/snippets/php/get-group-3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-group-3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -151,8 +151,8 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 [!INCLUDE [sample-code](../includes/snippets/php/get-group-termstore-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-termstore-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-group-termstore-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -218,8 +218,8 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 [!INCLUDE [sample-code](../includes/snippets/php/get-group-termstore-sites-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-termstore-sites-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-group-termstore-sites-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

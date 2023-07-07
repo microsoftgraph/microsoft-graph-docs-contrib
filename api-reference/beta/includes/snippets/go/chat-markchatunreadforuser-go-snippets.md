@@ -4,19 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Chats/Item/MarkChatUnreadForUser"
+	  graphchats "github.com/microsoftgraph/msgraph-beta-sdk-go/chats"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewMarkChatUnreadForUserPostRequestBody()
+requestBody := graphchats.NewMarkChatUnreadForUserPostRequestBody()
 user := graphmodels.NewTeamworkUserIdentity()
 id := "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
 user.SetId(&id) 

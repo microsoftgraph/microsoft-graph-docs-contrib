@@ -94,8 +94,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/php/accesspackageassignmentrequest-filterbycurrentuser-ontarget-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackageassignmentrequest-filterbycurrentuser-ontarget-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/accesspackageassignmentrequest-filterbycurrentuser-ontarget-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

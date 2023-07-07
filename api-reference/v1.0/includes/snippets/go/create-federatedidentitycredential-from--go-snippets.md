@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -24,7 +24,6 @@ subject := "a7d388c3-5e3f-4959-ac7d-786b3383006a"
 requestBody.SetSubject(&subject) 
 audiences := []string {
 	"api://AzureADTokenExchange",
-
 }
 requestBody.SetAudiences(audiences)
 

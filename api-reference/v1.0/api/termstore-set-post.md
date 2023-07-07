@@ -1,5 +1,5 @@
 ---
-title: "Create set"
+title: "Create termStore set"
 description: "Create a new set object."
 author: vishriv
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: sites-and-lists
 doc_type: apiPageType
 ---
 
-# Create set
+# Create termStore set
 Namespace: microsoft.graph.termStore
 
 Create a new [set](../resources/termstore-set.md) object.
@@ -45,8 +45,8 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|localizedNames|[microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md) collection|Name of the set to be created.|
-|parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|termstore-group under which the set needs to be created.|
+|localizedNames|[microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md) collection|Name of the set to be created.|
+|parentGroup|[microsoft.graph.termStore.group](../resources/termstore-group.md)|termstore-group under which the set needs to be created.|
 
 
 
@@ -57,8 +57,13 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_termStore_set_v1_e1"
+}-->
 ``` http
-POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets
+POST https://graph.microsoft.com/v1.0/sites/6a742cee-9216-4db5-8046-13a595684e74/termStore/sets
 Content-Type: application/json
 
 {
@@ -75,18 +80,52 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-termstore-set-v1-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-termstore-set-v1-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-termstore-set-v1-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-termstore-set-v1-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-termstore-set-v1-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-termstore-set-v1-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-termstore-set-v1-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-termstore-set-v1-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.termstore.set"
+  "@odata.type": "microsoft.graph.termStore.set"
 }
 -->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.termStore.set",
   "id": "3607e9f9-e9f9-3607-f9e9-0736f9e90736",
@@ -115,5 +154,4 @@ Content-Type: application/json
   ]
 }
 -->
-
 

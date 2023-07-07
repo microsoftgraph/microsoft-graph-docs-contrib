@@ -26,9 +26,9 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |id|String|Unique identifier for the policy assignment. The ID is typically a concatenation of the unifiedRoleManagementPolicy ID and the roleDefinitionId separated by an underscore.|
 |policyId|String|The id of the policy. Inherited from [entity](../resources/entity.md).|
-|roleDefinitionId|String|The identifier of the [role definition](unifiedroledefinition.md) object where the policy applies. If not specified, the policy applies to all roles. Supports $filter (`eq`).|
+|roleDefinitionId|String|For Azure AD roles policy, it's the identifier of the [role definition](unifiedroledefinition.md) object where the policy applies. For PIM for groups membership and ownership, it's either `member` or `owner`. Supports $filter (`eq`).|
 |scopeId|String|The identifier of the scope where the policy is assigned.  Can be `/` for the tenant or a group ID. Required.|
-|scopeType|String|The type of the scope where the policy is assigned. One of `Directory`, `DirectoryRole`. Required.|
+|scopeType|String|The type of the scope where the policy is assigned. One of `Directory`, `DirectoryRole`, `Group`. Required.|
 
 ## Relationships
 |Relationship|Type|Description|

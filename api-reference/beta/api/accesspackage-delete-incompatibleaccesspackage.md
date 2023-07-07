@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/powershell/remove-incompatibleaccesspackage-from-accesspackage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/remove-incompatibleaccesspackage-from-accesspackage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

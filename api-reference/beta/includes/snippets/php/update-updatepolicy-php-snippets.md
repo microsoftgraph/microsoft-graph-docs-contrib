@@ -16,7 +16,7 @@ $deploymentSettings = new DeploymentSettings();
 $deploymentSettings->set@odatatype('microsoft.graph.windowsUpdates.deploymentSettings');
 
 $deploymentSettingsSchedule = new ScheduleSettings();
-$deploymentSettingsScheduleGradualRollout = new GradualRolloutSettings();
+$deploymentSettingsScheduleGradualRollout = new RateDrivenRolloutSettings();
 $deploymentSettingsScheduleGradualRollout->set@odatatype('#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings');
 
 $deploymentSettingsScheduleGradualRollout->setDurationBetweenOffers(new \DateInterval('P1D'));
@@ -35,7 +35,7 @@ $deploymentSettings->setSchedule($deploymentSettingsSchedule);
 $requestBody->setDeploymentSettings($deploymentSettings);
 
 
-$result = $graphServiceClient->admin()->windows()->updates()->updatePoliciesById('updatePolicy-id')->patch($requestBody);
+$result = $graphServiceClient->admin()->windows()->updates()->updatePolicies()->byUpdatePolicieId('updatePolicy-id')->patch($requestBody);
 
 
 ```

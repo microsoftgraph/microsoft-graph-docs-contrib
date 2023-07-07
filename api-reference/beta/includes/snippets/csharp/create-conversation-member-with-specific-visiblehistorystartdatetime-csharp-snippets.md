@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new ConversationMember
+var requestBody = new AadUserConversationMember
 {
 	OdataType = "#microsoft.graph.aadUserConversationMember",
 	VisibleHistoryStartDateTime = DateTimeOffset.Parse("2019-04-18T23:51:43.255Z"),

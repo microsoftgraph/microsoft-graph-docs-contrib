@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -22,7 +22,6 @@ description := "Graph Learn training courses extensions"
 requestBody.SetDescription(&description) 
 targetTypes := []string {
 	"Group",
-
 }
 requestBody.SetTargetTypes(targetTypes)
 owner := "50897f70-a455-4adf-87bc-4cf17091d5ac"
@@ -49,7 +48,6 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 	extensionSchemaProperty,
 	extensionSchemaProperty1,
 	extensionSchemaProperty2,
-
 }
 requestBody.SetProperties(properties)
 

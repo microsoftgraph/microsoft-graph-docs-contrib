@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -28,7 +28,6 @@ alternativeSecurityId.SetKey(&key)
 
 alternativeSecurityIds := []graphmodels.AlternativeSecurityIdable {
 	alternativeSecurityId,
-
 }
 requestBody.SetAlternativeSecurityIds(alternativeSecurityIds)
 deviceId := "4c299165-6e8f-4b45-a5ba-c5d250a707ff"

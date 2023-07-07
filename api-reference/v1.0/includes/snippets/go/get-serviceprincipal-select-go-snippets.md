@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.ServicePrincipalItemRequestBuilderGetQueryParameters{
+requestParameters := &graphserviceprincipals.ServicePrincipalItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","appId","displayName","appRoles","oauth2PermissionScopes"},
 }
-configuration := &graphconfig.ServicePrincipalItemRequestBuilderGetRequestConfiguration{
+configuration := &graphserviceprincipals.ServicePrincipalItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -51,10 +51,9 @@ pauseAfterEstimate := true
 requestBody.SetPauseAfterEstimate(&pauseAfterEstimate) 
 regulations := []string {
 	"CCPA",
-
 }
 requestBody.SetRegulations(regulations)
-siteLocations := graphmodels.NewSubjectRightsRequestSiteLocation()
+siteLocations := graphmodels.NewSubjectRightsRequestAllSiteLocation()
 requestBody.SetSiteLocations(siteLocations)
 
 
@@ -64,7 +63,6 @@ user.SetId(&id)
 
 approvers := []graphmodels.Userable {
 	user,
-
 }
 requestBody.SetApprovers(approvers)
 

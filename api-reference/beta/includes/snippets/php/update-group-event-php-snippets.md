@@ -29,7 +29,7 @@ $requestBody->setIsReminderOn(true);
 
 
 
-$result = $graphServiceClient->groupsById('group-id')->eventsById('event-id')->patch($requestBody);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->events()->byEventId('event-id')->patch($requestBody);
 
 
 ```

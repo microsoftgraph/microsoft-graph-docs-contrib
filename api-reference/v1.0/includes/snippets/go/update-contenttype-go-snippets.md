@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -31,7 +31,6 @@ contentTypeInfo.SetName(&name)
 
 allowedContentTypes := []graphmodels.ContentTypeInfoable {
 	contentTypeInfo,
-
 }
 documentSet.SetAllowedContentTypes(allowedContentTypes)
 
@@ -54,7 +53,6 @@ documentSetContent1.SetContentType(contentType)
 defaultContents := []graphmodels.DocumentSetContentable {
 	documentSetContent,
 	documentSetContent1,
-
 }
 documentSet.SetDefaultContents(defaultContents)
 
@@ -73,7 +71,6 @@ columnDefinition1.SetId(&id)
 sharedColumns := []graphmodels.ColumnDefinitionable {
 	columnDefinition,
 	columnDefinition1,
-
 }
 documentSet.SetSharedColumns(sharedColumns)
 
@@ -86,7 +83,6 @@ columnDefinition.SetId(&id)
 
 welcomePageColumns := []graphmodels.ColumnDefinitionable {
 	columnDefinition,
-
 }
 documentSet.SetWelcomePageColumns(welcomePageColumns)
 requestBody.SetDocumentSet(documentSet)

@@ -59,7 +59,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->communications()->callsById('call-id')->transfer()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->transfer()->post($requestBody);
 
 
 ```

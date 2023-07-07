@@ -57,7 +57,7 @@ $requestBody->setTransactionId('7E163156-7762-4BEB-A1C6-729EA81755A7');
 
 
 
-$result = $graphServiceClient->me()->calendarsById('calendar-id')->events()->post($requestBody);
+$result = $graphServiceClient->me()->calendars()->byCalendarId('calendar-id')->events()->post($requestBody);
 
 
 ```

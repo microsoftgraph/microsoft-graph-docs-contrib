@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
@@ -23,11 +23,11 @@ headers.Add("ConsistencyLevel", "eventual")
 requestFilter := "NOT)"
 requestCount := true
 
-requestParameters := &graphconfig.UsersRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.UsersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Count: &requestCount,
 }
-configuration := &graphconfig.UsersRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UsersRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

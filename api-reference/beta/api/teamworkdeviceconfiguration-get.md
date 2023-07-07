@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/teamwork/devices/e19229ed-29ed-e192-ed29-92
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-teamworkdeviceconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-teamworkdeviceconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

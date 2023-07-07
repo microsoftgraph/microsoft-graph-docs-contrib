@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-Id needs to be a GUID.
+`{id}` needs to be a GUID.
 
 ## Request headers
 
@@ -46,16 +46,17 @@ In the request body, supply a JSON representation of a [historyItem](../resource
 
 ## Response
 
-If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.
+If successful, this method returns a `201 Created` response code if the **historyItem** was created or `200 OK` if the **historyItem** was replaced.
 
 ## Example
 
-#### Request
+### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
-    "blockType": "ignored",
+    "blockType": "request",
     "name": "upsert_historyItem"
 } -->
 
@@ -70,12 +71,22 @@ Content-type: application/json
 }
 ```
 
-#### Response
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/upsert-historyitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-Here is an example of the response.
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upsert-historyitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following is an example of the response.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "response",
     "truncated": true,
     "@odata.type": "microsoft.graph.activityHistoryItem"
 } -->

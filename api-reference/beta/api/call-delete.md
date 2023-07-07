@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-call-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-call-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

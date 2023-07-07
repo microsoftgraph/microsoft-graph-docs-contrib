@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -51,7 +51,6 @@ chatMessageHostedContent.SetAdditionalData(additionalData)
 
 hostedContents := []graphmodels.ChatMessageHostedContentable {
 	chatMessageHostedContent,
-
 }
 requestBody.SetHostedContents(hostedContents)
 

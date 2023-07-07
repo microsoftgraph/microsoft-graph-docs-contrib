@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -24,7 +24,6 @@ complianceUrl := "https://contoso.com/dlp-policy-page"
 policyTip.SetComplianceUrl(&complianceUrl) 
 matchedConditionDescriptions := []string {
 	"Credit Card Number",
-
 }
 policyTip.SetMatchedConditionDescriptions(matchedConditionDescriptions)
 policyViolation.SetPolicyTip(policyTip)

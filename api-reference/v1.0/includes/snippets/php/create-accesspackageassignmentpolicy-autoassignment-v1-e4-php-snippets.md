@@ -48,14 +48,10 @@ $stagesAccessPackageApprovalStage1->setEscalationApprovers([]);
 
 $stagesAccessPackageApprovalStage1->setFallbackEscalationApprovers([]);
 
-$primaryApproversSubjectSet1 = new SubjectSet();
+$primaryApproversSubjectSet1 = new SingleUser();
 $primaryApproversSubjectSet1->set@odatatype('#microsoft.graph.singleUser');
 
-$additionalData = [
-'userId' => '08a551cb-575a-4343-b914-f6e42798bd20', 
-];
-$primaryApproversSubjectSet1->setAdditionalData($additionalData);
-
+$primaryApproversSubjectSet1->setUserId('08a551cb-575a-4343-b914-f6e42798bd20');
 
 
 $primaryApproversArray []= $primaryApproversSubjectSet1;
@@ -69,7 +65,7 @@ $requestApprovalSettings->setStages($stagesArray);
 
 
 $requestBody->setRequestApprovalSettings($requestApprovalSettings);
-$questionsAccessPackageQuestion1 = new AccessPackageQuestion();
+$questionsAccessPackageQuestion1 = new AccessPackageMultipleChoiceQuestion();
 $questionsAccessPackageQuestion1->set@odatatype('#microsoft.graph.accessPackageMultipleChoiceQuestion');
 
 $questionsAccessPackageQuestion1->setSequence(1);
@@ -80,63 +76,59 @@ $questionsAccessPackageQuestion1->setIsAnswerEditable(true);
 
 $questionsAccessPackageQuestion1->setText('What country are you working from?');
 
-$additionalData = [
-'isMultipleSelectionAllowed' => 'false', 
-'choices' => $choices1 = new ();
-$choices1->set@odatatype('microsoft.graph.accessPackageAnswerChoice');
+$questionsAccessPackageQuestion1->setIsMultipleSelectionAllowed(false);
 
-$choices1->setActualValue('KE');
+$choicesAccessPackageAnswerChoice1 = new AccessPackageAnswerChoice();
+$choicesAccessPackageAnswerChoice1->set@odatatype('microsoft.graph.accessPackageAnswerChoice');
 
-$choices1->setText('Kenya');
+$choicesAccessPackageAnswerChoice1->setActualValue('KE');
 
-
-$choicesArray []= $choices1;
-$choices2 = new ();
-$choices2->set@odatatype('microsoft.graph.accessPackageAnswerChoice');
-
-$choices2->setActualValue('US');
-
-$choices2->setText('United States');
+$choicesAccessPackageAnswerChoice1->setText('Kenya');
 
 
-$choicesArray []= $choices2;
-$choices3 = new ();
-$choices3->set@odatatype('microsoft.graph.accessPackageAnswerChoice');
+$choicesArray []= $choicesAccessPackageAnswerChoice1;
+$choicesAccessPackageAnswerChoice2 = new AccessPackageAnswerChoice();
+$choicesAccessPackageAnswerChoice2->set@odatatype('microsoft.graph.accessPackageAnswerChoice');
 
-$choices3->setActualValue('GY');
+$choicesAccessPackageAnswerChoice2->setActualValue('US');
 
-$choices3->setText('Guyana');
-
-
-$choicesArray []= $choices3;
-$choices4 = new ();
-$choices4->set@odatatype('microsoft.graph.accessPackageAnswerChoice');
-
-$choices4->setActualValue('BD');
-
-$choices4->setText('Bangladesh');
+$choicesAccessPackageAnswerChoice2->setText('United States');
 
 
-$choicesArray []= $choices4;
-$choices5 = new ();
-$choices5->set@odatatype('microsoft.graph.accessPackageAnswerChoice');
+$choicesArray []= $choicesAccessPackageAnswerChoice2;
+$choicesAccessPackageAnswerChoice3 = new AccessPackageAnswerChoice();
+$choicesAccessPackageAnswerChoice3->set@odatatype('microsoft.graph.accessPackageAnswerChoice');
 
-$choices5->setActualValue('JP');
+$choicesAccessPackageAnswerChoice3->setActualValue('GY');
 
-$choices5->setText('Japan');
+$choicesAccessPackageAnswerChoice3->setText('Guyana');
 
 
-$choicesArray []= $choices5;
+$choicesArray []= $choicesAccessPackageAnswerChoice3;
+$choicesAccessPackageAnswerChoice4 = new AccessPackageAnswerChoice();
+$choicesAccessPackageAnswerChoice4->set@odatatype('microsoft.graph.accessPackageAnswerChoice');
+
+$choicesAccessPackageAnswerChoice4->setActualValue('BD');
+
+$choicesAccessPackageAnswerChoice4->setText('Bangladesh');
+
+
+$choicesArray []= $choicesAccessPackageAnswerChoice4;
+$choicesAccessPackageAnswerChoice5 = new AccessPackageAnswerChoice();
+$choicesAccessPackageAnswerChoice5->set@odatatype('microsoft.graph.accessPackageAnswerChoice');
+
+$choicesAccessPackageAnswerChoice5->setActualValue('JP');
+
+$choicesAccessPackageAnswerChoice5->setText('Japan');
+
+
+$choicesArray []= $choicesAccessPackageAnswerChoice5;
 $questionsAccessPackageQuestion1->setChoices($choicesArray);
-
-
-];
-$questionsAccessPackageQuestion1->setAdditionalData($additionalData);
 
 
 
 $questionsArray []= $questionsAccessPackageQuestion1;
-$questionsAccessPackageQuestion2 = new AccessPackageQuestion();
+$questionsAccessPackageQuestion2 = new AccessPackageTextInputQuestion();
 $questionsAccessPackageQuestion2->set@odatatype('#microsoft.graph.accessPackageTextInputQuestion');
 
 $questionsAccessPackageQuestion2->setSequence(2);
@@ -157,12 +149,9 @@ $localizationsArray []= $localizationsAccessPackageLocalizedText1;
 $questionsAccessPackageQuestion2->setLocalizations($localizationsArray);
 
 
-$additionalData = [
-'isSingleLineQuestion' => 'false', 
-'regexPattern' => '[a-zA-Z]+[a-zA-Z\s]*', 
-];
-$questionsAccessPackageQuestion2->setAdditionalData($additionalData);
+$questionsAccessPackageQuestion2->setIsSingleLineQuestion(false);
 
+$questionsAccessPackageQuestion2->setRegexPattern('[a-zA-Z]+[a-zA-Z\s]*');
 
 
 $questionsArray []= $questionsAccessPackageQuestion2;

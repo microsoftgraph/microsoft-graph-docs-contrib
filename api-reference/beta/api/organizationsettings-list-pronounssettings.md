@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/pron
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-pronounssettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-pronounssettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

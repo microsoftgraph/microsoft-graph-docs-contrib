@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-case-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-case-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

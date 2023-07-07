@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/education/schools/10001
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-educationschool-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-educationschool-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

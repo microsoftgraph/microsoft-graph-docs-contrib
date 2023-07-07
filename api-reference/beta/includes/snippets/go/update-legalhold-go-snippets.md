@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//ediscovery"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewLegalHold()
+requestBody := graphmodelsediscovery.NewLegalHold()
 description := "This is a description for a legalHold"
 requestBody.SetDescription(&description) 
 

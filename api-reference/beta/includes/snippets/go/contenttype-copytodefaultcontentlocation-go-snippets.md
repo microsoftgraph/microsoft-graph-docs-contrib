@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Sites/Item/ContentTypes/Item/CopyToDefaultContentLocation"
+	  graphsites "github.com/microsoftgraph/msgraph-beta-sdk-go/sites"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCopyToDefaultContentLocationPostRequestBody()
+requestBody := graphsites.NewCopyToDefaultContentLocationPostRequestBody()
 sourceFile := graphmodels.NewItemReference()
 sharepointIds := graphmodels.NewSharepointIds()
 listId := "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"

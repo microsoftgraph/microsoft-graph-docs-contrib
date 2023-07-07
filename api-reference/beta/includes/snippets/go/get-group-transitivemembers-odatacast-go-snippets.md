@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
 	  //other-imports
 )
 
@@ -22,10 +22,10 @@ headers.Add("ConsistencyLevel", "eventual")
 
 requestCount := true
 
-requestParameters := &graphconfig.GroupItemTransitiveMembersGraph.groupRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.GroupItemTransitiveMembersGraph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 }
-configuration := &graphconfig.GroupItemTransitiveMembersGraph.groupRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupItemTransitiveMembersGraph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

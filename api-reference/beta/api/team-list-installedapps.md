@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-installed-apps-in-team-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -170,6 +174,10 @@ GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-teams-apps-expand-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-installed-teams-apps-expand-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -295,6 +303,10 @@ GET https://graph.microsoft.com/beta/teams/acda442c-78d2-491b-8204-4ef5019c0193/
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-team-expand-filter-externalid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-installed-apps-in-team-expand-filter-externalid-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -384,6 +396,10 @@ GET https://graph.microsoft.com/beta/teams/7eeb5a95-f602-4861-ab67-49714fa5a020/
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-team-select-consentedpermissionset-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-installed-apps-in-team-select-consentedpermissionset-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/22aa2acd-
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-ediscoverycase-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-ediscoverycase-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

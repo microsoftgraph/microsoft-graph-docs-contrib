@@ -1,7 +1,7 @@
 ---
 title: "List acceptances"
 description: "Get the details about the acceptance records for a specific agreement."
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/94
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-agreementacceptance-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-agreementacceptance-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

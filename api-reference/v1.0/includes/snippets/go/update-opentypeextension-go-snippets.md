@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -25,7 +25,6 @@ additionalData := map[string]interface{}{
 		"Employees only",
 		"Add spouse or guest",
 		"Add family",
-
 	}
 }
 requestBody.SetAdditionalData(additionalData)

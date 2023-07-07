@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the tenant-level [settings](../resources/sharepointSettings.md) for SharePoint and OneDrive.
+Get the tenant-level [settings](../resources/sharepointsettings.md) for SharePoint and OneDrive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [settings](../resources/sharepointSettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [settings](../resources/sharepointsettings.md) object in the response body.
 
 ## Examples
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/admin/sharepoint/settings
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-settings-at-tenant-level-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-settings-at-tenant-level-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -161,4 +165,3 @@ Content-Type: application/json
     }
 }
 ```
-
