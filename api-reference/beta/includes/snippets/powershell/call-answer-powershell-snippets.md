@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	callbackUri = "callbackUri-value"
@@ -22,6 +22,6 @@ $params = @{
 	participantCapacity = 200
 }
 
-Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
+Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
 ```
