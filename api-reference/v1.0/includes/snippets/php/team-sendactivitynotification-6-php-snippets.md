@@ -24,15 +24,12 @@ $previewText->setContent('Internal spending team has a pending finance approval 
 
 
 $requestBody->setPreviewText($previewText);
-$recipient = new TeamworkNotificationRecipient();
+$recipient = new ChannelMembersNotificationRecipient();
 $recipient->set@odatatype('microsoft.graph.channelMembersNotificationRecipient');
 
-$additionalData = [
-		'teamId' => 'e8bece96-d393-4b9b-b8da-69cedef1a7e7', 
-		'channelId' => '19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2', 
-];
-$recipient->setAdditionalData($additionalData);
+$recipient->setTeamId('e8bece96-d393-4b9b-b8da-69cedef1a7e7');
 
+$recipient->setChannelId('19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2');
 
 
 $requestBody->setRecipient($recipient);

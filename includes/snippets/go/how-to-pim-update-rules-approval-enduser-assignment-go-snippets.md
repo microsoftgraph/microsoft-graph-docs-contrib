@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUnifiedRoleManagementPolicyRule()
@@ -23,8 +23,7 @@ caller := "EndUser"
 target.SetCaller(&caller) 
 operations := []graphmodels.UnifiedRoleManagementPolicyRuleTargetOperationsable {
 	unifiedRoleManagementPolicyRuleTargetOperations := graphmodels.ALL_UNIFIEDROLEMANAGEMENTPOLICYRULETARGETOPERATIONS 
-	target.SetUnifiedRoleManagementPolicyRuleTargetOperations(&unifiedRoleManagementPolicyRuleTargetOperations) 
-
+	target.SetUnifiedRoleManagementPolicyRuleTargetOperations(&unifiedRoleManagementPolicyRuleTargetOperations)
 }
 target.SetOperations(operations)
 level := "Assignment"
@@ -38,55 +37,50 @@ enforcedSettings := []string {
 }
 target.SetEnforcedSettings(enforcedSettings)
 requestBody.SetTarget(target)
-additionalData := map[string]interface{}{
-setting := graphmodels.New()
-	isApprovalRequired := true
+setting := graphmodels.NewApprovalSettings()
+isApprovalRequired := true
 setting.SetIsApprovalRequired(&isApprovalRequired) 
-	isApprovalRequiredForExtension := false
+isApprovalRequiredForExtension := false
 setting.SetIsApprovalRequiredForExtension(&isApprovalRequiredForExtension) 
-	isRequestorJustificationRequired := true
+isRequestorJustificationRequired := true
 setting.SetIsRequestorJustificationRequired(&isRequestorJustificationRequired) 
 approvalMode := "SingleStage"
 setting.SetApprovalMode(&approvalMode) 
 
 
- := graphmodels.New()
+unifiedApprovalStage := graphmodels.NewUnifiedApprovalStage()
 approvalStageTimeOutInDays := int32(1)
-.SetApprovalStageTimeOutInDays(&approvalStageTimeOutInDays) 
+unifiedApprovalStage.SetApprovalStageTimeOutInDays(&approvalStageTimeOutInDays) 
 isApproverJustificationRequired := true
-.SetIsApproverJustificationRequired(&isApproverJustificationRequired) 
+unifiedApprovalStage.SetIsApproverJustificationRequired(&isApproverJustificationRequired) 
 escalationTimeInMinutes := int32(0)
-.SetEscalationTimeInMinutes(&escalationTimeInMinutes) 
+unifiedApprovalStage.SetEscalationTimeInMinutes(&escalationTimeInMinutes) 
 
 
- := graphmodels.New()
+subjectSet := graphmodels.NewSingleUser()
 userId := "10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6"
-.SetUserId(&userId) 
- := graphmodels.New()
+subjectSet.SetUserId(&userId) 
+subjectSet1 := graphmodels.NewGroupMembers()
 groupId := "14f2746d-7d6f-4ac6-acd8-8cac318b041b"
-.SetGroupId(&groupId) 
+subjectSet1.SetGroupId(&groupId) 
 
-primaryApprovers := []graphmodels.Objectable {
-	,
-	,
-
+primaryApprovers := []graphmodels.SubjectSetable {
+	subjectSet,
+	subjectSet1,
 }
-.SetPrimaryApprovers(primaryApprovers)
+unifiedApprovalStage.SetPrimaryApprovers(primaryApprovers)
 isEscalationEnabled := false
-.SetIsEscalationEnabled(&isEscalationEnabled) 
-escalationApprovers := []graphmodels.able {
+unifiedApprovalStage.SetIsEscalationEnabled(&isEscalationEnabled) 
+escalationApprovers := []graphmodels.SubjectSetable {
 
 }
-.SetEscalationApprovers(escalationApprovers)
+unifiedApprovalStage.SetEscalationApprovers(escalationApprovers)
 
-	approvalStages := []graphmodels.Objectable {
-		,
-
-	}
-	setting.SetApprovalStages(approvalStages)
-	requestBody.SetSetting(setting)
+approvalStages := []graphmodels.UnifiedApprovalStageable {
+	unifiedApprovalStage,
 }
-requestBody.SetAdditionalData(additionalData)
+setting.SetApprovalStages(approvalStages)
+requestBody.SetSetting(setting)
 
 result, err := graphClient.Policies().RoleManagementPolicies().ByRoleManagementPolicieId("unifiedRoleManagementPolicy-id").Rules().ByRuleId("unifiedRoleManagementPolicyRule-id").Patch(context.Background(), requestBody, nil)
 

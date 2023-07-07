@@ -9,10 +9,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new UnifiedRoleManagementPolicyRule();
+$requestBody = new UnifiedRoleManagementPolicyExpirationRule();
 $requestBody->set@odatatype('#microsoft.graph.unifiedRoleManagementPolicyExpirationRule');
 
 $requestBody->setId('Expiration_Admin_Eligibility');
+
+$requestBody->setIsExpirationRequired(true);
+
+$requestBody->setMaximumDuration(new \DateInterval('P90D'));
 
 $target = new UnifiedRoleManagementPolicyRuleTarget();
 $target->set@odatatype('microsoft.graph.unifiedRoleManagementPolicyRuleTarget');
@@ -30,13 +34,6 @@ $target->setEnforcedSettings([]);
 
 
 $requestBody->setTarget($target);
-$additionalData = [
-'isExpirationRequired' => true,
-'maximumDuration' => 'P90D', 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
 
 
 $result = $graphServiceClient->policies()->roleManagementPolicies()->byRoleManagementPolicieId('unifiedRoleManagementPolicy-id')->rules()->byRuleId('unifiedRoleManagementPolicyRule-id')->patch($requestBody);

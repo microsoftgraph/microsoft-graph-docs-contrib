@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewChatMessage()
@@ -24,7 +24,6 @@ complianceUrl := "https://contoso.com/dlp-policy-page"
 policyTip.SetComplianceUrl(&complianceUrl) 
 matchedConditionDescriptions := []string {
 	"Credit Card Number",
-
 }
 policyTip.SetMatchedConditionDescriptions(matchedConditionDescriptions)
 policyViolation.SetPolicyTip(policyTip)

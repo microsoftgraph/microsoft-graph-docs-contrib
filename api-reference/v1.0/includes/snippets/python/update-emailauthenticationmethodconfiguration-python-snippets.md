@@ -7,14 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = AuthenticationMethodConfiguration()
+request_body = EmailAuthenticationMethodConfiguration()
 request_body.@odata_type = '#microsoft.graph.emailAuthenticationMethodConfiguration'
 
-additional_data = [
-'allow_external_id_to_use_email_otp' => 'enabled', 
-];
-request_body.additional_data(additional_data)
-
+request_body.allowexternalidtouseemailotp(ExternalEmailOtpState.Enabled('externalemailotpstate.enabled'))
 
 
 

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUser()
@@ -24,7 +24,6 @@ engineering.SetOdataType(&odataType)
 	project := []string {
 		"Baker",
 		"Cascade",
-
 	}
 	engineering.SetProject(project)
 	customSecurityAttributes.SetEngineering(engineering)
