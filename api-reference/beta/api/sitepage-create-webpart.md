@@ -62,7 +62,6 @@ To ensure successful parsing of the request body, the `@odata.type=#microsoft.gr
 
 The following example shows how to create a new webpart.
 
-# [HTTP](#tab/http)
 
 <!-- { "blockType": "request", "name": "create-webpart", "scopes": "sites.readwrite.all" } -->
 

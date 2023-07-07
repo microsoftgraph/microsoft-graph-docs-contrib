@@ -7,7 +7,6 @@ ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-
 # Update webPart
 
 Namespace: microsoft.graph
@@ -61,8 +60,6 @@ If successful, this method returns a `200 OK` response code and an updated [webP
 ### Request
 
 The following example shows how to update a webpart.
-
-# [HTTP](#tab/http)
 
 <!-- { "blockType": "request", "name": "update-webpart", "scopes": "sites.readwrite.all" } -->
 
