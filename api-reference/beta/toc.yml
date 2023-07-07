@@ -12894,6 +12894,20 @@ items:
               - name: Alert configurations
                 href: resources/unifiedrolemanagementalertconfiguration.md
                 items:
+                - name: Invalid license
+                  href: resources/invalidlicensealertconfiguration.md
+                - name: No MFA on role activation
+                  href: resources/nomfaonroleactivationalertconfiguration.md
+                - name: Redundant role assignment
+                  href: resources/redundantassignmentalertconfiguration.md
+                - name: Role assigned outside PIM
+                  href: resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md
+                - name: Frequent role activation
+                  href: resources/sequentialactivationrenewalsalertconfiguration.md
+                - name: Stale account in privileged role
+                  href: resources/stalesigninalertconfiguration.md
+                - name: Too many global administrators
+                  href: resources/toomanyglobaladminsassignedtotenantalertconfiguration.md
                 - name: List
                   href: api/rolemanagementalert-list-alertconfigurations.md
                 - name: Get
@@ -16574,8 +16588,14 @@ items:
             href: resources/horizontalsection.md
           - name: List
             href: api/horizontalsection-list.md
+          - name: Create
+            href: api/sitepage-post-horizontalsection.md
           - name: Get
             href: api/horizontalsection-get.md
+          - name: Update
+            href: api/horizontalsection-update.md
+          - name: Delete
+            href: api/horizontalsection-delete.md
           - name: Column
             items:
             - name: Horizontal section column
@@ -16588,8 +16608,14 @@ items:
           items:
           - name: Vertical section
             href: resources/verticalsection.md
+          - name: Create
+            href: api/sitepage-post-verticalsection.md
           - name: Get
             href: api/verticalsection-get.md
+          - name: Update
+            href: api/verticalsection-update.md
+          - name: Delete
+            href: api/verticalsection-delete.md
         - name: Web part
           items:
           - name: Web part
