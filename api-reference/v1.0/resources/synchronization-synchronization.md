@@ -24,6 +24,7 @@ Represents the capability for Azure Active Directory (Azure AD) identity synchro
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String| **TODO: Add description**|
 |secrets|[synchronizationSecretKeyStringValuePair](synchronization-synchronizationsecretkeystringvaluepair.md) collection| Represents a collection of credentials to access provisioned cloud applications.|
 
 ## Relationships
@@ -36,8 +37,8 @@ Represents the capability for Azure Active Directory (Azure AD) identity synchro
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.synchronization",
+  "keyProperty": "id",
   "openType": false
 }
 -->
