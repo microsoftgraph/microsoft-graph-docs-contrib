@@ -12362,7 +12362,11 @@ items:
             - name: Find tenant by tenant ID
               href: api/tenantrelationship-findtenantinformationbytenantid.md
       - name: Network access
+        displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
         items:
+        - name: Overview
+          displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
+          href: resources/networkaccess-global-secure-access-api-overview.md
         - name: Tenant status
           href: resources/networkaccess-tenantstatus.md 
           items:
@@ -12425,7 +12429,7 @@ items:
               href: api/networkaccess-forwardingpolicylink-update.md
             - name: Delete
               href: api/networkaccess-forwardingpolicylink-delete.md
-          - name: Policy rule
+          - name: Forwarding policy rule
             href: resources/networkaccess-policyrule.md
             items:
             - name: Forwarding rule
@@ -12444,23 +12448,15 @@ items:
         - name: Branch site
           href: resources/networkaccess-branchsite.md
           items:
-          - name: List branch sites
+          - name: List
             href: api/networkaccess-connectivity-list-branches.md
-          - name: List forwarding profiles for branch
-            href: api/networkaccess-branchsite-list-forwardingprofiles.md
-          - name: Create branch site
+          - name: Create
             href: api/networkaccess-connectivity-post-branches.md
-          - name: Create with device links
-            href: api/networkaccess-branchsite-post-devicelinks.md
-          - name: Create with forwarding profile
-            href: api/networkaccess-branchsite-post-forwardingprofiles.md
-          - name: Get branch site
+          - name: Get
             href: api/networkaccess-branchsite-get.md
-          - name: Update branch site
+          - name: Update
             href: api/networkaccess-branchsite-update.md
-          - name: Update forwarding profile for branch
-            href: api/networkaccess-forwardingprofile-update.md
-          - name: Delete branch site
+          - name: Delete
             href: api/networkaccess-branchsite-delete.md
           - name: Device link
             href: resources/networkaccess-devicelink.md
@@ -12475,6 +12471,14 @@ items:
               href: api/networkaccess-devicelink-update.md 
             - name: Delete
               href: api/networkaccess-branchsite-delete-devicelinks.md
+          - name: Forwarding profile
+            items:
+            - name: List
+              href: api/networkaccess-branchsite-list-forwardingprofiles.md
+            - name: Create
+              href: api/networkaccess-branchsite-post-forwardingprofiles.md
+            - name: Update forwarding profile for branch
+              href: api/networkaccess-forwardingprofile-update.md
         - name: Traffic logs
           href: resources/networkaccess-logs.md
           items:

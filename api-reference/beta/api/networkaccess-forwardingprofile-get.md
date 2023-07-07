@@ -36,7 +36,7 @@ GET /networkAccess/forwardingProfiles/{forwardingProfileId}
 ```
 
 ## Optional query parameters
-This method does not support any OData query parameters.
+This method supports the `$expand` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|

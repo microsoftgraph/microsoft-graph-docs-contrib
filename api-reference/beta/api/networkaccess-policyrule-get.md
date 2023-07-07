@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkaccess/forwardingprofile/{forwardingprofileId}/policyRules/{RuleId)
+GET https://graph.microsoft.com/beta/networkaccess/forwardingPolicies/{forwardingPolicyId}/policyRules/{RuleId)
 ```
 
 

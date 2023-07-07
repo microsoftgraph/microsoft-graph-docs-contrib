@@ -1,6 +1,6 @@
 ---
 title: "List policyRules"
-description: "Retrieve a list of forwarding rules within a forwarding profile."
+description: "Retrieve a list of forwarding rules within a forwarding policy."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of forwarding rules within a forwarding profile.
+Retrieve a list of forwarding rules within a forwarding policy.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkaccess/forwardingprofile/{forwardingprofileId}/policyRules/
+GET /networkaccess/forwardingPolicy/{forwardingPolicyId}/policyRules/
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkaccess/forwardingprofile/{forwardingprofileId}/policyRules
+GET https://graph.microsoft.com/beta/networkaccess/forwardingPolicy/{forwardingPolicyId}/policyRules
 ```
 
 
