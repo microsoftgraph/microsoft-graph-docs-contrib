@@ -185,7 +185,7 @@
 					"ApiChange": "Relationship",
 					"ChangedApiName": "pronounsSettings",
 					"ChangeType": "Deletion",
-					"Description": "Removed the **pronounsSettings** relationship from [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
+					"Description": "Removed the **pronounsSettings** relationship from the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
 					"Target": "organizationSettings"
 				},
 				{
