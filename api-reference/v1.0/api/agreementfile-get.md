@@ -1,7 +1,7 @@
 ---
 title: "Get agreementFile"
 description: "Retrieve the details of the default file for an agreement, including the language and version information."
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
