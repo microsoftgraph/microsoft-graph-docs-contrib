@@ -20,22 +20,29 @@ Represents a container for Azure Active Directory (Azure AD) reporting resources
 | [List userRegistrationDetails](../api/authenticationmethodsroot-list-userregistrationdetails.md)               | [userRegistrationDetails](../resources/userregistrationdetails.md) collection               | Get the state of authentication methods of all users in the tenant. |
 | [Get userRegistrationDetails](../api/userregistrationdetails-get.md) | [userRegistrationDetails](../resources/userregistrationdetails.md) collection               | Get the state of authentication methods of a user in the tenant. |
 
-
 ## Properties
+
 None.
 
 ## Relationships
-| Relationship                      | Type                                                                                              | Description                                                                                                         |
-| :-------------------------------- | :------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------ |
-| userRegistrationDetails        | [userRegistrationDetails](../resources/userRegistrationDetails.md) collection               | Represents the authentication methods of users for a given tenant.                                         |
+
+| Relationship            | Type                                                                          | Description                                                        |
+|:------------------------|:------------------------------------------------------------------------------|:-------------------------------------------------------------------|
+| authenticationMethods   | [authenticationMethodsRoot](../resources/authenticationmethodsroot.md)                            | Container for navigation properties for Azure AD authentication methods resources.                                  |
+| dailyPrintUsageByPrinter | [printUsageByPrinter](../resources/printusagebyprinter.md) collection | Retrieve a list of daily print usage summaries, grouped by printer. | 
+| dailyPrintUsageByUser | [printUsageByUser](../resources/printusagebyuser.md) collection | Retrieve a list of daily print usage summaries, grouped by user. |
+| monthlyPrintUsageByPrinter | [printUsageByPrinter](../resources/printusagebyprinter.md) collection | Retrieve a list of monthly print usage summaries, grouped by printer. |
+| monthlyPrintUsageByUser | [printUsageByUser](../resources/printusagebyuser.md) collection | Retrieve a list of monthly print usage summaries, grouped by user. |
+| security | [securityReportsRoot](../resources/securityreportsroot.md) | Represents an abstract type that contains resources for attack simulation and training reports.  |
+| userRegistrationDetails | [userRegistrationDetails](../resources/userregistrationdetails.md) collection | Represents the authentication methods of users for a given tenant. |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.reportRoot",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
