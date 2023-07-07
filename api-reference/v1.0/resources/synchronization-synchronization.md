@@ -24,7 +24,7 @@ Represents the capability for Azure Active Directory (Azure AD) identity synchro
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String| **TODO: Add description**|
+|id|String| Identifier. Inherited from [entity](entity.md).|
 |secrets|[synchronizationSecretKeyStringValuePair](synchronization-synchronizationsecretkeystringvaluepair.md) collection| Represents a collection of credentials to access provisioned cloud applications.|
 
 ## Relationships
