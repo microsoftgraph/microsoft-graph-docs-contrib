@@ -16,8 +16,7 @@ The configuration details for the logic app's endpoint that is associated with a
 ## Properties
 
 |Property|Type|Description|
-|:---|:---|:---| 
-
+|:---|:---|:---|
 |logicAppWorkflowName|String|The name of the logic app.|
 |resourceGroupName|String|The Azure resource group name for the logic app.|
 |subscriptionId|String|Identifier of the Azure subscription for the logic app.|

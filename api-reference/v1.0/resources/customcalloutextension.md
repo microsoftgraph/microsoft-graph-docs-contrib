@@ -15,8 +15,6 @@ An abstract type that defines the configuration for apps that can extend the cus
 
 This abstract type is inherited by the following derived types.
 
-- [customAccessPackageWorkflowExtension](customaccesspackageworkflowextension.md)
-- [customAuthenticationExtension](../resources/customauthenticationextension.md)
 - [customTaskExtension](../resources/identitygovernance-customtaskextension.md)
 - [accessPackageAssignmentRequestWorkflowExtension](accesspackageassignmentrequestworkflowextension.md)
 - [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)
