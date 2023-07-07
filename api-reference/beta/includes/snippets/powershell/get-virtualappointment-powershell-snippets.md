@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 # A UPN can also be used as -UserId.
-Get-MgUserOnlineMeetingVirtualAppointment -UserId $userId -OnlineMeetingId $onlineMeetingId
+Get-MgBetaUserOnlineMeetingVirtualAppointment -UserId $userId -OnlineMeetingId $onlineMeetingId
 
 ```

@@ -70,6 +70,11 @@
       "branch": "main"
     },
     {
+      "path_to_root": "concepts/sdks/snippets/python",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-python",
+      "branch": "main"
+    },
+    {
       "path_to_root": "concepts/sdks/snippets/typescript",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-typescript",
       "branch": "main"

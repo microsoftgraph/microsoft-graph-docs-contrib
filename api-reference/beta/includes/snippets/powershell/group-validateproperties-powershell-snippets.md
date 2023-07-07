@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
 	displayName = "Myprefix_test_mysuffix"
@@ -12,6 +12,6 @@ $params = @{
 	onBehalfOfUserId = "onBehalfOfUserId-value"
 }
 
-Test-MgGroupProperty -GroupId $groupId -BodyParameter $params
+Test-MgBetaGroupProperty -GroupId $groupId -BodyParameter $params
 
 ```

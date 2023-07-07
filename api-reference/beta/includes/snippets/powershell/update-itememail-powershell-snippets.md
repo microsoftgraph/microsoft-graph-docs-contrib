@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 
 $params = @{
 	displayName = "Business Email"
 	type = "work"
 }
 
-Update-MgUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId -BodyParameter $params
+Update-MgBetaUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId -BodyParameter $params
 
 ```
