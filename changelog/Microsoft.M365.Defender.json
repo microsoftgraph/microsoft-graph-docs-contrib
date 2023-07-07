@@ -1060,8 +1060,8 @@
 			"Id": "e6935041-9151-4b8c-8fd4-61f76865b40c",
 			"Cloud": "Prod",
 			"Version": "beta",
-			"CreatedDateTime": "2023-06-05T10:21:26.3362371Z",
-			"WorkloadArea": "Microsoft.M365.Defender",
+			"CreatedDateTime": "2023-07-06T10:21:26.3362371Z",
+			"WorkloadArea": "Security",
 			"SubArea": ""
 		},
 		{
@@ -1078,8 +1078,8 @@
 			"Id": "2fc51253-de45-43ef-95f4-ab9d842371be",
 			"Cloud": "Prod",
 			"Version": "v1.0",
-			"CreatedDateTime": "2023-06-05T10:21:26.3368654Z",
-			"WorkloadArea": "Microsoft.M365.Defender",
+			"CreatedDateTime": "2023-07-06T10:21:26.3368654Z",
+			"WorkloadArea": "Security",
 			"SubArea": ""
 		}
 	]
