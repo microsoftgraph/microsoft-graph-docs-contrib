@@ -1,6 +1,6 @@
 ---
 title: "cloudPcStatusDetails resource type"
-description: "The details of the Cloud PC status."
+description: "Represents details about the status of a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The details of the Cloud PC status.
+Represents details about the status of a Cloud PC.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
+|additionalInformation|[keyValuePair](../resources/keyvaluepair.md) collection|Any additional information about the Cloud PC status.|
 |code|String|The code associated with the Cloud PC status.|
 |message|String|The status message.|
-|additionalInformation|[KeyValuePair](../resources/keyvaluepair.md) collection|Any additional information about the Cloud PC status.|
 
 ## Relationships
 
@@ -40,12 +40,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcStatusDetails",
-  "code": "String",
-  "message": "String",
   "additionalInformation": [
     {
       "@odata.type": "microsoft.graph.keyValuePair"
     }
-  ]
+  ],
+  "code": "String",
+  "message": "String"
 }
 ```
