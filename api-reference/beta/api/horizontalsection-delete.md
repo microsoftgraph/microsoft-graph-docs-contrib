@@ -1,5 +1,5 @@
 ---
-title: 'Delete a horizontalSection'
+title: 'Delete horizontalSection'
 description: 'Delete a horizontal section from a page.'
 author: sangle7
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-# Delete horizontal section from a page
+# Delete horizontalSection
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [horizontalSection]( ../resources/horizontalSection.md) from a [sitePage](../resources/sitepage.md).
+Remove a [horizontalSection](../resources/horizontalSection.md) from a [sitePage](../resources/sitepage.md).
 
 ## Permissions
 
