@@ -201,7 +201,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "GET",
 					"ChangeType": "Deletion",
-					"Description": "Removed the [list](https://learn.microsoft.com/en-us/graph/api/organizationsettings-list-pronounssettings?view=graph-rest-beta&tabs=http) operation to the [pronounsSettings](https://learn.microsoft.com/en-us/graph/api/resources/pronounssettings?view=graph-rest-beta) resource",
+					"Description": "Removed the [list](https://learn.microsoft.com/en-us/graph/api/organizationsettings-list-pronounssettings?view=graph-rest-beta&tabs=http) operation from the [pronounsSettings](https://learn.microsoft.com/en-us/graph/api/resources/pronounssettings?view=graph-rest-beta) resource",
 					"Target": "pronounsSettings"
 				},
 				{
