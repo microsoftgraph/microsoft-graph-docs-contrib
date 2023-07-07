@@ -72,7 +72,7 @@ The following is an example of a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/webParts/{webPartId}
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/webParts/{webPartId}
 ```
 
 # [C#](#tab/csharp)
@@ -144,7 +144,7 @@ With `select` statement, you can retrieve selected webpart metadata in a request
 -->
 
 ```msgraph-interactive
-GET /sites/{sitesId}/pages/{sitePageId}/webParts/{webPartId}?select=id
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/webParts/{webPartId}?select=id
 ```
 
 # [C#](#tab/csharp)

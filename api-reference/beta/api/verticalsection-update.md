@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /sites/{site-id}/pages/{page-id}/canvasLayout/verticalSection
+PATCH /sites/{site-id}/pages/{page-id}/microsoft.graph.sitepage/canvasLayout/verticalSection
 ```
 
 ## Request headers
@@ -67,7 +67,7 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/canvasLayout/verticalSection
+PATCH https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitepage/canvasLayout/verticalSection
 Content-Type: application/json
 
 {
