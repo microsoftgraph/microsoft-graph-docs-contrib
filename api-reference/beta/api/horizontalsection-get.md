@@ -122,12 +122,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.horizontalSection",
-    "layout": "twoColumns",
-    "id": "1",
-    "emphasis": "soft"
-  }
+  "layout": "twoColumns",
+  "id": "1",
+  "emphasis": "soft"
 }
 ```
 
@@ -192,17 +189,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.horizontalSection",
-    "layout": "twoColumns",
+  "layout": "twoColumns",
+  "id": "1",
+  "columns":[{
     "id": "1",
-    "columns":[{
-      "id": "1",
-      "width": 6
-    },{
-      "id": "2",
-      "width": 6
-    }]
-  }
+    "width": 6
+  },{
+    "id": "2",
+    "width": 6
+  }]
 }
 ```
