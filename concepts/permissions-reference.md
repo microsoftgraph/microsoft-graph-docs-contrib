@@ -2972,17 +2972,6 @@ With the _User.ManageIdentities.All_ delegated or application permission, it is 
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
-## User resource-specific consent permissions
-
-#### Application permissions
-
-| Permission                     | Display String                                                | Description  | Admin Consent Required | Microsoft Account supported |
-|:-------------------------------|:--------------------------------------------------------------|:-------------|:-----------------------|:----------------------------|
-| _TeamsActivity.Send.User_        | Send activity feed notifications to this user.       | Allows the app to create new notifications in the teamwork activity feed of this user, without a signed-in user. | No | No |
-
->[!NOTE]
-> Currently, these permissions are supported only in the beta version of Microsoft Graph.
-
 ## User activity permissions
 
 #### Delegated permissions
@@ -3037,6 +3026,19 @@ With these permissions, all authentication methods can be read and managed on a 
 * Primary authentication (password, FIDO2, Microsoft Authenticator, and so on)
 * Second factor of multi-factor authentication/MFA (phone numbers, Microsoft Authenticator, and so on)
 * Self-Service Password Reset/SSPR (email address, and so on)
+
+---
+
+## User resource-specific consent permissions
+
+#### Application permissions
+
+| Permission                     | Display String                                                | Description  | Admin Consent Required | Microsoft Account supported |
+|:-------------------------------|:--------------------------------------------------------------|:-------------|:-----------------------|:----------------------------|
+| _TeamsActivity.Send.User_        | Send activity feed notifications to this user.       | Allows the app to create new notifications in the teamwork activity feed of this user, without a signed-in user. | No | No |
+
+>[!NOTE]
+> Currently, these permissions are supported only in the beta version of Microsoft Graph.
 
 ---
 

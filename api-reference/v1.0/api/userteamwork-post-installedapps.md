@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Install an [app](../resources/teamsapp.md) in the personal scope of the specified [user](../resources/user.md).
 
->**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
+>**Note:** This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions
 
@@ -53,12 +53,13 @@ The following table lists additional parameters that can be used with the reques
 
 If successful, this method returns a `201 Created` response code. It does not return anything in the response body.
 
-## Example 1: Install app for user
+## Examples
 
-### Request
+### Example 1: Install an app for a user
+
+#### Request
 
 The following is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,7 +106,8 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
+
 The following is an example of the response.
 
 <!-- {
@@ -116,30 +118,41 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 ```
-### Example 2: Install app for a user and consent to the resource-specific permissions required by the app
+
+### Example 2: Install an app for a user and consent to the resource-specific permissions required by the app
 
 #### Request
 
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "user_add_teamsApp_consent_resource_specific_permissions"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps
 Content-Type: application/json
 
 {
-	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a",
-    "consentedPermissionSet": {
-        "resourceSpecificPermissions": [
-        {
-          "permissionValue": "TeamsActivity.Send.User",
-          "permissionType": "Application"
-        }]
+  "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a",
+  "consentedPermissionSet": {
+    "resourceSpecificPermissions": [
+      {
+        "permissionValue": "TeamsActivity.Send.User",
+        "permissionType": "Application"
       }
+    ]
+  }
 }
 ```
 
 #### Response
 
+The following is an example of the response.
+
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true
 } -->
 
 ```http

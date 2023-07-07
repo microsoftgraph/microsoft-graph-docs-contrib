@@ -152,5 +152,7 @@ Content-type: application/json
 ```
 
 ## See also
-- [List permission grants of a team](team-list-permissionGrants.md)
-- [List permission grants of a group](group-list-permissionGrants.md)
+
+- [List permission grants of a group](group-list-permissiongrants.md)
+- [List permission grants of a team](team-list-permissiongrants.md)
+- [List permission grants of a user](user-list-permissiongrants.md)

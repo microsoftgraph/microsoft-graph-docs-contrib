@@ -1,6 +1,6 @@
 ---
 title: "teamsAppInstallation: upgrade"
-description: "Upgrade an app installation in the personal scope of a user"
+description: "Upgrade an app installation in the personal scope of the specified user to the latest version of the app."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Upgrade an [app installation](../resources/teamsappinstallation.md) in the personal scope of the specified [user](../resources/user.md) to the latest version of the app.
 
->**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
+>**Note:** This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions
 
@@ -41,27 +41,27 @@ POST /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installa
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
+In the request body, supply a JSON representation of the properties.
 
-The following table lists additional parameters that can be used with the upgrade action.
+The following table shows the properties that can be used with this method.
 
-|Parameter|Type|Description|
-|:---|:---|:---|
-|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|The set of resource-specific permissions that are being consented to.|
+| Property               | Type                                                           | Description                                                            |
+|:-----------------------|:---------------------------------------------------------------|:-----------------------------------------------------------------------|
+| consentedPermissionSet | [teamsAppPermissionSet](../resources/teamsapppermissionset.md) | The set of resource-specific permissions to be consented to. Optional. |
 
-> **Note**:
-> The permissions consented to during the upgrade must be the same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app). If only delegated resource-specific permissions are present in **teamsAppDefinition**, permissions can be omitted in the body of this request.
+> **Note**: The permissions consented to during the install must be the same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsappdefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app). If only delegated resource-specific permissions are present in the **teamsAppDefinition**, then the permissions can be omitted from the request body.
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Example 1 : Upgrade app installed for a user.
+## Examples
 
-### Request
+### Example 1: Upgrade a specific app installed for a user
+
+#### Request
 
 The following is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -83,43 +83,54 @@ POST /users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4
 
 ---
 
-### Response
+#### Response
 
 The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "name": "user_upgrade_teamsApp",
   "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
 ```
-### Example 2: Upgrade app installed for a user and consent to the resource specific permissions
 
-To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
+### Example 2: Upgrade a specific app installed for a user and consent to the resource specific permissions
+
+To get the list of resource-specific permissions required by the app, get the app from **appCatalog**. For details, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
 
 #### Request
 
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "user_upgrade_teamsApp_and_consent_resource_specific_permissions",
+  "sampleKeys": ["5b649834-7412-4cce-9e69-176e95a394f5", "NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk"]
+}-->
 ```http
 POST /users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk/upgrade
 Content-Type: application/json
 
 {
   "consentedPermissionSet": {
-        "resourceSpecificPermissions": [
-        {
-          "permissionValue": "TeamsActivity.Send.User",
-          "permissionType": "Application"
-        }]
+    "resourceSpecificPermissions": [
+      {
+        "permissionValue": "TeamsActivity.Send.User",
+        "permissionType": "Application"
       }
+    ]
+  }
 }
 ```
 
 #### Response
 
+The following is an example of the response.
+
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true
 } -->
 
 ```http
@@ -138,5 +149,3 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
-
-

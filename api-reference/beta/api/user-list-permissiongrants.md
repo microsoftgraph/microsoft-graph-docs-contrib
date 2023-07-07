@@ -1,6 +1,6 @@
 ---
 title: "List permissionGrants of a user"
-description: "Retrieve permissionGrants of a user."
+description: "List all resource-specific permission grants of a user."
 author: "edle"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [user](../resources/user.md). This list specifies the Azure AD apps that have access to the **user**, along with the corresponding kind of resource-specific access that each app has.
+List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) of a [user](../resources/user.md). This list specifies the Azure Active Directory apps that have access to the **user**, along with the corresponding kind of resource-specific access that each app has.
 
 ## Permissions
 
@@ -55,8 +55,6 @@ If successful, this method returns a `200 OK` response code and a list of [resou
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_list_permission_grants",
@@ -65,11 +63,10 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/2f39ffba-51ca-4d2d-a66f-a020a83ce208/permissionGrants
 ```
----
 
 ### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -82,21 +79,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#permissionGrants",
-   "value":[
-      {
-         "id":"Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNDaGF0U2V0dGluZ3MuUmVhZFdyaXRlLkNoYXQjI0FwcGxpY2F0aW9u",
-         "clientAppId":"fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
-         "resourceAppId":"00000003-0000-0000-c000-000000000000",
-         "clientId":"771b9da9-2260-41eb-a587-4d936e4aa08c",
-         "permissionType":"Application",
-         "permission":"TeamsActivity.Send.User"
-      }
-   ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#permissionGrants",
+  "value": [
+    {
+      "id": "Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNDaGF0U2V0dGluZ3MuUmVhZFdyaXRlLkNoYXQjI0FwcGxpY2F0aW9u",
+      "clientAppId": "fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "clientId": "771b9da9-2260-41eb-a587-4d936e4aa08c",
+      "permissionType": "Application",
+      "permission": "TeamsActivity.Send.User"
+    }
+  ]
 }
 ```
 
 ## See also
-- [List permission grants of a team](team-list-permissionGrants.md)
-- [List permission grants of a group](group-list-permissionGrants.md)
-- [List permission grants of a chat](chat-list-permissionGrants.md)
+
+- [List permission grants of a chat](chat-list-permissiongrants.md)
+- [List permission grants of a group](group-list-permissiongrants.md)
+- [List permission grants of a team](team-list-permissiongrants.md)
