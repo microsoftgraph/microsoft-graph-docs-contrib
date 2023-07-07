@@ -36,7 +36,7 @@ While the existing connectors help connect to popular services, you might want t
 
 To get started, see the following:
 
-- Learn about the set of [Graph connector experiences](connecting-external-content-experiences) where you want your custom connector data discoverable 
+- [Microsoft Graph connector experiences](connecting-external-content-experiences) 
 - [Build your first custom Microsoft Graph connector using APIs](connecting-external-content-build-quickstart.yml)
 - [Build your first custom Microsoft Graph connector using the SDK](/graph/custom-connector-sdk-sample-overview)
 
