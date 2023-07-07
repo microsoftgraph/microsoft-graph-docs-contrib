@@ -1,6 +1,6 @@
 ---
 title: "Identity and access reports API overview"
-description: "Use these reports to get information about how users in your organization are using identity and access features in your Azure Active Directory tenant."
+description: "Access identity and access reports to get information about how people in your business use applications in your Azure Active Directory tenant."
 ms.localizationpriority: high
 ms.prod: "identity-and-access-reports"
 author: "kvenkit"
