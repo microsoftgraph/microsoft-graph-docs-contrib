@@ -109,7 +109,7 @@ Content-Type: application/json
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
       "userPrincipalName": "username@contoso.com",
-      "usageDate": "Date",
+      "usageDate": "2020-02-04T00:00:00.0000000Z",
       "completedJobCount": 110,
       "completedBlackAndWhiteJobCount": 1,
       "completedColorJobCount": 109,
