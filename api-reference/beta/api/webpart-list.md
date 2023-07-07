@@ -33,9 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/webparts
-GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
-GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/verticalSection/webparts
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webparts
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection/webparts
 ```
 
 ## Optional query parameters
@@ -71,7 +71,7 @@ The following is an example of a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
 ```
 
 # [C#](#tab/csharp)

@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/horizontalSections/{horizontalSectionId}
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
 ```
 
 ## Optional query parameters
@@ -71,7 +71,7 @@ The following is an example of a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/horizontalSections/{horizontalSectionId}
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
 ```
 
 # [C#](#tab/csharp)
@@ -142,7 +142,7 @@ With `select` and `expand` statements, you can retrieve horizontalSection metada
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/horizontalSections/{horizontalSectionId}?select=id,expand=columns
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}?select=id,expand=columns
 ```
 
 # [C#](#tab/csharp)

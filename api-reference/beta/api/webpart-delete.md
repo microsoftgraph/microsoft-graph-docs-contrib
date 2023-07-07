@@ -33,9 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/webParts/{webPartId}
-DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/verticalSection/webparts/{webPartIndex}
-DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts/{webPartIndex}
+DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}
+DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection/webparts/{webPartIndex}
+DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts/{webPartIndex}
 ```
 ## Request headers
 
@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content`. It does not return anythi
 ### Request
 
 ```http
-DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/webParts/{webPartId}
+DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}
 ```
 ### Response
 

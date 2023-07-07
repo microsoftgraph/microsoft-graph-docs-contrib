@@ -33,9 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/webParts/{webPartId}
-PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/verticalSection/webparts/{webPartIndex}
-PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts/{webPartIndex}
+PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}
+PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection/webparts/{webPartIndex}
+PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts/{webPartIndex}
 ```
 
 ## Request headers
@@ -64,7 +64,7 @@ The following example shows how to update a webpart.
 <!-- { "blockType": "request", "name": "update-webpart", "scopes": "sites.readwrite.all" } -->
 
 ```http
-PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/webParts/{webpartId}
+PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webpartId}
 Content-Type: application/json
 
 {

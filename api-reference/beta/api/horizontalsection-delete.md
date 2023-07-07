@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitepage/canvasLayout/horizontalSections/{horizontalSectionId}
+DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
 ```
 
 ## Request headers

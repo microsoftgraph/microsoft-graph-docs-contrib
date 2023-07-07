@@ -33,9 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/webParts/{webPartId}/getPositionOfWebPart
-GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/verticalSection/webparts/{webPartIndex}/getPositionOfWebPart
-GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts/{webPartIndex}/getPositionOfWebPart
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}/getPositionOfWebPart
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection/webparts/{webPartIndex}/getPositionOfWebPart
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts/{webPartIndex}/getPositionOfWebPart
 ```
 
 ## Optional query parameters
@@ -71,7 +71,7 @@ The following is an example of a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/webParts/{webPartId}/getPositionOfWebPart
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}/getPositionOfWebPart
 ```
 
 # [Java](#tab/java)
