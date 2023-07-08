@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
@@ -16,6 +16,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
+New-MgBetaUserOnlineMeeting -UserId $userId -BodyParameter $params
 
 ```

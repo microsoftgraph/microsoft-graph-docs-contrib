@@ -101,7 +101,7 @@ var requestBody = new SitePage
 											},
 											ServerProcessedContent = new 
 											{
-												ImageSources = new List<>
+												ImageSources = new List<object>
 												{
 													new 
 													{
@@ -109,7 +109,7 @@ var requestBody = new SitePage
 														Value = "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG",
 													},
 												},
-												CustomMetadata = new List<>
+												CustomMetadata = new List<object>
 												{
 													new 
 													{

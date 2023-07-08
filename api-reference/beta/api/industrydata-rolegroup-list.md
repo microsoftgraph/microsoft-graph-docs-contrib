@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/external/industryData/roleGroups
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-rolegroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-rolegroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

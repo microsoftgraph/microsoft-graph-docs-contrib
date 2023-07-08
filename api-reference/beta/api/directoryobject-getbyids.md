@@ -115,6 +115,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-getbyids-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/directoryobject-getbyids-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -121,6 +121,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/user-translateexchangeids-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-translateexchangeids-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

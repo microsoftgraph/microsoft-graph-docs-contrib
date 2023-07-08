@@ -93,6 +93,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-identityuserflow-from-identitycontainer-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-identityuserflow-from-identitycontainer-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

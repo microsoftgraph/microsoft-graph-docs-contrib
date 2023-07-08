@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Drives/Item/Items/Item/Workbook/Names/Add"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddPostRequestBody()
+requestBody := graphdrives.NewAddPostRequestBody()
 name := "test5"
 requestBody.SetName(&name) 
 reference := "=Sheet1!$F$15:$N$27"

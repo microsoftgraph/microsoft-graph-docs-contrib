@@ -8,21 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models//security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-sdk-go/models/security"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewDataSource()
-additionalData := map[string]interface{}{
-site := graphmodels.New()
+requestBody := graphmodelssecurity.NewDataSource()
+site := graphmodels.NewSite()
 webUrl := "https://contoso.sharepoint.com/sites/SecretSite"
 site.SetWebUrl(&webUrl) 
-	requestBody.SetSite(site)
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetSite(site)
 
 result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Searches().BySearcheId("ediscoverySearch-id").AdditionalSources().Post(context.Background(), requestBody, nil)
 

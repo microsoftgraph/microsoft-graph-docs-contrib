@@ -82,6 +82,14 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO248163/i
 [!INCLUDE [sample-code](../includes/snippets/php/servicehealthissue-incidentreport-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/servicehealthissue-incidentreport-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/servicehealthissue-incidentreport-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

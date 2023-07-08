@@ -8,19 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Identity/B2xUserFlows/Item/UserAttributeAssignments/SetOrder"
+	  graphidentity "github.com/microsoftgraph/msgraph-sdk-go/identity"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSetOrderPostRequestBody()
+requestBody := graphidentity.NewSetOrderPostRequestBody()
 newAssignmentOrder := graphmodels.NewAssignmentOrder()
 order := []string {
 	"City",
 	"extension_GUID_ShoeSize",
-
 }
 newAssignmentOrder.SetOrder(order)
 requestBody.SetNewAssignmentOrder(newAssignmentOrder)

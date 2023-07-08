@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-inferenceclassificationoverride-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-inferenceclassificationoverride-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

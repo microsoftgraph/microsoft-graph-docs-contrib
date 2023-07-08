@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/IdentityGovernance/EntitlementManagement/AccessPackages/Item/GetApplicablePolicyRequirements"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewGetApplicablePolicyRequirementsPostRequestBody()
+requestBody := graphidentitygovernance.NewGetApplicablePolicyRequirementsPostRequestBody()
 additionalData := map[string]interface{}{
 subject := graphmodels.New()
 objectId := "5acd375c-8acb-45de-a958-fa0dd89259ad"

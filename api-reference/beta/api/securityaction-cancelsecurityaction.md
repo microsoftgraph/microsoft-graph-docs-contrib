@@ -89,6 +89,10 @@ POST https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecuri
 [!INCLUDE [sample-code](../includes/snippets/powershell/securityaction-cancelsecurityaction-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/securityaction-cancelsecurityaction-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
 	  //other-imports
 )
 
@@ -16,12 +16,12 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "userConsentRequests/any "
+requestFilter := "userConsentRequests/any (u:u/status eq 'InProgress')"
 
-requestParameters := &graphconfig.IdentityGovernanceAppConsentAppConsentRequestsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernanceAppConsentAppConsentRequestsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.IdentityGovernanceAppConsentAppConsentRequestsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernanceAppConsentAppConsentRequestsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

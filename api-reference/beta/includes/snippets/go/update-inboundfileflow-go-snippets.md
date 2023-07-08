@@ -9,14 +9,14 @@ import (
 	  "context"
 	  "time"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//industryData"
+	  graphmodelsindustrydata "github.com/microsoftgraph/msgraph-beta-sdk-go/models/industrydata"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewInboundFlow()
+requestBody := graphmodelsindustrydata.NewInboundFlow()
 displayName := "My Inbound Flow"
 requestBody.SetDisplayName(&displayName) 
 effectiveDateTime , err := time.Parse(time.RFC3339, "2022-03-12T16:40:46.924769+05:30")

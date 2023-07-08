@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
@@ -19,7 +19,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.ItemOutlookTaskItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemOutlookTaskItemRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 

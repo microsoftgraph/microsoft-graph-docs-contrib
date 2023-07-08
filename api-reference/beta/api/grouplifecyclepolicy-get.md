@@ -1,7 +1,7 @@
 ---
 title: "Get groupLifecyclePolicy"
 description: "Retrieve the properties and relationships of a groupLifecyclePolicies object."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-grouplifecyclepolicy-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-grouplifecyclepolicy-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

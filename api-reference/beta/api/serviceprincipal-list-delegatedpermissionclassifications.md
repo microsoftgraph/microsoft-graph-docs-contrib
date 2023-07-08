@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionC
 [!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-get-delegatedpermissionclassification-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-get-delegatedpermissionclassification-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

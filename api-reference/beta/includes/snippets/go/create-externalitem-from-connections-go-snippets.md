@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//externalConnectors"
+	  graphmodelsexternalconnectors "github.com/microsoftgraph/msgraph-beta-sdk-go/models/externalconnectors"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewExternalItem()
+requestBody := graphmodelsexternalconnectors.NewExternalItem()
 
 
-acl := graphmodels.NewAcl()
+acl := graphmodelsexternalconnectors.NewAcl()
 type := graphmodels.USER_ACLTYPE 
 acl.SetType(&type) 
 value := "e811976d-83df-4cbd-8b9b-5215b18aa874"
@@ -27,7 +27,7 @@ accessType := graphmodels.GRANT_ACCESSTYPE
 acl.SetAccessType(&accessType) 
 identitySource := graphmodels.AZUREACTIVEDIRECTORY_IDENTITYSOURCETYPE 
 acl.SetIdentitySource(&identitySource) 
-acl1 := graphmodels.NewAcl()
+acl1 := graphmodelsexternalconnectors.NewAcl()
 type := graphmodels.GROUP_ACLTYPE 
 acl1.SetType(&type) 
 value := "14m1b9c38qe647f6a"
@@ -37,13 +37,12 @@ acl1.SetAccessType(&accessType)
 identitySource := graphmodels.EXTERNAL_IDENTITYSOURCETYPE 
 acl1.SetIdentitySource(&identitySource) 
 
-acl := []graphmodels.Aclable {
+acl := []graphmodelsexternalconnectors.Aclable {
 	acl,
 	acl1,
-
 }
 requestBody.SetAcl(acl)
-properties := graphmodels.NewProperties()
+properties := graphmodelsexternalconnectors.NewProperties()
 additionalData := map[string]interface{}{
 	"title" : "Error in the payment gateway", 
 	"priority" : int32(1) , 
@@ -51,7 +50,7 @@ additionalData := map[string]interface{}{
 }
 properties.SetAdditionalData(additionalData)
 requestBody.SetProperties(properties)
-content := graphmodels.NewExternalItemContent()
+content := graphmodelsexternalconnectors.NewExternalItemContent()
 value := "Error in payment gateway..."
 content.SetValue(&value) 
 type := graphmodels.TEXT_EXTERNALITEMCONTENTTYPE 

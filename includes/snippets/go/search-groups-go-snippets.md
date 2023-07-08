@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
 	  //other-imports
 )
 
@@ -22,10 +22,10 @@ headers.Add("ConsistencyLevel", "eventual")
 
 requestSearch := "\"displayName:OneVideo\" OR \"mail:onevideo\""
 
-requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.GroupsRequestBuilderGetQueryParameters{
 	Search: &requestSearch,
 }
-configuration := &graphconfig.GroupsRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

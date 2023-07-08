@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/ServicePrincipals/Item/Synchronization/Jobs/Item/ProvisionOnDemand"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewProvisionOnDemandPostRequestBody()
+requestBody := graphserviceprincipals.NewProvisionOnDemandPostRequestBody()
 
 
 synchronizationJobApplicationParameters := graphmodels.NewSynchronizationJobApplicationParameters()
@@ -29,7 +30,6 @@ synchronizationJobSubject.SetObjectTypeName(&objectTypeName)
 
 subjects := []graphmodels.SynchronizationJobSubjectable {
 	synchronizationJobSubject,
-
 }
 synchronizationJobApplicationParameters.SetSubjects(subjects)
 ruleId := "ea807875-5618-4f0a-9125-0b46a05298ca"
@@ -37,7 +37,6 @@ synchronizationJobApplicationParameters.SetRuleId(&ruleId)
 
 parameters := []graphmodels.SynchronizationJobApplicationParametersable {
 	synchronizationJobApplicationParameters,
-
 }
 requestBody.SetParameters(parameters)
 

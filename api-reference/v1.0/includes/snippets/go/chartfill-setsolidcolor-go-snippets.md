@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Drives/Item/Items/Item/Workbook/Worksheets/Item/Charts/Item/Format/Fill/SetSolidColor"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSetSolidColorPostRequestBody()
+requestBody := graphdrives.NewSetSolidColorPostRequestBody()
 color := "color-value"
 requestBody.SetColor(&color) 
 

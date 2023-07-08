@@ -38,7 +38,6 @@ authenticationMethodsRegistrationCampaignIncludeTarget.SetTargetedAuthentication
 
 includeTargets := []graphmodels.AuthenticationMethodsRegistrationCampaignIncludeTargetable {
 	authenticationMethodsRegistrationCampaignIncludeTarget,
-
 }
 authenticationMethodsRegistrationCampaign.SetIncludeTargets(includeTargets)
 registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)

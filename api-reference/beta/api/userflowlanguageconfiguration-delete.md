@@ -100,6 +100,10 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/lan
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-userflowlanguageconfiguration-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-userflowlanguageconfiguration-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

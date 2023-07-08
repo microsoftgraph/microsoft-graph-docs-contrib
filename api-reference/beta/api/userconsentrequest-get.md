@@ -1,7 +1,7 @@
 ---
 title: "Get userConsentRequest"
 description: "Read the properties and relationships of a userConsentRequest object."
-author: "psignoret"
+author: "eringreenlee"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-userconsentrequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-userconsentrequest-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

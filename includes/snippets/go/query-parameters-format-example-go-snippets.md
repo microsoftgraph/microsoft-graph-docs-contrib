@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
@@ -18,10 +18,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFormat := "json"
 
-requestParameters := &graphconfig.UsersRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.UsersRequestBuilderGetQueryParameters{
 	Format: &requestFormat,
 }
-configuration := &graphconfig.UsersRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UsersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

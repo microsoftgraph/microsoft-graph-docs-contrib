@@ -90,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceI
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-deviceimages-from-virtualendpoint-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-deviceimages-from-virtualendpoint-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

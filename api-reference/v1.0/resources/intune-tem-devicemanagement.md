@@ -29,7 +29,7 @@ Singleton entity that acts as a container for all device management functionalit
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) collection|The telecom expense management partners.|
+
 
 ## JSON Representation
 Here is a JSON representation of the resource.

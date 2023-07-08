@@ -2,7 +2,7 @@
 title: "group: removeFavorite"
 description: "Remove the group from the list of the current user's favorite groups. Supported for Microsoft 365 groups only."
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -87,6 +87,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-removefavorite-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-removefavorite-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

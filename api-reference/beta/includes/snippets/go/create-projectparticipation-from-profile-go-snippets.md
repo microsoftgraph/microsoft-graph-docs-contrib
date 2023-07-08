@@ -18,7 +18,6 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewProjectParticipation()
 categories := []string {
 	"Branding",
-
 }
 requestBody.SetCategories(categories)
 client := graphmodels.NewCompanyDetail()

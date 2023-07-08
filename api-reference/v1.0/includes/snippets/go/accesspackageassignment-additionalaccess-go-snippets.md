@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/identitygovernance"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-sdk-go/identitygovernance"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.IdentityGovernanceEntitlementManagementAssignmentItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernanceEntitlementManagementAssignmentsAdditionalAccess(accessPackageId='{accessPackageId}',incompatibleAccessPackageId='{incompatibleAccessPackageId}')RequestBuilderGetQueryParameters{
 	Expand: [] string {"target"},
 }
-configuration := &graphconfig.IdentityGovernanceEntitlementManagementAssignmentItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernanceEntitlementManagementAssignmentsAdditionalAccess(accessPackageId='{accessPackageId}',incompatibleAccessPackageId='{incompatibleAccessPackageId}')RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().Assignments().ByAssignmentId("accessPackageAssignment-id").Get(context.Background(), configuration)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().Assignments().AdditionalAccess(accessPackageId='{accessPackageId}',incompatibleAccessPackageId='{incompatibleAccessPackageId}')().Get(context.Background(), configuration)
 
 
 ```

@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Drives/Item/Items/Item/Invite"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewInvitePostRequestBody()
+requestBody := graphdrives.NewInvitePostRequestBody()
 
 
 driveRecipient := graphmodels.NewDriveRecipient()
@@ -24,7 +25,6 @@ driveRecipient.SetEmail(&email)
 
 recipients := []graphmodels.DriveRecipientable {
 	driveRecipient,
-
 }
 requestBody.SetRecipients(recipients)
 message := "Here's the file that we're collaborating on."
@@ -35,7 +35,6 @@ sendInvitation := true
 requestBody.SetSendInvitation(&sendInvitation) 
 roles := []string {
 	"write",
-
 }
 requestBody.SetRoles(roles)
 password := "password123"

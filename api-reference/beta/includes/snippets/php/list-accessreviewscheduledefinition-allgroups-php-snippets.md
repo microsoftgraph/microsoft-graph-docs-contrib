@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DefinitionsRequestBuilderGetRequestConfiguration();
 $queryParameters = DefinitionsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "contains(scope/microsoft.graph.accessReviewQueryScope/query,%20'./members')";
+$queryParameters->filter = "contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

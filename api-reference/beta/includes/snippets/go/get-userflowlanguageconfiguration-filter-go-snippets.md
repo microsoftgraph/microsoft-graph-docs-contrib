@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
+	  graphidentity "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
 	  //other-imports
 )
 
@@ -18,10 +18,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "isEnabled eq true"
 
-requestParameters := &graphconfig.IdentityB2cUserFlowItemLanguagesRequestBuilderGetQueryParameters{
+requestParameters := &graphidentity.IdentityB2cUserFlowItemLanguagesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.IdentityB2cUserFlowItemLanguagesRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.IdentityB2cUserFlowItemLanguagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

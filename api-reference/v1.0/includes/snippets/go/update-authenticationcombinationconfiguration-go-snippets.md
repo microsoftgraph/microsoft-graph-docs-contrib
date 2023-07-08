@@ -18,8 +18,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewAuthenticationCombinationConfiguration()
 appliesToCombinations := []graphmodels.AuthenticationMethodModesable {
 	authenticationMethodModes := graphmodels.FIDO2_AUTHENTICATIONMETHODMODES 
-	requestBody.SetAuthenticationMethodModes(&authenticationMethodModes) 
-
+	requestBody.SetAuthenticationMethodModes(&authenticationMethodModes)
 }
 requestBody.SetAppliesToCombinations(appliesToCombinations)
 

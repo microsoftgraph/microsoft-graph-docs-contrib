@@ -1,7 +1,7 @@
 ---
 title: "Get agreementFile"
 description: "Retrieve the details of the default file for an agreement, including the language and version information. "
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/94
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-agreementfile-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-agreementfile-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Communications/Calls/Item/Transfer"
+	  graphcommunications "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewTransferPostRequestBody()
+requestBody := graphcommunications.NewTransferPostRequestBody()
 transferTarget := graphmodels.NewInvitationParticipantInfo()
 endpointType := graphmodels.DEFAULT_ENDPOINTTYPE 
 transferTarget.SetEndpointType(&endpointType) 

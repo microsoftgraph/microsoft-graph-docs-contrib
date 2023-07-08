@@ -98,8 +98,8 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 [!INCLUDE [sample-code](../includes/snippets/php/callrecord-getpstncalls-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/callrecord-getpstncalls-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/callrecord-getpstncalls-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -146,7 +146,11 @@ HTTP/1.1 200 OK
             "inventoryType": "Subscriber",
             "operator": "Microsoft",
             "callDurationSource": "microsoft",
-            "otherPartyCountryCode": "US"
+            "otherPartyCountryCode": "US",
+            "clientPublicIpV4Address": "99.76.33.16",
+            "clientPublicIpV6Address": "1234:fd2:5621:1:89::4500",
+            "clientLocalIpV4Address": "192.168.1.165",
+            "clientLocalIpV6Address": "2600:1700:1dca:8110::40"
         }
     ]
 }

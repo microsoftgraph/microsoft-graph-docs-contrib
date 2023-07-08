@@ -22,12 +22,11 @@ descriptionForAdmins := "New scheduled access review"
 requestBody.SetDescriptionForAdmins(&descriptionForAdmins) 
 descriptionForReviewers := "If you have any questions, contact jerry@contoso.com"
 requestBody.SetDescriptionForReviewers(&descriptionForReviewers) 
-scope := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
-	"query" : "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers", 
-	"queryType" : "MicrosoftGraph", 
-}
-scope.SetAdditionalData(additionalData)
+scope := graphmodels.NewAccessReviewQueryScope()
+query := "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+scope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+scope.SetQueryType(&queryType) 
 requestBody.SetScope(scope)
 
 
@@ -41,7 +40,6 @@ accessReviewStageSettings.SetRecommendationsEnabled(&recommendationsEnabled)
 decisionsThatWillMoveToNextStage := []string {
 	"NotReviewed",
 	"Approve",
-
 }
 accessReviewStageSettings.SetDecisionsThatWillMoveToNextStage(decisionsThatWillMoveToNextStage)
 
@@ -52,9 +50,8 @@ accessReviewReviewerScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
 
-reviewers := []graphmodels.Objectable {
+reviewers := []graphmodels.accessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 accessReviewStageSettings.SetReviewers(reviewers)
 accessReviewStageSettings1 := graphmodels.NewAccessReviewStageSettings()
@@ -62,7 +59,6 @@ stageId := "2"
 accessReviewStageSettings1.SetStageId(&stageId) 
 dependsOn := []string {
 	"1",
-
 }
 accessReviewStageSettings1.SetDependsOn(dependsOn)
 durationInDays := int32(2)
@@ -79,9 +75,8 @@ accessReviewReviewerScope.SetQueryType(&queryType)
 queryRoot := "decisions"
 accessReviewReviewerScope.SetQueryRoot(&queryRoot) 
 
-reviewers := []graphmodels.Objectable {
+reviewers := []graphmodels.accessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 accessReviewStageSettings1.SetReviewers(reviewers)
 
@@ -92,16 +87,14 @@ accessReviewReviewerScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
 
-fallbackReviewers := []graphmodels.Objectable {
+fallbackReviewers := []graphmodels.accessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 accessReviewStageSettings1.SetFallbackReviewers(fallbackReviewers)
 
 stageSettings := []graphmodels.AccessReviewStageSettingsable {
 	accessReviewStageSettings,
 	accessReviewStageSettings1,
-
 }
 requestBody.SetStageSettings(stageSettings)
 settings := graphmodels.NewAccessReviewScheduleSettings()

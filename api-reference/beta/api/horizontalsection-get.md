@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLa
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-horizontalsection-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-horizontalsection-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -118,12 +122,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.horizontalSection",
-    "layout": "twoColumns",
-    "id": "1",
-    "emphasis": "soft"
-  }
+  "layout": "twoColumns",
+  "id": "1",
+  "emphasis": "soft"
 }
 ```
 
@@ -168,6 +169,10 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLa
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-horizontalsection-e2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-horizontalsection-e2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -184,17 +189,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.horizontalSection",
-    "layout": "twoColumns",
+  "layout": "twoColumns",
+  "id": "1",
+  "columns":[{
     "id": "1",
-    "columns":[{
-      "id": "1",
-      "width": 6
-    },{
-      "id": "2",
-      "width": 6
-    }]
-  }
+    "width": 6
+  },{
+    "id": "2",
+    "width": 6
+  }]
 }
 ```

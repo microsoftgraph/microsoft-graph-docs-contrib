@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 [!INCLUDE [sample-code](../includes/snippets/powershell/unarchive-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/unarchive-team-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

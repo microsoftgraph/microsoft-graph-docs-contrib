@@ -38,6 +38,7 @@ DELETE /teams/{id}/schedule/openShifts/{openShiftId}
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
@@ -86,6 +87,10 @@ DELETE https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af1
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-openshift-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-openshift-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

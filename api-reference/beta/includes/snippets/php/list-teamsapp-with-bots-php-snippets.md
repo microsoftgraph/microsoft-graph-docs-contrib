@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new TeamsAppsRequestBuilderGetRequestConfiguration();
 $queryParameters = TeamsAppsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["appDefinitions($expand=bot)"];
-$queryParameters->filter = "appDefinitions/any";
+$queryParameters->filter = "appDefinitions/any(a:a/bot ne null)";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

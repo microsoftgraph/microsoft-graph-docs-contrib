@@ -18,7 +18,6 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewActivityBasedTimeoutPolicy()
 definition := []string {
 	"definition-value",
-
 }
 requestBody.SetDefinition(definition)
 displayName := "displayName-value"

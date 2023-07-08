@@ -18,11 +18,12 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := false
 requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
-resource := graphmodels.NewEducationResource()
+resource := graphmodels.NewEducationLinkResource()
 displayName := "Where the Wonders of Learning Never Cease | Wonderopolis"
 resource.SetDisplayName(&displayName) 
+link := "https://wonderopolis.org/"
+resource.SetLink(&link) 
 additionalData := map[string]interface{}{
-	"link" : "https://wonderopolis.org/", 
 	thumbnailPreviewUrl := null
 resource.SetThumbnailPreviewUrl(&thumbnailPreviewUrl) 
 }

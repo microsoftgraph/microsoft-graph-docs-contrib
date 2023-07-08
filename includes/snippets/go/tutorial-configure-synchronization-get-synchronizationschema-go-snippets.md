@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
 	  //other-imports
 )
 
@@ -19,7 +19,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer {Token}")
 
-configuration := &graphconfig.ServicePrincipalItemSynchronizationJobItemSchemaRequestBuilderGetRequestConfiguration{
+configuration := &graphserviceprincipals.ServicePrincipalItemSynchronizationJobItemSchemaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 
