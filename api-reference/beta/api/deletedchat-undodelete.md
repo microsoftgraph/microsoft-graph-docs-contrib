@@ -51,7 +51,7 @@ If successful, this action returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "deletedchatthis.undodelete".
+  "name": "deletedchat.undodelete",
   "sampleKeys": ["19:64dedcac16b74a209b1f2ecb7f99c5e2@thread.v2"]
 }
 -->
