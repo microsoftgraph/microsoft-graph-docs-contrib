@@ -11,8 +11,6 @@ ms.prod: "applications"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory. The synchronization job is always specific to a particular instance of an application in your tenant. As part of the synchronization job setup, you need to give authorization to read and write objects in your target directory, and customize the job's synchronization schema.
 
 ## Methods
@@ -30,7 +28,6 @@ Performs synchronization by periodically running in the background, polling for 
 |[Update synchronizationSchema](../api/synchronization-synchronizationschema-update.md)    |None   |Update the job's synchronization schema. |
 |[Validate credentials](../api/synchronization-synchronizationjob-validatecredentials.md)|None|Test provided credentials against target directory.|
 |[provisionOnDemand](../api/synchronization-synchronizationjob-provisionondemand.md)|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) collection|Represents the objects that will be provisioned and the synchronization rules executed. The resource is primarily used for on-demand provisioning. |
-
 ## Properties
 
 | Property      | Type      | Description    |
@@ -42,10 +39,8 @@ Performs synchronization by periodically running in the background, polling for 
 |templateId     |String    |Identifier of the [synchronization template](synchronization-synchronizationtemplate.md) this job is based on.|
 
 ## Relationships
-
 | Relationship | Type    |Description|
 |:---------------|:--------|:----------|
-|bulkUpload|[bulkUpload](synchronization-bulkupload.md) | The bulk upload operation for the job.|
 |schema|[synchronizationSchema](synchronization-synchronizationschema.md)| The synchronization schema configured for the job.|
 
 ## JSON representation
@@ -89,3 +84,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

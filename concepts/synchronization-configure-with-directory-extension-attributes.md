@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
-ms.date: 07/20/2022
+ms.date: 06/27/2023
 ---
 
 # Configure synchronization with directory extension attributes
@@ -27,7 +27,7 @@ The following example shows how to find a service principal object with the disp
   "name": "tutorial-configure-synchronization-with-extensions-get-serviceprincipals"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 Authorization: Bearer {Token}
 ```
 
@@ -68,7 +68,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(id,appId,displayName)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals(id,appId,displayName)",
     "value": [
     {
         "id": "167e33e9-f80e-490e-b4d8-698d4a80fb3e",
@@ -102,7 +102,7 @@ The following example shows you how to get the `jobId` that you need to work wit
   "name": "tutorial-configure-synchronization-with-extensions-get-synchronization-jobs"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
+GET https://graph.microsoft.com/v1.0/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 Authorization: Bearer {Token}
 ```
 
@@ -143,7 +143,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('60443998-8cf7-4e61-b05c-a53b658cb5e1')/synchronization/jobs",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('60443998-8cf7-4e61-b05c-a53b658cb5e1')/synchronization/jobs",
     "value": [
         {
             "id": "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa",
@@ -174,7 +174,7 @@ The following example shows how to get the synchronization schema.
   "name": "tutorial-configure-synchronization-with-extensions-get-synchronizationschema"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
+GET https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 ```
 
@@ -380,7 +380,7 @@ When you save the updated synchronization schema, make sure that you include the
   "name": "tutorial-configure-synchronization-with-extensions-update-synchronizationschema"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
+PUT https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 {
     "directories": [],

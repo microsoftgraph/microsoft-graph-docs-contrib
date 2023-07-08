@@ -11,8 +11,6 @@ ms.prod: "applications"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Provides pre-configured synchronization settings for a particular application. These settings will be used by default for any [synchronization job](synchronization-synchronizationjob.md) that is based on the template. The application developer specifies the template; anyone can retrieve the template to see the default settings, including the [synchronization schema](synchronization-synchronizationschema.md).
 
 You can provide multiple templates for an application, and designate a default template. If multiple templates are available for the application you're interested in, seek application-specific guidance to determine which one best meets your needs.
