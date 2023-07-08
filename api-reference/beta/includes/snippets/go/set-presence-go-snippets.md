@@ -9,14 +9,14 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Users/Item/Presence/SetPresence"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSetPresencePostRequestBody()
+requestBody := graphusers.NewSetPresencePostRequestBody()
 sessionId := "22553876-f5ab-4529-bffb-cfe50aa89f87"
 requestBody.SetSessionId(&sessionId) 
 availability := "Available"

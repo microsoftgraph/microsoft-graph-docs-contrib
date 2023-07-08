@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Communications/Calls/Item/UpdateRecordingStatus"
+	  graphcommunications "github.com/microsoftgraph/msgraph-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewUpdateRecordingStatusPostRequestBody()
+requestBody := graphcommunications.NewUpdateRecordingStatusPostRequestBody()
 clientContext := "clientContext-value"
 requestBody.SetClientContext(&clientContext) 
 status := graphmodels.NOTRECORDING | RECORDING | FAILED_RECORDINGSTATUS 

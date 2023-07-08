@@ -8,15 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewRetentionLabel()
-retentionDuration := graphmodels.NewRetentionDuration()
+requestBody := graphmodelssecurity.NewRetentionLabel()
+retentionDuration := graphmodelssecurity.NewRetentionDuration()
 requestBody.SetRetentionDuration(retentionDuration)
 descriptionForAdmins := "String"
 requestBody.SetDescriptionForAdmins(&descriptionForAdmins) 

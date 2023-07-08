@@ -49,15 +49,10 @@ var requestBody = new Call
 	{
 		Modality.Audio,
 	},
-	MediaConfig = new MediaConfig
+	MediaConfig = new AppHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.appHostedMediaConfig",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"blob" , "<Media Session Configuration>"
-			},
-		},
+		Blob = "<Media Session Configuration>",
 	},
 };
 var result = await graphClient.Communications.Calls.PostAsync(requestBody);

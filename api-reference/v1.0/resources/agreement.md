@@ -4,7 +4,7 @@ description: "Represents a tenant's customizable terms of use agreement that is 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ---
 
 # agreement resource type

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
+	  graphdirectory "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
 	  //other-imports
 )
 
@@ -16,12 +16,12 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "domains/any"
+requestFilter := "domains/any(x: x/id eq 'contoso.com')"
 
-requestParameters := &graphconfig.DirectoryFederationConfigurationItemRequestBuilderGetQueryParameters{
+requestParameters := &graphdirectory.DirectoryFederationConfigurationItemRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.DirectoryFederationConfigurationItemRequestBuilderGetRequestConfiguration{
+configuration := &graphdirectory.DirectoryFederationConfigurationItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

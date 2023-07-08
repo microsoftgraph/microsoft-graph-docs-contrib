@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Communications/Calls/Item/Participants/Invite"
+	  graphcommunications "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewInvitePostRequestBody()
+requestBody := graphcommunications.NewInvitePostRequestBody()
 
 
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
@@ -31,7 +32,6 @@ invitationParticipantInfo.SetIdentity(identity)
 
 participants := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,
-
 }
 requestBody.SetParticipants(participants)
 clientContext := "f2fa86af-3c51-4bc2-8fc0-475452d9764f"

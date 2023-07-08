@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not Supported.                               |
-| Delegated (personal Microsoft account) | Not Supported.                               |
-| Application                            | Calls.JoinGroupCallsasGuest.All or Calls.JoinGroupCalls.All |
+| Delegated (work or school account)     | Not supported.                               |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,15 +44,13 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|Optional. Unique client context string. Can have a maximum of 256 characters.|
 
 ## Response
-If successful, this method returns a `202 Accepted` response code and a [stopHoldMusicOperation](../resources/stopHoldmusicoperation.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and a [stopHoldMusicOperation](../resources/stopholdmusicoperation.md) object in the response body.
 
 ## Example
-The following example shows how to call this API.
 
 ### Request
+
 The following is an example of a request.
-
-
 
 # [HTTP](#tab/http)
 <!-- { 
@@ -64,7 +62,7 @@ POST https://graph.microsoft.com/beta/communications/calls/e141b67c-90fd-455d-85
 Content-type: application/json
 
 {
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
 
@@ -92,9 +90,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/participant-stopholdmusic-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/participant-stopholdmusic-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
  

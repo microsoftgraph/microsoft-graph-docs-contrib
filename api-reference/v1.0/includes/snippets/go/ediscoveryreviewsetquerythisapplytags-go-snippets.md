@@ -8,23 +8,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Security/Cases/EdiscoveryCases/Item/ReviewSets/Item/Queries/Item/MicrosoftGraphSecurityApplyTags"
+	  graphsecurity "github.com/microsoftgraph/msgraph-sdk-go/security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-sdk-go/models/security"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewApplyTagsPostRequestBody()
+requestBody := graphsecurity.NewApplyTagsPostRequestBody()
 
 
-ediscoveryReviewTag := graphmodels.NewEdiscoveryReviewTag()
+ediscoveryReviewTag := graphmodelssecurity.NewEdiscoveryReviewTag()
 id := "d3d99dc704a74801b792b3e1e722aa0d"
 ediscoveryReviewTag.SetId(&id) 
 
-tagsToAdd := []graphmodels.Objectable {
+tagsToAdd := []graphmodelssecurity.ediscoveryReviewTagable {
 	ediscoveryReviewTag,
-
 }
 requestBody.SetTagsToAdd(tagsToAdd)
 

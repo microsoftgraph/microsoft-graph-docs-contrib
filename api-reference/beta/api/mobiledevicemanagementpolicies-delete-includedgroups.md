@@ -90,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-group-included-groups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-group-included-groups-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

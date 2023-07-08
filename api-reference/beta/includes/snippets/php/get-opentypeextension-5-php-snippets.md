@@ -11,8 +11,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MessagesRequestBuilderGetRequestConfiguration();
 $queryParameters = MessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "Extensions/any";
-$queryParameters->expand = ["Extensions($filter=id%20eq%20'Com.Contoso.Referral')"];
+$queryParameters->filter = "Extensions/any(f:f/id eq 'Com.Contoso.Referral')";
+$queryParameters->expand = ["Extensions($filter=id eq 'Com.Contoso.Referral')"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

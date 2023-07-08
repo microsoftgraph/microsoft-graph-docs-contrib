@@ -98,8 +98,8 @@ Content-length: 51
 [!INCLUDE [sample-code](../includes/snippets/php/authenticationstrengthpolicythisupdateallowedcombinations-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/authenticationstrengthpolicythisupdateallowedcombinations-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/authenticationstrengthpolicythisupdateallowedcombinations-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

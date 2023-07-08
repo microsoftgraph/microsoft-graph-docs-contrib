@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/PendingAccessReviewInstances/Item/BatchRecordDecisions"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewBatchRecordDecisionsPostRequestBody()
+requestBody := graphusers.NewItemBatchRecordDecisionsPostRequestBody()
 decision := "Approve"
 requestBody.SetDecision(&decision) 
 justification := "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team"

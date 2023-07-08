@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/external/industryData/runs/918d4a8f-599b-4f
 [!INCLUDE [sample-code](../includes/snippets/powershell/industrydatarunthisgetstatistics-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/industrydatarunthisgetstatistics-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

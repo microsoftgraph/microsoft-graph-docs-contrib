@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.Directory.FederationConfigurations["{identityProviderBase-id}"].GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "domains/any";
+	requestConfiguration.QueryParameters.Filter = "domains/any(x: x/id eq 'contoso.com')";
 });
 
 

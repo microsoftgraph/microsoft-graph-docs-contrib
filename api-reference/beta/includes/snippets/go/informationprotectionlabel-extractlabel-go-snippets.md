@@ -9,8 +9,8 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/InformationProtection/Policy/Labels/ExtractLabel"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/informationprotection"
+	  graphinformationprotection "github.com/microsoftgraph/msgraph-beta-sdk-go/informationprotection"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
@@ -20,10 +20,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphconfig.InformationProtectionPolicyLabelsExtractLabelRequestBuilderPostRequestConfiguration{
+configuration := &graphinformationprotection.InformationProtectionPolicyLabelsExtractLabelRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewExtractLabelPostRequestBody()
+requestBody := graphinformationprotection.NewExtractLabelPostRequestBody()
 contentInfo := graphmodels.NewContentInfo()
 format := graphmodels.DEFAULT_CONTENTFORMAT 
 contentInfo.SetFormat(&format) 
@@ -77,7 +77,6 @@ metadata := []graphmodels.KeyValuePairable {
 	keyValuePair4,
 	keyValuePair5,
 	keyValuePair6,
-
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{

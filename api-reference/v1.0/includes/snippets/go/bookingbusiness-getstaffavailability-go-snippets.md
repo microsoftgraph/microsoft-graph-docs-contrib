@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Solutions/BookingBusinesses/Item/GetStaffAvailability"
+	  graphsolutions "github.com/microsoftgraph/msgraph-sdk-go/solutions"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewGetStaffAvailabilityPostRequestBody()
+requestBody := graphsolutions.NewGetStaffAvailabilityPostRequestBody()
 staffIds := []string {
 	"311a5454-08b2-4560-ba1c-f715e938cb79",
-
 }
 requestBody.SetStaffIds(staffIds)
 startDateTime := graphmodels.NewDateTimeTimeZone()

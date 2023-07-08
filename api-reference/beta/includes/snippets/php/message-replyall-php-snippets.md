@@ -11,16 +11,12 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new ReplyAllPostRequestBody();
 $message = new Message();
-$attachmentsAttachment1 = new Attachment();
+$attachmentsAttachment1 = new FileAttachment();
 $attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
 
 $attachmentsAttachment1->setName('guidelines.txt');
 
-$additionalData = [
-		'contentBytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
-];
-$attachmentsAttachment1->setAdditionalData($additionalData);
-
+$attachmentsAttachment1->setContentBytes(base64_decode('bWFjIGFuZCBjaGVlc2UgdG9kYXk='));
 
 
 $attachmentsArray []= $attachmentsAttachment1;

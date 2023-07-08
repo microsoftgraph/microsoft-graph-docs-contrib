@@ -20,7 +20,6 @@ deletedUserPersonalSiteRetentionPeriodInDays := int32(365)
 requestBody.SetDeletedUserPersonalSiteRetentionPeriodInDays(&deletedUserPersonalSiteRetentionPeriodInDays) 
 excludedFileExtensionsForSyncApp := []string {
 	".mp3",
-
 }
 requestBody.SetExcludedFileExtensionsForSyncApp(excludedFileExtensionsForSyncApp)
 imageTaggingOption := graphmodels.ENHANCED_IMAGETAGGINGCHOICE 

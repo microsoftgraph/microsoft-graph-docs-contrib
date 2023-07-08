@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Communications/Calls/Item/AddLargeGalleryView"
+	  graphcommunications "github.com/microsoftgraph/msgraph-sdk-go/communications"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddLargeGalleryViewPostRequestBody()
+requestBody := graphcommunications.NewAddLargeGalleryViewPostRequestBody()
 clientContext := "785f4929-92ca-497b-863f-c778c77c9758"
 requestBody.SetClientContext(&clientContext) 
 

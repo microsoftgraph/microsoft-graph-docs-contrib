@@ -84,8 +84,11 @@ DELETE https://graph.microsoft.com/beta/identity/authenticationEventListeners/c7
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-authenticationeventlistener-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-authenticationeventlistener-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 The following is an example of the response

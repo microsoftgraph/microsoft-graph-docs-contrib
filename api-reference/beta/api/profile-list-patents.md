@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/me/profile/patents
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-itempatents-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-itempatents-from-profile-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

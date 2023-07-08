@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementTroubleshootingEvents"
 description: "List properties and relationships of the deviceManagementTroubleshootingEvent objects."
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -49,12 +49,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_troubleshooting_devicemanagementtroubleshootingevent_list_list_devicemanagementtroubleshootingevents" }-->
 ``` http
 GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.deviceManagementTroubleshootingEvent" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -71,7 +75,3 @@ Content-Length: 277
   ]
 }
 ```
-
-
-
-

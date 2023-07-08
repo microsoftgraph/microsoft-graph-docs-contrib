@@ -18,7 +18,6 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewAuthorizationPolicy()
 enabledPreviewFeatures := []string {
 	"assignGroupsToRoles",
-
 }
 requestBody.SetEnabledPreviewFeatures(enabledPreviewFeatures)
 

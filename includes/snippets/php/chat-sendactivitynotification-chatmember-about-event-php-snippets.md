@@ -26,14 +26,10 @@ $previewText->setContent('It will be fun!');
 $requestBody->setPreviewText($previewText);
 $requestBody->setActivityType('eventCreated');
 
-$recipient = new TeamworkNotificationRecipient();
+$recipient = new ChatMembersNotificationRecipient();
 $recipient->set@odatatype('microsoft.graph.chatMembersNotificationRecipient');
 
-$additionalData = [
-		'chatId' => '19:d65713bc498c4a428c71ef9353e6ce20@thread.v2', 
-];
-$recipient->setAdditionalData($additionalData);
-
+$recipient->setChatId('19:d65713bc498c4a428c71ef9353e6ce20@thread.v2');
 
 
 $requestBody->setRecipient($recipient);
