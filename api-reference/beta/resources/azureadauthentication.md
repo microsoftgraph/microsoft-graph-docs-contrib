@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attainments|[serviceLevelAgreementAttainment](../resources/servicelevelagreementattainment.md) collection|A list of monthly serviceLevelAgreementAttainment objects|
+|attainments|[serviceLevelAgreementAttainment](../resources/servicelevelagreementattainment.md) collection|A list of monthly **serviceLevelAgreementAttainment** objects.|
 
 ## Relationships
 None.
