@@ -32,6 +32,8 @@ None.
 |forwardingPolicies|[microsoft.graph.networkaccess.forwardingPolicy](../resources/networkaccess-forwardingpolicy.md) collection|A forwarding policy defines the specific traffic that is routed through the Gloval Secure Access Service. It is then added to a forwarding profile.|
 |forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|A forwarding profile determines which types of traffic are routed through the Global Secure Access services and which ones are skipped. The handling of specific traffic is determined by the forwarding policies that are added to the forwarding profile.|
 |logs|[microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md)|Represnts network connections that are routed through Global Secure Access.|
+|reports|[microsoft.graph.networkaccess.reports](../resources/networkaccess-reports.md)|Represents the status of the Global Secure Access services for the tenant.|
+|settings|[microsoft.graph.networkaccess.settings](../resources/networkaccess-settings.md)|Global Secure Access settings.|
 |tenantStatus|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Represents the status of the Global Secure Access services for the tenant.|
 
 ## JSON representation

@@ -19,7 +19,7 @@ Represents a network access traffic log entry. It contains comprehensive informa
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List traffic](../api/networkaccess-logs-list-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Get a list of the [microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) objects and their properties.|
-|[Get networkAccessTraffic](../api/networkaccess-networkaccesstraffic-get.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) object.|
+
 
 ## Properties
 |Property|Type|Description|
