@@ -108,4 +108,21 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "http://graph.microsoft.com/beta/networkAccess/connectivity/branches/19a92090-c14e-4cea-a933-27d38f72c4d1/$metadata#deviceLinks",
+    "value": [
+        {
+            "id": "26b92330-c246-2cef-a131-27d38f72c4s4",
+            "name": "device link 1",
+            "ipAddress": "24.123.22.168",
+            "deviceVendor": "intel",
+            "bandwidthCapacityInMbps": "mbps250",
+            "connectivityState": "invalid",
+            "lastModifiedDateTime" : "2021-01-05T00:00:00Z"
+        },
+
+    ]
+}
 ```

@@ -1,5 +1,5 @@
 ---
-title: "List forwardingProfiles"
+title: "Branch Forwarding Profiles List"
 description: "Retrieve a list of traffic forwarding profiles associated with a branch."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# List forwardingProfiles
+# Branch Forwarding Profiles List
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -78,24 +78,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.networkaccess.forwardingProfile",
-      "id": "1f486c29-0344-5a0b-8e03-630176b3e448",
-      "name": "String",
-      "description": "String",
-      "state": "String",
-      "version": "String",
-      "lastModifiedDateTime": "String (timestamp)",
-      "trafficForwardingType": "String",
-      "associations": [
+    "@odata.context": "http://graph.microsoft.com/beta/networkAccess/$metadata#forwardingProfiles",
+    "value": [
         {
-          "@odata.type": "microsoft.graph.networkaccess.associatedBranch"
-        }
-      ],
-      "priority": "Integer"
-    }
-  ]
+            "id": "19a92090-c14e-4cea-a933-27d38f72c4d1",
+            "name": "forwardingProfile 1",
+            "description": "some description",
+            "state": "disabled",
+            "version": "13",
+            "lastModifiedDate": "2022-06-13T08:22:14Z",
+            "trafficForwardingType": "m365",
+            "priority": "0",
+            "associations" : [
+                {
+                 "@odata.type": "microsoft.graph.networkAccess.AssociatedBranch",
+                 "branchId": "19a92090-c14e-4cea-a933-27d38f72c64s"
+                },
+                 ...
+            ]
+        },
+        ...
+    ]
 }
 ```
 
