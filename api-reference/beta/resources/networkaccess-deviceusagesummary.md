@@ -13,14 +13,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A summary for total, active and inactive devices in a given time range.
+A summary for total, active and inactive devices in a given time range that's returned by the [getDeviceUsageSummary](../api/networkaccess-reports-getdeviceusagesummary.md) method.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activeDeviceCount|Int32|The number of distinct device ids in the time frame between endDateTime and discoveryPivotDateTime.|
-|inactiveDeviceCount|Int32|The number of distinct device ids havn't seen in the time frame between endDateTime and discoveryPivotDateTime but have seen in the time frame between discoveryPivotDateTime and startDateTime.|
-|totalDeviceCount|Int32|The number of distinct device ids in the time frame between startDateTime and endDateTime.|
+|activeDeviceCount|Int32|The number of distinct device IDs in the time frame between endDateTime and discoveryPivotDateTime.|
+|inactiveDeviceCount|Int32|The number of distinct device IDs havn't seen in the time frame between endDateTime and discoveryPivotDateTime but have seen in the time frame between discoveryPivotDateTime and startDateTime.|
+|totalDeviceCount|Int32|The number of distinct device IDs in the time frame between startDateTime and endDateTime.|
 
 ## Relationships
 None.

@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccessPolicy.Read.All|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All, NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -36,7 +36,7 @@ GET /networkAccess/forwardingProfiles/{forwardingProfileId}
 ```
 
 ## Optional query parameters
-This method does not support any OData query parameters.
+This method supports the `$expand` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{forwardin
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A summary for Global Secure Access entities.
+A summary for Global Secure Access entities that's returned by the [entitiesSummaries](../api/networkaccess-reports-entitiessummaries.md) method.
 
 ## Properties
 |Property|Type|Description|
@@ -21,7 +21,7 @@ A summary for Global Secure Access entities.
 |deviceCount|Int64|Count of unique devices that were seen.|
 |trafficType|microsoft.graph.networkaccess.trafficType|Traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
 |userCount|Int64|Count of unique Azure Active Directoy users that were seen.|
-|workloadCount|Int64|Count of unique target workloads/hosts that were seen.|
+|workloadCount|Int64|Count of unique target workloads or hosts that were seen.|
 
 ## Relationships
 None.

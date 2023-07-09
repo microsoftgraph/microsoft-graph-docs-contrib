@@ -46,7 +46,7 @@ POST /networkAccess/microsoft.graph.networkaccess.onboard
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -66,8 +66,7 @@ POST https://graph.microsoft.com/beta/networkAccess/microsoft.graph.networkacces
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.networkaccess.tenantStatus"
+  "truncated": true
 }
 -->
 ``` http

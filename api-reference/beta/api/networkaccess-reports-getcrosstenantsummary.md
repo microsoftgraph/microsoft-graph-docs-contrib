@@ -1,6 +1,6 @@
 ---
 title: "reports: getCrossTenantSummary"
-description: "Cross tenant report is a summary of counts around the area of organization's devices accessing other tenants than your tenant."
+description: "A summary of counts of the organization's devices accessing other tenants than your tenant."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cross tenant report is a summary of counts around the area of organization's devices accessing other tenants than your tenant.
+Cross-tenant report is a summary of counts of the organization's devices accessing other tenants than your tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccessPolicy.Read.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All, NetworkAccessPolicy.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 
@@ -68,12 +68,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-https://graph.microsoft.com/beta/networkAccess/reports/getCrossTenantSummary (startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z, discoveryPivotDateTime=2023-01-30T00:00:00Z)
+GET https://graph.microsoft.com/beta/networkAccess/reports/getCrossTenantSummary (startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z, discoveryPivotDateTime=2023-01-30T00:00:00Z)
 ```
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -86,13 +86,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  {
-      "authTransactionCount": 5000,
-      "tenantCount": 23,
-      "newTenantCount": 2,
-      "userCount": 300,
-      "deviceCount": 545
-  }
+  "value": [
+      {
+          "authTransactionCount": 5000,
+          "tenantCount": 23,
+          "newTenantCount": 2,
+          "userCount": 300,
+          "deviceCount": 545
+      }
+    ]
 }
 ```
 

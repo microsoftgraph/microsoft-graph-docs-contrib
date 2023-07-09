@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccessPolicy.Read.All|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All, NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [forwardingProfile](../resources/forwardingprofile.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [forwardingProfile](../resources/networkaccess-forwardingprofile.md) objects in the response body.
 
 ## Examples
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branch
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -1,6 +1,6 @@
 ---
 title: "transactionSummary resource type"
-description: "A summary for network transcations traffic."
+description: "A summary for network transactions traffic."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A summary for network transcations traffic.
+A summary for network transcations traffic that's returned by the [transactionSummaries](../api/networkaccess-reports-transactionsummaries.md) method.
 
 ## Properties
 |Property|Type|Description|

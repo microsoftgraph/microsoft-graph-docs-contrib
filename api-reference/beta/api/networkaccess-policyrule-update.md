@@ -47,7 +47,7 @@ You must specify the @odata.type property and the value of the [microsoft.graph.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|Action for the traffic, possible values are "Forward" or "Bypass". Required.|
+|action|String|Action for the traffic, possible values are "forward" or "bypass". Required.|
 
 
 ## Response
@@ -64,13 +64,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/networkAccess/forwardingPolicies/{policyId}/policyRules/{ruleId}
+PATCH https://graph.microsoft.com/beta/networkAccess/forwardingPolicies/{forwardingPolicyId}/policyRules/{ruleId}
 ```
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

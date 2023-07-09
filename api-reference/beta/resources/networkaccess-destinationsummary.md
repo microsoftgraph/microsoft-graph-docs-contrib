@@ -13,13 +13,13 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A summary for most accessed destinations.
+A summary for most accessed destinations that's returned by the [getDestinationSummaries](../api/networkaccess-reports-getdestinationsummaries.md) method.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |count|Int32|Count of the aggregation.|
-|destination|String|destination fqdn or ip.|
+|destination|String|Destination FQDN or IP address.|
 
 ## Relationships
 None.

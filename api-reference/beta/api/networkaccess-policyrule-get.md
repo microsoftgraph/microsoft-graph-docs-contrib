@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccessPolicy.Read.All|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All, NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -60,12 +60,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkaccess/forwardingprofile/{forwardingprofileId}/policyRules/{RuleId)
+GET https://graph.microsoft.com/beta/networkaccess/forwardingPolicies/{forwardingPolicyId}/policyRules/{RuleId)
 ```
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
