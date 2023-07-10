@@ -1,6 +1,6 @@
 ---
 title: "sites: getAllSites"
-description: "List all root sites across geographies in an organization - OneDrive API"
+description: "List all sites across geographies in an organization - OneDrive API"
 author: tushar20
 ms.author: tkanaujia
 ms.date: 5/3/2023
@@ -13,7 +13,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List root [sites](../resources/site.md) across geographies in an organization.
+List [sites](../resources/site.md) across geographies in an organization.
 
 For more details, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
@@ -35,9 +35,11 @@ One of the following permissions is required to call this API. To learn more, in
 GET /sites/getAllSites
 ```
 
-## Example 1 : Initial Request
+## Examples
 
-### Request
+### Example 1: Initial Request
+
+#### Request
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,7 +47,7 @@ GET /sites/getAllSites
 GET /sites/getAllSites
 ```
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -92,9 +94,9 @@ Content-type: application/json
 
 This response includes the first page of enumerated sites, and the @odata.nextLink property indicates that there are more items available in the current set of items. Your app should continue to request the URL value of @odata.nextLink until all pages of items have been retrieved.
 
-## Example 2 : Subsequent Request
+### Example 2: Subsequent Request
 
-### Request
+#### Request
 
 <!-- { "blockType": "ignored" } -->
 
@@ -102,7 +104,7 @@ This response includes the first page of enumerated sites, and the @odata.nextLi
 GET /sites/getAllSites?$skiptoken=U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ
 ```
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

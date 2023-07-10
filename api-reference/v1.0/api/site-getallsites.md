@@ -33,9 +33,11 @@ One of the following permissions is required to call this API. To learn more, in
 GET /sites/getAllSites
 ```
 
-## Example 1 : Initial Request
+## Examples
 
-### Request
+### Example 1: Initial Request
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,7 +80,7 @@ GET /sites/getAllSites
 
 ---
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -124,9 +126,9 @@ Content-type: application/json
 
 This response includes the first page of enumerated sites, and the @odata.nextLink property indicates that there are more items available in the current set of items. Your app should continue to request the URL value of @odata.nextLink until all pages of items have been retrieved.
 
-## Example 2 : Subsequent Request
+### Example 2: Subsequent Request
 
-### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -169,7 +171,7 @@ GET /sites/getAllSites?$skiptoken=U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ
 
 ---
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
