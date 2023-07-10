@@ -1,7 +1,7 @@
 ---
 title: "targetUserSponsors complex type"
 description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
-author: "sdshl"
+author: "sadia353"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
