@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
-Users cannot add their own email authentication method.
+Users cannot add an email authentication method to their own account.
 
 ## HTTP request
 
