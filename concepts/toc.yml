@@ -137,12 +137,14 @@ items:
               href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
             - name: Generate proof of possession tokens for rolling keys
               href: application-rollkey-prooftoken.md
+            - name: Authentication behaviors
+              href: applications-authenticationbehaviors.md
           - name: Synchronization
             items:
-            - name: Synchronize custom target attributes
-              href: synchronization-configure-with-custom-target-attributes.md
-            - name: Synchronize directory extension attributes
-              href: synchronization-configure-with-directory-extension-attributes.md
+              - name: Synchronize custom target attributes
+                href: synchronization-configure-with-custom-target-attributes.md
+              - name: Synchronize directory extension attributes
+                href: synchronization-configure-with-directory-extension-attributes.md
       - name: Accessing data at scale
         items:
           - name: Microsoft Graph Data Connect overview
@@ -198,7 +200,7 @@ items:
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
       - name: Change notifications
-        items: 
+        items:
           - name: Overview
             href: webhooks.md
             displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
@@ -219,25 +221,25 @@ items:
           - name: Tutorials
             displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
             items:
-            - name: Notifications for cloud printing
-              href: universal-print-webhook-notifications.md
-            - name: Notifications for Microsoft Teams resources
-              items:
-                - name: Notification types and payloads
-                  href: teams-change-notification-in-microsoft-teams-overview.md
-                  displayName: change notifications, Teams, Microsoft Teams
-                - name: Teams and channels
-                  href: teams-changenotifications-team-and-channel.md
-                - name: Team and channel membership
-                  href: teams-changenotifications-teamMembership.md
-                - name: Chat and channel messages
-                  href: teams-changenotifications-chatmessage.md
-                - name: Chat
-                  href: teams-changenotifications-chat.md
-                - name: Chat membership
-                  href: teams-changenotifications-chatMembership.md
-            - name: Notifications for Outlook resources
-              href: outlook-change-notifications-overview.md
+              - name: Notifications for cloud printing
+                href: universal-print-webhook-notifications.md
+              - name: Notifications for Microsoft Teams resources
+                items:
+                  - name: Notification types and payloads
+                    href: teams-change-notification-in-microsoft-teams-overview.md
+                    displayName: change notifications, Teams, Microsoft Teams
+                  - name: Teams and channels
+                    href: teams-changenotifications-team-and-channel.md
+                  - name: Team and channel membership
+                    href: teams-changenotifications-teammembership.md
+                  - name: Chat and channel messages
+                    href: teams-changenotifications-chatmessage.md
+                  - name: Chat
+                    href: teams-changenotifications-chat.md
+                  - name: Chat membership
+                    href: teams-changenotifications-chatmembership.md
+              - name: Notifications for Outlook resources
+                href: outlook-change-notifications-overview.md
       - name: Change tracking
         items:
           - name: Overview
@@ -351,7 +353,7 @@ items:
               - name: Deploy an expedited update
                 href: windowsupdates-deploy-expedited-update.md
               - name: Manage driver update
-                href: windowsupdates-manage-driver-update.md                
+                href: windowsupdates-manage-driver-update.md
               - name: Schedule a deployment
                 href: windowsupdates-schedule-deployment.md
               - name: Manage safeguards
@@ -412,7 +414,7 @@ items:
               - name: Get links to assignments and submissions
                 href: get-links-to-assignments-and-submissions.md
               - name: Update assignment and grade data
-                href: update-assignment-and-grade-data.md           
+                href: update-assignment-and-grade-data.md
               - name: Download all resources from a set of assignments
                 href: download-resources-from-assignment.md
               - name: Share assignments with an embedded Teams application
@@ -456,7 +458,7 @@ items:
                 href: tutorial-riskdetection-api.md
           - name: Governance
             items:
-              - name: Automate lifecycle of users (preview)
+              - name: Automate lifecycle of users
                 displayName: LCW, Lifecycle Workflows
                 items:
                   - name: Configure task arguments
@@ -480,7 +482,7 @@ items:
                   - name: Review access to a security group
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access for guest users
-                    href: tutorial-accessreviews-M365group.md
+                    href: tutorial-accessreviews-m365group.md
                   - name: Review access to privileged roles
                     href: tutorial-accessreviews-roleassignments.md
                   - name: Configure the scope
@@ -622,7 +624,7 @@ items:
           - name: Search acronyms
             href: search-concept-acronym.md
           - name: Search bookmarks
-            href: search-concept-bookmark.md 
+            href: search-concept-bookmark.md
           - name: Search connectors
             href: search-concept-custom-types.md
           - name: Search content in OneDrive and SharePoint
@@ -632,7 +634,7 @@ items:
           - name: Search multiple entity types
             href: search-concept-interleaving.md
           - name: Search with multiple requests
-            href: search-concept-multipleRequest.md
+            href: search-concept-multiplerequest.md
           - name: Search Outlook events
             href: search-concept-events.md
           - name: Search Outlook messages
@@ -753,8 +755,6 @@ items:
             href: teams-embed-within-own-app.md
           - name: Payment models and licensing requirements
             href: teams-licenses.md
-          - name: Protected APIs
-            href: teams-protected-apis.md
           - name: Implementation differences in national clouds
             href: teamwork-national-cloud-differences.md
       - name: To-do tasks
@@ -803,15 +803,15 @@ items:
             href: auth-v2-service.md
           - name: Permissions
             items:
-            - name: Overview
-              displayName: Microsoft Graph permissions
-              href: permissions-overview.md
-            - name: Permissions reference
-              displayName: Microsoft Graph permissions list
-              href: permissions-reference.md
-            - name: Azure AD built-in roles
-              displayName: Microsoft Graph permissions
-              href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
+              - name: Overview
+                displayName: Microsoft Graph permissions
+                href: permissions-overview.md
+              - name: Permissions reference
+                displayName: Microsoft Graph permissions list
+                href: permissions-reference.md
+              - name: Azure AD built-in roles
+                displayName: Microsoft Graph permissions
+                href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
           - name: Manage app access (CSPs)
             href: auth-cloudsolutionprovider.md
           - name: Limit mailbox access
@@ -996,6 +996,18 @@ items:
                 href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
                 href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+          - name: Use the CLI (preview)
+            items:
+              - name: CLI overview
+                href: cli/overview.md
+              - name: Install the CLI
+                href: cli/installation.md
+              - name: Get started
+                href: cli/get-started.md
+              - name: Navigate the CLI
+                href: cli/navigating.md
+              - name: App-only authentication
+                href: cli/app-only.md
       - name: Use the toolkit
         items:
           - name: Overview
@@ -1024,8 +1036,6 @@ items:
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Build a Teams tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
-              - name: Build a Teams tab with SSO
-                href: toolkit/get-started/build-a-microsoft-teams-sso-tab.md
               - name: Build an Electron app
                 href: toolkit/get-started/build-an-electron-app.md
               - name: Build a productivity hub app
@@ -1035,65 +1045,73 @@ items:
               - name: Using the providers
                 href: toolkit/providers/providers.md
                 displayName: Microsoft Graph Toolkit providers, toolkit provider
-              - name: MSAL provider
-                href: toolkit/providers/msal.md
-              - name: MSAL2 provider
-                href: toolkit/providers/msal2.md
-              - name: SharePoint provider
-                href: toolkit/providers/sharepoint.md
-              - name: Teams provider
-                href: toolkit/providers/teams.md
-              - name: Teams MSAL2 provider
-                href: toolkit/providers/teams-msal2.md
-              - name: TeamsFx provider
-                href: toolkit/providers/teamsfx.md
-              - name: Electron provider
-                href: toolkit/providers/electron.md
-              - name: Proxy provider
-                href: toolkit/providers/proxy.md
               - name: Custom provider
                 href: toolkit/providers/custom.md
+              - name: Electron provider
+                href: toolkit/providers/electron.md
+              - name: MSAL2 provider
+                href: toolkit/providers/msal2.md
+              - name: Proxy provider
+                href: toolkit/providers/proxy.md
+              - name: SharePoint provider
+                href: toolkit/providers/sharepoint.md
+              - name: TeamsFx provider
+                href: toolkit/providers/teamsfx.md
           - name: Components
             items:
-              - name: Login
-                href: toolkit/components/login.md
-                displayName: Microsoft Graph toolkit components, toolkit component
-              - name: Get
-                href: toolkit/components/get.md
-              - name: Person
-                href: toolkit/components/person.md
-              - name: People
-                href: toolkit/components/people.md
-              - name: Person card
-                href: toolkit/components/person-card.md
-              - name: People picker
-                href: toolkit/components/people-picker.md
-              - name: Teams channel picker
-                href: toolkit/components/teams-channel-picker.md
               - name: Agenda
                 href: toolkit/components/agenda.md
-              - name: Planner tasks
-                href: toolkit/components/tasks.md
-              - name: To-do tasks
-                href: toolkit/components/todo.md
               - name: File
                 href: toolkit/components/file.md
               - name: File list
                 href: toolkit/components/file-list.md
+              - name: Get
+                href: toolkit/components/get.md
+              - name: Login
+                href: toolkit/components/login.md
+                displayName: Microsoft Graph toolkit components, toolkit component
+              - name: People
+                href: toolkit/components/people.md
+              - name: People picker
+                href: toolkit/components/people-picker.md
+              - name: Person
+                href: toolkit/components/person.md
+              - name: Person card
+                href: toolkit/components/person-card.md
+              - name: Picker
+                href: toolkit/components/picker.md
+              - name: Planner tasks
+                href: toolkit/components/tasks.md
+              - name: Search box (preview)
+                href: toolkit/components/search-box.md
+              - name: Search results (preview)
+                href: toolkit/components/search-results.md
+              - name: Taxonomy picker
+                href: toolkit/components/taxonomy-picker.md
+              - name: Teams channel picker
+                href: toolkit/components/teams-channel-picker.md
+              - name: Theme toggle
+                href: toolkit/components/theme-toggle.md
+              - name: To-do tasks
+                href: toolkit/components/todo.md
           - name: Customize components
             items:
-              - name: Styling components
-                href: toolkit/customize-components/style.md
-              - name: Templating components
-                href: toolkit/customize-components/templates.md
-              - name: Handling events
-                href: toolkit/customize-components/events.md
               - name: Caching Microsoft Graph calls in components
                 href: toolkit/customize-components/cache.md
+              - name: Handling events
+                href: toolkit/customize-components/events.md
               - name: Localizing components
                 href: toolkit/customize-components/localization.md
               - name: Right-to-left support
                 href: toolkit/customize-components/right-to-left.md
+              - name: Styling components
+                href: toolkit/customize-components/style.md
+              - name: Templating components
+                href: toolkit/customize-components/templates.md
+              - name: Disambiguation of components
+                href: toolkit/customize-components/disambiguation.md
+          - name: Upgrading to v3
+            href: toolkit/upgrade.md
       - name: Configure Connected Services
         displayName: Configure Connected Services in Visual Studio
         href: office-365-connected-services.md

@@ -308,7 +308,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetapersoninsearch/$metadata#microsoft.graph.searchResponse",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.searchResponse",
     "value": [
         {
             "hitsContainers": [
