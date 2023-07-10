@@ -1061,6 +1061,24 @@
       "CreatedDateTime": "2023-06-13T20:18:40.595Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3ba6da9a-ff6d-4100-93b4-90324f8fa2d6",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "teamworkdevices",
+          "ChangeType": "Addition",
+          "Description": "Added the `sipAnalog` value to the **teamworkDeviceType** enumeration.",
+          "Target": "teamworkdevices"
+        }
+      ],
+      "Id": "3ba6da9a-ff6d-4100-93b4-90324f8fa2d6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-07T23:04:05.0154606Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }
