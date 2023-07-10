@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-apis-write.md)]
 
-Users without one of the supported Azure AD roles cannot add their own phone authentication method.
+Users cannot add their own phone authentication method.
 
 ## HTTP request
 
