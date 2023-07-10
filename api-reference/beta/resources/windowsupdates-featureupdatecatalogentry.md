@@ -27,6 +27,7 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 |id|String|The unique identifier for the catalog entry. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |releaseDateTime|DateTimeOffset|The release date for the content. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |version|String|The version of the feature update. Read-only.|
+|buildNumber|String|The build number of the feature update. Read-only.|
 
 ## Relationships
 None.
@@ -48,7 +49,8 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "id": "String (identifier)",
   "releaseDateTime": "String (timestamp)",
-  "version": "String"
+  "version": "String",
+  "buildNumber": "String"
 }
 ```
 
