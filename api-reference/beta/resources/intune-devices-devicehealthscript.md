@@ -51,6 +51,7 @@ Intune will provide customer the ability to run their Powershell Health scripts 
 |roleScopeTagIds|String collection|List of Scope Tag IDs for the device health script|
 |isGlobalScript|Boolean|Determines if this is Microsoft Proprietary Script. Proprietary scripts are read-only|
 |highestAvailableVersion|String|Highest available version for a Microsoft Proprietary script|
+|deviceHealthScriptType|[deviceHealthScriptType](../resources/intune-devices-devicehealthscripttype.md)|DeviceHealthScriptType for the script policy. Possible values are: `deviceHealthScript`, `managedInstallerScript`.|
 |detectionScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) collection|List of ComplexType DetectionScriptParameters objects.|
 |remediationScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) collection|List of ComplexType RemediationScriptParameters objects.|
 
@@ -89,6 +90,7 @@ Here is a JSON representation of the resource.
   ],
   "isGlobalScript": true,
   "highestAvailableVersion": "String",
+  "deviceHealthScriptType": "String",
   "detectionScriptParameters": [
     {
       "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",

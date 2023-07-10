@@ -12,10 +12,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAdministrativeUnit()
+displayName := "Executive Division"
+requestBody.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
 	"membershipType" : "Dynamic", 
 	"membershipRule" : "(user.country -eq \"United States\")", 

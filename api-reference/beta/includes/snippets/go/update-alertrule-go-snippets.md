@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsdevicemanagement.NewAlertRule()
@@ -35,7 +35,6 @@ notificationChannelType := graphmodels.PORTAL_NOTIFICATIONCHANNELTYPE
 notificationChannel.SetNotificationChannelType(&notificationChannelType) 
 receivers := []string {
 	"",
-
 }
 notificationChannel.SetReceivers(receivers)
 notificationReceivers := []graphmodelsdevicemanagement.NotificationReceiverable {
@@ -47,7 +46,6 @@ notificationChannelType := graphmodels.EMAIL_NOTIFICATIONCHANNELTYPE
 notificationChannel1.SetNotificationChannelType(&notificationChannelType) 
 receivers := []string {
 	"serena.davis@contoso.com",
-
 }
 notificationChannel1.SetReceivers(receivers)
 
@@ -60,14 +58,12 @@ notificationReceiver.SetContactInformation(&contactInformation)
 
 notificationReceivers := []graphmodelsdevicemanagement.NotificationReceiverable {
 	notificationReceiver,
-
 }
 notificationChannel1.SetNotificationReceivers(notificationReceivers)
 
 notificationChannels := []graphmodelsdevicemanagement.NotificationChannelable {
 	notificationChannel,
 	notificationChannel1,
-
 }
 requestBody.SetNotificationChannels(notificationChannels)
 

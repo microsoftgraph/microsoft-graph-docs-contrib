@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSecurityAction()
@@ -30,7 +30,6 @@ keyValuePair.SetValue(&value)
 
 parameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
-
 }
 requestBody.SetParameters(parameters)
 vendorInformation := graphmodels.NewSecurityVendorInformation()

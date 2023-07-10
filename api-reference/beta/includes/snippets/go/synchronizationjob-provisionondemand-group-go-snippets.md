@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphserviceprincipals.NewProvisionOnDemandPostRequestBody()
@@ -46,20 +46,17 @@ synchronizationJobSubject1.SetObjectTypeName(&objectTypeName)
 members := []graphmodels.SynchronizationJobSubjectable {
 	synchronizationJobSubject,
 	synchronizationJobSubject1,
-
 }
 links.SetMembers(members)
 synchronizationJobSubject.SetLinks(links)
 
 subjects := []graphmodels.SynchronizationJobSubjectable {
 	synchronizationJobSubject,
-
 }
 synchronizationJobApplicationParameters.SetSubjects(subjects)
 
-parameters := []graphserviceprincipals.SynchronizationJobApplicationParametersable {
+parameters := []graphmodels.SynchronizationJobApplicationParametersable {
 	synchronizationJobApplicationParameters,
-
 }
 requestBody.SetParameters(parameters)
 

@@ -13,9 +13,9 @@ var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Table
 	Index = new IndexObject
 	{
 	},
-	Values = new List<>
+	Values = new List<Json>
 	{
-		new 
+		new Json
 		{
 		},
 	},
