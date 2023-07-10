@@ -12096,7 +12096,7 @@ items:
             href: api/onpremisesdirectorysynchronization-get.md
           - name: Update
             href: api/onpremisesdirectorysynchronization-update.md
-        - name: People Admin Settings (preview)
+        - name: People admin settings (preview)
           href: resources/peopleAdminSettings.md
           items:
             - name: Org control for pronouns settings (preview)
