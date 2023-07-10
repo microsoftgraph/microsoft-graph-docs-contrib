@@ -35,12 +35,6 @@ Users cannot add their own phone authentication method.
 
 ## HTTP request
 
-Add a phone authentication method to your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/authentication/phoneMethods
-```
-
 Add a phone authentication method to another user's account.
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -80,7 +74,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/authentication/phoneMethods
+POST https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/phoneMethods
 Content-type: application/json
 
 {
