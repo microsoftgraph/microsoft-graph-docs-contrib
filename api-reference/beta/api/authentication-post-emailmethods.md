@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
-Users without one of the supported Azure AD roles cannot add their own email authentication method.
+Users cannot add their own email authentication method.
 
 ## HTTP request
 
