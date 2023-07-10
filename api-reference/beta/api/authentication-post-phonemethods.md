@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-apis-write.md)]
 
-Users cannot add their own phone authentication method.
+Users cannot add a phone authentication method to their own account.
 
 ## HTTP request
 
