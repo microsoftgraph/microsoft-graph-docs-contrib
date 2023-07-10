@@ -12,157 +12,150 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationEventsFlow()
 displayName := "Woodgrove User Flow 2"
 requestBody.SetDisplayName(&displayName) 
-additionalData := map[string]interface{}{
-onAuthenticationMethodLoadStart := graphmodels.New()
+onAuthenticationMethodLoadStart := graphmodels.NewOnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp()
 
 
- := graphmodels.New()
+identityProviderBase := graphmodels.NewIdentityProviderBase()
 id := "EmailPassword-OAUTH"
-.SetId(&id) 
- := graphmodels.New()
+identityProviderBase.SetId(&id) 
+identityProviderBase1 := graphmodels.NewIdentityProviderBase()
 id := "Google-OAUTH"
-.SetId(&id) 
- := graphmodels.New()
+identityProviderBase1.SetId(&id) 
+identityProviderBase2 := graphmodels.NewIdentityProviderBase()
 id := "Facebook-OAUTH"
-.SetId(&id) 
+identityProviderBase2.SetId(&id) 
 
-	identityProviders := []graphmodels.Objectable {
-		,
-		,
-		,
-
-	}
-	onAuthenticationMethodLoadStart.SetIdentityProviders(identityProviders)
-	requestBody.SetOnAuthenticationMethodLoadStart(onAuthenticationMethodLoadStart)
-onInteractiveAuthFlowStart := graphmodels.New()
-	isSignUpAllowed := true
+identityProviders := []graphmodels.IdentityProviderBaseable {
+	identityProviderBase,
+	identityProviderBase1,
+	identityProviderBase2,
+}
+onAuthenticationMethodLoadStart.SetIdentityProviders(identityProviders)
+requestBody.SetOnAuthenticationMethodLoadStart(onAuthenticationMethodLoadStart)
+onInteractiveAuthFlowStart := graphmodels.NewOnInteractiveAuthFlowStartExternalUsersSelfServiceSignUp()
+isSignUpAllowed := true
 onInteractiveAuthFlowStart.SetIsSignUpAllowed(&isSignUpAllowed) 
-	requestBody.SetOnInteractiveAuthFlowStart(onInteractiveAuthFlowStart)
-onAttributeCollection := graphmodels.New()
+requestBody.SetOnInteractiveAuthFlowStart(onInteractiveAuthFlowStart)
+onAttributeCollection := graphmodels.NewOnAttributeCollectionExternalUsersSelfServiceSignUp()
 
 
- := graphmodels.New()
+identityUserFlowAttribute := graphmodels.NewIdentityUserFlowAttribute()
 id := "email"
-.SetId(&id) 
+identityUserFlowAttribute.SetId(&id) 
 displayName := "Email Address"
-.SetDisplayName(&displayName) 
+identityUserFlowAttribute.SetDisplayName(&displayName) 
 description := "Email address of the user"
-.SetDescription(&description) 
-userFlowAttributeType := "builtIn"
-.SetUserFlowAttributeType(&userFlowAttributeType) 
-dataType := "string"
-.SetDataType(&dataType) 
- := graphmodels.New()
+identityUserFlowAttribute.SetDescription(&description) 
+userFlowAttributeType := graphmodels.BUILTIN_IDENTITYUSERFLOWATTRIBUTETYPE 
+identityUserFlowAttribute.SetUserFlowAttributeType(&userFlowAttributeType) 
+dataType := graphmodels.STRING_IDENTITYUSERFLOWATTRIBUTEDATATYPE 
+identityUserFlowAttribute.SetDataType(&dataType) 
+identityUserFlowAttribute1 := graphmodels.NewIdentityUserFlowAttribute()
 id := "displayName"
-.SetId(&id) 
+identityUserFlowAttribute1.SetId(&id) 
 displayName := "Display Name"
-.SetDisplayName(&displayName) 
+identityUserFlowAttribute1.SetDisplayName(&displayName) 
 description := "Display Name of the User."
-.SetDescription(&description) 
-userFlowAttributeType := "builtIn"
-.SetUserFlowAttributeType(&userFlowAttributeType) 
-dataType := "string"
-.SetDataType(&dataType) 
- := graphmodels.New()
+identityUserFlowAttribute1.SetDescription(&description) 
+userFlowAttributeType := graphmodels.BUILTIN_IDENTITYUSERFLOWATTRIBUTETYPE 
+identityUserFlowAttribute1.SetUserFlowAttributeType(&userFlowAttributeType) 
+dataType := graphmodels.STRING_IDENTITYUSERFLOWATTRIBUTEDATATYPE 
+identityUserFlowAttribute1.SetDataType(&dataType) 
+identityUserFlowAttribute2 := graphmodels.NewIdentityUserFlowAttribute()
 id := "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor"
-.SetId(&id) 
+identityUserFlowAttribute2.SetId(&id) 
 displayName := "Favorite color"
-.SetDisplayName(&displayName) 
+identityUserFlowAttribute2.SetDisplayName(&displayName) 
 description := "what is your favorite color"
-.SetDescription(&description) 
-userFlowAttributeType := "custom"
-.SetUserFlowAttributeType(&userFlowAttributeType) 
-dataType := "string"
-.SetDataType(&dataType) 
+identityUserFlowAttribute2.SetDescription(&description) 
+userFlowAttributeType := graphmodels.CUSTOM_IDENTITYUSERFLOWATTRIBUTETYPE 
+identityUserFlowAttribute2.SetUserFlowAttributeType(&userFlowAttributeType) 
+dataType := graphmodels.STRING_IDENTITYUSERFLOWATTRIBUTEDATATYPE 
+identityUserFlowAttribute2.SetDataType(&dataType) 
 
-	attributes := []graphmodels.Objectable {
-		,
-		,
-		,
-
-	}
-	onAttributeCollection.SetAttributes(attributes)
-attributeCollectionPage := graphmodels.New()
-
-
- := graphmodels.New()
+attributes := []graphmodels.IdentityUserFlowAttributeable {
+	identityUserFlowAttribute,
+	identityUserFlowAttribute1,
+	identityUserFlowAttribute2,
+}
+onAttributeCollection.SetAttributes(attributes)
+attributeCollectionPage := graphmodels.NewAuthenticationAttributeCollectionPage()
 
 
- := graphmodels.New()
+authenticationAttributeCollectionPageViewConfiguration := graphmodels.NewAuthenticationAttributeCollectionPageViewConfiguration()
+
+
+authenticationAttributeCollectionInputConfiguration := graphmodels.NewAuthenticationAttributeCollectionInputConfiguration()
 attribute := "email"
-.SetAttribute(&attribute) 
+authenticationAttributeCollectionInputConfiguration.SetAttribute(&attribute) 
 label := "Email Address"
-.SetLabel(&label) 
-inputType := "Text"
-.SetInputType(&inputType) 
+authenticationAttributeCollectionInputConfiguration.SetLabel(&label) 
+inputType := graphmodels.TEXT_AUTHENTICATIONATTRIBUTECOLLECTIONINPUTTYPE 
+authenticationAttributeCollectionInputConfiguration.SetInputType(&inputType) 
 hidden := true
-.SetHidden(&hidden) 
+authenticationAttributeCollectionInputConfiguration.SetHidden(&hidden) 
 editable := false
-.SetEditable(&editable) 
+authenticationAttributeCollectionInputConfiguration.SetEditable(&editable) 
 writeToDirectory := true
-.SetWriteToDirectory(&writeToDirectory) 
+authenticationAttributeCollectionInputConfiguration.SetWriteToDirectory(&writeToDirectory) 
 required := true
-.SetRequired(&required) 
+authenticationAttributeCollectionInputConfiguration.SetRequired(&required) 
 validationRegEx := "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
-.SetValidationRegEx(&validationRegEx) 
- := graphmodels.New()
+authenticationAttributeCollectionInputConfiguration.SetValidationRegEx(&validationRegEx) 
+authenticationAttributeCollectionInputConfiguration1 := graphmodels.NewAuthenticationAttributeCollectionInputConfiguration()
 attribute := "displayName"
-.SetAttribute(&attribute) 
+authenticationAttributeCollectionInputConfiguration1.SetAttribute(&attribute) 
 label := "Display Name"
-.SetLabel(&label) 
-inputType := "text"
-.SetInputType(&inputType) 
+authenticationAttributeCollectionInputConfiguration1.SetLabel(&label) 
+inputType := graphmodels.TEXT_AUTHENTICATIONATTRIBUTECOLLECTIONINPUTTYPE 
+authenticationAttributeCollectionInputConfiguration1.SetInputType(&inputType) 
 hidden := false
-.SetHidden(&hidden) 
+authenticationAttributeCollectionInputConfiguration1.SetHidden(&hidden) 
 editable := true
-.SetEditable(&editable) 
+authenticationAttributeCollectionInputConfiguration1.SetEditable(&editable) 
 writeToDirectory := true
-.SetWriteToDirectory(&writeToDirectory) 
+authenticationAttributeCollectionInputConfiguration1.SetWriteToDirectory(&writeToDirectory) 
 required := false
-.SetRequired(&required) 
+authenticationAttributeCollectionInputConfiguration1.SetRequired(&required) 
 validationRegEx := "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
-.SetValidationRegEx(&validationRegEx) 
- := graphmodels.New()
+authenticationAttributeCollectionInputConfiguration1.SetValidationRegEx(&validationRegEx) 
+authenticationAttributeCollectionInputConfiguration2 := graphmodels.NewAuthenticationAttributeCollectionInputConfiguration()
 attribute := "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor"
-.SetAttribute(&attribute) 
+authenticationAttributeCollectionInputConfiguration2.SetAttribute(&attribute) 
 label := "Favorite color"
-.SetLabel(&label) 
-inputType := "text"
-.SetInputType(&inputType) 
+authenticationAttributeCollectionInputConfiguration2.SetLabel(&label) 
+inputType := graphmodels.TEXT_AUTHENTICATIONATTRIBUTECOLLECTIONINPUTTYPE 
+authenticationAttributeCollectionInputConfiguration2.SetInputType(&inputType) 
 hidden := false
-.SetHidden(&hidden) 
+authenticationAttributeCollectionInputConfiguration2.SetHidden(&hidden) 
 editable := true
-.SetEditable(&editable) 
+authenticationAttributeCollectionInputConfiguration2.SetEditable(&editable) 
 writeToDirectory := true
-.SetWriteToDirectory(&writeToDirectory) 
+authenticationAttributeCollectionInputConfiguration2.SetWriteToDirectory(&writeToDirectory) 
 required := false
-.SetRequired(&required) 
+authenticationAttributeCollectionInputConfiguration2.SetRequired(&required) 
 validationRegEx := "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
-.SetValidationRegEx(&validationRegEx) 
+authenticationAttributeCollectionInputConfiguration2.SetValidationRegEx(&validationRegEx) 
 
-inputs := []graphmodels.Objectable {
-	,
-	,
-	,
-
+inputs := []graphmodels.AuthenticationAttributeCollectionInputConfigurationable {
+	authenticationAttributeCollectionInputConfiguration,
+	authenticationAttributeCollectionInputConfiguration1,
+	authenticationAttributeCollectionInputConfiguration2,
 }
-.SetInputs(inputs)
+authenticationAttributeCollectionPageViewConfiguration.SetInputs(inputs)
 
-	views := []graphmodels.Objectable {
-		,
-
-	}
-	attributeCollectionPage.SetViews(views)
-	onAttributeCollection.SetAttributeCollectionPage(attributeCollectionPage)
-	requestBody.SetOnAttributeCollection(onAttributeCollection)
+views := []graphmodels.AuthenticationAttributeCollectionPageViewConfigurationable {
+	authenticationAttributeCollectionPageViewConfiguration,
 }
-requestBody.SetAdditionalData(additionalData)
+attributeCollectionPage.SetViews(views)
+onAttributeCollection.SetAttributeCollectionPage(attributeCollectionPage)
+requestBody.SetOnAttributeCollection(onAttributeCollection)
 
 result, err := graphClient.Identity().AuthenticationEventsFlows().Post(context.Background(), requestBody, nil)
 

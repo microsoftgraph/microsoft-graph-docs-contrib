@@ -17,6 +17,12 @@ For an app to access data in Microsoft Graph, the user or administrator must gra
 
 To find the unique identifiers for all permissions, see [All permissions and IDs](#all-permissions-and-ids).
 
+To read information about all Microsoft Graph permissions programmatically, sign-in to Graph Explorer using an account that has at least the *Application.Read.All* permission and run the following request.
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')?$select=id,appId,displayName,appRoles,oauth2PermissionScopes
+```
+
 [!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
 
 ## Access reviews permissions
@@ -847,6 +853,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Directory.Read.All_ |Read directory data | Allows the app to read data in your organization's directory, such as users, groups and apps. **Note**: Users may consent to applications that require this permission if the application is registered in their own organization's tenant.| Yes | No |
 | _Directory.ReadWrite.All_ |Read and write directory data | Allows the app to read and write data in your organization's directory, such as users, and groups. It does not allow the app to delete users or groups, or reset user passwords. | Yes | No |
 | _Directory.AccessAsUser.All_ |Access directory as the signed-in user  | Allows the app to have the same access to information in the directory as the signed-in user. | Yes | No |
+| _Directory.Write.Restricted_ |Manage restricted resources in the directory  | Allows the app to manage restricted resources based on the other permissions granted to the app, on behalf of the signed-in user. | Yes | No |
 
 <br/>
 
@@ -856,6 +863,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Directory.Read.All_ | Read directory data | Allows the app to read data in your organization's directory, such as users, groups and apps, without a signed-in user. | Yes |
 | _Directory.ReadWrite.All_ | Read and write directory data | Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion. | Yes |
+| _Directory.Write.Restricted_ |Manage restricted resources in the directory  | Allows the app to manage restricted resources based on the other permissions granted to the app, without a signed-in user. | Yes |
 
 ### Remarks
 
@@ -2045,12 +2053,14 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _RoleEligibilitySchedule.Read.Directory_ | Read all eligible role assignments for your company's directory. | Allows the app to read the eligible role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. This includes reading directory role templates, and directory roles. | Yes | No |
 | _RoleManagement.Read.All_ | Read role management data for all RBAC providers. | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), on behalf of the signed-in user. This includes reading role definitions and role assignments. | Yes | No |
 | _RoleManagement.Read.Directory_ | Read role management data for Azure AD. | Allows the app to read the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes | No |
+| _RoleManagementAlert.Read.Directory_ | Read all alert data for your company's directory. | Allows the app to read the role-based access control (RBAC) alerts for your company's directory, on behalf of the signed-in user. This includes reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. | Yes | No |
 | _RoleManagementPolicy.Read.Directory_ | Read all policies for privileged role assignments for your company's directory. | Allows the app to read policies for privileged role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. | Yes | No |
 | _RoleManagementPolicy.Read.AzureADGroup_ | Read all policies in PIM for groups. | Allows the app to read policies in Privileged Identity Management for groups, on behalf of the signed-in user. | Yes | No |
 | _RoleManagement.Read.Exchange_ | Read Exchange Online RBAC configuration | Allows the app to read the role-based access control (RBAC) settings for your organization's Exchange Online service, on behalf of the signed-in user. This includes reading Exchange management role definitions, role groups, role group membership, role assignments, management scopes, and role assignment policies. | Yes | No |
 | _RoleAssignmentSchedule.ReadWrite.Directory_ | Read, update, and delete all active role assignments for your company's directory. | Allows the app to read and manage the active role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. This includes managing active directory role membership, and reading directory role templates, directory roles and active memberships. | Yes | No |
 | _RoleEligibilitySchedule.ReadWrite.Directory_ | Read, update, and delete  all eligible role assignments for your company's directory. | Allows the app to read and manage the eligible role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. This includes managing eligible directory role membership, and reading directory role templates, directory roles and eligible memberships. | Yes | No |
 | _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD. | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes | No |
+| _RoleManagementAlert.ReadWrite.Directory_ | Read all alert data, configure alerts, and take actions on all alerts for your company's directory. | Allows the app to read and manage the role-based access control (RBAC) alerts for your company's directory, on your behalf. This includes managing alert settings, initiating alert scans, dimissing alerts, remediating alert incidents, and reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. | Yes | No |
 | _RoleManagementPolicy.ReadWrite.Directory_ | Read, update, and delete all policies for privileged role assignments for your company's directory. | Allows the app to read, update, and delete policies for privileged role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. | Yes | No |
 | _RoleManagementPolicy.ReadWrite.AzureADGroup_ | Read, update, and delete all policies in PIM for groups. | Allows the app to read, update, and delete policies in Privileged Identity Management for groups, on behalf of the signed-in user. | Yes | No |
 | _RoleManagement.ReadWrite.Exchange_ | Read and write Exchange Online RBAC configuration | Allows the app to read and manage the role-based access control (RBAC) settings for your organization's Exchange Online service, on behalf of the signed-in user. This includes reading, creating, updating, and deleting Exchange management role definitions, role groups, role group membership, role assignments, management scopes, and role assignment policies. | Yes | No |
@@ -2062,10 +2072,12 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _RoleManagement.Read.All_ | Read role management data for all RBAC providers. | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), without a signed-in user. This includes reading role definitions and role assignments. | Yes |
 | _RoleManagement.Read.Directory_ | Read role management data for Azure AD. | Allows the app to read the role-based access control (RBAC) settings for your company's directory, without a signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes |
 | _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD. | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, without a signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes |
+| _RoleManagementAlert.Read.Directory_ | Read all alert data for your company's directory. | Allows the app to read all role-based access control (RBAC) alerts for your company's directory, without a signed-in user. This includes reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. | Yes |
 | _RoleManagementPolicy.Read.Directory_ | Read all policies for privileged role assignments of your company's directory. | Allows the app to read policies for privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user. | Yes |
 | _RoleManagementPolicy.Read.AzureADGroup_ | Read all policies in PIM for groups. | Allows the app to read policies in Privileged Identity Management for groups, without a signed-in user. | Yes |
 | _RoleManagementPolicy.ReadWrite.Directory_ | Read, update, and delete all policies for privileged role assignments of your company's directory. | Allows the app to read, update, and delete policies for privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user. | Yes |
 | _RoleManagementPolicy.ReadWrite.AzureADGroup_ | Read, update, and delete all policies in PIM for groups. | Allows the app to read, update, and delete policies in Privileged Identity Management for groups, without a signed-in user. | Yes |
+| _RoleManagementAlert.ReadWrite.Directory_ | Read all alert data, configure alerts, and take actions on all alerts for your company's directory. | Allows the app to read and manage all role-based access control (RBAC) alerts for your company's directory, without a signed-in user. This includes managing alert settings, initiating alert scans, dimissing alerts, remediating alert incidents, and reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. | Yes |
 
 
 ### Remarks
@@ -2322,15 +2334,18 @@ The _Sites.Selected_ application permission is available only in the Microsoft G
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read synchronization data on behalf of the signed-in user. | Yes | No |
-Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to read and write synchronization data on behalf of the signed-in user. | Yes | No |
+Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read Azure AD synchronization information, on behalf of the signed-in user. | Yes | No |
+Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to configure the Azure AD synchronization service, on behalf of the signed-in user. | Yes | No |
+SynchronizationData-User.Upload | Allows the app to upload bulk user data to the identity synchronization service, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read synchronization data on behalf of the signed-in user. | Yes |
-Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to read and write synchronization data on behalf of the signed-in user. | Yes |
+Synchronization.Read.All | Read all Azure AD synchronization data | Allows the application to read Azure AD synchronization information, without a signed-in user. | Yes |
+Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the application to configure the Azure AD synchronization service, without a signed-in user. | Yes |
+SynchronizationData-User.Upload | Upload user data to the identity synchronization service | Allows the application to upload bulk user data to the identity synchronization service, without a signed-in user. | Yes |
+
 
 ### Example usage
 
