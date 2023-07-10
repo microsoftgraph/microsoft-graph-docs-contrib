@@ -35,7 +35,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 | Member             | Description                                       |
 |:-------------------| :------------------------------------------------ |
-| unknown            | Unknown platform, for forward compatibility.    |
+| unknown            | An unknown platform for forward compatibility.    |
 | aks                | Azure Kubernetes Service.                       |
 | eks                | Amazon AWS Kubernetes.                    |
 | gke                | Google cloud Kubernetes.                        |
