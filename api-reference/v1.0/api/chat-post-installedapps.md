@@ -70,7 +70,7 @@ If successful, this method returns a `201 Created` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add_app_in_chat",
+  "name": "add_app_in_chat_v1_e1",
   "sampleKeys": ["19:ea28e88c00e94c7786b065394a61f296@thread.v2"]
 }-->
 
@@ -136,7 +136,7 @@ To get the list of resource-specific permissions required by the app, get the ap
 
 <!-- {
   "blockType": "request",
-  "name": "add_app_in_chat",
+  "name": "add_app_in_chat_v1_e2",
   "sampleKeys": ["19:ea28e88c00e94c7786b065394a61f296@thread.v2"]
 }-->
 
