@@ -1,9 +1,9 @@
 ---
 title: "Get hostPair"
 description: "Read the properties and relationships of a microsoft.graph.security.hostPair object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "jakedavies-microsoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -19,21 +19,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|ThreatIntelligence.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|ThreatIntelligence.Read.All|
 
 ## HTTP request
-
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET /security/threatIntelligence/hostPairs/{hostPairId}
-GET /security/threatIntelligence/hosts/{hostId}/hostPairs/{hostPairId}
-GET /security/threatIntelligence/hosts/{hostId}/childHostPairs/{hostPairId}
-GET /security/threatIntelligence/hosts/{hostId}/parentHostPairs/{hostPairId}
 ```
 
 ## Optional query parameters
@@ -48,7 +44,6 @@ This method supports some of the OData query parameters to help customize the re
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.hostPair](../resources/security-hostpair.md) object in the response body.
 
 ## Examples
@@ -58,10 +53,11 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "get_hostpair"
+  "sampleKeys": ["ZmluYWxSZWRpcmVjdCQkY29udG9zby5jb20kJGNvbnRvc28uY29tJCRjb250b3NvLmNvbQ=="]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hostPairs/{hostPairId}
+GET https://graph.microsoft.com/beta/security/threatIntelligence/hostPairs/ZmluYWxSZWRpcmVjdCQkY29udG9zby5jb20kJGNvbnRvc28uY29tJCRjb250b3NvLmNvbQ==
 ```
 
 
@@ -79,12 +75,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.hostPair",
-    "id": "5c1e7170-0621-8ddd-fc2e-4ea27407faa9",
-    "firstSeenDateTime": "String (timestamp)",
-    "lastSeenDateTime": "String (timestamp)",
-    "linkKind": "String"
+  "@odata.type": "microsoft.graph.security.hostPair"
+  "id": "ZmluYWxSZWRpcmVjdCQkY29udG9zby5jb20kJGNvbnRvc28uY29tJCRjb250b3NvLmNvbQ==",
+  "firstSeenDateTime": "2022-05-11T01:27:14.187Z",
+  "lastSeenDateTime": "2023-06-23T06:33:31.493Z",
+  "linkKind": "finalRedirect",
+  "parentHost": {
+      "id": "contoso.com"
+  },
+  "childHost": {
+      "id": "contoso.com"
   }
 }
 ```
