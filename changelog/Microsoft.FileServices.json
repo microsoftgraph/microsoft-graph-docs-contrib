@@ -2,7 +2,7 @@
   "changelog": [
     {
       "ChangeList": [
-        {
+        { 
           "Id": "a8d1ea6c-3868-41c8-b499-ed81848134bd",
           "ApiChange": "Method",
           "ChangedApiName": "permanentDelete",
