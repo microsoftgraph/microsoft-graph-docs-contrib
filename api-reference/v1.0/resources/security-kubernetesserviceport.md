@@ -16,14 +16,14 @@ KubernetesServicePort object reported as part of a [microsoft.graph.security.kub
 
 ## Properties
 
-|Property| Type                                                                            |Description|
-|:---|:--------------------------------------------------------------------------------|:---|
-|appProtocol| String                                                                          |The application protocol for this port.|
-|name| String                                                                          |The name of this port within the service.|
-|nodePort| Int32                                                                           |The port on each node on which this service is exposed when type is NodePort or LoadBalancer.|
-|port| Int32                                                                           |The port that will be exposed by this service.|
-|protocol| [microsoft.graph.security.containerPortProtocol](#containerportprotocol-values) | Protocol name.|
-|targetPort| String                                                                          |String representing the name or number of the port to access on the pods targeted by the service. Port number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.|
+| Property    | Type                                                                            | Description                                                                                                                                                             |
+|:------------|:--------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| appProtocol | String                                                                          | The application protocol for this port.                                                                                                                                 |
+| name        | String                                                                          | The name of this port within the service.                                                                                                                               |
+| nodePort    | Int32                                                                           | The port on each node on which this service is exposed when the type is either `NodePort` or `LoadBalancer`.                                                            |
+| port        | Int32                                                                           | The port that this service exposes.                                                                                                                                     |
+| protocol    | [microsoft.graph.security.containerPortProtocol](#containerportprotocol-values) | The protocol name. Possible values are: `udp`, `tcp`, `sctp`, `unknownFutureValue`.                                                                                     |
+| targetPort  | String                                                                          | The name or number of the port to access on the pods targeted by the service. The port number must be in the range `1` to `65535`. The name must be an `IANA_SVC_NAME`. |
 
 ### containerPortProtocol values
 
