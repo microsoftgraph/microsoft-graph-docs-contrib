@@ -1,9 +1,9 @@
 ---
 title: "trainingNotificationSetting resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents trainign notification setting."
+author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,19 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents trainign notification setting.
 
 Inherits from [endUserNotificationSetting](../resources/endusernotificationsetting.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|notificationPreference|endUserNotificationPreference|**TODO: Add Description** Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).The possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`.|
-|positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|**TODO: Add Description** Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
-|settingType|endUserNotificationSettingType|**TODO: Add Description** Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).The possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`.|
-|trainingAssignment|[baseEndUserNotification](../resources/baseendusernotification.md)|**TODO: Add Description**|
-|trainingReminder|[trainingReminderNotification](../resources/trainingremindernotification.md)|**TODO: Add Description**|
+|notificationPreference|endUserNotificationPreference|Notification preference. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).The possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`.|
+|positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|Positive reinforcement details. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
+|settingType|endUserNotificationSettingType|Settign type. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).The possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`.|
+|trainingAssignment|[baseEndUserNotification](../resources/baseendusernotification.md)|Training assignment details.|
+|trainingReminder|[trainingReminderNotification](../resources/trainingremindernotification.md)|Training reminder details.|
 
 ## Relationships
 None.

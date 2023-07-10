@@ -17,7 +17,7 @@ End user notification setting for simulation creation.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|notificationPreference|endUserNotificationPreference|Notification preferance.The possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`.|
+|notificationPreference|endUserNotificationPreference|Notification preference.The possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`.|
 |positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|Positive reinforcement detail.|
 |settingType|endUserNotificationSettingType|End user notification type.The possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`.|
 

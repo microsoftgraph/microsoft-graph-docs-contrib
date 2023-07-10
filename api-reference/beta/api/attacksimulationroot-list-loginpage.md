@@ -85,7 +85,7 @@ Content-Type: application/json
       "content": "String",
       "language": "String",
       "status": "microsoft.graph.simulationContentStatus",
-      "source": "microsoft.graph.simulationContentSourc",
+      "source": "microsoft.graph.simulationContentSource",
       "createdBy": {
         "@odata.type": "microsoft.graph.emailIdentity"
       },

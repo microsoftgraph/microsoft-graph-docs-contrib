@@ -28,15 +28,15 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|User who created the training.||
-|createdDateTime|DateTimeOffset|Datetime when the training was created.|
-|description|String|Detail about training.|
-|displayName|String|Training name|
-|id|String|Identifier. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|User who modified the training.|
-|lastModifiedDateTime|DateTimeOffset|Datetime when training was lsat modified.|
+|createdDateTime|DateTimeOffset|Date & Time of the campaign creation.|
+|description|String|Description of the campaign as defined by the user.|
+|displayName|String|Name of the campaign as defined by the user.|
+|id|String|Identifier. Inherited from entity.|
+|lastModifiedBy|emailIdentity|User who modified the campaign last.|
+|lastModifiedDateTime|DateTimeOffset|Date & Time when campaign was last modified.|
 |notificationType|endUserNotificationType|Type of notification.The possible values are: `unknown`, `positiveReinforcement`, `noTraining`, `trainingAssignment`, `trainingReminder`, `unknownFutureValue`.|
-|source|simulationContentSource|Source.The possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
-|status|simulationContentStatus|Status.The possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|source|simulationContentSource|Source of the content.The possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|status|simulationContentStatus|The status of the campaign.The possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
 |supportedLocales|String collection|Supported locales for endUserNotification content.|
 
 ## Relationships

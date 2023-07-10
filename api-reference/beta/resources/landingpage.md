@@ -27,17 +27,18 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|Email identity who created landing page.|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|User who created the landing page.|
 |createdDateTime|DateTimeOffset|Date and time of landing page creation.|
-|description|String|Description.|
-|displayName|String|Display name|
+|description|String|Description of the landing page as defined by the user..|
+|displayName|String|Display name of the landing page.|
 |id|String|Unique identifier. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Email identity of the user who updated the landing page.|
-|lastModifiedDateTime|DateTimeOffset|Date and time of update.|
+|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Email identity of the user who last modified the landing page.|
+|lastModifiedDateTime|DateTimeOffset|Date and time of last update.|
 |locale|String|Content locale.|
-|source|simulationContentSource|Source.The possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
-|status|simulationContentStatus|status.The possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|source|simulationContentSource|Source of the content.The possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|status|simulationContentStatus|Status of the simulation.The possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
 |supportedLocales|String collection|Supported locales.|
+
 
 ## Relationships
 |Relationship|Type|Description|

@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the s
 |attackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign.|
 |displayName|String|Display name of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
-|durationInDays|Int32|Simulation duration in days Optional.|
+|durationInDays|Int32|Simulation duration in days (Optional).|
 |endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|End user notification setting detail.|
 |includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the simulation.|
 |loginPage|[loginPage](../resources/loginPage.md)|loginPage associated to a simulation|

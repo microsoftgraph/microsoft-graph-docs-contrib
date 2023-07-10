@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |language|String|Login page content language.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who modified the login page|
 |lastModifiedDateTime|DateTimeOffset|Date and time of login page update.|
-|source|simulationContentSource|Source of login .The posspage.Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|source|simulationContentSource|Source of login page content.The posspage.Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |status|simulationContentStatus|Login page status..The possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
 
 ## Relationships

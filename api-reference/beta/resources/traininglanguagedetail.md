@@ -26,14 +26,14 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |content|String|Training language specific content.|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|User who created detail.|
-|createdDateTime|DateTimeOffset|Creation date and time.s|
-|description|String|Description|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|Email identity of the user who created details.|
+|createdDateTime|DateTimeOffset|Date and time of the creation of details.|
+|description|String|Description as defined by the user.|
 |displayName|String|Display name.|
 |id|String|Identifier. Inherited from [entity](../resources/entity.md).|
-|isDefaultLangauge|Boolean|Is this default language detail.|
-|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|User who updated recently.|
-|lastModifiedDateTime|DateTimeOffset|Updation date and time.|
+|isDefaultLangauge|Boolean|IDefault language of the details.|
+|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Email identity of the user who last updated the details.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when it was last modified.|
 |locale|String|Locale|
 
 ## Relationships

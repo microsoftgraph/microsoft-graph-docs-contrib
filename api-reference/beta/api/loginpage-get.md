@@ -12,16 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [loginPage](../resources/loginpage.md) object.
-
+Read the properties and relationships of a loginPage object. Login pages are shown to users in simulations that use Credential Harvest and Link in Attachment social engineering techniques.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | AttackSimulation.ReadWrite.All              |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | AttackSimulation.ReadWrite.All              |
+| Permission type                        | Permissions (from least to most privileged)                                 |
+|:---------------------------------------|:----------------------------------------------------------------------------|
+| Delegated (work or school account)     | AttackSimulation.ReadWrite.All, AttackSimulation.ReadWrite.All              |
+| Delegated (personal Microsoft account) | Not supported.                                                              |
+| Application                            | AttackSimulation.ReadWrite.All, AttackSimulation.ReadWrite.All              |
 
 ## HTTP request
 

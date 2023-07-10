@@ -13,15 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [landingPageDetail](../resources/landingpagedetail.md) objects and their properties.
+Read the properties and relationships of a landingPage object. Landing pages are the web pages that users are taken to when they click on a payload in a simulation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | AttackSimulation.ReadWrite.All              |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | AttackSimulation.ReadWrite.All              |
+| Permission type                        | Permissions (from least to most privileged)                                 |
+|:---------------------------------------|:----------------------------------------------------------------------------|
+| Delegated (work or school account)     | AttackSimulation.ReadWrite.All, AttackSimulation.ReadWrite.All              |
+| Delegated (personal Microsoft account) | Not supported.                                                              |
+| Application                            | AttackSimulation.ReadWrite.All, AttackSimulation.ReadWrite.All              |
+
 
 ## HTTP request
 

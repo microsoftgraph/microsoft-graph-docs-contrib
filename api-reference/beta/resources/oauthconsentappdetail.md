@@ -17,7 +17,7 @@ Details required for oAuth technique
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appScope|oAuthAppScope|App scope..The possible values are: `unknown`, `readCalendar`, `readContact`, `readMail`, `readAllChat`, `readAllFile`, `readAndWriteMail`, `sendMail`, `unknownFutureValue`.|
+|appScope|oAuthAppScope|App scope.The possible values are: `unknown`, `readCalendar`, `readContact`, `readMail`, `readAllChat`, `readAllFile`, `readAndWriteMail`, `sendMail`, `unknownFutureValue`.|
 |displayLogo|String|App display logo.|
 |displayName|String|App name.|
 
