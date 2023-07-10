@@ -1331,9 +1331,9 @@ items:
           href: resources/synchronization-synchronizationjob.md
           items:
           - name: List
-            href: api/synchronization-synchronizationjob-list.md
+            href: api/synchronization-synchronization-list-jobs.md
           - name: Create
-            href: api/synchronization-synchronizationjob-post.md
+            href: api/synchronization-synchronization-post-jobs.md
           - name: Get
             href: api/synchronization-synchronizationjob-get.md
           - name: Start
@@ -1345,7 +1345,7 @@ items:
           - name: Delete
             href: api/synchronization-synchronizationjob-delete.md
           - name: Provision on demand
-            href: api/synchronization-synchronizationjob-provision-on-demand.md
+            href: api/synchronization-synchronizationjob-provisionondemand.md
           - name: Validate credentials
             href: api/synchronization-synchronizationjob-validatecredentials.md
           - name: Bulk upload 
@@ -1372,16 +1372,18 @@ items:
             href: resources/synchronization-directorydefinition.md
             items:
             - name: Discover
-              href: api/directorydefinition-discover.md
+              href: api/synchronization-directorydefinition-discover.md
         - name: Template
           href: resources/synchronization-synchronizationtemplate.md
           items:
           - name: List
-            href: api/synchronization-synchronizationtemplate-list.md
+            href: api/synchronization-synchronization-list-templates.md
           - name: Get
             href: api/synchronization-synchronizationtemplate-get.md
+          - name: Update
+            href: api/synchronization-synchronizationtemplate-update.md
     - name: Calendars
-      displayname: Outlook calendar
+      displayName: Outlook calendar
       items:
       - name: Calendar
         href: resources/calendar.md
@@ -17375,7 +17377,11 @@ items:
           items:
           - name: Learning course activity
             href: resources/learningcourseactivity.md
-            items:  
+            items:
+          - name: Learning assignment type
+            href: resources/learningassignment.md
+          - name: Learning self-initiated course type
+            href: resources/learningselfinitiatedcourse.md
           - name: List
             href: api/learningcourseactivity-list.md
           - name: Create
@@ -17386,10 +17392,6 @@ items:
             href: api/learningcourseactivity-update.md
           - name: Delete
             href: api/learningcourseactivity-delete.md
-          - name: Learning assignment
-            href: resources/learningassignment.md
-          - name: Learning self-initiated course
-            href: resources/learningselfinitiatedcourse.md
       - name: Messaging
         items:
         - name: Activity feed
