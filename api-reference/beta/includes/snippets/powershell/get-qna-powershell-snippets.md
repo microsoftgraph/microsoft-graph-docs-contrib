@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 
-Get-MgSearchQna -QnaId $qnaId
+Get-MgBetaSearchQna -QnaId $qnaId
 
 ```
