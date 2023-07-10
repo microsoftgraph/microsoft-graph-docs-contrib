@@ -1,6 +1,6 @@
 ---
 title: "kubernetesServiceEvidence resource type"
-description: "Represents Kubernetes service entity."
+description: "Represents a kubernetes service entity."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents Kubernetes service entity.
+Represents a kubernetes service entity.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
@@ -27,23 +27,23 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |namespace|[microsoft.graph.security.kubernetesNamespaceEvidence](./security-kubernetesnamespaceevidence.md)|The service namespace.|
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 |remediationStatusDetails|String|Details about the remediation status. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
-|roles|[microsoft.graph.security.evidenceRole](../resources/security-alertevidence.md#evidencerole-values) collection|One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role `Attacker`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
+|roles|[microsoft.graph.security.evidenceRole](../resources/security-alertevidence.md#evidencerole-values) collection|One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role `Attacker`. Possible values are: `unknown`, `contextual`, `scanned`, `source`, `destination`, `created`, `added`, `compromised`, `edited`, `attacked`, `attacker`, `commandAndControl`, `loaded`, `suspicious`, `policyViolator`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 |selector|microsoft.graph.dictionary|The service selector.|
-|servicePorts|[microsoft.graph.security.kubernetesServicePort](./security-kubernetesserviceport.md) collection|The service ports list.|
-|serviceType|[microsoft.graph.security.kubernetesServiceType](#kubernetesservicetype-values)|The service type.|
+|servicePorts|[microsoft.graph.security.kubernetesServicePort](./security-kubernetesserviceport.md) collection|The list of service ports.|
+|serviceType|[microsoft.graph.security.kubernetesServiceType](#kubernetesservicetype-values)|The service type. Possible values are: `unknown`, `clusterIP`, `externalName`, `nodePort`, `loadBalancer`, `unknownFutureValue`.|
 |tags|String collection|Array of custom tags associated with an evidence instance. For example, to denote a group of devices or high value assets. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 |verdict|[microsoft.graph.security.evidenceVerdict](../resources/security-alertevidence.md#evidenceverdict-values)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 
 ### kubernetesServiceType values 
 
-| Member                     | Description                                       |
-| :--------------------------| :------------------------------------------------ |
-| unknown                    | Unknown service type, for forward compatibily.    |
-| clusterIP                  | Cluster IP type of service.                       |
-| externalName               | External name type of service.                    |
-| nodePort                   | Node port type of service.                        |
-| loadBalancer               | Load balancer type of service.                    |
-| unknownFutureValue         | Evolvable enumeration sentinel value. Do not use. |
+| Member                     | Description                                      |
+| :--------------------------| :------------------------------------------------|
+| unknown                    | An unknown service type for forward compatibily. |
+| clusterIP                  | Cluster IP type of the service.                  |
+| externalName               | External name type of the service.               |
+| nodePort                   | Node port type of the service.                   |
+| loadBalancer               | Load balancer type of the service.               |
+| unknownFutureValue         | Evolvable enumeration sentinel value. Do not use.|
 
 
 ## Relationships
