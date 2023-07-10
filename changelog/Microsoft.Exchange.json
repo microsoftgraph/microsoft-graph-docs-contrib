@@ -2143,6 +2143,128 @@
         "CreatedDateTime": "2023-07-05T00:10:40.842515Z",
         "WorkloadArea": "Mail",
         "SubArea": ""
-    }
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [Get calendar](https://learn.microsoft.com/en-us/graph/api/calendar-get?view=graph-rest-v1.0) method of the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-v1.0) resource.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [calendar: getSchedule](https://learn.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-v1.0) method of the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-v1.0) resource.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendarView](https://learn.microsoft.com/en-us/graph/api/calendar-list-calendarview?view=graph-rest-v1.0) method of the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-v1.0) resource.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List events](https://learn.microsoft.com/en-us/graph/api/calendar-list-events?view=graph-rest-v1.0) method of the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-v1.0) resource.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [Get calendarGroup](https://learn.microsoft.com/en-us/graph/api/calendargroup-get?view=graph-rest-v1.0) method of the [calendarGroup](https://learn.microsoft.com/en-us/graph/api/resources/calendargroup?view=graph-rest-v1.0) resource.",
+          "Target": "calendarGroup"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendars](https://learn.microsoft.com/en-us/graph/api/calendargroup-list-calendars?view=graph-rest-v1.0) method of the [calendarGroup](https://learn.microsoft.com/en-us/graph/api/resources/calendargroup?view=graph-rest-v1.0) resource.",
+          "Target": "calendarGroup"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [event: delta](https://learn.microsoft.com/en-us/graph/api/event-delta?view=graph-rest-v1.0) method of the [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-v1.0) resource.",
+          "Target": "event"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [Get event](https://learn.microsoft.com/en-us/graph/api/event-get?view=graph-rest-v1.0) method of the [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-v1.0) resource.",
+          "Target": "event"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List instances](https://learn.microsoft.com/en-us/graph/api/event-list-instances?view=graph-rest-v1.0) method of the [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-v1.0) resource.",
+          "Target": "event"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendarGroups](https://learn.microsoft.com/en-us/graph/api/user-list-calendargroups?view=graph-rest-v1.0) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-v1.0) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendars](https://learn.microsoft.com/en-us/graph/api/user-list-calendars?view=graph-rest-v1.0) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-v1.0) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List calendarView](https://learn.microsoft.com/en-us/graph/api/user-list-calendarview?view=graph-rest-v1.0) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-v1.0) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [List events](https://learn.microsoft.com/en-us/graph/api/user-list-events?view=graph-rest-v1.0) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-v1.0) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadBasic",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application and delegated permission `Calendars.ReadBasic` to the [user: reminderView](https://learn.microsoft.com/en-us/graph/api/user-reminderview?view=graph-rest-v1.0) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-v1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "8f05250d-ca00-4b15-9488-f6f755a80eae",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-07-10T00:10:40.842515Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
   ]
 }
