@@ -73,7 +73,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/authentication/phoneMethods
+POST https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/phoneMethods
 Content-type: application/json
 
 {
