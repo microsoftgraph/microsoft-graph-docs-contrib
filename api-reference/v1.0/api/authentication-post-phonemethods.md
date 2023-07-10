@@ -69,6 +69,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["kim@contoso.com"],
   "name": "create_phoneauthenticationmethod_from_authentication"
 }-->
 

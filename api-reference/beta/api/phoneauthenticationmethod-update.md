@@ -75,7 +75,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_phoneauthenticationmethod"
+  "name": "update_phoneauthenticationmethod",
+  "sampleKeys": ["kim@contoso.com", "3179e48a-750b-4051-897c-87b9720928f7"]
 }-->
 
 ```http
