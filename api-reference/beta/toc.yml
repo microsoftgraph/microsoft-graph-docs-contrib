@@ -15127,6 +15127,8 @@ items:
         items:
         - name: Overview
           href: resources/azure-ad-auditlog-overview.md
+        - name: Azure AD SLA attainment
+          href: resources/directoryaudit.md
         - name: Directory audit
           href: resources/directoryaudit.md
           items:
