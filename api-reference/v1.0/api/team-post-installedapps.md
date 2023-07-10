@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Install an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
 > **Note:**
-> - Currently, installing an app that requires resource-specific consent permissions is not supported in application context.
+> Currently, installing an app that requires resource-specific consent permissions is not supported in the application context.
 
 ## Permissions
 
@@ -45,7 +45,7 @@ POST /teams/{team-id}/installedApps
 
 ## Request body
 
-The request body should contain the catalog app's generated app ID. For details, see [teamsApp properties](../resources/teamsapp.md#properties).
+The request body should include the generated app ID of the catalog app. For more information, see [teamsApp properties](../resources/teamsapp.md#properties).
 
 The following table lists additional properties that can be included in the request body.
 
@@ -55,7 +55,7 @@ The following table lists additional properties that can be included in the requ
 |consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|The set of resource-specific permissions that are being consented to.|
 
 > **Note**:
-> The permissions consented to during the install must be the same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app). If only delegated resource-specific permissions are present in **teamsAppDefinition**, permissions can be omitted in the body of this request.
+> The permissions consented to during the installation must match the resource-specific permissions specified in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app). If only delegated resource-specific permissions are specified in the **teamsAppDefinition**, permissions can be omitted in the request body.
 
 ## Response
 
