@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
-ms.date: 07/20/2022
+ms.date: 06/27/2023
 ---
 # Configure synchronization with custom target attributes
 
@@ -27,7 +27,7 @@ The following example shows how to find a service principal object with the disp
   "name": "tutorial-configure-synchronization-get-serviceprincipals"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 Authorization: Bearer {Token}
 ```
 
@@ -35,24 +35,24 @@ Authorization: Bearer {Token}
 [!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-synchronization-get-serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-synchronization-get-serviceprincipals-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-synchronization-get-serviceprincipals-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-synchronization-get-serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-synchronization-get-serviceprincipals-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-synchronization-get-serviceprincipals-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-synchronization-get-serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-synchronization-get-serviceprincipals-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-synchronization-get-serviceprincipals-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -68,7 +68,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(id,appId,displayName)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals(id,appId,displayName)",
     "value": [
     {
         "id": "167e33e9-f80e-490e-b4d8-698d4a80fb3e",
@@ -104,7 +104,7 @@ The following example shows you how to get the `jobId` that you need to work wit
   "name": "tutorial-configure-synchronization-get-synchronization-jobs"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
+GET https://graph.microsoft.com/v1.0/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 Authorization: Bearer {Token}
 ```
 
@@ -112,24 +112,24 @@ Authorization: Bearer {Token}
 [!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-synchronization-get-synchronization-jobs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-synchronization-get-synchronization-jobs-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-synchronization-get-synchronization-jobs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-synchronization-get-synchronization-jobs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-synchronization-get-synchronization-jobs-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-synchronization-get-synchronization-jobs-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-synchronization-get-synchronization-jobs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-synchronization-get-synchronization-jobs-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-synchronization-get-synchronization-jobs-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -145,7 +145,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('60443998-8cf7-4e61-b05c-a53b658cb5e1')/synchronization/jobs",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('60443998-8cf7-4e61-b05c-a53b658cb5e1')/synchronization/jobs",
     "value": [
         {
             "id": "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa",
@@ -169,7 +169,7 @@ The following example shows how to get the synchronization schema.
   "name": "tutorial-configure-synchronization-get_synchronizationschema"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
+GET https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 ```
 
@@ -177,24 +177,24 @@ Authorization: Bearer {Token}
 [!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-synchronization-get-synchronizationschema-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-synchronization-get-synchronizationschema-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-synchronization-get-synchronizationschema-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-synchronization-get-synchronizationschema-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-synchronization-get-synchronizationschema-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-synchronization-get-synchronizationschema-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-synchronization-get-synchronizationschema-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-synchronization-get-synchronizationschema-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-synchronization-get-synchronizationschema-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -309,14 +309,14 @@ Use a plain text editor of your choice (for example, [Notepad++](https://notepad
 
 1. Add an [attribute definition](/graph/api/resources/synchronization-attributedefinition) for the `officeCode` attribute. 
 
-	- Under directories, find the directory with the name salesforce.com, and in the object's array, find the one named **User**.
-	- Add the new attribute to the list, specifying the name and type, as shown in the following example.
+    - Under directories, find the directory with the name salesforce.com, and in the object's array, find the one named **User**.
+    - Add the new attribute to the list, specifying the name and type, as shown in the following example.
 
 2. Add an [attribute mapping](/graph/api/resources/synchronization-attributemapping) between `officeCode` and `extensionAttribute10`.
 
-	- Under [synchronizationRules](/graph/api/resources/synchronization-synchronizationrule), find the rule that specifies Azure AD as the source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).
-	- In the [objectMappings](/graph/api/resources/synchronization-objectmapping) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).
-	- In the [attributeMappings](/graph/api/resources/synchronization-attributemapping) array of the **objectMapping**, add a new entry, as shown in the following example.
+    - Under [synchronizationRules](/graph/api/resources/synchronization-synchronizationrule), find the rule that specifies Azure AD as the source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).
+    - In the [objectMappings](/graph/api/resources/synchronization-objectmapping) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).
+    - In the [attributeMappings](/graph/api/resources/synchronization-attributemapping) array of the **objectMapping**, add a new entry, as shown in the following example.
 
 ```json
 {  
@@ -344,11 +344,11 @@ Use a plain text editor of your choice (for example, [Notepad++](https://notepad
         "objectMappings": [
             {
             "attributeMappings": [
-            	{
+                {
                     "source": {
-							"name": "extensionAttribute10",
-							"type": "Attribute"
-                    	},
+                            "name": "extensionAttribute10",
+                            "type": "Attribute"
+                        },
                     "targetAttributeName": "officeCode"
                 }
             ],
@@ -362,7 +362,7 @@ Use a plain text editor of your choice (for example, [Notepad++](https://notepad
         "sourceDirectoryName": "Azure Active Directory",
         "targetDirectoryName": "salesforce.com"
     }
-	]
+    ]
 }
 ```
 
@@ -376,7 +376,7 @@ When you save the updated synchronization schema, make sure that you include the
   "name": "tutorial-configure-synchronization-update_synchronizationschema"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
+PUT https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 
 {
@@ -389,23 +389,23 @@ Authorization: Bearer {Token}
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-synchronization-update-synchronizationschema-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-synchronization-update-synchronizationschema-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-synchronization-update-synchronizationschema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

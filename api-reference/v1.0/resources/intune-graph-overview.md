@@ -1,7 +1,7 @@
 ---
 title: "Working with Intune in Microsoft Graph"
 description: "The Microsoft Graph API for Intune enables programmatic access to Intune information for your tenant; the API performs the same Intune operations as those available through the Azure Portal."
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: high
 ms.prod: "intune"
 doc_type: conceptualPageType

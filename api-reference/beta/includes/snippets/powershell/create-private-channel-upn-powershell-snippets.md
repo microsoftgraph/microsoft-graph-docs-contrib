@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -22,6 +22,6 @@ $params = @{
 	)
 }
 
-New-MgTeamChannel -TeamId $teamId -BodyParameter $params
+New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
 
 ```

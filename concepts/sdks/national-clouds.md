@@ -55,6 +55,10 @@ Connect-MgGraph -Environment USGov -ClientId 'YOUR_CLIENT_ID' `
   -TenantId 'YOUR_TENANT_ID' -Scopes 'https://graph.microsoft.us/.default'
 ```
 
+### [Python](#tab/python)
+
+:::code language="python" source="./snippets/python/src/snippets/national_clouds.py" id="NationalCloudSnippet":::
+
 ### [TypeScript](#tab/typescript)
 
 :::code language="csharp" source="./snippets/typescript/src/snippets/nationalClouds.ts" id="NationalCloudSnippet":::
