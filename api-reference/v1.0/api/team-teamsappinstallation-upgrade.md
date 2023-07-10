@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# teamsAppInstallation in team: upgrade
+# teamsAppInstallation in a team: upgrade
 
 Namespace: microsoft.graph
 
