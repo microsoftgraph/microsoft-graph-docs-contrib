@@ -1,5 +1,5 @@
 ---
-title: "Branch Forwarding Profiles List"
+title: "List forwardingProfiles (for a branch)"
 description: "Retrieve a list of traffic forwarding profiles associated with a branch."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Branch Forwarding Profiles List
+# List forwardingProfiles (for a branch)
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -36,7 +36,7 @@ GET /networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters.
 
 ## Request headers
 |Name|Description|
@@ -93,12 +93,10 @@ Content-Type: application/json
                 {
                  "@odata.type": "microsoft.graph.networkAccess.AssociatedBranch",
                  "branchId": "19a92090-c14e-4cea-a933-27d38f72c64s"
-                },
-                 ...
+                }                
             ]
-        },
-        ...
+        }       
     ]
 }
-```
+
 
