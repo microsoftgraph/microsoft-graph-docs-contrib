@@ -132,20 +132,20 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/csharp/sensitivitylabelthisextractcontentlabel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/sensitivitylabelthisextractcontentlabel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sensitivitylabelthisextractcontentlabel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/sensitivitylabelthisextractcontentlabel-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/sensitivitylabelthisextractcontentlabel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/sensitivitylabelthisextractcontentlabel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sensitivitylabelthisextractcontentlabel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -176,3 +176,20 @@ Content-type: application/json
     "sensitivityLabelId": "0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "description": "sensitivityLabel: extractContentLabel",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: microsoft.graph.microsoft.graph/users:
+      /users/{var}/security/informationProtection/sensitivityLabels/extractContentLabel
+      Uri path requires navigating into unknown object hierarchy: missing property 'informationProtection' on 'security'. Possible issues:
+  	 1) Doc bug where 'informationProtection' isn't defined on the resource.
+  	 2) Doc bug where 'informationProtection' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'security' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
+}
+-->

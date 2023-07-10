@@ -69,24 +69,24 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrat
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-userregistrationdetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-userregistrationdetails-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-userregistrationdetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-userregistrationdetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-userregistrationdetails-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-userregistrationdetails-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-userregistrationdetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-userregistrationdetails-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-userregistrationdetails-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -129,7 +129,12 @@ Content-Type: application/json
         "microsoftAuthenticatorPush",
         "softwareOneTimePasscode"
       ],
-      "defaultMethod": "microsoftAuthenticatorPush",
+      "defaultMfaMethod": "microsoftAuthenticatorPush",
+      "isSystemPreferredAuthenticationMethodEnabled": true,
+      "systemPreferredAuthenticationMethods": [                
+        "push"
+      ],
+      "userPreferredMethodForSecondaryAuthentication": "push",       
       "userType": "member"
     },
     {
@@ -145,7 +150,10 @@ Content-Type: application/json
       "isPasswordlessCapable": false,
       "lastUpdatedDateTime": "2023-03-13T19:15:41.6195833Z",
       "methodsRegistered": [],
-      "defaultMethod": "",
+      "defaultMfaMethod": "",
+      "isSystemPreferredAuthenticationMethodEnabled": true,
+      "systemPreferredAuthenticationMethods": [],
+      "userPreferredMethodForSecondaryAuthentication": "",      
       "userType": "guest"
     },
     {
@@ -165,7 +173,12 @@ Content-Type: application/json
         "microsoftAuthenticatorPush",
         "softwareOneTimePasscode"
       ],
-      "defaultMethod": "mobilePhone",
+      "defaultMfaMethod": "mobilePhone",
+      "isSystemPreferredAuthenticationMethodEnabled": true,
+      "systemPreferredAuthenticationMethods": [                
+        "push"
+      ],
+      "userPreferredMethodForSecondaryAuthentication": "voiceMobile",      
       "userType": "member"
     }
   ]

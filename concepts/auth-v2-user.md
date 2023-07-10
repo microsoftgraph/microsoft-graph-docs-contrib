@@ -12,8 +12,6 @@ ms.date: 06/09/2023
 
 # Get access on behalf of a user
 
-*This article is part of a series on authentication and authorization for Microsoft Graph through the Microsoft identity platform. The preceding article is [Register an application with the Microsoft identity platform](auth-register-app-v2.md).*
-
 To call Microsoft Graph, an app must obtain an access token from the Microsoft identity platform. This access token includes information about whether the app is authorized to access Microsoft Graph on behalf of a signed-in user or with its own identity. This article provides guidance on how an app can [access Microsoft Graph on behalf of a user](./auth/auth-concepts.md#access-scenarios), also called *delegated access*.
 
 This article details the raw HTTP requests involved for an app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). Alternatively, you can avoid writing raw HTTP requests and use a Microsoft-built or supported authentication library that handles many of these details for you and helps you to get access tokens and call Microsoft Graph. For more information, see [Use the Microsoft Authentication Library (MSAL)](#use-the-microsoft-authentication-library-msal).
@@ -45,7 +43,7 @@ Before the app can call the Microsoft identity platform endpoints or Microsoft G
 
 From the app registration, save the following values:
 
-- The application ID (object ID) assigned by the app registration portal.
+- The application ID (client ID) assigned by the app registration portal.
 - A redirect URI (or reply URL) for the app to receive responses from Azure AD.
 - A client secret (application password), a certificate, or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
 

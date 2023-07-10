@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Files
+Import-Module Microsoft.Graph.Beta.Files
 
-Invoke-MgUnfollowDriveItem -DriveId $driveId -DriveItemId $driveItemId
+Invoke-MgBetaUnfollowDriveItem -DriveId $driveId -DriveItemId $driveItemId
 
 ```

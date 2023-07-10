@@ -5,7 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
-ms.date: 06/21/2023
+ms.date: 07/06/2023
 ---
 
 # Manage Azure AD role assignments using PIM APIs
@@ -89,25 +89,25 @@ For more information about using Microsoft Graph to configure rules, see [Overvi
 
 PIM for Azure AD roles generates alerts when it detects suspicious or unsafe settings for Azure AD roles in your tenant. The following six alert types are available:
 
-- Too many global administrators in the tenant.
-- Invalid license alerts that limit the use of PIM.
-- Roles configured for activation without requiring multifactor authentication.
-- Users with unused eligible or active Azure AD role assignments.
-- Azure AD roles being assigned outside of Privileged Identity Management.
-- Azure AD roles being activated too frequently.
-- Potential stale accounts in a privileged role.
-
-All alerts are scoped to the tenant.
+| Alert                                                                        | Comments |
+|------------------------------------------------------------------------------|----------|
+| Too many global administrators in the tenant                                 | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: There are too many global administrators](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#there-are-too-many-global-administrators).          |
+| Invalid license alerts that limit the use of PIM                             | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: The organization doesn't have Microsoft Entra Premium P2 or Microsoft Entra ID Governance](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#the-organization-doesnt-have-microsoft-entra-premium-p2-or-microsoft-entra-id-governance).         |
+| Roles configured for activation without requiring multifactor authentication | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: Roles don't require multi-factor authentication for activation](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#roles-dont-require-multi-factor-authentication-for-activation).         |
+| Users with unused eligible or active Azure AD role assignments               | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: Administrators aren't using their privileged roles](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#administrators-arent-using-their-privileged-roles).       |
+| Azure AD roles being assigned outside of Privileged Identity Management      | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: Roles are being assigned outside of Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#roles-are-being-assigned-outside-of-privileged-identity-management).          |
+| Azure AD roles being activated too frequently                                | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: Roles are being activated too frequently](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#roles-are-being-activated-too-frequently).          |
+| Potential stale accounts in a privileged role                                | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: Potential stale accounts in a privileged role](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#potential-stale-accounts-in-a-privileged-role).         |
 
 ### Building blocks of the PIM alerts APIs
 
-The following Microsoft Graph resources are used to manage PIM alerts:
+Use the following Microsoft Graph resources to manage PIM alerts.
 
 | Resource | Description | API operations|
 |--|--|--|
 | [unifiedRoleManagementAlert](unifiedrolemanagementalert.md) | Provides a summary of alerts in PIM for Azure AD roles, whether they are enabled or disabled, when the PIM service last scanned the tenant for incidences or this alert, and the number of incidences mapping to this alert type in the tenant. The PIM service scans the tenant daily for incidences relating to the alert but you can also run a manual scan. All the details are | [List](../api/rolemanagementalert-list-alerts.md) <br/><br/> [Get](../api/unifiedrolemanagementalert-get.md) <br/><br/> [Update](../api/unifiedrolemanagementalert-update.md) <br/><br/> [Refresh (Manual scan)](../api/unifiedrolemanagementalert-refresh.md)|
 | [unifiedRoleManagementAlertDefinition](unifiedrolemanagementalertdefinition.md) | Provides detailed description of each alert type, the severity level, the recommended steps to mitigate incidences relating to the alert in the tenant, and the recommended actions to prevent future incidences. | [List](../api/rolemanagementalert-list-alertdefinitions.md) <br/><br/> [Get](../api/unifiedrolemanagementalertdefinition-get.md) |
-| [unifiedRoleManagementAlertConfiguration](unifiedrolemanagementalertconfiguration.md) | The tenant-specific configuration for the alert including whether the PIM service should scan the tenant for incidences relating to the alert, the thresholds that trigger the alert, and the related alert definition. | [List](../api/rolemanagementalert-list-alertconfigurations.md) <br/><br/> [Get](../api/unifiedrolemanagementalertconfiguration-get.md) <br/><br/> [Update](../api/unifiedrolemanagementalertconfiguration-update.md)|
+| [unifiedRoleManagementAlertConfiguration](unifiedrolemanagementalertconfiguration.md) | The tenant-specific configuration for the alert including whether the PIM service should scan the tenant for incidences relating to the alert, the thresholds that trigger the alert, and the related alert definition. This is an abstract type from which resources that represent the individual alert types are derived. | [List](../api/rolemanagementalert-list-alertconfigurations.md) <br/><br/> [Get](../api/unifiedrolemanagementalertconfiguration-get.md) <br/><br/> [Update](../api/unifiedrolemanagementalertconfiguration-update.md)|
 | [unifiedRoleManagementAlertIncident](unifiedrolemanagementalertincident.md) | The incidences in the tenant that match the alert type. | [List](../api/unifiedrolemanagementalert-list-alertincidents.md) <br/><br/> [Get](../api/unifiedrolemanagementalertincident-get.md) <br/><br/> [Remediate](../api/unifiedrolemanagementalertincident-remediate.md) |
 
 

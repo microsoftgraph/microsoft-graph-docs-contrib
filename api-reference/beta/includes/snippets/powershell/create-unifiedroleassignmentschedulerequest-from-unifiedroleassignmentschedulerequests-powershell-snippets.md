@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	action = "AdminAssign"
@@ -20,6 +20,6 @@ $params = @{
 	}
 }
 
-New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter $params
+New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter $params
 
 ```
