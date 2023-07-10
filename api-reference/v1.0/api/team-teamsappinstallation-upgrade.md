@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Upgrade an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.
 
 > **Note:**
-> - Currently, upgrading an app that requires resource-specific consent permissions is not supported in application context.
+> - Currently, upgrading an app that requires resource-specific consent permissions is not supported in an application context.
 
 ## Permissions
 
