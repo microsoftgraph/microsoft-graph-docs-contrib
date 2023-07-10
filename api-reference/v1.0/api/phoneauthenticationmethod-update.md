@@ -33,7 +33,7 @@ Users cannot update their own phone authentication method.
 
 ## HTTP request
 
-Update your own or another user's phone authentication method.
+Update another user's phone authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http
 PATCH /users/{id | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
