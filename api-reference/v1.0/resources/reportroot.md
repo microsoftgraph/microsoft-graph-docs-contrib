@@ -34,7 +34,6 @@ None.
 | monthlyPrintUsageByPrinter | [printUsageByPrinter](../resources/printusagebyprinter.md) collection | Retrieve a list of monthly print usage summaries, grouped by printer. |
 | monthlyPrintUsageByUser | [printUsageByUser](../resources/printusagebyuser.md) collection | Retrieve a list of monthly print usage summaries, grouped by user. |
 | security | [securityReportsRoot](../resources/securityreportsroot.md) | Represents an abstract type that contains resources for attack simulation and training reports.  |
-| userRegistrationDetails | [userRegistrationDetails](../resources/userregistrationdetails.md) collection | Represents the authentication methods of users for a given tenant. |
 
 ## JSON representation
 
