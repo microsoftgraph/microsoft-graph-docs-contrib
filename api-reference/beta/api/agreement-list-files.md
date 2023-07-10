@@ -4,7 +4,7 @@ description: "Retrieve all localized files related to an agreement."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ---
 
 # List files (localized agreement files)
