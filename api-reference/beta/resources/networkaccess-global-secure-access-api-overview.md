@@ -98,7 +98,7 @@ You can also retrieve summarized counts of traffic relating to devices, users, t
 
 ## Enriched Microsoft 365 traffic logs
 
-The Global Secure Access services enable you to get enriched traffic logs for three Microsoft 365 workloads: SharePoint, Microsoft Teams, and Exchange Online. With enriched traffic logs, you can review network diagnostic data, performance data, and security events relevant to Microsoft 365 apps.
+The Global Secure Access services enable you to enrich the [Microsoft 365 audit logs](/microsoft-365/compliance/audit-log-search?view=o365-worldwide&preserve-view=true) with network traffic information. With enriched traffic logs, you can review network diagnostic data, performance data, and security events relevant to Microsoft 365 apps. Traffic relating to the following three Microsoft 365 workloads can be enriched with network traffic information: SharePoint, Microsoft Teams, and Exchange Online.
 
 ## See also
 

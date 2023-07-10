@@ -12498,15 +12498,15 @@ items:
         - name: Traffic reports
           href: resources/networkaccess-reports.md
           items:
-          - name: Entities summary
+          - name: Get entities summary
             href: api/networkaccess-reports-entitiessummaries.md
-          - name: Cross-tenant access summary
+          - name: Get cross-tenant access summary
             href: api/networkaccess-reports-getcrosstenantsummary.md
-          - name: Destination summary
+          - name: Get destination summary
             href: api/networkaccess-reports-getdestinationsummaries.md
-          - name: Device usage summary
+          - name: Get device usage summary
             href: api/networkaccess-reports-getdeviceusagesummary.md
-          - name: Transaction summaries
+          - name: Get transaction summaries
             href: api/networkaccess-reports-transactionsummaries.md
       - name: Governance
         href: resources/identitygovernance-overview.md

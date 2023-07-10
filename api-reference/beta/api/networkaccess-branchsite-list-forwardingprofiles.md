@@ -88,7 +88,7 @@ Content-Type: application/json
             "version": "13",
             "lastModifiedDate": "2022-06-13T08:22:14Z",
             "trafficForwardingType": "m365",
-            "priority": "0",
+            "priority": 0,
             "associations" : [
                 {
                  "@odata.type": "microsoft.graph.networkAccess.AssociatedBranch",
