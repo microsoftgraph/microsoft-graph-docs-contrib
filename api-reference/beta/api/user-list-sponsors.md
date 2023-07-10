@@ -1,6 +1,6 @@
 ---
 title: "List sponsors"
-description: "Get user's sponsors."
+description: "Get a user's sponsors."
 ms.localizationpriority: medium
 author: "sadia353"
 ms.prod: "users"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get user's sponsors. Sponsors are users and groups that are responsible for this guest user's privileges in the tenant and for keeping the guest user's information and access up to date.
+Get a user's sponsors. Sponsors are users and groups that are responsible for this guest user's privileges in the tenant and for keeping the guest user's information and access up to date.
 
 ## Permissions
 

@@ -141,9 +141,9 @@ This resource supports:
 | **Schema extensions** |||
 | [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom typed data to a resource. |
 | **Sponsors** |||
-| [Assign sponsors](../api/user-post-sponsors.md) | None | Assign a user or group as this user's sponsor. |
+| [Assign sponsors](../api/user-post-sponsors.md) | None | Assign a user a sponsor. |
 | [List sponsors](../api/user-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups who are this user's sponsors. |
-| [Remove sponsors](../api/user-delete-sponsors.md) | None | Remove a user or group as the sponsor of this user. |
+| [Remove sponsors](../api/user-delete-sponsors.md) | None | Remove a user's sponsor. |
 | **Teamwork** |||
 |[List apps installed for user](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | Lists apps installed in the personal scope of a user.|
 |[Get the installed app for user](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |

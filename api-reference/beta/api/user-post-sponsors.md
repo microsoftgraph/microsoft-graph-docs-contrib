@@ -1,6 +1,6 @@
 ---
 title: "Assign sponsors"
-description: "Assign a user or group as the user's sponsor."
+description: "Assign a user a sponsor."
 author: "sadia353"
 ms.localizationpriority: medium
 ms.prod: "users"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign a user or group as the user's sponsor. Sponsors are users and groups that are responsible for this guest user's privileges in the tenant and for keeping the guest user's information and access up to date.
+Assign a user a sponsor. Sponsors are users and groups that are responsible for this guest user's privileges in the tenant and for keeping the guest user's information and access up to date.
 
 ## Permissions
 
