@@ -1,5 +1,5 @@
 ---
-title: "teamsAppInstallation in team: upgrade"
+title: "teamsAppInstallation in a team: upgrade"
 description: "Upgrade an app installation in a team"
 author: "akjo"
 ms.localizationpriority: medium
