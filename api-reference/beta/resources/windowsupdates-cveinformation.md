@@ -1,6 +1,6 @@
 ---
-title: "qualityUpdateCatalogEntry resource type"
-description: "Represents metadata for a Windows 10 quality update that you can approve for deployment."
+title: "cveInformation resource type"
+description: "Represents the number and URL of a CVE associated with a Quality Update."
 author: "angiechen22"
 ms.localizationpriority: medium
 ms.prod: "w10"

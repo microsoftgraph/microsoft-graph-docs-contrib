@@ -1,5 +1,5 @@
 ---
-title: "qualityUpdateCatalogEntry resource type"
+title: "knowledgeBaseArticle resource type"
 description: "Represents a knowledge base article."
 author: "angiechen22"
 ms.localizationpriority: medium
