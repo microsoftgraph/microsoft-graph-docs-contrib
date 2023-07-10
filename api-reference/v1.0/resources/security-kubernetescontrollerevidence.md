@@ -1,6 +1,6 @@
 ---
 title: "kubernetesControllerEvidence resource type"
-description: "Represents Kubernetes controller base entity."
+description: "Represents a base entity type for a Kubernetes controller."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents Kubernetes controller base entity.
+Represents a base entity type for a Kubernetes controller.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
@@ -22,7 +22,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [alertEvidence](../resources/security-alertevidence.md). |
 |name|String|The controller name.|
 |namespace|[microsoft.graph.security.kubernetesNamespaceEvidence](./security-kubernetesnamespaceevidence.md)|The service account namespace.|
-|labels|microsoft.graph.dictionary|The pod labels.|
+|labels|microsoft.graph.dictionary|The labels for the Kubernetes pod.|
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 |remediationStatusDetails|String|Details about the remediation status. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 |roles|[microsoft.graph.security.evidenceRole](../resources/security-alertevidence.md#evidencerole-values) collection|One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role `Attacker`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|

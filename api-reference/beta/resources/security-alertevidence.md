@@ -95,7 +95,7 @@ This alert evidence base type and its derived evidence types provide a means to 
 | Member                     | Description                                       |
 | :--------------------------| :------------------------------------------------ |
 | unknown                    | No verdict was determined for the evidence.|
-| suspicious                 | |
+| suspicious                 | Recommended remediation actions awaiting approval.|
 | malicious                  | The evidence was determined to be malicious. |
 | noThreatsFound             | No threat was detected - the evidence is benign.  |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Do not use.  |

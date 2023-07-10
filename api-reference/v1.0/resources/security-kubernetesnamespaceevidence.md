@@ -21,7 +21,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |:---|:---|:---|
 |cluster|[microsoft.graph.security.kubernetesClusterEvidence](./security-kubernetesclusterevidence.md)|The namespace cluster.|
 |createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [alertEvidence](../resources/security-alertevidence.md). |
-|labels|microsoft.graph.dictionary|The pod labels.|
+|labels|microsoft.graph.dictionary|The labels for the Kubernetes pod.|
 |name|String|The namespace name.|
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 |remediationStatusDetails|String|Details about the remediation status. Inherited from [alertEvidence](../resources/security-alertevidence.md).|

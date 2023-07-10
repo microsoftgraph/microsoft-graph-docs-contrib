@@ -1,6 +1,6 @@
 ---
 title: "kubernetesPodEvidence resource type"
-description: "Represents Pod entity."
+description: "Represents a Kubernetes pod entity."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents Pod entity.
+Represents a Kubernetes pod entity.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 

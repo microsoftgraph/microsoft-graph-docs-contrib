@@ -37,8 +37,8 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |:-------------------| :------------------------------------------------ |
 | unknown            | Unknown platform, for forward compatibility.    |
 | aks                | Azure Kubernetes Service.                       |
-| eks                | Amazon AWS Kubernetes.                    |
-| gke                | Google cloud Kubernetes.                        |
+| eks                | Amazon Elastic Kubernetes Service.              |
+| gke                | Google Kubernetes Engine.                       |
 | arc                | Azure ARC connected cluster.                    |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
