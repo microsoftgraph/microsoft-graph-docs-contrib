@@ -42,7 +42,7 @@ GET /sites/getAllSites
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "site_getallsites"
+  "name": "site_getallsites1"
 }
 -->
 
@@ -133,7 +133,7 @@ This response includes the first page of enumerated sites, and the @odata.nextLi
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "site_getallsites"
+  "name": "site_getallsites2"
 }
 -->
 
