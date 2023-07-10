@@ -78,7 +78,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/2eb1fcec20c547e5a1e8b04464286425/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7
+PATCH https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7
 Content-type: application/json
 
 {
