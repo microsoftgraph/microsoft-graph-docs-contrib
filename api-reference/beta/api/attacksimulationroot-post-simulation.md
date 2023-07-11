@@ -69,21 +69,17 @@ If successful, this method returns a `202 Accepted` response code and a tracking
 
 ## Examples
 
-
 ### Request
-The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_simulation"
+  "name": "create_simulations"
 }
 -->
 
 ```http
-
 POST https://graph.microsoft.com/beta/security/attackSimulation/simulations
-
 Content-type: application/json
 
 {
