@@ -85,7 +85,7 @@ CacheService.config.users.invalidationPeriod = 1800000;
 
 The cache is automatically cleared when the user signs out. It can also be cleared manually.
 
-To clear all the stores in the cache for the currently signed in user, use the `clearCacheById()` method of the `CacheService` class by passing the ID of the user's cache. To retrieve the user's cache ID, call the `getCacheId` method from the `Providers` class.
+To clear all the stores in the cache for the currently signed-in user, use the `clearCacheById()` method of the `CacheService` class, providing the user's cache ID. To retrieve the user's cache ID, call the `getCacheId` method from the `Providers` class.
 
 ```JavaScript
 import { Providers } from '@microsoft/mgt';
