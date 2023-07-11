@@ -1,0 +1,91 @@
+---
+title: "synchronization: acquireAccessToken"
+description: "Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application"
+author: "ArvindHarinder1"
+ms.localizationpriority: medium
+ms.prod: "applications"
+doc_type: apiPageType
+---
+
+# synchronization: acquireAccessToken
+Namespace: microsoft.graph
+
+Acquire an OAuth access token to authorize the Azure AD provisioning service to provision users into an application.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Synchronization.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All|
+
+[!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /applications/{applicationsId}/synchronization/acquireAccessToken
+POST /servicePrincipals/{servicePrincipalsId}/synchronization/acquireAccessToken
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-synchronizationsecretkeystringvaluepair.md) collection|Represents a single secret value.|
+
+
+
+## Response
+
+If successful, this action returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "synchronization_acquireaccesstoken"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/applications/{applicationsId}/synchronization/acquireAccessToken
+Content-Type: application/json
+
+{
+  "credentials": [
+    {
+      "@odata.type": "microsoft.graph.synchronizationSecretKeyStringValuePair"
+    }
+  ]
+}
+```
+
+
+### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+
