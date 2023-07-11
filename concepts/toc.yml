@@ -1115,7 +1115,7 @@ items:
           - name: Upgrading to v3
             href: toolkit/upgrade.md
       - name: Receive Microsoft Graph activity logs
-        href: microsoft-graph-activity-logs.md
+        href: microsoft-graph-activity-logs-overview.md
       - name: Configure Connected Services
         displayName: Configure Connected Services in Visual Studio
         href: office-365-connected-services.md

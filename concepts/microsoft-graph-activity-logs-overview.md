@@ -13,7 +13,7 @@ ms.date: 07/11/2023
 
 **Microsoft Graph activity logs** are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant. The logs are stored in Azure Monitor Logs and tenant administrators can analyze them through the Log Analytics interface. Tenant admins can also configure exports to destinations like Azure Storage for long-term storage or use Azure Event Hubs to export to external SIEM tools for alerting, analysis, or archival.
 
-Only logs for API requests made from line of business applications and API clients are available but not API requests made by Microsoft applications like Outlook, Teams, or the Entra portal.
+Only logs for API requests made from line of business applications, API clients, and SDKs are available but not API requests made by Microsoft applications like Outlook, Teams, or the Entra portal.
 
 ## Prerequisites
 
