@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Represents a pair of parent and child hosts where the child host was able to be reached via the parent host. For example, if contoso.com redirects to microsoft.com, then contoso.com would be the parent-host and microsoft.com the child-host
 
 ## Methods
