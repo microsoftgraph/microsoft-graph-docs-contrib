@@ -15143,8 +15143,6 @@ items:
         items:
         - name: Overview
           href: resources/azure-ad-auditlog-overview.md
-        - name: Azure AD SLA attainment
-          href: resources/directoryaudit.md
         - name: Directory audit
           href: resources/directoryaudit.md
           items:
@@ -15168,6 +15166,16 @@ items:
           items:
           - name: List provisioning
             href: api/provisioningobjectsummary-list.md
+      - name: Azure AD SLA attainment
+        items:
+        - name: azureADAuthentication
+          href: resources/azureadauthentication.md
+        - name: serviceLevelAgreementAttainment
+          href: resources/servicelevelagreementattainment .md
+        - name: serviceLevelAgreementRoot
+          href: resources/servicelevelagreementroot.md
+        - name: Get azureADAuthentication
+          href: api/azureadauthentication-get.md
       - name: Identity and access reports
         items:
         - name: Overview
