@@ -25,6 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | AttackSimulation.ReadWrite.All              |
 
 ## HTTP request
+
 <!-- {
   "blockType": "ignored"
 }
@@ -63,6 +64,7 @@ The following table shows the properties that are required when you create the s
 |launchDateTime|DateTimeOffset|Date and time of the launch/start of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
 |status|[simulationStatus](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
 |trainingSetting|[trainingSetting](../resources/trainingsetting.md)|Training setting detail.|
+
 ## Response
 
 If successful, this method returns a `202 Accepted` response code and a tracking header named `location` in the response.
