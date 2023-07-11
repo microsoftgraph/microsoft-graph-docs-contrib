@@ -22,15 +22,12 @@ preview_text.content = 'Internal spending team has a pending finance approval re
 
 
 request_body.preview_text = preview_text
-recipient = TeamworkNotificationRecipient()
+recipient = ChannelMembersNotificationRecipient()
 recipient.@odata_type = 'microsoft.graph.channelMembersNotificationRecipient'
 
-additional_data = [
-'team_id' => 'e8bece96-d393-4b9b-b8da-69cedef1a7e7', 
-'channel_id' => '19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2', 
-];
-recipient.additional_data(additional_data)
+recipient.team_id = 'e8bece96-d393-4b9b-b8da-69cedef1a7e7'
 
+recipient.channel_id = '19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2'
 
 
 request_body.recipient = recipient

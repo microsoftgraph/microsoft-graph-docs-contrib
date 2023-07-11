@@ -12,31 +12,17 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.CustomTaskE
 {
 	DisplayName = "Grant manager access to mailbox and OneDrive",
 	Description = "Grant manager access to mailbox and OneDrive",
-	EndpointConfiguration = new CustomExtensionEndpointConfiguration
+	EndpointConfiguration = new LogicAppTriggerEndpointConfiguration
 	{
 		OdataType = "#microsoft.graph.logicAppTriggerEndpointConfiguration",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"subscriptionId" , "c500b67c-e9b7-4ad2-a90d-77d41385ae55"
-			},
-			{
-				"resourceGroupName" , "RG-LCM"
-			},
-			{
-				"logicAppWorkflowName" , "ManagerAccess"
-			},
-		},
+		SubscriptionId = "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
+		ResourceGroupName = "RG-LCM",
+		LogicAppWorkflowName = "ManagerAccess",
 	},
-	AuthenticationConfiguration = new CustomExtensionAuthenticationConfiguration
+	AuthenticationConfiguration = new AzureAdTokenAuthentication
 	{
 		OdataType = "#microsoft.graph.azureAdTokenAuthentication",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"resourceId" , "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
-			},
-		},
+		ResourceId = "542dc01a-0b5d-4edc-b3f9-5cfe6393f557",
 	},
 	ClientConfiguration = new CustomExtensionClientConfiguration
 	{
@@ -49,7 +35,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.CustomTaskE
 			},
 		},
 	},
-	CallbackConfiguration = new CustomExtensionCallbackConfiguration
+	CallbackConfiguration = new Microsoft.Graph.Beta.Models.IdentityGovernance.CustomTaskExtensionCallbackConfiguration
 	{
 		OdataType = "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
 		TimeoutDuration = TimeSpan.Parse("PT20M"),

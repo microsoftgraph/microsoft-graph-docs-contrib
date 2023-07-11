@@ -1,6 +1,6 @@
 ---
 title: "emailFileAssessmentRequest resource type"
-description: "Used to create and retrieve an email file threat assessment."
+description: "Represents a resource that creates and retrieves an email file threat assessment."
 ms.localizationpriority: medium
 author: "hafen-ms"
 ms.prod: "security"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to create and retrieve an email file threat assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
+Represents a resource that creates and retrieves an email file threat assessment. The email file can be an .eml file type.
 
-The email file can be an .eml file type.
+Inherits from [threatAssessmentRequest](threatassessmentrequest.md).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailFileAssessmentRequest.md) | Create a new email file assessment request by posting an **emailFileAssessmentRequest** object. |
+| [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Create a new email file assessment request by posting an **emailFileAssessmentRequest** object. |
 | [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Read the properties and relationships of an **emailFileAssessmentRequest** object. |
 
 ## Properties

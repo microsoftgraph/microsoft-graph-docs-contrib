@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssearch.NewBookmark()
@@ -26,12 +26,10 @@ keywords := graphmodelssearch.NewAnswerKeyword()
 keywords := []string {
 	"Contoso",
 	"install",
-
 }
 keywords.SetKeywords(keywords)
 reservedKeywords := []string {
 	"Contoso",
-
 }
 keywords.SetReservedKeywords(reservedKeywords)
 matchSimilarKeywords := true
