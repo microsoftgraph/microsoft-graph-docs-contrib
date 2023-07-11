@@ -13,10 +13,10 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewCreateForwardPostRequestBody()
+requestBody := graphusers.NewItemCreateForwardPostRequestBody()
 message := graphmodels.NewMessage()
 isDeliveryReceiptRequested := true
 message.SetIsDeliveryReceiptRequested(&isDeliveryReceiptRequested) 
@@ -32,7 +32,6 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 message.SetToRecipients(toRecipients)
 requestBody.SetMessage(message)

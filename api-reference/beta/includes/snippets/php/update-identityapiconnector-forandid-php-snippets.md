@@ -14,15 +14,12 @@ $requestBody->setDisplayName('New Test API');
 
 $requestBody->setTargetUrl('https://otherapi.com/api/endpoint');
 
-$authenticationConfiguration = new ApiAuthenticationConfigurationBase();
+$authenticationConfiguration = new BasicAuthentication();
 $authenticationConfiguration->set@odatatype('microsoft.graph.basicAuthentication');
 
-$additionalData = [
-		'username' => '<NEW_USERNAME>', 
-		'password' => '<NEW_PASSWORD>', 
-];
-$authenticationConfiguration->setAdditionalData($additionalData);
+$authenticationConfiguration->setUsername('<NEW_USERNAME>');
 
+$authenticationConfiguration->setPassword('<NEW_PASSWORD>');
 
 
 $requestBody->setAuthenticationConfiguration($authenticationConfiguration);

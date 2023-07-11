@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewGroup()
@@ -22,7 +22,6 @@ displayName := "Library Assist"
 requestBody.SetDisplayName(&displayName) 
 groupTypes := []string {
 	"Unified",
-
 }
 requestBody.SetGroupTypes(groupTypes)
 mailEnabled := true

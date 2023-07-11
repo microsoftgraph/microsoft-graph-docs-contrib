@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AuthenticationEventsFlow
+var requestBody = new ExternalUsersSelfServiceSignUpEventsFlow
 {
 	OdataType = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
 	DisplayName = "Woodgrove Drive User Flow",
@@ -25,86 +25,77 @@ var requestBody = new AuthenticationEventsFlow
 			},
 		},
 	},
-	AdditionalData = new Dictionary<string, object>
+	OnAuthenticationMethodLoadStart = new OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp
 	{
+		OdataType = "#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp",
+		IdentityProviders = new List<IdentityProviderBase>
 		{
-			"onAuthenticationMethodLoadStart" , new 
+			new IdentityProviderBase
 			{
-				OdataType = "#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp",
-				IdentityProviders = new List<>
-				{
-					new 
-					{
-						Id = "EmailPassword-OAUTH",
-					},
-				},
-			}
+				Id = "EmailPassword-OAUTH",
+			},
 		},
+	},
+	OnInteractiveAuthFlowStart = new OnInteractiveAuthFlowStartExternalUsersSelfServiceSignUp
+	{
+		OdataType = "#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp",
+		IsSignUpAllowed = true,
+	},
+	OnAttributeCollection = new OnAttributeCollectionExternalUsersSelfServiceSignUp
+	{
+		OdataType = "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
+		Attributes = new List<IdentityUserFlowAttribute>
 		{
-			"onInteractiveAuthFlowStart" , new 
+			new IdentityUserFlowAttribute
 			{
-				OdataType = "#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp",
-				IsSignUpAllowed = true,
-			}
+				Id = "email",
+				DisplayName = "Email Address",
+				Description = "Email address of the user",
+				UserFlowAttributeType = IdentityUserFlowAttributeType.BuiltIn,
+				DataType = IdentityUserFlowAttributeDataType.String,
+			},
+			new IdentityUserFlowAttribute
+			{
+				Id = "displayName",
+				DisplayName = "Display Name",
+				Description = "Display Name of the User.",
+				UserFlowAttributeType = IdentityUserFlowAttributeType.BuiltIn,
+				DataType = IdentityUserFlowAttributeDataType.String,
+			},
 		},
+		AttributeCollectionPage = new AuthenticationAttributeCollectionPage
 		{
-			"onAttributeCollection" , new 
+			Views = new List<AuthenticationAttributeCollectionPageViewConfiguration>
 			{
-				OdataType = "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-				Attributes = new List<>
+				new AuthenticationAttributeCollectionPageViewConfiguration
 				{
-					new 
+					Inputs = new List<AuthenticationAttributeCollectionInputConfiguration>
 					{
-						Id = "email",
-						DisplayName = "Email Address",
-						Description = "Email address of the user",
-						UserFlowAttributeType = "builtIn",
-						DataType = "string",
-					},
-					new 
-					{
-						Id = "displayName",
-						DisplayName = "Display Name",
-						Description = "Display Name of the User.",
-						UserFlowAttributeType = "builtIn",
-						DataType = "string",
-					},
-				},
-				AttributeCollectionPage = new 
-				{
-					Views = new List<>
-					{
-						new 
+						new AuthenticationAttributeCollectionInputConfiguration
 						{
-							Inputs = new List<>
-							{
-								new 
-								{
-									Attribute = "email",
-									Label = "Email Address",
-									InputType = "Text",
-									Hidden = true,
-									Editable = false,
-									WriteToDirectory = true,
-									Required = true,
-									ValidationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
-								},
-								new 
-								{
-									Attribute = "displayName",
-									Label = "Display Name",
-									InputType = "text",
-									Hidden = false,
-									Editable = true,
-									WriteToDirectory = true,
-									Required = false,
-									ValidationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
-								},
-							},
+							Attribute = "email",
+							Label = "Email Address",
+							InputType = AuthenticationAttributeCollectionInputType.Text,
+							Hidden = true,
+							Editable = false,
+							WriteToDirectory = true,
+							Required = true,
+							ValidationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
+						},
+						new AuthenticationAttributeCollectionInputConfiguration
+						{
+							Attribute = "displayName",
+							Label = "Display Name",
+							InputType = AuthenticationAttributeCollectionInputType.Text,
+							Hidden = false,
+							Editable = true,
+							WriteToDirectory = true,
+							Required = false,
+							ValidationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
 						},
 					},
 				},
-			}
+			},
 		},
 	},
 };

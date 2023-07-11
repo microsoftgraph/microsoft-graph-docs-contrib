@@ -12,8 +12,6 @@ ms.date: 05/25/2023
 
 # Get access without a user
 
-*This article is part of a series on authentication and authorization for Microsoft Graph through the Microsoft identity platform. The preceding article is [Register an application with the Microsoft identity platform](auth-register-app-v2.md).*
-
 To call Microsoft Graph, an app must obtain an access token from the Microsoft identity platform. This access token includes information about whether the app is authorized to access Microsoft Graph on behalf of a signed-in user or with its own identity. This article provides guidance on how an app can [access Microsoft Graph with its own identity](./auth/auth-concepts.md#access-scenarios), also called *app-only access*.
 
 This article details the raw HTTP requests involved for an app to call Microsoft Graph with its own identity using a popular flow called the [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). Alternatively, you can avoid writing raw HTTP requests and use a Microsoft-built or supported authentication library that handles many of these details for you and helps you to get access tokens and call Microsoft Graph. For more information, see [Use the Microsoft Authentication Library (MSAL)](#use-the-microsoft-authentication-library-msal).
@@ -45,7 +43,7 @@ Before the app can use the Microsoft identity platform endpoint or call Microsof
 
 From the app registration, save the following values:
 
-- The application ID (object ID) assigned by the app registration portal.
+- The application ID (client ID) assigned by the app registration portal.
 - A client secret (application password), a certificate, or a federated identity credential.
 - A redirect URI for the app to receive token responses from Azure AD.
 - A redirect URI for the service to receive admin consent responses if the app implements functionality to request administrator consent.
@@ -88,12 +86,12 @@ Administrators can grant the permissions your app needs at the [Azure portal](ht
 GET https://login.microsoftonline.com/{tenant}/adminconsent
 ?client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 &state=12345
-&redirect_uri=https://localhost/myapp/permissions
+&redirect_uri=https://localhost/myapp/permissions  HTTP/1.1
 ```
 
 # [cURL](#tab/curl)
 ```bash
-curl --location --request POST 'https://login.microsoftonline.com/{tenant}/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&redirect_id=https%3A%2F%2Flocalhost%2Fmyapp%2Fpermissions&state=12345'
+curl --location --request GET 'https://login.microsoftonline.com/{tenant}/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&redirect_id=https%3A%2F%2Flocalhost%2Fmyapp%2Fpermissions&state=12345'
 ```
 
 ---
@@ -160,7 +158,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
+curl --location --request POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'client_id=535fb089-9ff3-47b6-9bfb-4f1264799865' \
 --data-urlencode 'scope=https://graph.microsoft.com/.default' \
@@ -204,14 +202,14 @@ After you have an access token, the app uses it to call Microsoft Graph by attac
 
 # [HTTP](#tab/http)
 ```http
-GET https://graph.microsoft.com/v1.0/users
+GET https://graph.microsoft.com/v1.0/users  HTTP/1.1
 Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw
 Host: graph.microsoft.com
 ```
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/users' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users' \
 --header 'Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw' \
 --data ''
 ```

@@ -20,8 +20,9 @@ Inherits from [entity](entity.md).
 None.
 
 ## Properties
-
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Unique identifier for the **authentication**.|
 
 ## Relationships
 |Relationship|Type|Description|

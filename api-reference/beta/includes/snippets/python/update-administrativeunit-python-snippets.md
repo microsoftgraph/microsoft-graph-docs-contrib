@@ -8,6 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 request_body = AdministrativeUnit()
+request_body.display_name = 'Executive Division'
+
 additional_data = [
 'membership_type' => 'Dynamic', 
 'membership_rule' => '(user.country -eq \"United States\")', 

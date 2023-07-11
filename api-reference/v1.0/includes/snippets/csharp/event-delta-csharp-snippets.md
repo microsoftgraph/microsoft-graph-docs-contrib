@@ -10,8 +10,8 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.Me.CalendarView.Delta.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Startdatetime = "{start_datetime}";
-	requestConfiguration.QueryParameters.Enddatetime = "{end_datetime}";
+	requestConfiguration.QueryParameters.StartDateTime = "{start_datetime}";
+	requestConfiguration.QueryParameters.EndDateTime = "{end_datetime}";
 	requestConfiguration.Headers.Add("Prefer", "odata.maxpagesize=2");
 });
 

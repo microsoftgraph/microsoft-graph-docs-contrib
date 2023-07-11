@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -75,7 +75,6 @@ metadata := []graphmodelssecurity.KeyValuePairable {
 	keyValuePair4,
 	keyValuePair5,
 	keyValuePair6,
-
 }
 contentInfo.SetMetadata(metadata)
 requestBody.SetContentInfo(contentInfo)
