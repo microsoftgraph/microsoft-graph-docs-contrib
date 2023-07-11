@@ -68,8 +68,9 @@ The following data relating to API requests is available for Microsoft Graph act
 ## Sample audit scenarios for Microsoft Graph activity logs
 
 - To get full visibility into the transactions made by line of business apps and other API clients that you have consented to in the tenant.
-- To analyze app behavior that led to throttling.
-- To investigate requests that a user or app made against Microsoft Graph API.
+- To analyze client app behavior that led to throttling.
+- To investigate requests that a compromised user or app made in yout tenant.
+- Query for anomalous API request behavior by a client application or user​.
 - To discover the actual requests made by a user or app and correlate the information with sign in or directory audit logs.
 - To discover the permissions that a calling app was granted when they initiated a request.
 - To trigger alerts in Azure Monitor Log Analytics based on signals and patterns in the logs.
@@ -152,7 +153,7 @@ MicrosoftGraphActivity
 
 ## Join Microsoft Graph activity logs and other audit logs
 
-In the Logs Analytics interface, you can correlate the Microsoft Graph activity logs and other logs like sign-in logs, Azure AD audit logs. For example, you can join the Microsoft Graph activity logs with Azure AD audit logs to identify the user who made the request. The following query joins the Microsoft Graph activity logs with Azure AD audit logs to identify the user who made the request.
+In the Logs Analytics interface, you can correlate the Microsoft Graph activity logs and other logs like sign-in logs and Azure AD activity reports. For example, you can join the Microsoft Graph activity logs with Azure AD activity reports to identify the user who made the request. The following query joins the Microsoft Graph activity logs with Azure AD audit logs to identify the user who made the request.
 
 
 ## Limitations
