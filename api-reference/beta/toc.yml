@@ -15168,13 +15168,13 @@ items:
             href: api/provisioningobjectsummary-list.md
       - name: Azure AD SLA attainment
         items:
-        - name: azureADAuthentication
+        - name: Azure AD Authentication
           href: resources/azureadauthentication.md
-        - name: serviceLevelAgreementAttainment
-          href: resources/servicelevelagreementattainment .md
-        - name: serviceLevelAgreementRoot
+        - name: Service Level Agreement attainment
+          href: resources/servicelevelagreementattainment.md
+        - name: Service Level Agreement
           href: resources/servicelevelagreementroot.md
-        - name: Get azureADAuthentication
+        - name: Get Azure AD Authentication
           href: api/azureadauthentication-get.md
       - name: Identity and access reports
         items:
