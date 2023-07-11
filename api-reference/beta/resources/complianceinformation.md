@@ -7,7 +7,7 @@ ms.prod: "security"
 author: "preetikr"
 ---
 
-#  complianceInformation resource type
+# complianceInformation resource type
 
 Namespace: microsoft.graph
 
