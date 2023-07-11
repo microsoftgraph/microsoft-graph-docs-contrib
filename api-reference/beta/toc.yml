@@ -16102,7 +16102,7 @@ items:
             - name: List cookies
               href: api/security-host-list-cookies.md
             - name: List Parent Host Pairs
-              href: api/security-host-list-parenthostpairs
+              href: api/security-host-list-parenthostpairs.md
             - name: List passive DNS
               href: api/security-host-list-passivedns.md
             - name: List passive DNS reverse
@@ -16131,7 +16131,7 @@ items:
             href: resources/security-hostpair.md
           - name: Get
             href: api/security-hostpair-get.md
-          - name: List Host Pairs
+          - name: List
             href: api/security-host-list-hostpairs.md
           - name: List Parent Host Pairs
             href: api/security-host-list-parenthostpairs.md
