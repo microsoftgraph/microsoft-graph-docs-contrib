@@ -46,8 +46,15 @@ The [Get chat](/graph/api/chat-get) API doesn't support chats with meetings asso
 
 APIs associated with [meeting transcripts](/graph/api/resources/calltranscript) are not supported in the Microsoft Graph for US Government L4 national cloud. This includes the following APIs:
 
-- [List transcripts](/graph/api/onlinemeeting-list-transcripts) 
-- [Get transcript](/graph/api/calltranscript-get) 
+- [List transcripts](/graph/api/onlinemeeting-list-transcripts)
+- [Get transcript](/graph/api/calltranscript-get)
+
+### Meeting recording APIs are not supported
+
+APIs associated with [meeting recordings](/graph/api/resources/callrecording) are not supported in the Microsoft Graph for US Government L4 national cloud. This includes the following APIs:
+
+- [List recordings](/graph/api/onlinemeeting-list-recordings)
+- [Get recording](/graph/api/callrecording-get)
 
 ### Soft delete a message is not supported
 
