@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Content recentPrinterShares = graphClient.me().print().recentPrinterShares()
+PrinterShareCollectionPage recentPrinterShares = graphClient.me().recentPrinterShares()
 	.buildRequest()
 	.get();
 

@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssecurity.NewRetentionLabel()
@@ -39,6 +39,16 @@ labelToBeApplied := "String"
 requestBody.SetLabelToBeApplied(&labelToBeApplied) 
 defaultRecordBehavior := graphmodels.STRING_DEFAULTRECORDBEHAVIOR 
 requestBody.SetDefaultRecordBehavior(&defaultRecordBehavior) 
+descriptors := graphmodelssecurity.NewFilePlanDescriptor()
+additionalData := map[string]interface{}{
+	"odataBind" : "https://graph.microsoft.com/beta/security/labels/authorities('fie3f4fc-b966-4c40-94de-fb8a383658e4')", 
+	"odataBind" : "https://graph.microsoft.com/beta/security/labels/categories('0bjk8-b966-4c40-94de-fb8a383658e4')", 
+	"odataBind" : "https://graph.microsoft.com/beta/security/labels/citations('0e23f4fc-b966-4c40-94de-fb8a383658e4')", 
+	"odataBind" : "https://graph.microsoft.com/beta/security/labels/departments('p99ef4fc-b966-4c40-94de-fb8a383658e4')", 
+	"odataBind" : "https://graph.microsoft.com/beta/security/labels/filePlanReferences('e095f4fc-b966-4c40-94de-fb8a383658e4')", 
+}
+descriptors.SetAdditionalData(additionalData)
+requestBody.SetDescriptors(descriptors)
 
 result, err := graphClient.Security().Labels().RetentionLabels().Post(context.Background(), requestBody, nil)
 

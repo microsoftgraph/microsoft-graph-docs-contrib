@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	category = "joiner"
 	description = "Configure new hire tasks for onboarding employees on their first day"
 	displayName = "Australia Onboard new hire employee"
 	isEnabled = $true
-	isSchedulingEnabled = $false
+	isSchedulingEnabled = $true
 	executionConditions = @{
 		"@odata.type" = "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions"
 		scope = @{
@@ -46,6 +46,6 @@ $params = @{
 	)
 }
 
-New-MgIdentityGovernanceLifecycleWorkflow -BodyParameter $params
+New-MgBetaIdentityGovernanceLifecycleWorkflow -BodyParameter $params
 
 ```
