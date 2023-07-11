@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphsearch.NewQueryPostRequestBody()
@@ -22,8 +22,7 @@ requestBody := graphsearch.NewQueryPostRequestBody()
 searchRequest := graphmodels.NewSearchRequest()
 entityTypes := []graphmodels.EntityTypeable {
 	entityType := graphmodels.CHATMESSAGE_ENTITYTYPE 
-	searchRequest.SetEntityType(&entityType) 
-
+	searchRequest.SetEntityType(&entityType)
 }
 searchRequest.SetEntityTypes(entityTypes)
 query := graphmodels.NewSearchQuery()
@@ -35,9 +34,8 @@ searchRequest.SetFrom(&from)
 size := int32(25)
 searchRequest.SetSize(&size) 
 
-requests := []graphsearch.SearchRequestable {
+requests := []graphmodels.SearchRequestable {
 	searchRequest,
-
 }
 requestBody.SetRequests(requests)
 

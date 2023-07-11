@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewChatMessage()
@@ -51,7 +51,6 @@ chatMessageHostedContent.SetAdditionalData(additionalData)
 
 hostedContents := []graphmodels.ChatMessageHostedContentable {
 	chatMessageHostedContent,
-
 }
 requestBody.SetHostedContents(hostedContents)
 

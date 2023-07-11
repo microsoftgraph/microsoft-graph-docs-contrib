@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	extensionAttributes = @{
@@ -12,6 +12,6 @@ $params = @{
 	}
 }
 
-Update-MgDevice -DeviceId $deviceId -BodyParameter $params
+Update-MgBetaDevice -DeviceId $deviceId -BodyParameter $params
 
 ```

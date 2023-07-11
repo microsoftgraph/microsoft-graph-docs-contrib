@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Education
+Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
 	description = "Health Level 1"
@@ -16,6 +16,6 @@ $params = @{
 	mailNickname = "fineartschool.net"
 }
 
-New-MgEducationClass -BodyParameter $params
+New-MgBetaEducationClass -BodyParameter $params
 
 ```

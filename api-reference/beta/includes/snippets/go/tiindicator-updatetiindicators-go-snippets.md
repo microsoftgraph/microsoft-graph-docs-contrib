@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphsecurity.NewUpdateTiIndicatorsPostRequestBody()
@@ -30,10 +30,9 @@ tiIndicator1.SetId(&id)
 additionalInformation := "test again"
 tiIndicator1.SetAdditionalInformation(&additionalInformation) 
 
-value := []graphsecurity.Objectable {
+value := []graphmodels.tiIndicatorable {
 	tiIndicator,
 	tiIndicator1,
-
 }
 requestBody.SetValue(value)
 

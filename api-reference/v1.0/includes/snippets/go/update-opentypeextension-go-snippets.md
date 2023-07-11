@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewExtension()
@@ -25,7 +25,6 @@ additionalData := map[string]interface{}{
 		"Employees only",
 		"Add spouse or guest",
 		"Add family",
-
 	}
 }
 requestBody.SetAdditionalData(additionalData)

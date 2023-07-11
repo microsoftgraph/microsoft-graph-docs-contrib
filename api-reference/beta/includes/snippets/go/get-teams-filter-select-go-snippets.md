@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
 	  //other-imports
 )
 
@@ -18,15 +18,15 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "displayName eq 'A Contoso Team'"
 
-requestParameters := &graphconfig.TeamsRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"id","description"},
 }
-configuration := &graphconfig.TeamsRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-graphClient.Teams().Get(context.Background(), configuration)
+result, err := graphClient.Teams().Get(context.Background(), configuration)
 
 
 ```

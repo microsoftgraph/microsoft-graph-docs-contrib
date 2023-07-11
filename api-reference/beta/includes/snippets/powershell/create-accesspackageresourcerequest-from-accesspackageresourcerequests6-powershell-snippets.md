@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	catalogId = "26ac0c0a-08bc-4a7b-a313-839f58044ba5"
@@ -39,6 +39,6 @@ $params = @{
 	}
 }
 
-New-MgEntitlementManagementAccessPackageResourceRequest -BodyParameter $params
+New-MgBetaEntitlementManagementAccessPackageResourceRequest -BodyParameter $params
 
 ```

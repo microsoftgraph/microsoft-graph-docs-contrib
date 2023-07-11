@@ -9,18 +9,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new AttachmentBase();
+$requestBody = new TaskFileAttachment();
 $requestBody->set@odatatype('#microsoft.graph.taskFileAttachment');
 
 $requestBody->setName('smile');
 
+$requestBody->setContentBytes(base64_decode('a0b1c76de9f7='));
+
 $requestBody->setContentType('image/gif');
-
-$additionalData = [
-		'contentBytes' => 'a0b1c76de9f7=', 
-];
-$requestBody->setAdditionalData($additionalData);
-
 
 
 
