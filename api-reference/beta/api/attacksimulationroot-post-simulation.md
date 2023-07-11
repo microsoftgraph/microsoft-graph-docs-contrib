@@ -69,10 +69,6 @@ If successful, this method returns a `202 Accepted` response code and a tracking
 
 ## Examples
 
-### Request
-
-The following is an example of a request.
-
 
 ### Request
 The following is an example of a request.
