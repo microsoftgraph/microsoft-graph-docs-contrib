@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of a security alert in Privileged Identity Management (PIM) for Azure AD roles. The alert information includes the related definition and configuration, and the related incidents in the tenant.
+Represents the details of a security alert in [Privileged Identity Management (PIM) for Azure AD roles](privilegedidentitymanagementv3-overview.md). The alert information includes the related alert [definition](unifiedrolemanagementalertdefinition.md), [configuration](unifiedrolemanagementalertconfiguration.md), and [incident](unifiedrolemanagementalertincident.md) collection in the tenant.
+
+For more information on the types of security alerts, see [Get security alerts for Azure AD roles](privilegedidentitymanagementv3-overview.md#get-security-alerts-for-azure-ad-roles).
 
 Inherits from [entity](../resources/entity.md).
 
