@@ -45,6 +45,7 @@ None.
 | security                          | [securityReportsRoot](../resources/securityreportsroot.md)                                        | Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.             |
 | servicePrincipalSignInActivities  | [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) collection       | Represents a collection of sign-in activities of service principals.                                                   |
 | userCredentialUsageDetails        | [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection               | Represents the self-service password reset (SSPR) usage for a given tenant.                                         |
+| sla                               | [serviceLevelAgreementRoot](../resources/servicelevelagreementroot.md)                            | A placeholder to allow for the desired URL path for SLA.                                                            |
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -33,8 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## Request headers
@@ -72,6 +70,10 @@ The following table shows the properties that are required when you create the [
 |supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |appUrl|String|Indicates iOS/iPadOS web clip app URL. Example: "https://www.contoso.com"|
 |useManagedBrowser|Boolean|Whether or not to use managed browser. When TRUE, the app will be required to be opened in Microsoft Edge. When FALSE, the app will not be required to be opened in Microsoft Edge. By default, this property is set to FALSE.|
+|fullScreenEnabled|Boolean|Whether or not to open the web clip as a full-screen web app. Defaults to false. If TRUE, opens the web clip as a full-screen web app. If FALSE, the web clip opens inside of another app, such as Safari or the app specified with targetApplicationBundleIdentifier.|
+|targetApplicationBundleIdentifier|String|Specifies the application bundle identifier which opens the URL. Available in iOS 14 and later.|
+|preComposedIconEnabled|Boolean|Whether or not the icon for the app is precomosed. Defaults to false. If TRUE, prevents SpringBoard from adding "shine" to the icon. If FALSE, SpringBoard can add "shine".|
+|ignoreManifestScope|Boolean|Whether or not a full screen web clip can navigate to an external web site without showing the Safari UI. Defaults to false. If FALSE, the Safari UI appears when navigating away. If TRUE, the Safari UI will not be shown.|
 
 
 
@@ -85,7 +87,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 846
+Content-length: 1029
 
 {
   "@odata.type": "#microsoft.graph.iosiPadOSWebClip",
@@ -113,7 +115,11 @@ Content-length: 846
   "supersedingAppCount": 3,
   "supersededAppCount": 2,
   "appUrl": "https://example.com/appUrl/",
-  "useManagedBrowser": true
+  "useManagedBrowser": true,
+  "fullScreenEnabled": true,
+  "targetApplicationBundleIdentifier": "Target Application Bundle Identifier value",
+  "preComposedIconEnabled": true,
+  "ignoreManifestScope": true
 }
 ```
 
@@ -122,7 +128,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1018
+Content-Length: 1201
 
 {
   "@odata.type": "#microsoft.graph.iosiPadOSWebClip",
@@ -153,6 +159,10 @@ Content-Length: 1018
   "supersedingAppCount": 3,
   "supersededAppCount": 2,
   "appUrl": "https://example.com/appUrl/",
-  "useManagedBrowser": true
+  "useManagedBrowser": true,
+  "fullScreenEnabled": true,
+  "targetApplicationBundleIdentifier": "Target Application Bundle Identifier value",
+  "preComposedIconEnabled": true,
+  "ignoreManifestScope": true
 }
 ```

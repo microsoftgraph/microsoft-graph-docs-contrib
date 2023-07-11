@@ -19,7 +19,7 @@ For details, see [Disposition of content](/microsoft-365/compliance/disposition)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create retentionLabel](../api/security-retentionlabel-post.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Create a new [retentionLabel](../resources/security-retentionlabel.md) object. |
+|[Create retentionLabel](../api/security-labelsroot-post-retentionlabel.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Create a new [retentionLabel](../resources/security-retentionlabel.md) object. |
 |[Update retentionLabel](../api/security-retentionlabel-update.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Update the [retentionLabel](../resources/security-retentionlabel.md) object. |
 
 
