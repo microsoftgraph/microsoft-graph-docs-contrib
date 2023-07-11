@@ -75,7 +75,6 @@ Content-Type: application/json
             "deployableUntilDateTime": null,
             "isExpeditable": true,
             "qualityUpdateClassification": "security",
-            "qualityUpdateClassification": "security",
             "qualityUpdateCadence": "monthly",
             "cveSeverityInformation": {
                 "maxSeverityLevel": "String",
@@ -93,7 +92,6 @@ Content-Type: application/json
             "releaseDateTime": "String (timestamp)",
             "deployableUntilDateTime": null,
             "isExpeditable": true,
-            "qualityUpdateClassification": "security",
             "qualityUpdateClassification": "security",
             "qualityUpdateCadence": "monthly",
             "cveSeverityInformation": {
