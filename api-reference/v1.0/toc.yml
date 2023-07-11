@@ -1173,8 +1173,69 @@ items:
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remove
                         href: api/application-delete-tokenlifetimepolicies.md
+          - name: Synchronization
+            items:
+            - name: Overview
+              href: resources/synchronization-overview.md
+            - name: Synchronization
+              href: resources/synchronization-synchronization.md
+              items:
+              - name: Acquire access token
+                href: api/synchronization-synchronization-acquireaccesstoken.md
+              - name: Add secrets
+                href: api/synchronization-serviceprincipal-put-synchronization.md
+            - name: Job
+              href: resources/synchronization-synchronizationjob.md
+              items:
+              - name: List
+                href: api/synchronization-synchronization-list-jobs.md
+              - name: Create
+                href: api/synchronization-synchronization-post-jobs.md
+              - name: Get
+                href: api/synchronization-synchronizationjob-get.md
+              - name: Start
+                href: api/synchronization-synchronizationjob-start.md
+              - name: Pause
+                href: api/synchronization-synchronizationjob-pause.md
+              - name: Restart
+                href: api/synchronization-synchronizationjob-restart.md
+              - name: Delete
+                href: api/synchronization-synchronizationjob-delete.md
+              - name: Provision on demand
+                href: api/synchronization-synchronizationjob-provisionondemand.md
+              - name: Validate credentials
+                href: api/synchronization-synchronizationjob-validatecredentials.md
+            - name: Schema
+              href: resources/synchronization-synchronizationschema.md
+              items:
+              - name: Get schema
+                href: api/synchronization-synchronizationschema-get.md
+              - name: Get schema functions
+                href: api/synchronization-synchronizationschema-functions.md
+              - name: Get schema filter operators
+                href: api/synchronization-synchronizationschema-filteroperators.md
+              - name: Update schema
+                href: api/synchronization-synchronizationschema-update.md
+              - name: Reset schema
+                href: api/synchronization-synchronizationschema-delete.md
+              - name: Parse attribute mapping expression
+                href: api/synchronization-synchronizationschema-parseexpression.md
+              - name: Directory definition
+                href: resources/synchronization-directorydefinition.md
+                items:
+                - name: Discover
+                  href: api/synchronization-directorydefinition-discover.md
+            - name: Template
+              href: resources/synchronization-synchronizationtemplate.md
+              items:
+              - name: List
+                href: api/synchronization-synchronization-list-templates.md
+              - name: Get
+                href: api/synchronization-synchronizationtemplate-get.md
+              - name: Update
+                href: api/synchronization-synchronizationtemplate-update.md
       - name: Calendars
-        displayname: Outlook calendar
+        displayName: Outlook calendar
         items:
           - name: Calendar
             href: resources/calendar.md
@@ -7257,7 +7318,28 @@ items:
                 href: resources/provisioningobjectsummary.md
                 items:
                   - name: List provisioning
-                    href: api/provisioningobjectsummary-list.md
+                    href: api/provisioningobjectsummary-list.md                      
+          - name: Identity and access reports
+            items:
+              - name: Registration and usage
+                items:
+                  - name: User registration details
+                    href: resources/userregistrationdetails.md
+                    items:
+                      - name: List
+                        href: api/authenticationmethodsroot-list-userregistrationdetails.md
+                      - name: Get
+                        href: api/userregistrationdetails-get.md
+                  - name: Users registered by feature
+                    href: resources/userregistrationfeaturesummary.md
+                    items:
+                      - name: List
+                        href: api/authenticationmethodsroot-usersregisteredbyfeature.md
+                  - name: Users registered by method
+                    href: resources/userregistrationmethodsummary.md
+                    items:
+                      - name: List
+                        href: api/authenticationmethodsroot-usersregisteredbymethod.md
           - name: Microsoft 365 usage reports
             items:
               - name: Overview
@@ -8655,7 +8737,11 @@ items:
                 items:
                   - name: Learning course activity
                     href: resources/learningcourseactivity.md
-                    items:  
+                    items:
+                  - name: Learning assignment type
+                    href: resources/learningassignment.md
+                  - name: Learning self-initiated course type
+                    href: resources/learningselfinitiatedcourse.md 
                   - name: List
                     href: api/learningcourseactivity-list.md
                   - name: Create
@@ -8666,10 +8752,6 @@ items:
                     href: api/learningcourseactivity-update.md
                   - name: Delete
                     href: api/learningcourseactivity-delete.md
-                  - name: Learning assignment
-                    href: resources/learningassignment.md
-                  - name: Learning self-initiated course
-                    href: resources/learningselfinitiatedcourse.md
           - name: Messaging
             items:
               - name: Activity feed
@@ -8873,6 +8955,8 @@ items:
                     href: api/team-clone.md
                   - name: List your teams
                     href: api/user-list-joinedteams.md
+                  - name: List all teams in an organization
+                    href: api/teams-list.md
                   - name: List your associated teams
                     href: api/associatedteaminfo-list.md
                   - name: Get primary channel
