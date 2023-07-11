@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 Install an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
-> **Note:** Currently, this operation does not support installation of apps that require resource-specific consent permissions. For details, see [Known issues](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
+> **Note:**
+> Currently, installing an app that requires resource-specific consent permissions is not supported in the application context.
 
 ## Permissions
 
@@ -21,11 +22,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForTeam<sup>1</sup>, TeamsAppInstallation.ReadWriteForTeam<sup>1</sup>,  TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, Group.ReadWrite.All<sup>2</sup>, Directory.ReadWrite.All<sup>2</sup> |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Application | TeamsAppInstallation.ReadWriteSelfForTeam.All<sup>1</sup>, TeamsAppInstallation.ReadWriteForTeam.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, Group.ReadWrite.All<sup>2</sup>, Directory.ReadWrite.All<sup>2</sup> |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note**:
+<br><sup>1</sup> These permissions cannot be used to install apps that require consent to [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions
+<br><sup>2</sup> These permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using these permissions going forward.
   
 
 ## HTTP request
@@ -42,17 +45,25 @@ POST /teams/{team-id}/installedApps
 
 ## Request body
 
+The request body should include the generated app ID of the catalog app. For more information, see [teamsApp properties](../resources/teamsapp.md#properties).
+
+The following table lists additional properties that can be included in the request body.
+
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|teamsApp|String|The id of the app to add.|
+|teamsApp|String|The ID of the app to add.|
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|The set of resource-specific permissions that are being consented to.|
+
+> **Note**:
+> The permissions consented to during the installation must match the resource-specific permissions specified in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app). If only delegated resource-specific permissions are specified in the **teamsAppDefinition**, permissions can be omitted in the request body.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
-## Example
+## Examples
 
-### Request
+#### Request
 
 The following is an example of the request.
 
@@ -60,7 +71,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add_app_in_team",
+  "name": "add_app_in_team_v1_e1",
   "sampleKeys": ["87654321-0abc-zqf0-321456789q"]
 }-->
 ```http
@@ -106,7 +117,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -118,6 +129,52 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 ```
 
+### Example 2: Install app in a team and consent to the resource-specific permissions required by the app
+
+To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "add_app_in_team_v1_e2",
+  "sampleKeys": ["7023576d-9e40-47ca-9cf2-daae6838e785"]
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/7023576d-9e40-47ca-9cf2-daae6838e785/installedApps
+Content-Type: application/json
+
+{
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785",
+    "consentedPermissionSet": {
+        "resourceSpecificPermissions": [
+        {
+          "permissionValue": "OnlineMeeting.ReadBasic.Chat",
+          "permissionType": "delegated"
+        },
+        {
+          "permissionValue": "ChatMessage.Read.Chat",
+          "permissionType": "application"
+        }]
+      }
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 201 Created
+```
+
+## See also
+
+- [List apps in catalog](appcatalogs-list-teamsapps.md)
+- [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -130,5 +187,3 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
-
-
