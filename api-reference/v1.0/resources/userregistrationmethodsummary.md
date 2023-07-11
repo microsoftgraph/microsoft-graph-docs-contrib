@@ -1,7 +1,7 @@
 ---
 title: "userRegistrationMethodSummary resource type"
-description: "Represents the summary the of number of users registered for each authentication method."
-author: "besiler"
+description: "Represents the summary of the number of users registered for each authentication method."
+author: "kvenkit"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # userRegistrationMethodSummary resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the summary of number of users registered for each authentication method.
 

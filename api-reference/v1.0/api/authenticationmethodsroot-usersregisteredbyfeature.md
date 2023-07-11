@@ -1,23 +1,21 @@
 ---
-title: "authenticationMethodsRoot: usersRegisteredByMethod"
-description: "Get the number of users registered for each authentication method."
-author: "besiler"
+title: "authenticationMethodsRoot: usersRegisteredByFeature"
+description: "Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication."
+author: "kvenkit"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# authenticationMethodsRoot: usersRegisteredByMethod
+# authenticationMethodsRoot: usersRegisteredByFeature
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Get the number of users registered for each authentication method.
+Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -40,7 +38,7 @@ To access the API, [one of the following roles](/azure/active-directory/users-gr
 }
 -->
 ``` http
-GET /reports/authenticationMethods/usersRegisteredByMethod
+GET /reports/authenticationMethods/usersRegisteredByFeature
 ```
 
 ## Function parameters
@@ -78,7 +76,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [userRegistrationMethodSummary](../resources/userregistrationmethodsummary.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [userRegistrationFeatureSummary](../resources/userregistrationfeaturesummary.md) in the response body.
 
 ## Examples
 
@@ -86,57 +84,56 @@ If successful, this function returns a `200 OK` response code and a [userRegistr
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "authenticationmethodsroot_usersregisteredbymethod"
+  "name": "authenticationmethodsroot_usersregisteredbyfeature"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')
+GET https://graph.microsoft.com/v1.0/reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='all',includedUserRoles='all')
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/authenticationmethodsroot-usersregisteredbymethod-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/authenticationmethodsroot-usersregisteredbymethod-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.userRegistrationFeatureSummary"
-}
--->
+} -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.userRegistrationMethodSummary",
+  "@odata.type": "#microsoft.graph.userRegistrationFeatureSummary",
+  "totalUserCount": 23123,
   "userTypes": "all",
   "userRoles": "all",
-  "userRegistrationMethodCounts": [
+  "userRegistrationFeatureCounts": [
     {
-      "authenticationMethod": "password",
-      "userCount": 12209
+      "feature": "ssprRegistered",
+      "userCount": 23423
     },
     {
-      "authenticationMethod": "windowsHelloForBusiness",
-      "userCount": 223
-    },
-    {
-      "authenticationMethod": "mobilePhone",
+      "feature": "ssprEnabled",
       "userCount": 4234
+    },
+    {
+      "feature": "ssprCapable",
+      "userCount": 4234
+    },
+    {
+      "feature": "passwordlessCapable",
+      "userCount": 323
+    },
+    {
+      "feature": "mfaCapable",
+      "userCount": 3345
     }
   ]
 }

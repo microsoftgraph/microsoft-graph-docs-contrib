@@ -1,7 +1,7 @@
 ---
 title: "userRegistrationMethodCount resource type"
 description: "Represents the number of users registered for an authentication method."
-author: "besiler"
+author: "kvenkit"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: resourcePageType
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # userRegistrationMethodCount resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the number of users registered for an authentication method.
 

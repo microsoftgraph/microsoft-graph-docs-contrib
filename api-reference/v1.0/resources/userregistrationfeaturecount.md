@@ -1,7 +1,7 @@
 ---
 title: "userRegistrationFeatureCount resource type"
 description: "Represents the number of users registered or capable for multi-factor authentication, self-service password reset, and passwordless authentication."
-author: "besiler"
+author: "kvenkit"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
@@ -11,15 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the number of users registered or capable for multi-factor authentication, self-service password reset, and passwordless authentication.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|feature|authenticationMethodFeature|Number of users registered or capable for multi-factor authentication, self-service password reset, and passwordless authentication.Possible values are: `ssprRegistered`, `ssprEnabled`, `ssprCapable`, `passwordlessCapable`, `mfaCapable`, `unknownFutureValue`.|
+|feature|authenticationMethodFeature|Number of users registered or capable for multi-factor authentication, self-service password reset, and passwordless authentication. Possible values are: `ssprRegistered`, `ssprEnabled`, `ssprCapable`, `passwordlessCapable`, `mfaCapable`, `unknownFutureValue`.|
 |userCount|Int64|Number of users.|
 
 ## Relationships

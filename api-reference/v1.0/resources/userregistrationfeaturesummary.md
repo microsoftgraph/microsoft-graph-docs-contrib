@@ -1,7 +1,7 @@
 ---
 title: "userRegistrationFeatureSummary resource type"
 description: "Represents the summary of users capable of multi-factor authentication, self-service password reset, and passwordless authentication in an organization."
-author: "besiler"
+author: "kvenkit"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # userRegistrationFeatureSummary resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the summary of users capable of multi-factor authentication, self-service password reset, and passwordless authentication in an organization.
 
@@ -51,6 +49,7 @@ None.
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userRegistrationFeatureSummary"

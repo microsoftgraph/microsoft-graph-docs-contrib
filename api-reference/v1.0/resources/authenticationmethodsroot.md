@@ -1,7 +1,7 @@
 ---
 title: "authenticationMethodsRoot resource type"
 description: "Container for navigation properties of resources for Azure Active Directory authentication methods."
-author: "besiler"
+author: "kvenkit"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # authenticationMethodsRoot resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Container for navigation properties of resources for Azure Active Directory authentication methods.
 
