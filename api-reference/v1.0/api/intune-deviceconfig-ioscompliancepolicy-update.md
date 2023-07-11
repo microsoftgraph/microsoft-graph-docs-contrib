@@ -76,8 +76,6 @@ If successful, this method returns a `200 OK` response code and an updated [iosC
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_deviceconfig_ioscompliancepolicy_update_update_ioscompliancepolicy" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
@@ -107,8 +105,6 @@ Content-length: 745
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.iosCompliancePolicy" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

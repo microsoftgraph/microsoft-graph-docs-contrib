@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.industryData.inboundFileFlow"
@@ -16,6 +16,6 @@ $params = @{
 	"year@odata.bind" = "https://graph.microsoft.com/beta/external/industryData/years/ebf18762-ab92-487e-21d1-08daddab28bb"
 }
 
-New-MgExternalIndustryDataInboundFlow -BodyParameter $params
+New-MgBetaExternalIndustryDataInboundFlow -BodyParameter $params
 
 ```

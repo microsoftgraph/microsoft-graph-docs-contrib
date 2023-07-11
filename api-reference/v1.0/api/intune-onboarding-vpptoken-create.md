@@ -68,8 +68,6 @@ If successful, this method returns a `201 Created` response code and a [vppToken
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_onboarding_vpptoken_create_create_vpptoken" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens
 Content-type: application/json
@@ -92,8 +90,6 @@ Content-length: 461
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.vppToken" }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
