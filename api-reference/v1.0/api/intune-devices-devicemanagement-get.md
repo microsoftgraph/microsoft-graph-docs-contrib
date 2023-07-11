@@ -52,20 +52,16 @@ If successful, this method returns a `200 OK` response code and [deviceManagemen
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_devices_devicemanagement_get_get_devicemanagement" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.deviceManagement" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2854
+Content-Length: 3036
 
 {
   "value": {
@@ -145,6 +141,10 @@ Content-Length: 2854
           "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
         }
       ]
+    },
+    "userExperienceAnalyticsSettings": {
+      "@odata.type": "microsoft.graph.userExperienceAnalyticsSettings",
+      "configurationManagerDataConnectorConfigured": true
     }
   }
 }

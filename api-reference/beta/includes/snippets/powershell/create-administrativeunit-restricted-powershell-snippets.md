@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	displayName = "Executive Division"
@@ -12,6 +12,6 @@ $params = @{
 	isMemberManagementRestricted = $true
 }
 
-New-MgAdministrativeUnit -BodyParameter $params
+New-MgBetaAdministrativeUnit -BodyParameter $params
 
 ```

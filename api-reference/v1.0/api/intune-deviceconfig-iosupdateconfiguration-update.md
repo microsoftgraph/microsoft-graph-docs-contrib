@@ -66,8 +66,6 @@ If successful, this method returns a `200 OK` response code and an updated [iosU
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_deviceconfig_iosupdateconfiguration_update_update_iosupdateconfiguration" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
@@ -89,8 +87,6 @@ Content-length: 325
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.iosUpdateConfiguration" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

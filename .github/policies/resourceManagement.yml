@@ -1,0 +1,1191 @@
+id: 
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+owner: 
+resource: repository
+disabled: false
+where: 
+configuration:
+  resourceManagementConfiguration:
+    scheduledSearches:
+    - description: 
+      frequencies:
+      - hourly:
+          hour: 1
+      filters:
+      - isOpen
+      - isPullRequest
+      - isNotLabeledWith:
+          label: do not merge
+      - isNotLabeledWith:
+          label: ready to merge
+      - isNotLabeledWith:
+          label: ready for content review
+      - isNotLabeledWith:
+          label: blocked
+      - isNotLabeledWith:
+          label: changelog required
+      - isNotLabeledWith:
+          label: changes requested
+      - isNotLabeledWith:
+          label: awaiting internal response
+      - hasLabel:
+          label: internal
+      - isNotLabeledWith:
+          label: content review in progress
+      - isNotLabeledWith:
+          label: content review complete
+      actions:
+      - addLabel:
+          label: do not merge
+      - addReply:
+          reply: >-
+            Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status. 
+
+
+            Please add the **ready for content review** label to start a review. Your PR won't be reviewed until you add this label.
+
+
+            After the content review is complete and the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
+
+
+            **Note:** Pull requests will not be merged until the **ready to merge** label is set.
+
+
+            For details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow).
+    - description: 
+      frequencies:
+      - daily:
+          time: 11:0
+      filters:
+      - isOpen
+      - isPullRequest
+      - isNotLabeledWith:
+          label: external
+      - hasLabel:
+          label: do not merge
+      - noActivitySince:
+          days: 60
+      - isNotLabeledWith:
+          label: content review complete
+      actions:
+      - addLabel:
+          label: no recent activity
+      - addReply:
+          reply: >-
+            This PR has been automatically marked as stale because it has been labeled "do not merge" but has not had any activity for **60 days**. It will be closed if no further activity occurs **within 7 days of this comment**.
+
+
+            If you still intend to merge this pull request eventually, please add a comment to keep this open, and update the status labels accordingly.
+    - description: 
+      frequencies:
+      - daily:
+          time: 11:0
+      filters:
+      - isOpen
+      - hasLabel:
+          label: do not merge
+      - hasLabel:
+          label: no recent activity
+      - noActivitySince:
+          days: 7
+      actions:
+      - closeIssue
+    - description: 
+      frequencies:
+      - hourly:
+          hour: 6
+      filters:
+      - isIssue
+      - isOpen
+      - hasLabel:
+          label: needs more info
+      - hasLabel:
+          label: no recent activity
+      - noActivitySince:
+          days: 14
+      actions:
+      - addReply:
+          reply: This issue has been closed due to inactivity. If the issue is still present, please provide the requested information to reopen the issue.
+      - closeIssue
+    - description: 
+      frequencies:
+      - hourly:
+          hour: 3
+      filters:
+      - isOpen
+      - isPullRequest
+      - hasLabel:
+          label: pr-expired
+      - noActivitySince:
+          days: 1
+      actions:
+      - closeIssue
+    - description: 
+      frequencies:
+      - hourly:
+          hour: 3
+      filters:
+      - isOpen
+      - isAssignedTo:
+          user: nkramer
+      actions:
+      - addLabel:
+          label: MSTeams-Developer-Support
+    - description: 
+      frequencies:
+      - hourly:
+          hour: 6
+      filters:
+      - noActivitySince:
+          days: 14
+      - hasLabel:
+          label: changes requested
+      - isPullRequest
+      - isOpen
+      - isNotLabeledWith:
+          label: blocked
+      actions:
+      - addReply:
+          reply: >
+            Hello, @${issueAuthor}. 
+
+
+            Your PR has been in "Changes requested" state for more than 2 weeks. 
+
+
+            Please address the feedback left by your reviewer. Feel free to ping your reviewer on the side if you have any questions. 
+
+
+            Thank you!
+    - description: 
+      frequencies:
+      - hourly:
+          hour: 6
+      filters:
+      - noActivitySince:
+          days: 14
+      - hasLabel:
+          label: content review complete
+      - isPullRequest
+      - isOpen
+      - isNotLabeledWith:
+          label: blocked
+      actions:
+      - addReply:
+          reply: >-
+            Hello, @${issueAuthor}. 
+
+
+            Your PR was approved by your reviewer more than 2 weeks ago.
+
+
+            Please add the label "ready to merge" when you are ready to publish your PR.
+
+
+            Thank you!
+    eventResponderTasks:
+    - if:
+      - payloadType: Issues
+      - or:
+        - labelAdded:
+            label: question
+        - labelAdded:
+            label: serviceissue
+        - labelAdded:
+            label: 'request: feature'
+      then:
+      - addReply:
+          reply: "This issue will be closed because we only accept document content feedback in this repository's issue list. This issues list is not intended for service issues, questions, or service feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - not:
+          bodyContains:
+            pattern: 'Content Source:'
+            isRegex: False
+      - isAction:
+          action: Opened
+      then:
+      - addReply:
+          reply: "This issue will be closed because we do not support feedback captured directly from the GitHub new issue page. Also, this issues list is not intended for service issues, questions, or service feedback.\n\nTo provide feedback on [Microsoft Graph documentation](https://learn.microsoft.com/graph/overview), please scroll to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback there. This gives the team the necessary context of your feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - activitySenderHasAssociation:
+          association: Member
+      - isAction:
+          action: Opened
+      then:
+      - addLabel:
+          label: internal
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - not:
+          activitySenderHasAssociation:
+            association: Member
+      - not:
+          activitySenderHasAssociation:
+            association: Owner
+      - isAction:
+          action: Opened
+      then:
+      - addLabel:
+          label: external
+      - addReply:
+          reply: Thanks for your contribution ${issueAuthor}! Please see [CONTRIBUTING.md](https://github.com/microsoftgraph/microsoft-graph-docs/blob/main/CONTRIBUTING.md) for guidelines.
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - not:
+          isAction:
+            action: Closed
+      - hasLabel:
+          label: no recent activity
+      then:
+      - removeLabel:
+          label: no recent activity
+      description: 
+    - if:
+      - payloadType: Issue_Comment
+      - isOpen
+      - hasLabel:
+          label: no recent activity
+      - isActivitySender:
+          issueAuthor: True
+      then:
+      - removeLabel:
+          label: no recent activity
+      description: 
+    - if:
+      - payloadType: Issue_Comment
+      - hasLabel:
+          label: no recent activity
+      then:
+      - removeLabel:
+          label: no recent activity
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - isOpen
+      - labelAdded:
+          label: pr-expired
+      then:
+      - addReply:
+          reply: >-
+            @${issueAuthor}, in an effort to better serve our documentation contributors, we are auditing all long-running open pull requests. This pull request has been identified as having no recent activity and being opened prior to 2021. To keep our docs review team focused on active requests, **we will close this pull request in 24 hours**.
+
+
+            If the changes you submitted in this pull request are no longer relevant or needed, no action is required. If these changes are still needed, please take one of the following actions.
+
+
+            - Reopen this pull request, resolve all merge conflicts, address all review comments, and set the `ready for content review` label ASAP to request a review from our team.
+
+            - Create a new pull request and reimplement your changes against the current state of the repository.
+
+
+            Thanks!
+
+            Microsoft Graph Docs Team
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: ready for content review
+      - isOpen
+      - not:
+          hasLabel:
+            label: external
+      then:
+      - addReply:
+          reply: >-
+            Thank you for indicating that your pull request is ready for content review, @${issueAuthor}. It has been added to the **Content Review** project and an available reviewer will be assigned in the next 15 business days, depending on demand. You can monitor the status of your pull request in the editorial process [here](https://github.com/orgs/microsoftgraph/projects/15).
+
+
+            Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: content review complete
+      - isOpen
+      - not:
+          hasLabel:
+            label: external
+      then:
+      - removeLabel:
+          label: ready for content review
+      - removeLabel:
+          label: review feedback addressed
+      - removeLabel:
+          label: changes requested
+      - addReply:
+          reply: >-
+            Thank you for your work in this PR, @${issueAuthor}. 
+
+
+            When the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
+
+
+            Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
+      - removeLabel:
+          label: content review in progress
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: changes requested
+      - isOpen
+      - not:
+          hasLabel:
+            label: external
+      then:
+      - addReply:
+          reply: >-
+            @${issueAuthor}, your content reviewer has requested changes to your pull request. Please review feedback and address accordingly as soon as possible to keep your pull request moving forward. 
+
+
+            Once you have addressed the feedback, please add the `review feedback addressed` label and select the **Re-request review** icon. 
+
+
+            If you cannot add labels, please add a comment with `#feedback-addressed` to the pull request.
+
+
+            Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
+      - assignTo:
+          author: True
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: review feedback addressed
+      - isOpen
+      then: []
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - or:
+        - isAction:
+            action: Closed
+        - isAction:
+            action: Null
+      then: []
+      description: 
+    - if:
+      - payloadType: Issue_Comment
+      - isActivitySender:
+          issueAuthor: True
+      - commentContains:
+          pattern: '#feedback-addressed'
+          isRegex: False
+      then:
+      - addLabel:
+          label: review feedback addressed
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: content review in progress
+      - isOpen
+      then:
+      - removeLabel:
+          label: ready for content review
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - or:
+        - labelAdded:
+            label: 'area: Azure AD'
+        - labelAdded:
+            label: 'area: identity'
+      - isOpen
+      then:
+      - requestReview:
+          reviewer: 'FaithOmbongi '
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - isOpen
+      - labelAdded:
+          label: changes requested
+      - hasLabel:
+          label: review feedback addressed
+      then:
+      - removeLabel:
+          label: review feedback addressed
+      description: 
+    - if:
+      - payloadType: Pull_Request
+      - isOpen
+      - labelAdded:
+          label: review feedback addressed
+      - hasLabel:
+          label: changes requested
+      then:
+      - removeLabel:
+          label: changes requested
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - labelAdded:
+              label: Q&A
+          - hasLabel:
+              label: 'area: teams'
+        - and:
+          - labelAdded:
+              label: 'area: teams'
+          - hasLabel:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-teamwork.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - labelAdded:
+              label: Q&A
+          - hasLabel:
+              label: 'subarea: files'
+        - and:
+          - labelAdded:
+              label: 'subarea: files'
+          - hasLabel:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-files.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - labelAdded:
+              label: Q&A
+          - hasLabel:
+              label: 'subarea: mail'
+        - and:
+          - labelAdded:
+              label: 'subarea: mail'
+          - hasLabel:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-mail.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - labelAdded:
+              label: Q&A
+          - hasLabel:
+              label: 'subarea: calendar'
+        - and:
+          - labelAdded:
+              label: 'subarea: calendar'
+          - hasLabel:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-calendar.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - labelAdded:
+              label: Q&A
+          - hasLabel:
+              label: 'area: toolkit'
+        - and:
+          - labelAdded:
+              label: 'area: toolkit'
+          - hasLabel:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-toolkit.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: cloud communications'
+        - and:
+          - hasLabel:
+              label: 'area: cloud communications'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-cloud-communications.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: tasks and plans'
+        - and:
+          - hasLabel:
+              label: 'area: tasks and plans'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-tasks-plans.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: security'
+        - and:
+          - hasLabel:
+              label: 'area: security'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-security.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'subarea: sites and lists'
+        - and:
+          - hasLabel:
+              label: 'subarea: sites and lists'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-sites-lists.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: open extensions'
+        - and:
+          - hasLabel:
+              label: 'area: onenote'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-notes.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: corporate management'
+        - and:
+          - hasLabel:
+              label: 'area: corporate management'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: users'
+        - and:
+          - hasLabel:
+              label: 'area: users'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-users.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: reports'
+        - and:
+          - hasLabel:
+              label: 'area: reports'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-reports.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: insights'
+        - and:
+          - hasLabel:
+              label: 'area: insights'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-insights.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: extensions'
+        - and:
+          - hasLabel:
+              label: 'area: extensions'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-extensions.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: change notifications'
+        - and:
+          - hasLabel:
+              label: 'area: change notifications'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-change-notifications.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: bookings'
+        - and:
+          - hasLabel:
+              label: 'area: bookings'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-customer-booking.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: people'
+        - and:
+          - hasLabel:
+              label: 'area: people'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-people.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: query parameters'
+        - and:
+          - hasLabel:
+              label: 'area: query parameters'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-query-parameters.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'subarea: workbooks and charts'
+        - and:
+          - hasLabel:
+              label: 'subarea: workbooks and charts'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-workbooks.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: search'
+        - and:
+          - hasLabel:
+              label: 'area: search'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-search.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: todo'
+        - and:
+          - hasLabel:
+              label: 'area: todo'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-todo.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: compliance'
+        - and:
+          - hasLabel:
+              label: 'area: compliance'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-compliance.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: intune'
+        - and:
+          - hasLabel:
+              label: 'area: intune'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: authentication'
+        - and:
+          - hasLabel:
+              label: 'area: authentication'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-authentication.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: groups'
+        - and:
+          - hasLabel:
+              label: 'area: groups'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-groups.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: identity'
+        - and:
+          - hasLabel:
+              label: 'area: identity'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-identity.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: governance'
+        - and:
+          - hasLabel:
+              label: 'area: governance'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-governance.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: notag
+        - and:
+          - hasLabel:
+              label: notag
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/products/graph)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: batch requests'
+        - and:
+          - hasLabel:
+              label: 'area: batch requests'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-batching.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: notifications'
+        - and:
+          - hasLabel:
+              label: 'area: notifications'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-notifications.html)
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: education'
+        - and:
+          - hasLabel:
+              label: 'area: education'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-education.html).
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: SDKs'
+        - and:
+          - hasLabel:
+              label: 'area: SDKs'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-sdk.html).
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      - closeIssue
+      description: 
+    - if:
+      - payloadType: Issue_Comment
+      - isActivitySender:
+          issueAuthor: True
+      - isOpen
+      - commentContains:
+          pattern: '#sign-off'
+          isRegex: False
+      then:
+      - addLabel:
+          label: ready for content review
+      description: 
+    - if:
+      - payloadType: Issues
+      - or:
+        - and:
+          - hasLabel:
+              label: Q&A
+          - labelAdded:
+              label: 'area: applications'
+        - and:
+          - hasLabel:
+              label: 'area: applications'
+          - labelAdded:
+              label: Q&A
+      then:
+      - addReply:
+          reply: >-
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-applications.html).
+
+
+            If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
+      description: 
+onFailure: 
+onSuccess: 

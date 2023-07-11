@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.WindowsUpdates
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 $params = @{
 	updateCategory = "feature"
@@ -16,6 +16,6 @@ $params = @{
 	)
 }
 
-Invoke-MgGraphWindowsUpdatesUpdatableAsset -BodyParameter $params
+Invoke-MgBetaGraphWindowsUpdatesUpdatableAsset -BodyParameter $params
 
 ```

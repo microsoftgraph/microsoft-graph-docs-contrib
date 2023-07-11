@@ -52,16 +52,12 @@ If successful, this method returns a `200 OK` response code and [managedDeviceMo
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_apps_manageddevicemobileappconfigurationuserstatus_get_get_manageddevicemobileappconfigurationuserstatus" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatuses/{managedDeviceMobileAppConfigurationUserStatusId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.managedDeviceMobileAppConfigurationUserStatus" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
