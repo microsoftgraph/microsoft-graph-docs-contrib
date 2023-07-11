@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	accountEnabled = $false
 }
 
-Update-MgDevice -DeviceId $deviceId -BodyParameter $params
+Update-MgBetaDevice -DeviceId $deviceId -BodyParameter $params
 
 ```
