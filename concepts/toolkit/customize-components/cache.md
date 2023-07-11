@@ -92,7 +92,7 @@ import { Providers } from '@microsoft/mgt';
 import { CacheService } from '@microsoft/mgt-element';
 
 const cacheId = await Providers.getCacheId();
-CacheService.clearCacheById(cacheId);
+await CacheService.clearCacheById(cacheId);
 ```
 
 ## Creating your own cache stores
