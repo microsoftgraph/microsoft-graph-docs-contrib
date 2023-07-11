@@ -52,16 +52,12 @@ If successful, this method returns a `200 OK` response code and [deviceAppManage
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_apps_deviceappmanagement_get_get_deviceappmanagement" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.deviceAppManagement" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
