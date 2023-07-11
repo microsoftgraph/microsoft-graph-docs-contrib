@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewChatMessage()
@@ -111,7 +111,6 @@ chatMessageMention1.SetMentioned(mentioned)
 mentions := []graphmodels.ChatMessageMentionable {
 	chatMessageMention,
 	chatMessageMention1,
-
 }
 requestBody.SetMentions(mentions)
 reactions := []graphmodels.ChatMessageReactionable {

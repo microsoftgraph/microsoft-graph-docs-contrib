@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.IdentityGovernance.EntitlementManagement.AssignmentRequests["{accessPackageAssignmentRequest-id}"].GetAsync();
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AssignmentRequests.FilterByCurrentUserWithOn("target").GetAsync();
 
 
 ```

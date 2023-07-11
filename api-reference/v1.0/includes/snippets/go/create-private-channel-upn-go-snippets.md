@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewChannel()
@@ -24,10 +24,9 @@ description := "This is my first private channels"
 requestBody.SetDescription(&description) 
 
 
-conversationMember := graphmodels.NewConversationMember()
+conversationMember := graphmodels.NewAadUserConversationMember()
 roles := []string {
 	"owner",
-
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
@@ -37,7 +36,6 @@ conversationMember.SetAdditionalData(additionalData)
 
 members := []graphmodels.ConversationMemberable {
 	conversationMember,
-
 }
 requestBody.SetMembers(members)
 

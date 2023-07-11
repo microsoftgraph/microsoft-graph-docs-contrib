@@ -53,6 +53,31 @@
       "url": "https://github.com/MicrosoftDocs/azure-docs/",
       "branch": "main",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "concepts/sdks/snippets/dotnet",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-dotnet",
+      "branch": "main"
+    },
+    {
+      "path_to_root": "concepts/sdks/snippets/go",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-go",
+      "branch": "main"
+    },
+    {
+      "path_to_root": "concepts/sdks/snippets/java",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-java",
+      "branch": "main"
+    },
+    {
+      "path_to_root": "concepts/sdks/snippets/python",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-python",
+      "branch": "main"
+    },
+    {
+      "path_to_root": "concepts/sdks/snippets/typescript",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-typescript",
+      "branch": "main"
     }
   ],
   "branch_target_mapping": {},
@@ -75,6 +100,7 @@
     "redirects/.openpublishing.redirection.1221.json",
     "redirects/.openpublishing.redirection.0522.json",
     "redirects/.openpublishing.redirection.0423.json",
+    "redirects/.openpublishing.redirection.0523.json",
     "redirects/.openpublishing.redirection.changedapi.json"
   ]
 }

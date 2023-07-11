@@ -16,7 +16,7 @@ var requestBody = new Channel
 	Description = "This is my first private channels",
 	Members = new List<ConversationMember>
 	{
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
 			Roles = new List<string>

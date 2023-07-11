@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewExtensionProperty()
@@ -22,7 +22,6 @@ dataType := "String"
 requestBody.SetDataType(&dataType) 
 targetObjects := []string {
 	"User",
-
 }
 requestBody.SetTargetObjects(targetObjects)
 

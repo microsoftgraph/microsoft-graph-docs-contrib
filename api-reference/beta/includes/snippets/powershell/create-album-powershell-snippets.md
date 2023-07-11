@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Files
+Import-Module Microsoft.Graph.Beta.Files
 
 $params = @{
 	name = "My Day at the Beach"
@@ -20,6 +20,6 @@ $params = @{
 	)
 }
 
-New-MgDriveBundle -DriveId $driveId -BodyParameter $params
+New-MgBetaDriveBundle -DriveId $driveId -BodyParameter $params
 
 ```

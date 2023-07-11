@@ -24,14 +24,10 @@ $previewText->setContent('Deployment requires your approval');
 
 
 $requestBody->setPreviewText($previewText);
-$recipient = new TeamworkNotificationRecipient();
+$recipient = new AadUserNotificationRecipient();
 $recipient->set@odatatype('microsoft.graph.aadUserNotificationRecipient');
 
-$additionalData = [
-		'userId' => 'jacob@contoso.com', 
-];
-$recipient->setAdditionalData($additionalData);
-
+$recipient->setUserId('jacob@contoso.com');
 
 
 $requestBody->setRecipient($recipient);
