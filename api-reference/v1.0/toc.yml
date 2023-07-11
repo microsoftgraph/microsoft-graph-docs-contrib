@@ -8716,7 +8716,11 @@ items:
                 items:
                   - name: Learning course activity
                     href: resources/learningcourseactivity.md
-                    items:  
+                    items:
+                  - name: Learning assignment type
+                    href: resources/learningassignment.md
+                  - name: Learning self-initiated course type
+                    href: resources/learningselfinitiatedcourse.md 
                   - name: List
                     href: api/learningcourseactivity-list.md
                   - name: Create
@@ -8727,10 +8731,6 @@ items:
                     href: api/learningcourseactivity-update.md
                   - name: Delete
                     href: api/learningcourseactivity-delete.md
-                  - name: Learning assignment
-                    href: resources/learningassignment.md
-                  - name: Learning self-initiated course
-                    href: resources/learningselfinitiatedcourse.md
           - name: Messaging
             items:
               - name: Activity feed
