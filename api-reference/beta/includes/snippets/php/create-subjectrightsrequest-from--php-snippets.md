@@ -45,7 +45,7 @@ $requestBody->setPauseAfterEstimate(true);
 
 $requestBody->setRegulations(['CCPA', ]);
 
-$siteLocations = new SubjectRightsRequestSiteLocation();
+$siteLocations = new SubjectRightsRequestAllSiteLocation();
 $siteLocations->set@odatatype('microsoft.graph.subjectRightsRequestAllSiteLocation');
 
 

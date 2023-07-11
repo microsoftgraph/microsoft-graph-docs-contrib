@@ -1,9 +1,9 @@
 ---
 title: "assignmentFilterManagementType enum type"
 description: "Supported filter management types whether its devices or apps."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,7 +23,3 @@ Supported filter management types whether its devices or apps.
 |devices|0|Indicates when filter is supported based on device properties. This is the default value when management type resolution fails.|
 |apps|1|Indicates when filter is supported based on app properties.|
 |unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
-
-
-
-

@@ -195,7 +195,7 @@ Sometimes the changes that have occurred to the object might not be indicated wh
 
 ### National clouds
 
-Delta queries are available for customers hosted on the public cloud and Microsoft Graph China operated by 21Vianet only.
+Delta queries are only available for customers hosted on the public cloud, Microsoft Cloud for US Government, and Microsoft Graph China operated by 21Vianet.
 
 ### Replays
 

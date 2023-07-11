@@ -10,16 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new EducationSubmissionResource();
-$resource = new EducationResource();
+$resource = new EducationExcelResource();
 $resource->set@odatatype('#microsoft.graph.educationExcelResource');
 
 $resource->setDisplayName('userAgeGroup QueryParameter Test.xlsx');
 
-$additionalData = [
-		'fileUrl' => 'https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RONPUDM2CZKNRF3TGHYUM7Z64WE', 
-];
-$resource->setAdditionalData($additionalData);
-
+$resource->setFileUrl('https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RONPUDM2CZKNRF3TGHYUM7Z64WE');
 
 
 $requestBody->setResource($resource);

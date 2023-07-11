@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsexternalconnectors.NewExternalItem()
@@ -40,7 +40,6 @@ acl1.SetIdentitySource(&identitySource)
 acl := []graphmodelsexternalconnectors.Aclable {
 	acl,
 	acl1,
-
 }
 requestBody.SetAcl(acl)
 properties := graphmodelsexternalconnectors.NewProperties()
