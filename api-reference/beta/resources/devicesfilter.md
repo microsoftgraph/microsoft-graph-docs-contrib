@@ -1,6 +1,6 @@
 ---
 title: "devicesFilter resource type"
-description: Defines the the rule to filter the devices and whether devices satisfying the rule should be allowed or blocked. **devicesFilter is not yet implemented.**
+description: "Defines a rule to filter the devices and whether devices satisfying the rule should be allowed or blocked."
 author: "vimrang"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,18 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Not implemented yet**
+Defines a rule to filter the devices and whether devices satisfying the rule should be allowed or blocked.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|mode|crossTenantAccessPolicyTargetConfigurationAccessType|Determines whether devices satisfying the rule should be allowed or blocked.The possible values are: `allowed`, `blocked`, `unknownFutureValue`.**Not implemented yet**|
-|rule|String|Defines the rule to filter the devices. An example would be `device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'` **Not implemented yet**|
+|mode|crossTenantAccessPolicyTargetConfigurationAccessType|Determines whether devices satisfying the rule should be allowed or blocked.The possible values are: `allowed`, `blocked`, `unknownFutureValue`.|
+|rule|String|Defines the rule to filter the devices. For example, `device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
