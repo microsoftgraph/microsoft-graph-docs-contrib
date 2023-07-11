@@ -7859,14 +7859,6 @@ items:
               href: api/userteamwork-teamsappinstallation-upgrade.md
             - name: Remove app for user
               href: api/userteamwork-delete-installedapps.md
-        - name: App settings
-          items:
-            - name: App settings
-              href: resources/teamsappsettings.md
-            - name: Get
-              href: api/teamsappsettings-get.md
-            - name: Update
-              href: api/teamsappsettings-update.md
         - name: Resource-specific permission grant
           href: resources/resourcespecificpermissiongrant.md
           items:
