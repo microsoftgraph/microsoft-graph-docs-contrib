@@ -30,6 +30,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |deletedTeams|[deletedTeam](../resources/deletedteam.md) collection| The deleted team.|
+|teamsAppSettings|[teamsAppSettings](../resources/teamsappsettings.md)|Represents tenant-wide settings for all [Teams apps](teamsapp.md) in the tenant.|
 
 ## JSON representation
 
@@ -64,4 +65,3 @@ The following is a JSON representation of the resource.
 ## See Also
 
 - [userTeamwork resource](userteamwork.md)
-
