@@ -39,12 +39,13 @@ POST /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installa
 
 ## Request body
 
-The request body should contain the catalog generated app ID for the app catalog. For details, see [teamsApp properties](../resources/teamsapp.md#properties).
-The following table lists additional parameters that can be used with the request body.
+In the request body, supply a JSON representation of the properties.
+
+The following table shows the properties that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsappdefinition.md)|Set of resource-specific permissions that are being consented to.|
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsappdefinition.md)|Set of resource-specific permissions that are being consented to.(optinal)|
 
 > **Note**: The permissions consented to during the install must be the same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsappdefinition.md) of the app. To get the application and delegated resource-specific permissions, see [List apps installed in the personal scope of a user](../api/userteamwork-list-installedapps.md). If only delegated resource-specific permissions are present in the **teamsAppDefinition**, then the permissions can be omitted from the request body.
 
