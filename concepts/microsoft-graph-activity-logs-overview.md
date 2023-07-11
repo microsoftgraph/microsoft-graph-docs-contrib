@@ -13,7 +13,7 @@ ms.date: 07/11/2023
 
 **Microsoft Graph activity logs** are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant. The logs are stored in Azure Monitor Logs and tenant administrators can analyze them through the Log Analytics interface. Tenant admins can also configure exports to destinations like Azure Storage for long-term storage or use Azure Event Hubs to export to external SIEM tools for alerting, analysis, or archival.
 
-Only logs for API requests made from line of business applications, API clients, and SDKs are available but not API requests made by Microsoft applications like Outlook, Teams, or the Entra portal.
+All logs for API requests made from line of business applications, API clients, SDKs, and Microsoft applications like Outlook, Teams, or the Entra portal are available.
 
 ## Prerequisites
 
@@ -37,17 +37,17 @@ The following data relating to API requests is available for Microsoft Graph act
 <!--To use CRR to avoid duplication once the API Doctor link validation is fixed. -->
 
 | Column | Type | Description |
-|--|--|--|
+| --- | --- | --- |
 | AadTenantId | String | The Azure AD tenant ID. |
 | ApiVersion | String | The API version of the event. |
 | AppId | String | The identifier for the application. |
-| _BilledSize | real |  |
-| ClientRequestId | String | Optional. The client request identifier when sent. If no client request identifier is sent, the value is equal to the operation identifier. |
+| _BilledSize | Real | The record size in bytes. |
+| ClientRequestId | String | Optional. The client request identifier when sent. If no client request identifier is sent, the value will be equal to the operation identifier. |
 | DurationMs | Int | The duration of the request in milliseconds. |
 | IpAddress | String | The IP address of the client from where the request occurred. |
-| _IsBillable | String |  |
+| _IsBillable | String | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account. |
 | Location | String | The name of the region that served the request. |
-| OperationId | String | The identifier for the batch. For nonbatched requests, this value is unique per request. For batched requests, this value is the same for all requests in the batch. |
+| OperationId | String | The identifier for the batch. For non-batched requests, this will be unique per request. For batched requests, this will be the same for all requests in the batch. |
 | RequestId | String | The identifier representing the request. |
 | RequestMethod | String | The HTTP method of the event. |
 | RequestUri | String | The URI of the request. |
@@ -56,12 +56,12 @@ The following data relating to API requests is available for Microsoft Graph act
 | Roles | String | The roles in token claims. |
 | Scopes | String | The scopes in token claims. |
 | ServicePrincipalId | String | The identifier of the servicePrincipal making the request. |
-| SignInActivityId | String | The identifier representing the sign-in activities. |
-| SourceSystem | String | The type of agent that collected the event. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics. |
+| SignInActivityId | String | The identifier representing the sign-in activitys. |
+| SourceSystem | String | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics. |
 | TenantId | String | The Log Analytics workspace ID. |
 | TimeGenerated | Datetime | The date and time the request was received. |
 | TokenIssuedAt | Datetime | The timestamp the token was issued at. |
-| Type | String | The name of the table |
+| Type | String | The name of the table. |
 | UserAgent | String | The user agent information related to request. |
 | UserId | String | The identifier of the user making the request. |
 
@@ -155,12 +155,11 @@ MicrosoftGraphActivity
 
 In the Logs Analytics interface, you can correlate the Microsoft Graph activity logs and other logs like sign-in logs and Azure AD activity reports. For example, you can join the Microsoft Graph activity logs with Azure AD activity reports to identify the user who made the request. The following query joins the Microsoft Graph activity logs with Azure AD audit logs to identify the user who made the request.
 
-
+<!--
 ## Limitations
 
-Some Microsoft Graph services communicate with other Microsoft services through Microsoft Graph APIs
-for background data reads or writes. Currently, the Microsoft Graph activity logs include logs for all
-requests to Microsoft Graph APIs for resources in your tenant. While the Microsoft Graph activity logs give you insights into the use of Microsoft Graph APIs in your tenant, we recommend using Azure AD and Microsoft 365 audit logs to analyze changes to tracked resources in your tenant, regardless of the source of the request.
+Some Microsoft Graph services communicate with other Microsoft services through Microsoft Graph APIs for background data reads or writes. Currently, the Microsoft Graph activity logs include logs for all requests to Microsoft Graph APIs for resources in your tenant. While the Microsoft Graph activity logs give you insights into the use of Microsoft Graph APIs in your tenant, we recommend using Azure AD and Microsoft 365 audit logs to analyze changes to tracked resources in your tenant, regardless of the source of the request.
+-->
 
 ## See also
 
