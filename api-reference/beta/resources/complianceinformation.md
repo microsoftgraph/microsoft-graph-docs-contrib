@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Contains compliance data associated with secure score control.
 
+## Properties
+
 |Property |Type |Description |
 |:--|:--|:--|
 |certificationControls | [certificationControl](certificationcontrol.md) collection | Collection of the certification controls associated with the certification. |
