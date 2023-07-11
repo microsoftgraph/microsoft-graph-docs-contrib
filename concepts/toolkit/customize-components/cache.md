@@ -12,7 +12,7 @@ The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls
 > [!TIP]
 > For more information about which entities are cached by each component, see the component's documentation.
 
-Databases created by mgt for caching are prefixed with `mgt-`. The data for each entity is stored in a separate object store. To inspect the cache, use the **Application** tab in the developer panel (F12 tools) - under the **Storage** section, click on the **IndexedDB** tab. 
+Databases created by mgt for caching are prefixed with `mgt-`. The data for each entity is stored in a separate object store. To inspect the cache, use the **Application** tab in the developer panel (F12 tools) - under the **Storage** section, click on the **IndexedDB** tab.
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 
@@ -85,12 +85,14 @@ CacheService.config.users.invalidationPeriod = 1800000;
 
 The cache is automatically cleared when the user signs out. It can also be cleared manually.
 
-The clear all the stores in the cache, the `clearCaches()` method of the `CacheService` class will clear every store maintained by the CacheService.
+To clear all the stores in the cache for the currently signed in user, use the `clearCacheById()` method of the `CacheService` class by passing the ID of the user's cache. To retrieve the user's cache ID, call the `getCacheId` method from the `Providers` class.
 
 ```JavaScript
+import { Providers } from '@microsoft/mgt';
 import { CacheService } from '@microsoft/mgt-element';
 
-CacheService.clearCaches();
+const cacheId = await Providers.getCacheId();
+CacheService.clearCacheById(cacheId);
 ```
 
 ## Creating your own cache stores
