@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	displayName = "Library Assist"
@@ -14,6 +14,6 @@ $params = @{
 	visibility = "public"
 }
 
-Copy-MgTeam -TeamId $teamId -BodyParameter $params
+Copy-MgBetaTeam -TeamId $teamId -BodyParameter $params
 
 ```

@@ -51,3 +51,4 @@ Remote actions Intune supports.
 |initiateMobileDeviceManagementKeyRecovery|28|Add device action of InitiateMobileDeviceManagementKeyRecovery|
 |initiateOnDemandProactiveRemediation|29|Add device action of InitiateOnDemandProactiveRemediation|
 |rotateLocalAdminPassword|32|Add device action of RotateLocalAdminPassword|
+|unknownFutureValue|33|Evolvable enumeration sentinel value. Do not use.|

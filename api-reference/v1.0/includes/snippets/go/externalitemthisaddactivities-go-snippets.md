@@ -8,15 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconnections "github.com/microsoftgraph/msgraph-sdk-go/connections"
+	  graphexternal "github.com/microsoftgraph/msgraph-sdk-go/external"
 	  graphmodelsexternalconnectors "github.com/microsoftgraph/msgraph-sdk-go/models/externalconnectors"
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphconnections.NewAddActivitiesPostRequestBody()
+requestBody := graphexternal.NewAddActivitiesPostRequestBody()
 
 
 externalActivity := graphmodelsexternalconnectors.NewExternalActivity()
@@ -36,7 +36,7 @@ activities := []graphmodelsexternalconnectors.ExternalActivityable {
 }
 requestBody.SetActivities(activities)
 
-result, err := graphClient.Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").MicrosoftGraphExternalConnectorsAddActivities().Post(context.Background(), requestBody, nil)
+result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").MicrosoftGraphExternalConnectorsAddActivities().Post(context.Background(), requestBody, nil)
 
 
 ```

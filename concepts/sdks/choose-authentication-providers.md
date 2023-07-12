@@ -57,19 +57,9 @@ The [Azure Identity Client Module for Go](https://pkg.go.dev/github.com/Azure/az
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-You can choose from any of the synchronous classes listed [here](/python/api/azure-identity/azure.identity?view=azure-python&preserve-view=true) or they asynchronous class listed [here](/python/api/azure-identity/azure.identity.aio?view=azure-python&preserve-view=true). In the following example we are using [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true).
+In the following example we are using the asynchronous [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.authorizationcodecredential?view=azure-python&preserve-view-true) of this credential.
 
-```python
-from azure.identity.aio import AuthorizationCodeCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-
-credential=AuthorizationCodeCredential(
-    tenant_id = 'TENANT_ID',
-    client_id = 'CLIENT_ID',
-    authorization_code = 'AUTH_CODE',
-    redirect_uri = 'REDIRECT_URL')
-auth_provider = AzureIdentityAuthenticationProvider(credential)
-```
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="AuthorizationCodeSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
@@ -121,18 +111,17 @@ The client credential flow enables service applications to run without user inte
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-You can choose from any of the synchronous classes listed [here](/python/api/azure-identity/azure.identity?view=azure-python&preserve-view=true) or they asynchronous class listed [here](/python/api/azure-identity/azure.identity.aio?view=azure-python&preserve-view=true). In the following example we are using [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true).
+### Using a client certificate
 
-```python
-from azure.identity.aio import ClientSecretCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+In the following example we are using the asynchronous [CertificateCredential](/python/api/azure-identity/azure.identity.aio.certificatecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.certificatecredential?view=azure-python&preserve-view-true) of this credential.
 
-credential=ClientSecretCredential(
-    tenant_id = 'TENANT_ID',
-    client_id = 'CLIENT_ID',
-    client_secret = 'CLIENT_SECRET')
-auth_provider = AzureIdentityAuthenticationProvider(credential)
-```
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="ClientCertificateSnippet":::
+
+### Using a client secret
+
+In the following example we are using the asynchronous [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.clientsecretcredential?view=azure-python&preserve-view-true) of this credential.
+
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="ClientSecretSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
@@ -166,19 +155,9 @@ The on-behalf-of flow is applicable when your application calls a service/web AP
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-For details on the library see [OnBehalfOfCredential Class](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true).
+In the following example we are using the asynchronous [OnBehalfOfCredential](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.onbehalfofcredential?view=azure-python&preserve-view-true) of this credential.
 
-```python
-from azure.identity.aio import OnBehalfOfCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-
-credential=OnBehalfOfCredential(
-    tenant_id = 'TENANT_ID',
-    client_id = 'CLIENT_ID',
-    client_secret = 'CLIENT_SECRET',
-    user_assertion = 'USER_ASSERTION')
-auth_provider = AzureIdentityAuthenticationProvider(credential)
-```
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="OnBehalfOfSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
@@ -208,15 +187,7 @@ The device code flow enables sign in to devices by way of another device. For de
 
 ### [Python](#tab/python)
 
-```python
-from azure.identity import DeviceCodeCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-
-# Create authentication provider object. Used to authenticate request
-credential = DeviceCodeCredential(client_id = 'CLIENT_ID')
-scopes = ['https://graph.microsoft.com/.default']
-auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
-```
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="DeviceCodeSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
@@ -276,15 +247,7 @@ The interactive flow is used by mobile applications (Xamarin and UWP) and deskto
 
 ### [Python](#tab/python)
 
-```python
-from azure.identity import InteractiveBrowserCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-
-# Create authentication provider object. Used to authenticate request
-credential = InteractiveBrowserCredential()
-scopes = ['https://graph.microsoft.com/.default']
-auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
-```
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="InteractiveSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
@@ -310,15 +273,7 @@ The username/password provider allows an application to sign in a user by using 
 
 ### [Python](#tab/python)
 
-```python
-from azure.identity import UsernamePasswordCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-
-# Create authentication provider object. Used to authenticate request
-credential = UsernamePasswordCredential(CLIENT_ID, USERNAME, PASSWORD)
-scopes = ['https://graph.microsoft.com/.default']
-auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
-```
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="UserNamePasswordSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
