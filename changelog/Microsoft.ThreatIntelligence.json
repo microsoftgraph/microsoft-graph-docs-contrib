@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
+          "ApiChange": "Resource",
+          "ChangedApiName": "childHostPairs",
+          "ChangeType": "Addition",
+          "Description": "Added the **childHostPairs** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostPairs",
+          "ChangeType": "Addition",
+          "Description": "Added the **hostPairs** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
+          "ApiChange": "Resource",
+          "ChangedApiName": "parentHostPairs",
+          "ChangeType": "Addition",
+          "Description": "Added the **parentHostPairs** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostPair",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostPair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostPair?view=graph-rest-beta) resource",
+          "Target": "hostPair"
+        },
+        {
+          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostPairs",
+          "ChangeType": "Addition",
+          "Description": "Added the **hostPairs** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
+        }
+      ],
+      "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-12T20:24:39.6442065Z",
+      "WorkloadArea": "Microsoft.ThreatIntelligence",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "01daeb88-0ba8-4bcf-b85d-5130e7813a0d",
           "ApiChange": "Resource",
           "ChangedApiName": "entity",
