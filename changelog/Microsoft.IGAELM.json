@@ -468,27 +468,11 @@
         },
         {
           "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
-          "ApiChange": "Property",
-          "ChangedApiName": "customExtensionCalloutInstances",
-          "ChangeType": "Addition",
-          "Description": "Added the `customExtensionCalloutInstances` property to the [accessPackageAssignment](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-1.0) resource.",
-          "Target": "accessPackageAssignment"
-        },
-        {
-          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
           "ApiChange": "Relationship",
           "ChangedApiName": "customExtensionStageSettings",
           "ChangeType": "Addition",
           "Description": "Added the **customExtensionStageSettings** relationship to the [accessPackageAssignmentPolicy](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-1.0) resource.",
           "Target": "accessPackageAssignmentPolicy"
-        },
-        {
-          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
-          "ApiChange": "Property",
-          "ChangedApiName": "customExtensionCalloutInstances",
-          "ChangeType": "Addition",
-          "Description": "Added the `customExtensionCalloutInstances` property to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
-          "Target": "accessPackageAssignmentRequest"
         },
         {
           "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",

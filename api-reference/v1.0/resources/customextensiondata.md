@@ -11,11 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-This is an abstract type noting the data being sent and received as part of extensibility scenarios based on [custom callout extensions](../resources/customcalloutextension.md). The following types are derived from this abstract type:
+This is an abstract type noting the data being sent and received as part of extensibility scenarios based on [custom callout extensions](../resources/customcalloutextension.md). The following type is derived from this abstract type:
 
 - [accessPackageAssignmentRequestCallbackData](../resources/accesspackageassignmentrequestcallbackdata.md)
-- [customTaskExtensionCalloutData](../resources/identitygovernance-customtaskextensioncalloutdata.md)
-- [customTaskExtensionCallbackData](../resources/identitygovernance-customtaskextensioncallbackdata.md)
 
 ## Properties
 None.
