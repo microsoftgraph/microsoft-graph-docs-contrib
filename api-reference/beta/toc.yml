@@ -15305,7 +15305,7 @@ items:
           - name: Custom security attributes audit
             href: resources/customsecurityattributeaudit.md
           - name: List custom security attribute audits
-            href: api/auditlogroot-list-customsecurityattributeaudits.md
+            href: api/customsecurityattributeaudit-list.md
           - name: Get custom security attribute audit
             href: api/customsecurityattributeaudit-get.md
         - name: Sign-in
