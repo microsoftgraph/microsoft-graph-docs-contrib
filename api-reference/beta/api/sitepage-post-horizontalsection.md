@@ -56,13 +56,6 @@ If successful, this method returns a `201 Created` response code and a created [
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_horizontalsection"
-}
--->
-
 ```http
 POST https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/horizontalSections
 Content-Type: application/json
