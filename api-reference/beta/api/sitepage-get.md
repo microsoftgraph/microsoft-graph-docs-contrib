@@ -74,7 +74,7 @@ If successful, this method returns a `200` and a [sitePage](../resources/sitepag
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages/{page-id}
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
 ```
 
 # [C#](#tab/csharp)
@@ -163,7 +163,7 @@ With `select` and `expand` statements, you can retrieve sitePage metadata and pa
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages/{page-id}
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
 ```
 
 
@@ -255,7 +255,7 @@ Content-type: application/json
 To access the page with page content, append the `?expand=canvasLayout` query string.
 
 ```http
-GET /sites/{site-id}/pages/{page-id}?expand=canvasLayout
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage?expand=canvasLayout
 ```
 
 #### Response

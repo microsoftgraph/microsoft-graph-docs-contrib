@@ -61,7 +61,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, 
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages
+GET /sites/{site-id}/pages/microsoft.graph.sitePage
 ```
 
 ### Response
