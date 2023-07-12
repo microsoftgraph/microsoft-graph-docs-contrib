@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getInaccessibleCloudPcReports"
-description: "Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, system status, and date and time."
+description: "Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -8,11 +8,12 @@ doc_type: apiPageType
 ---
 
 # cloudPcReports: getInaccessibleCloudPcReports
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, system status, and date and time. An inaccessible Cloud PC represents a Cloud PC that is in an unavailable state (at least one of the health checks failed) or has consecutive user connections failure.
+Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status. An inaccessible Cloud PC represents a Cloud PC that is in an unavailable state (at least one of the health checks failed) or has consecutive user connections failure.
 
 ## Permissions
 
