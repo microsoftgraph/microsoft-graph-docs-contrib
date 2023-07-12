@@ -32,16 +32,16 @@ The threat intelligence API allows you to operationalize intelligence found with
 |[Get hostComponent](../api/security-hostcomponent-get.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) |Get the properties and relationships of a **hostComponent** object.|
 |[Get hostCookie](../api/security-hostcookie-get.md)|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) |Get a list of **hostCookie** resources.|
 |[Get hostPair](../api/security-hostpair-get.md)|[microsoft.graph.security.host](../resources/security-hostpair.md) |Read the properties and relationships of a **hostPair** object.|
-|[List childrenHostPairs](../api/security-host-list-childrenhostpairs.md)|[microsoft.graph.security.host](../resources/security-hostpair.md) |Get a list of **hostPair** resources for the host, where that host is the child|
+|[List childHostPairs](../api/security-host-list-childhostpairs.md)|[microsoft.graph.security.host](../resources/security-hostpair.md) |Get a list of **hostPair** resources for the host, where that host is the child|
 |[List hostPairs](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.host](../resources/security-hostpair.md) |Get a list of **hostPair** resources for the host.|
 |[List parentHostPairs](../api/security-host-list-parenthostpairs.md)|[microsoft.graph.security.host](../resources/security-hostpair.md) |Get a list of **hostPair** resources for the host, where that host is the parent|
 |[Get hostTracker](../api/security-hosttracker-get.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) |Get a list of **hostTracker** resources.|
 |[Get intelProfileIndicators](../api/security-intelligenceprofileindicator-get.md)|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|Get a list of **intelligenceProfileIndicator** resources.|
-|[List intelProfiles](../api/security-intelligenceprofile-list.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Get a list of **intelligenceProfile** resources.|
-|[Get hostTracker](../api/security-hosttracker-get.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) |Get a list of **hostTracker** resources.|
-|[Get passiveDnsRecord](../api/security-passivednsrecord-get.md)|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) |Get the properties and relationships of a **hostTracker** object.|
-|[Get subdomain](../api/security-subdomain-get.md)|[microsoft.graph.security.subdomain](../resources/security-subdomain.md) |Get the properties and relationships of a **subdomain** object.|
-|[Get vulnerabilities](../api/security-vulnerability-get.md)|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) |Get the properties and relationships of a **vulnerability** object.|
+| [List intelProfiles](../api/security-intelligenceprofile-list.md)               |[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Get a list of **intelligenceProfile** resources.|
+| [Get hostTracker](../api/security-hosttracker-get.md)                           |[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) |Get a list of **hostTracker** resources.|
+| [Get passiveDnsRecord](../api/security-passivednsrecord-get.md)                 |[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) |Get the properties and relationships of a **hostTracker** object.|
+| [Get subdomain](../api/security-subdomain-get.md)                               |[microsoft.graph.security.subdomain](../resources/security-subdomain.md) |Get the properties and relationships of a **subdomain** object.|
+| [Get vulnerabilities](../api/security-vulnerability-get.md)                     |[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) |Get the properties and relationships of a **vulnerability** object.|
 
 ## Properties
 

@@ -23,7 +23,7 @@ Represents a pair of parent and child hosts where the child host was able to be 
 |[Get hostPair](../api/security-hostpair-get.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md)|Read the properties and relationships of a [microsoft.graph.security.hostPair](../resources/security-hostpair.md) object.|
 |[List hostPairs for a host](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of the [microsoft.graph.security.hostPair](../resources/security-hostpair.md) objects associated with a host, where the host is **either** the parent or child.|
 |[List parentHostPairs for a host](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of the [microsoft.graph.security.hostPair](../resources/security-hostpair.md) objects associated with a host, where the host is the **parent**.|
-|[List childrenHostPairs for a host](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of the [microsoft.graph.security.hostPair](../resources/security-hostpair.md) objects associated with a host, where the host is the **child**.|
+| [List childHostPairs for a host](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of the [microsoft.graph.security.hostPair](../resources/security-hostpair.md) objects associated with a host, where the host is the **child**.|
 
 ## Properties
 |Property|Type|Description|

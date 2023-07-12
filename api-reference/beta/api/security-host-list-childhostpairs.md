@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List childrenHostPairs
+# List childHostPairs
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET threatIntelligence/hosts/{hostId}/childrenHostPairs
+GET threatIntelligence/hosts/{hostId}/childHostPairs
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com/childrenHostPairs
+GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com/childHostPairs
 ```
 
 ### Response
