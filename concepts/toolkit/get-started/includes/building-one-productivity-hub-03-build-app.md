@@ -17,7 +17,7 @@ In this step, you'll create a web app and enable authentication with the Microso
 1. To enable authentication with Microsoft Graph Toolkit via mgt-loader, add the following reference in **index.html** inside the `<body></body>` section:
 
     ```HTML
-    <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
+    <script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
     ```
 
 ### Initialize the MSAL2 provider
@@ -58,7 +58,7 @@ In this step, you'll create a web app and enable authentication with the Microso
       <script src='main.js'></script>
     </head>
     <body>
-      <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
+      <script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
       <mgt-msal2-provider
           client-id="<YOUR_CLIENT_ID>"
           scopes="User.Read,

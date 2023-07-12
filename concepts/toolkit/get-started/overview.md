@@ -36,7 +36,7 @@ You can use Microsoft Graph Toolkit in your application by referencing the loade
 To use the toolkit via `mgt-loader`, add the reference in a script to your code:
 
 ```html
-<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
 
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
