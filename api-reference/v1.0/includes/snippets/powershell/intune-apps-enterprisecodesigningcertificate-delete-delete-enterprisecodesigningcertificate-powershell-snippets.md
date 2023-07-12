@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Devices.CorporateManagement
+Import-Module Microsoft.Graph.Beta.Devices.CorporateManagement
 
-Remove-MgDeviceAppMgtEnterpriseCodeSigningCertificate -EnterpriseCodeSigningCertificateId $enterpriseCodeSigningCertificateId
+Remove-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate -EnterpriseCodeSigningCertificateId $enterpriseCodeSigningCertificateId
 
 ```
