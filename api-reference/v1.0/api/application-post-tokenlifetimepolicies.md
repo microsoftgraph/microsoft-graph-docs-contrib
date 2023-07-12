@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Assign a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) to an [application](../resources/application.md).
 
+>**Note:** We can have multiple tokenLifetimePolicy policies in a tenant but only one tokenLifetimePolicy per application can be assigned.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
