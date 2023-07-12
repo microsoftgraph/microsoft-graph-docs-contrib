@@ -24,6 +24,10 @@ Represents a container for Azure Active Directory (Azure AD) reporting resources
 | [getAzureADApplicationSignInSummary](../api/reportroot-getazureadapplicationsigninsummary.md)         | [applicationSignInSummary](applicationsigninsummary.md)                                           | Read the properties and relationships of an **applicationSignInSummary** object.                                                                  |
 | [List credentialUserRegistrationDetails](../api/reportroot-list-credentialuserregistrationdetails.md) | [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) collection | Get the details of credentialUserRegistrationDetails objects for a given tenant.                                                                  |
 | [List userCredentialUsageDetails](../api/reportroot-list-usercredentialusagedetails.md)               | [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection               | Get the userCredentialUsageDetails objects for a given tenant. Details include user information, status of the reset, and the reason for failure. |
+|[List reportRoots](../api/reportroot-list.md)|[reportRoot](../resources/reportroot.md) collection|Get a list of the [reportRoot](../resources/reportroot.md) objects and their properties.|
+|[Get reportRoot](../api/reportroot-get.md)|[reportRoot](../resources/reportroot.md)|Read the properties and relationships of a [reportRoot](../resources/reportroot.md) object.|
+|[List userInsightsRoot](../api/reportroot-list-userinsights.md)|[userInsightsRoot](../resources/userinsightsroot.md) collection|Get the userInsightsRoot resources from the userInsights navigation property.|
+
 <!--Temporarily hide these functions until we document them and others.
 |[getAzureADLicenseUsage](../api/reportroot-getazureadlicenseusage.md)|[azureADLicenseUsage](../resources/azureadlicenseusage.md) collection|**TODO: Add Description**|
 |[getAzureADUserFeatureUsage](../api/reportroot-getazureaduserfeatureusage.md)|[azureADUserFeatureUsage](../resources/azureaduserfeatureusage.md) collection|**TODO: Add Description**|
@@ -45,6 +49,7 @@ None.
 | security                          | [securityReportsRoot](../resources/securityreportsroot.md)                                        | Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.             |
 | servicePrincipalSignInActivities  | [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) collection       | Represents a collection of sign-in activities of service principals.                                                   |
 | userCredentialUsageDetails        | [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection               | Represents the self-service password reset (SSPR) usage for a given tenant.                                         |
+|userInsights|[userInsightsRoot](../resources/userinsightsroot.md)|Provides user insights activities for Azure AD for customers tenant. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
