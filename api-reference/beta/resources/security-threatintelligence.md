@@ -31,7 +31,7 @@ The threat intelligence API allows you to operationalize intelligence found with
 |[Get host](../api/security-host-get.md)|[microsoft.graph.security.host](../resources/security-host.md) |Get a list of **host** resources.|
 |[Get hostComponent](../api/security-hostcomponent-get.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) |Get the properties and relationships of a **hostComponent** object.|
 |[Get hostCookie](../api/security-hostcookie-get.md)|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) |Get a list of **hostCookie** resources.|
-|[Get hostPair](../api/security-host-hostpair-get.md)|[microsoft.graph.security.host](../resources/security-hostpair.md) |Read the properties and relationships of a **hostPair** object.|
+|[Get hostPair](../api/security-hostpair-get.md)|[microsoft.graph.security.host](../resources/security-hostpair.md) |Read the properties and relationships of a **hostPair** object.|
 |[List childrenHostPairs](../api/security-host-list-childrenhostpairs.md)|[microsoft.graph.security.host](../resources/security-hostpair.md) |Get a list of **hostPair** resources for the host, where that host is the child|
 |[List hostPairs](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.host](../resources/security-hostpair.md) |Get a list of **hostPair** resources for the host.|
 |[List parentHostPairs](../api/security-host-list-parenthostpairs.md)|[microsoft.graph.security.host](../resources/security-hostpair.md) |Get a list of **hostPair** resources for the host, where that host is the parent|
