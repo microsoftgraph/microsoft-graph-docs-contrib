@@ -1,0 +1,55 @@
+---
+title: "userRequestsMetric resource type"
+description: "Insights for all user requests to a tenant for a specific period"
+author: "kingjuli"
+ms.localizationpriority: medium
+ms.prod: "user-insights"
+doc_type: resourcePageType
+---
+
+# userRequestsMetric resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Insights for all user requests to a tenant for a specific period. This involves all requests including authentication requests, signup requests, mfa requests etc.
+
+> **_NOTE:_**
+> The user requests here are aggregated as is with no filtering. The value returned might not reflect the most updated numbers.
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List dailyUserRequestsMetrics](../api/dailyuserinsightmetricsroot-list-requests.md)|Daily [userRequestsMetric](../resources/userrequestsmetric.md) collection|Get a list of the daily [userRequestsMetric](../resources/userrequestsmetric.md) objects and their properties.|
+|[List monthlyUserRequestsMetrics](../api/monthlyuserinsightmetricsroot-list-requests.md)| Monthly [userRequestsMetric](../resources/userrequestsmetric.md) collection|Get a list of the monthly [userRequestsMetric](../resources/userrequestsmetric.md) objects and their properties.|
+
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|`factDate`|`Date`|The date of the user insight|
+|`id`|`String`|Identifier for the user insight|
+|`requestCount`|`Int64`|Number of requests that came to the tenant. (Filterable)|
+
+## Relationships
+None.
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.userRequestsMetric",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.userRequestsMetric",
+  "id": "String (identifier)",
+  "factDate": "Date",
+  "requestCount": "Integer"
+}
+```
+
