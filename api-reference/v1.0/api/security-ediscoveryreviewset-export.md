@@ -63,7 +63,6 @@ If the export has started successfully, this action returns a `202 Accepted` res
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "ediscoveryreviewsetthis.export"
@@ -80,7 +79,6 @@ Content-Type: application/json
     "exportStructure": "directory"
 }
 ```
----
 
 ### Response
 
