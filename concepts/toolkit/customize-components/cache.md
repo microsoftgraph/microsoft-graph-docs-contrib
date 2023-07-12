@@ -12,7 +12,7 @@ The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls
 > [!TIP]
 > For more information about which entities are cached by each component, see the documentation for that component.
 
-Databases created by the Toolkit for caching are prefixed with `mgt-`. The data for each entity is stored in a separate object store. To inspect the cache, use the **Application** tab in the developer panel (F12 tools): In the **Storage** section, choose the **IndexedDB** tab.
+Databases created by the Toolkit for caching are prefixed with `mgt-`. The data for each entity is stored in a separate object store. To inspect the cache, use the **Application** tab in the developer panel (F12 tools). In the **Storage** section, choose the **IndexedDB** tab.
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 
