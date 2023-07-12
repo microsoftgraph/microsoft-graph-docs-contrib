@@ -67,7 +67,7 @@ The activities component is a transient property that is used to send [activitie
 
 An activity consists of an actor (who performed the activity), a time (when the activity was performed), and an activity type (what type of activity was performed). The activity types that are currently supported can be found in the **Description** section of the `type` property for an [externalActivity](/graph/api/resources/externalconnectors-externalactivity). 
 
-Sending activities on the item powers intelligent recommendation experiences across Microsoft 365. End users will be able to receive content tailored to them based off the activities that are sent. 
+Sending activities on the item powers intelligent recommendation experiences across Microsoft 365. End users will be able to receive content tailored to them based on the activities that are sent. 
 
 ## Add an item
 
@@ -90,9 +90,9 @@ Content-Type: application/json
 
 
 ## Add activities to an item
-To add activities to a given item, you call the [addActivities](/graph/api/externalconnectors-externalitem-addactivities) endpoint, with the same unique identifier for that item in the URL.
+To add activities to an item, you call the [addActivities](/graph/api/externalconnectors-externalitem-addactivities) endpoint, with the same unique identifier for that item in the URL.
 
-For example, if Joe Bloggs with Azure AD ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on April 11, 2022 at 4:25PM, the request to send that activity might look like the following:
+For example, if Joe Bloggs with Azure AD ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on April 11, 2022 at 4:25PM, the request to send that activity might look like the following.
 
 ```http
 POST /external/connections/contosohelpdesk/items/SR00145/addActivities
