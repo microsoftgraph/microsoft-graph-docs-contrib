@@ -1,22 +1,22 @@
 ---
-title: "Microsoft Graph connectors experiences"
-description: "The list of experiences that Graph connectors is able to participate in and the set of requirements to build a connector for said experience"
+title: "Microsoft Graph connector experiences"
+description: "Discover the experiences that you can enable with Microsoft Graph connectors and the requirements to build those experiences."
 author: monaray
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
 ---
 
-# Microsoft Graph connectors experiences
+# Microsoft Graph connector experiences
 
-Microsoft Graph connectors offer an intuitive way to bring content from external services into Microsoft Graph and the Semantic Search index. This enables you to make external data discoverable across a set of Microsoft 365 experiences.
+Microsoft Graph connectors offer an intuitive way to bring content from external services into Microsoft Graph and the semantic search index. This enables you to make external data discoverable across a set of Microsoft 365 experiences.
 
 This article describes the experiences that you can enable with Microsoft Graph connectors and the requirements to enable those experiences.
 
-To enable these experiences, you must first build a basic Microsoft Graph connector. For details about how to create a connection, register your schema, and ingest items with correct access control list, see [Work with the Microsoft Graph connectors API](connecting-external-content-connectors-api-overview). 
+To enable these experiences, you must first build a basic Microsoft Graph connector. For details about how to create a connection, register your schema, and ingest items with the correct access control list, see [Work with the Microsoft Graph connectors API](connecting-external-content-connectors-api-overview). 
 
 ## Microsoft Search 
-[Microsoft Search](microsoftsearch/connectors-overview) with Microsoft Graph connectors allows your third-party data to be searchable for users in the Microsoft Search endpoints, including Office.com, Bing at Work, and SharePoint. 
+[Microsoft Search](microsoftsearch/connectors-overview) with Microsoft Graph connectors allows your custom data to be searchable for users in the Microsoft Search endpoints, including Office.com, Bing at Work, and SharePoint. 
 
 To configure your connector for Microsoft Search:
 - Apply [semantic labels](graph/connecting-external-content-manage-schema#semantic-labels) to your [schema](graph/api/resources/externalconnectors-schema). Semantic labels help with ranking, relevance, and default display templates in search results.
