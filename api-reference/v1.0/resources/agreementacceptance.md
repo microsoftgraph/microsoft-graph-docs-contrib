@@ -4,7 +4,7 @@ description: "Represents the current status of a user within scope of a company'
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: raprakasMSFT
+author: AlexFilipin
 ---
 
 # agreementAcceptance resource type
