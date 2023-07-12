@@ -597,7 +597,6 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 
 The following example shows the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_7"
