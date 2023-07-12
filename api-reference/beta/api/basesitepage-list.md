@@ -69,7 +69,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, 
 }
 -->
 
-```msgraph-interactive
+```http
 GET /sites/{site-id}/pages
 ```
 
