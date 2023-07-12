@@ -589,9 +589,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 7: Notify about pending finance approval requests in channel Message Reply Location
+### Example 7: Notify about pending finance approval requests in channel Message reply location
 
-Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a reply (Only applies to chat messages in channels, not chats.) [Get Reply To a Message In Channel](../api/chatmessage-get.md#example-3-get-reply-to-a-message-in-a-channel). The reply hosts a message showing the user the status of their hotel reservation. Selecting the notification will take the user to the reply to Message in channel, where they can check their status.
+Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a [channel message reply](../api/chatmessage-get.md#example-3-get-reply-to-a-message-in-a-channel). The channel message reply shows the status of the user's hotel reservation. Selecting the notification will take the user to the reply message in the channel, where they can check their reservation status.
 
 #### Request
 
@@ -610,7 +610,7 @@ Content-Type: application/json
 {
     "topic": {
         "source": "entityUrl",
-        "value": "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{ParentMessageId}/replies/{MessageReplyId}"
+        "value": "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}"
     },
     "activityType": "reservationStatusUpdated",
     "previewText": {
