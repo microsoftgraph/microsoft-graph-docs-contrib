@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b
 [!INCLUDE [sample-code](../includes/snippets/php/tenantreferencethisremovepersonaldata-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tenantreferencethisremovepersonaldata-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/tenantreferencethisremovepersonaldata-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
