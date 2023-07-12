@@ -15166,16 +15166,6 @@ items:
           items:
           - name: List provisioning
             href: api/provisioningobjectsummary-list.md
-      - name: Azure AD SLA attainment
-        items:
-        - name: Azure AD Authentication
-          href: resources/azureadauthentication.md
-        - name: Service Level Agreement
-          href: resources/servicelevelagreementroot.md
-        - name: Service Level Agreement attainment
-          href: resources/servicelevelagreementattainment.md
-        - name: Get Azure AD Authentication
-          href: api/azureadauthentication-get.md
       - name: Identity and access reports
         items:
         - name: Overview
@@ -15208,6 +15198,16 @@ items:
               href: api/reportroot-list-applicationsignindetailedsummary.md
             - name: Get sign-in details
               href: api/applicationsignindetailedsummary-get.md
+        - name: Azure AD SLA attainment
+          items:
+          - name: Azure AD Authentication
+            href: resources/azureadauthentication.md
+          - name: Service Level Agreement
+            href: resources/servicelevelagreementroot.md
+          - name: Service Level Agreement attainment
+            href: resources/servicelevelagreementattainment.md
+          - name: Get Azure AD Authentication
+            href: api/azureadauthentication-get.md
         - name: Registration and usage
           items:
           - name: Overview
