@@ -80,6 +80,7 @@ Content-Type: application/json
     "exportStructure": "directory"
 }
 ```
+---
 
 ### Response
 
