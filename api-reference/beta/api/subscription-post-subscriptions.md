@@ -66,7 +66,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported.  | Not supported.  |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported.  | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
-|[online meeting](../resources/onlinemeeting.md) | Not supported.  | Not supported.  | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+|[onlineMeeting](../resources/onlinemeeting.md) | Not supported.  | Not supported.  | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Not supported.  | Not supported.  |
 |[printer](../resources/printer.md) | Not supported.  | Not supported.  | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported.  | Not supported.  | PrintTaskDefinition.ReadWrite.All |
@@ -190,29 +190,28 @@ The following are valid values for the resource property.
 
 | Resource type | Examples |
 |:------ |:----- |
-|[baseTask](../resources/basetask.md) (deprecated) | `/me/tasks/lists/{Id}/tasks`
-|[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
-|[callTranscript](/graph/api/resources/calltranscript) | `communications/onlineMeetings/getAllTranscripts`, <br> `communications/onlineMeetings/{onlineMeetingId}/transcripts`|
-|[Channels](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
-|[Chat](../resources/chat.md)|`/chats`, `/chats/{id}`|
-|[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
-|[Contacts](../resources/contact.md)|`me/contacts`|
-|[ConversationMember](../resources/conversationmember.md)|`/chats/{id}/members`, `/chats/getAllMembers`, `/teams/{id}/members`, `/teams/getAllMembers`, `/teams/{id}/channels/getAllMembers`|
-|[Conversations](../resources/conversation.md)|`groups('{id}')/conversations`|
-|[Drives](../resources/driveitem.md)|`me/drive/root`|
-|[Events](../resources/event.md)|`me/events`|
-|[Groups](../resources/group.md)|`groups`|
-|[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
-|[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[OnlineMeetings](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`|
-|[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ('{id}','{id}',…)` (multiple users)|
+|[callRecord](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[callTranscript](../resources/calltranscript.md) | `communications/onlineMeetings/getAllTranscripts`, `communications/onlineMeetings/{onlineMeetingId}/transcripts`|
+|[channel](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
+|[chat](../resources/chat.md)|`/chats`, `/chats/{id}`|
+|[chatMessage](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
+|[contact](../resources/contact.md)|`me/contacts`|
+|[conversationMember](../resources/conversationmember.md)|`/chats/{id}/members`, `/chats/getAllMembers`, `/teams/{id}/members`, `/teams/getAllMembers`, `/teams/{id}/channels/getAllMembers`|
+|[driveItem](../resources/driveitem.md)|`me/drive/root`|
+|[event](../resources/event.md)|`me/events`|
+|[group](../resources/group.md)|`groups`|
+|[group conversation](../resources/conversation.md)|`groups('{id}')/conversations`|
+|[list](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
+|[message](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[onlineMeeting](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`|
+|[presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ('{id}','{id}',…)` (multiple users)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
-|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
-|[Teams](../resources/team.md)|`/teams`, `/teams/{id}`|
-|[Users](../resources/user.md)|`users`|
-|[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
-|[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
-
+|[printTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
+|[team](../resources/team.md)|`/teams`, `/teams/{id}`|
+|[user](../resources/user.md)|`users`|
+|[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`|
+|[security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
+|[baseTask](../resources/basetask.md) (deprecated) | `/me/tasks/lists/{Id}/tasks`|
 
 > **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 
@@ -265,4 +264,3 @@ The subscription notification endpoint (specified in the **notificationUrl** pro
   ]
 }
 -->
-

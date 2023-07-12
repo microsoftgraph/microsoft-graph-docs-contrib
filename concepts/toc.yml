@@ -235,11 +235,11 @@ items:
                   - name: Chat and channel messages
                     href: teams-changenotifications-chatmessage.md
                   - name: Chat membership
-                    href: teams-changenotifications-chatMembership.md
-                  - name: Teams and channels
-                    href: teams-changenotifications-team-and-channel.md
+                    href: teams-changenotifications-chatmembership.md
                   - name: Team and channel membership
                     href: teams-changenotifications-teammembership.md
+                  - name: Teams and channels
+                    href: teams-changenotifications-team-and-channel.md
               - name: Notifications for Outlook resources
                 href: outlook-change-notifications-overview.md
       - name: Change tracking
