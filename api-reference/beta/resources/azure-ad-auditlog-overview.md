@@ -20,13 +20,14 @@ The availability of these activity reports is governed by the Azure AD data rete
 
 ## What are activity reports?
 
-Azure AD provides three types of activity reports:
+Azure AD provides four types of activity reports:
 
-- Directory audits
+- Directory audit logs
+- Custom security attribute audit logs
 - Sign-ins
 - Provisioning
 
-### Directory audits
+### Directory audit logs
 
 The directory audit report provides you with access to the history of every task performed in your tenant. The directory audit report provides you with records of system activities for compliance. Amongst others, the provided data enables you to address common scenarios such as:
 
@@ -34,12 +35,13 @@ The directory audit report provides you with access to the history of every task
 - Which users are signing in to a recently acquired app?
 - How many passwords resets were made within the directory?
 
-### Custom security attributes audit
+### Custom security attribute audit logs
 
+Custom security attribute audit logs provide you with the history of activities related to custom security attributes, such as adding a new definition to an attribute set. Custom security attribute audit logs are separate from other audit logs and have a different endpoint. Additional permissions are required to access these audit logs and by default a Global Administrator does not have access to these audit logs.
 
 ### Sign-ins
 
-The sign-ins report helps you determine who performed the tasks reported by directory audits. The sign-ins report helps you answer questions like:
+The sign-ins report helps you determine who performed the tasks reported by directory audit logs. The sign-ins report helps you answer questions like:
 
 - What is the sign in pattern of a user?
 - How many users have signed in during the last week?
@@ -60,6 +62,7 @@ Here are popular requests for working with report data:
 Operation | URL
 :----------|:----
 GET tenant user activities | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
+GET custom security attribute audit logs | [https://graph.microsoft.com/beta/auditLogs/customSecurityAttributeAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/customSecurityAttributeAudits&version=beta)
 GET tenant user sign-ins | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
 GET provisioning logs | [https://graph.microsoft.com/beta/auditLogs/provisioning](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/Provisioning&version=beta)
 
