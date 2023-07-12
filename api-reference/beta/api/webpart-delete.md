@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content`. It does not return anythi
 ### Request
 
 ```http
-DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}
+DELETE https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}
 ```
 ### Response
 

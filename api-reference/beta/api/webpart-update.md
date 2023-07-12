@@ -61,8 +61,6 @@ If successful, this method returns a `200 OK` response code and an updated [webP
 
 The following example shows how to update a webpart.
 
-<!-- { "blockType": "request", "name": "update-webpart", "scopes": "sites.readwrite.all" } -->
-
 ```http
 PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webpartId}
 Content-Type: application/json

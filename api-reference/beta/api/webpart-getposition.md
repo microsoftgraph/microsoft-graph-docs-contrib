@@ -62,27 +62,9 @@ If successful, this method returns a `200 OK` response code and a [webPartPositi
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "getposition_webpart"
-}
--->
-
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}/getPositionOfWebPart
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/getposition-webpart-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/getposition-webpart-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
