@@ -213,14 +213,14 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _AuditLog.Read.All_ | Read audit log data | Allows the app to read and query your audit log activities, on behalf of the signed-in user. | Yes | No |
-| _CustomSecAttributeAuditLogs.Read.All_ |  |  | Yes | No |
+| _CustomSecAttributeAuditLogs.Read.All_ | Read custom security attribute audit logs | Allows the app to read custom security attributes audit logs on your behalf. | Yes | No |
 
 #### Application permissions
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_AuditLog.Read.All_ |Read all audit log data |Allows the app to read and query your audit log activities, without a signed-in user. |Yes |
-|_CustomSecAttributeAuditLogs.Read.All_ |  |  |Yes |
+|_CustomSecAttributeAuditLogs.Read.All_ | Read custom security attribute audit logs | Allows the app to read audit logs for events that contain information about custom security attributes, on behalf of the signed-in user. | Yes |
 
 ---
 
