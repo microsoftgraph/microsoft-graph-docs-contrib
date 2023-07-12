@@ -455,7 +455,7 @@
           "Description": "Added the [dispositionReviewStage](https://learn.microsoft.com/en-us/graph/api/resources/security-dispositionReviewStage?view=graph-rest-v1.0) resource",
           "Target": "dispositionReviewStage"
         },
-           {
+        {
              "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
              "ApiChange": "Resource",
              "ChangedApiName": "appliedCategory",
@@ -611,7 +611,7 @@
          "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
          "Cloud": "Prod",
          "Version": "v1.0",
-         "CreatedDateTime": "2023-04-04T14:01:24.5697379Z",
+         "CreatedDateTime": "2023-07-24T14:01:24.5697379Z",
          "WorkloadArea": "Security",
          "SubArea": "Records management"
      }
