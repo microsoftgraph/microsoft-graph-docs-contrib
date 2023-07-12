@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities
 [!INCLUDE [sample-code](../includes/snippets/php/list-serviceprincipalsigninactivities-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceprincipalsigninactivities-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-serviceprincipalsigninactivities-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -199,6 +203,10 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities?$f
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-serviceprincipalsigninactivities-filter-appid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceprincipalsigninactivities-filter-appid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
