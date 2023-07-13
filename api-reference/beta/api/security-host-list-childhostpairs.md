@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get the list of [hostpair](../resources/security-hostpair.md) resources associated with a host, where that host is the *child*.
+Get the list of [hostpair](../resources/security-hostpair.md) resources associated with a host, where that host is the *parent* and has an outgoing pairing to a *cihld*.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,8 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 Do not supply a request body for this method.
 
 ## Response
-
-If successful, this method returns a `200 OK` response code and a collection of [hostPair](../resources/security-hostpair.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.hostPair](../resources/security-hostpair.md) objects in the response body.
 
 ## Examples
 
