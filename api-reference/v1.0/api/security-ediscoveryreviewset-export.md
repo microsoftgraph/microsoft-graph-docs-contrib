@@ -63,11 +63,22 @@ If the export has started successfully, this action returns a `202 Accepted` res
 
 The following is an example of a request.
 
-
 <!-- {
   "blockType": "request",
   "name": "ediscoveryreviewsetthis.export"
-}-->
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/273f11a1-17aa-419c-981d-ff10d33e420f/export
+Content-Type: application/json
+
+{
+    "outputName": "Export via API",
+    "description": "Export for the Contoso investigation",
+    "exportOptions": "originalFiles,tags",
+    "exportStructure": "directory"
+}
+```
 
 ### Response
 
