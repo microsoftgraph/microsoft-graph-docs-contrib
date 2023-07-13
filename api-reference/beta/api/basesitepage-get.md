@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the metadata for a [baseSitePage][] in the site pages [list][] in a [site][].
+Get the metadata for a [baseSitePage][] in the site pages [list][] in a [site][].
 
 [baseSitePage]: ../resources/baseSitePage.md
 [list]: ../resources/list.md
@@ -65,6 +65,8 @@ GET /sites/{site-id}/pages/{page-id}
 ```
 
 ### Response
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!--
 {
