@@ -52,11 +52,11 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 | Relationship      | Type                                                                                              | Description                                                |
 | :---------------- | :------------------------------------------------------------------------------------------------ | :--------------------------------------------------------- |
-| childHostPairs        | [microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection       | The **hostPairs** that are associated with this host, where this host is the *childHost*. |
-| hostPairs        | [microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection       | The **hostPairs** that are associated with this host, where this host is *either* the parentHost or childHost. |
+| childHostPairs        | [microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection       | The **hostPairs** that are resources associated with a host, where that host is the *parentHost* and has an outgoing pairing to a *cihldHost*. |
+| hostPairs        | [microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection       | The **hostPairs** that are associated with this host, where this host is *either* the *parentHost* or *childHost*. |
 | components        | [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection       | The **hostComponents** that are associated with this host. |
 | cookies           | [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection             | The **hostCookies** that are associated with this host.    |
-| parentHostPairs        | [microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection       | The **hostPairs** that are associated with this host, where this host is the *parentHost*. |
+| parentHostPairs        | [microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection       | The **hostPairs** that are associated with a host, where that host is the *childHost* and has an incoming pairing with a *parentHost*.|
 | passiveDns        | [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection | Passive DNS retrieval about this host.                     |
 | passiveDnsReverse | [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection | Reverse passive DNS retrieval about this host.             |
 | reputation        | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Represents a calculated reputation of this host.           |
