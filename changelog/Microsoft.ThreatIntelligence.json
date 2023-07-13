@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hostPair",
           "ChangeType": "Addition",
-          "Description": "Added the [hostPair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostPair?view=graph-rest-beta) resource",
+          "Description": "Added the [hostPair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostPair?view=graph-rest-beta) resource.",
           "Target": "hostPair"
         },
         {
