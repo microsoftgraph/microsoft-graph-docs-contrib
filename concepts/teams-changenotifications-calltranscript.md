@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 Change notifications enable you to subscribe to changes (create) to transcripts. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) is available after an online meeting.
 
-This article describes scenarios for the transcript resource. For more details, see [change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
+This article describes scenarios for the transcript resource. For more details, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
 ## Subscribe to transcripts available at tenant-level
 
@@ -19,7 +19,7 @@ To get change notifications for any transcript available for any online meeting 
 
 ### Permissions
 
-One of the following permissions are required to subscribe to `communications/onlineMeetings/getAllTranscripts`. To learn more on how to choose permissions, see [permissions](/graph/permissions-reference).
+One of the following permissions is required to subscribe to `communications/onlineMeetings/getAllTranscripts`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -51,7 +51,7 @@ To get change notifications for any transcript available for a particular online
 
 ### Permissions
 
-One of the following permissions are required to subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. To learn more on how to choose permissions, see [permissions](/graph/permissions-reference).
+One of the following permissions is required to subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
