@@ -60,8 +60,6 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_wip_windowsinformationprotectionapplearningsummary_update_update_windowsinformationprotectionapplearningsummary" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 Content-type: application/json
@@ -77,8 +75,6 @@ Content-length: 191
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windowsInformationProtectionAppLearningSummary" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
