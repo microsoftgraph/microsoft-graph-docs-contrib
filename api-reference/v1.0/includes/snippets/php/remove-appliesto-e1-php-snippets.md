@@ -9,16 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new $refDeleteRequestBody();
-$additionalData = [
-		'@odata.id' => 'https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}', 
-];
-$requestBody->setAdditionalData($additionalData);
 
-
-
-
-$graphServiceClient->applicationsById('application-id')->appManagementPolicies()->ref()->delete($requestBody);
+$graphServiceClient->applications()->byApplicationId('application-id')->appManagementPolicies()->byAppManagementPolicieId('appManagementPolicy-id')->ref()->delete();
 
 
 ```

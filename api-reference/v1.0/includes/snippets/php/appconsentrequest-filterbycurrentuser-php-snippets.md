@@ -11,11 +11,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AppConsentRequestRequestBuilderGetRequestConfiguration();
 $queryParameters = AppConsentRequestRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "userConsentRequests/any";
+$queryParameters->filter = "userConsentRequests/any(u:u/status eq 'InProgress')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequestsById('appConsentRequest-id')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequests()->byAppConsentRequestId('appConsentRequest-id')->get($requestConfiguration);
 
 
 ```

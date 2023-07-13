@@ -14,7 +14,7 @@ $requestBody->setDelegateMeetingMessageDeliveryOptions(new DelegateMeetingMessag
 
 
 
-$result = $graphServiceClient->usersById('user-id')->mailboxSettings()->patch($requestBody);
+$result = $graphServiceClient->users()->byUserId('user-id')->mailboxSettings()->patch($requestBody);
 
 
 ```

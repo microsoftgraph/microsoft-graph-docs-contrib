@@ -15,7 +15,7 @@ $queryParameters->expand = ["target"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentsById('accessPackageAssignment-id')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->assignments()->byAssignmentId('accessPackageAssignment-id')->get($requestConfiguration);
 
 
 ```

@@ -35,7 +35,7 @@ $requestBody->setHostedContents($hostedContentsArray);
 
 
 
-$result = $graphServiceClient->chatsById('chat-id')->messages()->post($requestBody);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->messages()->post($requestBody);
 
 
 ```

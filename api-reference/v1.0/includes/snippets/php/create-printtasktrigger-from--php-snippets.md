@@ -20,7 +20,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->print()->printersById('printer-id')->taskTriggers()->post($requestBody);
+$result = $graphServiceClient->print()->printers()->byPrinterId('printer-id')->taskTriggers()->post($requestBody);
 
 
 ```

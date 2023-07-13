@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Users/Item/Teamwork/SendActivityNotification"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
+requestBody := graphusers.NewSendActivityNotificationPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
 source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
@@ -36,7 +37,7 @@ keyValuePair.SetName(&name)
 value := "Task 12322"
 keyValuePair.SetValue(&value) 
 
-templateParameters := []graphmodels.KeyValuePairable {
+templateParameters := []graphusers.KeyValuePairable {
 	keyValuePair,
 
 }
