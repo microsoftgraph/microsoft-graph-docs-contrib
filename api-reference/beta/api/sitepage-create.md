@@ -59,6 +59,8 @@ If successful, this method returns a `201` and the created [sitePage](../resourc
 
 The following example shows how to create a new page.
 
+### Request
+
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
@@ -181,7 +183,7 @@ Content-Type: application/json
 
 ---
 
-## Response
+### Response
 
 If successful, this method returns a [sitePage][] in the response body for the created page.
 
