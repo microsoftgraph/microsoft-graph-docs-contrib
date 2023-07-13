@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsmanagedtenants.NewTenantCustomizedInformation()
@@ -34,7 +34,6 @@ tenantContactInformation.SetNotes(&notes)
 
 contacts := []graphmodelsmanagedtenants.TenantContactInformationable {
 	tenantContactInformation,
-
 }
 requestBody.SetContacts(contacts)
 website := "String"

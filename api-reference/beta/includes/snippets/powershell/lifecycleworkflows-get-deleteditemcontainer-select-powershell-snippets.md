@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId -Property "id,category,displayName,description,version,executionConditions" 
+Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId -Property "id,category,displayName,description,version,executionConditions" 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	clientId = "ef969797-201d-4f6b-960c-e9ed5f31dab5"
@@ -15,6 +15,6 @@ $params = @{
 	expiryTime = [System.DateTime]::Parse("2023-03-17T00:00:00Z")
 }
 
-New-MgOauth2PermissionGrant -BodyParameter $params
+New-MgBetaOauth2PermissionGrant -BodyParameter $params
 
 ```

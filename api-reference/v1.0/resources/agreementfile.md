@@ -4,7 +4,7 @@ description: "Represents a customizable terms of use agreement file that a tenan
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: raprakasMSFT
+author: AlexFilipin
 ---
 
 # agreementFile resource type

@@ -8,18 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new EducationOutcome
+var requestBody = new EducationFeedbackResourceOutcome
 {
 	OdataType = "#microsoft.graph.educationFeedbackResourceOutcome",
-	AdditionalData = new Dictionary<string, object>
+	FeedbackResource = new EducationWordResource
 	{
-		{
-			"feedbackResource" , new 
-			{
-				OdataType = "#microsoft.graph.educationWordResource",
-				DisplayName = "Document1.docx",
-			}
-		},
+		OdataType = "#microsoft.graph.educationWordResource",
+		DisplayName = "Document1.docx",
 	},
 };
 var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes.PostAsync(requestBody);

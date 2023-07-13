@@ -7,10 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = UnifiedRoleManagementPolicyRule()
+request_body = UnifiedRoleManagementPolicyExpirationRule()
 request_body.@odata_type = '#microsoft.graph.unifiedRoleManagementPolicyExpirationRule'
 
 request_body.id = 'Expiration_EndUser_Assignment'
+
+request_body.is_expiration_required = True
+
+request_body.maximumduration =  \DateInterval('PT1H45M')
 
 target = UnifiedRoleManagementPolicyRuleTarget()
 target.@odata_type = 'microsoft.graph.unifiedRoleManagementPolicyRuleTarget'
@@ -28,13 +32,6 @@ target.EnforcedSettings([])
 
 
 request_body.target = target
-additional_data = [
-'is_expiration_required' => true,
-'maximum_duration' => 'PT1H45M', 
-];
-request_body.additional_data(additional_data)
-
-
 
 
 

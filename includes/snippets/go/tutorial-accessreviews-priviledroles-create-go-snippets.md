@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessReviewScheduleDefinition()
@@ -20,40 +20,37 @@ displayName := "Review access of users and groups to privileged roles"
 requestBody.SetDisplayName(&displayName) 
 descriptionForAdmins := "Review access of users and groups to privileged roles"
 requestBody.SetDescriptionForAdmins(&descriptionForAdmins) 
-scope := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
+scope := graphmodels.NewPrincipalResourceMembershipsScope()
 
 
- := graphmodels.New()
+accessReviewScope := graphmodels.NewAccessReviewQueryScope()
 query := "/users"
-.SetQuery(&query) 
+accessReviewScope.SetQuery(&query) 
 queryType := "MicrosoftGraph"
-.SetQueryType(&queryType) 
- := graphmodels.New()
+accessReviewScope.SetQueryType(&queryType) 
+accessReviewScope1 := graphmodels.NewAccessReviewQueryScope()
 query := "/groups"
-.SetQuery(&query) 
+accessReviewScope1.SetQuery(&query) 
 queryType := "MicrosoftGraph"
-.SetQueryType(&queryType) 
+accessReviewScope1.SetQueryType(&queryType) 
 
-	principalScopes := []graphmodels.Objectable {
-		,
-		,
-
-	}
-
-
- := graphmodels.New()
-query := "/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1"
-.SetQuery(&query) 
-queryType := "MicrosoftGraph"
-.SetQueryType(&queryType) 
-
-	resourceScopes := []graphmodels.Objectable {
-		,
-
-	}
+principalScopes := []graphmodels.AccessReviewScopeable {
+	accessReviewScope,
+	accessReviewScope1,
 }
-scope.SetAdditionalData(additionalData)
+scope.SetPrincipalScopes(principalScopes)
+
+
+accessReviewScope := graphmodels.NewAccessReviewQueryScope()
+query := "/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1"
+accessReviewScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewScope.SetQueryType(&queryType) 
+
+resourceScopes := []graphmodels.AccessReviewScopeable {
+	accessReviewScope,
+}
+scope.SetResourceScopes(resourceScopes)
 requestBody.SetScope(scope)
 
 
@@ -65,7 +62,6 @@ accessReviewReviewerScope.SetQueryType(&queryType)
 
 reviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 requestBody.SetReviewers(reviewers)
 settings := graphmodels.NewAccessReviewScheduleSettings()

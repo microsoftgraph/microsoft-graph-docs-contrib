@@ -72,15 +72,50 @@ If successful, this method returns a `200 OK` response code and [todoTask](../re
 ## Example
 ### Request
 To track changes in the **todoTask** resources in a **todoTaskList** since the last round of change tracking, you would make one or more **delta** function calls to get the set of incremental changes. The following example shows how to begin a next round of change tracking, using the URL in the `@odata.deltaLink` returned from the last **delta** function call of the last round, which contains a `deltaToken`. This **delta** function call limits the maximum number of **todoTask** in the response body to 2.
- 
 
-### HTTP Request
-<!-- { "blockType": "ignored" } -->
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "todotask-delta-v1-e1",
+  "sampleKeys": ["gDbc8U7HGwADDZocJgAAAA=="]
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=w0vf2jHg2mBXU-I2AK0FSWl0dopNtG8u5YoM
-Prefer: odata.maxpagesize=2
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/todotask-delta-v1-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/todotask-delta-v1-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/todotask-delta-v1-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/todotask-delta-v1-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/todotask-delta-v1-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/todotask-delta-v1-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/todotask-delta-v1-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/todotask-delta-v1-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 If the request is successful, the response would include a state token, which is either a _skipToken_  
@@ -91,6 +126,12 @@ getting all the changes for that round.
 The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
 
 Note: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.todoTask"
+} -->
 
 ```http
 HTTP/1.1 200 OK

@@ -12,14 +12,13 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphcommunications.NewGetPresencesByUserIdPostRequestBody()
 ids := []string {
 	"fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
 	"66825e03-7ef5-42da-9069-724602c31f6b",
-
 }
 requestBody.SetIds(ids)
 

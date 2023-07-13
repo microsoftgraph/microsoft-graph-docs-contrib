@@ -20,32 +20,25 @@ $requestBody->setIsEnabled(true);
 
 $requestBody->setIsSchedulingEnabled(false);
 
-$executionConditions = new WorkflowExecutionConditions();
+$executionConditions = new TriggerAndScopeBasedConditions();
 $executionConditions->set@odatatype('#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
 
-$additionalData = [
-		'scope' => $executionConditions = new Scope();
-$		executionConditions->set@odatatype('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
+$executionConditionsScope = new RuleBasedSubjectSet();
+$executionConditionsScope->set@odatatype('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
 
-$		executionConditions->setRule('department eq \'Marketing\'');
-
-
-$executionConditions->setScope($scope);
-
-		'trigger' => $executionConditions = new Trigger();
-$		executionConditions->set@odatatype('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
-
-$		executionConditions->setTimeBasedAttribute('employeeLeaveDateTime');
-
-		$executionConditions->setOffsetInDays(7);
+$executionConditionsScope->setRule('department eq \'Marketing\'');
 
 
-$executionConditions->setTrigger($trigger);
+$executionConditions->setScope($executionConditionsScope);
+$executionConditionsTrigger = new TimeBasedAttributeTrigger();
+$executionConditionsTrigger->set@odatatype('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
 
-];
-$executionConditions->setAdditionalData($additionalData);
+$executionConditionsTrigger->setTimeBasedAttribute(new WorkflowTriggerTimeBasedAttribute('employeeleavedatetime'));
+
+$executionConditionsTrigger->setOffsetInDays(7);
 
 
+$executionConditions->setTrigger($executionConditionsTrigger);
 
 $requestBody->setExecutionConditions($executionConditions);
 $tasksTask1 = new Task();

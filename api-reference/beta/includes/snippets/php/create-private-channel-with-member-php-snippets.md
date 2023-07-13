@@ -18,7 +18,7 @@ $requestBody->setDisplayName('My First Private Channel');
 
 $requestBody->setDescription('This is my first private channels');
 
-$membersConversationMember1 = new ConversationMember();
+$membersConversationMember1 = new AadUserConversationMember();
 $membersConversationMember1->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember1->setRoles(['owner', ]);
