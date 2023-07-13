@@ -44,7 +44,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Parameter | Description | Example |
 | :--- | :--- | :--- |
-| [\$filter](/graph/query-parameters#filter-parameter) | Filters results (rows). | `/auditLogs/customSecurityAttributeAudits?&$filter=activityDateTime le 2023-01-24` |
+| [\$filter](/graph/query-parameters#filter-parameter) | Filters results (rows). | `/auditLogs/customSecurityAttributeAudits?&$filter=activityDateTime le 2024-01-24` |
 | [\$top](/graph/query-parameters#top-parameter) | Sets the page size of results. | `/auditLogs/customSecurityAttributeAudits?$top=1` |
 | [\$skiptoken](/graph/query-parameters#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. | `/auditLogs/customSecurityAttributeAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
@@ -117,7 +117,7 @@ Content-Type: application/json
         "result": "success",
         "resultReason": "",
         "activityDisplayName": "Add custom security attribute definition in an attribute set",
-        "activityDateTime": "2023-01-07T19:02:30.433478Z",
+        "activityDateTime": "2024-01-07T19:02:30.433478Z",
         "loggedByService": "Core Directory",
         "operationType": "Add",
         "userAgent": null,
