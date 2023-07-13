@@ -2543,14 +2543,6 @@ Possible values for user account types (group membership), per Windows definitio
 |actionUndefined|
 |unknownFutureValue|
 
-### layoutTemplateType values
-
-| Member             |
-| :----------------- |
-| default            |
-| verticalSplit      |
-| unknownFutureValue |
-
 ### attributeDefinitionMetadata values 
 
 |Member|
@@ -2889,3 +2881,11 @@ Possible values for user account types (group membership), per Windows definitio
 |sms|
 |none|
 |unknownFutureValue|
+
+### layoutTemplateType values
+
+| Member             |
+| :----------------- |
+| default            |
+| verticalSplit      |
+| unknownFutureValue |
