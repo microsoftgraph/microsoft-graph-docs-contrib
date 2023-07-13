@@ -2293,7 +2293,7 @@ Possible values for user account types (group membership), per Windows definitio
 | error              |
 | unknownFutureValue |
 
-### delegatedAdminAccessContainerType values 
+### delegatedAdminAccessContainerType values
 
 | Member             |
 | :----------------- |
@@ -2511,7 +2511,7 @@ Possible values for user account types (group membership), per Windows definitio
 | verticalSplit      |
 | unknownFutureValue |
 
-### attributeDefinitionMetadata values
+### attributeDefinitionMetadata values 
 
 |Member|
 |:---|
@@ -2525,14 +2525,14 @@ Possible values for user account types (group membership), per Windows definitio
 |MaximumLength|
 |ReferencedProperty|
 
-### attributeFlowBehavior values
+### attributeFlowBehavior values 
 
 |Member|
 |:---|
 |FlowWhenChanged|
 |FlowAlways|
 
-### attributeFlowType values
+### attributeFlowType values 
 
 | Member            |
 | :---------------- |
@@ -2542,7 +2542,7 @@ Possible values for user account types (group membership), per Windows definitio
 | ValueAddOnly      |
 | AttributeAddOnly  |
 
-### attributeMappingSourceType values
+### attributeMappingSourceType values 
 
 | Member    |
 | :-------- |
@@ -2581,7 +2581,7 @@ Possible values for user account types (group membership), per Windows definitio
 | Immutable |
 | WriteOnly |
 
-### objectDefinitionMetadata values
+### objectDefinitionMetadata values 
 
 |Member|
 |:---|
@@ -2614,7 +2614,7 @@ Possible values for user account types (group membership), per Windows definitio
 |ExcludeFromReporting|
 |Unsynchronized|
 
-### synchronizationMetadata values
+### synchronizationMetadata values 
 
 |Member|
 |:---|
@@ -2688,7 +2688,7 @@ Possible values for user account types (group membership), per Windows definitio
 | Paused        |
 | Quarantine    |
 
-### synchronizationTaskExecutionResult values
+### synchronizationTaskExecutionResult values 
 
 | Member           |
 | :--------------- |
@@ -2696,7 +2696,7 @@ Possible values for user account types (group membership), per Windows definitio
 | Failed           |
 | EntryLevelErrors |
 
-### synchronizationJobRestartScope values
+### synchronizationJobRestartScope values 
 
 |Member|
 |:---|
@@ -2708,7 +2708,7 @@ Possible values for user account types (group membership), per Windows definitio
 |Full|
 |ForceDeletes|
 
-### quarantineReason values
+### quarantineReason values 
 
 | Member                               |
 | :----------------------------------- |
@@ -2721,7 +2721,7 @@ Possible values for user account types (group membership), per Windows definitio
 | TooManyDeletes                       |
 | IngestionInterrupted                 |
 
-### synchronizationScheduleState values
+### synchronizationScheduleState values 
 
 | Member   |
 | :------- |
@@ -2729,21 +2729,21 @@ Possible values for user account types (group membership), per Windows definitio
 | Disabled |
 | Paused   |
 
-### scopeOperatorMultiValuedComparisonType values
+### scopeOperatorMultiValuedComparisonType values 
 
 |Member|
 |:---|
 |All|
 |Any|
 
-### scopeOperatorType values
+### scopeOperatorType values 
 
 | Member |
 | :----- |
 | Binary |
 | Unary  |
 
-### entryExportStatus values
+### entryExportStatus values 
 
 |Member|
 |:---|
@@ -2753,7 +2753,7 @@ Possible values for user account types (group membership), per Windows definitio
 |PermanentError|
 |Error|
 
-### entrySyncOperation values
+### entrySyncOperation values 
 
 |Member|
 |:---|
@@ -2762,14 +2762,14 @@ Possible values for user account types (group membership), per Windows definitio
 |Delete|
 |Update|
 
-### scopeOperatorType values
+### scopeOperatorType values 
 
 | Member |
 | :----- |
 | Default |
 | IgnoreLookupReferenceResolutionFailure  |
 
-### synchronizationDisposition values
+### synchronizationDisposition values 
 
 | Member   |
 | :------- |
@@ -2777,14 +2777,14 @@ Possible values for user account types (group membership), per Windows definitio
 | Discard |
 | Escrow   |
 
-### outlierMemberType values
+### outlierMemberType values 
 
 |Member|
 |:---|
 |user|
 |unknownFutureValue|
 
-### outlierContainerType values
+### outlierContainerType values 
 
 |Member|
 |:---|
@@ -2848,3 +2848,4 @@ Possible values for user account types (group membership), per Windows definitio
 |voiceOffice|
 |sms|
 |none|
+|unknownFutureValue|
