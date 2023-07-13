@@ -3302,26 +3302,26 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2023-06-05T04:14:41.3424906Z",
-        "WorkloadArea": "Devices and apps",
+        "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },
       {
       "ChangeList": [          
-        {
+            {
+              "Id": "33faed78-3754-43a7-a08a-4d6c9d5d741f",
+              "ApiChange": "Method",
+              "ChangedApiName": "getInaccessibleCloudPcReports",
+              "ChangeType": "Addition",
+              "Description": "Added the [getInaccessibleCloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getInaccessibleCloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+              "Target": "cloudPcReports"
+            }
+          ],
           "Id": "33faed78-3754-43a7-a08a-4d6c9d5d741f",
-          "ApiChange": "Method",
-          "ChangedApiName": "getInaccessibleCloudPcReports",
-          "ChangeType": "Addition",
-          "Description": "Added the [getInaccessibleCloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getInaccessibleCloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
-          "Target": "cloudPcReports"
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-06-25T09:00:37.9148169Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
         }
-      ],
-      "Id": "33faed78-3754-43a7-a08a-4d6c9d5d741f",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2023-06-25T09:00:37.9148169Z",
-      "WorkloadArea": "Devices and app management",
-      "SubArea": "Cloud PC"
-    }
     ]
 }
