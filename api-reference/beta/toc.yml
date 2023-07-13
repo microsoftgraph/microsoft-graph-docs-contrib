@@ -16459,7 +16459,7 @@ items:
             href: resources/security-hostpair.md
           - name: Get
             href: api/security-hostpair-get.md
-          - name: List
+          - name: List host pairs for a host
             href: api/security-host-list-hostpairs.md
           - name: List Parent Host Pairs
             href: api/security-host-list-parenthostpairs.md
