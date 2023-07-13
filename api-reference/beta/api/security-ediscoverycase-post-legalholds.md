@@ -69,7 +69,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-41
 Content-Type: application/json
 
 {
-    "displayname": "My legalHold with sources",
+    "displayName": "My legalHold with sources",
     "description": "Created from Graph API",
     "userSources@odata.bind": [
         {
