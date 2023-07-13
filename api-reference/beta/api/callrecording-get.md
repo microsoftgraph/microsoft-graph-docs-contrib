@@ -116,9 +116,6 @@ Content-type: application/json
 
 The following example shows how to get the content of a single recording of an online meeting.
 
-> [!NOTE]
-> In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
-
 #### Request
 
 <!-- {

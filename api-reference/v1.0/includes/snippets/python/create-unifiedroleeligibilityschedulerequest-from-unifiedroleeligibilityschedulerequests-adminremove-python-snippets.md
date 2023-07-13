@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 request_body = UnifiedRoleEligibilityScheduleRequest()
-request_body.action = 'adminRemove'
+request_body.action(UnifiedRoleScheduleRequestActions.AdminRemove('unifiedroleschedulerequestactions.adminremove'))
 
 request_body.role_definition_id = '8424c6f0-a189-499e-bbd0-26c1753c96d4'
 
