@@ -38,7 +38,7 @@ Inherits from [directoryObject](directoryobject.md).
 | servicePlans     | [servicePlanInfo](serviceplaninfo.md) collection | Information about the service plans that are available with the SKU. Not nullable                                                                                                                                                                               |
 | skuId            | String                                           | The unique identifier (GUID) for the service SKU.                                                                                                                                                                                                               |
 | skuPartNumber    | String                                           | The SKU part number; for example, `AAD_PREMIUM` or `RMSBASIC`. To get a list of commercial subscriptions that an organization has acquired, see [List subscribedSkus](../api/subscribedsku-list.md).                                                            |
-| subscriptionsIds | String collection                                | A list of all subscription IDs associated with this SKU.                                                                                                                                                                                                        |
+| subscriptionsIds | String collection                                | A list of all [subscription IDs](../resources/companysubscription.md) associated with this SKU.                                                                                                                                                                                                        |
 
 ## Relationships
 
