@@ -46,6 +46,13 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, 
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200` and a list of [sitePage](../resources/sitepage.md) object in the response body.
 
 ## Example
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that represents a baseSitePage in the site page library.
+An abstract type that represents a page in the site page library.
 Inherits from [baseItem](../resources/baseitem.md).
 
 ## Methods

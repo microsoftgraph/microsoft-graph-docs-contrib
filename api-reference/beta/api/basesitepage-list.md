@@ -18,7 +18,7 @@ Get the collection of [baseSitePage][] objects from the site pages [list][] in a
 
 > **Note:** The [baseSitePage][] specified is a parent type and does not have any instance. As a result, the returned data will only consist of available subtypes, which will be provided as a list.
 
-## Available subtypes
+**The following table lists the available subtypes.**
 
 | Entity name  | Description               |
 | :----------- | :------------------------ |
@@ -55,6 +55,14 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, 
 | :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200` and a list of [baseSitePage](../resources/baseSitePage.md) object in the response body.
 
 ## Example
 

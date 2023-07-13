@@ -16720,7 +16720,7 @@ items:
           href: api/documentsetversion-restore.md
       - name: Pages (preview)
         items:
-        - name: Base Site page
+        - name: Base site page
           href: resources/basesitepage.md
           items: 
           - name: List

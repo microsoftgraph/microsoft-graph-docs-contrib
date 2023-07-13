@@ -56,6 +56,10 @@ In the request body, supply a JSON representation of the [textWebPart](../resour
 
 To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.textwebpart` or `@odata.type=#microsoft.graph.standardwebpart` must be included in the request body.
 
+## Response
+
+If successful, this method returns a `201` and the created [webPart](../resources/webPart.md) object in the response body.
+
 ## Example
 
 ### Request

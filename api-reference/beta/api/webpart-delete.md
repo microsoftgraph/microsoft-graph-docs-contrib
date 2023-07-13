@@ -54,9 +54,9 @@ If successful, this method returns a `204 No Content`. It does not return anythi
 
 ## Example
 
-<!-- { "blockType": "request", "name": "delete-webpart", "scopes": "sites.readwrite.all" } -->
-
 ### Request
+
+<!-- { "blockType": "request", "name": "delete-webpart", "scopes": "sites.readwrite.all" } -->
 
 ```http
 DELETE https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}
