@@ -143,4 +143,5 @@ Content-Type: application/json
 
 - [List joinedTeams](../api/user-list-joinedteams.md)
 - [Get team](../api/team-get.md)
+- [List teams](../api/teams-list.md)
 

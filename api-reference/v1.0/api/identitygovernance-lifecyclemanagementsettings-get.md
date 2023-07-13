@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/setti
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-get-lifecyclemanagementsettings-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-get-lifecyclemanagementsettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-get-lifecyclemanagementsettings-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
