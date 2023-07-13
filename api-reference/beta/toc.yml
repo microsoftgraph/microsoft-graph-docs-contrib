@@ -16767,15 +16767,17 @@ items:
               - name: Get
                 href: api/horizontalsectioncolumn-get.md
           - name: Vertical section
-            href: resources/verticalsection.md
-          - name: Create
-            href: api/sitepage-post-verticalsection.md
-          - name: Get
-            href: api/verticalsection-get.md
-          - name: Update
-            href: api/verticalsection-update.md
-          - name: Delete
-            href: api/verticalsection-delete.md
+            items:
+            - name: Vertical section
+              href: resources/verticalsection.md
+            - name: Create
+              href: api/sitepage-post-verticalsection.md
+            - name: Get
+              href: api/verticalsection-get.md
+            - name: Update
+              href: api/verticalsection-update.md
+            - name: Delete
+              href: api/verticalsection-delete.md
         - name: Web part
           items:
           - name: Web part
