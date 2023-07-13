@@ -57,7 +57,6 @@ If successful, this method returns a `200 OK` response code and an updated [conv
 
 The following is a request to apply the `owner` role to an existing member of a team.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -106,6 +105,23 @@ content-length: 26
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-member-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+If you use Power Automate to call this HTTP request, use the following:
+
+# [HTTP](#tab/http)
+
+```http
+PATCH https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
+content-type: application/json
+content-length: 26
+
+{
+  "@@odata.type":"#microsoft.graph.aadUserConversationMember",
+  "roles": ["owner"]
+}
+```
 
 ---
 
