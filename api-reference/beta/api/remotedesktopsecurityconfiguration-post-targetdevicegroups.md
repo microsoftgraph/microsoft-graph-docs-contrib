@@ -1,0 +1,98 @@
+---
+title: "Create targetDeviceGroup"
+description: "Create a new targetDeviceGroup object."
+author: "SanDeo-MSFT"
+ms.localizationpriority: medium
+ms.prod: "applications"
+doc_type: apiPageType
+---
+
+# Create targetDeviceGroup
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Create a new [targetDeviceGroup](../resources/targetdevicegroup.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrtite.All, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported. |
+|Application | Application-RemoteDesktopConfig.ReadWrtite.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration/targetDeviceGroups
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+In the request body, supply a JSON representation of the [targetDeviceGroup](../resources/targetdevicegroup.md) object.
+
+You can specify the following properties when creating a **targetDeviceGroup**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Object ID of the group in the directory.|
+|displayName|String|Display name of the group.|
+
+
+
+## Response
+
+If successful, this method returns a `201 Created` response code and a [targetDeviceGroup](../resources/targetdevicegroup.md) object in the response body.
+
+## Examples
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_targetdevicegroup_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration/targetDeviceGroups
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.targetDeviceGroup",
+  "id": "b9e4eae4-b781-45a1-ce65-f2dd8ac3b696",
+  "displayName": "String"
+}
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.targetDeviceGroup"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.targetDeviceGroup",
+  "id": "b9e4eae4-b781-45a1-ce65-f2dd8ac3b696",
+  "displayName": "String"
+}
+```
+
