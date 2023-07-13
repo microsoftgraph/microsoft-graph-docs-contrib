@@ -61,6 +61,8 @@ If successful, this method returns a `200 OK` response code and a [verticalSecti
 
 The following is an example of a request.
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection
 ```
@@ -92,6 +94,8 @@ Content-Type: application/json
 #### Request
 
 With `select` and `expand` statements, you can retrieve verticalSection metadata and associated webParts in a single request.
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection?select=emphasis,expand=webparts

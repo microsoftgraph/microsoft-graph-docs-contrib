@@ -57,6 +57,8 @@ If the target horizontal section is not found, this method returns `404 Not Foun
 
 ### Request
 
+<!-- { "blockType": "ignored" } -->
+
 ``` http
 DELETE https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
 ```

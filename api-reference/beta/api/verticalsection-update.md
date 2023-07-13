@@ -60,6 +60,8 @@ If the vertical section does not exist, this method returns a `404 NotFound` res
 
 The following is an example of a request.
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/verticalSection
 Content-Type: application/json

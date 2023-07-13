@@ -61,6 +61,8 @@ If successful, this method returns a `200 OK` response code and a [horizontalSec
 
 The following is an example of a request.
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}
 ```
@@ -94,6 +96,8 @@ Content-Type: application/json
 #### Request
 
 With `select` and `expand` statements, you can retrieve horizontalSectionColumn metadata and associated webParts in a single request.
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}?select=id,expand=webparts

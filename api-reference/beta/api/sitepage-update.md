@@ -81,7 +81,7 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}
+PATCH https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage
 Content-Type: application/json
 
 {

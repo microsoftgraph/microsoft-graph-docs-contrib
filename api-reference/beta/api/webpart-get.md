@@ -63,6 +63,8 @@ If successful, this method returns a `200 OK` response code and a [standardWebPa
 
 The following is an example of a request.
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}
 ```
@@ -98,6 +100,7 @@ Content-Type: application/json
 
 With `select` statement, you can retrieve selected webpart metadata in a request.
 
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}?select=id

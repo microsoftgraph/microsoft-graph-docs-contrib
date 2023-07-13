@@ -32,9 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
+
 ```msgraph-interactive
 GET /sites/{site-id}/pages/microsoft.graph.sitePage
 ```
+
 ## Optional query parameters
 
 This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. 

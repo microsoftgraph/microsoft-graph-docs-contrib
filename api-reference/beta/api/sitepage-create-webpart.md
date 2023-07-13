@@ -66,6 +66,8 @@ If successful, this method returns a `201` and the created [webPart](../resource
 
 The following example shows how to create a new webpart.
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
 POST /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection/webparts
 Content-Type: application/json

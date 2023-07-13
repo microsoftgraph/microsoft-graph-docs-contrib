@@ -56,6 +56,8 @@ If successful, this method returns a `200 OK` response code and an updated [hori
 
 The following is an example of a request.
 
+<!-- { "blockType": "ignored" } -->
+
 ``` http
 PATCH https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
 

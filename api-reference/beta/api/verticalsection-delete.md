@@ -57,6 +57,8 @@ If the vertical section is not found, this method returns `404 Not Found`.
 
 ### Request
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/verticalSection
 ```
