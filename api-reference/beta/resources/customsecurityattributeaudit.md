@@ -26,10 +26,10 @@ Inherits from [directoryAudit](../resources/directoryaudit.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activityDateTime|DateTimeOffset| Indicates the date and time the activity was performed. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [directoryAudit](../resources/directoryaudit.md).|
-|activityDisplayName|String|Indicates the activity name or the operation name. For example: "Add custom security attribute definition in an attribute set". Inherited from [directoryAudit](../resources/directoryaudit.md).|
+|activityDateTime|DateTimeOffset| Indicates the date and time the activity was performed. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2024 is `2024-01-01T00:00:00Z`. Inherited from [directoryAudit](../resources/directoryaudit.md).|
+|activityDisplayName|String|Indicates the activity name or the operation name. For example: "Add custom security attribute definition in an attribute set". For a list of activities logged, refer to [Azure AD audit log categories and activities](/azure/active-directory/reports-monitoring/reference-audit-activities). Inherited from [directoryAudit](../resources/directoryaudit.md).|
 |additionalDetails|[keyValue](../resources/keyvalue.md) collection|Indicates additional details on the activity. Inherited from [directoryAudit](../resources/directoryaudit.md).|
-|category|String|Indicates which resource category that's targeted by the activity. For example: `AttributeManagement`. Inherited from [directoryAudit](../resources/directoryaudit.md).|
+|category|String|Indicates which resource category that's targeted by the activity. For example: `AttributeManagement`. For a list of categories for activities logged, refer to [Azure AD audit log categories and activities](/azure/active-directory/reports-monitoring/reference-audit-activities). Inherited from [directoryAudit](../resources/directoryaudit.md).|
 |correlationId|String|Indicates a unique ID that helps correlate activities that span across various services. Can be used to trace logs across services. Inherited from [directoryAudit](../resources/directoryaudit.md).|
 |id|String|Indicates the unique ID for the activity. This is a GUID. Inherited from [directoryAudit](../resources/directoryaudit.md).|
 |initiatedBy|[auditActivityInitiator](../resources/auditactivityinitiator.md)|Indicates information about the user or app initiated the activity. Inherited from [directoryAudit](../resources/directoryaudit.md).|
