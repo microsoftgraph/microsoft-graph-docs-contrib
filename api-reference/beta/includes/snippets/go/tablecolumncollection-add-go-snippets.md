@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdrives.NewAddPostRequestBody()
@@ -20,11 +20,10 @@ index := graphmodels.Newindex()
 requestBody.SetIndex(index)
 
 
-json := graphmodels.New()
+json := graphmodels.NewJson()
 
-values := []graphdrives.Jsonable {
+values := []graphmodels.Jsonable {
 	json,
-
 }
 requestBody.SetValues(values)
 

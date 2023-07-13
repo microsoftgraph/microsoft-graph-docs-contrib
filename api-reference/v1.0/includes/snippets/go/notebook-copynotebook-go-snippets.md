@@ -12,10 +12,10 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewCopyNotebookPostRequestBody()
+requestBody := graphusers.NewItemCopyNotebookPostRequestBody()
 groupId := "groupId-value"
 requestBody.SetGroupId(&groupId) 
 renameAs := "renameAs-value"

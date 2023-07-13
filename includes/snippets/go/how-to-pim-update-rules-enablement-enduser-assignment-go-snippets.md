@@ -12,19 +12,24 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUnifiedRoleManagementPolicyRule()
 id := "Enablement_EndUser_Assignment"
 requestBody.SetId(&id) 
+enabledRules := []string {
+	"Justification",
+	"MultiFactorAuthentication",
+	"Ticketing",
+}
+requestBody.SetEnabledRules(enabledRules)
 target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
 caller := "EndUser"
 target.SetCaller(&caller) 
 operations := []graphmodels.UnifiedRoleManagementPolicyRuleTargetOperationsable {
 	unifiedRoleManagementPolicyRuleTargetOperations := graphmodels.ALL_UNIFIEDROLEMANAGEMENTPOLICYRULETARGETOPERATIONS 
-	target.SetUnifiedRoleManagementPolicyRuleTargetOperations(&unifiedRoleManagementPolicyRuleTargetOperations) 
-
+	target.SetUnifiedRoleManagementPolicyRuleTargetOperations(&unifiedRoleManagementPolicyRuleTargetOperations)
 }
 target.SetOperations(operations)
 level := "Assignment"
@@ -38,15 +43,6 @@ enforcedSettings := []string {
 }
 target.SetEnforcedSettings(enforcedSettings)
 requestBody.SetTarget(target)
-additionalData := map[string]interface{}{
-	enabledRules := []string {
-		"Justification",
-		"MultiFactorAuthentication",
-		"Ticketing",
-
-	}
-}
-requestBody.SetAdditionalData(additionalData)
 
 result, err := graphClient.Policies().RoleManagementPolicies().ByRoleManagementPolicieId("unifiedRoleManagementPolicy-id").Rules().ByRuleId("unifiedRoleManagementPolicyRule-id").Patch(context.Background(), requestBody, nil)
 

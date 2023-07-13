@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.AssignLicense.AssignLicensePostReq
 	{
 		new AssignedLicense
 		{
-			DisabledPlans = new List<8a256a2b-b617-496d-b51b-e76466e88db0>
+			DisabledPlans = new List<Guid?>
 			{
 				Guid.Parse("8a256a2b-b617-496d-b51b-e76466e88db0"),
 			},

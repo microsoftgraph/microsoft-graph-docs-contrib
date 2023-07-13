@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphshares.NewGrantPostRequestBody()
@@ -26,15 +26,13 @@ driveRecipient1 := graphmodels.NewDriveRecipient()
 email := "ryan@external.com"
 driveRecipient1.SetEmail(&email) 
 
-recipients := []graphshares.DriveRecipientable {
+recipients := []graphmodels.DriveRecipientable {
 	driveRecipient,
 	driveRecipient1,
-
 }
 requestBody.SetRecipients(recipients)
 roles := []string {
 	"read",
-
 }
 requestBody.SetRoles(roles)
 

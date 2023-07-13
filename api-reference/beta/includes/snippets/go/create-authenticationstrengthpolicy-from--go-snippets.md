@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationStrengthPolicy()
@@ -24,8 +24,7 @@ allowedCombinations := []graphmodels.AuthenticationMethodModesable {
 	authenticationMethodModes := graphmodels.PASSWORD, HARDWAREOATH_AUTHENTICATIONMETHODMODES 
 	requestBody.SetAuthenticationMethodModes(&authenticationMethodModes) 
 	authenticationMethodModes := graphmodels.PASSWORD, SMS_AUTHENTICATIONMETHODMODES 
-	requestBody.SetAuthenticationMethodModes(&authenticationMethodModes) 
-
+	requestBody.SetAuthenticationMethodModes(&authenticationMethodModes)
 }
 requestBody.SetAllowedCombinations(allowedCombinations)
 

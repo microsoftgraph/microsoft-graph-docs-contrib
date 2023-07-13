@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPronounsSettings()
 isEnabledInOrganization := true
 requestBody.SetIsEnabledInOrganization(&isEnabledInOrganization) 
 
-result, err := graphClient.Organization().ByOrganization().Id("organization-id").Settings().Pronouns().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Admin().People().Pronouns().Patch(context.Background(), requestBody, nil)
 
 
 ```
