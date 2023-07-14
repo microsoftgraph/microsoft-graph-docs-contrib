@@ -1,9 +1,9 @@
 ---
-title: "List hostPairs for a host in the child direction"
-description: "Get the hostPair resources from the hostPairs navigation property in the child direction."
-author: "jakedavies-microsoft"
+title: List hostPairs for a host in the child direction
+description: Get the hostPair resources from the hostPairs navigation property in the child direction.
+author: jakedavies-microsoft
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.prod: security
 doc_type: apiPageType
 ---
 
