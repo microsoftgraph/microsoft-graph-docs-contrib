@@ -1,6 +1,6 @@
 ---
 title: "kubernetesServiceAccountEvidence resource type"
-description: "Represents a kubernetes service account entity."
+description: "Represents a Kubernetes service account entity."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a kubernetes service account entity.
+Represents a Kubernetes service account entity.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
