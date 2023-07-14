@@ -15350,13 +15350,11 @@ items:
               href: api/applicationsignindetailedsummary-get.md
         - name: Azure AD SLA attainment
           items:
-          - name: Azure AD Authentication
+          - name: Azure AD authentication
             href: resources/azureadauthentication.md
-          - name: Service Level Agreement
+          - name: Service level agreement
             href: resources/servicelevelagreementroot.md
-          - name: Service Level Agreement attainment
-            href: resources/servicelevelagreementattainment.md
-          - name: Get Azure AD Authentication
+          - name: Get Azure AD authentication
             href: api/azureadauthentication-get.md
         - name: Registration and usage
           items:
