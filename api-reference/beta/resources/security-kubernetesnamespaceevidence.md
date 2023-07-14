@@ -1,6 +1,6 @@
 ---
 title: "kubernetesNamespaceEvidence resource type"
-description: "Represents a kubernetes namespace entity."
+description: "Represents a Kubernetes namespace entity."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a kubernetes namespace entity.
+Represents a Kubernetes namespace entity.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
