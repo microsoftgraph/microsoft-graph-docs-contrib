@@ -1,6 +1,6 @@
 ---
 title: "alertEvidence resource type"
-description: "Each alert contains a list of related evidence."
+description: "Represents an evidence related to an alert."
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Evidence related to an [alert](security-alert.md).
+Represents an evidence related to an [alert](security-alert.md).
 
 This is the base type of [amazonResourceEvidence](security-amazonresourceevidence.md), [analyzedMessageEvidence](security-analyzedmessageevidence.md), [azureResourceEvidence](security-azureresourceevidence.md), [blobContainerEvidence](security-blobcontainerevidence.md), [blobEvidence](security-blobevidence.md), [cloudApplicationEvidence](security-cloudapplicationevidence.md), [containerEvidence](security-containerevidence.md), [containerImageEvidence](security-containerimageevidence.md), [containerRegistryEvidence](security-containerregistryevidence.md), [deviceEvidence](security-deviceevidence.md), [fileEvidence](security-fileevidence.md), [googleCloudResourceEvidence](security-googlecloudresourceevidence.md), [ipEvidence](security-ipevidence.md), [kubernetesClusterEvidence](security-kubernetesclusterevidence.md), [kubernetesControllerEvidence](security-kubernetescontrollerevidence.md), [kubernetesNamespaceEvidence](security-kubernetesnamespaceevidence.md), [kubernetesPodEvidence](security-kubernetespodevidence.md), [kubernetesSecretEvidence](security-kubernetessecretevidence.md), [kubernetesServiceAccountEvidence](security-kubernetesserviceaccountevidence.md), [kubernetesServiceEvidence](security-kubernetesserviceevidence.md), [mailClusterEvidence](security-mailclusterevidence.md), [mailboxEvidence](security-mailboxevidence.md), [oauthApplicationEvidence](security-oauthapplicationevidence.md), [processEvidence](security-processevidence.md), [registryKeyEvidence](security-registrykeyevidence.md), [registryValueEvidence](security-registryvalueevidence.md), [securityGroupEvidence](security-securitygroupevidence.md), [urlEvidence](security-urlevidence.md), and [userEvidence](security-userevidence.md).
 
@@ -93,7 +93,7 @@ This alert evidence base type and its derived evidence types provide a means to 
 | Member                     | Description                                       |
 | :--------------------------| :------------------------------------------------ |
 | unknown                    | No verdict was determined for the evidence.|
-| suspicious                 |  |
+| suspicious                 | Recommended remediation actions awaiting approval.|
 | malicious                  | The evidence was determined to be malicious. |
 | noThreatsFound             | No threat was detected - the evidence is benign.  |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Do not use.  |

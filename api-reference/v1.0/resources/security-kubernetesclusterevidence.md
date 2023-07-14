@@ -1,6 +1,6 @@
 ---
 title: "kubernetesClusterEvidence resource type"
-description: "Represents a kubernetes cluster."
+description: "Represents a Kubernetes cluster."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents a kubernetes cluster.
+Represents a Kubernetes cluster.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
@@ -37,8 +37,8 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |:-------------------| :------------------------------------------------ |
 | unknown            | An unknown platform for forward compatibility.    |
 | aks                | Azure Kubernetes Service.                       |
-| eks                | Amazon AWS Kubernetes.                    |
-| gke                | Google cloud Kubernetes.                        |
+| eks                | Amazon Elastic Kubernetes Service.              |
+| gke                | Google Kubernetes Engine.                       |
 | arc                | Azure Arc-connected cluster.                    |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
