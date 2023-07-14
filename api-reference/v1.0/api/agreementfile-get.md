@@ -149,6 +149,9 @@ Accept-Language: fr-FR
 }
 -->
 ``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#agreements('94410bbf-3d3e-4683-8149-f034e55c39dd')/file/$entity",
     "@odata.type": "#microsoft.graph.agreementFileLocalization",

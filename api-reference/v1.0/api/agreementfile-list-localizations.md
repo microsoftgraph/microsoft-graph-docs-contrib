@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_agreementfilelocalization"
+  "name": "list_agreementfile_localization"
 }
 -->
 ``` http
@@ -66,7 +66,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.azure.termsOfUse.agreementFileLocalization)"
+  "@odata.type": "Collection(microsoft.graph.agreementFileLocalization)"
 }
 -->
 ``` http
