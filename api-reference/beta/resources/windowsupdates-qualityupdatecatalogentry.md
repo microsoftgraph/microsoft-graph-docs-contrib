@@ -31,7 +31,7 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 |qualityUpdateClassification|microsoft.graph.windowsUpdates.qualityUpdateClassification|The classification on the quality update. Possible values are: `all`, `security`, `nonSecurity`, `unknownFutureValue`. Read-only.|
 |qualityUpdateCadence|microsoft.graph.windowsUpdates.qualityUpdateCadence|The publishing cadence of the quality update. Possible values are: `monthly`, `outOfBand`, `unknownFutureValue`. Read-only.|
 |releaseDateTime|DateTimeOffset|The release date of the content. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
-|cveSeverityInformation|[microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation](../resources/windowsupdates-qualityupdatecveseverityinformation)|Severity information of the CVEs associated with the content.|
+|cveSeverityInformation|[microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation](../resources/windowsupdates-qualityupdatecveseverityinformation.md)|Severity information of the CVEs associated with the content.|
 
 ## Relationships
 |Property|Type|Description|
