@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the subscribed SKU type.
+Represents an SKU and its associated service plans.
 
 Inherits from [directoryObject](directoryobject.md).
 
