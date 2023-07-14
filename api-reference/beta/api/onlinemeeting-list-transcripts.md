@@ -15,10 +15,10 @@ Namespace: microsoft.graph
 
 Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).
 
-> **Notes:**
-
-> - In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
-> - This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
+> [!NOTE]
+>
+> * In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+> * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions
 
@@ -108,7 +108,8 @@ GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 ### Response
 
-> **Note:** The response object shown here might be shortened for readability.
+> [!NOTE]
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

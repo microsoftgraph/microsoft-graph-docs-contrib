@@ -17,10 +17,10 @@ Get a [callRecording](../resources/callrecording.md) object associated with an [
 
 For a recording, this API returns the metadata of the single recording associated with the online meeting. For the content of a recording, this API returns the stream of text associated with the recording.
 
-> **Notes:**
+> [!NOTE]
 >
-> - In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
-> - This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
+> * In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+> * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions
 
@@ -32,7 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                     |
 | Application                            | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat* |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
@@ -96,7 +97,8 @@ GET https://graph.microsoft.com/beta/users/b935e675-5e67-48b9-8d45-249d5f88e964/
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability.
+> [!NOTE]
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -135,7 +137,8 @@ GET https://graph.microsoft.com/beta/users/b935e675-5e67-48b9-8d45-249d5f88e964/
 
 The following example contains bytes for the recording in the response body. The `content-type` header specifies the type of the recording content. The negative offsets indicate that the recording on began while the conversation was ongoing.
 
->**Note:** The response object shown here might be shortened for readability.
+> [!NOTE]
+> The response object shown here might be shortened for readability.
 
 ```http
 
