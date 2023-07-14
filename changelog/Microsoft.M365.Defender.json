@@ -1161,7 +1161,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dictionary",
           "ChangeType": "Addition",
-          "Description": "Added the [dictionary](https://learn.microsoft.com/en-us/graph/api/resources/security-dictionary?view=graph-rest-beta) resource type.",
+          "Description": "Added the [dictionary](https://learn.microsoft.com/en-us/graph/api/resources/dictionary?view=graph-rest-beta) resource type.",
           "Target": "dictionary"
         },
         {
@@ -1323,7 +1323,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dictionary",
           "ChangeType": "Addition",
-          "Description": "Added the [dictionary](https://learn.microsoft.com/en-us/graph/api/resources/security-dictionary?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [dictionary](https://learn.microsoft.com/en-us/graph/api/resources/dictionary?view=graph-rest-1.0) resource type.",
           "Target": "dictionary"
         },
         {
