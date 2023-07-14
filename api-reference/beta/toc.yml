@@ -16489,6 +16489,22 @@ items:
             href: resources/security-vulnerabilitycomponent.md
           - name: Get
             href: api/security-vulnerabilitycomponent-get.md
+        - name: Host SSL Certificate
+          items:
+          - name: Host SSL Certificate
+            href: resources/security-hostsslcertificate.md
+          - name: Get
+            href: api/security-hostsslcertificate-get.md
+          - list: Host SSL Certificate
+            href: api/security-hostsslcertificate-list-host.md
+        - name: SSL Certificate
+          items:
+          - name: SSL Certificate
+            href: resources/security-sslcertificate.md
+          - name: Get
+            href: api/security-sslcertificate-get.md
+          - name: List SSL Certificate
+            href: api/security-sslcertificate-list.md
       - name: Threat intelligence indicator (preview)
         items:
         - name: Threat intelligence indicator
