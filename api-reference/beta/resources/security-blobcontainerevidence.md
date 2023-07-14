@@ -1,6 +1,6 @@
 ---
 title: "blobContainerEvidence resource type"
-description: "Represents storage blob container."
+description: "Represents a storage blob container."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents storage blob container.
+Represents a storage blob container.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
