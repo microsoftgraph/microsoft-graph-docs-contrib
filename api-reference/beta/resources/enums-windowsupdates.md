@@ -67,6 +67,14 @@ Namespace: microsoft.graph.windowsUpdates
 |nonSecurity|
 |unknownFutureValue|
 
+### qualityUpdateCadence values 
+
+|Member|
+|:---|
+|monthly|
+|outOfBand|
+|unknownFutureValue|
+
 ### requestedDeploymentStateValue values 
 
 |Member|
@@ -100,6 +108,15 @@ Namespace: microsoft.graph.windowsUpdates
 |quality|
 |unknownFutureValue|
 |driver|
+
+### cveSeverityLevel values 
+
+|Member|
+|:---|
+|moderate|
+|important|
+|critical|
+|unknownFutureValue|
 
 <!--
 {
