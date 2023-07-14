@@ -883,8 +883,8 @@
 					"ApiChange": "Member",
 					"ChangedApiName": "inProgress",
 					"ChangeType": "Addition",
-                    "Description": "Added the `inProgress` member to the [incidentStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta#incidentstatus-values) enumeration.",
-                    "Target": "incidentStatus"
+					"Description": "Added the `inProgress` member to the **incidentStatus** enumeration.",
+					"Target": "incidentStatus"
 				}
 			],
 			"Id": "2674744f-725e-4e6b-9768-5766b3713d2c",
@@ -893,6 +893,194 @@
 			"CreatedDateTime": "2023-01-30T13:00:00.1231234Z",
 			"WorkloadArea": "Security",
 			"SubArea": "Alerts and incidents"
-		}
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "80f01572-343e-4e95-831d-178af626446e",
+					"ApiChange": "Property",
+					"ChangedApiName": "displayName",
+					"ChangeType": "Addition",
+					"Description": "Added the **displayName** property to the [userAccount](https://learn.microsoft.com/en-us/graph/api/resources/security-useraccount?view=graph-rest-1.0) resource.",
+					"Target": "userAccount"
+				}
+			],
+			"Id": "80f01572-343e-4e95-831d-178af626446e",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2023-07-10T13:00:00.0000000Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "2004c955-fd84-4997-83da-10d8c5cd370c",
+					"ApiChange": "Property",
+					"ChangedApiName": "displayName",
+					"ChangeType": "Addition",
+					"Description": "Added the **displayName** property to the [userAccount](https://learn.microsoft.com/en-us/graph/api/resources/security-useraccount?view=graph-rest-beta) resource.",
+					"Target": "userAccount"
+				}
+			],
+			"Id": "2004c955-fd84-4997-83da-10d8c5cd370c",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2023-06-05T13:00:00.0000000Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "d57596ed-a1ad-420d-9911-36b40a2804de",
+					"ApiChange": "Member",
+					"ChangedApiName": "microsoftDefenderForCloud",
+					"ChangeType": "Addition",
+					"Description": "Added the `microsoftDefenderForCloud` member to the **detectionSource** enumeration.",
+					"Target": "detectionSource"
+				},
+				{
+					"Id": "d57596ed-a1ad-420d-9911-36b40a2804de",
+					"ApiChange": "Member",
+					"ChangedApiName": "microsoftDefenderForCloud",
+					"ChangeType": "Addition",
+					"Description": "Added the `microsoftDefenderForCloud` member to the **serviceSource** enumeration.",
+					"Target": "serviceSource"
+				},
+				{
+					"Id": "d57596ed-a1ad-420d-9911-36b40a2804de",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "googleCloudLocationType",
+					"ChangeType": "Addition",
+					"Description": "Added the **googleCloudLocationType** enumeration type.",
+					"Target": "googleCloudLocationType"
+				},
+				{
+					"Id": "d57596ed-a1ad-420d-9911-36b40a2804de",
+					"ApiChange": "Resource",
+					"ChangedApiName": "amazonResourceEvidence",
+					"ChangeType": "Addition",
+					"Description": "Added the [amazonResourceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-amazonResourceEvidence?view=graph-rest-beta) resource type.",
+					"Target": "amazonResourceEvidence"
+				},
+				{
+					"Id": "d57596ed-a1ad-420d-9911-36b40a2804de",
+					"ApiChange": "Resource",
+					"ChangedApiName": "azureResourceEvidence",
+					"ChangeType": "Addition",
+					"Description": "Added the [azureResourceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-azureResourceEvidence?view=graph-rest-beta) resource type.",
+					"Target": "azureResourceEvidence"
+				},
+				{
+					"Id": "d57596ed-a1ad-420d-9911-36b40a2804de",
+					"ApiChange": "Resource",
+					"ChangedApiName": "googleCloudResourceEvidence",
+					"ChangeType": "Addition",
+					"Description": "Added the [googleCloudResourceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-googleCloudResourceEvidence?view=graph-rest-beta) resource type.",
+					"Target": "googleCloudResourceEvidence"
+				}
+			],
+			"Id": "d57596ed-a1ad-420d-9911-36b40a2804de",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2023-07-10T16:27:08.6931099Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "d118dbd4-557f-4d18-8ff1-4659d6868a01",
+					"ApiChange": "Member",
+					"ChangedApiName": "microsoftDefenderForCloud",
+					"ChangeType": "Addition",
+					"Description": "Added the `microsoftDefenderForCloud` member to the **detectionSource** enumeration.",
+					"Target": "detectionSource"
+				},
+				{
+					"Id": "d118dbd4-557f-4d18-8ff1-4659d6868a01",
+					"ApiChange": "Member",
+					"ChangedApiName": "microsoftDefenderForCloud",
+					"ChangeType": "Addition",
+					"Description": "Added the `microsoftDefenderForCloud` member to the **serviceSource** enumeration.",
+					"Target": "serviceSource"
+				},
+				{
+					"Id": "d118dbd4-557f-4d18-8ff1-4659d6868a01",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "googleCloudLocationType",
+					"ChangeType": "Addition",
+					"Description": "Added the **googleCloudLocationType** enumeration type.",
+					"Target": "googleCloudLocationType"
+				},
+				{
+					"Id": "d118dbd4-557f-4d18-8ff1-4659d6868a01",
+					"ApiChange": "Resource",
+					"ChangedApiName": "amazonResourceEvidence",
+					"ChangeType": "Addition",
+					"Description": "Added the [amazonResourceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-amazonResourceEvidence?view=graph-rest-1.0) resource type.",
+					"Target": "amazonResourceEvidence"
+				},
+				{
+					"Id": "d118dbd4-557f-4d18-8ff1-4659d6868a01",
+					"ApiChange": "Resource",
+					"ChangedApiName": "azureResourceEvidence",
+					"ChangeType": "Addition",
+					"Description": "Added the [azureResourceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-azureResourceEvidence?view=graph-rest-1.0) resource type.",
+					"Target": "azureResourceEvidence"
+				},
+				{
+					"Id": "d118dbd4-557f-4d18-8ff1-4659d6868a01",
+					"ApiChange": "Resource",
+					"ChangedApiName": "googleCloudResourceEvidence",
+					"ChangeType": "Addition",
+					"Description": "Added the [googleCloudResourceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-googleCloudResourceEvidence?view=graph-rest-1.0) resource type.",
+					"Target": "googleCloudResourceEvidence"
+				}
+			],
+			"Id": "d118dbd4-557f-4d18-8ff1-4659d6868a01",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2023-05-31T16:27:08.6941406Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
+		},
+    {
+      "ChangeList": [
+        {
+          "Id": "bb3876df-8937-418b-89d3-8931ef750ef3",
+          "ApiChange": "Member",
+          "ChangedApiName": "awaitingAction",
+          "ChangeType": "Addition",
+          "Description": "Added the `awaitingAction` member to the **incidentStatus** enumeration.",
+          "Target": "incidentStatus"
+        }
+      ],
+      "Id": "bb3876df-8937-418b-89d3-8931ef750ef3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-30T13:00:00.1231234Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "55671ff0-6c0e-45f1-8f2c-7077e09eaf5f",
+          "ApiChange": "Member",
+          "ChangedApiName": "awaitingAction",
+          "ChangeType": "Addition",
+          "Description": "Added the `awaitingAction` member to the **incidentStatus** enumeration.",
+          "Target": "incidentStatus"
+        }
+      ],
+      "Id": "55671ff0-6c0e-45f1-8f2c-7077e09eaf5f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-30T13:00:00.1231234Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    }
 	]
 }

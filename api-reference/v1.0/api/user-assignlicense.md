@@ -1,5 +1,5 @@
 ---
-title: "assignLicense"
+title: "user: assignLicense"
 description: "Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription."
 author: "jconley76"
 ms.localizationpriority: high
@@ -10,6 +10,7 @@ doc_type: apiPageType
 # user: assignLicense
 
 Namespace: microsoft.graph
+
 Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
 
 ## Permissions
@@ -71,6 +72,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-assignlicense-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-assignlicense-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

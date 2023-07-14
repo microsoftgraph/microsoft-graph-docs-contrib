@@ -90,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-businessscenariotask-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-businessscenariotask-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

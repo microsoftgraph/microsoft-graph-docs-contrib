@@ -41,9 +41,11 @@ $requestBody->setMentions($mentionsArray);
 
 $requestBody->setReactions([]);
 
+$requestBody->setMessageHistory([]);
 
 
-$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
+
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->post($requestBody);
 
 
 ```

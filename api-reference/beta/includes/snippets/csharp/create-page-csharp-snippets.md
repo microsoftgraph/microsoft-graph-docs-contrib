@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new SitePage
@@ -99,7 +101,7 @@ var requestBody = new SitePage
 											},
 											ServerProcessedContent = new 
 											{
-												ImageSources = new List<>
+												ImageSources = new List<object>
 												{
 													new 
 													{
@@ -107,7 +109,7 @@ var requestBody = new SitePage
 														Value = "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG",
 													},
 												},
-												CustomMetadata = new List<>
+												CustomMetadata = new List<object>
 												{
 													new 
 													{

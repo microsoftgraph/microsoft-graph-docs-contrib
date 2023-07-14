@@ -68,6 +68,7 @@ The following example configures the partner-specific policy by setting the inbo
 
 #### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,11 +82,10 @@ PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners
 Content-Type: application/json
 
 {
-  "inboundTrust": 
-  {
+  "inboundTrust": {
     "isMfaAccepted": true,
     "isCompliantDeviceAccepted": true,
-    "isHybridAzureADJoinedDeviceAccepted" : true
+    "isHybridAzureADJoinedDeviceAccepted": true
   }
 }
 ```
@@ -114,9 +114,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-crosstenantaccesspolicyconfigurationpartner-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-crosstenantaccesspolicyconfigurationpartner-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -128,12 +134,13 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Configure automaticUserConsent settings 
+### Example 2: Configure automaticUserConsent settings
 
-The following example configures the partner-specific policy by consenting for B2B collaboration on behalf of your users and accepting admin consent for the partner's users.
+The following example configures the partner-specific policy by consenting for B2B collaboration on behalf of your users and accepting admin consent for the users of the partner.
 
 #### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -147,8 +154,7 @@ PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners
 Content-Type: application/json
 
 {
-  "automaticUserConsentSettings": 
-  {
+  "automaticUserConsentSettings": {
     "inboundAllowed": true,
     "outboundAllowed": true
   }
@@ -179,9 +185,97 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-crosstenantaccesspolicyconfigurationpartner-automaticuserconsentsettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-crosstenantaccesspolicyconfigurationpartner-automaticuserconsentsettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Configure tenant restrictions settings
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_crosstenantaccesspolicyconfigurationpartner_tenantrestriction"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/90e29127-71ad-49c7-9ce8-db3f41ea06f1
+Content-Type: application/json
+
+{
+"tenantRestrictions": {
+       "usersAndGroups": {
+            "accessType": "allowed",
+            "targets": [
+                {
+                    "target": "AllUsers",
+                    "targetType": "user"
+                }
+            ]
+        },
+        "applications": {
+            "accessType": "allowed",
+            "targets": [
+                {
+                    "target": "Office365",
+                    "targetType": "application"
+                }
+            ]
+        }
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

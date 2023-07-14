@@ -61,11 +61,11 @@ Since the **administrativeUnit** resource supports [extensions](/graph/extensibi
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example
-The following example sets a dynamic membership rule on an existing administrative unit to include all users whose country is United States.
+## Examples
+
+The following example sets a dynamic membership rule on an existing administrative unit to include all users whose country is United States. It also updates the administrative unit display name.
 
 ### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -77,6 +77,7 @@ PATCH https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c
 Content-type: application/json
 
 {
+    "displayName": "Executive Division",
     "membershipType": "Dynamic",
     "membershipRule": "(user.country -eq \"United States\")",
     "membershipRuleProcessingState": "On"
@@ -101,6 +102,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-administrativeunit-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-administrativeunit-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

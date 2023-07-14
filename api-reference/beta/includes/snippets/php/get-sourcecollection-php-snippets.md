@@ -15,7 +15,7 @@ $queryParameters->expand = ["addToReviewSetOperation","custodianSources","lastEs
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->sourceCollectionsById('sourceCollection-id')->get($requestConfiguration);
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->sourceCollections()->bySourceCollectionId('sourceCollection-id')->get($requestConfiguration);
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -23,7 +23,6 @@ requestBody.SetDisplayName(&displayName)
 groupTypes := []string {
 	"Unified",
 	"DynamicMembership",
-
 }
 requestBody.SetGroupTypes(groupTypes)
 mailEnabled := true

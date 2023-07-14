@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -29,13 +29,11 @@ displayNameLocalization.SetDisplayName(&displayName)
 
 localizations := []graphmodels.DisplayNameLocalizationable {
 	displayNameLocalization,
-
 }
 profileCardAnnotation.SetLocalizations(localizations)
 
 annotations := []graphmodels.ProfileCardAnnotationable {
 	profileCardAnnotation,
-
 }
 requestBody.SetAnnotations(annotations)
 

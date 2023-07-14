@@ -15,7 +15,7 @@ $queryParameters->select = ["id","appId","displayName","createdDateTime"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->policies()->appManagementPoliciesById('appManagementPolicy-id')->appliesTo()->get($requestConfiguration);
+$result = $graphServiceClient->policies()->appManagementPolicies()->byAppManagementPolicieId('appManagementPolicy-id')->appliesTo()->get($requestConfiguration);
 
 
 ```

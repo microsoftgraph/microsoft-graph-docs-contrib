@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -38,7 +38,6 @@ buckets := []graphmodels.PlannerPlanConfigurationBucketDefinitionable {
 	plannerPlanConfigurationBucketDefinition1,
 	plannerPlanConfigurationBucketDefinition2,
 	plannerPlanConfigurationBucketDefinition3,
-
 }
 requestBody.SetBuckets(buckets)
 

@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AccessPackageAssignmentPolicy
@@ -19,19 +21,12 @@ var requestBody = new AccessPackageAssignmentPolicy
 		AcceptRequests = true,
 		AllowedRequestors = new List<UserSet>
 		{
-			new UserSet
+			new SingleUser
 			{
 				OdataType = "#microsoft.graph.singleUser",
 				IsBackup = false,
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"id" , "007d1c7e-7fa8-4e33-b678-5e437acdcddc"
-					},
-					{
-						"description" , "Requestor1"
-					},
-				},
+				Id = "007d1c7e-7fa8-4e33-b678-5e437acdcddc",
+				Description = "Requestor1",
 			},
 		},
 	},

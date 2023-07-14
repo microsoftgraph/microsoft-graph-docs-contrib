@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-schemaextension-graphlearntest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-schemaextension-graphlearntest-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

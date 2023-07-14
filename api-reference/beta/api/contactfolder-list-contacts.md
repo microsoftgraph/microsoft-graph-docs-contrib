@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts
 [!INCLUDE [sample-code](../includes/snippets/powershell/contactfolder-get-contacts-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/contactfolder-get-contacts-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Chats/Item/HideForUser"
+	  graphchats "github.com/microsoftgraph/msgraph-sdk-go/chats"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewHideForUserPostRequestBody()
+requestBody := graphchats.NewHideForUserPostRequestBody()
 user := graphmodels.NewTeamworkUserIdentity()
 id := "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
 user.SetId(&id) 

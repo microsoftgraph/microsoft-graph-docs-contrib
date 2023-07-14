@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-externalitem-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-externalitem-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 <!-- markdownlint-disable MD024 -->

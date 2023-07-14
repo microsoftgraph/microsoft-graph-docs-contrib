@@ -14,7 +14,7 @@ $requestBody->setRoles(['read', ]);
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->permissionsById('permission-id')->patch($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->permissions()->byPermissionId('permission-id')->patch($requestBody);
 
 
 ```

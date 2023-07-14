@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managedD
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-manageddevicecompliance-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-manageddevicecompliance-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

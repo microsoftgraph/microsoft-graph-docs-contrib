@@ -24,9 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
-When calling on behalf of a user, the user needs to belong to the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
-+ Global administrator
-+ Cloud device administrator
+When calling on behalf of a user, the user needs the *Cloud Device Administrator* [Azure AD role](/azure/active-directory/roles/permissions-reference).
 
 ## HTTP request
 
@@ -69,13 +67,14 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_deviceregistrationpolicy"
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/deviceRegistrationPolicy
+PUT https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 Content-Type: application/json
 
 {
@@ -96,12 +95,21 @@ Content-Type: application/json
         "allowedUsers": [],
         "allowedGroups": []
     },
-    localAdminPassword: {
+    "localAdminPassword": {
       "isEnabled": true
     }
 }
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-deviceregistrationpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-deviceregistrationpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -135,7 +143,7 @@ Content-Type: application/json
         "allowedUsers": [],
         "allowedGroups": []
     },
-    localAdminPassword: {
+    "localAdminPassword": {
       "isEnabled": true
     }
 }

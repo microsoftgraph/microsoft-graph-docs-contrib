@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/IdentityGovernance/AccessReviews/Definitions/Item/Instances/Item/BatchRecordDecisions"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-sdk-go/identitygovernance"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewBatchRecordDecisionsPostRequestBody()
+requestBody := graphidentitygovernance.NewBatchRecordDecisionsPostRequestBody()
 decision := "Approve"
 requestBody.SetDecision(&decision) 
 justification := "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team"

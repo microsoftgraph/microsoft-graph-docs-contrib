@@ -79,24 +79,22 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 Content-Type: application/json
 
 {
-   "value":{
-      "@odata.type":"#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
-      "displayName":"test_action_0124_email",
-      "description":"this is for graph testing only",
-      "endpointConfiguration":{
-         "@odata.type":"#microsoft.graph.logicAppTriggerEndpointConfiguration",
-         "subscriptionId":"38ab2ccc-3747-4567-b36b-9478f5602f0d",
-         "resourceGroupName":"test",
-         "logicAppWorkflowName":"elm-extension-email"
-      },
-      "authenticationConfiguration":{
-         "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
-      },
-      "callbackConfiguration":{
-         "@odata.type":"microsoft.graph.customExtensionCallbackConfiguration",
-         "durationBeforeTimeout":"PT1H"
-      }
-   }
+  "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+  "displayName": "test_action_0124_email",
+  "description": "this is for graph testing only",
+  "endpointConfiguration": {
+    "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+    "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d",
+    "resourceGroupName": "test",
+    "logicAppWorkflowName": "elm-extension-email"
+  },
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication"
+  },
+  "callbackConfiguration": {
+    "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration",
+    "durationBeforeTimeout": "PT1H"
+  }
 }
 ```
 
@@ -118,6 +116,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentrequestworkflowextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageassignmentrequestworkflowextension-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -212,6 +214,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentworkflowextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageassignmentworkflowextension-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

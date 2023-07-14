@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/DeviceManagement/VirtualEndpoint/Reports/GetTotalAggregatedRemoteConnectionReports"
+	  graphdevicemanagement "github.com/microsoftgraph/msgraph-beta-sdk-go/devicemanagement"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewGetTotalAggregatedRemoteConnectionReportsPostRequestBody()
+requestBody := graphdevicemanagement.NewGetTotalAggregatedRemoteConnectionReportsPostRequestBody()
 top := int32(25)
 requestBody.SetTop(&top) 
 skip := int32(0)
@@ -28,7 +28,6 @@ select := []string {
 	"UserPrincipalName",
 	"TotalUsageInHour",
 	"DaysSinceLastSignIn",
-
 }
 requestBody.SetSelect(select)
 

@@ -15,7 +15,7 @@ $queryParameters->expand = ["results"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->informationProtection()->threatAssessmentRequestsById('threatAssessmentRequest-id')->get($requestConfiguration);
+$result = $graphServiceClient->informationProtection()->threatAssessmentRequests()->byThreatAssessmentRequestId('threatAssessmentRequest-id')->get($requestConfiguration);
 
 
 ```
