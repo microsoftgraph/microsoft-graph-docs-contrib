@@ -53,8 +53,8 @@ The following is a JSON representation of the resource.
     "@odata.type": "#microsoft.graph.security.kubernetesServicePort",
     "appProtocol": "String",
     "name": "String",
-    "nodePort": "Integer",
-    "port": "Integer",
+    "nodePort": "Int32",
+    "port": "Int32",
     "protocol": "String",
     "targetPort": "String"
 }
