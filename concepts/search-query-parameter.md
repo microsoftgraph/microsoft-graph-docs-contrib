@@ -200,7 +200,7 @@ To learn more about the People API, see [Get information about relevant people](
 ## Using $search on directory object collections
 
 > [!NOTE]
-> There's a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185) relating to `$search` on directory objects for values that contain an ampersand (&) symbol.
+> There's a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185) related to `$search` on directory objects for values that contain an ampersand (&) symbol.
 
 Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in [advanced queries](./aad-advanced-queries.md). The search implementation does **not** support "contains" logic. Instead, it uses a tokenization approach that works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols as shown in the following examples:
 
