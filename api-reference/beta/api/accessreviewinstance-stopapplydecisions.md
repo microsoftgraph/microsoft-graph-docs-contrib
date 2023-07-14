@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstance: stopApplyDecisions"
-description: "Stop the apply decision action on when accessReviewInstance is in applying state."
+description: "Stop the apply decision action on when accessReviewInstance when the decision is in the process of being applied."
 author: "rahulsharm0210"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,9 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stop the apply decision action on a [accessReviewInstance](../resources/accessreviewinstance.md) which is currently in applying state. 
-The API is only applicable to the instances which are in applying state. The review must be created with autoapply and autoreview settings 
-along with remediation option to disable and delete users.When you invoke this api on a current instance of a recurrence, it will not affect future instances. 
+Stop the apply decision action on a [accessReviewInstance](../resources/accessreviewinstance.md) when the decision is in the process of being applied. 
+You can stop the apply decision action only when the review is created with autoapply and autoreview settings, and the remediation option to disable and delete users. When you call this API on a current instance of a recurrence, it will not affect future instances. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
