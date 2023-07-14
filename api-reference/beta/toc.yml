@@ -17346,6 +17346,13 @@ items:
               items:
               - name: List
                 href: api/attendancerecord-list.md
+          - name: Call recording (preview)
+            href: resources/callrecording.md
+            items:
+            - name: List
+              href: api/onlinemeeting-list-recordings.md
+            - name: Get
+              href: api/callrecording-get.md                
           - name: Call transcript (preview)
             href: resources/calltranscript.md
             items:
@@ -17353,13 +17360,6 @@ items:
               href: api/onlinemeeting-list-transcripts.md
             - name: Get
               href: api/calltranscript-get.md
-          - name: Call recording
-            href: resources/callrecording.md
-            items:
-            - name: List
-              href: api/onlinemeeting-list-recordings.md
-            - name: Get
-              href: api/callrecording-get.md
           - name: External meeting registration (preview)
             href: resources/externalmeetingregistration.md
             items:
