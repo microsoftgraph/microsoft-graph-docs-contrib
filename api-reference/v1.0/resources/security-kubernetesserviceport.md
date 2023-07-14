@@ -1,6 +1,6 @@
 ---
 title: "kubernetesServicePort resource type"
-description: "Represents an object that is reported as part of a KubernetesServiceEvidence entity"
+description: "Represents a Kubernetes service port object reported as part of a kubernetesServiceEvidence entity."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents an object that is reported as part of a [microsoft.graph.security.kubernetesServiceEvidence](./security-kubernetesserviceevidence.md) entity.
+Represents a Kubernetes service port object reported as part of a [microsoft.graph.security.kubernetesServiceEvidence](./security-kubernetesserviceevidence.md) entity.
 
 
 ## Properties
