@@ -15,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents the number and URL for a Common Vulnerability and Exposure (CVE).
 
-Information about Common Vulnerabilities and Exposures (CVEs) are maintained by the [Microsoft Security Response Center](https://msrc.microsoft.com/update-guide/vulnerability) (MSRC). MSRC investigates all reports of security vulnerabilities affecting Microsoft products and services, and provides the information here as part of the ongoing effort to help you manage security risks and help keep your systems protected. Each security quality update may address several CVEs.
+Information about Common Vulnerabilities and Exposures (CVEs) is maintained by the [Microsoft Security Response Center](https://msrc.microsoft.com/update-guide/vulnerability) (MSRC). MSRC investigates all reports of security vulnerabilities affecting Microsoft products and services, and provides the information here as part of the ongoing effort to help you manage security risks and help keep your systems protected. Each security quality update may address several CVEs.
 
 ## Properties
 |Property|Type|Description|
