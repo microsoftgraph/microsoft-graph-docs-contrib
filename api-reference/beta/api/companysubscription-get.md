@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                                    |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | Organization.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account)     | Organization.Read.All, Directory.Read.All|
 | Delegated (personal Microsoft account) | Not supported.                                                                                 |
-| Application                            | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
+| Application                            | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All |
 
 ## HTTP request
 
