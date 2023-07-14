@@ -55,6 +55,9 @@ GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 ```
 
+> [!NOTE]
+> This API doesn't support the optional query parameters.
+
 ## Request headers
 
 | Header       | Value |
