@@ -9,28 +9,33 @@ doc_type: resourcePageType
 
 # dictionary resource type
 
-Namespace: microsoft.graph.security
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a dictionary type.
 
 ## Properties
+
 None.
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.dictionary",
+  "@odata.type": "microsoft.graph.dictionary",
   "openType": true
 }
 -->
 ``` json
 {
+  "@odata.type": "#microsoft.graph.dictionary"
 }
 ```
 
