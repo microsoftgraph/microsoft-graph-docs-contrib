@@ -36,8 +36,8 @@ Represents a pair of parent and child hosts where the child host was able to be 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|childHost|[host](../resources/security-host.md)|Host reached via the parentHost|
-|parentHost|[host](../resources/security-host.md)|Host used to reach the childHost|
+|childHost|[microsoft.graph.security.host](../resources/security-host.md)|Host reached via the parentHost|
+|parentHost|[microsoft.graph.security.host](../resources/security-host.md)|Host used to reach the childHost|
 
 ## JSON representation
 The following is a JSON representation of the resource.
