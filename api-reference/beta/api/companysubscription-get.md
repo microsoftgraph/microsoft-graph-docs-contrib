@@ -35,7 +35,7 @@ GET /directory/subscriptions/{commerceSubscriptionId}
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
