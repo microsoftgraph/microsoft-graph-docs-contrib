@@ -19,7 +19,7 @@ If the group was created less than 15 minutes ago, it's possible for the Create 
 The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
 
 > [!NOTE]
-> There's no way to know when the SharePoint provisioning is completed. This isn't provisioned in real time but it happens eventually in the backend.
+> There's no way to know when the SharePoint provisioning is completed as it isn't provisioned in real time but it happens eventually in the backend.
 
 ## Permissions
 
