@@ -15348,6 +15348,14 @@ items:
               href: api/reportroot-list-applicationsignindetailedsummary.md
             - name: Get sign-in details
               href: api/applicationsignindetailedsummary-get.md
+        - name: Azure AD SLA attainment
+          items:
+          - name: Azure AD authentication
+            href: resources/azureadauthentication.md
+          - name: Service level agreement
+            href: resources/servicelevelagreementroot.md
+          - name: Get Azure AD authentication
+            href: api/azureadauthentication-get.md
         - name: Registration and usage
           items:
           - name: Overview
