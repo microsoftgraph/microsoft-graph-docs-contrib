@@ -1,0 +1,9 @@
+{
+    "redirections": [
+      {
+        "source_path_from_root": "/concepts/known-issues.md",
+        "redirect_url": "https://developer.microsoft.com/en-us/graph/known-issues",
+        "redirect_document_id": false
+      }
+    ]
+}
