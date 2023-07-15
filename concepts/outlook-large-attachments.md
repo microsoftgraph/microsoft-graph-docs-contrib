@@ -17,7 +17,7 @@ To attach multiple files to a message, choose the approach for each file based o
 This article illustrates the second approach step by step, creating and using an upload session to add a large file attachment (of size over 3 MB) to an Outlook item. Each step shows the corresponding code for a message and for an event. Upon successfully uploading the entire file, the article shows getting a response header that contains an ID for the file attachment, and then using that attachment ID to get the raw attachment content or attachment metadata. 
 
 > [!IMPORTANT] 
-> Be aware of a [known issue](known-issues.md#attaching-large-files-to-messages-with-delegated-permissions-can-fail) if you're attaching large files to a message or event in a shared or delegated mailbox.
+> Be aware of a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13644) if you're attaching large files to a message or event in a shared or delegated mailbox.
 
 ## Step 1: Create an upload session
 

@@ -319,7 +319,7 @@ Content-Type: application/json
 The following example shows how to list the members by their role in the team. This example lists all the members that have an owner role.
 
 > [!NOTE]
-> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#unable-to-filter-team-members-by-roles).
+> There are some known issues with this functionality. For details, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=13639).
 
 #### Request
 

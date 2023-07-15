@@ -17,9 +17,6 @@ Represents an application. Any application that outsources authentication to Azu
 
 This resource is an open type that allows other properties to be passed in.
 
-> [!Note]
-> Changes to the application resource type are currently in development. For more information, see [Known issues with Microsoft Graph](/graph/known-issues#application-and-serviceprincipal-api-changes).
-
 This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
