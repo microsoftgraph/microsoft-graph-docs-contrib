@@ -1571,7 +1571,7 @@ Try the preview version of [Microsoft Graph .NET SDK v4](https://www.nuget.org/p
 - Identify the chat by the **chatId** property, if the **[chatMessage](/graph/api/resources/chatmessage)** is in a [chat](/graph/api/resources/chat).
 - Use the **messages** relationship to get all the [chatMessage](/graph/api/resources/chatmessage) resources in a [chat](/graph/api/resources/chat).
 - Use application permissions to [get](/graph/api/chat-get) the properties of a specified [chat](/graph/api/resources/chat).
-- Use application permissions to [get a specified chat member](/graph/api/chat-get-members) or [get all the chat members](/graph/api/chat-list-members) included in a chat. Because data for users as chat members is sensitive, other than obtaining application permissions, please [request additional access](teams-protected-apis.md) to these operations.
+- Use application permissions to [get a specified chat member](/graph/api/chat-get-members) or [get all the chat members](/graph/api/chat-list-members) included in a chat. Because data for users as chat members is sensitive, other than obtaining application permissions, please request additional access to these operations.
 
 ### Use the Toolkit
 New to the [Microsoft Graph Toolkit](/graph/toolkit/overview)? Try the new [Toolkit learning path](/training/paths/m365-msgraph-toolkit/?WT.mc_id=m365-19989-cxa), use the Toolkit set of web components and authentication providers to connect a web app to Microsoft Graph, and load data from Microsoft 365.
@@ -2890,7 +2890,7 @@ Use more granular application permission, _Mail.ReadBasic.All_, to read a user's
 
 ### Teamwork
 - [Install](/graph/api/resources/teamsappinstallation), [uninstall](/graph/api/userteamwork-delete-installedapps), [upgrade](/graph/api/userteamwork-teamsappinstallation-upgrade), and [list installed Microsoft Teams apps](/graph/api/userteamwork-list-installedapps) for a user.
-- Use app-only access to read channel messages, replies to channel messages, and messages in a chat. [Request and get approval](teams-protected-apis.md) for such access.
+- Use app-only access to read channel messages, replies to channel messages, and messages in a chat. Request and get approval for such access.
 
 ## May - June, 2019: New and generally available
 
