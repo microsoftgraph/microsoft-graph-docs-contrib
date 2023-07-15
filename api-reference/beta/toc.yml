@@ -308,7 +308,7 @@ items:
       href: /graph/best-practices-concept?context=graph/api/beta
       displayName: Microsoft Graph, Best practices for working with Microsoft Graph
     - name: Known issues
-      href: /graph/known-issues?context=graph/api/beta
+      href: https://developer.microsoft.com/en-us/graph/known-issues
       displayName: Microsoft Graph, Known issues with Microsoft Graph
     - name: API changelog
       href: https://developer.microsoft.com/graph/changelog
