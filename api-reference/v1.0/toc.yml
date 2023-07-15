@@ -6085,18 +6085,20 @@ items:
                         href: api/user-list-agreementacceptances.md
                       - name: List acceptance status
                         href: api/agreement-list-acceptances.md
-                  - name: Agreement files
+                  - name: Agreement file
                     items:
-                      - name: Default agreement file
-                        href: resources/agreementfile.md
-                      - name: Localized agreement files
-                        href: resources/agreementfilelocalization.md
-                      - name: Get default file
-                        href: api/agreementfile-get.md
-                      - name: Create localized files
-                        href: api/agreement-post-files.md
-                      - name: List localized files
-                        href: api/agreement-list-files.md
+                    - name: Default agreement file
+                      href: resources/agreementfile.md
+                    - name: Localized agreement file
+                      href: resources/agreementfilelocalization.md
+                    - name: Get default file
+                      href: api/agreementfile-get.md
+                    - name: Create localized files
+                      href: api/agreement-post-files.md
+                    - name: List files
+                      href: api/agreement-list-files.md
+                    - name: List localized files
+                      href: api/agreementfile-list-localizations.md
           - name: Identity and sign-in
             items:
               - name: Authentication methods
