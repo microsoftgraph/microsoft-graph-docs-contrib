@@ -26,6 +26,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |deviceDnsName|String|The fully qualified domain name (FQDN) for the device.|
 |firstSeenDateTime|DateTimeOffset|The date and time when the device was first seen.|
 |healthStatus|[microsoft.graph.security.deviceHealthStatus](#devicehealthstatus-values)|The health state of the device.The possible values are: `active`, `inactive`, `impairedCommunication`, `noSensorData`, `noSensorDataImpairedCommunication`, `unknown`, `unknownFutureValue`.|
+|ipInterfaces|String collection|Ip interfaces of the device during the time of the alert.|
 |loggedOnUsers|[microsoft.graph.security.loggedOnUser](../resources/security-loggedonuser.md) collection|Users that were logged on the machine during the time of the alert.|
 |mdeDeviceId|String|A unique identifier assigned to a device by Microsoft Defender for Endpoint.|
 |onboardingStatus|[microsoft.graph.security.onboardingStatus](#onboardingstatus-values)|The status of the machine onboarding to Microsoft Defender for Endpoint.The possible values are: `insufficientInfo`, `onboarded`, `canBeOnboarded`, `unsupported`, `unknownFutureValue`.|
@@ -106,6 +107,9 @@ The following is a JSON representation of the resource.
   "roles": [
     "String"
   ],
+  "detailedRoles": [
+    "String"
+  ],
   "tags": [
     "String"
   ],
@@ -125,6 +129,9 @@ The following is a JSON representation of the resource.
   "vmMetadata": {
     "@odata.type": "microsoft.graph.security.vmMetadata"
   },
+  "ipInterfaces": [
+    "String"
+  ],
   "loggedOnUsers": [
     {
       "@odata.type": "microsoft.graph.security.loggedOnUser"
