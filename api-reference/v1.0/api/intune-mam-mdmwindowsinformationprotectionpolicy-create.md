@@ -84,8 +84,6 @@ If successful, this method returns a `201 Created` response code and a [mdmWindo
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_mam_mdmwindowsinformationprotectionpolicy_create_create_mdmwindowsinformationprotectionpolicy" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mdmWindowsInformationProtectionPolicies
 Content-type: application/json
@@ -219,8 +217,6 @@ Content-length: 3905
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.mdmWindowsInformationProtectionPolicy" }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

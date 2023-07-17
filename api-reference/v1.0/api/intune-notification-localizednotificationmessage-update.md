@@ -62,8 +62,6 @@ If successful, this method returns a `200 OK` response code and an updated [loca
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_notification_localizednotificationmessage_update_update_localizednotificationmessage" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 Content-type: application/json
@@ -80,8 +78,6 @@ Content-length: 200
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.localizedNotificationMessage" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
