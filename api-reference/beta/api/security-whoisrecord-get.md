@@ -1,9 +1,9 @@
 ---
 title: "Get whoisRecord"
 description: "Read the properties and relationships of a microsoft.graph.security.whoisRecord object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -169,36 +169,36 @@ Content-Type: application/json
   },
   "nameservers": [
       {
-          "firstSeenDateTime": null,
-          "lastSeenDateTime": null,
-          "host": {
-              "@odata.type": "#microsoft.graph.security.hostname",
-              "id": "ns1-205.azure-dns.com"
-          }
+        "firstSeenDateTime": null,
+        "lastSeenDateTime": null,
+        "host": {
+            "@odata.type": "#microsoft.graph.security.hostname",
+            "id": "ns1-205.azure-dns.com"
+        }
       },
       {
-          "firstSeenDateTime": null,
-          "lastSeenDateTime": null,
-          "host": {
-              "@odata.type": "#microsoft.graph.security.hostname",
-              "id": "ns2-205.azure-dns.net"
-          }
+        "firstSeenDateTime": null,
+        "lastSeenDateTime": null,
+        "host": {
+            "@odata.type": "#microsoft.graph.security.hostname",
+            "id": "ns2-205.azure-dns.net"
+        }
       },
       {
-          "firstSeenDateTime": null,
-          "lastSeenDateTime": null,
-          "host": {
-              "@odata.type": "#microsoft.graph.security.hostname",
-              "id": "ns3-205.azure-dns.org"
-          }
+        "firstSeenDateTime": null,
+        "lastSeenDateTime": null,
+        "host": {
+            "@odata.type": "#microsoft.graph.security.hostname",
+            "id": "ns3-205.azure-dns.org"
+        }
       },
       {
-          "firstSeenDateTime": null,
-          "lastSeenDateTime": null,
-          "host": {
-              "@odata.type": "#microsoft.graph.security.hostname",
-              "id": "ns4-205.azure-dns.info"
-          }
+        "firstSeenDateTime": null,
+        "lastSeenDateTime": null,
+        "host": {
+            "@odata.type": "#microsoft.graph.security.hostname",
+            "id": "ns4-205.azure-dns.info"
+        }
       }
   ],
   "host": {
