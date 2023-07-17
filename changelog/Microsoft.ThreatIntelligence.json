@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whoisContact",
+          "ChangeType": "Addition",
+          "Description": "Added the [whoisContact](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisContact?view=graph-rest-beta) resource type.",
+          "Target": "whoisContact"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whoisNameserver",
+          "ChangeType": "Addition",
+          "Description": "Added the [whoisNameserver](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisNameserver?view=graph-rest-beta) resource type.",
+          "Target": "whoisNameserver"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whois",
+          "ChangeType": "Addition",
+          "Description": "Added the **whois** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "history",
+          "ChangeType": "Addition",
+          "Description": "Added the **history** relationship to the [whoisRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisRecord?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whoisRecords",
+          "ChangeType": "Addition",
+          "Description": "Added the **whoisRecords** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whoisHistoryRecords",
+          "ChangeType": "Addition",
+          "Description": "Added the **whoisHistoryRecords** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whoisRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [whoisRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisRecord?view=graph-rest-beta) resource.",
+          "Target": "whoisRecord"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whoisRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [whoisHistoryRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisHistoryRecord?view=graph-rest-beta) resource.",
+          "Target": "whoisHistoryRecord"
+        }
+      ],
+      "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-10T17:17:05.3179214Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Threat Intelligence"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
           "ApiChange": "Relationship",
           "ChangedApiName": "childHostPairs",
