@@ -172,7 +172,6 @@ Content-Type: application/json
         "firstSeenDateTime": null,
         "lastSeenDateTime": null,
         "host": {
-            "@odata.type": "#microsoft.graph.security.hostname",
             "id": "ns1-205.azure-dns.com"
         }
       },
@@ -180,7 +179,6 @@ Content-Type: application/json
         "firstSeenDateTime": null,
         "lastSeenDateTime": null,
         "host": {
-            "@odata.type": "#microsoft.graph.security.hostname",
             "id": "ns2-205.azure-dns.net"
         }
       },
@@ -188,7 +186,6 @@ Content-Type: application/json
         "firstSeenDateTime": null,
         "lastSeenDateTime": null,
         "host": {
-            "@odata.type": "#microsoft.graph.security.hostname",
             "id": "ns3-205.azure-dns.org"
         }
       },
@@ -196,13 +193,11 @@ Content-Type: application/json
         "firstSeenDateTime": null,
         "lastSeenDateTime": null,
         "host": {
-            "@odata.type": "#microsoft.graph.security.hostname",
             "id": "ns4-205.azure-dns.info"
         }
       }
   ],
     "host": {
-        "@odata.type": "#microsoft.graph.security.hostname",
         "id": "contoso.com"
     }
 }
