@@ -3349,7 +3349,6 @@
     },
     {
         "ChangeList": [
-<<<<<<< HEAD
             {
                 "Id": "f65a6785-6042-4258-b9a4-385cfb2eb5d2",
                 "ApiChange": "Member",
@@ -3365,8 +3364,9 @@
         "CreatedDateTime": "2023-04-25T04:14:41.3424906Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
-    }
-=======
+    },
+    {   
+        "ChangeList": [
           {
             "Id": "2107ee19-7ed3-4480-936c-61a372e36751",
             "ApiChange": "EnumType",
@@ -3409,6 +3409,5 @@
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       }
->>>>>>> main
     ]
 }

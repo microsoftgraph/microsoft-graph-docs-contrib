@@ -30,11 +30,8 @@ The result of a Cloud PC Azure network connection health check.
 |additionalDetails|String|Additional details about the health check or the recommended action.|
 |correlationId|String|The unique identifier of the health check item-related activities. This identifier can be useful in troubleshooting.|
 |displayName|String|The display name for this health check item.|
-<<<<<<< HEAD
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `warning`, `informational`, `unknownFutureValue`. Read-only.|
 |startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
-=======
->>>>>>> main
 |endDateTime|DateTimeOffset|The end time of the health check item. Read-only.|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|The type of error that occurred during this health check.|
 |recommendedAction|String|The recommended action to fix the corresponding error.|
