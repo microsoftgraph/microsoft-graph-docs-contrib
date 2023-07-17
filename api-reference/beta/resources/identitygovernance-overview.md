@@ -45,7 +45,7 @@ When a principal has access to resources in your organization, it's important to
 
 For example, suppose your organization automates employee access to a specific business-sensitive resource. For guests, you've granted them access to the resource through a group. It's important to periodically confirm that the guests still have a legitimate need for access to the group and by extension, the resource.
 
-Access reviews are a form of auditing the effectiveness of the organization’s internal controls. For more information, see the [overview of access reviews](/graph/api/resources/accessreviewsv2-overview).
+Access reviews are a form of auditing the effectiveness of the organization's internal controls. For more information, see the [overview of access reviews](/graph/api/resources/accessreviewsv2-overview).
 
 ## Manage access to privileged roles
 
@@ -55,7 +55,7 @@ The [privileged identity management APIs](/graph/api/resources/privilegedidentit
 
 ## Enforce terms of use for your resources
 
-Every organization has its terms and conditions that users may need to abide by before they can access the organization’s resources. You can define and enforce these terms and conditions through Azure AD Terms of Use.
+Every organization has its terms and conditions that users may need to abide by before they can access the organization's resources. You can define and enforce these terms and conditions through Azure AD Terms of Use.
 
 Terms of use can be a general company policy for all users in your organization; or terms for individual users like guests and contractors; or terms that users must agree to before they can use a sensitive app in the tenant.
 
@@ -63,7 +63,7 @@ The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [identity-governance-and-zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
