@@ -109,3 +109,5 @@ HTTP/1.1 204 NO CONTENT
   "tocPath": ""
 }-->
 
+> [!NOTE]
+> Approving a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) is only meant for recipient of the request.
