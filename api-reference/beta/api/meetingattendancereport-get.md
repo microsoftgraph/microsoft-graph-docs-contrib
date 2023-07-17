@@ -61,7 +61,6 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 >- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
 >- This API is accessible by the meeting organizer or co-organizer.
 
-
 > [!CAUTION]
 >
 >- The `/meetingAttendanceReport` path is deprecated. Going forward, use the `/attendanceReports` path to retrieve attendance reports for an online meeting.
