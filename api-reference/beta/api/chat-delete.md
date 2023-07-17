@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Soft Delete a [chat](../resources/chat.md). When invoked in delegated context, this operation will work only for tenant admins.
+Soft-delete a [chat](../resources/chat.md). When invoked in a delegated context, this operation only works for tenant admins.
 
->**Note:** Delete operation is only supported for tenant admins.
+>**Note:** Delete operation is not supported for non admin users.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
