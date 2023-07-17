@@ -21,7 +21,7 @@ The typical call pattern is as follows:
 1. The application begins by calling a GET request with the delta function on the desired resource.
 2. Microsoft Graph sends a response containing the requested resource and a [state token](#state-tokens).
 
-     a.  If a `@odata.nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `@odata.nextLink` URL to retrieve all pages of data until a `@odata.deltaLink` URL is returned in the response.
+     a.  If an `@odata.nextLink` URL is returned, there are additional pages of data to be retrieved in the session. This is true even if the current response may contain an empty result.  The application continues making requests using the `@odata.nextLink` URL to retrieve all pages of data until a `@odata.deltaLink` URL is returned in the response.
 
      b.  If a `@odata.deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the `@odata.deltaLink` URL to learn about changes to the resource.
 
@@ -195,7 +195,7 @@ Sometimes the changes that have occurred to the object might not be indicated wh
 
 ### National clouds
 
-Delta queries are available for customers hosted on the public cloud and Microsoft Graph China operated by 21Vianet only.
+Delta queries are only available for customers hosted on the public cloud, Microsoft Cloud for US Government, and Microsoft Graph China operated by 21Vianet.
 
 ### Replays
 

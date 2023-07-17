@@ -308,7 +308,7 @@ items:
         href: /graph/best-practices-concept?context=graph/api/1.0
         displayName: Microsoft Graph, Best practices for working with Microsoft Graph
       - name: Known issues
-        href: /graph/known-issues?context=graph/api/1.0
+        href: https://developer.microsoft.com/graph/known-issues
         displayName: Microsoft Graph, Known issues with Microsoft Graph
       - name: API changelog
         href: https://developer.microsoft.com/graph/changelog
@@ -1173,8 +1173,69 @@ items:
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remove
                         href: api/application-delete-tokenlifetimepolicies.md
+          - name: Synchronization
+            items:
+            - name: Overview
+              href: resources/synchronization-overview.md
+            - name: Synchronization
+              href: resources/synchronization-synchronization.md
+              items:
+              - name: Acquire access token
+                href: api/synchronization-synchronization-acquireaccesstoken.md
+              - name: Add secrets
+                href: api/synchronization-serviceprincipal-put-synchronization.md
+            - name: Job
+              href: resources/synchronization-synchronizationjob.md
+              items:
+              - name: List
+                href: api/synchronization-synchronization-list-jobs.md
+              - name: Create
+                href: api/synchronization-synchronization-post-jobs.md
+              - name: Get
+                href: api/synchronization-synchronizationjob-get.md
+              - name: Start
+                href: api/synchronization-synchronizationjob-start.md
+              - name: Pause
+                href: api/synchronization-synchronizationjob-pause.md
+              - name: Restart
+                href: api/synchronization-synchronizationjob-restart.md
+              - name: Delete
+                href: api/synchronization-synchronizationjob-delete.md
+              - name: Provision on demand
+                href: api/synchronization-synchronizationjob-provisionondemand.md
+              - name: Validate credentials
+                href: api/synchronization-synchronizationjob-validatecredentials.md
+            - name: Schema
+              href: resources/synchronization-synchronizationschema.md
+              items:
+              - name: Get schema
+                href: api/synchronization-synchronizationschema-get.md
+              - name: Get schema functions
+                href: api/synchronization-synchronizationschema-functions.md
+              - name: Get schema filter operators
+                href: api/synchronization-synchronizationschema-filteroperators.md
+              - name: Update schema
+                href: api/synchronization-synchronizationschema-update.md
+              - name: Reset schema
+                href: api/synchronization-synchronizationschema-delete.md
+              - name: Parse attribute mapping expression
+                href: api/synchronization-synchronizationschema-parseexpression.md
+              - name: Directory definition
+                href: resources/synchronization-directorydefinition.md
+                items:
+                - name: Discover
+                  href: api/synchronization-directorydefinition-discover.md
+            - name: Template
+              href: resources/synchronization-synchronizationtemplate.md
+              items:
+              - name: List
+                href: api/synchronization-synchronization-list-templates.md
+              - name: Get
+                href: api/synchronization-synchronizationtemplate-get.md
+              - name: Update
+                href: api/synchronization-synchronizationtemplate-update.md
       - name: Calendars
-        displayname: Outlook calendar
+        displayName: Outlook calendar
         items:
           - name: Calendar
             href: resources/calendar.md
@@ -4801,7 +4862,7 @@ items:
                 - name: Update
                   href: api/intune-tem-devicemanagement-update.md
 
-          
+
 
           - name: Service health and communications
             items:
@@ -6024,18 +6085,20 @@ items:
                         href: api/user-list-agreementacceptances.md
                       - name: List acceptance status
                         href: api/agreement-list-acceptances.md
-                  - name: Agreement files
+                  - name: Agreement file
                     items:
-                      - name: Default agreement file
-                        href: resources/agreementfile.md
-                      - name: Localized agreement files
-                        href: resources/agreementfilelocalization.md
-                      - name: Get default file
-                        href: api/agreementfile-get.md
-                      - name: Create localized files
-                        href: api/agreement-post-files.md
-                      - name: List localized files
-                        href: api/agreement-list-files.md
+                    - name: Default agreement file
+                      href: resources/agreementfile.md
+                    - name: Localized agreement file
+                      href: resources/agreementfilelocalization.md
+                    - name: Get default file
+                      href: api/agreementfile-get.md
+                    - name: Create localized files
+                      href: api/agreement-post-files.md
+                    - name: List files
+                      href: api/agreement-list-files.md
+                    - name: List localized files
+                      href: api/agreementfile-list-localizations.md
           - name: Identity and sign-in
             items:
               - name: Authentication methods
@@ -7258,6 +7321,27 @@ items:
                 items:
                   - name: List provisioning
                     href: api/provisioningobjectsummary-list.md
+          - name: Identity and access reports
+            items:
+              - name: Registration and usage
+                items:
+                  - name: User registration details
+                    href: resources/userregistrationdetails.md
+                    items:
+                      - name: List
+                        href: api/authenticationmethodsroot-list-userregistrationdetails.md
+                      - name: Get
+                        href: api/userregistrationdetails-get.md
+                  - name: Users registered by feature
+                    href: resources/userregistrationfeaturesummary.md
+                    items:
+                      - name: List
+                        href: api/authenticationmethodsroot-usersregisteredbyfeature.md
+                  - name: Users registered by method
+                    href: resources/userregistrationmethodsummary.md
+                    items:
+                      - name: List
+                        href: api/authenticationmethodsroot-usersregisteredbymethod.md
           - name: Microsoft 365 usage reports
             items:
               - name: Overview
@@ -7818,8 +7902,8 @@ items:
                     href: api/security-ediscoveryreviewset-get.md
                   - name: Add to review set
                     href: api/security-ediscoveryreviewset-addtoreviewset.md
-                  - name: Export 
-                    href: api/security-ediscoveryreviewset-export.md 
+                  - name: Export
+                    href: api/security-ediscoveryreviewset-export.md
                   - name: Query
                     href: resources/security-ediscoveryreviewsetquery.md
                     items:
@@ -8655,7 +8739,11 @@ items:
                 items:
                   - name: Learning course activity
                     href: resources/learningcourseactivity.md
-                    items:  
+                    items:
+                  - name: Learning assignment type
+                    href: resources/learningassignment.md
+                  - name: Learning self-initiated course type
+                    href: resources/learningselfinitiatedcourse.md
                   - name: List
                     href: api/learningcourseactivity-list.md
                   - name: Create
@@ -8666,10 +8754,6 @@ items:
                     href: api/learningcourseactivity-update.md
                   - name: Delete
                     href: api/learningcourseactivity-delete.md
-                  - name: Learning assignment
-                    href: resources/learningassignment.md
-                  - name: Learning self-initiated course
-                    href: resources/learningselfinitiatedcourse.md
           - name: Messaging
             items:
               - name: Activity feed
