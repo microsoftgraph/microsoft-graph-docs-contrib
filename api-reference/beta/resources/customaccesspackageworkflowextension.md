@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!IMPORTANT]
-> The customAccessPackageWorkflowExtension resource type and its associated methods is deprecated and will be retired on "2023-12-31". Use the [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)  and [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) resource types and their associated methods.
+> [!CAUTION]
+> The customAccessPackageWorkflowExtension resource type and its associated methods is deprecated and will be retired on December 31, 2023. Use the [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)  and [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) resource types and their associated methods.
 
 Defines the attributes of a logic app, which can be called at various stages of an access package request and assignment cycle. You can integrate logic apps with entitlement management to broaden your governance workflows beyond the core entitlement management use cases. The following use cases can be integrated with logic apps using this workflow:
 - When an [access package is requested](accesspackageassignmentrequest.md)

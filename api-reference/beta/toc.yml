@@ -12769,18 +12769,18 @@ items:
               href: api/connectedorganization-delete-externalsponsors.md
             - name: Remove internal sponsors
               href: api/connectedorganization-delete-internalsponsors.md
-          - name: Custom access package workflow extensione (deprecated)
+          - name: Custom access package workflow extension (deprecated)
             href: resources/customAccessPackageWorkflowExtension.md
             items:
-            - name: List
+            - name: List (deprecated)
               href: api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md
             - name: Create
               href: api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md
-            - name: Get
+            - name: Get (deprecated)
               href: api/customaccesspackageworkflowextension-get.md
-            - name: Update
+            - name: Update (deprecated)
               href: api/customaccesspackageworkflowextension-update.md
-            - name: Delete
+            - name: Delete (deprecated)
               href: api/customaccesspackageworkflowextension-delete.md
           - name: Entitlement management settings
             href: resources/entitlementmanagementsettings.md
