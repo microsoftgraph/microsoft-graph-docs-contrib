@@ -22,6 +22,9 @@ Address an [application](/graph/api/resources/application) by a new alternate ke
 - [Get](/graph/api/print-list-recentshares) a list of [printer share](/graph/api/resources/printershare) resources recently used by the signed-in user.
 - Get or update additional [printer share viewpoint](/graph/api/resources/printerShareViewpoint), which is [printer share](/graph/api/resources/printershare) data specific to the signed-in user.
 
+### Device and app management | Corporate management
+Intune [June updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2023-06-01&to=2023-06-30) for the v1.0 version.
+
 ### Files
 - [Assign a sensitivity label](/graph/api/driveitem-assignsensitivitylabel) to a file in OneDrive or SharePoint. 
 - [Extract one or more sensitivity labels](/graph/api/driveitem-extractsensitivitylabels) assigned to a file or folder and update the metadata of that [drive item](/graph/api/resources/driveitem) with the latest details of the assigned label.
@@ -55,6 +58,9 @@ Get or specify whether a [learning provider](/graph/api/resources/learningProvid
 - Use a new correlation ID to uniquely identify [health check item-related activities](/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta&preserve-view=true), which is part of the [health check status details](/graph/api/resources/cloudpconpremisesconnectionstatusdetails?view=graph-rest-beta&preserve-view=true) returned from getting the [Azure resource information used to establish Azure network connectivity for Cloud PCs](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true). 
 - [Create](/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-beta&preserve-view=true) or [get](/graph/api/cloudpcexportjob-get?view=graph-rest-beta&preserve-view=true) a report of Cloud PCs that failed to connect because licenses were unavailable.
 
+### Device and app management | Corporate management
+Intune [June updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2023-06-01&to=2023-06-30) for the beta version.
+
 ### Identity and access | Directory management
 - Manage an [administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true), [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true), [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true), or [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) that is a member of a restricted management administrative unit by requiring a role scoped to the restricted administrative unit. The calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
 - [Get](/graph/api/organization-get?view=graph-rest-beta&preserve-view=true) the last time a password sync request was received for an [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true).
@@ -62,6 +68,7 @@ Get or specify whether a [learning provider](/graph/api/resources/learningProvid
 ### Identity and access | Governance
 - Use the application permission `RoleManagementPolicy.Read.AzureADGroup` or `RoleManagementPolicy.ReadWrite.AzureADGroup` to read or update policies in [Privileged Identity Management for groups](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview?view=graph-rest-beta&preserve-view=true), without a signed-in user.
 - Use Privileged Identity Management (PIM) to govern privileged access and limit excessive access to Azure AD roles. See more information on the [governance capabilities of PIM for Azure AD roles APIs in Microsoft Graph](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true).
+- Use security [alerts](/graph/api/resources/unifiedrolemanagementalert?view=graph-rest-beta&preserve-view=true) built into [Privileged Identity Management (PIM) for Azure AD roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true) to detect suspicious or unsafe settings for Azure AD roles in your tenant. For more information on the types of security alerts, see [Get security alerts for Azure AD roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true#get-security-alerts-for-azure-ad-roles).
 
 ### Identity and access | Identity and sign-in
 - Get or update [sign-in preferences](/graph/api/resources/signInPreferences?view=graph-rest-beta&preserve-view=true) for [authentication](/graph/api/resources/authentication?view=graph-rest-beta&preserve-view=true), for the default second-factor method used by the user when signing in.

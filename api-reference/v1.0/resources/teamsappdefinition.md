@@ -24,11 +24,11 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
 | shortDescription    | string   | Short description of the application. |
 | teamsAppId          | string   | The ID from the Teams app manifest. |
 | version             | string   | The version number of the application. |
-
+|authorization|[teamsAppAuthorization](../resources/teamsappauthorization.md)|Authorization requirements specified in the Teams app manifest.|
 
 ## Relationships
 
-| Relationship | Type	| Description |
+| Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |bot|[teamworkBot](teamworkbot.md) | The details of the bot specified in the Teams app manifest. |
 
@@ -45,7 +45,8 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
   "id": "string",
   "teamsAppId": "string",
   "displayName": "string",
-  "version": "string"
+  "version": "string",
+  "authorization": "#microsoft.graph.teamsAppAuthorization"
 }
 ```
 
@@ -64,4 +65,3 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
   "section": "documentation",
   "tocPath": ""
 }-->
-

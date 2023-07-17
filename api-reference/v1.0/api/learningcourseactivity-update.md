@@ -101,7 +101,7 @@ Content-Type: application/json
     "dateTime": "2022-09-22T16:05:00.0000000",
     "timeZone": "UTC"
   },
-  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+  "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
   "learnerUserId": "7ba2228a-e020-11ec-9d64-0242ac120002",
   "notes": {
@@ -142,7 +142,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -176,7 +175,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse",
   "completedDateTime": null,
   "completionPercentage": 30,
-  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+  "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
   "learningProviderId": "01e8f81b-3060-4dec-acf0-0389665a0a38",
   "startedDateTime": "2021-05-11T22:57:17+00:00",

@@ -2822,3 +2822,62 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |group|
 |unknownFutureValue|
+
+### authenticationMethodFeature values
+
+|Member|
+|:---|
+|ssprRegistered|
+|ssprEnabled|
+|ssprCapable|
+|passwordlessCapable|
+|mfaCapable|
+|unknownFutureValue|
+
+### featureType values
+
+|Member|
+|:---|
+|registration|
+|reset|
+|unknownFutureValue|
+
+### includedUserRoles values
+
+|Member|
+|:---|
+|all|
+|privilegedAdmin|
+|admin|
+|user|
+|unknownFutureValue|
+
+### includedUserTypes values
+
+|Member|
+|:---|
+|all|
+|member|
+|guest|
+|unknownFutureValue|
+
+### signInUserType values
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
+### userDefaultAuthenticationMethod values
+
+|Member|
+|:---|
+|push|
+|oath|
+|voiceMobile|
+|voiceAlternateMobile|
+|voiceOffice|
+|sms|
+|none|
+|unknownFutureValue|
