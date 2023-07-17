@@ -56,8 +56,9 @@ GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 ```
 
-> [!NOTE]
-> This API doesn't support the optional query parameters.
+## Optional query parameters
+
+This method doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
