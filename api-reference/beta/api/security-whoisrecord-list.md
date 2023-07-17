@@ -109,7 +109,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.whoisRecord"
+  "@odata.type": "Collection(microsoft.graph.security.whoisRecord)"
 }
 -->
 
