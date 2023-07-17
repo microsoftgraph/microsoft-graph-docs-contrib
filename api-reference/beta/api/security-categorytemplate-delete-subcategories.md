@@ -69,7 +69,6 @@ DELETE https://graph.microsoft.com/beta/security/labels/retentionLabels/{retenti
 
 ---
 
-
 ### Response
 The following is an example of the response.
 >

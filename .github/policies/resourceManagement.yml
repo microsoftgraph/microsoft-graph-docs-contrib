@@ -400,6 +400,8 @@ configuration:
         - labelAdded:
             label: 'area: Azure AD'
         - labelAdded:
+            label: 'area: Entra'   
+        - labelAdded:
             label: 'area: identity'
       - isOpen
       then:
