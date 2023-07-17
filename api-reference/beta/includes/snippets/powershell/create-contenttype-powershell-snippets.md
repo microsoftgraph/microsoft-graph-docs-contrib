@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Sites
+Import-Module Microsoft.Graph.Beta.Sites
 
 $params = @{
-	Name = "docSet"
-	Description = "custom docset"
-	Base = @{
-		Name = "Document Set"
-		Id = "0x0120D520"
+	name = "docSet"
+	description = "custom docset"
+	base = @{
+		name = "Document Set"
+		id = "0x0120D520"
 	}
-	Group = "Document Set Content Types"
+	group = "Document Set Content Types"
 }
 
-New-MgSiteContentType -SiteId $siteId -BodyParameter $params
+New-MgBetaSiteContentType -SiteId $siteId -BodyParameter $params
 
 ```

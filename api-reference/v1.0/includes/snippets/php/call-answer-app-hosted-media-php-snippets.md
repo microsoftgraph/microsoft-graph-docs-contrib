@@ -15,20 +15,16 @@ $requestBody->setCallbackUri('https://bot.contoso.com/api/calls');
 $requestBody->setAcceptedModalities([$requestBody->setModality(new Modality('audio'));
 ]);
 
-$mediaConfig = new MediaConfig();
+$mediaConfig = new AppHostedMediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');
 
-$additionalData = [
-'blob' => '<Media Session Configuration Blob>', 
-];
-$mediaConfig->setAdditionalData($additionalData);
-
+$mediaConfig->setBlob('<Media Session Configuration Blob>');
 
 
 $requestBody->setMediaConfig($mediaConfig);
 
 
-$graphServiceClient->communications()->callsById('call-id')->answer()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->answer()->post($requestBody);
 
 
 ```

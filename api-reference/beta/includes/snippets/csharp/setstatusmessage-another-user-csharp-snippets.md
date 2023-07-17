@@ -4,20 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var statusMessage = new PresenceStatusMessage
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Users.Item.Presence.SetStatusMessage.SetStatusMessagePostRequestBody
 {
-	Message = new ItemBody
+	StatusMessage = new PresenceStatusMessage
 	{
-		Content = "Hey I am available now",
-		ContentType = BodyType.Text
-	}
+		Message = new ItemBody
+		{
+			Content = "Hey I am available now",
+			ContentType = BodyType.Text,
+		},
+	},
 };
+await graphClient.Users["{user-id}"].Presence.SetStatusMessage.PostAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Presence
-	.SetStatusMessage(statusMessage)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 $params = @{
-	Description = "Update basic properties and permission of application registrations"
-	DisplayName = "ExampleCustomRole"
-	RolePermissions = @(
+	description = "Update basic properties and permission of application registrations"
+	displayName = "ExampleCustomRole"
+	rolePermissions = @(
 		@{
-			AllowedResourceActions = @(
+			allowedResourceActions = @(
 				"Microsoft.CloudPC/CloudPCs/Read"
 				"Microsoft.CloudPC/CloudPCs/Reprovision"
 			)
@@ -19,6 +19,6 @@ $params = @{
 	)
 }
 
-Update-MgRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params
+Update-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params
 
 ```

@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
-	Annotations = @(
+	annotations = @(
 		@{
-			Localizations = @(
+			localizations = @(
 				@{
-					LanguageTag = "no-NB"
-					DisplayName = "Kostnads Senter"
+					languageTag = "no-NB"
+					displayName = "Kostnads Senter"
 				}
 			)
 		}
 	)
 }
 
-Update-MgOrganizationSettingProfileCardProperty -OrganizationId $organizationId -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
+Update-MgBetaOrganizationSettingProfileCardProperty -OrganizationId $organizationId -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
 
 ```

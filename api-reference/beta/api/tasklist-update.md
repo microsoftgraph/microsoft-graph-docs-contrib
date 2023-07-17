@@ -83,8 +83,6 @@ Content-length: 82
 
 ---
 
-
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -105,4 +103,3 @@ Content-Type: application/json
     "id": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs"
 }
 ```
-

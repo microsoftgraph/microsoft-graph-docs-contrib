@@ -4,21 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("ConsistencyLevel", "eventual")
 
-
-requestCount := true
-
-requestParameters := &graphconfig.MeRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.MeRequestBuilderGetQueryParameters{
 	Expand: [] string {"manager($levels=max;$select=id,displayName)"},
 	Select: [] string {"id","displayName"},
-	Count: &requestCount,
 }
-configuration := &graphconfig.MeRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.MeRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

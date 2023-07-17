@@ -4,19 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var place = new Room
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Room
 {
+	OdataType = "microsoft.graph.room",
 	Nickname = "Conf Room",
 	Building = "1",
 	Label = "100",
 	Capacity = 50,
-	IsWheelChairAccessible = false
+	IsWheelChairAccessible = false,
 };
+var result = await graphClient.Places["{place-id}"].PatchAsync(requestBody);
 
-await graphClient.Places["{place-id}"]
-	.Request()
-	.UpdateAsync(place);
 
 ```

@@ -45,14 +45,22 @@ $requestBody->setPauseAfterEstimate(true);
 
 $requestBody->setRegulations(['CCPA', ]);
 
-$siteLocations = new SubjectRightsRequestSiteLocation();
+$siteLocations = new SubjectRightsRequestAllSiteLocation();
 $siteLocations->set@odatatype('microsoft.graph.subjectRightsRequestAllSiteLocation');
 
 
 $requestBody->setSiteLocations($siteLocations);
+$approversUser1 = new User();
+$approversUser1->setId('1B761ED2-AA7E-4D82-9CF5-C09D737B6167');
 
 
-$requestResult = $graphServiceClient->privacy()->subjectRightsRequests()->post($requestBody);
+$approversArray []= $approversUser1;
+$requestBody->setApprovers($approversArray);
+
+
+
+
+$result = $graphServiceClient->privacy()->subjectRightsRequests()->post($requestBody);
 
 
 ```

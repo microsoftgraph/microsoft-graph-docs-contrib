@@ -4,14 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.PoliciesCrossTenantAccessPolicyPartnersRequestBuilderGetQueryParameters{
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphpolicies "github.com/microsoftgraph/msgraph-beta-sdk-go/policies"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphpolicies.PoliciesCrossTenantAccessPolicyPartnersRequestBuilderGetQueryParameters{
 	Select: [] string {"tenantId"},
 	Expand: [] string {"identitySynchronization"},
 }
-configuration := &graphconfig.PoliciesCrossTenantAccessPolicyPartnersRequestBuilderGetRequestConfiguration{
+configuration := &graphpolicies.PoliciesCrossTenantAccessPolicyPartnersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

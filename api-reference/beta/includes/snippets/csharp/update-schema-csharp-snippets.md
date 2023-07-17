@@ -4,43 +4,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var schema = new Microsoft.Graph.ExternalConnectors.Schema
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.Schema
 {
 	BaseType = "microsoft.graph.externalItem",
-	Properties = new List<Microsoft.Graph.ExternalConnectors.Property>()
+	Properties = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.Property>
 	{
-		new Microsoft.Graph.ExternalConnectors.Property
+		new Microsoft.Graph.Beta.Models.ExternalConnectors.Property
 		{
 			Name = "ticketTitle",
-			Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
+			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.PropertyType.String,
 			IsSearchable = true,
 			IsRetrievable = true,
-			Labels = new List<Microsoft.Graph.ExternalConnectors.Label>()
+			Labels = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.Microsoft.Graph.Beta.Models.ExternalConnectors.Label?>
 			{
-				Microsoft.Graph.ExternalConnectors.Label.Title
-			}
+				Microsoft.Graph.Beta.Models.ExternalConnectors.Label.Title,
+			},
 		},
-		new Microsoft.Graph.ExternalConnectors.Property
+		new Microsoft.Graph.Beta.Models.ExternalConnectors.Property
 		{
 			Name = "priority",
-			Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
+			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.PropertyType.String,
 			IsQueryable = true,
 			IsRetrievable = true,
-			IsSearchable = false
+			IsSearchable = false,
 		},
-		new Microsoft.Graph.ExternalConnectors.Property
+		new Microsoft.Graph.Beta.Models.ExternalConnectors.Property
 		{
 			Name = "assignee",
-			Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
-			IsRetrievable = true
-		}
-	}
+			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.PropertyType.String,
+			IsRetrievable = true,
+		},
+	},
 };
+var result = await graphClient.External.Connections["{externalConnection-id}"].Schema.PatchAsync(requestBody);
 
-await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Schema
-	.Request()
-	.UpdateAsync(schema);
 
 ```

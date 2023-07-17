@@ -9,22 +9,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new Place();
+$requestBody = new Room();
 $requestBody->set@odatatype('microsoft.graph.room');
 
-$additionalData = [
-'nickname' => 'Conf Room', 
-'building' => '1', 
-'label' => '100', 
-'capacity' => 50,
-'isWheelChairAccessible' => false,
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setNickname('Conf Room');
+
+$requestBody->setBuilding('1');
+
+$requestBody->setLabel('100');
+
+$requestBody->setCapacity(50);
+
+$requestBody->setIsWheelChairAccessible(false);
 
 
 
-
-$requestResult = $graphServiceClient->placesById('place-id')->patch($requestBody);
+$result = $graphServiceClient->places()->byPlaceId('place-id')->patch($requestBody);
 
 
 ```

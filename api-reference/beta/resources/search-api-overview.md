@@ -97,13 +97,14 @@ When searching an entity type, such as **message**, **event**, **drive**, **driv
 
 For all these entity types, specifying the **fields** property reduces the number of properties returned in the response, optimizing the payload over the wire.
 
-The **listItem** and **externalItem** entities are the only supported entities that allow getting extended retrievable fields configured in the schema. You cannot retrieve extended properties from all the other entities by using the search API. For example, if you created a retrievable field for **externalItem** in the search schema, or if you have a retrievable custom column on a **listItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** type in the request.
+The **listItem**, **driveItem** and **externalItem** entities are the only supported entities that allow getting extended retrievable fields configured in the schema. You cannot retrieve extended properties from all the other entities by using the search API. For example, if you created a retrievable field for **externalItem** in the search schema, or if you have a retrievable custom column on a **listItem** or **driveItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** or **driveItem** type in the request.
 
 If the **fields** specified in the request are either not present in the schema, or not marked as retrievable, they will not be returned in the response. Invalid fields in the request are silently ignored.
 
-If you do not specify any **fields** in the request,  you will get the default set of properties for all types. For extended properties, **listItem** and **externalItem** behave differently when no **fields** are passed in the request:
+If you do not specify any **fields** in the request,  you will get the default set of properties for all types. For extended properties, **listItem**, **driveItem** and **externalItem** behave differently when no **fields** are passed in the request:
 
 - **listItem** will not return any custom field.
+- **driveItem** will return an internal listItem with an empty field.
 - **externalItem** will return all the fields marked with the **retrievable** attribute in the Microsoft Graph connector schema for that particular connection.
 
 ## Keyword Query Language (KQL) support
@@ -174,6 +175,10 @@ To get the result template in the [searchResponse](searchresponse.md), you have 
 
 See [Use search display layout](/graph/search-concept-display-layout) for examples.
 
+## Guest search
+
+The Search API enables guest users to search for items within SharePoint or OneDrive that have been shared with them. To access the list of guest users, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, and in the left navigation, choose **Users**, and select **Guest users**. 
+
 ## Error handling
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
@@ -190,8 +195,8 @@ The search API has the following limitations:
 
 | Entity Type |acronym     |bookmark     |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     |qna     | site       |
 |-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|------------|------------|------------|
-|  acronym    |     True   |     -      |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
-|  bookmark    |     -      |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
+|  acronym    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
+|  bookmark    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
 |  message    |     -      |     -      |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
 | chatMessage |     -      |     -      |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
 |    drive    |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
@@ -201,7 +206,7 @@ The search API has the following limitations:
 |   list      |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
 |  listItem   |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
 |   person    |     -      |     -      |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |     -      |
-|  qna    |     -      |     -      |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |  True      |     -      |
+|  qna    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |  True      |     -      |
 |    site     |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
@@ -212,6 +217,8 @@ The search API has the following limitations:
 
 - The search API does not support xrank for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
+- Guest search does not support searches for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
 ## Schema change deprecation warning
@@ -219,7 +226,7 @@ The search API has the following limitations:
 **In the beta version**, properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the following table.
 
 Start updating any existing apps to use current property and type names, and to get current property names in the response.
-For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
+For backward compatibility, the original properties and types are accessible and functional until **September 30, 2023**, after which they will be removed.
 
 | Resource                           | Change type   | Original property | Current property|
 |:-----------------------------------|:--------------|:------------------|:----------------|

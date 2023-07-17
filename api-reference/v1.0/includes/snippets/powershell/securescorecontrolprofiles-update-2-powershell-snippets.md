@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	AssignedTo = ""
-	Comment = "control is reviewed"
-	State = "Reviewed"
-	VendorInformation = @{
-		Provider = "SecureScore"
-		ProviderVersion = $null
-		SubProvider = $null
-		Vendor = "Microsoft"
+	assignedTo = ""
+	comment = "control is reviewed"
+	state = "Reviewed"
+	vendorInformation = @{
+		provider = "SecureScore"
+		providerVersion = $null
+		subProvider = $null
+		vendor = "Microsoft"
 	}
 }
 

@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 
 $params = @{
-	OnPremisesPublishing = @{
-		ExternalAuthenticationType = "aadPreAuthentication"
-		InternalUrl = "https://contosoiwaapp.com"
-		ExternalUrl = "https://contosoiwaapp-contoso.msappproxy.net"
-		IsHttpOnlyCookieEnabled = $true
-		IsOnPremPublishingEnabled = $true
-		IsPersistentCookieEnabled = $true
-		IsSecureCookieEnabled = $true
-		IsStateSessionEnabled = $true
-		IsTranslateHostHeaderEnabled = $true
-		IsTranslateLinksInBodyEnabled = $true
+	onPremisesPublishing = @{
+		externalAuthenticationType = "aadPreAuthentication"
+		internalUrl = "https://contosoiwaapp.com"
+		externalUrl = "https://contosoiwaapp-contoso.msappproxy.net"
+		isHttpOnlyCookieEnabled = $true
+		isOnPremPublishingEnabled = $true
+		isPersistentCookieEnabled = $true
+		isSecureCookieEnabled = $true
+		isStateSessionEnabled = $true
+		isTranslateHostHeaderEnabled = $true
+		isTranslateLinksInBodyEnabled = $true
 	}
 }
 
-Update-MgApplication -ApplicationId $applicationId -BodyParameter $params
+Update-MgBetaApplication -ApplicationId $applicationId -BodyParameter $params
 
 ```

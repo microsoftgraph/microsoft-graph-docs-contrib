@@ -24,14 +24,10 @@ $previewText->setContent('You have moved up the queue');
 
 
 $requestBody->setPreviewText($previewText);
-$recipient = new TeamworkNotificationRecipient();
+$recipient = new AadUserNotificationRecipient();
 $recipient->set@odatatype('microsoft.graph.aadUserNotificationRecipient');
 
-$additionalData = [
-'userId' => 'jacob@contoso.com', 
-];
-$recipient->setAdditionalData($additionalData);
-
+$recipient->setUserId('jacob@contoso.com');
 
 
 $requestBody->setRecipient($recipient);
@@ -54,7 +50,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->teamsById('team-id')->sendActivityNotification()->post($requestBody);
+$graphServiceClient->teams()->byTeamId('team-id')->sendActivityNotification()->post($requestBody);
 
 
 ```

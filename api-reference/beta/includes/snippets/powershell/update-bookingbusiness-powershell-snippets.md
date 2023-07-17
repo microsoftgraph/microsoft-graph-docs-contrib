@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
-	Email = "admin@fabrikam.com"
-	SchedulingPolicy = @{
-		TimeSlotInterval = "PT60M"
-		MinimumLeadTime = "P1D"
-		MaximumAdvance = "P30D"
-		SendConfirmationsToOwner = $true
-		AllowStaffSelection = $true
+	email = "admin@fabrikam.com"
+	schedulingPolicy = @{
+		timeSlotInterval = "PT60M"
+		minimumLeadTime = "P1D"
+		maximumAdvance = "P30D"
+		sendConfirmationsToOwner = $true
+		allowStaffSelection = $true
 	}
 }
 
-Update-MgBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
+Update-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
 
 ```

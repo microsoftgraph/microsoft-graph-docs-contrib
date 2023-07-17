@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var user = new User
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new User
 {
 	AccountEnabled = true,
 	DisplayName = "Adele Vance",
@@ -15,16 +17,21 @@ var user = new User
 	PasswordProfile = new PasswordProfile
 	{
 		ForceChangePasswordNextSignIn = false,
-		Password = "xWwvJ]6NMw+bWH-d"
+		Password = "xWwvJ]6NMw+bWH-d",
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"extkmpdyld2_graphLearnCourses", "{\"courseId\":100,\"courseName\":\"Explore Microsoft Graph\",\"courseType\":\"Online\"}"}
-	}
+		{
+			"extkmpdyld2_graphLearnCourses" , new 
+			{
+				CourseId = 100,
+				CourseName = "Explore Microsoft Graph",
+				CourseType = "Online",
+			}
+		},
+	},
 };
+var result = await graphClient.Users.PostAsync(requestBody);
 
-await graphClient.Users
-	.Request()
-	.AddAsync(user);
 
 ```

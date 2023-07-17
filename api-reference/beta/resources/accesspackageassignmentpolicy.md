@@ -47,6 +47,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|Who must approve requests for access package in this policy.|
 |requestorSettings|[requestorSettings](requestorsettings.md)|Who can request this access package from this policy.|
 |questions|[accessPackageQuestion](accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
+|verifiableCredentialSettings|[verifiableCredentialSettings](verifiablecredentialsettings.md)|Settings for verifiable credentials set up through the Azure AD Verified ID service. These settings represent the verifiable credentials that a requestor of an access package in this policy can present to be assigned the access package.|
 
 
 ## Relationships
@@ -55,6 +56,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](accesspackage.md)| The access package with this policy. Read-only. Nullable. Supports `$expand`.|
 |customExtensionHandlers|[customExtensionHandler](../resources/customextensionhandler.md) collection| The collection of stages when to execute one or more custom access package workflow extensions. Supports `$expand`.| 
+|customExtensionStageSettings|[customExtensionStageSetting](../resources/customextensionstagesetting.md) collection|The collection of stages when to execute one or more custom access package workflow extensions. Supports `$expand`.|
 
 
 
@@ -73,32 +75,35 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.accessPackageAssignmentPolicy",
-  "id": "String (identifier)",
-  "accessPackageId": "String",
-  "displayName": "String",
-  "description": "String",
-  "canExtend": "Boolean",
-  "durationInDays": "Integer",
-  "expirationDateTime": "String (timestamp)",
-  "createdBy": "String",
-  "createdDateTime": "String (timestamp)",
-  "modifiedBy": "String",
-  "modifiedDateTime": "String (timestamp)",
-  "questions": [
-    {
-      "@odata.type": "microsoft.graph.accessPackageQuestion"
-    }
-  ],
-  "requestorSettings": {
-    "@odata.type": "microsoft.graph.requestorSettings"
-  },
-  "requestApprovalSettings": {
-    "@odata.type": "microsoft.graph.approvalSettings"
-  },
-  "accessReviewSettings": {
-    "@odata.type": "microsoft.graph.assignmentReviewSettings"
-  }
+   "@odata.type": "#microsoft.graph.accessPackageAssignmentPolicy",
+   "id": "String (identifier)",
+   "accessPackageId": "String",
+   "displayName": "String",
+   "description": "String",
+   "canExtend": "Boolean",
+   "durationInDays": "Integer",
+   "expirationDateTime": "String (timestamp)",
+   "createdBy": "String",
+   "createdDateTime": "String (timestamp)",
+   "modifiedBy": "String",
+   "modifiedDateTime": "String (timestamp)",
+   "questions":[
+      {
+         "@odata.type": "microsoft.graph.accessPackageQuestion"
+      }
+   ],
+   "requestorSettings": {
+      "@odata.type": "microsoft.graph.requestorSettings"
+   },
+   "requestApprovalSettings": {
+      "@odata.type": "microsoft.graph.approvalSettings"
+   },
+   "accessReviewSettings": {
+      "@odata.type": "microsoft.graph.assignmentReviewSettings"
+   },
+   "verifiableCredentialSettings": {
+      "@odata.type": "microsoft.graph.verifiableCredentialSettings"
+   }
 }
 ```
 

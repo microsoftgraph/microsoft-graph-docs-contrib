@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var group = new Group
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Group
 {
 	Description = "Marketing group",
 	DisplayName = "Marketing resources",
 	MailEnabled = false,
 	MailNickname = "markres",
-	SecurityEnabled = true
+	SecurityEnabled = true,
 };
+var result = await graphClient.Groups.PostAsync(requestBody);
 
-await graphClient.Groups
-	.Request()
-	.AddAsync(group);
 
 ```

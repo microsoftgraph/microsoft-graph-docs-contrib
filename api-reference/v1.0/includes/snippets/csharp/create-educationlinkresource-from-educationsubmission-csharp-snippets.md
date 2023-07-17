@@ -4,19 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var educationSubmissionResource = new EducationSubmissionResource
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new EducationSubmissionResource
 {
 	Resource = new EducationLinkResource
 	{
 		DisplayName = "Wikipedia",
-		Link = "https://en.wikipedia.org/wiki/Main_Page"
-	}
+		Link = "https://en.wikipedia.org/wiki/Main_Page",
+		OdataType = "#microsoft.graph.educationLinkResource",
+	},
 };
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Resources.PostAsync(requestBody);
 
-await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Resources
-	.Request()
-	.AddAsync(educationSubmissionResource);
 
 ```

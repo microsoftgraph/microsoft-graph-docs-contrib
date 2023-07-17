@@ -4,35 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var unifiedRoleManagementPolicyRule = new UnifiedRoleManagementPolicyEnablementRule
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new UnifiedRoleManagementPolicyEnablementRule
 {
+	OdataType = "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
 	Id = "Enablement_Admin_Assignment",
-	EnabledRules = new List<String>()
+	EnabledRules = new List<string>
 	{
 		"Justification",
-		"MultiFactorAuthentication"
+		"MultiFactorAuthentication",
 	},
 	Target = new UnifiedRoleManagementPolicyRuleTarget
 	{
+		OdataType = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget",
 		Caller = "Admin",
-		Operations = new List<UnifiedRoleManagementPolicyRuleTargetOperations>()
+		Operations = new List<UnifiedRoleManagementPolicyRuleTargetOperations?>
 		{
-			UnifiedRoleManagementPolicyRuleTargetOperations.All
+			UnifiedRoleManagementPolicyRuleTargetOperations.All,
 		},
 		Level = "Assignment",
-		InheritableSettings = new List<String>()
+		InheritableSettings = new List<String>
 		{
 		},
-		EnforcedSettings = new List<String>()
+		EnforcedSettings = new List<String>
 		{
-		}
-	}
+		},
+	},
 };
+var result = await graphClient.Policies.RoleManagementPolicies["{unifiedRoleManagementPolicy-id}"].Rules["{unifiedRoleManagementPolicyRule-id}"].PatchAsync(requestBody);
 
-await graphClient.Policies.RoleManagementPolicies["{unifiedRoleManagementPolicy-id}"].Rules["{unifiedRoleManagementPolicyRule-id}"]
-	.Request()
-	.UpdateAsync(unifiedRoleManagementPolicyRule);
 
 ```

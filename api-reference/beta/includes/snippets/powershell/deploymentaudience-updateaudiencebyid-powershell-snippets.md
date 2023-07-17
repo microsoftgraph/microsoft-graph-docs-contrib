@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.WindowsUpdates
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 $params = @{
-	MemberEntityType = "String"
-	AddMembers = @(
+	memberEntityType = "String"
+	addMembers = @(
 		"String"
 	)
-	RemoveMembers = @(
+	removeMembers = @(
 		"String"
 	)
-	AddExclusions = @(
+	addExclusions = @(
 		"String"
 	)
-	RemoveExclusions = @(
+	removeExclusions = @(
 		"String"
 	)
 }
 
-Update-MgWindowsUpdatesDeploymentAudienceById -DeploymentId $deploymentId -BodyParameter $params
+Update-MgBetaWindowsUpdatesDeploymentAudienceById -DeploymentId $deploymentId -BodyParameter $params
 
 ```

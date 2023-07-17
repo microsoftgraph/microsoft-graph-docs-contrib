@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var reviewSet = new Microsoft.Graph.Ediscovery.ReviewSet
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.ReviewSet
 {
-	DisplayName = "My Reviewset 3"
+	DisplayName = "My Reviewset 3",
 };
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].ReviewSets.PostAsync(requestBody);
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].ReviewSets
-	.Request()
-	.AddAsync(reviewSet);
 
 ```

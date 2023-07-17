@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var target = new BusinessScenarioGroupTarget
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Solutions.BusinessScenarios.Item.Planner.GetPlan.GetPlanPostRequestBody
 {
-	TaskTargetKind = PlannerTaskTargetKind.Group,
-	GroupId = "7a339254-4b2b-4410-b295-c890a16776ee"
+	Target = new BusinessScenarioGroupTarget
+	{
+		OdataType = "microsoft.graph.businessScenarioGroupTarget",
+		TaskTargetKind = PlannerTaskTargetKind.Group,
+		GroupId = "7a339254-4b2b-4410-b295-c890a16776ee",
+	},
 };
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.GetPlan.PostAsync(requestBody);
 
-await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner
-	.GetPlan(target)
-	.Request()
-	.PostAsync();
 
 ```

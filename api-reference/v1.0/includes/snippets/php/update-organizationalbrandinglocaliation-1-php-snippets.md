@@ -16,15 +16,13 @@ $requestBody->setUsernameHintText('DefaultHint');
 
 
 $requestConfiguration = new BrandingRequestBuilderPatchRequestConfiguration();
-
 $headers = [
-	'Accept-Language' => '0',
-];
-
+		'Accept-Language' => '0',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->organizationById('organization-id')->branding()->patch($requestBody, $requestConfiguration);
+$result = $graphServiceClient->organization()->byOrganization()Id('organization-id')->branding()->patch($requestBody, $requestConfiguration);
 
 
 ```

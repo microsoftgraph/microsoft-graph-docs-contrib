@@ -100,7 +100,7 @@ The status of the Delegated Admin access assignment. The status transitions are 
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [identity-governance-and-zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 

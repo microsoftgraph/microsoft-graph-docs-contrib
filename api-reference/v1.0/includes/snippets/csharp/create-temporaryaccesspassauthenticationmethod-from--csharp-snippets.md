@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var temporaryAccessPassAuthenticationMethod = new TemporaryAccessPassAuthenticationMethod
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new TemporaryAccessPassAuthenticationMethod
 {
-	StartDateTime = DateTimeOffset.Parse("2022-06-05T00:00:00Z"),
+	StartDateTime = DateTimeOffset.Parse("2022-06-05T00:00:00.000Z"),
 	LifetimeInMinutes = 60,
-	IsUsableOnce = false
+	IsUsableOnce = false,
 };
+var result = await graphClient.Users["{user-id}"].Authentication.TemporaryAccessPassMethods.PostAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Authentication.TemporaryAccessPassMethods
-	.Request()
-	.AddAsync(temporaryAccessPassAuthenticationMethod);
 
 ```

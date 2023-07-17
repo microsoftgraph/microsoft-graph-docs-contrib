@@ -33,9 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /sites/{sitesId}/pages/{sitePageId}/webparts
-GET /sites/{sitesId}/pages/{sitePageId}/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
-GET /sites/{sitesId}/pages/{sitePageId}/canvasLayout/verticalSection/webparts
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webparts
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection/webparts
 ```
 
 ## Optional query parameters
@@ -62,44 +62,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
+<!-- { "blockType": "ignored" } -->
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_webpart"
-}
--->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
+```http
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-webpart-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-webpart-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-webpart-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-webpart-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-webpart-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-webpart-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
@@ -126,10 +93,11 @@ Content-Type: application/json
       "innerHtml": "<h2>How do you get started?</h2>"
     },
     {
-      "@odata.type": "#microsoft.graph.textWebPart",
+      "@odata.type": "#microsoft.graph.standardWebPart",
       "id": "6346d908-f20d-4528-902f-3c2a9c8c2442",
       "webPartType": "d1d91016-032f-456d-98a4-721247c305e8",
       "data": {
+        "audiences": [],
         "dataVersion": "1.9",
         "description": "Show an image on your page",
         "title": "Image",
@@ -148,14 +116,20 @@ Content-Type: application/json
           "alignment": "Center"
         },
         "serverProcessedContent": {
+          "componentDependencies": [],
+          "htmlStrings": [],
+          "links": [],
+          "searchablePlainTexts": [],
           "imageSources": [
             {
+              "@odata.type": "#microsoft.graph.metaDataKeyStringPair",
               "key": "imageSource",
               "value": "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG"
             }
           ],
           "customMetadata": [
             {
+              "@odata.type": "#microsoft.graph.metaDataKeyValuePair",
               "key": "imageSource",
               "value": {
                 "siteid": "0264cabe-6b92-450a-b162-b0c3d54fe5e8",

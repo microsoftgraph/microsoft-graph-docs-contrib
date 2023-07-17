@@ -10,11 +10,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new ReferenceCreate();
-$requestBody->set@odataid('https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9');
+$requestBody->set@odataid('https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4');
 
 
 
-$graphServiceClient->applicationsById('application-id')->tokenLifetimePolicies()->ref()->post($requestBody);
+$graphServiceClient->applications()->byApplicationId('application-id')->tokenLifetimePolicies()->ref()->post($requestBody);
 
 
 ```

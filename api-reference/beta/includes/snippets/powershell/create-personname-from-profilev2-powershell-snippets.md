@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 
 $params = @{
-	DisplayName = "Innocenty Popov"
-	First = "Innocenty"
-	Initials = "IP"
-	Last = "Popov"
-	LanguageTag = "en-US"
-	Maiden = $null
+	displayName = "Innocenty Popov"
+	first = "Innocenty"
+	initials = "IP"
+	last = "Popov"
+	languageTag = "en-US"
+	maiden = $null
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserProfileName -UserId $userId -BodyParameter $params
+New-MgBetaUserProfileName -UserId $userId -BodyParameter $params
 
 ```

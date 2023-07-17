@@ -4,34 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
-	Value = @(
+	value = @(
 		@{
-			AssignedTo = "String"
-			ClosedDateTime = [System.DateTime]::Parse("String (timestamp)")
-			Comments = @(
+			assignedTo = "String"
+			closedDateTime = [System.DateTime]::Parse("String (timestamp)")
+			comments = @(
 				"String"
 			)
-			Feedback = @{
+			feedback = @{
 				"@odata.type" = "microsoft.graph.alertFeedback"
 			}
-			Id = "String (identifier)"
-			Status = @{
+			id = "String (identifier)"
+			status = @{
 				"@odata.type" = "microsoft.graph.alertStatus"
 			}
-			Tags = @(
+			tags = @(
 				"String"
 			)
-			VendorInformation = @{
-				Provider = "String"
-				Vendor = "String"
+			vendorInformation = @{
+				provider = "String"
+				vendor = "String"
 			}
 		}
 	)
 }
 
-Update-MgSecurityAlertMultiple -BodyParameter $params
+Update-MgBetaSecurityAlertMultiple -BodyParameter $params
 
 ```

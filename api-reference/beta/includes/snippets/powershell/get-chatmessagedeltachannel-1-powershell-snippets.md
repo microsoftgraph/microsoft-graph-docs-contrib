@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Top 2 
+Get-MgBetaTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Top 2 
 
 ```

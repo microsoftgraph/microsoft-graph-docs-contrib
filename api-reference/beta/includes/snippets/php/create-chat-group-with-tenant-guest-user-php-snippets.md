@@ -14,20 +14,20 @@ $requestBody->setChatType(new ChatType('group'));
 
 $requestBody->setTopic('Group chat title');
 
-$membersConversationMember1 = new ConversationMember();
+$membersConversationMember1 = new AadUserConversationMember();
 $membersConversationMember1->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember1->setRoles(['owner', ]);
 
 $additionalData = [
-'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca\')', 
+	'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca\')', 
 ];
 $membersConversationMember1->setAdditionalData($additionalData);
 
 
 
 $membersArray []= $membersConversationMember1;
-$membersConversationMember2 = new ConversationMember();
+$membersConversationMember2 = new AadUserConversationMember();
 $membersConversationMember2->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember2->setRoles(['owner', ]);
@@ -40,7 +40,7 @@ $membersConversationMember2->setAdditionalData($additionalData);
 
 
 $membersArray []= $membersConversationMember2;
-$membersConversationMember3 = new ConversationMember();
+$membersConversationMember3 = new AadUserConversationMember();
 $membersConversationMember3->set@odatatype('#microsoft.graph.aadUserConversationMember');
 
 $membersConversationMember3->setRoles(['guest', ]);
@@ -58,7 +58,7 @@ $requestBody->setMembers($membersArray);
 
 
 
-$requestResult = $graphServiceClient->chats()->post($requestBody);
+$result = $graphServiceClient->chats()->post($requestBody);
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgServicePrincipal -Search "displayName:Team" -CountVariable CountVar -Property "accountEnabled,displayName,publisherName,servicePrincipalType,signInAudience" -ConsistencyLevel eventual 
+Get-MgServicePrincipal -Search '"displayName:Team"' -CountVariable CountVar -Property "accountEnabled,displayName,publisherName,servicePrincipalType,signInAudience" -ConsistencyLevel eventual 
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->roleManagement()->directory()->roleEligibilityScheduleRequests()->get();
+$result = $graphServiceClient->roleManagement()->directory()->roleEligibilityScheduleRequests()->get();
 
 
 ```

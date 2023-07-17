@@ -20,7 +20,7 @@ $requestBody->setIsEnabled(true);
 
 $requestBody->setIsSchedulingEnabled(false);
 
-$executionConditions = new WorkflowExecutionConditions();
+$executionConditions = new OnDemandExecutionOnly();
 $executionConditions->set@odatatype('#microsoft.graph.identityGovernance.onDemandExecutionOnly');
 
 
@@ -81,7 +81,7 @@ $requestBody->setTasks($tasksArray);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->post($requestBody);
 
 
 ```

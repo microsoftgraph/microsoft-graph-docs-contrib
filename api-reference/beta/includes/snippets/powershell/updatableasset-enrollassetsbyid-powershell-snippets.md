@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.WindowsUpdates
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 $params = @{
-	UpdateCategory = "feature"
-	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice"
-	Ids = @(
+	updateCategory = "feature"
+	memberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice"
+	ids = @(
 		"String"
 		"String"
 		"String"
 	)
 }
 
-Invoke-MgEnrollWindowsUpdatesUpdatableAssetById -BodyParameter $params
+Invoke-MgBetaEnrollWindowsUpdatesUpdatableAssetById -BodyParameter $params
 
 ```

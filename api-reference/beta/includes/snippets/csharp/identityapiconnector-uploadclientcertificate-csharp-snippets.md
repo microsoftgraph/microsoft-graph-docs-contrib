@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var password = "<password>";
+var requestBody = new Microsoft.Graph.Beta.Identity.ApiConnectors.Item.UploadClientCertificate.UploadClientCertificatePostRequestBody
+{
+	Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
+	Password = "<password>",
+};
+var result = await graphClient.Identity.ApiConnectors["{identityApiConnector-id}"].UploadClientCertificate.PostAsync(requestBody);
 
-await graphClient.Identity.ApiConnectors["{identityApiConnector-id}"]
-	.UploadClientCertificate(pkcs12Value,password)
-	.Request()
-	.PostAsync();
 
 ```

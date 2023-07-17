@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new RemoveMembersPostRequestBody();
-$assetsUpdatableAsset1 = new UpdatableAsset();
+$assetsUpdatableAsset1 = new AzureADDevice();
 $assetsUpdatableAsset1->set@odatatype('#microsoft.graph.windowsUpdates.azureADDevice');
 
 $assetsUpdatableAsset1->setId('String (identifier)');
@@ -22,7 +22,7 @@ $requestBody->setAssets($assetsArray);
 
 
 
-$graphServiceClient->admin()->windows()->updates()->updatableAssetsById('updatableAsset-id')->removeMembers()->post($requestBody);
+$graphServiceClient->admin()->windows()->updates()->updatableAssets()->byUpdatableAssetId('updatableAsset-id')->microsoftGraphWindowsUpdatesRemoveMembers()->post($requestBody);
 
 
 ```

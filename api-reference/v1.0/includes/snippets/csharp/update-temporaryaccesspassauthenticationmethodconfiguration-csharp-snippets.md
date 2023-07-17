@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var authenticationMethodConfiguration = new TemporaryAccessPassAuthenticationMethodConfiguration
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new TemporaryAccessPassAuthenticationMethodConfiguration
 {
-	IsUsableOnce = true
+	OdataType = "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
+	IsUsableOnce = true,
 };
+var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"].PatchAsync(requestBody);
 
-await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]
-	.Request()
-	.UpdateAsync(authenticationMethodConfiguration);
 
 ```

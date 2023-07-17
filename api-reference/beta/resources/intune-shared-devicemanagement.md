@@ -25,7 +25,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 - Device intent settings
 - Device management
 - Electronic SIM (ESIM)
-- Fencing
 - Group Policy Analytics
 - Notifications
 - Onboarding policies, settings, and details
@@ -35,7 +34,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 - Remote assistance partners
 - Role-based access control (RBAC) policies
 - Reporting
-- Telecom expanse management partners
+
 - Troubleshooting events
 - Windows Information Protection summaries
 
@@ -150,9 +149,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|The Windows autopilot account settings.|
 |**Embedded SIM**|
 |embeddedSIMActivationCodePools|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) collection|The embedded SIM activation code pools created by this account.|
-|**Fencing**|
-|managementConditions|[managementCondition](../resources/intune-fencing-managementcondition.md) collection|The management conditions associated with device management of the company.|
-|managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) collection|The management condition statements associated with device management of the company.|
 |**Group Policy Analytics**|
 |groupPolicyMigrationReports|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) collection|A list of Group Policy migration reports.|
 |**MicrosoftTunnel**|
@@ -190,8 +186,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Reports singleton|
 |**Software Update**|
 |windowsFeatureUpdateProfiles|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) collection|A collection of windows feature update profiles|
-|**Telecom expense management (TEM)**|
-|telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) collection|The telecom expense management partners.|
 |**Troubleshooting**|
 |troubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) collection|The list of troubleshooting events for the tenant.|
 |**Windows Information Protection**|

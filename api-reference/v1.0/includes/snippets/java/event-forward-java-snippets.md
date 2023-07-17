@@ -8,10 +8,10 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 LinkedList<Recipient> toRecipientsList = new LinkedList<Recipient>();
 Recipient toRecipients = new Recipient();
-EmailAddress emailAddress = new EmailAddress();
-emailAddress.address = "danas@contoso.onmicrosoft.com";
-emailAddress.name = "Dana Swope";
-toRecipients.emailAddress = emailAddress;
+EmailAddress EmailAddress = new EmailAddress();
+EmailAddress.Address = "danas@contoso.onmicrosoft.com";
+EmailAddress.Name = "Dana Swope";
+toRecipients.EmailAddress = EmailAddress;
 
 toRecipientsList.add(toRecipients);
 

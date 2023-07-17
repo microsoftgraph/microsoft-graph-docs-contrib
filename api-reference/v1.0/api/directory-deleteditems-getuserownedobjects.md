@@ -56,6 +56,7 @@ Successful requests return `200 OK` response codes; the response object includes
 
 Here is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directory_deleteditem_getuserownedobjects"
@@ -69,6 +70,12 @@ Content-type: application/json
   "type":"Group"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-directory-deleteditem-getuserownedobjects-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

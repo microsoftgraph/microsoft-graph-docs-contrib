@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
-	DisplayName = "DNN"
-	StandsFor = "Deep Neural Network"
-	Description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers."
-	WebUrl = "http://microsoft.com/deep-neural-network"
-	State = "draft"
+	displayName = "GDPR"
+	standsFor = "General Data Protection Regulation"
+	description = "A European Union (EU) regulation on data protection and privacy in the EU and the European Economic Area (EEA) that enhances individuals' control and rights over their personal data, simplifies the regulatory environment for international business, and addresses the transfer of personal data outside the EU and EEA areas."
+	webUrl = "http://contoso.com/GDPR"
+	state = "published"
 }
 
-New-MgSearchAcronym -BodyParameter $params
+New-MgBetaSearchAcronym -BodyParameter $params
 
 ```

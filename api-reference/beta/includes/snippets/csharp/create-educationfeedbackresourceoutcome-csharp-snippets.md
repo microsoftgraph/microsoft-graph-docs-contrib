@@ -4,18 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var educationOutcome = new EducationFeedbackResourceOutcome
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new EducationFeedbackResourceOutcome
 {
+	OdataType = "#microsoft.graph.educationFeedbackResourceOutcome",
 	FeedbackResource = new EducationWordResource
 	{
-		DisplayName = "Document1.docx"
-	}
+		OdataType = "#microsoft.graph.educationWordResource",
+		DisplayName = "Document1.docx",
+	},
 };
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes.PostAsync(requestBody);
 
-await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes
-	.Request()
-	.AddAsync(educationOutcome);
 
 ```

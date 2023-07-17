@@ -9,15 +9,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new UserConsentRequestRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new UserConsentRequestRequestBuilderGetQueryParameters();
-$queryParameters->filter = " ";
-
+$requestConfiguration = new FilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration();
+$queryParameters = FilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = " (status eq 'Completed')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequestsById('appConsentRequest-id')->userConsentRequestsById('userConsentRequest-id')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequests()->byAppConsentRequestId('appConsentRequest-id')->userConsentRequests()->filterByCurrentUser(on='{on}')()->get($requestConfiguration);
 
 
 ```

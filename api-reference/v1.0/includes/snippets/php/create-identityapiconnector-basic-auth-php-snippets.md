@@ -14,21 +14,18 @@ $requestBody->setDisplayName('Test API');
 
 $requestBody->setTargetUrl('https://someapi.com/api');
 
-$authenticationConfiguration = new ApiAuthenticationConfigurationBase();
+$authenticationConfiguration = new BasicAuthentication();
 $authenticationConfiguration->set@odatatype('#microsoft.graph.basicAuthentication');
 
-$additionalData = [
-'username' => 'MyUsername', 
-'password' => 'MyPassword', 
-];
-$authenticationConfiguration->setAdditionalData($additionalData);
+$authenticationConfiguration->setUsername('MyUsername');
 
+$authenticationConfiguration->setPassword('MyPassword');
 
 
 $requestBody->setAuthenticationConfiguration($authenticationConfiguration);
 
 
-$requestResult = $graphServiceClient->identity()->apiConnectors()->post($requestBody);
+$result = $graphServiceClient->identity()->apiConnectors()->post($requestBody);
 
 
 ```

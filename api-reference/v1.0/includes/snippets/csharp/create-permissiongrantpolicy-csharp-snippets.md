@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var permissionGrantPolicy = new PermissionGrantPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new PermissionGrantPolicy
 {
 	Id = "my-custom-consent-policy",
 	DisplayName = "Custom application consent policy",
-	Description = "A custom permission grant policy to customize conditions for granting consent."
+	Description = "A custom permission grant policy to customize conditions for granting consent.",
 };
+var result = await graphClient.Policies.PermissionGrantPolicies.PostAsync(requestBody);
 
-await graphClient.Policies.PermissionGrantPolicies
-	.Request()
-	.AddAsync(permissionGrantPolicy);
 
 ```

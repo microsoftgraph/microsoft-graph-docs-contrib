@@ -36,67 +36,17 @@ The following example configures an [Interactive authentication provider](choose
 
 ### [C#](#tab/csharp)
 
-```csharp
-using Azure.Identity;
-using Microsoft.Graph;
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/NationalClouds.cs" id="NationalCloudSnippet":::
 
-// Create the InteractiveBrowserCredential using details
-// from app registered in the Azure AD for US Government portal
-var credential = new InteractiveBrowserCredential(
-    "YOUR_TENANT_ID",
-    "YOUR_CLIENT_ID",
-    new InteractiveBrowserCredentialOptions
-    {
-        // https://login.microsoftonline.us
-        AuthorityHost = AzureAuthorityHosts.AzureGovernment,
-        RedirectUri = new Uri("YOUR_REDIRECT_URI")
-    });
+### [Go](#tab/go)
 
-// Create the authentication provider
-var authProvider = new TokenCredentialAuthProvider(
-    credential,
-    new [] {"https://graph.microsoft.us/.default"});
+:::code language="go" source="./snippets/go/src/snippets/national_clouds.go" id="ImportSnippet":::
 
-// Create the Microsoft Graph client object using
-// the Microsoft Graph for US Government L4 endpoint
-// NOTE: The API version must be included in the URL
-var graphClient = new GraphServiceClient(
-    "https://graph.microsoft.us/v1.0",
-    authProvider);
-```
+:::code language="go" source="./snippets/go/src/snippets/national_clouds.go" id="NationalCloudSnippet":::
 
-### [TypeScript](#tab/typescript)
+### [Java](#tab/java)
 
-```typescript
-import 'isomorphic-fetch';
-import { AzureAuthorityHosts, InteractiveBrowserCredential } from '@azure/identity';
-import { Client } from '@microsoft/microsoft-graph-client';
-import { TokenCredentialAuthenticationProvider } from
-  '@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials';
-
-// Create the InteractiveBrowserCredential using details
-// from app registered in the Azure AD for US Government portal
-const credential = new InteractiveBrowserCredential({
-  clientId: 'YOUR_CLIENT_ID',
-  tenantId: 'YOUR_TENANT_ID',
-  // https://login.microsoftonline.us
-  authorityHost: AzureAuthorityHosts.AzureGovernment,
-  redirectUri: 'YOUR_REDIRECT_URI'
-});
-
-// Create the authentication provider
-const authenticationProvider = new TokenCredentialAuthenticationProvider(credential, {
-  scopes: ['https://graph.microsoft.us/.default']
-});
-
-// Create the Microsoft Graph client object using
-// the Microsoft Graph for US Government L4 endpoint
-// NOTE: Do not include the version in the baseUrl
-const graphClient = Client.initWithMiddleware({
-  authProvider: authenticationProvider,
-  baseUrl: 'https://graph.microsoft.us'
-});
-```
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/NationalClouds.java" id="NationalCloudSnippet":::
 
 ### [PowerShell](#tab/powershell)
 
@@ -105,93 +55,12 @@ Connect-MgGraph -Environment USGov -ClientId 'YOUR_CLIENT_ID' `
   -TenantId 'YOUR_TENANT_ID' -Scopes 'https://graph.microsoft.us/.default'
 ```
 
-### [Java](#tab/java)
+### [Python](#tab/python)
 
-```java
-import java.util.Arrays;
-import java.util.List;
+:::code language="python" source="./snippets/python/src/snippets/national_clouds.py" id="NationalCloudSnippet":::
 
-import com.azure.identity.AzureAuthorityHosts;
-import com.azure.identity.InteractiveBrowserCredential;
-import com.azure.identity.InteractiveBrowserCredentialBuilder;
-import com.microsoft.graph.authentication.TokenCredentialAuthProvider;
-import com.microsoft.graph.requests.GraphServiceClient;
+### [TypeScript](#tab/typescript)
 
-// Create the InteractiveBrowserCredential using details
-// from app registered in the Azure AD for US Government portal
-final InteractiveBrowserCredential credential =
-    new InteractiveBrowserCredentialBuilder()
-        .clientId("YOUR_CLIENT_ID")
-        .tenantId("YOUR_TENANT_ID")
-        // https://login.microsoftonline.us
-        .authorityHost(AzureAuthorityHosts.AZURE_GOVERNMENT)
-        .redirectUrl("YOUR_REDIRECT_URI")
-        .build();
-
-// Create the authentication provider
-final List<String> scopes = Arrays.asList("https://graph.microsoft.us/.default");
-final TokenCredentialAuthProvider authProvider =
-    new TokenCredentialAuthProvider(scopes, credential);
-
-// Create the Microsoft Graph client object
-final GraphServiceClient<Request> graphClient = GraphServiceClient.builder()
-    .authenticationProvider(authProvider)
-    .buildClient();
-
-// Set the service root to the
-// Microsoft Graph for US Government L4 endpoint
-// NOTE: The API version must be included in the URL
-graphClient.setServiceRoot("https://graph.microsoft.us/v1.0");
-```
-
-### [Go](#tab/go)
-
-```go
-import (
-    "context"
-
-    "github.com/Azure/azure-sdk-for-go/sdk/azcore/cloud"
-    "github.com/Azure/azure-sdk-for-go/sdk/azcore/policy"
-    "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    auth "github.com/microsoftgraph/msgraph-sdk-go-core/authentication"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
-
-// Create the InteractiveBrowserCredential using details
-// from app registered in the Azure AD for US Government portal
-credential, err := azidentity.NewInteractiveBrowserCredential(&azidentity.InteractiveBrowserCredentialOptions{
-    ClientID: "YOUR_CLIENT_ID",
-    TenantID: "YOUR_TENANT_ID",
-    ClientOptions: policy.ClientOptions{
-        // https://login.microsoftonline.us
-        Cloud: cloud.AzureGovernment,
-    },
-    RedirectURL: "YOUR_REDIRECT_URL",
-})
-if err != nil {
-    return err
-}
-
-// Create the authentication provider
-authProvider, err := auth.NewAzureIdentityAuthenticationProviderWithScopes(credential,
-    []string{"https://graph.microsoft.us/.default"})
-if err != nil {
-    return err
-}
-
-// Create a request adapter using the auth provider
-adapter, err := msgraphsdk.NewGraphRequestAdapter(authProvider)
-if err != nil {
-    return err
-}
-
-// Set the service root to the
-// Microsoft Graph for US Government L4 endpoint
-// NOTE: The API version must be included in the URL
-adapter.SetBaseUrl("https://graph.microsoft.us/v1.0")
-
-// Create a Graph client using request adapter
-graphClient := msgraphsdk.NewGraphServiceClient(adapter)
-```
+:::code language="csharp" source="./snippets/typescript/src/snippets/nationalClouds.ts" id="NationalCloudSnippet":::
 
 ---

@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var calendar = new Calendar
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Calendar
 {
-	Name = "Volunteer"
+	Name = "Volunteer",
 };
+var result = await graphClient.Me.Calendars.PostAsync(requestBody);
 
-await graphClient.Me.Calendars
-	.Request()
-	.AddAsync(calendar);
 
 ```

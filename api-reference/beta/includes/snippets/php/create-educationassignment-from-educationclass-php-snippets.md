@@ -21,18 +21,14 @@ $instructions->setContent('Read chapter 4');
 
 
 $requestBody->setInstructions($instructions);
-$grading = new EducationAssignmentGradeType();
+$grading = new EducationAssignmentPointsGradeType();
 $grading->set@odatatype('#microsoft.graph.educationAssignmentPointsGradeType');
 
-$additionalData = [
-'maxPoints' => 50,
-];
-$grading->setAdditionalData($additionalData);
-
+$grading->setMaxPoints(50);
 
 
 $requestBody->setGrading($grading);
-$assignTo = new EducationAssignmentRecipient();
+$assignTo = new EducationAssignmentClassRecipient();
 $assignTo->set@odatatype('#microsoft.graph.educationAssignmentClassRecipient');
 
 
@@ -43,7 +39,7 @@ $requestBody->setAllowStudentsToAddResourcesToSubmission(true);
 
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignments()->post($requestBody);
+$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->post($requestBody);
 
 
 ```

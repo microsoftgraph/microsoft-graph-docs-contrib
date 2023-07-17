@@ -4,11 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var namedLocations = await graphClient.Identity.ConditionalAccess.NamedLocations
-	.Request()
-	.Filter("microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Identity.ConditionalAccess.NamedLocations.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "microsoft.graph.countryNamedLocation/countriesAndRegions/any";
+});
+
 
 ```

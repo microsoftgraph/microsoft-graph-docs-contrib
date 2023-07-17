@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new Place();
+$requestBody = new RoomList();
 $requestBody->set@odatatype('microsoft.graph.roomList');
 
 $requestBody->setDisplayName('Building 1');
@@ -44,7 +44,7 @@ $GeoCoordinates->setAltitudeAccuracy(null);
 $requestBody->setGeoCoordinates($geoCoordinates);
 
 
-$requestResult = $graphServiceClient->placesById('place-id')->patch($requestBody);
+$result = $graphServiceClient->places()->byPlaceId('place-id')->patch($requestBody);
 
 
 ```

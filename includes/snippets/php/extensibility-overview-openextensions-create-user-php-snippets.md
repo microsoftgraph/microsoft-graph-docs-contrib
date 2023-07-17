@@ -9,23 +9,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new Extension();
+$requestBody = new OpenTypeExtension();
 $requestBody->set@odatatype('#microsoft.graph.openTypeExtension');
+
+$requestBody->setExtensionName('com.contoso.socialSettings');
 
 $requestBody->setId('com.contoso.socialSettings');
 
 $additionalData = [
-'extensionName' => 'com.contoso.socialSettings', 
-'skypeId' => 'skypeId.AdeleV', 
-'linkedInProfile' => 'www.linkedin.com/in/testlinkedinprofile', 
-'xboxGamerTag' => 'AwesomeAdele', 
+		'skypeId' => 'skypeId.AdeleV', 
+		'linkedInProfile' => 'www.linkedin.com/in/testlinkedinprofile', 
+		'xboxGamerTag' => 'AwesomeAdele', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->extensions()->post($requestBody);
+$result = $graphServiceClient->users()->byUserId('user-id')->extensions()->post($requestBody);
 
 
 ```
