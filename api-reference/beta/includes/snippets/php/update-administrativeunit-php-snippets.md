@@ -10,17 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new AdministrativeUnit();
+$requestBody->setDisplayName('Executive Division');
+
 $additionalData = [
-'membershipType' => 'Dynamic', 
-'membershipRule' => '(user.country -eq \"United States\")', 
-'membershipRuleProcessingState' => 'On', 
+		'membershipType' => 'Dynamic', 
+		'membershipRule' => '(user.country -eq \"United States\")', 
+		'membershipRuleProcessingState' => 'On', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->administrativeUnitsById('administrativeUnit-id')->patch($requestBody);
+$result = $graphServiceClient->administrativeUnits()->byAdministrativeUnitId('administrativeUnit-id')->patch($requestBody);
 
 
 ```

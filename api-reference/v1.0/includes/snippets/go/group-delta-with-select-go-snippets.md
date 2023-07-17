@@ -4,13 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.GroupsDelta()RequestBuilderGetQueryParameters{
+
+requestParameters := &graphgroups.GroupsDelta()RequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","description","mailNickname"},
 }
-configuration := &graphconfig.GroupsDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupsDelta()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

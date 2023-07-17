@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewChatMessage()
 messageType := graphmodels.MESSAGE_CHATMESSAGETYPE 
@@ -77,7 +85,6 @@ chatMessageAttachment1.SetThumbnailUrl(&thumbnailUrl)
 attachments := []graphmodels.ChatMessageAttachmentable {
 	chatMessageAttachment,
 	chatMessageAttachment1,
-
 }
 requestBody.SetAttachments(attachments)
 mentions := []graphmodels.ChatMessageMentionable {
@@ -264,7 +271,6 @@ reactions := []graphmodels.ChatMessageReactionable {
 	chatMessageReaction5,
 	chatMessageReaction6,
 	chatMessageReaction7,
-
 }
 requestBody.SetReactions(reactions)
 
@@ -479,11 +485,10 @@ messageHistory := []graphmodels.ChatMessageHistoryItemable {
 	chatMessageHistoryItem5,
 	chatMessageHistoryItem6,
 	chatMessageHistoryItem7,
-
 }
 requestBody.SetMessageHistory(messageHistory)
 
-result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().ByMessageId("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,36 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerPlanConfigurationLocalization"
-	LanguageTag = "en-us"
-	PlanTitle = "Order Tracking"
-	Buckets = @(
+	languageTag = "en-us"
+	planTitle = "Order Tracking"
+	buckets = @(
 		@{
 			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
-			ExternalBucketId = "deliveryBucket"
-			Name = "Deliveries"
+			externalBucketId = "deliveryBucket"
+			name = "Deliveries"
 		}
 		@{
 			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
-			ExternalBucketId = "storePickupBucket"
-			Name = "Pickup"
+			externalBucketId = "storePickupBucket"
+			name = "Pickup"
 		}
 		@{
 			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
-			ExternalBucketId = "specialOrdersBucket"
-			Name = "Special Orders"
+			externalBucketId = "specialOrdersBucket"
+			name = "Special Orders"
 		}
 		@{
 			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
-			ExternalBucketId = "returnProcessingBucket"
-			Name = "Customer Returns"
+			externalBucketId = "returnProcessingBucket"
+			name = "Customer Returns"
 		}
 	)
 }
 
-New-MgBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId -BodyParameter $params
+New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId -BodyParameter $params
 
 ```

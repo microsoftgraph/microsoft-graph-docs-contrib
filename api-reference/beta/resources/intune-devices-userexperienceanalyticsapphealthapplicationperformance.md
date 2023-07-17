@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsAppHealthApplicationPerformance resource type"
-description: "The user experience analytics application performance entity contains app performance details."
+description: "The user experience analytics application performance entity contains application performance details."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The user experience analytics application performance entity contains app performance details.
+The user experience analytics application performance entity contains application performance details.
 
 ## Methods
 |Method|Return Type|Description|
@@ -29,18 +29,18 @@ The user experience analytics application performance entity contains app perfor
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics app performance object.|
-|appHangCount|Int32|The number of hangs for the app. Valid values -2147483648 to 2147483647|
-|appHealthScore|Double|The health score of the app. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|appHealthStatus|String|The overall health status of the app.|
-|allOrgsHealthScore|Double|The median health score of the application across all organizations. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|activeDeviceCount|Int32|The number of devices where the app has been active. Valid values -2147483648 to 2147483647|
-|appName|String|The name of the application.|
-|appDisplayName|String|The friendly name of the application.|
-|appPublisher|String|The publisher of the application.|
-|appUsageDuration|Int32|The total usage time of the application in minutes. Valid values -2147483648 to 2147483647|
-|appCrashCount|Int32|The number of crashes for the app. Valid values -2147483648 to 2147483647|
-|meanTimeToFailureInMinutes|Int32|The mean time to failure for the app in minutes. Valid values -2147483648 to 2147483647|
+|id|String|The unique identifier of the user experience analytics application performance object. Supports: $select, $OrderBy. Read-only.|
+|appHangCount|Int32|The number of hangs for the application. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
+|appHealthScore|Double|The health score of the application. Valid values 0 to 100. Supports: $filter, $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|appHealthStatus|String|The overall health status of the application. Read-only.|
+|allOrgsHealthScore|Double|The median health score of the application across all organizations. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|activeDeviceCount|Int32|The health score of the application. Valid values 0 to 100. Supports: $filter, $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
+|appName|String|The name of the application. Possible values are: outlook.exe, excel.exe. Supports: $select, $OrderBy. Read-only.|
+|appDisplayName|String|The friendly name of the application. Possible values are: Outlook, Excel. Supports: $select, $OrderBy. Read-only.|
+|appPublisher|String|The publisher of the application. Supports: $select, $OrderBy. Read-only.|
+|appUsageDuration|Int32|The total usage time of the application in minutes. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
+|appCrashCount|Int32|The number of crashes for the application. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
+|meanTimeToFailureInMinutes|Int32|The mean time to failure for the application in minutes. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
 
 ## Relationships
 None

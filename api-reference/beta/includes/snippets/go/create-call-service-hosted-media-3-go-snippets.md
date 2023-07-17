@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCall()
 callbackUri := "https://bot.contoso.com/callback"
@@ -46,20 +54,16 @@ invitationParticipantInfo.SetIdentity(identity)
 
 targets := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,
-
 }
 requestBody.SetTargets(targets)
 requestedModalities := []graphmodels.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
-	requestBody.SetModality(&modality) 
-
+	requestBody.SetModality(&modality)
 }
 requestBody.SetRequestedModalities(requestedModalities)
-mediaConfig := graphmodels.NewMediaConfig()
-additionalData := map[string]interface{}{
-	"blob" : "<Media Session Configuration>", 
-}
-mediaConfig.SetAdditionalData(additionalData)
+mediaConfig := graphmodels.NewAppHostedMediaConfig()
+blob := "<Media Session Configuration>"
+mediaConfig.SetBlob(&blob) 
 requestBody.SetMediaConfig(mediaConfig)
 tenantId := "aa67bd4c-8475-432d-bd41-39f255720e0a"
 requestBody.SetTenantId(&tenantId) 

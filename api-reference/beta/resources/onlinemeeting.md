@@ -1,7 +1,7 @@
 ---
 title: "onlineMeeting resource type"
 description: "Contains information about a meeting."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "cloud-communications"
@@ -15,12 +15,12 @@ Namespace: microsoft.graph
 
 Contains information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
-This resource supports subscribing to [change notifications](/graph/webhooks). See [subscribe to online meetings](/graph/changenotifications-for-onlinemeeting) for more details.
+This resource supports subscribing to [change notifications](/graph/webhooks). For more details, see [subscribe to online meetings](/graph/changenotifications-for-onlinemeeting).
 
 ## Methods
 
 | Method | Return Type |Description |
-| ------ | ----------- | ---------- |
+| :------ | :----------- | :---------- |
 | [Create](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting. |
 | [Get](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read the properties and relationships of an **onlineMeeting** object. |
 | [Update](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
@@ -37,8 +37,11 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
 | allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. |
 | allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. |
+| allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. |
+| allowRecording | Boolean | Indicates whether recording is enabled for the meeting. |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. |
 | alternativeRecording  | Stream | The content stream of the alternative recording of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
+| anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity will be anonymized in the meeting. Possible values are: `attendee`. The `attendee` value cannot be removed through a PATCH operation once added.|
 | attendeeReport        | Stream | The content stream of the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only.   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
@@ -56,10 +59,11 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting. This includes the organizer and the attendees. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
 | recording | Stream | The content stream of the recording of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
+| shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants.  Possible values are: `all`, `none`, `unknownFutureValue`. |
 | startDateTime | DateTime | The meeting start time in UTC. |
 | subject | String | The subject of the online meeting. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. |
-| watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether a watermark applies for different entities. |
+| watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether a watermark should be applied to a content type by the client application. |
 | autoAdmittedUsers (deprecated) | String | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Read-only. |
 | capabilities (deprecated) | meetingCapabilities collection | The list of meeting capabilities. Possible values are: `questionAndAnswer`,`unknownFutureValue`. |
 
@@ -76,7 +80,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | organization       | Everyone in organizer’s organization is a presenter.          |
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
 | organizer          | Only the organizer  is a presenter.                           |
-| unknownFutureValue | Unknown future value.                                         |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.             |
 
 > [!TIP]
 >
@@ -89,14 +93,22 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | enabled            | Meeting chat is enabled.                                               |
 | disabled           | Meeting chat is disabled.                                              |
 | limited            | Meeting chat is enabled but only for the duration of the meeting call. |
-| unknownFutureValue | Unknown future value.                                                  |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                      |
+
+### meetingChatHistoryDefaultMode values
+
+| Value              | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| all                | All meeting chat history is shared.                                    |
+| none               | No meeting chat history is shared.                                     |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                      |
 
 ## Relationships
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
-| registration | [meetingRegistrationBase](meetingregistrationbase.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
+| attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md) collection | The attendance reports of an online meeting. Read-only. |
+| registration | [meetingRegistration](meetingregistration.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
 | meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of the latest online meeting session. Read-only. |
 | transcripts | [callTranscript](callTranscript.md) collection | The transcripts of an online meeting. Read-only. |
 
@@ -109,8 +121,9 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
-  "externalId"
+	"externalId"
   ],
   "@odata.type": "microsoft.graph.onlineMeeting"
 }-->
@@ -122,6 +135,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
   "allowTeamworkReactions": "Boolean",
   "allowedPresenters": "String",
   "alternativeRecording": "Stream",
+  "anonymizeIdentityForRoles": ["String"],
   "attendeeReport": "Stream",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
@@ -138,6 +152,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
   "recording": "Stream",
+  "shareMeetingChatHistoryDefault": "microsoft.graph.meetingChatHistoryDefaultMode",
   "startDateTime": "String (timestamp)",  
   "subject": "String",
   "videoTeleconferenceId": "String",

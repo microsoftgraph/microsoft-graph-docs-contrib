@@ -19,14 +19,10 @@ $requestBody->setCallbackUri('https://bot.contoso.com/callback');
 $requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
 ]);
 
-$mediaConfig = new MediaConfig();
+$mediaConfig = new AppHostedMediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');
 
-$additionalData = [
-'blob' => '<Media Session Configuration>', 
-];
-$mediaConfig->setAdditionalData($additionalData);
-
+$mediaConfig->setBlob('<Media Session Configuration>');
 
 
 $requestBody->setMediaConfig($mediaConfig);
@@ -39,32 +35,30 @@ $chatInfo->setMessageId('0');
 
 
 $requestBody->setChatInfo($chatInfo);
-$meetingInfo = new MeetingInfo();
+$meetingInfo = new OrganizerMeetingInfo();
 $meetingInfo->set@odatatype('#microsoft.graph.organizerMeetingInfo');
 
-$meetingInfo->setAllowConversationWithoutHost(true);
+$meetingInfoOrganizer = new IdentitySet();
+$meetingInfoOrganizer->set@odatatype('#microsoft.graph.identitySet');
+
+$meetingInfoOrganizerUser = new Identity();
+$meetingInfoOrganizerUser->set@odatatype('#microsoft.graph.identity');
+
+$meetingInfoOrganizerUser->setId('5810cede-f3cc-42eb-b2c1-e9bd5d53ec96');
+
+$meetingInfoOrganizerUser->setDisplayName('Bob');
 
 $additionalData = [
-'organizer' => $meetingInfo = new Organizer();
-$	meetingInfo->set@odatatype('#microsoft.graph.identitySet');
-
-$user = new User();
-$	user->set@odatatype('#microsoft.graph.identity');
-
-$	user->setId('5810cede-f3cc-42eb-b2c1-e9bd5d53ec96');
-
-$	user->setTenantId('aa67bd4c-8475-432d-bd41-39f255720e0a');
-
-$	user->setDisplayName('Bob');
-
-
-$meetingInfo->setUser($user);
-
-$meetingInfo->setOrganizer($organizer);
-
+	'tenantId' => 'aa67bd4c-8475-432d-bd41-39f255720e0a', 
 ];
-$meetingInfo->setAdditionalData($additionalData);
+$meetingInfoOrganizerUser->setAdditionalData($additionalData);
 
+
+
+$meetingInfoOrganizer->setUser($meetingInfoOrganizerUser);
+
+$meetingInfo->setOrganizer($meetingInfoOrganizer);
+$meetingInfo->setAllowConversationWithoutHost(true);
 
 
 $requestBody->setMeetingInfo($meetingInfo);
@@ -72,7 +66,7 @@ $requestBody->setTenantId('aa67bd4c-8475-432d-bd41-39f255720e0a');
 
 
 
-$requestResult = $graphServiceClient->communications()->calls()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->post($requestBody);
 
 
 ```

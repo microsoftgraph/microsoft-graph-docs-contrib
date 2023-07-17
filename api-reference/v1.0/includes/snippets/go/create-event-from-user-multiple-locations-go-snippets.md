@@ -4,13 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.MeEventsRequestBuilderPostRequestConfiguration{
+configuration := &graphusers.ItemEventsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewEvent()
@@ -55,10 +65,9 @@ attendee1.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee1.SetType(&type) 
 
-attendees := []graphmodels.Objectable {
+attendees := []graphmodels.attendeeable {
 	attendee,
 	attendee1,
-
 }
 requestBody.SetAttendees(attendees)
 location := graphmodels.NewLocation()
@@ -101,7 +110,6 @@ locations := []graphmodels.Locationable {
 	location,
 	location1,
 	location2,
-
 }
 requestBody.SetLocations(locations)
 allowNewTimeProposals := true

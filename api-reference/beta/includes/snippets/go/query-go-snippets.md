@@ -4,22 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsearch "github.com/microsoftgraph/msgraph-beta-sdk-go/search"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewQueryPostRequestBody()
+
+requestBody := graphsearch.NewQueryPostRequestBody()
 
 
 searchRequest := graphmodels.NewSearchRequest()
 entityTypes := []graphmodels.EntityTypeable {
 	entityType := graphmodels.EXTERNALITEM_ENTITYTYPE 
-	searchRequest.SetEntityType(&entityType) 
-
+	searchRequest.SetEntityType(&entityType)
 }
 searchRequest.SetEntityTypes(entityTypes)
 contentSources := []string {
 	"/external/connections/connectionfriendlyname",
-
 }
 searchRequest.SetContentSources(contentSources)
 query := graphmodels.NewSearchQuery()
@@ -33,13 +40,11 @@ searchRequest.SetSize(&size)
 fields := []string {
 	"title",
 	"description",
-
 }
 searchRequest.SetFields(fields)
 
 requests := []graphmodels.SearchRequestable {
 	searchRequest,
-
 }
 requestBody.SetRequests(requests)
 

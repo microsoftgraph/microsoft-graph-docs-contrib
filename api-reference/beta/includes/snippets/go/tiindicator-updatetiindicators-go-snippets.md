@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewUpdateTiIndicatorsPostRequestBody()
+
+requestBody := graphsecurity.NewUpdateTiIndicatorsPostRequestBody()
 
 
 tiIndicator := graphmodels.NewTiIndicator()
@@ -21,10 +30,9 @@ tiIndicator1.SetId(&id)
 additionalInformation := "test again"
 tiIndicator1.SetAdditionalInformation(&additionalInformation) 
 
-value := []graphmodels.Objectable {
+value := []graphmodels.tiIndicatorable {
 	tiIndicator,
 	tiIndicator1,
-
 }
 requestBody.SetValue(value)
 

@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewSimulation()
 displayName := "Graph Simulation"
@@ -18,16 +26,13 @@ status := graphmodels.SCHEDULED_SIMULATIONSTATUS
 requestBody.SetStatus(&status) 
 durationInDays := int32(3)
 requestBody.SetDurationInDays(&durationInDays) 
-includedAccountTarget := graphmodels.NewAccountTargetContent()
+includedAccountTarget := graphmodels.NewAddressBookAccountTargetContent()
 type := graphmodels.ADDRESSBOOK_ACCOUNTTARGETCONTENTTYPE 
 includedAccountTarget.SetType(&type) 
-additionalData := map[string]interface{}{
-	accountTargetEmails := []string {
-		"john@contoso.com",
-
-	}
+accountTargetEmails := []string {
+	"john@contoso.com",
 }
-includedAccountTarget.SetAdditionalData(additionalData)
+includedAccountTarget.SetAccountTargetEmails(accountTargetEmails)
 requestBody.SetIncludedAccountTarget(includedAccountTarget)
 additionalData := map[string]interface{}{
 	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a", 

@@ -38,14 +38,14 @@ GET /users/{id}/mailFolders/{id}/messages/delta
 To specifically get only created, updated or deleted messages in the specified mailFolder:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailfolders/{id}/messages/delta?changeType=created
+GET /me/mailFolders/{id}/messages/delta?changeType=created
 GET /users/{id}/mailfolders/{id}/messages/delta?changeType=created
 
-GET /me/mailfolders/{id}/messages/delta?changeType=updated
-GET /users/{id}/mailfolders/{id}/messages/delta?changeType=updated
+GET /me/mailFolders/{id}/messages/delta?changeType=updated
+GET /users/{id}/mailFolders/{id}/messages/delta?changeType=updated
 
-GET /me/mailfolders/{id}/messages/delta?changeType=deleted
-GET /users/{id}/mailfolders/{id}/messages/delta?changeType=deleted
+GET /me/mailFolders/{id}/messages/delta?changeType=deleted
+GET /users/{id}/mailFolders/{id}/messages/delta?changeType=deleted
 ```
 
 ## Query parameters
@@ -110,20 +110,32 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/message-delta-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/message-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/message-delta-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/message-delta-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -148,7 +160,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders/{id}/messages/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "receivedDateTime": "datetime-value",

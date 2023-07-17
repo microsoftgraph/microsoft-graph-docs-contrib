@@ -24,14 +24,10 @@ $previewText->setContent('New Task Created');
 
 
 $requestBody->setPreviewText($previewText);
-$recipient = new TeamworkNotificationRecipient();
+$recipient = new AadUserNotificationRecipient();
 $recipient->set@odatatype('microsoft.graph.aadUserNotificationRecipient');
 
-$additionalData = [
-'userId' => '569363e2-4e49-4661-87f2-16f245c5d66a', 
-];
-$recipient->setAdditionalData($additionalData);
-
+$recipient->setUserId('569363e2-4e49-4661-87f2-16f245c5d66a');
 
 
 $requestBody->setRecipient($recipient);
@@ -47,7 +43,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->teamsById('team-id')->sendActivityNotification()->post($requestBody);
+$graphServiceClient->teams()->byTeamId('team-id')->sendActivityNotification()->post($requestBody);
 
 
 ```

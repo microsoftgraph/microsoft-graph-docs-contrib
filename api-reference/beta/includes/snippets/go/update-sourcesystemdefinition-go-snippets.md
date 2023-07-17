@@ -4,14 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsindustrydata "github.com/microsoftgraph/msgraph-beta-sdk-go/models/industrydata"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewSourceSystemDefinition()
+
+requestBody := graphmodelsindustrydata.NewSourceSystemDefinition()
 vendor := "LMS Vendor"
 requestBody.SetVendor(&vendor) 
 
-result, err := graphClient.External().IndustryData().SourceSystemsById("sourceSystemDefinition-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.External().IndustryData().SourceSystems().BySourceSystemId("sourceSystemDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

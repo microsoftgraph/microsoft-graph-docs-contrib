@@ -4,13 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphcontacts "github.com/microsoftgraph/msgraph-sdk-go/contacts"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.ContactsDelta()RequestBuilderGetQueryParameters{
+
+requestParameters := &graphcontacts.ContactsDelta()RequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","jobTitle","mail"},
 }
-configuration := &graphconfig.ContactsDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphcontacts.ContactsDelta()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.WindowsUpdates
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.operationalInsightsConnection"
-	AzureSubscriptionId = "322ec614-e9c2-4cd5-a55c-5711fdecf02e"
-	AzureResourceGroupName = "target-resource-group"
-	WorkspaceName = "my-workspace"
+	azureSubscriptionId = "322ec614-e9c2-4cd5-a55c-5711fdecf02e"
+	azureResourceGroupName = "target-resource-group"
+	workspaceName = "my-workspace"
 }
 
-New-MgWindowsUpdatesResourceConnection -BodyParameter $params
+New-MgBetaWindowsUpdatesResourceConnection -BodyParameter $params
 
 ```

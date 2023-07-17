@@ -12,22 +12,18 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new EducationAssignmentResource();
 $requestBody->setDistributeForStudentWork(false);
 
-$resource = new EducationResource();
+$resource = new EducationPowerPointResource();
 $resource->set@odatatype('microsoft.graph.educationPowerPointResource');
 
 $resource->setDisplayName('state diagram.pptx');
 
-$additionalData = [
-'fileUrl' => 'https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RN327OXRN6EVFE2Q5FRJZTN5EOJ', 
-];
-$resource->setAdditionalData($additionalData);
-
+$resource->setFileUrl('https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RN327OXRN6EVFE2Q5FRJZTN5EOJ');
 
 
 $requestBody->setResource($resource);
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->resources()->post($requestBody);
+$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->byAssignmentId('educationAssignment-id')->resources()->post($requestBody);
 
 
 ```

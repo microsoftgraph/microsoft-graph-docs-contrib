@@ -4,16 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestTop := int32(1)
 
-requestParameters := &graphconfig.SecuritySecureScoresRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.SecuritySecureScoresRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphconfig.SecuritySecureScoresRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.SecuritySecureScoresRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

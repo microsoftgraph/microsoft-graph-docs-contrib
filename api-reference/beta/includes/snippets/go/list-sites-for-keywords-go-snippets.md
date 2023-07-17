@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsites "github.com/microsoftgraph/msgraph-beta-sdk-go/sites"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestFilter := "siteCollection/root ne null"
 
-requestParameters := &graphconfig.SitesRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.SitesRequestBuilderGetQueryParameters{
 	Select: [] string {"siteCollection","webUrl"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.SitesRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SitesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

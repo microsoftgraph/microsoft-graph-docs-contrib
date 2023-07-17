@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
-	Comment = "comment-value"
-	ToRecipients = @(
+	comment = "comment-value"
+	toRecipients = @(
 		@{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
+			emailAddress = @{
+				name = "name-value"
+				address = "address-value"
 			}
 		}
 	)
 }
 
-Invoke-MgForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
+Invoke-MgBetaForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 
 ```

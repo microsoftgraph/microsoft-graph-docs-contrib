@@ -4,15 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewSettings()
+
+requestBody := graphmodels.NewSharepointSettings()
 deletedUserPersonalSiteRetentionPeriodInDays := int32(365)
 requestBody.SetDeletedUserPersonalSiteRetentionPeriodInDays(&deletedUserPersonalSiteRetentionPeriodInDays) 
 excludedFileExtensionsForSyncApp := []string {
 	".mp3",
-
 }
 requestBody.SetExcludedFileExtensionsForSyncApp(excludedFileExtensionsForSyncApp)
 imageTaggingOption := graphmodels.ENHANCED_IMAGETAGGINGCHOICE 

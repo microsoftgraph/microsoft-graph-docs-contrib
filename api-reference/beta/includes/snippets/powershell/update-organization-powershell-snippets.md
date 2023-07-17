@@ -4,27 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
-	MarketingNotificationEmails = @(
+	marketingNotificationEmails = @(
 		"marketing@contoso.com"
 	)
-	PrivacyProfile = @{
-		ContactEmail = "alice@contoso.com"
-		StatementUrl = "https://contoso.com/privacyStatement"
+	privacyProfile = @{
+		contactEmail = "alice@contoso.com"
+		statementUrl = "https://contoso.com/privacyStatement"
 	}
-	SecurityComplianceNotificationMails = @(
+	securityComplianceNotificationMails = @(
 		"security@contoso.com"
 	)
-	SecurityComplianceNotificationPhones = @(
+	securityComplianceNotificationPhones = @(
 		"(123) 456-7890"
 	)
-	TechnicalNotificationMails = @(
+	technicalNotificationMails = @(
 		"tech@contoso.com"
 	)
 }
 
-Update-MgOrganization -OrganizationId $organizationId -BodyParameter $params
+Update-MgBetaOrganization -OrganizationId $organizationId -BodyParameter $params
 
 ```

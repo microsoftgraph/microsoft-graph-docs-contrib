@@ -4,14 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphdevicemanagement "github.com/microsoftgraph/msgraph-beta-sdk-go/devicemanagement"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewChangeUserAccountTypePostRequestBody()
+
+requestBody := graphdevicemanagement.NewChangeUserAccountTypePostRequestBody()
 userAccountType := graphmodels.ADMINISTRATOR_CLOUDPCUSERACCOUNTTYPE 
 requestBody.SetUserAccountType(&userAccountType) 
 
-graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").ChangeUserAccountType().Post(context.Background(), requestBody, nil)
+graphClient.DeviceManagement().VirtualEndpoint().CloudPCs().ByCloudPCId("cloudPC-id").ChangeUserAccountType().Post(context.Background(), requestBody, nil)
 
 
 ```

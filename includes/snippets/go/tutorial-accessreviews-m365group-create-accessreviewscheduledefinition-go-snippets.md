@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessReviewScheduleDefinition()
 displayName := "Group owners review guest across Microsoft 365 groups in the tenant (Quarterly)"
@@ -40,7 +48,6 @@ accessReviewReviewerScope.SetQueryRoot(&queryRoot)
 
 reviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 requestBody.SetReviewers(reviewers)
 
@@ -55,7 +62,6 @@ accessReviewReviewerScope.SetQueryRoot(&queryRoot)
 
 fallbackReviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)
 settings := graphmodels.NewAccessReviewScheduleSettings()
@@ -109,11 +115,10 @@ recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
 
 
-accessReviewApplyAction := graphmodels.NewAccessReviewApplyAction()
+accessReviewApplyAction := graphmodels.NewRemoveAccessApplyAction()
 
 applyActions := []graphmodels.AccessReviewApplyActionable {
 	accessReviewApplyAction,
-
 }
 settings.SetApplyActions(applyActions)
 requestBody.SetSettings(settings)

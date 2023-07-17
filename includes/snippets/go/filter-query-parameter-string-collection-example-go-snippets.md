@@ -4,16 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestFilter := "imAddresses/any"
 
-requestParameters := &graphconfig.UsersRequestBuilderGetQueryParameters{
+requestFilter := "imAddresses/any(i:i eq 'admin@contoso.com')"
+
+requestParameters := &graphusers.UsersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.UsersRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UsersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

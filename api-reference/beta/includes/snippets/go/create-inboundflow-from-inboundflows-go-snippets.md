@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsindustrydata "github.com/microsoftgraph/msgraph-beta-sdk-go/models/industrydata"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewInboundFlow()
+
+requestBody := graphmodelsindustrydata.NewInboundFlow()
 dataDomain := graphmodels.EDUCATIONROSTERING_INBOUNDDOMAIN 
 requestBody.SetDataDomain(&dataDomain) 
 displayName := "Inbound rostering flow"

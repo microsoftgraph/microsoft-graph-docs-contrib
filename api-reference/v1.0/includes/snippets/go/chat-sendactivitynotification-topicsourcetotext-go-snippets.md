@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphchats "github.com/microsoftgraph/msgraph-sdk-go/chats"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
+
+requestBody := graphchats.NewSendActivityNotificationPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
 source := graphmodels.TEXT_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
@@ -22,11 +31,9 @@ previewText := graphmodels.NewItemBody()
 content := "New deployment requires your approval"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
-recipient := graphmodels.NewTeamworkNotificationRecipient()
-additionalData := map[string]interface{}{
-	"userId" : "569363e2-4e49-4661-87f2-16f245c5d66a", 
-}
-recipient.SetAdditionalData(additionalData)
+recipient := graphmodels.NewAadUserNotificationRecipient()
+userId := "569363e2-4e49-4661-87f2-16f245c5d66a"
+recipient.SetUserId(&userId) 
 requestBody.SetRecipient(recipient)
 
 
@@ -38,11 +45,10 @@ keyValuePair.SetValue(&value)
 
 templateParameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
-
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.ChatsById("chat-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
+graphClient.Chats().ByChatId("chat-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
 accessPackageId := "88203d16-0e31-41d4-87b2-dd402f1435e9"
@@ -25,18 +33,16 @@ acceptRequests := true
 requestorSettings.SetAcceptRequests(&acceptRequests) 
 
 
-userSet := graphmodels.NewUserSet()
+userSet := graphmodels.NewSingleUser()
 isBackup := false
 userSet.SetIsBackup(&isBackup) 
-additionalData := map[string]interface{}{
-	"id" : "007d1c7e-7fa8-4e33-b678-5e437acdcddc", 
-	"description" : "Requestor1", 
-}
-userSet.SetAdditionalData(additionalData)
+id := "007d1c7e-7fa8-4e33-b678-5e437acdcddc"
+userSet.SetId(&id) 
+description := "Requestor1"
+userSet.SetDescription(&description) 
 
 allowedRequestors := []graphmodels.UserSetable {
 	userSet,
-
 }
 requestorSettings.SetAllowedRequestors(allowedRequestors)
 requestBody.SetRequestorSettings(requestorSettings)

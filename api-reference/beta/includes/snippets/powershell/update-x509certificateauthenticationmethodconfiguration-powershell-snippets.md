@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration"
-	Id = "X509Certificate"
-	State = "enabled"
-	CertificateUserBindings = @(
+	id = "X509Certificate"
+	state = "enabled"
+	certificateUserBindings = @(
 	)
-	IncludeTargets = @(
+	includeTargets = @(
 	)
 }
 
-Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
+Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
 
 ```

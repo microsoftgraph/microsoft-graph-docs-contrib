@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewForwardPostRequestBody()
+
+requestBody := graphusers.NewItemForwardPostRequestBody()
 comment := "comment-value"
 requestBody.SetComment(&comment) 
 
@@ -22,11 +31,10 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 
-graphClient.Me().MessagesById("message-id").Forward().Post(context.Background(), requestBody, nil)
+graphClient.Me().Messages().ByMessageId("message-id").Forward().Post(context.Background(), requestBody, nil)
 
 
 ```

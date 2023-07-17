@@ -81,7 +81,7 @@ $requestBody->setTargets($targetsArray);
 $requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
 ]);
 
-$mediaConfig = new MediaConfig();
+$mediaConfig = new AppHostedMediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');
 
 $additionalData = [
@@ -94,7 +94,7 @@ $mediaConfig->setAdditionalData($additionalData);
 $requestBody->setMediaConfig($mediaConfig);
 
 
-$requestResult = $graphServiceClient->communications()->calls()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->post($requestBody);
 
 
 ```

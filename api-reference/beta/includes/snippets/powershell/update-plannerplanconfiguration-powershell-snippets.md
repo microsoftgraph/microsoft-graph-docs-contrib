@@ -4,27 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerPlanConfiguration"
-	DefaultLanguage = "en-us"
-	Buckets = @(
+	defaultLanguage = "en-us"
+	buckets = @(
 		@{
-			ExternalBucketId = "deliveryBucket"
+			externalBucketId = "deliveryBucket"
 		}
 		@{
-			ExternalBucketId = "storePickupBucket"
+			externalBucketId = "storePickupBucket"
 		}
 		@{
-			ExternalBucketId = "specialOrdersBucket"
+			externalBucketId = "specialOrdersBucket"
 		}
 		@{
-			ExternalBucketId = "returnProcessingBucket"
+			externalBucketId = "returnProcessingBucket"
 		}
 	)
 }
 
-Update-MgBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
+Update-MgBetaBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
 
 ```

@@ -36,36 +36,30 @@ $attributesAccessPackageResourceAttribute1->setIsEditable(true);
 
 $attributesAccessPackageResourceAttribute1->setIsPersistedOnAssignmentRemoval(true);
 
-$attributesAccessPackageResourceAttribute1AttributeSource = new AccessPackageResourceAttributeSource();
+$attributesAccessPackageResourceAttribute1AttributeSource = new AccessPackageResourceAttributeQuestion();
 $attributesAccessPackageResourceAttribute1AttributeSource->set@odatatype('#microsoft.graph.accessPackageResourceAttributeQuestion');
 
-$additionalData = [
-'question' => $attributesAccessPackageResourceAttribute1AttributeSource = new Question();
-$		attributesAccessPackageResourceAttribute1AttributeSource->set@odatatype('#microsoft.graph.accessPackageTextInputQuestion');
+$attributesAccessPackageResourceAttribute1AttributeSourceQuestion = new AccessPackageTextInputQuestion();
+$attributesAccessPackageResourceAttribute1AttributeSourceQuestion->set@odatatype('#microsoft.graph.accessPackageTextInputQuestion');
 
-		$attributesAccessPackageResourceAttribute1AttributeSource->setIsRequired(false);
+$attributesAccessPackageResourceAttribute1AttributeSourceQuestion->setIsRequired(false);
 
-		$attributesAccessPackageResourceAttribute1AttributeSource->setSequence(0);
+$attributesAccessPackageResourceAttribute1AttributeSourceQuestion->setSequence(0);
 
-		$attributesAccessPackageResourceAttribute1AttributeSource->setIsSingleLineQuestion(true);
+$attributesAccessPackageResourceAttribute1AttributeSourceQuestion->setIsSingleLineQuestion(true);
 
-$text = new Text();
-$		text->setDefaultText('Title');
+$attributesAccessPackageResourceAttribute1AttributeSourceQuestionText = new AccessPackageLocalizedContent();
+$attributesAccessPackageResourceAttribute1AttributeSourceQuestionText->setDefaultText('Title');
 
-$text->setLocalizedTexts([]);
-
-
-$attributesAccessPackageResourceAttribute1AttributeSource->setText($text);
-
-$attributesAccessPackageResourceAttribute1AttributeSource->setQuestion($question);
-
-];
-$attributesAccessPackageResourceAttribute1AttributeSource->setAdditionalData($additionalData);
+$attributesAccessPackageResourceAttribute1AttributeSourceQuestionText->setLocalizedTexts([]);
 
 
+$attributesAccessPackageResourceAttribute1AttributeSourceQuestion->setText($attributesAccessPackageResourceAttribute1AttributeSourceQuestionText);
+
+$attributesAccessPackageResourceAttribute1AttributeSource->setQuestion($attributesAccessPackageResourceAttribute1AttributeSourceQuestion);
 
 $attributesAccessPackageResourceAttribute1->setAttributeSource($attributesAccessPackageResourceAttribute1AttributeSource);
-$attributesAccessPackageResourceAttribute1AttributeDestination = new AccessPackageResourceAttributeDestination();
+$attributesAccessPackageResourceAttribute1AttributeDestination = new AccessPackageUserDirectoryAttributeStore();
 $attributesAccessPackageResourceAttribute1AttributeDestination->set@odatatype('#microsoft.graph.accessPackageUserDirectoryAttributeStore');
 
 
@@ -79,7 +73,7 @@ $accessPackageResource->setAttributes($attributesArray);
 $requestBody->setAccessPackageResource($accessPackageResource);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageResourceRequests()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageResourceRequests()->post($requestBody);
 
 
 ```

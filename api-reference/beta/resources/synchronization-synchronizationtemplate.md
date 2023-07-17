@@ -21,12 +21,9 @@ You can provide multiple templates for an application, and designate a default t
 
 | Method        | Return Type               | Description                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[List](../api/synchronization-synchronizationtemplate-list.md)    |[synchronizationTemplate](synchronization-synchronizationtemplate.md) collection  |List the templates that are available for an application or application instance (service principal).|
+|[List](../api/synchronization-synchronization-list-templates.md)    |[synchronizationTemplate](synchronization-synchronizationtemplate.md) collection  |List the templates that are available for an application or application instance (service principal).|
 |[Get](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Read the properties and relationships of the **synchronizationTemplate** object.|
-<!-- 
-|[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
-|[Update](../api/synchronization-synchronizationtemplate-put.md)   |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the template.| 
--->
+|[Update](../api/synchronization-synchronizationtemplate-update.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the properties and relationships of the **synchronizationTemplate** object.|
 
 ## Properties
 
@@ -38,10 +35,10 @@ You can provide multiple templates for an application, and designate a default t
 |description    |String                     |Description of the template.|
 |discoverable   |String                     |`true` if this template should appear in the collection of templates available for the application instance (service principal).|
 |factoryTag     |String                     |One of the well-known factory tags supported by the synchronization engine. The **factoryTag** tells the synchronization engine which implementation to use when processing jobs based on this template.|
-|metadata       |[metadataEntry](../resources/synchronization-metadataentry.md) collection  |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
+|metadata       |[synchronizationMetadataEntry](../resources/synchronization-synchronizationmetadataentry.md) collection  |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
 
 ## Relationships
-| Relationship      | Type	    |Description|
+| Relationship      | Type        |Description|
 |:------------------|:----------|:----------|
 |schema             |[synchronizationSchema](synchronization-synchronizationschema.md)     |Default synchronization schema for the jobs based on this template.|
 
@@ -66,10 +63,15 @@ The following is a JSON representation of the resource.
   "discoverable": true,
   "factoryTag": "String",
   "id": "String (identifier)",
-  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
-  "schema": {"@odata.type": "microsoft.graph.synchronizationSchema"}
+  "metadata": [
+    {
+      "@odata.type": "microsoft.graph.synchronizationMetadataEntry"
+    }
+  ],
+  "schema": {
+    "@odata.type": "microsoft.graph.synchronizationSchema"
+  }
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

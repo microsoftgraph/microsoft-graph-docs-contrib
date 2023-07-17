@@ -16,7 +16,7 @@ $requestBody->setIsSchedulingEnabled(true);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->patch($requestBody);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->byWorkflowId('workflow-id')->patch($requestBody);
 
 
 ```

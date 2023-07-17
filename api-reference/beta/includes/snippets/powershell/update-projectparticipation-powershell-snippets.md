@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 
 $params = @{
-	AllowedAudiences = "organization"
-	Client = @{
-		Department = "Corporate Marketing"
-		WebUrl = "https://www.contoso.com"
+	allowedAudiences = "organization"
+	client = @{
+		department = "Corporate Marketing"
+		webUrl = "https://www.contoso.com"
 	}
 }
 
 # A UPN can also be used as -UserId.
-Update-MgUserProfileProject -UserId $userId -ProjectParticipationId $projectParticipationId -BodyParameter $params
+Update-MgBetaUserProfileProject -UserId $userId -ProjectParticipationId $projectParticipationId -BodyParameter $params
 
 ```

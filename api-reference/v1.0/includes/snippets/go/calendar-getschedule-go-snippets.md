@@ -4,20 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.MeCalendarGetScheduleRequestBuilderPostRequestConfiguration{
+configuration := &graphusers.ItemCalendarGetScheduleRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewGetSchedulePostRequestBody()
+requestBody := graphusers.NewItemGetSchedulePostRequestBody()
 schedules := []string {
 	"adelev@contoso.onmicrosoft.com",
 	"meganb@contoso.onmicrosoft.com",
-
 }
 requestBody.SetSchedules(schedules)
 startTime := graphmodels.NewDateTimeTimeZone()

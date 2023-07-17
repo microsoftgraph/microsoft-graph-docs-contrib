@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 
 $params = @{
-	ApplyHoldToSource = $true
-	DataSource = @{
+	applyHoldToSource = $true
+	dataSource = @{
 		"@odata.type" = "microsoft.graph.ediscovery.userSource"
-		Email = "adelev@contoso.com"
+		email = "adelev@contoso.com"
 	}
 }
 
-New-MgComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
+New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
 
 ```

@@ -54,7 +54,6 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -70,24 +69,28 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-crosstenantaccesspolicyconfigurationdefault-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-crosstenantaccesspolicyconfigurationdefault-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-crosstenantaccesspolicyconfigurationdefault-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-crosstenantaccesspolicyconfigurationdefault-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-crosstenantaccesspolicyconfigurationdefault-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-crosstenantaccesspolicyconfigurationdefault-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-crosstenantaccesspolicyconfigurationdefault-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-crosstenantaccesspolicyconfigurationdefault-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-crosstenantaccesspolicyconfigurationdefault-php-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-crosstenantaccesspolicyconfigurationdefault-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -95,6 +98,7 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
 ### Response
 
 The following response object shows a default cross-tenant policy inherited from Azure AD, as identified by **isServiceDefault** set to `true`.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -190,6 +194,29 @@ Content-Type: application/json
     }
   },
   "b2bDirectConnectInbound":
+  {
+    "usersAndGroups":
+    {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllUsers",
+          "targetType": "user"
+        }
+      ]
+    },
+    "applications":
+    {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllApplications",
+          "targetType": "application"
+        }
+      ]
+    }
+  },
+  "tenantRestrictions":
   {
     "usersAndGroups":
     {

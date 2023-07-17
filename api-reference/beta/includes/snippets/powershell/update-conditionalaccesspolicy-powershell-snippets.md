@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
-	Conditions = @{
-		SignInRiskLevels = @(
+	conditions = @{
+		signInRiskLevels = @(
 			"high"
 			"medium"
 			"low"
@@ -16,6 +16,6 @@ $params = @{
 	}
 }
 
-Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId $conditionalAccessPolicyId -BodyParameter $params
+Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId $conditionalAccessPolicyId -BodyParameter $params
 
 ```

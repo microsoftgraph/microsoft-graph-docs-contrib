@@ -9,18 +9,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new DataSource();
+$requestBody = new UserSource();
 $requestBody->set@odatatype('microsoft.graph.ediscovery.userSource');
 
-$additionalData = [
-'email' => 'badguy@contoso.com', 
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setEmail('badguy@contoso.com');
 
 
 
-
-$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->sourceCollectionsById('sourceCollection-id')->additionalSources()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->sourceCollections()->bySourceCollectionId('sourceCollection-id')->additionalSources()->post($requestBody);
 
 
 ```

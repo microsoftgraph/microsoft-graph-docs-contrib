@@ -4,12 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
+
 requestBody := graphmodels.NewUser()
-customSecurityAttributes := graphmodels.NewCustomSecurityAttributeValue()
 additionalData := map[string]interface{}{
+customSecurityAttributes := graphmodels.New()
 engineering := graphmodels.New()
 odataType := "#Collection(Int32)"
 engineering.SetOdataType(&odataType) 
@@ -17,16 +25,15 @@ engineering.SetOdataType(&odataType)
  := int32(1001)
 engineering.Set(&) 
  := int32(1003)
-engineering.Set(&) 
-
+engineering.Set(&)
 	}
 	engineering.SetCostCenter(costCenter)
 	customSecurityAttributes.SetEngineering(engineering)
+	requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
 }
-customSecurityAttributes.SetAdditionalData(additionalData)
-requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
+requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,44 +4,49 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
+
 requestBody := graphmodels.NewAccessReviewInstance()
-scope := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
+scope := graphmodels.NewPrincipalResourceMembershipsScope()
 
 
- := graphmodels.New()
+accessReviewScope := graphmodels.NewAccessReviewQueryScope()
 query := "/v1.0/users"
-.SetQuery(&query) 
+accessReviewScope.SetQuery(&query) 
 queryType := "MicrosoftGraph"
-.SetQueryType(&queryType) 
- := graphmodels.New()
+accessReviewScope.SetQueryType(&queryType) 
+accessReviewScope1 := graphmodels.NewAccessReviewQueryScope()
 query := "/v1.0/groups"
-.SetQuery(&query) 
+accessReviewScope1.SetQuery(&query) 
 queryType := "MicrosoftGraph"
-.SetQueryType(&queryType) 
+accessReviewScope1.SetQueryType(&queryType) 
 
-	principalScopes := []graphmodels.Objectable {
-		,
-		,
-
-	}
-
-
- := graphmodels.New()
-query := "/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
-.SetQuery(&query) 
-queryType := "MicrosoftGraph"
-.SetQueryType(&queryType) 
-
-	resourceScopes := []graphmodels.Objectable {
-		,
-
-	}
+principalScopes := []graphmodels.AccessReviewScopeable {
+	accessReviewScope,
+	accessReviewScope1,
 }
-scope.SetAdditionalData(additionalData)
+scope.SetPrincipalScopes(principalScopes)
+
+
+accessReviewScope := graphmodels.NewAccessReviewQueryScope()
+query := "/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+accessReviewScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewScope.SetQueryType(&queryType) 
+
+resourceScopes := []graphmodels.AccessReviewScopeable {
+	accessReviewScope,
+}
+scope.SetResourceScopes(resourceScopes)
 requestBody.SetScope(scope)
 
 
@@ -53,7 +58,6 @@ accessReviewReviewerScope.SetQueryType(&queryType)
 
 reviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 requestBody.SetReviewers(reviewers)
 
@@ -72,11 +76,10 @@ accessReviewReviewerScope1.SetQueryType(&queryType)
 fallbackReviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
 	accessReviewReviewerScope1,
-
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().ByDefinitionId("accessReviewScheduleDefinition-id").Instances().ByInstanceId("accessReviewInstance-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

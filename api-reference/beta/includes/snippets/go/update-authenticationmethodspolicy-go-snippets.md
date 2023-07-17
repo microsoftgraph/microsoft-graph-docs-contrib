@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAuthenticationMethodsPolicy()
 registrationEnforcement := graphmodels.NewRegistrationEnforcement()
@@ -30,11 +38,22 @@ authenticationMethodsRegistrationCampaignIncludeTarget.SetTargetedAuthentication
 
 includeTargets := []graphmodels.AuthenticationMethodsRegistrationCampaignIncludeTargetable {
 	authenticationMethodsRegistrationCampaignIncludeTarget,
-
 }
 authenticationMethodsRegistrationCampaign.SetIncludeTargets(includeTargets)
 registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)
 requestBody.SetRegistrationEnforcement(registrationEnforcement)
+reportSuspiciousActivitySettings := graphmodels.NewReportSuspiciousActivitySettings()
+state := graphmodels.ENABLED_ADVANCEDCONFIGSTATE 
+reportSuspiciousActivitySettings.SetState(&state) 
+includeTarget := graphmodels.NewIncludeTarget()
+targetType := graphmodels.GROUP_AUTHENTICATIONMETHODTARGETTYPE 
+includeTarget.SetTargetType(&targetType) 
+id := "all_users"
+includeTarget.SetId(&id) 
+reportSuspiciousActivitySettings.SetIncludeTarget(includeTarget)
+voiceReportingCode := int32(0)
+reportSuspiciousActivitySettings.SetVoiceReportingCode(&voiceReportingCode) 
+requestBody.SetReportSuspiciousActivitySettings(reportSuspiciousActivitySettings)
 
 result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 

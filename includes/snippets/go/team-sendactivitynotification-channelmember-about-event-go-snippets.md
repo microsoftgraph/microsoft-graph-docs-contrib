@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphteams "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
+
+requestBody := graphteams.NewSendActivityNotificationPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
 source := graphmodels.TEXT_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
@@ -22,15 +31,14 @@ previewText.SetContent(&content)
 requestBody.SetPreviewText(previewText)
 activityType := "eventCreated"
 requestBody.SetActivityType(&activityType) 
-recipient := graphmodels.NewTeamworkNotificationRecipient()
-additionalData := map[string]interface{}{
-	"teamId" : "7155e3c8-175e-4311-97ef-572edc3aa3db", 
-	"channelId" : "19:0ea5de04de4743bcb4cd20cb99235d99@thread.tacv2", 
-}
-recipient.SetAdditionalData(additionalData)
+recipient := graphmodels.NewChannelMembersNotificationRecipient()
+teamId := "7155e3c8-175e-4311-97ef-572edc3aa3db"
+recipient.SetTeamId(&teamId) 
+channelId := "19:0ea5de04de4743bcb4cd20cb99235d99@thread.tacv2"
+recipient.SetChannelId(&channelId) 
 requestBody.SetRecipient(recipient)
 
-graphClient.TeamsById("team-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
+graphClient.Teams().ByTeamId("team-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

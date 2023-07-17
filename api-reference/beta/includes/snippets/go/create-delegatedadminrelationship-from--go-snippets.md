@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewDelegatedAdminRelationship()
 displayName := "Contoso admin relationship"
@@ -31,7 +40,6 @@ unifiedRole1.SetRoleDefinitionId(&roleDefinitionId)
 unifiedRoles := []graphmodels.UnifiedRoleable {
 	unifiedRole,
 	unifiedRole1,
-
 }
 accessDetails.SetUnifiedRoles(unifiedRoles)
 requestBody.SetAccessDetails(accessDetails)

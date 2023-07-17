@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewContact()
 
@@ -27,14 +35,13 @@ typedEmailAddress1.SetType(&type)
 otherLabel := "Volunteer work"
 typedEmailAddress1.SetOtherLabel(&otherLabel) 
 
-emailAddresses := []graphmodels.Objectable {
+emailAddresses := []graphmodels.typedEmailAddressable {
 	typedEmailAddress,
 	typedEmailAddress1,
-
 }
 requestBody.SetEmailAddresses(emailAddresses)
 
-result, err := graphClient.Me().ContactsById("contact-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Contacts().ByContactId("contact-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

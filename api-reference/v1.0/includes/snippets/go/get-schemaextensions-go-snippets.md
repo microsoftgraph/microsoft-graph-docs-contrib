@@ -4,16 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphschemaextensions "github.com/microsoftgraph/msgraph-sdk-go/schemaextensions"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestFilter := "id eq 'graphlearn_test'"
 
-requestParameters := &graphconfig.SchemaExtensionsRequestBuilderGetQueryParameters{
+requestParameters := &graphschemaextensions.SchemaExtensionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.SchemaExtensionsRequestBuilderGetRequestConfiguration{
+configuration := &graphschemaextensions.SchemaExtensionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

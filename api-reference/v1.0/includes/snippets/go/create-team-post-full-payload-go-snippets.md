@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewTeam()
 visibility := graphmodels.PRIVATE_TEAMVISIBILITYTYPE 
@@ -60,7 +68,6 @@ teamsTab1.SetAdditionalData(additionalData)
 tabs := []graphmodels.TeamsTabable {
 	teamsTab,
 	teamsTab1,
-
 }
 channel1.SetTabs(tabs)
 channel2 := graphmodels.NewChannel()
@@ -81,7 +88,6 @@ channels := []graphmodels.Channelable {
 	channel1,
 	channel2,
 	channel3,
-
 }
 requestBody.SetChannels(channels)
 memberSettings := graphmodels.NewTeamMemberSettings()
@@ -140,7 +146,6 @@ teamsAppInstallation1.SetAdditionalData(additionalData)
 installedApps := []graphmodels.TeamsAppInstallationable {
 	teamsAppInstallation,
 	teamsAppInstallation1,
-
 }
 requestBody.SetInstalledApps(installedApps)
 additionalData := map[string]interface{}{

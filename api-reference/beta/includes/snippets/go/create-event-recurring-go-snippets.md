@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewEvent()
 subject := "Let's go for lunch"
@@ -36,8 +44,7 @@ interval := int32(1)
 pattern.SetInterval(&interval) 
 daysOfWeek := []graphmodels.DayOfWeekable {
 	dayOfWeek := graphmodels.MONDAY_DAYOFWEEK 
-	pattern.SetDayOfWeek(&dayOfWeek) 
-
+	pattern.SetDayOfWeek(&dayOfWeek)
 }
 pattern.SetDaysOfWeek(daysOfWeek)
 recurrence.SetPattern(pattern)
@@ -66,9 +73,8 @@ attendee.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee.SetType(&type) 
 
-attendees := []graphmodels.Objectable {
+attendees := []graphmodels.attendeeable {
 	attendee,
-
 }
 requestBody.SetAttendees(attendees)
 

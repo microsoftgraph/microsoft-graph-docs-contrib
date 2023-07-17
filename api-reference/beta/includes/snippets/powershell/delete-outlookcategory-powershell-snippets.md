@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
 # A UPN can also be used as -UserId.
-Remove-MgUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId
+Remove-MgBetaUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId
 
 ```

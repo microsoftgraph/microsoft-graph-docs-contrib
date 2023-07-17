@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 
 $params = @{
-	PasswordCredential = @{
-		DisplayName = "Password friendly name"
+	passwordCredential = @{
+		displayName = "Password friendly name"
 	}
 }
 
-Add-MgApplicationPassword -ApplicationId $applicationId -BodyParameter $params
+Add-MgBetaApplicationPassword -ApplicationId $applicationId -BodyParameter $params
 
 ```

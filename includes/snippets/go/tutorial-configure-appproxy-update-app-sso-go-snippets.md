@@ -4,10 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphapplications "github.com/microsoftgraph/msgraph-beta-sdk-go/applications"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewApplication()
+
+requestBody := graphapplications.NewApplication()
 additionalData := map[string]interface{}{
 onPremisesPublishing := graphmodels.New()
 singleSignOnSettings := graphmodels.New()
@@ -24,7 +32,7 @@ singleSignOnSettings.SetSingleSignOnMode(&singleSignOnMode)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ApplicationsById("application-id").Patch(context.Background(), requestBody, nil)
+graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,38 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Review employee access to LinkedIn",
 	DescriptionForAdmins = "Review employee access to LinkedIn",
-	Scope = new AccessReviewScope
+	Scope = new PrincipalResourceMembershipsScope
 	{
 		OdataType = "#microsoft.graph.principalResourceMembershipsScope",
-		AdditionalData = new Dictionary<string, object>
+		PrincipalScopes = new List<AccessReviewScope>
 		{
+			new AccessReviewQueryScope
 			{
-				"principalScopes" , new List<>
-				{
-					new 
-					{
-						OdataType = "#microsoft.graph.accessReviewQueryScope",
-						Query = "/users",
-						QueryType = "MicrosoftGraph",
-					},
-				}
+				OdataType = "#microsoft.graph.accessReviewQueryScope",
+				Query = "/users",
+				QueryType = "MicrosoftGraph",
 			},
+		},
+		ResourceScopes = new List<AccessReviewScope>
+		{
+			new AccessReviewQueryScope
 			{
-				"resourceScopes" , new List<>
-				{
-					new 
-					{
-						OdataType = "#microsoft.graph.accessReviewQueryScope",
-						Query = "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae",
-						QueryType = "MicrosoftGraph",
-					},
-				}
+				OdataType = "#microsoft.graph.accessReviewQueryScope",
+				Query = "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae",
+				QueryType = "MicrosoftGraph",
 			},
 		},
 	},
@@ -85,7 +80,7 @@ var requestBody = new AccessReviewScheduleDefinition
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"backupReviewers" , new List<>
+			"backupReviewers" , new List<object>
 			{
 				new 
 				{
