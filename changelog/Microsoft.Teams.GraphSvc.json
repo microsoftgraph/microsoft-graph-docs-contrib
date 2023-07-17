@@ -12,10 +12,10 @@
         },
         {
           "Id": "2161c85f-d15f-4b31-8c29-774d4eaec8a8",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "deletedChats",
           "ChangeType": "Addition",
-          "Description": "Added the **deletedChats** relationship to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Description": "Added the **deletedChats** navigation property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
           "Target": "teamwork"
         },
         {
