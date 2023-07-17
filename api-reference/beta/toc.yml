@@ -308,7 +308,7 @@ items:
       href: /graph/best-practices-concept?context=graph/api/beta
       displayName: Microsoft Graph, Best practices for working with Microsoft Graph
     - name: Known issues
-      href: /graph/known-issues?context=graph/api/beta
+      href: https://developer.microsoft.com/en-us/graph/known-issues
       displayName: Microsoft Graph, Known issues with Microsoft Graph
     - name: API changelog
       href: https://developer.microsoft.com/graph/changelog
@@ -13258,18 +13258,20 @@ items:
               href: api/user-list-agreementacceptances.md
             - name: List acceptance status
               href: api/agreement-list-acceptances.md
-          - name: Agreement files
+          - name: Agreement file
             items:
             - name: Default agreement file
               href: resources/agreementfile.md
-            - name: Localized agreement files
+            - name: Localized agreement file
               href: resources/agreementfilelocalization.md
             - name: Get default file
               href: api/agreementfile-get.md
             - name: Create localized files
               href: api/agreement-post-files.md
-            - name: List localized files
+            - name: List files
               href: api/agreement-list-files.md
+            - name: List localized files
+              href: api/agreementfile-list-localizations.md
       - name: Identity and sign-in
         items:
         - name: Authentication event listeners (preview)
@@ -15346,6 +15348,14 @@ items:
               href: api/reportroot-list-applicationsignindetailedsummary.md
             - name: Get sign-in details
               href: api/applicationsignindetailedsummary-get.md
+        - name: Azure AD SLA attainment
+          items:
+          - name: Azure AD authentication
+            href: resources/azureadauthentication.md
+          - name: Service level agreement
+            href: resources/servicelevelagreementroot.md
+          - name: Get Azure AD authentication
+            href: api/azureadauthentication-get.md
         - name: Registration and usage
           items:
           - name: Overview
@@ -16718,54 +16728,64 @@ items:
           href: api/documentsetversion-restore.md
       - name: Pages (preview)
         items:
+        - name: Base site page
+          href: resources/basesitepage.md
+          items: 
+          - name: List
+            href: api/basesitepage-list.md
+          - name: Get
+            href: api/basesitepage-get.md
+          - name: Delete
+            href: api/basesitepage-delete.md
         - name: Site page
           href: resources/sitepage.md
-        - name: List
-          href: api/sitepage-list.md
-        - name: Create
-          href: api/sitepage-create.md
-        - name: Get
-          href: api/sitepage-get.md
-        - name: Update
-          href: api/sitepage-update.md
-        - name: Delete
-          href: api/sitepage-delete.md
-        - name: Publish
-          href: api/sitepage-publish.md
-        - name: Horizontal section
-          items:
-          - name: Horizontal section
-            href: resources/horizontalsection.md
+          items: 
           - name: List
-            href: api/horizontalsection-list.md
+            href: api/sitepage-list.md
           - name: Create
-            href: api/sitepage-post-horizontalsection.md
+            href: api/sitepage-create.md
           - name: Get
-            href: api/horizontalsection-get.md
+            href: api/sitepage-get.md
           - name: Update
-            href: api/horizontalsection-update.md
+            href: api/sitepage-update.md
           - name: Delete
-            href: api/horizontalsection-delete.md
-          - name: Column
+            href: api/basesitepage-delete.md
+          - name: Publish
+            href: api/sitepage-publish.md
+          - name: Horizontal section
             items:
-            - name: Horizontal section column
-              href: resources/horizontalsectioncolumn.md
+            - name: Horizontal section
+              href: resources/horizontalsection.md
             - name: List
-              href: api/horizontalsectioncolumn-list.md
+              href: api/horizontalsection-list.md
+            - name: Create
+              href: api/sitepage-post-horizontalsection.md
             - name: Get
-              href: api/horizontalsectioncolumn-get.md
-        - name: Vertical section
-          items:
+              href: api/horizontalsection-get.md
+            - name: Update
+              href: api/horizontalsection-update.md
+            - name: Delete
+              href: api/horizontalsection-delete.md
+            - name: Column
+              items:
+              - name: Horizontal section column
+                href: resources/horizontalsectioncolumn.md
+              - name: List
+                href: api/horizontalsectioncolumn-list.md
+              - name: Get
+                href: api/horizontalsectioncolumn-get.md
           - name: Vertical section
-            href: resources/verticalsection.md
-          - name: Create
-            href: api/sitepage-post-verticalsection.md
-          - name: Get
-            href: api/verticalsection-get.md
-          - name: Update
-            href: api/verticalsection-update.md
-          - name: Delete
-            href: api/verticalsection-delete.md
+            items:
+            - name: Vertical section
+              href: resources/verticalsection.md
+            - name: Create
+              href: api/sitepage-post-verticalsection.md
+            - name: Get
+              href: api/verticalsection-get.md
+            - name: Update
+              href: api/verticalsection-update.md
+            - name: Delete
+              href: api/verticalsection-delete.md
         - name: Web part
           items:
           - name: Web part
@@ -16776,8 +16796,14 @@ items:
             href: resources/standardwebpart.md
           - name: List
             href: api/webpart-list.md
+          - name: Create
+            href: api/webpart-create.md
           - name: Get
             href: api/webpart-get.md
+          - name: Update
+            href: api/webpart-update.md
+          - name: Delete
+            href: api/webpart-delete.md
           - name: Get position
             href: api/webpart-getposition.md
           - name: Get by position
