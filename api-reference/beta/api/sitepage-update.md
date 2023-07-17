@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /sites/{sitesId}/pages/{sitePageId}
+PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage
 ```
 
 ## Request headers
@@ -44,6 +44,8 @@ PATCH /sites/{sitesId}/pages/{sitePageId}
 | Content-Type  | application/json. Required. |
 
 ## Request body
+
+> **Notes:** : To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.sitePage` must be included in the request body.
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
@@ -79,7 +81,7 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}
+PATCH https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage
 Content-Type: application/json
 
 {
