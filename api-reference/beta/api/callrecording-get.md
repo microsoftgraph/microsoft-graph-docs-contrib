@@ -124,6 +124,8 @@ The following example shows how to get the content of a single recording of an o
 
 #### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_callRecording_content",
@@ -136,11 +138,14 @@ GET https://graph.microsoft.com/beta/users/b935e675-5e67-48b9-8d45-249d5f88e964/
 
 #### Response
 
-The following example contains bytes for the recording in the response body. The `content-type` header specifies the type of the recording content. The negative offsets indicate that the recording on began while the conversation was ongoing.
+The following example contains bytes for the recording in the response body. The `content-type` header specifies the type of the recording content. The negative offsets indicate that the recording began while the conversation was ongoing.
 
 > [!NOTE]
 > The response object shown here might be shortened for readability.
 
 ```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
 
+<bytes of a recording>
 ```
