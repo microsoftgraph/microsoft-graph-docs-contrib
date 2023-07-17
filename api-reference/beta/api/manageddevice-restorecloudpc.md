@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+This API is obsolete, it will be removed on September 30, 2034. Please use [restore](../api/cloudpc-restore.md) instead.
+
 Restore a Cloud PC device to a previous state with an Intune [managed device](../resources/cloudpc.md) ID.
 
 ## Permissions

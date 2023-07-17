@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+This API is obsolete, it will be removed on September 30, 2034. Please use [reprovision](../api/cloudpc-reprovision.md) instead.
+
 Reprovision a Cloud PC with an Intune [managed device](../resources/cloudpc.md) ID.
 
 ## Permissions
@@ -53,7 +55,6 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
