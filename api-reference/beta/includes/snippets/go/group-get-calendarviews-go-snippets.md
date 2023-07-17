@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
 	  //other-imports
 )
 
@@ -23,11 +23,11 @@ headers.Add("Prefer", "outlook.body-content-type=\"text\"")
 requestStartDateTime := "2017-01-01T19:00:00-08:00"
 requestEndDateTime := "2017-10-01T19:00:00.00-08:00"
 
-requestParameters := &graphconfig.GroupItemCalendarViewRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.GroupItemCalendarViewRequestBuilderGetQueryParameters{
 	StartDateTime: &requestStartDateTime,
 	EndDateTime: &requestEndDateTime,
 }
-configuration := &graphconfig.GroupItemCalendarViewRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupItemCalendarViewRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

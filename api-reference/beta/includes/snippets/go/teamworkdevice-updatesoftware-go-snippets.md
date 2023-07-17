@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Teamwork/Devices/Item/UpdateSoftware"
+	  graphteamwork "github.com/microsoftgraph/msgraph-beta-sdk-go/teamwork"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewUpdateSoftwarePostRequestBody()
+requestBody := graphteamwork.NewUpdateSoftwarePostRequestBody()
 softwareType := graphmodels.TEAMSCLIENT_TEAMWORKSOFTWARETYPE 
 requestBody.SetSoftwareType(&softwareType) 
 softwareVersion := "1.0.96.22"

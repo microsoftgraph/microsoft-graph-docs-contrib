@@ -18,10 +18,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewIdentityProviderBase()
 displayName := "Login with the Contoso identity provider"
 requestBody.SetDisplayName(&displayName) 
-additionalData := map[string]interface{}{
-	"clientId" : "56433757-cadd-4135-8431-2c9e3fd68ae8", 
-	"clientSecret" : "12345", 
-claimsMapping := graphmodels.New()
+clientId := "56433757-cadd-4135-8431-2c9e3fd68ae8"
+requestBody.SetClientId(&clientId) 
+clientSecret := "12345"
+requestBody.SetClientSecret(&clientSecret) 
+claimsMapping := graphmodels.NewClaimsMapping()
 userId := "myUserId"
 claimsMapping.SetUserId(&userId) 
 givenName := "myGivenName"
@@ -32,14 +33,17 @@ email := "myEmail"
 claimsMapping.SetEmail(&email) 
 displayName := "myDisplayName"
 claimsMapping.SetDisplayName(&displayName) 
-	requestBody.SetClaimsMapping(claimsMapping)
-	"domainHint" : "mycustomoidc", 
-	"metadataUrl" : "https://mycustomoidc.com/.well-known/openid-configuration", 
-	"responseMode" : "form_post", 
-	"responseType" : "code", 
-	"scope" : "openid", 
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetClaimsMapping(claimsMapping)
+domainHint := "mycustomoidc"
+requestBody.SetDomainHint(&domainHint) 
+metadataUrl := "https://mycustomoidc.com/.well-known/openid-configuration"
+requestBody.SetMetadataUrl(&metadataUrl) 
+responseMode := graphmodels.FORM_POST_OPENIDCONNECTRESPONSEMODE 
+requestBody.SetResponseMode(&responseMode) 
+responseType := graphmodels.CODE_OPENIDCONNECTRESPONSETYPES 
+requestBody.SetResponseType(&responseType) 
+scope := "openid"
+requestBody.SetScope(&scope) 
 
 result, err := graphClient.Identity().IdentityProviders().Post(context.Background(), requestBody, nil)
 

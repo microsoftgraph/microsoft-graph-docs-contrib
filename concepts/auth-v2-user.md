@@ -7,12 +7,10 @@ ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
-ms.date: 05/25/2023
+ms.date: 06/09/2023
 ---
 
 # Get access on behalf of a user
-
-*This article is part of a series on authentication and authorization for Microsoft Graph through the Microsoft identity platform. The preceding article is [Register an application with the Microsoft identity platform](auth-register-app-v2.md).*
 
 To call Microsoft Graph, an app must obtain an access token from the Microsoft identity platform. This access token includes information about whether the app is authorized to access Microsoft Graph on behalf of a signed-in user or with its own identity. This article provides guidance on how an app can [access Microsoft Graph on behalf of a user](./auth/auth-concepts.md#access-scenarios), also called *delegated access*.
 
@@ -45,7 +43,7 @@ Before the app can call the Microsoft identity platform endpoints or Microsoft G
 
 From the app registration, save the following values:
 
-- The application ID (object ID) assigned by the app registration portal.
+- The application ID (client ID) assigned by the app registration portal.
 - A redirect URI (or reply URL) for the app to receive responses from Azure AD.
 - A client secret (application password), a certificate, or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
 
@@ -68,19 +66,19 @@ In the following example, the app requests the _User.Read_ and _Mail.Read_ Micro
 ```
 // Line breaks for legibility only
 
-https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?
+GET https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?
 client_id=11111111-1111-1111-1111-111111111111
 &response_type=code
 &redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 &response_mode=query
 &scope=offline_access%20user.read%20mail.read
-&state=12345
+&state=12345  HTTP/1.1
 ```
 
 # [cURL](#tab/curl)
 
 ```bash
-curl --location -X POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?client_id=11111111-1111-1111-1111-111111111111&response_type=code&redirect_uri=https%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=offline_access%20User.Read%20Mail.Read&state=12345'
+curl --location --request GET 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?client_id=11111111-1111-1111-1111-111111111111&response_type=code&redirect_uri=https%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=offline_access%20User.Read%20Mail.Read&state=12345'
 ```
 
 ---
@@ -148,7 +146,7 @@ client_id=11111111-1111-1111-1111-111111111111
 
 # [cURL](#tab/curl)
 ```bash
-curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
+curl --location --request POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'client_id=11111111-1111-1111-1111-111111111111' \
 --data-urlencode 'scope=User.Read Mail.Read' \
@@ -210,7 +208,7 @@ After you have an access token, the app uses it to call Microsoft Graph by attac
 # [HTTP](#tab/http)
 
 ```http
-GET https://graph.microsoft.com/v1.0/me
+GET https://graph.microsoft.com/v1.0/me  HTTP/1.1
 Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw
 Host: graph.microsoft.com
 ```
@@ -218,7 +216,7 @@ Host: graph.microsoft.com
 # [cURL](#tab/curl)
 
 ```bash
-curl --location 'https://graph.microsoft.com/v1.0/me' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/me' \
 --header 'Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw' \
 --data ''
 ```
@@ -286,7 +284,7 @@ client_id=11111111-1111-1111-1111-111111111111
 # [cURL](#tab/curl)
 
 ```bash
-curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
+curl --location --request POST 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'client_id=11111111-1111-1111-1111-111111111111' \
 --data-urlencode 'scope=User.Read Mail.Read' \

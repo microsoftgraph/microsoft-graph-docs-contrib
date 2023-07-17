@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/rolemanagement"
+	  graphrolemanagement "github.com/microsoftgraph/msgraph-beta-sdk-go/rolemanagement"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.RoleManagementDeviceManagementRoleAssignmentItemRequestBuilderGetQueryParameters{
+requestParameters := &graphrolemanagement.RoleManagementDeviceManagementRoleAssignmentItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"roleDefinition","principals","directoryScopes"},
 }
-configuration := &graphconfig.RoleManagementDeviceManagementRoleAssignmentItemRequestBuilderGetRequestConfiguration{
+configuration := &graphrolemanagement.RoleManagementDeviceManagementRoleAssignmentItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

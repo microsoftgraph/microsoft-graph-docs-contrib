@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
+	  graphdirectory "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.DirectoryAttributeSetsRequestBuilderGetQueryParameters{
+requestParameters := &graphdirectory.DirectoryAttributeSetsRequestBuilderGetQueryParameters{
 	Orderby: [] string {"id"},
 }
-configuration := &graphconfig.DirectoryAttributeSetsRequestBuilderGetRequestConfiguration{
+configuration := &graphdirectory.DirectoryAttributeSetsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

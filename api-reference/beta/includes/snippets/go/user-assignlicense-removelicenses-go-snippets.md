@@ -8,24 +8,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/AssignLicense"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAssignLicensePostRequestBody()
+requestBody := graphusers.NewItemAssignLicensePostRequestBody()
 addLicenses := []graphmodels.AssignedLicenseable {
 
 }
 requestBody.SetAddLicenses(addLicenses)
-removeLicenses := []string {
- := uuid.MustParse("f30db892-07e9-47e9-837c-80727f46fd3d")
-requestBody.Set(&) 
- := uuid.MustParse("84a661c4-e949-4bd2-a560-ed7766fcaf2b")
-requestBody.Set(&) 
-
+removeLicenses := []uuid.UUID {
+	uuid.MustParse("f30db892-07e9-47e9-837c-80727f46fd3d"),
+	uuid.MustParse("84a661c4-e949-4bd2-a560-ed7766fcaf2b"),
 }
 requestBody.SetRemoveLicenses(removeLicenses)
 

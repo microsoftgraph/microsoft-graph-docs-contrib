@@ -9,14 +9,14 @@ import (
 	  "context"
 	  "github.com/google/uuid"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/ServicePrincipals/Item/RemoveKey"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewRemoveKeyPostRequestBody()
+requestBody := graphserviceprincipals.NewRemoveKeyPostRequestBody()
 keyId := uuid.MustParse("f0b0b335-1d71-4883-8f98-567911bfdca6")
 requestBody.SetKeyId(&keyId) 
 proof := "eyJ0eXAiOiJ..."

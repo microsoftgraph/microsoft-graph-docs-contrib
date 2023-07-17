@@ -18,7 +18,6 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewPersonWebsite()
 categories := []string {
 	"football",
-
 }
 requestBody.SetCategories(categories)
 displayName := "Lyn Damer"

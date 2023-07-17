@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/sites?search={query}
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-permission-that-match-query-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-permission-that-match-query-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

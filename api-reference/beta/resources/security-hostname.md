@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Represents a named host that is (or has been) addressable over the internet. This entity acts as a grouping mechanism for related details about the host, such as the reputation, any related trackers or cookies, and so on.
 
 You cannot retrieve this type directly. To access it, retrieve the [host](../resources/security-host.md) resource.

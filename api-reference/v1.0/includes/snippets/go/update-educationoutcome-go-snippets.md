@@ -16,53 +16,50 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationOutcome()
-additionalData := map[string]interface{}{
 
 
- := graphmodels.New()
+rubricQualityFeedbackModel := graphmodels.NewRubricQualityFeedbackModel()
 qualityId := "9a145aa8-f3d9-43a1-8f77-5387ff0693f2"
-.SetQualityId(&qualityId) 
-feedback := graphmodels.New()
+rubricQualityFeedbackModel.SetQualityId(&qualityId) 
+feedback := graphmodels.NewEducationItemBody()
 content := "This is feedback specific to the first quality of the rubric."
 feedback.SetContent(&content) 
-contentType := "text"
+contentType := graphmodels.TEXT_BODYTYPE 
 feedback.SetContentType(&contentType) 
-.SetFeedback(feedback)
- := graphmodels.New()
+rubricQualityFeedbackModel.SetFeedback(feedback)
+rubricQualityFeedbackModel1 := graphmodels.NewRubricQualityFeedbackModel()
 qualityId := "d2331fb2-2761-402e-8de6-93e0afaa076e"
-.SetQualityId(&qualityId) 
-feedback := graphmodels.New()
+rubricQualityFeedbackModel1.SetQualityId(&qualityId) 
+feedback := graphmodels.NewEducationItemBody()
 content := "This is feedback specific to the second quality of the rubric."
 feedback.SetContent(&content) 
-contentType := "text"
+contentType := graphmodels.TEXT_BODYTYPE 
 feedback.SetContentType(&contentType) 
-.SetFeedback(feedback)
+rubricQualityFeedbackModel1.SetFeedback(feedback)
 
-	rubricQualityFeedback := []graphmodels.Objectable {
-		,
-		,
-
-	}
-
-
- := graphmodels.New()
-qualityId := "9a145aa8-f3d9-43a1-8f77-5387ff0693f2"
-.SetQualityId(&qualityId) 
-columnId := "4fb17a1d-5681-46c2-a295-4e305c3eae23"
-.SetColumnId(&columnId) 
- := graphmodels.New()
-qualityId := "d2331fb2-2761-402e-8de6-93e0afaa076e"
-.SetQualityId(&qualityId) 
-columnId := "aac076bf-51ba-48c5-a2e0-ee235b0b9740"
-.SetColumnId(&columnId) 
-
-	rubricQualitySelectedLevels := []graphmodels.Objectable {
-		,
-		,
-
-	}
+rubricQualityFeedback := []graphmodels.RubricQualityFeedbackModelable {
+	rubricQualityFeedbackModel,
+	rubricQualityFeedbackModel1,
 }
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetRubricQualityFeedback(rubricQualityFeedback)
+
+
+rubricQualitySelectedColumnModel := graphmodels.NewRubricQualitySelectedColumnModel()
+qualityId := "9a145aa8-f3d9-43a1-8f77-5387ff0693f2"
+rubricQualitySelectedColumnModel.SetQualityId(&qualityId) 
+columnId := "4fb17a1d-5681-46c2-a295-4e305c3eae23"
+rubricQualitySelectedColumnModel.SetColumnId(&columnId) 
+rubricQualitySelectedColumnModel1 := graphmodels.NewRubricQualitySelectedColumnModel()
+qualityId := "d2331fb2-2761-402e-8de6-93e0afaa076e"
+rubricQualitySelectedColumnModel1.SetQualityId(&qualityId) 
+columnId := "aac076bf-51ba-48c5-a2e0-ee235b0b9740"
+rubricQualitySelectedColumnModel1.SetColumnId(&columnId) 
+
+rubricQualitySelectedLevels := []graphmodels.RubricQualitySelectedColumnModelable {
+	rubricQualitySelectedColumnModel,
+	rubricQualitySelectedColumnModel1,
+}
+requestBody.SetRubricQualitySelectedLevels(rubricQualitySelectedLevels)
 
 result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Submissions().BySubmissionId("educationSubmission-id").Outcomes().ByOutcomeId("educationOutcome-id").Patch(context.Background(), requestBody, nil)
 

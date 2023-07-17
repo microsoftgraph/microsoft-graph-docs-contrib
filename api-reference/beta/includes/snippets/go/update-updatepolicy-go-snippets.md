@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//windowsUpdates"
+	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewUpdatePolicy()
-deploymentSettings := graphmodels.NewDeploymentSettings()
-schedule := graphmodels.NewScheduleSettings()
-gradualRollout := graphmodels.NewGradualRolloutSettings()
+requestBody := graphmodelswindowsupdates.NewUpdatePolicy()
+deploymentSettings := graphmodelswindowsupdates.NewDeploymentSettings()
+schedule := graphmodelswindowsupdates.NewScheduleSettings()
+gradualRollout := graphmodelswindowsupdates.NewRateDrivenRolloutSettings()
 durationBetweenOffers , err := abstractions.ParseISODuration("P1D")
 gradualRollout.SetDurationBetweenOffers(&durationBetweenOffers) 
 additionalData := map[string]interface{}{

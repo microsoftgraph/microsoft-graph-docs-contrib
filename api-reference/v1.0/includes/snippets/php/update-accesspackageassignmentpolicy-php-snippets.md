@@ -60,29 +60,22 @@ $stagesAccessPackageApprovalStage1->setIsEscalationEnabled(false);
 
 $stagesAccessPackageApprovalStage1->setDurationBeforeEscalation(new \DateInterval('PT0S'));
 
-$primaryApproversSubjectSet1 = new SubjectSet();
+$primaryApproversSubjectSet1 = new RequestorManager();
 $primaryApproversSubjectSet1->set@odatatype('#microsoft.graph.requestorManager');
 
-$additionalData = [
-'managerLevel' => 1,
-];
-$primaryApproversSubjectSet1->setAdditionalData($additionalData);
-
+$primaryApproversSubjectSet1->setManagerLevel(1);
 
 
 $primaryApproversArray []= $primaryApproversSubjectSet1;
 $stagesAccessPackageApprovalStage1->setPrimaryApprovers($primaryApproversArray);
 
 
-$fallbackPrimaryApproversSubjectSet1 = new SubjectSet();
+$fallbackPrimaryApproversSubjectSet1 = new SingleUser();
 $fallbackPrimaryApproversSubjectSet1->set@odatatype('#microsoft.graph.singleUser');
 
-$additionalData = [
-'userId' => 'e6bf4d7d-6824-4dd0-809d-5bf42d4817c2', 
-'description' => 'user', 
-];
-$fallbackPrimaryApproversSubjectSet1->setAdditionalData($additionalData);
+$fallbackPrimaryApproversSubjectSet1->setUserId('e6bf4d7d-6824-4dd0-809d-5bf42d4817c2');
 
+$fallbackPrimaryApproversSubjectSet1->setDescription('user');
 
 
 $fallbackPrimaryApproversArray []= $fallbackPrimaryApproversSubjectSet1;

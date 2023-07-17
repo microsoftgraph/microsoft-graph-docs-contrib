@@ -8,15 +8,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Compliance/Ediscovery/Cases/Item/ReviewSets/Item/MicrosoftGraphEdiscoveryAddToReviewSet"
+	  graphcompliance "github.com/microsoftgraph/msgraph-beta-sdk-go/compliance"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddToReviewSetPostRequestBody()
-sourceCollection := graphmodels.NewSourceCollection()
+requestBody := graphcompliance.NewAddToReviewSetPostRequestBody()
+sourceCollection := graphmodelsediscovery.NewSourceCollection()
 id := "1a9b4145d8f84e39bc45a7f68c5c5119"
 sourceCollection.SetId(&id) 
 requestBody.SetSourceCollection(sourceCollection)

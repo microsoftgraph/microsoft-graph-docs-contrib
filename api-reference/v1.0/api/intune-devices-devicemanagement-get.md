@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2854
+Content-Length: 3036
 
 {
   "value": {
@@ -141,6 +141,10 @@ Content-Length: 2854
           "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
         }
       ]
+    },
+    "userExperienceAnalyticsSettings": {
+      "@odata.type": "microsoft.graph.userExperienceAnalyticsSettings",
+      "configurationManagerDataConnectorConfigured": true
     }
   }
 }

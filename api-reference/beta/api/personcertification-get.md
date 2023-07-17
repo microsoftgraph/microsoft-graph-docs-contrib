@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/me/profile/certifications/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-personcertification-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-personcertification-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

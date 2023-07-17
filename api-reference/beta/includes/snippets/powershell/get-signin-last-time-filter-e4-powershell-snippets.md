@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
-Get-MgUser -Filter "startswith(displayName,'Eric')" -Property "displayName,signInActivity" 
+Get-MgBetaUser -Filter "startswith(displayName,'Eric')" -Property "displayName,signInActivity" 
 
 ```
