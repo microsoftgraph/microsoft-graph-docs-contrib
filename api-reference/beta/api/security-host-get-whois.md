@@ -198,6 +198,7 @@ Content-Type: application/json
       }
   ],
     "host": {
+        "@odata.type": "#microsoft.graph.security.host",
         "id": "contoso.com"
     }
 }
