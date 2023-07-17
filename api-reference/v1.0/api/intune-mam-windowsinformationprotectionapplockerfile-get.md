@@ -55,16 +55,12 @@ If successful, this method returns a `200 OK` response code and [windowsInformat
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_mam_windowsinformationprotectionapplockerfile_get_get_windowsinformationprotectionapplockerfile" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windowsInformationProtectionAppLockerFile" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

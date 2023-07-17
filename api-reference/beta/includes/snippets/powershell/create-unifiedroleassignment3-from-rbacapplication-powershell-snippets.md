@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	principalId = "679a9213-c497-48a4-830a-8d3d25d94ddc"
@@ -12,6 +12,6 @@ $params = @{
 	appScopeId = "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
 }
 
-New-MgRoleManagementEntitlementManagementRoleAssignment -BodyParameter $params
+New-MgBetaRoleManagementEntitlementManagementRoleAssignment -BodyParameter $params
 
 ```

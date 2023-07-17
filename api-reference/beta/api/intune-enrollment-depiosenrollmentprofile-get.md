@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2636
+Content-Length: 2730
 
 {
   "value": {
@@ -96,6 +96,9 @@ Content-Length: 2636
     "configurationWebUrl": true,
     "enabledSkipKeys": [
       "Enabled Skip Keys value"
+    ],
+    "enrollmentTimeAzureAdGroupIds": [
+      "7f64eb6c-eb6c-7f64-6ceb-647f6ceb647f"
     ],
     "iTunesPairingMode": "allow",
     "managementCertificates": [

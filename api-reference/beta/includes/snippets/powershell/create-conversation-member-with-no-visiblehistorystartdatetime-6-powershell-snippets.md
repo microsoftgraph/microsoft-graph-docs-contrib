@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -15,6 +15,6 @@ $params = @{
 	tenantId = "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1"
 }
 
-New-MgChatMember -ChatId $chatId -BodyParameter $params
+New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
 ```
