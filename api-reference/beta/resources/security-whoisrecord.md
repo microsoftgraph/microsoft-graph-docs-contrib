@@ -48,7 +48,7 @@ Represents a Whois entry, which communicates a registered [host](../resources/se
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|host|[host](../resources/security-host.md)|The host associated to this whois object.|
+|host|[microsoft.graph.security.host](../resources/security-host.md)|The host associated to this whois object.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -26,7 +26,7 @@ A whoisNameserver represents a nameserver associated with a [whoisRecord](../res
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|host|[host](../resources/security-host.md)|The host of the nameserver.|
+|host|[microsoft.graph.security.host](../resources/security-host.md)|The host of the nameserver.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
