@@ -110,4 +110,4 @@ HTTP/1.1 204 NO CONTENT
 }-->
 
 > [!NOTE]
-> Approving a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) is only meant for recipient of the request.
+> A [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) approval is only meant for recipient of the request.

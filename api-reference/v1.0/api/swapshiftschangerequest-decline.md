@@ -110,4 +110,4 @@ HTTP/1.1 204 NO CONTENT
 }-->
 
 > [!NOTE]
-> Declining a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) is only meant for recipient of the request.
+> A [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) decline is only meant for recipient of the request.
