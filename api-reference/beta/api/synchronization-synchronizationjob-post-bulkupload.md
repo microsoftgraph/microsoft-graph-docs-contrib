@@ -458,7 +458,8 @@ Content-Type: application/scim+json
                 }
             }
         }
-    ]
+    ],
+    "failOnErrors": null
 }
 ```
 
