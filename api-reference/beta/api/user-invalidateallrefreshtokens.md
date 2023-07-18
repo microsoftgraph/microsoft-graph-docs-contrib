@@ -43,10 +43,7 @@ This operation has no request content.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
-
->[!NOTE]
->This API returns a different HTTP response code, similar to the [revokeSignInSessions](user-revokesigninsessions.md) action. For details, see [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). 
+If successful, this method returns a 2xx series response code.
 
 ## Example
 

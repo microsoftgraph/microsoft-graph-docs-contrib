@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Upgrade an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.
 
-> **Note:** Currently, this operation does not support upgrade of apps that require resource-specific consent permissions. For details, see [Known issues](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
+> **Note:** This operation does not support upgrade of apps that require resource-specific consent permissions.
 
 ## Permissions
 

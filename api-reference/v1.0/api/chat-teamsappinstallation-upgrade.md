@@ -15,7 +15,7 @@ Upgrade an [app installation](../resources/teamsappinstallation.md) within a [ch
 
 > **Notes**:
 > - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then effectively, the **teamsApp** installed in the meeting will get upgraded.
-> - Currently, this operation does not support upgrade of apps that require resource-specific consent permissions. For details, see [Known issues](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
+> - This operation does not support upgrade of apps that require resource-specific consent permissions.
 
 ## Permissions
 
