@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|ThreatIntelligence.Read.All|
+|Delegated (work or school account)|ThreatIntelligence.Read.All.|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|ThreatIntelligence.Read.All|
+|Application|ThreatIntelligence.Read.All.|
 
 ## HTTP request
 <!-- {
@@ -42,6 +42,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ### $filter
 `$filter` is an optional query parameter. The following properties can be used for `$filter` calls.
+
 |Property|Example|Notes|
 |:---|:---|:---|
 |All [hostpair](../resources/security-hostpair.md) properties|`$filter=(linkKind eq 'redirect')`|Use the name as it appears in the [hostpair](../resources/security-hostpair.md) resource.|
@@ -50,6 +51,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ### $orderby
 `$orderby` is an optional query parameter. The following properties can be used for `$orderby` calls.
+
 |Property|Example|Notes|
 |:---|:---|:---|
 |`firstSeenDateTime`|`$orderby=firstSeenDateTime desc`||
@@ -57,11 +59,12 @@ This method supports some of the OData query parameters to help customize the re
 
 ### $select
 `$select` is an optional query parameter. The following properties can be used for `$select` calls.
+
 |Property|Example|Notes|
 |:---|:---|:---|
 |All [hostpair](../resources/security-hostpair.md) properties|`$select=id,firstSeenDateTime`|Use the name as it appears in the [hostpair](../resources/security-hostpair.md) resource.|
-|`parentHost`|`$select=parentHost`|Does not support selecting on nested properties (i.e. `parentHost/id`)|
-|`childHost`|`$select=childHost`|Does not support selecting on nested properties (i.e. `childHost/id`)|
+|`parentHost`|`$select=parentHost`|Does not support selecting on nested properties (i.e. `parentHost/id`).|
+|`childHost`|`$select=childHost`|Does not support selecting on nested properties (i.e. `childHost/id`).|
 
 ### $skip
 `$skip` is an optional query parameter.
@@ -95,7 +98,7 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.c
 ```
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
