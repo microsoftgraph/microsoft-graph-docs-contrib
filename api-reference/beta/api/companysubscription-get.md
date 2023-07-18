@@ -31,9 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /directory/subscriptions/{id}
-GET /directory/subscriptions(id={'id'})
-GET /directory/subscriptions/{commerceSubscriptionId}
-GET /directory/subscriptions(commerceSubscriptionId={'commerceSubscriptionId'})
+GET /directory/subscriptions(commerceSubscriptionId='{commerceSubscriptionId}')
 ```
 
 ## Optional query parameters
