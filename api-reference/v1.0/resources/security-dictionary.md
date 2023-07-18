@@ -14,13 +14,17 @@ Namespace: microsoft.graph.security
 Represents a dictionary type.
 
 ## Properties
+
 None.
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.dictionary",
@@ -29,6 +33,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
+  "@odata.type": "#microsoft.graph.security.dictionary"
 }
 ```
-
