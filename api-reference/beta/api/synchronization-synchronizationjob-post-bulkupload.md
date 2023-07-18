@@ -428,6 +428,7 @@ Content-Type: application/json
 
 The following bulk request illustrates how to update attributes of an existing Azure AD user, to change the user's department and set that the user cannot sign in.  This example assumes you have configured a mapping for the **externalId**, **department** and **active** fields, and you have an existing Azure AD user that has attribute matching the **externalId**.  
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
  "name": "bulk_upload_for_update"
