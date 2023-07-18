@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PrintTaskDefinition();
 $requestBody->setDisplayName('Test TaskDefinitionName');
@@ -19,7 +19,7 @@ $createdBy->setDisplayName('Requesting App Display Name');
 $requestBody->setCreatedBy($createdBy);
 
 
-$result = $graphServiceClient->print()->taskDefinitions()->byTaskDefinitionId('printTaskDefinition-id')->patch($requestBody);
+$result = $graphServiceClient->print()->taskDefinitions()->byPrintTaskDefinitionId('printTaskDefinition-id')->patch($requestBody);
 
 
 ```

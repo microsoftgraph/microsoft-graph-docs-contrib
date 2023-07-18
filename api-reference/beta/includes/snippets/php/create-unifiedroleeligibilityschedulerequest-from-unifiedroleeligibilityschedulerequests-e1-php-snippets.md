@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleEligibilityScheduleRequest();
 $requestBody->setAction('AdminAssign');
@@ -21,12 +21,12 @@ $requestBody->setDirectoryScopeId('/');
 $requestBody->setPrincipalId('07706ff1-46c7-4847-ae33-3003830675a1');
 
 $scheduleInfo = new RequestSchedule();
-$scheduleInfo->setStartDateTime(new DateTime('2021-07-01T00:00:00Z'));
+$scheduleInfo->setStartDateTime(new \DateTime('2021-07-01T00:00:00Z'));
 
 $scheduleInfoExpiration = new ExpirationPattern();
-$scheduleInfoExpiration->setEndDateTime(new DateTime('2022-06-30T00:00:00Z'));
+$scheduleInfoExpiration->setEndDateTime(new \DateTime('2022-06-30T00:00:00Z'));
 
-$scheduleInfoExpiration->setType(new ExpirationPatternType('afterdatetime'));
+$scheduleInfoExpiration->setType(new ExpirationPatternType('afterDateTime'));
 
 
 $scheduleInfo->setExpiration($scheduleInfoExpiration);

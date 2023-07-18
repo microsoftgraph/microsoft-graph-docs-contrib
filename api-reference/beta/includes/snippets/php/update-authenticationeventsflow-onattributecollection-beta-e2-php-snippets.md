@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ExternalUsersSelfServiceSignUpEventsFlow();
-$requestBody->set@odatatype('#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow');
+$requestBody->setOdataType('#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow');
 
 $onAttributeCollection = new OnAttributeCollectionExternalUsersSelfServiceSignUp();
-$onAttributeCollection->set@odatatype('#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp');
+$onAttributeCollection->setOdataType('#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp');
 
 $onAttributeCollectionAttributeCollectionPage = new AuthenticationAttributeCollectionPage();
 $OnAttributeCollectionAttributeCollectionPage->setCustomStringsFileId(null);
@@ -42,7 +42,7 @@ $inputsAuthenticationAttributeCollectionInputConfiguration1->setRequired(true);
 
 $inputsAuthenticationAttributeCollectionInputConfiguration1->setValidationRegEx('^[a-zA-Z0-9.!#$%&amp;&#8217;\'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$');
 
-$inputsAuthenticationAttributeCollectionInputConfiguration1->setOptions([]);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setOptions([	]);
 
 
 $inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration1;
@@ -65,7 +65,7 @@ $inputsAuthenticationAttributeCollectionInputConfiguration2->setRequired(false);
 
 $inputsAuthenticationAttributeCollectionInputConfiguration2->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
 
-$inputsAuthenticationAttributeCollectionInputConfiguration2->setOptions([]);
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setOptions([	]);
 
 
 $inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration2;
@@ -88,7 +88,7 @@ $inputsAuthenticationAttributeCollectionInputConfiguration3->setRequired(false);
 
 $inputsAuthenticationAttributeCollectionInputConfiguration3->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
 
-$inputsAuthenticationAttributeCollectionInputConfiguration3->setOptions([]);
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setOptions([	]);
 
 
 $inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration3;
@@ -111,7 +111,7 @@ $inputsAuthenticationAttributeCollectionInputConfiguration4->setRequired(false);
 
 $inputsAuthenticationAttributeCollectionInputConfiguration4->setValidationRegEx('^.*');
 
-$inputsAuthenticationAttributeCollectionInputConfiguration4->setOptions([]);
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setOptions([	]);
 
 
 $inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration4;

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timesOff()->byTimesOff()Id('timeOff-id')->get();
+$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timesOff()->byTimeOffId('timeOff-id')->get();
 
 
 ```

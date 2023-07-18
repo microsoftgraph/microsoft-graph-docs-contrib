@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->deviceImages()->byDeviceImageId('cloudPcDeviceImage-id')->reupload()->post();
+$graphServiceClient->deviceManagement()->virtualEndpoint()->deviceImages()->byCloudPcDeviceImageId('cloudPcDeviceImage-id')->reupload()->post();
 
 
 ```

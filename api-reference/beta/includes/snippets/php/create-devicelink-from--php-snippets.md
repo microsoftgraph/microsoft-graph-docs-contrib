@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeviceLink();
 $requestBody->setName('device link 1');
@@ -30,12 +30,12 @@ $requestBody->setBgpConfiguration($bgpConfiguration);
 $redundancyConfiguration = new RedundancyConfiguration();
 $redundancyConfiguration->setZoneLocalIpAddress('1.128.23.20');
 
-$redundancyConfiguration->setRedundancyTier(new RedundancyTier('zoneredundancy'));
+$redundancyConfiguration->setRedundancyTier(new RedundancyTier('zoneRedundancy'));
 
 
 $requestBody->setRedundancyConfiguration($redundancyConfiguration);
 $tunnelConfiguration = new TunnelConfiguration();
-$tunnelConfiguration->set@odatatype('microsoft.graph.networkAccess.tunnelConfigurationIKEv2Default');
+$tunnelConfiguration->setOdataType('microsoft.graph.networkAccess.tunnelConfigurationIKEv2Default');
 
 $tunnelConfiguration->setPreSharedKey('/microsoft/keyVault/placeholder');
 
@@ -43,7 +43,7 @@ $tunnelConfiguration->setPreSharedKey('/microsoft/keyVault/placeholder');
 $requestBody->setTunnelConfiguration($tunnelConfiguration);
 
 
-$result = $graphServiceClient->networkAccess()->connectivity()->branches()->byBrancheId('branchSite-id')->deviceLinks()->post($requestBody);
+$result = $graphServiceClient->networkAccess()->connectivity()->branches()->byBranchSiteId('branchSite-id')->deviceLinks()->post($requestBody);
 
 
 ```

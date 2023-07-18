@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Event();
 $requestBody->setSubject('Let\'s go for lunch');
 
 $body = new ItemBody();
-$body->setContentType(new BodyType('html'));
+$body->setContentType(new BodyType('hTML'));
 
 $body->setContent('Does noon work for you?');
 
@@ -57,7 +57,7 @@ $requestBody->setAllowNewTimeProposals(true);
 
 $requestBody->setIsOnlineMeeting(true);
 
-$requestBody->setOnlineMeetingProvider(new OnlineMeetingProviderType('teamsforbusiness'));
+$requestBody->setOnlineMeetingProvider(new OnlineMeetingProviderType('teamsForBusiness'));
 
 
 $requestConfiguration = new EventsRequestBuilderPostRequestConfiguration();

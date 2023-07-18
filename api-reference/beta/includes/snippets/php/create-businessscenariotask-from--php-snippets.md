@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BusinessScenarioTask();
-$requestBody->set@odatatype('#microsoft.graph.businessScenarioTask');
+$requestBody->setOdataType('#microsoft.graph.businessScenarioTask');
 
 $requestBody->setTitle('Customer order #12010');
 
@@ -19,7 +19,7 @@ $requestBody->setPercentComplete(0);
 $requestBody->setPriority(5);
 
 $target = new BusinessScenarioGroupTarget();
-$target->set@odatatype('microsoft.graph.businessScenarioGroupTarget');
+$target->setOdataType('microsoft.graph.businessScenarioGroupTarget');
 
 $target->setTaskTargetKind(new PlannerTaskTargetKind('group'));
 

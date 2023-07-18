@@ -7,23 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RedirectPostRequestBody();
 $targetsInvitationParticipantInfo1 = new InvitationParticipantInfo();
-$targetsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.invitationParticipantInfo');
+$targetsInvitationParticipantInfo1->setOdataType('#microsoft.graph.invitationParticipantInfo');
 
 $targetsInvitationParticipantInfo1Identity = new IdentitySet();
-$targetsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
+$targetsInvitationParticipantInfo1Identity->setOdataType('#microsoft.graph.identitySet');
 
 $additionalData = [
-		'phone' => $targetsInvitationParticipantInfo1Identity = new Phone();
-$		targetsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identity');
-
-$		targetsInvitationParticipantInfo1Identity->setId('+12345678901');
-
-
-$targetsInvitationParticipantInfo1Identity->setPhone($phone);
+		'phone' => 		[
+				'@odata.type' => '#microsoft.graph.identity', 
+				'id' => '+12345678901', 
+		],
 
 ];
 $targetsInvitationParticipantInfo1Identity->setAdditionalData($additionalData);

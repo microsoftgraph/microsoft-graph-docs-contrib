@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Workflow();
 $requestBody->setCategory(new LifecycleWorkflowCategory('joiner'));
@@ -21,19 +21,19 @@ $requestBody->setIsEnabled(true);
 $requestBody->setIsSchedulingEnabled(true);
 
 $executionConditions = new TriggerAndScopeBasedConditions();
-$executionConditions->set@odatatype('#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
+$executionConditions->setOdataType('#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
 
 $executionConditionsScope = new RuleBasedSubjectSet();
-$executionConditionsScope->set@odatatype('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
+$executionConditionsScope->setOdataType('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
 
 $executionConditionsScope->setRule('(country eq \'Australia\')');
 
 
 $executionConditions->setScope($executionConditionsScope);
 $executionConditionsTrigger = new TimeBasedAttributeTrigger();
-$executionConditionsTrigger->set@odatatype('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
+$executionConditionsTrigger->setOdataType('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
 
-$executionConditionsTrigger->setTimeBasedAttribute(new WorkflowTriggerTimeBasedAttribute('employeehiredate'));
+$executionConditionsTrigger->setTimeBasedAttribute(new WorkflowTriggerTimeBasedAttribute('employeeHireDate'));
 
 $executionConditionsTrigger->setOffsetInDays(0);
 
@@ -52,7 +52,7 @@ $tasksTask1->setIsEnabled(true);
 
 $tasksTask1->setTaskDefinitionId('6fc52c9d-398b-4305-9763-15f42c1676fc');
 
-$tasksTask1->setArguments([]);
+$tasksTask1->setArguments([	]);
 
 
 $tasksArray []= $tasksTask1;
@@ -67,7 +67,7 @@ $tasksTask2->setIsEnabled(true);
 
 $tasksTask2->setTaskDefinitionId('70b29d51-b59a-4773-9280-8841dfd3f2ea');
 
-$tasksTask2->setArguments([]);
+$tasksTask2->setArguments([	]);
 
 
 $tasksArray []= $tasksTask2;

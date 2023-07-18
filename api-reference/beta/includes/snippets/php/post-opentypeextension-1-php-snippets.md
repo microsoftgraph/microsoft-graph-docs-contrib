@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Message();
 $requestBody->setSubject('Annual review');
 
 $body = new ItemBody();
-$body->setContentType(new BodyType('html'));
+$body->setContentType(new BodyType('hTML'));
 
 $body->setContent('You should be proud!');
 
@@ -31,7 +31,7 @@ $requestBody->setToRecipients($toRecipientsArray);
 
 
 $extensionsExtension1 = new OpenTypeExtension();
-$extensionsExtension1->set@odatatype('microsoft.graph.openTypeExtension');
+$extensionsExtension1->setOdataType('microsoft.graph.openTypeExtension');
 
 $extensionsExtension1->setExtensionName('Com.Contoso.Referral');
 

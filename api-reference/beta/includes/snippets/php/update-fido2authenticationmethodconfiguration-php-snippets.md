@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Fido2AuthenticationMethodConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.fido2AuthenticationMethodConfiguration');
+$requestBody->setOdataType('#microsoft.graph.fido2AuthenticationMethodConfiguration');
 
 $requestBody->setState(new AuthenticationMethodState('enabled'));
 

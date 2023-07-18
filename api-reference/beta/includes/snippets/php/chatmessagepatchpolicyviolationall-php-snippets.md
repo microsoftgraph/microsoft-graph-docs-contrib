@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();
 $policyViolation = new ChatMessagePolicyViolation();
@@ -16,19 +16,19 @@ $policyViolationPolicyTip->setGeneralText('This item has been blocked by the adm
 
 $policyViolationPolicyTip->setComplianceUrl('https://contoso.com/dlp-policy-page');
 
-$policyViolationPolicyTip->setMatchedConditionDescriptions(['Credit Card Number', ]);
+$policyViolationPolicyTip->setMatchedConditionDescriptions(['Credit Card Number', 	]);
 
 
 $policyViolation->setPolicyTip($policyViolationPolicyTip);
-$policyViolation->setVerdictDetails(new ChatMessagePolicyViolationVerdictDetailsTypes('allowoverridewithoutjustification,allowfalsepositiveoverride'));
+$policyViolation->setVerdictDetails(new ChatMessagePolicyViolationVerdictDetailsTypes('allowOverrideWithoutJustification,AllowFalsePositiveOverride'));
 
-$policyViolation->setDlpAction(new ChatMessagePolicyViolationDlpActionTypes('blockaccess'));
+$policyViolation->setDlpAction(new ChatMessagePolicyViolationDlpActionTypes('blockAccess'));
 
 
 $requestBody->setPolicyViolation($policyViolation);
 
 
-$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->byMessageId('chatMessage-id')->patch($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->byChatMessageId('chatMessage-id')->patch($requestBody);
 
 
 ```

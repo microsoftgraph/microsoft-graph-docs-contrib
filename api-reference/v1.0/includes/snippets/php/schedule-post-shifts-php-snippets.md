@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Shift();
 $requestBody->setId('SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8');
@@ -21,18 +21,18 @@ $sharedShift->setDisplayName('Day shift');
 
 $sharedShift->setNotes('Please do inventory as part of your shift.');
 
-$sharedShift->setStartDateTime(new DateTime('2019-03-11T15:00:00Z'));
+$sharedShift->setStartDateTime(new \DateTime('2019-03-11T15:00:00Z'));
 
-$sharedShift->setEndDateTime(new DateTime('2019-03-12T00:00:00Z'));
+$sharedShift->setEndDateTime(new \DateTime('2019-03-12T00:00:00Z'));
 
 $sharedShift->setTheme(new ScheduleEntityTheme('blue'));
 
 $activitiesShiftActivity1 = new ShiftActivity();
 $activitiesShiftActivity1->setIsPaid(true);
 
-$activitiesShiftActivity1->setStartDateTime(new DateTime('2019-03-11T15:00:00Z'));
+$activitiesShiftActivity1->setStartDateTime(new \DateTime('2019-03-11T15:00:00Z'));
 
-$activitiesShiftActivity1->setEndDateTime(new DateTime('2019-03-11T15:15:00Z'));
+$activitiesShiftActivity1->setEndDateTime(new \DateTime('2019-03-11T15:15:00Z'));
 
 $activitiesShiftActivity1->setCode('');
 
@@ -50,18 +50,18 @@ $draftShift->setDisplayName('Day shift');
 
 $draftShift->setNotes('Please do inventory as part of your shift.');
 
-$draftShift->setStartDateTime(new DateTime('2019-03-11T15:00:00Z'));
+$draftShift->setStartDateTime(new \DateTime('2019-03-11T15:00:00Z'));
 
-$draftShift->setEndDateTime(new DateTime('2019-03-12T00:00:00Z'));
+$draftShift->setEndDateTime(new \DateTime('2019-03-12T00:00:00Z'));
 
 $draftShift->setTheme(new ScheduleEntityTheme('blue'));
 
 $activitiesShiftActivity1 = new ShiftActivity();
 $activitiesShiftActivity1->setIsPaid(true);
 
-$activitiesShiftActivity1->setStartDateTime(new DateTime('2019-03-11T15:00:00Z'));
+$activitiesShiftActivity1->setStartDateTime(new \DateTime('2019-03-11T15:00:00Z'));
 
-$activitiesShiftActivity1->setEndDateTime(new DateTime('2019-03-11T15:30:00Z'));
+$activitiesShiftActivity1->setEndDateTime(new \DateTime('2019-03-11T15:30:00Z'));
 
 $activitiesShiftActivity1->setCode('');
 

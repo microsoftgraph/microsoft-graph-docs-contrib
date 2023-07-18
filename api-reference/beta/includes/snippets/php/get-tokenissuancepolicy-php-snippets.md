@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->policies()->tokenIssuancePolicies()->byTokenIssuancePolicieId('tokenIssuancePolicy-id')->get();
+$result = $graphServiceClient->policies()->tokenIssuancePolicies()->byTokenIssuancePolicyId('tokenIssuancePolicy-id')->get();
 
 
 ```

@@ -18,7 +18,6 @@ const workbookTableRow = {
 };
 
 await client.api('/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tables/Table1/rows')
-	.version('beta')
 	.post(workbookTableRow);
 
 ```

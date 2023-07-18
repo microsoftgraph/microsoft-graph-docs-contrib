@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryHoldPolicy
 {
-	Displayname = "My legalHold with sources",
+	DisplayName = "My legalHold with sources",
 	Description = "Created from Graph API",
 	AdditionalData = new Dictionary<string, object>
 	{

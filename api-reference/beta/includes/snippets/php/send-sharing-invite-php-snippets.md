@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new InvitePostRequestBody();
 $recipientsDriveRecipient1 = new DriveRecipient();
@@ -32,7 +32,7 @@ $requestBody->setExpirationDateTime('2018-07-15T14:00:00.000Z');
 
 
 
-$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->invite()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->invite()->post($requestBody);
 
 
 ```

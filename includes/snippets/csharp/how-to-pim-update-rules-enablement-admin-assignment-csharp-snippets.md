@@ -26,10 +26,10 @@ var requestBody = new UnifiedRoleManagementPolicyEnablementRule
 			UnifiedRoleManagementPolicyRuleTargetOperations.All,
 		},
 		Level = "Assignment",
-		InheritableSettings = new List<String>
+		InheritableSettings = new List<string>
 		{
 		},
-		EnforcedSettings = new List<String>
+		EnforcedSettings = new List<string>
 		{
 		},
 	},

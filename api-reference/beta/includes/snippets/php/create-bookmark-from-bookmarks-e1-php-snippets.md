@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Bookmark();
 $requestBody->setDisplayName('Contoso Install Site');
@@ -17,9 +17,9 @@ $requestBody->setWebUrl('http://www.contoso.com/');
 $requestBody->setDescription('Try or buy Contoso for Home or Business and view product information');
 
 $keywords = new AnswerKeyword();
-$keywords->setKeywords(['Contoso', 'install', ]);
+$keywords->setKeywords(['Contoso', 'install', 	]);
 
-$keywords->setReservedKeywords(['Contoso', ]);
+$keywords->setReservedKeywords(['Contoso', 	]);
 
 $keywords->setMatchSimilarKeywords(true);
 
@@ -29,8 +29,7 @@ $requestBody->setAvailabilityStartDateTime(null);
 
 $requestBody->setAvailabilityEndDateTime(null);
 
-$requestBody->setPlatforms([$requestBody->setDevicePlatformType(new DevicePlatformType('windows'));
-]);
+$requestBody->setPlatforms([new DevicePlatformType('windows'),	]);
 
 $targetedVariationsAnswerVariant1 = new AnswerVariant();
 $targetedVariationsAnswerVariant1->setLanguageTag('es-es');

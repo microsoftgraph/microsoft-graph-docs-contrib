@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new TeamsTabRequestBuilderGetRequestConfiguration();
 $queryParameters = TeamsTabRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +15,7 @@ $queryParameters->expand = ["teamsApp"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chats()->byChatId('chat-id')->tabs()->byTabId('teamsTab-id')->get($requestConfiguration);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->tabs()->byTeamsTabId('teamsTab-id')->get($requestConfiguration);
 
 
 ```

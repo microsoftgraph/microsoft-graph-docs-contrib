@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new LegalHold();
-$requestBody->set@odatatype('#microsoft.graph.ediscovery.legalHold');
+$requestBody->setOdataType('#microsoft.graph.ediscovery.legalHold');
 
 $requestBody->setDescription('String');
 
 $createdBy = new IdentitySet();
-$createdBy->set@odatatype('microsoft.graph.identitySet');
+$createdBy->setOdataType('microsoft.graph.identitySet');
 
 
 $requestBody->setCreatedBy($createdBy);
@@ -25,7 +25,7 @@ $requestBody->setStatus(new LegalHoldStatus('string'));
 
 $requestBody->setContentQuery('String');
 
-$requestBody->setErrors(['String', ]);
+$requestBody->setErrors(['String', 	]);
 
 $requestBody->setDisplayName('String');
 

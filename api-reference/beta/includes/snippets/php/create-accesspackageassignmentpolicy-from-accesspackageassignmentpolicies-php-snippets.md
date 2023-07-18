@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentPolicy();
 $requestBody->setAccessPackageId('56ff43fd-6b05-48df-9634-956a777fce6d');
@@ -23,7 +23,7 @@ $requestorSettings->setScopeType('NoSubjects');
 
 $requestorSettings->setAcceptRequests(true);
 
-$requestorSettings->setAllowedRequestors([]);
+$requestorSettings->setAllowedRequestors([	]);
 
 
 $requestBody->setRequestorSettings($requestorSettings);
@@ -36,7 +36,7 @@ $requestApprovalSettings->setIsRequestorJustificationRequired(false);
 
 $requestApprovalSettings->setApprovalMode('NoApproval');
 
-$requestApprovalSettings->setApprovalStages([]);
+$requestApprovalSettings->setApprovalStages([	]);
 
 
 $requestBody->setRequestApprovalSettings($requestApprovalSettings);

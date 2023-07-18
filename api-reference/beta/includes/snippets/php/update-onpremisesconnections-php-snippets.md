@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CloudPcOnPremisesConnection();
-$requestBody->set@odatatype('#microsoft.graph.cloudPcOnPremisesConnection');
+$requestBody->setOdataType('#microsoft.graph.cloudPcOnPremisesConnection');
 
 $requestBody->setDisplayName('Display Name value');
 
@@ -32,7 +32,7 @@ $requestBody->setSubnetId('/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/r
 
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->byOnPremisesConnectionId('cloudPcOnPremisesConnection-id')->patch($requestBody);
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->byCloudPcOnPremisesConnectionId('cloudPcOnPremisesConnection-id')->patch($requestBody);
 
 
 ```

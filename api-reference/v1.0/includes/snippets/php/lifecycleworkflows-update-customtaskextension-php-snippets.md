@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CustomTaskExtension();
 $requestBody->setDisplayName('Grant manager access to mailbox and OneDrive');
@@ -15,7 +15,7 @@ $requestBody->setDisplayName('Grant manager access to mailbox and OneDrive');
 $requestBody->setDescription('Grant manager access to mailbox and OneDrive');
 
 $endpointConfiguration = new LogicAppTriggerEndpointConfiguration();
-$endpointConfiguration->set@odatatype('#microsoft.graph.logicAppTriggerEndpointConfiguration');
+$endpointConfiguration->setOdataType('#microsoft.graph.logicAppTriggerEndpointConfiguration');
 
 $endpointConfiguration->setSubscriptionId('c500b67c-e9b7-4ad2-a90d-77d41385ae55');
 
@@ -26,12 +26,12 @@ $endpointConfiguration->setLogicAppWorkflowName('ManagerAccess');
 
 $requestBody->setEndpointConfiguration($endpointConfiguration);
 $authenticationConfiguration = new AzureAdPopTokenAuthentication();
-$authenticationConfiguration->set@odatatype('#microsoft.graph.azureAdPopTokenAuthentication');
+$authenticationConfiguration->setOdataType('#microsoft.graph.azureAdPopTokenAuthentication');
 
 
 $requestBody->setAuthenticationConfiguration($authenticationConfiguration);
 $clientConfiguration = new CustomExtensionClientConfiguration();
-$clientConfiguration->set@odatatype('#microsoft.graph.customExtensionClientConfiguration');
+$clientConfiguration->setOdataType('#microsoft.graph.customExtensionClientConfiguration');
 
 $clientConfiguration->setTimeoutInMilliseconds(1000);
 
@@ -44,7 +44,7 @@ $clientConfiguration->setAdditionalData($additionalData);
 
 $requestBody->setClientConfiguration($clientConfiguration);
 $callbackConfiguration = new CustomTaskExtensionCallbackConfiguration();
-$callbackConfiguration->set@odatatype('#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration');
+$callbackConfiguration->setOdataType('#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration');
 
 $callbackConfiguration->setTimeoutDuration(new \DateInterval('PT20M'));
 

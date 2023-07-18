@@ -11,7 +11,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new AadUserConversationMember
 {
 	OdataType = "#microsoft.graph.aadUserConversationMember",
-	Roles = new List<String>
+	Roles = new List<string>
 	{
 	},
 	TenantId = "a18103d1-a6ef-4f66-ac64-e4ef42ea8681",

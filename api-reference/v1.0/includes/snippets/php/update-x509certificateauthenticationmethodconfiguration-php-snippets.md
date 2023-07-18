@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new X509CertificateAuthenticationMethodConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.x509CertificateAuthenticationMethodConfiguration');
+$requestBody->setOdataType('#microsoft.graph.x509CertificateAuthenticationMethodConfiguration');
 
 $requestBody->setId('X509Certificate');
 
@@ -29,23 +29,23 @@ $requestBody->setCertificateUserBindings($certificateUserBindingsArray);
 
 
 $authenticationModeConfiguration = new X509CertificateAuthenticationModeConfiguration();
-$authenticationModeConfiguration->setX509CertificateAuthenticationDefaultMode(new X509CertificateAuthenticationMode('x509certificatemultifactor'));
+$authenticationModeConfiguration->setX509CertificateAuthenticationDefaultMode(new X509CertificateAuthenticationMode('x509CertificateMultiFactor'));
 
 $rulesX509CertificateRule1 = new X509CertificateRule();
-$rulesX509CertificateRule1->setX509CertificateRuleType(new X509CertificateRuleType('issuersubject'));
+$rulesX509CertificateRule1->setX509CertificateRuleType(new X509CertificateRuleType('issuerSubject'));
 
 $rulesX509CertificateRule1->setIdentifier('CN=ContosoCA,DC=Contoso,DC=org ');
 
-$rulesX509CertificateRule1->setX509CertificateAuthenticationMode(new X509CertificateAuthenticationMode('x509certificatemultifactor'));
+$rulesX509CertificateRule1->setX509CertificateAuthenticationMode(new X509CertificateAuthenticationMode('x509CertificateMultiFactor'));
 
 
 $rulesArray []= $rulesX509CertificateRule1;
 $rulesX509CertificateRule2 = new X509CertificateRule();
-$rulesX509CertificateRule2->setX509CertificateRuleType(new X509CertificateRuleType('policyoid'));
+$rulesX509CertificateRule2->setX509CertificateRuleType(new X509CertificateRuleType('policyOID'));
 
 $rulesX509CertificateRule2->setIdentifier('1.2.3.4');
 
-$rulesX509CertificateRule2->setX509CertificateAuthenticationMode(new X509CertificateAuthenticationMode('x509certificatemultifactor'));
+$rulesX509CertificateRule2->setX509CertificateAuthenticationMode(new X509CertificateAuthenticationMode('x509CertificateMultiFactor'));
 
 
 $rulesArray []= $rulesX509CertificateRule2;

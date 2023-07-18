@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationalActivity();
 $institution = new InstitutionData();
@@ -32,7 +32,7 @@ $institution->setLocation($institutionLocation);
 $requestBody->setInstitution($institution);
 
 
-$result = $graphServiceClient->me()->profile()->educationalActivities()->byEducationalActivitieId('educationalActivity-id')->patch($requestBody);
+$result = $graphServiceClient->me()->profile()->educationalActivities()->byEducationalActivityId('educationalActivity-id')->patch($requestBody);
 
 
 ```

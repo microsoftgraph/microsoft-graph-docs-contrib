@@ -7,21 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Call();
-$requestBody->set@odatatype('#microsoft.graph.call');
+$requestBody->setOdataType('#microsoft.graph.call');
 
 $requestBody->setCallbackUri('https://bot.contoso.com/callback');
 
 $source = new ParticipantInfo();
-$source->set@odatatype('#microsoft.graph.participantInfo');
+$source->setOdataType('#microsoft.graph.participantInfo');
 
 $sourceIdentity = new IdentitySet();
-$sourceIdentity->set@odatatype('#microsoft.graph.identitySet');
+$sourceIdentity->setOdataType('#microsoft.graph.identitySet');
 
 $sourceIdentityApplication = new Identity();
-$sourceIdentityApplication->set@odatatype('#microsoft.graph.identity');
+$sourceIdentityApplication->setOdataType('#microsoft.graph.identity');
 
 $sourceIdentityApplication->setDisplayName('Calling Bot');
 
@@ -38,13 +38,13 @@ $Source->setLanguageId(null);
 
 $requestBody->setSource($source);
 $targetsInvitationParticipantInfo1 = new InvitationParticipantInfo();
-$targetsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.invitationParticipantInfo');
+$targetsInvitationParticipantInfo1->setOdataType('#microsoft.graph.invitationParticipantInfo');
 
 $targetsInvitationParticipantInfo1Identity = new IdentitySet();
-$targetsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
+$targetsInvitationParticipantInfo1Identity->setOdataType('#microsoft.graph.identitySet');
 
 $targetsInvitationParticipantInfo1IdentityUser = new Identity();
-$targetsInvitationParticipantInfo1IdentityUser->set@odatatype('#microsoft.graph.identity');
+$targetsInvitationParticipantInfo1IdentityUser->setOdataType('#microsoft.graph.identity');
 
 $targetsInvitationParticipantInfo1IdentityUser->setDisplayName('John');
 
@@ -59,11 +59,10 @@ $targetsArray []= $targetsInvitationParticipantInfo1;
 $requestBody->setTargets($targetsArray);
 
 
-$requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
-]);
+$requestBody->setRequestedModalities([new Modality('audio'),]);
 
 $mediaConfig = new AppHostedMediaConfig();
-$mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');
+$mediaConfig->setOdataType('#microsoft.graph.appHostedMediaConfig');
 
 $mediaConfig->setBlob('<Media Session Configuration>');
 

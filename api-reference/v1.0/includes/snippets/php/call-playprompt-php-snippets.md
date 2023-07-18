@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlayPromptPostRequestBody();
 $requestBody->setClientContext('d45324c1-fcb5-430a-902c-f20af696537c');
 
 $promptsPrompt1 = new MediaPrompt();
-$promptsPrompt1->set@odatatype('#microsoft.graph.mediaPrompt');
+$promptsPrompt1->setOdataType('#microsoft.graph.mediaPrompt');
 
 $promptsPrompt1MediaInfo = new MediaInfo();
-$promptsPrompt1MediaInfo->set@odatatype('#microsoft.graph.mediaInfo');
+$promptsPrompt1MediaInfo->setOdataType('#microsoft.graph.mediaInfo');
 
 $promptsPrompt1MediaInfo->setUri('https://cdn.contoso.com/beep.wav');
 

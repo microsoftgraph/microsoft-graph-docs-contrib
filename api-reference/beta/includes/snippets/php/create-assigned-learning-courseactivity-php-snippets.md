@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new LearningAssignment();
-$requestBody->set@odatatype('#microsoft.graph.learningAssignment');
+$requestBody->setOdataType('#microsoft.graph.learningAssignment');
 
-$requestBody->setAssignedDateTime(new DateTime('2021-05-11T22:57:17+00:00'));
+$requestBody->setAssignedDateTime(new \DateTime('2021-05-11T22:57:17+00:00'));
 
 $requestBody->setAssignmentType(new AssignmentType('required'));
 
@@ -44,7 +44,7 @@ $notes->setContent('required assignment added for user');
 
 
 $requestBody->setNotes($notes);
-$requestBody->setStatus(new CourseStatus('notstarted'));
+$requestBody->setStatus(new CourseStatus('notStarted'));
 
 
 

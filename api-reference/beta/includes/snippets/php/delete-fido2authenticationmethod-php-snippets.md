@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->users()->byUserId('user-id')->authentication()->fido2Methods()->byFido2MethodId('fido2AuthenticationMethod-id')->delete();
+$graphServiceClient->users()->byUserId('user-id')->authentication()->fido2Methods()->byFido2AuthenticationMethodId('fido2AuthenticationMethod-id')->delete();
 
 
 ```

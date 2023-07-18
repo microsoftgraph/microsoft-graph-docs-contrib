@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new InvitePostRequestBody();
 $participantsInvitationParticipantInfo1 = new InvitationParticipantInfo();
-$participantsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.invitationParticipantInfo');
+$participantsInvitationParticipantInfo1->setOdataType('#microsoft.graph.invitationParticipantInfo');
 
 $participantsInvitationParticipantInfo1->setReplacesCallId('a7ebfb2d-871e-419c-87af-27290b22e8db');
 
 $participantsInvitationParticipantInfo1Identity = new IdentitySet();
-$participantsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
+$participantsInvitationParticipantInfo1Identity->setOdataType('#microsoft.graph.identitySet');
 
 $participantsInvitationParticipantInfo1IdentityUser = new Identity();
-$participantsInvitationParticipantInfo1IdentityUser->set@odatatype('#microsoft.graph.identity');
+$participantsInvitationParticipantInfo1IdentityUser->setOdataType('#microsoft.graph.identity');
 
 $participantsInvitationParticipantInfo1IdentityUser->setId('7e1b4346-85a6-4bdd-abe3-d11c5d420efe');
 
@@ -32,15 +32,15 @@ $participantsInvitationParticipantInfo1->setIdentity($participantsInvitationPart
 
 $participantsArray []= $participantsInvitationParticipantInfo1;
 $participantsInvitationParticipantInfo2 = new InvitationParticipantInfo();
-$participantsInvitationParticipantInfo2->set@odatatype('#microsoft.graph.invitationParticipantInfo');
+$participantsInvitationParticipantInfo2->setOdataType('#microsoft.graph.invitationParticipantInfo');
 
 $participantsInvitationParticipantInfo2->setReplacesCallId('a7ebfb2d-871e-419c-87af-27290b22e8db');
 
 $participantsInvitationParticipantInfo2Identity = new IdentitySet();
-$participantsInvitationParticipantInfo2Identity->set@odatatype('#microsoft.graph.identitySet');
+$participantsInvitationParticipantInfo2Identity->setOdataType('#microsoft.graph.identitySet');
 
 $participantsInvitationParticipantInfo2IdentityUser = new Identity();
-$participantsInvitationParticipantInfo2IdentityUser->set@odatatype('#microsoft.graph.identity');
+$participantsInvitationParticipantInfo2IdentityUser->setOdataType('#microsoft.graph.identity');
 
 $participantsInvitationParticipantInfo2IdentityUser->setId('1e126418-44a0-4a94-a6f8-0efe1ad71acb');
 

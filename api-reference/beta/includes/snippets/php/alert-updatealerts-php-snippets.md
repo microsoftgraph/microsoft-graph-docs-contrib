@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UpdateAlertsPostRequestBody();
 $valueAlert1 = new Alert();
 $valueAlert1->setAssignedTo('String');
 
-$valueAlert1->setClosedDateTime(new DateTime('String (timestamp)'));
+$valueAlert1->setClosedDateTime(new \DateTime('String (timestamp)'));
 
-$valueAlert1->setComments(['String', ]);
+$valueAlert1->setComments(['String', 	]);
 
 $valueAlert1Feedback = new AlertFeedback();
 $additionalData = [
-	'@odata.type' => 'microsoft.graph.alertFeedback', 
+		'@odata.type' => 'microsoft.graph.alertFeedback', 
 ];
 $valueAlert1Feedback->setAdditionalData($additionalData);
 
@@ -30,14 +30,14 @@ $valueAlert1->setId('String (identifier)');
 
 $valueAlert1Status = new AlertStatus();
 $additionalData = [
-	'@odata.type' => 'microsoft.graph.alertStatus', 
+		'@odata.type' => 'microsoft.graph.alertStatus', 
 ];
 $valueAlert1Status->setAdditionalData($additionalData);
 
 
 
 $valueAlert1->setStatus($valueAlert1Status);
-$valueAlert1->setTags(['String', ]);
+$valueAlert1->setTags(['String', 	]);
 
 $valueAlert1VendorInformation = new SecurityVendorInformation();
 $valueAlert1VendorInformation->setProvider('String');

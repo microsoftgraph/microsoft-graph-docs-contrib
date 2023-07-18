@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ReplyPostRequestBody();
 $post = new Post();
@@ -19,13 +19,13 @@ $postBody->setContent('I attached a reference to a file on OneDrive.');
 
 $post->setBody($postBody);
 $attachmentsAttachment1 = new ReferenceAttachment();
-$attachmentsAttachment1->set@odatatype('#microsoft.graph.referenceAttachment');
+$attachmentsAttachment1->setOdataType('#microsoft.graph.referenceAttachment');
 
 $attachmentsAttachment1->setName('Personal pictures');
 
 $attachmentsAttachment1->setSourceUrl('https://contoso.com/personal/mario_contoso_net/Documents/Pics');
 
-$attachmentsAttachment1->setProviderType(new ReferenceAttachmentProvider('onedriveconsumer'));
+$attachmentsAttachment1->setProviderType(new ReferenceAttachmentProvider('oneDriveConsumer'));
 
 $attachmentsAttachment1->setPermission(new ReferenceAttachmentPermission('edit'));
 
@@ -40,7 +40,7 @@ $post->setAttachments($attachmentsArray);
 $requestBody->setPost($post);
 
 
-$graphServiceClient->groups()->byGroupId('group-id')->threads()->byThreadId('conversationThread-id')->reply()->post($requestBody);
+$graphServiceClient->groups()->byGroupId('group-id')->threads()->byConversationThreadId('conversationThread-id')->reply()->post($requestBody);
 
 
 ```

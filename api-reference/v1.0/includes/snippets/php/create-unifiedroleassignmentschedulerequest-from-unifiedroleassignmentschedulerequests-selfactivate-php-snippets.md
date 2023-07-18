@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleAssignmentScheduleRequest();
-$requestBody->setAction(new UnifiedRoleScheduleRequestActions('selfactivate'));
+$requestBody->setAction(new UnifiedRoleScheduleRequestActions('selfActivate'));
 
 $requestBody->setPrincipalId('071cc716-8147-4397-a5ba-b2105951cc0b');
 
@@ -21,10 +21,10 @@ $requestBody->setDirectoryScopeId('/');
 $requestBody->setJustification('I need access to the Attribute Administrator role to manage attributes to be assigned to restricted AUs');
 
 $scheduleInfo = new RequestSchedule();
-$scheduleInfo->setStartDateTime(new DateTime('2022-04-14T00:00:00.000Z'));
+$scheduleInfo->setStartDateTime(new \DateTime('2022-04-14T00:00:00.000Z'));
 
 $scheduleInfoExpiration = new ExpirationPattern();
-$scheduleInfoExpiration->setType(new ExpirationPatternType('afterduration'));
+$scheduleInfoExpiration->setType(new ExpirationPatternType('afterDuration'));
 
 $scheduleInfoExpiration->setDuration(new \DateInterval('PT5H'));
 

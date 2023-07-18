@@ -214,12 +214,12 @@ var requestBody = new BookingAppointment
 					QuestionId = "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
 					Question = "What is your age",
 					AnswerInputType = AnswerInputType.Text,
-					AnswerOptions = new List<String>
+					AnswerOptions = new List<string>
 					{
 					},
 					IsRequired = true,
 					Answer = "25",
-					SelectedOptions = new List<String>
+					SelectedOptions = new List<string>
 					{
 					},
 				},

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleEligibilityScheduleRequest();
-$requestBody->setAction(new UnifiedRoleScheduleRequestActions('adminremove'));
+$requestBody->setAction(new UnifiedRoleScheduleRequestActions('adminRemove'));
 
 $requestBody->setRoleDefinitionId('8424c6f0-a189-499e-bbd0-26c1753c96d4');
 

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new User();
 $requestBody->setAccountEnabled(true);
@@ -26,15 +26,11 @@ $passwordProfile->setPassword('xWwvJ]6NMw+bWH-d');
 
 $requestBody->setPasswordProfile($passwordProfile);
 $additionalData = [
-		'extkmpdyld2_graphLearnCourses' => $requestBody = new Extkmpdyld2_graphLearnCourses();
-		$requestBody->setCourseId(100);
-
-$		requestBody->setCourseName('Explore Microsoft Graph');
-
-$		requestBody->setCourseType('Online');
-
-
-$requestBody->setExtkmpdyld2_graphLearnCourses($extkmpdyld2_graphLearnCourses);
+		'extkmpdyld2_graphLearnCourses' => 		[
+				'courseId' => 100,
+				'courseName' => 'Explore Microsoft Graph', 
+				'courseType' => 'Online', 
+		],
 
 ];
 $requestBody->setAdditionalData($additionalData);

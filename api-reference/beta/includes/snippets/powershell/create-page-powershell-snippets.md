@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.Sites
 
 $params = @{
+	"@odata.type" = "#microsoft.graph.sitePage"
 	name = "test.aspx"
 	title = "test"
 	pageLayout = "article"

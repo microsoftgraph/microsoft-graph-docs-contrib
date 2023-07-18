@@ -7,18 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Call();
-$requestBody->set@odatatype('#microsoft.graph.call');
+$requestBody->setOdataType('#microsoft.graph.call');
 
 $requestBody->setCallbackUri('https://bot.contoso.com/callback');
 
-$requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
-]);
+$requestBody->setRequestedModalities([new Modality('audio'),	]);
 
 $mediaConfig = new ServiceHostedMediaConfig();
-$mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
+$mediaConfig->setOdataType('#microsoft.graph.serviceHostedMediaConfig');
 
 $preFetchMediaMediaInfo1 = new MediaInfo();
 $preFetchMediaMediaInfo1->setUri('https://cdn.contoso.com/beep.wav');
@@ -40,7 +39,7 @@ $mediaConfig->setPreFetchMedia($preFetchMediaArray);
 
 $requestBody->setMediaConfig($mediaConfig);
 $meetingInfo = new JoinMeetingIdMeetingInfo();
-$meetingInfo->set@odatatype('#microsoft.graph.joinMeetingIdMeetingInfo');
+$meetingInfo->setOdataType('#microsoft.graph.joinMeetingIdMeetingInfo');
 
 $meetingInfo->setJoinMeetingId('1234567');
 

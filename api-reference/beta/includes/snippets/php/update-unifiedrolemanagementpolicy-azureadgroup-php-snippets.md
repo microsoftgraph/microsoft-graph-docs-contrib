@@ -7,24 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleManagementPolicy();
 $rulesUnifiedRoleManagementPolicyRule1 = new UnifiedRoleManagementPolicyApprovalRule();
-$rulesUnifiedRoleManagementPolicyRule1->set@odatatype('#microsoft.graph.unifiedRoleManagementPolicyApprovalRule');
+$rulesUnifiedRoleManagementPolicyRule1->setOdataType('#microsoft.graph.unifiedRoleManagementPolicyApprovalRule');
 
 $rulesUnifiedRoleManagementPolicyRule1->setId('Approval_EndUser_Assignment');
 
 $rulesUnifiedRoleManagementPolicyRule1Target = new UnifiedRoleManagementPolicyRuleTarget();
 $rulesUnifiedRoleManagementPolicyRule1Target->setCaller('EndUser');
 
-$rulesUnifiedRoleManagementPolicyRule1Target->setOperations(['All', ]);
+$rulesUnifiedRoleManagementPolicyRule1Target->setOperations(['All', 	]);
 
 $rulesUnifiedRoleManagementPolicyRule1Target->setLevel('Assignment');
 
-$rulesUnifiedRoleManagementPolicyRule1Target->setInheritableSettings([]);
+$rulesUnifiedRoleManagementPolicyRule1Target->setInheritableSettings([	]);
 
-$rulesUnifiedRoleManagementPolicyRule1Target->setEnforcedSettings([]);
+$rulesUnifiedRoleManagementPolicyRule1Target->setEnforcedSettings([	]);
 
 
 $rulesUnifiedRoleManagementPolicyRule1->setTarget($rulesUnifiedRoleManagementPolicyRule1Target);
@@ -47,7 +47,7 @@ $approvalStagesApprovalStage1->setEscalationTimeInMinutes(0);
 $approvalStagesApprovalStage1->setIsEscalationEnabled(false);
 
 $primaryApproversUserSet1 = new SingleUser();
-$primaryApproversUserSet1->set@odatatype('#microsoft.graph.singleUser');
+$primaryApproversUserSet1->setOdataType('#microsoft.graph.singleUser');
 
 $primaryApproversUserSet1->setIsBackup(false);
 
@@ -72,7 +72,7 @@ $rulesUnifiedRoleManagementPolicyRule1->setSetting($rulesUnifiedRoleManagementPo
 
 $rulesArray []= $rulesUnifiedRoleManagementPolicyRule1;
 $rulesUnifiedRoleManagementPolicyRule2 = new UnifiedRoleManagementPolicyAuthenticationContextRule();
-$rulesUnifiedRoleManagementPolicyRule2->set@odatatype('#microsoft.graph.unifiedRoleManagementPolicyAuthenticationContextRule');
+$rulesUnifiedRoleManagementPolicyRule2->setOdataType('#microsoft.graph.unifiedRoleManagementPolicyAuthenticationContextRule');
 
 $rulesUnifiedRoleManagementPolicyRule2->setId('AuthenticationContext_EndUser_Assignment');
 
@@ -96,7 +96,7 @@ $rulesUnifiedRoleManagementPolicyRule2->setTarget($rulesUnifiedRoleManagementPol
 
 $rulesArray []= $rulesUnifiedRoleManagementPolicyRule2;
 $rulesUnifiedRoleManagementPolicyRule3 = new UnifiedRoleManagementPolicyEnablementRule();
-$rulesUnifiedRoleManagementPolicyRule3->set@odatatype('#microsoft.graph.unifiedRoleManagementPolicyEnablementRule');
+$rulesUnifiedRoleManagementPolicyRule3->setOdataType('#microsoft.graph.unifiedRoleManagementPolicyEnablementRule');
 
 $rulesUnifiedRoleManagementPolicyRule3->setId('Enablement_Admin_Eligibility');
 
@@ -118,7 +118,7 @@ $rulesUnifiedRoleManagementPolicyRule3->setTarget($rulesUnifiedRoleManagementPol
 
 $rulesArray []= $rulesUnifiedRoleManagementPolicyRule3;
 $rulesUnifiedRoleManagementPolicyRule4 = new UnifiedRoleManagementPolicyExpirationRule();
-$rulesUnifiedRoleManagementPolicyRule4->set@odatatype('#microsoft.graph.unifiedRoleManagementPolicyExpirationRule');
+$rulesUnifiedRoleManagementPolicyRule4->setOdataType('#microsoft.graph.unifiedRoleManagementPolicyExpirationRule');
 
 $rulesUnifiedRoleManagementPolicyRule4->setId('Expiration_Admin_Eligibility');
 
@@ -142,7 +142,7 @@ $rulesUnifiedRoleManagementPolicyRule4->setTarget($rulesUnifiedRoleManagementPol
 
 $rulesArray []= $rulesUnifiedRoleManagementPolicyRule4;
 $rulesUnifiedRoleManagementPolicyRule5 = new UnifiedRoleManagementPolicyNotificationRule();
-$rulesUnifiedRoleManagementPolicyRule5->set@odatatype('#microsoft.graph.unifiedRoleManagementPolicyNotificationRule');
+$rulesUnifiedRoleManagementPolicyRule5->setOdataType('#microsoft.graph.unifiedRoleManagementPolicyNotificationRule');
 
 $rulesUnifiedRoleManagementPolicyRule5->setId('Notification_Admin_Admin_Eligibility');
 
@@ -176,7 +176,7 @@ $requestBody->setRules($rulesArray);
 
 
 
-$result = $graphServiceClient->policies()->roleManagementPolicies()->byRoleManagementPolicieId('unifiedRoleManagementPolicy-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->roleManagementPolicies()->byUnifiedRoleManagementPolicyId('unifiedRoleManagementPolicy-id')->patch($requestBody);
 
 
 ```

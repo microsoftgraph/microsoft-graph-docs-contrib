@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new GetSchedulePostRequestBody();
-$requestBody->setSchedules(['adelev@contoso.onmicrosoft.com', 'meganb@contoso.onmicrosoft.com', ]);
+$requestBody->setSchedules(['adelev@contoso.onmicrosoft.com', 'meganb@contoso.onmicrosoft.com', 	]);
 
 $startTime = new DateTimeTimeZone();
 $startTime->setDateTime('2019-03-15T09:00:00');
@@ -31,8 +31,8 @@ $requestBody->setAvailabilityViewInterval(60);
 
 $requestConfiguration = new GetScheduleRequestBuilderPostRequestConfiguration();
 $headers = [
-	'Prefer' => 'outlook.timezone="Pacific Standard Time"',
-];
+		'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+	];
 $requestConfiguration->headers = $headers;
 
 

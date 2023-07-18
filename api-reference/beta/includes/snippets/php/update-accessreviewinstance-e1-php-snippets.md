@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessReviewInstance();
 $scope = new PrincipalResourceMembershipsScope();
-$scope->set@odatatype('#microsoft.graph.principalResourceMembershipsScope');
+$scope->setOdataType('#microsoft.graph.principalResourceMembershipsScope');
 
 $principalScopesAccessReviewScope1 = new AccessReviewQueryScope();
-$principalScopesAccessReviewScope1->set@odatatype('#microsoft.graph.accessReviewQueryScope');
+$principalScopesAccessReviewScope1->setOdataType('#microsoft.graph.accessReviewQueryScope');
 
 $principalScopesAccessReviewScope1->setQuery('/v1.0/users');
 
@@ -23,7 +23,7 @@ $principalScopesAccessReviewScope1->setQueryType('MicrosoftGraph');
 
 $principalScopesArray []= $principalScopesAccessReviewScope1;
 $principalScopesAccessReviewScope2 = new AccessReviewQueryScope();
-$principalScopesAccessReviewScope2->set@odatatype('#microsoft.graph.accessReviewQueryScope');
+$principalScopesAccessReviewScope2->setOdataType('#microsoft.graph.accessReviewQueryScope');
 
 $principalScopesAccessReviewScope2->setQuery('/v1.0/groups');
 
@@ -35,7 +35,7 @@ $scope->setPrincipalScopes($principalScopesArray);
 
 
 $resourceScopesAccessReviewScope1 = new AccessReviewQueryScope();
-$resourceScopesAccessReviewScope1->set@odatatype('#microsoft.graph.accessReviewQueryScope');
+$resourceScopesAccessReviewScope1->setOdataType('#microsoft.graph.accessReviewQueryScope');
 
 $resourceScopesAccessReviewScope1->setQuery('/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3');
 
@@ -77,7 +77,7 @@ $requestBody->setFallbackReviewers($fallbackReviewersArray);
 
 
 
-$result = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->byDefinitionId('accessReviewScheduleDefinition-id')->instances()->byInstanceId('accessReviewInstance-id')->patch($requestBody);
+$result = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->byAccessReviewScheduleDefinitionId('accessReviewScheduleDefinition-id')->instances()->byAccessReviewInstanceId('accessReviewInstance-id')->patch($requestBody);
 
 
 ```

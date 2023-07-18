@@ -35,8 +35,8 @@ dueDateTime.SetDateTime(&dateTime)
 timeZone := "UTC"
 dueDateTime.SetTimeZone(&timeZone) 
 requestBody.SetDueDateTime(dueDateTime)
-externalCourseActivityId := "12a2228a-e020-11ec-9d64-0242ac120002"
-requestBody.SetExternalCourseActivityId(&externalCourseActivityId) 
+externalcourseActivityId := "12a2228a-e020-11ec-9d64-0242ac120002"
+requestBody.SetExternalcourseActivityId(&externalcourseActivityId) 
 learningContentId := "57baf9dc-e020-11ec-9d64-0242ac120002"
 requestBody.SetLearningContentId(&learningContentId) 
 learnerUserId := "7ba2228a-e020-11ec-9d64-0242ac120002"

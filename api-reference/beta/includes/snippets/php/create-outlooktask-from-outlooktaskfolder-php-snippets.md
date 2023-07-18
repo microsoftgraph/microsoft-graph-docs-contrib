@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OutlookTask();
 $requestBody->setSubject('Shop for dinner');
@@ -28,7 +28,7 @@ $dueDateTime->setTimeZone('Pacific Standard Time');
 $requestBody->setDueDateTime($dueDateTime);
 
 
-$result = $graphServiceClient->me()->outlook()->taskFolders()->byTaskFolderId('outlookTaskFolder-id')->tasks()->post($requestBody);
+$result = $graphServiceClient->me()->outlook()->taskFolders()->byOutlookTaskFolderId('outlookTaskFolder-id')->tasks()->post($requestBody);
 
 
 ```

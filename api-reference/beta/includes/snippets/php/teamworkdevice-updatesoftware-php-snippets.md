@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UpdateSoftwarePostRequestBody();
-$requestBody->setSoftwareType(new TeamworkSoftwareType('teamsclient'));
+$requestBody->setSoftwareType(new TeamworkSoftwareType('teamsClient'));
 
 $requestBody->setSoftwareVersion('1.0.96.22');
 
 
 
-$graphServiceClient->teamwork()->devices()->byDeviceId('teamworkDevice-id')->updateSoftware()->post($requestBody);
+$graphServiceClient->teamwork()->devices()->byTeamworkDeviceId('teamworkDevice-id')->updateSoftware()->post($requestBody);
 
 
 ```

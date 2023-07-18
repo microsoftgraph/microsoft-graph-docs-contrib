@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CreateOrGetPostRequestBody();
-$requestBody->setStartDateTime(new DateTime('2020-02-06T01:49:21.3524945+00:00'));
+$requestBody->setStartDateTime(new \DateTime('2020-02-06T01:49:21.3524945+00:00'));
 
-$requestBody->setEndDateTime(new DateTime('2020-02-06T02:19:21.3524945+00:00'));
+$requestBody->setEndDateTime(new \DateTime('2020-02-06T02:19:21.3524945+00:00'));
 
 $requestBody->setSubject('Create a meeting with customId provided');
 

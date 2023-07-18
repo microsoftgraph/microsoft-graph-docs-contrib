@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentRequest();
 $requestBody->setRequestType('UserAdd');
@@ -22,12 +22,12 @@ $accessPackageAssignment->setAccessPackageId('a914b616-e04e-476b-aa37-91038f0b16
 
 $requestBody->setAccessPackageAssignment($accessPackageAssignment);
 $answersAccessPackageAnswer1 = new AccessPackageAnswerString();
-$answersAccessPackageAnswer1->set@odatatype('#microsoft.graph.accessPackageAnswerString');
+$answersAccessPackageAnswer1->setOdataType('#microsoft.graph.accessPackageAnswerString');
 
 $answersAccessPackageAnswer1->setValue('Arizona');
 
 $answersAccessPackageAnswer1AnsweredQuestion = new AccessPackageMultipleChoiceQuestion();
-$answersAccessPackageAnswer1AnsweredQuestion->set@odatatype('#microsoft.graph.accessPackageMultipleChoiceQuestion');
+$answersAccessPackageAnswer1AnsweredQuestion->setOdataType('#microsoft.graph.accessPackageMultipleChoiceQuestion');
 
 $answersAccessPackageAnswer1AnsweredQuestion->setId('A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF');
 
@@ -36,12 +36,12 @@ $answersAccessPackageAnswer1->setAnsweredQuestion($answersAccessPackageAnswer1An
 
 $answersArray []= $answersAccessPackageAnswer1;
 $answersAccessPackageAnswer2 = new AccessPackageAnswerString();
-$answersAccessPackageAnswer2->set@odatatype('#microsoft.graph.accessPackageAnswerString');
+$answersAccessPackageAnswer2->setOdataType('#microsoft.graph.accessPackageAnswerString');
 
 $answersAccessPackageAnswer2->setValue('Need access to marketing campaign material');
 
 $answersAccessPackageAnswer2AnsweredQuestion = new AccessPackageTextInputQuestion();
-$answersAccessPackageAnswer2AnsweredQuestion->set@odatatype('#microsoft.graph.accessPackageTextInputQuestion');
+$answersAccessPackageAnswer2AnsweredQuestion->setOdataType('#microsoft.graph.accessPackageTextInputQuestion');
 
 $answersAccessPackageAnswer2AnsweredQuestion->setId('AA615EE9-D9D8-4C03-BE91-BEE37106DEDA');
 

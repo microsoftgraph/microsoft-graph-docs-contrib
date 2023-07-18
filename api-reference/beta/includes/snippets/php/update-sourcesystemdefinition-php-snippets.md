@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SourceSystemDefinition();
 $requestBody->setVendor('LMS Vendor');
 
 
 
-$result = $graphServiceClient->external()->industryData()->sourceSystems()->bySourceSystemId('sourceSystemDefinition-id')->patch($requestBody);
+$result = $graphServiceClient->external()->industryData()->sourceSystems()->bySourceSystemDefinitionId('sourceSystemDefinition-id')->patch($requestBody);
 
 
 ```

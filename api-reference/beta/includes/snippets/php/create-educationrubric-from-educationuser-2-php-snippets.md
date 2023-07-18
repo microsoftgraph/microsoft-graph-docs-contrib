@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationRubric();
 $requestBody->setDisplayName('Example Points Rubric');
@@ -30,7 +30,7 @@ $levelsRubricLevel1Description->setContentType(new BodyType('text'));
 
 $levelsRubricLevel1->setDescription($levelsRubricLevel1Description);
 $levelsRubricLevel1Grading = new EducationAssignmentPointsGradeType();
-$levelsRubricLevel1Grading->set@odatatype('#microsoft.graph.educationAssignmentPointsGradeType');
+$levelsRubricLevel1Grading->setOdataType('#microsoft.graph.educationAssignmentPointsGradeType');
 
 $levelsRubricLevel1Grading->setMaxPoints(2);
 
@@ -49,7 +49,7 @@ $levelsRubricLevel2Description->setContentType(new BodyType('text'));
 
 $levelsRubricLevel2->setDescription($levelsRubricLevel2Description);
 $levelsRubricLevel2Grading = new EducationAssignmentPointsGradeType();
-$levelsRubricLevel2Grading->set@odatatype('#microsoft.graph.educationAssignmentPointsGradeType');
+$levelsRubricLevel2Grading->setOdataType('#microsoft.graph.educationAssignmentPointsGradeType');
 
 $levelsRubricLevel2Grading->setMaxPoints(1);
 
@@ -134,7 +134,7 @@ $requestBody->setQualities($qualitiesArray);
 
 
 $grading = new EducationAssignmentPointsGradeType();
-$grading->set@odatatype('#microsoft.graph.educationAssignmentPointsGradeType');
+$grading->setOdataType('#microsoft.graph.educationAssignmentPointsGradeType');
 
 
 $requestBody->setGrading($grading);

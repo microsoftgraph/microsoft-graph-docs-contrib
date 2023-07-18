@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 query_params = UsersRequestBuilder.UsersRequestBuilderGetQueryParameters(
-		filter = "endsWith(mail,'@outlook.com')",
+		filter = "endsWith(userPrincipalName,'",
 )
 
 request_configuration = UsersRequestBuilder.UsersRequestBuilderGetRequestConfiguration(

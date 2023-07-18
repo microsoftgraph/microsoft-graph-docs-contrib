@@ -14,7 +14,7 @@ request_body.completedDateTime=null
 
 request_body.CompletionPercentage = 30
 
-request_body.external_course_activity_id = '12a2228a-e020-11ec-9d64-0242ac120002'
+request_body.externalcourse_activity_id = '12a2228a-e020-11ec-9d64-0242ac120002'
 
 request_body.learning_content_id = '57baf9dc-e020-11ec-9d64-0242ac120002'
 

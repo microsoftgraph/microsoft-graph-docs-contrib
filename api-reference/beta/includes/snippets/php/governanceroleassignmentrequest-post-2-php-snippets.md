@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new GovernanceRoleAssignmentRequest();
 $requestBody->setRoleDefinitionId('8b4d1d51-08e9-4254-b0a6-b16177aae376');
@@ -25,7 +25,7 @@ $requestBody->setReason('Activate the owner role');
 $schedule = new GovernanceSchedule();
 $schedule->setType('Once');
 
-$schedule->setStartDateTime(new DateTime('2018-05-12T23:28:43.537Z'));
+$schedule->setStartDateTime(new \DateTime('2018-05-12T23:28:43.537Z'));
 
 $schedule->setDuration(new \DateInterval('PT9H'));
 
@@ -35,7 +35,7 @@ $requestBody->setLinkedEligibleRoleAssignmentId('e327f4be-42a0-47a2-8579-0a39b02
 
 
 
-$result = $graphServiceClient->privilegedAccess()->byPrivilegedAccesId('privilegedAccess-id')->roleAssignmentRequests()->post($requestBody);
+$result = $graphServiceClient->privilegedAccess()->byPrivilegedAccessId('privilegedAccess-id')->roleAssignmentRequests()->post($requestBody);
 
 
 ```

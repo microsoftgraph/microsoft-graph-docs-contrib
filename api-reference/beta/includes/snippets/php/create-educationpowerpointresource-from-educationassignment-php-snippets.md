@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationAssignmentResource();
 $requestBody->setDistributeForStudentWork(false);
 
 $resource = new EducationPowerPointResource();
-$resource->set@odatatype('microsoft.graph.educationPowerPointResource');
+$resource->setOdataType('microsoft.graph.educationPowerPointResource');
 
 $resource->setDisplayName('state diagram.pptx');
 
@@ -23,7 +23,7 @@ $resource->setFileUrl('https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXM
 $requestBody->setResource($resource);
 
 
-$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->byAssignmentId('educationAssignment-id')->resources()->post($requestBody);
+$result = $graphServiceClient->education()->classes()->byEducationClassId('educationClass-id')->assignments()->byEducationAssignmentId('educationAssignment-id')->resources()->post($requestBody);
 
 
 ```

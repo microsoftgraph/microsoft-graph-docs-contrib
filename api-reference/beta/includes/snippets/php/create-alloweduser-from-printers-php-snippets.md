@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ReferenceCreate();
-$requestBody->set@odataid('https://graph.microsoft.com/beta/users/{id}');
+$requestBody->setOdataId('https://graph.microsoft.com/beta/users/{id}');
 
 
 
-$graphServiceClient->print()->shares()->byShareId('printerShare-id')->allowedUsers()->ref()->post($requestBody);
+$graphServiceClient->print()->shares()->byPrinterShareId('printerShare-id')->allowedUsers()->ref()->post($requestBody);
 
 
 ```

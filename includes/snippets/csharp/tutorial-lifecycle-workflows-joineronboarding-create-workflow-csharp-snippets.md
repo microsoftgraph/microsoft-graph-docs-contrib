@@ -29,7 +29,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 			OffsetInDays = -2,
 		},
 	},
-	Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.Task>
+	Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject>
 	{
 		new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
 		{

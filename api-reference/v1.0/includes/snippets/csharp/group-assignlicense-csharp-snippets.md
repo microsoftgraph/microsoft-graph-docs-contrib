@@ -30,7 +30,7 @@ var requestBody = new Microsoft.Graph.Groups.Item.AssignLicense.AssignLicensePos
 			SkuId = Guid.Parse("c7df2760-2c81-4ef7-b578-5b5392b571df"),
 		},
 	},
-	RemoveLicenses = new List<String>
+	RemoveLicenses = new List<string>
 	{
 	},
 };

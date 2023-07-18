@@ -16,8 +16,6 @@ request_body.attacktechnique(SimulationAttackTechnique.CredentialHarvesting('sim
 
 request_body.status(SimulationStatus.Scheduled('simulationstatus.scheduled'))
 
-request_body.DurationInDays = 3
-
 included_account_target = AddressBookAccountTargetContent()
 included_account_target.@odata_type = '#microsoft.graph.addressBookAccountTargetContent'
 

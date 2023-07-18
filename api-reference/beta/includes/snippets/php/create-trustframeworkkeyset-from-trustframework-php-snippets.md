@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TrustFrameworkKeySet();
 $requestBody->setId('keyset1');
@@ -15,7 +15,7 @@ $requestBody->setId('keyset1');
 $keysTrustFrameworkKey1 = new TrustFrameworkKey();
 $keysTrustFrameworkKey1->setK('k-value');
 
-$keysTrustFrameworkKey1->setX5c(['x5c-value', ]);
+$keysTrustFrameworkKey1->setX5c(['x5c-value', 	]);
 
 $keysTrustFrameworkKey1->setX5t('x5t-value');
 

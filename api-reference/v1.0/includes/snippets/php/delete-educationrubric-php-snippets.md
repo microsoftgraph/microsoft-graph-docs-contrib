@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->education()->me()->rubrics()->byRubricId('educationRubric-id')->delete();
+$graphServiceClient->education()->me()->rubrics()->byEducationRubricId('educationRubric-id')->delete();
 
 
 ```

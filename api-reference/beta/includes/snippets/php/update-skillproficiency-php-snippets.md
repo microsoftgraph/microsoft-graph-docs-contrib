@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SkillProficiency();
-$requestBody->setCategories(['Professional', ]);
+$requestBody->setCategories(['Professional', 	]);
 
-$requestBody->setProficiency(new SkillProficiencyLevel('advancedprofessional'));
+$requestBody->setProficiency(new SkillProficiencyLevel('advancedProfessional'));
 
 
 
-$result = $graphServiceClient->me()->profile()->skills()->bySkillId('skillProficiency-id')->patch($requestBody);
+$result = $graphServiceClient->me()->profile()->skills()->bySkillProficiencyId('skillProficiency-id')->patch($requestBody);
 
 
 ```

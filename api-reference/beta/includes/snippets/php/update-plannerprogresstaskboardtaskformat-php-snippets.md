@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerProgressTaskBoardTaskFormat();
 $requestBody->setOrderHint('A6673H Ejkl!');
@@ -21,7 +21,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->planner()->tasks()->byTaskId('plannerTask-id')->progressTaskBoardFormat()->patch($requestBody, $requestConfiguration);
+$result = $graphServiceClient->planner()->tasks()->byPlannerTaskId('plannerTask-id')->progressTaskBoardFormat()->patch($requestBody, $requestConfiguration);
 
 
 ```

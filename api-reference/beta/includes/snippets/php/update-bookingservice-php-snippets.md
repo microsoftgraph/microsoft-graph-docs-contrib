@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BookingService();
-$requestBody->set@odatatype('#microsoft.graph.bookingService');
+$requestBody->setOdataType('#microsoft.graph.bookingService');
 
 $requestBody->setDefaultDuration(new \DateInterval('PT30M'));
 
 
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->services()->byServiceId('bookingService-id')->patch($requestBody);
+$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->services()->byBookingServiceId('bookingService-id')->patch($requestBody);
 
 
 ```

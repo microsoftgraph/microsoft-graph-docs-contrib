@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Workflow();
 $requestBody->setCategory(new LifecycleWorkflowCategory('leaver'));
@@ -21,7 +21,7 @@ $requestBody->setIsEnabled(true);
 $requestBody->setIsSchedulingEnabled(false);
 
 $executionConditions = new OnDemandExecutionOnly();
-$executionConditions->set@odatatype('#microsoft.graph.identityGovernance.onDemandExecutionOnly');
+$executionConditions->setOdataType('#microsoft.graph.identityGovernance.onDemandExecutionOnly');
 
 
 $requestBody->setExecutionConditions($executionConditions);
@@ -38,7 +38,7 @@ $tasksTask1->setIsEnabled(true);
 
 $tasksTask1->setTaskDefinitionId('b3a31406-2a15-4c9a-b25b-a658fa5f07fc');
 
-$tasksTask1->setArguments([]);
+$tasksTask1->setArguments([	]);
 
 
 $tasksArray []= $tasksTask1;
@@ -55,7 +55,7 @@ $tasksTask2->setIsEnabled(true);
 
 $tasksTask2->setTaskDefinitionId('81f7b200-2816-4b3b-8c5d-dc556f07b024');
 
-$tasksTask2->setArguments([]);
+$tasksTask2->setArguments([	]);
 
 
 $tasksArray []= $tasksTask2;
@@ -72,7 +72,7 @@ $tasksTask3->setIsEnabled(true);
 
 $tasksTask3->setTaskDefinitionId('8d18588d-9ad3-4c0f-99d0-ec215f0e3dff');
 
-$tasksTask3->setArguments([]);
+$tasksTask3->setArguments([	]);
 
 
 $tasksArray []= $tasksTask3;

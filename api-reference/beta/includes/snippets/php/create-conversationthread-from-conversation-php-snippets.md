@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ConversationThread();
 $requestBody->setTopic('Take your wellness days and rest');
@@ -27,7 +27,7 @@ $requestBody->setPosts($postsArray);
 
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->conversationsById('conversation-id')->threads()->post($requestBody);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->conversations()->byConversationId('conversation-id')->threads()->post($requestBody);
 
 
 ```

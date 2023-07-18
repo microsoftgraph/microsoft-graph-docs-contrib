@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ReplyPostRequestBody();
 $post = new Post();
@@ -19,17 +19,17 @@ $postBody->setContent('I attached an event.');
 
 $post->setBody($postBody);
 $attachmentsAttachment1 = new ItemAttachment();
-$attachmentsAttachment1->set@odatatype('#microsoft.graph.itemAttachment');
+$attachmentsAttachment1->setOdataType('#microsoft.graph.itemAttachment');
 
 $attachmentsAttachment1->setName('Holiday event');
 
 $attachmentsAttachment1Item = new Event();
-$attachmentsAttachment1Item->set@odatatype('microsoft.graph.event');
+$attachmentsAttachment1Item->setOdataType('microsoft.graph.event');
 
 $attachmentsAttachment1Item->setSubject('Discuss gifts for children');
 
 $attachmentsAttachment1ItemBody = new ItemBody();
-$attachmentsAttachment1ItemBody->setContentType(new BodyType('html'));
+$attachmentsAttachment1ItemBody->setContentType(new BodyType('hTML'));
 
 $attachmentsAttachment1ItemBody->setContent('Let\'s look for funding!');
 
@@ -60,7 +60,7 @@ $post->setAttachments($attachmentsArray);
 $requestBody->setPost($post);
 
 
-$graphServiceClient->groups()->byGroupId('group-id')->threads()->byThreadId('conversationThread-id')->reply()->post($requestBody);
+$graphServiceClient->groups()->byGroupId('group-id')->threads()->byConversationThreadId('conversationThread-id')->reply()->post($requestBody);
 
 
 ```

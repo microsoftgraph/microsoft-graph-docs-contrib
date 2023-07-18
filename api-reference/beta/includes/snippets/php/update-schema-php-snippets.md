@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Schema();
 $requestBody->setBaseType('microsoft.graph.externalItem');
@@ -21,8 +21,7 @@ $propertiesProperty1->setIsSearchable(true);
 
 $propertiesProperty1->setIsRetrievable(true);
 
-$propertiesProperty1->setLabels([$propertiesProperty1->setLabel(new Label('title'));
-]);
+$propertiesProperty1->setLabels([new Label('title'),	]);
 
 
 $propertiesArray []= $propertiesProperty1;
@@ -53,7 +52,7 @@ $requestBody->setProperties($propertiesArray);
 
 
 
-$result = $graphServiceClient->external()->connections()->byConnectionId('externalConnection-id')->schema()->patch($requestBody);
+$result = $graphServiceClient->external()->connections()->byExternalConnectionId('externalConnection-id')->schema()->patch($requestBody);
 
 
 ```

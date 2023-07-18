@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerPlanConfigurationLocalization();
-$requestBody->set@odatatype('#microsoft.graph.plannerPlanConfigurationLocalization');
+$requestBody->setOdataType('#microsoft.graph.plannerPlanConfigurationLocalization');
 
 $requestBody->setPlanTitle('Order Tracking');
 
@@ -47,7 +47,7 @@ $requestBody->setBuckets($bucketsArray);
 
 
 
-$result = $graphServiceClient->solutions()->businessScenarios()->byBusinessScenarioId('businessScenario-id')->planner()->planConfiguration()->localizations()->byLocalizationId('plannerPlanConfigurationLocalization-id')->patch($requestBody);
+$result = $graphServiceClient->solutions()->businessScenarios()->byBusinessScenarioId('businessScenario-id')->planner()->planConfiguration()->localizations()->byPlannerPlanConfigurationLocalizationId('plannerPlanConfigurationLocalization-id')->patch($requestBody);
 
 
 ```

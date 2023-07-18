@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ReferenceCreate();
-$requestBody->set@odataid('https://graph.microsoft.com/v1.0/education/classes/11006');
+$requestBody->setOdataId('https://graph.microsoft.com/v1.0/education/classes/11006');
 
 
 
-$graphServiceClient->education()->schools()->bySchoolId('educationSchool-id')->classes()->ref()->post($requestBody);
+$graphServiceClient->education()->schools()->byEducationSchoolId('educationSchool-id')->classes()->ref()->post($requestBody);
 
 
 ```

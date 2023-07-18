@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AddActivitiesPostRequestBody();
 $activitiesExternalActivity1 = new ExternalActivity();
-$activitiesExternalActivity1->set@odatatype('#microsoft.graph.externalConnectors.externalActivity');
+$activitiesExternalActivity1->setOdataType('#microsoft.graph.externalConnectors.externalActivity');
 
 $activitiesExternalActivity1->setType(new ExternalActivityType('created'));
 
-$activitiesExternalActivity1->setStartDateTime(new DateTime('2021-04-06T18:04:31.033Z'));
+$activitiesExternalActivity1->setStartDateTime(new \DateTime('2021-04-06T18:04:31.033Z'));
 
 $activitiesExternalActivity1PerformedBy = new Identity();
 $activitiesExternalActivity1PerformedBy->setType(new IdentityType('user'));
@@ -31,7 +31,7 @@ $requestBody->setActivities($activitiesArray);
 
 
 
-$result = $graphServiceClient->external()->connections()->byConnectionId('externalConnection-id')->items()->byItemId('externalItem-id')->microsoftGraphExternalConnectorsAddActivities()->post($requestBody);
+$result = $graphServiceClient->external()->connections()->byExternalConnectionId('externalConnection-id')->items()->byExternalItemId('externalItem-id')->microsoftGraphExternalConnectorsAddActivities()->post($requestBody);
 
 
 ```

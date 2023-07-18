@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ExternalUsersSelfServiceSignUpEventsFlow();
-$requestBody->set@odatatype('#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow');
+$requestBody->setOdataType('#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow');
 
 $requestBody->setDisplayName('Woodgrove User Flow 2');
 
 $onAuthenticationMethodLoadStart = new OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp();
-$onAuthenticationMethodLoadStart->set@odatatype('#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp');
+$onAuthenticationMethodLoadStart->setOdataType('#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp');
 
 $identityProvidersIdentityProviderBase1 = new IdentityProviderBase();
 $identityProvidersIdentityProviderBase1->setId('EmailPassword-OAUTH');
@@ -38,14 +38,14 @@ $onAuthenticationMethodLoadStart->setIdentityProviders($identityProvidersArray);
 
 $requestBody->setOnAuthenticationMethodLoadStart($onAuthenticationMethodLoadStart);
 $onInteractiveAuthFlowStart = new OnInteractiveAuthFlowStartExternalUsersSelfServiceSignUp();
-$onInteractiveAuthFlowStart->set@odatatype('#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp');
+$onInteractiveAuthFlowStart->setOdataType('#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp');
 
 $onInteractiveAuthFlowStart->setIsSignUpAllowed(true);
 
 
 $requestBody->setOnInteractiveAuthFlowStart($onInteractiveAuthFlowStart);
 $onAttributeCollection = new OnAttributeCollectionExternalUsersSelfServiceSignUp();
-$onAttributeCollection->set@odatatype('#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp');
+$onAttributeCollection->setOdataType('#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp');
 
 $attributesIdentityUserFlowAttribute1 = new IdentityUserFlowAttribute();
 $attributesIdentityUserFlowAttribute1->setId('email');
@@ -54,7 +54,7 @@ $attributesIdentityUserFlowAttribute1->setDisplayName('Email Address');
 
 $attributesIdentityUserFlowAttribute1->setDescription('Email address of the user');
 
-$attributesIdentityUserFlowAttribute1->setUserFlowAttributeType(new IdentityUserFlowAttributeType('builtin'));
+$attributesIdentityUserFlowAttribute1->setUserFlowAttributeType(new IdentityUserFlowAttributeType('builtIn'));
 
 $attributesIdentityUserFlowAttribute1->setDataType(new IdentityUserFlowAttributeDataType('string'));
 
@@ -67,7 +67,7 @@ $attributesIdentityUserFlowAttribute2->setDisplayName('Display Name');
 
 $attributesIdentityUserFlowAttribute2->setDescription('Display Name of the User.');
 
-$attributesIdentityUserFlowAttribute2->setUserFlowAttributeType(new IdentityUserFlowAttributeType('builtin'));
+$attributesIdentityUserFlowAttribute2->setUserFlowAttributeType(new IdentityUserFlowAttributeType('builtIn'));
 
 $attributesIdentityUserFlowAttribute2->setDataType(new IdentityUserFlowAttributeDataType('string'));
 

@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AdminDynamics();
-$requestBody->set@odatatype('#microsoft.graph.adminDynamics');
+$requestBody->setOdataType('#microsoft.graph.adminDynamics');
 
 $customerVoice = new CustomerVoiceSettings();
-$customerVoice->set@odatatype('microsoft.graph.customerVoiceSettings');
+$customerVoice->setOdataType('microsoft.graph.customerVoiceSettings');
 
 $customerVoice->setIsRestrictedSurveyAccessEnabled(false);
 

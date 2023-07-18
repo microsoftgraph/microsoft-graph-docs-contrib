@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CreateNewVersionPostRequestBody();
 $workflow = new Workflow();
@@ -22,19 +22,19 @@ $workflow->setIsEnabled(true);
 $workflow->setIsSchedulingEnabled(false);
 
 $workflowExecutionConditions = new TriggerAndScopeBasedConditions();
-$workflowExecutionConditions->set@odatatype('#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
+$workflowExecutionConditions->setOdataType('#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
 
 $workflowExecutionConditionsScope = new RuleBasedSubjectSet();
-$workflowExecutionConditionsScope->set@odatatype('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
+$workflowExecutionConditionsScope->setOdataType('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
 
 $workflowExecutionConditionsScope->setRule('(department eq \'Marketing\')');
 
 
 $workflowExecutionConditions->setScope($workflowExecutionConditionsScope);
 $workflowExecutionConditionsTrigger = new TimeBasedAttributeTrigger();
-$workflowExecutionConditionsTrigger->set@odatatype('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
+$workflowExecutionConditionsTrigger->setOdataType('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
 
-$workflowExecutionConditionsTrigger->setTimeBasedAttribute(new WorkflowTriggerTimeBasedAttribute('employeehiredate'));
+$workflowExecutionConditionsTrigger->setTimeBasedAttribute(new WorkflowTriggerTimeBasedAttribute('employeeHireDate'));
 
 $workflowExecutionConditionsTrigger->setOffsetInDays(1);
 
@@ -53,7 +53,7 @@ $tasksTask1->setIsEnabled(true);
 
 $tasksTask1->setTaskDefinitionId('6fc52c9d-398b-4305-9763-15f42c1676fc');
 
-$tasksTask1->setArguments([]);
+$tasksTask1->setArguments([	]);
 
 
 $tasksArray []= $tasksTask1;
@@ -68,7 +68,7 @@ $tasksTask2->setIsEnabled(true);
 
 $tasksTask2->setTaskDefinitionId('70b29d51-b59a-4773-9280-8841dfd3f2ea');
 
-$tasksTask2->setArguments([]);
+$tasksTask2->setArguments([	]);
 
 
 $tasksArray []= $tasksTask2;

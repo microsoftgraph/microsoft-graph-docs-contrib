@@ -29,7 +29,7 @@ due_date_time.time_zone = 'UTC'
 
 
 request_body.due_date_time = due_date_time
-request_body.external_course_activity_id = '12a2228a-e020-11ec-9d64-0242ac120002'
+request_body.externalcourse_activity_id = '12a2228a-e020-11ec-9d64-0242ac120002'
 
 request_body.learning_content_id = '57baf9dc-e020-11ec-9d64-0242ac120002'
 

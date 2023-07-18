@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ConnectedOrganization();
 $requestBody->setDisplayName('Connected organization name');
@@ -15,7 +15,7 @@ $requestBody->setDisplayName('Connected organization name');
 $requestBody->setDescription('Connected organization description');
 
 $identitySourcesIdentitySource1 = new DomainIdentitySource();
-$identitySourcesIdentitySource1->set@odatatype('#microsoft.graph.domainIdentitySource');
+$identitySourcesIdentitySource1->setOdataType('#microsoft.graph.domainIdentitySource');
 
 $identitySourcesIdentitySource1->setDomainName('example.com');
 

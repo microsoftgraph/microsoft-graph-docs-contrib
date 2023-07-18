@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BookingService();
-$requestBody->set@odatatype('#microsoft.graph.bookingService');
+$requestBody->setOdataType('#microsoft.graph.bookingService');
 
 $requestBody->setDefaultDuration(new \DateInterval('PT1H30M'));
 
 $defaultLocation = new Location();
-$defaultLocation->set@odatatype('#microsoft.graph.location');
+$defaultLocation->setOdataType('#microsoft.graph.location');
 
 $defaultLocationAddress = new PhysicalAddress();
-$defaultLocationAddress->set@odatatype('#microsoft.graph.physicalAddress');
+$defaultLocationAddress->setOdataType('#microsoft.graph.physicalAddress');
 
 $defaultLocationAddress->setCity('Buffalo');
 
@@ -65,16 +65,16 @@ $defaultLocation->setAdditionalData($additionalData);
 $requestBody->setDefaultLocation($defaultLocation);
 $requestBody->setDefaultPrice(10);
 
-$requestBody->setDefaultPriceType(new BookingPriceType('fixedprice'));
+$requestBody->setDefaultPriceType(new BookingPriceType('fixedPrice'));
 
 $defaultRemindersBookingReminder1 = new BookingReminder();
-$defaultRemindersBookingReminder1->set@odatatype('#microsoft.graph.bookingReminder');
+$defaultRemindersBookingReminder1->setOdataType('#microsoft.graph.bookingReminder');
 
 $defaultRemindersBookingReminder1->setMessage('Please be reminded that this service is tomorrow.');
 
 $defaultRemindersBookingReminder1->setOffset(new \DateInterval('P1D'));
 
-$defaultRemindersBookingReminder1->setRecipients(new BookingReminderRecipients('allattendees'));
+$defaultRemindersBookingReminder1->setRecipients(new BookingReminderRecipients('allAttendees'));
 
 $additionalData = [
 		'recipients@odata.type' => '#microsoft.graph.bookingReminderRecipients', 
@@ -106,7 +106,7 @@ $requestBody->setPostBuffer(new \DateInterval('PT10M'));
 $requestBody->setPreBuffer(new \DateInterval('PT5M'));
 
 $schedulingPolicy = new BookingSchedulingPolicy();
-$schedulingPolicy->set@odatatype('#microsoft.graph.bookingSchedulingPolicy');
+$schedulingPolicy->setOdataType('#microsoft.graph.bookingSchedulingPolicy');
 
 $schedulingPolicy->setAllowStaffSelection(true);
 
@@ -125,16 +125,16 @@ $requestBody->setStaffMemberIds(['d90d1e8c-5cfe-48cf-a2d5-966267375b6a', '2f5f87
 $requestBody->setIsAnonymousJoinEnabled(false);
 
 $additionalData = [
-'defaultPriceType@odata.type' => '#microsoft.graph.bookingPriceType', 
-'defaultReminders@odata.type' => '#Collection(microsoft.graph.bookingReminder)', 
-'staffMemberIds@odata.type' => '#Collection(String)', 
+	'defaultPriceType@odata.type' => '#microsoft.graph.bookingPriceType', 
+	'defaultReminders@odata.type' => '#Collection(microsoft.graph.bookingReminder)', 
+	'staffMemberIds@odata.type' => '#Collection(String)', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->services()->post($requestBody);
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->services()->post($requestBody);
 
 
 ```

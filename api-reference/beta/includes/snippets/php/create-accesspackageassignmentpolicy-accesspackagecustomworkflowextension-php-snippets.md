@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentPolicy();
 $requestBody->setDisplayName('extension-policy');
@@ -25,10 +25,10 @@ $requestorSettings->setAcceptRequests(true);
 
 $requestorSettings->setScopeType('AllExistingDirectorySubjects');
 
-$requestorSettings->setAllowedRequestors([]);
+$requestorSettings->setAllowedRequestors([	]);
 
 $additionalData = [
-	'isOnBehalfAllowed' => false,
+		'isOnBehalfAllowed' => false,
 ];
 $requestorSettings->setAdditionalData($additionalData);
 
@@ -37,10 +37,10 @@ $requestorSettings->setAdditionalData($additionalData);
 $requestBody->setRequestorSettings($requestorSettings);
 $requestBody->setAccessReviewSettings(null);
 
-$requestBody->setQuestions([]);
+$requestBody->setQuestions([	]);
 
 $customExtensionStageSettingsCustomExtensionStageSetting1 = new CustomExtensionStageSetting();
-$customExtensionStageSettingsCustomExtensionStageSetting1->setStage(new AccessPackageCustomExtensionStage('assignmentrequestcreated'));
+$customExtensionStageSettingsCustomExtensionStageSetting1->setStage(new AccessPackageCustomExtensionStage('assignmentRequestCreated'));
 
 $customExtensionStageSettingsCustomExtensionStageSetting1CustomExtension = new CustomCalloutExtension();
 $customExtensionStageSettingsCustomExtensionStageSetting1CustomExtension->setId('219f57b6-7983-45a1-be01-2c228b7a43f8');
@@ -50,7 +50,7 @@ $customExtensionStageSettingsCustomExtensionStageSetting1->setCustomExtension($c
 
 $customExtensionStageSettingsArray []= $customExtensionStageSettingsCustomExtensionStageSetting1;
 $customExtensionStageSettingsCustomExtensionStageSetting2 = new CustomExtensionStageSetting();
-$customExtensionStageSettingsCustomExtensionStageSetting2->setStage(new AccessPackageCustomExtensionStage('assignmentrequestgranted'));
+$customExtensionStageSettingsCustomExtensionStageSetting2->setStage(new AccessPackageCustomExtensionStage('assignmentRequestGranted'));
 
 $customExtensionStageSettingsCustomExtensionStageSetting2CustomExtension = new CustomCalloutExtension();
 $customExtensionStageSettingsCustomExtensionStageSetting2CustomExtension->setId('219f57b6-7983-45a1-be01-2c228b7a43f8');
@@ -63,13 +63,10 @@ $requestBody->setCustomExtensionStageSettings($customExtensionStageSettingsArray
 
 
 $additionalData = [
-'expiration' => $requestBody = new Expiration();
-$requestBody->setType('afterDuration');
-
-$requestBody->setDuration('P365D');
-
-
-$requestBody->setExpiration($expiration);
+	'expiration' => 	[
+			'type' => 'afterDuration', 
+			'duration' => 'P365D', 
+	],
 
 ];
 $requestBody->setAdditionalData($additionalData);

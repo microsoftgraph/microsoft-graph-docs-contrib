@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CrossTenantAccessPolicyConfigurationPartner();
 $inboundTrust = new CrossTenantAccessPolicyInboundTrust();
@@ -21,7 +21,7 @@ $inboundTrust->setIsHybridAzureADJoinedDeviceAccepted(true);
 $requestBody->setInboundTrust($inboundTrust);
 
 
-$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byPartnerId('crossTenantAccessPolicyConfigurationPartner-tenantId')->patch($requestBody);
+$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byCrossTenantAccessPolicyConfigurationPartnerId('crossTenantAccessPolicyConfigurationPartner-tenantId')->patch($requestBody);
 
 
 ```

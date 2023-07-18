@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ExternalMeetingRegistrant();
-$requestBody->set@odatatype('#microsoft.graph.externalMeetingRegistrant');
+$requestBody->setOdataType('#microsoft.graph.externalMeetingRegistrant');
 
 $requestBody->setId('30494ab7-7338-4592-bfec-a4333be2a0a6');
 

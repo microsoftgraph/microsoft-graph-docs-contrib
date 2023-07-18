@@ -13,7 +13,7 @@ var requestBody = new BookingCustomQuestion
 	OdataType = "#microsoft.graph.bookingCustomQuestion",
 	DisplayName = "What is your age?",
 	AnswerInputType = AnswerInputType.Text,
-	AnswerOptions = new List<String>
+	AnswerOptions = new List<string>
 	{
 	},
 };

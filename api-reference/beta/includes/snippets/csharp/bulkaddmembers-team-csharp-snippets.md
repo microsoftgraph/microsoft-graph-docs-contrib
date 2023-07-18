@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Members.Add.AddPostRequest
 		new AadUserConversationMember
 		{
 			OdataType = "microsoft.graph.aadUserConversationMember",
-			Roles = new List<String>
+			Roles = new List<string>
 			{
 			},
 			AdditionalData = new Dictionary<string, object>

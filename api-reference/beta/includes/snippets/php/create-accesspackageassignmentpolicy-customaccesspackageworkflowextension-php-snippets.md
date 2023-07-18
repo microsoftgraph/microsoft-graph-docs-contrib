@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentPolicy();
 $requestBody->setDisplayName('extension-policy');
@@ -25,10 +25,10 @@ $requestorSettings->setAcceptRequests(true);
 
 $requestorSettings->setScopeType('AllExistingDirectorySubjects');
 
-$requestorSettings->setAllowedRequestors([]);
+$requestorSettings->setAllowedRequestors([	]);
 
 $additionalData = [
-	'isOnBehalfAllowed' => false,
+		'isOnBehalfAllowed' => false,
 ];
 $requestorSettings->setAdditionalData($additionalData);
 
@@ -37,10 +37,10 @@ $requestorSettings->setAdditionalData($additionalData);
 $requestBody->setRequestorSettings($requestorSettings);
 $requestBody->setAccessReviewSettings(null);
 
-$requestBody->setQuestions([]);
+$requestBody->setQuestions([	]);
 
 $customExtensionHandlersCustomExtensionHandler1 = new CustomExtensionHandler();
-$customExtensionHandlersCustomExtensionHandler1->setStage(new AccessPackageCustomExtensionStage('assignmentrequestcreated'));
+$customExtensionHandlersCustomExtensionHandler1->setStage(new AccessPackageCustomExtensionStage('assignmentRequestCreated'));
 
 $customExtensionHandlersCustomExtensionHandler1CustomExtension = new CustomAccessPackageWorkflowExtension();
 $customExtensionHandlersCustomExtensionHandler1CustomExtension->setId('219f57b6-7983-45a1-be01-2c228b7a43f8');
@@ -50,7 +50,7 @@ $customExtensionHandlersCustomExtensionHandler1->setCustomExtension($customExten
 
 $customExtensionHandlersArray []= $customExtensionHandlersCustomExtensionHandler1;
 $customExtensionHandlersCustomExtensionHandler2 = new CustomExtensionHandler();
-$customExtensionHandlersCustomExtensionHandler2->setStage(new AccessPackageCustomExtensionStage('assignmentrequestgranted'));
+$customExtensionHandlersCustomExtensionHandler2->setStage(new AccessPackageCustomExtensionStage('assignmentRequestGranted'));
 
 $customExtensionHandlersCustomExtensionHandler2CustomExtension = new CustomAccessPackageWorkflowExtension();
 $customExtensionHandlersCustomExtensionHandler2CustomExtension->setId('219f57b6-7983-45a1-be01-2c228b7a43f8');
@@ -63,13 +63,10 @@ $requestBody->setCustomExtensionHandlers($customExtensionHandlersArray);
 
 
 $additionalData = [
-'expiration' => $requestBody = new Expiration();
-$requestBody->setType('afterDuration');
-
-$requestBody->setDuration('P365D');
-
-
-$requestBody->setExpiration($expiration);
+	'expiration' => 	[
+			'type' => 'afterDuration', 
+			'duration' => 'P365D', 
+	],
 
 ];
 $requestBody->setAdditionalData($additionalData);
