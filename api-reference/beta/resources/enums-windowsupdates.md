@@ -48,6 +48,7 @@ Namespace: microsoft.graph.windowsUpdates
 |Member|
 |:---|
 |alertError|
+|offerFallback|
 |pauseDeployment|
 |unknownFutureValue|
 
@@ -55,6 +56,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 |Member|
 |:---|
+|ineligible|
 |rollback|
 |unknownFutureValue|
 
