@@ -30,9 +30,9 @@ Represents a Kubernetes service port object that is reported as part of a [micro
 
 | Member             | Description                                       |
 |:-------------------|:--------------------------------------------------|
-| UDP                | User Datagram Protocol.                           |
-| TCP                | Transmission Control Protocol.                    |
-| SCTP               | Stream Control Transmission Protocol.             |
+| udp                | User Datagram Protocol.                           |
+| tcp                | Transmission Control Protocol.                    |
+| sctp               | Stream Control Transmission Protocol.             |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 
