@@ -755,8 +755,6 @@ items:
             href: teams-embed-within-own-app.md
           - name: Payment models and licensing requirements
             href: teams-licenses.md
-          - name: Protected APIs
-            href: teams-protected-apis.md
           - name: Implementation differences in national clouds
             href: teamwork-national-cloud-differences.md
       - name: To-do tasks
@@ -998,6 +996,18 @@ items:
                 href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
                 href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+          - name: Use the CLI (preview)
+            items:
+              - name: CLI overview
+                href: cli/overview.md
+              - name: Install the CLI
+                href: cli/installation.md
+              - name: Get started
+                href: cli/get-started.md
+              - name: Navigate the CLI
+                href: cli/navigating.md
+              - name: App-only authentication
+                href: cli/app-only.md
       - name: Use the toolkit
         items:
           - name: Overview
@@ -1112,7 +1122,7 @@ items:
             href: best-practices-concept.md
             displayName: Microsoft Graph, Best practices for working with Microsoft Graph
           - name: Known issues
-            href: known-issues.md
+            href: https://developer.microsoft.com/graph/known-issues
             displayName: Microsoft Graph, Known issues with Microsoft Graph
           - name: API changelog
             href: changelog.md

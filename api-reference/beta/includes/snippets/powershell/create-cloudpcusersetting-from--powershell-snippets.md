@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Administration
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcUserSetting"
@@ -17,6 +17,6 @@ $params = @{
 	}
 }
 
-New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter $params
+New-MgBetaDeviceManagementVirtualEndpointUserSetting -BodyParameter $params
 
 ```
