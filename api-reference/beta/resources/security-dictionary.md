@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # dictionary resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,13 +29,13 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.dictionary",
+  "@odata.type": "microsoft.graph.security.dictionary",
   "openType": true
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.dictionary"
+  "@odata.type": "#microsoft.graph.security.dictionary"
 }
 ```
 
