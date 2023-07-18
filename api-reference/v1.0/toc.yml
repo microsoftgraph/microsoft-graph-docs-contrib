@@ -308,7 +308,7 @@ items:
         href: /graph/best-practices-concept?context=graph/api/1.0
         displayName: Microsoft Graph, Best practices for working with Microsoft Graph
       - name: Known issues
-        href: /graph/known-issues?context=graph/api/1.0
+        href: https://developer.microsoft.com/graph/known-issues
         displayName: Microsoft Graph, Known issues with Microsoft Graph
       - name: API changelog
         href: https://developer.microsoft.com/graph/changelog
@@ -4862,7 +4862,7 @@ items:
                 - name: Update
                   href: api/intune-tem-devicemanagement-update.md
 
-          
+
 
           - name: Service health and communications
             items:
@@ -6085,18 +6085,20 @@ items:
                         href: api/user-list-agreementacceptances.md
                       - name: List acceptance status
                         href: api/agreement-list-acceptances.md
-                  - name: Agreement files
+                  - name: Agreement file
                     items:
-                      - name: Default agreement file
-                        href: resources/agreementfile.md
-                      - name: Localized agreement files
-                        href: resources/agreementfilelocalization.md
-                      - name: Get default file
-                        href: api/agreementfile-get.md
-                      - name: Create localized files
-                        href: api/agreement-post-files.md
-                      - name: List localized files
-                        href: api/agreement-list-files.md
+                    - name: Default agreement file
+                      href: resources/agreementfile.md
+                    - name: Localized agreement file
+                      href: resources/agreementfilelocalization.md
+                    - name: Get default file
+                      href: api/agreementfile-get.md
+                    - name: Create localized files
+                      href: api/agreement-post-files.md
+                    - name: List files
+                      href: api/agreement-list-files.md
+                    - name: List localized files
+                      href: api/agreementfile-list-localizations.md
           - name: Identity and sign-in
             items:
               - name: Authentication methods
@@ -7318,7 +7320,7 @@ items:
                 href: resources/provisioningobjectsummary.md
                 items:
                   - name: List provisioning
-                    href: api/provisioningobjectsummary-list.md                      
+                    href: api/provisioningobjectsummary-list.md
           - name: Identity and access reports
             items:
               - name: Registration and usage
@@ -7900,8 +7902,8 @@ items:
                     href: api/security-ediscoveryreviewset-get.md
                   - name: Add to review set
                     href: api/security-ediscoveryreviewset-addtoreviewset.md
-                  - name: Export 
-                    href: api/security-ediscoveryreviewset-export.md 
+                  - name: Export
+                    href: api/security-ediscoveryreviewset-export.md
                   - name: Query
                     href: resources/security-ediscoveryreviewsetquery.md
                     items:
@@ -8741,7 +8743,7 @@ items:
                   - name: Learning assignment type
                     href: resources/learningassignment.md
                   - name: Learning self-initiated course type
-                    href: resources/learningselfinitiatedcourse.md 
+                    href: resources/learningselfinitiatedcourse.md
                   - name: List
                     href: api/learningcourseactivity-list.md
                   - name: Create
