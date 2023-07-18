@@ -30,14 +30,14 @@ This entity will contain all available insights with a daily cadence as seen in 
 ## Relationships
 |Property|Type|Description|
 |:---|:---|:---|
-| `userCount`            | `Collection(self.userCount)`                  | Summary of total users over a specified time period                          | Yes                           | No       | Yes      |
-| `summary`              | `Collection(self.insightSummary)`             | Summary of all usage insights for specified time period                      | Yes                           | No       | Yes      |
-| `signUps`              | `Collection(self.userSignUpMetric)`           | Total registrations for specified time period                                | Yes                           | No       | Yes      |
-| `activeUsers`          | `Collection(self.activeUsersMetric)`          | Insight for active users for specified time period                           | Yes                           | No       | Yes      |
-| `activeUsersBreakdown` | `Collection(self.activeUsersBreakdownMetric)` | Insight for the breakdown of users who were active for specified time period | Yes                           | No       | Yes      |
-| `authentications`      | `Collection(self.authenticationsMetric)`      | Insights for authentications for specified time period                       | Yes                           | No       | Yes      |
-| `mfaCompletions`       | `Collection(self.mfaCompletionMetric)`        | Insights for MFA calls for specified time period                             | Yes                           | No       | Yes      |
-| `requests`             | `Collection(self.userRequestsMetric)`         | Insights for all user requests to a tenant for specified time period         | Yes                           | No       | Yes      |
+| `userCount`            | `Collection(self.userCount)`                  | Summary of total users over a specified time period|
+| `summary`              | `Collection(self.insightSummary)`             | Summary of all usage insights for specified time period|
+| `signUps`              | `Collection(self.userSignUpMetric)`           | Total registrations for specified time period|
+| `activeUsers`          | `Collection(self.activeUsersMetric)`          | Insight for active users for specified time period|
+| `activeUsersBreakdown` | `Collection(self.activeUsersBreakdownMetric)` | Insight for the breakdown of users who were active for specified time period|
+| `authentications`      | `Collection(self.authenticationsMetric)`      | Insights for authentications for specified time period|
+| `mfaCompletions`       | `Collection(self.mfaCompletionMetric)`        | Insights for MFA calls for specified time period|
+| `requests`             | `Collection(self.userRequestsMetric)`         | Insights for all user requests to a tenant for specified time period|
 
 ## JSON representation
 The following is a JSON representation of the resource.

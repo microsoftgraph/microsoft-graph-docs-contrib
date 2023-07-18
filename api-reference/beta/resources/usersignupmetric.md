@@ -23,7 +23,7 @@ Insights for user sign ups for a specific period.
 |:---|:---|:---|
 |[List dailyUserSignUpMetrics](../api/dailyuserinsightmetricsroot-list-signups.md)|[dailyUserSignUpMetric](../resources/usersignupmetric.md) collection|Get a list of the daily [userSignUpMetric](../resources/usersignupmetric.md) objects and their properties.|
 |[List monthlyUserSignUpMetrics](../api/monthlyuserinsightmetricsroot-list-signups.md)|[monthlyUserSignUpMetric](../resources/usersignupmetric.md) collection|Get a list of the daily [userSignUpMetric](../resources/usersignupmetric.md) objects and their properties.|
-||
+|
 
 ## Properties
 |Property|Type|Description|

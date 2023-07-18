@@ -19,14 +19,13 @@ Insights of the total users in the tenant over time.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List userCountMetrics](../api/dailyuserinsightmetricsroot-list-usercount.md)| [userCountMetric](../resources/usercountmetric.md) collection|Get a list of the daily [userCountMetric](../resources/usercountmetric.md) objects and their properties.|
-|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| `id`       | `Edm.String` | Identifier for the insight.             | Yes | Yes      | Yes      |
-| `factDate` | `Edm.Date`   | Date of the insight.                    | No  | Yes      | Yes      |
-| `count`    | `string`     | Total users in the tenant at over time. | No  | Yes      | Yes      |
+| `id`       | `Edm.String` | Identifier for the insight.|
+| `factDate` | `Edm.Date`   | Date of the insight.|
+| `count`    | `string`     | Total users in the tenant at over time.|
 ## Relationships
 None.
 
