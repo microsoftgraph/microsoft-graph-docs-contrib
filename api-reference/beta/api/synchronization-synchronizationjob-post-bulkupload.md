@@ -50,17 +50,29 @@ In the API endpoint, `{servicePrincipalId}` refers to the service principal obje
 
 ## Request body
 
-In the request body, supply a [bulkUpload](../resources/synchronization-bulkupload.md) request object. Refer to the [examples](#examples) section for sample payloads.
+In the request body, supply a [bulkUpload](../resources/synchronization-bulkupload.md) resource type. Refer to the [examples](#examples) section for sample payloads.
 
 ## Response
 
-If successful, the API returns a `202 Accepted` response code. It does not return anything in the response body. The bulk request is staged for execution by the Azure AD provisioning service and is processed immediately. The `Location` key in the response header points to the [provisioning logs endpoint](provisioningobjectsummary-list.md) that can be used to check for the status of the bulk request provisioning.
+| HTTP Status Code | Explanation |
+|:---|:---|
+| 202 (Accepted) | The bulk request is staged for execution and will be processed by the associated provisioning job. The `Location` key in the response header points to the [provisioning logs endpoint](provisioningobjectsummary-list.md) that can be used to check the status of the bulk request provisioning. |
+| 400 (Bad Request) | Request is unparsable, syntactically incorrect or violates the schema. The most common cause of this error is the absence of the request header `Content-Type`. Make sure it is present and set to `application/scim+json`.|
+| 401 (Unauthorized) | The authorization header is invalid or missing. Ensure that the authorization header has a valid access token. |
+| 403 (Forbidden) |  Operation is not permitted based on the supplied authorization. Make sure that the API client has the Graph API permission `SynchronizationData-User.Upload`.|
 
 ## Examples
+
+* [Example 1: Bulk upload using SCIM Core user and Enterprise User schema](#example-1-bulk-upload-using-scim-core-user-and-enterprise-user-schema)
+* [Example 2: Bulk upload using SCIM custom schema namespace](#example-2-bulk-upload-using-scim-custom-schema-namespace)
+* [Example 3: Bulk upload for updating an existing user](#example-3-bulk-upload-for-updating-an-existing-user)
+* [Example 4: Bulk upload for deleting an existing user](#example-4-bulk-upload-for-deleting-an-existing-user)
 
 ### Example 1: Bulk upload using SCIM Core user and Enterprise User schema
 
 The following bulk request uses the SCIM standard Core User and Enterprise User schema. It has two user operations in the **Operations** array. You can send a maximum of 50 user operations in each bulk request.
+
+**Processing details:** The provisioning service will read the two user records. It will use the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create/update/enable/disable the user account in the directory. It will resolve the manager reference using the `manager.value` field. Specify the `externalId` of the user's manager in this field. In the example below, the provisioning service will assign *Barbara Jensen* as the manager for the *Kathy Jensen*.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,7 +90,7 @@ Content-Type: application/scim+json
     "Operations": [
     {
         "method": "POST",
-        "bulkId": "897401c2-2de4-4b87-a97f-c02de3bcfc61",
+        "bulkId": "701984",
         "path": "/Users",
         "data": {
             "schemas": ["urn:ietf:params:scim:schemas:core:2.0:User",
@@ -134,7 +146,6 @@ Content-Type: application/scim+json
                 "department": "Tour Operations",
                 "manager": {
                   "value": "89607",
-                  "$ref": "../Users/26118915-6090-4610-87e4-49d8ca9f808d",
                   "displayName": "John Smith"
                  }
             }
@@ -142,7 +153,7 @@ Content-Type: application/scim+json
     },
     {
         "method": "POST",
-        "bulkId": "897401c2-2de4-4b87-a97f-c02de3bcfc61",
+        "bulkId": "701985",
         "path": "/Users",
         "data": {
             "schemas": ["urn:ietf:params:scim:schemas:core:2.0:User",
@@ -191,16 +202,15 @@ Content-Type: application/scim+json
             "timezone": "America/Los_Angeles",
             "active":true,
             "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User": {
-            "employeeNumber": "701984",
-            "costCenter": "4130",
-            "organization": "Universal Studios",
-            "division": "Theme Park",
-            "department": "Tour Operations",
-            "manager": {
-              "value": "89607",
-              "$ref": "../Users/26118915-6090-4610-87e4-49d8ca9f808d",
-              "displayName": "John Smith"
-             }
+              "employeeNumber": "701984",
+              "costCenter": "4130",
+              "organization": "Universal Studios",
+              "division": "Theme Park",
+              "department": "Tour Operations",
+              "manager": {
+                "value": "701984",
+                "displayName": "Barbara Jensen"
+              }
             }
         }
     }
@@ -238,8 +248,9 @@ Content-Type: application/json
 
 ### Example 2: Bulk upload using SCIM custom schema namespace
 
-The following bulk request uses the SCIM standard Core User and Enterprise User schema. It also has an additional custom schema namespace called `urn:contoso:employee` with two attributes `HireDate` and `JobCode`.
-Notice how the `schemas` array in the data object is updated to include the custom schema namespace. It has two user operations in the **Operations** array. You can send a maximum of 50 user operations in each bulk request.
+The following bulk request uses the SCIM standard Core User and Enterprise User schema. It also has an additional custom schema namespace called `urn:contoso:employee` with two attributes `HireDate` and `JobCode`. The `schemas` array in the data object is updated to include the custom schema namespace.
+
+**Processing details:** The provisioning service will read the two user records. It will use the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create/update/enable/disable the user account in the directory. If you have included the two custom attributes `urn:contoso:employee:HireDate` and `urn:contoso:employee:JobCode` in your provisioning job attribute mapping, it will be processed and the corresponding target attributes will be set.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -257,7 +268,7 @@ Content-Type: application/scim+json
     "Operations": [
     {
         "method": "POST",
-        "bulkId": "897401c2-2de4-4b87-a97f-c02de3bcfc61",
+        "bulkId": "701984",
         "path": "/Users",
         "data": {
             "schemas": ["urn:ietf:params:scim:schemas:core:2.0:User",
@@ -314,7 +325,6 @@ Content-Type: application/scim+json
                 "department": "Tour Operations",
                 "manager": {
                   "value": "89607",
-                  "$ref": "../Users/26118915-6090-4610-87e4-49d8ca9f808d",
                   "displayName": "John Smith"
                  }
             },
@@ -326,7 +336,7 @@ Content-Type: application/scim+json
     },
     {
         "method": "POST",
-        "bulkId": "897401c2-2de4-4b87-a97f-c02de3bcfc61",
+        "bulkId": "701985",
         "path": "/Users",
         "data": {
             "schemas": ["urn:ietf:params:scim:schemas:core:2.0:User",
@@ -376,15 +386,14 @@ Content-Type: application/scim+json
             "timezone": "America/Los_Angeles",
             "active":true,
             "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User": {
-            "employeeNumber": "701984",
-            "costCenter": "4130",
-            "organization": "Universal Studios",
-            "division": "Theme Park",
-            "department": "Tour Operations",
-            "manager": {
-              "value": "89607",
-              "$ref": "../Users/26118915-6090-4610-87e4-49d8ca9f808d",
-              "displayName": "John Smith"
+              "employeeNumber": "701984",
+              "costCenter": "4130",
+              "organization": "Universal Studios",
+              "division": "Theme Park",
+              "department": "Tour Operations",
+              "manager": {
+                "value": "701984",
+                "displayName": "Barbara Jensen"
              }
             },
             "urn:contoso:employee": {
@@ -445,7 +454,7 @@ Content-Type: application/scim+json
     "Operations": [
         {
             "method": "POST",
-            "bulkId": "897401c2-2de4-4b87-a97f-c02de3bcfc63",
+            "bulkId": "7172023",
             "path": "/Users",
             "data": {
                 "schemas": ["urn:ietf:params:scim:schemas:core:2.0:User",
@@ -482,6 +491,68 @@ Content-Type: application/json
     "request-id": "beec9ea0-f7e4-4fe7-8507-cd834c88f18b"
 }
 ```
+
+### Example 4: Bulk upload for deleting an existing user
+
+The following bulk request illustrates how to delete an existing Azure AD / on-premises AD user.  This example assumes you have configured a mapping that uses  **externalId** as the matching identifier.  
+
+> [!NOTE]
+> If the target directory for the operation is Azure AD, then the matched user is soft-deleted. The user can be seen on the Microsoft Azure portal **Deleted users** page for the next 30 days and can be restored during that time.
+> If the target directory for the operation is on-premises Active Directory, then the matched user is hard-deleted. If the **Active Directory Recycle Bin** is enabled, you can restore the deleted on-premises AD user object.
+> To prevent and recover from accidental deletions, we recommend [configuring accidental deletion threshold](/azure/active-directory/app-provisioning/accidental-deletions) in the provisioning app and [enabling the on-premises Active Directory recycle bin](/azure/active-directory/hybrid/connect/how-to-connect-sync-recycle-bin).
+
+<!-- {
+  "blockType": "request",
+  "name": "bulk_upload_for_delete"
+} 
+-->
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
+Authorization: Bearer <token>
+Content-Type: application/scim+json
+
+{
+    "schemas": [
+        "urn:ietf:params:scim:api:messages:2.0:BulkRequest"
+    ],
+    "Operations": [
+        {
+            "method": "DELETE",
+            "bulkId": "7172023",
+            "path": "/Users",
+            "data": {
+                "schemas": [
+                    "urn:ietf:params:scim:schemas:core:2.0:User",
+                    "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+                ],
+                "externalId": "7172023"
+            }
+        }
+    ]
+}
+```
+
+### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.bulkUpload"
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+{
+    "client-request-id": "92cd30f6-fcc3-5d61-098e-a6dd35e460ef",
+    "content-length": "0",
+    "location": "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'",
+    "request-id": "beec9ea0-f7e3-4fe7-8507-cd834c88f18b"
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2023-06-27 16:57:30 UTC -->
