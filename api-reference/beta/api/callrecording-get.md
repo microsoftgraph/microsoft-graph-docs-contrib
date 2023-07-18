@@ -32,8 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                     |
 | Application                            | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat* |
 
-> [!NOTE]
-> Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note:** Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
@@ -45,7 +44,7 @@ To use application permission for this API, tenant administrators must create an
 Get a single recording of an online meeting.
 
 ```http
-GET /me/onlineMeetings/{meetingId}/recordings/recording/{recordingId}
+GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}
 ```
 
@@ -56,8 +55,9 @@ GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 ```
 
-> [!NOTE]
-> This API doesn't support the optional query parameters.
+## Optional query parameters
+
+This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -71,7 +71,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [callRecording](../resources/callRecording.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [callRecording](../resources/callrecording.md) object in the response body.
 
 ## Examples
 
@@ -97,8 +97,7 @@ GET https://graph.microsoft.com/beta/users/b935e675-5e67-48b9-8d45-249d5f88e964/
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -123,6 +122,8 @@ The following example shows how to get the content of a single recording of an o
 
 #### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_callRecording_content",
@@ -135,11 +136,13 @@ GET https://graph.microsoft.com/beta/users/b935e675-5e67-48b9-8d45-249d5f88e964/
 
 #### Response
 
-The following example contains bytes for the recording in the response body. The `content-type` header specifies the type of the recording content. The negative offsets indicate that the recording on began while the conversation was ongoing.
+The following example contains bytes for the recording in the response body. The `content-type` header specifies the type of the recording content. The negative offsets indicate that the recording began while the conversation was ongoing.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 ```http
+HTTP/1.1 200 OK
+Content-Type: video/mp4
 
+<bytes of a recording>
 ```

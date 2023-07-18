@@ -108,8 +108,7 @@ GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 ### Response
 
-> [!NOTE]
-> The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
