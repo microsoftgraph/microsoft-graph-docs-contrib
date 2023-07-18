@@ -3,7 +3,7 @@ title: "List monthlySignUps"
 description: "Get the userSignUpMetric resources from the signUps navigation property."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

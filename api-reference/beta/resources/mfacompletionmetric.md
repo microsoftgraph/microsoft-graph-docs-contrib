@@ -3,7 +3,7 @@ title: "mfaCompletionMetric resource type"
 description: "Insights for MFA calls for a specific period."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

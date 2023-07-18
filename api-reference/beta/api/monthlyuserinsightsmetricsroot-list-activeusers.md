@@ -1,9 +1,9 @@
 ---
 title: "List monthlyActiveUsers"
-description: "Get the activeUsersMetric resources from the activeUsers navigation property."
+description: "Get the monthly activeUsersMetric resources from the activeUsers navigation property."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

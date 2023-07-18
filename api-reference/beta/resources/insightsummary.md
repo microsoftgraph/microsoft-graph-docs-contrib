@@ -3,7 +3,7 @@ title: "insightSummary resource type"
 description: "Summary of all usage insights for a specific time period."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

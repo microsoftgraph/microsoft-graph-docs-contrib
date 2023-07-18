@@ -1,9 +1,9 @@
 ---
 title: "List monthlyActiveUsersBreakdown"
-description: "Get the activeUsersBreakdownMetric resources from the activeUsersBreakdown navigation property."
+description: "Get the monthlyActiveUsersBreakdownMetric resources from the activeUsersBreakdown navigation property."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the activeUsersBreakdownMetric resources from the activeUsersBreakdown navigation property.
+Get the monthlyActiveUsersBreakdownMetric resources from the activeUsersBreakdown navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

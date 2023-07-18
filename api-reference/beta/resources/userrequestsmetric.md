@@ -3,7 +3,7 @@ title: "userRequestsMetric resource type"
 description: "Insights for all user requests to a tenant for a specific period"
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

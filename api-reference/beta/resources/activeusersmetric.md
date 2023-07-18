@@ -3,7 +3,7 @@ title: "activeUsersMetric resource type"
 description: "Insights for users who were active for a specific period. This is calculated as count of all users who made at least one authentication request in that period."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

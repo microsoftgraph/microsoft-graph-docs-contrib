@@ -3,7 +3,7 @@ title: "monthlyUserInsightMetricsRoot resource type"
 description: "This entity will contain all available insights with a monthly cadence as seen in the userInsightsRoot entity."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

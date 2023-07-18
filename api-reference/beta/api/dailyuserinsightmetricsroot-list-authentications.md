@@ -3,7 +3,7 @@ title: "List dailyAuthentications"
 description: "Get the authenticationsMetric resources from the authentications navigation property."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

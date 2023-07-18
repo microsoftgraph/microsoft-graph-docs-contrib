@@ -3,7 +3,7 @@ title: "dailyUserInsightMetricsRoot resource type"
 description: "This entity will contain all available insights with a daily cadence as seen in the userInsightsRoot entity."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -18,8 +18,6 @@ This entity will contain all available insights with a daily cadence as seen in 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List dailyUserInsightMetricsRoots](../api/userinsightsroot-list-daily.md)|[dailyUserInsightMetricsRoot](../resources/dailyuserinsightmetricsroot.md) collection|Get a list of the [dailyUserInsightMetricsRoot](../resources/dailyuserinsightmetricsroot.md) objects and their properties.|
-|[Get dailyUserInsightMetricsRoot](../api/dailyuserinsightmetricsroot-get.md)|[dailyUserInsightMetricsRoot](../resources/dailyuserinsightmetricsroot.md)|Read the properties and relationships of a [dailyUserInsightMetricsRoot](../resources/dailyuserinsightmetricsroot.md) object.|
 |[List activeUsers](../api/dailyuserinsightmetricsroot-list-activeusers.md)|[activeUsersMetric](../resources/activeusersmetric.md) collection|Get the activeUsersMetric resources from the activeUsers navigation property.|
 |[List activeUsersBreakdown](../api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md)|[activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) collection|Get the activeUsersBreakdownMetric resources from the activeUsersBreakdown navigation property.|
 |[List authentications](../api/dailyuserinsightmetricsroot-list-authentications.md)|[authenticationsMetric](../resources/authenticationsmetric.md) collection|Get the authenticationsMetric resources from the authentications navigation property.|

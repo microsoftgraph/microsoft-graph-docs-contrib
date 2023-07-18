@@ -3,7 +3,7 @@ title: "List monthlyMfaCompletions"
 description: "Get the mfaCompletionMetric resources from the mfaCompletions navigation property."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

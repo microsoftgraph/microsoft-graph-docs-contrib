@@ -3,7 +3,7 @@ title: "Get insightSummary"
 description: "Read the properties and relationships of an insightSummary object."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
