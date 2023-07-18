@@ -41,10 +41,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 
-```msgraph-interactive
+```http
 GET /sites/{site-id}/pages
 ```
 
@@ -71,8 +70,8 @@ If successful, this method returns a `200` and a list of [baseSitePage](../resou
 
 ### Request
 
-<!--
-{
+# [HTTP](#tab/http)
+<!--{
 	"blockType": "request",
 	"name": "get-basesitepages",
 	"scopes": "sites.read.all",
