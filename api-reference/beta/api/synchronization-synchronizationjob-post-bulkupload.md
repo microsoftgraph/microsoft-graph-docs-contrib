@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Perform a new bulk upload using the synchronization job. Use this API endpoint to ingest data into the Azure AD synchronization service. The synchronization service will apply the mappings associated with the synchronization job and process the incoming data. The rate limit for this API is 40 requests per second. Each request can contain a maximum of 50 user operations in the bulk request **Operations** array.
 
+> [!NOTE]
+> This API is in public preview and available for use only with [API-driven inbound provisioning apps](/azure/active-directory/app-provisioning/inbound-provisioning-api-configure-app).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
