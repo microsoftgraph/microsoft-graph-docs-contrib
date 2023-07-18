@@ -44,7 +44,7 @@ To use application permission for this API, tenant administrators must create an
 Get a single recording of an online meeting.
 
 ```http
-GET /me/onlineMeetings/{meetingId}/recordings/recording/{recordingId}
+GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}
 ```
 
@@ -142,7 +142,7 @@ The following example contains bytes for the recording in the response body. The
 
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/octet-stream
+Content-Type: video/mp4
 
 <bytes of a recording>
 ```
