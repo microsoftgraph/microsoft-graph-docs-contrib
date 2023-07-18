@@ -37,6 +37,38 @@ GET /security/threatIntelligence/hosts/{hostId}/parentHostPairs
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+### $count
+`$count` is an optional query parameter.
+
+### $filter
+`$filter` is an optional query parameter. The following properties can be used for `$filter` calls.
+|Property|Example|Notes|
+|:---|:---|:---|
+|All [hostpair](../resources/security-hostpair.md) properties|`$filter=(linkKind eq 'redirect')`|Use the name as it appears in the [hostpair](../resources/security-hostpair.md) resource.|
+|`childHost/id`|`$filter=(childHost/id eq 'contoso.com')`|Full path is requried for `$filter` usage.|
+|`parentHost/id`|`$filter=(parentHost/id in ('contoso.com','downstream.consoso.com'))`|Full path is required for `$filter` usage.|
+
+### $orderby
+`$orderby` is an optional query parameter. The following properties can be used for `$orderby` calls.
+|Property|Example|Notes|
+|:---|:---|:---|
+|`firstSeenDateTime`|`$orderby=firstSeenDateTime desc`||
+|`lastSeenDateTime`|`$orderby=lastSeenDateTime asc`||
+
+### $select
+`$select` is an optional query parameter. The following properties can be used for `$select` calls.
+|Property|Example|Notes|
+|:---|:---|:---|
+|All [hostpair](../resources/security-hostpair.md) properties|`$select=id,firstSeenDateTime`|Use the name as it appears in the [hostpair](../resources/security-hostpair.md) resource.|
+|`parentHost`|`$select=parentHost`|Does not support selecting on nested properties (i.e. `parentHost/id`)|
+|`childHost`|`$select=childHost`|Does not support selecting on nested properties (i.e. `childHost/id`)|
+
+### $skip
+`$skip` is an optional query parameter.
+
+### $top
+`$top` is an optional query parameter.
+
 ## Request headers
 |Name|Description|
 |:---|:---|

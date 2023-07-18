@@ -37,6 +37,14 @@ GET /security/threatIntelligence/hostPairs/{hostPairId}
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+### $select
+`$select` is an optional query parameter. The following properties can be used for `$select` calls.
+|Property|Example|Notes|
+|:---|:---|:---|
+|All [hostpair](../resources/security-hostpair.md) properties|`$select=id,firstSeenDateTime`|Use the name as it appears in the [hostpair](../resources/security-hostpair.md) resource.|
+|`parentHost`|`$select=parentHost`|Does not support selecting on nested properties (i.e. `parentHost/id`)|
+|`childHost`|`$select=childHost`|Does not support selecting on nested properties (i.e. `childHost/id`)|
+
 ## Request headers
 |Name|Description|
 |:---|:---|
