@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
-Get-MgUser -Search '"displayName:wa" OR "displayName:ad"' -Sort "displayName" -CountVariable CountVar -ConsistencyLevel eventual 
+Get-MgBetaUser -Search '"displayName:wa" OR "displayName:ad"' -Sort "displayName" -CountVariable CountVar -ConsistencyLevel eventual 
 
 
 ```

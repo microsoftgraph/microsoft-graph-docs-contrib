@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
 	description = "Self help community for golf"
@@ -17,6 +17,6 @@ $params = @{
 	securityEnabled = $false
 }
 
-New-MgGroup -BodyParameter $params
+New-MgBetaGroup -BodyParameter $params
 
 ```
