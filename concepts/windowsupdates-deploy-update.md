@@ -67,7 +67,7 @@ Content-Type: application/json
             "displayName": "Windows 10, version 22H2",
             "deployableUntilDateTime": "2025-10-14T00:00:00Z",
             "releaseDateTime": "2022-10-18T00:00:00Z",
-            "version": "Windows 10, version 22H2"
+            "version": "Windows 10, version 22H2",
             "buildNumber": "19045"
         },
         {
