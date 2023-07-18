@@ -224,7 +224,7 @@ Content-Type: application/scim+json
   "@odata.type": "microsoft.graph.bulkUpload"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 
@@ -414,7 +414,7 @@ Content-Type: application/scim+json
   "@odata.type": "microsoft.graph.bulkUpload"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 
@@ -460,7 +460,6 @@ Content-Type: application/scim+json
         }
     ]
 }
-
 ```
 
 # [JavaScript](#tab/javascript)
