@@ -21,7 +21,7 @@ Represents a pair of parent and child hosts where the child host was able to be 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get hostPair](../api/security-hostpair-get.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md)|Read the properties and relationships of a [microsoft.graph.security.hostPair](../resources/security-hostpair.md) object.|
-| [List childHostPairs for a host](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of the [microsoft.graph.security.hostPair](../resources/security-hostpair.md) objects associated with a host, where that host is the *parent* and has an outgoing pairing to a *cihld*.|
+| [List childHostPairs for a host](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of the [microsoft.graph.security.hostPair](../resources/security-hostpair.md) objects associated with a host, where that host is the *parent* and has an outgoing pairing to a *child*.|
 |[List hostPairs for a host](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of the [microsoft.graph.security.hostPair](../resources/security-hostpair.md) objects associated with a host, where the host is **either** the *parent* or *child*.|
 |[List parentHostPairs for a host](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of the [microsoft.graph.security.hostPair](../resources/security-hostpair.md) objects associated with a host, where that host is the *child* and has an incoming pairing with a *parent*.|
 
@@ -55,7 +55,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "firstSeenDateTime": "String (timestamp)",
   "lastSeenDateTime": "String (timestamp)",
-  "linkKind": "String"
+  "linkKind": "String",
   "parentHost": {
     "@odata.type": "#microsoft.graph.security.host",
     "id": "String (identifier)"
