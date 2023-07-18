@@ -3,7 +3,7 @@ title: "List userCountMetrics"
 description: "Get a list of the userCountMetric objects and their properties."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "user-insights"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

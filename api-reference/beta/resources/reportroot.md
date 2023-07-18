@@ -24,8 +24,6 @@ Represents a container for Azure Active Directory (Azure AD) reporting resources
 | [getAzureADApplicationSignInSummary](../api/reportroot-getazureadapplicationsigninsummary.md)         | [applicationSignInSummary](applicationsigninsummary.md)                                           | Read the properties and relationships of an **applicationSignInSummary** object.                                                                  |
 | [List credentialUserRegistrationDetails](../api/reportroot-list-credentialuserregistrationdetails.md) | [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) collection | Get the details of credentialUserRegistrationDetails objects for a given tenant.                                                                  |
 | [List userCredentialUsageDetails](../api/reportroot-list-usercredentialusagedetails.md)               | [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection               | Get the userCredentialUsageDetails objects for a given tenant. Details include user information, status of the reset, and the reason for failure. |
-|[List reportRoots](../api/reportroot-list.md)|[reportRoot](../resources/reportroot.md) collection|Get a list of the [reportRoot](../resources/reportroot.md) objects and their properties.|
-|[Get reportRoot](../api/reportroot-get.md)|[reportRoot](../resources/reportroot.md)|Read the properties and relationships of a [reportRoot](../resources/reportroot.md) object.|
 
 <!--Temporarily hide these functions until we document them and others.
 |[getAzureADLicenseUsage](../api/reportroot-getazureadlicenseusage.md)|[azureADLicenseUsage](../resources/azureadlicenseusage.md) collection|**TODO: Add Description**|
