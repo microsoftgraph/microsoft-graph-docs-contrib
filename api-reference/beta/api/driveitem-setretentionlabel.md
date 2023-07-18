@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Apply (set) a retention label asynchronously on a [driveItem](../resources/driveitem.md) (files and folders). Retention labels can be applied using this method without being published to the location by an existing label policy.
+Apply (set) a retention label on a [driveItem](../resources/driveitem.md) (files and folders). Retention labels can be applied using this method without being published to the location by an existing label policy.
 
 When a retention label is applied to a folder, then all the items in the folder are tagged with the same retention label. Conflict resolution happens by the following principle: _explicit wins over implicit_. For example, if a file in the folder has already been explicitly tagged with a label, then that file doesn't inherit the label of the parent. For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
 
