@@ -308,7 +308,7 @@ items:
       href: /graph/best-practices-concept?context=graph/api/beta
       displayName: Microsoft Graph, Best practices for working with Microsoft Graph
     - name: Known issues
-      href: /graph/known-issues?context=graph/api/beta
+      href: https://developer.microsoft.com/graph/known-issues
       displayName: Microsoft Graph, Known issues with Microsoft Graph
     - name: API changelog
       href: https://developer.microsoft.com/graph/changelog
@@ -1348,7 +1348,7 @@ items:
             href: api/synchronization-synchronizationjob-provisionondemand.md
           - name: Validate credentials
             href: api/synchronization-synchronizationjob-validatecredentials.md
-          - name: Bulk upload 
+          - name: Bulk upload
             href: resources/synchronization-bulkupload.md
             items:
             - name: Perform bulk upload
@@ -8496,7 +8496,7 @@ items:
             - name: List
               href: api/intune-devices-userexperienceanalyticsanomalycorrelationgroupoverview-list.md
             - name: Get
-              href: api/intune-devices-userexperienceanalyticsanomalycorrelationgroupoverview-get.md            
+              href: api/intune-devices-userexperienceanalyticsanomalycorrelationgroupoverview-get.md
           - name: User experience analytics anomaly correlation group prevalence
             href: resources/intune-devices-userexperienceanalyticsanomalycorrelationgroupprevalence.md
           - name: User experience analytics anomaly device
@@ -8849,7 +8849,7 @@ items:
             - name: List
               href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-list.md
             - name: Get
-              href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-get.md            
+              href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-get.md
           - name: User experience analytics device without cloud identity
             href: resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md
             items:
@@ -12233,7 +12233,7 @@ items:
           displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
           href: resources/networkaccess-global-secure-access-api-overview.md
         - name: Tenant status
-          href: resources/networkaccess-tenantstatus.md 
+          href: resources/networkaccess-tenantstatus.md
           items:
           - name: Onboard
             href: api/networkaccess-networkaccessroot-onboard.md
@@ -12241,14 +12241,14 @@ items:
             href: api/networkaccess-tenantstatus-get.md
         - name: Settings
           href: resources/networkaccess-settings.md
-          items: 
+          items:
           - name: Cross-tenant access settings
             href: resources/networkaccess-crosstenantaccesssettings.md
             items:
             - name: Get
               href: api/networkaccess-crosstenantaccesssettings-get.md
             - name: Update
-              href: api/networkaccess-crosstenantaccesssettings-update.md 
+              href: api/networkaccess-crosstenantaccesssettings-update.md
           - name: Conditional Access Settings
             href: resources/networkaccess-conditionalaccesssettings.md
             items:
@@ -12262,7 +12262,7 @@ items:
             - name: Get
               href: api/networkaccess-forwardingoptions-get.md
             - name: Update
-              href: api/networkaccess-forwardingoptions-update.md              
+              href: api/networkaccess-forwardingoptions-update.md
         - name: Forwarding traffic
           items:
           - name: Forwarding profile
@@ -12271,9 +12271,9 @@ items:
             - name: List
               href: api/networkaccess-networkaccessroot-list-forwardingprofiles.md
             - name: Get
-              href: api/networkaccess-forwardingprofile-get.md 
+              href: api/networkaccess-forwardingprofile-get.md
             - name: Update
-              href: api/networkaccess-forwardingprofile-update.md 
+              href: api/networkaccess-forwardingprofile-update.md
           - name: Forwarding policy
             href: resources/networkaccess-forwardingpolicy.md
             items:
@@ -12285,7 +12285,7 @@ items:
               href: api/networkaccess-forwardingpolicy-updatepolicyrules.md
           - name: Forwarding policy link
             href: resources/networkaccess-forwardingpolicylink.md
-            items:            
+            items:
             - name: List
               href: api/networkaccess-forwardingprofile-list-policies.md
             - name: Get
@@ -12303,13 +12303,13 @@ items:
               - name: Microsoft 365 forwarding rule
                 href: resources/networkaccess-m365forwardingrule.md
               - name: Private access forwarding rule
-                href: resources/networkaccess-privateaccessforwardingrule.md 
+                href: resources/networkaccess-privateaccessforwardingrule.md
               - name: List
-                href: api/networkaccess-policy-list-policyrules.md  
+                href: api/networkaccess-policy-list-policyrules.md
               - name: Get
-                href: api/networkaccess-policyrule-get.md 
+                href: api/networkaccess-policyrule-get.md
               - name: Update
-                href: api/networkaccess-policyrule-update.md      
+                href: api/networkaccess-policyrule-update.md
         - name: Branch site
           href: resources/networkaccess-branchsite.md
           items:
@@ -12326,14 +12326,14 @@ items:
           - name: Device link
             href: resources/networkaccess-devicelink.md
             items:
-            - name: List 
+            - name: List
               href: api/networkaccess-branchsite-list-devicelinks.md
             - name: Get
-              href: api/networkaccess-devicelink-get.md             
+              href: api/networkaccess-devicelink-get.md
             - name: Create
               href: api/networkaccess-branchsite-post-devicelinks.md
             - name: Update
-              href: api/networkaccess-devicelink-update.md 
+              href: api/networkaccess-devicelink-update.md
             - name: Delete
               href: api/networkaccess-branchsite-delete-devicelinks.md
           - name: Forwarding profile
@@ -12349,16 +12349,16 @@ items:
           items:
           - name: Network access traffic
             href: resources/networkaccess-networkaccesstraffic.md
-          - name: Get 
+          - name: Get
             href: api/networkaccess-networkaccesstraffic-get.md
-          - name: List  
+          - name: List
             href: api/networkaccess-logs-list-traffic.md
         - name: Enriched Microsoft 365 logs
           href: resources/networkaccess-enrichedauditlogs.md
           items:
-          - name: List 
+          - name: List
             href: api/networkaccess-settings-list-enrichedauditlogs.md
-          - name: Update  
+          - name: Update
             href: api/networkaccess-enrichedauditlogs-update.md
         - name: Traffic reports
           href: resources/networkaccess-reports.md
@@ -13260,18 +13260,20 @@ items:
               href: api/user-list-agreementacceptances.md
             - name: List acceptance status
               href: api/agreement-list-acceptances.md
-          - name: Agreement files
+          - name: Agreement file
             items:
             - name: Default agreement file
               href: resources/agreementfile.md
-            - name: Localized agreement files
+            - name: Localized agreement file
               href: resources/agreementfilelocalization.md
             - name: Get default file
               href: api/agreementfile-get.md
             - name: Create localized files
               href: api/agreement-post-files.md
-            - name: List localized files
+            - name: List files
               href: api/agreement-list-files.md
+            - name: List localized files
+              href: api/agreementfile-list-localizations.md
       - name: Identity and sign-in
         items:
         - name: Authentication event listeners (preview)
@@ -14558,7 +14560,7 @@ items:
         - name: Create session to attach large file
           href: api/attachment-createuploadsession.md
         - name: Forward message
-          href: api/message-forward.md  
+          href: api/message-forward.md
         - name: Get mail tips
           href: api/user-getmailtips.md
         - name: Get message delta
@@ -14572,7 +14574,7 @@ items:
         - name: Mark as not junk
           href: api/message-markasnotjunk.md
         - name: Move message
-          href: api/message-move.md  
+          href: api/message-move.md
         - name: Reply to message
           href: api/message-reply.md
         - name: Reply-all to message
@@ -15348,6 +15350,14 @@ items:
               href: api/reportroot-list-applicationsignindetailedsummary.md
             - name: Get sign-in details
               href: api/applicationsignindetailedsummary-get.md
+        - name: Azure AD SLA attainment
+          items:
+          - name: Azure AD authentication
+            href: resources/azureadauthentication.md
+          - name: Service level agreement
+            href: resources/servicelevelagreementroot.md
+          - name: Get Azure AD authentication
+            href: api/azureadauthentication-get.md
         - name: Registration and usage
           items:
           - name: Overview
@@ -15356,7 +15366,7 @@ items:
             href: resources/credentialusagesummary.md
             items:
             - name: List
-              href: api/reportroot-getcredentialusagesummary.md            
+              href: api/reportroot-getcredentialusagesummary.md
           - name: Credential user registration count
             href: resources/credentialuserregistrationcount.md
             items:
@@ -16177,7 +16187,7 @@ items:
             href: api/security-ediscoveryreviewset-get.md
           - name: Add to review set
             href: api/security-ediscoveryreviewset-addtoreviewset.md
-          - name: Export 
+          - name: Export
             href: api/security-ediscoveryreviewset-export.md
             items:
             - name: Get download URL (deprecated)
@@ -16195,7 +16205,7 @@ items:
               href: api/security-ediscoveryreviewsetquery-update.md
             - name: Delete
               href: api/security-ediscoveryreviewset-delete-queries.md
-            - name: Export 
+            - name: Export
               href: api/security-ediscoveryreviewsetquery-export.md
               items:
               - name: Get download URL (deprecated)
@@ -16316,7 +16326,7 @@ items:
             href: api/security-retentionlabel-delete.md
         - name: File plan descriptors
           href: resources/security-fileplandescriptor.md
-          items: 
+          items:
           - name: File plan reference
             href: resources/security-fileplanreference.md
             items:
@@ -16505,7 +16515,7 @@ items:
             href: resources/security-subdomain.md
           - name: Get
             href: api/security-subdomain-get.md
-          - name: List Subdomains for a host
+          - name: List subdomains for a host
             href: api/security-host-list-subdomains.md
         - name: Vulnerability component
           items:
@@ -16744,54 +16754,64 @@ items:
           href: api/documentsetversion-restore.md
       - name: Pages (preview)
         items:
+        - name: Base site page
+          href: resources/basesitepage.md
+          items:
+          - name: List
+            href: api/basesitepage-list.md
+          - name: Get
+            href: api/basesitepage-get.md
+          - name: Delete
+            href: api/basesitepage-delete.md
         - name: Site page
           href: resources/sitepage.md
-        - name: List
-          href: api/sitepage-list.md
-        - name: Create
-          href: api/sitepage-create.md
-        - name: Get
-          href: api/sitepage-get.md
-        - name: Update
-          href: api/sitepage-update.md
-        - name: Delete
-          href: api/sitepage-delete.md
-        - name: Publish
-          href: api/sitepage-publish.md
-        - name: Horizontal section
           items:
-          - name: Horizontal section
-            href: resources/horizontalsection.md
           - name: List
-            href: api/horizontalsection-list.md
+            href: api/sitepage-list.md
           - name: Create
-            href: api/sitepage-post-horizontalsection.md
+            href: api/sitepage-create.md
           - name: Get
-            href: api/horizontalsection-get.md
+            href: api/sitepage-get.md
           - name: Update
-            href: api/horizontalsection-update.md
+            href: api/sitepage-update.md
           - name: Delete
-            href: api/horizontalsection-delete.md
-          - name: Column
+            href: api/basesitepage-delete.md
+          - name: Publish
+            href: api/sitepage-publish.md
+          - name: Horizontal section
             items:
-            - name: Horizontal section column
-              href: resources/horizontalsectioncolumn.md
+            - name: Horizontal section
+              href: resources/horizontalsection.md
             - name: List
-              href: api/horizontalsectioncolumn-list.md
+              href: api/horizontalsection-list.md
+            - name: Create
+              href: api/sitepage-post-horizontalsection.md
             - name: Get
-              href: api/horizontalsectioncolumn-get.md
-        - name: Vertical section
-          items:
+              href: api/horizontalsection-get.md
+            - name: Update
+              href: api/horizontalsection-update.md
+            - name: Delete
+              href: api/horizontalsection-delete.md
+            - name: Column
+              items:
+              - name: Horizontal section column
+                href: resources/horizontalsectioncolumn.md
+              - name: List
+                href: api/horizontalsectioncolumn-list.md
+              - name: Get
+                href: api/horizontalsectioncolumn-get.md
           - name: Vertical section
-            href: resources/verticalsection.md
-          - name: Create
-            href: api/sitepage-post-verticalsection.md
-          - name: Get
-            href: api/verticalsection-get.md
-          - name: Update
-            href: api/verticalsection-update.md
-          - name: Delete
-            href: api/verticalsection-delete.md
+            items:
+            - name: Vertical section
+              href: resources/verticalsection.md
+            - name: Create
+              href: api/sitepage-post-verticalsection.md
+            - name: Get
+              href: api/verticalsection-get.md
+            - name: Update
+              href: api/verticalsection-update.md
+            - name: Delete
+              href: api/verticalsection-delete.md
         - name: Web part
           items:
           - name: Web part
@@ -16802,8 +16822,14 @@ items:
             href: resources/standardwebpart.md
           - name: List
             href: api/webpart-list.md
+          - name: Create
+            href: api/webpart-create.md
           - name: Get
             href: api/webpart-get.md
+          - name: Update
+            href: api/webpart-update.md
+          - name: Delete
+            href: api/webpart-delete.md
           - name: Get position
             href: api/webpart-getposition.md
           - name: Get by position
