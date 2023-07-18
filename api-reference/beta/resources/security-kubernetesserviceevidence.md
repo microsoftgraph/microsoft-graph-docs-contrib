@@ -24,7 +24,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |clusterIP|[microsoft.graph.security.ipEvidence](./security-ipevidence.md)|The service cluster IP.|
 |createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [alertEvidence](../resources/security-alertevidence.md). |
 |externalIPs|[microsoft.graph.security.ipEvidence](./security-ipevidence.md) collection|The service external IPs.|
-|labels|[microsoft.graph.dictionary](./dictionary.md)|The service labels.|
+|labels|[microsoft.graph.security.dictionary](./security-dictionary.md)|The service labels.|
 |name|String|The service name.|
 |namespace|[microsoft.graph.security.kubernetesNamespaceEvidence](./security-kubernetesnamespaceevidence.md)|The service namespace.|
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
