@@ -433,7 +433,7 @@ The following bulk request illustrates how to update attributes of an existing A
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
- "name": "bulk_upload_for_update"
+  "name": "bulk_upload_for_update"
 } 
 -->
 ```http
