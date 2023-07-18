@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Return the directory objects specified in a list of IDs. Only [a subset of user properties are returned by default in v1.0](../resources/users#common-properties).
+Return the directory objects specified in a list of IDs. Only [a subset of user properties are returned by default in v1.0](../resources/users.md#common-properties).
 
 Some common uses for this function are to:
 
