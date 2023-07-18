@@ -49,7 +49,7 @@ Content-Type: application/json
             "displayName": "Windows 11, version 22H2",
             "deployableUntilDateTime": "2025-10-14T00:00:00Z",
             "releaseDateTime": "2022-09-20T00:00:00Z",
-            "version": "Windows 11, version 22H2"
+            "version": "Windows 11, version 22H2",
             "buildNumber": "22621"
         },
         {
