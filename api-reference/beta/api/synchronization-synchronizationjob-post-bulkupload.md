@@ -452,13 +452,17 @@ Content-Type: application/scim+json
             "data": {
                 "schemas": ["urn:ietf:params:scim:schemas:core:2.0:User",
                 "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"],
-                "externalId": "9393001",
-                "department": "Ops",
-                "active": false
+                "externalId": "7172023",
+                "active": false,
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User": {
+                    "department": "Tour Ops"
+                }
             }
         }
     ]
 }
+
+```
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/bulk_upload_for_update-javascript-snippets.md)]
