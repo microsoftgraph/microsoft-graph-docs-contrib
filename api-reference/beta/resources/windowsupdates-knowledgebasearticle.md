@@ -15,19 +15,23 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents a knowledge base (KB) article.
 
-Each quality update contains 1 or more [product revisions](../resources/windowsupdates-productrevision.md). Each product revision is associated with exactly one knowledge base article.
+Each quality update contains one or more [product revisions](../resources/windowsupdates-productrevision.md). Each product revision is associated with exactly one knowledge base article.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier for the knowledge base article. Read-only.|
 |url|String|The URL of the knowledge base article. Read-only.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
