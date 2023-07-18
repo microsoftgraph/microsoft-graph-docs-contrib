@@ -34,7 +34,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "keyProperty": "number",
   "@odata.type": "microsoft.graph.windowsUpdates.cveInformation",
   "openType": false
 }
@@ -42,8 +42,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.cveInformation",
-  "id": "String (identifier)",
-  "number": "String",
+  "number": "String (identifier)",
   "url": "String"
 }
 ```

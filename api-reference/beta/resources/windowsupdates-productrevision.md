@@ -15,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents a product revision that is associated with a quality update.
 
-When a quality update is released, it includes one or more product revisions to operating system builds. The taxonomy of a product revision is `majorVersion`.`minorVersion`.`buildNumber`.`updateBuildRevision`.
+When a quality update is released, it includes one or more product revisions to operating system builds. The taxonomy of a product revision is `majorVersion.minorVersion.buildNumber.updateBuildRevision`.
 
 ## Properties
 
