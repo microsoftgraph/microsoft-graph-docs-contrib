@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a pair of parent and child hosts where the child host was able to be reached via the parent host. For example, if contoso.com redirects to microsoft.com, then contoso.com would be the parent-host and microsoft.com the child-host
+Represents a pair of parent and child hosts where the child host was able to be reached via the parent host. For example, if contoso.com redirects to microsoft.com, then contoso.com would be the parent-host and microsoft.com the child-host.
 
 ## Methods
 |Method|Return type|Description|
@@ -31,13 +31,13 @@ Represents a pair of parent and child hosts where the child host was able to be 
 |firstSeenDateTime|DateTimeOffset|The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.|
 |id|String|A system-generated ID for the hostPair.|
 |lastSeenDateTime|DateTimeOffset|The last date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.|
-|linkKind|String|The reason the two hosts were identified as hostPairs|
+|linkKind|String|The reason the two hosts were identified as hostPairs.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|childHost|[microsoft.graph.security.host](../resources/security-host.md)|Host reached via the parentHost|
-|parentHost|[microsoft.graph.security.host](../resources/security-host.md)|Host used to reach the childHost|
+|childHost|[microsoft.graph.security.host](../resources/security-host.md)|Host reached via the parentHost.|
+|parentHost|[microsoft.graph.security.host](../resources/security-host.md)|Host used to reach the childHost.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
