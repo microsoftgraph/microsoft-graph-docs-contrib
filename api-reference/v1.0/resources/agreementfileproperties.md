@@ -11,7 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the properties of a terms of use agreement file; including the localized language and the display name.
+Represents the properties of a terms of use agreement file; including the localized language and the display name. This is an abstract type that's inherited by the following resources:
+
+- [agreementFile](agreementfile.md) resource type
+- [agreementFileLocalization](agreementfilelocalization.md) resource type
+- [agreementFileVersion](agreementfileversion.md) resource type
 
 Inherits from [entity](entity.md).
 
