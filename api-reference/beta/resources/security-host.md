@@ -36,6 +36,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 | [Get reputation](../api/security-host-get-reputation.md)                 | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Get the properties and relationships of a **hostReputation** object.                                              |
 | [List subdomains](../api/security-host-list-subdomains.md)               | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection               | Get a list of **subdomain** resources.                                                                            |
 | [List trackers](../api/security-host-list-trackers.md)                   | [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection           | Get a list of **hostTracker** resources.                                                                          |
+| [List hostSslCertificates](../api/security-hostsslcertificate-list-host.md)                   | [microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection           | Get a list of **hostSslCertificate** resources.  
 
 ## Properties
 
@@ -56,6 +57,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 | reputation        | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Represents a calculated reputation of this host.           |
 | subdomains        | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection               | The **subdomains** that are associated with this host.     |
 | trackers          | [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection           | The **hostTrackers** that are associated with this host.   |
+| hostSslCertificates          | [microsoft.graph.security.hostSslCertificates](../resources/security-hostsslcertificate.md) collection           | The **hostSslCertificate** that are associated with this host.   |
 
 ## JSON representation
 
