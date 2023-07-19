@@ -54,7 +54,7 @@ The following is an example of the request.
   "name": "get_endpoints_4"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser
+GET https://graph.microsoft.com/beta/reports/dailyPrintUsageByUser
 ```
 
 ### Response

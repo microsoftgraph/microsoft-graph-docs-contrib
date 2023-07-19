@@ -112,6 +112,7 @@ Content-Type: application/json
 {
     "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
     "printerId": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+    "printerName": "printerName1",
     "usageDate": "Date",
     "completedBlackAndWhiteJobCount": 42,
     "completedColorJobCount": 0,
