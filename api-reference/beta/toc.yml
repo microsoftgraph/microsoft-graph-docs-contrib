@@ -15306,121 +15306,122 @@ items:
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Reports
       items:
-      - name: Azure AD activity reports
-        items:
-        - name: Overview
-          href: resources/azure-ad-auditlog-overview.md
-        - name: Directory audit
-          href: resources/directoryaudit.md
-          items:
-          - name: List directory audits
-            href: api/directoryaudit-list.md
-          - name: Get directory audit
-            href: api/directoryaudit-get.md
-        - name: Sign-in
-          href: resources/signin.md
-          items:
-          - name: List sign-ins
-            href: api/signin-list.md
-          - name: Get sign-in
-            href: api/signin-get.md
-          - name: Confirm safe
-            href: api/signin-confirmsafe.md
-          - name: Confirm compromised
-            href: api/signin-confirmcompromised.md
-        - name: Provisioning
-          href: resources/provisioningobjectsummary.md
-          items:
-          - name: List provisioning
-            href: api/provisioningobjectsummary-list.md
       - name: Identity and access reports
         items:
-        - name: Overview
+        - name: Azure AD activity reports
           href: resources/report-identity-access.md
-        - name: AD FS application activity
           items:
-          - name: Relying party detailed summary
-            href: resources/relyingpartydetailedsummary.md
+          - name: AD FS application activity
+            items:
+            - name: Relying party detailed summary
+              href: resources/relyingpartydetailedsummary.md
+              items:
+              - name: List
+                href: api/relyingpartydetailedsummary-list.md
+          - name: Application credential activity
+            href: resources/appcredentialsigninactivity.md
             items:
             - name: List
-              href: api/relyingpartydetailedsummary-list.md
-        - name: Application credential activity
-          href: resources/appcredentialsigninactivity.md
-          items:
-          - name: List
-            href: api/reportroot-list-appcredentialsigninactivities.md
-          - name: Get
-            href: api/appcredentialsigninactivity-get.md
-        - name: Application sign-in
-          items:
-          - name: Sign-in summary
-            href: resources/applicationsigninsummary.md
+              href: api/reportroot-list-appcredentialsigninactivities.md
+            - name: Get
+              href: api/appcredentialsigninactivity-get.md
+          - name: Application sign-in
             items:
-            - name: Get sign-in summary
-              href: api/reportroot-getazureadapplicationsigninsummary.md
-          - name: Sign-in details
-            href: resources/applicationsignindetailedsummary.md
+            - name: Sign-in summary
+              href: resources/applicationsigninsummary.md
+              items:
+              - name: Get sign-in summary
+                href: api/reportroot-getazureadapplicationsigninsummary.md
+            - name: Sign-in details
+              href: resources/applicationsignindetailedsummary.md
+              items:
+              - name: List sign-in details
+                href: api/reportroot-list-applicationsignindetailedsummary.md
+              - name: Get sign-in details
+                href: api/applicationsignindetailedsummary-get.md
+          - name: Azure AD SLA attainment
             items:
-            - name: List sign-in details
-              href: api/reportroot-list-applicationsignindetailedsummary.md
-            - name: Get sign-in details
-              href: api/applicationsignindetailedsummary-get.md
-        - name: Azure AD SLA attainment
-          items:
-          - name: Azure AD authentication
-            href: resources/azureadauthentication.md
-          - name: Service level agreement
-            href: resources/servicelevelagreementroot.md
-          - name: Get Azure AD authentication
-            href: api/azureadauthentication-get.md
-        - name: Registration and usage
+            - name: Azure AD authentication
+              href: resources/azureadauthentication.md
+            - name: Service level agreement
+              href: resources/servicelevelagreementroot.md
+            - name: Get Azure AD authentication
+              href: api/azureadauthentication-get.md
+          - name: Registration and usage
+            items:
+            - name: Overview
+              href: resources/authenticationmethods-usage-insights-overview.md
+            - name: Credential usage summary
+              href: resources/credentialusagesummary.md
+              items:
+              - name: List
+                href: api/reportroot-getcredentialusagesummary.md
+            - name: Credential user registration count
+              href: resources/credentialuserregistrationcount.md
+              items:
+              - name: Get
+                href: api/reportroot-getcredentialuserregistrationcount.md
+            - name: Credential user registration details (deprecated)
+              href: resources/credentialuserregistrationdetails.md
+              items:
+              - name: List
+                href: api/reportroot-list-credentialuserregistrationdetails.md
+            - name: User credential usage details
+              href: resources/usercredentialusagedetails.md
+              items:
+              - name: List
+                href: api/reportroot-list-usercredentialusagedetails.md
+            - name: User registration details
+              href: resources/userregistrationdetails.md
+              items:
+              - name: List
+                href: api/authenticationmethodsroot-list-userregistrationdetails.md
+              - name: Get
+                href: api/userregistrationdetails-get.md
+            - name: Users registered by feature
+              href: resources/userregistrationfeaturesummary.md
+              items:
+              - name: List
+                href: api/authenticationmethodsroot-usersregisteredbyfeature.md
+            - name: Users registered by method
+              href: resources/userregistrationmethodsummary.md
+              items:
+              - name: List
+                href: api/authenticationmethodsroot-usersregisteredbymethod.md
+          - name: Service principal activity
+            href: resources/serviceprincipalsigninactivity.md
+            items:
+            - name: List
+              href: api/reportroot-list-serviceprincipalsigninactivities.md
+            - name: Get
+              href: api/serviceprincipalsigninactivity-get.md
+        - name: Azure AD audit logs
           items:
           - name: Overview
-            href: resources/authenticationmethods-usage-insights-overview.md
-          - name: Credential usage summary
-            href: resources/credentialusagesummary.md
+            href: resources/azure-ad-auditlog-overview.md
+          - name: Directory audit
+            href: resources/directoryaudit.md
             items:
-            - name: List
-              href: api/reportroot-getcredentialusagesummary.md
-          - name: Credential user registration count
-            href: resources/credentialuserregistrationcount.md
+            - name: List directory audits
+              href: api/directoryaudit-list.md
+            - name: Get directory audit
+              href: api/directoryaudit-get.md
+          - name: Sign-in
+            href: resources/signin.md
             items:
-            - name: Get
-              href: api/reportroot-getcredentialuserregistrationcount.md
-          - name: Credential user registration details (deprecated)
-            href: resources/credentialuserregistrationdetails.md
+            - name: List sign-ins
+              href: api/signin-list.md
+            - name: Get sign-in
+              href: api/signin-get.md
+            - name: Confirm safe
+              href: api/signin-confirmsafe.md
+            - name: Confirm compromised
+              href: api/signin-confirmcompromised.md
+          - name: Provisioning
+            href: resources/provisioningobjectsummary.md
             items:
-            - name: List
-              href: api/reportroot-list-credentialuserregistrationdetails.md
-          - name: User credential usage details
-            href: resources/usercredentialusagedetails.md
-            items:
-            - name: List
-              href: api/reportroot-list-usercredentialusagedetails.md
-          - name: User registration details
-            href: resources/userregistrationdetails.md
-            items:
-            - name: List
-              href: api/authenticationmethodsroot-list-userregistrationdetails.md
-            - name: Get
-              href: api/userregistrationdetails-get.md
-          - name: Users registered by feature
-            href: resources/userregistrationfeaturesummary.md
-            items:
-            - name: List
-              href: api/authenticationmethodsroot-usersregisteredbyfeature.md
-          - name: Users registered by method
-            href: resources/userregistrationmethodsummary.md
-            items:
-            - name: List
-              href: api/authenticationmethodsroot-usersregisteredbymethod.md
-        - name: Service principal activity
-          href: resources/serviceprincipalsigninactivity.md
-          items:
-          - name: List
-            href: api/reportroot-list-serviceprincipalsigninactivities.md
-          - name: Get
-            href: api/serviceprincipalsigninactivity-get.md
+            - name: List provisioning
+              href: api/provisioningobjectsummary-list.md
       - name: Microsoft 365 usage reports
         items:
         - name: Overview

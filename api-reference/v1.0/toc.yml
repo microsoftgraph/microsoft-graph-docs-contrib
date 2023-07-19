@@ -7298,50 +7298,60 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
       - name: Reports
         items:
+        - name: Identity and access reports
+          items:
           - name: Azure AD activity reports
+            href: resources/report-identity-access.md
             items:
-              - name: Overview
-                href: resources/azure-ad-auditlog-overview.md
-              - name: Directory audit
-                href: resources/directoryaudit.md
-                items:
-                  - name: List directory audits
-                    href: api/directoryaudit-list.md
-                  - name: Get directory audit
-                    href: api/directoryaudit-get.md
-              - name: Sign-in
-                href: resources/signin.md
-                items:
-                  - name: List sign-ins
-                    href: api/signin-list.md
-                  - name: Get sign-in
-                    href: api/signin-get.md
-              - name: Provisioning
-                href: resources/provisioningobjectsummary.md
-                items:
-                  - name: List provisioning
-                    href: api/provisioningobjectsummary-list.md
-          - name: Identity and access reports
+            - name: Registration and usage
+              items:
+                - name: User registration details
+                  href: resources/userregistrationdetails.md
+                  items:
+                    - name: List
+                      href: api/authenticationmethodsroot-list-userregistrationdetails.md
+                    - name: Get
+                      href: api/userregistrationdetails-get.md
+                - name: Users registered by feature
+                  href: resources/userregistrationfeaturesummary.md
+                  items:
+                    - name: List
+                      href: api/authenticationmethodsroot-usersregisteredbyfeature.md
+                - name: Users registered by method
+                  href: resources/userregistrationmethodsummary.md
+                  items:
+                    - name: List
+                      href: api/authenticationmethodsroot-usersregisteredbymethod.md
+            - name: Service principal activity
+              href: resources/serviceprincipalsigninactivity.md
+              items:
+              - name: List
+                href: api/reportroot-list-serviceprincipalsigninactivities.md
+              - name: Get
+                href: api/serviceprincipalsigninactivity-get.md
+          - name: Azure AD audit logs
             items:
-              - name: Registration and usage
-                items:
-                  - name: User registration details
-                    href: resources/userregistrationdetails.md
-                    items:
-                      - name: List
-                        href: api/authenticationmethodsroot-list-userregistrationdetails.md
-                      - name: Get
-                        href: api/userregistrationdetails-get.md
-                  - name: Users registered by feature
-                    href: resources/userregistrationfeaturesummary.md
-                    items:
-                      - name: List
-                        href: api/authenticationmethodsroot-usersregisteredbyfeature.md
-                  - name: Users registered by method
-                    href: resources/userregistrationmethodsummary.md
-                    items:
-                      - name: List
-                        href: api/authenticationmethodsroot-usersregisteredbymethod.md
+            - name: Overview
+              href: resources/azure-ad-auditlog-overview.md
+            - name: Directory audit
+              href: resources/directoryaudit.md
+              items:
+              - name: List directory audits
+                href: api/directoryaudit-list.md
+              - name: Get directory audit
+                href: api/directoryaudit-get.md
+            - name: Sign-in
+              href: resources/signin.md
+              items:
+              - name: List sign-ins
+                href: api/signin-list.md
+              - name: Get sign-in
+                href: api/signin-get.md
+            - name: Provisioning
+              href: resources/provisioningobjectsummary.md
+              items:
+              - name: List provisioning
+                href: api/provisioningobjectsummary-list.md              
           - name: Microsoft 365 usage reports
             items:
               - name: Overview
