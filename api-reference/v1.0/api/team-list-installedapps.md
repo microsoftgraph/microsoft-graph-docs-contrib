@@ -13,7 +13,6 @@ Namespace: microsoft.graph
 
 Retrieve a list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).
 
-
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 
@@ -318,6 +317,11 @@ GET https://graph.microsoft.com/v1.0/teams/acda442c-78d2-491b-8204-4ef5019c0193/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+>**Note:**
+>
+> * This example works only for side loaded or organization apps. 
+> * By design, the externalId isn't populated for apps with distributionMethod type as `store`. For the apps published to the global store, the `id` of the app is same as the `id` in the app manifest.
 
 #### Response
 
