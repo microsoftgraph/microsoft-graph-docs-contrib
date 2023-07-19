@@ -494,7 +494,7 @@ Content-Type: application/json
 
 ### Example 4: Bulk upload for deleting an existing user
 
-The following bulk request illustrates how to delete an existing Azure AD / on-premises AD user.  This example assumes you have configured a mapping that uses  **externalId** as the matching identifier.  
+The following bulk request illustrates how to delete an existing Azure AD or on-premises AD user.  This example assumes you have configured a mapping that uses **externalId** as the matching identifier.  
 
 > [!NOTE]
 > If the target directory for the operation is Azure AD, then the matched user is soft-deleted. The user can be seen on the Microsoft Azure portal **Deleted users** page for the next 30 days and can be restored during that time.
