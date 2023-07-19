@@ -34,6 +34,7 @@ None.
 |connectedOrganizations|[connectedOrganization](../resources/connectedorganization.md) collection|References to a directory or domain of another organization whose users can request access.|
 |resourceEnvironments|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) collection| A reference to the geolocation environments in which a resource is located.|
 |resourceRequests|[accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) collection|Represents a request to add or remove a resource to or from a catalog respectively. |
+|resources|[accessPackageResource](../resources/accesspackageresource.md) collection|The resources associated with the catalogs. |
 |settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)| The settings that control the behavior of Azure AD entitlement management.|
 
 ## JSON representation

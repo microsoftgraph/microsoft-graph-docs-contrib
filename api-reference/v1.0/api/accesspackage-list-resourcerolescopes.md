@@ -1,5 +1,5 @@
 ---
-title: "List accessPackageResourceRoleScopes"
+title: "List resourceRoleScopes"
 description: "Retrieve a list of accesspackageresourcerolescope objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# List accessPackageResourceRoleScopes
+# List resourceRoleScopes
 
 Namespace: microsoft.graph
 
@@ -60,7 +60,7 @@ The following is an example of the request.
   "name": "get_accesspackageresourcerolescopes"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/{id}?$expand=resourceRoleScopes($expand=role,scope)
 ```
 

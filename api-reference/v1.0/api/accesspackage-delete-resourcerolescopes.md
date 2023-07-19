@@ -1,13 +1,13 @@
 ---
-title: "Remove resourceRoleScope from resourceRoleScopes"
-description: "Remove a resourceRoleScope from the resourceRoleScopes of an access package."
+title: "Remove resourceRoleScope from an access package"
+description: "Remove a resourceRoleScope from an access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Remove resourceRoleScope from resourceRoleScopes
+# Remove resourceRoleScope from an accessPackage
 
 Namespace: microsoft.graph
 

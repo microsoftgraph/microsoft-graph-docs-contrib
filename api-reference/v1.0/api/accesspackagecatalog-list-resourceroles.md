@@ -1,5 +1,5 @@
 ---
-title: "List accessPackageResourceRoles"
+title: "List resourceRoles"
 description: "Retrieve a list of accessPackageResourceRole objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# List accessPackageResourceRoles
+# List resourceRoles
 
 Namespace: microsoft.graph
 
@@ -33,7 +33,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/
 
 ## Optional query parameters
 
-This method uses OData query parameters to construct the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$expand` OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -62,7 +62,7 @@ The following is an example of the request.
   "name": "get_accesspackageresourceroles"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/15d889df-3eb8-4e9b-bfb4-b1908849aec4/resourceRoles?$filter=(originSystem+eq+%27AadGroup%27+and+resource/id+eq+%27a35bef72-a8aa-4ca3-af30-f6b2ece7208f%27)&$expand=resource
 ```
 

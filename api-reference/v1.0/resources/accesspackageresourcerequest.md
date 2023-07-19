@@ -1,6 +1,6 @@
 ---
 title: "accessPackageResourceRequest resource type"
-description: "An access package resource request is a request to a add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages."
+description: "An access package resource request is a request to add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
@@ -18,7 +18,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List accessPackageResourceRequests](../api/entitlementmanagement-list-resourcerequests.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) collection | Retrieve a list of **accessPackageResourceRequest** objects. |
-| [Create accessPackageResourceRequest](../api/entitlementmanagement-post-resourcerequests.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Create a new **accessPackageResourceRequest** object. |
+| [Create accessPackageResourceRequest](../api/entitlementmanagement-post-resourcerequests.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Add, update or remove a **accessPackageResource** from a catalog. |
 
 ## Properties
 
@@ -33,10 +33,11 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|resource|[accessPackageResource](accesspackageresource.md)| Nullable.|
 |catalog|[accessPackageCatalog](accesspackagecatalog.md)| Read-only.|
+|resource|[accessPackageResource](accesspackageresource.md)| Nullable.|
 
-## JSON representatio
+
+## JSON representation
 
 The following is a JSON representation of the resource.
 

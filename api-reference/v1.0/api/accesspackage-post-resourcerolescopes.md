@@ -1,5 +1,5 @@
 ---
-title: "Create accessPackageResourceRoleScope"
+title: "Create resourceRoleScope"
 description: "Create a new accessPackageResourceRoleScope for adding a resource role to an access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Create accessPackageResourceRoleScope
+# Create resourceRoleScope
 
 Namespace: microsoft.graph
 

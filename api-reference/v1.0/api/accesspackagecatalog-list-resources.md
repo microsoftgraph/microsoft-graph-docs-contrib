@@ -1,5 +1,5 @@
 ---
-title: "List accessPackageResources"
+title: "List resources"
 description: "Retrieve a list of accesspackageresource objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List accessPackageResources
+# List resources
 
 Namespace: microsoft.graph
 
@@ -60,7 +60,7 @@ The following is an example of the request, using `$expand` to return resource s
   "name": "get_accesspackageresources"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/{id}/resources?$expand=scopes
 ```
 
