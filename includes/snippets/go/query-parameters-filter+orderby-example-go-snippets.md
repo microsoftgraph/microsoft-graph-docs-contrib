@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
@@ -18,11 +18,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "Subject eq 'welcome' and importance eq 'normal'"
 
-requestParameters := &graphconfig.ItemMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemMessagesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Orderby: [] string {"subject","importance","receivedDateTime desc"},
 }
-configuration := &graphconfig.ItemMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

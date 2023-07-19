@@ -40,10 +40,18 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 ```
 
+To get all attendance reports for a virtual event session:
+<!-- { "blockType": "ignored" } -->
+``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
+```
+
 > [!TIP]
 >
 >- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
+>- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
+>- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
 
 ## Optional query parameters
 
@@ -67,6 +75,8 @@ If successful, this method returns a `200 OK` response code and a list of [meeti
 > The **attendanceRecords** property is empty in the response.
 
 ## Example
+
+### Example 1: List attendance reports for an online meeting
 
 ### Request
 
@@ -106,6 +116,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-attendancereports-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-attendancereports-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -139,6 +153,83 @@ Content-Type: application/json
       "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
       "meetingEndDateTime": "2021-10-04T23:18:57.563Z",
       "attendanceRecords": []
+    }
+  ]
+}
+```
+### Example 2 : List attendance reports for a virtual event session
+
+#### Request
+
+The following is an example of a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_virtualevent_attendancereport"
+}
+-->
+``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-virtualevent-attendancereport-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-virtualevent-attendancereport-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-virtualevent-attendancereport-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-virtualevent-attendancereport-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-virtualevent-attendancereport-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-virtualevent-attendancereport-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-virtualevent-attendancereport-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.meetingAttendanceReport)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/virtualEvents/webinars('336f94f4-3a81-5130-43e9-88f3-fcb3582cde37')/sessions('a0f934c324b7785c')/attendanceReports/$entity",
+  "value": [
+    {
+      "id": "c9b6db1c-d5eb-427d-a5c0-2022d7",
+      "totalParticipantCount": 1,
+      "meetingStartDateTime": "2021-10-05T04:38:23.945Z",
+      "meetingEndDateTime": "2021-10-05T04:43:49.77Z"
+    },
+    {
+      "id": "2c2c2454-7613-4d6e-9c7c-4ce89",
+      "totalParticipantCount": 2,
+      "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
+      "meetingEndDateTime": "2021-10-04T23:18:57.563Z"
     }
   ]
 }

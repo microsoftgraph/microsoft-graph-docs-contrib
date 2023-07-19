@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object. Can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
+Delete a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object. A custom task extension  can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
 
 ## Permissions
 
@@ -87,8 +87,8 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/cu
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-delete-customtaskextension-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-delete-customtaskextension-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-delete-customtaskextension-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
+	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
 	  //other-imports
 )
 
@@ -18,10 +18,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "source eq 'Tenant'"
 
-requestParameters := &graphconfig.SecurityAttackSimulationPayloadsRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.SecurityAttackSimulationPayloadsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.SecurityAttackSimulationPayloadsRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.SecurityAttackSimulationPayloadsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -18,7 +18,6 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewCrossTenantAccessPolicy()
 allowedCloudEndpoints := []string {
 	"microsoftonline.us",
-
 }
 requestBody.SetAllowedCloudEndpoints(allowedCloudEndpoints)
 

@@ -9,8 +9,8 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/InformationProtection/Policy/Labels/EvaluateClassificationResults"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/informationprotection"
+	  graphinformationprotection "github.com/microsoftgraph/msgraph-beta-sdk-go/informationprotection"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
@@ -20,10 +20,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphconfig.InformationProtectionPolicyLabelsEvaluateClassificationResultsRequestBuilderPostRequestConfiguration{
+configuration := &graphinformationprotection.InformationProtectionPolicyLabelsEvaluateClassificationResultsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewEvaluateClassificationResultsPostRequestBody()
+requestBody := graphinformationprotection.NewEvaluateClassificationResultsPostRequestBody()
 contentInfo := graphmodels.NewContentInfo()
 format := graphmodels.DEFAULT_CONTENTFORMAT 
 contentInfo.SetFormat(&format) 
@@ -49,7 +49,6 @@ classificationResult.SetConfidenceLevel(&confidenceLevel)
 
 classificationResults := []graphmodels.ClassificationResultable {
 	classificationResult,
-
 }
 requestBody.SetClassificationResults(classificationResults)
 

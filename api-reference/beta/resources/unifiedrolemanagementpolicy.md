@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Specifies the various policies associated with scopes and roles. For policies that apply to Azure RBAC, use the [Azure REST PIM API for role management policies](/rest/api/authorization/role-management-policies).
 
-Currently, all policies and associated rules are read-only.
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
@@ -22,6 +20,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List unifiedRoleManagementPolicies](../api/policyroot-list-rolemanagementpolicies.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) collection|Get role management policies and their details.|
 |[Get unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|Retrieve the details of a role management policy.|
+|[Update unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-update.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|Update the details of a role management policy.|
 |[List rules](../api/unifiedrolemanagementpolicy-list-rules.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) collection|Get the rules defined for a role management policy.|
 |[Get unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Retrieve a rule defined for a role management policy.|
 |[Update unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Update a rule defined for a role management policy.|
@@ -38,7 +37,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[identity](../resources/identity.md)|The identity who last modified the role setting.|
 |lastModifiedDateTime|DateTimeOffset|The time when the role setting was last modified.|
 |scopeId|String|The identifier of the scope where the policy is created. Can be `/` for the tenant or a group ID. Required.|
-|scopeType|String|The type of the scope where the policy is created. One of `Directory`, `DirectoryRole`. Required.|
+|scopeType|String|The type of the scope where the policy is created. One of `Directory`, `DirectoryRole`, `Group`. Required.|
 
 ## Relationships
 |Relationship|Type|Description|

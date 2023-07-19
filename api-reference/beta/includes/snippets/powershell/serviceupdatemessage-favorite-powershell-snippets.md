@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
 $params = @{
 	messageIds = @(
@@ -13,6 +13,6 @@ $params = @{
 	)
 }
 
-Invoke-MgFavoriteServiceAnnouncementMessage -BodyParameter $params
+Invoke-MgBetaFavoriteServiceAnnouncementMessage -BodyParameter $params
 
 ```

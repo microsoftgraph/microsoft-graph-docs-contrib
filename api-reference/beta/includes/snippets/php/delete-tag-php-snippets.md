@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TagRequestBuilderDeleteRequestConfiguration();
 $queryParameters = TagRequestBuilderDeleteRequestConfiguration::createQueryParameters();
-$queryParameters->forcedelete = true;
+$queryParameters->forcedelete = "true";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

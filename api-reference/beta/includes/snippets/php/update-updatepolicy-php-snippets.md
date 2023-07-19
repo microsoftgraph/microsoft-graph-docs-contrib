@@ -16,7 +16,7 @@ $deploymentSettings = new DeploymentSettings();
 $deploymentSettings->set@odatatype('microsoft.graph.windowsUpdates.deploymentSettings');
 
 $deploymentSettingsSchedule = new ScheduleSettings();
-$deploymentSettingsScheduleGradualRollout = new GradualRolloutSettings();
+$deploymentSettingsScheduleGradualRollout = new RateDrivenRolloutSettings();
 $deploymentSettingsScheduleGradualRollout->set@odatatype('#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings');
 
 $deploymentSettingsScheduleGradualRollout->setDurationBetweenOffers(new \DateInterval('P1D'));

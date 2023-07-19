@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Users/Item/Presence/ClearPresence"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewClearPresencePostRequestBody()
+requestBody := graphusers.NewClearPresencePostRequestBody()
 sessionId := "22553876-f5ab-4529-bffb-cfe50aa89f87"
 requestBody.SetSessionId(&sessionId) 
 

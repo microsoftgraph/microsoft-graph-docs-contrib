@@ -1,7 +1,7 @@
 ---
 title: "Create thread"
 description: "Create a new thread in the specified conversation."
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -56,8 +56,7 @@ The following is an example of the request.
   "name": "create_conversationthread_from_conversation",
   "sampleKeys": ["4d81ce71-486c-41e9-afc5-e41bf2d0722a", "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY="]
 }-->
-```msgraph-interactive
-}-->
+
 ```http
 POST https://graph.microsoft.com/beta/groups/4d81ce71-486c-41e9-afc5-e41bf2d0722a/conversations/AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY=/threads
 Content-type: application/json

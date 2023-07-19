@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/employeeExperience/learningProviders
 [!INCLUDE [sample-code](../includes/snippets/php/list-learningprovider-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-learningprovider-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -109,7 +113,8 @@ Content-type: application/json
             "longLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
             "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
             "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
-            "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
+            "loginWebUrl": "https://www.linkedin.com/learning-login/teams",
+            "isCourseActivitySyncEnabled": true
         },
         {
             "id": "13727311-e7bb-470d-8b20-6a23d9030d70",
@@ -118,7 +123,8 @@ Content-type: application/json
             "longLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
             "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
             "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
-            "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
+            "loginWebUrl": "https://www.linkedin.com/learning-login/teams",
+            "isCourseActivitySyncEnabled": false
         }
     ]
 }

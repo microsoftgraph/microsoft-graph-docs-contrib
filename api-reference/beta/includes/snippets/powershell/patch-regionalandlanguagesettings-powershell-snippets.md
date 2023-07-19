@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
 	authoringLanguages = @(
@@ -21,6 +21,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgUserSettingRegionalAndLanguageSetting -UserId $userId -BodyParameter $params
+Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId $userId -BodyParameter $params
 
 ```

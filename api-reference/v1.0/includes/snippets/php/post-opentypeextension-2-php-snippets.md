@@ -9,11 +9,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new Extension();
+$requestBody = new OpenTypeExtension();
 $requestBody->set@odatatype('microsoft.graph.openTypeExtension');
 
+$requestBody->setExtensionName('Com.Contoso.Referral');
+
 $additionalData = [
-		'extensionName' => 'Com.Contoso.Referral', 
 		'companyName' => 'Wingtip Toys', 
 		'dealValue' => 500050,
 		'expirationDate' => '2015-12-03T10:00:00.000Z', 

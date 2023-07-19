@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Create allowedValue
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Create a new [allowedValue](../resources/allowedvalue.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -23,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.ReadWrite.All|
 
-The signed-in user must also be assigned the Attribute Definition Administrator [directory role](/azure/active-directory/roles/permissions-reference). By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
+[!INCLUDE [rbac-customsecurityattibutes-apis-write](../includes/rbac-for-apis/rbac-customsecurityattibutes-apis-write.md)]
 
 ## HTTP request
 
@@ -35,24 +37,23 @@ The signed-in user must also be assigned the Attribute Definition Administrator 
 POST /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues
 ```
 
-
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [allowedValue](../resources/allowedvalue.md) object.
 
-The following table shows the properties that are required when you create the [allowedValue](../resources/allowedvalue.md).
+The following table shows the properties that are required when you create an [allowedValue](../resources/allowedvalue.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Identifier for the predefined value. Can be up to 64 characters long and include Unicode characters. Can include spaces, but some special characters are not allowed. Cannot be changed later. Case sensitive. Required.|
 |isActive|Boolean|Indicates whether the predefined value is active or deactivated. If set to `false`, this predefined value cannot be assigned to any additional supported directory objects. Required.|
-
-
 
 ## Response
 
@@ -60,15 +61,13 @@ If successful, this method returns a `201 Created` response code and an [allowed
 
 ## Examples
 
-### Example: Add a predefined value
+### Request
 
 The following example adds a predefined value to a custom security attribute definition.
 
 + Attribute set: `Engineering`
 + Attribute: `Project`
 + Predefined value: `Alpine`
-
-#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -111,9 +110,16 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-allowedvalue-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-allowedvalue-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### Response
+### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

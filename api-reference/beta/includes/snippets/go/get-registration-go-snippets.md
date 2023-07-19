@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.ItemOnlineMeetingItemRegistrationRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemOnlineMeetingItemRegistrationRequestBuilderGetQueryParameters{
 	Expand: [] string {"microsoft.graph.meetingRegistration/customQuestions"},
 }
-configuration := &graphconfig.ItemOnlineMeetingItemRegistrationRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemOnlineMeetingItemRegistrationRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

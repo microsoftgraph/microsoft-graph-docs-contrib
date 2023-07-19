@@ -60,15 +60,10 @@ var requestBody = new Call
 	{
 		Modality.Audio,
 	},
-	MediaConfig = new MediaConfig
+	MediaConfig = new AppHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.appHostedMediaConfig",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"blob" , "<Media Session Configuration>"
-			},
-		},
+		Blob = "<Media Session Configuration>",
 	},
 	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a",
 };

@@ -44,7 +44,6 @@ relatedContact1.SetAccessConsent(&accessConsent)
 relatedContacts := []graphmodels.RelatedContactable {
 	relatedContact,
 	relatedContact1,
-
 }
 requestBody.SetRelatedContacts(relatedContacts)
 

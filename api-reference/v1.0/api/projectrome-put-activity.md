@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).
+Create a new or replace an existing [user activity](../resources/projectrome-activity.md) for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).
 
 ## Permissions
 
@@ -55,38 +55,33 @@ If successful, this method returns the `201 Created` response code if the activi
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
-    "blockType": "ignored",
-    "name": "upsert_activity"
+    "blockType": "request",
+    "name": "upsert_activity_v1_e1"
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/v1.0/me/activities/3F12345
 Content-type: application/json
 
 {
+  "activitySourceHost": "https://contoso.com",
+  "createdDateTime": "2017-06-09T20:54:43.969Z",
+  "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
+  "id": "14332800362997268276",
   "appActivityId": "/article?12345",
-  "activitySourceHost": "https://www.contoso.com",
-  "userTimezone": "Africa/Casablanca",
-  "appDisplayName": "Contoso, Ltd.",
-  "activationUrl": "https://www.contoso.com/article?id=12345",
-  "contentUrl": "https://www.contoso.com/article?id=12345",
-  "fallbackUrl": "https://www.contoso.com/article?id=12345",
-  "contentInfo": {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "author": "Jennifer Booth",
-    "name": "How to Tie a Reef Knot"
-  },
+  "status": "updated",
+  "expirationDateTime": "2017-02-26T20:20:48.114Z",
   "visualElements": {
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
-      "alternateText": "Contoso, Ltd.",
+      "alternateText": "Contoso Ltd",
       "addImageQuery": false
     },
-    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
-    "displayText": "Contoso How-To: How to Tie a Reef Knot",
     "content": {
       "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
       "type": "AdaptiveCard",
@@ -101,18 +96,21 @@ Content-type: application/json
 }
 ```
 
-<!-- markdownlint-disable MD024 -->
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upsert-activity-v1-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
 The following is an example of the response.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "response",
     "truncated": true,
     "@odata.type": "microsoft.graph.userActivity"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -131,7 +129,7 @@ Content-Type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": "false"
+      "addImageQuery": false
     },
     "backgroundColor": "#ff0000",
     "content": {
@@ -167,38 +165,33 @@ This example creates a new activity and a history item for that activity in one 
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
-    "blockType": "ignored",
-    "name": "upsert_activity"
+    "blockType": "request",
+    "name": "upsert_activity2_v1_e2"
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/v1.0/me/activities/12345
 Content-type: application/json
 
 {
+  "activitySourceHost": "https://contoso.com",
+  "createdDateTime": "2017-06-09T20:54:43.969Z",
+  "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
+  "id": "14332800362997268276",
   "appActivityId": "/article?12345",
-  "activitySourceHost": "https://www.contoso.com",
-  "userTimezone": "Africa/Casablanca",
-  "appDisplayName": "Contoso, Ltd.",
-  "activationUrl": "https://www.contoso.com/article?id=12345",
-  "contentUrl": "https://www.contoso.com/article?id=12345",
-  "fallbackUrl": "https://www.contoso.com/article?id=12345",
-  "contentInfo": {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "author": "Jennifer Booth",
-    "name": "How to Tie a Reef Knot"
-  },
+  "status": "updated",
+  "expirationDateTime": "2017-02-26T20:20:48.114Z",
   "visualElements": {
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
-      "alternateText": "Contoso, Ltd.",
-      "addImageQuery": "false"
+      "alternateText": "Contoso Ltd",
+      "addImageQuery": false
     },
-    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
-    "displayText": "Contoso How-To: How to Tie a Reef Knot",
     "content": {
       "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
       "type": "AdaptiveCard",
@@ -220,12 +213,18 @@ Content-type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upsert-activity2-v1-e2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 The following is an example of the response.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "response",
     "truncated": true,
     "@odata.type": "microsoft.graph.userActivity"
 } -->
@@ -248,7 +247,7 @@ Content-Type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": "false"
+      "addImageQuery": false
     },
     "backgroundColor": "#ff0000",
     "content": {

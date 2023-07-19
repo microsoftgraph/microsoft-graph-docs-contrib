@@ -8,37 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.AdministrativeUnits.Item.Members.MembersPostRequestBody
+var requestBody = new Group
 {
-	AdditionalData = new Dictionary<string, object>
+	OdataType = "#microsoft.graph.group",
+	Description = "Self help community for golf",
+	DisplayName = "Golf Assist",
+	GroupTypes = new List<string>
 	{
-		{
-			"@odata.type" , "#microsoft.graph.group"
-		},
-		{
-			"description" , "Self help community for golf"
-		},
-		{
-			"displayName" , "Golf Assist"
-		},
-		{
-			"groupTypes" , new List<string>
-			{
-				"Unified",
-			}
-		},
-		{
-			"mailEnabled" , true
-		},
-		{
-			"mailNickname" , "golfassist"
-		},
-		{
-			"securityEnabled" , false
-		},
+		"Unified",
 	},
+	MailEnabled = true,
+	MailNickname = "golfassist",
+	SecurityEnabled = false,
 };
-await graphClient.AdministrativeUnits["{administrativeUnit-id}"].Members.PostAsync(requestBody);
+var result = await graphClient.AdministrativeUnits["{administrativeUnit-id}"].Members.PostAsync(requestBody);
 
 
 ```

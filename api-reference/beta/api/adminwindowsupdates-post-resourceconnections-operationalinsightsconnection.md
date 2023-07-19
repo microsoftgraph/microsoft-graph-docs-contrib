@@ -110,6 +110,10 @@ Content-length: 97
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-operationalinsightsconnection-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-operationalinsightsconnection-from--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

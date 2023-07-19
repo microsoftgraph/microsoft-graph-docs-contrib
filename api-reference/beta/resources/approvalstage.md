@@ -25,10 +25,8 @@ In PIM, defines the settings of the approval stages in a [unifiedRoleManagementP
 | isApproverJustificationRequired |Boolean | Indicates whether the approver is required to provide a justification for approving a request. |
 | isEscalationEnabled |Boolean | If true, then one or more escalation approvers are configured in this approval stage. |
 | escalationTimeInMinutes |Int32 | If escalation is required, the time a request can be pending a response from a primary approver. |
-| primaryApprovers | [userSet](userset.md) collection| The users who will be asked to approve requests. A collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md). When creating or updating a [policy](accesspackageassignmentpolicy.md), include at least one **userSet** in this collection. |
+| primaryApprovers | [userSet](userset.md) collection| The users who will be asked to approve requests. A collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), [externalSponsors](externalsponsors.md) and [targetUserSponsors](targetusersponsors.md). When creating or updating a [policy](accesspackageassignmentpolicy.md), include at least one **userSet** in this collection. |
 | escalationApprovers | [userSet](userset.md) collection| If escalation is enabled and the primary approvers do not respond before the escalation time, the escalationApprovers are the users who will be asked to approve requests. This can be a collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md).  When creating or updating a [policy](accesspackageassignmentpolicy.md), if there are no escalation approvers, or escalation approvers are not required for the stage, the value of this property should be an empty collection.|
-
-
 
 ## JSON representation
 

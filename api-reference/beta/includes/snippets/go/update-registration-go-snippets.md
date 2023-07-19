@@ -39,7 +39,6 @@ meetingSpeaker1.SetBio(&bio)
 speakers := []graphmodels.MeetingSpeakerable {
 	meetingSpeaker,
 	meetingSpeaker1,
-
 }
 requestBody.SetSpeakers(speakers)
 

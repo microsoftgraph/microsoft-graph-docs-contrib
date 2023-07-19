@@ -43,20 +43,17 @@ requestBody.SetLastModifiedDateTime(&lastModifiedDateTime)
 contributors := []string {
 	"Lina Wagner",
 	"Lisa Richter",
-
 }
 requestBody.SetContributors(contributors)
 additionalTags := []string {
 	"Create private or public teams",
 	"Add members to teams",
-
 }
 requestBody.SetAdditionalTags(additionalTags)
 skillTags := []string {
 	"Create teams",
 	"Teams channels",
 	"Teams members",
-
 }
 requestBody.SetSkillTags(skillTags)
 isActive := true

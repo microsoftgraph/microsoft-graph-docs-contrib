@@ -23,7 +23,6 @@ dataSubjectType := graphmodels.DATASUBJECTTYPE_GRAPH_MICROSOFT_DATASUBJECTTYPE
 requestBody.SetDataSubjectType(&dataSubjectType) 
 regulations := []string {
 	"String",
-
 }
 requestBody.SetRegulations(regulations)
 displayName := "String"

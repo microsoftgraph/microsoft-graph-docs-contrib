@@ -51,10 +51,9 @@ pauseAfterEstimate := true
 requestBody.SetPauseAfterEstimate(&pauseAfterEstimate) 
 regulations := []string {
 	"CCPA",
-
 }
 requestBody.SetRegulations(regulations)
-siteLocations := graphmodels.NewSubjectRightsRequestSiteLocation()
+siteLocations := graphmodels.NewSubjectRightsRequestAllSiteLocation()
 requestBody.SetSiteLocations(siteLocations)
 
 
@@ -64,7 +63,6 @@ user.SetId(&id)
 
 approvers := []graphmodels.Userable {
 	user,
-
 }
 requestBody.SetApprovers(approvers)
 

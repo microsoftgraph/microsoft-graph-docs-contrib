@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
 	  //other-imports
 )
 
@@ -23,12 +23,12 @@ headers.Add("ConsistencyLevel", "eventual")
 requestFilter := "mailEnabled eq false and securityEnabled eq true and NOT) and membershipRuleProcessingState eq 'On'"
 requestCount := true
 
-requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.GroupsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Count: &requestCount,
 	Select: [] string {"id","membershipRule","membershipRuleProcessingState"},
 }
-configuration := &graphconfig.GroupsRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

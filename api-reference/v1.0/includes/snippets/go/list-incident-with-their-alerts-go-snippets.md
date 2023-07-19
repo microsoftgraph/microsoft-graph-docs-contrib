@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/security"
+	  graphsecurity "github.com/microsoftgraph/msgraph-sdk-go/security"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.SecurityIncidentsRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.SecurityIncidentsRequestBuilderGetQueryParameters{
 	Expand: [] string {"alerts"},
 }
-configuration := &graphconfig.SecurityIncidentsRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.SecurityIncidentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

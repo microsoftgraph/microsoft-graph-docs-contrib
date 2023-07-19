@@ -25,7 +25,6 @@ additionalData := map[string]interface{}{
 		"Employees only",
 		"Add spouse or guest",
 		"Add family",
-
 	}
 }
 requestBody.SetAdditionalData(additionalData)

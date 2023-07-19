@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-enum-contenttypes-in-site-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-enum-contenttypes-in-site-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

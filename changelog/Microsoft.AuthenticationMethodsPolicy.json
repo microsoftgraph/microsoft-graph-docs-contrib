@@ -502,5 +502,31 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
+    {
+      "ChangeList": [
+        {
+          "Id": "c9cb7b4d-85b0-4fa8-9028-9b8235f3b9b2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reportSuspiciousActivitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [reportSuspiciousActivitySettings](https://learn.microsoft.com/en-us/graph/api/resources/reportSuspiciousActivitySettings?view=graph-rest-beta) resource type.",
+          "Target": "reportSuspiciousActivitySettings"
+        },
+        {
+          "Id": "c9cb7b4d-85b0-4fa8-9028-9b8235f3b9b2",
+          "ApiChange": "Property",
+          "ChangedApiName": "reportSuspiciousActivitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `reportSuspiciousActivitySettings` property to the [authenticationMethodsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-beta) resource.",
+          "Target": "authenticationMethodsPolicy"
+        }
+      ],
+      "Id": "c9cb7b4d-85b0-4fa8-9028-9b8235f3b9b2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-30T16:57:35.0770948Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    }
   ]
 }

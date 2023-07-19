@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/a7aa99
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-contentapproval-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-contentapproval-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

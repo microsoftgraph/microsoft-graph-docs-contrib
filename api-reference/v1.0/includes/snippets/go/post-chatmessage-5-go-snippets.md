@@ -36,7 +36,6 @@ chatMessageHostedContent.SetAdditionalData(additionalData)
 
 hostedContents := []graphmodels.ChatMessageHostedContentable {
 	chatMessageHostedContent,
-
 }
 requestBody.SetHostedContents(hostedContents)
 
