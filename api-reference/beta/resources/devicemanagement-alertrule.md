@@ -50,7 +50,7 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 |cloudPcImageUploadScenario|Indicates that the alert rule was triggered for an issue with the process to upload the Cloud PC image. For a system rule, the alert rule was triggered for a failure to upload the Cloud PC image.|
 |cloudPcOnPremiseNetworkConnectionCheckScenario|Indicates that the alert rule was triggered for an issue with the on-premises network connection check. For a system rule, the alert rule was triggered for a failure with the on-premises network connection.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
-|cloudPcFrontlineInsufficientLicensesScenario|Indicates that the alert rule was triggered for the Fronline Cloud PCs where Cloud PC connections has reached max concurrency limit.|
+|cloudPcFrontlineInsufficientLicensesScenario|Indicates that the alert rule was triggered for the Fronline Cloud PCs where Cloud PC connections have reached the maximum concurrency limit.|
 
 ### ruleSeverityType values
 
