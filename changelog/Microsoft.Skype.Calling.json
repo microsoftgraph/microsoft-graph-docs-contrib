@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "939f058a-8f58-4a85-9b45-90fe16b62ee2",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowParticipantsToChangeName",
+          "ChangeType": "Addition",
+          "Description": "Added the `allowParticipantsToChangeName` property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "939f058a-8f58-4a85-9b45-90fe16b62ee2",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-07-18T00:39:09.0935047Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5bd55826-eb41-4116-820d-8629374e4ceb",
           "ApiChange": "Property",
           "ChangedApiName": "anonymizeIdentityForRoles",
