@@ -21,7 +21,7 @@
       ],
       "Id": "9405cf87-84a8-45bf-a1ed-69264c4afb7f",
       "Cloud": "Prod",
-      "Version": "v1.0",
+      "Version": "beta",
       "CreatedDateTime": "2023-06-29T01:56:49.6329133Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
