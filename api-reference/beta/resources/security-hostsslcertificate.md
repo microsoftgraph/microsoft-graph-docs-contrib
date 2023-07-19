@@ -35,8 +35,8 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|host|[host](../resources/security-host.md)|The **host** for this hostSslCertificate|
-|sslCertificate|[sslCertificate](../resources/security-sslcertificate.md)|The **sslCertificate** for this hostSslCertificate|
+|host|[microsoft.graph.security.host](../resources/security-host.md)|The **host** for this hostSslCertificate|
+|sslCertificate|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md)|The **sslCertificate** for this hostSslCertificate|
 
 ## JSON representation
 The following is a JSON representation of the resource.
