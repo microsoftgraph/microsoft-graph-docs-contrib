@@ -381,38 +381,6 @@
           "ChangeType": "Deletion",
           "Description": "Removed the `sponsorStates` property from the [intelligenceProfile](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfile?view=graph-rest-beta) resource.",
           "Target": "intelligenceProfile"
-        },
-        {
-          "Id": "b51abfa7-f2cd-43d5-bba2-5d0c1ea4c857",
-          "ApiChange": "PropertyPath",
-          "ChangedApiName": "Org.OData.Capabilities.V1.FilterRestrictions",
-          "ChangeType": "Addition",
-          "Description": "Added the [Org.OData.Capabilities.V1.FilterRestrictions](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
-          "Target": "microsoft.graph.security.intelligenceProfile"
-        },
-        {
-          "Id": "b51abfa7-f2cd-43d5-bba2-5d0c1ea4c857",
-          "ApiChange": "PropertyPath",
-          "ChangedApiName": "Org.OData.Capabilities.V1.FilterRestrictions",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **Org.OData.Capabilities.V1.FilterRestrictions** resource type",
-          "Target": "microsoft.graph.security.intelligenceProfile"
-        },
-        {
-          "Id": "b51abfa7-f2cd-43d5-bba2-5d0c1ea4c857",
-          "ApiChange": "PropertyPath",
-          "ChangedApiName": "Org.OData.Capabilities.V1.SortRestrictions",
-          "ChangeType": "Addition",
-          "Description": "Added the [Org.OData.Capabilities.V1.SortRestrictions](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
-          "Target": "microsoft.graph.security.intelligenceProfile"
-        },
-        {
-          "Id": "b51abfa7-f2cd-43d5-bba2-5d0c1ea4c857",
-          "ApiChange": "PropertyPath",
-          "ChangedApiName": "Org.OData.Capabilities.V1.SortRestrictions",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **Org.OData.Capabilities.V1.SortRestrictions** resource type",
-          "Target": "microsoft.graph.security.intelligenceProfile"
         }
       ],
       "Id": "b51abfa7-f2cd-43d5-bba2-5d0c1ea4c857",
