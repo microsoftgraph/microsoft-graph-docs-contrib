@@ -16,7 +16,7 @@ $requestBody->setPhoneType(new AuthenticationPhoneType('mobile'));
 
 
 
-$result = $graphServiceClient->me()->authentication()->phoneMethods()->byPhoneMethodId('phoneAuthenticationMethod-id')->patch($requestBody);
+$result = $graphServiceClient->users()->byUserId('user-id')->authentication()->phoneMethods()->byPhoneMethodId('phoneAuthenticationMethod-id')->patch($requestBody);
 
 
 ```

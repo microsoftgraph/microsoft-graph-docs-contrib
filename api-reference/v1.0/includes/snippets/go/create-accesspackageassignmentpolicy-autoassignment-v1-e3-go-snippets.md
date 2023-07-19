@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
@@ -37,6 +37,10 @@ requestBody.SetSpecificAllowedTargets(specificAllowedTargets)
 automaticRequestSettings := graphmodels.NewAccessPackageAutomaticRequestSettings()
 requestAccessForAllowedTargets := true
 automaticRequestSettings.SetRequestAccessForAllowedTargets(&requestAccessForAllowedTargets) 
+removeAccessWhenTargetLeavesAllowedTargets := true
+automaticRequestSettings.SetRemoveAccessWhenTargetLeavesAllowedTargets(&removeAccessWhenTargetLeavesAllowedTargets) 
+gracePeriodBeforeAccessRemoval , err := abstractions.ParseISODuration("P7D")
+automaticRequestSettings.SetGracePeriodBeforeAccessRemoval(&gracePeriodBeforeAccessRemoval) 
 requestBody.SetAutomaticRequestSettings(automaticRequestSettings)
 accessPackage := graphmodels.NewAccessPackage()
 id := "8a36831e-1527-4b2b-aff2-81259a8d8e76"

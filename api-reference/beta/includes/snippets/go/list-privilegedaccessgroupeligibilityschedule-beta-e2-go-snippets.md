@@ -12,10 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
+
+
+requestFilter := "principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'"
 
 requestParameters := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilitySchedulesRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 	Select: [] string {"accessId","principalId","groupId"},
 }
 configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilitySchedulesRequestBuilderGetRequestConfiguration{

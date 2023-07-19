@@ -61,24 +61,24 @@ GET https://graph.microsoft.com/beta/subscribedSkus/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscribedsku-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-subscribedsku-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-subscribedsku-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-subscribedsku-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-subscribedsku-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-subscribedsku-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-subscribedsku-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-subscribedsku-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-subscribedsku-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -99,23 +99,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "capabilityStatus": "capabilityStatus-value",
-  "consumedUnits": 99,
-  "prepaidUnits": {
-    "enabled": 99,
-    "suspended": 99,
-    "warning": 99
-  },
-  "servicePlans": [
-    {
-      "servicePlanId": "servicePlanId-value",
-      "servicePlanName": "servicePlanName-value",
-      "provisioningStatus": "provisioningStatus-value",
-      "appliesTo": "appliesTo-value"
-    }
-  ],
-  "skuId": "skuId-value",
-  "skuPartNumber": "skuPartNumber-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscribedSkus/$entity",
+    "capabilityStatus": "Enabled",
+    "consumedUnits": 14,
+    "id": "48a80680-7326-48cd-9935-b556b81d3a4e_c7df2760-2c81-4ef7-b578-5b5392b571df",
+    "prepaidUnits": {
+        "enabled": 25,
+        "lockedOut": 0,
+        "suspended": 0,
+        "warning": 0
+    },
+    "servicePlans": [
+        {
+            "servicePlanId": "8c098270-9dd4-4350-9b30-ba4703f3b36b",
+            "servicePlanName": "ADALLOM_S_O365",
+            "provisioningStatus": "Success",
+            "appliesTo": "User"
+        },
+        {
+            "servicePlanId": "9f431833-0334-42de-a7dc-70aa40db46db",
+            "servicePlanName": "LOCKBOX_ENTERPRISE",
+            "provisioningStatus": "Success",
+            "appliesTo": "User"
+        }
+    ],
+    "skuId": "c7df2760-2c81-4ef7-b578-5b5392b571df",
+    "skuPartNumber": "ENTERPRISEPREMIUM",
+    "appliesTo": "User"
 }
 ```
 
