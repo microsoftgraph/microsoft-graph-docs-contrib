@@ -72,7 +72,7 @@ In the request body, supply a [bulkUpload](../resources/synchronization-bulkuplo
 
 The following bulk request uses the SCIM standard Core User and Enterprise User schema. It has two user operations in the **Operations** array. You can send a maximum of 50 user operations in each bulk request.
 
-**Processing details:** The provisioning service will read the two user records. It will use the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create/update/enable/disable the user account in the directory. It will resolve the manager reference using the `manager.value` field. Specify the `externalId` of the user's manager in this field. In the example below, the provisioning service will assign *Barbara Jensen* as the manager for the *Kathy Jensen*.
+**Processing details:** The provisioning service will read the two user records. It will use the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. It will resolve the manager reference using the `manager.value` field. Specify the `externalId` of the user's manager in this field. In the example below, the provisioning service will assign *Barbara Jensen* as the manager for *Kathy Jensen*.
 
 # [HTTP](#tab/http)
 <!-- {
