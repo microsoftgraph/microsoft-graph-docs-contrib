@@ -113,8 +113,8 @@ Content-Type: application/json
       "createdDateTime": "2023-06-29T00:00:00.0000000Z",
       "acquiredDateTime": "2023-06-29T00:00:01.0000000Z",
       "completionDateTime": "2023-06-29T00:00:02.0000000Z",
-      "acquiredByPrinter": "true",
-      "copiesPrinted": "1",
+      "acquiredByPrinter": true,
+      "copiesPrinted": 1,
       "createdBy": {
         "displayName": "username",
         "userPrincipalName": "username@contoso.com",
