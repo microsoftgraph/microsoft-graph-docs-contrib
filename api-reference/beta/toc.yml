@@ -671,6 +671,14 @@ items:
           href: api/profile-get.md
         - name: Delete user's profile
           href: api/profile-delete.md
+      - name: Sponsors
+        items:
+        - name: Assign sponsors
+          href: api/user-post-sponsors.md
+        - name: List sponsors
+          href: api/user-list-sponsors.md
+        - name: Remove sponsors
+          href: api/user-delete-sponsors.md
       - name: Teamwork and communications
         items:
         - name: Installed app
@@ -12215,10 +12223,17 @@ items:
         - name: Subscribed sku
           href: resources/subscribedsku.md
           items:
-          - name: List subscribedSkus
+          - name: List
             href: api/subscribedsku-list.md
-          - name: Get subscribedSku
+          - name: Get
             href: api/subscribedsku-get.md
+        - name: Company subscription
+          href: resources/companysubscription.md
+          items:
+          - name: List
+            href: api/directory-list-subscriptions.md
+          - name: Get
+            href: api/companysubscription-get.md
         - name: Tenant information
           href: resources/tenantinformation.md
           items:
@@ -12770,7 +12785,7 @@ items:
               href: api/connectedorganization-delete-externalsponsors.md
             - name: Remove internal sponsors
               href: api/connectedorganization-delete-internalsponsors.md
-          - name: Custom access package workflow extension
+          - name: Custom access package workflow extension (deprecated)
             href: resources/customAccessPackageWorkflowExtension.md
             items:
             - name: List
