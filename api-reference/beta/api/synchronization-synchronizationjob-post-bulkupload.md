@@ -28,6 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|SynchronizationData-User.Upload|
 
+> [!NOTE]
+> This API is primarily meant for use within an application or service responsible for processing authoritative identity data and uploading it to Azure AD. Tenant admins can either [configure a service principal or managed identity](/azure/active-directory/app-provisioning/inbound-provisioning-api-grant-access) to grant permission to perform the upload. There is no separate user-assignable Azure AD built-in directory role for this API. Outside of applications that have acquired `SynchronizationData-User.Upload` permission with admin consent, only admin users with *Global Administrator* role can invoke the API.
+
 ## HTTP request
 
 <!-- {
