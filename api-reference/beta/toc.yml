@@ -16435,6 +16435,10 @@ items:
               href: api/security-host-list-subdomains.md
             - name: List trackers
               href: api/security-host-list-trackers.md
+            - name: List ssl certificate
+              href: api/security-sslcertificate-list.md
+            - name: List host ssl certificate
+              href: api/security-hostsslcertificate-list-host.md
         - name: Host component
           items:
           - name: Host component
