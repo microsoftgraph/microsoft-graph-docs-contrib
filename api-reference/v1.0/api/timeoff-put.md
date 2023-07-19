@@ -139,7 +139,7 @@ Content-type: application/json
 }
 ```
 
-**Difference between the `sharedTimeOff` and `draftTimeOff`**
+**Difference between the `sharedTimeOff` and `draftTimeOff`:**
 
 * The `sharedTimeOff` entity is visible to all team members.
 * The `draftTimeOff` entity is for draft changes that is only visible to team owners. The `draftTimeOff` changes must be shared with team members for visibility to them.
