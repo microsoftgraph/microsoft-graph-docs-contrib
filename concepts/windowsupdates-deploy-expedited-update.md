@@ -37,7 +37,7 @@ Below is an example of querying for all Windows 10 security updates that can be 
 ### Request
 
 ```http
-GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$top=3&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDateTime desc
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$top=3&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDateTime desc&$top=3
 ```
 
 ### Response
@@ -50,54 +50,87 @@ Content-Type: application/json
     "value": [
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-            "id": "bd9554dc-2737-4e3c-b794-fa2b8b3f4a30",
-            "displayName": "MM/DD/YYYY - YYYY.MM B Security Updates for Windows 10 and later",
-            "catalogName": "YYYY-MM Cumulative Update for Windows 10 and later",
-            "shortName": "YYYY.MM B",
-            "releaseDateTime": "String (timestamp)",
+            "id": "b861eb80dbbb0819939b17afa87714497815ce15e79f15a7c1e10473870fbb4b",
+            "displayName": "07/11/2023 - 2023.07 B SecurityUpdate for Windows 10 and later",
+            "catalogName": "2023-07 Cumulative Update for Windows 10 and later",
+            "shortName": "2023.07 B",
+            "releaseDateTime": "2023-07-11T00:00:00Z",
             "deployableUntilDateTime": null,
             "isExpeditable": true,
             "qualityUpdateClassification": "security",
             "qualityUpdateCadence": "monthly",
             "cveSeverityInformation": {
-                "maxSeverityLevel": "String",
-                "maxBaseScore": "Double",
-                "exploitedCves": Collection(microsoft.graph.cveInformation")
+                "maxSeverity": "critical",
+                "maxBaseScore": 9.8,
+                "exploitedCves": [
+                    {
+                        "number": "CVE-2023-32046",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-32046"
+                    },
+                    {
+                        "number": "CVE-2023-32049",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-32049"
+                    },
+                    {
+                        "number": "CVE-2023-36874",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36874"
+                    },
+                    {
+                        "number": "CVE-2023-36884",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36884"
+                    },
+                    {
+                        "number": "ADV230001",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/ADV230001"
+                    },
+                    {
+                        "number": "CVE-2023-35311",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-35311"
+                    }
+                ]
             }
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-            "id": "68860630-c2d0-4dd2-8c4b-9b9737ee5081",
-            "displayName": "MM/DD/YYYY - YYYY.MM B Security Updates for Windows 10 and later",
-            "catalogName": "YYYY-MM Cumulative Update for Windows 10 and later",
-            "shortName": "YYYY.MM B",
-            "releaseDateTime": "String (timestamp)",
+            "id": "d38b17c487bdddb36c744281dd59d6bfd5352f2a4c9281a25a57c774c9268d34",
+            "displayName": "06/13/2023 - 2023.06 B SecurityUpdate for Windows 10 and later",
+            "catalogName": "2023-06 Cumulative Update for Windows 10 and later",
+            "shortName": "2023.06 B",
+            "releaseDateTime": "2023-06-13T00:00:00Z",
             "deployableUntilDateTime": null,
             "isExpeditable": true,
             "qualityUpdateClassification": "security",
             "qualityUpdateCadence": "monthly",
             "cveSeverityInformation": {
-                "maxSeverityLevel": "String",
-                "maxBaseScore": "Double",
-                "exploitedCves": null
+                "maxSeverity": "critical",
+                "maxBaseScore": 9.8,
+                "exploitedCves": []
             }
-        },
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-            "id": "aa336b13-db33-4d94-89ea-90e43e4ad30b",
-            "displayName": "MM/DD/YYYY - YYYY.MM B Security Updates for Windows 10 and later",
-            "catalogName": "YYYY-MM Cumulative Update for Windows 10 and later",
-            "shortName": "YYYY.MM B",
-            "releaseDateTime": "String (timestamp)",
+            "id": "19fb4ab2c98a87688f62d88f8ae80070ae7a21c2f8a441a0dcee9d2d02b725f6",
+            "displayName": "05/09/2023 - 2023.05 B SecurityUpdate for Windows 10 and later",
+            "catalogName": "2023-05 Cumulative Update for Windows 10 and later",
+            "shortName": "2023.05 B",
+            "releaseDateTime": "2023-05-09T00:00:00Z",
             "deployableUntilDateTime": null,
             "isExpeditable": true,
             "qualityUpdateClassification": "security",
             "qualityUpdateCadence": "monthly",
             "cveSeverityInformation": {
-                "maxSeverityLevel": "String",
-                "maxBaseScore": "Double",
-                "exploitedCves": Collection(microsoft.graph.cveInformation")
+                "maxSeverity": "critical",
+                "maxBaseScore": 9.8,
+                "exploitedCves": [
+                    {
+                        "number": "CVE-2023-29336",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29336"
+                    },
+                    {
+                        "number": "CVE-2023-24932",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932"
+                    }
+                ]
             }
         }
     ]
