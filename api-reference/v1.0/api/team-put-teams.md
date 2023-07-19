@@ -11,14 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
-
 Create a new [team](../resources/team.md) under a [group](../resources/group.md).
 
 In order to create a team, the group must have a least one owner.
 
-If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. 
-The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
+If the Create team call delays, you can retry the Create team call three times, with a 10 seconds delay between the calls before waiting on the 15 minutes propagated delay. If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.
 
 ## Permissions
 
