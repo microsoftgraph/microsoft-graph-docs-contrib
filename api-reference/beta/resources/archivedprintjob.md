@@ -20,6 +20,7 @@ A record of a "final state" (completed, aborted, or canceled) print job that is 
 |:-------------|:------------|:------------|
 |id|String|The archived print job's GUID. Read-only.|
 |printerId|String|The printer ID that the job was queued for. Read-only.|
+|printerName|String|The printer name that the job was queued for. Read-only.|
 |processingState|printJobProcessingState|The print job's final processing state. Read-only.|
 |createdDateTime|DateTimeOffset|The dateTimeOffset when the job was created. Read-only.|
 |acquiredDateTime|DateTimeOffset|The dateTimeOffset when the job was acquired by the printer, if any. Read-only.|
@@ -47,10 +48,24 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "String (identifier)",
-    "printer": {"@odata.type": "microsoft.graph.directoryObject"},
-    "createdBy": {"@odata.type": "microsoft.graph.userIdentity"},
-    "processingState": {"@odata.type": "microsoft.graph.printJobProcessingState"}
+  "@odata.type": "#microsoft.graph.archivedPrintJob",
+  "id": "String",
+  "printerId": "String",
+  "printerName": "String",
+  "processingState": "String",
+  "createdDateTime": "String (timestamp)",
+  "acquiredDateTime": "String (timestamp)",
+  "completionDateTime": "String (timestamp)",
+  "acquiredByPrinter": "Boolean",
+  "copiesPrinted": "Integer",
+  "pageCount": "Integer",
+  "blackAndWhitePageCount": "Integer",
+  "colorPageCount": "Integer",
+  "simplexPageCount": "Integer",
+  "duplexPageCount": "Integer",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  }
 }
 ```
 
