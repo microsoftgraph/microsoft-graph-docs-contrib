@@ -20,9 +20,9 @@ Describes the identity associated with the provisioning object summary event. In
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |details|[detailsInfo](detailsinfo.md)|Details of the identity.|
-|displayName|String|Display name of the identity. Inherited from [identity](../resources/identity.md).|
-|id|String|Uniquely identifies the identity. Inherited from [identity](../resources/identity.md).|
-|identityType|String|Type of identity that has been provisioned, such as 'user' or 'group'.|
+|displayName|String|Display name of the identity. Inherited from [identity](../resources/identity.md). Supports `$filter` (`eq`, `contains`).|
+|id|String|Uniquely identifies the identity. Inherited from [identity](../resources/identity.md). Supports `$filter` (`eq`, `contains`).|
+|identityType|String|Type of identity that has been provisioned, such as 'user' or 'group'. Supports `$filter` (`eq`, `contains`).|
 
 ## JSON representation
 

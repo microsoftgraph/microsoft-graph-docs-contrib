@@ -17,38 +17,38 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
 |[List signIn](../api/signin-list.md) | [signIn](signin.md) |Read properties and relationships of signIn objects.|
 |[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read properties and relationships of signIn object.|
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|appDisplayName|String|App name displayed in the Azure Portal. Supports `$filter` (`eq` and `startsWith` operators only).|
-|appId|String|Unique GUID representing the app ID in the Azure Active Directory. Supports `$filter` (`eq` operator only).|
+|appDisplayName|String|App name displayed in the Azure Portal. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|appId|String|Unique GUID representing the app ID in the Azure Active Directory. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
-|clientAppUsed|String|Identifies the client used for the sign-in activity. Modern authentication clients include `Browser` and `modern clients`. Legacy authentication clients include `Exchange ActiveSync`, `IMAP`, `MAPI`, `SMTP`, `POP`, and `other clients`. Supports `$filter` (`eq` operator only).|
-|conditionalAccessStatus|conditionalAccessStatus| Reports status of an activated conditional access policy. Possible values are: `success`, `failure`, `notApplied`, and `unknownFutureValue`. Supports `$filter` (`eq` operator only).|
-|correlationId|String|The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity. Supports `$filter` (`eq` operator only).|
-|createdDateTime|DateTimeOffset|Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as `2014-01-01T00:00:00Z`. Supports `$orderby` and `$filter` (`eq`, `le`, and `ge` operators only).|
-|deviceDetail|[deviceDetail](devicedetail.md)|Device information from where the sign-in occurred; includes device ID, operating system, and browser. Supports `$filter` (`eq` and `startsWith` operators only) on **browser** and **operatingSytem** properties. |
-|id|String|Unique ID representing the sign-in activity. Supports `$filter` (`eq` operator only).|
-|ipAddress|String|IP address of the client used to sign in. Supports `$filter` (`eq` and `startsWith` operators only).|
+|clientAppUsed|String|Identifies the client used for the sign-in activity. Modern authentication clients include `Browser`, `modern clients`. Legacy authentication clients include `Exchange ActiveSync`, `IMAP`, `MAPI`, `SMTP`, `POP`, and `other clients`. <br/><br/> Supports `$filter` (`eq`).|
+|conditionalAccessStatus|conditionalAccessStatus| Reports status of an activated conditional access policy. Possible values are: `success`, `failure`, `notApplied`, and `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
+|correlationId|String|The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity. <br/><br/> Supports `$filter` (`eq`).|
+|createdDateTime|DateTimeOffset|Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as `2014-01-01T00:00:00Z`. <br/><br/> Supports `$orderby`, `$filter` (`eq`, `le`, and `ge`).|
+|deviceDetail|[deviceDetail](devicedetail.md)|Device information from where the sign-in occurred; includes device ID, operating system, and browser. <br/><br/> Supports `$filter` (`eq`, `startsWith`) on **browser** and **operatingSytem** properties. |
+|id|String|Unique ID representing the sign-in activity. <br/><br/> Supports `$filter` (`eq`).|
+|ipAddress|String|IP address of the client used to sign in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |isInteractive|Boolean|Indicates if a sign-in is interactive or not.|
-|location|[signInLocation](signinlocation.md)|Provides the city, state, and country code where the sign-in originated. Supports `$filter` (`eq` and `startsWith` operators only) on **city**, **state**, and **countryOrRegion** properties.|
-|resourceDisplayName|String|Name of the resource the user signed into. Supports `$filter` (`eq` operator only).|
-|resourceId|String|ID of the resource that the user signed into. Supports `$filter` (`eq` operator only).|
-|riskDetail|riskDetail|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far.  Supports `$filter` (`eq` operator only).<br>**Note:** Details for this property require an Azure AD Premium P2 license. Other licenses return the value `hidden`.|
-|riskEventTypes|riskEventType collection|Risk event types associated with the sign-in. The possible values are: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, and `unknownFutureValue`. Supports `$filter` (`eq` operator only).|
-|riskEventTypes_v2|String collection|The list of risk event types associated with the sign-in. Possible values: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, or `unknownFutureValue`. Supports `$filter` (`eq` and `startsWith` operators only).|
-|riskLevelAggregated|riskLevel|Aggregated risk level. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. Supports `$filter` (`eq` operator only). <br> **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
-|riskLevelDuringSignIn|riskLevel|Risk level during sign-in. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection.  Supports `$filter` (`eq` operator only). <br>**Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
-|riskState|riskState|Reports status of the risky user, sign-in, or a risk event. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`. Supports `$filter` (`eq` operator only).|
-|status|[signInStatus](signinstatus.md)|Sign-in status. Includes the error code and description of the error (in case of a sign-in failure). Supports `$filter` (`eq` operator only) on **errorCode** property.|
-|userDisplayName|String|Display name of the user that initiated the sign-in. Supports `$filter` (`eq` and `startsWith` operators only).|
-|userId|String|ID of the user that initiated the sign-in. Supports `$filter` (`eq` operator only).|
-|userPrincipalName|String|User principal name of the user that initiated the sign-in. Supports `$filter` (`eq` and `startsWith` operators only).|
+|location|[signInLocation](signinlocation.md)|Provides the city, state, and country code where the sign-in originated. <br/><br/> Supports `$filter` (`eq`, `startsWith`) on **city**, **state**, and **countryOrRegion** properties.|
+|resourceDisplayName|String|Name of the resource the user signed into. <br/><br/> Supports `$filter` (`eq`).|
+|resourceId|String|ID of the resource that the user signed into. <br/><br/> Supports `$filter` (`eq`).|
+|riskDetail|riskDetail|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far.  Supports `$filter` (`eq`).<br>**Note:** Details for this property require an Azure AD Premium P2 license. Other licenses return the value `hidden`.|
+|riskEventTypes|riskEventType collection|Risk event types associated with the sign-in. The possible values are: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, and `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
+|riskEventTypes_v2|String collection|The list of risk event types associated with the sign-in. Possible values: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, or `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|riskLevelAggregated|riskLevel|Aggregated risk level. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. <br/><br/> Supports `$filter` (`eq`). <br> **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
+|riskLevelDuringSignIn|riskLevel|Risk level during sign-in. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. <br/><br/> Supports `$filter` (`eq`).  <br>**Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
+|riskState|riskState|Reports status of the risky user, sign-in, or a risk event. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
+|status|[signInStatus](signinstatus.md)|Sign-in status. Includes the error code and description of the error (in case of a sign-in failure). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
+|userDisplayName|String|Display name of the user that initiated the sign-in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|userId|String|ID of the user that initiated the sign-in. <br/><br/> Supports `$filter` (`eq`).|
+|userPrincipalName|String|User principal name of the user that initiated the sign-in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 
 ## Relationships
 
