@@ -2,7 +2,7 @@
 title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
 ms.localizationpriority: medium
-author: "Sammak"
+author: "ppolkadots"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

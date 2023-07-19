@@ -2,7 +2,7 @@
 title: "invitation resource type"
 description: "Represents an invitation that is used to add external users to an organization as part of Azure Active Directory business-to-business (Azure AD B2B) collaboration."
 ms.localizationpriority: medium
-author: "Sammak"
+author: "ppolkadots"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
