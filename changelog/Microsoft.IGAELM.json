@@ -63,7 +63,7 @@
             "ApiChange": "Relationship",
             "ChangedApiName": "resourceRoleScopes",
             "ChangeType": "Addition",
-            "Description": "Added the **resourceRoleScopes** relationship on [accessPackage](https://learn.microsoft.com/en-us/graph/api/resources/accesspackage?view=graph-rest-1.0) resource.",
+            "Description": "Added the **resourceRoleScopes** relationship to the [accessPackage](https://learn.microsoft.com/en-us/graph/api/resources/accesspackage?view=graph-rest-1.0) resource.",
             "Target": "accessPackage"
           },
           {
@@ -71,7 +71,7 @@
             "ApiChange": "Relationship",
             "ChangedApiName": "resourceEnvironments",
             "ChangeType": "Addition",
-            "Description": "Added the **resourceEnvironments** relationship on [entitlementManagement](https://learn.microsoft.com/en-us/graph/api/resources/entitlementmanagement?view=graph-rest-1.0) resource.",
+            "Description": "Added the **resourceEnvironments** relationship to the [entitlementManagement](https://learn.microsoft.com/en-us/graph/api/resources/entitlementmanagement?view=graph-rest-1.0) resource.",
             "Target": "entitlementManagement"
           },
           {
@@ -79,7 +79,7 @@
             "ApiChange": "Relationship",
             "ChangedApiName": "resourceRequests",
             "ChangeType": "Addition",
-            "Description": "Added the **resourceRequests** relationship on [entitlementManagement](https://learn.microsoft.com/en-us/graph/api/resources/entitlementmanagement?view=graph-rest-1.0) resource.",
+            "Description": "Added the **resourceRequests** relationship to the [entitlementManagement](https://learn.microsoft.com/en-us/graph/api/resources/entitlementmanagement?view=graph-rest-1.0) resource.",
             "Target": "entitlementManagement"
           }
         ],
