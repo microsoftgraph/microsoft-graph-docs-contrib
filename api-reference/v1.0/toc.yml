@@ -8108,6 +8108,10 @@ items:
             href: api/chatmessage-softdelete.md
           - name: Undo message deletion
             href: api/chatmessage-undosoftdelete.md
+          - name: Set message reaction
+            href: api/chatmessage-setreaction.md
+          - name: Unset message reaction
+            href: api/chatmessage-unsetreaction.md
         - name: Chat
           href: resources/chat.md
           items:
@@ -8151,6 +8155,10 @@ items:
             href: api/chat-post-pinnedmessages.md
           - name: Unpin message
             href: api/chat-delete-pinnedmessages.md
+          - name: Set message reaction
+            href: api/chatmessage-setreaction.md
+          - name: Unset message reaction
+            href: api/chatmessage-unsetreaction.md
         - name: Chat message
           href: resources/chatmessage.md
           items:
@@ -8188,6 +8196,10 @@ items:
             href: api/chat-post-pinnedmessages.md
           - name: Unpin message
             href: api/chat-delete-pinnedmessages.md
+          - name: Set message reaction
+            href: api/chatmessage-setreaction.md
+          - name: Unset message reaction
+            href: api/chatmessage-unsetreaction.md
         - name: Pinned chat message
           href: resources/pinnedchatmessageinfo.md
           items:
