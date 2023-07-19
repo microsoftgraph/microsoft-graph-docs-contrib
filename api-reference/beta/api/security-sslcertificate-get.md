@@ -54,7 +54,8 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_sslcertificate"
+  "name": "get_sslcertificate",
+  "sampleKeys": ["ZmI5NjU1MTUwNWYxZWRiMjRkZDNiMzZmY2ZmZGI3NjU4MzNiODExOA=="]
 }
 -->
 ``` http
