@@ -7,7 +7,7 @@ ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.prod: "extensions"
 ms.custom: graphiamtop20
-ms.date: 06/09/2023
+ms.date: 07/19/2023
 ---
 
 # Add custom data to resources using extensions
@@ -1040,6 +1040,7 @@ The table below contrasts and compares the extension types, which should help yo
 | Strongly typed | No | Yes | Yes | No |
 | Filterable | Yes | Yes | Yes | No |
 | Can store a collection<sup>2</sup> | No | Yes | No | No |
+| Tied to an "owner" application | No | Yes | Yes | No |
 | Managed via | Microsoft Graph <br/> Exchange admin center | Microsoft Graph | Microsoft Graph | Microsoft Graph |
 | Sync data from on-premises to extensions using [AD connect][] | Yes, for users | [Yes][ADConnect-YES] | No | No |
 | Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | [Yes][DynamicMembership-YES] | No | No |
