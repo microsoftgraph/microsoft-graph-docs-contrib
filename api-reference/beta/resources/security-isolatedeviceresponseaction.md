@@ -3,6 +3,7 @@ title: "isolateDeviceResponseAction resource type"
 description: "Describes a 'Isolate Device' response action"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

@@ -3,6 +3,7 @@ title: "responseAction resource type"
 description: "Describes an action taken on impacted assets as set in the custom detection rule"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

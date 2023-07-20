@@ -3,6 +3,7 @@ title: "Create detectionRule"
 description: "Create a new microsoft.graph.security.detectionRule object"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: apiPageType
 ---

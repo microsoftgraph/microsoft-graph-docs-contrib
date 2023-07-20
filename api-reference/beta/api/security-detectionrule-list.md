@@ -3,6 +3,7 @@ title: "List detectionRules"
 description: "Get a list of the microsoft.graph.security.detectionRule objects and their properties."
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: apiPageType
 ---

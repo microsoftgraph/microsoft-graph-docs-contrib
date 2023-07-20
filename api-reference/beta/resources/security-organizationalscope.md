@@ -3,6 +3,7 @@ title: "organizationalScope resource type"
 description: "The scope to specify which devices are covered by a custom detection rule's detection action"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

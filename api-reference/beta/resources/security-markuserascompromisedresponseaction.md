@@ -3,6 +3,7 @@ title: "markUserAsCompromisedResponseAction resource type"
 description: "Describes a 'Mark User As Compromised' response action"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

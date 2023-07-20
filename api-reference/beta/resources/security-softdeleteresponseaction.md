@@ -3,6 +3,7 @@ title: "softDeleteResponseAction resource type"
 description: "Describes a 'Soft Delete' email response action"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

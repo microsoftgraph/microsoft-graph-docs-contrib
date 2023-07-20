@@ -3,6 +3,7 @@ title: "alertTemplate resource type"
 description: "Describes the alert that will be generated following a detection"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

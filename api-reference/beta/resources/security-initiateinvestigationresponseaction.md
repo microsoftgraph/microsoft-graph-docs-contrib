@@ -3,6 +3,7 @@ title: "initiateInvestigationResponseAction resource type"
 description: "Describes a 'Initiate Investigation' response action"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

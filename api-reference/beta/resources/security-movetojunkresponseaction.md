@@ -3,6 +3,7 @@ title: "moveToJunkResponseAction resource type"
 description: "Describes a 'Move To Junk' email response action"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

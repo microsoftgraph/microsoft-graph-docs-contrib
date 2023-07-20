@@ -3,6 +3,7 @@ title: "restrictAppExecutionResponseAction resource type"
 description: "Describes a 'Restrict App Execution' response action"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

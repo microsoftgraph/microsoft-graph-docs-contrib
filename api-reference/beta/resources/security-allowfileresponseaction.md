@@ -3,6 +3,7 @@ title: "allowFileResponseAction resource type"
 description: "Describes a 'Allow File' response action."
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

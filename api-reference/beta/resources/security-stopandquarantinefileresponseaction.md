@@ -3,6 +3,7 @@ title: "stopAndQuarantineFileResponseAction resource type"
 description: "Describes a 'Stop and Quarantine File' response action"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

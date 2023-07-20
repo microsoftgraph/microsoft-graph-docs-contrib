@@ -3,6 +3,7 @@ title: "ruleSchedule resource type"
 description: "Describes the triggering of the custom detection rule"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

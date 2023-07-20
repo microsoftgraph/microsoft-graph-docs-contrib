@@ -3,6 +3,7 @@ title: "detectionRule resource type"
 description: "Custom detection rules are types of protection rules you can design and tweak using advanced hunting queries"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

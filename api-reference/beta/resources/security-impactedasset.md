@@ -3,6 +3,7 @@ title: "impactedAsset resource type"
 description: "Describes an asset that was impacted based on the alert triggered by the custom detection rule"
 author: "mmekler"
 ms.localizationpriority: medium
+ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---
