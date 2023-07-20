@@ -46,10 +46,10 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationclass_from_educationschool_4"
+  "name": "remove_user_from_school_v1_e1"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{user-id}
+DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{user-id}/$ref
 ```
 
 # [Java](#tab/java)
