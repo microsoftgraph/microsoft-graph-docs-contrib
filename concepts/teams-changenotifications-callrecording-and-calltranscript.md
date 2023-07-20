@@ -151,7 +151,7 @@ Depending on your subscription, you can either get the notification with resourc
 
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks like the following. This payload is for a recording that is available for an online meeting.
+For notifications with resource data, the payload looks like the following. This payload is for a recording available for an online meeting.
 
 ```json
 {
