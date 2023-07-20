@@ -13,9 +13,6 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
 
-## July 2023: New and generally available
-
-
 ## July 2023: New in preview only
 
 ### Applications | Synchronization
