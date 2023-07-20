@@ -45,6 +45,9 @@ POST /security/runHuntingQuery
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
+> [!NOTE]
+> Ensure to use ContentType 'application/json; charset=utf-8' in case your are using non ANSI characters in your query e.g. to query Emails Subjects with malformed or lookalike characters. 
+
 ## Request body
 
 In the request body, provide a JSON object for the parameter, `Query`. 
