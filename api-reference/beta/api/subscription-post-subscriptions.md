@@ -193,6 +193,7 @@ The following are valid values for the resource property.
 | Resource type | Examples |
 |:------ |:----- |
 |[callRecord](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[callRecording](../resources/callrecording.md)| `communications/onlineMeetings/getAllRecordings`, `communications/onlineMeetings/{onlineMeetingId}/recordings`|
 |[callTranscript](../resources/calltranscript.md) | `communications/onlineMeetings/getAllTranscripts`, `communications/onlineMeetings/{onlineMeetingId}/transcripts`|
 |[channel](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[chat](../resources/chat.md)|`/chats`, `/chats/{id}`|
