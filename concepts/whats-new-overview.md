@@ -19,16 +19,16 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ## July 2023: New in preview only
 
 ### Applications | Synchronization
-[Perform](/graph/api/synchronization-synchronizationjob-post-bulkupload?view=graph-rest-beta) a [bulk upload](/graph/api/resources/synchronization-bulkupload?view=graph-rest-beta) as a [synchronization job](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta) to ingest data into the Azure AD synchronization service. 
+[Perform](/graph/api/synchronization-synchronizationjob-post-bulkupload?view=graph-rest-beta&preserve-view=true) a [bulk upload](/graph/api/resources/synchronization-bulkupload?view=graph-rest-beta&preserve-view=true) as a [synchronization job](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta&preserve-view=true) to ingest data into the Azure AD synchronization service. 
 
 ### Mail
-- [Mark an email as junk](/graph/api/message-markasjunk?view=graph-rest-beta), adds the sender to the list of blocked senders, and optionally, moves the message to the Junk Email folder.
-- [Mark an email as not-junk](/graph/api/message-markasnotjunk?view=graph-rest-beta), removes the sender from the list of blocked senders, and optionally, moves the message to the Inbox.
+- [Mark an email as junk](/graph/api/message-markasjunk?view=graph-rest-beta&preserve-view=true), adds the sender to the list of blocked senders, and optionally, moves the message to the Junk Email folder.
+- [Mark an email as not-junk](/graph/api/message-markasnotjunk?view=graph-rest-beta&preserve-view=true), removes the sender from the list of blocked senders, and optionally, moves the message to the Inbox.
 
 ### Sites and lists
-- For a [standard web part](/graph/api/resources/standardwebpart?view=graph-rest-beta) contained in a rich text web part, get the ID of the container [text web part](/graph/api/resources/textwebpart?view=graph-rest-beta).
-- [Create](/graph/api/sitepage-post-horizontalsection?view=graph-rest-beta), [update](/graph/api/horizontalsection-update?view=graph-rest-beta), or [delete](/graph/api/horizontalsection-delete?view=graph-rest-beta) a [horizontal section](/graph/api/resources/horizontalSection?view=graph-rest-beta) on a SharePoint [page](/graph/api/resources/sitepage?view=graph-rest-beta).
-- [Create](/graph/api/sitepage-post-verticalsection?view=graph-rest-beta), [update](/graph/api/verticalsection-update?view=graph-rest-beta), or [delete](/graph/api/verticalsection-delete?view=graph-rest-beta) a [vertical section](/graph/api/resources/verticalsection?view=graph-rest-beta) on a SharePoint [page](/graph/api/resources/sitepage?view=graph-rest-beta).
+- For a [standard web part](/graph/api/resources/standardwebpart?view=graph-rest-beta&preserve-view=true) contained in a rich text web part, get the ID of the container [text web part](/graph/api/resources/textwebpart?view=graph-rest-beta&preserve-view=true).
+- [Create](/graph/api/sitepage-post-horizontalsection?view=graph-rest-beta&preserve-view=true), [update](/graph/api/horizontalsection-update?view=graph-rest-beta&preserve-view=true), or [delete](/graph/api/horizontalsection-delete?view=graph-rest-beta&preserve-view=true) a [horizontal section](/graph/api/resources/horizontalSection?view=graph-rest-beta&preserve-view=true) on a SharePoint [page](/graph/api/resources/sitepage?view=graph-rest-beta&preserve-view=true).
+- [Create](/graph/api/sitepage-post-verticalsection?view=graph-rest-beta&preserve-view=true), [update](/graph/api/verticalsection-update?view=graph-rest-beta&preserve-view=true), or [delete](/graph/api/verticalsection-delete?view=graph-rest-beta&preserve-view=true) a [vertical section](/graph/api/resources/verticalsection?view=graph-rest-beta&preserve-view=true) on a SharePoint [page](/graph/api/resources/sitepage?view=graph-rest-beta&preserve-view=true).
 
 ## June 2023: New and generally available
 
