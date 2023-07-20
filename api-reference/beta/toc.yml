@@ -17568,7 +17568,6 @@ items:
           items:
           - name: Learning course activity
             href: resources/learningcourseactivity.md
-            items:
           - name: Learning assignment type
             href: resources/learningassignment.md
           - name: Learning self-initiated course type
