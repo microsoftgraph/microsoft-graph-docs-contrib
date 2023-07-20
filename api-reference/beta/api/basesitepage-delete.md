@@ -1,6 +1,6 @@
 ---
 author: "sangle7"
-description: "Remove a sitePage from the site pages list in a site."
+description: "Delete a sitePage from the site pages list in a site."
 title: "Delete baseSitePage"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [baseSitePage][] from the site pages [list][] in a [site][].
+Delete a [baseSitePage][] from the site pages [list][] in a [site][].
 
 [baseSitePage]: ../resources/basesitepage.md
 [list]: ../resources/list.md
