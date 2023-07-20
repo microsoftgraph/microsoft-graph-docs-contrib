@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.
+Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.
 
 ## Permissions
 
