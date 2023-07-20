@@ -86,7 +86,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "microsoft.graph.security.hostPair"
+  "@odata.type": "microsoft.graph.security.hostPair",
   "id": "ZmluYWxSZWRpcmVjdCQkY29udG9zby5jb20kJGNvbnRvc28uY29tJCRjb250b3NvLmNvbQ==",
   "firstSeenDateTime": "2022-05-11T01:27:14.187Z",
   "lastSeenDateTime": "2023-06-23T06:33:31.493Z",
