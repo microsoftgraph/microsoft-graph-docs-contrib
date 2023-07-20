@@ -78,7 +78,8 @@ Content-Length: 691
     "anomalyId": "Anomaly Id value",
     "anomalyOnDeviceFirstOccurrenceDateTime": "2017-01-01T00:00:47.4723614-08:00",
     "anomalyOnDeviceLatestOccurrenceDateTime": "2016-12-31T23:59:20.6899849-08:00",
-    "correlationGroupId": "Correlation Group Id value"
+    "correlationGroupId": "Correlation Group Id value",
+    "deviceStatus": "affected"
   }
 }
 ```

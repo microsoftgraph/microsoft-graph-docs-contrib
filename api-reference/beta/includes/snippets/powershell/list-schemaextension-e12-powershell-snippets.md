@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
-Get-MgUser -Property "ext55gb1l09_msLearnCourses" 
+Get-MgBetaUser -Property "ext55gb1l09_msLearnCourses" 
 
 ```

@@ -50,6 +50,7 @@ The following table shows the properties that are required when you create the [
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Device protection overview.|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Malware overview for windows devices.|
+|userExperienceAnalyticsSettings|[userExperienceAnalyticsSettings](../resources/intune-devices-userexperienceanalyticssettings.md)|User experience analytics device settings|
 
 
 
@@ -60,13 +61,10 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 
 ### Request
 Here is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_devices_devicemanagement_update_update_devicemanagement" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement
 Content-type: application/json
-Content-length: 2632
+Content-length: 2806
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
@@ -144,36 +142,20 @@ Content-length: 2632
         "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
       }
     ]
+  },
+  "userExperienceAnalyticsSettings": {
+    "@odata.type": "microsoft.graph.userExperienceAnalyticsSettings",
+    "configurationManagerDataConnectorConfigured": true
   }
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/intune-devices-devicemanagement-update-update-devicemanagement-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-devices-devicemanagement-update-update-devicemanagement-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-devices-devicemanagement-update-update-devicemanagement-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-devices-devicemanagement-update-update-devicemanagement-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.deviceManagement" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2681
+Content-Length: 2855
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
@@ -252,6 +234,10 @@ Content-Length: 2681
         "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
       }
     ]
+  },
+  "userExperienceAnalyticsSettings": {
+    "@odata.type": "microsoft.graph.userExperienceAnalyticsSettings",
+    "configurationManagerDataConnectorConfigured": true
   }
 }
 ```
