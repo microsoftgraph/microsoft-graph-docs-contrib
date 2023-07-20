@@ -14285,7 +14285,7 @@ items:
           - name: User flow attribute assignment
             items:
             - name: User
-              ref: resources/identityuserflowattributeassignment.md
+              href: resources/identityuserflowattributeassignment.md
             - name: Get
               href: api/identityuserflowattributeassignment-get.md
             - name: Update
