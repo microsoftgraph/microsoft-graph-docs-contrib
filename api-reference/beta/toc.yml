@@ -16809,12 +16809,12 @@ items:
             href: resources/webpart.md
           - name: Text web part
             href: resources/textwebpart.md
-          - name: Standard WebPart
+          - name: Standard web part
             href: resources/standardwebpart.md
           - name: List
             href: api/webpart-list.md
           - name: Create
-            href: api/webpart-create.md
+            href: api/sitepage-create-webpart.md
           - name: Get
             href: api/webpart-get.md
           - name: Update
