@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "d3ec6c02-2778-4e8a-94b0-f099c217f11f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "invitedUserSponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the **invitedUserSponsors** relationship to the [invitation](https://learn.microsoft.com/en-us/graph/api/resources/invitation?view=graph-rest-beta) resource.",
+          "Target": "invitation"
+        }
+      ],
+      "Id": "d3ec6c02-2778-4e8a-94b0-f099c217f11f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-18T22:22:46.6239903Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a4242614-2ce3-47da-993c-bc13880676bf",
           "ApiChange": "Property",
           "ChangedApiName": "resetRedemption",
