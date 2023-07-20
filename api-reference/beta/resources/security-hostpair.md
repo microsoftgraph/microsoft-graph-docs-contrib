@@ -59,7 +59,7 @@ The following is a JSON representation of the resource.
   "parentHost": {
     "@odata.type": "#microsoft.graph.security.host",
     "id": "String (identifier)"
-  }
+  },
   "childHost": {
     "@odata.type": "#microsoft.graph.security.host",
     "id": "String (identifier)"
