@@ -54,7 +54,7 @@ No request body is required.
 However, you can specify properties in the request body providing additional data about the file being uploaded and customizing the semantics of the upload operation.
 
 For example, the `item` property allows setting the following parameters:
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+<!-- { "blockType": "ignored" } -->
 ```json
 {
   "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
@@ -95,7 +95,7 @@ The response to this request will provide the details of the newly created [uplo
 
 >**Note:** The {item-path} must contain the name of the item that's specified in the request body.
 
-<!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "upload-fragment-create-session" } -->
 
 ```http
 POST /me/drive/root:/{item-path}:/createUploadSession
