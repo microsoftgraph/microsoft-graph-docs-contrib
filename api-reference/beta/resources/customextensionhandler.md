@@ -1,13 +1,13 @@
 ---
-title: "customExtensionHandler resource type"
+title: "customExtensionHandler resource type (deprecated)"
 description: "Defines when to execute a custom access package workflow extension."
-author: "currenmehta"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# customExtensionHandler resource type
+# customExtensionHandler resource type (deprecated)
 
 Namespace: microsoft.graph
 
