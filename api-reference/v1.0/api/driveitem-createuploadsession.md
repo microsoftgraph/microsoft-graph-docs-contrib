@@ -160,8 +160,7 @@ Content-Range: bytes 0-25/128
 ```
 > [!NOTE]
 > * To upload large files using SDKs see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
-> * Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.
-If a byte range declares a different file size, the request will fail.
+> * Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests. If a byte range declares a different file size, the request will fail.
 
 ### Response
 
@@ -232,6 +231,9 @@ Content-Range: bytes 101-127/128
 <final bytes of the file>
 ```
 
+> [!NOTE]
+> * To upload large files using SDKs see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -252,6 +254,9 @@ Content-Type: application/json
 POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 Content-Length: 0
 ```
+
+> [!NOTE]
+> * To upload large files using SDKs see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
 
 <!-- { "blockType": "ignored"} -->
 
@@ -302,6 +307,9 @@ Temporary files may not be deleted immedately after the expiration time has elap
 DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 ```
 
+> [!NOTE]
+> * To upload large files using SDKs see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
+
 ### Response
 
 The following example shows the response.
@@ -329,8 +337,10 @@ Query the status of the upload by sending a GET request to the `uploadUrl`.
 ```http
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
 ```
-
 The server will respond with a list of missing byte ranges that need to be uploaded and the expiration time for the upload session.
+
+> [!NOTE]
+> * To upload large files using SDKs see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
 
 <!-- { "blockType": "ignored" } -->
 
@@ -372,9 +382,6 @@ If-Match: {etag or ctag}
   "@microsoft.graph.sourceUrl": "{upload session URL}"
 }
 ```
-> [!NOTE]
-> * To upload large files using SDKs see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
-> * You can use the `@microsoft.graph.conflictBehavior` and `if-match` headers as expected in this call.
 
 ### Response
 
