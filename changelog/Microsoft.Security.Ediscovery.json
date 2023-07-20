@@ -607,8 +607,8 @@
 			"Cloud": "Prod",
 			"Version": "v1.0",
 			"CreatedDateTime": "2023-06-28T15:48:54.3649155Z",
-			"WorkloadArea": "Compliance",
-			"SubArea": ""
+			"WorkloadArea": "Security",
+			"SubArea": "Compliance"
 	  }
 	]
   }
