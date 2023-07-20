@@ -20,12 +20,13 @@ You can set them to run at regular intervals, generating alerts and taking respo
 Inherits from [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List detectionRules](../api/security-detectionrule-list.md)|[microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) collection|Get a list of the [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) objects and their properties.|
-|[Get detectionRule](../api/security-detectionrule-get.md)|[microsoft.graph.security.detectionRule](../resources/security-detectionrule.md)|Read the properties and relationships of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object.|
-|[Update detectionRule](../api/security-detectionrule-update.md)|[microsoft.graph.security.detectionRule](../resources/security-detectionrule.md)|Update the properties of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object.|
-|[Delete detectionRule](../api/security-detectionrule-delete.md)|None|Delete a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object.|
+| Method                                                                       | Return type                                                                                 | Description                                                                                                                         |
+|:-----------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
+| [List detectionRules](../api/security-detectionrule-list.md)                 | [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) collection | Get a list of the [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) objects and their properties.    |
+| [Get detectionRule](../api/security-detectionrule-get.md)                    | [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md)            | Read the properties and relationships of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object. |
+| [Create detectionRule](../api/security-detectionrule-post-detectionRules.md) | [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md)            | Create a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md).                                          |
+| [Update detectionRule](../api/security-detectionrule-update.md)              | [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md)            | Update the properties of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object.                 |
+| [Delete detectionRule](../api/security-detectionrule-delete.md)              | None                                                                                        | Delete a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object.                                   |
 
 ## Properties
 | Property             | Type                                                                                 | Description                                                                                                                                                                            |
