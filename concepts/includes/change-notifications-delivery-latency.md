@@ -15,6 +15,8 @@ The following table lists the latency to expect between an event happening in th
 |:------------------------|:---------------------|:----------------|
 | [alert][] <sup>1</sup>  | Less than 3 minutes  | 5 minutes       |
 | [callRecord][]          | Less than 15 minutes | 60 minutes      |
+| [callRecording][]       | Less than 10 seconds | 60 minutes      |
+| [callTranscript][]      | Less than 10 seconds | 60 minutes      |
 | [channel][]             | Less than 10 seconds | 60 minutes      |
 | [chat][]                | Less than 10 seconds | 60 minutes      |
 | [chatMessage][]         | Less than 10 seconds | 1 minute        |
@@ -33,8 +35,6 @@ The following table lists the latency to expect between an event happening in th
 | [team][]                | Less than 10 seconds | 60 minutes      |
 | [todoTask][]            | Less than 2 minutes  | 15 minutes      |
 | [user][]                | Less than 2 minutes  | 15 minutes      |
-| [CallTranscript][]      | Less than 10 seconds | 60 minutes      |
-| [CallRecording][]       | Less than 10 seconds | 60 minutes      |
 
 <sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert is created. It doesn't include the time it takes for a rule to create an alert from the data.
 
@@ -58,5 +58,5 @@ The following table lists the latency to expect between an event happening in th
 [conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team
 [onlineMeeting]: /graph/api/resources/onlinemeeting
-[CallTranscript]: /graph/api/resources/calltranscript
-[CallRecording]: /graph/api/resources/callrecording
+[callTranscript]: /graph/api/resources/calltranscript
+[callRecording]: /graph/api/resources/callrecording
