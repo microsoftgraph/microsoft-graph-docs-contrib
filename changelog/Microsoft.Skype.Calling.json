@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "b6dc9e4b-3c6d-4946-be20-90fac94839c2",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the LIST method of the [virtualEventSession](https://docs.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEvent"
+        }
+      ],
+      "Id": "b6dc9e4b-3c6d-4946-be20-90fac94839c2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-20T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5bd55826-eb41-4116-820d-8629374e4ceb",
           "ApiChange": "Property",
           "ChangedApiName": "anonymizeIdentityForRoles",
