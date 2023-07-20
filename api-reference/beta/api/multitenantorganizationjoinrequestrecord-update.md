@@ -49,12 +49,19 @@ PATCH /tenantRelationships/multiTenantOrganization/joinRequest
 
 |Property|Type|Description|
 |:---|:---|:---|
-|addedByTenantId|String|Tenant ID of the tenant that added the current tenant to the multi-tenant organization. Required.|
+|addedByTenantId|String|Tenant ID of the Azure Active Directory tenant that added the current tenant to the multi-tenant organization. Required.|
 
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
+
+A join request might be unsuccessful. The following are some scenarios:
+
+* The joining tenant has not been added to the multi-tenant organization by its owner.
+* The owner or joiner tenant exceeds the maximum number of internal users per tenant.
+* The multi-tenant organization would exceed the maximum number of tenants.
+* The joining tenant is already part of a different multi-tenant organization.
 
 ## Examples
 

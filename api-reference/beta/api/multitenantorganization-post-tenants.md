@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a tenant to a multi-tenant organization. The added tenant is in the pending state until the administrator of the added tenant joins the multi-tenant organization. Note that a tenant can be part of only one multi-tenant organization.
+Add a tenant to a multi-tenant organization. The administrator of an owner tenant has the permissions to add tenants to the multi-tenant organization. The added tenant is in the pending state until the administrator of the added tenant joins the multi-tenant organization by submitting a join request. Note that a tenant can be part of only one multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +50,7 @@ You can specify the following properties when creating a **multiTenantOrganizati
 
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|String|Tenant ID of the tenant to add to the multi-tenant organization. Required.|
+|tenantId|String|Tenant ID of the Azure Active Directory tenant to add to the multi-tenant organization. Required.|
 |displayName|String|Display name of the tenant added to the multi-tenant organization. Currently, cannot be changed once set. Required.|
 |role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member` (default), `unknownFutureValue`. Optional.|
 
@@ -106,7 +106,7 @@ Content-Type: application/json
 }
 ```
 
-If tenant has already been added to multi-tenant organization, you get a `Request_BadRequest` error.
+If tenant is already pending or active in this multi-tenant organization, you get a 'Request_BadRequest' error.
 
 ```http
 HTTP/1.1 400 Bad Request

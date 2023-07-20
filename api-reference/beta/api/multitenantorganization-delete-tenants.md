@@ -12,7 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a tenant from a multi-tenant organization.
+Remove a tenant from a multi-tenant organization. A tenant can be removed in the following scenarios:
+
+* An active member tenant can remove itself.
+* An active owner tenant can remove any other tenant.
+* An active owner tenant can remove itself as long as there is another active owner tenant remaining.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

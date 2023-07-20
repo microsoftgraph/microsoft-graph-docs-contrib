@@ -15,6 +15,10 @@ Namespace: microsoft.graph
 
 Defines an optional cross-tenant access policy template with user synchronization settings for multi-tenant organization tenants. For more information, see [crossTenantIdentitySyncPolicyPartner resource type](crosstenantidentitysyncpolicypartner.md).
 
+In its default state, when the template is used to generate a previously non-existent identity synchronization policy, the newly generated identity synchronization policy is in an unconfigured state.
+
+Similarly, in its default state, when the template is used to amend a previously existing identity synchronization policy, the previously existing identity synchronization policy remains unchanged.
+
 Each tenant has its own template. This template is applied when a tenant joins a multi-tenant organization and when other tenants join a multi-tenant organization.
 
 ## Methods
@@ -27,7 +31,8 @@ Each tenant has its own template. This template is applied when a tenant joins a
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Defines whether users can be synchronized from the partner tenant. Key.|
+|id|String|ID of the template. Key.|
+|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Defines whether users can be synchronized from the partner tenant.|
 
 ## Relationships
 None.

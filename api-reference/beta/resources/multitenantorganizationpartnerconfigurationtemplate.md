@@ -15,6 +15,10 @@ Namespace: microsoft.graph
 
 Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for multi-tenant organization tenants. For more information, see [crossTenantAccessPolicyConfigurationPartner resource type](crosstenantaccesspolicyconfigurationpartner.md).
 
+In its default state, when the template is used to generate a previously non-existent partner policy, the newly generated partner policy is in an unconfigured state.
+
+Similarly, in its default state, when the template is used to amend a previously existing partner policy, the previously existing partner policy remains unchanged.
+
 Each tenant has its own template. This template is applied when a tenant joins a multi-tenant organization and when other tenants join a multi-tenant organization.
 
 ## Methods
