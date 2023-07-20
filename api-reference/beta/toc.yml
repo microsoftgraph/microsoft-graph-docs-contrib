@@ -1,4 +1,3 @@
-name: Reference
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
@@ -11439,7 +11438,6 @@ items:
         - name: Delete permission
           href: api/permission-delete.md
     - name: Financials (preview)
-      displayname: Dynamics, Dynamics 365 Business Central
       items:
       - name: Overview
         href: resources/dynamics-graph-reference.md
@@ -15684,7 +15682,6 @@ items:
       - name: Microsoft Defender for Office 365 security reports
         items:
         - name: Attack simulation reports
-          displayname: Attack simulation and training
           href: resources/report-m365defender-reports-overview.md
         - name: Repeat offender
           items:
@@ -15705,7 +15702,6 @@ items:
           - name: Get training coverage for users
             href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
     - name: Search
-      displayname: Microsoft Search API
       items:
       - name: Query
         items:
@@ -15835,7 +15831,6 @@ items:
           - name: Get
             href: api/externalconnectors-connectionquota-get.md
     - name: Security
-      displayname: Security API, Microsoft Graph Security API
       items:
       - name: Overview
         href: resources/security-api-overview.md
@@ -15964,7 +15959,6 @@ items:
         - name: Reports
           items:
           - name: Attack simulation reports
-            displayname: Attack simulation and training
             href: resources/report-m365defender-reports-overview.md
           - name: Repeat offender
             items:
@@ -16850,7 +16844,6 @@ items:
         - name: Delete
           href: api/site-delete-permission.md
       - name: Taxonomy
-        displayname: Taxonomy API
         items:
         - name: Store
           href: resources/termstore-store.md
