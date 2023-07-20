@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sections
 [!INCLUDE [sample-code](../includes/snippets/powershell/notebook-get-sections-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/notebook-get-sections-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

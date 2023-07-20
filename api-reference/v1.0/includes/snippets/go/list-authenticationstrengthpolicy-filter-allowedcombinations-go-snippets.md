@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/policies"
+	  graphpolicies "github.com/microsoftgraph/msgraph-sdk-go/policies"
 	  //other-imports
 )
 
@@ -16,12 +16,12 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "allowedCombinations/any"
+requestFilter := "allowedCombinations/any(x:x has 'sms, password')"
 
-requestParameters := &graphconfig.PoliciesAuthenticationStrengthPoliciesRequestBuilderGetQueryParameters{
+requestParameters := &graphpolicies.PoliciesAuthenticationStrengthPoliciesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.PoliciesAuthenticationStrengthPoliciesRequestBuilderGetRequestConfiguration{
+configuration := &graphpolicies.PoliciesAuthenticationStrengthPoliciesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

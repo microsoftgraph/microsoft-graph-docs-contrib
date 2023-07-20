@@ -24,7 +24,6 @@ complianceUrl := "https://contoso.com/dlp-policy-page"
 policyTip.SetComplianceUrl(&complianceUrl) 
 matchedConditionDescriptions := []string {
 	"Credit Card Number",
-
 }
 policyTip.SetMatchedConditionDescriptions(matchedConditionDescriptions)
 policyViolation.SetPolicyTip(policyTip)

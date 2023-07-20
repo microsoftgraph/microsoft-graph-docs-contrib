@@ -8,18 +8,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Policies/AuthenticationStrengthPolicies/Item/UpdateAllowedCombinations"
+	  graphpolicies "github.com/microsoftgraph/msgraph-sdk-go/policies"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewUpdateAllowedCombinationsPostRequestBody()
+requestBody := graphpolicies.NewUpdateAllowedCombinationsPostRequestBody()
 allowedCombinations := []graphmodels.AuthenticationMethodModesable {
 	authenticationMethodModes := graphmodels.PASSWORD, VOICE_AUTHENTICATIONMETHODMODES 
-	requestBody.SetAuthenticationMethodModes(&authenticationMethodModes) 
-
+	requestBody.SetAuthenticationMethodModes(&authenticationMethodModes)
 }
 requestBody.SetAllowedCombinations(allowedCombinations)
 

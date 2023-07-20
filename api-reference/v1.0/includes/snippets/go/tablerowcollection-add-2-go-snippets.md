@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Drives/Item/Items/Item/Workbook/Tables/Item/Rows/Add"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddPostRequestBody()
+requestBody := graphdrives.NewAddPostRequestBody()
 index := int32(5)
 requestBody.SetIndex(&index) 
 values := []graphmodels.Jsonable {
@@ -25,8 +25,7 @@ requestBody.Set(&)
  := int32(2)
 requestBody.Set(&) 
  := int32(3)
-requestBody.Set(&) 
-
+requestBody.Set(&)
 	}
 	json := []graphmodels.Numberable {
  := int32(4)
@@ -34,10 +33,8 @@ requestBody.Set(&)
  := int32(5)
 requestBody.Set(&) 
  := int32(6)
-requestBody.Set(&) 
-
+requestBody.Set(&)
 	}
-
 }
 requestBody.SetValues(values)
 

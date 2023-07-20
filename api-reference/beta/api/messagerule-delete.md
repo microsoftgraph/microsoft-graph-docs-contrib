@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules/AQAAAJ
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-messagerule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-messagerule-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

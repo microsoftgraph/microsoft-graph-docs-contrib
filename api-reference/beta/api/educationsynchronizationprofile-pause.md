@@ -77,6 +77,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/pau
 [!INCLUDE [sample-code](../includes/snippets/powershell/post-synchronizationprofile-pause-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-synchronizationprofile-pause-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

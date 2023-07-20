@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 [!INCLUDE [sample-code](../includes/snippets/powershell/post-educationsynchronizationprofile-start-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-educationsynchronizationprofile-start-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

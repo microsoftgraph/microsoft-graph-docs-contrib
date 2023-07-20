@@ -1,7 +1,7 @@
 ---
 title: "subscription: reauthorize"
 description: "Reauthorize a subscription when you receive a reauthorizationRequired challenge."
-author: "jumasure"
+author: "keylimesoda"
 ms.localizationpriority: medium
 ms.prod: "change-notifications"
 doc_type: apiPageType
@@ -105,6 +105,10 @@ POST https://graph.microsoft.com/v1.0/subscriptions/{subscriptionsId}/reauthoriz
 [!INCLUDE [sample-code](../includes/snippets/csharp/subscriptionthisreauthorize-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/subscriptionthisreauthorize-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/subscriptionthisreauthorize-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -123,6 +127,10 @@ POST https://graph.microsoft.com/v1.0/subscriptions/{subscriptionsId}/reauthoriz
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/subscriptionthisreauthorize-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/subscriptionthisreauthorize-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

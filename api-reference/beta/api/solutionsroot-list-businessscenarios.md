@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-businessscenario-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-businessscenario-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

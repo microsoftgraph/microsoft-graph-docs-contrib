@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates?$expand=definitions&
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-teamtemplatedefinitions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamtemplatedefinitions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

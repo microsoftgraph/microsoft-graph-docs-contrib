@@ -51,6 +51,7 @@ The following table shows the parameters that can be used with this action.
 |keepEnrollmentData|Boolean|Not yet documented|
 |keepUserData|Boolean|Not yet documented|
 |macOsUnlockCode|String|Not yet documented|
+|obliterationBehavior|[obliterationBehavior](../resources/intune-devices-obliterationbehavior.md)|Not yet documented|
 |persistEsimDataPlan|Boolean|Not yet documented|
 
 
@@ -66,12 +67,13 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDeviceId}/wipe
 
 Content-type: application/json
-Content-length: 141
+Content-length: 187
 
 {
   "keepEnrollmentData": true,
   "keepUserData": true,
   "macOsUnlockCode": "Mac Os Unlock Code value",
+  "obliterationBehavior": "doNotObliterate",
   "persistEsimDataPlan": true
 }
 ```

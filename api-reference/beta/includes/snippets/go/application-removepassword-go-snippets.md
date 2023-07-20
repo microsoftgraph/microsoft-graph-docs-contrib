@@ -9,14 +9,14 @@ import (
 	  "context"
 	  "github.com/google/uuid"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Applications/Item/RemovePassword"
+	  graphapplications "github.com/microsoftgraph/msgraph-beta-sdk-go/applications"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewRemovePasswordPostRequestBody()
+requestBody := graphapplications.NewRemovePasswordPostRequestBody()
 keyId := uuid.MustParse("f0b0b335-1d71-4883-8f98-567911bfdca6")
 requestBody.SetKeyId(&keyId) 
 

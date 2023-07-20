@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewRetentionLabel()
+requestBody := graphmodelssecurity.NewRetentionLabel()
 displayName := "String"
 requestBody.SetDisplayName(&displayName) 
 behaviorDuringRetentionPeriod := graphmodels.STRING_BEHAVIORDURINGRETENTIONPERIOD 
@@ -24,7 +25,7 @@ actionAfterRetentionPeriod := graphmodels.STRING_ACTIONAFTERRETENTIONPERIOD
 requestBody.SetActionAfterRetentionPeriod(&actionAfterRetentionPeriod) 
 retentionTrigger := graphmodels.STRING_RETENTIONTRIGGER 
 requestBody.SetRetentionTrigger(&retentionTrigger) 
-retentionDuration := graphmodels.NewRetentionDuration()
+retentionDuration := graphmodelssecurity.NewRetentionDuration()
 requestBody.SetRetentionDuration(retentionDuration)
 isInUse := boolean
 requestBody.SetIsInUse(&isInUse) 
@@ -38,6 +39,16 @@ labelToBeApplied := "String"
 requestBody.SetLabelToBeApplied(&labelToBeApplied) 
 defaultRecordBehavior := graphmodels.STRING_DEFAULTRECORDBEHAVIOR 
 requestBody.SetDefaultRecordBehavior(&defaultRecordBehavior) 
+descriptors := graphmodelssecurity.NewFilePlanDescriptor()
+additionalData := map[string]interface{}{
+	"odataBind" : "https://graph.microsoft.com/beta/security/labels/authorities('fie3f4fc-b966-4c40-94de-fb8a383658e4')", 
+	"odataBind" : "https://graph.microsoft.com/beta/security/labels/categories('0bjk8-b966-4c40-94de-fb8a383658e4')", 
+	"odataBind" : "https://graph.microsoft.com/beta/security/labels/citations('0e23f4fc-b966-4c40-94de-fb8a383658e4')", 
+	"odataBind" : "https://graph.microsoft.com/beta/security/labels/departments('p99ef4fc-b966-4c40-94de-fb8a383658e4')", 
+	"odataBind" : "https://graph.microsoft.com/beta/security/labels/filePlanReferences('e095f4fc-b966-4c40-94de-fb8a383658e4')", 
+}
+descriptors.SetAdditionalData(additionalData)
+requestBody.SetDescriptors(descriptors)
 
 result, err := graphClient.Security().Labels().RetentionLabels().Post(context.Background(), requestBody, nil)
 

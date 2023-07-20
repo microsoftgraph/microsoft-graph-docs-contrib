@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.DriveItemItemItemThumbnailsRequestBuilderGetQueryParameters{
+requestParameters := &graphdrives.DriveItemItemItemThumbnailsRequestBuilderGetQueryParameters{
 	Select: [] string {"c300x400_crop"},
 }
-configuration := &graphconfig.DriveItemItemItemThumbnailsRequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.DriveItemItemItemThumbnailsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -73,7 +73,6 @@ DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313c
 
 ---
 
-
 #### Response
 The following is an example of the response
 <!-- {

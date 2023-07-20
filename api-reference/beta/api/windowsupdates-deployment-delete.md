@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/983f03
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-deployment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-deployment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

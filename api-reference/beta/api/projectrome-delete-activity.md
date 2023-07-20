@@ -90,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-activity-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-activity-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

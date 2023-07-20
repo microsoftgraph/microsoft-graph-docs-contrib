@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/print"
+	  graphprint "github.com/microsoftgraph/msgraph-sdk-go/print"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.PrintPrinterItemJobItemRequestBuilderGetQueryParameters{
+requestParameters := &graphprint.PrintPrinterItemJobItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"documents"},
 }
-configuration := &graphconfig.PrintPrinterItemJobItemRequestBuilderGetRequestConfiguration{
+configuration := &graphprint.PrintPrinterItemJobItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-regionalandlanguagesettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-regionalandlanguagesettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

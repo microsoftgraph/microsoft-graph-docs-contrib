@@ -27,13 +27,14 @@ The result of a Cloud PC Azure network connection health check.
 
 |Property|Type|Description|
 |:---|:---|:---|
+|additionalDetails|String|Additional details about the health check or the recommended action.|
+|correlationId|String|The unique identifier of the health check item-related activities. This identifier can be useful in troubleshooting.|
 |displayName|String|The display name for this health check item.|
-|status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Read-only.|
-|startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
 |endDateTime|DateTimeOffset|The end time of the health check item. Read-only.|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|The type of error that occurred during this health check.|
 |recommendedAction|String|The recommended action to fix the corresponding error.|
-|additionalDetails|String|Additional details about the health check or the recommended action.|
+|startDateTime|DateTimeOffset|The start time of the health check item. Read-only.|
+|status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Read-only.|
 
 ### cloudPcOnPremisesConnectionHealthCheckErrorType values
 
@@ -94,7 +95,9 @@ The result of a Cloud PC Azure network connection health check.
 |permissionCheckNoWindows365NetworkInterfaceContributorRole|Cloud PC service principal does not have Windows 365 network interface contributor role on the specified resource group. Work with the subscription owner to add Windows 365 network interface contributor role assignment on the resource group for the Cloud PC service principal.|
 |permissionCheckTransientServiceError|The first-party app permission check failed due to a transient error. Please try it again. If the issue persists, please contact customer support.|
 |permissionCheckUnknownError|The Cloud PC service principal doesn't have sufficient permissions. Please make sure that the Cloud PC service principal is granted sufficient Azure permissions.|
-|udpConnectivityCheckStunUrlNotAllowListed|Your current network configuration does not allow the use of UDP direct connect Session Traversal Utilities for NAT (STUN). This will not prevent the use of Cloud PCs but may prevent optimal performance. Consider your own network configuration policies before making changes.|
+|udpConnectivityCheckStunUrlNotAllowListed|Your current network configuration does not allow the use of UDP direct connect Session Traversal Utilities for NAT (STUN). This does not prevent the use of Cloud PCs but can prevent optimal performance. Consider your own network configuration policies before you apply changes.|
+|udpConnectivityCheckTurnUrlNotAllowListed|Your current network configuration does not allow the use of UDP direct connect Session Traversal Utilities for NAT (TURN). This does not prevent the use of Cloud PCs but can prevent optimal performance. Consider your own network configuration policies before you apply changes.|
+|udpConnectivityCheckUrlsNotAllowListed|Your current network configuration does not allow the use of UDP direct connect Session Traversal Utilities for NAT (STUN and TURN). This does not prevent the use of Cloud PCs but can prevent optimal performance. Consider your own network configuration policies before you apply changes.|
 |udpConnectivityCheckUnknownError|An unknown error occurred when trying to check UDP direct connect. Make sure your own network configuration policies can allow UDP direct connect. |
 |internalServerErrorDeploymentCanceled|The deployment was canceled. Please try again later. If the problem persists, please contact support.|
 |internalServerErrorAllocateResourceFailed|The allocation of resources failed. Please try again later. If the problem persists, please contact support.|
@@ -126,6 +129,7 @@ The following is a JSON representation of the resource.
   "endDateTime": "String (timestamp)",
   "errorType": "String",
   "recommendedAction": "String",
-  "additionalDetails": "String"
+  "additionalDetails": "String",
+  "correlationId": "String"
 }
 ```

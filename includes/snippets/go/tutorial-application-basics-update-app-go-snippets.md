@@ -20,7 +20,6 @@ tags := []string {
 	"HR",
 	"Payroll",
 	"HideApp",
-
 }
 requestBody.SetTags(tags)
 info := graphmodels.NewInformationalUrl()
@@ -42,7 +41,6 @@ logoutUrl := "https://www.contoso.com/frontchannel_logout"
 web.SetLogoutUrl(&logoutUrl) 
 redirectUris := []string {
 	"https://localhost",
-
 }
 web.SetRedirectUris(redirectUris)
 requestBody.SetWeb(web)

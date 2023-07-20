@@ -84,8 +84,15 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37
 [!INCLUDE [sample-code](../includes/snippets/php/get-authenticationeventsflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-authenticationeventsflow-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-authenticationeventsflow-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following is an example of the response. In this example, the user flow retrieved is named "Woodgrove Drive Users Flow" and is set up to:

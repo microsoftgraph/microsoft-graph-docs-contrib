@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Drives/Item/Items/Item/Restore"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewRestorePostRequestBody()
+requestBody := graphdrives.NewRestorePostRequestBody()
 parentReference := graphmodels.NewItemReference()
 id := "String"
 parentReference.SetId(&id) 

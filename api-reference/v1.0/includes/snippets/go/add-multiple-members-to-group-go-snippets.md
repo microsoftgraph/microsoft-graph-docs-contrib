@@ -21,7 +21,6 @@ additionalData := map[string]interface{}{
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
-
 	}
 }
 requestBody.SetAdditionalData(additionalData)

@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/chats"
+	  graphchats "github.com/microsoftgraph/msgraph-sdk-go/chats"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.ChatItemTabItemRequestBuilderGetQueryParameters{
+requestParameters := &graphchats.ChatItemTabItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsApp"},
 }
-configuration := &graphconfig.ChatItemTabItemRequestBuilderGetRequestConfiguration{
+configuration := &graphchats.ChatItemTabItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

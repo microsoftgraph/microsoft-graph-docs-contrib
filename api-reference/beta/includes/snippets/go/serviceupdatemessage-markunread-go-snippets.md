@@ -8,18 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/ServiceAnnouncement/Messages/MarkUnread"
+	  graphadmin "github.com/microsoftgraph/msgraph-beta-sdk-go/admin"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewMarkUnreadPostRequestBody()
+requestBody := graphadmin.NewMarkUnreadPostRequestBody()
 messageIds := []string {
 	"MC172851",
 	"MC167983",
-
 }
 requestBody.SetMessageIds(messageIds)
 

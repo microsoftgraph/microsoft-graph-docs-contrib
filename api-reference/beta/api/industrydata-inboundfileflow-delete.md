@@ -91,6 +91,10 @@ DELETE https://graph.microsoft.com/beta/external/industryData/inboundFlows/7bd62
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-inboundflow-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-inboundflow-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

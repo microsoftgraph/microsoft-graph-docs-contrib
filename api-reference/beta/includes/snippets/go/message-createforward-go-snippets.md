@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/Messages/Item/CreateForward"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCreateForwardPostRequestBody()
+requestBody := graphusers.NewItemCreateForwardPostRequestBody()
 message := graphmodels.NewMessage()
 isDeliveryReceiptRequested := true
 message.SetIsDeliveryReceiptRequested(&isDeliveryReceiptRequested) 
@@ -31,7 +32,6 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 message.SetToRecipients(toRecipients)
 requestBody.SetMessage(message)

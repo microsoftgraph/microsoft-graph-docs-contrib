@@ -20,20 +20,18 @@ chatType := graphmodels.ONEONONE_CHATTYPE
 requestBody.SetChatType(&chatType) 
 
 
-conversationMember := graphmodels.NewConversationMember()
+conversationMember := graphmodels.NewAadUserConversationMember()
 roles := []string {
 	"owner",
-
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
 	"odataBind" : "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')", 
 }
 conversationMember.SetAdditionalData(additionalData)
-conversationMember1 := graphmodels.NewConversationMember()
+conversationMember1 := graphmodels.NewAadUserConversationMember()
 roles := []string {
 	"owner",
-
 }
 conversationMember1.SetRoles(roles)
 additionalData := map[string]interface{}{
@@ -44,7 +42,6 @@ conversationMember1.SetAdditionalData(additionalData)
 members := []graphmodels.ConversationMemberable {
 	conversationMember,
 	conversationMember1,
-
 }
 requestBody.SetMembers(members)
 

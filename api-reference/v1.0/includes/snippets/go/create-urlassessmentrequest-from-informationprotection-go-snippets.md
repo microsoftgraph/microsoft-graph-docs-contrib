@@ -16,14 +16,12 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewThreatAssessmentRequest()
+url := "http://test.com"
+requestBody.SetUrl(&url) 
 expectedAssessment := graphmodels.BLOCK_THREATEXPECTEDASSESSMENT 
 requestBody.SetExpectedAssessment(&expectedAssessment) 
 category := graphmodels.PHISHING_THREATCATEGORY 
 requestBody.SetCategory(&category) 
-additionalData := map[string]interface{}{
-	"url" : "http://test.com", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
 

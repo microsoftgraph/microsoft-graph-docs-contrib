@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
 	  //other-imports
 )
 
@@ -18,14 +18,14 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "groupId eq 'd5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc' and accessId eq 'member'"
 
-requestParameters := &graphconfig.IdentityGovernancePrivilegedAccessGroupEligibilityScheduleItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilitySchedulesFilterByCurrentUser(on='{on}')RequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.IdentityGovernancePrivilegedAccessGroupEligibilityScheduleItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilitySchedulesFilterByCurrentUser(on='{on}')RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().ByEligibilityScheduleId("privilegedAccessGroupEligibilitySchedule-id").Get(context.Background(), configuration)
+result, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().FilterByCurrentUser(on='{on}')().Get(context.Background(), configuration)
 
 
 ```

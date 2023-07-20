@@ -19,7 +19,6 @@ requestBody := graphmodels.NewAuthorizationPolicy()
 defaultUserRolePermissions := graphmodels.NewDefaultUserRolePermissions()
 permissionGrantPoliciesAssigned := []string {
 	"managePermissionGrantsForSelf.microsoft-user-default-low",
-
 }
 defaultUserRolePermissions.SetPermissionGrantPoliciesAssigned(permissionGrantPoliciesAssigned)
 requestBody.SetDefaultUserRolePermissions(defaultUserRolePermissions)

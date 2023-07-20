@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/
 [!INCLUDE [sample-code](../includes/snippets/php/list-learningcourseactivity-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-learningcourseactivity-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
