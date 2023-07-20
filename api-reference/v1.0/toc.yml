@@ -5778,15 +5778,15 @@ items:
                                 href: api/identitygovernance-userprocessingresult-summary.md
                               - name: List task processing results
                                 href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
-                      - name: Task report
-                        href: resources/identitygovernance-taskreport.md
-                        items:
-                          - name: List task reports
-                            href: api/identitygovernance-workflow-list-taskreports.md
-                          - name: Get summary
-                            href: api/identitygovernance-taskreport-summary.md
-                          - name: List task processing results
-                            href: api/identitygovernance-taskreport-list-taskprocessingresults.md
+                          - name: Task report
+                            href: resources/identitygovernance-taskreport.md
+                            items:
+                              - name: List task reports
+                                href: api/identitygovernance-workflow-list-taskreports.md
+                              - name: Get summary
+                                href: api/identitygovernance-taskreport-summary.md
+                              - name: List task processing results
+                                href: api/identitygovernance-taskreport-list-taskprocessingresults.md
                           - name: Workflow run
                             items:
                               - name: Run
