@@ -66,7 +66,10 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "update_teamsapp_v1_e1"
+}-->
 
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8/appDefinitions
@@ -94,7 +97,7 @@ HTTP/1.1 204 No Content
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_teamsapp"
+  "name": "update_teamsapp_v1_e2"
 }-->
 
 ```http
