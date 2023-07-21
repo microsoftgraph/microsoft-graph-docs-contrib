@@ -7,7 +7,7 @@ ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-# Create WebPart
+# Create webPart
 
 Namespace: microsoft.graph
 
