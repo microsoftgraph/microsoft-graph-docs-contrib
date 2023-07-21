@@ -38,7 +38,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation",
-  "exploitedCves": ["microsoft.graph.windowsUpdates.cveInformation"],
+  "exploitedCves": [{"@odata.type": "microsoft.graph.windowsUpdates.cveInformation"}],
   "maxBaseScore": "Double",
   "maxSeverityLevel": "String"
 }
