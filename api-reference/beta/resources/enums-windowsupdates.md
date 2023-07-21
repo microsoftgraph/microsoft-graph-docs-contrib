@@ -115,9 +115,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 |Member|
 |:---|
+|critical|
 |moderate|
 |important|
-|critical|
 |unknownFutureValue|
 
 <!--
