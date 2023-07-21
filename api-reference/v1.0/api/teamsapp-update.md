@@ -152,6 +152,6 @@ Content-Type: application/json
          "Member.Read.Group"
     ],
     "publishingState": "submitted",
-    "lastModifiedDateTime": "2020-02-10 22:48:33.841",
+    "lastModifiedDateTime": "2020-02-10 22:48:33.841"
 }
 ```
