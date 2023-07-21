@@ -1,5 +1,5 @@
 ---
-title: "Delete multiTenantOrganizationMember"
+title: "Remove multiTenantOrganizationMember"
 description: "Remove a tenant from a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Delete multiTenantOrganizationMember
+# Remove multiTenantOrganizationMember
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

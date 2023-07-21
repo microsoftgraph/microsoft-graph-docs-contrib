@@ -13595,13 +13595,13 @@ items:
                     href: resources/multitenantorganizationmember.md
                   - name: List
                     href: api/multitenantorganization-list-tenants.md
-                  - name: Create
+                  - name: Add
                     href: api/multitenantorganization-post-tenants.md
                   - name: Get
                     href: api/multitenantorganizationmember-get.md
                   - name: Update
                     href: api/multitenantorganizationmember-update.md
-                  - name: Delete
+                  - name: Remove
                     href: api/multitenantorganization-delete-tenants.md
                 - name: Join request
                   items:

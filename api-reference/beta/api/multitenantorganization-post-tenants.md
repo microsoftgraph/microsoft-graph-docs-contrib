@@ -1,5 +1,5 @@
 ---
-title: "Create multiTenantOrganizationMember"
+title: "Add multiTenantOrganizationMember"
 description: "Add a tenant to a multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create multiTenantOrganizationMember
+# Add multiTenantOrganizationMember
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

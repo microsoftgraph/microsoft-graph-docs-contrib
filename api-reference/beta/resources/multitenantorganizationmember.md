@@ -19,10 +19,10 @@ Defines a tenant added to a multi-tenant organization.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List multiTenantOrganizationMembers](../api/multitenantorganization-list-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|List the tenants and their properties in the multi-tenant organization.|
-|[Create multiTenantOrganizationMember](../api/multitenantorganization-post-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Add a tenant to a multi-tenant organization.|
+|[Add multiTenantOrganizationMember](../api/multitenantorganization-post-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Add a tenant to a multi-tenant organization.|
 |[Get multiTenantOrganizationMember](../api/multitenantorganizationmember-get.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Get a tenant and its properties in the multi-tenant organization.|
 |[Update multiTenantOrganizationMember](../api/multitenantorganizationmember-update.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Update the properties of a tenant in a multi-tenant organization.|
-|[Delete multiTenantOrganizationMember](../api/multitenantorganization-delete-tenants.md)|None|Remove a tenant from a multi-tenant organization.|
+|[Remove multiTenantOrganizationMember](../api/multitenantorganization-delete-tenants.md)|None|Remove a tenant from a multi-tenant organization.|
 
 ## Properties
 |Property|Type|Description|
