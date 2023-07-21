@@ -23,10 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All|
 
-The signed-in user must also be assigned one of the following minimum [directory roles](/azure/active-directory/roles/permissions-reference):
-
-* Security Reader
-* Global Reader
+[!INCLUDE [rbac-multitenantorganization-apis-read](../includes/rbac-for-apis/rbac-multitenantorganization-apis-read.md)]
 
 ## HTTP request
 
