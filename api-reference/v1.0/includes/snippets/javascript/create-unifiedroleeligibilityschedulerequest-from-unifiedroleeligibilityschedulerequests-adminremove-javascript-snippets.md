@@ -18,7 +18,6 @@ const unifiedRoleEligibilityScheduleRequest = {
 };
 
 await client.api('/roleManagement/directory/roleEligibilityScheduleRequests')
-	.version('beta')
 	.post(unifiedRoleEligibilityScheduleRequest);
 
 ```
