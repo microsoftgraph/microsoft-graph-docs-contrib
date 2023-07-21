@@ -1815,6 +1815,42 @@
       "CreatedDateTime": "2023-05-31T08:00:05.7615321Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "08fe5651-0de5-4c33-ae2c-9e39824a2beb",
+          "ApiChange": "Member",
+          "ChangedApiName": "user",
+          "ChangeType": "Addition",
+          "Description": "Added the `user` member to the **plannerContainerType** enumeration.",
+          "Target": "plannerContainerType"
+        }
+      ],
+      "Id": "08fe5651-0de5-4c33-ae2c-9e39824a2beb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-19T19:06:43.5935245Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6d0c3640-f63a-4a45-809b-4545aa606f03",
+          "ApiChange": "Member",
+          "ChangedApiName": "user",
+          "ChangeType": "Addition",
+          "Description": "Added the `user` member to the **plannerContainerType** enumeration.",
+          "Target": "plannerContainerType"
+        }
+      ],
+      "Id": "6d0c3640-f63a-4a45-809b-4545aa606f03",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-07-19T19:06:43.5938882Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     }
   ]
 }
