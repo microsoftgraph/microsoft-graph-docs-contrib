@@ -1,0 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+
+Windows10EnterpriseModernAppManagementConfiguration deviceConfiguration = new Windows10EnterpriseModernAppManagementConfiguration();
+deviceConfiguration.description = "Description value";
+deviceConfiguration.displayName = "Display Name value";
+deviceConfiguration.version = 7;
+deviceConfiguration.uninstallBuiltInApps = true;
+
+graphClient.deviceManagement().deviceConfigurations("{deviceConfigurationId}")
+	.buildRequest()
+	.patch(deviceConfiguration);
+
+```
