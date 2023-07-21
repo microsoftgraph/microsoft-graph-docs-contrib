@@ -69,7 +69,7 @@ Similarly, messages sent from outside the tenant (federated chat) are exempt.
 Consumption meters still apply.
 
 It is the responsibility of the tenant owner (not the app owner) to ensure that users are properly licensed.
-Admins can use the Information protection license report in 
+Admins can use the [Information protection license report](/microsoftteams/teams-analytics-and-reports/information-protection-license-report) in 
 [Teams admin center](https://admin.teams.microsoft.com/analytics/reports) 
 to see which users don't have a supported license.
 
