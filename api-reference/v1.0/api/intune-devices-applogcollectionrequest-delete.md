@@ -49,12 +49,16 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_devices_applogcollectionrequest_delete_delete_applogcollectionrequest" }-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests/{appLogCollectionRequestId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response"}-->
 ``` http
 HTTP/1.1 204 No Content
 ```
