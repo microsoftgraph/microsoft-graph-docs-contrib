@@ -32,7 +32,7 @@ Cross-tenant access partner configurations and identity synchronization policies
 |createdDateTime|DateTimeOffset|Date when multi-tenant organization was created. Read-only.|
 |description|String|Description of the multi-tenant organization.|
 |displayName|String|Display name of the multi-tenant organization.|
-|id|String|Tenant-level ID for the multi-tenant organization object. It is automatically generated when multi-tenant organization is created and is stored in the local tenant. This ID doesn't appear across the other tenants in the multi-tenant organization. Read-only. Inherited from [entity](../resources/entity.md).|
+|id|String|Tenant-specific object ID for the multi-tenant organization object. It is automatically generated when a multi-tenant organization object is created and stored in the local tenant. This ID is tenant-specific and does not match the object IDs of the same multi-tenant organization in other tenants. Read-only. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
