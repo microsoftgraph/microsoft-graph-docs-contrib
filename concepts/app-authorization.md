@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 The new Microsoft Graph Data Connect app authorization experience is built into the Microsoft 365 admin center. Global administrators who authorize Data Connect apps for your organization can get started by going to **Org settings** on the **Security & Privacy** tab.
 This documentation is for global administrators authorizing Microsoft Graph Data Connect apps for your organization.
 
-The new Data Connect app authorization experience is built into the Microsoft 365 admin center. You can get started by navigating to the **Security & Privacy** tab under **Org settings**  and selecting **Microsoft Graph Data Connect applications** and navigate to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter). This is a different entry point from where admins opt-in to Data Connect. Currently, only global administrators may authorize Data Connect applications.
+The new Data Connect app authorization experience is built into the Microsoft 365 admin center. Get started by navigating to the **Security & Privacy** tab under **Org settings**—selecting **Microsoft Graph Data Connect applications**—and navigating to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter). This is a different entry point from where admins opt-in to Data Connect. Currently, only global administrators may authorize Data Connect applications.
 
 ![Graphic showing org settings in the Security & Privacy tab for Data Connect apps.](images/org-settings-security-and-privacy-data-connect-apps.png)
 
@@ -115,5 +115,4 @@ Authorization validations applied during runtime include:
 - The scope for the incoming request aligns with the scope in the found app authorization.
   - If the app is authorized for all users/groups in the tenant, then any scope will pass this validation.
   - If the app is authorized for a list of groups, then any subset of the authorized groups will pass this validation.
-  - If the app is authorized for a scope filter URI, then the incoming request must exactly match the authorized value.
-  
+  - If the app is authorized for a scope filter URI, then the incoming request must precisely match the authorized value.
