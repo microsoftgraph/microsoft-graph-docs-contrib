@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.knowledgeBaseArticle",
-  "id": "String",
+  "id": "String (identifier)",
   "url": "String"
 }
 ```
