@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)             |
 | :------------------------------------- | :------------------------------------------------------ |
-| Delegated (work or school account)     | TBD |
+| Delegated (work or school account)     | EduCurricula.ReadWrite |
 | Delegated (personal Microsoft account) | Not Supported.                                          |
-| Application                            | TBD |
+| Application                            | EduCurricula.ReadWrite.All |
 
 ## HTTP request
 
