@@ -79,10 +79,12 @@ Content-type: application/zip
 ```
 
 For details about the Teams application zip file, see [Create app package](/microsoftteams/platform/concepts/apps/apps-package).
-<!-- markdownlint-disable MD024 -->
 
 #### Response
 
+<!-- {
+  "blockType": "response"
+}-->
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -90,8 +92,6 @@ HTTP/1.1 204 No Content
 ### Example 2: Update a new version of an existing app for admin review prior to publication in the current tenant catalog
 
 #### Request
-
-<!-- markdownlint-disable MD034 -->
 
 
 # [HTTP](#tab/http)
@@ -121,7 +121,6 @@ Content-type: application/zip
 
 ---
 
-<!-- markdownlint-disable MD024 -->
 
 #### Response
 
