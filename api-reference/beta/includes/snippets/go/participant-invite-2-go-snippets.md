@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphcommunications.NewInvitePostRequestBody()
@@ -30,9 +30,8 @@ phone.SetId(&id)
 identity.SetAdditionalData(additionalData)
 invitationParticipantInfo.SetIdentity(identity)
 
-participants := []graphcommunications.InvitationParticipantInfoable {
+participants := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,
-
 }
 requestBody.SetParticipants(participants)
 clientContext := "f2fa86af-3c51-4bc2-8fc0-475452d9764f"

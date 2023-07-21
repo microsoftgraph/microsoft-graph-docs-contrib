@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdevicemanagement.NewGetRemoteConnectionHistoricalReportsPostRequestBody()
@@ -25,7 +25,6 @@ select := []string {
 	"RoundTripTimeInMsP50",
 	"AvailableBandwidthInMBpsP50",
 	"RemoteSignInTimeInSec",
-
 }
 requestBody.SetSelect(select)
 top := int32(25)

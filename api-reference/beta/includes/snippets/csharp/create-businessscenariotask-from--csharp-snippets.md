@@ -14,16 +14,11 @@ var requestBody = new BusinessScenarioTask
 	Title = "Customer order #12010",
 	PercentComplete = 0,
 	Priority = 5,
-	Target = new BusinessScenarioTaskTargetBase
+	Target = new BusinessScenarioGroupTarget
 	{
 		OdataType = "microsoft.graph.businessScenarioGroupTarget",
 		TaskTargetKind = PlannerTaskTargetKind.Group,
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"groupId" , "7a339254-4b2b-4410-b295-c890a16776ee"
-			},
-		},
+		GroupId = "7a339254-4b2b-4410-b295-c890a16776ee",
 	},
 	BusinessScenarioProperties = new BusinessScenarioProperties
 	{

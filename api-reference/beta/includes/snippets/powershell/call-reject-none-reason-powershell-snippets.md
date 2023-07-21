@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	reason = "none"
 }
 
-Invoke-MgRejectCommunicationCall -CallId $callId -BodyParameter $params
+Invoke-MgBetaRejectCommunicationCall -CallId $callId -BodyParameter $params
 
 ```

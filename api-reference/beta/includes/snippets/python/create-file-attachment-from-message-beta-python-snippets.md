@@ -7,16 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = Attachment()
+request_body = FileAttachment()
 request_body.@odata_type = '#microsoft.graph.fileAttachment'
 
 request_body.name = 'smile'
 
-additional_data = [
-'content_bytes' => 'a0b1c76de9f7=', 
-];
-request_body.additional_data(additional_data)
-
+request_body.ContentBytes(base64_decode('a0b1c76de9f7='))
 
 
 

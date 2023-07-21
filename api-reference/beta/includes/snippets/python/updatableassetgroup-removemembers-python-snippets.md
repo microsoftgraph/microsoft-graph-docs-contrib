@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 request_body = RemoveMembersPostRequestBody()
-assets_updatable_asset1 = UpdatableAsset()
+assets_updatable_asset1 = AzureADDevice()
 assets_updatable_asset1.@odata_type = '#microsoft.graph.windowsUpdates.azureADDevice'
 
 assets_updatable_asset1.id = 'String (identifier)'
