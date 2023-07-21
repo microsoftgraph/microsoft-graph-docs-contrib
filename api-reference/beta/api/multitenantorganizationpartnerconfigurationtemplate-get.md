@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/
 
 The following example response shows the default partner configuration settings before they have been configured or after they have been reset.
 
+In its default state, when the template is used to generate a previously non-existent partner policy, the newly generated partner policy is in an unconfigured state.
+
+Similarly, in its default state, when the template is used to amend a previously existing partner policy, the previously existing partner policy remains unchanged.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,10 +103,6 @@ Content-Type: application/json
 ```
 
 The following example response shows the partner configuration settings for inbound trust and automatic redemption after they have been configured.
-
-In its default state, when the template is used to generate a previously non-existent partner policy, the newly generated partner policy is in an unconfigured state.
-
-Similarly, in its default state, when the template is used to amend a previously existing partner policy, the previously existing partner policy remains unchanged.
 
 ``` http
 HTTP/1.1 200 OK
