@@ -27,9 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.CrossTenantAccess|
 
-The signed-in user must also be assigned the following minimum [directory role](/azure/active-directory/roles/permissions-reference):
-
-* Security Administrator
+[!INCLUDE [rbac-multitenantorganization-apis-write](../includes/rbac-for-apis/rbac-multitenantorganization-apis-write.md)]
 
 ## HTTP request
 
