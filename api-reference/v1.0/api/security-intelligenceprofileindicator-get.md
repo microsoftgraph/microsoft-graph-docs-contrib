@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /security/threatIntelligence/intelProfileIndicators/{intelligenceProfileIndicatorId}
+GET /security/threatIntelligence/intelligenceProfileIndicators/{intelligenceProfileIndicatorId}
 ```
 
 ## Optional query parameters
@@ -68,7 +68,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/security/threatIntelligence/intelProfileIndicators/ff3eecd2-a2be-27c2-8dc0-40d1c0eada55
+GET https://graph.microsoft.com/v1.0/security/threatIntelligence/intelligenceProfileIndicators/ff3eecd2-a2be-27c2-8dc0-40d1c0eada55
 ```
 
 ### Response
