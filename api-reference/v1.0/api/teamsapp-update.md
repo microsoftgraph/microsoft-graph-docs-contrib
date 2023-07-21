@@ -75,7 +75,7 @@ If successful, this method returns a `204 No Content` response code.
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8/appDefinitions
 Content-type: application/zip
 
-
+app.zip
 ```
 
 For details about the Teams application zip file, see [Create app package](/microsoftteams/platform/concepts/apps/apps-package).
