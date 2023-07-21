@@ -1235,7 +1235,6 @@ Namespace: microsoft.graph
 | group              |
 | unknownFutureValue |
 | roster             |
-| user               |
 
 
 ### plannerPreviewType values
