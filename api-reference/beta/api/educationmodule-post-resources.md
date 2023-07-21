@@ -69,8 +69,6 @@ If successful, this method returns a `201 Created` response code and an [educati
 #### Request
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","ba8e4215-4fb2-4dba-abe7-a8f2585177d3"],  
@@ -132,26 +130,3 @@ Content-type: application/json
     }
 }
 ```
-
-### Example 2: Create an educationWordResource
-
-
-```
-
-### Example 3: Create an educationFileResource
-#
-```
-
-### Example 4: Create an educationExcelResource
-
-```
-
-### Example 5: Create an educationPowerPointResource
-
-```
-
-### Example 6: Create an educationMediaResource
-
-```
-
-
