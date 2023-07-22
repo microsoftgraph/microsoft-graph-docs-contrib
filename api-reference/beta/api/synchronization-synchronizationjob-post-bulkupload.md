@@ -1,6 +1,6 @@
 ---
 title: "Perform bulkUpload"
-description: "Perform a new bulkUpload object."
+description: "Perform a new bulkUpload."
 author: "cmmdesai"
 ms.localizationpriority: medium
 ms.prod: "applications"
