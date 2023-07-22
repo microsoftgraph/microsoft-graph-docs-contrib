@@ -9,6 +9,7 @@ ms.custom: scenarios:getting-started
 # Microsoft Graph app authorization
 
 The new Microsoft Graph Data Connect app authorization experience is built into the Microsoft 365 admin center. Global administrators who authorize Data Connect apps for your organization can get started by going to **Org settings** on the **Security & Privacy** tab.
+
 This documentation is for global administrators authorizing Microsoft Graph Data Connect apps for your organization.
 
 The new Data Connect app authorization experience is built into the Microsoft 365 admin center. Get started by navigating to the **Security & Privacy** tab under **Org settings**—selecting **Microsoft Graph Data Connect applications**—and navigating to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter). This is a different entry point from where admins opt-in to Data Connect. Currently, only global administrators may authorize Data Connect applications.
@@ -37,7 +38,7 @@ All single-tenant apps will be populated in the table by default. Only approved,
 - **Update available**—apps that an admin has previously reviewed and acted upon, but have since been updated. Apps in this state will continue working as per previous authorization. Once the admin provides a new approval, the new definition of the app will overwrite the old one.
 
 ### App details view
-<!-- For this section, can we either have a set of images for the user to click through or a GIF of all wizard pages to reduce number of screenshots -->
+<!-- For this section, can we either have a set of images for the user to click through or a GIF of all wizard pages to reduce number of screenshots? -->
 Clicking on an app entry in the table will launch the app details view, with more information on what data the app requires. This wizard experience walks you through the relevant data access details, and allows you to approve or deny an app at the end. For what this looks like in the Data Connect app portal and M365 admin center, see the images below:
 
 ![Graphic showing the app details view in the Data Connect portal.](images/data-connect-portal-app-details-view.png)
