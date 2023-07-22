@@ -158,6 +158,7 @@ items:
           - name: Policies and billing
             href: data-connect-policies.md
           - name: User selection and filtering
+            href: data-connect-filtering.md
           - name: Updated onboarding experience
             items:
               - name: Onboarding experience overview
@@ -168,7 +169,6 @@ items:
                 href: app-authorization.md 
               - name: Existing customer migration
                 href: existing-customer-migration.md  
-            href: data-connect-filtering.md
           - name: Integrate with PAM
             href: data-connect-pam.md
             displayName: Privileged Access Management
