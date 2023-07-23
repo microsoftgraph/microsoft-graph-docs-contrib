@@ -32,6 +32,7 @@ Each tenant has its own template. This template is applied when a tenant joins a
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|ID of the template. Key.|
+|templateApplicationLevel|templateApplicationLevel|Specifies how the template is applied when a tenant joins a multi-tenant organization and when other tenants join a multi-tenant organization. The possible values are: `none`, `newPartners` (default), `existingPartners` (default), `unknownFutureValue`. `none` indicates the template is not applied for new or existing partners. `newPartners` indicates the template is applied for new partners. `existingPartners` indicates the template is applied for existing partners.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Defines whether users can be synchronized from the partner tenant.|
 
 ## Relationships
@@ -49,6 +50,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.multiTenantOrganizationIdentitySyncPolicyTemplate",
+  "templateApplicationLevel": "String",
   "userSyncInbound": {
     "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
   }

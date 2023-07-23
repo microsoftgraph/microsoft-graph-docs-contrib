@@ -87,6 +87,7 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration/$entity",
     "id": "75b1889b-6f42-4cc5-8e62-e774b8db243c",
+    "templateApplicationLevel": "newPartners,existingPartners",
     "inboundTrust": null,
     "b2bCollaborationOutbound": null,
     "b2bCollaborationInbound": null,
@@ -108,6 +109,7 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration/$entity",
     "id": "8d253b1b-1798-434a-8e77-bec3774d1512",
+    "templateApplicationLevel": "newPartners,existingPartners",
     "b2bCollaborationOutbound": null,
     "b2bCollaborationInbound": null,
     "b2bDirectConnectOutbound": null,

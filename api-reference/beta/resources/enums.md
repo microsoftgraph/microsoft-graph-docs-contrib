@@ -391,6 +391,15 @@ Namespace: microsoft.graph
 |removed|
 |unknownFutureValue|
 
+### templateApplicationLevel values
+
+|Member|
+|:---|
+|none|
+|newPartners|
+|existingPartners|
+|unknownFutureValue|
+
 ### accessPackageFilterByCurrentUserOptions values
 
 | Member             |

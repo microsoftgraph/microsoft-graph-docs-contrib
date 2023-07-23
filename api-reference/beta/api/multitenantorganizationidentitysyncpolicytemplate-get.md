@@ -82,6 +82,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization/$entity",
+    "templateApplicationLevel": "newPartners,existingPartners",
     "id": "0e7aad84-cb46-4b8e-a881-522ef25939f1",
     "userSyncInbound": {
         "isSyncAllowed": null
@@ -98,6 +99,7 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization/$entity",
     "id": "e1a11ff3-01f1-4c48-9784-b9d931571474",
+    "templateApplicationLevel": "newPartners,existingPartners",
     "userSyncInbound": {
         "isSyncAllowed": true
     }
