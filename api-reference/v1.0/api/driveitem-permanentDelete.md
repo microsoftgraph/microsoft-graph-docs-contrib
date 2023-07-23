@@ -4,15 +4,15 @@ ms.date: 06/28/2023
 title: Permanently delete a file or folder
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
-description: "Permanently delete a DriveItem by using its ID."
+description: "Permanently delete a driveItem by using its ID."
 doc_type: apiPageType
 ---
-# Permanently delete a DriveItem
+# Permanently delete a driveItem
 
 Namespace: microsoft.graph
 
 Permanently deletes a [DriveItem](../resources/driveitem.md) by using its ID.
-Note that deleting items using this method will be permanently deleted and won't go to recycleBin. Hence can't be restored.
+Note that if you delete items using this method, they will be permanently removed and won't be sent to the recycle bin. Therefore, they cannot be restored afterward.
 
 ## Permissions
 
