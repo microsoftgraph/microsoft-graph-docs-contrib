@@ -56,13 +56,13 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 DELETE /me/extensions/{extensionId}
 ```
 
->**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
+>**Note:** The previous syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
 All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.
 
 ## Path parameters
 |Parameter|Type|Description|
 |:-----|:-----|:-----|
-|extensionId|String|This can be an extension name which is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
+|extensionId|String|This can be an extension name that is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.|
 |id|String|A unique identifier for an instance in the corresponding collection. Required.|
 
 ## Request headers
