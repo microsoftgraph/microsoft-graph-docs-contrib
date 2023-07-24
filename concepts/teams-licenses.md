@@ -189,6 +189,38 @@ You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-get
 
 ![Screenshot of the Teams User Activity report](images/teams-user-activity-report-sample.png)
 
+## Payment models for Meeting APIs
+
+This section describes the payment models for Teams meeting transcript and recording APIs. The following table lists the APIs that currently support payment models.
+
+| Scenario | APIs |
+| ------ | ----- |
+| [Fetch meeting transcript and recording](/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts) | [Get callTranscript content](../api-reference/beta/api/calltranscript-get.md#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](../api-reference/beta/api/calltranscript-get.md#example-4-get-a-calltranscript-metadatacontent) </br> [Get callRecording content](../api-reference/beta/api/callrecording-get.md#example-2-get-a-callrecording-content) |
+
+We will provide an evaluation quota which apps can use. Apps don’t require to pass any billing model information for making requests to the API within their evaluation quota. The evaluation quota is enforced per app, per tenant, per month. The quota is reset at the beginning of each calendar month, and any unused amount does not get carried over to the next month.
+
+Once, the evaluation quota is over, apps need to set up an active Azure subscription for billing purposes as described in [enable metered APIs and services in Microsoft Graph](metered-api-setup.md). If the onboarding isn't completed, the following error encounters while calling the metered APIs.
+
+**Error code**: 402 (PaymentRequired)
+**Error string**: Evaluation mode capacity has been exceeded. To call this API, the app must be associated with an Azure subscription. For more information, see [Payment models and licensing requirements for Microsoft Teams APIs](teams-licenses.md).
+
+Below table summarizes the evaluation mode behavior for T&R APIs:
+
+| Azure Billing Setup | Model Parameter | Result |
+| -------- | -------- | -------- |
+| Not configured | No parameter | Evaluation mode capacity will be available for download. Beyond that API will fail with error code: 402 (PaymentRequired). |
+| Configured | No parameter | Unlimited meeting content will be available for download. Engineering RPS limits still apply. |
+
+> [!NOTE]
+> Model A and B aren't supported by these APIs.
+
+The following table lists the evaluation mode capacity & Price for additional usage for these APIs:
+
+| API | Evaluation mode capacity  | Price for additional use  | Notes |
+| -------- | -------- | -------- | -------- |
+| [Get callTranscript content](../api-reference/beta/api/calltranscript-get.md#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](../api-reference/beta/api/calltranscript-get.md#example-4-get-a-calltranscript-metadatacontent) | 600 minutes per app per tenant  | $0.0 per minute | The duration will be rounded down to nearest minute. |
+| [Get callRecording content](../api-reference/beta/api/callrecording-get.md#example-2-get-a-callrecording-content) | 600 minutes per app per tenant  | $0.0 per minute | The duration will be rounded down to nearest minute. |
+
 ## Frequently asked questions
 
 |    Scenario    | Details |
