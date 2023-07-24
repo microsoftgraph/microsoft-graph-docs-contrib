@@ -19,7 +19,7 @@ A wrapper object that stores the resources associated with a module. The student
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create educationModuleResource](../api/educationmodule-post-resource.md) | [educationModuleResource](educationmoduleresource.md) |Create and return an **educationModuleResource** object.|
+|[Create educationModuleResource](../api/educationmodule-post-resources.md) | [educationModuleResource](educationmoduleresource.md) |Create and return an **educationModuleResource** object.|
 |[Get educationModuleResource](../api/educationmoduleresource-get.md) | [educationModuleResource](educationmoduleresource.md) |Read properties and relationships of an **educationModuleResource** object.|
 |[Update](../api/educationmoduleresource-update.md) | [educationModuleResource](educationmoduleresource.md) |Update an **educationModuleResource** object. |
 |[Delete](../api/educationmoduleresource-delete.md) | None |Delete an **educationModuleResource** object. |
