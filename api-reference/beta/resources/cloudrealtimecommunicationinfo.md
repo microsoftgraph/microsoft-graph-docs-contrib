@@ -4,7 +4,7 @@ description: "Microsoft realtime communication information related to the user."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "JulietMutahi"
+author: "rungari"
 ---
 
 # cloudRealtimeCommunicationInfo resource type
