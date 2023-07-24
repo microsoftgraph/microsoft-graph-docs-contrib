@@ -17,9 +17,9 @@ Group of properties that relate to Microsoft realtime communication information 
 
 ## Properties
 
-| Property                    | Type     | Description                                                          |
-| --------------------------- | -------- | -------------------------------------------------------------------- |
-| isSipEnabled                | Boolean  | Indicates if  the user has a SIP enabled client registered for them. |
+| Property                    | Type     | Description                                                                                      |
+| --------------------------- | -------- | ------------------------------------------------------------------------------------------------ |
+| isSipEnabled                | Boolean  | Indicates if  the user has a SIP enabled client registered for them. This property is read-only. |
 
 ## JSON representation
 
