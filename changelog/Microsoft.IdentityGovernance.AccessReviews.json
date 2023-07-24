@@ -1153,6 +1153,104 @@
       "CreatedDateTime": "2022-08-29T00:00:00.984Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "userSignInRecommendationScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **userSignInRecommendationScope** enumeration type.",
+          "Target": "userSignInRecommendationScope"
+        },
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewRecommendationInsightSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewRecommendationInsightSetting](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewRecommendationInsightSetting?view=graph-rest-1.0) resource type.",
+          "Target": "accessReviewRecommendationInsightSetting"
+        },
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Property",
+          "ChangedApiName": "recommendationInsightSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `recommendationInsightSettings` property to the [accessReviewScheduleSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewScheduleSettings"
+        },
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Property",
+          "ChangedApiName": "recommendationLookBackDuration",
+          "ChangeType": "Addition",
+          "Description": "Added the `recommendationLookBackDuration` property to the [accessReviewScheduleSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewScheduleSettings"
+        },
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Property",
+          "ChangedApiName": "recommendationInsightSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `recommendationInsightSettings` property to the [accessReviewStageSettings](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewStageSettings?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewStageSettings"
+        },
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "insights",
+          "ChangeType": "Addition",
+          "Description": "Added the **insights** relationship to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupPeerOutlierRecommendationInsightSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupPeerOutlierRecommendationInsightSettings](https://learn.microsoft.com/en-us/graph/api/resources/groupPeerOutlierRecommendationInsightSettings?view=graph-rest-1.0) resource type.",
+          "Target": "groupPeerOutlierRecommendationInsightSettings"
+        },
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userLastSignInRecommendationInsightSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [userLastSignInRecommendationInsightSetting](https://learn.microsoft.com/en-us/graph/api/resources/userLastSignInRecommendationInsightSetting?view=graph-rest-1.0) resource type.",
+          "Target": "userLastSignInRecommendationInsightSetting"
+        },
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "governanceInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [governanceInsight](https://learn.microsoft.com/en-us/graph/api/resources/governanceInsight?view=graph-rest-1.0) resource",
+          "Target": "governanceInsight"
+        },
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSignInInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSignInInsight](https://learn.microsoft.com/en-us/graph/api/resources/userSignInInsight?view=graph-rest-1.0) resource",
+          "Target": "userSignInInsight"
+        },
+        {
+          "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "membershipOutlierInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [membershipOutlierInsight](https://learn.microsoft.com/en-us/graph/api/resources/membershipOutlierInsight?view=graph-rest-1.0) resource type.",
+          "Target": "membershipOutlierInsight"
+        }
+      ],
+      "Id": "0bdf3c29-7631-4f8d-ab79-8e074ad996c6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-06-27T08:30:40.3980156Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     }
   ]
 }

@@ -15,17 +15,26 @@ Namespace: microsoft.graph
 
 In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.  It may represent a requestor from a connected organization who is not yet in the tenant.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [Update accessPackageSubject](../api/accesspackagesubject-update.md)|None | Update the properties of an **accesspackagesubject** object. |
+| [Get accessPackageSubject](../api/accesspackagesubject-get.md)|None | Get the properties of an **accesspackagesubject** object. |
+
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|altSecId|String|Not Supported.|
+|connectedOrganizationId|String|The identifier of the connected organization of the subject.|
 |displayName|String|The display name of the subject.|
 |email|String|The email address of the subject.|
-|id|String| Read-only.|
-|objectId|String|The object identifier of the subject. `null` if the subject is not yet a user in the tenant.|
+|id|String| Read-only. Key.|
+|objectId|String|The object identifier of the subject. `null` if the subject is not yet a user in the tenant. Alternate key.|
 |principalName|String|The principal name, if known, of the subject.|
+|subjectLifecycle|accessPackageSubjectLifecycle|The lifecycle of the subject user, if a guest. The possible values are: `notDefined`, `notGoverned`, `governed`, `unknownFutureValue`.|
 |type|String|The resource type of the subject.|
-|connectedOrganizationId|String|The identifier of the connected organization of the subject.|
 
 ## Relationships
 
@@ -49,12 +58,17 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "displayName": "Administrator",
-  "email": "admin@contoso.com",
-  "id": "ab4291f6-66b7-42bf-b597-a05b29414f5c",
-  "objectId": "cc754ed5-f598-45c0-aaf0-fc2f2eb1838f",
-  "principalName": "admin@domain.contoso.com",
-  "type": "User"
+  "@odata.type": "#microsoft.graph.accessPackageSubject",
+  "id": "String (identifier)",
+  "objectId": "String",
+  "altSecId": "String",
+  "displayName": "String",
+  "principalName": "String",
+  "email": "String",
+  "onPremisesSecurityIdentifier": "String",
+  "type": "String",
+  "connectedOrganizationId": "String",
+  "subjectLifecycle": "String"
 }
 ```
 

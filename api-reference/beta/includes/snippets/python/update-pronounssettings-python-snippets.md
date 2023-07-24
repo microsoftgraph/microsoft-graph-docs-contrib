@@ -13,7 +13,7 @@ request_body.is_enabled_in_organization = True
 
 
 
-result = await client.organization.by_organization_id('organization-id').settings.pronouns.patch(request_body = request_body)
+result = await client.admin.people.pronouns.patch(request_body = request_body)
 
 
 ```

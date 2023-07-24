@@ -173,7 +173,7 @@ None.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Application.Read.All_ | Read applications | Allows the app to read applications and service principals without a signed-in user. | Yes |
 | _Application.ReadWrite.All_ | Read and write all apps | Allows the calling app to create, and manage (read, update, update application secrets and delete) applications and service principals without a signed-in user.  Does not allow management of consent grants or application assignments to users or groups. | Yes |
-| _Application.ReadWrite.OwnedBy_ | Manage apps that this app creates or owns | Allows the calling app to create other applications and service principals, and fully manage those applications and service principals (read, update, update application secrets and delete), without a signed-in user.  It cannot update any applications that it is not an owner of. Does not allow management of consent grants or application assignments to users or groups. | Yes |
+| _Application.ReadWrite.OwnedBy_ | Manage apps that this app creates or owns | Allows the calling app to create other applications and service principals, and fully manage those applications and service principals (read, update, update application secrets and delete), without a signed-in user.  It cannot update any applications that it is not an owner of. | Yes |
 | _AppRoleAssignment.ReadWrite.All_ | Manage app permission grants and app role assignments | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, without a signed-in user. | Yes |
 | _DelegatedPermissionGrant.ReadWrite.All_ | Manage all delegated permission grants | Allows the app to grant or revoke any delegated permission for any API (including Microsoft Graph), without a signed-in user. | Yes |
 
@@ -1584,6 +1584,22 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+
+## Network access permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|NetworkAccessPolicy.Read.All|Read security and routing policies for network access|Allows the app to read your organization's security and routing network access policies on behalf of the signed-in user.|No|No|
+|NetworkAccessBranch.Read.All|Read properties of branches for network access|Allows the app to read your organization's branches for network access on behalf of the signed-in user.|No|No|
+|NetworkAccessPolicy.ReadWrite.All|Read and write security and routing policies for network access|Allows the app to read and write your organization's security and routing network access policies on behalf of the signed-in user.|Yes|No|
+|NetworkAccessBranch.ReadWrite.All|Read and write properties of branches for network access|Allows the app to read and write your organization's branches for network access on behalf of the signed-in user.|Yes|No|
+
+
+---
+
+
 ## Notes permissions
 
 #### Delegated permissions
@@ -1826,6 +1842,24 @@ The People.Read.All permission is only valid for work and school accounts.
 * _People.Read.All_: Read a list of relevant people to another user in the same organization (`GET /users('{id})/people`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## People settings permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _PeopleSettings.Read.All_ | Read tenant-wide people settings | Allows the application to read tenant-wide people settings on behalf of the signed-in user. | Yes | No |
+| _PeopleSettings.ReadWrite.All_ | Read and write tenant-wide people settings | Allows the application to read and write tenant-wide people settings on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _PeopleSettings.Read.All_ | Read all tenant-wide people settings | Allows the application to read tenant-wide people settings without a signed-in user. | Yes |
+| _PeopleSettings.ReadWrite.All_ | Read and write all tenant-wide people settings | Allows the application to read and write tenant-wide people settings without a signed-in user. | Yes |
 
 ---
 
@@ -2336,6 +2370,7 @@ The _Sites.Selected_ application permission is available only in the Microsoft G
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read Azure AD synchronization information, on behalf of the signed-in user. | Yes | No |
 Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to configure the Azure AD synchronization service, on behalf of the signed-in user. | Yes | No |
+SynchronizationData-User.Upload | Allows the app to upload bulk user data to the identity synchronization service, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
@@ -2343,6 +2378,8 @@ Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data
 |:----------------|:------------------|:-------------|:-----------------------|
 Synchronization.Read.All | Read all Azure AD synchronization data | Allows the application to read Azure AD synchronization information, without a signed-in user. | Yes |
 Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the application to configure the Azure AD synchronization service, without a signed-in user. | Yes |
+SynchronizationData-User.Upload | Upload user data to the identity synchronization service | Allows the application to upload bulk user data to the identity synchronization service, without a signed-in user. | Yes |
+
 
 ### Example usage
 

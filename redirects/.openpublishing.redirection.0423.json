@@ -9,6 +9,26 @@
         "source_path_from_root": "/concepts/office365-groups-concept-overview.md",
         "redirect_url": "/graph/microsoft365-groups-concept-overview",
         "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/beta/api/directorydefinition-discover.md",
+        "redirect_url": "/graph/api/synchronization-directorydefinition-discover?view=graph-rest-beta",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/beta/api/synchronization-synchronizationjob-list.md",
+        "redirect_url": "/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-beta",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/beta/api/synchronization-synchronizationjob-post.md",
+        "redirect_url": "/graph/api/synchronization-synchronization-post-jobs?view=graph-rest-beta",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/beta/api/synchronization-synchronizationtemplate-list.md",
+        "redirect_url": "/graph/api/synchronization-synchronization-list-templates?view=graph-rest-beta",
+        "redirect_document_id": true
       }
     ]
 }

@@ -16,8 +16,8 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 $queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->startdatetime = "2016-12-01T00:00:00Z";
-$queryParameters->enddatetime = "2016-12-30T00:00:00Z";
+$queryParameters->startDateTime = "2016-12-01T00:00:00Z";
+$queryParameters->endDateTime = "2016-12-30T00:00:00Z";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
