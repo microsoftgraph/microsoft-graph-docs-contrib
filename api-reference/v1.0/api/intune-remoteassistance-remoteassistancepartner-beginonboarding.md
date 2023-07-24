@@ -60,28 +60,24 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners/
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-remoteassistance-remoteassistancepartner-beginonboarding-beginonboarding-action-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-remoteassistance-remoteassistancepartner-beginonboarding-beginonboarding-action-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-remoteassistance-remoteassistancepartner-beginonboarding-beginonboarding-action-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-remoteassistance-remoteassistancepartner-beginonboarding-beginonboarding-action-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/intune-remoteassistance-remoteassistancepartner-beginonboarding-beginonboarding-action-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-remoteassistance-remoteassistancepartner-beginonboarding-beginonboarding-action-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-remoteassistance-remoteassistancepartner-beginonboarding-beginonboarding-action-php-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-remoteassistance-remoteassistancepartner-beginonboarding-beginonboarding-action-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/intune-remoteassistance-remoteassistancepartner-beginonboarding-beginonboarding-action-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-remoteassistance-remoteassistancepartner-beginonboarding-beginonboarding-action-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -97,3 +93,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
