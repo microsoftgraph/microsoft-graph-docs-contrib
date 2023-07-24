@@ -3381,6 +3381,7 @@ Possible values for user account types (group membership), per Windows definitio
 | contentDeletion    |
 | caseResolved       |
 | unknownFutureValue |
+| approval           |
 
 ### subjectRightsRequestStageStatus values 
 
