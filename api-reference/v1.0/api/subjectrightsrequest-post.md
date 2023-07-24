@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create subjectRightsRequest
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [subjectRightsRequest](../resources/subjectRightsRequest.md) object.
 
 ## Permissions
@@ -24,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Not supported|
 
 ## HTTP request
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
