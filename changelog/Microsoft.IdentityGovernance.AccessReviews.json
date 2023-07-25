@@ -1259,14 +1259,14 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "stopApplyDecisions",
                     "ChangeType": "Addition",
-                    "Description": "Added the [stopApplyDecisions](https://learn.microsoft.com/en-us/graph/api/accessReviewInstance?view=graph-rest-beta) method to the [accessReviewInstance](https://learn.microsoft.com/en-us/graph/api/accessReviewInstance?view=graph-rest-beta) resource.",
+                    "Description": "Added the [stopApplyDecisions](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-stopapplydecisions?view=graph-rest-beta) method to the [accessReviewInstance](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance?view=graph-rest-beta) resource.",
                     "Target": "accessReviewInstance"
                 }
             ],
             "Id": "39bd7376-2fa4-4069-9a8e-a7e2c6b29b3c",
             "Cloud": "Prod",
             "Version": "beta",
-            "CreatedDateTime": "2023-04-21T20:53:38.0340041Z",
+            "CreatedDateTime": "2023-07-25T20:53:38.0340041Z",
             "WorkloadArea": "Identity and access",
             "SubArea": "Governance"
         }
