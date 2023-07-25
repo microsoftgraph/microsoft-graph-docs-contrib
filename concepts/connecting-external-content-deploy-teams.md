@@ -1,5 +1,5 @@
 ---
-title: "Deploy your Microsoft Graph connector in the Teams Admin Center"
+title: "Enable the Simplified Admin Experience for your Microsoft Graph connector in the Teams Admin Center"
 description: "Deploy your custom Graph connector in your Teams App with one-click enablement"
 author: monaray
 ms.localizationpriority: high
@@ -7,22 +7,22 @@ doc_type: conceptualPageType
 ms.prod: search
 ---
 
-# Enable the One-click Admin Experience in Teams for your Graph connector
+# Enable the Simplified Admin Experience for your Microsoft Graph connector in the Teams Admin Center
 
-This article is for developers who want to enable the one-click admin experience in Teams for admins to enable your custom Graph connector.
+This article is for developers who want to enable the one-click admin experience in Teams for admins to enable your custom Microsoft Graph connector.
 
-Both Teams admins and Global admins can enable or disable your Graph connector in the Teams admin center. 
+Both Teams admins and Global admins can enable or disable your Microsoft Graph connector in the Teams admin center. 
 ![one-click admin experience in Teams](images/connectors-images/oneclickadmin-TAC-connectors.png)
 
 These are the steps to enable the one-click admin experience in Teams:
 1. Update the Teams App Manifest
 2. Update Azure Active Directory Permissions
-3. Handle Graph webhook notifications
-4. Create or delete Graph connections 
-5. Validate the experience by enabling the Graph Connector in the Teams Admin Center
+3. Handle Microsoft Graph webhook notifications
+4. Create or delete Microsoft Graph connections 
+5. Validate the experience by enabling the Microsoft Graph Connector in the Teams admin center
 
 ## Update the Teams App Manifest
-In the Teams App manifest, at the root, in parallel to properties like `name`, `description`, and `icons`, you need to add the `graphConnector` property (supported since [v1.11](https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json) of the app manifest) with a `notificationUrl`. This field is the url where Graph connector notifications for the application should be sent. 
+In the Teams App manifest, at the root, in parallel to properties like `name`, `description`, and `icons`, you need to add the `graphConnector` property (supported since [v1.11](https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json) of the app manifest) with a `notificationUrl`. This field is the url where Microsoft Graph connector notifications for the application should be sent. 
 You must ensure that the `webApplicationInfo` property is added to the manifest. Once updated, the manifest needs to be uploaded by sideloading the app or publishing the app to the store. 
 
 ```JSON
@@ -45,29 +45,29 @@ You must ensure that the `webApplicationInfo` property is added to the manifest.
 Navigate to the Azure Active Directory app's registration in the Azure portal and update its permissions to include the Microsoft Graph's `ExternalConnection.ReadWrite.OwnedBy` and `ExternalItem.ReadWrite.OwnedBy` as shown below.
 ![updated Azure Active Directory permissions](images/connectors-images/AADperms-TAC-connectors.png)
 
-## Handle Graph webhook notifications
-When the admin turns **on** or **off** the Graph connector from the Teams admin center, Microsoft Graph sends a change notification to your application's `notificationUrl`. Your app needs to manage these Graph connections accordingly.
+## Handle Microsoft Graph webhook notifications
+When the admin turns **on** or **off** the Microsoft Graph connector from the Teams admin center, Microsoft Graph sends a change notification to your application's `notificationUrl`. Your app needs to manage these Graph connections accordingly.
 
 ### Change notifications
 Learn how to [Set up notifications for changes in resource data](https://learn.microsoft.com/en-us/graph/webhooks#change-notifications). See a sample payload below.
-![sample payload for Graph webhook notification](images/connectors-images/samplepayload-webhooknotif-TAC.png)
+![sample payload for Microsoft Graph webhook notification](images/connectors-images/samplepayload-webhooknotif-TAC.png)
 
 To understand how to go about validating the inbound change notification, see [this section](https://docs.microsoft.com/graph/webhooks-with-resource-data#validating-the-authenticity-of-notifications).
 
 Here are some tips to remember:
 * `SubscriptionExpirationDateTime` and `SubscriptionId` properties can be ignored.
-* The change notification is for Graph connector management only when the resource data's @odata.type matches the one in the sample payload above.
-* The `tenantId` identified is the customer's tenant Id. When calling the Graph API to [manage Graph connections](https://learn.microsoft.com/en-us/graph/connecting-external-content-manage-connections), you must generate the app token on behalf of this customer's tenant Id. 
+* The change notification is for Microsoft Graph connector management only when the resource data's @odata.type matches the one in the sample payload above.
+* The `tenantId` identified is the customer's tenant Id. When calling the Microsoft Graph API to [manage Microsoft Graph connections](https://learn.microsoft.com/en-us/graph/connecting-external-content-manage-connections), you must generate the app token on behalf of this customer's tenant Id. 
 * Within `resourceData`, use `state` to determine whether to create or delete connections. `connectorsTicket` is needed when creating the connections.
 
 ### Handling "connector enable" notification
-* Determine which Graph connections to create (i.e. how many, each with which schema) by querying for all connections using the [External connection List API](https://docs.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http). Determine whether to create all connections from scratch, resume creation of connections (in resiliency flow), or no-op (when all desired connections are already in the `ready` state).
+* Determine which Microsoft Graph connections to create (i.e. how many, each with which schema) by querying for all connections using the [External connection List API](https://docs.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http). Determine whether to create all connections from scratch, resume creation of connections (in resiliency flow), or no-op (when all desired connections are already in the `ready` state).
 * Normally, [the connection](https://docs.microsoft.com/en-us/graph/api/externalconnectors-external-post-connections?view=graph-rest-beta&tabs=http) is created to `draft` state. Pass the `connectorsTicket` opaque encoded string to the connection creation API in this HTTP header `GraphConnectors-Ticket`.
 * Then [register the schema](https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&tabs=http). 
 * After a successful schema creation or update, the connection should reach a `ready` state.
 
 ### Handling "connector disable" notification
-* Determine which Graph connections to delete by querying for all connections using the [External connection List API](https://docs.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http).
+* Determine which Microsoft Graph connections to delete by querying for all connections using the [External connection List API](https://docs.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http).
 * Delete all connections using the [External connection Delete API](https://docs.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-beta&tabs=http).
 * It is suggested to build resiliency logics to retry connection deletion, so they get completely deleted.
 
@@ -123,7 +123,7 @@ Content-length: 0
 { "typ": "JWT", "alg": "RS256", "x5t": "nOo3ZDrODXEK1jKWhXslHR_KXEg", "kid": "nOo3ZDrODXEK1jKWhXslHR_KXEg" }.{ "aud": "e478830d-8f49-4c26-80c6-58f68e0f064b", "iss": "https://sts.windows.net/9f4ebab6-520d-49c0-85cc-7b25c78d4a93/", "iat": 1624649764, "nbf": 1624649764, "exp": 1624736464, "aio": "E2ZgYGjnuFglnX7mtjJzwR5lYaWvAA==", "appid": "0bf30f3b-4a52-48df-9a82-234910c4a086", "appidacr": "2", "idp": "https://sts.windows.net/9f4ebab6-520d-49c0-85cc-7b25c78d4a93/", "oid": "1e7d79fa-7893-4d50-bdde-164260d9c5ba", "rh": "0.AX0AtrpOnw1SwEmFzHslx41KkzsP8wtSSt9ImoIjSRDEoIZ9AAA.", "sub": "1e7d79fa-7893-4d50-bdde-164260d9c5ba", "tid": "9f4ebab6-520d-49c0-85cc-7b25c78d4a93", "uti": "mIB4QKCeZE6hK71XUHJ3AA", "ver": "1.0" }.[Signature]
 ```
 
-## Create or delete Graph connections 
+## Create or delete Microsoft Graph connections 
 You will need to send the **connectorTickets** from the payload you received as a `GraphConnectors-Ticket` header while initiating the creation of the Teams app connection as shown below.
 
 **Request:** 
@@ -161,12 +161,12 @@ Content-length: 0
 >![NOTE]
 >Various Microsoft 365 experiences can be enabled for the connections created. See [Microsoft Graph connectors overview](https://learn.microsoft.com/en-us/graph/connecting-external-content-connectors-overview) for more information. 
 
-See [Create, update, and delete items added by your application via Microsoft Graph connectors](https://learn.microsoft.com/en-us/graph/connecting-external-content-manage-items) to learn how to ingest external items into a working Graph connection.
+See [Create, update, and delete items added by your application via Microsoft Graph connectors](https://learn.microsoft.com/en-us/graph/connecting-external-content-manage-items) to learn how to ingest external items into a working Microsoft Graph connection.
 
-## Validate the experience by enabling the Graph Connector in the Teams Admin Center
-* Log into [Teams Admin Portal](https://admin.teams.microsoft.com) as a Teams admin or Global admin of the tenant.
+## Validate the experience by enabling the Microsoft Graph Connector in the Teams admin center
+* Log into [Teams admin center](https://admin.teams.microsoft.com) as a Teams admin or Global admin of the tenant.
 * Click the "Manage apps" blade in the left rail.
 * Navigate to your Teams application
-* On the Teams app's detail page, you will notice a new "Graph Connector" tab which allows an admin to enable or disable the Graph connector.
+* On the Teams app's detail page, you will notice a new "Graph Connector" tab which allows an admin to enable or disable the Microsoft Graph connector.
 * Click the toggle button for the one-click admin experience to send the enable or disable notifications to the app's notification endpoint as specified in the Teams app's manifest (by the graphConnector.notificationUrl property).
 
