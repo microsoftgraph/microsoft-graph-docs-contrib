@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/members/{membership-id}
-GET /users/{user-id} | user-principal-name/chats/{chat-id}/members/{membership-id}
+GET /users/{user-id | user-principal-name}/chats/{chat-id}/members/{membership-id}
 ```
 
 ## Optional query parameters
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/v1.0/chats/19:d0f51aeb0e8e43d0befb24be72b09ea7@t
 
 Here is an example of the response.
 
-<!-- 
+<!--
 {
   "blockType": "response",
   "truncated": true,
