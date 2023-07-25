@@ -23,6 +23,9 @@ In order to create a team, the group must have a least one owner.
 If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.
 The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
 
+> [!NOTE]
+> There's no way to know when the SharePoint provisioning is completed as it isn't provisioned in real time but it happens eventually in the backend.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
