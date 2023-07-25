@@ -15,7 +15,7 @@ request_body.phonetype(AuthenticationPhoneType.Mobile('authenticationphonetype.m
 
 
 
-result = await client.me.authentication.phone_methods.by_phone_method_id('phoneAuthenticationMethod-id').patch(request_body = request_body)
+result = await client.users.by_user_id('user-id').authentication.phone_methods.by_phone_method_id('phoneAuthenticationMethod-id').patch(request_body = request_body)
 
 
 ```

@@ -93,6 +93,7 @@ If successful, the API returns a `202 Accepted` response code. It does not retur
 
 The following SCIM bulk request uses the SCIM standard Core User and Enterprise User schema. It has two SCIM user operations in the **Operations** array. You can send a maximum of 50 user operations in each bulk request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulk_upload_from_SCIM_standard_schema"
@@ -241,6 +242,12 @@ Content-Type: application/scim+json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-from-scim-standard-schema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -268,6 +275,7 @@ The following SCIM bulk request uses the SCIM standard Core User and Enterprise 
 Notice how the `schemas` array in the data object is updated to include the custom schema namespace. It has two SCIM user operations in the **Operations** array. You can send a maximum of 50 user operations in each bulk request.
 
 The following is an example of a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulk_upload_from_SCIM_custom_schema"
@@ -426,6 +434,13 @@ Content-Type: application/scim+json
 }
 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-from-scim-custom-schema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.

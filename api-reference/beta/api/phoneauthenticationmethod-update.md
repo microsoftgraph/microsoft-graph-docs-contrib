@@ -31,17 +31,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
-Users without one of the supported Azure AD roles cannot update their own phone authentication method.
+Users cannot update their own phone authentication method.
 
 ## HTTP request
 
-Update your own phone authentication method.
-<!-- { "blockType": "ignored" } -->
-``` http
-PATCH /me/authentication/phoneMethods/{phoneMethodId}
-```
-
-Update your own or another user's phone authentication method.
+Update another user's phone authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http
 PATCH /users/{id | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
@@ -81,11 +75,12 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_phoneauthenticationmethod"
+  "name": "update_phoneauthenticationmethod",
+  "sampleKeys": ["kim@contoso.com", "3179e48a-750b-4051-897c-87b9720928f7"]
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7
+PATCH https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7
 Content-type: application/json
 
 {
