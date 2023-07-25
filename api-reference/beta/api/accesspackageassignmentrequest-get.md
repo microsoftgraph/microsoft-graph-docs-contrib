@@ -129,12 +129,13 @@ Content-type: application/json
             "type": "notSpecified"
         }
     },
-    "customExtensionHandlerInstances": [
+    "customExtensionCalloutInstances": [
         {
-            "status": "requestReceived",
+            "status": "callbackReceived",
             "externalCorrelationId": "08585600902100964604743022906CU13",
             "customExtensionId": "e59ef33d-7bc4-4b15-8d3c-01153de8a498",
-            "stage": "assignmentRequestCreated"
+            "id": "3C49CE50-E02C-4254-81E6-834328DF72DC",
+            "detail": "Request has been allowed"
         }
     ]
 }
