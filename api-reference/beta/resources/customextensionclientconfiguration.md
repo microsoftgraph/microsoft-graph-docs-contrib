@@ -34,7 +34,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
-  "timeoutInMilliseconds": "Integer"
+  "timeoutInMilliseconds": "Integer",
   "maximumRetries": "Integer"
 }
 ```
