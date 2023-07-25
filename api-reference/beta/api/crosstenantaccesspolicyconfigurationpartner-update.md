@@ -55,7 +55,7 @@ PATCH /policies/crossTenantAccessPolicy/partners/{id}
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure AD B2B direct connect. |
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect. |
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure Active Directory (Azure AD) organizations. |
-| isInMultiTenantOrganization | Boolean | Identifies whether a tenant is a member of a multi-tenant organization. Read-only.|
+| isInMultiTenantOrganization | Boolean | Identifies whether a tenant is an active tenant of a multi-tenant organization. Read-only.|
 
 ## Response
 
