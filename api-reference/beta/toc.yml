@@ -13579,6 +13579,9 @@ items:
                     href: api/invitation-post.md
               - name: Multi-tenant organization
                 items:
+                - name: Overview
+                  displayName: Multi-tenant organization, MTO
+                  href: resources/multitenantorganization-overview.md
                 - name: Multi-tenant organization
                   items:
                   - name: Multi-tenant organization
