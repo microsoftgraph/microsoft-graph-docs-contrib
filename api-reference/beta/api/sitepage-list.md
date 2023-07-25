@@ -2,13 +2,13 @@
 author: sangle7
 description: "Get the collection of sitePage objects from the site pages [list] in a site. All pages in the site are returned (with pagination)."
 ms.date: 03/15/2018
-title: List the pages in a site
+title: List SitePage
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# List the pages in the site pages library of a site
+# List SitePage
 
 Namespace: microsoft.graph
 
@@ -32,9 +32,30 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
+
 ```msgraph-interactive
-GET /sites/{site-id}/pages
+GET /sites/{site-id}/pages/microsoft.graph.sitePage
 ```
+
+## Optional query parameters
+
+This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. 
+
+## Request headers
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200` and a list of [sitePage](../resources/sitepage.md) object in the response body.
 
 ## Example
 
@@ -50,7 +71,7 @@ GET /sites/{site-id}/pages
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages
+GET /sites/{site-id}/pages/microsoft.graph.sitePage
 ```
 
 ### Response

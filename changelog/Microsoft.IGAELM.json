@@ -1,5 +1,23 @@
 {
   "changelog": [
+      {  
+        "ChangeList": [
+        {
+          "Id": "800896d9-7cab-47e8-a9af-7d9e23addbeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "targetUserSponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the [targetUserSponsors](https://learn.microsoft.com/en-us/graph/api/resources/targetusersponsors?view=graph-rest-beta) resource type.",
+          "Target": "targetUserSponsors"
+        }
+       ],
+       "Id": "800896d9-7cab-47e8-a9af-7d9e23addbeb",
+       "Cloud": "Prod",
+       "Version": "beta",
+       "CreatedDateTime": "2023-07-18T22:22:46.6246683Z",
+       "WorkloadArea": "Identity and access",
+       "SubArea": "Governance"
+      },
       {
         "ChangeList": [
         {
@@ -733,6 +751,40 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2023-06-28T20:30:23.0405695Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "58686064-7128-45ec-aaf4-e7650c0023a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Resource",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [customAccessPackageWorkflowExtension](https://learn.microsoft.com/en-us/graph/api/resources/customAccessPackageWorkflowExtension?view=graph-rest-beta) resource type and its associated methods for integrating Azure AD entitlement management and Azure Logic Apps. Use the [accessPackageAssignmentRequestWorkflowExtension](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequestworkflowextension?view=graph-rest-beta) and [accessPackageAssignmentWorkflowExtension](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentworkflowextension?view=graph-rest-beta) resource types and their associated methods instead.",
+          "Target": "customAccessPackageWorkflowExtension"
+        },
+        {
+          "Id": "58686064-7128-45ec-aaf4-e7650c0023a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionHandlerInstance",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [customExtensionHandlerInstance](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionHandlerInstance?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionHandlerInstance"
+        },
+        {
+          "Id": "58686064-7128-45ec-aaf4-e7650c0023a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionHandler",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [customExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionHandler?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionHandler"
+        }
+      ],
+      "Id": "58686064-7128-45ec-aaf4-e7650c0023a9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-18T00:00:00.2731454Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }
