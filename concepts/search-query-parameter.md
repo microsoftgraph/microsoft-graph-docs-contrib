@@ -100,7 +100,7 @@ For more information about searchable email properties, KQL syntax, supported op
 
 ## Using $search on person collections
 
-You can use the Microsoft Graph [People API](/graph/api/resources/person) to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. The People API supports the `$search` query parameter. A `$search` request returns up to 250 results.
+You can use the Microsoft Graph [People API](/graph/api/resources/person) to retrieve the people who are most relevant to a user. Relevance is determined by the user's communication and collaboration patterns and business relationships. The People API supports the `$search` query parameter. A `$search` request returns up to 250 results.
 
 Searches on people occur on both the **displayName** and **emailAddress** properties of the [person](/graph/api/resources/person) resource.
 
@@ -199,15 +199,18 @@ To learn more about the People API, see [Get information about relevant people](
 
 ## Using $search on directory object collections
 
+> [!NOTE]
+> There's a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185) related to `$search` on directory objects for values that contain an ampersand (&) symbol.
+
 Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in [advanced queries](./aad-advanced-queries.md). The search implementation does **not** support "contains" logic. Instead, it uses a tokenization approach that works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols as shown in the following examples:
 
 - **Spaces**: `hello world` => `hello`, `world`
-- **Different casing**⁽¹⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
-- **Symbols**⁽²⁾: `hello.world` => `hello`, `.`, `world`, `helloworld`
+- **Different casing**⁽<sup>1</sup>⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
+- **Symbols**⁽<sup>2</sup>⁾: `hello.world` => `hello`, `.`, `world`, `helloworld`
 - **Numbers**: `hello123world` => `hello`, `123`, `world`
 
-⁽¹⁾ Currently, tokenization only works when the casing is changing from lowercase to uppercase, so `HELLOworld` is considered a single token: `helloworld`, and `HelloWORld` is two tokens: `hello`, `world`.
-⁽²⁾ Tokenization logic also combines words that are separated only by symbols; for example, searching for `helloworld` will find `hello-world` and `hello.world`.
+⁽<sup>1</sup>⁾ Currently, tokenization only works when the casing is changing from lowercase to uppercase, so `HELLOworld` is considered a single token: `helloworld`, and `HelloWORld` is two tokens: `hello`, `world`.
+⁽<sup>2</sup>⁾ Tokenization logic also combines words that are separated only by symbols; for example, searching for `helloworld` will find `hello-world` and `hello.world`.
 
 > [!NOTE]
 >

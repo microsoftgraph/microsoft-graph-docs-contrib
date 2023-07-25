@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new UnifiedRoleEligibilityScheduleRequest();
-$requestBody->setAction('adminRemove');
+$requestBody->setAction(new UnifiedRoleScheduleRequestActions('adminremove'));
 
 $requestBody->setRoleDefinitionId('8424c6f0-a189-499e-bbd0-26c1753c96d4');
 

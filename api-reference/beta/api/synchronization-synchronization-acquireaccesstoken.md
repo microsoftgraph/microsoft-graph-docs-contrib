@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# acquireAccessToken
+# synchronization: acquireAccessToken
 Namespace: microsoft.graph
 
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.

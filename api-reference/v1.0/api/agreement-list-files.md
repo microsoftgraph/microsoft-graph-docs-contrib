@@ -1,16 +1,16 @@
 ---
-title: "List files (localized agreement files)"
+title: "List files (terms of use agreement files)"
 description: "Retrieve all localized files related to an agreement."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ---
 
-# List files (localized agreement files)
+# List files (terms of use agreement files)
 Namespace: microsoft.graph
 
-Retrieve all localized files related to an agreement.
+Retrieve all files related to an agreement. This includes the default file and all localized files.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

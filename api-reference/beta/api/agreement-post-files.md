@@ -1,7 +1,7 @@
 ---
 title: "Create agreementFileLocalization"
 description: "Create a new localized agreement file."
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

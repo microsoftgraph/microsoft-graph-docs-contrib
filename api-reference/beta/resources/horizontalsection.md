@@ -22,7 +22,10 @@ Inherits from [entity](../resources/entity.md).
 | Method                                                      | Return type                                                       | Description                                                                                               |
 | :---------------------------------------------------------- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
 | [List horizontalSections](../api/horizontalsection-list.md) | [horizontalSection](../resources/horizontalsection.md) collection | Get a list of the [horizontalSection](../resources/horizontalsection.md) objects and their properties.    |
+| [Create horizontalSection](../api/sitepage-post-horizontalsection.md)    | [horizontalSection](../resources/horizontalsection.md)            | Create a new [horizontalSection](../resources/horizontalsection.md) object. |
 | [Get horizontalSection](../api/horizontalsection-get.md)    | [horizontalSection](../resources/horizontalsection.md)            | Read the properties and relationships of a [horizontalSection](../resources/horizontalsection.md) object. |
+| [Update horizontalSection](../api/horizontalsection-update.md)    | [horizontalSection](../resources/horizontalsection.md)            | Update the properties of a [horizontalSection](../resources/horizontalsection.md) object. |
+| [Delete horizontalSection](../api/horizontalsection-delete.md)    | [horizontalSection](../resources/horizontalsection.md)            | Delete a [horizontalSection](../resources/horizontalsection.md) object. |
 
 ## Properties
 

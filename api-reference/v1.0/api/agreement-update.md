@@ -4,7 +4,7 @@ description: "Update the properties of an agreement object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ---
 
 # Update agreement
