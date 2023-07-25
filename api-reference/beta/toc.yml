@@ -11752,8 +11752,6 @@ items:
               - name: Organization settings
                 href: resources/organizationSettings.md
                 items:
-                  - name: Get org settings
-                    href: api/organizationSettings-get.md
                   - name: App settings for Microsoft 365 data (preview)
                     items:
                       - name: App data access settings
@@ -11786,20 +11784,6 @@ items:
                         href: api/organizationsettings-list-peopleinsights.md
                       - name: Update
                         href: api/insightssettings-update.md
-                  - name: Profile card customization (preview)
-                    items:
-                      - name: Profile card property
-                        href: resources/profilecardproperty.md
-                      - name: List
-                        href: api/organizationsettings-list-profilecardproperties.md
-                      - name: Create
-                        href: api/organizationsettings-post-profilecardproperties.md
-                      - name: Get
-                        href: api/profilecardproperty-get.md
-                      - name: Update
-                        href: api/profilecardproperty-update.md
-                      - name: Delete
-                        href: api/profilecardproperty-delete.md
                   - name: Todo configuration (preview)
                     href: resources/admintodo.md
                     items:
@@ -11889,6 +11873,20 @@ items:
                         href: api/peopleadminsettings-list-pronouns.md
                       - name: Update
                         href: api/pronounssettings-update.md
+                  - name: Profile card customization (preview)
+                    items:
+                      - name: Profile card property
+                        href: resources/profilecardproperty.md
+                      - name: List
+                        href: api/peopleadminsettings-list-profilecardproperties.md
+                      - name: Create
+                        href: api/peopleadminsettings-post-profilecardproperties.md
+                      - name: Get
+                        href: api/profilecardproperty-get.md
+                      - name: Update
+                        href: api/profilecardproperty-update.md
+                      - name: Delete
+                        href: api/profilecardproperty-delete.md
               - name: Mobility management policy (Preview)
                 href: resources/mobilitymanagementpolicy.md
                 items:
@@ -14905,9 +14903,9 @@ items:
               - name: Profile card property
                 href: resources/profilecardproperty.md
               - name: List
-                href: api/organizationsettings-list-profilecardproperties.md
+                href: api/peopleadminsettings-list-profilecardproperties.md
               - name: Create
-                href: api/organizationsettings-post-profilecardproperties.md
+                href: api/peopleadminsettings-post-profilecardproperties.md
               - name: Get
                 href: api/profilecardproperty-get.md
               - name: Update
