@@ -191,7 +191,7 @@ You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-get
 
 ## Payment models for meeting APIs
 
-This section describes the payment models for Teams meeting transcript and recording APIs. The following table lists the APIs that currently support payment models.
+This section describes the payment models for Teams meeting transcript and recording APIs. The following table lists the APIs that currently supports payment models.
 
 | Scenario | APIs |
 | ------ | ----- |
@@ -199,10 +199,10 @@ This section describes the payment models for Teams meeting transcript and recor
 
 We will provide an evaluation quota which apps can use. Apps don’t require to pass any billing model information for making requests to the API within their evaluation quota. The evaluation quota is enforced per app, per tenant, per month. The quota is reset at the beginning of each calendar month, and any unused amount does not get carried over to the next month.
 
-Once, the evaluation quota is over, apps need to set up an active Azure subscription for billing purposes as described in [enable metered APIs and services in Microsoft Graph](metered-api-setup.md). If the onboarding isn't completed, the following error encounters while calling the metered APIs.
+Once the evaluation quota is over, apps need to set up an active Azure subscription for billing purposes as described in [enable metered APIs and services in Microsoft Graph](metered-api-setup.md). If the onboarding isn't completed, the following error encounters while calling the metered APIs.
 
-**Error code**: 402 (PaymentRequired)
-**Error string**: Evaluation mode capacity has been exceeded. To call this API, the app must be associated with an Azure subscription. For more information, see [Payment models and licensing requirements for Microsoft Teams APIs](teams-licenses.md).
+**Error code**: 402 (PaymentRequired) </br>
+**Error string**: Evaluation mode capacity has been exceeded. To call this API, the app must be associated with an Azure subscription. For more information, see [payment models and licensing requirements for Microsoft Teams APIs](teams-licenses.md).
 
 The following table summarizes the evaluation mode behavior for transcript and recording APIs:
 
@@ -214,7 +214,7 @@ The following table summarizes the evaluation mode behavior for transcript and r
 > [!NOTE]
 > Model A and B aren't supported by these APIs.
 
-The following table lists the evaluation mode capacity & Price for additional usage for these APIs:
+The following table lists the evaluation mode capacity and price for additional usage for these APIs:
 
 | API | Evaluation mode capacity  | Price for additional use  | Notes |
 | -------- | -------- | -------- | -------- |
