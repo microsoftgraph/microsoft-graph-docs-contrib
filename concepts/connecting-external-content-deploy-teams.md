@@ -48,26 +48,26 @@ In the Azure portal, go to the app registration and update the app permissions t
 When the admin turns **on** or **off** the Microsoft Graph connector from the Teams admin center, Microsoft Graph sends a change notification to the URL specified in the **notificationUrl** property in the manifest. Your app needs to manage these Graph connections accordingly.
 
 ### Change notifications
-Learn how to [Set up notifications for changes in resource data](https://learn.microsoft.com/en-us/graph/webhooks#change-notifications). See a sample payload below.
+Learn how to [Set up notifications for changes in resource data](graph/webhooks#change-notifications). See a sample payload below.
 ![sample payload for Microsoft Graph webhook notification](images/connectors-images/samplepayload-webhooknotif-TAC.png)
 
-To understand how to go about validating the inbound change notification, see [this section](https://docs.microsoft.com/graph/webhooks-with-resource-data#validating-the-authenticity-of-notifications).
+To understand how to go about validating the inbound change notification, see [this section](graph/webhooks-with-resource-data#validating-the-authenticity-of-notifications).
 
 Here are some tips to remember:
 * **SubscriptionExpirationDateTime** and **SubscriptionId** properties can be ignored.
 * The change notification is for Microsoft Graph connector management only when the resource data's @odata.type matches the one in the sample payload above.
-* The **tenantId** identified is the customer's tenant Id. When calling the Microsoft Graph API to [manage Microsoft Graph connections](https://learn.microsoft.com/en-us/graph/connecting-external-content-manage-connections), you must generate the app token on behalf of this customer's tenant Id. 
+* The **tenantId** identified is the customer's tenant Id. When calling the Microsoft Graph API to [manage Microsoft Graph connections](graph/connecting-external-content-manage-connections), you must generate the app token on behalf of this customer's tenant Id. 
 * Within **resourceData**, use **state** to determine whether to create or delete connections. **connectorsTicket** is needed when creating the connections.
 
 ### Handling "connector enable" notification
-* Determine which Microsoft Graph connections to create (i.e. how many, each with which schema) by querying for all connections using the [External connection List API](https://docs.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http). Determine whether to create all connections from scratch, resume creation of connections (in resiliency flow), or no-op (when all desired connections are already in the **ready** state).
-* Normally, [the connection](https://docs.microsoft.com/en-us/graph/api/externalconnectors-external-post-connections?view=graph-rest-beta&tabs=http) is created to **draft** state. Pass the **connectorsTicket** opaque encoded string to the connection creation API in this HTTP header **GraphConnectors-Ticket**.
-* Then [register the schema](https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&tabs=http). 
+* Determine which Microsoft Graph connections to create (i.e. how many, each with which schema) by querying for all connections using the [External connection List API](graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http). Determine whether to create all connections from scratch, resume creation of connections (in resiliency flow), or no-op (when all desired connections are already in the **ready** state).
+* Normally, [the connection](graph/api/externalconnectors-external-post-connections?view=graph-rest-beta&tabs=http) is created to **draft** state. Pass the **connectorsTicket** opaque encoded string to the connection creation API in this HTTP header **GraphConnectors-Ticket**.
+* Then [register the schema](graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&tabs=http). 
 * After a successful schema creation or update, the connection should reach a **ready** state.
 
 ### Handling "connector disable" notification
-* Determine which Microsoft Graph connections to delete by querying for all connections using the [External connection List API](https://docs.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http).
-* Delete all connections using the [External connection Delete API](https://docs.microsoft.com/en-us/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-beta&tabs=http).
+* Determine which Microsoft Graph connections to delete by querying for all connections using the [External connection List API](graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http).
+* Delete all connections using the [External connection Delete API](graph/api/externalconnectors-externalconnection-delete?view=graph-rest-beta&tabs=http).
 * It is suggested to build resiliency logics to retry connection deletion, so they get completely deleted.
 
 **Request:**
@@ -112,7 +112,7 @@ Content-length: 0
 >If the notification URL doesn't reply within 30 seconds for more than 10% of the requests from Microsoft Graph over a 10-minute period, all following notifications will be delayed and retried for a period of 4 hours. 
 >If a notification URL doesn't reply within 30 seconds for more than 20% of the requests from Microsoft Graph over a 10-minute period, all following notifications will be dropped.
 
-* Validate the authenticity of **validatonToken**. See [Validating the authenticity of notification](https://learn.microsoft.com/en-us/graph/webhooks-with-resource-data?tabs=csharp#validating-the-authenticity-of-notifications).
+* Validate the authenticity of **validatonToken**. See [Validating the authenticity of notification](graph/webhooks-with-resource-data?tabs=csharp#validating-the-authenticity-of-notifications).
 	- Validate the token has not expired.
 	- Validate the token has not been tampered with and was issued by the Microsoft Identity platform.
 	- Check the **appId** claim in the **validationToken** is 0bf30f3b-4a52-48df-9a82-234910c4a086.
@@ -145,10 +145,10 @@ Authorization: bearer {{accessToken}}
 ```
 
 >![NOTE]
->{{connectorId}} is the value of **id** property in the manifest. See [app manifest schema for Teams](https://learn.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema) for an example.
+>{{connectorId}} is the value of **id** property in the manifest. See [app manifest schema for Teams](microsoftteams/platform/resources/schema/manifest-schema) for an example.
 
 >![NOTE]
->You should acquire the {{accessToken}} by talking to [Microsoft Identity Platform (Azure Active Directory)](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-app-types) for the tenant that it is being notified.
+>You should acquire the {{accessToken}} by talking to [Microsoft Identity Platform (Azure Active Directory)](azure/active-directory/develop/v2-app-types) for the tenant that it is being notified.
 
 **Response:**
 ```
@@ -158,9 +158,9 @@ Content-length: 0
 ```
 
 >![NOTE]
->Various Microsoft 365 experiences can be enabled for the connections created. See [Microsoft Graph connectors overview](https://learn.microsoft.com/en-us/graph/connecting-external-content-connectors-overview) for more information. 
+>Various Microsoft 365 experiences can be enabled for the connections created. See [Microsoft Graph connectors overview](graph/connecting-external-content-connectors-overview) for more information. 
 
-See [Create, update, and delete items added by your application via Microsoft Graph connectors](https://learn.microsoft.com/en-us/graph/connecting-external-content-manage-items) to learn how to ingest external items into a working Microsoft Graph connection.
+See [Create, update, and delete items added by your application via Microsoft Graph connectors](graph/connecting-external-content-manage-items) to learn how to ingest external items into a working Microsoft Graph connection.
 
 ## Validate the experience by enabling the Microsoft Graph Connector in the Teams admin center
 * Log into [Teams admin center](https://admin.teams.microsoft.com) as a Teams admin or Global admin of the tenant.
