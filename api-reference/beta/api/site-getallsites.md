@@ -43,7 +43,7 @@ GET /sites/getAllSites
 
 <!-- { "blockType": "ignored", "name": "getAllSitesInitialRequest"} -->
 
-```msgraph-interactive
+```http
 GET /sites/getAllSites
 ```
 
