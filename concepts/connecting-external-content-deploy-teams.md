@@ -1,6 +1,6 @@
 ---
 title: "Enable the Simplified Admin Experience for your Microsoft Graph connector in the Teams Admin Center"
-description: "Deploy your custom Graph connector in your Teams App with one-click enablement"
+description: "Deploy your custom Graph connector in your Teams App with simplified enablement"
 author: monaray
 ms.localizationpriority: high
 doc_type: conceptualPageType
@@ -9,12 +9,11 @@ ms.prod: search
 
 # Enable the Simplified Admin Experience for your Microsoft Graph connector in the Teams Admin Center
 
-This article is for developers who want to enable the one-click admin experience in Teams for admins to enable your custom Microsoft Graph connector.
+This article describes how to enable the simplified admin experience for your Microsoft Graph connector in the Teams admin center. When you enable this experience, Teams admins and Global admins can enable or disable your custom Microsoft Graph connector seamlessly in the Teams admin center.
 
-Both Teams admins and Global admins can enable or disable your Microsoft Graph connector in the Teams admin center. 
-![one-click admin experience in Teams](images/connectors-images/oneclickadmin-TAC-connectors.png)
+![simplified admin experience in the Teams admin center](images/connectors-images/oneclickadmin-TAC-connectors.png)
 
-These are the steps to enable the one-click admin experience in Teams:
+These are the steps to enable the simplified admin experience in the Teams admin center:
 1. Update the Teams App Manifest
 2. Update Azure Active Directory Permissions
 3. Handle Microsoft Graph webhook notifications
@@ -168,5 +167,5 @@ See [Create, update, and delete items added by your application via Microsoft Gr
 * Click the "Manage apps" blade in the left rail.
 * Navigate to your Teams application
 * On the Teams app's detail page, you will notice a new "Graph Connector" tab which allows an admin to enable or disable the Microsoft Graph connector.
-* Click the toggle button for the one-click admin experience to send the enable or disable notifications to the app's notification endpoint as specified in the Teams app's manifest (by the graphConnector.notificationUrl property).
+* Click the toggle button for the simplified admin experience to send the enable or disable notifications to the app's notification endpoint as specified in the Teams app's manifest (by the graphConnector.notificationUrl property).
 
