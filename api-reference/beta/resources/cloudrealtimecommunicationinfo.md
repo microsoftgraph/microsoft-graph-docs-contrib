@@ -22,18 +22,15 @@ Group of properties that relate to Microsoft realtime communication information 
 | isSipEnabled                | Boolean  | Indicates if  the user has a SIP enabled client registered for them. This property is read-only. |
 
 ## JSON representation
-
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-  ],
   "@odata.type": "microsoft.graph.cloudRealtimeCommunicationInfo"
-}-->
-
-```json
+}
+-->
+``` json
 {
-  "isSipEnabled": false,
+  "@odata.type": "#microsoft.graph.cloudRealtimeCommunicationInfo",
+  "isSipEnabled": "Boolean"
 }
 ```
