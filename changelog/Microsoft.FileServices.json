@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "permanentDelete",
           "ChangeType": "Addition",
-          "Description": "Added the [permanentDelete] method to the [driveItem] [DriveItem-beta] resource.",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-beta) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-beta) resource.",
           "Target": "driveItem"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "permanentDelete",
           "ChangeType": "Addition",
-          "Description": "Added the [permanentDelete] method to the [driveItem] [DriveItem-beta] resource.",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-1.0) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-1.0) resource.",
           "Target": "driveItem"
         }
       ],
