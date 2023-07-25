@@ -10,6 +10,6 @@ $params = @{
 	"@odata.type" = "#microsoft.graph.deviceAppManagement"
 }
 
-Update-MgDeviceAppManagement -BodyParameter $params
+Update-MgDeviceAppMgt -BodyParameter $params
 
 ```
