@@ -291,7 +291,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "softwareUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [softwareUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-softwareUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the softwareUpdateReference resource type.",
                     "Target": "softwareUpdateReference"
                 },
                 {
@@ -299,7 +299,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "windowsUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [windowsUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the windowsUpdateReference resource type.",
                     "Target": "windowsUpdateReference"
                 },
                 {
@@ -307,7 +307,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "qualityUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [qualityUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the qualityUpdateReference resource type.",
                     "Target": "qualityUpdateReference"
                 },
                 {
@@ -315,7 +315,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "expeditedQualityUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [expeditedQualityUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-expeditedQualityUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the expeditedQualityUpdateReference resource type.",
                     "Target": "expeditedQualityUpdateReference"
                 },
                 {
@@ -323,7 +323,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "featureUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [featureUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-featureUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the featureUpdateReference resource type.",
                     "Target": "featureUpdateReference"
                 },
                 {
@@ -331,7 +331,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "rolloutSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [rolloutSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-rolloutSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the rolloutSettings resource type.",
                     "Target": "rolloutSettings"
                 },
                 {
@@ -355,7 +355,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "windowsDeploymentSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [windowsDeploymentSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsDeploymentSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the windowsDeploymentSettings resource type.",
                     "Target": "windowsDeploymentSettings"
                 },
                 {
@@ -597,7 +597,7 @@
                     "ApiChange": "Relationship",
                     "ChangedApiName": "resourceConnections",
                     "ChangeType": "Addition",
-                    "Description": "Added the **resourceConnections** relationship to the [updates](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updates?view=graph-rest-beta) resource.",
+                    "Description": "Added the **resourceConnections** relationship to the [updates](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-resourceconnection?view=graph-rest-beta) resource.",
                     "Target": "updates"
                 }
             ],
@@ -887,7 +887,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "GET",
                     "ChangeType": "Change",
-                    "Description": "Removed the `$filter` query parameter from the default request URL for the [List azureADDevice resources](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updates-list-updatableassets-azureaddevice?view=graph-rest-beta) method.",
+                    "Description": "Removed the `$filter` query parameter from the default request URL for the [List azureADDevice resources](https://learn.microsoft.com/en-us/graph/api/adminwindowsupdates-list-updatableassets?view=graph-rest-beta) method.",
                     "Target": "azureADDevice"
                 },
                 {
@@ -895,7 +895,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "GET",
                     "ChangeType": "Change",
-                    "Description": "Removed the `$filter` query parameter from the default request URL for the [List updatableAssetGroup resources](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updates-list-updatableassets-updatableassetgroup?view=graph-rest-beta) method.",
+                    "Description": "Removed the `$filter` query parameter from the default request URL for the [List updatableAssetGroup resources](https://learn.microsoft.com/en-us/graph/api/adminwindowsupdates-list-updatableassets-updatableassetgroup?view=graph-rest-beta) method.",
                     "Target": "updatableAssetGroup"
                 },
                 {
