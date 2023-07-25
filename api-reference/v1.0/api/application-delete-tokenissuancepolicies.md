@@ -32,8 +32,8 @@ You can address the application using either its **id** or **appId**. **id** and
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /applications/{id}/tokenIssuancePolicies/$ref
-DELETE /applications(appId='{appId}')/tokenIssuancePolicies/$ref
+DELETE /applications/{id}/tokenIssuancePolicies/{id}/$ref
+DELETE /applications(appId='{appId}')/tokenIssuancePolicies/{id}/$ref
 ```
 
 ## Request headers
