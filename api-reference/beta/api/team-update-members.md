@@ -107,6 +107,22 @@ content-length: 26
 
 ---
 
+If you use Power Automate to call this HTTP request, use the following:
+
+# [HTTP](#tab/http1)
+
+```http
+PATCH https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
+content-type: application/json
+content-length: 26
+{
+  "@@odata.type":"#microsoft.graph.aadUserConversationMember",
+  "roles": ["owner"]
+}
+```
+
+---
+
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability. 
