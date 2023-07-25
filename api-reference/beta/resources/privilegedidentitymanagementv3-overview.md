@@ -87,7 +87,7 @@ For more information about using Microsoft Graph to configure rules, see [Overvi
 
 ## Get security alerts for Azure AD roles
 
-PIM for Azure AD roles generates alerts when it detects suspicious or unsafe settings for Azure AD roles in your tenant. The following six alert types are available:
+PIM for Azure AD roles generates alerts when it detects suspicious or unsafe settings for Azure AD roles in your tenant. The following seven alert types are available:
 
 | Alert                                                                        | Comments |
 |------------------------------------------------------------------------------|----------|

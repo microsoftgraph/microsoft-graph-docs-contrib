@@ -9,27 +9,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new CloudPcProvisioningPolicyAssignment();
-$requestBody->set@odatatype('#microsoft.graph.cloudPcProvisioningPolicyAssignment');
+$requestBody = new AssignPostRequestBody();
+$assignmentsCloudPcProvisioningPolicyAssignment1 = new CloudPcProvisioningPolicyAssignment();
+$assignmentsCloudPcProvisioningPolicyAssignment1->setId('b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff');
 
-$additionalData = [
-		'assignments' => $assignments1 = new ();
-$		assignments1->setId('b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff');
+$assignmentsCloudPcProvisioningPolicyAssignment1Target = new CloudPcManagementGroupAssignmentTarget();
+$assignmentsCloudPcProvisioningPolicyAssignment1Target->set@odatatype('microsoft.graph.cloudPcManagementGroupAssignmentTarget');
 
-$assignments1Target = new Target();
-$		assignments1Target->set@odatatype('microsoft.graph.cloudPcManagementGroupAssignmentTarget');
-
-$		assignments1Target->setGroupId('64ff06de-9c00-4a5a-98b5-7f5abe26ffff');
+$assignmentsCloudPcProvisioningPolicyAssignment1Target->setGroupId('64ff06de-9c00-4a5a-98b5-7f5abe26ffff');
 
 
-$assignments1->setTarget($assignments1Target);
+$assignmentsCloudPcProvisioningPolicyAssignment1->setTarget($assignmentsCloudPcProvisioningPolicyAssignment1Target);
 
-$assignmentsArray []= $assignments1;
+$assignmentsArray []= $assignmentsCloudPcProvisioningPolicyAssignment1;
 $requestBody->setAssignments($assignmentsArray);
-
-
-];
-$requestBody->setAdditionalData($additionalData);
 
 
 

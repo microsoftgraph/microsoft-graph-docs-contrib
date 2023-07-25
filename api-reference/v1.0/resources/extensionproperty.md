@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents a **directory extension** that can be used to add a custom property to directory objects without requiring an external data store. For example, if an organization has a line of business (LOB) application that requires a Skype ID for each user in the directory, Microsoft Graph can be used to register a new property named **skypeId** on the directory’s User object, and then write a value to the new property for a specific user. Directory extensions can also be available in multi-tenant apps that have been consented to in the tenant.
+Represents a **directory extension** that can be used to add a custom property to directory objects without requiring an external data store. For example, if an organization has a line of business (LOB) application that requires a Skype ID for each user in the directory, Microsoft Graph can be used to register a new property named **skypeId** on the directory's User object, and then write a value to the new property for a specific user. Directory extensions can also be available in multi-tenant apps that have been consented to in the tenant.
 
 Directory extensions can be added to following directory objects:
 + [user](../resources/user.md)
@@ -30,7 +30,7 @@ For more information about Microsoft Graph extensibility, see [Add custom proper
 Inherits from [directoryObject](directoryobject.md).
 
 > [!NOTE]
-> Extensions created through Azure AD Graph (deprecated) and custom data synchronized from on-premises Active Directory using Azure AD Connect Sync are represented as directory extensions in Microsoft Graph.
+> Extensions created through Azure AD Graph (currently in its retirement cycle) and custom data synchronized from on-premises Active Directory using Azure AD Connect Sync are represented as directory extensions in Microsoft Graph.
 
 ## Methods
 
