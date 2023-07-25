@@ -35,7 +35,7 @@ The components of a request include:
 * [{version}](#version) - The version of the Microsoft Graph API your application is using.
 * [{resource}](#resource) - The resource in Microsoft Graph that you're referencing. 
 * [{query-parameters}](#query-parameters) - Optional OData query options or REST method parameters that customize the response.
-* [{headers}](#request-headers) - Request headers that customize the request. Can be optional or required depending on the API.
+* [{headers}](#headers) - Request headers that customize the request. Can be optional or required depending on the API.
 
 After you make a request, a response is returned that includes: 
 
