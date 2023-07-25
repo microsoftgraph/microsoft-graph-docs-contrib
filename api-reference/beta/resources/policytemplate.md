@@ -21,7 +21,9 @@ None.
 
 ## Properties
 
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|ID of the template. Key.|
 
 ## Relationships
 
