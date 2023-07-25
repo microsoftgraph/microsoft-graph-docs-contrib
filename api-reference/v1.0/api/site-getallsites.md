@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 # sites: getAllSites
 
-List [sites](../resources/site.md) across geographies in an organization. This API can also be used to enumerate all sites in a non-multigeo tenant.
+List [sites](../resources/site.md) across geographies in an organization. This API can also be used to enumerate all sites in a non-multi-geo tenant.
 
 For more details, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
