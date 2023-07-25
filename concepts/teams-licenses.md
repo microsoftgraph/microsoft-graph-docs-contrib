@@ -189,7 +189,7 @@ You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-get
 
 ![Screenshot of the Teams User Activity report](images/teams-user-activity-report-sample.png)
 
-## Payment models for Meeting APIs
+## Payment models for meeting APIs
 
 This section describes the payment models for Teams meeting transcript and recording APIs. The following table lists the APIs that currently support payment models.
 
@@ -204,7 +204,7 @@ Once, the evaluation quota is over, apps need to set up an active Azure subscrip
 **Error code**: 402 (PaymentRequired)
 **Error string**: Evaluation mode capacity has been exceeded. To call this API, the app must be associated with an Azure subscription. For more information, see [Payment models and licensing requirements for Microsoft Teams APIs](teams-licenses.md).
 
-Below table summarizes the evaluation mode behavior for T&R APIs:
+The following table summarizes the evaluation mode behavior for transcript and recording APIs:
 
 | Azure Billing Setup | Model Parameter | Result |
 | -------- | -------- | -------- |

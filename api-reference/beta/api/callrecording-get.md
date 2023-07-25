@@ -19,7 +19,7 @@ For a recording, this API returns the metadata of the single recording associate
 
 > [!NOTE]
 >
-> * In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+> * This is a metered API. For more information, see [payment models for meeting APIs](../../../concepts/teams-licenses.md#payment-models-for-meeting-apis).
 > * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions

@@ -17,9 +17,10 @@ Retrieve a [callTranscript](../resources/calltranscript.md) object associated wi
 
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
-> **Notes:** 
-> - In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
-> - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
+> [!NOTE]
+>
+> * This is a metered API. For more information, see [payment models for meeting APIs](../../../concepts/teams-licenses.md#payment-models-for-meeting-apis).
+> * This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions
 
