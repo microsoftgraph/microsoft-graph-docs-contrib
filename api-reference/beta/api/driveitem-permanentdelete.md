@@ -49,8 +49,6 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 Here is an example of how to call this API.
 
-
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "permanentDelete-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
