@@ -107,4 +107,5 @@ HTTP/1.1 204 NO CONTENT
   "tocPath": ""
 }-->
 
-
+> [!NOTE]
+> A [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) decline is only meant for recipient of the request.
