@@ -1,4 +1,5 @@
-{; https://support.acrolinx.com/hc/en-us/articles/10342999034130-Define-What-Acrolinx-for-Git-Hosting-Checks
+{
+ ; https://support.acrolinx.com/hc/en-us/articles/10342999034130-Define-What-Acrolinx-for-Git-Hosting-Checks
  :allowed-branchname-matches ["main" "live"]
  :allowed-filename-matches ["concepts/" "(?i)(?!(^.*/i|^i)ntune[^/]*$)^(api-reference)/.*$"] ;; Can be overridden in repo-specific edn file. This is an allow list that identifies which folders contain the files Acrolinx will check. Separate multiple folders as follows ["folder/" "folder2"]
 
@@ -35,7 +36,7 @@ If you need a scoring exception for content in this PR, add the *ready for conte
 - Escalate the exception request to the Acrolinx Review Team for review.
 - Approve the exception and work with the GitHub Admin Team to merge the PR to the default branch.
 
-For more information about the exception criteria and exception process, see [Minimum Acrolinx topic scores for publishing](https://review.docs.microsoft.com/office-authoring-guide/acrolinx-min-score?branch=main).
+For more information about the exception criteria and exception process, see [Minimum Acrolinx topic scores for publishing](TODO: Put link to CDK here).
 
 Select the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology:
 
