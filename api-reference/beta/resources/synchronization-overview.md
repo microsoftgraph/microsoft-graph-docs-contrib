@@ -63,9 +63,8 @@ Working with synchronization API primarily involves accessing the [synchronizati
 
 To work with the Azure AD synchronization APIs, Microsoft Graph supports the following granular permissions:
 
-- Synchronization.ReadWrite.All
-- Synchronization.ReadWrite.All
 - Synchronization.Read.All
+- Synchronization.ReadWrite.All
 - Application.ReadWrite.OwnedBy
 - Application.Read.All
 - Application.ReadWrite.All
