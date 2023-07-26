@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SchemaExtension();
 $requestBody->setId('graphLearnCourses');
 
 $requestBody->setDescription('Graph Learn training courses extensions');
 
-$requestBody->setTargetTypes(['user', ]);
+$requestBody->setTargetTypes(['user', 	]);
 
 $propertiesExtensionSchemaProperty1 = new ExtensionSchemaProperty();
 $propertiesExtensionSchemaProperty1->setName('courseId');
@@ -42,7 +42,7 @@ $requestBody->setProperties($propertiesArray);
 
 
 
-$requestResult = $graphServiceClient->schemaExtensions()->post($requestBody);
+$result = $graphServiceClient->schemaExtensions()->post($requestBody);
 
 
 ```

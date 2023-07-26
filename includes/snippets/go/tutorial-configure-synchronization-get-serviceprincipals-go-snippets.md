@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
-	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
 	  //other-imports
 )
 
@@ -20,13 +20,13 @@ headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer {Token}")
 
 
-requestFilter := "startswith(displayName,%20'salesforce')"
+requestFilter := "startswith(displayName, 'salesforce')"
 
-requestParameters := &graphconfig.ServicePrincipalsRequestBuilderGetQueryParameters{
+requestParameters := &graphserviceprincipals.ServicePrincipalsRequestBuilderGetQueryParameters{
 	Select: [] string {"id","appId","displayName"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.ServicePrincipalsRequestBuilderGetRequestConfiguration{
+configuration := &graphserviceprincipals.ServicePrincipalsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

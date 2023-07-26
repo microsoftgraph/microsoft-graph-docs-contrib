@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 $params = @{
-	AccountEnabled = $true
-	DisplayName = "Adele Vance"
-	MailNickname = "AdeleV"
-	UserPrincipalName = "AdeleV@Contoso.com"
-	PasswordProfile = @{
-		ForceChangePasswordNextSignIn = $true
-		Password = "xWwvJ]6NMw+bWH-d"
+	accountEnabled = $true
+	displayName = "Adele Vance"
+	mailNickname = "AdeleV"
+	userPrincipalName = "AdeleV@Contoso.com"
+	passwordProfile = @{
+		forceChangePasswordNextSignIn = $true
+		password = "xWwvJ]6NMw+bWH-d"
 	}
 }
 

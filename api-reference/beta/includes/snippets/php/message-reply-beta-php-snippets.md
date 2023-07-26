@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ReplyPostRequestBody();
 $message = new Message();
@@ -40,7 +40,7 @@ $requestBody->setComment('Samantha, Randi, would you name the group please?');
 
 
 
-$graphServiceClient->me()->messagesById('message-id')->reply()->post($requestBody);
+$graphServiceClient->me()->messages()->byMessageId('message-id')->reply()->post($requestBody);
 
 
 ```

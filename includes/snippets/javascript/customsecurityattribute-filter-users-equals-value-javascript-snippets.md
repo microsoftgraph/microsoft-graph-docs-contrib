@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let users = await client.api('/users')
-	.version('beta')
 	.header('ConsistencyLevel','eventual')
 	.filter('customSecurityAttributes/Marketing/AppCountry eq \'Canada\'')
 	.select('id,displayName,customSecurityAttributes')

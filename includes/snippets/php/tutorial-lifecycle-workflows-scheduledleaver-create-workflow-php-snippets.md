@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Workflow();
 $requestBody->setCategory(new LifecycleWorkflowCategory('leaver'));
@@ -20,32 +20,25 @@ $requestBody->setIsEnabled(true);
 
 $requestBody->setIsSchedulingEnabled(false);
 
-$executionConditions = new WorkflowExecutionConditions();
-$executionConditions->set@odatatype('#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
+$executionConditions = new TriggerAndScopeBasedConditions();
+$executionConditions->setOdataType('#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
 
-$additionalData = [
-'scope' => $executionConditions = new Scope();
-$		executionConditions->set@odatatype('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
+$executionConditionsScope = new RuleBasedSubjectSet();
+$executionConditionsScope->setOdataType('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
 
-$		executionConditions->setRule('department eq \'Marketing\'');
-
-
-$executionConditions->setScope($scope);
-
-'trigger' => $executionConditions = new Trigger();
-$		executionConditions->set@odatatype('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
-
-$		executionConditions->setTimeBasedAttribute('employeeLeaveDateTime');
-
-		$executionConditions->setOffsetInDays(7);
+$executionConditionsScope->setRule('department eq \'Marketing\'');
 
 
-$executionConditions->setTrigger($trigger);
+$executionConditions->setScope($executionConditionsScope);
+$executionConditionsTrigger = new TimeBasedAttributeTrigger();
+$executionConditionsTrigger->setOdataType('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
 
-];
-$executionConditions->setAdditionalData($additionalData);
+$executionConditionsTrigger->setTimeBasedAttribute(new WorkflowTriggerTimeBasedAttribute('employeeLeaveDateTime'));
+
+$executionConditionsTrigger->setOffsetInDays(7);
 
 
+$executionConditions->setTrigger($executionConditionsTrigger);
 
 $requestBody->setExecutionConditions($executionConditions);
 $tasksTask1 = new Task();
@@ -63,7 +56,7 @@ $tasksTask1->setIsEnabled(true);
 
 $tasksTask1->setTaskDefinitionId('8fa97d28-3e52-4985-b3a9-a1126f9b8b4e');
 
-$tasksTask1->setArguments([]);
+$tasksTask1->setArguments([	]);
 
 
 $tasksArray []= $tasksTask1;
@@ -82,7 +75,7 @@ $tasksTask2->setIsEnabled(true);
 
 $tasksTask2->setTaskDefinitionId('81f7b200-2816-4b3b-8c5d-dc556f07b024');
 
-$tasksTask2->setArguments([]);
+$tasksTask2->setArguments([	]);
 
 
 $tasksArray []= $tasksTask2;
@@ -101,7 +94,7 @@ $tasksTask3->setIsEnabled(true);
 
 $tasksTask3->setTaskDefinitionId('8d18588d-9ad3-4c0f-99d0-ec215f0e3dff');
 
-$tasksTask3->setArguments([]);
+$tasksTask3->setArguments([	]);
 
 
 $tasksArray []= $tasksTask3;
@@ -110,7 +103,7 @@ $requestBody->setTasks($tasksArray);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->post($requestBody);
 
 
 ```

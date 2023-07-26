@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Team();
 $requestBody->setVisibility(new TeamVisibilityType('private'));
@@ -41,7 +41,7 @@ $tabsTeamsTab1Configuration->setContentUrl('https://learn.microsoft.com/microsof
 
 $tabsTeamsTab1->setConfiguration($tabsTeamsTab1Configuration);
 $additionalData = [
-'teamsApp@odata.bind' => 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps(\'com.microsoft.teamspace.tab.web\')', 
+		'teamsApp@odata.bind' => 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps(\'com.microsoft.teamspace.tab.web\')', 
 ];
 $tabsTeamsTab1->setAdditionalData($additionalData);
 
@@ -59,7 +59,7 @@ $tabsTeamsTab2Configuration->setWebsiteUrl('https://www.youtube.com/watch?v=X8kr
 
 $tabsTeamsTab2->setConfiguration($tabsTeamsTab2Configuration);
 $additionalData = [
-'teamsApp@odata.bind' => 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps(\'com.microsoft.teamspace.tab.youtube\')', 
+		'teamsApp@odata.bind' => 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps(\'com.microsoft.teamspace.tab.youtube\')', 
 ];
 $tabsTeamsTab2->setAdditionalData($additionalData);
 
@@ -157,11 +157,9 @@ $requestBody->setInstalledApps($installedAppsArray);
 
 $additionalData = [
 'template@odata.bind' => 'https://graph.microsoft.com/v1.0/teamsTemplates(\'standard\')', 
-'discoverySettings' => $requestBody = new DiscoverySettings();
-$requestBody->setShowInTeamsSearchAndSuggestions(true);
-
-
-$requestBody->setDiscoverySettings($discoverySettings);
+'discoverySettings' => [
+	'showInTeamsSearchAndSuggestions' => true,
+],
 
 ];
 $requestBody->setAdditionalData($additionalData);
@@ -169,7 +167,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->teams()->post($requestBody);
+$result = $graphServiceClient->teams()->post($requestBody);
 
 
 ```

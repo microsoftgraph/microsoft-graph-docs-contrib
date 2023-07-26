@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new PlannerTask
@@ -31,6 +33,18 @@ var requestBody = new PlannerTask
 			{
 				"category4" , false
 			},
+		},
+	},
+	Recurrence = new PlannerTaskRecurrence
+	{
+		Schedule = new PlannerRecurrenceSchedule
+		{
+			Pattern = new RecurrencePattern
+			{
+				Type = RecurrencePatternType.Daily,
+				Interval = 3,
+			},
+			PatternStartDateTime = DateTimeOffset.Parse("2022-02-22T02:10:33Z"),
 		},
 	},
 };

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new User();
 $requestBody->setDisplayName('John Smith');
@@ -53,7 +53,7 @@ $requestBody->setPasswordPolicies('DisablePasswordExpiration');
 
 
 
-$requestResult = $graphServiceClient->users()->post($requestBody);
+$result = $graphServiceClient->users()->post($requestBody);
 
 
 ```

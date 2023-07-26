@@ -9,6 +9,7 @@ on:
   push:
     branches:
       - "snippet-generation/*"
+      - "remove-unused-snippets/*"
 
 permissions:
   contents: read  #  to fetch code (actions/checkout)

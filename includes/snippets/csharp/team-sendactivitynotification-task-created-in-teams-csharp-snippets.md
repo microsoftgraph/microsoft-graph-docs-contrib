@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Teams.Item.SendActivityNotification.SendActivityNotificationPostRequestBody
@@ -18,15 +20,10 @@ var requestBody = new Microsoft.Graph.Teams.Item.SendActivityNotification.SendAc
 	{
 		Content = "New Task Created",
 	},
-	Recipient = new TeamworkNotificationRecipient
+	Recipient = new AadUserNotificationRecipient
 	{
 		OdataType = "microsoft.graph.aadUserNotificationRecipient",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"userId" , "569363e2-4e49-4661-87f2-16f245c5d66a"
-			},
-		},
+		UserId = "569363e2-4e49-4661-87f2-16f245c5d66a",
 	},
 	TemplateParameters = new List<KeyValuePair>
 	{

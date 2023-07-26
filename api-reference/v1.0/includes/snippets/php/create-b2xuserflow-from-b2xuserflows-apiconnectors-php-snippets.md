@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new B2xIdentityUserFlow();
 $requestBody->setId('UserFlowWithAPIConnector');
 
-$requestBody->setUserFlowType(new UserFlowType('signuporsignin'));
+$requestBody->setUserFlowType(new UserFlowType('signUpOrSignIn'));
 
 $requestBody->setUserFlowTypeVersion(1);
 
 $apiConnectorConfiguration = new UserFlowApiConnectorConfiguration();
 $apiConnectorConfigurationPostFederationSignup = new IdentityApiConnector();
 $additionalData = [
-'@odata.id' => 'https://graph.microsoft.com/v1/identity/apiConnectors/{id}', 
+		'@odata.id' => 'https://graph.microsoft.com/v1/identity/apiConnectors/{id}', 
 ];
 $apiConnectorConfigurationPostFederationSignup->setAdditionalData($additionalData);
 
@@ -28,7 +28,7 @@ $apiConnectorConfigurationPostFederationSignup->setAdditionalData($additionalDat
 $apiConnectorConfiguration->setPostFederationSignup($apiConnectorConfigurationPostFederationSignup);
 $apiConnectorConfigurationPostAttributeCollection = new IdentityApiConnector();
 $additionalData = [
-'@odata.id' => 'https://graph.microsoft.com/v1/identity/apiConnectors/{id}', 
+		'@odata.id' => 'https://graph.microsoft.com/v1/identity/apiConnectors/{id}', 
 ];
 $apiConnectorConfigurationPostAttributeCollection->setAdditionalData($additionalData);
 
@@ -39,7 +39,7 @@ $apiConnectorConfiguration->setPostAttributeCollection($apiConnectorConfiguratio
 $requestBody->setApiConnectorConfiguration($apiConnectorConfiguration);
 
 
-$requestResult = $graphServiceClient->identity()->b2xUserFlows()->post($requestBody);
+$result = $graphServiceClient->identity()->b2xUserFlows()->post($requestBody);
 
 
 ```

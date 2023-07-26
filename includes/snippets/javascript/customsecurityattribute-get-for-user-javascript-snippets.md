@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let user = await client.api('/users/{id}')
-	.version('beta')
 	.select('customSecurityAttributes')
 	.get();
 

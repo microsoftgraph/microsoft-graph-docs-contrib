@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentPolicy();
 $requestBody->setAccessPackageId('88203d16-0e31-41d4-87b2-dd402f1435e9');
@@ -25,17 +25,14 @@ $requestorSettings->setScopeType('SpecificDirectorySubjects');
 
 $requestorSettings->setAcceptRequests(true);
 
-$allowedRequestorsUserSet1 = new UserSet();
-$allowedRequestorsUserSet1->set@odatatype('#microsoft.graph.singleUser');
+$allowedRequestorsUserSet1 = new SingleUser();
+$allowedRequestorsUserSet1->setOdataType('#microsoft.graph.singleUser');
 
 $allowedRequestorsUserSet1->setIsBackup(false);
 
-$additionalData = [
-'id' => '007d1c7e-7fa8-4e33-b678-5e437acdcddc', 
-'description' => 'Requestor1', 
-];
-$allowedRequestorsUserSet1->setAdditionalData($additionalData);
+$allowedRequestorsUserSet1->setId('007d1c7e-7fa8-4e33-b678-5e437acdcddc');
 
+$allowedRequestorsUserSet1->setDescription('Requestor1');
 
 
 $allowedRequestorsArray []= $allowedRequestorsUserSet1;
@@ -59,7 +56,7 @@ $requestApprovalSettings->setApprovalStages([]);
 $requestBody->setRequestApprovalSettings($requestApprovalSettings);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->post($requestBody);
 
 
 ```

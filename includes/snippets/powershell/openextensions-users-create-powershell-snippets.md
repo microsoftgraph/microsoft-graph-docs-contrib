@@ -8,10 +8,10 @@ Import-Module Microsoft.Graph.Users
 
 $params = @{
 	"@odata.type" = "microsoft.graph.openTypeExtension"
-	ExtensionName = "com.contoso.roamingSettings"
-	Theme = "dark"
-	Color = "purple"
-	Lang = "Japanese"
+	extensionName = "com.contoso.roamingSettings"
+	theme = "dark"
+	color = "purple"
+	lang = "Japanese"
 }
 
 # A UPN can also be used as -UserId.

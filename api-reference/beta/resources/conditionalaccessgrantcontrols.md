@@ -26,16 +26,12 @@ Represents grant controls that must be fulfilled to pass the policy.
 
 ### Special considerations when using `passwordChange` as a control
 
-Consider the following when you use the `passwordChange` control: 
+Consider the following when you use the `passwordChange` control:
 
 - `passwordChange` must be accompanied by `mfa` using an `AND` operator. This combination ensures that the password will be updated in a secure way.
 - `passwordChange` must be used in a policy containing `userRiskLevels`. This is designed to enable scenarios where users must use a secure change password to reset their user risk.
 - The policy should target `all` applications, and not exclude any applications.
 - The policy cannot contain any other condition.
-
-### Known issue when using when using `authenticationStrength` control
-
-You can create or update a Conditional Access policy with `authenticationStrength` grant control. However, when reading the policy, the `authenticationStrength` information might be missing from the response.
 
 ## Relationships
 

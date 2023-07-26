@@ -30,8 +30,12 @@ Key-value pair for action parameters. The configuration of this resource is shar
 
 | Property | Possible values |
 |:-|:-|
-| name | `AdditionalWSFedEndpointCheckResult`,  `AllowedAuthenticationClassReferencesCheckResult`, `AlwaysRequireAuthenticationCheckResult`,   `AutoUpdateEnabledCheckResult`, `ClaimsProviderNameCheckResult`, `EncryptClaimsCheckResult`,  `EncryptedNameIdRequiredCheckResult`, `MonitoringEnabledCheckResult`,`NotBeforeSkewCheckResult`,  `RequestMFAFromClaimsProvidersCheckResult`, `SignedSamlRequestsRequiredCheckResult`, `AdditionalAuthenticationRulesCheckResult`, `TokenLifetimeCheckResult`,  `DelegationAuthorizationRulesCheckResult`, `IssuanceAuthorizationRulesCheckResult`, `IssuanceTransformRulesCheckResult`. |
-| value | `0` (when the validation check passed), `1` (when the validation check failed), or `2` (when the validation check is a warning). |
+| AllowDefaultEntitlement |  The service will provision users that only have the `msiam_access` entitlement grant. |
+| AzureIngestionAttributeOptimization | A Boolean value for enabling an optimization for incremental sync when the number of users managed is in the hundreds of thousands. |
+| LookaheadQueryEnabled |  For inbound scenarios, investigates the source directory for deletes that will be carried out. This is related to the early termination scenario in Workday.|
+| LookaheadQueryIntervalValue | The interval for the lookback investigation relating to `LookaheadQueryEnabled`. |
+| QuarantineTooManyDeletes | A Boolean value that defines whether to quarantine a _RunProfile_ if more than a certain number of deletes occur within a period. |
+| QuarantineTooManyDeletesThreshold | The number of deletes for the quarantine to trigger `QuarantineTooManyDeletes`. |
 
 ### Supported by Lifecycle Workflows tasks
 

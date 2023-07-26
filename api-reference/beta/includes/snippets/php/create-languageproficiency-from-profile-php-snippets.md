@@ -7,22 +7,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new LanguageProficiency();
 $requestBody->setDisplayName('Norwegian Bokmål');
 
 $requestBody->setTag('nb-NO');
 
-$requestBody->setSpoken(new LanguageProficiencyLevel('nativeorbilingual'));
+$requestBody->setSpoken(new LanguageProficiencyLevel('nativeOrBilingual'));
 
-$requestBody->setWritten(new LanguageProficiencyLevel('nativeorbilingual'));
+$requestBody->setWritten(new LanguageProficiencyLevel('nativeOrBilingual'));
 
-$requestBody->setReading(new LanguageProficiencyLevel('nativeorbilingual'));
+$requestBody->setReading(new LanguageProficiencyLevel('nativeOrBilingual'));
 
 
 
-$requestResult = $graphServiceClient->me()->profile()->languages()->post($requestBody);
+$result = $graphServiceClient->me()->profile()->languages()->post($requestBody);
 
 
 ```

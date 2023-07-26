@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
 	AttachmentItem = @{
-		AttachmentType = "file"
-		Name = "flower"
-		Size = 3483322
+		attachmentType = "file"
+		name = "flower"
+		size = 3483322
 	}
 }
 

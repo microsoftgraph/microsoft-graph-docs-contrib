@@ -4,27 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingAppointment"
-	End = @{
+	end = @{
 		"@odata.type" = "#microsoft.graph.dateTimeTimeZone"
-		DateTime = "2018-05-06T12:30:00.0000000+00:00"
-		TimeZone = "UTC"
+		dateTime = "2018-05-06T12:30:00.0000000+00:00"
+		timeZone = "UTC"
 	}
-	InvoiceDate = @{
+	invoiceDate = @{
 		"@odata.type" = "#microsoft.graph.dateTimeTimeZone"
-		DateTime = "2018-05-06T12:30:00.0000000+00:00"
-		TimeZone = "UTC"
+		dateTime = "2018-05-06T12:30:00.0000000+00:00"
+		timeZone = "UTC"
 	}
-	Start = @{
+	start = @{
 		"@odata.type" = "#microsoft.graph.dateTimeTimeZone"
-		DateTime = "2018-05-06T12:00:00.0000000+00:00"
-		TimeZone = "UTC"
+		dateTime = "2018-05-06T12:00:00.0000000+00:00"
+		timeZone = "UTC"
 	}
 }
 
-Update-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
+Update-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
 
 ```

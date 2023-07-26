@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OAuth2PermissionGrant();
 $requestBody->setClientId('b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94');
@@ -22,7 +22,7 @@ $requestBody->setScope('User.Read.All Group.Read.All');
 
 
 
-$requestResult = $graphServiceClient->oauth2PermissionGrants()->post($requestBody);
+$result = $graphServiceClient->oauth2PermissionGrants()->post($requestBody);
 
 
 ```

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CloudPcDeviceImage();
-$requestBody->set@odatatype('#microsoft.graph.cloudPcDeviceImage');
+$requestBody->setOdataType('#microsoft.graph.cloudPcDeviceImage');
 
 $requestBody->setDisplayName('Display Name value');
 
@@ -24,7 +24,7 @@ $requestBody->setSourceImageResourceId('/subscriptions/0ac520ee-14c0-480f-b6c9-0
 
 
 
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->deviceImages()->post($requestBody);
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->deviceImages()->post($requestBody);
 
 
 ```

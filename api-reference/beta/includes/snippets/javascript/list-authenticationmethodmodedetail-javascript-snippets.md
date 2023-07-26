@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let authenticationMethodModes = await client.api('/identity/conditionalAccess/authenticationStrengths/authenticationMethodModes')
+let authenticationMethodModes = await client.api('/identity/conditionalAccess/authenticationStrength/authenticationMethodModes')
 	.version('beta')
 	.get();
 

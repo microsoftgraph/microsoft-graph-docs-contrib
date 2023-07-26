@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Event();
 $requestBody->setSubject('Let\'s go for lunch');
 
 $body = new ItemBody();
-$body->setContentType(new BodyType('html'));
+$body->setContentType(new BodyType('hTML'));
 
 $body->setContent('Does next month work for you?');
 
@@ -57,7 +57,7 @@ $requestBody->setTransactionId('7E163156-7762-4BEB-A1C6-729EA81755A7');
 
 
 
-$requestResult = $graphServiceClient->me()->calendarsById('calendar-id')->events()->post($requestBody);
+$result = $graphServiceClient->me()->calendars()->byCalendarId('calendar-id')->events()->post($requestBody);
 
 
 ```

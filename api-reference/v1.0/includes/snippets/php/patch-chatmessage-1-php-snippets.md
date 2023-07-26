@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();
 $requestBody->setMessageType(new ChatMessageType('message'));
@@ -31,7 +31,7 @@ $fromUser->setId('3b102402-813e-4e17-a6b2-f841aef1fdfc');
 $fromUser->setDisplayName('Lam Cong');
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+		'userIdentityType' => 'aadUser', 
 ];
 $fromUser->setAdditionalData($additionalData);
 
@@ -39,7 +39,7 @@ $fromUser->setAdditionalData($additionalData);
 
 $from->setUser($fromUser);
 $additionalData = [
-'conversation' => 		null,
+		'conversation' => 		null,
 ];
 $from->setAdditionalData($additionalData);
 
@@ -53,15 +53,17 @@ $body->setContent('Edit text only');
 
 
 $requestBody->setBody($body);
-$requestBody->setAttachments([]);
+$requestBody->setAttachments([	]);
 
-$requestBody->setMentions([]);
+$requestBody->setMentions([	]);
 
-$requestBody->setReactions([]);
+$requestBody->setReactions([	]);
+
+$requestBody->setMessageHistory([	]);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->byChatMessageId('chatMessage-id')->patch($requestBody);
 
 
 ```

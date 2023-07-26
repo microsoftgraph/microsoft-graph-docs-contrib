@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AuthorizationPolicy();
 $defaultUserRolePermissions = new DefaultUserRolePermissions();
-$defaultUserRolePermissions->setPermissionGrantPoliciesAssigned([]);
+$defaultUserRolePermissions->setPermissionGrantPoliciesAssigned([	]);
 
 
 $requestBody->setDefaultUserRolePermissions($defaultUserRolePermissions);
 
 
-$requestResult = $graphServiceClient->policies()->authorizationPolicy()->patch($requestBody);
+$result = $graphServiceClient->policies()->authorizationPolicy()->patch($requestBody);
 
 
 ```

@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AccessPackageAssignmentRequest
@@ -17,34 +19,24 @@ var requestBody = new AccessPackageAssignmentRequest
 	},
 	Answers = new List<AccessPackageAnswer>
 	{
-		new AccessPackageAnswer
+		new AccessPackageAnswerString
 		{
 			OdataType = "#microsoft.graph.accessPackageAnswerString",
-			AnsweredQuestion = new AccessPackageQuestion
+			Value = "Arizona",
+			AnsweredQuestion = new AccessPackageMultipleChoiceQuestion
 			{
 				OdataType = "#microsoft.graph.accessPackageMultipleChoiceQuestion",
 				Id = "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF",
 			},
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"value" , "Arizona"
-				},
-			},
 		},
-		new AccessPackageAnswer
+		new AccessPackageAnswerString
 		{
 			OdataType = "#microsoft.graph.accessPackageAnswerString",
-			AnsweredQuestion = new AccessPackageQuestion
+			Value = "Need access to marketing campaign material",
+			AnsweredQuestion = new AccessPackageTextInputQuestion
 			{
 				OdataType = "#microsoft.graph.accessPackageTextInputQuestion",
 				Id = "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
-			},
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"value" , "Need access to marketing campaign material"
-				},
 			},
 		},
 	},

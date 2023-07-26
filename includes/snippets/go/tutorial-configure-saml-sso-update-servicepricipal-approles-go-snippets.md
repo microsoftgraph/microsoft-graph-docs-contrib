@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -21,7 +21,6 @@ requestBody := graphmodels.NewServicePrincipal()
 appRole := graphmodels.NewAppRole()
 allowedMemberTypes := []string {
 	"User",
-
 }
 appRole.SetAllowedMemberTypes(allowedMemberTypes)
 displayName := "User"
@@ -39,7 +38,6 @@ appRole.SetOrigin(&origin)
 appRole1 := graphmodels.NewAppRole()
 allowedMemberTypes := []string {
 	"User",
-
 }
 appRole1.SetAllowedMemberTypes(allowedMemberTypes)
 displayName := "msiam_access"
@@ -57,7 +55,6 @@ appRole1.SetOrigin(&origin)
 appRole2 := graphmodels.NewAppRole()
 allowedMemberTypes := []string {
 	"User",
-
 }
 appRole2.SetAllowedMemberTypes(allowedMemberTypes)
 description := "Admin,WAAD"
@@ -73,7 +70,6 @@ appRole2.SetValue(&value)
 appRole3 := graphmodels.NewAppRole()
 allowedMemberTypes := []string {
 	"User",
-
 }
 appRole3.SetAllowedMemberTypes(allowedMemberTypes)
 description := "Finance,WAAD"
@@ -92,11 +88,10 @@ appRoles := []graphmodels.AppRoleable {
 	appRole1,
 	appRole2,
 	appRole3,
-
 }
 requestBody.SetAppRoles(appRoles)
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

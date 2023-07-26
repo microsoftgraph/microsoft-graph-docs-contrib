@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -20,7 +20,6 @@ tags := []string {
 	"HR",
 	"Payroll",
 	"HideApp",
-
 }
 requestBody.SetTags(tags)
 info := graphmodels.NewInformationalUrl()
@@ -42,14 +41,13 @@ logoutUrl := "https://www.contoso.com/frontchannel_logout"
 web.SetLogoutUrl(&logoutUrl) 
 redirectUris := []string {
 	"https://localhost",
-
 }
 web.SetRedirectUris(redirectUris)
 requestBody.SetWeb(web)
 serviceManagementReference := "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;"
 requestBody.SetServiceManagementReference(&serviceManagementReference) 
 
-result, err := graphClient.ApplicationsById("application-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 WorkbookRangeFill workbookRangeFill = new WorkbookRangeFill();
 workbookRangeFill.color = "#FF0000";
 
-graphClient.me().drive().items("{id}").workbook().worksheets("Sheet1")
+graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")
 	.range(WorkbookWorksheetRangeParameterSet
 		.newBuilder()
 		.withAddress("$A$1")

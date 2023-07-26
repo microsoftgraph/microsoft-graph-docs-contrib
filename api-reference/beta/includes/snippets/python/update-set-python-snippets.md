@@ -1,0 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = Set()
+request_body.description = 'mySet'
+
+
+
+
+result = await client.term_store.sets.by_set_id('set-id').patch(request_body = request_body)
+
+
+```

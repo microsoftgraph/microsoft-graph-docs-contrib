@@ -57,6 +57,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | onPremisesSyncEnabled | Boolean | **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; **null** if this object has never been synced from an on-premises directory (default). <br/> <br/>Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` for `null` values). |
 | phones | [phone](phone.md) collection | List of phones for this organizational contact. Phone types can be mobile, business, and businessFax. Only one of each type can ever be present in the collection. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | proxyAddresses | String collection | For example: "SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". The **any** operator is required for filter expressions on multi-valued properties. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`, `/$count eq 0`, `/$count ne 0`). |
+| serviceProvisioningErrors | [serviceProvisioningError](serviceprovisioningerror.md) collection | Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an orgContact object . <br> Supports `$filter` (`eq`, `not`, for isResolved and serviceInstance).|
 | surname | String | Last name for this organizational contact. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` for `null` values) |
 
 ## Relationships
@@ -100,6 +101,7 @@ Here is a JSON representation of the resource
   "onPremisesSyncEnabled": true,
   "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "proxyAddresses": ["string"],
+  "serviceProvisioningErrors": [{"@odata.type": "microsoft.graph.serviceProvisioningXmlError"}],
   "surname": "string"
 }
 ```

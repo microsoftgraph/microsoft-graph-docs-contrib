@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TransferPostRequestBody();
 $transferTarget = new InvitationParticipantInfo();
@@ -22,7 +22,7 @@ $transferTargetIdentity->setUser($transferTargetIdentityUser);
 
 $transferTarget->setIdentity($transferTargetIdentity);
 $additionalData = [
-'endpointType' => 'default', 
+		'endpointType' => 'default', 
 ];
 $transferTarget->setAdditionalData($additionalData);
 
@@ -31,7 +31,7 @@ $transferTarget->setAdditionalData($additionalData);
 $requestBody->setTransferTarget($transferTarget);
 
 
-$graphServiceClient->communications()->callsById('call-id')->transfer()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->transfer()->post($requestBody);
 
 
 ```

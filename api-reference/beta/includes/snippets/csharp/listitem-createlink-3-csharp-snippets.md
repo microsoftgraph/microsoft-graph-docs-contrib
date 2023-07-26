@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var type = "embed";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"]
-	.CreateLink(type,null,null,null,null,null)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Beta.Sites.Item.Lists.Item.Items.Item.CreateLink.CreateLinkPostRequestBody
+{
+	Type = "embed",
+};
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"].CreateLink.PostAsync(requestBody);
+
 
 ```

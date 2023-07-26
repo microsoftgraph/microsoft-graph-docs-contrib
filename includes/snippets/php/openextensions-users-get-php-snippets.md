@@ -7,18 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new MeRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new MeRequestBuilderGetQueryParameters();
+$queryParameters = MeRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","displayName","mail","mobilePhone"];
 $queryParameters->expand = ["extensions"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->get($requestConfiguration);
+$result = $graphServiceClient->me()->get($requestConfiguration);
 
 
 ```

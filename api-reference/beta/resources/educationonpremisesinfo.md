@@ -4,7 +4,7 @@ description: "Additional information used to associate an on-premises Active Dir
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "education"
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
 # educationOnPremisesInfo resource type

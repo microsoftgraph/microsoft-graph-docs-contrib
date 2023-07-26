@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
-	Definition = @(
-		"{"TokenLifetimePolicy":{"Version":1,"AccessTokenLifetime":"8:00:00"}}"
+	definition = @(
+		'{"TokenLifetimePolicy":{"Version":1,"AccessTokenLifetime":"8:00:00"}}'
 	)
-	DisplayName = "Contoso token lifetime policy"
-	IsOrganizationDefault = $true
+	displayName = "Contoso token lifetime policy"
+	isOrganizationDefault = $true
 }
 
-New-MgPolicyTokenLifetimePolicy -BodyParameter $params
+New-MgBetaPolicyTokenLifetimePolicy -BodyParameter $params
 
 ```

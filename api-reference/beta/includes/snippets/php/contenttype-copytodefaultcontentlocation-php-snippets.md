@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CopyToDefaultContentLocationPostRequestBody();
 $sourceFile = new ItemReference();
@@ -24,7 +24,7 @@ $requestBody->setDestinationFileName('newname.txt');
 
 
 
-$graphServiceClient->sitesById('site-id')->contentTypesById('contentType-id')->copyToDefaultContentLocation()->post($requestBody);
+$graphServiceClient->sites()->bySiteId('site-id')->contentTypes()->byContentTypeId('contentType-id')->copyToDefaultContentLocation()->post($requestBody);
 
 
 ```

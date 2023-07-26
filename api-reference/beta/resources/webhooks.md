@@ -2,7 +2,7 @@
 title: "Use the Microsoft Graph API to get change notifications"
 description: "Deliver change notifications to clients."
 ms.localizationpriority: medium
-author: "jumasure"
+author: "keylimesoda"
 doc_type: conceptualPageType
 ms.prod: "change-notifications"
 ms.date: 10/04/2022

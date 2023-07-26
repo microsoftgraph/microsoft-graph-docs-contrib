@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	DisplayName = "My application"
+	displayName = "My application"
 }
 
 New-MgApplication -BodyParameter $params

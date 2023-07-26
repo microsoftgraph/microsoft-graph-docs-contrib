@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.businessScenario"
-	DisplayName = "Contoso Order Tracking"
-	UniqueName = "com.contoso.apps.ordertracking"
+	displayName = "Contoso Order Tracking"
+	uniqueName = "com.contoso.apps.ordertracking"
 }
 
-New-MgBusinessScenario -BodyParameter $params
+New-MgBetaBusinessScenario -BodyParameter $params
 
 ```

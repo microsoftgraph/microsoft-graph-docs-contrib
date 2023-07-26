@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	AppRoleAssignmentRequired = $true
+	appRoleAssignmentRequired = $true
 }
 
 Update-MgServicePrincipal -ServicePrincipalId $servicePrincipalId -BodyParameter $params

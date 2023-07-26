@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationSchool();
 $requestBody->setDisplayName('Fabrikam High School');
@@ -47,7 +47,7 @@ $requestBody->setPhone('+1 (253) 555-0102');
 
 
 
-$requestResult = $graphServiceClient->education()->schools()->post($requestBody);
+$result = $graphServiceClient->education()->schools()->post($requestBody);
 
 
 ```

@@ -7,19 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Group();
 $additionalData = [
-'graphlearn_courses' => $requestBody = new Graphlearn_courses();
-$		requestBody->setCourseId('123');
-
-$		requestBody->setCourseName('New Managers');
-
-$		requestBody->setCourseType('Online');
-
-
-$requestBody->setGraphlearn_courses($graphlearn_courses);
+		'graphlearn_courses' => 		[
+				'courseId' => '123', 
+				'courseName' => 'New Managers', 
+				'courseType' => 'Online', 
+		],
 
 ];
 $requestBody->setAdditionalData($additionalData);
@@ -27,7 +23,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->patch($requestBody);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->patch($requestBody);
 
 
 ```

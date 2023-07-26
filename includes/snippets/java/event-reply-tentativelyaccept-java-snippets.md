@@ -13,9 +13,9 @@ Boolean sendResponse = true;
 graphClient.me().events("AAMkADADVj3fyAABZ5ieyAAA=")
 	.tentativelyAccept(EventTentativelyAcceptParameterSet
 		.newBuilder()
-		.withComment(comment)
-		.withSendResponse(sendResponse)
 		.withProposedNewTime(null)
+		.withSendResponse(sendResponse)
+		.withComment(comment)
 		.build())
 	.buildRequest()
 	.post();

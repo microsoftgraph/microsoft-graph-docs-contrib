@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Event();
 $requestBody->setSubject('Let\'s go for lunch');
 
 $body = new ItemBody();
-$body->setContentType(new BodyType('html'));
+$body->setContentType(new BodyType('hTML'));
 
 $body->setContent('Does noon work for you?');
 
@@ -59,15 +59,13 @@ $requestBody->setTransactionId('7E163156-7762-4BEB-A1C6-729EA81755A7');
 
 
 $requestConfiguration = new EventsRequestBuilderPostRequestConfiguration();
-
 $headers = [
-'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+	'Prefer' => 'outlook.timezone="Pacific Standard Time"',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->me()->events()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->me()->events()->post($requestBody, $requestConfiguration);
 
 
 ```

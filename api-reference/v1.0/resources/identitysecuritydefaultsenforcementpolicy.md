@@ -4,7 +4,7 @@ description: "Represents the Azure Active Directory security defaults policy. Se
 ms.localizationpriority: medium
 author: "rohinigoyal1"
 ms.prod: "identity-and-sign-in"
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
 # identitySecurityDefaultsEnforcementPolicy resource type

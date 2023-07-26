@@ -7,22 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DeltaRequestBuilderGetQueryParameters();
-$queryParameters->skiptoken = "R0usmci39OQxqJrxK4";
-
 $headers = [
-'Prefer' => 'odata.maxpagesize=2',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'Prefer' => 'odata.maxpagesize=2',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->skiptoken = "R0usmci39OQxqJrxK4";
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->me()->calendarView()->delta()->get($requestConfiguration);
+
+$result = $graphServiceClient->me()->calendarView()->delta()->get($requestConfiguration);
 
 
 ```

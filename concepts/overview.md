@@ -61,7 +61,7 @@ You can then navigate to other resources using relationships:
 - [Get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta&preserve-view=true) around the user.
 - Extend the scenario to get to the user's groups through a [memberOf](/graph/api/user-list-memberof) relationship.
 - [Reach other members in each group](/graph/api/group-list-members).
-- Tap into other scenarios enabled by [groups](office365-groups-concept-overview.md), such as [education](education-concept-overview.md) and [teamwork](teams-concept-overview.md).
+- Tap into other scenarios enabled by [groups](microsoft365-groups-concept-overview.md), such as [education](education-concept-overview.md) and [teamwork](teams-concept-overview.md).
 
 Microsoft Graph continues to open up the Microsoft 365 platform for developers, and always only with the appropriate permissions.
 

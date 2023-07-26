@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ItemPatent();
 $requestBody->setDescription('Calculating the intent of a user to purchase an item based on the amount of time they hover their mouse over a given pixel.');
@@ -22,7 +22,7 @@ $requestBody->setWebUrl('https://patents.gov/3954432633');
 
 
 
-$requestResult = $graphServiceClient->me()->profile()->patents()->post($requestBody);
+$result = $graphServiceClient->me()->profile()->patents()->post($requestBody);
 
 
 ```

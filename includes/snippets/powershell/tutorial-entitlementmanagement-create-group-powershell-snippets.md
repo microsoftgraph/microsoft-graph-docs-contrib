@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	Description = "Marketing group"
-	DisplayName = "Marketing resources"
-	MailEnabled = $false
-	MailNickname = "markres"
-	SecurityEnabled = $true
+	description = "Marketing group"
+	displayName = "Marketing resources"
+	mailEnabled = $false
+	mailNickname = "markres"
+	securityEnabled = $true
 }
 
 New-MgGroup -BodyParameter $params

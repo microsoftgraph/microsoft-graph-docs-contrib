@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OutlookTask();
 $requestBody->setSubject('Shop for children\'s weekend');
@@ -28,15 +28,13 @@ $dueDateTime->setTimeZone('Eastern Standard Time');
 $requestBody->setDueDateTime($dueDateTime);
 
 $requestConfiguration = new TasksRequestBuilderPostRequestConfiguration();
-
 $headers = [
-	'Prefer' => 'outlook.timezone="Pacific Standard Time"',
-];
-
+		'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->me()->outlook()->tasks()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->me()->outlook()->tasks()->post($requestBody, $requestConfiguration);
 
 
 ```

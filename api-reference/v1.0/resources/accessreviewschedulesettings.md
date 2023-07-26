@@ -27,6 +27,8 @@ The **accessReviewScheduleSettings** defines the settings of an [accessReviewSch
 | recommendationsEnabled|Boolean | Indicates whether decision recommendations are enabled or disabled. <br/>**NOTE:** If the **stageSettings** of the [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) object is defined, its **recommendationsEnabled** setting will be used instead of the value of this property. |
 | recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Detailed settings for recurrence using the standard Outlook recurrence object. <br/><br/>**Note:** Only **dayOfMonth**, **interval**, and **type** (`weekly`, `absoluteMonthly`) properties are supported. Use the property **startDate** on **recurrenceRange** to determine the day the review starts. |
 | reminderNotificationsEnabled|Boolean  | Indicates whether reminders are enabled or disabled. Default value is `false`.  |
+| recommendationLookBackDuration | Duration| Optional field. Indicates the period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from. The recommendation will be to `deny` if the user is inactive during the look-back duration. For reviews of groups and Azure AD roles, any duration is accepted. For reviews of applications, 30 days is the maximum duration. If not specified, the duration is 30 days. <br/><br/>**NOTE:** If the **stageSettings** of the [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) object is defined, its **recommendationLookBackDuration** setting will be used instead of the value of this property. |
+| recommendationInsightSettings|[accessReviewRecommendationInsightSetting](../resources/accessReviewRecommendationInsightSetting.md) collection | Optional. Describes the types of insights that aid reviewers to make access review decisions. <br/><br/>**NOTE:** If the **stageSettings** of the [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) object is defined, its **recommendationInsightSettings** setting will be used instead of the value of this property. |
 
 ## Relationships
 None.
@@ -41,24 +43,28 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewScheduleSettings",
-  
+  "mailNotificationsEnabled": "Boolean",
+  "reminderNotificationsEnabled": "Boolean",
+  "justificationRequiredOnApproval": "Boolean",
+  "defaultDecisionEnabled": "Boolean",
+  "defaultDecision": "String",
+  "instanceDurationInDays": "Integer",
+  "recurrence": {
+    "@odata.type": "microsoft.graph.patternedRecurrence"
+  },
+  "autoApplyDecisionsEnabled": "Boolean",
   "applyActions": [
     {
       "@odata.type": "microsoft.graph.removeAccessApplyAction"
     }
   ],
-  "autoApplyDecisionsEnabled": "Boolean",
-  "defaultDecision": "String",
-  "defaultDecisionEnabled": "Boolean",
-  "decisionHistoriesForReviewersEnabled": "Boolean",
-  "instanceDurationInDays": "Integer",
-  "justificationRequiredOnApproval": "Boolean",
-  "mailNotificationsEnabled": "Boolean",
   "recommendationsEnabled": "Boolean",
-  "recurrence": {
-    "@odata.type": "microsoft.graph.patternedRecurrence"
-  },
-  "reminderNotificationsEnabled": "Boolean"
+  "recommendationLookBackDuration": "String (duration)",
+  "recommendationInsightSettings": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewRecommendationInsightSetting"
+    }
+  ]
 }
 ```
 

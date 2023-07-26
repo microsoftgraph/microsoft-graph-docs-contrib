@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Application();
 $onPremisesPublishing = new OnPremisesPublishing();
-$onPremisesPublishing->setExternalAuthenticationType(new ExternalAuthenticationType('aadpreauthentication'));
+$onPremisesPublishing->setExternalAuthenticationType(new ExternalAuthenticationType('aadPreAuthentication'));
 
 $onPremisesPublishing->setInternalUrl('https://contosoiwaapp.com');
 
@@ -35,7 +35,7 @@ $onPremisesPublishing->setIsTranslateLinksInBodyEnabled(true);
 $requestBody->setOnPremisesPublishing($onPremisesPublishing);
 
 
-$requestResult = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
+$result = $graphServiceClient->applications()->byApplicationId('application-id')->patch($requestBody);
 
 
 ```

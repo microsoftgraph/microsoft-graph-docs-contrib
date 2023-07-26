@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -46,7 +46,6 @@ identities := []graphmodels.ObjectIdentityable {
 	objectIdentity,
 	objectIdentity1,
 	objectIdentity2,
-
 }
 requestBody.SetIdentities(identities)
 passwordProfile := graphmodels.NewPasswordProfile()

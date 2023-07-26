@@ -7,18 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new PlannerBucketRequestBuilderDeleteRequestConfiguration();
-
 $headers = [
-	'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
-];
-
+		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->planner()->bucketsById('plannerBucket-id')->delete($requestConfiguration);
+$graphServiceClient->planner()->buckets()->byPlannerBucketId('plannerBucket-id')->delete($requestConfiguration);
 
 
 ```

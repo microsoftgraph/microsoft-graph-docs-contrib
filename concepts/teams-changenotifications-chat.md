@@ -147,11 +147,9 @@ The decrypted notification payload looks like the following. The payload conform
 }
 ```
 
-## Subscribe to changes in any chat in a tenant where a Teams app is installed (preview)
+## Subscribe to changes in any chat in a tenant where a Teams app is installed
 
 To get change notifications for all changes related to any chat in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
-
-> **Note.** This resource type is currently in preview.
 
 [!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
@@ -166,7 +164,7 @@ To get change notifications for all changes related to any chat in a tenant wher
 ### Example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {

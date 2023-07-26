@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Represents a cookie, which is a small piece of data sent from a server to a client as the user browses the internet. These values sometimes contain a state for the application or little bits of tracking data. When Microsoft Defender Threat Intelligence crawls a website, it indexes cookie names so users can search them. Cookies are also used by malicious actors to keep track of infected victims or to store data to be used later.
 
 The **hostCookie** is associated with a [host](../resources/security-host.md) resource.

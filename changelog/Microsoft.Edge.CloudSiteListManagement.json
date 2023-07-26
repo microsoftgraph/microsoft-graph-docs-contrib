@@ -3,6 +3,136 @@
       {
         "ChangeList": [      
           {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "browserSharedCookieSourceEnvironment",
+            "ChangeType": "Addition",
+            "Description": "Added the **browserSharedCookieSourceEnvironment** enumeration type.",
+            "Target": "browserSharedCookieSourceEnvironment"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "browserSiteCompatibilityMode",
+            "ChangeType": "Addition",
+            "Description": "Added the **browserSiteCompatibilityMode** enumeration type.",
+            "Target": "browserSiteCompatibilityMode"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "browserSiteMergeType",
+            "ChangeType": "Addition",
+            "Description": "Added the **browserSiteMergeType** enumeration type.",
+            "Target": "browserSiteMergeType"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "browserSiteTargetEnvironment",
+            "ChangeType": "Addition",
+            "Description": "Added the **browserSiteTargetEnvironment** enumeration type.",
+            "Target": "browserSiteTargetEnvironment"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "browserSiteStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **browserSiteStatus** enumeration type.",
+            "Target": "browserSiteStatus"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "browserSharedCookieStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **browserSharedCookieStatus** enumeration type.",
+            "Target": "browserSharedCookieStatus"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "browserSiteListStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **browserSiteListStatus** enumeration type.",
+            "Target": "browserSiteListStatus"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Resource",
+            "ChangedApiName": "browserSiteList",
+            "ChangeType": "Addition",
+            "Description": "Added the [browserSiteList](https://learn.microsoft.com/graph/api/resources/browserSiteList?view=graph-rest-v1.0) resource and supported methods.",
+            "Target": "browserSiteList"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Resource",
+            "ChangedApiName": "browserSite",
+            "ChangeType": "Addition",
+            "Description": "Added the [browserSite](https://learn.microsoft.com/graph/api/resources/browserSite?view=graph-rest-v1.0) resource and supported methods.",
+            "Target": "browserSite"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Resource",
+            "ChangedApiName": "browserSharedCookie",
+            "ChangeType": "Addition",
+            "Description": "Added the [browserSharedCookie](https://learn.microsoft.com/graph/api/resources/browserSharedCookie?view=graph-rest-v1.0) resource and supported methods.",
+            "Target": "browserSharedCookie"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Resource",
+            "ChangedApiName": "browserSharedCookieHistory",
+            "ChangeType": "Addition",
+            "Description": "Added the [browserSharedCookieHistory](https://learn.microsoft.com/graph/api/resources/browsersharedcookiehistory?view=graph-rest-v1.0) resource type.",
+            "Target": "browserSharedCookieHistory"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Resource",
+            "ChangedApiName": "browserSiteHistory",
+            "ChangeType": "Addition",
+            "Description": "Added the [browserSiteHistory](https://learn.microsoft.com/graph/api/resources/browsersitehistory?view=graph-rest-v1.0) resource type.",
+            "Target": "browserSiteHistory"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Resource",
+            "ChangedApiName": "edge",
+            "ChangeType": "Addition",
+            "Description": "Added the [edge](https://learn.microsoft.com/graph/api/resources/edge?view=graph-rest-v1.0) resource type.",
+            "Target": "edge"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Resource",
+            "ChangedApiName": "internetExplorerMode",
+            "ChangeType": "Addition",
+            "Description": "Added the [internetExplorerMode](https://learn.microsoft.com/graph/api/resources/internetExplorerMode?view=graph-rest-v1.0) resource type.",
+            "Target": "internetExplorerMode"
+          },
+          {
+            "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "edge",
+            "ChangeType": "Addition",
+            "Description": "Added the **edge** relationship to the [admin](https://learn.microsoft.com/graph/api/resources/admin?view=graph-rest-v1.0) resource.",
+            "Target": "admin"
+          }
+        ],
+        "Id": "05184a38-79d5-406e-b54d-e28e5ea2ea28",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2023-04-05T14:47:09.3292856Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Browser management"
+      },
+      {
+        "ChangeList": [      
+          {
             "Id": "83c8e159-1987-49bd-a8d1-f33a651b96f0",
             "ApiChange": "Enum type",
             "ChangedApiName": "browserSharedCookieSourceEnvironment",

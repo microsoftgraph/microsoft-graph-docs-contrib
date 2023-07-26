@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Event();
 $requestBody->setSubject('Prep for customer meeting');
 
 $body = new ItemBody();
-$body->setContentType(new BodyType('html'));
+$body->setContentType(new BodyType('hTML'));
 
 $body->setContent('Does this time work for you?');
 
@@ -57,19 +57,17 @@ $requestBody->setAllowNewTimeProposals(true);
 
 $requestBody->setIsOnlineMeeting(true);
 
-$requestBody->setOnlineMeetingProvider(new OnlineMeetingProviderType('teamsforbusiness'));
+$requestBody->setOnlineMeetingProvider(new OnlineMeetingProviderType('teamsForBusiness'));
 
 
 $requestConfiguration = new EventsRequestBuilderPostRequestConfiguration();
-
 $headers = [
-'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+	'Prefer' => 'outlook.timezone="Pacific Standard Time"',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->me()->events()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->me()->events()->post($requestBody, $requestConfiguration);
 
 
 ```

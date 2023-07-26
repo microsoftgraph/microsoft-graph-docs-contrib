@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Extension();
 $additionalData = [
-'xboxGamerTag' => 'FierceAdele', 
-'linkedInProfile' => 'www.linkedin.com/in/testlinkedinprofile', 
+		'xboxGamerTag' => 'FierceAdele', 
+		'linkedInProfile' => 'www.linkedin.com/in/testlinkedinprofile', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->extensionsById('extension-id')->patch($requestBody);
+$result = $graphServiceClient->users()->byUserId('user-id')->extensions()->byExtensionId('extension-id')->patch($requestBody);
 
 
 ```

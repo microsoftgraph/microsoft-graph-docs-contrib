@@ -77,7 +77,7 @@ const bookingStaffMemberBase = {
     ]
 };
 
-await client.api('/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148')
+await client.api('/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffMembers/8ee1c803-a1fa-406d-8259-7ab53233f148')
 	.update(bookingStaffMemberBase);
 
 ```

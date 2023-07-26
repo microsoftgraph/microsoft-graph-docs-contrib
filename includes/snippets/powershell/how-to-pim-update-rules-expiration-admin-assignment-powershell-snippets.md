@@ -8,19 +8,19 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
-	Id = "Expiration_Admin_Assignment"
-	IsExpirationRequired = $true
-	MaximumDuration = "P90D"
-	Target = @{
+	id = "Expiration_Admin_Assignment"
+	isExpirationRequired = $true
+	maximumDuration = "P90D"
+	target = @{
 		"@odata.type" = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
-		Caller = "Admin"
-		Operations = @(
+		caller = "Admin"
+		operations = @(
 			"All"
 		)
-		Level = "Assignment"
-		InheritableSettings = @(
+		level = "Assignment"
+		inheritableSettings = @(
 		)
-		EnforcedSettings = @(
+		enforcedSettings = @(
 		)
 	}
 }
