@@ -61,17 +61,17 @@ Here are some tips to remember:
 
 ### Handling "connector enable" notification
 To handle "connector enable" notifications:
-* Determine which Microsoft Graph connections to create (i.e. how many, each with which schema) by querying for all connections using the [External connection List API](graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http). Determine whether to create all connections from scratch, resume creation of connections (in resiliency flow), or no-op (when all desired connections are already in the **ready** state).
-* Normally, [the connection](graph/api/externalconnectors-external-post-connections?view=graph-rest-beta&tabs=http) is created to **draft** state. Pass the **connectorsTicket** opaque encoded string to the connection creation API in this HTTP header **GraphConnectors-Ticket**.
-* Then [register the schema](graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&tabs=http). 
+* Determine which Microsoft Graph connections to create (how many connections and which schema for each connection) by querying for all connections using the [External connection List API](graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http). Determine whether to create all connections from scratch, resume creation of connections (in resiliency flow), or no-op (when all desired connections are already in the **ready** state).
+* [The connection](graph/api/externalconnectors-external-post-connections?view=graph-rest-beta&tabs=http) is created to **draft** state. Pass the **connectorsTicket** opaque encoded string to the connection creation API in this HTTP header **GraphConnectors-Ticket**.
+* [Register the schema](graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&tabs=http). 
 * After a successful schema creation or update, the connection should reach a **ready** state.
 
 ### Handling "connector disable" notification
 * Determine which Microsoft Graph connections to delete by querying for all connections using the [External connection List API](graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http).
 * Delete all connections using the [External connection Delete API](graph/api/externalconnectors-externalconnection-delete?view=graph-rest-beta&tabs=http).
-* It is suggested to build resiliency logics to retry connection deletion, so they get completely deleted.
+* We recommend that you build resiliency logic to retry the deleted connection to ensure that it is deleted.
 
-**Request:**
+#### Request
 ```
 POST https://example.com/notificationEndpoint
 Content-type: application/json
@@ -99,7 +99,7 @@ Content-length: 100
 }
 ```
 
-**Response:**
+#### Response
 ```
 HTTP/1.1 202 Accepted
 Content-type: application/json
@@ -113,18 +113,19 @@ Content-length: 0
 >If the notification URL doesn't reply within 30 seconds for more than 10% of the requests from Microsoft Graph over a 10-minute period, all following notifications will be delayed and retried for a period of 4 hours. 
 >If a notification URL doesn't reply within 30 seconds for more than 20% of the requests from Microsoft Graph over a 10-minute period, all following notifications will be dropped.
 
-* Validate the authenticity of **validatonToken**. See [Validating the authenticity of notification](graph/webhooks-with-resource-data?tabs=csharp#validating-the-authenticity-of-notifications).
+* Validate the authenticity of **validatonToken**. For details, see [Validating the authenticity of notification](graph/webhooks-with-resource-data?tabs=csharp#validating-the-authenticity-of-notifications).
 	- Validate the token has not expired.
 	- Validate the token has not been tampered with and was issued by the Microsoft Identity platform.
 	- Check the **appId** claim in the **validationToken** is 0bf30f3b-4a52-48df-9a82-234910c4a086.
 	- Validate the **aud** claim in the **validationToken** to be the same as the "{{Teams-appid}}" you specified.
-**Sample:**
+
+The following shows an example of a validation token.
 ```
 { "typ": "JWT", "alg": "RS256", "x5t": "nOo3ZDrODXEK1jKWhXslHR_KXEg", "kid": "nOo3ZDrODXEK1jKWhXslHR_KXEg" }.{ "aud": "e478830d-8f49-4c26-80c6-58f68e0f064b", "iss": "https://sts.windows.net/9f4ebab6-520d-49c0-85cc-7b25c78d4a93/", "iat": 1624649764, "nbf": 1624649764, "exp": 1624736464, "aio": "E2ZgYGjnuFglnX7mtjJzwR5lYaWvAA==", "appid": "0bf30f3b-4a52-48df-9a82-234910c4a086", "appidacr": "2", "idp": "https://sts.windows.net/9f4ebab6-520d-49c0-85cc-7b25c78d4a93/", "oid": "1e7d79fa-7893-4d50-bdde-164260d9c5ba", "rh": "0.AX0AtrpOnw1SwEmFzHslx41KkzsP8wtSSt9ImoIjSRDEoIZ9AAA.", "sub": "1e7d79fa-7893-4d50-bdde-164260d9c5ba", "tid": "9f4ebab6-520d-49c0-85cc-7b25c78d4a93", "uti": "mIB4QKCeZE6hK71XUHJ3AA", "ver": "1.0" }.[Signature]
 ```
 
 ## Create or delete Microsoft Graph connections 
-You will need to send the **connectorTickets** from the payload you received as a **GraphConnectors-Ticket** header while initiating the creation of the Teams app connection as shown below.
+You will need to send the **connectorTickets** from the payload you received as a **GraphConnectors-Ticket** header while initiating the creation of the Teams app connection as shown in the following example.
 
 **Request:** 
 ```
@@ -146,7 +147,7 @@ Authorization: bearer {{accessToken}}
 ```
 
 >![NOTE]
->{{connectorId}} is the value of **id** property in the manifest. See [app manifest schema for Teams](microsoftteams/platform/resources/schema/manifest-schema) for an example.
+>{{connectorId}} is the value of **id** property in the manifest. For more information, see [App manifest schema for Teams](microsoftteams/platform/resources/schema/manifest-schema).
 
 >![NOTE]
 >You should acquire the {{accessToken}} by talking to [Microsoft Identity Platform (Azure Active Directory)](azure/active-directory/develop/v2-app-types) for the tenant that it is being notified.
@@ -159,14 +160,14 @@ Content-length: 0
 ```
 
 >![NOTE]
->Various Microsoft 365 experiences can be enabled for the connections created. See [Microsoft Graph connectors overview](graph/connecting-external-content-connectors-overview) for more information. 
+>Various Microsoft 365 experiences can be enabled for the connections created. For more details, see [Microsoft Graph connectors overview](graph/connecting-external-content-connectors-overview).
 
-See [Create, update, and delete items added by your application via Microsoft Graph connectors](graph/connecting-external-content-manage-items) to learn how to ingest external items into a working Microsoft Graph connection.
+To learn how to ingest external items into a working Microsoft Graph connection, see [Create, update, and delete items added by your application via Microsoft Graph connectors](graph/connecting-external-content-manage-items).
 
-## Validate the experience by enabling the Microsoft Graph Connector in the Teams admin center
-* Log into [Teams admin center](https://admin.teams.microsoft.com) as a Teams admin or Global admin of the tenant.
-* Click the "Manage apps" blade in the left rail.
-* Navigate to your Teams application
-* On the Teams app's detail page, you will notice a new "Graph Connector" tab which allows an admin to enable or disable the Microsoft Graph connector.
-* Click the toggle button for the simplified admin experience to send the enable or disable notifications to the app's notification endpoint as specified in the Teams app's manifest (by the graphConnector.notificationUrl property).
+## Validate the experience by enabling the Microsoft Graph connector in the Teams admin center
+* Sign in to the [Teams admin center](https://admin.teams.microsoft.com) as a Teams admin or Global admin of the tenant.
+* Select the **Manage apps** blade in the left rail.
+* Navigate to your Teams application.
+* On the detail page of the Teams app, you will notice a new **Graph Connector** tab which allows an admin to enable or disable the Microsoft Graph connector.
+* Select the toggle button to send the enable or disable notifications to the notification endpoint of the app as specified in the app manifest (by the **graphConnector.notificationUrl** property).
 
