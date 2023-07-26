@@ -22,13 +22,13 @@ var requestBody = new Microsoft.Graph.Beta.Me.AssignLicense.AssignLicensePostReq
 		},
 		new AssignedLicense
 		{
-			DisabledPlans = new List<String>
+			DisabledPlans = new List<string>
 			{
 			},
 			SkuId = Guid.Parse("f30db892-07e9-47e9-837c-80727f46fd3d"),
 		},
 	},
-	RemoveLicenses = new List<String>
+	RemoveLicenses = new List<string>
 	{
 	},
 };

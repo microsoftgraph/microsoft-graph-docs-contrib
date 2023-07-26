@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Subscription();
 $requestBody->setChangeType('created,updated,deleted');
@@ -16,7 +16,7 @@ $requestBody->setNotificationUrl('https://webhook.azurewebsites.net/api/send/myN
 
 $requestBody->setResource('/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages?model=B');
 
-$requestBody->setExpirationDateTime(new DateTime('2023-01-10T18:56:49.112603+00:00'));
+$requestBody->setExpirationDateTime(new \DateTime('2023-01-10T18:56:49.112603+00:00'));
 
 $requestBody->setClientState('ClientSecret');
 
