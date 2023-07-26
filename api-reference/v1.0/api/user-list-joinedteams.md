@@ -131,6 +131,7 @@ Content-type: application/json
 - [List all teams](/graph/teams-list-all-teams)
 - [Get team](../api/team-get.md)
 - [List associated teams](../api/associatedteaminfo-list.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 - [List teams](../api/teams-list.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

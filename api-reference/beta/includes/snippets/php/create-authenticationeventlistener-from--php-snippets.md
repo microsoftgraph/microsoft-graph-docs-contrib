@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OnTokenIssuanceStartListener();
-$requestBody->set@odatatype('#microsoft.graph.onTokenIssuanceStartListener');
+$requestBody->setOdataType('#microsoft.graph.onTokenIssuanceStartListener');
 
 $conditions = new AuthenticationConditions();
 $conditionsApplications = new AuthenticationConditionsApplications();
@@ -31,7 +31,7 @@ $requestBody->setConditions($conditions);
 $requestBody->setPriority(500);
 
 $handler = new OnTokenIssuanceStartCustomExtensionHandler();
-$handler->set@odatatype('#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler');
+$handler->setOdataType('#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler');
 
 $handlerCustomExtension = new OnTokenIssuanceStartCustomExtension();
 $handlerCustomExtension->setId('6fc5012e-7665-43d6-9708-4370863f4e6e');
