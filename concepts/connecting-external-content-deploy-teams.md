@@ -7,7 +7,7 @@ doc_type: conceptualPageType
 ms.prod: search
 ---
 
-# Enable the Simplified Admin Experience for your Microsoft Graph connector in the Teams Admin Center
+# Enable the simplified admin experience for your Microsoft Graph connector in the Teams admin center
 
 This article describes how to enable the simplified admin experience for your Microsoft Graph connector in the Teams admin center. When you enable this experience, Teams admins and Global admins can enable or disable your custom Microsoft Graph connector seamlessly in the Teams admin center.
 
