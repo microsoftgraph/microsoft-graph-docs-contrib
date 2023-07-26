@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleEligibilityScheduleRequest();
-$requestBody->setAction(new UnifiedRoleScheduleRequestActions('adminassign'));
+$requestBody->setAction(new UnifiedRoleScheduleRequestActions('adminAssign'));
 
 $requestBody->setJustification('Assign User Admin eligibility to IT Helpdesk (User) group');
 
@@ -21,12 +21,12 @@ $requestBody->setDirectoryScopeId('/');
 $requestBody->setPrincipalId('e77cbb23-0ff2-4e18-819c-690f58269752');
 
 $scheduleInfo = new RequestSchedule();
-$scheduleInfo->setStartDateTime(new DateTime('2021-07-01T00:00:00Z'));
+$scheduleInfo->setStartDateTime(new \DateTime('2021-07-01T00:00:00Z'));
 
 $scheduleInfoExpiration = new ExpirationPattern();
-$scheduleInfoExpiration->setEndDateTime(new DateTime('2022-06-30T00:00:00Z'));
+$scheduleInfoExpiration->setEndDateTime(new \DateTime('2022-06-30T00:00:00Z'));
 
-$scheduleInfoExpiration->setType(new ExpirationPatternType('afterdatetime'));
+$scheduleInfoExpiration->setType(new ExpirationPatternType('afterDateTime'));
 
 
 $scheduleInfo->setExpiration($scheduleInfoExpiration);
