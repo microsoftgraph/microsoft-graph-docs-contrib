@@ -67,8 +67,7 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/
 
 ### Response
 
-The following example response shows the default user synchronization settings before they have been configured or after they have been reset.
-
+The following example response shows the unconfigured (or reset) state of the cross-tenant access policy template for user synchronization settings for multi-tenant organization tenants.
 
 <!-- {
   "blockType": "response",
@@ -90,7 +89,7 @@ Content-Type: application/json
 }
 ```
 
-The following example response shows the user synchronization settings after they have been configured.
+The following example response shows a configured state of the cross-tenant access policy template for user synchronization settings, after inbound user synchronization has been configured.
 
 ``` http
 HTTP/1.1 200 OK

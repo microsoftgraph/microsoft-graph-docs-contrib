@@ -1,6 +1,6 @@
 ---
 title: "multiTenantOrganizationPartnerConfigurationTemplate resource type"
-description: "Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization."
+description: "Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for multi-tenant organization tenants."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,13 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for multi-tenant organization tenants. For more information, see [crossTenantAccessPolicyConfigurationPartner resource type](crosstenantaccesspolicyconfigurationpartner.md).
+Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for multi-tenant organization tenants. Each tenant has its own template. For more information, see [crossTenantAccessPolicyConfigurationPartner resource type](../resources/crosstenantaccesspolicyconfigurationpartner.md).
 
-In its default state, when the template is used to generate a previously non-existent partner policy, the newly generated partner policy is in an unconfigured state.
+* If your tenant is joining a multi-tenant organization, the template is applicable to the partner configuration settings for all multi-tenant organization tenants.
+* If another tenant joins your multi-tenant organization, the template is applicable only to the partner configuration settings of the newly joined multi-tenant organization tenant.
 
-Similarly, in its default state, when the template is used to amend a previously existing partner policy, the previously existing partner policy remains unchanged.
+Whether the template is applied to the partner configuration settings of relevant tenants is configurable with the `templateApplicationLevel` property.
 
-Each tenant has its own template. This template is applied when a tenant joins a multi-tenant organization and when other tenants join a multi-tenant organization.
+* If the template is configured to apply, it is only applied to partner configuration properties where the corresponding template property has a non-null value.
+
+In its default and unconfigured state, where all template properties (other than `templateApplicationLevel`) are null, the template has no effect on partner configuration settings.
 
 ## Methods
 |Method|Return type|Description|
@@ -38,7 +41,7 @@ Each tenant has its own template. This template is applied when a tenant joins a
 |b2bDirectConnectInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner-specific configuration for users from other organizations accessing your resources via Azure B2B direct connect.|
 |b2bDirectConnectOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect.|
 |inboundTrust|[crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md)|Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure AD organizations.|
-|templateApplicationLevel|templateApplicationLevel|Specifies how the template is applied when a tenant joins a multi-tenant organization and when other tenants join a multi-tenant organization. The possible values are: `none`, `newPartners` (default), `existingPartners` (default), `unknownFutureValue`. `none` indicates the template is not applied for new or existing partners. `newPartners` indicates the template is applied for new partners. `existingPartners` indicates the template is applied for existing partners.|
+|templateApplicationLevel|templateApplicationLevel|Specifies whether the template will be applied to partner configuration settings of certain tenants. The possible values are: `none`, `newPartners` (default), `existingPartners` (default), `unknownFutureValue`. `none` indicates the template is not applied to any new or existing partner tenants. `newPartners` indicates the template is applied to new partner tenants. `existingPartners` indicates the template is applied to existing partner tenants, those who already had partner-specific partner configurations in place.|
 
 ## Relationships
 None.

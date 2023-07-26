@@ -1,6 +1,6 @@
 ---
 title: "multiTenantOrganizationIdentitySyncPolicyTemplate resource type"
-description: "Defines an optional cross-tenant access policy template with user synchronization settings for a multi-tenant organization."
+description: "Defines an optional cross-tenant access policy template with user synchronization settings for multi-tenant organization tenants."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,13 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines an optional cross-tenant access policy template with user synchronization settings for multi-tenant organization tenants. For more information, see [crossTenantIdentitySyncPolicyPartner resource type](crosstenantidentitysyncpolicypartner.md).
+Defines an optional cross-tenant access policy template with user synchronization settings for multi-tenant organization tenants. Each tenant has its own template. For more information, see [crossTenantIdentitySyncPolicyPartner resource type](crosstenantidentitysyncpolicypartner.md).
 
-In its default state, when the template is used to generate a previously non-existent identity synchronization policy, the newly generated identity synchronization policy is in an unconfigured state.
+* If your tenant is joining a multi-tenant organization, the template is applicable to the user synchronization settings for all multi-tenant organization tenants.
+* If another tenant joins your multi-tenant organization, the template is applicable only to the user synchronization settings of the newly joined multi-tenant organization tenant.
 
-Similarly, in its default state, when the template is used to amend a previously existing identity synchronization policy, the previously existing identity synchronization policy remains unchanged.
+Whether the template is applied to the user synchronization settings of relevant tenants is configurable with the `templateApplicationLevel` property.
 
-Each tenant has its own template. This template is applied when a tenant joins a multi-tenant organization and when other tenants join a multi-tenant organization.
+* If the template is configured to apply, it is only applied to user synchronization properties where the corresponding template property has a non-null value.
+
+In its default and unconfigured state, where all template properties (other than `templateApplicationLevel`) are null, the template has no effect on user synchronization settings.
 
 ## Methods
 |Method|Return type|Description|
@@ -32,7 +35,7 @@ Each tenant has its own template. This template is applied when a tenant joins a
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|ID of the template. Key.|
-|templateApplicationLevel|templateApplicationLevel|Specifies how the template is applied when a tenant joins a multi-tenant organization and when other tenants join a multi-tenant organization. The possible values are: `none`, `newPartners` (default), `existingPartners` (default), `unknownFutureValue`. `none` indicates the template is not applied for new or existing partners. `newPartners` indicates the template is applied for new partners. `existingPartners` indicates the template is applied for existing partners.|
+|templateApplicationLevel|templateApplicationLevel|Specifies whether the template will be applied to user synchronization settings of certain tenants. The possible values are: `none`, `newPartners` (default), `existingPartners` (default), `unknownFutureValue`. `none` indicates the template is not applied to any new or existing partner tenants. `newPartners` indicates the template is applied to new partner tenants. `existingPartners` indicates the template is applied to existing partner tenants, those who already had partner-specific user synchronization settings in place.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Defines whether users can be synchronized from the partner tenant.|
 
 ## Relationships

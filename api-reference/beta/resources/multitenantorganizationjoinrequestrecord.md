@@ -15,10 +15,6 @@ Namespace: microsoft.graph
 
 Defines the status of a tenant joining a multi-tenant organization. Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization the administrator of the tenant must join the multi-tenant organization.
 
-A multi-tenant organization can have a maximum of 100,000 internal users per active tenant. This limit is applied at the time a pending tenant joins an multi-tenant organization.
-
-Cross-tenant access partner configurations and identity synchronization policies are required between all tenant pairs in a multi-tenant organization. Partner configurations and synchronization policies are auto generated, if needed, at the time pending tenants join a multi-tenant organization.
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

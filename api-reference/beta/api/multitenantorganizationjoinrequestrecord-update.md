@@ -12,7 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Join a multi-tenant organization after the owner of the multi-tenant organization has [added your tenant to the multi-tenant organization](../api/multitenantorganization-post-tenants.md). Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the tenant must join the multi-tenant organization.
+Join a multi-tenant organization, after the owner of the multi-tenant organization has added your tenant to the multi-tenant organization as pending.
+
+Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the joining tenant must submit a join request.
+
+To allow for asynchronous processing, you must wait a **minimum of 2 hours** between creation and joining a multi-tenant organization.
+
+Furthermore, to allow for asynchronous processing, you must wait **up to 4 hours** before joining a multi-tenant organization is completed.
+
+If you have never manipulated your [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview), refrain from manipulating any cross-tenant access settings for **up to 4 hours** while the join request is processing.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

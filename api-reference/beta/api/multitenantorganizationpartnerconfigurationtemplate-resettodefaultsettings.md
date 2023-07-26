@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 Reset the cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization to the default values.
 
-In its default state, when the template is used to generate a previously non-existent partner policy, the newly generated partner policy is in an unconfigured state.
-
-Similarly, in its default state, when the template is used to amend a previously existing partner policy, the previously existing partner policy remains unchanged.
+In its reset state, the template has no impact on partner configuration settings, other than that an unconfigured partner configuration is created if needed, for every multi-tenant organization tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
