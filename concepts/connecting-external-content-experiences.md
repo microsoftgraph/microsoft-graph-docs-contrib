@@ -48,7 +48,7 @@ To make sure that Microsoft 365 Copilot uses your content effectively:
 ## Microsoft 365 Hub 
 The [Microsoft 365 Hub](https://office.com) with Microsoft Graph connectors allows your data to be discoverable from [Microsoft365.com](https://www.microsoft365.com/) under **Quick Access** and **My Content**. This helps users find all the content that is important to them in one place. 
 
-To configure your connector for the [Microsoft 365 Hub]((https://office.com):
+To configure your connector for the [Microsoft 365 Hub](https://office.com):
 - Apply the following [semantic labels](/graph/connecting-external-content-manage-schema#semantic-labels) to your [schema](/graph/api/resources/externalconnectors-schema): `title`, `url`, `iconUrl`. These labels determine which properties are displayed in the experience.
 - Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. or a list of supported activity types, see [externalactivity](/graph/api/resources/externalconnectors-externalactivity). These activities indicate to the platform which users have interacted most recently with which items. Items with activities performed by a given user have a higher likelihood of being displayed to that user in the experience.
 - Add a [urlToItemrResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](/graph/api/resources/externalconnectors-activitysettings) when you [create your connection](/graph/connecting-external-content-manage-connections#create-a-connection). A `urlToItemResolver` will enable the platform to detect when users share URLs from your external content with each other. The experience will have a higher likelihood of displaying content that has been shared with that user.
