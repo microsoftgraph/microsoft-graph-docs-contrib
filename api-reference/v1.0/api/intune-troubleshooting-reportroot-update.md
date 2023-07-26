@@ -72,7 +72,7 @@ Content-length: 52
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.reportRoot" }-->
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph." }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -83,3 +83,7 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
+
+
+
+

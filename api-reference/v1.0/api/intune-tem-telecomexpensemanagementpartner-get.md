@@ -63,28 +63,24 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/telecomExpenseManagementPa
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-php-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
