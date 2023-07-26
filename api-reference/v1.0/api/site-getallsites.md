@@ -35,7 +35,7 @@ GET /sites/getAllSites
 
 ## Examples
 
-### Example 1: Initial Request
+### Example 1: Initial request
 
 #### Request
 
@@ -94,7 +94,7 @@ Content-type: application/json
 
 This response includes the first page of enumerated sites, and the @odata.nextLink property indicates that there are more items available in the current set of items. Your app should continue to request the URL value of @odata.nextLink until all pages of items have been retrieved.
 
-### Example 2: Subsequent Request
+### Example 2: Subsequent request
 
 #### Request
 
