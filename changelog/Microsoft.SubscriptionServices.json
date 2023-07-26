@@ -25,7 +25,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printer",
           "ChangeType": "Addition",
-          "Description": "Added the **printer** resource to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta\u0026preserve-view=true) entity.",
+          "Description": "Added the **printer** resource to the [subscription](https://learn.microsoft.com/en-us//graph/api/resources/subscription?view=graph-rest-beta) entity.",
           "Target": "subscription"
         },
         {
@@ -33,7 +33,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printTaskDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the **printTaskDefinition** resource to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta\u0026preserve-view=true) entity.",
+          "Description": "Added the **printTaskDefinition** resource to the [subscription](https://learn.microsoft.com/en-us//graph/api/resources/subscription?view=graph-rest-beta) entity.",
           "Target": "subscription"
         }
       ],
@@ -51,7 +51,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printer",
           "ChangeType": "Addition",
-          "Description": "Added the **printer** resource to the [subscription](/graph/api/resources/subscription?view=graph-rest-v1.0\u0026preserve-view=true) entity.",
+          "Description": "Added the **printer** resource to the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) entity.",
           "Target": "subscription"
         },
         {
@@ -59,7 +59,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printTaskDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the **printTaskDefinition** resource to the [subscription](/graph/api/resources/subscription?view=graph-rest-v1.0\u0026preserve-view=true) entity.",
+          "Description": "Added the **printTaskDefinition** resource to the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) entity.",
           "Target": "subscription"
         }
       ],
@@ -77,7 +77,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "notificationContentType",
           "ChangeType": "Addition",
-          "Description": "Added the **notificationContentType** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **notificationContentType** property to the [subscription](https://learn.microsoft.com/en-us//graph/api/resources/subscription?view=graph-rest-beta) entity",
           "Target": "subscription"
         },
         {
@@ -85,7 +85,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "notificationQueryOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **notificationQueryOptions** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **notificationQueryOptions** property to the [subscription](https://learn.microsoft.com/en-us//graph/api/resources/subscription?view=graph-rest-beta) entity",
           "Target": "subscription"
         }
       ],
@@ -103,7 +103,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "notificationContentType",
           "ChangeType": "Addition",
-          "Description": "Added the **notificationContentType** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **notificationContentType** property to the [subscription](https://learn.microsoft.com/en-us//graph/api/resources/subscription?view=graph-rest-beta) entity",
           "Target": "subscription"
         },
         {
@@ -111,7 +111,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "notificationQueryOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **notificationQueryOptions** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Description": "Added the **notificationQueryOptions** property to the [subscription](https://learn.microsoft.com/en-us//graph/api/resources/subscription?view=graph-rest-beta) entity.",
           "Target": "subscription"
         }
       ],
@@ -209,7 +209,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "change notifications delivered via Event Hub",
           "ChangeType": "Addition",
-          "Description": "Added the ability to get [change notifications delivered via Event Hub](change-notifications-delivery.md).",
+          "Description": "Added the ability to get [change notifications delivered via Event Hub](https://learn.microsoft.com/en-us/graph/change-notifications-delivery-event-hubs).",
           "Target": "change notifications delivered via Event Hub"
         }
       ],
@@ -263,7 +263,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "changeNotification,changeNotificationCollection,resourceData,change notification",
           "ChangeType": "Addition",
-          "Description": "Added the [changeNotification](https://learn.microsoft.com/en-us/graph/api/resources/changenotification), [changeNotificationCollection](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationcollection), and [resourceData](https://learn.microsoft.com/en-us/graph/api/resources/resourcedata) resources to the [change notification](https://learn.microsoft.com/en-us/graph/api/concepts/webhooks) API.",
+          "Description": "Added the [changeNotification](https://learn.microsoft.com/en-us/graph/api/resources/changenotification?view=graph-rest-1.0), [changeNotificationCollection](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationcollection?view=graph-rest-1.0), and [resourceData](https://learn.microsoft.com/en-us/graph/api/resources/resourcedata?view=graph-rest-1.0) resources to the [change notification](https://learn.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-beta) API.",
           "Target": "changeNotification,changeNotificationCollection,resourceData,change notification"
         }
       ],
@@ -281,7 +281,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "changeNotification,changeNotificationCollection,changeNotificationEncryptedContent,change notification",
           "ChangeType": "Addition",
-          "Description": "Added the [changeNotification](https://learn.microsoft.com/en-us/graph/api/resources/changenotification?view=graph-rest-beta), [changeNotificationCollection](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationcollection?view=graph-rest-beta), and [changeNotificationEncryptedContent](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationencryptedcontent?view=graph-rest-beta) resources for the [change notification](https://learn.microsoft.com/en-us/graph/api/concepts/webhooks) API.",
+          "Description": "Added the [changeNotification](https://learn.microsoft.com/en-us/graph/api/resources/changenotification?view=graph-rest-beta), [changeNotificationCollection](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationcollection?view=graph-rest-beta), and [changeNotificationEncryptedContent](https://learn.microsoft.com/en-us/graph/api/resources/changenotificationencryptedcontent?view=graph-rest-beta) resources for the [change notification](https://learn.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-beta) API.",
           "Target": "changeNotification,changeNotificationCollection,changeNotificationEncryptedContent,change notification"
         }
       ],
@@ -299,7 +299,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "subscription,Microsoft Cloud for US Government",
           "ChangeType": "Addition",
-          "Description": "Added support for [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) in [Microsoft Cloud for US Government](deployments.md).",
+          "Description": "Added support for [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) in [Microsoft Cloud for US Government](https://learn.microsoft.com/en-us/graph/deployments).",
           "Target": "subscription,Microsoft Cloud for US Government"
         }
       ],
@@ -317,7 +317,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "chatMessage,Set up change notifications for chat messages, including message properties (preview)",
           "ChangeType": "Addition",
-          "Description": "Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](webhooks-with-resource-data.md).",
+          "Description": "Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](https://learn.microsoft.com/en-us/graph/webhooks-with-resource-data).",
           "Target": "chatMessage,Set up change notifications for chat messages, including message properties (preview)"
         }
       ],
@@ -369,7 +369,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "subscriptionRemoved,missed",
           "ChangeType": "Addition",
-          "Description": "Added two types of lifecycle notifications, **subscriptionRemoved** and **missed**, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](webhooks-lifecycle.md).",
+          "Description": "Added two types of lifecycle notifications, **subscriptionRemoved** and **missed**, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](https://learn.microsoft.com/en-us/graph/webhooks-lifecycle).",
           "Target": "Reduce missing subscriptions and notifications for Outlook resources (preview)"
         }
       ],
@@ -395,7 +395,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Create and publish notification",
           "ChangeType": "Addition",
-          "Description": "Added the [Create and publish notification](https://learn.microsoft.com/en-us/graph/api/projectrome_notification_post?view=graph-rest-beta) API.",
+          "Description": "Added the **Create and publish notification** API.",
           "Target": "Create and publish notification"
         }
       ],
