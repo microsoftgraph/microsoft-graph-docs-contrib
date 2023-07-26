@@ -50,7 +50,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get site for a group]: ../api/site-get.md
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
-[List pages]: ../api/sitepage-list.md
+[List pages]: ../api/baseSitePage-list.md
 [List root sites]: ../api/site-list.md
 [List root sites across geographies]: ../api/site-getallsites.md
 [Search for sites]: ../api/site-search.md
@@ -109,7 +109,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **items**           | Collection([baseItem][])                                                        | Used to address any item contained in this site. This collection cannot be enumerated.                                                     |
 | **lists**           | Collection([list][])                                                            | The collection of lists under this site.                                                                                                   |
 | **operations**      | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long running operations for the site.                                                                                    |
-| **pages**           | Collection([sitePage][])                                                        | The collection of pages in the SitePages list in this site.                                                                                |
+| **pages**           | Collection([baseSitePage][])                                                        | The collection of pages in the baseSitePages list in this site.                                                                                |
 | **permissions**     | Collection([permission][])                                                      | The permissions associated with the site. Nullable.                                                                                        |
 | **sites**           | Collection([site][])                                                            | The collection of the sub-sites under this site.                                                                                           |
 | **termStore**       | [microsoft.graph.termStore.store]                                               | The termStore under this site.                                                                                                             |
@@ -123,7 +123,7 @@ The `root` identifier always references the root site for a given target, as fol
 [itemAnalytics]: itemanalytics.md
 [list]: list.md
 [permission]: permission.md
-[sitePage]: sitepage.md
+[baseSitePage]: baseSitePage.md
 [root]: root.md
 [site]: site.md
 [siteSettings]: sitesettings.md

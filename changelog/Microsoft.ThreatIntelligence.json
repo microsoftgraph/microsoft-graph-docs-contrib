@@ -263,8 +263,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-06-27T14:08:23.7878701Z",
-      "WorkloadArea": "Microsoft.ThreatIntelligence",
-      "SubArea": ""
+      "WorkloadArea": "Security",
+      "SubArea": "Threat intelligence"
     },
     {
       "ChangeList": [
@@ -313,8 +313,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-06-26T17:53:19.4436751Z",
-      "WorkloadArea": "Microsoft.ThreatIntelligence",
-      "SubArea": ""
+      "WorkloadArea": "Security",
+      "SubArea": "Threat intelligence"
     },
     {
       "ChangeList": [
@@ -381,46 +381,14 @@
           "ChangeType": "Deletion",
           "Description": "Removed the `sponsorStates` property from the [intelligenceProfile](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfile?view=graph-rest-beta) resource.",
           "Target": "intelligenceProfile"
-        },
-        {
-          "Id": "b51abfa7-f2cd-43d5-bba2-5d0c1ea4c857",
-          "ApiChange": "PropertyPath",
-          "ChangedApiName": "Org.OData.Capabilities.V1.FilterRestrictions",
-          "ChangeType": "Addition",
-          "Description": "Added the [Org.OData.Capabilities.V1.FilterRestrictions](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
-          "Target": "microsoft.graph.security.intelligenceProfile"
-        },
-        {
-          "Id": "b51abfa7-f2cd-43d5-bba2-5d0c1ea4c857",
-          "ApiChange": "PropertyPath",
-          "ChangedApiName": "Org.OData.Capabilities.V1.FilterRestrictions",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **Org.OData.Capabilities.V1.FilterRestrictions** resource type",
-          "Target": "microsoft.graph.security.intelligenceProfile"
-        },
-        {
-          "Id": "b51abfa7-f2cd-43d5-bba2-5d0c1ea4c857",
-          "ApiChange": "PropertyPath",
-          "ChangedApiName": "Org.OData.Capabilities.V1.SortRestrictions",
-          "ChangeType": "Addition",
-          "Description": "Added the [Org.OData.Capabilities.V1.SortRestrictions](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
-          "Target": "microsoft.graph.security.intelligenceProfile"
-        },
-        {
-          "Id": "b51abfa7-f2cd-43d5-bba2-5d0c1ea4c857",
-          "ApiChange": "PropertyPath",
-          "ChangedApiName": "Org.OData.Capabilities.V1.SortRestrictions",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **Org.OData.Capabilities.V1.SortRestrictions** resource type",
-          "Target": "microsoft.graph.security.intelligenceProfile"
         }
       ],
       "Id": "b51abfa7-f2cd-43d5-bba2-5d0c1ea4c857",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-06-21T16:07:22.3800213Z",
-      "WorkloadArea": "Microsoft.ThreatIntelligence",
-      "SubArea": ""
+      "WorkloadArea": "Security",
+      "SubArea": "Threat intelligence"
     },
     {
       "ChangeList": [
@@ -670,7 +638,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-03-27T02:39:03.2321081Z",
       "WorkloadArea": "Security",
-      "SubArea": ""
+      "SubArea": "Threat intelligence"
     }
   ]
 }
