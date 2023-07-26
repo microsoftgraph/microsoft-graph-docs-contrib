@@ -19,7 +19,7 @@ Retrieving the transcript returns the metadata of the single transcript associat
 
 > [!NOTE]
 >
-> * This is a metered API. For more information, see [payment models for meeting APIs](../concepts/teams-licenses.md#payment-models-for-meeting-apis).
+> * This is a metered API. For more information, see [payment models for meeting APIs](/graph/teams-licenses.md#payment-models-for-meeting-apis).
 > * This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions
