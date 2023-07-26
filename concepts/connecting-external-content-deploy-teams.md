@@ -51,15 +51,16 @@ When the admin turns **on** or **off** the Microsoft Graph connector from the Te
 Learn how to [Set up notifications for changes in resource data](graph/webhooks#change-notifications). See a sample payload below.
 ![sample payload for Microsoft Graph webhook notification](images/connectors-images/samplepayload-webhooknotif-TAC.png)
 
-To understand how to go about validating the inbound change notification, see [this section](graph/webhooks-with-resource-data#validating-the-authenticity-of-notifications).
+To understand how to go about validating the inbound change notification, see [Validating the authenticity of notifications](graph/webhooks-with-resource-data#validating-the-authenticity-of-notifications).
 
 Here are some tips to remember:
-* **SubscriptionExpirationDateTime** and **SubscriptionId** properties can be ignored.
-* The change notification is for Microsoft Graph connector management only when the resource data's @odata.type matches the one in the sample payload above.
-* The **tenantId** identified is the customer's tenant Id. When calling the Microsoft Graph API to [manage Microsoft Graph connections](graph/connecting-external-content-manage-connections), you must generate the app token on behalf of this customer's tenant Id. 
+* You can ignore **SubscriptionExpirationDateTime** and **SubscriptionId**.
+* The change notification is for Microsoft Graph connector management only when the resource data's @odata.type matches the one in the sample payload.
+* The **tenantId** identified is the customer's tenant ID. When calling the Microsoft Graph API to [manage Microsoft Graph connections](graph/connecting-external-content-manage-connections), you must generate the app token on behalf of this customer's tenant ID. 
 * Within **resourceData**, use **state** to determine whether to create or delete connections. **connectorsTicket** is needed when creating the connections.
 
 ### Handling "connector enable" notification
+To handle "connector enable" notifications:
 * Determine which Microsoft Graph connections to create (i.e. how many, each with which schema) by querying for all connections using the [External connection List API](graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http). Determine whether to create all connections from scratch, resume creation of connections (in resiliency flow), or no-op (when all desired connections are already in the **ready** state).
 * Normally, [the connection](graph/api/externalconnectors-external-post-connections?view=graph-rest-beta&tabs=http) is created to **draft** state. Pass the **connectorsTicket** opaque encoded string to the connection creation API in this HTTP header **GraphConnectors-Ticket**.
 * Then [register the schema](graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&tabs=http). 
