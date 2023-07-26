@@ -14,7 +14,7 @@ const workbookTableRow = {
   values: [[“east”, “pear”, 4]]
 };
 
-await client.api('/me/drive/items/{id}/workbook/tables/Table1/rows/add')
+await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/add')
 	.post(workbookTableRow);
 
 ```

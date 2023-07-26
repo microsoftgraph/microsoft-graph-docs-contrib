@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->directoryRoles()->byDirectoryRoleId('directoryRole-id')->members()->byMemberId('directoryObject-id')->ref()->delete();
+$graphServiceClient->directoryRoles()->byDirectoryRoleId('directoryRole-id')->members()->byDirectoryObjectId('directoryObject-id')->ref()->delete();
 
 
 ```
