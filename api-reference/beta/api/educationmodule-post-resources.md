@@ -271,7 +271,6 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
   "name": "create_educationexcelresource_from_educationmodule"
 }-->
 ```http
