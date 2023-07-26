@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /communications/callRecords/getPstnCalls
+GET /communications/callRecords/getPstnCalls(fromDateTime={fromDateTime},toDateTime={toDateTime})
 ```
 
 ## Function parameters
@@ -56,7 +56,7 @@ The following table shows the parameters that can be used with this function.
 ## Response
 
 If successful, this function returns a `200 OK` response code and a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries in the response body.
-  
+
 If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries. The last page in the date range does not have `@odata.NextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Example
@@ -123,7 +123,8 @@ HTTP/1.1 200 OK
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.callRecords.pstnCallLogRow)",
     "@odata.count": 1000,
-    "value": [{
+    "value": [
+        {
             "id": "9c4984c7-6c3c-427d-a30c-bd0b2eacee90",
             "callId": "1835317186_112562680@61.221.3.176",
             "userId": "db03c14b-06eb-4189-939b-7cbf3a20ba27",
@@ -132,22 +133,23 @@ HTTP/1.1 200 OK
             "startDateTime": "2019-11-01T00:00:08.2589935Z",
             "endDateTime": "2019-11-01T00:03:47.2589935Z",
             "duration": 219,
-            "charge": 0.00,
+            "charge": 0,
             "callType": "user_in",
             "currency": "USD",
             "calleeNumber": "+1234567890",
             "usageCountryCode": "US",
             "tenantCountryCode": "US",
-            "connectionCharge": 0.00,
+            "connectionCharge": 0,
             "callerNumber": "+0123456789",
             "destinationContext": null,
             "destinationName": "United States",
             "conferenceId": null,
             "licenseCapability": "MCOPSTNU",
             "inventoryType": "Subscriber",
-			"operator": "Microsoft",
-			"callDurationSource": "microsoft"
-        }],
+            "operator": "Microsoft",
+            "callDurationSource": "microsoft"
+        }
+    ],
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000"
 }
 ```
