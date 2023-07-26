@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RedirectPostRequestBody();
 $targetsInvitationParticipantInfo1 = new InvitationParticipantInfo();
-$targetsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.invitationParticipantInfo');
+$targetsInvitationParticipantInfo1->setOdataType('#microsoft.graph.invitationParticipantInfo');
 
 $targetsInvitationParticipantInfo1Identity = new IdentitySet();
-$targetsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
+$targetsInvitationParticipantInfo1Identity->setOdataType('#microsoft.graph.identitySet');
 
 $targetsInvitationParticipantInfo1IdentityApplication = new Identity();
-$targetsInvitationParticipantInfo1IdentityApplication->set@odatatype('#microsoft.graph.identity');
+$targetsInvitationParticipantInfo1IdentityApplication->setOdataType('#microsoft.graph.identity');
 
 $targetsInvitationParticipantInfo1IdentityApplication->setDisplayName('test bot 2');
 

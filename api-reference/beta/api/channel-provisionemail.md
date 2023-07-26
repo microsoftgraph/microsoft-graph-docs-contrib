@@ -19,6 +19,9 @@ Microsoft Teams doesn't automatically provision an email address for a **channel
 
 To remove the email address of a **channel**, use the [removeEmail](channel-removeemail.md) method.
 
+> **Notes**: 
+> This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

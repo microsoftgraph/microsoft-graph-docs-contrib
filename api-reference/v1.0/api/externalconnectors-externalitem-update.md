@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /external/connections/{connection-id}/items/{item-id}
+PUT /external/connections/{connection-id}/items/{item-id}
 ```
 
 ## Path parameters
@@ -81,7 +81,7 @@ If successful, this method returns a `200 OK` response code and an updated [exte
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
+PUT https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 Content-Type: application/json
 
 {

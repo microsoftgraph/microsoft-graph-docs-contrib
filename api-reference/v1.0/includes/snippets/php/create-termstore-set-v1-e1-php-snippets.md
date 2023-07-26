@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Set();
-$requestBody->set@odatatype('#microsoft.graph.termStore.set');
+$requestBody->setOdataType('#microsoft.graph.termStore.set');
 
 $parentGroup = new Group();
 $parentGroup->setId('fc733b51-10f1-40fd-b784-dc6d1e42804b');

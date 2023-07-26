@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Workflow();
 $requestBody->setDisplayName('Onboard pre-hire employee');
@@ -19,19 +19,19 @@ $requestBody->setIsEnabled(true);
 $requestBody->setIsSchedulingEnabled(false);
 
 $executionConditions = new TriggerAndScopeBasedConditions();
-$executionConditions->set@odatatype('microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
+$executionConditions->setOdataType('microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
 
 $executionConditionsScope = new RuleBasedSubjectSet();
-$executionConditionsScope->set@odatatype('microsoft.graph.identityGovernance.ruleBasedSubjectSet');
+$executionConditionsScope->setOdataType('microsoft.graph.identityGovernance.ruleBasedSubjectSet');
 
 $executionConditionsScope->setRule('(department eq \'Sales\')');
 
 
 $executionConditions->setScope($executionConditionsScope);
 $executionConditionsTrigger = new TimeBasedAttributeTrigger();
-$executionConditionsTrigger->set@odatatype('microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
+$executionConditionsTrigger->setOdataType('microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
 
-$executionConditionsTrigger->setTimeBasedAttribute(new WorkflowTriggerTimeBasedAttribute('employeehiredate'));
+$executionConditionsTrigger->setTimeBasedAttribute(new WorkflowTriggerTimeBasedAttribute('employeeHireDate'));
 
 $executionConditionsTrigger->setOffsetInDays(-2);
 

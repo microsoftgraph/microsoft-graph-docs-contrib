@@ -19,7 +19,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 	{
 		OdataType = "#microsoft.graph.identityGovernance.onDemandExecutionOnly",
 	},
-	Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.Task>
+	Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject>
 	{
 		new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
 		{
