@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TenantCustomizedInformation();
-$requestBody->set@odatatype('#microsoft.graph.managedTenants.tenantCustomizedInformation');
+$requestBody->setOdataType('#microsoft.graph.managedTenants.tenantCustomizedInformation');
 
 $requestBody->setTenantId('String');
 
 $contactsTenantContactInformation1 = new TenantContactInformation();
-$contactsTenantContactInformation1->set@odatatype('microsoft.graph.managedTenants.tenantContactInformation');
+$contactsTenantContactInformation1->setOdataType('microsoft.graph.managedTenants.tenantContactInformation');
 
 $contactsTenantContactInformation1->setName('String');
 
@@ -36,7 +36,7 @@ $requestBody->setWebsite('String');
 
 
 
-$result = $graphServiceClient->tenantRelationships()->managedTenants()->tenantsCustomizedInformation()->byTenantsCustomizedInformation()Id('tenantCustomizedInformation-id')->patch($requestBody);
+$result = $graphServiceClient->tenantRelationships()->managedTenants()->tenantsCustomizedInformation()->byTenantCustomizedInformationId('tenantCustomizedInformation-id')->patch($requestBody);
 
 
 ```

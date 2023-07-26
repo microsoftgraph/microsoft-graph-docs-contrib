@@ -20,7 +20,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Update accessPackageSubject](../api/accesspackagesubject-update.md)|None | Update the properties of an **accesspackagesubject** object. |
-| [Get accessPackageSubject](../api/accesspackagesubject-get.md)|None | Get the properties of an **accesspackagesubject** object. |
+| [Get accessPackageSubject](../api/accesspackagesubject-get.md)|[accessPackageSubject](../resources/accesspackagesubject.md) | Get the properties of an **accesspackagesubject** object. |
 
 ## Properties
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents subscriptions for a tenant.
+Represents a commercial subscription for a tenant.
 
 Inherits from [entity](entity.md).
 

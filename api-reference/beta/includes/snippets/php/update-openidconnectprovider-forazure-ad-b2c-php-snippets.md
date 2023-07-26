@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SocialIdentityProvider();
-$requestBody->set@odatatype('#microsoft.graph.socialIdentityProvider');
+$requestBody->setOdataType('#microsoft.graph.socialIdentityProvider');
 
 $additionalData = [
 		'responseType' => 'id_token', 
@@ -20,7 +20,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->identity()->identityProviders()->byIdentityProviderId('identityProviderBase-id')->patch($requestBody);
+$result = $graphServiceClient->identity()->identityProviders()->byIdentityProviderBaseId('identityProviderBase-id')->patch($requestBody);
 
 
 ```

@@ -310,7 +310,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-03-09T00:00:00.601897Z",
       "WorkloadArea": "Reports",
-      "SubArea": "Azure AD activity reports"
+      "SubArea": "Identity and access reports"
     },
     {
       "ChangeList": [
@@ -561,7 +561,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-04-03T18:36:38.2731454Z",
       "WorkloadArea": "Reports",
-      "SubArea": "Azure AD activity reports"
+      "SubArea": "Identity and access reports"
     },
     {
          "ChangeList": [

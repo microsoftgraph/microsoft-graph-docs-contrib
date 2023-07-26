@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the [
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| clientId | String | The **id** of the client [service principal](../resources/serviceprincipal.md) for the application which is authorized to act on behalf of a signed-in user when accessing an API. Required.  |
+| clientId | String | The object **id** (*not* **appId**) of the client [service principal](../resources/serviceprincipal.md) for the application which is authorized to act on behalf of a signed-in user when accessing an API. Required.  |
 | consentType | String | Indicates whether authorization is granted for the client application to impersonate all users or only a specific user. *AllPrincipals* indicates authorization to impersonate all users. *Principal* indicates authorization to impersonate a specific user. Consent on behalf of all users can be granted by an administrator. Non-admin users may be authorized to consent on behalf of themselves in some cases, for some delegated permissions. Required.  |
 | principalId | String | The **id** of the [user](../resources/user.md) on behalf of whom the client is authorized to access the resource, when **consentType** is *Principal*. If **consentType** is *AllPrincipals* this value is null. Required when **consentType** is *Principal*. |
 | resourceId | String | The **id** of the resource [service principal](../resources/serviceprincipal.md) to which access is authorized. This identifies the API which the client is authorized to attempt to call on behalf of a signed-in user. |
