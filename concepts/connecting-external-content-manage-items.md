@@ -65,7 +65,7 @@ When content in your data source changes, you must sync it with your connection 
 
 The activities component is a transient property that is used to send [activities](/graph/api/resources/externalconnectors-externalactivity) on the item. You can **only** write to this property. 
 
-An activity consists of an actor (who performed the activity), a time (when the activity was performed), and an activity type (what type of activity was performed). The activity types that are currently supported can be found in the **Description** section of the `type` property for an [externalActivity](/graph/api/resources/externalconnectors-externalactivity). 
+An activity consists of an actor (who performed the activity), a time (when the activity was performed), and an activity type (what type of activity was performed). The activity types that are currently supported can be found in the **Description** section of the **type** property for an [externalActivity](/graph/api/resources/externalconnectors-externalactivity). 
 
 Sending activities on the item powers intelligent recommendation experiences across Microsoft 365. End users will be able to receive content tailored to them based on the activities that are sent. 
 
