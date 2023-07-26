@@ -77,7 +77,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "notificationContentType",
           "ChangeType": "Addition",
-          "Description": "Added the **notificationContentType** property to the [subscription](https://learn.microsoft.com/en-us//graph/api/resources/subscription?view=graph-rest-beta) entity",
+          "Description": "Added the **notificationContentType** property to the [subscription](https://learn.microsoft.com/en-us//graph/api/resources/subscription?view=graph-rest-beta) entity.",
           "Target": "subscription"
         },
         {
@@ -85,7 +85,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "notificationQueryOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **notificationQueryOptions** property to the [subscription](https://learn.microsoft.com/en-us//graph/api/resources/subscription?view=graph-rest-beta) entity",
+          "Description": "Added the **notificationQueryOptions** property to the [subscription](https://learn.microsoft.com/en-us//graph/api/resources/subscription?view=graph-rest-beta) entity.",
           "Target": "subscription"
         }
       ],
@@ -103,7 +103,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "notificationContentType",
           "ChangeType": "Addition",
-          "Description": "Added the **notificationContentType** property to the [subscription](https://learn.microsoft.com/en-us//graph/api/resources/subscription?view=graph-rest-beta) entity",
+          "Description": "Added the **notificationContentType** property to the [subscription](https://learn.microsoft.com/en-us//graph/api/resources/subscription?view=graph-rest-beta) entity.",
           "Target": "subscription"
         },
         {
