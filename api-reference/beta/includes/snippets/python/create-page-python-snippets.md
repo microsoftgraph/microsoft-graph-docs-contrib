@@ -8,6 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 request_body = SitePage()
+request_body.@odata_type = '#microsoft.graph.sitePage'
+
 request_body.name = 'test.aspx'
 
 request_body.title = 'test'

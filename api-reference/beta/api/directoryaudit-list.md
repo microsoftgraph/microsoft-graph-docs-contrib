@@ -37,28 +37,7 @@ GET /auditLogs/directoryAudits
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response. For details about how to use this parameters, see [OData query parameters](/graph/query-parameters).
-
-|Parameter     |Description                            |Example|
-|:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](/graph/query-parameters#filter-parameter)|Filters results (rows). |`/auditLogs/directoryAudits?$filter=activityDateTime le 2018-01-24`<br>`/auditLogs/directoryAudits?$filter=targetResources/any(x: startswith(x/displayName, 'def'))` |
-|[$top](/graph/query-parameters#top-parameter)|Sets the page size of results.|`/auditLogs/directoryAudits?$top=1`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
-
-### Attributes supported by $filter parameter
-
-|Attribute        |Supported operators|
-|:----------------|:------|
-|activityDisplayName| eq, startswith|
-|activityDateTime| eq, ge, le|
-|loggedByService|eq|
-|initiatedBy/user/id|eq|
-|initiatedBy/user/displayName| eq|
-|initiatedBy/user/userPrincipalName| eq, startswith|
-|initiatedBy/app/appId| eq|
-|initiatedBy/app/displayName| eq|
-|targetResources/any(t: t/id)| eq|
-|targetResources/any(t:t/displayName)| eq, startswith|
+This method supports the `$filter` (`eq`, `ge`, `le`, `startswith`), `$top`, `$orderby`, and `skiptoken` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

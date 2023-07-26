@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OAuth2PermissionGrant();
 $requestBody->setClientId('ef969797-201d-4f6b-960c-e9ed5f31dab5');
@@ -18,9 +18,9 @@ $requestBody->setResourceId('943603e4-e787-4fe9-93d1-e30f749aae39');
 
 $requestBody->setScope('DelegatedPermissionGrant.ReadWrite.All');
 
-$requestBody->setStartTime(new DateTime('2022-03-17T00:00:00Z'));
+$requestBody->setStartTime(new \DateTime('2022-03-17T00:00:00Z'));
 
-$requestBody->setExpiryTime(new DateTime('2023-03-17T00:00:00Z'));
+$requestBody->setExpiryTime(new \DateTime('2023-03-17T00:00:00Z'));
 
 
 

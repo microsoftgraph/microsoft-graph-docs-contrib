@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Application();
 $keyCredentialsKeyCredential1 = new KeyCredential();
-$keyCredentialsKeyCredential1->setEndDateTime(new DateTime('2024-01-11T15:31:26Z'));
+$keyCredentialsKeyCredential1->setEndDateTime(new \DateTime('2024-01-11T15:31:26Z'));
 
-$keyCredentialsKeyCredential1->setStartDateTime(new DateTime('2023-01-12T09:31:26Z'));
+$keyCredentialsKeyCredential1->setStartDateTime(new \DateTime('2023-01-12T09:31:26Z'));
 
 $keyCredentialsKeyCredential1->setType('AsymmetricX509Cert');
 

@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AdminTodo();
-$requestBody->set@odatatype('#microsoft.graph.adminTodo');
+$requestBody->setOdataType('#microsoft.graph.adminTodo');
 
 $settings = new TodoSettings();
-$settings->set@odatatype('microsoft.graph.todoSettings');
+$settings->setOdataType('microsoft.graph.todoSettings');
 
 $settings->setIsPushNotificationEnabled(true);
 
