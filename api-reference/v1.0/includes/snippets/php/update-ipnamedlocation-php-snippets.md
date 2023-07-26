@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new IpNamedLocation();
-$requestBody->set@odatatype('#microsoft.graph.ipNamedLocation');
+$requestBody->setOdataType('#microsoft.graph.ipNamedLocation');
 
 $requestBody->setDisplayName('Untrusted named location with only IPv4 address');
 
 $requestBody->setIsTrusted(false);
 
 $ipRangesIpRange1 = new IPv4CidrRange();
-$ipRangesIpRange1->set@odatatype('#microsoft.graph.iPv4CidrRange');
+$ipRangesIpRange1->setOdataType('#microsoft.graph.iPv4CidrRange');
 
 $ipRangesIpRange1->setCidrAddress('6.5.4.3/18');
 

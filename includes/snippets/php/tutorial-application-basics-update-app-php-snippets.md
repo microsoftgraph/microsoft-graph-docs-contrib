@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Application();
-$requestBody->setTags(['HR', 'Payroll', 'HideApp', ]);
+$requestBody->setTags(['HR', 'Payroll', 'HideApp', 	]);
 
 $info = new InformationalUrl();
 $info->setLogoUrl('https://cdn.pixabay.com/photo/2016/03/21/23/25/link-1271843_1280.png');
@@ -30,7 +30,7 @@ $web->setHomePageUrl('https://www.contoso.com/');
 
 $web->setLogoutUrl('https://www.contoso.com/frontchannel_logout');
 
-$web->setRedirectUris(['https://localhost', ]);
+$web->setRedirectUris(['https://localhost', 	]);
 
 
 $requestBody->setWeb($web);
