@@ -208,7 +208,7 @@ Content-type: application/json
               "summary": "Test externalItem",
               "contentSource": "MicrosoftPowerBI",
               "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
+                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                 "title": "Test externalItem summary",
               }
             },
@@ -218,7 +218,7 @@ Content-type: application/json
               "summary": "Learning externalItem",
               "contentSource": "Learning",
               "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
+                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                 "title": "Test externalItem summary",
               }
             },
