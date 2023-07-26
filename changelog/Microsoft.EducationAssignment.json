@@ -29,6 +29,32 @@
     {
       "ChangeList": [
         {
+          "Id": "f2ab8d6b-0439-418e-aa8a-7ac6267031e0",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [Create assignment](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments?view=graph-rest-1.0).",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "f2ab8d6b-0439-418e-aa8a-7ac6267031e0",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [Create assignment](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments?view=graph-rest-1.0).",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "f2ab8d6b-0439-418e-aa8a-7ac6267031e0",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-04T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "53dcb5cc-6ce2-4c0b-acf3-0b94cff013e3",
           "ApiChange": "Member",
           "ChangedApiName": "released",
