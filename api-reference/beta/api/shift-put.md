@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of a [shift](../resources/shif
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and a [shift](../resources/shift.md) object in the response body.
 
 ## Example
 
@@ -141,62 +141,8 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
+HTTP/1.1 204 No Content
 
-{
-  "id": "string",
-  "userId": "string",
-  "schedulingGroupId": "string",
-  "sharedShift": {
-    "notes": "string",
-    "displayName": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "code": "string",
-        "displayName": "string"
-      }
-    ]
-  },
-  "draftShift": {
-    "notes": "string",
-    "displayName": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "code": "string",
-        "displayName": "string"
-      }
-    ]
-  },
-  "createdDateTime": "2018-10-04T00:58:45.340Z",
-  "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
-  "lastModifiedBy": {
-    "user": {
-      "id": "string",
-      "displayName": "string"
-    },
-    "application": {
-      "id": "string",
-      "displayName": "string"
-    },
-    "device": {
-      "id": "string",
-      "displayName": "string"
-    }
-  }
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
