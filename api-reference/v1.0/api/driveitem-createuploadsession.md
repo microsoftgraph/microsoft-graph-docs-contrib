@@ -95,6 +95,7 @@ The response to this request will provide the details of the newly created [uplo
 
 >**Note:** The {item-path} must contain the name of the item that's specified in the request body.
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "upload-fragment-create-session" } -->
 
 ```http
@@ -108,6 +109,12 @@ Content-Type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upload-fragment-create-session-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

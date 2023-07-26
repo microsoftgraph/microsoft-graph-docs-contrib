@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeviceCompliancePolicyAssignment();
-$requestBody->set@odatatype('#microsoft.graph.deviceCompliancePolicyAssignment');
+$requestBody->setOdataType('#microsoft.graph.deviceCompliancePolicyAssignment');
 
 $target = new ConfigurationManagerCollectionAssignmentTarget();
-$target->set@odatatype('microsoft.graph.configurationManagerCollectionAssignmentTarget');
+$target->setOdataType('microsoft.graph.configurationManagerCollectionAssignmentTarget');
 
 $target->setCollectionId('Collection Id value');
 
@@ -21,7 +21,7 @@ $target->setCollectionId('Collection Id value');
 $requestBody->setTarget($target);
 
 
-$result = $graphServiceClient->deviceManagement()->deviceCompliancePolicies()->byDeviceCompliancePolicieId('deviceCompliancePolicy-id')->assignments()->byAssignmentId('deviceCompliancePolicyAssignment-id')->patch($requestBody);
+$result = $graphServiceClient->deviceManagement()->deviceCompliancePolicies()->byDeviceCompliancePolicyId('deviceCompliancePolicy-id')->assignments()->byDeviceCompliancePolicyAssignmentId('deviceCompliancePolicyAssignment-id')->patch($requestBody);
 
 
 ```
