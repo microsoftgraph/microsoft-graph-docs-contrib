@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 In this exercise, you'll create, run, and approve an Azure Data Factory pipeline to extract data from Microsoft 365 to an Azure Storage Blob for additional processing.
 
-## Create a Microsoft Azure Active Directory application registration
+## Create a Microsoft Azure Active Directory application 
 
 This step describes how you create an Azure Active Directory (Azure AD) application that serves as the security principal to run the data extraction process.
 

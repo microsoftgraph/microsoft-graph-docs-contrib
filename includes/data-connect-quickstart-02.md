@@ -4,7 +4,10 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
+
 Prior to using Microsoft Graph Data Connect (Data Connect) for the first time, you need to configure your Microsoft 365 tenant. This involves turning on the service to approve data extraction requests.
+
+This page goes over our new app registration and consent flow. To follow our former guidance related to PAM and setting up the consent request approver group click [here]
 
 ## Enable Data Connect in your Microsoft 365 tenant
 
