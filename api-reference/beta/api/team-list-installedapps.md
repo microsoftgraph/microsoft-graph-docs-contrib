@@ -309,6 +309,11 @@ GET https://graph.microsoft.com/beta/teams/acda442c-78d2-491b-8204-4ef5019c0193/
 
 ---
 
+>**Note:**
+>
+> * This example works only for the sideloaded or organization apps. 
+> * By design, the externalId isn't populated for the apps with distributionMethod type as `store`. For the apps published to the global store, the `id` of the app is same as the `id` in the app manifest.
+
 #### Response
 
 The following is an example of the response.
