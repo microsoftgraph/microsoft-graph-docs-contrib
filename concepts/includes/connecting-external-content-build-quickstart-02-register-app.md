@@ -2,43 +2,49 @@
 ms.localizationpriority: medium
 ---
 
-<!-- markdownlint-disable MD002 MD041 -->
+<!-- markdownlint-disable MD041 -->
 
-After all the prerequisites are in place, you will be able to register an application in the Azure AD admin center. The registration is necessary in order to authenticate the application and use it to make calls to the Microsoft Graph connectors API.
+In this exercise you will register a new application in Azure Active Directory to enable [app-only authentication](/graph/auth-v2-service). Microsoft Graph connectors use app-only authentication to access the connector APIs.
 
-1. Go to the [Azure Active Directory admin center](https://aad.portal.azure.com/) and sign in with an administrator account.
-2. In the left pane, select **Azure Active Directory**, and under **Manage**, select **App registrations**.
-3. Select **New registration**.
+## Register application for app-only authentication
 
-    ![Screenshot showing the "app registrations" section](../images/connectors-images/build2.png)
+In this section you will register an application that supports app-only authentication using [client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-4. Complete the **Register an application** form with the following values, and then select **Register**.
+1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com) and login using a Global administrator account.
 
-    * **Name**: Parts Inventory Connector
+1. Select **Azure Active Directory** in the left-hand navigation, then select **App registrations** under **Manage**.
 
-    * **Supported account types**: Accounts in this organizational directory only (Microsoft only - Single tenant)
+    :::image type="content" source="../images/connectors-images/aad-portal-app-registrations.png" alt-text="A screenshot of the App registrations":::
 
-    * **Redirect URI**: Leave blank
+1. Select **New registration**. Enter a name for your application, for example, `Parts Inventory Connector`.
 
-    ![Screenshot showing the "register an application" section](../images/connectors-images/build3-contoso-register-app.png)
+1. Set **Supported account types** to **Accounts in this organizational directory only**.
 
-5. On the Parts Inventory Connector overview page, copy the values of **Application (client) ID and Directory (tenant) ID**. You will need both in the following section.
+1. Leave **Redirect URI** empty.
 
-    ![Screenshot showing the "parts inventory connector" section](../images/connectors-images/build3-contoso-partsinv.png)
+1. Select **Register**. On the application's **Overview** page, copy the value of the **Application (client) ID** and **Directory (tenant) ID** and save them, you will need these values in the next step.
 
-6. Select **API Permissions** under **Manage**.
-7. Select **Add a permission**, and then select **Microsoft Graph**.
-8. Select **Application permissions**, and then select the **ExternalItem.ReadWrite.All** permission. Select **Add permissions**.
+    :::image type="content" source="../images/connectors-images/aad-app-only-application-id.png" alt-text="A screenshot of the application ID of the new app registration":::
 
-    ![Screenshot showing the "request API permissions" section](../images/connectors-images/build4.png)
+1. Select **API permissions** under **Manage**.
 
-9. Select **Grant admin consent for {TENANT},** and then select **Yes** when prompted.
+1. Remove the default **User.Read** permission under **Configured permissions** by selecting the ellipses (**...**) in its row and selecting **Remove permission**.
 
-    ![Screenshot showing the "parts inventory connector api permissions" section](../images/connectors-images/build5.png)
+1. Select **Add a permission**, then **Microsoft Graph**.
 
-10. Select **Certificates &amp; secrets** under **Manage**, and then select **New client secret**.
-11. Enter a description and choose an expiration time for the secret, and then select **Add**.
+1. Select **Application permissions**.
 
-    ![Screenshot showing the "parts inventory connector certs and secrets" section](../images/connectors-images/build6.png)
+1. Select **ExternalItem.ReadWrite.All**, then select **Add permissions**.
 
-12. Copy and save the new secret; you will need it in the following section.
+1. Select **Grant admin consent for...**, then select **Yes** to provide admin consent for the selected permission.
+
+    :::image type="content" source="../images/connectors-images/aad-configured-permissions.png" alt-text="A screenshot of the Configured permissions table after granting admin consent":::
+
+1. Select **Certificates and secrets** under **Manage**, then select **New client secret**.
+
+1. Enter a description, choose a duration, and select **Add**.
+
+1. Copy the secret from the **Value** column, you will need it in the next steps.
+
+    > [!IMPORTANT]
+    > This client secret is never shown again, so make sure you copy it now.

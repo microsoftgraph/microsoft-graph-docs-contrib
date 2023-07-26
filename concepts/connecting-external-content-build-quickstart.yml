@@ -6,18 +6,17 @@ metadata:
   audience: Developer
   level: Beginner
   displayType: one-column
-  ms.date: 04/30/2021
-  author: mecampos
+  ms.date: 07/26/2023
+  author: jasonjoh
   ms.topic: tutorial
-  ms.custom: scenarios:getting-started, languages:.NET Core, C 
+  ms.custom: scenarios:getting-started, languages:.NET, C#
   ms.prod: search
 items:
-  - title: Build your first custom Microsoft Graph connector
-    durationInMinutes: 10
+  - durationInMinutes: 3
     content: |
       [!INCLUDE [](includes/connecting-external-content-build-quickstart-01-intro.md)]
-  - title: Register the application in the portal
-    durationInMinutes: 10
+  - title: Register the app in the portal
+    durationInMinutes: 3
     content: |
       [!INCLUDE [](includes/connecting-external-content-build-quickstart-02-register-app.md)]
   - title: Build the application
