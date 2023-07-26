@@ -66,6 +66,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "timeoff-put"
 }-->
+
 ```http
 PUT https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId}
 Content-type: application/json
