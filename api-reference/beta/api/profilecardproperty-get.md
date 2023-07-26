@@ -1,6 +1,6 @@
 ---
 title: "Get profileCardProperty"
-description: "Retrieve the properties and relationships of a profileCardProperty object."
+description: "Retrieve the properties of a profileCardProperty entity."
 ms.localizationpriority: medium
 author: "rwaithera"
 ms.prod: "people"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a [profileCardProperty](../resources/profilecardproperty.md) entity. The profileCardProperty is identified by its **directoryPropertyName** property.
+Retrieve the properties of a [profileCardProperty](../resources/profilecardproperty.md) entity. The **profileCardProperty** is identified by its **directoryPropertyName** property.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a tenant administrator or global administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
 
 ## HTTP request
 
@@ -34,6 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /admin/people/profileCardProperties/{id}
 ```
+
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
 
 ## Request headers
 

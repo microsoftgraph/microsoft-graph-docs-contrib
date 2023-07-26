@@ -1,6 +1,6 @@
 ---
 title: "Update profileCardProperty"
-description: "Update the properties of a profileCardProperty object."
+description: "Update the properties of a profileCardProperty object, identified by its directoryPropertyName property."
 ms.localizationpriority: medium
 author: "rwaithera"
 ms.prod: "people"
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a tenant administrator or global administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
 
 ## HTTP request
 
@@ -35,6 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /admin/people/profileCardProperties/{id}
 ```
 
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
+
 ## Request headers
 
 | Name       | Description|
@@ -42,16 +44,16 @@ PATCH /admin/people/profileCardProperties/{id}
 | Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json. Required. |
 
-> **Note** To avoid encoding issues that malform payload, use `Content-Type: application/json; charset=utf-8`.
+> **Note** To avoid encoding issues that malform the payload, use `Content-Type: application/json; charset=utf-8`.
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|annotations|profileCardAnnotation collection| Contains any alternative or localized labels an administrator has chosen to specify.|
-|directoryPropertyName|String|Contains the name of the directory property which is intended to surface on the profile card. |
+|annotations|profileCardAnnotation collection| Any alternative or localized labels an administrator has chosen to specify.|
+|directoryPropertyName|String|The name of the directory property which is intended to surface on the profile card. |
 
 ## Response
 
@@ -61,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 
 ### Request
 
-The following example adds a localized label "Kostnads Senter" for the locale "no-NB".
+The following example adds a localized label `Kostnads Senter` for the locale `no-NB`.
 
 <!-- {
   "blockType": "request",
@@ -85,7 +87,6 @@ Content-type: application/json; charset=utf-8
   ]
 }
 ```
-
 
 ### Response
 

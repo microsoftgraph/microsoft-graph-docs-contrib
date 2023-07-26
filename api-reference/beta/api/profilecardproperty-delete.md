@@ -1,6 +1,6 @@
 ---
 title: "Delete profileCardProperty"
-description: "Delete a profileCardProperty object and remove all customizations from the profile card."
+description: "Delete a profileCardProperty object and remove all customizations from a profile card."
 ms.localizationpriority: medium
 author: "rwaithera"
 ms.prod: "people"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its `directoryPropertyName` from the organization's profile card, and remove any localized customizations for that property.
+Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a tenant administrator or global administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
 
 ## HTTP request
 
@@ -34,6 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /admin/people/profileCardProperties/{id}
 ```
+
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
 
 ## Request headers
 
@@ -53,7 +55,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Request
 
-The following example shows how to delete the attribute named "Fax" from the profile card for the organization.
+The following example shows how to delete the attribute named **Fax** from the profile card for the organization.
 
 <!-- {
   "blockType": "request",
@@ -63,7 +65,6 @@ The following example shows how to delete the attribute named "Fax" from the pro
 ```http
 DELETE https://graph.microsoft.com/beta/admin/people/profileCardProperties/fax
 ```
-
 
 ### Response
 
