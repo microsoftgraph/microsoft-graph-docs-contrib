@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: conceptualPageType
 ms.prod: "change-notifications"
-ms.date: 10/04/2022
 ---
 
 # Use the Microsoft Graph API to get change notifications
@@ -28,9 +27,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [baseTask][] (deprecated), [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][], [CallTranscript][], [CallRecording][] |
+| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][], [baseTask][] (deprecated) |
 | Delegated - personal Microsoft account | [baseTask][] (deprecated), [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                   |
-| Application                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlinemeeting][], [printer][], [printTaskDefinition][], [team][], [CallTranscript][], [CallRecording][] |
+| Application                            | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlineMeeting][], [printer][], [printTaskDefinition][], [team][] |
 
 ## See also
 
@@ -62,5 +61,5 @@ In general, subscription operations require read permission to the resource. For
 [baseTask]: ./baseTask.md
 [todoTask]: ./todotask.md
 [onlineMeeting]: ./onlinemeeting.md
-[CallTranscript]: ./calltranscript.md
-[CallRecording]: ./callrecording.md
+[callTranscript]: ./calltranscript.md
+[callRecording]: ./callrecording.md

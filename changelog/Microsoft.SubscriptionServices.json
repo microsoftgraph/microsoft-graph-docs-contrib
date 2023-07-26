@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "8af82fd0-da59-4159-b7c5-bf162c131d30",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnlineMeetingRecording.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated and application permission `OnlineMeetingRecording.Read.All` to the following operations of the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource: [LIST](https://learn.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-beta), [POST](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [GET](https://learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta), [UPDATE](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta), [DELETE](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta), and [reauthorize](https://learn.microsoft.com/en-us/graph/api/subscription-reauthorize?view=graph-rest-beta).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "8af82fd0-da59-4159-b7c5-bf162c131d30",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-17T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6f09a648-5088-44d8-ac5d-76f5688f9fdd",
           "ApiChange": "Resource",
           "ChangedApiName": "printer",
@@ -15,7 +33,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printTaskDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the **printTaskDefinition** resource to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta\u0026preserve-view=true) entit.y",
+          "Description": "Added the **printTaskDefinition** resource to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta\u0026preserve-view=true) entity.",
           "Target": "subscription"
         }
       ],
