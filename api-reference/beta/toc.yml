@@ -672,11 +672,11 @@ items:
                 href: api/profile-delete.md
           - name: Sponsors
             items:
-              - name: Assign sponsors
+              - name: Add sponsor
                 href: api/user-post-sponsors.md
               - name: List sponsors
                 href: api/user-list-sponsors.md
-              - name: Remove sponsors
+              - name: Remove sponsor
                 href: api/user-delete-sponsors.md
           - name: Teamwork and communications
             items:
@@ -11491,6 +11491,13 @@ items:
                     href: api/bitlocker-list-recoverykeys.md
                   - name: Get
                     href: api/bitlockerrecoverykey-get.md
+              - name: Company subscription
+                href: resources/companysubscription.md
+                items:
+                - name: List
+                  href: api/directory-list-subscriptions.md
+                - name: Get
+                  href: api/companysubscription-get.md
               - name: Contracts
                 href: resources/contract.md
                 items:
@@ -11742,6 +11749,44 @@ items:
                     href: api/featurerolloutpolicy-post-appliesto.md
                   - name: Delete appliesTo
                     href: api/featurerolloutpolicy-delete-appliesto.md
+              - name: Mobility management policy (Preview)
+                href: resources/mobilitymanagementpolicy.md
+                items:
+                  - name: List mobile device management policies
+                    href: api/mobiledevicemanagementpolicies-list.md
+                  - name: Get
+                    href: api/mobiledevicemanagementpolicies-get.md
+                  - name: Update
+                    href: api/mobiledevicemanagementpolicies-update.md
+                  - name: Delete
+                    href: api/mobiledevicemanagementpolicies-delete.md
+                  - name: List included groups
+                    href: api/mobiledevicemanagementpolicies-list-includedgroups.md
+                  - name: Add included groups
+                    href: api/mobiledevicemanagementpolicies-post-includedgroups.md
+                  - name: Remove included groups
+                    href: api/mobiledevicemanagementpolicies-delete-includedgroups.md
+                  - name: List mobile app management policies
+                    href: api/mobileappmanagementpolicies-list.md
+                  - name: Get
+                    href: api/mobileappmanagementpolicies-get.md
+                  - name: Update
+                    href: api/mobileappmanagementpolicies-update.md
+                  - name: Delete
+                    href: api/mobileappmanagementpolicies-delete.md
+                  - name: List included groups
+                    href: api/mobileappmanagementpolicies-list-includedgroups.md
+                  - name: Add included groups
+                    href: api/mobileappmanagementpolicies-post-includedgroups.md
+                  - name: Remove included groups
+                    href: api/mobileappmanagementpolicies-delete-includedgroups.md
+              - name: On-premises directory synchronization
+                href: resources/onpremisesdirectorysynchronization.md
+                items:
+                  - name: Get
+                    href: api/onpremisesdirectorysynchronization-get.md
+                  - name: Update
+                    href: api/onpremisesdirectorysynchronization-update.md
               - name: Organization
                 href: resources/organization.md
                 items:
@@ -11871,13 +11916,6 @@ items:
                         href: api/orgcontact-list-memberof.md
                       - name: Get manager
                         href: api/orgcontact-get-manager.md
-              - name: On-premises directory synchronization
-                href: resources/onpremisesdirectorysynchronization.md
-                items:
-                  - name: Get
-                    href: api/onpremisesdirectorysynchronization-get.md
-                  - name: Update
-                    href: api/onpremisesdirectorysynchronization-update.md
               - name: People admin settings (preview)
                 href: resources/peopleAdminSettings.md
                 items:
@@ -11889,37 +11927,6 @@ items:
                         href: api/peopleadminsettings-list-pronouns.md
                       - name: Update
                         href: api/pronounssettings-update.md
-              - name: Mobility management policy (Preview)
-                href: resources/mobilitymanagementpolicy.md
-                items:
-                  - name: List mobile device management policies
-                    href: api/mobiledevicemanagementpolicies-list.md
-                  - name: Get
-                    href: api/mobiledevicemanagementpolicies-get.md
-                  - name: Update
-                    href: api/mobiledevicemanagementpolicies-update.md
-                  - name: Delete
-                    href: api/mobiledevicemanagementpolicies-delete.md
-                  - name: List included groups
-                    href: api/mobiledevicemanagementpolicies-list-includedgroups.md
-                  - name: Add included groups
-                    href: api/mobiledevicemanagementpolicies-post-includedgroups.md
-                  - name: Remove included groups
-                    href: api/mobiledevicemanagementpolicies-delete-includedgroups.md
-                  - name: List mobile app management policies
-                    href: api/mobileappmanagementpolicies-list.md
-                  - name: Get
-                    href: api/mobileappmanagementpolicies-get.md
-                  - name: Update
-                    href: api/mobileappmanagementpolicies-update.md
-                  - name: Delete
-                    href: api/mobileappmanagementpolicies-delete.md
-                  - name: List included groups
-                    href: api/mobileappmanagementpolicies-list-includedgroups.md
-                  - name: Add included groups
-                    href: api/mobileappmanagementpolicies-post-includedgroups.md
-                  - name: Remove included groups
-                    href: api/mobileappmanagementpolicies-delete-includedgroups.md
               - name: Role management
                 displayName: Unified RBAC
                 href: resources/rolemanagement.md
@@ -11999,13 +12006,6 @@ items:
                     href: api/subscribedsku-list.md
                   - name: Get
                     href: api/subscribedsku-get.md
-              - name: Company subscription
-                href: resources/companysubscription.md
-                items:
-                  - name: List
-                    href: api/directory-list-subscriptions.md
-                  - name: Get
-                    href: api/companysubscription-get.md
               - name: Tenant information
                 href: resources/tenantinformation.md
                 items:
@@ -15076,121 +15076,123 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
       - name: Reports
         items:
-          - name: Azure AD activity reports
-            items:
-              - name: Overview
-                href: resources/azure-ad-auditlog-overview.md
-              - name: Directory audit
-                href: resources/directoryaudit.md
-                items:
-                  - name: List directory audits
-                    href: api/directoryaudit-list.md
-                  - name: Get directory audit
-                    href: api/directoryaudit-get.md
-              - name: Sign-in
-                href: resources/signin.md
-                items:
-                  - name: List sign-ins
-                    href: api/signin-list.md
-                  - name: Get sign-in
-                    href: api/signin-get.md
-                  - name: Confirm safe
-                    href: api/signin-confirmsafe.md
-                  - name: Confirm compromised
-                    href: api/signin-confirmcompromised.md
-              - name: Provisioning
-                href: resources/provisioningobjectsummary.md
-                items:
-                  - name: List provisioning
-                    href: api/provisioningobjectsummary-list.md
           - name: Identity and access reports
             items:
-              - name: Overview
-                href: resources/report-identity-access.md
-              - name: AD FS application activity
-                items:
-                  - name: Relying party detailed summary
-                    href: resources/relyingpartydetailedsummary.md
-                    items:
-                      - name: List
-                        href: api/relyingpartydetailedsummary-list.md
-              - name: Application credential activity
-                href: resources/appcredentialsigninactivity.md
-                items:
-                  - name: List
-                    href: api/reportroot-list-appcredentialsigninactivities.md
-                  - name: Get
-                    href: api/appcredentialsigninactivity-get.md
-              - name: Application sign-in
-                items:
-                  - name: Sign-in summary
-                    href: resources/applicationsigninsummary.md
-                    items:
-                      - name: Get sign-in summary
-                        href: api/reportroot-getazureadapplicationsigninsummary.md
-                  - name: Sign-in details
-                    href: resources/applicationsignindetailedsummary.md
-                    items:
-                      - name: List sign-in details
-                        href: api/reportroot-list-applicationsignindetailedsummary.md
-                      - name: Get sign-in details
-                        href: api/applicationsignindetailedsummary-get.md
-              - name: Azure AD SLA attainment
-                items:
-                  - name: Azure AD authentication
-                    href: resources/azureadauthentication.md
-                  - name: Service level agreement
-                    href: resources/servicelevelagreementroot.md
-                  - name: Get Azure AD authentication
-                    href: api/azureadauthentication-get.md
-              - name: Registration and usage
-                items:
-                  - name: Overview
-                    href: resources/authenticationmethods-usage-insights-overview.md
-                  - name: Credential usage summary
-                    href: resources/credentialusagesummary.md
-                    items:
-                      - name: List
-                        href: api/reportroot-getcredentialusagesummary.md
-                  - name: Credential user registration count
-                    href: resources/credentialuserregistrationcount.md
-                    items:
-                      - name: Get
-                        href: api/reportroot-getcredentialuserregistrationcount.md
-                  - name: Credential user registration details (deprecated)
-                    href: resources/credentialuserregistrationdetails.md
-                    items:
-                      - name: List
-                        href: api/reportroot-list-credentialuserregistrationdetails.md
-                  - name: User credential usage details
-                    href: resources/usercredentialusagedetails.md
-                    items:
-                      - name: List
-                        href: api/reportroot-list-usercredentialusagedetails.md
-                  - name: User registration details
-                    href: resources/userregistrationdetails.md
-                    items:
-                      - name: List
-                        href: api/authenticationmethodsroot-list-userregistrationdetails.md
-                      - name: Get
-                        href: api/userregistrationdetails-get.md
-                  - name: Users registered by feature
-                    href: resources/userregistrationfeaturesummary.md
-                    items:
-                      - name: List
-                        href: api/authenticationmethodsroot-usersregisteredbyfeature.md
-                  - name: Users registered by method
-                    href: resources/userregistrationmethodsummary.md
-                    items:
-                      - name: List
-                        href: api/authenticationmethodsroot-usersregisteredbymethod.md
-              - name: Service principal activity
-                href: resources/serviceprincipalsigninactivity.md
-                items:
-                  - name: List
-                    href: api/reportroot-list-serviceprincipalsigninactivities.md
-                  - name: Get
-                    href: api/serviceprincipalsigninactivity-get.md
+            - name: Azure AD activity reports
+              items:
+                - name: Overview
+                  href: resources/report-identity-access.md
+                - name: AD FS application activity
+                  items:
+                    - name: Relying party detailed summary
+                      href: resources/relyingpartydetailedsummary.md
+                      items:
+                        - name: List
+                          href: api/relyingpartydetailedsummary-list.md
+                - name: Application credential activity
+                  href: resources/appcredentialsigninactivity.md
+                  items:
+                    - name: List
+                      href: api/reportroot-list-appcredentialsigninactivities.md
+                    - name: Get
+                      href: api/appcredentialsigninactivity-get.md
+                - name: Application sign-in
+                  items:
+                    - name: Sign-in summary
+                      href: resources/applicationsigninsummary.md
+                      items:
+                        - name: Get sign-in summary
+                          href: api/reportroot-getazureadapplicationsigninsummary.md
+                    - name: Sign-in details
+                      href: resources/applicationsignindetailedsummary.md
+                      items:
+                        - name: List sign-in details
+                          href: api/reportroot-list-applicationsignindetailedsummary.md
+                        - name: Get sign-in details
+                          href: api/applicationsignindetailedsummary-get.md
+                - name: Azure AD SLA attainment
+                  items:
+                    - name: Azure AD authentication
+                      href: resources/azureadauthentication.md
+                    - name: Service level agreement
+                      href: resources/servicelevelagreementroot.md
+                    - name: Get Azure AD authentication
+                      href: api/azureadauthentication-get.md
+                - name: Registration and usage
+                  items:
+                    - name: Overview
+                      href: resources/authenticationmethods-usage-insights-overview.md
+                    - name: Credential usage summary
+                      href: resources/credentialusagesummary.md
+                      items:
+                        - name: List
+                          href: api/reportroot-getcredentialusagesummary.md
+                    - name: Credential user registration count
+                      href: resources/credentialuserregistrationcount.md
+                      items:
+                        - name: Get
+                          href: api/reportroot-getcredentialuserregistrationcount.md
+                    - name: Credential user registration details (deprecated)
+                      href: resources/credentialuserregistrationdetails.md
+                      items:
+                        - name: List
+                          href: api/reportroot-list-credentialuserregistrationdetails.md
+                    - name: User credential usage details
+                      href: resources/usercredentialusagedetails.md
+                      items:
+                        - name: List
+                          href: api/reportroot-list-usercredentialusagedetails.md
+                    - name: User registration details
+                      href: resources/userregistrationdetails.md
+                      items:
+                        - name: List
+                          href: api/authenticationmethodsroot-list-userregistrationdetails.md
+                        - name: Get
+                          href: api/userregistrationdetails-get.md
+                    - name: Users registered by feature
+                      href: resources/userregistrationfeaturesummary.md
+                      items:
+                        - name: List
+                          href: api/authenticationmethodsroot-usersregisteredbyfeature.md
+                    - name: Users registered by method
+                      href: resources/userregistrationmethodsummary.md
+                      items:
+                        - name: List
+                          href: api/authenticationmethodsroot-usersregisteredbymethod.md
+                - name: Service principal activity
+                  href: resources/serviceprincipalsigninactivity.md
+                  items:
+                    - name: List
+                      href: api/reportroot-list-serviceprincipalsigninactivities.md
+                    - name: Get
+                      href: api/serviceprincipalsigninactivity-get.md
+            - name: Azure AD audit logs
+              items:
+                - name: Overview
+                  href: resources/azure-ad-auditlog-overview.md
+                - name: Directory audit
+                  href: resources/directoryaudit.md
+                  items:
+                    - name: List directory audits
+                      href: api/directoryaudit-list.md
+                    - name: Get directory audit
+                      href: api/directoryaudit-get.md
+                - name: Sign-in
+                  href: resources/signin.md
+                  items:
+                    - name: List sign-ins
+                      href: api/signin-list.md
+                    - name: Get sign-in
+                      href: api/signin-get.md
+                    - name: Confirm safe
+                      href: api/signin-confirmsafe.md
+                    - name: Confirm compromised
+                      href: api/signin-confirmcompromised.md
+                - name: Provisioning
+                  href: resources/provisioningobjectsummary.md
+                  items:
+                    - name: List provisioning
+                      href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 usage reports
             items:
               - name: Overview
@@ -16407,7 +16409,7 @@ items:
                 href: api/site-list-operations.md
               - name: Get site settings
                 href: api/sitesettings-get.md
-              - name: List all root sites
+              - name: List all sites
                 href: api/site-getallsites.md
           - name: List
             items:

@@ -7,25 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Application();
 $additionalData = [
-		'onPremisesPublishing' => $requestBody = new OnPremisesPublishing();
-$singleSignOnSettings = new SingleSignOnSettings();
-$singleSignOnSettingsKerberosSignOnSettings = new KerberosSignOnSettings();
-$		singleSignOnSettingsKerberosSignOnSettings->setKerberosServicePrincipalName('HTTP/iwademo.contoso.com');
+		'onPremisesPublishing' => 		[
+				'singleSignOnSettings' => 				[
+						'kerberosSignOnSettings' => 						[
+								'kerberosServicePrincipalName' => 'HTTP/iwademo.contoso.com', 
+								'kerberosSignOnMappingAttributeType' => 'userPrincipalName', 
+						],
 
-$		singleSignOnSettingsKerberosSignOnSettings->setKerberosSignOnMappingAttributeType('userPrincipalName');
+						'singleSignOnMode' => 'onPremisesKerberos', 
+				],
 
-
-$singleSignOnSettings->setKerberosSignOnSettings($singleSignOnSettingsKerberosSignOnSettings);
-$		singleSignOnSettings->setSingleSignOnMode('onPremisesKerberos');
-
-
-$requestBody->setSingleSignOnSettings($singleSignOnSettings);
-
-$requestBody->setOnPremisesPublishing($onPremisesPublishing);
+		],
 
 ];
 $requestBody->setAdditionalData($additionalData);

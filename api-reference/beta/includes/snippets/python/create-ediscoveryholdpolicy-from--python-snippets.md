@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 request_body = EdiscoveryHoldPolicy()
-request_body.displayname = 'My legalHold with sources'
+request_body.display_name = 'My legalHold with sources'
 
 request_body.description = 'Created from Graph API'
 
