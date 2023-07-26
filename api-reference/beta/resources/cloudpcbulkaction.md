@@ -1,9 +1,9 @@
 ---
-title: "CloudPcBulkAction resource type"
-description: "Represents the bulk action which will be applied to cloudPcs specified in parameter."
+title: "cloudPcBulkAction resource type"
+description: "Entity that represents the bulk action which will be applied to cloudPcs specified in parameter."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
