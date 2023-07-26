@@ -12,7 +12,7 @@ var requestBody = new Group
 {
 	Description = "Building security",
 	DisplayName = "Building security",
-	GroupTypes = new List<String>
+	GroupTypes = new List<string>
 	{
 	},
 	MailEnabled = false,

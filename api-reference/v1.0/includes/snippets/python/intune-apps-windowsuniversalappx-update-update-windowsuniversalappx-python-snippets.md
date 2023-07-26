@@ -1,0 +1,79 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = WindowsUniversalAppX()
+request_body.@odata_type = '#microsoft.graph.windowsUniversalAppX'
+
+request_body.display_name = 'Display Name value'
+
+request_body.description = 'Description value'
+
+request_body.publisher = 'Publisher value'
+
+large_icon = MimeContent()
+large_icon.@odata_type = 'microsoft.graph.mimeContent'
+
+large_icon.type = 'Type value'
+
+large_icon.Value(base64_decode('dmFsdWU='))
+
+
+request_body.large_icon = large_icon
+request_body.is_featured = True
+
+request_body.privacy_information_url = 'https://example.com/privacyInformationUrl/'
+
+request_body.information_url = 'https://example.com/informationUrl/'
+
+request_body.owner = 'Owner value'
+
+request_body.developer = 'Developer value'
+
+request_body.notes = 'Notes value'
+
+request_body.publishingstate(MobileAppPublishingState.Processing('mobileapppublishingstate.processing'))
+
+request_body.committed_content_version = 'Committed Content Version value'
+
+request_body.file_name = 'File Name value'
+
+request_body.Size = 4
+
+request_body.applicablearchitectures(WindowsArchitecture.X86('windowsarchitecture.x86'))
+
+request_body.applicabledevicetypes(WindowsDeviceType.Desktop('windowsdevicetype.desktop'))
+
+request_body.identity_name = 'Identity Name value'
+
+request_body.identity_publisher_hash = 'Identity Publisher Hash value'
+
+request_body.identity_resource_identifier = 'Identity Resource Identifier value'
+
+request_body.is_bundle = True
+
+minimum_supported_operating_system = WindowsMinimumOperatingSystem()
+minimum_supported_operating_system.@odata_type = 'microsoft.graph.windowsMinimumOperatingSystem'
+
+minimum_supported_operating_system.v8_0 = True
+
+minimum_supported_operating_system.v8_1 = True
+
+minimum_supported_operating_system.v10_0 = True
+
+
+request_body.minimum_supported_operating_system = minimum_supported_operating_system
+request_body.identity_version = 'Identity Version value'
+
+
+
+
+result = await client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(request_body = request_body)
+
+
+```

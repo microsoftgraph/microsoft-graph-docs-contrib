@@ -52,12 +52,47 @@ If successful, this method returns a `200 OK` response code and [windowsInformat
 
 ### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_wip_windowsinformationprotectionnetworklearningsummary_get_get_windowsinformationprotectionnetworklearningsummary" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-wip-windowsinformationprotectionnetworklearningsummary-get-get-windowsinformationprotectionnetworklearningsummary-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-wip-windowsinformationprotectionnetworklearningsummary-get-get-windowsinformationprotectionnetworklearningsummary-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-wip-windowsinformationprotectionnetworklearningsummary-get-get-windowsinformationprotectionnetworklearningsummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-wip-windowsinformationprotectionnetworklearningsummary-get-get-windowsinformationprotectionnetworklearningsummary-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-wip-windowsinformationprotectionnetworklearningsummary-get-get-windowsinformationprotectionnetworklearningsummary-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-wip-windowsinformationprotectionnetworklearningsummary-get-get-windowsinformationprotectionnetworklearningsummary-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-wip-windowsinformationprotectionnetworklearningsummary-get-get-windowsinformationprotectionnetworklearningsummary-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windowsInformationProtectionNetworkLearningSummary" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
