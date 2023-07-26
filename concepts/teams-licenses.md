@@ -192,7 +192,7 @@ This section describes the payment models for Teams meeting transcript and recor
 
 | Scenario | APIs |
 | ------ | ----- |
-| [Fetch meeting transcript and recording](/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts) | [Get callTranscript content](../api-reference/beta/api/calltranscript-get.md#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](../api-reference/beta/api/calltranscript-get.md#example-4-get-a-calltranscript-metadatacontent) </br> [Get callRecording content](../api-reference/beta/api/callrecording-get.md#example-2-get-a-callrecording-content) |
+| [Fetch meeting transcript and recording](/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts) | [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) </br> [Get callRecording content](/graph/api/callrecording-get#example-2-get-a-callrecording-content) |
 
 You will receive an evaluation quota which apps can use. Apps don’t require to pass any billing model information for making requests to the API within their evaluation quota. The evaluation quota is enforced per app, per tenant, and per month. The quota is reset at the beginning of each calendar month, and any unused amount doesn't get carried over to the next month.
 
@@ -215,8 +215,8 @@ The following table lists the evaluation mode capacity and price for additional 
 
 | API | Evaluation mode capacity  | Price for additional use  | Notes |
 | -------- | -------- | -------- | -------- |
-| [Get callTranscript content](../api-reference/beta/api/calltranscript-get.md#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](../api-reference/beta/api/calltranscript-get.md#example-4-get-a-calltranscript-metadatacontent) | 600 minutes per app per tenant  | $0.0 per minute | The duration will be rounded down to nearest minute. |
-| [Get callRecording content](../api-reference/beta/api/callrecording-get.md#example-2-get-a-callrecording-content) | 600 minutes per app per tenant  | $0.0 per minute | The duration will be rounded down to nearest minute. |
+| [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) | 600 minutes per app per tenant  | $0.0 per minute | The duration will be rounded down to nearest minute. |
+| [Get callRecording content](/graph/api/callrecording-get#example-2-get-a-callrecording-content) | 600 minutes per app per tenant  | $0.0 per minute | The duration will be rounded down to nearest minute. |
 
 ## Frequently asked questions
 
