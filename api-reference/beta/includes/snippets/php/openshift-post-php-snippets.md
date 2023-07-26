@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OpenShift();
 $requestBody->setId('OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8');
@@ -21,18 +21,18 @@ $sharedOpenShift->setOpenSlotCount(2);
 
 $sharedOpenShift->setDisplayName('Dayshift');
 
-$sharedOpenShift->setStartDateTime(new DateTime('2018-10-04T00: 58: 45.340Z'));
+$sharedOpenShift->setStartDateTime(new \DateTime('2018-10-04T00: 58: 45.340Z'));
 
-$sharedOpenShift->setEndDateTime(new DateTime('2018-10-04T09: 50: 45.332Z'));
+$sharedOpenShift->setEndDateTime(new \DateTime('2018-10-04T09: 50: 45.332Z'));
 
 $sharedOpenShift->setTheme(new ScheduleEntityTheme('white'));
 
 $activitiesShiftActivity1 = new ShiftActivity();
 $activitiesShiftActivity1->setIsPaid(true);
 
-$activitiesShiftActivity1->setStartDateTime(new DateTime('2018-10-04T00: 58: 45.340Z'));
+$activitiesShiftActivity1->setStartDateTime(new \DateTime('2018-10-04T00: 58: 45.340Z'));
 
-$activitiesShiftActivity1->setEndDateTime(new DateTime('2018-10-04T01: 58: 45.340Z'));
+$activitiesShiftActivity1->setEndDateTime(new \DateTime('2018-10-04T01: 58: 45.340Z'));
 
 $activitiesShiftActivity1->setCode('');
 
@@ -47,9 +47,9 @@ $sharedOpenShift->setActivities($activitiesArray);
 $requestBody->setSharedOpenShift($sharedOpenShift);
 $requestBody->setDraftOpenShift(null);
 
-$requestBody->setCreatedDateTime(new DateTime('2019-03-14T04: 32: 51.451Z'));
+$requestBody->setCreatedDateTime(new \DateTime('2019-03-14T04: 32: 51.451Z'));
 
-$requestBody->setLastModifiedDateTime(new DateTime('2019-03-14T05: 32: 51.451Z'));
+$requestBody->setLastModifiedDateTime(new \DateTime('2019-03-14T05: 32: 51.451Z'));
 
 $lastModifiedBy = new IdentitySet();
 $LastModifiedBy->setApplication(null);

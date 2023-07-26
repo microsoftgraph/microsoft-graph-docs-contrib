@@ -66,20 +66,25 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "update_teamsapp_v1_e1"
+}-->
 
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8/appDefinitions
 Content-type: application/zip
 
-[Zip file containing a Teams app package]
+app.zip
 ```
 
 For details about the Teams application zip file, see [Create app package](/microsoftteams/platform/concepts/apps/apps-package).
-<!-- markdownlint-disable MD024 -->
 
 #### Response
 
+<!-- {
+  "blockType": "response"
+}-->
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -88,20 +93,18 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-<!-- markdownlint-disable MD034 -->
-
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_teamsapp"
+  "name": "update_teamsapp_v1_e2"
 }-->
 
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
 Content-type: application/zip
 
-[Zip file containing a Teams app package]
+app.zip
 ```
 
 # [CLI](#tab/cli)
@@ -118,7 +121,6 @@ Content-type: application/zip
 
 ---
 
-<!-- markdownlint-disable MD024 -->
 
 #### Response
 
@@ -150,6 +152,10 @@ Content-Type: application/json
          "Member.Read.Group"
     ],
     "publishingState": "submitted",
-    "lastModifiedDateTime": "2020-02-10 22:48:33.841",
+    "lastModifiedDateTime": "2020-02-10 22:48:33.841"
 }
 ```
+
+## See also
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

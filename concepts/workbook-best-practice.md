@@ -92,7 +92,7 @@ Content-type: application/json
   "name": "add_a_table_row"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/Table1/rows/add
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/add
 Content-type: application/json
 workbook-session-id: {session-id}
 

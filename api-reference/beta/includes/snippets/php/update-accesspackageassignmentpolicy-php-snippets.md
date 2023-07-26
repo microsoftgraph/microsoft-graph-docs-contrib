@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentPolicy();
 $requestBody->setId('b2eba9a1-b357-42ee-83a8-336522ed6cbf');
@@ -29,7 +29,7 @@ $requestorSettings->setScopeType('AllExistingConnectedOrganizationSubjects');
 
 $requestorSettings->setAcceptRequests(true);
 
-$requestorSettings->setAllowedRequestors([]);
+$requestorSettings->setAllowedRequestors([	]);
 
 
 $requestBody->setRequestorSettings($requestorSettings);
@@ -52,7 +52,7 @@ $approvalStagesApprovalStage1->setIsEscalationEnabled(false);
 $approvalStagesApprovalStage1->setEscalationTimeInMinutes(11520);
 
 $primaryApproversUserSet1 = new GroupMembers();
-$primaryApproversUserSet1->set@odatatype('#microsoft.graph.groupMembers');
+$primaryApproversUserSet1->setOdataType('#microsoft.graph.groupMembers');
 
 $primaryApproversUserSet1->setIsBackup(true);
 
@@ -63,7 +63,7 @@ $primaryApproversUserSet1->setDescription('group for users from connected organi
 
 $primaryApproversArray []= $primaryApproversUserSet1;
 $primaryApproversUserSet2 = new ExternalSponsors();
-$primaryApproversUserSet2->set@odatatype('#microsoft.graph.externalSponsors');
+$primaryApproversUserSet2->setOdataType('#microsoft.graph.externalSponsors');
 
 $primaryApproversUserSet2->setIsBackup(false);
 
@@ -97,7 +97,7 @@ $questionsAccessPackageQuestion1Text->setLocalizedTexts($localizedTextsArray);
 
 
 $questionsAccessPackageQuestion1->setText($questionsAccessPackageQuestion1Text);
-$questionsAccessPackageQuestion1->set@odatatype('#microsoft.graph.accessPackageMultipleChoiceQuestion');
+$questionsAccessPackageQuestion1->setOdataType('#microsoft.graph.accessPackageMultipleChoiceQuestion');
 
 $choicesAccessPackageAnswerChoice1 = new AccessPackageAnswerChoice();
 $choicesAccessPackageAnswerChoice1->setActualValue('AZ');
@@ -160,7 +160,7 @@ $questionsAccessPackageQuestion2Text->setLocalizedTexts($localizedTextsArray);
 
 
 $questionsAccessPackageQuestion2->setText($questionsAccessPackageQuestion2Text);
-$questionsAccessPackageQuestion2->set@odatatype('#microsoft.graph.accessPackageTextInputQuestion');
+$questionsAccessPackageQuestion2->setOdataType('#microsoft.graph.accessPackageTextInputQuestion');
 
 $questionsAccessPackageQuestion2->setIsSingleLineQuestion(false);
 
@@ -171,7 +171,7 @@ $requestBody->setQuestions($questionsArray);
 
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->byAccessPackageAssignmentPolicieId('accessPackageAssignmentPolicy-id')->put($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->byAccessPackageAssignmentPolicyId('accessPackageAssignmentPolicy-id')->put($requestBody);
 
 
 ```
