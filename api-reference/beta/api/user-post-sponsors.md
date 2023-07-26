@@ -1,5 +1,5 @@
 ---
-title: "Assign sponsors"
+title: "Add sponsor"
 description: "Assign a user a sponsor."
 author: "sadia353"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# Assign sponsors
+# Add sponsor
 
 Namespace: microsoft.graph
 

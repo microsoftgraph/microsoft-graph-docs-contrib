@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Devices.CorporateManagement
+Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.enterpriseCodeSigningCertificate"
@@ -18,6 +18,6 @@ $params = @{
 	uploadDateTime = [System.DateTime]::Parse("2016-12-31T23:58:46.5747426-08:00")
 }
 
-Update-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate -EnterpriseCodeSigningCertificateId $enterpriseCodeSigningCertificateId -BodyParameter $params
+Update-MgDeviceAppMgtEnterpriseCodeSigningCertificate -EnterpriseCodeSigningCertificateId $enterpriseCodeSigningCertificateId -BodyParameter $params
 
 ```
