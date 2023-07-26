@@ -19,6 +19,7 @@ The following table lists the APIs that currently support payment models.
 |[Export Teams content](/microsoftteams/export-teams-content)| [channel: getAllMessages](/graph/api/channel-getallmessages)</br>[chats: getAllMessages](/graph/api/chats-getallmessages) |
 | Update (DLP patch) | [Update channel](/graph/api/channel-patch)</br>[Update chat](/graph/api/chat-patch)</br>[Update chatMessage](/graph/api/chatmessage-update) |
 | [Create subscription (change notifications)](/graph/api/subscription-post-subscriptions) | [channel](/graph/api/resources/channel)</br>[chat](/graph/api/resources/chat)</br>[chatMessage](/graph/api/resources/chatmessage)</br>[conversationMember](/graph/api/resources/conversationmember) |
+| [Fetch meeting transcript and recording](/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts) | [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) </br> [Get callRecording content](/graph/api/callrecording-get#example-2-get-a-callrecording-content) |
 
 > [!NOTE]
 > Billing for these APIs started on July 5th, 2022. To set up an active Azure subscription for your application for billing purposes, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup). For more details, see [Payment and billing updates](#payment-and-billing).
@@ -114,6 +115,38 @@ Seeded capacity is the amount of capacity that an app can use before a consumpti
 | `model=B` | Backup and restore, migration, sentiment analysis, analytics and insights | None | No | Yes |
 | `evaluation model` | Backup and restore, migration, sentiment analysis, analytics and insights | 500 messages per month per app | No | No |
 
+## Payment models for meeting APIs
+
+This section describes the payment models for Teams meeting transcript and recording APIs. The following table lists the APIs that currently support payment models.
+
+| Scenario | APIs |
+| ------ | ----- |
+| [Fetch meeting transcript and recording](/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts) | [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) </br> [Get callRecording content](/graph/api/callrecording-get#example-2-get-a-callrecording-content) |
+
+You will receive an evaluation quota which apps can use. Apps don’t require to pass any billing model information for making requests to the API within their evaluation quota. The evaluation quota is enforced per app, per tenant, and per month. The quota is reset at the beginning of each calendar month, and any unused amount doesn't get carried over to the next month.
+
+Once the evaluation quota is over, apps need to set up an active Azure subscription for billing purposes as described in [enable metered APIs and services in Microsoft Graph](metered-api-setup.md). If the onboarding isn't completed, the following error encounters while calling the metered APIs.
+
+**Error code**: `402` (Payment Required) </br>
+**Error string**: Evaluation mode capacity has been exceeded. To call this API, the app must be associated with an Azure subscription. For more information, see [payment models and licensing requirements for Microsoft Teams APIs](teams-licenses.md).
+
+The following table summarizes the evaluation mode behavior for transcript and recording APIs:
+
+| Azure Billing Setup | Model Parameter | Result |
+| -------- | -------- | -------- |
+| Not configured | No parameter | Evaluation mode capacity will be available for download. Beyond that API will fail with error code: `402` (Payment Required). |
+| Configured | No parameter | Unlimited meeting content will be available for download. Engineering RPS limits still apply. |
+
+> [!NOTE]
+> Model A and B aren't supported by these APIs.
+
+The following table lists the evaluation mode capacity and price for additional usage of these APIs:
+
+| API | Evaluation mode capacity  | Price for additional use  | Notes |
+| -------- | -------- | -------- | -------- |
+| [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) | 600 minutes per app per tenant  | $0.0 per minute | The duration will be rounded down to nearest minute. |
+| [Get callRecording content](/graph/api/callrecording-get#example-2-get-a-callrecording-content) | 600 minutes per app per tenant  | $0.0 per minute | The duration will be rounded down to nearest minute. |
+
 ## Payment and billing
 
 On July 5, 2022, [billing changes for Teams APIs](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/) took effect. 
@@ -185,38 +218,6 @@ You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-get
 4. Choose **Run report**.
 
 ![Screenshot of the Teams User Activity report](images/teams-user-activity-report-sample.png)
-
-## Payment models for meeting APIs
-
-This section describes the payment models for Teams meeting transcript and recording APIs. The following table lists the APIs that currently support payment models.
-
-| Scenario | APIs |
-| ------ | ----- |
-| [Fetch meeting transcript and recording](/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts) | [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) </br> [Get callRecording content](/graph/api/callrecording-get#example-2-get-a-callrecording-content) |
-
-You will receive an evaluation quota which apps can use. Apps don’t require to pass any billing model information for making requests to the API within their evaluation quota. The evaluation quota is enforced per app, per tenant, and per month. The quota is reset at the beginning of each calendar month, and any unused amount doesn't get carried over to the next month.
-
-Once the evaluation quota is over, apps need to set up an active Azure subscription for billing purposes as described in [enable metered APIs and services in Microsoft Graph](metered-api-setup.md). If the onboarding isn't completed, the following error encounters while calling the metered APIs.
-
-**Error code**: 402 (Payment Required) </br>
-**Error string**: Evaluation mode capacity has been exceeded. To call this API, the app must be associated with an Azure subscription. For more information, see [payment models and licensing requirements for Microsoft Teams APIs](teams-licenses.md).
-
-The following table summarizes the evaluation mode behavior for transcript and recording APIs:
-
-| Azure Billing Setup | Model Parameter | Result |
-| -------- | -------- | -------- |
-| Not configured | No parameter | Evaluation mode capacity will be available for download. Beyond that API will fail with error code: 402 (Payment Required). |
-| Configured | No parameter | Unlimited meeting content will be available for download. Engineering RPS limits still apply. |
-
-> [!NOTE]
-> Model A and B aren't supported by these APIs.
-
-The following table lists the evaluation mode capacity and price for additional usage of these APIs:
-
-| API | Evaluation mode capacity  | Price for additional use  | Notes |
-| -------- | -------- | -------- | -------- |
-| [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) | 600 minutes per app per tenant  | $0.0 per minute | The duration will be rounded down to nearest minute. |
-| [Get callRecording content](/graph/api/callrecording-get#example-2-get-a-callrecording-content) | 600 minutes per app per tenant  | $0.0 per minute | The duration will be rounded down to nearest minute. |
 
 ## Frequently asked questions
 
