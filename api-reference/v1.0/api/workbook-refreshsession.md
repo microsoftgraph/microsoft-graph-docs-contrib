@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to refresh an existing workbook session. 
+Use this API to refresh an existing workbook session.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,15 +27,17 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /me/drive/items/{id}/workbook/refreshSession
 POST /me/drive/root:/{item-path}:/workbook/refreshSession
-workbook-session-id: {session-id}
 ```
+
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| workbook-session-id | Workbook session Id to be refreshed |
+| workbook-session-id | Workbook session Id to be refreshed. Required. |
 
 ## Request body
+
 This API does not require any request body.
 
 ## Response
@@ -91,11 +93,11 @@ workbook-session-id: {session-id}
 
 ---
 
-Note that workbook-session-id header is required. 
+Note that workbook-session-id header is required.
 
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 <!-- {
   "blockType": "response",

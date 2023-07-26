@@ -27,13 +27,14 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /me/drive/items/{id}/workbook/closeSession
 POST /me/drive/root:/{item-path}:/workbook/closeSession
-workbook-session-id: {session-id}
 ```
+
 ## Request headers
+
 | Name                | Description                      |
 |:--------------------|:---------------------------------|
 | Authorization       | Bearer {token}. Required.        |
-| workbook-session-id | Workbook session Id to be closed |
+| workbook-session-id | Workbook session Id to be closed. Required. |
 
 ## Request body
 This API does not require any request body.
