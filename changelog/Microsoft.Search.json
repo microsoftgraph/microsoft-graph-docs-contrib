@@ -1765,14 +1765,14 @@
       "ApiChange": "Member",
       "ChangedApiName": "enabledContentExperiences",
       "ChangeType": "deletion",
-      "Description": "Removed the **compliance** enum member from **contentExperienceType** enumeration in [Enabled Content Experiences](https://learn.microsoft.com/en-us/graph/connecting-external-content-manage-connections#enable-content-experiences).",
+      "Description": "Removed the **compliance** member from the **contentExperienceType** enumeration.",
       "Target": "contentExperienceType"
     }
   ],
   "Id": "a8b33b2c-b741-4e27-b199-a7659ca29a8c",
   "Cloud": "prd",
   "Version": "beta",
-  "CreatedDateTime": "2023-07-20T17:03:43.000Z",
+  "CreatedDateTime": "2023-07-25T17:03:43.000Z",
   "WorkloadArea": "Search",
   "SubArea": ""
 }
