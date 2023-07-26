@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AssignPostRequestBody();
 $assignmentsCloudPcProvisioningPolicyAssignment1 = new CloudPcProvisioningPolicyAssignment();
 $assignmentsCloudPcProvisioningPolicyAssignment1->setId('b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff');
 
 $assignmentsCloudPcProvisioningPolicyAssignment1Target = new CloudPcManagementGroupAssignmentTarget();
-$assignmentsCloudPcProvisioningPolicyAssignment1Target->set@odatatype('microsoft.graph.cloudPcManagementGroupAssignmentTarget');
+$assignmentsCloudPcProvisioningPolicyAssignment1Target->setOdataType('microsoft.graph.cloudPcManagementGroupAssignmentTarget');
 
 $assignmentsCloudPcProvisioningPolicyAssignment1Target->setGroupId('64ff06de-9c00-4a5a-98b5-7f5abe26ffff');
 
@@ -27,7 +27,7 @@ $requestBody->setAssignments($assignmentsArray);
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->byProvisioningPolicieId('cloudPcProvisioningPolicy-id')->assign()->post($requestBody);
+$graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->byCloudPcProvisioningPolicyId('cloudPcProvisioningPolicy-id')->assign()->post($requestBody);
 
 
 ```

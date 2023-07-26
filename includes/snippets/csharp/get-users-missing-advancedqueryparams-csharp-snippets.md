@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.Users.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "endsWith(mail,'@outlook.com')";
+	requestConfiguration.QueryParameters.Filter = "endsWith(userPrincipalName,'";
 });
 
 
