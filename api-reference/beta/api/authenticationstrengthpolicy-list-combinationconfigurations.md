@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationSt
 [!INCLUDE [sample-code](../includes/snippets/php/list-authenticationcombinationconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-authenticationcombinationconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

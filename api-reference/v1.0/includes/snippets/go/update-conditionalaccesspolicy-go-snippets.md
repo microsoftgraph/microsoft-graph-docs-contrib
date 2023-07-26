@@ -23,8 +23,7 @@ signInRiskLevels := []graphmodels.RiskLevelable {
 	riskLevel := graphmodels.MEDIUM_RISKLEVEL 
 	conditions.SetRiskLevel(&riskLevel) 
 	riskLevel := graphmodels.LOW_RISKLEVEL 
-	conditions.SetRiskLevel(&riskLevel) 
-
+	conditions.SetRiskLevel(&riskLevel)
 }
 conditions.SetSignInRiskLevels(signInRiskLevels)
 requestBody.SetConditions(conditions)

@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceupdatemessage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-serviceupdatemessage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

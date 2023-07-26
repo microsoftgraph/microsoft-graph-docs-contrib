@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPa
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcexternalpartnersetting-and-properties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-cloudpcexternalpartnersetting-and-properties-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -169,6 +173,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPa
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcexternalpartnersetting-usingselect-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-cloudpcexternalpartnersetting-usingselect-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

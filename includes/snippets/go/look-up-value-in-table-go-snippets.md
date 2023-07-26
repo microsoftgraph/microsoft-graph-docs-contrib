@@ -9,8 +9,8 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Drives/Item/Items/Item/Workbook/Functions/Vlookup"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
@@ -20,10 +20,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("workbook-session-id", "{session-id}")
 
-configuration := &graphconfig.DriveItemItemItemWorkbookFunctionsVlookupRequestBuilderPostRequestConfiguration{
+configuration := &graphdrives.DriveItemItemItemWorkbookFunctionsVlookupRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewVlookupPostRequestBody()
+requestBody := graphdrives.NewVlookupPostRequestBody()
 lookupValue := "pear"
 requestBody.SetLookupValue(&lookupValue) 
 tableArray := graphmodels.NewJson()

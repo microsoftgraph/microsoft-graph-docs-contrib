@@ -26,7 +26,6 @@ governanceRuleSetting.SetSetting(&setting)
 
 adminEligibleSettings := []graphmodels.GovernanceRuleSettingable {
 	governanceRuleSetting,
-
 }
 requestBody.SetAdminEligibleSettings(adminEligibleSettings)
 

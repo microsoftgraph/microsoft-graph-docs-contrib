@@ -24,7 +24,6 @@ answerOptions := []string {
 	"Product Manager",
 	"Data scientist",
 	"Other",
-
 }
 requestBody.SetAnswerOptions(answerOptions)
 

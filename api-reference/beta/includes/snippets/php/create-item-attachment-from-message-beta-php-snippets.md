@@ -7,47 +7,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new Attachment();
-$requestBody->set@odatatype('#microsoft.graph.itemAttachment');
+$requestBody = new ItemAttachment();
+$requestBody->setOdataType('#microsoft.graph.itemAttachment');
 
 $requestBody->setName('Holiday event');
 
-$additionalData = [
-		'item' => $requestBody = new Item();
-$		requestBody->set@odatatype('microsoft.graph.event');
+$item = new Event();
+$item->setOdataType('microsoft.graph.event');
 
-$		requestBody->setSubject('Discuss gifts for children');
+$item->setSubject('Discuss gifts for children');
 
-$body = new Body();
-$		body->setContentType('HTML');
+$itemBody = new ItemBody();
+$itemBody->setContentType(new BodyType('hTML'));
 
-$		body->setContent('Let\'s look for funding!');
-
-
-$requestBody->setBody($body);
-$start = new Start();
-$		start->setDateTime('2016-12-02T18:00:00');
-
-$		start->setTimeZone('Pacific Standard Time');
+$itemBody->setContent('Let\'s look for funding!');
 
 
-$requestBody->setStart($start);
-$end = new End();
-$		end->setDateTime('2016-12-02T19:00:00');
+$item->setBody($itemBody);
+$itemStart = new DateTimeTimeZone();
+$itemStart->setDateTime('2016-12-02T18:00:00');
 
-$		end->setTimeZone('Pacific Standard Time');
+$itemStart->setTimeZone('Pacific Standard Time');
 
 
-$requestBody->setEnd($end);
+$item->setStart($itemStart);
+$itemEnd = new DateTimeTimeZone();
+$itemEnd->setDateTime('2016-12-02T19:00:00');
+
+$itemEnd->setTimeZone('Pacific Standard Time');
+
+
+$item->setEnd($itemEnd);
 
 $requestBody->setItem($item);
-
-];
-$requestBody->setAdditionalData($additionalData);
-
-
 
 
 $result = $graphServiceClient->me()->messages()->byMessageId('message-id')->attachments()->post($requestBody);

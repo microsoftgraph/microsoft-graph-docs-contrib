@@ -34,7 +34,6 @@ keyCredential.SetDisplayName(&displayName)
 
 keyCredentials := []graphmodels.KeyCredentialable {
 	keyCredential,
-
 }
 requestBody.SetKeyCredentials(keyCredentials)
 

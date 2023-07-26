@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	adminEligibleSettings = @(
 		@{
 			ruleIdentifier = "ExpirationRule"
-			setting = "{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}"
+			setting = '{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}'
 		}
 	)
 }
 
-Update-MgPrivilegedAccessRoleSetting -PrivilegedAccessId $privilegedAccessId -GovernanceRoleSettingId $governanceRoleSettingId -BodyParameter $params
+Update-MgBetaPrivilegedAccessRoleSetting -PrivilegedAccessId $privilegedAccessId -GovernanceRoleSettingId $governanceRoleSettingId -BodyParameter $params
 
 ```

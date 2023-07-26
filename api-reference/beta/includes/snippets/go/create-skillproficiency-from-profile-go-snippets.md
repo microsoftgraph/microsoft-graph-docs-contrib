@@ -18,7 +18,6 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewSkillProficiency()
 categories := []string {
 	"Professional",
-
 }
 requestBody.SetCategories(categories)
 allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
@@ -29,7 +28,6 @@ proficiency := graphmodels.GENERALPROFESSIONAL_SKILLPROFICIENCYLEVEL
 requestBody.SetProficiency(&proficiency) 
 collaborationTags := []string {
 	"ableToMentor",
-
 }
 requestBody.SetCollaborationTags(collaborationTags)
 

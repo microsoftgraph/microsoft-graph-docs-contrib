@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Drives/Item/Items/Item/Workbook/Names/AddFormulaLocal"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddFormulaLocalPostRequestBody()
+requestBody := graphdrives.NewAddFormulaLocalPostRequestBody()
 name := "test7"
 requestBody.SetName(&name) 
 formula := "=SUM(Sheet2!$A$1+Sheet2!$A$2)"

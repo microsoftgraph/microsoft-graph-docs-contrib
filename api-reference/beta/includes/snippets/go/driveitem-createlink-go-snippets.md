@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Drives/Item/Items/Item/CreateLink"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCreateLinkPostRequestBody()
+requestBody := graphdrives.NewCreateLinkPostRequestBody()
 type := "view"
 requestBody.SetType(&type) 
 scope := "anonymous"
@@ -28,7 +29,6 @@ driveRecipient := graphmodels.NewDriveRecipient()
 
 recipients := []graphmodels.DriveRecipientable {
 	driveRecipient,
-
 }
 requestBody.SetRecipients(recipients)
 sendNotification := true

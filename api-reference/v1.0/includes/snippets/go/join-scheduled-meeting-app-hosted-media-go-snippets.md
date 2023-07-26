@@ -22,11 +22,10 @@ callbackUri := "https://bot.contoso.com/callback"
 requestBody.SetCallbackUri(&callbackUri) 
 requestedModalities := []graphmodels.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
-	requestBody.SetModality(&modality) 
-
+	requestBody.SetModality(&modality)
 }
 requestBody.SetRequestedModalities(requestedModalities)
-mediaConfig := graphmodels.NewMediaConfig()
+mediaConfig := graphmodels.NewAppHostedMediaConfig()
 requestBody.SetMediaConfig(mediaConfig)
 chatInfo := graphmodels.NewChatInfo()
 threadId := "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2"
@@ -34,18 +33,20 @@ chatInfo.SetThreadId(&threadId)
 messageId := "0"
 chatInfo.SetMessageId(&messageId) 
 requestBody.SetChatInfo(chatInfo)
-meetingInfo := graphmodels.NewMeetingInfo()
-additionalData := map[string]interface{}{
-organizer := graphmodels.New()
-user := graphmodels.New()
+meetingInfo := graphmodels.NewOrganizerMeetingInfo()
+organizer := graphmodels.NewIdentitySet()
+user := graphmodels.NewIdentity()
 id := "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
 user.SetId(&id) 
-tenantId := "aa67bd4c-8475-432d-bd41-39f255720e0a"
-user.SetTenantId(&tenantId) 
 displayName := "Bob"
 user.SetDisplayName(&displayName) 
-	organizer.SetUser(user)
-	meetingInfo.SetOrganizer(organizer)
+additionalData := map[string]interface{}{
+	"tenantId" : "aa67bd4c-8475-432d-bd41-39f255720e0a", 
+}
+user.SetAdditionalData(additionalData)
+organizer.SetUser(user)
+meetingInfo.SetOrganizer(organizer)
+additionalData := map[string]interface{}{
 	allowConversationWithoutHost := true
 meetingInfo.SetAllowConversationWithoutHost(&allowConversationWithoutHost) 
 }

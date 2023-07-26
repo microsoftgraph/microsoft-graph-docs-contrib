@@ -10,6 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AdministrativeUnit
 {
+	DisplayName = "Executive Division",
 	AdditionalData = new Dictionary<string, object>
 	{
 		{

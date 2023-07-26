@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/DirectoryObjects/Item/GetMemberGroups"
+	  graphdirectoryobjects "github.com/microsoftgraph/msgraph-beta-sdk-go/directoryobjects"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewGetMemberGroupsPostRequestBody()
+requestBody := graphdirectoryobjects.NewGetMemberGroupsPostRequestBody()
 securityEnabledOnly := false
 requestBody.SetSecurityEnabledOnly(&securityEnabledOnly) 
 

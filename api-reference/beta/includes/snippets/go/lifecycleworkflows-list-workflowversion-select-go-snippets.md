@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemVersionsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowItemVersionsRequestBuilderGetQueryParameters{
 	Select: [] string {"category","displayName","versionNumber"},
 }
-configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemVersionsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowItemVersionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

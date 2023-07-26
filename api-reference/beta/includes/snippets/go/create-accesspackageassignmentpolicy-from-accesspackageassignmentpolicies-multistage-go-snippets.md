@@ -60,38 +60,34 @@ escalationTimeInMinutes := int32(11520)
 approvalStage.SetEscalationTimeInMinutes(&escalationTimeInMinutes) 
 
 
-userSet := graphmodels.NewUserSet()
+userSet := graphmodels.NewGroupMembers()
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
-additionalData := map[string]interface{}{
-	"id" : "string (identifier)", 
-	"description" : "group for users from connected organizations which have no external sponsor", 
-}
-userSet.SetAdditionalData(additionalData)
-userSet1 := graphmodels.NewUserSet()
+id := "string (identifier)"
+userSet.SetId(&id) 
+description := "group for users from connected organizations which have no external sponsor"
+userSet.SetDescription(&description) 
+userSet1 := graphmodels.NewExternalSponsors()
 isBackup := false
 userSet1.SetIsBackup(&isBackup) 
 
 primaryApprovers := []graphmodels.UserSetable {
 	userSet,
 	userSet1,
-
 }
 approvalStage.SetPrimaryApprovers(primaryApprovers)
 
 
-userSet := graphmodels.NewUserSet()
+userSet := graphmodels.NewSingleUser()
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
-additionalData := map[string]interface{}{
-	"id" : "string (identifier)", 
-	"description" : "user if the external sponsor does not respond", 
-}
-userSet.SetAdditionalData(additionalData)
+id := "string (identifier)"
+userSet.SetId(&id) 
+description := "user if the external sponsor does not respond"
+userSet.SetDescription(&description) 
 
 escalationApprovers := []graphmodels.UserSetable {
 	userSet,
-
 }
 approvalStage.SetEscalationApprovers(escalationApprovers)
 approvalStage1 := graphmodels.NewApprovalStage()
@@ -105,45 +101,40 @@ escalationTimeInMinutes := int32(11520)
 approvalStage1.SetEscalationTimeInMinutes(&escalationTimeInMinutes) 
 
 
-userSet := graphmodels.NewUserSet()
+userSet := graphmodels.NewGroupMembers()
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
-additionalData := map[string]interface{}{
-	"id" : "string (identifier)", 
-	"description" : "group for users from connected organizations which have no internal sponsor", 
-}
-userSet.SetAdditionalData(additionalData)
-userSet1 := graphmodels.NewUserSet()
+id := "string (identifier)"
+userSet.SetId(&id) 
+description := "group for users from connected organizations which have no internal sponsor"
+userSet.SetDescription(&description) 
+userSet1 := graphmodels.NewInternalSponsors()
 isBackup := false
 userSet1.SetIsBackup(&isBackup) 
 
 primaryApprovers := []graphmodels.UserSetable {
 	userSet,
 	userSet1,
-
 }
 approvalStage1.SetPrimaryApprovers(primaryApprovers)
 
 
-userSet := graphmodels.NewUserSet()
+userSet := graphmodels.NewSingleUser()
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
-additionalData := map[string]interface{}{
-	"id" : "string (identifier)", 
-	"description" : "user if the internal sponsor does not respond", 
-}
-userSet.SetAdditionalData(additionalData)
+id := "string (identifier)"
+userSet.SetId(&id) 
+description := "user if the internal sponsor does not respond"
+userSet.SetDescription(&description) 
 
 escalationApprovers := []graphmodels.UserSetable {
 	userSet,
-
 }
 approvalStage1.SetEscalationApprovers(escalationApprovers)
 
 approvalStages := []graphmodels.ApprovalStageable {
 	approvalStage,
 	approvalStage1,
-
 }
 requestApprovalSettings.SetApprovalStages(approvalStages)
 requestBody.SetRequestApprovalSettings(requestApprovalSettings)

@@ -8,18 +8,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/TranslateExchangeIds"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewTranslateExchangeIdsPostRequestBody()
+requestBody := graphusers.NewItemTranslateExchangeIdsPostRequestBody()
 inputIds := []string {
 	"{rest-formatted-id-1}",
 	"{rest-formatted-id-2}",
-
 }
 requestBody.SetInputIds(inputIds)
 sourceIdType := graphmodels.RESTID_EXCHANGEIDFORMAT 

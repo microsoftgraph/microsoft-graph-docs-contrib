@@ -20,12 +20,11 @@ displayName := "Test API"
 requestBody.SetDisplayName(&displayName) 
 targetUrl := "https://someapi.com/api"
 requestBody.SetTargetUrl(&targetUrl) 
-authenticationConfiguration := graphmodels.NewApiAuthenticationConfigurationBase()
-additionalData := map[string]interface{}{
-	"username" : "<USERNAME>", 
-	"password" : "<PASSWORD>", 
-}
-authenticationConfiguration.SetAdditionalData(additionalData)
+authenticationConfiguration := graphmodels.NewBasicAuthentication()
+username := "<USERNAME>"
+authenticationConfiguration.SetUsername(&username) 
+password := "<PASSWORD>"
+authenticationConfiguration.SetPassword(&password) 
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 
 result, err := graphClient.Identity().ApiConnectors().Post(context.Background(), requestBody, nil)

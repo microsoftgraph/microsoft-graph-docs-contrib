@@ -18,7 +18,6 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewPermission()
 roles := []string {
 	"read",
-
 }
 requestBody.SetRoles(roles)
 

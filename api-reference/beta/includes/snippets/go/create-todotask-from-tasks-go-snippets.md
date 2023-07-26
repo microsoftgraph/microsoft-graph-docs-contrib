@@ -20,7 +20,6 @@ title := "A new task"
 requestBody.SetTitle(&title) 
 categories := []string {
 	"Important",
-
 }
 requestBody.SetCategories(categories)
 
@@ -35,7 +34,6 @@ linkedResource.SetDisplayName(&displayName)
 
 linkedResources := []graphmodels.LinkedResourceable {
 	linkedResource,
-
 }
 requestBody.SetLinkedResources(linkedResources)
 

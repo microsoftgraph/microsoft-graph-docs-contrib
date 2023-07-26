@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/reports"
+	  graphreports "github.com/microsoftgraph/msgraph-beta-sdk-go/reports"
 	  //other-imports
 )
 
@@ -18,10 +18,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "feature eq 'registration'"
 
-requestParameters := &graphconfig.ReportsGetCredentialUsageSummary(period='{period}')RequestBuilderGetQueryParameters{
+requestParameters := &graphreports.ReportsGetCredentialUsageSummary(period='{period}')RequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.ReportsGetCredentialUsageSummary(period='{period}')RequestBuilderGetRequestConfiguration{
+configuration := &graphreports.ReportsGetCredentialUsageSummary(period='{period}')RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

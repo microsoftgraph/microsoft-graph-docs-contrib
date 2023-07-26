@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Test/userflowId
 [!INCLUDE [sample-code](../includes/snippets/php/get-b2xuserflow-list-userflowidentityproviders-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-b2xuserflow-list-userflowidentityproviders-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

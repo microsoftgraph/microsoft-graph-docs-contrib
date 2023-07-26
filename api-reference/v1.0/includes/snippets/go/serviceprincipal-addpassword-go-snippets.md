@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/ServicePrincipals/Item/AddPassword"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddPasswordPostRequestBody()
+requestBody := graphserviceprincipals.NewAddPasswordPostRequestBody()
 passwordCredential := graphmodels.NewPasswordCredential()
 displayName := "Password friendly name"
 passwordCredential.SetDisplayName(&displayName) 

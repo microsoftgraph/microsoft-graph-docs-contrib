@@ -46,7 +46,6 @@ identities := []graphmodels.ObjectIdentityable {
 	objectIdentity,
 	objectIdentity1,
 	objectIdentity2,
-
 }
 requestBody.SetIdentities(identities)
 passwordProfile := graphmodels.NewPasswordProfile()

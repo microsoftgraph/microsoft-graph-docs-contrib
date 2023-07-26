@@ -22,31 +22,26 @@ requestType := graphmodels.ADMINUPDATE_ACCESSPACKAGEREQUESTTYPE
 requestBody.SetRequestType(&requestType) 
 
 
-accessPackageAnswer := graphmodels.NewAccessPackageAnswer()
-answeredQuestion := graphmodels.NewAccessPackageQuestion()
+accessPackageAnswer := graphmodels.NewAccessPackageAnswerString()
+value := "UpdatedAnswerValue"
+accessPackageAnswer.SetValue(&value) 
+answeredQuestion := graphmodels.NewAccessPackageMultipleChoiceQuestion()
 id := "8fe745e7-80b2-490d-bd22-4e708c77288c"
 answeredQuestion.SetId(&id) 
 accessPackageAnswer.SetAnsweredQuestion(answeredQuestion)
-additionalData := map[string]interface{}{
-	"value" : "UpdatedAnswerValue", 
-}
-accessPackageAnswer.SetAdditionalData(additionalData)
-accessPackageAnswer1 := graphmodels.NewAccessPackageAnswer()
+accessPackageAnswer1 := graphmodels.NewAccessPackageAnswerString()
+value := "My updated answer."
+accessPackageAnswer1.SetValue(&value) 
 displayValue := "This is my updated answer to the question."
 accessPackageAnswer1.SetDisplayValue(&displayValue) 
-answeredQuestion := graphmodels.NewAccessPackageQuestion()
+answeredQuestion := graphmodels.NewAccessPackageTextInputQuestion()
 id := "7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6"
 answeredQuestion.SetId(&id) 
 accessPackageAnswer1.SetAnsweredQuestion(answeredQuestion)
-additionalData := map[string]interface{}{
-	"value" : "My updated answer.", 
-}
-accessPackageAnswer1.SetAdditionalData(additionalData)
 
 answers := []graphmodels.AccessPackageAnswerable {
 	accessPackageAnswer,
 	accessPackageAnswer1,
-
 }
 requestBody.SetAnswers(answers)
 assignment := graphmodels.NewAccessPackageAssignment()

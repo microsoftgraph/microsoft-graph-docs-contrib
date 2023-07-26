@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
+	  graphcommunications "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.CommunicationsCallRecordItemRequestBuilderGetQueryParameters{
+requestParameters := &graphcommunications.CommunicationsCallRecordItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"sessions($expand=segments)"},
 }
-configuration := &graphconfig.CommunicationsCallRecordItemRequestBuilderGetRequestConfiguration{
+configuration := &graphcommunications.CommunicationsCallRecordItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/ChangePassword"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewChangePasswordPostRequestBody()
+requestBody := graphusers.NewItemChangePasswordPostRequestBody()
 currentPassword := "xWwvJ]6NMw+bWH-d"
 requestBody.SetCurrentPassword(&currentPassword) 
 newPassword := "0eM85N54wFxWwvJ]"

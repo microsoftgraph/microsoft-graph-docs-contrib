@@ -8,18 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Security/TiIndicators/DeleteTiIndicatorsByExternalId"
+	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewDeleteTiIndicatorsByExternalIdPostRequestBody()
+requestBody := graphsecurity.NewDeleteTiIndicatorsByExternalIdPostRequestBody()
 value := []string {
 	"externalId-value1",
 	"externalId-value2",
-
 }
 requestBody.SetValue(value)
 

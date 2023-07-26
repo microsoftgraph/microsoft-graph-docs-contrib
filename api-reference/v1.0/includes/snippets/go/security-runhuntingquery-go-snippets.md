@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Security/MicrosoftGraphSecurityRunHuntingQuery"
+	  graphsecurity "github.com/microsoftgraph/msgraph-sdk-go/security"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewRunHuntingQueryPostRequestBody()
+requestBody := graphsecurity.NewRunHuntingQueryPostRequestBody()
 query := "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
 requestBody.SetQuery(&query) 
 

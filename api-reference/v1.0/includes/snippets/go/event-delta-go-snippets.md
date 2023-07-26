@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
@@ -20,14 +20,14 @@ headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "odata.maxpagesize=2")
 
 
-requestStartdatetime := "{start_datetime}"
-requestEnddatetime := "{end_datetime}"
+requestStartDateTime := "{start_datetime}"
+requestEndDateTime := "{end_datetime}"
 
-requestParameters := &graphconfig.ItemCalendarViewDelta()RequestBuilderGetQueryParameters{
-	Startdatetime: &requestStartdatetime,
-	Enddatetime: &requestEnddatetime,
+requestParameters := &graphusers.ItemCalendarViewDelta()RequestBuilderGetQueryParameters{
+	StartDateTime: &requestStartDateTime,
+	EndDateTime: &requestEndDateTime,
 }
-configuration := &graphconfig.ItemCalendarViewDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemCalendarViewDelta()RequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

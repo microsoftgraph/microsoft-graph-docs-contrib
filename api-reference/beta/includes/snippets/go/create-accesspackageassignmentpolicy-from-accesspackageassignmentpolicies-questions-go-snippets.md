@@ -56,34 +56,31 @@ escalationTimeInMinutes := int32(11520)
 approvalStage.SetEscalationTimeInMinutes(&escalationTimeInMinutes) 
 
 
-userSet := graphmodels.NewUserSet()
+userSet := graphmodels.NewGroupMembers()
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
-additionalData := map[string]interface{}{
-	"id" : "d2dcb9a1-a445-42ee-83a8-476522ed6cbf", 
-	"description" : "group for users from connected organizations which have no external sponsor", 
-}
-userSet.SetAdditionalData(additionalData)
-userSet1 := graphmodels.NewUserSet()
+id := "d2dcb9a1-a445-42ee-83a8-476522ed6cbf"
+userSet.SetId(&id) 
+description := "group for users from connected organizations which have no external sponsor"
+userSet.SetDescription(&description) 
+userSet1 := graphmodels.NewExternalSponsors()
 isBackup := false
 userSet1.SetIsBackup(&isBackup) 
 
 primaryApprovers := []graphmodels.UserSetable {
 	userSet,
 	userSet1,
-
 }
 approvalStage.SetPrimaryApprovers(primaryApprovers)
 
 approvalStages := []graphmodels.ApprovalStageable {
 	approvalStage,
-
 }
 requestApprovalSettings.SetApprovalStages(approvalStages)
 requestBody.SetRequestApprovalSettings(requestApprovalSettings)
 
 
-accessPackageQuestion := graphmodels.NewAccessPackageQuestion()
+accessPackageQuestion := graphmodels.NewAccessPackageMultipleChoiceQuestion()
 isRequired := false
 accessPackageQuestion.SetIsRequired(&isRequired) 
 text := graphmodels.NewAccessPackageLocalizedContent()
@@ -99,79 +96,72 @@ accessPackageLocalizedText.SetLanguageCode(&languageCode)
 
 localizedTexts := []graphmodels.AccessPackageLocalizedTextable {
 	accessPackageLocalizedText,
-
 }
 text.SetLocalizedTexts(localizedTexts)
 accessPackageQuestion.SetText(text)
-additionalData := map[string]interface{}{
 
 
- := graphmodels.New()
+accessPackageAnswerChoice := graphmodels.NewAccessPackageAnswerChoice()
 actualValue := "AZ"
-.SetActualValue(&actualValue) 
-displayValue := graphmodels.New()
+accessPackageAnswerChoice.SetActualValue(&actualValue) 
+displayValue := graphmodels.NewAccessPackageLocalizedContent()
 
 
- := graphmodels.New()
+accessPackageLocalizedText := graphmodels.NewAccessPackageLocalizedText()
 text := "Arizona"
-.SetText(&text) 
+accessPackageLocalizedText.SetText(&text) 
 languageCode := "es"
-.SetLanguageCode(&languageCode) 
+accessPackageLocalizedText.SetLanguageCode(&languageCode) 
 
-localizedTexts := []graphmodels.Objectable {
-	,
-
+localizedTexts := []graphmodels.AccessPackageLocalizedTextable {
+	accessPackageLocalizedText,
 }
 displayValue.SetLocalizedTexts(localizedTexts)
-.SetDisplayValue(displayValue)
- := graphmodels.New()
+accessPackageAnswerChoice.SetDisplayValue(displayValue)
+accessPackageAnswerChoice1 := graphmodels.NewAccessPackageAnswerChoice()
 actualValue := "CA"
-.SetActualValue(&actualValue) 
-displayValue := graphmodels.New()
+accessPackageAnswerChoice1.SetActualValue(&actualValue) 
+displayValue := graphmodels.NewAccessPackageLocalizedContent()
 
 
- := graphmodels.New()
+accessPackageLocalizedText := graphmodels.NewAccessPackageLocalizedText()
 text := "California"
-.SetText(&text) 
+accessPackageLocalizedText.SetText(&text) 
 languageCode := "es"
-.SetLanguageCode(&languageCode) 
+accessPackageLocalizedText.SetLanguageCode(&languageCode) 
 
-localizedTexts := []graphmodels.Objectable {
-	,
-
+localizedTexts := []graphmodels.AccessPackageLocalizedTextable {
+	accessPackageLocalizedText,
 }
 displayValue.SetLocalizedTexts(localizedTexts)
-.SetDisplayValue(displayValue)
- := graphmodels.New()
+accessPackageAnswerChoice1.SetDisplayValue(displayValue)
+accessPackageAnswerChoice2 := graphmodels.NewAccessPackageAnswerChoice()
 actualValue := "OH"
-.SetActualValue(&actualValue) 
-displayValue := graphmodels.New()
+accessPackageAnswerChoice2.SetActualValue(&actualValue) 
+displayValue := graphmodels.NewAccessPackageLocalizedContent()
 
 
- := graphmodels.New()
+accessPackageLocalizedText := graphmodels.NewAccessPackageLocalizedText()
 text := "Ohio"
-.SetText(&text) 
+accessPackageLocalizedText.SetText(&text) 
 languageCode := "es"
-.SetLanguageCode(&languageCode) 
+accessPackageLocalizedText.SetLanguageCode(&languageCode) 
 
-localizedTexts := []graphmodels.Objectable {
-	,
-
+localizedTexts := []graphmodels.AccessPackageLocalizedTextable {
+	accessPackageLocalizedText,
 }
 displayValue.SetLocalizedTexts(localizedTexts)
-.SetDisplayValue(displayValue)
+accessPackageAnswerChoice2.SetDisplayValue(displayValue)
 
-	choices := []graphmodels.Objectable {
-		,
-		,
-		,
-
-	}
-	allowsMultipleSelection := false
-accessPackageQuestion.SetAllowsMultipleSelection(&allowsMultipleSelection) 
+choices := []graphmodels.AccessPackageAnswerChoiceable {
+	accessPackageAnswerChoice,
+	accessPackageAnswerChoice1,
+	accessPackageAnswerChoice2,
 }
-accessPackageQuestion.SetAdditionalData(additionalData)
-accessPackageQuestion1 := graphmodels.NewAccessPackageQuestion()
+accessPackageQuestion.SetChoices(choices)
+allowsMultipleSelection := false
+accessPackageQuestion.SetAllowsMultipleSelection(&allowsMultipleSelection) 
+accessPackageQuestion1 := graphmodels.NewAccessPackageTextInputQuestion()
 isRequired := false
 accessPackageQuestion1.SetIsRequired(&isRequired) 
 text := graphmodels.NewAccessPackageLocalizedContent()
@@ -187,20 +177,15 @@ accessPackageLocalizedText.SetLanguageCode(&languageCode)
 
 localizedTexts := []graphmodels.AccessPackageLocalizedTextable {
 	accessPackageLocalizedText,
-
 }
 text.SetLocalizedTexts(localizedTexts)
 accessPackageQuestion1.SetText(text)
-additionalData := map[string]interface{}{
-	isSingleLineQuestion := false
+isSingleLineQuestion := false
 accessPackageQuestion1.SetIsSingleLineQuestion(&isSingleLineQuestion) 
-}
-accessPackageQuestion1.SetAdditionalData(additionalData)
 
 questions := []graphmodels.AccessPackageQuestionable {
 	accessPackageQuestion,
 	accessPackageQuestion1,
-
 }
 requestBody.SetQuestions(questions)
 

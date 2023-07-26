@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
@@ -18,11 +18,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "MentionsPreview/IsMentioned eq true"
 
-requestParameters := &graphconfig.ItemMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemMessagesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"Subject","Sender","ReceivedDateTime","MentionsPreview"},
 }
-configuration := &graphconfig.ItemMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

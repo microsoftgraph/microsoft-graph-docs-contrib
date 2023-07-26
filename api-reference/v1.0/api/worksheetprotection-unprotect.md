@@ -60,6 +60,10 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{i
 [!INCLUDE [sample-code](../includes/snippets/csharp/worksheetprotection-unprotect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/worksheetprotection-unprotect-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/worksheetprotection-unprotect-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -74,6 +78,10 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{i
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/worksheetprotection-unprotect-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/worksheetprotection-unprotect-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

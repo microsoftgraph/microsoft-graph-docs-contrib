@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	subject = $null
@@ -17,7 +17,7 @@ $params = @{
 			id = "74d20c7f34aa4a7fb74e2b30004247c5"
 			contentType = "application/vnd.microsoft.card.adaptive"
 			contentUrl = $null
-			content = "{
+			content = '{
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
   "type": "AdaptiveCard",
   "version": "1.2",
@@ -96,7 +96,7 @@ $params = @{
       ]
     }
   ]
-}"
+}'
 			name = $null
 			thumbnailUrl = $null
 		}
@@ -115,6 +115,6 @@ $params = @{
 	)
 }
 
-New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```

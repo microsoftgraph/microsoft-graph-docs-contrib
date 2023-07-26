@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/policies"
+	  graphpolicies "github.com/microsoftgraph/msgraph-beta-sdk-go/policies"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.PoliciesFeatureRolloutPolicieItemRequestBuilderGetQueryParameters{
+requestParameters := &graphpolicies.PoliciesFeatureRolloutPolicieItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"appliesTo"},
 }
-configuration := &graphconfig.PoliciesFeatureRolloutPolicieItemRequestBuilderGetRequestConfiguration{
+configuration := &graphpolicies.PoliciesFeatureRolloutPolicieItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

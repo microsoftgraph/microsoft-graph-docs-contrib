@@ -8,28 +8,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/Messages/Item/CreateReplyAll"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCreateReplyAllPostRequestBody()
+requestBody := graphusers.NewItemCreateReplyAllPostRequestBody()
 message := graphmodels.NewMessage()
 
 
-attachment := graphmodels.NewAttachment()
+attachment := graphmodels.NewFileAttachment()
 name := "guidelines.txt"
 attachment.SetName(&name) 
-additionalData := map[string]interface{}{
-	"contentBytes" : "bWFjIGFuZCBjaGVlc2UgdG9kYXk=", 
-}
-attachment.SetAdditionalData(additionalData)
+contentBytes := []byte("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
+attachment.SetContentBytes(&contentBytes) 
 
 attachments := []graphmodels.Attachmentable {
 	attachment,
-
 }
 message.SetAttachments(attachments)
 requestBody.SetMessage(message)

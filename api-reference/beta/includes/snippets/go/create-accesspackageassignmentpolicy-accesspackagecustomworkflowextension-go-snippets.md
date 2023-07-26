@@ -67,7 +67,6 @@ customExtensionStageSetting1.SetCustomExtension(customExtension)
 customExtensionStageSettings := []graphmodels.CustomExtensionStageSettingable {
 	customExtensionStageSetting,
 	customExtensionStageSetting1,
-
 }
 requestBody.SetCustomExtensionStageSettings(customExtensionStageSettings)
 additionalData := map[string]interface{}{

@@ -25,13 +25,11 @@ requestBody.SetDisplayName(&displayName)
 unifiedRolePermission := graphmodels.NewUnifiedRolePermission()
 allowedResourceActions := []string {
 	"Microsoft.CloudPC/CloudPCs/Read",
-
 }
 unifiedRolePermission.SetAllowedResourceActions(allowedResourceActions)
 
 rolePermissions := []graphmodels.UnifiedRolePermissionable {
 	unifiedRolePermission,
-
 }
 requestBody.SetRolePermissions(rolePermissions)
 additionalData := map[string]interface{}{

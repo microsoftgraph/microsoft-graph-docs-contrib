@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/reports"
+	  graphreports "github.com/microsoftgraph/msgraph-sdk-go/reports"
 	  //other-imports
 )
 
@@ -18,10 +18,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFormat := "text/csv"
 
-requestParameters := &graphconfig.ReportsGetM365AppUserDetail(period='{period}')RequestBuilderGetQueryParameters{
+requestParameters := &graphreports.ReportsGetM365AppUserDetail(period='{period}')RequestBuilderGetQueryParameters{
 	Format: &requestFormat,
 }
-configuration := &graphconfig.ReportsGetM365AppUserDetail(period='{period}')RequestBuilderGetRequestConfiguration{
+configuration := &graphreports.ReportsGetM365AppUserDetail(period='{period}')RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

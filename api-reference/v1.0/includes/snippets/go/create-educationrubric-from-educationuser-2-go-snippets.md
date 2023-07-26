@@ -35,11 +35,9 @@ description.SetContent(&content)
 contentType := graphmodels.TEXT_BODYTYPE 
 description.SetContentType(&contentType) 
 rubricLevel.SetDescription(description)
-grading := graphmodels.NewEducationAssignmentGradeType()
-additionalData := map[string]interface{}{
-	"maxPoints" : int32(2) , 
-}
-grading.SetAdditionalData(additionalData)
+grading := graphmodels.NewEducationAssignmentPointsGradeType()
+maxPoints := float32(2)
+grading.SetMaxPoints(&maxPoints) 
 rubricLevel.SetGrading(grading)
 rubricLevel1 := graphmodels.NewRubricLevel()
 displayName := "Poor"
@@ -50,17 +48,14 @@ description.SetContent(&content)
 contentType := graphmodels.TEXT_BODYTYPE 
 description.SetContentType(&contentType) 
 rubricLevel1.SetDescription(description)
-grading := graphmodels.NewEducationAssignmentGradeType()
-additionalData := map[string]interface{}{
-	"maxPoints" : int32(1) , 
-}
-grading.SetAdditionalData(additionalData)
+grading := graphmodels.NewEducationAssignmentPointsGradeType()
+maxPoints := float32(1)
+grading.SetMaxPoints(&maxPoints) 
 rubricLevel1.SetGrading(grading)
 
 levels := []graphmodels.RubricLevelable {
 	rubricLevel,
 	rubricLevel1,
-
 }
 requestBody.SetLevels(levels)
 
@@ -92,7 +87,6 @@ rubricCriterion1.SetDescription(description)
 criteria := []graphmodels.RubricCriterionable {
 	rubricCriterion,
 	rubricCriterion1,
-
 }
 rubricQuality.SetCriteria(criteria)
 weight := float32(50.0)
@@ -124,7 +118,6 @@ rubricCriterion1.SetDescription(description)
 criteria := []graphmodels.RubricCriterionable {
 	rubricCriterion,
 	rubricCriterion1,
-
 }
 rubricQuality1.SetCriteria(criteria)
 weight := float32(50.0)
@@ -133,10 +126,9 @@ rubricQuality1.SetWeight(&weight)
 qualities := []graphmodels.RubricQualityable {
 	rubricQuality,
 	rubricQuality1,
-
 }
 requestBody.SetQualities(qualities)
-grading := graphmodels.NewEducationAssignmentGradeType()
+grading := graphmodels.NewEducationAssignmentPointsGradeType()
 requestBody.SetGrading(grading)
 
 result, err := graphClient.Education().Me().Rubrics().Post(context.Background(), requestBody, nil)

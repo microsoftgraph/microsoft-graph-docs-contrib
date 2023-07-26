@@ -46,7 +46,6 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 	extensionSchemaProperty1,
 	extensionSchemaProperty2,
 	extensionSchemaProperty3,
-
 }
 requestBody.SetProperties(properties)
 

@@ -139,6 +139,10 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 [!INCLUDE [sample-code](../includes/snippets/php/create-appmanagementpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-appmanagementpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

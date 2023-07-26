@@ -175,6 +175,10 @@ To get the result template in the [searchResponse](searchresponse.md), you have 
 
 See [Use search display layout](/graph/search-concept-display-layout) for examples.
 
+## Guest search
+
+The Search API enables guest users to search for items within SharePoint or OneDrive that have been shared with them. To access the list of guest users, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, and in the left navigation, choose **Users**, and select **Guest users**. 
+
 ## Error handling
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
@@ -213,6 +217,8 @@ The search API has the following limitations:
 
 - The search API does not support xrank for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
+- Guest search does not support searches for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
 ## Schema change deprecation warning
@@ -223,7 +229,7 @@ The search API has the following limitations:
 Starting from August 31, 2023, the [externalItem resource](./externalconnectors-externalitem.md) resource within the Microsoft Graph namespace will be deprecated in the beta version of the API.  It will be replaced by the new namespace **Microsoft.Graph.ExternalConnectors**.  To prevent errors when this change is implemented, make sure that any namespace dependencies in the beta version are updated by the specified date. Alternatively, consider transitioning to using the v1 version of the API.
 
 Start updating any existing apps to use current property and type names, and to get current property names in the response.
-For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
+For backward compatibility, the original properties and types are accessible and functional until **September 30, 2023**, after which they will be removed.
 
 | Resource                           | Change type   | Original property | Current property|
 |:-----------------------------------|:--------------|:------------------|:----------------|

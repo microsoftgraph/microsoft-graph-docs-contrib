@@ -28,7 +28,6 @@ localeInfo1.SetLocale(&locale)
 authoringLanguages := []graphmodels.LocaleInfoable {
 	localeInfo,
 	localeInfo1,
-
 }
 requestBody.SetAuthoringLanguages(authoringLanguages)
 defaultRegionalFormat := graphmodels.NewLocaleInfo()

@@ -43,7 +43,6 @@ assignedLicense := graphmodels.NewAssignedLicense()
 
 assignedLicenses := []graphmodels.AssignedLicenseable {
 	assignedLicense,
-
 }
 requestBody.SetAssignedLicenses(assignedLicenses)
 
@@ -52,12 +51,10 @@ assignedPlan := graphmodels.NewAssignedPlan()
 
 assignedPlans := []graphmodels.AssignedPlanable {
 	assignedPlan,
-
 }
 requestBody.SetAssignedPlans(assignedPlans)
 businessPhones := []string {
 	"String",
-
 }
 requestBody.SetBusinessPhones(businessPhones)
 department := "String"
@@ -86,7 +83,6 @@ provisionedPlan := graphmodels.NewProvisionedPlan()
 
 provisionedPlans := []graphmodels.ProvisionedPlanable {
 	provisionedPlan,
-
 }
 requestBody.SetProvisionedPlans(provisionedPlans)
 refreshTokensValidFromDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")

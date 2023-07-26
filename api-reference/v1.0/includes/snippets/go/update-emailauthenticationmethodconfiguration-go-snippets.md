@@ -16,10 +16,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationMethodConfiguration()
-additionalData := map[string]interface{}{
-	"allowExternalIdToUseEmailOtp" : "enabled", 
-}
-requestBody.SetAdditionalData(additionalData)
+allowExternalIdToUseEmailOtp := graphmodels.ENABLED_EXTERNALEMAILOTPSTATE 
+requestBody.SetAllowExternalIdToUseEmailOtp(&allowExternalIdToUseEmailOtp) 
 
 result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurations().ByAuthenticationMethodConfigurationId("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
 

@@ -12,24 +12,13 @@ var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.EntitlementManagem
 {
 	Source = "Contoso.SodCheckProcess",
 	Type = "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated",
-	Data = new CustomExtensionData
+	Data = new AccessPackageAssignmentRequestCallbackData
 	{
 		OdataType = "microsoft.graph.accessPackageAssignmentRequestCallbackData",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"stage" , "AssignmentRequestCreated"
-			},
-			{
-				"customExtensionStageInstanceId" , "857d0c50-466b-4840-bb5b-c92cea7141ff"
-			},
-			{
-				"state" , "denied"
-			},
-			{
-				"customExtensionStageInstanceDetail" , "Potential risk user based on the SOD check"
-			},
-		},
+		Stage = AccessPackageCustomExtensionStage.AssignmentRequestCreated,
+		CustomExtensionStageInstanceId = "857d0c50-466b-4840-bb5b-c92cea7141ff",
+		State = "denied",
+		CustomExtensionStageInstanceDetail = "Potential risk user based on the SOD check",
 	},
 };
 await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentRequests["{accessPackageAssignmentRequest-id}"].Resume.PostAsync(requestBody);

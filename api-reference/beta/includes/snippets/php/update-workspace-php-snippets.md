@@ -7,20 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new Place();
-$requestBody->set@odatatype('microsoft.graph.workspace');
+$requestBody = new Workspace();
+$requestBody->setOdataType('microsoft.graph.workspace');
 
-$additionalData = [
-		'nickname' => 'Conf Room', 
-		'building' => '1', 
-		'label' => '100', 
-		'capacity' => 50,
-		'isWheelChairAccessible' => false,
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setNickname('Conf Room');
 
+$requestBody->setBuilding('1');
+
+$requestBody->setLabel('100');
+
+$requestBody->setCapacity(50);
+
+$requestBody->setIsWheelChairAccessible(false);
 
 
 

@@ -56,16 +56,14 @@ invitationParticipantInfo1.SetIdentity(identity)
 targets := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,
 	invitationParticipantInfo1,
-
 }
 requestBody.SetTargets(targets)
 requestedModalities := []graphmodels.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
-	requestBody.SetModality(&modality) 
-
+	requestBody.SetModality(&modality)
 }
 requestBody.SetRequestedModalities(requestedModalities)
-mediaConfig := graphmodels.NewMediaConfig()
+mediaConfig := graphmodels.NewAppHostedMediaConfig()
 additionalData := map[string]interface{}{
 	removeFromDefaultAudioGroup := false
 mediaConfig.SetRemoveFromDefaultAudioGroup(&removeFromDefaultAudioGroup) 

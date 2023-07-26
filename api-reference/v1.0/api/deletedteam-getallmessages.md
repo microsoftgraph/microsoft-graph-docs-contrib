@@ -23,9 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|ChannelMessage.Read.All|
 
-> [!NOTE]
-> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
-
 ## HTTP request
 
 <!-- {
@@ -81,6 +78,10 @@ GET https://graph.microsoft.com/v1.0/teamwork/deletedTeams/fbe2bf47-16c8-47cf-b4
 [!INCLUDE [sample-code](../includes/snippets/csharp/deletedteamthisgetallmessages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/deletedteamthisgetallmessages-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/deletedteamthisgetallmessages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -95,6 +96,10 @@ GET https://graph.microsoft.com/v1.0/teamwork/deletedTeams/fbe2bf47-16c8-47cf-b4
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/deletedteamthisgetallmessages-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/deletedteamthisgetallmessages-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

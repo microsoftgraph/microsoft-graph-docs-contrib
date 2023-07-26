@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.ItemMessageItemRequestBuilderGetQueryParameters{
-	Expand: [] string {"extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')"},
+requestParameters := &graphusers.ItemMessageItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"extensions($filter=id eq 'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')"},
 }
-configuration := &graphconfig.ItemMessageItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMessageItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

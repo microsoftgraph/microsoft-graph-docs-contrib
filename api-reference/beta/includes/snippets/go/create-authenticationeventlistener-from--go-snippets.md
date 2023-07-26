@@ -28,22 +28,18 @@ authenticationConditionApplication.SetAppId(&appId)
 
 includeApplications := []graphmodels.AuthenticationConditionApplicationable {
 	authenticationConditionApplication,
-
 }
 applications.SetIncludeApplications(includeApplications)
 conditions.SetApplications(applications)
 requestBody.SetConditions(conditions)
 priority := int32(500)
 requestBody.SetPriority(&priority) 
-additionalData := map[string]interface{}{
-handler := graphmodels.New()
-customExtension := graphmodels.New()
+handler := graphmodels.NewOnTokenIssuanceStartCustomExtensionHandler()
+customExtension := graphmodels.NewOnTokenIssuanceStartCustomExtension()
 id := "6fc5012e-7665-43d6-9708-4370863f4e6e"
 customExtension.SetId(&id) 
-	handler.SetCustomExtension(customExtension)
-	requestBody.SetHandler(handler)
-}
-requestBody.SetAdditionalData(additionalData)
+handler.SetCustomExtension(customExtension)
+requestBody.SetHandler(handler)
 
 result, err := graphClient.Identity().AuthenticationEventListeners().Post(context.Background(), requestBody, nil)
 

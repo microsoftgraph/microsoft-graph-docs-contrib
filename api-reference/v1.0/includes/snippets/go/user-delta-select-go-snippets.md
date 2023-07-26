@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.UsersDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphusers.UsersDelta()RequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","jobTitle","mobilePhone"},
 }
-configuration := &graphconfig.UsersDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UsersDelta()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

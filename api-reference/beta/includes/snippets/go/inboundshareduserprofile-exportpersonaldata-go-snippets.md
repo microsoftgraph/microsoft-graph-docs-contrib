@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Directory/InboundSharedUserProfiles/Item/ExportPersonalData"
+	  graphdirectory "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewExportPersonalDataPostRequestBody()
+requestBody := graphdirectory.NewExportPersonalDataPostRequestBody()
 storageLocation := "MyStorageAccount"
 requestBody.SetStorageLocation(&storageLocation) 
 

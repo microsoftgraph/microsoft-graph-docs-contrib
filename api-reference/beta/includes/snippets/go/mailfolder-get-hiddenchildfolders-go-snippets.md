@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
@@ -16,12 +16,12 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestIncludehiddenfolders := true
+requestIncludeHiddenFolders := "true"
 
-requestParameters := &graphconfig.ItemMailFolderItemChildFoldersRequestBuilderGetQueryParameters{
-	Includehiddenfolders: &requestIncludehiddenfolders,
+requestParameters := &graphusers.ItemMailFolderItemChildFoldersRequestBuilderGetQueryParameters{
+	IncludeHiddenFolders: &requestIncludeHiddenFolders,
 }
-configuration := &graphconfig.ItemMailFolderItemChildFoldersRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMailFolderItemChildFoldersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

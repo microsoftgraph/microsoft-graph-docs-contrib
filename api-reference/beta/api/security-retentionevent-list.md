@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/security/triggers/retentionEvents
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-retentionevent-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-retentionevent-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

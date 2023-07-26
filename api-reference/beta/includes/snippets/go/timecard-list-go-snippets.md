@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
 	  //other-imports
 )
 
@@ -19,11 +19,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestTop := int32(2)
 requestFilter := "state eq 'clockedOut'"
 
-requestParameters := &graphconfig.TeamItemScheduleTimeCardsRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamItemScheduleTimeCardsRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TeamItemScheduleTimeCardsRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamItemScheduleTimeCardsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

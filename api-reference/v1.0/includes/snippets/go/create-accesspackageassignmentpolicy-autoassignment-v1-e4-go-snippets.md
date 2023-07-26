@@ -62,27 +62,23 @@ fallbackEscalationApprovers := []graphmodels.SubjectSetable {
 accessPackageApprovalStage.SetFallbackEscalationApprovers(fallbackEscalationApprovers)
 
 
-subjectSet := graphmodels.NewSubjectSet()
-additionalData := map[string]interface{}{
-	"userId" : "08a551cb-575a-4343-b914-f6e42798bd20", 
-}
-subjectSet.SetAdditionalData(additionalData)
+subjectSet := graphmodels.NewSingleUser()
+userId := "08a551cb-575a-4343-b914-f6e42798bd20"
+subjectSet.SetUserId(&userId) 
 
 primaryApprovers := []graphmodels.SubjectSetable {
 	subjectSet,
-
 }
 accessPackageApprovalStage.SetPrimaryApprovers(primaryApprovers)
 
 stages := []graphmodels.AccessPackageApprovalStageable {
 	accessPackageApprovalStage,
-
 }
 requestApprovalSettings.SetStages(stages)
 requestBody.SetRequestApprovalSettings(requestApprovalSettings)
 
 
-accessPackageQuestion := graphmodels.NewAccessPackageQuestion()
+accessPackageQuestion := graphmodels.NewAccessPackageMultipleChoiceQuestion()
 sequence := int32(1)
 accessPackageQuestion.SetSequence(&sequence) 
 isRequired := true
@@ -91,47 +87,45 @@ isAnswerEditable := true
 accessPackageQuestion.SetIsAnswerEditable(&isAnswerEditable) 
 text := "What country are you working from?"
 accessPackageQuestion.SetText(&text) 
-additionalData := map[string]interface{}{
-	"isMultipleSelectionAllowed" : "false", 
+isMultipleSelectionAllowed := false
+accessPackageQuestion.SetIsMultipleSelectionAllowed(&isMultipleSelectionAllowed) 
 
 
- := graphmodels.New()
+accessPackageAnswerChoice := graphmodels.NewAccessPackageAnswerChoice()
 actualValue := "KE"
-.SetActualValue(&actualValue) 
+accessPackageAnswerChoice.SetActualValue(&actualValue) 
 text := "Kenya"
-.SetText(&text) 
- := graphmodels.New()
+accessPackageAnswerChoice.SetText(&text) 
+accessPackageAnswerChoice1 := graphmodels.NewAccessPackageAnswerChoice()
 actualValue := "US"
-.SetActualValue(&actualValue) 
+accessPackageAnswerChoice1.SetActualValue(&actualValue) 
 text := "United States"
-.SetText(&text) 
- := graphmodels.New()
+accessPackageAnswerChoice1.SetText(&text) 
+accessPackageAnswerChoice2 := graphmodels.NewAccessPackageAnswerChoice()
 actualValue := "GY"
-.SetActualValue(&actualValue) 
+accessPackageAnswerChoice2.SetActualValue(&actualValue) 
 text := "Guyana"
-.SetText(&text) 
- := graphmodels.New()
+accessPackageAnswerChoice2.SetText(&text) 
+accessPackageAnswerChoice3 := graphmodels.NewAccessPackageAnswerChoice()
 actualValue := "BD"
-.SetActualValue(&actualValue) 
+accessPackageAnswerChoice3.SetActualValue(&actualValue) 
 text := "Bangladesh"
-.SetText(&text) 
- := graphmodels.New()
+accessPackageAnswerChoice3.SetText(&text) 
+accessPackageAnswerChoice4 := graphmodels.NewAccessPackageAnswerChoice()
 actualValue := "JP"
-.SetActualValue(&actualValue) 
+accessPackageAnswerChoice4.SetActualValue(&actualValue) 
 text := "Japan"
-.SetText(&text) 
+accessPackageAnswerChoice4.SetText(&text) 
 
-	choices := []graphmodels.Objectable {
-		,
-		,
-		,
-		,
-		,
-
-	}
+choices := []graphmodels.AccessPackageAnswerChoiceable {
+	accessPackageAnswerChoice,
+	accessPackageAnswerChoice1,
+	accessPackageAnswerChoice2,
+	accessPackageAnswerChoice3,
+	accessPackageAnswerChoice4,
 }
-accessPackageQuestion.SetAdditionalData(additionalData)
-accessPackageQuestion1 := graphmodels.NewAccessPackageQuestion()
+accessPackageQuestion.SetChoices(choices)
+accessPackageQuestion1 := graphmodels.NewAccessPackageTextInputQuestion()
 sequence := int32(2)
 accessPackageQuestion1.SetSequence(&sequence) 
 isRequired := true
@@ -150,19 +144,16 @@ accessPackageLocalizedText.SetText(&text)
 
 localizations := []graphmodels.AccessPackageLocalizedTextable {
 	accessPackageLocalizedText,
-
 }
 accessPackageQuestion1.SetLocalizations(localizations)
-additionalData := map[string]interface{}{
-	"isSingleLineQuestion" : "false", 
-	"regexPattern" : "[a-zA-Z]+[a-zA-Z\s]*", 
-}
-accessPackageQuestion1.SetAdditionalData(additionalData)
+isSingleLineQuestion := false
+accessPackageQuestion1.SetIsSingleLineQuestion(&isSingleLineQuestion) 
+regexPattern := "[a-zA-Z]+[a-zA-Z\s]*"
+accessPackageQuestion1.SetRegexPattern(&regexPattern) 
 
 questions := []graphmodels.AccessPackageQuestionable {
 	accessPackageQuestion,
 	accessPackageQuestion1,
-
 }
 requestBody.SetQuestions(questions)
 accessPackage := graphmodels.NewAccessPackage()

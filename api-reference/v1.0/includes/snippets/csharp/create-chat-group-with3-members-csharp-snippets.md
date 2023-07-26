@@ -14,7 +14,7 @@ var requestBody = new Chat
 	Topic = "Group chat title",
 	Members = new List<ConversationMember>
 	{
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
 			Roles = new List<string>
@@ -28,7 +28,7 @@ var requestBody = new Chat
 				},
 			},
 		},
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
 			Roles = new List<string>
@@ -42,7 +42,7 @@ var requestBody = new Chat
 				},
 			},
 		},
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
 			Roles = new List<string>

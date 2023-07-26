@@ -112,6 +112,10 @@ GET https://graph.microsoft.com/beta/me/authentication/phoneMethods
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-phonemethods-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-phonemethods-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

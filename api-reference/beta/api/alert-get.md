@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/security/alerts/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-alert-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-alert-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

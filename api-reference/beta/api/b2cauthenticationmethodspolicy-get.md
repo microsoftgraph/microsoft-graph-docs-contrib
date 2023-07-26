@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-b2cauthenticationmethodspolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-b2cauthenticationmethodspolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

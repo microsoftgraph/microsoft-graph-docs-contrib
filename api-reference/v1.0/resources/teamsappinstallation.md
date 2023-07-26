@@ -31,12 +31,12 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the perso
 |[Upgrade app installed for user](../api/userteamwork-teamsappinstallation-upgrade.md) | None | Upgrade the app installed in the personal scope of a user to the latest version.|
 |[Remove app for user](../api/userteamwork-delete-installedapps.md) | None | Remove (uninstall) an app in the personal scope of a user.|
 
-
 ## Properties
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
 | id                  | string   | A unique ID (not the Teams app ID). |
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|The set of resource-specific permissions consented to while installing or upgrading the teamsApp.|
 
 ## Relationships
 
@@ -44,7 +44,6 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the perso
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| The app that is installed. |
 |teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| The details of this version of the app. |
-
 
 ## JSON representation
 
@@ -58,7 +57,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string"
+  "id": "string",
+  "consentedPermissionSet": "#microsoft.graph.teamsAppPermissionSet"
 }
 ```
 
@@ -81,4 +81,3 @@ The following is a JSON representation of the resource.
   "tocPath": ""
   "suppressions": []
 }-->
-

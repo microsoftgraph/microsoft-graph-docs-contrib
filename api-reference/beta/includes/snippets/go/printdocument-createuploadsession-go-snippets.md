@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Print/Shares/Item/Jobs/Item/Documents/Item/CreateUploadSession"
+	  graphprint "github.com/microsoftgraph/msgraph-beta-sdk-go/print"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCreateUploadSessionPostRequestBody()
+requestBody := graphprint.NewCreateUploadSessionPostRequestBody()
 properties := graphmodels.NewPrintDocumentUploadProperties()
 documentName := "TestFile.pdf"
 properties.SetDocumentName(&documentName) 

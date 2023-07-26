@@ -57,7 +57,6 @@ verifiableCredentialSettings := graphmodels.NewVerifiableCredentialSettings()
 verifiableCredentialType := graphmodels.NewVerifiableCredentialType()
 issuers := []string {
 	"did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>...",
-
 }
 verifiableCredentialType.SetIssuers(issuers)
 credentialType := "VerifiedCredentialExpert"
@@ -65,7 +64,6 @@ verifiableCredentialType.SetCredentialType(&credentialType)
 
 credentialTypes := []graphmodels.VerifiableCredentialTypeable {
 	verifiableCredentialType,
-
 }
 verifiableCredentialSettings.SetCredentialTypes(credentialTypes)
 requestBody.SetVerifiableCredentialSettings(verifiableCredentialSettings)

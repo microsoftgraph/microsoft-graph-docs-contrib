@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Groups/Item/Threads/Item/Posts/Item/Forward"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewForwardPostRequestBody()
+requestBody := graphgroups.NewForwardPostRequestBody()
 comment := "comment-value"
 requestBody.SetComment(&comment) 
 
@@ -30,7 +31,6 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 

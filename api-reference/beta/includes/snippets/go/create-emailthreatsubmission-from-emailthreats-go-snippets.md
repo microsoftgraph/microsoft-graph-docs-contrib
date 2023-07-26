@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewEmailThreatSubmission()
+requestBody := graphmodelssecurity.NewEmailThreatSubmission()
 category := graphmodels.SPAM_SUBMISSIONCATEGORY 
 requestBody.SetCategory(&category) 
 recipientEmailAddress := "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"

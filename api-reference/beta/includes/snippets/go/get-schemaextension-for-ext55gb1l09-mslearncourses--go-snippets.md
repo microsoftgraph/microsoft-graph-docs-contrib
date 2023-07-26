@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.UserItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.UserItemRequestBuilderGetQueryParameters{
 	Select: [] string {"ext55gb1l09_msLearnCourses"},
 }
-configuration := &graphconfig.UserItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UserItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

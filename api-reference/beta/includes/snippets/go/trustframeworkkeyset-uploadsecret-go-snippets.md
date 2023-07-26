@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TrustFramework/KeySets/Item/UploadSecret"
+	  graphtrustframework "github.com/microsoftgraph/msgraph-beta-sdk-go/trustframework"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewUploadSecretPostRequestBody()
+requestBody := graphtrustframework.NewUploadSecretPostRequestBody()
 use := "use-value"
 requestBody.SetUse(&use) 
 k := "application-secret-to-be-uploaded"

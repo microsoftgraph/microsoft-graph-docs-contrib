@@ -20,32 +20,28 @@ callbackUri := "https://bot.contoso.com/callback"
 requestBody.SetCallbackUri(&callbackUri) 
 requestedModalities := []graphmodels.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
-	requestBody.SetModality(&modality) 
-
+	requestBody.SetModality(&modality)
 }
 requestBody.SetRequestedModalities(requestedModalities)
-mediaConfig := graphmodels.NewMediaConfig()
-additionalData := map[string]interface{}{
+mediaConfig := graphmodels.NewServiceHostedMediaConfig()
 
 
- := graphmodels.New()
+mediaInfo := graphmodels.NewMediaInfo()
 uri := "https://cdn.contoso.com/beep.wav"
-.SetUri(&uri) 
+mediaInfo.SetUri(&uri) 
 resourceId := "f8971b04-b53e-418c-9222-c82ce681a582"
-.SetResourceId(&resourceId) 
- := graphmodels.New()
+mediaInfo.SetResourceId(&resourceId) 
+mediaInfo1 := graphmodels.NewMediaInfo()
 uri := "https://cdn.contoso.com/cool.wav"
-.SetUri(&uri) 
+mediaInfo1.SetUri(&uri) 
 resourceId := "86dc814b-c172-4428-9112-60f8ecae1edb"
-.SetResourceId(&resourceId) 
+mediaInfo1.SetResourceId(&resourceId) 
 
-	preFetchMedia := []graphmodels.Objectable {
-		,
-		,
-
-	}
+preFetchMedia := []graphmodels.MediaInfoable {
+	mediaInfo,
+	mediaInfo1,
 }
-mediaConfig.SetAdditionalData(additionalData)
+mediaConfig.SetPreFetchMedia(preFetchMedia)
 requestBody.SetMediaConfig(mediaConfig)
 chatInfo := graphmodels.NewChatInfo()
 threadId := "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2"
@@ -53,18 +49,20 @@ chatInfo.SetThreadId(&threadId)
 messageId := "0"
 chatInfo.SetMessageId(&messageId) 
 requestBody.SetChatInfo(chatInfo)
-meetingInfo := graphmodels.NewMeetingInfo()
-additionalData := map[string]interface{}{
-organizer := graphmodels.New()
-user := graphmodels.New()
+meetingInfo := graphmodels.NewOrganizerMeetingInfo()
+organizer := graphmodels.NewIdentitySet()
+user := graphmodels.NewIdentity()
 id := "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
 user.SetId(&id) 
 displayName := "Bob"
 user.SetDisplayName(&displayName) 
-tenantId := "86dc81db-c112-4228-9222-63f3esaa1edb"
-user.SetTenantId(&tenantId) 
-	organizer.SetUser(user)
-	meetingInfo.SetOrganizer(organizer)
+additionalData := map[string]interface{}{
+	"tenantId" : "86dc81db-c112-4228-9222-63f3esaa1edb", 
+}
+user.SetAdditionalData(additionalData)
+organizer.SetUser(user)
+meetingInfo.SetOrganizer(organizer)
+additionalData := map[string]interface{}{
 	allowConversationWithoutHost := true
 meetingInfo.SetAllowConversationWithoutHost(&allowConversationWithoutHost) 
 }

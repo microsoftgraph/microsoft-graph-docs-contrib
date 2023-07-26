@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Groups/Item/Threads/Item/Posts/Item/Reply"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewReplyPostRequestBody()
+requestBody := graphgroups.NewReplyPostRequestBody()
 post := graphmodels.NewPost()
 body := graphmodels.NewItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 
@@ -57,7 +58,6 @@ recipient.SetEmailAddress(emailAddress)
 
 newParticipants := []graphmodels.Recipientable {
 	recipient,
-
 }
 post.SetNewParticipants(newParticipants)
 conversationId := "conversationId-value"
@@ -70,7 +70,6 @@ changeKey := "changeKey-value"
 post.SetChangeKey(&changeKey) 
 categories := []string {
 	"categories-value",
-
 }
 post.SetCategories(categories)
 id := "id-value"
@@ -79,7 +78,7 @@ inReplyTo := graphmodels.NewPost()
 post.SetInReplyTo(inReplyTo)
 
 
-attachment := graphmodels.NewAttachment()
+attachment := graphmodels.NewFileAttachment()
 lastModifiedDateTime , err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
 attachment.SetLastModifiedDateTime(&lastModifiedDateTime) 
 name := "name-value"
@@ -95,7 +94,6 @@ attachment.SetId(&id)
 
 attachments := []graphmodels.Attachmentable {
 	attachment,
-
 }
 post.SetAttachments(attachments)
 requestBody.SetPost(post)

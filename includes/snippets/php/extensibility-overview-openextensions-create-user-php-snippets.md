@@ -7,15 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new Extension();
-$requestBody->set@odatatype('#microsoft.graph.openTypeExtension');
+$requestBody = new OpenTypeExtension();
+$requestBody->setOdataType('#microsoft.graph.openTypeExtension');
+
+$requestBody->setExtensionName('com.contoso.socialSettings');
 
 $requestBody->setId('com.contoso.socialSettings');
 
 $additionalData = [
-		'extensionName' => 'com.contoso.socialSettings', 
 		'skypeId' => 'skypeId.AdeleV', 
 		'linkedInProfile' => 'www.linkedin.com/in/testlinkedinprofile', 
 		'xboxGamerTag' => 'AwesomeAdele', 

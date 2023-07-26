@@ -43,7 +43,6 @@ bookingWorkTimeSlot.SetStart(&start)
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
 	bookingWorkTimeSlot,
-
 }
 bookingWorkHours.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
@@ -64,7 +63,6 @@ bookingWorkTimeSlot.SetStart(&start)
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
 	bookingWorkTimeSlot,
-
 }
 bookingWorkHours1.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
@@ -85,7 +83,6 @@ bookingWorkTimeSlot.SetStart(&start)
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
 	bookingWorkTimeSlot,
-
 }
 bookingWorkHours2.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
@@ -106,7 +103,6 @@ bookingWorkTimeSlot.SetStart(&start)
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
 	bookingWorkTimeSlot,
-
 }
 bookingWorkHours3.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
@@ -127,7 +123,6 @@ bookingWorkTimeSlot.SetStart(&start)
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
 	bookingWorkTimeSlot,
-
 }
 bookingWorkHours4.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
@@ -142,7 +137,6 @@ workingHours := []graphmodels.BookingWorkHoursable {
 	bookingWorkHours2,
 	bookingWorkHours3,
 	bookingWorkHours4,
-
 }
 requestBody.SetWorkingHours(workingHours)
 isEmailNotificationEnabled := false

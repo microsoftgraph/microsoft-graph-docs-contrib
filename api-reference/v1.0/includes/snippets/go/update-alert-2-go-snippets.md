@@ -11,7 +11,7 @@ import (
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/security"
+	  graphsecurity "github.com/microsoftgraph/msgraph-sdk-go/security"
 	  //other-imports
 )
 
@@ -21,7 +21,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
 
-configuration := &graphconfig.SecurityAlertItemRequestBuilderPatchRequestConfiguration{
+configuration := &graphsecurity.SecurityAlertItemRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewAlert()
@@ -31,7 +31,6 @@ closedDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetClosedDateTime(&closedDateTime) 
 comments := []string {
 	"String",
-
 }
 requestBody.SetComments(comments)
 feedback := graphmodels.ALERTFEEDBACK_GRAPH_TYPE: MICROSOFT_@ODATA_ALERTFEEDBACK 
@@ -40,7 +39,6 @@ status := graphmodels.ALERTSTATUS_GRAPH_TYPE: MICROSOFT_@ODATA_ALERTSTATUS
 requestBody.SetStatus(&status) 
 tags := []string {
 	"String",
-
 }
 requestBody.SetTags(tags)
 vendorInformation := graphmodels.NewSecurityVendorInformation()

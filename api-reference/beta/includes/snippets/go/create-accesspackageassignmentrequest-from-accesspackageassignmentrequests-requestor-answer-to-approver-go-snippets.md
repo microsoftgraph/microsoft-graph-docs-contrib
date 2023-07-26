@@ -28,29 +28,24 @@ accessPackageAssignment.SetAccessPackageId(&accessPackageId)
 requestBody.SetAccessPackageAssignment(accessPackageAssignment)
 
 
-accessPackageAnswer := graphmodels.NewAccessPackageAnswer()
-answeredQuestion := graphmodels.NewAccessPackageQuestion()
+accessPackageAnswer := graphmodels.NewAccessPackageAnswerString()
+value := "Arizona"
+accessPackageAnswer.SetValue(&value) 
+answeredQuestion := graphmodels.NewAccessPackageMultipleChoiceQuestion()
 id := "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
 answeredQuestion.SetId(&id) 
 accessPackageAnswer.SetAnsweredQuestion(answeredQuestion)
-additionalData := map[string]interface{}{
-	"value" : "Arizona", 
-}
-accessPackageAnswer.SetAdditionalData(additionalData)
-accessPackageAnswer1 := graphmodels.NewAccessPackageAnswer()
-answeredQuestion := graphmodels.NewAccessPackageQuestion()
+accessPackageAnswer1 := graphmodels.NewAccessPackageAnswerString()
+value := "Need access to marketing campaign material"
+accessPackageAnswer1.SetValue(&value) 
+answeredQuestion := graphmodels.NewAccessPackageTextInputQuestion()
 id := "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
 answeredQuestion.SetId(&id) 
 accessPackageAnswer1.SetAnsweredQuestion(answeredQuestion)
-additionalData := map[string]interface{}{
-	"value" : "Need access to marketing campaign material", 
-}
-accessPackageAnswer1.SetAdditionalData(additionalData)
 
 answers := []graphmodels.AccessPackageAnswerable {
 	accessPackageAnswer,
 	accessPackageAnswer1,
-
 }
 requestBody.SetAnswers(answers)
 

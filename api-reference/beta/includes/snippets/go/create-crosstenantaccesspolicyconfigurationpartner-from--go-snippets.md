@@ -32,7 +32,6 @@ crossTenantAccessPolicyTarget.SetTargetType(&targetType)
 
 targets := []graphmodels.CrossTenantAccessPolicyTargetable {
 	crossTenantAccessPolicyTarget,
-
 }
 usersAndGroups.SetTargets(targets)
 b2bDirectConnectOutbound.SetUsersAndGroups(usersAndGroups)
@@ -51,7 +50,6 @@ crossTenantAccessPolicyTarget.SetTargetType(&targetType)
 
 targets := []graphmodels.CrossTenantAccessPolicyTargetable {
 	crossTenantAccessPolicyTarget,
-
 }
 applications.SetTargets(targets)
 b2bDirectConnectInbound.SetApplications(applications)

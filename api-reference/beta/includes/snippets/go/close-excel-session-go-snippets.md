@@ -9,8 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Drives/Item/Items/Item/Workbook/CloseSession"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
 	  //other-imports
 )
 
@@ -20,10 +19,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("workbook-session-id", "{session-id}")
 
-configuration := &graphconfig.DriveItemItemItemWorkbookCloseSessionRequestBuilderPostRequestConfiguration{
+configuration := &graphdrives.DriveItemItemItemWorkbookCloseSessionRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewCloseSessionPostRequestBody()
+requestBody := graphdrives.NewCloseSessionPostRequestBody()
 
 graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().CloseSession().Post(context.Background(), requestBody, configuration)
 

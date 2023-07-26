@@ -32,20 +32,18 @@ invitationParticipantInfo.SetIdentity(identity)
 
 targets := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,
-
 }
 requestBody.SetTargets(targets)
 requestedModalities := []graphmodels.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
-	requestBody.SetModality(&modality) 
-
+	requestBody.SetModality(&modality)
 }
 requestBody.SetRequestedModalities(requestedModalities)
-callOptions := graphmodels.NewCallOptions()
+callOptions := graphmodels.NewOutgoingCallOptions()
 isContentSharingNotificationEnabled := true
 callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled) 
 requestBody.SetCallOptions(callOptions)
-mediaConfig := graphmodels.NewMediaConfig()
+mediaConfig := graphmodels.NewServiceHostedMediaConfig()
 requestBody.SetMediaConfig(mediaConfig)
 
 result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)

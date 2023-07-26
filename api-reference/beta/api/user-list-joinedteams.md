@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-joinedteams-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-joinedteams-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -125,6 +129,7 @@ Content-type: application/json
 - [List associated teams](../api/associatedteaminfo-list.md)
 - [List all teams in an organization](../api/teams-list.md)
 - [Get team](../api/team-get.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

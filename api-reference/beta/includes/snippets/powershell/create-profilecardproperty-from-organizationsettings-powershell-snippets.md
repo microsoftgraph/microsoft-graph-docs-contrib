@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	directoryPropertyName = "CustomAttribute1"
@@ -21,6 +21,6 @@ $params = @{
 	)
 }
 
-New-MgOrganizationSettingProfileCardProperty -OrganizationId $organizationId -BodyParameter $params
+New-MgBetaOrganizationSettingProfileCardProperty -OrganizationId $organizationId -BodyParameter $params
 
 ```

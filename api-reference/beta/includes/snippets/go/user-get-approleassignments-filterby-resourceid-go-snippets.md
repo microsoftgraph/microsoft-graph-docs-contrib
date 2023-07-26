@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
@@ -18,10 +18,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "resourceId eq 8e881353-1735-45af-af21-ee1344582a4d"
 
-requestParameters := &graphconfig.UserItemAppRoleAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.UserItemAppRoleAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.UserItemAppRoleAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UserItemAppRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

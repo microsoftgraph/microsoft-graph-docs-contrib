@@ -16,12 +16,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewIdentityApiConnector()
-authenticationConfiguration := graphmodels.NewApiAuthenticationConfigurationBase()
-additionalData := map[string]interface{}{
-	"pkcs12Value" : "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA", 
-	"password" : "secret", 
-}
-authenticationConfiguration.SetAdditionalData(additionalData)
+authenticationConfiguration := graphmodels.NewPkcs12Certificate()
+pkcs12Value := "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
+authenticationConfiguration.SetPkcs12Value(&pkcs12Value) 
+password := "secret"
+authenticationConfiguration.SetPassword(&password) 
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 
 result, err := graphClient.Identity().ApiConnectors().ByApiConnectorId("identityApiConnector-id").Patch(context.Background(), requestBody, nil)

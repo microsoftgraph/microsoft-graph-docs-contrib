@@ -8,18 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Security/Cases/EdiscoveryCases/Item/NoncustodialDataSources/MicrosoftGraphSecurityApplyHold"
+	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewApplyHoldPostRequestBody()
+requestBody := graphsecurity.NewApplyHoldPostRequestBody()
 ids := []string {
 	"39333641443238353535383731453339",
 	"46333131344239353834433430454335",
-
 }
 requestBody.SetIds(ids)
 

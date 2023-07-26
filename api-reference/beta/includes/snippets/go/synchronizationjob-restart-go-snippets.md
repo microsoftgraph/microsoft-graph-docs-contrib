@@ -9,8 +9,8 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/ServicePrincipals/Item/Synchronization/Jobs/Item/Restart"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
@@ -20,10 +20,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer <token>")
 
-configuration := &graphconfig.ServicePrincipalItemSynchronizationJobItemRestartRequestBuilderPostRequestConfiguration{
+configuration := &graphserviceprincipals.ServicePrincipalItemSynchronizationJobItemRestartRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewRestartPostRequestBody()
+requestBody := graphserviceprincipals.NewRestartPostRequestBody()
 criteria := graphmodels.NewSynchronizationJobRestartCriteria()
 resetScope := graphmodels.WATERMARK, ESCROWS, QUARANTINESTATE_SYNCHRONIZATIONJOBRESTARTSCOPE 
 criteria.SetResetScope(&resetScope) 

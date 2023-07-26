@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CloudPcOrganizationSettings();
-$requestBody->set@odatatype('#microsoft.graph.cloudPcOrganizationSettings');
+$requestBody->setOdataType('#microsoft.graph.cloudPcOrganizationSettings');
 
 $requestBody->setEnableMEMAutoEnroll(true);
 
 $requestBody->setOsVersion(new CloudPcOperatingSystem('windows11'));
 
-$requestBody->setUserAccountType(new CloudPcUserAccountType('standarduser'));
+$requestBody->setUserAccountType(new CloudPcUserAccountType('standardUser'));
 
 $windowsSettings = new CloudPcWindowsSettings();
 $windowsSettings->setLanguage('en-US');

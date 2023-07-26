@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ApplicationsRequestBuilderGetRequestConfiguration();
 $headers = [
@@ -16,7 +16,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 $queryParameters = ApplicationsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "startswith(displayName,%20'a')";
+$queryParameters->filter = "startswith(displayName, 'a')";
 $queryParameters->count = true;
 $queryParameters->top = 1;
 $queryParameters->orderby = ["displayName"];

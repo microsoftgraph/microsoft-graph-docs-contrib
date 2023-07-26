@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/me/profile/webAccounts/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-webaccount-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-webaccount-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

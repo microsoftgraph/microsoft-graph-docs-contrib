@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//deviceManagement"
+	  graphmodelsdevicemanagement "github.com/microsoftgraph/msgraph-beta-sdk-go/models/devicemanagement"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAlertRule()
+requestBody := graphmodelsdevicemanagement.NewAlertRule()
 id := "215c55cc-b1c9-4d36-a870-be5778101714"
 requestBody.SetId(&id) 
 displayName := "Azure network connection failure impacting Cloud PCs"
@@ -30,7 +30,7 @@ enabled := true
 requestBody.SetEnabled(&enabled) 
 alertRuleTemplate := graphmodels.CLOUDPCONPREMISENETWORKCONNECTIONCHECKSCENARIO_ALERTRULETEMPLATE 
 requestBody.SetAlertRuleTemplate(&alertRuleTemplate) 
-threshold := graphmodels.NewRuleThreshold()
+threshold := graphmodelsdevicemanagement.NewRuleThreshold()
 aggregation := graphmodels.COUNT_AGGREGATIONTYPE 
 threshold.SetAggregation(&aggregation) 
 operator := graphmodels.GREATEROREQUAL_OPERATORTYPE 
@@ -40,44 +40,40 @@ threshold.SetTarget(&target)
 requestBody.SetThreshold(threshold)
 
 
-notificationChannel := graphmodels.NewNotificationChannel()
+notificationChannel := graphmodelsdevicemanagement.NewNotificationChannel()
 notificationChannelType := graphmodels.PORTAL_NOTIFICATIONCHANNELTYPE 
 notificationChannel.SetNotificationChannelType(&notificationChannelType) 
 receivers := []string {
 	"",
-
 }
 notificationChannel.SetReceivers(receivers)
-notificationReceivers := []graphmodels.NotificationReceiverable {
+notificationReceivers := []graphmodelsdevicemanagement.NotificationReceiverable {
 
 }
 notificationChannel.SetNotificationReceivers(notificationReceivers)
-notificationChannel1 := graphmodels.NewNotificationChannel()
+notificationChannel1 := graphmodelsdevicemanagement.NewNotificationChannel()
 notificationChannelType := graphmodels.EMAIL_NOTIFICATIONCHANNELTYPE 
 notificationChannel1.SetNotificationChannelType(&notificationChannelType) 
 receivers := []string {
 	"serena.davis@contoso.com",
-
 }
 notificationChannel1.SetReceivers(receivers)
 
 
-notificationReceiver := graphmodels.NewNotificationReceiver()
+notificationReceiver := graphmodelsdevicemanagement.NewNotificationReceiver()
 locale := "en-us"
 notificationReceiver.SetLocale(&locale) 
 contactInformation := "serena.davis@contoso.com"
 notificationReceiver.SetContactInformation(&contactInformation) 
 
-notificationReceivers := []graphmodels.NotificationReceiverable {
+notificationReceivers := []graphmodelsdevicemanagement.NotificationReceiverable {
 	notificationReceiver,
-
 }
 notificationChannel1.SetNotificationReceivers(notificationReceivers)
 
-notificationChannels := []graphmodels.NotificationChannelable {
+notificationChannels := []graphmodelsdevicemanagement.NotificationChannelable {
 	notificationChannel,
 	notificationChannel1,
-
 }
 requestBody.SetNotificationChannels(notificationChannels)
 

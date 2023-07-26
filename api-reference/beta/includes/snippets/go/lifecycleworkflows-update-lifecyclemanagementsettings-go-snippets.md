@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//identityGovernance"
+	  graphmodelsidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/models/identitygovernance"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewLifecycleManagementSettings()
+requestBody := graphmodelsidentitygovernance.NewLifecycleManagementSettings()
 workflowScheduleIntervalInHours := int32(3)
 requestBody.SetWorkflowScheduleIntervalInHours(&workflowScheduleIntervalInHours) 
 emailSettings := graphmodels.NewEmailSettings()

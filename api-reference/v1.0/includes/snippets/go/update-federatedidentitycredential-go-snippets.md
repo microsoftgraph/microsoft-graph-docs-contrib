@@ -26,7 +26,6 @@ description := "Updated description"
 requestBody.SetDescription(&description) 
 audiences := []string {
 	"api://AzureADTokenExchange",
-
 }
 requestBody.SetAudiences(audiences)
 

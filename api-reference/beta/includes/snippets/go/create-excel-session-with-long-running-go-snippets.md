@@ -9,8 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Drives/Item/Items/Item/Workbook/CreateSession"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
 	  //other-imports
 )
 
@@ -20,10 +19,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "respond-async")
 
-configuration := &graphconfig.DriveItemItemItemWorkbookCreateSessionRequestBuilderPostRequestConfiguration{
+configuration := &graphdrives.DriveItemItemItemWorkbookCreateSessionRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewCreateSessionPostRequestBody()
+requestBody := graphdrives.NewCreateSessionPostRequestBody()
 persistChanges := true
 requestBody.SetPersistChanges(&persistChanges) 
 

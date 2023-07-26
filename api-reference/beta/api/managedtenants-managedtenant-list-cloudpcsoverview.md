@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcs
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcoverview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-cloudpcoverview-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

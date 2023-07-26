@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Print/Printers/Item/Jobs/Item/Redirect"
+	  graphprint "github.com/microsoftgraph/msgraph-beta-sdk-go/print"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewRedirectPostRequestBody()
+requestBody := graphprint.NewRedirectPostRequestBody()
 destinationPrinterId := "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
 requestBody.SetDestinationPrinterId(&destinationPrinterId) 
 configuration := graphmodels.NewPrintJobConfiguration()
@@ -31,7 +32,6 @@ integerRange.SetEnd(&end)
 
 pageRanges := []graphmodels.IntegerRangeable {
 	integerRange,
-
 }
 configuration.SetPageRanges(pageRanges)
 quality := graphmodels.MEDIUM_PRINTQUALITY 

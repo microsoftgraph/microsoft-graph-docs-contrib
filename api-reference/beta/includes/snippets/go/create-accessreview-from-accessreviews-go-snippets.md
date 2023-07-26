@@ -45,7 +45,6 @@ accessReviewReviewer1.SetId(&id)
 reviewers := []graphmodels.AccessReviewReviewerable {
 	accessReviewReviewer,
 	accessReviewReviewer1,
-
 }
 requestBody.SetReviewers(reviewers)
 settings := graphmodels.NewAccessReviewSettings()

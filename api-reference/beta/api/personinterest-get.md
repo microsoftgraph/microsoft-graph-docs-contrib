@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/me/profile/interests/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-personinterest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-personinterest-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

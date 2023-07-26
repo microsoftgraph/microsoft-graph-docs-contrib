@@ -19,7 +19,6 @@ requestBody := graphmodels.NewCrossTenantAccessPolicy()
 allowedCloudEndpoints := []string {
 	"microsoftonline.us",
 	"partner.microsoftonline.cn",
-
 }
 requestBody.SetAllowedCloudEndpoints(allowedCloudEndpoints)
 

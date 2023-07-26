@@ -36,7 +36,6 @@ chatMessageAttachment.SetName(&name)
 
 attachments := []graphmodels.ChatMessageAttachmentable {
 	chatMessageAttachment,
-
 }
 requestBody.SetAttachments(attachments)
 

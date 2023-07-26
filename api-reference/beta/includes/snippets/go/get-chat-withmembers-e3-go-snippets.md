@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/chats"
+	  graphchats "github.com/microsoftgraph/msgraph-beta-sdk-go/chats"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.ChatItemRequestBuilderGetQueryParameters{
+requestParameters := &graphchats.ChatItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"members"},
 }
-configuration := &graphconfig.ChatItemRequestBuilderGetRequestConfiguration{
+configuration := &graphchats.ChatItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

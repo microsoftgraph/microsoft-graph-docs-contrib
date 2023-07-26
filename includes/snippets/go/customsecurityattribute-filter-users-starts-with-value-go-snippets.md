@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
-	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
@@ -23,12 +23,12 @@ headers.Add("ConsistencyLevel", "eventual")
 requestCount := true
 requestFilter := "startsWith(customSecurityAttributes/Marketing/EmployeeId,'GS')"
 
-requestParameters := &graphconfig.UsersRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.UsersRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Select: [] string {"id","displayName","customSecurityAttributes"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.UsersRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UsersRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

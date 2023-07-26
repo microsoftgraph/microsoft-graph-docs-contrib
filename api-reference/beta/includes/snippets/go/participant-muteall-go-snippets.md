@@ -8,17 +8,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Communications/Calls/Item/Participants/MuteAll"
+	  graphcommunications "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewMuteAllPostRequestBody()
+requestBody := graphcommunications.NewMuteAllPostRequestBody()
 participants := []string {
 	"",
-
 }
 requestBody.SetParticipants(participants)
 clientContext := "clientContext-value"

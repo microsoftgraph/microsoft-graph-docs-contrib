@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models//termStore"
+	  graphmodelstermstore "github.com/microsoftgraph/msgraph-sdk-go/models/termstore"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewTerm()
+requestBody := graphmodelstermstore.NewTerm()
 
 
-localizedLabel := graphmodels.NewLocalizedLabel()
+localizedLabel := graphmodelstermstore.NewLocalizedLabel()
 name := "changedLabel"
 localizedLabel.SetName(&name) 
 languageTag := "en-US"
@@ -26,9 +26,8 @@ localizedLabel.SetLanguageTag(&languageTag)
 isDefault := true
 localizedLabel.SetIsDefault(&isDefault) 
 
-labels := []graphmodels.LocalizedLabelable {
+labels := []graphmodelstermstore.LocalizedLabelable {
 	localizedLabel,
-
 }
 requestBody.SetLabels(labels)
 

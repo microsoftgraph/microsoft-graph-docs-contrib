@@ -40,7 +40,6 @@ chatMessageMention.SetMentioned(mentioned)
 
 mentions := []graphmodels.ChatMessageMentionable {
 	chatMessageMention,
-
 }
 requestBody.SetMentions(mentions)
 

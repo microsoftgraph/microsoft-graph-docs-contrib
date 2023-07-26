@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/me/profile/publications/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-itempublication-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-itempublication-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

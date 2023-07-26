@@ -8,21 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models//security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-sdk-go/models/security"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewIncident()
+requestBody := graphmodelssecurity.NewIncident()
 classification := graphmodels.TRUEPOSITIVE_ALERTCLASSIFICATION 
 requestBody.SetClassification(&classification) 
 determination := graphmodels.MULTISTAGEDATTACK_ALERTDETERMINATION 
 requestBody.SetDetermination(&determination) 
 customTags := []string {
 	"Demo",
-
 }
 requestBody.SetCustomTags(customTags)
 

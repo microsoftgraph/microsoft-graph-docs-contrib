@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/trustFramework/policies
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-trustframeworks-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-trustframeworks-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

@@ -18,7 +18,6 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewUser()
 businessPhones := []string {
 	"+1 425 555 0109",
-
 }
 requestBody.SetBusinessPhones(businessPhones)
 officeLocation := "18/2111"

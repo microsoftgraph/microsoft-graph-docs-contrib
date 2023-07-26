@@ -8,23 +8,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Drives/Item/Items/Item/Workbook/Tables/Item/Columns/Add"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddPostRequestBody()
+requestBody := graphdrives.NewAddPostRequestBody()
 index := int32(3)
 requestBody.SetIndex(&index) 
 
 
-json := graphmodels.New()
+json := graphmodels.NewJson()
 
 values := []graphmodels.Jsonable {
 	json,
-
 }
 requestBody.SetValues(values)
 

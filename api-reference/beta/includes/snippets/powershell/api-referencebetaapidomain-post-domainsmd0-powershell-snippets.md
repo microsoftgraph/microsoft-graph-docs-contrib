@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	id = "contoso.com"
 }
 
-New-MgDomain -BodyParameter $params
+New-MgBetaDomain -BodyParameter $params
 
 ```

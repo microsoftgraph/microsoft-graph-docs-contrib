@@ -8,19 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//windowsUpdates"
+	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewDeployment()
-settings := graphmodels.NewDeploymentSettings()
-monitoring := graphmodels.NewMonitoringSettings()
+requestBody := graphmodelswindowsupdates.NewDeployment()
+settings := graphmodelswindowsupdates.NewDeploymentSettings()
+monitoring := graphmodelswindowsupdates.NewMonitoringSettings()
 
 
-monitoringRule := graphmodels.NewMonitoringRule()
+monitoringRule := graphmodelswindowsupdates.NewMonitoringRule()
 signal := graphmodels.ROLLBACK_MONITORINGSIGNAL 
 monitoringRule.SetSignal(&signal) 
 threshold := int32(5)
@@ -28,9 +28,8 @@ monitoringRule.SetThreshold(&threshold)
 action := graphmodels.PAUSEDEPLOYMENT_MONITORINGACTION 
 monitoringRule.SetAction(&action) 
 
-monitoringRules := []graphmodels.MonitoringRuleable {
+monitoringRules := []graphmodelswindowsupdates.MonitoringRuleable {
 	monitoringRule,
-
 }
 monitoring.SetMonitoringRules(monitoringRules)
 settings.SetMonitoring(monitoring)

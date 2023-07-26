@@ -16,30 +16,30 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMeetingRegistrantBase()
-additionalData := map[string]interface{}{
-	"firstName" : "Frederick", 
-	"lastName" : "Cormier", 
-	"email" : "frederick.cormier@contoso.com", 
+firstName := "Frederick"
+requestBody.SetFirstName(&firstName) 
+lastName := "Cormier"
+requestBody.SetLastName(&lastName) 
+email := "frederick.cormier@contoso.com"
+requestBody.SetEmail(&email) 
 
 
- := graphmodels.New()
+customQuestionAnswer := graphmodels.NewCustomQuestionAnswer()
 questionId := "MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU="
-.SetQuestionId(&questionId) 
+customQuestionAnswer.SetQuestionId(&questionId) 
 value := "No"
-.SetValue(&value) 
- := graphmodels.New()
+customQuestionAnswer.SetValue(&value) 
+customQuestionAnswer1 := graphmodels.NewCustomQuestionAnswer()
 questionId := "MSM5M2E2OWQ1Ni1jZTc4LTQDAwMjBfZGlkX3gwMDIwX3lvdV94MDAyMF8="
-.SetQuestionId(&questionId) 
+customQuestionAnswer1.SetQuestionId(&questionId) 
 value := "Internet"
-.SetValue(&value) 
+customQuestionAnswer1.SetValue(&value) 
 
-	customQuestionAnswers := []graphmodels.Objectable {
-		,
-		,
-
-	}
+customQuestionAnswers := []graphmodels.CustomQuestionAnswerable {
+	customQuestionAnswer,
+	customQuestionAnswer1,
 }
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetCustomQuestionAnswers(customQuestionAnswers)
 
 result, err := graphClient.Users().ByUserId("user-id").OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Registrants().Post(context.Background(), requestBody, nil)
 

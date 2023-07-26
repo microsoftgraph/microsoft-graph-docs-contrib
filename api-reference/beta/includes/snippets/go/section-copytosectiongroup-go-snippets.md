@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/Onenote/Sections/Item/CopyToSectionGroup"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCopyToSectionGroupPostRequestBody()
+requestBody := graphusers.NewItemCopyToSectionGroupPostRequestBody()
 id := "id-value"
 requestBody.SetId(&id) 
 groupId := "groupId-value"

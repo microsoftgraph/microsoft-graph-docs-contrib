@@ -36,7 +36,6 @@ agreementFileLocalization.SetFileData(fileData)
 
 files := []graphmodels.AgreementFileLocalizationable {
 	agreementFileLocalization,
-
 }
 requestBody.SetFiles(files)
 

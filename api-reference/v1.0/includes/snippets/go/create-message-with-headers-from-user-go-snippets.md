@@ -34,7 +34,6 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 
@@ -53,7 +52,6 @@ internetMessageHeader1.SetValue(&value)
 internetMessageHeaders := []graphmodels.InternetMessageHeaderable {
 	internetMessageHeader,
 	internetMessageHeader1,
-
 }
 requestBody.SetInternetMessageHeaders(internetMessageHeaders)
 

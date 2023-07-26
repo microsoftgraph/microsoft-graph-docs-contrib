@@ -46,7 +46,6 @@ values := []graphmodels.SettingValueable {
 	settingValue1,
 	settingValue2,
 	settingValue3,
-
 }
 requestBody.SetValues(values)
 

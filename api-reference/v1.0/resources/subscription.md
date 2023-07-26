@@ -2,7 +2,7 @@
 title: "subscription resource type"
 description: "A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
 ms.localizationpriority: high
-author: "jumasure"
+author: "keylimesoda"
 ms.prod: "change-notifications"
 doc_type: resourcePageType
 ---
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph.
 
-[!INCLUDE [change-notifications-supported-resources](../../../concepts/includes/change-notifications-supported-resources-flat.md)]
-
-For more information about subscriptions and change notifications, see [Set up notifications for changes in resource data](webhooks.md).
+For more information about subscriptions and change notifications, including resources that support change notifications, see [Set up notifications for changes in resource data](webhooks.md).
 
 ## Methods
 

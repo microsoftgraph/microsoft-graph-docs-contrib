@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/onpremisespublishingprofiles"
+	  graphonpremisespublishingprofiles "github.com/microsoftgraph/msgraph-beta-sdk-go/onpremisespublishingprofiles"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.OnPremisesPublishingProfileItemAgentItemRequestBuilderGetQueryParameters{
+requestParameters := &graphonpremisespublishingprofiles.OnPremisesPublishingProfileItemAgentItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"agentGroups"},
 }
-configuration := &graphconfig.OnPremisesPublishingProfileItemAgentItemRequestBuilderGetRequestConfiguration{
+configuration := &graphonpremisespublishingprofiles.OnPremisesPublishingProfileItemAgentItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

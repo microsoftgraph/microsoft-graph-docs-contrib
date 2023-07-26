@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/planner"
+	  graphplanner "github.com/microsoftgraph/msgraph-beta-sdk-go/planner"
 	  //other-imports
 )
 
@@ -19,7 +19,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-configuration := &graphconfig.PlannerPlanItemRequestBuilderDeleteRequestConfiguration{
+configuration := &graphplanner.PlannerPlanItemRequestBuilderDeleteRequestConfiguration{
 	Headers: headers,
 }
 

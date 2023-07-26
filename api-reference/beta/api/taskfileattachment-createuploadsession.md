@@ -116,6 +116,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/attachmentbasethiscreateuploadsession-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/attachmentbasethiscreateuploadsession-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

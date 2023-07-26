@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TrustFramework/KeySets/Item/UploadCertificate"
+	  graphtrustframework "github.com/microsoftgraph/msgraph-beta-sdk-go/trustframework"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewUploadCertificatePostRequestBody()
+requestBody := graphtrustframework.NewUploadCertificatePostRequestBody()
 key := "key-value"
 requestBody.SetKey(&key) 
 

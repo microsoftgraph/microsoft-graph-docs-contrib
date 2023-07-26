@@ -8,17 +8,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TenantRelationships/ManagedTenants/TenantTags/Item/MicrosoftGraphManagedTenantsUnassignTag"
+	  graphtenantrelationships "github.com/microsoftgraph/msgraph-beta-sdk-go/tenantrelationships"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewUnassignTagPostRequestBody()
+requestBody := graphtenantrelationships.NewUnassignTagPostRequestBody()
 tenantIds := []string {
 	"String",
-
 }
 requestBody.SetTenantIds(tenantIds)
 

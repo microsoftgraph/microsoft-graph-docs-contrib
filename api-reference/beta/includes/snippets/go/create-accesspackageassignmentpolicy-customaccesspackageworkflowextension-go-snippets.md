@@ -67,7 +67,6 @@ customExtensionHandler1.SetCustomExtension(customExtension)
 customExtensionHandlers := []graphmodels.CustomExtensionHandlerable {
 	customExtensionHandler,
 	customExtensionHandler1,
-
 }
 requestBody.SetCustomExtensionHandlers(customExtensionHandlers)
 additionalData := map[string]interface{}{

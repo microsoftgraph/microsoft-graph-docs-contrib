@@ -9,14 +9,14 @@ import (
 	  "context"
 	  "time"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//industryData"
+	  graphmodelsindustrydata "github.com/microsoftgraph/msgraph-beta-sdk-go/models/industrydata"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewInboundFlow()
+requestBody := graphmodelsindustrydata.NewInboundFlow()
 dataDomain := graphmodels.EDUCATIONROSTERING_INBOUNDDOMAIN 
 requestBody.SetDataDomain(&dataDomain) 
 displayName := "Inbound rostering flow"

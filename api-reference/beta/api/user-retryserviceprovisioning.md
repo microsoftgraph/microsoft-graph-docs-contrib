@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/beta/users/{id}/retryServiceProvisioning
 [!INCLUDE [sample-code](../includes/snippets/powershell/user-retryserviceprovisioning-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-retryserviceprovisioning-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

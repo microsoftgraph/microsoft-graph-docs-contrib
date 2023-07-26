@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Groups/Item/Threads/Item/Posts/Item/Reply"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewReplyPostRequestBody()
+requestBody := graphgroups.NewReplyPostRequestBody()
 post := graphmodels.NewPost()
 body := graphmodels.NewItemBody()
 contentType := graphmodels.HTML_BODYTYPE 
@@ -25,23 +26,22 @@ body.SetContent(&content)
 post.SetBody(body)
 
 
-extension := graphmodels.NewExtension()
+extension := graphmodels.NewOpenTypeExtension()
+extensionName := "Com.Contoso.HR"
+extension.SetExtensionName(&extensionName) 
 additionalData := map[string]interface{}{
-	"extensionName" : "Com.Contoso.HR", 
 	"companyName" : "Contoso", 
 	"expirationDate" : "2015-07-03T13:04:00.000Z", 
 	topPicks := []string {
 		"Employees only",
 		"Add spouse or guest",
 		"Add family",
-
 	}
 }
 extension.SetAdditionalData(additionalData)
 
 extensions := []graphmodels.Extensionable {
 	extension,
-
 }
 post.SetExtensions(extensions)
 requestBody.SetPost(post)

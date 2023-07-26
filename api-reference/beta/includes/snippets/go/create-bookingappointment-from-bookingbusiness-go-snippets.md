@@ -144,7 +144,6 @@ reminders := []graphmodels.BookingReminderable {
 	bookingReminder,
 	bookingReminder1,
 	bookingReminder2,
-
 }
 requestBody.SetReminders(reminders)
 serviceId := "57da6774-a087-4d69-b0e6-6fb82c339976"
@@ -206,29 +205,32 @@ filledAttendeesCount := int32(1)
 requestBody.SetFilledAttendeesCount(&filledAttendeesCount) 
 
 
-bookingCustomerInformationBase := graphmodels.NewBookingCustomerInformationBase()
-additionalData := map[string]interface{}{
-	"customerId" : "7ed53fa5-9ef2-4f2f-975b-27447440bc09", 
-	"name" : "Jordan Miller", 
-	"emailAddress" : "jordanm@contoso.com", 
-	"phone" : "213-555-0199", 
-	notes := null
+bookingCustomerInformationBase := graphmodels.NewBookingCustomerInformation()
+customerId := "7ed53fa5-9ef2-4f2f-975b-27447440bc09"
+bookingCustomerInformationBase.SetCustomerId(&customerId) 
+name := "Jordan Miller"
+bookingCustomerInformationBase.SetName(&name) 
+emailAddress := "jordanm@contoso.com"
+bookingCustomerInformationBase.SetEmailAddress(&emailAddress) 
+phone := "213-555-0199"
+bookingCustomerInformationBase.SetPhone(&phone) 
+notes := null
 bookingCustomerInformationBase.SetNotes(&notes) 
-location := graphmodels.New()
+location := graphmodels.NewLocation()
 displayName := "Customer"
 location.SetDisplayName(&displayName) 
-	locationEmailAddress := null
+locationEmailAddress := null
 location.SetLocationEmailAddress(&locationEmailAddress) 
 locationUri := ""
 location.SetLocationUri(&locationUri) 
-	locationType := null
+locationType := null
 location.SetLocationType(&locationType) 
-	uniqueId := null
+uniqueId := null
 location.SetUniqueId(&uniqueId) 
-	uniqueIdType := null
+uniqueIdType := null
 location.SetUniqueIdType(&uniqueIdType) 
-address := graphmodels.New()
-type := "home"
+address := graphmodels.NewPhysicalAddress()
+type := graphmodels.HOME_PHYSICALADDRESSTYPE 
 address.SetType(&type) 
 postOfficeBox := ""
 address.SetPostOfficeBox(&postOfficeBox) 
@@ -242,53 +244,51 @@ countryOrRegion := ""
 address.SetCountryOrRegion(&countryOrRegion) 
 postalCode := ""
 address.SetPostalCode(&postalCode) 
-	location.SetAddress(address)
-coordinates := graphmodels.New()
-	altitude := null
+location.SetAddress(address)
+coordinates := graphmodels.NewOutlookGeoCoordinates()
+altitude := null
 coordinates.SetAltitude(&altitude) 
-	latitude := null
+latitude := null
 coordinates.SetLatitude(&latitude) 
-	longitude := null
+longitude := null
 coordinates.SetLongitude(&longitude) 
-	accuracy := null
+accuracy := null
 coordinates.SetAccuracy(&accuracy) 
-	altitudeAccuracy := null
+altitudeAccuracy := null
 coordinates.SetAltitudeAccuracy(&altitudeAccuracy) 
-	location.SetCoordinates(coordinates)
-	bookingCustomerInformationBase.SetLocation(location)
-	"timeZone" : "America/Chicago", 
+location.SetCoordinates(coordinates)
+bookingCustomerInformationBase.SetLocation(location)
+timeZone := "America/Chicago"
+bookingCustomerInformationBase.SetTimeZone(&timeZone) 
 
 
- := graphmodels.New()
+bookingQuestionAnswer := graphmodels.NewBookingQuestionAnswer()
 questionId := "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"
-.SetQuestionId(&questionId) 
+bookingQuestionAnswer.SetQuestionId(&questionId) 
 question := "What is your age"
-.SetQuestion(&question) 
-answerInputType := "text"
-.SetAnswerInputType(&answerInputType) 
-answerOptions := []graphmodels.able {
+bookingQuestionAnswer.SetQuestion(&question) 
+answerInputType := graphmodels.TEXT_ANSWERINPUTTYPE 
+bookingQuestionAnswer.SetAnswerInputType(&answerInputType) 
+answerOptions := []string {
 
 }
-.SetAnswerOptions(answerOptions)
+bookingQuestionAnswer.SetAnswerOptions(answerOptions)
 isRequired := true
-.SetIsRequired(&isRequired) 
+bookingQuestionAnswer.SetIsRequired(&isRequired) 
 answer := "25"
-.SetAnswer(&answer) 
-selectedOptions := []graphmodels.able {
+bookingQuestionAnswer.SetAnswer(&answer) 
+selectedOptions := []string {
 
 }
-.SetSelectedOptions(selectedOptions)
+bookingQuestionAnswer.SetSelectedOptions(selectedOptions)
 
-	customQuestionAnswers := []graphmodels.Objectable {
-		,
-
-	}
+customQuestionAnswers := []graphmodels.BookingQuestionAnswerable {
+	bookingQuestionAnswer,
 }
-bookingCustomerInformationBase.SetAdditionalData(additionalData)
+bookingCustomerInformationBase.SetCustomQuestionAnswers(customQuestionAnswers)
 
 customers := []graphmodels.BookingCustomerInformationBaseable {
 	bookingCustomerInformationBase,
-
 }
 requestBody.SetCustomers(customers)
 additionalData := map[string]interface{}{

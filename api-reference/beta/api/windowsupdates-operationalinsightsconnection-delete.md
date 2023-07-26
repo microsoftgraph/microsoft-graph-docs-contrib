@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/resourceConnection
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-operationalinsightsconnection-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-operationalinsightsconnection-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

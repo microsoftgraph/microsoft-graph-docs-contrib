@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/communications"
+	  graphcommunications "github.com/microsoftgraph/msgraph-sdk-go/communications"
 	  //other-imports
 )
 
@@ -18,10 +18,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "VideoTeleconferenceId eq '123456789'"
 
-requestParameters := &graphconfig.CommunicationsOnlineMeetingsRequestBuilderGetQueryParameters{
+requestParameters := &graphcommunications.CommunicationsOnlineMeetingsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.CommunicationsOnlineMeetingsRequestBuilderGetRequestConfiguration{
+configuration := &graphcommunications.CommunicationsOnlineMeetingsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

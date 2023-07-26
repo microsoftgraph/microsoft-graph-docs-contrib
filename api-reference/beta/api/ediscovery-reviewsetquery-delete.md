@@ -87,6 +87,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-reviewsetquery-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-reviewsetquery-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

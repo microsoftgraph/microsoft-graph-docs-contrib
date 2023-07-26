@@ -30,7 +30,6 @@ post.SetBody(body)
 
 posts := []graphmodels.Postable {
 	post,
-
 }
 requestBody.SetPosts(posts)
 

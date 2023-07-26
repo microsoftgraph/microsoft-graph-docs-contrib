@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new AuthenticationEventListener();
-$requestBody->set@odatatype('#microsoft.graph.onTokenIssuanceStartListener');
+$requestBody = new OnTokenIssuanceStartListener();
+$requestBody->setOdataType('#microsoft.graph.onTokenIssuanceStartListener');
 
 $conditions = new AuthenticationConditions();
 $conditionsApplications = new AuthenticationConditionsApplications();
@@ -30,22 +30,16 @@ $conditions->setApplications($conditionsApplications);
 $requestBody->setConditions($conditions);
 $requestBody->setPriority(500);
 
-$additionalData = [
-	'handler' => $requestBody = new Handler();
-$	requestBody->set@odatatype('#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler');
+$handler = new OnTokenIssuanceStartCustomExtensionHandler();
+$handler->setOdataType('#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler');
 
-$customExtension = new CustomExtension();
-$	customExtension->setId('6fc5012e-7665-43d6-9708-4370863f4e6e');
+$handlerCustomExtension = new OnTokenIssuanceStartCustomExtension();
+$handlerCustomExtension->setId('6fc5012e-7665-43d6-9708-4370863f4e6e');
 
 
-$requestBody->setCustomExtension($customExtension);
+$handler->setCustomExtension($handlerCustomExtension);
 
 $requestBody->setHandler($handler);
-
-];
-$requestBody->setAdditionalData($additionalData);
-
-
 
 
 $result = $graphServiceClient->identity()->authenticationEventListeners()->post($requestBody);

@@ -111,7 +111,6 @@ chatMessageMention1.SetMentioned(mentioned)
 mentions := []graphmodels.ChatMessageMentionable {
 	chatMessageMention,
 	chatMessageMention1,
-
 }
 requestBody.SetMentions(mentions)
 reactions := []graphmodels.ChatMessageReactionable {

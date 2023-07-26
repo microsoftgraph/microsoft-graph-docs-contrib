@@ -8,19 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//managedTenants"
+	  graphmodelsmanagedtenants "github.com/microsoftgraph/msgraph-beta-sdk-go/models/managedtenants"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewTenantCustomizedInformation()
+requestBody := graphmodelsmanagedtenants.NewTenantCustomizedInformation()
 tenantId := "String"
 requestBody.SetTenantId(&tenantId) 
 
 
-tenantContactInformation := graphmodels.NewTenantContactInformation()
+tenantContactInformation := graphmodelsmanagedtenants.NewTenantContactInformation()
 name := "String"
 tenantContactInformation.SetName(&name) 
 title := "String"
@@ -32,9 +32,8 @@ tenantContactInformation.SetPhone(&phone)
 notes := "String"
 tenantContactInformation.SetNotes(&notes) 
 
-contacts := []graphmodels.TenantContactInformationable {
+contacts := []graphmodelsmanagedtenants.TenantContactInformationable {
 	tenantContactInformation,
-
 }
 requestBody.SetContacts(contacts)
 website := "String"

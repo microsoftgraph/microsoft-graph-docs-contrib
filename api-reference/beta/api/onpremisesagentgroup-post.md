@@ -89,6 +89,10 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-onpremisesagent-from-onpremisesagentgroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-onpremisesagent-from-onpremisesagentgroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.

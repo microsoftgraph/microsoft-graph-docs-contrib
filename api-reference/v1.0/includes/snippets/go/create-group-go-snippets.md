@@ -22,7 +22,6 @@ displayName := "Library Assist"
 requestBody.SetDisplayName(&displayName) 
 groupTypes := []string {
 	"Unified",
-
 }
 requestBody.SetGroupTypes(groupTypes)
 mailEnabled := true

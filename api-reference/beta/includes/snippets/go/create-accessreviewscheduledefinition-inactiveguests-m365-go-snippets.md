@@ -22,20 +22,19 @@ descriptionForAdmins := "Control guest user access to our teams."
 requestBody.SetDescriptionForAdmins(&descriptionForAdmins) 
 descriptionForReviewers := "Information security is everyone's responsibility. Review our access policy for more."
 requestBody.SetDescriptionForReviewers(&descriptionForReviewers) 
-instanceEnumerationScope := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
-	"query" : "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')", 
-	"queryType" : "MicrosoftGraph", 
-}
-instanceEnumerationScope.SetAdditionalData(additionalData)
+instanceEnumerationScope := graphmodels.NewAccessReviewQueryScope()
+query := "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"
+instanceEnumerationScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+instanceEnumerationScope.SetQueryType(&queryType) 
 requestBody.SetInstanceEnumerationScope(instanceEnumerationScope)
-scope := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
-	"query" : "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')", 
-	"queryType" : "MicrosoftGraph", 
-	"inactiveDuration" : "P30D", 
-}
-scope.SetAdditionalData(additionalData)
+scope := graphmodels.NewAccessReviewInactiveUsersQueryScope()
+query := "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')"
+scope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+scope.SetQueryType(&queryType) 
+inactiveDuration , err := abstractions.ParseISODuration("P30D")
+scope.SetInactiveDuration(&inactiveDuration) 
 requestBody.SetScope(scope)
 
 
@@ -45,9 +44,8 @@ accessReviewReviewerScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
 
-reviewers := []graphmodels.Objectable {
+reviewers := []graphmodels.accessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 requestBody.SetReviewers(reviewers)
 
@@ -58,9 +56,8 @@ accessReviewReviewerScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
 
-fallbackReviewers := []graphmodels.Objectable {
+fallbackReviewers := []graphmodels.accessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)
 settings := graphmodels.NewAccessReviewScheduleSettings()

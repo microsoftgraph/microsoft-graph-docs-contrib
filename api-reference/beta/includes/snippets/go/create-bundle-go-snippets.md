@@ -32,7 +32,6 @@ driveItem1.SetId(&id)
 children := []graphmodels.DriveItemable {
 	driveItem,
 	driveItem1,
-
 }
 requestBody.SetChildren(children)
 additionalData := map[string]interface{}{

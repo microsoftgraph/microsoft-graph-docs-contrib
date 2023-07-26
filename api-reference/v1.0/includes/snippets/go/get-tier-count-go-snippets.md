@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
 	  //other-imports
 )
 
@@ -23,13 +23,13 @@ headers.Add("ConsistencyLevel", "eventual")
 requestCount := true
 requestSearch := "\"displayName:tier\""
 
-requestParameters := &graphconfig.GroupItemTransitiveMembersGraph.userRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.GroupItemTransitiveMembersGraph.userRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"displayName"},
 	Search: &requestSearch,
 	Select: [] string {"displayName","id"},
 }
-configuration := &graphconfig.GroupItemTransitiveMembersGraph.userRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupItemTransitiveMembersGraph.userRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

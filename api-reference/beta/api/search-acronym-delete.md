@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/search/acronyms/{acronymsId}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-acronym-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-acronym-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

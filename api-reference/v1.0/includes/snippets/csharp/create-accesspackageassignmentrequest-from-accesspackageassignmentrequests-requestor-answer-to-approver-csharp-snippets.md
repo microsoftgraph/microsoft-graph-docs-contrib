@@ -14,36 +14,26 @@ var requestBody = new AccessPackageAssignmentRequest
 	RequestType = AccessPackageRequestType.UserAdd,
 	Answers = new List<AccessPackageAnswer>
 	{
-		new AccessPackageAnswer
+		new AccessPackageAnswerString
 		{
 			OdataType = "#microsoft.graph.accessPackageAnswerString",
 			DisplayValue = "This is the answer to a multiple choice question",
-			AnsweredQuestion = new AccessPackageQuestion
+			Value = "MultipleChoiceAnswerValue",
+			AnsweredQuestion = new AccessPackageMultipleChoiceQuestion
 			{
 				OdataType = "#microsoft.graph.accessPackageMultipleChoiceQuestion",
 				Id = "8fe745e7-80b2-490d-bd22-4e708c77288c",
 			},
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"value" , "MultipleChoiceAnswerValue"
-				},
-			},
 		},
-		new AccessPackageAnswer
+		new AccessPackageAnswerString
 		{
 			OdataType = "#microsoft.graph.accessPackageAnswerString",
+			Value = "This is my answer to a text input question.",
 			DisplayValue = "This is my answer.",
-			AnsweredQuestion = new AccessPackageQuestion
+			AnsweredQuestion = new AccessPackageTextInputQuestion
 			{
 				OdataType = "#microsoft.graph.accessPackageTextInputQuestion",
 				Id = "7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6",
-			},
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"value" , "This is my answer to a text input question."
-				},
 			},
 		},
 	},

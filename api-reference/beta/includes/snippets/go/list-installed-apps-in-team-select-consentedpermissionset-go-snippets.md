@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.TeamItemInstalledAppsRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamItemInstalledAppsRequestBuilderGetQueryParameters{
 	Select: [] string {"consentedPermissionSet","id"},
 }
-configuration := &graphconfig.TeamItemInstalledAppsRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamItemInstalledAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

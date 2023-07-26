@@ -29,8 +29,7 @@ decisions := []graphmodels.AccessReviewHistoryDecisionFilterable {
 	accessReviewHistoryDecisionFilter := graphmodels.NOTREVIEWED_ACCESSREVIEWHISTORYDECISIONFILTER 
 	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
 	accessReviewHistoryDecisionFilter := graphmodels.NOTNOTIFIED_ACCESSREVIEWHISTORYDECISIONFILTER 
-	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
-
+	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter)
 }
 requestBody.SetDecisions(decisions)
 reviewHistoryPeriodStartDateTime , err := time.Parse(time.RFC3339, "2021-01-01T00:00:00Z")
@@ -39,27 +38,24 @@ reviewHistoryPeriodEndDateTime , err := time.Parse(time.RFC3339, "2021-04-30T23:
 requestBody.SetReviewHistoryPeriodEndDateTime(&reviewHistoryPeriodEndDateTime) 
 
 
-accessReviewScope := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
-	"queryType" : "MicrosoftGraph", 
-	"query" : "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')", 
-	queryRoot := null
+accessReviewScope := graphmodels.NewAccessReviewQueryScope()
+queryType := "MicrosoftGraph"
+accessReviewScope.SetQueryType(&queryType) 
+query := "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')"
+accessReviewScope.SetQuery(&query) 
+queryRoot := null
 accessReviewScope.SetQueryRoot(&queryRoot) 
-}
-accessReviewScope.SetAdditionalData(additionalData)
-accessReviewScope1 := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
-	"queryType" : "MicrosoftGraph", 
-	"query" : "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')", 
-	queryRoot := null
+accessReviewScope1 := graphmodels.NewAccessReviewQueryScope()
+queryType := "MicrosoftGraph"
+accessReviewScope1.SetQueryType(&queryType) 
+query := "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')"
+accessReviewScope1.SetQuery(&query) 
+queryRoot := null
 accessReviewScope1.SetQueryRoot(&queryRoot) 
-}
-accessReviewScope1.SetAdditionalData(additionalData)
 
 scopes := []graphmodels.AccessReviewScopeable {
 	accessReviewScope,
 	accessReviewScope1,
-
 }
 requestBody.SetScopes(scopes)
 

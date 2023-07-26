@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-permission-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-permission-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

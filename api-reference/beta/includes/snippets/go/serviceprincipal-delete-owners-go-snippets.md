@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/ServicePrincipals/Item/Owners/Item/Ref"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.New$refDeleteRequestBody()
+requestBody := graphserviceprincipals.New$refDeleteRequestBody()
 additionalData := map[string]interface{}{
 	"odataId" : "https://graph.microsoft.com/v1.0/directoryObjects/{id}", 
 }

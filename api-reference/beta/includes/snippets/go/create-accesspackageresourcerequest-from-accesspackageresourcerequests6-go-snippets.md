@@ -44,33 +44,29 @@ isEditable := true
 accessPackageResourceAttribute.SetIsEditable(&isEditable) 
 isPersistedOnAssignmentRemoval := true
 accessPackageResourceAttribute.SetIsPersistedOnAssignmentRemoval(&isPersistedOnAssignmentRemoval) 
-attributeSource := graphmodels.NewAccessPackageResourceAttributeSource()
-additionalData := map[string]interface{}{
-question := graphmodels.New()
-	isRequired := false
+attributeSource := graphmodels.NewAccessPackageResourceAttributeQuestion()
+question := graphmodels.NewAccessPackageTextInputQuestion()
+isRequired := false
 question.SetIsRequired(&isRequired) 
 sequence := int32(0)
 question.SetSequence(&sequence) 
-	isSingleLineQuestion := true
+isSingleLineQuestion := true
 question.SetIsSingleLineQuestion(&isSingleLineQuestion) 
-text := graphmodels.New()
+text := graphmodels.NewAccessPackageLocalizedContent()
 defaultText := "Title"
 text.SetDefaultText(&defaultText) 
-	localizedTexts := []graphmodels.able {
+localizedTexts := []graphmodels.AccessPackageLocalizedTextable {
 
-	}
-	text.SetLocalizedTexts(localizedTexts)
-	question.SetText(text)
-	attributeSource.SetQuestion(question)
 }
-attributeSource.SetAdditionalData(additionalData)
+text.SetLocalizedTexts(localizedTexts)
+question.SetText(text)
+attributeSource.SetQuestion(question)
 accessPackageResourceAttribute.SetAttributeSource(attributeSource)
-attributeDestination := graphmodels.NewAccessPackageResourceAttributeDestination()
+attributeDestination := graphmodels.NewAccessPackageUserDirectoryAttributeStore()
 accessPackageResourceAttribute.SetAttributeDestination(attributeDestination)
 
 attributes := []graphmodels.AccessPackageResourceAttributeable {
 	accessPackageResourceAttribute,
-
 }
 accessPackageResource.SetAttributes(attributes)
 requestBody.SetAccessPackageResource(accessPackageResource)

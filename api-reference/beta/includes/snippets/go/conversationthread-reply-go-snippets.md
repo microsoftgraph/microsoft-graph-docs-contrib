@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Groups/Item/Threads/Item/Reply"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewReplyPostRequestBody()
+requestBody := graphgroups.NewReplyPostRequestBody()
 post := graphmodels.NewPost()
 body := graphmodels.NewItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 

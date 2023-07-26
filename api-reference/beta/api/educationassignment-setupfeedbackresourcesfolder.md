@@ -85,8 +85,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/educationassignment-setupfeedbackresourcesfolder-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/educationassignment-setupfeedbackresourcesfolder-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/educationassignment-setupfeedbackresourcesfolder-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

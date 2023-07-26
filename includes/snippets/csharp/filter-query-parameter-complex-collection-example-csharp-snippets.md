@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.Users.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "assignedLicenses/any";
+	requestConfiguration.QueryParameters.Filter = "assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)";
 });
 
 

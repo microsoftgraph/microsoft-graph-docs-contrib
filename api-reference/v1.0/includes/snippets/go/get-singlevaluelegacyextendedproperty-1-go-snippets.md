@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.ItemMessageItemRequestBuilderGetQueryParameters{
-	Expand: [] string {"singleValueExtendedProperties($filter=id%20eq%20'String%20%7B66f5a359-4659-4830-9070-00047ec6ac6e%7D%20Name%20Color')"},
+requestParameters := &graphusers.ItemMessageItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"singleValueExtendedProperties($filter=id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color')"},
 }
-configuration := &graphconfig.ItemMessageItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMessageItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

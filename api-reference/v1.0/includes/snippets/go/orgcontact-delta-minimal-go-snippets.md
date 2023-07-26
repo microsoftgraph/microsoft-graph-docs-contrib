@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/contacts"
+	  graphcontacts "github.com/microsoftgraph/msgraph-sdk-go/contacts"
 	  //other-imports
 )
 
@@ -19,10 +19,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=minimal")
 
-requestParameters := &graphconfig.ContactsDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphcontacts.ContactsDelta()RequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","jobTitle","mail"},
 }
-configuration := &graphconfig.ContactsDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphcontacts.ContactsDelta()RequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

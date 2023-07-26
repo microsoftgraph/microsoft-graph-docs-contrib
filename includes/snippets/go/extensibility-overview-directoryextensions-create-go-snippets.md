@@ -22,7 +22,6 @@ dataType := "String"
 requestBody.SetDataType(&dataType) 
 targetObjects := []string {
 	"User",
-
 }
 requestBody.SetTargetObjects(targetObjects)
 

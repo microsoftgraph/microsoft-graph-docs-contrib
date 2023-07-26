@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Directory/DeletedItems/GetUserOwnedObjects"
+	  graphdirectory "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewGetUserOwnedObjectsPostRequestBody()
+requestBody := graphdirectory.NewGetUserOwnedObjectsPostRequestBody()
 userId := "55ac777c-109e-4022-b58c-470c8fcb6892"
 requestBody.SetUserId(&userId) 
 type := "Group"

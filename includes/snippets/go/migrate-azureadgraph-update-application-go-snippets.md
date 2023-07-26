@@ -37,13 +37,11 @@ resourceAccess1.SetType(&type)
 resourceAccess := []graphmodels.ResourceAccessable {
 	resourceAccess,
 	resourceAccess1,
-
 }
 requiredResourceAccess.SetResourceAccess(resourceAccess)
 
 requiredResourceAccess := []graphmodels.RequiredResourceAccessable {
 	requiredResourceAccess,
-
 }
 requestBody.SetRequiredResourceAccess(requiredResourceAccess)
 

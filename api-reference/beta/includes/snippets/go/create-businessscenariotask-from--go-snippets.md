@@ -22,13 +22,11 @@ percentComplete := int32(0)
 requestBody.SetPercentComplete(&percentComplete) 
 priority := int32(5)
 requestBody.SetPriority(&priority) 
-target := graphmodels.NewBusinessScenarioTaskTargetBase()
+target := graphmodels.NewBusinessScenarioGroupTarget()
 taskTargetKind := graphmodels.GROUP_PLANNERTASKTARGETKIND 
 target.SetTaskTargetKind(&taskTargetKind) 
-additionalData := map[string]interface{}{
-	"groupId" : "7a339254-4b2b-4410-b295-c890a16776ee", 
-}
-target.SetAdditionalData(additionalData)
+groupId := "7a339254-4b2b-4410-b295-c890a16776ee"
+target.SetGroupId(&groupId) 
 requestBody.SetTarget(target)
 businessScenarioProperties := graphmodels.NewBusinessScenarioProperties()
 externalObjectId := "Order#12010"

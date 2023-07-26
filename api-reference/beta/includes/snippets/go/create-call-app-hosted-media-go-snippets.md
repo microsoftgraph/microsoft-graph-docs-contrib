@@ -46,20 +46,16 @@ invitationParticipantInfo.SetIdentity(identity)
 
 targets := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,
-
 }
 requestBody.SetTargets(targets)
 requestedModalities := []graphmodels.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
-	requestBody.SetModality(&modality) 
-
+	requestBody.SetModality(&modality)
 }
 requestBody.SetRequestedModalities(requestedModalities)
-mediaConfig := graphmodels.NewMediaConfig()
-additionalData := map[string]interface{}{
-	"blob" : "<Media Session Configuration>", 
-}
-mediaConfig.SetAdditionalData(additionalData)
+mediaConfig := graphmodels.NewAppHostedMediaConfig()
+blob := "<Media Session Configuration>"
+mediaConfig.SetBlob(&blob) 
 requestBody.SetMediaConfig(mediaConfig)
 
 result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)

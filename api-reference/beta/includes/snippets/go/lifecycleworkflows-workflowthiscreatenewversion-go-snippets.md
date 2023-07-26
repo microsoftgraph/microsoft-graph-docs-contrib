@@ -8,15 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/IdentityGovernance/LifecycleWorkflows/Workflows/Item/MicrosoftGraphIdentityGovernanceCreateNewVersion"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  graphmodelsidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/models/identitygovernance"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCreateNewVersionPostRequestBody()
-workflow := graphmodels.NewWorkflow()
+requestBody := graphidentitygovernance.NewCreateNewVersionPostRequestBody()
+workflow := graphmodelsidentitygovernance.NewWorkflow()
 category := graphmodels.JOINER_LIFECYCLEWORKFLOWCATEGORY 
 workflow.SetCategory(&category) 
 description := "Configure new hire tasks for onboarding employees on their first day"
@@ -27,24 +29,21 @@ isEnabled := true
 workflow.SetIsEnabled(&isEnabled) 
 isSchedulingEnabled := false
 workflow.SetIsSchedulingEnabled(&isSchedulingEnabled) 
-executionConditions := graphmodels.NewWorkflowExecutionConditions()
-additionalData := map[string]interface{}{
-scope := graphmodels.New()
+executionConditions := graphmodelsidentitygovernance.NewTriggerAndScopeBasedConditions()
+scope := graphmodelsidentitygovernance.NewRuleBasedSubjectSet()
 rule := "(department eq 'Marketing')"
 scope.SetRule(&rule) 
-	executionConditions.SetScope(scope)
-trigger := graphmodels.New()
-timeBasedAttribute := "employeeHireDate"
+executionConditions.SetScope(scope)
+trigger := graphmodelsidentitygovernance.NewTimeBasedAttributeTrigger()
+timeBasedAttribute := graphmodels.EMPLOYEEHIREDATE_WORKFLOWTRIGGERTIMEBASEDATTRIBUTE 
 trigger.SetTimeBasedAttribute(&timeBasedAttribute) 
 offsetInDays := int32(1)
 trigger.SetOffsetInDays(&offsetInDays) 
-	executionConditions.SetTrigger(trigger)
-}
-executionConditions.SetAdditionalData(additionalData)
+executionConditions.SetTrigger(trigger)
 workflow.SetExecutionConditions(executionConditions)
 
 
-task := graphmodels.NewTask()
+task := graphmodelsidentitygovernance.NewTask()
 continueOnError := false
 task.SetContinueOnError(&continueOnError) 
 description := "Enable user account in the directory"
@@ -59,7 +58,7 @@ arguments := []graphmodels.KeyValuePairable {
 
 }
 task.SetArguments(arguments)
-task1 := graphmodels.NewTask()
+task1 := graphmodelsidentitygovernance.NewTask()
 continueOnError := false
 task1.SetContinueOnError(&continueOnError) 
 description := "Send welcome email to new hire"
@@ -75,10 +74,9 @@ arguments := []graphmodels.KeyValuePairable {
 }
 task1.SetArguments(arguments)
 
-tasks := []graphmodels.Taskable {
+tasks := []graphmodelsidentitygovernance.Taskable {
 	task,
 	task1,
-
 }
 workflow.SetTasks(tasks)
 requestBody.SetWorkflow(workflow)

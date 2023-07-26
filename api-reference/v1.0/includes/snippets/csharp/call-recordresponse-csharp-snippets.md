@@ -14,18 +14,13 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.RecordResponse.R
 	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",
 	Prompts = new List<Prompt>
 	{
-		new Prompt
+		new MediaPrompt
 		{
 			OdataType = "#microsoft.graph.mediaPrompt",
-			AdditionalData = new Dictionary<string, object>
+			MediaInfo = new MediaInfo
 			{
-				{
-					"mediaInfo" , new 
-					{
-						Uri = "https://cdn.contoso.com/beep.wav",
-						ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E",
-					}
-				},
+				Uri = "https://cdn.contoso.com/beep.wav",
+				ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E",
 			},
 		},
 	},

@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Drives/Item/Items/Item/Copy"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCopyPostRequestBody()
+requestBody := graphdrives.NewCopyPostRequestBody()
 parentReference := graphmodels.NewItemReference()
 driveId := "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B"
 parentReference.SetDriveId(&driveId) 

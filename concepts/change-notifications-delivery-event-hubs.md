@@ -1,7 +1,7 @@
 ---
 title: "Receive change notifications through Azure Event Hubs"
 description: "Change notifications can be delivered via different channels, including webhooks and Azure Event Hubs. This article walks you through how to get change notifications through Azure Event Hubs."
-author: "jumasure"
+author: "keylimesoda"
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
@@ -191,6 +191,10 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 [!INCLUDE [sample-code](../includes/snippets/csharp/change-notifications-eventhubs-create-changetrackingapp-sp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/change-notifications-eventhubs-create-changetrackingapp-sp-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/change-notifications-eventhubs-create-changetrackingapp-sp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -205,6 +209,10 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/change-notifications-eventhubs-create-changetrackingapp-sp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/change-notifications-eventhubs-create-changetrackingapp-sp-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

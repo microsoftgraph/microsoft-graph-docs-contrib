@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/4d2f137b-e8a
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-tokenlifetimepolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-tokenlifetimepolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -96,6 +96,10 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/send
 [!INCLUDE [sample-code](../includes/snippets/powershell/message-send-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/message-send-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

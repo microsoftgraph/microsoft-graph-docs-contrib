@@ -24,7 +24,6 @@ isMultiValued := true
 requestBody.SetIsMultiValued(&isMultiValued) 
 targetObjects := []string {
 	"User",
-
 }
 requestBody.SetTargetObjects(targetObjects)
 

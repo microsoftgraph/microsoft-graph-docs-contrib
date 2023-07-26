@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Communications/Calls/Item/SubscribeToTone"
+	  graphcommunications "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSubscribeToTonePostRequestBody()
+requestBody := graphcommunications.NewSubscribeToTonePostRequestBody()
 clientContext := "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 requestBody.SetClientContext(&clientContext) 
 

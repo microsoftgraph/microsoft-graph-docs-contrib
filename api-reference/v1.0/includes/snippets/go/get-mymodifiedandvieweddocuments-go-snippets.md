@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.ItemInsightsUsedRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemInsightsUsedRequestBuilderGetQueryParameters{
 	Orderby: [] string {"LastUsed/LastAccessedDateTime desc"},
 }
-configuration := &graphconfig.ItemInsightsUsedRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemInsightsUsedRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

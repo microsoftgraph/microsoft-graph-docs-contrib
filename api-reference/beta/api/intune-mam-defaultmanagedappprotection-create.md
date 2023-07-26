@@ -147,6 +147,7 @@ The following table shows the properties that are required when you create the d
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
 |connectToVpnOnLaunch|Boolean|Whether the app should connect to the configured VPN on launch (Android only).|
 |appActionIfDevicePasscodeComplexityLessThanLow|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of low complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfAccountIsClockedOut|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or warn, if the user is clocked out (non-working time). Possible values are: `block`, `wipe`, `warn`.|
 |appActionIfDevicePasscodeComplexityLessThanMedium|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of medium complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
 |appActionIfDevicePasscodeComplexityLessThanHigh|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of high complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
 |requireClass3Biometrics|Boolean|Require user to apply Class 3 Biometrics on their Android device.|
@@ -166,7 +167,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 5858
+Content-length: 5903
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -292,6 +293,7 @@ Content-length: 5858
   "appActionIfDeviceLockNotSet": "wipe",
   "connectToVpnOnLaunch": true,
   "appActionIfDevicePasscodeComplexityLessThanLow": "wipe",
+  "appActionIfAccountIsClockedOut": "wipe",
   "appActionIfDevicePasscodeComplexityLessThanMedium": "wipe",
   "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe",
   "requireClass3Biometrics": true,
@@ -306,7 +308,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6030
+Content-Length: 6075
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -435,6 +437,7 @@ Content-Length: 6030
   "appActionIfDeviceLockNotSet": "wipe",
   "connectToVpnOnLaunch": true,
   "appActionIfDevicePasscodeComplexityLessThanLow": "wipe",
+  "appActionIfAccountIsClockedOut": "wipe",
   "appActionIfDevicePasscodeComplexityLessThanMedium": "wipe",
   "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe",
   "requireClass3Biometrics": true,

@@ -22,7 +22,6 @@ description := "Graph Learn training courses extensions"
 requestBody.SetDescription(&description) 
 targetTypes := []string {
 	"user",
-
 }
 requestBody.SetTargetTypes(targetTypes)
 
@@ -47,7 +46,6 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 	extensionSchemaProperty,
 	extensionSchemaProperty1,
 	extensionSchemaProperty2,
-
 }
 requestBody.SetProperties(properties)
 

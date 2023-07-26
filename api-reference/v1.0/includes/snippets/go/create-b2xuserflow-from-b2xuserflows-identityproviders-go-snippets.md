@@ -34,7 +34,6 @@ identityProvider.SetName(&name)
 
 identityProviders := []graphmodels.IdentityProviderable {
 	identityProvider,
-
 }
 requestBody.SetIdentityProviders(identityProviders)
 

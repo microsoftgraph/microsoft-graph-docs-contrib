@@ -19,14 +19,12 @@ var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Posts.Item.Reply.
 		},
 		Extensions = new List<Extension>
 		{
-			new Extension
+			new OpenTypeExtension
 			{
 				OdataType = "microsoft.graph.openTypeExtension",
+				ExtensionName = "Com.Contoso.HR",
 				AdditionalData = new Dictionary<string, object>
 				{
-					{
-						"extensionName" , "Com.Contoso.HR"
-					},
 					{
 						"companyName" , "Contoso"
 					},

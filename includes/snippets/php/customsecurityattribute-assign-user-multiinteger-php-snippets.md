@@ -7,27 +7,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new User();
-$customSecurityAttributes = new CustomSecurityAttributeValue();
 $additionalData = [
-		'Engineering' => $customSecurityAttributes = new Engineering();
-$		customSecurityAttributes->set@odatatype('#Microsoft.DirectoryServices.CustomSecurityAttributeValue');
+		'customSecurityAttributes' => 		[
+				'engineering' => 				[
+						'@odata.type' => '#Microsoft.DirectoryServices.CustomSecurityAttributeValue', 
+						'costCenter@odata.type' => '#Collection(Int32)', 
+						'costCenter' => [
+								[
+								],
+								[
+								],
+							],
+				],
 
-$		customSecurityAttributes->setCostCenter@odatatype('#Collection(Int32)');
-
-$customSecurityAttributes->setCostCenter([1001,1003,]);
-
-
-$customSecurityAttributes->setEngineering($engineering);
+		],
 
 ];
-$customSecurityAttributes->setAdditionalData($additionalData);
+$requestBody->setAdditionalData($additionalData);
 
 
-
-$requestBody->setCustomSecurityAttributes($customSecurityAttributes);
 
 
 $result = $graphServiceClient->users()->byUserId('user-id')->patch($requestBody);

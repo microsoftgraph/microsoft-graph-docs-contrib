@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
 	  //other-imports
 )
 
@@ -19,11 +19,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestTop := int32(100)
 requestSkip := int32(0)
 
-requestParameters := &graphconfig.IdentityGovernanceAccessReviewsDefinitionItemInstancesRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernanceAccessReviewsDefinitionItemInstancesRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Skip: &requestSkip,
 }
-configuration := &graphconfig.IdentityGovernanceAccessReviewsDefinitionItemInstancesRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDefinitionItemInstancesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

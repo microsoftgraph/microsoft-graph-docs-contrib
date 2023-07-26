@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Sites/Item/Lists/Item/ContentTypes/AddCopyFromContentTypeHub"
+	  graphsites "github.com/microsoftgraph/msgraph-sdk-go/sites"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddCopyFromContentTypeHubPostRequestBody()
+requestBody := graphsites.NewAddCopyFromContentTypeHubPostRequestBody()
 contentTypeId := "0x0101"
 requestBody.SetContentTypeId(&contentTypeId) 
 

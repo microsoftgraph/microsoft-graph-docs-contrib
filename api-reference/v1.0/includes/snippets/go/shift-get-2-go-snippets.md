@@ -31,8 +31,7 @@ daysOfWeek := []graphmodels.DayOfWeekable {
 	dayOfWeek := graphmodels.WEDNESDAY_DAYOFWEEK 
 	pattern.SetDayOfWeek(&dayOfWeek) 
 	dayOfWeek := graphmodels.FRIDAY_DAYOFWEEK 
-	pattern.SetDayOfWeek(&dayOfWeek) 
-
+	pattern.SetDayOfWeek(&dayOfWeek)
 }
 pattern.SetDaysOfWeek(daysOfWeek)
 interval := int32(1)
@@ -50,7 +49,6 @@ shiftAvailability.SetTimeSlots(&timeSlots)
 
 availability := []graphmodels.ShiftAvailabilityable {
 	shiftAvailability,
-
 }
 requestBody.SetAvailability(availability)
 additionalData := map[string]interface{}{

@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 List all [app installations](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).
 
-> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp**s installed in the meeting will be listed.
-
+> **Note**:
+If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp**s installed in the meeting will be listed.
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 
@@ -25,9 +25,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat |
+|Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat,  TeamsAppInstallation.ReadWriteAndConsentSelfForChat<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForChat<sup>1</sup> |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+|Application | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForChat.All<sup>1</sup> |
+
+> **Note**:
+<br><sup>1</sup> These permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -78,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-apps-in-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-installed-apps-in-chat-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-installed-apps-in-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,6 +103,10 @@ GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-chat-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-installed-apps-in-chat-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -153,6 +164,10 @@ GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-apps-in-chat-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-installed-apps-in-chat-expand-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-installed-apps-in-chat-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -171,6 +186,10 @@ GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-chat-expand-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-installed-apps-in-chat-expand-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -267,6 +286,10 @@ GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-apps-in-chat-expand-filter-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-installed-apps-in-chat-expand-filter-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-installed-apps-in-chat-expand-filter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -285,6 +308,10 @@ GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-chat-expand-filter-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-installed-apps-in-chat-expand-filter-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -336,8 +363,111 @@ Content-type: application/json
 }
 ```
 
+### Example 4: Get the set of resource specific permissions consented for the apps installed in the specified chat
+
+The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsapppermissionset.md) as part of installation. A `$select` query parameter is required to show the consented permission set.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_installed_apps_in_chat_select_consentedPermissionSet",
+  "sampleKeys": ["19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2"]
+}
+-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/chats/19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2/installedApps?$select=consentedPermissionSet,id
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-apps-in-chat-select-consentedpermissionset-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-installed-apps-in-chat-select-consentedpermissionset-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-installed-apps-in-chat-select-consentedpermissionset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-chat-select-consentedpermissionset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-installed-apps-in-chat-select-consentedpermissionset-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-installed-apps-in-chat-select-consentedpermissionset-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-chat-select-consentedpermissionset-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-installed-apps-in-chat-select-consentedpermissionset-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "name": "list_installed_apps_in_chat_select_consentedPermissionSet",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/chats('19%3A5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2')/installedApps(consentedPermissionSet,id)",
+    "value": [
+        {
+            "id": "MTk6NWJkODZlYzdmNmIyNDdkM2I5ZTUxOWIwYmZlZjVkMDNAdGhyZWFkLnYyIyM0ZTVhNmMzYy1jOTU5LTRiY2EtOGRiNy0wMGRiM2E0ODdjZTE=",
+            "consentedPermissionSet": {
+                "resourceSpecificPermissions": [
+                    {
+                        "permissionValue": "ChatMessage.Read.Chat",
+                        "permissionType": "application"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "MTk6NWJkODZlYzdmNmIyNDdkM2I5ZTUxOWIwYmZlZjVkMDNAdGhyZWFkLnYyIyMyYjUyNGUyOC05NWNlLTRjOWItOTc3My00YTViZDZlYzE3NzA=",
+            "consentedPermissionSet": {
+                "resourceSpecificPermissions": [
+                    {
+                        "permissionValue": "OnlineMeeting.ReadBasic.Chat",
+                        "permissionType": "delegated"
+                    },
+                    {
+                        "permissionValue": "OnlineMeetingIncomingAudio.Detect.Chat",
+                        "permissionType": "delegated"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
 ## See also
+
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+- [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

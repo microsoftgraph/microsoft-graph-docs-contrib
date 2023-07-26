@@ -81,6 +81,10 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscovery
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-additionalsource-caseid-searchid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-additionalsource-caseid-searchid-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-additionalsource-caseid-searchid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -95,6 +99,10 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscovery
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-additionalsource-caseid-searchid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-additionalsource-caseid-searchid-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

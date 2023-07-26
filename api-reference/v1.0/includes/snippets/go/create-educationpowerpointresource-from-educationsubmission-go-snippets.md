@@ -16,13 +16,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationSubmissionResource()
-resource := graphmodels.NewEducationResource()
+resource := graphmodels.NewEducationPowerPointResource()
 displayName := "state diagram.pptx"
 resource.SetDisplayName(&displayName) 
-additionalData := map[string]interface{}{
-	"fileUrl" : "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RN3MHWWM7BNXJD2UD5OMRFEDKN2", 
-}
-resource.SetAdditionalData(additionalData)
+fileUrl := "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RN3MHWWM7BNXJD2UD5OMRFEDKN2"
+resource.SetFileUrl(&fileUrl) 
 requestBody.SetResource(resource)
 
 result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Submissions().BySubmissionId("educationSubmission-id").Resources().Post(context.Background(), requestBody, nil)

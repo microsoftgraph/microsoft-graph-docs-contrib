@@ -89,8 +89,15 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows
 [!INCLUDE [sample-code](../includes/snippets/php/list-authenticationeventsflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-authenticationeventsflow-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-authenticationeventsflow-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -366,6 +373,14 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=
 [!INCLUDE [sample-code](../includes/snippets/php/list-authenticationeventsflow-selfservicesignup-identityproviders-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-authenticationeventsflow-selfservicesignup-identityproviders-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-authenticationeventsflow-selfservicesignup-identityproviders-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -548,6 +563,14 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-authenticationeventsflow-filter-selfservicesignup-attributes-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-authenticationeventsflow-filter-selfservicesignup-attributes-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -867,8 +890,15 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=
 [!INCLUDE [sample-code](../includes/snippets/php/list-authenticationeventsflow-filter-includeapplications-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-authenticationeventsflow-filter-includeapplications-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-authenticationeventsflow-filter-includeapplications-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

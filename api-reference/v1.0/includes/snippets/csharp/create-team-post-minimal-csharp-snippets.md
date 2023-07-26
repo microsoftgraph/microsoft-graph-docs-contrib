@@ -14,7 +14,7 @@ var requestBody = new Team
 	Description = "My Sample Team’s Description",
 	Members = new List<ConversationMember>
 	{
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
 			Roles = new List<string>

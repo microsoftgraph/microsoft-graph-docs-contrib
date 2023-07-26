@@ -39,13 +39,11 @@ recipient.SetEmailAddress(emailAddress)
 
 newParticipants := []graphmodels.Recipientable {
 	recipient,
-
 }
 post.SetNewParticipants(newParticipants)
 
 posts := []graphmodels.Postable {
 	post,
-
 }
 requestBody.SetPosts(posts)
 

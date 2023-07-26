@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Applications/Item/AddKey"
+	  graphapplications "github.com/microsoftgraph/msgraph-beta-sdk-go/applications"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddKeyPostRequestBody()
+requestBody := graphapplications.NewAddKeyPostRequestBody()
 keyCredential := graphmodels.NewKeyCredential()
 type := "AsymmetricX509Cert"
 keyCredential.SetType(&type) 

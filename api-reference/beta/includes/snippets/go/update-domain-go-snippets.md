@@ -21,7 +21,6 @@ requestBody.SetIsDefault(&isDefault)
 supportedServices := []string {
 	"Email",
 	"OfficeCommunicationsOnline",
-
 }
 requestBody.SetSupportedServices(supportedServices)
 
