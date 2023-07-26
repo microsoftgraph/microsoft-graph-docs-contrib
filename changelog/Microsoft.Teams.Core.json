@@ -6343,7 +6343,7 @@
       "WorkloadArea": "Teamwork and communications", 
       "SubArea": "Calls and online meetings"
     },
-	{
+    {
       "ChangeList": [
         {
           "Id": "163505d3-b68c-4fc0-b9d5-ec67cd05f574",
@@ -6446,6 +6446,24 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2023-04-10T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d560f792-7d72-46b8-807a-e814faa28174",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/teams-list?view=graph-rest-v1.0&tabs=http) operation to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-v1.0) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "d560f792-7d72-46b8-807a-e814faa28174",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-07-06T10:18:40.595Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }

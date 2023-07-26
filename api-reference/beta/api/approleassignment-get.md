@@ -113,7 +113,8 @@ If successful, this method returns a `200 OK` response code and an [appRoleAssig
 The following request queries the resource service principal to get details of an app role it has granted to a client that can be a user, group, or client service principal in the tenant.
 <!-- {
   "blockType": "request",
-  "name": "get_approleassignment_beta_e1"
+  "name": "get_approleassignment_beta_e1",
+  "sampleKeys": ["00000003-0000-0000-c000-000000000000", "ep6PKgGvOkGVksMuwOXBpxV3dkHvwM1ElSjMUzZtaIA"]
 }
 -->
 ``` http
@@ -155,7 +156,8 @@ Content-Type: application/json
 The following request queries the client service principal to get details of an app role granted to it. In this instance, the app role represents the application permission.
 <!-- {
   "blockType": "request",
-  "name": "get_approleassignment_serviceprincipal_beta_e2"
+  "name": "get_approleassignment_serviceprincipal_beta_e2",
+  "sampleKeys": ["ceb96a54-de95-49a0-b38c-c55263fcf421", "ep6PKgGvOkGVksMuwOXBpxV3dkHvwM1ElSjMUzZtaIA"]
 }
 -->
 ``` http
@@ -208,24 +210,24 @@ GET https://graph.microsoft.com/beta/me/appRoleAssignments/Lo6gEKI-4EyAy9X91LBep
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-approleassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-approleassignment-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-approleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-approleassignment-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-approleassignment-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-approleassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-approleassignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-approleassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -233,7 +235,6 @@ GET https://graph.microsoft.com/beta/me/appRoleAssignments/Lo6gEKI-4EyAy9X91LBep
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response. It shows the signed-in user has the default app role for a resource service principal named *Postman*.

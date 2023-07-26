@@ -1,11 +1,10 @@
 ---
 title: "Identity and access reports API overview"
-description: "Access identity and access reports to get the information about how people in your business are using applications in your Azure Active Directory tenant."
+description: "Access identity and access reports to get information about how people in your business use applications in your Azure Active Directory tenant."
 ms.localizationpriority: high
 ms.prod: "identity-and-access-reports"
 author: "besiler"
 doc_type: conceptualPageType
-ms.date: 07/07/2022
 ---
 
 # Identity and access reports API overview
@@ -36,7 +35,7 @@ Evaluate the usage of application sign-ins in your tenant using either a summary
 
 ### Registration and usage
 
-Get a better understanding of how users in your organization use Azure AD capabilities, such as self-service password rest and multi-factor authentication (MFA). You can determine which authentication methods are more successful for your organization, what types of errors end users are running into, and what campaign you need to run to help your end users adopt the use of self-service password rest and MFA. For more information, see the [authentication methods usage report API](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true).
+Get a better understanding of how users in your organization use Azure AD capabilities, such as self-service password reset (SSPR) and multi-factor authentication (MFA). You can determine which authentication methods are more successful for your organization, what types of errors end users are running into, and what campaign you need to run to help your end users adopt the use of SSPR and MFA. For more information, see the [authentication methods usage report API](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true).
 
 ## Next steps
 

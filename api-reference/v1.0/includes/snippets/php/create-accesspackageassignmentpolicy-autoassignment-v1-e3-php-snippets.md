@@ -31,6 +31,10 @@ $requestBody->setSpecificAllowedTargets($specificAllowedTargetsArray);
 $automaticRequestSettings = new AccessPackageAutomaticRequestSettings();
 $automaticRequestSettings->setRequestAccessForAllowedTargets(true);
 
+$automaticRequestSettings->setRemoveAccessWhenTargetLeavesAllowedTargets(true);
+
+$automaticRequestSettings->setGracePeriodBeforeAccessRemoval(new \DateInterval('P7D'));
+
 
 $requestBody->setAutomaticRequestSettings($automaticRequestSettings);
 $accessPackage = new AccessPackage();

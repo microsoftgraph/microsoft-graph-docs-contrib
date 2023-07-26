@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **calculatedColumn** on a [columnDefinition](columndefinition.md) resource indicates that the data of the column is calculated based on other columns in the site..
+The **calculatedColumn** on a [columnDefinition](columndefinition.md) resource indicates that the data of the column is calculated based on other columns in the site.
 
 ## Properties
 
@@ -23,8 +23,7 @@ The **calculatedColumn** on a [columnDefinition](columndefinition.md) resource i
 | formula    | String | The formula used to compute the value for this column.                                                                       |
 | outputType | String | The output type used to format values in this column. Possible values are: `boolean`, `currency`, `dateTime`, `number`, or `text`. |
 
-SharePoint formulas use a syntax similar to Excel formulas.
-See [Examples of common formulas in SharePoint Lists][SPFormulas] for more information.
+SharePoint formulas use a syntax similar to Excel formulas. For more information, see [Examples of common formulas in SharePoint Lists][SPFormulas].
 
 [SPFormulas]: https://support.office.com/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
@@ -38,7 +37,7 @@ The following is a JSON representation of the resource.
 {
   "format": "String",
   "formula": "String",
-  "outputType": "String",
+  "outputType": "String"
 }
 ```
 

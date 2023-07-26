@@ -45,7 +45,9 @@ Inherits from [entity](../resources/entity.md).
 |reviewedDateTime|DateTimeOffset| The timestamp when the review decision occurred. Supports `$select`. Read-only.|
 
 ## Relationships
-None.
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+| insights |[governanceInsight](governanceinsight.md) collection | Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an **accessReviewInstanceDecisionItem**. |
 
 ## JSON representation
 The following is a JSON representation of the resource.

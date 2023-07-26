@@ -31,7 +31,7 @@ $requestBody->setActivities($activitiesArray);
 
 
 
-$result = $graphServiceClient->connections()->byConnectionId('externalConnection-id')->items()->byItemId('externalItem-id')->microsoftGraphExternalConnectorsAddActivities()->post($requestBody);
+$result = $graphServiceClient->external()->connections()->byConnectionId('externalConnection-id')->items()->byItemId('externalItem-id')->microsoftGraphExternalConnectorsAddActivities()->post($requestBody);
 
 
 ```

@@ -8,24 +8,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new CloudPcProvisioningPolicyAssignment
+var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.ProvisioningPolicies.Item.Assign.AssignPostRequestBody
 {
-	OdataType = "#microsoft.graph.cloudPcProvisioningPolicyAssignment",
-	AdditionalData = new Dictionary<string, object>
+	Assignments = new List<CloudPcProvisioningPolicyAssignment>
 	{
+		new CloudPcProvisioningPolicyAssignment
 		{
-			"assignments" , new List<object>
+			Id = "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
+			Target = new CloudPcManagementGroupAssignmentTarget
 			{
-				new 
-				{
-					Id = "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
-					Target = new 
-					{
-						OdataType = "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-						GroupId = "64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
-					},
-				},
-			}
+				OdataType = "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
+				GroupId = "64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
+			},
 		},
 	},
 };

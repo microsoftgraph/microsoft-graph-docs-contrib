@@ -67,13 +67,14 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ## Examples
 
-### Request
+### Example 1: Create a new workflow
+
+#### Request
 
 The following is an example of a request that creates a workflow with the following configuration:
-+ It's a "leaver" workflow that's enabled and schedule to run.
++ It's a "joiner" workflow that's enabled and schedule to run.
 + It runs for new users that are based in Australia, on their employeeHireDate.
 + Two tasks are carried out when the workflow runs: the user's account is enabled and a "Welcome" email is sent to the user.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -90,7 +91,7 @@ Content-Type: application/json
     "description": "Configure new hire tasks for onboarding employees on their first day",
     "displayName": "Australia Onboard new hire employee",
     "isEnabled": true,
-    "isSchedulingEnabled": false,
+    "isSchedulingEnabled": true,
     "executionConditions": {
         "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
         "scope": {
@@ -128,24 +129,24 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-create-workflow-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-create-workflow-from--javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-create-workflow-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-create-workflow-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-create-workflow-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-create-workflow-from--powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-create-workflow-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-create-workflow-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-create-workflow-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -154,9 +155,9 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -192,6 +193,182 @@ Content-Type: application/json
             "timeBasedAttribute": "employeeHireDate",
             "offsetInDays": 0
         }
+    }
+}
+```
+
+### Example 2: Create a new version of a task with customized email
+
+#### Request
+
+The following is an example of a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_create_workflow_from_customemail"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
+Content-Type: application/json
+Content-length: 631
+
+{
+    "category": "joiner",
+    "description": "Configure new hire tasks for onboarding employees on their first day",
+    "displayName": "custom email marketing API test",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(department eq 'Marketing')"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeHireDate",
+            "offsetInDays": 0
+        }
+    },
+    "tasks": [
+        {
+            "continueOnError": false,
+            "description": "Enable user account in the directory",
+            "displayName": "Enable User Account",
+            "isEnabled": true,
+            "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+            "arguments": []
+        },
+        {
+            "continueOnError": false,
+            "description": "Send welcome email to new hire",
+            "displayName": "Send Welcome Email",
+            "isEnabled": true,
+            "taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+            "arguments": [
+                {
+                    "name": "cc",
+                    "value": "1baa57fa-3c4e-4526-ba5a-db47a9df95f0"
+                },
+                {
+                    "name": "customSubject",
+                    "value": "Welcome to the organization {{userDisplayName}}!"
+                },
+                {
+                    "name": "customBody",
+                    "value": "Welcome to our organization {{userGivenName}}!"
+                },
+                {
+                    "name": "locale",
+                    "value": "en-us"
+                }
+            ]
+        }
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-create-workflow-from-customemail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-create-workflow-from-customemail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-create-workflow-from-customemail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-create-workflow-from-customemail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-create-workflow-from-customemail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-create-workflow-from-customemail-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-create-workflow-from-customemail-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "workflow":{
+        "category": "joiner",
+        "description": "Configure new hire tasks for onboarding employees on their first day",
+        "displayName": "Global onboard new hire employee",
+        "isEnabled": true,
+        "isSchedulingEnabled": false,
+        "executionConditions": {
+            "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+            "scope": {
+                "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+                "rule": "(department eq 'Marketing')"
+            },
+            "trigger": {
+                "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+                "timeBasedAttribute": "employeeHireDate",
+                "offsetInDays": 1
+            }
+        },
+        "tasks": [
+            {
+                "continueOnError": false,
+                "description": "Enable user account in the directory",
+                "displayName": "Enable User Account",
+                "isEnabled": true,
+                "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+                "arguments": []
+            },
+            {
+                "continueOnError": false,
+                "description": "Send welcome email to new hire",
+                "displayName": "Send Welcome Email",
+                "isEnabled": true,
+                "taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+                "arguments": [
+                    {
+                    "name": "cc",
+                    "value": "b47471b9-af8f-4a5a-bfa2-b78e82398f6e, a7a23ce0-909b-40b9-82cf-95d31f0aaca2"
+                },
+                {
+                "name": "customSubject",
+                "value": "Welcome to the organization {{userDisplayName}}!"
+                },
+                {
+                "name": "customBody",
+                "value": "Welcome to our organization {{userGivenName}} {{userSurname}}. \nFor more information, reach out to your manager {{managerDisplayName}} at {{managerEmail}}."
+                },
+                {
+                "name": "locale",
+                "value": "en-us"
+                }, 
+    ]
+            }
+        ]
     }
 }
 ```

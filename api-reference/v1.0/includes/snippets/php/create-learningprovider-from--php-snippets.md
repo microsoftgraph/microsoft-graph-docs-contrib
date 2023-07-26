@@ -22,6 +22,8 @@ $requestBody->setLongLogoWebUrlForLightTheme('https://support.content.office.net
 
 $requestBody->setLoginWebUrl('https://www.linkedin.com/learning-login/teams');
 
+$requestBody->setIsCourseActivitySyncEnabled(true);
+
 
 
 $result = $graphServiceClient->employeeExperience()->learningProviders()->post($requestBody);

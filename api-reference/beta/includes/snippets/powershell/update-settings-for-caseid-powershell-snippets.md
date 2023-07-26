@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 
 $params = @{
 	redundancyDetection = @{
@@ -25,6 +25,6 @@ $params = @{
 	}
 }
 
-Update-MgComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
+Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
 
 ```

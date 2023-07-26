@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.ChangeNotifications
+Import-Module Microsoft.Graph.Beta.ChangeNotifications
 
 $params = @{
 	changeType = "created"
@@ -17,6 +17,6 @@ $params = @{
 	encryptionCertificateId = "testCertificateId"
 }
 
-New-MgSubscription -BodyParameter $params
+New-MgBetaSubscription -BodyParameter $params
 
 ```

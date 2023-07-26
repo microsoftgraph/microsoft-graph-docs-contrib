@@ -40,6 +40,19 @@ $requestBody->setLabelToBeApplied('String');
 
 $requestBody->setDefaultRecordBehavior(new DefaultRecordBehavior('string'));
 
+$descriptors = new FilePlanDescriptor();
+$additionalData = [
+		'authorityTemplate@odata.bind' => 'https://graph.microsoft.com/beta/security/labels/authorities(\'fie3f4fc-b966-4c40-94de-fb8a383658e4\')', 
+		'categoryTemplate@odata.bind' => 'https://graph.microsoft.com/beta/security/labels/categories(\'0bjk8-b966-4c40-94de-fb8a383658e4\')', 
+		'citationTemplate@odata.bind' => 'https://graph.microsoft.com/beta/security/labels/citations(\'0e23f4fc-b966-4c40-94de-fb8a383658e4\')', 
+		'departmentTemplate@odata.bind' => 'https://graph.microsoft.com/beta/security/labels/departments(\'p99ef4fc-b966-4c40-94de-fb8a383658e4\')', 
+		'filePlanReferenceTemplate@odata.bind' => 'https://graph.microsoft.com/beta/security/labels/filePlanReferences(\'e095f4fc-b966-4c40-94de-fb8a383658e4\')', 
+];
+$descriptors->setAdditionalData($additionalData);
+
+
+
+$requestBody->setDescriptors($descriptors);
 
 
 $result = $graphServiceClient->security()->labels()->retentionLabels()->post($requestBody);
