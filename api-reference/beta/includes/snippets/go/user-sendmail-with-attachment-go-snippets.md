@@ -13,10 +13,10 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewSendMailPostRequestBody()
+requestBody := graphusers.NewItemSendMailPostRequestBody()
 message := graphmodels.NewMessage()
 subject := "Meet for lunch?"
 message.SetSubject(&subject) 
@@ -36,24 +36,20 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 message.SetToRecipients(toRecipients)
 
 
-attachment := graphmodels.NewAttachment()
+attachment := graphmodels.NewFileAttachment()
 name := "attachment.txt"
 attachment.SetName(&name) 
 contentType := "text/plain"
 attachment.SetContentType(&contentType) 
-additionalData := map[string]interface{}{
-	"contentBytes" : "SGVsbG8gV29ybGQh", 
-}
-attachment.SetAdditionalData(additionalData)
+contentBytes := []byte("sGVsbG8gV29ybGQh")
+attachment.SetContentBytes(&contentBytes) 
 
 attachments := []graphmodels.Attachmentable {
 	attachment,
-
 }
 message.SetAttachments(attachments)
 requestBody.SetMessage(message)

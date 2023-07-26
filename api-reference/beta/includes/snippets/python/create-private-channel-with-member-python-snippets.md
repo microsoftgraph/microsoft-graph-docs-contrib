@@ -16,7 +16,7 @@ request_body.display_name = 'My First Private Channel'
 
 request_body.description = 'This is my first private channels'
 
-members_conversation_member1 = ConversationMember()
+members_conversation_member1 = AadUserConversationMember()
 members_conversation_member1.@odata_type = '#microsoft.graph.aadUserConversationMember'
 
 members_conversation_member1.Roles(['owner', ])

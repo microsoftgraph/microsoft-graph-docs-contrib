@@ -11,15 +11,13 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new EducationAssignmentResource
 {
 	DistributeForStudentWork = false,
-	Resource = new EducationResource
+	Resource = new EducationLinkResource
 	{
 		DisplayName = "Where the Wonders of Learning Never Cease | Wonderopolis",
+		Link = "https://wonderopolis.org/",
 		OdataType = "#microsoft.graph.educationLinkResource",
 		AdditionalData = new Dictionary<string, object>
 		{
-			{
-				"link" , "https://wonderopolis.org/"
-			},
 			{
 				"thumbnailPreviewUrl" , null
 			},

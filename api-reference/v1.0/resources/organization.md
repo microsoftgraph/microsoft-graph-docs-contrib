@@ -61,8 +61,8 @@ This resource lets you add your own data to custom properties using [extensions]
 | preferredLanguage | String | The preferred language for the organization. Should follow ISO 639-1 Code; for example, `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | The privacy profile of an organization. |
 | provisionedPlans | [ProvisionedPlan](provisionedplan.md) collection | Not nullable. |
-| securityComplianceNotificationMails | String collection ||
-| securityComplianceNotificationPhones | String collection||
+| securityComplianceNotificationMails | String collection | Not nullable.|
+| securityComplianceNotificationPhones | String collection| Not nullable.|
 | state | String | State name of the address for the organization. |
 | street | String | Street name of the address for organization. |
 | technicalNotificationMails | String collection | Not nullable. |
@@ -86,7 +86,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization. Read-only. Nullable.|
-|branding|[organizationalBranding](organizationalbranding.md) collection| Branding for the organization. Nullable.|
+|branding|[organizationalBranding](organizationalbranding.md)| Branding for the organization. Nullable.|
 
 ## JSON representation
 

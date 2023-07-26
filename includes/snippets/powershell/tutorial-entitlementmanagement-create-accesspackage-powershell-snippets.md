@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	catalogId = "cec5d6ab-c75d-47c0-9c1c-92e89f66e384"
@@ -12,6 +12,6 @@ $params = @{
 	description = "Access to resources for the campaign"
 }
 
-New-MgEntitlementManagementAccessPackage -BodyParameter $params
+New-MgBetaEntitlementManagementAccessPackage -BodyParameter $params
 
 ```

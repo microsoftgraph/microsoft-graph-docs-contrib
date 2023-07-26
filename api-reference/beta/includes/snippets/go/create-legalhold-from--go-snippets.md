@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsediscovery.NewLegalHold()
@@ -29,7 +29,6 @@ contentQuery := "String"
 requestBody.SetContentQuery(&contentQuery) 
 errors := []string {
 	"String",
-
 }
 requestBody.SetErrors(errors)
 displayName := "String"

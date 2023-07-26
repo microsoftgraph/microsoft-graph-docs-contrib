@@ -19,7 +19,7 @@ var requestBody = new User
 				{
 					OdataType = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
 					CostCenterOdataType = "#Collection(Int32)",
-					CostCenter = new List<1001>
+					CostCenter = new List<Number>
 					{
 						1001,
 						1003,

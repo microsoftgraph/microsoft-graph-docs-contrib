@@ -11,6 +11,19 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### userDefaultAuthenticationMethod values
+
+| Member             |
+|:-------------------|
+| push               |
+| oath               |
+| voiceMobile        |
+| voiceAlternateMobile |
+| voiceOffice        |
+| sms                |
+| none               |
+| unknownFutureValue |
+
 ### applicationKeyUsage values
 
 | Member             |
@@ -270,6 +283,15 @@ Namespace: microsoft.graph
 | requestSent        |
 | requestReceived    |
 | unknownFutureValue |
+
+### accessPackageSubjectLifecycle values
+
+|Member|
+|:---|
+|notDefined|
+|notGoverned|
+|governed|
+|unknownFutureValue|
 
 ### customExtensionCalloutInstanceStatus values
 
@@ -3963,3 +3985,4 @@ Possible values for user account types (group membership), per Windows definitio
 | request_retrieved     |
 | presentation_verified |
 | unknownFutureValue    |
+

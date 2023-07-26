@@ -24,14 +24,10 @@ preview_text.content = 'It will be fun!'
 request_body.preview_text = preview_text
 request_body.activity_type = 'eventCreated'
 
-recipient = TeamworkNotificationRecipient()
+recipient = ChatMembersNotificationRecipient()
 recipient.@odata_type = 'microsoft.graph.chatMembersNotificationRecipient'
 
-additional_data = [
-'chat_id' => '19:d65713bc498c4a428c71ef9353e6ce20@thread.v2', 
-];
-recipient.additional_data(additional_data)
-
+recipient.chat_id = '19:d65713bc498c4a428c71ef9353e6ce20@thread.v2'
 
 
 request_body.recipient = recipient

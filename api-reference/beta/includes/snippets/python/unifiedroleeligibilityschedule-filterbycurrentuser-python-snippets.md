@@ -9,7 +9,7 @@ client =  GraphServiceClient(request_adapter)
 
 
 
-result = await client.role_management.directory.role_eligibility_schedules.by_role_eligibility_schedule_id('unifiedRoleEligibilitySchedule-id').get()
+result = await client.role_management.directory.role_eligibility_schedules.filter_by_current_user(on='{on}'.get()
 
 
 ```

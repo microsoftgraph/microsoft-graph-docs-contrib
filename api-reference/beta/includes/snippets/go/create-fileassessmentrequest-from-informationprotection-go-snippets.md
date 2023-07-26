@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewThreatAssessmentRequest()
@@ -20,11 +20,10 @@ expectedAssessment := graphmodels.BLOCK_THREATEXPECTEDASSESSMENT
 requestBody.SetExpectedAssessment(&expectedAssessment) 
 category := graphmodels.MALWARE_THREATCATEGORY 
 requestBody.SetCategory(&category) 
-additionalData := map[string]interface{}{
-	"fileName" : "test.txt", 
-	"contentData" : "VGhpcyBpcyBhIHRlc3QgZmlsZQ==", 
-}
-requestBody.SetAdditionalData(additionalData)
+fileName := "test.txt"
+requestBody.SetFileName(&fileName) 
+contentData := "VGhpcyBpcyBhIHRlc3QgZmlsZQ=="
+requestBody.SetContentData(&contentData) 
 
 result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
 

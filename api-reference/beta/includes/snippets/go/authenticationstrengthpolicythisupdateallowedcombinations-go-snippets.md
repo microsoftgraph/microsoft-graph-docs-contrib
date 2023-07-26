@@ -13,14 +13,13 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphpolicies.NewUpdateAllowedCombinationsPostRequestBody()
-allowedCombinations := []graphpolicies.AuthenticationMethodModesable {
+allowedCombinations := []graphmodels.AuthenticationMethodModesable {
 	authenticationMethodModes := graphmodels.PASSWORD, VOICE_AUTHENTICATIONMETHODMODES 
-	requestBody.SetAuthenticationMethodModes(&authenticationMethodModes) 
-
+	requestBody.SetAuthenticationMethodModes(&authenticationMethodModes)
 }
 requestBody.SetAllowedCombinations(allowedCombinations)
 

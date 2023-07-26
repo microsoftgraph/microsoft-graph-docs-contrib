@@ -21,15 +21,10 @@ var requestBody = new Microsoft.Graph.Teams.Item.SendActivityNotification.SendAc
 		Content = "It will be fun!",
 	},
 	ActivityType = "eventCreated",
-	Recipient = new TeamworkNotificationRecipient
+	Recipient = new TeamMembersNotificationRecipient
 	{
 		OdataType = "microsoft.graph.teamMembersNotificationRecipient",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"teamId" , "7155e3c8-175e-4311-97ef-572edc3aa3db"
-			},
-		},
+		TeamId = "7155e3c8-175e-4311-97ef-572edc3aa3db",
 	},
 };
 await graphClient.Teams["{team-id}"].SendActivityNotification.PostAsync(requestBody);

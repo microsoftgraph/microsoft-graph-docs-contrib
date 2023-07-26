@@ -22,14 +22,10 @@ preview_text.content = 'Internal spending team has a pending finance approval re
 
 
 request_body.preview_text = preview_text
-recipient = TeamworkNotificationRecipient()
+recipient = TeamMembersNotificationRecipient()
 recipient.@odata_type = 'microsoft.graph.teamMembersNotificationRecipient'
 
-additional_data = [
-'team_id' => 'e8bece96-d393-4b9b-b8da-69cedef1a7e7', 
-];
-recipient.additional_data(additional_data)
-
+recipient.team_id = 'e8bece96-d393-4b9b-b8da-69cedef1a7e7'
 
 
 request_body.recipient = recipient

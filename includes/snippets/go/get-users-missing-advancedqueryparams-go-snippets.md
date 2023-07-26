@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 import (
 	  "context"
-	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "endsWith(mail,'@outlook.com')"
+requestFilter := "endsWith(userPrincipalName,'"
 
 requestParameters := &graphusers.UsersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewGroup()
@@ -22,7 +22,6 @@ displayName := "Feelgood Marketing Campaign"
 requestBody.SetDisplayName(&displayName) 
 groupTypes := []string {
 	"Unified",
-
 }
 requestBody.SetGroupTypes(groupTypes)
 mailEnabled := true
@@ -34,11 +33,9 @@ requestBody.SetSecurityEnabled(&securityEnabled)
 additionalData := map[string]interface{}{
 	odataBind := []string {
 		"https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
-
 	}
 	odataBind := []string {
 		"https://graph.microsoft.com/v1.0/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20",
-
 	}
 }
 requestBody.SetAdditionalData(additionalData)

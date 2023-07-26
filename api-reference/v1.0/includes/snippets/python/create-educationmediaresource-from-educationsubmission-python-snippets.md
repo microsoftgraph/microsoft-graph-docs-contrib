@@ -8,16 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 request_body = EducationSubmissionResource()
-resource = EducationResource()
+resource = EducationMediaResource()
 resource.display_name = 'category.jpg'
 
+resource.file_url = 'https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RK2WLKUUBAA4ZBKXNBL6QFC2TKG'
+
 resource.@odata_type = '#microsoft.graph.educationMediaResource'
-
-additional_data = [
-'file_url' => 'https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RK2WLKUUBAA4ZBKXNBL6QFC2TKG', 
-];
-resource.additional_data(additional_data)
-
 
 
 request_body.resource = resource

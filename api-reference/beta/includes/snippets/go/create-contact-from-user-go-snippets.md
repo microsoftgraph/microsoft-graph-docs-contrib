@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewContact()
@@ -39,10 +39,9 @@ typedEmailAddress1.SetType(&type)
 otherLabel := "Volunteer work"
 typedEmailAddress1.SetOtherLabel(&otherLabel) 
 
-emailAddresses := []graphmodels.Objectable {
+emailAddresses := []graphmodels.typedEmailAddressable {
 	typedEmailAddress,
 	typedEmailAddress1,
-
 }
 requestBody.SetEmailAddresses(emailAddresses)
 
@@ -55,7 +54,6 @@ phone.SetType(&type)
 
 phones := []graphmodels.Phoneable {
 	phone,
-
 }
 requestBody.SetPhones(phones)
 

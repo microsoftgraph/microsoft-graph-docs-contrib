@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphteams.NewSendActivityNotificationPostRequestBody()
@@ -31,11 +31,9 @@ previewText.SetContent(&content)
 requestBody.SetPreviewText(previewText)
 activityType := "eventCreated"
 requestBody.SetActivityType(&activityType) 
-recipient := graphmodels.NewTeamworkNotificationRecipient()
-additionalData := map[string]interface{}{
-	"teamId" : "7155e3c8-175e-4311-97ef-572edc3aa3db", 
-}
-recipient.SetAdditionalData(additionalData)
+recipient := graphmodels.NewTeamMembersNotificationRecipient()
+teamId := "7155e3c8-175e-4311-97ef-572edc3aa3db"
+recipient.SetTeamId(&teamId) 
 requestBody.SetRecipient(recipient)
 
 graphClient.Teams().ByTeamId("team-id").SendActivityNotification().Post(context.Background(), requestBody, nil)

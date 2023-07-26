@@ -12,19 +12,17 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewApplication()
 identifierUris := []string {
 	"https://contosoiwaapp-contoso.msappproxy.net",
-
 }
 requestBody.SetIdentifierUris(identifierUris)
 web := graphmodels.NewWebApplication()
 redirectUris := []string {
 	"https://contosoiwaapp-contoso.msappproxy.net",
-
 }
 web.SetRedirectUris(redirectUris)
 homePageUrl := "https://contosoiwaapp-contoso.msappproxy.net"

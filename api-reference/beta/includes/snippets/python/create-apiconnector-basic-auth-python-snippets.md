@@ -12,15 +12,12 @@ request_body.display_name = 'Test API'
 
 request_body.target_url = 'https://someapi.com/api'
 
-authentication_configuration = ApiAuthenticationConfigurationBase()
+authentication_configuration = BasicAuthentication()
 authentication_configuration.@odata_type = '#microsoft.graph.basicAuthentication'
 
-additional_data = [
-'username' => '<USERNAME>', 
-'password' => '<PASSWORD>', 
-];
-authentication_configuration.additional_data(additional_data)
+authentication_configuration.username = '<USERNAME>'
 
+authentication_configuration.password = '<PASSWORD>'
 
 
 request_body.authentication_configuration = authentication_configuration

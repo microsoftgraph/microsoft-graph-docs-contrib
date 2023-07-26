@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 query_params = DeltaRequestBuilder.DeltaRequestBuilderGetQueryParameters(
-		startdatetime = "2016-12-01T00:00:00Z",
-		enddatetime = "2016-12-30T00:00:00Z",
+		startDateTime = "2016-12-01T00:00:00Z",
+		endDateTime = "2016-12-30T00:00:00Z",
 )
 
 request_configuration = DeltaRequestBuilder.DeltaRequestBuilderGetRequestConfiguration(

@@ -7,13 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = Extension()
+request_body = OpenTypeExtension()
+request_body.@odata_type = '#microsoft.graph.openTypeExtension'
+
+request_body.id = 'com.contoso.socialSettings'
+
 additional_data = [
 '@odata_context' => 'https://graph.microsoft.com/beta/$metadata#users(\'3fbd929d-8c56-4462-851e-0eb9a7b3a2a5\')/extensions/$entity', 
-'@odata_type' => '#microsoft.graph.openTypeExtension', 
 'xbox_gamer_tag' => 'FierceAdele', 
 'linked_in_profile' => 'www.linkedin.com/in/testlinkedinprofile', 
-'id' => 'com.contoso.socialSettings', 
 ];
 request_body.additional_data(additional_data)
 

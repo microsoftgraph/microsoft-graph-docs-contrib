@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMeetingRegistrationQuestion()
@@ -24,7 +24,6 @@ answerOptions := []string {
 	"Product Manager",
 	"Data scientist",
 	"Other",
-
 }
 requestBody.SetAnswerOptions(answerOptions)
 

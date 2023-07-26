@@ -10,38 +10,31 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AccessReviewInstance
 {
-	Scope = new AccessReviewScope
+	Scope = new PrincipalResourceMembershipsScope
 	{
 		OdataType = "#microsoft.graph.principalResourceMembershipsScope",
-		AdditionalData = new Dictionary<string, object>
+		PrincipalScopes = new List<AccessReviewScope>
 		{
+			new AccessReviewQueryScope
 			{
-				"principalScopes" , new List<>
-				{
-					new 
-					{
-						OdataType = "#microsoft.graph.accessReviewQueryScope",
-						Query = "/v1.0/users",
-						QueryType = "MicrosoftGraph",
-					},
-					new 
-					{
-						OdataType = "#microsoft.graph.accessReviewQueryScope",
-						Query = "/v1.0/groups",
-						QueryType = "MicrosoftGraph",
-					},
-				}
+				OdataType = "#microsoft.graph.accessReviewQueryScope",
+				Query = "/v1.0/users",
+				QueryType = "MicrosoftGraph",
 			},
+			new AccessReviewQueryScope
 			{
-				"resourceScopes" , new List<>
-				{
-					new 
-					{
-						OdataType = "#microsoft.graph.accessReviewQueryScope",
-						Query = "/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
-						QueryType = "MicrosoftGraph",
-					},
-				}
+				OdataType = "#microsoft.graph.accessReviewQueryScope",
+				Query = "/v1.0/groups",
+				QueryType = "MicrosoftGraph",
+			},
+		},
+		ResourceScopes = new List<AccessReviewScope>
+		{
+			new AccessReviewQueryScope
+			{
+				OdataType = "#microsoft.graph.accessReviewQueryScope",
+				Query = "/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+				QueryType = "MicrosoftGraph",
 			},
 		},
 	},

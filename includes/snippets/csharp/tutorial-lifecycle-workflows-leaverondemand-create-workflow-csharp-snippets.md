@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 	Description = "Execute real-time termination tasks for employees on their last day of work",
 	IsEnabled = true,
 	IsSchedulingEnabled = false,
-	ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowExecutionConditions
+	ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.OnDemandExecutionOnly
 	{
 		OdataType = "#microsoft.graph.identityGovernance.onDemandExecutionOnly",
 	},

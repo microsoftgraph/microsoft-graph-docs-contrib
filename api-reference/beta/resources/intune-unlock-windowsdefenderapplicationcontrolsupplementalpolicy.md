@@ -30,20 +30,20 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The key for the WindowsDefenderApplicationControl supplemental policy.|
-|displayName|String|The display name of WindowsDefenderApplicationControl supplemental policy.|
-|description|String|The description of WindowsDefenderApplicationControl supplemental policy.|
-|content|Binary|The WindowsDefenderApplicationControl supplemental policy content in byte array format.|
-|contentFileName|String|The WindowsDefenderApplicationControl supplemental policy content's file name.|
-|version|String|The WindowsDefenderApplicationControl supplemental policy's version.|
-|creationDateTime|DateTimeOffset|The date and time when the WindowsDefenderApplicationControl supplemental policy was uploaded.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the WindowsDefenderApplicationControl supplemental policy was last modified.|
-|roleScopeTagIds|String collection|List of Scope Tags for this WindowsDefenderApplicationControl supplemental policy entity.|
+|id|String|The unique identifier of the Windows Defender Application Control Supplemental Policy. This id is assigned during creation of the policy.|
+|displayName|String|The display name of the Windows Defender Application Control Supplemental Policy.|
+|description|String|The description of the Windows Defender Application Control Supplemental Policy.|
+|content|Binary|Indicates the content of the Windows Defender Application Control Supplemental Policy in byte array format.|
+|contentFileName|String|Indicates the file name associated with the content of the Windows Defender Application Control Supplemental Policy.|
+|version|String|Indicates the Windows Defender Application Control Supplemental Policy's version.|
+|creationDateTime|DateTimeOffset|Indicates the created date and time when the Windows Defender Application Control Supplemental Policy was uploaded.|
+|lastModifiedDateTime|DateTimeOffset|Indicates the last modified date and time of the Windows Defender Application Control Supplemental Policy.|
+|roleScopeTagIds|String collection|List of Scope Tags for the Windows Defender Application Control Supplemental Policy entity.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) collection|The associated group assignments for this WindowsDefenderApplicationControl supplemental policy.|
+|assignments|[windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) collection|The associated group assignments for the Windows Defender Application Control Supplemental Policy.|
 |deploySummary|[windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary.md)|WindowsDefenderApplicationControl supplemental policy deployment summary.|
 |deviceStatuses|[windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) collection|The list of device deployment states for this WindowsDefenderApplicationControl supplemental policy.|
 

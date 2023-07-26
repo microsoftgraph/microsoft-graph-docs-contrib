@@ -7,15 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = BookingCustomerBase()
+request_body = BookingCustomer()
 request_body.@odata_type = '#microsoft.graph.bookingCustomer'
 
-additional_data = [
-'display_name' => 'Adele', 
-'email_address' => 'adele@relecloud.com', 
-];
-request_body.additional_data(additional_data)
+request_body.display_name = 'Adele'
 
+request_body.email_address = 'adele@relecloud.com'
 
 
 

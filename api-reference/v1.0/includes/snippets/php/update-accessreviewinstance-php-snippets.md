@@ -7,48 +7,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessReviewInstance();
-$scope = new AccessReviewScope();
-$scope->set@odatatype('#microsoft.graph.principalResourceMembershipsScope');
+$scope = new PrincipalResourceMembershipsScope();
+$scope->setOdataType('#microsoft.graph.principalResourceMembershipsScope');
 
-$additionalData = [
-		'principalScopes' => $principalScopes1 = new ();
-$		principalScopes1->set@odatatype('#microsoft.graph.accessReviewQueryScope');
+$principalScopesAccessReviewScope1 = new AccessReviewQueryScope();
+$principalScopesAccessReviewScope1->setOdataType('#microsoft.graph.accessReviewQueryScope');
 
-$		principalScopes1->setQuery('/v1.0/users');
+$principalScopesAccessReviewScope1->setQuery('/v1.0/users');
 
-$		principalScopes1->setQueryType('MicrosoftGraph');
-
-
-$principalScopesArray []= $principalScopes1;
-$principalScopes2 = new ();
-$		principalScopes2->set@odatatype('#microsoft.graph.accessReviewQueryScope');
-
-$		principalScopes2->setQuery('/v1.0/groups');
-
-$		principalScopes2->setQueryType('MicrosoftGraph');
+$principalScopesAccessReviewScope1->setQueryType('MicrosoftGraph');
 
 
-$principalScopesArray []= $principalScopes2;
+$principalScopesArray []= $principalScopesAccessReviewScope1;
+$principalScopesAccessReviewScope2 = new AccessReviewQueryScope();
+$principalScopesAccessReviewScope2->setOdataType('#microsoft.graph.accessReviewQueryScope');
+
+$principalScopesAccessReviewScope2->setQuery('/v1.0/groups');
+
+$principalScopesAccessReviewScope2->setQueryType('MicrosoftGraph');
+
+
+$principalScopesArray []= $principalScopesAccessReviewScope2;
 $scope->setPrincipalScopes($principalScopesArray);
 
 
-	'resourceScopes' => $resourceScopes1 = new ();
-$	resourceScopes1->set@odatatype('#microsoft.graph.accessReviewQueryScope');
+$resourceScopesAccessReviewScope1 = new AccessReviewQueryScope();
+$resourceScopesAccessReviewScope1->setOdataType('#microsoft.graph.accessReviewQueryScope');
 
-$	resourceScopes1->setQuery('/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3');
+$resourceScopesAccessReviewScope1->setQuery('/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3');
 
-$	resourceScopes1->setQueryType('MicrosoftGraph');
+$resourceScopesAccessReviewScope1->setQueryType('MicrosoftGraph');
 
 
-$resourceScopesArray []= $resourceScopes1;
+$resourceScopesArray []= $resourceScopesAccessReviewScope1;
 $scope->setResourceScopes($resourceScopesArray);
-
-
-];
-$scope->setAdditionalData($additionalData);
 
 
 
@@ -82,7 +77,7 @@ $requestBody->setFallbackReviewers($fallbackReviewersArray);
 
 
 
-$result = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->byDefinitionId('accessReviewScheduleDefinition-id')->instances()->byInstanceId('accessReviewInstance-id')->patch($requestBody);
+$result = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->byAccessReviewScheduleDefinitionId('accessReviewScheduleDefinition-id')->instances()->byAccessReviewInstanceId('accessReviewInstance-id')->patch($requestBody);
 
 
 ```

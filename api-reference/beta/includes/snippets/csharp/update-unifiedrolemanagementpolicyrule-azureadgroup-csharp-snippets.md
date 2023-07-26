@@ -8,10 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new UnifiedRoleManagementPolicyRule
+var requestBody = new UnifiedRoleManagementPolicyExpirationRule
 {
 	OdataType = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
 	Id = "Expiration_EndUser_Assignment",
+	IsExpirationRequired = true,
+	MaximumDuration = TimeSpan.Parse("PT1H45M"),
 	Target = new UnifiedRoleManagementPolicyRuleTarget
 	{
 		Caller = "EndUser",
@@ -20,20 +22,11 @@ var requestBody = new UnifiedRoleManagementPolicyRule
 			"All",
 		},
 		Level = "Assignment",
-		InheritableSettings = new List<String>
+		InheritableSettings = new List<string>
 		{
 		},
-		EnforcedSettings = new List<String>
+		EnforcedSettings = new List<string>
 		{
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"isExpirationRequired" , true
-		},
-		{
-			"maximumDuration" , "PT1H45M"
 		},
 	},
 };

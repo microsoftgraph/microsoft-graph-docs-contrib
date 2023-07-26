@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsidentitygovernance.NewWorkflow()
@@ -25,20 +25,17 @@ isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
 isSchedulingEnabled := false
 requestBody.SetIsSchedulingEnabled(&isSchedulingEnabled) 
-executionConditions := graphmodelsidentitygovernance.NewWorkflowExecutionConditions()
-additionalData := map[string]interface{}{
-scope := graphmodels.New()
+executionConditions := graphmodelsidentitygovernance.NewTriggerAndScopeBasedConditions()
+scope := graphmodelsidentitygovernance.NewRuleBasedSubjectSet()
 rule := "(department eq 'Sales')"
 scope.SetRule(&rule) 
-	executionConditions.SetScope(scope)
-trigger := graphmodels.New()
-timeBasedAttribute := "employeeHireDate"
+executionConditions.SetScope(scope)
+trigger := graphmodelsidentitygovernance.NewTimeBasedAttributeTrigger()
+timeBasedAttribute := graphmodels.EMPLOYEEHIREDATE_WORKFLOWTRIGGERTIMEBASEDATTRIBUTE 
 trigger.SetTimeBasedAttribute(&timeBasedAttribute) 
 offsetInDays := int32(-2)
 trigger.SetOffsetInDays(&offsetInDays) 
-	executionConditions.SetTrigger(trigger)
-}
-executionConditions.SetAdditionalData(additionalData)
+executionConditions.SetTrigger(trigger)
 requestBody.SetExecutionConditions(executionConditions)
 
 
@@ -66,16 +63,14 @@ keyValuePair1.SetName(&name)
 value := "true"
 keyValuePair1.SetValue(&value) 
 
-arguments := []graphmodelsidentitygovernance.KeyValuePairable {
+arguments := []graphmodels.KeyValuePairable {
 	keyValuePair,
 	keyValuePair1,
-
 }
 task.SetArguments(arguments)
 
 tasks := []graphmodelsidentitygovernance.Taskable {
 	task,
-
 }
 requestBody.SetTasks(tasks)
 

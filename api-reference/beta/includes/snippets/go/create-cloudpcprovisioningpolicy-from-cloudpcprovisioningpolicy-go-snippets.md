@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewCloudPcProvisioningPolicy()
@@ -44,7 +44,6 @@ cloudPcDomainJoinConfiguration1.SetType(&type)
 domainJoinConfigurations := []graphmodels.CloudPcDomainJoinConfigurationable {
 	cloudPcDomainJoinConfiguration,
 	cloudPcDomainJoinConfiguration1,
-
 }
 requestBody.SetDomainJoinConfigurations(domainJoinConfigurations)
 id := "1d164206-bf41-4fd2-8424-a3192d39ffff"

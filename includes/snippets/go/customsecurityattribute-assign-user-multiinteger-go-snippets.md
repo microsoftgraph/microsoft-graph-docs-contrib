@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUser()
@@ -25,8 +25,7 @@ engineering.SetOdataType(&odataType)
  := int32(1001)
 engineering.Set(&) 
  := int32(1003)
-engineering.Set(&) 
-
+engineering.Set(&)
 	}
 	engineering.SetCostCenter(costCenter)
 	customSecurityAttributes.SetEngineering(engineering)

@@ -12,13 +12,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphtenantrelationships.NewUnassignTagPostRequestBody()
 tenantIds := []string {
 	"String",
-
 }
 requestBody.SetTenantIds(tenantIds)
 

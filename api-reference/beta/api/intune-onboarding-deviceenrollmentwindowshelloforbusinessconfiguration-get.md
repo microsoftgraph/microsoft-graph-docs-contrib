@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1019
+Content-Length: 1053
 
 {
   "value": {
@@ -91,7 +91,8 @@ Content-Length: 1019
     "pinPreviousBlockCount": 5,
     "pinExpirationInDays": 3,
     "enhancedBiometricsState": "enabled",
-    "securityKeyForSignIn": "enabled"
+    "securityKeyForSignIn": "enabled",
+    "enhancedSignInSecurity": 6
   }
 }
 ```

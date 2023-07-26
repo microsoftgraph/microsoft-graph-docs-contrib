@@ -7,18 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = ThreatAssessmentRequest()
+request_body = UrlAssessmentRequest()
 request_body.@odata_type = '#microsoft.graph.urlAssessmentRequest'
+
+request_body.url = 'http://test.com'
 
 request_body.expectedassessment(ThreatExpectedAssessment.Block('threatexpectedassessment.block'))
 
 request_body.category(ThreatCategory.Phishing('threatcategory.phishing'))
-
-additional_data = [
-'url' => 'http://test.com', 
-];
-request_body.additional_data(additional_data)
-
 
 
 

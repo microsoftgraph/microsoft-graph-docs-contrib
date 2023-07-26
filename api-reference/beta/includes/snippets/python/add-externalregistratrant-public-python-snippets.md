@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = MeetingRegistrantBase()
+request_body = ExternalMeetingRegistrant()
 request_body.@odata_type = '#microsoft.graph.externalMeetingRegistrant'
 
 request_body.id = '9d96988d-a66a-46ce-aad7-0b245615b297'

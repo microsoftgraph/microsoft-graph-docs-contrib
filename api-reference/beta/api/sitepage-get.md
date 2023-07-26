@@ -2,7 +2,7 @@
 author: sangle7
 description: "Returns the metadata for a sitePage in the site pages list in a site."
 ms.date: 03/15/2018
-title: Get a page in a site
+title: Get sitePage
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].
 
-[sitePage]: ../resources/sitepage.md
+[sitePage]: ../resources/sitePage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
@@ -35,9 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
-
 ```http
-GET /sites/{site-id}/pages/{page-id}
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
 ```
 
 ## Optional query parameters
@@ -74,35 +73,15 @@ If successful, this method returns a `200` and a [sitePage](../resources/sitepag
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages/{page-id}
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-page-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-page-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-page-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-page-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-page-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-page-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-page-python-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -155,7 +134,6 @@ Content-type: application/json
 
 With `select` and `expand` statements, you can retrieve sitePage metadata and page content in a single request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -164,35 +142,15 @@ With `select` and `expand` statements, you can retrieve sitePage metadata and pa
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}?select=id,title&expand=webparts
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-sitepage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-sitepage-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-sitepage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-sitepage-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-sitepage-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-sitepage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-sitepage-python-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-sitepage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -208,59 +166,43 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.sitePage",
-  "id": "65e59907-59d5-44ff-a038-7c0bf3098c01",
-  "title": "Organization Home",
-  "webparts":[{
-      "@odata.type": "#microsoft.graph.textWebPart",
-      "id": "d79d70af-27ea-4208-8dce-23c3bf678664",
-      "innerHtml": "<h2>How do you get started?</h2>"
+    "@odata.etag": "\"{F45354CB-D634-45DF-8B88-2B4E96A1DC45},8\"",
+    "description": "Reiciendis placeat dolores.Mollitia veniam tempora tempora quidem voluptatum.Quos animi maiores facilis.Dolores officiis consequatur provident beatae deleniti accusamus magni quam tenetur.",
+    "eTag": "\"{F45354CB-D634-45DF-8B88-2B4E96A1DC45},8\"",
+    "id": "f45354cb-d634-45df-8b88-2b4e96a1dc45",
+    "lastModifiedDateTime": "2023-04-16T10:01:41Z",
+    "name": "Electronic Convertible.aspx",
+    "webUrl": "SitePages/Electronic Convertible.aspx",
+    "title": "Electronic Convertible",
+    "pageLayout": "article",
+    "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/_layouts/15/images/sitepagethumbnail.png",
+    "promotionKind": "page",
+    "showComments": false,
+    "showRecommendedPages": true,
+    "contentType": {
+        "id": "0x0101009D1CB255DA76424F860D91F20E6C4118009E6554A5E299E84FB2E07731DD6C6D4A",
+        "name": "Site Page"
     },
-    {
-      "@odata.type": "#microsoft.graph.textWebPart",
-      "id": "6346d908-f20d-4528-902f-3c2a9c8c2442",
-      "webPartType": "d1d91016-032f-456d-98a4-721247c305e8",
-      "data": {
-        "dataVersion": "1.9",
-        "description": "Show an image on your page",
-        "title": "Image",
-        "properties": {
-          "imageSourceType": 2,
-          "altText": "",
-          "overlayText": "",
-          "siteid": "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
-          "webid": "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
-          "listid": "bdb41041-eb06-474e-ac29-87093386bb14",
-          "uniqueid": "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
-          "imgWidth": 4288,
-          "imgHeight": 2848,
-          "fixAspectRatio": false,
-          "captionText": "",
-          "alignment": "Center"
-        },
-        "serverProcessedContent": {
-          "imageSources": [
-            {
-              "key": "imageSource",
-              "value": "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG"
-            }
-          ],
-          "customMetadata": [
-            {
-              "key": "imageSource",
-              "value": {
-                "siteid": "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
-                "webid": "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
-                "listid": "bdb41041-eb06-474e-ac29-87093386bb14",
-                "uniqueid": "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
-                "width": "4288",
-                "height": "2848"
-              }
-            }
-          ]
+    "createdBy": {
+        "user": {
+            "displayName": "admin_contoso",
+            "email": "admin@contoso.onmicrosoft.com"
         }
-      }
-    }]
+    },
+    "lastModifiedBy": {
+        "user": {
+            "displayName": "admin_contoso",
+            "email": "admin@contoso.onmicrosoft.com"
+        }
+    },
+    "parentReference": {
+        "siteId": "45bb2a3b-0a4e-46f4-8c68-749c3fea75d3"
+    },
+    "publishingState": {
+        "level": "draft",
+        "versionId": "0.4"
+    },
+    "reactions": {}
 }
 ```
 
@@ -271,7 +213,7 @@ Content-type: application/json
 To access the page with page content, append the `?expand=canvasLayout` query string.
 
 ```http
-GET /sites/{site-id}/pages/{page-id}?expand=canvasLayout
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage?expand=canvasLayout
 ```
 
 #### Response
@@ -367,7 +309,7 @@ GET /sites/{site-id}/pages/{page-id}?expand=canvasLayout
   "description": "Get a page in a site",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Pages/Enumerate",
+  "tocPath": "Pages/Get",
   "suppressions": [
   ]
 }

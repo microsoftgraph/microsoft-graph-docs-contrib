@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ValidateCredentialsPostRequestBody();
 $credentialsSynchronizationSecretKeyStringValuePair1 = new SynchronizationSecretKeyStringValuePair();
-$credentialsSynchronizationSecretKeyStringValuePair1->setKey(new SynchronizationSecret('username'));
+$credentialsSynchronizationSecretKeyStringValuePair1->setKey(new SynchronizationSecret('userName'));
 
 $credentialsSynchronizationSecretKeyStringValuePair1->setValue('user@domain.com');
 
@@ -29,7 +29,7 @@ $requestBody->setCredentials($credentialsArray);
 
 
 
-$graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->synchronization()->jobs()->byJobId('synchronizationJob-id')->validateCredentials()->post($requestBody);
+$graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->synchronization()->jobs()->bySynchronizationJobId('synchronizationJob-id')->validateCredentials()->post($requestBody);
 
 
 ```

@@ -73,7 +73,7 @@ var requestBody = new AccessReviewScheduleDefinition
 				Interval = 3,
 				Month = 0,
 				DayOfMonth = 0,
-				DaysOfWeek = new List<DayOfWeek>
+				DaysOfWeek = new List<DayOfWeekObject>
 				{
 				},
 				FirstDayOfWeek = DayOfWeekObject.Sunday,
@@ -90,7 +90,7 @@ var requestBody = new AccessReviewScheduleDefinition
 		},
 		ApplyActions = new List<AccessReviewApplyAction>
 		{
-			new AccessReviewApplyAction
+			new RemoveAccessApplyAction
 			{
 				OdataType = "#microsoft.graph.removeAccessApplyAction",
 			},

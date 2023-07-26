@@ -8,15 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 request_body = IdentityApiConnector()
-authentication_configuration = ApiAuthenticationConfigurationBase()
+authentication_configuration = Pkcs12Certificate()
 authentication_configuration.@odata_type = '#microsoft.graph.pkcs12Certificate'
 
-additional_data = [
-'pkcs12_value' => 'eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA', 
-'password' => 'secret', 
-];
-authentication_configuration.additional_data(additional_data)
+authentication_configuration.pkcs12_value = 'eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA'
 
+authentication_configuration.password = 'secret'
 
 
 request_body.authentication_configuration = authentication_configuration

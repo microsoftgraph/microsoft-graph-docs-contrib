@@ -16,16 +16,12 @@ postbody.content = 'Which quarter does that file cover? See my attachment.'
 
 
 post.body = postbody
-attachments_attachment1 = Attachment()
+attachments_attachment1 = FileAttachment()
 attachments_attachment1.@odata_type = '#microsoft.graph.fileAttachment'
 
 attachments_attachment1.name = 'Another file as attachment'
 
-additional_data = [
-'content_bytes' => 'VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu', 
-];
-attachments_attachment1.additional_data(additional_data)
-
+attachments_attachment1.ContentBytes(base64_decode('VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu'))
 
 
 attachmentsArray []= attachmentsAttachment1;

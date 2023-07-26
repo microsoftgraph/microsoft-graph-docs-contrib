@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgRiskyUser -Filter "riskLevel eq microsoft.graph.riskLevel'medium'" 
+Get-MgBetaRiskyUser -Filter "riskLevel eq microsoft.graph.riskLevel'medium'" 
 
 ```

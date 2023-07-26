@@ -9,7 +9,7 @@ client =  GraphServiceClient(request_adapter)
 
 
 
-result = await client.identity_governance.acce_reviews.definitions.by_definition_id('accessReviewScheduleDefinition-id').instances.by_instance_id('accessReviewInstance-id').decisions.by_decision_id('accessReviewInstanceDecisionItem-id').get()
+result = await client.identity_governance.acce_reviews.definitions.by_definition_id('accessReviewScheduleDefinition-id').instances.by_instance_id('accessReviewInstance-id').decisions.filter_by_current_user(on='{on}'.get()
 
 
 ```

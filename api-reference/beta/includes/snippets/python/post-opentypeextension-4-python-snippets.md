@@ -16,11 +16,12 @@ postbody.content = '<html><body><div><div><div><div>When and where? </div></div>
 
 
 post.body = postbody
-extensions_extension1 = Extension()
+extensions_extension1 = OpenTypeExtension()
 extensions_extension1.@odata_type = 'microsoft.graph.openTypeExtension'
 
+extensions_extension1.extension_name = 'Com.Contoso.HR'
+
 additional_data = [
-'extension_name' => 'Com.Contoso.HR', 
 'company_name' => 'Contoso', 
 'expiration_date' => '2015-07-03T13:04:00.000Z', 
 'top_picks' => ['Employees only', 'Add spouse or guest', 'Add family', ],

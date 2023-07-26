@@ -2117,6 +2117,32 @@
       "CreatedDateTime": "2023-02-28T00:00:00.000Z",
       "WorkloadArea": "Calendar",
       "SubArea": ""
+    },
+     {
+        "ChangeList": [
+          {
+            "Id": "b28263ea-8def-4f2d-b0d8-f39e5cc6d278",
+            "ApiChange": "Method",
+            "ChangedApiName": "markAsJunk",
+            "ChangeType": "Addition",
+            "Description": "Added the [markAsJunk](https://learn.microsoft.com/en-us/graph/api/message-markasjunk?view=graph-rest-beta) method to the [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resource.",
+            "Target": "message"
+          },
+          {
+            "Id": "b28263ea-8def-4f2d-b0d8-f39e5cc6d278",
+            "ApiChange": "Method",
+            "ChangedApiName": "markAsNotJunk",
+            "ChangeType": "Addition",
+            "Description": "Added the [markAsNotJunk](https://learn.microsoft.com/en-us/graph/api/message-markasnotjunk?view=graph-rest-beta) method to the [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resource.",
+            "Target": "message"
+          }
+        ],
+        "Id": "b28263ea-8def-4f2d-b0d8-f39e5cc6d278",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-07-05T00:10:40.842515Z",
+        "WorkloadArea": "Mail",
+        "SubArea": ""
     }
   ]
 }

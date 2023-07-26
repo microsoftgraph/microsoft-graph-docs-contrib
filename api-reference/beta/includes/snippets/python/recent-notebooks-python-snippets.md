@@ -9,7 +9,7 @@ client =  GraphServiceClient(request_adapter)
 
 
 
-result = await client.me.onenote.notebooks.by_notebook_id('notebook-id').get()
+result = await client.me.onenote.notebooks.get_recent_notebooks(include_personal_notebooks={include_personal_notebooks}.get()
 
 
 ```
