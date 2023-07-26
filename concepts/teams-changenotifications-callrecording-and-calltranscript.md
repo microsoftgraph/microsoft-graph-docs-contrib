@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 Change notifications enable you to subscribe to changes (create) to transcripts. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) is available after an online meeting.
 
-This article describes scenarios for the transcript resource. For more details, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
+This article describes scenarios for the **transcript** resource. For more details, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
 ## Subscribe to transcripts available at tenant-level
 
