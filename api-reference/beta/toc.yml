@@ -14945,8 +14945,9 @@ items:
           - name: Mention (preview)
             href: resources/mention.md
           - name: Analytics (preview)
-            href: resources/useranalytics.md
             items:
+              - name: User analytics
+                href: resources/useranalytics.md
               - name: Settings
                 items:
                   - name: Settings
