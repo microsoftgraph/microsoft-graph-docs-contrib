@@ -1,6 +1,6 @@
 ---
 title: "Create profileCardProperty"
-description: "Use this API to create a new profileCardProperty."
+description: "Create a new profileCardProperty resource for an organization."
 ms.localizationpriority: medium
 author: "rwaithera"
 ms.prod: "people"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. The new property is identified by its **directoryPropertyName** property.
 
-For more information on adding properties to the profile card for an organization, see [customize the profile card](/graph/add-properties-profilecard).
+For more information about how to add properties to the profile card for an organization, see [Add or delete custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard).
 
 ## Permissions
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a tenant administrator or global administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
 
 ## HTTP request
 
@@ -37,6 +37,8 @@ One of the following permissions is required to call this API. To learn more, in
 POST /admin/people/profileCardProperties
 ```
 
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
+
 ## Request headers
 
 | Name          |Description                  |
@@ -44,28 +46,29 @@ POST /admin/people/profileCardProperties
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
-> **Note** To avoid encoding issues that malform payload, use `Content-Type: application/json; charset=utf-8`.
+> **Note** To avoid encoding issues that malform the payload, use `Content-Type: application/json; charset=utf-8`.
 
 ## Request body
 
 In the request body, supply a JSON representation of a [profileCardProperty](../resources/profilecardproperty.md) object.
 
-You can specify the following properties when creating a **profileCardProperty**.
+You can specify the following properties when you create a **profileCardProperty**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|directoryPropertyName|String|Contains the name of the directory property which is intended to surface on the profile card.|
-|annotations|[profileCardAnnotation](../resources/profilecardannotation.md) collection|Contains any alternative or localized labels an administrator has chosen to specify.|
+|annotations|[profileCardAnnotation](../resources/profilecardannotation.md) collection|Any alternative or localized labels that an administrator has chosen to specify.|
+|directoryPropertyName|String|The name of the directory property which is intended to surface on the profile card.|
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a new [profileCardProperty](../resources/profilecardproperty.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [profileCardProperty](../resources/profilecardproperty.md) object in the response body.
 
 ## Examples
 
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_profilecardproperty"
@@ -89,7 +92,6 @@ Content-type: application/json; charset=utf-8
   ]
 }
 ```
-
 
 ### Response
 

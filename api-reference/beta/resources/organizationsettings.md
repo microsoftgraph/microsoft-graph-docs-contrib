@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Contains settings that are applicable to the [organization](organization.md) or that should be applied to [user](user.md) objects within an organization.
 
+Inherits from [entity](entity.md).
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -24,10 +26,11 @@ Contains settings that are applicable to the [organization](organization.md) or 
 | [List microsoftApplicationDataAccessSettings](../api/organizationsettings-list-microsoftapplicationdataaccess.md) | [microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md) | Get the properties of a [microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md) object that specify access from Microsoft applications to Microsoft 365 user data in an organization. |
 | [List peopleInsights](../api/organizationsettings-list-peopleinsights.md) | [insightsSettings](insightssettings.md) | Get the properties of an [insightsSettings](insightssettings.md) object for displaying or returning people insights in an organization. |
 
-
 ## Properties
 
-None.
+| Property | Type   | Description                                                                                       |
+|:---------|:-------|:--------------------------------------------------------------------------------------------------|
+| id       | String | The unique identifier for an **organizationSettings** object. Inherited from [entity](entity.md). |
 
 ## Relationships
 
@@ -53,6 +56,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (identifier)",
+  "id": "String (identifier)"
 }
 ```
