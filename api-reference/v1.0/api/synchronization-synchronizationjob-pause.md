@@ -92,7 +92,6 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/job
 
 ---
 
-
 ### Response
 The following is an example of a response.
 <!-- {

@@ -1,0 +1,15 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+
+
+await client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').user_statuses.by_user_statuse_id('deviceComplianceUserStatus-id').delete()
+
+
+```
