@@ -63,7 +63,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/admin/people/profileCardProperties/{id}
+GET https://graph.microsoft.com/beta/admin/people/profileCardProperties/CustomAttribute1
 ```
 
 ### Response
