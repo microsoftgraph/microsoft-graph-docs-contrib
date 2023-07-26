@@ -315,29 +315,39 @@ Limits are expressed as requests per second (rps).
 
 | Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      |
 |------------------------------------------------------|---------------------------------|------------|
-| GET team, channel, tab, installedApps, appCatalogs   | 30 rps                          | 600 rps |
-| POST/PUT channel, tab, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
-| PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
-| DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
-| GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POST /teams | 10 rps | 100 rps  |
-| PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
-| GET channel message  | 20 rps | 200 rps |
-| GET 1:1/group chat message  | 20 rps | 200 rps |
-| POST channel message | 50 rps | 500 rps |
-| POST 1:1/group chat message | 20 rps | 200 rps |
-| GET /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 600 rps |
-| POST, PATCH, PUT /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
-| DELETE /teams/```{team-id}```/schedule and all APIs under this path | 15 rps | 150 rps |
-| POST /teams/```{team-id}```/sendActivityNotification | 5 rps | 50 rps |
-| POST /chats/```{chat-id}```/sendActivityNotification | 5 rps | 50 rps |
-| POST /users/```{user-id}```/teamwork/sendActivityNotification | 5 rps | 50 rps |
-|POST /teamwork/sendActivityNotificationToRecipients|2 rps|20 rps|
-| GET /teams/```{team-id}```/members | 60 rps | 1200 rps |
-| GET /teams/```{team-id}```/channels | 60 rps | 1200 rps |
-| GET /teams/```{team-id}```/channels/```{channel-id}```/members | 60 rps | 1200 rps |
-| Get all channel messages for a team<br/>GET teams/```{team-id}```/channels/getAllMessages<br/>GET teams/```{team-id}```/channels/allMessages | 200rps | 1000rps |
-| Get all chat messages for a user<br/>GET users/```{user-id}```/chats/getAllMessages<br/>GET users/```{user-id}```/chats/allMessages | 200rps | 1000rps |
+| GET [team](/graph/api/team-get)  | 30 rps                          | 600 rps |
+| GET [channel](/graph/api/channel-get) | 30 rps                          | 600 rps |
+| GET tab for [channel](/graph/api/channel-list-tabs), [chat](/graph/api/chat-get-tabs)| 30 rps            | 600 rps |
+| GET installedApps for [chat](/graph/api/chat-get-installedapps), [user](/graph/api/userteamwork-get-installedapps),  [team](/graph/api/team-get-installedapps) | 30 rps                          | 600 rps |
+| GET [appCatalogs](/graph/api/appcatalogs-list-teamsapps)   | 30 rps                          | 600 rps |
+| POST [channel](/graph/api/channel-post) |  30 rps                         | 300 rps  |
+| POST tab for [channel](/graph/api/channel-post-tabs), [chat](/graph/api/chat-post-tabs)|  30 rps                         | 300 rps  |
+| POST installedApps for [chat](/graph/api/chat-post-installedapps), [user](/graph/api/userteamwork-post-installedapps), [team](/graph/api/team-post-installedapps) |  30 rps                         | 300 rps  |
+ POST [appCatalogs](/graph/api/teamsapp-publish)    |  30 rps                         | 300 rps  |
+| PATCH [team](/graph/api/team-update), [channel](/graph/api/channel-patch), [tab](/graph/api/channel-patch-tabs)|  30 rps                         | 300 rps  |
+| DELETE [channel](/graph/api/channel-delete) |  15 rps                         | 150 rps  |
+| DELETE tab for [chat](/graph/api/chat-delete-tabs), [channel](/graph/api/channel-delete-tabs)  |  15 rps                         | 150 rps  |
+| DELETE   installedApps for [chat](/graph/api/chat-delete-installedapps), [user](/graph/api/userteamwork-delete-installedapps), [team](/graph/api/team-delete-installedapps)    |  15 rps                         | 150 rps  |
+| DELETE   [appCatalogs](/graph/api/teamsapp-delete)      |  15 rps                         | 150 rps  |
+| GET /teams/```{team-id}```, [joinedTeams](/graph/api/user-list-joinedteams)              |  30 rps                         | 300 rps  |
+| POST /[teams](/graph/api/team-post) | 10 rps | 100 rps  |
+| PUT /groups/```{team-id}```/[team](/graph/api/team-put-teams)| 6 rps | 150 rps  |
+| POST /```{team-id}```/ [clone](/graph/api/team-clone) | 6 rps | 150 rps  |
+| GET [channel message](/graph/api/chatmessage-get)  | 20 rps | 200 rps |
+| GET 1:1/[group chat message](/graph/api/chat-get#example-3-get-a-chat-and-all-its-members)  | 20 rps | 200 rps |
+| POST [channel message](/graph/api/channel-post-messages) | 50 rps | 500 rps |
+| POST 1:1/[group chat message](/graph/api/chat-post#example-2-create-a-group-chat) | 20 rps | 200 rps |
+| GET /teams/```{team-id}```/[schedule](/graph/api/schedule-get) and all APIs under this path | 30 rps | 600 rps |
+| POST /teams/```{team-id}```/[schedule](/graph/api/schedule-share) and all APIs under this path | 30 rps | 300 rps |
+|PUT /teams/```{team-id}```/[schedule](/graph//api/team-put-schedule) and all APIs under this path | 30 rps | 300 rps |
+| POST /teams/```{team-id}```/[sendActivityNotification](/graph/api/team-sendactivitynotification) | 5 rps | 50 rps |
+| POST /chats/```{chat-id}```/[sendActivityNotification](/graph/api/chat-sendactivitynotification) | 5 rps | 50 rps |
+| POST /users/```{user-id}```/teamwork/[sendActivityNotification](/graph/api/userteamwork-sendactivitynotification) | 5 rps | 50 rps |
+| GET /teams/```{team-id}```/[members](/graph/api/team-get-members) | 60 rps | 1200 rps |
+| GET /teams/```{team-id}```/[channels](/graph/api/channel-get) | 60 rps | 1200 rps |
+| GET /teams/```{team-id}```/channels/```{channel-id}```/[members](/graph/api/channel-get-members) | 60 rps | 1200 rps |
+| Get all channel messages for a team<br/>GET teams/```{team-id}```/channels/[getAllMessages](/graph/api/channel-getallmessages)<br/>GET teams/```{team-id}```/channels/allMessages | 200rps | 1000rps |
+| Get all chat messages for a user<br/>GET users/```{user-id}```/chats/[getAllMessages](/graph/api/chats-getallmessages)<br/>GET users/```{user-id}```/chats/allMessages | 200rps | 1000rps |
 | Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps |
 | Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
-Get-MgUser -Filter "endsWith(mail,'@outlook.com')" 
+Get-MgBetaUser -Filter "endsWith(userPrincipalName,'" 
 
 ```

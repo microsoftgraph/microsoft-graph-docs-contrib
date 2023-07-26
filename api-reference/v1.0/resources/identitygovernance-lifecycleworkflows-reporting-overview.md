@@ -46,5 +46,5 @@ The following [Azure AD roles](/azure/active-directory/roles/permissions-referen
 
 ## See also
 
-+ [What are Lifecycle Workflows? (Public Preview)](/azure/active-directory/governance/what-are-lifecycle-workflows)
++ [What are Lifecycle Workflows?](/azure/active-directory/governance/what-are-lifecycle-workflows)
 + [Overview of Lifecycle Workflows](identitygovernance-lifecycleworkflows-overview.md)
