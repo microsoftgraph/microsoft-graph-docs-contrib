@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Application();
-$requestBody->setIdentifierUris(['https://contosoiwaapp-contoso.msappproxy.net', ]);
+$requestBody->setIdentifierUris(['https://contosoiwaapp-contoso.msappproxy.net', 	]);
 
 $web = new WebApplication();
-$web->setRedirectUris(['https://contosoiwaapp-contoso.msappproxy.net', ]);
+$web->setRedirectUris(['https://contosoiwaapp-contoso.msappproxy.net', 	]);
 
 $web->setHomePageUrl('https://contosoiwaapp-contoso.msappproxy.net');
 

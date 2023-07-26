@@ -1,5 +1,5 @@
 ---
-title: "Remove sponsors"
+title: "Remove sponsor"
 description: "Remove a user's sponsor."
 author: "sadia353"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# Remove sponsors
+# Remove sponsor
 
 Namespace: microsoft.graph
 
