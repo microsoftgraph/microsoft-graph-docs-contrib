@@ -2,7 +2,7 @@
 title: "profilePhoto resource type"
 description: "Repesents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Azure Active Directory (Azure AD)."
 ms.localizationpriority: medium
-author: "kevinbellinger"
+author: "kristinmcleod"
 ms.prod: "people"
 doc_type: resourcePageType
 ---
@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Repesents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Azure Active Directory (Azure AD). The data is binary and not encoded in base-64.
 
-The supported sizes of HD photos on Exchange Online are as follows: `48x48`, `64x64`, `96x96`, `120x120`, `240x240`,
-`360x360`,`432x432`, `504x504`, and `648x648`. In Azure AD, photos can be any dimension.
 
 ## Methods
 
@@ -22,6 +20,7 @@ The supported sizes of HD photos on Exchange Online are as follows: `48x48`, `64
 |:---|:---|:---|
 |[Get profilePhoto](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Read the properties and relationships of a profile photo object.|
 |[Update profilePhoto](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo object.|
+|[Delete profilePhoto](../api/profilephoto-delete.md)|[profilePhoto](../resources/profilephoto.md)|Delete the properties of a profile photo object.|
 
 > [!NOTE]
 > Managing users' photos using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.

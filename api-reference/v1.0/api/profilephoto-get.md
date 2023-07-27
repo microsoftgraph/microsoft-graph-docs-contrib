@@ -2,7 +2,7 @@
 title: "Get profilePhoto"
 description: "Get the specified profilePhoto or its metadata (profilePhoto properties)."
 ms.localizationpriority: medium
-author: "kevinbellinger"
+author: "kristinmcleod"
 ms.prod: "people"
 doc_type: apiPageType
 ---
@@ -196,7 +196,7 @@ HTTP/1.1 200 OK
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/photo/48x48/$value
+GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
