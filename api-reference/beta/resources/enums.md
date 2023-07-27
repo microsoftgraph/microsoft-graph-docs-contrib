@@ -3986,7 +3986,7 @@ Possible values for user account types (group membership), per Windows definitio
 | presentation_verified |
 | unknownFutureValue    |
 
-### rolePrincipalTypes values
+### allowedRolePrincipalTypes values
 
 |Member|
 |:---|
