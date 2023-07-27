@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UserInstallStateSummary();
-$requestBody->set@odatatype('#microsoft.graph.userInstallStateSummary');
+$requestBody->setOdataType('#microsoft.graph.userInstallStateSummary');
 
 $requestBody->setUserName('User Name value');
 
@@ -22,7 +22,7 @@ $requestBody->setNotInstalledDeviceCount(7);
 
 
 
-$result = $graphServiceClient->deviceAppManagement()->managedEBooks()->byManagedEBookId('managedEBook-id')->userStateSummary()->byUserStateSummary()Id('userInstallStateSummary-id')->patch($requestBody);
+$result = $graphServiceClient->deviceAppManagement()->managedEBooks()->byManagedEBookId('managedEBook-id')->userStateSummary()->byUserInstallStateSummaryId('userInstallStateSummary-id')->patch($requestBody);
 
 
 ```

@@ -9,7 +9,7 @@ client =  GraphServiceClient(request_adapter)
 
 
 
-result = await client.sites.by_site_id('site-id').pages.by_page_id('sitePage-id').get()
+result = await client.sites.by_site_id('site-id').pages.by_page_id('baseSitePage-id').get()
 
 
 ```

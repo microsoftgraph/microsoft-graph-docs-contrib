@@ -14,6 +14,6 @@ $params = @{
 	notInstalledDeviceCount = 7
 }
 
-Update-MgDeviceAppMgtManagedEBookUserStateSummary -ManagedEBookId $managedEBookId -UserInstallStateSummaryId $userInstallStateSummaryId -BodyParameter $params
+Update-MgDeviceAppManagementManagedEBookUserStateSummary -ManagedEBookId $managedEBookId -UserInstallStateSummaryId $userInstallStateSummaryId -BodyParameter $params
 
 ```
