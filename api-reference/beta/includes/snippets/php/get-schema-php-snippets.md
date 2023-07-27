@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->external()->connections()->byConnectionId('externalConnection-id')->schema()->get();
+$result = $graphServiceClient->external()->connections()->byExternalConnectionId('externalConnection-id')->schema()->get();
 
 
 ```

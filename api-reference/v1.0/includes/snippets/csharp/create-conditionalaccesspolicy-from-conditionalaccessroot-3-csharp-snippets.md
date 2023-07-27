@@ -41,7 +41,7 @@ var requestBody = new ConditionalAccessPolicy
 				"05a65629-4c1b-48c1-a78b-804c4abdd4af",
 				"7df0a125-d3be-4c96-aa54-591f83ff541c",
 			},
-			IncludeUserActions = new List<String>
+			IncludeUserActions = new List<string>
 			{
 			},
 		},
@@ -56,10 +56,10 @@ var requestBody = new ConditionalAccessPolicy
 				"124c5b6a-ffa5-483a-9b88-04c3fce5574a",
 				"GuestsOrExternalUsers",
 			},
-			IncludeGroups = new List<String>
+			IncludeGroups = new List<string>
 			{
 			},
-			ExcludeGroups = new List<String>
+			ExcludeGroups = new List<string>
 			{
 			},
 			IncludeRoles = new List<string>
@@ -109,7 +109,7 @@ var requestBody = new ConditionalAccessPolicy
 			ConditionalAccessGrantControl.ApprovedApplication,
 			ConditionalAccessGrantControl.CompliantApplication,
 		},
-		CustomAuthenticationFactors = new List<String>
+		CustomAuthenticationFactors = new List<string>
 		{
 		},
 		TermsOfUse = new List<string>
