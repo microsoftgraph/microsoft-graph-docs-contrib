@@ -99,7 +99,7 @@ GET /roleManagement/exchange/roleDefinitions
 ```
 
 ## Optional query parameters
-This method supports `$filter` query parameter on `id`, `displayName`, `allowedPrincipalTypes` and `isBuiltIn` properties. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
