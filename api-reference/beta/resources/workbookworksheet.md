@@ -34,7 +34,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |[List](../api/worksheet-list.md) | [workbookWorksheet](workbookworksheet.md) collection |Get worksheet object collection. |
 |[Add](../api/worksheetcollection-add.md)|[workbookWorksheet](workbookworksheet.md)|Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. |
 |[List pivotTables](../api/workbookworksheet-list-pivottables.md) |[workbookPivotTable](workbookpivottable.md) collection| Get a workbookPivotTable object collection.|
-|[List tasks](../api/workbookworksheet-list-tasks.md)|[workbookDocumentTask](workbookdocumenttask.md) collection|Get the workbookDocumentTask object collection.|
+|[List tasks](../api/workbookworksheet-list-tasks.md)|[workbookDocumentTask](workbookdocumenttask.md) collection| Get the workbookDocumentTask object collection containing all Document Tasks on this worksheet|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -52,6 +52,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |pivotTables|[workbookPivotTable](workbookpivottable.md) collection| Collection of PivotTables that are part of the worksheet. |
 |protection|[workbookWorksheetProtection](workbookworksheetprotection.md)|Returns sheet protection object for a worksheet. Read-only.|
 |tables|[workbookTable](workbooktable.md) collection|Collection of tables that are part of the worksheet. Read-only.|
+|tasks|[workbookDocumentTask](workbookdocumenttask.md) collection|Collection of Document Tasks on this worksheet. Read-only.|
 
 ## JSON representation
 

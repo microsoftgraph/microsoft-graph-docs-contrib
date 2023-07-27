@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
 ## HTTP request
@@ -107,7 +107,7 @@ HTTP/1.1 200 OK
                 "email": "mikesmith@contoso.com"
             },
             "createdDateTime": "2020-09-01T18:36:49.2407981Z",
-            "id":"57A21473-7238-3CE0-BCB6-A55E4909AA98",
+            "id":"26950968-F917-4C2C-BB46-4845D0F7171B",
             "type": "SetTitle",
             "title": "This is a task title",
         },

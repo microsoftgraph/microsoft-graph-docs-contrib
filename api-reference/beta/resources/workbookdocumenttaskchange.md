@@ -25,18 +25,18 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignee|[workbookEmailIdentity](workbookemailidentity.md)|Only exists on assign change history|
+|assignee|[workbookEmailIdentity](workbookemailidentity.md)|Only present when the `type` property is `assign`. Nullable.|
 |changedBy|[workbookEmailIdentity](workbookemailidentity.md)|The user who performs the change|
 |commentId|String|The identifier of the associated comment|
-|createdDateTime|DateTimeOffset|A timestamp of the change|
-|dueDateTime|DateTimeOffset|Only exists on setSchedule change history |
+|createdDateTime|DateTimeOffset|A timestamp of the change. Nullable.|
+|dueDateTime|DateTimeOffset|Only present when the `type` property is `setSchedule`. Nullable. |
 |id|String|The identifier of the change history|
-|percentComplete|Int32|Only exists on setPercentComplete change history|
-|priority|Int32|Only exists on setPriority change history|
-|startDateTime|DateTimeOffset|Only exists on setSchedule change history|
-|title|String|Only exists on setTitle change history|
-|type|String|Type of the change history, including create, assign, unassign, unassignAll, setPriority, setTitle, setPercentComplete, setSchedule, remove, restore, undo, and unknownFutureValue |
-|undoChangeId|String|Only exists on undo change history |
+|percentComplete|Int32|Only present when the `type` property is `setPercentComplete`. Nullable.|
+|priority|Int32|Only present when the `type` property is `setPriority`. Nullable.|
+|startDateTime|DateTimeOffset|Only present when the `type` property is `setSchedule`. Nullable.|
+|title|String|Only present when the `type` property is `setTitle`. Nullable.|
+|type|String|Type of the change history. Possible values include create, assign, unassign, etc.|
+|undoChangeId|String|Only exists on undo change history. Nullable.|
 
 ## Relationships
 None.

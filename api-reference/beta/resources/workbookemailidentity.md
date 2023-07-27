@@ -20,7 +20,7 @@ Represents an identity type
 |:---|:---|:---|
 |displayName|String| Display name of the user|
 |email|String|Email address of the user|
-|id|String|Identifier of the user identity|
+|id|String|Unique identifier of the user|
 
 ## Relationships
 None.

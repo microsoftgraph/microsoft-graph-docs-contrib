@@ -27,14 +27,14 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |assignees|[workbookEmailIdentity](workbookemailidentity.md) collection| A collection of user identity the task is assigned to|
-|completedBy|[workbookEmailIdentity](workbookemailidentity.md)|A user identity that completes the task|
-|completedDateTime|DateTimeOffset|Timestamp of the task completion|
-|createdBy|[workbookEmailIdentity](workbookemailidentity.md)|A useridentity that creates the task|
-|createdDateTime|DateTimeOffset|Timestamp of the task creation|
+|completedBy|[workbookEmailIdentity](workbookemailidentity.md)|A user identity that completes the task. Nullable.|
+|completedDateTime|DateTimeOffset|Timestamp of the task completion. Nullable.|
+|createdBy|[workbookEmailIdentity](workbookemailidentity.md)|A user identity that creates the task. Nullable.|
+|createdDateTime|DateTimeOffset|Timestamp of the task creation. Nullable.|
 |id|String|Task identifier|
-|percentComplete|Int32|Percentage of the completion of the task|
-|priority|Int32|Priority of the task|
-|startAndDueDateTime|[workbookDocumentTaskSchedule](workbookdocumenttaskschedule.md)|Start and due date of the task|
+|percentComplete|Int32|Percentage of the completion of the task, range from 0 to 100. 100 means the task is completed. Nullable.|
+|priority|Int32| An integer value from 0 to 10 to represent the priority of the task. A lower value indicates a higher priority. Nullable.|
+|startAndDueDateTime|[workbookDocumentTaskSchedule](workbookdocumenttaskschedule.md)|Start and due date of the task. Nullable.|
 |title|String| title of the task|
 
 ## Relationships
