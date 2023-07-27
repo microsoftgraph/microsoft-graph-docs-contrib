@@ -123,24 +123,24 @@ This section describes the payment models for Teams meeting transcript and recor
 | ------ | ----- |
 | [Fetch meeting transcript and recording](/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts) | [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) </br> [Get callRecording content](/graph/api/callrecording-get#example-2-get-a-callrecording-content) |
 
-You will receive an evaluation quota which apps can use. Apps don’t require to pass any billing model information for making requests to the API within their evaluation quota. The evaluation quota is enforced per app, per tenant, and per month. The quota is reset at the beginning of each calendar month, and any unused amount doesn't get carried over to the next month.
+These APIs include an evaluation quota that apps can use. When making requests to the API within the evaluation quota, apps do not have to pass any billing model information. The evaluation quota is enforced per app, per tenant, and per month. The quota is reset at the beginning of each calendar month, and any unused amount doesn't get carried over to the next month.
 
-Once the evaluation quota is over, apps need to set up an active Azure subscription for billing purposes as described in [enable metered APIs and services in Microsoft Graph](metered-api-setup.md). If the onboarding isn't completed, the following error encounters while calling the metered APIs.
+When the evaluation quota is over, apps need to set up an active Azure subscription for billing purposes, as described in [enable metered APIs and services in Microsoft Graph](metered-api-setup.md). If the onboarding isn't completed, the following error occurs when apps call the metered APIs.
 
 **Error code**: `402` (Payment Required) </br>
 **Error string**: Evaluation mode capacity has been exceeded. To call this API, the app must be associated with an Azure subscription. For more information, see [payment models and licensing requirements for Microsoft Teams APIs](teams-licenses.md).
 
-The following table summarizes the evaluation mode behavior for transcript and recording APIs:
+The following table summarizes the evaluation mode behavior for transcript and recording APIs.
 
-| Azure Billing Setup | Model Parameter | Result |
+| Azure Billing Setup | Model parameter | Result |
 | -------- | -------- | -------- |
-| Not configured | No parameter | Evaluation mode capacity will be available for download. Beyond that API will fail with error code: `402` (Payment Required). |
+| Not configured | No parameter | Evaluation mode capacity will be available for download. Beyond that, the API will fail with error code: `402` (Payment Required). |
 | Configured | No parameter | Unlimited meeting content will be available for download. Engineering RPS limits still apply. |
 
 > [!NOTE]
-> Model A and B aren't supported by these APIs.
+> These APIs do not support the model A and model B payment models.
 
-The following table lists the evaluation mode capacity and price for additional usage of these APIs:
+The following table lists the evaluation mode capacity and price for additional usage of these APIs.
 
 | API | Evaluation mode capacity  | Price for additional use  | Notes |
 | -------- | -------- | -------- | -------- |
