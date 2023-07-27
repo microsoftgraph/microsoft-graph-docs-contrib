@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 ---
 
-<!-- markdownlint-disable MD002 MD025 MD041 -->
+<!-- markdownlint-disable MD041 -->
 
 To make it easier for users to find the information that they have permission to see, create search verticals and result types to customize the search results in Microsoft SharePoint, Microsoft Office, and Microsoft Search in Bing.
 

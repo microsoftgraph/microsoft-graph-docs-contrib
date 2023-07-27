@@ -78,6 +78,11 @@
       "path_to_root": "concepts/sdks/snippets/typescript",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-typescript",
       "branch": "main"
+    },
+    {
+      "path_to_root": "concepts/includes/connecting-external-content/snippets",
+      "url": "https://github.com/microsoftgraph/msgraph-search-connector-sample",
+      "branch": "jasonjoh-tutorial-update"
     }
   ],
   "branch_target_mapping": {},
