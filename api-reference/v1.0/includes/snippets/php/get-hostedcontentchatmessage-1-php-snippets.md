@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->chats()->byChatId('chat-id')->messages()->byMessageId('chatMessage-id')->hostedContents()->byHostedContentId('chatMessageHostedContent-id')->get();
+$result = $graphServiceClient->chats()->byChatId('chat-id')->messages()->byChatMessageId('chatMessage-id')->hostedContents()->byChatMessageHostedContentId('chatMessageHostedContent-id')->get();
 
 
 ```

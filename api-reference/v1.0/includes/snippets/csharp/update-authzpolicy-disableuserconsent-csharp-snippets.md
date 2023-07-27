@@ -12,7 +12,7 @@ var requestBody = new AuthorizationPolicy
 {
 	DefaultUserRolePermissions = new DefaultUserRolePermissions
 	{
-		PermissionGrantPoliciesAssigned = new List<String>
+		PermissionGrantPoliciesAssigned = new List<string>
 		{
 		},
 	},

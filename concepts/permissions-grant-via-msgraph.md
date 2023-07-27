@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.prod: "applications"
 zone_pivot_groups: grant-api-permissions
 ms.custom: template-how-to
-ms.date: 12/09/2022
+ms.date: 07/25/2023
 ---
 
 # Grant or revoke API permissions programmatically
@@ -500,6 +500,7 @@ In this step, you'll grant your app, on behalf of a user, a delegated permission
 + From Step 1, the object ID of Microsoft Graph in the tenant is `7ea9e944-71ce-443d-811c-71e8047b557a`
 + The delegated permissions `User.Read.All` and `Group.Read.All` are identified by the globally unique IDs `a154be20-db9c-4678-8ab7-66f6cc099a59` and `5f8c59db-677d-491f-a6b8-5f174b11ec1d` respectively.
 + The principal is a user identified by ID `3fbd929d-8c56-4462-851e-0eb9a7b3a2a5`.
++ The client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`. This is the object **id** of the service principal and *not* its **appId**.
 
 
 # [HTTP](#tab/http)
