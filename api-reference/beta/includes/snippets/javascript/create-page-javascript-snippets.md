@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const sitePage = {
+const baseSitePage = {
   '@odata.type': '#microsoft.graph.sitePage',
   name: 'test.aspx',
   title: 'test',
@@ -104,6 +104,6 @@ const sitePage = {
 
 await client.api('/sites/{site-id}/pages')
 	.version('beta')
-	.post(sitePage);
+	.post(baseSitePage);
 
 ```
