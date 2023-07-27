@@ -8747,7 +8747,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customAccountResetCredentialsUrl",
           "ChangeType": "Addition",
-          "Description": "Added the `customAccountResetCredentialsUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customAccountResetCredentialsUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8755,7 +8755,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customCannotAccessYourAccountText",
           "ChangeType": "Addition",
-          "Description": "Added the `customCannotAccessYourAccountText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customCannotAccessYourAccountText** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8763,7 +8763,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customCannotAccessYourAccountUrl",
           "ChangeType": "Addition",
-          "Description": "Added the `customCannotAccessYourAccountUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customCannotAccessYourAccountUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8771,7 +8771,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customCSS",
           "ChangeType": "Addition",
-          "Description": "Added the `customCSS` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customCSS** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8779,7 +8779,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customCSSRelativeUrl",
           "ChangeType": "Addition",
-          "Description": "Added the `customCSSRelativeUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customCSSRelativeUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8787,7 +8787,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customForgotMyPasswordText",
           "ChangeType": "Addition",
-          "Description": "Added the `customForgotMyPasswordText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customForgotMyPasswordText** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8795,7 +8795,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customPrivacyAndCookiesText",
           "ChangeType": "Addition",
-          "Description": "Added the `customPrivacyAndCookiesText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customPrivacyAndCookiesText** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8803,7 +8803,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customPrivacyAndCookiesUrl",
           "ChangeType": "Addition",
-          "Description": "Added the `customPrivacyAndCookiesUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customPrivacyAndCookiesUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8811,7 +8811,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customResetItNowText",
           "ChangeType": "Addition",
-          "Description": "Added the `customResetItNowText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customResetItNowText** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8819,7 +8819,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customTermsOfUseText",
           "ChangeType": "Addition",
-          "Description": "Added the `customTermsOfUseText` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customTermsOfUseText** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8827,7 +8827,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customTermsOfUseUrl",
           "ChangeType": "Addition",
-          "Description": "Added the `customTermsOfUseUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customTermsOfUseUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8835,7 +8835,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "favicon",
           "ChangeType": "Addition",
-          "Description": "Added the `favicon` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **favicon** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8843,7 +8843,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "faviconRelativeUrl",
           "ChangeType": "Addition",
-          "Description": "Added the `faviconRelativeUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **faviconRelativeUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8851,7 +8851,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "headerBackgroundColor",
           "ChangeType": "Addition",
-          "Description": "Added the `headerBackgroundColor` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **headerBackgroundColor** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8859,7 +8859,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "headerLogo",
           "ChangeType": "Addition",
-          "Description": "Added the `headerLogo` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **headerLogo** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8867,7 +8867,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "headerLogoRelativeUrl",
           "ChangeType": "Addition",
-          "Description": "Added the `headerLogoRelativeUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **headerLogoRelativeUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8875,7 +8875,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "loginPageLayoutConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the `loginPageLayoutConfiguration` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **loginPageLayoutConfiguration** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8883,7 +8883,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "loginPageTextVisibilitySettings",
           "ChangeType": "Addition",
-          "Description": "Added the `loginPageTextVisibilitySettings` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **loginPageTextVisibilitySettings** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8891,7 +8891,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "squareLogoDark",
           "ChangeType": "Addition",
-          "Description": "Added the `squareLogoDark` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **squareLogoDark** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -8899,7 +8899,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "squareLogoDarkRelativeUrl",
           "ChangeType": "Addition",
-          "Description": "Added the `squareLogoDarkRelativeUrl` property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **squareLogoDarkRelativeUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
           "Target": "organizationalBrandingProperties"
         }
       ],
