@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SubjectRightsRequest();
 $requestBody->setType(new SubjectRightsRequestType('export'));
@@ -26,7 +26,7 @@ $requestBody->setIncludeAllVersions(false);
 
 $requestBody->setIncludeAuthoredContent(true);
 
-$requestBody->setInternalDueDateTime(new DateTime('2022-07-20T22:42:28Z'));
+$requestBody->setInternalDueDateTime(new \DateTime('2022-07-20T22:42:28Z'));
 
 $dataSubject = new DataSubject();
 $dataSubject->setFirstName('Diego');
@@ -43,10 +43,10 @@ $requestBody->setMailboxLocations(null);
 
 $requestBody->setPauseAfterEstimate(true);
 
-$requestBody->setRegulations(['CCPA', ]);
+$requestBody->setRegulations(['CCPA', 	]);
 
 $siteLocations = new SubjectRightsRequestAllSiteLocation();
-$siteLocations->set@odatatype('microsoft.graph.subjectRightsRequestAllSiteLocation');
+$siteLocations->setOdataType('microsoft.graph.subjectRightsRequestAllSiteLocation');
 
 
 $requestBody->setSiteLocations($siteLocations);
