@@ -80,7 +80,7 @@ The following is an example of the request.
 }
 -->
 
-```msgraph-interactive
+```http
 GET /sites/{site-id}/pages
 ```
 
