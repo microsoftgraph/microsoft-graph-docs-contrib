@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BookingAppointment();
-$requestBody->set@odatatype('#microsoft.graph.bookingAppointment');
+$requestBody->setOdataType('#microsoft.graph.bookingAppointment');
 
 $requestBody->setCustomerTimeZone('America/Chicago');
 
 $requestBody->setSmsNotificationsEnabled(true);
 
 $endDateTime = new DateTimeTimeZone();
-$endDateTime->set@odatatype('#microsoft.graph.dateTimeTimeZone');
+$endDateTime->setOdataType('#microsoft.graph.dateTimeTimeZone');
 
 $endDateTime->setDateTime('2018-05-01T12:30:00.0000000+00:00');
 
@@ -37,16 +37,16 @@ $requestBody->setPreBuffer(new \DateInterval('PT5M'));
 
 $requestBody->setPrice(10);
 
-$requestBody->setPriceType(new BookingPriceType('fixedprice'));
+$requestBody->setPriceType(new BookingPriceType('fixedPrice'));
 
 $remindersBookingReminder1 = new BookingReminder();
-$remindersBookingReminder1->set@odatatype('#microsoft.graph.bookingReminder');
+$remindersBookingReminder1->setOdataType('#microsoft.graph.bookingReminder');
 
 $remindersBookingReminder1->setMessage('This service is tomorrow');
 
 $remindersBookingReminder1->setOffset(new \DateInterval('P1D'));
 
-$remindersBookingReminder1->setRecipients(new BookingReminderRecipients('allattendees'));
+$remindersBookingReminder1->setRecipients(new BookingReminderRecipients('allAttendees'));
 
 $additionalData = [
 		'recipients@odata.type' => '#microsoft.graph.bookingReminderRecipients', 
@@ -57,7 +57,7 @@ $remindersBookingReminder1->setAdditionalData($additionalData);
 
 $remindersArray []= $remindersBookingReminder1;
 $remindersBookingReminder2 = new BookingReminder();
-$remindersBookingReminder2->set@odatatype('#microsoft.graph.bookingReminder');
+$remindersBookingReminder2->setOdataType('#microsoft.graph.bookingReminder');
 
 $remindersBookingReminder2->setMessage('Please be available to enjoy your lunch service.');
 
@@ -74,7 +74,7 @@ $remindersBookingReminder2->setAdditionalData($additionalData);
 
 $remindersArray []= $remindersBookingReminder2;
 $remindersBookingReminder3 = new BookingReminder();
-$remindersBookingReminder3->set@odatatype('#microsoft.graph.bookingReminder');
+$remindersBookingReminder3->setOdataType('#microsoft.graph.bookingReminder');
 
 $remindersBookingReminder3->setMessage('Please check traffic for next cater.');
 
@@ -96,10 +96,10 @@ $requestBody->setReminders($remindersArray);
 $requestBody->setServiceId('57da6774-a087-4d69-b0e6-6fb82c339976');
 
 $serviceLocation = new Location();
-$serviceLocation->set@odatatype('#microsoft.graph.location');
+$serviceLocation->setOdataType('#microsoft.graph.location');
 
 $serviceLocationAddress = new PhysicalAddress();
-$serviceLocationAddress->set@odatatype('#microsoft.graph.physicalAddress');
+$serviceLocationAddress->setOdataType('#microsoft.graph.physicalAddress');
 
 $serviceLocationAddress->setCity('Buffalo');
 
@@ -148,8 +148,10 @@ $requestBody->setServiceName('Catered bento');
 
 $requestBody->setServiceNotes('Customer requires punctual service.');
 
+$requestBody->setStaffMemberIds(['8ee1c803-a1fa-406d-8259-7ab53233f148', ]);
+
 $startDateTime = new DateTimeTimeZone();
-$startDateTime->set@odatatype('#microsoft.graph.dateTimeTimeZone');
+$startDateTime->setOdataType('#microsoft.graph.dateTimeTimeZone');
 
 $startDateTime->setDateTime('2018-05-01T12:00:00.0000000+00:00');
 
@@ -162,7 +164,7 @@ $requestBody->setMaximumAttendeesCount(5);
 $requestBody->setFilledAttendeesCount(1);
 
 $customersBookingCustomerInformationBase1 = new BookingCustomerInformation();
-$customersBookingCustomerInformationBase1->set@odatatype('#microsoft.graph.bookingCustomerInformation');
+$customersBookingCustomerInformationBase1->setOdataType('#microsoft.graph.bookingCustomerInformation');
 
 $customersBookingCustomerInformationBase1->setCustomerId('7ed53fa5-9ef2-4f2f-975b-27447440bc09');
 
@@ -175,7 +177,7 @@ $customersBookingCustomerInformationBase1->setPhone('213-555-0199');
 $customersBookingCustomerInformationBase1->setNotes(null);
 
 $customersBookingCustomerInformationBase1Location = new Location();
-$customersBookingCustomerInformationBase1Location->set@odatatype('#microsoft.graph.location');
+$customersBookingCustomerInformationBase1Location->setOdataType('#microsoft.graph.location');
 
 $customersBookingCustomerInformationBase1Location->setDisplayName('Customer');
 
@@ -190,7 +192,7 @@ $customersBookingCustomerInformationBase1Location->setUniqueId(null);
 $customersBookingCustomerInformationBase1Location->setUniqueIdType(null);
 
 $customersBookingCustomerInformationBase1LocationAddress = new PhysicalAddress();
-$customersBookingCustomerInformationBase1LocationAddress->set@odatatype('#microsoft.graph.physicalAddress');
+$customersBookingCustomerInformationBase1LocationAddress->setOdataType('#microsoft.graph.physicalAddress');
 
 $customersBookingCustomerInformationBase1LocationAddress->setStreet('');
 
@@ -256,7 +258,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->appointments()->post($requestBody);
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->appointments()->post($requestBody);
 
 
 ```

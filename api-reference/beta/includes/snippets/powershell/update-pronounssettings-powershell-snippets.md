@@ -10,6 +10,6 @@ $params = @{
 	isEnabledInOrganization = $true
 }
 
-Update-MgBetaOrganizationSettingPronoun -OrganizationId $organizationId -BodyParameter $params
+Update-MgBetaAdminPersonPronoun -BodyParameter $params
 
 ```
