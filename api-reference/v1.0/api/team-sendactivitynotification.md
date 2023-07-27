@@ -589,7 +589,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 7: Notify about pending finance approval requests in channel Message reply location
+### Example 7: Notify about pending finance approval requests in channel message reply location
 
 Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a [channel message reply](../api/chatmessage-get.md#example-3-get-reply-to-a-message-in-a-channel). The channel message reply shows the status of the user's hotel reservation. Selecting the notification will take the user to the reply message in the channel, where they can check their reservation status.
 
