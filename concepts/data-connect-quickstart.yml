@@ -44,4 +44,4 @@ items:
   - title: Congratulations!
     durationInMinutes: 0
     content: |
-      [!INCLUDE [](../includes/data-connect-quickstart-10.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-07.md)]
