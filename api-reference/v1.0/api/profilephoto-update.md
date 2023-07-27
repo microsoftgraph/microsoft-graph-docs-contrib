@@ -1,8 +1,8 @@
 ---
-title: "Delete profilePhoto"
-description: "Delete the photo for the signed-in user, or the specified group or contact or team."
+title: "Update profilePhoto"
+description: "Update the photo for the signed-in user, or the specified group or contact or team."
 ms.localizationpriority: medium
-author: "kristinmcleod"
+author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType
 ---
@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 Update the photo for the specified contact, group, team, or user in a tenant. The size of the photo you can update to must be under 8 MB.
 
 Due to the current limit of 4 MB on the total size of each REST request, the size of the photo you can add is also limited to 4 MB. 
-
 You can use either PATCH or PUT for this operation.
 
 ## Permissions
