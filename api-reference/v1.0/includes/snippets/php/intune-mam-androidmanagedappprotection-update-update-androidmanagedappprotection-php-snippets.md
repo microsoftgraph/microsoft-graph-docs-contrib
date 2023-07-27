@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AndroidManagedAppProtection();
-$requestBody->set@odatatype('#microsoft.graph.androidManagedAppProtection');
+$requestBody->setOdataType('#microsoft.graph.androidManagedAppProtection');
 
 $requestBody->setDisplayName('Display Name value');
 
@@ -22,13 +22,13 @@ $requestBody->setPeriodOfflineBeforeAccessCheck(new \DateInterval('-PT17.1357909
 
 $requestBody->setPeriodOnlineBeforeAccessCheck(new \DateInterval('PT35.0018757S'));
 
-$requestBody->setAllowedInboundDataTransferSources(new ManagedAppDataTransferLevel('managedapps'));
+$requestBody->setAllowedInboundDataTransferSources(new ManagedAppDataTransferLevel('managedApps'));
 
-$requestBody->setAllowedOutboundDataTransferDestinations(new ManagedAppDataTransferLevel('managedapps'));
+$requestBody->setAllowedOutboundDataTransferDestinations(new ManagedAppDataTransferLevel('managedApps'));
 
 $requestBody->setOrganizationalCredentialsRequired(true);
 
-$requestBody->setAllowedOutboundClipboardSharingLevel(new ManagedAppClipboardSharingLevel('managedappswithpastein'));
+$requestBody->setAllowedOutboundClipboardSharingLevel(new ManagedAppClipboardSharingLevel('managedAppsWithPasteIn'));
 
 $requestBody->setDataBackupBlocked(true);
 
@@ -48,12 +48,11 @@ $requestBody->setSimplePinBlocked(true);
 
 $requestBody->setMinimumPinLength(0);
 
-$requestBody->setPinCharacterSet(new ManagedAppPinCharacterSet('alphanumericandsymbol'));
+$requestBody->setPinCharacterSet(new ManagedAppPinCharacterSet('alphanumericAndSymbol'));
 
 $requestBody->setPeriodBeforePinReset(new \DateInterval('PT3M29.6631862S'));
 
-$requestBody->setAllowedDataStorageLocations([$requestBody->setManagedAppDataStorageLocation(new ManagedAppDataStorageLocation('sharepoint'));
-]);
+$requestBody->setAllowedDataStorageLocations([new ManagedAppDataStorageLocation('sharePoint'),	]);
 
 $requestBody->setContactSyncBlocked(true);
 
@@ -71,7 +70,7 @@ $requestBody->setMinimumRequiredAppVersion('Minimum Required App Version value')
 
 $requestBody->setMinimumWarningAppVersion('Minimum Warning App Version value');
 
-$requestBody->setManagedBrowser(new ManagedBrowserType('microsoftedge'));
+$requestBody->setManagedBrowser(new ManagedBrowserType('microsoftEdge'));
 
 $requestBody->setIsAssigned(true);
 
