@@ -7,18 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Call();
-$requestBody->set@odatatype('#microsoft.graph.call');
+$requestBody->setOdataType('#microsoft.graph.call');
 
 $requestBody->setCallbackUri('https://bot.contoso.com/callback');
 
-$requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
-]);
+$requestBody->setRequestedModalities([new Modality('audio'),	]);
 
 $mediaConfig = new ServiceHostedMediaConfig();
-$mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
+$mediaConfig->setOdataType('#microsoft.graph.serviceHostedMediaConfig');
 
 $preFetchMediaMediaInfo1 = new MediaInfo();
 $preFetchMediaMediaInfo1->setUri('https://cdn.contoso.com/beep.wav');
@@ -40,7 +39,7 @@ $mediaConfig->setPreFetchMedia($preFetchMediaArray);
 
 $requestBody->setMediaConfig($mediaConfig);
 $chatInfo = new ChatInfo();
-$chatInfo->set@odatatype('#microsoft.graph.chatInfo');
+$chatInfo->setOdataType('#microsoft.graph.chatInfo');
 
 $chatInfo->setThreadId('19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2');
 
@@ -49,20 +48,20 @@ $chatInfo->setMessageId('0');
 
 $requestBody->setChatInfo($chatInfo);
 $meetingInfo = new OrganizerMeetingInfo();
-$meetingInfo->set@odatatype('#microsoft.graph.organizerMeetingInfo');
+$meetingInfo->setOdataType('#microsoft.graph.organizerMeetingInfo');
 
 $meetingInfoOrganizer = new IdentitySet();
-$meetingInfoOrganizer->set@odatatype('#microsoft.graph.identitySet');
+$meetingInfoOrganizer->setOdataType('#microsoft.graph.identitySet');
 
 $meetingInfoOrganizerUser = new Identity();
-$meetingInfoOrganizerUser->set@odatatype('#microsoft.graph.identity');
+$meetingInfoOrganizerUser->setOdataType('#microsoft.graph.identity');
 
 $meetingInfoOrganizerUser->setId('5810cede-f3cc-42eb-b2c1-e9bd5d53ec96');
 
 $meetingInfoOrganizerUser->setDisplayName('Bob');
 
 $additionalData = [
-'tenantId' => '9f386a15-f9cc-445b-8106-ac85e314a07b', 
+	'tenantId' => '9f386a15-f9cc-445b-8106-ac85e314a07b', 
 ];
 $meetingInfoOrganizerUser->setAdditionalData($additionalData);
 
