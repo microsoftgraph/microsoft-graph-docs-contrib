@@ -157,7 +157,7 @@ Authorization: bearer {{accessToken}}
 
 >[!NOTE]
 >- {{connectorId}} is the value of the **id** property in the manifest. For details, see [App manifest schema for Teams](/microsoftteams/platform/resources/schema/manifest-schema).
->- You should acquire the {{accessToken}} from the [Microsoft Identity Platform (Azure Active Directory)](/azure/active-directory/develop/v2-app-types) for the tenant that it is being notified.
+>- You should acquire the {{accessToken}} from the [Microsoft identity platform (Azure Active Directory)](/azure/active-directory/develop/v2-app-types) for the tenant that is being notified.
 
 ### Response
 ```
