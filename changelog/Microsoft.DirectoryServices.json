@@ -51,7 +51,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedPrincipalTypes",
           "ChangeType": "Addition",
-          "Description": "Added the `allowedPrincipalTypes` property to the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource.",
+          "Description": "Added the **allowedPrincipalTypes** property to the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleDefinition"
         }
       ],
