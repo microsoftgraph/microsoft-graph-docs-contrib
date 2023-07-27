@@ -112,7 +112,7 @@ A Microsoft 365 administrator can approve or deny consent requests. This can be 
 
 1. Go to the sidebar navigation menu and click **Storage browser**, then select **Blob containers**. From there, choose the specific container that you created in this tutorial, which you configured as the destination for the extracted data in the Azure Data Factory pipeline. You should be able to see the data stored within this container.
 
-# [PAM PowerShell](#tab/PAMPowerShell)
+# [PAM: PowerShell](#tab/PAMPowerShell)
 
 1. Open Windows PowerShell.
 1. Ensure that your PowerShell session has enabled remotely signed scripts.

@@ -24,10 +24,6 @@ In this tutorial, you'll create your first single-tenant Data Connect applicatio
 
 ![A screenshot that explains the onboarding flow.](../concepts/images/data-connect-overview-flowchart.png)
 
->**Note** For existing tenants who already have Microsoft Graph Data Connect enabled and want to use this tutorial: please notify your global adminstrator toggle Microsoft Graph Data Connect off and then on again in the [admin portal](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan) to be able to follow this tutorial flow. For new customers who have not yet toggled Microsoft Graph Data Connect on, please follow the steps in this tutorial below. No extra action is required from you.
-
->**Note** For reference, we have left guidance for our former consent process involve Privileged Access Management (PAM) in sections of our tutorial as tabs. We highly recommend following our new consent flow for a more simplified onboarding process.
-
 1. **Admin enables Data Connect:** The first step in onboarding is for your global administrator to [enable Data Connect](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan).
 
 2. **Developer creates a new Azure Active Directory application:** The developer needs to first create a new Azure Active Directory (Azure AD) application.
@@ -37,6 +33,11 @@ In this tutorial, you'll create your first single-tenant Data Connect applicatio
 4. **Admin approves the application:** After the developer has registered their application with Data Connect, the global administrator can use the new portal for [Data Connect application consent](https://admin.microsoft.com/adminportal/home#/Settings/MGDCAdminCenter) to review the registered application and approve it.
 
 5. **Developer runs their pipelines:** After the administrator has consented to the application, the developer might run their pipelines without any stalling for runtime consent. The pipeline creation and run via Azure Data Factory or Azure Synapse remains the same.  
+
+>**Note** For existing tenants who already have Microsoft Graph Data Connect enabled and want to use this tutorial: please notify your global adminstrator toggle Microsoft Graph Data Connect off and then on again in the [admin portal](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan) to be able to follow this tutorial flow. For new customers who have not yet toggled Microsoft Graph Data Connect on, please follow the steps in this tutorial below. No extra action is required from you.
+
+>**Note** For reference, we have left guidance for our former consent process involving Privileged Access Management (PAM) in sections of our tutorial as tabs. We highly recommend following our new consent flow for a more simplified onboarding process.
+
 
 ### Prerequisites
 

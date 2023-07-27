@@ -25,7 +25,7 @@ This step describes how you enable the Data Connect service on your Microsoft 36
 
 5. Congratulations! You've just enabled Microsoft Graph Data Connect for your organization.
 
-## [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](#tab/PAMConsentFlow)
+## [PAM: Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](#tab/PAMConsentFlow)
 This page goes over the steps for our former consent flow involving the Priviledged Access Management (PAM). We recommend new and current customers to refer to our newer consent flow on the previous tab.
 
 Before using Microsoft Graph Data Connect for the first time, you will need to configure your Microsoft 365 tenant. This involves turning on the service and configuring a security group with permissions to approve data extraction requests.
