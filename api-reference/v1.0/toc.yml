@@ -1,4 +1,3 @@
-name: Reference
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
@@ -183,6 +182,18 @@ items:
             href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
           - name: App-only authentication
             href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+      - name: Use the CLI (preview)
+        items:
+          - name: CLI overview
+            href: /graph/cli/overview?context=graph/api/1.0
+          - name: Install the CLI
+            href: /graph/cli/installation?context=graph/api/1.0
+          - name: Get started
+            href: /graph/cli/get-started?context=graph/api/1.0
+          - name: Navigate the CLI
+            href: /graph/cli/navigating?context=graph/api/1.0
+          - name: App-only authentication
+            href: /graph/cli/app-only?context=graph/api/1.0
   - name: Use the toolkit
     items:
       - name: Overview
@@ -286,7 +297,7 @@ items:
           - name: Disambiguation of components
             href: /graph/toolkit/customize-components/disambiguation?context=graph/api/1.0
       - name: Upgrading to v3
-        href: /graph/toolkit/upgrade.md?context=graph/api/1.0
+        href: /graph/toolkit/upgrade?context=graph/api/1.0
   - name: Configure Connected Services
     displayName: Configure Connected Services in Visual Studio
     href: /graph/office-365-connected-services?context=graph/api/1.0
@@ -296,7 +307,7 @@ items:
         href: /graph/best-practices-concept?context=graph/api/1.0
         displayName: Microsoft Graph, Best practices for working with Microsoft Graph
       - name: Known issues
-        href: /graph/known-issues?context=graph/api/1.0
+        href: https://developer.microsoft.com/graph/known-issues
         displayName: Microsoft Graph, Known issues with Microsoft Graph
       - name: API changelog
         href: https://developer.microsoft.com/graph/changelog
@@ -1161,8 +1172,69 @@ items:
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remove
                         href: api/application-delete-tokenlifetimepolicies.md
+          - name: Synchronization
+            items:
+              - name: Overview
+                href: resources/synchronization-overview.md
+              - name: Synchronization
+                href: resources/synchronization-synchronization.md
+                items:
+                  - name: Acquire access token
+                    href: api/synchronization-synchronization-acquireaccesstoken.md
+                  - name: Add secrets
+                    href: api/synchronization-serviceprincipal-put-synchronization.md
+              - name: Job
+                href: resources/synchronization-synchronizationjob.md
+                items:
+                  - name: List
+                    href: api/synchronization-synchronization-list-jobs.md
+                  - name: Create
+                    href: api/synchronization-synchronization-post-jobs.md
+                  - name: Get
+                    href: api/synchronization-synchronizationjob-get.md
+                  - name: Start
+                    href: api/synchronization-synchronizationjob-start.md
+                  - name: Pause
+                    href: api/synchronization-synchronizationjob-pause.md
+                  - name: Restart
+                    href: api/synchronization-synchronizationjob-restart.md
+                  - name: Delete
+                    href: api/synchronization-synchronizationjob-delete.md
+                  - name: Provision on demand
+                    href: api/synchronization-synchronizationjob-provisionondemand.md
+                  - name: Validate credentials
+                    href: api/synchronization-synchronizationjob-validatecredentials.md
+              - name: Schema
+                href: resources/synchronization-synchronizationschema.md
+                items:
+                  - name: Get schema
+                    href: api/synchronization-synchronizationschema-get.md
+                  - name: Get schema functions
+                    href: api/synchronization-synchronizationschema-functions.md
+                  - name: Get schema filter operators
+                    href: api/synchronization-synchronizationschema-filteroperators.md
+                  - name: Update schema
+                    href: api/synchronization-synchronizationschema-update.md
+                  - name: Reset schema
+                    href: api/synchronization-synchronizationschema-delete.md
+                  - name: Parse attribute mapping expression
+                    href: api/synchronization-synchronizationschema-parseexpression.md
+                  - name: Directory definition
+                    href: resources/synchronization-directorydefinition.md
+                    items:
+                      - name: Discover
+                        href: api/synchronization-directorydefinition-discover.md
+              - name: Template
+                href: resources/synchronization-synchronizationtemplate.md
+                items:
+                  - name: List
+                    href: api/synchronization-synchronization-list-templates.md
+                  - name: Get
+                    href: api/synchronization-synchronizationtemplate-get.md
+                  - name: Update
+                    href: api/synchronization-synchronizationtemplate-update.md
       - name: Calendars
-        displayname: Outlook calendar
+        displayName: Outlook calendar
         items:
           - name: Calendar
             href: resources/calendar.md
@@ -1843,19 +1915,6 @@ items:
                         href: api/intune-books-ebookinstallsummary-get.md
                       - name: Update
                         href: api/intune-books-ebookinstallsummary-update.md
-                  - name: Enterprise code signing certificate
-                    href: resources/intune-apps-enterprisecodesigningcertificate.md
-                    items:
-                      - name: List
-                        href: api/intune-apps-enterprisecodesigningcertificate-list.md
-                      - name: Get
-                        href: api/intune-apps-enterprisecodesigningcertificate-get.md
-                      - name: Create
-                        href: api/intune-apps-enterprisecodesigningcertificate-create.md
-                      - name: Delete
-                        href: api/intune-apps-enterprisecodesigningcertificate-delete.md
-                      - name: Update
-                        href: api/intune-apps-enterprisecodesigningcertificate-update.md
                   - name: File encryption info
                     href: resources/intune-apps-fileencryptioninfo.md
                   - name: Install state
@@ -1875,19 +1934,6 @@ items:
                         href: api/intune-apps-ioslobapp-delete.md
                       - name: Update
                         href: api/intune-apps-ioslobapp-update.md
-                  - name: iOS LOB app provisioning configuration assignment
-                    href: resources/intune-apps-ioslobappprovisioningconfigurationassignment.md
-                    items:
-                      - name: List
-                        href: api/intune-apps-ioslobappprovisioningconfigurationassignment-list.md
-                      - name: Get
-                        href: api/intune-apps-ioslobappprovisioningconfigurationassignment-get.md
-                      - name: Create
-                        href: api/intune-apps-ioslobappprovisioningconfigurationassignment-create.md
-                      - name: Delete
-                        href: api/intune-apps-ioslobappprovisioningconfigurationassignment-delete.md
-                      - name: Update
-                        href: api/intune-apps-ioslobappprovisioningconfigurationassignment-update.md
                   - name: iOS LOB app assignment settings
                     href: resources/intune-apps-ioslobappassignmentsettings.md
                   - name: iOS minimum operating system
@@ -1961,7 +2007,7 @@ items:
                         href: api/intune-books-iosvppebookassignment-delete.md
                       - name: Update
                         href: api/intune-books-iosvppebookassignment-update.md
-                  - name: iOS ipad os web clip
+                  - name: iOSi pad os web clip
                     href: resources/intune-apps-iosipadoswebclip.md
                     items:
                       - name: List
@@ -1991,6 +2037,19 @@ items:
                     href: resources/intune-apps-macoslobappassignmentsettings.md
                   - name: macOS LOB child app
                     href: resources/intune-apps-macoslobchildapp.md
+                  - name: macOS microsoft defender app
+                    href: resources/intune-apps-macosmicrosoftdefenderapp.md
+                    items:
+                      - name: List
+                        href: api/intune-apps-macosmicrosoftdefenderapp-list.md
+                      - name: Get
+                        href: api/intune-apps-macosmicrosoftdefenderapp-get.md
+                      - name: Create
+                        href: api/intune-apps-macosmicrosoftdefenderapp-create.md
+                      - name: Delete
+                        href: api/intune-apps-macosmicrosoftdefenderapp-delete.md
+                      - name: Update
+                        href: api/intune-apps-macosmicrosoftdefenderapp-update.md
                   - name: macOS microsoft edge app
                     href: resources/intune-apps-macosmicrosoftedgeapp.md
                     items:
@@ -3537,6 +3596,25 @@ items:
                     href: resources/intune-devices-devicegeolocation.md
                   - name: Device health attestation state
                     href: resources/intune-devices-devicehealthattestationstate.md
+                  - name: Device log collection request
+                    href: resources/intune-devices-devicelogcollectionrequest.md
+                  - name: Device log collection response
+                    href: resources/intune-devices-devicelogcollectionresponse.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-devicelogcollectionresponse-list.md
+                      - name: Get
+                        href: api/intune-devices-devicelogcollectionresponse-get.md
+                      - name: Create
+                        href: api/intune-devices-devicelogcollectionresponse-create.md
+                      - name: Delete
+                        href: api/intune-devices-devicelogcollectionresponse-delete.md
+                      - name: Update
+                        href: api/intune-devices-devicelogcollectionresponse-update.md
+                      - name: createDownloadUrl action
+                        href: api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
+                  - name: Device log collection template type
+                    href: resources/intune-devices-devicelogcollectiontemplatetype.md
                   - name: Device management
                     href: resources/intune-auditing-devicemanagement.md
                     items:
@@ -3572,6 +3650,10 @@ items:
                     href: resources/intune-devices-deviceregistrationstate.md
                   - name: Disk type
                     href: resources/intune-devices-disktype.md
+                  - name: Insight value double
+                    href: resources/intune-devices-insightvaluedouble.md
+                  - name: Insight value int
+                    href: resources/intune-devices-insightvalueint.md
                   - name: Localized notification message
                     href: resources/intune-notification-localizednotificationmessage.md
                     items:
@@ -3613,6 +3695,8 @@ items:
                         href: api/intune-devices-manageddevice-delete.md
                       - name: Update
                         href: api/intune-devices-manageddevice-update.md
+                      - name: createDeviceLogCollectionRequest action
+                        href: api/intune-devices-manageddevice-createdevicelogcollectionrequest.md
                       - name: retire action
                         href: api/intune-devices-manageddevice-retire.md
                       - name: wipe action
@@ -3692,6 +3776,10 @@ items:
                         href: api/intune-notification-notificationmessagetemplate-sendtestmessage.md
                   - name: Notification template branding options
                     href: resources/intune-notification-notificationtemplatebrandingoptions.md
+                  - name: Obliteration behavior
+                    href: resources/intune-devices-obliterationbehavior.md
+                  - name: Operating system upgrade eligibility
+                    href: resources/intune-devices-operatingsystemupgradeeligibility.md
                   - name: Os version count
                     href: resources/intune-devices-osversioncount.md
                   - name: Remote lock action result
@@ -3715,8 +3803,187 @@ items:
                         href: api/intune-devices-user-update.md
                       - name: removeAllDevicesFromManagement action
                         href: api/intune-devices-user-removealldevicesfrommanagement.md
+                  - name: User experience analytics app health app performance by app version details
+                    href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails-get.md
+                  - name: User experience analytics app health app performance by app version device id
+                    href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-get.md
+                  - name: User experience analytics app health app performance by o s version
+                    href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-get.md
+                  - name: User experience analytics app health application performance
+                    href: resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-get.md
+                  - name: User experience analytics app health device model performance
+                    href: resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-get.md
+                  - name: User experience analytics app health device performance
+                    href: resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-get.md
+                  - name: User experience analytics app health device performance details
+                    href: resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-get.md
+                  - name: User experience analytics app health o s version performance
+                    href: resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-get.md
+                  - name: User experience analytics autopilot devices summary
+                    href: resources/intune-devices-userexperienceanalyticsautopilotdevicessummary.md
+                  - name: User experience analytics baseline
+                    href: resources/intune-devices-userexperienceanalyticsbaseline.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsbaseline-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsbaseline-get.md
+                  - name: User experience analytics category
+                    href: resources/intune-devices-userexperienceanalyticscategory.md
+                    items:
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticscategory-get.md
+                  - name: User experience analytics cloud identity devices summary
+                    href: resources/intune-devices-userexperienceanalyticscloudidentitydevicessummary.md
+                  - name: User experience analytics cloud management devices summary
+                    href: resources/intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md
+                  - name: User experience analytics device performance
+                    href: resources/intune-devices-userexperienceanalyticsdeviceperformance.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsdeviceperformance-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsdeviceperformance-get.md
+                      - name: summarizeDevicePerformanceDevices
+                        href: api/intune-devices-userexperienceanalyticsdeviceperformance-summarizedeviceperformancedevices.md
+                  - name: User experience analytics device scores
+                    href: resources/intune-devices-userexperienceanalyticsdevicescores.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsdevicescores-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsdevicescores-get.md
+                  - name: User experience analytics device startup history
+                    href: resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsdevicestartuphistory-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsdevicestartuphistory-get.md
+                  - name: User experience analytics device startup process
+                    href: resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsdevicestartupprocess-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsdevicestartupprocess-get.md
                   - name: User experience analytics health state
                     href: resources/intune-devices-userexperienceanalyticshealthstate.md
+                  - name: User experience analytics insight
+                    href: resources/intune-devices-userexperienceanalyticsinsight.md
+                  - name: User experience analytics insight severity
+                    href: resources/intune-devices-userexperienceanalyticsinsightseverity.md
+                  - name: User experience analytics insight value
+                    href: resources/intune-devices-userexperienceanalyticsinsightvalue.md
+                  - name: User experience analytics metric
+                    href: resources/intune-devices-userexperienceanalyticsmetric.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsmetric-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsmetric-get.md
+                  - name: User experience analytics metric history
+                    href: resources/intune-devices-userexperienceanalyticsmetrichistory.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsmetrichistory-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsmetrichistory-get.md
+                  - name: User experience analytics model scores
+                    href: resources/intune-devices-userexperienceanalyticsmodelscores.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsmodelscores-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsmodelscores-get.md
+                  - name: User experience analytics operating system restart category
+                    href: resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md
+                  - name: User experience analytics overview
+                    href: resources/intune-devices-userexperienceanalyticsoverview.md
+                    items:
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsoverview-get.md
+                  - name: User experience analytics score history
+                    href: resources/intune-devices-userexperienceanalyticsscorehistory.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsscorehistory-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsscorehistory-get.md
+                  - name: User experience analytics settings
+                    href: resources/intune-devices-userexperienceanalyticssettings.md
+                  - name: User experience analytics summarized by
+                    href: resources/intune-devices-userexperienceanalyticssummarizedby.md
+                  - name: User experience analytics Windows 10 devices summary
+                    href: resources/intune-devices-userexperienceanalyticswindows10devicessummary.md
+                  - name: User experience analytics work from anywhere device
+                    href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-get.md
+                  - name: User experience analytics work from anywhere devices summary
+                    href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md
+                  - name: User experience analytics work from anywhere hardware readiness metric
+                    href: resources/intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md
+                    items:
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric-get.md
+                  - name: User experience analytics work from anywhere metric
+                    href: resources/intune-devices-userexperienceanalyticsworkfromanywheremetric.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-get.md
+                  - name: User experience analytics work from anywhere model performance
+                    href: resources/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md
+                    items:
+                      - name: List
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-list.md
+                      - name: Get
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-get.md
                   - name: Windows defender product status
                     href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Windows defender scan action result
@@ -4458,7 +4725,6 @@ items:
                   - name: VPP token account type
                     href: resources/intune-shared-vpptokenaccounttype.md
               - name: Telecom expenses
-                href: resources/intune-tem-conceptual.md
                 items:
                   - name: Device management
                     href: resources/intune-tem-devicemanagement.md
@@ -4467,19 +4733,7 @@ items:
                         href: api/intune-tem-devicemanagement-get.md
                       - name: Update
                         href: api/intune-tem-devicemanagement-update.md
-                  - name: Telecom expense management partner
-                    href: resources/intune-tem-telecomexpensemanagementpartner.md
-                    items:
-                      - name: List
-                        href: api/intune-tem-telecomexpensemanagementpartner-list.md
-                      - name: Get
-                        href: api/intune-tem-telecomexpensemanagementpartner-get.md
-                      - name: Create
-                        href: api/intune-tem-telecomexpensemanagementpartner-create.md
-                      - name: Delete
-                        href: api/intune-tem-telecomexpensemanagementpartner-delete.md
-                      - name: Update
-                        href: api/intune-tem-telecomexpensemanagementpartner-update.md
+
           - name: Service health and communications
             items:
               - name: Overview
@@ -5115,6 +5369,13 @@ items:
                     href: api/domain-verify.md
                   - name: Promote domain
                     href: api/domain-promote.md
+              - name: On-premises directory synchronization
+                href: resources/onpremisesdirectorysynchronization.md
+                items:
+                  - name: Get
+                    href: api/onpremisesdirectorysynchronization-get.md
+                  - name: Update
+                    href: api/onpremisesdirectorysynchronization-update.md
               - name: Organization
                 href: resources/organization.md
                 items:
@@ -5193,6 +5454,13 @@ items:
                     href: api/onpremisesdirectorysynchronization-get.md
                   - name: Update
                     href: api/onpremisesdirectorysynchronization-update.md
+              - name: Tenant information
+                href: resources/tenantinformation.md
+                items:
+                - name: Find tenant by domain name
+                  href: api/tenantrelationship-findtenantinformationbydomainname.md
+                - name: Find tenant by tenant ID
+                  href: api/tenantrelationship-findtenantinformationbytenantid.md
           - name: Governance
             href: resources/identitygovernance-overview.md
             displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
@@ -5394,6 +5662,8 @@ items:
                         href: api/accesspackageassignmentrequest-cancel.md
                       - name: Reprocess
                         href: api/accesspackageassignmentrequest-reprocess.md
+                      - name: Resume
+                        href: api/accesspackageassignmentrequest-resume.md  
                   - name: Access package catalog
                     href: resources/accesspackagecatalog.md
                     items:
@@ -5407,6 +5677,35 @@ items:
                         href: api/accesspackagecatalog-update.md
                       - name: Delete
                         href: api/accesspackagecatalog-delete.md
+                  - name: Access package custom workflow extension
+                    displayName: Custom authentication extensions
+                    items:
+                    - name: Assignment request workflow extension
+                      href: resources/accesspackageassignmentrequestworkflowextension.md
+                      items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
+                      - name: Create
+                        href: api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
+                      - name: Get
+                        href: api/accesspackageassignmentrequestworkflowextension-get.md
+                      - name: Update
+                        href: api/accesspackageassignmentrequestworkflowextension-update.md
+                      - name: Delete
+                        href: api/accesspackageassignmentrequestworkflowextension-delete.md
+                  - name: Assignment workflow extension
+                    href: resources/accesspackageassignmentworkflowextension.md
+                    items:
+                    - name: List
+                      href: api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
+                    - name: Create
+                      href: api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
+                    - name: Get
+                      href: api/accesspackageassignmentworkflowextension-get.md
+                    - name: Update
+                      href: api/accesspackageassignmentworkflowextension-update.md
+                    - name: Delete
+                      href: api/accesspackageassignmentworkflowextension-delete.md
                   - name: Connected organization
                     href: resources/connectedorganization.md
                     items:
@@ -5439,145 +5738,6 @@ items:
                         href: api/entitlementmanagementsettings-get.md
                       - name: Update
                         href: api/entitlementmanagementsettings-update.md
-                  - name: Lifecycle workflows
-                    displayName: LCW, Identity Governance, Joiner, Mover, Leaver
-                    items:
-                      - name: Overview
-                        href: resources/identitygovernance-lifecycleworkflows-overview.md
-                      - name: Workflow
-                        items:
-                          - name: Workflow
-                            href: resources/identitygovernance-workflow.md
-                          - name: List
-                            href: api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md
-                          - name: Create
-                            href: api/identitygovernance-lifecycleworkflowscontainer-post-workflows.md
-                          - name: Get
-                            href: api/identitygovernance-workflow-get.md
-                          - name: Update
-                            href: api/identitygovernance-workflow-update.md
-                          - name: Delete
-                            href: api/identitygovernance-workflow-delete.md
-                          - name: List users in scope
-                            href: api/workflow-list-executionscope.md
-                          - name: List deleted workflows
-                            href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
-                          - name: Get a deleted workflow
-                            href: api/identitygovernance-deleteditemcontainer-get.md
-                          - name: Permanently delete a workflow
-                            href: api/identitygovernance-deletedItemcontainer-delete.md
-                          - name: Restore
-                            href: api/identitygovernance-workflow-restore.md
-                          - name: Activate (run on-demand)
-                            href: api/identitygovernance-workflow-activate.md
-                          - name: Workflow version
-                            items:
-                              - name: Workflow version
-                                href: resources/identitygovernance-workflowversion.md
-                              - name: List
-                                href: api/identitygovernance-workflow-list-versions.md
-                              - name: Get
-                                href: api/identitygovernance-workflowversion-get.md
-                              - name: Create
-                                href: api/identitygovernance-workflow-createnewversion.md
-                              - name: List tasks for a workflow version
-                                href: api/identitygovernance-workflowversion-list-tasks.md
-                              - name: Get task for a workflow version
-                                href: api/identitygovernance-task-get.md
-                          - name: Workflow task
-                            items:
-                              - name: Workflow task
-                                href: resources/identitygovernance-task.md
-                              - name: List tasks
-                                href: api/identitygovernance-workflow-list-task.md
-                              - name: Get task
-                                href: api/identitygovernance-task-get.md
-                              - name: Update task
-                                href: api/identitygovernance-task-update.md
-                          - name: Reports
-                            displayName: Lifecycle Workflows
-                            items:
-                              - name: Overview
-                                displayName: Lifecycle Workflows reporting
-                                href: resources/identitygovernance-lifecycleworkflows-reporting-overview.md
-                              - name: User processing results
-                                href: resources/identitygovernance-userprocessingresult.md
-                                items:
-                                  - name: List user processing results
-                                    href: api/identitygovernance-workflow-list-userprocessingresults.md
-                                  - name: Get user processing result
-                                    href: api/identitygovernance-userprocessingresult-get.md
-                                  - name: Get summary
-                                    href: api/identitygovernance-userprocessingresult-summary.md
-                                  - name: List task processing results
-                                    href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
-                              - name: Task report
-                                href: resources/identitygovernance-taskreport.md
-                                items:
-                                  - name: List task reports
-                                    href: api/identitygovernance-workflow-list-taskreports.md
-                                  - name: Get summary
-                                    href: api/identitygovernance-taskreport-summary.md
-                                  - name: List task processing results
-                                    href: api/identitygovernance-taskreport-list-taskprocessingresults.md
-                              - name: Workflow run
-                                items:
-                                  - name: Run
-                                    href: resources/identitygovernance-run.md
-                                  - name: List runs
-                                    href: api/identitygovernance-workflow-list-runs.md
-                                  - name: Get runs
-                                    href: api/identitygovernance-run-get.md
-                                  - name: Get summary
-                                    href: api/identitygovernance-run-summary.md
-                                  - name: List task processing results
-                                    href: api/identitygovernance-run-list-taskprocessingresults.md
-                                  - name: List user processing results
-                                    href: api/identitygovernance-run-list-userprocessingresults.md
-                              - name: Task processing result
-                                items:
-                                  - name: Task processing result
-                                    href: resources/identitygovernance-taskprocessingresult.md
-                                  - name: Resume
-                                    href: api/identitygovernance-taskprocessingresult-resume.md
-                      - name: Workflow template
-                        items:
-                          - name: Workflow template
-                            href: resources/identitygovernance-workflowtemplate.md
-                          - name: List
-                            href: api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md
-                          - name: Get
-                            href: api/identitygovernance-workflowtemplate-get.md
-                      - name: Task definition
-                        items:
-                          - name: Task definition
-                            href: resources/identitygovernance-taskdefinition.md
-                          - name: List
-                            href: api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
-                          - name: Get
-                            href: api/identitygovernance-taskdefinition-get.md
-                      - name: Custom task extension
-                        items:
-                          - name: Custom task extension
-                            href: resources/identitygovernance-customtaskextension.md
-                          - name: List
-                            href: api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions.md
-                          - name: Get
-                            href: api/identitygovernance-customtaskextension-get.md
-                          - name: Create
-                            href: api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions.md
-                          - name: Update
-                            href: api/identitygovernance-customtaskextension-update.md
-                          - name: Delete
-                            href: api/identitygovernance-customtaskextension-delete.md
-                      - name: Settings
-                        items:
-                          - name: Lifecycle management settings
-                            href: resources/identitygovernance-lifecyclemanagementsettings.md
-                          - name: Get
-                            href: api/identitygovernance-lifecyclemanagementsettings-get.md
-                          - name: Update
-                            href: api/identitygovernance-lifecyclemanagementsettings-update.md
                   - name: Access package assignment policy
                     href: resources/accesspackageassignmentpolicy.md
                     items:
@@ -5591,6 +5751,145 @@ items:
                         href: api/accesspackageassignmentpolicy-update.md
                       - name: Delete
                         href: api/accesspackageassignmentpolicy-delete.md
+              - name: Lifecycle workflows
+                displayName: LCW, Identity Governance, Joiner, Mover, Leaver
+                items:
+                  - name: Overview
+                    href: resources/identitygovernance-lifecycleworkflows-overview.md
+                  - name: Workflow
+                    items:
+                      - name: Workflow
+                        href: resources/identitygovernance-workflow.md
+                      - name: List
+                        href: api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md
+                      - name: Create
+                        href: api/identitygovernance-lifecycleworkflowscontainer-post-workflows.md
+                      - name: Get
+                        href: api/identitygovernance-workflow-get.md
+                      - name: Update
+                        href: api/identitygovernance-workflow-update.md
+                      - name: Delete
+                        href: api/identitygovernance-workflow-delete.md
+                      - name: List users in scope
+                        href: api/workflow-list-executionscope.md
+                      - name: List deleted workflows
+                        href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
+                      - name: Get a deleted workflow
+                        href: api/identitygovernance-deleteditemcontainer-get.md
+                      - name: Permanently delete a workflow
+                        href: api/identitygovernance-deletedItemcontainer-delete.md
+                      - name: Restore
+                        href: api/identitygovernance-workflow-restore.md
+                      - name: Activate (run on-demand)
+                        href: api/identitygovernance-workflow-activate.md
+                      - name: Workflow version
+                        items:
+                          - name: Workflow version
+                            href: resources/identitygovernance-workflowversion.md
+                          - name: List
+                            href: api/identitygovernance-workflow-list-versions.md
+                          - name: Get
+                            href: api/identitygovernance-workflowversion-get.md
+                          - name: Create
+                            href: api/identitygovernance-workflow-createnewversion.md
+                          - name: List tasks for a workflow version
+                            href: api/identitygovernance-workflowversion-list-tasks.md
+                          - name: Get task for a workflow version
+                            href: api/identitygovernance-task-get.md
+                      - name: Workflow task
+                        items:
+                          - name: Workflow task
+                            href: resources/identitygovernance-task.md
+                          - name: List tasks
+                            href: api/identitygovernance-workflow-list-task.md
+                          - name: Get task
+                            href: api/identitygovernance-task-get.md
+                          - name: Update task
+                            href: api/identitygovernance-task-update.md
+                      - name: Reports
+                        displayName: Lifecycle Workflows
+                        items:
+                          - name: Overview
+                            displayName: Lifecycle Workflows reporting
+                            href: resources/identitygovernance-lifecycleworkflows-reporting-overview.md
+                          - name: User processing results
+                            href: resources/identitygovernance-userprocessingresult.md
+                            items:
+                              - name: List user processing results
+                                href: api/identitygovernance-workflow-list-userprocessingresults.md
+                              - name: Get user processing result
+                                href: api/identitygovernance-userprocessingresult-get.md
+                              - name: Get summary
+                                href: api/identitygovernance-userprocessingresult-summary.md
+                              - name: List task processing results
+                                href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
+                          - name: Task report
+                            href: resources/identitygovernance-taskreport.md
+                            items:
+                              - name: List task reports
+                                href: api/identitygovernance-workflow-list-taskreports.md
+                              - name: Get summary
+                                href: api/identitygovernance-taskreport-summary.md
+                              - name: List task processing results
+                                href: api/identitygovernance-taskreport-list-taskprocessingresults.md
+                          - name: Workflow run
+                            items:
+                              - name: Run
+                                href: resources/identitygovernance-run.md
+                              - name: List runs
+                                href: api/identitygovernance-workflow-list-runs.md
+                              - name: Get runs
+                                href: api/identitygovernance-run-get.md
+                              - name: Get summary
+                                href: api/identitygovernance-run-summary.md
+                              - name: List task processing results
+                                href: api/identitygovernance-run-list-taskprocessingresults.md
+                              - name: List user processing results
+                                href: api/identitygovernance-run-list-userprocessingresults.md
+                          - name: Task processing result
+                            items:
+                              - name: Task processing result
+                                href: resources/identitygovernance-taskprocessingresult.md
+                              - name: Resume
+                                href: api/identitygovernance-taskprocessingresult-resume.md
+                  - name: Workflow template
+                    items:
+                      - name: Workflow template
+                        href: resources/identitygovernance-workflowtemplate.md
+                      - name: List
+                        href: api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md
+                      - name: Get
+                        href: api/identitygovernance-workflowtemplate-get.md
+                  - name: Task definition
+                    items:
+                      - name: Task definition
+                        href: resources/identitygovernance-taskdefinition.md
+                      - name: List
+                        href: api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
+                      - name: Get
+                        href: api/identitygovernance-taskdefinition-get.md
+                  - name: Custom task extension
+                    items:
+                      - name: Custom task extension
+                        href: resources/identitygovernance-customtaskextension.md
+                      - name: List
+                        href: api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions.md
+                      - name: Get
+                        href: api/identitygovernance-customtaskextension-get.md
+                      - name: Create
+                        href: api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions.md
+                      - name: Update
+                        href: api/identitygovernance-customtaskextension-update.md
+                      - name: Delete
+                        href: api/identitygovernance-customtaskextension-delete.md
+                  - name: Settings
+                    items:
+                      - name: Lifecycle management settings
+                        href: resources/identitygovernance-lifecyclemanagementsettings.md
+                      - name: Get
+                        href: api/identitygovernance-lifecyclemanagementsettings-get.md
+                      - name: Update
+                        href: api/identitygovernance-lifecyclemanagementsettings-update.md
               - name: Privileged Identity Management
                 displayName: Privileged Identity Management, PIM, Identity Governance
                 items:
@@ -5701,18 +6000,20 @@ items:
                         href: api/user-list-agreementacceptances.md
                       - name: List acceptance status
                         href: api/agreement-list-acceptances.md
-                  - name: Agreement files
+                  - name: Agreement file
                     items:
                       - name: Default agreement file
                         href: resources/agreementfile.md
-                      - name: Localized agreement files
+                      - name: Localized agreement file
                         href: resources/agreementfilelocalization.md
                       - name: Get default file
                         href: api/agreementfile-get.md
                       - name: Create localized files
                         href: api/agreement-post-files.md
-                      - name: List localized files
+                      - name: List files
                         href: api/agreement-list-files.md
+                      - name: List localized files
+                        href: api/agreementfile-list-localizations.md
           - name: Identity and sign-in
             items:
               - name: Authentication methods
@@ -6912,29 +7213,52 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
       - name: Reports
         items:
-          - name: Azure AD activity reports
+          - name: Identity and access reports
             items:
-              - name: Overview
-                href: resources/azure-ad-auditlog-overview.md
-              - name: Directory audit
-                href: resources/directoryaudit.md
-                items:
-                  - name: List directory audits
-                    href: api/directoryaudit-list.md
-                  - name: Get directory audit
-                    href: api/directoryaudit-get.md
-              - name: Sign-in
-                href: resources/signin.md
-                items:
-                  - name: List sign-ins
-                    href: api/signin-list.md
-                  - name: Get sign-in
-                    href: api/signin-get.md
-              - name: Provisioning
-                href: resources/provisioningobjectsummary.md
-                items:
-                  - name: List provisioning
-                    href: api/provisioningobjectsummary-list.md
+            - name: Azure AD activity reports
+              items:
+                - name: Registration and usage
+                  items:
+                    - name: User registration details
+                      href: resources/userregistrationdetails.md
+                      items:
+                        - name: List
+                          href: api/authenticationmethodsroot-list-userregistrationdetails.md
+                        - name: Get
+                          href: api/userregistrationdetails-get.md
+                    - name: Users registered by feature
+                      href: resources/userregistrationfeaturesummary.md
+                      items:
+                        - name: List
+                          href: api/authenticationmethodsroot-usersregisteredbyfeature.md
+                    - name: Users registered by method
+                      href: resources/userregistrationmethodsummary.md
+                      items:
+                        - name: List
+                          href: api/authenticationmethodsroot-usersregisteredbymethod.md
+            - name: Azure AD audit logs
+              items:
+                - name: Overview
+                  href: resources/azure-ad-auditlog-overview.md
+                - name: Directory audit
+                  href: resources/directoryaudit.md
+                  items:
+                    - name: List directory audits
+                      href: api/directoryaudit-list.md
+                    - name: Get directory audit
+                      href: api/directoryaudit-get.md
+                - name: Sign-in
+                  href: resources/signin.md
+                  items:
+                    - name: List sign-ins
+                      href: api/signin-list.md
+                    - name: Get sign-in
+                      href: api/signin-get.md
+                - name: Provisioning
+                  href: resources/provisioningobjectsummary.md
+                  items:
+                    - name: List provisioning
+                      href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 usage reports
             items:
               - name: Overview
@@ -7158,7 +7482,6 @@ items:
           - name: Microsoft Defender for Office 365 security reports
             items:
               - name: Attack simulation reports
-                displayname: Attack simulation and training
                 href: resources/report-m365defender-reports-overview.md
               - name: Repeat offender
                 items:
@@ -7179,7 +7502,6 @@ items:
                   - name: Get training coverage for users
                     href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
       - name: Search
-        displayname: Microsoft Search API
         items:
           - name: Query
             items:
@@ -7262,7 +7584,6 @@ items:
                   - name: Delete
                     href: api/externalconnectors-identity-delete.md
       - name: Security
-        displayname: Security API, Microsoft Intelligent Security Graph
         items:
           - name: Overview
             href: resources/security-api-overview.md
@@ -7495,6 +7816,8 @@ items:
                     href: api/security-ediscoveryreviewset-get.md
                   - name: Add to review set
                     href: api/security-ediscoveryreviewset-addtoreviewset.md
+                  - name: Export
+                    href: api/security-ediscoveryreviewset-export.md
                   - name: Query
                     href: resources/security-ediscoveryreviewsetquery.md
                     items:
@@ -7510,6 +7833,8 @@ items:
                         href: api/security-ediscoveryreviewset-delete-queries.md
                       - name: Apply tags
                         href: api/security-ediscoveryreviewsetquery-applytags.md
+                      - name: Export
+                        href: api/security-ediscoveryreviewsetquery-export.md
               - name: Tag
                 href: resources/security-ediscoveryreviewtag.md
                 items:
@@ -7634,7 +7959,6 @@ items:
               - name: Reports
                 items:
                   - name: Attack simulation reports
-                    displayname: Attack simulation and training
                     href: resources/report-m365defender-reports-overview.md
                   - name: Repeat offenders
                     items:
@@ -7654,6 +7978,98 @@ items:
                         href: resources/attacksimulationtrainingusercoverage.md
                       - name: Get training coverage for users
                         href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+          - name: Threat intelligence
+            items:
+              - name: Overview
+                href: resources/security-threatintelligence-overview.md
+              - name: Article
+                items:
+                  - name: Article
+                    href: resources/security-article.md
+                  - name: Get
+                    href: api/security-article-get.md
+                  - name: List
+                    href: api/security-article-list.md
+                  - name: List article indicators
+                    href: api/security-article-list-indicators.md
+              - name: Article indicator
+                items:
+                  - name: Article indicator
+                    href: resources/security-articleindicator.md
+                  - name: Get
+                    href: api/security-articleindicator-get.md
+              - name: Host
+                items:
+                  - name: Host
+                    href: resources/security-host.md
+                  - name: Get
+                    href: api/security-host-get.md
+                  - name: List components
+                    href: api/security-host-list-components.md
+                  - name: List cookies
+                    href: api/security-host-list-cookies.md
+                  - name: List passive DNS
+                    href: api/security-host-list-passivedns.md
+                  - name: List passive DNS reverse
+                    href: api/security-host-list-passivednsreverse.md
+                  - name: Get reputation
+                    href: api/security-host-get-reputation.md
+                  - name: List trackers
+                    href: api/security-host-list-trackers.md
+              - name: Host component
+                items:
+                  - name: Host component
+                    href: resources/security-hostcomponent.md
+                  - name: Get
+                    href: api/security-hostcomponent-get.md
+              - name: Host cookie
+                items:
+                  - name: Host cookie
+                    href: resources/security-hostcookie.md
+                  - name: Get
+                    href: api/security-hostcookie-get.md
+              - name: Host tracker
+                items:
+                  - name: Host tracker
+                    href: resources/security-hosttracker.md
+                  - name: Get
+                    href: api/security-hosttracker-get.md
+              - name: Intelligence profile
+                items:
+                  - name: Intelligence profile
+                    href: resources/security-intelligenceprofile.md
+                  - name: Get
+                    href: api/security-intelligenceprofile-get.md
+                  - name: List
+                    href: api/security-intelligenceprofile-list.md
+                  - name: List intelligence profile indicators
+                    href: api/security-intelligenceprofile-list-indicators.md
+              - name: Intelligence profile indicator
+                items:
+                  - name: Intelligence profile indicator
+                    href: resources/security-intelligenceprofileindicator.md
+                  - name: Get
+                    href: api/security-intelligenceprofileindicator-get.md
+              - name: Passive DNS record
+                items:
+                  - name: Passive DNS record
+                    href: resources/security-passivednsrecord.md
+                  - name: Get
+                    href: api/security-passivednsrecord-get.md
+              - name: Vulnerability
+                items:
+                  - name: Vulnerability
+                    href: resources/security-vulnerability.md
+                  - name: Get
+                    href: api/security-vulnerability-get.md
+                  - name: List vulnerability components
+                    href: api/security-vulnerability-list-components.md
+              - name: Vulnerability component
+                items:
+                  - name: Vulnerability component
+                    href: resources/security-vulnerabilitycomponent.md
+                  - name: Get
+                    href: api/security-vulnerabilitycomponent-get.md
       - name: Sites and lists
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
         items:
@@ -7696,7 +8112,7 @@ items:
                 href: api/site-search.md
               - name: List operations
                 href: api/site-list-operations.md
-              - name: List all root sites
+              - name: List all sites
                 href: api/site-getallsites.md
               - name: Permission
                 href: resources/permission.md
@@ -7809,7 +8225,6 @@ items:
               - name: Get
                 href: api/richlongrunningoperation-get.md
           - name: Taxonomy
-            displayname: Taxonomy API
             items:
               - name: Store
                 href: resources/termstore-store.md
@@ -8062,6 +8477,17 @@ items:
                         href: api/call-mute.md
                       - name: Update recording status
                         href: api/call-updaterecordingstatus.md
+                  - name: Audio routing group
+                    href: resources/audioroutinggroup.md
+                    items:
+                    - name: Create
+                      href: api/call-post-audioroutinggroups.md
+                    - name: Get
+                      href: api/audioroutinggroup-get.md
+                    - name: Update
+                      href: api/audioroutinggroup-update.md
+                    - name: Delete
+                      href: api/audioroutinggroup-delete.md
                   - name: Call
                     href: resources/call.md
                     items:
@@ -8232,6 +8658,24 @@ items:
                     href: api/learningcontent-update.md
                   - name: Delete
                     href: api/learningprovider-delete-learningcontents.md
+              - name: Learning course activities
+                items:
+                  - name: Learning course activity
+                    href: resources/learningcourseactivity.md
+                  - name: Learning assignment type
+                    href: resources/learningassignment.md
+                  - name: Learning self-initiated course type
+                    href: resources/learningselfinitiatedcourse.md
+                  - name: List
+                    href: api/learningcourseactivity-list.md
+                  - name: Create
+                    href: api/employeeexperienceuser-post-learningcourseactivities.md
+                  - name: Get
+                    href: api/learningcourseactivity-get.md
+                  - name: Update
+                    href: api/learningcourseactivity-update.md
+                  - name: Delete
+                    href: api/learningcourseactivity-delete.md
           - name: Messaging
             items:
               - name: Activity feed
@@ -8435,6 +8879,8 @@ items:
                     href: api/team-clone.md
                   - name: List your teams
                     href: api/user-list-joinedteams.md
+                  - name: List all teams in an organization
+                    href: api/teams-list.md
                   - name: List your associated teams
                     href: api/associatedteaminfo-list.md
                   - name: Get primary channel

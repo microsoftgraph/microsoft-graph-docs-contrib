@@ -188,7 +188,7 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Employee learning"
     },
-    {
+ {
       "ChangeList": [
         {
           "Id": "2bbb372e-272d-401a-9bab-0c1b6e38977f",
@@ -221,6 +221,56 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-06-07T09:01:19.001Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Employee learning"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a0d7aeb6-2a11-4412-9cc5-0c33f301ccf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "learningCourseActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [learningCourseActivity](https://learn.microsoft.com/en-us/graph/api/resources/learningCourseActivity?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "learningCourseActivity"
+        },
+        {
+          "Id": "a0d7aeb6-2a11-4412-9cc5-0c33f301ccf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "learningAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [learningAssignment](https://learn.microsoft.com/en-us/graph/api/resources/learningAssignment?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "learningAssignment"
+        },
+        {
+          "Id": "a0d7aeb6-2a11-4412-9cc5-0c33f301ccf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "learningSelfInitiatedCourse",
+          "ChangeType": "Addition",
+          "Description": "Added the [learningSelfInitiatedCourse](https://learn.microsoft.com/en-us/graph/api/resources/learningSelfInitiatedCourse?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "learningSelfInitiatedCourse"
+        },
+        {
+          "Id": "a0d7aeb6-2a11-4412-9cc5-0c33f301ccf4",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "courseStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **courseStatus** enumeration.",
+          "Target": "courseStatus"
+        },
+        {
+          "Id": "a0d7aeb6-2a11-4412-9cc5-0c33f301ccf4",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "assignmentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentType** enumeration.",
+          "Target": "assignmentType"
+        }
+      ],
+      "Id": "a0d7aeb6-2a11-4412-9cc5-0c33f301ccf4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-06-29T09:01:19.001Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Employee learning"
     }

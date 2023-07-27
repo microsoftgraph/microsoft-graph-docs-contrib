@@ -7,19 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ConversationThread();
 $additionalData = [
 		'originalStartTimeZone' => 'originalStartTimeZone-value', 
 		'originalEndTimeZone' => 'originalEndTimeZone-value', 
-		'responseStatus' => $requestBody = new ResponseStatus();
-$		requestBody->setResponse('');
-
-$		requestBody->setTime('datetime-value');
-
-
-$requestBody->setResponseStatus($responseStatus);
+		'responseStatus' => 		[
+				'response' => '', 
+				'time' => 'datetime-value', 
+		],
 
 		'uid' => 'iCalUId-value', 
 		'reminderMinutesBeforeStart' => 99,
@@ -30,7 +27,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->groups()->byGroupId('group-id')->threads()->byThreadId('conversationThread-id')->patch($requestBody);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->threads()->byConversationThreadId('conversationThread-id')->patch($requestBody);
 
 
 ```

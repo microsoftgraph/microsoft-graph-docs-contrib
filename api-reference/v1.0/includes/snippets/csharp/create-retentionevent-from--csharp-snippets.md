@@ -14,22 +14,6 @@ var requestBody = new Microsoft.Graph.Models.Security.RetentionEvent
 	DisplayName = "String",
 	Description = "String",
 	EventTriggerDateTime = DateTimeOffset.Parse("String (timestamp)"),
-	CreatedBy = new IdentitySet
-	{
-		OdataType = "microsoft.graph.identitySet",
-	},
-	EventPropagationResults = new List<Microsoft.Graph.Models.Security.EventPropagationResult>
-	{
-		new Microsoft.Graph.Models.Security.EventPropagationResult
-		{
-			OdataType = "microsoft.graph.security.eventPropagationResult",
-		},
-	},
-	EventStatus = new Microsoft.Graph.Models.Security.RetentionEventStatus
-	{
-		OdataType = "microsoft.graph.security.retentionEventStatus",
-	},
-	LastStatusUpdateDateTime = DateTimeOffset.Parse("String (timestamp)"),
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
@@ -40,6 +24,9 @@ var requestBody = new Microsoft.Graph.Models.Security.RetentionEvent
 					OdataType = "microsoft.graph.security.eventQuery",
 				},
 			}
+		},
+		{
+			"retentionEventType@odata.bind" , "https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventType/9eecef97-fb3c-4c68-825b-4dd74530863a"
 		},
 	},
 };

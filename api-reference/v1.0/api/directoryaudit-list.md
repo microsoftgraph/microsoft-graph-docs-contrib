@@ -34,29 +34,7 @@ GET /auditLogs/directoryaudits
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
-
-| Parameter                                                       | Description                                                                   | Example                                                                     |
-| :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [\$filter](/graph/query-parameters#filter-parameter)       | Filters results (rows).                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
-| [\$top](/graph/query-parameters#top-parameter)             | Sets the page size of results.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
-| [\$skiptoken](/graph/query-parameters#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
-
-### Attributes supported by \$filter parameter
-
-| Attribute                                                    | Supported operators |
-| :----------------------------------------------------------- | :------------------ |
-| activityDisplayName                                          | eq, startswith      |
-| activityDateTime                                             | eq, ge, le          |
-| loggedByService                                              | eq                  |
-| initiatedBy/user/id                                          | eq                  |
-| initiatedBy/user/displayName                                 | eq                  |
-| initiatedBy/user/userPrincipalName                           | eq, startswith      |
-| initiatedBy/app/appId                                        | eq                  |
-| initiatedBy/app/displayName                                  | eq                  |
-| targetResources/any(t: t/id eq '{value}')                    | eq                  |
-| targetResources/any(t:t/displayName eq '{value}')            | eq                  |
-| targetResources/any(x: startswith(x/displayName, '{value}')) | startswith          |
+This method supports the `$filter` (`eq`, `ge`, `le`, `startswith`), `$top`, `$orderby`, and `skiptoken` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -93,24 +71,28 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudit-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-2-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-directoryaudit-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudit-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryaudit-2-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-directoryaudit-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryaudit-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

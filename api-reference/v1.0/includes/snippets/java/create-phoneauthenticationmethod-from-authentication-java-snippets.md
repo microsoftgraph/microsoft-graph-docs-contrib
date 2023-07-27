@@ -10,7 +10,7 @@ PhoneAuthenticationMethod phoneAuthenticationMethod = new PhoneAuthenticationMet
 phoneAuthenticationMethod.phoneNumber = "+1 2065555555";
 phoneAuthenticationMethod.phoneType = AuthenticationPhoneType.MOBILE;
 
-graphClient.me().authentication().phoneMethods()
+graphClient.users("kim@contoso.com").authentication().phoneMethods()
 	.buildRequest()
 	.post(phoneAuthenticationMethod);
 

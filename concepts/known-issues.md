@@ -453,7 +453,7 @@ To solve this issue, remove the `/tenants/{tenant-id}` part from the URL before 
 
 When you create a channel, if you use special characters in your channel name, the [Get filesFolder](/graph/api/channel-get-filesfolder) API will return a `400 Bad Request` error response. When you create a channel, make sure that the **displayName** for the channel does not:
 
-- Include any of the following special characters: ~ # % & * { } + / \ : < > ? | ‘ ”.
+- Include any of the following special characters: ~ # % & * { } + / \ : < > ? | ' ".
 - Start with an underscore (_) or period (.), or end with a period (.).
 
 ### View meeting details menu is not available on Microsoft Teams client
@@ -483,7 +483,7 @@ Users can be created immediately through a POST on the user entity. A Microsoft 
     }
     ```
 
-2. Any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (deprecated) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
+2. Any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (currently in its retirement cycle) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
 3. Managing users' photos through the [profilePhoto resource](/graph/api/resources/profilephoto) of the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ### Revoke sign-in sessions returns wrong HTTP code

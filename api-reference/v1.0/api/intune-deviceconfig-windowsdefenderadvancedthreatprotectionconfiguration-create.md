@@ -65,6 +65,7 @@ If successful, this method returns a `201 Created` response code and a [windowsD
 ### Request
 Here is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_create_create_windowsdefenderadvancedthreatprotectionconfiguration" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
@@ -80,6 +81,40 @@ Content-length: 267
   "enableExpeditedTelemetryReporting": true
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create-create-windowsdefenderadvancedthreatprotectionconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create-create-windowsdefenderadvancedthreatprotectionconfiguration-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create-create-windowsdefenderadvancedthreatprotectionconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create-create-windowsdefenderadvancedthreatprotectionconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create-create-windowsdefenderadvancedthreatprotectionconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create-create-windowsdefenderadvancedthreatprotectionconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create-create-windowsdefenderadvancedthreatprotectionconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create-create-windowsdefenderadvancedthreatprotectionconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

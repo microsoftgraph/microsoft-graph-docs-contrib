@@ -30,31 +30,35 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/aad-advanced-queries-get-users-accountenabled-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/aad-advanced-queries-get-users-accountenabled-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/aad-advanced-queries-get-users-accountenabled-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/aad-advanced-queries-get-users-accountenabled-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/aad-advanced-queries-get-users-accountenabled-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/aad-advanced-queries-get-users-accountenabled-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/aad-advanced-queries-get-users-accountenabled-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/aad-advanced-queries-get-users-accountenabled-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/aad-advanced-queries-get-users-accountenabled-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/aad-advanced-queries-get-users-accountenabled-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/aad-advanced-queries-get-users-accountenabled-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/aad-advanced-queries-get-users-accountenabled-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/aad-advanced-queries-get-users-accountenabled-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/aad-advanced-queries-get-users-accountenabled-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/aad-advanced-queries-get-users-accountenabled-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -72,31 +76,35 @@ ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/aad-advanced-queries-get-users-not-acountenabled-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/aad-advanced-queries-get-users-not-acountenabled-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/aad-advanced-queries-get-users-not-acountenabled-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/aad-advanced-queries-get-users-not-acountenabled-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/aad-advanced-queries-get-users-not-acountenabled-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/aad-advanced-queries-get-users-not-acountenabled-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/aad-advanced-queries-get-users-not-acountenabled-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/aad-advanced-queries-get-users-not-acountenabled-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/aad-advanced-queries-get-users-not-acountenabled-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/aad-advanced-queries-get-users-not-acountenabled-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/aad-advanced-queries-get-users-not-acountenabled-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/aad-advanced-queries-get-users-not-acountenabled-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/aad-advanced-queries-get-users-not-acountenabled-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/aad-advanced-queries-get-users-not-acountenabled-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/aad-advanced-queries-get-users-not-acountenabled-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -221,31 +229,35 @@ GET https://graph.microsoft.com/v1.0/users/$count
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-count-missing-advancedqueryparams-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/get-users-count-missing-advancedqueryparams-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-count-missing-advancedqueryparams-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-users-count-missing-advancedqueryparams-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/get-users-count-missing-advancedqueryparams-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-users-count-missing-advancedqueryparams-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/get-users-count-missing-advancedqueryparams-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/get-users-count-missing-advancedqueryparams-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/get-users-count-missing-advancedqueryparams-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-users-count-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/get-users-count-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/get-users-count-missing-advancedqueryparams-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-users-count-missing-advancedqueryparams-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/get-users-count-missing-advancedqueryparams-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -282,31 +294,35 @@ GET https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-applications-missing-advancedqueryparams-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/get-applications-missing-advancedqueryparams-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-applications-missing-advancedqueryparams-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-applications-missing-advancedqueryparams-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/get-applications-missing-advancedqueryparams-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-applications-missing-advancedqueryparams-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/get-applications-missing-advancedqueryparams-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-applications-missing-advancedqueryparams-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/get-applications-missing-advancedqueryparams-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/get-applications-missing-advancedqueryparams-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-applications-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/get-applications-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/get-applications-missing-advancedqueryparams-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-applications-missing-advancedqueryparams-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/get-applications-missing-advancedqueryparams-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -334,35 +350,39 @@ If a property or query parameter in the URL is supported only in advanced querie
   "name": "get_users_missing_advancedqueryparams"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
+GET https://graph.microsoft.com/beta/users?$filter=endsWith(userPrincipalName,'%23EXT%23@contoso.com')
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-missing-advancedqueryparams-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/get-users-missing-advancedqueryparams-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-missing-advancedqueryparams-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-users-missing-advancedqueryparams-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-users-missing-advancedqueryparams-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/get-users-missing-advancedqueryparams-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-users-missing-advancedqueryparams-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-users-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/get-users-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/get-users-missing-advancedqueryparams-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-users-missing-advancedqueryparams-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/beta/get-users-missing-advancedqueryparams-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -371,11 +391,11 @@ GET https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 {
     "error": {
         "code": "Request_UnsupportedQuery",
-        "message": "Unsupported Query.",
+        "message": "Operator 'endsWith' is not supported because the required parameters might be missing. Try adding $count=true query parameter and ConsistencyLevel:eventual header. Refer to https://aka.ms/graph-docs/advanced-queries for more information",
         "innerError": {
-            "date": "2021-05-18T19:12:36",
-            "request-id": "63f2093c-399c-4350-9609-3ce9b62abe3c",
-            "client-request-id": "e60ed0ba-df5d-e190-f056-f9c0318456d7"
+            "date": "2023-07-14T08:43:39",
+            "request-id": "b3731da7-5c46-4c37-a8e5-b190124d2531",
+            "client-request-id": "a1556ddf-4794-929d-0105-b753a78b4c68"
         }
     }
 }
@@ -395,31 +415,35 @@ ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-missing-advancedqueryparams-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/get-groups-missing-advancedqueryparams-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-missing-advancedqueryparams-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-groups-missing-advancedqueryparams-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-groups-missing-advancedqueryparams-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/get-groups-missing-advancedqueryparams-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-groups-missing-advancedqueryparams-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/get-groups-missing-advancedqueryparams-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/get-groups-missing-advancedqueryparams-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-groups-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/get-groups-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/get-groups-missing-advancedqueryparams-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-groups-missing-advancedqueryparams-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/beta/get-groups-missing-advancedqueryparams-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -428,11 +452,11 @@ ConsistencyLevel: eventual
 {
     "error": {
         "code": "Request_UnsupportedQuery",
-        "message": "The request uses a filter property that is not indexed",
+        "message": "Unsupported or invalid query filter clause specified for property 'createdDateTime' of resource 'Group'.",
         "innerError": {
-            "date": "2021-06-10T19:32:01",
-            "request-id": "5625ba13-0c9f-4fce-a853-4b52f3e0bd09",
-            "client-request-id": "76fe4cd8-df3a-f8c3-659b-594274b6bb31"
+            "date": "2023-07-14T08:42:44",
+            "request-id": "b6a5f998-94c8-430d-846d-2eaae3031492",
+            "client-request-id": "2be83e05-649e-2508-bcd9-62e666168fc8"
         }
     }
 }
@@ -453,31 +477,35 @@ GET https://graph.microsoft.com/v1.0/users?$count=true
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-silent-fail-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/get-users-silent-fail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-silent-fail-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-users-silent-fail-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/get-users-silent-fail-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-users-silent-fail-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/get-users-silent-fail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-users-silent-fail-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/get-users-silent-fail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/get-users-silent-fail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-users-silent-fail-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/get-users-silent-fail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/get-users-silent-fail-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-users-silent-fail-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/get-users-silent-fail-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

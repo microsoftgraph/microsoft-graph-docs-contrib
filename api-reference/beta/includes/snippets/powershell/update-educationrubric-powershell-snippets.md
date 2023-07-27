@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Education
+Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
 	displayName = "Example Credit Rubric after display name patch"
 }
 
-Update-MgEducationMeRubric -EducationRubricId $educationRubricId -BodyParameter $params
+Update-MgBetaEducationMeRubric -EducationRubricId $educationRubricId -BodyParameter $params
 
 ```
