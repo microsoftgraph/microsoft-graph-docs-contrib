@@ -1,6 +1,6 @@
 ---
 title: "tenantRelationship: findTenantInformationByDomainName"
-description: "Given a domain name, search for a tenant and read its tenantInformation."
+description: "Given a domain name, search for a tenant and read its tenant information."
 author: "adimitui"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Given a domain name, search for a tenant and read its [tenantInformation](../resources/tenantInformation.md). You can use this API to validate tenant information and use their **tenantId** to [configure cross-tenant access settings between you and the tenant](../resources/crosstenantaccesspolicyconfigurationpartner.md).
+Given a domain name, search for a tenant and read its [tenantInformation](../resources/tenantInformation.md). You can use this API to validate tenant information and use the **tenantId** to [configure cross-tenant access settings between you and the tenant](../resources/crosstenantaccesspolicyconfigurationpartner.md).
 
 ## Permissions
 
