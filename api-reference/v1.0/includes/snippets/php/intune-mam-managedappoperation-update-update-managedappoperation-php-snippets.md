@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ManagedAppOperation();
-$requestBody->set@odatatype('#microsoft.graph.managedAppOperation');
+$requestBody->setOdataType('#microsoft.graph.managedAppOperation');
 
 $requestBody->setDisplayName('Display Name value');
 
@@ -20,7 +20,7 @@ $requestBody->setVersion('Version value');
 
 
 
-$result = $graphServiceClient->deviceAppManagement()->managedAppRegistrations()->byManagedAppRegistrationId('managedAppRegistration-id')->operations()->byOperationId('managedAppOperation-id')->patch($requestBody);
+$result = $graphServiceClient->deviceAppManagement()->managedAppRegistrations()->byManagedAppRegistrationId('managedAppRegistration-id')->operations()->byManagedAppOperationId('managedAppOperation-id')->patch($requestBody);
 
 
 ```
