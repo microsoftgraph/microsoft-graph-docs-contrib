@@ -126,7 +126,7 @@ var requestBody = new AccessPackageAssignmentPolicy
 					Interval = 3,
 					Month = 0,
 					DayOfMonth = 0,
-					DaysOfWeek = new List<DayOfWeek>
+					DaysOfWeek = new List<DayOfWeekObject>
 					{
 					},
 				},

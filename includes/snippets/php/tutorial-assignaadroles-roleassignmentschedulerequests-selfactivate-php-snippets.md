@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleAssignmentScheduleRequest();
-$requestBody->setAction(new UnifiedRoleScheduleRequestActions('selfactivate'));
+$requestBody->setAction(new UnifiedRoleScheduleRequestActions('selfActivate'));
 
 $requestBody->setPrincipalId('7146daa8-1b4b-4a66-b2f7-cf593d03c8d2');
 
@@ -21,10 +21,10 @@ $requestBody->setDirectoryScopeId('/');
 $requestBody->setJustification('Need to invalidate all app refresh tokens for Contoso users.');
 
 $scheduleInfo = new RequestSchedule();
-$scheduleInfo->setStartDateTime(new DateTime('2021-09-04T15:13:00.000Z'));
+$scheduleInfo->setStartDateTime(new \DateTime('2021-09-04T15:13:00.000Z'));
 
 $scheduleInfoExpiration = new ExpirationPattern();
-$scheduleInfoExpiration->setType(new ExpirationPatternType('afterduration'));
+$scheduleInfoExpiration->setType(new ExpirationPatternType('afterDuration'));
 
 $scheduleInfoExpiration->setDuration(new \DateInterval('PT5H'));
 

@@ -5,7 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
-ms.date: 07/06/2023
+ms.date: 07/19/2023
 ---
 
 # Manage Azure AD role assignments using PIM APIs
@@ -85,7 +85,7 @@ The following table lists scenarios for using PIM to manage Azure AD rules and t
 
 For more information about using Microsoft Graph to configure rules, see [Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview). For examples of updating rules, see [Use PIM APIs in Microsoft Graph to update Azure AD rules](/graph/how-to-pim-update-rules).
 
-## Get security alerts for Azure AD roles
+## Security alerts for Azure AD roles
 
 PIM for Azure AD roles generates alerts when it detects suspicious or unsafe settings for Azure AD roles in your tenant. The following seven alert types are available:
 

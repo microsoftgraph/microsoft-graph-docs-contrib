@@ -12,7 +12,7 @@ var requestBody = new Group
 {
 	Description = "Group with designated owner and members",
 	DisplayName = "Operations group",
-	GroupTypes = new List<String>
+	GroupTypes = new List<string>
 	{
 	},
 	MailEnabled = false,
