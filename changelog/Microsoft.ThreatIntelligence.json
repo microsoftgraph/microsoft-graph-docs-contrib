@@ -4,26 +4,26 @@
       "ChangeList": [
         {
           "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "childHostPairs",
           "ChangeType": "Addition",
-          "Description": "Added the **childHostPairs** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Description": "Added the **childHostPairs** navigation property to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
           "Target": "host"
         },
         {
           "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "hostPairs",
           "ChangeType": "Addition",
-          "Description": "Added the **hostPairs** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Description": "Added the **hostPairs** navigation property to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
           "Target": "host"
         },
         {
           "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "parentHostPairs",
           "ChangeType": "Addition",
-          "Description": "Added the **parentHostPairs** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Description": "Added the **parentHostPairs** navigation property to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
           "Target": "host"
         },
         {
@@ -36,10 +36,10 @@
         },
         {
           "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "hostPairs",
           "ChangeType": "Addition",
-          "Description": "Added the **hostPairs** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Description": "Added the **hostPairs** navigation property to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
           "Target": "threatIntelligence"
         }
       ],

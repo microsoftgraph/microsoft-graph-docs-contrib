@@ -1,6 +1,6 @@
 ---
 title: "Get hostPair"
-description: "Read the properties and relationships of a microsoft.graph.security.hostPair object."
+description: "Read the properties and relationships of a Microsoft Graph Security hostPair object."
 author: "jakedavies-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
