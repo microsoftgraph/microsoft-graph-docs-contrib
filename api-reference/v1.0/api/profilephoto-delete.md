@@ -57,7 +57,6 @@ To delete a user's profile photo:
 ```http
 DELETE /me/photo/$value
 DELETE /users/{id | userPrincipalName}/photo/$value
-
 ```
 
 ## Request headers
@@ -67,9 +66,6 @@ DELETE /users/{id | userPrincipalName}/photo/$value
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | image/jpeg. Required.  |
 
-## Request body
-
-In the request body, include the binary data of the photo in the request body.
 
 ## Response
 
@@ -90,10 +86,6 @@ The following is an example of a request.
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/photo/$value
-Content-type: image/jpeg
-
-Binary data for the image
-
 ```
 
 # [CLI](#tab/cli)
