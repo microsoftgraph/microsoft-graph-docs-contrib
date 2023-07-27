@@ -131,6 +131,6 @@ $params = @{
 	isAssigned = $true
 }
 
-Update-MgDeviceAppMgtMdmWindowInformationProtectionPolicy -MdmWindowsInformationProtectionPolicyId $mdmWindowsInformationProtectionPolicyId -BodyParameter $params
+Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy -MdmWindowsInformationProtectionPolicyId $mdmWindowsInformationProtectionPolicyId -BodyParameter $params
 
 ```
