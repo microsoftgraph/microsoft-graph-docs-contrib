@@ -7,11 +7,11 @@ ms.prod: "sharepoint"
 description: "Permanently delete a driveItem by using its ID."
 doc_type: apiPageType
 ---
-# Permanently delete a driveItem
+# driveItem: permanentDelete
 
 Namespace: microsoft.graph
 
-Permanently deletes a [DriveItem](../resources/driveitem.md) by using its ID.
+Permanently delete a [driveItem](../resources/driveitem.md) by using its ID.
 Note that if you delete items using this method, they will be permanently removed and won't be sent to the recycle bin. Therefore, they cannot be restored afterward.
 
 ## Permissions
@@ -47,7 +47,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 <!-- { "blockType": "request", "name": "permanentDelete-item", "scopes": "files.readwrite", "target": "action" } -->
 
@@ -67,8 +67,7 @@ HTTP/1.1 204 No Content
 
 ### Error responses
 
-See [Error Responses][error-response] for more info about
-how errors are returned.
+For details about how errors are returned, see [Error Responses][error-response].
 
 [error-response]: /graph/errors
 
