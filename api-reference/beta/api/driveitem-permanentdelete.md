@@ -51,6 +51,8 @@ The following example shows how to call this API.
 
 <!-- { "blockType": "request", "name": "permanentDelete-item", "scopes": "files.readwrite", "target": "action" } -->
 
+### Request
+
 ```http
 POST /drives/{drive-id}/items/{item-id}/permanentDelete
 ```
