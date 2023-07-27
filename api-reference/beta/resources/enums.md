@@ -3978,9 +3978,7 @@ Possible values for user account types (group membership), per Windows definitio
 |sms|
 |unknownFutureValue|
 
-### endUserNotificationPreference values 
-
-
+### endUserNotificationPreference values
 
 |Member|
 |:---|
@@ -3989,9 +3987,7 @@ Possible values for user account types (group membership), per Windows definitio
 |custom|
 |unknownFutureValue|
 
-### endUserNotificationSettingType values 
-
-
+### endUserNotificationSettingType values
 
 |Member|
 |:---|
@@ -4001,9 +3997,7 @@ Possible values for user account types (group membership), per Windows definitio
 |noNotification|
 |unknownFutureValue|
 
-### endUserNotificationType values 
-
-
+### endUserNotificationType values
 
 |Member|
 |:---|
@@ -4014,9 +4008,7 @@ Possible values for user account types (group membership), per Windows definitio
 |trainingReminder|
 |unknownFutureValue|
 
-### notificationDeliveryFrequency values 
-
-
+### notificationDeliveryFrequency values
 
 |Member|
 |:---|
@@ -4025,9 +4017,7 @@ Possible values for user account types (group membership), per Windows definitio
 |biWeekly|
 |unknownFutureValue|
 
-### notificationDeliveryPreference values 
-
-
+### notificationDeliveryPreference values
 
 |Member|
 |:---|
@@ -4036,9 +4026,7 @@ Possible values for user account types (group membership), per Windows definitio
 |deliverAfterCampaignEnd|
 |unknownFutureValue|
 
-### oAuthAppScope values 
-
-
+### oAuthAppScope values
 
 |Member|
 |:---|
@@ -4052,9 +4040,7 @@ Possible values for user account types (group membership), per Windows definitio
 |sendMail|
 |unknownFutureValue|
 
-### targettedUserType values 
-
-
+### targettedUserType values
 
 |Member|
 |:---|
@@ -4064,9 +4050,7 @@ Possible values for user account types (group membership), per Windows definitio
 |allUsers|
 |unknownFutureValue|
 
-### trainingAssignedTo values 
-
-
+### trainingAssignedTo values
 
 |Member|
 |:---|
@@ -4079,9 +4063,7 @@ Possible values for user account types (group membership), per Windows definitio
 |didNothing|
 |unknownFutureValue|
 
-### trainingAvailabilityStatus values 
-
-
+### trainingAvailabilityStatus values
 
 |Member|
 |:---|
@@ -4092,9 +4074,7 @@ Possible values for user account types (group membership), per Windows definitio
 |delete|
 |unknownFutureValue|
 
-### trainingCompletionDuration values 
-
-
+### trainingCompletionDuration values
 
 |Member|
 |:---|
@@ -4103,9 +4083,7 @@ Possible values for user account types (group membership), per Windows definitio
 |monthly|
 |unknownFutureValue|
 
-### trainingSettingType values 
-
-
+### trainingSettingType values
 
 |Member|
 |:---|
@@ -4115,9 +4093,7 @@ Possible values for user account types (group membership), per Windows definitio
 |custom|
 |unknownFutureValue|
 
-### trainingType values 
-
-
+### trainingType values
 
 |Member|
 |:---|
@@ -4125,9 +4101,10 @@ Possible values for user account types (group membership), per Windows definitio
 |phishing|
 |unknownFutureValue|
 
+### verifiableCredentialPresentationStatusCode values
+
 | Member                |
 | :-------------------- |
 | request_retrieved     |
 | presentation_verified |
 | unknownFutureValue    |
-

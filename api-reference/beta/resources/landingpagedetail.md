@@ -18,23 +18,27 @@ Represents an attack simulation landing page detail.
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List landingPageDetails](../api/landingpage-list-details.md)|[landingPageDetail](../resources/landingpagedetail.md) collection|Get a list of the [landingPageDetail](../resources/landingpagedetail.md) objects and their properties.|
 |[Get landingPageDetail](../api/landingpagedetail-get.md)|[landingPageDetail](../resources/landingpagedetail.md)|Read the properties and relationships of a [landingPageDetail](../resources/landingpagedetail.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |content|String|Landing page detail content.|
-|id|String|Unique identifier. Inherited from [entity](../resources/entity.md).|
-|isDefaultLangauge|Boolean|Tells if this language detail is default for landing page.|
+|id|String|Unique identifier for the **landingPageDetail** object. Inherited from [entity](../resources/entity.md).|
+|isDefaultLangauge|Boolean|Indicates whether this language detail is default for the landing page.|
 |language|String|Language|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -53,4 +57,3 @@ The following is a JSON representation of the resource.
   "isDefaultLangauge": "Boolean"
 }
 ```
-

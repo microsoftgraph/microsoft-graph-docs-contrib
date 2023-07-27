@@ -1,6 +1,6 @@
 ---
 title: "noTrainingSetting resource type"
-description: "No training setting for simulation creation."
+description: "Represents a no-training setting for simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,19 +13,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No training setting for simulation creation.
+Represents a no-training setting for simulation creation.
 
 Inherits from [trainingSetting](../resources/trainingsetting.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|settingType|trainingSettingType|Setting type. Inherited from [trainingSetting](../resources/trainingsetting.md).The possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`.|
+|settingType|trainingSettingType|The setting type. Possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`. Inherited from [trainingSetting](../resources/trainingsetting.md).|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -38,4 +41,3 @@ The following is a JSON representation of the resource.
   "settingType": "String"
 }
 ```
-

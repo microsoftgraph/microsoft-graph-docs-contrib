@@ -1,5 +1,5 @@
 ---
-title: "End user notification setting for simulation creation."
+title: "endUserNotificationSetting resource type"
 description: "Details required for oAuth technique"
 author: "stuartcl"
 ms.localizationpriority: medium
@@ -14,17 +14,21 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 End user notification setting for simulation creation.
+
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|notificationPreference|endUserNotificationPreference|Notification preference.The possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`.|
+|notificationPreference|endUserNotificationPreference|Notification preference. Possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`.|
 |positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|Positive reinforcement detail.|
-|settingType|endUserNotificationSettingType|End user notification type.The possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`.|
+|settingType|endUserNotificationSettingType|End user notification type. Possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -41,4 +45,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

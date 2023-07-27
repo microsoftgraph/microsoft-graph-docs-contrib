@@ -18,34 +18,37 @@ Represents an attack simulation landing page.
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List landingPages](../api/attacksimulationroot-list-landingpage.md)|[landingPage](../resources/landingpage.md) collection|Get a list of the [landingPage](../resources/landingpage.md) objects and their properties.|
-|[Get landingPage](../api/landingpage-get.md)|[landingPage](../resources/landingpage.md)|Read the properties and relationships of a [landingPage](../resources/landingpage.md) object.|
-|[List details](../api/landingpage-list-details.md)|[landingPageDetail](../resources/landingpagedetail.md) collection|Get the landingPageDetail resources from the details navigation property.|
+|[Get landingPage](../api/landingpage-get.md)|[landingPage](../resources/landingpage.md)|Get a [landingPage](../resources/landingpage.md) associated with an attack simulation campaign for a tenant.|
+|[List landingPageDetails](../api/landingpage-list-details.md)|[landingPageDetail](../resources/landingpagedetail.md) collection|Get a list of the [landingPageDetail](../resources/landingpagedetail.md) objects and their properties.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|User who created the landing page.|
-|createdDateTime|DateTimeOffset|Date and time of landing page creation.|
-|description|String|Description of the landing page as defined by the user..|
-|displayName|String|Display name of the landing page.|
-|id|String|Unique identifier. Inherited from [entity](../resources/entity.md).|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the landing page.|
+|createdDateTime|DateTimeOffset|Date and time when the landing page was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|description|String|Description of the landing page as defined by the user.|
+|displayName|String|The display name of the landing page.|
+|id|String|Unique identifier for the **landingPage** object. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Email identity of the user who last modified the landing page.|
-|lastModifiedDateTime|DateTimeOffset|Date and time of last update.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the landing page was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |locale|String|Content locale.|
-|source|simulationContentSource|Source of the content.The possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
-|status|simulationContentStatus|Status of the simulation.The possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|source|simulationContentSource|The source of the content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|status|simulationContentStatus|The status of the simulation. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
 |supportedLocales|String collection|Supported locales.|
 
-
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|details|[landingPageDetail](../resources/landingpagedetail.md) collection|Fetches landing page details.|
+|details|[landingPageDetail](../resources/landingpagedetail.md) collection|Represents landing page details.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -77,4 +80,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

@@ -77,11 +77,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_payload"
+  "name": "list_payloads"
 }
 -->
 ``` http

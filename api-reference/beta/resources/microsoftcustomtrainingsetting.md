@@ -1,6 +1,6 @@
 ---
 title: "microsoftCustomTrainingSetting resource type"
-description: "Microsoft custom training setting for simulation creation."
+description: "Represents a Microsoft custom training setting for simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,23 +13,27 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft custom training setting for simulation creation.
+Represents a Microsoft custom training setting for simulation creation.
 
 Inherits from [trainingSetting](../resources/trainingsetting.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|completionDateTime|DateTimeOffset|Completion date time.|
-|settingType|trainingSettingType|Type. Inherited from [trainingSetting](../resources/trainingsetting.md).The possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`.|
-|trainingAssignmentMappings|[microsoftTrainingAssignmentMapping](../resources/microsofttrainingassignmentmapping.md) collection|Training mapping|
-|trainingCompletionDuration|trainingCompletionDuration|Completion duration(to be provided before scheduling).The possible values are: `weekly`, `biWeekly`, `monthly`, `unknownFutureValue`.|
+|completionDateTime|DateTimeOffset|Completion date time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|settingType|trainingSettingType|Type. The possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`. Inherited from [trainingSetting](../resources/trainingsetting.md).|
+|trainingAssignmentMappings|[microsoftTrainingAssignmentMapping](../resources/microsofttrainingassignmentmapping.md) collection|Training mapping.|
+|trainingCompletionDuration|trainingCompletionDuration|The training completion duration that needs to be provided before scheduling the training. Possible values are: `weekly`, `biWeekly`, `monthly`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.microsoftCustomTrainingSetting"
@@ -48,4 +52,3 @@ The following is a JSON representation of the resource.
   "completionDateTime": "String (timestamp)"
 }
 ```
-

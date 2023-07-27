@@ -18,33 +18,37 @@ Represents an end user notification.
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List endUserNotifications](../api/attacksimulationroot-list-endusernotifications.md)|[endUserNotification](../resources/endusernotification.md) collection|Get a list of the [endUserNotification](../resources/endusernotification.md) objects and their properties.|
 |[Get endUserNotification](../api/endusernotification-get.md)|[endUserNotification](../resources/endusernotification.md)|Read the properties and relationships of an [endUserNotification](../resources/endusernotification.md) object.|
-|[Get details](../api/endusernotificationdetail-get.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Get the endUserNotificationDetail resources from the details navigation property.|
+|[Get endUserNotificationDetail](../api/endusernotificationdetail-get.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Read the properties and relationships of an [endUserNotificationDetail](../resources/endusernotificationdetail.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|User who created the training.||
-|createdDateTime|DateTimeOffset|Date & Time of the campaign creation.|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the training.|
+|createdDateTime|DateTimeOffset|Date and time when the campaign was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|Description of the campaign as defined by the user.|
 |displayName|String|Name of the campaign as defined by the user.|
-|id|String|Identifier. Inherited from entity.|
-|lastModifiedBy|emailIdentity|User who modified the campaign last.|
-|lastModifiedDateTime|DateTimeOffset|Date & Time when campaign was last modified.|
-|notificationType|endUserNotificationType|Type of notification.The possible values are: `unknown`, `positiveReinforcement`, `noTraining`, `trainingAssignment`, `trainingReminder`, `unknownFutureValue`.|
-|source|simulationContentSource|Source of the content.The possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
-|status|simulationContentStatus|The status of the campaign.The possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
-|supportedLocales|String collection|Supported locales for endUserNotification content.|
+|id|String|Unique identifier for the **endUserNotification** object. Inherited from [entity](../resources/entity.md).|
+|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who last modified the campaign.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the campaign was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|notificationType|endUserNotificationType|Type of notification. Possible values are: `unknown`, `positiveReinforcement`, `noTraining`, `trainingAssignment`, `trainingReminder`, `unknownFutureValue`.|
+|source|simulationContentSource|The source of the content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|status|simulationContentStatus|The status of the campaign. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|supportedLocales|String collection|Supported locales for **endUserNotification** content.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|details|[endUserNotificationDetail](../resources/endusernotificationdetail.md) collection|Fetches endUserNotification details.|
+|details|[endUserNotificationDetail](../resources/endusernotificationdetail.md) collection|Represents **endUserNotification** details.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -76,4 +80,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-
