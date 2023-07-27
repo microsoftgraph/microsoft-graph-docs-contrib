@@ -5447,6 +5447,20 @@ items:
                     href: api/subscribedsku-list.md
                   - name: Get subscribedSku
                     href: api/subscribedsku-get.md
+              - name: On-premises directory synchronization
+                href: resources/onpremisesdirectorysynchronization.md
+                items:
+                  - name: Get
+                    href: api/onpremisesdirectorysynchronization-get.md
+                  - name: Update
+                    href: api/onpremisesdirectorysynchronization-update.md
+              - name: Tenant information
+                href: resources/tenantinformation.md
+                items:
+                - name: Find tenant by domain name
+                  href: api/tenantrelationship-findtenantinformationbydomainname.md
+                - name: Find tenant by tenant ID
+                  href: api/tenantrelationship-findtenantinformationbytenantid.md
           - name: Governance
             href: resources/identitygovernance-overview.md
             displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
