@@ -8432,6 +8432,17 @@ items:
                         href: api/call-mute.md
                       - name: Update recording status
                         href: api/call-updaterecordingstatus.md
+                  - name: Audio routing group
+                    href: resources/audioroutinggroup.md
+                    items:
+                    - name: Create
+                      href: api/call-post-audioroutinggroups.md
+                    - name: Get
+                      href: api/audioroutinggroup-get.md
+                    - name: Update
+                      href: api/audioroutinggroup-update.md
+                    - name: Delete
+                      href: api/audioroutinggroup-delete.md
                   - name: Call
                     href: resources/call.md
                     items:
