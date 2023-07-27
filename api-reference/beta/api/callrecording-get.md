@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Note:**
 >
-> * In delegated permission, [get a callRecording content](#example-2-get-a-callrecording-content) API is supported only for meeting organizer. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change).
+> * In delegated permission, [get a callRecording content](#example-2-get-a-callrecording-content) API is supported only for meeting organizer. Meeting participants don't have permission to download meeting recording. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change). Tenant admins can unblock meeting participants to download meeting recording. For more information, see [block the download of Teams meeting recording files](/MicrosoftTeams/block-download-meeting-recording).
 > * Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
