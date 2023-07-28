@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents the base policy in the directory for multi-tenant organization settings.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
 None.
@@ -23,7 +25,7 @@ None.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|ID of the template. Key.|
+|id|String|ID of the template. Key. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 

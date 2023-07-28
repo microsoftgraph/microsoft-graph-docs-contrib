@@ -55,7 +55,7 @@ You can specify the following properties when creating a **multiTenantOrganizati
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object in the response body. If the tenant is already pending or active in this multi-tenant organization, you get a 'Request_BadRequest' error.
 
 ## Examples
 

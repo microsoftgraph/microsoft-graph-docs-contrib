@@ -90,7 +90,7 @@ Content-Type: application/json
 }
 ```
 
-The following example shows the response after an added tenant [requests to join a multi-tenant organization]((multitenantorganizationjoinrequestrecord-update.md) and the state is still `pending`.
+The following example shows the response after an added tenant [requests to join a multi-tenant organization](multitenantorganizationjoinrequestrecord-update.md) and the state is still `pending`.
 
 ``` http
 HTTP/1.1 200 OK

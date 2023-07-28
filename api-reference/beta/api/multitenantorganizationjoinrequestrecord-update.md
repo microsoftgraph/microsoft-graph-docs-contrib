@@ -55,7 +55,7 @@ PATCH /tenantRelationships/multiTenantOrganization/joinRequest
 
 |Property|Type|Description|
 |:---|:---|:---|
-|addedByTenantId|String|Tenant ID of the Azure Active Directory tenant that added the current tenant to the multi-tenant organization. Required.|
+|addedByTenantId|String|Tenant ID of the Azure Active Directory tenant that added the current tenant to the multi-tenant organization. To reset a failed join request, set `addedByTenantId` to `00000000-0000-0000-0000-000000000000`. Required.|
 
 
 ## Response
