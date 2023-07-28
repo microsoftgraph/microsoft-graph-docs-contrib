@@ -23,6 +23,7 @@ The status is a read-only property in the submission. It changes based on the ac
 | Submitted	| The state after the student turns in the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
 | Returned | The state after the teacher has returned an assignment to the student. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
 | Reassigned | The state after the teacher has returned the assignment to the student for revision. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
+| Excuse | A teacher wants to mark a submission as excused to indicate that the submission has no further action for the student and will NOT be included in average grade calculations. Rubric selections and points feedback will be wiped. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/excuse` |
 
 The following diagram shows the state transition flow.
 
