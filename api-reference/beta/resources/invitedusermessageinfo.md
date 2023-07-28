@@ -4,7 +4,7 @@ description: "The invitedUserMessageInfo object allows you to configure the invi
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
-author: "Sammak"
+author: "ppolkadots"
 ---
 
 # invitedUserMessageInfo resource type

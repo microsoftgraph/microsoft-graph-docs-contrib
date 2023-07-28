@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "8d2e4350-d719-4db7-8c66-a48dd89e2375",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantInformation](https://docs.microsoft.com/en-us/graph/api/resources/tenantinformation?view=graph-rest-v1.0) resource. This complex type exposes basic identification information for your Azure AD tenant that is publicly displayed to users in other Azure AD tenants.",
+          "Target": "tenantInformation"
+        },
+        {
+          "Id": "8d2e4350-d719-4db7-8c66-a48dd89e2375",
+          "ApiChange": "Method",
+          "ChangedApiName": "findTenantInformationByDomainName",
+          "ChangeType": "Addition",
+          "Description": "Added the [findTenantInformationByDomainName](https://docs.microsoft.com/en-us/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-1.0) method.",
+          "Target": "findTenantInformationByDomainName"
+        },
+        {
+          "Id": "8d2e4350-d719-4db7-8c66-a48dd89e2375",
+          "ApiChange": "Method",
+          "ChangedApiName": "findTenantInformationByTenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the [findTenantInformationByTenantId](https://docs.microsoft.com/en-us/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-1.0) method.",
+          "Target": "findTenantInformationByTenantId"
+        }
+      ],
+      "Id": "8d2e4350-d719-4db7-8c66-a48dd89e2375",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-07-26T00:00:00.0123959Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b26bc4bc-505d-4f58-8ec5-3b851b23fc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the **sponsors** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "b26bc4bc-505d-4f58-8ec5-3b851b23fc78",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-18T22:22:46.6246645Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "15d6b872-9cd3-4e1f-80e1-3c4286d9259c",
           "ApiChange": "Property",
           "ChangedApiName": "appId",
@@ -8667,6 +8719,200 @@
     {
       "ChangeList": [
         {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "layoutTemplateType",
+          "ChangeType": "Addition",
+          "Description": "Added the **layoutTemplateType** enumeration type.",
+          "Target": "layoutTemplateType"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Resource",
+          "ChangedApiName": "loginPageLayoutConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [loginPageLayoutConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/loginPageLayoutConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "loginPageLayoutConfiguration"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Resource",
+          "ChangedApiName": "loginPageTextVisibilitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [loginPageTextVisibilitySettings](https://learn.microsoft.com/en-us/graph/api/resources/loginPageTextVisibilitySettings?view=graph-rest-1.0) resource type.",
+          "Target": "loginPageTextVisibilitySettings"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customAccountResetCredentialsUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customAccountResetCredentialsUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCannotAccessYourAccountText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCannotAccessYourAccountText** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCannotAccessYourAccountUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCannotAccessYourAccountUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCSS",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCSS** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCSSRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCSSRelativeUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customForgotMyPasswordText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customForgotMyPasswordText** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customPrivacyAndCookiesText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customPrivacyAndCookiesText** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customPrivacyAndCookiesUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customPrivacyAndCookiesUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customResetItNowText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customResetItNowText** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customTermsOfUseText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customTermsOfUseText** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "customTermsOfUseUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customTermsOfUseUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "favicon",
+          "ChangeType": "Addition",
+          "Description": "Added the **favicon** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "faviconRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **faviconRelativeUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "headerBackgroundColor",
+          "ChangeType": "Addition",
+          "Description": "Added the **headerBackgroundColor** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "headerLogo",
+          "ChangeType": "Addition",
+          "Description": "Added the **headerLogo** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "headerLogoRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **headerLogoRelativeUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "loginPageLayoutConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **loginPageLayoutConfiguration** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "loginPageTextVisibilitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **loginPageTextVisibilitySettings** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "squareLogoDark",
+          "ChangeType": "Addition",
+          "Description": "Added the **squareLogoDark** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+          "ApiChange": "Property",
+          "ChangedApiName": "squareLogoDarkRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **squareLogoDarkRelativeUrl** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
+        }
+      ],
+      "Id": "7ffca2c2-e102-44b9-a5d8-966f35064056",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-07-27T17:42:19.2449231Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2b1254a0-197c-4be1-84a1-d832226e52d7",
           "ApiChange": "Property",
           "ChangedApiName": "securityIdentifier",
@@ -13711,6 +13957,64 @@
       "CreatedDateTime": "2023-06-15T01:47:34.2749095Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7486594e-94b8-4472-9125-e21cab4bcee9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "companySubscription",
+          "ChangeType": "Addition",
+          "Description": "Added the [companySubscription](https://learn.microsoft.com/en-us/graph/api/resources/companysubscription?view=graph-rest-beta) resource and supported methods.",
+          "Target": "companySubscription"
+        },
+        {
+          "Id": "7486594e-94b8-4472-9125-e21cab4bcee9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "subscriptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **subscriptions** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "7486594e-94b8-4472-9125-e21cab4bcee9",
+          "ApiChange": "Property",
+          "ChangedApiName": "lockedOut",
+          "ChangeType": "Addition",
+          "Description": "Added the **lockedOut** property to the [licenseUnitsDetail](https://learn.microsoft.com/en-us/graph/api/resources/licenseUnitsDetail?view=graph-rest-beta) resource.",
+          "Target": "licenseUnitsDetail"
+        },
+        {
+          "Id": "7486594e-94b8-4472-9125-e21cab4bcee9",
+          "ApiChange": "Property",
+          "ChangedApiName": "accountId",
+          "ChangeType": "Addition",
+          "Description": "Added the **accountId** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-beta) resource.",
+          "Target": "subscribedSku"
+        },
+        {
+          "Id": "7486594e-94b8-4472-9125-e21cab4bcee9",
+          "ApiChange": "Property",
+          "ChangedApiName": "accountName",
+          "ChangeType": "Addition",
+          "Description": "Added the **accountName** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-beta) resource.",
+          "Target": "subscribedSku"
+        },
+        {
+          "Id": "7486594e-94b8-4472-9125-e21cab4bcee9",
+          "ApiChange": "Property",
+          "ChangedApiName": "subscriptionIds",
+          "ChangeType": "Addition",
+          "Description": "Added the **subscriptionIds** property to the [subscribedSku](https://learn.microsoft.com/en-us/graph/api/resources/subscribedSku?view=graph-rest-beta) resource.",
+          "Target": "subscribedSku"
+        }
+      ],
+      "Id": "7486594e-94b8-4472-9125-e21cab4bcee9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-18T00:00:02.8820444Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [

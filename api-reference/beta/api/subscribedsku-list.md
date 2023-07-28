@@ -16,45 +16,54 @@ Namespace: microsoft.graph
 Get the list of commercial subscriptions that an organization has acquired. For the mapping of license names as displayed on the Azure portal or the Microsoft 365 admin center against their Microsoft Graph **skuId** and **skuPartNumber** properties, see [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Organization.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                    |
+| :------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Organization.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
+| Delegated (personal Microsoft account) | Not supported.                                                                                 |
+| Application                            | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /subscribedSkus
 ```
+
 ## Optional query parameters
 
 This method supports only the `$select` [OData query parameter](/graph//query-parameters) to help customize the response. It does not support `$filter`.
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [subscribedSku](../resources/subscribedsku.md) objects in the response body.
+
 ## Example
+
 ### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_subscribedskus"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscribedSkus
 ```
@@ -90,14 +99,18 @@ GET https://graph.microsoft.com/beta/subscribedSkus
 ---
 
 ### Response
-The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.subscribedSku",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -105,10 +118,15 @@ Content-type: application/json
 {
   "value": [
     {
+      "accountName": "Sample account name",
+      "accountId": "ee045480-0260-4c1e-b946-55842502229c",
+      "appliesTo": "User",
       "capabilityStatus": "Enabled",
       "consumedUnits": 20,
+      "id": "48a80680-7326-48cd-9935-b556b81d3a4e_b05e124f-c7cc-45a0-a6aa-8cf78c946968",
       "prepaidUnits": {
         "enabled": 20,
+        "lockedOut": 0,
         "suspended": 0,
         "warning": 0
       },
@@ -121,7 +139,8 @@ Content-type: application/json
         }
       ],
       "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968",
-      "skuPartNumber": "EMSPREMIUM"
+      "skuPartNumber": "EMSPREMIUM",
+      "subscriptionIds": ["99cd2aed-d62f-4b1b-b92a-e0ddd2887742"]
     }
   ]
 }
@@ -129,7 +148,7 @@ Content-type: application/json
 
 ## See also
 
-+ [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
+- [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -144,5 +163,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
