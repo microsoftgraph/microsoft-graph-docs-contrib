@@ -16313,6 +16313,18 @@ items:
                     href: api/security-host-get-whois.md
                   - name: Get
                     href: api/security-whoisrecord-get.md
+                  - name: List
+                    href: api/security-whoisrecord-list.md
+                  - name: List history for whois
+                    href: api/security-whoisrecord-list-history.md
+              - name: Whois History Record
+                items:
+                  - name: Whois History Record
+                    href: resources/security-whoishistoyrecord.md
+                  - name: List history for whois
+                    href: api/security-whoisrecord-list-history.md
+                  - name: Get
+                    href: api/security-whoishistoryrecord-get.md
           - name: Threat intelligence indicator (preview)
             items:
               - name: Threat intelligence indicator

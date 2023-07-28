@@ -1,13 +1,13 @@
 ---
-title: "whoisRecord resource type"
-description: "Represents a whois record of a host"
+title: "whoisHistoryRecord resource type"
+description: "Represents a whois historical record of a host"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# whoisRecord resource type
+# whoisHistoryRecord resource type
 
 Namespace: microsoft.graph.security
 
@@ -15,16 +15,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a Whois entry, which communicates a registered [host](../resources/security-host.md), the contacts for that resource, and other metadata about the registration.
+Represents a historical Whois entry, which communicates a registered [host](../resources/security-host.md), the contacts for that resource, and other metadata about the registration. Historical whois records may additionally communicate details of the most recent [whoisrecord](./security-whoisrecord.md), as it is a part of the history.
 
 Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get whoisRecord for a host](../api/security-host-get-whois.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) |Get the [whoisRecord](../resources/security-whoisrecord.md) object and their properties.|
-|[Get whoisRecord](../api/security-whoisrecord-get.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)|Read the properties and relationships of a [whoisRecord](../resources/security-whoisrecord.md) object.|
-|[List history of a whois record](../api/security-whoisrecord-list-history.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)|List the [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [whoisRecord](../resources/security-whoisrecord.md).|
+|[List history for a whoisRecord](../api/security-whoisrecord-list-history.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) |Get the [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects and their properties.|
+|[Get whoisHistoryRecord](../api/security-whoishistoryrecord-get.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoishistoryrecord.md)|Read the properties and relationships of a [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -52,7 +51,6 @@ Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |host|[microsoft.graph.security.host](../resources/security-host.md)|The host associated to this whois object. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
-|history|[microsoft.graph.security.host](../resources/security-host.md)|The Collection of history associated to this whois object.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -66,7 +64,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.whoisRecord",
+  "@odata.type": "#microsoft.graph.security.whoisHistoryRecord",
   "id": "String (identifier)",
   "registrationDateTime": "String (timestamp)",
   "expirationDateTime": "String (timestamp)",

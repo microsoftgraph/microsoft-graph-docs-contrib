@@ -23,39 +23,42 @@ Inherits from [host](../resources/security-host.md).
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List components](../api/security-host-list-components.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|Get a list of **hostComponent** resources.|
-|[List cookies](../api/security-host-list-cookies.md)|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|Get a list of **hostCookie** resources.|
-|[List passiveDns](../api/security-host-list-passivedns.md)|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Get a list of **passiveDnsRecord** resources.|
-|[List passiveDnsReverse](../api/security-host-list-passivednsreverse.md)|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Get a list of **passiveDnsRecord** resources.|
-|[Get reputation](../api/security-host-get-reputation.md)|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) |Get the properties and relationships of a **hostReputation** object.|
-|[List trackers](../api/security-host-list-trackers.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|Get a list of **hostTracker** resources.|
+| Method                                                                   | Return type                                                                                       | Description                                                          |
+| :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------- |
+| [List components](../api/security-host-list-components.md)               | [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection       | Get a list of **hostComponent** resources.                           |
+| [List cookies](../api/security-host-list-cookies.md)                     | [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection             | Get a list of **hostCookie** resources.                              |
+| [List passiveDns](../api/security-host-list-passivedns.md)               | [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection | Get a list of **passiveDnsRecord** resources.                        |
+| [List passiveDnsReverse](../api/security-host-list-passivednsreverse.md) | [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection | Get a list of **passiveDnsRecord** resources.                        |
+| [Get reputation](../api/security-host-get-reputation.md)                 | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Get the properties and relationships of a **hostReputation** object. |
+| [List trackers](../api/security-host-list-trackers.md)                   | [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection           | Get a list of **hostTracker** resources.                             |
+| [Get whois](../api/security-host-get-whois.md)                           | [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)                      | Get the properties and relationships of a **whoisrecord** object.    |
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-|firstSeenDateTime|DateTimeOffset|The first date and time that this [host](../resources/security-host.md) was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.security.host](../resources/security-host.md).|
-|id|String| Unique identifier for the **hostname**. Read-only. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
-|lastSeenDateTime|DateTimeOffset|The most recent date and time that this [host](../resources/security-host.md) was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.security.host](../resources/security-host.md).|
-|registrant|String|The company or individual who registered this hostname, from WHOIS data.|
-|registrar|String|The registrar for this hostname, from WHOIS data. |
+| Property          | Type           | Description                                                                                                                                                                                                                                                                                                                                             |
+| :---------------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| firstSeenDateTime | DateTimeOffset | The first date and time that this [host](../resources/security-host.md) was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.security.host](../resources/security-host.md).       |
+| id                | String         | Unique identifier for the **hostname**. Read-only. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).                                                                                                                                                                                                               |
+| lastSeenDateTime  | DateTimeOffset | The most recent date and time that this [host](../resources/security-host.md) was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.security.host](../resources/security-host.md). |
+| registrant        | String         | The company or individual who registered this hostname, from WHOIS data.                                                                                                                                                                                                                                                                                |
+| registrar         | String         | The registrar for this hostname, from WHOIS data.                                                                                                                                                                                                                                                                                                       |
 
 ## Relationships
 
-|Relationship|Type|Description|
-|:---|:---|:---|
-|components|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|The **hostComponents** that are associated with this host. Inherited from [microsoft.graph.security.host](../resources/security-host.md).|
-|cookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|The **hostCookies** that are associated with this host. Inherited from [microsoft.graph.security.host](../resources/security-host.md).|
-|passiveDns|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Passive DNS retrieval about this host. Inherited from [microsoft.graph.security.host](../resources/security-host.md).|
-|passiveDnsReverse|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection| Reverse passive DNS retrieval about this host. Inherited from [microsoft.graph.security.host](../resources/security-host.md).|
-|reputation|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)|Represents a calculated reputation of this host. Inherited from [microsoft.graph.security.host](../resources/security-host.md).|
-|trackers|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|The **hostTrackers** that are associated with this host. Inherited from [microsoft.graph.security.host](../resources/security-host.md).|
+| Relationship      | Type                                                                                              | Description                                                                                                                               |
+| :---------------- | :------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| components        | [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection       | The **hostComponents** that are associated with this host. Inherited from [host](../resources/security-host.md). |
+| cookies           | [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection             | The **hostCookies** that are associated with this host. Inherited from [host](../resources/security-host.md).    |
+| passiveDns        | [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection | Passive DNS retrieval about this host. Inherited from [host](../resources/security-host.md).                     |
+| passiveDnsReverse | [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection | Reverse passive DNS retrieval about this host. Inherited from [host](../resources/security-host.md).             |
+| reputation        | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Represents a calculated reputation of this host. Inherited from [host](../resources/security-host.md).           |
+| trackers          | [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection           | The **hostTrackers** that are associated with this host. Inherited from [host](../resources/security-host.md).   |
+| whois             | [microsoft.graph.security.whoisrecord](../resources/security-whoisrecord.md)                      | The most recent **whoisrecord** for this host. Inherited from [host](../resources/security-host.md).             |
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -64,7 +67,8 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.security.hostname",
   "firstSeenDateTime": "String (timestamp)",
@@ -74,4 +78,3 @@ The following is a JSON representation of the resource.
   "registrant": "String"
 }
 ```
-

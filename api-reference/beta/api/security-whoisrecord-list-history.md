@@ -1,13 +1,13 @@
 ---
-title: "List whoisRecords"
-description: "Get a list of whoisRecord objects."
+title: "List whoisHistoryRecords"
+description: "List the history for a whoisRecord as whoisHistoryRecord objects."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List whoisRecords
+# Get whoisRecord
 
 Namespace: microsoft.graph.security
 
@@ -15,9 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-List a collection of [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) objects.
-
-> **Note:** This List API does require the usage of `$search`
+List the collection of [microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) , including the the properties and relationships of each [microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.
 
 ## Permissions
 
@@ -29,50 +27,24 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | ThreatIntelligence.Read.All                 |
 
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-
-```http
-GET /security/threatIntelligence/whoisRecords
+``` http
+GET /security/threatIntelligence/hosts/{hostId}/whois/history
+GET /security/threatIntelligence/whoisRecord/{id}/history
 ```
 
 ## Optional query parameters
-
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### $count
 
-`$count` is supported to return a wholistic count of the number of [whoisHistoryRecord](../resources/whoishistoryrecord.md) objects. This is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`).
-
-### $orderby
-
-`$orderby` is an optional query parameter. The following properties can be used for `$orderby` calls.
-
-| Property               | Example                              | Notes                                           |
-| :--------------------- | :----------------------------------- | :---------------------------------------------- |
-| `expirationDateTime`   | `$orderby=expirationDateTime desc`   |                                                 |
-| `host/id`              | `$orderby=host/id asc`               | The full path is required for `$orderby` usage. |
-| `registrationDateTime` | `$orderby=registrationDateTime desc` |                                                 |
-
-### $search
-
-`$search` is **required** when calling the `whoisRecords` List API. The API currently only supports searching by one field in a call.The following properties can be used for searching:
-
-| Property      | Example                                   | Notes                                                                                                    |
-| :------------ | :---------------------------------------- | :------------------------------------------------------------------------------------------------------- |
-| `abuse`       | `$search=abuse/address/state:WA`          | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `admin`       | `$search=admin/address/state:WA`          | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `billing`     | `$search=billing/address/state:WA`        | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `nameservers` | `$search=nameservers/host/id:contoso.com` | The `$search` must search against as specific host id.                                                   |
-| `noc`         | `$search=noc/address/state:WA`            | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `registrant`  | `$search=registrant/address/state:WA`     | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `registrar`   | `$search=registrar/address/state:WA`      | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `technical`   | `$search=technical/address/state:WA`      | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `zone`        | `$search=zone/address/state:WA`           | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
+`$count` is supported to return a wholistic count of the number of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects. This is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`).
 
 ### $select
 
@@ -87,56 +59,49 @@ This method supports some of the OData query parameters to help customize the re
 `$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination (or leverage the `@odata.nextLink` for server-side pagination).
 
 ## Request headers
-
-| Name          | Description               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects in the response body.
 
 ## Examples
 
 ### Request
-
 The following is an example of a request.
-
 <!-- {
   "blockType": "request",
-  "name": "list_whoisrecord"
+  "name": "list_whoishistoryrecord",
+  "sampleKeys": ["contoso.com"]
 }
 -->
-
-```http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/whoisRecords?$search=admin/address/state:WA
+``` http
+GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com/whois/history
 ```
 
+
 ### Response
-
 The following is an example of the response
-
-> **Note:** The response object shown here might be shortened for readability.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.security.whoisRecord)"
+  "@odata.type": "Collection(microsoft.graph.security.whoisHistoryRecord)"
 }
 -->
-
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.security.whoisRecord",
+      "@odata.type": "#microsoft.graph.security.whoisHistoryRecord",
       "id": "Y29udG9zby5jb20kJDY5NjQ3ODEyMDc3NDY1NzI0MzM=",
       "expirationDateTime": "2023-08-31T00:00:00Z",
       "registrationDateTime": "2022-07-30T09:43:19Z",
@@ -225,34 +190,34 @@ Content-Type: application/json
           }
       },
       "nameservers": [
-        {
-          "firstSeenDateTime": null,
-          "lastSeenDateTime": null,
-          "host": {
-              "id": "ns1-205.azure-dns.com"
+          {
+            "firstSeenDateTime": null,
+            "lastSeenDateTime": null,
+            "host": {
+                "id": "ns1-205.azure-dns.com"
+            }
+          },
+          {
+            "firstSeenDateTime": null,
+            "lastSeenDateTime": null,
+            "host": {
+                "id": "ns2-205.azure-dns.net"
+            }
+          },
+          {
+            "firstSeenDateTime": null,
+            "lastSeenDateTime": null,
+            "host": {
+                "id": "ns3-205.azure-dns.org"
+            }
+          },
+          {
+            "firstSeenDateTime": null,
+            "lastSeenDateTime": null,
+            "host": {
+                "id": "ns4-205.azure-dns.info"
+            }
           }
-        },
-        {
-          "firstSeenDateTime": null,
-          "lastSeenDateTime": null,
-          "host": {
-              "id": "ns2-205.azure-dns.net"
-          }
-        },
-        {
-          "firstSeenDateTime": null,
-          "lastSeenDateTime": null,
-          "host": {
-              "id": "ns3-205.azure-dns.org"
-          }
-        },
-        {
-          "firstSeenDateTime": null,
-          "lastSeenDateTime": null,
-          "host": {
-              "id": "ns4-205.azure-dns.info"
-          }
-        }
       ],
       "host": {
           "id": "contoso.com"
@@ -261,3 +226,4 @@ Content-Type: application/json
   ]
 }
 ```
+
