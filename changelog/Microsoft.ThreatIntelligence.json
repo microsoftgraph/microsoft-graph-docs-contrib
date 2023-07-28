@@ -39,7 +39,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "hostPairs",
           "ChangeType": "Addition",
-          "Description": "Added the **hostPairs** navigation property to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Description": "Added the **hostPairs** navigation property to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatintelligence?view=graph-rest-beta) resource.",
           "Target": "threatIntelligence"
         }
       ],
