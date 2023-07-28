@@ -16216,15 +16216,15 @@ items:
                     href: resources/security-host.md
                   - name: Get
                     href: api/security-host-get.md
-                  - name: List Children Host Pairs
-                    href: api/security-host-list-childHostPairs.md
-                  - name: List Host Pairs
+                  - name: List children host pairs
+                    href: api/security-host-list-childhostpairs.md
+                  - name: List host pairs
                     href: api/security-host-list-hostpairs.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
-                  - name: List Parent Host Pairs
+                  - name: List parent host pairs
                     href: api/security-host-list-parenthostpairs.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
