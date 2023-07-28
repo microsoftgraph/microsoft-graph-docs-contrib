@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->users()->byUserId('user-id')->authentication()->temporaryAccessPassMethods()->byTemporaryAccessPassMethodId('temporaryAccessPassAuthenticationMethod-id')->get();
+$result = $graphServiceClient->users()->byUserId('user-id')->authentication()->temporaryAccessPassMethods()->byTemporaryAccessPassAuthenticationMethodId('temporaryAccessPassAuthenticationMethod-id')->get();
 
 
 ```
