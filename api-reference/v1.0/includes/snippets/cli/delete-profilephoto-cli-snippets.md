@@ -4,6 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc users photo content put --user-id {user-id}
+mgc users photo content delete --user-id {user-id}
 
 ```

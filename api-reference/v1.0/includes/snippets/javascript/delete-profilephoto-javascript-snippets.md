@@ -10,9 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const stream = Binary data for the image;
-
 await client.api('/me/photo/$value')
-	.put(stream);
+	.delete();
 
 ```
