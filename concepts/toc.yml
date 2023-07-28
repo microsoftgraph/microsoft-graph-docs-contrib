@@ -286,6 +286,8 @@ items:
                 href: custom-connector-sdk-sample-publish.md
               - name: Surface the data in search
                 href: custom-connector-sdk-sample-search.md
+          - name: Simplify connector deployment
+            href: connecting-external-content-deploy-teams.md
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
