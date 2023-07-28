@@ -86,24 +86,28 @@ Content-length: 267
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
