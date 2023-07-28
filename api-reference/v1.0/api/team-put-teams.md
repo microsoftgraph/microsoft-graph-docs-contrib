@@ -173,4 +173,4 @@ Content-type: application/json
 ## See also
 
 - [Creating a group with a team](/graph/teams-create-group-and-team)
-
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
