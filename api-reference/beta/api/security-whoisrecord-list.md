@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List whoisRecords
+# List whoisHistoryRecords
 
 Namespace: microsoft.graph.security
 
@@ -46,7 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ### $count
 
-`$count` is supported to return a wholistic count of the number of [whoisHistoryRecord](../resources/whoishistoryrecord.md) objects. This is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`).
+`$count` is supported to return a wholistic count of the number of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects. This is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`).
 
 ### $orderby
 

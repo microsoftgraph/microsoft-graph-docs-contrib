@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get whoisRecord
+# List whoisHistoryRecords for a whoisRecord
 
 Namespace: microsoft.graph.security
 

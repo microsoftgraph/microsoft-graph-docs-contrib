@@ -16320,7 +16320,7 @@ items:
               - name: Whois History Record
                 items:
                   - name: Whois History Record
-                    href: resources/security-whoishistoyrecord.md
+                    href: resources/security-whoishistoryrecord.md
                   - name: List history for whois
                     href: api/security-whoisrecord-list-history.md
                   - name: Get
