@@ -85,22 +85,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.trainingLanguageDetail",
-    "id": "286af964-f055-7238-273d-a919192215bd",
-    "displayName": "String",
-    "description": "String",
-    "content": "String",
-    "locale": "String",
+    "id": "1cdfcb49-1065-46a6-b1c3-672071e20a6b",
+    "displayName": "Email phish prevention training",
+    "description": "Email phish prevention training",
+    "locale": "en-us",
     "createdBy": {
-      "@odata.type": "microsoft.graph.emailIdentity"
+        "email": "alexwaber@contoso.com",
+        "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+        "displayName": "Alex Waber"
     },
-    "createdDateTime": "String (timestamp)",
+    "createdDateTime": "2022-01-12T03:15:01.5906699Z",
     "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.emailIdentity"
+        "email": "alexwaber@contoso.com",
+        "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+        "displayName": "Alex Waber"
     },
-    "lastModifiedDateTime": "String (timestamp)",
-    "isDefaultLangauge": "Boolean"
-  }
+    "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
+    "isDefaultLanguage": "true"
 }
 ```

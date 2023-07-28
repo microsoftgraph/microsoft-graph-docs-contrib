@@ -85,25 +85,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.endUserNotification",
-    "id": "2e91fbe0-0c81-a814-9304-9948624ebb87",
-    "displayName": "String",
-    "description": "String",
-    "notificationType": "String",
-    "status": "String",
-    "source": "String",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.emailIdentity"
-    },
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.emailIdentity"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "supportedLocales": [
-      "String"
-    ]
-  }
+        "id": "1cdfcb49-1065-46a6-b1c3-672071e20a6b",
+        "displayName": "Microsoft End User Notification Page",
+        "description": "Microsoft End User Notification ",
+        "notificationType": "PositiveReinforcement",
+        "status": "Ready",
+        "source": "Global",
+        "createdBy": {
+            "email": "alexwaber@contoso.com",
+            "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+            "displayName": "Alex Waber"
+        },
+        "createdDateTime": "2022-01-12T03:15:01.5906699Z",
+        "lastModifiedBy": {
+            "email": "alexwaber@contoso.com",
+            "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+            "displayName": "Alex Waber"
+        },
+        "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
+        "supportedLocales": [
+            "en-us",
+            "de-de"
+        ]
 }
 ```

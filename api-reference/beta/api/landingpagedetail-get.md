@@ -85,12 +85,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.landingPageDetail",
-    "id": "d495efad-a51b-d557-7ce3-ff1c8ed7db8a",
-    "content": "String",
-    "language": "String",
-    "isDefaultLangauge": "Boolean"
-  }
+    "id": "1cdfcb49-1065-46a6-b1c3-672071e20a6b-de-de",
+    "content": "{\"landingPage\":\"<\!DOCTYPE html\> test <\html lang='en'<\/html>\"}",
+    "language": "en-us",
+    "isDefaultLanguage":"true"
 }
 ```

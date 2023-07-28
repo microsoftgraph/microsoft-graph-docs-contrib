@@ -21,7 +21,6 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List trainings](../api/attacksimulationroot-list-trainings.md)|[training](../resources/training.md) collection|Get a list of the [training](../resources/training.md) objects and their properties.|
-|[Get training](../api/training-get.md)|[training](../resources/training.md)|Read the properties and relationships of a [training](../resources/training.md) object.|
 |[Get languageDetails](../api/traininglanguagedetail-get.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md) |Get the trainingLanguageDetail resources from the languageDetails navigation property.|
 
 ## Properties

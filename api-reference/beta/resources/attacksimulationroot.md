@@ -42,7 +42,6 @@ Namespace: microsoft.graph
 |[Get simulationAutomations](../api/simulationautomation-get.md)|[simulationAutomation](../resources/simulationautomation.md) |Get an attack simulation automations for a tenant.|
 | **Training** |  |  |
 |[List trainings](../api/attacksimulationroot-list-trainings.md)|[training](../resources/training.md) collection|Get a list of the [training](../resources/training.md) objects and their properties.|
-|[Get training](../api/training-get.md)|[training](../resources/training.md) |Get an attack simulation [training](../resources/training.md) for a tenant.|
 
 ## Properties
 

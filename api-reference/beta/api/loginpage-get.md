@@ -86,22 +86,25 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.loginPage",
-    "id": "588f1ccc-011f-0d7a-5fee-d2e66a1185c3",
-    "displayName": "String",
-    "description": "String",
-    "content": "String",
-    "language": "String",
-    "status": "String",
-    "source": "String",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.emailIdentity"
-    },
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.emailIdentity"
-    },
-    "lastModifiedDateTime": "String (timestamp)"
+        "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
+        "diplayName": "AttackSimTest loginPage",
+        "description": "AttackSim Test loginPage",
+        "status": "draft",
+        "source": "tenant",
+        "language": "en",
+        "createdBy": {
+            "email": "alexwaber@contoso.com",
+            "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+            "displayName": "Alex Waber"
+        },
+        "createdDateTime": "2022-01-12T03:15:01.5906699Z",
+        "lastModifiedBy": {
+            "email": "alexwaber@contoso.com",
+            "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+            "displayName": "Alex Waber"
+        },
+        "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
+        "content": "{\"login\":\"<\!DOCTYPE html\> test <\html lang='en'<\/html>\"}"
   }
 }
 ```

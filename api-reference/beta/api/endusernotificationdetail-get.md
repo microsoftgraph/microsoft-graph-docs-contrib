@@ -83,17 +83,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.endUserNotificationDetail",
-    "id": "0a0e1090-42a9-0251-e637-0d17f32cea4b",
+    "id": "1cdfcb49-1065-46a6-b1c3-672071e20a6b-de-de",
     "sentFrom": {
-      "@odata.type": "microsoft.graph.emailIdentity"
+        "email": "alexwaber@contoso.com",
+        "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+        "displayName": "Alex Waber"
     },
-    "subject": "String",
-    "emailContent": "String",
-    "locale": "String",
-    "language": "String",
-    "isDefaultLangauge": "Boolean"
+    "subject": "Congrats for reporting phsih!"
+    "emailContent": "{\"landingPage\":\"<\!DOCTYPE html\> test <\html lang='en'<\/html>\"}",
+    "locale": "en-us",
+    "language": "English",
+    "isDefaultLanguage":"true"
   }
-}
+
 ```
