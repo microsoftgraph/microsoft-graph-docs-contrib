@@ -1,6 +1,6 @@
 ---
 title: "customTrainingSetting resource type"
-description: "Custom training setting for simulation creation."
+description: "Represents a custom training setting for simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,25 +13,29 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom training setting for simulation creation
+Represents a custom training setting for simulation creation.
 
 Inherits from [trainingSetting](../resources/trainingsetting.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |assignedTo|trainingAssignedTo collection|Assigned to user detail.|
-|description|String|Description|
-|displayName|String|Name|
+|description|String|The description of the custom training setting.|
+|displayName|String|The display name of the custom training setting.|
 |durationInMinutes|String|Training duration.|
-|settingType|trainingSettingType|Training setting type. Inherited from [trainingSetting](../resources/trainingsetting.md).The possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`.|
-|url|String|Training url.|
+|settingType|trainingSettingType|Training setting type. Possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`. Inherited from [trainingSetting](../resources/trainingsetting.md).|
+|url|String|The training URL.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.customTrainingSetting"
@@ -40,14 +44,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.customTrainingSetting",
-  "settingType": "String",
-  "assignedTo": [
-    "String"
-  ],
-  "url": "String",
-  "displayName": "String",
+  "assignedTo": ["String"],
   "description": "String",
-  "durationInMinutes": "String"
+  "displayName": "String",
+  "durationInMinutes": "String",
+  "settingType": "String",
+  "url": "String"
 }
 ```
-
