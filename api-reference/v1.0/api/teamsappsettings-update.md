@@ -56,37 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Enable installation of apps that require resource-specific consent in chats/meetings.
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "update_teamsappsettings_1"
-}
--->
-
-```http
-PATCH https://graph.microsoft.com/v1.0/teamwork/teamsAppSettings
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.teamsAppSettings",
-  "isChatResourceSpecificConsentEnabled": "true"
-}
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response"
-} -->
-
-```http
-HTTP/1.1 204 No Content
-```
-
-### Example 2: Allow Teams users to request admins for access to certain Teams Apps.
+### Example 1: Allow Teams users to request admins for access to certain Teams Apps.
 
 #### Request
 
