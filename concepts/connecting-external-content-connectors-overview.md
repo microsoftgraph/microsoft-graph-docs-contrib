@@ -19,7 +19,7 @@ Today, with Microsoft Graph connectors, the data you bring in from your organiza
 - [Microsoft Search](/microsoftsearch/overview-microsoft-search)
 - [Context IQ in Outlook on the web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) (preview)
 - [Microsoft 365 Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) (limited preview)
-- [Microsoft 365 Hub](https://office.com) (formerly known as [Office.com](https://office.com))
+- [Microsoft 365 app](https://microsoft365.com) (formerly known as [Office.com](https://office.com))
 
 >[!NOTE]
 >Microsoft Graph connectors for Microsoft 365 Copilot are in early access preview. For details about how to build a Microsoft Graph connetor that is integrated with Microsoft 365 Copilot, see [Copilot for Microsoft Graph connectors](/graph/connecting-external-content-experiences#Copilot). 
