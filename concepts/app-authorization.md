@@ -20,9 +20,7 @@ The new Data Connect app authorization experience is built into the Microsoft 36
 
 The landing page of the Data Connect applications portal is a quick view of all Data Connect applications you may be interested in, as shown in the following images:
 
-![Screenshot of a quick view of apps in the Data Connect portal.](images/data-connect-applications-quick-view.png)
-
-![Graphic showing a line entry populated in the Data Connect portal.](images/data-connect-applications-quick-view-populated-with-line-entry.png)
+![Screenshot of a quick view of apps in the Data Connect portal.](images/authorization-app-summary-table.png)
 
 You'll find the following types of applications in the portal:
 
@@ -41,7 +39,7 @@ All single-tenant apps will be populated in the table by default. Only approved,
 <!-- For this section, can we either have a set of images for the user to click through or a GIF of all wizard pages to reduce number of screenshots? -->
 Clicking on an app entry in the table will launch the app details view, with more information on what data the app requires. This wizard experience walks you through the relevant data access details, and allows you to approve or deny an app at the end. For what this looks like in the Data Connect app portal and M365 admin center, see the images below:
 
-![Graphic showing the app details view in the Data Connect portal.](images/data-connect-portal-app-details-view.png)
+![Graphic showing the app details view in the Data Connect portal.](images/authorization-app-details-overview.png)
 
 ![Graphic showing the app details view in the M365 admin center.](images/m365-admin-center-app-details-view.png)
 
