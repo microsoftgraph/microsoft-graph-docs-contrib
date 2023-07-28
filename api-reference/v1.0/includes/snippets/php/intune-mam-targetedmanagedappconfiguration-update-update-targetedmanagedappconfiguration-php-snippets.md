@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TargetedManagedAppConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.targetedManagedAppConfiguration');
+$requestBody->setOdataType('#microsoft.graph.targetedManagedAppConfiguration');
 
 $requestBody->setDisplayName('Display Name value');
 
@@ -19,7 +19,7 @@ $requestBody->setDescription('Description value');
 $requestBody->setVersion('Version value');
 
 $customSettingsKeyValuePair1 = new KeyValuePair();
-$customSettingsKeyValuePair1->set@odatatype('microsoft.graph.keyValuePair');
+$customSettingsKeyValuePair1->setOdataType('microsoft.graph.keyValuePair');
 
 $customSettingsKeyValuePair1->setName('Name value');
 

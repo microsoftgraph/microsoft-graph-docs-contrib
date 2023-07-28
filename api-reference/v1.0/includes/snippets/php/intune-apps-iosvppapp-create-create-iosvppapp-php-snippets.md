@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new IosVppApp();
-$requestBody->set@odatatype('#microsoft.graph.iosVppApp');
+$requestBody->setOdataType('#microsoft.graph.iosVppApp');
 
 $requestBody->setDisplayName('Display Name value');
 
@@ -19,7 +19,7 @@ $requestBody->setDescription('Description value');
 $requestBody->setPublisher('Publisher value');
 
 $largeIcon = new MimeContent();
-$largeIcon->set@odatatype('microsoft.graph.mimeContent');
+$largeIcon->setOdataType('microsoft.graph.mimeContent');
 
 $largeIcon->setType('Type value');
 
@@ -45,12 +45,12 @@ $requestBody->setUsedLicenseCount(0);
 
 $requestBody->setTotalLicenseCount(1);
 
-$requestBody->setReleaseDateTime(new DateTime('2017-01-01T00:01:34.7470482-08:00'));
+$requestBody->setReleaseDateTime(new \DateTime('2017-01-01T00:01:34.7470482-08:00'));
 
 $requestBody->setAppStoreUrl('https://example.com/appStoreUrl/');
 
 $licensingType = new VppLicensingType();
-$licensingType->set@odatatype('microsoft.graph.vppLicensingType');
+$licensingType->setOdataType('microsoft.graph.vppLicensingType');
 
 $licensingType->setSupportsUserLicensing(true);
 
@@ -59,7 +59,7 @@ $licensingType->setSupportsDeviceLicensing(true);
 
 $requestBody->setLicensingType($licensingType);
 $applicableDeviceType = new IosDeviceType();
-$applicableDeviceType->set@odatatype('microsoft.graph.iosDeviceType');
+$applicableDeviceType->setOdataType('microsoft.graph.iosDeviceType');
 
 $applicableDeviceType->setIPad(true);
 

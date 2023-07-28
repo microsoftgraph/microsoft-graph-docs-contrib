@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ManagedDevice();
-$requestBody->set@odatatype('#microsoft.graph.managedDevice');
+$requestBody->setOdataType('#microsoft.graph.managedDevice');
 
 $requestBody->setUserId('User Id value');
 
@@ -19,24 +19,24 @@ $requestBody->setDeviceName('Device Name value');
 $requestBody->setManagedDeviceOwnerType(new ManagedDeviceOwnerType('company'));
 
 $deviceActionResultsDeviceActionResult1 = new DeviceActionResult();
-$deviceActionResultsDeviceActionResult1->set@odatatype('microsoft.graph.deviceActionResult');
+$deviceActionResultsDeviceActionResult1->setOdataType('microsoft.graph.deviceActionResult');
 
 $deviceActionResultsDeviceActionResult1->setActionName('Action Name value');
 
 $deviceActionResultsDeviceActionResult1->setActionState(new ActionState('pending'));
 
-$deviceActionResultsDeviceActionResult1->setStartDateTime(new DateTime('2016-12-31T23:58:46.7156189-08:00'));
+$deviceActionResultsDeviceActionResult1->setStartDateTime(new \DateTime('2016-12-31T23:58:46.7156189-08:00'));
 
-$deviceActionResultsDeviceActionResult1->setLastUpdatedDateTime(new DateTime('2017-01-01T00:00:56.8321556-08:00'));
+$deviceActionResultsDeviceActionResult1->setLastUpdatedDateTime(new \DateTime('2017-01-01T00:00:56.8321556-08:00'));
 
 
 $deviceActionResultsArray []= $deviceActionResultsDeviceActionResult1;
 $requestBody->setDeviceActionResults($deviceActionResultsArray);
 
 
-$requestBody->setEnrolledDateTime(new DateTime('2016-12-31T23:59:43.797191-08:00'));
+$requestBody->setEnrolledDateTime(new \DateTime('2016-12-31T23:59:43.797191-08:00'));
 
-$requestBody->setLastSyncDateTime(new DateTime('2017-01-01T00:02:49.3205976-08:00'));
+$requestBody->setLastSyncDateTime(new \DateTime('2017-01-01T00:02:49.3205976-08:00'));
 
 $requestBody->setOperatingSystem('Operating System value');
 
@@ -52,11 +52,11 @@ $requestBody->setEasActivated(true);
 
 $requestBody->setEasDeviceId('Eas Device Id value');
 
-$requestBody->setEasActivationDateTime(new DateTime('2016-12-31T23:59:43.4878784-08:00'));
+$requestBody->setEasActivationDateTime(new \DateTime('2016-12-31T23:59:43.4878784-08:00'));
 
 $requestBody->setAzureADRegistered(true);
 
-$requestBody->setDeviceEnrollmentType(new DeviceEnrollmentType('userenrollment'));
+$requestBody->setDeviceEnrollmentType(new DeviceEnrollmentType('userEnrollment'));
 
 $requestBody->setActivationLockBypassCode('Activation Lock Bypass Code value');
 
@@ -70,7 +70,7 @@ $requestBody->setDeviceCategoryDisplayName('Device Category Display Name value')
 
 $requestBody->setIsSupervised(true);
 
-$requestBody->setExchangeLastSuccessfulSyncDateTime(new DateTime('2017-01-01T00:00:45.8803083-08:00'));
+$requestBody->setExchangeLastSuccessfulSyncDateTime(new \DateTime('2017-01-01T00:00:45.8803083-08:00'));
 
 $requestBody->setExchangeAccessState(new DeviceManagementExchangeAccessState('unknown'));
 
@@ -90,7 +90,7 @@ $requestBody->setManufacturer('Manufacturer value');
 
 $requestBody->setImei('Imei value');
 
-$requestBody->setComplianceGracePeriodExpirationDateTime(new DateTime('2016-12-31T23:56:44.951111-08:00'));
+$requestBody->setComplianceGracePeriodExpirationDateTime(new \DateTime('2016-12-31T23:56:44.951111-08:00'));
 
 $requestBody->setSerialNumber('Serial Number value');
 
@@ -101,7 +101,7 @@ $requestBody->setAndroidSecurityPatchLevel('Android Security Patch Level value')
 $requestBody->setUserDisplayName('User Display Name value');
 
 $configurationManagerClientEnabledFeatures = new ConfigurationManagerClientEnabledFeatures();
-$configurationManagerClientEnabledFeatures->set@odatatype('microsoft.graph.configurationManagerClientEnabledFeatures');
+$configurationManagerClientEnabledFeatures->setOdataType('microsoft.graph.configurationManagerClientEnabledFeatures');
 
 $configurationManagerClientEnabledFeatures->setInventory(true);
 
@@ -120,7 +120,7 @@ $requestBody->setConfigurationManagerClientEnabledFeatures($configurationManager
 $requestBody->setWiFiMacAddress('Wi Fi Mac Address value');
 
 $deviceHealthAttestationState = new DeviceHealthAttestationState();
-$deviceHealthAttestationState->set@odatatype('microsoft.graph.deviceHealthAttestationState');
+$deviceHealthAttestationState->setOdataType('microsoft.graph.deviceHealthAttestationState');
 
 $deviceHealthAttestationState->setLastUpdateDateTime('Last Update Date Time value');
 
@@ -130,7 +130,7 @@ $deviceHealthAttestationState->setDeviceHealthAttestationStatus('Device Health A
 
 $deviceHealthAttestationState->setContentVersion('Content Version value');
 
-$deviceHealthAttestationState->setIssuedDateTime(new DateTime('2016-12-31T23:58:22.1231038-08:00'));
+$deviceHealthAttestationState->setIssuedDateTime(new \DateTime('2016-12-31T23:58:22.1231038-08:00'));
 
 $deviceHealthAttestationState->setAttestationIdentityKey('Attestation Identity Key value');
 
@@ -202,7 +202,7 @@ $requestBody->setPartnerReportedThreatState(new ManagedDevicePartnerReportedHeal
 
 $requestBody->setRequireUserEnrollmentApproval(true);
 
-$requestBody->setManagementCertificateExpirationDate(new DateTime('2016-12-31T23:57:59.9789653-08:00'));
+$requestBody->setManagementCertificateExpirationDate(new \DateTime('2016-12-31T23:57:59.9789653-08:00'));
 
 $requestBody->setIccid('Iccid value');
 

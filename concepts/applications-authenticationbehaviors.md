@@ -47,31 +47,31 @@ GET https://graph.microsoft.com/beta/applications?$select=id,displayName,appId,a
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-applications-authenticationbehaviors-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/list-applications-authenticationbehaviors-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-applications-authenticationbehaviors-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/list-applications-authenticationbehaviors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-applications-authenticationbehaviors-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/list-applications-authenticationbehaviors-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-applications-authenticationbehaviors-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/list-applications-authenticationbehaviors-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-applications-authenticationbehaviors-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/list-applications-authenticationbehaviors-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-applications-authenticationbehaviors-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/list-applications-authenticationbehaviors-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-applications-authenticationbehaviors-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/beta/list-applications-authenticationbehaviors-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -97,11 +97,11 @@ GET https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e919
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-application-authenticationbehaviors-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/get-application-authenticationbehaviors-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-application-authenticationbehaviors-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/get-application-authenticationbehaviors-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

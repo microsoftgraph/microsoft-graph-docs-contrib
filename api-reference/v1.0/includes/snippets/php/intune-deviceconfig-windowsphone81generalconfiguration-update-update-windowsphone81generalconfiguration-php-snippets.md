@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new WindowsPhone81GeneralConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.windowsPhone81GeneralConfiguration');
+$requestBody->setOdataType('#microsoft.graph.windowsPhone81GeneralConfiguration');
 
 $requestBody->setDescription('Description value');
 
@@ -29,7 +29,7 @@ $requestBody->setCameraBlocked(true);
 $requestBody->setCellularBlockWifiTethering(true);
 
 $compliantAppsListAppListItem1 = new AppListItem();
-$compliantAppsListAppListItem1->set@odatatype('microsoft.graph.appListItem');
+$compliantAppsListAppListItem1->setOdataType('microsoft.graph.appListItem');
 
 $compliantAppsListAppListItem1->setName('Name value');
 
@@ -44,7 +44,7 @@ $compliantAppsListArray []= $compliantAppsListAppListItem1;
 $requestBody->setCompliantAppsList($compliantAppsListArray);
 
 
-$requestBody->setCompliantAppListType(new AppListType('appsinlistcompliant'));
+$requestBody->setCompliantAppListType(new AppListType('appsInListCompliant'));
 
 $requestBody->setDiagnosticDataBlockSubmission(true);
 
