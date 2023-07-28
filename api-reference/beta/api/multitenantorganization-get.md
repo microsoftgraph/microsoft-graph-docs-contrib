@@ -88,3 +88,17 @@ Content-Type: application/json
 }
 ```
 
+The following response shows when the requesting tenant is not part of any multi-tenant organization.
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "createdDateTime": null,
+    "displayName": null,
+    "description": null,
+    "state": "inactive"
+}
+```
+
