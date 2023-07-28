@@ -1,5 +1,5 @@
 ---
-title: "Get change notification for meeting transcripts using Microsoft Graph"
+title: "Get change notifications for meeting transcripts using Microsoft Graph"
 description: "Learn how to get notifications for meeting transcripts using Microsoft Graph APIs."
 author: "v-sdhakshina"
 ms.localizationpriority: high
@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notification for meeting transcripts using Microsoft Graph
+# Get change notifications for meeting transcripts using Microsoft Graph
 
 Change notifications enable you to subscribe to changes (create) to transcripts. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) is available after an online meeting.
 
 This article describes scenarios for the **transcript** resource. For more details, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
-## Subscribe to transcripts available at tenant-level
+## Subscribe to transcripts available at the tenant-level
 
 To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for regular scheduled meetings.
 
