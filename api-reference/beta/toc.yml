@@ -16248,18 +16248,18 @@ items:
                     href: resources/security-hostcookie.md
                   - name: Get
                     href: api/security-hostcookie-get.md
-              - name: Host Pair
+              - name: Host pair
                 items:
-                  - name: Host Pair
+                  - name: Host pair
                     href: resources/security-hostpair.md
                   - name: Get
                     href: api/security-hostpair-get.md
                   - name: List host pairs for a host
                     href: api/security-host-list-hostpairs.md
-                  - name: List Parent Host Pairs
+                  - name: List parent host pairs
                     href: api/security-host-list-parenthostpairs.md
-                  - name: List Children Host Pairs
-                    href: api/security-host-list-childHostPairs.md
+                  - name: List children host pairs
+                    href: api/security-host-list-childhostpairs.md
               - name: Host tracker
                 items:
                   - name: Host tracker
