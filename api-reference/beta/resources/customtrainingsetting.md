@@ -21,7 +21,7 @@ Inherits from [trainingSetting](../resources/trainingsetting.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|trainingAssignedTo collection|Assigned to user detail.|
+|assignedTo|trainingAssignedTo collection|User collection type whom the training should get assigned.|
 |description|String|The description of the custom training setting.|
 |displayName|String|The display name of the custom training setting.|
 |durationInMinutes|String|Training duration.|

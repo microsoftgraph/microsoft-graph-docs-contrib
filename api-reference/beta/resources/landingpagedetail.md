@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |content|String|Landing page detail content.|
 |id|String|Unique identifier for the **landingPageDetail** object. Inherited from [entity](../resources/entity.md).|
 |isDefaultLangauge|Boolean|Indicates whether this language detail is default for the landing page.|
-|language|String|Language|
+|language|String|Content lanuage for the landing page.|
 
 ## Relationships
 

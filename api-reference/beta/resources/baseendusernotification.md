@@ -1,6 +1,6 @@
 ---
 title: "baseEndUserNotification resource type"
-description: "Details required for oAuth technique"
+description: "Contains common end user notification details."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Base end user notification setting for simulation creation.
+Contains common end user notification details.
 
 ## Properties
 

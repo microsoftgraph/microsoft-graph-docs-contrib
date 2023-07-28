@@ -1,6 +1,6 @@
 ---
 title: "noTrainingNotificationSetting resource type"
-description: "Details required for oAuth technique"
+description: "No notification setting for simulation creation. Notification settings when no training is selected."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No notification setting for simulation creation.
+No notification setting for simulation creation. Notification settings when no training is selected.
 
 Inherits from [endUserNotificationSetting](../resources/endusernotificationsetting.md).
 
@@ -22,7 +22,7 @@ Inherits from [endUserNotificationSetting](../resources/endusernotificationsetti
 |Property|Type|Description|
 |:---|:---|:---|
 |notificationPreference|endUserNotificationPreference|Notification preference. Possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
-|positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|**TODO: Add Description** Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
+|positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|Notification for users who repored the phish email. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
 |settingType|endUserNotificationSettingType|The setting type. Possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
 |simulationNotification|[simulationNotification](../resources/simulationnotification.md)|The notification for the user who is part of the simulation.|
 

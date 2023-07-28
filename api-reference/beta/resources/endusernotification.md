@@ -29,13 +29,13 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the training.|
-|createdDateTime|DateTimeOffset|Date and time when the campaign was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|description|String|Description of the campaign as defined by the user.|
-|displayName|String|Name of the campaign as defined by the user.|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the notification.|
+|createdDateTime|DateTimeOffset|Date and time when the notification was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|description|String|Description of the notification as defined by the user.|
+|displayName|String|Name of the notification as defined by the user.|
 |id|String|Unique identifier for the **endUserNotification** object. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who last modified the campaign.|
-|lastModifiedDateTime|DateTimeOffset|Date and time when the campaign was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the notification was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |notificationType|endUserNotificationType|Type of notification. Possible values are: `unknown`, `positiveReinforcement`, `noTraining`, `trainingAssignment`, `trainingReminder`, `unknownFutureValue`.|
 |source|simulationContentSource|The source of the content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |status|simulationContentStatus|The status of the campaign. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
@@ -61,20 +61,20 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.endUserNotification",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
-  "notificationType": "String",
-  "status": "String",
-  "source": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.emailIdentity"
   },
   "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "description": "String",
   "lastModifiedBy": {
     "@odata.type": "microsoft.graph.emailIdentity"
   },
   "lastModifiedDateTime": "String (timestamp)",
+  "notificationType": "String",
+  "source": "String",
+  "status": "String",
   "supportedLocales": [
     "String"
   ]

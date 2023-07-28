@@ -1,6 +1,6 @@
 ---
 title: "Get endUserNotificationDetail"
-description: "Read the properties and relationships of an endUserNotificationDetail object."
+description: "Get details about an end user notification."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,8 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Read the properties and relationships of an [endUserNotificationDetail](../resources/endusernotificationdetail.md) object.
+Get details about an end user [endUserNotificationDetail](../resources/endusernotificationdetail.md).
 
 ## Permissions
 

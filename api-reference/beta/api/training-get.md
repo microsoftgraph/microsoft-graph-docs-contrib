@@ -1,6 +1,6 @@
 ---
 title: "Get training"
-description: "Read the properties and relationships of a training object."
+description: "Get an attack simulation training for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,8 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Read the properties and relationships of a [training](../resources/training.md) object.
+Get an attack simulation [training](../resources/training.md) for a tenant. 
 
 ## Permissions
 

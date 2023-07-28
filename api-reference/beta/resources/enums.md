@@ -4076,12 +4076,13 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### trainingCompletionDuration values
 
-|Member|
-|:---|
-|weekly|
-|biWeekly|
-|monthly|
-|unknownFutureValue|
+| Member                     | Value |
+| :------------------------- | :---- |
+| weekly                     | 7     |
+| biWeekly                   | 14    |
+| monthly                    | 30    |
+| unknownFutureValue         | 100   |
+
 
 ### trainingSettingType values
 

@@ -19,11 +19,11 @@ Get a list of the [endUserNotification](../resources/endusernotification.md) obj
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                 |
-|:---------------------------------------|:----------------------------------------------------------------------------|
-| Delegated (work or school account)     | AttackSimulation.ReadWrite.All, AttackSimulation.ReadWrite.All              |
-| Delegated (personal Microsoft account) | Not supported.                                                              |
-| Application                            | AttackSimulation.ReadWrite.All, AttackSimulation.ReadWrite.All              |
+| Permission type                        | Permissions (from least to most privileged)                            |
+|:---------------------------------------|:-----------------------------------------------------------------------|
+| Delegated (work or school account)     | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
+| Delegated (personal Microsoft account) | Not supported.                                                         |
+| Application                            | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
 
 ## HTTP request
 

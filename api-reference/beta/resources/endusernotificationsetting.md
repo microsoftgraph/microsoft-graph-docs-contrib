@@ -1,6 +1,6 @@
 ---
 title: "endUserNotificationSetting resource type"
-description: "Details required for oAuth technique"
+description: "End user notification setting provided by admin during a simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-End user notification setting for simulation creation.
+End user notification setting provided by admin during a simulation creation.
 
 ## Properties
 
