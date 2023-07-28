@@ -16305,14 +16305,14 @@ items:
                     href: resources/security-vulnerabilitycomponent.md
                   - name: Get
                     href: api/security-vulnerabilitycomponent-get.md
-	      - name: Whois Record
-	        items:
-	      	  - name: Whois Record
-	            href: resources/security-whoisrecord.md
-  	          - name: Get whois for a host
-	            href: api/security-host-get-whois.md
-	          - name: Get
-	            href: api/security-whoisrecord-get.md
+              - name: Whois Record
+                items:
+                  - name: Whois Record
+                    href: resources/security-whoisrecord.md
+                  - name: Get whois for a host
+                    href: api/security-host-get-whois.md
+                  - name: Get
+                    href: api/security-whoisrecord-get.md
           - name: Threat intelligence indicator (preview)
             items:
               - name: Threat intelligence indicator
