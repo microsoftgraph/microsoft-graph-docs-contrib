@@ -315,6 +315,14 @@
         {
           "Id": "550c269a-e3c6-43e8-b3b7-cc251dbf755e",
           "ApiChange": "Enumeration",
+          "ChangedApiName": "multiTenantOrganizationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **multiTenantOrganizationState** enumeration type.",
+          "Target": "multiTenantOrganizationState"
+        },
+        {
+          "Id": "550c269a-e3c6-43e8-b3b7-cc251dbf755e",
+          "ApiChange": "Enumeration",
           "ChangedApiName": "templateApplicationLevel",
           "ChangeType": "Addition",
           "Description": "Added the **templateApplicationLevel** enumeration type.",

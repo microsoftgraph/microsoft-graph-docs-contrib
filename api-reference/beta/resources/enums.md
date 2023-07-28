@@ -391,6 +391,14 @@ Namespace: microsoft.graph
 |removed|
 |unknownFutureValue|
 
+### multiTenantOrganizationState values
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
 ### templateApplicationLevel values
 
 |Member|

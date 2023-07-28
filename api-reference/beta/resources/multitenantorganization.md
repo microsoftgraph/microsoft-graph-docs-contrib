@@ -31,6 +31,7 @@ There can only be one multi-tenant organization per active tenant. It is not pos
 |description|String|Description of the multi-tenant organization.|
 |displayName|String|Display name of the multi-tenant organization.|
 |id|String|Tenant-specific object ID for the multi-tenant organization object. It is automatically generated when a multi-tenant organization object is created and stored in the local tenant. This ID is tenant-specific and does not match the object IDs of the same multi-tenant organization in other tenants. Read-only. Inherited from [entity](../resources/entity.md).|
+|state|multiTenantOrganizationState|State of the multi-tenant organization. The possible values are: `active`, `inactive`, `unknownFutureValue`. `active` indicates the multi-tenant organization is created. `inactive` indicates the multi-tenant organization is not created. |
 
 ## Relationships
 |Relationship|Type|Description|
