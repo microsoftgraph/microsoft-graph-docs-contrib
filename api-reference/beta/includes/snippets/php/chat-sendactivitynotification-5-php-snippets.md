@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SendActivityNotificationPostRequestBody();
 $topic = new TeamworkActivityTopic();
-$topic->setSource(new TeamworkActivityTopicSource('entityurl'));
+$topic->setSource(new TeamworkActivityTopicSource('entityUrl'));
 
 $topic->setValue('https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2');
 
@@ -25,7 +25,7 @@ $previewText->setContent('New Task Created');
 
 $requestBody->setPreviewText($previewText);
 $recipient = new ChatMembersNotificationRecipient();
-$recipient->set@odatatype('microsoft.graph.chatMembersNotificationRecipient');
+$recipient->setOdataType('microsoft.graph.chatMembersNotificationRecipient');
 
 $recipient->setChatId('19:1c3af46e9e0f4a5293343c8813c47619@thread.v2');
 

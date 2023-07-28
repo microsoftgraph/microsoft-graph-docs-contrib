@@ -103,6 +103,7 @@ Content-type: application/json
 
 - [Configuring the buit-in tab types](/graph/teams-configuring-builtin-tabs)
 - [Add app to team](team-post-installedapps.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -117,5 +118,4 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
 
