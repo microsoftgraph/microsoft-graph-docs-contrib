@@ -289,6 +289,24 @@
     {
       "ChangeList": [
         {
+          "Id": "7cd18c8c-0160-47ce-a87c-bb90f3d67212",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesSecurityIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesSecurityIdentifier** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        },
+      ],
+      "Id": "7cd18c8c-0160-47ce-a87c-bb90f3d67212",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-28T17:55:51.6093472Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
           "ApiChange": "Property",
           "ChangedApiName": "allowUserConsentForRiskyApps",
