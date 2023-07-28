@@ -104,6 +104,10 @@ Content-type: application/zip
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-teamsapp-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -126,8 +130,7 @@ Content-Type: application/json
 {
   "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
   "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
-  "name": "Test App",
-  "version": "1.0.0",
+  "displayName": "Test App",
   "distributionMethod": "organization"
 }
 ```
@@ -168,6 +171,10 @@ Content-type: application/zip
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-teamsapp-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-teamsapp-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -186,8 +193,7 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps/$entity",
   "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
   "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
-  "name": "Test App",
-  "version": "1.0.0",
+  "displayName": "Test App",
   "distributionMethod": "organization"
 }
 ```
@@ -196,7 +202,7 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
 
 #### Request
 
-**HTTP**
+
 <!-- {
   "blockType": "request",
   "name": "create_teamsapp_3",
@@ -212,8 +218,6 @@ If-Match: InFtSStsNVJHVWdzWUJRU2ZVWGp4RWc9PSI=
   "publishingState":"published"
 }
 ```
-
----
 
 #### Response
 
@@ -242,3 +246,8 @@ Content-type: application/json
     "createdBy": null
 }
 ```
+
+## See also
+
+- [App catalog C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/csharp)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

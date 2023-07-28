@@ -39,7 +39,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 |comments|[microsoft.graph.security.alertComment](security-alertComment.md) collection|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
 |createdDateTime|DateTimeOffset|Time when Microsoft 365 Defender created the alert.|
 |description|String|String value describing each alert.|
-|detectionSource|[microsoft.graph.security.detectionSource](#detectionsource-values)|Detection technology or sensor that identified the notable component or activity.|
+|detectionSource|[microsoft.graph.security.detectionSource](#detectionsource-values)|Detection technology or sensor that identified the notable component or activity. Possible values are: `unknown`, `microsoftDefenderForEndpoint`, `antivirus`, `smartScreen`, `customTi`, `microsoftDefenderForOffice365`, `automatedInvestigation`, `microsoftThreatExperts`, `customDetection`, `microsoftDefenderForIdentity`, `cloudAppSecurity`, `microsoft365Defender`, `azureAdIdentityProtection`, `manual`, `microsoftDataLossPrevention`, `appGovernancePolicy`, `appGovernanceDetection`, `unknownFutureValue`, `microsoftDefenderForCloud`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoftDefenderForCloud`.|
 |detectorId|String|The ID of the detector that triggered the alert.|
 |determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)|Specifies the result of the investigation, whether the alert represents a true attack and if so, the nature of the attack. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |evidence|[microsoft.graph.security.alertEvidence](security-alertEvidence.md) collection|Collection of evidence related to the alert.|
@@ -53,7 +53,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 |providerAlertId|String|The ID of the alert as it appears in the security provider product that generated the alert.|
 |recommendedActions|String|Recommended response and remediation actions to take in the event this alert was generated.|
 |resolvedDateTime|DateTimeOffset|Time when the alert was resolved.|
-|serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)|The service or product that created this alert. Possible values are: `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftCloudAppSecurity`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `aadIdentityProtection`, `appGovernance`, `dataLossPrevention`.|
+|serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)|The service or product that created this alert. Possible values are: `unknown`, `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftDefenderForCloudApps`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `azureAdIdentityProtection`, `microsoftAppGovernance`, `dataLossPrevention`, `unknownFutureValue`, `microsoftDefenderForCloud`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoftDefenderForCloud`.|
 |severity|[microsoft.graph.security.alertSeverity](#alertseverity-values)|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |status|[microsoft.graph.security.alertStatus](#alertstatus-values)|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
 |tenantId|String|The Azure Active Directory tenant the alert was created in.|
@@ -125,9 +125,11 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | microsoftDefenderForCloudApps| Microsoft Defender for Cloud Apps.             |
 | microsoftDefenderForOffice365| Microsoft Defender For Office365.              |
 | microsoft365Defender         | Microsoft 365 Defender.                        |
+| azureAdIdentityProtection    | Azure Active Directory Identity Protection.    |
 | microsoftAppGovernance       | Microsoft app governance.                      |
-| microsoftDataLossPrevention  | Microsoft Purview Data Loss Prevention.        |
+| dataLossPrevention           | Microsoft Purview Data Loss Prevention.        |
 | unknownFutureValue           | Evolvable enumeration sentinel value. Do not use.|
+| microsoftDefenderForCloud    | Microsoft Defender for Cloud.                  |
 
 
 ### detectionSource values 
@@ -152,6 +154,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | appGovernancePolicy            | App governance policy.                                       |
 | appGovernanceDetection         | App governance detection.                                    |
 | unknownFutureValue             | Evolvable enumeration sentinel value. Do not use.            |
+| microsoftDefenderForCloud      | Microsoft Defender for Cloud.                                |
 
 
 ## Relationships

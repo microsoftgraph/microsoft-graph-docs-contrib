@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/prof
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-educationsynchronizationprofile-status-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-educationsynchronizationprofile-status-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

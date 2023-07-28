@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a specific endpoint o
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "groups"
-author: "psaffaie"
+author: "Jordanndahl"
 ---
 
 # Get endpoint
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-endpoint-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-endpoint-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

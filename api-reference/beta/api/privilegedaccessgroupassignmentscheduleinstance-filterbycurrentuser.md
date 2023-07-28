@@ -90,12 +90,11 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/a
 [!INCLUDE [sample-code](../includes/snippets/php/privilegedaccessgroupassignmentscheduleinstancethisfilterbycurrentuser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedaccessgroupassignmentscheduleinstancethisfilterbycurrentuser-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/privilegedaccessgroupassignmentscheduleinstancethisfilterbycurrentuser-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response.

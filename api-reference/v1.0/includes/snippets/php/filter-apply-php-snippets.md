@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ApplyPostRequestBody();
 $criteria = new WorkbookFilterCriteria();
@@ -38,7 +38,7 @@ $criteria->setFilterOn('filterOn-value');
 $requestBody->setCriteria($criteria);
 
 
-$graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->tablesById('workbookTable-id')->columnsById('workbookTableColumn-id')->filter()->apply()->post($requestBody);
+$graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->workbook()->tables()->byWorkbookTableId('workbookTable-id')->columns()->byWorkbookTableColumnId('workbookTableColumn-id')->filter()->apply()->post($requestBody);
 
 
 ```

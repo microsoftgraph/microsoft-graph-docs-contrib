@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ContentType();
 $requestBody->setName('docSet');
@@ -25,7 +25,7 @@ $requestBody->setGroup('Document Set Content Types');
 
 
 
-$result = $graphServiceClient->sitesById('site-id')->contentTypes()->post($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->contentTypes()->post($requestBody);
 
 
 ```

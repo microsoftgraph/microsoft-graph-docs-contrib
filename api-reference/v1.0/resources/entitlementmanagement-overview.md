@@ -23,13 +23,16 @@ The entitlement management resource types include:
 - [accessPackageAssignmentRequest](accesspackageassignmentrequest.md): Created by a user who wishes to obtain an access package assignment.
 - [accessPackageAssignment](accesspackageassignment.md): An assignment of an access package to a particular subject, for a period of time.
 - [accessPackageCatalog](accesspackagecatalog.md): A container for access packages.
+- [accessPackageResource](accesspackageresource.md): A reference to a resource associated with an access package catalog.
+- [accessPackageResourceRequest](accesspackageresourcerequest.md): A request to add a resource to an access package catalog.
+- [accessPackageResourceEnvironment](accesspackageresourceenvironment.md): A reference to the geolocation of the resource. Applicable to Multi-Geo SharePoint Online sites.
 - [connectedOrganization](connectedorganization.md): A connected organization for external users who can request access.
 - [entitlementManagementSettings](entitlementmanagementsettings.md): Tenant-wide settings for Azure AD entitlement management.
 - [approval](approval.md): represents the decisions associated with an access package request.
 
 In addition, you can manage role assignments for users, groups of users, and service principals to entitlement management-specific roles through entitlement management [role definitions](unifiedroledefinition.md).
 
-Note that the entitlement management feature, including the API, is included in Azure AD Premium P2. The tenant where entitlement management is being used must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription. For more information about license requirements for the entitlement management feature, see [Entitlement management license requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements).
+The tenant where entitlement management is being used must have sufficient purchased or trial licenses. For more information about license requirements for the entitlement management feature, see [Entitlement management license requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements).
 
 ## Methods
 

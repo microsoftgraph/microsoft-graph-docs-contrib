@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
 $headers = [
@@ -20,7 +20,7 @@ $queryParameters->select = ["displayName"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->contactFoldersById('contactFolder-id')->contacts()->delta()->get($requestConfiguration);
+$result = $graphServiceClient->me()->contactFolders()->byContactFolderId('contactFolder-id')->contacts()->delta()->get($requestConfiguration);
 
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SendActivityNotificationPostRequestBody();
 $topic = new TeamworkActivityTopic();
@@ -38,7 +38,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->usersById('user-id')->teamwork()->sendActivityNotification()->post($requestBody);
+$graphServiceClient->users()->byUserId('user-id')->teamwork()->sendActivityNotification()->post($requestBody);
 
 
 ```

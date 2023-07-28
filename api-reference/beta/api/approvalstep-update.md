@@ -19,18 +19,36 @@ Apply approve or deny decision on an [approvalStep](../resources/approvalStep.md
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### Permissions required for calling this API for entitlement management
+
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
+### Permissions required for calling this API for PIM for groups
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+To update an approval decision in entitlement management:
 
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}
+```
+
+To update an approval decision in PIM for groups:
+
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps/{id}
 ```
 
 ## Request headers
@@ -59,7 +77,6 @@ If successful, this method returns a `204 No Content` response code in the respo
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -84,6 +101,10 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/patch-approvalstep-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/patch-approvalstep-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -23,11 +23,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:------------------------------------|
-| Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All**, Directory.ReadWrite.All** |
+| Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All<sup>1</sup>, Directory.ReadWrite.All<sup>1</sup> |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note**: 
+<br><sup>1</sup> These permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using these permissions going forward.
 
 ## HTTP request
 
@@ -41,7 +42,7 @@ GET /appCatalogs/teamsApps
 
 This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
-Using `$expand=AppDefinitions` will return more information about the state of the app, such as the **publishingState**, which reflects the app submission review status and returns whether an app has been approved, rejected, or remains under review. 
+Using `$expand=AppDefinitions` will return more information about the state of the app, such as the **publishingState**, which reflects the app submission review status and returns whether an app has been approved, rejected, or remains under review.
 
 > **Note:** You can filter on any of the fields of the [teamsApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
@@ -83,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionM
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapps-filter-distributionmethod-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-teamsapps-filter-distributionmethod-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-teamsapps-filter-distributionmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -101,6 +106,10 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionM
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-teamsapps-filter-distributionmethod-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapps-filter-distributionmethod-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -156,6 +165,10 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq 'b1c535
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-filter-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-teamsapp-filter-id-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-teamsapp-filter-id-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -174,6 +187,10 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq 'b1c535
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-teamsapp-filter-id-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapp-filter-id-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -202,7 +219,8 @@ Content-Type: application/json
   ]
 }
 ```
-### Example 3: Find application based on the Teams app manifest ID.
+
+### Example 3: Find application based on the Teams app manifest ID
 
 The following example lists applications that match the **id** specified in the Teams app manifest. In the example, the manifest ID of the Teams app is `cf1ba4c7-f94e-4d80-ba90-5594b641a8ee`.
 
@@ -224,6 +242,10 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=externalId eq
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-filter-externalid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-teamsapp-filter-externalid-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-teamsapp-filter-externalid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -242,6 +264,10 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=externalId eq
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-teamsapp-filter-externalid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapp-filter-externalid-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -296,6 +322,10 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df2
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-filter-expand-appdefinitions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-teamsapp-with-filter-expand-appdefinitions-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-teamsapp-with-filter-expand-appdefinitions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -314,6 +344,10 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df2
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-teamsapp-with-filter-expand-appdefinitions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapp-with-filter-expand-appdefinitions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -348,8 +382,14 @@ Content-Type: application/json
           "azureADAppId": null,
           "displayName": "Test App",
           "version": "1.0.1",
-          "requiredResourceSpecificApplicationPermissions": [],
-          "publishingState": "published"
+          "publishingState": "published",
+          "authorization": 
+          {
+            "requiredPermissionSet": 
+            {
+              "resourceSpecificPermissions": []
+            }
+          }
         }
       ]
     }
@@ -379,6 +419,10 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinition
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-bots-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-teamsapp-with-bots-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-teamsapp-with-bots-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -397,6 +441,10 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinition
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-teamsapp-with-bots-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapp-with-bots-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -433,7 +481,6 @@ Content-Type: application/json
                     "azureADAppId": null,
                     "displayName": "Ducks-3",
                     "version": "1.0.9",
-                    "requiredResourceSpecificApplicationPermissions": [],
                     "publishingState": "rejected",
                     "shortDescription": "quaerat quasi magnam. slight change. 5",
                     "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
@@ -447,6 +494,13 @@ Content-Type: application/json
                             "displayName": null,
                             "userIdentityType": "aadUser"
                         }
+                    },
+                    "authorization": 
+                    {
+                      "requiredPermissionSet": 
+                      {
+                        "resourceSpecificPermissions": []
+                      }
                     },
                     "bot": {
                         "id": "bb9f67a4-893b-48d7-ab17-40ed466c0f16"
@@ -467,7 +521,6 @@ Content-Type: application/json
                     "azureADAppId": "d75abc57-8255-4309-9c29-a3c689e20341",
                     "displayName": "Self-Install-App-E2E-Tests",
                     "version": "6.0.0",
-                    "requiredResourceSpecificApplicationPermissions": [],
                     "publishingState": "submitted",
                     "shortDescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
                     "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
@@ -482,8 +535,120 @@ Content-Type: application/json
                             "userIdentityType": "aadUser"
                         }
                     },
+                    "authorization": 
+                    {
+                      "requiredPermissionSet": 
+                      {
+                        "resourceSpecificPermissions": []
+                      }
+                    },
                     "bot": {
                         "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
+### Example 7: List applications with a given ID and return only the resource specific permissions required by the app
+
+The following example lists the apps with a given ID and returns the resource-specific permissions that are associated with it.
+
+#### Request
+
+The following is an example of a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_with_rsc_permissions"
+}-->
+
+```msgraph-interactive
+GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id+eq+'a5228c26-a9ae-4702-90e0-79a5246d2f7d'&$expand=appDefinitions($select=id,authorization)
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-rsc-permissions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-teamsapp-with-rsc-permissions-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-teamsapp-with-rsc-permissions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-with-rsc-permissions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-with-rsc-permissions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-teamsapp-with-rsc-permissions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-teamsapp-with-rsc-permissions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapp-with-rsc-permissions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp_with_rsc_permissions",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps(appDefinitions(id,authorization))",
+    "value": [
+        {
+            "id": "a5228c26-a9ae-4702-90e0-79a5246d2f7d",
+            "externalId": "a55ec032-36e9-4b60-b604-34b2fe55abf1",
+            "displayName": "teamsDelegatedRscTests",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('a5228c26-a9ae-4702-90e0-79a5246d2f7d')/appDefinitions(id,authorization)",
+            "appDefinitions": [
+                {
+                    "id": "YTUyMjhjMjYtYTlhZS00NzAyLTkwZTAtNzlhNTI0NmQyZjdkIyMxLjAuMCMjUHVibGlzaGVk",
+                    "authorization": {
+                        "requiredPermissionSet": {
+                            "resourceSpecificPermissions": [
+                                {
+                                    "permissionValue": "Channel.Create.Group",
+                                    "permissionType": "application"
+                                },
+                                {
+                                    "permissionValue": "Channel.Delete.Group",
+                                    "permissionType": "application"
+                                },
+                                {
+                                    "permissionValue": "ChannelMeeting.ReadBasic.Group",
+                                    "permissionType": "delegated"
+                                }
+                            ]
+                        }
                     }
                 }
             ]
@@ -496,4 +661,6 @@ Content-Type: application/json
 
 - [List apps installed in a team](team-list-installedapps.md) <!-- - [List apps installed in a chat](chat-list-installedapps.md) -->
 - [List apps installed in the personal scope of a user](userteamwork-list-installedapps.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+- [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 

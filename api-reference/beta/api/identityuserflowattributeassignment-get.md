@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAss
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-identityuserflowattributeassignment-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-identityuserflowattributeassignment-3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -166,6 +170,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAss
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-identityuserflowattributeassignment-expand-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-identityuserflowattributeassignment-expand-3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

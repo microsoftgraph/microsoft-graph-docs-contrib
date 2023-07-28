@@ -114,6 +114,10 @@ POST https://graph.microsoft.com/beta/users/458d4c95-124e-49da-ba9d-1dd0387e682e
 [!INCLUDE [sample-code](../includes/snippets/php/create-calendarpermission-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-calendarpermission-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/teams/{id}/primaryChannel
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-primarychannel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-primarychannel-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

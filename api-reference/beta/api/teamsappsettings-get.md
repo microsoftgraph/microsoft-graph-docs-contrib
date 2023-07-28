@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-teamsappsettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-teamsappsettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

@@ -1,7 +1,7 @@
 ---
 title: "Working with groups in Microsoft Graph"
 description: "Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: conceptualPageType
@@ -87,6 +87,13 @@ Content-type: application/json
 ```
 
 To learn more about Microsoft 365 groups and the administrator experiences, see [Learn about Microsoft 365 groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+
+### Settings for Microsoft 365 groups
+
+Apart from configuring the standard group properties, you can also configure the following settings for Microsoft 365 groups.
+
+- [Group expiration](../resources/grouplifecyclepolicy.md)
+- [Group settings](/graph/group-directory-settings) such as whether the group can have guests as members, who is allowed to create groups, allowed words in group names, and so on.
 
 ## Security groups and mail-enabled security groups
 
@@ -193,6 +200,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/groups-overview-createdynamicgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/groups-overview-createdynamicgroup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -7,20 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CreateReplyAllPostRequestBody();
 $message = new Message();
-$attachmentsAttachment1 = new Attachment();
-$attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
+$attachmentsAttachment1 = new FileAttachment();
+$attachmentsAttachment1->setOdataType('#microsoft.graph.fileAttachment');
 
 $attachmentsAttachment1->setName('guidelines.txt');
 
-$additionalData = [
-		'contentBytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
-];
-$attachmentsAttachment1->setAdditionalData($additionalData);
-
+$attachmentsAttachment1->setContentBytes(base64_decode('bWFjIGFuZCBjaGVlc2UgdG9kYXk='));
 
 
 $attachmentsArray []= $attachmentsAttachment1;
@@ -33,7 +29,7 @@ $requestBody->setComment('if the project gets approved, please take a look at th
 
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->createReplyAll()->post($requestBody);
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->createReplyAll()->post($requestBody);
 
 
 ```

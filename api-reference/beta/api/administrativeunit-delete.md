@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-administrativeunit-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-administrativeunit-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

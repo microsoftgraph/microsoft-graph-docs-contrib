@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -26,13 +26,11 @@ unifiedRolePermission := graphmodels.NewUnifiedRolePermission()
 allowedResourceActions := []string {
 	"Microsoft.CloudPC/CloudPCs/Read",
 	"Microsoft.CloudPC/CloudPCs/Reprovision",
-
 }
 unifiedRolePermission.SetAllowedResourceActions(allowedResourceActions)
 
 rolePermissions := []graphmodels.UnifiedRolePermissionable {
 	unifiedRolePermission,
-
 }
 requestBody.SetRolePermissions(rolePermissions)
 

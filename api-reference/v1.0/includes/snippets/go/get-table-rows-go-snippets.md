@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
 	  //other-imports
 )
 
@@ -19,11 +19,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestTop := int32(5)
 requestSkip := int32(5)
 
-requestParameters := &graphconfig.DriveItemItemItemWorkbookTableItemRowsRequestBuilderGetQueryParameters{
+requestParameters := &graphdrives.DriveItemItemItemWorkbookTableItemRowsRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Skip: &requestSkip,
 }
-configuration := &graphconfig.DriveItemItemItemWorkbookTableItemRowsRequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.DriveItemItemItemWorkbookTableItemRowsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

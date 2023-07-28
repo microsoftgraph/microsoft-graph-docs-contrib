@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new TasksRequestBuilderGetRequestConfiguration();
 $queryParameters = TasksRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +15,7 @@ $queryParameters->filter = "businessScenarioProperties/externalContextId eq 'War
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->tasks()->get($requestConfiguration);
+$result = $graphServiceClient->solutions()->businessScenarios()->byBusinessScenarioId('businessScenario-id')->planner()->tasks()->get($requestConfiguration);
 
 
 ```

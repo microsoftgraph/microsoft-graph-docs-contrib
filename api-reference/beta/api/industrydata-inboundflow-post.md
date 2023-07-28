@@ -119,6 +119,10 @@ Content-length: 246
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-inboundflow-from-inboundflows-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-inboundflow-from-inboundflows-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

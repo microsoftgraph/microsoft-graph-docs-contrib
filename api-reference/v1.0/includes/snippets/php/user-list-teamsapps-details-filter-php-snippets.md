@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new InstalledAppsRequestBuilderGetRequestConfiguration();
 $queryParameters = InstalledAppsRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -16,7 +16,7 @@ $queryParameters->filter = "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->usersById('user-id')->teamwork()->installedApps()->get($requestConfiguration);
+$result = $graphServiceClient->users()->byUserId('user-id')->teamwork()->installedApps()->get($requestConfiguration);
 
 
 ```

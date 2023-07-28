@@ -86,7 +86,11 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationalbrandinglocalization-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-organizationalbrandinglocalization-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -119,6 +123,95 @@ Content-Type: application/json
         "aadcdn.msftauthimages.net",
         "aadcdn.msauthimages.net"
     ],
+    "contentCustomization": {
+      "attributeCollectionRelativeUrl": "dbd5a2dd-dt17xdjgu8kxc14xcav-rckknamct7yytiih-vm-ksm/logintenantbranding/1033/attributecollection?ts=638151133931615483",
+      "attributeCollection": [
+            {
+                "key": "AttributeCollection_Description",
+                "value": "We just need a little more information to set up your account."
+            },
+            {
+                "key": "AttributeCollection_Title",
+                "value": "Add details"
+            },
+            {
+                "key": "Attribute_City",
+                "value": "City"
+            },
+            {
+                "key": "Attribute_Country",
+                "value": "Country/Region"
+            },
+            {
+                "key": "Attribute_DisplayName",
+                "value": "Display Name"
+            },
+            {
+                "key": "Attribute_Email",
+                "value": "Email Address"
+            },
+            {
+                "key": "Attribute_Generic_ConfirmationLabel",
+                "value": "Re-enter"
+            },
+            {
+                "key": "Attribute_GivenName",
+                "value": "Given Name"
+            },
+            {
+                "key": "Attribute_JobTitle",
+                "value": "Job Title"
+            },
+            {
+                "key": "Attribute_Password",
+                "value": "Password"
+            },
+            {
+                "key": "Attribute_Password_MismatchErrorString",
+                "value": "Passwords do not match."
+            },
+            {
+                "key": "Attribute_PostalCode",
+                "value": "Postal Code"
+            },
+            {
+                "key": "Attribute_State",
+                "value": "State/Province"
+            },
+            {
+                "key": "Attribute_StreetAddress",
+                "value": "Street Address"
+            },
+            {
+                "key": "Attribute_Surname",
+                "value": "Sasha Surname"
+            },
+            {
+                "key": "SignIn_Description",
+                "value": "Sign in to access"
+            },
+            {
+                "key": "SignIn_Title",
+                "value": "Sign in"
+            },
+            {
+                "key": "SignUp_Description",
+                "value": "Sign up to access"
+            },
+            {
+                "key": "SignUp_Title",
+                "value": "Create account"
+            },
+            {
+                "key": "SisuOtc_Title",
+                "value": "Enter code"
+            },
+            {
+                "key": "Attribute_extension_82936c774db949fcac549215e8857017_Total_Job_Experience_Years",
+                "value": "Total_Job_Experience_Years"
+            }
+        ]
+    },     
     "customAccountResetCredentialsUrl": null,
     "customCannotAccessYourAccountText": null,
     "customCannotAccessYourAccountUrl": null,
@@ -190,6 +283,10 @@ GET https://graph.microsoft.com/beta/organization/99b24e1b-abec-4598-9d63-a2baf0
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -293,6 +390,10 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationalbranding-frlocale-default-bannerlogo-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-organizationalbranding-frlocale-default-bannerlogo-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

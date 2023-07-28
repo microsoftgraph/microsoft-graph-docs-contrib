@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthCo
 [!INCLUDE [sample-code](../includes/snippets/php/delete-certificatebasedauthconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-certificatebasedauthconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

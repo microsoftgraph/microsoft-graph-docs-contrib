@@ -67,31 +67,34 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-privilegedaccessgroupeligibilityschedulerequest-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-privilegedaccessgroupeligibilityschedulerequest-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-privilegedaccessgroupeligibilityschedulerequest-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-privilegedaccessgroupeligibilityschedulerequest-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-privilegedaccessgroupeligibilityschedulerequest-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-privilegedaccessgroupeligibilityschedulerequest-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response.
@@ -159,35 +162,38 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests$select=principalId,action,groupId
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests?$select=principalId,action,groupId
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-privilegedaccessgroupeligibilityschedulerequest-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-privilegedaccessgroupeligibilityschedulerequest-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-privilegedaccessgroupeligibilityschedulerequest-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-privilegedaccessgroupeligibilityschedulerequest-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-privilegedaccessgroupeligibilityschedulerequest-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-privilegedaccessgroupeligibilityschedulerequest-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-privilegedaccessgroup-eligibilityschedulerequest-beta-e2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response.

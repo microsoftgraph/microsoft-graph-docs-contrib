@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
+	  graphdirectory "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
 	  //other-imports
 )
 
@@ -18,10 +18,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "recommendationType eq 'turnOffPerUserMFA'"
 
-requestParameters := &graphconfig.DirectoryRecommendationsRequestBuilderGetQueryParameters{
+requestParameters := &graphdirectory.DirectoryRecommendationsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.DirectoryRecommendationsRequestBuilderGetRequestConfiguration{
+configuration := &graphdirectory.DirectoryRecommendationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

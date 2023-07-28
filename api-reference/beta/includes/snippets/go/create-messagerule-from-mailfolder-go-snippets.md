@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -25,7 +25,6 @@ requestBody.SetIsEnabled(&isEnabled)
 conditions := graphmodels.NewMessageRulePredicates()
 senderContains := []string {
 	"adele",
-
 }
 conditions.SetSenderContains(senderContains)
 requestBody.SetConditions(conditions)
@@ -42,7 +41,6 @@ recipient.SetEmailAddress(emailAddress)
 
 forwardTo := []graphmodels.Recipientable {
 	recipient,
-
 }
 actions.SetForwardTo(forwardTo)
 stopProcessingRules := true

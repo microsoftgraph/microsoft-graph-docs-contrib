@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.IdentityGovernance.EntitlementManagement.Assignments["{accessPackageAssignment-id}"].GetAsync((requestConfiguration) =>
+var result = await graphClient.IdentityGovernance.EntitlementManagement.Assignments.AdditionalAccessWithAccessPackageIdWithIncompatibleAccessPackageId("{accessPackageId}","{incompatibleAccessPackageId}").GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Expand = new string []{ "target" };
 });

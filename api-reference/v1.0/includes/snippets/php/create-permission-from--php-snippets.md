@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Permission();
-$requestBody->setRoles(['write', ]);
+$requestBody->setRoles(['write', 	]);
 
 $grantedToIdentitiesIdentitySet1 = new IdentitySet();
 $grantedToIdentitiesIdentitySet1Application = new Identity();
@@ -27,7 +27,7 @@ $requestBody->setGrantedToIdentities($grantedToIdentitiesArray);
 
 
 
-$result = $graphServiceClient->sitesById('site-id')->permissions()->post($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->permissions()->post($requestBody);
 
 
 ```

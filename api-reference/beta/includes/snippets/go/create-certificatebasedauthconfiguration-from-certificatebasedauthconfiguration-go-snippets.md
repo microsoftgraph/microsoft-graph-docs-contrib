@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -26,7 +26,6 @@ certificateAuthority.SetCertificate(&certificate)
 
 certificateAuthorities := []graphmodels.CertificateAuthorityable {
 	certificateAuthority,
-
 }
 requestBody.SetCertificateAuthorities(certificateAuthorities)
 

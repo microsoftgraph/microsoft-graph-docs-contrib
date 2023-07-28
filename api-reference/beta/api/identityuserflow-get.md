@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/identity/userFlows/B2C_1_Pol1
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-identityuserflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-identityuserflow-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

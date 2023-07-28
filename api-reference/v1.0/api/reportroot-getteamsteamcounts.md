@@ -71,8 +71,9 @@ The CSV file has the following headers for columns:
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "reportroot_getteamsteamcounts_csv"
 }-->
 
@@ -80,12 +81,37 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/reports/getTeamsTeamCounts(period='D7')?$format=text/csv
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getteamsteamcounts-csv-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reportroot-getteamsteamcounts-csv-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getteamsteamcounts-csv-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getteamsteamcounts-csv-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/reportroot-getteamsteamcounts-csv-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/reportroot-getteamsteamcounts-csv-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following is an example of the response.
 
 <!-- { "blockType": "ignored" } --> 
-
 ```http
 HTTP/1.1 302 Found
 Content-Type: text/plain
@@ -97,13 +123,13 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "String"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
-Report Refresh Date,Report Date,Public Teams,Active Public Teams,Private Teams,Active Private Teams,
+
+Report Refresh Date,Report Date,Public Teams,Active Public Teams,Private Teams,Active Private Teams
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 

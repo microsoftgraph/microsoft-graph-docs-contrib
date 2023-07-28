@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ExtensionProperty();
 $requestBody->setName('jobGroup');
 
 $requestBody->setDataType('String');
 
-$requestBody->setTargetObjects(['User', ]);
+$requestBody->setTargetObjects(['User', 	]);
 
 
 
-$result = $graphServiceClient->applicationsById('application-id')->extensionProperties()->post($requestBody);
+$result = $graphServiceClient->applications()->byApplicationId('application-id')->extensionProperties()->post($requestBody);
 
 
 ```

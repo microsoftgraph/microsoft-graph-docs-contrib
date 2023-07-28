@@ -108,6 +108,10 @@ GET https://graph.microsoft.com/beta/me/people
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-person-collection-beta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-person-collection-beta-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

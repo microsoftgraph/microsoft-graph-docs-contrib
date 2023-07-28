@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -32,7 +32,6 @@ driveItem1.SetId(&id)
 children := []graphmodels.DriveItemable {
 	driveItem,
 	driveItem1,
-
 }
 requestBody.SetChildren(children)
 additionalData := map[string]interface{}{

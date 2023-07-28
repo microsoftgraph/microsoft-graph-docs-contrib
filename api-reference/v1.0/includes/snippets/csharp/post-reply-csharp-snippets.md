@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Posts.Item.Reply.ReplyPostRequestBody
@@ -59,7 +61,7 @@ var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Posts.Item.Reply.
 		},
 		Attachments = new List<Attachment>
 		{
-			new Attachment
+			new FileAttachment
 			{
 				OdataType = "#microsoft.graph.fileAttachment",
 				LastModifiedDateTime = DateTimeOffset.Parse("datetime-value"),

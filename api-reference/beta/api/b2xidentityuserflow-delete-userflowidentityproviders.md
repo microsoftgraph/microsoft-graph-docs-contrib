@@ -94,6 +94,10 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{userflow-id}/user
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-identity-b2xuserflows-userflow-userflowidentityproviders-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-identity-b2xuserflows-userflow-userflowidentityproviders-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

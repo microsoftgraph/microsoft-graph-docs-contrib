@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TransferPostRequestBody();
 $transferTarget = new InvitationParticipantInfo();
@@ -50,7 +50,7 @@ $transferee->setParticipantId('909c6581-5130-43e9-88f3-fcb3582cde37');
 $requestBody->setTransferee($transferee);
 
 
-$graphServiceClient->communications()->callsById('call-id')->transfer()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->transfer()->post($requestBody);
 
 
 ```

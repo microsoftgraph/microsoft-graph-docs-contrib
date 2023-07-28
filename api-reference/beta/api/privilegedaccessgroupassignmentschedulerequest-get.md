@@ -88,8 +88,11 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/a
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedaccessgroupassignmentschedulerequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-privilegedaccessgroupassignmentschedulerequest-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 The following is an example of the response.

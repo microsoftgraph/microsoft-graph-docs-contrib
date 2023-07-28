@@ -83,6 +83,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-connectorgroup-from-connector-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-connectorgroup-from-connector-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.

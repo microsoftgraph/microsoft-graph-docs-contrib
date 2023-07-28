@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /applications/{application ObjectId}/extensionProperties
+POST /applications(appId='{appId}')/extensionProperties
 ```
 
 ## Request headers
@@ -48,6 +49,7 @@ In the request body, provide an [extensionProperty](../resources/extensionproper
 |:-------------|:------------|:------------|
 |dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>|
 |name|String| Name of the extension property. Not nullable. |
+|isMultiValued|Boolean| Defines the directory extension as a multi-valued property. When `true`, the directory extension property can store a collection of objects of the **dataType**; for example, a collection of integers. The default value is `false`.|
 |targetObjects|String collection| The Microsoft Graph resources that can use the extension property. All values must be in PascalCase. The following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`AdministrativeUnit`</li><li>`Application`</li><li>`Device`</li><li>`Organization`</li></ul>|
 
 
@@ -74,6 +76,7 @@ Content-type: application/json
 {
     "name": "jobGroup",
     "dataType": "String",
+    "isMultiValued": true,
     "targetObjects": [
         "User"
     ]
@@ -104,6 +107,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-extensionproperty-from-application-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-extensionproperty-from-application-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -126,6 +133,7 @@ Content-type: application/json
     "deletedDateTime": null,
     "appDisplayName": "b2c-extensions-app. Do not modify. Used by AADB2C for storing user data.",
     "dataType": "String",
+    "isMultiValued": true, 
     "isSyncedFromOnPremises": false,
     "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
     "targetObjects": [

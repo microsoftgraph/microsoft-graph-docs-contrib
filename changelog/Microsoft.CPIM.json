@@ -137,6 +137,184 @@
       "CreatedDateTime": "2023-05-15T00:00:00.2570466Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationAttributeCollectionInputType",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationAttributeCollectionInputType** enumeration type.",
+          "Target": "authenticationAttributeCollectionInputType"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "userType",
+          "ChangeType": "Addition",
+          "Description": "Added the **userType** enumeration type.",
+          "Target": "userType"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationAttributeCollectionInputConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAttributeCollectionInputConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAttributeCollectionInputConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "authenticationAttributeCollectionInputConfiguration"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationAttributeCollectionOptionConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAttributeCollectionOptionConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAttributeCollectionOptionConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "authenticationAttributeCollectionOptionConfiguration"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationAttributeCollectionPage",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAttributeCollectionPage](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAttributeCollectionPage?view=graph-rest-beta) resource type.",
+          "Target": "authenticationAttributeCollectionPage"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationAttributeCollectionPageViewConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAttributeCollectionPageViewConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAttributeCollectionPageViewConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "authenticationAttributeCollectionPageViewConfiguration"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionExternalUsersSelfServiceSignUp",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionExternalUsersSelfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionExternalUsersSelfServiceSignUp?view=graph-rest-beta) resource type.",
+          "Target": "onAttributeCollectionExternalUsersSelfServiceSignUp"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionHandler?view=graph-rest-beta) resource type.",
+          "Target": "onAttributeCollectionHandler"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp?view=graph-rest-beta) resource type.",
+          "Target": "onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAuthenticationMethodLoadStartHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAuthenticationMethodLoadStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAuthenticationMethodLoadStartHandler?view=graph-rest-beta) resource type.",
+          "Target": "onAuthenticationMethodLoadStartHandler"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp",
+          "ChangeType": "Addition",
+          "Description": "Added the [onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp?view=graph-rest-beta) resource type.",
+          "Target": "onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onInteractiveAuthFlowStartHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onInteractiveAuthFlowStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onInteractiveAuthFlowStartHandler?view=graph-rest-beta) resource type.",
+          "Target": "onInteractiveAuthFlowStartHandler"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onUserCreateStartExternalUsersSelfServiceSignUp",
+          "ChangeType": "Addition",
+          "Description": "Added the [onUserCreateStartExternalUsersSelfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/onUserCreateStartExternalUsersSelfServiceSignUp?view=graph-rest-beta) resource type.",
+          "Target": "onUserCreateStartExternalUsersSelfServiceSignUp"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onUserCreateStartHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onUserCreateStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onUserCreateStartHandler?view=graph-rest-beta) resource type.",
+          "Target": "onUserCreateStartHandler"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationEventsFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationEventsFlow](https://learn.microsoft.com/en-us/graph/api/resources/authenticationEventsFlow?view=graph-rest-beta) resource",
+          "Target": "authenticationEventsFlow"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalUsersSelfServiceSignUpEventsFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalUsersSelfServiceSignUpEventsFlow](https://learn.microsoft.com/en-us/graph/api/resources/externalUsersSelfServiceSignUpEventsFlow?view=graph-rest-beta) resource",
+          "Target": "externalUsersSelfServiceSignUpEventsFlow"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationEventsFlows",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationEventsFlows** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityContainer?view=graph-rest-beta) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionListener](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionListener?view=graph-rest-beta) resource",
+          "Target": "onAttributeCollectionListener"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAuthenticationMethodLoadStartListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAuthenticationMethodLoadStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onAuthenticationMethodLoadStartListener?view=graph-rest-beta) resource",
+          "Target": "onAuthenticationMethodLoadStartListener"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onInteractiveAuthFlowStartListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onInteractiveAuthFlowStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onInteractiveAuthFlowStartListener?view=graph-rest-beta) resource",
+          "Target": "onInteractiveAuthFlowStartListener"
+        },
+        {
+          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onUserCreateStartListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onUserCreateStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onUserCreateStartListener?view=graph-rest-beta) resource",
+          "Target": "onUserCreateStartListener"
+        }
+      ],
+      "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-17T00:00:00.8326093Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }

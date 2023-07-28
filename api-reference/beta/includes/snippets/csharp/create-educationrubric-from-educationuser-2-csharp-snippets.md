@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new EducationRubric
@@ -24,15 +26,10 @@ var requestBody = new EducationRubric
 				Content = "",
 				ContentType = BodyType.Text,
 			},
-			Grading = new EducationAssignmentGradeType
+			Grading = new EducationAssignmentPointsGradeType
 			{
 				OdataType = "#microsoft.graph.educationAssignmentPointsGradeType",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"maxPoints" , 2
-					},
-				},
+				MaxPoints = 2f,
 			},
 		},
 		new RubricLevel
@@ -43,15 +40,10 @@ var requestBody = new EducationRubric
 				Content = "",
 				ContentType = BodyType.Text,
 			},
-			Grading = new EducationAssignmentGradeType
+			Grading = new EducationAssignmentPointsGradeType
 			{
 				OdataType = "#microsoft.graph.educationAssignmentPointsGradeType",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"maxPoints" , 1
-					},
-				},
+				MaxPoints = 1f,
 			},
 		},
 	},
@@ -114,7 +106,7 @@ var requestBody = new EducationRubric
 			Weight = 50.0f,
 		},
 	},
-	Grading = new EducationAssignmentGradeType
+	Grading = new EducationAssignmentPointsGradeType
 	{
 		OdataType = "#microsoft.graph.educationAssignmentPointsGradeType",
 	},

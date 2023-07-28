@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -30,7 +30,6 @@ keyValuePair.SetValue(&value)
 
 parameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
-
 }
 requestBody.SetParameters(parameters)
 vendorInformation := graphmodels.NewSecurityVendorInformation()

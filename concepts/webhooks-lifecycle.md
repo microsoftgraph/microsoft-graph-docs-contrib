@@ -3,7 +3,7 @@ title: "Reduce missing change notifications and removed subscriptions"
 description: "Subscribe to Microsoft Graph lifecycle notifications to help you minimize the risk of missed change notifications or removed subscriptions."
 author: "FaithOmbongi"
 ms.author: ombongifaith
-ms.reviewer: jumasure
+ms.reviewer: keylimesoda
 ms.localizationpriority: high
 ms.prod: "change-notifications"
 ms.custom: graphiamtop20
@@ -23,6 +23,14 @@ There are three types of lifecycle events:
 If you ignore these events, it might break the change notification flow; you can handle the events by implementing logic in your app to resume a continuous change notification flow.
 
 This article introduces lifecycle notifications in Microsoft Graph change notifications and provides guidance for handling the notifications.
+
+## Supported resources
+
+While you can provide a **lifecycleNotificationUrl** when creating a subscription on any resource type, lifecycle notifications are currently supported only for the following resource types.
+
+- reauthorizationRequired notifications - All resources
+- subscriptionRemoved notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][], Teams [chatMessage][]
+- missed notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][]
 
 ## Configure your subscription to receive lifecycle notifications
 
@@ -50,27 +58,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/change-notifications-lifecycle-notifications-lifecyclenotificationurl-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-lifecycle-notifications-lifecyclenotificationurl-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/change-notifications-lifecycle-notifications-lifecyclenotificationurl-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-lifecycle-notifications-lifecyclenotificationurl-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/change-notifications-lifecycle-notifications-lifecyclenotificationurl-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/change-notifications-lifecycle-notifications-lifecyclenotificationurl-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -104,14 +120,6 @@ The **lifecycleEvent** can be `subscriptionRemoved`, `missed`, or `reauthorizati
 A lifecycle notification doesn't contain any information about a specific resource, because it isn't related to a resource change, but to the subscription state change. Similar to change notifications, lifecycle notifications can be batched together and received as a collection, each with a possibly different **lifecycleEvent** value. Process each lifecycle notification in the batch accordingly.
 
 When you process the lifecycle notification and resume the flow of change notifications, the change notifications start flowing to the **notificationUrl**.
-
-### Resources that support lifecycle notifications
-
-While you can provide a **lifecycleNotificationUrl** when creating a subscription on any resource type, lifecycle notifications are currently supported only for the following resource types.
-
-- reauthorizationRequired notifications - All resources
-- subscriptionRemoved notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][], Teams [chatMessage][]
-- missed notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][]
 
 ## Responding to reauthorizationRequired notifications
 

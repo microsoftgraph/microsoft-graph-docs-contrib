@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignUp/l
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-userflowlanguageconfiguration-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-userflowlanguageconfiguration-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

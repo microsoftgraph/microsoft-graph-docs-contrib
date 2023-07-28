@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 [!INCLUDE [sample-code](../includes/snippets/php/create-onpremisesagentgroup-from-onpremisesagent-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-onpremisesagentgroup-from-onpremisesagent-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of OData reference to an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.

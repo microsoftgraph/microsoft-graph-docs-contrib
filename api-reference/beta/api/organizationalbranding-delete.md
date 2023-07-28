@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276
 [!INCLUDE [sample-code](../includes/snippets/php/delete-organizationalbranding-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-organizationalbranding-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -95,6 +95,10 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-analytics-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-analytics-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

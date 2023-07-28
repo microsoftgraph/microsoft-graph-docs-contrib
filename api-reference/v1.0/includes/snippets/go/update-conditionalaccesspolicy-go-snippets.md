@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -23,8 +23,7 @@ signInRiskLevels := []graphmodels.RiskLevelable {
 	riskLevel := graphmodels.MEDIUM_RISKLEVEL 
 	conditions.SetRiskLevel(&riskLevel) 
 	riskLevel := graphmodels.LOW_RISKLEVEL 
-	conditions.SetRiskLevel(&riskLevel) 
-
+	conditions.SetRiskLevel(&riskLevel)
 }
 conditions.SetSignInRiskLevels(signInRiskLevels)
 requestBody.SetConditions(conditions)

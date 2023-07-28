@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Drives/Item/Items/Item/Workbook/Tables/Item/Columns/Item/Filter/Apply"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewApplyPostRequestBody()
+requestBody := graphdrives.NewApplyPostRequestBody()
 criteria := graphmodels.NewWorkbookFilterCriteria()
 criterion1 := "criterion1-value"
 criteria.SetCriterion1(&criterion1) 

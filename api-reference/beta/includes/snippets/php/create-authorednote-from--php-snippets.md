@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AuthoredNote();
 $content = new ItemBody();
@@ -19,7 +19,7 @@ $content->setContentType(new BodyType('text'));
 $requestBody->setContent($content);
 
 
-$result = $graphServiceClient->privacy()->subjectRightsRequestsById('subjectRightsRequest-id')->notes()->post($requestBody);
+$result = $graphServiceClient->privacy()->subjectRightsRequests()->bySubjectRightsRequestId('subjectRightsRequest-id')->notes()->post($requestBody);
 
 
 ```

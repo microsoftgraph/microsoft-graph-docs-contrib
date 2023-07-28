@@ -99,6 +99,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/trustframeworkkeyset-uploadpkcs12-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/trustframeworkkeyset-uploadpkcs12-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

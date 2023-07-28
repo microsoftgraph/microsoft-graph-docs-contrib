@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Printer();
 $location = new PrinterLocation();
@@ -27,7 +27,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->print()->printersById('printer-id')->patch($requestBody);
+$result = $graphServiceClient->print()->printers()->byPrinterId('printer-id')->patch($requestBody);
 
 
 ```

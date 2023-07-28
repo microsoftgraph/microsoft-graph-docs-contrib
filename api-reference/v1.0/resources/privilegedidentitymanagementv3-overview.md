@@ -1,5 +1,5 @@
 ---
-title: "Overview of role management through the privileged identity management (PIM) API"
+title: "Manage Azure AD role assignments using the privileged identity management (PIM) APIs"
 description: "Privileged Identity Management (PIM) is a feature of Azure AD Identity Governance that enables you to manage, control, and monitor access to important resources in your organization."
 author: "rkarim-ms"
 ms.localizationpriority: medium
@@ -8,16 +8,16 @@ doc_type: resourcePageType
 ms.date: 12/07/2022
 ---
 
-# Overview of role management through the privileged identity management (PIM) API
+# Manage Azure AD role assignments using PIM APIs
 
-Privileged Identity Management (PIM) is a feature of [Azure AD Identity Governance](#see-also) that enables you to manage, control, and monitor access to important resources in your organization. This access is enabled through privileged roles and role-based access control (RBAC) and can be granted to users, role-assignable groups, or service principals. The resources can be in Azure AD, Azure, and other Microsoft cloud services such as Microsoft 365 or Microsoft Intune.
+Privileged Identity Management (PIM) is a feature of [Azure AD Identity Governance](#see-also) that enables you to manage, control, and monitor access to important resources in your organization. One method through which principals such as users, groups, and service principals (applications) are granted access to important resources is through assignment of [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
-The Microsoft Graph PIM API for role management allows you to govern privileged access and limit excessive access. This article introduces the governance capabilities of PIM APIs in Microsoft Graph.
+The PIM for Azure AD roles APIs allow you to govern privileged access and limit excessive access to Azure AD roles. This article introduces the governance capabilities of PIM for Azure AD roles APIs in Microsoft Graph.
 
 > [!NOTE]
 > To manage Azure resource roles use the [Azure Resource Manager (ARM) APIs for PIM](/rest/api/authorization/privileged-role-eligibility-rest-sample).
 
-## PIM API for managing role assignments
+## PIM APIs for managing active role assignments
 
 PIM allows you to manage active role assignments by creating permanent assignments or temporary assignments. Use the [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) resource type and its related methods to manage role assignments.
 
@@ -35,7 +35,7 @@ The following table lists scenarios for using PIM to manage role assignments and
 |A principal that has activated their eligible role assignment deactivates it when they no longer need access     |   [Create roleAssignmentScheduleRequests](../api/rbacapplication-post-roleassignmentschedulerequests.md)      |
 |A principal deactivates, extends, or renews their own role assignment.     |   [Create roleAssignmentScheduleRequests](../api/rbacapplication-post-roleassignmentschedulerequests.md)      |
 
-## PIM API for managing role eligibilities
+## PIM APIs for managing role eligibilities
 
 Your principals may not require permanent role assignments because they may not require the privileges granted through the privileged role all the time. In this case, PIM also allows you to create role eligibilities and assign them to the principals. With role eligibilities, the principal activates the role when they need to perform privileged tasks. The activation is always time-bound for a maximum of 8 hours. The role eligibility can also be a permanent eligibility or a temporary eligibility.
 
@@ -103,7 +103,7 @@ For more information about permissions to call PIM APIs, see the [Microsoft Grap
 
 ## Licensing
 
-The PIM API requires an Azure AD Premium P2 license. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
+The tenant where Privileged Identity Management is being used must have sufficient purchased or trial licenses. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
 
 ## See also
 

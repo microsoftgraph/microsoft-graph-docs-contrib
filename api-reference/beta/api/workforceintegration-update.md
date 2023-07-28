@@ -38,6 +38,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization | Bearer {token} |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
@@ -110,8 +111,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-workforceintegration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-workforceintegration-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-workforceintegration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

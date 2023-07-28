@@ -1,7 +1,7 @@
 ---
 title: "Receive change notifications through Azure Event Hubs"
 description: "Change notifications can be delivered via different channels, including webhooks and Azure Event Hubs. This article walks you through how to get change notifications through Azure Event Hubs."
-author: "jumasure"
+author: "keylimesoda"
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
@@ -188,23 +188,31 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/change-notifications-eventhubs-create-changetrackingapp-sp-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-eventhubs-create-changetrackingapp-sp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-eventhubs-create-changetrackingapp-sp-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-eventhubs-create-changetrackingapp-sp-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/change-notifications-eventhubs-create-changetrackingapp-sp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/change-notifications-eventhubs-create-changetrackingapp-sp-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/change-notifications-eventhubs-create-changetrackingapp-sp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-eventhubs-create-changetrackingapp-sp-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/change-notifications-eventhubs-create-changetrackingapp-sp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/change-notifications-eventhubs-create-changetrackingapp-sp-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/change-notifications-eventhubs-create-changetrackingapp-sp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/change-notifications-eventhubs-create-changetrackingapp-sp-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

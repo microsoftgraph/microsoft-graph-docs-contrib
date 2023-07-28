@@ -22,6 +22,14 @@ includeTargetsList.add(includeTargets);
 authenticationMethodsRegistrationCampaign.includeTargets = includeTargetsList;
 registrationEnforcement.authenticationMethodsRegistrationCampaign = authenticationMethodsRegistrationCampaign;
 authenticationMethodsPolicy.registrationEnforcement = registrationEnforcement;
+ReportSuspiciousActivitySettings reportSuspiciousActivitySettings = new ReportSuspiciousActivitySettings();
+reportSuspiciousActivitySettings.state = AdvancedConfigState.ENABLED;
+IncludeTarget includeTarget = new IncludeTarget();
+includeTarget.targetType = AuthenticationMethodTargetType.GROUP;
+includeTarget.id = "all_users";
+reportSuspiciousActivitySettings.includeTarget = includeTarget;
+reportSuspiciousActivitySettings.voiceReportingCode = 0;
+authenticationMethodsPolicy.reportSuspiciousActivitySettings = reportSuspiciousActivitySettings;
 
 graphClient.policies().authenticationMethodsPolicy()
 	.buildRequest()

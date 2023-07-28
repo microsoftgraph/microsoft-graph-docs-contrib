@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Attachment();
-$requestBody->set@odatatype('#Microsoft.OutlookServices.FileAttachment');
+$requestBody->setOdataType('#Microsoft.OutlookServices.FileAttachment');
 
 $requestBody->setName('name-value');
 
@@ -27,7 +27,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->attachments()->post($requestBody);
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->attachments()->post($requestBody);
 
 
 ```

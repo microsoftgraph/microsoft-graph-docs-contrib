@@ -41,7 +41,7 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
     1. Select **Azure, Self-Hosted**, and choose **Continue**.
 
         ![A screenshot of the integration runtime setup with Azure, Self-Hosted highlighted.](../concepts/images/data-connect-synapse-IR.png)
-
+ig
     1. For the network environment, select **Azure**, and then choose **Continue**.
 
         ![A screenshot of the Integration runtime setup with Azure selected for network environment and Continue highlighted.](../concepts/images/data-connect-synapse-azure.png)

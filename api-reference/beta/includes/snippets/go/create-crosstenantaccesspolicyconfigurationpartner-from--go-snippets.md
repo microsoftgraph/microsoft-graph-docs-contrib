@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -32,7 +32,6 @@ crossTenantAccessPolicyTarget.SetTargetType(&targetType)
 
 targets := []graphmodels.CrossTenantAccessPolicyTargetable {
 	crossTenantAccessPolicyTarget,
-
 }
 usersAndGroups.SetTargets(targets)
 b2bDirectConnectOutbound.SetUsersAndGroups(usersAndGroups)
@@ -51,7 +50,6 @@ crossTenantAccessPolicyTarget.SetTargetType(&targetType)
 
 targets := []graphmodels.CrossTenantAccessPolicyTargetable {
 	crossTenantAccessPolicyTarget,
-
 }
 applications.SetTargets(targets)
 b2bDirectConnectInbound.SetApplications(applications)

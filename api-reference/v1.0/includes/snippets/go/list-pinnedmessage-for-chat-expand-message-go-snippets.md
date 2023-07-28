@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/chats"
+	  graphchats "github.com/microsoftgraph/msgraph-sdk-go/chats"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.ChatItemPinnedMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphchats.ChatItemPinnedMessagesRequestBuilderGetQueryParameters{
 	Expand: [] string {"message"},
 }
-configuration := &graphconfig.ChatItemPinnedMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphchats.ChatItemPinnedMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

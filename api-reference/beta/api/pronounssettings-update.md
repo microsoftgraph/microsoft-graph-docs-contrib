@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-| Delegated (work or school account)     | Organization.ReadWrite.All |
+| Delegated (work or school account)     | PeopleSettings.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /organization/{organizationId}/settings/pronouns
+PATCH /admin/people/pronouns
 ```
 
 ## Request headers
@@ -53,8 +53,6 @@ The following table specifies the properties that can be updated.
 |:---|:---|:---|
 |isEnabledInOrganization|Boolean|`true` to enable pronouns in the organization, `false` otherwise. The default is `false`, and pronouns are disabled. Required.|
 
-
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [pronounsSettings](../resources/pronounssettings.md) object in the response body.
@@ -70,7 +68,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pronouns
+PATCH https://graph.microsoft.com/beta/admin/people/pronouns
 Content-Type: application/json
 
 {
@@ -102,6 +100,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-pronounssettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-pronounssettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -121,4 +123,3 @@ Content-Type: application/json
   "isEnabledInOrganization": true
 }
 ```
-

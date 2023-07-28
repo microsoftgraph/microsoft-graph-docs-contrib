@@ -3,7 +3,7 @@ title: "Get incremental changes for users"
 description: "Use delta query to discover changes without fetching the entire set of users to compare changes. Example shows a series of requests to track changes to users."
 author: "FaithOmbongi"
 ms.author: ombongifaith
-ms.reviewer: "jumasure"
+ms.reviewer: "keylimesoda"
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -58,23 +58,35 @@ GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,s
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delta-query-users-initial-request-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/delta-query-users-initial-request-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/delta-query-users-initial-request-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delta-query-users-initial-request-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/delta-query-users-initial-request-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delta-query-users-initial-request-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/delta-query-users-initial-request-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delta-query-users-initial-request-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/delta-query-users-initial-request-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delta-query-users-initial-request-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/delta-query-users-initial-request-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/delta-query-users-initial-request-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/delta-query-users-initial-request-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -139,23 +151,35 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delta-query-users-nextlink-request-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/delta-query-users-nextlink-request-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/delta-query-users-nextlink-request-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delta-query-users-nextlink-request-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/delta-query-users-nextlink-request-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delta-query-users-nextlink-request-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/delta-query-users-nextlink-request-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delta-query-users-nextlink-request-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/delta-query-users-nextlink-request-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delta-query-users-nextlink-request-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/delta-query-users-nextlink-request-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/delta-query-users-nextlink-request-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/delta-query-users-nextlink-request-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -208,23 +232,35 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwE
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delta-query-users-nextlink-request2-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/delta-query-users-nextlink-request2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/delta-query-users-nextlink-request2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delta-query-users-nextlink-request2-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/delta-query-users-nextlink-request2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delta-query-users-nextlink-request2-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/delta-query-users-nextlink-request2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delta-query-users-nextlink-request2-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/delta-query-users-nextlink-request2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delta-query-users-nextlink-request2-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/delta-query-users-nextlink-request2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/delta-query-users-nextlink-request2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/delta-query-users-nextlink-request2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -277,23 +313,35 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delta-query-users-deltalink-request-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/delta-query-users-deltalink-request-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/delta-query-users-deltalink-request-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delta-query-users-deltalink-request-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/delta-query-users-deltalink-request-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delta-query-users-deltalink-request-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/delta-query-users-deltalink-request-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delta-query-users-deltalink-request-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/delta-query-users-deltalink-request-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delta-query-users-deltalink-request-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/delta-query-users-deltalink-request-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/delta-query-users-deltalink-request-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/delta-query-users-deltalink-request-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

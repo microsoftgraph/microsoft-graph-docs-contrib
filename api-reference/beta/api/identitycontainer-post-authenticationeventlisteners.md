@@ -12,7 +12,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object. Only the [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) type is supported.
+Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object. You can create one of the following subtypes that are derived from **authenticationEventListener**.
+
+- [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md)
+- [onInteractiveAuthFlowStartListener resource type](../resources/oninteractiveauthflowstartlistener.md)
+- [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md)
+- [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md)
+- [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,10 +52,14 @@ You can specify the following properties when creating an **authenticationEventL
 
 |Property|Type|Description|
 |:---|:---|:---|
-|priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |authenticationEventsFlowId|String|The identifier of the authentication events flow. Optional.|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
+|handler|[onAttributeCollectionHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onAttributeCollectionListener** listener type.|
+|handler|[onAuthenticationMethodLoadStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onAuthenticationMethodLoadStartListener** listener type.|
+|handler|[onInteractiveAuthFlowStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onInteractiveAuthFlowStartListener** listener type.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
+|handler|[onUserCreateStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onUserCreateStartListener** listener type.|
+|priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 
 ## Response
 
@@ -59,6 +69,7 @@ If successful, this method returns a `201 Created` response code and an [authent
 
 ### Request
 The following is an example of a request to create a onTokenIssuanceStartListener.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_authenticationeventlistener_from_"
@@ -91,6 +102,35 @@ Content-length: 312
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventlistener-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventlistener-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationeventlistener-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationeventlistener-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationeventlistener-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationeventlistener-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationeventlistener-from--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following is an example of the response

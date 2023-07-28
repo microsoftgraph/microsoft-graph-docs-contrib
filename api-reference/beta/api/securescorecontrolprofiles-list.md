@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 [!INCLUDE [sample-code](../includes/snippets/powershell/securescorecontrolprofiles-list-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/securescorecontrolprofiles-list-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

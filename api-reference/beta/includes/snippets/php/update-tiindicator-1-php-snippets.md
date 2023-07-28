@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TiIndicator();
 $requestBody->setDescription('description-updated');
 
 
 
-$result = $graphServiceClient->security()->tiIndicatorsById('tiIndicator-id')->patch($requestBody);
+$result = $graphServiceClient->security()->tiIndicators()->byTiIndicatorId('tiIndicator-id')->patch($requestBody);
 
 
 ```

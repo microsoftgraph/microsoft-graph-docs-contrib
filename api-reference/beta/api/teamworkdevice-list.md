@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/beta/teamwork/devices
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-teamworkdevice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamworkdevice-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks
 [!INCLUDE [sample-code](../includes/snippets/powershell/outlookuser-get-tasks-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/outlookuser-get-tasks-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

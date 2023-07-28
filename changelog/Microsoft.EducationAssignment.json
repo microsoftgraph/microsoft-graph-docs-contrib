@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "53dcb5cc-6ce2-4c0b-acf3-0b94cff013e3",
+          "ApiChange": "Member",
+          "ChangedApiName": "released",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `released` member from the **educationSubmissionStatus** enumeration.",
+          "Target": "educationSubmissionStatus"
+        }
+      ],
+      "Id": "53dcb5cc-6ce2-4c0b-acf3-0b94cff013e3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-12T21:07:29.9361123Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0a697e64-e12c-40ac-b133-a0faeab783c4",
+          "ApiChange": "Member",
+          "ChangedApiName": "released",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `released` member from the **educationSubmissionStatus** enumeration.",
+          "Target": "educationSubmissionStatus"
+        }
+      ],
+      "Id": "0a697e64-e12c-40ac-b133-a0faeab783c4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-31T21:07:29.9361123Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
           "ApiChange": "Method",
           "ChangedApiName": "GET",

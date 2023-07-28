@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/education/classes/dacbf757-888d-42ae-b701-5
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-class-category-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-class-category-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

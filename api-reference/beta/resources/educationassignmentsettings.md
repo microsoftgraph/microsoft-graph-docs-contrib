@@ -21,7 +21,6 @@ Specifies class-level assignments settings.
 |[Get educationAssignmentSettings](../api/educationassignmentsettings-get.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Read the properties and relationships of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object.|
 |[Update educationAssignmentSettings](../api/educationassignmentsettings-update.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Update the properties of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object.|
 |[List educationGradingCategory](../api/educationassignment-list-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md) collection|Get the educationGradingCategory resources from the gradingCategory navigation property.|
-|[Update educationGradingCategory](../api/educationgradingcategory-update.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Update the  gradingCategory on the assignment settings.|
 
 ## Properties
 |Property|Type|Description|

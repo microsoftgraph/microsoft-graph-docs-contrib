@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Drives/Item/Items/Item/Workbook/Tables/Item/Sort/Apply"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewApplyPostRequestBody()
+requestBody := graphdrives.NewApplyPostRequestBody()
 
 
 workbookSortField := graphmodels.NewWorkbookSortField()
@@ -38,7 +39,6 @@ workbookSortField.SetIcon(icon)
 
 fields := []graphmodels.WorkbookSortFieldable {
 	workbookSortField,
-
 }
 requestBody.SetFields(fields)
 matchCase := true

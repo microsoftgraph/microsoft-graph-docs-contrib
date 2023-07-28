@@ -7,25 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new NoncustodialDataSource();
 $requestBody->setApplyHoldToSource(true);
 
-$dataSource = new DataSource();
-$dataSource->set@odatatype('microsoft.graph.ediscovery.userSource');
+$dataSource = new UserSource();
+$dataSource->setOdataType('microsoft.graph.ediscovery.userSource');
 
-$additionalData = [
-		'email' => 'adelev@contoso.com', 
-];
-$dataSource->setAdditionalData($additionalData);
-
+$dataSource->setEmail('adelev@contoso.com');
 
 
 $requestBody->setDataSource($dataSource);
 
 
-$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->noncustodialDataSources()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->noncustodialDataSources()->post($requestBody);
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -44,7 +44,6 @@ chatMessageMention.SetMentioned(mentioned)
 
 mentions := []graphmodels.ChatMessageMentionable {
 	chatMessageMention,
-
 }
 requestBody.SetMentions(mentions)
 

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Team();
 $memberSettings = new TeamMemberSettings();
@@ -33,7 +33,7 @@ $funSettings->setGiphyContentRating(new GiphyRatingType('strict'));
 $requestBody->setFunSettings($funSettings);
 
 
-$result = $graphServiceClient->groupsById('group-id')->team()->put($requestBody);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->team()->put($requestBody);
 
 
 ```

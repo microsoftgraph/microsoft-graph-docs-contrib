@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new LearningProvider();
 $requestBody->setDisplayName('Microsoft');
@@ -22,9 +22,11 @@ $requestBody->setLongLogoWebUrlForLightTheme('https://support.content.office.net
 
 $requestBody->setLoginWebUrl('https://www.linkedin.com/learning-login/teams');
 
+$requestBody->setIsCourseActivitySyncEnabled(true);
 
 
-$result = $graphServiceClient->employeeExperience()->learningProvidersById('learningProvider-id')->patch($requestBody);
+
+$result = $graphServiceClient->employeeExperience()->learningProviders()->byLearningProviderId('learningProvider-id')->patch($requestBody);
 
 
 ```

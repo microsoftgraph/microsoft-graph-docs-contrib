@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Communications.Calls.Item.Answer.AnswerPostRequestBody
@@ -13,15 +15,10 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Answer.AnswerPos
 	{
 		Modality.Audio,
 	},
-	MediaConfig = new MediaConfig
+	MediaConfig = new AppHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.appHostedMediaConfig",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"blob" , "<Media Session Configuration Blob>"
-			},
-		},
+		Blob = "<Media Session Configuration Blob>",
 	},
 };
 await graphClient.Communications.Calls["{call-id}"].Answer.PostAsync(requestBody);

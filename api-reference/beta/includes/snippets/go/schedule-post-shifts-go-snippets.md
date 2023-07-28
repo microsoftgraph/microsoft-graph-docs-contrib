@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -49,7 +49,6 @@ shiftActivity.SetDisplayName(&displayName)
 
 activities := []graphmodels.ShiftActivityable {
 	shiftActivity,
-
 }
 sharedShift.SetActivities(activities)
 requestBody.SetSharedShift(sharedShift)
@@ -80,7 +79,6 @@ shiftActivity.SetDisplayName(&displayName)
 
 activities := []graphmodels.ShiftActivityable {
 	shiftActivity,
-
 }
 draftShift.SetActivities(activities)
 requestBody.SetDraftShift(draftShift)

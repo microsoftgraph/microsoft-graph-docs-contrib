@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/education/schools/10002/users
 [!INCLUDE [sample-code](../includes/snippets/powershell/educationschool-get-users-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/educationschool-get-users-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

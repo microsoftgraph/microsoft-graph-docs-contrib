@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.
+Retrieve the properties of a user's [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,13 +44,15 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) object in the response body.
 
 ## Example
 
 The following example gets the properties of the signed-in user.
 
 ### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,9 +87,15 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-regionalandlanguagesettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-regionalandlanguagesettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
+
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

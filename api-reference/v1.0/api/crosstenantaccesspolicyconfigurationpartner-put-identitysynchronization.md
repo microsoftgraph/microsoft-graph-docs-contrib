@@ -65,6 +65,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_crosstenantidentitysyncpolicypartner_from_"
@@ -81,6 +82,16 @@ Content-Type: application/json
   }
 }
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-crosstenantidentitysyncpolicypartner-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-crosstenantidentitysyncpolicypartner-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

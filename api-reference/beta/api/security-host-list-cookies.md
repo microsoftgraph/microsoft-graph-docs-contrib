@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Get a list of [hostCookie](../resources/security-hostcookie.md) resources.
 
 ## Permissions
@@ -87,6 +89,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-hostcookie-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-hostcookie-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

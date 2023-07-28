@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new InstancesRequestBuilderGetRequestConfiguration();
 $queryParameters = InstancesRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -17,7 +17,7 @@ $queryParameters->select = ["subject","bodyPreview","seriesMasterId","type","rec
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->eventsById('event-id')->instances()->get($requestConfiguration);
+$result = $graphServiceClient->me()->events()->byEventId('event-id')->instances()->get($requestConfiguration);
 
 
 ```

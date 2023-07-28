@@ -103,6 +103,10 @@ GET https://graph.microsoft.com/beta/planner/plans/-W4K7hIak0WlAwgJCn1sEWQABgjH/
 [!INCLUDE [sample-code](../includes/snippets/php/plannerbucketthisdelta-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/plannerbucketthisdelta-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

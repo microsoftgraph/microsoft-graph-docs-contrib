@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -44,7 +44,6 @@ cloudPcDomainJoinConfiguration1.SetType(&type)
 domainJoinConfigurations := []graphmodels.CloudPcDomainJoinConfigurationable {
 	cloudPcDomainJoinConfiguration,
 	cloudPcDomainJoinConfiguration1,
-
 }
 requestBody.SetDomainJoinConfigurations(domainJoinConfigurations)
 id := "1d164206-bf41-4fd2-8424-a3192d39ffff"

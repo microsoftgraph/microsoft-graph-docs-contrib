@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	marketingNotificationEmails = @(
@@ -25,6 +25,6 @@ $params = @{
 	)
 }
 
-Update-MgOrganization -OrganizationId $organizationId -BodyParameter $params
+Update-MgBetaOrganization -OrganizationId $organizationId -BodyParameter $params
 
 ```

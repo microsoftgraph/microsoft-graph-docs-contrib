@@ -82,8 +82,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-outlooktaskgroup-from-outlookuser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-outlooktaskgroup-from-outlookuser-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-outlooktaskgroup-from-outlookuser-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

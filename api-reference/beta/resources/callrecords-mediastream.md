@@ -19,7 +19,7 @@ Represents information about a media stream between two endpoints in a call.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|audioCodec|microsoft.graph.callRecords.audioCodec|Codec name used to encode audio for transmission on the network. Possible values are: `unknown`, `invalid`, `cn`, `pcma`, `pcmu`, `amrWide`, `g722`, `g7221`, `g7221c`, `g729`, `multiChannelAudio`, `muchv2`, `opus`, `satin`, `satinFullband`, `rtAudio8`, `rtAudio16`, `silk`, `silkNarrow`, `silkWide`, `siren`, `xmsRTA`, `unknownFutureValue`.|
+|audioCodec|microsoft.graph.callRecords.audioCodec|Codec name used to encode audio for transmission on the network. Possible values are: `unknown`, `invalid`, `cn`, `pcma`, `pcmu`, `amrWide`, `g722`, `g7221`, `g7221c`, `g729`, `multiChannelAudio`, `muchv2`, `opus`, `satin`, `satinFullband`, `rtAudio8`, `rtAudio16`, `silk`, `silkNarrow`, `silkWide`, `siren`, `xmsRta`, `unknownFutureValue`.|
 |averageAudioDegradation|Double|Average Network Mean Opinion Score degradation for stream. Represents how much the network loss and jitter has impacted the quality of received audio.|
 |averageAudioNetworkJitter|Duration|Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as `'PT1S'`, where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.|
 |averageBandwidthEstimate|Int64|Average estimated bandwidth available between two endpoints in bits per second.|

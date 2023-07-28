@@ -15,6 +15,8 @@ Get a collection of [bookingBusiness](../resources/bookingbusiness.md) objects t
 
 This operation returns only the **id** and **displayName** of each Microsoft Bookings business in the collection. For performance considerations, it does not return other properties. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness-get.md) operation.
 
+> **Note:** Results are limited to 500 mailboxes. Pagination of the results is not currently supported.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,9 +35,9 @@ GET /solutions/bookingBusinesses
 
 ## Optional query parameters
 
-This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
-This method also supports the `query` parameter which accepts a string value. This parameter limits the GET results to businesses that match the specified string. For more details, see [example](#request-2).
+This method also supports the `query` parameter which accepts a string value. This parameter limits the GET results to businesses that match the specified string. For more details, see [Example 2](#example-2-use-query-to-get-one-or-more-matching-bookings-businesses-in-a-tenant).
 
 ## Request headers
 
@@ -55,18 +57,54 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Get Bookings businesses in a tenant
 
-#### Request 1
+#### Request
 
 The following example gets the Bookings businesses in a tenant.
 
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name" : "bookingbusinesslist"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses
 ```
 
-#### Response 1
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusinesslist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/bookingbusinesslist-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/bookingbusinesslist-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/bookingbusinesslist-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusinesslist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/bookingbusinesslist-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingbusinesslist-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/bookingbusinesslist-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 
 The following is an example of the response.
 <!-- {
@@ -96,7 +134,7 @@ Content-type: application/json
 
 ### Example 2: Use 'query' to get one or more matching Bookings businesses in a tenant
 
-#### Request 2
+#### Request
 
 The following example shows how to use the `query` parameter to get one or more matching Bookings businesses in the tenant.
 
@@ -107,7 +145,7 @@ The following example shows how to use the `query` parameter to get one or more 
 GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses?query=Adventure
 ```
 
-#### Response 2
+#### Response
 
 The following is an example of the response.
 <!-- {

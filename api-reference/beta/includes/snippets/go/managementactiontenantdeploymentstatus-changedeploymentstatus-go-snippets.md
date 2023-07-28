@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TenantRelationships/ManagedTenants/ManagementActionTenantDeploymentStatuses/MicrosoftGraphManagedTenantsChangeDeploymentStatus"
+	  graphtenantrelationships "github.com/microsoftgraph/msgraph-beta-sdk-go/tenantrelationships"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewChangeDeploymentStatusPostRequestBody()
+requestBody := graphtenantrelationships.NewChangeDeploymentStatusPostRequestBody()
 tenantGroupId := "String"
 requestBody.SetTenantGroupId(&tenantGroupId) 
 tenantId := "String"

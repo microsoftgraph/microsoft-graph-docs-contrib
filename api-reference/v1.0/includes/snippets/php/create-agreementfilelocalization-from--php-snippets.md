@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AgreementFileLocalization();
 $requestBody->setFileName('Contoso ToU for guest users (French)');
@@ -27,7 +27,7 @@ $FileData->setData(base64_decode('base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGlu
 $requestBody->setFileData($fileData);
 
 
-$result = $graphServiceClient->identityGovernance()->termsOfUse()->agreementsById('agreement-id')->files()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->termsOfUse()->agreements()->byAgreementId('agreement-id')->files()->post($requestBody);
 
 
 ```

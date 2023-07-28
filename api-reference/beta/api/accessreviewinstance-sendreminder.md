@@ -75,6 +75,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 [!INCLUDE [sample-code](../includes/snippets/powershell/sendreminder-accessreview-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/sendreminder-accessreview-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

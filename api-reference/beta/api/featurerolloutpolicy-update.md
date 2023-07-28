@@ -104,6 +104,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-featurerolloutpolicy-policies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-featurerolloutpolicy-policies-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

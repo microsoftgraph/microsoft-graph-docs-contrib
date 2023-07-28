@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ApplyPostRequestBody();
 $requestBody->setTenantId('String');
@@ -18,7 +18,7 @@ $requestBody->setManagementTemplateId('String');
 
 
 
-$result = $graphServiceClient->tenantRelationships()->managedTenants()->managementActionsById('managementAction-id')->microsoftGraphManagedTenantsApply()->post($requestBody);
+$result = $graphServiceClient->tenantRelationships()->managedTenants()->managementActions()->byManagementActionId('managementAction-id')->microsoftGraphManagedTenantsApply()->post($requestBody);
 
 
 ```

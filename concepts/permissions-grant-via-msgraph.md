@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.prod: "applications"
 zone_pivot_groups: grant-api-permissions
 ms.custom: template-how-to
-ms.date: 12/09/2022
+ms.date: 07/25/2023
 ---
 
 # Grant or revoke API permissions programmatically
@@ -60,27 +60,35 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'M
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-approles-for-microsoftgraph-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/get-approles-for-microsoftgraph-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/get-approles-for-microsoftgraph-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-approles-for-microsoftgraph-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/get-approles-for-microsoftgraph-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-approles-for-microsoftgraph-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/get-approles-for-microsoftgraph-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-approles-for-microsoftgraph-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/get-approles-for-microsoftgraph-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-approles-for-microsoftgraph-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/get-approles-for-microsoftgraph-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-approles-for-microsoftgraph-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/get-approles-for-microsoftgraph-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/get-approles-for-microsoftgraph-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -151,19 +159,23 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/grant-approles-using-approleassignedto-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/grant-approles-using-approleassignedto-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/grant-approles-using-approleassignedto-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/grant-approles-using-approleassignedto-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/grant-approles-using-approleassignedto-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/grant-approles-using-approleassignedto-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/grant-approles-using-approleassignedto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/grant-approles-using-approleassignedto-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/grant-approles-using-approleassignedto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -171,7 +183,11 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/grant-approles-using-approleassignedto-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/grant-approles-using-approleassignedto-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -216,27 +232,35 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/7ea9e944-71ce-443d-811c-7
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-approles-for-sp-approleassignedto-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/get-approles-for-sp-approleassignedto-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/get-approles-for-sp-approleassignedto-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-approles-for-sp-approleassignedto-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/get-approles-for-sp-approleassignedto-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-approles-for-sp-approleassignedto-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/get-approles-for-sp-approleassignedto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-approles-for-sp-approleassignedto-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/get-approles-for-sp-approleassignedto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-approles-for-sp-approleassignedto-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/get-approles-for-sp-approleassignedto-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-approles-for-sp-approleassignedto-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/get-approles-for-sp-approleassignedto-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/get-approles-for-sp-approleassignedto-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -287,27 +311,35 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/7ea9e944-71ce-443d-811
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/revoke-approles-using-approleassignedto-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/revoke-approles-using-approleassignedto-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/revoke-approles-using-approleassignedto-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/revoke-approles-using-approleassignedto-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/revoke-approles-using-approleassignedto-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/revoke-approles-using-approleassignedto-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/revoke-approles-using-approleassignedto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/revoke-approles-using-approleassignedto-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/revoke-approles-using-approleassignedto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/revoke-approles-using-approleassignedto-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/revoke-approles-using-approleassignedto-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/revoke-approles-using-approleassignedto-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/revoke-approles-using-approleassignedto-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/revoke-approles-using-approleassignedto-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -379,27 +411,35 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'M
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-scopes-for-microsoftgraph-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/get-scopes-for-microsoftgraph-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/get-scopes-for-microsoftgraph-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-scopes-for-microsoftgraph-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/get-scopes-for-microsoftgraph-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-scopes-for-microsoftgraph-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/get-scopes-for-microsoftgraph-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-scopes-for-microsoftgraph-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/get-scopes-for-microsoftgraph-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-scopes-for-microsoftgraph-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/get-scopes-for-microsoftgraph-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-scopes-for-microsoftgraph-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/get-scopes-for-microsoftgraph-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/get-scopes-for-microsoftgraph-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -460,6 +500,7 @@ In this step, you'll grant your app, on behalf of a user, a delegated permission
 + From Step 1, the object ID of Microsoft Graph in the tenant is `7ea9e944-71ce-443d-811c-71e8047b557a`
 + The delegated permissions `User.Read.All` and `Group.Read.All` are identified by the globally unique IDs `a154be20-db9c-4678-8ab7-66f6cc099a59` and `5f8c59db-677d-491f-a6b8-5f174b11ec1d` respectively.
 + The principal is a user identified by ID `3fbd929d-8c56-4462-851e-0eb9a7b3a2a5`.
++ The client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`. This is the object **id** of the service principal and *not* its **appId**.
 
 
 # [HTTP](#tab/http)
@@ -481,27 +522,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/grant-delegated-perms-sp-oauth2permissiongrants-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/grant-delegated-perms-sp-oauth2permissiongrants-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/grant-delegated-perms-sp-oauth2permissiongrants-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/grant-delegated-perms-sp-oauth2permissiongrants-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/grant-delegated-perms-sp-oauth2permissiongrants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/grant-delegated-perms-sp-oauth2permissiongrants-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/grant-delegated-perms-sp-oauth2permissiongrants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/grant-delegated-perms-sp-oauth2permissiongrants-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/grant-delegated-perms-sp-oauth2permissiongrants-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/grant-delegated-perms-sp-oauth2permissiongrants-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/grant-delegated-perms-sp-oauth2permissiongrants-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/grant-delegated-perms-sp-oauth2permissiongrants-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/grant-delegated-perms-sp-oauth2permissiongrants-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/grant-delegated-perms-sp-oauth2permissiongrants-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -564,27 +613,35 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants?$filter=clientId eq 
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-delegated-perms-sp-oauth2permissiongrants-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/get-delegated-perms-sp-oauth2permissiongrants-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/get-delegated-perms-sp-oauth2permissiongrants-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-delegated-perms-sp-oauth2permissiongrants-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/get-delegated-perms-sp-oauth2permissiongrants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-delegated-perms-sp-oauth2permissiongrants-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/get-delegated-perms-sp-oauth2permissiongrants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-delegated-perms-sp-oauth2permissiongrants-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/get-delegated-perms-sp-oauth2permissiongrants-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-delegated-perms-sp-oauth2permissiongrants-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/get-delegated-perms-sp-oauth2permissiongrants-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-delegated-perms-sp-oauth2permissiongrants-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/get-delegated-perms-sp-oauth2permissiongrants-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/get-delegated-perms-sp-oauth2permissiongrants-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -641,27 +698,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/revoke-scopes-oauth2permissiongrants-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/revoke-scopes-oauth2permissiongrants-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/revoke-scopes-oauth2permissiongrants-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/revoke-scopes-oauth2permissiongrants-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/revoke-scopes-oauth2permissiongrants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/revoke-scopes-oauth2permissiongrants-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/revoke-scopes-oauth2permissiongrants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/revoke-scopes-oauth2permissiongrants-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/revoke-scopes-oauth2permissiongrants-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/revoke-scopes-oauth2permissiongrants-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/revoke-scopes-oauth2permissiongrants-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/revoke-scopes-oauth2permissiongrants-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/revoke-scopes-oauth2permissiongrants-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/revoke-scopes-oauth2permissiongrants-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -690,27 +755,35 @@ DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/47nZsM8O_UuNq5Jz3
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/revoke-all-scopes-oauth2permissiongrants-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/revoke-all-scopes-oauth2permissiongrants-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/revoke-all-scopes-oauth2permissiongrants-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/revoke-all-scopes-oauth2permissiongrants-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/revoke-all-scopes-oauth2permissiongrants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/revoke-all-scopes-oauth2permissiongrants-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/revoke-all-scopes-oauth2permissiongrants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/revoke-all-scopes-oauth2permissiongrants-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/revoke-all-scopes-oauth2permissiongrants-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/revoke-all-scopes-oauth2permissiongrants-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/revoke-all-scopes-oauth2permissiongrants-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/revoke-all-scopes-oauth2permissiongrants-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/revoke-all-scopes-oauth2permissiongrants-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/revoke-all-scopes-oauth2permissiongrants-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

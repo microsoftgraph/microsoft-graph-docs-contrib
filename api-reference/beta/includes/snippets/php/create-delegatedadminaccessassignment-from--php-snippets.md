@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DelegatedAdminAccessAssignment();
 $accessContainer = new DelegatedAdminAccessContainer();
 $accessContainer->setAccessContainerId('869713c9-0b28-4d08-8949-ae07ae1bf528');
 
-$accessContainer->setAccessContainerType(new DelegatedAdminAccessContainerType('securitygroup'));
+$accessContainer->setAccessContainerType(new DelegatedAdminAccessContainerType('securityGroup'));
 
 
 $requestBody->setAccessContainer($accessContainer);
@@ -45,7 +45,7 @@ $accessDetails->setUnifiedRoles($unifiedRolesArray);
 $requestBody->setAccessDetails($accessDetails);
 
 
-$result = $graphServiceClient->tenantRelationships()->delegatedAdminRelationshipsById('delegatedAdminRelationship-id')->accessAssignments()->post($requestBody);
+$result = $graphServiceClient->tenantRelationships()->delegatedAdminRelationships()->byDelegatedAdminRelationshipId('delegatedAdminRelationship-id')->accessAssignments()->post($requestBody);
 
 
 ```

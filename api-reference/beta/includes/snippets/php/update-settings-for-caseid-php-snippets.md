@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CaseSettings();
 $redundancyDetection = new RedundancyDetectionSettings();
@@ -41,7 +41,7 @@ $ocr->setMaxImageSize(12000);
 $requestBody->setOcr($ocr);
 
 
-$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->settings()->patch($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->settings()->patch($requestBody);
 
 
 ```
