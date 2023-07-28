@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Calendars.Read                              |
-| Delegated (personal Microsoft account) | Calendars.Read                              |
-| Application                            | Calendars.Read                              |
+| Delegated (work or school account)     | Calendars.ReadBasic, Calendars.Read         |
+| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read         |
+| Application                            | Calendars.ReadBasic, Calendars.Read         |
 
 ## HTTP request
 
@@ -91,10 +91,6 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups/AAMkAGVmMDEzMTM4LTZmYWUtN
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-calendargroup-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-calendargroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

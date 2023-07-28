@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new GovernanceRoleAssignmentRequest();
 $requestBody->setRoleDefinitionId('65bb4622-61f5-4f25-9d75-d0e20cf92019');
@@ -22,7 +22,7 @@ $requestBody->setType('AdminRemove');
 
 
 
-$result = $graphServiceClient->privilegedAccess()->byPrivilegedAccesId('privilegedAccess-id')->roleAssignmentRequests()->post($requestBody);
+$result = $graphServiceClient->privilegedAccess()->byPrivilegedAccessId('privilegedAccess-id')->roleAssignmentRequests()->post($requestBody);
 
 
 ```

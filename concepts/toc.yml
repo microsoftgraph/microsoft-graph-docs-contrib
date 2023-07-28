@@ -260,6 +260,9 @@ items:
           - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
             displayName: Microsoft Graph connectors, connect external content
+          - name: Connectors experiences
+            href: connecting-external-content-experiences.md
+            displayName: Microsoft Graph connectors, connect external content with Microsoft 365 experiences
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
             displayName: Microsoft Graph connectors
@@ -283,6 +286,8 @@ items:
                 href: custom-connector-sdk-sample-publish.md
               - name: Surface the data in search
                 href: custom-connector-sdk-sample-search.md
+          - name: Simplify connector deployment
+            href: connecting-external-content-deploy-teams.md
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
@@ -1122,7 +1127,7 @@ items:
             href: best-practices-concept.md
             displayName: Microsoft Graph, Best practices for working with Microsoft Graph
           - name: Known issues
-            href: known-issues.md
+            href: https://developer.microsoft.com/graph/known-issues
             displayName: Microsoft Graph, Known issues with Microsoft Graph
           - name: API changelog
             href: changelog.md
