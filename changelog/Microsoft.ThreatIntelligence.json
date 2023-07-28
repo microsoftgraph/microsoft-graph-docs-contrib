@@ -28,6 +28,38 @@
         },
         {
           "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list childhostpairs](https://learn.microsoft.com/en-us/graph/api/resources/security-host-list-childhostpairs?view=graph-rest-beta) operation to the [hostpair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostpair?view=graph-rest-beta) resource.",
+          "Target": "hostpair"
+        },
+        {
+          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list hostpairs](https://learn.microsoft.com/en-us/graph/api/resources/security-host-list-hostpairs?view=graph-rest-beta) operation to the [hostpair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostpair?view=graph-rest-beta) resource.",
+          "Target": "hostpair"
+        },
+        {
+          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list parenthostpairs](https://learn.microsoft.com/en-us/graph/api/resources/security-host-list-parenthostpairs?view=graph-rest-beta) operation to the [hostpair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostpair?view=graph-rest-beta) resource.",
+          "Target": "hostpair"
+        },
+        {
+          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/resources/security-hostpair-get?view=graph-rest-beta) operation to the [hostpair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostpair?view=graph-rest-beta) resource.",
+          "Target": "hostpair"
+        },
+        {
+          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
           "ApiChange": "Resource",
           "ChangedApiName": "hostPair",
           "ChangeType": "Addition",
