@@ -37,10 +37,9 @@
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/microsoftgraph/microsoft-graph-docs-contrib",
   "git_repository_branch_open_to_public_contributors": "main",
-  "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -57,32 +56,39 @@
     {
       "path_to_root": "concepts/sdks/snippets/dotnet",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-dotnet",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/sdks/snippets/go",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-go",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/sdks/snippets/java",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-java",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/sdks/snippets/python",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-python",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/sdks/snippets/typescript",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-typescript",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false,
   "targets": {},
+  "skip_source_output_uploading": false,
+  "contribution_branch_mappings": {},
+  "need_generate_pdf_url_template": false,
   "type_mapping": {
     "Conceptual": "Content",
     "ManagedReference": "Content",
