@@ -41,8 +41,6 @@ Clicking on an app entry in the table will launch the app details view, with mor
 
 ![Graphic showing the app details view in the Data Connect portal.](images/authorization-app-details-overview.png)
 
-![Graphic showing the app details view in the M365 admin center.](images/m365-admin-center-app-details-view.png)
-
 1. Step 1 in the wizard shows overview information about the application:
 
 `App owner` main user name of the developer who registered the application.
@@ -51,13 +49,7 @@ Clicking on an app entry in the table will launch the app details view, with mor
 
 `App publisher` Azure AD tenant ID where the app is registered. For single-tenant apps, this should be the same AAD tenant ID as your tenant.
 
-![Graphic showing the app details view for a teams call records dataset sample in Data Connect portal.](images/data-connect-portal-team-call-records-sample.png)
-
-![Graphic showing the app details view for a user records dataset sample in Data Connect portal.](images/m365-admin-center-user-records-sample.png)
-
-![Graphic showing the app details view for a group details dataset sample in Data Connect portal.](images/m365-admin-center-group-details-sample.png)
-
-![Graphic showing the app details view for a message details dataset sample in Data Connect portal.](images/m365-admin-center-message-details-sample.png)
+![Graphic showing the app details view for a teams call records dataset sample in Data Connect portal.](images/authorization-app-details-dataset.png)
 
 2. Step 2 in the wizard varies per dataset. There'll be one step per dataset registered in the app, for example:
 
@@ -65,13 +57,9 @@ Clicking on an app entry in the table will launch the app details view, with mor
 
 `Scope`—specifies scope (i.e., user selection) the app intends to extract via Data Connect. [Learn more about scopes in Data Connect](./data-connect-users-and-groups).
 
-![Graphic showing the scopes review page in Data Connect portal.](images/data-connect-scopes-review-page.png)
-
-![Graphic showing the scopes approve or decline page in Data Connect portal.](images/data-connect-scopes-approve-decline-page.png)
+![Graphic showing the scopes review page in Data Connect portal.](images/authorization-app-details-review.png)
 
 3. Step 3 in the wizard confirms some key information on the app for you to review. You can select `Approve`, `Decline`, or `Cancel`. An action on an app is all or nothing. Authorizing an app means you are authorizing all access specified in the previous steps.
-
-![Graphic showing the app final authorization page in Data Connect portal.](images/data-connect-app-final-authorization.png)
 
 When authorizing an app, you may encounter these error messages:
 
@@ -82,7 +70,7 @@ If an unexpected error occurs, the error message will include an error code. Ple
 
 ### Discovering multi-tenant applications
 
-![Graphic showing page for adding a multi-tenant app in Data Connect portal.](images/add-new-multi-tenant-app-page.png)
+![Graphic showing page for adding a multi-tenant app in Data Connect portal.](images/authorization-multitenant-app-search.png)
 
 To discover multi-tenant applications, select `Add new multi-tenant app` above the app summary table. If your tenant is enabled for cross-tenant data migration, you'll be shown two text boxes. Once you enter the application ID and application’s tenant ID, and choose `Find`,the portal will launch the app details view for the app you're searching for.
 
@@ -96,7 +84,7 @@ The fresh Microsoft Graph Data Connect app authorization experience is integrate
 
 `Activities` Approved or denied an app (Under `Microsoft Graph Data Connect Activities`)
 
-![Graphic showing an M365 audit log sample page.](images/m365-audit-log-example.png)
+![Graphic showing an M365 audit log sample page.](images/authorization-audit-logs.png)
 
 ### Authorization validation during pipeline execution
 
