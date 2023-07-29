@@ -1799,6 +1799,12 @@ items:
                     href: api/printtaskdefinition-update-task.md
               - name: Reports
                 items:
+                  - name: Archived print job
+                    href: resources/archivedprintjob.md
+                  - name: Print usage by printer
+                    href: resources/printusagebyprinter.md
+                  - name: Print usage by user
+                    href: resources/printusagebyuser.md
                   - name: Organized by printer
                     items:
                       - name: Get
@@ -5614,6 +5620,12 @@ items:
                         href: api/accesspackage-delete-incompatiblegroup.md
                       - name: List access packages incompatible with
                         href: api/accesspackage-list-accesspackagesincompatiblewith.md
+                      - name: List resource role scopes
+                        href: api/accesspackage-list-resourcerolescopes.md
+                      - name: Add resource role scope
+                        href: api/accesspackage-post-resourcerolescopes.md
+                      - name: Remove resource role scope
+                        href: api/accesspackage-delete-resourcerolescopes.md
                   - name: Access package assignment
                     href: resources/accesspackageassignment.md
                     items:
@@ -5677,6 +5689,10 @@ items:
                         href: api/accesspackagecatalog-update.md
                       - name: Delete
                         href: api/accesspackagecatalog-delete.md
+                      - name: List resources
+                        href: api/accesspackagecatalog-list-resources.md
+                      - name: List resource roles
+                        href: api/accesspackagecatalog-list-resourceroles.md
                   - name: Access package custom workflow extension
                     displayName: Custom authentication extensions
                     items:
@@ -5751,6 +5767,18 @@ items:
                         href: api/accesspackageassignmentpolicy-update.md
                       - name: Delete
                         href: api/accesspackageassignmentpolicy-delete.md
+                  - name: Access package resource request
+                    href: resources/accesspackageresourcerequest.md
+                    items:
+                      - name: List
+                        href: api/entitlementmanagement-list-resourcerequests.md
+                      - name: Create
+                        href: api/entitlementmanagement-post-resourcerequests.md
+                  - name: Access package resource environment
+                    href: resources/accesspackageresourceenvironment.md
+                    items:
+                      - name: List
+                        href: api/entitlementmanagement-list-resourceenvironments.md
               - name: Lifecycle workflows
                 displayName: LCW, Identity Governance, Joiner, Mover, Leaver
                 items:
