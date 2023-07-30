@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/connectivityConfiguration
+GET networkAccess/connectivity/branches/{branchSiteId}/connectivityConfiguration
 ```
 
 
@@ -76,8 +76,6 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
-GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches/19a92090-c14e-4cea-a933-27d38f72c4d1/connectivityConfiguration
 
 {
     "@odata.context": "http://graph.microsoft.com/beta/$metadata#branchConnectivityConfiguration",
