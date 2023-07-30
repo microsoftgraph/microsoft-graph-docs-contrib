@@ -79,39 +79,35 @@ Content-Type: application/json
 
 GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches/19a92090-c14e-4cea-a933-27d38f72c4d1/connectivityConfiguration
 
-Response:
 {
-    "@odata.context": "http://graph.microsoft.com/beta/$metadata#brachConnectivityConfiguration",
+    "@odata.context": "http://graph.microsoft.com/beta/$metadata#branchConnectivityConfiguration",
     "branchId": "19a92090-c14e-4cea-a933-27d38f72c4d1",
     "branchName": "Seattle branch office",
-    "links":
-        [
-            {​
-                "id": "26b92330-c246-2cef-a131-27d38f72c4s4",
-                "displayName": "CPE1",
-                "localConfigurations":
-                    [
-                        {
-                            "endpoint" : "20.127.132.184",
-                            "asn" : 65532,
-                            "bgpAddress": "192.168.1.253",
-                            "region": "eastUS"
-                        },
-                        {
-                            "endpoint" : "20.127.132.185",
-                            "asn" : 65532,
-                            "bgpAddress": "192.168.1.254",
-                            "region": "westUS"
-                        }​
-                    ],
-                "peerConfiguration":
-                    {
-                        "endpoint" : "120.10.10.10",
-                        "asn" : 65530,
-                        "bgpAddress": "10.20.20.20",
-                    }​
+    "links": [
+        {
+            "id": "26b92330-c246-2cef-a131-27d38f72c4s4",
+            "displayName": "CPE1",
+            "localConfigurations": [
+                {
+                    "endpoint": "20.127.132.184",
+                    "asn": 65532,
+                    "bgpAddress": "192.168.1.253",
+                    "region": "eastUS"
+                },
+                {
+                    "endpoint": "20.127.132.185",
+                    "asn": 65532,
+                    "bgpAddress": "192.168.1.254",
+                    "region": "westUS"
+                }
+            ],
+            "peerConfiguration": {
+                "endpoint": "120.10.10.10",
+                "asn": 65530,
+                "bgpAddress": "10.20.20.20"
             }
-        ]
+        }
+    ]
 }
 ```
 
