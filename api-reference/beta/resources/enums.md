@@ -284,6 +284,15 @@ Namespace: microsoft.graph
 | requestReceived    |
 | unknownFutureValue |
 
+### accessPackageSubjectLifecycle values
+
+|Member|
+|:---|
+|notDefined|
+|notGoverned|
+|governed|
+|unknownFutureValue|
+
 ### customExtensionCalloutInstanceStatus values
 
 | Member             |
@@ -3977,3 +3986,11 @@ Possible values for user account types (group membership), per Windows definitio
 | presentation_verified |
 | unknownFutureValue    |
 
+### allowedRolePrincipalTypes values
+
+|Member|
+|:---|
+|user|
+|servicePrincipal|
+|group|
+|unknownFutureValue|

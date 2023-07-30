@@ -64,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 659
+Content-Length: 621
 
 {
   "value": {
@@ -82,8 +82,7 @@ Content-Length: 659
     "rootCategoryId": "Root Category Id value",
     "childCategoryIds": [
       "Child Category Ids value"
-    ],
-    "visibility": "settingsCatalog"
+    ]
   }
 }
 ```

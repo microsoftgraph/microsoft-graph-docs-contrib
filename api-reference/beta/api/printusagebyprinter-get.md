@@ -60,7 +60,7 @@ The following is an example of the request.
   "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByPrinter/016b5565-3bbf-4067-b9ff-4d68167eb1a6
+GET https://graph.microsoft.com/beta/reports/dailyPrintUsageByPrinter/016b5565-3bbf-4067-b9ff-4d68167eb1a6
 ```
 
 ### Response
@@ -78,6 +78,7 @@ Content-type: application/json
 {
     "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
     "printerId": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+    "printerName": "printerName1",
     "usageDate": "2020-02-04T00:00:00.0000000Z",
     "completedBlackAndWhiteJobCount": 42,
     "completedColorJobCount": 0,

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	onBehalfOfUserId = "a3601044-a1b5-438e-b742-f78d01d68a67"
@@ -39,6 +39,6 @@ $params = @{
 	)
 }
 
-New-MgTeamScheduleTimeCard -TeamId $teamId -BodyParameter $params
+New-MgBetaTeamScheduleTimeCard -TeamId $teamId -BodyParameter $params
 
 ```

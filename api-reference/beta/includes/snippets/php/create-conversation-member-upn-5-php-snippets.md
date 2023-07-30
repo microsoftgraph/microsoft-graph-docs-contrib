@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AadUserConversationMember();
-$requestBody->set@odatatype('#microsoft.graph.aadUserConversationMember');
+$requestBody->setOdataType('#microsoft.graph.aadUserConversationMember');
 
-$requestBody->setVisibleHistoryStartDateTime(new DateTime('2019-04-18T23:51:43.255Z'));
+$requestBody->setVisibleHistoryStartDateTime(new \DateTime('2019-04-18T23:51:43.255Z'));
 
-$requestBody->setRoles(['owner', ]);
+$requestBody->setRoles(['owner', 	]);
 
 $additionalData = [
-	'user@odata.bind' => 'https://graph.microsoft.com/beta/users/jacob@contoso.com', 
+		'user@odata.bind' => 'https://graph.microsoft.com/beta/users/jacob@contoso.com', 
 ];
 $requestBody->setAdditionalData($additionalData);
 

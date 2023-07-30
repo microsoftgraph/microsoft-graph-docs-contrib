@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
+Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
 
 ```

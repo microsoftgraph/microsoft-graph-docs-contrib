@@ -24,10 +24,10 @@ var requestBody = new UnifiedRoleManagementPolicy
 					"All",
 				},
 				Level = "Assignment",
-				InheritableSettings = new List<String>
+				InheritableSettings = new List<string>
 				{
 				},
-				EnforcedSettings = new List<String>
+				EnforcedSettings = new List<string>
 				{
 				},
 			},
@@ -76,10 +76,10 @@ var requestBody = new UnifiedRoleManagementPolicy
 					"All",
 				},
 				Level = "Assignment",
-				InheritableSettings = new List<String>
+				InheritableSettings = new List<string>
 				{
 				},
-				EnforcedSettings = new List<String>
+				EnforcedSettings = new List<string>
 				{
 				},
 			},
@@ -88,7 +88,7 @@ var requestBody = new UnifiedRoleManagementPolicy
 		{
 			OdataType = "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
 			Id = "Enablement_Admin_Eligibility",
-			EnabledRules = new List<String>
+			EnabledRules = new List<string>
 			{
 			},
 			Target = new UnifiedRoleManagementPolicyRuleTarget
@@ -99,10 +99,10 @@ var requestBody = new UnifiedRoleManagementPolicy
 					"All",
 				},
 				Level = "Eligibility",
-				InheritableSettings = new List<String>
+				InheritableSettings = new List<string>
 				{
 				},
-				EnforcedSettings = new List<String>
+				EnforcedSettings = new List<string>
 				{
 				},
 			},
@@ -121,10 +121,10 @@ var requestBody = new UnifiedRoleManagementPolicy
 					"All",
 				},
 				Level = "Eligibility",
-				InheritableSettings = new List<String>
+				InheritableSettings = new List<string>
 				{
 				},
-				EnforcedSettings = new List<String>
+				EnforcedSettings = new List<string>
 				{
 				},
 			},
@@ -137,7 +137,7 @@ var requestBody = new UnifiedRoleManagementPolicy
 			RecipientType = "Admin",
 			NotificationLevel = "All",
 			IsDefaultRecipientsEnabled = true,
-			NotificationRecipients = new List<String>
+			NotificationRecipients = new List<string>
 			{
 			},
 			Target = new UnifiedRoleManagementPolicyRuleTarget
@@ -148,10 +148,10 @@ var requestBody = new UnifiedRoleManagementPolicy
 					"All",
 				},
 				Level = "Eligibility",
-				InheritableSettings = new List<String>
+				InheritableSettings = new List<string>
 				{
 				},
-				EnforcedSettings = new List<String>
+				EnforcedSettings = new List<string>
 				{
 				},
 			},

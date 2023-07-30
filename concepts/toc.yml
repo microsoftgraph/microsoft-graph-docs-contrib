@@ -231,13 +231,13 @@ items:
                   - name: Teams and channels
                     href: teams-changenotifications-team-and-channel.md
                   - name: Team and channel membership
-                    href: teams-changenotifications-teamMembership.md
+                    href: teams-changenotifications-teammembership.md
                   - name: Chat and channel messages
                     href: teams-changenotifications-chatmessage.md
                   - name: Chat
                     href: teams-changenotifications-chat.md
                   - name: Chat membership
-                    href: teams-changenotifications-chatMembership.md
+                    href: teams-changenotifications-chatmembership.md
               - name: Notifications for Outlook resources
                 href: outlook-change-notifications-overview.md
       - name: Change tracking
@@ -260,6 +260,9 @@ items:
           - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
             displayName: Microsoft Graph connectors, connect external content
+          - name: Connectors experiences
+            href: connecting-external-content-experiences.md
+            displayName: Microsoft Graph connectors, connect external content with Microsoft 365 experiences
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
             displayName: Microsoft Graph connectors
@@ -283,6 +286,8 @@ items:
                 href: custom-connector-sdk-sample-publish.md
               - name: Surface the data in search
                 href: custom-connector-sdk-sample-search.md
+          - name: Simplify connector deployment
+            href: connecting-external-content-deploy-teams.md
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
@@ -482,7 +487,7 @@ items:
                   - name: Review access to a security group
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access for guest users
-                    href: tutorial-accessreviews-M365group.md
+                    href: tutorial-accessreviews-m365group.md
                   - name: Review access to privileged roles
                     href: tutorial-accessreviews-roleassignments.md
                   - name: Configure the scope
@@ -634,7 +639,7 @@ items:
           - name: Search multiple entity types
             href: search-concept-interleaving.md
           - name: Search with multiple requests
-            href: search-concept-multipleRequest.md
+            href: search-concept-multiplerequest.md
           - name: Search Outlook events
             href: search-concept-events.md
           - name: Search Outlook messages
@@ -755,8 +760,6 @@ items:
             href: teams-embed-within-own-app.md
           - name: Payment models and licensing requirements
             href: teams-licenses.md
-          - name: Protected APIs
-            href: teams-protected-apis.md
           - name: Implementation differences in national clouds
             href: teamwork-national-cloud-differences.md
       - name: To-do tasks
@@ -998,6 +1001,18 @@ items:
                 href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
                 href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+          - name: Use the CLI (preview)
+            items:
+              - name: CLI overview
+                href: cli/overview.md
+              - name: Install the CLI
+                href: cli/installation.md
+              - name: Get started
+                href: cli/get-started.md
+              - name: Navigate the CLI
+                href: cli/navigating.md
+              - name: App-only authentication
+                href: cli/app-only.md
       - name: Use the toolkit
         items:
           - name: Overview
@@ -1112,7 +1127,7 @@ items:
             href: best-practices-concept.md
             displayName: Microsoft Graph, Best practices for working with Microsoft Graph
           - name: Known issues
-            href: known-issues.md
+            href: https://developer.microsoft.com/graph/known-issues
             displayName: Microsoft Graph, Known issues with Microsoft Graph
           - name: API changelog
             href: changelog.md

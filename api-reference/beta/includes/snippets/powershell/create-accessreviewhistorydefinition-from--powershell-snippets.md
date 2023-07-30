@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	displayName = "Last quarter's group reviews April 2021"
@@ -33,6 +33,6 @@ $params = @{
 	)
 }
 
-New-MgIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
+New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Planner
+Import-Module Microsoft.Graph.Beta.Planner
 
 $params = @{
 	favoritePlanReferences = @{
@@ -25,7 +25,7 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgUserPlanner -UserId $userId -BodyParameter $params-If-Match W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=" 
+Update-MgBetaUserPlanner -UserId $userId -BodyParameter $params-If-Match W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=" 
 
 
 ```

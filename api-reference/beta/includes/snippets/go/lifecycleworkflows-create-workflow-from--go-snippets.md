@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsidentitygovernance.NewWorkflow()
@@ -25,7 +25,7 @@ displayName := "Australia Onboard new hire employee"
 requestBody.SetDisplayName(&displayName) 
 isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
-isSchedulingEnabled := false
+isSchedulingEnabled := true
 requestBody.SetIsSchedulingEnabled(&isSchedulingEnabled) 
 executionConditions := graphmodelsidentitygovernance.NewTriggerAndScopeBasedConditions()
 scope := graphmodelsidentitygovernance.NewRuleBasedSubjectSet()

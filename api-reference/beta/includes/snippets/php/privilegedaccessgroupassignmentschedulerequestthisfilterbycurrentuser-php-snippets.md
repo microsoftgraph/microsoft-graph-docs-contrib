@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new FilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration();
 $queryParameters = FilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +15,7 @@ $queryParameters->filter = "status eq 'PendingApproval' and groupId eq 'd5f0ad2e
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->privilegedAccess()->group()->assignmentScheduleRequests()->filterByCurrentUser(on='{on}')()->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->privilegedAccess()->group()->assignmentScheduleRequests()->filterByCurrentUserWithOn('principal', )->get($requestConfiguration);
 
 
 ```

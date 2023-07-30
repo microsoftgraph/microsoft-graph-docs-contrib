@@ -1,5 +1,91 @@
 {
     "changelog": [
+    {
+            "ChangeList": [
+                {
+                    "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcResizeValidationCode",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcResizeValidationCode** enumeration type.",
+                    "Target": "cloudPcResizeValidationResult"
+                },
+                {
+                    "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcResizeValidationResult",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcResizeValidationResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcResizeValidationResult?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcResizeValidationResult"
+                },
+                {
+                    "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "validateBulkResize",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [validateBulkResize](https://learn.microsoft.com/en-us/graph/api/cloudPC-validateBulkResize?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-06-28T06:58:17.7596296Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "6680777e-7bec-43ff-9ad6-cb258a40783d",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "powerState",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **powerState** property to the [cloudPc](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudpc"
+                },
+                {
+                    "Id": "6680777e-7bec-43ff-9ad6-cb258a40783d",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcPowerState",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcPowerState** enumeration type.",
+                    "Target": "cloudpc"
+                }
+            ],
+            "Id": "6680777e-7bec-43ff-9ad6-cb258a40783d",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-06-28T02:52:10.3002588Z",     
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [            
+                {
+                    "Id": "afeeb952-b86d-4670-bdfc-94a212be00e2",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resizePendingLicense` member to the **cloudPcStatus** enumeration.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "afeeb952-b86d-4670-bdfc-94a212be00e2",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "bulkResize",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bulkResize](https://learn.microsoft.com/en-us/graph/api/cloudPC-bulkResize?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id": "afeeb952-b86d-4670-bdfc-94a212be00e2",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-06-27T06:58:17.7596296Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
         {
             "ChangeList": [
                 {
@@ -69,7 +155,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-06-05T05:55:14.173894Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -3302,7 +3388,7 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2023-06-05T04:14:41.3424906Z",
-        "WorkloadArea": "Devices and apps",
+        "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       }
     ]

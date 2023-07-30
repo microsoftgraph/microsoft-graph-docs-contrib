@@ -29,6 +29,10 @@ request_body.specificallowedtargets(specificAllowedTargetsArray)
 automatic_request_settings = AccessPackageAutomaticRequestSettings()
 automatic_request_settings.request_access_for_allowed_targets = True
 
+automatic_request_settings.remove_access_when_target_leaves_allowed_targets = True
+
+automatic_request_settings.graceperiodbeforeaccessremoval =  \DateInterval('P7D')
+
 
 request_body.automatic_request_settings = automatic_request_settings
 access_package = AccessPackage()

@@ -41,7 +41,6 @@ Device Management Configuration Policy
 |parentCategoryId|String|Direct parent id of the category. If the category is the root, the parent id is same as its id.|
 |rootCategoryId|String|Root id of the category.|
 |childCategoryIds|String collection|List of child ids of the category.|
-|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Category visibility scope to UX. Possible values are: none, settingsCatalog, template. Possible values are: `none`, `settingsCatalog`, `template`, `unknownFutureValue`.|
 
 ## Relationships
 None
@@ -70,7 +69,6 @@ Here is a JSON representation of the resource.
   "rootCategoryId": "String",
   "childCategoryIds": [
     "String"
-  ],
-  "visibility": "String"
+  ]
 }
 ```
