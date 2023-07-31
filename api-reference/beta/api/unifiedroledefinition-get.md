@@ -550,6 +550,7 @@ Content-type: application/json
     "version": "0.12 (14.0.451.0)",
     "isBuiltIn": true,
     "templateId": null,
+    "allowedPrincipalTypes": "user,group",
     "rolePermissions": [
         {
             "allowedResourceActions": [
