@@ -50,7 +50,7 @@ items:
   - title: Surface the data in search
     durationInMinutes: 5
     content: |
-      [!INCLUDE [](includes/connecting-external-content/10-surface data.md)]
+      [!INCLUDE [](includes/connecting-external-content/10-surface-data.md)]
   - title: Search for results
     durationInMinutes: 5
     content: |
