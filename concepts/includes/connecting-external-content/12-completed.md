@@ -8,4 +8,4 @@ You have successfully completed the .NET Microsoft Graph connectors tutorial: yo
 
 ## Next steps
 
-To find out more about all the data that you can access with your custom connector, see [Microsoft Graph connectors overview](../connecting-external-content-connectors-overview.md).
+To find out more about all the data that you can access with your custom connector, see [Microsoft Graph connectors overview](../../connecting-external-content-connectors-overview.md).
