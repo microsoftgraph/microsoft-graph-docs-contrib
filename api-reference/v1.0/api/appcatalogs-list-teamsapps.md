@@ -661,4 +661,6 @@ Content-Type: application/json
 
 - [List apps installed in a team](team-list-installedapps.md) <!-- - [List apps installed in a chat](chat-list-installedapps.md) -->
 - [List apps installed in the personal scope of a user](userteamwork-list-installedapps.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+
