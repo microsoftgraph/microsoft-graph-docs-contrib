@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/resources/security-host-list-hostpairs?view=graph-rest-beta) operation to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-threatintelligence?view=graph-rest-beta) resource.",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/resources/security-host-list-hostpairs?view=graph-rest-beta) operation to the [threatintelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatintelligence?view=graph-rest-beta) resource.",
           "Target": "threatIntelligence"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/resources/security-host-list-parenthostpairs?view=graph-rest-beta) operation to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-threatintelligence?view=graph-rest-beta) resource.",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/resources/security-host-list-parenthostpairs?view=graph-rest-beta) operation to the [threatintelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatintelligence?view=graph-rest-beta) resource.",
           "Target": "threatIntelligence"
         },
          {
