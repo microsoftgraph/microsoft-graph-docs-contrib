@@ -1,6 +1,6 @@
 ---
-title: "App registration for Microsoft Graph Data Connect apps"
-description: "Description of the Microsoft Graph Data Connect app registration process"
+title: "The registration process for Microsoft Graph Data Connect apps"
+description: "Description of the steps in the registration process for Microsoft Graph Data Connect apps"
 author: "michaelvenables"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started

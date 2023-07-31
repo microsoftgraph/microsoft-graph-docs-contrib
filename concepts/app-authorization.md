@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Graph Data Connect app authorization"
-description: "Learn about the Microsoft Graph Data Connect app authorization process"
+title: "The authorization process for Microsoft Graph Data Connect apps"
+description: "Description of the steps in the authorization process for Microsoft Graph Data Connect apps"
 author: "michaelvenables"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
