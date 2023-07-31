@@ -80,12 +80,16 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5X
 Content-type: application/json
 
 {
-  "values": "[
+  "values": [
     [1, 2, 3],
     [4, 5, 6]
-  ]"
+  ]
 }
 ```
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/tablerowcollection-add-table-row-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-table-row-java-snippets.md)]
@@ -114,7 +118,7 @@ Content-type: application/json
 
 {
   "index": 99,
-  "values": "[[1, 2, 3]]"
+  "values": [[1, 2, 3]]
 }
 ```
 
@@ -143,12 +147,16 @@ Prefer: respond-async
 Workbook-Session-Id: {Workbook-Session-Id}
 
 {
-  "values": "[
+  "values": [
     [1, 2, 3],
     [4, 5, 6]
-  ]"
+  ]
 }
 ```
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/tablerowcollection-add-table-row-async-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-table-row-async-java-snippets.md)]

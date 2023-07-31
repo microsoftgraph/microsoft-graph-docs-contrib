@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->print()->shares()->byShareId('printerShare-id')->allowedUsers()->byAllowedUserId('user-id')->ref()->delete();
+$graphServiceClient->print()->shares()->byPrinterShareId('printerShare-id')->allowedUsers()->byUserId('user-id')->ref()->delete();
 
 
 ```

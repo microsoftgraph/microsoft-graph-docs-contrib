@@ -130,6 +130,10 @@ serviceName := "Catered bento"
 requestBody.SetServiceName(&serviceName) 
 serviceNotes := "Customer requires punctual service."
 requestBody.SetServiceNotes(&serviceNotes) 
+staffMemberIds := []string {
+	"8ee1c803-a1fa-406d-8259-7ab53233f148",
+}
+requestBody.SetStaffMemberIds(staffMemberIds)
 startDateTime := graphmodels.NewDateTimeTimeZone()
 dateTime := "2018-05-01T12:00:00.0000000+00:00"
 startDateTime.SetDateTime(&dateTime) 
