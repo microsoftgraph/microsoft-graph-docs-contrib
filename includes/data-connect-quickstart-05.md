@@ -53,7 +53,7 @@ Specify the datasets that the app registration needs to query. To learn more abo
 
 ## Approve your application for Microsoft Graph Data Connect
 
-1. Open a new browser window in private mode, go to your [Microsoft 365 admin center](https://admin.microsoft.com/), and sign in with your "admin" user.
+1. Open a new browser window in private mode, go to your [Microsoft 365 admin center](https://admin.microsoft.com/), and sign in with your **admin** user.
 
  > [!NOTE]
  > If you are not in your "admin" account, there will be an error with approval. You cannot self-approve your apps.
