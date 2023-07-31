@@ -77,6 +77,7 @@ ig
 
         ![A screenshot of the Set properties pane with New highlighted.](../concepts/images/data-connect-synapse-linked-service.png)
 
+<<<<<<< HEAD
     1. In the dialog box, from the **Connect via integration runtime** dropdown, select the integration runtime you created, enter the **Application ID** and **client secret value** of the Azure Active Directory (Azure AD) application in the **Service principal ID** and **Service principal key** fields respectively, and choose **Create**.  
 
         ![A screenshot of the New linked service pane.](../concepts/images/data-connect-synapse-service-id.png)
@@ -297,3 +298,6 @@ With the pipeline created, now it is time to run it.
     ![A screenshot of the Details tab with RequestingConsent highlighted.](../concepts/images/data-connect-adf-wait-for-approval.png)
 
 1. The request will be sent to the global admin to be approved. For the context of this tutorial, we recommend opening another tab with your admin priviledges enabled so you can approve the pipeline request.
+=======
+1. Go to the sidebar navigation menu and click **Storage browser**, then select **Blob containers**. From there, choose the specific container that you created in this tutorial, which you configured as the destination for the extracted data in the Azure Data Factory pipeline. You should be able to see the data stored within this container.
+>>>>>>> 90f38909eb5b4c137f05fdaf1a42a1685acbab4f
