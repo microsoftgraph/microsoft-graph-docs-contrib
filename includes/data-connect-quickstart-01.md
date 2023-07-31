@@ -16,8 +16,6 @@ Data Connect also grants a more granular control and consent model: you can mana
 
 Additionally, you can use Data Connect to enable machine learning scenarios for your organization. In these scenarios, you can create applications that provide valuable information to your stakeholders, train machine learning models, and even perform forecasting based on large amounts of acquired data.
 
->**Note** You can't approve your own test application using the same account. Ensure that you have another member (or account) in your tenant that acts as an "admin".
-
 ## Get started
 
 In this tutorial, you'll create your first single-tenant Data Connect application. The following is a general flow that explains the Data Connect onboarding.
@@ -34,9 +32,11 @@ In this tutorial, you'll create your first single-tenant Data Connect applicatio
 
 5. **Developer runs their pipelines:** After the administrator has consented to the application, the developer might run their pipelines without any stalling for runtime consent. The pipeline creation and run via Azure Data Factory or Azure Synapse remains the same.  
 
->**Note** For existing tenants who already have Microsoft Graph Data Connect enabled and want to use this tutorial: please notify your global adminstrator toggle Microsoft Graph Data Connect off and then on again in the [admin portal](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan) to be able to follow this tutorial flow. For new customers who have not yet toggled Microsoft Graph Data Connect on, please follow the steps in this tutorial below. No extra action is required from you.
+> [!NOTE]
+> For existing tenants who already have Microsoft Graph Data Connect enabled and want to use this tutorial: please notify your global adminstrator toggle Microsoft Graph Data Connect off and then on again in the [admin portal](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan) to be able to follow this tutorial flow. For new customers who have not yet toggled Microsoft Graph Data Connect on, please follow the steps in this tutorial below. No extra action is required from you.
 
->**Note** For reference, we have left guidance for our former consent process involving Privileged Access Management (PAM) in sections of our tutorial as tabs. We highly recommend following our new consent flow for a more simplified onboarding process.
+> [!NOTE]
+> For reference, we have left guidance for our former consent process involving Privileged Access Management (PAM) in sections of our tutorial as tabs. We highly recommend following our new consent flow for a more simplified onboarding process.
 
 
 ### Prerequisites
@@ -58,7 +58,8 @@ To complete this tutorial, you'll need the following subscriptions or licenses.
          - An "admin" account that can access the [Microsoft 365 admin center](https://admin.microsoft.com/), specifically to approve the test application.  
    - Note the Microsoft 365 region where your tenant is located. If you create a new tenant, ensure it is one of the [regions supported by Microsoft Graph Data Connect](/graph/data-connect-datasets#regions).
 
-    >**Note** You can't approve your own test application using the same account. Ensure that you have another member (or account) in your tenant that acts as an "admin".
+   > [!NOTE] 
+   > You can't approve your own test application using the same account. Ensure that you have another member (or account) in your tenant that acts as an "admin".
 
 2. **Microsoft Azure subscription** 
 
@@ -66,4 +67,5 @@ To complete this tutorial, you'll need the following subscriptions or licenses.
    - Your Azure subscription must be in the same tenant as your Microsoft 365 tenant and both must be in the same Azure AD tenancy.
    - If your Azure subscription isn't in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Azure AD in your Microsoft 365 tenant by following the steps listed in [Associate or add an Azure subscription to your Azure Active Directory tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
 
-   >**Note** The screenshots and examples used in this tutorial are from a Microsoft 365 developer tenant with sample email from test users. You can use your own Microsoft 365 tenant to perform the same steps. No data is written to Microsoft 365. A copy of email data is extracted from all users in a Microsoft 365 tenant and copied to an Azure Blob Storage account. You maintain control over who has access to the data within the Azure Blob Storage.
+   > [!NOTE] 
+   > The screenshots and examples used in this tutorial are from a Microsoft 365 developer tenant with sample email from test users. You can use your own Microsoft 365 tenant to perform the same steps. No data is written to Microsoft 365. A copy of email data is extracted from all users in a Microsoft 365 tenant and copied to an Azure Blob Storage account. You maintain control over who has access to the data within the Azure Blob Storage.

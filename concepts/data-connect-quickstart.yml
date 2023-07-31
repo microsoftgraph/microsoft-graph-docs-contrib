@@ -21,7 +21,7 @@ items:
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-02.md)]
 
-  - title: Set up your Azure Active Directory app registration
+  - title: Set up your Azure Active Directory Application
     durationInMinutes: 10
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-03.md)]
@@ -30,6 +30,11 @@ items:
     durationInMinutes: 10
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-04.md)]
+  
+  - title: Register you Azure Active Directory Application with Microsoft Graph Data Connect
+    durationInMinutes: 15
+    content: |
+      [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
  
   - title: Set up your Azure resource with Azure Synapse or Azure Data Factory
     durationInMinutes: 15
@@ -39,9 +44,9 @@ items:
   - title: Monitor data consent requests with Microsoft 365 Admin Center or PowerShell
     durationInMinutes: 5
     content: |
-      [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-07.md)]
 
   - title: Congratulations!
     durationInMinutes: 0
     content: |
-      [!INCLUDE [](../includes/data-connect-quickstart-07.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-08.md)]

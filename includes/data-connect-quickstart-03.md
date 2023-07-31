@@ -44,6 +44,7 @@ This step describes how you create an Azure Active Directory (Azure AD) applicat
     - Going forward, the client secret is referred as the service principal key.
 
 1. On the left navigation pane for the application, select **Owners**.
+
 1. Ensure that your account (if you are using a developer tenant use the Global admin account) meets the following requirements to be an application owner:
     - Your user account corresponds to a valid user in the tenant who is not a service principal name.
     - Your account must have an Exchange Online license assigned (must have a mailbox).
@@ -51,4 +52,4 @@ This step describes how you create an Azure Active Directory (Azure AD) applicat
 
 1. Verify that your account is listed as an application owner. If that isn't the case, add it to the list.
 
-    ![A screenshot that shows a user set as owner for the application registration in the Azure portal.](../concepts/images/data-connect-aad-app-owners-new.png)
+    ![A screenshot that shows a user set as owner for the application registration in the Azure portal.](../concepts/images/data-connect-aad-app-owners-new.png) 
