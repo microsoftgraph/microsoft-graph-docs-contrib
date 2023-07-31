@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SendActivityNotificationPostRequestBody();
 $topic = new TeamworkActivityTopic();
@@ -27,7 +27,7 @@ $previewText->setContent('New deployment requires your approval');
 
 $requestBody->setPreviewText($previewText);
 $recipient = new AadUserNotificationRecipient();
-$recipient->set@odatatype('microsoft.graph.aadUserNotificationRecipient');
+$recipient->setOdataType('microsoft.graph.aadUserNotificationRecipient');
 
 $recipient->setUserId('569363e2-4e49-4661-87f2-16f245c5d66a');
 

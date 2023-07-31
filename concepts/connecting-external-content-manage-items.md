@@ -61,6 +61,14 @@ Content cannot be directly added into a search result template, but you can use 
 
 When content in your data source changes, you must sync it with your connection items. You can either update the entire item or update one or more of its components. After your content has been added to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [search verticals](/en-us/microsoftsearch/manage-verticals) and [result types](/en-us/microsoftsearch/manage-result-types) or by using the [Microsoft Graph Search API](/graph/api/resources/search-api-overview).
 
+### Activities
+
+The activities component is a transient property that is used to send [activities](/graph/api/resources/externalconnectors-externalactivity) on the item. You can **only** write to this property. 
+
+An activity consists of an actor (who performed the activity), a time (when the activity was performed), and an activity type (what type of activity was performed). The activity types that are currently supported can be found in the **Description** section of the **type** property for an [externalActivity](/graph/api/resources/externalconnectors-externalactivity). 
+
+Sending activities on the item powers intelligent recommendation experiences across Microsoft 365. End users will be able to receive content tailored to them based on the activities that are sent. 
+
 ## Add an item
 
 To add an item to the index, you [create an externalItem](/graph/api/externalconnectors-externalconnection-put-items). When you create an item, you assign a unique identifier in the URL.
@@ -77,9 +85,30 @@ Content-Type: application/json
   "assignee": "meganb@contoso.com"
 }
 ```
-
 > [!NOTE]
 > Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](/en-us/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
+
+
+## Add activities to an item
+To add activities to an item, you call the [addActivities](/graph/api/externalconnectors-externalitem-addactivities) endpoint, with the same unique identifier for that item in the URL.
+
+For example, if Joe Bloggs with Azure AD ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on April 11, 2022 at 4:25PM, the request to send that activity might look like the following.
+
+```http
+POST /external/connections/contosohelpdesk/items/SR00145/addActivities
+Content-Type: application/json
+
+"activities": [
+ {
+   "type": "commented",
+   "startDateTime": "2022-04-11T16:25:34.3202005Z",
+   "performedBy": {
+       "id": "18948b93-d3ed-4307-9981-10fc36a08a52",
+       "type": "user"
+    }
+  }
+]
+```
 
 ## Update an item
 
