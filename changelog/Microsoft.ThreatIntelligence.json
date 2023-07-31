@@ -623,7 +623,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "intelligenceProfileSponsorState",
           "ChangeType": "Addition",
-          "Description": "Added the [intelligenceProfileSponsorState](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfileSponsorState?view=graph-rest-beta) resource type.",
+          "Description": "Added the [intelligenceProfileSponsorState](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceprofilecountryorregionoforigin?view=graph-rest-beta) resource type.",
           "Target": "intelligenceProfileSponsorState"
         },
         {
