@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/resources/security-host-list-hostpairs?view=graph-rest-beta) operation to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/security-threatintelligence?view=graph-rest-beta) resource.",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-hostpairs?view=graph-rest-beta) operation to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/security-threatintelligence?view=graph-rest-beta) resource.",
           "Target": "threatIntelligence"
         },
         {
