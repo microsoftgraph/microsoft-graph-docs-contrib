@@ -26,8 +26,8 @@ As a pre-requisite, Data Connect should be enabled in your tenant. While having 
         - **Resource Group:**  Select the resource group you created previously.
         - **Destination Type:** Select Azure storage account.
         - **Storage Account:** Select the storage account you created previously.
-        - **Storage Account Uri:** Select the option including **.blob.core.windows.net**
-    2. **Application ID:** Select it from the Azure AD apps in the tenant or create a new one.
+        - **Storage Account Uri:** Select the option with **.blob.core.windows.net**
+    2. **Application ID:** Select an existing Azure AD in the tenant or create a new one.
     3. **Description:** Type **My first MGDC app**.
     4. **Publish Type:** Choose **Single-Tenant**.
 
