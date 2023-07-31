@@ -32,7 +32,7 @@ items:
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-04.md)]
  
-  - title: Create an application and set it up with Microsoft Graph Data Connect
+  - title: Register your Azure Active Directory application with Microsoft Graph Data Connect
     durationInMinutes: 15
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
