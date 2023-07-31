@@ -41,7 +41,7 @@ Specify the datasets that the app registration needs to query. To learn more abo
 
     ![A screenshot that shows the dataset catalog on the wizard.](../concepts/images/data-connect-register-app-3.png)
 
-### Review and Create
+### Review and create
 
 5. Once completed, click **Review + Create**, and then click **Create**.
 
