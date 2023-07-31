@@ -19,7 +19,7 @@ Set up your Microsoft 365 tenant to enable the usage of Microsoft Graph Data Con
 
 1. Open a browser and go to your [Microsoft 365 Admin Portal](https://admin.microsoft.com/) and sign in with your “admin” user. 
 
-1. Select the **Settings > Org** settings menu item. You might have to click **Show all** before you're able to view **Settings**.
+1. Select the **Settings > Org settings** menu item. You might have to click **Show all** before you're able to view **Settings**.
 
 1. In the **Services** tab (which should be the default selection), select the **Microsoft Graph Data Connect** service.
 

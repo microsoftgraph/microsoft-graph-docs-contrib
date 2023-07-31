@@ -4,11 +4,10 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this exercise, you'll create, run, and approve an Azure Data Factory pipeline to extract data from Microsoft 365 to an Azure Storage Blob for additional processing.
+In this exercise, you will learn how to create an Azure Active Directory (Azure AD) application that serves as the security principal to run the data extraction process with Micrsoft Graph Data Connect.
+
 
 ## Create a Microsoft Azure Active Directory application 
-
-This step describes how you create an Azure Active Directory (Azure AD) application that serves as the security principal to run the data extraction process.
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 
