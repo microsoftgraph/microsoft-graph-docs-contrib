@@ -151,7 +151,7 @@ Now that you've created the pipeline, it's time to run it.
 
     ![A screenshot of the pipeline page with the bottom pane highlighted.](../concepts/images/data-connect-synapse-activity-run.png)
 
-1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image.The status should progress through Initializing, Consent Pending, Extracting Data, Persisting Data and Succeeded – no further action needed from you for this.  
+1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image. The status should progress through Initializing, Consent Pending, Extracting Data, Persisting Data and Succeeded – no further action needed from you for this.  
 
     ![A screenshot of the Details page with ConsentPending highlighted.](../concepts/images/data-connect-synapse-accept-request.png)
 
