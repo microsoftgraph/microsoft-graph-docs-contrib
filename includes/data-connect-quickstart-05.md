@@ -10,7 +10,7 @@ The second section covers the approval and denial of application requests using 
 
 ## [Register your application with Microsoft Graph Data Connect](#tab/RegisterAADApplication)
 
-As a pre-requisite, Data Connect should be enabled in your tenant. It is recommended to have an AAD app and storage destination resource already created, however these can be created from the wizard. To register an app with Data Connect, developers will be welcomed with a wizard divided into three tabs: **Registration Info, Datasets,** and **Review + create**.
+As a pre-requisite, Data Connect should be enabled in your tenant. While having an Azure AD app and storage destination resource pre-created is recommended, these can also be set up using the wizard. The app registration process in Data Connect involves a three-tab wizard: Registration info, Datasets, and Review + create.
 
 ### Provide details for the Registration Info tab
 
