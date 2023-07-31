@@ -27,7 +27,7 @@ The status is a read-only property in the submission. It changes based on the ac
 
 The following diagram shows the state transition flow.
 
-![Submission states transitions diagram](images/states-transitions/diagram-submissionsnew.PNG)
+![Submission states transitions diagram](images/states-transitions/diagram-submissions.PNG)
 
 ### Submission state transitions based on allowed actions
 
@@ -45,6 +45,10 @@ The following diagram shows the state transition flow.
 | Reassigned | Turn in | Submitted |
 | Reassigned | Return | Returned |
 | Reassigned | Return for revision | Reassigned |
+| Working | Excuse | Excused |
+| Returned | Excuse | Excused |
+| Submitted | Excuse | Excused |
+| Reassigned | Excuse | Excused |
 
 > [!NOTE]
 > Any action and state transition not listed in the table is not allowed.
@@ -61,6 +65,7 @@ In this case, all the calls are asynchronous, which means the operation starts, 
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` | Async | Poll |
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` | Async | Poll |
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` | Async | Poll |
+| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/excuse` | Async | Poll |
 
 ### Limits
 
