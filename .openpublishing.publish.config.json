@@ -82,7 +82,7 @@
     {
       "path_to_root": "concepts/includes/connecting-external-content/snippets",
       "url": "https://github.com/microsoftgraph/msgraph-search-connector-sample",
-      "branch": "jasonjoh-tutorial-update"
+      "branch": "main"
     }
   ],
   "branch_target_mapping": {},
