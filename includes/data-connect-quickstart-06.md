@@ -34,7 +34,7 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 
     ![A screenshot of the resource page with Open Synapse Studio highlighted.](../concepts/images/azure-synapse-studio-tile.png)
 
-1. By default, Azure Synapse Analytics uses an integration runtime that auto-resolves the region. In this tutorial, we recommend to the default auto-resolve in the developer tenant.
+1. By default, Azure Synapse Analytics uses an integration runtime that auto-resolves the region. In this tutorial, we recommend to use the default auto-resolve in the developer tenant.
 
     1. Switch to **Manage (toolbox icon) > Integration runtimes > New**.
 
