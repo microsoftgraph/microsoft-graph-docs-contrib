@@ -6,7 +6,7 @@ ms.localizationpriority: high
 ms.prod: "data-connect"
 ---
 
-# Microsoft Graph Data Connect Policies and Billing
+# Microsoft Graph Data Connect policies and billing
 
 Microsoft Graph Data Connect uses [Azure managed applications](/azure/managed-applications/overview) to allow you to create and deploy your solutions in your Azure environment. Managed applications let you support certain Azure policies, giving customers greater confidence and comfortability when using your applications.
 
