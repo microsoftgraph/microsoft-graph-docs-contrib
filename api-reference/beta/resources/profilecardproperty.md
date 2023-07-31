@@ -21,11 +21,11 @@ For more information on adding properties to the profile card for an organizatio
 
 | Method       | Return Type | Description |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [List](../api/peopleadminsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a collection of [profileCardProperty](../resources/profilecardproperty.md) resources for an organization. |
-| [Create](../api/peopleadminsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. |
-| [Get](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | Retrieve the properties of a [profileCardProperty](../resources/profilecardproperty.md) entity. |
-| [Update](../api/profilecardproperty-update.md)               | [profileCardProperty](profilecardproperty.md) | Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object, identified by its **directoryPropertyName** property.                               |
-| [Delete](../api/profilecardproperty-delete.md)               | None                                          | Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.                               |
+| [List profileCardProperties](../api/peopleadminsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a collection of [profileCardProperty](../resources/profilecardproperty.md) resources for an organization. |
+| [Create profileCardProperty](../api/peopleadminsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. |
+| [Get profileCardProperty](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | Retrieve the properties of a [profileCardProperty](../resources/profilecardproperty.md) entity. |
+| [Update profileCardProperty](../api/profilecardproperty-update.md)               | [profileCardProperty](profilecardproperty.md) | Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object, identified by its **directoryPropertyName** property.                               |
+| [Delete profileCardProperty](../api/profilecardproperty-delete.md)               | None                                          | Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.                               |
 
 ## Properties
 
