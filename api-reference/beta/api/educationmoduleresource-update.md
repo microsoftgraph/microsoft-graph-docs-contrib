@@ -52,7 +52,7 @@ The following is an example of the request.
   "name": "create_educationmoduleresource_patch"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/a979702c-ea28-4356-99ee-fd368e39c0b9/resources/40ee40f1-9718-4cb1-bab7-9631db4b16b8
+PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/1b55f828-731f-44ed-9318-0455e783f950/resources/4d6abd69-542a-422a-94d9-2a0c64229fbe
 Content-type: application/json
 
 {
@@ -77,14 +77,14 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('a979702c-ea28-4356-99ee-fd368e39c0b9')/resources/$entity",
-    "id": "40ee40f1-9718-4cb1-bab7-9631db4b16b8",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('1b55f828-731f-44ed-9318-0455e783f950')/resources/$entity",
+    "id": "4d6abd69-542a-422a-94d9-2a0c64229fbe",
     "resource": {
         "@odata.type": "#microsoft.graph.educationExcelResource",
         "displayName": "new excel file patched.xlsx",
-        "createdDateTime": "2023-07-19T23:01:48.3086057Z",
-        "lastModifiedDateTime": "2023-07-19T23:01:48.3086097Z",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ4S6UQIQGXPZZCL7IUA63TVIQ74",
+        "createdDateTime": "2023-07-28T22:39:23.6842308Z",
+        "lastModifiedDateTime": "2023-07-28T23:51:23.6842351Z",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZBEY7CWDS6HRG22PAHYJGKGM3G",
         "createdBy": {
             "application": null,
             "device": null,

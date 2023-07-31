@@ -52,11 +52,10 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request", 
-  "sampleKeys":["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","ba8e4215-4fb2-4dba-abe7-a8f2585177d3"],
   "name": "get_educationModule"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/ba8e4215-4fb2-4dba-abe7-a8f2585177d3
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/72a3879f-af73-4179-8a0e-4cb29c0fa369
 ```
 
 ### Response
@@ -74,20 +73,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules/$entity",
-    "displayName": "2023-05-05T22_28_20_564Z",
-    "description": "Description for 2023-05-05T22_28_20_564Z",
-    "resourcesFolderUrl": null,
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('cff47bf3-791b-4b0a-ad6b-92fa66917cc7')/modules/$entity",
+    "displayName": "Module 1",
+    "description": "Description for Module 1",
+    "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!G2qSPDsXR0y4Bb2vODednawfynEIaD1OvPVeH4wbOp_3GV_mcV9MRLur9XlH200N/items/01IVG3LZKSPUPNBJYGQJCJUNG5SOCCD5DF",
     "isPinned": false,
     "status": "draft",
-    "createdDateTime": "2023-06-21T17:25:44.1277744Z",
-    "lastModifiedDateTime": "2023-06-21T17:25:44.1494968Z",
-    "id": "ba8e4215-4fb2-4dba-abe7-a8f2585177d3",
+    "createdDateTime": "2023-07-24T22:02:06.8286097Z",
+    "lastModifiedDateTime": "2023-07-24T22:02:44.2906308Z",
+    "id": "72a3879f-af73-4179-8a0e-4cb29c0fa369",
     "createdBy": {
         "application": null,
         "device": null,
         "user": {
-            "id": "4aa81579-714a-4f46-8a05-605558455fa1",
+            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
             "displayName": null
         }
     },
@@ -95,7 +94,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "id": "4aa81579-714a-4f46-8a05-605558455fa1",
+            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
             "displayName": null
         }
     }
