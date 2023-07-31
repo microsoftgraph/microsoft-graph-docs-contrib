@@ -4,9 +4,9 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-The first section and tab is for users who have followed the new and updated consent flow to set up their pipeline. This goes over how to register and approve an AAD application with Microsoft Graph Data Connect (Data Connect). As a pre-requisite, Data Connect should be enabled in your tenant. We recommend to have an Azure Active Directory (Azure AD) application and storage destination resource created.
+The first section and tab are for users who have completed the new and updated consent flow to set up their pipeline. It provides guidance on registering and approving an AAD application with Microsoft Graph Data Connect (Data Connect). As a prerequisite, Data Connect should be enabled in your tenant. We recommend creating an Azure Active Directory (Azure AD) application and a storage destination resource.
 
-The second section goes over how to approve and deny application requests using our former consent process with Privileged Access Management (PAM). The first tab follows our former consent process on the admin center while the second tab is our guidance via a powershell script. If you are following the PAM steps, we recommend you come back to this step **AFTER** setting up your Azure Synapse or Factory pipeline in the next step.
+The second section covers the approval and denial of application requests using our former consent process with Privileged Access Management (PAM). The first tab provides instructions for the admin center's former consent process, while the second tab offers guidance through a PowerShell script. If you are following the PAM steps, we suggest revisiting this step AFTER setting up your Azure Synapse or Factory pipeline in the next step.
 
 ## [Register your application with Microsoft Graph Data Connect](#tab/RegisterAADApplication)
 

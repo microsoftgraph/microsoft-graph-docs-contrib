@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this exercise, you will learn how to create an Azure Active Directory (Azure AD) application that serves as the security principal to run the data extraction process with Micrsoft Graph Data Connect.
+In this exercise, you will learn how to create an Azure Active Directory (Azure AD) application that serves as the security principal to run the data extraction process with Microsoft Graph Data Connect.
 
 
 ## Create a Microsoft Azure Active Directory application 
