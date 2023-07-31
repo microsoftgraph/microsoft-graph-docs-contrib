@@ -12525,6 +12525,8 @@ items:
                         href: api/accesspackage-list-accesspackageresourcerolescopes.md
                       - name: Create
                         href: api/accesspackage-post-accesspackageresourcerolescopes.md
+                      - name: Create
+                        href: api/accesspackage-delete-accesspackageresourcerolescopes.md
                   - name: Access package subject
                     href: resources/accesspackagesubject.md
                     items:
