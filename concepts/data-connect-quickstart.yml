@@ -21,7 +21,7 @@ items:
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-02.md)]
 
-  - title: Set up your Azure Active Directory Application
+  - title: Set up your Azure Active Directory application
     durationInMinutes: 10
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-03.md)]
