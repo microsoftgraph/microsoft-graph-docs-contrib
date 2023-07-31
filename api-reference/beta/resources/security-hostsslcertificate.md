@@ -23,7 +23,7 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List hostSslCertificates](../api/security-hostsslcertificate-list-host.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection|Get a list of the [microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate-get.md) objects and their properties.
+|[List hostSslCertificates](../api/security-hostsslcertificate-list-host.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection|Get a list of the [microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) objects and their properties.
 |[Get hostSslCertificate](../api/security-hostsslcertificate-get.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md)|Read the properties and relationships of a [microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) object.
 
 ## Properties
