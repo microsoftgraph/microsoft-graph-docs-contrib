@@ -56,7 +56,7 @@ Specify the datasets that the app registration needs to query. To learn more abo
 1. Open a new browser window in private mode, go to your [Microsoft 365 admin center](https://admin.microsoft.com/), and sign in with your **admin** user.
 
  > [!NOTE]
- > If you are not in your "admin" account, there will be an error with approval. You cannot self-approve your apps.
+ > If you are not in your **admin** account, there will be an error with the approval. You cannot self-approve your apps.
 
 2. On the left navigation pane, select **Settings > Org settings**. You might have to click **Show all** before you can view **Settings**.
 
