@@ -39,7 +39,9 @@ It's optional to add the certificate thumbprint to the request payload. If you w
 #### Request
 
 ```powershell-interactive
-Get-PfxCertificate -Filepath "C:\Users\admin\Desktop\20230112.cer" | Out-File -FilePath "C:\Users\admin\Desktop\20230112.cer.thumbprint.txt" ## Replace the file path with the source of your certificate
+## Replace the file path with the source of your certificate
+
+Get-PfxCertificate -Filepath "C:\Users\admin\Desktop\20230112.cer" | Out-File -FilePath "C:\Users\admin\Desktop\20230112.cer.thumbprint.txt"
 ```
 
 #### Response
@@ -59,7 +61,9 @@ To read the certificate's key using PowerShell, run the following request.
 #### Request
 
 ```powershell-interactive
-[convert]::ToBase64String((Get-Content C:\Users\admin\Desktop\20230112.cer -Encoding byte))  | Out-File -FilePath "C:\Users\admin\Desktop\20230112.key.txt" ## Replace the file path with the location of your certificate
+## Replace the file path with the location of your certificate
+
+[convert]::ToBase64String((Get-Content C:\Users\admin\Desktop\20230112.cer -Encoding byte))  | Out-File -FilePath "C:\Users\admin\Desktop\20230112.key.txt"
 ```
 
 #### Response
