@@ -30,16 +30,16 @@ Describes print activity for a printer during a specified time period (usageDate
 |printerID|String|The ID of the printer represented by these statistics.|
 |printerName|String|The name of the printer represented by these statistics.|
 |usageDate|Date|The date associated with these statistics.|
-|completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed by the printer on the associated date.|
-|completedColorJobCount|Int64|The number of color print jobs completed by the printer on the associated date.|
-|completedJobCount|Int64|The number of print jobs that were completed by the printer on the associated date.|
-|incompleteJobCount|Int64|The number of print jobs that were queued for the printer, but not completed, on the associated date.|
-|pageCount|Int64|The estimated number of pages printed by the printer on the associated date. This number is reported by the physical printer device and is not always accurate for accounting purposes.|
-|blackAndWhitePageCount|Int64|The estimated number of black and white pages printed by the printer on the associated date. This number is reported by the physical printer device and is not always accurate for accounting purposes.|
-|colorPageCount|Int64|The estimated number of color pages printed by the printer on the associated date. This number is reported by the physical printer device and is not always accurate for accounting purposes.|
-|mediaSheetCount|Int64|The estimated number of media sheets printed by the printer on the associated date. This number is reported by the physical printer device and is not always accurate for accounting purposes.|
-|doubleSidedSheetCount|Int64|The estimated number of double-sided media sheets printed by the printer on the associated date. This number is reported by the physical printer device and is not always accurate for accounting purposes.|
-|singleSidedSheetCount|Int64|The estimated number of single-sided media sheets printed by the printer on the associated date. This number is reported by the physical printer device and is not always accurate for accounting purposes.|
+|completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed by the printer.|
+|completedColorJobCount|Int64|The number of color print jobs completed by the printer.|
+|completedJobCount|Int64|The number of print jobs that were completed by the printer.|
+|incompleteJobCount|Int64|The number of print jobs that were queued for the printer, but not completed.|
+|pageCount|Int64|The estimated number of pages printed based on reporting by the printer.|
+|blackAndWhitePageCount|Int64|The estimated number of black and white pages printed based on reporting by the printer.|
+|colorPageCount|Int64|The estimated number of color pages printed based on reporting by the printer.|
+|mediaSheetCount|Int64|The estimated number of media sheets printed based on reporting by the printer.|
+|doubleSidedSheetCount|Int64|The estimated number of double-sided media sheets printed based on reporting by the printer.|
+|singleSidedSheetCount|Int64|The estimated number of single-sided media sheets printed based on reporting by the printer.|
 
 ## JSON representation
 

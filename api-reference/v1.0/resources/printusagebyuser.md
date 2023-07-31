@@ -26,16 +26,16 @@ Describes print activity for a user during a specified time period (usageDate).
 |id|String|The ID of this usage summary.|
 |userPrincipalName|String|The UPN of the user represented by these statistics.|
 |usageDate|Date|The date associated with these statistics.|
-|completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed on behalf of the user on the associated date.|
-|completedColorJobCount|Int64|The number of color print jobs completed on behalf of the user on the associated date.|
-|completedJobCount|Int64|The number of print jobs that were completed on behalf of the user on the associated date.|
-|incompleteJobCount|Int64|The number of print jobs that were queued on behalf of the user, but not completed, on the associated date.|
-|pageCount|Int64|The estimated number of pages printed on behalf of the user on the associated date. This number is reported by the physical printer device and is not always accurate for accounting purposes.|
-|blackAndWhitePageCount|Int64|The estimated number of black and white pages printed on behalf of the user on the associated date. This number is reported by the physical printer device and is not always accurate for accounting purposes.|
-|colorPageCount|Int64|The estimated number of color pages printed on behalf of the user on the associated date. This number is reported by the physical printer device and is not always accurate for accounting purposes.|
-|mediaSheetCount|Int64|The estimated number of media sheets printed on behalf of the user on the associated date. This number is reported by the physical printer device and is not always accurate for accounting purposes.|
-|doubleSidedSheetCount|Int64|The estimated number of double-sided media sheets printed on behalf of the user on the associated date. This number is reported by the physical printer device and is not always accurate for accounting purposes.|
-|singleSidedSheetCount|Int64|The estimated number of single-sided media sheets printed on behalf of the user on the associated date. This number is reported by the physical printer device and is not always accurate for accounting purposes.|
+|completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed on behalf of the user.|
+|completedColorJobCount|Int64|The number of color print jobs completed on behalf of the user.|
+|completedJobCount|Int64|The number of print jobs that were completed on behalf of the user.|
+|incompleteJobCount|Int64|The number of print jobs that were queued on behalf of the user, but not completed.|
+|pageCount|Int64|The estimated number of pages printed on behalf of the user based on reporting by the printer.|
+|blackAndWhitePageCount|Int64|The estimated number of black and white pages printed on behalf of the user based on reporting by the printer.|
+|colorPageCount|Int64|The estimated number of color pages printed on behalf of the user based on reporting by the printer.|
+|mediaSheetCount|Int64|The estimated number of media sheets printed on behalf of the user based on reporting by the printer.|
+|doubleSidedSheetCount|Int64|The estimated number of double-sided media sheets printed on behalf of the user based on reporting by the printer.|
+|singleSidedSheetCount|Int64|The estimated number of single-sided media sheets printed on behalf of the user based on reporting by the printer.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
