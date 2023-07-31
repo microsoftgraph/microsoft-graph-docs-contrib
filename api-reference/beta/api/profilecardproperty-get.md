@@ -59,7 +59,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_profilecardproperty"
+  "name": "get_profilecardproperty",
+  "sampleKeys": ["CustomAttribute1"]
 }-->
 
 ```http
