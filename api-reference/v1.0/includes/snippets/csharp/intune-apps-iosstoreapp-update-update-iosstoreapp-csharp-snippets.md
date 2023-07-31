@@ -38,14 +38,14 @@ var requestBody = new IosStoreApp
 	MinimumSupportedOperatingSystem = new IosMinimumOperatingSystem
 	{
 		OdataType = "microsoft.graph.iosMinimumOperatingSystem",
-		V8_0 = true,
-		V9_0 = true,
-		V10_0 = true,
-		V11_0 = true,
-		V12_0 = true,
-		V13_0 = true,
-		V14_0 = true,
-		V15_0 = true,
+		V80 = true,
+		V90 = true,
+		V100 = true,
+		V110 = true,
+		V120 = true,
+		V130 = true,
+		V140 = true,
+		V150 = true,
 	},
 };
 var result = await graphClient.DeviceAppManagement.MobileApps["{mobileApp-id}"].PatchAsync(requestBody);
