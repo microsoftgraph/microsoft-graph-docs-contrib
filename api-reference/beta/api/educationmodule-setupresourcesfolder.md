@@ -78,8 +78,8 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/$metadata#educationModule",
     "@odata.type": "#microsoft.graph.educationModule",
-    "displayName": "2023-05-05T22_28_20_564Z",
-    "description": "Description for 2023-05-05T22_28_20_564Z",
+    "displayName": "Module 4",
+    "description": "Description for Module 4",
     "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ7ODS65Z665DBH3QGZ5UYZQOP2S",
     "isPinned": true,
     "status": "published",

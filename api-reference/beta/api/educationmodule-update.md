@@ -62,7 +62,7 @@ PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566
 Content-type: application/json
 
 {
-    "displayName": "New_2023-04-26T17_17_17_166Z updated",
+    "displayName": "New_Module5 updated",
     "description": "updated for description"
 }
 ```
@@ -83,7 +83,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules/$entity",
-    "displayName": "New_2023-04-26T17_17_17_166Z updated",
+    "displayName": "New_Module5 updated",
     "description": "updated for description",
     "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ7ODS65Z665DBH3QGZ5UYZQOP2S",
     "isPinned": false,

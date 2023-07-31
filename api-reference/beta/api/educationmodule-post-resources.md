@@ -84,7 +84,7 @@ Content-type: application/json
 {
     "resource": {
          "@odata.type": "#microsoft.graph.educationLinkResource",
-         "displayName":"2023-07-26T21_22_29_804Z",
+         "displayName":"Bing site",
          "link": "https://www.bing.com"
      }
 }
@@ -109,7 +109,7 @@ Content-type: application/json
     "id": "291f3577-7e48-4faa-8bde-f0b9bbdab5eb",
     "resource": {
         "@odata.type": "#microsoft.graph.educationLinkResource",
-        "displayName": "2023-07-26T21_22_29_804Z",
+        "displayName": "Bing site",
         "createdDateTime": "2023-07-25T21:22:30.1455092Z",
         "lastModifiedDateTime": "2023-07-25T21:22:30.1455106Z",
         "link": "https://www.bing.com",
@@ -148,7 +148,7 @@ Content-type: application/json
 { 
     "resource": {
         "@odata.type": "#microsoft.graph.educationWordResource",
-        "displayName": "test_2023-07-26T21_22_51_471Z.docx",
+        "displayName": "test_word_file.docx",
         "file" :{
             "odataid":"https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ23DHK5BYNOKJCZOUJZJBOAOUZP"
         }
@@ -175,7 +175,7 @@ Content-type: application/json
     "id": "151c668c-6c77-495e-a28e-c02fa155375a",
     "resource": {
         "@odata.type": "#microsoft.graph.educationWordResource",
-        "displayName": "test_2023-07-26T21_22_51_471Z.docx",
+        "displayName": "test_word_file.docx",
         "createdDateTime": "2023-07-25T21:22:53.549826Z",
         "lastModifiedDateTime": "2023-07-25T21:22:53.5498285Z",
         "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ23DHK5BYNOKJCZOUJZJBOAOUZP",
@@ -214,7 +214,7 @@ Content-type: application/json
 {
     "resource": {
         "@odata.type": "#microsoft.graph.educationFileResource",
-        "displayName": "test_2023-07-26T21_22_53_926Z.pdf",
+        "displayName": "test_pdf_file.pdf",
         "file" :{
           "odataid":"https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZLJG2P74OLQ5FL5EXU3VY6BFSQ"
         }
@@ -241,7 +241,7 @@ Content-type: application/json
     "id": "fdf9d241-4737-4966-8914-90f832135ed7",
     "resource": {
         "@odata.type": "#microsoft.graph.educationFileResource",
-        "displayName": "test_2023-07-26T21_22_53_926Z.pdf",
+        "displayName": "test_pdf_file.pdf",
         "createdDateTime": "2023-07-25T21:22:55.4340491Z",
         "lastModifiedDateTime": "2023-07-25T21:22:55.4340527Z",
         "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZLJG2P74OLQ5FL5EXU3VY6BFSQ",
@@ -280,7 +280,7 @@ Content-type: application/json
 {
     "resource": {
         "@odata.type": "#microsoft.graph.educationExcelResource",
-        "displayName": "test_2023-07-26T21_22_55_695Z.xlsx",
+        "displayName": "test_excel_file.xlsx",
         "file" :{
           "odataid":"https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZLIO353OYQOBCIFCJGKBSLB4DK"
         }
@@ -307,7 +307,7 @@ Content-type: application/json
     "id": "13544dd3-7f42-42f6-a1d5-62da1885d7bc",
     "resource": {
         "@odata.type": "#microsoft.graph.educationExcelResource",
-        "displayName": "test_2023-07-26T21_22_55_695Z.xlsx",
+        "displayName": "test_excel_file.xlsx",
         "createdDateTime": "2023-07-25T21:22:56.6099823Z",
         "lastModifiedDateTime": "2023-07-25T21:22:56.6099861Z",
         "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZLIO353OYQOBCIFCJGKBSLB4DK",
@@ -346,7 +346,7 @@ Content-type: application/json
 {
     "resource": {
         "@odata.type": "#microsoft.graph.educationPowerPointResource",
-        "displayName":"PptTest_2023-07-26T21_22_56_846Z.pptx",
+        "displayName":"ppt_test.pptx",
         "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZEG2AM23OQ5NA2LFTHERBABBK6"
     }
 }
@@ -372,7 +372,7 @@ Content-type: application/json
     "id": "4d112f68-0351-40ae-8adc-adfd14f320b3",
     "resource": {
         "@odata.type": "#microsoft.graph.educationPowerPointResource",
-        "displayName": "PptTest_2023-07-26T21_22_56_846Z.pptx",
+        "displayName": "ppt_test.pptx",
         "createdDateTime": "2023-07-25T21:22:58.1097081Z",
         "lastModifiedDateTime": "2023-07-25T21:22:58.1097107Z",
         "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZEG2AM23OQ5NA2LFTHERBABBK6",
@@ -411,7 +411,7 @@ Content-type: application/json
 {
     "resource": {
         "@odata.type": "#microsoft.graph.educationMediaResource",
-        "displayName":"MediaResource_2023-07-26T21_22_58_261Z.PNG",
+        "displayName":"media-resource.PNG",
         "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ3IYW2FOZYQNBELS7N4RRREIMVK"
     }
 }
@@ -436,7 +436,7 @@ Content-type: application/json
     "id": "17d1ed4d-ba9e-483e-82d2-c0e1826a288f",
     "resource": {
         "@odata.type": "#microsoft.graph.educationMediaResource",
-        "displayName": "MediaResource_2023-07-26T21_22_58_261Z.PNG",
+        "displayName": "media-resource.PNG",
         "createdDateTime": "2023-07-25T21:22:59.0845073Z",
         "lastModifiedDateTime": "2023-07-25T21:22:59.0845089Z",
         "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ3IYW2FOZYQNBELS7N4RRREIMVK",
@@ -539,7 +539,7 @@ Content-type: application/json
 {
     "resource": {
          "@odata.type": "#microsoft.graph.educationLinkedAssignmentResource",
-         "displayName":"2023-07-26T21_22_48_707Z",
+         "displayName":"Existing_Assignment",
          "url": "https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/b563da70-710e-4a9b-ba86-94a4d73e5d21"
      }
 }
@@ -564,7 +564,7 @@ Content-type: application/json
     "id": "bfbf27cb-2316-47f0-81d4-7bb028f01964",
     "resource": {
         "@odata.type": "#microsoft.graph.educationLinkedAssignmentResource",
-        "displayName": "2023-07-26T21_22_48_707Z",
+        "displayName": "Existing_Assignment",
         "createdDateTime": "2023-07-25T21:22:49.2808156Z",
         "lastModifiedDateTime": "2023-07-25T21:22:49.2808174Z",
         "url": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/b563da70-710e-4a9b-ba86-94a4d73e5d21/",

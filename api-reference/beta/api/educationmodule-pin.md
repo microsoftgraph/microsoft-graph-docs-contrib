@@ -74,8 +74,8 @@ HTTP/1.1 200 Ok
 {
     "@odata.context": "https://graph.microsoft.com/$metadata#educationModule",
     "@odata.type": "#microsoft.graph.educationModule",
-    "displayName": "2023-05-05T22_28_20_564Z",
-    "description": "Description for 2023-05-05T22_28_20_564Z",
+    "displayName": "Module 3",
+    "description": "Description for Module 3",
     "resourcesFolderUrl": null,
     "isPinned": true,
     "status": "draft",

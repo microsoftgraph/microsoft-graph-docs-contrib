@@ -58,8 +58,8 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 Content-type: application/json
 
 { 
-  "displayName":"2023-05-05T22_28_20_564Z",
-  "description": "Description for 2023-05-05T22_28_20_564Z"
+  "displayName":"Module 2",
+  "description": "Description for Module 2"
 }
 ```
 
@@ -79,8 +79,8 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules/$entity",
-    "displayName": "2023-05-05T22_28_20_564Z",
-    "description": "Description for 2023-05-05T22_28_20_564Z",
+    "displayName": "Module 2",
+    "description": "Description for Module 2",
     "resourcesFolderUrl": null,
     "isPinned": false,
     "status": "draft",
