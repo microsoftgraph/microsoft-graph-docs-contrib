@@ -14,7 +14,7 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
 
-1. Sign in to the portal using an account with an [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Ensure that you are signed-in with your "developer" account that has privileges to create Azure resources within your subscription.
+1. Sign in to the portal using an account with an [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Ensure that you are signed-in with your developer account that has privileges to create Azure resources within your subscription.
 
 1. On the left pane, select **Create a resource**.
 
