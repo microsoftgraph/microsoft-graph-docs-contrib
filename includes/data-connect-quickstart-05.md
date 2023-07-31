@@ -81,7 +81,7 @@ Specify the datasets that the app registration needs to query. To learn more abo
 ---
 
 
-# Former Guidance on Privileged Access Management (PAM)
+# Former guidance on Privileged Access Management (PAM)
 
 If you are following the PAM steps, we recommend you come back to this step **AFTER** setting up your Azure Synapse or Factory pipeline in the next step.
 
