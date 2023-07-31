@@ -14,18 +14,18 @@ As a pre-requisite, Data Connect should be enabled in your tenant. It is recomme
 
 ### Provide details for the Registration Info tab
 
-1. Access [Microsoft Graph Data Connect in the Azure portal](https://aka.ms/mgdcinazure). Moving forward, the experience will be available through the search bar in the [Azure portal](https://portal.azure.com/)
+1. Access [Microsoft Graph Data Connect in the Azure portal](https://aka.ms/mgdcinazure). You can find it through the search bar in the [Azure portal](https://portal.azure.com/)
 
-2. Click the **Add** or the **Add a new application** button
+2. Click the **Add** or **Add a new application**.
 
     ![A screenshot that shows the Azure portal Data Factory to create a new application.](../concepts/images/data-connect-register-app-1.png)
 
-3. Follow the **Add** wizard by specifying the project details for the registration. Once you have completed the following fields, click **Next : Datasets >**
+3. Follow the **Add** wizard to provide the project details for registration. Once you have completed the required fields, click **Next: Datasets >**
 
-    1. **Subscription:** Select a subscription in the tenant that will be used exclusively to filter the next four selections utilized to configure the data destination
-        - **Resource Group:**  Select the resource group you created previously
-        - **Destination Type:** Select Azure Storage Account as the destination type
-        - **Storage Account:** Select the Storage Account you created previously
+    1. **Subscription:** Select a subscription to filter the next selections:
+        - **Resource Group:**  Select the resource group you created previously.
+        - **Destination Type:** Select Azure storage account.
+        - **Storage Account:** Select the storage account you created previously
         - **Storage Account Uri:** Select the option including **.blob.core.windows.net**
     2. **Application ID:** Select from the Azure AD apps in the tenant or create a new one
     3. **Description:** Enter **My first MGDC app**
