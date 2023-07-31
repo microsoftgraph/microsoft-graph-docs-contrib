@@ -58,7 +58,7 @@ The following is a JSON representation of the resource.
   "usageDate": "Date",
   "completedBlackAndWhiteJobCount": "Integer",
   "completedColorJobCount": "Integer",
-  "incompleteJobCount": "Integer"
+  "incompleteJobCount": "Integer",
   "completedJobCount": "Integer",
   "pageCount": "Integer",
   "blackAndWhitePageCount": "Integer",
