@@ -7,14 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = MailFolder()
+request_body = MailSearchFolder()
 request_body.@odata_type = 'microsoft.graph.mailSearchFolder'
 
-additional_data = [
-'filter_query' => 'contains(subject, \'Analytics\')', 
-];
-request_body.additional_data(additional_data)
-
+request_body.filter_query = 'contains(subject, \'Analytics\')'
 
 
 

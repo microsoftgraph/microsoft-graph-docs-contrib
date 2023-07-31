@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewLearningProvider()
@@ -28,6 +28,8 @@ longLogoWebUrlForLightTheme := "https://support.content.office.net/en-us/media/4
 requestBody.SetLongLogoWebUrlForLightTheme(&longLogoWebUrlForLightTheme) 
 loginWebUrl := "https://www.linkedin.com/learning-login/teams"
 requestBody.SetLoginWebUrl(&loginWebUrl) 
+isCourseActivitySyncEnabled := true
+requestBody.SetIsCourseActivitySyncEnabled(&isCourseActivitySyncEnabled) 
 
 result, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").Patch(context.Background(), requestBody, nil)
 

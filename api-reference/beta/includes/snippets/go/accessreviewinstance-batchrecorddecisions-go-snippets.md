@@ -12,10 +12,10 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewBatchRecordDecisionsPostRequestBody()
+requestBody := graphusers.NewItemBatchRecordDecisionsPostRequestBody()
 decision := "Approve"
 requestBody.SetDecision(&decision) 
 justification := "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team"

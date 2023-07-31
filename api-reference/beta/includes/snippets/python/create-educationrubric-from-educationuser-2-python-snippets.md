@@ -27,14 +27,10 @@ levels_rubric_level1description.contenttype(BodyType.Text('bodytype.text'))
 
 
 levels_rubric_level1.description = levels_rubric_level1description
-levels_rubric_level1grading = EducationAssignmentGradeType()
+levels_rubric_level1grading = EducationAssignmentPointsGradeType()
 levels_rubric_level1grading.@odata_type = '#microsoft.graph.educationAssignmentPointsGradeType'
 
-additional_data = [
-'max_points' => 2,
-];
-levels_rubric_level1grading.additional_data(additional_data)
-
+levels_rubric_level1grading.MaxPoints = 2
 
 
 levels_rubric_level1.grading = levels_rubric_level1grading
@@ -50,14 +46,10 @@ levels_rubric_level2description.contenttype(BodyType.Text('bodytype.text'))
 
 
 levels_rubric_level2.description = levels_rubric_level2description
-levels_rubric_level2grading = EducationAssignmentGradeType()
+levels_rubric_level2grading = EducationAssignmentPointsGradeType()
 levels_rubric_level2grading.@odata_type = '#microsoft.graph.educationAssignmentPointsGradeType'
 
-additional_data = [
-'max_points' => 1,
-];
-levels_rubric_level2grading.additional_data(additional_data)
-
+levels_rubric_level2grading.MaxPoints = 1
 
 
 levels_rubric_level2.grading = levels_rubric_level2grading
@@ -139,7 +131,7 @@ qualitiesArray []= qualitiesRubricQuality2;
 request_body.qualities(qualitiesArray)
 
 
-grading = EducationAssignmentGradeType()
+grading = EducationAssignmentPointsGradeType()
 grading.@odata_type = '#microsoft.graph.educationAssignmentPointsGradeType'
 
 

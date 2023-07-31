@@ -45,15 +45,10 @@ var requestBody = new AccessPackageAssignmentPolicy
 				},
 				PrimaryApprovers = new List<SubjectSet>
 				{
-					new SubjectSet
+					new SingleUser
 					{
 						OdataType = "#microsoft.graph.singleUser",
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"userId" , "08a551cb-575a-4343-b914-f6e42798bd20"
-							},
-						},
+						UserId = "08a551cb-575a-4343-b914-f6e42798bd20",
 					},
 				},
 			},
@@ -61,56 +56,49 @@ var requestBody = new AccessPackageAssignmentPolicy
 	},
 	Questions = new List<AccessPackageQuestion>
 	{
-		new AccessPackageQuestion
+		new AccessPackageMultipleChoiceQuestion
 		{
 			OdataType = "#microsoft.graph.accessPackageMultipleChoiceQuestion",
 			Sequence = 1,
 			IsRequired = true,
 			IsAnswerEditable = true,
 			Text = "What country are you working from?",
-			AdditionalData = new Dictionary<string, object>
+			IsMultipleSelectionAllowed = false,
+			Choices = new List<AccessPackageAnswerChoice>
 			{
+				new AccessPackageAnswerChoice
 				{
-					"isMultipleSelectionAllowed" , "false"
+					OdataType = "microsoft.graph.accessPackageAnswerChoice",
+					ActualValue = "KE",
+					Text = "Kenya",
 				},
+				new AccessPackageAnswerChoice
 				{
-					"choices" , new List<>
-					{
-						new 
-						{
-							OdataType = "microsoft.graph.accessPackageAnswerChoice",
-							ActualValue = "KE",
-							Text = "Kenya",
-						},
-						new 
-						{
-							OdataType = "microsoft.graph.accessPackageAnswerChoice",
-							ActualValue = "US",
-							Text = "United States",
-						},
-						new 
-						{
-							OdataType = "microsoft.graph.accessPackageAnswerChoice",
-							ActualValue = "GY",
-							Text = "Guyana",
-						},
-						new 
-						{
-							OdataType = "microsoft.graph.accessPackageAnswerChoice",
-							ActualValue = "BD",
-							Text = "Bangladesh",
-						},
-						new 
-						{
-							OdataType = "microsoft.graph.accessPackageAnswerChoice",
-							ActualValue = "JP",
-							Text = "Japan",
-						},
-					}
+					OdataType = "microsoft.graph.accessPackageAnswerChoice",
+					ActualValue = "US",
+					Text = "United States",
+				},
+				new AccessPackageAnswerChoice
+				{
+					OdataType = "microsoft.graph.accessPackageAnswerChoice",
+					ActualValue = "GY",
+					Text = "Guyana",
+				},
+				new AccessPackageAnswerChoice
+				{
+					OdataType = "microsoft.graph.accessPackageAnswerChoice",
+					ActualValue = "BD",
+					Text = "Bangladesh",
+				},
+				new AccessPackageAnswerChoice
+				{
+					OdataType = "microsoft.graph.accessPackageAnswerChoice",
+					ActualValue = "JP",
+					Text = "Japan",
 				},
 			},
 		},
-		new AccessPackageQuestion
+		new AccessPackageTextInputQuestion
 		{
 			OdataType = "#microsoft.graph.accessPackageTextInputQuestion",
 			Sequence = 2,
@@ -125,15 +113,8 @@ var requestBody = new AccessPackageAssignmentPolicy
 					Text = "Que fais-tu comme travail?",
 				},
 			},
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"isSingleLineQuestion" , "false"
-				},
-				{
-					"regexPattern" , "[a-zA-Z]+[a-zA-Z\s]*"
-				},
-			},
+			IsSingleLineQuestion = false,
+			RegexPattern = "[a-zA-Z]+[a-zA-Z\s]*",
 		},
 	},
 	AccessPackage = new AccessPackage

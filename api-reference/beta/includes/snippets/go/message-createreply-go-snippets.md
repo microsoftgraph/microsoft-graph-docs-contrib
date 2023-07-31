@@ -13,10 +13,10 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewCreateReplyPostRequestBody()
+requestBody := graphusers.NewItemCreateReplyPostRequestBody()
 message := graphmodels.NewMessage()
 
 
@@ -38,7 +38,6 @@ recipient1.SetEmailAddress(emailAddress)
 toRecipients := []graphmodels.Recipientable {
 	recipient,
 	recipient1,
-
 }
 message.SetToRecipients(toRecipients)
 requestBody.SetMessage(message)

@@ -1,10 +1,8 @@
 ---
 author: FaithOmbongi
-ms.author: ombongifaith
-ms.reviewer: jumasure
+ms.reviewer: ric.lewis
 ms.prod: "change-notifications"
 ms.topic: include
-ms.date: 02/23/2022
 ms.localizationpriority: high
 ---
 
@@ -16,12 +14,12 @@ ms.localizationpriority: high
 |:-----------------------------------------------|:------------------------------|
 | Security [alert][]                             | 43,200 minutes (under 30 days) |
 | Teams [callRecord][]                           | 4,230 minutes (under 3 days)   |
-| Teams [channel][]                              | 60 minutes (1 hour)           |
-| Teams [chat][]                                 | 60 minutes (1 hour)           |
-| Teams [chatMessage][]                          | 60 minutes (1 hour)           |
-| Teams [conversationMember][]                   | 60 minutes (1 hour)           |
+| Teams [channel][]                              | 4,320 minutes (3 days)         |
+| Teams [chat][]                                 | 4,320 minutes (3 days)        |
+| Teams [chatMessage][]                          | 4,320 minutes (3 days)        |
+| Teams [conversationMember][]                   | 4,320 minutes (3 days)        |
 | Teams [onlineMeeting][]                        | 4,320 minutes (3 days)         |
-| Teams [team][]                                 | 60 minutes (1 hour)           |
+| Teams [team][]                                 | 4,320 minutes (3 days)         |
 | Group [conversation][]                         | 4,230 minutes (under 3 days)   |
 | OneDrive [driveItem][]                         | 42,300 minutes (under 30 days) |
 | SharePoint [list][]                            | 42,300 minutes (under 30 days) |

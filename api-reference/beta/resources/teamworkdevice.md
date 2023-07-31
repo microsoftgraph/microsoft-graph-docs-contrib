@@ -41,7 +41,7 @@ Inherits from [entity](../resources/entity.md).
 |createdBy|[identitySet](../resources/identityset.md)|Identity of the user who enrolled the device to the tenant.|
 |createdDateTime|DateTimeOffset|The UTC date and time when the device was enrolled to the tenant.|
 |currentUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|The signed-in user on the device.|
-|deviceType|[teamworkDeviceType](../resources/teamworkdevice.md#teamworkdevicetype-values)|The type of device. The possible values are: `unknown`, `ipPhone`, `teamsRoom`, `surfaceHub`, `collaborationBar`, `teamsDisplay`, `touchConsole`, `lowCostPhone`, `teamsPanel`, `sip`, `unknownFutureValue`.|
+|deviceType|[teamworkDeviceType](../resources/teamworkdevice.md#teamworkdevicetype-values)|The type of device. The possible values are: `unknown`, `ipPhone`, `teamsRoom`, `surfaceHub`, `collaborationBar`, `teamsDisplay`, `touchConsole`, `lowCostPhone`, `teamsPanel`, `sip`, `sipAnalog`, `unknownFutureValue`.|
 |hardwareDetail|[teamworkHardwareDetail](../resources/teamworkhardwaredetail.md)|A collection of hardware-related properties. For example, **oemSerialNumber** and **model**.|
 |healthStatus|[teamworkDeviceHealthStatus](../resources/teamworkdevice.md#teamworkdevicehealthstatus-values)|The health status of the device. The possible values are: `unknown`, `offline`, `critical`, `nonUrgent`, `healthy`, `unknownFutureValue`.|
 |id|String|Device identifier. Inherited from [entity](../resources/entity.md).|
@@ -64,7 +64,8 @@ Inherits from [entity](../resources/entity.md).
 |lowCostPhone|7|Low-cost phone devices are cost-effective Microsoft Teams phones.|
 |teamsPanel|8|Microsoft Teams panels are the compact touchscreen devices that display meeting details scheduled via Teams.|
 |sip|9|Session Initiation Protocol (SIP) devices which support Teams calls with the SIP Gateway from Microsoft.|
-|unknownFutureValue|10|Evolvable enumeration sentinel value. Do not use.|
+|sipAnalog|10|Legacy analog endpoints such as elevator phones, parking lot phones, or factory floor devices, which are registered with Microsoft Teams through the SIP Gateway.|
+|unknownFutureValue|11|Evolvable enumeration sentinel value. Do not use.|
 
 
 ### teamworkDeviceHealthStatus values

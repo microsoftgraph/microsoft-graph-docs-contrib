@@ -14,15 +14,12 @@ request_body.description = 'All users from sales department'
 
 request_body.allowedtargetscope(AllowedTargetScope.SpecificDirectoryUsers('allowedtargetscope.specificdirectoryusers'))
 
-specific_allowed_targets_subject_set1 = SubjectSet()
+specific_allowed_targets_subject_set1 = AttributeRuleMembers()
 specific_allowed_targets_subject_set1.@odata_type = '#microsoft.graph.attributeRuleMembers'
 
-additional_data = [
-'description' => 'Membership rule for all users from sales department', 
-'membership_rule' => '(user.department -eq \"Sales\")', 
-];
-specific_allowed_targets_subject_set1.additional_data(additional_data)
+specific_allowed_targets_subject_set1.description = 'Membership rule for all users from sales department'
 
+specific_allowed_targets_subject_set1.membership_rule = '(user.department -eq \"Sales\")'
 
 
 specificAllowedTargetsArray []= specificAllowedTargetsSubjectSet1;
@@ -31,6 +28,10 @@ request_body.specificallowedtargets(specificAllowedTargetsArray)
 
 automatic_request_settings = AccessPackageAutomaticRequestSettings()
 automatic_request_settings.request_access_for_allowed_targets = True
+
+automatic_request_settings.remove_access_when_target_leaves_allowed_targets = True
+
+automatic_request_settings.graceperiodbeforeaccessremoval =  \DateInterval('P7D')
 
 
 request_body.automatic_request_settings = automatic_request_settings

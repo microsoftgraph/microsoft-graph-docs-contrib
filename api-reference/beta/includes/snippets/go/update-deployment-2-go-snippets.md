@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelswindowsupdates.NewDeployment()
@@ -30,7 +30,6 @@ monitoringRule.SetAction(&action)
 
 monitoringRules := []graphmodelswindowsupdates.MonitoringRuleable {
 	monitoringRule,
-
 }
 monitoring.SetMonitoringRules(monitoringRules)
 settings.SetMonitoring(monitoring)

@@ -8,15 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AuthenticationMethodConfiguration
+var requestBody = new VoiceAuthenticationMethodConfiguration
 {
 	OdataType = "#microsoft.graph.voiceAuthenticationMethodConfiguration",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"isOfficePhoneAllowed" , "false"
-		},
-	},
+	IsOfficePhoneAllowed = false,
 };
 var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"].PatchAsync(requestBody);
 

@@ -9,7 +9,7 @@ client =  GraphServiceClient(request_adapter)
 
 
 
-result = await client.device_management.virtual_endpoint.snapshots.by_snapshot_id('cloudPcSnapshot-id').get()
+result = await client.device_management.virtual_endpoint.snapshots.get_storage_accounts(subscription_id='{subscription_id}'.get()
 
 
 ```

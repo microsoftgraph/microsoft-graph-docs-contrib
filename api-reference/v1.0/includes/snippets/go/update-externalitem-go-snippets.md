@@ -8,33 +8,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/External/Connections/Item/Items/Item"
+	  graphmodelsexternalconnectors "github.com/microsoftgraph/msgraph-sdk-go/models/externalconnectors"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewItem()
-additionalData := map[string]interface{}{
+requestBody := graphmodelsexternalconnectors.NewExternalItem()
 
 
- := graphmodels.New()
-type := "everyone"
-.SetType(&type) 
+acl := graphmodelsexternalconnectors.NewAcl()
+type := graphmodels.EVERYONE_ACLTYPE 
+acl.SetType(&type) 
 value := "67a141d8-cf4e-4528-ba07-bed21bfacd2d"
-.SetValue(&value) 
-accessType := "grant"
-.SetAccessType(&accessType) 
+acl.SetValue(&value) 
+accessType := graphmodels.GRANT_ACCESSTYPE 
+acl.SetAccessType(&accessType) 
 
-	acl := []graphmodels.Objectable {
-		,
-
-	}
+acl := []graphmodelsexternalconnectors.Aclable {
+	acl,
 }
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetAcl(acl)
 
-graphClient.External().Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").Put(context.Background(), requestBody, nil)
 
 
 ```

@@ -84,9 +84,8 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update page",
   "keywords": "",
@@ -96,4 +95,5 @@ HTTP/1.1 204 No Content
     "Error: /api/page-update.md/update_page:
       Error parsing resource definition: Deserialized JSON type 'Newtonsoft.Json.Linq.JArray' is not compatible with expected type 'Newtonsoft.Json.Linq.JObject'. Path '', line 13, position 1."
   ]
-}-->
+}
+-->

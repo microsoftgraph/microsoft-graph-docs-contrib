@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	assignedTo = "secAdmin@contoso.onmicrosoft.com"
@@ -13,6 +13,6 @@ $params = @{
 	status = "inProgress"
 }
 
-Update-MgSecurityAlertV2 -AlertId $alertId -BodyParameter $params
+Update-MgBetaSecurityAlertV2 -AlertId $alertId -BodyParameter $params
 
 ```

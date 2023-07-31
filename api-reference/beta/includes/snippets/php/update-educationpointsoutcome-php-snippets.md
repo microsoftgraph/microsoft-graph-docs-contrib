@@ -7,27 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new EducationOutcome();
-$requestBody->set@odatatype('#microsoft.graph.educationPointsOutcome');
+$requestBody = new EducationPointsOutcome();
+$requestBody->setOdataType('#microsoft.graph.educationPointsOutcome');
 
-$additionalData = [
-		'points' => $requestBody = new Points();
-$		requestBody->set@odatatype('#microsoft.graph.educationAssignmentPointsGrade');
+$points = new EducationAssignmentPointsGrade();
+$points->setOdataType('#microsoft.graph.educationAssignmentPointsGrade');
 
-		$requestBody->setPoints(85.0);
+$points->setPoints(85.0);
 
 
 $requestBody->setPoints($points);
 
-];
-$requestBody->setAdditionalData($additionalData);
 
-
-
-
-$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->byAssignmentId('educationAssignment-id')->submissions()->bySubmissionId('educationSubmission-id')->outcomes()->byOutcomeId('educationOutcome-id')->patch($requestBody);
+$result = $graphServiceClient->education()->classes()->byEducationClassId('educationClass-id')->assignments()->byEducationAssignmentId('educationAssignment-id')->submissions()->byEducationSubmissionId('educationSubmission-id')->outcomes()->byEducationOutcomeId('educationOutcome-id')->patch($requestBody);
 
 
 ```

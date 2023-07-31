@@ -7,7 +7,7 @@ ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.prod: "governance"
-ms.date: 06/07/2023
+ms.date: 06/08/2023
 ---
 
 # Working with rules in PIM using Microsoft Graph
@@ -50,7 +50,7 @@ The following image shows the activation role settings on the Azure portal, mapp
 | Number | Azure portal UX Description                                                                                                                                        | Microsoft Graph rule ID / Derived resource type                                                   | Enforced for caller |
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|----------------------|
 | 1      | Activation maximum duration (hours)                                                                                                                                | `Expiration_EndUser_Assignment` / unifiedRoleManagementPolicyExpirationRule                       | End user            |
-| 2      | On activation, require: None, Azure AD Multi-Factor Authentication <br/><br/>Require ticket information on activation<br/><br/>Require justification on activation | `Enablement_Admin_Eligibility` / unifiedRoleManagementPolicyEnablementRule                        | Admin               |
+| 2      | On activation, require: None, Azure AD Multi-Factor Authentication <br/><br/>Require ticket information on activation<br/><br/>Require justification on activation | `Enablement_EndUser_Assignment` / unifiedRoleManagementPolicyEnablementRule                        | End user               |
 | 3      | On activation, require: Azure AD Conditional Access authentication context (Preview)                                                                               | `AuthenticationContext_EndUser_Assignment` / unifiedRoleManagementPolicyAuthenticationContextRule | End user            |
 | 4      | Require approval to activate                                                                                                                                       | `Approval_EndUser_Assignment` / unifiedRoleManagementPolicyApprovalRule                           | End user            |
 
@@ -65,7 +65,7 @@ The following image shows the assignment role settings on the Azure portal, mapp
 | 5      | Allow permanent eligible assignment<br/><br/>Expire eligible assignments after                                                                                       | `Expiration_Admin_Eligibility` / unifiedRoleManagementPolicyExpirationRule  | Admin               |
 | 6      | Allow permanent active assignment<br/><br/>Expire active assignments after                                                                                           | `Expiration_Admin_Assignment` / unifiedRoleManagementPolicyExpirationRule   | Admin               |
 | 7      | Require Azure Multi-Factor Authentication on active assignment<br/><br/>Require justification on active assignment<br/><br/>Require ticket information on activation | `Enablement_Admin_Assignment` / unifiedRoleManagementPolicyExpirationRule   | Admin               |
-| 8      | Require Azure Multi-Factor Authentication on active assignment<br/><br/>Require justification on active assignment<br/><br/>Require ticket information on activation | `Enablement_EndUser_Assignment` / unifiedRoleManagementPolicyExpirationRule | End user            |
+| 8      | Require Azure Multi-Factor Authentication on active assignment<br/><br/>Require justification on active assignment<br/><br/>Require ticket information on activation | `Enablement_Admin_Assignment` / unifiedRoleManagementPolicyExpirationRule | Admin            |
 
 ## Notification rules
 

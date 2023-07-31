@@ -9,7 +9,7 @@ client =  GraphServiceClient(request_adapter)
 
 
 
-result = await client.identity_governance.entitlement_management.acce_package_assignment_requests.by_acces_package_assignment_request_id('accessPackageAssignmentRequest-id').get()
+result = await client.identity_governance.entitlement_management.acce_package_assignment_requests.filter_by_current_user(on='{on}'.get()
 
 
 ```

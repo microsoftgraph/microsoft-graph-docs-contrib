@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actionName|[deviceScopeAction](../resources/intune-devices-devicescopeaction.md)|Not yet documented|
+|actionName|deviceScopeAction|Not yet documented|
 |deviceScopeId|String|Not yet documented|
 
 

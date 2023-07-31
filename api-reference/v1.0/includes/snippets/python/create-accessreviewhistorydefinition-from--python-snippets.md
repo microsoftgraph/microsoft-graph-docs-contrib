@@ -21,29 +21,25 @@ request_body.reviewHistoryPeriodStartDateTime = DateTime('2021-01-01T00:00:00Z')
 
 request_body.reviewHistoryPeriodEndDateTime = DateTime('2021-04-30T23:59:59Z')
 
-scopes_access_review_scope1 = AccessReviewScope()
+scopes_access_review_scope1 = AccessReviewQueryScope()
 scopes_access_review_scope1.@odata_type = '#microsoft.graph.accessReviewQueryScope'
 
-additional_data = [
-'query_type' => 'MicrosoftGraph', 
-'query' => '/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, \'accessPackageAssignments\')', 
-'query_root' => 	null,
-];
-scopes_access_review_scope1.additional_data(additional_data)
+scopes_access_review_scope1.query_type = 'MicrosoftGraph'
 
+scopes_access_review_scope1.query = '/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, \'accessPackageAssignments\')'
+
+scopes_access_review_scope1.queryRoot=null
 
 
 scopesArray []= scopesAccessReviewScope1;
-scopes_access_review_scope2 = AccessReviewScope()
+scopes_access_review_scope2 = AccessReviewQueryScope()
 scopes_access_review_scope2.@odata_type = '#microsoft.graph.accessReviewQueryScope'
 
-additional_data = [
-'query_type' => 'MicrosoftGraph', 
-'query' => '/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, \'/groups\')', 
-'query_root' => 	null,
-];
-scopes_access_review_scope2.additional_data(additional_data)
+scopes_access_review_scope2.query_type = 'MicrosoftGraph'
 
+scopes_access_review_scope2.query = '/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, \'/groups\')'
+
+scopes_access_review_scope2.queryRoot=null
 
 
 scopesArray []= scopesAccessReviewScope2;

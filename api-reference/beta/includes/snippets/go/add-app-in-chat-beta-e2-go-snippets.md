@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTeamsAppInstallation()
@@ -45,7 +45,6 @@ resourceSpecificPermissions := []graphmodels.TeamsAppResourceSpecificPermissiona
 	teamsAppResourceSpecificPermission1,
 	teamsAppResourceSpecificPermission2,
 	teamsAppResourceSpecificPermission3,
-
 }
 consentedPermissionSet.SetResourceSpecificPermissions(resourceSpecificPermissions)
 requestBody.SetConsentedPermissionSet(consentedPermissionSet)

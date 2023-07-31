@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SendMailPostRequestBody();
 $message = new Message();
@@ -31,18 +31,14 @@ $toRecipientsArray []= $toRecipientsRecipient1;
 $message->setToRecipients($toRecipientsArray);
 
 
-$attachmentsAttachment1 = new Attachment();
-$attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
+$attachmentsAttachment1 = new FileAttachment();
+$attachmentsAttachment1->setOdataType('#microsoft.graph.fileAttachment');
 
 $attachmentsAttachment1->setName('attachment.txt');
 
 $attachmentsAttachment1->setContentType('text/plain');
 
-$additionalData = [
-	'contentBytes' => 'SGVsbG8gV29ybGQh', 
-];
-$attachmentsAttachment1->setAdditionalData($additionalData);
-
+$attachmentsAttachment1->setContentBytes(base64_decode('SGVsbG8gV29ybGQh'));
 
 
 $attachmentsArray []= $attachmentsAttachment1;

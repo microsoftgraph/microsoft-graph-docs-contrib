@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = $RefDeleteRequestBody()
+request_body = $refDeleteRequestBody()
 additional_data = [
 '@odata_id' => 'https://graph.microsoft.com/v1.0/directoryObjects/{id}', 
 ];

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AuthenticationMethodsPolicy();
 $registrationEnforcement = new RegistrationEnforcement();
@@ -16,7 +16,7 @@ $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setSnoozeDura
 
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setState(new AdvancedConfigState('enabled'));
 
-$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setExcludeTargets([]);
+$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setExcludeTargets([	]);
 
 $includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1 = new AuthenticationMethodsRegistrationCampaignIncludeTarget();
 $includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1->setId('3ee3a9de-0a86-4e12-a287-9769accf1ba2');
@@ -34,26 +34,20 @@ $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setIncludeTar
 $registrationEnforcement->setAuthenticationMethodsRegistrationCampaign($registrationEnforcementAuthenticationMethodsRegistrationCampaign);
 
 $requestBody->setRegistrationEnforcement($registrationEnforcement);
-$additionalData = [
-'reportSuspiciousActivitySettings' => $requestBody = new ReportSuspiciousActivitySettings();
-$requestBody->setState('enabled');
+$reportSuspiciousActivitySettings = new ReportSuspiciousActivitySettings();
+$reportSuspiciousActivitySettings->setState(new AdvancedConfigState('enabled'));
 
-$includeTarget = new IncludeTarget();
-$includeTarget->setTargetType('group');
+$reportSuspiciousActivitySettingsIncludeTarget = new IncludeTarget();
+$reportSuspiciousActivitySettingsIncludeTarget->setTargetType(new AuthenticationMethodTargetType('group'));
 
-$includeTarget->setId('all_users');
+$reportSuspiciousActivitySettingsIncludeTarget->setId('all_users');
 
 
-$requestBody->setIncludeTarget($includeTarget);
-$requestBody->setVoiceReportingCode(0);
+$reportSuspiciousActivitySettings->setIncludeTarget($reportSuspiciousActivitySettingsIncludeTarget);
+$reportSuspiciousActivitySettings->setVoiceReportingCode(0);
 
 
 $requestBody->setReportSuspiciousActivitySettings($reportSuspiciousActivitySettings);
-
-];
-$requestBody->setAdditionalData($additionalData);
-
-
 
 
 $result = $graphServiceClient->policies()->authenticationMethodsPolicy()->patch($requestBody);

@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphidentity.NewSetOrderPostRequestBody()
@@ -21,7 +21,6 @@ newAssignmentOrder := graphmodels.NewAssignmentOrder()
 order := []string {
 	"City",
 	"extension_GUID_ShoeSize",
-
 }
 newAssignmentOrder.SetOrder(order)
 requestBody.SetNewAssignmentOrder(newAssignmentOrder)

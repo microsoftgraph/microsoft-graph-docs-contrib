@@ -7,13 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new Extension();
-$requestBody->set@odatatype('microsoft.graph.openTypeExtension');
+$requestBody = new OpenTypeExtension();
+$requestBody->setOdataType('microsoft.graph.openTypeExtension');
+
+$requestBody->setExtensionName('Com.Contoso.Deal');
 
 $additionalData = [
-		'extensionName' => 'Com.Contoso.Deal', 
 		'companyName' => 'Alpine Skis', 
 		'dealValue' => 1010100,
 		'expirationDate' => '2015-07-03T13:04:00.000Z', 

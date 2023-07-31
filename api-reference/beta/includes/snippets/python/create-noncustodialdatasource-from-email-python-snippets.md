@@ -10,14 +10,10 @@ client =  GraphServiceClient(request_adapter)
 request_body = NoncustodialDataSource()
 request_body.apply_hold_to_source = True
 
-data_source = DataSource()
+data_source = UserSource()
 data_source.@odata_type = 'microsoft.graph.ediscovery.userSource'
 
-additional_data = [
-'email' => 'adelev@contoso.com', 
-];
-data_source.additional_data(additional_data)
-
+data_source.email = 'adelev@contoso.com'
 
 
 request_body.data_source = data_source

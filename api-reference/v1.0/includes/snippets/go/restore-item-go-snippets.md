@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 import (
 	  "context"
-	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdrives.NewRestorePostRequestBody()

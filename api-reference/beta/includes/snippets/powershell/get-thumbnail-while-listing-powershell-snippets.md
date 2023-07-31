@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Files
+Import-Module Microsoft.Graph.Beta.Files
 
-Get-MgDriveItemChild -DriveId $driveId -DriveItemId $driveItemId -ExpandProperty "thumbnails" 
+Get-MgBetaDriveItemChild -DriveId $driveId -DriveItemId $driveItemId -ExpandProperty "thumbnails" 
 
 ```

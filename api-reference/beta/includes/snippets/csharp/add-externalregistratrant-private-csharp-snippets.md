@@ -8,19 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new MeetingRegistrantBase
+var requestBody = new ExternalMeetingRegistrant
 {
 	OdataType = "#microsoft.graph.externalMeetingRegistrant",
 	Id = "30494ab7-7338-4592-bfec-a4333be2a0a6",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"tenantId" , "909c6581-5130-43e9-88f3-fcb3582cde37"
-		},
-		{
-			"userId" , "cc515404-b55c-466e-b896-992c918ecc01"
-		},
-	},
+	TenantId = "909c6581-5130-43e9-88f3-fcb3582cde37",
+	UserId = "cc515404-b55c-466e-b896-992c918ecc01",
 };
 var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.Registrants.PostAsync(requestBody);
 

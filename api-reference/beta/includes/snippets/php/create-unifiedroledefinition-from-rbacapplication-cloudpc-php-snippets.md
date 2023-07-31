@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleDefinition();
 $requestBody->setDescription('An example custom role');
@@ -15,7 +15,7 @@ $requestBody->setDescription('An example custom role');
 $requestBody->setDisplayName('ExampleCustomRole');
 
 $rolePermissionsUnifiedRolePermission1 = new UnifiedRolePermission();
-$rolePermissionsUnifiedRolePermission1->setAllowedResourceActions(['Microsoft.CloudPC/CloudPCs/Read', ]);
+$rolePermissionsUnifiedRolePermission1->setAllowedResourceActions(['Microsoft.CloudPC/CloudPCs/Read', 	]);
 
 
 $rolePermissionsArray []= $rolePermissionsUnifiedRolePermission1;
@@ -23,7 +23,7 @@ $requestBody->setRolePermissions($rolePermissionsArray);
 
 
 $additionalData = [
-'condition' => 'null', 
+	'condition' => 'null', 
 ];
 $requestBody->setAdditionalData($additionalData);
 

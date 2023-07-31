@@ -51,7 +51,7 @@ If successful, this method returns `201 Created` response code and [WorkbookTabl
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_table_from_worksheet"
+  "name": "create_table_from_worksheet_01"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id}/add

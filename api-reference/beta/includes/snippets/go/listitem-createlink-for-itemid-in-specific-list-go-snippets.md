@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphsites.NewCreateLinkPostRequestBody()
@@ -27,9 +27,8 @@ requestBody.SetPassword(&password)
 
 driveRecipient := graphmodels.NewDriveRecipient()
 
-recipients := []graphsites.DriveRecipientable {
+recipients := []graphmodels.DriveRecipientable {
 	driveRecipient,
-
 }
 requestBody.SetRecipients(recipients)
 sendNotification := true

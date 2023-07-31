@@ -7,18 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = MailFolder()
+request_body = MailSearchFolder()
 request_body.@odata_type = 'microsoft.graph.mailSearchFolder'
 
 request_body.display_name = 'Weekly digests'
 
-additional_data = [
-'include_nested_folders' => true,
-'source_folder_ids' => ['AQMkADYAAAIBDAAAAA==', ],
-'filter_query' => 'contains(subject, \'weekly digest\')', 
-];
-request_body.additional_data(additional_data)
+request_body.include_nested_folders = True
 
+request_body.SourceFolderIds(['AQMkADYAAAIBDAAAAA==', ])
+
+request_body.filter_query = 'contains(subject, \'weekly digest\')'
 
 
 

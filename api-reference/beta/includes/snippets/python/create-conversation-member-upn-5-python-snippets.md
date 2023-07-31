@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = ConversationMember()
+request_body = AadUserConversationMember()
 request_body.@odata_type = '#microsoft.graph.aadUserConversationMember'
 
 request_body.visibleHistoryStartDateTime = DateTime('2019-04-18T23:51:43.255Z')

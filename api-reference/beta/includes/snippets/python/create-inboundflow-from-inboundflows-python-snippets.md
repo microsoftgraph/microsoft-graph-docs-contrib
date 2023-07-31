@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = InboundFlow()
+request_body = InboundFileFlow()
 request_body.@odata_type = '#microsoft.graph.industryData.inboundFileFlow'
 
 request_body.datadomain(InboundDomain.EducationRostering('inbounddomain.educationrostering'))

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	displayName = "My Contoso Tab"
@@ -17,6 +17,6 @@ $params = @{
 	}
 }
 
-New-MgChatTab -ChatId $chatId -BodyParameter $params
+New-MgBetaChatTab -ChatId $chatId -BodyParameter $params
 
 ```
