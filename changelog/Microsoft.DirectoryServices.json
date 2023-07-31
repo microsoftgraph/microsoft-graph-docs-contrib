@@ -14187,6 +14187,24 @@
     {
       "ChangeList": [
         {
+          "Id": "d10f34c8-8787-4aa7-9bb4-3eee0f45fc90",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesLastPasswordSyncDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the `onPremisesLastPasswordSyncDateTime` property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "d10f34c8-8787-4aa7-9bb4-3eee0f45fc90",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-19T07:13:01.0506132Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0d0ccba4-794b-46b6-be6b-5761eef57e0c",
           "ApiChange": "Resource",
           "ChangedApiName": "onPremisesSipInfo",
