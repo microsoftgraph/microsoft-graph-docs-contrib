@@ -51,7 +51,7 @@ Each access package is referenced by a single access package catalog, and has li
 |Relationship|Type|Description|
 |:---|:---|:---|
 |accessPackagesIncompatibleWith | [accessPackage](accesspackage.md) collection | The access packages that are incompatible with this package. Read-only. |
-|assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Read-only. Nullable.|
+|assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Read-only. Nullable. Supports `$expand`.|
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Read-only. Nullable.|
 |incompatibleAccessPackages | [accessPackage](accesspackage.md) collection | The access packages whose assigned users are ineligible to be assigned this access package. |
 |incompatibleGroups | [group](group.md) collection | The groups whose members are ineligible to be assigned this access package. |
