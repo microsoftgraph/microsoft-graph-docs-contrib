@@ -15,4 +15,4 @@ You've completed the Microsoft Graph Data Connect tutorial! You should now be ab
 
 ![A screenshot of the Azure portal user interface that shows the newly created file in the Azure Storage container.](../concepts/images/data-connect-storageaccountcompletion.png)
 
-After building your first successful Microsoft Graph Data Connect Pipeline, you can start learning more about the product [here](/graph/data-connect-concept-overview).
+After building your first successful Microsoft Graph Data Connect pipeline, you can start learning more about the product [here](/graph/data-connect-concept-overview).
