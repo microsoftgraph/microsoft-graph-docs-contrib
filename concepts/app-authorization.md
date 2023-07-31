@@ -12,7 +12,7 @@ The new Microsoft Graph Data Connect app authorization experience is built into 
 
 This documentation is for global administrators authorizing Microsoft Graph Data Connect apps for your organization.
 
-The new Data Connect app authorization experience is built into the Microsoft 365 admin center. Get started by navigating to the **Security & Privacy** tab under **Org settings**—selecting **Microsoft Graph Data Connect applications**—and navigating to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter). This is a different entry point from where admins opt-in to Data Connect. Currently, only global administrators may authorize Data Connect applications.
+The new Data Connect app authorization experience is built into the Microsoft 365 admin center. Get started by navigating directly to the [MGDC authorization portal](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter). Alternatively, you can get there by going to the **Security & Privacy** tab under **Org settings** and selecting **Microsoft Graph Data Connect applications**. This is a different entry point and experience from where admins opt-in to Data Connect. Currently, only global administrators may authorize Data Connect applications.
 
 ![Graphic showing org settings in the Security & Privacy tab for Data Connect apps.](images/org-settings-security-and-privacy-data-connect-apps.png)
 
@@ -25,7 +25,7 @@ The landing page of the Data Connect applications portal is a quick view of all 
 You'll find the following types of applications in the portal:
 
 - **Single-tenant apps**—applications that are registered in your tenant, and require access to data. These are typically enterprise scenarios.
-    - - **Multi-tenant applications**— applications that are housed in another tenant, and require access to data from your tenant. These are typically ISV scenarios. Review the apps carefully, as authorizing them can enable data to be migrated from your tenant to the app developer’s tenant.
+- **Multi-tenant applications**— applications that are housed in another tenant, and require access to data from your tenant. These are typically ISV scenarios. Review the apps carefully, as authorizing them can enable data to be migrated from your tenant to the app developer’s tenant.
 
 All single-tenant apps will be populated in the table by default. Only approved, denied, or expired multi-tenant apps will be included in the table. Other apps may be shown in the table with the following statuses:
 
@@ -37,13 +37,13 @@ All single-tenant apps will be populated in the table by default. Only approved,
 
 ### App details view
 <!-- For this section, can we either have a set of images for the user to click through or a GIF of all wizard pages to reduce number of screenshots? -->
-Clicking on an app entry in the table will launch the app details view, with more information on what data the app requires. This wizard experience walks you through the relevant data access details, and allows you to approve or deny an app at the end. For what this looks like in the Data Connect app portal and M365 admin center, see the images below:
+Clicking on an app entry in the table will launch the app details view, with more information on what data the app requires. This wizard experience walks you through the relevant data access details, and allows you to approve or deny an app at the end. For what this looks like in the M365 admin center, see the images below:
 
 ![Graphic showing the app details view in the Data Connect portal.](images/authorization-app-details-overview.png)
 
-1. Step 1 in the wizard shows overview information about the application:
+First, the wizard shows overview information about the application:
 
-`App owner` main user name of the developer who registered the application.
+`Developer` main user name of the developer who registered the application.
 
 `Data destination` sink where the data will be delivered. If approved, this app may move the requested data to any location within the listed sink.
 
@@ -51,15 +51,16 @@ Clicking on an app entry in the table will launch the app details view, with mor
 
 ![Graphic showing the app details view for a teams call records dataset sample in Data Connect portal.](images/authorization-app-details-dataset.png)
 
-2. Step 2 in the wizard varies per dataset. There'll be one step per dataset registered in the app, for example:
+Next, the wizard includes multiple dataset steps. There will be one step per dataset registered in the app and each page shows you relevant information on each dataset. For example:
 
 `Columns`—specifies columns the app intends to extract via Data Connect. If approved, this app can extract any subset of approved columns for the specified dataset.
 
 `Scope`—specifies scope (i.e., user selection) the app intends to extract via Data Connect. [Learn more about scopes in Data Connect](./data-connect-users-and-groups).
+Please see the [Authorization validation during pipeline execution](#authorization-validation-during-pipeline-execution) section on this page for details on how authorization works with different scopes.
 
 ![Graphic showing the scopes review page in Data Connect portal.](images/authorization-app-details-review.png)
 
-3. Step 3 in the wizard confirms some key information on the app for you to review. You can select `Approve`, `Decline`, or `Cancel`. An action on an app is all or nothing. Authorizing an app means you are authorizing all access specified in the previous steps.
+Finally, the wizard confirms some key information on the app for you to review.. You can select `Approve`, `Decline`, or `Cancel`. An action on an app is all or nothing. Authorizing an app means you are authorizing all access specified in the previous steps.
 
 When authorizing an app, you may encounter these error messages:
 
@@ -72,7 +73,7 @@ If an unexpected error occurs, the error message will include an error code. Ple
 
 ![Graphic showing page for adding a multi-tenant app in Data Connect portal.](images/authorization-multitenant-app-search.png)
 
-To discover multi-tenant applications, select `Add new multi-tenant app` above the app summary table. If your tenant is enabled for cross-tenant data migration, you'll be shown two text boxes. Once you enter the application ID and application’s tenant ID, and choose `Find`,the portal will launch the app details view for the app you're searching for.
+To discover multi-tenant applications, select `Add new multi-tenant app` above the app summary table. If your tenant is enabled for cross-tenant data migration, you'll be shown two text boxes. Once you enter the application ID and tenant ID, choose `Find`, and the portal will launch the app details view for the app you're searching for.
 
 ### M365 audit logs
 
