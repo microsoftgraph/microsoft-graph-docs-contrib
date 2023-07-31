@@ -48,11 +48,11 @@ items:
     content: |
       [!INCLUDE [](includes/connecting-external-content/09-run-app.md)]
   - title: Surface the data in search
-    durationInMinutes: 10
+    durationInMinutes: 5
     content: |
       [!INCLUDE [](includes/connecting-external-content/10-surface data.md)]
   - title: Search for results
-    durationInMinutes: 10
+    durationInMinutes: 5
     content: |
       [!INCLUDE [](includes/connecting-external-content/11-search-results.md)]
   - content: |

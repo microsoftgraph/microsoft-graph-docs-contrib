@@ -4,50 +4,48 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD041 -->
 
-To make it easier for users to find the information that they have permission to see, create search verticals and result types to customize the search results in Microsoft SharePoint, Microsoft Office, and Microsoft Search in Bing.
+In this step, you will create search verticals and result types to customize the search results in Microsoft SharePoint, Microsoft Office, and Microsoft Search in Bing.
 
 ## Create a vertical
 
-To create and enable a search vertical at the organization level, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) by using the global administrator role, and do the following:
+Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) by using the global administrator role, and do the following:
 
 1. Go to **Settings** > **Search & intelligence** > **Customizations**.
-2. Go to **Vertical**, and then select **Add**.
-3. Provide the following details:
-   * **Name the vertical:** Appliance Parts.
+1. Go to **Verticals**, and then select **Add**.
+1. Enter `Appliance Parts` in the **Name** field and select **Next**.
 
-     ![Screenshot of the "Name the vertical" section](../images/connectors-images/build11.png)
+    :::image type="content" source="../../images/connectors-images/build11.png" alt-text="Screenshot of the Name the vertical section":::
 
-   * **Content source**: The connector created with the app (Parts Inventory).
+1. Select **Connectors**, then select the **Parts Inventory** connector. Select **Next**.
 
-     ![Screenshot of the "Content source" section](../images/connectors-images/build12.png)
+    :::image type="content" source="../../images/connectors-images/build12.png" alt-text="Screenshot of the Content source section":::
 
-   * **Add a query**: Leave blank.
+1. On the **Add a query** page, leave the query blank. Select **Next**.
 
-     ![Screenshot of the "Add a query" section](../images/connectors-images/build13.png)
+1. On the **Filters** page, select **Next**.
 
-   * **Filters**: Leave blank.
+1. Select **Add Vertical**.
 
-     ![Screenshot of the "Filters" section](../images/connectors-images/build14.png)
+1. Select **Enable vertical**, then select **Done**.
 
 ## Create a result type
 
 To create a result type:
 
 1. Go to **Settings** > **Search & intelligence** > **Customizations**.
-2. Go to the **Result type** tab, and then select **Add**.
-3. Provide the following details:
-   * **Name**: Appliance Part
+1. Go to the **Result type** tab, and then select **Add**.
+1. Enter `Appliance Part` in the **Name** field and select **Next**.
 
-     ![Screenshot of the "Name the result type" section](../images/connectors-images/build15.png)
+    :::image type="content" source="../../images/connectors-images/build15.png" alt-text="Screenshot of the Name the result type section":::
 
-   * **Content source**: The connector created in the app.
+1. On the **Content source** page, select **Parts Connector**. Select **Next**.
 
-     ![Screenshot of the "Select a content source" section](../images/connectors-images/build16.png)
+    :::image type="content" source="../../images/connectors-images/build16.png" alt-text="Screenshot of the Select a content source section":::
 
-   * **Rules**: None
+1. On the **Rules** page, select **Next**.
 
-     ![Screenshot of the "Set rules" section](../images/connectors-images/build17.png)
+1. On the **Design your layout** page, paste the following JSON, then select **Next**.
 
-   * Paste contents of [result-type.json](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/result-type.json) into the layout designer textbox.
+    :::code language="json" source="./snippets/result-type.json" :::
 
-     ![Screenshot of the "Design layout" section](../images/connectors-images/build18.png)
+1. Select **Add result type**, then select **Done**.
