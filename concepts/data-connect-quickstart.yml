@@ -31,17 +31,16 @@ items:
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-04.md)]
   
- 
+   - title: Register you Azure Active Directory Application with Microsoft Graph Data Connect
+    durationInMinutes: 5
+    content: |
+      [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
+
   - title: Set up your Azure resource with Azure Synapse or Azure Data Factory
     durationInMinutes: 15
     content: |
-      [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
-      
-  - title: Register you Azure Active Directory Application with Microsoft Graph Data Connect
-    durationInMinutes: 5
-    content: |
       [!INCLUDE [](../includes/data-connect-quickstart-06.md)]
-
+      
   - title: Congratulations!
     durationInMinutes: 0
     content: |
