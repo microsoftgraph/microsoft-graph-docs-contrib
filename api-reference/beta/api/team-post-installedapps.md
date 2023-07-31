@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 Install an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
-> **Note:**
-> - Currently, installing an app that requires resource-specific consent permissions is not supported in application context.
+> [!NOTE]
+> Install an app with resource-specific consent (RSC) permissions isn't supported in the application context. If you install an app with RSC permission, it shows an error `412 - Precondition Failed` with `Failed to execute TeamsGraphService backend request IsUserAuthorizedToGrantGroupResourceSpecificPermissionsRequest.Workload Unknown`.
 
 ## Permissions
 
