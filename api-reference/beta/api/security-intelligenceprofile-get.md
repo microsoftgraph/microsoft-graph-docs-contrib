@@ -131,9 +131,9 @@ Content-Type: application/json
     "Government",
     "Humanitarian"
   ],
-  "sponsorStates": [
+  "countriesOrRegionsOfOrigin": [
     {
-      "@odata.type": "microsoft.graph.security.intelligenceProfileSponsorState",
+      "@odata.type": "microsoft.graph.security.countriesOrRegionsOfOrigin",
       "label": "Country/Region",
       "code": "Country/Region code"
     }

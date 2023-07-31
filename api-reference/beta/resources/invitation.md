@@ -1,8 +1,8 @@
 ---
 title: "invitation resource type"
-description: "Represents an invitation that is used to add external users to an organization."
+description: "Represents an invitation that is used to add external users to an organization as part of Azure Active Directory business-to-business (Azure AD B2B) collaboration."
 ms.localizationpriority: medium
-author: "Sammak"
+author: "ppolkadots"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an invitation that is used to add external users to an organization. 
+Represents an invitation that is used to add external users to an organization as part of Azure Active Directory business-to-business (Azure AD B2B) collaboration.
 
 The invitation process uses the following flow:
 
@@ -33,7 +33,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 |[Create invitation](../api/invitation-post.md) | invitation | Write properties and relationships of invitation object.|
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|The display name of the user being invited.|
 |invitedUserEmailAddress|String|The email address of the user being invited. Required. The following special characters are not permitted in the email address:<br><ul><li>Tilde (~)</li><li>Exclamation point (`!`)</li><li>At sign (`@`)</li><li>Number sign (`#`)</li><li>Dollar sign (`$`)</li><li>Percent (`%`)</li><li>Circumflex (`^`)</li><li>Ampersand (`&`)</li><li>Asterisk (`*`)</li><li>Parentheses (`( )`)</li><li>Hyphen (`-`)</li><li>Plus sign (`+`)</li><li>Equal sign (`=`)</li><li>Brackets (`[ ]`)</li><li>Braces (`{ }`)</li><li>Backslash (`\`)</li><li>Slash mark (`/`)</li><li>Pipe (`|`)</li><li>Semicolon (`;`)</li><li>Colon (`:`)</li><li>Quotation marks (`"`)</li><li>Angle brackets (`< >`)</li><li>Question mark (`?`)</li><li>Comma (`,`)</li></ul><br>However, the following exceptions apply:<br><ul><li>A period (`.`) or a hyphen (`-`) is permitted anywhere in the user name, except at the beginning or end of the name.</li><li>An underscore (`_`) is permitted anywhere in the user name. This includes at the beginning or end of the name.</li></ul>|

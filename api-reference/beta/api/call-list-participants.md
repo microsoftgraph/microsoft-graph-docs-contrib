@@ -33,7 +33,9 @@ Retrieve a list of participant objects in the call.
 GET /app/calls/{id}/participants
 GET /communications/calls/{id}/participants
 ```
-> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
+> **Notes:**
+> - The `/app` path is deprecated. Going forward, use the `/communications` path.
+> - This request does not support peer-to-peer calls.
 
 ## Optional query parameters
 

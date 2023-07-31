@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OpenIdConnectIdentityProvider();
-$requestBody->set@odatatype('microsoft.graph.openIdConnectIdentityProvider');
+$requestBody->setOdataType('microsoft.graph.openIdConnectIdentityProvider');
 
 $requestBody->setDisplayName('Login with the Contoso identity provider');
 

@@ -88,24 +88,28 @@ Content-length: 445
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

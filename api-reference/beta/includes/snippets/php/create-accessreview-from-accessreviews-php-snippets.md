@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessReview();
 $requestBody->setDisplayName('TestReview');
 
-$requestBody->setStartDateTime(new DateTime('2017-02-10T00:35:53.214Z'));
+$requestBody->setStartDateTime(new \DateTime('2017-02-10T00:35:53.214Z'));
 
-$requestBody->setEndDateTime(new DateTime('2017-03-12T00:35:53.214Z'));
+$requestBody->setEndDateTime(new \DateTime('2017-03-12T00:35:53.214Z'));
 
 $reviewedEntity = new Identity();
 $reviewedEntity->setId('99025615-a0b1-47ec-9117-35377b10998b');

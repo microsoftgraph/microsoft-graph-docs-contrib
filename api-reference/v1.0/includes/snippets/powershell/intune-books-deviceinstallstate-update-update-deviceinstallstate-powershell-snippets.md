@@ -18,6 +18,6 @@ $params = @{
 	userName = "User Name value"
 }
 
-Update-MgDeviceAppMgtManagedEBookDeviceState -ManagedEBookId $managedEBookId -DeviceInstallStateId $deviceInstallStateId -BodyParameter $params
+Update-MgDeviceAppManagementManagedEBookDeviceState -ManagedEBookId $managedEBookId -DeviceInstallStateId $deviceInstallStateId -BodyParameter $params
 
 ```

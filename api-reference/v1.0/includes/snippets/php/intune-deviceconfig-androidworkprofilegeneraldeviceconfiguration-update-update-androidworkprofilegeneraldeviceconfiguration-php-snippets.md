@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AndroidWorkProfileGeneralDeviceConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration');
+$requestBody->setOdataType('#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration');
 
 $requestBody->setDescription('Description value');
 
@@ -32,9 +32,9 @@ $requestBody->setPasswordPreviousPasswordBlockCount(2);
 
 $requestBody->setPasswordSignInFailureCountBeforeFactoryReset(12);
 
-$requestBody->setPasswordRequiredType(new AndroidWorkProfileRequiredPasswordType('lowsecuritybiometric'));
+$requestBody->setPasswordRequiredType(new AndroidWorkProfileRequiredPasswordType('lowSecurityBiometric'));
 
-$requestBody->setWorkProfileDataSharingType(new AndroidWorkProfileCrossProfileDataSharingType('preventany'));
+$requestBody->setWorkProfileDataSharingType(new AndroidWorkProfileCrossProfileDataSharingType('preventAny'));
 
 $requestBody->setWorkProfileBlockNotificationsWhileDeviceLocked(true);
 
@@ -80,7 +80,7 @@ $requestBody->setWorkProfilePasswordPreviousPasswordBlockCount(13);
 
 $requestBody->setWorkProfilePasswordSignInFailureCountBeforeFactoryReset(7);
 
-$requestBody->setWorkProfilePasswordRequiredType(new AndroidWorkProfileRequiredPasswordType('lowsecuritybiometric'));
+$requestBody->setWorkProfilePasswordRequiredType(new AndroidWorkProfileRequiredPasswordType('lowSecurityBiometric'));
 
 $requestBody->setWorkProfileRequirePassword(true);
 
