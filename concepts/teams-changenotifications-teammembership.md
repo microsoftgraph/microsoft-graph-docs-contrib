@@ -110,8 +110,6 @@ Content-Type: application/json
 
 To get change notifications for membership changes in all the private and shared channels in a particular team, subscribe to `/teams/{team-id}/channels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
->**Note:** This resource doesn't support delegated context in v1.0.
-
 [!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 ### Permissions
