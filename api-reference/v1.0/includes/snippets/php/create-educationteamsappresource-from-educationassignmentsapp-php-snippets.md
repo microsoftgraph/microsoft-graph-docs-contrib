@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationAssignmentResource();
 $requestBody->setDistributeForStudentWork(false);
@@ -23,13 +23,13 @@ $resource->setTeamsEmbeddedContentUrl('https://app.api.edu.buncee.com/player/C7B
 
 $resource->setWebUrl('https://app.edu.buncee.com/buncee/C7B0866C9B7E485EAE21AE14DBC3FD08');
 
-$resource->set@odatatype('#microsoft.graph.educationTeamsAppResource');
+$resource->setOdataType('#microsoft.graph.educationTeamsAppResource');
 
 
 $requestBody->setResource($resource);
 
 
-$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->byAssignmentId('educationAssignment-id')->resources()->post($requestBody);
+$result = $graphServiceClient->education()->classes()->byEducationClassId('educationClass-id')->assignments()->byEducationAssignmentId('educationAssignment-id')->resources()->post($requestBody);
 
 
 ```

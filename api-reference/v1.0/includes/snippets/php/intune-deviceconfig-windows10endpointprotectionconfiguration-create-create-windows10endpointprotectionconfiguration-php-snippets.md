@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Windows10EndpointProtectionConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.windows10EndpointProtectionConfiguration');
+$requestBody->setOdataType('#microsoft.graph.windows10EndpointProtectionConfiguration');
 
 $requestBody->setDescription('Description value');
 
@@ -39,7 +39,7 @@ $requestBody->setFirewallMergeKeyingModuleSettings(true);
 $requestBody->setFirewallPacketQueueingMethod(new FirewallPacketQueueingMethodType('disabled'));
 
 $firewallProfileDomain = new WindowsFirewallNetworkProfile();
-$firewallProfileDomain->set@odatatype('microsoft.graph.windowsFirewallNetworkProfile');
+$firewallProfileDomain->setOdataType('microsoft.graph.windowsFirewallNetworkProfile');
 
 $firewallProfileDomain->setFirewallEnabled(new StateManagementSetting('blocked'));
 
@@ -68,7 +68,7 @@ $firewallProfileDomain->setPolicyRulesFromGroupPolicyMerged(true);
 
 $requestBody->setFirewallProfileDomain($firewallProfileDomain);
 $firewallProfilePublic = new WindowsFirewallNetworkProfile();
-$firewallProfilePublic->set@odatatype('microsoft.graph.windowsFirewallNetworkProfile');
+$firewallProfilePublic->setOdataType('microsoft.graph.windowsFirewallNetworkProfile');
 
 $firewallProfilePublic->setFirewallEnabled(new StateManagementSetting('blocked'));
 
@@ -97,7 +97,7 @@ $firewallProfilePublic->setPolicyRulesFromGroupPolicyMerged(true);
 
 $requestBody->setFirewallProfilePublic($firewallProfilePublic);
 $firewallProfilePrivate = new WindowsFirewallNetworkProfile();
-$firewallProfilePrivate->set@odatatype('microsoft.graph.windowsFirewallNetworkProfile');
+$firewallProfilePrivate->setOdataType('microsoft.graph.windowsFirewallNetworkProfile');
 
 $firewallProfilePrivate->setFirewallEnabled(new StateManagementSetting('blocked'));
 
@@ -125,11 +125,11 @@ $firewallProfilePrivate->setPolicyRulesFromGroupPolicyMerged(true);
 
 
 $requestBody->setFirewallProfilePrivate($firewallProfilePrivate);
-$requestBody->setDefenderAttackSurfaceReductionExcludedPaths(['Defender Attack Surface Reduction Excluded Paths value', ]);
+$requestBody->setDefenderAttackSurfaceReductionExcludedPaths(['Defender Attack Surface Reduction Excluded Paths value', 	]);
 
-$requestBody->setDefenderGuardedFoldersAllowedAppPaths(['Defender Guarded Folders Allowed App Paths value', ]);
+$requestBody->setDefenderGuardedFoldersAllowedAppPaths(['Defender Guarded Folders Allowed App Paths value', 	]);
 
-$requestBody->setDefenderAdditionalGuardedFolders(['Defender Additional Guarded Folders value', ]);
+$requestBody->setDefenderAdditionalGuardedFolders(['Defender Additional Guarded Folders value', 	]);
 
 $requestBody->setDefenderExploitProtectionXml(base64_decode('ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA=='));
 
@@ -137,7 +137,7 @@ $requestBody->setDefenderExploitProtectionXmlFileName('Defender Exploit Protecti
 
 $requestBody->setDefenderSecurityCenterBlockExploitProtectionOverride(true);
 
-$requestBody->setAppLockerApplicationControl(new AppLockerApplicationControlType('enforcecomponentsandstoreapps'));
+$requestBody->setAppLockerApplicationControl(new AppLockerApplicationControlType('enforceComponentsAndStoreApps'));
 
 $requestBody->setSmartScreenEnableInShell(true);
 
@@ -145,7 +145,7 @@ $requestBody->setSmartScreenBlockOverrideForFiles(true);
 
 $requestBody->setApplicationGuardEnabled(true);
 
-$requestBody->setApplicationGuardBlockFileTransfer(new ApplicationGuardBlockFileTransferType('blockimageandtextfile'));
+$requestBody->setApplicationGuardBlockFileTransfer(new ApplicationGuardBlockFileTransferType('blockImageAndTextFile'));
 
 $requestBody->setApplicationGuardBlockNonEnterpriseContent(true);
 
@@ -153,7 +153,7 @@ $requestBody->setApplicationGuardAllowPersistence(true);
 
 $requestBody->setApplicationGuardForceAuditing(true);
 
-$requestBody->setApplicationGuardBlockClipboardSharing(new ApplicationGuardBlockClipboardSharingType('blockboth'));
+$requestBody->setApplicationGuardBlockClipboardSharing(new ApplicationGuardBlockClipboardSharingType('blockBoth'));
 
 $requestBody->setApplicationGuardAllowPrintToPDF(true);
 
@@ -170,9 +170,9 @@ $requestBody->setBitLockerEnableStorageCardEncryptionOnMobile(true);
 $requestBody->setBitLockerEncryptDevice(true);
 
 $bitLockerRemovableDrivePolicy = new BitLockerRemovableDrivePolicy();
-$bitLockerRemovableDrivePolicy->set@odatatype('microsoft.graph.bitLockerRemovableDrivePolicy');
+$bitLockerRemovableDrivePolicy->setOdataType('microsoft.graph.bitLockerRemovableDrivePolicy');
 
-$bitLockerRemovableDrivePolicy->setEncryptionMethod(new BitLockerEncryptionMethod('aescbc256'));
+$bitLockerRemovableDrivePolicy->setEncryptionMethod(new BitLockerEncryptionMethod('aesCbc256'));
 
 $bitLockerRemovableDrivePolicy->setRequireEncryptionForWriteAccess(true);
 
