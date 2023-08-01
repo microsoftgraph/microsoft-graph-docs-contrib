@@ -21,27 +21,32 @@ items:
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-02.md)]
 
-  - title: Set up your Azure Active Directory app registration
+  - title: Set up your Azure Active Directory application
     durationInMinutes: 10
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-03.md)]
 
   - title: Set up your Azure Storage resource
-    durationInMinutes: 10
+    durationInMinutes: 15
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-04.md)]
  
-  - title: Set up your Azure resource with Azure Synapse or Azure Data Factory
+  - title: Register your Azure Active Directory application with Microsoft Graph Data Connect
     durationInMinutes: 15
     content: |
-      [!INCLUDE [](../includes/data-connect-quickstart-06.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
       
-  - title: Monitor data consent requests with Microsoft 365 Admin Center or PowerShell
+  - title: Set up your Azure resource with Azure Synapse or Azure Data Factory
     durationInMinutes: 5
     content: |
-      [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-06.md)]
 
   - title: Congratulations!
     durationInMinutes: 0
     content: |
-      [!INCLUDE [](../includes/data-connect-quickstart-10.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-07.md)]
+      
+  - title: (Optional) Visualize your Microsoft Graph Data Connect data in Microsoft Power BI
+    durationInMinutes: 15
+    content: |
+      [!INCLUDE [](../includes/data-connect-quickstart-08.md)]
