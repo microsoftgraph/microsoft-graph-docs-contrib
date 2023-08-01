@@ -37,16 +37,16 @@ The status of the Delegated Admin relationship transitions as follows:
 >
 >`https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/{adminRelationshipID}`
 
-Send the invitation link to the customer for them to approve the GDAP request. For example, `https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836` is an invitation link, where `5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836` is the admin relationship request ID. The GDAP relationship gets into **active** state post the customer approval.
+Send the invitation link to the customer for them to approve the GDAP request. For example, `https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836` is an invitation link, where `5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836` is the admin relationship request ID.  Once the customer approves the GDAP request, the GDAP relationship will transition to an active state.
 
-Next, to complete the workflow for enabling AOBO management of customer tenant, create new access assignment for this delegated admin relationship using [Create accessAssignments](../api/delegatedadminrelationship-post-accessassignments.md) API. 
+To finalize the workflow for enabling AOBO (Admin-on-behalf-of) management of the customer's tenant, proceed by creating a new access assignment for the delegated admin relationship using the [Create accessAssignments](../api/delegatedadminrelationship-post-accessassignments.md) API. 
 
 
-### Lifecycle of a GDAP Relationship Access Assignment
+### Lifecycle of a GDAP relationship access assignment
 
-The status of the Delegated Admin access assignment. The status transitions are as follows:
+The delegated admin access assignment goes through the following status transitions:
 
-![Delegated Admin access assignment status transition diagram](access-assignment-status-transitions.png)
+![Delegated admin access assignment status transition diagram](access-assignment-status-transitions.png)
 
 1. [Create delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)
 2. [Delete delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)
