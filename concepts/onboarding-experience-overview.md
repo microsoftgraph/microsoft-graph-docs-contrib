@@ -28,7 +28,7 @@ Data Connect is moving from a just-in-time authorization model utilizing Privile
 
 Support for role-based access control of Data Connect applications using [Azure app roles](https://learn.microsoft.com/azure/active-directory/develop/howto-add-app-roles-in-apps#declare-roles-for-an-application) will be announced in the near future.
 
-**Data Connect no longer requires the admin authorizing Microsoft 365 data access to have an E5 license**—user authorizing an app is required to be a global admin in order to access the [Data Connect app authorization portal](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan), and approve apps for Data Connect.
+**Data Connect no longer requires the admin authorizing Microsoft 365 data access to have an E5 license**—user authorizing an app is required to be a global admin in order to access the [Data Connect app authorization portal](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter), and approve apps for Data Connect.
 
 **New Data Connect presence on Azure portal and Microsoft 365 admin center enables a more intuitive and informative experience while registering and authorizing apps**.  
 
@@ -39,11 +39,11 @@ Support for role-based access control of Data Connect applications using [Azure 
 **The fresh onboarding experience enables multi-tenant apps to initiate cross-tenant data movement with Data Connect**. This enables an Independent Software Vendor (ISV) to make use of Data Connect to extract Microsoft 365 data to bring value to customers.
 
 ## Confirming your new tenant experience
-<!-- Please update placeholder. -->
+<!-- This date has a bit of a cyclic dependency... as soon as docs go out, we will roll this out... once this is signed off, we can decide the exact date and add it here and other places. -->
 If your tenant enabled Data Connect on the Microsoft 365 Admin Center after &lt;date&gt;, your organization is successfully enrolled in the new onboarding experience. Confirm this by requesting someone in your company with a Global Reader or Global Administrator-assigned role to access the Data Connect admin authorization portal. 
 
 If you're able to access the experience shown **without the highlighted warning** "You are still using the legacy Privileged Access management Microsoft Graph Data Connect consent experience. Please enable the new consent experience for MGDC enterprise apps," your tenant is making use of the new experience.
 
 ![The highlighted warning displayed for users if their organization is not using the new tenant experience.](images/M365-admin-center-highlighted-warning.png)
 
-If you see your tenant is not using the new experience and want to migrate, see the **[updated Microsoft Graph Data Connect onboarding experience](./onboarding-experience-overview.md)**.
+If you see your tenant is not using the new experience and want to migrate, see the [updated guidance for existing customer migration](./existing-customer-migration.md)**.
