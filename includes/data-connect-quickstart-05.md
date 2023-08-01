@@ -111,13 +111,13 @@ Attempting self-approval will result in an error message in the PAM portal: "Req
 
 ## Verify extracted data from Microsoft 365 to Azure Blob Storage
 
-1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
+1. Open a browser and navigate to the [Azure portal](https://portal.azure.com/#home).
 
-1. Sign in using an account with **global administrator** rights to your Azure AD and Microsoft 365 tenants.
+1. Sign in using an account with **Global Administrator** rights to your Azure AD and Microsoft 365 tenants.
 
-1. In the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
+1. From the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
 
-1. Go to the sidebar navigation menu and click **Storage browser**, then select **Blob containers**. From there, choose the specific container that you created in this tutorial, which you configured as the destination for the extracted data in the Azure Data Factory pipeline. You should be able to see the data stored within this container.
+1. Click **Storage browser** in the sidebar navigation menu, then choose **Blob containers**. Select the specific container you created in this tutorial, which you configured as the destination for the extracted data in the Azure Data Factory pipeline. You should now be able to view the data stored within this container.
 
 # [PAM: PowerShell](#tab/PAMPowerShell)
 

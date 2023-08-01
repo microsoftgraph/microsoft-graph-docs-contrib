@@ -34,14 +34,13 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 
     ![A screenshot of the resource page with Open Synapse Studio highlighted.](../concepts/images/azure-synapse-studio-tile.png)
 
-1. By default, Azure Synapse Analytics uses an integration runtime that auto-resolves the region. In this tutorial, we recommend to use the default auto-resolve in the developer tenant.
+1. By default, Azure Synapse Analytics uses an integration runtime that automatically resolves the region. In this tutorial, we recommend using the default auto-resolve option in the developer tenant.
 
     1. Switch to **Manage (toolbox icon) > Integration runtimes > New**.
 
     1. Select **Azure, Self-Hosted**, and choose **Continue**.
 
         ![A screenshot of the integration runtime setup with Azure, Self-Hosted highlighted.](../concepts/images/data-connect-synapse-IR.png)
-ig
     1. For the network environment, select **Azure**, and then choose **Continue**.
 
         ![A screenshot of the Integration runtime setup with Azure selected for network environment and Continue highlighted.](../concepts/images/data-connect-synapse-azure.png)
