@@ -1,6 +1,6 @@
 ---
 title: "Get peopleAdminSettings"
-description: "Retrieve the properties and relationships of peopleAdminSettings object"
+description: "Retrieve the properties and relationships of a peopleAdminSettings object."
 author: "rwaithera"
 ms.localizationpriority: medium
 ms.prod: "people"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [peopleAdminSettings](../resources/peopleadminsettings.md) object
-
-Inherits from [entity](../resources/entity.md).
+Retrieve the properties and relationships of a [peopleAdminSettings](../resources/peopleadminsettings.md) object.
 
 ## Permissions
 
@@ -27,17 +25,17 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a tenant administrator or global administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /admin/people
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
@@ -56,7 +54,6 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_peopleadminsettings"
@@ -65,8 +62,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/people
 ```
-
----
 
 ### Response
 
@@ -79,7 +74,6 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.peopleAdminSettings"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
