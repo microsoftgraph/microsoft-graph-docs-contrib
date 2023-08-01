@@ -24,6 +24,7 @@ When a quality update is released, it includes one or more product revisions to 
 |displayName|String|The display name of the content. Read-only.|
 |id|String|The unique identifier for the product revision. Read-only.|
 |osBuild|[microsoft.graph.windowsUpdates.buildVersionDetails](../resources/windowsupdates-buildversiondetails.md)|The version details of the product revision. Read-only.|
+|product|String|The product of the revision. Possible values are `Windows 10` and `Windows 11`. Read-only.|
 |releaseDateTime|DateTimeOffset|The release date for the content. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |version|String|The version of the feature update. Read-only.|
 
@@ -50,6 +51,7 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "id": "String (identifier)",
   "osBuild": { "@odata.type": "microsoft.graph.windowsUpdates.buildVersionDetails" },
+  "product": "String",
   "releaseDateTime": "String (timestamp)",
   "version": "String"
 }
