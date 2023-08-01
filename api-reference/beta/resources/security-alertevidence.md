@@ -15,7 +15,36 @@ Namespace: microsoft.graph.security
 
 Evidence related to an [alert](security-alert.md).
 
-This is the base type of [amazonResourceEvidence](security-amazonresourceevidence.md), [analyzedMessageEvidence](security-analyzedmessageevidence.md), [azureResourceEvidence](security-azureresourceevidence.md), [blobContainerEvidence](security-blobcontainerevidence.md), [blobEvidence](security-blobevidence.md), [cloudApplicationEvidence](security-cloudapplicationevidence.md), [containerEvidence](security-containerevidence.md), [containerImageEvidence](security-containerimageevidence.md), [containerRegistryEvidence](security-containerregistryevidence.md), [deviceEvidence](security-deviceevidence.md), [fileEvidence](security-fileevidence.md), [googleCloudResourceEvidence](security-googlecloudresourceevidence.md), [ipEvidence](security-ipevidence.md), [kubernetesClusterEvidence](security-kubernetesclusterevidence.md), [kubernetesControllerEvidence](security-kubernetescontrollerevidence.md), [kubernetesNamespaceEvidence](security-kubernetesnamespaceevidence.md), [kubernetesPodEvidence](security-kubernetespodevidence.md), [kubernetesSecretEvidence](security-kubernetessecretevidence.md), [kubernetesServiceEvidence](security-kubernetesserviceevidence.md), [kubernetesServiceAccountEvidence](security-kubernetesserviceaccountevidence.md), [mailClusterEvidence](security-mailclusterevidence.md), [mailboxEvidence](security-mailboxevidence.md), [oauthApplicationEvidence](security-oauthapplicationevidence.md), [processEvidence](security-processevidence.md), [registryKeyEvidence](security-registrykeyevidence.md), [registryValueEvidence](security-registryvalueevidence.md), [securityGroupEvidence](security-securitygroupevidence.md), [urlEvidence](security-urlevidence.md), and [userEvidence](security-userevidence.md).
+This is the base type of: 
+* [amazonResourceEvidence](security-amazonresourceevidence.md)
+* [analyzedMessageEvidence](security-analyzedmessageevidence.md)
+* [azureResourceEvidence](security-azureresourceevidence.md)
+* [blobContainerEvidence](security-blobcontainerevidence.md)
+* [blobEvidence](security-blobevidence.md)
+* [cloudApplicationEvidence](security-cloudapplicationevidence.md)
+* [containerEvidence](security-containerevidence.md)
+* [containerImageEvidence](security-containerimageevidence.md)
+* [containerRegistryEvidence](security-containerregistryevidence.md)
+* [deviceEvidence](security-deviceevidence.md)
+* [fileEvidence](security-fileevidence.md)
+* [googleCloudResourceEvidence](security-googlecloudresourceevidence.md)
+* [ipEvidence](security-ipevidence.md)
+* [kubernetesClusterEvidence](security-kubernetesclusterevidence.md)
+* [kubernetesControllerEvidence](security-kubernetescontrollerevidence.md)
+* [kubernetesNamespaceEvidence](security-kubernetesnamespaceevidence.md)
+* [kubernetesPodEvidence](security-kubernetespodevidence.md)
+* [kubernetesSecretEvidence](security-kubernetessecretevidence.md)
+* [kubernetesServiceEvidence](security-kubernetesserviceevidence.md)
+* [kubernetesServiceAccountEvidence](security-kubernetesserviceaccountevidence.md)
+* [mailClusterEvidence](security-mailclusterevidence.md)
+* [mailboxEvidence](security-mailboxevidence.md)
+* [oauthApplicationEvidence](security-oauthapplicationevidence.md)
+* [processEvidence](security-processevidence.md)
+* [registryKeyEvidence](security-registrykeyevidence.md)
+* [registryValueEvidence](security-registryvalueevidence.md)
+* [securityGroupEvidence](security-securitygroupevidence.md)
+* [urlEvidence](security-urlevidence.md)
+* [userEvidence](security-userevidence.md)
 
 This alert evidence base type and its derived evidence types provide a means to organize and track rich data about each artifact involved in an **alert**. For example, an **alert** about an attacker's IP address logging into a cloud service using a compromised user account can track the following evidence:
 - [IP evidence](security-ipevidence.md) with the roles of `attacker` and `source`, remediation status of `running`, and verdict of `malicious`.
