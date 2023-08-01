@@ -16,14 +16,15 @@ With the updated portal experience, developers and global administrators within 
 
 ### Landing page
 
-1. The first screen in the Azure portal experience shows a message requesting that you create a new app registration.
 
-![Graphic showing a landing page of the new Azure portal experience.](images/landing-page-first-screen.png)
+![Graphic showing a landing page of the new Azure portal experience.](images/app-registration-summary-table.png)
 
 > [!IMPORTANT]
 > If Microsoft Graph Data Connect **hasn't been enabled by your admin**, the new portal experience is **disabled**.
 
-2. After the landing page populates with your app registrations, a table shows registration details—including the following column fields:
+The first screen of the Azure portal experience will prompt you to register your first app with Data Connect—or load existing registrations into a summary table view. 
+
+The table includes the following column fields:
 
 - `Name` the app registration name
 - `App ID` the Azure Active Directory (Azure AD) application ID
@@ -33,8 +34,6 @@ With the updated portal experience, developers and global administrators within 
 - `Last modified` the most recent date when the application was changed
 
 At the top of the table, three buttons are enabled by default: `Add`, `Refresh`, and `Delete`. `Add` starts an action for a new app registration. `Refresh` queries existing app registrations in the tenant again, and refreshes the table. `Delete` is only enabled for single selections, and initiates a deletion process.
-
-![Graphic showing a table with column fields in the updated Azure portal experience.](images/landing-page-table.png)
 
 ## Register a new app
 
@@ -66,18 +65,15 @@ App registration requires you to select entries for the `Instance Details` that 
 `Publish Type` (required) select from multi-tenant or single-tenant fields.
 `Key Vault` (required for multi-tenant app registrations) specify the key vault that will enable communication between tenants.
 
-![Graphic showing the registration page for adding applications on Data Connect, including fields related to the Project Details and Instance Details sections.](images/registration-info-page.png)
+![Graphic showing the registration page for adding applications on Data Connect, including fields related to the Project Details and Instance Details sections.](images/app-registration-create-registration-info.png)
 
 #### Datasets
 
-After you complete the Registration Info page, specify the datasets that the app registration needs to query. This step is crucial for authorization, as only the datasets selected here will be transferred for administrator authorization. [Learn more about datasets](./data-connect-datasets).
+After you complete the **Registration Info** page, specify the datasets that the app registration needs to query. This step is crucial for authorization. Only datasets selected here will be transferred for administrator authorization. [Learn more about datasets](./data-connect-datasets).
 
 The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and further details if applicable—scope and scope options. [Learn more about scopes](./data-connect-filtering#user-selection). You can select each dataset that the app will request for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required, shown in the following images:
 
-![Graphic showing the Datasets column selected while running the Data Connect app registration wizard.](images/datasets-wizard-datasets-column.png)
-
-
-![Graphic showing Datasets columns populated with selections while running the Data Connect app registration wizard.](images/datasets-wizard-datasets-column-populated.png)
+![Graphic showing the Datasets column selected while running the Data Connect app registration wizard.](images/app-registration-create-datasets.png)
 
 Once completed, click on `Next : Review + create`.
 
@@ -88,21 +84,21 @@ Once completed, click on `Next : Review + create`.
 
 The last step in the wizard shows a summary page for you to review the specified details and confirm the creation of the app registration entry.
 
-![Graphic showing datasets selection for app registration while running the Data Connect app registration wizard.](images/datasets-wizard-datasets-app-registration-confirmation.png)
+![Graphic showing datasets selection for app registration while running the Data Connect app registration wizard.](images/app-registration-create-review.png)
 
-### Overview of app registration process
+### View app registration details
 
 After your app registration entry is created, you can query its details by clicking on the app name from the landing page. All details specified in creation are shown.
 
-![Graphic showing the app registration details page.](images/app-registration-details-page.png)
+![Graphic showing the app registration details page.](images/app-registration-details-overview.png)
 
 #### Update app registration entry
 
 Access update functionality from the individual app overview page. Either the app owner or global admin can update properties or datasets associated with a Data Connect application. As shown in the following images, any updates to the destination storage for the app or the datasets/schema/scopes associated with the app will invalidate previously provided authorization, requiring the global admin to approve the app again from the Microsoft 365 admin center.
 
-![Graphic showing the app registration Update Properties page.](images/app-registration-update-properties.png)
+![Graphic showing the app registration Update Properties page.](images/app-registration-details-properties-update.png)
 
-![Graphic showing the app registration Update Datasets page.](images/app-registration-update-datasets.png)
+![Graphic showing the app registration Update Datasets page.](images/app-registration-details-datasets-update.png)
 
 #### Delete an app registration entry
 
@@ -113,6 +109,4 @@ Delete functionality can be accessed from the individual app overview page, or f
 
 Deleting an app registration entry, and confirming your deletion will display in the wizard, shown in the images below.
 
-![Graphic showing the app registration Delete Registration entry page.](images/app-registration-deletion-confirmation.png)
-
-![Graphic showing the app registration Delete Registration entry page with user confirmation.](images/app-registration-deletion-user-confirmation.png)
+![Graphic showing the app registration Delete Registration entry page.](images/app-registration-delete-confirmation.png)
