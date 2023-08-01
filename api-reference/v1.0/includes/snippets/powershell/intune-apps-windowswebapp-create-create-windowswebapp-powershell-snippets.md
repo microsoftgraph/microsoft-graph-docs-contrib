@@ -26,6 +26,6 @@ $params = @{
 	appUrl = "https://example.com/appUrl/"
 }
 
-New-MgDeviceAppMgtMobileApp -BodyParameter $params
+New-MgDeviceAppManagementMobileApp -BodyParameter $params
 
 ```
