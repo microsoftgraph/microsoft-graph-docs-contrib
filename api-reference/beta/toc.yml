@@ -10316,6 +10316,8 @@ items:
                     href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
                   - name: Get historical remote connection reports
                     href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
+                  - name: Get inaccessible Cloud PC reports
+                    href: api/cloudpcreports-getinaccessiblecloudpcreports.md
                   - name: Get real time remote connection latency
                     href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
                   - name: Get real time remote connection status
