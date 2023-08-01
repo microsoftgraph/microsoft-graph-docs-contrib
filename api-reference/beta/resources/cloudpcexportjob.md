@@ -16,12 +16,14 @@ Namespace: microsoft.graph
 Represents the export job for downloading a specified Cloud PC report.
 
 ## Methods
+
 | Method                                                              | Return type                                          | Description                                                                                             |
 | :------------------------------------------------------------------ | :--------------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
 | [Create cloudPcExportJob](../api/cloudpcreports-post-exportjobs.md) | [cloudPcExportJob](../resources/cloudpcexportjob.md) | Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) object to initiate downloading the entire or specified portion of a report. |
 | [Get cloudPcExportJob](../api/cloudpcexportjob-get.md)              | [cloudPcExportJob](../resources/cloudpcexportjob.md) | Read the properties and relationships of a [cloudPcExportJob](../resources/cloudpcexportjob.md) object. |
 
 ## Properties
+
 | Property           | Type                                                     | Description                                                                                                                                                                             |
 | :----------------- | :------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | expirationDateTime | DateTimeOffset                                           | The date and time when the export job expires.                                                                                                                                              |
@@ -30,7 +32,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | filter             | String                                                   | The filter applied on the report.                                                                                                                                                       |
 | format             | String                                                   | The format of the exported report.                                                                                                                                                      |
 | id                 | String                                                   | The unique identifier for the report. Read-only.                                                                                                                                        |
-| reportName         | [cloudPcReportName](#cloudpcreportname-values)           | The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`,  `noLicenseAvailableConnectivityFailureReport`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): ` noLicenseAvailableConnectivityFailureReport`.|
+| reportName         | [cloudPcReportName](#cloudpcreportname-values)           | The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`,  `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`.|
 | requestDateTime    | DateTimeOffset                                           | The date and time when the export job was requested.  |
 | select             | String collection                                        | The selected columns of the report.   |
 
@@ -55,12 +57,15 @@ Represents the export job for downloading a specified Cloud PC report.
 | sharedUseLicenseUsageRealTimeReport    | Indicates real-time data for shared use license usage.              |
 | unknownFutureValue                     | Evolvable enumeration sentinel value. Do not use.                   |
 | noLicenseAvailableConnectivityFailureReport | Indicates the Cloud PCs that failed to connect because no licenses were available. |
-
+| frontlineLicenseUsageReport                 | Indicates daily/hourly aggregated frontline license usage report                    |
+| frontlineLicenseUsageRealTimeReport         | Indicates real time data for frontline license usage                                |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -1,6 +1,40 @@
 {
     "changelog": [
-    {
+        {
+            "ChangeList": [
+                {
+                    "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcReportName",
+                    "ChangeType": "Change",
+                    "Description": "Added the frontlineLicenseUsageReport and frontlineLicenseUsageRealTimeReport members to the **cloudPcReportName** enumeration type.",
+                    "Target": "cloudPcReportName"
+                },
+                {
+                    "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getFrontlineReport",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getFrontlineReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getFrontlineReport?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                },
+                {
+                    "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getSharedUseLicenseUsageReport",
+                    "ChangeType": "Change",
+                    "Description": "Added Deprecation notice to the [getSharedUseLicenseUsageReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getSharedUseLicenseUsageReport?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                }
+            ],
+            "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-08-01T10:36:40.1525853Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",

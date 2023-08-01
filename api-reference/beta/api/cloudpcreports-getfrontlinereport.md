@@ -1,19 +1,19 @@
 ---
-title: "cloudPcReports: getSharedUseLicenseUsageReport (deprecated)"
-description: "Get the shared use license usage reports, such as servicePlanId, licenseCount, and claimedLicenseCount, for real-time, 7 days, or 28 days trend."
+title: "cloudPcReports: getFrontlineReport"
+description: "Get the Frontline reports, such as real-time report or historical data report."
 author: "rbayetov"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# cloudPcReports: getSharedUseLicenseUsageReport (deprecated)
+# cloudPcReports: getFrontlineReport
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a usage report on shared-use licenses, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
+Get the [Frontline](https://www.microsoft.com/en/windows-365/frontline) reports, such as real-time report or historical data report.
 
 ## Permissions
 
@@ -32,10 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/virtualEndpoint/reports/getSharedUseLicenseUsageReport
+POST /deviceManagement/virtualEndpoint/reports/getFrontlineReport
 ```
-
-> **Note:** The `getSharedUseLicenseUsageReport` API is deprecated. Going forward, use the `getFrontlineReport` API.
 
 ## Request headers
 
@@ -75,16 +73,16 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpcreportsthis.getSharedUseLicenseUsageReport"
+  "name": "cloudpcreportsthis.getFrontlineReport"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/getSharedUseLicenseUsageReport
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/getFrontlineReport
 Content-Type: application/json
 Content-length: 199
 
 {
-    "reportName": "SharedUseLicenseUsageReport",
+    "reportName": "frontlineLicenseUsageReport",
     "filter": "ServicePlanId eq '2d1d344e-d10c-41bb-953b-b3a47521dca0' and DateTimeUTC gt datetime'2022-11-30'",
     "select":["ServicePlanId", "LicenseCount", "ClaimedLicenseCount", "DateTimeUTC"],
     "skip": 0,
