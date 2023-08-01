@@ -29,7 +29,6 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 |releaseDateTime|DateTimeOffset|The release date for the content. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |version|String|The version of the feature update. Read-only.|
 
-
 ## Relationships
 None.
 
