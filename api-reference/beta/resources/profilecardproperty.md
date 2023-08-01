@@ -1,6 +1,6 @@
 ---
 title: "profileCardProperty resource type"
-description: "Used to designate either a new property to surface in a shared, people experience or one that will have a custom display name or annotation applied to it. An administrator can define a default display name string and a set of alternative translations for the languages that they support in their organization."
+description: "Represents an attribute of a user on the Microsoft 365 profile card for an organization to surface in a shared, people experience."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
@@ -53,6 +53,6 @@ The following is a JSON representation of the resource.
 ```json
 {
   "annotations": [{ "@odata.type": "microsoft.graph.profileCardAnnotation" }],
-  "directoryPropertyName": "String",
+  "directoryPropertyName": "String"
 }
 ```
