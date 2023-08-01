@@ -71,6 +71,9 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 
 ### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_apps_windowswebapp_update_update_windowswebapp" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
@@ -97,8 +100,44 @@ Content-length: 622
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-windowswebapp-update-update-windowswebapp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-windowswebapp-update-update-windowswebapp-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-apps-windowswebapp-update-update-windowswebapp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-apps-windowswebapp-update-update-windowswebapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-apps-windowswebapp-update-update-windowswebapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-apps-windowswebapp-update-update-windowswebapp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-windowswebapp-update-update-windowswebapp-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-apps-windowswebapp-update-update-windowswebapp-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windowsWebApp" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

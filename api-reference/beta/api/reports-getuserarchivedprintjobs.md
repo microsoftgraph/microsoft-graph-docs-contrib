@@ -61,7 +61,7 @@ The following is an example of the request.
   "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId='016b5565-3bbf-4067-b9ff-4d68167eb1a6',startDateTime=2021-05-24,endDateTime=2021-05-25)
+GET https://graph.microsoft.com/beta/reports/getUserArchivedPrintJobs(userId='016b5565-3bbf-4067-b9ff-4d68167eb1a6',startDateTime=2021-05-24,endDateTime=2021-05-25)
 ```
 
 ##### Response
@@ -86,13 +86,13 @@ Content-type: application/json
       "createdDateTime": "2023-06-29T00:00:00.0000000Z",
       "acquiredDateTime": "2023-06-29T00:00:01.0000000Z",
       "completionDateTime": "2023-06-29T00:00:02.0000000Z",
-      "acquiredByPrinter": "true",
-      "copiesPrinted": "1",
-      "pageCount": "1",
-      "blackAndWhitePageCount": "1",
-      "colorPageCount": "0",
-      "simplexPageCount": "0",
-      "duplexPageCount": "1",
+      "acquiredByPrinter": true,
+      "copiesPrinted": 1,
+      "pageCount": 1,
+      "blackAndWhitePageCount": 1,
+      "colorPageCount": 0,
+      "simplexPageCount": 0,
+      "duplexPageCount": 1,
       "createdBy": {
         "displayName": "username",
         "userPrincipalName": "username@contoso.com",
