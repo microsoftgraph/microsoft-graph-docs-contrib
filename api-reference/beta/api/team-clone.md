@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!NOTE]
-> Cloning operation isn't supported for Organization-wide teams.
+> The cloning operation isn't supported for organization-wide teams.
 
 Create a copy of a [team](../resources/team.md). This operation also creates a copy of the corresponding [group](../resources/group.md).
 You can specify which parts of the team to clone:
@@ -28,7 +28,7 @@ You can specify which parts of the team to clone:
 When you clone tabs in Microsoft Teams, they initially appear in an unconfigured state on the tab bar. The first time you open these cloned tabs, you will be prompted to go through the configuration screen.
 (If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
 
-Cloning is a long-running operation. After the POST clone operation is complete, check the response and get the operation id from the Location: header and then perform [Get operation](./teamsappsettings-get.md) to see if the clone operation is "running" or "succeeded" or "failed". You should continue to GET until the status is not "running". The recommended delay between GETs is 5 seconds.
+Cloning entails a time-consuming process. Once the POST clone operation concludes, retrieve the operation id from the location header in the response. Use the [Get] (../resources/teamsasyncoperation.md) method to query the status of the clone operation, which can be **running**, **succeeded**, or **failed**. Continuously perform GET requests until the status is no longer **running**. To avoid overloading the system, ensure a recommended delay of 5 seconds between successive GET requests.
 
 ## Permissions
 
