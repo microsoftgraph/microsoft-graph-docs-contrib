@@ -1,6 +1,6 @@
 ---
 title: "educationModule resource type"
-description: "Represents a group or individual learning resources which are then arranged in a neat systematic manner."
+description: "Represents a group or individual learning resources which are then arranged in a neat, systematic manner."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a group or individual learning resources which are then arranged in a neat systematic manner.
+Represents a group or individual learning resources which are then arranged in a neat, systematic manner.
 
-Only teachers or team owners can create **modules**. **Modules** contain read only learning resources and assignments that the teacher wants the student to work on.
+Only teachers or team owners can create **modules**. **Modules** contain read-only learning resources and assignments the teacher wants the student to complete.
 
 When a **module** is created, it is in a `draft` state. Students can't see the **module** until it is published. You can change the status of a **module** by using the [publish](../api/educationmodule-publish.md) action. You can't use a PATCH request to change the **module** status.
 
