@@ -12,26 +12,26 @@ Before you proceed, make sure that you've completed the steps to build your firs
 
 3. Choose **Connect** to establish the connection between Power BI and your Azure Blob Storage account.
 
-![A screenshot that shows how to connect to get data from an Azure Blob Storage in Power BI.](../concepts/images/data-connect-pbi-connect-blob-storage.png)
+    ![A screenshot that shows how to connect to get data from an Azure Blob Storage in Power BI.](../concepts/images/data-connect-pbi-connect-blob-storage.png)
 
 4. Enter the Azure Storage Account name and container name for the Azure Blob Storage account you want to connect to, and then choose **OK**.
 
-![A screenshot that shows how to add the Azure Blob Storage account URL to get data in Power BI.](../concepts/images/data-connect-pbi-add-blob-account-name.png)
+    ![A screenshot that shows how to add the Azure Blob Storage account URL to get data in Power BI.](../concepts/images/data-connect-pbi-add-blob-account-name.png)
 
 > [!NOTE] 
 > You can find your Azure Storage URL in the Azure Storage Account. Search through your containers, choose the container you want to connect to, go to the Context menu (...), select **Container Properties**, and copy the URL.
 
 5. Select **Transform Data**, and select the first line that says **Binary**.
 
-![A screenshot that shows how to transform the binary data in Power BI.](../concepts/images/data-connect-pbi-transform-binary.png)
+    ![A screenshot that shows how to transform the binary data in Power BI.](../concepts/images/data-connect-pbi-transform-binary.png)
 
 6. To get a list with all the **Records**, go to the Column1 toggle option, select and hold (or right-click) to select **Transform**, then choose **JSON**.
 
-![A screenshot that shows how to expand the data columns in Power BI.](../concepts/images/data-connect-pbi-transform-columns.png)
+    ![A screenshot that shows how to expand the data columns in Power BI.](../concepts/images/data-connect-pbi-transform-columns.png)
 
 7. Load all the columns, expand the **Records** from the Column1 toggle, and then choose **OK**.
 
-![A screenshot that shows how to load all the columns in Power BI.](../concepts/images/data-connect-pbi-expand-records.png)
+    ![A screenshot that shows how to load all the columns in Power BI.](../concepts/images/data-connect-pbi-expand-records.png)
 
 6. The results are shown as _Column1.property_. To expand the columns with nested data, choose the toggle option on each column, and then choose **OK**.
 
@@ -47,7 +47,7 @@ Before you proceed, make sure that you've completed the steps to build your firs
 > [!NOTE]
 > In this example, you can determine whether users read the messages sent by a department in your organization by analyzing every **toRecipientName** and the **isRead** property.
 
-![A screenshot that shows all the columns with content presented in a table in Power BI.](../concepts/images/data-connect-pbi-key-influencers.png)
+    ![A screenshot that shows all the columns with content presented in a table in Power BI.](../concepts/images/data-connect-pbi-key-influencers.png)
 
 8. You can now see the JSON data from the Messages_v1 data set from Microsoft Graph Data Connect in a Power BI report.
 
