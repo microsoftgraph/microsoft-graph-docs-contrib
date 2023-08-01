@@ -85,9 +85,9 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/stagingbeta/$metadata#admin/people/$entity",
-  "pronouns@odata.context": "https://graph.microsoft.com/stagingbeta/$metadata#admin/people/pronouns/$entity",
-  "profileCardProperties@odata.context": "https://graph.microsoft.com/stagingbeta/$metadata#admin/people/pronouns/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/$entity",
+  "pronouns@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/pronouns/$entity",
+  "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/pronouns/$entity",
   "pronouns": {
       "isEnabledInOrganization": true
   },
