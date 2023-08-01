@@ -291,7 +291,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "softwareUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the softwareUpdateReference resource type.",
+                    "Description": "Added the **softwareUpdateReference** resource type.",
                     "Target": "softwareUpdateReference"
                 },
                 {
@@ -299,7 +299,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "windowsUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the windowsUpdateReference resource type.",
+                    "Description": "Added the **windowsUpdateReference** resource type.",
                     "Target": "windowsUpdateReference"
                 },
                 {
@@ -307,7 +307,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "qualityUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the qualityUpdateReference resource type.",
+                    "Description": "Added the **qualityUpdateReference** resource type.",
                     "Target": "qualityUpdateReference"
                 },
                 {
@@ -315,7 +315,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "expeditedQualityUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the expeditedQualityUpdateReference resource type.",
+                    "Description": "Added the **expeditedQualityUpdateReference** resource type.",
                     "Target": "expeditedQualityUpdateReference"
                 },
                 {
@@ -323,7 +323,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "featureUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the featureUpdateReference resource type.",
+                    "Description": "Added the **featureUpdateReference** resource type.",
                     "Target": "featureUpdateReference"
                 },
                 {
@@ -331,7 +331,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "rolloutSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the rolloutSettings resource type.",
+                    "Description": "Added the **rolloutSettings** resource type.",
                     "Target": "rolloutSettings"
                 },
                 {
@@ -355,7 +355,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "windowsDeploymentSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the windowsDeploymentSettings resource type.",
+                    "Description": "Added the **windowsDeploymentSettings** resource type.",
                     "Target": "windowsDeploymentSettings"
                 },
                 {
