@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new IdentityApiConnector();
 $requestBody->setDisplayName('Test API');
@@ -15,7 +15,7 @@ $requestBody->setDisplayName('Test API');
 $requestBody->setTargetUrl('https://someapi.com/api');
 
 $authenticationConfiguration = new BasicAuthentication();
-$authenticationConfiguration->set@odatatype('#microsoft.graph.basicAuthentication');
+$authenticationConfiguration->setOdataType('#microsoft.graph.basicAuthentication');
 
 $authenticationConfiguration->setUsername('MyUsername');
 

@@ -7,24 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ManagedDeviceMobileAppConfigurationUserStatus();
-$requestBody->set@odatatype('#microsoft.graph.managedDeviceMobileAppConfigurationUserStatus');
+$requestBody->setOdataType('#microsoft.graph.managedDeviceMobileAppConfigurationUserStatus');
 
 $requestBody->setUserDisplayName('User Display Name value');
 
 $requestBody->setDevicesCount(12);
 
-$requestBody->setStatus(new ComplianceStatus('notapplicable'));
+$requestBody->setStatus(new ComplianceStatus('notApplicable'));
 
-$requestBody->setLastReportedDateTime(new DateTime('2017-01-01T00:00:17.7769392-08:00'));
+$requestBody->setLastReportedDateTime(new \DateTime('2017-01-01T00:00:17.7769392-08:00'));
 
 $requestBody->setUserPrincipalName('User Principal Name value');
 
 
 
-$result = $graphServiceClient->deviceAppManagement()->mobileAppConfigurations()->byMobileAppConfigurationId('managedDeviceMobileAppConfiguration-id')->userStatuses()->byUserStatuseId('managedDeviceMobileAppConfigurationUserStatus-id')->patch($requestBody);
+$result = $graphServiceClient->deviceAppManagement()->mobileAppConfigurations()->byManagedDeviceMobileAppConfigurationId('managedDeviceMobileAppConfiguration-id')->userStatuses()->byManagedDeviceMobileAppConfigurationUserStatusId('managedDeviceMobileAppConfigurationUserStatus-id')->patch($requestBody);
 
 
 ```

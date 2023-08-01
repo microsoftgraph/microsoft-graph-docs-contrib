@@ -422,6 +422,29 @@ Namespace: microsoft.graph
 | reviewer           |
 | unknownFutureValue |
 
+### accessPackageCustomExtensionStage values 
+
+|Member|
+|:---|
+|assignmentRequestCreated|
+|assignmentRequestApproved|
+|assignmentRequestGranted|
+|assignmentRequestRemoved|
+|assignmentFourteenDaysBeforeExpiration|
+|assignmentOneDayBeforeExpiration|
+|unknownFutureValue|
+
+### customExtensionCalloutInstanceStatus values 
+
+|Member|
+|:---|
+|calloutSent|
+|callbackReceived|
+|calloutFailed|
+|callbackTimedOut|
+|waitingForCallback|
+|unknownFutureValue|
+
 ### volumeType values
 
 | Member                |
@@ -2333,7 +2356,7 @@ Possible values for user account types (group membership), per Windows definitio
 | error              |
 | unknownFutureValue |
 
-### delegatedAdminAccessContainerType values 
+### delegatedAdminAccessContainerType values
 
 | Member             |
 | :----------------- |
@@ -2534,7 +2557,7 @@ Possible values for user account types (group membership), per Windows definitio
 |pending|
 |unknownFutureValue|
 
-### chatMessageActions values 
+### chatMessageActions values
 
 |Member|
 |:---|
@@ -2881,3 +2904,11 @@ Possible values for user account types (group membership), per Windows definitio
 |sms|
 |none|
 |unknownFutureValue|
+
+### layoutTemplateType values
+
+| Member             |
+| :----------------- |
+| default            |
+| verticalSplit      |
+| unknownFutureValue |

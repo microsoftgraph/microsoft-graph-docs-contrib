@@ -419,6 +419,7 @@ HTTP/1.1 200 OK
 
 * [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 * [Create channel](channel-post.md)
+* [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
