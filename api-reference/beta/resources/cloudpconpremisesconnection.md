@@ -75,10 +75,10 @@ Represents a defined collection of Azure resource information that can be used t
 |:---|:---|
 |pending|Created and waiting for health checks.|
 |running|Health checks are running.|
-|passed|Health checks notify customer the Azure network connection is operating as intended. Customer can provision their Cloud PC without any issue.|
-|failed|Health checks notify customer the Azure network connection isn't properly configured or functioning. Provisioning would fail. Customer needs to identify the issue and resolve it using the guidance provided by Azure network connection for provisioning to be successful.|
-|warning|Health checks notify customer the Azure network connection isn't configured as per Microsoft's best practice guidance, such as endpoint connectivity. Customer is recommended to configure Cloud PC required endpoints before provisioning a Cloud PC. It will not affect the provisioning of our customers' Cloud PC but may affect the customer's experience.|
-|informational|Health checks provide information to customer about current or associated prerequisites checks status on Cloud PC add-on features such as Single Sign-On. it will not affect the provisioning of our customers' Cloud PC but intend to optimize user experience.|
+|passed|Health checks notify the customer that the Azure network connection is operating as intended. Customer can provision their Cloud PC without any issue.|
+|failed|Health checks notify the customer that the Azure network connection isn't properly configured or functioning. Provisioning will fail. The customer needs to identify the issue and resolve it using the guidance provided by Azure network connection for provisioning to be successful.|
+|warning|Health checks notify the customer that the Azure network connection isn't configured as per the Microsoft best practice guidance, such as endpoint connectivity. The customer should configure Cloud PC required endpoints before provisioning a Cloud PC. It will not affect the provisioning of the customer's Cloud PC but might affect the customer's experience.|
+|informational|Health checks provide information to the customer about current or associated prerequisite checks on Cloud PC add-on features such as Single Sign-On. This will not affect the provisioning of the customer's Cloud PC, but the information is intended to optimize the user experience.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
