@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|[identitySet](identityset.md)| Who created the **module**. |
+|createdBy|[identitySet](identityset.md)| The display name of the user that created the **module**. |
 |createdDateTime|DateTimeOffset|Moment when the **module** was created.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |description|String|Description of the **module**.|
 |displayName|String|Name of the **module**.|
