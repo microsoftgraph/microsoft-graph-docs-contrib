@@ -30,14 +30,16 @@ Expedited security updates also have the following characteristics:
 
 You can query the deployment service catalog to get a list of updates that can be expedited to devices as content in a deployment.
 
-Security updates are represented by the [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) type, with a **qualityUpdateClassification** of `security`. All Windows 10 quality updates that are classified as security updates can be expedited and are tagged with the **isExpeditable** property set to `true` to identify them.
+Security updates are represented by the [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) type, with a **qualityUpdateClassification** of `security`. All Windows 10 and Windows 11 quality updates that are classified as security updates can be expedited and are tagged with the **isExpeditable** property set to `true` to identify them.
+
+All quality updates refer to a list of [product revisions](../api-reference/beta/resources/windowsupdates-productrevision.md). Add `$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions` to your query to identify the operating system builds that are affected by each quality update.
 
 Below is an example of querying for all Windows 10 security updates that can be deployed as expedited updates by the deployment service. Microsoft recommends to only show the three most current updates, so the example includes `$top=3`.
 
 ### Request
 
 ```http
-GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$top=3&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDateTime desc&$top=3
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$top=3&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions&$orderby=releaseDateTime desc
 ```
 
 ### Response
@@ -88,7 +90,77 @@ Content-Type: application/json
                         "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-35311"
                     }
                 ]
-            }
+            }, 
+            "productRevisions": [
+                {
+                    "id": "10.0.19044.3208",
+                    "displayName": "Windows 10, version 21H2, build 19044.3208",
+                    "releaseDateTime": "2023-07-11T00:00:00Z",
+                    "version": "21H2",
+                    "product": "Windows 10",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 19044,
+                        "updateBuildRevision": 3208
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5028166",
+                        "url": "https://support.microsoft.com/help/5028166"
+                    }
+                },
+                {
+                    "id": "10.0.19045.3208",
+                    "displayName": "Windows 10, version 22H2, build 19045.3208",
+                    "releaseDateTime": "2023-07-11T00:00:00Z",
+                    "version": "22H2",
+                    "product": "Windows 10",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 19045,
+                        "updateBuildRevision": 3208
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5028166",
+                        "url": "https://support.microsoft.com/help/5028166"
+                    }
+                },
+                {
+                    "id": "10.0.22000.2176",
+                    "displayName": "Windows 11, version 21H2, build 22000.2176",
+                    "releaseDateTime": "2023-07-11T00:00:00Z",
+                    "version": "21H2",
+                    "product": "Windows 11",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 22000,
+                        "updateBuildRevision": 2176
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5028182",
+                        "url": "https://support.microsoft.com/help/5028182"
+                    }
+                },
+                {
+                    "id": "10.0.22621.1992",
+                    "displayName": "Windows 11, version 22H2, build 22621.1992",
+                    "releaseDateTime": "2023-07-11T00:00:00Z",
+                    "version": "22H2",
+                    "product": "Windows 11",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 22621,
+                        "updateBuildRevision": 1992
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5028185",
+                        "url": "https://support.microsoft.com/help/5028185"
+                    }
+                }
+            ]
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
@@ -105,7 +177,77 @@ Content-Type: application/json
                 "maxSeverity": "critical",
                 "maxBaseScore": 9.8,
                 "exploitedCves": []
-            }
+            }, 
+            "productRevisions": [
+                {
+                    "id": "10.0.19044.3086",
+                    "displayName": "Windows 10, version 21H2, build 19044.3086",
+                    "releaseDateTime": "2023-06-13T00:00:00Z",
+                    "version": "21H2",
+                    "product": "Windows 10",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 19044,
+                        "updateBuildRevision": 3086
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5027215",
+                        "url": "https://support.microsoft.com/help/5027215"
+                    }
+                },
+                {
+                    "id": "10.0.19045.3086",
+                    "displayName": "Windows 10, version 22H2, build 19045.3086",
+                    "releaseDateTime": "2023-06-13T00:00:00Z",
+                    "version": "22H2",
+                    "product": "Windows 10",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 19045,
+                        "updateBuildRevision": 3086
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5027215",
+                        "url": "https://support.microsoft.com/help/5027215"
+                    }
+                },
+                {
+                    "id": "10.0.22000.2057",
+                    "displayName": "Windows 11, version 21H2, build 22000.2057",
+                    "releaseDateTime": "2023-06-13T00:00:00Z",
+                    "version": "21H2",
+                    "product": "Windows 11",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 22000,
+                        "updateBuildRevision": 2057
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5027223",
+                        "url": "https://support.microsoft.com/help/5027223"
+                    }
+                },
+                {
+                    "id": "10.0.22621.1848",
+                    "displayName": "Windows 11, version 22H2, build 22621.1848",
+                    "releaseDateTime": "2023-06-13T00:00:00Z",
+                    "version": "22H2",
+                    "product": "Windows 11",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 22621,
+                        "updateBuildRevision": 1848
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5027231",
+                        "url": "https://support.microsoft.com/help/5027231"
+                    }
+                }
+            ]
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
@@ -131,7 +273,94 @@ Content-Type: application/json
                         "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932"
                     }
                 ]
-            }
+            }, 
+            "productRevisions": [
+                {
+                    "id": "10.0.19042.2965",
+                    "displayName": "Windows 10, version 20H2, build 19042.2965",
+                    "releaseDateTime": "2023-05-09T00:00:00Z",
+                    "version": "20H2",
+                    "product": "Windows 10",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 19042,
+                        "updateBuildRevision": 2965
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5026361",
+                        "url": "https://support.microsoft.com/help/5026361"
+                    }
+                },
+                {
+                    "id": "10.0.19044.2965",
+                    "displayName": "Windows 10, version 21H2, build 19044.2965",
+                    "releaseDateTime": "2023-05-09T00:00:00Z",
+                    "version": "21H2",
+                    "product": "Windows 10",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 19044,
+                        "updateBuildRevision": 2965
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5026361",
+                        "url": "https://support.microsoft.com/help/5026361"
+                    }
+                },
+                {
+                    "id": "10.0.19045.2965",
+                    "displayName": "Windows 10, version 22H2, build 19045.2965",
+                    "releaseDateTime": "2023-05-09T00:00:00Z",
+                    "version": "22H2",
+                    "product": "Windows 10",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 19045,
+                        "updateBuildRevision": 2965
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5026361",
+                        "url": "https://support.microsoft.com/help/5026361"
+                    }
+                },
+                {
+                    "id": "10.0.22000.1936",
+                    "displayName": "Windows 11, version 21H2, build 22000.1936",
+                    "releaseDateTime": "2023-05-09T00:00:00Z",
+                    "version": "21H2",
+                    "product": "Windows 11",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 22000,
+                        "updateBuildRevision": 1936
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5026368",
+                        "url": "https://support.microsoft.com/help/5026368"
+                    }
+                },
+                {
+                    "id": "10.0.22621.1702",
+                    "displayName": "Windows 11, version 22H2, build 22621.1702",
+                    "releaseDateTime": "2023-05-09T00:00:00Z",
+                    "version": "22H2",
+                    "product": "Windows 11",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 22621,
+                        "updateBuildRevision": 1702
+                    },
+                    "knowledgeBaseArticle": {
+                        "id": "KB5026372",
+                        "url": "https://support.microsoft.com/help/5026372"
+                    }
+                }
+            ]
         }
     ]
 }
