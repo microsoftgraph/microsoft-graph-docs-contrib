@@ -67,7 +67,8 @@ The following example adds a localized label `Kostnads Senter` for the locale `n
 
 <!-- {
   "blockType": "request",
-  "name": "update_profilecardproperty"
+  "name": "update_profilecardproperty",
+  "sampleKeys": ["CustomAttribute1"]
 }-->
 
 ```http
