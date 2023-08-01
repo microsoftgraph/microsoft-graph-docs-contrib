@@ -55,11 +55,12 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Request
 
-The following example shows how to delete the attribute named **Fax** from the profile card for the organization.
+The following example shows how to delete the attribute named `Fax` from the profile card for the organization.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_profilecardproperty"
+  "name": "delete_profilecardproperty",
+  "sampleKeys": ["fax"]
 }-->
 
 ```http
