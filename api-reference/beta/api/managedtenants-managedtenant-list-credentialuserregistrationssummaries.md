@@ -82,10 +82,6 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/credenti
 [!INCLUDE [sample-code](../includes/snippets/php/list-credentialuserregistrationssummary-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-credentialuserregistrationssummary-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-credentialuserregistrationssummary-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

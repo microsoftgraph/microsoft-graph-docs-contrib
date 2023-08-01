@@ -1757,6 +1757,24 @@
       "CreatedDateTime": "2023-05-08T18:52:13.9850311Z",
       "WorkloadArea": "Search",
       "SubArea": ""
-    } 
+    },
+  {
+  "ChangeList": [
+    {
+      "Id": "a8b33b2c-b741-4e27-b199-a7659ca29a8c",
+      "ApiChange": "Member",
+      "ChangedApiName": "enabledContentExperiences",
+      "ChangeType": "deletion",
+      "Description": "Removed the **compliance** member from the **contentExperienceType** enumeration.",
+      "Target": "contentExperienceType"
+    }
+  ],
+  "Id": "a8b33b2c-b741-4e27-b199-a7659ca29a8c",
+  "Cloud": "prd",
+  "Version": "beta",
+  "CreatedDateTime": "2023-07-25T17:03:43.000Z",
+  "WorkloadArea": "Search",
+  "SubArea": ""
+}
   ]
 }

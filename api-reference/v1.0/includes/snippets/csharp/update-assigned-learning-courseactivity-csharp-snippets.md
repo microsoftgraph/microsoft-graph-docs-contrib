@@ -22,7 +22,7 @@ var requestBody = new LearningAssignment
 		DateTime = "2022-09-22T16:05:00.0000000",
 		TimeZone = "UTC",
 	},
-	ExternalCourseActivityId = "12a2228a-e020-11ec-9d64-0242ac120002",
+	ExternalcourseActivityId = "12a2228a-e020-11ec-9d64-0242ac120002",
 	LearningContentId = "57baf9dc-e020-11ec-9d64-0242ac120002",
 	LearnerUserId = "7ba2228a-e020-11ec-9d64-0242ac120002",
 	Notes = new ItemBody

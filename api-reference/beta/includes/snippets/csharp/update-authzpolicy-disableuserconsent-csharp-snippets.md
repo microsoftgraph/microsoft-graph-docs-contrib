@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AuthorizationPolicy
 {
-	PermissionGrantPolicyIdsAssignedToDefaultUserRole = new List<String>
+	PermissionGrantPolicyIdsAssignedToDefaultUserRole = new List<string>
 	{
 	},
 };

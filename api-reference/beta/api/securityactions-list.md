@@ -101,8 +101,7 @@ GET https://graph.microsoft.com/beta/security/securityActions
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
