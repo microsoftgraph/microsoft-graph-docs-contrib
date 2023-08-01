@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |priority|Int32|Only present when the `type` property is `setPriority`. Nullable.|
 |startDateTime|DateTimeOffset|Only present when the `type` property is `setSchedule`. Nullable.|
 |title|String|Only present when the `type` property is `setTitle`. Nullable.|
-|type|String|Type of the change history. Possible values include create, assign, unassign, etc.|
+|type|String|Type of the change history. Possible values include create, assign, unassign, unassignAll, setPriority, setTitle, setPercentComplete, setSchedule, remove, restore, and undo |
 |undoChangeId|String|Only exists on undo change history. Nullable.|
 
 ## Relationships
