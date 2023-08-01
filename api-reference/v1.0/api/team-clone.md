@@ -26,7 +26,7 @@ You can specify which parts of the team to clone:
 When you clone tabs in Microsoft Teams, they initially appear in an unconfigured state on the tab bar. The first time you open these cloned tabs, you will be prompted to go through the configuration screen.
 (If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
 
-Cloning entails a time-consuming process. Once the POST clone operation concludes, retrieve the operation id from the location header in the response. Use the [Get] (../resources/teamsasyncoperation.md) method to query the status of the clone operation, which can be **running**, **succeeded**, or **failed**. Continuously perform GET requests until the status is no longer **running**. To avoid overloading the system, ensure a recommended delay of 5 seconds between successive GET requests.
+Cloning entails a time-consuming process. Once the POST clone operation concludes, retrieve the operation id from the location header in the response. Use the [Get](../resources/teamsasyncoperation.md) method to query the status of the clone operation, which can be **running**, **succeeded**, or **failed**. Continuously perform GET requests until the status is no longer **running**. To avoid overloading the system, ensure a recommended delay of 5 seconds between successive GET requests.
 
 ## Permissions
 
