@@ -189,7 +189,7 @@ Here is an example of the request.
   "name": "get_serviceprincipal_by_appId_select"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')?$select=id,appId,displayName,appRoles,publishedPermissionScopes
+GET https://graph.microsoft.com/beta/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')?$select=id,appId,displayName,appRoles,publishedPermissionScopes,resourceSpecificApplicationPermissions
 ```
 
 # [C#](#tab/csharp)

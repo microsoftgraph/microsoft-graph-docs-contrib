@@ -82,6 +82,12 @@
       "url": "https://github.com/microsoftgraph/msgraph-snippets-typescript",
       "branch": "main",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "concepts/includes/connecting-external-content/snippets",
+      "url": "https://github.com/microsoftgraph/msgraph-search-connector-sample",
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {},

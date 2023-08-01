@@ -160,6 +160,25 @@
         },
         {
             "ChangeList": [
+              {
+                "Id": "a244d924-f4ee-4f19-9e2d-a5a900ba82e5",
+                "ApiChange": "Property",
+                "ChangedApiName": "resetEnabled",
+                "ChangeType": "Addition",
+                "Description": "Added the **resetEnabled** property to the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource.",
+                "Target": "cloudPcUserSetting"
+              }
+
+            ],
+            "Id": "a244d924-f4ee-4f19-9e2d-a5a900ba82e5",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-07-31T10:21:43.9533784Z",
+            "WorkloadArea": "Devices and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
                 {
                     "Id": "7f706f6a-ee66-49b5-9325-f55149f952ac",
                     "ApiChange": "Property",
@@ -3390,6 +3409,24 @@
         "CreatedDateTime": "2023-06-05T04:14:41.3424906Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
-      }
+      },
+      {
+      "ChangeList": [          
+            {
+              "Id": "33faed78-3754-43a7-a08a-4d6c9d5d741f",
+              "ApiChange": "Method",
+              "ChangedApiName": "getInaccessibleCloudPcReports",
+              "ChangeType": "Addition",
+              "Description": "Added the [getInaccessibleCloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getInaccessibleCloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+              "Target": "cloudPcReports"
+            }
+          ],
+          "Id": "33faed78-3754-43a7-a08a-4d6c9d5d741f",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-07-31T09:00:37.9148169Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+        }
     ]
 }
