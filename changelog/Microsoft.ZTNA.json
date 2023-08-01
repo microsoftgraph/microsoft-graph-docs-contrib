@@ -455,7 +455,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "connectivityConfigurationLink",
           "ChangeType": "Addition",
-          "Description": "Added the [connectivityConfigurationLink](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connectivityConfigurationLink?view=graph-rest-beta) resource",
+          "Description": "Added the [connectivityConfigurationLink](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connectivityConfigurationLink?view=graph-rest-beta) resource ",
           "Target": "connectivityConfigurationLink"
         }
       ],
