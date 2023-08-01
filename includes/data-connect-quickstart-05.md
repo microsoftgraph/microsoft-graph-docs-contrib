@@ -64,7 +64,7 @@ Specify the datasets that the app registration needs to query. To learn more abo
 
     ![A screenshot that shows the Security and privacy page in the Microsoft 365 admin center.](../concepts/images/data-connect-app-register-7.png)
 
-4. In the Microsoft Graph Data Connect applications portal, you should see the application you registered previously with Data Connect in the application summary table with the status **Pre-consent**.
+4. In the Microsoft Graph Data Connect applications portal,  find the application you registered previously with Data Connect. It should have a **Pre-consent** status in the application summary table.
 
     ![A screenshot that shows the pre-consented application in the landing page of the Microsoft Graph Data Connect applications portal.](../concepts/images/data-connect-app-register-8.png)
 
@@ -83,13 +83,13 @@ Specify the datasets that the app registration needs to query. To learn more abo
 
 # Former guidance on Privileged Access Management (PAM)
 
-If you are following the PAM steps, we recommend you come back to this step **AFTER** setting up your Azure Synapse or Factory pipeline in the next step.
+If you are following the PAM steps, return to this section  **AFTER** setting up your Azure Synapse or Factory pipeline in the next step.
 
-A Microsoft 365 administrator can approve or deny consent requests. This can be done via the Microsoft 365 Admin Center or programmatically via PowerShell. 
+A Microsoft 365 administrator can approve or deny consent requests through the Microsoft 365 admin center or programmatically using PowerShell.
 
-When a developer runs a pipeline, they trigger a privileged access management (PAM) request. The request is attached to your user account that owns the service principal used by the pipeline. Even if the account is part of the approver group you set up, you can't use it to approve the PAM request because self-approvals are not allowed. 
+When a developer triggers a pipeline, it initiates a privileged access management (PAM) request. This request is associated with the user account that owns the service principal used by the pipeline. However, self-approvals are not permitted even if the account belongs to the designated approver group.
 
-If you try, you'll get an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed." For development, you'll want to have a second account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange Online accounts.
+Attempting self-approval will result in an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed." During development, make sure you have a separate account in addition to the admin, who can approve the requests. Both the submitter and approver must have active Exchange Online accounts.
 
 # [PAM: Microsoft 365 admin center](#tab/PAMMicrosoft365)
 
