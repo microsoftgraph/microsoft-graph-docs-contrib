@@ -11905,6 +11905,8 @@ items:
               - name: People admin settings (preview)
                 href: resources/peopleAdminSettings.md
                 items:
+                  - name: Get
+                    href: api/peopleadminsettings-get.md
                   - name: Org control for pronouns settings (preview)
                     items:
                       - name: Pronouns settings
