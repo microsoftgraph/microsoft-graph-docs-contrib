@@ -4,7 +4,9 @@ ms.localizationpriority: medium
 
 ## Optional: Visualize your Microsoft Graph Data Connect data in Microsoft Power BI
 
-This exercise describes how to create a report in Microsoft Power BI to visualize your Microsoft 365 data from Microsoft Graph Data Connect. This step is optional, but before you can proceed, make sure that you've completed the steps to build your first Microsoft Graph Data Connect application. When you have your JSON file in your Azure storage, follow these steps:
+This exercise describes how to create a report in Microsoft Power BI to visualize your Microsoft 365 data from Microsoft Graph Data Connect. 
+
+This step is optional, but before you can proceed, make sure that you've completed the steps to build your first Microsoft Graph Data Connect application. When you have your JSON file in your Azure storage, follow these steps:
 
 1. Open your Power BI desktop application. If you need to download Power BI, go to [Download Power BI tools and apps](https://powerbi.microsoft.com/en-us/downloads/)  
 
@@ -18,14 +20,14 @@ This exercise describes how to create a report in Microsoft Power BI to visualiz
 
 ![A screenshot that shows how to add the Azure Blob Storage account URL to get data in Power BI.](../concepts/images/data-connect-pbi-add-blob-account-name.png)
 
-> **Note:** 
+> [!NOTE] 
 > You can find your Azure Storage URL in the Azure Storage Account. Search through your containers, choose the container you want to connect to, navigate to the Context menu (...), select **Container Properties**, and copy the URL.
 
 5. Select **Transform Data** and select the first line that says **Binary**.
 
 ![A screenshot that shows how to transform the binary data in Power BI.](../concepts/images/data-connect-pbi-transform-binary.png)
 
-6. To get a list with all the **Records**, on the Column1 toggle option, right-click to select **Transform**, then choose **JSON**.
+6. To get a list with all the **Records**, navigate to the Column1 toggle option, and right-click to select **Transform**, then choose **JSON**.
 
 ![A screenshot that shows how to expand the data columns in Power BI.](../concepts/images/data-connect-pbi-transform-columns.png)
 
