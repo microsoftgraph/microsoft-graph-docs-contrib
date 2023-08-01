@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
-ms.date: 06/09/2023
+ms.date: 07/31/2023
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
@@ -222,7 +222,7 @@ To set permissions using the Azure CLI, PowerShell, or infrastructure as code fr
 To find the IDs for all Microsoft Graph permissions, see [All permissions and IDs](permissions-reference.md#all-permissions-and-ids). Alternatively, you can read information about all Microsoft Graph permissions programmatically through the [Get servicePrincipal](/graph/api/serviceprincipal-get) API in Microsoft Graph. The following is an example of the request.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')?$select=id,appId,displayName,appRoles,oauth2PermissionScopes
+GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')?$select=id,appId,displayName,appRoles,oauth2PermissionScopes,resourceSpecificApplicationPermissions
 ```
 
 ## See also
