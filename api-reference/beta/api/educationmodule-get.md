@@ -74,8 +74,8 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('cff47bf3-791b-4b0a-ad6b-92fa66917cc7')/modules/$entity",
-    "displayName": "Module 1",
-    "description": "Description for Module 1",
+    "displayName": "Math Practice - Fall",
+    "description": "Description for Math Practice - Fall",
     "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!G2qSPDsXR0y4Bb2vODednawfynEIaD1OvPVeH4wbOp_3GV_mcV9MRLur9XlH200N/items/01IVG3LZKSPUPNBJYGQJCJUNG5SOCCD5DF",
     "isPinned": false,
     "status": "draft",
