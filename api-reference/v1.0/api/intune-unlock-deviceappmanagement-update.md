@@ -94,10 +94,6 @@ Content-length: 61
 [!INCLUDE [sample-code](../includes/snippets/php/intune-unlock-deviceappmanagement-update-update-deviceappmanagement-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-unlock-deviceappmanagement-update-update-deviceappmanagement-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-unlock-deviceappmanagement-update-update-deviceappmanagement-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

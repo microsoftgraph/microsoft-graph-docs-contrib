@@ -22,7 +22,7 @@ configuration := &graphidentity.IdentityConditionalAccessTemplateItemRequestBuil
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().ConditionalAccess().Templates().ByTemplateId("conditionalAccessTemplate-id").Get(context.Background(), configuration)
+templates, err := graphClient.Identity().ConditionalAccess().Templates().ByConditionalAccessTemplateId("conditionalAccessTemplate-id").Get(context.Background(), configuration)
 
 
 ```

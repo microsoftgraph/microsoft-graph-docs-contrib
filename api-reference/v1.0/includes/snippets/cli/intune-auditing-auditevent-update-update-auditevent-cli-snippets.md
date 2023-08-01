@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-management audit-events patch --audit-event-id {auditEvent-id} --body '{\
   "@odata.type": "#microsoft.graph.auditEvent",\
   "displayName": "Display Name value",\

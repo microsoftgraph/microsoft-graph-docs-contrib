@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceAppManagement().IosManagedAppProtections().ByIosManagedAppProtectionId("iosManagedAppProtection-id").Assignments().ByAssignmentId("targetedManagedAppPolicyAssignment-id").Get(context.Background(), nil)
+assignments, err := graphClient.DeviceAppManagement().IosManagedAppProtections().ByIosManagedAppProtectionId("iosManagedAppProtection-id").Assignments().ByTargetedManagedAppPolicyAssignmentId("targetedManagedAppPolicyAssignment-id").Get(context.Background(), nil)
 
 
 ```

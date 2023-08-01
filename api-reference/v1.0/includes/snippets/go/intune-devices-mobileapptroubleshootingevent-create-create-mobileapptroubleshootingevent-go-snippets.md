@@ -17,7 +17,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewMobileAppTroubleshootingEvent()
 
-result, err := graphClient.DeviceManagement().MobileAppTroubleshootingEvents().Post(context.Background(), requestBody, nil)
+mobileAppTroubleshootingEvents, err := graphClient.DeviceManagement().MobileAppTroubleshootingEvents().Post(context.Background(), requestBody, nil)
 
 
 ```

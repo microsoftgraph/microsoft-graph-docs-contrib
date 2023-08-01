@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.External().IndustryData().Years().ByYearId("yearTimePeriodDefinition-id").Delete(context.Background(), nil)
+graphClient.External().IndustryData().Years().ByYearTimePeriodDefinitionId("yearTimePeriodDefinition-id").Delete(context.Background(), nil)
 
 
 ```

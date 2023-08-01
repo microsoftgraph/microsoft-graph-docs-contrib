@@ -27,7 +27,7 @@ requestBody.SetPrincipalId(&principalId)
 scope := "User.Read.All Group.Read.All"
 requestBody.SetScope(&scope) 
 
-result, err := graphClient.Oauth2PermissionGrants().Post(context.Background(), requestBody, nil)
+oauth2PermissionGrants, err := graphClient.Oauth2PermissionGrants().Post(context.Background(), requestBody, nil)
 
 
 ```

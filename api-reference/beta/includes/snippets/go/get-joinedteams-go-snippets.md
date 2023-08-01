@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().JoinedTeams().Get(context.Background(), nil)
+joinedTeams, err := graphClient.Me().JoinedTeams().Get(context.Background(), nil)
 
 
 ```

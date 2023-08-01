@@ -42,7 +42,7 @@ graphlearn_courses.SetCourseType(&courseType)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Groups().Post(context.Background(), requestBody, nil)
+groups, err := graphClient.Groups().Post(context.Background(), requestBody, nil)
 
 
 ```

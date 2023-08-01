@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-app-management mdm-windows-information-protection-policies create --body '{\
   "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",\
   "displayName": "Display Name value",\

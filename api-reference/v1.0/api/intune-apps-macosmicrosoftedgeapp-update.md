@@ -124,10 +124,6 @@ Content-length: 608
 [!INCLUDE [sample-code](../includes/snippets/php/intune-apps-macosmicrosoftedgeapp-update-update-macosmicrosoftedgeapp-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-macosmicrosoftedgeapp-update-update-macosmicrosoftedgeapp-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-apps-macosmicrosoftedgeapp-update-update-macosmicrosoftedgeapp-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
