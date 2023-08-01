@@ -1799,6 +1799,12 @@ items:
                     href: api/printtaskdefinition-update-task.md
               - name: Reports
                 items:
+                  - name: Archived print job
+                    href: resources/archivedprintjob.md
+                  - name: Print usage by printer
+                    href: resources/printusagebyprinter.md
+                  - name: Print usage by user
+                    href: resources/printusagebyuser.md
                   - name: Organized by printer
                     items:
                       - name: Get
@@ -5447,6 +5453,20 @@ items:
                     href: api/subscribedsku-list.md
                   - name: Get subscribedSku
                     href: api/subscribedsku-get.md
+              - name: On-premises directory synchronization
+                href: resources/onpremisesdirectorysynchronization.md
+                items:
+                  - name: Get
+                    href: api/onpremisesdirectorysynchronization-get.md
+                  - name: Update
+                    href: api/onpremisesdirectorysynchronization-update.md
+              - name: Tenant information
+                href: resources/tenantinformation.md
+                items:
+                - name: Find tenant by domain name
+                  href: api/tenantrelationship-findtenantinformationbydomainname.md
+                - name: Find tenant by tenant ID
+                  href: api/tenantrelationship-findtenantinformationbytenantid.md
           - name: Governance
             href: resources/identitygovernance-overview.md
             displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
@@ -5600,6 +5620,12 @@ items:
                         href: api/accesspackage-delete-incompatiblegroup.md
                       - name: List access packages incompatible with
                         href: api/accesspackage-list-accesspackagesincompatiblewith.md
+                      - name: List resource role scopes
+                        href: api/accesspackage-list-resourcerolescopes.md
+                      - name: Add resource role scope
+                        href: api/accesspackage-post-resourcerolescopes.md
+                      - name: Remove resource role scope
+                        href: api/accesspackage-delete-resourcerolescopes.md
                   - name: Access package assignment
                     href: resources/accesspackageassignment.md
                     items:
@@ -5648,6 +5674,8 @@ items:
                         href: api/accesspackageassignmentrequest-cancel.md
                       - name: Reprocess
                         href: api/accesspackageassignmentrequest-reprocess.md
+                      - name: Resume
+                        href: api/accesspackageassignmentrequest-resume.md  
                   - name: Access package catalog
                     href: resources/accesspackagecatalog.md
                     items:
@@ -5661,6 +5689,39 @@ items:
                         href: api/accesspackagecatalog-update.md
                       - name: Delete
                         href: api/accesspackagecatalog-delete.md
+                      - name: List resources
+                        href: api/accesspackagecatalog-list-resources.md
+                      - name: List resource roles
+                        href: api/accesspackagecatalog-list-resourceroles.md
+                  - name: Access package custom workflow extension
+                    displayName: Custom authentication extensions
+                    items:
+                    - name: Assignment request workflow extension
+                      href: resources/accesspackageassignmentrequestworkflowextension.md
+                      items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
+                      - name: Create
+                        href: api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
+                      - name: Get
+                        href: api/accesspackageassignmentrequestworkflowextension-get.md
+                      - name: Update
+                        href: api/accesspackageassignmentrequestworkflowextension-update.md
+                      - name: Delete
+                        href: api/accesspackageassignmentrequestworkflowextension-delete.md
+                  - name: Assignment workflow extension
+                    href: resources/accesspackageassignmentworkflowextension.md
+                    items:
+                    - name: List
+                      href: api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
+                    - name: Create
+                      href: api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
+                    - name: Get
+                      href: api/accesspackageassignmentworkflowextension-get.md
+                    - name: Update
+                      href: api/accesspackageassignmentworkflowextension-update.md
+                    - name: Delete
+                      href: api/accesspackageassignmentworkflowextension-delete.md
                   - name: Connected organization
                     href: resources/connectedorganization.md
                     items:
@@ -5706,6 +5767,18 @@ items:
                         href: api/accesspackageassignmentpolicy-update.md
                       - name: Delete
                         href: api/accesspackageassignmentpolicy-delete.md
+                  - name: Access package resource request
+                    href: resources/accesspackageresourcerequest.md
+                    items:
+                      - name: List
+                        href: api/entitlementmanagement-list-resourcerequests.md
+                      - name: Create
+                        href: api/entitlementmanagement-post-resourcerequests.md
+                  - name: Access package resource environment
+                    href: resources/accesspackageresourceenvironment.md
+                    items:
+                      - name: List
+                        href: api/entitlementmanagement-list-resourceenvironments.md
               - name: Lifecycle workflows
                 displayName: LCW, Identity Governance, Joiner, Mover, Leaver
                 items:
@@ -8432,6 +8505,17 @@ items:
                         href: api/call-mute.md
                       - name: Update recording status
                         href: api/call-updaterecordingstatus.md
+                  - name: Audio routing group
+                    href: resources/audioroutinggroup.md
+                    items:
+                    - name: Create
+                      href: api/call-post-audioroutinggroups.md
+                    - name: Get
+                      href: api/audioroutinggroup-get.md
+                    - name: Update
+                      href: api/audioroutinggroup-update.md
+                    - name: Delete
+                      href: api/audioroutinggroup-delete.md
                   - name: Call
                     href: resources/call.md
                     items:

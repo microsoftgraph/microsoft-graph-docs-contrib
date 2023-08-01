@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->deviceManagement()->deviceCompliancePolicies()->byDeviceCompliancePolicieId('deviceCompliancePolicy-id')->scheduledActionsForRule()->byScheduledActionsForRule()Id('deviceComplianceScheduledActionForRule-id')->scheduledActionConfigurations()->byScheduledActionConfigurationId('deviceComplianceActionItem-id')->delete();
+$graphServiceClient->deviceManagement()->deviceCompliancePolicies()->byDeviceCompliancePolicyId('deviceCompliancePolicy-id')->scheduledActionsForRule()->byDeviceComplianceScheduledActionForRuleId('deviceComplianceScheduledActionForRule-id')->scheduledActionConfigurations()->byDeviceComplianceActionItemId('deviceComplianceActionItem-id')->delete();
 
 
 ```

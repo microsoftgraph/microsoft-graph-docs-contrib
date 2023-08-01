@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new IosCompliancePolicy();
-$requestBody->set@odatatype('#microsoft.graph.iosCompliancePolicy');
+$requestBody->setOdataType('#microsoft.graph.iosCompliancePolicy');
 
 $requestBody->setDescription('Description value');
 
@@ -48,7 +48,7 @@ $requestBody->setManagedEmailProfileRequired(true);
 
 
 
-$result = $graphServiceClient->deviceManagement()->deviceCompliancePolicies()->byDeviceCompliancePolicieId('deviceCompliancePolicy-id')->patch($requestBody);
+$result = $graphServiceClient->deviceManagement()->deviceCompliancePolicies()->byDeviceCompliancePolicyId('deviceCompliancePolicy-id')->patch($requestBody);
 
 
 ```
