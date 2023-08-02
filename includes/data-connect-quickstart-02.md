@@ -27,17 +27,17 @@ Set up your Microsoft 365 tenant to enable the usage of Microsoft Graph Data Con
     
     ![A screenshot showing how to enable data connect in the Microsoft 365 admin center.](../concepts/images/data-connect-new-consent-flow-enable-mgdc.png)
 
-1. Congrats, you just enabled Microsoft Graph Data Connect for your organization!
+1. Congratulations, you just enabled Microsoft Graph Data Connect for your organization!
 
 ## [PAM: Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](#tab/PAMConsentFlow)
 
-This page describes the steps of the former consent flow involving Privileged Access Management (PAM). We highly recommend new and current customers use the new consent flow for a smoother and more secure onboarding process available in the previous tab. 
+This page describes the steps of the former consent flow involving Privileged Access Management (PAM). We recommend that you use the new consent flow for a smoother and more secure onboarding process.
 
 ## Configure Microsoft Graph Data Connect consent request approver group
 
 Set up your Microsoft 365 tenant to enable the usage of Microsoft Graph Data Connect.
 
-1. Open a browser and go to your [Microsoft 365 Admin Portal](https://admin.microsoft.com/). Please ensure this is done through an account with admin privileges.
+1. Open a browser and use an account with [admin privileges](https://admin.microsoft.com/) to go to your Microsoft 365 admin portal.
 
 1. On the sidebar navigation, click **Active teams & Groups**.
 
@@ -65,7 +65,7 @@ Set up your Microsoft 365 tenant to enable the usage of Microsoft Graph Data Con
 
 ## Enable Microsoft Graph Data Connect in your Microsoft 365 tenant
 
-Enable the Microsoft Graph Data Connect service on your Microsoft 365 tenant. Please ensure this is done with an account that has admin privileges.
+Enable the Microsoft Graph Data Connect service on your Microsoft 365 tenant by using an account that has admin privileges.
 
 1. While you are still signed in to the Microsoft 365 Admin Portal, go to **Settings > Org settings**. You may have to click on **Show all** to see the **Settings** option.
 
