@@ -27,7 +27,7 @@ configuration := &graphusers.ItemAppRoleAssignedResourcesRequestBuilderGetReques
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().AppRoleAssignedResources().Get(context.Background(), configuration)
+appRoleAssignedResources, err := graphClient.Me().AppRoleAssignedResources().Get(context.Background(), configuration)
 
 
 ```

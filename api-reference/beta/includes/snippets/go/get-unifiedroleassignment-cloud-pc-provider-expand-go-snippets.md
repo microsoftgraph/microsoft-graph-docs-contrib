@@ -22,7 +22,7 @@ configuration := &graphrolemanagement.RoleManagementCloudPCRoleAssignmentItemReq
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().ByRoleAssignmentId("unifiedRoleAssignmentMultiple-id").Get(context.Background(), configuration)
+roleAssignments, err := graphClient.RoleManagement().CloudPC().RoleAssignments().ByUnifiedRoleAssignmentMultipleId("unifiedRoleAssignmentMultiple-id").Get(context.Background(), configuration)
 
 
 ```

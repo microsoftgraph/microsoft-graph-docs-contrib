@@ -14,7 +14,7 @@ $requestBody->setOutputName('Export via API');
 
 $requestBody->setDescription('Export for the Contoso investigation');
 
-$requestBody->setExportOptions(new ExportOptions('originalFiles,fileInfo,tags'));
+$requestBody->setExportOptions(new ExportOptions('originalFiles,tags'));
 
 $requestBody->setExportStructure(new ExportFileStructure('directory'));
 

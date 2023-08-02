@@ -10,19 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ServicePrincipal();
+$customSecurityAttributes = new CustomSecurityAttributeValue();
 $additionalData = [
-		'customSecurityAttributes' => 		[
-				'engineering' => 				[
-						'@odata.type' => '#Microsoft.DirectoryServices.CustomSecurityAttributeValue', 
-						'projectDate' => '2022-10-01', 
-				],
-
+		'Engineering' => 		[
+				'@odata.type' => '#Microsoft.DirectoryServices.CustomSecurityAttributeValue', 
+				'projectDate' => '2022-10-01', 
 		],
 
 ];
-$requestBody->setAdditionalData($additionalData);
+$customSecurityAttributes->setAdditionalData($additionalData);
 
 
+
+$requestBody->setCustomSecurityAttributes($customSecurityAttributes);
 
 
 $result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->patch($requestBody);

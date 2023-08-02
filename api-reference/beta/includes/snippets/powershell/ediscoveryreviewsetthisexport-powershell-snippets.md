@@ -9,7 +9,7 @@ Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	outputName = "Export via API"
 	description = "Export for the Contoso investigation"
-	exportOptions = "originalFiles,fileInfo,tags"
+	exportOptions = "originalFiles,tags"
 	exportStructure = "directory"
 }
 

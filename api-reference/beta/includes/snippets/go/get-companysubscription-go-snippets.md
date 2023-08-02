@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Directory().Subscriptions().BySubscriptionId("companySubscription-id").Get(context.Background(), nil)
+subscriptions, err := graphClient.Directory().Subscriptions().ByCompanySubscriptionId("companySubscription-id").Get(context.Background(), nil)
 
 
 ```

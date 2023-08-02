@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 [!INCLUDE [sample-code](../includes/snippets/php/intune-apps-ioslobapp-list-list-ioslobapps-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-ioslobapp-list-list-ioslobapps-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-apps-ioslobapp-list-list-ioslobapps-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

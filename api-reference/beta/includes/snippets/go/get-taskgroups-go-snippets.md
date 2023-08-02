@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Outlook().TaskGroups().Get(context.Background(), nil)
+taskGroups, err := graphClient.Me().Outlook().TaskGroups().Get(context.Background(), nil)
 
 
 ```

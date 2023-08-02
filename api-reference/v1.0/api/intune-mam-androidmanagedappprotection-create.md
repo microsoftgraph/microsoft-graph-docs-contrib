@@ -176,10 +176,6 @@ Content-length: 1862
 [!INCLUDE [sample-code](../includes/snippets/php/intune-mam-androidmanagedappprotection-create-create-androidmanagedappprotection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-mam-androidmanagedappprotection-create-create-androidmanagedappprotection-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-mam-androidmanagedappprotection-create-create-androidmanagedappprotection-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
