@@ -25,14 +25,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "shareMeetingChatHistoryDefault",
           "ChangeType": "Addition",
-          "Description": "Added the `shareMeetingChatHistoryDefault` property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Description": "Added the **shareMeetingChatHistoryDefault** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],
       "Id": "3f3d03df-a0c3-4d63-82b9-4bc912be0152",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-07-18T00:41:00.8275068Z",
+      "CreatedDateTime": "2023-08-01T00:41:00.8275068Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
