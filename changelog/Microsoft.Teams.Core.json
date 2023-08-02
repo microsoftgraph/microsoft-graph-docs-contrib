@@ -6529,7 +6529,7 @@
         {
           "Id": "e04528be-94f6-4bc5-9485-9b71da7f4807",
           "ApiChange": "Method",
-          "ChangedApiName": "LIST",
+          "ChangedApiName": "user",
           "ChangeType": "Addition",
           "Description": "Added the [List permissionGrants](https://learn.microsoft.com/graph/api/user-list-permissiongrants?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
