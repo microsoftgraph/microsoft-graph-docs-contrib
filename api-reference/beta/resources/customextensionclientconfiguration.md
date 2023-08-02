@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Connection settings that define how long Azure AD can wait for a a response from an external app before it shuts down the connection when trying to trigger the external app. Only **timeoutInMilliseconds** and **maximumRetries** are supported.
+Connection settings that define how long Azure AD can wait for a a response from an external app before it shuts down the connection when trying to trigger the external app.
 
 ## Properties
 |Property|Type|Description|
