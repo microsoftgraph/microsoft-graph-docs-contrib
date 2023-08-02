@@ -11903,8 +11903,10 @@ items:
                       - name: Get manager
                         href: api/orgcontact-get-manager.md
               - name: People admin settings (preview)
-                href: resources/peopleAdminSettings.md
+                href: resources/peopleadminsettings.md
                 items:
+                  - name: Get
+                    href: api/peopleadminsettings-get.md
                   - name: Org control for pronouns settings (preview)
                     items:
                       - name: Pronouns settings

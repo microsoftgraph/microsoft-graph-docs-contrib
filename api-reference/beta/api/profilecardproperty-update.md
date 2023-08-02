@@ -44,7 +44,7 @@ PATCH /admin/people/profileCardProperties/{id}
 | Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json. Required. |
 
-> **Note** To avoid encoding issues that malform the payload, use `Content-Type: application/json; charset=utf-8`.
+> **Note:** To avoid encoding issues that malform the payload, use `Content-Type: application/json; charset=utf-8`.
 
 ## Request body
 
@@ -67,7 +67,8 @@ The following example adds a localized label `Kostnads Senter` for the locale `n
 
 <!-- {
   "blockType": "request",
-  "name": "update_profilecardproperty"
+  "name": "update_profilecardproperty",
+  "sampleKeys": ["CustomAttribute1"]
 }-->
 
 ```http
