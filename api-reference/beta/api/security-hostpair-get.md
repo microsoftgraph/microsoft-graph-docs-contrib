@@ -38,6 +38,7 @@ GET /security/threatIntelligence/hostPairs/{hostPairId}
 This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The following properties can be used for `$select` calls.
+
 |Property|Example|Notes|
 |:---|:---|:---|
 |All [hostPair](../resources/security-hostpair.md) properties|`$select=id,firstSeenDateTime`|Use the name as it appears in the [hostPair](../resources/security-hostpair.md) resource.|
