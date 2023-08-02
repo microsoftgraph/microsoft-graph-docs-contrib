@@ -35,9 +35,6 @@ There are no licensing requirements for `model=B`.
 
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
-> [!NOTE]
-> Most of these APIs are also [protected APIs](/graph/teams-protected-apis); you must get approval from Microsoft before you can use them. If your application is using protected APIs, please submit a [request for access](https://aka.ms/teamsgraph/requestaccess). For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
-
 ### `model=A` requirements
 
 `model=A` is restricted to applications performing a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
@@ -195,7 +192,7 @@ You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-get
 |:-------------------------|:--------|
 | Did billing actually started on July 5th? | Yes, we are onboarding partners in phases. For continued access, follow the instructions on [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes. 
 | What should I expect after setting up an Azure subscription? | Billing will be effective immediately.  You can monitor the costs as described in the [View the costs billed for the metered Microsoft Teams APIs](#view-the-costs-billed-for-the-metered-microsoft-teams-apis) section above. |
-| Do I need to provide an Azure subscription if my application is not calling metered APIs? | We recommend that you provide an Azure subscription because most scenarios use metered APIs. See also [protected APIs](/graph/teams-protected-apis). |
+| Do I need to provide an Azure subscription if my application is not calling metered APIs? | We recommend that you provide an Azure subscription because most scenarios use metered APIs. |
 | What happens if no Azure subscription is provided? | • No payment-related errors will occur if the application is not calling metered APIs. <br> • If no model parameter is passed, the `evaluation model` value will be used by default. <br> • If calling a metered API passing `model=A`, provide a Microsoft 365 E5 eligible license and Azure subscription. <br> • If passing `model=B` when calling metered APIs, provide an active Azure subscription. <br> |
 | How do I create an Azure subscription? | The Azure subscription must be available in the same tenant where the app is registered. Customers with MCA or EA agreements can get a subscription from their existing account. Is also possible to create a PAYG subscription using a credit card or pay by check or wire transfer. For details, see [cost management and billing](/azure/cost-management-billing/microsoft-customer-agreement). |
 | Who is responsible for the payment in the case of multitenant apps? | The organization that owns the app registration. |
