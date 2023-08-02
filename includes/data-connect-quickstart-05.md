@@ -4,23 +4,26 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-The first section and tab are for users who have completed the new and updated consent flow to set up their pipeline. It provides guidance on registering and approving an AAD application with Microsoft Graph Data Connect (Data Connect). As a prerequisite, Data Connect should be enabled in your tenant. We recommend creating an Azure Active Directory (Azure AD) application and a storage destination resource.
+The first section and tab are for users who have completed the new and updated consent flow to set up their pipeline. It provides guidance on registering and approving an Azure Active Directory (Azure AD) Application with Microsoft Graph Data Connect (Data Connect). As a prerequisite, Data Connect should be enabled in your tenant. We recommend creating an Azure AD application and a storage destination resource.
 
-The second section covers the approval and denial of application requests using our former consent process with Privileged Access Management (PAM). The first tab provides instructions for the admin center's former consent process, while the second tab offers guidance through a PowerShell script. If you are following the PAM steps, we suggest revisiting this step AFTER setting up your Azure Synapse or Factory pipeline in the next step.
+The second section covers the approval and denial of application requests using our former consent process with Privileged Access Management (PAM). The first tab provides instructions for the admin center's former consent process, while the second tab offers guidance through a PowerShell script. 
+
+>[!NOTE]
+>If you are following the PAM steps, we suggest revisiting this step after setting up your Azure Synapse or Factory pipeline in the next step.
 
 ## [Register your application with Microsoft Graph Data Connect](#tab/RegisterAADApplication)
 
-As a pre-requisite, Data Connect should be enabled in your tenant. While having an Azure AD app and storage destination resource pre-created is recommended, these can also be set up using the wizard. The app registration process in Data Connect involves a three-tab wizard: Registration info, Datasets, and Review + create.
+As a prerequisite, enable Data Connect in your tenant. It's helpful to have an Azure AD app and storage destination resource created; you can also set these up by using the wizard. The app registration process in Data Connect involves using a wizard with three tabs: Registration info, Datasets, and Review + create.
 
 ### Provide details in the Registration info tab
 
 1. Access [Microsoft Graph Data Connect in the Azure portal](https://aka.ms/mgdcinazure). You can find it through the search bar in the [Azure portal](https://portal.azure.com/)
 
-2. Click the **Add** or **Add a new application**.
+2. Click **Add** or **Add a new application**.
 
     ![A screenshot that shows the Azure portal Data Factory to create a new application.](../concepts/images/data-connect-register-app-1.png)
 
-3. Follow the **Add** wizard to provide the project details for registration. Once you have completed the required fields, click **Next: Datasets >**
+3. Follow the **Add** wizard to provide the project details for registration. After you have completed the required fields, choose **Next: Datasets >**
 
     1. **Subscription:** Select a subscription to filter the next selections:
         - **Resource Group:**  Select the resource group you created previously.
@@ -35,7 +38,7 @@ As a pre-requisite, Data Connect should be enabled in your tenant. While having 
 
 ### Select dataset and details for the application
 
-Specify the datasets that the app registration needs to query. To learn more about datasets, see [Datasets, regions, and sinks supported by Microsoft Graph Data Connect](/graph/data-connect-datasets). Click **Next : Datasets >**.
+Specify the datasets that the app registration needs to query. To learn more about datasets, see [Datasets, regions, and sinks supported by Microsoft Graph Data Connect](/graph/data-connect-datasets). Select **Next : Datasets >**.
 
 4. Select `BasicDataSet_v0.Message_v1` from the **Dataset** dropdown, and in the **Columns** dropdown, choose `All`. In the new row, select `BasicDataSet_v1` from the **Dataset** dropdown, and in the **Columns** dropdown, choose- `All`.
 
@@ -74,16 +77,16 @@ Specify the datasets that the app registration needs to query. To learn more abo
 
     ![A screenshot that shows the application details view with the Approve button highlighted.](../concepts/images/data-connect-app-register-9.png)
 
-7. After clicking **Approve**, the application summary table reloads with your app listed with the status **Approved**.
+7.  **Approve** the application summary table reloads with your app listed with the status **Approved**.
 
     ![A screenshot that shows the approved application in the landing page of the Microsoft Graph Data Connect applications portal.](../concepts/images/data-connect-app-register-10.png)
 
 ---
 
 
-# Former guidance on Privileged Access Management (PAM)
+# Guidance on Privileged Access Management (PAM)
 
-If you are following the PAM steps, return to this section  **AFTER** setting up your Azure Synapse or Factory pipeline in the next step.
+If you are following the PAM steps, return to this section after setting up your Azure Synapse or Factory pipeline in the next step.
 
 A Microsoft 365 administrator can approve or deny consent requests through the Microsoft 365 admin center or programmatically using PowerShell.
 
@@ -111,7 +114,7 @@ Attempting self-approval will result in an error message in the PAM portal: "Req
 
 ## Verify extracted data from Microsoft 365 to Azure Blob Storage
 
-1. Open a browser and navigate to the [Azure portal](https://portal.azure.com/#home).
+1. Open a browser and go to the [Azure portal](https://portal.azure.com/#home).
 
 1. Sign in using an account with **Global Administrator** rights to your Azure AD and Microsoft 365 tenants.
 
