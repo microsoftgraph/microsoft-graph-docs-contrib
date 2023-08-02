@@ -189,7 +189,7 @@ requestBody.SetAppsHideList(appsHideList)
 securityRequireVerifyApps := true
 requestBody.SetSecurityRequireVerifyApps(&securityRequireVerifyApps) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

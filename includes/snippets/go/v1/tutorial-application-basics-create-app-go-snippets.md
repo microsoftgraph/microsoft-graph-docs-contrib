@@ -19,7 +19,7 @@ requestBody := graphmodels.NewApplication()
 displayName := "My application"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Applications().Post(context.Background(), requestBody, nil)
+applications, err := graphClient.Applications().Post(context.Background(), requestBody, nil)
 
 
 ```

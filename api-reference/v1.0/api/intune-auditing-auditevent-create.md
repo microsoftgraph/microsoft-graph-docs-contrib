@@ -137,8 +137,8 @@ Content-length: 1496
 [!INCLUDE [sample-code](../includes/snippets/javascript/intune-auditing-auditevent-create-create-auditevent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-auditing-auditevent-create-create-auditevent-powershell-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-auditing-auditevent-create-create-auditevent-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

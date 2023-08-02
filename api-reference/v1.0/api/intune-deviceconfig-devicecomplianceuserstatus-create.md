@@ -104,10 +104,6 @@ Content-length: 287
 [!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-devicecomplianceuserstatus-create-create-devicecomplianceuserstatus-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-devicecomplianceuserstatus-create-create-devicecomplianceuserstatus-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-devicecomplianceuserstatus-create-create-devicecomplianceuserstatus-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

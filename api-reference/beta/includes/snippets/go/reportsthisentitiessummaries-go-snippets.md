@@ -25,7 +25,7 @@ configuration := &graphnetworkaccess.NetworkAccessReportsMicrosoft.graph.network
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.NetworkAccess().Reports().MicrosoftGraphNetworkaccessEntitiesSummaries(startDateTime={startDateTime},endDateTime={endDateTime})().Get(context.Background(), configuration)
+microsoft.graph.networkaccess.entitiesSummaries(startDateTime={startDateTime},endDateTime={endDateTime}), err := graphClient.NetworkAccess().Reports().MicrosoftGraphNetworkaccessEntitiesSummaries(startDateTime={startDateTime},endDateTime={endDateTime})().Get(context.Background(), configuration)
 
 
 ```

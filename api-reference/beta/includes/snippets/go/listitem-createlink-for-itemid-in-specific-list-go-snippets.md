@@ -36,7 +36,7 @@ requestBody.SetSendNotification(&sendNotification)
 retainInheritedPermissions := false
 requestBody.SetRetainInheritedPermissions(&retainInheritedPermissions) 
 
-result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByItemId("listItem-id").CreateLink().Post(context.Background(), requestBody, nil)
+createLink, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByListItemId("listItem-id").CreateLink().Post(context.Background(), requestBody, nil)
 
 
 ```

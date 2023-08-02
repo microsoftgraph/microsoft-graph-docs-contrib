@@ -33,13 +33,9 @@ request_body.authentication_configuration = authentication_configuration
 client_configuration = CustomExtensionClientConfiguration()
 client_configuration.@odata_type = '#microsoft.graph.customExtensionClientConfiguration'
 
+client_configuration.MaximumRetries = 1
+
 client_configuration.TimeoutInMilliseconds = 1000
-
-additional_data = [
-'maximum_retries' => 1,
-];
-client_configuration.additional_data(additional_data)
-
 
 
 request_body.client_configuration = client_configuration

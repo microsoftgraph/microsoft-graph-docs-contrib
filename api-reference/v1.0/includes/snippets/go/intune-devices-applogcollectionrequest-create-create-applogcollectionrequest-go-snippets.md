@@ -28,7 +28,7 @@ requestBody.SetCustomLogFolders(customLogFolders)
 completedDateTime , err := time.Parse(time.RFC3339, "2016-12-31T23:58:52.3534526-08:00")
 requestBody.SetCompletedDateTime(&completedDateTime) 
 
-result, err := graphClient.DeviceManagement().MobileAppTroubleshootingEvents().ByMobileAppTroubleshootingEventId("mobileAppTroubleshootingEvent-id").AppLogCollectionRequests().Post(context.Background(), requestBody, nil)
+appLogCollectionRequests, err := graphClient.DeviceManagement().MobileAppTroubleshootingEvents().ByMobileAppTroubleshootingEventId("mobileAppTroubleshootingEvent-id").AppLogCollectionRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

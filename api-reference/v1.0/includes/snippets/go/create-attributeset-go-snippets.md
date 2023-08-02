@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 maxAttributesPerSet := int32(25)
 requestBody.SetMaxAttributesPerSet(&maxAttributesPerSet) 
 
-result, err := graphClient.Directory().AttributeSets().Post(context.Background(), requestBody, nil)
+attributeSets, err := graphClient.Directory().AttributeSets().Post(context.Background(), requestBody, nil)
 
 
 ```

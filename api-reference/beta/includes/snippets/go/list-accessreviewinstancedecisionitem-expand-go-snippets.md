@@ -22,7 +22,7 @@ configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisio
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Decisions().FilterByCurrentUser(on='{on}')().Get(context.Background(), configuration)
+filterByCurrentUser(on='{on}'), err := graphClient.IdentityGovernance().AccessReviews().Decisions().FilterByCurrentUser(on='{on}')().Get(context.Background(), configuration)
 
 
 ```

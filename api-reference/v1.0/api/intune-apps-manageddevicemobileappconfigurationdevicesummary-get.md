@@ -83,10 +83,6 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations
 [!INCLUDE [sample-code](../includes/snippets/php/intune-apps-manageddevicemobileappconfigurationdevicesummary-get-get-manageddevicemobileappconfigurationdevicesummary-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-manageddevicemobileappconfigurationdevicesummary-get-get-manageddevicemobileappconfigurationdevicesummary-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-apps-manageddevicemobileappconfigurationdevicesummary-get-get-manageddevicemobileappconfigurationdevicesummary-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

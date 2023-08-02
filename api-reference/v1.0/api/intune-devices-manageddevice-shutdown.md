@@ -82,10 +82,6 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDe
 [!INCLUDE [sample-code](../includes/snippets/php/intune-devices-manageddevice-shutdown-shutdown-action-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-devices-manageddevice-shutdown-shutdown-action-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-devices-manageddevice-shutdown-shutdown-action-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
