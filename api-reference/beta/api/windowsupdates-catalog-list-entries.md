@@ -125,10 +125,21 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
       "id": "d0c03fbb-43b9-4dff-840b-974ef227384d",
       "displayName": "String",
+      "catalogName": "String",
+      "shortName": "String",
       "releaseDateTime": "String (timestamp)",
       "deployableUntilDateTime": "String (timestamp)",
       "isExpeditable": true,
-      "qualityUpdateClassification": "security"
+      "qualityUpdateClassification": "security",
+      "qualityUpdateCadence": "monthly",
+      "cveSeverityInformation": {
+        "maxSeverity": "critical",
+        "maxBaseScore": 9.8, 
+        "exploitedCves": [
+          "number": "CVE-2023-32046",
+          "url": "String"
+        ]
+      }
     }
   ]
 }
