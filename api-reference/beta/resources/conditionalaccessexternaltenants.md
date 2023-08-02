@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessExternalTenants resource type"
-description: "An abstract type that represents external tenants in the policy scope. This abstract type is inherited by conditionalAccessAllExternalTenants and conditionalAccessEnumeratedExternalTenants."
+description: "An abstract type that represents external tenants in a policy scope."
 ms.localizationpriority: medium
 author: "sandeo"
 ms.prod: "identity-and-sign-in"
@@ -13,13 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that represents external tenants in the policy scope. This abstract type is inherited by conditionalAccessAllExternalTenants and conditionalAccessEnumeratedExternalTenants.
+An abstract type that represents external tenants in a policy scope.
+
+Base type of [conditionalAccessAllExternalTenants](../resources/conditionalaccessallexternaltenants.md) and [conditionalAccessEnumeratedExternalTenants](conditionalaccessenumeratedexternaltenants.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| membershipKind |conditionalAccessExternalTenantsMembershipKind | Represents the membership kind. The possible values are: `all`, `enumerated`, `unknownFutureValue`. `enumerated` references an object of [conditionalAccessEnumeratedExternalTenants](conditionalaccessenumeratedexternaltenants.md) derived type. |
+| membershipKind |conditionalAccessExternalTenantsMembershipKind | The membership kind. Possible values are: `all`, `enumerated`, `unknownFutureValue`. The `enumerated` member references an [conditionalAccessEnumeratedExternalTenants](conditionalaccessenumeratedexternaltenants.md) object.|
 
 ## Relationships
 

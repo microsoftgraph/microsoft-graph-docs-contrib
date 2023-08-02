@@ -14,7 +14,7 @@ const workbookChartLineFormat = {
   color: 'color-value'
 };
 
-await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/line')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line')
 	.version('beta')
 	.update(workbookChartLineFormat);
 

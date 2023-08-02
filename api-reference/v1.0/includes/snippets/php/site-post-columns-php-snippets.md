@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ColumnDefinition();
 $requestBody->setDescription('test');
@@ -33,7 +33,7 @@ $text->setMaxLength(255);
 $requestBody->setText($text);
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->columns()->post($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->columns()->post($requestBody);
 
 
 ```

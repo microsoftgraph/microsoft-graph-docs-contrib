@@ -1,0 +1,185 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewDeviceConfiguration()
+description := "Description value"
+requestBody.SetDescription(&description) 
+displayName := "Display Name value"
+requestBody.SetDisplayName(&displayName) 
+version := int32(7)
+requestBody.SetVersion(&version) 
+firewallBlockStatefulFTP := true
+requestBody.SetFirewallBlockStatefulFTP(&firewallBlockStatefulFTP) 
+firewallIdleTimeoutForSecurityAssociationInSeconds := int32(2)
+requestBody.SetFirewallIdleTimeoutForSecurityAssociationInSeconds(&firewallIdleTimeoutForSecurityAssociationInSeconds) 
+firewallPreSharedKeyEncodingMethod := graphmodels.NONE_FIREWALLPRESHAREDKEYENCODINGMETHODTYPE 
+requestBody.SetFirewallPreSharedKeyEncodingMethod(&firewallPreSharedKeyEncodingMethod) 
+firewallIPSecExemptionsAllowNeighborDiscovery := true
+requestBody.SetFirewallIPSecExemptionsAllowNeighborDiscovery(&firewallIPSecExemptionsAllowNeighborDiscovery) 
+firewallIPSecExemptionsAllowICMP := true
+requestBody.SetFirewallIPSecExemptionsAllowICMP(&firewallIPSecExemptionsAllowICMP) 
+firewallIPSecExemptionsAllowRouterDiscovery := true
+requestBody.SetFirewallIPSecExemptionsAllowRouterDiscovery(&firewallIPSecExemptionsAllowRouterDiscovery) 
+firewallIPSecExemptionsAllowDHCP := true
+requestBody.SetFirewallIPSecExemptionsAllowDHCP(&firewallIPSecExemptionsAllowDHCP) 
+firewallCertificateRevocationListCheckMethod := graphmodels.NONE_FIREWALLCERTIFICATEREVOCATIONLISTCHECKMETHODTYPE 
+requestBody.SetFirewallCertificateRevocationListCheckMethod(&firewallCertificateRevocationListCheckMethod) 
+firewallMergeKeyingModuleSettings := true
+requestBody.SetFirewallMergeKeyingModuleSettings(&firewallMergeKeyingModuleSettings) 
+firewallPacketQueueingMethod := graphmodels.DISABLED_FIREWALLPACKETQUEUEINGMETHODTYPE 
+requestBody.SetFirewallPacketQueueingMethod(&firewallPacketQueueingMethod) 
+firewallProfileDomain := graphmodels.NewWindowsFirewallNetworkProfile()
+firewallEnabled := graphmodels.BLOCKED_STATEMANAGEMENTSETTING 
+firewallProfileDomain.SetFirewallEnabled(&firewallEnabled) 
+stealthModeBlocked := true
+firewallProfileDomain.SetStealthModeBlocked(&stealthModeBlocked) 
+incomingTrafficBlocked := true
+firewallProfileDomain.SetIncomingTrafficBlocked(&incomingTrafficBlocked) 
+unicastResponsesToMulticastBroadcastsBlocked := true
+firewallProfileDomain.SetUnicastResponsesToMulticastBroadcastsBlocked(&unicastResponsesToMulticastBroadcastsBlocked) 
+inboundNotificationsBlocked := true
+firewallProfileDomain.SetInboundNotificationsBlocked(&inboundNotificationsBlocked) 
+authorizedApplicationRulesFromGroupPolicyMerged := true
+firewallProfileDomain.SetAuthorizedApplicationRulesFromGroupPolicyMerged(&authorizedApplicationRulesFromGroupPolicyMerged) 
+globalPortRulesFromGroupPolicyMerged := true
+firewallProfileDomain.SetGlobalPortRulesFromGroupPolicyMerged(&globalPortRulesFromGroupPolicyMerged) 
+connectionSecurityRulesFromGroupPolicyMerged := true
+firewallProfileDomain.SetConnectionSecurityRulesFromGroupPolicyMerged(&connectionSecurityRulesFromGroupPolicyMerged) 
+outboundConnectionsBlocked := true
+firewallProfileDomain.SetOutboundConnectionsBlocked(&outboundConnectionsBlocked) 
+inboundConnectionsBlocked := true
+firewallProfileDomain.SetInboundConnectionsBlocked(&inboundConnectionsBlocked) 
+securedPacketExemptionAllowed := true
+firewallProfileDomain.SetSecuredPacketExemptionAllowed(&securedPacketExemptionAllowed) 
+policyRulesFromGroupPolicyMerged := true
+firewallProfileDomain.SetPolicyRulesFromGroupPolicyMerged(&policyRulesFromGroupPolicyMerged) 
+requestBody.SetFirewallProfileDomain(firewallProfileDomain)
+firewallProfilePublic := graphmodels.NewWindowsFirewallNetworkProfile()
+firewallEnabled := graphmodels.BLOCKED_STATEMANAGEMENTSETTING 
+firewallProfilePublic.SetFirewallEnabled(&firewallEnabled) 
+stealthModeBlocked := true
+firewallProfilePublic.SetStealthModeBlocked(&stealthModeBlocked) 
+incomingTrafficBlocked := true
+firewallProfilePublic.SetIncomingTrafficBlocked(&incomingTrafficBlocked) 
+unicastResponsesToMulticastBroadcastsBlocked := true
+firewallProfilePublic.SetUnicastResponsesToMulticastBroadcastsBlocked(&unicastResponsesToMulticastBroadcastsBlocked) 
+inboundNotificationsBlocked := true
+firewallProfilePublic.SetInboundNotificationsBlocked(&inboundNotificationsBlocked) 
+authorizedApplicationRulesFromGroupPolicyMerged := true
+firewallProfilePublic.SetAuthorizedApplicationRulesFromGroupPolicyMerged(&authorizedApplicationRulesFromGroupPolicyMerged) 
+globalPortRulesFromGroupPolicyMerged := true
+firewallProfilePublic.SetGlobalPortRulesFromGroupPolicyMerged(&globalPortRulesFromGroupPolicyMerged) 
+connectionSecurityRulesFromGroupPolicyMerged := true
+firewallProfilePublic.SetConnectionSecurityRulesFromGroupPolicyMerged(&connectionSecurityRulesFromGroupPolicyMerged) 
+outboundConnectionsBlocked := true
+firewallProfilePublic.SetOutboundConnectionsBlocked(&outboundConnectionsBlocked) 
+inboundConnectionsBlocked := true
+firewallProfilePublic.SetInboundConnectionsBlocked(&inboundConnectionsBlocked) 
+securedPacketExemptionAllowed := true
+firewallProfilePublic.SetSecuredPacketExemptionAllowed(&securedPacketExemptionAllowed) 
+policyRulesFromGroupPolicyMerged := true
+firewallProfilePublic.SetPolicyRulesFromGroupPolicyMerged(&policyRulesFromGroupPolicyMerged) 
+requestBody.SetFirewallProfilePublic(firewallProfilePublic)
+firewallProfilePrivate := graphmodels.NewWindowsFirewallNetworkProfile()
+firewallEnabled := graphmodels.BLOCKED_STATEMANAGEMENTSETTING 
+firewallProfilePrivate.SetFirewallEnabled(&firewallEnabled) 
+stealthModeBlocked := true
+firewallProfilePrivate.SetStealthModeBlocked(&stealthModeBlocked) 
+incomingTrafficBlocked := true
+firewallProfilePrivate.SetIncomingTrafficBlocked(&incomingTrafficBlocked) 
+unicastResponsesToMulticastBroadcastsBlocked := true
+firewallProfilePrivate.SetUnicastResponsesToMulticastBroadcastsBlocked(&unicastResponsesToMulticastBroadcastsBlocked) 
+inboundNotificationsBlocked := true
+firewallProfilePrivate.SetInboundNotificationsBlocked(&inboundNotificationsBlocked) 
+authorizedApplicationRulesFromGroupPolicyMerged := true
+firewallProfilePrivate.SetAuthorizedApplicationRulesFromGroupPolicyMerged(&authorizedApplicationRulesFromGroupPolicyMerged) 
+globalPortRulesFromGroupPolicyMerged := true
+firewallProfilePrivate.SetGlobalPortRulesFromGroupPolicyMerged(&globalPortRulesFromGroupPolicyMerged) 
+connectionSecurityRulesFromGroupPolicyMerged := true
+firewallProfilePrivate.SetConnectionSecurityRulesFromGroupPolicyMerged(&connectionSecurityRulesFromGroupPolicyMerged) 
+outboundConnectionsBlocked := true
+firewallProfilePrivate.SetOutboundConnectionsBlocked(&outboundConnectionsBlocked) 
+inboundConnectionsBlocked := true
+firewallProfilePrivate.SetInboundConnectionsBlocked(&inboundConnectionsBlocked) 
+securedPacketExemptionAllowed := true
+firewallProfilePrivate.SetSecuredPacketExemptionAllowed(&securedPacketExemptionAllowed) 
+policyRulesFromGroupPolicyMerged := true
+firewallProfilePrivate.SetPolicyRulesFromGroupPolicyMerged(&policyRulesFromGroupPolicyMerged) 
+requestBody.SetFirewallProfilePrivate(firewallProfilePrivate)
+defenderAttackSurfaceReductionExcludedPaths := []string {
+	"Defender Attack Surface Reduction Excluded Paths value",
+}
+requestBody.SetDefenderAttackSurfaceReductionExcludedPaths(defenderAttackSurfaceReductionExcludedPaths)
+defenderGuardedFoldersAllowedAppPaths := []string {
+	"Defender Guarded Folders Allowed App Paths value",
+}
+requestBody.SetDefenderGuardedFoldersAllowedAppPaths(defenderGuardedFoldersAllowedAppPaths)
+defenderAdditionalGuardedFolders := []string {
+	"Defender Additional Guarded Folders value",
+}
+requestBody.SetDefenderAdditionalGuardedFolders(defenderAdditionalGuardedFolders)
+defenderExploitProtectionXml := []byte("zGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA==")
+requestBody.SetDefenderExploitProtectionXml(&defenderExploitProtectionXml) 
+defenderExploitProtectionXmlFileName := "Defender Exploit Protection Xml File Name value"
+requestBody.SetDefenderExploitProtectionXmlFileName(&defenderExploitProtectionXmlFileName) 
+defenderSecurityCenterBlockExploitProtectionOverride := true
+requestBody.SetDefenderSecurityCenterBlockExploitProtectionOverride(&defenderSecurityCenterBlockExploitProtectionOverride) 
+appLockerApplicationControl := graphmodels.ENFORCECOMPONENTSANDSTOREAPPS_APPLOCKERAPPLICATIONCONTROLTYPE 
+requestBody.SetAppLockerApplicationControl(&appLockerApplicationControl) 
+smartScreenEnableInShell := true
+requestBody.SetSmartScreenEnableInShell(&smartScreenEnableInShell) 
+smartScreenBlockOverrideForFiles := true
+requestBody.SetSmartScreenBlockOverrideForFiles(&smartScreenBlockOverrideForFiles) 
+applicationGuardEnabled := true
+requestBody.SetApplicationGuardEnabled(&applicationGuardEnabled) 
+applicationGuardBlockFileTransfer := graphmodels.BLOCKIMAGEANDTEXTFILE_APPLICATIONGUARDBLOCKFILETRANSFERTYPE 
+requestBody.SetApplicationGuardBlockFileTransfer(&applicationGuardBlockFileTransfer) 
+applicationGuardBlockNonEnterpriseContent := true
+requestBody.SetApplicationGuardBlockNonEnterpriseContent(&applicationGuardBlockNonEnterpriseContent) 
+applicationGuardAllowPersistence := true
+requestBody.SetApplicationGuardAllowPersistence(&applicationGuardAllowPersistence) 
+applicationGuardForceAuditing := true
+requestBody.SetApplicationGuardForceAuditing(&applicationGuardForceAuditing) 
+applicationGuardBlockClipboardSharing := graphmodels.BLOCKBOTH_APPLICATIONGUARDBLOCKCLIPBOARDSHARINGTYPE 
+requestBody.SetApplicationGuardBlockClipboardSharing(&applicationGuardBlockClipboardSharing) 
+applicationGuardAllowPrintToPDF := true
+requestBody.SetApplicationGuardAllowPrintToPDF(&applicationGuardAllowPrintToPDF) 
+applicationGuardAllowPrintToXPS := true
+requestBody.SetApplicationGuardAllowPrintToXPS(&applicationGuardAllowPrintToXPS) 
+applicationGuardAllowPrintToLocalPrinters := true
+requestBody.SetApplicationGuardAllowPrintToLocalPrinters(&applicationGuardAllowPrintToLocalPrinters) 
+applicationGuardAllowPrintToNetworkPrinters := true
+requestBody.SetApplicationGuardAllowPrintToNetworkPrinters(&applicationGuardAllowPrintToNetworkPrinters) 
+bitLockerDisableWarningForOtherDiskEncryption := true
+requestBody.SetBitLockerDisableWarningForOtherDiskEncryption(&bitLockerDisableWarningForOtherDiskEncryption) 
+bitLockerEnableStorageCardEncryptionOnMobile := true
+requestBody.SetBitLockerEnableStorageCardEncryptionOnMobile(&bitLockerEnableStorageCardEncryptionOnMobile) 
+bitLockerEncryptDevice := true
+requestBody.SetBitLockerEncryptDevice(&bitLockerEncryptDevice) 
+bitLockerRemovableDrivePolicy := graphmodels.NewBitLockerRemovableDrivePolicy()
+encryptionMethod := graphmodels.AESCBC256_BITLOCKERENCRYPTIONMETHOD 
+bitLockerRemovableDrivePolicy.SetEncryptionMethod(&encryptionMethod) 
+requireEncryptionForWriteAccess := true
+bitLockerRemovableDrivePolicy.SetRequireEncryptionForWriteAccess(&requireEncryptionForWriteAccess) 
+blockCrossOrganizationWriteAccess := true
+bitLockerRemovableDrivePolicy.SetBlockCrossOrganizationWriteAccess(&blockCrossOrganizationWriteAccess) 
+requestBody.SetBitLockerRemovableDrivePolicy(bitLockerRemovableDrivePolicy)
+
+result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+
+
+```

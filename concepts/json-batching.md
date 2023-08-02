@@ -141,7 +141,7 @@ A JSON batch request body consists of a single JSON object with one required pro
 
 | Property | Description |
 |----------|-------------|
-| id       | Required. A correlation value to associate individual responses with requests. This value allows the server to process requests in the batch in the most efficient order.    |
+| id       | Required. String. A correlation value to associate individual responses with requests. This value allows the server to process requests in the batch in the most efficient order. Not case-sensitive.   |
 | method   | Required. The HTTP method.    |
 | url      | Required. The relative resource URL the individual request would typically be sent to. Therefore, while the absolute URL is `https://graph.microsoft.com/v1.0/users`, this url is `/users`. |
 | headers   | Optional but required when the **body** is specified. A JSON object with the key/value pair for the headers. For example, when the **ConsistencyLevel** header is required, this property would be represented as `"headers": {"ConsistencyLevel": "eventual"}`. When the **body** is supplied, a **Content-Type** header must be included.    |
@@ -205,7 +205,7 @@ An additional use case for JSON batching is to bypass URL length limitations. In
 
 JSON batch requests are currently limited to 20 individual requests in addition to the following limitations:
 
-* Depending on the APIs that are part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
+* Depending on the APIs that are part of the batch request, the [underlying services impose their own throttling limits](throttling-limits.md) that affect applications that use Microsoft Graph to access them.
 * Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of `429`.
 
 For more information, see [Throttling and batching][throttling-and-batching].

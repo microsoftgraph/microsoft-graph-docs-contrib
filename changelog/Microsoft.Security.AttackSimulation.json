@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "e9e76f8b-a4c0-4e1e-8f49-1c99dfa89219",
+          "ApiChange": "Property",
+          "ChangedApiName": "outOfOfficeDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **outOfOfficeDays** property to the [attackSimulationUser](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationUser?view=graph-rest-beta) resource.",
+          "Target": "attackSimulationUser"
+        },
+        {
+          "Id": "e9e76f8b-a4c0-4e1e-8f49-1c99dfa89219",
+          "ApiChange": "Property",
+          "ChangedApiName": "latestSimulationActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the **latestSimulationActivity** property to the [userSimulationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userSimulationDetails?view=graph-rest-beta) resource.",
+          "Target": "userSimulationDetails"
+        }
+      ],
+      "Id": "e9e76f8b-a4c0-4e1e-8f49-1c99dfa89219",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-12T05:22:05.5222525Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
           "ApiChange": "Enum type",
           "ChangedApiName": "accountTargetContentType",

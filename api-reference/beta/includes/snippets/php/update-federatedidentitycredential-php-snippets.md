@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new FederatedIdentityCredential();
 $requestBody->setName('testing02');
@@ -18,11 +18,11 @@ $requestBody->setSubject('a7d388c3-5e3f-4959-ac7d-786b3383006a');
 
 $requestBody->setDescription('Updated description');
 
-$requestBody->setAudiences(['api://AzureADTokenExchange', ]);
+$requestBody->setAudiences(['api://AzureADTokenExchange', 	]);
 
 
 
-$requestResult = $graphServiceClient->applicationsById('application-id')->federatedIdentityCredentialsById('federatedIdentityCredential-id')->patch($requestBody);
+$result = $graphServiceClient->applications()->byApplicationId('application-id')->federatedIdentityCredentials()->byFederatedIdentityCredentialId('federatedIdentityCredential-id')->patch($requestBody);
 
 
 ```

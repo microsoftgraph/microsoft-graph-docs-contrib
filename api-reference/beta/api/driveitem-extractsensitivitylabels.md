@@ -35,15 +35,15 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /drives/{drive-id}/items/{item-id}/extractSensitivityLabels
-POST /drives/{drive-id}/root:/{item-path}/extractSensitivityLabels
+POST /drives/{drive-id}/root:/{item-path}:/extractSensitivityLabels
 POST /groups/{group-id}/drive/items/{item-id}/extractSensitivityLabels
-POST /groups/{group-id}/drive/root:/{item-path}/extractSensitivityLabels
+POST /groups/{group-id}/drive/root:/{item-path}:/extractSensitivityLabels
 POST /me/drive/items/{item-id}/extractSensitivityLabels
-POST /me/drive/root:/{item-path}/extractSensitivityLabels
+POST /me/drive/root:/{item-path}:/extractSensitivityLabels
 POST /sites/{site-id}/drive/items/{item-id}/extractSensitivityLabels
-POST /sites/{site-id}/drive/root:/{item-path}/extractSensitivityLabels
+POST /sites/{site-id}/drive/root:/{item-path}:/extractSensitivityLabels
 POST /users/{user-id}/drive/items/{item-id}/extractSensitivityLabels
-POST /users/{user-id}/drive/root:/{item-path}/extractSensitivityLabels
+POST /users/{user-id}/drive/root:/{item-path}:/extractSensitivityLabels
 ```
 
 ## Request headers

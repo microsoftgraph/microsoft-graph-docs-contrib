@@ -33,6 +33,8 @@ Inherits from [governanceInsight](governanceinsight.md).
 |:---|:---|:---|
 |container|[directoryObject](../resources/directoryobject.md)| Navigation link to the container directory object. For example, to a group.|
 |member|[directoryObject](../resources/directoryobject.md)| Navigation link to a member object. For example, to a user.|
+|lastModifiedBy|[user](../resources/user.md)| Navigation link to a member object who modified the record. For example, to a user.|
+
 
 ## JSON representation
 The following is a JSON representation of the resource.

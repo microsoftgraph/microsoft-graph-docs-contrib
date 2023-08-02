@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -23,7 +23,6 @@ dataSubjectType := graphmodels.DATASUBJECTTYPE_GRAPH_MICROSOFT_DATASUBJECTTYPE
 requestBody.SetDataSubjectType(&dataSubjectType) 
 regulations := []string {
 	"String",
-
 }
 requestBody.SetRegulations(regulations)
 displayName := "String"

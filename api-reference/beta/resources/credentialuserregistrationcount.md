@@ -26,7 +26,7 @@ Represents the current state of how many users in your organization are register
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | id | String | The unique identifier for the activity. Read-only. |
-| totalUserCount | Int64 | Provides the total user count in the tenant. |
+| totalUserCount | Int64 | Provides the count of users with **accountEnabled** set to `true` in the tenant. |
 | userRegistrationCounts | [userRegistrationCount](userregistrationcount.md) collection | A collection of registration count and status information for users in your tenant. |
 
 ## Relationships

@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	Classification = "TruePositive"
-	Determination = "MultiStagedAttack"
-	CustomTags = @(
+	classification = "TruePositive"
+	determination = "MultiStagedAttack"
+	customTags = @(
 		"Demo"
 	)
 }

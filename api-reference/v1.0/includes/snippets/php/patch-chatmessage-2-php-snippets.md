@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();
 $requestBody->setMessageType(new ChatMessageType('message'));
@@ -33,7 +33,7 @@ $fromUser->setId('6b3f3c54-d09c-4fdd-b146-9b514a8a4f40');
 $fromUser->setDisplayName('Lam Cong');
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+		'userIdentityType' => 'aadUser', 
 ];
 $fromUser->setAdditionalData($additionalData);
 
@@ -41,7 +41,7 @@ $fromUser->setAdditionalData($additionalData);
 
 $from->setUser($fromUser);
 $additionalData = [
-'conversation' => 		null,
+		'conversation' => 		null,
 ];
 $from->setAdditionalData($additionalData);
 
@@ -55,7 +55,7 @@ $body->setContent('<div><div>\n<div>\n<div>\n<div>\n<div><at id=\"0\">Raghav</at
 
 
 $requestBody->setBody($body);
-$requestBody->setAttachments([]);
+$requestBody->setAttachments([	]);
 
 $mentionsChatMessageMention1 = new ChatMessageMention();
 $mentionsChatMessageMention1->setId(0);
@@ -75,7 +75,7 @@ $mentionsChatMessageMention1MentionedUser->setId('f1b66449-b46d-49b0-9c3c-53c102
 $mentionsChatMessageMention1MentionedUser->setDisplayName('Lam Cong');
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+		'userIdentityType' => 'aadUser', 
 ];
 $mentionsChatMessageMention1MentionedUser->setAdditionalData($additionalData);
 
@@ -98,7 +98,7 @@ $mentionsChatMessageMention2MentionedApplication->setId('03a02232-d8f5-4970-a77e
 $mentionsChatMessageMention2MentionedApplication->setDisplayName('TestGlobalBot');
 
 $additionalData = [
-'applicationIdentityType' => 'bot', 
+		'applicationIdentityType' => 'bot', 
 ];
 $mentionsChatMessageMention2MentionedApplication->setAdditionalData($additionalData);
 
@@ -120,9 +120,11 @@ $requestBody->setMentions($mentionsArray);
 
 $requestBody->setReactions([]);
 
+$requestBody->setMessageHistory([]);
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
+
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->byChatMessageId('chatMessage-id')->patch($requestBody);
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "person resource type"
-description: "An aggregation of information about a person from across mail and contacts. People can be local contacts or your organization's directory, and people from recent communications (such as email)."
+description: "Represents an aggregation of information about a person from across mail and contacts."
 author: "simonhult"
 ms.localizationpriority: high
 ms.prod: "insights"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-An aggregation of information about a person from across mail and contacts. People can be local contacts or your organization's directory, and people from recent communications (such as email).
+Represents an aggregation of information about a person from across mail and contacts. People can be local contacts or your organization's directory, and people from recent communications (such as email).
 
 ## Methods
 
@@ -30,7 +30,7 @@ An aggregation of information about a person from across mail and contacts. Peop
 |givenName|String|The person's given name.|
 |id|String|The person's unique identifier. Read-only.|
 |imAddress|String|The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user. Read-only.|
-|isFavorite|Boolean|`true` if the user has flagged this person as a favorite.|
+|isFavorite|Boolean|`True` if the user has flagged this person as a favorite.|
 |jobTitle|String|The person's job title.|
 |officeLocation|String|The location of the person's office.|
 |personNotes|String|Free-form notes that the user has taken about this person.|
@@ -61,28 +61,27 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "birthday": "string",
-  "companyName": "string",
-  "department": "string",
-  "displayName": "string",
+  "birthday": "String",
+  "companyName": "String",
+  "department": "String",
+  "displayName": "String",
   "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredEmailAddress"}],
-  "givenName": "string",
-  "id": "string (identifier)",
-  "imAddress": "string",
-  "isFavorite": true,
-  "jobTitle": "string",
-  "officeLocation": "string",
-  "personNotes": "string",
+  "givenName": "String",
+  "id": "String (identifier)",
+  "imAddress": "String",
+  "isFavorite": "Boolean",
+  "jobTitle": "String",
+  "officeLocation": "String",
+  "personNotes": "String",
   "personType": {"@odata.type": "microsoft.graph.personType"},
   "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "postalAddresses": [{"@odata.type": "microsoft.graph.location"}],
-  "profession": "string",
-  "surname": "string",
-  "userPrincipalName": "string",
+  "profession": "String",
+  "surname": "String",
+  "userPrincipalName": "String",
   "websites": [{"@odata.type": "microsoft.graph.website"}],
-  "yomiCompany": "string"
+  "yomiCompany": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

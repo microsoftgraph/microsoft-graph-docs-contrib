@@ -120,7 +120,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailFolders/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "displayName": "displayName-value",

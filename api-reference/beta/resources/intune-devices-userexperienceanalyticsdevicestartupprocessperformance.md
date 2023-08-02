@@ -29,15 +29,15 @@ The user experience analytics device startup process performance.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics device startup process performance.|
-|processName|String|User experience analytics device startup process name.|
-|productName|String|The user experience analytics device startup process product name.|
-|publisher|String|The User experience analytics device startup process publisher.|
-|deviceCount|Int64|User experience analytics device startup process summarized count.|
-|medianImpactInMs|Int32|User experience analytics device startup process median impact in milliseconds.|
-|totalImpactInMs|Int32|User experience analytics device startup process total impact in milliseconds.|
-|medianImpactInMs2|Int64|User experience analytics device startup process median impact in milliseconds.|
-|totalImpactInMs2|Int64|User experience analytics device startup process total impact in milliseconds.|
+|id|String|The unique identifier of the user experience analytics device startup process performance. Supports: $select, $OrderBy. Read-only.|
+|processName|String|The name of the startup process. Examples: outlook, excel. Supports: $select, $OrderBy. Read-only.|
+|productName|String|The product name of the startup process. Examples: Microsoft Outlook, Microsoft Excel. Supports: $select, $OrderBy. Read-only.|
+|publisher|String|The publisher of the startup process. Examples: Microsoft Corporation, Contoso Corp. Supports: $select, $OrderBy. Read-only.|
+|deviceCount|Int64|The count of devices which initiated this process on startup. Supports: $filter, $select, $OrderBy. Read-only.|
+|medianImpactInMs|Int64|The median impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.|
+|totalImpactInMs|Int64|The total impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.|
+|medianImpactInMs2|Int64|The median impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.|
+|totalImpactInMs2|Int64|The total impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.|
 
 ## Relationships
 None

@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	UserId = "c5d0c76b-80c4-481c-be50-923cd8d680a1"
-	SharedTimeOff = @{
-		TimeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
-		StartDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
-		EndDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
-		Theme = "white"
+	userId = "c5d0c76b-80c4-481c-be50-923cd8d680a1"
+	sharedTimeOff = @{
+		timeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
+		startDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
+		endDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
+		theme = "white"
 	}
-	DraftTimeOff = @{
-		TimeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
-		StartDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
-		EndDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
-		Theme = "pink"
+	draftTimeOff = @{
+		timeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
+		startDateTime = [System.DateTime]::Parse("2019-03-11T07:00:00Z")
+		endDateTime = [System.DateTime]::Parse("2019-03-12T07:00:00Z")
+		theme = "pink"
 	}
 }
 

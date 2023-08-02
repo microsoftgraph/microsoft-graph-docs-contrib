@@ -32,6 +32,8 @@ Defines authentication methods and the users that are allowed to use them to sig
 |policyMigrationState|authenticationMethodsPolicyMigrationState|The state of migration of the authentication methods policy from the legacy multifactor authentication and self-service password reset (SSPR) policies. The possible values are: <br/><li>`premigration` - means the authentication methods policy is used for authentication only, legacy policies are respected. <li>`migrationInProgress` - means the authentication methods policy is used for both authenication and SSPR, legacy policies are respected. <li>`migrationComplete` - means the authentication methods policy is used for authentication and SSPR, legacy policies are ignored. <li>`unknownFutureValue` - Evolvable enumeration sentinel value. Do not use. |
 |reconfirmationInDays|Int32|Days before the user will be asked to reconfirm their method. |
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to remind users to set up targeted authentication methods.|
+|reportSuspiciousActivitySettings|[reportSuspiciousActivitySettings](../resources/reportsuspiciousactivitysettings.md)|Enable users to report unexpected voice call or phone app notification multi-factor authentication prompts as suspicious.|
+|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|Prompt users with their most-preferred credential for multifactor authentication.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -51,13 +53,19 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.authenticationMethodsPolicy",
-  "id": "String (identifier)",
-  "displayName": "String",
   "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "policyVersion": "String",
   "registrationEnforcement": {
     "@odata.type": "microsoft.graph.registrationEnforcement"
-  } 
+  },
+    "reportSuspiciousActivitySettings": {
+    "@odata.type": "microsoft.graph.reportSuspiciousActivitySettings"
+  },
+  "systemCredentialPreferences": {
+    "@odata.type": "microsoft.graph.systemCredentialPreferences"
+  }
 }
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DelegatedPermissionClassification();
 $requestBody->setPermissionId('e1fe6dd8-ba31-4d61-89e7-88639da4683d');
@@ -18,7 +18,7 @@ $requestBody->setClassification(new PermissionClassificationType('low'));
 
 
 
-$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->delegatedPermissionClassifications()->post($requestBody);
+$result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->delegatedPermissionClassifications()->post($requestBody);
 
 
 ```

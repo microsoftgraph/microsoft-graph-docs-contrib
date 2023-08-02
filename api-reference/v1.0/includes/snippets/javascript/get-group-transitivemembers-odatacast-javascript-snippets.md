@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let group = await client.api('/groups/{id}/transitivemembers/microsoft.graph.group')
+let group = await client.api('/groups/{id}/transitiveMembers/microsoft.graph.group')
 	.header('ConsistencyLevel','eventual')
 	.get();
 

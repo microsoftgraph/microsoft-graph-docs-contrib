@@ -7,7 +7,7 @@ ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# conditionalAccessRulesSatisfied resource type
+# conditionalAccessRuleSatisfied resource type
 
 Namespace: microsoft.graph
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -30,12 +30,10 @@ emailAddress.SetName(&name)
 
 emailAddresses := []graphmodels.EmailAddressable {
 	emailAddress,
-
 }
 requestBody.SetEmailAddresses(emailAddresses)
 businessPhones := []string {
 	"+1 732 555 0102",
-
 }
 requestBody.SetBusinessPhones(businessPhones)
 

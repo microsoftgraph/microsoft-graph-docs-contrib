@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CrossTenantAccessPolicyConfigurationDefault();
 $b2bCollaborationOutbound = new CrossTenantAccessPolicyB2BSetting();
@@ -45,7 +45,7 @@ $b2bCollaborationOutbound->setApplications($b2bCollaborationOutboundApplications
 $requestBody->setB2bCollaborationOutbound($b2bCollaborationOutbound);
 
 
-$requestResult = $graphServiceClient->policies()->crossTenantAccessPolicy()->default()->patch($requestBody);
+$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->default()->patch($requestBody);
 
 
 ```

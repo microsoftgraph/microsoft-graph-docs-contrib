@@ -4,7 +4,7 @@ description: "Represents an abstract type that contains resources for attack sim
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
 # securityReportsRoot resource type

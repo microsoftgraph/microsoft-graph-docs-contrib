@@ -7,36 +7,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	DisplayName = "Test create"
-	DescriptionForAdmins = "New scheduled access review"
-	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
-	Scope = @{
+	displayName = "Test create"
+	descriptionForAdmins = "New scheduled access review"
+	descriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
+	scope = @{
 		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
-		QueryType = "MicrosoftGraph"
+		query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+		queryType = "MicrosoftGraph"
 	}
-	Reviewers = @(
+	reviewers = @(
 		@{
-			Query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
-			QueryType = "MicrosoftGraph"
+			query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+			queryType = "MicrosoftGraph"
 		}
 	)
-	Settings = @{
-		MailNotificationsEnabled = $true
-		ReminderNotificationsEnabled = $true
-		JustificationRequiredOnApproval = $true
-		DefaultDecisionEnabled = $false
-		DefaultDecision = "None"
-		InstanceDurationInDays = 1
-		RecommendationsEnabled = $true
-		Recurrence = @{
-			Pattern = @{
-				Type = "weekly"
-				Interval = 1
+	settings = @{
+		mailNotificationsEnabled = $true
+		reminderNotificationsEnabled = $true
+		justificationRequiredOnApproval = $true
+		defaultDecisionEnabled = $false
+		defaultDecision = "None"
+		instanceDurationInDays = 1
+		recommendationsEnabled = $true
+		recurrence = @{
+			pattern = @{
+				type = "weekly"
+				interval = 1
 			}
-			Range = @{
-				Type = "noEnd"
-				StartDate = "2020-09-08T12:02:30.667Z"
+			range = @{
+				type = "noEnd"
+				startDate = "2020-09-08T12:02:30.667Z"
 			}
 		}
 	}

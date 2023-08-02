@@ -6,45 +6,54 @@ metadata:
   audience: Developer
   level: Beginner
   displayType: one-column
-  ms.date: 04/30/2021
-  author: mecampos
+  ms.date: 07/26/2023
+  author: jasonjoh
   ms.topic: tutorial
-  ms.custom: scenarios:getting-started, languages:.NET Core, C 
+  ms.custom: scenarios:getting-started, languages:.NET, C#
   ms.prod: search
 items:
-  - title: Build your first custom Microsoft Graph connector
-    durationInMinutes: 10
+  - durationInMinutes: 3
     content: |
-      [!INCLUDE [](includes/connecting-external-content-build-quickstart-01-intro.md)]
-  - title: Register the application in the portal
-    durationInMinutes: 10
+      [!INCLUDE [](includes/connecting-external-content/01-intro.md)]
+  - title: Register the app in the portal
+    durationInMinutes: 3
     content: |
-      [!INCLUDE [](includes/connecting-external-content-build-quickstart-02-register-app.md)]
-  - title: Build the application
-    durationInMinutes: 10
+      [!INCLUDE [](includes/connecting-external-content/02-register-app.md)]
+  - title: Create the application
+    durationInMinutes: 5
     content: |
-      [!INCLUDE [](includes/connecting-external-content-build-quickstart-03-build-app.md)]
-  - title: Configure the application
-    durationInMinutes: 20
+      [!INCLUDE [](includes/connecting-external-content/03-build-app.md)]
+  - title: Create the database
+    durationInMinutes: 5
     content: |
-      [!INCLUDE [](includes/connecting-external-content-build-quickstart-04-configure-app.md)]
-  - title: Create the database from CSV
-    durationInMinutes: 10
+      [!INCLUDE [](includes/connecting-external-content/04-create-db.md)]
+  - title: Configure Microsoft Graph
+    durationInMinutes: 3
     content: |
-      [!INCLUDE [](includes/connecting-external-content-build-quickstart-05-create-db.md)]
+      [!INCLUDE [](includes/connecting-external-content/05-configure-graph.md)]
+  - title: Manage connections
+    durationInMinutes: 5
+    content: |
+      [!INCLUDE [](includes/connecting-external-content/06-connections.md)]
+  - title: Manage schema
+    durationInMinutes: 5
+    content: |
+      [!INCLUDE [](includes/connecting-external-content/07-schema.md)]
+  - title: Manage items
+    durationInMinutes: 5
+    content: |
+      [!INCLUDE [](includes/connecting-external-content/08-items.md)]
   - title: Run the application
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](includes/connecting-external-content-build-quickstart-06-run-app.md)]
+      [!INCLUDE [](includes/connecting-external-content/09-run-app.md)]
   - title: Surface the data in search
-    durationInMinutes: 10
+    durationInMinutes: 5
     content: |
-      [!INCLUDE [](includes/connecting-external-content-build-quickstart-07-surface-data.md)]
+      [!INCLUDE [](includes/connecting-external-content/10-surface-data.md)]
   - title: Search for results
-    durationInMinutes: 10
+    durationInMinutes: 5
     content: |
-      [!INCLUDE [](includes/connecting-external-content-build-quickstart-08-search-results.md)]
-  - title: Summary
-    durationInMinutes: 10
-    content: |
-      [!INCLUDE [](includes/connecting-external-content-build-quickstart-09-summary.md)]
+      [!INCLUDE [](includes/connecting-external-content/11-search-results.md)]
+  - content: |
+      [!INCLUDE [](includes/connecting-external-content/12-completed.md)]

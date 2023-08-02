@@ -8,11 +8,11 @@ ms.localizationpriority: medium
 
 ### Migrate to the Azure Resource Manager (ARM) PIM API for Azure resource roles
 
-The PIM v3 API to manage Azure resources is now available through the Azure Resource Manager (ARM) REST API. Use this guidance to migrate your existing APIs to the new [Azure Resource Manager (ARM) APIs](/rest/api/authorization/privileged-role-eligibility-rest-sample).
+The PIM iteration 3 API to manage Azure resources is now available through the Azure Resource Manager (ARM) REST API. Use this guidance to migrate your existing APIs to the new [Azure Resource Manager (ARM) APIs](/rest/api/authorization/privileged-role-eligibility-rest-sample).
 
 The following table describes how the new ARM APIs map to the existing APIs.
 
-| Operation | Microsoft Graph API (PIM v2) | ARM API (PIM v3) |
+| Operation | Microsoft Graph API (iteration 2) | ARM API (iteration 3) |
 | --------- | ------------ | -------------- |
 | Register a resource | [Register](/graph/api/governanceresource-register) | ARM doesn't require resources to be explicitly registered or onboarded to be managed. You can perform operations by directly using the resource scope. |
 | List role definitions | [List Role definitions](/graph/api/governanceroledefinition-list) | [Role Definitions - List](/rest/api/authorization/role-definitions/list) |

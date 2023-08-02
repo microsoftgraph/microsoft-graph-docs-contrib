@@ -2,7 +2,7 @@
 title: "fido2CombinationConfiguration resource type"
 description: "Configuration to require specific FIDO2 key types in an authentication strength"
 ms.localizationpriority: medium
-author: "mmcla"
+author: "InbarckMS"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the listeners, such as Azure Logic Apps and Azure Functions, that are triggered by the corresponding events in an sign-in event.
+Represents the [authentication event listeners](authenticationeventlistener.md), such as Azure Logic Apps and Azure Functions, that are triggered by the corresponding events in a [sign-in event](../resources/signin.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|eventType|authenticationEventType|The type of authentication event that triggered the custom extension request. The possible values are: `tokenIssuanceStart`, `pageRenderStart`, `unknownFutureValue`.|
-|executedListenerId|String|ID of the Event Listener that was executed.|
+|eventType|authenticationEventType|The type of authentication event that triggered the custom authentication extension request. The possible values are: `tokenIssuanceStart`, `pageRenderStart`, `unknownFutureValue`.|
+|executedListenerId|String|ID of the [authentication event listener](authenticationeventlistener.md) that was executed.|
 |handlerResult|[authenticationEventHandlerResult](../resources/authenticationeventhandlerresult.md)|The result from the listening client, such as an Azure Logic App and Azure Functions, of this authentication event.|
 
 ## Relationships

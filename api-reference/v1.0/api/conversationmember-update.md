@@ -57,6 +57,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "update_conversation_member"
 } -->
+
 ```http
 PATCH https://graph.microsoft.com/V1.0/teams/{id}/channels/{id}/members/{id}
 content-type: application/json

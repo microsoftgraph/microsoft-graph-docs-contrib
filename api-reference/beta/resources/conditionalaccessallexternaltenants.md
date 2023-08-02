@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessAllExternalTenants resource type"
-description: "Represents all external tenants in the policy scope."
+description: "Represents all external tenants in a policy scope."
 ms.localizationpriority: medium
 author: "sandeo"
 ms.prod: "identity-and-sign-in"
@@ -13,13 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Inherits from [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md) resource. Represents all external tenants in the policy scope.
+Represents all external tenants in a policy scope.
+
+Inherits from [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| membershipKind |conditionalAccessExternalTenantsMembershipKind | Represents the membership kind. Supported values are: `all`, [`enumerated`](conditionalaccessenumeratedexternaltenants.md), and `unknownFutureValue`. |
+| membershipKind |conditionalAccessExternalTenantsMembershipKind | The membership kind. Possible values are: `all`, `enumerated`, `unknownFutureValue`. The `enumerated` member references an [conditionalAccessEnumeratedExternalTenants](conditionalaccessenumeratedexternaltenants.md) object. Inherited from [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md). |
 
 ## Relationships
 

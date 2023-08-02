@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	ClientContext = "785f4929-92ca-497b-863f-c778c77c9758"
+	clientContext = "785f4929-92ca-497b-863f-c778c77c9758"
 }
 
 Add-MgCommunicationCallLargeGalleryView -CallId $callId -BodyParameter $params

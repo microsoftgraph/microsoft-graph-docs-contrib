@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Notes
+Import-Module Microsoft.Graph.Beta.Notes
 
 $params = @{
-	DisplayName = "My Private notebook"
+	displayName = "My Private notebook"
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserOnenoteNotebook -UserId $userId -BodyParameter $params
+New-MgBetaUserOnenoteNotebook -UserId $userId -BodyParameter $params
 
 ```

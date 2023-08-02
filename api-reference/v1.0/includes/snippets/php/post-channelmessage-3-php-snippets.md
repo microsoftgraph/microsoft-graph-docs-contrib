@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();
-$requestBody->setCreatedDateTime(new DateTime('2019-02-04T19:58:15.511Z'));
+$requestBody->setCreatedDateTime(new \DateTime('2019-02-04T19:58:15.511Z'));
 
 $from = new ChatMessageFromIdentitySet();
 $fromUser = new Identity();
@@ -19,7 +19,7 @@ $fromUser->setId('id-value');
 $fromUser->setDisplayName('John Doe');
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+		'userIdentityType' => 'aadUser', 
 ];
 $fromUser->setAdditionalData($additionalData);
 
@@ -41,7 +41,7 @@ $hostedContentsChatMessageHostedContent1->setContentBytes(base64_decode('iVBORw0
 $hostedContentsChatMessageHostedContent1->setContentType('image/png');
 
 $additionalData = [
-'@microsoft.graph.temporaryId' => '1', 
+		'@microsoft.graph.temporaryId' => '1', 
 ];
 $hostedContentsChatMessageHostedContent1->setAdditionalData($additionalData);
 
@@ -53,7 +53,7 @@ $requestBody->setHostedContents($hostedContentsArray);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->post($requestBody);
 
 
 ```

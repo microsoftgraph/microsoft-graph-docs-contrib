@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates the result of an API request to the custom extension endpoint. This object is used by the **appliedEventListeners** object of [sign-ins](../resources/signin.md).
+Indicates the result of an API request to the [custom authentication extension](customauthenticationextension.md) endpoint. This object is used by the **appliedEventListeners** object of [sign-ins](../resources/signin.md).
 
 Inherits from [authenticationEventHandlerResult](../resources/authenticationeventhandlerresult.md).
 

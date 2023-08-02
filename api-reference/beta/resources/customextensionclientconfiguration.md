@@ -1,7 +1,7 @@
 ---
 title: "customExtensionClientConfiguration resource type"
 description: "HTTP connection settings that define how long Azure AD can wait for a a response from a logic app before it shuts down the connection. Only timeoutInMilliseconds is supported."
-author: "currenmehta"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-HTTP connection settings that define how long Azure AD can wait for a a response from a logic app before it shuts down the connection when trying to trigger the logic app. Only **timeoutInMilliseconds** is supported.
+Connection settings that define how long Azure AD can wait for a a response from an external app before it shuts down the connection when trying to trigger the external app. Only **timeoutInMilliseconds** is supported.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|timeoutInMilliseconds|Int32|The max duration in milliseconds that Azure AD will wait for a response from the logic app before it shuts down the connection. The valid range is between `200` and `2000` milliseconds. Default duration is `1000`.|
+|timeoutInMilliseconds|Int32|The max duration in milliseconds that Azure AD will wait for a response from the external app before it shuts down the connection. The valid range is between `200` and `2000` milliseconds. Default duration is `1000`.|
 
 ## Relationships
 None.

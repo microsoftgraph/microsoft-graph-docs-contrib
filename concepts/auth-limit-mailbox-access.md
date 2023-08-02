@@ -41,18 +41,19 @@ To configure an application access policy and limit the scope of application per
 3.	Create an application access policy. 
 
     Run the following command, replacing the arguments for **AppId**, **PolicyScopeGroupId**, and **Description**.
-    ```sh 
+    ```powershell 
     New-ApplicationAccessPolicy -AppId e7e4dbfc-046f-4074-9b3b-2ae8f144f59b -PolicyScopeGroupId EvenUsers@contoso.com -AccessRight RestrictAccess -Description "Restrict this app to members of distribution group EvenUsers."
     ```
 4.	Test the newly created application access policy.
 
     Run the following command, replacing the arguments for **Identity** and **AppId**.
-    ```sh
+    ```powershell
     Test-ApplicationAccessPolicy -Identity user1@contoso.com -AppId e7e4dbfc-046-4074-9b3b-2ae8f144f59b 
     ```
     The output of this command will indicate whether the app has access to User1’s mailbox.
 
->**Note:** Changes to application access policies can take longer than 1 hour to take effect in Microsoft Graph REST API calls, even when `Test-ApplicationAccessPolicy` shows positive results.
+> [!NOTE]
+> Changes to application access policies can take longer than 1 hour to take effect in Microsoft Graph REST API calls, even when `Test-ApplicationAccessPolicy` shows positive results.
 
 ## Supported permissions and additional resources
 

@@ -13,7 +13,8 @@ const client = Client.init(options);
 const permission = {
   type: 'view',
   password: 'ThisIsMyPrivatePassword',
-  scope: 'anonymous'
+  scope: 'anonymous',
+  retainInheritedPermissions: false
 };
 
 await client.api('/me/drive/items/{item-id}/createLink')
