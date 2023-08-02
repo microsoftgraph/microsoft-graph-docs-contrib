@@ -45,7 +45,7 @@ The following table shows the properties that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsappdefinition.md)|Set of resource-specific permissions that are being consented to.(optinal)|
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsappdefinition.md)|Set of resource-specific permissions that are being consented to. Optional.|
 
 > **Note**: The permissions consented to during the install must be the same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsappdefinition.md) of the app. To get the application and delegated resource-specific permissions, see [List apps installed in the personal scope of a user](../api/userteamwork-list-installedapps.md). If only delegated resource-specific permissions are present in the **teamsAppDefinition**, then the permissions can be omitted from the request body.
 
