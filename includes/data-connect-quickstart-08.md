@@ -44,15 +44,15 @@ Before you proceed, make sure that you've completed the steps to build your firs
     - Under **Data**, select **Query1** to expand the columns and choose the properties you want to visualize.
     - Under **Visualizations**, select the **Key Influencers** option to visualize the data.
     
-> [!NOTE]
-> In this example, you can determine whether users read the messages sent by a department in your organization by analyzing every **toRecipientName** and the **isRead** property.
+    > [!NOTE]
+    > In this example, you can determine whether users read the messages sent by a department in your organization by analyzing every **toRecipientName** and the **isRead** property.
 
     ![A screenshot that shows all the columns with content presented in a table in Power BI.](../concepts/images/data-connect-pbi-key-influencers.png)
 
 8. You can now see the JSON data from the Messages_v1 data set from Microsoft Graph Data Connect in a Power BI report.
 
-> [!NOTE]
-> You can choose the data connectivity mode (**DirectQuery** or **Import**) depending on your data size and query requirements. We recommend that you use **DirectQuery** in this tutorial.
+    > [!NOTE]
+    > You can choose the data connectivity mode (**DirectQuery** or **Import**) depending on your data size and query requirements. We recommend that you use **DirectQuery** in this tutorial.
 
 ## See also
 - For solution templates that use Microsoft Graph Data Connect built in Power BI, see the [Data Connect solutions](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions) repo in GitHub.
