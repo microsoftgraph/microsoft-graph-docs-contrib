@@ -39,7 +39,7 @@ PATCH /planner/tasks/{id}/bucketTaskBoardFormat
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|orderHint|String|Hint used to order tasks in the bucket view of the task board. For details about the supported format, see [Using order hints in Planner](planner-order-hint-format.md).|
+|orderHint|String|Hint used to order tasks in the bucket view of the task board. For details about the supported format, see [Using order hints in Planner](../resources/planner-order-hint-format.md).|
 
 
 ## Response
