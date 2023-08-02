@@ -18,6 +18,8 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
+    {
+      "ChangeList": [
         {
           "Id": "3d99b5f0-e0dd-4a84-a278-b8afa35e33fc",
           "ApiChange": "Enumeration",
