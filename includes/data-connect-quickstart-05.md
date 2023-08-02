@@ -46,7 +46,7 @@ Specify the datasets that the app registration needs to query. To learn more abo
 
 ### Review and create
 
-5. Once completed, click **Review + Create**, and then click **Create**.
+5. Choose **Review + Create**, and then **Create**.
 
     ![A screenshot that shows the summary page for the Review + Create step.](../concepts/images/data-connect-register-app-4.png)
 
