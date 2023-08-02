@@ -134,10 +134,12 @@ Content-Type: application/json
       "qualityUpdateCadence": "monthly",
       "cveSeverityInformation": {
         "maxSeverity": "critical",
-        "maxBaseScore": 9.8, 
+        "maxBaseScore": 9.8,
         "exploitedCves": [
-          "number": "CVE-2023-32046",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-32046"
+          {
+            "number": "CVE-2023-32046",
+            "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-32046"
+          }
         ]
       }
     }
