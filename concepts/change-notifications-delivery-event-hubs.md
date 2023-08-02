@@ -167,6 +167,21 @@ Before you can receive the notifications in your application, you'll need to cre
     ]
 }
 ```
+### Subscriptions for rich notifications with large payloads
+Event Hubs' maximum message size is 1MB.  When using [rich notifications](https://learn.microsoft.com/en-us/graph/webhooks-with-resource-data?tabs=csharp) you might expect notifications that will exceeed this 1MB limit.  To receive notifications larger than 1MB through Event Hubs, you must also add a blob storage account to your subscription request.
+
+#### Setup storage and create subscription
+1.  [Create a storage account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
+2.  Create a container in that storage account named "microsoft-graph-change-notifications"
+3.  On the storage account page, go to Access Keys, copy the connection string
+4.  Add this connection string in the keyvault and give this a name (this is the secret name).
+5.  Create (or recreate) your subscription, now including the following **blobStoreUrl** property:
+
+**blobStoreUrl**:  "https://&lt;azurekeyvaultname&gt;.vault.azure.net/secrets/&lt;secretname&gt;?tenantId=&lt;domainname&gt"
+
+#### Receiving notifications
+When Event Hubs receives a notification payload that is larger than 1 MB, the Event Hubs notification will not contain resource, resourceData and EncryptedContent like a normal Rich Notification would. The Event Hubs notification will contain an "additionalPayloadStorageId" GUID that points to the blob in your storage account where these properties have been stored.
+
 
 ### What happens if the Microsoft Graph Change Tracking application is missing?
 
