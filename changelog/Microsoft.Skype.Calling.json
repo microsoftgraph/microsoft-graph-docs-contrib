@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatRestrictions](https://learn.microsoft.com/en-us/graph/api/resources/chatRestrictions?view=graph-rest-beta) resource type.",
+          "Target": "chatRestrictions"
+        }
+      ],
+      "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-02T00:37:15.1713516Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "08d678cc-e60a-4817-8164-764f1f1367e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the `chatRestrictions` property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "08d678cc-e60a-4817-8164-764f1f1367e8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-02T00:37:15.1717242Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5bd55826-eb41-4116-820d-8629374e4ceb",
           "ApiChange": "Property",
           "ChangedApiName": "anonymizeIdentityForRoles",
