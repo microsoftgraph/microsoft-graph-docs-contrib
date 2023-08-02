@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-management terms-and-conditions acceptance-statuses create --terms-and-conditions-id {termsAndConditions-id} --body '{\
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",\
   "userDisplayName": "User Display Name value",\

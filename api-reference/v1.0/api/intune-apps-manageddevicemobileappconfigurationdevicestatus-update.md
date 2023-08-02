@@ -108,10 +108,6 @@ Content-length: 445
 [!INCLUDE [sample-code](../includes/snippets/php/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

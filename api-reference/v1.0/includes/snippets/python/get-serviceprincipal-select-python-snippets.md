@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 query_params = ServicePrincipalRequestBuilder.ServicePrincipalRequestBuilderGetQueryParameters(
-		select = ["id","appId","displayName","appRoles","oauth2PermissionScopes"],
+		select = ["id","appId","displayName","appRoles","oauth2PermissionScopes","resourceSpecificApplicationPermissions"],
 )
 
 request_configuration = ServicePrincipalRequestBuilder.ServicePrincipalRequestBuilderGetRequestConfiguration(

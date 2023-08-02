@@ -38,7 +38,7 @@ requestBody.SetAutomaticallyUpdateApps(&automaticallyUpdateApps)
 countryOrRegion := "Country Or Region value"
 requestBody.SetCountryOrRegion(&countryOrRegion) 
 
-result, err := graphClient.DeviceAppManagement().VppTokens().ByVppTokenId("vppToken-id").Patch(context.Background(), requestBody, nil)
+vppTokens, err := graphClient.DeviceAppManagement().VppTokens().ByVppTokenId("vppToken-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

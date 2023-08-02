@@ -29,7 +29,7 @@ requestBody.SetExcludedGroups(excludedGroups)
 overrideDefaultRule := true
 requestBody.SetOverrideDefaultRule(&overrideDefaultRule) 
 
-result, err := graphClient.DeviceManagement().ConditionalAccessSettings().Patch(context.Background(), requestBody, nil)
+conditionalAccessSettings, err := graphClient.DeviceManagement().ConditionalAccessSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

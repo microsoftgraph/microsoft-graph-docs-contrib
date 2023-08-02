@@ -43,7 +43,7 @@ ticketSystem := "Contoso ICM"
 ticketInfo.SetTicketSystem(&ticketSystem) 
 requestBody.SetTicketInfo(ticketInfo)
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(context.Background(), requestBody, nil)
+roleAssignmentScheduleRequests, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(context.Background(), requestBody, nil)
 
 
 ```
