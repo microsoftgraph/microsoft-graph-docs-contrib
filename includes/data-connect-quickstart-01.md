@@ -36,7 +36,7 @@ In this tutorial, you'll create your first single-tenant Data Connect applicatio
 5. **Developer runs their pipelines:** After the administrator has consented to the application, the developer might run their pipelines without any stalling for runtime consent. The pipeline creation and run via Azure Data Factory or Azure Synapse remains the same.  
 
 > [!NOTE]
-> If you're working in a new tenant that doesn't have Data Connect enabled, you don't need to take any action. If you have an existing tenant that already has Microsoft Graph Data Connect enabled, before you complete this tutorial, ask your global administrator to toggle Microsoft Graph Data Connect off and then on again in the [admin portal.](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan)
+> If you're working in a new tenant that doesn't have Data Connect enabled, you don't need to take any action. If you have an existing tenant that already has Microsoft Graph Data Connect enabled, before you complete this tutorial, ask your global administrator to toggle Microsoft Graph Data Connect off and then on again in the [admin portal](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan).
 
 ### Prerequisites
 
@@ -58,7 +58,7 @@ To complete this tutorial, you'll need the following subscriptions or licenses.
    - Note the Microsoft 365 region where your tenant is located. If you create a new tenant, ensure it is one of the [regions supported by Microsoft Graph Data Connect](/graph/data-connect-datasets#regions).
 
    > [!NOTE] 
-   > You can't approve your own test application using the same account. Ensure that you have another member (or account) in your tenant that acts as an admin.
+   > You can't approve your own test application using the same account. Make sure that you have another member (or account) in your tenant that acts as an admin.
 
 2. **Microsoft Azure subscription** 
 
