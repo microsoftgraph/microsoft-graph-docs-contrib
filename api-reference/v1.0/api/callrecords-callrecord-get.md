@@ -18,7 +18,7 @@ There are two ways to get the **id** of a **callRecord**:
 * Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) to the `/communications/callRecords` endpoint.
 * Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
 
-The `$expand` query parameter can be used to optionally include session and segment details as illustrated in the [Get full details](#example-2-get-full-details) example below. When expanding session details, the maximum page size is 60 sessions.
+You can use the `$expand` query parameter to optionally include session and segment details, as shown in the [Get full details](#example-2-get-full-details) example. When you expand session details, the maximum page size is 60 sessions.
 
 > [!WARNING]
 >
@@ -44,7 +44,7 @@ GET /communications/callRecords/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name      |Description|
 |:----------|:----------|
