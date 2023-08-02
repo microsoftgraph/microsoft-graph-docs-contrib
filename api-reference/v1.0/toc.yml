@@ -1799,6 +1799,12 @@ items:
                     href: api/printtaskdefinition-update-task.md
               - name: Reports
                 items:
+                  - name: Archived print job
+                    href: resources/archivedprintjob.md
+                  - name: Print usage by printer
+                    href: resources/printusagebyprinter.md
+                  - name: Print usage by user
+                    href: resources/printusagebyuser.md
                   - name: Organized by printer
                     items:
                       - name: Get
