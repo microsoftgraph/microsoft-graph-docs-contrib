@@ -97,7 +97,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Upgrade a specific app installed for a user and consent to the resource specific permissions
 
-To get the list of resource-specific permissions required by the app, get the app from **appCatalog**. For details, see [List apps installed in the personal scope of a user](../api/userteamwork-list-installedapps.md).
+To get the list of resource-specific permissions required by the app, get the app from the **appCatalog**. For details, see [List apps installed in the personal scope of a user](../api/userteamwork-list-installedapps.md).
 
 #### Request
 
