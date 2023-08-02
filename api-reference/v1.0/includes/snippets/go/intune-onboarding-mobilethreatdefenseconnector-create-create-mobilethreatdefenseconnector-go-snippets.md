@@ -48,7 +48,7 @@ requestBody.SetAllowPartnerToCollectIOSPersonalApplicationMetadata(&allowPartner
 microsoftDefenderForEndpointAttachEnabled := true
 requestBody.SetMicrosoftDefenderForEndpointAttachEnabled(&microsoftDefenderForEndpointAttachEnabled) 
 
-result, err := graphClient.DeviceManagement().MobileThreatDefenseConnectors().Post(context.Background(), requestBody, nil)
+mobileThreatDefenseConnectors, err := graphClient.DeviceManagement().MobileThreatDefenseConnectors().Post(context.Background(), requestBody, nil)
 
 
 ```

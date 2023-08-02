@@ -118,6 +118,10 @@ Content-length: 602
 [!INCLUDE [sample-code](../includes/snippets/php/intune-rbac-deviceandappmanagementroledefinition-update-update-deviceandappmanagementroledefinition-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-rbac-deviceandappmanagementroledefinition-update-update-deviceandappmanagementroledefinition-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-rbac-deviceandappmanagementroledefinition-update-update-deviceandappmanagementroledefinition-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

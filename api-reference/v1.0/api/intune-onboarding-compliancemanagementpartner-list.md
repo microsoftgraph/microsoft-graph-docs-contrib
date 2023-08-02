@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/complianceManagementPartne
 [!INCLUDE [sample-code](../includes/snippets/php/intune-onboarding-compliancemanagementpartner-list-list-compliancemanagementpartners-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-compliancemanagementpartner-list-list-compliancemanagementpartners-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-onboarding-compliancemanagementpartner-list-list-compliancemanagementpartners-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

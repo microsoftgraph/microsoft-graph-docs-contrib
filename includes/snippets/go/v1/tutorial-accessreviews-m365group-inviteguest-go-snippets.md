@@ -25,7 +25,7 @@ requestBody.SetSendInvitationMessage(&sendInvitationMessage)
 inviteRedirectUrl := "https://myapps.microsoft.com"
 requestBody.SetInviteRedirectUrl(&inviteRedirectUrl) 
 
-result, err := graphClient.Invitations().Post(context.Background(), requestBody, nil)
+invitations, err := graphClient.Invitations().Post(context.Background(), requestBody, nil)
 
 
 ```

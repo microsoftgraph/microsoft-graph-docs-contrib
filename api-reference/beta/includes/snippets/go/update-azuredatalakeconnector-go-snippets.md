@@ -19,7 +19,7 @@ requestBody := graphmodelsindustrydata.NewIndustryDataConnector()
 displayName := "API Monitor 60201009"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.External().IndustryData().DataConnectors().ByDataConnectorId("industryDataConnector-id").Patch(context.Background(), requestBody, nil)
+dataConnectors, err := graphClient.External().IndustryData().DataConnectors().ByIndustryDataConnectorId("industryDataConnector-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

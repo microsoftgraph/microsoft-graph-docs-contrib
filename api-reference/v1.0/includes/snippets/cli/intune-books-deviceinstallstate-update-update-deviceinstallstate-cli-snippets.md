@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-app-management managed-ebooks device-states patch --managed-ebook-id {managedEBook-id} --device-install-state-id {deviceInstallState-id} --body '{\
   "@odata.type": "#microsoft.graph.deviceInstallState",\
   "deviceName": "Device Name value",\

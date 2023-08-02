@@ -10,7 +10,7 @@ String outputName = "Export reviewset query via API";
 
 String description = "Export for the Contoso investigation 2";
 
-EnumSet<ExportOptions> exportOptions = EnumSet.of(ExportOptions.ORIGINAL_FILES,ExportOptions.FILE_INFO,ExportOptions.TAGS);
+EnumSet<ExportOptions> exportOptions = EnumSet.of(ExportOptions.ORIGINAL_FILES,ExportOptions.TAGS);
 
 ExportFileStructure exportStructure = ExportFileStructure.DIRECTORY;
 

@@ -16,17 +16,17 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewServicePrincipal()
+customSecurityAttributes := graphmodels.NewCustomSecurityAttributeValue()
 additionalData := map[string]interface{}{
-customSecurityAttributes := graphmodels.New()
 engineering := graphmodels.New()
 projectDate := "2022-10-01"
 engineering.SetProjectDate(&projectDate) 
 	customSecurityAttributes.SetEngineering(engineering)
-	requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
 }
-requestBody.SetAdditionalData(additionalData)
+customSecurityAttributes.SetAdditionalData(additionalData)
+requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
+servicePrincipals, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

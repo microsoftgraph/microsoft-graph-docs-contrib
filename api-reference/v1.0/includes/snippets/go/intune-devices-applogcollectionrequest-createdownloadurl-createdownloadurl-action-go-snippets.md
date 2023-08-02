@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().MobileAppTroubleshootingEvents().ByMobileAppTroubleshootingEventId("mobileAppTroubleshootingEvent-id").AppLogCollectionRequests().ByAppLogCollectionRequestId("appLogCollectionRequest-id").CreateDownloadUrl().Post(context.Background(), nil)
+createDownloadUrl, err := graphClient.DeviceManagement().MobileAppTroubleshootingEvents().ByMobileAppTroubleshootingEventId("mobileAppTroubleshootingEvent-id").AppLogCollectionRequests().ByAppLogCollectionRequestId("appLogCollectionRequest-id").CreateDownloadUrl().Post(context.Background(), nil)
 
 
 ```

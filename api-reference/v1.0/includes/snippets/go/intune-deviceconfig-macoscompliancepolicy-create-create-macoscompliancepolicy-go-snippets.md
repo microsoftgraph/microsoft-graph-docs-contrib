@@ -57,7 +57,7 @@ requestBody.SetFirewallBlockAllIncoming(&firewallBlockAllIncoming)
 firewallEnableStealthMode := true
 requestBody.SetFirewallEnableStealthMode(&firewallEnableStealthMode) 
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicies().Post(context.Background(), requestBody, nil)
+deviceCompliancePolicies, err := graphClient.DeviceManagement().DeviceCompliancePolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

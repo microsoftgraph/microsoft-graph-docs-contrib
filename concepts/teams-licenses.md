@@ -12,13 +12,16 @@ This article describes the payment models and licensing requirements for Microso
 
 Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model. 
 
-The following table lists the APIs that currently support payment models.
+The following table lists the APIs and [change notification](/graph/api/subscription-post-subscriptions) `resources` that currently support payment models.
 
-| Scenario | APIs |
-|:---------|:-----|
-|[Export Teams content](/microsoftteams/export-teams-content)| [channel: getAllMessages](/graph/api/channel-getallmessages)</br>[chats: getAllMessages](/graph/api/chats-getallmessages) |
-| Update (DLP patch) | [Update channel](/graph/api/channel-patch)</br>[Update chat](/graph/api/chat-patch)</br>[Update chatMessage](/graph/api/chatmessage-update) |
-| [Create subscription (change notifications)](/graph/api/subscription-post-subscriptions) | [channel](/graph/api/resources/channel)</br>[chat](/graph/api/resources/chat)</br>[chatMessage](/graph/api/resources/chatmessage)</br>[conversationMember](/graph/api/resources/conversationmember) |
+| APIs or [change notification](/graph/api/subscription-post-subscriptions) `resources` | Payment models |
+|:------------------|:---------------|
+| [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMessges</li><li>/teams/getAllMessages</li><li>/chats/getAllMembers</li><li>/teams/getAllMembers</li></ul> | A, B |
+| [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/users/{user-id}/chats/getAllMessages</li><li>/me/chats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMembers</li></ul> | B |
+| APIs: <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li><li>[GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages](/graph/api/deletedteam-getallmessages)</li></ul> | A, B |
+| APIs, when updating the `policyViolation` property: <ul><li>[PATCH /teams/{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</li><li>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</li><li>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update)</li></ul> | A |
+
+
 
 > [!NOTE]
 > Billing for these APIs started on July 5th, 2022. To set up an active Azure subscription for your application for billing purposes, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup). For more details, see [Payment and billing updates](#payment-and-billing).
@@ -36,7 +39,7 @@ There are no licensing requirements for `model=B`.
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
 > [!NOTE]
-> Most of these APIs are also [protected APIs](/graph/teams-protected-apis); you must get approval from Microsoft before you can use them. If your application is using protected APIs, please submit a [request for access](https://aka.ms/teamsgraph/requestaccess). For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+> To add or change a payment model for a subscribed resource of a change notification, you must create a new change notification subscription with the new payment model; updating an existing change notification does not work.
 
 ### `model=A` requirements
 
@@ -45,19 +48,19 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 The following APIs support the `model=A` parameter.
 
-|API                   | Who needs a [license](#required-licenses-for-modela)  | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing) | Notes |
-|:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
-| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | Message sender | 800 messages per user per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
-| conversationMember change notifications | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
-| [Get messages across all chats for user](/graph/api/chats-getallmessages) | Named user | 1600 messages per user per month per app | $0.00075 per message | The named user is the user identified in the GET request URL. Requests returning an empty list, will be charged 1 message. Seeded capacity is shared with channel export. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message | Requests returning an empty list will be charged 1 message. Seeded capacity is shared with chat export. |
-| [Updat a chatMessage policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
+| APIs or or [change notification](/graph/api/subscription-post-subscriptions) `resources` | Who needs a [license](#required-licenses-for-modela)  | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing) | Notes |
+|:---------------------------------------------------------------|:----------------|:---------|:-------|:--------------|
+| [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMessges</li><li>/teams/getAllMessages</li></ul> | Message sender | (800 messages × supported licenses with DLP enabled) per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
+| [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMembers</li><li>/teams/getAllMembers</li></ul> | Any user in the tenant | (800 notifications × supported licenses with DLP enabled) per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
+| APIs: <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)</li></ul> | Named user | (1600 messages × supported licenses with DLP enabled) per month per app | $0.00075 per message | The named user is the user identified in the GET request URL. Requests returning an empty list, will be charged 1 message. Seeded capacity is shared with channel export. |
+| APIs: <ul><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li><li>[GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages](/graph/api/deletedteam-getallmessages)</li></ul> | Any team member | (1600 messages × supported licenses with DLP enabled) per month per app | $0.00075 per message | Requests returning an empty list will be charged 1 message. Seeded capacity is shared with chat export. |
+| APIs, when updating the `policyViolation` property: <ul><li>[PATCH /teams{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</li><li>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</li><li>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update)</li></ul> |  Message sender |  (800 messages × supported licenses with DLP enabled) per month per app | $0.00075 per message |
 
 #### Required licenses for `model=A` 
 
 The user will need a license that supports 
 the Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference),
-such as one of these [supported licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-graph-apis-for-teams-data-loss-prevention-dlp-and-for-teams-export).
+such as one of these [supported licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-loss-prevention-graph-apis-for-teams-data-loss-prevention-dlp-and-for-teams-export).
 Which user needs the license varies by API; 
 for details, see [`model=A` requirements](#modela-requirements).
 
@@ -66,7 +69,7 @@ Similarly, messages sent from outside the tenant (federated chat) are exempt.
 Consumption meters still apply.
 
 It is the responsibility of the tenant owner (not the app owner) to ensure that users are properly licensed.
-Admins can use the Information protection license report in 
+Admins can use the [Information protection license report](/microsoftteams/teams-analytics-and-reports/information-protection-license-report) in 
 [Teams admin center](https://admin.teams.microsoft.com/analytics/reports) 
 to see which users don't have a supported license.
 
@@ -86,26 +89,26 @@ through the [Microsoft 365 Developer Program](https://developer.microsoft.com/mi
 
 The following APIs support the `model=B` parameter.
 
-|API                   | [Seeded capacity](#seeded-capacity) | [Price for use](#payment-and-billing) | Notes |
-|:-----------------------------|:----------------|:-------|:------|
-| [chatMessage change notifications](/graph/api/chatmessage-delta) | None | $0.00075 per message |  |
-| conversationMember change notifications | None  | $0.00075 per notification | |
-| chat change notifications | None | $0.00075 per message |  |
-| [Get messages across all chats for user](/graph/api/chats-getallmessages) | None | $0.00075 per message | Requests returning an empty list will be charged 1 message. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)|  None | $0.00075 per message | Requests returning an empty list will be charged 1 message. |
+| APIs or or [change notification](/graph/api/subscription-post-subscriptions) `resources` | [Seeded capacity](#seeded-capacity) | [Price for use](#payment-and-billing) | Notes |
+|:---------------------------------------------------------------|:----------------|:-------|:------|
+| [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMessges</li><li>/teams/getAllMessages</li><li>/users/{user-id}/chats/getAllMessages</li><li>/me/chats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMessages</li></ul> | None | $0.00075 per message |  |
+| [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMembers</li><li>/teams/getAllMembers</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMembers</li></ul> | None  | $0.00075 per notification | |
+| [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/appCatalogs/teamsApps/{app-id}/installedToChats</li></ul> | None | $0.00075 per message |  |
+| APIs: <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)</li></ul> | None | $0.00075 per message | Requests returning an empty list will be charged 1 message. |
+| APIs: <ul><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li><li>[GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages](/graph/api/deletedteam-getallmessages)</li></ul> |  None | $0.00075 per message | Requests returning an empty list will be charged 1 message. |
 
 ### Evaluation mode (default) requirements
 
 The following APIs support evaluation mode.
 
-|API   | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing) | Notes |
+| APIs or or [change notification](/graph/api/subscription-post-subscriptions) `resources` | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing) | Notes |
 |:-----------------------------|:----------------|:-------|:------|
-| [chatMessage change notifications](/graph/api/chatmessage-delta) |  500 messages per month per app | N/A |
-| conversationMember change notifications | 500 messages per month per app | N/A |
-| chat change notifications | 500 messages per month per app | N/A |
-| [Get messages across all chats for user](/graph/api/chats-getallmessages) | 500 messages per month per app | N/A |  Requests returning an empty list will be charged 1 message. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)|  500 messages per month per app | N/A |  Requests returning an empty list will be charged 1 message. |
-| [Update a chatMessage policyViolation](/graph/api/chatmessage-update) |  500 messages per month per app | N/A |
+| [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMessges</li><li>/teams/getAllMessages</li><li>/users/{user-id}/chats/getAllMessages</li><li>/me/chats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMessages</li></ul> |  500 messages per month per tenant per app | N/A |
+| [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMembers</li><li>/teams/getAllMembers</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMembers</li></ul> | 500 messages per month per tenant per app | N/A |
+| [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/appCatalogs/teamsApps/{app-id}/installedToChats</li></ul> | 500 messages per month per app | N/A |
+| APIs: <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)</li></ul> | 500 messages per month per tenant per app | N/A |  Requests returning an empty list will be charged 1 message. |
+| APIs: <ul><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li><li>[GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages](/graph/api/deletedteam-getallmessages)</li></ul> |  500 messages per month per tenant per app | N/A |  Requests returning an empty list will be charged 1 message. |
+| APIs, when updating the `policyViolation` property: <ul><li>[PATCH /teams{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</li><li>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</li><li>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update)</li></ul> |  500 messages per month per tenant per app | N/A |
 
 ## Seeded capacity
 
@@ -121,12 +124,7 @@ Seeded capacity is the amount of capacity that an app can use before a consumpti
 
 On July 5, 2022, [billing changes for Teams APIs](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/) took effect. 
 
-If your applications are or will be calling any of the following APIs, you must follow the steps described in [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes.
-
-- [chatMessage: delta](/graph/api/chatmessage-delta) – Change notifications API
-- [chats: getAllMessages](/graph/api/chats-getallmessages) – Export API
-- [channel: getAllMessages](/graph/api/channel-getallmessages) – Export API
-- [Update chatMessage](/graph/api/chatmessage-update)
+If your applications are or will be using any of the aforementioned APIs or [change notification](/graph/api/subscription-post-subscriptions) `resources`, you must follow the steps described in [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes.
 
 Note that the organization that owns the app registration is responsible for the payment. The Azure subscription should also be active in the same tenant. For multitenant apps, the organization that registered the app might be different than the organization that runs the app.
 
@@ -140,7 +138,8 @@ in excess of the seeded capacity will fail.
 
 | Error code | Scenario | Sample error message |
 |:-----------|:-----------|:-----------------|
-| 402 (Payment Required) | Passing `model=A` without a Microsoft E5 license |`...needs a valid license to access this API...`, `...tenant needs a valid license to access this API...`|
+| 402 (Payment Required) | Missing an active Azure billing subscription  |`...To call this API, the app must be associated with an Azure subscription, see https://aka.ms/teams-api-payment-requirements for details....`|
+| 402 (Payment Required) | Passing `model=A` without a Microsoft E5 license or without DLP enabled |`...needs a valid license to access this API...`, `...tenant needs a valid license to access this API...`|
 | 402 (Payment Required) | Calling Patch API passing `model=B` |`...query parameter 'model' does not support value 'B' for this API. Use billing model 'A'...`|
 | 402 (Payment Required) | `Evaluation mode` capacity exceeded |`...evaluation mode capacity has been exceeded. Use a valid billing model...`|
 
@@ -195,9 +194,9 @@ You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-get
 |:-------------------------|:--------|
 | Did billing actually started on July 5th? | Yes, we are onboarding partners in phases. For continued access, follow the instructions on [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes. 
 | What should I expect after setting up an Azure subscription? | Billing will be effective immediately.  You can monitor the costs as described in the [View the costs billed for the metered Microsoft Teams APIs](#view-the-costs-billed-for-the-metered-microsoft-teams-apis) section above. |
-| Do I need to provide an Azure subscription if my application is not calling metered APIs? | We recommend that you provide an Azure subscription because most scenarios use metered APIs. See also [protected APIs](/graph/teams-protected-apis). |
+| Do I need to provide an Azure subscription if my application is not calling metered APIs? | We recommend that you provide an Azure subscription because most scenarios use metered APIs. |
 | What happens if no Azure subscription is provided? | • No payment-related errors will occur if the application is not calling metered APIs. <br> • If no model parameter is passed, the `evaluation model` value will be used by default. <br> • If calling a metered API passing `model=A`, provide a Microsoft 365 E5 eligible license and Azure subscription. <br> • If passing `model=B` when calling metered APIs, provide an active Azure subscription. <br> |
-| How do I create an Azure subscription? | The Azure subscription must be available in the same tenant where the app is registered. Customers with MCA or EA agreements can get a subscription from their existing account. Is also possible to create a PAYG subscription using a credit card or pay by check or wire transfer. For details, see [cost management and billing](/azure/cost-management-billing/microsoft-customer-agreement). |
+| How do I create an Azure subscription? | The Azure subscription must be available in the same tenant where the app is registered. Customers with MCA or EA agreements can get a subscription from their existing account. Is also possible to create a PAYG subscription using a credit card or pay by check or wire transfer. For details, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) and [cost management and billing](/azure/cost-management-billing/microsoft-customer-agreement). |
 | Who is responsible for the payment in the case of multitenant apps? | The organization that owns the app registration. |
 | Is possible to differentiate billing from multitenant or single tenant app? | Yes, this information must be provided as part of Azure billing details. |
 | Is there a charge when no message is returned using any model? | To discourage frequent [polling](/graph/api/resources/teams-api-overview), API requests that return an empty list of messages will be charged one message. In the case of `evaluation model`, the call will count toward the 500 messages per month per app allowed. | 

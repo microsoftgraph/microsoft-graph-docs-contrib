@@ -19,7 +19,7 @@ requestBody := graphmodels.NewContinuousAccessEvaluationPolicy()
 migrate := true
 requestBody.SetMigrate(&migrate) 
 
-result, err := graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(context.Background(), requestBody, nil)
+continuousAccessEvaluationPolicy, err := graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

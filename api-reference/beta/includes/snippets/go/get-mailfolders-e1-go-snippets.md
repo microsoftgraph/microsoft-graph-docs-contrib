@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().MailFolders().Get(context.Background(), nil)
+mailFolders, err := graphClient.Me().MailFolders().Get(context.Background(), nil)
 
 
 ```

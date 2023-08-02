@@ -36,7 +36,7 @@ credentials := []graphmodels.SynchronizationSecretKeyStringValuePairable {
 }
 requestBody.SetCredentials(credentials)
 
-graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().ByJobId("synchronizationJob-id").ValidateCredentials().Post(context.Background(), requestBody, nil)
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().BySynchronizationJobId("synchronizationJob-id").ValidateCredentials().Post(context.Background(), requestBody, nil)
 
 
 ```

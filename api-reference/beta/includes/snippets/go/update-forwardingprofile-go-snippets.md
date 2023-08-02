@@ -27,7 +27,7 @@ associations := []graphmodelsnetworkaccess.Associationable {
 }
 requestBody.SetAssociations(associations)
 
-result, err := graphClient.NetworkAccess().ForwardingProfiles().ByForwardingProfileId("forwardingProfile-id").Patch(context.Background(), requestBody, nil)
+forwardingProfiles, err := graphClient.NetworkAccess().ForwardingProfiles().ByForwardingProfileId("forwardingProfile-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

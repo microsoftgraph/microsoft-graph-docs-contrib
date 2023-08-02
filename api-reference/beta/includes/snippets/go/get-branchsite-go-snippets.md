@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.NetworkAccess().Connectivity().Branches().ByBrancheId("branchSite-id").Get(context.Background(), nil)
+branches, err := graphClient.NetworkAccess().Connectivity().Branches().ByBranchSiteId("branchSite-id").Get(context.Background(), nil)
 
 
 ```
