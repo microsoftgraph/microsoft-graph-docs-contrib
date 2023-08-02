@@ -372,8 +372,8 @@ Content-Type: application/json
           "displayName": "Test App",
           "version": "1.0.1",
           "publishingState": "published",
-          "shortDescription": "quaerat quasi magnam. slight change. 5",
-          "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
+          "shortDescription": "Types Of Cards.",
+          "description": "This sample shows the feature where user can send different types of cards using bot.",
           "lastModifiedDateTime": "2020-11-23T21:36:00.9437445Z",
           "createdBy": null 
         }
