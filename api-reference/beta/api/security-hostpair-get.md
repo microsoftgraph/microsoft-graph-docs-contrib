@@ -1,6 +1,6 @@
 ---
 title: "Get hostPair"
-description: "Read the properties and relationships of a Microsoft Graph Security hostPair object."
+description: "Read the properties and relationships of a hostPair object."
 author: "jakedavies-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.hostPair](../resources/security-hostpair.md) object.
+Read the properties and relationships of a [hostPair](../resources/security-hostpair.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,16 +35,14 @@ GET /security/threatIntelligence/hostPairs/{hostPairId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-### $select
-`$select` is an optional query parameter. The following properties can be used for `$select` calls.
-
+The following properties can be used for `$select` calls.
 |Property|Example|Notes|
 |:---|:---|:---|
-|All [hostpair](../resources/security-hostpair.md) properties|`$select=id,firstSeenDateTime`|Use the name as it appears in the [hostpair](../resources/security-hostpair.md) resource.|
-|`parentHost`|`$select=parentHost`|Does not support selecting on nested properties (i.e. `parentHost/id`).|
-|`childHost`|`$select=childHost`|Does not support selecting on nested properties (i.e. `childHost/id`).|
+|All [hostPair](../resources/security-hostpair.md) properties|`$select=id,firstSeenDateTime`|Use the name as it appears in the [hostPair](../resources/security-hostpair.md) resource.|
+|parentHost|`$select=parentHost`|Does not support selecting on nested properties (for example `parentHost/id`).|
+|childHost|`$select=childHost`|Does not support selecting on nested properties (for example `childHost/id`).|
 
 ## Request headers
 |Name|Description|

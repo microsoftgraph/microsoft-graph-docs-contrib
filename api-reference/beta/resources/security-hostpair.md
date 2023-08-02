@@ -1,6 +1,6 @@
 ---
 title: "hostPair resource type"
-description: "Represents a pair of parent-child hosts in which the child host is reachable to be reached via the parent host"
+description: "Represents a pair of parent-child hosts in which the child host able to be reached via the parent host."
 author: "jakedavies-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a pair of parent-child hosts in which the child host is reachable via the parent host. For example, if contoso.com redirects to microsoft.com, then contoso.com would be the parent host and microsoft.com the child host.
+Represents a pair of parent-child hosts in which the child host is able to be reached via the parent host. For example, if contoso.com redirects to microsoft.com, then contoso.com would be the parent host and microsoft.com the child host.
 
 ## Methods
 |Method|Return type|Description|

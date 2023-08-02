@@ -1,6 +1,6 @@
 ---
-title: "List hostPairs for a host in the parent direction"
-description: "Get the hostPair resources from the hostPairs navigation property in the parent direction."
+title: "List parentHostPairs"
+description: "Get the list of hostPair resources associated with a host, where that host is the child and has an incoming pairing with a parent."
 author: "jakedavies-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get the list of [hostpair](../resources/security-hostpair.md) resources associated with a host, where that host is the *child* and has an incoming pairing with a *parent*.
+Get the list of [hostPair](../resources/security-hostpair.md) resources associated with a host, where that host is the *child* and has an incoming pairing with a *parent*.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,42 +35,27 @@ GET /security/threatIntelligence/hosts/{hostId}/parentHostPairs
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$count`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-### $count
-`$count` is an optional query parameter.
-
-### $filter
-`$filter` is an optional query parameter. The following properties can be used for `$filter` calls.
-
+The following properties can be used for `$filter` calls.
 |Property|Example|Notes|
 |:---|:---|:---|
-|All [hostpair](../resources/security-hostpair.md) properties|`$filter=(linkKind eq 'redirect')`|Use the name as it appears in the [hostpair](../resources/security-hostpair.md) resource.|
-|`childHost/id`|`$filter=(childHost/id eq 'contoso.com')`|Full path is requried for `$filter` usage.|
-|`parentHost/id`|`$filter=(parentHost/id in ('contoso.com','downstream.consoso.com'))`|Full path is required for `$filter` usage.|
+|All [hostPair](../resources/security-hostpair.md) properties|`$filter=(linkKind eq 'redirect')`|Use the name as it appears in the [hostPair](../resources/security-hostpair.md) resource.|
+|childHost/id|`$filter=(childHost/id eq 'contoso.com')`|Full path is requried for `$filter` usage.|
+|parentHost/id|`$filter=(parentHost/id in ('contoso.com','downstream.consoso.com'))`|Full path is required for `$filter` usage.|
 
-### $orderby
-`$orderby` is an optional query parameter. The following properties can be used for `$orderby` calls.
+The following properties can be used for `$orderby` calls.
+|Property|Example|
+|:---|:---|
+|firstSeenDateTime|`$orderby=firstSeenDateTime desc`|
+|lastSeenDateTime|`$orderby=lastSeenDateTime asc`|
 
+The following properties can be used for `$select` calls.
 |Property|Example|Notes|
 |:---|:---|:---|
-|`firstSeenDateTime`|`$orderby=firstSeenDateTime desc`||
-|`lastSeenDateTime`|`$orderby=lastSeenDateTime asc`||
-
-### $select
-`$select` is an optional query parameter. The following properties can be used for `$select` calls.
-
-|Property|Example|Notes|
-|:---|:---|:---|
-|All [hostpair](../resources/security-hostpair.md) properties|`$select=id,firstSeenDateTime`|Use the name as it appears in the [hostpair](../resources/security-hostpair.md) resource.|
-|`parentHost`|`$select=parentHost`|Does not support selecting on nested properties (i.e. `parentHost/id`).|
-|`childHost`|`$select=childHost`|Does not support selecting on nested properties (i.e. `childHost/id`).|
-
-### $skip
-`$skip` is an optional query parameter.
-
-### $top
-`$top` is an optional query parameter.
+|All [hostPair](../resources/security-hostpair.md) properties|`$select=id,firstSeenDateTime`|Use the name as it appears in the [hostPair](../resources/security-hostpair.md) resource.|
+|parentHost|`$select=parentHost`|Does not support selecting on nested properties (for example `parentHost/id`).|
+|childHost|`$select=childHost`|Does not support selecting on nested properties (for example `childHost/id`).|
 
 ## Request headers
 |Name|Description|
