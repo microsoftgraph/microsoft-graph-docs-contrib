@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-The first section and tab are for users who have completed the new and updated consent flow to set up their pipeline. It provides guidance on registering and approving an Azure Active Directory (Azure AD) Application with Microsoft Graph Data Connect (Data Connect). As a prerequisite, Data Connect should be enabled in your tenant. We recommend creating an Azure AD application and a storage destination resource.
+The first section in this step is for users who have completed the new and updated consent flow to set up their pipeline. It describes how to register and approve an Azure Active Directory (Azure AD) application with Microsoft Graph Data Connect (Data Connect). As a prerequisite, Data Connect should be enabled in your tenant. We recommend creating an Azure AD application and a storage destination resource.
 
 The second section covers the approval and denial of application requests using our former consent process with Privileged Access Management (PAM). The first tab provides instructions for the admin center's former consent process, while the second tab offers guidance through a PowerShell script. 
 
@@ -19,7 +19,7 @@ As a prerequisite, enable Data Connect in your tenant. It's helpful to have an A
 
 1. Access [Microsoft Graph Data Connect in the Azure portal](https://aka.ms/mgdcinazure). You can find it through the search bar in the [Azure portal](https://portal.azure.com/)
 
-2. Click **Add** or **Add a new application**.
+2. Choose **Add** or **Add a new application**.
 
     ![A screenshot that shows the Azure portal Data Factory to create a new application.](../concepts/images/data-connect-register-app-1.png)
 
