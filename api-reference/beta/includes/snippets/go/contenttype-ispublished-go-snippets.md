@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Sites().BySiteId("site-id").ContentTypes().ByContentTypeId("contentType-id").IsPublished().Get(context.Background(), nil)
+isPublished(), err := graphClient.Sites().BySiteId("site-id").ContentTypes().ByContentTypeId("contentType-id").IsPublished().Get(context.Background(), nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().GetEffectivePermissions().Get(context.Background(), nil)
+getEffectivePermissions(), err := graphClient.DeviceManagement().VirtualEndpoint().GetEffectivePermissions().Get(context.Background(), nil)
 
 
 ```

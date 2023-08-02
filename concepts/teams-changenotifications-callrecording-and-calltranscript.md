@@ -29,7 +29,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 ### Example
 
-The following example shows how to subscribe to transcripts available at tenant-level.
+The following example shows how to subscribe to transcripts available at the tenant level.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions

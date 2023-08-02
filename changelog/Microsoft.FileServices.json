@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "a8d1ea6c-3868-41c8-b499-ed81848134bd",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/driveitem-permanentdelete?view=graph-rest-beta) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "a8d1ea6c-3868-41c8-b499-ed81848134bd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-28T08:35:41.9865867Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bb7f0809-9061-4b82-b872-249661a3d329",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/driveitem-permanentdelete?view=graph-rest-1.0) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-1.0) resource.",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "bb7f0809-9061-4b82-b872-249661a3d329",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-07-27T08:35:41.9869433Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d07006c1-a451-4fcf-b9b6-835546842783",
           "ApiChange": "Method",
           "ChangedApiName": "getAllSites",

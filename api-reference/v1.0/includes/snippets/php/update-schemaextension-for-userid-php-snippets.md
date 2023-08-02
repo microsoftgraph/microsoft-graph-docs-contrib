@@ -7,15 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new User();
 $additionalData = [
-		'ext55gb1l09_msLearnCourses' => $requestBody = new Ext55gb1l09_msLearnCourses();
-$		requestBody->setCourseType('Admin');
-
-
-$requestBody->setExt55gb1l09_msLearnCourses($ext55gb1l09_msLearnCourses);
+		'ext55gb1l09_msLearnCourses' => 		[
+				'courseType' => 'Admin', 
+		],
 
 ];
 $requestBody->setAdditionalData($additionalData);

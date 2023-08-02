@@ -47,7 +47,7 @@ requestBody.SetCreatedBy(createdBy)
 address := graphmodels.NewPhysicalAddress()
 requestBody.SetAddress(address)
 
-result, err := graphClient.Education().Schools().Post(context.Background(), requestBody, nil)
+schools, err := graphClient.Education().Schools().Post(context.Background(), requestBody, nil)
 
 
 ```

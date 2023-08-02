@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Onenote().Operations().ByOperationId("onenoteOperation-id").Get(context.Background(), nil)
+operations, err := graphClient.Me().Onenote().Operations().ByOnenoteOperationId("onenoteOperation-id").Get(context.Background(), nil)
 
 
 ```

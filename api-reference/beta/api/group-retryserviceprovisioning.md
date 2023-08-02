@@ -80,10 +80,6 @@ POST https://graph.microsoft.com/beta/groups/{id}/retryServiceProvisioning
 [!INCLUDE [sample-code](../includes/snippets/php/group-retryserviceprovisioning-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/group-retryserviceprovisioning-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/group-retryserviceprovisioning-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

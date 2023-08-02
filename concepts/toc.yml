@@ -229,7 +229,7 @@ items:
                     href: teams-change-notification-in-microsoft-teams-overview.md
                     displayName: change notifications, Teams, Microsoft Teams
                   - name: Call recordings and transcripts
-                    href: teams-changenotifications-callrecording-and-calltranscript.md
+                    href: teams-changenotifications-callrecording-and-calltranscript
                   - name: Chat
                     href: teams-changenotifications-chat.md
                   - name: Chat and channel messages
@@ -262,6 +262,9 @@ items:
           - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
             displayName: Microsoft Graph connectors, connect external content
+          - name: Connectors experiences
+            href: connecting-external-content-experiences.md
+            displayName: Microsoft Graph connectors, connect external content with Microsoft 365 experiences
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
             displayName: Microsoft Graph connectors
@@ -285,6 +288,8 @@ items:
                 href: custom-connector-sdk-sample-publish.md
               - name: Surface the data in search
                 href: custom-connector-sdk-sample-search.md
+          - name: Simplify connector deployment
+            href: connecting-external-content-deploy-teams.md
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
