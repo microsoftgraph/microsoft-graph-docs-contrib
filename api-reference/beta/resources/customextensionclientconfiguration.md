@@ -18,8 +18,8 @@ Connection settings that define how long Azure AD can wait for a a response from
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|timeoutInMilliseconds|Int32|The max duration in milliseconds that Azure AD will wait for a response from the external app before it shuts down the connection. The valid range is between `200` and `2000` milliseconds. If null, the service default will apply.|
-|maximumRetries|Int32|The max number of retries that Azure AD will make to the external API. Values of 0 or 1 are supported. If null, the service default will apply.|
+|timeoutInMilliseconds|Int32|The max duration in milliseconds that Azure AD will wait for a response from the external app before it shuts down the connection. The valid range is between `200` and `2000` milliseconds. If `null`, the service default will apply.|
+|maximumRetries|Int32|The max number of retries that Azure AD will make to the external API. Values of 0 or 1 are supported. If `null`, the service default will apply.|
 
 ## Relationships
 None.
