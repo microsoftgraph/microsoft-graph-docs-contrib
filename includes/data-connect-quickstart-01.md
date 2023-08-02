@@ -16,6 +16,9 @@ Data Connect also grants a more granular control and consent model: you can mana
 
 Additionally, you can use Data Connect to enable machine learning scenarios for your organization. In these scenarios, you can create applications that provide valuable information to your stakeholders, train machine learning models, and even perform forecasting based on large amounts of acquired data.
 
+> [!NOTE]
+> The guidance for using the former consent process involving Privileged Access Management (PAM) is included in a separate tab for reference purposes. We recommend that you follow the new consent flow for a simplified onboarding process.
+
 ## Get started
 
 In this tutorial, you'll create your first single-tenant Data Connect application. The following is a general flow that explains the Data Connect onboarding.
@@ -33,11 +36,7 @@ In this tutorial, you'll create your first single-tenant Data Connect applicatio
 5. **Developer runs their pipelines:** After the administrator has consented to the application, the developer might run their pipelines without any stalling for runtime consent. The pipeline creation and run via Azure Data Factory or Azure Synapse remains the same.  
 
 > [!NOTE]
-> For existing tenants who already have Microsoft Graph Data Connect enabled and want to use this tutorial: notify your global administrator toggle Microsoft Graph Data Connect off and then on again in the [admin portal](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan) to be able to follow this tutorial flow. For new customers who have not yet toggled Microsoft Graph Data Connect, please follow the steps in this tutorial below. No further action is needed on your part.
-
-> [!NOTE]
-> We have included the guidance for our former consent process involving Privileged Access Management (PAM) in sections of our tutorial as tabs for reference purposes. However, we highly recommend following our new consent flow for a more simplified onboarding process.
-
+> If you're working in a new tenant that doesn't have Data Connect enabled, you don't need to take any action. If you have an existing tenant that already has Microsoft Graph Data Connect enabled, before you complete this tutorial, ask your global administrator to toggle Microsoft Graph Data Connect off and then on again in the [admin portal.](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan)
 
 ### Prerequisites
 
@@ -59,7 +58,7 @@ To complete this tutorial, you'll need the following subscriptions or licenses.
    - Note the Microsoft 365 region where your tenant is located. If you create a new tenant, ensure it is one of the [regions supported by Microsoft Graph Data Connect](/graph/data-connect-datasets#regions).
 
    > [!NOTE] 
-   > You can't approve your own test application using the same account. Ensure that you have another member (or account) in your tenant that acts as an "admin".
+   > You can't approve your own test application using the same account. Ensure that you have another member (or account) in your tenant that acts as an admin.
 
 2. **Microsoft Azure subscription** 
 
