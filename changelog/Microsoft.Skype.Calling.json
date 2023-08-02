@@ -7,16 +7,16 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowParticipantsToChangeName",
           "ChangeType": "Addition",
-          "Description": "Added the `allowParticipantsToChangeName` property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Description": "Added the **allowParticipantsToChangeName** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],
       "Id": "939f058a-8f58-4a85-9b45-90fe16b62ee2",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-07-18T00:39:09.0935047Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Online meeting"
+      "CreatedDateTime": "2023-08-01T00:39:09.0935047Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
