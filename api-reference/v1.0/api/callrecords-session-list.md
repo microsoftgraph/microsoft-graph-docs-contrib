@@ -2,7 +2,7 @@
 title: "List callRecord sessions"
 description: "Retrieve the list of session objects for a callRecord."
 ms.localizationpriority: medium
-author: "stephenjust"
+author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph.callRecords
 
 Retrieve the list of [sessions](../resources/callrecords-session.md) associated with a [callRecord](../resources/callrecords-callrecord.md) object.
+
+If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions. The maximum page size for sessions is 60 entries.
 
 ## Permissions
 
@@ -35,11 +37,18 @@ GET /communications/callRecords/{id}/sessions
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+| Name      |Description|
+|:----------|:----------|
+| $select | Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources.  Only supported for `callRecord` and `session` resources. |
+| $expand | Use the `$expand` query parameter to include the expanded resource or collection referenced by a single relationship in your results. |
+
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token} |
+| Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
+| Prefer: include-unknown-enum-members | Enables evolveable enum values beyond the sentinal value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
 
 ## Request body
 

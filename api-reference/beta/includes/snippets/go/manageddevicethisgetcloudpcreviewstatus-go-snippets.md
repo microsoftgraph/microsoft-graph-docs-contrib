@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().ManagedDevices().ByManagedDeviceId("managedDevice-id").GetCloudPcReviewStatus().Get(context.Background(), nil)
+getCloudPcReviewStatus(), err := graphClient.DeviceManagement().ManagedDevices().ByManagedDeviceId("managedDevice-id").GetCloudPcReviewStatus().Get(context.Background(), nil)
 
 
 ```

@@ -55,7 +55,7 @@ requestBody.SetKioskAppUserModelId(&kioskAppUserModelId)
 maintenanceStartTime := 11:59:24.7240000
 requestBody.SetMaintenanceStartTime(&maintenanceStartTime) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Patch(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

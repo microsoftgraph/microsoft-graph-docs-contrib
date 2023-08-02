@@ -46,7 +46,7 @@ groupsRequiringPartnerEnrollment := []graphmodels.DeviceManagementPartnerAssignm
 }
 requestBody.SetGroupsRequiringPartnerEnrollment(groupsRequiringPartnerEnrollment)
 
-result, err := graphClient.DeviceManagement().DeviceManagementPartners().Post(context.Background(), requestBody, nil)
+deviceManagementPartners, err := graphClient.DeviceManagement().DeviceManagementPartners().Post(context.Background(), requestBody, nil)
 
 
 ```

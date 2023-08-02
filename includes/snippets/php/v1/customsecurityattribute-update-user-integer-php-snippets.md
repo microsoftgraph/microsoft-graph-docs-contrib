@@ -10,20 +10,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new User();
+$customSecurityAttributes = new CustomSecurityAttributeValue();
 $additionalData = [
-		'customSecurityAttributes' => 		[
-				'engineering' => 				[
-						'@odata.type' => '#Microsoft.DirectoryServices.CustomSecurityAttributeValue', 
-						'numVendors@odata.type' => '#Int32', 
-						'numVendors' => 8,
-				],
-
+		'Engineering' => 		[
+				'@odata.type' => '#Microsoft.DirectoryServices.CustomSecurityAttributeValue', 
+				'numVendors@odata.type' => '#Int32', 
+				'numVendors' => 8,
 		],
 
 ];
-$requestBody->setAdditionalData($additionalData);
+$customSecurityAttributes->setAdditionalData($additionalData);
 
 
+
+$requestBody->setCustomSecurityAttributes($customSecurityAttributes);
 
 
 $result = $graphServiceClient->users()->byUserId('user-id')->patch($requestBody);

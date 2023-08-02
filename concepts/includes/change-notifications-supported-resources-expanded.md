@@ -10,8 +10,7 @@ ms.localizationpriority: high
 
 An app can subscribe to changes on the Microsoft Graph resources listed in the table, which also indicates the limits that apply for subscriptions to the resources. When any limit is exceeded, attempts to create a subscription will result in an `403 Forbidden` error response. The **message** property of the error response will explain the limit that has been exceeded.
 
-> [!NOTE]
-> Subscriptions to resources marked with an asterisk (`*`) are available on the `/beta` endpoint only.
+> **Note:** Subscriptions to resources marked with an asterisk (`*`) are available on the `/beta` endpoint only.
 
 | Resource | Supported resource paths | Limitations |
 |---|---|---|
@@ -27,6 +26,7 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox: `/users/{id}/contacts` , `/me/contacts` | A maximum of 1,000 active subscriptions per mailbox for all applications is allowed. |
 | Security [alert][] | Changes to a specific alert: `/security/alerts/{id}` <br><br>Changes to filtered alerts: `/security/alerts/?$filter={parameters}` | - |
 | Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | Maximum subscription quotas: <li> Per organization: 100 total subscriptions. |
+| Teams [callTranscript][] <sup>*<sup> | Any transcript becomes available in the tenant: `communications/onlineMeetings/getAllTranscripts` <br><br> Any transcript becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per organization: 10,000 total subscriptions. |
 | Teams [chat][] | Changes to any chat in the tenant: `/chats`  <br><br> Changes to a specific chat: `/chats/{id}` <br><br> Changes to all chats in an organization where a particular Teams app is installed: `/appCatalogs/teamsApps/{id}/installedToChats`  | Maximum subscription quotas: <li> Per app and chat combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
 | Teams [chatMessage][] | Changes to chat messages in all channels in all teams: `/teams/getAllMessages` <br><br> Changes to chat messages in a specific channel: `/teams/{id}/channels/{id}/messages` <br><br> Changes to chat messages in all chats: `/chats/getAllMessages`  <br><br> Changes to chat messages in a specific chat: `/chats/{id}/messages` <br><br> Changes to chat messages in all chats a particular user is part of: `/users/{id}/chats/getAllMessages` <br><br> Changes to chat messages for all chats in an organization where a particular Teams app is installed: `/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages` | Maximum subscription quotas: <li> Per app and channel or chat combination: 1 subscription. <li> Per user (for subscriptions tracking chat messages in all chats the user is part of): 10 subscriptions. <li> Per organization: 10,000 total subscriptions. |
 | Teams [channel][] | Changes to channels in all teams: `/teams/getAllChannels` <br><br> Changes to channel in a specific team: `/teams/{id}/channels` | Maximum subscription quotas: <li> Per app and team combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
@@ -60,4 +60,4 @@ Some of these resources support rich notifications (notifications with resource 
 [team]: /graph/api/resources/team
 [todoTask]: /graph/api/resources/todotask
 [onlineMeeting]: /graph/api/resources/onlinemeeting
-[baseTask]: /graph/api/resources/basetask
+[callTranscript]: /graph/api/resources/calltranscript

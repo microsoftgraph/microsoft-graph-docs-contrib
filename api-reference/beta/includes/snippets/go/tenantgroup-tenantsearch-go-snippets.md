@@ -19,7 +19,7 @@ requestBody := graphtenantrelationships.NewTenantSearchPostRequestBody()
 tenantId := "String"
 requestBody.SetTenantId(&tenantId) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().MicrosoftGraphManagedTenantsTenantSearch().Post(context.Background(), requestBody, nil)
+microsoft.graph.managedTenants.tenantSearch, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().MicrosoftGraphManagedTenantsTenantSearch().Post(context.Background(), requestBody, nil)
 
 
 ```
