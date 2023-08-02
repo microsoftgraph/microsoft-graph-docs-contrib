@@ -6482,7 +6482,7 @@
           "ApiChange":"Permission",
           "ChangedApiName":"TeamsAppInstallation.ReadWriteAndConsentForUser",
           "ChangeType":"Addition",
-          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentForUser` delegated and application permissions to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-beta) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-beta).",
+          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentForUser` delegated permission to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-beta) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-beta).",
           "Target":"userTeamwork"
         },
         {
@@ -6490,7 +6490,7 @@
           "ApiChange":"Permission",
           "ChangedApiName":"TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All",
           "ChangeType":"Addition",
-          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All` application and application permissions to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-beta) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-beta).",
+          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All` application permission to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-beta) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-beta).",
           "Target":"userTeamwork"
         },
         {
@@ -6498,7 +6498,7 @@
           "ApiChange":"Permission",
           "ChangedApiName":"TeamsAppInstallation.ReadWriteAndConsentForUser.All",
           "ChangeType":"Addition",
-          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentForUser.All` application and application permissions to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-beta) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-beta).",
+          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentForUser.All` application permission to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-beta) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-beta).",
           "Target":"userTeamwork"
         },
         {
@@ -6537,6 +6537,48 @@
       "Id": "e04528be-94f6-4bc5-9485-9b71da7f4807",
       "Cloud": "Prod",
       "Version": "beta",
+      "CreatedDateTime": "2022-07-18T17:17:00.1619923Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id":"db68fdbf-110c-42c2-a729-2c2869b1ad49",
+          "ApiChange":"Permission",
+          "ChangedApiName":"TeamsAppInstallation.ReadWriteAndConsentSelfForUser",
+          "ChangeType":"Addition",
+          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentSelfForUser` delegated permission to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-1.0) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-1.0) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-1.0).",
+          "Target":"userTeamwork"
+        },
+        {
+          "Id":"db68fdbf-110c-42c2-a729-2c2869b1ad49",
+          "ApiChange":"Permission",
+          "ChangedApiName":"TeamsAppInstallation.ReadWriteAndConsentForUser",
+          "ChangeType":"Addition",
+          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentForUser` delegated permission to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-1.0) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-1.0) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-1.0).",
+          "Target":"userTeamwork"
+        },
+        {
+          "Id":"db68fdbf-110c-42c2-a729-2c2869b1ad49",
+          "ApiChange":"Permission",
+          "ChangedApiName":"TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All",
+          "ChangeType":"Addition",
+          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All` application permission to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-1.0) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-1.0) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-1.0).",
+          "Target":"userTeamwork"
+        },
+        {
+          "Id":"db68fdbf-110c-42c2-a729-2c2869b1ad49",
+          "ApiChange":"Permission",
+          "ChangedApiName":"TeamsAppInstallation.ReadWriteAndConsentForUser.All",
+          "ChangeType":"Addition",
+          "Description":"Added the `TeamsAppInstallation.ReadWriteAndConsentForUser.All` application permission to the following operations of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-1.0) resource: [Add app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-1.0) and [Upgrade installed app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-1.0).",
+          "Target":"userTeamwork"
+        }
+      ],
+      "Id": "db68fdbf-110c-42c2-a729-2c2869b1ad49",
+      "Cloud": "Prod",
+      "Version": "v1.0",
       "CreatedDateTime": "2022-07-18T17:17:00.1619923Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
