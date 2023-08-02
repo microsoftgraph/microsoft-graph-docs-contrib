@@ -46,6 +46,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
+| chatRestrictions      | [chatRestrictions](chatRestrictions.md) | The meeting chat restriction configuration.  |
 | creationDateTime      | DateTime | The meeting creation time in UTC. Read-only.     |
 | endDateTime           | DateTime | The meeting end time in UTC.   |
 | externalId            | String | The external ID. A custom ID. Optional.      |
