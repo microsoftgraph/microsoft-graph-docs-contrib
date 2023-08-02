@@ -1,5 +1,5 @@
 ---
-title: "List hostPairs for a host in the child direction"
+title: "List childHostPairs"
 description: "Get the hostPair resources from the hostPairs navigation property in the child direction."
 author: "jakedavies-microsoft"
 ms.localizationpriority: medium
