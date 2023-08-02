@@ -25,7 +25,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Security().ThreatSubmission().EmailThreats().Post(context.Background(), requestBody, nil)
+emailThreats, err := graphClient.Security().ThreatSubmission().EmailThreats().Post(context.Background(), requestBody, nil)
 
 
 ```

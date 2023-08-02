@@ -25,7 +25,7 @@ configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGrou
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().FilterByCurrentUser(on='{on}')().Get(context.Background(), configuration)
+filterByCurrentUser(on='{on}'), err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().FilterByCurrentUser(on='{on}')().Get(context.Background(), configuration)
 
 
 ```

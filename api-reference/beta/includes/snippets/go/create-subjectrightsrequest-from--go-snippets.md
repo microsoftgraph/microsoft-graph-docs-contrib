@@ -66,7 +66,7 @@ approvers := []graphmodels.Userable {
 }
 requestBody.SetApprovers(approvers)
 
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
+subjectRightsRequests, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

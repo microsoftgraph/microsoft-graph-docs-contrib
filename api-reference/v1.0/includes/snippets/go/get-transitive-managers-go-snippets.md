@@ -28,7 +28,7 @@ configuration := &graphusers.MeRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Get(context.Background(), configuration)
+me, err := graphClient.Me().Get(context.Background(), configuration)
 
 
 ```

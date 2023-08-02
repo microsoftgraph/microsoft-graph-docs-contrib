@@ -6,12 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("select", "id,title"));
-requestOptions.add(new QueryOption("expand", "webparts"));
-
-SitePage sitePage = graphClient.sites("{sitesId}").pages("{sitePageId}")
-	.buildRequest( requestOptions )
+SitePage sitePage = graphClient.sites("{site-id}").pages("{page-id}").microsoft.graph.sitePage()
+	.buildRequest()
 	.get();
 
 ```

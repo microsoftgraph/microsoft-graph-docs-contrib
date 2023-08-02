@@ -55,7 +55,7 @@ applications.SetTargets(targets)
 b2bDirectConnectInbound.SetApplications(applications)
 requestBody.SetB2bDirectConnectInbound(b2bDirectConnectInbound)
 
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Post(context.Background(), requestBody, nil)
+partners, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Post(context.Background(), requestBody, nil)
 
 
 ```

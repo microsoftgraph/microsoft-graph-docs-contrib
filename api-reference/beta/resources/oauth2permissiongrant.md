@@ -34,7 +34,7 @@ Delegated permissions are sometimes referred to as "OAuth 2.0 scopes" or "scopes
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| clientId | String | The **id** of the client [service principal](serviceprincipal.md) for the application which is authorized to act on behalf of a signed-in user when accessing an API. Required. Supports `$filter` (`eq` only). |
+| clientId | String | The object **id** (*not* **appId**) of the client [service principal](serviceprincipal.md) for the application which is authorized to act on behalf of a signed-in user when accessing an API. Required. Supports `$filter` (`eq` only). |
 | consentType | String | Indicates whether authorization is granted for the client application to impersonate all users or only a specific user. *AllPrincipals* indicates authorization to impersonate all users. *Principal* indicates authorization to impersonate a specific user. Consent on behalf of all users can be granted by an administrator. Non-admin users may be authorized to consent on behalf of themselves in some cases, for some delegated permissions. Required. Supports `$filter` (`eq` only). |
 | expiryTime | DateTimeOffset | Currently, the end time value is ignored, but a value is required when creating an **oAuth2PermissionGrant**. Required. |
 | id | String | Unique identifier for the **oAuth2PermissionGrant**. Read-only.|
