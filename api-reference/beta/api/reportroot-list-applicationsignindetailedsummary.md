@@ -1,7 +1,7 @@
 ---
 title: "List applicationSignInDetailedSummary"
 description: "Retrieve the applicationSignInDetailedSummary objects."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
