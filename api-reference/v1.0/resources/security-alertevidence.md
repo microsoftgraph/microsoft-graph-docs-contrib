@@ -1,6 +1,6 @@
 ---
 title: "alertEvidence resource type"
-description: "Represents an evidence related to an alert."
+description: "Represents evidence related to an alert."
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,9 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents an evidence related to an [alert](security-alert.md).
+Represents evidence related to an [alert](security-alert.md).
 
-This is the base type of 
+The **alertEvidence** base type and its derived evidence types provide a means to organize and track rich data about each artifact involved in an **alert**. For example, an **alert** about an attacker's IP address signing in to a cloud service using a compromised user account can track the following evidence:
+- [IP evidence](security-ipevidence.md) with the roles of `attacker` and `source`, remediation status of `running`, and verdict of `malicious`.
+- [Cloud application evidence](security-cloudapplicationevidence.md) with a role of `contextual`.
+- [Mailbox evidence](security-mailboxevidence.md) for the hacked user account with a role of `compromised`.
+
+This resource is the base type for the following evidence types: 
 * [amazonResourceEvidence](security-amazonresourceevidence.md)
 * [analyzedMessageEvidence](security-analyzedmessageevidence.md)
 * [azureResourceEvidence](security-azureresourceevidence.md)
@@ -43,12 +48,6 @@ This is the base type of
 * [securityGroupEvidence](security-securitygroupevidence.md)
 * [urlEvidence](security-urlevidence.md)
 * [userEvidence](security-userevidence.md)
-
-This alert evidence base type and its derived evidence types provide a means to organize and track rich data about each artifact involved in an **alert**. For example, an **alert** about an attacker's IP address logging into a cloud service using a compromised user account can track the following evidence:
-- [IP evidence](security-ipevidence.md) with the roles of `attacker` and `source`, remediation status of `running`, and verdict of `malicious`.
-- [Cloud application evidence](security-cloudapplicationevidence.md) with a role of `contextual`.
-- [Mailbox evidence](security-mailboxevidence.md) for the hacked user account with a role of `compromised`.
-
 
 ## Properties
 
