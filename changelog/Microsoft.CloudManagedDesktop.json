@@ -1,6 +1,32 @@
 {
     "changelog": [
-    {
+        {
+            "ChangeList": [
+                {
+                    "Id": "6ec2ebe8-8f0c-4595-a8bb-5a40c631fcb8",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "reprovisionCloudPc",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **reprovisionCloudPc** API. Use [reprovision](https://learn.microsoft.com/en-us/graph/api/cloudPC-reprovision?view=graph-rest-beta) instead",
+                    "Target": "cloudPc"
+                },
+                {
+                    "Id": "6ec2ebe8-8f0c-4595-a8bb-5a40c631fcb8",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "restoreCloudPc",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **restoreCloudPc** API. Use [restore](https://learn.microsoft.com/en-us/graph/api/cloudPC-restore?view=graph-rest-beta) instead",
+                    "Target": "cloudPc"
+                }
+            ],
+            "Id": "6ec2ebe8-8f0c-4595-a8bb-5a40c631fcb8",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-08-03T06:58:17.7596296Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",
@@ -31,7 +57,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-06-28T06:58:17.7596296Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -83,7 +109,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-06-27T06:58:17.7596296Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
