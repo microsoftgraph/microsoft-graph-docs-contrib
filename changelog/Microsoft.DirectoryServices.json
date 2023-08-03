@@ -14217,7 +14217,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "onPremisesSipInfo",
           "ChangeType": "Addition",
-          "Description": "Added the `onPremisesSipInfo` property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Description": "Added the **onPremisesSipInfo** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         }
       ],
