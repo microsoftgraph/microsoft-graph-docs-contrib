@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Tags().MicrosoftGraphEdiscoveryAsHierarchy().Get(context.Background(), nil)
+microsoft.graph.ediscovery.asHierarchy(), err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Tags().MicrosoftGraphEdiscoveryAsHierarchy().Get(context.Background(), nil)
 
 
 ```

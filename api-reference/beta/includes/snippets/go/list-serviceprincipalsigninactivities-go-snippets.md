@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Reports().ServicePrincipalSignInActivities().Get(context.Background(), nil)
+servicePrincipalSignInActivities, err := graphClient.Reports().ServicePrincipalSignInActivities().Get(context.Background(), nil)
 
 
 ```

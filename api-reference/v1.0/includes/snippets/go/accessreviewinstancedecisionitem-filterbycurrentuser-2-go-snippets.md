@@ -22,7 +22,7 @@ configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDefinit
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().ByDefinitionId("accessReviewScheduleDefinition-id").Instances().ByInstanceId("accessReviewInstance-id").Stages().ByStageId("accessReviewStage-id").Decisions().FilterByCurrentUser(on='{on}')().Get(context.Background(), configuration)
+filterByCurrentUser(on='{on}'), err := graphClient.IdentityGovernance().AccessReviews().Definitions().ByAccessReviewScheduleDefinitionId("accessReviewScheduleDefinition-id").Instances().ByAccessReviewInstanceId("accessReviewInstance-id").Stages().ByAccessReviewStageId("accessReviewStage-id").Decisions().FilterByCurrentUser(on='{on}')().Get(context.Background(), configuration)
 
 
 ```

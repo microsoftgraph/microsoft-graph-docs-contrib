@@ -25,7 +25,7 @@ configuration := &grapheducation.EducationClasseItemAssignmentsDelta()RequestBui
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().Delta().Get(context.Background(), configuration)
+delta(), err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().Delta().Get(context.Background(), configuration)
 
 
 ```

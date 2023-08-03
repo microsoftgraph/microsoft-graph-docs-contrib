@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();
-$requestBody->setCreatedDateTime(new DateTime('2019-02-04T19:58:15.511Z'));
+$requestBody->setCreatedDateTime(new \DateTime('2019-02-04T19:58:15.511Z'));
 
 $from = new ChatMessageFromIdentitySet();
 $fromUser = new Identity();
@@ -31,7 +31,7 @@ $body->setContent('Hello World');
 $requestBody->setBody($body);
 
 
-$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->byMessageId('chatMessage-id')->replies()->post($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->byChatMessageId('chatMessage-id')->replies()->post($requestBody);
 
 
 ```

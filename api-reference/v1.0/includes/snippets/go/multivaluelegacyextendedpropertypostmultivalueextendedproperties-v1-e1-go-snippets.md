@@ -79,7 +79,7 @@ multiValueExtendedProperties := []graphmodels.MultiValueLegacyExtendedPropertyab
 }
 requestBody.SetMultiValueExtendedProperties(multiValueExtendedProperties)
 
-result, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
+events, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
 
 
 ```
