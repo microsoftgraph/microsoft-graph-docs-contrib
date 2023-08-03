@@ -420,6 +420,9 @@ Here is a JSON representation of the resource
   "birthday": "String (timestamp)",
   "businessPhones": ["String"],
   "city": "String",
+  "cloudRealtimeCommunicationInfo": {
+    "@odata.type": "microsoft.graph.cloudRealtimeCommunicationInfo"
+  },
   "companyName": "String",
   "consentProvidedForMinor": "String",
   "country": "String",
