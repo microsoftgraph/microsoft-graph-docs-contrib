@@ -12,7 +12,7 @@ This is best practices guidance for developers who are using the updated Azure p
 
 ## Azure portal experience
 
-With the updated portal experience, developers and global administrators within the tenant can review all registered applications, level of detail for authorization, and ability to manage app registrations. Launch your experience in the [Azure portal](aka.ms/mgdcinazure). When you return to the portal, re-launch it in the search bar.
+With the updated portal experience, developers and global administrators within the tenant can review all registered applications, level of detail for authorization, and ability to manage app registrations. Launch your experience in the [Azure portal](https;//aka.ms/mgdcinazure). When you return to the portal, re-launch it in the search bar.
 
 ### Landing page
 
@@ -48,7 +48,7 @@ The "Registration Info" page outlines standard requirements for app registration
 - `Resource Group` (required) select the group location for the data storage.
 - `Destination Type` select the type of storage from Azure Storage Account or Azure SQL Database Server
 
-If the selected type of storage is SQL Database Server, then it will only support `Mapping Data Flows` types. Learn more about [Mapping Data Flows](https://learn.microsoft.com/azure/data-factory/concepts-data-flow-overview).
+If the selected type of storage is SQL Database Server, then it will only support `Mapping Data Flows` types. Learn more about [Mapping Data Flows](/azure/data-factory/concepts-data-flow-overview).
 
 - `Storage Account` (required) select the storage account where the data to provision with Data Connect will be located, or create a new Azure Storage Account.
 - `Storage Account Uri` (required) from the storage account selected above, select the Uri to use (Distributed File System (DFS) or blob).
@@ -69,9 +69,9 @@ App registration requires you to select entries for the `Instance Details` that 
 
 #### Datasets
 
-After you complete the **Registration Info** page, specify the datasets that the app registration needs to query. This step is crucial for authorization. Only datasets selected here will be transferred for administrator authorization. [Learn more about datasets](./data-connect-datasets).
+After you complete the **Registration Info** page, specify the datasets that the app registration needs to query. This step is crucial for authorization. Only datasets selected here will be transferred for administrator authorization. [Learn more about datasets](/graph/data-connect-datasets).
 
-The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and further details if applicable—scope and scope options. [Learn more about scopes](./data-connect-filtering#user-selection). You can select each dataset that the app will request for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required, shown in the following images:
+The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and further details if applicable—scope and scope options. [Learn more about scopes](/graph/data-connect-filtering#user-selection). You can select each dataset that the app will request for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required, shown in the following images:
 
 ![Graphic showing the Datasets column selected while running the Data Connect app registration wizard.](images/app-registration-create-datasets.png)
 
