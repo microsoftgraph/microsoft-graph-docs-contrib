@@ -4,9 +4,9 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-You've completed the Microsoft Graph Data Connect tutorial! Please follow the steps below to ensure your JSON file is in your Azure Storage account.
+You've completed the Microsoft Graph Data Connect tutorial! Use the following steps to ensure that your JSON file is in your Azure Storage account:
 
-1. Open a browser and navigate to your [Azure portal](https://portal.azure.com/#home).
+1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
 2. Under **Azure Services**, choose **Storage accounts**.
 3. Select the Azure Storage account you created previously in this tutorial.
 4. On the left navigation pane, choose **Containers**.
