@@ -19,10 +19,10 @@ A subclass of [educationResource](educationresource.md) that represents a link t
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|String|The display name of the user that created this object.|
-|createdDateTime|DateTimeOffset|Date time the resoruce was added.|
+|createdDateTime|DateTimeOffset|Date time the resource was added.|
 |displayName|string|The display name of the resource.|
 |lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |url|String|Url of the actual assignment.|
 
 ## JSON representation
