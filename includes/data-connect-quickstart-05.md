@@ -40,7 +40,7 @@ As a prerequisite, enable Data Connect in your tenant. It's helpful to have an A
 
 Specify the datasets that the app registration needs to query. To learn more about datasets, see [Datasets, regions, and sinks supported by Microsoft Graph Data Connect](/graph/data-connect-datasets). Select **Next : Datasets >**.
 
-4. Select `BasicDataSet_v0.Message_v1` from the **Dataset** dropdown, and in the **Columns** dropdown, choose `All`. In the new row, select `BasicDataSet_v1` from the **Dataset** dropdown, and in the **Columns** dropdown, choose- `All`.
+4. Select `BasicDataSet_v0.Message_v1` from the **Dataset** dropdown, and in the **Columns** dropdown, choose `All`. In the new row, select `BasicDataSet_v1` from the **Dataset** dropdown, and in the **Columns** dropdown, choose `All`.
 
     ![A screenshot that shows the dataset catalog on the wizard.](../concepts/images/data-connect-register-app-3.png)
 
@@ -50,7 +50,7 @@ Specify the datasets that the app registration needs to query. To learn more abo
 
     ![A screenshot that shows the summary page for the Review + Create step.](../concepts/images/data-connect-register-app-4.png)
 
-6. If all required fields are provided, the app registration appears in the landing page:
+6. If all required fields are provided, the app registration appears in the landing page.
 
     ![A screenshot that shows the registered app on the landing page.](../concepts/images/data-connect-register-app-6.png)
 
@@ -61,9 +61,9 @@ Specify the datasets that the app registration needs to query. To learn more abo
  > [!NOTE]
  > If you are not in your **admin** account, there will be an error with the approval. You cannot self-approve your apps.
 
-2. On the left navigation pane, select **Settings > Org settings**. You might have to click **Show all** before you can view **Settings**.
+2. On the left navigation pane, select **Settings > Org settings**. You might have to choose **Show all** before you can view **Settings**.
 
-3. Switch to the **Security & privacy** tab and select the **Microsoft Graph Data Connect applications**.
+3. Switch to the **Security & privacy** tab and select **Microsoft Graph Data Connect applications**.
 
     ![A screenshot that shows the Security and privacy page in the Microsoft 365 admin center.](../concepts/images/data-connect-app-register-7.png)
 
@@ -71,9 +71,9 @@ Specify the datasets that the app registration needs to query. To learn more abo
 
     ![A screenshot that shows the pre-consented application in the landing page of the Microsoft Graph Data Connect applications portal.](../concepts/images/data-connect-app-register-8.png)
 
-5. Click on your application to open the application details view. Proceed through the wizard by clicking **Next** twice to review the two datasets.
+5. Select your application to open the application details view. Proceed through the wizard by choosing **Next** twice to review the two datasets.
 
-6. On the final step, click **Approve** to consent to your registered application accessing the specified data.
+6. On the final step, choose **Approve** to consent to your registered application accessing the specified data.
 
     ![A screenshot that shows the application details view with the Approve button highlighted.](../concepts/images/data-connect-app-register-9.png)
 
@@ -84,7 +84,7 @@ Specify the datasets that the app registration needs to query. To learn more abo
 ---
 
 
-# Guidance on Privileged Access Management (PAM)
+# Privileged Access Management (PAM) guidance
 
 If you are following the PAM steps, return to this section after setting up your Azure Synapse or Factory pipeline in the next step.
 
@@ -120,7 +120,7 @@ Attempting self-approval will result in an error message in the PAM portal: "Req
 
 1. From the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
 
-1. Click **Storage browser** in the sidebar navigation menu, then choose **Blob containers**. Select the specific container you created in this tutorial, which you configured as the destination for the extracted data in the Azure Data Factory pipeline. You should now be able to view the data stored within this container.
+1. Choose **Storage browser** in the sidebar navigation menu, then choose **Blob containers**. Select the specific container you created in this tutorial, which you configured as the destination for the extracted data in the Azure Data Factory pipeline. You should now be able to view the data stored within this container.
 
 # [PAM: PowerShell](#tab/PAMPowerShell)
 
