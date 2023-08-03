@@ -186,6 +186,11 @@ HTTP/1.1 204 No Content
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "update_teamsappsettings_3"
+}
+-->
 ```http
 PATCH https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 Content-Type: application/json

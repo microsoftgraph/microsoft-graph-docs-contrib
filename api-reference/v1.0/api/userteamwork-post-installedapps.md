@@ -47,7 +47,7 @@ The following table lists additional parameters that can be used with the reques
 |:---|:---|:---|
 |consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsappdefinition.md)|Set of resource-specific permissions that are being consented to.|
 
-> **Note**: The permissions consented to during the install must be same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsappdefinition.md) of the app. To get the application and delegated resource-specific permissions, see [List apps installed in the personal scope of a user](../api/userteamwork-list-installedapps.md). If only delegated resource-specific permissions are present in **teamsAppDefinition**, permissions can be omitted in the body of this request.
+> **Note:** The permissions consented to during the install must be same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsappdefinition.md) of the app. To get the application and delegated resource-specific permissions, see [List apps installed in the personal scope of a user](../api/userteamwork-list-installedapps.md). If only delegated resource-specific permissions are present in **teamsAppDefinition**, permissions can be omitted in the body of this request.
 
 ## Response
 
