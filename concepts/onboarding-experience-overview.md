@@ -26,7 +26,7 @@ Data Connect is moving from a just-in-time authorization model utilizing Privile
 
 **Service principal owner licenses are no longer required**—this removes requirements for service principal owners to be Microsoft 365 users with an E5 license, and completely removes license requirements. AAD application ownership is required for updating and deleting app registrations with MGDC. 
 
-Support for role-based access control of Data Connect applications using [Azure app roles](https://learn.microsoft.com/azure/active-directory/develop/howto-add-app-roles-in-apps#declare-roles-for-an-application) will be announced in the near future.
+Support for role-based access control of Data Connect applications using [Azure app roles](/azure/active-directory/develop/howto-add-app-roles-in-apps#declare-roles-for-an-application) will be announced in the near future.
 
 **Data Connect no longer requires the admin authorizing Microsoft 365 data access to have an E5 license**—user authorizing an app is required to be a global admin in order to access the [Data Connect app authorization portal](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter), and approve apps for Data Connect.
 
