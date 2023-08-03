@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of an [education module resource](../resources/educationmoduleresource.md) associated with an [module](../resources/educationmodule.md). Only teachers, students, and applications with application permissions can perform this operation.
+Get the properties of an [education module resource](../resources/educationmoduleresource.md) associated with a [module](../resources/educationmodule.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
