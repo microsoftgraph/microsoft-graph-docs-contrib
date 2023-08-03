@@ -20,7 +20,7 @@ This complex type contains all onPremises SIP information related to the user.
 |:---|:---|:---|
 |isSipEnabled|Boolean|Indicates whether the user is currently enabled for on-premises Skype for Business.|
 |sipDeploymentLocation|String|Indicates a fully qualified DNS name of the Microsoft Online Communications Server deployment.|
-|sipPrimaryAddress|String|Indicates a fully qualified DNS name of the Microsoft Online Communications Server deployment.|
+|sipPrimaryAddress|String|Serves as a unique identifier for each user on the on-premises Skype for Business.|
 
 ## Relationships
 None.
