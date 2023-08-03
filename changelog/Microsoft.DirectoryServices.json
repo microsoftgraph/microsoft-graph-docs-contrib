@@ -13963,7 +13963,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isSipEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the `isSipEnabled` property to the [cloudRealtimeCommunicationInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudRealtimeCommunicationInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the **isSipEnabled** property to the [cloudRealtimeCommunicationInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudRealtimeCommunicationInfo?view=graph-rest-beta) resource.",
           "Target": "cloudRealtimeCommunicationInfo"
         },
         {
@@ -13971,7 +13971,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "cloudRealtimeCommunicationInfo",
           "ChangeType": "Addition",
-          "Description": "Added the `cloudRealtimeCommunicationInfo` property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Description": "Added the **cloudRealtimeCommunicationInfo** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         }
       ],
