@@ -50,6 +50,8 @@ You can add any of these attributes to the profile card by configuring your [peo
 > [!IMPORTANT]
 > When adding an attribute to profile card, it takes up to 24 hours for the addition to be displayed.
 
+## Configure profile card properties using the Microsoft Graph REST API
+
 ### Example
 
 The following example displays the `Alias` attribute on the profile card.
@@ -181,9 +183,129 @@ DELETE https://graph.microsoft.com/beta/admin/people/profileCardProperties/custo
 HTTP/1.1 204 No Content
 ```
 
+## Configure profile card properties using PowerShell
+
+You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to configure profile card properties in your organization.
+
+### Prerequisites
+
+- **PowerShell module** - Install [module version 1.24.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
+- **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
+
+> [!NOTE]
+> Because profile card properties commands are only available in beta, switch to the beta profile before running the command.
+> ```powershell
+>    Select-MgProfile beta
+> ```
+
+### Confirm your current settings
+
+To get profile card properties configuration for an organization, use the following command.
+
+```powershell
+   Get-MgBetaAdminPersonProfileCardProperty
+```
+
+To get a profile card property configuration in an organization, use the following command.
+
+```powershell
+   Get-MgBetaAdminPersonProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+```
+
+> [!NOTE]
+> The get commands require `PeopleSettings.Read.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+>
+> ```powershell
+>    Connect-MgGraph -Scopes "PeopleSettings.Read.All"
+> ```
+
+> **Note:** The `Get-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Get-MgBetaAdminPersonProfileCardProperty` command.
+
+### Create profile card properties in your organization
+
+You can use the Microsoft Graph PowerShell module to make both additional AAD profile card  properties, and the 15 customizable AAD profile card properties available in your organization.
+
+> [!NOTE]
+> The create command requires `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+>
+> ```powershell
+>    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+> ```
+
+Use the following command.
+
+```powershell
+$params = @{
+	directoryPropertyName = "CustomAttribute1"
+	annotations = @(
+		@{
+			displayName = "Cost Center"
+			localizations = @(
+				@{
+					languageTag = "ru-RU"
+					displayName = "центр затрат"
+				}
+			)
+		}
+	)
+}
+
+New-MgBetaAdminPersonProfileCardProperty -BodyParameter $params
+```
+
+> **Note:** The `New-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `New-MgBetaAdminPersonProfileCardProperty` command.
+
+### Update profile card properties in your organization
+
+You can use the Microsoft Graph PowerShell module to update profile card properties available in your organization.
+
+> [!NOTE]
+> The update command requires `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+>
+> ```powershell
+>    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+> ```
+
+Use the following command, where you replace `$profileCardPropertyId` with the id of the property to be updated.
+
+```powershell
+$params = @{
+	annotations = @(
+		@{
+			localizations = @(
+				@{
+					languageTag = "no-NB"
+					displayName = "Kostnads Senter"
+				}
+			)
+		}
+	)
+}
+
+Update-MgBetaAdminPersonProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
+```
+> **Note:** The `Update-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Update-MgBetaAdminPersonProfileCardProperty` command.
+
+### Delete profile card properties in your organization
+
+You can use the Microsoft Graph PowerShell module to remove profile card properties from your organization.
+
+> [!NOTE]
+> The delete command requires `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+>
+> ```powershell
+>    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+> ```
+
+Use the following command, where you replace `$profileCardPropertyId` with the id of the property to be deleted.
+
+```powershell
+ Remove-MgBetaAdminPersonProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+```
+> **Note:** The `Remove-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Remove-MgBetaAdminPersonProfileCardProperty` command.
+
 ## See also
 
-- [Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id)
 - [onPremisesExtensionAttributes resource type](/graph/api/resources/onpremisesextensionattributes)
 - [User resource type](/graph/api/resources/user)
 - [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
