@@ -2,7 +2,7 @@
 title: "detailsInfo resource type"
 description: "A property bag that can contain any information about the associated identity or system."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
