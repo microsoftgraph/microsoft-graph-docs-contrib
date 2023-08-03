@@ -55,7 +55,7 @@ Next, the wizard includes multiple dataset steps. There will be one step per dat
 
 `Columns`—specifies columns the app intends to extract via Data Connect. If approved, this app can extract any subset of approved columns for the specified dataset.
 
-`Scope`—specifies scope (i.e., user selection) the app intends to extract via Data Connect. [Learn more about scopes in Data Connect](./data-connect-users-and-groups).
+`Scope`—specifies scope (i.e., user selection) the app intends to extract via Data Connect. [Learn more about scopes in Data Connect](/graph/data-connect-users-and-groups).
 Please see the [Authorization validation during pipeline execution](#authorization-validation-during-pipeline-execution) section on this page for details on how authorization works with different scopes.
 
 ![Graphic showing the scopes review page in Data Connect portal.](images/authorization-app-details-review.png)
