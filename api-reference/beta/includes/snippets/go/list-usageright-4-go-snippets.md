@@ -25,7 +25,7 @@ configuration := &graphusers.UserItemUsageRightsRequestBuilderGetRequestConfigur
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Users().ByUserId("user-id").UsageRights().Get(context.Background(), configuration)
+usageRights, err := graphClient.Users().ByUserId("user-id").UsageRights().Get(context.Background(), configuration)
 
 
 ```

@@ -73,7 +73,7 @@ Content-type: application/json
                             "summary": "",
                             "resultTemplateId": "1603900360618_5XCBK2OXG",
                             "resource": {
-                                "@odata.type": "#microsoft.graph.externalItem",
+                                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                                 "id": "B5B6E9C7-152C-4478-BCCB-CEF053F17397",
                                 "Title": "[SM00186] Number of tests - Liquid",
                                 "URL": "https://liquid.microsoft.com/Web/Object/Read/scanningtoolwarnings/Requirements/CodeQL.SM00186"
@@ -85,7 +85,7 @@ Content-type: application/json
                             "summary": "",
                             "resultTemplateId": "1603900360618_5XCBK2OXP",
                             "resource": {
-                                "@odata.type": "#microsoft.graph.externalItem",
+                                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                                 "id": "B5B6E9C7-152C-4478-BCCB-CEF053F17398",
                                 "Title": "[SM00186] Number of tests - Liquid 2",
                                 "URL": "https://liquid.microsoft.com/Web/Object/Read/scanningtoolwarnings/Requirements/CodeQL.SM00186"
@@ -97,7 +97,7 @@ Content-type: application/json
                             "summary": "",
                             "resultTemplateId": "1603900360618_5XCBK2OXG",
                             "resource": {
-                                "@odata.type": "#microsoft.graph.externalItem",
+                                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                                 "id": "B5B6E9C7-152C-4478-BCCB-CEF053F17399",
                                 "Title": "[SM00186] Number of tests - Liquid 3",
                                 "URL": "https://liquid.microsoft.com/Web/Object/Read/scanningtoolwarnings/Requirements/CodeQL.SM00186"
@@ -305,7 +305,7 @@ The following example shows how to use Adaptive Card templating to render search
                                         "summary": "",
                                         "resultTemplateId": "1603900360618_5XCBK2OXG",
                                         "resource": {
-                                            "@odata.type": "#microsoft.graph.externalItem",
+                                            "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                                             "id": "B5B6E9C7-152C-4478-BCCB-CEF053F17397",
                                             "Title": "[SM00186] Number of tests - Liquid",
                                             "URL": "https://liquid.microsoft.com/Web/Object/Read/scanningtoolwarnings/Requirements/CodeQL.SM00186"
@@ -317,7 +317,7 @@ The following example shows how to use Adaptive Card templating to render search
                                         "summary": "",
                                         "resultTemplateId": "1603900360618_5XCBK2OXP",
                                         "resource": {
-                                            "@odata.type": "#microsoft.graph.externalItem",
+                                            "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                                             "id": "B5B6E9C7-152C-4478-BCCB-CEF053F17398",
                                             "Title": "[SM00186] Number of tests - Liquid 2",
                                             "URL": "https://liquid.microsoft.com/Web/Object/Read/scanningtoolwarnings/Requirements/CodeQL.SM00186"
@@ -329,7 +329,7 @@ The following example shows how to use Adaptive Card templating to render search
                                         "summary": "",
                                         "resultTemplateId": "1603900360618_5XCBK2OXG",
                                         "resource": {
-                                            "@odata.type": "#microsoft.graph.externalItem",
+                                            "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                                             "id": "B5B6E9C7-152C-4478-BCCB-CEF053F17399",
                                             "Title": "[SM00186] Number of tests - Liquid 3",
                                             "URL": "https://liquid.microsoft.com/Web/Object/Read/scanningtoolwarnings/Requirements/CodeQL.SM00186"

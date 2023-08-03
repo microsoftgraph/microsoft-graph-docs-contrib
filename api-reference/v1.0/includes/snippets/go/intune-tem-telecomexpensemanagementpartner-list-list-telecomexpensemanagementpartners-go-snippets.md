@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().TelecomExpenseManagementPartners().Get(context.Background(), nil)
+telecomExpenseManagementPartners, err := graphClient.DeviceManagement().TelecomExpenseManagementPartners().Get(context.Background(), nil)
 
 
 ```
