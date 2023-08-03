@@ -1,7 +1,7 @@
 ---
 title: "authenticationContext resource type"
 description: "Describes the conditional access authentication context of a sign-in event."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

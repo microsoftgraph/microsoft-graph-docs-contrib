@@ -25,7 +25,7 @@ configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGrou
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().AssignmentSchedules().Get(context.Background(), configuration)
+assignmentSchedules, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().AssignmentSchedules().Get(context.Background(), configuration)
 
 
 ```
