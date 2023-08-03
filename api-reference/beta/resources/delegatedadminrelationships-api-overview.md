@@ -46,7 +46,7 @@ To finalize the workflow for enabling admin on behalf of (AOBO) management of th
 
 ### Lifecycle of a GDAP relationship access assignment
 
-The delegated admin access assignment goes through the following status transitions:
+The delegated admin access assignment goes through the status transitions shown in the following diagram.
 
 ![Delegated admin access assignment status transition diagram](access-assignment-status-transitions.png)
 
