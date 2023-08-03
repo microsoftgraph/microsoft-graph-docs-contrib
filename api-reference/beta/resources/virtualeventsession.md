@@ -21,7 +21,7 @@ Inherits from [onlineMeeting](../resources/onlinemeeting.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get virtualEventSession](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
+|[Get](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
 
 ## Properties
 
@@ -31,7 +31,8 @@ Reference base type [onlineMeeting](../resources/onlinemeeting.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of the virtual event session. Inherited from [microsoft.graph.onlineMeeting](../resources/onlinemeeting.md).|
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [microsoft.graph.onlineMeeting](../resources/onlinemeeting.md).|
+|registrations|[virtualEventRegistration](../resources/meetingattendancereport.md) collection|Registration records of this virtual event session.|
 
 ## JSON representation
 
