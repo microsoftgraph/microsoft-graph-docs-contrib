@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 
 The first section in this step is for users who have completed the new and updated consent flow to set up their pipeline. It describes how to register and approve an Azure Active Directory (Azure AD) application with Microsoft Graph Data Connect (Data Connect). As a prerequisite, Data Connect should be enabled in your tenant. We recommend creating an Azure AD application and a storage destination resource.
 
-The second section covers the approval and denial of application requests using our former consent process with Privileged Access Management (PAM). The first tab provides instructions for the admin center's former consent process, while the second tab offers guidance through a PowerShell script. 
+The second section covers application requests and is meant for users engaging with our former consent process involving Privileged Access Management (PAM). The first tab provides instructions to approve or deny a request within the admin center, while the second tab offers the same guidance through a PowerShell script. 
 
 >[!NOTE]
->If you are following the PAM steps, we suggest revisiting this step after setting up your Azure Synapse or Factory pipeline in the next step.
+> If you are following the PAM steps, we suggest revisiting this step after setting up your Azure Synapse or Factory pipeline in the next step.
 
-## [Register your application with Microsoft Graph Data Connect](#tab/RegisterAADApplication)
+## Register your application with Microsoft Graph Data Connect
 
 As a prerequisite, enable Data Connect in your tenant. It's helpful to have an Azure AD app and storage destination resource created; you can also set these up by using the wizard. The app registration process in Data Connect involves using a wizard with three tabs: Registration info, Datasets, and Review + create.
 
@@ -31,7 +31,7 @@ As a prerequisite, enable Data Connect in your tenant. It's helpful to have an A
         - **Storage Account:** Select the storage account you created previously.
         - **Storage Account Uri:** Select the option with **.blob.core.windows.net**
     2. **Application ID:** Select an existing Azure AD in the tenant or create a new one.
-    3. **Description:** Type **My first MGDC app**.
+    3. **Description:** Type **My first app**.
     4. **Publish Type:** Choose **Single-Tenant**.
 
     ![A screenshot that shows the project details on the wizard.](../concepts/images/data-connect-register-app-2.png)
@@ -81,7 +81,6 @@ Specify the datasets that the app registration needs to query. To learn more abo
 
     ![A screenshot that shows the approved application in the landing page of the Microsoft Graph Data Connect applications portal.](../concepts/images/data-connect-app-register-10.png)
 
----
 
 
 # Privileged Access Management (PAM) guidance
