@@ -1719,7 +1719,11 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ### Application permissions
 
-None.
+| Permission                                   | Display String                                                       | Description                                                                                                                            | Admin Consent Required | Microsoft Account supported |
+| :------------------------------------------- | :------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :-------------------------- |
+| OnPremDirectorySynchronization.Read.All      | Read all on-premises directory synchronization information           | Allows the app to read all on-premises directory synchronization information for the organization, without a signed-in user.           | Yes                    | No                          |
+| OnPremDirectorySynchronization.ReadWrite.All | Read and write all on-premises directory synchronization information | Allows the app to read and write all on-premises directory synchronization information for the organization, without a signed-in user. | Yes                    | No                          |
+
 ---
 
 ## On-premises publishing profiles permissions
