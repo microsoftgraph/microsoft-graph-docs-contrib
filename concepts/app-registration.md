@@ -12,7 +12,7 @@ This is best practices guidance for developers who are using the updated Azure p
 
 ## Azure portal experience
 
-With the updated portal experience, developers and global administrators within the tenant can review all registered applications, level of detail for authorization, and ability to manage app registrations. Launch your experience in the [Azure portal](https;//aka.ms/mgdcinazure). When you return to the portal, re-launch it in the search bar.
+With the updated portal experience, developers and global administrators within the tenant can review all registered applications, level of detail for authorization, and ability to manage app registrations. Launch your experience in the [Azure portal](https://aka.ms/mgdcinazure). When you return to the portal, re-launch it in the search bar.
 
 ### Landing page
 
