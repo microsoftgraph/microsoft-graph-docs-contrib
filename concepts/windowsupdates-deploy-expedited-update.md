@@ -32,9 +32,9 @@ You can query the deployment service catalog to get a list of updates that can b
 
 Security updates are represented by the [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) type, with a **qualityUpdateClassification** of `security`. All Windows 10 and Windows 11 quality updates that are classified as security updates can be expedited and are tagged with the **isExpeditable** property set to `true` to identify them.
 
-All quality updates refer to a list of [product revisions](../api-reference/beta/resources/windowsupdates-productrevision.md). Add `$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions` to your query to identify the operating system builds that are affected by each quality update.
+All quality updates refer to a list of [product revisions](/graph/api/resources/windowsupdates-productrevision). Add `$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions` to the request URL to identify the operating system builds that are affected by each quality update.
 
-Below is an example of querying for all Windows 10 security updates that can be deployed as expedited updates by the deployment service. Microsoft recommends to only show the three most current updates, so the example includes `$top=3`.
+The following example shows how to query for all Windows 10 security updates that can be deployed as expedited updates by the deployment service. We recommend to only show the three most current updates, so the following example includes `$top=3`.
 
 ### Request
 
