@@ -17,7 +17,7 @@ Only teachers can perform this action. A teacher wants to mark a submission as e
 
 If the header Prefer: include-unknown-enum-members is provided, a excused submission retains the excused status. For details, see the examples section.
 
-If the header Prefer: include-unknown-enum-members is not provided, submission status changes to returned For details, see the examples section.
+If the header Prefer: include-unknown-enum-members is not provided, submission status changes to returned. For details, see the examples section.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,11 +47,12 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 Ok` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 
 ## Example 1:
-The following example shows how to call this API.
+The following example shows how to call this API (With Header "Prefer: include-unknown-enum-members").
 ### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+(With Header "Prefer: include-unknown-enum-members")
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_excuse"
