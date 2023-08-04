@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 
 The Microsoft Graph REST API can deliver change notifications to clients through various endpoints, including webhooks, Event Hubs, and Event Grid. To learn how to subscribe and receive notifications for your application, see [Set up notifications for changes in user data](/graph/webhooks).
 
-## Supported resources
 [!INCLUDE [change-notifications-supported-resources-expanded](../../../concepts/includes/change-notifications-supported-resources-expanded.md)]
 
 > **Note**: Any resource path that begins with `/users/{id}` can also accept `/me` to reference the signed-in user.
