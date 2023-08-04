@@ -2,7 +2,7 @@
 title: "Delete customAppScope"
 description: "Delete a customAppScope object of an RBAC provider."
 ms.localizationpriority: medium
-author: "bili1"
+author: "cubika "
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
