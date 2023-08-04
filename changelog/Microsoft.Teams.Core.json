@@ -6466,6 +6466,64 @@
       "CreatedDateTime": "2023-07-06T10:18:40.595Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2ad1da60-6b6e-4582-a3d9-2358fcb158d6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "audioSourceLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the [audiosourcelevel](https://learn.microsoft.com/graph/api/resources/audiosourcelevel?view=graph-rest-v1.0) resource type.",
+          "Target": "audioSourceLevel"
+        },
+        {
+          "Id": "2ad1da60-6b6e-4582-a3d9-2358fcb158d6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "participantMixerLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the [participantmixerlevel](https://learn.microsoft.com/graph/api/resources/participantmixerlevel?view=graph-rest-v1.0) resource type.",
+          "Target": "participantMixerLevel"
+        },
+        {
+          "Id": "2ad1da60-6b6e-4582-a3d9-2358fcb158d6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "audioDuckingConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [audioduckingconfiguration](https://learn.microsoft.com/graph/api/resources/audioduckingconfiguration?view=graph-rest-v1.0) resource type.",
+          "Target": "audioDuckingConfiguration"
+        },
+        {
+          "Id": "2ad1da60-6b6e-4582-a3d9-2358fcb158d6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "audioRoutingGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [audioroutinggroup](https://learn.microsoft.com/graph/api/resources/audioroutinggroup?view=graph-rest-v1.0) resource type.",
+          "Target": "audioRoutingGroup"
+        },
+        {
+          "Id": "2ad1da60-6b6e-4582-a3d9-2358fcb158d6",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [create](https://docs.microsoft.com/en-us/graph/api/call-post-audioroutinggroups?view=graph-rest-v1.0) to the [call](https://learn.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "2ad1da60-6b6e-4582-a3d9-2358fcb158d6",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/call-list-audioroutinggroups?view=graph-rest-v1.0) to the [call](https://learn.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0) resource.",
+          "Target": "call"
+        }
+      ],
+      "Id": "2ad1da60-6b6e-4582-a3d9-2358fcb158d6",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "SubArea": "Calls and online meetings",
+      "WorkloadArea": "Teamwork and communications",
+      "CreatedDateTime": "2023-07-26T00:00:00"
     }
   ]
 }

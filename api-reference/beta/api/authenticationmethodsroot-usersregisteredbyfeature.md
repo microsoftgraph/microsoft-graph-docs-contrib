@@ -1,7 +1,7 @@
 ---
 title: "authenticationMethodsRoot: usersRegisteredByFeature"
 description: "Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegister
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/authenticationmethodsroot-usersregisteredbyfeature-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/authenticationmethodsroot-usersregisteredbyfeature-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

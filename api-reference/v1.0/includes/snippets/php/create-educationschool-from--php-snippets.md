@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationSchool();
-$requestBody->set@odatatype('#microsoft.graph.educationSchool');
+$requestBody->setOdataType('#microsoft.graph.educationSchool');
 
 $requestBody->setDisplayName('String');
 
@@ -39,12 +39,12 @@ $requestBody->setPhone('String');
 $requestBody->setFax('String');
 
 $createdBy = new IdentitySet();
-$createdBy->set@odatatype('microsoft.graph.identitySet');
+$createdBy->setOdataType('microsoft.graph.identitySet');
 
 
 $requestBody->setCreatedBy($createdBy);
 $address = new PhysicalAddress();
-$address->set@odatatype('microsoft.graph.physicalAddress');
+$address->setOdataType('microsoft.graph.physicalAddress');
 
 
 $requestBody->setAddress($address);

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessReviewStage();
-$requestBody->set@odatatype('#microsoft.graph.accessReviewStage');
+$requestBody->setOdataType('#microsoft.graph.accessReviewStage');
 
 $reviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
 $reviewersAccessReviewReviewerScope1->setQuery('/users/1ed8ac56-4827-4733-8f80-86adc2e67db5');
@@ -41,7 +41,7 @@ $requestBody->setFallbackReviewers($fallbackReviewersArray);
 
 
 
-$result = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->byDefinitionId('accessReviewScheduleDefinition-id')->instances()->byInstanceId('accessReviewInstance-id')->stages()->byStageId('accessReviewStage-id')->patch($requestBody);
+$result = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->byAccessReviewScheduleDefinitionId('accessReviewScheduleDefinition-id')->instances()->byAccessReviewInstanceId('accessReviewInstance-id')->stages()->byAccessReviewStageId('accessReviewStage-id')->patch($requestBody);
 
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();
 $requestBody->setMessageType(new ChatMessageType('message'));
@@ -60,7 +60,7 @@ $attachmentsChatMessageAttachment1->setContentType('application/vnd.microsoft.ca
 
 $attachmentsChatMessageAttachment1->setContentUrl(null);
 
-$attachmentsChatMessageAttachment1->setContent('{\r\n  \"title\": \"*title*\",\r\n  \"subtitle\": \"*subtitle*\",\r\n  \"text\": \"Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you\'re cooking up.Here’s a small sample of some recipes to whet your appetite.\",\r\n  \"images\": [\r\n    {\r\n      \"url\": \"https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview\"\r\n    }\r\n  ],\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"openUrl\",\r\n      \"image\": \"https://urlp.asm.skype.com/v1/url/content?url=https%3a%2f%2fcdn2.iconfinder.com%2fdata%2ficons%2fsocial-icons-33%2f128%2fTrello-128.png\",\r\n      \"title\": \"😃😃 click me 😃😃\",\r\n      \"value\": \"http://microsoft.com\"\r\n    },\r\n    {\r\n      \"type\": \"imback\",\r\n      \"title\": \"&i am back& <>= \\"\",\r\n      \"value\": \"&i am back& <>= \\"\"\r\n    },\r\n    {\r\n      \"type\": \"openUrl\",\r\n      \"title\": \"Open URL\",\r\n      \"value\": \"http://google.com\"\r\n    }\r\n  ]\r\n}');
+$attachmentsChatMessageAttachment1->setContent('{\r\n  \"title\": \"*title*\",\r\n  \"subtitle\": \"*subtitle*\",\r\n  \"text\": \"Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you\'re cooking up.Here’s a small sample of some recipes to whet your appetite.\",\r\n  \"images\": [\r\n    {\r\n      \"url\": \"https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview\"\r\n    }\r\n  ],\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"openUrl\",\r\n      \"image\": \"https://urlp.asm.skype.com/v1/url/content?url=https%3a%2f%2fcdn2.iconfinder.com%2fdata%2ficons%2fsocial-icons-33%2f128%2fTrello-128.png\",\r\n      \"title\": \"😃😃 click me 😃😃\",\r\n      \"value\": \"http://microsoft.com\"\r\n    },\r\n    {\r\n      \"type\": \"imback\",\r\n      \"title\": \"&i am back& <>= \"\",\r\n      \"value\": \"&i am back& <>= \"\"\r\n    },\r\n    {\r\n      \"type\": \"openUrl\",\r\n      \"title\": \"Open URL\",\r\n      \"value\": \"http://google.com\"\r\n    }\r\n  ]\r\n}');
 
 $attachmentsChatMessageAttachment1->setName(null);
 
@@ -75,7 +75,7 @@ $attachmentsChatMessageAttachment2->setContentType('application/vnd.microsoft.ca
 
 $attachmentsChatMessageAttachment2->setContentUrl(null);
 
-$attachmentsChatMessageAttachment2->setContent('{\r\n  \"title\": \"*title*\",\r\n  \"subtitle\": \"*subtitle*\",\r\n  \"text\": \"Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you\'re cooking up.Here’s a small sample of some recipes to whet your appetite.\",\r\n  \"images\": [\r\n    {\r\n      \"url\": \"https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview\"\r\n    }\r\n  ],\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"&message back& <>= \\"\",\r\n      \"text\": \"text = &message back& <>= \\"\",\r\n      \"displayText\": \"displayText = &message back& <>= \\"\",\r\n      \"value\": {\r\n        \"text\": \"some text 2\"\r\n      }\r\n    }\r\n  ]\r\n}');
+$attachmentsChatMessageAttachment2->setContent('{\r\n  \"title\": \"*title*\",\r\n  \"subtitle\": \"*subtitle*\",\r\n  \"text\": \"Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you\'re cooking up.Here’s a small sample of some recipes to whet your appetite.\",\r\n  \"images\": [\r\n    {\r\n      \"url\": \"https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview\"\r\n    }\r\n  ],\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"&message back& <>= \"\",\r\n      \"text\": \"text = &message back& <>= \"\",\r\n      \"displayText\": \"displayText = &message back& <>= \"\",\r\n      \"value\": {\r\n        \"text\": \"some text 2\"\r\n      }\r\n    }\r\n  ]\r\n}');
 
 $attachmentsChatMessageAttachment2->setName(null);
 
@@ -91,7 +91,7 @@ $requestBody->setMentions([]);
 $reactionsChatMessageReaction1 = new ChatMessageReaction();
 $reactionsChatMessageReaction1->setReactionType('angry');
 
-$reactionsChatMessageReaction1->setCreatedDateTime(new DateTime('2018-10-21T08:10:30.489Z'));
+$reactionsChatMessageReaction1->setCreatedDateTime(new \DateTime('2018-10-21T08:10:30.489Z'));
 
 $reactionsChatMessageReaction1User = new ChatMessageReactionIdentitySet();
 $reactionsChatMessageReaction1User->setApplication(null);
@@ -104,7 +104,7 @@ $reactionsChatMessageReaction1UserUser->setId('f1b66449-b46d-49b0-9c3c-53c10a5c8
 $reactionsChatMessageReaction1UserUser->setDisplayName(null);
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+	'userIdentityType' => 'aadUser', 
 ];
 $reactionsChatMessageReaction1UserUser->setAdditionalData($additionalData);
 
@@ -118,7 +118,7 @@ $reactionsArray []= $reactionsChatMessageReaction1;
 $reactionsChatMessageReaction2 = new ChatMessageReaction();
 $reactionsChatMessageReaction2->setReactionType('laugh');
 
-$reactionsChatMessageReaction2->setCreatedDateTime(new DateTime('2018-10-21T08:10:32.489Z'));
+$reactionsChatMessageReaction2->setCreatedDateTime(new \DateTime('2018-10-21T08:10:32.489Z'));
 
 $reactionsChatMessageReaction2User = new ChatMessageReactionIdentitySet();
 $reactionsChatMessageReaction2User->setApplication(null);
@@ -131,7 +131,7 @@ $reactionsChatMessageReaction2UserUser->setId('03a02232-d8f5-4970-a77e-6e8c76ce7
 $reactionsChatMessageReaction2UserUser->setDisplayName(null);
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+	'userIdentityType' => 'aadUser', 
 ];
 $reactionsChatMessageReaction2UserUser->setAdditionalData($additionalData);
 
@@ -145,7 +145,7 @@ $reactionsArray []= $reactionsChatMessageReaction2;
 $reactionsChatMessageReaction3 = new ChatMessageReaction();
 $reactionsChatMessageReaction3->setReactionType('like');
 
-$reactionsChatMessageReaction3->setCreatedDateTime(new DateTime('2018-10-21T02:17:14.67Z'));
+$reactionsChatMessageReaction3->setCreatedDateTime(new \DateTime('2018-10-21T02:17:14.67Z'));
 
 $reactionsChatMessageReaction3User = new ChatMessageReactionIdentitySet();
 $reactionsChatMessageReaction3User->setApplication(null);
@@ -158,7 +158,7 @@ $reactionsChatMessageReaction3UserUser->setId('f1b66449-b46d-49b0-9c3c-53c10a5c8
 $reactionsChatMessageReaction3UserUser->setDisplayName(null);
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+	'userIdentityType' => 'aadUser', 
 ];
 $reactionsChatMessageReaction3UserUser->setAdditionalData($additionalData);
 
@@ -172,7 +172,7 @@ $reactionsArray []= $reactionsChatMessageReaction3;
 $reactionsChatMessageReaction4 = new ChatMessageReaction();
 $reactionsChatMessageReaction4->setReactionType('like');
 
-$reactionsChatMessageReaction4->setCreatedDateTime(new DateTime('2018-10-21T02:34:40.3Z'));
+$reactionsChatMessageReaction4->setCreatedDateTime(new \DateTime('2018-10-21T02:34:40.3Z'));
 
 $reactionsChatMessageReaction4User = new ChatMessageReactionIdentitySet();
 $reactionsChatMessageReaction4User->setApplication(null);
@@ -185,7 +185,7 @@ $reactionsChatMessageReaction4UserUser->setId('4c9041b7-449a-40f7-8855-56da239b9
 $reactionsChatMessageReaction4UserUser->setDisplayName(null);
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+	'userIdentityType' => 'aadUser', 
 ];
 $reactionsChatMessageReaction4UserUser->setAdditionalData($additionalData);
 
@@ -199,7 +199,7 @@ $reactionsArray []= $reactionsChatMessageReaction4;
 $reactionsChatMessageReaction5 = new ChatMessageReaction();
 $reactionsChatMessageReaction5->setReactionType('like');
 
-$reactionsChatMessageReaction5->setCreatedDateTime(new DateTime('2018-10-21T08:10:25.489Z'));
+$reactionsChatMessageReaction5->setCreatedDateTime(new \DateTime('2018-10-21T08:10:25.489Z'));
 
 $reactionsChatMessageReaction5User = new ChatMessageReactionIdentitySet();
 $reactionsChatMessageReaction5User->setApplication(null);
@@ -212,7 +212,7 @@ $reactionsChatMessageReaction5UserUser->setId('03a02232-d8f5-4970-a77e-6e8c76ce7
 $reactionsChatMessageReaction5UserUser->setDisplayName(null);
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+	'userIdentityType' => 'aadUser', 
 ];
 $reactionsChatMessageReaction5UserUser->setAdditionalData($additionalData);
 
@@ -226,7 +226,7 @@ $reactionsArray []= $reactionsChatMessageReaction5;
 $reactionsChatMessageReaction6 = new ChatMessageReaction();
 $reactionsChatMessageReaction6->setReactionType('heart');
 
-$reactionsChatMessageReaction6->setCreatedDateTime(new DateTime('2018-10-21T08:10:31.489Z'));
+$reactionsChatMessageReaction6->setCreatedDateTime(new \DateTime('2018-10-21T08:10:31.489Z'));
 
 $reactionsChatMessageReaction6User = new ChatMessageReactionIdentitySet();
 $reactionsChatMessageReaction6User->setApplication(null);
@@ -239,7 +239,7 @@ $reactionsChatMessageReaction6UserUser->setId('03a02232-d8f5-4970-a77e-6e8c76ce7
 $reactionsChatMessageReaction6UserUser->setDisplayName(null);
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+	'userIdentityType' => 'aadUser', 
 ];
 $reactionsChatMessageReaction6UserUser->setAdditionalData($additionalData);
 
@@ -253,7 +253,7 @@ $reactionsArray []= $reactionsChatMessageReaction6;
 $reactionsChatMessageReaction7 = new ChatMessageReaction();
 $reactionsChatMessageReaction7->setReactionType('sad');
 
-$reactionsChatMessageReaction7->setCreatedDateTime(new DateTime('2018-10-21T08:10:33.489Z'));
+$reactionsChatMessageReaction7->setCreatedDateTime(new \DateTime('2018-10-21T08:10:33.489Z'));
 
 $reactionsChatMessageReaction7User = new ChatMessageReactionIdentitySet();
 $reactionsChatMessageReaction7User->setApplication(null);
@@ -266,7 +266,7 @@ $reactionsChatMessageReaction7UserUser->setId('03a02232-d8f5-4970-a77e-6e8c76ce7
 $reactionsChatMessageReaction7UserUser->setDisplayName(null);
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+	'userIdentityType' => 'aadUser', 
 ];
 $reactionsChatMessageReaction7UserUser->setAdditionalData($additionalData);
 
@@ -280,7 +280,7 @@ $reactionsArray []= $reactionsChatMessageReaction7;
 $reactionsChatMessageReaction8 = new ChatMessageReaction();
 $reactionsChatMessageReaction8->setReactionType('surprised');
 
-$reactionsChatMessageReaction8->setCreatedDateTime(new DateTime('2018-10-21T08:10:34.489Z'));
+$reactionsChatMessageReaction8->setCreatedDateTime(new \DateTime('2018-10-21T08:10:34.489Z'));
 
 $reactionsChatMessageReaction8User = new ChatMessageReactionIdentitySet();
 $reactionsChatMessageReaction8User->setApplication(null);
@@ -293,7 +293,7 @@ $reactionsChatMessageReaction8UserUser->setId('03a02232-d8f5-4970-a77e-6e8c76ce7
 $reactionsChatMessageReaction8UserUser->setDisplayName(null);
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+	'userIdentityType' => 'aadUser', 
 ];
 $reactionsChatMessageReaction8UserUser->setAdditionalData($additionalData);
 
@@ -308,9 +308,9 @@ $requestBody->setReactions($reactionsArray);
 
 
 $messageHistoryChatMessageHistoryItem1 = new ChatMessageHistoryItem();
-$messageHistoryChatMessageHistoryItem1->setModifiedDateTime(new DateTime('2018-10-21T08:10:30.489Z'));
+$messageHistoryChatMessageHistoryItem1->setModifiedDateTime(new \DateTime('2018-10-21T08:10:30.489Z'));
 
-$messageHistoryChatMessageHistoryItem1->setActions(new ChatMessageActions('reactionadded'));
+$messageHistoryChatMessageHistoryItem1->setActions(new ChatMessageActions('reactionAdded'));
 
 $messageHistoryChatMessageHistoryItem1Reaction = new ChatMessageReaction();
 $messageHistoryChatMessageHistoryItem1Reaction->setReactionType('angry');
@@ -340,9 +340,9 @@ $messageHistoryChatMessageHistoryItem1->setReaction($messageHistoryChatMessageHi
 
 $messageHistoryArray []= $messageHistoryChatMessageHistoryItem1;
 $messageHistoryChatMessageHistoryItem2 = new ChatMessageHistoryItem();
-$messageHistoryChatMessageHistoryItem2->setModifiedDateTime(new DateTime('2018-10-21T08:10:32.489Z'));
+$messageHistoryChatMessageHistoryItem2->setModifiedDateTime(new \DateTime('2018-10-21T08:10:32.489Z'));
 
-$messageHistoryChatMessageHistoryItem2->setActions(new ChatMessageActions('reactionadded'));
+$messageHistoryChatMessageHistoryItem2->setActions(new ChatMessageActions('reactionAdded'));
 
 $messageHistoryChatMessageHistoryItem2Reaction = new ChatMessageReaction();
 $messageHistoryChatMessageHistoryItem2Reaction->setReactionType('laugh');
@@ -372,9 +372,9 @@ $messageHistoryChatMessageHistoryItem2->setReaction($messageHistoryChatMessageHi
 
 $messageHistoryArray []= $messageHistoryChatMessageHistoryItem2;
 $messageHistoryChatMessageHistoryItem3 = new ChatMessageHistoryItem();
-$messageHistoryChatMessageHistoryItem3->setModifiedDateTime(new DateTime('2018-10-21T02:17:14.67Z'));
+$messageHistoryChatMessageHistoryItem3->setModifiedDateTime(new \DateTime('2018-10-21T02:17:14.67Z'));
 
-$messageHistoryChatMessageHistoryItem3->setActions(new ChatMessageActions('reactionadded'));
+$messageHistoryChatMessageHistoryItem3->setActions(new ChatMessageActions('reactionAdded'));
 
 $messageHistoryChatMessageHistoryItem3Reaction = new ChatMessageReaction();
 $messageHistoryChatMessageHistoryItem3Reaction->setReactionType('like');
@@ -404,9 +404,9 @@ $messageHistoryChatMessageHistoryItem3->setReaction($messageHistoryChatMessageHi
 
 $messageHistoryArray []= $messageHistoryChatMessageHistoryItem3;
 $messageHistoryChatMessageHistoryItem4 = new ChatMessageHistoryItem();
-$messageHistoryChatMessageHistoryItem4->setModifiedDateTime(new DateTime('2018-10-21T02:34:40.3Z'));
+$messageHistoryChatMessageHistoryItem4->setModifiedDateTime(new \DateTime('2018-10-21T02:34:40.3Z'));
 
-$messageHistoryChatMessageHistoryItem4->setActions(new ChatMessageActions('reactionadded'));
+$messageHistoryChatMessageHistoryItem4->setActions(new ChatMessageActions('reactionAdded'));
 
 $messageHistoryChatMessageHistoryItem4Reaction = new ChatMessageReaction();
 $messageHistoryChatMessageHistoryItem4Reaction->setReactionType('like');
@@ -436,9 +436,9 @@ $messageHistoryChatMessageHistoryItem4->setReaction($messageHistoryChatMessageHi
 
 $messageHistoryArray []= $messageHistoryChatMessageHistoryItem4;
 $messageHistoryChatMessageHistoryItem5 = new ChatMessageHistoryItem();
-$messageHistoryChatMessageHistoryItem5->setModifiedDateTime(new DateTime('2018-10-21T08:10:25.489Z'));
+$messageHistoryChatMessageHistoryItem5->setModifiedDateTime(new \DateTime('2018-10-21T08:10:25.489Z'));
 
-$messageHistoryChatMessageHistoryItem5->setActions(new ChatMessageActions('reactionadded'));
+$messageHistoryChatMessageHistoryItem5->setActions(new ChatMessageActions('reactionAdded'));
 
 $messageHistoryChatMessageHistoryItem5Reaction = new ChatMessageReaction();
 $messageHistoryChatMessageHistoryItem5Reaction->setReactionType('like');
@@ -468,9 +468,9 @@ $messageHistoryChatMessageHistoryItem5->setReaction($messageHistoryChatMessageHi
 
 $messageHistoryArray []= $messageHistoryChatMessageHistoryItem5;
 $messageHistoryChatMessageHistoryItem6 = new ChatMessageHistoryItem();
-$messageHistoryChatMessageHistoryItem6->setModifiedDateTime(new DateTime('2018-10-21T08:10:31.489Z'));
+$messageHistoryChatMessageHistoryItem6->setModifiedDateTime(new \DateTime('2018-10-21T08:10:31.489Z'));
 
-$messageHistoryChatMessageHistoryItem6->setActions(new ChatMessageActions('reactionadded'));
+$messageHistoryChatMessageHistoryItem6->setActions(new ChatMessageActions('reactionAdded'));
 
 $messageHistoryChatMessageHistoryItem6Reaction = new ChatMessageReaction();
 $messageHistoryChatMessageHistoryItem6Reaction->setReactionType('heart');
@@ -500,9 +500,9 @@ $messageHistoryChatMessageHistoryItem6->setReaction($messageHistoryChatMessageHi
 
 $messageHistoryArray []= $messageHistoryChatMessageHistoryItem6;
 $messageHistoryChatMessageHistoryItem7 = new ChatMessageHistoryItem();
-$messageHistoryChatMessageHistoryItem7->setModifiedDateTime(new DateTime('2018-10-21T08:10:33.489Z'));
+$messageHistoryChatMessageHistoryItem7->setModifiedDateTime(new \DateTime('2018-10-21T08:10:33.489Z'));
 
-$messageHistoryChatMessageHistoryItem7->setActions(new ChatMessageActions('reactionadded'));
+$messageHistoryChatMessageHistoryItem7->setActions(new ChatMessageActions('reactionAdded'));
 
 $messageHistoryChatMessageHistoryItem7Reaction = new ChatMessageReaction();
 $messageHistoryChatMessageHistoryItem7Reaction->setReactionType('sad');
@@ -532,7 +532,7 @@ $messageHistoryChatMessageHistoryItem7->setReaction($messageHistoryChatMessageHi
 
 $messageHistoryArray []= $messageHistoryChatMessageHistoryItem7;
 $messageHistoryChatMessageHistoryItem8 = new ChatMessageHistoryItem();
-$messageHistoryChatMessageHistoryItem8->setModifiedDateTime(new DateTime('2018-10-21T08:10:34.489Z'));
+$messageHistoryChatMessageHistoryItem8->setModifiedDateTime(new \DateTime('2018-10-21T08:10:34.489Z'));
 
 $messageHistoryChatMessageHistoryItem8->setActions(new ChatMessageActions('surprised'));
 
@@ -568,7 +568,7 @@ $requestBody->setMessageHistory($messageHistoryArray);
 
 
 
-$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->byMessageId('chatMessage-id')->patch($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->byChatMessageId('chatMessage-id')->patch($requestBody);
 
 
 ```

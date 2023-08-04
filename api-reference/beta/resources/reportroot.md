@@ -1,7 +1,7 @@
 ---
 title: "reportRoot resource type"
 description: "Represents a container for Azure Active Directory (Azure AD) reporting resources."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

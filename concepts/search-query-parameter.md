@@ -37,35 +37,35 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-my-messages-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/search-my-messages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/search-my-messages-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/search-my-messages-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/search-my-messages-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/search-my-messages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/search-my-messages-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/search-my-messages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-my-messages-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/search-my-messages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/search-my-messages-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/search-my-messages-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/search-my-messages-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/search-my-messages-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/search-my-messages-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/search-my-messages-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -116,35 +116,35 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-my-people-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/search-my-people-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/search-my-people-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/search-my-people-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/search-my-people-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/search-my-people-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/search-my-people-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/search-my-people-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-my-people-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/search-my-people-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/search-my-people-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/search-my-people-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/search-my-people-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/search-my-people-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/search-my-people-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/search-my-people-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -230,15 +230,15 @@ ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-groups-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/search-groups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/search-groups-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/search-groups-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/search-groups-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/search-groups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -250,15 +250,15 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/search-groups-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/search-groups-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/search-groups-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/search-groups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/search-groups-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/search-groups-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -279,35 +279,35 @@ ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-filter-groups-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/search-filter-groups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/search-filter-groups-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/search-filter-groups-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/search-filter-groups-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/search-filter-groups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/search-filter-groups-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/search-filter-groups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-filter-groups-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/search-filter-groups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/search-filter-groups-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/search-filter-groups-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/search-filter-groups-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/search-filter-groups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/search-filter-groups-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/search-filter-groups-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
