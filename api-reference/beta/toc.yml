@@ -16074,7 +16074,7 @@ items:
             items:
               - name: Overview
                 href: resources/security-recordsmanagement-overview.md
-              - name: Retention label (preview)
+              - name: Retention label
                 href: resources/security-retentionlabel.md
                 items:
                   - name: List
