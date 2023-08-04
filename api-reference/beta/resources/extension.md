@@ -4,7 +4,7 @@ description: "An abstract type to support the OData v4 open type openTypeExtensi
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "keylimesoda"
+author: "dkershaw10"
 ---
 
 # extension resource type
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type to support the OData v4 open type [openTypeExtension](opentypeextension.md).
+An abstract type to support the OData v4 open type [openTypeExtension](opentypeextdension.md).
 
 ## JSON representation
 
@@ -34,7 +34,7 @@ Here is a JSON representation of the resource
 
 ```
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 
