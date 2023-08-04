@@ -1,6 +1,6 @@
 ---
 title: "endUserNotificationDetail resource type"
-description: "End user language specific content details."
+description: "Represents details about end user language specific content."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,30 +13,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-End user language specific content details.
+Represents details about end user language specific content.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-[Get endUserNotificationDetail](../api/endusernotificationdetail-get.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Read the properties and relationships of an [endUserNotificationDetail](../resources/endusernotificationdetail.md) object.|
+[Get endUserNotificationDetail](../api/endusernotificationdetail-get.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Get details about an [end user notification](../resources/endusernotificationdetail.md).|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|emailContent|String|Email html content.|
-|id|String|Identifier. Inherited from [entity](../resources/entity.md).|
-|isDefaultLangauge|Boolean|Tells if this language is default.|
+|emailContent|String|Email HTML content.|
+|id|String|Unique identifier for the **endUserNotificationDetail** object. Inherited from [entity](../resources/entity.md).|
+|isDefaultLangauge|Boolean|Indicates whether this language is default.|
 |language|String|Notification language.|
 |locale|String|Notification locale.|
-|sentFrom|[emailIdentity](../resources/emailidentity.md)|Email details of sender.|
+|sentFrom|[emailIdentity](../resources/emailidentity.md)|Email details of the sender.|
 |subject|String|Mail subject.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -49,15 +53,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.endUserNotificationDetail",
-  "id": "String (identifier)",
-  "sentFrom": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
-  "subject": "String",
   "emailContent": "String",
-  "locale": "String",
+  "id": "String (identifier)",
+  "isDefaultLangauge": "Boolean",
   "language": "String",
-  "isDefaultLangauge": "Boolean"
+  "locale": "String",
+  "sentFrom": {"@odata.type": "microsoft.graph.emailIdentity"},
+  "subject": "String"
 }
 ```
-

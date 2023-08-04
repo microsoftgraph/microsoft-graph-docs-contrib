@@ -87,28 +87,29 @@ Content-Type: application/json
 {
   "value": [
     {
-    "id": "1cdfcb49-1065-46a6-b1c3-672071e20a6b",
-    "displayName": "Microsoft End User Notification Page",
-    "description": "Microsoft End User Notification ",
-    "notificationType": "PositiveReinforcement",
-    "status": "Ready",
-    "source": "Global",
-    "createdBy": {
+      "id": "1cdfcb49-1065-46a6-b1c3-672071e20a6b",
+      "displayName": "Microsoft End User Notification Page",
+      "description": "Microsoft End User Notification ",
+      "notificationType": "PositiveReinforcement",
+      "status": "Ready",
+      "source": "Global",
+      "createdBy": {
         "email": "alexwaber@contoso.com",
         "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
         "displayName": "Alex Waber"
-    },
-    "createdDateTime": "2022-01-12T03:15:01.5906699Z",
-    "lastModifiedBy": {
+      },
+      "createdDateTime": "2022-01-12T03:15:01.5906699Z",
+      "lastModifiedBy": {
         "email": "alexwaber@contoso.com",
         "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
         "displayName": "Alex Waber"
-    },
-    "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
-    "supportedLocales": [
+      },
+      "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
+      "supportedLocales": [
         "en-us",
         "de-de"
-    ]
+      ]
+    }
   ]
 }
 ```

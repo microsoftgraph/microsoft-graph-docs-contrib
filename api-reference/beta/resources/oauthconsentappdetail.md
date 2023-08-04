@@ -14,18 +14,23 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Details required for oAuth technique
+
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|appScope|oAuthAppScope|App scope.The possible values are: `unknown`, `readCalendar`, `readContact`, `readMail`, `readAllChat`, `readAllFile`, `readAndWriteMail`, `sendMail`, `unknownFutureValue`.|
+|appScope|oAuthAppScope|App scope. Possible values are: `unknown`, `readCalendar`, `readContact`, `readMail`, `readAllChat`, `readAllFile`, `readAndWriteMail`, `sendMail`, `unknownFutureValue`.|
 |displayLogo|String|App display logo.|
 |displayName|String|App name.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.oAuthConsentAppDetail"
@@ -34,9 +39,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.oAuthConsentAppDetail",
-  "displayName": "String",
+  "appScope": "String",
   "displayLogo": "String",
-  "appScope": "String"
+  "displayName": "String"
 }
 ```
-

@@ -12,7 +12,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get details about an end user [endUserNotificationDetail](../resources/endusernotificationdetail.md).
+
+Get details about an [end user notification](../resources/endusernotificationdetail.md).
 
 ## Permissions
 
@@ -83,17 +84,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "id": "1cdfcb49-1065-46a6-b1c3-672071e20a6b-de-de",
-    "sentFrom": {
-        "email": "alexwaber@contoso.com",
-        "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
-        "displayName": "Alex Waber"
-    },
-    "subject": "Congrats for reporting phsih!"
-    "emailContent": "{\"landingPage\":\"<\!DOCTYPE html\> test <\html lang='en'<\/html>\"}",
-    "locale": "en-us",
-    "language": "English",
-    "isDefaultLanguage":"true"
-  }
-
+  "id": "1cdfcb49-1065-46a6-b1c3-672071e20a6b-de-de",
+  "sentFrom": {
+    "email": "alexwaber@contoso.com",
+    "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+    "displayName": "Alex Waber"
+  },
+  "subject": "Congrats for reporting phsih!"
+  "emailContent": "{\"landingPage\":\"<\!DOCTYPE html\> test <\html lang='en'<\/html>\"}",
+  "locale": "en-us",
+  "language": "English",
+  "isDefaultLanguage": "true"
+}
 ```

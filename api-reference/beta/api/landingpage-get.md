@@ -84,29 +84,29 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
-        "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
-        "displayName": "Microsoft Landing Page",
-        "description": "Microsoft Landing Page Template 1",
-        "status": "Ready",
-        "source": "Global",
-        "locale": "en-us",
-        "createdBy": {
-            "email": "alexwaber@contoso.com",
-            "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
-            "displayName": "Alex Waber"
-        },
-        "createdDateTime": "2022-01-12T03:15:01.5906699Z",
-        "lastModifiedBy": {
-            "email": "alexwaber@contoso.com",
-            "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
-            "displayName": "Alex Waber"
-        },
-        "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
-        "supportedLocales": [
-            "en-us",
-            "de-de"
-            ]
-        ]
+  "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
+  "displayName": "Microsoft Landing Page",
+  "description": "Microsoft Landing Page Template 1",
+  "status": "Ready",
+  "source": "Global",
+  "locale": "en-us",
+  "createdBy": {
+    "email": "alexwaber@contoso.com",
+    "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+    "displayName": "Alex Waber"
+  },
+  "createdDateTime": "2022-01-12T03:15:01.5906699Z",
+  "lastModifiedBy": {
+    "email": "alexwaber@contoso.com",
+    "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+    "displayName": "Alex Waber"
+  },
+  "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
+  "supportedLocales": [
+    "en-us",
+    "de-de"
+  ]
 }
 ```

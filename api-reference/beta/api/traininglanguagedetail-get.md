@@ -85,22 +85,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "id": "1cdfcb49-1065-46a6-b1c3-672071e20a6b",
-    "displayName": "Email phish prevention training",
-    "description": "Email phish prevention training",
-    "locale": "en-us",
-    "createdBy": {
-        "email": "alexwaber@contoso.com",
-        "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
-        "displayName": "Alex Waber"
-    },
-    "createdDateTime": "2022-01-12T03:15:01.5906699Z",
-    "lastModifiedBy": {
-        "email": "alexwaber@contoso.com",
-        "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
-        "displayName": "Alex Waber"
-    },
-    "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
-    "isDefaultLanguage": "true"
+  "id": "1cdfcb49-1065-46a6-b1c3-672071e20a6b",
+  "displayName": "Email phish prevention training",
+  "description": "Email phish prevention training",
+  "locale": "en-us",
+  "createdBy": {
+    "email": "alexwaber@contoso.com",
+    "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+    "displayName": "Alex Waber"
+  },
+  "createdDateTime": "2022-01-12T03:15:01.5906699Z",
+  "lastModifiedBy": {
+    "email": "alexwaber@contoso.com",
+    "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+    "displayName": "Alex Waber"
+  },
+  "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
+  "isDefaultLanguage": "true"
 }
 ```

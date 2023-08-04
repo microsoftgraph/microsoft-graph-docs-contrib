@@ -58,20 +58,16 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.loginPage",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
   "content": "String",
-  "language": "String",
-  "status": "microsoft.graph.simulationContentStatus",
-  "source": "microsoft.graph.simulationContentSource",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
+  "createdBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
-  "lastModifiedDateTime": "String (timestamp)"
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "language": "String",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.emailIdentity"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "source": "microsoft.graph.simulationContentSource",
+  "status": "microsoft.graph.simulationContentStatus"
 }
 ```
