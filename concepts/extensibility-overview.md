@@ -1064,10 +1064,6 @@ The table below contrasts and compares the extension types, which should help yo
 
 The same privileges that your app requires to read from or write to a resource instance are also required to manage any extensions data on that resource instance. For example, in a delegated scenario, an app can only update any user's extension data if it's granted the *User.ReadWrite.All* permission and the signed-in user is assigned a supported Azure AD administrative role.
 
-## Known limitations
-
-For known limitations using extensions, see the [extensions section](known-issues.md#extensions) in the known issues article.
-
 ## Next steps
 
 - [Training module: Add custom data to your app using extensions in Microsoft Graph](/training/modules/msgraph-extensions/)
