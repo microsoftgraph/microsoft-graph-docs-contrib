@@ -34,7 +34,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |appId|String|The application identifier in Azure Active Directory. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that are triggered by the corresponding sign-in activity.|
 |appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, that were triggered by the corresponding events in the sign-in event.|
-|appTokenProtectionStatus|tokenProtectionStatus|TODO: Add Description .The possible values are: `none`, `bound`, `unbound`, `unknownFutureValue`.|
+|appTokenProtectionStatus|tokenProtectionStatus|Token protection creates a cryptographically secure tie between the token and the device it's issued to. This field indicates whether the app token was bound to the device or not.|
 |authenticationAppDeviceDetails|[authenticationAppDeviceDetails](../resources/authenticationappdevicedetails.md)|Provides details about the app and device used during an Azure AD authentication step.|
 |authenticationAppPolicyEvaluationDetails|[authenticationAppPolicyDetails](../resources/authenticationapppolicydetails.md) collection|Provides details of the Azure AD policies applied to a user and client authentication app during an authentication step.|
 |authenticationContextClassReferences|[authenticationContext](authenticationcontext.md) collection|Contains a collection of values that represent the conditional access authentication contexts applied to the sign-in.|
@@ -67,6 +67,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |managedServiceIdentity|[managedIdentity](../resources/managedidentity.md)|Contains information about the managed identity used for the sign in, including its type and associated Azure Resource Manager (ARM) resource ID.|
 |networkLocationDetails|[networkLocationDetail](networklocationdetail.md) collection|The network location details including the type of network used and its names.|
 |originalRequestId|String|The request identifier of the first request in the authentication sequence. <br/><br/> Supports `$filter` (`eq`).|
+|originalTransferMethod|originalTransferMethods|Transfer method used to initiate a session throughout all subsequent request.|
 |privateLinkDetails|[privateLinkDetails](../resources/privatelinkdetails.md)|Contains information about the Azure AD Private Link policy that is associated with the sign in event.|
 |processingTimeInMilliseconds|Int|The request processing time in milliseconds in AD STS.|
 |resourceDisplayName|String|The name of the resource that the user signed in to. <br/><br/> Supports `$filter` (`eq`).|
@@ -86,6 +87,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |signInEventTypes|String collection|Indicates the category of sign in that the event represents. For user sign ins, the category can be `interactiveUser` or `nonInteractiveUser` and corresponds to the value for the **isInteractive** property on the signin resource. For managed identity sign ins, the category is `managedIdentity`. For service principal sign ins, the category is **servicePrincipal**. Possible values are: `interactiveUser`, `nonInteractiveUser`, `servicePrincipal`, `managedIdentity`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `ne`).|
 |signInIdentifier|String|The identification that the user provided to sign in. It may be the userPrincipalName but it's also populated when a user signs in using other identifiers.|
 |signInIdentifierType|signInIdentifierType|The type of sign in identifier. Possible values are: `userPrincipalName`, `phoneNumber`, `proxyAddress`, `qrCode`, `onPremisesUserPrincipalName`, `unknownFutureValue`.|
+|signInTokenProtectionStatus|tokenProtectionStatus|Token protection creates a cryptographically secure tie between the token and the device it's issued to. This field indicates whether the signin token was bound to the device or not.|
 |status|[signInStatus](signinstatus.md)|The sign-in status. Includes the error code and description of the error (in case of a sign-in failure). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
 |tokenIssuerName|String|The name of the identity provider. For example, `sts.microsoft.com`. <br/><br/> Supports `$filter` (`eq`).|
 |tokenIssuerType|tokenIssuerType|The type of identity provider. The possible values are: `AzureAD`, `ADFederationServices`, `UnknownFutureValue`, `AzureADBackupAuth`, `ADFederationServicesMFAAdapter`, `NPSExtension`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `AzureADBackupAuth` , `ADFederationServicesMFAAdapter` , `NPSExtension`.|
@@ -187,6 +189,7 @@ The following is a JSON representation of the resource.
     }
   ],
   "originalRequestId": "String",
+  "originalTransferMethod": "String",
   "privateLinkDetails": {
     "@odata.type": "microsoft.graph.privateLinkDetails"
   },
@@ -214,6 +217,7 @@ The following is a JSON representation of the resource.
   ],
   "signInIdentifier": "String",
   "signInIdentifierType": "String",
+  "signInTokenProtectionStatus": "String",
   "status": {
     "@odata.type": "microsoft.graph.signInStatus"
   },
