@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().Labels().Categories().ByCategorieId("categoryTemplate-id").Get(context.Background(), nil)
+categories, err := graphClient.Security().Labels().Categories().ByCategoryTemplateId("categoryTemplate-id").Get(context.Background(), nil)
 
 
 ```

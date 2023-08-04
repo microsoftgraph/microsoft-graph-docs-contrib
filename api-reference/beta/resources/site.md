@@ -27,7 +27,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get activities by interval][]                    | GET /sites/{site-id}/getActivitiesByInterval                |
 | [List pages][]                                    | GET /sites/{site-id}/pages                                  |
 | [List root sites][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |
-| [List root sites across geographies][]            | GET /site/getAllSites                                      |
+| [List sites across geographies][]            | GET /site/getAllSites                                      |
 | [Search for sites][]                              | GET /sites?search={query}                                   |
 | [Follow site][]                                   | POST /users/{user-id}/followedSites/add                     |
 | [Unfollow site][]                                 | POST /users/{user-id}/followedSites/remove                  |
@@ -52,7 +52,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [List pages]: ../api/baseSitePage-list.md
 [List root sites]: ../api/site-list.md
-[List root sites across geographies]: ../api/site-getallsites.md
+[List sites across geographies]: ../api/site-getallsites.md
 [Search for sites]: ../api/site-search.md
 [Follow site]: ../api/site-follow.md
 [Unfollow site]: ../api/site-unfollow.md

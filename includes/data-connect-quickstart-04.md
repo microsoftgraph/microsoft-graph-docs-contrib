@@ -8,7 +8,7 @@ In this step you'll create an Azure Storage account where Microsoft Graph Data C
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 
-1. Sign in using an account with **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal.
+1. Sign in using an account with an **[Application developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal.
 
 1. On the sidebar navigation, select **Create a resource**.
 

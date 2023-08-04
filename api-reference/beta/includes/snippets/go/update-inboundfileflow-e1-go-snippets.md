@@ -19,7 +19,7 @@ requestBody := graphmodelsindustrydata.NewInboundFlow()
 displayName := "Updated flow name"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.External().IndustryData().InboundFlows().ByInboundFlowId("inboundFlow-id").Patch(context.Background(), requestBody, nil)
+inboundFlows, err := graphClient.External().IndustryData().InboundFlows().ByInboundFlowId("inboundFlow-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

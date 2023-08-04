@@ -23,7 +23,7 @@ additionalData := map[string]interface{}{
 customAttributes.SetAdditionalData(additionalData)
 requestBody.SetCustomAttributes(customAttributes)
 
-result, err := graphClient.RoleManagement().Exchange().CustomAppScopes().ByCustomAppScopeId("customAppScope-id").Patch(context.Background(), requestBody, nil)
+customAppScopes, err := graphClient.RoleManagement().Exchange().CustomAppScopes().ByCustomAppScopeId("customAppScope-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

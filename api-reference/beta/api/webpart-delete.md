@@ -56,11 +56,23 @@ If successful, this method returns a `204 No Content`. It does not return anythi
 
 ### Request
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-webpart", "scopes": "sites.readwrite.all" } -->
 
 ```http
 DELETE https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-webpart-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-webpart-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 <!-- { "blockType": "response" } -->
