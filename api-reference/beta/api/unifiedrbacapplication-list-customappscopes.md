@@ -2,7 +2,7 @@
 title: "List customAppScopes"
 description: "Get a list of customAppScope objects for an RBAC provider."
 ms.localizationpriority: medium
-author: "cubika "
+author: "cubika"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
