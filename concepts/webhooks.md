@@ -60,14 +60,6 @@ The following table shows the maximum expiration times for subscriptions per res
 
 [!INCLUDE [change-notifications-subscription-lifetime](includes/change-notifications-subscription-lifetime.md)]
 
-### Manage subscriptions for different delivery channels
-
-For more information about managing subscriptions for the different delivery channels using Microsoft Graph, see the following articles.
-
-- [Receive change notifications through webhooks](./change-notifications-delivery-webhooks.md).
-- [Receive change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md).
-- [Receive change notifications through Azure Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext) (preview).
-
 ## Code samples
 
 The following code samples are available on GitHub.
@@ -82,10 +74,6 @@ The following code samples are available on GitHub.
 [!INCLUDE [change-notifications-delivery-latency](includes/change-notifications-delivery-latency.md)]
 
 ## Deployment resources
-
-- [Get change notifications through webhooks](./change-notifications-delivery-webhooks.md)
-- [Get change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md)
-- [Get change notifications through Azure Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext)
 - [Rich notifications (notifications with resource data)](./webhooks-with-resource-data.md)
 - [Lifecycle notifications](./webhooks-lifecycle.md)
 - Tutorials
