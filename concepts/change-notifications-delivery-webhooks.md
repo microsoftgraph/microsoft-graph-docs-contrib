@@ -12,24 +12,68 @@ ms.date: 03/23/2023
 
 # Receive change notifications through webhooks
 
-A webhook is a HTTP-based user-defined callback API that you can set up in your infrastructure to receive change notifications and events from a service, such as Microsoft Graph. You must configure the webhook using a well-known and accessible HTTPS-secured endpoint.
+A webhook is a HTTP-based user-defined callback API that you can set up in your infrastructure to receive change notifications and events from a service, such as Microsoft Graph. To use webhooks you will need to standup a publicly accessible HTTPS-secured endpoint that will receive the notifications.
 
-To receive change notifications through webhooks, you need to create a subscription to the resource for which you want to be notified of changes. While the subscription is valid, Microsoft Graph sends a notification to your app whenever a change is detected on the resource.
+You can create a subscription to the resource for which you want to be notified of changes. While the subscription is valid, Microsoft Graph sends a notification to your endpoint whenever a change is detected on the resource.
 
-The article guides you through the process of managing your Microsoft Graph subscription and how to receive change notifications through webhooks.
+The article guides you through the process of implementing your webhook endpoint, subscribing to and managing Microsoft Graph subscriptions, and how to receive change notifications through webhooks.
+
+## Implementing a webhook endpoint
+Before you can receive a notification via webhooks, you must create a publicly accessible, HTTPS-secured endpoint that is addressable via URL.  If your endpoint is not publicly accessible, Microsoft Graph will not be able to send notifications to your endpoint.
+
+Your endpoint must provide correct, consistent, and timely HTTP responses in order to reliably receive notifications.  If an endpoint does not respond in a timely manner, the change notification service may begin to drop notifications.  Dropped notifications cannot be recovered.
+
+Your endpoint must also continue to remain authenticated to Microsoft Graph, either by continually renewing your subscription, or by responding to lifecycle notifications.
+
+### HTTP codes and retry logic
+Once the Microsoft Graph Change Tracking service receives a 2xx class code from your endpoint, a notification is considered sent and will not be tried again.  As long as the Change Tracking service receives any other HTML response (even an error code) within 3 seconds, the service will continue to try to deliver the notification for up to 4 hours.
+
+ - If you are able to process the notification within a 3-second window, you should return a `200 - OK` status code to Microsoft Graph
+ - If your service may take more than 3 seconds to process the notification, then you may choose to persist the notification in a queue on your endpoint and return `202 - Accepted` status code to Microsoft Graph.
+ - If the notification isn't processed or queued, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
+
+### Throttling
+For security and performance reasons, Microsoft Graph will throttle notifications sent to endpoints that become slow or unresponsive.  This may include dropping notifications in a way that they cannot be recovered.
+
+1. An endpoint will be marked "slow" once more than 10% of responses take longer than 3 seconds in a 10-minute window.
+      - Once an endpoint has been marked "slow", any new notifications will be sent on a 10 second delay.
+      - An endpoint will exit "slow" state once less 10% of responses take longer than 3 seconds in a 10-minute window.
+
+2. An endpoint will be marked "drop" once more than 15% of responses take longer than 3 seconds in a 10-minute window.
+      - **Once an endpoint has been marked "drop", any new notifications will be dropped, for up to 10 minutes**
+      - An endpoint will exit "drop" state once less than 15% of responses take longer than 3 seconds in a 10-minute window.
+
+If you are unable to stand up an endpoint with these performance characteristics, please consider using Event Hub (link) or Event Grid (link) as a target for receiving notifications.
+
+### Authentication
+When you create your subscription, an access token will be sent to your endpoint.  This access token will generally expire within 1 hour.
+
+If an access token expires, notifications will not be delivered.  But Microsoft Graph will continue to retry sending each notification for up to 4 hours. So if the access token is refreshed within 4 hours of expiration, unsent notifications will be delivered.
+
+When you [renew your subcription](#Renew_a_subscription), it will refresh your access token.
+
+Please refer to the [Lifecycle notifications](.\webhooks-lifecycle.md) document for more tools to manage subscription and access token lifecycle.
+
+### Firewall configuration
+You can configure the firewall that protects your endpoint to allow inbound connections only from Microsoft Graph, reducing further exposure to invalid change notifications. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
+
+> [!NOTE]
+> The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
 ## Create a subscription
+> [!IMPORTANT]
+> Multiple steps are required to ensure a secure communication channel is established and maintained between the Microsoft Graph Change Tracking service and your endpoint.
 
-Before you can receive Microsoft Graph change notifications, you must first create a subscription. The process to set up a valid subscription involves both the client app and Microsoft Graph as follows:
+To start receiving Microsoft Graph change notifications, you must create a subscription using the URL of your endpoint (notification URL) to establish the subscription.  The pattern of establishing a subscription is as follows:
 
 1. The client app sends a subscription request to subscribe to changes on a specific resource.
 
-1. Microsoft Graph verifies the request.
+1. Microsoft Graph checks the request.
 
     - If the request is valid, Microsoft Graph sends a validation token to the notification URL for the client app to validate the notification URL.
     - If the request is invalid, Microsoft Graph sends an error response with an error code and details.
 
-1. When the client receives the notification URL validation request, the client responds with the validation token in plain text as explained later in this article.
+1. When the client receives the notification URL validation request, the client responds with the validation token in plain text.
 
 1. Microsoft Graph validates the client's validation token response and if the validation token is valid, responds with a subscription ID.
 
@@ -109,7 +153,7 @@ While the subscription is valid and there are changes to the resource that you s
 
 For most subscriptions, Microsoft Graph doesn't delay sending notifications but [delivers all notifications within the SLA unless the service is experiencing an incident](./webhooks.md#latency).
 
-A change notification payload sent to your app can contain a collection of change notifications relating to your subscriptions.
+A change notification payload sent to your endpoint can contain a collection of change notifications relating to your subscriptions.
 
 ### Change notification example
 
@@ -142,13 +186,7 @@ When many changes occur, Microsoft Graph may send multiple notifications that co
 
 ### Processing the change notification
 
-Your service should process every change notification it receives. The following are the minimum tasks that your app must perform to process a change notification:
-
-1. After receiving the change notification, send a 2xx class code back to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code within 3 seconds, it tries to resend the change notification multiple times, for up to 4 hours. If Microsoft Graph still doesn't receive a 2xx code within the period, it discards the change notification. If the client app consistently doesn't respond within 3 seconds, the [notifications might be subject to throttling](#throttling).
-
-    If your service can take more than 3 seconds to process the change notification, it should persist the notification, return a `202 - Accepted` status code in the response to Microsoft Graph, then process the notifications at its capacity. If the notification isn't persisted, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
-
-    If your service is expected to take less than 3 seconds, it should process the notifications and return a `200 - OK` status code to Microsoft Graph. If the notification isn't processed correctly, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
+When you receive a change notification:
 
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
@@ -156,13 +194,12 @@ Your service should process every change notification it receives. The following
 
 1. Update your client app based on your business logic.
 
-## Renew a subscription
+## Subscription lifecycle
+When they are no longer needed, subscriptions may be deleted or expire.  When you create your subscription, you set an expiration date using the **expirationDateTime** property.  Once this time is past, Microsoft Graph deletes the subscription and will no longer send notifications to your endpoint. You may also explicitly delete your subscription.
 
-There are many reasons why you may need to renew a subscription. For more information, see [lifecycle notifications](/graph/webhooks-lifecycle).
+The simplest way to continue receiving notifications is to continue renewing your subscription request.  Each notification includes a **subscriptionExpirationDateTime** property.  You can use this to guide when to renew your subscription.
 
-When you subscribe to lifecycle notifications, Microsoft Graph alerts you when a subscription is almost expiring and should be renewed. If you don't subscribe to lifecycle notifications, you can use the **subscriptionExpirationDateTime** to monitor when your app should send a subscription renewal request.
-
-To renew the subscription, the **expirationDateTime** property is required. If you don't renew a subscription in time, Microsoft Graph deletes the subscription, and the app won't receive future change notifications for the subscription.
+Each subscription also includes an access token granted to the endpoint.  The expiration time of this access token may occur before the subscription expiration. You can manage access token expiration using lifecycle notifications for your subscription.
 
 ### Subscription renewal request
 
@@ -216,7 +253,7 @@ Content-Type: application/json
 
 If the subscription renewal request is successful, Microsoft Graph returns a `200 OK` response code and a [subscription](/graph/api/resources/subscription) object in the response body. The subscription object includes the new **expirationDateTime** value.
 
-## Delete a subscription
+### Delete a subscription
 
 If the client app no longer wants change notifications, it can delete the subscription using its **subscriptionId** as follows:
 
@@ -265,27 +302,18 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 If successful, Microsoft Graph returns a `204 No Content` code.
 
-## Throttling
+### Lifecycle notifications for your subscription
+For increased flexibility and reliability, when you create a subscription, you may also subscribe to the lifecycle notifications for that subscription by providing a **lifecycleNotificationUrl** endpoint that will receive, process, and respond to lifecycle notifications.
 
-If a subscription notification URL is slow or fails to respond, and Microsoft Graph doesn't receive a 2xx class code within 3 seconds, Microsoft Graph tries to resend the change notification multiple times, for up to 4 hours. In this case Microsoft Graph might throttle notifications for the notification endpoint that's associated with the subscription.
-
-#### How Microsoft Graph handles throttling for change notifications using webhooks
-
-Notifications are published using an HTTP client with a 3-second timeout.
-
-1. If the publishing time is greater than 2900 ms, the response is considered slow.
-1. The change notification service then calculates the percentage of slow responses after the endpoint receives 100 notifications.
-1. If the percentage of slow responses reaches 10%, the endpoint associated with the notification URL is flagged as a slow endpoint. All notifications for all subscriptions associated with the endpoint are subjected to throttling.
-1. The evaluation continues in real time and the accumulation of responses is flushed every 10 minutes.
-
-When Microsoft Graph throttles an endpoint, notifications are subjected to a delay of 10 minutes and are offloaded to workers dedicated to failed and throttled notifications. Notifications that failed to deliver due to an unsuccessful HTTP call are retried again in 10 minutes. Notifications are dropped if the throttled endpoint slow percentage is greater than or equal to 15%.
-
-## Firewall configuration
-
-You can configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph, reducing further exposure to invalid change notifications. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
+When you subscribe to lifecycle notifications, Microsoft Graph alerts you:
+- When the access token is about to expire.
+- When a subscription is about to expire.
+- When a tenant administrator has revoked your app's permissions to read a resource.
 
 > [!NOTE]
-> The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
+> If an access token expires, notifications will not be delivered the endpoint. But Microsoft Graph will continue to retry sending each notification for up to 4 hours. So if the access token is refreshed within 4 hours of expiration, unsent notifications will be delivered.
+
+For more information on how to utilize lifecycle notifications for your subscription, see [lifecycle notifications](/graph/webhooks-lifecycle).
 
 ## Summary
 
