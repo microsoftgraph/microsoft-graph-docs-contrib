@@ -68,7 +68,7 @@ GET /storageContainers/b!6XpSztFy9E2yOmBRc6UvE17Un8QjGtVKlBDSEvy3yq2qLiqRB1RCQKY
 
 ### Response
 
-<!-- { "blockType": "ignored" }-->
+<!-- { "blockType": "response","name":"get-recyclebinItems","scopes":"files.readwrite","tags":"service.graph" }-->
 
 ``` http
 HTTP/1.1 200 OK
