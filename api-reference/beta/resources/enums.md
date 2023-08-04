@@ -1019,6 +1019,9 @@ Namespace: microsoft.graph
 | unknownFutureValue              |
 | servicePrincipals               |
 | servicePrincipalRisk            |
+| authenticationFlows             |
+| insiderRisk                     |
+
 
 ### conditionalAccessStatus values
 
@@ -2703,6 +2706,9 @@ Possible values for user account types (group membership), per Windows definitio
 | otherExternalUser                 |
 | serviceProvider                   |
 | microsoftAdminPortals             |
+| deviceCodeFlow                    |
+| accountTransfer                   |
+| insiderRisk                       |
 
 ### signInAccessType values 
 
@@ -2721,6 +2727,15 @@ Possible values for user account types (group membership), per Windows definitio
 | :----- |
 | days   |
 | hours  |
+
+### tokenProtectionStatus values 
+
+|Member|
+|:---|
+|none|
+|bound|
+|unbound|
+|unknownFutureValue|
 
 ### persistentBrowserSessionMode values
 
