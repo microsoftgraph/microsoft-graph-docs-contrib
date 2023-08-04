@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /workflow/userProcessingResults
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflow-id}/userProcessingResults
 ```
 
 ## Optional query parameters
