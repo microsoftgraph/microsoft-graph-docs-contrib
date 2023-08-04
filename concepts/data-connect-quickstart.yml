@@ -27,7 +27,7 @@ items:
       [!INCLUDE [](../includes/data-connect-quickstart-03.md)]
 
   - title: Set up your Azure Storage resource
-    durationInMinutes: 15
+    durationInMinutes: 10
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-04.md)]
  
@@ -45,8 +45,3 @@ items:
     durationInMinutes: 0
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-07.md)]
-      
-  - title: (Optional) Visualize your Microsoft Graph Data Connect data in Microsoft Power BI
-    durationInMinutes: 15
-    content: |
-      [!INCLUDE [](../includes/data-connect-quickstart-08.md)]
