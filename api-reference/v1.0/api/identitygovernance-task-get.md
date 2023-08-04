@@ -33,7 +33,7 @@ Fetch tasks for a lifecycle workflow.
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks/{taskId}
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/tasks/{taskId}
 ```
 
 Fetch tasks for a lifecycle workflow version.
@@ -78,7 +78,7 @@ The following is an example of a request to get a task from a workflow.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflow/156ce798-1eb6-4e0a-8515-e79f54d04390/tasks/fafa2189-cd62-4643-a825-06cab8817086
+GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/tasks/fafa2189-cd62-4643-a825-06cab8817086
 ```
 
 #### Response
