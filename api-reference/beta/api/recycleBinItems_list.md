@@ -68,7 +68,7 @@ GET /storageContainers/b!6XpSztFy9E2yOmBRc6UvE17Un8QjGtVKlBDSEvy3yq2qLiqRB1RCQKY
 
 ### Response
 
-<!-- { "blockType": "response" }-->
+<!-- { "blockType": "ignored" }-->
 
 ``` http
 HTTP/1.1 200 OK
