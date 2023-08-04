@@ -1776,8 +1776,26 @@
       ],
       "Id": "00e009a6-0eaf-423f-9ed2-fe86808382ac",
       "Cloud": "Prod",
-      "Version": "beta",
+      "Version": "v1.0",
       "CreatedDateTime": "2023-01-25T00:00:00.0123959Z",
+      "WorkloadArea": "User",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "09c0c670-3c21-45f3-a5c9-2dd89dbe6aab",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User.ReadBasic.All",
+          "ChangeType": "Removal",
+          "Description": "Removed the `User.ReadBasic.All` application permission. Use the `User.Read.All` application permission to read a basic set of profile properties of other users in your organization without a signed-in user.",
+          "Target": "user"
+        }
+      ],
+      "Id": "09c0c670-3c21-45f3-a5c9-2dd89dbe6aab",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-03T00:00:00.0123959Z",
       "WorkloadArea": "User",
       "SubArea": ""
     },
