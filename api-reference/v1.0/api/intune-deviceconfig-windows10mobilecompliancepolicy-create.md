@@ -134,6 +134,10 @@ Content-length: 792
 [!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windows10mobilecompliancepolicy-create-create-windows10mobilecompliancepolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windows10mobilecompliancepolicy-create-create-windows10mobilecompliancepolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windows10mobilecompliancepolicy-create-create-windows10mobilecompliancepolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

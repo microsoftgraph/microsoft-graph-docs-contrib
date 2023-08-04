@@ -149,10 +149,6 @@ Content-length: 1189
 [!INCLUDE [sample-code](../includes/snippets/php/intune-apps-windowsuniversalappx-create-create-windowsuniversalappx-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-windowsuniversalappx-create-create-windowsuniversalappx-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-apps-windowsuniversalappx-create-create-windowsuniversalappx-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

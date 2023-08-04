@@ -50,7 +50,7 @@ requestBody.SetManagedDeviceId(&managedDeviceId)
 displayName := "Display Name value"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.DeviceManagement().WindowsAutopilotDeviceIdentities().Post(context.Background(), requestBody, nil)
+windowsAutopilotDeviceIdentities, err := graphClient.DeviceManagement().WindowsAutopilotDeviceIdentities().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Identity().ConditionalAccess().Templates().Get(context.Background(), nil)
+templates, err := graphClient.Identity().ConditionalAccess().Templates().Get(context.Background(), nil)
 
 
 ```

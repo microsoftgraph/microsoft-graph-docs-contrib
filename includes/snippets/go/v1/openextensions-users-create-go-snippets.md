@@ -25,7 +25,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().Extensions().Post(context.Background(), requestBody, nil)
+extensions, err := graphClient.Me().Extensions().Post(context.Background(), requestBody, nil)
 
 
 ```

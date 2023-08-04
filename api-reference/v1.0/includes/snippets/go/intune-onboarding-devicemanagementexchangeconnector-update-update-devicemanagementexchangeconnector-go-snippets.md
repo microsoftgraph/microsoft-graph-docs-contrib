@@ -36,7 +36,7 @@ requestBody.SetExchangeAlias(&exchangeAlias)
 exchangeOrganization := "Exchange Organization value"
 requestBody.SetExchangeOrganization(&exchangeOrganization) 
 
-result, err := graphClient.DeviceManagement().ExchangeConnectors().ByExchangeConnectorId("deviceManagementExchangeConnector-id").Patch(context.Background(), requestBody, nil)
+exchangeConnectors, err := graphClient.DeviceManagement().ExchangeConnectors().ByDeviceManagementExchangeConnectorId("deviceManagementExchangeConnector-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().Reports().ExportJobs().Get(context.Background(), nil)
+exportJobs, err := graphClient.DeviceManagement().Reports().ExportJobs().Get(context.Background(), nil)
 
 
 ```

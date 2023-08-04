@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityProviders().AvailableProviderTypes().Get(context.Background(), nil)
+availableProviderTypes(), err := graphClient.IdentityProviders().AvailableProviderTypes().Get(context.Background(), nil)
 
 
 ```

@@ -65,7 +65,7 @@ street := "12345 Main St."
 residenceAddress.SetStreet(&street) 
 requestBody.SetResidenceAddress(residenceAddress)
 
-result, err := graphClient.Education().Users().Post(context.Background(), requestBody, nil)
+users, err := graphClient.Education().Users().Post(context.Background(), requestBody, nil)
 
 
 ```

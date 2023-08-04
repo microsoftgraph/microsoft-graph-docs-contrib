@@ -83,10 +83,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/resourceOperations/{resour
 [!INCLUDE [sample-code](../includes/snippets/php/intune-rbac-resourceoperation-get-get-resourceoperation-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-rbac-resourceoperation-get-get-resourceoperation-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-rbac-resourceoperation-get-get-resourceoperation-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

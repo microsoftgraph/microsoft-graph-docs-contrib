@@ -28,7 +28,7 @@ requestBody := graphmodels.NewPlannerBucket()
 name := "Development"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Planner().Buckets().ByBucketId("plannerBucket-id").Patch(context.Background(), requestBody, configuration)
+buckets, err := graphClient.Planner().Buckets().ByPlannerBucketId("plannerBucket-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

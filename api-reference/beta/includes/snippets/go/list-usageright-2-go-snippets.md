@@ -25,7 +25,7 @@ configuration := &graphdevices.DeviceItemUsageRightsRequestBuilderGetRequestConf
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Devices().ByDeviceId("device-id").UsageRights().Get(context.Background(), configuration)
+usageRights, err := graphClient.Devices().ByDeviceId("device-id").UsageRights().Get(context.Background(), configuration)
 
 
 ```
