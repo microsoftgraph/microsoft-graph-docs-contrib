@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Get the metadata for the location where the files of a [channel](../resources/channel.md) are stored.
 
 > [!NOTE]
-> Some special characters in the channel name will cause this API to return an error. For details, see [Known issues](/graph/known-issues#create-channel).
+> Some special characters in the channel name will cause this API to return an error. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=16692).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
