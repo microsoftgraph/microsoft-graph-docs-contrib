@@ -2728,6 +2728,15 @@ Possible values for user account types (group membership), per Windows definitio
 | days   |
 | hours  |
 
+### originalTransferMethods values 
+
+|Member|
+|:---|
+|none|
+|deviceCodeFlow|
+|authenticationTransfer|
+|unknownFutureValue|
+
 ### tokenProtectionStatus values 
 
 |Member|
