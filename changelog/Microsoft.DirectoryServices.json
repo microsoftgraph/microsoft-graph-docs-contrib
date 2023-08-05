@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "fb9eeb9e-adf8-43f6-8aee-7a55853c74a5",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnPremDirectorySynchronization.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `OnPremDirectorySynchronization.Read.All` application permission to the read operations of the [on-premises directory synchronization](https://learn.microsoft.com/en-us/graph/api/resources/onpremisesdirectorysynchronization?view=graph-rest-beta).",
+          "Target": "onPremisesDirectorySynchronization"
+        },
+        {
+          "Id": "fb9eeb9e-adf8-43f6-8aee-7a55853c74a5",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnPremDirectorySynchronization.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `OnPremDirectorySynchronization.ReadWrite.All` application permission to the read and write operations of the [on-premises directory synchronization](https://learn.microsoft.com/en-us/graph/api/resources/onpremisesdirectorysynchronization?view=graph-rest-beta).",
+          "Target": "onPremisesDirectorySynchronization"
+        }
+      ],
+      "Id": "fb9eeb9e-adf8-43f6-8aee-7a55853c74a5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-03T14:24:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c450f46a-46a4-4198-b81e-8514ee65377f",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnPremDirectorySynchronization.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `OnPremDirectorySynchronization.Read.All` application permission to the read operations of the [on-premises directory synchronization](https://learn.microsoft.com/en-us/graph/api/resources/onpremisesdirectorysynchronization?view=graph-rest-beta).",
+          "Target": "onPremisesDirectorySynchronization"
+        },
+        {
+          "Id": "c450f46a-46a4-4198-b81e-8514ee65377f",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnPremDirectorySynchronization.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `OnPremDirectorySynchronization.ReadWrite.All` application permission to the read and write operations of the [on-premises directory synchronization](https://learn.microsoft.com/en-us/graph/api/resources/onpremisesdirectorysynchronization?view=graph-rest-beta).",
+          "Target": "onPremisesDirectorySynchronization"
+        }
+      ],
+      "Id": "c450f46a-46a4-4198-b81e-8514ee65377f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-03T14:24:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8d2e4350-d719-4db7-8c66-a48dd89e2375",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantInformation",
