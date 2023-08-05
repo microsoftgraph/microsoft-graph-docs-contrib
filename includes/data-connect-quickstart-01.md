@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-Microsoft Graph Data Connect (Data Connect) augments transactional APIs with an intelligent way to access rich data at scale. The data covers how workers communicate, collaborate, and manage their time across all the Microsoft 365 applications and services.  
+Microsoft Graph Data Connect (Data Connect) augments transactional APIs with an intelligent way to access rich data at scale. The data covers how workers communicate, collaborate, and manage their time across all the Microsoft 365 applications and services.
 
 Data Connect is ideal for big data applications and machine learning as it allows you to develop applications for analytics, intelligence, and business process optimization by extending Microsoft 365 data into Microsoft Azure. Through this offering, you'll be able to take advantage of the vast suite of compute and storage in Azure while staying compliant with industry standards and keeping your data secure.
 
