@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!NOTE]
 >
-> To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. The authorized application will access registrants' information from virtual events created by that specific user.
+> To use application permissions for this API, Tenant Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. This allows the authorized application to access registrants' information from virtual events created by that specific user.
 
 ## HTTP request
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/events/{virtualEven
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
