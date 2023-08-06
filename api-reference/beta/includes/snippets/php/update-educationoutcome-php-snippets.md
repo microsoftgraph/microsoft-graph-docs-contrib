@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationRubricOutcome();
-$requestBody->set@odatatype('#microsoft.graph.educationRubricOutcome');
+$requestBody->setOdataType('#microsoft.graph.educationRubricOutcome');
 
 $rubricQualityFeedbackRubricQualityFeedbackModel1 = new RubricQualityFeedbackModel();
 $rubricQualityFeedbackRubricQualityFeedbackModel1->setQualityId('9a145aa8-f3d9-43a1-8f77-5387ff0693f2');
@@ -58,7 +58,7 @@ $requestBody->setRubricQualitySelectedLevels($rubricQualitySelectedLevelsArray);
 
 
 
-$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->byAssignmentId('educationAssignment-id')->submissions()->bySubmissionId('educationSubmission-id')->outcomes()->byOutcomeId('educationOutcome-id')->patch($requestBody);
+$result = $graphServiceClient->education()->classes()->byEducationClassId('educationClass-id')->assignments()->byEducationAssignmentId('educationAssignment-id')->submissions()->byEducationSubmissionId('educationSubmission-id')->outcomes()->byEducationOutcomeId('educationOutcome-id')->patch($requestBody);
 
 
 ```

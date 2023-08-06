@@ -2,7 +2,7 @@
 title: "persistentBrowserSessionControl resource type"
 description: "Session control to define whether to persist cookies or not."
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

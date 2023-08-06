@@ -45,6 +45,7 @@ The following table shows the properties that are required when you update an [a
 
 |Property|Type|Description|
 |:---|:---|:---|
+|accessPackageId|String|Identifier of the access package. Required. |
 |displayName|String|The display name of the policy. Required.|
 |description|String|The description of the policy. Required.|
 |canExtend|Boolean|Indicates whether a user can extend the access package assignment duration after approval. Required.|

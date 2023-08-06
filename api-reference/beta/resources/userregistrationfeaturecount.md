@@ -1,7 +1,7 @@
 ---
 title: "userRegistrationFeatureCount resource type"
 description: "Represents the number of users registered or capable for multi-factor authentication, self-service password reset, and passwordless authentication."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

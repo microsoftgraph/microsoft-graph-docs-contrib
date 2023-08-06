@@ -36,42 +36,7 @@ GET /auditLogs/provisioning
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response. Note that the filters are all case sensitive except for status. 
-
-|Name     |Description                            |Example|
-|:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](/graph/query-parameters#filter-parameter)|Filters results (rows). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
-|[$top](/graph/query-parameters#top-parameter)|Sets the page size of results.|`/auditLogs/provisioning?$top=20`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages. You must pass the top filter in the query to generate the token. You cannot specify the number of results to be skipped.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
-
-For general information, see [OData query parameters](/graph/query-parameters).
-
-### Attributes supported by the $filter parameter
-
-|Attribute name |Supported operators|
-|:----------------|:------|
-|id| eq, contains|
-|activityDateTime| eq|
-|tenantid|eq, contains|
-|jobid|eq, contains|
-|changeid|eq, contains|
-|cycleid|eq, contains|
-|action|eq, contains|
-|provisioningAction|eq, contains|
-|durationInMilliseconds|eq, gt, lt|
-|provisioningStatusInfo/status|eq, contains|
-|statusInfo/status|eq, contains|
-|sourceSystem/displayName|eq, contains|
-|targetSystem/displayName|eq, contains|
-|sourceIdentity/identityType|eq, contains|
-|targetIdentity/identityType|eq, contains|
-|sourceIdentity/id|eq, contains|
-|servicePrincipal/id|eq|
-|servicePrincipal/name|eq|
-|targetIdentity/id|eq, contains|
-|sourceIdentity/displayName|eq, contains|
-|targetIdentity/displayName|eq, contains|
-|initiatedBy/displayName|eq, contains|
+This method supports the `$filter` (`eq`, `contains`, `gt`, `lt`), `$orderby`, `$top`, `$skiptoken` OData query parameters to help customize the response. The filters are all case sensitive. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

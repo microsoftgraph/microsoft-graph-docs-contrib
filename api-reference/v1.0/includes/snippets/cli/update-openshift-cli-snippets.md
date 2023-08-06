@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc teams schedule open-shifts patch --team-id {team-id} --open-shift-id {openShift-id} --body '{\
 "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",\
 "sharedOpenShift": {\

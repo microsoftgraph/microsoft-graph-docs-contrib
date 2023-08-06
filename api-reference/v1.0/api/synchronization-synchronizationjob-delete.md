@@ -92,7 +92,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/j
 
 ---
 
-
 ##### Response
 The following is an example of the response. 
 

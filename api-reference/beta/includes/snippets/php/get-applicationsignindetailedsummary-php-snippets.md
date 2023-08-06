@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->reports()->applicationSignInDetailedSummary()->byApplicationSignInDetailedSummary()Id('applicationSignInDetailedSummary-id')->get();
+$result = $graphServiceClient->reports()->applicationSignInDetailedSummary()->byApplicationSignInDetailedSummaryId('applicationSignInDetailedSummary-id')->get();
 
 
 ```

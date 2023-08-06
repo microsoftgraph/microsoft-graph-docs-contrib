@@ -2,7 +2,7 @@
 title: "clientUserAgent resource type"
 description: "The clientUserAgent type"
 ms.localizationpriority: medium
-author: "williamlooney"
+author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
