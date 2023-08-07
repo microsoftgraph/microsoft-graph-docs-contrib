@@ -38,7 +38,9 @@ GET /teams/{team-id}/channels
 ```
 
 ## Optional query parameters
-This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select`, `$filter`, `$skip`, `$expand` and `$top` OData query parameters to help customize the response. [OData query parameters](/graph/query-parameters) to help customize the response.
+
+The default page size for this API is 100. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ### Use $select for better performance
 Populating the **email** and **moderationSettings** properties for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** and **moderationSettings** properties to improve performance.
@@ -283,10 +285,8 @@ Content-length: 262
             "displayName": "shared channel-01",
             "description": "this is the shared channel description",
             "isFavoriteByDefault": null,
-            "email": "",
             "webUrl": "https://teams.microsoft.com/l/channel/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/shared%20channel-01?groupId=6a720ba5-7373-463b-bc9f-4cd04b5c6742&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607",
-            "membershipType": "shared",
-            "moderationSettings": null
+            "membershipType": "shared"
         }
     ]
 }
