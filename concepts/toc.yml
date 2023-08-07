@@ -150,7 +150,7 @@ items:
           - name: Microsoft Graph Data Connect overview
             href: data-connect-concept-overview.md
             displayName: Microsoft Graph Data Connect, access data, bulk data
-          - name: Build your first Microsoft Graph Data Connect application
+          - name: Build your Data Connect application
             href: data-connect-quickstart.yml
             displayName: Microsoft Graph Data Connect
           - name: Datasets, regions, and sinks
