@@ -1,6 +1,6 @@
 ---
 title: "workbookEmailIdentity resource type"
-description: "Represents an identity type"
+description: "Represents an identity of an actor. For example, an actor can be a user who created, modified or completed a task."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
 ms.prod: "excel"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an identity type
+Represents an identity of an actor. For example, an actor can be a user who created, modified or completed a task.
 
 ## Properties
 |Property|Type|Description|

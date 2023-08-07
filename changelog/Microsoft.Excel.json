@@ -57,38 +57,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **tasks** relationship to the [workbookWorksheet](https://learn.microsoft.com/en-us/graph/api/resources/workbookWorksheet?view=graph-rest-beta) resource.",
           "Target": "workbookWorksheet"
-        },
-        {
-          "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",
-          "ApiChange": "Method",
-          "ChangedApiName": "count",
-          "ChangeType": "Addition",
-          "Description": "Added the [count](https://learn.microsoft.com/en-us/graph/api/workbookDocumentTask?view=graph-rest-beta) method to the [workbookDocumentTask](https://learn.microsoft.com/en-us/graph/api/workbookDocumentTask?view=graph-rest-beta) resource.",
-          "Target": "workbookDocumentTask"
-        },
-        {
-          "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",
-          "ApiChange": "Method",
-          "ChangedApiName": "count",
-          "ChangeType": "Addition",
-          "Description": "Added the [count](https://learn.microsoft.com/en-us/graph/api/workbookDocumentTaskChange?view=graph-rest-beta) method to the [workbookDocumentTaskChange](https://learn.microsoft.com/en-us/graph/api/workbookDocumentTaskChange?view=graph-rest-beta) resource.",
-          "Target": "workbookDocumentTaskChange"
-        },
-        {
-          "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",
-          "ApiChange": "Method",
-          "ChangedApiName": "itemAt",
-          "ChangeType": "Addition",
-          "Description": "Added the [itemAt](https://learn.microsoft.com/en-us/graph/api/workbookDocumentTask?view=graph-rest-beta) method to the [workbookDocumentTask](https://learn.microsoft.com/en-us/graph/api/workbookDocumentTask?view=graph-rest-beta) resource.",
-          "Target": "workbookDocumentTask"
-        },
-        {
-          "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",
-          "ApiChange": "Method",
-          "ChangedApiName": "itemAt",
-          "ChangeType": "Addition",
-          "Description": "Added the [itemAt](https://learn.microsoft.com/en-us/graph/api/workbookDocumentTaskChange?view=graph-rest-beta) method to the [workbookDocumentTaskChange](https://learn.microsoft.com/en-us/graph/api/workbookDocumentTaskChange?view=graph-rest-beta) resource.",
-          "Target": "workbookDocumentTaskChange"
         }
       ],
       "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",

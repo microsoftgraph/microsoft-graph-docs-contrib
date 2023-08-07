@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of workbookdocumenttaskchange objects.
+Retrieve a list of [workbookDocumentTaskChange](../resources/workbookDocumentTaskChange.md) objects.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +56,7 @@ Here is an example of the request.
   "name": "get_changes"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/tasks/{id}/changes
+GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{D5667D8C-B814-4748-B942-9C41BCC9BBB1}/tasks/{47B4663E-612F-4E06-B2E6-E8EBE819CBB6}/changes
 ```
 
 ---

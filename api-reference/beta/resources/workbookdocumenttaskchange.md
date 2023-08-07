@@ -20,22 +20,22 @@ Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
-
+| [Get workbookDocumentTaskChange](../api/workbookdocumenttaskchange-get.md) | [workbookDocumentTaskChange](workbookdocumenttaskchange.md) | Read properties and relationships of workbookDocumentTaskChange object. |
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignee|[workbookEmailIdentity](workbookemailidentity.md)|Only present when the `type` property is `assign`. Nullable.|
+|assignee|[workbookEmailIdentity](workbookemailidentity.md)|Only present when the **type** property is `assign`. Nullable.|
 |changedBy|[workbookEmailIdentity](workbookemailidentity.md)|The user who performs the change|
 |commentId|String|The identifier of the associated comment|
 |createdDateTime|DateTimeOffset|A timestamp of the change. Nullable.|
-|dueDateTime|DateTimeOffset|Only present when the `type` property is `setSchedule`. Nullable. |
+|dueDateTime|DateTimeOffset|Only present when the **type** property is `setSchedule`. Nullable. |
 |id|String|The identifier of the change history|
-|percentComplete|Int32|Only present when the `type` property is `setPercentComplete`. Nullable.|
-|priority|Int32|Only present when the `type` property is `setPriority`. Nullable.|
-|startDateTime|DateTimeOffset|Only present when the `type` property is `setSchedule`. Nullable.|
-|title|String|Only present when the `type` property is `setTitle`. Nullable.|
-|type|String|Type of the change history. Possible values include create, assign, unassign, unassignAll, setPriority, setTitle, setPercentComplete, setSchedule, remove, restore, and undo |
+|percentComplete|Int32|An integer value from `0` to `100` that represents the percentage of the completion of the task and associated comment. `100` means that the task and associated comment are completed. If you change the completion from `100` to a lower value, the associated task and comment are reactivated. Only present when the **type** property is `setPercentComplete`. Nullable.|
+|priority|Int32|An integer value from `0` to `10` that represents the priority of the task. A lower value indicates a higher priority. `5` indicates the default priority if not set. Only present when the **type** property is `setPriority`. Nullable.|
+|startDateTime|DateTimeOffset|Only present when the **type** property is `setSchedule`. Nullable.|
+|title|String|Only present when the **type** property is `setTitle`. Nullable.|
+|type|String|Type of the change history. Possible values include create, assign, unassign, unassignAll, setPriority, setTitle, setPercentComplete, setSchedule, remove, restore, and undo. |
 |undoChangeId|String|Only exists on undo change history. Nullable.|
 
 ## Relationships

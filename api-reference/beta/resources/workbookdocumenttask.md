@@ -21,7 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List changes](../api/workbookdocumenttask-list-changes.md)|[workbookDocumentTaskChange](workbookdocumenttaskchange.md) collection|Get the workbookDocumentTaskChange resources from the changes navigation property.|
+| [Get workbookDocumentTask](../api/workbookdocumenttask-get.md) | [workbookDocumentTask](workbookdocumenttask.md) | Read properties and relationships of workbookDocumentTask object. |
+| [List changes](../api/workbookdocumenttask-list-changes.md)|[workbookDocumentTaskChange](workbookdocumenttaskchange.md) collection|Get the workbookDocumentTaskChange resources from the changes navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -32,8 +33,8 @@ Inherits from [entity](../resources/entity.md).
 |createdBy|[workbookEmailIdentity](workbookemailidentity.md)|A user identity that creates the task. Nullable.|
 |createdDateTime|DateTimeOffset|Timestamp of the task creation. Nullable.|
 |id|String|Task identifier|
-|percentComplete|Int32|Percentage of the completion of the task, range from 0 to 100. 100 means the task is completed. Nullable.|
-|priority|Int32| An integer value from 0 to 10 to represent the priority of the task. A lower value indicates a higher priority. Nullable.|
+|percentComplete|Int32|An integer value from `0` to `100` that represents the percentage of the completion of the task and associated comment. `100` means that the task and associated comment are completed. Nullable.|
+|priority|Int32| An integer value from `0` to `10` that represents the priority of the task. A lower value indicates a higher priority. `5` indicates the default priority if not set. Nullable.|
 |startAndDueDateTime|[workbookDocumentTaskSchedule](workbookdocumenttaskschedule.md)|Start and due date of the task. Nullable.|
 |title|String| title of the task|
 
