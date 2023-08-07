@@ -20,25 +20,25 @@ Inherits from [delegatedAdminRelationship](../resources/delegatedadminrelationsh
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details that contain the identifiers of the administrative roles that the partner admin is requesting in the customer tenant.| Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
-|activatedDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship became active. Read-only.| Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
-|createdDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship was created. Read-only.| Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
-|customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship. This is configured either by the partner at the time the relationship is created or by the system after the customer approves the relationship. Cannot be changed by the customer.| Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
-|displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner. This is set by the partner only when the relationship is in the `created` status and cannot be changed by the customer.| Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
-|duration|Duration|The duration of the relationship in ISO 8601 format. Must be a value between `P1D` and `P2Y` inclusive. This is set by the partner only when the relationship is in the `created` status and cannot be changed by the customer.| Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
-|endDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the **status** of relationship changes to either `terminated` or `expired`. Calculated as `endDateTime = activatedDateTime + duration`. Read-only.| Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
+|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details that contain the identifiers of the administrative roles that the partner admin is requesting in the customer tenant. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
+|activatedDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship became active. Read-only. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
+|createdDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship was created. Read-only. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
+|customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship. This is configured either by the partner at the time the relationship is created or by the system after the customer approves the relationship. Cannot be changed by the customer. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
+|displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner. This is set by the partner only when the relationship is in the `created` status and cannot be changed by the customer. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
+|duration|Duration|The duration of the relationship in ISO 8601 format. Must be a value between `P1D` and `P2Y` inclusive. This is set by the partner only when the relationship is in the `created` status and cannot be changed by the customer. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
+|endDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the **status** of relationship changes to either `terminated` or `expired`. Calculated as `endDateTime = activatedDateTime + duration`. Read-only. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
 |id|String|The unique identifier of the relationship. Read-only. Inherited from [entity](../resources/entity.md).| Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
 |indirectProviderTenantId|String|The Indirect provider partner tenant Id who created the relationship for the indirect reseller partner.|
 |isPartnerConsentPending|Boolean|Indicates the indirect reseller partner consent status. True, if the partner yet to review the relationship. False, partner already provided the consent (approve/reject).|
-|lastModifiedDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship was last modified. Read-only.| Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
-|status|delegatedAdminRelationshipStatus|The status of the relationship. Read Only. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`, `unknownFutureValue`. Supports `$orderBy`.| Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`, `unknownFutureValue`.|
+|lastModifiedDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship was last modified. Read-only. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
+|status|delegatedAdminRelationshipStatus|The status of the relationship. Read Only. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`, `unknownFutureValue`. Supports `$orderBy`. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|accessAssignments|[delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) collection|The access assignments associated with the delegated admin relationship.| Inherited from [microsoft.partner.customerServiceAdministration.delegatedAdminRelationship](../resources/delegatedadminrelationship.md)|
-|operations|[delegatedAdminRelationshipOperation](../resources/delegatedadminrelationshipoperation.md) collection|The long running operations associated with the delegated admin relationship.| Inherited from [microsoft.partner.customerServiceAdministration.delegatedAdminRelationship](../resources/delegatedadminrelationship.md)|
-|requests|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) collection|The requests associated with the delegated admin relationship.| Inherited from [microsoft.partner.customerServiceAdministration.delegatedAdminRelationship](../resources/delegatedadminrelationship.md)|
+|accessAssignments|[delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) collection|The access assignments associated with the delegated admin relationship. Inherited from [microsoft.graph.customerServiceAdministration.delegatedAdminRelationship](../resources/delegatedadminrelationship.md)|
+|operations|[delegatedAdminRelationshipOperation](../resources/delegatedadminrelationshipoperation.md) collection|The long running operations associated with the delegated admin relationship. Inherited from [microsoft.graph.customerServiceAdministration.delegatedAdminRelationship](../resources/delegatedadminrelationship.md)|
+|requests|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) collection|The requests associated with the delegated admin relationship. Inherited from [microsoft.graph.customerServiceAdministration.delegatedAdminRelationship](../resources/delegatedadminrelationship.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.resellerDelegatedAdminRelationship",
-  "baseType": "microsoft.partner.customerServiceAdministration.delegatedAdminRelationship",
+  "baseType": "microsoft.graph.customerServiceAdministration.delegatedAdminRelationship",
   "openType": false
 }
 -->
