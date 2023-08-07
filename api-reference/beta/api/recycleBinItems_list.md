@@ -6,7 +6,6 @@ description: Retrieve the list of recycleBinItem
 ---
 # Get recycleBinItem
 
-Namespace: microsoft.graph
 Retrieve the list of [recycleBinItem](../resources/recycleBinItem.md) resources under the specified site or storageContainer.
 
 ## Permissions
@@ -20,11 +19,11 @@ The FileStorageContainer.Selected permission is required for operations with sto
 |Delegated (personal Microsoft account) | FileStorageContainer.Selected                           |
 |Application                           | FileStorageContainer.Selected                           |
 
+<!-- {
+"blockType": "ignored",
+}-->
 
 ## HTTP request
-
-<!--{"blockType": "ignored"}-->
-
 
 ``` http
 GET /sites/{siteId}/recycleBin/items
@@ -48,13 +47,13 @@ Do not supply a request body for this method
 
 If successful, this method returns a `200 OK` response code and returns a collection of [microsoft.graph.recycleBinItem](../resources/recycleBinItem.md) in the response body.
 
-## Example
+## Examples
 
 The following example requests the list of recycleBin items under a specific site.
 
 ### Request
 <!-- {
-"blockType": "request","name":"get-recyclebinItems","scopes":"files.readwrite","tags":"service.graph"
+"blockType": "ignored"
 }-->
 
 ``` http
@@ -65,10 +64,11 @@ GET /sites/6fefbdf8-e04b-4b66-93df-5ca2d3d4d7ec/recycleBin/items
 GET /storageContainers/b!6XpSztFy9E2yOmBRc6UvE17Un8QjGtVKlBDSEvy3yq2qLiqRB1RCQKYj3Omp9ReH/recycleBin/items
 ```
 
+<!-- {
+"blockType": "ignored"
+}-->
 
 ### Response
-
-<!-- { "blockType": "response","name":"get-recyclebinItems","scopes":"files.readwrite","tags":"service.graph" }-->
 
 ``` http
 HTTP/1.1 200 OK
@@ -87,10 +87,5 @@ Content-Type: application/json
 
 <!-- {
 "type": "#page.annotation",
-"description": "Get RecyclebinItems",
-"createdBy": "API Clinic",
 "section": "documentation"
-"suppressions": [
-]
 }-->
-
