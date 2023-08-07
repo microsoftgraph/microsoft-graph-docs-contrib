@@ -30,7 +30,7 @@ Change notifications follow an event-driven model where customers receive alerts
 
 Microsoft Graph supports three types of change notifications:
 
-- **Basic notifications**: Change notifications that don't contain resource data other than the **id** of the resource that changed.  When an app receives a basic notification, the service can use the **id** to query to changed object.
+- **Basic notifications**: Change notifications that don't contain resource data other than the **id** of the resource that changed. When an app receives a basic notification, the service can use the **id** to query to changed object.
 - **Rich notifications**: Change notifications that include the resource data of the object that changed. For more information about rich notifications, see [Rich notifications](./webhooks-with-resource-data.md).
 - **Lifecycle notifications**: Notifications that alert the customer when they are at risk of missing change notifications due to the lifecycle of their subscription. For more information about lifecycle notifications, see [Lifecycle notifications](./webhooks-lifecycle.md).
 
@@ -46,7 +46,7 @@ Microsoft Graph can deliver change notifications to clients via the following ch
 
 Clients can create subscriptions, renew subscriptions, and delete subscriptions. While the subscription is active and when changes occur in the subscribed resource, Microsoft Graph sends change notifications to the specified notification endpoint.
 
-You manage the subscription using the [subscription resource type](/graph/api/resources/subscription) and its related methods. Microsoft Graph send change notifications in a structure defined in the [changeNotificationCollection resource type](/graph/api/resources/changenotificationcollection).
+You manage the subscription using the [subscription resource type](/graph/api/resources/subscription) and its related methods. Microsoft Graph sends change notifications in a structure defined in the [changeNotificationCollection resource type](/graph/api/resources/changenotificationcollection).
 
 ## Supported resources
 
