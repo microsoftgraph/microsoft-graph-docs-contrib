@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List whoisHistoryRecords
+# List whoisRecords
 
 Namespace: microsoft.graph.security
 
@@ -15,9 +15,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-List a collection of [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) objects.
+List a collection of [whoisRecord](../resources/security-whoisrecord.md) objects.
 
-> **Note:** This List API does require the usage of `$search`
+> **Note:** This List whoisRecords API requires the usage of `$search`
 
 ## Permissions
 
@@ -42,23 +42,17 @@ GET /security/threatIntelligence/whoisRecords
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$orderby`, `$search`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-### $count
+`$count` is supported to return a wholistic count of the number of [whoisRecord](../resources/security-whoisrecord.md) objects. This is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`).
 
-`$count` is supported to return a wholistic count of the number of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects. This is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`).
-
-### $orderby
-
-`$orderby` is an optional query parameter. The following properties can be used for `$orderby` calls.
+The following properties can be used for `$orderby` calls.
 
 | Property               | Example                              | Notes                                           |
 | :--------------------- | :----------------------------------- | :---------------------------------------------- |
 | `expirationDateTime`   | `$orderby=expirationDateTime desc`   |                                                 |
 | `host/id`              | `$orderby=host/id asc`               | The full path is required for `$orderby` usage. |
 | `registrationDateTime` | `$orderby=registrationDateTime desc` |                                                 |
-
-### $search
 
 `$search` is **required** when calling the `whoisRecords` List API. The API currently only supports searching by one field in a call.The following properties can be used for searching:
 
@@ -74,15 +68,9 @@ This method supports some of the OData query parameters to help customize the re
 | `technical`   | `$search=technical/address/state:WA`      | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
 | `zone`        | `$search=zone/address/state:WA`           | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
 
-### $select
-
 `$select` is supported to limit the properties returned in this query.
 
-### $skip
-
 `$skip` is supported to skip over elements in pages. Combine with `$top` to perform pagination (or leverage the `@odata.nextLink` for server-side pagination).
-
-### $top
 
 `$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination (or leverage the `@odata.nextLink` for server-side pagination).
 

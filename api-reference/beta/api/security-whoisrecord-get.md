@@ -1,6 +1,6 @@
 ---
 title: "Get whoisRecord"
-description: "Read the properties and relationships of a microsoft.graph.security.whoisRecord object."
+description: "Read the properties and relationships of a whoisRecord object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) object.
+Read the properties and relationships of a [whoisRecord](../resources/security-whoisrecord.md) object.
 
 ## Permissions
 
