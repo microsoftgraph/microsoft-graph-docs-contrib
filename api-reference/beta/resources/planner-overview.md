@@ -34,6 +34,23 @@ When you [create a new plan](../api/planner-post-plans.md), set the **container*
 
 >**Note:** The user who is creating the plan must be a member of the group that will contain the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
+
+### Container type: User
+
+Plans may also be scoped to a single AAD or MSA User. These plans will only be accessible by the requesting User and will be automatically deleted when the User is deleted.
+
+When you [create a new plan](../api/planner-post-plans.md), set the **container** property on a plan object with the `type` value set to `user` in order to create the Plan in the User's container.
+
+```json
+{
+    ...
+    "container": {
+        "type": "user",
+        "url": "https://graph.microsoft.com/beta/users/me"
+    }
+}
+```
+
 ## Plans
 
 [Plans](plannerplan.md) are the containers of [tasks](plannertask.md).
