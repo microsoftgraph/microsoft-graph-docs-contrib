@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -23,7 +23,7 @@ configuration := &graphusers.ItemOutlookTaskItemRequestBuilderGetRequestConfigur
 	Headers: headers,
 }
 
-result, err := graphClient.Me().Outlook().Tasks().ByTaskId("outlookTask-id").Get(context.Background(), configuration)
+tasks, err := graphClient.Me().Outlook().Tasks().ByOutlookTaskId("outlookTask-id").Get(context.Background(), configuration)
 
 
 ```

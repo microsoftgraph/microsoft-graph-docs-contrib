@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewRegionalAndLanguageSettings()
@@ -28,7 +28,6 @@ localeInfo1.SetLocale(&locale)
 authoringLanguages := []graphmodels.LocaleInfoable {
 	localeInfo,
 	localeInfo1,
-
 }
 requestBody.SetAuthoringLanguages(authoringLanguages)
 defaultRegionalFormat := graphmodels.NewLocaleInfo()
@@ -36,7 +35,7 @@ locale := "en-US"
 defaultRegionalFormat.SetLocale(&locale) 
 requestBody.SetDefaultRegionalFormat(defaultRegionalFormat)
 
-result, err := graphClient.Me().Settings().RegionalAndLanguageSettings().Patch(context.Background(), requestBody, nil)
+regionalAndLanguageSettings, err := graphClient.Me().Settings().RegionalAndLanguageSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

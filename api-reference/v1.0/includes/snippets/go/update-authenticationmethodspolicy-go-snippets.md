@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationMethodsPolicy()
@@ -38,13 +38,12 @@ authenticationMethodsRegistrationCampaignIncludeTarget.SetTargetedAuthentication
 
 includeTargets := []graphmodels.AuthenticationMethodsRegistrationCampaignIncludeTargetable {
 	authenticationMethodsRegistrationCampaignIncludeTarget,
-
 }
 authenticationMethodsRegistrationCampaign.SetIncludeTargets(includeTargets)
 registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)
 requestBody.SetRegistrationEnforcement(registrationEnforcement)
 
-result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
+authenticationMethodsPolicy, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

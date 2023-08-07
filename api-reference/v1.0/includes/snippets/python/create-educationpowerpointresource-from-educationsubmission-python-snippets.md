@@ -8,16 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 request_body = EducationSubmissionResource()
-resource = EducationResource()
+resource = EducationPowerPointResource()
 resource.@odata_type = '#microsoft.graph.educationPowerPointResource'
 
 resource.display_name = 'state diagram.pptx'
 
-additional_data = [
-'file_url' => 'https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RN3MHWWM7BNXJD2UD5OMRFEDKN2', 
-];
-resource.additional_data(additional_data)
-
+resource.file_url = 'https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RN3MHWWM7BNXJD2UD5OMRFEDKN2'
 
 
 request_body.resource = resource

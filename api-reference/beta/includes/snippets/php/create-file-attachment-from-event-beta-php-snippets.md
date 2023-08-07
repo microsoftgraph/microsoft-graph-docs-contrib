@@ -7,18 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new Attachment();
-$requestBody->set@odatatype('#microsoft.graph.fileAttachment');
+$requestBody = new FileAttachment();
+$requestBody->setOdataType('#microsoft.graph.fileAttachment');
 
 $requestBody->setName('menu.txt');
 
-$additionalData = [
-		'contentBytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
-];
-$requestBody->setAdditionalData($additionalData);
-
+$requestBody->setContentBytes(base64_decode('bWFjIGFuZCBjaGVlc2UgdG9kYXk='));
 
 
 

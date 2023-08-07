@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -25,7 +25,7 @@ configuration := &graphsecurity.SecurityAttackSimulationPayloadsRequestBuilderGe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Security().AttackSimulation().Payloads().Get(context.Background(), configuration)
+payloads, err := graphClient.Security().AttackSimulation().Payloads().Get(context.Background(), configuration)
 
 
 ```

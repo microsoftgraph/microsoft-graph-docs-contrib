@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SendActivityNotificationPostRequestBody();
 $topic = new TeamworkActivityTopic();
-$topic->setSource(new TeamworkActivityTopicSource('entityurl'));
+$topic->setSource(new TeamworkActivityTopicSource('entityUrl'));
 
 $topic->setValue('https://graph.microsoft.com/beta/chats/{chatId}/messages/{messageId}');
 
@@ -24,14 +24,10 @@ $previewText->setContent('Deployment requires your approval');
 
 
 $requestBody->setPreviewText($previewText);
-$recipient = new TeamworkNotificationRecipient();
-$recipient->set@odatatype('microsoft.graph.aadUserNotificationRecipient');
+$recipient = new AadUserNotificationRecipient();
+$recipient->setOdataType('microsoft.graph.aadUserNotificationRecipient');
 
-$additionalData = [
-		'userId' => 'jacob@contoso.com', 
-];
-$recipient->setAdditionalData($additionalData);
-
+$recipient->setUserId('jacob@contoso.com');
 
 
 $requestBody->setRecipient($recipient);

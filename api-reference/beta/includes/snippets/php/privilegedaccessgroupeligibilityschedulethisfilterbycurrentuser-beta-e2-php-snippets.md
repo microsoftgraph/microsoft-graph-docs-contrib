@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new PrivilegedAccessGroupEligibilityScheduleRequestBuilderGetRequestConfiguration();
-$queryParameters = PrivilegedAccessGroupEligibilityScheduleRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new FilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration();
+$queryParameters = FilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "groupId eq 'd5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc' and accessId eq 'member'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->privilegedAccess()->group()->eligibilitySchedules()->byEligibilityScheduleId('privilegedAccessGroupEligibilitySchedule-id')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->privilegedAccess()->group()->eligibilitySchedules()->filterByCurrentUserWithOn('principal', )->get($requestConfiguration);
 
 
 ```

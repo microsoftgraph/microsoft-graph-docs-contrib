@@ -2,7 +2,7 @@
 title: "credentialUserRegistrationDetails resource type"
 description: "Represents the details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
@@ -12,6 +12,9 @@ doc_type: "resourcePageType"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> The credential user registration details API is deprecated and will stop returning data on June 30, 2024. Use the new [User registration details](../resources/userregistrationdetails.md) API instead.
 
 Represents the details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users. Details include user information, status of registration, and the authentication method used.
 

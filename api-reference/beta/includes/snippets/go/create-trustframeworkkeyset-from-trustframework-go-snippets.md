@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTrustFrameworkKeySet()
@@ -25,7 +25,6 @@ k := "k-value"
 trustFrameworkKey.SetK(&k) 
 x5c := []string {
 	"x5c-value",
-
 }
 trustFrameworkKey.SetX5c(x5c)
 x5t := "x5t-value"
@@ -59,11 +58,10 @@ trustFrameworkKey.SetQi(&qi)
 
 keys := []graphmodels.TrustFrameworkKeyable {
 	trustFrameworkKey,
-
 }
 requestBody.SetKeys(keys)
 
-result, err := graphClient.TrustFramework().KeySets().Post(context.Background(), requestBody, nil)
+keySets, err := graphClient.TrustFramework().KeySets().Post(context.Background(), requestBody, nil)
 
 
 ```

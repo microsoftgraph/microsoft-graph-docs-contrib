@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -77,7 +77,6 @@ metadata := []graphmodels.KeyValuePairable {
 	keyValuePair4,
 	keyValuePair5,
 	keyValuePair6,
-
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
@@ -106,7 +105,7 @@ additionalData := map[string]interface{}{
 labelingOptions.SetAdditionalData(additionalData)
 requestBody.SetLabelingOptions(labelingOptions)
 
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateApplication().Post(context.Background(), requestBody, configuration)
+evaluateApplication, err := graphClient.InformationProtection().Policy().Labels().EvaluateApplication().Post(context.Background(), requestBody, configuration)
 
 
 ```

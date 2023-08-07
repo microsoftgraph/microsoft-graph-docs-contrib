@@ -38,7 +38,6 @@ Inherits from [stsPolicy](stsPolicy.md).
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. See below for more details about the JSON schema for this property. Required.|
-|description|String| Description for this policy.|
 |displayName|String| Display name for this policy. Required.|
 |id|String| Unique identifier for this policy. Read-only.|
 |isOrganizationDefault|Boolean|If set to `true`, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is `false`.|
@@ -60,7 +59,7 @@ The properties below form the JSON object that represents a token lifetime polic
 
 >**Note:** Max values for properties denoted in "days" are 1 second short of the denoted number of days. For example, the max value of 1 days is specified as "23:59:59".
 
-| Property	   | Type	|Description| Min Value | Max Value | Default Value|
+| Property       | Type    |Description| Min Value | Max Value | Default Value|
 |:---------------|:--------|:----------|:--------|:--------|:----|
 |AccessTokenLifetime|String|Controls how long both access and ID tokens are considered valid.|10 minutes|1 day|1 hour|
 |Version|Integer|Set value of 1. Required.|None|None|None|
@@ -87,7 +86,6 @@ The following is a JSON representation of the resource.
 ```json
 {
   "definition": ["String"],
-  "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
   "isOrganizationDefault": true,

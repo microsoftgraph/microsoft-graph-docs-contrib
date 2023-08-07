@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphserviceprincipals.NewUpdatePasswordSingleSignOnCredentialsPostRequestBody()
@@ -36,10 +36,9 @@ credential1.SetValue(&value)
 type := "password"
 credential1.SetType(&type) 
 
-credentials := []graphserviceprincipals.Credentialable {
+credentials := []graphmodels.Credentialable {
 	credential,
 	credential1,
-
 }
 requestBody.SetCredentials(credentials)
 

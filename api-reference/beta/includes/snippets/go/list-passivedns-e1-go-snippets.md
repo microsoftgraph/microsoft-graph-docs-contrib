@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().ThreatIntelligence().Hosts().ByHostId("host-id").PassiveDns().Get(context.Background(), nil)
+passiveDns, err := graphClient.Security().ThreatIntelligence().Hosts().ByHostId("host-id").PassiveDns().Get(context.Background(), nil)
 
 
 ```

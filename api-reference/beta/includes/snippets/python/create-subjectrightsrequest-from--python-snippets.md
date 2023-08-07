@@ -43,7 +43,7 @@ request_body.pause_after_estimate = True
 
 request_body.Regulations(['CCPA', ])
 
-site_locations = SubjectRightsRequestSiteLocation()
+site_locations = SubjectRightsRequestAllSiteLocation()
 site_locations.@odata_type = 'microsoft.graph.subjectRightsRequestAllSiteLocation'
 
 

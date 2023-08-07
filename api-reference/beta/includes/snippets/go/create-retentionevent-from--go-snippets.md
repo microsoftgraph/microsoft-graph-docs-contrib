@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssecurity.NewRetentionEvent()
@@ -28,7 +28,6 @@ eventQuery := graphmodelssecurity.NewEventQuery()
 
 eventQueries := []graphmodelssecurity.EventQueryable {
 	eventQuery,
-
 }
 requestBody.SetEventQueries(eventQueries)
 eventTriggerDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
@@ -41,7 +40,6 @@ eventPropagationResult := graphmodelssecurity.NewEventPropagationResult()
 
 eventPropagationResults := []graphmodelssecurity.EventPropagationResultable {
 	eventPropagationResult,
-
 }
 requestBody.SetEventPropagationResults(eventPropagationResults)
 eventStatus := graphmodelssecurity.NewRetentionEventStatus()
@@ -49,7 +47,7 @@ requestBody.SetEventStatus(eventStatus)
 lastStatusUpdateDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetLastStatusUpdateDateTime(&lastStatusUpdateDateTime) 
 
-result, err := graphClient.Security().Triggers().RetentionEvents().Post(context.Background(), requestBody, nil)
+retentionEvents, err := graphClient.Security().Triggers().RetentionEvents().Post(context.Background(), requestBody, nil)
 
 
 ```

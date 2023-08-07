@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPlannerPlanConfiguration()
@@ -38,11 +38,10 @@ buckets := []graphmodels.PlannerPlanConfigurationBucketDefinitionable {
 	plannerPlanConfigurationBucketDefinition1,
 	plannerPlanConfigurationBucketDefinition2,
 	plannerPlanConfigurationBucketDefinition3,
-
 }
 requestBody.SetBuckets(buckets)
 
-result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().PlanConfiguration().Patch(context.Background(), requestBody, nil)
+planConfiguration, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().PlanConfiguration().Patch(context.Background(), requestBody, nil)
 
 
 ```

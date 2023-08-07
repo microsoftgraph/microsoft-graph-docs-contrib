@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -44,7 +44,7 @@ appliedCategories.SetCategory4(&category4)
 appliedCategories.SetAdditionalData(additionalData)
 requestBody.SetAppliedCategories(appliedCategories)
 
-result, err := graphClient.Planner().Tasks().ByTaskId("plannerTask-id").Patch(context.Background(), requestBody, configuration)
+tasks, err := graphClient.Planner().Tasks().ByPlannerTaskId("plannerTask-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

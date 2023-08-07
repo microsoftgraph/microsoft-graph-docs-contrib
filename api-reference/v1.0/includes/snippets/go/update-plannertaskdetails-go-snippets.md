@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -64,7 +64,7 @@ checklist.Set"a93c93c5-10a6-4167-9551-8bafa09967a7"(&"a93c93c5-10a6-4167-9551-8b
 checklist.SetAdditionalData(additionalData)
 requestBody.SetChecklist(checklist)
 
-result, err := graphClient.Planner().Tasks().ByTaskId("plannerTask-id").Details().Patch(context.Background(), requestBody, configuration)
+details, err := graphClient.Planner().Tasks().ByPlannerTaskId("plannerTask-id").Details().Patch(context.Background(), requestBody, configuration)
 
 
 ```

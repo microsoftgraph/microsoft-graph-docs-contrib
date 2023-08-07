@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewGetNotebookFromWebUrlPostRequestBody()
+requestBody := graphusers.NewItemGetNotebookFromWebUrlPostRequestBody()
 webUrl := "webUrl value"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Onenote().Notebooks().GetNotebookFromWebUrl().Post(context.Background(), requestBody, nil)
+getNotebookFromWebUrl, err := graphClient.Me().Onenote().Notebooks().GetNotebookFromWebUrl().Post(context.Background(), requestBody, nil)
 
 
 ```

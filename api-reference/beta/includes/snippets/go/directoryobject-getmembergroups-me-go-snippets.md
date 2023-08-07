@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewGetMemberGroupsPostRequestBody()
+requestBody := graphusers.NewItemGetMemberGroupsPostRequestBody()
 securityEnabledOnly := true
 requestBody.SetSecurityEnabledOnly(&securityEnabledOnly) 
 
-result, err := graphClient.Me().GetMemberGroups().Post(context.Background(), requestBody, nil)
+getMemberGroups, err := graphClient.Me().GetMemberGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

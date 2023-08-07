@@ -8,15 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new MailFolder
+var requestBody = new MailSearchFolder
 {
 	OdataType = "microsoft.graph.mailSearchFolder",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"filterQuery" , "contains(subject, 'Analytics')"
-		},
-	},
+	FilterQuery = "contains(subject, 'Analytics')",
 };
 var result = await graphClient.Me.MailFolders["{mailFolder-id}"].PatchAsync(requestBody);
 

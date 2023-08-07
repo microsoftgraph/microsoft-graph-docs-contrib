@@ -32,6 +32,7 @@ To develop with the toolkit, you need the following:
 You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via `unpkg`) or by installing the `npm` package.
 
 # [unpkg](#tab/html)
+
 To use the toolkit via `mgt-loader`, add the reference in a script to your code:
 
 ```html
@@ -40,24 +41,28 @@ To use the toolkit via `mgt-loader`, add the reference in a script to your code:
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```
+
 # [npm](#tab/npm)
+
 Using the toolkit via ES6 modules gives you full control of the bundling process and allows you to bundle only the code that you need for your application. To use the ES6 modules, add the `npm` package to your project:
 
 ```cmd
 npm install @microsoft/mgt
 ```
+
 Now you can reference all the components on the page that you're using:
 
 ```html
-<script type="module" src="node_modules/@microsoft/mgt/dist/es6/index.js"></script>
+<script
+  type="module"
+  src="node_modules/@microsoft/mgt/dist/es6/index.js"
+></script>
 
 <mgt-login></mgt-login>
 <mgt-agenda></mgt-agenda>
 ```
 
-
 ---
-
 
 ### NPM packages
 
@@ -75,29 +80,17 @@ The `@microsoft/mgt-components` package contains all the Microsoft Graph connect
 
 Providers are available via a single package and can be installed as needed. The following provider packages are available:
 
-- <b>@microsoft/mgt-msal-provider</b>
-
-    <code>[@microsoft/mgt-msal-provider](../providers/msal.md)</code> contains the `MsalProvider` and `mgt-msal-provider` component. The MSAL provider uses msal.js for authenticating in web apps and Progressive Web Apps (PWAs).
-
 - <b>@microsoft/mgt-msal2-provider</b>
 
-    <code>[@microsoft/mgt-msal2-provider](../providers/msal2.md)</code> contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL2 provider uses msal-browser for authenticating in web apps and PWAs.
-
--  <b>@microsoft/mgt-teams-provider</b>
-
-    <code>[@microsoft/mgt-teams-provider](../providers/teams.md)</code> contains the `TeamsProvider` and `mgt-teams-provider` component. The Microsoft Teams provider enables authentication in the Microsoft Teams tab application.
-
--  <b>@microsoft/mgt-teams-msal2-provider</b>
-
-    <code>[@microsoft/mgt-teams-msal2-provider](../providers/teams.md)</code> contains the `TeamsMsal2Provider` and `mgt-teams-msal2-provider` component. The Microsoft Teams MSAL2 provider enables authentication in the Microsoft Teams tab application.
+  <code>[@microsoft/mgt-msal2-provider](../providers/msal2.md)</code> contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL2 provider uses msal-browser for authenticating in web apps and PWAs.
 
 - <b>@microsoft/mgt-sharepoint-provider</b>
 
-    <code>[@microsoft/mgt-sharepoint-provider](../providers/sharepoint.md)</code> contains the `SharePointProvider` for authenticating in a SharePoint environment.
+  <code>[@microsoft/mgt-sharepoint-provider](../providers/sharepoint.md)</code> contains the `SharePointProvider` for authenticating in a SharePoint environment.
 
 - <b>@microsoft/mgt-proxy-provider</b>
 
-    <code>[@microsoft/mgt-proxy-provider](../providers/proxy.md)</code> contains the `ProxyProvider` for an application that proxy Graph calls through a backend service.
+  <code>[@microsoft/mgt-proxy-provider](../providers/proxy.md)</code> contains the `ProxyProvider` for an application that proxy Graph calls through a backend service.
 
 <b>@microsoft/mgt</b>
 
@@ -111,6 +104,10 @@ The <code>[@microsoft/mgt-react](./mgt-react.md)</code> package contains all the
 
 The <code>[@microsoft/mgt-spfx](./mgt-spfx.md)</code> package contains a SharePoint Framework library that's required to use Microsoft Graph Toolkit in SharePoint Framework solutions.
 
+<b>@microsoft/mgt-spfx-utils</b>
+
+The <code>@microsoft/mgt-spfx-utils</code> package contains a helper function to assit with lazy loading for [disambiguation](../customize-components/disambiguation.md#usage-in-sharepoint-framework-web-parts-with-react) when using Microsoft Graph Toolkit in SharePoint Framework solutions.
+
 ## Next steps
 
 You're now ready to start developing with Microsoft Graph Toolkit! The following guides are available to help you get started:
@@ -121,5 +118,4 @@ You're now ready to start developing with Microsoft Graph Toolkit! The following
 - [Build a web app (Angular)](./use-toolkit-with-angular.md)
 - [Build a SharePoint web part](./build-a-sharepoint-web-part.md)
 - [Build a Microsoft Teams tab](./build-a-microsoft-teams-tab.md)
-- [Build a Microsoft Teams SSO tab](./build-a-microsoft-teams-sso-tab.md)
 - [Build an Electron app](./build-an-electron-app.md)

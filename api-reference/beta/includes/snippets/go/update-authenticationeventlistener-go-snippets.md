@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationEventListener()
@@ -25,7 +25,7 @@ requestBody.SetConditions(conditions)
 priority := int32(500)
 requestBody.SetPriority(&priority) 
 
-result, err := graphClient.Identity().AuthenticationEventListeners().ByAuthenticationEventListenerId("authenticationEventListener-id").Patch(context.Background(), requestBody, nil)
+authenticationEventListeners, err := graphClient.Identity().AuthenticationEventListeners().ByAuthenticationEventListenerId("authenticationEventListener-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

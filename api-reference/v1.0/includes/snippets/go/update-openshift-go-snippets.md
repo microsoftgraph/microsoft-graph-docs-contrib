@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewOpenShift()
@@ -47,14 +47,13 @@ shiftActivity.SetDisplayName(&displayName)
 
 activities := []graphmodels.ShiftActivityable {
 	shiftActivity,
-
 }
 sharedOpenShift.SetActivities(activities)
 requestBody.SetSharedOpenShift(sharedOpenShift)
 draftOpenShift := null
 requestBody.SetDraftOpenShift(&draftOpenShift) 
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().OpenShifts().ByOpenShiftId("openShift-id").Patch(context.Background(), requestBody, nil)
+openShifts, err := graphClient.Teams().ByTeamId("team-id").Schedule().OpenShifts().ByOpenShiftId("openShift-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

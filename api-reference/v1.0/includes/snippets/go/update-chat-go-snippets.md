@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewChat()
 topic := "Group chat title update"
 requestBody.SetTopic(&topic) 
 
-result, err := graphClient.Chats().ByChatId("chat-id").Patch(context.Background(), requestBody, nil)
+chats, err := graphClient.Chats().ByChatId("chat-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

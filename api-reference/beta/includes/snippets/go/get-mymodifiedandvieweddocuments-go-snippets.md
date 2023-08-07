@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphusers.ItemInsightsUsedRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphusers.ItemInsightsUsedRequestBuilderGetRequestConfigurati
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Insights().Used().Get(context.Background(), configuration)
+used, err := graphClient.Me().Insights().Used().Get(context.Background(), configuration)
 
 
 ```

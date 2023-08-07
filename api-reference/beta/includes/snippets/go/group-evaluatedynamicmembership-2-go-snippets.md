@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphgroups.NewEvaluateDynamicMembershipPostRequestBody()
@@ -21,7 +21,7 @@ requestBody.SetMemberId(&memberId)
 membershipRule := "(user.displayName -startsWith \"EndTestUser\")"
 requestBody.SetMembershipRule(&membershipRule) 
 
-result, err := graphClient.Groups().EvaluateDynamicMembership().Post(context.Background(), requestBody, nil)
+evaluateDynamicMembership, err := graphClient.Groups().EvaluateDynamicMembership().Post(context.Background(), requestBody, nil)
 
 
 ```

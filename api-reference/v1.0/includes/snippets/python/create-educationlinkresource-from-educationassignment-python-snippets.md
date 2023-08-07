@@ -10,13 +10,14 @@ client =  GraphServiceClient(request_adapter)
 request_body = EducationAssignmentResource()
 request_body.distribute_for_student_work = False
 
-resource = EducationResource()
+resource = EducationLinkResource()
 resource.display_name = 'Where the Wonders of Learning Never Cease | Wonderopolis'
+
+resource.link = 'https://wonderopolis.org/'
 
 resource.@odata_type = '#microsoft.graph.educationLinkResource'
 
 additional_data = [
-'link' => 'https://wonderopolis.org/', 
 'thumbnail_preview_url' => 		null,
 ];
 resource.additional_data(additional_data)

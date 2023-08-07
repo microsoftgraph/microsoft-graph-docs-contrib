@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.ManagedTenants
+Import-Module Microsoft.Graph.Beta.ManagedTenants
 
-Get-MgTenantRelationshipManagedTenantGroup -TenantGroupId $tenantGroupId
+Get-MgBetaTenantRelationshipManagedTenantGroup -TenantGroupId $tenantGroupId
 
 ```

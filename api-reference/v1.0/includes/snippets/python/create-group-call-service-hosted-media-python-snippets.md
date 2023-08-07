@@ -79,7 +79,7 @@ request_body.targets(targetsArray)
 request_body.RequestedModalities([request_body.modality(Modality.Audio('modality.audio'))
 ])
 
-media_config = MediaConfig()
+media_config = ServiceHostedMediaConfig()
 media_config.@odata_type = '#microsoft.graph.serviceHostedMediaConfig'
 
 additional_data = [

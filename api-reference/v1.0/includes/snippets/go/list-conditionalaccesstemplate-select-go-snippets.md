@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -26,7 +26,7 @@ configuration := &graphidentity.IdentityConditionalAccessTemplatesRequestBuilder
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().ConditionalAccess().Templates().Get(context.Background(), configuration)
+templates, err := graphClient.Identity().ConditionalAccess().Templates().Get(context.Background(), configuration)
 
 
 ```

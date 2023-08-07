@@ -1,6 +1,6 @@
 ---
 title: "alertEvidence resource type"
-description: "Each alert contains a list of related evidence."
+description: "Represents evidence related to an alert."
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,15 +13,43 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Evidence related to an [alert](security-alert.md).
+Represents evidence related to an [alert](security-alert.md).
 
-This is the base type of [amazonResourceEvidence](security-amazonresourceevidence.md), [analyzedMessageEvidence](security-analyzedmessageevidence.md), [azureResourceEvidence](security-azureresourceevidence.md), [cloudApplicationEvidence](security-cloudapplicationevidence.md), [deviceEvidence](security-deviceevidence.md), [fileEvidence](security-fileevidence.md), [googleCloudResourceEvidence](security-googlecloudresourceevidence.md), [ipEvidence](security-ipEvidence.md), [mailboxEvidence](security-mailboxevidence.md), [mailClusterEvidence](security-mailclusterevidence.md), [oauthApplicationEvidence](security-oauthapplicationevidence.md), [processEvidence](security-processevidence.md), [registryKeyEvidence](security-registrykeyevidence.md), [registryValueEvidence](security-registryvalueevidence.md), [securityGroupEvidence](security-securitygroupevidence.md), [urlEvidence](security-urlevidence.md), and [userEvidence](security-userevidence.md).
-
-This alert evidence base type and its derived evidence types provide a means to organize and track rich data about each artifact involved in an **alert**. For example, an **alert** about an attacker's IP address logging into a cloud service using a compromised user account can track the following evidence:
+The **alertEvidence** base type and its derived evidence types provide a means to organize and track rich data about each artifact involved in an **alert**. For example, an **alert** about an attacker's IP address signing in to a cloud service using a compromised user account can track the following evidence:
 - [IP evidence](security-ipevidence.md) with the roles of `attacker` and `source`, remediation status of `running`, and verdict of `malicious`.
 - [Cloud application evidence](security-cloudapplicationevidence.md) with a role of `contextual`.
 - [Mailbox evidence](security-mailboxevidence.md) for the hacked user account with a role of `compromised`.
 
+This resource is the base type for the following evidence types: 
+* [amazonResourceEvidence](security-amazonresourceevidence.md)
+* [analyzedMessageEvidence](security-analyzedmessageevidence.md)
+* [azureResourceEvidence](security-azureresourceevidence.md)
+* [blobContainerEvidence](security-blobcontainerevidence.md)
+* [blobEvidence](security-blobevidence.md)
+* [cloudApplicationEvidence](security-cloudapplicationevidence.md)
+* [containerEvidence](security-containerevidence.md)
+* [containerImageEvidence](security-containerimageevidence.md)
+* [containerRegistryEvidence](security-containerregistryevidence.md)
+* [deviceEvidence](security-deviceevidence.md)
+* [fileEvidence](security-fileevidence.md)
+* [googleCloudResourceEvidence](security-googlecloudresourceevidence.md)
+* [ipEvidence](security-ipevidence.md)
+* [kubernetesClusterEvidence](security-kubernetesclusterevidence.md)
+* [kubernetesControllerEvidence](security-kubernetescontrollerevidence.md)
+* [kubernetesNamespaceEvidence](security-kubernetesnamespaceevidence.md)
+* [kubernetesPodEvidence](security-kubernetespodevidence.md)
+* [kubernetesSecretEvidence](security-kubernetessecretevidence.md)
+* [kubernetesServiceEvidence](security-kubernetesserviceevidence.md)
+* [kubernetesServiceAccountEvidence](security-kubernetesserviceaccountevidence.md)
+* [mailClusterEvidence](security-mailclusterevidence.md)
+* [mailboxEvidence](security-mailboxevidence.md)
+* [oauthApplicationEvidence](security-oauthapplicationevidence.md)
+* [processEvidence](security-processevidence.md)
+* [registryKeyEvidence](security-registrykeyevidence.md)
+* [registryValueEvidence](security-registryvalueevidence.md)
+* [securityGroupEvidence](security-securitygroupevidence.md)
+* [urlEvidence](security-urlevidence.md)
+* [userEvidence](security-userevidence.md)
 
 ## Properties
 
@@ -30,19 +58,19 @@ This alert evidence base type and its derived evidence types provide a means to 
 |createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`.|
 |remediationStatusDetails|String|Details about the remediation status.|
-|roles|[microsoft.graph.security.evidenceRole](#evidencerole-values) collection|One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role `Attacker`.|
+|roles|[microsoft.graph.security.evidenceRole](#evidencerole-values) collection|One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role `Attacker`. Possible values are: `unknown`, `contextual`, `scanned`, `source`, `destination`, `created`, `added`, `compromised`, `edited`, `attacked`, `attacker`, `commandAndControl`, `loaded`, `suspicious`, `policyViolator`, `unknownFutureValue`.|
 |tags|String collection|Array of custom tags associated with an evidence instance. For example, to denote a group of devices or high value assets.|
 |verdict|[microsoft.graph.security.evidenceVerdict](#evidenceverdict-values)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
 
 
 ### detectionSource values 
 
-| Value                        | Description                                                          |
-| :----------------------------| :--------------------------------------------------------------------|
-| detected                     | A product of the threat that executed was detected.                  |
-| blocked                      | the threat was remediated at run time.                               |
-| prevented                    | the threat was prevented from occurring (running, downloading, etc,).|
-| unknownFutureValue           | Evolvable enumeration sentinel value. Do not use.                    |
+| Value                        | Description                                                                |
+| :----------------------------| :--------------------------------------------------------------------------|
+| detected                     | A product of the threat that executed was detected.                        |
+| blocked                      | The threat was remediated at run time.                                     |
+| prevented                    | The threat was prevented from occurring (running, downloading, and so on.).|
+| unknownFutureValue           | Evolvable enumeration sentinel value. Do not use.                          |
 
 
 ### evidenceRemediationStatus values 
@@ -95,7 +123,7 @@ This alert evidence base type and its derived evidence types provide a means to 
 | Member                     | Description                                       |
 | :--------------------------| :------------------------------------------------ |
 | unknown                    | No verdict was determined for the evidence.|
-| suspicious                 | |
+| suspicious                 | Recommended remediation actions awaiting approval.|
 | malicious                  | The evidence was determined to be malicious. |
 | noThreatsFound             | No threat was detected - the evidence is benign.  |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Do not use.  |

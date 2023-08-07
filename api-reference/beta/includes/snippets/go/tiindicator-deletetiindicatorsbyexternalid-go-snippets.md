@@ -12,18 +12,17 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphsecurity.NewDeleteTiIndicatorsByExternalIdPostRequestBody()
 value := []string {
 	"externalId-value1",
 	"externalId-value2",
-
 }
 requestBody.SetValue(value)
 
-result, err := graphClient.Security().TiIndicators().DeleteTiIndicatorsByExternalId().Post(context.Background(), requestBody, nil)
+deleteTiIndicatorsByExternalId, err := graphClient.Security().TiIndicators().DeleteTiIndicatorsByExternalId().Post(context.Background(), requestBody, nil)
 
 
 ```

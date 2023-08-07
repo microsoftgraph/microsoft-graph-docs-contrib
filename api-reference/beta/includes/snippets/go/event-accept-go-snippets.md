@@ -12,10 +12,10 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewAcceptPostRequestBody()
+requestBody := graphusers.NewItemAcceptPostRequestBody()
 comment := "comment-value"
 requestBody.SetComment(&comment) 
 sendResponse := true

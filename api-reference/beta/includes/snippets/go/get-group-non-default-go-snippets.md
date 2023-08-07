@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphgroups.GroupItemRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphgroups.GroupItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Groups().ByGroupId("group-id").Get(context.Background(), configuration)
+groups, err := graphClient.Groups().ByGroupId("group-id").Get(context.Background(), configuration)
 
 
 ```

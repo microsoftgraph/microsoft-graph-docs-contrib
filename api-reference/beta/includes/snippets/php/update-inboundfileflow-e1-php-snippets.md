@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new InboundFlow();
-$requestBody->set@odatatype('#microsoft.graph.industryData.inboundFileFlow');
+$requestBody = new InboundFileFlow();
+$requestBody->setOdataType('#microsoft.graph.industryData.inboundFileFlow');
 
 $requestBody->setDisplayName('Updated flow name');
 

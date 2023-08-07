@@ -16,25 +16,20 @@ var requestBody = new Call
 	{
 		Modality.Audio,
 	},
-	MediaConfig = new MediaConfig
+	MediaConfig = new ServiceHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.serviceHostedMediaConfig",
-		AdditionalData = new Dictionary<string, object>
+		PreFetchMedia = new List<MediaInfo>
 		{
+			new MediaInfo
 			{
-				"preFetchMedia" , new List<>
-				{
-					new 
-					{
-						Uri = "https://cdn.contoso.com/beep.wav",
-						ResourceId = "f8971b04-b53e-418c-9222-c82ce681a582",
-					},
-					new 
-					{
-						Uri = "https://cdn.contoso.com/cool.wav",
-						ResourceId = "86dc814b-c172-4428-9112-60f8ecae1edb",
-					},
-				}
+				Uri = "https://cdn.contoso.com/beep.wav",
+				ResourceId = "f8971b04-b53e-418c-9222-c82ce681a582",
+			},
+			new MediaInfo
+			{
+				Uri = "https://cdn.contoso.com/cool.wav",
+				ResourceId = "86dc814b-c172-4428-9112-60f8ecae1edb",
 			},
 		},
 	},
@@ -44,26 +39,26 @@ var requestBody = new Call
 		ThreadId = "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2",
 		MessageId = "0",
 	},
-	MeetingInfo = new MeetingInfo
+	MeetingInfo = new OrganizerMeetingInfo
 	{
 		OdataType = "#microsoft.graph.organizerMeetingInfo",
-		AllowConversationWithoutHost = true,
-		AdditionalData = new Dictionary<string, object>
+		Organizer = new IdentitySet
 		{
+			OdataType = "#microsoft.graph.identitySet",
+			User = new Identity
 			{
-				"organizer" , new 
+				OdataType = "#microsoft.graph.identity",
+				Id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+				DisplayName = "Bob",
+				AdditionalData = new Dictionary<string, object>
 				{
-					OdataType = "#microsoft.graph.identitySet",
-					User = new 
 					{
-						OdataType = "#microsoft.graph.identity",
-						Id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-						TenantId = "9f386a15-f9cc-445b-8106-ac85e314a07b",
-						DisplayName = "Bob",
+						"tenantId" , "9f386a15-f9cc-445b-8106-ac85e314a07b"
 					},
-				}
+				},
 			},
 		},
+		AllowConversationWithoutHost = true,
 	},
 	TenantId = "86dc81db-c112-4228-9222-63f3esaa1edb",
 };

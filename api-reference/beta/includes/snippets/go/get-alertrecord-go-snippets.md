@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().Monitoring().AlertRecords().ByAlertRecordId("alertRecord-id").Get(context.Background(), nil)
+alertRecords, err := graphClient.DeviceManagement().Monitoring().AlertRecords().ByAlertRecordId("alertRecord-id").Get(context.Background(), nil)
 
 
 ```

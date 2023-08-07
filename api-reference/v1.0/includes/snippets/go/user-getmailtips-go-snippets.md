@@ -13,20 +13,19 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewGetMailTipsPostRequestBody()
+requestBody := graphusers.NewItemGetMailTipsPostRequestBody()
 emailAddresses := []string {
 	"danas@contoso.onmicrosoft.com",
 	"fannyd@contoso.onmicrosoft.com",
-
 }
 requestBody.SetEmailAddresses(emailAddresses)
 mailTipsOptions := graphmodels.AUTOMATICREPLIES, MAILBOXFULLSTATUS_MAILTIPSTYPE 
 requestBody.SetMailTipsOptions(&mailTipsOptions) 
 
-result, err := graphClient.Me().GetMailTips().Post(context.Background(), requestBody, nil)
+getMailTips, err := graphClient.Me().GetMailTips().Post(context.Background(), requestBody, nil)
 
 
 ```

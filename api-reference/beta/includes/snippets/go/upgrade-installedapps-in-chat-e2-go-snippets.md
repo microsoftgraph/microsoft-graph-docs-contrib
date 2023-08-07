@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphchats.NewUpgradePostRequestBody()
@@ -34,12 +34,11 @@ teamsAppResourceSpecificPermission1.SetPermissionType(&permissionType)
 resourceSpecificPermissions := []graphmodels.TeamsAppResourceSpecificPermissionable {
 	teamsAppResourceSpecificPermission,
 	teamsAppResourceSpecificPermission1,
-
 }
 consentedPermissionSet.SetResourceSpecificPermissions(resourceSpecificPermissions)
 requestBody.SetConsentedPermissionSet(consentedPermissionSet)
 
-graphClient.Chats().ByChatId("chat-id").InstalledApps().ByInstalledAppId("teamsAppInstallation-id").Upgrade().Post(context.Background(), requestBody, nil)
+graphClient.Chats().ByChatId("chat-id").InstalledApps().ByTeamsAppInstallationId("teamsAppInstallation-id").Upgrade().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -28,11 +28,12 @@ toRecipientsArray []= toRecipientsRecipient1;
 request_body.torecipients(toRecipientsArray)
 
 
-extensions_extension1 = Extension()
+extensions_extension1 = OpenTypeExtension()
 extensions_extension1.@odata_type = 'microsoft.graph.openTypeExtension'
 
+extensions_extension1.extension_name = 'Com.Contoso.Referral'
+
 additional_data = [
-'extension_name' => 'Com.Contoso.Referral', 
 'company_name' => 'Wingtip Toys', 
 'expiration_date' => '2015-12-30T11:00:00.000Z', 
 'deal_value' => 10000,

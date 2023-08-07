@@ -22,36 +22,24 @@ preview_text.content = 'Internal spending team has a pending finance approval re
 
 
 request_body.preview_text = preview_text
-recipients_teamwork_notification_recipient1 = TeamworkNotificationRecipient()
+recipients_teamwork_notification_recipient1 = AadUserNotificationRecipient()
 recipients_teamwork_notification_recipient1.@odata_type = 'microsoft.graph.aadUserNotificationRecipient'
 
-additional_data = [
-'user_id' => '569363e2-4e49-4661-87f2-16f245c5d66a', 
-];
-recipients_teamwork_notification_recipient1.additional_data(additional_data)
-
+recipients_teamwork_notification_recipient1.user_id = '569363e2-4e49-4661-87f2-16f245c5d66a'
 
 
 recipientsArray []= recipientsTeamworkNotificationRecipient1;
-recipients_teamwork_notification_recipient2 = TeamworkNotificationRecipient()
+recipients_teamwork_notification_recipient2 = AadUserNotificationRecipient()
 recipients_teamwork_notification_recipient2.@odata_type = 'microsoft.graph.aadUserNotificationRecipient'
 
-additional_data = [
-'user_id' => 'ab88234e-0874-477c-9638-d144296ed04f', 
-];
-recipients_teamwork_notification_recipient2.additional_data(additional_data)
-
+recipients_teamwork_notification_recipient2.user_id = 'ab88234e-0874-477c-9638-d144296ed04f'
 
 
 recipientsArray []= recipientsTeamworkNotificationRecipient2;
-recipients_teamwork_notification_recipient3 = TeamworkNotificationRecipient()
+recipients_teamwork_notification_recipient3 = AadUserNotificationRecipient()
 recipients_teamwork_notification_recipient3.@odata_type = 'microsoft.graph.aadUserNotificationRecipient'
 
-additional_data = [
-'user_id' => '01c64f53-69aa-42c7-9b7f-9f75195d6bfc', 
-];
-recipients_teamwork_notification_recipient3.additional_data(additional_data)
-
+recipients_teamwork_notification_recipient3.user_id = '01c64f53-69aa-42c7-9b7f-9f75195d6bfc'
 
 
 recipientsArray []= recipientsTeamworkNotificationRecipient3;

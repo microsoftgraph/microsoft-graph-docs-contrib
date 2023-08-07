@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewContact()
@@ -30,16 +30,14 @@ emailAddress.SetName(&name)
 
 emailAddresses := []graphmodels.EmailAddressable {
 	emailAddress,
-
 }
 requestBody.SetEmailAddresses(emailAddresses)
 businessPhones := []string {
 	"+1 732 555 0102",
-
 }
 requestBody.SetBusinessPhones(businessPhones)
 
-result, err := graphClient.Me().Contacts().Post(context.Background(), requestBody, nil)
+contacts, err := graphClient.Me().Contacts().Post(context.Background(), requestBody, nil)
 
 
 ```

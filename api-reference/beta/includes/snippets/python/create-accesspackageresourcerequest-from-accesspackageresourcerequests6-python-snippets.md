@@ -1,0 +1,78 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = AccessPackageResourceRequest()
+request_body.catalog_id = '26ac0c0a-08bc-4a7b-a313-839f58044ba5'
+
+request_body.request_type = 'AdminAdd'
+
+request_body.justification = ''
+
+access_package_resource = AccessPackageResource()
+access_package_resource.display_name = 'Faculty cafeteria ordering'
+
+access_package_resource.description = 'Example application'
+
+access_package_resource.url = 'https://myapps.microsoft.com/example.com/signin/Faculty%20cafeteria%20ordering/f1e3b407-942d-4934-9a3f-cef1975cb988/'
+
+access_package_resource.resource_type = 'Application'
+
+access_package_resource.origin_id = '2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e'
+
+access_package_resource.origin_system = 'AadApplication'
+
+attributes_access_package_resource_attribute1 = AccessPackageResourceAttribute()
+attributes_access_package_resource_attribute1.attribute_name = 'extension_2b676109c7c74ae2b41549205f1947ed_personalTitle'
+
+attributes_access_package_resource_attribute1.is_editable = True
+
+attributes_access_package_resource_attribute1.is_persisted_on_assignment_removal = True
+
+attributes_access_package_resource_attribute1attribute_source = AccessPackageResourceAttributeQuestion()
+attributes_access_package_resource_attribute1attribute_source.@odata_type = '#microsoft.graph.accessPackageResourceAttributeQuestion'
+
+attributes_access_package_resource_attribute1attribute_sourcequestion = AccessPackageTextInputQuestion()
+attributes_access_package_resource_attribute1attribute_sourcequestion.@odata_type = '#microsoft.graph.accessPackageTextInputQuestion'
+
+attributes_access_package_resource_attribute1attribute_sourcequestion.is_required = False
+
+attributes_access_package_resource_attribute1attribute_sourcequestion.Sequence = 0
+
+attributes_access_package_resource_attribute1attribute_sourcequestion.is_single_line_question = True
+
+attributes_access_package_resource_attribute1attribute_sourcequestiontext = AccessPackageLocalizedContent()
+attributes_access_package_resource_attribute1attribute_sourcequestiontext.default_text = 'Title'
+
+attributes_access_package_resource_attribute1attribute_sourcequestiontext.LocalizedTexts([])
+
+
+attributes_access_package_resource_attribute1attribute_sourcequestion.text = attributes_access_package_resource_attribute1attribute_sourcequestiontext
+
+attributes_access_package_resource_attribute1attribute_source.question = attributes_access_package_resource_attribute1attribute_sourcequestion
+
+attributes_access_package_resource_attribute1.attribute_source = attributes_access_package_resource_attribute1attribute_source
+attributes_access_package_resource_attribute1attribute_destination = AccessPackageUserDirectoryAttributeStore()
+attributes_access_package_resource_attribute1attribute_destination.@odata_type = '#microsoft.graph.accessPackageUserDirectoryAttributeStore'
+
+
+attributes_access_package_resource_attribute1.attribute_destination = attributes_access_package_resource_attribute1attribute_destination
+
+attributesArray []= attributesAccessPackageResourceAttribute1;
+access_package_resource.attributes(attributesArray)
+
+
+
+request_body.access_package_resource = access_package_resource
+
+
+
+result = await client.identity_governance.entitlement_management.acces_package_resource_requests.post(request_body = request_body)
+
+
+```

@@ -61,7 +61,7 @@ var requestBody = new Microsoft.Graph.Beta.Groups.Item.Threads.Item.Posts.Item.R
 		},
 		Attachments = new List<Attachment>
 		{
-			new Attachment
+			new FileAttachment
 			{
 				OdataType = "#microsoft.graph.fileAttachment",
 				LastModifiedDateTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),

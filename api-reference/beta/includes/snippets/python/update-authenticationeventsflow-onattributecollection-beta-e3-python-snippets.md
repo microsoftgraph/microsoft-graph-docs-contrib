@@ -1,0 +1,111 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = ExternalUsersSelfServiceSignUpEventsFlow()
+request_body.@odata_type = '#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow'
+
+on_attribute_collection = OnAttributeCollectionExternalUsersSelfServiceSignUp()
+on_attribute_collection.@odata_type = '#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp'
+
+on_attribute_collectionattribute_collection_page = AuthenticationAttributeCollectionPage()
+on_attribute_collectionattribute_collection_page.customStringsFileId=null
+
+views_authentication_attribute_collection_page_view_configuration1 = AuthenticationAttributeCollectionPageViewConfiguration()
+views_authentication_attribute_collection_page_view_configuration1.title=null
+
+views_authentication_attribute_collection_page_view_configuration1.description=null
+
+inputs_authentication_attribute_collection_input_configuration1 = AuthenticationAttributeCollectionInputConfiguration()
+inputs_authentication_attribute_collection_input_configuration1.attribute = 'email'
+
+inputs_authentication_attribute_collection_input_configuration1.label = 'Email Address'
+
+inputs_authentication_attribute_collection_input_configuration1.inputtype(AuthenticationAttributeCollectionInputType.Text('authenticationattributecollectioninputtype.text'))
+
+inputs_authentication_attribute_collection_input_configuration1.defaultValue=null
+
+inputs_authentication_attribute_collection_input_configuration1.hidden = True
+
+inputs_authentication_attribute_collection_input_configuration1.editable = False
+
+inputs_authentication_attribute_collection_input_configuration1.write_to_directory = True
+
+inputs_authentication_attribute_collection_input_configuration1.required = True
+
+inputs_authentication_attribute_collection_input_configuration1.validation_reg_ex = '^[a-zA-Z0-9.!#$%&amp;&#8217;\'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$'
+
+inputs_authentication_attribute_collection_input_configuration1.Options([])
+
+
+inputsArray []= inputsAuthenticationAttributeCollectionInputConfiguration1;
+inputs_authentication_attribute_collection_input_configuration2 = AuthenticationAttributeCollectionInputConfiguration()
+inputs_authentication_attribute_collection_input_configuration2.attribute = 'displayName'
+
+inputs_authentication_attribute_collection_input_configuration2.label = 'Display Name'
+
+inputs_authentication_attribute_collection_input_configuration2.inputtype(AuthenticationAttributeCollectionInputType.Text('authenticationattributecollectioninputtype.text'))
+
+inputs_authentication_attribute_collection_input_configuration2.defaultValue=null
+
+inputs_authentication_attribute_collection_input_configuration2.hidden = False
+
+inputs_authentication_attribute_collection_input_configuration2.editable = True
+
+inputs_authentication_attribute_collection_input_configuration2.write_to_directory = True
+
+inputs_authentication_attribute_collection_input_configuration2.required = False
+
+inputs_authentication_attribute_collection_input_configuration2.validation_reg_ex = '^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$'
+
+inputs_authentication_attribute_collection_input_configuration2.Options([])
+
+
+inputsArray []= inputsAuthenticationAttributeCollectionInputConfiguration2;
+inputs_authentication_attribute_collection_input_configuration3 = AuthenticationAttributeCollectionInputConfiguration()
+inputs_authentication_attribute_collection_input_configuration3.attribute = 'extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor'
+
+inputs_authentication_attribute_collection_input_configuration3.label = 'Favorite color'
+
+inputs_authentication_attribute_collection_input_configuration3.inputtype(AuthenticationAttributeCollectionInputType.Text('authenticationattributecollectioninputtype.text'))
+
+inputs_authentication_attribute_collection_input_configuration3.defaultValue=null
+
+inputs_authentication_attribute_collection_input_configuration3.hidden = False
+
+inputs_authentication_attribute_collection_input_configuration3.editable = True
+
+inputs_authentication_attribute_collection_input_configuration3.write_to_directory = True
+
+inputs_authentication_attribute_collection_input_configuration3.required = False
+
+inputs_authentication_attribute_collection_input_configuration3.validation_reg_ex = '^.*'
+
+inputs_authentication_attribute_collection_input_configuration3.Options([])
+
+
+inputsArray []= inputsAuthenticationAttributeCollectionInputConfiguration3;
+views_authentication_attribute_collection_page_view_configuration1.inputs(inputsArray)
+
+
+
+viewsArray []= viewsAuthenticationAttributeCollectionPageViewConfiguration1;
+on_attribute_collectionattribute_collection_page.views(viewsArray)
+
+
+
+on_attribute_collection.attribute_collection_page = on_attribute_collectionattribute_collection_page
+
+request_body.on_attribute_collection = on_attribute_collection
+
+
+
+result = await client.identity.authentication_event_flows.by_authentication_event_flow_id('authenticationEventsFlow-id').patch(request_body = request_body)
+
+
+```
