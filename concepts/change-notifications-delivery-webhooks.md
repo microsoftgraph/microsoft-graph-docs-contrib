@@ -46,13 +46,15 @@ For security and performance reasons, Microsoft Graph will throttle notification
 If your endpoint is unable to meet these performance characteristics, consider using [Event Hub](/graph/change-notifications-delivery-event-hubs) or [Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph/context) as a target for receiving notifications.
 
 ### Authentication
-When you create your subscription, an access token will be sent to your endpoint. This access token will generally expire within 1 hour.
+When you create your subscription, an access token will be sent to your endpoint. This access token is used only to check the validity of your endpoint and has a different lifecycle than your change notification subcription.  This access token will generally expire within 1 hour.
 
-If an access token expires, notifications will not be delivered. But Microsoft Graph will continue to retry sending each notification for up to 4 hours. So if the access token is refreshed within 4 hours of expiration, unsent notifications will be delivered.
+Your endpoint must be prepared to regularly reauthorize with Microsoft Graph to ensure that Microsoft Graph can continue to deliver notifications to your endpoint.
 
-When you [renew your subcription](#renew-a-subscription), it will refresh your access token.
+If an access token expires, notifications will not be delivered.  However, this does not trigger endpoint throttling behavior and Microsoft Graph will continue to retry sending each notification for up to 4 hours. So if the access token is refreshed within 4 hours of expiration, unsent notifications will be delivered.
 
-Refer to [Lifecycle notifications](.\webhooks-lifecycle.md) for more tools to manage subscriptions and access token lifecycle.
+It is recommended that you add [Lifecycle notifications](.\webhooks-lifecycle.md) to your subscription to receive warning about token expiration so you can reauthorize your endpoint in a timely manner.
+
+When you [renew your subcription](#renew-a-subscription), it will also refresh your access token.
 
 ### Firewall configuration
 You can configure the firewall that protects your endpoint to allow inbound connections only from Microsoft Graph, reducing further exposure to invalid change notifications. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
