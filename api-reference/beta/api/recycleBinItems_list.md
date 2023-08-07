@@ -3,6 +3,9 @@ author: vanshisingh
 ms.date: 02/08/2023
 title: Get recycleBinItem 
 description: Retrieve the list of recycleBinItem
+ms.localizationpriority: "medium"
+ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get recycleBinItem
 
