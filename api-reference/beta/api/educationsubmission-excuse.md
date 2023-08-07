@@ -45,10 +45,10 @@ Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 Ok` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
-
-## Example 1:
+## Examples
+### Example 1:
 The following example shows how to call this API (With Header "Prefer: include-unknown-enum-members").
-### Request
+#### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -62,7 +62,7 @@ The following is an example of the request.
 Post https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/28992cce-fac0-4950-a836-5a524ded8599/submissions/02859156-c3c7-876d-7a5c-915bf4f61380/excuse
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 
 <!-- {
@@ -76,7 +76,7 @@ HTTP/1.1 200 Ok
 
 {
     {
-    "@odata.context": "https://graph.microsoft.com/$metadata#educationSubmission",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
     "@odata.type": "#microsoft.graph.educationSubmission",
     "status": "excused",
     "submittedDateTime": "2023-07-19T15:17:37.9961504Z",
@@ -134,9 +134,9 @@ HTTP/1.1 200 Ok
 }
 }
 ```
-## Example 2:
+### Example 2:
 Request without optional Prefer header
-### Request
+#### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -149,7 +149,7 @@ The following is an example of the request.
 Post https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/28992cce-fac0-4950-a836-5a524ded8599/submissions/02859156-c3c7-876d-7a5c-915bf4f61380/excuse
 ```
 
-### Response
+#### Response
 The following is an example of the response when Prefer: include-unknown-enum-members is NOT provided in the request header and the submission hasn't been excused before.
 
 <!-- {
