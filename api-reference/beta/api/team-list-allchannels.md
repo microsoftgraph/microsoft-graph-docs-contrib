@@ -42,6 +42,8 @@ This method supports the `$filter` and `$select` [OData query parameters](/graph
 ### Use $select for better performance
 Populating the **email** and **moderationSettings** properties for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** and **moderationSettings** properties to improve performance.
 
+> **Note**: This API does not provide **moderationSettings** property for a channel by default to improve the performance. To get these properties, use the `$select` query parameter.
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -205,7 +207,9 @@ Content-Type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
-      "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
+      "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910",
+      "email": someperson@microsoft.com,
+      "moderationSettings": null
     }
   ]
 }

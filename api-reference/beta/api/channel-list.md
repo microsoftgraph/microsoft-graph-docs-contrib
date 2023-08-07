@@ -43,6 +43,8 @@ This method supports the `$filter`, `$select`, and `$expand` [OData query parame
 ### Use $select for better performance
 Populating the **email** and **moderationSettings** properties for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** and **moderationSettings** properties to improve performance.
 
+> **Note**: This API does not provide **moderationSettings** property for a channel by default to improve the performance. To get these properties, use the `$select` query parameter.
+
 
 ## Request headers
 
@@ -126,7 +128,9 @@ Content-type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "General",
       "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
-      "membershipType": "standard"
+      "membershipType": "standard",
+      "email": someperson@microsoft.com,
+      "moderationSettings": null
     }
   ]
 }
