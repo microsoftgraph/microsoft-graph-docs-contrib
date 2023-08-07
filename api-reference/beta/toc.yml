@@ -10316,6 +10316,8 @@ items:
                     href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
                   - name: Get historical remote connection reports
                     href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
+                  - name: Get inaccessible Cloud PC reports
+                    href: api/cloudpcreports-getinaccessiblecloudpcreports.md
                   - name: Get real time remote connection latency
                     href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
                   - name: Get real time remote connection status
@@ -12525,6 +12527,8 @@ items:
                         href: api/accesspackage-list-accesspackageresourcerolescopes.md
                       - name: Create
                         href: api/accesspackage-post-accesspackageresourcerolescopes.md
+                      - name: Create
+                        href: api/accesspackage-delete-accesspackageresourcerolescopes.md
                   - name: Access package subject
                     href: resources/accesspackagesubject.md
                     items:

@@ -3,6 +3,60 @@
     {
       "ChangeList": [
         {
+          "Id": "939f058a-8f58-4a85-9b45-90fe16b62ee2",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowParticipantsToChangeName",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowParticipantsToChangeName** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "939f058a-8f58-4a85-9b45-90fe16b62ee2",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-01T00:39:09.0935047Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3d99b5f0-e0dd-4a84-a278-b8afa35e33fc",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingChatHistoryDefaultMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingChatHistoryDefaultMode** enumeration type.",
+          "Target": "meetingChatHistoryDefaultMode"
+        }
+      ],
+      "Id": "3d99b5f0-e0dd-4a84-a278-b8afa35e33fc",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-01T00:41:00.8271612Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3f3d03df-a0c3-4d63-82b9-4bc912be0152",
+          "ApiChange": "Property",
+          "ChangedApiName": "shareMeetingChatHistoryDefault",
+          "ChangeType": "Addition",
+          "Description": "Added the **shareMeetingChatHistoryDefault** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "3f3d03df-a0c3-4d63-82b9-4bc912be0152",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-01T00:41:00.8275068Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5bd55826-eb41-4116-820d-8629374e4ceb",
           "ApiChange": "Property",
           "ChangedApiName": "anonymizeIdentityForRoles",

@@ -29,7 +29,7 @@ requestBody.SetAcceptanceStatement(&acceptanceStatement)
 version := int32(7)
 requestBody.SetVersion(&version) 
 
-result, err := graphClient.DeviceManagement().TermsAndConditions().Post(context.Background(), requestBody, nil)
+termsAndConditions, err := graphClient.DeviceManagement().TermsAndConditions().Post(context.Background(), requestBody, nil)
 
 
 ```

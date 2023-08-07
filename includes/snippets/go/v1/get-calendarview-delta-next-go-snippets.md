@@ -30,7 +30,7 @@ configuration := &graphusers.ItemCalendarViewDelta()RequestBuilderGetRequestConf
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().CalendarView().Delta().Get(context.Background(), configuration)
+delta(), err := graphClient.Me().CalendarView().Delta().Get(context.Background(), configuration)
 
 
 ```

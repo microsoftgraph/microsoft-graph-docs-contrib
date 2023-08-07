@@ -23,7 +23,7 @@ requestBody.SetApplicationType(&applicationType)
 deviceCount := int32(11)
 requestBody.SetDeviceCount(&deviceCount) 
 
-result, err := graphClient.DeviceManagement().WindowsInformationProtectionAppLearningSummaries().Post(context.Background(), requestBody, nil)
+windowsInformationProtectionAppLearningSummaries, err := graphClient.DeviceManagement().WindowsInformationProtectionAppLearningSummaries().Post(context.Background(), requestBody, nil)
 
 
 ```

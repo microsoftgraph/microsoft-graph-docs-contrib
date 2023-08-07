@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.External().IndustryData().Years().ByYearId("yearTimePeriodDefinition-id").Get(context.Background(), nil)
+years, err := graphClient.External().IndustryData().Years().ByYearTimePeriodDefinitionId("yearTimePeriodDefinition-id").Get(context.Background(), nil)
 
 
 ```

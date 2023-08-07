@@ -19,7 +19,7 @@ requestBody := graphmodels.NewDeviceComplianceScheduledActionForRule()
 ruleName := "Rule Name value"
 requestBody.SetRuleName(&ruleName) 
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicieId("deviceCompliancePolicy-id").ScheduledActionsForRule().Post(context.Background(), requestBody, nil)
+scheduledActionsForRule, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicyId("deviceCompliancePolicy-id").ScheduledActionsForRule().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -81,10 +81,6 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 [!INCLUDE [sample-code](../includes/snippets/php/accesspackageassignmentrequest-cancel-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackageassignmentrequest-cancel-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/accesspackageassignmentrequest-cancel-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
