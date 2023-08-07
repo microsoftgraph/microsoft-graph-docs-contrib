@@ -72,6 +72,7 @@ Here is an example of the response. Note: The response object shown here might b
 } -->
 ```http
 HTTP/1.1 200 OK
+
 {
   "@odata.type":"microsoft.graph.documentTask",
   "createdBy": {
