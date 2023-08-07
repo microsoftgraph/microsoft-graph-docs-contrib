@@ -13,6 +13,9 @@ Change notifications enable you to subscribe to changes to transcripts. You can 
 
 This article describes scenarios for the **transcript** resource. For more details, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
+> [!NOTE]
+> If you request a subscription date/time that is more than 1 hour in the future, you must include a **lifecycleNotificationUrl** property in your subscription request.
+
 ## Subscribe to transcripts available at the tenant-level
 
 To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for meeting scheduled on the calendar.

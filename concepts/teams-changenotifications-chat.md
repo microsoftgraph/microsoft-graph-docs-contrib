@@ -13,6 +13,9 @@ Change notifications enable you to subscribe to changes (create and update) to c
 
 Continue with this article about scenarios for the **chat** resource. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).  
 
+> [!NOTE]
+> If you request a subscription date/time that is more than 1 hour in the future, you must include a **lifecycleNotificationUrl** property in your subscription request.
+
 ## Subscribe to changes in any chat at tenant level
 
 To get change notifications for all changes (create and update) related to any chat in a tenant, subscribe to `/chats`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.

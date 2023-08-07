@@ -13,6 +13,8 @@ Change notifications enable you to subscribe to membership changes (create, upda
 
 Continue with this article about scenarios for the [conversationMember](/graph/api/resources/conversationmember) resource in the **team** or **channel** context. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
+> [!NOTE]
+> If you request a subscription date/time that is more than 1 hour in the future, you must include a **lifecycleNotificationUrl** property in your subscription request.
 
 ## Subscribe to changes in membership of a particular team
 

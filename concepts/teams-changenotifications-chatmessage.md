@@ -13,6 +13,9 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 Continue with this article about scenarios for the [chatMessage](/graph/api/resources/chatmessage) resource in the [channel](/graph/api/resources/channel) or [chat](/graph/api/resources/chat) context. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
+> [!NOTE]
+> If you request a subscription date/time that is more than 1 hour in the future, you must include a **lifecycleNotificationUrl** property in your subscription request.
+
 ## Subscribe to changes at the tenant level
 
 To track all changes related to messages in a tenant, you can use subscriptions at a tenant level for channel and chat messages. This requires you to create two subscriptions: one to track all messages across [channels](/graph/api/resources/channel?preserve-view=true), and one to track all messages across [chats](/graph/api/resources/chat?preserve-view=true).
