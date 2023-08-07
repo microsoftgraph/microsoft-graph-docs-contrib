@@ -52,7 +52,7 @@ Your endpoint must be prepared to regularly reauthorize with Microsoft Graph to 
 
 If an access token expires, notifications will not be delivered.  However, this does not trigger endpoint throttling behavior and Microsoft Graph will continue to retry sending each notification for up to 4 hours. So if the access token is refreshed within 4 hours of expiration, unsent notifications will be delivered.
 
-It is recommended that you add [Lifecycle notifications](.\webhooks-lifecycle.md) to your subscription to receive warning about token expiration so you can reauthorize your endpoint in a timely manner.
+It is recommended that you add [lifecycle notifications](.\webhooks-lifecycle.md) to your subscription to receive warning about token expiration so you can reauthorize your endpoint in a timely manner.
 
 When you [renew your subcription](#renew-a-subscription), it will also refresh your access token.
 
