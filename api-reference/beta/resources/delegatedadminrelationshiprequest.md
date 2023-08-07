@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminRelationshipRequest resource type"
 description: "Represents a request specific to a delegated admin relationship between a partner and a customer."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a request specific to a delegated admin relationship between a partner and a customer. It allows the Microsoft partner admin to take actions on a relationship such as locking a relationship for approval or terminating a relationship.
+
+It also allows Indirect reseller partner admin to provide consent on a relationship created for them by Indirect provider partner by approving or rejecting the relationship.
 
 ## Methods
 |Method|Return type|Description|

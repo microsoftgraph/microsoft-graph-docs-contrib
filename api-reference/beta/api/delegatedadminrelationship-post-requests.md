@@ -1,7 +1,7 @@
 ---
 title: "Create requests"
 description: "Create a new delegatedAdminRelationshipRequest object."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType
@@ -46,7 +46,7 @@ You can specify the following properties when creating a **delegatedAdminRelatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|delegatedAdminRelationshipRequestAction|The action to be performed on the delegated admin relationship. Required. The possible values are: `lockForApproval`, `terminate`.|
+|action|delegatedAdminRelationshipRequestAction|The action to be performed on the delegated admin relationship. Required. The possible values are: `lockForApproval`, `approve`, `terminate`, `reject`.|
 
 ## Response
 
