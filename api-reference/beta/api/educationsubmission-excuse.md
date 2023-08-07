@@ -162,8 +162,7 @@ The following is an example of the response when Prefer: include-unknown-enum-me
 HTTP/1.1 200 Ok
 
 {
-   {
-    "@odata.context": "https://graph.microsoft.com/$metadata#educationSubmission",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
     "@odata.type": "#microsoft.graph.educationSubmission",
     "status": "returned",
     "submittedDateTime": "2023-07-19T15:17:37.9961504Z",
@@ -218,7 +217,6 @@ HTTP/1.1 200 Ok
             "displayName": null
         }
     }
-}
 }
 ```
 ## See also
