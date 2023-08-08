@@ -1,7 +1,7 @@
 ---
 title: "List accessPackageResourceEnvironments"
 description: "Retrieve a list of accessPackageResourceEnvironment objects."
-author: "hanki-microsoft"
+author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

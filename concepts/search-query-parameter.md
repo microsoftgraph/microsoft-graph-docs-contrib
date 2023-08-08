@@ -358,4 +358,4 @@ Both the string inputs you provide in `$search`, as well as the searchable prope
 
 - [Use query parameters to customize responses](/graph/query-parameters)
 - [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
-- [Query parameter limitations](known-issues.md#query-parameters)
+- [Query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=Query%20parameters&search=)
