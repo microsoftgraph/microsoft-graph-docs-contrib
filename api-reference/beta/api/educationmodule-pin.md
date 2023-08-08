@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the **isPinned** property to **true** for an [educationModule](../resources/educationmodule.md).
+Pin an educationModule in the classwork list. Update the **isPinned** property to **true** for an [educationModule](../resources/educationmodule.md).
 
-Only a teacher in the class can make this call, and only one **module** can be pinned in the classwork list.
+Only teachers can perform this operation.  One single **module** can be pinned in the classwork list at a time. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

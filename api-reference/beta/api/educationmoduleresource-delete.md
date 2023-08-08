@@ -1,6 +1,6 @@
 ---
 title: "Delete educationModuleResource"
-description: "Delete a specific resource attached to an module."
+description: "Delete a specific resource attached to a module."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a specific [educationModuleResource](../resources/educationmoduleresource.md) attached to an module. Only teachers in the class can remove a resource.
+Delete a specific [educationModuleResource](../resources/educationmoduleresource.md) attached to a module. Only teachers in the class can remove a resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

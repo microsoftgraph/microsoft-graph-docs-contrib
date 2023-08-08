@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the **isPinned** property to **false** for an [educationModule](../resources/educationmodule.md).
+Unpin an educationModule in the classwork list. Update the **isPinned** property to **false** for an [educationModule](../resources/educationmodule.md).
 
-Only a teacher in the class can make this call.
+Only teachers in the class can perform this operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

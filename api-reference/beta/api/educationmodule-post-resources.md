@@ -29,7 +29,7 @@ You can create the following types of module resources:
 Every resource has an **@odata.type** property to indicate which type of resource is being created. 
 
 > [!IMPORTANT] 
-> Before you can upload an module resource, you must [set up the resources folder](../api/educationmodule-setupresourcesfolder.md) for the [educationModule](../resources/educationmodule.md) to upload the files to.
+> To upload a module resource, you need to first [set up the resources folder](../api/educationmodule-setupresourcesfolder.md) for the [educationModule](../resources/educationmodule.md) where the files will be uploaded.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
