@@ -17,20 +17,6 @@ The **authenticationBehaviors** property of the [application](/graph/api/resourc
 > [!NOTE]
 > The authenticationBehaviors property of the application object is currently in `beta` only.
 
-## Configure authenticationBehaviors to prevent issuance of email claims with unverified domain owners
-
-As described in the Microsoft security advisory [Potential Risk of Privilege Escalation in Azure AD Applications](https://msrc.microsoft.com/blog/2023/06/potential-risk-of-privilege-escalation-in-azure-ad-applications/), **apps should never use the email claim for authorization purposes**. If your application uses the email claim for authorization or primary user identification purposes, it's subject to account and privilege escalation attacks. This risk of unauthorized access is especially identified in the following scenarios:
-
-- When the **mail** attribute of the [user](/graph/api/resources/user) object contains an email address with an unverified domain owner
-- For multi-tenant apps where a user from one tenant could escalate their privileges to access resources from another tenant through modification of their **mail** attribute
-
-For more information about identifying these cases in your tenant, see [Migrate away from using email claims for user identification or authorization](/azure/active-directory/develop/migrate-off-email-claim-authorization).
-
-Today, the default behavior is to remove email addresses with unverified domain owners in claims, except for single-tenant apps and for multi-tenant apps with previous sign-in activity with unverified emails. If your app falls into either of these exceptions and you wish to remove unverified email addresses, set the **removeUnverifiedEmailClaim** property of [authenticationBehaviors](/graph/api/resources/authenticationbehaviors) to `true` as illustrated in the following examples. The request returns a `204 No Content` response code.
-
-> [!NOTE]
-> The authenticationBehaviors property of the application object is currently in `beta` only.
-
 ### Read the authenticationBehaviors setting for an application
 
 The **authenticationBehaviors** property is returned only on `$select` requests as follows.
@@ -129,6 +115,17 @@ You can also use the **appId** property as follows:
 ```http
 GET https://graph.microsoft.com/beta/applications(appId='37bf1fd4-78b0-4fea-ac2d-6c82829e9365')/authenticationBehaviors
 ```
+
+## Configure authenticationBehaviors to prevent issuance of email claims with unverified domain owners
+
+As described in the Microsoft security advisory [Potential Risk of Privilege Escalation in Azure AD Applications](https://msrc.microsoft.com/blog/2023/06/potential-risk-of-privilege-escalation-in-azure-ad-applications/), **apps should never use the email claim for authorization purposes**. If your application uses the email claim for authorization or primary user identification purposes, it's subject to account and privilege escalation attacks. This risk of unauthorized access is especially identified in the following scenarios:
+
+- When the **mail** attribute of the [user](/graph/api/resources/user) object contains an email address with an unverified domain owner
+- For multi-tenant apps where a user from one tenant could escalate their privileges to access resources from another tenant through modification of their **mail** attribute
+
+For more information about identifying these cases in your tenant, see [Migrate away from using email claims for user identification or authorization](/azure/active-directory/develop/migrate-off-email-claim-authorization).
+
+Today, the default behavior is to remove email addresses with unverified domain owners in claims, except for single-tenant apps and for multi-tenant apps with previous sign-in activity with unverified emails. If your app falls into either of these exceptions and you wish to remove unverified email addresses, set the **removeUnverifiedEmailClaim** property of [authenticationBehaviors](/graph/api/resources/authenticationbehaviors) to `true` as illustrated in the following examples. The request returns a `204 No Content` response code.
 
 ### Remove email addresses with unverified domain owners from claims
 
