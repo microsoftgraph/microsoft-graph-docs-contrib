@@ -12,7 +12,10 @@ author: "psignoret"
 Namespace: microsoft.graph
 
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that a user has been granted. This operation also returns app roles assigned to groups that the user is a direct member of.
+Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that a user has been granted. This operation also returns app role assignments granted to groups that the user is a direct member of.
+
+> [!IMPORTANT]
+> To ensure complete results for users with many indirect app role assignments, use the **ConsistencyLevel** header set to `eventual` and `$count`, as described in [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#group-properties). See [Example 1](#example-1-list-approleassignments-granted-to-a-user) for an example.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -58,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here is an example of the request to retrieve the app roles that have been assigned to a user.
+Here is an example of the request to retrieve all app role assignments granted to the user, and to groups where the user is a direct member.
 
 
 # [HTTP](#tab/http)
@@ -68,7 +71,8 @@ Here is an example of the request to retrieve the app roles that have been assig
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/appRoleAssignments
+GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/appRoleAssignments?$count=true
+ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
@@ -107,9 +111,9 @@ GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -192,9 +196,9 @@ GET https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

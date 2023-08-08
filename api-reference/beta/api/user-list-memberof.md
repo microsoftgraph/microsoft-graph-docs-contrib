@@ -39,7 +39,7 @@ GET /users/{id | userPrincipalName}/memberOf
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$select`, `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the directoryRoles the user is a member of. You can use `$search` on the **displayName** property. The default and maximum page sizes are 100 and 999 objects respectively.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the directoryRoles the user is a member of. You can use `$search` on the **displayName** property. Items that are added or updated for this resource are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it's available in the index.
 
 ## Request headers
 
@@ -249,7 +249,7 @@ Here's an example of the request.
   "name": "list_users_memberof_startswith"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a') 
+GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
 
@@ -282,6 +282,50 @@ Content-type: application/json
   ]
 }
 ```
+
+### Example 6: Use $filter and OData cast to get groups with at least one app role assignment
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_users_memberof_approleassignments"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/{id}/memberOf/microsoft.graph.group?$filter=appRoleAssignments/$count gt 0&$select=id,displayName
+```
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
+  "value":[
+    {
+      "id": "c11b732b-0e16-46c1-b0fa-bd32c8a42455",
+      "displayName":"All users"
+    },
+    {
+      "id": "3f927b40-06f8-4352-b8e4-37a7ba04b7ff",
+      "displayName":"AAD Contoso Users"
+    }
+  ]
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
