@@ -13560,6 +13560,14 @@ items:
                         href: api/internaldomainfederation-update.md
                       - name: Delete
                         href: api/internaldomainfederation-delete.md
+                  - name: Federated Token Validation (preview)
+                    items:
+                    - name: Federated Token Validation Policy
+                      href: resources/federatedtokenvalidationpolicy.md
+                    - name: Get
+                      href: api/federatedtokenvalidationpolicy-get.md
+                    - name: Post
+                      href: api/federatedtokenvalidationpolicy-post.md
               - name: Identity provider (deprecated)
                 items:
                   - name: Identity provider type
@@ -17151,7 +17159,7 @@ items:
                       - name: List
                         href: api/onlinemeeting-list-recordings.md
                       - name: Get
-                        href: api/callrecording-get.md                
+                        href: api/callrecording-get.md
                   - name: Call transcript (preview)
                     items:
                       - name: Call transcript (preview)
