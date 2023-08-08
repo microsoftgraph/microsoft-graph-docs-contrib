@@ -46,13 +46,11 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 Ok` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 ## Examples
-### Example 1:
-The following example shows how to call this API (With Header "Prefer: include-unknown-enum-members").
+### Example 1: Request with optional Prefer header
 #### Request
-The following is an example of the request.
+The following is an example of the request with Header Prefer: include-unknown-enum-members.
 
 # [HTTP](#tab/http)
-(With Header "Prefer: include-unknown-enum-members")
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_excuse"
@@ -63,7 +61,7 @@ Post https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 ```
 
 #### Response
-The following is an example of the response.
+The following is an example of the response when `Prefer: include-unknown-enum-members` is provided in the request header. 
 
 <!-- {
   "blockType": "response",
@@ -134,8 +132,8 @@ HTTP/1.1 200 Ok
 }
 }
 ```
-### Example 2:
-Request without optional Prefer header
+### Example 2: Request without Prefer header
+The following example shows how to call this method.
 #### Request
 The following is an example of the request.
 
