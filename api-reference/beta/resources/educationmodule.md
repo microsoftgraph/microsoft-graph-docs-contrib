@@ -31,6 +31,8 @@ Inherits from [entity](../resources/entity.md).
 |[Get module](../api/educationmodule-get.md) | [educationModule](educationmodule.md) |Read properties and relationships of an **educationModule** object.|
 |[Update](../api/educationmodule-update.md) | [educationModule](educationmodule.md)	|Update an **educationModule** object. |
 |[Delete](../api/educationmodule-delete.md) | None |Delete an **educationModule** object. |
+|[Pin](../api/educationmodule-pin.md) | [educationModule](educationmodule.md)	|Pin an **educationModule** object. |
+|[Unpin](../api/educationmodule-unpin.md) | [educationModule](educationmodule.md)	|Unpin an **educationModule** object. |
 |[Publish](../api/educationmodule-publish.md)|[educationModule](educationmodule.md)|Change the state of an **educationModule** object from draft to published.|
 |[Set up module resources folder](../api/educationmodule-setupresourcesfolder.md)| [educationModule](educationmodule.md)| Create a SharePoint folder (under pre-defined location) to upload files as module resources.|
 |[List resources](../api/educationmodule-list-resources.md) |[educationModuleResource](educationmoduleresource.md) collection| Get an **educationModuleResource** object collection.|
