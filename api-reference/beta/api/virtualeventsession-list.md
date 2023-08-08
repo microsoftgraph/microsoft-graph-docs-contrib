@@ -70,7 +70,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/events/{virtualEventId}/sessions
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/events/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions
 ```
 
 ### Response
@@ -91,9 +91,9 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.virtualEventSession",
-      "id": "5d14c090-1e97-a9ce-a3e9-f0eb1b6d37ed",
-      "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
+      "id": "8d62dd52-4dff-4c75-96a9-f905cc3ff942",
+      "startDateTime": "2023-08-08T12:30:00Z",
+      "endDateTime": "2023-08-09T22:00:00Z",
       "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%221cd068e4-5b08-4e75-a7f9-7b4e067a0820%22%7d",
       "subject": "Session one",
       "participants": {
