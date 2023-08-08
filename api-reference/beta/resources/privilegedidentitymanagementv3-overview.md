@@ -135,7 +135,9 @@ The tenant where Privileged Identity Management is being used must have sufficie
 
 ## See also
 
-- [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
 - [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
-- [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
-- You can also set up access reviews of role assignments and eligibilities that are managed through PIM. For more information, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
+- Learn more about role settings in PIM through the following articles:
+  - [Working with rules for Azure AD roles in PIM APIs](/graph/identity-governance-pim-rules-overview)
+  - [Use PIM APIs to update Azure AD rules](/graph/how-to-pim-update-rules)
+- Follow these tutorials to learn more about using PIM APIs
+  - [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
