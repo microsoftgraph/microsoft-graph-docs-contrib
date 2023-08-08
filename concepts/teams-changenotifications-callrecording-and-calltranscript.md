@@ -1,21 +1,21 @@
 ---
-title: "Get change notification for meeting transcripts and recordings using Microsoft Graph"
-description: "Learn how to get notifications for meeting transcripts and recordings using Microsoft Graph APIs."
+title: "Get change notifications for meeting transcripts and recordings using Microsoft Graph"
+description: "Learn how to get notifications for meeting transcripts and recordings using the Microsoft Graph API."
 author: "v-sdhakshina"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notification for meeting transcripts and recordings using Microsoft Graph
+# Get change notifications for meeting transcripts and recordings using Microsoft Graph
 
-Change notifications enable you to subscribe to changes (create) to transcripts and recordings. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) or a [recording](/graph/api/resources/callrecording) is available after an online meeting.
+Change notifications enable you to subscribe to changes to transcripts and recordings. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) or a [recording](/graph/api/resources/callrecording) is available after an online meeting.
 
 This article describes scenarios for the **transcript** and **recording** resources. For more details, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
-## Subscribe to transcripts available at tenant-level
+## Subscribe to transcripts available at the tenant level
 
-To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for regular scheduled meetings.
+To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for meetings scheduled on the calendar.
 
 ### Permissions
 
@@ -77,7 +77,7 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to recordings available at tenant-level
+## Subscribe to recordings available at the tenant level
 
 To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for regular scheduled and recurring meetings.
 
@@ -93,7 +93,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 ### Example
 
-The following example shows how to subscribe to recordings available at tenant-level.
+The following example shows how to subscribe to recordings available at the tenant level.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
