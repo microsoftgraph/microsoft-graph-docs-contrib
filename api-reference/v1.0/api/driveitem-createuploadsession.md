@@ -37,16 +37,35 @@ Alternatively, you can defer final creation of the file in the destination until
 
 ### HTTP request
 
+To upload a new file both the parent's id and new file name will need to be provided in the request, however an update only requires the id of the item to update.
+
+#### Create new file
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /me/drive/items/{parentItemId}:/{fileName}:/createUploadSession
+```
+
+#### Update existing file
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /drives/{driveId}/items/{itemId}/createUploadSession
 POST /groups/{groupId}/drive/items/{itemId}/createUploadSession
 POST /me/drive/items/{itemId}/createUploadSession
-POST /me/drive/items/{itemId}:/{fileName}:/createUploadSession
+POST /me/drive/items/{parentItemId}:/{fileName}:/createUploadSession
 POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
 POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ```
+
+### Request headers
+
+| Name       | Value | Description                                                                                                                                                            |
+|:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` error response is returned. |
+| *if-none-match* | etag | If this request header is included and the eTag (or cTag) provided matches the current etag on the item, a `412 Precondition Failed` error response is returned. |
 
 ### Request body
 
@@ -91,7 +110,7 @@ The following example controls the behavior if the filename is already taken, an
 
 ### Request
 
-The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
+The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file.
 
 >**Note:** The {item-path} must contain the name of the item that's specified in the request body.
 
@@ -138,7 +157,7 @@ You can upload the entire file, or split the file into multiple byte ranges, as 
 The fragments of the file must be uploaded sequentially in order.
 Uploading fragments out of order will result in an error.
 
-**Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes). 
+**Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes).
 Using a fragment size that does not divide evenly by 320 KiB will result in errors committing some files.
 
 ### Example
@@ -179,10 +198,10 @@ Content-Type: application/json
 ```
 
 Your app can use the **nextExpectedRanges** value to determine where to start the next byte range.
-You may see multiple ranges specified, indicating parts of the file that the server has not yet received. 
+You may see multiple ranges specified, indicating parts of the file that the server has not yet received.
 This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
 
-You should always determine the size of your byte ranges according to the best practices below. 
+You should always determine the size of your byte ranges according to the best practices below.
 Do not assume that **nextExpectedRanges** will return ranges of proper size for a byte range to upload.
 The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.
 
@@ -205,7 +224,7 @@ Content-Type: application/json
 
 * The `nextExpectedRanges` property won't always list all of the missing ranges.
 * On successful fragment writes, it will return the next range to start from (eg. "523-").
-* On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. 
+* On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`.
   You can [request upload status](#resuming-an-in-progress-upload) to get a more detailed list of missing ranges.
 * Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when issuing the `POST` during the first step. It should be not be included when issuing the `PUT`.
 
@@ -284,7 +303,7 @@ Content-Type: application/json
 {
   "error":
   {
-    "code": "upload_name_conflict",
+    "code": "nameAlreadyExists",
     "message": "Another file exists with the same name as the uploaded session. You can redirect the upload session to use a new filename by calling PUT with the new metadata and @microsoft.graph.sourceUrl attribute.",
   }
 }
@@ -360,7 +379,7 @@ Now that your app knows where to start the upload from, resume the upload by fol
 
 ## Handle upload errors
 
-When the last byte range of a file is uploaded, it is possible for an error to occur. 
+When the last byte range of a file is uploaded, it is possible for an error to occur.
 This can be due to a name conflict or quota limitation being exceeded.
 The upload session will be preserved until the expiration time, which allows your app to recover the upload by explicitly committing the upload session.
 
