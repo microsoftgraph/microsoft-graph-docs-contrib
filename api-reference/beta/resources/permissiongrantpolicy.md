@@ -43,6 +43,8 @@ A permission grant policy consists of a list of **includes** condition sets, and
 | description |String| The description for the permission grant policy.|
 | includes | [permissionGrantConditionSet](permissiongrantconditionset.md) collection| Condition sets which are *included* in this permission grant policy. Automatically expanded on `GET`.|
 | excludes |[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Condition sets which are *excluded* in this permission grant policy. Automatically expanded on `GET`.|
+| includeAllPreApprovedApplications  | Boolean | Set to `true` to create all pre-approval policices in the tenant. Set to `false` to disable all pre-approval policies in the tenant. Default is `false`.|
+| resourceScopeType  |String| The resource type the pre-approval applies to. Possible values: `group` for [groups](../resources/group.md) and [teams](../resources/team.md), `chat` for [chats](../resources/chat.md), `tenant` for all tenant. Required.|
 
 ## Relationships
 
