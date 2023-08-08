@@ -343,6 +343,8 @@ items:
                 href: api/user-delta.md
               - name: Get delta for directory object
                 href: api/directoryobject-delta.md
+              - name: Retry service provisioning
+                href: api/user-retryserviceprovisioning.md
           - name: App role assignment
             href: resources/approleassignment.md
             items:
@@ -445,6 +447,8 @@ items:
                 href: api/user-list-memberof.md
               - name: List transitive member of
                 href: api/user-list-transitivememberof.md
+              - name: Retry service provisioning
+                href: api/group-retryserviceprovisioning.md
           - name: Insights
             items:
               - name: Office Graph insights
@@ -5400,6 +5404,8 @@ items:
                     href: api/orgcontact-delta.md
                   - name: Get delta for directory object
                     href: api/directoryobject-delta.md
+                  - name: Retry service provisioning
+                    href: api/orgcontact-retryserviceprovisioning.md
                   - name: Groups
                     href: resources/group.md
                     items:

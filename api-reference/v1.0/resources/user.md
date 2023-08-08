@@ -201,6 +201,7 @@ This resource supports:
 |proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Changes to the **mail** property will also update this collection to include the value as an SMTP address. For more information, see [mail and proxyAddresses properties](#mail-and-proxyaddresses-properties). The proxy address prefixed with `SMTP` (capitalized) is the primary proxy address while those prefixed with `smtp` are the secondary proxy addresses. For Azure AD B2C accounts, this property has a limit of ten unique addresses. Read-only in Microsoft Graph; you can update this property only through the [Microsoft 365 admin center](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses). Not nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`, `endsWith`, `/$count eq 0`, `/$count ne 0`).|
 |refreshTokensValidFromDateTime|DateTimeOffset|Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. <br><br>Returned only on `$select`. Read-only. |
 |responsibilities|String collection|A list for the user to enumerate their responsibilities. <br><br>Returned only on `$select`.|
+| serviceProvisioningErrors    | [serviceProvisioningError](serviceprovisioningerror.md) collection       | Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object . <br><br> Supports `$filter` (`eq`, `not`, for isResolved and serviceInstance).  |
 |schools|String collection|A list for the user to enumerate the schools they have attended. <br><br>Returned only on `$select`.|
 |securityIdentifier| String | Security identifier (SID) of the user, used in Windows scenarios. <br><br>Read-only. Returned by default. <br>Supports `$select` and `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 |showInAddressList|Boolean|**Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](/graph/known-issues#showinaddresslist-property-is-out-of-sync-with-microsoft-exchange).|
@@ -530,6 +531,9 @@ The following is a JSON representation of the resource.
   "responsibilities": ["String"],
   "schools": ["String"],
   "securityIdentifier": "String",
+  "serviceProvisioningErrors": [
+    { "@odata.type": "microsoft.graph.serviceProvisioningXmlError" }
+  ],
   "showInAddressList": true,
   "signInActivity": {"@odata.type": "microsoft.graph.signInActivity"},
   "signInSessionsValidFromDateTime": "String (timestamp)",

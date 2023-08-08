@@ -210,6 +210,7 @@ Content-type: application/json
       "resourceBehaviorOptions": [],
       "resourceProvisioningOptions": [],
       "securityEnabled": false,
+      "serviceProvisioningErrors": [],
       "theme": null,
       "visibility": null,
       "onPremisesProvisioningErrors": []

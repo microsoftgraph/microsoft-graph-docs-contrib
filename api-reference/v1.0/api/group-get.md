@@ -173,6 +173,7 @@ Content-type: application/json
     ],
     "securityEnabled": false,
     "securityIdentifier": "S-1-12-1-45981654-1196986259-3072312199-363020343",
+    "serviceProvisioningErrors": [],
     "theme": null,
     "visibility": "Private",
     "onPremisesProvisioningErrors": []
