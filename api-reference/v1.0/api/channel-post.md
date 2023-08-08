@@ -206,7 +206,7 @@ Content-type: application/json
 
 ---
 
-> **Note:** If you want to add a guest account to the channel, use `Guest` in `roles` property.
+> **Note:**  **Note:** If you want to add a guest account to the channel, use the `guest` value in the `roles` property.
 
 #### Response
 
@@ -390,7 +390,7 @@ Content-type: application/json
 
 ---
 
-> **Note:** If you want to add a guest account to the channel, use `Guest` in `roles` property.
+>  **Note:** If you want to add a guest account to the channel, use the `guest` value in the `roles` property.
 
 #### Response
 
@@ -487,7 +487,7 @@ Content-type: application/json
 
 ---
 
-> **Note:** If you want to add a guest account to the channel, use `Guest` in `roles` property.
+>  **Note:** If you want to add a guest account to the channel, use the `guest` value in the `roles` property.
 
 #### Response
 
