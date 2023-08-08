@@ -5994,6 +5994,8 @@ items:
                             href: api/policyroot-list-rolemanagementpolicies.md
                           - name: Get
                             href: api/unifiedrolemanagementpolicy-get.md
+                          - name: Update
+                            href: api/unifiedrolemanagementpolicy-update.md
                           - name: List rules
                             href: api/unifiedrolemanagementpolicy-list-rules.md
                           - name: Get rule
