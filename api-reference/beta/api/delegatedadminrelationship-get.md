@@ -1,7 +1,7 @@
 ---
 title: "Get delegatedAdminRelationship"
 description: "Read the properties of a delegatedAdminRelationship object."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType

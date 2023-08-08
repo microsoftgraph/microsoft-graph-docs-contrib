@@ -1,7 +1,7 @@
 ---
 title: "Get delegatedAdminAccessAssignment"
 description: "Read the properties of a delegatedAdminAccessAssignment object."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType
