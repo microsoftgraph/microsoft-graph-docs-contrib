@@ -6326,21 +6326,21 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
-    { "ChangeList": [ 
-        { 
-          "Id": "82fb7fe7-4c12-4422-8112-563496de0f33", 
-          "ApiChange": "Property", 
-          "ChangedApiName": "metadataContent", 
-          "ChangeType": "Addition", 
-          "Description": "Added the **metadataContent** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.", 
-          "Target": "callTranscript" 
-        } 
-      ], 
-      "Id": "82fb7fe7-4c12-4422-8112-563496de0f33", 
-      "Cloud": "prd", 
-      "Version": "beta", 
-      "CreatedDateTime": "2023-04-05T12:44:49.407Z", 
-      "WorkloadArea": "Teamwork and communications", 
+    { "ChangeList": [
+        {
+          "Id": "82fb7fe7-4c12-4422-8112-563496de0f33",
+          "ApiChange": "Property",
+          "ChangedApiName": "metadataContent",
+          "ChangeType": "Addition",
+          "Description": "Added the **metadataContent** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.",
+          "Target": "callTranscript"
+        }
+      ],
+      "Id": "82fb7fe7-4c12-4422-8112-563496de0f33",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-05T12:44:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
     {
@@ -6524,6 +6524,48 @@
       "SubArea": "Calls and online meetings",
       "WorkloadArea": "Teamwork and communications",
       "CreatedDateTime": "2023-07-26T00:00:00"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f1e6f8c4-4f3c-4d3d-9f3a-7c2a9c3c7b9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "audioSourceLevel",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the audiosourcelevel resource type.",
+          "Target": "audioSourceLevel"
+        },
+        {
+          "Id": "f1e6f8c4-4f3c-4d3d-9f3a-7c2a9c3c7b9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "participantMixerLevel",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the participantmixerlevel resource type.",
+          "Target": "participantMixerLevel"
+        },
+        {
+          "Id": "f1e6f8c4-4f3c-4d3d-9f3a-7c2a9c3c7b9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "audioDuckingConfiguration",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the audioduckingconfiguration resource type.",
+          "Target": "audioDuckingConfiguration"
+        },
+        {
+          "Id": "f1e6f8c4-4f3c-4d3d-9f3a-7c2a9c3c7b9d",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Deletion",
+          "Description": "Delete POST method participant-configuremixer to the [call](https://learn.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0) resource.",
+          "Target": "call"
+        }
+      ],
+      "Id": "f1e6f8c4-4f3c-4d3d-9f3a-7c2a9c3c7b9d",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "SubArea": "Teams",
+      "WorkloadArea": "Teamwork and communications",
+      "CreatedDateTime": "2023-08-03T00:00:00"
     }
   ]
 }
