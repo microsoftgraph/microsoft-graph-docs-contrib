@@ -78,7 +78,7 @@ Content-Type: application/json
 Content-length: 199
 
 {
-    "filter": "ActionState eq 'failed'"
+    "filter": "ActionState eq 'failed'",
     "select":["Id", "CloudPcDeviceDisplayName", "BulkActionId", "BulkActionDisplayName", "CloudPcId", "InitiatedByUserPrincipalName","DeviceOwnerUserPrincipalName", "Action", "ActionState", "RequestDateTime", "LastUpdatedDateTime", "ActionParameters"],
     "skip": 0,
     "top": 50
