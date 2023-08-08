@@ -3260,6 +3260,24 @@
       "CreatedDateTime": "2023-05-01T00:17:48.4795689Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ab71be33-ee9d-4a1e-bf06-0133911ad680",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "recordings",
+          "ChangeType": "Addition",
+          "Description": "Added the **recordings** relationship to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "ab71be33-ee9d-4a1e-bf06-0133911ad680",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-07T07:44:49.7319267Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     }
   ]
 }

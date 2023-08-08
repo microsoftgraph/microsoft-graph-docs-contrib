@@ -16186,10 +16186,16 @@ items:
                     href: resources/security-host.md
                   - name: Get
                     href: api/security-host-get.md
+                  - name: List children host pairs
+                    href: api/security-host-list-childhostpairs.md
+                  - name: List host pairs
+                    href: api/security-host-list-hostpairs.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
+                  - name: List parent host pairs
+                    href: api/security-host-list-parenthostpairs.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
@@ -16212,6 +16218,18 @@ items:
                     href: resources/security-hostcookie.md
                   - name: Get
                     href: api/security-hostcookie-get.md
+              - name: Host pair
+                items:
+                  - name: Host pair
+                    href: resources/security-hostpair.md
+                  - name: Get
+                    href: api/security-hostpair-get.md
+                  - name: List host pairs for a host
+                    href: api/security-host-list-hostpairs.md
+                  - name: List parent host pairs
+                    href: api/security-host-list-parenthostpairs.md
+                  - name: List children host pairs
+                    href: api/security-host-list-childhostpairs.md
               - name: Host tracker
                 items:
                   - name: Host tracker
@@ -17126,9 +17144,18 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
-                  - name: Call transcript (preview)
-                    href: resources/calltranscript.md
+                  - name: Call recording (preview)
                     items:
+                      - name: Call recording (preview)
+                        href: resources/callrecording.md
+                      - name: List
+                        href: api/onlinemeeting-list-recordings.md
+                      - name: Get
+                        href: api/callrecording-get.md                
+                  - name: Call transcript (preview)
+                    items:
+                      - name: Call transcript (preview)
+                        href: resources/calltranscript.md
                       - name: List
                         href: api/onlinemeeting-list-transcripts.md
                       - name: Get

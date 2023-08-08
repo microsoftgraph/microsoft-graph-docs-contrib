@@ -1,5 +1,5 @@
 ---
-title: "Use the Microsoft Graph API to get change notifications"
+title: "Overview:  Microsoft Graph API change notifications"
 description: "Deliver change notifications to clients."
 ms.localizationpriority: high
 author: "keylimesoda"
@@ -8,7 +8,7 @@ doc_type: conceptualPageType
 ms.date: 09/10/2022
 ---
 
-# Use the Microsoft Graph API to get change notifications
+# Microsoft Graph API change notifications
 
 Namespace: microsoft.graph
 

@@ -8,7 +8,7 @@ ms.localizationpriority: high
 
 <!-- markdownlint-disable MD041-->
 
-An app can subscribe to changes on the Microsoft Graph resources listed in the table, which also indicates the limits that apply for subscriptions to the resources. When any limit is exceeded, attempts to create a subscription will result in an `403 Forbidden` error response. The **message** property of the error response will explain the limit that has been exceeded.
+An app can subscribe to changes on the Microsoft Graph resources listed in the table.
 
 > **Note:** Subscriptions to resources marked with an asterisk (`*`) are available on the `/beta` endpoint only.
 
@@ -25,7 +25,7 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | Outlook [event][] | Changes to all events in a user's mailbox: `/users/{id}/events` , `/me/events` | A maximum of 1,000 active subscriptions per mailbox for all applications is allowed. |
 | Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox: `/users/{id}/contacts` , `/me/contacts` | A maximum of 1,000 active subscriptions per mailbox for all applications is allowed. |
 | Security [alert][] | Changes to a specific alert: `/security/alerts/{id}` <br><br>Changes to filtered alerts: `/security/alerts/?$filter={parameters}` | - |
-| Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | Maximum subscription quotas: <li> Per organization: 100 total subscriptions. |
+| Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | Returns when call ends. <br>Maximum subscription quotas: <li> Per org: 100 total subscriptions.|
 | Teams [callTranscript][] <sup>*<sup> | Any transcript becomes available in the tenant: `communications/onlineMeetings/getAllTranscripts` <br><br> Any transcript becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per organization: 10,000 total subscriptions. |
 | Teams [chat][] | Changes to any chat in the tenant: `/chats`  <br><br> Changes to a specific chat: `/chats/{id}` <br><br> Changes to all chats in an organization where a particular Teams app is installed: `/appCatalogs/teamsApps/{id}/installedToChats`  | Maximum subscription quotas: <li> Per app and chat combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
 | Teams [chatMessage][] | Changes to chat messages in all channels in all teams: `/teams/getAllMessages` <br><br> Changes to chat messages in a specific channel: `/teams/{id}/channels/{id}/messages` <br><br> Changes to chat messages in all chats: `/chats/getAllMessages`  <br><br> Changes to chat messages in a specific chat: `/chats/{id}/messages` <br><br> Changes to chat messages in all chats a particular user is part of: `/users/{id}/chats/getAllMessages` <br><br> Changes to chat messages for all chats in an organization where a particular Teams app is installed: `/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages` | Maximum subscription quotas: <li> Per app and channel or chat combination: 1 subscription. <li> Per user (for subscriptions tracking chat messages in all chats the user is part of): 10 subscriptions. <li> Per organization: 10,000 total subscriptions. |
@@ -36,6 +36,8 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | Teams [team][] | Changes to any team in the tenant: `/teams` <br><br> Changes to a specific team: `/teams/{id}` | Maximum subscription quotas: <li> Per app and team combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
 | [todoTask][] | Changes to all task in a specific task list: `/me/todo/lists/{todoTaskListId}/tasks` | - |
 | [user][] | Changes to all users: `/users` <br><br> Changes to a specific user: `/users/{id}` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1000 total subscriptions across all apps <li> Per app and tenant combination: 100 total subscriptions.<br/><br/>Not supported for personal Microsoft accounts like outlook.com.<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>**NOTE:** Creation and soft-deletion of users will also trigger the `updated` **changeType**. |
+
+> **Note:** Many resources have limits or quotas of how many subscriptions can be made against that resource.  When that limit is exceeded, attempts to create a subscription will result in an `403 Forbidden` error response. The **message** property of the error response will explain the limit that has been exceeded.
 
 Some of these resources support rich notifications (notifications with resource data). For more information about resources that support rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#supported-resources).
 

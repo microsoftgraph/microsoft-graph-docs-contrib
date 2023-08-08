@@ -1,7 +1,7 @@
 ---
 title: "Update continuousAccessEvaluationPolicy"
 description: "Update the properties of a continuousAccessEvaluationPolicy object."
-author: "jerrysai"
+author: "Jerrysai-zz"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
