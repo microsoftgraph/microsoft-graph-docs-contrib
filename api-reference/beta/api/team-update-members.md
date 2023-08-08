@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an updated [conv
 
 ### Request
 
-The following is an example of a request to apply the `owner` role to an existing member of a team.
+The following is an example of a request to apply the owner role to an existing member of a team.
 
 <!-- {
   "blockType": "request",
