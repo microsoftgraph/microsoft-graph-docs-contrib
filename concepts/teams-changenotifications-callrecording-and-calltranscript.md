@@ -1,6 +1,6 @@
 ---
 title: "Get change notifications for meeting transcripts and recordings using Microsoft Graph"
-description: "Learn how to get notifications for meeting transcripts and recordings using Microsoft Graph APIs."
+description: "Learn how to get notifications for meeting transcripts and recordings using the Microsoft Graph API."
 author: "v-sdhakshina"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
