@@ -1,6 +1,6 @@
 ---
 title: "List endUserNotifications"
-description: "Get a list of the endUserNotifications and their properties."
+description: "Get a list of endUserNotifications and their properties."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [endUserNotification](../resources/endusernotification.md) objects and their properties.
+Get a list of [endUserNotification](../resources/endusernotification.md) objects and their properties.
 
 ## Permissions
 
