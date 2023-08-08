@@ -19,6 +19,7 @@ Represents tenant-wide settings for the Universal Print service.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |documentConversionEnabled|Boolean|Specifies whether document conversion is enabled for the tenant. If document conversion is enabled, Universal Print service will automatically convert documents into a format compatible with the printer (xps to pdf) when needed.|
+|displayNonAirPrintCompliantPrinters|Boolean|Specifies whether printers that are not AirPrint compliant should be visible to Mac users.|
 
 ## JSON representation
 
@@ -33,7 +34,8 @@ The following is a JSON representation of printSettings.
 
 ```json
 {
-  "documentConversionEnabled": true
+  "documentConversionEnabled": true,
+  "displayNonAirPrintCompliantPrinters": true
 }
 ```
 
