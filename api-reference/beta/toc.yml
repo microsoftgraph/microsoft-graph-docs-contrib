@@ -17144,9 +17144,18 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
-                  - name: Call transcript (preview)
-                    href: resources/calltranscript.md
+                  - name: Call recording (preview)
                     items:
+                      - name: Call recording (preview)
+                        href: resources/callrecording.md
+                      - name: List
+                        href: api/onlinemeeting-list-recordings.md
+                      - name: Get
+                        href: api/callrecording-get.md                
+                  - name: Call transcript (preview)
+                    items:
+                      - name: Call transcript (preview)
+                        href: resources/calltranscript.md
                       - name: List
                         href: api/onlinemeeting-list-transcripts.md
                       - name: Get
