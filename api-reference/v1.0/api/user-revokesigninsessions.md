@@ -48,10 +48,7 @@ This operation has no request content.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
-
->[!NOTE]
->This API has a [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-http-code). It returns a different HTTP response code.
+If successful, this method returns a 2xx series response code.
 
 ## Example
 The following example shows how to call this API.
@@ -90,6 +87,10 @@ POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/user-revokesigninsessionss-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-revokesigninsessionss-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

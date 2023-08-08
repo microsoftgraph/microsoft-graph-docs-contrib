@@ -22,7 +22,7 @@ configuration := &graphusers.UserItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Users().ByUserId("user-id").Get(context.Background(), configuration)
+users, err := graphClient.Users().ByUserId("user-id").Get(context.Background(), configuration)
 
 
 ```

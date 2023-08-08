@@ -71,7 +71,7 @@ requestBody.SetMinimumSupportedOperatingSystem(minimumSupportedOperatingSystem)
 identityVersion := "Identity Version value"
 requestBody.SetIdentityVersion(&identityVersion) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().Post(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().Post(context.Background(), requestBody, nil)
 
 
 ```

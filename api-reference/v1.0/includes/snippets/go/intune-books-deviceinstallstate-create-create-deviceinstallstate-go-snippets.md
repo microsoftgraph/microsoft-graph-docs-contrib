@@ -34,7 +34,7 @@ requestBody.SetOsDescription(&osDescription)
 userName := "User Name value"
 requestBody.SetUserName(&userName) 
 
-result, err := graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").DeviceStates().Post(context.Background(), requestBody, nil)
+deviceStates, err := graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").DeviceStates().Post(context.Background(), requestBody, nil)
 
 
 ```

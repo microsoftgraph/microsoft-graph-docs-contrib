@@ -85,7 +85,7 @@ isDowngradeJustified := true
 downgradeJustification.SetIsDowngradeJustified(&isDowngradeJustified) 
 requestBody.SetDowngradeJustification(downgradeJustification)
 
-result, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().MicrosoftGraphSecurityEvaluateRemoval().Post(context.Background(), requestBody, configuration)
+microsoft.graph.security.evaluateRemoval, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().MicrosoftGraphSecurityEvaluateRemoval().Post(context.Background(), requestBody, configuration)
 
 
 ```

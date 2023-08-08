@@ -49,9 +49,9 @@ You can specify the following properties when creating a **accessPackageCustomWo
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description for the customAccessPackageWorkflowExtension object.|
-|displayName|String|Display name for the customAccessPackageWorkflowExtension.|
-|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow.|  
-|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow.|
+|displayName|String|Required. Display name for the customAccessPackageWorkflowExtension.|
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Required. The type and details for configuring the endpoint to call the logic app's workflow.|  
+|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Required. Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow.|
 |callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension. This is suppoted for `accessPackageAssignmentRequestWorkflowExtension`. |
 
 You must also supply an **@odata.type** property with a value of the specific access package workflow extension type. For example, `"@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension"`.

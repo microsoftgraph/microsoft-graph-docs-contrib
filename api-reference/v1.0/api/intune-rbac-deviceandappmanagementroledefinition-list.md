@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions
 [!INCLUDE [sample-code](../includes/snippets/php/intune-rbac-deviceandappmanagementroledefinition-list-list-deviceandappmanagementroledefinitions-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-rbac-deviceandappmanagementroledefinition-list-list-deviceandappmanagementroledefinitions-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-rbac-deviceandappmanagementroledefinition-list-list-deviceandappmanagementroledefinitions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

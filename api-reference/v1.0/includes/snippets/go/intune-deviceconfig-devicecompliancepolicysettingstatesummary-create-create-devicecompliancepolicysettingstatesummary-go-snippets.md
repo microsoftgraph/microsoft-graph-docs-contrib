@@ -37,7 +37,7 @@ requestBody.SetErrorDeviceCount(&errorDeviceCount)
 conflictDeviceCount := int32(3)
 requestBody.SetConflictDeviceCount(&conflictDeviceCount) 
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicySettingStateSummaries().Post(context.Background(), requestBody, nil)
+deviceCompliancePolicySettingStateSummaries, err := graphClient.DeviceManagement().DeviceCompliancePolicySettingStateSummaries().Post(context.Background(), requestBody, nil)
 
 
 ```

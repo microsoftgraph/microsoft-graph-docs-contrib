@@ -22,7 +22,7 @@ configuration := &graphusers.ItemInsightsUsedRequestBuilderGetRequestConfigurati
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Insights().Used().Get(context.Background(), configuration)
+used, err := graphClient.Me().Insights().Used().Get(context.Background(), configuration)
 
 
 ```

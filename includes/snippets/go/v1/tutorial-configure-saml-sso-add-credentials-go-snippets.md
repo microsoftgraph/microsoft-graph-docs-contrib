@@ -77,7 +77,7 @@ passwordCredentials := []graphmodels.PasswordCredentialable {
 }
 requestBody.SetPasswordCredentials(passwordCredentials)
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
+servicePrincipals, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
