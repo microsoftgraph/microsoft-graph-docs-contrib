@@ -8,7 +8,7 @@ ms.localizationpriority: high
 
 <!-- markdownlint-disable MD041-->
 
-An app can subscribe to changes on the Microsoft Graph resources listed in the table, which also indicates the limits that apply for subscriptions to the resources. When any limit is exceeded, attempts to create a subscription will result in an `403 Forbidden` error response. The **message** property of the error response will explain the limit that has been exceeded.
+An app can subscribe to changes on the Microsoft Graph resources listed in the table.
 
 > **Note:** Subscriptions to resources marked with an asterisk (`*`) are available on the `/beta` endpoint only.
 
@@ -36,6 +36,8 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | Teams [team][] | Changes to any team in the tenant: `/teams` <br><br> Changes to a specific team: `/teams/{id}` | Maximum subscription quotas: <li> Per app and team combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
 | [todoTask][] | Changes to all task in a specific task list: `/me/todo/lists/{todoTaskListId}/tasks` | - |
 | [user][] | Changes to all users: `/users` <br><br> Changes to a specific user: `/users/{id}` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1000 total subscriptions across all apps <li> Per app and tenant combination: 100 total subscriptions.<br/><br/>Not supported for personal Microsoft accounts like outlook.com.<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>**NOTE:** Creation and soft-deletion of users will also trigger the `updated` **changeType**. |
+
+> **Note:** Many resources have limits or quotas of how many subscriptions can be made against that resource.  When that limit is exceeded, attempts to create a subscription will result in an `403 Forbidden` error response. The **message** property of the error response will explain the limit that has been exceeded.
 
 Some of these resources support rich notifications (notifications with resource data). For more information about resources that support rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#supported-resources).
 
