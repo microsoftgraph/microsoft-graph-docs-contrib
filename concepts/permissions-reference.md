@@ -201,7 +201,7 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 * _Application.ReadWrite.OwnedBy_: Create an application (`POST /v1.0/applications`)
 * _Application.ReadWrite.OwnedBy_: List all applications owned by the calling application (`GET /v1.0/servicePrincipals/{id}/ownedObjects`)
 * _Application.ReadWrite.OwnedBy_: Add another owner to an owned application (`POST /v1.0/applications/{id}/owners/$ref`).
-  
+
     > NOTE: This may require additional permissions.
 
 ---
@@ -831,7 +831,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 > [!NOTE]
 > Before December 3rd, 2020, when the application permission *Device.ReadWrite.All* was granted, the [Device Managers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) directory role was also assigned to the app's service principal. This directory role assignment is not removed automatically when the associated application permissions is revoked. To ensure that an application's access to read or write to devices is removed, customers must also remove any related directory roles that were granted to the application.
-> 
+>
 > A service update disabling this behavior began rolling out on December 3rd, 2020. Deployment to all customers completed on January 11th, 2021. Directory roles are no longer automatically assigned when application permissions are granted.
 
 ### Example usage
@@ -873,7 +873,7 @@ They also exclusively control access to other directory resources like: [organiz
 
 > [!NOTE]
 > Before December 3rd, 2020, when the application permission *Directory.Read.All* was granted, the [Directory Readers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-readers-permissions) directory role was also assigned to the app's service principal. When *Directory.ReadWrite.All* was granted, the [Directory Writers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-writers-permissions) directory role was also assigned. These directory roles are not removed automatically when the associated application permissions are revoked. To remove an application's access to read or write to the directory, customers must also remove any directory roles that were granted to the application.
-> 
+>
 > A service update disabling this behavior began rolling out on December 3rd, 2020. Deployment to all customers completed on January 11th, 2021. Directory roles are no longer automatically assigned when application permissions are granted.
 
 The _Directory.ReadWrite.All_ permission grants the following privileges:
@@ -1703,7 +1703,7 @@ Administrators can configure [application access policy](cloud-communication-onl
   * Create an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) on behalf of a user (`POST /beta/users/{userId}/onlineMeetings/)
   * Update an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) on behalf of a user (`PATCH /beta/users/{userId}/onlineMeetings/{id})
   * Delete an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) on behalf of a user (`DELETE /beta/users/{userId}/onlineMeetings/{id})
-  
+
 > **Note**: Creating an [online meeting](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true) creates a meeting on behalf of a user, but does not show it on the user's Calendar.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
@@ -1761,7 +1761,7 @@ With the Azure AD v1.0 endpoint, only the _openid_ scope is used. You specify it
 With the Azure AD v2.0 endpoint, you specify the _offline\_access_ scope in the _scope_ parameter to explicitly request a refresh token when using the OAuth 2.0 or OpenID Connect protocols. With OpenID Connect, you specify the _openid_ scope to request an ID token. You can also specify the _email_ scope, _profile_ scope, or both to return additional claims in the ID token. You do not need to specify the _User.Read_ permission to return an ID token with the v2.0 endpoint. For more information, see [OpenID Connect scopes](/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
 
 > [!IMPORTANT]
-> 
+>
 > The Microsoft Authentication Library (MSAL) currently specifies _offline\_access_, _openid_, _profile_, and _email_ by default in authorization and token requests. This means that, for the default case, if you specify these scopes explicitly, Azure AD may return an error.
 
 ---
@@ -2489,7 +2489,7 @@ Taxonomy permissions are valid only on work or school accounts.
 | _Team.ReadBasic.All_ | Read the names and descriptions of teams | Read the names and descriptions of teams, on behalf of the signed-in user.  | No | No |
 | _Team.Create_  | Create teams | Create teams, on behalf of the signed-in user. | Yes | No |
 
-#### Application permissions 
+#### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
@@ -2621,7 +2621,7 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamworkDevice.Read.All_ | Read Teams devices. | Allows the app to read the management data for Teams devices, without a signed-in user.  | Yes | No |
 | _TeamworkDevice.ReadWrite.All_ | Read and write Teams devices. | Allows the app to read and write the management data for Teams devices, without a signed-in user. | Yes | No |
 
-## Team member permissions 
+## Team member permissions
 
 #### Delegated permissions
 
@@ -2823,6 +2823,21 @@ Threat hunting permissions are valid only on work or school accounts.
 #### Application
 
 * _ThreatHunting.Read.All_: Run hunting query (`POST /security/runHuntingQuery`)
+
+---
+
+## Trusted certificate authority configuration permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_AppCertTrustConfiguration.Read.All_| Read all trusted certificate authorities| Allows the app to read configuration of trusted certificate authorities for applications on behalf of the signed-in user. | Yes | Yes |
+|_AppCertTrustConfiguration.ReadWrite.All_| Manage all trusted certificate authorities| Allows the app to read and write configuration of trusted certificate authorities for applications on behalf of the signed-in user. | Yes | Yes |
+
+#### Application permissions
+
+None.
 
 ---
 

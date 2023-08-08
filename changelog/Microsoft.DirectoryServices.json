@@ -324,7 +324,7 @@
     },
     {
       "ChangeList": [
-        { 
+        {
           "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
           "ApiChange": "Property",
           "ChangedApiName": "isMemberManagementRestricted",
@@ -332,7 +332,7 @@
           "Description": "Added the **isMemberManagementRestricted** property to the [administrativeUnit](https://learn.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
           "Target": "administrativeUnit"
         },
-        { 
+        {
           "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
           "ApiChange": "Property",
           "ChangedApiName": "isManagementRestricted",
@@ -340,7 +340,7 @@
           "Description": "Added the **isManagementRestricted** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         },
-        { 
+        {
           "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
           "ApiChange": "Property",
           "ChangedApiName": "isManagementRestricted",
@@ -348,7 +348,7 @@
           "Description": "Added the **isManagementRestricted** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
           "Target": "group"
         },
-        { 
+        {
           "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
           "ApiChange": "Property",
           "ChangedApiName": "isManagementRestricted",
@@ -14027,7 +14027,7 @@
       "CreatedDateTime": "2023-04-11T17:56:44.238139Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
-    }, 
+    },
     {
       "ChangeList": [
         {
@@ -14269,6 +14269,56 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-06-19T07:13:01.0506132Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+          "ApiChange": "Member",
+          "ChangedApiName": "trustedCertificateAuthority",
+          "ChangeType": "Addition",
+          "Description": "Added the `trustedCertificateAuthority` member to the **appKeyCredentialRestrictionType** enumeration.",
+          "Target": "appKeyCredentialRestrictionType"
+        },
+        {
+          "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+          "ApiChange": "Property",
+          "ChangedApiName": "certificateBasedApplicationConfigurationIds",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateBasedApplicationConfigurationIds** property to the [keyCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/keyCredentialConfiguration?view=graph-rest-beta) resource.",
+          "Target": "keyCredentialConfiguration"
+        },
+        {
+          "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificateAuthorityAsEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateAuthorityAsEntity](https://learn.microsoft.com/en-us/graph/api/resources/certificateAuthorityAsEntity?view=graph-rest-beta) resource and supported methods.",
+          "Target": "certificateAuthorityAsEntity"
+        },
+        {
+          "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificateAuthorityPath",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateAuthorityPath](https://learn.microsoft.com/en-us/graph/api/resources/certificateAuthorityPath?view=graph-rest-beta) resource type.",
+          "Target": "certificateAuthorityPath"
+        },
+        {
+          "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificateBasedApplicationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateBasedApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/certificateBasedApplicationConfiguration?view=graph-rest-beta) resource and supported methods.",
+          "Target": "certificateBasedApplicationConfiguration"
+        }
+      ],
+      "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-02T19:15:17.4911623Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }

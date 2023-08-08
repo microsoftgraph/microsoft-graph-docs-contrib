@@ -11493,6 +11493,33 @@ items:
                     href: api/bitlocker-list-recoverykeys.md
                   - name: Get
                     href: api/bitlockerrecoverykey-get.md
+              - name: Trusted certificate authorities for apps (preview)
+                items:
+                - name: Certificate-based app configuration
+                  href: resources/certificatebasedapplicationconfiguration.md
+                - name: List
+                  href: api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
+                - name: Create
+                  href: api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md
+                - name: Get
+                  href: api/certificatebasedapplicationconfiguration-get.md
+                - name: Update
+                  href: api/certificatebasedapplicationconfiguration-update.md
+                - name: Delete
+                  href: api/certificatebasedapplicationconfiguration-delete.md
+                - name: Certificate authority
+                  href: resources/certificateauthorityasentity.md
+                  items:
+                  - name: List
+                    href: api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md
+                  - name: Create
+                    href: api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md
+                  - name: Get
+                    href: api/certificateauthorityasentity-get.md
+                  - name: Update
+                    href: api/certificateauthorityasentity-update.md
+                  - name: Delete
+                    href: api/certificateauthorityasentity-delete.md
               - name: Company subscription
                 href: resources/companysubscription.md
                 items:
@@ -17151,7 +17178,7 @@ items:
                       - name: List
                         href: api/onlinemeeting-list-recordings.md
                       - name: Get
-                        href: api/callrecording-get.md                
+                        href: api/callrecording-get.md
                   - name: Call transcript (preview)
                     items:
                       - name: Call transcript (preview)
