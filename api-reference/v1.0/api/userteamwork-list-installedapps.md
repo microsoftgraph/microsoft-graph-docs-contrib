@@ -29,10 +29,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!NOTE]
 >
-> If you plan to use TeamsAppInstallation.ReadWriteSelfForUser.All permission, following are the prerequisites:
+> If you plan to use TeamsAppInstallation.ReadWriteSelfForUser.All permissions, following are the prerequisites:
 >
-> - App manifest must have `webApplicationInfo` property.
-> - App `id` given in `webApplicationInfo` property and app `id` used to generate access token must match. Otherwise, API gives empty result.
+> - The app manifest must have the `webApplicationInfo` property.
+> - The app `id` given in the `webApplicationInfo` property and the app `id` used to generate the access token must match. Otherwise, the API gives an empty result.
 
 ## HTTP request
 
