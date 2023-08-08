@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Applications().ByApplicationId("application-id").ExtensionProperties().ByExtensionPropertieId("extensionProperty-id").Delete(context.Background(), nil)
+graphClient.Applications().ByApplicationId("application-id").ExtensionProperties().ByExtensionPropertyId("extensionProperty-id").Delete(context.Background(), nil)
 
 
 ```

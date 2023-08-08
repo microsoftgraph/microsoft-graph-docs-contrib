@@ -1,0 +1,24 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```bash
+
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc device-management device-compliance-policy-setting-state-summaries device-compliance-setting-states create --device-compliance-policy-setting-state-summary-id {deviceCompliancePolicySettingStateSummary-id} --body '{\
+  "@odata.type": "#microsoft.graph.deviceComplianceSettingState",\
+  "setting": "Setting value",\
+  "settingName": "Setting Name value",\
+  "deviceId": "Device Id value",\
+  "deviceName": "Device Name value",\
+  "userId": "User Id value",\
+  "userEmail": "User Email value",\
+  "userName": "User Name value",\
+  "userPrincipalName": "User Principal Name value",\
+  "deviceModel": "Device Model value",\
+  "state": "notApplicable",\
+  "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"\
+}\
+'
+
+```

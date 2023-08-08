@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CitationTemplate();
-$requestBody->set@odatatype('#microsoft.graph.security.citationTemplate');
+$requestBody->setOdataType('#microsoft.graph.security.citationTemplate');
 
 $requestBody->setDisplayName('String');
 
 $createdBy = new IdentitySet();
-$createdBy->set@odatatype('microsoft.graph.identitySet');
+$createdBy->setOdataType('microsoft.graph.identitySet');
 
 
 $requestBody->setCreatedBy($createdBy);

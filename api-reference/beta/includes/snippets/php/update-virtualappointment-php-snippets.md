@@ -7,22 +7,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new VirtualAppointment();
-$requestBody->set@odatatype('#microsoft.graph.virtualAppointment');
+$requestBody->setOdataType('#microsoft.graph.virtualAppointment');
 
 $requestBody->setId('0c7fda79-ff00-f57f-37e3-28183b6d09b5');
 
 $settings = new VirtualAppointmentSettings();
-$settings->set@odatatype('microsoft.graph.virtualAppointmentSettings');
+$settings->setOdataType('microsoft.graph.virtualAppointmentSettings');
 
 $settings->setAllowClientToJoinUsingBrowser(true);
 
 
 $requestBody->setSettings($settings);
 $appointmentClientsVirtualAppointmentUser1 = new VirtualAppointmentUser();
-$appointmentClientsVirtualAppointmentUser1->set@odatatype('microsoft.graph.virtualAppointmentUser');
+$appointmentClientsVirtualAppointmentUser1->setOdataType('microsoft.graph.virtualAppointmentUser');
 
 $appointmentClientsVirtualAppointmentUser1->setEmailAddress('gradya@contoso.com');
 

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementTemplates().ByManagementTemplateId("managementTemplate-id").Get(context.Background(), nil)
+managementTemplates, err := graphClient.TenantRelationships().ManagedTenants().ManagementTemplates().ByManagementTemplateId("managementTemplate-id").Get(context.Background(), nil)
 
 
 ```

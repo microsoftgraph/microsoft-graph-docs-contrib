@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EnterpriseCodeSigningCertificate();
-$requestBody->set@odatatype('#microsoft.graph.enterpriseCodeSigningCertificate');
+$requestBody->setOdataType('#microsoft.graph.enterpriseCodeSigningCertificate');
 
 $requestBody->setContent(base64_decode('Y29udGVudA=='));
 
@@ -24,9 +24,9 @@ $requestBody->setIssuerName('Issuer Name value');
 
 $requestBody->setIssuer('Issuer value');
 
-$requestBody->setExpirationDateTime(new DateTime('2016-12-31T23:57:57.2481234-08:00'));
+$requestBody->setExpirationDateTime(new \DateTime('2016-12-31T23:57:57.2481234-08:00'));
 
-$requestBody->setUploadDateTime(new DateTime('2016-12-31T23:58:46.5747426-08:00'));
+$requestBody->setUploadDateTime(new \DateTime('2016-12-31T23:58:46.5747426-08:00'));
 
 
 

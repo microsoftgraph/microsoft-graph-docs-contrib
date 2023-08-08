@@ -86,7 +86,6 @@ PATCH https://graph.microsoft.com/beta/networkAccess/forwardingPolicies/{forward
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

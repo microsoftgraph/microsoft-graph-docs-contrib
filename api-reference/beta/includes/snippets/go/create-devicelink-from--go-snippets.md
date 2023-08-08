@@ -43,7 +43,7 @@ preSharedKey := "/microsoft/keyVault/placeholder"
 tunnelConfiguration.SetPreSharedKey(&preSharedKey) 
 requestBody.SetTunnelConfiguration(tunnelConfiguration)
 
-result, err := graphClient.NetworkAccess().Connectivity().Branches().ByBrancheId("branchSite-id").DeviceLinks().Post(context.Background(), requestBody, nil)
+deviceLinks, err := graphClient.NetworkAccess().Connectivity().Branches().ByBranchSiteId("branchSite-id").DeviceLinks().Post(context.Background(), requestBody, nil)
 
 
 ```

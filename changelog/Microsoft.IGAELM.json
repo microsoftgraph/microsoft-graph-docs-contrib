@@ -20,6 +20,96 @@
       },
       {
         "ChangeList": [
+          {
+            "Id": "9e91b305-975d-46fa-b322-88e522ed5256",
+            "ApiChange": "Resource",
+            "ChangedApiName": "accessPackageResource",
+            "ChangeType": "Addition",
+            "Description": "Added the [accessPackageResource](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageresource?view=graph-rest-1.0) resource type.",
+            "Target": "accessPackageResource"
+          },
+          {
+            "Id": "9e91b305-975d-46fa-b322-88e522ed5256",
+            "ApiChange": "Resource",
+            "ChangedApiName": "accessPackageResourceEnvironment",
+            "ChangeType": "Addition",
+            "Description": "Added the [accessPackageResourceEnvironment](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageresourceenvironment?view=graph-rest-1.0) resource type.",
+            "Target": "accessPackageResourceEnvironment"
+          },
+          {
+            "Id": "9e91b305-975d-46fa-b322-88e522ed5256",
+            "ApiChange": "Resource",
+            "ChangedApiName": "accessPackageResourceRequest",
+            "ChangeType": "Addition",
+            "Description": "Added the [accessPackageResourceRequest](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageresourcerequest?view=graph-rest-1.0) resource type.",
+            "Target": "accessPackageResourceRequest"
+          },
+          {
+            "Id": "9e91b305-975d-46fa-b322-88e522ed5256",
+            "ApiChange": "Resource",
+            "ChangedApiName": "accessPackageResourceRole",
+            "ChangeType": "Addition",
+            "Description": "Added the [accessPackageResourceRole](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageresourcerole?view=graph-rest-1.0) resource type.",
+            "Target": "accessPackageResourceRole"
+          },
+          {
+            "Id": "9e91b305-975d-46fa-b322-88e522ed5256",
+            "ApiChange": "Resource",
+            "ChangedApiName": "accessPackageResourceRoleScope",
+            "ChangeType": "Addition",
+            "Description": "Added the [accessPackageResourceRoleScope](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-1.0) resource type.",
+            "Target": "accessPackageResourceRoleScope"
+          },
+          {
+            "Id": "9e91b305-975d-46fa-b322-88e522ed5256",
+            "ApiChange": "Resource",
+            "ChangedApiName": "accessPackageResourceScope",
+            "ChangeType": "Addition",
+            "Description": "Added the [ResourceScope](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageresourcescope?view=graph-rest-1.0) resource type.",
+            "Target": "accessPackageResourceScope"
+          },
+          {
+            "Id": "9e91b305-975d-46fa-b322-88e522ed5256",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "resources",
+            "ChangeType": "Addition",
+            "Description": "Added the **resources** relationship to the [accessPackageCatalog](https://learn.microsoft.com/graph/api/resources/accesspackagecatalog?view=graph-rest-1.0) resource.",
+            "Target": "accessPackageCatalog"
+          },
+          {
+            "Id": "9e91b305-975d-46fa-b322-88e522ed5256",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "resourceRoleScopes",
+            "ChangeType": "Addition",
+            "Description": "Added the **resourceRoleScopes** relationship to the [accessPackage](https://learn.microsoft.com/en-us/graph/api/resources/accesspackage?view=graph-rest-1.0) resource.",
+            "Target": "accessPackage"
+          },
+          {
+            "Id": "9e91b305-975d-46fa-b322-88e522ed5256",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "resourceEnvironments",
+            "ChangeType": "Addition",
+            "Description": "Added the **resourceEnvironments** relationship to the [entitlementManagement](https://learn.microsoft.com/en-us/graph/api/resources/entitlementmanagement?view=graph-rest-1.0) resource.",
+            "Target": "entitlementManagement"
+          },
+          {
+            "Id": "9e91b305-975d-46fa-b322-88e522ed5256",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "resourceRequests",
+            "ChangeType": "Addition",
+            "Description": "Added the **resourceRequests** relationship to the [entitlementManagement](https://learn.microsoft.com/en-us/graph/api/resources/entitlementmanagement?view=graph-rest-1.0) resource.",
+            "Target": "entitlementManagement"
+          }
+        ],
+        "Id": "9e91b305-975d-46fa-b322-88e522ed5256",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2023-07-27T00:00:01Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Governance"
+      },
+      {
+        "ChangeList": [
         {
           "Id": "8a715a6d-5591-4eac-975b-a110de0268b8",
           "ApiChange": "Resource",
@@ -391,6 +481,176 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-03-08T00:00:00.557Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessPackageCustomExtensionStage",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageCustomExtensionStage** enumeration type.",
+          "Target": "accessPackageCustomExtensionStage"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "customExtensionCalloutInstanceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **customExtensionCalloutInstanceStatus** enumeration type.",
+          "Target": "customExtensionCalloutInstanceStatus"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequestCallbackData",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequestCallbackData](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestCallbackData?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAssignmentRequestCallbackData"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAdPopTokenAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAdPopTokenAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/azureAdPopTokenAuthentication?view=graph-rest-1.0) resource type.",
+          "Target": "azureAdPopTokenAuthentication"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionAuthenticationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionAuthenticationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionAuthenticationConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "customExtensionAuthenticationConfiguration"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionCallbackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionCallbackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionCallbackConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "customExtensionCallbackConfiguration"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionCalloutInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionCalloutInstance](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionCalloutInstance?view=graph-rest-1.0) resource type.",
+          "Target": "customExtensionCalloutInstance"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionClientConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionClientConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionClientConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "customExtensionClientConfiguration"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionData",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionData](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionData?view=graph-rest-1.0) resource type.",
+          "Target": "customExtensionData"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionEndpointConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionEndpointConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionEndpointConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "customExtensionEndpointConfiguration"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "logicAppTriggerEndpointConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [logicAppTriggerEndpointConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/logicAppTriggerEndpointConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "logicAppTriggerEndpointConfiguration"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Property",
+          "ChangedApiName": "customExtensionCalloutInstances",
+          "ChangeType": "Addition",
+          "Description": "Added the `customExtensionCalloutInstances` property to the [accessPackageAssignment](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignment"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "customExtensionStageSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **customExtensionStageSettings** relationship to the [accessPackageAssignmentPolicy](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentPolicy"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Property",
+          "ChangedApiName": "customExtensionCalloutInstances",
+          "ChangeType": "Addition",
+          "Description": "Added the `customExtensionCalloutInstances` property to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequest" 
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequestWorkflowExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequestWorkflowExtension](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestWorkflowExtension?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequestWorkflowExtension"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentWorkflowExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentWorkflowExtension](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentWorkflowExtension?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentWorkflowExtension"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "accessPackageCustomWorkflowExtensions",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageCustomWorkflowExtensions** relationship to the [accessPackageCatalog](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageCatalog?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageCatalog"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customCalloutExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [customCalloutExtension](https://learn.microsoft.com/en-us/graph/api/resources/customCalloutExtension?view=graph-rest-1.0) resource.",
+          "Target": "customCalloutExtension"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionStageSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionStageSetting](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionStageSetting?view=graph-rest-1.0) resource.",
+          "Target": "customExtensionStageSetting"
+        },
+        {
+          "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+          "ApiChange": "Method",
+          "ChangedApiName": "resume",
+          "ChangeType": "Addition",
+          "Description": "Added the [resume](https://learn.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest-resume?view=graph-rest-1.0) method to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        }
+      ],
+      "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-07-26T17:10:03.687688Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },

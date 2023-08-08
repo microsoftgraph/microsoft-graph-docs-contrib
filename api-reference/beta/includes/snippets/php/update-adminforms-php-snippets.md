@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AdminForms();
-$requestBody->set@odatatype('#microsoft.graph.adminForms');
+$requestBody->setOdataType('#microsoft.graph.adminForms');
 
 $settings = new FormsSettings();
-$settings->set@odatatype('microsoft.graph.formsSettings');
+$settings->setOdataType('microsoft.graph.formsSettings');
 
 $settings->setIsExternalSendFormEnabled(true);
 

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc education classes assignments submissions resources create --education-class-id {educationClass-id} --education-assignment-id {educationAssignment-id} --education-submission-id {educationSubmission-id} --body '{\
 	"resource": {\
 		"displayName": "_FTP_EDC-61424749-250820211136.pdf",\

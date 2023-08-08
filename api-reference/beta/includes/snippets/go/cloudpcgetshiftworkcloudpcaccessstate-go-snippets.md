@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().CloudPCs().ByCloudPCId("cloudPC-id").GetShiftWorkCloudPcAccessState().Get(context.Background(), nil)
+getShiftWorkCloudPcAccessState(), err := graphClient.Me().CloudPCs().ByCloudPCId("cloudPC-id").GetShiftWorkCloudPcAccessState().Get(context.Background(), nil)
 
 
 ```

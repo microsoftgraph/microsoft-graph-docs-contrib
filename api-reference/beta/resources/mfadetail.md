@@ -4,7 +4,7 @@ description: "Indicates MFA details for a specific sign-in. It includes the auth
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "identity-and-access-reports"
-author: "besiler"
+author: "egreenberg14"
 ---
 
 # mfaDetail resource type

@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains information about a service SKU that a company is subscribed to.
+Represents information about a service SKU that a company is subscribed to.
 
 Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from [directoryObject](directoryobject.md).
 
