@@ -117,7 +117,7 @@ Content-Type: application/json
       "usageDate": "Date",
       "completedBlackAndWhiteJobCount": 42,
       "completedColorJobCount": 0,
-      "incompleteJobCount": 6
+      "incompleteJobCount": 6,
       "completedJobCount": 110,
       "pageCount": 138,
       "blackAndWhitePageCount": 0,
