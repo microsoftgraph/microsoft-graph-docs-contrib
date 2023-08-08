@@ -12,9 +12,7 @@ ms.date: 09/10/2022
 
 Namespace: microsoft.graph
 
-This document provides technical details for  the change notifications APIs in Microsoft Graph.  For details on getting started using these APIs, including how to subscribe to and handle incoming notifications, please start here: [Set up notifications for changes in user data](/graph/webhooks).
-
-The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
+The Microsoft Graph REST API can deliver change notifications to clients through various endpoints, including webhooks, Event Hubs, and Event Grid. To learn how to subscribe and receive notifications for your application, see [Set up notifications for changes in user data](/graph/webhooks).
 
 [!INCLUDE [change-notifications-supported-resources-expanded](../../../concepts/includes/change-notifications-supported-resources-expanded.md)]
 
