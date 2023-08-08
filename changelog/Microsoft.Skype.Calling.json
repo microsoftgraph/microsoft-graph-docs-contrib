@@ -5,9 +5,9 @@
         {
           "Id": "b6dc9e4b-3c6d-4946-be20-90fac94839c2",
           "ApiChange": "Method",
-          "ChangedApiName": "GET",
+          "ChangedApiName": "virtualEvent",
           "ChangeType": "Addition",
-          "Description": "Added the LIST method of the [virtualEventSession](https://docs.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Description": "Added the [LIST](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrant-list?view=graph-rest-beta) operation to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
           "Target": "virtualEvent"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "anonymizeIdentityForRoles",
           "ChangeType": "Addition",
-          "Description": "Added the **anonymizeIdentityForRoles** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **anonymizeIdentityForRoles** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         }
       ],
@@ -345,7 +345,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "watermarkProtection",
           "ChangeType": "Addition",
-          "Description": "Added the **watermarkProtection** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **watermarkProtection** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         },
         {
@@ -353,7 +353,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "restrictedExperience",
           "ChangeType": "Addition",
-          "Description": "Added the **restrictedExperience** property to the [participant](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
+          "Description": "Added the **restrictedExperience** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
           "Target": "participant"
         }
       ],
