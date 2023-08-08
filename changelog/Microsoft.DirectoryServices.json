@@ -14201,6 +14201,80 @@
       "CreatedDateTime": "2023-06-19T07:13:01.0506132Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceProvisioningError",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceProvisioningError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningError?view=graph-rest-1.0) resource type.",
+          "Target": "serviceProvisioningError"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceProvisioningXmlError",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceProvisioningXmlError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningXmlError?view=graph-rest-1.0) resource type.",
+          "Target": "serviceProvisioningXmlError"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvisioningErrors` property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvisioningErrors` property to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-1.0) resource.",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvisioningErrors` property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/group?view=graph-rest-1.0) method to the [group](https://learn.microsoft.com/en-us/graph/api/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/orgContact?view=graph-rest-1.0) method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/orgContact?view=graph-rest-1.0) resource.",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-1.0) method to the [user](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-08T12:54:51.8497231Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
