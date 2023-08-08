@@ -234,7 +234,7 @@ The following flow shows the flow of a **subscriptionRemoved** event:
 
 ## Responding to missed notifications
 
-`missed` lifecycle events alert you that some change notifications might not have been delivered. For example, because of [throttling](change-notifications-delivery-webhooks.md#throttling).
+`missed` lifecycle events alert you that some change notifications might not have been delivered. For example, because of [throttling](change-notifications-delivery-webhooks.md#throttling-and-retry).
 
 ### Actions to take
 

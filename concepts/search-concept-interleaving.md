@@ -108,15 +108,6 @@ Content-type: application/json
               }
             },
             {
-              "hitId": "adce5789-c324-485a-a8bf-66bb809527ff=",
-              "rank": 3,
-              "summary": "Test externalItem",
-              "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
-                "title": "Test externalItem summary"
-              }
-            },
-            {
               "hitId": "ad60906b-1317-495c-b566-7b8ce1be5555",
               "rank": 4,
               "summary": "Test listItem 2",
@@ -217,7 +208,7 @@ Content-type: application/json
               "summary": "Test externalItem",
               "contentSource": "MicrosoftPowerBI",
               "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
+                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                 "title": "Test externalItem summary",
               }
             },
@@ -227,7 +218,7 @@ Content-type: application/json
               "summary": "Learning externalItem",
               "contentSource": "Learning",
               "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
+                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                 "title": "Test externalItem summary",
               }
             },

@@ -19,7 +19,7 @@ requestBody := graphmodels.NewAllowedValue()
 isActive := false
 requestBody.SetIsActive(&isActive) 
 
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().ByCustomSecurityAttributeDefinitionId("customSecurityAttributeDefinition-id").AllowedValues().ByAllowedValueId("allowedValue-id").Patch(context.Background(), requestBody, nil)
+allowedValues, err := graphClient.Directory().CustomSecurityAttributeDefinitions().ByCustomSecurityAttributeDefinitionId("customSecurityAttributeDefinition-id").AllowedValues().ByAllowedValueId("allowedValue-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

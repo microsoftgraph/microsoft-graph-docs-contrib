@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 [!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windows81compliancepolicy-list-list-windows81compliancepolicies-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windows81compliancepolicy-list-list-windows81compliancepolicies-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windows81compliancepolicy-list-list-windows81compliancepolicies-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
