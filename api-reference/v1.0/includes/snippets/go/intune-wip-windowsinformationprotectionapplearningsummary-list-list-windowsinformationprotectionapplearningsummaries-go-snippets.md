@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().WindowsInformationProtectionAppLearningSummaries().Get(context.Background(), nil)
+windowsInformationProtectionAppLearningSummaries, err := graphClient.DeviceManagement().WindowsInformationProtectionAppLearningSummaries().Get(context.Background(), nil)
 
 
 ```

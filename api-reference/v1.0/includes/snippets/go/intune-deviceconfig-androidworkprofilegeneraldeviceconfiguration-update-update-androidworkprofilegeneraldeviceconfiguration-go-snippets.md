@@ -91,7 +91,7 @@ requestBody.SetWorkProfileRequirePassword(&workProfileRequirePassword)
 securityRequireVerifyApps := true
 requestBody.SetSecurityRequireVerifyApps(&securityRequireVerifyApps) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Patch(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

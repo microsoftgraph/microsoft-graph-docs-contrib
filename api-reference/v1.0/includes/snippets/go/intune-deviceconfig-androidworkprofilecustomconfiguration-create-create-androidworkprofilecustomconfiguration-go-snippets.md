@@ -37,7 +37,7 @@ omaSettings := []graphmodels.OmaSettingable {
 }
 requestBody.SetOmaSettings(omaSettings)
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

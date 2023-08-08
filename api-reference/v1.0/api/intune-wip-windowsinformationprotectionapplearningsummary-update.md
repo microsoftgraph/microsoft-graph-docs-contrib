@@ -100,10 +100,6 @@ Content-length: 191
 [!INCLUDE [sample-code](../includes/snippets/php/intune-wip-windowsinformationprotectionapplearningsummary-update-update-windowsinformationprotectionapplearningsummary-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-wip-windowsinformationprotectionapplearningsummary-update-update-windowsinformationprotectionapplearningsummary-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-wip-windowsinformationprotectionapplearningsummary-update-update-windowsinformationprotectionapplearningsummary-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

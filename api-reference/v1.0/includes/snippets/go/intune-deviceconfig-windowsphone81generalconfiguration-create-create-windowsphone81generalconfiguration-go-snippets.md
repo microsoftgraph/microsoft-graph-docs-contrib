@@ -95,7 +95,7 @@ requestBody.SetWifiBlockHotspotReporting(&wifiBlockHotspotReporting)
 windowsStoreBlocked := true
 requestBody.SetWindowsStoreBlocked(&windowsStoreBlocked) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -23,7 +23,7 @@ requestBody.SetState(&state)
 version := "Version value"
 requestBody.SetVersion(&version) 
 
-result, err := graphClient.DeviceAppManagement().ManagedAppRegistrations().ByManagedAppRegistrationId("managedAppRegistration-id").Operations().Post(context.Background(), requestBody, nil)
+operations, err := graphClient.DeviceAppManagement().ManagedAppRegistrations().ByManagedAppRegistrationId("managedAppRegistration-id").Operations().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -22,7 +22,7 @@ configuration := &graphrolemanagement.RoleManagementDirectoryRoleAssignmentItemR
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignments().ByRoleAssignmentId("unifiedRoleAssignment-id").Get(context.Background(), configuration)
+roleAssignments, err := graphClient.RoleManagement().Directory().RoleAssignments().ByUnifiedRoleAssignmentId("unifiedRoleAssignment-id").Get(context.Background(), configuration)
 
 
 ```

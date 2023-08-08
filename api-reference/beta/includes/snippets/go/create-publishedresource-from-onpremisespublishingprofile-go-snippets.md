@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 resourceName := "domain1.contoso.com"
 requestBody.SetResourceName(&resourceName) 
 
-result, err := graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").PublishedResources().Post(context.Background(), requestBody, nil)
+publishedResources, err := graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").PublishedResources().Post(context.Background(), requestBody, nil)
 
 
 ```

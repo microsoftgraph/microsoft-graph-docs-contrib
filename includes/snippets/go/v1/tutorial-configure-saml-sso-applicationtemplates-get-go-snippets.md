@@ -25,7 +25,7 @@ configuration := &graphapplicationtemplates.ApplicationTemplatesRequestBuilderGe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.ApplicationTemplates().Get(context.Background(), configuration)
+applicationTemplates, err := graphClient.ApplicationTemplates().Get(context.Background(), configuration)
 
 
 ```

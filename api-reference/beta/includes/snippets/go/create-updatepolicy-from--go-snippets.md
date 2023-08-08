@@ -53,7 +53,7 @@ schedule.SetGradualRollout(gradualRollout)
 deploymentSettings.SetSchedule(schedule)
 requestBody.SetDeploymentSettings(deploymentSettings)
 
-result, err := graphClient.Admin().Windows().Updates().UpdatePolicies().Post(context.Background(), requestBody, nil)
+updatePolicies, err := graphClient.Admin().Windows().Updates().UpdatePolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

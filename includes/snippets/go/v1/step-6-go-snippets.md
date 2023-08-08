@@ -34,7 +34,7 @@ requestBody.SetEncryptionCertificate(&encryptionCertificate)
 encryptionCertificateId := "44M4444M4444M4M44MM4444MM4444MMMM44MM4M4"
 requestBody.SetEncryptionCertificateId(&encryptionCertificateId) 
 
-result, err := graphClient.Subscriptions().Post(context.Background(), requestBody, nil)
+subscriptions, err := graphClient.Subscriptions().Post(context.Background(), requestBody, nil)
 
 
 ```

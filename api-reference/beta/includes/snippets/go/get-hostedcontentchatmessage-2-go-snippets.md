@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Chats().ByChatId("chat-id").Messages().ByMessageId("chatMessage-id").HostedContents().ByHostedContentId("chatMessageHostedContent-id").Value().Get(context.Background(), nil)
+graphClient.Chats().ByChatId("chat-id").Messages().ByChatMessageId("chatMessage-id").HostedContents().ByChatMessageHostedContentId("chatMessageHostedContent-id").Value().Get(context.Background(), nil)
 
 
 ```

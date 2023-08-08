@@ -100,7 +100,7 @@ value := []graphmodels.tiIndicatorable {
 }
 requestBody.SetValue(value)
 
-result, err := graphClient.Security().TiIndicators().SubmitTiIndicators().Post(context.Background(), requestBody, nil)
+submitTiIndicators, err := graphClient.Security().TiIndicators().SubmitTiIndicators().Post(context.Background(), requestBody, nil)
 
 
 ```

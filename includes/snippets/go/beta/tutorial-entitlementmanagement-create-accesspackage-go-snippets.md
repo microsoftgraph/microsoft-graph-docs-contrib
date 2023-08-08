@@ -23,7 +23,7 @@ requestBody.SetDisplayName(&displayName)
 description := "Access to resources for the campaign"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(context.Background(), requestBody, nil)
+accessPackages, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(context.Background(), requestBody, nil)
 
 
 ```
