@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Outlook().SupportedTimeZones().Get(context.Background(), nil)
+supportedTimeZones(), err := graphClient.Me().Outlook().SupportedTimeZones().Get(context.Background(), nil)
 
 
 ```

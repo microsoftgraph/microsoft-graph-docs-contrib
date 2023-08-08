@@ -2,13 +2,13 @@
 author: sangle7
 description: "Get the collection of sitePage objects from the site pages [list] in a site. All pages in the site are returned (with pagination)."
 ms.date: 03/15/2018
-title: List the pages in a site
+title: List SitePage
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# List the pages in the site pages library of a site
+# List SitePage
 
 Namespace: microsoft.graph
 
@@ -32,16 +32,37 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-```msgraph-interactive
-GET /sites/{site-id}/pages
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /sites/{site-id}/pages/microsoft.graph.sitePage
 ```
+
+## Optional query parameters
+
+This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. 
+
+## Request headers
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200` and a list of [sitePage](../resources/sitepage.md) object in the response body.
 
 ## Example
 
 ### Request
 
-<!--
-{
+# [HTTP](#tab/http)
+<!--{
 	"blockType": "request",
 	"name": "get-pages",
 	"scopes": "sites.read.all",
@@ -50,8 +71,34 @@ GET /sites/{site-id}/pages
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages
+GET /sites/{site-id}/pages/microsoft.graph.sitePage
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-pages-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-pages-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-pages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-pages-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-pages-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-pages-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

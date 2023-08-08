@@ -24,8 +24,6 @@ attackTechnique := graphmodels.CREDENTIALHARVESTING_SIMULATIONATTACKTECHNIQUE
 requestBody.SetAttackTechnique(&attackTechnique) 
 status := graphmodels.SCHEDULED_SIMULATIONSTATUS 
 requestBody.SetStatus(&status) 
-durationInDays := int32(3)
-requestBody.SetDurationInDays(&durationInDays) 
 includedAccountTarget := graphmodels.NewAddressBookAccountTargetContent()
 type := graphmodels.ADDRESSBOOK_ACCOUNTTARGETCONTENTTYPE 
 includedAccountTarget.SetType(&type) 
@@ -39,7 +37,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Security().AttackSimulation().Simulations().Post(context.Background(), requestBody, nil)
+simulations, err := graphClient.Security().AttackSimulation().Simulations().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -14,7 +14,6 @@ var requestBody = new Simulation
 	DurationInDays = 7,
 	AttackTechnique = SimulationAttackTechnique.CredentialHarvesting,
 	Status = SimulationStatus.Scheduled,
-	DurationInDays = 3,
 	IncludedAccountTarget = new AddressBookAccountTargetContent
 	{
 		OdataType = "#microsoft.graph.addressBookAccountTargetContent",

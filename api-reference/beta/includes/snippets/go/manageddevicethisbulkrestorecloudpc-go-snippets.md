@@ -28,7 +28,7 @@ requestBody.SetRestorePointDateTime(&restorePointDateTime)
 timeRange := graphmodels.BEFORE_RESTORETIMERANGE 
 requestBody.SetTimeRange(&timeRange) 
 
-result, err := graphClient.DeviceManagement().ManagedDevices().BulkRestoreCloudPc().Post(context.Background(), requestBody, nil)
+bulkRestoreCloudPc, err := graphClient.DeviceManagement().ManagedDevices().BulkRestoreCloudPc().Post(context.Background(), requestBody, nil)
 
 
 ```
