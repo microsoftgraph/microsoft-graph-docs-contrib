@@ -69,7 +69,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6
 ```
 
 ### Response
@@ -87,45 +87,43 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.virtualEventRegistration",
-    "id": "127962bb-84e1-7b62-fd98-1c9d39def7b6",
-    "userId": "String",
-    "firstName": "Emilee",
-    "lastName": "Pham",
-    "email": "EmileeMPham@contoso.com",
-    "status": "registered",
-    "registrationDateTime": "2023-03-07T22:04:17",
-    "cancelationDateTime": null,
-    "registrationQuestionAnswers": [
-      {
-        "questionId": "95320781-96b3-4b8f-8cf8-e6561d23447a",
-        "displayName": null,
-        "value": null,
-        "booleanValue": null,
-        "multiChoiceValues": [
-          "Seattle"
-        ]
-      },
-      {
-        "questionId": "4577afdb-8bee-4219-b482-04b52c6b855c",
-        "displayName": null,
-        "value": null,
-        "booleanValue": true,
-        "multiChoiceValues": []
-      },
-      {
-        "questionId": "80fefcf1-caf7-4cd3-b8d7-159e17c47f20",
-        "displayName": null,
-        "value": null,
-        "booleanValue": null,
-        "multiChoiceValues": [
-          "Cancun",
-          "Hoboken",
-          "Beijing"
-        ]
-      }
-    ]
-  }
+  "@odata.type": "#microsoft.graph.virtualEventRegistration",
+  "id": "127962bb-84e1-7b62-fd98-1c9d39def7b6",
+  "userId": "String",
+  "firstName": "Emilee",
+  "lastName": "Pham",
+  "email": "EmileeMPham@contoso.com",
+  "status": "registered",
+  "registrationDateTime": "2023-03-07T22:04:17",
+  "cancelationDateTime": null,
+  "registrationQuestionAnswers": [
+    {
+      "questionId": "95320781-96b3-4b8f-8cf8-e6561d23447a",
+      "displayName": null,
+      "value": null,
+      "booleanValue": null,
+      "multiChoiceValues": [
+        "Seattle"
+      ]
+    },
+    {
+      "questionId": "4577afdb-8bee-4219-b482-04b52c6b855c",
+      "displayName": null,
+      "value": null,
+      "booleanValue": true,
+      "multiChoiceValues": []
+    },
+    {
+      "questionId": "80fefcf1-caf7-4cd3-b8d7-159e17c47f20",
+      "displayName": null,
+      "value": null,
+      "booleanValue": null,
+      "multiChoiceValues": [
+        "Cancun",
+        "Hoboken",
+        "Beijing"
+      ]
+    }
+  ]
 }
 ```

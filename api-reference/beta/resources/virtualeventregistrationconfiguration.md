@@ -27,7 +27,6 @@ Represents the registration configuration of a virtual event.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |questions|[virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md) collection|Registration questions.|
-|registrants|[virtualEventRegistrant](../resources/virtualeventregistrant.md) collection|Information of attendees who have registered for the virtual event.|
 
 ## JSON representation
 

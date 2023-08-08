@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/virtualeventregistrant-get.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Read the properties and relationships of a [virtualEventRegistrant](../resources/virtualeventregistration.md) object.|
+|[Get](../api/virtualeventregistration-get.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Read the properties and relationships of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.|
 
 ## Properties
 
