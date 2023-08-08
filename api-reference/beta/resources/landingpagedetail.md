@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |content|String|Landing page detail content.|
 |id|String|Unique identifier for the **landingPageDetail** object. Inherited from [entity](../resources/entity.md).|
 |isDefaultLangauge|Boolean|Indicates whether this language detail is default for the landing page.|
-|language|String|Content lanuage for the landing page.|
+|language|String|The content language for the landing page.|
 
 ## Relationships
 
@@ -51,9 +51,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.landingPageDetail",
-  "id": "String (identifier)",
   "content": "String",
-  "language": "String",
-  "isDefaultLangauge": "Boolean"
+  "id": "String (identifier)",
+  "isDefaultLangauge": "Boolean",
+  "language": "String"
 }
 ```

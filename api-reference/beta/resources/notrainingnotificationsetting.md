@@ -1,6 +1,6 @@
 ---
 title: "noTrainingNotificationSetting resource type"
-description: "No notification setting for simulation creation. Notification settings when no training is selected."
+description: "Represents a notification setting when no training is selected on a simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No notification setting for simulation creation. Notification settings when no training is selected.
+Represents a notification setting when no training is selected on a simulation creation.
 
 Inherits from [endUserNotificationSetting](../resources/endusernotificationsetting.md).
 
@@ -22,7 +22,7 @@ Inherits from [endUserNotificationSetting](../resources/endusernotificationsetti
 |Property|Type|Description|
 |:---|:---|:---|
 |notificationPreference|endUserNotificationPreference|Notification preference. Possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
-|positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|Notification for users who repored the phish email. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
+|positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|Notification for users who reported the phish email. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
 |settingType|endUserNotificationSettingType|The setting type. Possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
 |simulationNotification|[simulationNotification](../resources/simulationnotification.md)|The notification for the user who is part of the simulation.|
 
@@ -43,12 +43,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.noTrainingNotificationSetting",
   "notificationPreference": "String",
+  "positiveReinforcement": {"@odata.type": "microsoft.graph.positiveReinforcementNotification"},
   "settingType": "String",
-  "positiveReinforcement": {
-    "@odata.type": "microsoft.graph.positiveReinforcementNotification"
-  },
-  "simulationNotification": {
-    "@odata.type": "microsoft.graph.simulationNotification"
-  }
+  "simulationNotification": {"@odata.type": "microsoft.graph.simulationNotification"}
 }
 ```

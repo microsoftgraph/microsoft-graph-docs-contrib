@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List endUserNotifications](../api/attacksimulationroot-list-endusernotifications.md)|[endUserNotification](../resources/endusernotification.md) collection|Get a list of the [endUserNotification](../resources/endusernotification.md) objects and their properties.|
 |[Get endUserNotification](../api/endusernotification-get.md)|[endUserNotification](../resources/endusernotification.md)|Read the properties and relationships of an [endUserNotification](../resources/endusernotification.md) object.|
-|[Get endUserNotificationDetail](../api/endusernotificationdetail-get.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Read the properties and relationships of an [endUserNotificationDetail](../resources/endusernotificationdetail.md) object.|
+|[Get endUserNotificationDetail](../api/endusernotificationdetail-get.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Get details about an [end user notification](../resources/endusernotificationdetail.md).|
 
 ## Properties
 
@@ -34,11 +34,11 @@ Inherits from [entity](../resources/entity.md).
 |description|String|Description of the notification as defined by the user.|
 |displayName|String|Name of the notification as defined by the user.|
 |id|String|Unique identifier for the **endUserNotification** object. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who last modified the campaign.|
+|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who last modified the notification.|
 |lastModifiedDateTime|DateTimeOffset|Date and time when the notification was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |notificationType|endUserNotificationType|Type of notification. Possible values are: `unknown`, `positiveReinforcement`, `noTraining`, `trainingAssignment`, `trainingReminder`, `unknownFutureValue`.|
 |source|simulationContentSource|The source of the content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
-|status|simulationContentStatus|The status of the campaign. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|status|simulationContentStatus|The status of the notification. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
 |supportedLocales|String collection|Supported locales for **endUserNotification** content.|
 
 ## Relationships
@@ -61,22 +61,16 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.endUserNotification",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
+  "createdBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "createdDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "displayName": "String",
   "description": "String",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
+  "displayName": "String",
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "lastModifiedDateTime": "String (timestamp)",
   "notificationType": "String",
   "source": "String",
   "status": "String",
-  "supportedLocales": [
-    "String"
-  ]
+  "supportedLocales": ["String"]
 }
 ```

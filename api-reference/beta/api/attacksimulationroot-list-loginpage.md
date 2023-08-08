@@ -87,24 +87,24 @@ Content-Type: application/json
 {
   "value": [
     {
-        "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
-        "diplayName": "AttackSimTest loginPage",
-        "description": "AttackSim Test loginPage",
-        "status": "draft",
-        "source": "tenant",
-        "language": "en",
-        "createdBy": {
-            "email": "alexwaber@contoso.com",
-            "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
-            "displayName": "Alex Waber"
-        },
-        "createdDateTime": "2022-01-12T03:15:01.5906699Z",
-        "lastModifiedBy": {
-            "email": "alexwaber@contoso.com",
-            "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
-            "displayName": "Alex Waber"
-        },
-        "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z"
+      "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
+      "diplayName": "AttackSimTest loginPage",
+      "description": "AttackSim Test loginPage",
+      "status": "draft",
+      "source": "tenant",
+      "language": "en",
+      "createdBy": {
+        "email": "alexwaber@contoso.com",
+        "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+        "displayName": "Alex Waber"
+      },
+      "createdDateTime": "2022-01-12T03:15:01.5906699Z",
+      "lastModifiedBy": {
+        "email": "alexwaber@contoso.com",
+        "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+        "displayName": "Alex Waber"
+      },
+      "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z"
     }
   ]
 }

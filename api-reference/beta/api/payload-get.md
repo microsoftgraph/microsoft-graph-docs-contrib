@@ -85,37 +85,37 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
-    "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
-    "name": "AttackSimTest Payload",
-    "description": "AttackSim Test Payload",
-    "simulationAttackType": "social",
-    "platform": "email",
-    "isAutomated": null,
-    "status": "draft",
-    "source": "tenant",
-    "language": "en",
-    "predictedCompromiseRate": 20.0,
-    "complexity": "medium",
-    "technique": "credentialHarvesting",
-    "createdBy": {
-        "email": "faiza@contoso.com",
-        "id": "121212",
-        "displayName": "Faiza"
-    },
-    "createdDateTime": "2022-01-12T03:15:01.5906699Z",
-    "lastModifiedBy": {
-        "email": "faiza@contoso.com",
-        "id": "121212",
-        "displayName": "Faiza"
-    },
-    "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
-    "theme": "personalizedOffer",
-    "brand": "microsoft",
-    "industry": "IT",
-    "isCurrentEvent": false,
-    "isControversial": false,
-    "detail" : null,
-    "payloadTags": []
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
+  "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
+  "name": "AttackSimTest Payload",
+  "description": "AttackSim Test Payload",
+  "simulationAttackType": "social",
+  "platform": "email",
+  "isAutomated": null,
+  "status": "draft",
+  "source": "tenant",
+  "language": "en",
+  "predictedCompromiseRate": 20,
+  "complexity": "medium",
+  "technique": "credentialHarvesting",
+  "createdBy": {
+    "email": "faiza@contoso.com",
+    "id": "121212",
+    "displayName": "Faiza"
+  },
+  "createdDateTime": "2022-01-12T03:15:01.5906699Z",
+  "lastModifiedBy": {
+    "email": "faiza@contoso.com",
+    "id": "121212",
+    "displayName": "Faiza"
+  },
+  "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
+  "theme": "personalizedOffer",
+  "brand": "microsoft",
+  "industry": "IT",
+  "isCurrentEvent": false,
+  "isControversial": false,
+  "detail": null,
+  "payloadTags": []
 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: "endUserNotificationSetting resource type"
-description: "End user notification setting provided by admin during a simulation creation."
+description: "Represents an end user notification setting provided by an administrator during a simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-End user notification setting provided by admin during a simulation creation.
+Represents an end user notification setting provided by an administrator during a simulation creation.
 
 ## Properties
 
@@ -39,9 +39,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.endUserNotificationSetting",
   "notificationPreference": "String",
-  "settingType": "String",
-  "positiveReinforcement": {
-    "@odata.type": "microsoft.graph.positiveReinforcementNotification"
-  }
+  "positiveReinforcement": {"@odata.type": "microsoft.graph.positiveReinforcementNotification"},
+  "settingType": "String"
 }
 ```

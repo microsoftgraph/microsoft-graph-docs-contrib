@@ -18,18 +18,22 @@ Training reminder end user notification setting for simulation creation.
 Inherits from [baseEndUserNotification](../resources/baseendusernotification.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultLanguage|String|default language. Inherited from [baseEndUserNotification](../resources/baseendusernotification.md).|
-|deliveryFrequency|notificationDeliveryFrequency|Frequency.The possible values are: `unknown`, `weekly`, `biWeekly`, `unknownFutureValue`.|
+|defaultLanguage|String|Default language. Inherited from [baseEndUserNotification](../resources/baseendusernotification.md).|
+|deliveryFrequency|notificationDeliveryFrequency|Frequency. Possible values are: `unknown`, `weekly`, `biWeekly`, `unknownFutureValue`.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|endUserNotification|[endUserNotification](../resources/endusernotification.md)|End user notification detail. Inherited from [microsoft.graph.baseEndUserNotification](../resources/baseendusernotification.md)|
+|endUserNotification|[endUserNotification](../resources/endusernotification.md)|End user notification detail. Inherited from [baseEndUserNotification](../resources/baseendusernotification.md).|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.trainingReminderNotification"
@@ -42,4 +46,3 @@ The following is a JSON representation of the resource.
   "deliveryFrequency": "String"
 }
 ```
-

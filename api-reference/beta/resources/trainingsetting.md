@@ -1,6 +1,6 @@
 ---
 title: "trainingSetting resource type"
-description: "Training setting for simulation creation."
+description: "An abstract type that represents a training setting for simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,19 +13,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Training setting for simulation creation.
-This is an abstract type.
+An abstract type that represents a training setting for simulation creation.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|settingType|trainingSettingType|Type of setting.The possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`.|
+|settingType|trainingSettingType|Type of setting. Possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.trainingSetting"
@@ -37,4 +40,3 @@ The following is a JSON representation of the resource.
   "settingType": "String"
 }
 ```
-

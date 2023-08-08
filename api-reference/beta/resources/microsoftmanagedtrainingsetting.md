@@ -40,8 +40,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.microsoftManagedTrainingSetting",
+  "completionDateTime": "String (timestamp)",
   "settingType": "String",
-  "trainingCompletionDuration": "String",
-  "completionDateTime": "String (timestamp)"
+  "trainingCompletionDuration": "String"
 }
 ```

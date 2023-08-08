@@ -1,6 +1,6 @@
 ---
 title: "baseEndUserNotification resource type"
-description: "Contains common end user notification details."
+description: "Represents details about an end user notification."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains common end user notification details.
+Represents details about an end user notification.
 
 ## Properties
 

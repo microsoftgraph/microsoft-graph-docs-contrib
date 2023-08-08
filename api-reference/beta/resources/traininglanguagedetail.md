@@ -13,34 +13,39 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an attack simulation training language detail
+Represents an attack simulation training language detail.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get trainingLanguageDetail](../api/traininglanguagedetail-get.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md)|Read the properties and relationships of a [trainingLanguageDetail](../resources/traininglanguagedetail.md) object.|
+|[Get trainingLanguageDetail](../api/traininglanguagedetail-get.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md)|Get the [language details](../resources/traininglanguagedetail.md) about an attack simulation training for a tenant.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|content|String|Training language specific content.|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|Email identity of the user who created details.|
-|createdDateTime|DateTimeOffset|Date and time of the creation of details.|
+|content|String|Language specific content for the training.|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the language details.|
+|createdDateTime|DateTimeOffset|Date and time when the language details were created.|
 |description|String|Description as defined by the user.|
-|displayName|String|Display name.|
-|id|String|Identifier. Inherited from [entity](../resources/entity.md).|
+|displayName|String|Display name as defined by the user.|
+|id|String|Unique identifier of the **trainingLanguageDetail** object. Inherited from [entity](../resources/entity.md).|
 |isDefaultLangauge|Boolean|IDefault language of the details.|
-|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Email identity of the user who last updated the details.|
-|lastModifiedDateTime|DateTimeOffset|Date and time when it was last modified.|
+|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who last modified the details.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the **trainingLanguageDetail** was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |locale|String|Locale|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -52,20 +57,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.trainingLanguageDetail",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
   "content": "String",
-  "locale": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
+  "createdBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "isDefaultLangauge": "Boolean",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "lastModifiedDateTime": "String (timestamp)",
-  "isDefaultLangauge": "Boolean"
+  "locale": "String"
 }
 ```
-
