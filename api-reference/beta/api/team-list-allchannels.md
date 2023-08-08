@@ -37,9 +37,7 @@ GET /teams/{team-id}/allChannels
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, `$skip`, and `$top` OData query parameters to help customize the response. [OData query parameters](/graph/query-parameters) to help customize the response.
-
-The default page size for this API is 100. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ### Use $select for better performance
 Populating the **email** and **moderationSettings** properties for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** and **moderationSettings** properties to improve performance.
