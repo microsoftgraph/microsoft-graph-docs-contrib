@@ -46,7 +46,7 @@ POST /security/runHuntingQuery
 |Content-Type|application/json. Required.|
 
 > [!NOTE]
-> Ensure to use ContentType 'application/json; charset=utf-8' in case your are using non ANSI characters in your query e.g. to query Emails Subjects with malformed or lookalike characters. 
+> If you're using non-ANSI characters in your query, for example to query email subjects with malformed or lookalike characters, use `application/json; charset=utf-8` for the Content-Type header. 
 
 ## Request body
 
