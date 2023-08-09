@@ -68,7 +68,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/auditLogs/customSecurityAttributeAudits/{customSecurityAttributeAuditId}
+GET https://graph.microsoft.com/beta/auditLogs/customSecurityAttributeAudits/Directory_46ef8262-896f-4a39-9666-db82e22e778b_GXP3K_386490241
 ```
 
 
@@ -87,32 +87,56 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.customSecurityAttributeAudit",
-    "id": "e0e78bac-1bbc-257e-d6f1-2e493d362616",
-    "category": "String",
-    "correlationId": "String",
-    "result": "String",
-    "resultReason": "String",
-    "activityDisplayName": "String",
-    "activityDateTime": "String (timestamp)",
-    "loggedByService": "String",
-    "operationType": "String",
-    "initiatedBy": {
-      "@odata.type": "microsoft.graph.auditActivityInitiator"
-    },
-    "targetResources": [
-      {
-        "@odata.type": "microsoft.graph.targetResource"
-      }
-    ],
-    "userAgent": "String",
-    "additionalDetails": [
-      {
-        "@odata.type": "microsoft.graph.keyValue"
-      }
-    ]
-  }
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/customSecurityAttributeAudits/$entity",
+   "id": "Directory_46ef8262-896f-4a39-9666-db82e22e778b_GXP3K_386490241",
+   "category": "AttributeManagement",
+   "correlationId": "f3b07799-da67-4a79-bb56-eed7ba2ca404",
+   "result": "success",
+   "resultReason": "",
+   "activityDisplayName": "Update an attribute set",
+   "activityDateTime": "2023-07-27T00:36:52.014638Z",
+   "loggedByService": "Core Directory",
+   "operationType": "Update",
+   "userAgent": null,
+   "initiatedBy": {
+       "app": null,
+       "user": {
+           "id": "573bfb22-436c-40c7-82c2-d1b67677c33c",
+           "displayName": null,
+           "userPrincipalName": "admin1@contoso.com",
+           "ipAddress": "{ipAddress}",
+           "userType": null,
+           "homeTenantId": null,
+           "homeTenantName": null
+       }
+   },
+   "targetResources": [
+       {
+           "id": "dd707ff2-fd98-4ce5-9733-eafa781d3b12",
+           "displayName": "DesignTest",
+           "type": "Other",
+           "userPrincipalName": null,
+           "groupType": null,
+           "modifiedProperties": [
+               {
+                   "displayName": "MaxAttributesPerSet",
+                   "oldValue": "[25]",
+                   "newValue": "[20]"
+               },
+               {
+                   "displayName": "Included Updated Properties",
+                   "oldValue": null,
+                   "newValue": "\"MaxAttributesPerSet\""
+               }
+           ]
+       }
+   ],
+   "additionalDetails": [
+       {
+           "key": "User-Agent",
+           "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0"
+       }
+   ]
 }
 ```
 
