@@ -25,7 +25,7 @@ configuration := &graphidentitygovernance.IdentityGovernanceEntitlementManagemen
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceEnvironments().Get(context.Background(), configuration)
+accessPackageResourceEnvironments, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceEnvironments().Get(context.Background(), configuration)
 
 
 ```

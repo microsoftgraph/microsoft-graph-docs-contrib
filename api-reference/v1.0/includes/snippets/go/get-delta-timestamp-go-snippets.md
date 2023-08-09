@@ -25,7 +25,7 @@ configuration := &graphdrives.DriveItemItemItemDelta()RequestBuilderGetRequestCo
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Delta().Get(context.Background(), configuration)
+delta(), err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Delta().Get(context.Background(), configuration)
 
 
 ```

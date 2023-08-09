@@ -33,7 +33,7 @@ configuration := &graphgroups.GroupItemTransitiveMembersGraph.userRequestBuilder
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Groups().ByGroupId("group-id").TransitiveMembers().GraphUser().Get(context.Background(), configuration)
+graph.user, err := graphClient.Groups().ByGroupId("group-id").TransitiveMembers().GraphUser().Get(context.Background(), configuration)
 
 
 ```

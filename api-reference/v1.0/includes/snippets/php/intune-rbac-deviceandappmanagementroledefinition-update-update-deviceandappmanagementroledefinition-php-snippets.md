@@ -7,24 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeviceAndAppManagementRoleDefinition();
-$requestBody->set@odatatype('#microsoft.graph.deviceAndAppManagementRoleDefinition');
+$requestBody->setOdataType('#microsoft.graph.deviceAndAppManagementRoleDefinition');
 
 $requestBody->setDisplayName('Display Name value');
 
 $requestBody->setDescription('Description value');
 
 $rolePermissionsRolePermission1 = new RolePermission();
-$rolePermissionsRolePermission1->set@odatatype('microsoft.graph.rolePermission');
+$rolePermissionsRolePermission1->setOdataType('microsoft.graph.rolePermission');
 
 $resourceActionsResourceAction1 = new ResourceAction();
-$resourceActionsResourceAction1->set@odatatype('microsoft.graph.resourceAction');
+$resourceActionsResourceAction1->setOdataType('microsoft.graph.resourceAction');
 
-$resourceActionsResourceAction1->setAllowedResourceActions(['Allowed Resource Actions value', ]);
+$resourceActionsResourceAction1->setAllowedResourceActions(['Allowed Resource Actions value', 	]);
 
-$resourceActionsResourceAction1->setNotAllowedResourceActions(['Not Allowed Resource Actions value', ]);
+$resourceActionsResourceAction1->setNotAllowedResourceActions(['Not Allowed Resource Actions value', 	]);
 
 
 $resourceActionsArray []= $resourceActionsResourceAction1;

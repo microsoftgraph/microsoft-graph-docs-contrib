@@ -50,7 +50,7 @@ stopTones := []string {
 }
 requestBody.SetStopTones(stopTones)
 
-result, err := graphClient.Communications().Calls().ByCallId("call-id").RecordResponse().Post(context.Background(), requestBody, nil)
+recordResponse, err := graphClient.Communications().Calls().ByCallId("call-id").RecordResponse().Post(context.Background(), requestBody, nil)
 
 
 ```

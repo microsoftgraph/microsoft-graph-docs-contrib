@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDetectedApp()
@@ -29,7 +29,7 @@ requestBody.SetPublisher(&publisher)
 platform := graphmodels.WINDOWS_DETECTEDAPPPLATFORMTYPE 
 requestBody.SetPlatform(&platform) 
 
-result, err := graphClient.DeviceManagement().DetectedApps().Post(context.Background(), requestBody, nil)
+detectedApps, err := graphClient.DeviceManagement().DetectedApps().Post(context.Background(), requestBody, nil)
 
 
 ```

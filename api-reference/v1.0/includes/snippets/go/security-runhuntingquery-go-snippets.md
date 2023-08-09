@@ -19,7 +19,7 @@ requestBody := graphsecurity.NewRunHuntingQueryPostRequestBody()
 query := "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
 requestBody.SetQuery(&query) 
 
-result, err := graphClient.Security().MicrosoftGraphSecurityRunHuntingQuery().Post(context.Background(), requestBody, nil)
+microsoft.graph.security.runHuntingQuery, err := graphClient.Security().MicrosoftGraphSecurityRunHuntingQuery().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -228,16 +228,18 @@ items:
                   - name: Notification types and payloads
                     href: teams-change-notification-in-microsoft-teams-overview.md
                     displayName: change notifications, Teams, Microsoft Teams
-                  - name: Teams and channels
-                    href: teams-changenotifications-team-and-channel.md
-                  - name: Team and channel membership
-                    href: teams-changenotifications-teammembership.md
-                  - name: Chat and channel messages
-                    href: teams-changenotifications-chatmessage.md
+                  - name: Call transcripts
+                    href: teams-changenotifications-callrecording-and-calltranscript.md
                   - name: Chat
                     href: teams-changenotifications-chat.md
+                  - name: Chat and channel messages
+                    href: teams-changenotifications-chatmessage.md
                   - name: Chat membership
                     href: teams-changenotifications-chatmembership.md
+                  - name: Team and channel membership
+                    href: teams-changenotifications-teammembership.md
+                  - name: Teams and channels
+                    href: teams-changenotifications-team-and-channel.md
               - name: Notifications for Outlook resources
                 href: outlook-change-notifications-overview.md
       - name: Change tracking
@@ -260,6 +262,9 @@ items:
           - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
             displayName: Microsoft Graph connectors, connect external content
+          - name: Connectors experiences
+            href: connecting-external-content-experiences.md
+            displayName: Microsoft Graph connectors, connect external content with Microsoft 365 experiences
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
             displayName: Microsoft Graph connectors
@@ -283,6 +288,8 @@ items:
                 href: custom-connector-sdk-sample-publish.md
               - name: Surface the data in search
                 href: custom-connector-sdk-sample-search.md
+          - name: Simplify connector deployment
+            href: connecting-external-content-deploy-teams.md
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema

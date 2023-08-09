@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewManagedAppPolicyDeploymentSummary()
@@ -40,7 +40,7 @@ requestBody.SetConfigurationDeploymentSummaryPerApp(configurationDeploymentSumma
 version := "Version value"
 requestBody.SetVersion(&version) 
 
-result, err := graphClient.DeviceAppManagement().IosManagedAppProtections().ByIosManagedAppProtectionId("iosManagedAppProtection-id").DeploymentSummary().Patch(context.Background(), requestBody, nil)
+deploymentSummary, err := graphClient.DeviceAppManagement().IosManagedAppProtections().ByIosManagedAppProtectionId("iosManagedAppProtection-id").DeploymentSummary().Patch(context.Background(), requestBody, nil)
 
 
 ```

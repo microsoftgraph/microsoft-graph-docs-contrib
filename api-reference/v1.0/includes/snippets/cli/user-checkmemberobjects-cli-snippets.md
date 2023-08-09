@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc users check-member-objects post --user-id {user-id} --body '{\
   "ids": [\
     "80a963dd-84af-4eb8-b2a6-781e444d4fb0",\

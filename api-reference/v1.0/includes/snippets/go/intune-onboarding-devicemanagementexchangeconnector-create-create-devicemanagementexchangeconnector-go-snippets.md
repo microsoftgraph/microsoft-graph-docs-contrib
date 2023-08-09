@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceManagementExchangeConnector()
@@ -36,7 +36,7 @@ requestBody.SetExchangeAlias(&exchangeAlias)
 exchangeOrganization := "Exchange Organization value"
 requestBody.SetExchangeOrganization(&exchangeOrganization) 
 
-result, err := graphClient.DeviceManagement().ExchangeConnectors().Post(context.Background(), requestBody, nil)
+exchangeConnectors, err := graphClient.DeviceManagement().ExchangeConnectors().Post(context.Background(), requestBody, nil)
 
 
 ```

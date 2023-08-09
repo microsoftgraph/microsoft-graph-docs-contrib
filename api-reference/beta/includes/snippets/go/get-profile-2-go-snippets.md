@@ -22,7 +22,7 @@ configuration := &graphusers.ItemProfileRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Profile().Get(context.Background(), configuration)
+profile, err := graphClient.Me().Profile().Get(context.Background(), configuration)
 
 
 ```

@@ -51,7 +51,7 @@ requestBody.SetExternalAppointmentUrl(&externalAppointmentUrl)
 appointmentClientJoinWebUrl := "https://visit.teams.microsoft.com/webrtc-svc/api/route?tid=a796be92-&convId=19:meeting_=True"
 requestBody.SetAppointmentClientJoinWebUrl(&appointmentClientJoinWebUrl) 
 
-result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").VirtualAppointment().Patch(context.Background(), requestBody, configuration)
+virtualAppointment, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").VirtualAppointment().Patch(context.Background(), requestBody, configuration)
 
 
 ```
