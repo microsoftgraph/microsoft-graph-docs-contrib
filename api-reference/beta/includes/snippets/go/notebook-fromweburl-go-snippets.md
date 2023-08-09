@@ -19,7 +19,7 @@ requestBody := graphusers.NewItemGetNotebookFromWebUrlPostRequestBody()
 webUrl := "webUrl value"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Onenote().Notebooks().GetNotebookFromWebUrl().Post(context.Background(), requestBody, nil)
+getNotebookFromWebUrl, err := graphClient.Me().Onenote().Notebooks().GetNotebookFromWebUrl().Post(context.Background(), requestBody, nil)
 
 
 ```

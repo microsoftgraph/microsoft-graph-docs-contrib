@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DirectoryRoles().ByDirectoryRoleId("directoryRole-id").Members().ByMemberId("directoryObject-id").Ref().Delete(context.Background(), nil)
+graphClient.DirectoryRoles().ByDirectoryRoleId("directoryRole-id").Members().ByDirectoryObjectId("directoryObject-id").Ref().Delete(context.Background(), nil)
 
 
 ```

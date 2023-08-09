@@ -2,7 +2,7 @@
 title: "Create customAppScope"
 description: "Create a new customAppScope object for an RBAC provider."
 ms.localizationpriority: medium
-author: "bili1"
+author: "cubika"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---

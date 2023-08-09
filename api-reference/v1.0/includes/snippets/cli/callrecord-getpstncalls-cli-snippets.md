@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc communications call-records microsoft-graph-call-records-get-pstn-calls(from-date-time={from-date-time},to-date-time={to-date-time}) get
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc communications call-records microsoft-graph-call-records-get-pstn-calls-with-from-date-time-with-to-date-time get --from-date-time {from-date-time-id} --to-date-time {to-date-time-id} 
 
 ```

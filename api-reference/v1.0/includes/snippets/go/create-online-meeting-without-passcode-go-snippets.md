@@ -28,7 +28,7 @@ isPasscodeRequired := false
 joinMeetingIdSettings.SetIsPasscodeRequired(&isPasscodeRequired) 
 requestBody.SetJoinMeetingIdSettings(joinMeetingIdSettings)
 
-result, err := graphClient.Me().OnlineMeetings().Post(context.Background(), requestBody, nil)
+onlineMeetings, err := graphClient.Me().OnlineMeetings().Post(context.Background(), requestBody, nil)
 
 
 ```

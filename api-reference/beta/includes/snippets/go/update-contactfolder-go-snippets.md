@@ -21,7 +21,7 @@ requestBody.SetParentFolderId(&parentFolderId)
 displayName := "displayName-value"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").Patch(context.Background(), requestBody, nil)
+contactFolders, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

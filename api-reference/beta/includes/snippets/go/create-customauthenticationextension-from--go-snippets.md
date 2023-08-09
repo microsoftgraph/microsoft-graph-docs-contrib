@@ -31,10 +31,8 @@ requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 clientConfiguration := graphmodels.NewCustomExtensionClientConfiguration()
 timeoutInMilliseconds := int32(2000)
 clientConfiguration.SetTimeoutInMilliseconds(&timeoutInMilliseconds) 
-additionalData := map[string]interface{}{
-	"maximumRetries" : int32(1) , 
-}
-clientConfiguration.SetAdditionalData(additionalData)
+maximumRetries := int32(1)
+clientConfiguration.SetMaximumRetries(&maximumRetries) 
 requestBody.SetClientConfiguration(clientConfiguration)
 
 
@@ -51,7 +49,7 @@ claimsForTokenConfiguration := []graphmodels.OnTokenIssuanceStartReturnClaimable
 }
 requestBody.SetClaimsForTokenConfiguration(claimsForTokenConfiguration)
 
-result, err := graphClient.Identity().CustomAuthenticationExtensions().Post(context.Background(), requestBody, nil)
+customAuthenticationExtensions, err := graphClient.Identity().CustomAuthenticationExtensions().Post(context.Background(), requestBody, nil)
 
 
 ```
