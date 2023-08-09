@@ -2641,9 +2641,9 @@
         {
           "Id": "8f1f41d8-67e6-4a33-894c-2071e68e72f0",
           "ApiChange": "Member",
-          "ChangedApiName": "accountTransfer",
+          "ChangedApiName": "authenticationTransfer",
           "ChangeType": "Addition",
-          "Description": "Added the `accountTransfer` member to the **conditionalAccessRule** enumeration.",
+          "Description": "Added the `authenticationTransfer` member to the **conditionalAccessRule** enumeration.",
           "Target": "conditionalAccessRule"
         },
         {
