@@ -48,12 +48,6 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "azure_docs",
-      "url": "https://github.com/MicrosoftDocs/azure-docs/",
-      "branch": "main",
-      "branch_mapping": {}
-    },
-    {
       "path_to_root": "concepts/sdks/snippets/dotnet",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-dotnet",
       "branch": "main",

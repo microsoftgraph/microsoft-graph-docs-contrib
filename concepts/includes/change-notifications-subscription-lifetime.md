@@ -21,7 +21,7 @@ ms.localizationpriority: high
 | Teams [chatMessage][]                          | 60 minutes (1 hour)           |
 | Teams [conversationMember][]                   | 60 minutes (1 hour)           |
 | Teams [onlineMeeting][]                        | 4,320 minutes (3 days)        |
-| Teams [team][]                                 | 60 minutes (1 hour)           |
+| Teams [team][]                                 | 4,320 minutes (3 days)        |
 | Group [conversation][]                         | 4,230 minutes (under 3 days)  |
 | OneDrive [driveItem][]                         | 42,300 minutes (under 30 days)|
 | SharePoint [list][]                            | 42,300 minutes (under 30 days)|
