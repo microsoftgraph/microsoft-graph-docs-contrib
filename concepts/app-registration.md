@@ -1,14 +1,14 @@
 ---
-title: "The registration process for Microsoft Graph Data Connect apps"
-description: "Description of the steps in the registration process for Microsoft Graph Data Connect apps"
+title: "Microsoft Graph Data Connect app registration"
+description: "Learn how to register your Microsoft Graph Data Connect app"
 author: "michaelvenables"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ---
 
-# Microsoft Graph app registration
+# Microsoft Graph Data Connect app registration
 
-This is best practices guidance for developers who are using the updated Azure portal experience to register an Azure Active Directory (Azure AD) app with Microsoft Graph Data Connect.
+This article provides best practice guidance for using the Azure portal experience to register an Azure Active Directory (Azure AD) app with Microsoft Graph Data Connect.
 
 ## Azure portal experience
 
