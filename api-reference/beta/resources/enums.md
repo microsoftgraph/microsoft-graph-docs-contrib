@@ -2707,7 +2707,7 @@ Possible values for user account types (group membership), per Windows definitio
 | serviceProvider                   |
 | microsoftAdminPortals             |
 | deviceCodeFlow                    |
-| accountTransfer                   |
+| authenticationTransfer            |
 | insiderRisk                       |
 
 ### signInAccessType values 
