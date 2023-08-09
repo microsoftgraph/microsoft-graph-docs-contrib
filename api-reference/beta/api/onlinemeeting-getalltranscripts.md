@@ -32,7 +32,7 @@ The following permissions are required to call this API. To learn more, includin
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/online/getAllTranscripts?$filter=MeetingOrganizerId%20eq%20'{id}'
+GET /users/{id}/onlineMeetings/getAllTranscripts?$filter=MeetingOrganizerId%20eq%20'{id}'
 ```
 
 >**Note:** If you don't specify a **MeetingOrganizerId** the request will fail.
