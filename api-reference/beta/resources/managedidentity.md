@@ -1,9 +1,9 @@
 ---
 title: "managedIdentity resource type"
-description: "Represents details of the managed identity that was used to sign into the target resource."
-author: "phoebeweiser"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details of the managed identity that was used to sign into the target resource.
+**TODO: Add Description**
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|associatedResourceId|String|The ARM resource ID of the Azure resource associated with the managed identity used for sign in.|
-|msiType|msiType|The possible values are: `none`, `userAssigned`, `systemAssigned`, `unknownFutureValue`.|
+|associatedResourceId|String|**TODO: Add Description**|
+|federatedTokenId|String|**TODO: Add Description**|
+|federatedTokenIssuer|String|**TODO: Add Description**|
+|msiType|msiType|**TODO: Add Description**.The possible values are: `none`, `userAssigned`, `systemAssigned`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -35,6 +37,9 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedIdentity",
   "msiType": "String",
-  "associatedResourceId": "String"
+  "associatedResourceId": "String",
+  "federatedTokenId": "String",
+  "federatedTokenIssuer": "String"
 }
 ```
+
