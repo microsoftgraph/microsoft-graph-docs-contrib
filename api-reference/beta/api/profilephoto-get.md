@@ -70,7 +70,7 @@ The following tables show the least privileged permission or permissions require
 > [!NOTE]
 > 
 > - Metadata operation is not supported for personal Microsoft accounts.
-> - There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> - An app with only application permissions cannot access a group's photo.
 > - Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 > - Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 > - Retrieving a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.

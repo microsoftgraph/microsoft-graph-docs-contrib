@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewNotificationMessageTemplate()
@@ -27,7 +27,7 @@ roleScopeTagIds := []string {
 }
 requestBody.SetRoleScopeTagIds(roleScopeTagIds)
 
-result, err := graphClient.DeviceManagement().NotificationMessageTemplates().Post(context.Background(), requestBody, nil)
+notificationMessageTemplates, err := graphClient.DeviceManagement().NotificationMessageTemplates().Post(context.Background(), requestBody, nil)
 
 
 ```

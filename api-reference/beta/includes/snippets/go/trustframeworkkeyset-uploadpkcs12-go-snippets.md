@@ -21,7 +21,7 @@ requestBody.SetKey(&key)
 password := "password-value"
 requestBody.SetPassword(&password) 
 
-result, err := graphClient.TrustFramework().KeySets().ByKeySetId("trustFrameworkKeySet-id").UploadPkcs12().Post(context.Background(), requestBody, nil)
+uploadPkcs12, err := graphClient.TrustFramework().KeySets().ByTrustFrameworkKeySetId("trustFrameworkKeySet-id").UploadPkcs12().Post(context.Background(), requestBody, nil)
 
 
 ```

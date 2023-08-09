@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewManagedMobileApp()
@@ -23,7 +23,7 @@ requestBody.SetMobileAppIdentifier(mobileAppIdentifier)
 version := "Version value"
 requestBody.SetVersion(&version) 
 
-result, err := graphClient.DeviceAppManagement().IosManagedAppProtections().ByIosManagedAppProtectionId("iosManagedAppProtection-id").Apps().Post(context.Background(), requestBody, nil)
+apps, err := graphClient.DeviceAppManagement().IosManagedAppProtections().ByIosManagedAppProtectionId("iosManagedAppProtection-id").Apps().Post(context.Background(), requestBody, nil)
 
 
 ```

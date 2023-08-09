@@ -26,7 +26,7 @@ engineering.SetProjectDate(&projectDate)
 customSecurityAttributes.SetAdditionalData(additionalData)
 requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
 
-result, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
+users, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

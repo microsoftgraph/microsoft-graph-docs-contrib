@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().TermsAndConditions().ByTermsAndConditionId("termsAndConditions-id").AcceptanceStatuses().ByAcceptanceStatuseId("termsAndConditionsAcceptanceStatus-id").Get(context.Background(), nil)
+acceptanceStatuses, err := graphClient.DeviceManagement().TermsAndConditions().ByTermsAndConditionsId("termsAndConditions-id").AcceptanceStatuses().ByTermsAndConditionsAcceptanceStatusId("termsAndConditionsAcceptanceStatus-id").Get(context.Background(), nil)
 
 
 ```

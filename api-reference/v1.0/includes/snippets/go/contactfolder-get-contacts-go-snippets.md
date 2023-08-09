@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").Contacts().Get(context.Background(), nil)
+contacts, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").Contacts().Get(context.Background(), nil)
 
 
 ```

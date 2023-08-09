@@ -85,10 +85,6 @@ GET https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b24
 [!INCLUDE [sample-code](../includes/snippets/php/get-addlargegalleryviewoperation-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-addlargegalleryviewoperation-1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-addlargegalleryviewoperation-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

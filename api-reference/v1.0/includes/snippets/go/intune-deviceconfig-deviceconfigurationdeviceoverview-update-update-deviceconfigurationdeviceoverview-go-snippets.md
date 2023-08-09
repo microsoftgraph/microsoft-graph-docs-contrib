@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceConfigurationDeviceOverview()
@@ -32,7 +32,7 @@ requestBody.SetLastUpdateDateTime(&lastUpdateDateTime)
 configurationVersion := int32(4)
 requestBody.SetConfigurationVersion(&configurationVersion) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").DeviceStatusOverview().Patch(context.Background(), requestBody, nil)
+deviceStatusOverview, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").DeviceStatusOverview().Patch(context.Background(), requestBody, nil)
 
 
 ```

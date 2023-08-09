@@ -100,7 +100,7 @@ The response to this request will provide the details of the newly created [uplo
 
 >**Note:** The {item-path} must contain the name of the item that's specified in the request body.
 
-<!-- { "blockType": "request", "name": "upload-fragment-create-session" } -->
+<!-- { "blockType": "ignored", "name": "upload-fragment-create-session" } -->
 
 ```http
 POST /me/drive/items/{itemID}:/{item-path}:/createUploadSession

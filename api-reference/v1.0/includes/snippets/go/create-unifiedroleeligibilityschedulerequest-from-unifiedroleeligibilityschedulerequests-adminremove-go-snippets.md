@@ -25,7 +25,7 @@ requestBody.SetDirectoryScopeId(&directoryScopeId)
 principalId := "071cc716-8147-4397-a5ba-b2105951cc0b"
 requestBody.SetPrincipalId(&principalId) 
 
-result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(context.Background(), requestBody, nil)
+roleEligibilityScheduleRequests, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeviceManagement();
-$requestBody->set@odatatype('#microsoft.graph.deviceManagement');
+$requestBody->setOdataType('#microsoft.graph.deviceManagement');
 
 $intuneBrand = new IntuneBrand();
-$intuneBrand->set@odatatype('microsoft.graph.intuneBrand');
+$intuneBrand->setOdataType('microsoft.graph.intuneBrand');
 
 $intuneBrand->setDisplayName('Display Name value');
 
 $intuneBrandThemeColor = new RgbColor();
-$intuneBrandThemeColor->set@odatatype('microsoft.graph.rgbColor');
+$intuneBrandThemeColor->setOdataType('microsoft.graph.rgbColor');
 
 $intuneBrandThemeColor->setR(1);
 
@@ -31,7 +31,7 @@ $intuneBrand->setThemeColor($intuneBrandThemeColor);
 $intuneBrand->setShowLogo(true);
 
 $intuneBrandLightBackgroundLogo = new MimeContent();
-$intuneBrandLightBackgroundLogo->set@odatatype('microsoft.graph.mimeContent');
+$intuneBrandLightBackgroundLogo->setOdataType('microsoft.graph.mimeContent');
 
 $intuneBrandLightBackgroundLogo->setType('Type value');
 
@@ -40,7 +40,7 @@ $IntuneBrandLightBackgroundLogo->setValue(base64_decode('dmFsdWU='));
 
 $intuneBrand->setLightBackgroundLogo($intuneBrandLightBackgroundLogo);
 $intuneBrandDarkBackgroundLogo = new MimeContent();
-$intuneBrandDarkBackgroundLogo->set@odatatype('microsoft.graph.mimeContent');
+$intuneBrandDarkBackgroundLogo->setOdataType('microsoft.graph.mimeContent');
 
 $intuneBrandDarkBackgroundLogo->setType('Type value');
 
