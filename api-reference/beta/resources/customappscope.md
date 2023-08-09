@@ -2,7 +2,7 @@
 title: "customAppScope resource type"
 description: "Represents a customized RBAC scope object from each provider."
 ms.localizationpriority: medium
-author: "bili1"
+author: "cubika"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---

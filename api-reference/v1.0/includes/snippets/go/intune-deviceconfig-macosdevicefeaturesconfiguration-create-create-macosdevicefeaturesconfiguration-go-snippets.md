@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceConfiguration()
@@ -23,7 +23,7 @@ requestBody.SetDisplayName(&displayName)
 version := int32(7)
 requestBody.SetVersion(&version) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

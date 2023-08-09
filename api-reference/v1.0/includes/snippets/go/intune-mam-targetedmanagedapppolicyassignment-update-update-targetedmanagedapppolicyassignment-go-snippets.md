@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTargetedManagedAppPolicyAssignment()
@@ -21,7 +21,7 @@ collectionId := "Collection Id value"
 target.SetCollectionId(&collectionId) 
 requestBody.SetTarget(target)
 
-result, err := graphClient.DeviceAppManagement().IosManagedAppProtections().ByIosManagedAppProtectionId("iosManagedAppProtection-id").Assignments().ByAssignmentId("targetedManagedAppPolicyAssignment-id").Patch(context.Background(), requestBody, nil)
+assignments, err := graphClient.DeviceAppManagement().IosManagedAppProtections().ByIosManagedAppProtectionId("iosManagedAppProtection-id").Assignments().ByTargetedManagedAppPolicyAssignmentId("targetedManagedAppPolicyAssignment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

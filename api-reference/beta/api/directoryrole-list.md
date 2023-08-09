@@ -36,7 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /directoryRoles
 ```
 ## Optional query parameters
-This method supports the `$count`, `$select`, `$search`, `$filter` (`eq`), and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select`, `$filter` (`eq` only), and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Description|
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/beta/directoryRoles
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-directoryroles-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryroles-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

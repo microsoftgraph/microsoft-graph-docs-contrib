@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceManagementExportJob()
@@ -40,7 +40,7 @@ requestBody.SetRequestDateTime(&requestDateTime)
 expirationDateTime , err := time.Parse(time.RFC3339, "2016-12-31T23:57:57.2481234-08:00")
 requestBody.SetExpirationDateTime(&expirationDateTime) 
 
-result, err := graphClient.DeviceManagement().Reports().ExportJobs().ByExportJobId("deviceManagementExportJob-id").Patch(context.Background(), requestBody, nil)
+exportJobs, err := graphClient.DeviceManagement().Reports().ExportJobs().ByDeviceManagementExportJobId("deviceManagementExportJob-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

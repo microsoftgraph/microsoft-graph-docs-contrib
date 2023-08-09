@@ -551,6 +551,64 @@
 		"CreatedDateTime": "2023-03-16T05:00:32.6189763Z",
 		"WorkloadArea": "Security",
 		"SubArea": "eDiscovery"
+	  },
+	  {
+			"ChangeList": [
+			  {
+				"Id": "b4937176-8221-4bc7-83a4-6e84c4ee02d1",
+				"ApiChange": "Enumeration",
+				"ChangedApiName": "exportFileStructure",
+				"ChangeType": "Addition",
+				"Description": "Added the **exportFileStructure** enumeration type.",
+				"Target": "exportFileStructure"
+			  },
+			  {
+				"Id": "b4937176-8221-4bc7-83a4-6e84c4ee02d1",
+				"ApiChange": "Enumeration",
+				"ChangedApiName": "exportOptions",
+				"ChangeType": "Addition",
+				"Description": "Added the **exportOptions** enumeration type.",
+				"Target": "exportOptions"
+			  },
+			  {
+				"Id": "b4937176-8221-4bc7-83a4-6e84c4ee02d1",
+				"ApiChange": "Resource",
+				"ChangedApiName": "ediscoveryExportFileMetadata",
+				"ChangeType": "Addition",
+				"Description": "Added the [ediscoveryExportFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryExportFileMetadata?view=graph-rest-1.0) resource type.",
+				"Target": "ediscoveryExportFileMetadata"
+			  },
+			  {
+				"Id": "b4937176-8221-4bc7-83a4-6e84c4ee02d1",
+				"ApiChange": "Resource",
+				"ChangedApiName": "ediscoveryExportOperation",
+				"ChangeType": "Addition",
+				"Description": "Added the [ediscoveryExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryExportOperation?view=graph-rest-1.0) resource",
+				"Target": "ediscoveryExportOperation"
+			  },
+			  {
+				"Id": "b4937176-8221-4bc7-83a4-6e84c4ee02d1",
+				"ApiChange": "Method",
+				"ChangedApiName": "export",
+				"ChangeType": "Addition",
+				"Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryreviewset-export?view=graph-rest-1.0) method to the [ediscoveryReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-1.0) resource.",
+				"Target": "ediscoveryReviewSet"
+			  },
+			  {
+				"Id": "b4937176-8221-4bc7-83a4-6e84c4ee02d1",
+				"ApiChange": "Method",
+				"ChangedApiName": "export",
+				"ChangeType": "Addition",
+				"Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryreviewsetquery-export?view=graph-rest-1.0) method to the [ediscoveryReviewSetQuery](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewsetquery?view=graph-rest-1.0) resource.",
+				"Target": "ediscoveryReviewSetQuery"
+			  }
+			],
+			"Id": "b4937176-8221-4bc7-83a4-6e84c4ee02d1",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2023-06-28T15:48:54.3649155Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Compliance"
 	  }
 	]
   }

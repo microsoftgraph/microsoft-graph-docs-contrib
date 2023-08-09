@@ -82,24 +82,28 @@ Content-length: 266
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-remoteassistance-remoteassistancepartner-create-create-remoteassistancepartner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-remoteassistance-remoteassistancepartner-create-create-remoteassistancepartner-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-remoteassistance-remoteassistancepartner-create-create-remoteassistancepartner-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-remoteassistance-remoteassistancepartner-create-create-remoteassistancepartner-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-remoteassistance-remoteassistancepartner-create-create-remoteassistancepartner-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-remoteassistance-remoteassistancepartner-create-create-remoteassistancepartner-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-remoteassistance-remoteassistancepartner-create-create-remoteassistancepartner-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-remoteassistance-remoteassistancepartner-create-create-remoteassistancepartner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-remoteassistance-remoteassistancepartner-create-create-remoteassistancepartner-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-remoteassistance-remoteassistancepartner-create-create-remoteassistancepartner-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -111,7 +115,7 @@ Content-length: 266
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.remoteAssistancePartner" }-->
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph." }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -126,3 +130,6 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
+

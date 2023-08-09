@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceManagement().WindowsInformationProtectionAppLearningSummaries().ByWindowsInformationProtectionAppLearningSummarieId("windowsInformationProtectionAppLearningSummary-id").Delete(context.Background(), nil)
+graphClient.DeviceManagement().WindowsInformationProtectionAppLearningSummaries().ByWindowsInformationProtectionAppLearningSummaryId("windowsInformationProtectionAppLearningSummary-id").Delete(context.Background(), nil)
 
 
 ```

@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PersonInterest();
-$requestBody->setCategories(['Sports', ]);
+$requestBody->setCategories(['Sports', 	]);
 
 
 
-$result = $graphServiceClient->me()->profile()->interests()->byInterestId('personInterest-id')->patch($requestBody);
+$result = $graphServiceClient->me()->profile()->interests()->byPersonInterestId('personInterest-id')->patch($requestBody);
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceEnrollmentConfiguration()
@@ -27,7 +27,7 @@ requestBody.SetVersion(&version)
 limit := int32(5)
 requestBody.SetLimit(&limit) 
 
-result, err := graphClient.DeviceManagement().DeviceEnrollmentConfigurations().Post(context.Background(), requestBody, nil)
+deviceEnrollmentConfigurations, err := graphClient.DeviceManagement().DeviceEnrollmentConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

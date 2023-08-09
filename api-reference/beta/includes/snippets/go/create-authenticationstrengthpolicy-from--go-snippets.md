@@ -28,7 +28,7 @@ allowedCombinations := []graphmodels.AuthenticationMethodModesable {
 }
 requestBody.SetAllowedCombinations(allowedCombinations)
 
-result, err := graphClient.Policies().AuthenticationStrengthPolicies().Post(context.Background(), requestBody, nil)
+authenticationStrengthPolicies, err := graphClient.Policies().AuthenticationStrengthPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

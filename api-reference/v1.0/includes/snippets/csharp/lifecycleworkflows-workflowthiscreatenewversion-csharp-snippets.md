@@ -32,7 +32,7 @@ var requestBody = new Microsoft.Graph.IdentityGovernance.LifecycleWorkflows.Work
 				OffsetInDays = 1,
 			},
 		},
-		Tasks = new List<Microsoft.Graph.Models.IdentityGovernance.Task>
+		Tasks = new List<Microsoft.Graph.Models.IdentityGovernance.TaskObject>
 		{
 			new Microsoft.Graph.Models.IdentityGovernance.TaskObject
 			{

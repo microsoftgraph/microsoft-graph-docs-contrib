@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewResourceOperation()
@@ -23,7 +23,7 @@ requestBody.SetActionName(&actionName)
 description := "Description value"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.DeviceManagement().ResourceOperations().Post(context.Background(), requestBody, nil)
+resourceOperations, err := graphClient.DeviceManagement().ResourceOperations().Post(context.Background(), requestBody, nil)
 
 
 ```

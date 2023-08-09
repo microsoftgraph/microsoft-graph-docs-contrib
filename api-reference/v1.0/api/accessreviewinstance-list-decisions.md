@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_accessreviewinstancedecisionitem"
+  "name": "list_accessreviewinstancedecisionitem_v1_e1"
 }
 -->
 ``` http
@@ -65,35 +65,35 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-v1-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-accessreviewinstancedecisionitem-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/list-accessreviewinstancedecisionitem-v1-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-v1-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-v1-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstancedecisionitem-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstancedecisionitem-v1-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-accessreviewinstancedecisionitem-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-accessreviewinstancedecisionitem-v1-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-accessreviewinstancedecisionitem-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accessreviewinstancedecisionitem-v1-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-accessreviewinstancedecisionitem-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/list-accessreviewinstancedecisionitem-v1-e1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -198,14 +198,14 @@ The following example shows a request to retrieve all the decisions on every ins
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_accessReviewInstanceDecisionItem_expand"
+  "name": "list_accessReviewInstanceDecisionItem_expand_v1_e2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')?$expand=instance($expand=definition)
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-expand-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-expand-v1-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
@@ -213,19 +213,19 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-expand-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-expand-v1-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-expand-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-expand-v1-e2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstancedecisionitem-expand-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstancedecisionitem-expand-v1-e2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-accessreviewinstancedecisionitem-expand-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-accessreviewinstancedecisionitem-expand-v1-e2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
@@ -233,7 +233,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-accessreviewinstancedecisionitem-expand-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/list-accessreviewinstancedecisionitem-expand-v1-e2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -294,7 +294,7 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_accessreviewinstancedecisionitem_expandinsights"
+  "name": "list_accessreviewinstancedecisionitem_expandinsights_v1_e3"
 }
 -->
 ``` http
@@ -302,7 +302,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-expandinsights-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
@@ -310,27 +310,27 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-expandinsights-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-expandinsights-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstancedecisionitem-expandinsights-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-accessreviewinstancedecisionitem-expandinsights-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-accessreviewinstancedecisionitem-expandinsights-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-accessreviewinstancedecisionitem-expandinsights-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/list-accessreviewinstancedecisionitem-expandinsights-v1-e3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

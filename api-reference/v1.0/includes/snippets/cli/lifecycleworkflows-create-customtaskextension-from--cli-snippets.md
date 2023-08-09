@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc identity-governance lifecycle-workflows custom-task-extensions create --body '{\
     "displayName": "Grant manager access to mailbox and OneDrive",\
     "description": "Grant manager access to mailbox and OneDrive",\

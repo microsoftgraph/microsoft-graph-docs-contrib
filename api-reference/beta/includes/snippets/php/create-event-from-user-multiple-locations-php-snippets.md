@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Event();
 $requestBody->setSubject('Plan summer company picnic');
 
 $body = new ItemBody();
-$body->setContentType(new BodyType('html'));
+$body->setContentType(new BodyType('hTML'));
 
 $body->setContent('Let\'s kick-start this event planning!');
 

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().Get(context.Background(), nil)
+channels, err := graphClient.Teams().ByTeamId("team-id").Channels().Get(context.Background(), nil)
 
 
 ```

@@ -4,7 +4,7 @@ description: "Represents the blob of an Azure Active Directory (Azure AD) terms 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ---
 
 # agreementFileData resource type

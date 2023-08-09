@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMobileThreatDefenseConnector()
@@ -48,7 +48,7 @@ requestBody.SetAllowPartnerToCollectIOSPersonalApplicationMetadata(&allowPartner
 microsoftDefenderForEndpointAttachEnabled := true
 requestBody.SetMicrosoftDefenderForEndpointAttachEnabled(&microsoftDefenderForEndpointAttachEnabled) 
 
-result, err := graphClient.DeviceManagement().MobileThreatDefenseConnectors().ByMobileThreatDefenseConnectorId("mobileThreatDefenseConnector-id").Patch(context.Background(), requestBody, nil)
+mobileThreatDefenseConnectors, err := graphClient.DeviceManagement().MobileThreatDefenseConnectors().ByMobileThreatDefenseConnectorId("mobileThreatDefenseConnector-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

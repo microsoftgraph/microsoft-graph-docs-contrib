@@ -1,0 +1,24 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const acquireAccessToken = {
+  credentials: [
+    {
+      '@odata.type': 'microsoft.graph.synchronizationSecretKeyStringValuePair'
+    }
+  ]
+};
+
+await client.api('/applications/{applicationsId}/synchronization/acquireAccessToken')
+	.post(acquireAccessToken);
+
+```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Contact();
 $homeAddress = new PhysicalAddress();
@@ -21,7 +21,7 @@ $homeAddress->setPostalCode('98121');
 
 
 $requestBody->setHomeAddress($homeAddress);
-$requestBody->setBirthday(new DateTime('1974-07-22'));
+$requestBody->setBirthday(new \DateTime('1974-07-22'));
 
 
 
