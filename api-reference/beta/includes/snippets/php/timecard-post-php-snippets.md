@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TimeCard();
 $clockInEvent = new TimeCardEvent();
-$clockInEvent->setDateTime(new DateTime('2019-03-18T00:00:00.000Z'));
+$clockInEvent->setDateTime(new \DateTime('2019-03-18T00:00:00.000Z'));
 
 $clockInEvent->setAtApprovedLocation(true);
 
@@ -42,7 +42,7 @@ $breaksTimeCardBreak1Notes->setContentType(new BodyType('text'));
 
 $breaksTimeCardBreak1->setNotes($breaksTimeCardBreak1Notes);
 $breaksTimeCardBreak1Start = new TimeCardEvent();
-$breaksTimeCardBreak1Start->setDateTime(new DateTime('2019-03-18T02:00:00.000Z'));
+$breaksTimeCardBreak1Start->setDateTime(new \DateTime('2019-03-18T02:00:00.000Z'));
 
 $breaksTimeCardBreak1Start->setAtApprovedLocation(true);
 

@@ -1,8 +1,8 @@
 ---
 title: "invitation resource type"
-description: "Represents an invitation that is used to add external users to an organization."
+description: "Represents an invitation that is used to add external users to an organization as part of Azure Active Directory business-to-business (Azure AD B2B) collaboration."
 ms.localizationpriority: high
-author: "Sammak"
+author: "ppolkadots"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an invitation that is used to add external users to an organization. 
+Represents an invitation that is used to add external users to an organization as part of Azure Active Directory business-to-business (Azure AD B2B) collaboration.
 
 The invitation process uses the following flow:
 
@@ -43,7 +43,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 |status|String|The status of the invitation. Possible values are: `PendingAcceptance`, `Completed`, `InProgress`, and `Error`.|
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |invitedUser|[User](user.md)|The user created as part of the invitation creation. Read-Only|
 

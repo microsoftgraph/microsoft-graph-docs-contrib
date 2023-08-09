@@ -24,7 +24,7 @@ item := graphmodels.New()
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
+attachments, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

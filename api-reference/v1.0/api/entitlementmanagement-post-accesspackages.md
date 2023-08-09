@@ -48,10 +48,10 @@ You can specify the following properties when creating an **accessPackage**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the access package.|
-|description|String|The description of the access package.|
-|isHidden|Boolean|Whether the access package is hidden from the requestor.|
-
+|catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)| Required. The catalog that's linked to this access package. Only the **id** property is required.|
+|displayName|String|Required. The display name of the access package.|
+|description|String|Optional. The description of the access package.|
+|isHidden|Boolean|Optional. Whether the access package is hidden from the requestor.|
 
 
 ## Response

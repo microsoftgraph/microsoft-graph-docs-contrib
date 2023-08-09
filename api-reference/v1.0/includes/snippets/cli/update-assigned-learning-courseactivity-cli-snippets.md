@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc employee-experience learning-providers learning-course-activities patch --learning-provider-id {learningProvider-id} --learning-course-activity-id {learningCourseActivity-id} --body '{\
   "@odata.type": "#microsoft.graph.learningAssignment",\
   "assignedDateTime": "2021-05-11T22:57:17+00:00",\
@@ -16,7 +17,7 @@ mgc employee-experience learning-providers learning-course-activities patch --le
     "dateTime": "2022-09-22T16:05:00.0000000",\
     "timeZone": "UTC"\
   },\
-  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",\
+  "externalcourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",\
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",\
   "learnerUserId": "7ba2228a-e020-11ec-9d64-0242ac120002",\
   "notes": {\

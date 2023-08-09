@@ -2,7 +2,7 @@
 title: "invitedUserMessageInfo resource type"
 description: "The invitedUserMessageInfo object allows you to configure the invitation message."
 ms.localizationpriority: medium
-author: "Sammak"
+author: "ppolkadots"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

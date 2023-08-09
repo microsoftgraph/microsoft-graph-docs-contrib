@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").SharedWithTeams().BySharedWithTeamId("sharedWithChannelTeamInfo-id").AllowedMembers().Get(context.Background(), nil)
+allowedMembers, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").SharedWithTeams().BySharedWithChannelTeamInfoId("sharedWithChannelTeamInfo-id").AllowedMembers().Get(context.Background(), nil)
 
 
 ```

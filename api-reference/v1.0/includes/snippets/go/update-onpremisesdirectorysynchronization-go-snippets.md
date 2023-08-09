@@ -29,7 +29,7 @@ groupWriteBackEnabled := true
 features.SetGroupWriteBackEnabled(&groupWriteBackEnabled) 
 requestBody.SetFeatures(features)
 
-result, err := graphClient.Directory().OnPremisesSynchronization().ByOnPremisesSynchronization().Id("onPremisesDirectorySynchronization-id").Patch(context.Background(), requestBody, nil)
+onPremisesSynchronization, err := graphClient.Directory().OnPremisesSynchronization().ByOnPremisesDirectorySynchronizationId("onPremisesDirectorySynchronization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

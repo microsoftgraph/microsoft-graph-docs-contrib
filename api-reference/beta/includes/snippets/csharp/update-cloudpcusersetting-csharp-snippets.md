@@ -19,6 +19,7 @@ var requestBody = new CloudPcUserSetting
 		UserRestoreEnabled = true,
 	},
 	LocalAdminEnabled = false,
+	ResetEnabled = true,
 };
 var result = await graphClient.DeviceManagement.VirtualEndpoint.UserSettings["{cloudPcUserSetting-id}"].PatchAsync(requestBody);
 
