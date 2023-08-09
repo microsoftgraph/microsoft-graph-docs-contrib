@@ -60,20 +60,20 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-androidworkprofilecompliancepolicy-list-list-androidworkprofilecompliancepolicies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-androidworkprofilecompliancepolicy-list-list-androidworkprofilecompliancepolicies-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-androidworkprofilecompliancepolicy-list-list-androidworkprofilecompliancepolicies-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-androidworkprofilecompliancepolicy-list-list-androidworkprofilecompliancepolicies-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-androidworkprofilecompliancepolicy-list-list-androidworkprofilecompliancepolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-androidworkprofilecompliancepolicy-list-list-androidworkprofilecompliancepolicies-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-androidworkprofilecompliancepolicy-list-list-androidworkprofilecompliancepolicies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-androidworkprofilecompliancepolicy-list-list-androidworkprofilecompliancepolicies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

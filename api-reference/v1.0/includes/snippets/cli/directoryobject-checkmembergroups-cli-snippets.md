@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc directory-objects check-member-groups post --directory-object-id {directoryObject-id} --body '{\
     "groupIds": [\
         "f448435d-3ca7-4073-8152-a1fd73c0fd09",\

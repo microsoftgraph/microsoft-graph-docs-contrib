@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().FindRooms().Get(context.Background(), nil)
+findRooms(), err := graphClient.Me().FindRooms().Get(context.Background(), nil)
 
 
 ```

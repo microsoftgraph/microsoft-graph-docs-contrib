@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewVppToken()
@@ -38,7 +38,7 @@ requestBody.SetAutomaticallyUpdateApps(&automaticallyUpdateApps)
 countryOrRegion := "Country Or Region value"
 requestBody.SetCountryOrRegion(&countryOrRegion) 
 
-result, err := graphClient.DeviceAppManagement().VppTokens().ByVppTokenId("vppToken-id").Patch(context.Background(), requestBody, nil)
+vppTokens, err := graphClient.DeviceAppManagement().VppTokens().ByVppTokenId("vppToken-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

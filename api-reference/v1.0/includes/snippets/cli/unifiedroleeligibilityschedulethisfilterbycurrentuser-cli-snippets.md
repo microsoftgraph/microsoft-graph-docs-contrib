@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc role-management directory role-eligibility-schedules filter-by-current-user-with-on get --on '{on-id}'
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc role-management directory role-eligibility-schedules filter-by-current-user-with-on get --on {on-id}
 
 ```

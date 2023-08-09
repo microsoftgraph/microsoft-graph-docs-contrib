@@ -63,20 +63,20 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurat
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get-get-deviceenrollmentwindowshelloforbusinessconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get-get-deviceenrollmentwindowshelloforbusinessconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get-get-deviceenrollmentwindowshelloforbusinessconfiguration-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get-get-deviceenrollmentwindowshelloforbusinessconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get-get-deviceenrollmentwindowshelloforbusinessconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get-get-deviceenrollmentwindowshelloforbusinessconfiguration-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get-get-deviceenrollmentwindowshelloforbusinessconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get-get-deviceenrollmentwindowshelloforbusinessconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

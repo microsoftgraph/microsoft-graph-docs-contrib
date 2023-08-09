@@ -80,24 +80,28 @@ Content-length: 191
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-wip-windowsinformationprotectionapplearningsummary-create-create-windowsinformationprotectionapplearningsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-wip-windowsinformationprotectionapplearningsummary-create-create-windowsinformationprotectionapplearningsummary-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-wip-windowsinformationprotectionapplearningsummary-create-create-windowsinformationprotectionapplearningsummary-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-wip-windowsinformationprotectionapplearningsummary-create-create-windowsinformationprotectionapplearningsummary-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-wip-windowsinformationprotectionapplearningsummary-create-create-windowsinformationprotectionapplearningsummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-wip-windowsinformationprotectionapplearningsummary-create-create-windowsinformationprotectionapplearningsummary-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-wip-windowsinformationprotectionapplearningsummary-create-create-windowsinformationprotectionapplearningsummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-wip-windowsinformationprotectionapplearningsummary-create-create-windowsinformationprotectionapplearningsummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-wip-windowsinformationprotectionapplearningsummary-create-create-windowsinformationprotectionapplearningsummary-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-wip-windowsinformationprotectionapplearningsummary-create-create-windowsinformationprotectionapplearningsummary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -32,7 +32,7 @@ assignments := []graphmodels.cloudPcProvisioningPolicyAssignmentable {
 }
 requestBody.SetAssignments(assignments)
 
-graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().ByProvisioningPolicieId("cloudPcProvisioningPolicy-id").Assign().Post(context.Background(), requestBody, nil)
+graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().ByCloudPcProvisioningPolicyId("cloudPcProvisioningPolicy-id").Assign().Post(context.Background(), requestBody, nil)
 
 
 ```

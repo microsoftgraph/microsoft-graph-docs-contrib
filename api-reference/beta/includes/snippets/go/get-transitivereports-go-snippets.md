@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Contacts().ByContactId("orgContact-id").TransitiveReports().Count().Get(context.Background(), nil)
+graphClient.Contacts().ByOrgContactId("orgContact-id").TransitiveReports().Count().Get(context.Background(), nil)
 
 
 ```

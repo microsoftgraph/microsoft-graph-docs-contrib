@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new MobileThreatDefenseConnector();
-$requestBody->set@odatatype('#microsoft.graph.mobileThreatDefenseConnector');
+$requestBody->setOdataType('#microsoft.graph.mobileThreatDefenseConnector');
 
-$requestBody->setLastHeartbeatDateTime(new DateTime('2016-12-31T23:59:37.9174975-08:00'));
+$requestBody->setLastHeartbeatDateTime(new \DateTime('2016-12-31T23:59:37.9174975-08:00'));
 
 $requestBody->setPartnerState(new MobileThreatPartnerTenantState('available'));
 

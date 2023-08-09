@@ -41,7 +41,7 @@ category3 := null
 categoryDescriptions.SetCategory3(&category3) 
 requestBody.SetCategoryDescriptions(categoryDescriptions)
 
-result, err := graphClient.Planner().Plans().ByPlanId("plannerPlan-id").Details().Patch(context.Background(), requestBody, configuration)
+details, err := graphClient.Planner().Plans().ByPlannerPlanId("plannerPlan-id").Details().Patch(context.Background(), requestBody, configuration)
 
 
 ```

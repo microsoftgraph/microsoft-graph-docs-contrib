@@ -25,6 +25,8 @@ $restorePointSetting->setUserRestoreEnabled(true);
 $requestBody->setRestorePointSetting($restorePointSetting);
 $requestBody->setLocalAdminEnabled(false);
 
+$requestBody->setResetEnabled(true);
+
 
 
 $result = $graphServiceClient->deviceManagement()->virtualEndpoint()->userSettings()->byCloudPcUserSettingId('cloudPcUserSetting-id')->patch($requestBody);
