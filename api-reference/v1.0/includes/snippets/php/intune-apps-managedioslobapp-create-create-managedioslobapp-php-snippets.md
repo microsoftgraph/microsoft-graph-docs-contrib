@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ManagedIOSLobApp();
-$requestBody->set@odatatype('#microsoft.graph.managedIOSLobApp');
+$requestBody->setOdataType('#microsoft.graph.managedIOSLobApp');
 
 $requestBody->setDisplayName('Display Name value');
 
@@ -19,7 +19,7 @@ $requestBody->setDescription('Description value');
 $requestBody->setPublisher('Publisher value');
 
 $largeIcon = new MimeContent();
-$largeIcon->set@odatatype('microsoft.graph.mimeContent');
+$largeIcon->setOdataType('microsoft.graph.mimeContent');
 
 $largeIcon->setType('Type value');
 
@@ -41,7 +41,7 @@ $requestBody->setNotes('Notes value');
 
 $requestBody->setPublishingState(new MobileAppPublishingState('processing'));
 
-$requestBody->setAppAvailability(new ManagedAppAvailability('lineofbusiness'));
+$requestBody->setAppAvailability(new ManagedAppAvailability('lineOfBusiness'));
 
 $requestBody->setVersion('Version value');
 
@@ -54,7 +54,7 @@ $requestBody->setSize(4);
 $requestBody->setBundleId('Bundle Id value');
 
 $applicableDeviceType = new IosDeviceType();
-$applicableDeviceType->set@odatatype('microsoft.graph.iosDeviceType');
+$applicableDeviceType->setOdataType('microsoft.graph.iosDeviceType');
 
 $applicableDeviceType->setIPad(true);
 
@@ -63,7 +63,7 @@ $applicableDeviceType->setIPhoneAndIPod(true);
 
 $requestBody->setApplicableDeviceType($applicableDeviceType);
 $minimumSupportedOperatingSystem = new IosMinimumOperatingSystem();
-$minimumSupportedOperatingSystem->set@odatatype('microsoft.graph.iosMinimumOperatingSystem');
+$minimumSupportedOperatingSystem->setOdataType('microsoft.graph.iosMinimumOperatingSystem');
 
 $minimumSupportedOperatingSystem->setV8_0(true);
 
@@ -83,7 +83,7 @@ $minimumSupportedOperatingSystem->setV15_0(true);
 
 
 $requestBody->setMinimumSupportedOperatingSystem($minimumSupportedOperatingSystem);
-$requestBody->setExpirationDateTime(new DateTime('2016-12-31T23:57:57.2481234-08:00'));
+$requestBody->setExpirationDateTime(new \DateTime('2016-12-31T23:57:57.2481234-08:00'));
 
 $requestBody->setVersionNumber('Version Number value');
 

@@ -37,7 +37,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Security().AttackSimulation().Simulations().Post(context.Background(), requestBody, nil)
+simulations, err := graphClient.Security().AttackSimulation().Simulations().Post(context.Background(), requestBody, nil)
 
 
 ```

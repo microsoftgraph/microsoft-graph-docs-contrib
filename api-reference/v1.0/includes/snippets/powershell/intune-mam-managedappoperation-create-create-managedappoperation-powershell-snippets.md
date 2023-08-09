@@ -13,6 +13,6 @@ $params = @{
 	version = "Version value"
 }
 
-New-MgDeviceAppMgtManagedAppRegistrationOperation -ManagedAppRegistrationId $managedAppRegistrationId -BodyParameter $params
+New-MgDeviceAppManagementManagedAppRegistrationOperation -ManagedAppRegistrationId $managedAppRegistrationId -BodyParameter $params
 
 ```

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AndroidGeneralDeviceConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.androidGeneralDeviceConfiguration');
+$requestBody->setOdataType('#microsoft.graph.androidGeneralDeviceConfiguration');
 
 $requestBody->setDescription('Description value');
 
@@ -37,7 +37,7 @@ $requestBody->setCellularBlockVoiceRoaming(true);
 $requestBody->setCellularBlockWiFiTethering(true);
 
 $compliantAppsListAppListItem1 = new AppListItem();
-$compliantAppsListAppListItem1->set@odatatype('microsoft.graph.appListItem');
+$compliantAppsListAppListItem1->setOdataType('microsoft.graph.appListItem');
 
 $compliantAppsListAppListItem1->setName('Name value');
 
@@ -52,7 +52,7 @@ $compliantAppsListArray []= $compliantAppsListAppListItem1;
 $requestBody->setCompliantAppsList($compliantAppsListArray);
 
 
-$requestBody->setCompliantAppListType(new AppListType('appsinlistcompliant'));
+$requestBody->setCompliantAppListType(new AppListType('appsInListCompliant'));
 
 $requestBody->setDiagnosticDataBlockSubmission(true);
 
@@ -67,7 +67,7 @@ $requestBody->setKioskModeBlockSleepButton(true);
 $requestBody->setKioskModeBlockVolumeButtons(true);
 
 $kioskModeAppsAppListItem1 = new AppListItem();
-$kioskModeAppsAppListItem1->set@odatatype('microsoft.graph.appListItem');
+$kioskModeAppsAppListItem1->setOdataType('microsoft.graph.appListItem');
 
 $kioskModeAppsAppListItem1->setName('Name value');
 
@@ -130,12 +130,12 @@ $requestBody->setWebBrowserBlockJavaScript(true);
 
 $requestBody->setWebBrowserBlocked(true);
 
-$requestBody->setWebBrowserCookieSettings(new WebBrowserCookieSettings('blockalways'));
+$requestBody->setWebBrowserCookieSettings(new WebBrowserCookieSettings('blockAlways'));
 
 $requestBody->setWiFiBlocked(true);
 
 $appsInstallAllowListAppListItem1 = new AppListItem();
-$appsInstallAllowListAppListItem1->set@odatatype('microsoft.graph.appListItem');
+$appsInstallAllowListAppListItem1->setOdataType('microsoft.graph.appListItem');
 
 $appsInstallAllowListAppListItem1->setName('Name value');
 
@@ -151,7 +151,7 @@ $requestBody->setAppsInstallAllowList($appsInstallAllowListArray);
 
 
 $appsLaunchBlockListAppListItem1 = new AppListItem();
-$appsLaunchBlockListAppListItem1->set@odatatype('microsoft.graph.appListItem');
+$appsLaunchBlockListAppListItem1->setOdataType('microsoft.graph.appListItem');
 
 $appsLaunchBlockListAppListItem1->setName('Name value');
 
@@ -167,7 +167,7 @@ $requestBody->setAppsLaunchBlockList($appsLaunchBlockListArray);
 
 
 $appsHideListAppListItem1 = new AppListItem();
-$appsHideListAppListItem1->set@odatatype('microsoft.graph.appListItem');
+$appsHideListAppListItem1->setOdataType('microsoft.graph.appListItem');
 
 $appsHideListAppListItem1->setName('Name value');
 

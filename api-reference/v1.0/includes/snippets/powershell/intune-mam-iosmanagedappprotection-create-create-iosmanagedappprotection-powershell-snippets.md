@@ -48,6 +48,6 @@ $params = @{
 	customBrowserProtocol = "Custom Browser Protocol value"
 }
 
-New-MgDeviceAppMgtiOSManagedAppProtection -BodyParameter $params
+New-MgDeviceAppManagementiOSManagedAppProtection -BodyParameter $params
 
 ```

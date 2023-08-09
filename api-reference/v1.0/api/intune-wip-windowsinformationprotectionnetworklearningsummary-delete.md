@@ -60,24 +60,28 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProte
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-wip-windowsinformationprotectionnetworklearningsummary-delete-delete-windowsinformationprotectionnetworklearningsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-wip-windowsinformationprotectionnetworklearningsummary-delete-delete-windowsinformationprotectionnetworklearningsummary-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-wip-windowsinformationprotectionnetworklearningsummary-delete-delete-windowsinformationprotectionnetworklearningsummary-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-wip-windowsinformationprotectionnetworklearningsummary-delete-delete-windowsinformationprotectionnetworklearningsummary-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-wip-windowsinformationprotectionnetworklearningsummary-delete-delete-windowsinformationprotectionnetworklearningsummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-wip-windowsinformationprotectionnetworklearningsummary-delete-delete-windowsinformationprotectionnetworklearningsummary-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-wip-windowsinformationprotectionnetworklearningsummary-delete-delete-windowsinformationprotectionnetworklearningsummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-wip-windowsinformationprotectionnetworklearningsummary-delete-delete-windowsinformationprotectionnetworklearningsummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-wip-windowsinformationprotectionnetworklearningsummary-delete-delete-windowsinformationprotectionnetworklearningsummary-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-wip-windowsinformationprotectionnetworklearningsummary-delete-delete-windowsinformationprotectionnetworklearningsummary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

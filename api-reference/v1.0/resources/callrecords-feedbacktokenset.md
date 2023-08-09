@@ -2,7 +2,7 @@
 title: "feedbackTokenSet resource type"
 description: "The feedbackTokenSet type"
 ms.localizationpriority: medium
-author: "williamlooney"
+author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---

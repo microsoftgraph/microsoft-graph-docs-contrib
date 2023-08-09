@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewWindowsInformationProtectionAppLearningSummary()
@@ -23,7 +23,7 @@ requestBody.SetApplicationType(&applicationType)
 deviceCount := int32(11)
 requestBody.SetDeviceCount(&deviceCount) 
 
-result, err := graphClient.DeviceManagement().WindowsInformationProtectionAppLearningSummaries().ByWindowsInformationProtectionAppLearningSummarieId("windowsInformationProtectionAppLearningSummary-id").Patch(context.Background(), requestBody, nil)
+windowsInformationProtectionAppLearningSummaries, err := graphClient.DeviceManagement().WindowsInformationProtectionAppLearningSummaries().ByWindowsInformationProtectionAppLearningSummaryId("windowsInformationProtectionAppLearningSummary-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

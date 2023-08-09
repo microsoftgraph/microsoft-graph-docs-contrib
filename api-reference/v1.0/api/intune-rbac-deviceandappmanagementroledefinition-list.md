@@ -60,20 +60,20 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-rbac-deviceandappmanagementroledefinition-list-list-deviceandappmanagementroledefinitions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-rbac-deviceandappmanagementroledefinition-list-list-deviceandappmanagementroledefinitions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-rbac-deviceandappmanagementroledefinition-list-list-deviceandappmanagementroledefinitions-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-rbac-deviceandappmanagementroledefinition-list-list-deviceandappmanagementroledefinitions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-rbac-deviceandappmanagementroledefinition-list-list-deviceandappmanagementroledefinitions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-rbac-deviceandappmanagementroledefinition-list-list-deviceandappmanagementroledefinitions-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-rbac-deviceandappmanagementroledefinition-list-list-deviceandappmanagementroledefinitions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-rbac-deviceandappmanagementroledefinition-list-list-deviceandappmanagementroledefinitions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

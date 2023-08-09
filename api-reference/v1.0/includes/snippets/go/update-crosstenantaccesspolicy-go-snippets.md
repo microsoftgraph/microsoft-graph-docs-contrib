@@ -21,7 +21,7 @@ allowedCloudEndpoints := []string {
 }
 requestBody.SetAllowedCloudEndpoints(allowedCloudEndpoints)
 
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Patch(context.Background(), requestBody, nil)
+crossTenantAccessPolicy, err := graphClient.Policies().CrossTenantAccessPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

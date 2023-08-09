@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Windows81GeneralConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.windows81GeneralConfiguration');
+$requestBody->setOdataType('#microsoft.graph.windows81GeneralConfiguration');
 
 $requestBody->setDescription('Description value');
 
@@ -80,7 +80,7 @@ $requestBody->setStorageRequireDeviceEncryption(true);
 
 $requestBody->setUpdatesRequireAutomaticUpdates(true);
 
-$requestBody->setUserAccountControlSettings(new WindowsUserAccountControlSettings('alwaysnotify'));
+$requestBody->setUserAccountControlSettings(new WindowsUserAccountControlSettings('alwaysNotify'));
 
 $requestBody->setWorkFoldersUrl('https://example.com/workFoldersUrl/');
 
