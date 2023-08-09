@@ -1,7 +1,7 @@
 ---
 title: "Get azureADAuthentication"
 description: "Read the properties and relationships of an azureADAuthentication object to find Azure AD SLA attainment for your tenant."
-author: "sarbar"
+author: "SarahBar"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/reports/sla/azureADAuthentication
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-azureadauthentication-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-azureadauthentication-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

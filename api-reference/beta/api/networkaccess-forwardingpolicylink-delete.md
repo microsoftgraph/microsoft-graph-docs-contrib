@@ -87,7 +87,6 @@ DELETE https://graph.microsoft.com/beta/networkaccess/forwardingProfiles/{forwar
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

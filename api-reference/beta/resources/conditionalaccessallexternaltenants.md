@@ -2,7 +2,7 @@
 title: "conditionalAccessAllExternalTenants resource type"
 description: "Represents all external tenants in a policy scope."
 ms.localizationpriority: medium
-author: "sandeo"
+author: "SanDeo-MSFT"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

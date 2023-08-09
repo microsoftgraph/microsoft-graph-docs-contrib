@@ -116,9 +116,9 @@ This resource supports:
 
 | Value | Description |
 |:---------------|:--------|
-|AzureADMyOrg|Users with a Microsoft work or school account in my organization’s Azure AD tenant (single tenant).|
-|AzureADMultipleOrgs|Users with a Microsoft work or school account in any organization’s Azure AD tenant (multi-tenant).|
-|AzureADandPersonalMicrosoftAccount|Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant. For authenticating users with Azure AD B2C user flows, use `AzureADandPersonalMicrosoftAccount`. This value allows for the widest set of user identities including local accounts and user identities from Microsoft, Facebook, Google, Twitter, or any OpenID Connect provider. This is the default value for the **signInAudience** property. |
+|AzureADMyOrg|Users with a Microsoft work or school account in my organization's Azure AD tenant (single tenant).|
+|AzureADMultipleOrgs|Users with a Microsoft work or school account in any organization's Azure AD tenant (multi-tenant).|
+|AzureADandPersonalMicrosoftAccount|Users with a personal Microsoft account, or a work or school account in any organization's Azure AD tenant. For authenticating users with Azure AD B2C user flows, use `AzureADandPersonalMicrosoftAccount`. This value allows for the widest set of user identities including local accounts and user identities from Microsoft, Facebook, Google, Twitter, or any OpenID Connect provider. This is the default value for the **signInAudience** property. |
 |PersonalMicrosoftAccount|Users with a personal Microsoft account only.|
 
 
@@ -138,7 +138,7 @@ This resource supports:
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Supports `$filter` (`/$count eq 0`, `/$count ne 0`). Read-only.|
 |extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`).|
 |federatedIdentityCredentials|[federatedIdentityCredential](federatedidentitycredential.md) collection |Federated identities for applications. Supports `$expand` and `$filter` (`startsWith`, `/$count eq 0`, `/$count ne 0`).|
-|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. Read-only. Nullable. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`).|
+|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. Read-only. Nullable. Supports `$expand`, `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`), and `$select` nested in `$expand`.|
 |synchronization | [synchronization](synchronization-synchronization.md)| Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API. |
 
 ## JSON representation

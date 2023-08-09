@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDefaultManagedAppProtection()
@@ -111,7 +111,7 @@ requestBody.SetMinimumWarningPatchVersion(&minimumWarningPatchVersion)
 faceIdBlocked := true
 requestBody.SetFaceIdBlocked(&faceIdBlocked) 
 
-result, err := graphClient.DeviceAppManagement().DefaultManagedAppProtections().ByDefaultManagedAppProtectionId("defaultManagedAppProtection-id").Patch(context.Background(), requestBody, nil)
+defaultManagedAppProtections, err := graphClient.DeviceAppManagement().DefaultManagedAppProtections().ByDefaultManagedAppProtectionId("defaultManagedAppProtection-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

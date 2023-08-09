@@ -2,7 +2,7 @@
 title: "reportRoot: getAzureADApplicationSignInSummary"
 description: "Retrieve the properties and relationships of an applicationSigninSummary object."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---

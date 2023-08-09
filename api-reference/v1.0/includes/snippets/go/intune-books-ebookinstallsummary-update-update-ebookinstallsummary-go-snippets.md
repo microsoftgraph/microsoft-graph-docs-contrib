@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEBookInstallSummary()
@@ -29,7 +29,7 @@ requestBody.SetFailedUserCount(&failedUserCount)
 notInstalledUserCount := int32(5)
 requestBody.SetNotInstalledUserCount(&notInstalledUserCount) 
 
-result, err := graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").InstallSummary().Patch(context.Background(), requestBody, nil)
+installSummary, err := graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").InstallSummary().Patch(context.Background(), requestBody, nil)
 
 
 ```

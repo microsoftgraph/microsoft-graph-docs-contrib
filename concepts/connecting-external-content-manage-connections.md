@@ -67,54 +67,16 @@ Before an application can add items to the search index, it must create and conf
 1. [Register a schema](/graph/api/externalconnectors-externalconnection-post-schema) to define the fields that will be included in the index.
    > **Note:** For information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
 
-## Enable content experiences
-A Microsoft Graph connector can integrate with Microsoft 365 experiences beyond Microsoft Search.
-
-To enable one or more content experiences, set the value of the **enabledContentExperiences** property to the values that represent those content experiences when you create the connection. The supported values are listed in the following table.
-
-| enabledContentExperiences value | Description |
-|-|-|
-| search | Allows your content to appear in Microsoft search results. The format of these results is consistent across different search canvases, such as SharePoint and Microsoft Bing. |
-| compliance | Allows your content to be visible to the Microsoft Purview advanced eDiscovery solution. For details about advanced eDiscovery solution & licensing requirements, see [Microsoft Purview solutions](/microsoft-365/compliance/ediscovery).|
-
-The following example shows how to update a connection to enable both the search and compliance content experiences.
-
-```http
-PATCH https://graph.microsoft.com/beta/external/connections/contosohelpdesk
-Content-Type: application/json
-
-{
-	"enabledContentExperiences": "search, compliance"
-}
-```
-
 ## Connection settings
 You can configure the default connection settings for each enabled content experience. When enabled, these settings affect the content experiences.
 
 ### Search settings
-You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content. A set of search display templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules that specify one or more conditions. When these conditions are met, the layout will be applied to the search result and displayed on the results page.
-
-### Compliance settings
-Similar to enterprise search settings, you need to define how to display advanced eDiscovery search results by supplying result types for your content. This enables the eDiscovery manager to visualize the content when reviewing the datasets. The following example shows the results of an eDiscovery search review of an Azure DevOps item.
-
-![Screenshot of an eDiscovery search review result of an Azure DevOps item](./images/connectors-images/connecting-external-content-connection-settings-eDiscovery-result-example.png)
-
-> [!IMPORTANT]
-> The Adaptive Card format is used to render results in eDiscovery. Unlike the search experience, the eDiscovery experience only supports Adaptive Card elements up to version 1.2. 
-
-When you configure the eDiscovery result template in the [Adaptive Card Designer](https://adaptivecards.io/designer/), select 1.2 as the target version.
-
-![Screenshot of the Adaptive Card Designer with version 1.2 highlighted](./images/connectors-images/connecting-external-content-connection-settings-adaptiveCard-target-version.png)
-
-Note that the following limitations apply to Adaptive Cards in the eDiscovery result templates:
-- Markdown is not supported. 
-- Data binding expressions with `${}` are not supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello ${name}"` is not.
-- Only data binding expressions for single-valued properties are supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello {employee.Name}"` is not.
+You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content in [searchSettings](/graph/api/resources/externalconnectors-searchsettings). A set of search display templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules that specify one or more conditions. When these conditions are met, the layout will be applied to the search result and displayed on the results page.
 
 ### Activity settings
-In activity settings, you can provide a way for Microsoft 365 apps to detect **share activity**, which will enable your content to be recommended to users who interact with that content the most. The way to do this is to add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase), which will allow a given URL detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem). 
+In [activity settings](/graph/api/resources/externalconnectors-activitysettings), you can provide a way for Microsoft 365 apps to detect **share activity**, which will enable your content to be recommended to users who interact with that content the most. The way to do this is to add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase), which will allow a URL from the connection detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem). 
 
-The following image shows how your item might appear within recommendation experiences across the Microsoft 365 suite. 
+The following image shows how your item might appear within recommendation experiences across Microsoft 365.
 
 ![Screenshot of a recommended item with share activity](./images/connectors-images/share-activity-recommendation-example.png)
 
@@ -124,7 +86,7 @@ To change the display name, description, or enabled content experiences for an e
 
 ## Delete a connection
 
-To remove all items that were indexed via a connection, you can [delete a connection](/graph/api/resources/externalconnectors-externalconnection-delete).
+To remove all items that were indexed via a connection, you can [delete a connection](/graph/api/externalconnectors-externalconnection-delete).
 
 ## Next steps
 

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeviceEnrollmentPlatformRestrictionsConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration');
+$requestBody->setOdataType('#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration');
 
 $requestBody->setDisplayName('Display Name value');
 
@@ -21,7 +21,7 @@ $requestBody->setPriority(8);
 $requestBody->setVersion(7);
 
 $iosRestriction = new DeviceEnrollmentPlatformRestriction();
-$iosRestriction->set@odatatype('microsoft.graph.deviceEnrollmentPlatformRestriction');
+$iosRestriction->setOdataType('microsoft.graph.deviceEnrollmentPlatformRestriction');
 
 $iosRestriction->setPlatformBlocked(true);
 
@@ -34,7 +34,7 @@ $iosRestriction->setOsMaximumVersion('Os Maximum Version value');
 
 $requestBody->setIosRestriction($iosRestriction);
 $windowsRestriction = new DeviceEnrollmentPlatformRestriction();
-$windowsRestriction->set@odatatype('microsoft.graph.deviceEnrollmentPlatformRestriction');
+$windowsRestriction->setOdataType('microsoft.graph.deviceEnrollmentPlatformRestriction');
 
 $windowsRestriction->setPlatformBlocked(true);
 
@@ -47,7 +47,7 @@ $windowsRestriction->setOsMaximumVersion('Os Maximum Version value');
 
 $requestBody->setWindowsRestriction($windowsRestriction);
 $windowsMobileRestriction = new DeviceEnrollmentPlatformRestriction();
-$windowsMobileRestriction->set@odatatype('microsoft.graph.deviceEnrollmentPlatformRestriction');
+$windowsMobileRestriction->setOdataType('microsoft.graph.deviceEnrollmentPlatformRestriction');
 
 $windowsMobileRestriction->setPlatformBlocked(true);
 
@@ -60,7 +60,7 @@ $windowsMobileRestriction->setOsMaximumVersion('Os Maximum Version value');
 
 $requestBody->setWindowsMobileRestriction($windowsMobileRestriction);
 $androidRestriction = new DeviceEnrollmentPlatformRestriction();
-$androidRestriction->set@odatatype('microsoft.graph.deviceEnrollmentPlatformRestriction');
+$androidRestriction->setOdataType('microsoft.graph.deviceEnrollmentPlatformRestriction');
 
 $androidRestriction->setPlatformBlocked(true);
 
@@ -73,7 +73,7 @@ $androidRestriction->setOsMaximumVersion('Os Maximum Version value');
 
 $requestBody->setAndroidRestriction($androidRestriction);
 $macOSRestriction = new DeviceEnrollmentPlatformRestriction();
-$macOSRestriction->set@odatatype('microsoft.graph.deviceEnrollmentPlatformRestriction');
+$macOSRestriction->setOdataType('microsoft.graph.deviceEnrollmentPlatformRestriction');
 
 $macOSRestriction->setPlatformBlocked(true);
 

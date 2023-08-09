@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/accessPackages
 
 ## Optional query parameters
 
-This method supports the `$select` and `$filter` OData query parameters to help customize the response. For example, to retrieve the access package policies for each access package, add `$expand=accessPackageAssignmentPolicies`. To search for access packages with a particular name, include a filter such as `$filter=contains(tolower(displayName),'team')` in the query. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For example, to retrieve the access package policies for each access package, add `$expand=accessPackageAssignmentPolicies`. To search for access packages with a particular name, include a filter such as `$filter=contains(tolower(displayName),'team')` in the query. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

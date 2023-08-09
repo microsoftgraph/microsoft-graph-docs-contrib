@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TermsAndConditionsAssignment();
-$requestBody->set@odatatype('#microsoft.graph.termsAndConditionsAssignment');
+$requestBody->setOdataType('#microsoft.graph.termsAndConditionsAssignment');
 
 $target = new ConfigurationManagerCollectionAssignmentTarget();
-$target->set@odatatype('microsoft.graph.configurationManagerCollectionAssignmentTarget');
+$target->setOdataType('microsoft.graph.configurationManagerCollectionAssignmentTarget');
 
 $target->setCollectionId('Collection Id value');
 
@@ -21,7 +21,7 @@ $target->setCollectionId('Collection Id value');
 $requestBody->setTarget($target);
 
 
-$result = $graphServiceClient->deviceManagement()->termsAndConditions()->byTermsAndConditionId('termsAndConditions-id')->assignments()->post($requestBody);
+$result = $graphServiceClient->deviceManagement()->termsAndConditions()->byTermsAndConditionsId('termsAndConditions-id')->assignments()->post($requestBody);
 
 
 ```

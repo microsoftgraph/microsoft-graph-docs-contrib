@@ -10,6 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new SitePage
 {
+	OdataType = "#microsoft.graph.sitePage",
 	Name = "test.aspx",
 	Title = "test",
 	PageLayout = PageLayoutType.Article,
