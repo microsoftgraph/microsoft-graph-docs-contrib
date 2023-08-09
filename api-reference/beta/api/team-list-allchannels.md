@@ -42,7 +42,7 @@ This method supports the `$filter` and `$select` [OData query parameters](/graph
 ### Use $select for better performance
 Populating the **email** and **moderationSettings** properties for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** and **moderationSettings** properties to improve performance.
 
-> **Note**: This API does not provide **moderationSettings** property for a channel by default to improve the performance. To get these properties, use the `$select` query parameter.
+> **Note**: This API does not return the **moderationSettings** property for a channel by default. To get this property, use the `$select` query parameter.
 
 ## Request headers
 |Name|Description|
