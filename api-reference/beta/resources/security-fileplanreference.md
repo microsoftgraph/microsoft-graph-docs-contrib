@@ -15,6 +15,7 @@ Namespace: microsoft.graph.security
 
 Represents the file plan descriptor of a reference ID, supplementing a specified [retention label](security-retentionlabel.md).
 
+To list the descriptors that supplement a retention label, use the [GET](../api/security-retentionlabel-get.md) operation on that [retentionLabel](security-retentionlabel.md) resource, and apply `$expand` on the **descriptors** relationship to get the corresponding [filePlanDescriptor](security-fileplandescriptor.md) resource.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorBase](../resources/security-fileplandescriptorBase.md).
 

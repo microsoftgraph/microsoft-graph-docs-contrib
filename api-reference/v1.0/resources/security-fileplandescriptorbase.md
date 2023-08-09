@@ -16,7 +16,7 @@ Specifies properties common to file plan descriptor resources. Base type for eac
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Unique string that defines the name for the [file plan descriptor](../resources/security-fileplandescriptor.md) associated with a particular retention label.|
+|displayName|String|Unique string that defines the name for the file plan descriptor associated with a particular retention label.|
 
 ## Relationships
 None.

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents how customers can manage their data at an item level (email or document), including whether and for how long to retain or delete the item. 
+Represents how customers, for compliance and governance purposes, can manage their data at an item level (email or document), including whether and for how long to retain or delete the item. 
 
 You can use retention labels for different types of content that require different retention settings. For example, you can apply a retention label to tax forms and supporting documents to retain them for the period required by law.
 
