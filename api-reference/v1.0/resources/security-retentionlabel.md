@@ -1,6 +1,6 @@
 ---
 title: "retentionLabel resource type"
-description: "Represents how customers can manage their data, whether and for how long to retain or delete it."
+description: "Represents how customers can manage their data at an item level (email or document), including whether and for how long to retain or delete the item."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,7 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents how customers can manage their data, including whether and for how long to retain or delete it.
+Represents how customers can manage their data at an item level (email or document), including whether and for how long to retain or delete the item.
+
+You can use retention labels for different types of content that require different retention settings. For example, you can apply a retention label to tax forms and supporting documents to retain them for the period required by law.
+
+You can configure retention labels with the retention periods and actions based on factors such as the date last modified or created. You can also start different retention periods by specifying an [event that can trigger retention](security-retentionevent.md) when the event occurs.
+
+For more information on how retention labels work, when to use them, and how Microsoft Purview supports retention labels to let you configure retention and deletion settings, see [Learn about retention policies and retention labels](/purview/retention).
 
 ## Methods
 |Method|Return type|Description|
@@ -28,7 +34,7 @@ Represents how customers can manage their data, including whether and for how lo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionAfterRetentionPeriod|microsoft.graph.security.actionAfterRetentionPeriod| Specifies the action to take on a document with this label applied during the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
+|actionAfterRetentionPeriod|microsoft.graph.security.actionAfterRetentionPeriod| Specifies the action to take on the labeled document after the period specified by the retentionDuration property expires. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
 |behaviorDuringRetentionPeriod|microsoft.graph.security.behaviorDuringRetentionPeriod|Specifies how the behavior of a document with this label should be during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`.|
 |createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the retentionLabel.|
 |createdDateTime|DateTimeOffset|Represents the date and time in which the retentionLabel is created.|

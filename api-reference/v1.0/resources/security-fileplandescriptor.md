@@ -1,6 +1,6 @@
 ---
 title: "filePlanDescriptor resource type"
-description: "Represents a group of columns associated with a particular retention label, to improve the manageability and organization of the content you need to label."
+description: "Represents a set of optional descriptors to supplement a retention label and improve the manageability and organization of content in Microsoft 365 for an organization."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,8 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents a group of columns to improve the manageability and organization of the content you need to label.
+Represents a set of optional descriptors to supplement a [retention label](security-retentionlabel.md) and improve the manageability and organization of Microsoft 365 content.
 
+You can add a descriptor to supplement a retention label by using the POST operation of the corresponding file plan descriptor template, and specify data for the descriptor. For example, to include a [citation](security-citation.md) descriptor, use the [create citationTemplate](../api/security-labelsroot-post-citations.md) operation.
+
+For information on how retention labels and file plan descriptors work in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), see [Use file plan to create and manage retention labels](/purview/file-plan-manager?view=o365-worldwide).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 

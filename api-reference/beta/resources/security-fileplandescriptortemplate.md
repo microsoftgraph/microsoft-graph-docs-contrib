@@ -1,6 +1,6 @@
 ---
 title: "filePlanDescriptorTemplate resource type"
-description: "Represents a group of columns to improve the manageability and organization of the content you need to label."
+description: "Specifies the properties common to the template resources for file plan descriptors."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a group of columns to improve the manageability and organization of the content you need to label.
+Specifies the properties common to the template resources for file plan descriptors. Base type for each of the template resources: [authorityTemplate](security-authoritytemplate.md), [categoryTemplate](security-categorytemplate.md), [citationTemplate](security-citationtemplate.md), [departmentTemplate](security-departmenttemplate.md), [filePlanReferenceTemplate](security-fileplanreferencetemplate.md), and [subCategoryTemplate](security-subcategorytemplate.md).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 

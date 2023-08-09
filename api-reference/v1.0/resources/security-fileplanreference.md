@@ -1,6 +1,6 @@
 ---
 title: "filePlanReference resource type"
-description: "Represents the file plan descriptor of type filePlanReference applied to a particular retention label."
+description: "Represents the file plan descriptor of a reference ID, supplementing a specified retention label."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents the file plan descriptor of type filePlanReference applied to a particular retention label.
+Represents the file plan descriptor of a reference ID, supplementing a specified [retention label](security-retentionlabel.md).
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptorBase](../resources/security-fileplandescriptorBase.md).
@@ -19,7 +19,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptorBase](../resources/sec
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Unique string that defines a filePlanReference name. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|displayName|String|Unique string that defines a reference ID. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 
 ## Relationships
 None.
