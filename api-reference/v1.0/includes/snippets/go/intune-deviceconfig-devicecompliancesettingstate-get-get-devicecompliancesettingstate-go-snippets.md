@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicySettingStateSummaries().ByDeviceCompliancePolicySettingStateSummarieId("deviceCompliancePolicySettingStateSummary-id").DeviceComplianceSettingStates().ByDeviceComplianceSettingStateId("deviceComplianceSettingState-id").Get(context.Background(), nil)
+deviceComplianceSettingStates, err := graphClient.DeviceManagement().DeviceCompliancePolicySettingStateSummaries().ByDeviceCompliancePolicySettingStateSummaryId("deviceCompliancePolicySettingStateSummary-id").DeviceComplianceSettingStates().ByDeviceComplianceSettingStateId("deviceComplianceSettingState-id").Get(context.Background(), nil)
 
 
 ```

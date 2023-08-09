@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeviceComplianceSettingState();
-$requestBody->set@odatatype('#microsoft.graph.deviceComplianceSettingState');
+$requestBody->setOdataType('#microsoft.graph.deviceComplianceSettingState');
 
 $requestBody->setSetting('Setting value');
 
@@ -30,13 +30,13 @@ $requestBody->setUserPrincipalName('User Principal Name value');
 
 $requestBody->setDeviceModel('Device Model value');
 
-$requestBody->setState(new ComplianceStatus('notapplicable'));
+$requestBody->setState(new ComplianceStatus('notApplicable'));
 
-$requestBody->setComplianceGracePeriodExpirationDateTime(new DateTime('2016-12-31T23:56:44.951111-08:00'));
+$requestBody->setComplianceGracePeriodExpirationDateTime(new \DateTime('2016-12-31T23:56:44.951111-08:00'));
 
 
 
-$result = $graphServiceClient->deviceManagement()->deviceCompliancePolicySettingStateSummaries()->byDeviceCompliancePolicySettingStateSummarieId('deviceCompliancePolicySettingStateSummary-id')->deviceComplianceSettingStates()->byDeviceComplianceSettingStateId('deviceComplianceSettingState-id')->patch($requestBody);
+$result = $graphServiceClient->deviceManagement()->deviceCompliancePolicySettingStateSummaries()->byDeviceCompliancePolicySettingStateSummaryId('deviceCompliancePolicySettingStateSummary-id')->deviceComplianceSettingStates()->byDeviceComplianceSettingStateId('deviceComplianceSettingState-id')->patch($requestBody);
 
 
 ```

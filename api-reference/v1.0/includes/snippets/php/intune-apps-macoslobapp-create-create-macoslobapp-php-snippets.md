@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new MacOSLobApp();
-$requestBody->set@odatatype('#microsoft.graph.macOSLobApp');
+$requestBody->setOdataType('#microsoft.graph.macOSLobApp');
 
 $requestBody->setDisplayName('Display Name value');
 
@@ -19,7 +19,7 @@ $requestBody->setDescription('Description value');
 $requestBody->setPublisher('Publisher value');
 
 $largeIcon = new MimeContent();
-$largeIcon->set@odatatype('microsoft.graph.mimeContent');
+$largeIcon->setOdataType('microsoft.graph.mimeContent');
 
 $largeIcon->setType('Type value');
 
@@ -50,7 +50,7 @@ $requestBody->setSize(4);
 $requestBody->setBundleId('Bundle Id value');
 
 $minimumSupportedOperatingSystem = new MacOSMinimumOperatingSystem();
-$minimumSupportedOperatingSystem->set@odatatype('microsoft.graph.macOSMinimumOperatingSystem');
+$minimumSupportedOperatingSystem->setOdataType('microsoft.graph.macOSMinimumOperatingSystem');
 
 $minimumSupportedOperatingSystem->setV10_7(true);
 
@@ -83,7 +83,7 @@ $requestBody->setBuildNumber('Build Number value');
 $requestBody->setVersionNumber('Version Number value');
 
 $childAppsMacOSLobChildApp1 = new MacOSLobChildApp();
-$childAppsMacOSLobChildApp1->set@odatatype('microsoft.graph.macOSLobChildApp');
+$childAppsMacOSLobChildApp1->setOdataType('microsoft.graph.macOSLobChildApp');
 
 $childAppsMacOSLobChildApp1->setBundleId('Bundle Id value');
 

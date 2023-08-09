@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMobileAppCategory()
 displayName := "Display Name value"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.DeviceAppManagement().MobileAppCategories().Post(context.Background(), requestBody, nil)
+mobileAppCategories, err := graphClient.DeviceAppManagement().MobileAppCategories().Post(context.Background(), requestBody, nil)
 
 
 ```

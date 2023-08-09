@@ -60,24 +60,28 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDe
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-enrollment-importedwindowsautopilotdeviceidentity-list-list-importedwindowsautopilotdeviceidentities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-enrollment-importedwindowsautopilotdeviceidentity-list-list-importedwindowsautopilotdeviceidentities-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-enrollment-importedwindowsautopilotdeviceidentity-list-list-importedwindowsautopilotdeviceidentities-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-enrollment-importedwindowsautopilotdeviceidentity-list-list-importedwindowsautopilotdeviceidentities-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-enrollment-importedwindowsautopilotdeviceidentity-list-list-importedwindowsautopilotdeviceidentities-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-enrollment-importedwindowsautopilotdeviceidentity-list-list-importedwindowsautopilotdeviceidentities-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-enrollment-importedwindowsautopilotdeviceidentity-list-list-importedwindowsautopilotdeviceidentities-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-enrollment-importedwindowsautopilotdeviceidentity-list-list-importedwindowsautopilotdeviceidentities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-enrollment-importedwindowsautopilotdeviceidentity-list-list-importedwindowsautopilotdeviceidentities-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-enrollment-importedwindowsautopilotdeviceidentity-list-list-importedwindowsautopilotdeviceidentities-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

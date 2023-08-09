@@ -37,7 +37,7 @@ identityProviders := []graphmodels.IdentityProviderable {
 }
 requestBody.SetIdentityProviders(identityProviders)
 
-result, err := graphClient.Identity().B2xUserFlows().Post(context.Background(), requestBody, nil)
+b2xUserFlows, err := graphClient.Identity().B2xUserFlows().Post(context.Background(), requestBody, nil)
 
 
 ```

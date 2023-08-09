@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMobileApp()
@@ -85,7 +85,7 @@ v11_0 := true
 minimumSupportedOperatingSystem.SetV11_0(&v11_0) 
 requestBody.SetMinimumSupportedOperatingSystem(minimumSupportedOperatingSystem)
 
-result, err := graphClient.DeviceAppManagement().MobileApps().Post(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().Post(context.Background(), requestBody, nil)
 
 
 ```

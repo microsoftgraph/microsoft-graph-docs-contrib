@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ServicePrincipalRequestBuilderGetRequestConfiguration();
 $queryParameters = ServicePrincipalRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->select = ["id","appId","displayName","appRoles","oauth2PermissionScopes"];
+$queryParameters->select = ["id","appId","displayName","appRoles","oauth2PermissionScopes","resourceSpecificApplicationPermissions"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
