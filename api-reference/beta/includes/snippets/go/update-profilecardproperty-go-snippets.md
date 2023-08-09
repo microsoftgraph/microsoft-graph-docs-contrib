@@ -37,7 +37,7 @@ annotations := []graphmodels.ProfileCardAnnotationable {
 }
 requestBody.SetAnnotations(annotations)
 
-result, err := graphClient.Organization().ByOrganization().Id("organization-id").Settings().ProfileCardProperties().ByProfileCardPropertieId("profileCardProperty-id").Patch(context.Background(), requestBody, nil)
+profileCardProperties, err := graphClient.Organization().ByOrganizationId("organization-id").Settings().ProfileCardProperties().ByProfileCardPropertyId("profileCardProperty-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

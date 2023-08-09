@@ -1,7 +1,7 @@
 ---
 title: "Update emailAuthenticationMethod"
 description: "Update a user's emailAuthenticationMethod object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -15,16 +15,6 @@ Update a user's email address represented by an [emailAuthenticationMethod](../r
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Permissions acting on self
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
-
-### Permissions acting on other users
-
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
@@ -33,13 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
-## HTTP request
+Users cannot update their own email authentication method.
 
-Update the email method for your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
-<!-- {  "blockType": "ignored" } -->
-``` http
-PATCH /me/authentication/emailMethods/{id}
-```
+## HTTP request
 
 Update the email authentication method for another user's account.
 <!-- {  "blockType": "ignored" } -->
@@ -111,10 +97,6 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-emailauthenticationmethod-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-emailauthenticationmethod-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

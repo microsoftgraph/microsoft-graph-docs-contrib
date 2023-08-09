@@ -23,7 +23,7 @@ requestBody.SetParentReference(parentReference)
 name := "new-item-name.txt"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Patch(context.Background(), requestBody, nil)
+items, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -35,7 +35,7 @@ locale := "en-US"
 defaultRegionalFormat.SetLocale(&locale) 
 requestBody.SetDefaultRegionalFormat(defaultRegionalFormat)
 
-result, err := graphClient.Me().Settings().RegionalAndLanguageSettings().Patch(context.Background(), requestBody, nil)
+regionalAndLanguageSettings, err := graphClient.Me().Settings().RegionalAndLanguageSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

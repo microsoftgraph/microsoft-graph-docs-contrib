@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /sites/{site-id}/pages/{page-id}/canvasLayout/verticalSection
+DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/verticalSection
 ```
 
 ## Request headers
@@ -57,8 +57,10 @@ If the vertical section is not found, this method returns `404 Not Found`.
 
 ### Request
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
-DELETE /sites/{site-id}/pages/{page-id}/canvasLayout/verticalSection
+DELETE https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/verticalSection
 ```
 ### Response
 

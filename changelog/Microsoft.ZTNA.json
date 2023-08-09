@@ -1,0 +1,430 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "networkAccessRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [networkAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-networkAccessRoot?view=graph-rest-beta)  resource. This entity is the container for all APIs relating to the Global Secure Access service.",
+          "Target": "networkAccessRoot"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantStatus](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tenantStatus?view=graph-rest-beta) resource.",
+          "Target": "tenantStatus"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "branchSite",
+          "ChangeType": "Addition",
+          "Description": "Added the [branchSite](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-branchSite?view=graph-rest-beta) resource.",
+          "Target": "branchSite"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-conditionalAccessPolicy?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicy"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessSettings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-conditionalAccessSettings?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessSettings"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [connectivity](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connectivity?view=graph-rest-beta) resource.",
+          "Target": "connectivity"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessSettings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-crossTenantAccessSettings?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessSettings"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceLink](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-deviceLink?view=graph-rest-beta) resource.",
+          "Target": "deviceLink"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enrichedAuditLogs",
+          "ChangeType": "Addition",
+          "Description": "Added the [enrichedAuditLogs](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-enrichedAuditLogs?view=graph-rest-beta) resource.",
+          "Target": "enrichedAuditLogs"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "forwardingOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [forwardingOptions](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-forwardingOptions?view=graph-rest-beta) resource.",
+          "Target": "forwardingOptions"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "forwardingPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [forwardingPolicy](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-forwardingPolicy?view=graph-rest-beta) resource.",
+          "Target": "forwardingPolicy"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "forwardingProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the [forwardingProfile](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-forwardingProfile?view=graph-rest-beta) resource.",
+          "Target": "forwardingProfile"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "forwardingRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [forwardingRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-forwardingRule?view=graph-rest-beta) resource.",
+          "Target": "forwardingRule"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "m365ForwardingRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [m365ForwardingRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-m365ForwardingRule?view=graph-rest-beta) resource.",
+          "Target": "m365ForwardingRule"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policy",
+          "ChangeType": "Addition",
+          "Description": "Added the [policy](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-policy?view=graph-rest-beta) resource.",
+          "Target": "policy"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyLink](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-policyLink?view=graph-rest-beta) resource.",
+          "Target": "policyLink"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-policyRule?view=graph-rest-beta) resource.",
+          "Target": "policyRule"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privateAccessForwardingRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [privateAccessForwardingRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-privateAccessForwardingRule?view=graph-rest-beta) resource.",
+          "Target": "privateAccessForwardingRule"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profile",
+          "ChangeType": "Addition",
+          "Description": "Added the [profile](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-profile?view=graph-rest-beta) resource.",
+          "Target": "profile"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the [settings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "associatedBranch",
+          "ChangeType": "Addition",
+          "Description": "Added the [associatedBranch](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-associatedBranch?view=graph-rest-beta) resource type.",
+          "Target": "associatedBranch"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "association",
+          "ChangeType": "Addition",
+          "Description": "Added the [association](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-association?view=graph-rest-beta) resource type.",
+          "Target": "association"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bgpConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [bgpConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-bgpConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "bgpConfiguration"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enrichedAuditLogsSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [enrichedAuditLogsSettings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-enrichedAuditLogsSettings?view=graph-rest-beta) resource type.",
+          "Target": "enrichedAuditLogsSettings"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fqdn",
+          "ChangeType": "Addition",
+          "Description": "Added the [fqdn](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-fqdn?view=graph-rest-beta) resource type.",
+          "Target": "fqdn"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ipAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the [ipAddress](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-ipAddress?view=graph-rest-beta) resource type.",
+          "Target": "ipAddress"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ipRange",
+          "ChangeType": "Addition",
+          "Description": "Added the [ipRange](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-ipRange?view=graph-rest-beta) resource type.",
+          "Target": "ipRange"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ipSubnet",
+          "ChangeType": "Addition",
+          "Description": "Added the [ipSubnet](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-ipSubnet?view=graph-rest-beta) resource type.",
+          "Target": "ipSubnet"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redundancyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redundancyConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-redundancyConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "redundancyConfiguration"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ruleDestination",
+          "ChangeType": "Addition",
+          "Description": "Added the [ruleDestination](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-ruleDestination?view=graph-rest-beta) resource type.",
+          "Target": "ruleDestination"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tunnelConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [tunnelConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tunnelConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "tunnelConfiguration"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tunnelConfigurationIKEv2Custom",
+          "ChangeType": "Addition",
+          "Description": "Added the [tunnelConfigurationIKEv2Custom](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tunnelConfigurationIKEv2Custom?view=graph-rest-beta) resource type.",
+          "Target": "tunnelConfigurationIKEv2Custom"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tunnelConfigurationIKEv2Default",
+          "ChangeType": "Addition",
+          "Description": "Added the [tunnelConfigurationIKEv2Default](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tunnelConfigurationIKEv2Default?view=graph-rest-beta) resource type.",
+          "Target": "tunnelConfigurationIKEv2Default"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "url",
+          "ChangeType": "Addition",
+          "Description": "Added the [url](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-url?view=graph-rest-beta) resource type.",
+          "Target": "url"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "bandwidthCapacityInMbps",
+          "ChangeType": "Addition",
+          "Description": "Added the **bandwidthCapacityInMbps** enumeration type.",
+          "Target": "bandwidthCapacityInMbps"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "connectivityState",
+          "ChangeType": "Addition",
+          "Description": "Added the **connectivityState** enumeration type.",
+          "Target": "connectivityState"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceVendor",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceVendor** enumeration type.",
+          "Target": "deviceVendor"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "dhGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the **dhGroup** enumeration type.",
+          "Target": "dhGroup"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "forwardingCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **forwardingCategory** enumeration type.",
+          "Target": "forwardingCategory"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "forwardingRuleAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **forwardingRuleAction** enumeration type.",
+          "Target": "forwardingRuleAction"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "ikeEncryption",
+          "ChangeType": "Addition",
+          "Description": "Added the **ikeEncryption** enumeration type.",
+          "Target": "ikeEncryption"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "ikeIntegrity",
+          "ChangeType": "Addition",
+          "Description": "Added the **ikeIntegrity** enumeration type.",
+          "Target": "ikeIntegrity"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "ipSecEncryption",
+          "ChangeType": "Addition",
+          "Description": "Added the **ipSecEncryption** enumeration type.",
+          "Target": "ipSecEncryption"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "ipSecIntegrity",
+          "ChangeType": "Addition",
+          "Description": "Added the **ipSecIntegrity** enumeration type.",
+          "Target": "ipSecIntegrity"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "networkDestinationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **networkDestinationType** enumeration type.",
+          "Target": "networkDestinationType"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "networkingProtocol",
+          "ChangeType": "Addition",
+          "Description": "Added the **networkingProtocol** enumeration type.",
+          "Target": "networkingProtocol"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "onboardingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **onboardingStatus** enumeration type.",
+          "Target": "onboardingStatus"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pfsGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the **pfsGroup** enumeration type.",
+          "Target": "pfsGroup"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "redundancyTier",
+          "ChangeType": "Addition",
+          "Description": "Added the **redundancyTier** enumeration type.",
+          "Target": "redundancyTier"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "region",
+          "ChangeType": "Addition",
+          "Description": "Added the **region** enumeration type.",
+          "Target": "region"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "status",
+          "ChangeType": "Addition",
+          "Description": "Added the **status** enumeration type.",
+          "Target": "status"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "trafficForwardingType",
+          "ChangeType": "Addition",
+          "Description": "Added the **trafficForwardingType** enumeration type.",
+          "Target": "trafficForwardingType"
+        }
+      ],
+      "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-11T00:00:00.5942072Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    }
+  ]
+}

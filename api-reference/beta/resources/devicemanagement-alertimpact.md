@@ -21,6 +21,7 @@ Represents the impact of an alert event.
 
 |Property|Type|Description|
 |:---|:---|:---|
+|alertImpactDetails|[keyValuePair](../resources/keyvaluepair.md) collection|The detail information of the impact. For example, if the _Frontline Cloud PCs near concurrency limit_ alert is triggered, the details contain the impacted Frontline license SKU name, such as `Windows 365 Frontline 2 vCPU/8GB/128GB`, and the corresponding impacted value. |
 |aggregationType|[microsoft.graph.deviceManagement.aggregationType](../resources/devicemanagement-ruleThreshold.md#aggregationtype-values)|The aggregation type of the impact. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`. |
 |value|Int32|The number value of the impact. For the aggregation types of `count` and `affectedCloudPcCount`, the value indicates the number of affected instances. For example, `6 affectedCloudPcCount` means that 6 Cloud PCs are affected. For the aggregation types of `percentage` and `affectedCloudPcPercentage`, the value indicates the percent of affected instances. For example, `12 affectedCloudPcPercentage` means that 12% of Cloud PCs are affected. |
 
@@ -39,6 +40,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagement.alertImpact",
+  "alertImpactDetails": [{"@odata.type": "microsoft.graph.security.keyValuePair"}],
   "aggregationType": "String",
   "value": "Int32"
 }

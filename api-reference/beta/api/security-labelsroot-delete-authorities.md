@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/security/labels/authorities/{authorityTe
 
 ---
 
-
 ### Response
 The following is an example of the response.
 >

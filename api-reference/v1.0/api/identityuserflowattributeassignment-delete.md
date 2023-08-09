@@ -85,10 +85,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/user
 [!INCLUDE [sample-code](../includes/snippets/php/delete-userattributeassignments-from-b2xidentityuserflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-userattributeassignments-from-b2xidentityuserflow-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-userattributeassignments-from-b2xidentityuserflow-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

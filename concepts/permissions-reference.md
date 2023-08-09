@@ -20,7 +20,7 @@ To find the unique identifiers for all permissions, see [All permissions and IDs
 To read information about all Microsoft Graph permissions programmatically, sign-in to Graph Explorer using an account that has at least the *Application.Read.All* permission and run the following request.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')?$select=id,appId,displayName,appRoles,oauth2PermissionScopes
+GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')?$select=id,appId,displayName,appRoles,oauth2PermissionScopes,resourceSpecificApplicationPermissions
 ```
 
 [!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
@@ -173,7 +173,7 @@ None.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Application.Read.All_ | Read applications | Allows the app to read applications and service principals without a signed-in user. | Yes |
 | _Application.ReadWrite.All_ | Read and write all apps | Allows the calling app to create, and manage (read, update, update application secrets and delete) applications and service principals without a signed-in user.  Does not allow management of consent grants or application assignments to users or groups. | Yes |
-| _Application.ReadWrite.OwnedBy_ | Manage apps that this app creates or owns | Allows the calling app to create other applications and service principals, and fully manage those applications and service principals (read, update, update application secrets and delete), without a signed-in user.  It cannot update any applications that it is not an owner of. Does not allow management of consent grants or application assignments to users or groups. | Yes |
+| _Application.ReadWrite.OwnedBy_ | Manage apps that this app creates or owns | Allows the calling app to create other applications and service principals, and fully manage those applications and service principals (read, update, update application secrets and delete), without a signed-in user.  It cannot update any applications that it is not an owner of. | Yes |
 | _AppRoleAssignment.ReadWrite.All_ | Manage app permission grants and app role assignments | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, without a signed-in user. | Yes |
 | _DelegatedPermissionGrant.ReadWrite.All_ | Manage all delegated permission grants | Allows the app to grant or revoke any delegated permission for any API (including Microsoft Graph), without a signed-in user. | Yes |
 
@@ -1139,7 +1139,7 @@ Group functionality is not supported on personal Microsoft accounts.
 
 For Microsoft 365 groups, Group permissions grant the app access to the contents of the group; for example, conversations, files, notes, and so on.
 
-For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](known-issues.md).
+For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues).
 
 In some cases, an app may need [Directory permissions](#directory-permissions) to read some group properties like `member` and `memberOf`. For example, if a group has a one or more [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) as members, the app will need effective permissions to read service principals through being granted one of the _Directory.\*_ permissions, otherwise Microsoft Graph will return an error. (In the case of delegated permissions, the signed-in user will also need sufficient privileges in the organization to read service principals.) The same guidance applies for the `memberOf` property, which can return [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true).
 
@@ -1584,6 +1584,22 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+
+## Network access permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|NetworkAccessPolicy.Read.All|Read security and routing policies for network access|Allows the app to read your organization's security and routing network access policies on behalf of the signed-in user.|No|No|
+|NetworkAccessBranch.Read.All|Read properties of branches for network access|Allows the app to read your organization's branches for network access on behalf of the signed-in user.|No|No|
+|NetworkAccessPolicy.ReadWrite.All|Read and write security and routing policies for network access|Allows the app to read and write your organization's security and routing network access policies on behalf of the signed-in user.|Yes|No|
+|NetworkAccessBranch.ReadWrite.All|Read and write properties of branches for network access|Allows the app to read and write your organization's branches for network access on behalf of the signed-in user.|Yes|No|
+
+
+---
+
+
 ## Notes permissions
 
 #### Delegated permissions
@@ -1652,18 +1668,20 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_OnlineMeetings.Read_|Read Online Meeting.|Allows an app to read online meeting details on behalf of the signed-in user.|No|No|
-|_OnlineMeetings.ReadWrite_|Read and Create Online Meetings.|Allows an app to create, read online meetings on behalf of the signed-in user. |No|No|
-|_OnlineMeetingArtifact.Read.All_|Read Online Meeting artifacts.|Allows the app to read online meeting artifacts on behalf of the signed-in user. |No|No|
-|_OnlineMeetingTranscript.Read.All_|Read all transcripts of online meetings.|Allows the app to read all transcripts of online meetings on behalf of the signed-in user. |Yes|No|
+|_OnlineMeetings.Read_|Read user's online meetings.|Allows the app to read online meeting details on behalf of the signed-in user.|No|No|
+|_OnlineMeetings.ReadWrite_|Read and create user's online meetings.|Allows the app to read and create online meetings on behalf of the signed-in user. |No|No|
+|_OnlineMeetingArtifact.Read.All_|Read user's online meeting artifacts.|Allows the app to read online meeting artifacts on behalf of the signed-in user. |No|No|
+|_OnlineMeetingRecording.Read.All_|Read all recordings of online meetings.|Allows the app to read all recordings of online meetings, on behalf of the signed-in user. |Yes|No|
+|_OnlineMeetingTranscript.Read.All_|Read all transcripts of online meetings.|Allows the app to read all transcripts of online meetings, on behalf of the signed-in user. |Yes|No|
 
 #### Application permissions
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|Read Online Meeting details from the app |Allows the app to read Online Meeting details in your organization without a signed-in user.|Yes|
-|_OnlineMeetings.ReadWrite.All_|Read Online Meeting details from the app|Allows an app to create, read Online Meetings without a signed-in user.|Yes|
-|_OnlineMeetingArtifact.Read.All_|Read Online Meeting artifacts from the app |Allows the app to read Online Meeting artifacts in your organization, without a signed-in user.|Yes|
+|_OnlineMeetings.Read.All_|Read online meeting details. |Allows the app to read online meeting details in your organization, without a signed-in user.|Yes|
+|_OnlineMeetings.ReadWrite.All_|Read and create online meetings|Allows the app to read and create online meetings as an application in your organization.|Yes|
+|_OnlineMeetingArtifact.Read.All_|Read online meeting artifacts |Allows the app to read online meeting artifacts in your organization, without a signed-in user.|Yes|
+|_OnlineMeetingRecording.Read.All_|Read all recordings of online meetings.|Allows the app to read all recordings of all online meetings, without a signed-in user. |Yes|
 |_OnlineMeetingTranscript.Read.All_|Read all transcripts of online meetings.|Allows the app to read all transcripts of all online meetings, without a signed-in user. |Yes|
 
 > **Important**
@@ -1703,7 +1721,11 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ### Application permissions
 
-None.
+| Permission                                   | Display String                                                       | Description                                                                                                                            | Admin Consent Required | Microsoft Account supported |
+| :------------------------------------------- | :------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :-------------------------- |
+| OnPremDirectorySynchronization.Read.All      | Read all on-premises directory synchronization information           | Allows the app to read all on-premises directory synchronization information for the organization, without a signed-in user.           | Yes                    | No                          |
+| OnPremDirectorySynchronization.ReadWrite.All | Read and write all on-premises directory synchronization information | Allows the app to read and write all on-premises directory synchronization information for the organization, without a signed-in user. | Yes                    | No                          |
+
 ---
 
 ## On-premises publishing profiles permissions
@@ -1826,6 +1848,24 @@ The People.Read.All permission is only valid for work and school accounts.
 * _People.Read.All_: Read a list of relevant people to another user in the same organization (`GET /users('{id})/people`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## People settings permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _PeopleSettings.Read.All_ | Read tenant-wide people settings | Allows the application to read tenant-wide people settings on behalf of the signed-in user. | Yes | No |
+| _PeopleSettings.ReadWrite.All_ | Read and write tenant-wide people settings | Allows the application to read and write tenant-wide people settings on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _PeopleSettings.Read.All_ | Read all tenant-wide people settings | Allows the application to read tenant-wide people settings without a signed-in user. | Yes |
+| _PeopleSettings.ReadWrite.All_ | Read and write all tenant-wide people settings | Allows the application to read and write tenant-wide people settings without a signed-in user. | Yes |
 
 ---
 

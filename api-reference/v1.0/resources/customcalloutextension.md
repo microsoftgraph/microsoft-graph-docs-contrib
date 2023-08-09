@@ -16,8 +16,11 @@ An abstract type that defines the configuration for apps that can extend the cus
 This abstract type is inherited by the following derived types.
 
 - [customTaskExtension](../resources/identitygovernance-customtaskextension.md)
+- [accessPackageAssignmentRequestWorkflowExtension](accesspackageassignmentrequestworkflowextension.md)
+- [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)
 
 Inherits from [entity](entity.md).
+
 
 ## Methods
 
@@ -35,9 +38,11 @@ None.
 |id|String|Identifier for the customCalloutExtension object. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

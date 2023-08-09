@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc planner plans details patch --planner-plan-id {plannerPlan-id} --if-match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=" --body '{\
   "sharedWith": {\
     "6463a5ce-2119-4198-9f2a-628761df4a62" : true,\
