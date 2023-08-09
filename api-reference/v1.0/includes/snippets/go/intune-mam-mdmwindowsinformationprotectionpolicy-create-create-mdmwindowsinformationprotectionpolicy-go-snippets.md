@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMdmWindowsInformationProtectionPolicy()
@@ -220,7 +220,7 @@ requestBody.SetSmbAutoEncryptedFileExtensions(smbAutoEncryptedFileExtensions)
 isAssigned := true
 requestBody.SetIsAssigned(&isAssigned) 
 
-result, err := graphClient.DeviceAppManagement().MdmWindowsInformationProtectionPolicies().Post(context.Background(), requestBody, nil)
+mdmWindowsInformationProtectionPolicies, err := graphClient.DeviceAppManagement().MdmWindowsInformationProtectionPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

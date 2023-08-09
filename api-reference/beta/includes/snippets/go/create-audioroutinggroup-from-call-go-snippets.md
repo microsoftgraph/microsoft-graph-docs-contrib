@@ -29,7 +29,7 @@ receivers := []string {
 }
 requestBody.SetReceivers(receivers)
 
-result, err := graphClient.Communications().Calls().ByCallId("call-id").AudioRoutingGroups().Post(context.Background(), requestBody, nil)
+audioRoutingGroups, err := graphClient.Communications().Calls().ByCallId("call-id").AudioRoutingGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

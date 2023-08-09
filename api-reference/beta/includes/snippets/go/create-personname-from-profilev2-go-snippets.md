@@ -29,7 +29,7 @@ requestBody.SetLanguageTag(&languageTag)
 maiden := null
 requestBody.SetMaiden(&maiden) 
 
-result, err := graphClient.Me().Profile().Names().Post(context.Background(), requestBody, nil)
+names, err := graphClient.Me().Profile().Names().Post(context.Background(), requestBody, nil)
 
 
 ```

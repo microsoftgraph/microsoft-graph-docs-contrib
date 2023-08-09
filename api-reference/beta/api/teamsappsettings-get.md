@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Not supported|
 
 > [!NOTE]
-> TeamworkAppSettings.* permissions might not be visible in the Azure portal. For details and workarounds, see [known issues](/graph/known-issues#teamworkappsettings-permissions-are-not-visible-in-the-azure-portal).
+> TeamworkAppSettings.* permissions might not be visible in the Azure portal. For details and workarounds, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=14974).
 
 ## HTTP request
 

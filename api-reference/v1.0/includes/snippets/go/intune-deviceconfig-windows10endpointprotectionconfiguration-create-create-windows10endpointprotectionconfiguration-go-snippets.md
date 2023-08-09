@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceConfiguration()
@@ -179,7 +179,7 @@ blockCrossOrganizationWriteAccess := true
 bitLockerRemovableDrivePolicy.SetBlockCrossOrganizationWriteAccess(&blockCrossOrganizationWriteAccess) 
 requestBody.SetBitLockerRemovableDrivePolicy(bitLockerRemovableDrivePolicy)
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

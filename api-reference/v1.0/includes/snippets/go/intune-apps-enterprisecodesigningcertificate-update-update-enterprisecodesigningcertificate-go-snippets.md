@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEnterpriseCodeSigningCertificate()
@@ -34,7 +34,7 @@ requestBody.SetExpirationDateTime(&expirationDateTime)
 uploadDateTime , err := time.Parse(time.RFC3339, "2016-12-31T23:58:46.5747426-08:00")
 requestBody.SetUploadDateTime(&uploadDateTime) 
 
-result, err := graphClient.DeviceAppManagement().EnterpriseCodeSigningCertificates().ByEnterpriseCodeSigningCertificateId("enterpriseCodeSigningCertificate-id").Patch(context.Background(), requestBody, nil)
+enterpriseCodeSigningCertificates, err := graphClient.DeviceAppManagement().EnterpriseCodeSigningCertificates().ByEnterpriseCodeSigningCertificateId("enterpriseCodeSigningCertificate-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

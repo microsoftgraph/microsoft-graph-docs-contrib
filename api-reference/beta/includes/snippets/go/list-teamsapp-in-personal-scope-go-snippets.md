@@ -26,7 +26,7 @@ configuration := &graphappcatalogs.AppCatalogsTeamsAppsRequestBuilderGetRequestC
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.AppCatalogs().TeamsApps().Get(context.Background(), configuration)
+teamsApps, err := graphClient.AppCatalogs().TeamsApps().Get(context.Background(), configuration)
 
 
 ```

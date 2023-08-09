@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceCompliancePolicy()
@@ -51,7 +51,7 @@ requestBody.SetDeviceThreatProtectionRequiredSecurityLevel(&deviceThreatProtecti
 managedEmailProfileRequired := true
 requestBody.SetManagedEmailProfileRequired(&managedEmailProfileRequired) 
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicies().Post(context.Background(), requestBody, nil)
+deviceCompliancePolicies, err := graphClient.DeviceManagement().DeviceCompliancePolicies().Post(context.Background(), requestBody, nil)
 
 
 ```
