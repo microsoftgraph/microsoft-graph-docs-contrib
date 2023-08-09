@@ -25,9 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeAuditLogs.Read.All|
 
-The signed-in user must also be assigned the following minimum [directory role](/azure/active-directory/roles/permissions-reference):
-
-* 
+[!INCLUDE [rbac-customsecurityattibutes-audit-apis-read](../includes/rbac-for-apis/rbac-customsecurityattibutes-audit-apis-read.md)]
 
 ## HTTP request
 
