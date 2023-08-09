@@ -845,7 +845,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http1)
 
 ```http
 GET https://graph.microsoft.com/beta/users/e652dd92-dd63-4fcc-b5b2-2005681e8e9f/chats?$filter=installedApps/any(a:a/teamsApp/id eq '608d8644-acb1-4ab0-bca5-66fbb6ed62aa')
