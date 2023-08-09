@@ -4,7 +4,7 @@ description: "Represents a customized version of the localized policy files of t
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: rajadineshmurugesan-microsoft
+author: "AlexFilipin"
 ---
 
 # agreementFileVersion resource type
