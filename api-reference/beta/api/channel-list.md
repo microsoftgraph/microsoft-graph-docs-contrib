@@ -41,7 +41,7 @@ GET /teams/{team-id}/channels
 This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ### Use $select for better performance
-Populating the **email** and **moderationSettings** properties for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** and **moderationSettings** properties to improve performance.
+Populating the **email** property for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** property to improve performance.
 
 > **Note**: This API does not provide **moderationSettings** property for a channel by default to improve the performance. To get these properties, use the `$select` query parameter.
 
@@ -252,8 +252,6 @@ GET https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 
 #### Response
