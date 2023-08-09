@@ -1,7 +1,7 @@
 ---
 title: "Use the Azure AD recommendations API to implement Azure AD best practices for your tenant"
 description: "Azure Active Directory (Azure AD) recommendations are personalized and actionable insights for you to implement Azure AD best practices in your tenant."
-author: "hafowler"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
