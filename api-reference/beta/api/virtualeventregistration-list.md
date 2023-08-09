@@ -65,7 +65,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_virtualEventRegistration"
+  "name": "list_virtualEventRegistrations"
 }
 -->
 ``` http
