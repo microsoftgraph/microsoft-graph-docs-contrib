@@ -7,3 +7,5 @@ The signed-in user must also be assigned one of the following minimum [directory
 
 - Attribute Log Reader
 - Attribute Log Administrator
+
+By default, Global Administrator and other administrator roles do not have permissions to read custom security attribute audit logs.
