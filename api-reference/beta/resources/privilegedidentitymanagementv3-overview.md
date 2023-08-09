@@ -139,5 +139,5 @@ The tenant where Privileged Identity Management is being used must have sufficie
 - Learn more about role settings in PIM through the following articles:
   - [Working with rules for Azure AD roles in PIM APIs](/graph/identity-governance-pim-rules-overview)
   - [Use PIM APIs to update Azure AD rules](/graph/how-to-pim-update-rules)
-- Follow these tutorials to learn more about using PIM APIs
+- Follow this tutorial to learn more about using PIM APIs:
   - [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
