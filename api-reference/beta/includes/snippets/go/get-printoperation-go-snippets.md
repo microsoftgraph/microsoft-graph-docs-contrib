@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Print().Operations().ByOperationId("printOperation-id").Get(context.Background(), nil)
+operations, err := graphClient.Print().Operations().ByPrintOperationId("printOperation-id").Get(context.Background(), nil)
 
 
 ```

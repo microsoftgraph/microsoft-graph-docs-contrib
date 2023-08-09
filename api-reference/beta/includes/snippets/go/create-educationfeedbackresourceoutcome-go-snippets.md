@@ -21,7 +21,7 @@ displayName := "Document1.docx"
 feedbackResource.SetDisplayName(&displayName) 
 requestBody.SetFeedbackResource(feedbackResource)
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Submissions().BySubmissionId("educationSubmission-id").Outcomes().Post(context.Background(), requestBody, nil)
+outcomes, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Submissions().ByEducationSubmissionId("educationSubmission-id").Outcomes().Post(context.Background(), requestBody, nil)
 
 
 ```

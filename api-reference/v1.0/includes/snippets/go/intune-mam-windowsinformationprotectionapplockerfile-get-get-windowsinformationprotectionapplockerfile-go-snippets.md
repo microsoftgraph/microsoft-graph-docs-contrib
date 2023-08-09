@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceAppManagement().WindowsInformationProtectionPolicies().ByWindowsInformationProtectionPolicieId("windowsInformationProtectionPolicy-id").ExemptAppLockerFiles().ByExemptAppLockerFileId("windowsInformationProtectionAppLockerFile-id").Get(context.Background(), nil)
+exemptAppLockerFiles, err := graphClient.DeviceAppManagement().WindowsInformationProtectionPolicies().ByWindowsInformationProtectionPolicyId("windowsInformationProtectionPolicy-id").ExemptAppLockerFiles().ByWindowsInformationProtectionAppLockerFileId("windowsInformationProtectionAppLockerFile-id").Get(context.Background(), nil)
 
 
 ```

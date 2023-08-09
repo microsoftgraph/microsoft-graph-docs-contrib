@@ -57,6 +57,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 ### Request
 
 The following is an example of a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_sponsors_from_user"
@@ -65,6 +66,16 @@ The following is an example of a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/users/{user-id}/sponsors/{directory-object-id}/$ref
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-sponsors-from-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-sponsors-from-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

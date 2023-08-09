@@ -85,20 +85,28 @@ Content-length: 211
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-mam-windowsinformationprotectionapplockerfile-create-create-windowsinformationprotectionapplockerfile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-mam-windowsinformationprotectionapplockerfile-create-create-windowsinformationprotectionapplockerfile-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-mam-windowsinformationprotectionapplockerfile-create-create-windowsinformationprotectionapplockerfile-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-mam-windowsinformationprotectionapplockerfile-create-create-windowsinformationprotectionapplockerfile-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-mam-windowsinformationprotectionapplockerfile-create-create-windowsinformationprotectionapplockerfile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-mam-windowsinformationprotectionapplockerfile-create-create-windowsinformationprotectionapplockerfile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-mam-windowsinformationprotectionapplockerfile-create-create-windowsinformationprotectionapplockerfile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-mam-windowsinformationprotectionapplockerfile-create-create-windowsinformationprotectionapplockerfile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-mam-windowsinformationprotectionapplockerfile-create-create-windowsinformationprotectionapplockerfile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

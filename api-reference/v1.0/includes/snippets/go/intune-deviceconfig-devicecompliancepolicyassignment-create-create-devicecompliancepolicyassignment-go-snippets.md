@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceCompliancePolicyAssignment()
@@ -21,7 +21,7 @@ collectionId := "Collection Id value"
 target.SetCollectionId(&collectionId) 
 requestBody.SetTarget(target)
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicieId("deviceCompliancePolicy-id").Assignments().Post(context.Background(), requestBody, nil)
+assignments, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicyId("deviceCompliancePolicy-id").Assignments().Post(context.Background(), requestBody, nil)
 
 
 ```

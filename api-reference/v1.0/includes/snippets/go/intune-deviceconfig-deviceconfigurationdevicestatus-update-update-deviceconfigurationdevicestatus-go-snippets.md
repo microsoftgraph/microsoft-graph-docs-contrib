@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceConfigurationDeviceStatus()
@@ -32,7 +32,7 @@ requestBody.SetLastReportedDateTime(&lastReportedDateTime)
 userPrincipalName := "User Principal Name value"
 requestBody.SetUserPrincipalName(&userPrincipalName) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").DeviceStatuses().ByDeviceStatuseId("deviceConfigurationDeviceStatus-id").Patch(context.Background(), requestBody, nil)
+deviceStatuses, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").DeviceStatuses().ByDeviceConfigurationDeviceStatusId("deviceConfigurationDeviceStatus-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

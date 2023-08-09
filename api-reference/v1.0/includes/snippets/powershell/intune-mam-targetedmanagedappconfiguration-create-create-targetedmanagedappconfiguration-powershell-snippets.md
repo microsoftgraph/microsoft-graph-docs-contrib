@@ -22,6 +22,6 @@ $params = @{
 	isAssigned = $true
 }
 
-New-MgDeviceAppMgtTargetedManagedAppConfiguration -BodyParameter $params
+New-MgDeviceAppManagementTargetedManagedAppConfiguration -BodyParameter $params
 
 ```

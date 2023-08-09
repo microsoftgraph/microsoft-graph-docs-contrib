@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Reports().MonthlyPrintUsageByPrinter().Get(context.Background(), nil)
+monthlyPrintUsageByPrinter, err := graphClient.Reports().MonthlyPrintUsageByPrinter().Get(context.Background(), nil)
 
 
 ```

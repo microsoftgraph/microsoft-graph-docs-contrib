@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EditionUpgradeConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.editionUpgradeConfiguration');
+$requestBody->setOdataType('#microsoft.graph.editionUpgradeConfiguration');
 
 $requestBody->setDescription('Description value');
 
@@ -18,9 +18,9 @@ $requestBody->setDisplayName('Display Name value');
 
 $requestBody->setVersion(7);
 
-$requestBody->setLicenseType(new EditionUpgradeLicenseType('licensefile'));
+$requestBody->setLicenseType(new EditionUpgradeLicenseType('licenseFile'));
 
-$requestBody->setTargetEdition(new Windows10EditionType('windows10enterprisen'));
+$requestBody->setTargetEdition(new Windows10EditionType('windows10EnterpriseN'));
 
 $requestBody->setLicense('License value');
 

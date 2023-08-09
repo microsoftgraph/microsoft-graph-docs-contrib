@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.ReadWrite|
+|Delegated (work or school account)|UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|UserAuthenticationMethod.ReadWrite|
+|Application|UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All|
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
