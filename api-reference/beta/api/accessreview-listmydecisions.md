@@ -2,7 +2,7 @@
 title: "List my accessReview decisions (deprecated)"
 description: "In the Azure AD access reviews feature, retrieve the decisions of an accessReview object for the calling user as reviewer."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -113,10 +113,10 @@ Content-type: application/json
 
 ## See also
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[Get accessReview](accessreview-get.md) |	[accessReview](../resources/accessreview.md) |	Retrieve an access review. |
-|[List accessReview decisions](accessreview-listdecisions.md) |		[accessReviewDecision](../resources/accessreviewdecision.md) collection|	Retrieve all the decisions of an accessReview.|
+|[Get accessReview](accessreview-get.md) |    [accessReview](../resources/accessreview.md) |    Retrieve an access review. |
+|[List accessReview decisions](accessreview-listdecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md) collection|    Retrieve all the decisions of an accessReview.|
 
 
 <!--
