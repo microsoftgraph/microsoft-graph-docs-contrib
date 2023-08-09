@@ -66,7 +66,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |managedServiceIdentity|[managedIdentity](../resources/managedidentity.md)|Contains information about the managed identity used for the sign in, including its type and associated Azure Resource Manager (ARM) resource ID.|
 |networkLocationDetails|[networkLocationDetail](networklocationdetail.md) collection|The network location details including the type of network used and its names.|
 |originalRequestId|String|The request identifier of the first request in the authentication sequence. <br/><br/> Supports `$filter` (`eq`).|
-|originalTransferMethod|originalTransferMethods|Transfer method used to initiate a session throughout all subsequent request. The possible values are: `none`, `deviceCodeFlow`, `authenticationTransfer`.|
+|originalTransferMethod|originalTransferMethods|Transfer method used to initiate a session throughout all subsequent request. The possible values are: `none`, `deviceCodeFlow`, `authenticationTransfer`, 'unknownFutureValue'.|
 |privateLinkDetails|[privateLinkDetails](../resources/privatelinkdetails.md)|Contains information about the Azure AD Private Link policy that is associated with the sign in event.|
 |processingTimeInMilliseconds|Int|The request processing time in milliseconds in AD STS.|
 |resourceDisplayName|String|The name of the resource that the user signed in to. <br/><br/> Supports `$filter` (`eq`).|
