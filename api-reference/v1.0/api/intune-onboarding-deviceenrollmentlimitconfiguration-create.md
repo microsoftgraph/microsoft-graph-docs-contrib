@@ -86,24 +86,28 @@ Content-length: 205
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-deviceenrollmentlimitconfiguration-create-create-deviceenrollmentlimitconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-onboarding-deviceenrollmentlimitconfiguration-create-create-deviceenrollmentlimitconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-onboarding-deviceenrollmentlimitconfiguration-create-create-deviceenrollmentlimitconfiguration-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-deviceenrollmentlimitconfiguration-create-create-deviceenrollmentlimitconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-deviceenrollmentlimitconfiguration-create-create-deviceenrollmentlimitconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-deviceenrollmentlimitconfiguration-create-create-deviceenrollmentlimitconfiguration-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-onboarding-deviceenrollmentlimitconfiguration-create-create-deviceenrollmentlimitconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-onboarding-deviceenrollmentlimitconfiguration-create-create-deviceenrollmentlimitconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-onboarding-deviceenrollmentlimitconfiguration-create-create-deviceenrollmentlimitconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-deviceenrollmentlimitconfiguration-create-create-deviceenrollmentlimitconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

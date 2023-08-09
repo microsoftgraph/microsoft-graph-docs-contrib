@@ -234,7 +234,7 @@ Content-Type: application/json
         "scopeType": "DirectoryRole",
         "lastModifiedDateTime": "2023-03-23T21:44:08.813Z",
         "lastModifiedBy": {
-          "displayName": "Weijie Lin",
+          "displayName": "Allan Deyoung",
           "id": null
         },
         "rules": [

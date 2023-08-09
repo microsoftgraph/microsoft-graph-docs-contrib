@@ -17,7 +17,7 @@ To attach multiple files to a message, choose the approach for each file based o
 This article illustrates the second approach step by step, creating and using an upload session to add a large file attachment (of size over 3 MB) to an Outlook item. Each step shows the corresponding code for a message and for an event. Upon successfully uploading the entire file, the article shows getting a response header that contains an ID for the file attachment, and then using that attachment ID to get the raw attachment content or attachment metadata. 
 
 > [!IMPORTANT] 
-> Be aware of a [known issue](known-issues.md#attaching-large-files-to-messages-with-delegated-permissions-can-fail) if you're attaching large files to a message or event in a shared or delegated mailbox.
+> Be aware of a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13644) if you're attaching large files to a message or event in a shared or delegated mailbox.
 
 ## Step 1: Create an upload session
 
@@ -57,35 +57,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/walkthrough-create-uploadsession-message-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/walkthrough-create-uploadsession-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/walkthrough-create-uploadsession-message-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/walkthrough-create-uploadsession-message-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/walkthrough-create-uploadsession-message-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/walkthrough-create-uploadsession-message-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/walkthrough-create-uploadsession-message-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/walkthrough-create-uploadsession-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/walkthrough-create-uploadsession-message-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/walkthrough-create-uploadsession-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/walkthrough-create-uploadsession-message-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/walkthrough-create-uploadsession-message-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/walkthrough-create-uploadsession-message-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/walkthrough-create-uploadsession-message-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/walkthrough-create-uploadsession-message-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/walkthrough-create-uploadsession-message-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -137,35 +137,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/walkthrough-create-uploadsession-event-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/walkthrough-create-uploadsession-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/walkthrough-create-uploadsession-event-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/walkthrough-create-uploadsession-event-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/walkthrough-create-uploadsession-event-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/walkthrough-create-uploadsession-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/walkthrough-create-uploadsession-event-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/walkthrough-create-uploadsession-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/walkthrough-create-uploadsession-event-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/walkthrough-create-uploadsession-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/walkthrough-create-uploadsession-event-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/walkthrough-create-uploadsession-event-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/walkthrough-create-uploadsession-event-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/walkthrough-create-uploadsession-event-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/walkthrough-create-uploadsession-event-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/walkthrough-create-uploadsession-event-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

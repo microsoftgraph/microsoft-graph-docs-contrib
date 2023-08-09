@@ -21,12 +21,12 @@ outputName := "Export reviewset query via API"
 requestBody.SetOutputName(&outputName) 
 description := "Export for the Contoso investigation 2"
 requestBody.SetDescription(&description) 
-exportOptions := graphmodels.ORIGINALFILES,FILEINFO,TAGS_EXPORTOPTIONS 
+exportOptions := graphmodels.ORIGINALFILES,TAGS_EXPORTOPTIONS 
 requestBody.SetExportOptions(&exportOptions) 
 exportStructure := graphmodels.DIRECTORY_EXPORTFILESTRUCTURE 
 requestBody.SetExportStructure(&exportStructure) 
 
-graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().ByReviewSetId("ediscoveryReviewSet-id").Queries().ByQuerieId("ediscoveryReviewSetQuery-id").MicrosoftGraphSecurityExport().Post(context.Background(), requestBody, nil)
+graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().ByEdiscoveryReviewSetId("ediscoveryReviewSet-id").Queries().ByEdiscoveryReviewSetQueryId("ediscoveryReviewSetQuery-id").MicrosoftGraphSecurityExport().Post(context.Background(), requestBody, nil)
 
 
 ```

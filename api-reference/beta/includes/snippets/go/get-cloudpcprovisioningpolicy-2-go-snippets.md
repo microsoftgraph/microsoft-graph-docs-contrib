@@ -22,7 +22,7 @@ configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointProvision
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().ByProvisioningPolicieId("cloudPcProvisioningPolicy-id").Get(context.Background(), configuration)
+provisioningPolicies, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().ByCloudPcProvisioningPolicyId("cloudPcProvisioningPolicy-id").Get(context.Background(), configuration)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "authenticationMethodsRoot: usersRegisteredByMethod"
 description: "Get the number of users registered for each authentication method."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType

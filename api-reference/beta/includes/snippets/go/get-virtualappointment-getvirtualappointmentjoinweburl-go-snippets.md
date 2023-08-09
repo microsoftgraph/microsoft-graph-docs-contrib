@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").GetVirtualAppointmentJoinWebUrl().Get(context.Background(), nil)
+getVirtualAppointmentJoinWebUrl(), err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").GetVirtualAppointmentJoinWebUrl().Get(context.Background(), nil)
 
 
 ```

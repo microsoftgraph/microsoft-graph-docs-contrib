@@ -29,7 +29,7 @@ userRestoreEnabled := true
 restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled) 
 requestBody.SetRestorePointSetting(restorePointSetting)
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().Post(context.Background(), requestBody, nil)
+userSettings, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().Post(context.Background(), requestBody, nil)
 
 
 ```

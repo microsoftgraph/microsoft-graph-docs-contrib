@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceConfiguration()
@@ -89,7 +89,7 @@ requestBody.SetUserAccountControlSettings(&userAccountControlSettings)
 workFoldersUrl := "https://example.com/workFoldersUrl/"
 requestBody.SetWorkFoldersUrl(&workFoldersUrl) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

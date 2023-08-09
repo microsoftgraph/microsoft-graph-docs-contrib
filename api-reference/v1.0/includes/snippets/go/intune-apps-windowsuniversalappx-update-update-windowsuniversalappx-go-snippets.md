@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMobileApp()
@@ -71,7 +71,7 @@ requestBody.SetMinimumSupportedOperatingSystem(minimumSupportedOperatingSystem)
 identityVersion := "Identity Version value"
 requestBody.SetIdentityVersion(&identityVersion) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

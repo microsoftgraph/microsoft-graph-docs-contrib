@@ -27,7 +27,7 @@ requestBody.SetNumber(&number)
 webUrl := "https://patents.gov/3954432633"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Profile().Patents().Post(context.Background(), requestBody, nil)
+patents, err := graphClient.Me().Profile().Patents().Post(context.Background(), requestBody, nil)
 
 
 ```

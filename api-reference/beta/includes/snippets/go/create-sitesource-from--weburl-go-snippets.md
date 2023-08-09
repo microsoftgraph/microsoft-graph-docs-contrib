@@ -22,7 +22,7 @@ webUrl := "https://m365x809305.sharepoint.com/sites/Retail"
 site.SetWebUrl(&webUrl) 
 requestBody.SetSite(site)
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").LegalHolds().ByLegalHoldId("ediscoveryHoldPolicy-id").SiteSources().Post(context.Background(), requestBody, nil)
+siteSources, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").LegalHolds().ByEdiscoveryHoldPolicyId("ediscoveryHoldPolicy-id").SiteSources().Post(context.Background(), requestBody, nil)
 
 
 ```

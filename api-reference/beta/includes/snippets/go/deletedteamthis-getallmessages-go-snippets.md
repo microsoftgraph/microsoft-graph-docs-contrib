@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Teamwork().DeletedTeams().ByDeletedTeamId("deletedTeam-id").Channels().GetAllMessages().Get(context.Background(), nil)
+getAllMessages(), err := graphClient.Teamwork().DeletedTeams().ByDeletedTeamId("deletedTeam-id").Channels().GetAllMessages().Get(context.Background(), nil)
 
 
 ```
