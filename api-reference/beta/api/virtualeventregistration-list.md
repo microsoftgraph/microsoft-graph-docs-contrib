@@ -126,8 +126,8 @@ Content-Type: application/json
             "Beijing"
           ]
         }
-      }
-    ]
-  }
+      ]
+    }
+  ]
 }
 ```
