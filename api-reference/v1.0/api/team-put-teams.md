@@ -15,11 +15,11 @@ Create a new [team](../resources/team.md) under a [group](../resources/group.md)
 
 In order to create a team, the group must have a least one owner.
 
-If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.
+If the group was created less than 15 minutes ago, it's possible for a team-created call to fail with a 404 error code which can be attributed to ongoing replication delays.
 The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
 
 > [!NOTE]
-> There's no way to know when the SharePoint provisioning is completed as it isn't provisioned in real time but it happens eventually in the backend.
+>The completion of SharePoint provisioning cannot be determined since it doesn't occur in real-time; rather, it is a background process. 
 
 ## Permissions
 
