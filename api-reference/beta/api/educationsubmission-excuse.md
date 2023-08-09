@@ -51,14 +51,14 @@ If successful, this method returns a `200 Ok` response code and an [educationSub
 #### Request
 The following is an example of the request with Header Prefer: include-unknown-enum-members.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_excuse"
 }-->
 
-```html 
-Post https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/28992cce-fac0-4950-a836-5a524ded8599/submissions/02859156-c3c7-876d-7a5c-915bf4f61380/excuse
+```http 
+POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/28992cce-fac0-4950-a836-5a524ded8599/submissions/02859156-c3c7-876d-7a5c-915bf4f61380/excuse
+Prefer: include-unknown-enum-members
 ```
 
 #### Response
@@ -74,78 +74,77 @@ The following is an example of the response when `Prefer: include-unknown-enum-m
 HTTP/1.1 200 Ok
 
 {
-    {
-		"@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
-		"@odata.type": "#microsoft.graph.educationSubmission",
-		"status": "excused",
-		"submittedDateTime": "2023-07-19T15:17:37.9961504Z",
-		"unsubmittedDateTime": null,
-		"returnedDateTime": "2023-07-19T15:17:08.7988272Z",
-		"reassignedDateTime": null,
-		"excusedDateTime": "2023-07-27T15:12:02.1133738Z",
-		"resourcesFolderUrl": null,
-		"webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%2228992cce-fac0-4950-a836-5a524ded8599%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%2202859156-c3c7-876d-7a5c-915bf4f61380%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
-		"id": "02859156-c3c7-876d-7a5c-915bf4f61380",
-		"recipient": {
-			"@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
-			"userId": "61243ddb-6f39-499d-b232-9fa8cef26b3a"
-		},
-		"submittedBy": {
-			"application": null,
-			"device": null,
-			"user": {
-				"id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-				"displayName": null
-			}
-		},
-		"unsubmittedBy": {
-			"application": null,
-			"device": null,
-			"user": {
-				"id": null,
-				"displayName": null
-			}
-		},
-		"returnedBy": {
-			"application": null,
-			"device": null,
-			"user": {
-				"id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-				"displayName": null
-			}
-		},
-		"reassignedBy": {
-			"application": null,
-			"device": null,
-			"user": {
-				"id": null,
-				"displayName": null
-			}
-		},
-		"excusedBy": {
-			"application": null,
-			"device": null,
-			"user": {
-				"id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-				"displayName": null
-			}
-		}
-	}
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
+    "@odata.type": "#microsoft.graph.educationSubmission",
+    "status": "excused",
+    "submittedDateTime": "2023-07-19T15:17:37.9961504Z",
+    "unsubmittedDateTime": null,
+    "returnedDateTime": "2023-07-19T15:17:08.7988272Z",
+    "reassignedDateTime": null,
+    "excusedDateTime": "2023-07-27T15:12:02.1133738Z",
+    "resourcesFolderUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%2228992cce-fac0-4950-a836-5a524ded8599%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%2202859156-c3c7-876d-7a5c-915bf4f61380%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "id": "02859156-c3c7-876d-7a5c-915bf4f61380",
+    "recipient": {
+        "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+        "userId": "61243ddb-6f39-499d-b232-9fa8cef26b3a"
+    },
+    "submittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+            "displayName": null
+        }
+    },
+    "unsubmittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": null,
+            "displayName": null
+        }
+    },
+    "returnedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+            "displayName": null
+        }
+    },
+    "reassignedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": null,
+            "displayName": null
+        }
+    },
+    "excusedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+            "displayName": null
+        }
+    }
 }
 ```
+
 ### Example 2: Request without Prefer header
 The following example shows how to call this method.
+
 #### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_excuse_header"
 }-->
 
 ```html 
-Post https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/28992cce-fac0-4950-a836-5a524ded8599/submissions/02859156-c3c7-876d-7a5c-915bf4f61380/excuse
+POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/28992cce-fac0-4950-a836-5a524ded8599/submissions/02859156-c3c7-876d-7a5c-915bf4f61380/excuse
 ```
 
 #### Response
