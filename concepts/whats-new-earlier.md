@@ -2494,7 +2494,7 @@ of these entities, and use OData cast to trim **directoryObject** results to cer
 - [Create or update an event as an online meeting](outlook-calendar-online-meetings.md):
   - For each **calendar**, specify the allowed and the default online meeting providers.
   - Create or update an [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) to be available online, and provide details for attendees to join the meeting online. 
-  - In particular, use the new **onlineMeetingProvider** and **onlineMeeting** properties of **event** to set or identify Microsoft Teams as an online meeting provider, a workaround for a [known issue](known-issues.md#onlinemeetingurl-property-is-not-supported-for-microsoft-teams) with the **onlineMeetingUrl** property.
+  - In particular, use the new **onlineMeetingProvider** and **onlineMeeting** properties of **event** to set or identify Microsoft Teams as an online meeting provider, a workaround for a known issue with the **onlineMeetingUrl** property.
 - Add [file attachments up to 150MB](outlook-large-attachments.md) to an [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true).
 
 ### Files
@@ -2801,7 +2801,7 @@ Developers and data scientists can now use [tools to translate Office 365 data i
 - Additional online meeting support:
   - For each **calendar**, specify the allowed and the default online meeting providers.
   - Create or update an [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to be available online, and provide details for attendees to join the meeting online. 
-  - In particular, use the new **onlineMeetingProvider** and **onlineMeeting** properties of **event** to set or identify Microsoft Teams as an online meeting provider, a workaround for a [known issue](known-issues.md#onlinemeetingurl-property-is-not-supported-for-microsoft-teams) with the **onlineMeetingUrl** property.
+  - In particular, use the new **onlineMeetingProvider** and **onlineMeeting** properties of **event** to set or identify Microsoft Teams as an online meeting provider, a workaround for a known issue with the **onlineMeetingUrl** property.
 
 ### Devices and apps
 Intune [October](changelog.md#october-2019) updates

@@ -7,7 +7,7 @@ ms.reviewer: keylimesoda
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 03/23/2023
+ms.date: 07/12/2023
 ---
 
 # Receive change notifications through webhooks
@@ -144,7 +144,7 @@ When many changes occur, Microsoft Graph may send multiple notifications that co
 
 Your service should process every change notification it receives. The following are the minimum tasks that your app must perform to process a change notification:
 
-1. After receiving the change notification, send a 2xx class code back to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code within 3 seconds, it tries to resend the change notification multiple times, for up to 4 hours. If Microsoft Graph still doesn't receive a 2xx code within the period, it discards the change notification. If the client app consistently doesn't respond within 3 seconds, the [notifications might be subject to throttling](#throttling).
+1. After receiving the change notification, send a 2xx class code back to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code within 3 seconds, it tries to resend the change notification multiple times, for up to 4 hours. If Microsoft Graph still doesn't receive a 2xx code within the period, it discards the change notification. If the client app consistently doesn't respond within 3 seconds, the [notifications might be subject to throttling](#throttling-and-retry).
 
     If your service can take more than 3 seconds to process the change notification, it should persist the notification, return a `202 - Accepted` status code in the response to Microsoft Graph, then process the notifications at its capacity. If the notification isn't persisted, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
 
@@ -265,20 +265,25 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 If successful, Microsoft Graph returns a `204 No Content` code.
 
-## Throttling
+## Throttling and Retry
+Subscription notification endpoint URLs must respond quickly in order to consistently receive notifications. If endpoints do not respond in a timely manner, the change notification service may begin to drop notifications. Dropped notifications cannot be recovered.
 
-If a subscription notification URL is slow or fails to respond, and Microsoft Graph doesn't receive a 2xx class code within 3 seconds, Microsoft Graph tries to resend the change notification multiple times, for up to 4 hours. In this case Microsoft Graph might throttle notifications for the notification endpoint that's associated with the subscription.
+Specifically, we have the following behavior for webhooks:
+1. An endpoint will be marked "slow" once more than 10% of responses take longer than 3 seconds in a 10-minute window.
+      - Once an endpoint has been marked "slow", any new notifications will be sent on a 10 second delay.
+      - An endpoint will exit "slow" state once fewer than 10% of responses take longer than 3 seconds in a 10-minute window.
 
-#### How Microsoft Graph handles throttling for change notifications using webhooks
+2. An endpoint will be marked "drop" once more than 15% of responses take longer than 3 seconds in a 10-minute window.
+      - **Once an endpoint has been marked "drop", any new notifications will be dropped, for up to 10 minutes**.
+      - An endpoint will exit "drop" state once fewer than 15% of responses take longer than 3 seconds in a 10-minute window.
 
-Notifications are published using an HTTP client with a 3-second timeout.
+If you are unable to stand up an endpoint with these performance characteristics, please consider using [Event Hub](/graph/change-notifications-delivery-event-hubs?tabs=change-notifications-eventhubs-azure-cli%2Chttp) or [Event Grid ](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext) as a target for receiving notifications.
 
-1. If the publishing time is greater than 2900 ms, the response is considered slow.
-1. The change notification service then calculates the percentage of slow responses after the endpoint receives 100 notifications.
-1. If the percentage of slow responses reaches 10%, the endpoint associated with the notification URL is flagged as a slow endpoint. All notifications for all subscriptions associated with the endpoint are subjected to throttling.
-1. The evaluation continues in real time and the accumulation of responses is flushed every 10 minutes.
+#### Retry
+Once change notifications service has received a 2xx class code from your endpoint, a notification is considered sent and will not be tried again.
 
-When Microsoft Graph throttles an endpoint, notifications are subjected to a delay of 10 minutes and are offloaded to workers dedicated to failed and throttled notifications. Notifications that failed to deliver due to an unsuccessful HTTP call are retried again in 10 minutes. Notifications are dropped if the throttled endpoint slow percentage is greater than or equal to 15%.
+As long as the change notifications service receives any other HTML response in a timely manner (within 3 seconds), the service will continue to try to deliver the notification for up to 4 hours.
+
 
 ## Firewall configuration
 
