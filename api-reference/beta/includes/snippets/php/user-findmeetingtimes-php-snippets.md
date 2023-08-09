@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new FindMeetingTimesPostRequestBody();
 $attendeesAttendeeBase1 = new AttendeeBase();
@@ -73,7 +73,7 @@ $requestBody->setMeetingDuration(new \DateInterval('PT1H'));
 
 $requestBody->setReturnSuggestionReasons(true);
 
-$requestBody->setMinimumAttendeePercentage('100');
+$requestBody->setMinimumAttendeePercentage(100);
 
 
 $requestConfiguration = new FindMeetingTimesRequestBuilderPostRequestConfiguration();

@@ -23,7 +23,7 @@ configuration := &graphrolemanagement.RoleManagementDirectoryRoleAssignmentSched
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Get(context.Background(), configuration)
+roleAssignmentScheduleRequests, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Get(context.Background(), configuration)
 
 
 ```

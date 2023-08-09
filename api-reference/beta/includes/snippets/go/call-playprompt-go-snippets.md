@@ -36,7 +36,7 @@ requestBody.SetPrompts(prompts)
 loop := false
 requestBody.SetLoop(&loop) 
 
-result, err := graphClient.Communications().Calls().ByCallId("call-id").PlayPrompt().Post(context.Background(), requestBody, nil)
+playPrompt, err := graphClient.Communications().Calls().ByCallId("call-id").PlayPrompt().Post(context.Background(), requestBody, nil)
 
 
 ```

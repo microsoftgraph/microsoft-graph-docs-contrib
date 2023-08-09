@@ -99,7 +99,7 @@ GET /roleManagement/exchange/roleDefinitions
 ```
 
 ## Optional query parameters
-This method supports `$filter` query parameter on `id`, `displayName`, and `isBuiltIn` properties. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -310,7 +310,7 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-cloudpc-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -586,6 +586,7 @@ Content-type: application/json
             "version": "0.12 (14.0.451.0)",
             "isBuiltIn": true,
             "templateId": null,
+            "allowedPrincipalTypes": "user,group",
             "rolePermissions": [
                 {
                     "allowedResourceActions": [
@@ -604,6 +605,7 @@ Content-type: application/json
             "version": "0.12 (14.0.451.0)",
             "isBuiltIn": true,
             "templateId": null,
+            "allowedPrincipalTypes": "user,group",
             "rolePermissions": [
                 {
                     "allowedResourceActions": [

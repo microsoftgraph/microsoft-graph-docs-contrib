@@ -36,7 +36,7 @@ activities := []graphmodelsexternalconnectors.ExternalActivityable {
 }
 requestBody.SetActivities(activities)
 
-result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").MicrosoftGraphExternalConnectorsAddActivities().Post(context.Background(), requestBody, nil)
+microsoft.graph.externalConnectors.addActivities, err := graphClient.External().Connections().ByExternalConnectionId("externalConnection-id").Items().ByExternalItemId("externalItem-id").MicrosoftGraphExternalConnectorsAddActivities().Post(context.Background(), requestBody, nil)
 
 
 ```

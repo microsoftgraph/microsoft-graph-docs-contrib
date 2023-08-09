@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().TelecomExpenseManagementPartners().ByTelecomExpenseManagementPartnerId("telecomExpenseManagementPartner-id").Get(context.Background(), nil)
+telecomExpenseManagementPartners, err := graphClient.DeviceManagement().TelecomExpenseManagementPartners().ByTelecomExpenseManagementPartnerId("telecomExpenseManagementPartner-id").Get(context.Background(), nil)
 
 
 ```
