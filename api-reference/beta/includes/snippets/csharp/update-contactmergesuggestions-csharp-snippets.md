@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var contactMergeSuggestions = new ContactMergeSuggestions
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ContactMergeSuggestions
 {
-	IsEnabled = false
+	IsEnabled = false,
 };
+var result = await graphClient.Me.Settings.ContactMergeSuggestions.PatchAsync(requestBody);
 
-await graphClient.Me.Settings.ContactMergeSuggestions
-	.Request()
-	.UpdateAsync(contactMergeSuggestions);
 
 ```

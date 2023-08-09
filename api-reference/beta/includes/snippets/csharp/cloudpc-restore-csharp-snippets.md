@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var cloudPcSnapshotId = "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{cloudPC-id}"]
-	.Restore(cloudPcSnapshotId)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.CloudPCs.Item.Restore.RestorePostRequestBody
+{
+	CloudPcSnapshotId = "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8",
+};
+await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{cloudPC-id}"].Restore.PostAsync(requestBody);
+
 
 ```

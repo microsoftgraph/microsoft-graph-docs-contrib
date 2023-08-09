@@ -1,7 +1,7 @@
 ---
 title: "Create mobileAppAssignment"
 description: "Create a new mobileAppAssignment object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,10 +60,13 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 
 ### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_apps_mobileappassignment_create_create_mobileappassignment" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assignments
 Content-type: application/json
-Content-length: 861
+Content-length: 312
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -72,31 +75,54 @@ Content-length: 861
     "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings",
-    "notifications": "showReboot",
-    "restartSettings": {
-      "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
-      "gracePeriodInMinutes": 4,
-      "countdownDisplayBeforeRestartInMinutes": 6,
-      "restartNotificationSnoozeDurationInMinutes": 10
-    },
-    "installTimeSettings": {
-      "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
-      "useLocalTime": true,
-      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
-      "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
-    },
-    "deliveryOptimizationPriority": "foreground"
+    "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+    "useDeviceContext": true
   }
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-mobileappassignment-create-create-mobileappassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-mobileappassignment-create-create-mobileappassignment-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-apps-mobileappassignment-create-create-mobileappassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-apps-mobileappassignment-create-create-mobileappassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-apps-mobileappassignment-create-create-mobileappassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-apps-mobileappassignment-create-create-mobileappassignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-mobileappassignment-create-create-mobileappassignment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-apps-mobileappassignment-create-create-mobileappassignment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.mobileAppAssignment" }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 910
+Content-Length: 361
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -106,26 +132,8 @@ Content-Length: 910
     "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings",
-    "notifications": "showReboot",
-    "restartSettings": {
-      "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
-      "gracePeriodInMinutes": 4,
-      "countdownDisplayBeforeRestartInMinutes": 6,
-      "restartNotificationSnoozeDurationInMinutes": 10
-    },
-    "installTimeSettings": {
-      "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
-      "useLocalTime": true,
-      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
-      "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
-    },
-    "deliveryOptimizationPriority": "foreground"
+    "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+    "useDeviceContext": true
   }
 }
 ```
-
-
-
-
-

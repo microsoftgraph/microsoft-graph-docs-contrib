@@ -3,7 +3,7 @@ title: "timeZoneInformation resource type"
 description: "Represents a time zone. The supported format is Windows, and Internet Assigned Numbers Authority (IANA) time zone (also known as Olson time zone)"
 ms.localizationpriority: medium
 author: "abheek-das"
-ms.prod: ""
+ms.prod: outlook
 doc_type: resourcePageType
 ---
 

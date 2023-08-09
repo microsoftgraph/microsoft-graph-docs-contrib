@@ -24,9 +24,9 @@ For more information about GDAP, see:
 
 ## GDAP workflow
 
-### GDAP relationship status transition
+### Lifecycle of a GDAP relationship
 
-The status of the Delegated Admin relationship transitions as follows:
+The following diagram shows the status of the Delegated Admin relationship transitions.
 
 ![Delegated Admin relationship status transition diagram](relationship-status-transitions.png)
 
@@ -35,11 +35,23 @@ The status of the Delegated Admin relationship transitions as follows:
 3. [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: lockForApproval)
 4. [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: terminate)
 
->**Note:** After running the [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) API with the `lockForApproval` action, build the customer invitation link by using the following URI template, where *{adminRelationshipID}* is the ID of admin relationship request.
->
->`https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/{adminRelationshipID}`
+After running the [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) API with the **lockForApproval** action, build the customer invitation link by using the following URI template, where *{adminRelationshipID}* is the ID of admin relationship request.
 
-Send the invitation link to the customer for them to approve the GDAP request. For example, `https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/5a6666c9-7282-0a41-67aa-25a5a3fbf339` is an invitation link, where `5a6666c9-7282-0a41-67aa-25a5a3fbf339` is the admin relationship request ID.
+`https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/{adminRelationshipID}`
+
+Send the invitation link to the customer for them to approve the GDAP request. For example, `https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836` is an invitation link, where `5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836` is the admin relationship request ID. After the customer approves the GDAP request, the GDAP relationship will transition to an active state.
+
+To finalize the workflow for enabling admin on behalf of (AOBO) management of the customer's tenant, proceed by creating a new access assignment for the delegated admin relationship by using the [Create accessAssignments](../api/delegatedadminrelationship-post-accessassignments.md) API. 
+
+
+### Lifecycle of a GDAP relationship access assignment
+
+The delegated admin access assignment goes through the status transitions shown in the following diagram.
+
+![Delegated admin access assignment status transition diagram](access-assignment-status-transitions.png)
+
+1. [Create delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)
+2. [Delete delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)
 
 ## Use cases for GDAP APIs
 
@@ -89,15 +101,6 @@ This section describes the ways that Microsoft partners can use the GDAP APIs to
 | Get a single delegated admin customer by ID | [Get delegatedAdminCustomer](../api/delegatedadmincustomer-get.md) |
 | Get service management details for a delegated admin customer | [List serviceManagementDetails](../api/delegatedadmincustomer-list-servicemanagementdetails.md) |
 
-
-### GDAP Relationship Access Assignment Status Transition
-
-The status of the Delegated Admin access assignment. The status transitions are as follows:
-
-![Delegated Admin access assignment status transition diagram](access-assignment-status-transitions.png)
-
-1. [Create delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)
-2. [Delete delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)
 
 ## Permissions
 

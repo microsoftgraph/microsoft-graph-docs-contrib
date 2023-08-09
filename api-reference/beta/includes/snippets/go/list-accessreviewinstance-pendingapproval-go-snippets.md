@@ -4,23 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestTop := int32(100)
 requestSkip := int32(0)
 
-requestParameters := &graphconfig.PendingAccessReviewInstancesRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemPendingAccessReviewInstancesRequestBuilderGetQueryParameters{
 	Expand: [] string {"definition"},
 	Top: &requestTop,
 	Skip: &requestSkip,
 }
-configuration := &graphconfig.PendingAccessReviewInstancesRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemPendingAccessReviewInstancesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().PendingAccessReviewInstances().Get(context.Background(), configuration)
+pendingAccessReviewInstances, err := graphClient.Me().PendingAccessReviewInstances().Get(context.Background(), configuration)
 
 
 ```

@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
-	Participants = @(
+	participants = @(
 		""
 	)
-	ClientContext = "clientContext-value"
+	clientContext = "clientContext-value"
 }
 
-Invoke-MgMuteAllCommunicationCallParticipant -CallId $callId -BodyParameter $params
+Invoke-MgBetaMuteAllCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
 ```

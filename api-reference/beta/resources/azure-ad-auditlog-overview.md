@@ -4,7 +4,8 @@ description: "Use the activity reports API in Microsoft Graph to access the repo
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: "identity-and-access-reports"
-author: "besiler"
+author: "egreenberg14"
+ms.date: 09/16/2022
 ---
 
 # Activity reports API overview

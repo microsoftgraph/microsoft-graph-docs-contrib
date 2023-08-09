@@ -64,24 +64,28 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-appointments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-appointments-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-appointments-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-appointments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-appointments-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-appointments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-appointments-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-appointments-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-appointments-php-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-appointments-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -156,12 +160,12 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "priceType": "fixedPrice",
-            "price": 10,
+            "price": 10.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
-            "anonymousJoinWebUrl": "String",
+            "anonymousJoinWebUrl": null,
             "staffMemberIds": [],
-            "invoiceAmount": 10,
+            "invoiceAmount": 10.0,
             "invoiceId": "1002",
             "invoiceStatus": "open",
             "invoiceUrl": "theInvoiceUrl",
@@ -281,11 +285,12 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "priceType": "fixedPrice",
-            "price": 10,
+            "price": 10.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
+            "anonymousJoinWebUrl": null,
             "staffMemberIds": [],
-            "invoiceAmount": 10,
+            "invoiceAmount": 10.0,
             "invoiceId": "1001",
             "invoiceStatus": "open",
             "invoiceUrl": "theInvoiceUrl",

@@ -1,7 +1,7 @@
 ---
 title: "resetPasscodeActionResult resource type"
 description: "Reset passcode action result"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -26,6 +26,7 @@ Inherits from [deviceActionResult](../resources/intune-devices-deviceactionresul
 |startDateTime|DateTimeOffset|Time the action was initiated Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |passcode|String|Newly generated passcode for the device |
+|errorCode|Int32|RotateBitLockerKeys action error code. Valid values 0 to 2147483647|
 
 ## Relationships
 None
@@ -44,11 +45,7 @@ Here is a JSON representation of the resource.
   "actionState": "String",
   "startDateTime": "String (timestamp)",
   "lastUpdatedDateTime": "String (timestamp)",
-  "passcode": "String"
+  "passcode": "String",
+  "errorCode": 1024
 }
 ```
-
-
-
-
-

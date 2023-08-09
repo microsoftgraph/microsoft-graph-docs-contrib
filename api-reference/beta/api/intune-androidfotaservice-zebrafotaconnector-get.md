@@ -1,7 +1,7 @@
 ---
 title: "Get zebraFotaConnector"
 description: "Read properties and relationships of the zebraFotaConnector object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [zebraFotaConnector](../resources/intune-androidfotaservice-zebrafotaconnector.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -63,13 +63,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 388
+Content-Length: 393
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.zebraFotaConnector",
-    "id": "2301310a-310a-2301-0a31-01230a310123",
-    "state": "connected",
+    "id": "38820961-0961-3882-6109-823861098238",
+    "state": "<Unknown None>",
     "enrollmentToken": "Enrollment Token value",
     "enrollmentAuthorizationUrl": "https://example.com/enrollmentAuthorizationUrl/",
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
@@ -77,8 +77,3 @@ Content-Length: 388
   }
 }
 ```
-
-
-
-
-

@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workflow = new Microsoft.Graph.IdentityGovernance.Workflow
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 {
 	Description = "Configure new hire tasks for onboarding employees on their first day",
 	DisplayName = "Australia Onboard new hire employee",
 	IsEnabled = true,
-	IsSchedulingEnabled = false
+	IsSchedulingEnabled = false,
 };
+var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].PatchAsync(requestBody);
 
-await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{identityGovernance.workflow-id}"]
-	.Request()
-	.UpdateAsync(workflow);
 
 ```

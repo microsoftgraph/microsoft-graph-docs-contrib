@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	IsDefault = $true
-	SupportedServices = @(
+	isDefault = $true
+	supportedServices = @(
 		"Email"
 		"OfficeCommunicationsOnline"
 	)

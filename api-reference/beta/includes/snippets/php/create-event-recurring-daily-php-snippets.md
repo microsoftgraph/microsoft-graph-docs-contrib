@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Event();
 $requestBody->setSubject('Let\'s go for lunch');
 
 $body = new ItemBody();
-$body->setContentType(new BodyType('html'));
+$body->setContentType(new BodyType('hTML'));
 
 $body->setContent('Does noon work for you?');
 
@@ -64,7 +64,7 @@ $recurrence->setPattern($recurrencePattern);
 $recurrenceRange = new RecurrenceRange();
 $recurrenceRange->setType(new RecurrenceRangeType('numbered'));
 
-$recurrenceRange->setStartDate('2020-02-25');
+$recurrenceRange->setStartDate(new Date('2020-02-25'));
 
 $recurrenceRange->setNumberOfOccurrences(2);
 
@@ -74,15 +74,13 @@ $recurrence->setRange($recurrenceRange);
 $requestBody->setRecurrence($recurrence);
 
 $requestConfiguration = new EventsRequestBuilderPostRequestConfiguration();
-
 $headers = [
-'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+	'Prefer' => 'outlook.timezone="Pacific Standard Time"',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->me()->events()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->me()->events()->post($requestBody, $requestConfiguration);
 
 
 ```

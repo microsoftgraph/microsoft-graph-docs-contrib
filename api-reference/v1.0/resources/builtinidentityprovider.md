@@ -28,8 +28,8 @@ This type inherits from [identityProviderBase](../resources/identityproviderbase
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
 |displayName|String|The display name of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
+|id|String|The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
 |identityProviderType|String|The identity provider type. For a B2B scenario, possible values: `AADSignup`, `MicrosoftAccount`, `EmailOTP`. Required.|
 
 ## JSON representation
@@ -43,9 +43,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "String",
-    "identityProviderType": "String",
     "displayName": "String",
+    "id": "String",
+    "identityProviderType": "String"
 }
 ```
 

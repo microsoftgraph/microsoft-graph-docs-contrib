@@ -45,11 +45,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
-  "volumeType": "String",
   "deviceId": "String",
-  "key": "String"
+  "id": "String (identifier)",
+  "key": "String",
+  "volumeType": "String"
 }
 ```
 

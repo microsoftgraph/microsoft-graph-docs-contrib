@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var teamworkTagMember = new TeamworkTagMember
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new TeamworkTagMember
 {
-	UserId = "97f62344-57dc-409c-88ad-c4af14158ff5"
+	UserId = "97f62344-57dc-409c-88ad-c4af14158ff5",
 };
+var result = await graphClient.Teams["{team-id}"].Tags["{teamworkTag-id}"].Members.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Tags["{teamworkTag-id}"].Members
-	.Request()
-	.AddAsync(teamworkTagMember);
 
 ```

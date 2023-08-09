@@ -37,7 +37,8 @@ For more information about working with groups and members in teams, see [Use th
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
-|[List associated teams](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedteaminfo.md) collection | Get the list of [teams](../resources/associatedteaminfo.md) in Microsoft Teams that a [user](../resources/user.md) is associated with. |
+|[List associated teams](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedteaminfo.md) collection | Get the list of [teams](../resources/associatedteaminfo.md) in Microsoft Teams that a [user](../resources/user.md) is associated with.| 
+|[List all teams in an organization](../api/teams-list.md) | [team](team.md) collection | List all teams in an organization.
 |[Complete migration](../api/team-completemigration.md)|[team](team.md)| Removes migration mode from the team and makes the team available to users to post and read messages.|
 |[List all channels](../api/team-list-allchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) either in this [team](../resources/team.md) or shared with this [team](../resources/team.md) (incoming channels).|
 |[List channels](../api/channel-list.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) in a **team**.|
@@ -53,20 +54,23 @@ For more information about working with groups and members in teams, see [Use th
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|displayName|string| The name of the team. |
-|description|string| An optional description for the team. Maximum length: 1024 characters. |
+| id | string | The unique identifier of the team. The group has the same ID as the team. This property is read-only, and is inherited from the base entity type. |
 |classification|string| An optional label. Typically describes the data or business sensitivity of the team. Must match one of a pre-configured set in the tenant's directory. |
-|specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates whether the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
-|visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of the group and team. Defaults to Public. |
+|classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
+|createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
+|description|string| An optional description for the team. Maximum length: 1024 characters. |
+|displayName|string| The name of the team. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
 |internalId | string | A unique ID for the team that has been used in a few places such as the audit log/[Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Boolean|Whether this team is in read-only mode. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
-|webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
-|createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
+|specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates whether the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
+|summary|[teamSummary](teamsummary.md)| Contains summary information about the team, including number of owners, members, and guests. |
 |tenantId |string | The ID of the Azure Active Directory tenant. |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of the group and team. Defaults to Public. |
+|webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
 
 ### Instance attributes
 
@@ -108,15 +112,21 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
+  "classification": "String",
+  "createdDateTime": "DateTimeOffset",
+  "description": "String",
+  "displayName": "String",
+  "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
+  "internalId": "String",
+  "isArchived": "Boolean",
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
-  "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
-  "internalId": "string",
-  "isArchived": false,
-  "webUrl": "string (URL)",
-  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
-  "createdDateTime": "dateTimeOffset"
+  "specialization": "String",
+  "tenantId": "String",
+  "visibility": "String",
+  "webUrl": "String (URL)"
 }
 ```
 

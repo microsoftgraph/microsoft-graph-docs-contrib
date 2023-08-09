@@ -38,18 +38,18 @@ Inherits from base class [identityUserFlow](../resources/identityuserflow.md).
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Configuration for enabling an API connector for use as part of the self-service sign-up user flow. You can only obtain the value of this object using [Get userFlowApiConnectorConfiguration](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md).|
 |id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2X_1_` after creation.|
 |userFlowType|userFlowType|The type of user flow. For self-service sign-up user flows, the value can only be `signUpOrSignIn` and cannot be modified after creation.|
 |userFlowTypeVersion|Single|The version of the user flow. For self-service sign-up user flows, the version is always `1`.|
-|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Configuration for enabling an API connector for use as part of the self-service sign-up user flow. You can only obtain the value of this object using [Get userFlowApiConnectorConfiguration](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md).|
 
 ## Relationships
 
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
 |identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
-|userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 |languages|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|The languages supported for customization within the user flow. Language customization is enabled by default in self-service sign-up user flow. You cannot create custom languages in self-service sign-up user flows.|
+|userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 
 ## JSON representation
 
@@ -64,14 +64,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "String (identifier)",
-    "userFlowType": "String",
-    "userFlowTypeVersion": "Single",
-    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
-    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
-    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],
     "apiConnectorConfiguration": {
       "@odata.type": "microsoft.graph.userFlowApiConnectorConfiguration"
-    }
+    },
+    "id": "String (identifier)",
+    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
+    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
+    "userFlowType": "String",
+    "userFlowTypeVersion": "Single"
 }
 ```

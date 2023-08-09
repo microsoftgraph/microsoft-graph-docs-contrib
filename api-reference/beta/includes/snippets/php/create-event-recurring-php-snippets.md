@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Event();
 $requestBody->setSubject('Let\'s go for lunch');
 
 $body = new ItemBody();
-$body->setContentType(new BodyType('html'));
+$body->setContentType(new BodyType('hTML'));
 
 $body->setContent('Does noon time work for you?');
 
@@ -39,17 +39,16 @@ $recurrencePattern->setType(new RecurrencePatternType('weekly'));
 
 $recurrencePattern->setInterval(1);
 
-$recurrencePattern->setDaysOfWeek([$recurrencePattern->setDayOfWeek(new DayOfWeek('monday'));
-]);
+$recurrencePattern->setDaysOfWeek([new DayOfWeek('monday'),	]);
 
 
 $recurrence->setPattern($recurrencePattern);
 $recurrenceRange = new RecurrenceRange();
-$recurrenceRange->setType(new RecurrenceRangeType('enddate'));
+$recurrenceRange->setType(new RecurrenceRangeType('endDate'));
 
-$recurrenceRange->setStartDate('2017-09-04');
+$recurrenceRange->setStartDate(new Date('2017-09-04'));
 
-$recurrenceRange->setEndDate('2017-12-31');
+$recurrenceRange->setEndDate(new Date('2017-12-31'));
 
 
 $recurrence->setRange($recurrenceRange);
@@ -77,7 +76,7 @@ $requestBody->setAttendees($attendeesArray);
 
 
 
-$requestResult = $graphServiceClient->me()->events()->post($requestBody);
+$result = $graphServiceClient->me()->events()->post($requestBody);
 
 
 ```

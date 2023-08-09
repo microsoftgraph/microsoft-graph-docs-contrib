@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/02bb5de1-7205-2a25-fe33-f99cf53de1c4/unsubmit')
+await client.api('/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/7242e03e-048c-437b-8810-3e89b285a362/submissions/3cea5cf6-55dc-d6c7-2f5b-3b5cd2e79c3a/unsubmit')
 	.version('beta')
 	.post();
 

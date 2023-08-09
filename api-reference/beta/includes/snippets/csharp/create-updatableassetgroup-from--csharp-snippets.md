@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var updatableAsset = new Microsoft.Graph.WindowsUpdates.UpdatableAssetGroup
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAssetGroup
 {
+	OdataType = "#microsoft.graph.windowsUpdates.updatableAssetGroup",
 };
+var result = await graphClient.Admin.Windows.Updates.UpdatableAssets.PostAsync(requestBody);
 
-await graphClient.Admin.Windows.Updates.UpdatableAssets
-	.Request()
-	.AddAsync(updatableAsset);
 
 ```

@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var userAccountType = CloudPcUserAccountType.Administrator;
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var osVersion = CloudPcOperatingSystem.Windows10;
+var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.CloudPCs.Item.Reprovision.ReprovisionPostRequestBody
+{
+	UserAccountType = CloudPcUserAccountType.Administrator,
+	OsVersion = CloudPcOperatingSystem.Windows10,
+};
+await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{cloudPC-id}"].Reprovision.PostAsync(requestBody);
 
-await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{cloudPC-id}"]
-	.Reprovision(userAccountType,osVersion)
-	.Request()
-	.PostAsync();
 
 ```

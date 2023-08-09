@@ -19,13 +19,13 @@ This operation does not return the **key** property. For information about how t
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
-For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or the calling user must be in one of the following directory roles:
+For delegated permissions to allow apps to get **bitLockerRecoveryKey** resources on behalf of the signed-in user, the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or the calling user must be in one of the following directory roles:
 
 * Global administrator
 * Cloud device administrator
@@ -46,7 +46,7 @@ To get a list of BitLocker keys within the tenant:
 GET /informationProtection/bitlocker/recoveryKeys
 ```
 
-To get a list of BitLocker keys within the tenant filtered by the **device id**:
+To get a list of BitLocker keys within the tenant filtered by the **deviceId**:
 
 <!-- {
   "blockType": "ignored"
@@ -57,7 +57,7 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 ```
 
 ## Optional query parameters
-This method supports the `$filter` OData query parameter to filter results by the **device id** the key was most recently backed up to. This method does not support the `$top` filter. For details, see [Example 2](#example-2). For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameter to filter results by the **deviceId** the key was most recently backed up to. This method does not support the `$top` filter. For details, see [Example 2](#example-2-retrieve-a-list-of-bitlocker-keys-filtered-by-deviceid). For general information, see [OData query parameters](/graph/query-parameters).
 
 The response might also contain an `odata.nextLink`, which you can use to page through the result set. For details, see [Paging Microsoft Graph data](/graph/paging).
 
@@ -78,8 +78,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1
-Retrieve a list of BitLocker keys in the tenant.
+### Example 1: Retrieve a list of BitLocker keys in the tenant
 
 #### Request
 The following is an example of the request.
@@ -131,8 +130,7 @@ Content-Type: application/json
   ]
 }
 ```
-### Example 2
-Retrieve a list of BitLocker keys filtered by **device id**.
+### Example 2: Retrieve a list of BitLocker keys filtered by **deviceId**
 
 #### Request
 The following is an example of the request.

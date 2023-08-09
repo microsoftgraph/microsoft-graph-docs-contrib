@@ -4,7 +4,7 @@ description: "Represents the key restrictions that are enforced as part of the F
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # fido2KeyRestrictions resource type

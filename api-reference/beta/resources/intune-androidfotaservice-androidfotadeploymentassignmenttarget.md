@@ -1,7 +1,7 @@
 ---
 title: "androidFotaDeploymentAssignmentTarget resource type"
 description: "The AAD Group we are deploying firmware updates to"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -38,8 +38,3 @@ Here is a JSON representation of the resource.
   "groupId": "String"
 }
 ```
-
-
-
-
-

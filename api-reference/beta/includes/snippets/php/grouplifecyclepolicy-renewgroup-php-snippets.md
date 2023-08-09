@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RenewGroupPostRequestBody();
 $requestBody->setGroupId('ffffffff-ffff-ffff-ffff-ffffffffffff');
 
 
 
-$requestResult = $graphServiceClient->groupLifecyclePolicies()->renewGroup()->post($requestBody);
+$result = $graphServiceClient->groupLifecyclePolicies()->renewGroup()->post($requestBody);
 
 
 ```

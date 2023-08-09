@@ -4,21 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var mailFolder = new MailSearchFolder
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new MailSearchFolder
 {
+	OdataType = "microsoft.graph.mailSearchFolder",
 	DisplayName = "Weekly digests",
 	IncludeNestedFolders = true,
-	SourceFolderIds = new List<String>()
+	SourceFolderIds = new List<string>
 	{
-		"AQMkADYAAAIBDAAAAA=="
+		"AQMkADYAAAIBDAAAAA==",
 	},
-	FilterQuery = "contains(subject, 'weekly digest')"
+	FilterQuery = "contains(subject, 'weekly digest')",
 };
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].ChildFolders.PostAsync(requestBody);
 
-await graphClient.Me.MailFolders["{mailFolder-id}"].ChildFolders
-	.Request()
-	.AddAsync(mailFolder);
 
 ```

@@ -1,9 +1,12 @@
 ---
 title: "Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs"
 description: "Learn how to automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs in Microsoft Graph."
-author: "AlexFilipin"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
 # Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs
@@ -18,7 +21,7 @@ This pre-hire scenario will generate a temporary password for the new employee a
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
++ Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Micorosft Azure AD](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Lifecycle Administrator or Global Administrator Azure AD role.
 + Grant yourself the following *LifecycleWorkflows.ReadWrite.All* delegated permission.
 + You must have two user accounts to use for this tutorial, one for the new hire and another for their manager.
@@ -102,31 +105,34 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-lifecycle-workflows-joineronboarding-create-workflow-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-lifecycle-workflows-joineronboarding-create-workflow-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-lifecycle-workflows-joineronboarding-create-workflow-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-joineronboarding-create-workflow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-lifecycle-workflows-joineronboarding-create-workflow-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-joineronboarding-create-workflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-lifecycle-workflows-joineronboarding-create-workflow-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-joineronboarding-create-workflow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-joineronboarding-create-workflow-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-lifecycle-workflows-joineronboarding-create-workflow-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-joineronboarding-create-workflow-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-joineronboarding-create-workflow-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-joineronboarding-create-workflow-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -192,31 +198,34 @@ POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/work
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-lifecycle-workflows-joineronboarding-run-workflow-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-lifecycle-workflows-joineronboarding-run-workflow-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-lifecycle-workflows-joineronboarding-run-workflow-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-joineronboarding-run-workflow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-lifecycle-workflows-joineronboarding-run-workflow-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-joineronboarding-run-workflow-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-joineronboarding-run-workflow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-joineronboarding-run-workflow-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-joineronboarding-run-workflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-lifecycle-workflows-joineronboarding-run-workflow-php-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-joineronboarding-run-workflow-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -247,31 +256,34 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresults-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -321,31 +333,34 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-joineronboarding-list-userprocessingresultssummary-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -384,31 +399,34 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-joineronboarding-list-taskprocessingresults-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -480,31 +498,34 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-lifecycle-workflows-joineronboarding-update-workflow-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-lifecycle-workflows-joineronboarding-update-workflow-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-lifecycle-workflows-joineronboarding-update-workflow-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-joineronboarding-update-workflow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-lifecycle-workflows-joineronboarding-update-workflow-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-joineronboarding-update-workflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-lifecycle-workflows-joineronboarding-update-workflow-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-joineronboarding-update-workflow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-joineronboarding-update-workflow-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-lifecycle-workflows-joineronboarding-update-workflow-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-joineronboarding-update-workflow-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-joineronboarding-update-workflow-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-joineronboarding-update-workflow-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 When a workflow is scheduled, Lifecycle Workflows will check every three hours for users in the associated execution condition and execute the configured tasks for those users. You can customize this recurrence from between one hour to 24 hours.
 
@@ -520,6 +541,6 @@ HTTP/1.1 204 No Content
 
 ## See also
 
-- [Automate employee onboarding tasks before their first day of work with Azure portal (preview)](/azure/active-directory/governance/tutorial-onboard-custom-workflow-portal)
+- [Automate employee onboarding tasks before their first day of work with Azure portal](/azure/active-directory/governance/tutorial-onboard-custom-workflow-portal)
 - [Overview of Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
 - [Overview of reporting in Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)

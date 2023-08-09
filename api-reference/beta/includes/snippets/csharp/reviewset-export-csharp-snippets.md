@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var outputName = "2020-12-06 Contoso investigation export";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var description = "Export for the Contoso investigation";
+var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.ReviewSets.Item.MicrosoftGraphEdiscoveryExport.ExportPostRequestBody
+{
+	OutputName = "2020-12-06 Contoso investigation export",
+	Description = "Export for the Contoso investigation",
+	ExportOptions = Microsoft.Graph.Beta.Models.Ediscovery.ExportOptions.OriginalFiles | Microsoft.Graph.Beta.Models.Ediscovery.ExportOptions.FileInfo | Microsoft.Graph.Beta.Models.Ediscovery.ExportOptions.Tags,
+	ExportStructure = Microsoft.Graph.Beta.Models.Ediscovery.ExportFileStructure.Directory,
+};
+await graphClient.Compliance.Ediscovery.Cases["{case-id}"].ReviewSets["{reviewSet-id}"].MicrosoftGraphEdiscoveryExport.PostAsync(requestBody);
 
-var exportOptions = Microsoft.Graph.Ediscovery.ExportOptions.OriginalFiles | Microsoft.Graph.Ediscovery.ExportOptions.FileInfo | Microsoft.Graph.Ediscovery.ExportOptions.Tags;
-
-var exportStructure = Microsoft.Graph.Ediscovery.ExportFileStructure.Directory;
-
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].ReviewSets["{ediscovery.reviewSet-id}"]
-	.Export(exportStructure,outputName,description,null,null,exportOptions)
-	.Request()
-	.PostAsync();
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "plannerUser resource type"
-description: "The **plannerUser** resource provides access to Planner resources for a user. "
+description: "Provides access to Planner resources for a user. "
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerUser** resource provides access to Planner resources for a [user](user.md). 
+Provides access to Planner resources for a [user](user.md). 
 
 
 ## Methods
@@ -30,17 +30,17 @@ The **plannerUser** resource provides access to Planner resources for a [user](u
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. Identifier of the plannerUser|
-|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| A collection containing the references to the plans that the user has marked as favorites.|
-|recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| A collection containing references to the plans that were viewed recently by the user in apps that support recent plans.|
+|id|String| Read-only. Unique identifier for the **plannerUser** object.|
+|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| A collection that contains the references to the plans that the user has marked as favorites.|
+|recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| A collection that contains references to the plans that were viewed recently by the user in apps that support recent plans.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) assigned to the user.|
 |favoritePlans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) that the user marked as favorites.|
 |recentPlans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) that have been recently viewed by the user in apps that support recent plans. |
 |rosterPlans|[plannerPlan](../resources/plannerplan.md) collection|Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) contained by the [plannerRosters](plannerroster.md) the user is a member.|
+|tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) assigned to the user.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -57,11 +57,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "favoritePlanReferences": {"@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection"},
   "id": "String (identifier)",
+  "favoritePlanReferences": {"@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection"},
   "recentPlanReferences": {"@odata.type": "microsoft.graph.plannerRecentPlanReferenceCollection"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

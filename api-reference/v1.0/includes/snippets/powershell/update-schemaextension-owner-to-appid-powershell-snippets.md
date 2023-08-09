@@ -7,23 +7,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.SchemaExtensions
 
 $params = @{
-	Owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa"
-	Properties = @(
+	owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa"
+	properties = @(
 		@{
-			Name = "courseId"
-			Type = "Integer"
+			name = "courseId"
+			type = "Integer"
 		}
 		@{
-			Name = "courseName"
-			Type = "String"
+			name = "courseName"
+			type = "String"
 		}
 		@{
-			Name = "courseType"
-			Type = "String"
+			name = "courseType"
+			type = "String"
 		}
 		@{
-			Name = "courseSupervisors"
-			Type = "String"
+			name = "courseSupervisors"
+			type = "String"
 		}
 	)
 }

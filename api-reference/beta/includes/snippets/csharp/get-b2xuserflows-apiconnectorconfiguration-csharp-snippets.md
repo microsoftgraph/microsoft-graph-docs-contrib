@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var b2xUserFlows = await graphClient.Identity.B2xUserFlows["{b2xIdentityUserFlow-id}"]
-	.Request()
-	.Expand("postFederationSignup,postAttributeCollection")
-	.Select("ApiConnectorConfiguration")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var apiConnectorConfiguration = b2xUserFlows.ApiConnectorConfiguration;
+var result = await graphClient.Identity.B2xUserFlows["{b2xIdentityUserFlow-id}"].ApiConnectorConfiguration.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "postFederationSignup","postAttributeCollection" };
+});
+
 
 ```

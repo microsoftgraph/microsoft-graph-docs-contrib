@@ -1,7 +1,7 @@
 ---
 title: "Update microsoftTunnelServer"
 description: "Update the properties of a microsoftTunnelServer object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The unique identifier for the managed server. This id is assigned at enrollment time. Supports: $delete. $Update, $insert, $skip, $top is not supported. Read-only.|
 |displayName|String|The display name for the server. This property is required when a server is created and cannot be cleared during updates.|
-|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Indicates the server's health Status as of the last evaluation time. Health is evaluated every 60 seconds, and the possible values are: unknown, healthy, unhealthy, warning, offline, upgradeInProgress, upgradeFailed. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
+|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Indicates the server's health Status as of the last evaluation time. Health is evaluated every 60 seconds, and the possible values are: unknown, healthy, unhealthy, warning, offline, upgradeInProgress, upgradeFailed. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`, `unknownFutureValue`.|
 |lastCheckinDateTime|DateTimeOffset|Indicates when the server last checked in|
 |agentImageDigest|String|The digest of the current agent image running on this server|
 |serverImageDigest|String|The digest of the current server image running on this server|
@@ -62,6 +62,8 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelserver_update_update_microsofttunnelserver" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}
 Content-type: application/json
@@ -79,6 +81,8 @@ Content-length: 312
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.microsoftTunnelServer" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -94,8 +98,3 @@ Content-Length: 361
   "serverImageDigest": "Server Image Digest value"
 }
 ```
-
-
-
-
-

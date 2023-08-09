@@ -1,7 +1,7 @@
 ---
 title: "associatedAssignmentPayloadType enum type"
 description: "This enum represents associated assignment payload type"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -32,8 +32,3 @@ This enum represents associated assignment payload type
 |resourceAccessPolicy|23|Indicates that this filter is associated with a resource access policy (Wifi, VPN, Certificate) payload type|
 |win32app|24|Indicates that this filter is associated with a Win32 app payload type|
 |deviceManagmentConfigurationAndCompliancePolicy|29|Indicates that this filter is associated with a configuration or compliance policy on Device Configuration v2 Infrastructure payload type|
-
-
-
-
-

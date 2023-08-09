@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var columnDefinition = new ColumnDefinition
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ColumnDefinition
 {
 	Description = "test",
 	EnforceUniqueValues = false,
@@ -18,12 +20,10 @@ var columnDefinition = new ColumnDefinition
 		AllowMultipleLines = false,
 		AppendChangesToExistingText = false,
 		LinesForEditing = 0,
-		MaxLength = 255
-	}
+		MaxLength = 255,
+	},
 };
+var result = await graphClient.Sites["{site-id}"].Columns.PostAsync(requestBody);
 
-await graphClient.Sites["{site-id}"].Columns
-	.Request()
-	.AddAsync(columnDefinition);
 
 ```

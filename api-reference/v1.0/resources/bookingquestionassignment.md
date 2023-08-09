@@ -32,8 +32,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.bookingQuestionAssignment",
-  "questionId": "String",
-  "isRequired": "Boolean"
+  "isRequired": "Boolean",
+  "questionId": "String"
 }
 ```
 

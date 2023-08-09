@@ -15,7 +15,7 @@ message.body = body;
 LinkedList<Recipient> toRecipientsList = new LinkedList<Recipient>();
 Recipient toRecipients = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.address = "fannyd@contoso.onmicrosoft.com";
+emailAddress.address = "frannis@contoso.onmicrosoft.com";
 toRecipients.emailAddress = emailAddress;
 toRecipientsList.add(toRecipients);
 message.toRecipients = toRecipientsList;

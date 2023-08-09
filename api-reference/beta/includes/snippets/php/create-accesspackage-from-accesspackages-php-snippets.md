@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackage();
 $requestBody->setCatalogId('aa2f6514-3232-46e7-a08a-2411ad8d7128');
@@ -18,7 +18,7 @@ $requestBody->setDescription('outside sales representatives');
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->post($requestBody);
 
 
 ```

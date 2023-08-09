@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequestObject
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new GovernanceRoleAssignmentRequest
 {
 	RoleDefinitionId = "bc75b4e6-7403-4243-bf2f-d1f6990be122",
 	ResourceId = "fb016e3a-c3ed-4d9d-96b6-a54cd4f0b735",
@@ -14,11 +16,9 @@ var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequestObject
 	AssignmentState = "Active",
 	Type = "UserRemove",
 	Reason = "Deactivate the role",
-	LinkedEligibleRoleAssignmentId = "cb8a533e-02d5-42ad-8499-916b1e4822ec"
+	LinkedEligibleRoleAssignmentId = "cb8a533e-02d5-42ad-8499-916b1e4822ec",
 };
+var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests.PostAsync(requestBody);
 
-await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests
-	.Request()
-	.AddAsync(governanceRoleAssignmentRequest);
 
 ```

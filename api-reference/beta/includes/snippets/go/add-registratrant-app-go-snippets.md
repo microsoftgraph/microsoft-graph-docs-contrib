@@ -4,34 +4,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewMeetingRegistrant()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewMeetingRegistrantBase()
 firstName := "Lisa"
-requestBody.SetFirstName(&firstName)
+requestBody.SetFirstName(&firstName) 
 lastName := "Adkins"
-requestBody.SetLastName(&lastName)
+requestBody.SetLastName(&lastName) 
 email := "lisa.adkins@contoso.com"
-requestBody.SetEmail(&email)
-requestBody.SetCustomQuestionAnswers( []CustomQuestionAnswer {
-	msgraphsdk.NewCustomQuestionAnswer(),
-	SetAdditionalData(map[string]interface{}{
-		"questionId": "MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU=",
-		"value": "No",
-	}
-	msgraphsdk.NewCustomQuestionAnswer(),
-	SetAdditionalData(map[string]interface{}{
-		"questionId": "MSM5M2E2OWQ1Ni1jZTc4LTQDAwMjBfZGlkX3gwMDIwX3lvdV94MDAyMF8=",
-		"value": "Internet",
-	}
+requestBody.SetEmail(&email) 
+
+
+customQuestionAnswer := graphmodels.NewCustomQuestionAnswer()
+questionId := "MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU="
+customQuestionAnswer.SetQuestionId(&questionId) 
+value := "No"
+customQuestionAnswer.SetValue(&value) 
+customQuestionAnswer1 := graphmodels.NewCustomQuestionAnswer()
+questionId := "MSM5M2E2OWQ1Ni1jZTc4LTQDAwMjBfZGlkX3gwMDIwX3lvdV94MDAyMF8="
+customQuestionAnswer1.SetQuestionId(&questionId) 
+value := "Internet"
+customQuestionAnswer1.SetValue(&value) 
+
+customQuestionAnswers := []graphmodels.CustomQuestionAnswerable {
+	customQuestionAnswer,
+	customQuestionAnswer1,
 }
-options := &msgraphsdk.RegistrantsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-onlineMeetingId := "onlineMeeting-id"
-result, err := graphClient.UsersById(&userId).OnlineMeetingsById(&onlineMeetingId).Registration().Registrants().Post(options)
+requestBody.SetCustomQuestionAnswers(customQuestionAnswers)
+
+registrants, err := graphClient.Users().ByUserId("user-id").OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Registrants().Post(context.Background(), requestBody, nil)
 
 
 ```

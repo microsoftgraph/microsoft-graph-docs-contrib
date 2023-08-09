@@ -3,6 +3,114 @@
     {
       "ChangeList": [
         {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentInfo](https://docs.microsoft.com/en-us/graph/api/resources/attachmentInfo?view=graph-rest-1.0) resource.",
+          "Target": "attachmentInfo"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentBase](https://docs.microsoft.com/en-us/graph/api/resources/attachmentBase?view=graph-rest-1.0) resource.",
+          "Target": "attachmentBase"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentSession](https://docs.microsoft.com/en-us/graph/api/resources/attachmentSession?view=graph-rest-1.0) resource.",
+          "Target": "attachmentSession"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskFileAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [taskFileAttachment](https://docs.microsoft.com/en-us/graph/api/resources/taskFileAttachment?view=graph-rest-1.0) resource.",
+          "Target": "taskFileAttachment"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "hasAttachments",
+          "ChangeType": "Addition",
+          "Description": "Added the **hasAttachments** property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "attachments",
+          "ChangeType": "Addition",
+          "Description": "Added the **attachments** navigation property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "startDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **startDateTime** property to the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `Tasks.Read.All` application permission to the read operations of the [todoTasklist](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-v1.0) and [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-v1.0) resources.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `Tasks.Read.All` application permission to the read and write operations of the [todoTasklist](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-v1.0) and [todotask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-v1.0) resources.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-31T04:43:11.3139298Z",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+    },
+      {
+        "ChangeList": [
+          {
+            "Id": "e9bffd04-83e7-4be4-8083-31e39f23da13",
+            "ApiChange": "Permission",
+            "ChangedApiName": "Tasks.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the `Tasks.Read.All` application permission to the read operations of the [todoTasklist](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-beta) and [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resources.",
+            "Target": "todoTask"
+          },
+          {
+            "Id": "e9bffd04-83e7-4be4-8083-31e39f23da13",
+            "ApiChange": "Permission",
+            "ChangedApiName": "Tasks.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the `Tasks.Read.All` application permission to the read and write operations of the [todoTasklist](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-beta) and [todotask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resources.",
+            "Target": "todoTask"
+          }
+        ],
+        "Id": "e9bffd04-83e7-4be4-8083-31e39f23da13",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-01-31T04:43:11.3139298Z",
+        "WorkloadArea": "To-do tasks",
+        "SubArea": ""
+      },
+    {
+      "ChangeList": [
+        {
           "Id": "6e441013-7739-421a-8aad-c1489b499a19",
           "ApiChange": "Property",
           "ChangedApiName": "startDateTime",

@@ -1,7 +1,7 @@
 ---
 title: "commit action"
 description: "Commits a file of a given app."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Commits a file of a given app.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|fileEncryptionInfo|[fileEncryptionInfo](../resources/intune-apps-fileencryptioninfo.md)|File encryption info parameter key.|
+|fileEncryptionInfo|[fileEncryptionInfo](../resources/intune-apps-fileencryptioninfo.md)|The file encryption info parameter key. A PowerShell script example of the file upload process using the ProfileVersion1 encryption scheme can be found at https://aka.ms/fileencryptioninfo.|
 
 
 
@@ -57,6 +57,8 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "ignored" , "name" : "intune_apps_mobileappcontentfile_commit_commit_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}/commit
 
@@ -79,11 +81,8 @@ Content-length: 399
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response"  }-->
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-

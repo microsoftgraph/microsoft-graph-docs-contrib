@@ -41,7 +41,7 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 First, add the provider to your web part. Locate the `src\webparts\<your-project>\<your-web-part>.ts` file in your project folder, and add the following line to the top of your file, right below the existing `import` statements:
 
 ```ts
-import { Providers, SharePointProvider } from '@microsoft/mgt-spfx';
+import { Providers, SharePointProvider } from "@microsoft/mgt-spfx";
 ```
 
 Next, you need to initialize the provider with the authenticated context inside the `onInit()` method of your web part. In the same file, add the following code right before the `public render(): void {` line:
@@ -66,7 +66,7 @@ public render(): void {
 }
 ```
 
->[!NOTE]
+> [!NOTE]
 > If you're building a web part using React, see the [@microsoft/mgt-spfx docs](./mgt-spfx.md#react) to learn how to use `@microsoft/mgt-react`.
 
 ## Configure permissions
@@ -104,8 +104,8 @@ Determine which Microsoft Graph API permissions you need depending on the compon
 
 Before deploying your SharePoint Framework package to your tenant, you will need to deploy the Microsoft Graph Toolkit SharePoint Framework package to your tenant. You can download the package corresponding to the version of Microsoft Graph Toolkit that you used in your project, from the [Releases](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases) section on GitHub.
 
->[!IMPORTANT]
->Because only one version of the SharePoint Framework library for Microsoft Graph Toolkit can be installed in the tenant, before you use the Microsoft Graph Toolkit in your solution, determine whether your organization or customer already has a version of the SharePoint Framework library deployed and use the same version.
+> [!IMPORTANT]
+> Because only one version of the SharePoint Framework library for Microsoft Graph Toolkit can be installed in the tenant, before you use the Microsoft Graph Toolkit in your solution, determine whether your organization or customer already has a version of the SharePoint Framework library deployed and use the same version.
 
 After downloading the Microsoft Graph Toolkit SharePoint Framework .sppkg package, upload it to your SharePoint Online App Catalog. Go to the [More features page of your SharePoint admin center](https://admin.microsoft.com/sharepoint?page=classicfeatures&modern=true). Select **Open** under **Apps**, then click **App Catalog**, and **Distribute apps for SharePoint**. Upload your `.sppkg` file, and click **Deploy**.
 
@@ -127,12 +127,14 @@ Go to your **SharePoint Admin center**. In the left-hand navigation, select **Ad
 
 ## Test your web part
 
-You're now ready to add your web part to a SharePoint page and test it out. You will need to use the hosted workbench to test web parts that use the Microsoft Graph Toolkit because the components need the authenticated context in order to call Microsoft Graph. You can find your hosted workbench at **https://<YOUR_TENANT>.sharepoint.com/_layouts/15/workbench.aspx**.
+You're now ready to add your web part to a SharePoint page and test it out. You will need to use the hosted workbench to test web parts that use the Microsoft Graph Toolkit because the components need the authenticated context in order to call Microsoft Graph. You can find your hosted workbench at **https://<YOUR_TENANT>.sharepoint.com/\_layouts/15/workbench.aspx**.
 
-Open the `config\serve.json` file in your project and replace the  value of `initialPage` with the url for your hosted workbench:
+Open the `config\serve.json` file in your project and replace the value of `initialPage` with the URL for your hosted workbench:
+
 ```json
 "initialPage": "https://<YOUR_TENANT>.sharepoint.com/_layouts/15/workbench.aspx",
 ```
+
 Save the file and then run the following command in the console to build and preview your web part:
 
 ```bash
@@ -142,7 +144,8 @@ gulp serve
 Your hosted workbench will automatically open in your browser. Add your web part to the page and you should see your web part with the Microsoft Graph Toolkit components in action! As long as the gulp serve command is still running in your console, you can continue to make edits to your code and then just refresh your browser to see your changes.
 
 ## Next Steps
+
 - Check out this step-by-step tutorial on [building a SharePoint web part](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/).
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
-- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt/issues).

@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationalActivity();
-$requestBody->setCompletionMonthYear('Date');
+$requestBody->setCompletionMonthYear(new Date('Date'));
 
-$requestBody->setEndMonthYear('Date');
+$requestBody->setEndMonthYear(new Date('Date'));
 
 $institution = new InstitutionData();
 $Institution->setDescription(null);
@@ -61,11 +61,11 @@ $program->setWebUrl('https://biz.colostate.edu');
 
 
 $requestBody->setProgram($program);
-$requestBody->setStartMonthYear('Date');
+$requestBody->setStartMonthYear(new Date('Date'));
 
 
 
-$requestResult = $graphServiceClient->me()->profile()->educationalActivities()->post($requestBody);
+$result = $graphServiceClient->me()->profile()->educationalActivities()->post($requestBody);
 
 
 ```

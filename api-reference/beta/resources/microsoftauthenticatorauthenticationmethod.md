@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A representation of the Microsoft Authenticator app registered to a user. Microsoft Authenticator is an authentication method.
 
-Inherits from [authenticationMethod](../resources/authenticationmethod.md).
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
@@ -32,6 +32,7 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |id|String|A unique identifier for this authentication method. Inherited from [authenticationMethod](../resources/authenticationmethod.md)|
 |deviceTag|String|Tags containing app metadata.|
 |phoneAppVersion|String|Numerical version of this instance of the Authenticator app.|
+|clientAppName|microsoftAuthenticatorAuthenticationMethodClientAppName|The app that the user has registered to use to approve push notifications. The possible values are: `microsoftAuthenticator`, `outlookMobile`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -55,6 +56,7 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "deviceTag": "String",
   "phoneAppVersion": "String",
-  "createdDateTime": "DateTimeOffset"
+  "createdDateTime": "DateTimeOffset",
+  "clientAppName": "microsoftAuthenticator"
 }
 ```

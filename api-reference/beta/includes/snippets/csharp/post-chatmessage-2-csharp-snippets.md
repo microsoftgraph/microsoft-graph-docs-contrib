@@ -4,16 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var chatMessage = new ChatMessage
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ChatMessage
 {
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "Hello World <at id=\"0\">Jane Smith</at>"
+		Content = "Hello World <at id=\"0\">Jane Smith</at>",
 	},
-	Mentions = new List<ChatMessageMention>()
+	Mentions = new List<ChatMessageMention>
 	{
 		new ChatMessageMention
 		{
@@ -25,15 +27,18 @@ var chatMessage = new ChatMessage
 				{
 					DisplayName = "Jane Smith",
 					Id = "ef1c916a-3135-4417-ba27-8eb7bd084193",
-					UserIdentityType = TeamworkUserIdentityType.AadUser
-				}
-			}
-		}
-	}
+					AdditionalData = new Dictionary<string, object>
+					{
+						{
+							"userIdentityType" , "aadUser"
+						},
+					},
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages
-	.Request()
-	.AddAsync(chatMessage);
 
 ```

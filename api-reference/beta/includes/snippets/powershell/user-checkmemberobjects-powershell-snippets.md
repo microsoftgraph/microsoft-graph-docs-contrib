@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
-	Ids = @(
+	ids = @(
 		"80a963dd-84af-4eb8-b2a6-781e444d4fb0"
 		"62e90394-69f5-4237-9190-012177145e10"
 		"86a64f51-3a64-4cc6-a8c8-6b8f000c0f52"
@@ -16,6 +16,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Confirm-MgUserMemberObject -UserId $userId -BodyParameter $params
+Confirm-MgBetaUserMemberObject -UserId $userId -BodyParameter $params
 
 ```

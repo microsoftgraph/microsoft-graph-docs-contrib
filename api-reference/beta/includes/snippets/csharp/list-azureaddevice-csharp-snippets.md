@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var updatableAssets = await graphClient.Admin.Windows.Updates.UpdatableAssets
-	.Request()
-	.Filter("isof('microsoft.graph.windowsUpdates.azureADDevice')")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Admin.Windows.Updates.UpdatableAssets["{updatableAsset-id}"].GetAsync();
+
 
 ```

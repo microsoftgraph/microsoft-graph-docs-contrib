@@ -3,7 +3,7 @@ title: "multiValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a collection of values."
 ms.localizationpriority: medium
 author: "abheek-das"
-ms.prod: ""
+ms.prod: outlook
 doc_type: resourcePageType
 ---
 

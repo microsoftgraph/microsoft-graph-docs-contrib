@@ -4,25 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
-	Topic = @{
-		Source = "entityUrl"
-		Value = "https://graph.microsoft.com/beta/users/{userId}/teamwork/installedApps/{installationId}"
+	topic = @{
+		source = "entityUrl"
+		value = "https://graph.microsoft.com/beta/users/{userId}/teamwork/installedApps/{installationId}"
 	}
-	ActivityType = "taskCreated"
-	PreviewText = @{
-		Content = "New Task Created"
+	activityType = "taskCreated"
+	previewText = @{
+		content = "New Task Created"
 	}
-	TemplateParameters = @(
+	templateParameters = @(
 		@{
-			Name = "taskId"
-			Value = "Task 12322"
+			name = "taskId"
+			value = "Task 12322"
 		}
 	)
 }
 
-Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
+Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 
 ```

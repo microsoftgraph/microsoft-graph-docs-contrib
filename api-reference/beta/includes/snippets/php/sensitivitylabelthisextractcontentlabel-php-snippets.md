@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ExtractContentLabelPostRequestBody();
 $contentInfo = new ContentInfo();
@@ -68,7 +68,7 @@ $contentInfo->setMetadata($metadataArray);
 
 
 $additionalData = [
-'format' => 'default', 
+	'format' => 'default', 
 ];
 $contentInfo->setAdditionalData($additionalData);
 
@@ -77,15 +77,13 @@ $contentInfo->setAdditionalData($additionalData);
 $requestBody->setContentInfo($contentInfo);
 
 $requestConfiguration = new ExtractContentLabelRequestBuilderPostRequestConfiguration();
-
 $headers = [
-'User-Agent' => 'ContosoLOBApp/1.0',
+	'User-Agent' => 'ContosoLOBApp/1.0',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->extractContentLabel()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->users()->byUserId('user-id')->security()->informationProtection()->sensitivityLabels()->microsoftGraphSecurityExtractContentLabel()->post($requestBody, $requestConfiguration);
 
 
 ```

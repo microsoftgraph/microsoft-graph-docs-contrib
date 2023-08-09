@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var chats = await graphClient.Users["{user-id}"].Chats
-	.Request()
-	.Filter("members/any(o: o/displayname eq 'Peter Parker')")
-	.Expand("members")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Users["{user-id}"].Chats.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "members" };
+	requestConfiguration.QueryParameters.Filter = "members/any(o: o/displayname eq 'Peter Parker')";
+});
+
 
 ```

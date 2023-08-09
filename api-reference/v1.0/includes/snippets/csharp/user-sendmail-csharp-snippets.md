@@ -4,43 +4,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var message = new Message
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Me.SendMail.SendMailPostRequestBody
 {
-	Subject = "Meet for lunch?",
-	Body = new ItemBody
+	Message = new Message
 	{
-		ContentType = BodyType.Text,
-		Content = "The new cafeteria is open."
-	},
-	ToRecipients = new List<Recipient>()
-	{
-		new Recipient
+		Subject = "Meet for lunch?",
+		Body = new ItemBody
 		{
-			EmailAddress = new EmailAddress
-			{
-				Address = "fannyd@contoso.onmicrosoft.com"
-			}
-		}
-	},
-	CcRecipients = new List<Recipient>()
-	{
-		new Recipient
+			ContentType = BodyType.Text,
+			Content = "The new cafeteria is open.",
+		},
+		ToRecipients = new List<Recipient>
 		{
-			EmailAddress = new EmailAddress
+			new Recipient
 			{
-				Address = "danas@contoso.onmicrosoft.com"
-			}
-		}
-	}
+				EmailAddress = new EmailAddress
+				{
+					Address = "frannis@contoso.onmicrosoft.com",
+				},
+			},
+		},
+		CcRecipients = new List<Recipient>
+		{
+			new Recipient
+			{
+				EmailAddress = new EmailAddress
+				{
+					Address = "danas@contoso.onmicrosoft.com",
+				},
+			},
+		},
+	},
+	SaveToSentItems = false,
 };
+await graphClient.Me.SendMail.PostAsync(requestBody);
 
-var saveToSentItems = false;
-
-await graphClient.Me
-	.SendMail(message,saveToSentItems)
-	.Request()
-	.PostAsync();
 
 ```

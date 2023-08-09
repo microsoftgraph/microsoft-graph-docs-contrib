@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new MessageRule();
 $requestBody->setDisplayName('From partner');
@@ -17,7 +17,7 @@ $requestBody->setSequence(2);
 $requestBody->setIsEnabled(true);
 
 $conditions = new MessageRulePredicates();
-$conditions->setSenderContains(['adele', ]);
+$conditions->setSenderContains(['adele', 	]);
 
 
 $requestBody->setConditions($conditions);
@@ -41,7 +41,7 @@ $actions->setStopProcessingRules(true);
 $requestBody->setActions($actions);
 
 
-$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->messageRules()->post($requestBody);
+$result = $graphServiceClient->me()->mailFolders()->byMailFolderId('mailFolder-id')->messageRules()->post($requestBody);
 
 
 ```

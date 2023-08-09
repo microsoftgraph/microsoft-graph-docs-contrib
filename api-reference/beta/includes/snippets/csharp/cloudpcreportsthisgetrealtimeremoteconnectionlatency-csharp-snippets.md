@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var stream = await graphClient.DeviceManagement.VirtualEndpoint.Reports
-	.GetRealTimeRemoteConnectionLatency("f5ff445f-7488-40f8-8ab9-ee784a9fffff")
-	.Request()
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+await graphClient.DeviceManagement.VirtualEndpoint.Reports.GetRealTimeRemoteConnectionLatencyWithCloudPcId("{cloudPcId}").GetAsync();
+
 
 ```

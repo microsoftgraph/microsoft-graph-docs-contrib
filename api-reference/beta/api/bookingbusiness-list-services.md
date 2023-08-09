@@ -60,24 +60,28 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-services-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-services-1-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-services-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-services-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-services-1-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-services-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-services-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-services-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-services-1-php-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-services-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -103,7 +107,7 @@ Content-type: application/json
             "id": "f9b9121f-aed7-4c8c-bb3a-a1796a0b0b2d",
             "displayName": "Initial service",
             "defaultDuration": "PT10M",
-            "defaultPrice": 0,
+            "defaultPrice": 0.0,
             "defaultPriceType": "notSet",
             "description": "Not sure how to choose? Let us introduce you to our traditional family recipes.",
             "languageTag": "en-US",
@@ -147,7 +151,7 @@ Content-type: application/json
             "id": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "displayName": "Catered bento",
             "defaultDuration": "PT30M",
-            "defaultPrice": 10,
+            "defaultPrice": 10.0,
             "defaultPriceType": "fixedPrice",
             "description": "Catered individual bento box lunch",
             "languageTag": "en-US",
@@ -197,7 +201,7 @@ Content-type: application/json
             "id": "635a7b7c-4230-4d3b-a42b-698e89927528",
             "displayName": "Kaiseki",
             "defaultDuration": "PT1H30M",
-            "defaultPrice": 30,
+            "defaultPrice": 30.0,
             "defaultPriceType": "fixedPrice",
             "description": "Individual kaiseki lunch delivery",
             "languageTag": "en-US",

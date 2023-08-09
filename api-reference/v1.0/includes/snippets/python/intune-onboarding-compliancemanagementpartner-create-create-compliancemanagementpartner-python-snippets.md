@@ -1,0 +1,76 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = ComplianceManagementPartner()
+request_body.@odata_type = '#microsoft.graph.complianceManagementPartner'
+
+request_body.lastHeartbeatDateTime = DateTime('2016-12-31T23:59:37.9174975-08:00')
+
+request_body.partnerstate(DeviceManagementPartnerTenantState.Unavailable('devicemanagementpartnertenantstate.unavailable'))
+
+request_body.display_name = 'Display Name value'
+
+request_body.mac_os_onboarded = True
+
+request_body.android_onboarded = True
+
+request_body.ios_onboarded = True
+
+mac_os_enrollment_assignments_compliance_management_partner_assignment1 = ComplianceManagementPartnerAssignment()
+mac_os_enrollment_assignments_compliance_management_partner_assignment1.@odata_type = 'microsoft.graph.complianceManagementPartnerAssignment'
+
+mac_os_enrollment_assignments_compliance_management_partner_assignment1target = ConfigurationManagerCollectionAssignmentTarget()
+mac_os_enrollment_assignments_compliance_management_partner_assignment1target.@odata_type = 'microsoft.graph.configurationManagerCollectionAssignmentTarget'
+
+mac_os_enrollment_assignments_compliance_management_partner_assignment1target.collection_id = 'Collection Id value'
+
+
+mac_os_enrollment_assignments_compliance_management_partner_assignment1.target = mac_os_enrollment_assignments_compliance_management_partner_assignment1target
+
+macOsEnrollmentAssignmentsArray []= macOsEnrollmentAssignmentsComplianceManagementPartnerAssignment1;
+request_body.macosenrollmentassignments(macOsEnrollmentAssignmentsArray)
+
+
+android_enrollment_assignments_compliance_management_partner_assignment1 = ComplianceManagementPartnerAssignment()
+android_enrollment_assignments_compliance_management_partner_assignment1.@odata_type = 'microsoft.graph.complianceManagementPartnerAssignment'
+
+android_enrollment_assignments_compliance_management_partner_assignment1target = ConfigurationManagerCollectionAssignmentTarget()
+android_enrollment_assignments_compliance_management_partner_assignment1target.@odata_type = 'microsoft.graph.configurationManagerCollectionAssignmentTarget'
+
+android_enrollment_assignments_compliance_management_partner_assignment1target.collection_id = 'Collection Id value'
+
+
+android_enrollment_assignments_compliance_management_partner_assignment1.target = android_enrollment_assignments_compliance_management_partner_assignment1target
+
+androidEnrollmentAssignmentsArray []= androidEnrollmentAssignmentsComplianceManagementPartnerAssignment1;
+request_body.androidenrollmentassignments(androidEnrollmentAssignmentsArray)
+
+
+ios_enrollment_assignments_compliance_management_partner_assignment1 = ComplianceManagementPartnerAssignment()
+ios_enrollment_assignments_compliance_management_partner_assignment1.@odata_type = 'microsoft.graph.complianceManagementPartnerAssignment'
+
+ios_enrollment_assignments_compliance_management_partner_assignment1target = ConfigurationManagerCollectionAssignmentTarget()
+ios_enrollment_assignments_compliance_management_partner_assignment1target.@odata_type = 'microsoft.graph.configurationManagerCollectionAssignmentTarget'
+
+ios_enrollment_assignments_compliance_management_partner_assignment1target.collection_id = 'Collection Id value'
+
+
+ios_enrollment_assignments_compliance_management_partner_assignment1.target = ios_enrollment_assignments_compliance_management_partner_assignment1target
+
+iosEnrollmentAssignmentsArray []= iosEnrollmentAssignmentsComplianceManagementPartnerAssignment1;
+request_body.iosenrollmentassignments(iosEnrollmentAssignmentsArray)
+
+
+
+
+
+result = await client.device_management.compliance_management_partners.post(request_body = request_body)
+
+
+```

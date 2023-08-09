@@ -1,7 +1,7 @@
 ---
 title: "safeguardSettings resource type"
 description: "Manages the safeguards that the service applies to devices in a deployment."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

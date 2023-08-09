@@ -59,14 +59,14 @@ The following properties are inherited from **[baseItem][]**.
 
 | Property             | Type              | Description                                                              |
 |:---------------------|:------------------|:-------------------------------------------------------------------------|
-| id                   | string            | The unique identifier of the item. Read-only.                            |
-| name                 | string            | The name / title of the item.                                            |
 | createdBy            | [identitySet][]   | Identity of the creator of this item. Read-only.                         |
 | createdDateTime      | DateTimeOffset    | The date and time the item was created. Read-only.                       |
 | description          | string            | The descriptive text for the item.                                       |
 | eTag                 | string            | ETag for the item. Read-only.                                            |
+| id                   | string            | The unique identifier of the item. Read-only.                            |
 | lastModifiedBy       | [identitySet][]   | Identity of the last modifier of this item. Read-only.                   |
 | lastModifiedDateTime | DateTimeOffset    | The date and time the item was last modified. Read-only.                 |
+| name                 | string            | The name / title of the item.                                            |
 | parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-write.                |
 | sharepointIds        | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only. |
 | webUrl               | string (url)      | URL that displays the item in the browser. Read-only.                    |

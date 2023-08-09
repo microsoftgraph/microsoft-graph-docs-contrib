@@ -41,11 +41,11 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.educationStudent",
-  "graduationYear": "String",
-  "grade": "String",
   "birthDate": "DateTimeOffset",
+  "externalId": "String",
   "gender": "String",
-  "studentNumber": "String",
-  "externalId": "String"
+  "grade": "String",
+  "graduationYear": "String",
+  "studentNumber": "String"
 }
 ```

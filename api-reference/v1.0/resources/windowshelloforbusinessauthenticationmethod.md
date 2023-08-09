@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 A representation of a Windows Hello for Business authentication method registered to a user. Windows Hello for Business is a sign-in authentication method for Windows devices.
 
-Inherits from [authenticationMethod](../resources/authenticationmethod.md).
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
@@ -48,9 +48,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
-  "id": "String (Identifier)",
   "displayName": "String",
   "createdDateTime": "String",
+  "id": "String (Identifier)",
   "keyStrength": {"@odata.type": "microsoft.graph.authenticationMethodKeyStrength"}
 }
 ```

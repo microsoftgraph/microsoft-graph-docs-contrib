@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	DisplayName = "Hobby"
-	Description = "Your hobby"
-	DataType = "string"
+	displayName = "Hobby"
+	description = "Your hobby"
+	dataType = "string"
 }
 
 New-MgIdentityUserFlowAttribute -BodyParameter $params

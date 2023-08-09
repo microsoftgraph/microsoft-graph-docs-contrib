@@ -7,22 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new GroupRequestBuilderGetQueryParameters();
-$queryParameters->count = true;
-
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = GroupRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->count = true;
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->groupsById('group-id')->transitiveMembers()->group()->get($requestConfiguration);
+
+$result = $graphServiceClient->groups()->byGroupId('group-id')->transitiveMembers()->graphGroup()->get($requestConfiguration);
 
 
 ```

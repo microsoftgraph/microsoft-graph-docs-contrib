@@ -4,26 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var top = 25;
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var skip = 0;
-
-var filter = "(TotalUsageInHour ge 40 and TotalUsageInHour le 80)";
-
-var select = new List<String>()
+var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.Reports.GetTotalAggregatedRemoteConnectionReports.GetTotalAggregatedRemoteConnectionReportsPostRequestBody
 {
-	"CloudPcId",
-	"ManagedDeviceName",
-	"UserPrincipalName",
-	"TotalUsageInHour",
-	"DaysSinceLastSignIn"
+	Top = 25,
+	Skip = 0,
+	Filter = "(TotalUsageInHour ge 40 and TotalUsageInHour le 80)",
+	Select = new List<string>
+	{
+		"CloudPcId",
+		"ManagedDeviceName",
+		"UserPrincipalName",
+		"TotalUsageInHour",
+		"DaysSinceLastSignIn",
+	},
 };
+await graphClient.DeviceManagement.VirtualEndpoint.Reports.GetTotalAggregatedRemoteConnectionReports.PostAsync(requestBody);
 
-await graphClient.DeviceManagement.VirtualEndpoint.Reports
-	.GetTotalAggregatedRemoteConnectionReports(filter,select,null,null,null,skip,top)
-	.Request()
-	.PostAsync();
 
 ```

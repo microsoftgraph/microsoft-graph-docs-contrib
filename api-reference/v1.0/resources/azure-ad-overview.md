@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "dkershaw10"
 ms.prod: "identity-and-access"
 doc_type: conceptualPageType
+ms.date: 07/07/2022
 ---
 
 # Working with Azure Active Directory resources in Microsoft Graph
@@ -54,5 +55,3 @@ Directory resources and APIs can open up new ways for you to engage with users a
 
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).

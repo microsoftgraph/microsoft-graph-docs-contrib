@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Education
+Import-Module Microsoft.Graph.Beta.Education
 
-Get-MgEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Top 3 
+Get-MgBetaEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Top 3 
 
 ```

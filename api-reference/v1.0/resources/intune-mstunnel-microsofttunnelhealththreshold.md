@@ -1,7 +1,7 @@
 ---
 title: "microsoftTunnelHealthThreshold resource type"
 description: "Entity that represents the health thresholds of a health metric"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -54,8 +54,3 @@ Here is a JSON representation of the resource.
   "defaultUnhealthyThreshold": 1024
 }
 ```
-
-
-
-
-

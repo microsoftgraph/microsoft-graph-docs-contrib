@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var roleManagementPolicies = await graphClient.Policies.RoleManagementPolicies
-	.Request()
-	.Filter("scopeId eq '/' and scopeType eq 'Directory'")
-	.Expand("rules")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Policies.RoleManagementPolicies.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "scopeId eq '/' and scopeType eq 'Directory'";
+	requestConfiguration.QueryParameters.Expand = new string []{ "rules" };
+});
+
 
 ```

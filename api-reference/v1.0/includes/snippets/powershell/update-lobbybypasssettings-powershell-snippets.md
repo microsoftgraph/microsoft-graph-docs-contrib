@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	LobbyBypassSettings = @{
-		IsDialInBypassEnabled = $true
+	lobbyBypassSettings = @{
+		isDialInBypassEnabled = $true
 	}
 }
 

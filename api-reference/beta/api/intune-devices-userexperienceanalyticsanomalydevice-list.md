@@ -1,7 +1,7 @@
 ---
 title: "List userExperienceAnalyticsAnomalyDevices"
 description: "List properties and relationships of the userExperienceAnalyticsAnomalyDevice objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [userExperienceAnalyticsAnomalyDevice](../resources/intune-devices-userexperienceanalyticsanomalydevice.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 637
+Content-Length: 731
 
 {
   "value": [
@@ -75,13 +75,10 @@ Content-Length: 637
       "osVersion": "Os Version value",
       "anomalyId": "Anomaly Id value",
       "anomalyOnDeviceFirstOccurrenceDateTime": "2017-01-01T00:00:47.4723614-08:00",
-      "anomalyOnDeviceLatestOccurrenceDateTime": "2016-12-31T23:59:20.6899849-08:00"
+      "anomalyOnDeviceLatestOccurrenceDateTime": "2016-12-31T23:59:20.6899849-08:00",
+      "correlationGroupId": "Correlation Group Id value",
+      "deviceStatus": "affected"
     }
   ]
 }
 ```
-
-
-
-
-

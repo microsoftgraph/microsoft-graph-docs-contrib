@@ -19,6 +19,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 ## Methods
 None.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

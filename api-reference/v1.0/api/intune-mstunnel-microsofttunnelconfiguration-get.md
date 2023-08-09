@@ -1,7 +1,7 @@
 ---
 title: "Get microsoftTunnelConfiguration"
 description: "Read properties and relationships of the microsoftTunnelConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -53,16 +53,20 @@ If successful, this method returns a `200 OK` response code and [microsoftTunnel
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelconfiguration_get_get_microsofttunnelconfiguration" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelConfigurations/{microsoftTunnelConfigurationId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.microsoftTunnelConfiguration" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 788
+Content-Length: 912
 
 {
   "value": {
@@ -75,6 +79,12 @@ Content-Length: 788
       "Dns Servers value"
     ],
     "defaultDomainSuffix": "Default Domain Suffix value",
+    "routeIncludes": [
+      "Route Includes value"
+    ],
+    "routeExcludes": [
+      "Route Excludes value"
+    ],
     "splitDNS": [
       "Split DNS value"
     ],
@@ -94,8 +104,3 @@ Content-Length: 788
   }
 }
 ```
-
-
-
-
-

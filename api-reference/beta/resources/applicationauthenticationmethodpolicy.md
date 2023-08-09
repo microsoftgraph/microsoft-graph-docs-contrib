@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
 ---
 
-# Azure AD application authentication methods API overview (preview)
+# Azure AD application authentication methods API overview 
 
 Namespace: microsoft.graph
 

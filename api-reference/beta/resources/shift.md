@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A unit of scheduled work in a [schedule](schedule.md). 
+A unit of scheduled work in a [schedule](schedule.md).
+
+The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## Methods
 

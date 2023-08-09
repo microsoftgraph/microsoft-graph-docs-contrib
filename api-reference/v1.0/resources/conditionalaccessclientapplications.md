@@ -32,10 +32,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.conditionalAccessClientApplications",
-  "includeServicePrincipals": [
+  "excludeServicePrincipals": [
     "String"
   ],
-  "excludeServicePrincipals": [
+  "includeServicePrincipals": [
     "String"
   ]
 }

@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "ediscoveryCase,reviewSet,reviewSetQuery",
           "ChangeType": "Addition",
-          "Description": "Introduced the compliance eDiscovery API, including the [ediscoveryCase](https://docs.microsoft.com/en-us/graph/api/resources/ediscoverycase?view=graph-rest-beta), [reviewSet](https://docs.microsoft.com/en-us/graph/api/resources/reviewset?view=graph-rest-beta), and [reviewSetQuery](https://docs.microsoft.com/en-us/graph/api/resources/reviewsetquery?view=graph-rest-beta), and operations.",
+          "Description": "Introduced the compliance eDiscovery API, including the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverycase?view=graph-rest-beta), [reviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta), and [reviewSetQuery](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewsetquery?view=graph-rest-beta), and operations.",
           "Target": "ediscoveryCase,reviewSet,reviewSetQuery"
         }
       ],
@@ -191,7 +191,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Microsoft Graph data connect (preview)",
           "ChangeType": "Addition",
-          "Description": "Introduced the ability to access Microsoft 365 data in bulk. For details, see [Microsoft Graph data connect (preview)](data-connect-overview.md).",
+          "Description": "Introduced the ability to access Microsoft 365 data in bulk.",
           "Target": "Microsoft Graph data connect (preview)"
         }
       ],
@@ -209,7 +209,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bookingBusiness,List,Create,Get,Update,Delete,Publish,Unpublish,Microsoft Bookings API",
           "ChangeType": "Addition",
-          "Description": "Added the [bookingBusiness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) entity and the following CRUD methods and actions: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list?view=graph-rest-beta) \u003Cbr\u003E [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-get?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-delete?view=graph-rest-beta) \u003Cbr\u003E [Publish](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-publish?view=graph-rest-beta) \u003Cbr\u003E [Unpublish](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-unpublish?view=graph-rest-beta). \u003Cbr\u003E Find out more about integrating with the [Microsoft Bookings API](booking-concept-overview.md).",
+          "Description": "Added the [bookingBusiness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) entity and the following CRUD methods and actions: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list?view=graph-rest-beta) \u003Cbr\u003E [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-get?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-delete?view=graph-rest-beta) \u003Cbr\u003E [Publish](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-publish?view=graph-rest-beta) \u003Cbr\u003E [Unpublish](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-unpublish?view=graph-rest-beta).",
           "Target": "bookingBusiness,List,Create,Get,Update,Delete,Publish,Unpublish,Microsoft Bookings API"
         },
         {
@@ -275,7 +275,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "JSON batching",
           "ChangeType": "Change",
-          "Description": "Increased [JSON batching](json-batching.md) internal request limit from 5 to 20.",
+          "Description": "Increased JSON batching internal request limit from 5 to 20.",
           "Target": "JSON batching"
         }
       ],
@@ -293,7 +293,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "JSON batching",
           "ChangeType": "Addition",
-          "Description": "Added [JSON batching](json-batching.md) support. Internal request limit set to 20.",
+          "Description": "Added JSON batching support. Internal request limit set to 20.",
           "Target": "JSON batching"
         }
       ],
@@ -329,7 +329,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delta query,Get incremental changes to groups,Get incremental changes to messages in a folder,Get incremental changes to users",
           "ChangeType": "Addition",
-          "Description": "Add delta function support to v1.0. Add to the following entities to perform [delta query](delta-query-overview.md):, contact, contactFolder, event, group, mailFolder, message, user, See the following for examples:, [Get incremental changes to groups](delta-query-groups.md), [Get incremental changes to messages in a folder](delta-query-messages.md), [Get incremental changes to users](delta-query-users.md)",
+          "Description": "Add delta function support to v1.0. Add to the following entities to perform delta query: contact, contactFolder, event, group, mailFolder, message, user",
           "Target": "delta query,Get incremental changes to groups,Get incremental changes to messages in a folder,Get incremental changes to users"
         }
       ],
@@ -511,7 +511,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "$filter",
           "ChangeType": "Addition",
-          "Description": "You can now use **$filter** to look for resource instances with properties that match specific extension property values, such as extension name. See this [example](extensibility-schema-groups.md#5-get-a-group-and-its-extension-data) for details.",
+          "Description": "You can now use **$filter** to look for resource instances with properties that match specific extension property values, such as extension name.",
           "Target": "example"
         },
         {
@@ -545,7 +545,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authorization topic",
           "ChangeType": "Addition",
-          "Description": "Added new preview capability to allow Cloud Solution Provider pre-consented applications to call Microsoft Graph, described in a new [authorization topic](auth-cloudsolutionprovider.md).",
+          "Description": "Added new preview capability to allow Cloud Solution Provider pre-consented applications to call Microsoft Graph.",
           "Target": "authorization topic"
         }
       ],
@@ -563,7 +563,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "schema extensions,Add custom data to groups using Schema Extensions (preview)",
           "ChangeType": "Addition",
-          "Description": "Extend Microsoft Graph with application data by using [schema extensions](extensibility-overview.md#3-schema-extensions).  This is supported on the following resources:, administrative unit, calendar event, device, group, message, organization, personal contact, post, user, See the following example:, [Add custom data to groups using Schema Extensions (preview)](extensibility-schema-groups.md)",
+          "Description": "Extend Microsoft Graph with application data.  This is supported on the following resources: administrative unit, calendar event, device, group, message, organization, personal contact, post, user.",
           "Target": "schema extensions,Add custom data to groups using Schema Extensions (preview)"
         },
         {
@@ -571,7 +571,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "schema extensions",
           "ChangeType": "Addition",
-          "Description": "Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](extensibility-overview.md#3-schema-extensions) for details.",
+          "Description": "Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain.",
           "Target": "schema extensions"
         }
       ],
@@ -589,7 +589,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "open extensions,Add custom data to users using open extensions (preview)",
           "ChangeType": "Addition",
-          "Description": "Added resources that support [open extensions](extensibility-overview.md#4-open-extensions): , administrative unit, device, group, organization, user, See the following example:, [Add custom data to users using open extensions (preview)](extensibility-open-users.md)",
+          "Description": "Added resources that support open extensions: administrative unit, device, group, organization, user.",
           "Target": "open extensions,Add custom data to users using open extensions (preview)"
         }
       ],
@@ -625,7 +625,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delta query,Get incremental changes to groups (preview),Get incremental changes to messages in a folder (preview),Get incremental changes to users (preview)",
           "ChangeType": "Addition",
-          "Description": "A new delta function add to the following entities to perform [delta query](delta-query-overview.md):, contact, contactFolder, event, group, mailFolder, message, user, See the following for examples:, [Get incremental changes to groups (preview)](delta-query-groups.md), [Get incremental changes to messages in a folder (preview)](delta-query-messages.md), [Get incremental changes to users (preview)](delta-query-users.md)",
+          "Description": "A new delta function add to the following entities to perform delta query: contact, contactFolder, event, group, mailFolder, message, user.",
           "Target": "delta query,Get incremental changes to groups (preview),Get incremental changes to messages in a folder (preview),Get incremental changes to users (preview)"
         }
       ],
@@ -677,7 +677,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Note:",
           "ChangeType": "Addition",
-          "Description": "Apps can use v1.0 Outlook Mail, Calendar, and Contacts APIs to access on-premises mailboxes in a hybrid deployment with Exchange 2016 Cumulative Update 3 (CU3). Find more details about REST API support in specific [hybrid deployments](hybrid-rest-support.md). **Note:** If you\u0027re using these sets of API in v1.0, you can now find your apps, including production apps, working for on-premises mailboxes that meet the specific hybrid deployment requirements. This capability is only in preview.",
+          "Description": "Apps can use v1.0 Outlook Mail, Calendar, and Contacts APIs to access on-premises mailboxes in a hybrid deployment with Exchange 2016 Cumulative Update 3 (CU3). Find more details about REST API support in specific hybrid deployments. **Note:** If you\u0027re using these sets of API in v1.0, you can now find your apps, including production apps, working for on-premises mailboxes that meet the specific hybrid deployment requirements. This capability is only in preview.",
           "Target": "hybrid deployments"
         }
       ],

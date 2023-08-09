@@ -17,17 +17,18 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | A unique ID (not the Teams app ID). |
-| teamsAppId          | string   | The ID from the Teams app manifest. |
-| publishingState| string|The published status of a specific version of a Teams app. Possible values are:</br>`submitted` — The specific version of the Teams app has been submitted and is under review. </br>`published`  — The request to publish the specific version of the Teams app has been approved by the admin and the app is published. </br> `rejected` — The request to publish the specific version of the Teams app was rejected by the admin. |
-| displayName         | string   | The name of the app provided by the app developer. |
-| version             | string   | The version number of the application. |
-| shortDescription    | string   | Short description of the application. |
 | description         | string   | Verbose description of the application. |
+| displayName         | string   | The name of the app provided by the app developer. |
+| id                  | string   | A unique ID (not the Teams app ID). |
+| publishingState| string|The published status of a specific version of a Teams app. Possible values are:</br>`submitted` — The specific version of the Teams app has been submitted and is under review. </br>`published`  — The request to publish the specific version of the Teams app has been approved by the admin and the app is published. </br> `rejected` — The request to publish the specific version of the Teams app was rejected by the admin. |
+| shortDescription    | string   | Short description of the application. |
+| teamsAppId          | string   | The ID from the Teams app manifest. |
+| version             | string   | The version number of the application. |
+|authorization|[teamsAppAuthorization](../resources/teamsappauthorization.md)|Authorization requirements specified in the Teams app manifest.|
 
 ## Relationships
 
-| Relationship | Type	| Description |
+| Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |bot|[teamworkBot](teamworkbot.md) | The details of the bot specified in the Teams app manifest. |
 
@@ -44,7 +45,8 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
   "id": "string",
   "teamsAppId": "string",
   "displayName": "string",
-  "version": "string"
+  "version": "string",
+  "authorization": "#microsoft.graph.teamsAppAuthorization"
 }
 ```
 
@@ -63,4 +65,3 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -91,7 +91,7 @@ dependencies {
 }
 ```
 
-If you want to use ProGuard in your app, add the ProGuard Rules for these new APIs. Create a file called *proguard-rules.txt* in the *App* folder of your project, and paste in the contents of [ProGuard_Rules_for_Android_Rome_SDK.txt](https://github.com/Microsoft/project-rome/blob/master/Android/ProGuard_Rules_for_Android_Rome_SDK.txt).
+If you want to use ProGuard in your app, add the ProGuard Rules for these new APIs. Create a file called *proguard-rules.txt* in the *App* folder of your project, and paste in the contents of `ProGuard_Rules_for_Android_Rome_SDK.txt`.
 In your project's *AndroidManifest.xml* file, add the following permissions inside the `manifest` element (if they are not already present). This gives your app permission to connect to the Internet and to enable Bluetooth discovery on your device.
 Note that the Bluetooth-related permissions are only necessary for using Bluetooth discovery; they are not needed for the other features in the Connected Devices Platform. Additionally, `ACCESS_COARSE_LOCATION` is only required on Android SDKs 21 and later. On Android SDKs 23 and later, you must also prompt the user to grant location access at runtime.
 

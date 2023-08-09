@@ -1,7 +1,7 @@
 ---
 title: "meetingAttendanceReport resource type"
 description: "Contains information associated with a meeting attendance report."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -45,6 +45,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],

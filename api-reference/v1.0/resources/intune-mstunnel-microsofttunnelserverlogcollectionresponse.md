@@ -1,7 +1,7 @@
 ---
 title: "microsoftTunnelServerLogCollectionResponse resource type"
 description: "Entity that stores the server log collection status."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -29,7 +29,7 @@ Entity that stores the server log collection status.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier for server log collection response. Read-only.|
-|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|The status of log collection. Possible values are: pending, completed, failed. Possible values are: `pending`, `completed`, `failed`.|
+|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|The status of log collection. Possible values are: pending, completed, failed. Possible values are: `pending`, `completed`, `failed`, `unknownFutureValue`.|
 |startDateTime|DateTimeOffset|The start time of the logs collected|
 |endDateTime|DateTimeOffset|The end time of the logs collected|
 |sizeInBytes|Int64|The size of the logs in bytes|
@@ -61,8 +61,3 @@ Here is a JSON representation of the resource.
   "expiryDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-

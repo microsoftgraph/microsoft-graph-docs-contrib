@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	"Template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
-	DisplayName = "My Sample Team"
-	Description = "My Sample Team’s Description"
-	Members = @(
+	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
+	displayName = "My Sample Team"
+	description = "My Sample Team’s Description"
+	members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
+			roles = @(
 				"owner"
 			)
-			"User@odata.bind" = "https://graph.microsoft.com/v1.0/users('0040b377-61d8-43db-94f5-81374122dc7e')"
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('0040b377-61d8-43db-94f5-81374122dc7e')"
 		}
 	)
 }

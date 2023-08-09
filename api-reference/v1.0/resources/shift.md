@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a unit of scheduled work in a [schedule](schedule.md). 
+Represents a unit of scheduled work in a [schedule](schedule.md).
+
+The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## Methods
 

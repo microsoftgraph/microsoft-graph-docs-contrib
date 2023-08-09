@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
-|[Get simulationAutomation](../api/attacksimulationroot-get-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md)|Get an attack simulation automation for a tenant.|
+|[Get simulationAutomation](../api/simulationautomation-get.md)|[simulationAutomation](../resources/simulationautomation.md)|Get an attack simulation automation for a tenant.|
 |[List runs](../api/simulationautomation-list-runs.md)|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|Get a list of the attack simulation automation runs for a tenant.|
 
 ## Properties

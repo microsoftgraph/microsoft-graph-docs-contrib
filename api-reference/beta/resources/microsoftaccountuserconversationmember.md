@@ -24,7 +24,7 @@ Inherits from [conversationMember](../resources/conversationmember.md).
 |displayName|String|Display name of the user. Inherited from [conversationMember](../resources/conversationmember.md).|
 |id|String|Membership ID that represents this resource. Inherited from [entity](../resources/entity.md).|
 |roles|String collection|Special roles for this user. Inherited from [conversationMember](../resources/conversationmember.md).|
-|userId|String|ID of the user.|
+|userId|String|Microsoft Account ID of the user.|
 |visibleHistoryStartDateTime|DateTimeOffset|The timestamp denoting how far back a conversation's history is shared with the conversation member. Inherited from [conversationMember](../resources/conversationmember.md).|
 
 ## Relationships

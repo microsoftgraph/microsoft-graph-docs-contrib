@@ -1,7 +1,7 @@
 ---
 title: "adminConsentRequestPolicy resource type"
 description: "Represents the policy for enabling or disabling the Azure AD admin consent workflow."
-author: "psignoret"
+author: "eringreenlee"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -49,7 +49,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.adminConsentRequestPolicy",
   "isEnabled": "Boolean",
-  "version": "Integer",
   "notifyReviewers": "Boolean",
   "remindersEnabled": "Boolean",
   "requestDurationInDays": "Integer",
@@ -57,7 +56,8 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.accessReviewReviewerScope"
     }
-  ]
+  ],
+  "version": "Integer"
 }
 ```
 

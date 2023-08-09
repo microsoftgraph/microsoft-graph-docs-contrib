@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ProjectParticipation();
-$requestBody->setCategories(['Branding', ]);
+$requestBody->setCategories(['Branding', 	]);
 
 $client = new CompanyDetail();
 $client->setDisplayName('Contoso Ltd.');
@@ -45,7 +45,7 @@ $detail->setSummary('A 6 month project to help Contoso rebrand after they were d
 $requestBody->setDetail($detail);
 
 
-$requestResult = $graphServiceClient->me()->profile()->projects()->post($requestBody);
+$result = $graphServiceClient->me()->profile()->projects()->post($requestBody);
 
 
 ```

@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
-	Description = "Configure new hire tasks for onboarding employees on their first day"
-	DisplayName = "Australia Onboard new hire employee"
-	IsEnabled = $true
-	IsSchedulingEnabled = $false
+	description = "Configure new hire tasks for onboarding employees on their first day"
+	displayName = "Australia Onboard new hire employee"
+	isEnabled = $true
+	isSchedulingEnabled = $false
 }
 
-Update-MgIdentityGovernanceLifecycleWorkflow -WorkflowId $workflowId -BodyParameter $params
+Update-MgBetaIdentityGovernanceLifecycleWorkflow -WorkflowId $workflowId -BodyParameter $params
 
 ```

@@ -4,17 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workbookTableRow = new WorkbookTableRow
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new WorkbookTableRow
 {
-	Values = JsonDocument.Parse(@"""[\r\n    [1, 2, 3],\r\n    [4, 5, 6]\r\n  ]""")
+	Values = new List<List<Number>>
+	{
+		new List<Number>
+		{
+			1,
+			2,
+			3,
+		},
+		new List<Number>
+		{
+			4,
+			5,
+			6,
+		},
+	},
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows.PostAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "respond-async");
+	requestConfiguration.Headers.Add("Workbook-Session-Id", "{Workbook-Session-Id}");
+});
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows
-	.Request()
-	.Header("Prefer","respond-async")
-	.Header("Workbook-Session-Id","{Workbook-Session-Id}")
-	.AddAsync(workbookTableRow);
 
 ```

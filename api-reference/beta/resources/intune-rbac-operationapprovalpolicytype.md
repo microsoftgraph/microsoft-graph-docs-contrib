@@ -1,7 +1,7 @@
 ---
 title: "operationApprovalPolicyType enum type"
 description: "Operation Approval Policy Type"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -40,8 +40,3 @@ Operation Approval Policy Type
 |roles|18|Roles|
 |deviceResetPasscode|19|Device Reset Passcode Action|
 |unknownFutureValue|99|Placeholder for future Operation Approval Policy Types|
-
-
-
-
-

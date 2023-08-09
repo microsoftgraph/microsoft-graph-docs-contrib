@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SetCloudPcReviewStatusPostRequestBody();
 $reviewStatus = new CloudPcReviewStatus();
@@ -21,7 +21,7 @@ $reviewStatus->setAzureStorageAccountId('/subscriptions/f68bd846-16ad-4b51-a7c6-
 $requestBody->setReviewStatus($reviewStatus);
 
 
-$graphServiceClient->deviceManagement()->managedDevicesById('managedDevice-id')->setCloudPcReviewStatus()->post($requestBody);
+$graphServiceClient->deviceManagement()->managedDevices()->byManagedDeviceId('managedDevice-id')->setCloudPcReviewStatus()->post($requestBody);
 
 
 ```

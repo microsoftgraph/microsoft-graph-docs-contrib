@@ -27,10 +27,13 @@ const deviceRegistrationPolicy = {
         isAdminConfigurable: true,
         allowedUsers: [],
         allowedGroups: []
+    },
+    localAdminPassword: {
+      isEnabled: true
     }
 };
 
-await client.api('/deviceRegistrationPolicy')
+await client.api('/policies/deviceRegistrationPolicy')
 	.version('beta')
 	.put(deviceRegistrationPolicy);
 

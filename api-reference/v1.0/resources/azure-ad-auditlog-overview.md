@@ -2,9 +2,10 @@
 title: "Activity reports API overview"
 description: "Use the activity reports API in Microsoft Graph to access the reports that Azure Active Directory creates to help you track user activity in a tenant."
 ms.localizationpriority: high
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: conceptualPageType
+ms.date: 09/16/2022
 ---
 
 # Activity reports API overview

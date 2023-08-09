@@ -7,9 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Planner
 
 $params = @{
-	Name = "Development"
+	name = "Development"
 }
 
-Update-MgPlannerBucket -PlannerBucketId $plannerBucketId -BodyParameter $params
+Update-MgPlannerBucket -PlannerBucketId $plannerBucketId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=" 
+
 
 ```

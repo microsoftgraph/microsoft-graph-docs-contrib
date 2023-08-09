@@ -97,19 +97,20 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string (identifier)",
-  "topic": "string",
   "createdDateTime": "dateTimeOffset",
-  "lastUpdatedDateTime": "dateTimeOffset",
   "chatType": "string",
-  "webUrl": "string",
+  "id": "string (identifier)",
+  "lastUpdatedDateTime": "dateTimeOffset",
+  "onlineMeetingInfo": {
+    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
+  },
   "tenantId": "string",
+  "topic": "string",
+  
   "viewpoint": {
     "@odata.type": "microsoft.graph.chatViewpoint"
   },
-  "onlineMeetingInfo": {
-    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
-  }
+  "webUrl": "string",
 }
 ```
 
@@ -117,6 +118,9 @@ The following is a JSON representation of the resource.
 
 - [channel](channel.md)
 - [chatMessage](chatmessage.md)
+- [Chat lifecycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-chat-lifecycle/csharp)
+- [Chat lifecycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-chat-lifecycle/nodejs)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

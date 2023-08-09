@@ -1,7 +1,7 @@
 ---
 title: "Create deviceAndAppManagementRoleDefinition"
 description: "Create a new deviceAndAppManagementRoleDefinition object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -61,6 +61,9 @@ If successful, this method returns a `201 Created` response code and a [deviceAn
 
 ### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request" , "name" : "intune_rbac_deviceandappmanagementroledefinition_create_create_deviceandappmanagementroledefinition" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions
 Content-type: application/json
@@ -90,8 +93,44 @@ Content-length: 602
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-rbac-deviceandappmanagementroledefinition-create-create-deviceandappmanagementroledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-rbac-deviceandappmanagementroledefinition-create-create-deviceandappmanagementroledefinition-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-rbac-deviceandappmanagementroledefinition-create-create-deviceandappmanagementroledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-rbac-deviceandappmanagementroledefinition-create-create-deviceandappmanagementroledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-rbac-deviceandappmanagementroledefinition-create-create-deviceandappmanagementroledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-rbac-deviceandappmanagementroledefinition-create-create-deviceandappmanagementroledefinition-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-rbac-deviceandappmanagementroledefinition-create-create-deviceandappmanagementroledefinition-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-rbac-deviceandappmanagementroledefinition-create-create-deviceandappmanagementroledefinition-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.deviceAndAppManagementRoleDefinition" }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -121,8 +160,3 @@ Content-Length: 651
   "isBuiltIn": true
 }
 ```
-
-
-
-
-

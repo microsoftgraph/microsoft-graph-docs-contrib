@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	Labels = @(
+	labels = @(
 		@{
-			LanguageTag = "en-US"
-			Name = "Car"
-			IsDefault = $true
+			languageTag = "en-US"
+			name = "Car"
+			isDefault = $true
 		}
 	)
 }

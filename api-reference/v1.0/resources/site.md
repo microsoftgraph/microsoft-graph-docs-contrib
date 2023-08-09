@@ -19,6 +19,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 |:-------------------------|:-------------|:----------
 | [Get root site][]        | site | Access the root SharePoint site within a tenant.
 | [Get site][]             | site | Access a sharePoint site using the siteId.
+| [List sites across geographies][] |  collection of sites  | List sites across all geographies in an organization.
 | [Get site by path][]     | site | Access the root SharePoint site with a relative path.
 | [Get site for a group][] | site | Access the team site for a group.
 | [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource. 
@@ -36,6 +37,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
+[List sites across geographies]: ../api/site-getallsites.md
 [Get site by path]: ../api/site-getbypath.md
 [Get site for a group]: ../api/site-get.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -55,11 +57,11 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 | Property            | Type                                | Description                                                                                    |
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
-| **id**                   | string                              | The unique identifier of the item. Read-only.                                                  |
 | **createdDateTime**      | DateTimeOffset                      | The date and time the item was created. Read-only.                                             |
 | **description**          | string                              | The descriptive text for the site.                                                             |
 | **displayName**          | string                              | The full title for the site. Read-only.                                                        |
 | **eTag**                 | string                              | ETag for the item. Read-only.                                                                  |
+| **id**                   | string                              | The unique identifier of the item. Read-only.                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | The date and time the item was last modified. Read-only.                                       |
 | **name**                 | string                              | The name / title of the item.                                                                  |
 | **root**                 | [root](root.md)                     | If present, indicates that this is the root site in the site collection. Read-only.            |

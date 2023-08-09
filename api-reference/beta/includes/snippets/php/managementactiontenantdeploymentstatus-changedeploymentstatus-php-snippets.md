@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChangeDeploymentStatusPostRequestBody();
 $requestBody->setTenantGroupId('String');
@@ -22,7 +22,7 @@ $requestBody->setStatus('String');
 
 
 
-$requestResult = $graphServiceClient->tenantRelationships()->managedTenants()->managementActionTenantDeploymentStatuses()->changeDeploymentStatus()->post($requestBody);
+$result = $graphServiceClient->tenantRelationships()->managedTenants()->managementActionTenantDeploymentStatuses()->microsoftGraphManagedTenantsChangeDeploymentStatus()->post($requestBody);
 
 
 ```

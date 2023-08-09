@@ -1,7 +1,7 @@
 ---
 title: "Update intuneBrandingProfile"
 description: "Update the properties of a intuneBrandingProfile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -74,6 +74,7 @@ The following table shows the properties that are required when you create the [
 |isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
 |isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) collection|Collection of blocked actions on the company portal as per platform and device ownership types.|
+|disableDeviceCategorySelection|Boolean|Boolean that indicates if Device Category Selection will be shown in Company Portal|
 |showAzureADEnterpriseApps|Boolean|Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal|
 |showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
 |showConfigurationManagerApps|Boolean|Boolean that indicates if Configuration Manager Apps will be shown in Company Portal|
@@ -94,7 +95,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
-Content-length: 2016
+Content-length: 2059
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -145,6 +146,7 @@ Content-length: 2016
       "action": "remove"
     }
   ],
+  "disableDeviceCategorySelection": true,
   "showAzureADEnterpriseApps": true,
   "showOfficeWebApps": true,
   "showConfigurationManagerApps": true,
@@ -162,7 +164,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2188
+Content-Length: 2231
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -216,6 +218,7 @@ Content-Length: 2188
       "action": "remove"
     }
   ],
+  "disableDeviceCategorySelection": true,
   "showAzureADEnterpriseApps": true,
   "showOfficeWebApps": true,
   "showConfigurationManagerApps": true,
@@ -227,8 +230,3 @@ Content-Length: 2188
   ]
 }
 ```
-
-
-
-
-

@@ -32,13 +32,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.authenticationMethodFeatureConfiguration",
-  "state": "String",
+  "excludeTarget": {
+    "@odata.type": "microsoft.graph.featureTarget"
+  },
   "includeTarget": {
     "@odata.type": "microsoft.graph.featureTarget"
   },
-  "excludeTarget": {
-    "@odata.type": "microsoft.graph.featureTarget"
-  }
+  "state": "String"
 }
 ```
 

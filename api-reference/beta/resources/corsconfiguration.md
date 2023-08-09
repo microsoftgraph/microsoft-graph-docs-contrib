@@ -1,5 +1,5 @@
 ---
-title: "corsConfiguration resource type"
+title: "corsConfiguration resource type (deprecated)"
 description: "Represents the CORS settings for an on-premises application segment published via Application Proxy."
 ms.localizationpriority: medium
 author: "dhruvinshah"
@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
-# corsConfiguration resource type
+# corsConfiguration resource type (deprecated)
 
 Namespace: microsoft.graph
 
