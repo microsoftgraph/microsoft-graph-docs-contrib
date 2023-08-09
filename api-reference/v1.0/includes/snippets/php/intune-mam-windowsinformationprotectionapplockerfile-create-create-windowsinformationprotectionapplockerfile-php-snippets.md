@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new WindowsInformationProtectionAppLockerFile();
-$requestBody->set@odatatype('#microsoft.graph.windowsInformationProtectionAppLockerFile');
+$requestBody->setOdataType('#microsoft.graph.windowsInformationProtectionAppLockerFile');
 
 $requestBody->setDisplayName('Display Name value');
 
@@ -22,7 +22,7 @@ $requestBody->setVersion('Version value');
 
 
 
-$result = $graphServiceClient->deviceAppManagement()->windowsInformationProtectionPolicies()->byWindowsInformationProtectionPolicieId('windowsInformationProtectionPolicy-id')->exemptAppLockerFiles()->post($requestBody);
+$result = $graphServiceClient->deviceAppManagement()->windowsInformationProtectionPolicies()->byWindowsInformationProtectionPolicyId('windowsInformationProtectionPolicy-id')->exemptAppLockerFiles()->post($requestBody);
 
 
 ```

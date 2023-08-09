@@ -23,7 +23,7 @@ requestBody.SetPrincipalId(&principalId)
 directoryScopeId := "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
 requestBody.SetDirectoryScopeId(&directoryScopeId) 
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignments().Post(context.Background(), requestBody, nil)
+roleAssignments, err := graphClient.RoleManagement().Directory().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

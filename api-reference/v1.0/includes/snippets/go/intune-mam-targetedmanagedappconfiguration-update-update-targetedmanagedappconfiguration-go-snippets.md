@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTargetedManagedAppConfiguration()
@@ -39,7 +39,7 @@ requestBody.SetDeployedAppCount(&deployedAppCount)
 isAssigned := true
 requestBody.SetIsAssigned(&isAssigned) 
 
-result, err := graphClient.DeviceAppManagement().TargetedManagedAppConfigurations().ByTargetedManagedAppConfigurationId("targetedManagedAppConfiguration-id").Patch(context.Background(), requestBody, nil)
+targetedManagedAppConfigurations, err := graphClient.DeviceAppManagement().TargetedManagedAppConfigurations().ByTargetedManagedAppConfigurationId("targetedManagedAppConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

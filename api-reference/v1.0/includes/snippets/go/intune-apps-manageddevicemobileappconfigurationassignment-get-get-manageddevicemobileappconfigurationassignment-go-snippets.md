@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceAppManagement().MobileAppConfigurations().ByMobileAppConfigurationId("managedDeviceMobileAppConfiguration-id").Assignments().ByAssignmentId("managedDeviceMobileAppConfigurationAssignment-id").Get(context.Background(), nil)
+assignments, err := graphClient.DeviceAppManagement().MobileAppConfigurations().ByManagedDeviceMobileAppConfigurationId("managedDeviceMobileAppConfiguration-id").Assignments().ByManagedDeviceMobileAppConfigurationAssignmentId("managedDeviceMobileAppConfigurationAssignment-id").Get(context.Background(), nil)
 
 
 ```

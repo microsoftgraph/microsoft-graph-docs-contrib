@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ImportedWindowsAutopilotDeviceIdentity();
-$requestBody->set@odatatype('#microsoft.graph.importedWindowsAutopilotDeviceIdentity');
+$requestBody->setOdataType('#microsoft.graph.importedWindowsAutopilotDeviceIdentity');
 
 $requestBody->setGroupTag('Group Tag value');
 
@@ -23,7 +23,7 @@ $requestBody->setImportId('Import Id value');
 $requestBody->setHardwareIdentifier(base64_decode('aGFyZHdhcmVJZGVudGlmaWVy'));
 
 $state = new ImportedWindowsAutopilotDeviceIdentityState();
-$state->set@odatatype('microsoft.graph.importedWindowsAutopilotDeviceIdentityState');
+$state->setOdataType('microsoft.graph.importedWindowsAutopilotDeviceIdentityState');
 
 $state->setDeviceImportStatus(new ImportedWindowsAutopilotDeviceIdentityImportStatus('pending'));
 

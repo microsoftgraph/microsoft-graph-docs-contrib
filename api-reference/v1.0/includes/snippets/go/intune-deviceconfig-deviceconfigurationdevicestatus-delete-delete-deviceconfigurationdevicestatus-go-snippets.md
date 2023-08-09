@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").DeviceStatuses().ByDeviceStatuseId("deviceConfigurationDeviceStatus-id").Delete(context.Background(), nil)
+graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").DeviceStatuses().ByDeviceConfigurationDeviceStatusId("deviceConfigurationDeviceStatus-id").Delete(context.Background(), nil)
 
 
 ```

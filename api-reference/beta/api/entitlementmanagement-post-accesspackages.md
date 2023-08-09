@@ -45,7 +45,16 @@ POST /identityGovernance/entitlementManagement/accessPackages
 
 ## Request body
 
-In the request body, supply a JSON representation of an [accessPackage](../resources/accesspackage.md) object.
+In the request body, supply a JSON representation of the [accessPackage](../resources/accesspackage.md) object.
+
+You can specify the following properties when creating an **accessPackage**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|catalogId|String| Required. The ID of the catalog that's linked to this access package.|
+|displayName|String|Required. The display name of the access package.|
+|description|String|Optional. The description of the access package.|
+|isHidden|Boolean|Optional. Whether the access package is hidden from the requestor.|
 
 ## Response
 

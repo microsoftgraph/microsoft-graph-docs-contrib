@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewRemoteAssistancePartner()
@@ -26,7 +26,7 @@ requestBody.SetOnboardingStatus(&onboardingStatus)
 lastConnectionDateTime , err := time.Parse(time.RFC3339, "2016-12-31T23:58:36.6670033-08:00")
 requestBody.SetLastConnectionDateTime(&lastConnectionDateTime) 
 
-result, err := graphClient.DeviceManagement().RemoteAssistancePartners().Post(context.Background(), requestBody, nil)
+remoteAssistancePartners, err := graphClient.DeviceManagement().RemoteAssistancePartners().Post(context.Background(), requestBody, nil)
 
 
 ```
