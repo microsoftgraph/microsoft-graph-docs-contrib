@@ -585,7 +585,97 @@ Content-type: application/json
 }
 ```
 
-### Example 8: Use $filter to get users who are assigned a specific license
+
+### Example 8: Get guest (B2B) users from a specific tenant or domain by userPrincipalName
+
+#### Request
+
+The following is an example of the request. The userPrincipalName value for guest (B2B collaboration) users always contains the "#EXT#" identifier. For example, the userPrincipalName of a user in their home tenant is *AdeleV@adatum.com*. When you invite the user to collaborate in your tenant, *contoso.com*, their userPrincipalName in your tenant is "AdeleV_adatum.com#EXT#@contoso.com".
+
+This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request includes the endsWith operator. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+>**NOTE:** You must encode the reserved character "#" in the userPrincipalName value as "%23" in the request URL. For more information, see [Encoding special characters](/graph/query-parameters#encoding-query-parameters).
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_b2b_users"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,mail,identities&$filter=endsWith(userPrincipalName,'%23EXT%23@contoso.com')&$count=true
+ConsistencyLevel: eventual
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-b2b-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-b2b-users-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-b2b-users-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-b2b-users-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-b2b-users-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-b2b-users-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following is an example of the response.
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,mail,identities)",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "39807bd1-3dde-48f3-8165-81ddd4e46de0",
+            "displayName": "Adele Vance",
+            "mail": "AdeleV@adatum.com",
+            "identities": [
+                {
+                    "signInType": "userPrincipalName",
+                    "issuer": "contoso.com",
+                    "issuerAssignedId": "AdeleV_adatum.com#EXT#@cntoso.com"
+                }
+            ]
+        }
+    ]
+}
+```
+
+### Example 9: Use $filter to get users who are assigned a specific license
 
 #### Request
 
@@ -641,7 +731,7 @@ Content-type: application/json
 ```
 
 
-### Example 9: Get the value of a schema extension for all users
+### Example 10: Get the value of a schema extension for all users
 
 In this example, the ID of the schema extension is `ext55gb1l09_msLearnCourses`.
 
@@ -722,7 +812,7 @@ Content-type: application/json
 
 >**Note:** You can also apply `$filter` on the schema extension property to retrieve objects where a property in the collection matches a specified value. The syntax is `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. For example, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. The `eq` and `not` operators are supported.
 
-### Example 10: Get users including their last sign-in time
+### Example 11: Get users including their last sign-in time
 
 #### Request
 

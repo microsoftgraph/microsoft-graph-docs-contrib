@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().Reports().ExportJobs().ByExportJobId("cloudPcExportJob-id").Get(context.Background(), nil)
+exportJobs, err := graphClient.DeviceManagement().VirtualEndpoint().Reports().ExportJobs().ByCloudPcExportJobId("cloudPcExportJob-id").Get(context.Background(), nil)
 
 
 ```

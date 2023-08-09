@@ -76,23 +76,39 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tables/Table1/rows
+POST https://graph.microsoft.com/v1.0/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tables/Table1/rows
 Content-type: application/json
 
 {
-  "values": "[
+  "values": [
     [1, 2, 3],
     [4, 5, 6]
-  ]"
+  ]
 }
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-table-row-java-snippets.md)]
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tablerowcollection-add-table-row-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/tablerowcollection-add-table-row-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tablerowcollection-add-table-row-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-add-table-row-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tablerowcollection-add-table-row-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tablerowcollection-add-table-row-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -114,7 +130,7 @@ Content-type: application/json
 
 {
   "index": 99,
-  "values": "[[1, 2, 3]]"
+  "values": [[1, 2, 3]]
 }
 ```
 
@@ -137,25 +153,41 @@ Here is an example of the async request. Note that `202 Accepted` will only happ
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tables/Table1/rows
+POST https://graph.microsoft.com/v1.0/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tables/Table1/rows
 Content-type: application/json
 Prefer: respond-async
 Workbook-Session-Id: {Workbook-Session-Id}
 
 {
-  "values": "[
+  "values": [
     [1, 2, 3],
     [4, 5, 6]
-  ]"
+  ]
 }
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-table-row-async-java-snippets.md)]
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tablerowcollection-add-table-row-async-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/tablerowcollection-add-table-row-async-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tablerowcollection-add-table-row-async-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-add-table-row-async-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tablerowcollection-add-table-row-async-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tablerowcollection-add-table-row-async-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

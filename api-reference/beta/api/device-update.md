@@ -15,9 +15,6 @@ Namespace: microsoft.graph
 
 Update the properties of a device. Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
 
-> [!IMPORTANT]
-> This API has a [known issue](/graph/known-issues#linux-based-devices-cant-be-updated-by-an-app-with-application-permissions). An app with application permissions can only update the **extensionAttributes** property for Linux-based devices, that is, where the **operationSystem** property is `linux`.
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -27,7 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Device.ReadWrite.All, Directory.ReadWrite.All |
 
-The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*. A calling user in the *Cloud Device Administrator* role can only enable or disable devices using this API and a user with the *Windows 365 Administrator* role can only update basic device properties.
+In application-only scenarios and for non-Windows devices, that is, where the **operatingSystem** property is not `Windows`, the app can update only the **extensionAttributes** property.
+
+In delegated scenarios, the calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*. A calling user in the *Cloud Device Administrator* role can only enable or disable devices using this API and a user with the *Windows 365 Administrator* role can only update basic device properties.
 
 ## HTTP request
 
@@ -47,7 +46,7 @@ PATCH /devices(deviceId='{deviceId}')
 
 In the request body, supply the values for the [device](../resources/device.md) properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Only callers in Global Administrator and Cloud Device Administrator roles can update this property. |
 |operatingSystem|String|The type of operating system on the device.|

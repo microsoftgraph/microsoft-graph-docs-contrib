@@ -23,7 +23,7 @@ requestBody.SetMaximum(maximum)
 minimum := graphmodels.NewJson()
 requestBody.SetMinimum(minimum)
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Charts().ByChartId("workbookChart-id").Axes().ValueAxis().Patch(context.Background(), requestBody, nil)
+valueAxis, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").Charts().ByWorkbookChartId("workbookChart-id").Axes().ValueAxis().Patch(context.Background(), requestBody, nil)
 
 
 ```
