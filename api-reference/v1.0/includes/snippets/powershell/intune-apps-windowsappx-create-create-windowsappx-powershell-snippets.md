@@ -40,6 +40,6 @@ $params = @{
 	identityVersion = "Identity Version value"
 }
 
-New-MgDeviceAppMgtMobileApp -BodyParameter $params
+New-MgDeviceAppManagementMobileApp -BodyParameter $params
 
 ```

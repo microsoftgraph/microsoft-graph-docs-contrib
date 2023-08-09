@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().ApplePushNotificationCertificate().Get(context.Background(), nil)
+applePushNotificationCertificate, err := graphClient.DeviceManagement().ApplePushNotificationCertificate().Get(context.Background(), nil)
 
 
 ```

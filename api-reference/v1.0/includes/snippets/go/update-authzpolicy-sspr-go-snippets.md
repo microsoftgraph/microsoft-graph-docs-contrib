@@ -19,7 +19,7 @@ requestBody := graphmodels.NewAuthorizationPolicy()
 allowedToUseSSPR := true
 requestBody.SetAllowedToUseSSPR(&allowedToUseSSPR) 
 
-result, err := graphClient.Policies().AuthorizationPolicy().Patch(context.Background(), requestBody, nil)
+authorizationPolicy, err := graphClient.Policies().AuthorizationPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

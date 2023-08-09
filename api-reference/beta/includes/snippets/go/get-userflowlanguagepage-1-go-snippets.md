@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Identity().B2cUserFlows().ByB2cUserFlowId("b2cIdentityUserFlow-id").Languages().ByLanguageId("userFlowLanguageConfiguration-id").DefaultPages().Get(context.Background(), nil)
+defaultPages, err := graphClient.Identity().B2cUserFlows().ByB2cIdentityUserFlowId("b2cIdentityUserFlow-id").Languages().ByUserFlowLanguageConfigurationId("userFlowLanguageConfiguration-id").DefaultPages().Get(context.Background(), nil)
 
 
 ```

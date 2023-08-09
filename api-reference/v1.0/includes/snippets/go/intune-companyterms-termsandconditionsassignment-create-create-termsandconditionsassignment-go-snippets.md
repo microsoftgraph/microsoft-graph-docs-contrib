@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTermsAndConditionsAssignment()
@@ -21,7 +21,7 @@ collectionId := "Collection Id value"
 target.SetCollectionId(&collectionId) 
 requestBody.SetTarget(target)
 
-result, err := graphClient.DeviceManagement().TermsAndConditions().ByTermsAndConditionId("termsAndConditions-id").Assignments().Post(context.Background(), requestBody, nil)
+assignments, err := graphClient.DeviceManagement().TermsAndConditions().ByTermsAndConditionsId("termsAndConditions-id").Assignments().Post(context.Background(), requestBody, nil)
 
 
 ```

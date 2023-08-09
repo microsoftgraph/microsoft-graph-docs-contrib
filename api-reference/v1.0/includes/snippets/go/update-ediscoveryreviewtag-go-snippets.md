@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 description := "Use Graph API to create tags (updated)"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Tags().ByTagId("ediscoveryReviewTag-id").Patch(context.Background(), requestBody, nil)
+tags, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Tags().ByEdiscoveryReviewTagId("ediscoveryReviewTag-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

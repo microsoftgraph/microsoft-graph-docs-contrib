@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewApplePushNotificationCertificate()
@@ -32,7 +32,7 @@ requestBody.SetCertificateSerialNumber(&certificateSerialNumber)
 certificate := "Certificate value"
 requestBody.SetCertificate(&certificate) 
 
-result, err := graphClient.DeviceManagement().ApplePushNotificationCertificate().Patch(context.Background(), requestBody, nil)
+applePushNotificationCertificate, err := graphClient.DeviceManagement().ApplePushNotificationCertificate().Patch(context.Background(), requestBody, nil)
 
 
 ```

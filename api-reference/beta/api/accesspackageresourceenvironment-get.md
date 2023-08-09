@@ -1,7 +1,7 @@
 ---
 title: "Get accessPackageResourceEnvironment"
 description: "Read the properties and relationships of an accessPackageResourceEnvironment object."
-author: "hanki-microsoft"
+author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
