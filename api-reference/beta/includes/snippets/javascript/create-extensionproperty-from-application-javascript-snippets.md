@@ -13,6 +13,7 @@ const client = Client.init(options);
 const extensionProperty = {
     name: 'jobGroup',
     dataType: 'String',
+    isMultiValued: true,
     targetObjects: [
         'User'
     ]

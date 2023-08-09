@@ -88,6 +88,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |vpnEnableAlwaysOnLockdownMode|Boolean|Enable lockdown mode for always-on VPN.|
 |workProfileAllowWidgets|Boolean|Allow widgets from work profile apps.|
 |workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|Prevent app installations from unknown sources in the personal profile.|
+|workProfileAccountUse|[androidWorkProfileAccountUse](../resources/intune-deviceconfig-androidworkprofileaccountuse.md)|Control user's ability to add accounts in work profile including Google accounts. Possible values are: `allowAllExceptGoogleAccounts`, `blockAll`, `allowAll`, `unknownFutureValue`.|
+|allowedGoogleAccountDomains|String collection|Determine domains allow-list for accounts that can be added to work profile.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -186,6 +188,10 @@ Here is a JSON representation of the resource.
   "vpnAlwaysOnPackageIdentifier": "String",
   "vpnEnableAlwaysOnLockdownMode": true,
   "workProfileAllowWidgets": true,
-  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true,
+  "workProfileAccountUse": "String",
+  "allowedGoogleAccountDomains": [
+    "String"
+  ]
 }
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PrinterShare();
 $requestBody->setDisplayName('ShareName');
@@ -15,14 +15,14 @@ $requestBody->setDisplayName('ShareName');
 $requestBody->setAllowAllUsers(false);
 
 $additionalData = [
-'printer@odata.bind' => 'https://graph.microsoft.com/v1.0/print/printers/{printerId}', 
+		'printer@odata.bind' => 'https://graph.microsoft.com/v1.0/print/printers/{printerId}', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->print()->shares()->post($requestBody);
+$result = $graphServiceClient->print()->shares()->post($requestBody);
 
 
 ```

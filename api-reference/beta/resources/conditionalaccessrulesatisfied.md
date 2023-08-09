@@ -2,12 +2,12 @@
 title: "conditionalAccessRulesSatisfied resource type"
 description: "Indicates the conditional access rules satisfied during an authentication event."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# conditionalAccessRulesSatisfied resource type
+# conditionalAccessRuleSatisfied resource type
 
 Namespace: microsoft.graph
 

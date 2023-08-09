@@ -1,5 +1,241 @@
 ﻿{
   "changelog": [
+	{
+      "ChangeList": [
+        {
+          "Id": "7b6aebb5-6126-4f2d-b4c4-e0952613719b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagementPolicy.Read.AzureADGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagementPolicy.Read.AzureADGroup` delegated and application permissions to the read operations of the [privileged identity management (PIM) for groups APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview?view=graph-rest-beta).",
+          "Target": "unifiedRoleManagementPolicy"
+        },
+        {
+          "Id": "7b6aebb5-6126-4f2d-b4c4-e0952613719b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagementPolicy.ReadWrite.AzureADGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagementPolicy.Read.AzureADGroup` delegated and application permissions to the read and write operations of the [privileged identity management (PIM) for groups APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview?view=graph-rest-beta).",
+          "Target": "unifiedRoleManagementPolicy"
+        }
+      ],
+      "Id": "7b6aebb5-6126-4f2d-b4c4-e0952613719b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-07T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+		{
+          "Id": "7b6aebb5-6126-4f2d-b4c4-e0952613719b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagementAlert.Read.Directory",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagementAlert.Read.Directory` delegated and application permissions to the read operations of the [privileged identity management (PIM) for Azure AD Roles APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta).",
+          "Target": "unifiedRoleManagementAlert"
+        },
+        {
+          "Id": "7b6aebb5-6126-4f2d-b4c4-e0952613719b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagementAlert.ReadWrite.Directory",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagementAlert.ReadWrite.Directory` delegated and application permissions to the read and write operations of the [privileged identity management (PIM) for Azure AD Roles APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta).",
+          "Target": "unifiedRoleManagementAlert"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roleManagementAlerts",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleManagementAlerts** relationship to the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-beta) resource.",
+          "Target": "identityGovernance"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "invalidLicenseAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [invalidLicenseAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/invalidLicenseAlertConfiguration?view=graph-rest-beta) resource.",
+          "Target": "invalidLicenseAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "invalidLicenseAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [invalidLicenseAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/invalidLicenseAlertIncident?view=graph-rest-beta) resource.",
+          "Target": "invalidLicenseAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "noMfaOnRoleActivationAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [noMfaOnRoleActivationAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/noMfaOnRoleActivationAlertConfiguration?view=graph-rest-beta) resource.",
+          "Target": "noMfaOnRoleActivationAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "noMfaOnRoleActivationAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [noMfaOnRoleActivationAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/noMfaOnRoleActivationAlertIncident?view=graph-rest-beta) resource.",
+          "Target": "noMfaOnRoleActivationAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redundantAssignmentAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redundantAssignmentAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redundantAssignmentAlertConfiguration?view=graph-rest-beta) resource.",
+          "Target": "redundantAssignmentAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redundantAssignmentAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [redundantAssignmentAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/redundantAssignmentAlertIncident?view=graph-rest-beta) resource.",
+          "Target": "redundantAssignmentAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roleManagementAlert",
+          "ChangeType": "Addition",
+          "Description": "Added the [roleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/roleManagementAlert?view=graph-rest-beta) resource.",
+          "Target": "roleManagementAlert"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration?view=graph-rest-beta) resource.",
+          "Target": "rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident?view=graph-rest-beta) resource.",
+          "Target": "rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sequentialActivationRenewalsAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [sequentialActivationRenewalsAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/sequentialActivationRenewalsAlertConfiguration?view=graph-rest-beta) resource.",
+          "Target": "sequentialActivationRenewalsAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sequentialActivationRenewalsAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [sequentialActivationRenewalsAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/sequentialActivationRenewalsAlertIncident?view=graph-rest-beta) resource.",
+          "Target": "sequentialActivationRenewalsAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "staleSignInAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [staleSignInAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/staleSignInAlertConfiguration?view=graph-rest-beta) resource.",
+          "Target": "staleSignInAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "staleSignInAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [staleSignInAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/staleSignInAlertIncident?view=graph-rest-beta) resource.",
+          "Target": "staleSignInAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/tooManyGlobalAdminsAssignedToTenantAlertConfiguration?view=graph-rest-beta) resource.",
+          "Target": "tooManyGlobalAdminsAssignedToTenantAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tooManyGlobalAdminsAssignedToTenantAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [tooManyGlobalAdminsAssignedToTenantAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/tooManyGlobalAdminsAssignedToTenantAlertIncident?view=graph-rest-beta) resource.",
+          "Target": "tooManyGlobalAdminsAssignedToTenantAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementAlert",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleManagementAlert"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementAlertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertConfiguration?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleManagementAlertConfiguration"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementAlertDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementAlertDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertDefinition?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleManagementAlertDefinition"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementAlertIncident",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertIncident?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleManagementAlertIncident"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Method",
+          "ChangedApiName": "refresh",
+          "ChangeType": "Addition",
+          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert-refresh?view=graph-rest-beta) method to the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleManagementAlert"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Method",
+          "ChangedApiName": "refresh",
+          "ChangeType": "Addition",
+          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert-refresh?view=graph-rest-beta) method to the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleManagementAlert"
+        },
+        {
+          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+          "ApiChange": "Method",
+          "ChangedApiName": "remediate",
+          "ChangeType": "Addition",
+          "Description": "Added the [remediate](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert-remediate?view=graph-rest-beta) method to the [unifiedRoleManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertIncident?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleManagementAlertIncident"
+        }
+      ],
+      "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-21T00:00:00.9324302Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
     {
       "ChangeList": [
         {
@@ -361,6 +597,290 @@
       "CreatedDateTime": "2022-04-28T00:55:37.0291684Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "assignmentScheduleFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentScheduleFilterByCurrentUserOptions** enumeration type.",
+          "Target": "assignmentScheduleFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "assignmentScheduleInstanceFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentScheduleInstanceFilterByCurrentUserOptions** enumeration type.",
+          "Target": "assignmentScheduleInstanceFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "assignmentScheduleRequestFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentScheduleRequestFilterByCurrentUserOptions** enumeration type.",
+          "Target": "assignmentScheduleRequestFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "eligibilityScheduleFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **eligibilityScheduleFilterByCurrentUserOptions** enumeration type.",
+          "Target": "eligibilityScheduleFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "eligibilityScheduleInstanceFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **eligibilityScheduleInstanceFilterByCurrentUserOptions** enumeration type.",
+          "Target": "eligibilityScheduleInstanceFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "eligibilityScheduleRequestFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **eligibilityScheduleRequestFilterByCurrentUserOptions** enumeration type.",
+          "Target": "eligibilityScheduleRequestFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "privilegedAccessGroupAssignmentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **privilegedAccessGroupAssignmentType** enumeration type.",
+          "Target": "privilegedAccessGroupAssignmentType"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "privilegedAccessGroupMemberType",
+          "ChangeType": "Addition",
+          "Description": "Added the **privilegedAccessGroupMemberType** enumeration type.",
+          "Target": "privilegedAccessGroupMemberType"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "privilegedAccessGroupRelationships",
+          "ChangeType": "Addition",
+          "Description": "Added the **privilegedAccessGroupRelationships** enumeration type.",
+          "Target": "privilegedAccessGroupRelationships"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "scheduleRequestActions",
+          "ChangeType": "Addition",
+          "Description": "Added the **scheduleRequestActions** enumeration type.",
+          "Target": "scheduleRequestActions"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "privilegedAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the **privilegedAccess** relationship to the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-beta) resource.",
+          "Target": "identityGovernance"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedAccessRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegedAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessRoot?view=graph-rest-beta) resource.",
+          "Target": "privilegedAccessRoot"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedAccessGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegedAccessGroup](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroup?view=graph-rest-beta) resource.",
+          "Target": "privilegedAccessGroup"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedAccessGroupAssignmentSchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegedAccessGroupAssignmentSchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentSchedule?view=graph-rest-beta) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
+          "Target": "privilegedAccessGroupAssignmentSchedule"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedAccessGroupAssignmentScheduleInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegedAccessGroupAssignmentScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleInstance?view=graph-rest-beta) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
+          "Target": "privilegedAccessGroupAssignmentScheduleInstance"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedAccessGroupAssignmentScheduleRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegedAccessGroupAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-beta) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
+          "Target": "privilegedAccessGroupAssignmentScheduleRequest"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedAccessGroupEligibilitySchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegedAccessGroupEligibilitySchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilitySchedule?view=graph-rest-beta) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
+          "Target": "privilegedAccessGroupEligibilitySchedule"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedAccessGroupEligibilityScheduleInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegedAccessGroupEligibilityScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleInstance?view=graph-rest-beta) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
+          "Target": "privilegedAccessGroupEligibilityScheduleInstance"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedAccessGroupEligibilityScheduleRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegedAccessGroupEligibilityScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-beta) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
+          "Target": "privilegedAccessGroupEligibilityScheduleRequest"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedAccessSchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegedAccessSchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessSchedule?view=graph-rest-beta) resource.",
+          "Target": "privilegedAccessSchedule"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedAccessScheduleInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegedAccessScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessScheduleInstance?view=graph-rest-beta) resource.",
+          "Target": "privilegedAccessScheduleInstance"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedAccessScheduleRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegedAccessScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessScheduleRequest?view=graph-rest-beta) resource.",
+          "Target": "privilegedAccessScheduleRequest"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Permission",
+          "ChangedApiName": "PrivilegedEligibilitySchedule.Read.AzureADGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `PrivilegedEligibilitySchedule.Read.AzureADGroup` delegated and application permissions to the read operations of [privileged identity management (PIM) for groups APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview?view=graph-rest-beta).",
+          "Target": "privilegedAccessGroupEligibilityScheduleRequest"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Permission",
+          "ChangedApiName": "PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup` delegated and application permissions to the read and write operations of [privileged identity management (PIM) for groups APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview?view=graph-rest-beta).",
+          "Target": "privilegedAccessGroupEligibilityScheduleRequest"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Permission",
+          "ChangedApiName": "PrivilegedAssignmentSchedule.Read.AzureADGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `PrivilegedAssignmentSchedule.Read.AzureADGroup` delegated and application permissions to the read operations of [privileged identity management (PIM) for groups APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview?view=graph-rest-beta).",
+          "Target": "privilegedAccessGroupAssignmentScheduleRequest"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Permission",
+          "ChangedApiName": "PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup` delegated and application permissions to the read and write operations of [privileged identity management (PIM) for groups APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview?view=graph-rest-beta).",
+          "Target": "privilegedAccessGroupAssignmentScheduleRequest"
+        }
+      ],
+      "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-05T00:00:00.676618Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList" :[
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRole",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedRole resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
+          "Target": "privilegedRole"
+        },
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRoleAssignment",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedRoleAssignment resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
+          "Target": "privilegedRoleAssignment"
+        },
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRoleAssignmentRequest",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedRoleAssignmentRequest resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
+          "Target": "privilegedRoleAssignmentRequest"
+        },
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedApproval",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedApproval resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
+          "Target": "privilegedApproval"
+        },
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRoleSummary",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedRoleSummary resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
+          "Target": "privilegedRoleSummary"
+        },
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRoleSettings ",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedRoleSettings resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
+          "Target": "privilegedRoleSettings "
+        },
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedOperationEvent",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedOperationEvent resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
+          "Target": "privilegedOperationEvent"
+        }
+      ],
+      "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+      "Cloud":"Prod",
+      "Version":"beta",
+      "CreatedDateTime":"2023-05-05T00:00:00.0000000Z",
+      "WorkloadArea":"Identity and access",
+      "SubArea":"Governance"
     }
   ]
 }

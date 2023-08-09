@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
-	CustomSecurityAttributes = @{
+	customSecurityAttributes = @{
 		Engineering = @{
 			"@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
 			ProjectDate = "2022-10-01"
@@ -15,6 +15,6 @@ $params = @{
 	}
 }
 
-Update-MgUser -UserId $userId -BodyParameter $params
+Update-MgBetaUser -UserId $userId -BodyParameter $params
 
 ```

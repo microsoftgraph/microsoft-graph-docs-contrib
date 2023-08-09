@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3679
+Content-Length: 3821
 
 {
   "value": [
@@ -141,7 +141,11 @@ Content-Length: 3679
       "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
       "vpnEnableAlwaysOnLockdownMode": true,
       "workProfileAllowWidgets": true,
-      "workProfileBlockPersonalAppInstallsFromUnknownSources": true
+      "workProfileBlockPersonalAppInstallsFromUnknownSources": true,
+      "workProfileAccountUse": "blockAll",
+      "allowedGoogleAccountDomains": [
+        "Allowed Google Account Domains value"
+      ]
     }
   ]
 }

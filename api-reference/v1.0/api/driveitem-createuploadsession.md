@@ -54,7 +54,7 @@ No request body is required.
 However, you can specify properties in the request body providing additional data about the file being uploaded and customizing the semantics of the upload operation.
 
 For example, the `item` property allows setting the following parameters:
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+<!-- { "blockType": "ignored" } -->
 ```json
 {
   "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
@@ -95,15 +95,14 @@ The response to this request will provide the details of the newly created [uplo
 
 >**Note:** The {item-path} must contain the name of the item that's specified in the request body.
 
-<!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "ignored", "name": "upload-fragment-create-session" } -->
 
 ```http
-POST /me/drive/root:/{item-path}:/createUploadSession
+POST /me/drive/items/{itemID}:/{item-path}:/createUploadSession
 Content-Type: application/json
 
 {
   "item": {
-    "@odata.type": "microsoft.graph.driveItemUploadableProperties",
     "@microsoft.graph.conflictBehavior": "rename",
     "name": "largefile.dat"
   }
@@ -150,7 +149,7 @@ In this example, the app is uploading the first 26 bytes of a 128 byte file.
 * The **Content-Range** header indicates the range of bytes in the overall file that this request represents.
 * The total length of the file is known before you can upload the first fragment of the file.
 
-<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -159,15 +158,15 @@ Content-Range: bytes 0-25/128
 
 <bytes 0-25 of the file>
 ```
-
-**Important:** Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.
-If a byte range declares a different file size, the request will fail.
+> [!NOTE]
+> * To upload large files using SDKs see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
+> * Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests. If a byte range declares a different file size, the request will fail.
 
 ### Response
 
 When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
+<!-- { "blockType": "ignored"} -->
 
 ```http
 HTTP/1.1 202 Accepted
@@ -187,7 +186,7 @@ You should always determine the size of your byte ranges according to the best p
 Do not assume that **nextExpectedRanges** will return ranges of proper size for a byte range to upload.
 The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.
 
-<!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
+<!-- { "blockType": "ignored"} -->
 
 ```http
 HTTP/1.1 202 Accepted
@@ -208,7 +207,7 @@ Content-Type: application/json
 * On successful fragment writes, it will return the next range to start from (eg. "523-").
 * On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. 
   You can [request upload status](#resuming-an-in-progress-upload) to get a more detailed list of missing ranges.
-* Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when issuing the `POST` during the first step. It should be not be included when issueing the `PUT`.
+* Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when issuing the `POST` during the first step. It should be not be included when issuing the `PUT`.
 
 ## Completing a file
 
@@ -222,7 +221,7 @@ If `deferCommit` is true, you can explicitly complete the upload in two ways:
 When the upload is completed, the server will respond to the final request with an `HTTP 201 Created` or `HTTP 200 OK`.
 The response body will also include the default property set for the **driveItem** representing the completed file.
 
-<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored" } -->
 
 ```
 PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -232,7 +231,10 @@ Content-Range: bytes 101-127/128
 <final bytes of the file>
 ```
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+> [!NOTE]
+> * To upload large files using SDKs see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 201 Created
@@ -246,14 +248,17 @@ Content-Type: application/json
 }
 ```
 
-<!-- { "blockType": "request", "opaqueUrl": true, "name": "commit-upload", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored"} -->
 
 ```http
 POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 Content-Length: 0
 ```
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+> [!NOTE]
+> * To upload large files using SDKs see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
+
+<!-- { "blockType": "ignored"} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -296,17 +301,20 @@ Temporary files may not be deleted immedately after the expiration time has elap
 
 ### Request
 
-<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 ```
 
+> [!NOTE]
+> * To upload large files using SDKs see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
+
 ### Response
 
 The following example shows the response.
 
-<!-- { "blockType": "response" } -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 204 No Content
@@ -324,15 +332,17 @@ To find out which byte ranges have been received previously, your app can reques
 
 Query the status of the upload by sending a GET request to the `uploadUrl`.
 
-<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
 ```
-
 The server will respond with a list of missing byte ranges that need to be uploaded and the expiration time for the upload session.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
+> [!NOTE]
+> * To upload large files using SDKs see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -359,7 +369,7 @@ This new request should correct the source of error that generated the original 
 
 To indicate that your app is committing an existing upload session, the PUT request must include the `@microsoft.graph.sourceUrl` property with the value of your upload session URL.
 
-<!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "explicit-upload-commit"} -->
 
 ```http
 PUT /me/drive/root:/{path_to_parent}
@@ -373,13 +383,11 @@ If-Match: {etag or ctag}
 }
 ```
 
->**Note:** You can use the `@microsoft.graph.conflictBehavior` and `if-match` headers as expected in this call.
-
 ### Response
 
 If the file can be committed using the new metadata, an `HTTP 201 Created` or `HTTP 200 OK` response will be returned with the Item metadata for the uploaded file.
 
-<!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 201 Created

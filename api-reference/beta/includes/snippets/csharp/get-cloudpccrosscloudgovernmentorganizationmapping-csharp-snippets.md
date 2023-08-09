@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.DeviceManagement.VirtualEndpoint.CrossCloudGovernmentOrganizationMapping.GetAsync((requestConfiguration) =>
-{
-	requestConfiguration.Headers.Add("X-MS-CloudPC-USGovCloudTenantAADToken", "{token}");
-});
+var result = await graphClient.DeviceManagement.VirtualEndpoint.CrossCloudGovernmentOrganizationMapping.GetAsync();
 
 
 ```

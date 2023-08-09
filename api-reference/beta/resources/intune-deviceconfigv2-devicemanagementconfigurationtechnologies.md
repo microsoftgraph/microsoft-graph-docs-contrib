@@ -20,14 +20,15 @@ Describes which technology this setting can be deployed with
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|none|0|Setting cannot be deployed through any channel|
-|mdm|1|Setting can be deployed through the MDM channel|
+|none|0|Default. Setting cannot be deployed through any channel.|
+|mdm|1|Setting can be deployed through the MDM channel.|
 |windows10XManagement|2|Setting can be deployed through the Windows10XManagement channel|
-|configManager|4|Setting can be deployed through the ConfigManager channel|
-|appleRemoteManagement|64|Setting can be deployed through the AppleRemoteManagement channel|
-|microsoftSense|128|Setting can be deployed through the SENSE agent channel|
-|exchangeOnline|256|Setting can be deployed through the Exchange Online agent channel|
-|linuxMdm|1024|Setting can be deployed through the Linux Mdm channel|
+|configManager|4|Setting can be deployed through the ConfigManager channel.|
+|appleRemoteManagement|64|Setting can be deployed through the AppleRemoteManagement channel.|
+|microsoftSense|128|Setting can be deployed through the SENSE agent channel.|
+|exchangeOnline|256|Setting can be deployed through the Exchange Online agent channel.|
+|mobileApplicationManagement|512|Setting can be deployed through the Mobile Application Management (MAM) channel|
+|linuxMdm|1024|Setting can be deployed through the Linux Mdm channel.|
 |enrollment|4096|Setting can be deployed through device enrollment.|
 |endpointPrivilegeManagement|8192|Setting can be deployed using the Endpoint privilege management channel|
-|unknownFutureValue|16384|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|32696|Evolvable enumeration sentinel value. Do not use.|

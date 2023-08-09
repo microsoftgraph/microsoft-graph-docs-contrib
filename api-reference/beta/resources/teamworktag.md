@@ -31,7 +31,7 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|Tag description as it will appear to the user in Microsoft Teams.|
+|description|String|Tag description as it will appear to the user in Microsoft Teams. A **teamworkTag** can't have more than 200 **teamworkTagMembers**.|
 |displayName|String|Tag name as it will appear to the user in Microsoft Teams.|
 |id|String|ID of the tag.|
 |memberCount|Int32|The number of users assigned to the tag.|

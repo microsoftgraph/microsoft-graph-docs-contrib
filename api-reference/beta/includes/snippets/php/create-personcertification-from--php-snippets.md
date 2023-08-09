@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PersonCertification();
 $requestBody->setCertificationId('KB-1235466333663322');
@@ -22,7 +22,7 @@ $requestBody->setWebUrl('https://www.iame.io/blackbelt');
 
 
 
-$requestResult = $graphServiceClient->me()->profile()->certifications()->post($requestBody);
+$result = $graphServiceClient->me()->profile()->certifications()->post($requestBody);
 
 
 ```

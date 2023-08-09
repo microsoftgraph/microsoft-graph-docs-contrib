@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1827
+Content-Length: 1885
 
 {
   "value": {
@@ -115,7 +115,9 @@ Content-Length: 1827
         "endTime": "12:03:02.3740000"
       }
     ],
-    "updateTimeWindowUtcOffsetInMinutes": 2
+    "updateTimeWindowUtcOffsetInMinutes": 2,
+    "maxUserDeferralsCount": 5,
+    "priority": "high"
   }
 }
 ```

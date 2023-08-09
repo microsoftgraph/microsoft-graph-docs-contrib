@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DirectoryObjects
+Import-Module Microsoft.Graph.Beta.DirectoryObjects
 
 $params = @{
-	EntityType = "Group"
-	DisplayName = "Myprefix_test_mysuffix"
-	MailNickname = "Myprefix_test_mysuffix"
-	OnBehalfOfUserId = "onBehalfOfUserId-value"
+	entityType = "Group"
+	displayName = "Myprefix_test_mysuffix"
+	mailNickname = "Myprefix_test_mysuffix"
+	onBehalfOfUserId = "onBehalfOfUserId-value"
 }
 
-Test-MgDirectoryObjectProperty -BodyParameter $params
+Test-MgBetaDirectoryObjectProperty -BodyParameter $params
 
 ```

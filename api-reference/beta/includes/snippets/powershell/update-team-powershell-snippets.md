@@ -4,26 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
-	IsMembershipLimitedToOwners = $true
-	MemberSettings = @{
-		AllowCreateUpdateChannels = $true
+	isMembershipLimitedToOwners = $true
+	memberSettings = @{
+		allowCreateUpdateChannels = $true
 	}
-	MessagingSettings = @{
-		AllowUserEditMessages = $true
-		AllowUserDeleteMessages = $true
+	messagingSettings = @{
+		allowUserEditMessages = $true
+		allowUserDeleteMessages = $true
 	}
-	FunSettings = @{
-		AllowGiphy = $true
-		GiphyContentRating = "strict"
+	funSettings = @{
+		allowGiphy = $true
+		giphyContentRating = "strict"
 	}
-	DiscoverySettings = @{
-		ShowInTeamsSearchAndSuggestions = $true
+	discoverySettings = @{
+		showInTeamsSearchAndSuggestions = $true
 	}
 }
 
-Update-MgTeam -TeamId $teamId -BodyParameter $params
+Update-MgBetaTeam -TeamId $teamId -BodyParameter $params
 
 ```

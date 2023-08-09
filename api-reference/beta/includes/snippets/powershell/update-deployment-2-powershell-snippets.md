@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.WindowsUpdates
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
-	Settings = @{
+	settings = @{
 		"@odata.type" = "microsoft.graph.windowsUpdates.deploymentSettings"
-		Monitoring = @{
-			MonitoringRules = @(
+		monitoring = @{
+			monitoringRules = @(
 				@{
-					Signal = "rollback"
-					Threshold = 5
-					Action = "pauseDeployment"
+					signal = "rollback"
+					threshold = 5
+					action = "pauseDeployment"
 				}
 			)
 		}
 	}
 }
 
-Update-MgWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
+Update-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
 
 ```

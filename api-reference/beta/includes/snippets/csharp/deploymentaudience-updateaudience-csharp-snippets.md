@@ -4,20 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.DeploymentAudiences.Item.WindowsUpdatesUpdateAudience.UpdateAudiencePostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.DeploymentAudiences.Item.MicrosoftGraphWindowsUpdatesUpdateAudience.UpdateAudiencePostRequestBody
 {
 	AddMembers = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
-		new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset
+		new Microsoft.Graph.Beta.Models.WindowsUpdates.AzureADDevice
 		{
 			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
 			Id = "String (identifier)",
 		},
 	},
 };
-await graphClient.Admin.Windows.Updates.DeploymentAudiences["{deploymentAudience-id}"].WindowsUpdatesUpdateAudience.PostAsync(requestBody);
+await graphClient.Admin.Windows.Updates.DeploymentAudiences["{deploymentAudience-id}"].MicrosoftGraphWindowsUpdatesUpdateAudience.PostAsync(requestBody);
 
 
 ```

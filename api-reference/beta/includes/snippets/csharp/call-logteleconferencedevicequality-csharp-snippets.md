@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Communications.Calls.LogTeleconferenceDeviceQuality.LogTeleconferenceDeviceQualityPostRequestBody
@@ -18,7 +20,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.LogTeleconferenc
 		DeviceDescription = "TestDescription",
 		MediaQualityList = new List<TeleconferenceDeviceMediaQuality>
 		{
-			new TeleconferenceDeviceMediaQuality
+			new TeleconferenceDeviceAudioQuality
 			{
 				OdataType = "#microsoft.graph.teleconferenceDeviceAudioQuality",
 				ChannelIndex = 1,
@@ -43,7 +45,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.LogTeleconferenc
 				MaximumInboundJitter = TimeSpan.Parse("PT0.023S"),
 				MaximumOutboundJitter = TimeSpan.Parse("PT0.024S"),
 			},
-			new TeleconferenceDeviceMediaQuality
+			new TeleconferenceDeviceVideoQuality
 			{
 				OdataType = "#microsoft.graph.teleconferenceDeviceVideoQuality",
 				ChannelIndex = 1,
@@ -68,7 +70,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.LogTeleconferenc
 				MaximumInboundJitter = TimeSpan.Parse("PT0.023S"),
 				MaximumOutboundJitter = TimeSpan.Parse("PT0.024S"),
 			},
-			new TeleconferenceDeviceMediaQuality
+			new TeleconferenceDeviceScreenSharingQuality
 			{
 				OdataType = "#microsoft.graph.teleconferenceDeviceScreenSharingQuality",
 				ChannelIndex = 1,

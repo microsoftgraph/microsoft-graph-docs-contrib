@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new WorkforceIntegration();
 $requestBody->setDisplayName('displayName-value');
@@ -25,11 +25,11 @@ $requestBody->setIsActive(true);
 
 $requestBody->setUrl('url-value');
 
-$requestBody->setSupportedEntities(new WorkforceIntegrationSupportedEntities('supportedentities-value'));
+$requestBody->setSupportedEntities(new WorkforceIntegrationSupportedEntities('supportedEntities-value'));
 
 
 
-$requestResult = $graphServiceClient->teamwork()->workforceIntegrationsById('workforceIntegration-id')->patch($requestBody);
+$result = $graphServiceClient->teamwork()->workforceIntegrations()->byWorkforceIntegrationId('workforceIntegration-id')->patch($requestBody);
 
 
 ```

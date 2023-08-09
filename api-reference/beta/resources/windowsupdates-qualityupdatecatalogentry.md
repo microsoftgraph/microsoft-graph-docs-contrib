@@ -1,6 +1,6 @@
 ---
 title: "qualityUpdateCatalogEntry resource type"
-description: "Metadata for a Windows 10 quality update that you can be approve for deployment."
+description: "Represents metadata for a Windows 10 quality update that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Metadata for a Windows 10 quality update that you can be approve for deployment.
+Represents metadata for a Windows 10 quality update that you can approve for deployment.
 
-Windows 10 quality updates are released one or more times per month. These updates contain both security and quality fixes and are typically released on the second Tuesday of every month, though they may be released at any time. These updates are cumulative, so later versions always contain all previous fixes. Microsoft strongly recommends keeping devices current by installing the most recent quality updates as soon as they are available. 
+Windows 10 quality updates are released one or more times per month. These updates contain both security and quality fixes and are typically released on the second Tuesday of every month, though they might be released at any time. These updates are cumulative, so later versions always contain all previous fixes. We strongly recommend keeping devices current by installing the most recent quality updates as soon as they are available. 
 
 Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 
@@ -45,12 +45,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "releaseDateTime": "String (timestamp)",
   "deployableUntilDateTime": "String (timestamp)",
+  "displayName": "String",
+  "id": "String (identifier)",
   "isExpeditable": "Boolean",
-  "qualityUpdateClassification": "String"
+  "qualityUpdateClassification": "String",
+  "releaseDateTime": "String (timestamp)"
 }
 ```
 

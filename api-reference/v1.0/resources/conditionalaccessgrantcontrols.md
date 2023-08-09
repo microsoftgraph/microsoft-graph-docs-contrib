@@ -24,7 +24,7 @@ Represents grant controls that must be fulfilled to pass the policy.
 
 ### Special considerations when using `passwordChange` as a control
 
-Consider the following when you use the `passwordChange` control: 
+Consider the following when you use the `passwordChange` control:
 
 - `passwordChange` must be accompanied by `mfa` using an `AND` operator. This combination ensures that the password will be updated in a secure way.
 - `passwordChange` must be used in a policy containing `userRiskLevels`. This is designed to enable scenarios where users must use a secure change password to reset their user risk.
@@ -33,7 +33,10 @@ Consider the following when you use the `passwordChange` control:
 
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+| authenticationStrength | [authenticationStrengthPolicy](authenticationstrengthpolicy.md) | The authentication strength required by the conditional access policy. Optional.|
+
 
 ## JSON representation
 
@@ -50,13 +53,13 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.conditionalAccessGrantControls",
   "baseType": null
 }-->
-
 ```json
 {
   "builtInControls": ["String"],
   "customAuthenticationFactors": ["String"],
   "operator": "String",
-  "termsOfUse": ["String"]
+  "termsOfUse": ["String"],
+  "authenticationStrength": {"@odata.type": "microsoft.graph.authenticationStrengthPolicy"}
 }
 ```
 

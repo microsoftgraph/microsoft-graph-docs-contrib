@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.TeamItemInstalledAppsRequestBuilderGetQueryParameters{
+
+requestParameters := &graphteams.TeamItemInstalledAppsRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsAppDefinition($expand=bot)"},
 }
-configuration := &graphconfig.TeamItemInstalledAppsRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamItemInstalledAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").InstalledApps().Get(context.Background(), configuration)
+installedApps, err := graphClient.Teams().ByTeamId("team-id").InstalledApps().Get(context.Background(), configuration)
 
 
 ```

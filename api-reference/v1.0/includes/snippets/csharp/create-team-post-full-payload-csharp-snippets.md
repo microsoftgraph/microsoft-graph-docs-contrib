@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Team
@@ -97,10 +99,6 @@ var requestBody = new Team
 		AllowTeamMentions = true,
 		AllowChannelMentions = true,
 	},
-	DiscoverySettings = new TeamDiscoverySettings
-	{
-		ShowInTeamsSearchAndSuggestions = true,
-	},
 	InstalledApps = new List<TeamsAppInstallation>
 	{
 		new TeamsAppInstallation
@@ -125,7 +123,13 @@ var requestBody = new Team
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"template@odata.bind" , "https://graph.microsoft.com/beta/teamsTemplates('standard')"
+			"template@odata.bind" , "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
+		},
+		{
+			"discoverySettings" , new 
+			{
+				ShowInTeamsSearchAndSuggestions = true,
+			}
 		},
 	},
 };

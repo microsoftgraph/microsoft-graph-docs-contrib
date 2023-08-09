@@ -15,7 +15,13 @@ Namespace: microsoft.graph
 
 The status of a long-running operation.
 
-Base type of [attackSimulationOperation](../resources/attacksimulationoperation.md).
+Base type of [attackSimulationOperation](../resources/attacksimulationoperation.md) and [validateOperation](../resources/industrydata-validateoperation.md).
+
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get longRunningOperation](../api/longrunningoperation-get.md)|[longRunningOperation](../resources/longrunningoperation.md) object|Read the properties and relationships of a longRunningOperation object.|
 
 ## Properties
 

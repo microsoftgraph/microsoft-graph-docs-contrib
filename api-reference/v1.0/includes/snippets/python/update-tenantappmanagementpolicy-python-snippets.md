@@ -1,0 +1,82 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = TenantAppManagementPolicy()
+request_body.is_enabled = True
+
+application_restrictions = AppManagementConfiguration()
+password_credentials_password_credential_configuration1 = PasswordCredentialConfiguration()
+password_credentials_password_credential_configuration1.restrictiontype(AppCredentialRestrictionType.PasswordAddition('appcredentialrestrictiontype.passwordaddition'))
+
+password_credentials_password_credential_configuration1.maxLifetime=null
+
+password_credentials_password_credential_configuration1.restrictForAppsCreatedAfterDateTime = DateTime('2021-01-01T10:37:00Z')
+
+
+passwordCredentialsArray []= passwordCredentialsPasswordCredentialConfiguration1;
+password_credentials_password_credential_configuration2 = PasswordCredentialConfiguration()
+password_credentials_password_credential_configuration2.restrictiontype(AppCredentialRestrictionType.PasswordLifetime('appcredentialrestrictiontype.passwordlifetime'))
+
+password_credentials_password_credential_configuration2.maxlifetime =  \DateInterval('P4DT12H30M5S')
+
+password_credentials_password_credential_configuration2.restrictForAppsCreatedAfterDateTime = DateTime('2017-01-01T10:37:00Z')
+
+
+passwordCredentialsArray []= passwordCredentialsPasswordCredentialConfiguration2;
+password_credentials_password_credential_configuration3 = PasswordCredentialConfiguration()
+password_credentials_password_credential_configuration3.restrictiontype(AppCredentialRestrictionType.SymmetricKeyAddition('appcredentialrestrictiontype.symmetrickeyaddition'))
+
+password_credentials_password_credential_configuration3.maxLifetime=null
+
+password_credentials_password_credential_configuration3.restrictForAppsCreatedAfterDateTime = DateTime('2021-01-01T10:37:00Z')
+
+
+passwordCredentialsArray []= passwordCredentialsPasswordCredentialConfiguration3;
+password_credentials_password_credential_configuration4 = PasswordCredentialConfiguration()
+password_credentials_password_credential_configuration4.restrictiontype(AppCredentialRestrictionType.CustomPasswordAddition('appcredentialrestrictiontype.custompasswordaddition'))
+
+password_credentials_password_credential_configuration4.maxLifetime=null
+
+password_credentials_password_credential_configuration4.restrictForAppsCreatedAfterDateTime = DateTime('2015-01-01T10:37:00Z')
+
+
+passwordCredentialsArray []= passwordCredentialsPasswordCredentialConfiguration4;
+password_credentials_password_credential_configuration5 = PasswordCredentialConfiguration()
+password_credentials_password_credential_configuration5.restrictiontype(AppCredentialRestrictionType.SymmetricKeyLifetime('appcredentialrestrictiontype.symmetrickeylifetime'))
+
+password_credentials_password_credential_configuration5.maxlifetime =  \DateInterval('P40D')
+
+password_credentials_password_credential_configuration5.restrictForAppsCreatedAfterDateTime = DateTime('2015-01-01T10:37:00Z')
+
+
+passwordCredentialsArray []= passwordCredentialsPasswordCredentialConfiguration5;
+application_restrictions.passwordcredentials(passwordCredentialsArray)
+
+
+key_credentials_key_credential_configuration1 = KeyCredentialConfiguration()
+key_credentials_key_credential_configuration1.restrictiontype(AppKeyCredentialRestrictionType.AsymmetricKeyLifetime('appkeycredentialrestrictiontype.asymmetrickeylifetime'))
+
+key_credentials_key_credential_configuration1.maxlifetime =  \DateInterval('P30D')
+
+key_credentials_key_credential_configuration1.restrictForAppsCreatedAfterDateTime = DateTime('2015-01-01T10:37:00Z')
+
+
+keyCredentialsArray []= keyCredentialsKeyCredentialConfiguration1;
+application_restrictions.keycredentials(keyCredentialsArray)
+
+
+
+request_body.application_restrictions = application_restrictions
+
+
+
+result = await client.policies.default_app_management_policy.patch(request_body = request_body)
+
+
+```

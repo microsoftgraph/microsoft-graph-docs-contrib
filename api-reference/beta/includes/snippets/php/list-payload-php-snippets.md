@@ -7,17 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new PayloadsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new PayloadsRequestBuilderGetQueryParameters();
+$queryParameters = PayloadsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "source eq 'Tenant'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->security()->attackSimulation()->payloads()->get($requestConfiguration);
+$result = $graphServiceClient->security()->attackSimulation()->payloads()->get($requestConfiguration);
 
 
 ```

@@ -159,8 +159,9 @@ a response code but not the new post nor the extended property.
 
 
 
-## Example
-##### Request 1
+## Examples
+### Example 1: Create a new event and a single-value extended property
+#### Request
 
 The first example creates a new event and a single-value extended property in the same POST operation. Apart from the properties you'd normally
 include for a new event, the request body includes the **singleValueExtendedProperties** collection that contains one single-value
@@ -168,7 +169,12 @@ extended property, and the following for the property:
 - **id** specifies the property type as `String`, the GUID, and the property named `Fun`.
 - **value** specifies `Food` as the value of the `Fun` property.
 
-<!-- { "blockType": "ignored" } -->
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_event_and_svep_v1_e1"
+}
+-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/events
 Content-Type: application/json
@@ -205,29 +211,153 @@ Content-Type: application/json
 }
 ```
 
-##### Response 1
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-event-and-svep-v1-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event
-in the response body, similar to the response from [creating just an event](../api/user-post-events.md).
-The response does not include any newly created extended properties.
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-event-and-svep-v1-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-event-and-svep-v1-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-and-svep-v1-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-and-svep-v1-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-event-and-svep-v1-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-event-and-svep-v1-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-event-and-svep-v1-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event in the response body, similar to the response from [creating just an event](../api/user-post-events.md). The response does not include any newly created extended properties.
 
 To see the newly created extended property, [get the event expanded with the extended property](../api/singlevaluelegacyextendedproperty-get.md).
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
 
-****
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('c71-86a-a0-92-906ba')/events/$entity",
+    "@odata.etag": "W/\"oBeN/g==\"",
+    "id": "AAMkADI4Yzc5AABVNeEhAAA=",
+    "createdDateTime": "2023-06-26T15:46:00.9307807Z",
+    "lastModifiedDateTime": "2023-06-26T15:46:02.0775731Z",
+    "changeKey": "oBEEg==",
+    "categories": [],
+    "transactionId": null,
+    "originalStartTimeZone": "Pacific Standard Time",
+    "originalEndTimeZone": "Pacific Standard Time",
+    "iCalUId": "04049ACBF84A7AC7CB34D",
+    "reminderMinutesBeforeStart": 15,
+    "isReminderOn": true,
+    "hasAttachments": false,
+    "subject": "Celebrate Thanksgiving",
+    "bodyPreview": "Let's get together!",
+    "importance": "normal",
+    "sensitivity": "normal",
+    "isAllDay": false,
+    "isCancelled": false,
+    "isOrganizer": true,
+    "responseRequested": true,
+    "seriesMasterId": null,
+    "showAs": "busy",
+    "type": "singleInstance",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl": null,
+    "isOnlineMeeting": false,
+    "onlineMeetingProvider": "unknown",
+    "allowNewTimeProposals": true,
+    "occurrenceId": null,
+    "isDraft": false,
+    "hideAttendees": false,
+    "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body>Let's get together!</body></html>"
+    },
+    "start": {
+        "dateTime": "2015-11-26T18:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "end": {
+        "dateTime": "2015-11-26T23:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "location": {
+        "displayName": "",
+        "locationType": "default",
+        "uniqueIdType": "unknown",
+        "address": {},
+        "coordinates": {}
+    },
+    "locations": [],
+    "recurrence": null,
+    "attendees": [
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Terrie Barrera",
+                "address": "Terrie@contoso.com"
+            }
+        }
+    ],
+    "organizer": {
+        "emailAddress": {
+            "name": "MOD Administrator",
+            "address": "admin@contoso.com"
+        }
+    },
+    "onlineMeeting": null
+}
+```
 
-##### Request 2
+### Example 2: Create a single-value extended property for a message
+#### Request 
 
-The second example creates one single-value extended property for the specified existing message. That extended property is the only
-element in the **singleValueExtendedProperties** array. The request body includes the following for the
-extended property:
+The second example creates one single-value extended property for the specified existing message. That extended property is the only element in the **singleValueExtendedProperties** array. The request body includes the following for the extended property:
 - **id** specifies the property type as `String`, the GUID, and the property named `Color`.
 - **value** specifies `Green` as the value of the `Color` property.
 
-<!-- { "blockType": "ignored" } -->
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_message_and_svep_v1_e2"
+}
+-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=
-
 Content-Type: application/json
 
 {
@@ -240,13 +370,111 @@ Content-Type: application/json
 }
 ```
 
-##### Response 2
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-message-and-svep-v1-e2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body,
-similar to the response from [updating a message](../api/message-update.md). The response does not
-include the newly created extended property.
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-message-and-svep-v1-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-message-and-svep-v1-e2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-message-and-svep-v1-e2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-message-and-svep-v1-e2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-message-and-svep-v1-e2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-message-and-svep-v1-e2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-message-and-svep-v1-e2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body, similar to the response from [updating a message](../api/message-update.md). The response does not include the newly created extended property.
 
 To see the newly created extended property, [get the message expanded with the extended property](../api/singlevaluelegacyextendedproperty-get.md).
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('3cc-ad3-4b9-9a-54')/messages/$entity",
+    "@odata.etag": "W/\"CQAAABTiMty\"",
+    "id": "AAMkADQzZ1NzItKbS4P8E6VEAAA3LwToAAA=",
+    "createdDateTime": "2023-05-12T15:55:56Z",
+    "lastModifiedDateTime": "2023-06-23T17:45:43Z",
+    "changeKey": "CQAAAAABTiMty",
+    "categories": [],
+    "receivedDateTime": "2023-05-12T15:55:57Z",
+    "sentDateTime": "2023-05-12T15:55:48Z",
+    "hasAttachments": false,
+    "internetMessageId": "<odspmicro-PlannerDueDate-06c7f00e-6b5f793846-DispatchToRecipients-PreprocessPayload-r0-SendEmail@59C185B>",
+    "subject": "You have upcoming tasks due",
+    "bodyPreview": "Hi Alex. You have 2 tasks due.        You have upcoming tasksSubmit your expensesIn the plan  Event Plan        5/19/2023Due in 7 daysSubmit your expensesIn the plan  Event Plan        5/19/2023Due in 7 daysView tasks in  Microsoft To ",
+    "importance": "normal",
+    "parentFolderId": "AQMkc0BAIptLg-wTpUQAAAIBDAAAAA==",
+    "conversationId": "AAQkADQzZmJLgzlRSFD0=",
+    "conversationIndex": "AQHIUPQ==",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": false,
+    "isDraft": false,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAP8E6vsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "html",
+        "content": "<html aria-hidden=\"true\" role=\"presentation\" height=\"1\" width=\"1\"></html>"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Microsoft on behalf of your organization",
+            "address": "noreply@planner.office365.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Microsoft on behalf of your organization",
+            "address": "noreply@planner.office365.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Alex Wilber",
+                "address": "AlexW@contoso.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}
+```
 
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

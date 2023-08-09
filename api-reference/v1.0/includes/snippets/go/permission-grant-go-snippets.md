@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphshares "github.com/microsoftgraph/msgraph-sdk-go/shares"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewGrantPostRequestBody()
+
+requestBody := graphshares.NewGrantPostRequestBody()
 
 
 driveRecipient := graphmodels.NewDriveRecipient()
@@ -20,16 +29,14 @@ driveRecipient1.SetEmail(&email)
 recipients := []graphmodels.DriveRecipientable {
 	driveRecipient,
 	driveRecipient1,
-
 }
 requestBody.SetRecipients(recipients)
 roles := []string {
 	"read",
-
 }
 requestBody.SetRoles(roles)
 
-result, err := graphClient.SharesById("sharedDriveItem-id").Permission().Grant().Post(context.Background(), requestBody, nil)
+grant, err := graphClient.Shares().BySharedDriveItemId("sharedDriveItem-id").Permission().Grant().Post(context.Background(), requestBody, nil)
 
 
 ```

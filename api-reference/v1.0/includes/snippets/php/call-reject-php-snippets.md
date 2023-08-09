@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RejectPostRequestBody();
 $requestBody->setReason(new RejectReason('busy'));
 
 
 
-$graphServiceClient->communications()->callsById('call-id')->reject()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->reject()->post($requestBody);
 
 
 ```

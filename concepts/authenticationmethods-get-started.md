@@ -1,5 +1,5 @@
 ---
-title: "Get started with the Microsoft Graph authentication methods API"
+title: Manage users' authentication methods using Microsoft Graph"
 description: "Learn how to manage your users' authentication methods and get users registered to do multi-factor authentication (MFA) and self-service password reset (SSPR)."
 author: "FaithOmbongi"
 ms.author: ombongifaith
@@ -9,7 +9,7 @@ ms.prod: "identity-and-sign-in"
 ms.date: 10/18/2022
 ---
 
-# Get started with the Microsoft Graph authentication methods API
+# Manage users' authentication methods using Microsoft Graph
 
 [Authentication methods](/azure/active-directory/authentication/concept-authentication-methods) are the ways that users authenticate in Azure Active Directory (Azure AD). Authentication methods in Azure AD include password and phone (for example, SMS and voice calls), which are manageable in Microsoft Graph today, among many others such as FIDO2 security keys and the Microsoft Authenticator app. Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.
 

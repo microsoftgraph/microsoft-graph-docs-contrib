@@ -28,7 +28,7 @@ const virtualAppointment = {
     externalAppointmentUrl: 'https://anyschedulingsystem.com/api/appointments/MkADKnAAA='
 };
 
-await client.api('/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment')
+await client.api('/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment')
 	.version('beta')
 	.put(virtualAppointment);
 

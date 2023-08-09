@@ -17,6 +17,10 @@ DriveRecipient recipients = new DriveRecipient();
 
 recipientsList.add(recipients);
 
+Boolean sendNotification = true;
+
+Boolean retainInheritedPermissions = false;
+
 graphClient.me().drive().items("{itemId}")
 	.createLink(DriveItemCreateLinkParameterSet
 		.newBuilder()
@@ -26,7 +30,8 @@ graphClient.me().drive().items("{itemId}")
 		.withPassword(password)
 		.withMessage(null)
 		.withRecipients(recipientsList)
-		.withRetainInheritedPermissions(null)
+		.withRetainInheritedPermissions(retainInheritedPermissions)
+		.withSendNotification(sendNotification)
 		.build())
 	.buildRequest()
 	.post();

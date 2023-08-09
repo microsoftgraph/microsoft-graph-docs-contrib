@@ -1,12 +1,12 @@
 ---
-author: JeremyKelley
+author: "JeremyKelley"
 description: "Represents a column in a site, a list, or a content type."
-ms.date: 09/11/2017
-title: columnDefinition resource type
+title: "columnDefinition resource type"
 ms.localizationpriority: medium
-doc_type: resourcePageType
+doc_type: "resourcePageType"
 ms.prod: "sites-and-lists"
 ---
+
 # columnDefinition resource type
 
 Namespace: microsoft.graph
@@ -15,9 +15,7 @@ Namespace: microsoft.graph
 Represents a column in a [site][], [list][], or [contentType][].
 
 
-ColumnDefinitions and field values for `hidden` columns aren't shown by default.
-To list hidden **columnDefinitions**, include `hidden` in your `$select` statement.
-To list hidden **field** values on [listItems][listItem], include the desired columns by name in your `$select` statement.
+By default, **columnDefinitions** and field values for `hidden` columns aren't shown. To list hidden **columnDefinitions**, include `hidden` in your `$select` statement. To list hidden **field** values on [listItems][listItem], include the desired columns by name in your `$select` statement.
 
 ## Methods
 |Method|Return type|Description|
@@ -30,7 +28,7 @@ To list hidden **field** values on [listItems][listItem], include the desired co
 |[Create columnDefinition for a content type](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a new [columnDefinition](../resources/columndefinition.md) object in a [content type](../resources/contenttype.md).|
 |[Get columnDefinition](../api/columndefinition-get.md)|[columnDefinition](../resources/columndefinition.md)|Read the properties and relationships of a [columnDefinition](../resources/columndefinition.md) object.|
 |[Update columnDefinition](../api/columndefinition-update.md)|[columnDefinition](../resources/columndefinition.md)|Update the properties of a [columnDefinition](../resources/columndefinition.md) object.|
-|[Delete columnDefinition](../api/columndefinition-delete.md)|None|Deletes a [columnDefinition](../resources/columndefinition.md) object.|
+|[Delete columnDefinition](../api/columndefinition-delete.md)|None|Delete a [columnDefinition](../resources/columndefinition.md) object.|
 
 ## Properties
 
@@ -86,7 +84,7 @@ Sites and list columns response won't contain **isDeletable**, **propagateChange
 
 ## JSON representation
 
-Here is a JSON representation of a columnDefinition resource.
+The following is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
@@ -101,35 +99,35 @@ Here is a JSON representation of a columnDefinition resource.
   "boolean": { "@odata.type": "microsoft.graph.booleanColumn" },
   "calculated": { "@odata.type": "microsoft.graph.calculatedColumn" },
   "choice": { "@odata.type": "microsoft.graph.choiceColumn" },
-  "columnGroup": "string",
+  "columnGroup": "String",
   "contentApprovalStatus": { "@odata.type": "microsoft.graph.contentApprovalStatusColumn" },
   "currency": { "@odata.type": "microsoft.graph.currencyColumn" },
   "dateTime": { "@odata.type": "microsoft.graph.dateTimeColumn" },
   "defaultValue": { "@odata.type": "microsoft.graph.defaultColumnValue" },
-  "description": "description",
-  "displayName": "friendly name",
-  "enforceUniqueValues": true,
+  "description": "String",
+  "displayName": "String",
+  "enforceUniqueValues": "Boolean",
   "geolocation": { "@odata.type": "microsoft.graph.geolocationColumn" },
-  "hidden": false,
+  "hidden": "Boolean",
   "hyperlinkOrPicture": { "@odata.type": "microsoft.graph.hyperlinkOrPictureColumn" },
-  "id": "string",
-  "indexed": true,
-  "isDeletable" : false,
-  "isReorderable": false,
-  "isSealed": false,
+  "id": "String (identifier)",
+  "indexed": "Boolean",
+  "isDeletable" : "Boolean",
+  "isReorderable": "Boolean",
+  "isSealed": "Boolean",
   "lookup": { "@odata.type": "microsoft.graph.lookupColumn" },
   "name": "staticNameForApi",
   "number": { "@odata.type": "microsoft.graph.numberColumn" },
   "personOrGroup": { "@odata.type": "microsoft.graph.personOrGroupColumn" },
-  "readOnly": false,
-  "required": false,
-  "propagateChanges": false,
+  "readOnly": "Boolean",
+  "required": "Boolean",
+  "propagateChanges": "Boolean",
   "sourceContentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
   "term": { "@odata.type": "microsoft.graph.termColumn" },
   "text": { "@odata.type": "microsoft.graph.textColumn" },
   "thumbnail": { "@odata.type": "microsoft.graph.thumbnailColumn" },
   "type": { "@odata.type": "microsoft.graph.columnTypes" },
-  "validation": { "@odata.type": "microsoft.graph.columnValidation" },
+  "validation": { "@odata.type": "microsoft.graph.columnValidation" }
 }
 ```
 

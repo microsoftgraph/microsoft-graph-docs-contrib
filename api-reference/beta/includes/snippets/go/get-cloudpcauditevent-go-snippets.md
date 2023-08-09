@@ -4,11 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().AuditEventsById("cloudPcAuditEvent-id").Get(context.Background(), nil)
+
+auditEvents, err := graphClient.DeviceManagement().VirtualEndpoint().AuditEvents().ByCloudPcAuditEventId("cloudPcAuditEvent-id").Get(context.Background(), nil)
 
 
 ```

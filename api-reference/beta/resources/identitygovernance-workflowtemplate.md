@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |description|String|The description of the `workflowTemplate`.|
 |displayName|String|The display name of the `workflowTemplate`.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Conditions describing when to execute the workflow and the criteria to identify in-scope subject set.|
-|id|String|The unique identifier for the `workflowTemplate`. Inherited from [entity](../resources/entity.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
+|id|String|The unique identifier for the `workflowTemplate`.Inherited from [entity](../resources/entity.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 
 ### Supported workflow templates
 

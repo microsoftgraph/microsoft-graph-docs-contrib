@@ -1,7 +1,7 @@
 ---
 title: "Online meeting artifacts and permissions in the cloud communications API"
 description: "Learn about online meeting artifacts, such as attendance reports and recordings, and the permissions needed to fetch them by using the Microsoft Graph cloud communications API."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ms.date: "09/20/2021"

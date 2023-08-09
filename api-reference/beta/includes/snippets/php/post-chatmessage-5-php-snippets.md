@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();
 $body = new ItemBody();
@@ -23,7 +23,7 @@ $hostedContentsChatMessageHostedContent1->setContentBytes(base64_decode('iVBORw0
 $hostedContentsChatMessageHostedContent1->setContentType('image/png');
 
 $additionalData = [
-'@microsoft.graph.temporaryId' => '1', 
+		'@microsoft.graph.temporaryId' => '1', 
 ];
 $hostedContentsChatMessageHostedContent1->setAdditionalData($additionalData);
 
@@ -35,7 +35,7 @@ $requestBody->setHostedContents($hostedContentsArray);
 
 
 
-$requestResult = $graphServiceClient->chatsById('chat-id')->messages()->post($requestBody);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->messages()->post($requestBody);
 
 
 ```

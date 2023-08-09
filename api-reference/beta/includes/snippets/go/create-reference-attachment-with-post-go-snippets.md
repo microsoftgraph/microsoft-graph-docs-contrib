@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewReplyPostRequestBody()
+
+requestBody := graphgroups.NewReplyPostRequestBody()
 post := graphmodels.NewPost()
 body := graphmodels.NewItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 
@@ -17,25 +26,25 @@ body.SetContent(&content)
 post.SetBody(body)
 
 
-attachment := graphmodels.NewAttachment()
+attachment := graphmodels.NewReferenceAttachment()
 name := "Personal pictures"
 attachment.SetName(&name) 
-additionalData := map[string]interface{}{
-	"sourceUrl" : "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-	"providerType" : "oneDriveConsumer", 
-	"permission" : "Edit", 
-	"isFolder" : "True", 
-}
-attachment.SetAdditionalData(additionalData)
+sourceUrl := "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
+attachment.SetSourceUrl(&sourceUrl) 
+providerType := graphmodels.ONEDRIVECONSUMER_REFERENCEATTACHMENTPROVIDER 
+attachment.SetProviderType(&providerType) 
+permission := graphmodels.EDIT_REFERENCEATTACHMENTPERMISSION 
+attachment.SetPermission(&permission) 
+isFolder := true
+attachment.SetIsFolder(&isFolder) 
 
 attachments := []graphmodels.Attachmentable {
 	attachment,
-
 }
 post.SetAttachments(attachments)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").Reply().Post(context.Background(), requestBody, nil)
+graphClient.Groups().ByGroupId("group-id").Threads().ByConversationThreadId("conversationThread-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

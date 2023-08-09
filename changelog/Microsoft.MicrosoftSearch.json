@@ -394,7 +394,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-28T12:49:29.5221544Z",
       "WorkloadArea": "Search",
-      "SubArea": "Analytics"
+      "SubArea": "Query"
     },
     {
       "ChangeList": [
@@ -500,7 +500,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2022-02-16T06:29:33.9252671Z",
       "WorkloadArea": "Search",
-      "SubArea": "Analytics"
+      "SubArea": "Query"
     },
     {
       "ChangeList": [
@@ -686,7 +686,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-01-27T08:44:58.7479522Z",
       "WorkloadArea": "Search",
-      "SubArea": "Analytics"
+      "SubArea": "Query"
     },
     {
       "ChangeList": [
@@ -723,6 +723,50 @@
       "CreatedDateTime": "2022-12-12T04:12:04.628237Z",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fad6f62b-fdc9-462f-ac1a-d3ea2b860fce",
+          "ApiChange": "Resource",
+          "ChangedApiName": "collapseProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [collapseProperty](https://learn.microsoft.com/en-us/graph/api/resources/collapseProperty) resource type.",
+          "Target": "collapseProperty"
+        },
+        {
+          "Id": "fad6f62b-fdc9-462f-ac1a-d3ea2b860fce",
+          "ApiChange": "Property",
+          "ChangedApiName": "collapseProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the **collapseProperties** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest) resource.",
+          "Target": "searchRequest"
+        }
+      ],
+      "Id": "fad6f62b-fdc9-462f-ac1a-d3ea2b860fce",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-06-02T08:33:47.66211Z",
+      "WorkloadArea": "Search",
+      "SubArea": "Query"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9e2c3005-90b3-4f99-80bc-7cb5b5ccfb92",
+          "ApiChange": "Property",
+          "ChangedApiName": "isCollapsed",
+          "ChangeType": "Addition",
+          "Description": "Added the **isCollapsed** property to the [searchHit](https://learn.microsoft.com/en-us/graph/api/resources/searchHit) resource.",
+          "Target": "searchHit"
+        }
+      ],
+      "Id": "9e2c3005-90b3-4f99-80bc-7cb5b5ccfb92",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-06-02T08:33:47.66211Z",
+      "WorkloadArea": "Search",
+      "SubArea": "Query"
     }
   ]
 }

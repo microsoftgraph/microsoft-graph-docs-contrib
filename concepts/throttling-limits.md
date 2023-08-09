@@ -47,6 +47,7 @@ The preceding limits apply to the following resources:
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
 | [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
+| [Virtual event](/graph/api/resources/virtualevent) | 10,000 requests/app each month |
 
 ### Call records limits
 
@@ -272,7 +273,6 @@ The preceding limits apply to the following resources:
 [!INCLUDE [Intune devices throttling documentation](../includes/throttling-intune-devices.md)]
 [!INCLUDE [Intune endpoint protection throttling documentation](../includes/throttling-intune-endpoint-protection.md)]
 [!INCLUDE [Intune enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
-[!INCLUDE [Intune fencing throttling documentation](../includes/throttling-intune-fencing.md)]
 [!INCLUDE [Intune GPAnalytics throttling documentation](../includes/throttling-intune-gpanalytics.md)]
 [!INCLUDE [Intune managed applications throttling documentation](../includes/throttling-intune-managed-applications.md)]
 [!INCLUDE [Intune notifications throttling documentation](../includes/throttling-intune-notifications.md)]
@@ -315,28 +315,39 @@ Limits are expressed as requests per second (rps).
 
 | Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      |
 |------------------------------------------------------|---------------------------------|------------|
-| GET team, channel, tab, installedApps, appCatalogs   | 30 rps                          | 600 rps |
-| POST/PUT channel, tab, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
-| PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
-| DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
-| GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POST /teams | 10 rps | 100 rps  |
-| PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
-| GET channel message  | 20 rps | 200 rps |
-| GET 1:1/group chat message  | 20 rps | 200 rps |
-| POST channel message | 50 rps | 500 rps |
-| POST 1:1/group chat message | 20 rps | 200 rps |
-| GET /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 600 rps |
-| POST, PATCH, PUT /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
-| DELETE /teams/```{team-id}```/schedule and all APIs under this path | 15 rps | 150 rps |
-| POST /teams/```{team-id}```/sendActivityNotification | 5 rps | 50 rps |
-| POST /chats/```{chat-id}```/sendActivityNotification | 5 rps | 50 rps |
-| POST /users/```{user-id}```/teamwork/sendActivityNotification | 5 rps | 50 rps |
-| GET /teams/```{team-id}```/members | 60 rps | 1200 rps |
-| GET /teams/```{team-id}```/channels | 60 rps | 1200 rps |
-| GET /teams/```{team-id}```/channels/```{channel-id}```/members | 60 rps | 1200 rps |
-| Get all channel messages for a team<br/>GET teams/```{team-id}```/channels/getAllMessages<br/>GET teams/```{team-id}```/channels/allMessages | 200rps | 1000rps |
-| Get all chat messages for a user<br/>GET users/```{user-id}```/chats/getAllMessages<br/>GET users/```{user-id}```/chats/allMessages | 200rps | 1000rps |
+| GET [team](/graph/api/team-get)  | 30 rps                          | 600 rps |
+| GET [channel](/graph/api/channel-get) | 30 rps                          | 600 rps |
+| GET tab for [channel](/graph/api/channel-list-tabs), [chat](/graph/api/chat-get-tabs)| 30 rps            | 600 rps |
+| GET installedApps for [chat](/graph/api/chat-get-installedapps), [user](/graph/api/userteamwork-get-installedapps),  [team](/graph/api/team-get-installedapps) | 30 rps                          | 600 rps |
+| GET [appCatalogs](/graph/api/appcatalogs-list-teamsapps)   | 30 rps                          | 600 rps |
+| POST [channel](/graph/api/channel-post) |  30 rps                         | 300 rps  |
+| POST tab for [channel](/graph/api/channel-post-tabs), [chat](/graph/api/chat-post-tabs)|  30 rps                         | 300 rps  |
+| POST installedApps for [chat](/graph/api/chat-post-installedapps), [user](/graph/api/userteamwork-post-installedapps), [team](/graph/api/team-post-installedapps) |  30 rps                         | 300 rps  |
+ POST [appCatalogs](/graph/api/teamsapp-publish)    |  30 rps                         | 300 rps  |
+| PATCH [team](/graph/api/team-update), [channel](/graph/api/channel-patch), [tab](/graph/api/channel-patch-tabs)|  30 rps                         | 300 rps  |
+| DELETE [channel](/graph/api/channel-delete) |  15 rps                         | 150 rps  |
+| DELETE tab for [chat](/graph/api/chat-delete-tabs), [channel](/graph/api/channel-delete-tabs)  |  15 rps                         | 150 rps  |
+| DELETE   installedApps for [chat](/graph/api/chat-delete-installedapps), [user](/graph/api/userteamwork-delete-installedapps), [team](/graph/api/team-delete-installedapps)    |  15 rps                         | 150 rps  |
+| DELETE   [appCatalogs](/graph/api/teamsapp-delete)      |  15 rps                         | 150 rps  |
+| GET /teams/```{team-id}```, [joinedTeams](/graph/api/user-list-joinedteams)              |  30 rps                         | 300 rps  |
+| POST /[teams](/graph/api/team-post) | 10 rps | 100 rps  |
+| PUT /groups/```{team-id}```/[team](/graph/api/team-put-teams)| 6 rps | 150 rps  |
+| POST /```{team-id}```/ [clone](/graph/api/team-clone) | 6 rps | 150 rps  |
+| GET [channel message](/graph/api/chatmessage-get)  | 20 rps | 200 rps |
+| GET 1:1/[group chat message](/graph/api/chat-get#example-3-get-a-chat-and-all-its-members)  | 20 rps | 200 rps |
+| POST [channel message](/graph/api/channel-post-messages) | 50 rps | 500 rps |
+| POST 1:1/[group chat message](/graph/api/chat-post#example-2-create-a-group-chat) | 20 rps | 200 rps |
+| GET /teams/```{team-id}```/[schedule](/graph/api/schedule-get) and all APIs under this path | 30 rps | 600 rps |
+| POST /teams/```{team-id}```/[schedule](/graph/api/schedule-share) and all APIs under this path | 30 rps | 300 rps |
+|PUT /teams/```{team-id}```/[schedule](/graph//api/team-put-schedule) and all APIs under this path | 30 rps | 300 rps |
+| POST /teams/```{team-id}```/[sendActivityNotification](/graph/api/team-sendactivitynotification) | 5 rps | 50 rps |
+| POST /chats/```{chat-id}```/[sendActivityNotification](/graph/api/chat-sendactivitynotification) | 5 rps | 50 rps |
+| POST /users/```{user-id}```/teamwork/[sendActivityNotification](/graph/api/userteamwork-sendactivitynotification) | 5 rps | 50 rps |
+| GET /teams/```{team-id}```/[members](/graph/api/team-get-members) | 60 rps | 1200 rps |
+| GET /teams/```{team-id}```/[channels](/graph/api/channel-get) | 60 rps | 1200 rps |
+| GET /teams/```{team-id}```/channels/```{channel-id}```/[members](/graph/api/channel-get-members) | 60 rps | 1200 rps |
+| Get all channel messages for a team<br/>GET teams/```{team-id}```/channels/[getAllMessages](/graph/api/channel-getallmessages)<br/>GET teams/```{team-id}```/channels/allMessages | 200rps | 1000rps |
+| Get all chat messages for a user<br/>GET users/```{user-id}```/chats/[getAllMessages](/graph/api/chats-getallmessages)<br/>GET users/```{user-id}```/chats/allMessages | 200rps | 1000rps |
 | Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps |
 | Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
@@ -379,16 +390,19 @@ You can find additional information about best practices in [OneNote API throttl
 The preceding limits apply to the following resources:
 [!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
 
-
 ## Outlook service limits
 
-Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
+Outlook service limits apply to the public cloud and [national cloud deployments](./deployments.md).
 
-| Limit                                                      | Applies to      |
-|------------------------------------------------------------|-----------------|
-| 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
-| 4 concurrent requests                                      | v1.0 and beta endpoints   |
-| 15 megabytes (MB) upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
+### Limits per app ID and mailbox combination
+
+The Outlook service applies limits to each app ID and mailbox combination - that is, a specific app accessing a specific user or group mailbox. Exceeding the limit for one mailbox does not affect the ability of the application to access another mailbox.
+
+| Limit                                                             | Applies to              |
+|-------------------------------------------------------------------|-------------------------|
+| 10,000 API requests in a 10 minute period                         | v1.0 and beta endpoints |
+| 4 concurrent requests                                             | v1.0 and beta endpoints |
+| 150 megabytes (MB) upload (PATCH, POST, PUT) in a 5 minute period | v1.0 and beta endpoints |
 
 ### Outlook service resources
 
@@ -402,6 +416,15 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | Social and workplace intelligence | <li>[person](/graph/api/resources/person) |
 | To-do tasks API (preview) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 
+### Outlook service limits for JSON batching
+
+When an app makes a [JSON batch](json-batching.md) request that consists of multiple, _unordered_ individual requests to the Outlook service, by default, Microsoft Graph sends the Outlook service up to 4 individual requests from the batch at a time, regardless of the target mailboxes of those requests. The Outlook service can execute these requests in parallel at any point, also irrespective of the target mailbox. Since Microsoft Graph sends only up to 4 requests to run in parallel, the execution of that batch stays within [Outlook's concurrency limits for the same mailbox](#limits-per-app-id-and-mailbox-combination). 
+
+Alternatively, an app can use the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property to order requests within a batch. Microsoft Graph sends the Outlook service one request from the batch at a time following the specified order, and Outlook executes each individual request in the batch sequentially.
+  
+In other words, when targeting the _same mailbox_, apps that allow multiple batch requests to run in parallel can use either of the following approaches: 
+- If the individual requests do not have to be ordered, have individual requests from a single batch run concurrently. 
+- Use the `dependsOn` property to order requests in a batch, and have up to 4 such batch requests run concurrently.
 
 ## Project Rome service limits
 

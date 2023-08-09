@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewSetStatusMessagePostRequestBody()
+
+requestBody := graphusers.NewSetStatusMessagePostRequestBody()
 statusMessage := graphmodels.NewPresenceStatusMessage()
 message := graphmodels.NewItemBody()
 content := "Hey I'm currently in a meeting."
@@ -23,7 +32,7 @@ expiryDateTime.SetTimeZone(&timeZone)
 statusMessage.SetExpiryDateTime(expiryDateTime)
 requestBody.SetStatusMessage(statusMessage)
 
-graphClient.UsersById("user-id").Presence().SetStatusMessage().Post(context.Background(), requestBody, nil)
+graphClient.Users().ByUserId("user-id").Presence().SetStatusMessage().Post(context.Background(), requestBody, nil)
 
 
 ```

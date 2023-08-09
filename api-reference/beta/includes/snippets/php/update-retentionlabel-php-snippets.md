@@ -7,42 +7,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RetentionLabel();
-$requestBody->set@odatatype('#microsoft.graph.security.retentionLabel');
-
-$requestBody->setDisplayName('String');
-
-$requestBody->setBehaviorDuringRetentionPeriod(new BehaviorDuringRetentionPeriod('string'));
-
-$requestBody->setActionAfterRetentionPeriod(new ActionAfterRetentionPeriod('string'));
-
-$requestBody->setRetentionTrigger(new RetentionTrigger('string'));
+$requestBody->setOdataType('#microsoft.graph.security.retentionLabel');
 
 $retentionDuration = new RetentionDuration();
-$retentionDuration->set@odatatype('microsoft.graph.security.retentionDuration');
+$retentionDuration->setOdataType('microsoft.graph.security.retentionDuration');
 
 
 $requestBody->setRetentionDuration($retentionDuration);
-$requestBody->setIsInUse(boolean);
-
 $requestBody->setDescriptionForAdmins('String');
 
 $requestBody->setDescriptionForUsers('String');
 
-$createdBy = new IdentitySet();
-$createdBy->set@odatatype('microsoft.graph.identitySet');
-
-
-$requestBody->setCreatedBy($createdBy);
 $requestBody->setLabelToBeApplied('String');
 
 $requestBody->setDefaultRecordBehavior(new DefaultRecordBehavior('string'));
 
 
 
-$requestResult = $graphServiceClient->security()->labels()->retentionLabelsById('retentionLabel-id')->patch($requestBody);
+$result = $graphServiceClient->security()->labels()->retentionLabels()->byRetentionLabelId('retentionLabel-id')->patch($requestBody);
 
 
 ```

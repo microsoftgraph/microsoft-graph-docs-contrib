@@ -4,10 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewCreateOrGetPostRequestBody()
+
+requestBody := graphusers.NewItemCreateOrGetPostRequestBody()
 startDateTime , err := time.Parse(time.RFC3339, "2020-02-06T01:49:21.3524945+00:00")
 requestBody.SetStartDateTime(&startDateTime) 
 endDateTime , err := time.Parse(time.RFC3339, "2020-02-06T02:19:21.3524945+00:00")
@@ -33,12 +43,11 @@ meetingParticipantInfo.SetUpn(&upn)
 
 attendees := []graphmodels.MeetingParticipantInfoable {
 	meetingParticipantInfo,
-
 }
 participants.SetAttendees(attendees)
 requestBody.SetParticipants(participants)
 
-result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(context.Background(), requestBody, nil)
+createOrGet, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(context.Background(), requestBody, nil)
 
 
 ```

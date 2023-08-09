@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 
 $params = @{
-	Group = @{
-		Mail = "SecretGroup@contoso.com"
+	group = @{
+		mail = "SecretGroup@contoso.com"
 	}
-	IncludedSources = "mailbox, site"
+	includedSources = "mailbox, site"
 }
 
-New-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
+New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
 
 ```

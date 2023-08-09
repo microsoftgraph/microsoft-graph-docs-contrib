@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewTimeCard()
 clockInEvent := graphmodels.NewTimeCardEvent()
@@ -52,7 +60,6 @@ timeCardBreak.SetStart(start)
 
 breaks := []graphmodels.TimeCardBreakable {
 	timeCardBreak,
-
 }
 requestBody.SetBreaks(breaks)
 additionalData := map[string]interface{}{
@@ -60,7 +67,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.TeamsById("team-id").Schedule().TimeCards().Post(context.Background(), requestBody, nil)
+timeCards, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimeCards().Post(context.Background(), requestBody, nil)
 
 
 ```
