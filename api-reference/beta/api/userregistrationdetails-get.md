@@ -1,7 +1,7 @@
 ---
 title: "Get userRegistrationDetails"
 description: "Read the properties and relationships of a userRegistrationDetails object."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
