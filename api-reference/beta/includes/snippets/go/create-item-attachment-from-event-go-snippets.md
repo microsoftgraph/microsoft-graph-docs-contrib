@@ -41,7 +41,7 @@ end.SetTimeZone(&timeZone)
 item.SetEnd(end)
 requestBody.SetItem(item)
 
-result, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
+attachments, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

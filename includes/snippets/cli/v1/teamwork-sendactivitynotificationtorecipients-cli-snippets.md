@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc teamwork send-activity-notification-to-recipients post --body '{\
     "topic": {\
         "source": "entityUrl",\

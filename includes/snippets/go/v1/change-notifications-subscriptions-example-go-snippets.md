@@ -30,7 +30,7 @@ requestBody.SetExpirationDateTime(&expirationDateTime)
 clientState := "SecretClientState"
 requestBody.SetClientState(&clientState) 
 
-result, err := graphClient.Subscriptions().Post(context.Background(), requestBody, nil)
+subscriptions, err := graphClient.Subscriptions().Post(context.Background(), requestBody, nil)
 
 
 ```

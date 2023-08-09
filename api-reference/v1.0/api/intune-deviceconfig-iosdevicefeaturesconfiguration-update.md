@@ -167,6 +167,10 @@ Content-length: 1988
 [!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-iosdevicefeaturesconfiguration-update-update-iosdevicefeaturesconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-iosdevicefeaturesconfiguration-update-update-iosdevicefeaturesconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-iosdevicefeaturesconfiguration-update-update-iosdevicefeaturesconfiguration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

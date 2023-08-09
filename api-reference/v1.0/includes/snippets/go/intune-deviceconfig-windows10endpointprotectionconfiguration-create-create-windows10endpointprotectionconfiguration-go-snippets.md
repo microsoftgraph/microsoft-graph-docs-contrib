@@ -179,7 +179,7 @@ blockCrossOrganizationWriteAccess := true
 bitLockerRemovableDrivePolicy.SetBlockCrossOrganizationWriteAccess(&blockCrossOrganizationWriteAccess) 
 requestBody.SetBitLockerRemovableDrivePolicy(bitLockerRemovableDrivePolicy)
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

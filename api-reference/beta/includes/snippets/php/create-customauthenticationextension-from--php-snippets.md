@@ -33,11 +33,7 @@ $requestBody->setAuthenticationConfiguration($authenticationConfiguration);
 $clientConfiguration = new CustomExtensionClientConfiguration();
 $clientConfiguration->setTimeoutInMilliseconds(2000);
 
-$additionalData = [
-		'maximumRetries' => 1,
-];
-$clientConfiguration->setAdditionalData($additionalData);
-
+$clientConfiguration->setMaximumRetries(1);
 
 
 $requestBody->setClientConfiguration($clientConfiguration);

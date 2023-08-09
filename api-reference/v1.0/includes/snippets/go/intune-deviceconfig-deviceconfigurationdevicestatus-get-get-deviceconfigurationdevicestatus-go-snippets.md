@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").DeviceStatuses().ByDeviceStatuseId("deviceConfigurationDeviceStatus-id").Get(context.Background(), nil)
+deviceStatuses, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").DeviceStatuses().ByDeviceConfigurationDeviceStatusId("deviceConfigurationDeviceStatus-id").Get(context.Background(), nil)
 
 
 ```

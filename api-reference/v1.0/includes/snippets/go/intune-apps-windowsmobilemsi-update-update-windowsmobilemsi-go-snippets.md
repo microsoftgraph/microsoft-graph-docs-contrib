@@ -57,7 +57,7 @@ requestBody.SetProductVersion(&productVersion)
 ignoreVersionDetection := true
 requestBody.SetIgnoreVersionDetection(&ignoreVersionDetection) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

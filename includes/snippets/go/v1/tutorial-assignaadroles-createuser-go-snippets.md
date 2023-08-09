@@ -31,7 +31,7 @@ password := "xWwvJ]6NMw+bWH-d"
 passwordProfile.SetPassword(&password) 
 requestBody.SetPasswordProfile(passwordProfile)
 
-result, err := graphClient.Users().Post(context.Background(), requestBody, nil)
+users, err := graphClient.Users().Post(context.Background(), requestBody, nil)
 
 
 ```
