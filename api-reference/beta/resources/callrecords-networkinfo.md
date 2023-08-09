@@ -2,7 +2,7 @@
 title: "networkInfo resource type"
 description: "Represents information about the network used in a call."
 ms.localizationpriority: medium
-author: "williamlooney"
+author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---

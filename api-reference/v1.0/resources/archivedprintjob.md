@@ -16,15 +16,16 @@ A record of a "final state" (completed, aborted, or canceled) print job that is 
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|acquiredByPrinter|Boolean|True if the job was acquired by a printer; false otherwise. Read-only.|
-|acquiredDateTime|DateTimeOffset|The dateTimeOffset when the job was acquired by the printer, if any. Read-only.|
-|completionDateTime|DateTimeOffset|The dateTimeOffset when the job was completed, canceled or aborted. Read-only.|
-|copiesPrinted|Int32|The number of copies that were printed. Read-only.|
-|createdBy|[userIdentity](useridentity.md)|The user who created the print job. Read-only.|
-|createdDateTime|DateTimeOffset|The dateTimeOffset when the job was created. Read-only.|
 |id|String|The archived print job's GUID. Read-only.|
 |printerId|String|The printer ID that the job was queued for. Read-only.|
+|printerName|String|The printer name that the job was queued for. Read-only.|
 |processingState|printJobProcessingState|The print job's final processing state. Read-only.|
+|createdDateTime|DateTimeOffset|The dateTimeOffset when the job was created. Read-only.|
+|acquiredDateTime|DateTimeOffset|The dateTimeOffset when the job was acquired by the printer, if any. Read-only.|
+|completionDateTime|DateTimeOffset|The dateTimeOffset when the job was completed, canceled or aborted. Read-only.|
+|acquiredByPrinter|Boolean|True if the job was acquired by a printer; false otherwise. Read-only.|
+|copiesPrinted|Int32|The number of copies that were printed. Read-only.|
+|createdBy|[userIdentity](useridentity.md)|The user who created the print job. Read-only.|
 
 ## JSON representation
 
@@ -38,18 +39,19 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.archivedPrintJob"
 }-->
 ```json
-	{	
+	{
   "@odata.type": "#microsoft.graph.archivedPrintJob",
-  "acquiredByPrinter": "Boolean",
-  "acquiredDateTime": "String (timestamp)",	
-  "completionDateTime": "String (timestamp)",	
-  "copiesPrinted": "Integer",	
-  "createdBy": {	
-    "@odata.type": "microsoft.graph.userIdentity"	
-  },
+  "id": "String",
+  "printerId": "String",
+  "printerName": "String",
+  "processingState": "String",
   "createdDateTime": "String (timestamp)",
-  "id": "String (identifier)",	
-  "printerId": "String",	
-  "processingState": "String"	
+  "acquiredDateTime": "String (timestamp)",
+  "completionDateTime": "String (timestamp)",
+  "acquiredByPrinter": "Boolean",
+  "copiesPrinted": "Integer",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  }
 }
 ```

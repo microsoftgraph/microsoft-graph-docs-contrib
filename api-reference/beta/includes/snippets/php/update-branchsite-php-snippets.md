@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BranchSite();
 $requestBody->setName('My updated branch');
 
 
 
-$result = $graphServiceClient->networkAccess()->connectivity()->branches()->byBrancheId('branchSite-id')->patch($requestBody);
+$result = $graphServiceClient->networkAccess()->connectivity()->branches()->byBranchSiteId('branchSite-id')->patch($requestBody);
 
 
 ```

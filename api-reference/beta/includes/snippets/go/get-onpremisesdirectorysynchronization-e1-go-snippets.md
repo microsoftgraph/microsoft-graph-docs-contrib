@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Directory().OnPremisesSynchronization().ByOnPremisesSynchronization().Id("onPremisesDirectorySynchronization-id").Get(context.Background(), nil)
+onPremisesSynchronization, err := graphClient.Directory().OnPremisesSynchronization().ByOnPremisesDirectorySynchronizationId("onPremisesDirectorySynchronization-id").Get(context.Background(), nil)
 
 
 ```

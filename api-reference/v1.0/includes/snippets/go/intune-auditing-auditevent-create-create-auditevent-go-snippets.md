@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuditEvent()
@@ -93,7 +93,7 @@ requestBody.SetResources(resources)
 category := "Category value"
 requestBody.SetCategory(&category) 
 
-result, err := graphClient.DeviceManagement().AuditEvents().Post(context.Background(), requestBody, nil)
+auditEvents, err := graphClient.DeviceManagement().AuditEvents().Post(context.Background(), requestBody, nil)
 
 
 ```

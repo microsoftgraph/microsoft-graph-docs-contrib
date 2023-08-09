@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewWindowsInformationProtectionPolicy()
@@ -240,7 +240,7 @@ requestBody.SetMinutesOfInactivityBeforeDeviceLock(&minutesOfInactivityBeforeDev
 daysWithoutContactBeforeUnenroll := int32(0)
 requestBody.SetDaysWithoutContactBeforeUnenroll(&daysWithoutContactBeforeUnenroll) 
 
-result, err := graphClient.DeviceAppManagement().WindowsInformationProtectionPolicies().ByWindowsInformationProtectionPolicieId("windowsInformationProtectionPolicy-id").Patch(context.Background(), requestBody, nil)
+windowsInformationProtectionPolicies, err := graphClient.DeviceAppManagement().WindowsInformationProtectionPolicies().ByWindowsInformationProtectionPolicyId("windowsInformationProtectionPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

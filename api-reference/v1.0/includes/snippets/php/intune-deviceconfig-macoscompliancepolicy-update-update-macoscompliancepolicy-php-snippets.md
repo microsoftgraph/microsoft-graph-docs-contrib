@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new MacOSCompliancePolicy();
-$requestBody->set@odatatype('#microsoft.graph.macOSCompliancePolicy');
+$requestBody->setOdataType('#microsoft.graph.macOSCompliancePolicy');
 
 $requestBody->setDescription('Description value');
 
@@ -54,7 +54,7 @@ $requestBody->setFirewallEnableStealthMode(true);
 
 
 
-$result = $graphServiceClient->deviceManagement()->deviceCompliancePolicies()->byDeviceCompliancePolicieId('deviceCompliancePolicy-id')->patch($requestBody);
+$result = $graphServiceClient->deviceManagement()->deviceCompliancePolicies()->byDeviceCompliancePolicyId('deviceCompliancePolicy-id')->patch($requestBody);
 
 
 ```

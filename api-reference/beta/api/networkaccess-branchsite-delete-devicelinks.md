@@ -87,7 +87,6 @@ DELETE https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{bra
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

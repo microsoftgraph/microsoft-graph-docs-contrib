@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceConfigurationDeviceStateSummary()
@@ -31,7 +31,7 @@ requestBody.SetErrorDeviceCount(&errorDeviceCount)
 conflictDeviceCount := int32(3)
 requestBody.SetConflictDeviceCount(&conflictDeviceCount) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurationDeviceStateSummaries().Patch(context.Background(), requestBody, nil)
+deviceConfigurationDeviceStateSummaries, err := graphClient.DeviceManagement().DeviceConfigurationDeviceStateSummaries().Patch(context.Background(), requestBody, nil)
 
 
 ```

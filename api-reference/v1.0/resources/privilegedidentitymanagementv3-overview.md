@@ -82,7 +82,7 @@ The following table lists scenarios for using PIM to manage Azure AD rules and t
 | Get the details of all role management policy assignments including the policies and rules or settings associated with the Azure AD roles | [List unifiedRoleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md) |
 | Get the details of a role management policy assignment including the policy and rules or settings associated with the Azure AD role       | [Get unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md)         |
 
-For more information about using Microsoft Graph to configure rules, see [Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview). For examples of updating rules, see [Use PIM APIs in Microsoft Graph to update Azure AD rules](/graph/how-to-pim-update-rules).
+For more information about using Microsoft Graph to configure rules, see [Overview of rules for Azure AD roles in PIM APIs](/graph/identity-governance-pim-rules-overview). For examples of updating rules, see [Use PIM APIs to update Azure AD rules](/graph/how-to-pim-update-rules).
 
 ## PIM and identity security with Zero Trust
 
@@ -107,7 +107,9 @@ The tenant where Privileged Identity Management is being used must have sufficie
 
 ## See also
 
-+ [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
 + [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
-+ [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
-+ You can also set up access reviews of role assignments and eligibilities that are managed through PIM. For more information, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
++ Learn more about role settings in PIM through the following articles:
+  + [Working with rules for Azure AD roles in PIM APIs](/graph/identity-governance-pim-rules-overview)
+  + [Use PIM APIs to update Azure AD rules](/graph/how-to-pim-update-rules)
++ Follow these tutorials to learn more about using PIM APIs
+  + [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)

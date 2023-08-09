@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMobileAppAssignment()
@@ -25,7 +25,7 @@ useDeviceContext := true
 settings.SetUseDeviceContext(&useDeviceContext) 
 requestBody.SetSettings(settings)
 
-result, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Assignments().ByAssignmentId("mobileAppAssignment-id").Patch(context.Background(), requestBody, nil)
+assignments, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Assignments().ByMobileAppAssignmentId("mobileAppAssignment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

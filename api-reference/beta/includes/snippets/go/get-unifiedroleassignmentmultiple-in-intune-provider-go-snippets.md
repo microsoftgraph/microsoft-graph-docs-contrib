@@ -25,7 +25,7 @@ configuration := &graphrolemanagement.RoleManagementDeviceManagementRoleAssignme
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Get(context.Background(), configuration)
+roleAssignments, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Get(context.Background(), configuration)
 
 
 ```
