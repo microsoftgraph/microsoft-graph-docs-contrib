@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, delete a programControl ob
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "markwahl-msft"
+author: "jyothig123"
 ---
 
 # Delete programControl (deprecated)

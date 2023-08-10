@@ -3,7 +3,7 @@ title: "impactedResource: reactivate"
 description: "Reactivate an accidentally dismissed, completed, or postponed impactedResource object."
 author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -85,10 +85,6 @@ POST https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-47
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/impactedresourcethisreactivate-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/impactedresourcethisreactivate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

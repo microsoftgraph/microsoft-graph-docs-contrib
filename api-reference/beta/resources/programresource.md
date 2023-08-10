@@ -2,7 +2,7 @@
 title: "programResource resource type (deprecated)"
 description: "Represents a reference to an object which is the target of the access review."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
