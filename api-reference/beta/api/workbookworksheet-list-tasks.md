@@ -1,5 +1,5 @@
 ---
-title: "List tasks"
+title: "List workbookDocumentTasks"
 description: "Get a list of workbookDocumentTask objects."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List tasks
+# List workbookDocumentTasks
 
 Namespace: microsoft.graph
 
