@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 | [List workbookDocumentTasks](../api/workbookdocumenttask-get.md) | [workbookDocumentTask](workbookdocumenttask.md) collection | Get a list of [workbookDocumentTask](../resources/workbookdocumenttask.md) objects. |
-| [Get workbookDocumentTask](../api/workbookdocumenttask-get.md) | [workbookDocumentTask](workbookdocumenttask.md) | Get the properties and relationships of workbookDocumentTask object. |
+| [Get workbookDocumentTask](../api/workbookdocumenttask-get.md) | [workbookDocumentTask](workbookdocumenttask.md) | Get the properties and relationships of [workbookDocumentTask](../resources/workbookdocumenttask.md) object. |
 | [List workbookDocumentTaskChanges](../api/workbookdocumenttask-list-changes.md) | [workbookDocumentTaskChange](workbookdocumenttaskchange.md) collection | Get a list of [workbookDocumentTaskChange](workbookdocumenttaskchange.md) objects. |
 
 ## Properties
