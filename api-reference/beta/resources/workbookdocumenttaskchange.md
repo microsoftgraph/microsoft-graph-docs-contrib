@@ -21,10 +21,11 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get workbookDocumentTaskChange](../api/workbookdocumenttaskchange-get.md) | [workbookDocumentTaskChange](workbookdocumenttaskchange.md) | Read properties and relationships of workbookDocumentTaskChange object. |
-|[List changes](../api/workbookdocumenttask-list-changes.md)|[workbookDocumentTaskChange](workbookdocumenttaskchange.md) collection| Get a list of [workbookDocumentTaskChange](workbookdocumenttaskchange.md) objects. |
+| [Get workbookDocumentTaskChange](../api/workbookdocumenttaskchange-get.md) | [workbookDocumentTaskChange](workbookdocumenttaskchange.md) | Get the properties and relationships of [workbookDocumentTaskChange](../resources/workbookdocumenttaskchange.md) object. |
+| [List workbookDocumentTaskChanges](../api/workbookdocumenttask-list-changes.md) | [workbookDocumentTaskChange](workbookdocumenttaskchange.md) collection | Get a list of [workbookDocumentTaskChange](workbookdocumenttaskchange.md) objects. |
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |assignee|[workbookEmailIdentity](workbookemailidentity.md)|The user identity the task is assigned to. Only present when the **type** property is `assign`. Nullable.|
