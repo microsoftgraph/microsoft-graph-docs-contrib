@@ -25,7 +25,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 - Device intent settings
 - Device management
 - Electronic SIM (ESIM)
-
 - Group Policy Analytics
 - Notifications
 - Onboarding policies, settings, and details
@@ -141,7 +140,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/userExperienceAnalyticsDeviceStartupHistory.md) collection|User experience analytics device Startup History|
 |userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/userExperienceAnalyticsDeviceStartupProcess.md) collection|User experience analytics device Startup Processes|
 |userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/userExperienceAnalyticsDeviceStartupProcessPerformance.md) collection|User experience analytics device Startup Process Performance|
-|userExperienceAnalyticsStartupScoreHistory|userExperienceAnalyticsStartupScoreHistory collection|User experience analytics device Startup Score History|
 |**Enrollment**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) collection|This collections of multiple DEP tokens per-tenant.|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|The imported device identities.|
@@ -151,9 +149,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|The Windows autopilot account settings.|
 |**Embedded SIM**|
 |embeddedSIMActivationCodePools|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) collection|The embedded SIM activation code pools created by this account.|
-
-
-
 |**Group Policy Analytics**|
 |groupPolicyMigrationReports|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) collection|A list of Group Policy migration reports.|
 |**MicrosoftTunnel**|
@@ -191,8 +186,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Reports singleton|
 |**Software Update**|
 |windowsFeatureUpdateProfiles|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) collection|A collection of windows feature update profiles|
-
-
 |**Troubleshooting**|
 |troubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) collection|The list of troubleshooting events for the tenant.|
 |**Windows Information Protection**|
