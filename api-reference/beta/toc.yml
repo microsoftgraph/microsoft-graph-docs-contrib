@@ -13696,8 +13696,10 @@ items:
               - name: Data policy operation
                 href: resources/datapolicyoperation.md
                 items:
-                  - name: Get data policy operation
+                  - name: Get
                     href: api/datapolicyoperation-get.md
+                  - name: Export personal data
+                    href: api/user-exportpersonaldata.md
               - name: Delegated permission grant
                 href: resources/oauth2permissiongrant.md
                 items:
