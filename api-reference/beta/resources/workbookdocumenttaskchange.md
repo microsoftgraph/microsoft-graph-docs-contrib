@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 |startDateTime|DateTimeOffset|The start date and time for the task. Only present when the **type** property is `setSchedule`. Nullable. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |title|String|The title of the task. Only present when the **type** property is `setTitle`. Nullable.|
 |type|String|The type of the change history. Possible values are: `create`, `assign`, `unassign`, `unassignAll`, `setPriority`, `setTitle`, `setPercentComplete`, `setSchedule`, `remove`, `restore`, `undo`. |
-|undoChangeId|String| The ID of the **workbookDocumentTaskChange** that was undone for the `undo` change action. Only exists on undo change history. Nullable.|
+|undoChangeId|String| The ID of the **workbookDocumentTaskChange** that was undone for the `undo` change action. Only exists on an undo change history. Nullable.|
 
 ## Relationships
 
