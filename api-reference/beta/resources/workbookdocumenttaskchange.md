@@ -1,6 +1,6 @@
 ---
 title: "workbookDocumentTaskChange resource type"
-description: "Represents a task change history"
+description: "Represents a task change history of a workbookDocumentTask."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
 ms.prod: "excel"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a task change history of a [workbookDocumentTask](workbookdocumenttask.md)
+Represents a task change history of a [workbookDocumentTask](workbookdocumenttask.md).
 
 Inherits from [entity](../resources/entity.md).
 
