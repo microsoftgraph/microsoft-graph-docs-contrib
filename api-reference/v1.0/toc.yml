@@ -5639,7 +5639,7 @@ items:
                         href: api/accesspackageassignment-filterbycurrentuser.md
                       - name: Reprocess
                         href: api/accesspackageassignment-reprocess.md
-                  - name: Access package assignment request approval
+                  - name: Access package assignment approval
                     items:
                       - name: Approval
                         href: resources/approval.md

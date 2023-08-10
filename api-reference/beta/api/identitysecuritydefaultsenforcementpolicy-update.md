@@ -2,7 +2,7 @@
 title: "Update identitySecurityDefaultsEnforcementPolicy"
 description: "Update the properties of an identitySecurityDefaultsEnforcementPolicy object."
 ms.localizationpriority: medium
-author: "rohinigoyal1"
+author: "Sammak"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

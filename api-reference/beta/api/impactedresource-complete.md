@@ -3,7 +3,7 @@ title: "impactedResource: complete"
 description: "Complete an impactedResource object and update its status to completedByUser."
 author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
