@@ -2,7 +2,7 @@
 title: "Get accessReview (deprecated)"
 description: "In the Azure AD access reviews feature, retrieve an accessReview object."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
