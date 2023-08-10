@@ -31,10 +31,6 @@ In the following diagram, you can see various types of Microsoft 365 data that o
 
 Learn more for the full list of datasets we offer at Microsoft Graph Data Connect: [Datasets, regions, and sinks supported by Microsoft Graph Data Connect](/graph/data-connect-datasets).
 
-![An image that shows various types of Microsoft 365 data that organizations get though Microsoft Graph Data Connect.](images/data-connect-continuing-growth.png)
-
-<!--- Update image above with more current one per Rishi
--->
 Microsoft 365 datasets come ready for analysis. You can have data delivered in the following categories:  
 
 - **Basic datasets:** Datasets generated from raw customer created content and inputs from Microsoft 365 applications and services. 
@@ -95,9 +91,6 @@ Templates help take use cases from hypothesis to implementation in four steps:
 3. Follow the industry standard for data privacy and confidentially, with support for critical data protection regulations such as GDPR and HIPAA.
 
 Learn about our security, governance, and privacy: [Security, governance and privacy built into Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/security-governance-and-privacy-built-into-microsoft-graph-data-connect/)
-
-<!--- Read our detailed e-book about our out-of-the box capabilities: MGDC governance, security, privacy eBook_VFinal.pdf (link provided is SharePoint restricted)
--->
 
 Now you can bring all your Microsoft 365 data into [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Microsoft 365 Data Integration for Microsoft Fabric is a feature of the new Microsoft Fabric solution, which enables you to manage your Microsoft 365 alongside your other data sources in one place. This solution offers you a suite of analytical experiences that seamlessly work together to transform your data into a competitive advantage.
 
