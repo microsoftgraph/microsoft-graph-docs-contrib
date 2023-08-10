@@ -33,7 +33,7 @@ Represents a reply to an excel comment.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|task|[workbookDocumentTask](workbookdocumenttask.md)|Task associated with the comment thread|
+|task|[workbookDocumentTask](workbookdocumenttask.md)|The task associated with the comment thread.|
 
 ## JSON representation
 
