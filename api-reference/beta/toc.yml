@@ -18238,10 +18238,17 @@ items:
                 href: api/nameditem-add.md
               - name: List range
                 href: api/nameditem-range.md
-          - name: Workbook Document Task
+          - name: Workbook document task
             href: resources/workbookdocumenttask.md
             items:
-              - name: List Task Changes
-                href: api/workbookdocumenttask-list-changes.md
-          - name: Workbook Document Task Change
+              - name: List
+                href: api/workbookworksheet-list-tasks.md
+              - name: Get
+                href: api/workbookdocumenttask-get.md
+          - name: Workbook document task change
             href: resources/workbookdocumenttaskchange.md
+            items:
+              - name: List
+                href: api/workbookdocumenttask-list-changes.md
+              - name: Get
+                href: api/workbookdocumenttaskchange-get
