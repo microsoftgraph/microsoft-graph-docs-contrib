@@ -1,5 +1,5 @@
 ---
-title: "List changes"
+title: "List workbookDocumentTaskChanges"
 description: "Get a list of workbookDocumentTaskChange objects."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List changes
+# List workbookDocumentTaskChanges
 
 Namespace: microsoft.graph
 
