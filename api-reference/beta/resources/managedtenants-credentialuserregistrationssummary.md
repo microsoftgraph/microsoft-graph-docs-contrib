@@ -36,6 +36,7 @@ Represents a summary of Azure Active Directory credential user registrations for
 |tenantDisplayName|String|The display name for the managed tenant. Required. Read-only.|
 |tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
 |totalUserCount|Int32|The total number of users in the given managed tenant. Optional. Read-only.|
+|tenantLicenseType|String|Indicates license type associated with tenant. Examples are: `AADFree`, `AADPremium1`, `AADPremium2`.|
 
 ## Relationships
 None.
