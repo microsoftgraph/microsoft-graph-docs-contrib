@@ -29,6 +29,8 @@ Here are some of the enterprise analytics scenarios that are possible:
 
 In the following diagram, you can see various types of Microsoft 365 data that organizations get though Microsoft Graph Data Connect. There are datasets available from a wide variety of Microsoft 365 sources, including Azure Active Directory, Outlook, Teams, SharePoint, Viva Insight, and Microsoft Groups—and the list is growing. 
 
+![An image that shows various types of Microsoft 365 data that organizations get though Microsoft Graph Data Connect.](images/data-connect-microsoft-viva-insights.png)
+
 Learn more for the full list of datasets we offer at Microsoft Graph Data Connect: [Datasets, regions, and sinks supported by Microsoft Graph Data Connect](/graph/data-connect-datasets).
 
 Microsoft 365 datasets come ready for analysis. You can have data delivered in the following categories:  
