@@ -204,6 +204,9 @@ configuration:
       - not:
           activitySenderHasAssociation:
             association: MEMBER
+      - not:
+          isActivitySender:
+            user: graph-github-task-automation[bot]
       - isAction:
           action: Opened
       then:
