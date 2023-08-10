@@ -201,6 +201,7 @@ configuration:
           bodyContains:
             pattern: 'Content Source:'
             isRegex: False
+      - not:
           activitySenderHasAssociation:
             association: MEMBER
       - isAction:
