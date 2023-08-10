@@ -66,7 +66,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_virtualeventsessions"
+  "name": "list_virtualeventsessions",
+  "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd"]
 }
 -->
 ``` http
