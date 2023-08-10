@@ -38,7 +38,8 @@ Initializing the MSAL2 provider in HTML is the simplest way to create a new prov
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | client-id                    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |
 | login-type                   | Enumeration between `redirect` and `popup` - default value is `redirect`. Optional.                                                                                                                                                                                   |
-| scopes                       | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                     |
+| scopes                       | Comma separated strings for scopes the user must consent to on sign in.   Optional.
+| custom-hosts                 | Comma seperated strings for domains the graph client can additional call.      Optional.                                                                                                                                                                                     |
 | authority                    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | redirect-uri                 | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
 | prompt                       | Type of prompt to use for login, between ```SELECT_ACCOUNT```, ```CONSENT``` and ```LOGIN```. Default is ```SELECT_ACCOUNT```. Optional.
@@ -67,6 +68,7 @@ This option makes sense when the Microsoft Graph Toolkit is responsible for all 
 interface Msal2Config {
   clientId: string;
   scopes?: string[];
+  customHosts?: string[];
   authority?: string;
   redirectUri?: string;
   loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
@@ -89,6 +91,7 @@ Be sure to understand opportunities for collisions when using this option. By it
 interface Msal2PublicClientApplicationConfig {
   publicClientApplication: PublicClientApplication;
   scopes?: string[];
+  customHosts?: string[];
   authority?: string;
   redirectUri?: string;
   loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
@@ -129,6 +132,34 @@ Alternatively:
 ```
 
 Then use the toolkit as usual.
+
+#### Use custom hosts to call different EntraID secured endpoints
+
+If you want to call your own custom EntraID secured endpoints you will need to pass those domains to the underlying Graph client
+
+```ts
+import {Providers, Msal2Provider} from '@microsoft/mgt'
+
+const config: Msal2Config = {
+  clientId: '2dfea037-xxx-c05708a1b241',
+  customHosts: ['mydomain.com'] //array of domains, not urls!
+  ... // rest of the config
+}
+
+Providers.globalProvider = new Msal2Provider(config);
+```
+
+Alternatively:
+
+```html
+<mgt-msal2-provider
+      client-id="2dfea037-xxx-c05708a1b241"
+      redirect-uri="http://localhost:3000"
+      custom-hosts="mydomain.com"
+      scopes="user.read,user.read.all">
+</mgt-msal2-provider>
+```
+
 
 ## Creating an app/client ID
 

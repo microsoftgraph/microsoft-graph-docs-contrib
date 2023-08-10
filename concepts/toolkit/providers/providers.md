@@ -73,6 +73,29 @@ Providers.globalProvider = new Msal2Provider({
 
 You can find the list of permission scopes required by each component in the **Microsoft Graph permissions** section of each component's documentation page.
 
+## Custom Hosts
+
+You can specify custom hosts for graph client, allowing you to call those non-Graph EntraID secured apis. **Make sure you request the scope for the access token**
+
+```HTML
+<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
+<mgt-msal2-provider client-id="YOUR_CLIENT_ID"
+                    custom-hosts="myapi.com,anotherapi.com"
+></mgt-msal2-provider>
+```
+
+If you're initializing the provider in code, provide the host names in an array in the `customHosts` property.
+
+```js
+import {Providers, Msal2Provider } from "@microsoft/mgt";
+Providers.globalProvider = new Msal2Provider({
+  clientId: 'YOUR_CLIENT_ID',
+  customHosts: ['myapi.com','anotherapi.com']
+});
+```
+
+Note: these are host names, not Uris.
+
 ## Provider state
 
 The provider keeps track of the user's authentication state and communicates it to the components. For example, when a user successfully signs in, the `ProviderState` is updated to `SignedIn`, signaling to the components that they are now able to make calls to Microsoft Graph. The `ProviderState` enum defines three states, as shown.
