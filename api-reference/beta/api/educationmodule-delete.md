@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an existing module. Only teachers within a class can delete modules.
+Delete an existing [module](../resources/educationmodule.md) in a [class](../resources/educationclass.md). Only teachers within a class can delete modules.
 
 ## Permissions
 

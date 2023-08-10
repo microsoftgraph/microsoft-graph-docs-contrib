@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an [education module resource](../resources/educationmoduleresource.md). Only teachers can perform this operation.
+Update an [education resource](../resources/educationmoduleresource.md) in a [module](../resources/educationmodule.md). Only teachers can perform this operation.
 
 The only one property that can be updated is **displayName**, for all type of resources.
 

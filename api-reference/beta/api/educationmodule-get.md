@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [module](../resources/educationModule.md). Only teachers, students, and applications with application permissions can perform this operation.
 
-Students can only see publiched modules; teachers and applications with application permissions can see all modules in a class.
+Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,7 +33,7 @@ GET /education/classes/{id}/modules/{id}
 ```
 
 ## Optional query parameters
-This method supports the  `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the  `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Header       | Value |

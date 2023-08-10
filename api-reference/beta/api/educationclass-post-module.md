@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new module.
+Create a new [module](../resources/educationmodule.md) in a [class](../resources/educationclass.md).
 
 Only teachers in a class can create a module. Modules start in the Draft state, which means that students will not see the modules until publication.
 

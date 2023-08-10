@@ -32,7 +32,7 @@ GET /education/classes/{id}/modules/{id}/resources
 
 ## Optional query parameters
 
-For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers

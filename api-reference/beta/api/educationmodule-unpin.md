@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unpin an educationModule in the classwork list. Update the **isPinned** property to **false** for an [educationModule](../resources/educationmodule.md).
+Unpin an [educationModule](../resources/educationmodule.md) in the classwork list. This action sets the **isPinned** property to **false** for an [educationModule](../resources/educationmodule.md).
 
 Only teachers in the class can perform this operation.
 
