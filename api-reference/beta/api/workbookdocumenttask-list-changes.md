@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [workbookDocumentTaskChange](workbookdocumenttaskchange.md) objects.
+Get a list of [workbookDocumentTaskChange](../resources/workbookdocumenttaskchange.md) objects.
 
 ## Permissions
 
