@@ -5,10 +5,10 @@
         {
           "Id": "b6dc9e4b-3c6d-4946-be20-90fac94839c2",
           "ApiChange": "Method",
-          "ChangedApiName": "virtualEvent",
+          "ChangedApiName": "virtualEventSession",
           "ChangeType": "Addition",
           "Description": "Added the [LIST](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrant-list?view=graph-rest-beta) operation to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
-          "Target": "virtualEvent"
+          "Target": "virtualEventSession"
         }
       ],
       "Id": "b6dc9e4b-3c6d-4946-be20-90fac94839c2",
