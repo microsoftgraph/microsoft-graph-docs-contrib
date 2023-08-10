@@ -68,12 +68,12 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/D5667D8C-B81
 ### Response
 
 The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookDocumentTaskChange",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.workbookDocumentTaskChange)"
 } -->
 ```http
 HTTP/1.1 200 OK
