@@ -2187,9 +2187,9 @@ items:
             href: resources/intune-graph-overview.md
             displayName: Intune
             items:
-              - name: App management
-                href: resources/intune-app-conceptual.md
-                items:
+            - name: App management
+              href: resources/intune-app-conceptual.md
+              items:
               - name: Android device owner enrollment mode
                 href: resources/intune-androidforwork-androiddeviceownerenrollmentmode.md
               - name: Android device owner enrollment profile

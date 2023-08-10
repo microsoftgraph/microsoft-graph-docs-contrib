@@ -49,9 +49,9 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|userPrincipalName|String|Not yet documented|
-|addressableUserName|String|Not yet documented|
-|resourceAccountName|String|Not yet documented|
+|userPrincipalName|String||
+|addressableUserName|String||
+|resourceAccountName|String||
 
 
 
