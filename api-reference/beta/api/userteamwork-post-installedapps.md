@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 > [!NOTE]
-> If you want your app to install, get, upgrade, and remove any app for the user, you must use `TeamsAppInstallation.ReadWriteForUser` permissions.
+> If you want your app to install, get, upgrade, or remove an app for the user, you must use the `TeamsAppInstallation.ReadWriteForUser` permission.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
