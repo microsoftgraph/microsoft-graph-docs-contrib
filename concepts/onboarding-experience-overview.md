@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Graph onboarding experience overview"
-description: "Presenting customers with an improved overall Microsoft Graph Data Connect onboarding experience."
+title: "Microsoft Graph Data Connect onboarding experience"
+description: "Learn about the updated onboarding experience for Microsoft Graph Data Connect."
 author: "michaelvenables"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ---
 
-# Microsoft Graph onboarding experience
+# Microsoft Graph Data Connect onboarding experience
 
 Microsoft Graph Data Connect has a simplified onboarding experience—featuring an improved app registration and app authorization experience, and detailed guidance for migrating existing customers to the new Data Connect experience.
 
-Data Connect is moving from a just-in-time authorization model utilizing Privileged access management (PAM) to a pre-authorization experience decoupled from PAM. In this updated experience, data movements are authorized before pipelines are executed.
+This article describes the simplified onboarding experience for Microsoft Graph Data Connect. Customers who currently use the Privileged Access Management (PAM) authorization model can migrate to the simplified experience in which data transfers are authorized before the pipelines run.
 <!-- Graphic need to be updated without links. -->
 ![Graphic showing the improved onboarding experience for Microsoft Graph Data Connect customers.](images/new-mgdc-onboarding-flow.png)
 
@@ -44,6 +44,6 @@ If your tenant enabled Data Connect on the Microsoft 365 Admin Center after &lt;
 
 If you're able to access the experience shown **without the highlighted warning** "You are still using the legacy Privileged Access management Microsoft Graph Data Connect consent experience. Please enable the new consent experience for MGDC enterprise apps," your tenant is making use of the new experience.
 
-![The highlighted warning displayed for users if their organization is not using the new tenant experience.](images/M365-admin-center-highlighted-warning.png)
+![The highlighted warning displayed for users if their organization is not using the new tenant experience.](./images/M365-admin-center-highlighted-warning.png)
 
 If you see your tenant is not using the new experience and want to migrate, see the [updated guidance for existing customer migration](./existing-customer-migration.md)**.
