@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/appcatalogs"
+	  graphappcatalogs "github.com/microsoftgraph/msgraph-beta-sdk-go/appcatalogs"
 	  //other-imports
 )
 
@@ -16,12 +16,12 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestRequiresreview := true
+requestRequiresReview := "true"
 
-requestParameters := &graphconfig.AppCatalogsTeamsAppsRequestBuilderPostQueryParameters{
-	Requiresreview: &requestRequiresreview,
+requestParameters := &graphappcatalogs.AppCatalogsTeamsAppsRequestBuilderPostQueryParameters{
+	RequiresReview: &requestRequiresReview,
 }
-configuration := &graphconfig.AppCatalogsTeamsAppsRequestBuilderPostRequestConfiguration{
+configuration := &graphappcatalogs.AppCatalogsTeamsAppsRequestBuilderPostRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

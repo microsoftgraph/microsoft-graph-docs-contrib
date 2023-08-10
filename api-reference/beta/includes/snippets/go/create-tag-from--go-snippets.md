@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//ediscovery"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewTag()
+requestBody := graphmodelsediscovery.NewTag()
 displayName := "Privileged"
 requestBody.SetDisplayName(&displayName) 
 description := "The document is privileged"
@@ -25,7 +25,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Tags().Post(context.Background(), requestBody, nil)
+tags, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Tags().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -10,7 +10,7 @@ import (
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/planner"
+	  graphplanner "github.com/microsoftgraph/msgraph-sdk-go/planner"
 	  //other-imports
 )
 
@@ -21,14 +21,14 @@ headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
 headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-configuration := &graphconfig.PlannerBucketItemRequestBuilderPatchRequestConfiguration{
+configuration := &graphplanner.PlannerBucketItemRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewPlannerBucket()
 name := "Development"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Planner().Buckets().ByBucketId("plannerBucket-id").Patch(context.Background(), requestBody, configuration)
+buckets, err := graphClient.Planner().Buckets().ByPlannerBucketId("plannerBucket-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

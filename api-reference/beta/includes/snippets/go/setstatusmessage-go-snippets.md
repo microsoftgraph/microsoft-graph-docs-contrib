@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Users/Item/Presence/SetStatusMessage"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSetStatusMessagePostRequestBody()
+requestBody := graphusers.NewSetStatusMessagePostRequestBody()
 statusMessage := graphmodels.NewPresenceStatusMessage()
 message := graphmodels.NewItemBody()
 content := "Hey I'm currently in a meeting."

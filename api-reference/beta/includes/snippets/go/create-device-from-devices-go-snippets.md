@@ -31,7 +31,6 @@ alternativeSecurityId.SetKey(&key)
 
 alternativeSecurityIds := []graphmodels.AlternativeSecurityIdable {
 	alternativeSecurityId,
-
 }
 requestBody.SetAlternativeSecurityIds(alternativeSecurityIds)
 approximateLastSignInDateTime , err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
@@ -43,7 +42,7 @@ requestBody.SetDeviceMetadata(&deviceMetadata)
 deviceVersion := int32(99)
 requestBody.SetDeviceVersion(&deviceVersion) 
 
-result, err := graphClient.Devices().Post(context.Background(), requestBody, nil)
+devices, err := graphClient.Devices().Post(context.Background(), requestBody, nil)
 
 
 ```

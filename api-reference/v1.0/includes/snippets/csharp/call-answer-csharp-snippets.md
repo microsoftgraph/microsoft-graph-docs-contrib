@@ -11,15 +11,10 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new Microsoft.Graph.Communications.Calls.Item.Answer.AnswerPostRequestBody
 {
 	CallbackUri = "callbackUri-value",
-	MediaConfig = new MediaConfig
+	MediaConfig = new AppHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.appHostedMediaConfig",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"blob" , "<Media Session Configuration Blob>"
-			},
-		},
+		Blob = "<Media Session Configuration Blob>",
 	},
 	AcceptedModalities = new List<Modality?>
 	{

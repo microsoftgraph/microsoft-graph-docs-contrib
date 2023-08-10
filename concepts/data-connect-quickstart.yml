@@ -31,15 +31,15 @@ items:
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-04.md)]
  
-  - title: Create an application and set it up with Microsoft Graph Data Connect
-    durationInMinutes: 15
-    content: |
-      [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
- 
   - title: Set up your Azure resource with Azure Synapse or Azure Data Factory
     durationInMinutes: 15
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-06.md)]
+      
+  - title: Monitor data consent requests with Microsoft 365 Admin Center or PowerShell
+    durationInMinutes: 5
+    content: |
+      [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
 
   - title: Congratulations!
     durationInMinutes: 0

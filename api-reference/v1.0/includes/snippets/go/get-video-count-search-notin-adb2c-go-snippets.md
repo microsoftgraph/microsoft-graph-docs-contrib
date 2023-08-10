@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
 	  //other-imports
 )
 
@@ -23,17 +23,17 @@ headers.Add("ConsistencyLevel", "eventual")
 requestSearch := "\"displayName:Video\" OR \"description:prod\""
 requestCount := true
 
-requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.GroupsRequestBuilderGetQueryParameters{
 	Search: &requestSearch,
 	Orderby: [] string {"displayName"},
 	Count: &requestCount,
 }
-configuration := &graphconfig.GroupsRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Groups().Get(context.Background(), configuration)
+groups, err := graphClient.Groups().Get(context.Background(), configuration)
 
 
 ```

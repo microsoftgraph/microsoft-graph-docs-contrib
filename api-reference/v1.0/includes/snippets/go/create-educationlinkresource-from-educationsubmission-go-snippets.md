@@ -16,16 +16,14 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationSubmissionResource()
-resource := graphmodels.NewEducationResource()
+resource := graphmodels.NewEducationLinkResource()
 displayName := "Wikipedia"
 resource.SetDisplayName(&displayName) 
-additionalData := map[string]interface{}{
-	"link" : "https://en.wikipedia.org/wiki/Main_Page", 
-}
-resource.SetAdditionalData(additionalData)
+link := "https://en.wikipedia.org/wiki/Main_Page"
+resource.SetLink(&link) 
 requestBody.SetResource(resource)
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Submissions().BySubmissionId("educationSubmission-id").Resources().Post(context.Background(), requestBody, nil)
+resources, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Submissions().ByEducationSubmissionId("educationSubmission-id").Resources().Post(context.Background(), requestBody, nil)
 
 
 ```

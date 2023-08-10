@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Calendar
+Import-Module Microsoft.Graph.Beta.Calendar
 
 $params = @{
 	"@odata.type" = "microsoft.graph.openTypeExtension"
@@ -14,6 +14,6 @@ $params = @{
 	expirationDate = "2015-07-03T13:04:00.000Z"
 }
 
-New-MgGroupEventExtension -GroupId $groupId -EventId $eventId -BodyParameter $params
+New-MgBetaGroupEventExtension -GroupId $groupId -EventId $eventId -BodyParameter $params
 
 ```

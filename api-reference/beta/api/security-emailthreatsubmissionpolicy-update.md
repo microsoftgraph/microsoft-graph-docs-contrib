@@ -74,7 +74,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_emailthreatsubmissionpolicy"
+  "name": "update_emailthreatsubmissionpolicy",
+  "sampleKeys": ["DefaultReportSubmissionPolicy"]
 }
 -->
 ``` http
@@ -106,8 +107,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-emailthreatsubmissionpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-emailthreatsubmissionpolicy-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-emailthreatsubmissionpolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

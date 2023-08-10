@@ -94,6 +94,10 @@ DELETE https://graph.microsoft.com/beta/identity/apiConnectors/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-identityapiconnector-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-identityapiconnector-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

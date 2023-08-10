@@ -7,16 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new AuthenticationMethodConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.voiceAuthenticationMethodConfiguration');
+$requestBody = new VoiceAuthenticationMethodConfiguration();
+$requestBody->setOdataType('#microsoft.graph.voiceAuthenticationMethodConfiguration');
 
-$additionalData = [
-		'isOfficePhoneAllowed' => 'false', 
-];
-$requestBody->setAdditionalData($additionalData);
-
+$requestBody->setIsOfficePhoneAllowed(false);
 
 
 

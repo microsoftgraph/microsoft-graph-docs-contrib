@@ -11,18 +11,13 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
 {
 	OdataType = "#microsoft.graph.windowsUpdates.deployment",
-	Content = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeployableContent
+	Content = new Microsoft.Graph.Beta.Models.WindowsUpdates.CatalogContent
 	{
 		OdataType = "#microsoft.graph.windowsUpdates.catalogContent",
-		AdditionalData = new Dictionary<string, object>
+		CatalogEntry = new Microsoft.Graph.Beta.Models.WindowsUpdates.FeatureUpdateCatalogEntry
 		{
-			{
-				"catalogEntry" , new 
-				{
-					OdataType = "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
-					Id = "f341705b-0b15-4ce3-aaf2-6a1681d78606",
-				}
-			},
+			OdataType = "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+			Id = "f341705b-0b15-4ce3-aaf2-6a1681d78606",
 		},
 	},
 	Settings = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeploymentSettings
@@ -30,7 +25,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
 		OdataType = "microsoft.graph.windowsUpdates.deploymentSettings",
 		Schedule = new Microsoft.Graph.Beta.Models.WindowsUpdates.ScheduleSettings
 		{
-			GradualRollout = new Microsoft.Graph.Beta.Models.WindowsUpdates.GradualRolloutSettings
+			GradualRollout = new Microsoft.Graph.Beta.Models.WindowsUpdates.RateDrivenRolloutSettings
 			{
 				OdataType = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
 				DurationBetweenOffers = TimeSpan.Parse("P7D"),

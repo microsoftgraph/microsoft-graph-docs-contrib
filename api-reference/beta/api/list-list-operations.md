@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-richlongrunningoperation-for-site-and-specific-list-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-richlongrunningoperation-for-site-and-specific-list-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -38,15 +38,15 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /drives/{drive-id}/items/{item-id}/assignSensitivityLabel
-POST /drives/{drive-id}/root:/{item-path}/assignSensitivityLabel
+POST /drives/{drive-id}/root:/{item-path}:/assignSensitivityLabel
 POST /groups/{group-id}/drive/items/{item-id}/assignSensitivityLabel
-POST /groups/{group-id}/drive/root:/{item-path}/assignSensitivityLabel
+POST /groups/{group-id}/drive/root:/{item-path}:/assignSensitivityLabel
 POST /me/drive/items/{item-id}/assignSensitivityLabel
-POST /me/drive/root:/{item-path}/assignSensitivityLabel
+POST /me/drive/root:/{item-path}:/assignSensitivityLabel
 POST /sites/{site-id}/drive/items/{item-id}/assignSensitivityLabel
-POST /sites/{site-id}/drive/root:/{item-path}/assignSensitivityLabel
+POST /sites/{site-id}/drive/root:/{item-path}:/assignSensitivityLabel
 POST /users/{user-id}/drive/items/{item-id}/assignSensitivityLabel
-POST /users/{user-id}/drive/root:/{item-path}/assignSensitivityLabel
+POST /users/{user-id}/drive/root:/{item-path}:/assignSensitivityLabel
 ```
 
 ## Request headers

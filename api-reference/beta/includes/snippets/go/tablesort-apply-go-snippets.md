@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Drives/Item/Items/Item/Workbook/Tables/Item/Sort/Apply"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewApplyPostRequestBody()
+requestBody := graphdrives.NewApplyPostRequestBody()
 
 
 workbookSortField := graphmodels.NewWorkbookSortField()
@@ -38,7 +39,6 @@ workbookSortField.SetIcon(icon)
 
 fields := []graphmodels.WorkbookSortFieldable {
 	workbookSortField,
-
 }
 requestBody.SetFields(fields)
 matchCase := true
@@ -46,7 +46,7 @@ requestBody.SetMatchCase(&matchCase)
 method := "method-value"
 requestBody.SetMethod(&method) 
 
-graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Sort().Apply().Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().ByWorkbookTableId("workbookTable-id").Sort().Apply().Post(context.Background(), requestBody, nil)
 
 
 ```

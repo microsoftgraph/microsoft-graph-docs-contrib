@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationCo
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-identity-conditionalaccess-authenticationcontextclassreferences-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-identity-conditionalaccess-authenticationcontextclassreferences-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

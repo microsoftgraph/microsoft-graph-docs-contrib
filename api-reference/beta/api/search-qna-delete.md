@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/search/qnas/{qnaId}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-qna-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-qna-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -60,7 +60,7 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_conversation_member_2"
+  "name": "conversation_member__get2"
 }-->
 
 ```http
@@ -77,7 +77,6 @@ Here is an example of the response.
 {
   "blockType": "response",
   "truncated": true,
-  "name": "get_conversation_member_2",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 

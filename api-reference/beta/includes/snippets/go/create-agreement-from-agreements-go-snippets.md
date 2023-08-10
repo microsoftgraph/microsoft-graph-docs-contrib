@@ -36,11 +36,10 @@ agreementFileLocalization.SetFileData(fileData)
 
 files := []graphmodels.AgreementFileLocalizationable {
 	agreementFileLocalization,
-
 }
 requestBody.SetFiles(files)
 
-result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(context.Background(), requestBody, nil)
+agreements, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(context.Background(), requestBody, nil)
 
 
 ```

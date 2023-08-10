@@ -44,7 +44,6 @@ cloudPcDomainJoinConfiguration1.SetType(&type)
 domainJoinConfigurations := []graphmodels.CloudPcDomainJoinConfigurationable {
 	cloudPcDomainJoinConfiguration,
 	cloudPcDomainJoinConfiguration1,
-
 }
 requestBody.SetDomainJoinConfigurations(domainJoinConfigurations)
 id := "1d164206-bf41-4fd2-8424-a3192d39ffff"
@@ -66,7 +65,7 @@ requestBody.SetWindowsSettings(windowsSettings)
 provisioningType := graphmodels.DEDICATED_CLOUDPCPROVISIONINGTYPE 
 requestBody.SetProvisioningType(&provisioningType) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(context.Background(), requestBody, nil)
+provisioningPolicies, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

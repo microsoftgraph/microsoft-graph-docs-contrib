@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 
 $params = @{
 	allowedAudiences = "me"
 	displayName = "Secret Hideout"
 }
 
-Update-MgUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId -BodyParameter $params
+Update-MgBetaUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId -BodyParameter $params
 
 ```

@@ -97,6 +97,10 @@ POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2
 [!INCLUDE [sample-code](../includes/snippets/php/inboundshareduserprofile-exportpersonaldata-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/inboundshareduserprofile-exportpersonaldata-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

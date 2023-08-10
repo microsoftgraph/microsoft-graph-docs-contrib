@@ -9,18 +9,18 @@ import (
 	  "context"
 	  "time"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Directory/Recommendations/Item/Postpone"
+	  graphdirectory "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewPostponePostRequestBody()
+requestBody := graphdirectory.NewPostponePostRequestBody()
 postponeUntilDateTime , err := time.Parse(time.RFC3339, "2023-02-01T02:53:00Z")
 requestBody.SetPostponeUntilDateTime(&postponeUntilDateTime) 
 
-result, err := graphClient.Directory().Recommendations().ByRecommendationId("recommendation-id").Postpone().Post(context.Background(), requestBody, nil)
+postpone, err := graphClient.Directory().Recommendations().ByRecommendationId("recommendation-id").Postpone().Post(context.Background(), requestBody, nil)
 
 
 ```

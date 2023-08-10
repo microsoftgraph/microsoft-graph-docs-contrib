@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/contracts/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-contract-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-contract-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

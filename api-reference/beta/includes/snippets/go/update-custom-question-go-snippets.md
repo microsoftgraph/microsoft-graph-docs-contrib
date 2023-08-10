@@ -24,11 +24,10 @@ answerOptions := []string {
 	"Product Manager",
 	"Data scientist",
 	"Other",
-
 }
 requestBody.SetAnswerOptions(answerOptions)
 
-result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().CustomQuestions().ByCustomQuestionId("meetingRegistrationQuestion-id").Patch(context.Background(), requestBody, nil)
+customQuestions, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().CustomQuestions().ByMeetingRegistrationQuestionId("meetingRegistrationQuestion-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

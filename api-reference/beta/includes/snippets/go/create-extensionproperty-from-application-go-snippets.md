@@ -20,13 +20,14 @@ name := "jobGroup"
 requestBody.SetName(&name) 
 dataType := "String"
 requestBody.SetDataType(&dataType) 
+isMultiValued := true
+requestBody.SetIsMultiValued(&isMultiValued) 
 targetObjects := []string {
 	"User",
-
 }
 requestBody.SetTargetObjects(targetObjects)
 
-result, err := graphClient.Applications().ByApplicationId("application-id").ExtensionProperties().Post(context.Background(), requestBody, nil)
+extensionProperties, err := graphClient.Applications().ByApplicationId("application-id").ExtensionProperties().Post(context.Background(), requestBody, nil)
 
 
 ```

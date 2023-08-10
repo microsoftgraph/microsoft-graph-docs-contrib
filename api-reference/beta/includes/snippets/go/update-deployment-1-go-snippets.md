@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//windowsUpdates"
+	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewDeployment()
-state := graphmodels.NewDeploymentState()
+requestBody := graphmodelswindowsupdates.NewDeployment()
+state := graphmodelswindowsupdates.NewDeploymentState()
 requestedValue := graphmodels.PAUSED_REQUESTEDDEPLOYMENTSTATEVALUE 
 state.SetRequestedValue(&requestedValue) 
 requestBody.SetState(state)
 
-result, err := graphClient.Admin().Windows().Updates().Deployments().ByDeploymentId("deployment-id").Patch(context.Background(), requestBody, nil)
+deployments, err := graphClient.Admin().Windows().Updates().Deployments().ByDeploymentId("deployment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

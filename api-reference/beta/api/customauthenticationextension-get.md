@@ -86,8 +86,11 @@ GET https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/6fc
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-customauthenticationextension-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-customauthenticationextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 The following is an example of the response

@@ -1,6 +1,6 @@
 ---
 title: "directoryObject resource type"
-description: "Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types generally referred to as directory objects."
+description: "Represents an Azure Active Directory object."
 ms.localizationpriority: high
 author: "keylimesoda"
 ms.prod: "directory-management"
@@ -56,7 +56,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
@@ -81,7 +81,8 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "id": "string (identifier)"
+  "deletedDateTime": "String (timestamp)",
+  "id": "String (identifier)"
 }
 ```
 

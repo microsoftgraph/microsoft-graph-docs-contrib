@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AddMembersPostRequestBody();
-$assetsUpdatableAsset1 = new UpdatableAsset();
-$assetsUpdatableAsset1->set@odatatype('#microsoft.graph.windowsUpdates.azureADDevice');
+$assetsUpdatableAsset1 = new AzureADDevice();
+$assetsUpdatableAsset1->setOdataType('#microsoft.graph.windowsUpdates.azureADDevice');
 
 $assetsUpdatableAsset1->setId('String (identifier)');
 

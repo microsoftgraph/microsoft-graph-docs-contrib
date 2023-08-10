@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/b5
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-updatableasset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-updatableasset-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

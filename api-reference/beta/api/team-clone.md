@@ -67,13 +67,16 @@ POST /teams/{id}/clone
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |A comma-separated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group. If the team being cloned is an **educationClass** team, the visibility parameter is ignored, and the new group's visibility will be set to HiddenMembership.|
 
+> [!NOTE]
+> If the **description** property isn't specified in the request body, it takes the value of the **displayName** property from the request payload.
+
 ## Response
 
 If successful, this method will return a `202 Accepted` response code with a Location: header pointing to the [operation](../resources/teamsasyncoperation.md) resource.
 When the operation is complete, the operation resource will tell you the id of the created team.
 
 ## Example
-#### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -118,9 +121,13 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/clone-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/clone-team-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### Response
+### Response
 The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
@@ -145,4 +152,6 @@ Content-Length: 0
 }
 -->
 
+## See also
 
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

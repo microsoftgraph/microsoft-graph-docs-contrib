@@ -51,6 +51,9 @@ var requestBody = new ChatMessage
 	Reactions = new List<ChatMessageReaction>
 	{
 	},
+	MessageHistory = new List<ChatMessageHistoryItem>
+	{
+	},
 };
 var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"].PatchAsync(requestBody);
 

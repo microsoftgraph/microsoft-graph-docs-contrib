@@ -18,6 +18,23 @@ Namespace: microsoft.graph
 |or|
 |and|
 
+### entityType values
+|Member|
+|:---|
+|event|
+|message|
+|driveItem|
+|externalItem|
+|site|
+|list|
+|listItem|
+|drive|
+|unknownFutureValue|
+|chatMessage|
+|person|
+|acronym|
+|bookmark|
+
 ### conditionalAccessExternalTenantsMembershipKind values
 
 | Member             |
@@ -56,6 +73,21 @@ Namespace: microsoft.graph
 | asymmetricKeyLifetime |
 | unknownFutureValue    |
 
+### assignmentType values
+
+| Member              | 
+| :-------------------|
+| Required            |
+| Recommeded          |
+| UnknownFutureValue  |
+
+### courseStatus values
+
+| Member             |
+| :----------------- |
+| notStarted         |
+| inProgress         |
+| completed          |
 ### userPurpose values
 | Member             |
 | :----------------- |
@@ -200,6 +232,14 @@ Namespace: microsoft.graph
 | remove             |
 | extend             |
 | renew              |
+| unknownFutureValue |
+
+### userSignInRecommendationScope values 
+
+| Member             |
+| :----------------- |
+| tenant             |
+| application        |
 | unknownFutureValue |
 
 ### unifiedRoleScheduleRequestActions values 
@@ -381,6 +421,29 @@ Namespace: microsoft.graph
 | :----------------- |
 | reviewer           |
 | unknownFutureValue |
+
+### accessPackageCustomExtensionStage values 
+
+|Member|
+|:---|
+|assignmentRequestCreated|
+|assignmentRequestApproved|
+|assignmentRequestGranted|
+|assignmentRequestRemoved|
+|assignmentFourteenDaysBeforeExpiration|
+|assignmentOneDayBeforeExpiration|
+|unknownFutureValue|
+
+### customExtensionCalloutInstanceStatus values 
+
+|Member|
+|:---|
+|calloutSent|
+|callbackReceived|
+|calloutFailed|
+|callbackTimedOut|
+|waitingForCallback|
+|unknownFutureValue|
 
 ### volumeType values
 
@@ -740,7 +803,6 @@ Namespace: microsoft.graph
 | :----------------- |
 | working            |
 | submitted          |
-| released           |
 | returned           |
 | unknownFutureValue |
 | reassigned         |
@@ -2294,7 +2356,7 @@ Possible values for user account types (group membership), per Windows definitio
 | error              |
 | unknownFutureValue |
 
-### delegatedAdminAccessContainerType values 
+### delegatedAdminAccessContainerType values
 
 | Member             |
 | :----------------- |
@@ -2495,7 +2557,7 @@ Possible values for user account types (group membership), per Windows definitio
 |pending|
 |unknownFutureValue|
 
-### chatMessageActions values 
+### chatMessageActions values
 
 |Member|
 |:---|
@@ -2503,3 +2565,350 @@ Possible values for user account types (group membership), per Windows definitio
 |reactionRemoved|
 |actionUndefined|
 |unknownFutureValue|
+
+### attributeDefinitionMetadata values 
+
+|Member|
+|:---|
+|BaseAttributeName|
+|ComplexObjectDefinition|
+|IsContainer|
+|IsCustomerDefined|
+|IsDomainQualified|
+|LinkPropertyNames|
+|LinkTypeName|
+|MaximumLength|
+|ReferencedProperty|
+
+### attributeFlowBehavior values 
+
+|Member|
+|:---|
+|FlowWhenChanged|
+|FlowAlways|
+
+### attributeFlowType values 
+
+| Member            |
+| :---------------- |
+| Always            |
+| ObjectAddOnly     |
+| MultiValueAddOnly |
+| ValueAddOnly      |
+| AttributeAddOnly  |
+
+### attributeMappingSourceType values 
+
+| Member    |
+| :-------- |
+| Attribute |
+| Constant  |
+| Function  |
+
+### directoryDefinitionDiscoverabilities values
+
+| Member              |
+| :------------------ |
+| None                |
+| AttributeNames      |
+| AttributeDataTypes  |
+| AttributeReadOnly   |
+| ReferenceAttributes |
+| UnknownFutureValue  |
+
+### attributeType values
+
+| Member    |
+| :-------- |
+| String    |
+| Integer   |
+| Reference |
+| Binary    |
+| Boolean   |
+| DateTime  |
+
+### mutability values
+
+| Member    |
+| :-------- |
+| ReadWrite |
+| ReadOnly  |
+| Immutable |
+| WriteOnly |
+
+### objectDefinitionMetadata values 
+
+|Member|
+|:---|
+|PropertyNameAccountEnabled|
+|PropertyNameSoftDeleted|
+|IsSoftDeletionSupported|
+|IsSynchronizeAllSupported|
+|ConnectorDataStorageRequired|
+|Extensions|
+|BaseObjectName|
+
+### objectFlowTypes values
+
+|Member|
+|:---|
+|None|
+|Add|
+|Update|
+|Delete|
+
+### objectMappingMetadata values
+
+|Member|
+|:---|
+|EscrowBehavior|
+|DisableMonitoringForChanges|
+|OriginalJoiningProperty|
+|Disposition|
+|IsCustomerDefined|
+|ExcludeFromReporting|
+|Unsynchronized|
+
+### synchronizationMetadata values 
+
+|Member|
+|:---|
+|GalleryApplicationIdentifier|
+|GalleryApplicationKey|
+|IsOAuthEnabled|
+|IsSynchronizationAgentAssignmentRequired|
+|IsSynchronizationAgentRequired|
+|IsSynchronizationInPreview|
+|OAuthSettings|
+|SynchronizationLearnMoreIbizaFwLink|
+|ConfigurationFields|
+
+### synchronizationSecret values
+
+| Member                          |
+| :------------------------------ |
+| None                            |
+| UserName                        |
+| Password                        |
+| SecretToken                     |
+| AppKey                          |
+| BaseAddress                     |
+| ClientIdentifier                |
+| ClientSecret                    |
+| SingleSignOnType                |
+| Sandbox                         |
+| Url                             |
+| Domain                          |
+| ConsumerKey                     |
+| ConsumerSecret                  |
+| TokenKey                        |
+| TokenExpiration                 |
+| Oauth2AccessToken               |
+| Oauth2AccessTokenCreationTime   |
+| Oauth2RefreshToken              |
+| SyncAll                         |
+| InstanceName                    |
+| Oauth2ClientId                  |
+| Oauth2ClientSecret              |
+| CompanyId                       |
+| UpdateKeyOnSoftDelete           |
+| SynchronizationSchedule         |
+| SystemOfRecord                  |
+| SandboxName                     |
+| EnforceDomain                   |
+| SyncNotificationSettings        |
+| SkipOutOfScopeDeletions         |
+| Oauth2AuthorizationCode         |
+| Oauth2RedirectUri               |
+| ApplicationTemplateIdentifier   |
+| Oauth2TokenExchangeUri          |
+| Oauth2AuthorizationUri          |
+| AuthenticationType              |
+| Server                          |
+| PerformInboundEntitlementGrants |
+| HardDeletesEnabled              |
+| SyncAgentCompatibilityKey       |
+| SyncAgentADContainer            |
+| ValidateDomain                  |
+| TestReferences                  |
+| ConnectionString                |
+
+### synchronizationStatusCode values
+
+| Member        |
+| :------------ |
+| NotConfigured |
+| NotRun        |
+| Active        |
+| Paused        |
+| Quarantine    |
+
+### synchronizationTaskExecutionResult values 
+
+| Member           |
+| :--------------- |
+| Succeeded        |
+| Failed           |
+| EntryLevelErrors |
+
+### synchronizationJobRestartScope values 
+
+|Member|
+|:---|
+|None|
+|ConnectorDataStore|
+|Escrows|
+|Watermark|
+|QuarantineState|
+|Full|
+|ForceDeletes|
+
+### quarantineReason values 
+
+| Member                               |
+| :----------------------------------- |
+| EncounteredBaseEscrowThreshold       |
+| EncounteredTotalEscrowThreshold      |
+| EncounteredEscrowProportionThreshold |
+| EncounteredQuarantineException       |
+| Unknown                              |
+| QuarantinedOnDemand                  |
+| TooManyDeletes                       |
+| IngestionInterrupted                 |
+
+### synchronizationScheduleState values 
+
+| Member   |
+| :------- |
+| Active   |
+| Disabled |
+| Paused   |
+
+### scopeOperatorMultiValuedComparisonType values
+
+|Member|
+|:---|
+|All|
+|Any|
+
+### scopeOperatorType values 
+
+| Member |
+| :----- |
+| Binary |
+| Unary  |
+
+### entryExportStatus values 
+
+|Member|
+|:---|
+|Noop|
+|Success|
+|RetryableError|
+|PermanentError|
+|Error|
+
+### entrySyncOperation values 
+
+|Member|
+|:---|
+|None|
+|Add|
+|Delete|
+|Update|
+
+### scopeOperatorType values 
+
+| Member |
+| :----- |
+| Default |
+| IgnoreLookupReferenceResolutionFailure  |
+
+### synchronizationDisposition values 
+
+| Member   |
+| :------- |
+| Normal   |
+| Discard |
+| Escrow   |
+
+### outlierMemberType values 
+
+|Member|
+|:---|
+|user|
+|unknownFutureValue|
+
+### outlierContainerType values 
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+
+### authenticationMethodFeature values
+
+|Member|
+|:---|
+|ssprRegistered|
+|ssprEnabled|
+|ssprCapable|
+|passwordlessCapable|
+|mfaCapable|
+|unknownFutureValue|
+
+### featureType values
+
+|Member|
+|:---|
+|registration|
+|reset|
+|unknownFutureValue|
+
+### includedUserRoles values
+
+|Member|
+|:---|
+|all|
+|privilegedAdmin|
+|admin|
+|user|
+|unknownFutureValue|
+
+### includedUserTypes values
+
+|Member|
+|:---|
+|all|
+|member|
+|guest|
+|unknownFutureValue|
+
+### signInUserType values
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
+### userDefaultAuthenticationMethod values
+
+|Member|
+|:---|
+|push|
+|oath|
+|voiceMobile|
+|voiceAlternateMobile|
+|voiceOffice|
+|sms|
+|none|
+|unknownFutureValue|
+
+### layoutTemplateType values
+
+| Member             |
+| :----------------- |
+| default            |
+| verticalSplit      |
+| unknownFutureValue |

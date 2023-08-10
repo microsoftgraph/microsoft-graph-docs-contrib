@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationRubric();
 $requestBody->setDisplayName('Example Points Rubric');
@@ -29,14 +29,10 @@ $levelsRubricLevel1Description->setContentType(new BodyType('text'));
 
 
 $levelsRubricLevel1->setDescription($levelsRubricLevel1Description);
-$levelsRubricLevel1Grading = new EducationAssignmentGradeType();
-$levelsRubricLevel1Grading->set@odatatype('#microsoft.graph.educationAssignmentPointsGradeType');
+$levelsRubricLevel1Grading = new EducationAssignmentPointsGradeType();
+$levelsRubricLevel1Grading->setOdataType('#microsoft.graph.educationAssignmentPointsGradeType');
 
-$additionalData = [
-		'maxPoints' => 2,
-];
-$levelsRubricLevel1Grading->setAdditionalData($additionalData);
-
+$levelsRubricLevel1Grading->setMaxPoints(2);
 
 
 $levelsRubricLevel1->setGrading($levelsRubricLevel1Grading);
@@ -52,14 +48,10 @@ $levelsRubricLevel2Description->setContentType(new BodyType('text'));
 
 
 $levelsRubricLevel2->setDescription($levelsRubricLevel2Description);
-$levelsRubricLevel2Grading = new EducationAssignmentGradeType();
-$levelsRubricLevel2Grading->set@odatatype('#microsoft.graph.educationAssignmentPointsGradeType');
+$levelsRubricLevel2Grading = new EducationAssignmentPointsGradeType();
+$levelsRubricLevel2Grading->setOdataType('#microsoft.graph.educationAssignmentPointsGradeType');
 
-$additionalData = [
-		'maxPoints' => 1,
-];
-$levelsRubricLevel2Grading->setAdditionalData($additionalData);
-
+$levelsRubricLevel2Grading->setMaxPoints(1);
 
 
 $levelsRubricLevel2->setGrading($levelsRubricLevel2Grading);
@@ -141,8 +133,8 @@ $qualitiesArray []= $qualitiesRubricQuality2;
 $requestBody->setQualities($qualitiesArray);
 
 
-$grading = new EducationAssignmentGradeType();
-$grading->set@odatatype('#microsoft.graph.educationAssignmentPointsGradeType');
+$grading = new EducationAssignmentPointsGradeType();
+$grading->setOdataType('#microsoft.graph.educationAssignmentPointsGradeType');
 
 
 $requestBody->setGrading($grading);

@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/beta/education/classes/c42f493f-42b4-4e7d-814
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationassignment-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-educationassignment-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

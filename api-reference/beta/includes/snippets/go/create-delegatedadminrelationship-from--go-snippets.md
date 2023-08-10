@@ -40,12 +40,11 @@ unifiedRole1.SetRoleDefinitionId(&roleDefinitionId)
 unifiedRoles := []graphmodels.UnifiedRoleable {
 	unifiedRole,
 	unifiedRole1,
-
 }
 accessDetails.SetUnifiedRoles(unifiedRoles)
 requestBody.SetAccessDetails(accessDetails)
 
-result, err := graphClient.TenantRelationships().DelegatedAdminRelationships().Post(context.Background(), requestBody, nil)
+delegatedAdminRelationships, err := graphClient.TenantRelationships().DelegatedAdminRelationships().Post(context.Background(), requestBody, nil)
 
 
 ```

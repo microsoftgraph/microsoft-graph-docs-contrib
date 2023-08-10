@@ -80,6 +80,10 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@con
 [!INCLUDE [sample-code](../includes/snippets/powershell/bookingbusiness-publish-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/bookingbusiness-publish-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

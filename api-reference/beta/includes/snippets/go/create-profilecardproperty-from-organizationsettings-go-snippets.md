@@ -33,17 +33,15 @@ displayNameLocalization.SetDisplayName(&displayName)
 
 localizations := []graphmodels.DisplayNameLocalizationable {
 	displayNameLocalization,
-
 }
 profileCardAnnotation.SetLocalizations(localizations)
 
 annotations := []graphmodels.ProfileCardAnnotationable {
 	profileCardAnnotation,
-
 }
 requestBody.SetAnnotations(annotations)
 
-result, err := graphClient.Organization().ByOrganization().Id("organization-id").Settings().ProfileCardProperties().Post(context.Background(), requestBody, nil)
+profileCardProperties, err := graphClient.Organization().ByOrganizationId("organization-id").Settings().ProfileCardProperties().Post(context.Background(), requestBody, nil)
 
 
 ```

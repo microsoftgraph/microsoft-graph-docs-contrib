@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
@@ -16,17 +16,17 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "members/any"
+requestFilter := "members/any(o: o/displayname eq 'Peter Parker')"
 
-requestParameters := &graphconfig.UserItemChatsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.UserItemChatsRequestBuilderGetQueryParameters{
 	Expand: [] string {"members"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.UserItemChatsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UserItemChatsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Users().ByUserId("user-id").Chats().Get(context.Background(), configuration)
+chats, err := graphClient.Users().ByUserId("user-id").Chats().Get(context.Background(), configuration)
 
 
 ```

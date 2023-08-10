@@ -7,21 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new ThreatAssessmentRequest();
-$requestBody->set@odatatype('#microsoft.graph.fileAssessmentRequest');
+$requestBody = new FileAssessmentRequest();
+$requestBody->setOdataType('#microsoft.graph.fileAssessmentRequest');
 
 $requestBody->setExpectedAssessment(new ThreatExpectedAssessment('block'));
 
 $requestBody->setCategory(new ThreatCategory('malware'));
 
-$additionalData = [
-		'fileName' => 'test.txt', 
-		'contentData' => 'VGhpcyBpcyBhIHRlc3QgZmlsZQ==', 
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setFileName('test.txt');
 
+$requestBody->setContentData('VGhpcyBpcyBhIHRlc3QgZmlsZQ==');
 
 
 

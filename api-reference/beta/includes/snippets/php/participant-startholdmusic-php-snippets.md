@@ -7,25 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new StartHoldMusicPostRequestBody();
-$customPrompt = new Prompt();
-$customPrompt->set@odatatype('#microsoft.graph.mediaPrompt');
+$customPrompt = new MediaPrompt();
+$customPrompt->setOdataType('#microsoft.graph.mediaPrompt');
 
-$additionalData = [
-		'mediaInfo' => $customPrompt = new MediaInfo();
-$		customPrompt->set@odatatype('#microsoft.graph.mediaInfo');
+$customPromptMediaInfo = new MediaInfo();
+$customPromptMediaInfo->setOdataType('#microsoft.graph.mediaInfo');
 
-$		customPrompt->setUri('https://bot.contoso.com/onHold.wav');
-
-
-$customPrompt->setMediaInfo($mediaInfo);
-
-];
-$customPrompt->setAdditionalData($additionalData);
+$customPromptMediaInfo->setUri('https://bot.contoso.com/onHold.wav');
 
 
+$customPrompt->setMediaInfo($customPromptMediaInfo);
 
 $requestBody->setCustomPrompt($customPrompt);
 $requestBody->setClientContext('d45324c1-fcb5-430a-902c-f20af696537c');

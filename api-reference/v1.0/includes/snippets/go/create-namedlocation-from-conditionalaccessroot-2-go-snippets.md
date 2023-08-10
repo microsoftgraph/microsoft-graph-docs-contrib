@@ -18,18 +18,15 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewNamedLocation()
 displayName := "Named location with unknown countries and regions"
 requestBody.SetDisplayName(&displayName) 
-additionalData := map[string]interface{}{
-	countriesAndRegions := []string {
-		"US",
-		"GB",
-
-	}
-	includeUnknownCountriesAndRegions := true
-requestBody.SetIncludeUnknownCountriesAndRegions(&includeUnknownCountriesAndRegions) 
+countriesAndRegions := []string {
+	"US",
+	"GB",
 }
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetCountriesAndRegions(countriesAndRegions)
+includeUnknownCountriesAndRegions := true
+requestBody.SetIncludeUnknownCountriesAndRegions(&includeUnknownCountriesAndRegions) 
 
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(context.Background(), requestBody, nil)
+namedLocations, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(context.Background(), requestBody, nil)
 
 
 ```

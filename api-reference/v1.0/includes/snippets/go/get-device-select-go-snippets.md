@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/devices"
+	  graphdevices "github.com/microsoftgraph/msgraph-beta-sdk-go/devices"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.DeviceItemRequestBuilderGetQueryParameters{
+requestParameters := &graphdevices.DeviceItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","extensionAttributes"},
 }
-configuration := &graphconfig.DeviceItemRequestBuilderGetRequestConfiguration{
+configuration := &graphdevices.DeviceItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Devices().ByDeviceId("device-id").Get(context.Background(), configuration)
+devices, err := graphClient.Devices().ByDeviceId("device-id").Get(context.Background(), configuration)
 
 
 ```
