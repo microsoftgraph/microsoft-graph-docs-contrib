@@ -2,7 +2,7 @@
 title: "Delete accessReview (deprecated)"
 description: "In the Azure AD access reviews feature, delete an accessReview object."
 ms.localizationpriority: medium
-author: "jyothig123"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

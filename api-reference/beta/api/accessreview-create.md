@@ -2,7 +2,7 @@
 title: "Create accessReview (deprecated)"
 description: "In the Azure AD access reviews feature, create a new accessReview object."
 ms.localizationpriority: medium
-author: "jyothig123"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

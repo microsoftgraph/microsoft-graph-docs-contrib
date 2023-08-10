@@ -2,7 +2,7 @@
 title: "accessReviewDecision resource type (deprecated)"
 description: "The accessReviewDecision represents an Azure AD access review decision of a particular entity's access."
 ms.localizationpriority: medium
-author: "jyothig123"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

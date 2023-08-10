@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, update an existing program
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "jyothig123"
+author: "shubhamguptacal"
 ---
 
 # Update program (deprecated)
