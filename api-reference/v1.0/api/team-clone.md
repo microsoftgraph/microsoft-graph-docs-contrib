@@ -67,7 +67,7 @@ POST /teams/{id}/clone
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group. If the team being cloned is an **educationClass** team, the visibility parameter is ignored, and the new group's visibility will be set to HiddenMembership.|
 
 > [!NOTE]
-> If the `description` property isn't specified in the request body, it takes the value of the `displayName` from the payload that's sent.
+> If the **description** property isn't specified in the request body, it takes the value of the **displayName** property from the request payload.
 
 ## Response
 
@@ -75,7 +75,7 @@ If successful, this method will return a `202 Accepted` response code with a Loc
 When the operation is complete, the operation resource will tell you the id of the created team.
 
 ## Example
-#### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -130,7 +130,7 @@ Content-Type: application/json
 
 ---
 
-#### Response
+### Response
 The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
