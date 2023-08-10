@@ -103,7 +103,7 @@ Content-Type: application/json
       "isBroadcast": null,
       "broadcastSettings": null,
       "capabilities": [],
-      "audioConferencing":  null,
+      "audioConferencing": null,
       "chatInfo": {
         "threadId": "19:meeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5@thread.v2",
         "messageId": "0",
