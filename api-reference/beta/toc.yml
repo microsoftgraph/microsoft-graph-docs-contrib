@@ -10982,6 +10982,8 @@ items:
           - name: Submission
             href: resources/educationsubmission.md
             items:
+              - name: List submissions for assignment
+                href: api/educationassignment-list-submissions.md
               - name: List submission resources
                 href: api/educationsubmission-list-resources.md
               - name: Add submission resource
