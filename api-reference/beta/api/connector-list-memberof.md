@@ -2,7 +2,7 @@
 title: "List memberOf"
 description: "Retrieve the connectorgroup the connector is a member of."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---

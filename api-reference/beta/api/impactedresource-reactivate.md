@@ -3,7 +3,7 @@ title: "impactedResource: reactivate"
 description: "Reactivate an accidentally dismissed, completed, or postponed impactedResource object."
 author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

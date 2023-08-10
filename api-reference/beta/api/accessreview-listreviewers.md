@@ -2,7 +2,7 @@
 title: "List accessReview reviewers (deprecated)"
 description: "In the Azure AD access reviews feature, retrieve the reviewers of an accessReview object."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -111,11 +111,11 @@ Content-type: application/json
 
 ## See also
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[Get accessReview](accessreview-get.md) |	[accessReview](../resources/accessreview.md) |	Retrieve an access review. |
-|[Add accessReview reviewer](accessreview-addreviewer.md) |		None.	|	Add a reviewer to an accessReview. |
-|[Remove accessReview reviewer](accessreview-removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
+|[Get accessReview](accessreview-get.md) |    [accessReview](../resources/accessreview.md) |    Retrieve an access review. |
+|[Add accessReview reviewer](accessreview-addreviewer.md) |        None.    |    Add a reviewer to an accessReview. |
+|[Remove accessReview reviewer](accessreview-removereviewer.md) | None.    |    Remove a reviewer from an accessReview. |
 
 
 <!--
