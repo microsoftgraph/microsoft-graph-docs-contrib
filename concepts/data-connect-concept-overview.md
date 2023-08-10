@@ -90,7 +90,7 @@ Templates help take use cases from hypothesis to implementation in four steps:
 2. Minimize compliance management overhead by specified detailed compliance policies for applications and users.
 3. Follow the industry standard for data privacy and confidentially, with support for critical data protection regulations such as GDPR and HIPAA.
 
-Learn about our security, governance, and privacy: [Security, governance and privacy built into Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/security-governance-and-privacy-built-into-microsoft-graph-data-connect/)
+Learn about our security, governance and privacy: [Security, governance and privacy built into Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/security-governance-and-privacy-built-into-microsoft-graph-data-connect/)
 
 Now you can bring all your Microsoft 365 data into [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Microsoft 365 Data Integration for Microsoft Fabric is a feature of the new Microsoft Fabric solution, which enables you to manage your Microsoft 365 alongside your other data sources in one place. This solution offers you a suite of analytical experiences that seamlessly work together to transform your data into a competitive advantage.
 
