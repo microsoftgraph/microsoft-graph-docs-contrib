@@ -2,7 +2,7 @@
 title: "List onPremisesAgentGroups"
 description: "Retrieve a list of onPremisesAgentGroup objects."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---

@@ -2,7 +2,7 @@
 title: "Remove onpremisesAgent from an onPremisesAgentGroup"
 description: "Remove an onpremisesAgent from an onPremisesAgentGroup."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---

@@ -3,7 +3,7 @@ title: "List impactedResources"
 description: "Get the impacted resources for a recommendation."
 author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

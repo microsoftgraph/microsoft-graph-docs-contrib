@@ -2,7 +2,7 @@
 title: "List connectors"
 description: "Retrieve a list of connector objects."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
