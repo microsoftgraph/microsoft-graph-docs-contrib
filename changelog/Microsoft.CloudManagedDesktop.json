@@ -91,8 +91,8 @@
                 {
                     "Id": "be5ebbef-56ec-465d-afbe-aef899ab7e40",
                     "ApiChange": "Enum type",
-                    "ChangedApiName": "cloudPcReportName",
-                    "ChangeType": "Change",
+                    "ChangedApiName": "remoteConnectionQualityReports",
+                    "ChangeType": "Addition",
                     "Description": "Added the ´remoteConnectionQualityReports´ member to the **cloudPcReportName** enumeration type.",
                     "Target": "cloudPcReportName"
                 },
@@ -101,7 +101,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getConnectionQualityReports",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getConnectionQualityReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+                    "Description": "Added the [cloudPcReports: getConnectionQualityReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReports"
                 }
             ],
