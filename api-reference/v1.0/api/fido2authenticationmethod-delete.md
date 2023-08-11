@@ -1,7 +1,7 @@
 ---
 title: "Delete fido2AuthenticationMethod"
 description: "Deletes a fido2AuthenticationMethod object."
-author: "mmcla"
+author: "calvinlui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

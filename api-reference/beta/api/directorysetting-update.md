@@ -1,7 +1,7 @@
 ---
 title: "Update directorySetting"
 description: "Update the properties of a specific directory setting object."
-author: "adimitui"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -59,7 +59,7 @@ PATCH /groups/{groupId}/settings/{directorySettingId}
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. 
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | values | [settingValue](../resources/settingvalue.md) collection | The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values. |
 
