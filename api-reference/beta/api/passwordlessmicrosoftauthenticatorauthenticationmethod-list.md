@@ -1,7 +1,7 @@
 ---
 title: "List passwordlessMicrosoftAuthenticatorAuthenticationMethods"
 description: "Retrieve a list of the passwordlessMicrosoftAuthenticatorAuthenticationMethod objects and their properties."
-author: "mmcla"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

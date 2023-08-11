@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, a program is a container, 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ---
 
 # program resource type (deprecated)
@@ -22,23 +22,23 @@ Each tenant that has on-boarded Azure AD access reviews has one program, `Defaul
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[Create program](../api/program-create.md) |	[program](program.md)	|	Create a new program.|
-|[Delete program](../api/program-delete.md) |	None.	|	Delete a program.|
-|[List programs](../api/program-list.md) |	[program](program.md) collection|	Get a collection of all the programs.|
-|[List programControls of a program](../api/program-listcontrols.md) |		[programControl](programcontrol.md) collection|	Get a collection of the controls of a program.|
-|[Update program](../api/program-update.md) |	[program](program.md)|	Update a program.|
+|[Create program](../api/program-create.md) |    [program](program.md)    |    Create a new program.|
+|[Delete program](../api/program-delete.md) |    None.    |    Delete a program.|
+|[List programs](../api/program-list.md) |    [program](program.md) collection|    Get a collection of all the programs.|
+|[List programControls of a program](../api/program-listcontrols.md) |        [programControl](programcontrol.md) collection|    Get a collection of the controls of a program.|
+|[Update program](../api/program-update.md) |    [program](program.md)|    Update a program.|
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | id                        |String                              |  The feature-assigned identifier of the program.                    |
 | displayName               |String                              |  The name of the program.  Required on create.                  |
 | description               |String                              |  The description of the program.           |
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 | `controls`                  |[programControl](programcontrol.md) | Controls associated with the program. |
 

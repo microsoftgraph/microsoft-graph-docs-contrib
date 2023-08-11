@@ -1,4 +1,4 @@
-items:
+policitems:
   - name: Overview of Microsoft Graph
     href: /graph/overview
   - name: Authentication and authorization
@@ -5639,7 +5639,7 @@ items:
                         href: api/accesspackageassignment-filterbycurrentuser.md
                       - name: Reprocess
                         href: api/accesspackageassignment-reprocess.md
-                  - name: Access package assignment request approval
+                  - name: Access package assignment approval
                     items:
                       - name: Approval
                         href: resources/approval.md
@@ -6327,8 +6327,10 @@ items:
               - name: Data policy operation
                 href: resources/datapolicyoperation.md
                 items:
-                  - name: Get data policy operation
+                  - name: Get
                     href: api/datapolicyoperation-get.md
+                  - name: Export personal data
+                    href: api/user-exportpersonaldata.md
               - name: Delegated permission grant
                 items:
                   - name: OAuth 2.0 permission grant
