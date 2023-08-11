@@ -10,40 +10,44 @@ ms.custom: scenarios:getting-started
 
 Microsoft Graph Data Connect has a simplified onboarding experience—featuring an improved app registration and app authorization experience, and detailed guidance for migrating existing customers to the new Data Connect experience.
 
-This article describes the simplified onboarding experience for Microsoft Graph Data Connect. Customers who currently use the Privileged Access Management (PAM) authorization model can migrate to the simplified experience in which data transfers are authorized before the pipelines run.
-<!-- Graphic need to be updated without links. -->
-![Graphic showing the improved onboarding experience for Microsoft Graph Data Connect customers.](images/new-mgdc-onboarding-flow.png)
+This article describes the simplified onboarding experience for Microsoft Graph Data Connect. Customers who currently use the Privileged Access Management (PAM) authorization model can migrate to the simplified experience in which data transfers are authorized before the pipelines run. The following image shows the onboarding steps.
+<!-- Graphic needs to be updated without links. -->
+![Graphic showing the onboarding experience for Microsoft Graph Data Connect customers.](images/new-mgdc-onboarding-flow.png)
 
-- Admin enables Data Connect—the first step in onboarding remains unchanged. Your global administrator has to [enable Microsoft Graph Data Connect](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan).
-- Developer creates new Azure AD app—you have to first create a new AAD app (similar to the original experience).
-- Developer registers app with Data Connect—once the Azure Active Directory (AAD) app is created, you need to register the app in the new [Data Connect app registration portal](https://aka.ms/mgdcinazure). This is where you specify the data you require for the application. Learn more about [app registration](./app-registration.md).
-- Admin authorizes app—after the developer has registered the app with Data Connect, the global administrator can use the Data Connect app authorization portal to review the registered app, and approve it. Learn more about [app authorization](./app-authorization.md).
-- Developer runs pipelines—after the admin has authorized the application, the developer can run existing pipelines without delays for runtime authorization. The pipeline creation and execution with Azure Data Factory or Azure Synapse remains the same.
+1. Your global administrator [enables Microsoft Graph Data Connect](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan) in the Microsoft 365 admin center.
 
-## How have we improved the onboarding experience?
+2. Create a new Azure AD app.
 
-**Authorization is provided before any pipeline runs**—if authorization is not granted, the pipeline fails instantly. This eliminates extra runtime, which incurs ADF runtime costs, waiting on manual approval—and removes the need to align pipeline execution timelines with an admin’s availability. It also eliminates runtime authorization creation failures.
+3. Register the The global administrator authorizes the app in the [Data Connect app registration portal](https://aka.ms/mgdcinazure). This is where you specify the data you require for the application. For details, see [app registration](./app-registration.md).
 
-**Service principal owner licenses are no longer required**—this removes requirements for service principal owners to be Microsoft 365 users with an E5 license, and completely removes license requirements. AAD application ownership is required for updating and deleting app registrations with MGDC. 
+4. Your global administrator authorizes the app in the Data Connect app authorization portal. For details, see [app authorization](./app-authorization.md).
 
-Support for role-based access control of Data Connect applications using [Azure app roles](/azure/active-directory/develop/howto-add-app-roles-in-apps#declare-roles-for-an-application) will be announced in the near future.
+5. You can now run existing pipelines without delays caused by runtime authorization. Pipelines are created and run via Azure Data Factory or Azure Synapse.
 
-**Data Connect no longer requires the admin authorizing Microsoft 365 data access to have an E5 license**—user authorizing an app is required to be a global admin in order to access the [Data Connect app authorization portal](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter), and approve apps for Data Connect.
+## Updated onboarding experience
 
-**New Data Connect presence on Azure portal and Microsoft 365 admin center enables a more intuitive and informative experience while registering and authorizing apps**.  
+The onboarding experience to Microsoft Graph Data Connect now includes improved process efficiencies and developer workflows—and improvements on the Azure portal that further enable a more intuitive and informative developer experience.
 
-**Data Connect is evolving to a per-app authorization model, which functionally means one admin authorization per customer scenario**. A single app registration will encapsulate all datasets that app requires, along with per dataset controls for columns and scopes. This also means just a single authorization is required to enable a whole scenario.
+- Authorization is provided before any pipeline runs—if authorization is not granted, the pipeline fails instantly. This eliminates extra runtime, which incurs ADF runtime costs, waiting on manual approval, and minimizes runtime authorization creation failures.
 
-**The new Data Connect app authorization experience supports renewing an app authorization before expiry, which is not supported in PAM**.
+- Service principal owner licenses are not required. This removes requirements for service principal owners to be Microsoft 365 users with an E5 license, and completely removes license requirements. Azure AD application ownership is required for updating and deleting app registrations with Data Connect.
 
-**The fresh onboarding experience enables multi-tenant apps to initiate cross-tenant data movement with Data Connect**. This enables an Independent Software Vendor (ISV) to make use of Data Connect to extract Microsoft 365 data to bring value to customers.
+- Admins don't need an E5 license. A user authorizing an app is required to be a global admin to access the [Data Connect app registration portal](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter), and approve apps for Data Connect.
+
+- Enhanced Microsoft 365 admin center experience for authorizing apps.
+
+- Data Connect is evolving to a per-app authorization model, which functionally means one admin authorization per customer scenario. A single app registration will encapsulate all datasets that app requires, along with per dataset controls for columns and scopes. This also means just a single authorization is required to enable a whole scenario.
+
+- Renewing an app authorization before the expiry date is now possible, which is not supported in Privileged Access Management (PAM).
+
+- The onboarding experience enables multi-tenant apps to initiate cross-tenant data movement with Data Connect. This enables an Independent Software Vendor (ISV) to make use of Data Connect to extract Microsoft 365 data to bring value to customers.
 
 ## Confirming your new tenant experience
 <!-- This date has a bit of a cyclic dependency... as soon as docs go out, we will roll this out... once this is signed off, we can decide the exact date and add it here and other places. -->
-If your tenant enabled Data Connect on the Microsoft 365 Admin Center after &lt;date&gt;, your organization is successfully enrolled in the new onboarding experience. Confirm this by requesting someone in your company with a Global Reader or Global Administrator-assigned role to access the Data Connect admin authorization portal. 
+If your tenant enabled Data Connect on the Microsoft 365 Admin Center after August 2023, your organization is successfully enrolled in the new onboarding experience. Confirm this by requesting someone in your company with a Global Reader or Global Administrator-assigned role to access the Data Connect admin authorization portal. 
 
-If you're able to access the experience shown **without the highlighted warning** "You are still using the legacy Privileged Access management Microsoft Graph Data Connect consent experience. Please enable the new consent experience for MGDC enterprise apps," your tenant is making use of the new experience.
+If you're able to access the experience and you don't see the following warning text, you don't need to take any further action: You are still using the legacy Privileged Access Management Microsoft Graph Data Connect consent experience. Please enable the new consent experience for MGDC enterprise apps.
 
 ![The highlighted warning displayed for users if their organization is not using the new tenant experience.](./images/M365-admin-center-highlighted-warning.png)
 
-If you see your tenant is not using the new experience and want to migrate, see the [updated guidance for existing customer migration](./existing-customer-migration.md)**.
+If your tenant is not yet using the updated experience, for details about how to migrate, see [Migrate to the updated Microsoft Graph Data Connect onboarding experience](./existing-customer-migration.md).
