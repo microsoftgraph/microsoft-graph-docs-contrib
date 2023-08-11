@@ -1,6 +1,6 @@
 ---
 title: "Manage application authenticationBehaviors"
-description: "Use this guidance to manage the application authenticationBehaviors."
+description: "Manage the application authenticationBehaviors to adopt new breaking changes."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: medbhargava
@@ -116,7 +116,7 @@ You can also use the **appId** property as follows:
 GET https://graph.microsoft.com/beta/applications(appId='37bf1fd4-78b0-4fea-ac2d-6c82829e9365')/authenticationBehaviors
 ```
 
-## Configure authenticationBehaviors to prevent issuance of email claims with unverified domain owners
+## Prevent the issuance of email claims with unverified domain owners
 
 As described in the Microsoft security advisory [Potential Risk of Privilege Escalation in Azure AD Applications](https://msrc.microsoft.com/blog/2023/06/potential-risk-of-privilege-escalation-in-azure-ad-applications/), **apps should never use the email claim for authorization purposes**. If your application uses the email claim for authorization or primary user identification purposes, it's subject to account and privilege escalation attacks. This risk of unauthorized access is especially identified in the following scenarios:
 
@@ -129,13 +129,14 @@ Today, the default behavior is to remove email addresses with unverified domain 
 
 ### Remove email addresses with unverified domain owners from claims
 
+#### Option 1
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_true"
+  "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_true_option1"
 }-->
 
 ```http
-PATCH /applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
+PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
 Content-Type: application/json
 
 {
@@ -143,15 +144,35 @@ Content-Type: application/json
 }
 ```
 
-### Accept email addresses with unverified domain owners in claims
+#### Option 2
 
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_false"
+  "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_true_option2"
 }-->
 
 ```http
-PATCH /applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
+PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
+Content-Type: application/json
+
+{
+    "authenticationBehaviors": {
+        "removeUnverifiedEmailClaim": true
+    }
+}
+```
+
+### Accept email addresses with unverified domain owners in claims
+
+#### Option 1
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_false_option1"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
 Content-Type: application/json
 
 {
@@ -159,15 +180,35 @@ Content-Type: application/json
 }
 ```
 
-### Restore the default behavior
+#### Option 2
 
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_null"
+  "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_false_option2"
 }-->
 
 ```http
-PATCH /applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
+PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
+Content-Type: application/json
+
+{
+    "authenticationBehaviors": {
+        "removeUnverifiedEmailClaim": false
+    }
+}
+```
+
+### Restore the default behavior
+
+#### Option 1
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_null_false_option1"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
 Content-Type: application/json
 
 {
@@ -175,9 +216,27 @@ Content-Type: application/json
 }
 ```
 
+#### Option 2
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_null_false_option2"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/
+Content-Type: application/json
+
+{
+    "authenticationBehaviors": {
+        "removeUnverifiedEmailClaim": null
+    }
+}
+```
+
+
 ## See also
 
 - [authenticationBehaviors resource type](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true)
-- [Potential Risk of Privilege Escalation in Azure AD Applications](https://msrc.microsoft.com/blog/2023/06/potential-risk-of-privilege-escalation-in-azure-ad-applications/)
-- [The false identifier anti-pattern](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/the-false-identifier-anti-pattern/ba-p/3846013)
 - [Migrate away from using email claims for user identification or authorization](/azure/active-directory/develop/migrate-off-email-claim-authorization)
+- [The false identifier anti-pattern](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/the-false-identifier-anti-pattern/ba-p/3846013)
