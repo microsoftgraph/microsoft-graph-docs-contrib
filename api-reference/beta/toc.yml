@@ -16320,7 +16320,7 @@ items:
                 items:
                 - name: File plan descriptors
                   items:
-                  - name: File plan descriptor
+                  - name: File plan descriptor set
                     href: resources/security-fileplandescriptor.md
                   - name: Applied category
                     href: resources/security-appliedcategory.md
@@ -16336,8 +16336,6 @@ items:
                     href: resources/security-subcategory.md
                 - name: File plan descriptor templates
                   items:
-                  - name: File plan descriptor template
-                    href: resources/security-fileplandescriptortemplate.md
                   - name: Applied category template
                     items:
                     - name: Category template
