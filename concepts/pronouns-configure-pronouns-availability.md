@@ -37,7 +37,7 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 
 ### Prerequisites
 
-- **PowerShell module** - Install [module version 2.2.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
+- **PowerShell module** - Install [module version 2.3.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
 - **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
 
 > [!NOTE]
