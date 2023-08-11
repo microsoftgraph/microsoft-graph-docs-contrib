@@ -54,8 +54,12 @@ If successful, this method returns a `200 OK` response code and a [cloudPcExport
 
 ## Examples
 
-### Example 1: Get an export job that was created by the POST request for the TotalAggregatedRemoteConnectionReports report.
+### Example 1: Get an export job for the TotalAggregatedRemoteConnectionReports report
+
+The following example shows how to get an export job that was created by the POST request for the `TotalAggregatedRemoteConnectionReports` report.
+
 #### Request
+
 The following is an example of a request.
 
 # [HTTP](#tab/http)
@@ -100,7 +104,9 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/ex
 ---
 
 #### Response
-The following is an example of the response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,7 +123,9 @@ Content-Type: application/json
     "id": "TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff",
     "reportName": "totalAggregatedRemoteConnectionReports",
     "format": "csv",
-    "select":  ["CloudPcId", "ManagedDeviceName", "UserPrincipalName", "DaysSinceLastSignIn", "TotalUsageInHour"],
+    "select": [
+      "CloudPcId", "ManagedDeviceName", "UserPrincipalName", "DaysSinceLastSignIn", "TotalUsageInHour"
+    ],
     "filter": null,
     "requestDateTime": "2022-09-16T12:00:06.5137388Z",
     "expirationDateTime": "0001-01-01T00:00:00Z",
@@ -127,9 +135,14 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get an export job that was created by the POST request for the RemoteConnectionHistoricalReports report.
+### Example 2: Get an export job for the RemoteConnectionHistoricalReports report
+
+The following example shows how to get an export job that was created by the POST request for the `RemoteConnectionHistoricalReports` report.
+
 #### Request
+
 The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_cloudpcexportjob_example2",
@@ -141,7 +154,9 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/ex
 ```
 
 #### Response
-The following is an example of the response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -158,7 +173,9 @@ Content-Type: application/json
     "id": "RemoteConnectionQualityReports__85678957-6202-4e29-97e6-eb26ef07f330",
     "reportName": "remoteConnectionHistoricalReports",
     "format": "csv",
-    "select":  ["CloudPcId", "ManagedDeviceName", "UserPrincipalName", "DaysSinceLastSignIn", "TotalUsageInHour"],
+    "select": [
+      "CloudPcId", "ManagedDeviceName", "UserPrincipalName", "DaysSinceLastSignIn", "TotalUsageInHour"
+    ],
     "filter": null,
     "requestDateTime": "2023-06-14T07:40:41.694Z",
     "expirationDateTime": "",
