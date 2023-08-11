@@ -3,7 +3,7 @@ title: "recommendation: reactivate"
 description: "Reactivate a completed, dismissed, or postponed recommendation object."
 author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
