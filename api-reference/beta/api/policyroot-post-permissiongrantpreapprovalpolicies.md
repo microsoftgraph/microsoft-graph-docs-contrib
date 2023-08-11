@@ -56,20 +56,29 @@ You can specify the following properties when creating a **permissionGrantPreApp
 
 If successful, this method returns a `201 Created` response code and a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object in the response body.
 
-## Example 1  - Create a pre-approval policy for both group and chat scope.
-Under the first collection that scopeType is `chat`, it shows how to use "enumerated" for sensitivity labels and how to use "all" to include all permissions.
+## Examples
 
-Under the seconde collection that scopeType is `group`, it shows how to use "all" for sensitivity labels and how to use "enumerated" to include a given list of permissions.
+### Example 1: Create a pre-approval policy for both group and chat scope
 
-### Request
+In the following example:
+
+- The condition for the `chat` resource type:
+  - Specifies two sensitivity labels that are in scope
+  - Specifies that all application permissions for all APIs are pre-approved
+- The condition for the `group` resource type:
+  - Indicates that all groups regardless of sensitivity labels are in scope
+  - Specifies two application permissions for the `00000003-0000-0000-c000-000000000000` resource app are pre-approved
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "create_permissiongrantpreapprovalpolicy"
 }
 -->
 ``` http
-POST /policies/permissionGrantPreApprovalPolicies
+POST https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies
 Content-Type: application/json
+
 {
     "conditions": [
         {
@@ -110,7 +119,8 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -121,6 +131,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPreApprovalPolicies/$entity",
     "id": "71ba13dc-5947-4e59-bcc5-0ad5c339a853",
@@ -163,17 +174,18 @@ Content-Type: application/json
 }
 ```
 
-## Example 2  - Create a pre-approval policy for only group scope with only for all permissions from a given API.
+### Example 2: Create a pre-approval policy for group scope and pre-approves all permissions from a given API
 
-### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "create_permissiongrantpreapprovalpolicy_only_group"
 }
 -->
 ``` http
-POST /policies/permissionGrantPreApprovalPolicies
+POST https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies
 Content-Type: application/json
+
 {
     "conditions": [
         {
@@ -194,7 +206,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
