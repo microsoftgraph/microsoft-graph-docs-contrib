@@ -2670,13 +2670,12 @@
           "Description": "Added the **tokenProtectionStatus** enumeration type.",
           "Target": "tokenProtectionStatus"
         },
-      
         {
           "Id": "8f1f41d8-67e6-4a33-894c-2071e68e72f0",
           "ApiChange": "Property",
           "ChangedApiName": "originalTransferMethod",
           "ChangeType": "Addition",
-          "Description": "Added the `originalTransferMethod` property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **originalTransferMethod** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -2684,7 +2683,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "signInTokenProtectionStatus",
           "ChangeType": "Addition",
-          "Description": "Added the `signInTokenProtectionStatus` property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **signInTokenProtectionStatus** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         }
       ],
