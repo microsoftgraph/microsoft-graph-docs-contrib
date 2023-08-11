@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an [education resource](../resources/educationmoduleresource.md) in a [module](../resources/educationmodule.md). Only teachers can perform this operation.
+Update a [resource](../resources/educationmoduleresource.md) in a [module](../resources/educationmodule.md). Only teachers can perform this operation.
 
-The only one property that can be updated is **displayName**, for all type of resources.
+The only one property that can be updated is **displayName**, for all resource types.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,7 +41,7 @@ PATCH /education/classes/{class-id}/modules/{module-id}/resources/{resource-id}
 In the request body, supply the new value for the **displayName** field that will be updated.
 
 ## Response
-If successful, this method returns a `200 Ok` response code and an [educationModuleResource](../resources/educationmoduleresource.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [educationModuleResource](../resources/educationmoduleresource.md) object in the response body.
 
 ## Examples
 ### Request
