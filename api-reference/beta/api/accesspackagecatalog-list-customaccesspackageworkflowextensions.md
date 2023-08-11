@@ -1,7 +1,7 @@
 ---
 title: "List customAccessPackageWorkflowExtensions"
 description: "Get a list of the customAccessPackageWorkflowExtension objects and their properties."
-author: "currenmehta-zz"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -80,6 +80,10 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-customaccesspackageworkflowextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-customaccesspackageworkflowextension-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

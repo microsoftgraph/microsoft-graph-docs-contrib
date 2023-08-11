@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Win32LobApp();
-$requestBody->set@odatatype('#microsoft.graph.win32LobApp');
+$requestBody->setOdataType('#microsoft.graph.win32LobApp');
 
 $requestBody->setDisplayName('Display Name value');
 
@@ -19,7 +19,7 @@ $requestBody->setDescription('Description value');
 $requestBody->setPublisher('Publisher value');
 
 $largeIcon = new MimeContent();
-$largeIcon->set@odatatype('microsoft.graph.mimeContent');
+$largeIcon->setOdataType('microsoft.graph.mimeContent');
 
 $largeIcon->setType('Type value');
 
@@ -62,7 +62,7 @@ $requestBody->setMinimumNumberOfProcessors(9);
 $requestBody->setMinimumCpuSpeedInMHz(4);
 
 $rulesWin32LobAppRule1 = new Win32LobAppRegistryRule();
-$rulesWin32LobAppRule1->set@odatatype('microsoft.graph.win32LobAppRegistryRule');
+$rulesWin32LobAppRule1->setOdataType('microsoft.graph.win32LobAppRegistryRule');
 
 $rulesWin32LobAppRule1->setRuleType(new Win32LobAppRuleType('requirement'));
 
@@ -84,7 +84,7 @@ $requestBody->setRules($rulesArray);
 
 
 $installExperience = new Win32LobAppInstallExperience();
-$installExperience->set@odatatype('microsoft.graph.win32LobAppInstallExperience');
+$installExperience->setOdataType('microsoft.graph.win32LobAppInstallExperience');
 
 $installExperience->setRunAsAccount(new RunAsAccountType('user'));
 
@@ -93,7 +93,7 @@ $installExperience->setDeviceRestartBehavior(new Win32LobAppRestartBehavior('all
 
 $requestBody->setInstallExperience($installExperience);
 $returnCodesWin32LobAppReturnCode1 = new Win32LobAppReturnCode();
-$returnCodesWin32LobAppReturnCode1->set@odatatype('microsoft.graph.win32LobAppReturnCode');
+$returnCodesWin32LobAppReturnCode1->setOdataType('microsoft.graph.win32LobAppReturnCode');
 
 $returnCodesWin32LobAppReturnCode1->setReturnCode(10);
 
@@ -105,7 +105,7 @@ $requestBody->setReturnCodes($returnCodesArray);
 
 
 $msiInformation = new Win32LobAppMsiInformation();
-$msiInformation->set@odatatype('microsoft.graph.win32LobAppMsiInformation');
+$msiInformation->setOdataType('microsoft.graph.win32LobAppMsiInformation');
 
 $msiInformation->setProductCode('Product Code value');
 
@@ -115,7 +115,7 @@ $msiInformation->setUpgradeCode('Upgrade Code value');
 
 $msiInformation->setRequiresReboot(true);
 
-$msiInformation->setPackageType(new Win32LobAppMsiPackageType('peruser'));
+$msiInformation->setPackageType(new Win32LobAppMsiPackageType('perUser'));
 
 $msiInformation->setProductName('Product Name value');
 

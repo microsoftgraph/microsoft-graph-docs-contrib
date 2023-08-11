@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ComplianceManagementPartner();
-$requestBody->set@odatatype('#microsoft.graph.complianceManagementPartner');
+$requestBody->setOdataType('#microsoft.graph.complianceManagementPartner');
 
-$requestBody->setLastHeartbeatDateTime(new DateTime('2016-12-31T23:59:37.9174975-08:00'));
+$requestBody->setLastHeartbeatDateTime(new \DateTime('2016-12-31T23:59:37.9174975-08:00'));
 
 $requestBody->setPartnerState(new DeviceManagementPartnerTenantState('unavailable'));
 
@@ -25,10 +25,10 @@ $requestBody->setAndroidOnboarded(true);
 $requestBody->setIosOnboarded(true);
 
 $macOsEnrollmentAssignmentsComplianceManagementPartnerAssignment1 = new ComplianceManagementPartnerAssignment();
-$macOsEnrollmentAssignmentsComplianceManagementPartnerAssignment1->set@odatatype('microsoft.graph.complianceManagementPartnerAssignment');
+$macOsEnrollmentAssignmentsComplianceManagementPartnerAssignment1->setOdataType('microsoft.graph.complianceManagementPartnerAssignment');
 
 $macOsEnrollmentAssignmentsComplianceManagementPartnerAssignment1Target = new ConfigurationManagerCollectionAssignmentTarget();
-$macOsEnrollmentAssignmentsComplianceManagementPartnerAssignment1Target->set@odatatype('microsoft.graph.configurationManagerCollectionAssignmentTarget');
+$macOsEnrollmentAssignmentsComplianceManagementPartnerAssignment1Target->setOdataType('microsoft.graph.configurationManagerCollectionAssignmentTarget');
 
 $macOsEnrollmentAssignmentsComplianceManagementPartnerAssignment1Target->setCollectionId('Collection Id value');
 
@@ -40,10 +40,10 @@ $requestBody->setMacOsEnrollmentAssignments($macOsEnrollmentAssignmentsArray);
 
 
 $androidEnrollmentAssignmentsComplianceManagementPartnerAssignment1 = new ComplianceManagementPartnerAssignment();
-$androidEnrollmentAssignmentsComplianceManagementPartnerAssignment1->set@odatatype('microsoft.graph.complianceManagementPartnerAssignment');
+$androidEnrollmentAssignmentsComplianceManagementPartnerAssignment1->setOdataType('microsoft.graph.complianceManagementPartnerAssignment');
 
 $androidEnrollmentAssignmentsComplianceManagementPartnerAssignment1Target = new ConfigurationManagerCollectionAssignmentTarget();
-$androidEnrollmentAssignmentsComplianceManagementPartnerAssignment1Target->set@odatatype('microsoft.graph.configurationManagerCollectionAssignmentTarget');
+$androidEnrollmentAssignmentsComplianceManagementPartnerAssignment1Target->setOdataType('microsoft.graph.configurationManagerCollectionAssignmentTarget');
 
 $androidEnrollmentAssignmentsComplianceManagementPartnerAssignment1Target->setCollectionId('Collection Id value');
 
@@ -55,10 +55,10 @@ $requestBody->setAndroidEnrollmentAssignments($androidEnrollmentAssignmentsArray
 
 
 $iosEnrollmentAssignmentsComplianceManagementPartnerAssignment1 = new ComplianceManagementPartnerAssignment();
-$iosEnrollmentAssignmentsComplianceManagementPartnerAssignment1->set@odatatype('microsoft.graph.complianceManagementPartnerAssignment');
+$iosEnrollmentAssignmentsComplianceManagementPartnerAssignment1->setOdataType('microsoft.graph.complianceManagementPartnerAssignment');
 
 $iosEnrollmentAssignmentsComplianceManagementPartnerAssignment1Target = new ConfigurationManagerCollectionAssignmentTarget();
-$iosEnrollmentAssignmentsComplianceManagementPartnerAssignment1Target->set@odatatype('microsoft.graph.configurationManagerCollectionAssignmentTarget');
+$iosEnrollmentAssignmentsComplianceManagementPartnerAssignment1Target->setOdataType('microsoft.graph.configurationManagerCollectionAssignmentTarget');
 
 $iosEnrollmentAssignmentsComplianceManagementPartnerAssignment1Target->setCollectionId('Collection Id value');
 

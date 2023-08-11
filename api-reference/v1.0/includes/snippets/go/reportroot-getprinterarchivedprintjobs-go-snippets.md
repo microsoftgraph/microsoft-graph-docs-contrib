@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Reports().GetPrinterArchivedPrintJobs(printerId='{printerId}',startDateTime={startDateTime},endDateTime={endDateTime})().Get(context.Background(), nil)
+getPrinterArchivedPrintJobs(printerId='{printerId}',startDateTime={startDateTime},endDateTime={endDateTime}), err := graphClient.Reports().GetPrinterArchivedPrintJobs(printerId='{printerId}',startDateTime={startDateTime},endDateTime={endDateTime})().Get(context.Background(), nil)
 
 
 ```

@@ -12,12 +12,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceAppManagement()
 
-result, err := graphClient.DeviceAppManagement().Patch(context.Background(), requestBody, nil)
+deviceAppManagement, err := graphClient.DeviceAppManagement().Patch(context.Background(), requestBody, nil)
 
 
 ```

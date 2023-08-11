@@ -1,7 +1,7 @@
 ---
 title: "Delete passwordlessMicrosoftAuthenticatorAuthenticationMethod"
 description: "Deletes a passwordlessMicrosoftAuthenticatorAuthenticationMethod object."
-author: "mmcla"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -98,10 +98,6 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/pas
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-passwordlessmicrosoftauthenticatorauthenticationmethod-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-passwordlessmicrosoftauthenticatorauthenticationmethod-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

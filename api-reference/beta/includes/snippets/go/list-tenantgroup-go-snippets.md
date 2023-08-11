@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().Get(context.Background(), nil)
+tenantGroups, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().Get(context.Background(), nil)
 
 
 ```

@@ -26,6 +26,14 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.ReadWrite.All, Directory.ReadWrite.All |
 
+For delegated scenarios, the calling user needs one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+
+- Directory Writers
+- License Administrator
+- User Administrator
+- Partner Tier2 Support
+- Global Administrator
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -40,7 +48,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 |addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable servicePlans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.|
 |removeLicenses|Guid collection|A collection of skuIds that identify the licenses to remove.|
@@ -95,6 +103,10 @@ Content-type: application/json
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-assignlicense-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-assignlicense-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
@@ -170,6 +182,10 @@ Content-type: application/json
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-assignlicense-removelicenses-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-assignlicense-removelicenses-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)

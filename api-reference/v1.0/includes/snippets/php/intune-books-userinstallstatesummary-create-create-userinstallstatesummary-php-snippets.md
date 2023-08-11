@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UserInstallStateSummary();
-$requestBody->set@odatatype('#microsoft.graph.userInstallStateSummary');
+$requestBody->setOdataType('#microsoft.graph.userInstallStateSummary');
 
 $requestBody->setUserName('User Name value');
 

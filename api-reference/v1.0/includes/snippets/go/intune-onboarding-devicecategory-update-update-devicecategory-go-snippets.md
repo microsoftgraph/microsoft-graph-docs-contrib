@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceCategory()
@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 description := "Description value"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.DeviceManagement().DeviceCategories().ByDeviceCategorieId("deviceCategory-id").Patch(context.Background(), requestBody, nil)
+deviceCategories, err := graphClient.DeviceManagement().DeviceCategories().ByDeviceCategoryId("deviceCategory-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

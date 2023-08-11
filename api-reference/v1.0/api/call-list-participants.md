@@ -30,6 +30,7 @@ Retrieve a list of participant objects in the call.
 ```http
 GET /communications/calls/{id}/participants
 ```
+> **Note:** This request does not support peer-to-peer calls.
 
 ## Optional query parameters
 
