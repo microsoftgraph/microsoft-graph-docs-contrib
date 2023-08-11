@@ -14,7 +14,7 @@ New customers who onboard onto Microsoft Graph Data Connect beginning in late Au
 
 <!-- Date changed to "August 2023" and once the release goes out fully, we can add a quick change to add the exact date. -->
 
-If you are an existing Data Connect customer and want to get started with the improved app registration and authorization experience, simply have your tenant admin disable Data Connect in the admin portal and then re-enable it. Then, follow the steps in the [onboarding guide](./onboarding-experience-overview.md).
+If you are an existing Data Connect customer and want to get started with the improved app registration and authorization experience, simply have your tenant admin disable Data Connect in the Microsoft 365 admin portal and then re-enable it. Then, follow the steps in the [onboarding guide](./onboarding-experience-overview.md).
 
 This option is available today. If you choose this option, none of your existing Privileged Access Management (PAM) authorizations will be migrated to the new experience. You'll need to register the apps from scratch, and work with your tenant admin to get them authorized.
 
