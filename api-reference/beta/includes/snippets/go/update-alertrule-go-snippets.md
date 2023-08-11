@@ -67,7 +67,7 @@ notificationChannels := []graphmodelsdevicemanagement.NotificationChannelable {
 }
 requestBody.SetNotificationChannels(notificationChannels)
 
-result, err := graphClient.DeviceManagement().Monitoring().AlertRules().ByAlertRuleId("alertRule-id").Patch(context.Background(), requestBody, nil)
+alertRules, err := graphClient.DeviceManagement().Monitoring().AlertRules().ByAlertRuleId("alertRule-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

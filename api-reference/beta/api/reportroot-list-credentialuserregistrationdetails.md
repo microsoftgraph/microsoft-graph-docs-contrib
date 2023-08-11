@@ -2,7 +2,7 @@
 title: "List credentialUserRegistrationDetails"
 description: "Get a list of credentialUserRegistrationDetails objects for a given tenant."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"
 ---
@@ -101,10 +101,6 @@ GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-credentialuserregistrationdetails-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-credentialuserregistrationdetails-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

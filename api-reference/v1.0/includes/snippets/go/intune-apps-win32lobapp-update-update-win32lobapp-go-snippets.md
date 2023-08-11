@@ -123,7 +123,7 @@ requestBody.SetSetupFilePath(&setupFilePath)
 minimumSupportedWindowsRelease := "Minimum Supported Windows Release value"
 requestBody.SetMinimumSupportedWindowsRelease(&minimumSupportedWindowsRelease) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

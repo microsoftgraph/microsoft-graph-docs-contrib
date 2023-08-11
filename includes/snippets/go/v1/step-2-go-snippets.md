@@ -55,7 +55,7 @@ members := []graphmodels.ConversationMemberable {
 }
 requestBody.SetMembers(members)
 
-result, err := graphClient.Chats().Post(context.Background(), requestBody, nil)
+chats, err := graphClient.Chats().Post(context.Background(), requestBody, nil)
 
 
 ```

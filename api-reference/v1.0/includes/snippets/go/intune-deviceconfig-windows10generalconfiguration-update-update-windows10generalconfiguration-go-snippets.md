@@ -451,7 +451,7 @@ requestBody.SetLogonBlockFastUserSwitching(&logonBlockFastUserSwitching)
 tenantLockdownRequireNetworkDuringOutOfBoxExperience := true
 requestBody.SetTenantLockdownRequireNetworkDuringOutOfBoxExperience(&tenantLockdownRequireNetworkDuringOutOfBoxExperience) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Patch(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

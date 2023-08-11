@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().ByExternalPartnerSettingId("cloudPcExternalPartnerSetting-id").Get(context.Background(), nil)
+externalPartnerSettings, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().ByCloudPcExternalPartnerSettingId("cloudPcExternalPartnerSetting-id").Get(context.Background(), nil)
 
 
 ```

@@ -22,7 +22,7 @@ configuration := &graphdrives.DriveItemRootRequestBuilderGetRequestConfiguration
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Root().Get(context.Background(), configuration)
+root, err := graphClient.Drives().ByDriveId("drive-id").Root().Get(context.Background(), configuration)
 
 
 ```

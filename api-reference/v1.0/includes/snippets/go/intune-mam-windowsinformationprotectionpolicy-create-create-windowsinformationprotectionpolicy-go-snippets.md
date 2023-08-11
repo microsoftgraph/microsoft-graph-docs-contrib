@@ -240,7 +240,7 @@ requestBody.SetMinutesOfInactivityBeforeDeviceLock(&minutesOfInactivityBeforeDev
 daysWithoutContactBeforeUnenroll := int32(0)
 requestBody.SetDaysWithoutContactBeforeUnenroll(&daysWithoutContactBeforeUnenroll) 
 
-result, err := graphClient.DeviceAppManagement().WindowsInformationProtectionPolicies().Post(context.Background(), requestBody, nil)
+windowsInformationProtectionPolicies, err := graphClient.DeviceAppManagement().WindowsInformationProtectionPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

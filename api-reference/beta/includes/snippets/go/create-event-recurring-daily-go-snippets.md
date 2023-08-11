@@ -81,7 +81,7 @@ range.SetNumberOfOccurrences(&numberOfOccurrences)
 recurrence.SetRange(range)
 requestBody.SetRecurrence(recurrence)
 
-result, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
+events, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 
 ```

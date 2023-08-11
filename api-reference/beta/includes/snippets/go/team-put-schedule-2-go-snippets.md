@@ -45,7 +45,7 @@ approvedLocation.SetLongitude(&longitude)
 timeClockSettings.SetApprovedLocation(approvedLocation)
 requestBody.SetTimeClockSettings(timeClockSettings)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().Put(context.Background(), requestBody, nil)
+schedule, err := graphClient.Teams().ByTeamId("team-id").Schedule().Put(context.Background(), requestBody, nil)
 
 
 ```

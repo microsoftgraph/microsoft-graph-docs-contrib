@@ -338,7 +338,6 @@ The following is a JSON representation of the resource.
 ```json
 {
   "allowExternalSenders": false,
-  
   "acceptedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "assignedLicenses": [{ "@odata.type": "microsoft.graph.assignedLicense" }],
   "autoSubscribeNewMembers": true,

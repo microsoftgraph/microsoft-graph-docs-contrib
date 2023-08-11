@@ -22,7 +22,7 @@ requestBody.SetDisplayName(&displayName)
 createdBy := graphmodels.NewIdentitySet()
 requestBody.SetCreatedBy(createdBy)
 
-result, err := graphClient.Security().Labels().Categories().Post(context.Background(), requestBody, nil)
+categories, err := graphClient.Security().Labels().Categories().Post(context.Background(), requestBody, nil)
 
 
 ```
