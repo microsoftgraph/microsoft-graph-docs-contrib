@@ -23,6 +23,8 @@ restore_point_setting.user_restore_enabled = True
 request_body.restore_point_setting = restore_point_setting
 request_body.local_admin_enabled = False
 
+request_body.reset_enabled = True
+
 
 
 

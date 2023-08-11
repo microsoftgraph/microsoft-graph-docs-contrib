@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").MeetingAttendanceReport().Get(context.Background(), nil)
+meetingAttendanceReport, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").MeetingAttendanceReport().Get(context.Background(), nil)
 
 
 ```

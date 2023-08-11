@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new GovernanceRoleAssignmentRequest();
 $requestBody->setRoleDefinitionId('70521f3e-3b95-4e51-b4d2-a2f485b02103');
@@ -23,15 +23,15 @@ $requestBody->setType('AdminUpdate');
 $schedule = new GovernanceSchedule();
 $schedule->setType('Once');
 
-$schedule->setStartDateTime(new DateTime('2018-03-08T05:42:45.317Z'));
+$schedule->setStartDateTime(new \DateTime('2018-03-08T05:42:45.317Z'));
 
-$schedule->setEndDateTime(new DateTime('2018-06-05T05:42:31.000Z'));
+$schedule->setEndDateTime(new \DateTime('2018-06-05T05:42:31.000Z'));
 
 
 $requestBody->setSchedule($schedule);
 
 
-$result = $graphServiceClient->privilegedAccess()->byPrivilegedAccesId('privilegedAccess-id')->roleAssignmentRequests()->post($requestBody);
+$result = $graphServiceClient->privilegedAccess()->byPrivilegedAccessId('privilegedAccess-id')->roleAssignmentRequests()->post($requestBody);
 
 
 ```

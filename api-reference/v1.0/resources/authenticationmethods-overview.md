@@ -2,7 +2,7 @@
 title: "Azure AD authentication methods API overview"
 description: "Authentication methods are how users authenticate in Azure AD."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "jpettere"
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
 ms.date: 10/21/2022

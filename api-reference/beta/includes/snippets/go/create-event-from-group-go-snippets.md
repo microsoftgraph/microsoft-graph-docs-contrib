@@ -57,7 +57,7 @@ attendees := []graphmodels.attendeeable {
 }
 requestBody.SetAttendees(attendees)
 
-result, err := graphClient.Groups().ByGroupId("group-id").Events().Post(context.Background(), requestBody, nil)
+events, err := graphClient.Groups().ByGroupId("group-id").Events().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AuthorizationPolicy();
 $requestBody->setBlockMsolPowerShell(true);
 
 
 
-$result = $graphServiceClient->policies()->authorizationPolicy()->byAuthorizationPolicy()Id('authorizationPolicy-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->authorizationPolicy()->byAuthorizationPolicyId('authorizationPolicy-id')->patch($requestBody);
 
 
 ```

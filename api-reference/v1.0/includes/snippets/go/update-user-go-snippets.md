@@ -23,7 +23,7 @@ requestBody.SetBusinessPhones(businessPhones)
 officeLocation := "18/2111"
 requestBody.SetOfficeLocation(&officeLocation) 
 
-result, err := graphClient.Me().Patch(context.Background(), requestBody, nil)
+me, err := graphClient.Me().Patch(context.Background(), requestBody, nil)
 
 
 ```
