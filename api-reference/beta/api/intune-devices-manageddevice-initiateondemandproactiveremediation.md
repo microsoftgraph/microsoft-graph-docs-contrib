@@ -54,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|scriptPolicyId|String|Not yet documented|
+|scriptPolicyId|String||
 
 
 
