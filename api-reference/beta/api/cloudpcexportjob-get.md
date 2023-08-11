@@ -135,9 +135,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get an export job for the RemoteConnectionHistoricalReports report
+### Example 2: Get an export job for the RemoteConnectionQualityReports report
 
-The following example shows how to get an export job that was created by the POST request for the `RemoteConnectionHistoricalReports` report.
+The following example shows how to get an export job that was created by the POST request for the `RemoteConnectionQualityReports` report.
 
 #### Request
 
