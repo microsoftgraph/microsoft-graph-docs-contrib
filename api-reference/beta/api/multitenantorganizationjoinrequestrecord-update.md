@@ -20,8 +20,6 @@ To allow for asynchronous processing, you must wait a **minimum of 2 hours** bet
 
 Furthermore, to allow for asynchronous processing, you must wait **up to 4 hours** before joining a multi-tenant organization is completed.
 
-If you have never manipulated your [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview), refrain from manipulating any cross-tenant access settings for **up to 4 hours** while the join request is processing.
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
