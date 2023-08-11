@@ -66,7 +66,7 @@ requestBody.SetChecklist(checklist)
 description := "Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Planner().Tasks().ByTaskId("plannerTask-id").Details().Patch(context.Background(), requestBody, configuration)
+details, err := graphClient.Planner().Tasks().ByPlannerTaskId("plannerTask-id").Details().Patch(context.Background(), requestBody, configuration)
 
 
 ```

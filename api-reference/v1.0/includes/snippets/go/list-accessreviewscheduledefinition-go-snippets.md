@@ -27,7 +27,7 @@ configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDefinit
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Get(context.Background(), configuration)
+definitions, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Get(context.Background(), configuration)
 
 
 ```

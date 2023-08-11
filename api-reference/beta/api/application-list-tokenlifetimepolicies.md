@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) objects that are assigned to an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md)..
+List the [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) objects that are assigned to an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md). Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
 ## Permissions
 
@@ -91,10 +91,6 @@ GET https://graph.microsoft.com/beta/applications/3ccc9971-9ae7-45d6-8de8-263fd2
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-tokenlifetimepolicies-on-application-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-tokenlifetimepolicies-on-application-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

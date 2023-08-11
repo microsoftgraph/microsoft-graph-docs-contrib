@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/security/labels/categories/{categoryTemp
 
 ---
 
-
 ### Response
 The following is an example of the response.
 >

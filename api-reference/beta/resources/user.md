@@ -140,6 +140,10 @@ This resource supports:
 | [Delete profile](../api/profile-delete.md) | None | Delete profile object from a user's account. |
 | **Schema extensions** |||
 | [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom typed data to a resource. |
+| **Sponsors** |||
+| [Assign sponsors](../api/user-post-sponsors.md) | None | Assign a user a sponsor. |
+| [List sponsors](../api/user-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups who are this user's sponsors. |
+| [Remove sponsors](../api/user-delete-sponsors.md) | None | Remove a user's sponsor. |
 | **Teamwork** |||
 |[List apps installed for user](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | Lists apps installed in the personal scope of a user.|
 |[Get the installed app for user](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
@@ -240,7 +244,7 @@ This resource supports:
 | schools | String collection | A list for the user to enumerate the schools they have attended. <br><br>Returned only on `$select`. |
 |securityIdentifier| String | Security identifier (SID) of the user, used in Windows scenarios. <br><br>Read-only. Returned by default. <br>Supports `$select` and `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | serviceProvisioningErrors | [serviceProvisioningError](serviceprovisioningerror.md) collection | Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object . <br> Supports `$filter` (`eq`, `not`, for isResolved and serviceInstance).|
-| showInAddressList | Boolean | **Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](/graph/known-issues#showinaddresslist-property-is-out-of-sync-with-microsoft-exchange).|
+| showInAddressList | Boolean | **Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=14972).|
 | signInSessionsValidFromDateTime | DateTimeOffset | Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|
 | skills | String collection | A list for the user to enumerate their skills. <br><br>Returned only on `$select`. |
 | signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user. Read-only.<br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties. <br><br>**Note:** <br/><li> Details for this property require an Azure AD Premium P1/P2 license and the **AuditLog.Read.All** permission.<li>This property is not returned for a user who has never signed in or last signed in before April 2020.|
@@ -355,6 +359,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
 |security|[security](security.md) |Nullable.|
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
+|sponsors|[directoryObject](../resources/directoryobject.md) collection|The users and groups that are responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated. (HTTP Methods: GET, POST, DELETE.). Supports `$expand`.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
 |transitiveMemberOf| [directoryObject](directoryobject.md) collection |  The groups, including nested groups, and directory roles that a user is a member of. Nullable.|

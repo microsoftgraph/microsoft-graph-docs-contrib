@@ -100,10 +100,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/add-tab-to-chat-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/add-tab-to-chat-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/add-tab-to-chat-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -145,6 +141,7 @@ Content-type: application/json
 - [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 - [Add tab to channel](channel-post-tabs.md)
 - [Add app to chat](chat-post-installedapps.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

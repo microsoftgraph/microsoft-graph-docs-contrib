@@ -33,13 +33,16 @@ Each access package is referenced by a single access package catalog, and has li
 | [List accessPackagesIncompatibleWith](../api/accesspackage-list-accesspackagesincompatiblewith.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of the  **accesspackage** objects which list this access package as incompatible. |
 |[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[accessPackage](../resources/accesspackage.md) collection|Retrieve the list of **accessPackage** objects filtered on the signed-in user.|
 |[getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md)|[accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection|Retrieve a list of **accessPackageAssignmentRequestRequirement** objects with request requirements. |
+| [List accessPackageResourceRoleScopes](../api/accesspackage-list-resourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve a list of **accessPackageResourceRoleScope** objects for an access package. |
+| [Create accessPackageResourceRoleScope](../api/accesspackage-post-resourcerolescopes.md) | | Create a new **accessPackageResourceRoleScope** object for an access package. |
+| [Delete accessPackageResourceRoleScope](../api/accesspackage-delete-resourcerolescopes.md) | | Delete an **accessPackageResourceRoleScope** object from an access package. |
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |description|String|The description of the access package.|
-|displayName|String|The display name of the access package. Supports $filter (`eq`, `contains`).|
+|displayName|String|Required. The display name of the access package. Supports $filter (`eq`, `contains`).|
 |id|String|Read-only.|
 |isHidden|Boolean|Whether the access package is hidden from the requestor.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
@@ -48,10 +51,11 @@ Each access package is referenced by a single access package catalog, and has li
 |Relationship|Type|Description|
 |:---|:---|:---|
 |accessPackagesIncompatibleWith | [accessPackage](accesspackage.md) collection | The access packages that are incompatible with this package. Read-only. |
-|assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Read-only. Nullable.|
-|catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Read-only. Nullable.|
+|assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Read-only. Nullable. Supports `$expand`.|
+|catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Required when creating the access package. Read-only. Nullable.|
 |incompatibleAccessPackages | [accessPackage](accesspackage.md) collection | The access packages whose assigned users are ineligible to be assigned this access package. |
 |incompatibleGroups | [group](group.md) collection | The groups whose members are ineligible to be assigned this access package. |
+|resourceRoleScopes| [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | The resource roles and scopes in this access package. |
 
 ## JSON representation
 The following is a JSON representation of the resource.

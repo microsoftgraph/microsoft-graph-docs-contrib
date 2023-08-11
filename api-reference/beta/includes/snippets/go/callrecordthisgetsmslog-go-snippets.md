@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Communications().CallRecords().MicrosoftGraphCallRecordsGetSmsLog(fromDateTime={fromDateTime},toDateTime={toDateTime})().Get(context.Background(), nil)
+microsoft.graph.callRecords.getSmsLog(fromDateTime={fromDateTime},toDateTime={toDateTime}), err := graphClient.Communications().CallRecords().MicrosoftGraphCallRecordsGetSmsLog(fromDateTime={fromDateTime},toDateTime={toDateTime})().Get(context.Background(), nil)
 
 
 ```
