@@ -52,12 +52,12 @@ The following is an example of the request.
   "name": "create_educationmoduleresource_patch"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/1b55f828-731f-44ed-9318-0455e783f950/resources/4d6abd69-542a-422a-94d9-2a0c64229fbe
+PATCH https://graph.microsoft.com/beta/education/classes/0b78e924-9623-49d8-b444-23bfabafa4fe/modules/fa1f6b67-7da6-458d-82fd-0d671df7bc31/resources/2fb5e262-611b-4672-8f55-1236b7f2804a
 Content-type: application/json
 
 {
     "resource": {
-        "displayName" : "new excel file patched.xlsx"
+        "displayName" : "new pdf file patched.pdf"
     }
 }
 ```
@@ -73,23 +73,23 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationExcelResource"
 } -->
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 Ok
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('1b55f828-731f-44ed-9318-0455e783f950')/resources/$entity",
-    "id": "4d6abd69-542a-422a-94d9-2a0c64229fbe",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('0b78e924-9623-49d8-b444-23bfabafa4fe')/modules('fa1f6b67-7da6-458d-82fd-0d671df7bc31')/resources/$entity",
+    "id": "2fb5e262-611b-4672-8f55-1236b7f2804a",
     "resource": {
-        "@odata.type": "#microsoft.graph.educationExcelResource",
-        "displayName": "new excel file patched.xlsx",
-        "createdDateTime": "2023-07-28T22:39:23.6842308Z",
-        "lastModifiedDateTime": "2023-07-28T23:51:23.6842351Z",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZBEY7CWDS6HRG22PAHYJGKGM3G",
+        "@odata.type": "#microsoft.graph.educationFileResource",
+        "displayName": "new pdf file patched.pdf",
+        "createdDateTime": "2023-04-19T20:56:36.6529565Z",
+        "lastModifiedDateTime": "2023-04-19T20:56:36.6529598Z",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!b8MR4rrk6kK793yj5m0azKvekbG46dBGsI2G7Vlzar_XjshebPh4RIbAjeFl67oU/items/01LGT6P7HL7I7CL2W3VNAYPD67G6SBIEB7",
         "createdBy": {
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "93f30bbf-7f10-4dbb-a5bd-b59f75d4f690",
                 "displayName": null
             }
         },
@@ -97,7 +97,7 @@ Content-type: application/json
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "93f30bbf-7f10-4dbb-a5bd-b59f75d4f690",
                 "displayName": null
             }
         }
