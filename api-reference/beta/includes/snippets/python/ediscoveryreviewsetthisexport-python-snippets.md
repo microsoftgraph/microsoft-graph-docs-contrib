@@ -12,7 +12,7 @@ request_body.output_name = 'Export via API'
 
 request_body.description = 'Export for the Contoso investigation'
 
-request_body.exportoptions(ExportOptions.OriginalFiles,fileInfo,tags('exportoptions.originalfiles,fileinfo,tags'))
+request_body.exportoptions(ExportOptions.OriginalFiles,tags('exportoptions.originalfiles,tags'))
 
 request_body.exportstructure(ExportFileStructure.Directory('exportfilestructure.directory'))
 

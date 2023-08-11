@@ -8700,13 +8700,6 @@ items:
                         href: api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-get.md
                   - name: User experience analytics device status
                     href: resources/intune-devices-userexperienceanalyticsdevicestatus.md
-                  - name: User experience analytics device timeline event
-                    href: resources/intune-devices-userexperienceanalyticsdevicetimelineevent.md
-                    items:
-                      - name: List
-                        href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-list.md
-                      - name: Get
-                        href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-get.md
                   - name: User experience analytics device without cloud identity
                     href: resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md
                     items:
@@ -10316,6 +10309,8 @@ items:
                     href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
                   - name: Get historical remote connection reports
                     href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
+                  - name: Get inaccessible Cloud PC reports
+                    href: api/cloudpcreports-getinaccessiblecloudpcreports.md
                   - name: Get real time remote connection latency
                     href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
                   - name: Get real time remote connection status
@@ -10980,6 +10975,8 @@ items:
           - name: Submission
             href: resources/educationsubmission.md
             items:
+              - name: List submissions for assignment
+                href: api/educationassignment-list-submissions.md
               - name: List submission resources
                 href: api/educationsubmission-list-resources.md
               - name: Add submission resource
@@ -12525,6 +12522,8 @@ items:
                         href: api/accesspackage-list-accesspackageresourcerolescopes.md
                       - name: Create
                         href: api/accesspackage-post-accesspackageresourcerolescopes.md
+                      - name: Create
+                        href: api/accesspackage-delete-accesspackageresourcerolescopes.md
                   - name: Access package subject
                     href: resources/accesspackagesubject.md
                     items:
@@ -13429,8 +13428,10 @@ items:
               - name: Data policy operation
                 href: resources/datapolicyoperation.md
                 items:
-                  - name: Get data policy operation
+                  - name: Get
                     href: api/datapolicyoperation-get.md
+                  - name: Export personal data
+                    href: api/user-exportpersonaldata.md
               - name: Delegated permission grant
                 href: resources/oauth2permissiongrant.md
                 items:
@@ -15650,40 +15651,6 @@ items:
                 items:
                   - name: Alert evidence
                     href: resources/security-alertevidence.md
-                  - name: Amazon resource evidence
-                    href: resources/security-amazonresourceevidence.md
-                  - name: Analyzed message evidence
-                    href: resources/security-analyzedmessageevidence.md
-                  - name: Azure resource evidence
-                    href: resources/security-azureresourceevidence.md
-                  - name: Cloud application evidence
-                    href: resources/security-cloudapplicationevidence.md
-                  - name: Device evidence
-                    href: resources/security-deviceevidence.md
-                  - name: File evidence
-                    href: resources/security-fileevidence.md
-                  - name: Google Cloud resource evidence
-                    href: resources/security-googlecloudresourceevidence.md
-                  - name: IP evidence
-                    href: resources/security-ipevidence.md
-                  - name: Mailbox evidence
-                    href: resources/security-mailboxevidence.md
-                  - name: Mail cluster evidence
-                    href: resources/security-mailclusterevidence.md
-                  - name: OAuth application evidence
-                    href: resources/security-oauthapplicationevidence.md
-                  - name: Process evidence
-                    href: resources/security-processevidence.md
-                  - name: Registry key evidence
-                    href: resources/security-registrykeyevidence.md
-                  - name: Registry value evidence
-                    href: resources/security-registryvalueevidence.md
-                  - name: Security group evidence
-                    href: resources/security-securitygroupevidence.md
-                  - name: URL evidence
-                    href: resources/security-urlevidence.md
-                  - name: User evidence
-                    href: resources/security-userevidence.md
               - name: Incident
                 items:
                   - name: Incident
@@ -16216,10 +16183,16 @@ items:
                     href: resources/security-host.md
                   - name: Get
                     href: api/security-host-get.md
+                  - name: List children host pairs
+                    href: api/security-host-list-childhostpairs.md
+                  - name: List host pairs
+                    href: api/security-host-list-hostpairs.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
+                  - name: List parent host pairs
+                    href: api/security-host-list-parenthostpairs.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
@@ -16242,6 +16215,18 @@ items:
                     href: resources/security-hostcookie.md
                   - name: Get
                     href: api/security-hostcookie-get.md
+              - name: Host pair
+                items:
+                  - name: Host pair
+                    href: resources/security-hostpair.md
+                  - name: Get
+                    href: api/security-hostpair-get.md
+                  - name: List host pairs for a host
+                    href: api/security-host-list-hostpairs.md
+                  - name: List parent host pairs
+                    href: api/security-host-list-parenthostpairs.md
+                  - name: List children host pairs
+                    href: api/security-host-list-childhostpairs.md
               - name: Host tracker
                 items:
                   - name: Host tracker
@@ -17156,9 +17141,18 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
-                  - name: Call transcript (preview)
-                    href: resources/calltranscript.md
+                  - name: Call recording (preview)
                     items:
+                      - name: Call recording (preview)
+                        href: resources/callrecording.md
+                      - name: List
+                        href: api/onlinemeeting-list-recordings.md
+                      - name: Get
+                        href: api/callrecording-get.md                
+                  - name: Call transcript (preview)
+                    items:
+                      - name: Call transcript (preview)
+                        href: resources/calltranscript.md
                       - name: List
                         href: api/onlinemeeting-list-transcripts.md
                       - name: Get

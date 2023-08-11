@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DirectoryRoles(roleTemplateId='{roleTemplateId}')().Get(context.Background(), nil)
+directoryRoles(roleTemplateId='{roleTemplateId}'), err := graphClient.DirectoryRoles(roleTemplateId='{roleTemplateId}')().Get(context.Background(), nil)
 
 
 ```

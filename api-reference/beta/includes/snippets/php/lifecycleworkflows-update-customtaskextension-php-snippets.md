@@ -35,13 +35,9 @@ $requestBody->setAuthenticationConfiguration($authenticationConfiguration);
 $clientConfiguration = new CustomExtensionClientConfiguration();
 $clientConfiguration->setOdataType('#microsoft.graph.customExtensionClientConfiguration');
 
+$clientConfiguration->setMaximumRetries(1);
+
 $clientConfiguration->setTimeoutInMilliseconds(1000);
-
-$additionalData = [
-		'maximumRetries' => 1,
-];
-$clientConfiguration->setAdditionalData($additionalData);
-
 
 
 $requestBody->setClientConfiguration($clientConfiguration);

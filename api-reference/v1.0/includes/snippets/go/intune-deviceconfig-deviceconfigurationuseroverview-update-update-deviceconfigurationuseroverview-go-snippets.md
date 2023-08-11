@@ -32,7 +32,7 @@ requestBody.SetLastUpdateDateTime(&lastUpdateDateTime)
 configurationVersion := int32(4)
 requestBody.SetConfigurationVersion(&configurationVersion) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").UserStatusOverview().Patch(context.Background(), requestBody, nil)
+userStatusOverview, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").UserStatusOverview().Patch(context.Background(), requestBody, nil)
 
 
 ```

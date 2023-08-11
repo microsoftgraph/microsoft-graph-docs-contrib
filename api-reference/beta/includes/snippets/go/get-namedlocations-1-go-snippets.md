@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(context.Background(), nil)
+namedLocations, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(context.Background(), nil)
 
 
 ```

@@ -128,6 +128,10 @@ Content-length: 860
 [!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-sharedpcconfiguration-create-create-sharedpcconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-sharedpcconfiguration-create-create-sharedpcconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-sharedpcconfiguration-create-create-sharedpcconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

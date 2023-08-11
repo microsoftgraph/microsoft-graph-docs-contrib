@@ -147,7 +147,7 @@ osVersionsSummary := []graphmodels.OsVersionCountable {
 windowsMalwareOverview.SetOsVersionsSummary(osVersionsSummary)
 requestBody.SetWindowsMalwareOverview(windowsMalwareOverview)
 
-result, err := graphClient.DeviceManagement().Patch(context.Background(), requestBody, nil)
+deviceManagement, err := graphClient.DeviceManagement().Patch(context.Background(), requestBody, nil)
 
 
 ```

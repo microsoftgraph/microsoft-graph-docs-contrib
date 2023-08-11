@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc oauth2permission-grants create --body '{\
     "clientId": "b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94",\
     "consentType": "Principal",\
