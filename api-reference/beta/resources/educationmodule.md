@@ -13,13 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a group or individual learning resources which are then arranged in a neat, systematic manner.
+A module is associated with a [class](../resources/educationclass.md). Represents a group of individual learning resources that are organized in a systematic way.
 
-Only teachers or team owners can create **modules**. **Modules** contain read-only learning resources and assignments the teacher wants the student to complete.
+Only teachers or team owners can create modules. Modules contain read-only learning resources and assignments the teacher wants the student to complete.
 
 When a **module** is created, it is in a `draft` state. Students can't see the **module** until it is published. You can change the status of a **module** by using the [publish](../api/educationmodule-publish.md) action. You can't use a PATCH request to change the **module** status.
 
-The **module** APIs are exposed in the class namespace.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -27,7 +26,8 @@ Inherits from [entity](../resources/entity.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create module resource](../api/educationmodule-post-resources.md) |[educationModuleResource](educationmoduleresource.md)| Create a new **educationModuleResource** by posting to the resources collection.|
+|[List modules](../api/educationclass-list-modules.md) |[educationModule](educationmodule.md) collection| Get an **educationModule** object collection.|
+|[Create](../api/educationclass-post-module.md) | [educationModule](educationmodule.md)	|Create an **educationModule** object. |
 |[Get module](../api/educationmodule-get.md) | [educationModule](educationmodule.md) |Read properties and relationships of an **educationModule** object.|
 |[Update](../api/educationmodule-update.md) | [educationModule](educationmodule.md)	|Update an **educationModule** object. |
 |[Delete](../api/educationmodule-delete.md) | None |Delete an **educationModule** object. |
@@ -35,7 +35,6 @@ Inherits from [entity](../resources/entity.md).
 |[Unpin](../api/educationmodule-unpin.md) | [educationModule](educationmodule.md)	|Unpin an **educationModule** object. |
 |[Publish](../api/educationmodule-publish.md)|[educationModule](educationmodule.md)|Change the state of an **educationModule** object from draft to published.|
 |[Set up module resources folder](../api/educationmodule-setupresourcesfolder.md)| [educationModule](educationmodule.md)| Create a SharePoint folder (under pre-defined location) to upload files as module resources.|
-|[List resources](../api/educationmodule-list-resources.md) |[educationModuleResource](educationmoduleresource.md) collection| Get an **educationModuleResource** object collection.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -49,7 +48,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[identitySet](identityset.md)| The last user that modified the **module**. |
 |lastModifiedDateTime|DateTimeOffset|Date time the **module** was last modified.  The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`|
 |resourcesFolderUrl|string| Folder URL where all the file resources for this **module** are stored.|
-|status|string| Status of the **module**.  You can not PATCH this value.  Possible values are: `draft` and `published`.|
+|status|string| Status of the **module**.  You can't use a PATCH operation to update this value. Possible values are: `draft` and `published`.|
 
 ## Relationships
 | Relationship | Type	|Description|

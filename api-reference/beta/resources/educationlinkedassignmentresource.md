@@ -18,7 +18,7 @@ A subclass of [educationResource](educationresource.md) that represents a link t
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|url|String|Url of the actual assignment.|
+|url|String|URL of the actual assignment.|
 
 ## JSON representation
 

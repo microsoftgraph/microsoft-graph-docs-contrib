@@ -1,6 +1,6 @@
 ---
 title: "Create educationModule"
-description: "Create a draft classwork module"
+description: "Create a draft classwork module."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [module](../resources/educationmodule.md) in a [class](../resources/educationclass.md).
 
-Only teachers in a class can create a module. Modules start in the Draft state, which means that students will not see the modules until publication.
+Only teachers in a class can create a module. Modules start in the `draft` state, which means that students will not see the modules until publication.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

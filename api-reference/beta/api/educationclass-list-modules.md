@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of module objects. Only teachers, students, and applications with application permissions can perform this operation.
+Retrieve a list of [module](../resources/educationmodule.md) objects. Only teachers, students, and applications with application permissions can perform this operation.
 
-A teacher or an application executing with application permissions can see all module objects for the class. Students can only see published modules.
+A teacher or an application with application permissions can see all module objects for the class. Students can only see published modules.
 
 ## Permissions
 
