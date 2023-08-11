@@ -1,7 +1,7 @@
 ---
 title: "List softwareOathMethods"
 description: "Retrieve a list of a user's softwareOathAuthenticationMethods objects and their properties."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

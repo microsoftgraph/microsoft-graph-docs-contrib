@@ -2,7 +2,7 @@
 title: "Update phoneAuthenticationMethod"
 description: "Update the phone number associated with a phoneAuthenticationMethod object."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "luc-msft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

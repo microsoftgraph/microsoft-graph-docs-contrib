@@ -2,7 +2,7 @@
 title: "Update accessReview (deprecated)"
 description: "In the Azure AD access reviews feature, update an existing accessReview object to change one or more of its properties."
 ms.localizationpriority: medium
-author: "jyothig123"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
