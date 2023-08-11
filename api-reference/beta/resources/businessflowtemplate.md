@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, the `businesFlowTemplate` 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "jyothig123"
+author: "shubhamguptacal"
 ---
 
 # businessFlowTemplate resource type (deprecated)

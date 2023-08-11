@@ -2,7 +2,7 @@
 title: "List accessReview decisions (deprecated)"
 description: "In the Azure AD access reviews feature, retrieve the decisions of an accessReview object."
 ms.localizationpriority: medium
-author: "jyothig123"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
