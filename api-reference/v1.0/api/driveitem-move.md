@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and updated [DriveIt
 
 ## Example
 
-This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.
+This example moves an item specified by {item-id} into a folder in the user's drive with the drive ID `new-parent-folder-id` and with the root ID `new-parent-folder-root-id`.
 
 
 # [HTTP](#tab/http)
@@ -72,7 +72,8 @@ Content-type: application/json
 
 {
   "parentReference": {
-    "id": "{new-parent-folder-id}"
+    "id": "{new-parent-folder-root-id}",
+    "driveId": "{new-parent-folder-id}"
   },
   "name": "new-item-name.txt"
 }
