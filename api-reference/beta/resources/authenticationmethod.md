@@ -2,7 +2,7 @@
 title: "authenticationMethod resource type"
 description: "Represents an authentication method registered to a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "jpettere"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---

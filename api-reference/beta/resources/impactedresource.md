@@ -3,7 +3,7 @@ title: "impactedResource resource type"
 description: "Represents an Azure AD resource in your tenant that's associated with an Azure AD recommendation."
 author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

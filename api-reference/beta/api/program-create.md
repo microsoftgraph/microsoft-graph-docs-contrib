@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, create a new program objec
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ---
 
 # Create program (deprecated)
@@ -121,12 +121,12 @@ Content-type: application/json
 
 ## See also
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List programs](program-list.md) |	[program](../resources/program.md) collection|	Get a collection of all the programs.|
-|[List programControls of a program](program-listcontrols.md) |		[programControl](../resources/programcontrol.md) collection|	Get a collection of the controls of a program.|
-|[Update program](program-update.md) |	[program](../resources/program.md)|	Update a program.|
-|[Create programControl](programcontrol-create.md) |		[programControl](../resources/programcontrol.md)	|	Add a programControl to a program.|
+|[List programs](program-list.md) |    [program](../resources/program.md) collection|    Get a collection of all the programs.|
+|[List programControls of a program](program-listcontrols.md) |        [programControl](../resources/programcontrol.md) collection|    Get a collection of the controls of a program.|
+|[Update program](program-update.md) |    [program](../resources/program.md)|    Update a program.|
+|[Create programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |    Add a programControl to a program.|
 
 <!--
 {
