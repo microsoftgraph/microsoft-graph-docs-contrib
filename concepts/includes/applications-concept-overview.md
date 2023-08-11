@@ -40,7 +40,7 @@ For more information about on-premises publishing, see the following articles:
 - [Using Azure AD Application Proxy to publish on-premises apps for remote users](/azure/active-directory/manage-apps/what-is-application-proxy)
 
 To learn about using the on-premises publishing APIs, see the following tutorial and its associated APIs:
-- [Automate the configuration of Application Proxy using the Microsoft Graph API](./application-proxy-configure-api.md)
+- [Automate the configuration of Application Proxy using the Microsoft Graph API](/graph/application-proxy-configure-api)
     - [applicationTemplate](/graph/api/resources/applicationtemplate)
     - [application](/graph/api/resources/application)
     - [onPremisesPublishing](/graph/api/resources/onpremisespublishingprofile-root)
