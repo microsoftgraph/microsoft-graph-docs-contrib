@@ -44,7 +44,7 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 > Because pronouns settings commands are only available in beta, switch to the beta profile before running the command.
 >
 > ```powershell
->    Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.2.0
+>    Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.3.0
 > ```
 
 ### Confirm your current settings
@@ -59,7 +59,7 @@ To get pronoun settings configuration for an organization, use the following com
 >
 
 ```powershell
-   Get-MgBetaAdminPersonPronoun
+  Get-MgBetaAdminPeoplePronoun
 ```
 
 ### Enable pronouns in your organization
@@ -76,7 +76,7 @@ By default, pronouns are disabled. You can use the Microsoft Graph PowerShell mo
 Use the following command, specify `-IsEnabledInOrganization` as `true`.
 
 ```powershell
-  Update-MgBetaAdminPersonPronoun -IsEnabledInOrganization:$true
+  Update-MgBetaAdminPeoplePronoun -IsEnabledInOrganization:$true
 ```
 
 ### Disable pronouns in your organization
@@ -84,7 +84,7 @@ Use the following command, specify `-IsEnabledInOrganization` as `true`.
 Alternatively, you can make pronouns unavailable for your organization using the following command, where you specify `-IsEnabledInOrganization` as `false`.
 
 ```powershell
-  Update-MgBetaAdminPersonPronoun -IsEnabledInOrganization:$false
+  Update-MgBetaAdminPeoplePronoun -IsEnabledInOrganization:$false
 ```
 
 ## Configure pronouns settings using the Microsoft Graph REST API
