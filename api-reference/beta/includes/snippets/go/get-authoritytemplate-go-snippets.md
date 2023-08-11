@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().Labels().Authorities().ByAuthoritieId("authorityTemplate-id").Get(context.Background(), nil)
+authorities, err := graphClient.Security().Labels().Authorities().ByAuthorityTemplateId("authorityTemplate-id").Get(context.Background(), nil)
 
 
 ```

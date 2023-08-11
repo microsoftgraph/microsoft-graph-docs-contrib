@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OutlookTaskFolder();
 $requestBody->setName('Charity work');
 
 
 
-$result = $graphServiceClient->me()->outlook()->taskFolders()->byTaskFolderId('outlookTaskFolder-id')->patch($requestBody);
+$result = $graphServiceClient->me()->outlook()->taskFolders()->byOutlookTaskFolderId('outlookTaskFolder-id')->patch($requestBody);
 
 
 ```

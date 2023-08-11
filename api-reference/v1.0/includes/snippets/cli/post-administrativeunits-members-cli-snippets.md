@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc directory administrative-units members create --administrative-unit-id {administrativeUnit-id} --body '{\
   "@odata.type": "#microsoft.graph.group",\
   "description": "Self help community for golf",\

@@ -63,6 +63,7 @@ Inherits from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp
 |versionName|String|The version name of managed Android Line of Business (LoB) app.|
 |versionCode|String|The version code of managed Android Line of Business (LoB) app.|
 |identityVersion|String|The identity version. This property is being deprecated in 2302(February 2023).|
+|targetedPlatforms|[androidTargetedPlatforms](../resources/intune-apps-androidtargetedplatforms.md)|The platforms to which the application can be targeted. If not specified, will defauilt to Android Device Administrator. Possible values are: `androidDeviceAdministrator`, `androidOpenSourceProject`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -137,6 +138,7 @@ Here is a JSON representation of the resource.
   },
   "versionName": "String",
   "versionCode": "String",
-  "identityVersion": "String"
+  "identityVersion": "String",
+  "targetedPlatforms": "String"
 }
 ```

@@ -32,7 +32,7 @@ orderHint := " !"
 assignments.SetAdditionalData(additionalData)
 requestBody.SetAssignments(assignments)
 
-result, err := graphClient.Planner().Tasks().Post(context.Background(), requestBody, nil)
+tasks, err := graphClient.Planner().Tasks().Post(context.Background(), requestBody, nil)
 
 
 ```

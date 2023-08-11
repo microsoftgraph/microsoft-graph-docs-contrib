@@ -1,0 +1,45 @@
+{:allowed-branchname-matches ["main"]
+ :allowed-filename-matches ["concepts/" "api-reference/"] ;; Can be overridden in repo-specific edn file. This is an allow list that identifies which folders contain the files Acrolinx will check. Separate multiple folders as follows ["folder/" "folder2"]
+ 
+ :use-gh-statuses true
+ 
+ :targets 
+   {
+     :counts {
+              ;;:spelling 10
+              ;;:grammar 3
+              ;;:total 15 ;; absolute flag count but i don't know the difference between this and issues
+              ;;:issues 15 ;; coming from the platform, will need to be tested.
+             }
+     :scores {
+              ;;:terminology 100
+              ;;:qualityscore 80 ;; Remove the ;; to turn on the min score. Set 80 to whatever min score client wants (eventually should be 80) and leave the structure in place
+              ;;:spelling 40
+             }
+   }
+ 
+ :guidance-profile "ddd70715-fa0d-3b81-98b1-11d94b0e731a" ;; Profile ID for "Microsoft standard"
+
+ :template-header
+
+ "
+
+## Acrolinx Scorecards 
+ 
+Click the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology:
+
+| Article | Score | Issues | Scorecard | Processed |
+| ------- | ----- | ------ | --------- | --------- |
+"
+
+ :template-change
+ "| ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/flags/issues} | [link](${acrolinx/scorecard}) | ${s/status} |
+"
+ 
+ :template-footer
+ "
+**More info about Acrolinx**
+ 
+Use the Acrolinx extension, or sidebar, in Visual Studio Code to check spelling, grammar, style, tone, clarity, and key terminology when you're creating or updating content. For more information, see [Use the Visual Studio Code extension to run Acrolinx locally](https://review.docs.microsoft.com/en-us/office-authoring-guide/acrolinx-vscode?branch=master).
+"
+}

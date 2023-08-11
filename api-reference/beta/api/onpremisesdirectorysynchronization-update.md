@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------- |
 | Delegated (work or school account)     | OnPremDirectorySynchronization.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.                               |
-| Application                            | Not supported.                               |
+| Application                            | OnPremDirectorySynchronization.ReadWrite.All |
 
 For delegated scenarios, the user needs to be assigned the *Global Administrator* [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc chats members create --chat-id {chat-id} --body '{\
     "@odata.type": "#microsoft.graph.aadUserConversationMember",\
     "user@odata.bind": "https://graph.microsoft.com/v1.0/users/82af01c5-f7cc-4a2e-a728-3a5df21afd9d",\
