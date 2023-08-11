@@ -27,9 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------- |
 | Delegated (work or school account)     | TeamsActivity.Send                           |
 | Delegated (personal Microsoft account) | Not supported.                               |
-| Application                            | TeamsActivity.Send, TeamsActivity.Send.User* |
+| Application                            | TeamsActivity.Send, TeamsActivity.Send.User  |
 
->**Note:** Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). These RSC permissions pertain to the individual recipients in the payload.
+>**Note:** The `TeamsActivity.Send.User` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). RSC permissions pertain to the individual recipients in the payload.
 
 ## HTTP request
 
