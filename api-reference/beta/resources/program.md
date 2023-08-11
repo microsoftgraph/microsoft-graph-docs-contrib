@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, a program is a container, 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "jyothig123"
+author: "shubhamguptacal"
 ---
 
 # program resource type (deprecated)

@@ -1,7 +1,7 @@
 ---
 title: "Get directorySetting"
 description: "Retrieve the properties of a specific directory setting object."
-author: "adimitui"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
