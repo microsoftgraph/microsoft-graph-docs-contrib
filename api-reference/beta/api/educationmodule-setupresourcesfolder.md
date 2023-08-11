@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a SharePoint folder to upload files for a given [educationModule](../resources/educationmodule.md). Only teachers can perform this operation.
 
-The teacher determines the resources to upload in the module's folder.
+The teacher determines what resources to upload to the SharePoint folder for the module.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
