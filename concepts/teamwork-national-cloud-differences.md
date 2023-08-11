@@ -19,7 +19,6 @@ For general information about national cloud availability for Microsoft Graph AP
 
 This section describes implementation differences in the Microsoft Graph for US Government for all the available environments.
 
-
 |API    | Details              |
 |:--------------------|:---------------------------------------------------------|
 | **Apps**            |                                                          |
@@ -35,10 +34,12 @@ This section describes implementation differences in the Microsoft Graph for US 
 | **Chats**            |                                                          |
 |[Get chat](/graph/api/chat-get)| Chats with meetings associated with them are not supported in application context in the GCC High and DOD environments. |
 |[List chats](/graph/api/chat-list)| The `OrderBy` OData query parameter is not supported. |
+| **Meeting recordings**            |                                                          |
+|[List recordings](/graph/api/onlinemeeting-list-recordings) | Not supported. |
+|[Get recording](/graph/api/callrecording-get) | Not supported. |
 | **Meeting transcripts**            |                                                          |
 |[List transcripts](/graph/api/onlinemeeting-list-transcripts) | Not supported. |
 |[Get transcript](/graph/api/calltranscript-get) | Not supported. |
 | **Messages**            |                                                          |
 |[Soft delete a message](/graph/api/chatmessage-softdelete) | Not supported in the GCC High and DOD Environments. |
 |[List messages in a chat](/graph/api/chat-list-messages) | The `OrderBy` OData query parameter is not supported in the GCC environment. |
-

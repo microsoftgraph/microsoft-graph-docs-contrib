@@ -791,7 +791,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-team-in-migration-mode-e9-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -913,3 +913,4 @@ Content-Length: 0
 * [Getting started with Retail Teams templates](/MicrosoftTeams/get-started-with-retail-teams-templates)
 * [Getting started with Healthcare Teams templates](/MicrosoftTeams/healthcare/healthcare-templates)
 * [Creating a group with a team](/graph/teams-create-group-and-team)
+* [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

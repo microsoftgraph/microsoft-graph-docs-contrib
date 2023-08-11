@@ -83,10 +83,6 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement
 [!INCLUDE [sample-code](../includes/snippets/php/intune-policyset-deviceappmanagement-get-get-deviceappmanagement-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-policyset-deviceappmanagement-get-get-deviceappmanagement-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-policyset-deviceappmanagement-get-get-deviceappmanagement-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -109,3 +105,6 @@ Content-Length: 133
   }
 }
 ```
+
+
+

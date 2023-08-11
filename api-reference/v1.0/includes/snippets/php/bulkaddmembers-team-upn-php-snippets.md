@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AddPostRequestBody();
 $valuesConversationMember1 = new AadUserConversationMember();
-$valuesConversationMember1->set@odatatype('microsoft.graph.aadUserConversationMember');
+$valuesConversationMember1->setOdataType('microsoft.graph.aadUserConversationMember');
 
-$valuesConversationMember1->setRoles([]);
+$valuesConversationMember1->setRoles([	]);
 
 $additionalData = [
-	'user@odata.bind' => 'https://graph.microsoft.com/v1.0/users(\'jacob@contoso.com\')', 
+		'user@odata.bind' => 'https://graph.microsoft.com/v1.0/users(\'jacob@contoso.com\')', 
 ];
 $valuesConversationMember1->setAdditionalData($additionalData);
 
@@ -24,12 +24,12 @@ $valuesConversationMember1->setAdditionalData($additionalData);
 
 $valuesArray []= $valuesConversationMember1;
 $valuesConversationMember2 = new AadUserConversationMember();
-$valuesConversationMember2->set@odatatype('microsoft.graph.aadUserConversationMember');
+$valuesConversationMember2->setOdataType('microsoft.graph.aadUserConversationMember');
 
-$valuesConversationMember2->setRoles(['owner', ]);
+$valuesConversationMember2->setRoles(['owner', 	]);
 
 $additionalData = [
-'user@odata.bind' => 'https://graph.microsoft.com/v1.0/users(\'alex@contoso.com\')', 
+		'user@odata.bind' => 'https://graph.microsoft.com/v1.0/users(\'alex@contoso.com\')', 
 ];
 $valuesConversationMember2->setAdditionalData($additionalData);
 

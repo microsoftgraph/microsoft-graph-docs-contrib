@@ -23,7 +23,7 @@ requestBody.SetRoleDefinitionId(&roleDefinitionId)
 appScopeId := "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
 requestBody.SetAppScopeId(&appScopeId) 
 
-result, err := graphClient.RoleManagement().EntitlementManagement().RoleAssignments().Post(context.Background(), requestBody, nil)
+roleAssignments, err := graphClient.RoleManagement().EntitlementManagement().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

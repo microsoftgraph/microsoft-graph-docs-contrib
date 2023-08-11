@@ -2,7 +2,7 @@
 title: "Get onPremisesAgent"
 description: "Retrieve the properties and relationships of an onPremisesAgent object."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---

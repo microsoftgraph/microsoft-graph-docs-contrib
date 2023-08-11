@@ -118,5 +118,6 @@ Content-Type: application/json
 
 - To get bots installed in a team, see example 2 in [List apps in team](team-list-installedapps.md). <!-- - To get bots installed in a chat, see example 2 in [List apps in chat](chat-list-installedapps.md). -->
 - To get bots installed in the personal scope of a user, see example 2 in [List apps installed for user](userteamwork-list-installedapps.md).
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 
