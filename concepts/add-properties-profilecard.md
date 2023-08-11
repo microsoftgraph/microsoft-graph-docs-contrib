@@ -203,13 +203,13 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 To get profile card properties configuration for an organization, use the following command.
 
 ```powershell
-   Get-MgBetaAdminPersonProfileCardProperty
+   Get-MgBetaAdminPeopleProfileCardProperty
 ```
 
 To get a profile card property configuration in an organization, use the following command.
 
 ```powershell
-   Get-MgBetaAdminPersonProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+   Get-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
 ```
 
 > [!NOTE]
@@ -219,7 +219,7 @@ To get a profile card property configuration in an organization, use the followi
 >    Connect-MgGraph -Scopes "PeopleSettings.Read.All"
 > ```
 
-> **Note:** The `Get-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Get-MgBetaAdminPersonProfileCardProperty` command.
+> **Note:** The `Get-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Get-MgBetaAdminPeopleProfileCardProperty` command.
 
 ### Create profile card properties in your organization
 
@@ -250,10 +250,10 @@ $params = @{
 	)
 }
 
-New-MgBetaAdminPersonProfileCardProperty -BodyParameter $params
+New-MgBetaAdminPeopleProfileCardProperty -BodyParameter $params
 ```
 
-> **Note:** The `New-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `New-MgBetaAdminPersonProfileCardProperty` command.
+> **Note:** The `New-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `New-MgBetaAdminPeopleProfileCardProperty` command.
 
 ### Update profile card properties in your organization
 
@@ -282,9 +282,9 @@ $params = @{
 	)
 }
 
-Update-MgBetaAdminPersonProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
+Update-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
 ```
-> **Note:** The `Update-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Update-MgBetaAdminPersonProfileCardProperty` command.
+> **Note:** The `Update-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Update-MgBetaAdminPeopleProfileCardProperty` command.
 
 ### Delete profile card properties in your organization
 
@@ -300,9 +300,9 @@ You can use the Microsoft Graph PowerShell module to remove profile card propert
 Use the following command, where you replace `$profileCardPropertyId` with the id of the property to be deleted.
 
 ```powershell
- Remove-MgBetaAdminPersonProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+ Remove-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
 ```
-> **Note:** The `Remove-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Remove-MgBetaAdminPersonProfileCardProperty` command.
+> **Note:** The `Remove-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Remove-MgBetaAdminPeopleProfileCardProperty` command.
 
 ## See also
 
