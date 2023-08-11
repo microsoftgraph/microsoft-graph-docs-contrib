@@ -310,7 +310,7 @@ GET https://graph.microsoft.com/beta/teams/acda442c-78d2-491b-8204-4ef5019c0193/
 ---
 
 >[!NOTE]
-> This example is applicable to sideloaded or organizational apps. The externalId value remains empty for apps with a distributionMethod type of `store` per the design. When apps are published to the global store, the app's `id` matches the `id` found in the app manifest.
+> This example applies to sideloaded or organizational apps. The **externalId** value is empty for apps with a **distributionMethod** type of `store`. When apps are published to the global store, the **id** of the app matches the **id** in the app manifest.
 
 #### Response
 
