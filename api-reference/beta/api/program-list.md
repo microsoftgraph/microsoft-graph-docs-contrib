@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, list all the program objec
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "jyothig123"
+author: "shubhamguptacal"
 ---
 
 # List programs (deprecated)
