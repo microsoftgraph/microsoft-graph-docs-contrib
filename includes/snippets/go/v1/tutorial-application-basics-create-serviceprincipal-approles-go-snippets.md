@@ -42,7 +42,7 @@ appRoles := []graphmodels.AppRoleable {
 }
 requestBody.SetAppRoles(appRoles)
 
-result, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
+applications, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

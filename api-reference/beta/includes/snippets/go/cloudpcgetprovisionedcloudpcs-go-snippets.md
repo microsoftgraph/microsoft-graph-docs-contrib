@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCs().GetProvisionedCloudPCs(groupId='{groupId}',servicePlanId='{servicePlanId}')().Get(context.Background(), nil)
+getProvisionedCloudPCs(groupId='{groupId}',servicePlanId='{servicePlanId}'), err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCs().GetProvisionedCloudPCs(groupId='{groupId}',servicePlanId='{servicePlanId}')().Get(context.Background(), nil)
 
 
 ```

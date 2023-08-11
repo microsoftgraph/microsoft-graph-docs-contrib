@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.NetworkAccess().Connectivity().Branches().ByBrancheId("branchSite-id").ForwardingProfiles().Get(context.Background(), nil)
+forwardingProfiles, err := graphClient.NetworkAccess().Connectivity().Branches().ByBranchSiteId("branchSite-id").ForwardingProfiles().Get(context.Background(), nil)
 
 
 ```

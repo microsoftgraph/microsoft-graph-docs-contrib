@@ -2,7 +2,7 @@
 title: "List accessReview decisions (deprecated)"
 description: "In the Azure AD access reviews feature, retrieve the decisions of an accessReview object."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -116,14 +116,14 @@ Content-type: application/json
 
 ## See also
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[Get accessReview](accessreview-get.md) |	[accessReview](../resources/accessreview.md) |	Retrieve an access review. |
-|[List my accessReview decisions](accessreview-listmydecisions.md) |		[accessReviewDecision](../resources/accessreviewdecision.md) collection|	As a reviewer, get my decisions of an accessReview.|
-|[Send accessReview reminder](accessreview-sendreminder.md) |		None.	|	Send a reminder to the reviewers of an accessReview. |
-|[Stop accessReview](accessreview-stop.md) |		None.	|	Stop an accessReview. |
-|[Reset accessReview decisions](accessreview-reset.md) |		None.	|	Reset the decisions in an in-progress accessReview.|
-|[Apply accessReview decisions](accessreview-apply.md) |		None.	|	Apply the decisions from a completed accessReview.|
+|[Get accessReview](accessreview-get.md) |    [accessReview](../resources/accessreview.md) |    Retrieve an access review. |
+|[List my accessReview decisions](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md) collection|    As a reviewer, get my decisions of an accessReview.|
+|[Send accessReview reminder](accessreview-sendreminder.md) |        None.    |    Send a reminder to the reviewers of an accessReview. |
+|[Stop accessReview](accessreview-stop.md) |        None.    |    Stop an accessReview. |
+|[Reset accessReview decisions](accessreview-reset.md) |        None.    |    Reset the decisions in an in-progress accessReview.|
+|[Apply accessReview decisions](accessreview-apply.md) |        None.    |    Apply the decisions from a completed accessReview.|
 
 
 <!--

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceAppManagement().VppTokens().Get(context.Background(), nil)
+vppTokens, err := graphClient.DeviceAppManagement().VppTokens().Get(context.Background(), nil)
 
 
 ```

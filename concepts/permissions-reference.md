@@ -1139,7 +1139,7 @@ Group functionality is not supported on personal Microsoft accounts.
 
 For Microsoft 365 groups, Group permissions grant the app access to the contents of the group; for example, conversations, files, notes, and so on.
 
-For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](known-issues.md).
+For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues).
 
 In some cases, an app may need [Directory permissions](#directory-permissions) to read some group properties like `member` and `memberOf`. For example, if a group has a one or more [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) as members, the app will need effective permissions to read service principals through being granted one of the _Directory.\*_ permissions, otherwise Microsoft Graph will return an error. (In the case of delegated permissions, the signed-in user will also need sufficient privileges in the organization to read service principals.) The same guidance applies for the `memberOf` property, which can return [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true).
 
@@ -1668,18 +1668,20 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_OnlineMeetings.Read_|Read Online Meeting.|Allows an app to read online meeting details on behalf of the signed-in user.|No|No|
-|_OnlineMeetings.ReadWrite_|Read and Create Online Meetings.|Allows an app to create, read online meetings on behalf of the signed-in user. |No|No|
-|_OnlineMeetingArtifact.Read.All_|Read Online Meeting artifacts.|Allows the app to read online meeting artifacts on behalf of the signed-in user. |No|No|
-|_OnlineMeetingTranscript.Read.All_|Read all transcripts of online meetings.|Allows the app to read all transcripts of online meetings on behalf of the signed-in user. |Yes|No|
+|_OnlineMeetings.Read_|Read user's online meetings.|Allows the app to read online meeting details on behalf of the signed-in user.|No|No|
+|_OnlineMeetings.ReadWrite_|Read and create user's online meetings.|Allows the app to read and create online meetings on behalf of the signed-in user. |No|No|
+|_OnlineMeetingArtifact.Read.All_|Read user's online meeting artifacts.|Allows the app to read online meeting artifacts on behalf of the signed-in user. |No|No|
+|_OnlineMeetingRecording.Read.All_|Read all recordings of online meetings.|Allows the app to read all recordings of online meetings, on behalf of the signed-in user. |Yes|No|
+|_OnlineMeetingTranscript.Read.All_|Read all transcripts of online meetings.|Allows the app to read all transcripts of online meetings, on behalf of the signed-in user. |Yes|No|
 
 #### Application permissions
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|Read Online Meeting details from the app |Allows the app to read Online Meeting details in your organization without a signed-in user.|Yes|
-|_OnlineMeetings.ReadWrite.All_|Read Online Meeting details from the app|Allows an app to create, read Online Meetings without a signed-in user.|Yes|
-|_OnlineMeetingArtifact.Read.All_|Read Online Meeting artifacts from the app |Allows the app to read Online Meeting artifacts in your organization, without a signed-in user.|Yes|
+|_OnlineMeetings.Read.All_|Read online meeting details. |Allows the app to read online meeting details in your organization, without a signed-in user.|Yes|
+|_OnlineMeetings.ReadWrite.All_|Read and create online meetings|Allows the app to read and create online meetings as an application in your organization.|Yes|
+|_OnlineMeetingArtifact.Read.All_|Read online meeting artifacts |Allows the app to read online meeting artifacts in your organization, without a signed-in user.|Yes|
+|_OnlineMeetingRecording.Read.All_|Read all recordings of online meetings.|Allows the app to read all recordings of all online meetings, without a signed-in user. |Yes|
 |_OnlineMeetingTranscript.Read.All_|Read all transcripts of online meetings.|Allows the app to read all transcripts of all online meetings, without a signed-in user. |Yes|
 
 > **Important**
@@ -1719,7 +1721,11 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ### Application permissions
 
-None.
+| Permission                                   | Display String                                                       | Description                                                                                                                            | Admin Consent Required | Microsoft Account supported |
+| :------------------------------------------- | :------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :-------------------------- |
+| OnPremDirectorySynchronization.Read.All      | Read all on-premises directory synchronization information           | Allows the app to read all on-premises directory synchronization information for the organization, without a signed-in user.           | Yes                    | No                          |
+| OnPremDirectorySynchronization.ReadWrite.All | Read and write all on-premises directory synchronization information | Allows the app to read and write all on-premises directory synchronization information for the organization, without a signed-in user. | Yes                    | No                          |
+
 ---
 
 ## On-premises publishing profiles permissions

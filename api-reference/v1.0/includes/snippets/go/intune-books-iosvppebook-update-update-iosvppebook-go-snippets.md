@@ -55,7 +55,7 @@ requestBody.SetTotalLicenseCount(&totalLicenseCount)
 usedLicenseCount := int32(0)
 requestBody.SetUsedLicenseCount(&usedLicenseCount) 
 
-result, err := graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").Patch(context.Background(), requestBody, nil)
+managedEBooks, err := graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

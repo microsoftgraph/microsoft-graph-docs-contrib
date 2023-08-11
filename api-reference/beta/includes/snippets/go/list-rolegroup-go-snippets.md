@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.External().IndustryData().RoleGroups().Get(context.Background(), nil)
+roleGroups, err := graphClient.External().IndustryData().RoleGroups().Get(context.Background(), nil)
 
 
 ```

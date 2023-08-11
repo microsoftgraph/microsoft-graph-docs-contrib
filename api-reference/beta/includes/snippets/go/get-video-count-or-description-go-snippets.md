@@ -33,7 +33,7 @@ configuration := &graphgroups.GroupsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Groups().Get(context.Background(), configuration)
+groups, err := graphClient.Groups().Get(context.Background(), configuration)
 
 
 ```
