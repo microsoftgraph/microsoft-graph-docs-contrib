@@ -45,7 +45,7 @@ requestBody.SetPublishingState(&publishingState)
 channel := graphmodels.BETA_MICROSOFTEDGECHANNEL 
 requestBody.SetChannel(&channel) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

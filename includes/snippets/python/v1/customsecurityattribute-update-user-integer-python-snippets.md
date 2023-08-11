@@ -8,24 +8,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 request_body = User()
+custom_security_attributes = CustomSecurityAttributeValue()
 additional_data = [
-'custom_security_attributes' => request_body = CustomSecurityAttributes()
-engineering = Engineering()
-		engineering.@odata_type = '#Microsoft.DirectoryServices.CustomSecurityAttributeValue'
+'engineering' => custom_security_attributes = Engineering()
+		custom_security_attributes.@odata_type = '#Microsoft.DirectoryServices.CustomSecurityAttributeValue'
 
-		engineering.num_vendors@odata_type = '#Int32'
+		custom_security_attributes.num_vendors@odata_type = '#Int32'
 
-		engineering.NumVendors = 8
+		custom_security_attributes.NumVendors = 8
 
 
-request_body.engineering = engineering
-
-request_body.custom_security_attributes = customSecurityAttributes
+custom_security_attributes.engineering = engineering
 
 ];
-request_body.additional_data(additional_data)
+custom_security_attributes.additional_data(additional_data)
 
 
+
+request_body.custom_security_attributes = custom_security_attributes
 
 
 

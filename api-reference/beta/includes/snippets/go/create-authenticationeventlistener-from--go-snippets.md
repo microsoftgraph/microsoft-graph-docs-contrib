@@ -41,7 +41,7 @@ customExtension.SetId(&id)
 handler.SetCustomExtension(customExtension)
 requestBody.SetHandler(handler)
 
-result, err := graphClient.Identity().AuthenticationEventListeners().Post(context.Background(), requestBody, nil)
+authenticationEventListeners, err := graphClient.Identity().AuthenticationEventListeners().Post(context.Background(), requestBody, nil)
 
 
 ```

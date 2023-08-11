@@ -29,7 +29,7 @@ requestBody.SetPayloadFileName(&payloadFileName)
 payload := []byte("cGF5bG9hZA==")
 requestBody.SetPayload(&payload) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Patch(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

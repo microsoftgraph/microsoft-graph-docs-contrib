@@ -23,7 +23,7 @@ configuration := &graphagreements.AgreementItemFileRequestBuilderGetRequestConfi
 	Headers: headers,
 }
 
-result, err := graphClient.Agreements().ByAgreementId("agreement-id").File().Get(context.Background(), configuration)
+file, err := graphClient.Agreements().ByAgreementId("agreement-id").File().Get(context.Background(), configuration)
 
 
 ```

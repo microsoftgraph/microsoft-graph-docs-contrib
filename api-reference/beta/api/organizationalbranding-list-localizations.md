@@ -1,7 +1,7 @@
 ---
 title: "List localizations"
 description: "Get the organizationalBrandingLocalization resources from the localizations navigation property."
-author: "AlexanderMars"
+author: "quievey"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

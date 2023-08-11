@@ -1,7 +1,7 @@
 ---
 title: "authenticationMethodsRoot resource type"
 description: "Container for navigation properties of resources for Azure Active Directory authentication methods."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

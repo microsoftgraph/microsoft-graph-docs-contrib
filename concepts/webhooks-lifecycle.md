@@ -81,10 +81,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -234,7 +230,7 @@ The following flow shows the flow of a **subscriptionRemoved** event:
 
 ## Responding to missed notifications
 
-`missed` lifecycle events alert you that some change notifications might not have been delivered. For example, because of [throttling](change-notifications-delivery-webhooks.md#throttling).
+`missed` lifecycle events alert you that some change notifications might not have been delivered. For example, because of [throttling](change-notifications-delivery-webhooks.md#throttling-and-retry).
 
 ### Actions to take
 

@@ -25,7 +25,7 @@ requestBody.SetMiddleName(&middleName)
 surname := "Cazares"
 requestBody.SetSurname(&surname) 
 
-result, err := graphClient.Education().Users().ByUserId("educationUser-id").Patch(context.Background(), requestBody, nil)
+users, err := graphClient.Education().Users().ByEducationUserId("educationUser-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.IdentityGovernance().EntitlementManagement().AssignmentRequests().ByAssignmentRequestId("accessPackageAssignmentRequest-id").Delete(context.Background(), nil)
+graphClient.IdentityGovernance().EntitlementManagement().AssignmentRequests().ByAccessPackageAssignmentRequestId("accessPackageAssignmentRequest-id").Delete(context.Background(), nil)
 
 
 ```

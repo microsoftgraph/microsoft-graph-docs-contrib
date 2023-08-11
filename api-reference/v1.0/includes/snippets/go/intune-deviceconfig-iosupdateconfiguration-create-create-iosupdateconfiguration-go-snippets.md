@@ -34,7 +34,7 @@ requestBody.SetScheduledInstallDays(scheduledInstallDays)
 utcTimeOffsetInMinutes := int32(6)
 requestBody.SetUtcTimeOffsetInMinutes(&utcTimeOffsetInMinutes) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```
