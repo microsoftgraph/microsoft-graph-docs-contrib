@@ -19,7 +19,8 @@ In the Azure portal experience, developers and tenant global administrators can 
 ![Graphic showing a landing page of the new Azure portal experience.](images/app-registration-summary-table.png)
 
 > [!IMPORTANT]
-> If Microsoft Graph Data Connect **hasn't been enabled by your admin**, the portal experience is **disabled**. Global administrators can enable Data Connect. See [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](/includes/data-connect-quickstart-02.md)
+> If Microsoft Graph Data Connect **hasn't been enabled by your admin**, the portal experience is **disabled**. Global administrators can enable Data Connect. See [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](https://github.com/microsoftgraph/microsoft-graph-docs/blob/45b4b22b5db4a87be256b59130e74bf49c2e7fd1/includes/data-connect-quickstart-02.md?plain=1#L45)
+
 The first screen of the Azure portal experience will prompt you to register your first app with Data Connect—or load existing registrations into a summary table view.
 
 The table includes the following column fields:
@@ -67,9 +68,9 @@ App registration requires you to select entries for the **Instance Details** tha
 
 #### Datasets
 
-After you complete the **Registration Info** page, specify the datasets that the app registration needs to query. This step is crucial for authorization. Only datasets selected here will be transferred for administrator authorization. For details about datasets, see [Datasets, regions, and sinks](./data-connect-datasets).
+After you complete the **Registration Info** page, specify the datasets that the app registration needs to query. This step is crucial for authorization. Only datasets selected here will be transferred for administrator authorization. For details about datasets, see [Datasets, regions, and sinks](./data-connect-datasets.md).
 
-The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and further details if applicable—scope and scope options. For details about scopes, see [User selection and filtering capabilities in Microsoft Graph Data Connect](./data-connect-filtering). You can select each dataset that the app will request for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required:
+The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and further details if applicable—scope and scope options. For details about scopes, see [User selection and filtering capabilities in Microsoft Graph Data Connect](./data-connect-filtering.md). You can select each dataset that the app will request for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required:
 
 ![Graphic showing the Datasets column selected while running the Data Connect app registration wizard.](images/app-registration-create-datasets.png)
 
