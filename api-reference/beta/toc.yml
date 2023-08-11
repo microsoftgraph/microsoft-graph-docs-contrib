@@ -1275,13 +1275,13 @@ items:
                     href: api/serviceprincipal-post-owners.md
                   - name: Remove owner
                     href: api/serviceprincipal-delete-owners.md
-              - name: Permission Grant Pre-Approval Policy
+              - name: Permission grant pre-approval policy
                 items:
-                  - name: List permission grant pre-approval policy
+                  - name: List
                     href: api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md
-                  - name: Assign permission grant pre-approval policy
+                  - name: Assign
                     href: api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
-                  - name: Remove permission grant pre-approval policy
+                  - name: Remove
                     href: api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
               - name: Policies
                 items:
@@ -13893,6 +13893,19 @@ items:
                             href: api/permissiongrantpolicy-post-excludes.md
                           - name: Delete from excludes
                             href: api/permissiongrantpolicy-delete-excludes.md
+                  - name: Permission grant pre-approval policy
+                    href: resources/permissiongrantpreapprovalpolicy.md
+                    items:
+                    - name: Create
+                      href: api/policyroot-post-permissiongrantpreapprovalpolicies.md
+                    - name: List
+                      href: api/policyroot-list-permissiongrantpreapprovalpolicies.md
+                    - name: Get
+                      href: api/permissiongrantpreapprovalpolicy-get.md
+                    - name: Update
+                      href: api/permissiongrantpreapprovalpolicy-update.md
+                    - name: Delete
+                      href: api/permissiongrantpreapprovalpolicy-delete.md
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
