@@ -32,7 +32,7 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 | displayName                | string   | The name of the catalog app provided by the app developer in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). |
 | distributionMethod  | teamsAppDistributionMethod     | The method of distribution for the app. Read-only.|
 | externalId          | string   | The ID of the catalog provided by the app developer in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). |
-| id                  | string   | The app ID generated for the catalog is different from the developer-provided ID found within the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). The externalId value remains empty for apps with a distributionMethod type of `store` per the design. When apps are published to the global store, the app's `id` matches the `id` found in the app manifest. |
+| id                  | string   | The app ID generated for the catalog is different from the developer-provided ID found within the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). The **externalId** value is empty for apps with a **distributionMethod** type of `store`. When apps are published to the global store, the **id** of the app matches the **id** in the app manifest. |
 
 ### teamsAppDistributionMethod values
 
