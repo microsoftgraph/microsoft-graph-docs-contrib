@@ -51,7 +51,7 @@ To unset a reaction to a **chatMessage** in a **chat**:
 }
 -->
 ``` http
-POST /users/{userId}/chats/{chatId}/messages/{chatMessageId}/unsetReaction
+POST /chats/{chatId}/messages/{chatMessageId}/unsetReaction
 ```
 
 ## Request headers
