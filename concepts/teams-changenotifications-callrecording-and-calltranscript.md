@@ -47,7 +47,7 @@ Content-Type: application/json
 
 ## Subscribe to transcripts available for a particular online meeting
 
-To get change notifications for any transcript available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for regular scheduled meetings.
+To get change notifications for any transcript available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for meetings scheduled on the calendar.
 
 ### Permissions
 
@@ -113,7 +113,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available for a particular online meeting
 
-To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for regular scheduled and recurring meetings.
+To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for regular and recurring meetings scheduled on the calendar.
 
 ### Permissions
 
