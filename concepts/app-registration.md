@@ -12,15 +12,14 @@ This article provides best practice guidance for using the Azure portal experien
 
 ## Azure portal experience
 
-With the updated portal experience, developers and global administrators within the tenant can review all registered applications, level of detail for authorization, and ability to manage app registrations. Launch your experience in the [Azure portal](https://aka.ms/mgdcinazure). When you return to the portal, re-launch it in the search bar.
+In the Azure portal experience, developers and tenant global administrators can review all registered applications, authorize apps, and manage app registrations. Launch your experience in the [Azure portal](https://aka.ms/mgdcinazure)
 
 ### Landing page
 
 ![Graphic showing a landing page of the new Azure portal experience.](images/app-registration-summary-table.png)
 
 > [!IMPORTANT]
-> If Microsoft Graph Data Connect **hasn't been enabled by your admin**, the portal experience is **disabled**.
-
+> If Microsoft Graph Data Connect **hasn't been enabled by your admin**, the portal experience is **disabled**. Global administrators can enable Data Connect. See [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](/includes/data-connect-quickstart-02.md)
 The first screen of the Azure portal experience will prompt you to register your first app with Data Connect—or load existing registrations into a summary table view.
 
 The table includes the following column fields:
@@ -103,7 +102,7 @@ Access update functionality from the individual app overview page. Either the ap
 
 You can delete an app registration entry from either the individual app overview page, or from the landing page. Currently, either app owners or global administrators can delete app registration entries. When you delete an app registration entry, you need to type the name of the app to confirm the deletion. After the app is deleted, any dependency or pipeline that uses it will become unusable, specifically:
 
-- Any current pipeline utilizing the application and past the authorization validation phase, would continue and succeed.
+- Every pipeline goes through multiple phases. In the first phase of the pipeline, we validate the consent. So any pipeline past the consent validation stage would continue and succeed.
 - Any pipeline before the authorization validation phase would start failing because the application is missing.
 
 ![Graphic showing the app registration Delete Registration entry page.](images/app-registration-delete-confirmation.png)
