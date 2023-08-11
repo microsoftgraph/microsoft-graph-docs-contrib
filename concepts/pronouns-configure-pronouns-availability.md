@@ -49,7 +49,7 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 
 ### Confirm your current settings
 
-To get pronoun settings configuration for an organization, use the following command
+To get pronoun settings configuration for an organization, use the following command:
 
 > [!NOTE]
 > The get method requires `PeopleSettings.Read.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
