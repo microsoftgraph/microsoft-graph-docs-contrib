@@ -700,8 +700,7 @@ GET https://graph.microsoft.com/v1.0/users/e652dd92-dd63-4fcc-b5b2-2005681e8e9f/
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK
