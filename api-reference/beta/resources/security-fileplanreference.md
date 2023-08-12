@@ -15,10 +15,9 @@ Namespace: microsoft.graph.security
 
 Represents a file plan descriptor that specifies a unique alpha-numeric identifier for an organization’s retention schedule. Used to supplement a [retention label](security-retentionlabel.md) for [record management purposes](security-recordsmanagement-overview.md).
 
-To add, get, or remove an **citation** descriptor, use the [citationTemplate](security-categorytemplate.md) resource.
+To create, get, or delete a **filePlanReference** descriptor, use the [filePlanReferenceTemplate](security-fileplanreferencetemplate.md) resource.
 
 This resource is one of a set of file plan descriptors that an administrator can choose to supplement a retention label. To find out more about these optional descriptors, and how to get the descriptors that have been chosen for a retention label, see [file plan descriptor](security-fileplandescriptor.md).
-
 
 Inherits from [microsoft.graph.security.filePlanDescriptorBase](../resources/security-fileplandescriptorBase.md).
 

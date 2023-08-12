@@ -11,8 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
-
+Supports CRUD operations to apply and manage the [filePlanReference](security-fileplanreference.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **filePlanReference** descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 

@@ -11,8 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
-
+Supports CRUD operations to apply and manage the [citation](security-citation.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **citation** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 

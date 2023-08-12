@@ -11,8 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Specifies the  department or business unit of an organization to which a label belongs.
-
+Supports CRUD operations to apply and manage the [department](security-department.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **department** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 

@@ -11,9 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents a unique subcategory applied to a retention label.
+Represents a unique subcategory applied to a [retention label](security-retentionlabel.md). Used to supplement a retention label for [record management purposes](security-recordsmanagement-overview.md).
 
-To list the descriptors that supplement a retention label, use the [GET](../api/security-retentionlabel-get.md) operation on that [retentionLabel](security-retentionlabel.md) resource, and apply `$expand` on the **descriptors** relationship to get the corresponding [filePlanDescriptor](security-fileplandescriptor.md) resource.
+To create, get, or delete a **subCategory** descriptor, use the [subCategoryTemplate](security-subcategorytemplate.md) resource.
+
+This resource is one of a set of file plan descriptors that an administrator can choose to supplement a retention label. To find out more about these optional descriptors, and how to get the descriptors that have been chosen for a retention label, see [file plan descriptor](security-fileplandescriptor.md).
 
 Inherits from [microsoft.graph.security.filePlanDescriptorBase](../resources/security-fileplandescriptorBase.md).
 
