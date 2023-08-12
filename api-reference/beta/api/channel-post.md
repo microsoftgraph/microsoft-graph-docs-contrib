@@ -204,7 +204,7 @@ Content-type: application/json
 
 ---
 
-> **Note:**To add a guest account to the channel, for the **roles** property, use the value `guest`.
+> **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
 
 #### Response
 
