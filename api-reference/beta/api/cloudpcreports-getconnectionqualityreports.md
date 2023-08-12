@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getConnectionQualityReports"
-description: "Get the overall connection quality reports for all devices under current tenant, during a given time period, such as average round trip time (P50), average available bandwidth, UDP connection percentage, and other real time metrics such as last connection round trip time, last connection Client IP, last connection gateway, and last connection protocol."
+description: "Get the overall connection quality reports for all devices under a current tenant, during a given time period, such as average round trip time (P50), average available bandwidth, UDP connection percentage, and other real time metrics such as last connection round trip time, last connection Client IP, last connection gateway, and last connection protocol."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the overall connection quality reports for all devices under current tenant, during a given time period, such as average round trip time (P50), average available bandwidth, UDP connection percentage, and other real time metrics such as last connection round trip time, last connection Client IP, last connection gateway, and last connection protocol.
+Get the overall connection quality reports for all devices under a current tenant, during a given time period, such as average round trip time (P50), average available bandwidth, UDP connection percentage, and other real time metrics such as last connection round trip time, last connection Client IP, last connection gateway, and last connection protocol.
 
 ## Permissions
 
