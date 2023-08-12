@@ -1,7 +1,7 @@
 ---
 title: "List impactedResources"
 description: "Get the impacted resources for a recommendation."
-author: "hafowler"
+author: "ddeeps2610"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
