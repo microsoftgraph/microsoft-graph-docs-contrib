@@ -1,7 +1,7 @@
 ---
 title: "recommendation: postpone"
 description: "Postpone action on a recommendation object to a specified future date and time."
-author: "hafowler"
+author: "ddeeps2610"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
