@@ -90,7 +90,7 @@
             "ChangeList": [
                 {
                     "Id": "be5ebbef-56ec-465d-afbe-aef899ab7e40",
-                    "ApiChange": "Enum type",
+                    "ApiChange": "Member",
                     "ChangedApiName": "remoteConnectionQualityReports",
                     "ChangeType": "Addition",
                     "Description": "Added the ´remoteConnectionQualityReports´ member to the **cloudPcReportName** enumeration type.",
