@@ -123,9 +123,7 @@ Content-Type: application/json
     "id": "TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff",
     "reportName": "totalAggregatedRemoteConnectionReports",
     "format": "csv",
-    "select": [
-      "CloudPcId", "ManagedDeviceName", "UserPrincipalName", "DaysSinceLastSignIn", "TotalUsageInHour"
-    ],
+    "select": ["CloudPcId", "ManagedDeviceName", "UserPrincipalName", "DaysSinceLastSignIn", "TotalUsageInHour"],
     "filter": null,
     "requestDateTime": "2022-09-16T12:00:06.5137388Z",
     "expirationDateTime": "0001-01-01T00:00:00Z",
@@ -171,11 +169,9 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.cloudPcExportJob",
     "id": "RemoteConnectionQualityReports__85678957-6202-4e29-97e6-eb26ef07f330",
-    "reportName": "remoteConnectionHistoricalReports",
+    "reportName": "RemoteConnectionQualityReports",
     "format": "csv",
-    "select": [
-      "CloudPcId", "ManagedDeviceName", "UserPrincipalName", "DaysSinceLastSignIn", "TotalUsageInHour"
-    ],
+    "select": ["CloudPcId", "ManagedDeviceName", "UserPrincipalName", "DaysSinceLastSignIn", "TotalUsageInHour"],
     "filter": null,
     "requestDateTime": "2023-06-14T07:40:41.694Z",
     "expirationDateTime": "",
