@@ -169,7 +169,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.cloudPcExportJob",
     "id": "RemoteConnectionQualityReports__85678957-6202-4e29-97e6-eb26ef07f330",
-    "reportName": "RemoteConnectionQualityReports",
+    "reportName": "remoteConnectionQualityReports",
     "format": "csv",
     "select": ["CloudPcId", "ManagedDeviceName", "UserPrincipalName", "DaysSinceLastSignIn", "TotalUsageInHour"],
     "filter": null,
