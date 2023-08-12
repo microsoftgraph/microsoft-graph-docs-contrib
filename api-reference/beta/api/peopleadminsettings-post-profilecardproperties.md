@@ -1,19 +1,21 @@
 ---
-title: "Update profileCardProperty"
-description: "Update the properties of a profileCardProperty object, identified by its directoryPropertyName property."
+title: "Create profileCardProperty"
+description: "Create a new profileCardProperty resource for an organization."
 ms.localizationpriority: medium
 author: "rwaithera"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Update profileCardProperty
+# Create profileCardProperty
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object, identified by its **directoryPropertyName** property.
+Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. The new property is identified by its **directoryPropertyName** property.
+
+For more information about how to add properties to the profile card for an organization, see [Add or delete custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard).
 
 ## Permissions
 
@@ -32,56 +34,58 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /admin/people/profileCardProperties/{id}
+POST /admin/people/profileCardProperties
 ```
 
 > **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+| Name          |Description                  |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
 > **Note:** To avoid encoding issues that malform the payload, use `Content-Type: application/json; charset=utf-8`.
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of a [profileCardProperty](../resources/profilecardproperty.md) object.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|annotations|profileCardAnnotation collection| Any alternative or localized labels an administrator has chosen to specify.|
-|directoryPropertyName|String|The name of the directory property which is intended to surface on the profile card. |
+You can specify the following properties when you create a **profileCardProperty**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|annotations|[profileCardAnnotation](../resources/profilecardannotation.md) collection|Any alternative or localized labels that an administrator has chosen to specify.|
+|directoryPropertyName|String|The name of the directory property which is intended to surface on the profile card.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [profileCardProperty](../resources/profilecardproperty.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [profileCardProperty](../resources/profilecardproperty.md) object in the response body.
 
 ## Examples
 
 ### Request
 
-The following example adds a localized label `Kostnads Senter` for the locale `no-NB`.
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_profilecardproperty",
-  "sampleKeys": ["CustomAttribute1"]
+  "name": "create_profilecardproperty"
 }-->
-
 ```http
-PATCH https://graph.microsoft.com/beta/admin/people/profileCardProperties/CustomAttribute1
+POST https://graph.microsoft.com/beta/admin/people/profileCardProperties
 Content-type: application/json; charset=utf-8
 
 {
+  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
+      "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "no-NB",
-          "displayName": "Kostnads Senter"
+          "languageTag": "ru-RU",
+          "displayName": "центр затрат"
         }
       ]
     }
@@ -102,7 +106,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json; charset=utf-8
 
 {
@@ -114,10 +118,6 @@ Content-type: application/json; charset=utf-8
         {
           "languageTag": "ru-RU",
           "displayName": "центр затрат"
-        },
-        {
-          "languageTag": "no-NB",
-          "displayName": "Kostnads Senter"
         }
       ]
     }

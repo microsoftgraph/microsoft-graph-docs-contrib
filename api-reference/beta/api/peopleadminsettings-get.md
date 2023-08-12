@@ -1,19 +1,19 @@
 ---
-title: "Get profileCardProperty"
-description: "Retrieve the properties of a profileCardProperty entity."
-ms.localizationpriority: medium
+title: "Get peopleAdminSettings"
+description: "Retrieve the properties and relationships of a peopleAdminSettings object."
 author: "rwaithera"
+ms.localizationpriority: medium
 ms.prod: "people"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
-# Get profileCardProperty
+# Get peopleAdminSettings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a [profileCardProperty](../resources/profilecardproperty.md) entity. The **profileCardProperty** is identified by its **directoryPropertyName** property.
+Retrieve the properties and relationships of a [peopleAdminSettings](../resources/peopleadminsettings.md) object.
 
 ## Permissions
 
@@ -30,12 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /admin/people/profileCardProperties/{id}
+GET /admin/people
 ```
-
-> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
 
 ## Optional query parameters
 
@@ -43,9 +40,9 @@ This method does not support OData query parameters to help customize the respon
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 
@@ -53,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [profileCardProperty](../resources/profilecardproperty.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [peopleAdminSettings](../resources/peopleadminsettings.md) object in the response body.
 
 ## Examples
 
@@ -63,12 +60,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_profilecardproperty",
-  "sampleKeys": ["CustomAttribute1"]
+  "name": "get_peopleadminsettings"
 }-->
 
-```http
-GET https://graph.microsoft.com/beta/admin/people/profileCardProperties/CustomAttribute1
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/admin/people
 ```
 
 ### Response
@@ -80,22 +76,31 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.profileCardProperty"
+  "@odata.type": "microsoft.graph.peopleAdminSettings"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "directoryPropertyName": "CustomAttribute1",
-  "annotations": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/$entity",
+  "pronouns@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/pronouns/$entity",
+  "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/pronouns/$entity",
+  "pronouns": {
+      "isEnabledInOrganization": true
+  },
+  "profileCardProperties": [
     {
-      "displayName": "Cost Center",
-      "localizations": [
+      "directoryPropertyName": "CustomAttribute1",
+      "annotations": [
         {
-          "languageTag": "ru-RU",
-          "displayName": "центр затрат"
+          "displayName": "Cost Center",
+          "localizations": [
+            {
+              "languageTag": "ru-RU",
+              "displayName": "центр затрат"
+            }
+          ]
         }
       ]
     }
