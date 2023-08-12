@@ -1,7 +1,7 @@
 ---
 title: "impactedResource: dismiss"
 description: "Dismiss a recommendationResource object and update its status to dismissed."
-author: "hafowler"
+author: "ddeeps2610"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
