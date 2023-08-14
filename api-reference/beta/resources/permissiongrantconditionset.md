@@ -52,6 +52,10 @@ A permission grant condition set contains several conditions. For an event to ma
     "clientApplicationTenantIds": [ "string" ],
     "clientApplicationPublisherIds": [ "string" ],
     "clientApplicationsFromVerifiedPublisherOnly": false,
-    "certifiedClientApplicationsOnly": false
+    "certifiedClientApplicationsOnly": false,
+    "scopeSensitivityLabels": {
+        "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+        "labelKind": "all"
+    }
 }
 ```
