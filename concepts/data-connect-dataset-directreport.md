@@ -66,7 +66,7 @@ The DirectReport_v0 dataset can be joined with the Manager_v0 dataset.
 | state	| string |	The state or province in the direct report's address. |	No |	None |
 | streetAddress |	string |	The street address of the direct report's place of business. |	No |	None |
 | surname |	string |	The direct report's surname (family name or last name). |	No |	None |
-| usageLocation	string	A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries. Examples include: "US", "JP", and "GB". Not nullable.	No	None
+| usageLocation	| string |	A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries. Examples include: "US", "JP", and "GB". Not nullable. |	No |	None |
 | userPrincipalName |	string	| The user principal name (UPN) of the direct report. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. The verified domains for the tenant can be accessed from the verifiedDomains property of organization. |	No |	None |
 | userType |	string	| A string value that can be used to classify user types in your directory, such as "Member" or "Guest". |	No |	None |
 | puser	| string |	User id |	No |  	None |
