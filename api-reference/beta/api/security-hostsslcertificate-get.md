@@ -97,13 +97,13 @@ Content-Type: application/json
       {
         "port": 80,
         "firstSeenDateTime": "2023-03-10T01:20:47.000Z",
-        "lastSeenDateTime": "2023-04-02T00:00:00.000Z",
+        "lastSeenDateTime": "2023-04-02T00:00:00.000Z"
       },
       {
         "port": 3000,
         "firstSeenDateTime": "2023-03-10T01:20:47.000Z",
-        "lastSeenDateTime": "2023-04-02T00:00:00.000Z",
-      },
+        "lastSeenDateTime": "2023-04-02T00:00:00.000Z"
+      }
     ],
     "host": {
       "@odata.type": "#microsoft.graph.security.hostName",
