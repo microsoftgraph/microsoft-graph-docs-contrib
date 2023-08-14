@@ -7,7 +7,7 @@ ms.reviewer: sureshja
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
-ms.date: 06/27/2023
+ms.date: 08/14/2023
 ---
 
 # Manage an Azure AD application using Microsoft Graph
@@ -27,7 +27,9 @@ To complete this tutorial, you need the following resources and privileges:
 
 ### Request
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+The following request creats an app by specifying only the required **displayName** property.
+
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -77,91 +79,24 @@ Content-type: application/json
 
 ---
 
-### Response
+The request returns a `201 Created` response with the application object in the response body. The application is assigned an **id** that's unique for apps in the tenant, and an **appId** that's globally unique in the Azure AD ecosystem.
 
-The following code is an example of the default response that includes all the properties returned by default. The application is assigned an ID that's globally unique in the Azure AD ecosystem.
+## Create a service principal for the application
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application"
-} -->
+  "blockType": "request",
+  "name": "tutorial-application-basics-create-sp"
+}-->
 ```http
-HTTP/1.1 201 Created
+POST https://graph.microsoft.com/v1.0/servicePrincipals
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",
-    "id": "0d0021e2-eaab-4b9f-a5ad-38c55337d63e",
-    "deletedDateTime": null,
-    "appId": "5f0f8757-988d-474c-9f85-74a6bc70dfd0",
-    "applicationTemplateId": null,
-    "disabledByMicrosoftStatus": null,
-    "createdDateTime": "2022-02-08T08:58:36.7669085Z",
-    "displayName": "My application",
-    "description": null,
-    "groupMembershipClaims": null,
-    "identifierUris": [],
-    "isDeviceOnlyAuthSupported": null,
-    "isFallbackPublicClient": null,
-    "notes": null,
-    "publisherDomain": "M365x010717.onmicrosoft.com",
-    "serviceManagementReference": null,
-    "signInAudience": "AzureADandPersonalMicrosoftAccount",
-    "tags": [],
-    "tokenEncryptionKeyId": null,
-    "defaultRedirectUri": null,
-    "certification": null,
-    "optionalClaims": null,
-    "addIns": [],
-    "api": {
-        "acceptMappedClaims": null,
-        "knownClientApplications": [],
-        "requestedAccessTokenVersion": 2,
-        "oauth2PermissionScopes": [],
-        "preAuthorizedApplications": []
-    },
-    "appRoles": [],
-    "info": {
-        "logoUrl": null,
-        "marketingUrl": null,
-        "privacyStatementUrl": null,
-        "supportUrl": null,
-        "termsOfServiceUrl": null
-    },
-    "keyCredentials": [],
-    "parentalControlSettings": {
-        "countriesBlockedForMinors": [],
-        "legalAgeGroupRule": "Allow"
-    },
-    "passwordCredentials": [],
-    "publicClient": {
-        "redirectUris": []
-    },
-    "requiredResourceAccess": [],
-    "verifiedPublisher": {
-        "displayName": null,
-        "verifiedPublisherId": null,
-        "addedDateTime": null
-    },
-    "web": {
-        "homePageUrl": null,
-        "logoutUrl": null,
-        "redirectUris": [],
-        "implicitGrantSettings": {
-            "enableAccessTokenIssuance": false,
-            "enableIdTokenIssuance": false
-        }
-    },
-    "spa": {
-        "redirectUris": []
-    }
+  "appId": "fc876dd1-6bcb-4304-b9b6-18ddf1526b62"
 }
 ```
 
-The **signInAudience** property is assigned a default value of `AzureADandPersonalMicrosoftAccount`. This configuration allows any user who is signed in with any account type, including Azure AD accounts, personal Microsoft accounts, and social media credentials, can use your app. You can change the **signInAudience** to a different scope.
-
-If you created the application as a user with administrator privileges, you were automatically assigned ownership to the application. You can confirm ownership by retrieving the owners navigation property through `GET https://graph.microsoft.com/v1.0/applications/0d0021e2-eaab-4b9f-a5ad-38c55337d63e/owners`. You can also assign another user or app ownership of the application.
+The request returns a `201 Created` response with the service principal object in the response body.
 
 ## Addressing an application or a service principal object
 
