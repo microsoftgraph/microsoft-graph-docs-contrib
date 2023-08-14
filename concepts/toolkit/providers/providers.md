@@ -86,7 +86,7 @@ You can specify custom hosts for graph client, allowing you to call those non-Gr
 
 If you're initializing the provider in code, provide the host names in an array in the `customHosts` property.
 
-```js
+```ts
 import {Providers, Msal2Provider } from "@microsoft/mgt";
 Providers.globalProvider = new Msal2Provider({
   clientId: 'YOUR_CLIENT_ID',
@@ -95,6 +95,24 @@ Providers.globalProvider = new Msal2Provider({
 ```
 
 Note: these are host names, not Uris.
+
+To call the custom api's you will need to request that API scope
+
+```HTML
+<mgt-get resource="https://myapi.com/v1.0/api" scopes="api://CUSTOM_API_GUID/SCOPE">
+  ...
+</mgt-get>
+```
+or via Javascript/Typescript
+```ts
+import { prepScopes } from "@microsoft/mgt";
+
+graphClient
+  .api("https://myapi.com/v1.0/api")
+  .middlewareOptions(prepScopes("api://CUSTOM_API_GUID/SCOPE"))
+  .get();
+...
+```
 
 ## Provider state
 

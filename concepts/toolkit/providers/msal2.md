@@ -131,7 +131,23 @@ Alternatively:
 </mgt-msal2-provider>
 ```
 
-Then use the toolkit as usual.
+To call the custom api's you will need to request that API scope
+
+```HTML
+<mgt-get resource="https://myapi.com/v1.0/api" scopes="api://CUSTOM_API_GUID/SCOPE">
+  ...
+</mgt-get>
+```
+or via Javascript/Typescript
+```ts
+import { prepScopes } from "@microsoft/mgt";
+
+graphClient
+  .api("https://myapi.com/v1.0/api")
+  .middlewareOptions(prepScopes("api://CUSTOM_API_GUID/SCOPE"))
+  .get();
+...
+```
 
 #### Use custom hosts to call different EntraID secured endpoints
 
