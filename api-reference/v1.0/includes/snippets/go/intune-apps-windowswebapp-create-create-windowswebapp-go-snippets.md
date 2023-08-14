@@ -45,7 +45,7 @@ requestBody.SetPublishingState(&publishingState)
 appUrl := "https://example.com/appUrl/"
 requestBody.SetAppUrl(&appUrl) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().Post(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().Post(context.Background(), requestBody, nil)
 
 
 ```

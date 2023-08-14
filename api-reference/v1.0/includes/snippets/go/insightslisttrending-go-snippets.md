@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Insights().Trending().Get(context.Background(), nil)
+trending, err := graphClient.Me().Insights().Trending().Get(context.Background(), nil)
 
 
 ```

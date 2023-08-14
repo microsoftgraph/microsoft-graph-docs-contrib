@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceAppManagement().AndroidManagedAppProtections().Get(context.Background(), nil)
+androidManagedAppProtections, err := graphClient.DeviceAppManagement().AndroidManagedAppProtections().Get(context.Background(), nil)
 
 
 ```

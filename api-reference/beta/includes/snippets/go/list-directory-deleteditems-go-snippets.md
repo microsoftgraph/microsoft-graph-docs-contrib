@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Directory().DeletedItems().GraphGroup().Get(context.Background(), nil)
+graph.group, err := graphClient.Directory().DeletedItems().GraphGroup().Get(context.Background(), nil)
 
 
 ```

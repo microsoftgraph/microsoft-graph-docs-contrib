@@ -14,7 +14,7 @@ $requestBody->setOutputName('Export reviewset query via API');
 
 $requestBody->setDescription('Export for the Contoso investigation 2');
 
-$requestBody->setExportOptions(new ExportOptions('originalFiles,fileInfo,tags'));
+$requestBody->setExportOptions(new ExportOptions('originalFiles,tags'));
 
 $requestBody->setExportStructure(new ExportFileStructure('directory'));
 

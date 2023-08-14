@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.SubscribedSkus().BySubscribedSkuId("subscribedSku-id").Get(context.Background(), nil)
+subscribedSkus, err := graphClient.SubscribedSkus().BySubscribedSkuId("subscribedSku-id").Get(context.Background(), nil)
 
 
 ```

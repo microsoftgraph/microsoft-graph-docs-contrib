@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 description := "Production site list for team A"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().BySiteListId("browserSiteList-id").Patch(context.Background(), requestBody, nil)
+siteLists, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().ByBrowserSiteListId("browserSiteList-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

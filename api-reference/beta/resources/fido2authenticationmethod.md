@@ -1,7 +1,7 @@
 ---
 title: "fido2AuthenticationMethod resource type"
 description: "A representation of a FIDO2 security key registered to a user. FIDO2 is a sign-in authentication method."
-author: "mmcla"
+author: "calvinlui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

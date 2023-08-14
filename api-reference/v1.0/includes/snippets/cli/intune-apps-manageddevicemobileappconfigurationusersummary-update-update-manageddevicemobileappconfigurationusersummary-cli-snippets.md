@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-app-management mobile-app-configurations user-status-summary patch --managed-device-mobile-app-configuration-id {managedDeviceMobileAppConfiguration-id} --body '{\
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary",\
   "pendingCount": 12,\

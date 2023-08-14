@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Agreements().ByAgreementId("agreement-id").File().Localizations().Get(context.Background(), nil)
+localizations, err := graphClient.Agreements().ByAgreementId("agreement-id").File().Localizations().Get(context.Background(), nil)
 
 
 ```

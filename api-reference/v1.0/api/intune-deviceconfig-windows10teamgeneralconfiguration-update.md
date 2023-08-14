@@ -138,6 +138,10 @@ Content-length: 1150
 [!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-windows10teamgeneralconfiguration-update-update-windows10teamgeneralconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windows10teamgeneralconfiguration-update-update-windows10teamgeneralconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windows10teamgeneralconfiguration-update-update-windows10teamgeneralconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

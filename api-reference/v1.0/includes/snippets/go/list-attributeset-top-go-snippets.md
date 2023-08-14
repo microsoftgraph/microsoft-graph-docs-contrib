@@ -25,7 +25,7 @@ configuration := &graphdirectory.DirectoryAttributeSetsRequestBuilderGetRequestC
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().AttributeSets().Get(context.Background(), configuration)
+attributeSets, err := graphClient.Directory().AttributeSets().Get(context.Background(), configuration)
 
 
 ```
