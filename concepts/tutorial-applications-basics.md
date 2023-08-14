@@ -83,6 +83,8 @@ The request returns a `201 Created` response with the application object in the 
 
 ## Create a service principal for the application
 
+Least privilege delegated permission: `Application.ReadWrite.All`.
+
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-create-sp"
@@ -117,7 +119,7 @@ https://graph.microsoft.com/v1.0/servicePrincipals(appId='appId')
 
 ## Configure other basic properties for your app
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
 You'll configure the following basic properties for the app.
 
@@ -194,7 +196,7 @@ Content-type: application/json
 
 ## Limit app sign-in to only assigned identities
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -249,7 +251,7 @@ While you can assign permissions to an app through the Azure portal, you also as
 
 Assigning permissions doesn't automatically grant them to the app. You must still grant admin consent using the Azure portal. To grant permissions without interactive consent, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -382,7 +384,7 @@ Content-Type: application/json
 
 ### Identify ownerless service principals and service principals with one owner
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
 This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
@@ -435,7 +437,7 @@ ConsistencyLevel: eventual
 
 ### Assign an owner to an app
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
 In the following request, `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
 
@@ -490,7 +492,7 @@ Content-Type: application/json
 
 ### Assign an owner to a service principal
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
 The following request references the service principal using its **appId**. `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
 
