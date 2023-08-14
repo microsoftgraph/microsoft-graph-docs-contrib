@@ -59,7 +59,6 @@ The following example shows how to create a new page.
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```http

@@ -59,7 +59,6 @@ If successful, this method returns a `200` and a [baseSitePage](../resources/bas
 
 ### Request
 
-# [HTTP](#tab/http)
 
 <!--{
 	"blockType": "request",
@@ -69,7 +68,7 @@ If successful, this method returns a `200` and a [baseSitePage](../resources/bas
 }
 -->
 
-```msgraph-interactive
+```http
 GET /sites/{site-id}/pages/{page-id}
 ```
 ---

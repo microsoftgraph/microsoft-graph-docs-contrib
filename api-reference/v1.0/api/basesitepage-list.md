@@ -68,9 +68,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of the request.
-
-# [HTTP](#tab/http)
-
 <!--
 {
   "blockType": "request",
@@ -80,7 +77,7 @@ The following is an example of the request.
 }
 -->
 
-```msgraph-interactive
+```http
 GET /sites/{site-id}/pages
 ```
 
