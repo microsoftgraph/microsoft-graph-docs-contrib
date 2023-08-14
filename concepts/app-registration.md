@@ -28,7 +28,7 @@ The table includes the following column fields:
 - **Name**—the app registration name
 - **App ID**—the Azure AD application ID
 - **Registered On**—the date of registration of the app
-- **Developer**—the email address of the developer who registered the application
+- **Developer**—the developer who registered the application
 - **Multi-tenant**—if the app is multi-tenant or single tenant
 - **Last modified**—the most recent date when the application was changed
 
@@ -42,12 +42,12 @@ When adding a new app registration with Data Connect, follow the add wizard to c
 
 The Registration Info page outlines standard requirements for app registrations. First, specify the project details—a process that's similar to creating a resource in Azure. The following are the project detail fields:
 
-- **Subscription** (required) select a subscription in the tenant that will be used exclusively to filter the next 4 selections used to configure the destination for the data.
+- **Subscription** (required) select a subscription in the tenant that will be used exclusively to filter the next 4 sections that relate to data destination configuration.
 
 - **Resource Group** (required) select the group location for the data storage.
 - **Destination Type** select the type of storage from Azure Storage Account or Azure SQL Database Server.
 
-If the selected type of storage is SQL Database Server, then it will only support `Mapping Data Flows` types. For details, see [Mapping Data Flows](/azure/data-factory/concepts-data-flow-overview).
+If the selected type of storage is SQL Database Server, then it will only support `Mapping Data Flows` types. For details, see [Mapping Data Flows in Azure Data Factory](/azure/data-factory/concepts-data-flow-overview).
 
 - **Storage Account** (required) select the storage account where the data to provision with Data Connect will be located, or create a new Azure Storage Account.
 - **Storage Account Uri** (required) from the storage account selected above, select the Uri to use (Distributed File System (DFS) or blob).
@@ -62,7 +62,7 @@ App registration requires you to select entries for the **Instance Details** tha
 - **Application ID** (required) select from Azure AD apps in the tenant, or create a new one.
 - **Description** (required) provide details in the text field for app registration such as project goal, unique identifier, and organization project name.
 - **Publish Type** (required) select from multi-tenant or single-tenant fields.
-- **Key Vault** (required for multi-tenant app registrations) specify the key vault that will enable communication between tenants.
+- **Key Vault** (required **only** for multi-tenant app registrations) specify the key vault that will enable communication between tenants.
 
 ![Graphic showing the registration page for adding applications on Data Connect, including fields related to the Project Details and Instance Details sections.](images/app-registration-create-registration-info.png)
 

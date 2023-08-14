@@ -8,10 +8,8 @@ ms.custom: scenarios:getting-started
 
 # Microsoft Graph Data Connect app authorization
 
-The Microsoft Graph Data Connect app authorization experience is built in to the Microsoft 365 admin center. To get started, global administrators who authorize Data Connect apps for your organization can do one of the following:
+The authorization experience for Microsoft Graph Data Connect apps is built in to the Microsoft 365 admin center. Global administrators who authorize Data Connect apps for your organization can get started by going to the Microsoft Graph Data Connect authorization portal. Go to **Org settings** on the **Security & Privacy** tab, then select **Microsoft Graph Data Connect applications**.
 
-Go directly to the Microsoft Graph Data Connect authorization portal
-Go to Org settings* on the Security & Privacy tab and select Microsoft Graph Data Connect applications.
 These are different entry points from where admins opt in to Data Connect. Only global administrators can authorize Data Connect applications.
 
 ![Graphic showing org settings in the Security & Privacy tab for Data Connect apps.](images/org-settings-security-and-privacy-data-connect-apps.png)
@@ -55,11 +53,11 @@ Next, the wizard includes multiple dataset steps, one step per dataset registere
 
 **Columns**—specifies columns the app intends to extract via Data Connect. If approved, this app can extract any subset of approved columns for the specified dataset.
 
-**Scope**—specifies scope (i.e., user selection) the app intends to extract via Data Connect. [Learn more about scopes in Data Connect](/graph/data-connect-users-and-groups).
+**Scope**—specifies scope (i.e., user selection) the app intends to extract via Data Connect. [Learn more about scopes in Data Connect](./data-connect-users-and-groups.md).
 
-For details about how authorization works with different scopes, see [Authorization validation during pipeline runtime].(#authorization-validation-during-pipeline-execution).
+For details about how authorization works with different scopes, see [Authorization validation during pipeline runtime](#authorization-validation-during-pipeline-runtime).
 
-![Graphic showing the scopes review page in Data Connect portal.](images/authorization-app-details-review.png)
+![Graphic showing authorization validation review page in Data Connect portal.](images/authorization-app-details-review.png)
 
 Finally, the wizard confirms some key information on the app for you to review.. You can select **Approve**, **Decline**, or **Cancel**. An action on an app is all or nothing. Authorizing an app means you are authorizing all access specified in the previous steps.
 

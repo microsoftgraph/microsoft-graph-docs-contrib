@@ -22,7 +22,7 @@ This option is available today. If you choose this option, none of your existing
 
 Existing Data Connect customers are provided the option to perform a one-click auto-migration from PAM over to the new onboarding experience. This auto-migration handles the conversion of existing PAM authorizations into app registrations and maintains existing app authorizations. The goal is to enable a smooth migration with no downtime for existing customers.
 
-More details will be shared as we get closer to the release.
+Existing customer will see this option from August 2023. More details will be shared as we get closer to the release.
 
 ## Phase 3: Automatic migration
 
