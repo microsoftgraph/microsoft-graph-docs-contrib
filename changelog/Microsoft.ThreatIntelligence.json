@@ -5,26 +5,50 @@
         {
           "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
           "ApiChange": "Enumeration",
-          "ChangedApiName": "physicalAddressType",
-          "ChangeType": "Addition",
-          "Description": "Added the **physicalAddressType** enumeration type.",
-          "Target": "physicalAddressType"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "physicalAddress",
-          "ChangeType": "Addition",
-          "Description": "Added the [physicalAddress](https://learn.microsoft.com/en-us/graph/api/resources/physicalAddress?view=graph-rest-beta) resource type.",
-          "Target": "physicalAddress"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Enumeration",
           "ChangedApiName": "whoisDomainStatus",
           "ChangeType": "Addition",
           "Description": "Added the **whoisDomainStatus** enumeration type.",
           "Target": "whoisDomainStatus"
+        },
+        {
+          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sslCertificates",
+          "ChangeType": "Addition",
+          "Description": "Added the **sslCertificates** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sslCertificates",
+          "ChangeType": "Addition",
+          "Description": "Added the **sslCertificates** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
+        },
+        {
+          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "hostSslCertificates",
+          "ChangeType": "Addition",
+          "Description": "Added the **hostSslCertificates** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "hostSslCertificates",
+          "ChangeType": "Addition",
+          "Description": "Added the **hostSslCertificates** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
+        },
+        {
+          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostSslCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostSslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-hostSslCertificate?view=graph-rest-beta) resource and supported methods.",
+          "Target": "hostSslCertificate"
         },
         {
           "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
@@ -37,130 +61,18 @@
         {
           "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
           "ApiChange": "Resource",
-          "ChangedApiName": "sslCertificateEntity",
-          "ChangeType": "Addition",
-          "Description": "Added the [sslCertificateEntity](https://learn.microsoft.com/en-us/graph/api/resources/security-sslCertificateEntity?view=graph-rest-beta) resource type.",
-          "Target": "sslCertificateEntity"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "whoisContact",
-          "ChangeType": "Addition",
-          "Description": "Added the [whoisContact](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisContact?view=graph-rest-beta) resource type.",
-          "Target": "whoisContact"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "whoisNameserver",
-          "ChangeType": "Addition",
-          "Description": "Added the [whoisNameserver](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisNameserver?view=graph-rest-beta) resource type.",
-          "Target": "whoisNameserver"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "childHostPairs",
-          "ChangeType": "Addition",
-          "Description": "Added the **childHostPairs** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "hostPairs",
-          "ChangeType": "Addition",
-          "Description": "Added the **hostPairs** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "parentHostPairs",
-          "ChangeType": "Addition",
-          "Description": "Added the **parentHostPairs** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sslCertificates",
-          "ChangeType": "Addition",
-          "Description": "Added the **sslCertificates** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "whois",
-          "ChangeType": "Addition",
-          "Description": "Added the **whois** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "hostPair",
-          "ChangeType": "Addition",
-          "Description": "Added the [hostPair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostPair?view=graph-rest-beta) resource",
-          "Target": "hostPair"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "hostSslCertificate",
-          "ChangeType": "Addition",
-          "Description": "Added the [hostSslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-hostSslCertificate?view=graph-rest-beta) resource",
-          "Target": "hostSslCertificate"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
           "ChangedApiName": "sslCertificate",
           "ChangeType": "Addition",
-          "Description": "Added the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslCertificate?view=graph-rest-beta) resource",
+          "Description": "Added the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslCertificate?view=graph-rest-beta) resource and supported methods.",
           "Target": "sslCertificate"
         },
         {
           "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
           "ApiChange": "Resource",
-          "ChangedApiName": "hostPairs",
+          "ChangedApiName": "sslCertificateEntity",
           "ChangeType": "Addition",
-          "Description": "Added the **hostPairs** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
-          "Target": "threatIntelligence"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "hostSslCertificates",
-          "ChangeType": "Addition",
-          "Description": "Added the **hostSslCertificates** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
-          "Target": "threatIntelligence"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sslCertificates",
-          "ChangeType": "Addition",
-          "Description": "Added the **sslCertificates** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
-          "Target": "threatIntelligence"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "whoisRecords",
-          "ChangeType": "Addition",
-          "Description": "Added the **whoisRecords** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
-          "Target": "threatIntelligence"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "whoisRecord",
-          "ChangeType": "Addition",
-          "Description": "Added the [whoisRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisRecord?view=graph-rest-beta) resource",
-          "Target": "whoisRecord"
+          "Description": "Added the [sslCertificateEntity](https://learn.microsoft.com/en-us/graph/api/resources/security-sslCertificateEntity?view=graph-rest-beta) resource type.",
+          "Target": "sslCertificateEntity"
         }
       ],
       "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
