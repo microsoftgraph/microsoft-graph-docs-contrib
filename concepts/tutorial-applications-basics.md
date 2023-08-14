@@ -25,8 +25,6 @@ To complete this tutorial, you need the following resources and privileges:
 
 ## Register an application with Azure AD
 
-### Request
-
 The following request creates an app by specifying only the required **displayName** property.
 
 Least privilege delegated permission: `Application.ReadWrite.All`.
@@ -81,7 +79,7 @@ Content-type: application/json
 
 The request returns a `201 Created` response with the application object in the response body. The application is assigned an **id** that's unique for apps in the tenant, and an **appId** that's globally unique in the Azure AD ecosystem.
 
-## Create a service principal for the application
+## Create a service principal for an application
 
 Least privilege delegated permission: `Application.ReadWrite.All`.
 
