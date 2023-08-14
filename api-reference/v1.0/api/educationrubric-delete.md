@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
+DELETE /education/me/rubrics/{rubric-id}
 ```
 
 ## Request headers
