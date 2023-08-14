@@ -13,6 +13,8 @@ ms.custom: datasets:dataset-name
 
 Microsoft Viva Insights provides scope information and research-based behavioral insights into how an organization gets work done; for example, whether employees maintain work-life balance, how to protect employee well being, and the ways that hybrid work affects the employee experience.
 
+Use the VivaInsightsDataset_Report_v1_[Viva Insights query name] dataset to gain insights on top collaborators, meeting and focus hours, and other personal productivity metrics.
+
 ## Scenarios
 
 Scenarios are customizable, depending on what dataset you choose to export. Scenarios fall into the following two categories:
