@@ -20,7 +20,7 @@ Inherits from [scopeSensitivityLabels](../resources/scopesensitivitylabels.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|labelKind|labelKind|Indicates the kind of sensitivity label that is included. Only `all` is supported to indicate that consent is allowed for all sensitivity labels in the policy. Required.|
+|labelKind|labelKind|Inherited from [scopeSensitivityLabels](../resources/scopesensitivitylabels.md). Indicates the scope of sensitivity labels that are included in this condition set. Possible values: `all` for all sensitivity labels, or `enumerated` for a given list of sensitivity labels. Only `all` is supported for the **allScopeSensitivityLabels** object type. Required.|
 
 ## Relationships
 None.
