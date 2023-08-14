@@ -63,10 +63,10 @@ If successful, this method returns a `201 Created` response code and a [permissi
 In the following example:
 
 - The condition for the `chat` resource type:
-  - Specifies two sensitivity labels that are in scope
+  - Indicates that all chats regardless of sensitivity labels are in scope 
   - Specifies that all application permissions for all APIs are pre-approved
 - The condition for the `group` resource type:
-  - Indicates that all groups regardless of sensitivity labels are in scope
+  - Specifies two sensitivity labels that are in scope
   - Specifies two application permissions for the `00000003-0000-0000-c000-000000000000` resource app are pre-approved
 
 #### Request
@@ -83,13 +83,9 @@ Content-Type: application/json
     "conditions": [
         {
             "scopeType": "chat",
-            "scopeSensitivityLabels": {
-                "@odata.type": "microsoft.graph.enumeratedScopeSensitivityLabels",
-                "labelKind": "enumerated",
-                "sensitivityLabels": [
-                    "d9c43deb-f3e1-4422-9fd6-ccf22a3206b8",
-                    "c99dade2-aa54-4890-ac1c-a146fa26bd1e"
-                ]
+            "sensitivityLabels": {
+                "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+                "labelKind": "all"
             },
             "permissions": {
                 "@odata.type": "#microsoft.graph.allPreApprovedPermissions",
@@ -99,9 +95,13 @@ Content-Type: application/json
         },
         {
             "scopeType": "group",
-            "sensitivityLabels": {
-                "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
-                "labelKind": "all"
+            "scopeSensitivityLabels": {
+                "@odata.type": "microsoft.graph.enumeratedScopeSensitivityLabels",
+                "labelKind": "enumerated",
+                "sensitivityLabels": [
+                    "d9c43deb-f3e1-4422-9fd6-ccf22a3206b8",
+                    "c99dade2-aa54-4890-ac1c-a146fa26bd1e"
+                ]
             },
             "permissions": {
                 "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
@@ -195,7 +195,7 @@ Content-Type: application/json
                 "labelKind": "all"
             },
             "permissions": {
-                "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
+                "@odata.type": "#microsoft.graph.allPermissionsOnResourceApp",
                 "permissionKind": "allPermissionsOnResourceApp",
                 "permissionType": "application",
                 "resourceApplicationId": "00000003-0000-0000-c000-000000000000"
@@ -229,7 +229,7 @@ Content-Type: application/json
                 "labelKind": "all"
             },
             "permissions": {
-                "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
+                "@odata.type": "#microsoft.graph.allPermissionsOnResourceApp",
                 "permissionKind": "allPermissionsOnResourceApp",
                 "permissionType": "application",
                 "resourceApplicationId": "00000003-0000-0000-c000-000000000000"
