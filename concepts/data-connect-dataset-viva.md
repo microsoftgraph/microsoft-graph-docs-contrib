@@ -19,18 +19,18 @@ Use the VivaInsightsDataset_Report_v1_[Viva Insights query name] dataset to gain
 
 Scenarios are customizable, depending on what dataset you choose to export. Scenarios fall into the following two categories:
 
-- [Person queries](/viva/insights/advanced/analyst/person-query-overview); for example, using Viva Insights metrics to measure empowering decision-making (including collaboration time, meetings, etc.) across the organization or from various departments.
-- [Meeting queries](/viva/insights/advanced/analyst/meeting-query); for example, using Viva Insights metrics to better understand the time employees spend in meetings, especially those with hundreds of hours of employee focus time.
+- [Person queries](/viva/insights/advanced/analyst/person-query-overview); for example, using Viva Insights metrics to understand the relationship between a person’s organizational attributes – like their team, level, or location – and how they use their time. Or when you want to know how one aspect of a person’s time use might influence another aspect of their time use.
+- [Meeting queries](/viva/insights/advanced/analyst/meeting-query); for example, using Viva Insights metrics to understand the relationship between different meeting attributes.
 
 ## Questions
 
 Questions are customizable, depending on what dataset you choose to export. Here are some examples:
 
--	Which departments have employees who are at risk of burnout?
--	How have email and chat communication changed after moving to work from home policies?
--	How are employees spending their meeting time?
--	How is internal time spent distributed by department?
--	How does seller time spent with customers impact sales?
+- How does the percentage of recurring meetings vary across teams?
+- Do managers with more full-day meetings hold fewer 1:1s?
+- What is the relationship between meeting multitasking and after-hours collaboration?
+- What percentage of meeting time was comprised of meetings with more than 8 attendees?
+- Do recurring meetings tend to be bigger or smaller than other meetings?
 
 
 ## Joining with other datasets
