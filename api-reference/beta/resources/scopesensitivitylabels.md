@@ -18,8 +18,8 @@ Defines the sensitivity labels for groups that are included in a [permissionGran
 
 
 This is an abstract base type from which the following types are derived:
-* [allscopesensitivitylabels](allscopesensitivitylabels.md) indicate all sensitivity labels are pre-approved
-* [enumeratedscopesensitivitylabels](enumeratedscopesensitivitylabels.md) indicate that only the specified sensitivity labels are pre-approved
+* [allscopesensitivitylabels](allscopesensitivitylabels.md) indicates all sensitivity labels are pre-approved
+* [enumeratedscopesensitivitylabels](enumeratedscopesensitivitylabels.md) indicates that only the specified sensitivity labels are pre-approved
 
 ## Properties
 |Property|Type|Description|
