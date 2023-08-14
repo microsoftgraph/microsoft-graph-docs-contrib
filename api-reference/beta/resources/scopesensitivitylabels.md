@@ -1,6 +1,6 @@
 ---
 title: "scopeSensitivityLabels resource type"
-description: "Defines the sensitivity labels for groups that are included in a permissionGrantPreApprovalPolicy or a permissionGrantPolicy."
+description: "Defines the sensitivity labels for groups that are included in a permissionGrantPreApprovalPolicy or a permissiongrantconditionset in a permissiongrantpolicy to include or exclude a permission grant event."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the sensitivity labels for groups that are included in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) or a [permissionGrantPolicy](../resources/permissiongrantpolicy.md). Since **chat** resources don't support sensitivity labels, do not use this type when the **scopeType** of [preApprovalDetail](../resources/preapprovaldetail.md) is `chat`. For more information about sensitivity labels, see [sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
-
-
+Defines the sensitivity labels for groups that are included in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) or [permission grant condition set](permissiongrantconditionset.md) in a [permission grant policy](permissiongrantpolicy.md) to include or exclude a permission grant event. Since **chat** resources don't support sensitivity labels, do not use this type when the **scopeType** of [preApprovalDetail](../resources/preapprovaldetail.md) is `chat`. For more information about sensitivity labels, see [sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
 
 This is an abstract base type from which the following types are derived:
 * [allscopesensitivitylabels](allscopesensitivitylabels.md) indicates all sensitivity labels are pre-approved
