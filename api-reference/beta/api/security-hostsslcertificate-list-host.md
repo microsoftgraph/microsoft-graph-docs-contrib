@@ -80,7 +80,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.security.host)"
+  "@odata.type": "Collection(microsoft.graph.security.hostSslCertificate)"
 }
 -->
 ``` http
