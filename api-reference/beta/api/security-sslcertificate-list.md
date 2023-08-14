@@ -1,6 +1,6 @@
 ---
 title: "List sslCertificates"
-description: "Get a list of the microsoft.graph.security.sslCertificate objects and their properties."
+description: "Get a list of sslCertificate objects and their properties."
 author: "nblankenau"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -8,15 +8,17 @@ doc_type: apiPageType
 ---
 
 # List sslCertificates
+
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) objects and their properties.
+Get a list of [microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) objects and their properties.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -39,47 +41,49 @@ GET /security/threatIntelligence/sslCertificates
 
 In the request URL, the `$search` parameter must be included in order to search on a specific field. The following fields are supported.
 
-| Field	|
-|:---------------|
-|name|
-|issuer/surname|
-|subject/organizationName|
-|issuer/country|
-|issuer/organizationUnitName|
-|fingerprint|
-|subject/organizationUnitName|
-|serialNumber|
-|subject/emailAddress|
-|subject/country|
-|issuer/givenName|
-|subject/commonName|
-|subject/alternativeName|
-|issuer/commonName|
-|issuer/alternativeName|
-|issuer/stateOrProvinceName|
-|issuer/province|
-|subject/stateOrProvinceName|
-|subject/province|
-|sha1|
-|subject/streetAddress|
-|subject/serialNumber|
-|issuer/organizationName|
-|subject/surname|
-|subject/localityName|
-|issuer/streetAddress|
-|issuer/localityName|
-|subject/givenName|
-|issuer/serialNumber|
-|issuer/emailAddress|
+| Field                        |
+|:-----------------------------|
+| fingerprint                  |
+| issuer/alternativeName       |
+| issuer/commonName            |
+| issuer/country               |
+| issuer/emailAddress          |
+| issuer/givenName             |
+| issuer/localityName          |
+| issuer/organizationName      |
+| issuer/organizationUnitName  |
+| issuer/province              |
+| issuer/serialNumber          |
+| issuer/stateOrProvinceName   |
+| issuer/streetAddress         |
+| issuer/surname               |
+| name                         |
+| serialNumber                 |
+| sha1                         |
+| subject/alternativeName      |
+| subject/commonName           |
+| subject/country              |
+| subject/emailAddress         |
+| subject/givenName            |
+| subject/localityName         |
+| subject/organizationName     |
+| subject/organizationUnitName |
+| subject/province             |
+| subject/serialNumber         |
+| subject/stateOrProvinceName  |
+| subject/streetAddress        |
+| subject/surname              |
 
-This method also supports the `$count`, `$select`, `$orderBy` `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method also supports the `$count`, `$select`, `$orderBy`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -89,20 +93,24 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 The following is an example of a request.
+
 <!-- {
   "blockType": "request",
-  "name": "list_sslcertificate"
+  "name": "list_sslcertificates"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/security/threatIntelligence/sslCertificates?$search="subject/commonName:microsoft.com"&$count=true&$top=1
 ```
 
-
 ### Response
-The following is an example of the response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -174,4 +182,3 @@ Content-Type: application/json
   ]
 }
 ```
-
