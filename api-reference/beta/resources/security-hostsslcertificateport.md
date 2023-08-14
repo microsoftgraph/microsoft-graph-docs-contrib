@@ -1,6 +1,6 @@
 ---
 title: "hostSslCertificatePort resource type"
-description: "Ports of a host where a hostSslCertificate is/was previously related."
+description: "Represents the ports of a host where a hostSslCertificate is currently or was previously related."
 author: "nblankenau"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,20 +15,24 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents the ports of a **host** where this **hostSslCertificate** is currently or was previously related.
+Represents the ports of a [microsoft.graph.security.host](../resources/security-host.md) where this **hostSslCertificate** is currently or was previously related.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|firstSeenDateTime|DateTimeOffset|The first date and time that this port was observed.|
-|lastSeenDateTime|DateTimeOffset|The most recent date and time that this port was observed.|
+|firstSeenDateTime|DateTimeOffset|The first date and time that this port was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastSeenDateTime|DateTimeOffset|The most recent date and time that this port was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |port|Int32|The port number.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.hostSslCertificatePort"
@@ -37,9 +41,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.hostSslCertificatePort",
-  "port": "Integer",
   "firstSeenDateTime": "String (timestamp)",
-  "lastSeenDateTime": "String (timestamp)"
+  "lastSeenDateTime": "String (timestamp)",
+  "port": "Int32"
 }
 ```
-
