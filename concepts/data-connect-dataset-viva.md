@@ -15,7 +15,7 @@ Microsoft Viva Insights provides scope information and research-based behavioral
 
 ## Scenarios
 
-Scenarios are customizable, depending on what dataset you choose to export. Scenarios fall into the following two categories, including those addressed with:
+Scenarios are customizable, depending on what dataset you choose to export. Scenarios fall into the following two categories:
 
 - [Person queries](/viva/insights/advanced/analyst/person-query-overview); for example, using Viva Insights metrics to measure empowering decision-making (including collaboration time, meetings, etc.) across the organization or from various departments.
 - [Meeting queries](/viva/insights/advanced/analyst/meeting-query); for example, using Viva Insights metrics to better understand the time employees spend in meetings, especially those with hundreds of hours of employee focus time.
