@@ -14249,7 +14249,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retryServiceProvisioning",
           "ChangeType": "Addition",
-          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/group?view=graph-rest-1.0) method to the [group](https://learn.microsoft.com/en-us/graph/api/group?view=graph-rest-1.0) resource.",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/group-retryserviceprovisioning?view=graph-rest-1.0) method to the [group](https://learn.microsoft.com/en-us/graph/api/group?view=graph-rest-1.0) resource.",
           "Target": "group"
         },
         {
@@ -14257,7 +14257,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retryServiceProvisioning",
           "ChangeType": "Addition",
-          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/orgContact?view=graph-rest-1.0) method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/orgContact?view=graph-rest-1.0) resource.",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/orgContact-retryserviceprovisioning?view=graph-rest-1.0) method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/orgContact?view=graph-rest-1.0) resource.",
           "Target": "orgContact"
         },
         {
@@ -14265,7 +14265,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retryServiceProvisioning",
           "ChangeType": "Addition",
-          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-1.0) method to the [user](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-1.0) resource.",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/user-retryserviceprovisioning?view=graph-rest-1.0) method to the [user](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-1.0) resource.",
           "Target": "user"
         }
       ],
