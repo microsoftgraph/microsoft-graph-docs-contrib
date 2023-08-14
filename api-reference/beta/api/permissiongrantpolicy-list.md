@@ -132,7 +132,11 @@ Content-type: application/json
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
           "clientApplicationsFromVerifiedPublisherOnly": true,
-          "certifiedClientApplicationsOnly": false
+          "certifiedClientApplicationsOnly": false,
+          "scopeSensitivityLabels": {
+              "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+              "labelKind": "all"
+          }
         }
       ],
       "excludes": []
@@ -151,7 +155,11 @@ Content-type: application/json
           "clientApplicationIds": [ "all" ],
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
-          "clientApplicationsFromVerifiedPublisherOnly": false
+          "clientApplicationsFromVerifiedPublisherOnly": false,
+          "scopeSensitivityLabels": {
+              "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+              "labelKind": "all"
+          }
         },
         {
           "id": "08619a19-ae6f-406c-b9a0-ea6af1f1558d",
@@ -163,7 +171,11 @@ Content-type: application/json
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
           "clientApplicationsFromVerifiedPublisherOnly": false,
-          "certifiedClientApplicationsOnly": false
+          "certifiedClientApplicationsOnly": false,
+          "scopeSensitivityLabels": {
+              "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+              "labelKind": "all"
+          }
         }
       ],
       "excludes": []

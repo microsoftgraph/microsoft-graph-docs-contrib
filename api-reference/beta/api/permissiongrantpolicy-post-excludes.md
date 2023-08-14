@@ -129,6 +129,10 @@ Content-type: application/json
   "clientApplicationTenantIds": ["all"],
   "clientApplicationPublisherIds": ["all"],
   "clientApplicationsFromVerifiedPublisherOnly": false,
-  "certifiedClientApplicationsOnly": false
+  "certifiedClientApplicationsOnly": false,
+  "scopeSensitivityLabels": {
+      "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+      "labelKind": "all"
+  }
 }
 ```

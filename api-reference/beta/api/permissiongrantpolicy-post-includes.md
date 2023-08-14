@@ -130,7 +130,11 @@ Content-type: application/json
   "clientApplicationTenantIds": ["all"],
   "clientApplicationPublisherIds": ["all"],
   "clientApplicationsFromVerifiedPublisherOnly": true,
-  "certifiedClientApplicationsOnly": false
+  "certifiedClientApplicationsOnly": false,
+  "scopeSensitivityLabels": {
+      "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+      "labelKind": "all"
+  }
 }
 ```
 ### Example 2: Create a permission grant policy for client apps that are Microsoft 365 certified  
@@ -214,6 +218,10 @@ Content-type: application/json
   "clientApplicationTenantIds": ["all"],
   "clientApplicationPublisherIds": ["all"],
   "clientApplicationsFromVerifiedPublisherOnly": true,
-  "certifiedClientApplicationsOnly": true
+  "certifiedClientApplicationsOnly": true,
+  "scopeSensitivityLabels": {
+      "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+      "labelKind": "all"
+  }
 }
 ```
