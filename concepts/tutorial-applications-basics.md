@@ -12,9 +12,9 @@ ms.date: 08/14/2023
 
 # Manage an Azure AD application using Microsoft Graph
 
-Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure Active Directory (Azure AD) or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
+Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure Active Directory (Azure AD) or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that your tenant owns, or that you access through an active subscription.
 
-Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you'll learn how to use Microsoft Graph to manage app and service principal objects including the properties, permissions, and role assignments.
+Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you learn how to use Microsoft Graph to manage app and service principal objects including the properties, permissions, and role assignments.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 ### Request
 
-The following request creats an app by specifying only the required **displayName** property.
+The following request creates an app by specifying only the required **displayName** property.
 
 Least privilege delegated permission: `Application.ReadWrite.All`.
 
@@ -102,7 +102,7 @@ The request returns a `201 Created` response with the service principal object i
 
 ## Addressing an application or a service principal object
 
-You can address an application or a service principal by its ID or by its **appId**, where ID is referred to as *Object ID* and **appId** is refered to as *Application (client) ID* on the Azure portal. These syntaxes are supported for all HTTP CRUD operations on applications and service principals.
+You can address an application or a service principal by its ID or by its **appId**, where ID is referred to as *Object ID* and **appId** is referred to as *Application (client) ID* on the Azure portal. These syntaxes are supported for all HTTP CRUD operations on applications and service principals.
 
 To address an application or a service principal by its ID.
 
@@ -121,7 +121,7 @@ https://graph.microsoft.com/v1.0/servicePrincipals(appId='appId')
 
 Least privilege delegated permission: `Application.ReadWrite.All`.
 
-You'll configure the following basic properties for the app.
+You configure the following basic properties for the app.
 
 + Add tags for categorization in the organization. Also, use the `HideApp` tag to hide the app from My Apps and the Microsoft 365 Launcher.
 + Add basic information including the logo, terms of service, and privacy statement.
@@ -522,7 +522,7 @@ You manage the app instance lock feature through the **servicePrincipalLockConfi
 
 #### To lock all sensitive properties of a service principal
 
-When **isEnabled** and **allProperties** is set to `true`, the other properties of the servicePrincipalLockConfiguration object are `null`. This means that all the sensitive properties of the service principal are locked.
+When **isEnabled** and **allProperties** is set to `true`, even if other properties of the servicePrincipalLockConfiguration object are `null`, then all sensitive properties of the service principal are locked.
 
 ```http
 PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46fb63102f7
