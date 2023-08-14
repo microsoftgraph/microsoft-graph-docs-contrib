@@ -75,6 +75,7 @@ GET /servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPreApprovalPolicies/$entity",
     "id": "{ id }",

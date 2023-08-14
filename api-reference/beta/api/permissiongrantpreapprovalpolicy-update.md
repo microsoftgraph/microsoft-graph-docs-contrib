@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an updated [perm
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies/71ba13dc-5947-4e59-bcc5-0ad5c339a853
 Content-Type: application/json
-Content-length: 215
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPreApprovalPolicies/$entity",
     "id": "71ba13dc-5947-4e59-bcc5-0ad5c339a853",

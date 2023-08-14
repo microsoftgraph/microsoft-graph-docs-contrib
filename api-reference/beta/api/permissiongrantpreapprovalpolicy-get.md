@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [permissionGra
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_permissiongrantpreapprovalpolicy"
+  "name": "get_permissiongrantpreapprovalpolicies"
 }
 -->
 ``` http
@@ -74,6 +74,7 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPreApprovalPolicies/$entity",
     "id": "71ba13dc-5947-4e59-bcc5-0ad5c339a853",
