@@ -1,6 +1,6 @@
 ---
 title: "enumeratedScopeSensitivityLabels resource type"
-description: "Specifies that only specific sensitivity labels on a resource app in a permissionGrantPreApprovalPolicy are pre-approved for consent."
+description: "Specifies that only specific sensitivity labels on a resource app in a permissionGrantPreApprovalPolicy are pre-approved for consent. It can also be used to specify a matching rule in a permissiongrantconditionset in a permissiongrantpolicy to include or exclude a permission grant event."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.enumeratedScopeSensitivityLabels
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies that only specific sensitivity labels on a resource app in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) are pre-approved for consent. If the client application requests access to more resource scopes after the policy is created, the policy will still apply.
+Specifies that only specific sensitivity labels on a resource app in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) are pre-approved for consent. It can also be used to specify a matching rule in a [permission grant condition set](permissiongrantconditionset.md) in a [permission grant policy](permissiongrantpolicy.md) to include or exclude a permission grant event. If the client application requests access to more resource scopes after the policy is created, the policy will still apply.
 
 Inherits from [scopeSensitivityLabels](../resources/scopesensitivitylabels.md).
 
